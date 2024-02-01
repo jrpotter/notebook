@@ -18,14 +18,16 @@
       let
         pkgs = nixpkgs.legacyPackages.${system};
 
-        quartz = pkgs.fetchFromGitHub {
-          owner = "jrpotter";
-          repo = "quartz";
-          rev = "8c126e9d21cd0bc90da5f78677d458fc81892af1";
-          hash = "sha256-caB9F5lvroQ+ZcvzKW8RnKfzSHjEiYfZUSqZiuaggVs=";
+        quartz = rec {
+          src = pkgs.fetchFromGitHub {
+            owner = "jrpotter";
+            repo = "quartz";
+            rev = "8c126e9d21cd0bc90da5f78677d458fc81892af1";
+            hash = "sha256-caB9F5lvroQ+ZcvzKW8RnKfzSHjEiYfZUSqZiuaggVs=";
+          };
+          nodeDependencies = (pkgs.callPackage "${src}/default.nix" {}).nodeDependencies;
         };
 
-        nodeDependencies = (pkgs.callPackage "${quartz}/default.nix" {}).nodeDependencies;
       in
       {
         packages = {
@@ -37,13 +39,13 @@
             nativeBuildInputs = [ pkgs.nodejs ];
 
             buildPhase = ''
-              cp -r ${quartz} quartz
+              cp -r ${quartz.src} quartz
               cd quartz
               find -type f -execdir chmod 644 {} +
               find -type d -execdir chmod 755 {} +
 
-              ln -s ${nodeDependencies}/lib/node_modules ./node_modules
-              export PATH="${nodeDependencies}/bin:$PATH"
+              ln -s ${quartz.nodeDependencies}/lib/node_modules ./node_modules
+              export PATH="${quartz.nodeDependencies}/bin:$PATH"
 
               rm -r content
               cp -r ${./notes} content
@@ -55,7 +57,7 @@
 
             installPhase = ''
               mkdir $out
-              cp -r public $out
+              cp -r public $out/share
             '';
           };
 
