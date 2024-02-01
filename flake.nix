@@ -18,15 +18,14 @@
       let
         pkgs = nixpkgs.legacyPackages.${system};
 
-        quartz = {
-          src = pkgs.fetchFromGitHub {
-            owner = "jrpotter";
-            repo = "quartz";
-            rev = "e2e1053fd45586c19829be224008673b17111e6b";
-            hash = pkgs.lib.fakeHash;
-          };
-          nodeDependencies = (pkgs.callPackage ./quartz {}).nodeDependencies;
+        quartz = pkgs.fetchFromGitHub {
+          owner = "jrpotter";
+          repo = "quartz";
+          rev = "8c126e9d21cd0bc90da5f78677d458fc81892af1";
+          hash = "sha256-caB9F5lvroQ+ZcvzKW8RnKfzSHjEiYfZUSqZiuaggVs=";
         };
+
+        nodeDependencies = (pkgs.callPackage "${quartz}/default.nix" {}).nodeDependencies;
       in
       {
         packages = {
@@ -38,20 +37,25 @@
             nativeBuildInputs = [ pkgs.nodejs ];
 
             buildPhase = ''
-              cp -r ${quartz.src} quartz
+              cp -r ${quartz} quartz
               cd quartz
               find -type f -execdir chmod 644 {} +
               find -type d -execdir chmod 755 {} +
 
-              ln -s ${quartz.nodeDependencies}/lib/node_modules ./node_modules
-              export PATH="${quartz.nodeDependencies}/bin:$PATH"
+              ln -s ${nodeDependencies}/lib/node_modules ./node_modules
+              export PATH="${nodeDependencies}/bin:$PATH"
 
-              # export npm_config_cache=$PWD
-              # npx quartz build
+              rm -r content
+              cp -r ${./notes} content
+              cp ${./quartz.config.ts} quartz.config.ts
+              cp ${./quartz.layout.ts} quartz.layout.ts
+
+              node quartz/bootstrap-cli.mjs build
             '';
 
             installPhase = ''
               mkdir $out
+              cp -r public $out
             '';
           };
 
