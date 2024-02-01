@@ -1,0 +1,117 @@
+{
+  "settings": {
+    "CUSTOM_REGEXPS": {
+      "Basic": "",
+      "Basic (and reversed card)": "",
+      "Basic (optional reversed card)": "",
+      "Cloze": "",
+      "Image Occlusion": "",
+      "Image Occlusion Enhanced": ""
+    },
+    "FILE_LINK_FIELDS": {
+      "Basic": "Reference",
+      "Basic (and reversed card)": "Front",
+      "Basic (optional reversed card)": "Front",
+      "Cloze": "Reference",
+      "Image Occlusion": "Occlusion",
+      "Image Occlusion Enhanced": "ID (hidden)"
+    },
+    "CONTEXT_FIELDS": {
+      "Basic": "Context",
+      "Cloze": "Context"
+    },
+    "FOLDER_DECKS": {
+      "Linux": "",
+      "linux": ""
+    },
+    "FOLDER_TAGS": {
+      "Linux": "",
+      "linux": ""
+    },
+    "Syntax": {
+      "Begin Note": "%%ANKI",
+      "End Note": "END%%",
+      "Begin Inline Note": "STARTI",
+      "End Inline Note": "ENDI",
+      "Target Deck Line": "TARGET DECK",
+      "File Tags Line": "FILE TAGS",
+      "Delete Note Line": "DELETE",
+      "Frozen Fields Line": "FROZEN"
+    },
+    "Defaults": {
+      "Scan Directory": "",
+      "Tag": "",
+      "Deck": "Obsidian",
+      "Scheduling Interval": 0,
+      "Add File Link": false,
+      "Add Context": true,
+      "CurlyCloze": true,
+      "CurlyCloze - Highlights to Clozes": true,
+      "ID Comments": true,
+      "Add Obsidian Tags": true
+    },
+    "IGNORED_FILE_GLOBS": [
+      "**/*.excalidraw.md"
+    ]
+  },
+  "Added Media": [],
+  "File Hashes": {
+    "index.md": "e48e895feeed7046425bb2ee15419770",
+    "Linux/Signals.md": "f58f1a36a9fe53928fdc3dc02fc4c3e3",
+    "linux/index.md": "6e50c924ee9e09294fd3b907fbdeaf0f",
+    "linux/signals.md": "e9ab74723981ebc232189c84d3b0da74",
+    "templates/daily.md": "0f22c7ef0b0f35efada88d61c95e9815",
+    "daily/2024-01-31.md": "72e343cef8d56e169cac7b360a88fcf0",
+    "posix/index.md": "f7b1ae55f8f5e8f50f89738b1aca9111",
+    "posix/signals.md": "26161c6a79a0c413032c6c17e460412c",
+    "gawk.md": "9bf70ef138a9a281b86400aee393cae7",
+    "bash/index.md": "3b5296277f095acdf16655adcdf524af",
+    "bash/shebang.md": "bc30f75bcddff59d6f907fae89c17283",
+    "bash/robustness.md": "e474fd33469fc393bfde45cd7b9411ba"
+  },
+  "fields_dict": {
+    "Basic": [
+      "Front",
+      "Back",
+      "Reference",
+      "Context"
+    ],
+    "Basic (and reversed card)": [
+      "Front",
+      "Back",
+      "Reference"
+    ],
+    "Basic (optional reversed card)": [
+      "Front",
+      "Back",
+      "Reference",
+      "Add Reverse"
+    ],
+    "Cloze": [
+      "Text",
+      "Reference",
+      "Context"
+    ],
+    "Image Occlusion": [
+      "Occlusion",
+      "Image",
+      "Header",
+      "Back Extra",
+      "Comments"
+    ],
+    "Image Occlusion Enhanced": [
+      "ID (hidden)",
+      "Header",
+      "Image",
+      "Question Mask",
+      "Footer",
+      "Remarks",
+      "Sources",
+      "Extra 1",
+      "Extra 2",
+      "Answer Mask",
+      "Original Mask",
+      "Reference"
+    ]
+  }
+}
