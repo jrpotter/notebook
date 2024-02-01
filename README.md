@@ -1,40 +1,15 @@
-# Wiki
+# Notebook
 
-This is a collection of notes. We use [Quartz](https://quartz.jzhao.xyz/) to
-transform Markdown content into a statically generated site. Markdown files are
-primarily managed with [Obsidian](https://obsidian.md/). To serve Quartz
-locally, run the following:
-```bash
-$ npx quartz build --serve
-```
-By default the server will live at `localhost:8080`.
-
-## Building
-
-If you make changes to the `package-lock.json` file, you'll need to update the
-`npmDepsHash` value in `flake.nix`. The easiest way to discover this value is
-by running the following:
-```bash
-$ prefetch-npm-deps package-lock.json
-```
-Alternatively, you can set the value of `npmDepsHash` to `lib.fakeHash` and run:
+This is my collection of notes. Markdown files are primarily managed with
+[Obsidian](https://obsidian.md/). [Quartz](https://quartz.jzhao.xyz/) then
+transforms these Markdown files into a statically generated site. Generate the
+site locally by running:
 ```bash
 $ nix build
 ```
-Nix will complain with the hash value it actually expected.
 
-## Language Server
-
-The [typescript-language-server](https://github.com/typescript-language-server/typescript-language-server)
-(version 4.1.2) is included in this flake.
-
-## Formatting
-
-Formatting depends on [prettier](https://prettier.io/) (version 3.1.0). A
-`pre-commit` hook is included in `.githooks` that can be used to format all
-`*.jsx?` and `*.tsx?` files prior to commit. Install via:
-```bash
-$ git config --local core.hooksPath .githooks/
-```
-If running [direnv](https://direnv.net/), this hook is installed automatically
-when entering the directory.
+Usually when working with Quartz, you clone the Quartz repository directly and
+embed your notes within the `content/` directory. I found this makes updates
+clunky though. Since serving Quartz locally isn't a priority, we use Nix to
+pull the Quartz repo down directly and build against it without forking. This
+has the added benefit of making it easy to switch off Quartz later on.
