@@ -18,16 +18,20 @@
       let
         pkgs = nixpkgs.legacyPackages.${system};
 
-        quartz = rec {
-          src = pkgs.fetchFromGitHub {
-            owner = "jrpotter";
-            repo = "quartz";
-            rev = "8c126e9d21cd0bc90da5f78677d458fc81892af1";
-            hash = "sha256-caB9F5lvroQ+ZcvzKW8RnKfzSHjEiYfZUSqZiuaggVs=";
-          };
-          nodeDependencies = (pkgs.callPackage "${src}/default.nix" {}).nodeDependencies;
+        quartz-src = pkgs.fetchFromGitHub {
+          owner = "jackyzha0";
+          repo = "quartz";
+          rev = "444e05ee21687473c17c19e1d52d7da39694971c";
+          hash = "sha256-wUbNNNxp6LiNtnzFMSgzSB05AjbyOBMcfkfaA5wbCnQ=";
         };
 
+        quartz = pkgs.buildNpmPackage {
+          pname = "quartz";
+          version = "v4";
+          src = quartz-src;
+          npmDepsHash = "sha256-W95Lr7rspPxYdFe1AVEJRcA/srM+uDDc8wpbRbGiLoQ=";
+          dontNpmBuild = true;
+        };
       in
       {
         packages = {
@@ -39,13 +43,13 @@
             nativeBuildInputs = [ pkgs.nodejs ];
 
             buildPhase = ''
-              cp -r ${quartz.src} quartz
+              cp -r ${quartz-src} quartz
               cd quartz
               find -type f -execdir chmod 644 {} +
               find -type d -execdir chmod 755 {} +
 
-              ln -s ${quartz.nodeDependencies}/lib/node_modules ./node_modules
-              export PATH="${quartz.nodeDependencies}/bin:$PATH"
+              ln -s ${quartz}/lib/node_modules/@jackyzha0/quartz/node_modules ./node_modules
+              export PATH="${quartz}/bin:$PATH"
 
               rm -r content
               cp -r ${./notes} content
@@ -62,17 +66,6 @@
           };
 
           default = self.packages.${system}.app;
-        };
-
-        devShells.default = pkgs.mkShell {
-          packages = with pkgs; [
-            node2nix
-            nodePackages.prettier
-            nodePackages.typescript-language-server
-            nodejs
-            prefetch-npm-deps
-            typescript
-          ];
         };
       });
 }
