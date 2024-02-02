@@ -6,6 +6,8 @@ tags:
   - bash
 ---
 
+## Overview
+
 The shebang (also writting shabang or sha-bang) is a magic character at the start of a script indicating what command should be run when invoking the script directly. It always begins with ASCII characters `#!`.[^mendel]
 
 %%ANKI
@@ -44,12 +46,13 @@ Some systems limit the length of interpreters to just 32 characters. A simple wo
 
 %%ANKI
 Basic
-What workaround is used when shabang interpreter names are too long?
+What workaround is used when shebang interpreter names are too long?
 Back: Introduce a symbolic link.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1706726911470-->
 END%%
 
-[^mendel]: Cooper, Mendel. “Advanced Bash-Scripting Guide,” n.d., 916.
+## References
 
-[^robbins]: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+* Cooper, Mendel. “Advanced Bash-Scripting Guide,” n.d., 916.
+* Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)

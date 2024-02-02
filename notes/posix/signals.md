@@ -7,7 +7,9 @@ tags:
   - signal
 ---
 
-This is an overview of specific POSIX signals.[^dowling]
+## Overview
+
+This is an overview of specific POSIX signals.
 
 Code  | Name
 ----- | --------------
@@ -112,4 +114,33 @@ Reference: `man 1 ps`
 <!--ID: 1706670390919-->
 END%%
 
-[^dowling]: Dowling, “A List of Signals and What They Mean.”
+### SIGINT (2)
+
+Indicates the process was interrupted by the user. Happens when pressing `Ctrl-C` from the controlling terminal.
+
+%%ANKI
+Cloze
+Signal {`SIGINT`} corresponds to number {2}.
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1706815743860-->
+END%%
+
+%%ANKI
+Basic
+What control sequence usually triggers a `SIGINT`?
+Back: `Ctrl-C`
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1706815743867-->
+END%%
+
+%%ANKI
+Basic
+What is the `INT` in `SIGINT` short for?
+Back: **Int**errupt
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1706815743870-->
+END%%
+
+## References
+
+* Dowling, “A List of Signals and What They Mean.”

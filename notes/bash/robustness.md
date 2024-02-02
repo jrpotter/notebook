@@ -7,7 +7,9 @@ tags:
   - shell
 ---
 
-An interesting point Robbins[^robbins] discusses in his introduction to [[gawk]] is this idea of command robustness. He states that:
+## Overview
+
+An interesting point Robbins discusses in his introduction to [[gawk]] is this idea of command robustness. He states that:
 
 > A self-contained shell script is more reliable because there are no other files to misplace.
 
@@ -27,7 +29,7 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 <!--ID: 1706726911475-->
 END%%
 
-The point he is arguing is that the first command below is considered more robust than the second since the command is more loosely coupled to its environment:
+He argues that the first command below is more robust than the second since the command is more loosely coupled to its environment:
 
 ```bash
 $ awk 'program' input-file1 input-file2 ...
@@ -55,4 +57,6 @@ It's interesting to think what else can be used as a measure of a command's robu
 * Whether a program acts atomically
 	* Is it possible intermediate files are left that affect subsequent runs?
 
-[^robbins]: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+## References
+
+* Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
