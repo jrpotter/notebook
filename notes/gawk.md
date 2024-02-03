@@ -40,7 +40,7 @@ END%%
 
 Robbins suggests executing command `set +H` on [[bash]] startup to disable [[C]] shell-style command history.
 
-## Usage
+## Structure
 
 `awk` applies actions to lines matching specified patterns. In this way `awk` is said to be data-driven - we specify the lines `awk` should act on and `awk` is responsible for finding and acting on them. Instructions are provided via a **program**.
 
@@ -88,7 +88,7 @@ Basic
 Write the `awk` command that searches file `mail-list` for string `li`.
 Back:
 ```bash
-$ awk '/li/ { print }' mail-list
+$ awk '/li/' mail-list
 ```
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1706819150999-->
@@ -141,7 +141,7 @@ END%%
 
 %%ANKI
 Basic
-What is the `BEGIN` pattern?
+How is the `BEGIN` pattern interpreted?
 Back: Code associated with it executes before any input is read.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1706823790236-->
@@ -149,7 +149,7 @@ END%%
 
 %%ANKI
 Basic
-What is the `END` pattern?
+How is the `END` pattern interpreted?
 Back: Code associated with it executes after all input has been read.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1706823790239-->
@@ -188,6 +188,49 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 <!--ID: 1706824091128-->
 END%%
 
+`awk` is said to be a "line-oriented" language. Every rule's action must begin on the same line as the pattern.
+
+%%ANKI
+Basic
+When can a rule's pattern and action exist on different lines?
+Back: Only when using backslash continuation.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1706883732944-->
+END%%
+
+## Variables
+
+Variables are defined like `var=val`. They can be specified in two different places:
+
+1. Via the `-v` command line flag. Using this allows accessing the variable value from within a `BEGIN` rule.
+2. In the file list. Using this allows accessing the variable value in all subsequent file processing.
+
+%%ANKI
+Basic
+Where in an `awk` invocation can variables be assigned?
+Back: As a `-v` argument or in the file list.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1706885111450-->
+END%%
+
+%%ANKI
+Basic
+The `-v` flag was introduced to accommodate what functionality?
+Back: Accessing variables from a `BEGIN` rule.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1706885111454-->
+END%%
+
+%%ANKI
+Basic
+Describe what the following command does in in a single sentence:
+```bash
+$ awk 'program' pass=1 data pass=2 data
+```
+Back: Evaluates `'program'` against the `data` file twice with a different value of `pass` on each run.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1706885111457-->
+END%%
 ## References
 
 * Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)

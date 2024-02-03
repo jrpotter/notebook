@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-The shebang (also writting shabang or sha-bang) is a magic character at the start of a script indicating what command should be run when invoking the script directly. It always begins with ASCII characters `#!`.[^mendel]
+The shebang (also writting shabang or sha-bang) is a magic character at the start of a script indicating what command should be run when invoking the script directly. It always begins with ASCII characters `#!`.
 
 %%ANKI
 Basic

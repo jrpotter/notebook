@@ -64,15 +64,20 @@
     "daily/2024-01-31.md": "72e343cef8d56e169cac7b360a88fcf0",
     "posix/index.md": "f7b1ae55f8f5e8f50f89738b1aca9111",
     "posix/signals.md": "2120ddd933fc0d57abb93c33f639afd8",
-    "gawk.md": "4517acfbf4e186e8cc66a9002fbad73f",
+    "gawk.md": "c79a09e1772da1d4f2cd296b7370ecab",
     "bash/index.md": "3b5296277f095acdf16655adcdf524af",
-    "bash/shebang.md": "ad178efeb4a05190b80b5df108c175c7",
+    "bash/shebang.md": "9006547710f9a079a3666169fbeda7aa",
     "bash/robustness.md": "de97cd77aae047b5eea27440b43c9c42",
-    "journal/2024-02-01.md": "f4cc061bfc8e41ce15ae9a354c65ffe9",
+    "journal/2024-02-01.md": "3aa232387d2dc662384976fd116888eb",
     "journal/2024-01-31.md": "7c7fbfccabc316f9e676826bf8dfe970",
     "bash/quoting.md": "b1d8869a91001f8b22f0cdc54d806f61",
     "nix/callPackage.md": "5ef6bc5d1a549c55d43ebb4d48c64427",
-    "nix/index.md": "dd5ddd19e95d9bdbe020c68974d77a33"
+    "nix/index.md": "dd5ddd19e95d9bdbe020c68974d77a33",
+    "journal/2024-02-02.md": "e2acbe75752d9c39875553223e34fb0d",
+    "bash/prompts.md": "64bd3cd3c2feb9edb68ad8dc5ba65a35",
+    "algorithms/sorting/index.md": "cd189e1a2cf32b5656b16aaf9f488874",
+    "algorithms/sorting/insertion-sort.md": "c78c9983f87cdc4198f82803d418967f",
+    "algorithms/index.md": "1583c07edea4736db27c38fe2b6c4c31"
   },
   "fields_dict": {
     "Basic": [
