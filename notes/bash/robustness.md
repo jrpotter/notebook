@@ -60,6 +60,7 @@ It's interesting to think what else can be used as a measure of a command's robu
 	* Perhaps a program waits a specified amount of time before input is available. The command's success is now externally determined.
 * Locale-aware functionality
 	* Consider for instance [[gawk/index|gawk]]'s `\u` [[escape-sequences|sequence]] which targets characters in the current locale's character set as opposed to specifically Unicode.
+	* POSIX standard [[posix/regexp#Character Classes|character classes]] serve as another example.
 
 The above scenarios are what makes something like [[nix/index|nix]] so compelling.
 
