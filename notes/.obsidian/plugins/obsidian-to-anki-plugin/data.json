@@ -9,28 +9,19 @@
       "Image Occlusion Enhanced": ""
     },
     "FILE_LINK_FIELDS": {
-      "Basic": "Reference",
+      "Basic": "Front",
       "Basic (and reversed card)": "Front",
       "Basic (optional reversed card)": "Front",
-      "Cloze": "Reference",
+      "Cloze": "Text",
       "Image Occlusion": "Occlusion",
       "Image Occlusion Enhanced": "ID (hidden)"
     },
-    "CONTEXT_FIELDS": {
-      "Basic": "Context",
-      "Cloze": "Context"
-    },
-    "FOLDER_DECKS": {
-      "Linux": "",
-      "linux": ""
-    },
-    "FOLDER_TAGS": {
-      "Linux": "",
-      "linux": ""
-    },
+    "CONTEXT_FIELDS": {},
+    "FOLDER_DECKS": {},
+    "FOLDER_TAGS": {},
     "Syntax": {
-      "Begin Note": "%%ANKI",
-      "End Note": "END%%",
+      "Begin Note": "START",
+      "End Note": "END",
       "Begin Inline Note": "STARTI",
       "End Inline Note": "ENDI",
       "Target Deck Line": "TARGET DECK",
@@ -40,15 +31,15 @@
     },
     "Defaults": {
       "Scan Directory": "",
-      "Tag": "",
-      "Deck": "Obsidian",
+      "Tag": "Obsidian_to_Anki",
+      "Deck": "Default",
       "Scheduling Interval": 0,
       "Add File Link": false,
-      "Add Context": true,
-      "CurlyCloze": true,
-      "CurlyCloze - Highlights to Clozes": true,
+      "Add Context": false,
+      "CurlyCloze": false,
+      "CurlyCloze - Highlights to Clozes": false,
       "ID Comments": true,
-      "Add Obsidian Tags": true
+      "Add Obsidian Tags": false
     },
     "IGNORED_FILE_GLOBS": [
       "**/*.excalidraw.md"
@@ -56,41 +47,31 @@
   },
   "Added Media": [],
   "File Hashes": {
-    "index.md": "e48e895feeed7046425bb2ee15419770",
-    "Linux/Signals.md": "f58f1a36a9fe53928fdc3dc02fc4c3e3",
-    "linux/index.md": "6e50c924ee9e09294fd3b907fbdeaf0f",
-    "linux/signals.md": "e9ab74723981ebc232189c84d3b0da74",
-    "templates/daily.md": "7866014e730e85683155207a02e367d8",
-    "daily/2024-01-31.md": "72e343cef8d56e169cac7b360a88fcf0",
-    "posix/index.md": "f7b1ae55f8f5e8f50f89738b1aca9111",
-    "posix/signals.md": "2120ddd933fc0d57abb93c33f639afd8",
-    "gawk.md": "20ed75ec33b5e08933c81aac01eb64b5",
-    "bash/index.md": "3b5296277f095acdf16655adcdf524af",
-    "bash/shebang.md": "9006547710f9a079a3666169fbeda7aa",
-    "bash/robustness.md": "a1d0d334939b54cca4bdfd2fd8ca27f0",
-    "journal/2024-02-01.md": "3aa232387d2dc662384976fd116888eb",
-    "journal/2024-01-31.md": "7c7fbfccabc316f9e676826bf8dfe970",
-    "bash/quoting.md": "b1d8869a91001f8b22f0cdc54d806f61",
-    "nix/callPackage.md": "59796c480e2856fa7491f62ceb7e3c9c",
-    "nix/index.md": "dd5ddd19e95d9bdbe020c68974d77a33",
-    "journal/2024-02-02.md": "e2acbe75752d9c39875553223e34fb0d",
-    "bash/prompts.md": "64bd3cd3c2feb9edb68ad8dc5ba65a35",
-    "algorithms/sorting/index.md": "cd189e1a2cf32b5656b16aaf9f488874",
-    "algorithms/sorting/insertion-sort.md": "c78c9983f87cdc4198f82803d418967f",
-    "algorithms/index.md": "1583c07edea4736db27c38fe2b6c4c31"
-    "logic/propositional.md": "2e79b758dd161cc377f18cd1fa845285",
-    "logic/index.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "journal/2024-02-03.md": "1359532c63e14251da04181fb0873d66",
-    "bash/prompts.md": "61cb877e68da040a15b85af76b1f68ba",
+    "algorithms/index.md": "1583c07edea4736db27c38fe2b6c4c31",
     "algorithms/sorting/index.md": "3dea2ae728a19fa2d877711fa319ed87",
     "algorithms/sorting/insertion-sort.md": "c78c9983f87cdc4198f82803d418967f",
-    "algorithms/index.md": "1583c07edea4736db27c38fe2b6c4c31",
+    "bash/index.md": "3b5296277f095acdf16655adcdf524af",
+    "bash/prompts.md": "61cb877e68da040a15b85af76b1f68ba",
+    "bash/quoting.md": "b1d8869a91001f8b22f0cdc54d806f61",
+    "bash/robustness.md": "a1d0d334939b54cca4bdfd2fd8ca27f0",
+    "bash/shebang.md": "9006547710f9a079a3666169fbeda7aa",
     "c/escape-sequences.md": "07f0811b0fff14f54f78abc33f2e6606",
-    "journal/2024-02-03.md": "0c5632b15b5f981bc3efe66c498f8add",
-    "lua/index.md": "d41d8cd98f00b204e9800998ecf8427e",
     "c/index.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "gawk/index.md": "0263448c8ae1ecfc0eacc4788f8402e9",
     "gawk/variables.md": "4482c297e7f4f5987f42f1926a880ca7",
-    "gawk/index.md": "0263448c8ae1ecfc0eacc4788f8402e9"
+    "index.md": "e48e895feeed7046425bb2ee15419770",
+    "journal/2024-01-31.md": "7c7fbfccabc316f9e676826bf8dfe970",
+    "journal/2024-02-01.md": "3aa232387d2dc662384976fd116888eb",
+    "journal/2024-02-02.md": "a3b222daee8a50bce4cbac699efc7180",
+    "journal/2024-02-03.md": "c6d411f0e2e964270399dd3a99f48382",
+    "logic/index.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "logic/propositional.md": "45aee8bf688aa8fef4b136145085d38a",
+    "lua/index.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "nix/callPackage.md": "59796c480e2856fa7491f62ceb7e3c9c",
+    "nix/index.md": "dd5ddd19e95d9bdbe020c68974d77a33",
+    "posix/index.md": "f7b1ae55f8f5e8f50f89738b1aca9111",
+    "posix/signals.md": "2120ddd933fc0d57abb93c33f639afd8",
+    "templates/daily.md": "7866014e730e85683155207a02e367d8"
   },
   "fields_dict": {
     "Basic": [
