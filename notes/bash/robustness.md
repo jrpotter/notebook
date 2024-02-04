@@ -23,7 +23,7 @@ END%%
 
 %%ANKI
 Basic
-What makes a self-contained shell script more reliable?
+What makes a *self-contained* shell script more reliable?
 Back: There are no other files to misplace.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1706726911475-->

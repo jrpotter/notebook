@@ -44,7 +44,7 @@ END%%
 
 %%ANKI
 Basic
-How does Lean define propositional equality?
+What does it mean for two expressions to be propositionally equal?
 Back: Expressions `a` and `b` are propositionally equal iff `a = b` is true.
 Reference: Avigad, Jeremy. ‘Theorem Proving in Lean’, n.d.
 Tags: lean
@@ -91,7 +91,7 @@ END%%
 %%ANKI
 Basic
 What name is given to operand $a$ in $a \Rightarrow b$?
-Back: The antecedent
+Back: The antecedent.
 Reference: Gries, David. _The Science of Programming_. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861308-->
 END%%
@@ -99,7 +99,7 @@ END%%
 %%ANKI
 Basic
 What name is given to operand $b$ in $a \Rightarrow b$?
-Back: The consequent
+Back: The consequent.
 Reference: Gries, David. _The Science of Programming_. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861310-->
 END%%
