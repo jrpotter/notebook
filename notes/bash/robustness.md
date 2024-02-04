@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-An interesting point Robbins discusses in his introduction to [[gawk]] is this idea of command robustness. He states that:
+An interesting point Robbins discusses in his introduction to [[gawk/index|gawk]] is this idea of command robustness. He states that:
 
 > A self-contained shell script is more reliable because there are no other files to misplace.
 
@@ -56,6 +56,12 @@ It's interesting to think what else can be used as a measure of a command's robu
 	* What happens if I run the command twice in a row?
 * Whether a program acts atomically
 	* Is it possible intermediate files are left that affect subsequent runs?
+* The presence of timeouts
+	* Perhaps a program waits a specified amount of time before input is available. The command's success is now externally determined.
+* Locale-aware functionality
+	* Consider for instance [[gawk/index|gawk]]'s `\u` [[escape-sequences|sequence]] which targets characters in the current locale's character set as opposed to specifically Unicode.
+
+The above scenarios are what makes something like [[nix/index|nix]] so compelling.
 
 ## References
 

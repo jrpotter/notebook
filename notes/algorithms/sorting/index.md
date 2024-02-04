@@ -9,7 +9,36 @@ tags:
 
 ## Overview
 
-Let $n \geq 0$ and $S = \langle a_1, a_2, \ldots, a_n \rangle$ be a sequence. The **sorting problem** refers to permuting **keys** $a_1, a_2, \ldots, a_n$ into a new sequence $\langle a_1', a_2', \ldots, a_n' \rangle$ such that $a_1' \leq a_2' \leq \cdots \leq a_n'$.
+Let $n \geq 0$. The **sorting problem** refers to permuting **records** $a_1, a_2, \ldots, a_n$ into a new sequence $\langle a_1', a_2', \ldots, a_n' \rangle$ such that $key(a_1') \leq key(a_2') \leq \cdots \leq key(a_n')$.
+
+%%ANKI
+Cloze
+In the sorting problem, a "{record}" refers to {the entries being sorted}.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1706981319280-->
+END%%
+
+%%ANKI
+Cloze
+In the sorting problem, a "{key}" refers to {the value records are sorted by}.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1706981319310-->
+END%%
+
+%%ANKI
+Cloze
+In the sorting problem, "{satellite data}" refers to {the non-key values of records}.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1706981319317-->
+END%%
+
+%%ANKI
+Basic
+What term does Cormen et al. use to describe the record value used for sorting?
+Back: Keys.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1706981319324-->
+END%%
 
 %%ANKI
 Basic
@@ -26,6 +55,7 @@ Back: One in which only a constant number of input values are ever stored outsid
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706925787146-->
 END%%
+
 ## Structural Comparison
 
 The #Elixir documentation makes a point that there exist two types of comparisons between data types.[^structural] The first is **structural** in which comparisons are made on the underlying data structures used to describe the data types. The second is **semantic** which focuses on making the comparison with respect to what the data types represent.

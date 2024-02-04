@@ -90,7 +90,7 @@ callPackage = callPackageWith pkgs;
 %%ANKI
 Basic
 What two functions is `callPackage` implemented on top of?
-Back: `callPackageWith` and `lib.makeOverridable`.
+Back: `callPackageWith` and `makeOverridable`.
 Reference: Yin, Ryan. “NixOS and Flakes Book.” Nix, February 1, 2024. [https://github.com/ryan4yin/nixos-and-flakes-book](https://github.com/ryan4yin/nixos-and-flakes-book)
 <!--ID: 1706828138592-->
 END%%
@@ -98,7 +98,7 @@ END%%
 %%ANKI
 Basic
 What is the purpose of `callPackage`?
-Back: It calls package functions with arguments automatic supplied if not overridden. 
+Back: It calls package functions with arguments automatically supplied if not overridden. 
 Reference: Yin, Ryan. “NixOS and Flakes Book.” Nix, February 1, 2024. [https://github.com/ryan4yin/nixos-and-flakes-book](https://github.com/ryan4yin/nixos-and-flakes-book)
 <!--ID: 1706828138594-->
 END%%
