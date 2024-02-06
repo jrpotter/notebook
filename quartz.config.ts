@@ -12,9 +12,9 @@ const config: QuartzConfig = {
     baseUrl: "wiki.jrpotter.com",
     ignorePatterns: [
       ".obsidian",
-      "journal",
+      "_journal",
+      "_templates",
       "private",
-      "templates",
     ],
     defaultDateType: "created",
     theme: {
