@@ -21,15 +21,15 @@
         quartz-src = pkgs.fetchFromGitHub {
           owner = "jackyzha0";
           repo = "quartz";
-          rev = "444e05ee21687473c17c19e1d52d7da39694971c";
-          hash = "sha256-wUbNNNxp6LiNtnzFMSgzSB05AjbyOBMcfkfaA5wbCnQ=";
+          rev = "d2fb50b83c9557f1cd36e4706e9a11aa8f01e458";
+          hash = "sha256-ShrwdHhrfFCFW2I+tlhfB7sqlC29nfsb12gaN4zpNsc=";
         };
 
         quartz = pkgs.buildNpmPackage {
           pname = "quartz";
           version = "v4";
           src = quartz-src;
-          npmDepsHash = "sha256-W95Lr7rspPxYdFe1AVEJRcA/srM+uDDc8wpbRbGiLoQ=";
+          npmDepsHash = "sha256-VK51/8N8qeNuLB45NyzlYQAbMopTmLrX2nhjGu2ci4s=";
           dontNpmBuild = true;
         };
       in
@@ -67,5 +67,7 @@
 
           default = self.packages.${system}.app;
         };
+
+        devShells.default = pkgs.mkShell { };
       });
 }
