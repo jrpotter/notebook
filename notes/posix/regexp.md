@@ -8,7 +8,38 @@ tags:
 
 ## Overview
 
-The following ERE (**E**xtended **R**egular **E**xpression) operators were defined to achieve consistency between programs like `grep`, `sed`, and `awk`.
+The following ERE (**E**xtended **R**egular **E**xpression) operators were defined to achieve consistency between programs like `grep`, `sed`, and `awk`. In POSIX, regexps are greedy.
+
+%%ANKI
+Cloze
+Regular expressions are either {greedy} or {lazy}.
+Reference: “POSIX Basic Regular Expressions,” accessed February 4, 2024, [https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions).
+<!--ID: 1707231745948-->
+END%%
+
+%%ANKI
+Basic
+Are POSIX regexps greedy or lazy?
+Back: Greedy.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707231745951-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a regexp to be greedy?
+Back: The regexp matches as many characters as it can.
+Reference: “POSIX Basic Regular Expressions,” accessed February 4, 2024, [https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions).
+<!--ID: 1707231745952-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a regexp to be lazy?
+Back: The regexp matches as few characters as it can.
+Reference: “POSIX Basic Regular Expressions,” accessed February 4, 2024, [https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions).
+<!--ID: 1707231745954-->
+END%%
 
 %%ANKI
 Basic
@@ -94,7 +125,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`$`} operator matches {the ending position of a string}.
+The {`$$`} operator matches {the ending position of a string}.
 Reference: “POSIX Basic Regular Expressions,” accessed February 4, 2024, [https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions).
 <!--ID: 1707050923635-->
 END%%

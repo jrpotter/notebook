@@ -14,21 +14,21 @@ Let $n \geq 0$. The **sorting problem** refers to permuting **records** $a_1, a_
 %%ANKI
 Cloze
 In the sorting problem, a "{record}" refers to {the entries being sorted}.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706981319280-->
 END%%
 
 %%ANKI
 Cloze
 In the sorting problem, a "{key}" refers to {the value records are sorted by}.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706981319310-->
 END%%
 
 %%ANKI
 Cloze
 In the sorting problem, "{satellite data}" refers to {the non-key values of records}.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706981319317-->
 END%%
 
@@ -36,7 +36,7 @@ END%%
 Basic
 What term does Cormen et al. use to describe the record value used for sorting?
 Back: Keys.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706981319324-->
 END%%
 
@@ -44,7 +44,7 @@ END%%
 Basic
 What makes a sorting algorithm stable?
 Back: "Equal" values are ordered the same in the output as they are in the input.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706925787139-->
 END%%
 
@@ -52,7 +52,7 @@ END%%
 Basic
 What is an in place sorting algorithm?
 Back: One in which only a constant number of input values are ever stored outside the array.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706925787146-->
 END%%
 
@@ -93,7 +93,7 @@ END%%
 
 ## References
 
-* Thomas H. Cormen et al., _Introduction to Algorithms_, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+* Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 * “Kernel — Elixir v1.16.1,” accessed February 2, 2024, [https://hexdocs.pm/elixir/1.16/Kernel.html#module-structural-comparison](https://hexdocs.pm/elixir/1.16/Kernel.html#module-structural-comparison).
 
 [^structural]: [Structural Comparison](https://hexdocs.pm/elixir/1.16/Kernel.html#module-structural-comparison)

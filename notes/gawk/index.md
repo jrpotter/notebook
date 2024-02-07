@@ -119,12 +119,89 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 <!--ID: 1706822165641-->
 END%%
 
-**Targets** are specified as `$n` where `n` is a placeholder for the `n`th whitespace-separated **field**s of the input line. For example, `$1` refers to the first field of the input line. `$0` is a special target referring to the entire list of arguments, i.e. the entire line.
+`awk` reads in files in units called **records**. Each record is automatically broken up into chunks called **fields**. By default, a record corresponds to a single line. `$0` would then refer to the entire line and `$1` would refer to the first field of this line.
+
+%%ANKI
+Basic
+In `awk`, what does a "record" refer to?
+Back: The unit that input is read in.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707310981378-->
+END%%
+
+%%ANKI
+Basic
+What is the default record separator?
+Back: The newline character.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707310981380-->
+END%%
+
+%%ANKI
+Cloze
+The {`RS`} variable is used to change the {record separator}.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707310981382-->
+END%%
+
+%%ANKI
+Cloze
+If `RS` is a string with {more than one character}, it is treated as a {regexp}.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707310981384-->
+END%%
+
+%%ANKI
+Cloze
+The {`RT`} variable matches the {input characters that matched `RS`}.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707310981386-->
+END%%
+
+%%ANKI
+Basic
+Barring the final record, when is `RT` always equal to `RS`?
+Back: When `RS` is a string containing a single character.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707310981388-->
+END%%
+
+%%ANKI
+Basic
+What value of `RS` may `gawk` not process correctly?
+Back: A regexp with optional trailing part, e.g. `AB(XYZ)?`.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707310981390-->
+END%%
+
+%%ANKI
+Basic
+What implementation detail inspires avoiding `RS = "\0"`?
+Back: Most `awk` implementations store strings internally as C-style strings?
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707310981392-->
+END%%
+
+%%ANKI
+Basic
+What equivalent assignment do most `awk` implementations interpret `RS = "\0"` as?
+Back: `RS = ""`
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707310981394-->
+END%%
+
+%%ANKI
+Basic
+In `awk`, what does a "field" refer to?
+Back: A specific part of a record.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707310981395-->
+END%%
 
 %%ANKI
 Basic
 What is `$0` a placeholder for?
-Back: The entire input line.
+Back: An entire record.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1706823790230-->
 END%%
@@ -132,7 +209,7 @@ END%%
 %%ANKI
 Basic
 What is `$1` a placeholder for?
-Back: The first field of the input line.
+Back: The first field of a record.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1706823790233-->
 END%%
@@ -159,7 +236,7 @@ Describe what the following command does in in a single sentence:
 ```bash
 $ awk 'NF > 0' data
 ```
-Back: Prints every line of `data` with at least one field.
+Back: Prints every record in `data` with at least one field.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1706823927382-->
 END%%
@@ -170,7 +247,7 @@ Describe what the following command does in in a single sentence:
 ```bash
 $ awk 'END { print NR }' data
 ```
-Back: Prints the number of lines in `data`.
+Back: Prints the number of records in `data`.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1706824091124-->
 END%%
@@ -181,7 +258,7 @@ Describe what the following command does in in a single sentence:
 ```bash
 $ awk 'NR % 2 == 0' data
 ```
-Back: Prints every even-numbered line in `data`.
+Back: Prints every even-numbered record in `data`.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1706824091128-->
 END%%

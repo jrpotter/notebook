@@ -19,7 +19,7 @@ C has a standard for processing different escape sequences. Many languages built
 Basic
 How are C escape sequences for octal digits denoted?
 Back: As `\ooo`.
-Reference: Brian W. Kernighan and Dennis M. Ritchie, _The C Programming Language_, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
+Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
 <!--ID: 1706975891805-->
 END%%
 
@@ -27,7 +27,7 @@ END%%
 Basic
 In C, `\ooo` allows specifying how many octal digits?
 Back: One to three.
-Reference: Brian W. Kernighan and Dennis M. Ritchie, _The C Programming Language_, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
+Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
 <!--ID: 1706975891810-->
 END%%
 
@@ -59,7 +59,7 @@ END%%
 Basic
 How are C escape sequences for hexadecimal digits denoted?
 Back: As `\xhh`.
-Reference: Brian W. Kernighan and Dennis M. Ritchie, _The C Programming Language_, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
+Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
 <!--ID: 1706975891820-->
 END%%
 
@@ -67,7 +67,7 @@ END%%
 Basic
 In C, `\x` allows specifying how many hexadecimal digits?
 Back: One or more.
-Reference: Brian W. Kernighan and Dennis M. Ritchie, _The C Programming Language_, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
+Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
 <!--ID: 1706975891824-->
 END%%
 
@@ -142,7 +142,7 @@ END%%
 ## References
 
 * Arnold D. Robbins, “GAWK: Effective AWK Programming,” October 2023, [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf).
-* Brian W. Kernighan and Dennis M. Ritchie, _The C Programming Language_, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
+* Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 * Mendel Cooper, “Advanced Bash-Scripting Guide,” n.d., 916.
 * Roberto Ierusalimschy, _Programming in Lua_, Fourth edition (Rio de Janeiro: Lua.org, 2016).
