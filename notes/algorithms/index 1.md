@@ -1,7 +1,7 @@
 ---
 title: Sorting
 TARGET DECK: Obsidian::STEM
-FILE TAGS: algorithm sorting
+FILE TAGS: algorithm::sorting
 tags:
   - algorithm
   - sorting

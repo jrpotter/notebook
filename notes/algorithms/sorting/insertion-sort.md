@@ -1,7 +1,7 @@
 ---
 title: Insertion Sort
 TARGET DECK: Obsidian::STEM
-FILE TAGS: algorithm sorting
+FILE TAGS: algorithm::sorting
 tags:
   - algorithm
   - sorting
@@ -9,16 +9,16 @@ tags:
 
 ## Overview
 
-| Property   | Value    |
-| ---------- | -------- |
-| Best Case  | $O(n)$   |
-| Worst Case | $O(n^2)$ |
-| Avg. Case  | $O(n^2)$ |
-| Memory     | $O(1)$   |
-| In place   | Yes      |
-| Stable     | Yes      |
+Property   | Value
+---------- | --------
+Best Case  | $O(n)$
+Worst Case | $O(n^2)$
+Avg. Case  | $O(n^2)$
+Memory     | $O(1)$
+In place   | Yes
+Stable     | Yes
 
-Insertion sort works by advancing an index `i` through an array `A[1..n]` such that `A[1..i]` is kept in sorted order.
+![[insertion-sort.gif]]
 
 %%ANKI
 Basic
@@ -54,6 +54,14 @@ END%%
 
 %%ANKI
 Basic
+What is insertion sort's average case runtime?
+Back: $O(n^2)$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1707329732933-->
+END%%
+
+%%ANKI
+Basic
 Is insertion sort in place?
 Back: Yes
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
@@ -83,10 +91,49 @@ void insertion_sort(const int n, int A[static n]) {
 
 %%ANKI
 Basic
-What loop invariant is maintained in insertion sort?
-Back: `A[1..i]` is in sorted order.
+What sorting algorithm does the following demonstrate?
+![[insertion-sort.gif]]
+Back: Insertion sort.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
-<!--ID: 1706927594718-->
+<!--ID: 1707400559085-->
+END%%
+
+## Loop Invariant
+
+Consider [[loop-invariant|loop invariant]] $P$ given by
+
+> `A[0..i-1]` consists of the original `A[0..i-1]` elements but in sorted order.
+
+We prove $P$ maintains the requisite properties:
+
+* Initialization
+	* When `i = 1`, `A[0..0]` contains a single element. This trivially satisfies $P$.
+* Maintenance
+	* Suppose $P$ holds for some `1 ≤ i < n`. Then `A[0..i-1]` consists of the original `A[0..i-1]` elements but in sorted order. On iteration `i + 1`, the nested for loop puts `A[0..i]` in sorted order. At the end of the iteration, `i` is incremented meaning `A[0..i-1]` still satisfies $P$.
+* Termination
+	* The loop ends because `i < n` is no longer true. Then `i = n`. Since $P$ holds, this means `A[0..n-1]`, the entire array, is in sorted order.
+
+%%ANKI
+Basic
+Given array `A[0..n-1]`, what is insertion sort's loop invariant?
+Back: `A[0..i-1]` consists of the original `A[0..i-1]` elements but in sorted order.
+<!--ID: 1707332638371-->
+END%%
+
+%%ANKI
+Basic
+What is initialization of insertion sort's loop invariant?
+Back: Sorting starts with an singleton array which is trivially sorted.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1707332638373-->
+END%%
+
+%%ANKI
+Basic
+What is maintenance of insertion sort's loop invariant?
+Back: Each iteration puts the current element into sorted order.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1707332638375-->
 END%%
 
 ## Analogy
@@ -109,6 +156,39 @@ What invariant does the left hand maintain in Cormen et al.'s insertion sort ana
 Back: It contains all drawn cards in sorted order.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706927594732-->
+END%%
+
+%%ANKI
+Basic
+How does insertion sort partition its input array?
+Back:
+```
+[ sorted | unsorted ]
+```
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1707399790957-->
+END%%
+
+%%ANKI
+Basic
+How many comparisons does insertion sort typically perform with `x`?
+```
+[ sorted | x : unsorted ]
+```
+Back: One plus however many elements in `sorted` are greater than `x`.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1707399790958-->
+END%%
+
+%%ANKI
+Basic
+Which element will insertion sort move to `sorted`?
+```
+[ sorted | unsorted ]
+```
+Back: The first element of `unsorted`.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1707399790960-->
 END%%
 
 ## References

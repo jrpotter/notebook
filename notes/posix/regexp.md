@@ -132,7 +132,7 @@ END%%
 
 %%ANKI
 Basic
-`^` and `$` belong to what operator category?
+`^` and `$$` belong to what operator category?
 Back: Anchors
 Reference: “POSIX Basic Regular Expressions,” accessed February 4, 2024, [https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions).
 <!--ID: 1707050923643-->
@@ -243,7 +243,7 @@ Notation for describing a class of characters specific to a given locale/charact
 
 %%ANKI
 Basic
-What inconsistency do character classes introduce?
+What portability issue do character classes introduce?
 Back: Matching characters are dependent on locale/character set.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707050923719-->

@@ -72,11 +72,14 @@
       "**/*.excalidraw.md"
     ]
   },
-  "Added Media": [],
+  "Added Media": [
+    "insertion-sort.gif",
+    "selection-sort.gif"
+  ],
   "File Hashes": {
     "algorithms/index.md": "1583c07edea4736db27c38fe2b6c4c31",
-    "algorithms/sorting/index.md": "7b3b43d63ab2143e1314bb1b4e8392d2",
-    "algorithms/sorting/insertion-sort.md": "6ad645860c9c281eb8eb06c93135746f",
+    "algorithms/sorting/index.md": "6fada1f3d5d3af64687719eb465a5b97",
+    "algorithms/sorting/insertion-sort.md": "a531d611f4e2908fc4153b1b92077661",
     "bash/index.md": "3b5296277f095acdf16655adcdf524af",
     "bash/prompts.md": "61cb877e68da040a15b85af76b1f68ba",
     "bash/quoting.md": "b1d8869a91001f8b22f0cdc54d806f61",
@@ -99,7 +102,7 @@
     "posix/index.md": "f7b1ae55f8f5e8f50f89738b1aca9111",
     "posix/signals.md": "2120ddd933fc0d57abb93c33f639afd8",
     "templates/daily.md": "7866014e730e85683155207a02e367d8",
-    "posix/regexp.md": "2529451da41c81b891ea8ce82cca549e",
+    "posix/regexp.md": "e41bf86b770958316df1e20578d6020f",
     "journal/2024-02-04.md": "e2b5678fc53d7284b71ed6820c02b954",
     "gawk/regexp.md": "dbd5f9f85a2658b304a635a47379e871",
     "_templates/daily.md": "7866014e730e85683155207a02e367d8",
@@ -110,8 +113,15 @@
     "_journal/2024-02-02.md": "a3b222daee8a50bce4cbac699efc7180",
     "_journal/2024-02-01.md": "3aa232387d2dc662384976fd116888eb",
     "_journal/2024-01-31.md": "7c7fbfccabc316f9e676826bf8dfe970",
-    "logic/equiv-trans.md": "82a3376977bc5579fba5f9201c9f2c14",
-    "_journal/2024-02-07.md": "9197386e8caaf9502f12fdc10d68fa9f"
+    "logic/equiv-trans.md": "660a2a08ddcf47c05af3f8704feb5931",
+    "_journal/2024-02-07.md": "8d81cd56a3b33883a7706d32e77b5889",
+    "algorithms/loop-invariants.md": "cbefc346842c21a6cce5c5edce451eb2",
+    "algorithms/loop-invariant.md": "d883dfc997ee28a7a1e24b995377792b",
+    "algorithms/running-time.md": "5efc0791097d2c996f931c9046c95f65",
+    "algorithms/order-growth.md": "bf43ad8c16037baf1e865839f5e46704",
+    "_journal/2024-02-08.md": "26ba491937c92e55d3a43f8800677dcb",
+    "algorithms/sorting/selection-sort.md": "f31cf7e706504b9be48bed7af6e37074",
+    "algorithms/index 1.md": "6fada1f3d5d3af64687719eb465a5b97"
   },
   "fields_dict": {
     "Basic": [
