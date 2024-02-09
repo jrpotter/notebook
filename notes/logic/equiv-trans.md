@@ -21,10 +21,10 @@ END%%
 
 %%ANKI
 Basic
-What are the constant propositions?
-Back: $T$ and $F$
+What are constant propositions?
+Back: Propositions that contain only constants as operands.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861289-->
+<!--ID: 1707422675517-->
 END%%
 
 %%ANKI
@@ -520,6 +520,14 @@ What two inference rules make up the equivalence-transformation formal system?
 Back: Substitution and transitivity.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707253246450-->
+END%%
+
+%%ANKI
+Basic
+Which of the two inference rules that make up the equivalence-transformation formal system is redundant?
+Back: Transitivity.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707432641598-->
 END%%
 
 %%ANKI

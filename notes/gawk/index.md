@@ -138,64 +138,35 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 END%%
 
 %%ANKI
-Cloze
-The {`RS`} variable is used to change the {record separator}.
-Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1707310981382-->
-END%%
-
-%%ANKI
-Cloze
-If `RS` is a string with {more than one character}, it is treated as a {regexp}.
-Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1707310981384-->
-END%%
-
-%%ANKI
-Cloze
-The {`RT`} variable matches the {input characters that matched `RS`}.
-Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1707310981386-->
-END%%
-
-%%ANKI
-Basic
-Barring the final record, when is `RT` always equal to `RS`?
-Back: When `RS` is a string containing a single character.
-Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1707310981388-->
-END%%
-
-%%ANKI
-Basic
-What value of `RS` may `gawk` not process correctly?
-Back: A regexp with optional trailing part, e.g. `AB(XYZ)?`.
-Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1707310981390-->
-END%%
-
-%%ANKI
-Basic
-What implementation detail inspires avoiding `RS = "\0"`?
-Back: Most `awk` implementations store strings internally as C-style strings?
-Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1707310981392-->
-END%%
-
-%%ANKI
-Basic
-What equivalent assignment do most `awk` implementations interpret `RS = "\0"` as?
-Back: `RS = ""`
-Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1707310981394-->
-END%%
-
-%%ANKI
 Basic
 In `awk`, what does a "field" refer to?
 Back: A specific part of a record.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707310981395-->
+END%%
+
+%%ANKI
+Basic
+By default, fields are separated by what?
+Back: A sequence of spaces, tabs, and newlines.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707405259928-->
+END%%
+
+%%ANKI
+Basic
+How does `awk` define whitespace?
+Back: As *only* spaces, tabs, and newlines.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707405259932-->
+END%%
+
+%%ANKI
+Basic
+How are fields referenced?
+Back: Via the `$$` sign.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707405259933-->
 END%%
 
 %%ANKI
@@ -212,6 +183,55 @@ What is `$1` a placeholder for?
 Back: The first field of a record.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1706823790233-->
+END%%
+
+%%ANKI
+Basic
+How can you remove trailing fields of `$0`?
+Back: Assign a smaller value to `$NF`.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707491299858-->
+END%%
+
+%%ANKI
+Basic
+How do you typically recompute the value of `$0`?
+Back: `$1 = $1`
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707491299860-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following not output what you want?
+```bash
+$ ls -l | awk '{ OFS=":"; print $0 }'
+```
+Back: `$0` wasn't recomputed so it maintains the previous `OFS` value.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707491299862-->
+END%%
+
+%%ANKI
+Basic
+How can you update the following to behave correctly?
+```bash
+$ ls -l | awk '{ OFS=":"; print $0 }'
+```
+Back:
+```bash
+$ ls -l | awk '{ OFS=":"; $1 = $1; print $0 }'
+```
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707491299864-->
+END%%
+
+%%ANKI
+Basic
+When is the behavior of the field reference operator (i.e. `$$`) undefined?
+Back: When given a negative number.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707405259938-->
 END%%
 
 %%ANKI

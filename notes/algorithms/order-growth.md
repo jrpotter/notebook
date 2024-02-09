@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-The **running time** of an algorithm is usually considered as a function of its **input size**. How input size is measured depends on the problem at hand. For instance, [[index 1|sorting]] algorithms have an input size corresponding to the number of elements to sort.
+The **running time** of an algorithm is usually considered as a function of its **input size**. How input size is measured depends on the problem at hand. For instance, [[algorithms/index|sorting]] algorithms have an input size corresponding to the number of elements to sort.
 
 %%ANKI
 Basic
