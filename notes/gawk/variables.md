@@ -1,5 +1,5 @@
 ---
-title: GAWK
+title: Variables
 TARGET DECK: Obsidian::STEM
 FILE TAGS: linux::cli gawk
 tags:
