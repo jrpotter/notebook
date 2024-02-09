@@ -124,7 +124,10 @@
     "algorithms/index 1.md": "6fada1f3d5d3af64687719eb465a5b97",
     "binary/hexadecimal.md": "a9633bbc9b53cc8c16ce6e56022f62e0",
     "binary/index.md": "d41d8cd98f00b204e9800998ecf8427e",
-    "_journal/2024-02-09.md": "60e953482e5d649a669d270a192ef7e5"
+    "_journal/2024-02-09.md": "4a9ecfac710160c2d8d11077a739a97b",
+    "c/types.md": "cf3e66e5aee58a94db3fdf0783908555",
+    "logic/quantification.md": "b7cf646a8c33aa83f48ddc37c733fafb",
+    "c/declarations.md": "381bb6ddbecd369b78012112b3a8e5de"
   },
   "fields_dict": {
     "Basic": [
