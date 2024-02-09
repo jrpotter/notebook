@@ -74,12 +74,13 @@
   },
   "Added Media": [
     "insertion-sort.gif",
-    "selection-sort.gif"
+    "selection-sort.gif",
+    "bubble-sort.gif"
   ],
   "File Hashes": {
-    "algorithms/index.md": "c9cf76a46508d3a1b3aeb54e7fb1f67d",
-    "algorithms/sorting/index.md": "6fada1f3d5d3af64687719eb465a5b97",
-    "algorithms/sorting/insertion-sort.md": "a531d611f4e2908fc4153b1b92077661",
+    "algorithms/index.md": "1583c07edea4736db27c38fe2b6c4c31",
+    "algorithms/sorting/index.md": "2d5a18a3079d96fa9e3d4289181a8b6c",
+    "algorithms/sorting/insertion-sort.md": "e26909d0b4097e8e072d0b19667bf586",
     "bash/index.md": "3b5296277f095acdf16655adcdf524af",
     "bash/prompts.md": "61cb877e68da040a15b85af76b1f68ba",
     "bash/quoting.md": "b1d8869a91001f8b22f0cdc54d806f61",
@@ -118,16 +119,17 @@
     "algorithms/loop-invariants.md": "cbefc346842c21a6cce5c5edce451eb2",
     "algorithms/loop-invariant.md": "d883dfc997ee28a7a1e24b995377792b",
     "algorithms/running-time.md": "5efc0791097d2c996f931c9046c95f65",
-    "algorithms/order-growth.md": "7f87c7ab55979d66fcda8776a35e3682",
+    "algorithms/order-growth.md": "6e0f9e751eab24d74652851454264008",
     "_journal/2024-02-08.md": "19092bdfe378f31e2774f20d6afbfbac",
-    "algorithms/sorting/selection-sort.md": "f31cf7e706504b9be48bed7af6e37074",
+    "algorithms/sorting/selection-sort.md": "212140ad8bf70a56b73080bc7317f643",
     "algorithms/index 1.md": "6fada1f3d5d3af64687719eb465a5b97",
     "binary/hexadecimal.md": "a9633bbc9b53cc8c16ce6e56022f62e0",
     "binary/index.md": "d41d8cd98f00b204e9800998ecf8427e",
     "_journal/2024-02-09.md": "4a9ecfac710160c2d8d11077a739a97b",
     "c/types.md": "cf3e66e5aee58a94db3fdf0783908555",
     "logic/quantification.md": "b7cf646a8c33aa83f48ddc37c733fafb",
-    "c/declarations.md": "381bb6ddbecd369b78012112b3a8e5de"
+    "c/declarations.md": "381bb6ddbecd369b78012112b3a8e5de",
+    "algorithms/sorting/bubble-sort.md": "6bffe3dabde3d6d4414ca3b5afdb1684"
   },
   "fields_dict": {
     "Basic": [

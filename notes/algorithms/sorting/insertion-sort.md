@@ -9,21 +9,21 @@ tags:
 
 ## Overview
 
-Property   | Value
----------- | --------
-Best Case  | $O(n)$
-Worst Case | $O(n^2)$
-Avg. Case  | $O(n^2)$
-Memory     | $O(1)$
-In place   | Yes
-Stable     | Yes
+Property    | Value
+----------- | --------
+Best Case   | $\Omega(n)$
+Worst Case  | $O(n^2)$
+Avg. Case   | $O(n^2)$
+Aux. Memory | $O(1)$
+Stable      | Yes
+Adaptive    | Yes
 
 ![[insertion-sort.gif]]
 
 %%ANKI
 Basic
 What is insertion sort's best case runtime?
-Back: $O(n)$
+Back: $\Omega(n)$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706925879541-->
 END%%
@@ -74,6 +74,14 @@ Is insertion sort stable?
 Back: Yes
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706926586959-->
+END%%
+
+%%ANKI
+Basic
+Is insertion sort adaptive?
+Back: Yes
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1707504634779-->
 END%%
 
 ```c
@@ -134,6 +142,13 @@ What is maintenance of insertion sort's loop invariant?
 Back: Each iteration puts the current element into sorted order.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707332638375-->
+END%%
+
+%%ANKI
+Basic
+insertion sort makes fewer {comparisons} than selection sort in the average case.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1707500283783-->
 END%%
 
 ## Analogy
