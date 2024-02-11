@@ -37,6 +37,22 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
+Basic
+How large is a word?
+Back: This is a machine-dependent value.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707657889227-->
+END%%
+
+%%ANKI
+Basic
+What word sizes are typically nowadays?
+Back: 32- and 64-bit word sizes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707657889230-->
+END%%
+
+%%ANKI
 Cloze
 `char` *typically* represents {1} byte(s) on a 64-bit platform.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

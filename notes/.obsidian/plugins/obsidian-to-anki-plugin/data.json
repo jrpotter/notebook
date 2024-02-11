@@ -123,12 +123,12 @@
     "_journal/2024-02-08.md": "19092bdfe378f31e2774f20d6afbfbac",
     "algorithms/sorting/selection-sort.md": "73a077a726afd376650d1bd9e2d0bed9",
     "algorithms/index 1.md": "6fada1f3d5d3af64687719eb465a5b97",
-    "binary/hexadecimal.md": "a9633bbc9b53cc8c16ce6e56022f62e0",
+    "binary/hexadecimal.md": "531ebb4b1b10a0ac60899164bc1c3f07",
     "binary/index.md": "a67b5d0c8ac53e076590f315cce22201",
     "_journal/2024-02-09.md": "a798d35f0b2bd1da130f7ac766166109",
     "c/types.md": "cf3e66e5aee58a94db3fdf0783908555",
     "logic/quantification.md": "b7cf646a8c33aa83f48ddc37c733fafb",
-    "c/declarations.md": "381bb6ddbecd369b78012112b3a8e5de",
+    "c/declarations.md": "6d80eca97506fae9a4a209a558d3aa84",
     "algorithms/sorting/bubble-sort.md": "16dad1016dc6555163e42ba20f1d152d",
     "_journal/2024-02-10.md": "562b01f60ea36a3c78181e39b1c02b9f",
     "_journal/2024-01/2024-01-31.md": "7c7fbfccabc316f9e676826bf8dfe970",
@@ -142,7 +142,8 @@
     "_journal/2024-02/2024-02-02.md": "a3b222daee8a50bce4cbac699efc7180",
     "_journal/2024-02/2024-02-01.md": "3aa232387d2dc662384976fd116888eb",
     "_journal/2024-02/2024-02-10.md": "562b01f60ea36a3c78181e39b1c02b9f",
-    "_journal/2024-02-11.md": "b8c72e835176c4b3e779e5243fc77b6b"
+    "_journal/2024-02-11.md": "438455de19ee8c76acce50a723612698",
+    "binary/endianness.md": "d73bf4e10385cdbc672d40a53f0fe868"
   },
   "fields_dict": {
     "Basic": [
