@@ -22,6 +22,14 @@ Adaptive    | Yes
 
 %%ANKI
 Basic
+Describe bubble sort in a single sentence.
+Back: Repeatedly swap the smaller of adjacent records downward.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1707589393196-->
+END%%
+
+%%ANKI
+Basic
 What is bubble sort's best case runtime?
 Back: $\Omega(n)$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).

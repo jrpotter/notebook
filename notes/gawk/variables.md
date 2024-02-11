@@ -118,7 +118,7 @@ END%%
 %%ANKI
 Basic
 What implementation detail inspires avoiding `RS = "\0"`?
-Back: Most `awk` implementations store strings internally as C-style strings?
+Back: Most `awk` implementations store strings internally as C-style strings.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707310981392-->
 END%%
@@ -133,6 +133,9 @@ END%%
 
 * `NF` (**N**umber of **F**ields)
 	* The 1-indexed number of fields found in the current record.
+* `FS` (**F**ield **S**eparator)
+	* The separator used to distinguish fields from one another.
+	* Defaults to `" "` which is a special character for **runs** of spaces, tabs, and newlines.
 
 %%ANKI
 Basic
@@ -163,6 +166,51 @@ Cloze
 The {`NF`} variable specifies the {number of fields in the current record}.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707405259930-->
+END%%
+
+%%ANKI
+Cloze
+The {`FS`} variable is used to change the {field separator}.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707618833549-->
+END%%
+
+%%ANKI
+Cloze
+{`FS`} is to `awk` as {`IFS`} is to Bash.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+/END%%
+
+%%ANKI
+Basic
+What is the default value of `FS`?
+Back: `" "`
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707618833552-->
+END%%
+
+%%ANKI
+Basic
+What value of `FS` is specially handled?
+Back: `" "`
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707618833555-->
+END%%
+
+%%ANKI
+Basic
+How is `FS = " "` interpreted?
+Back: As a contiguous sequence of spaces, tabs, and newlines.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707618833556-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes `FS` value `" "` and `[ \t\n]+`?
+Back: When set to the former, `awk` strips leading and trailing whitespace from each record.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707618833558-->
 END%%
 
 ## References

@@ -22,6 +22,14 @@ Adaptive    | Yes
 
 %%ANKI
 Basic
+Describe insertion sort in a single sentence.
+Back: Repeatedly put the next record into a sorted array from right to left.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1707589393194-->
+END%%
+
+%%ANKI
+Basic
 What is insertion sort's best case runtime?
 Back: $\Omega(n)$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).

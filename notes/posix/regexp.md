@@ -152,6 +152,14 @@ END%%
 
 %%ANKI
 Basic
+How is the `*` operator written equivalently as an interval expression?
+Back: `{0,}`
+Reference: “POSIX Basic Regular Expressions,” accessed February 4, 2024, [https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions).
+<!--ID: 1707654685031-->
+END%%
+
+%%ANKI
+Basic
 What does the `+` operator do?
 Back: Matches the preceding element one or more times.
 Reference: “POSIX Basic Regular Expressions,” accessed February 4, 2024, [https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions).
@@ -160,10 +168,26 @@ END%%
 
 %%ANKI
 Basic
+How is the `+` operator written equivalently as an interval expression?
+Back: `{1,}`
+Reference: “POSIX Basic Regular Expressions,” accessed February 4, 2024, [https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions).
+<!--ID: 1707654685034-->
+END%%
+
+%%ANKI
+Basic
 What does the `?` operator do?
 Back: Matches the preceding element zero or one times.
 Reference: “POSIX Basic Regular Expressions,” accessed February 4, 2024, [https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions).
 <!--ID: 1707050923662-->
+END%%
+
+%%ANKI
+Basic
+How is the `?` operator written equivalently as an interval expression?
+Back: `{0,1}`
+Reference: “POSIX Basic Regular Expressions,” accessed February 4, 2024, [https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions).
+<!--ID: 1707654685036-->
 END%%
 
 * `{n}`, an **interval expression**, matches the preceding element `n` times.

@@ -293,6 +293,36 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 <!--ID: 1706883732944-->
 END%%
 
+%%ANKI
+Basic
+What is the output of the following?
+```bash
+$ echo ' abc' | awk '{ print }'
+```
+Back: `‏‏‎ ‎abc` (with leading whitespace)
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707618833559-->
+END%%
+
+%%ANKI
+Basic
+What is the output of the following?
+```bash
+$ echo ' abc' | awk ' { $1 = $1; print }'
+```
+Back: `abc` (without leading whitespace)
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707618833561-->
+END%%
+
+%%ANKI
+Basic
+How is `$$0` rebuilt after assignment `$1 = $1`?
+Back: By intercalating `OFS` between values of `$1` through `NF`.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707618833562-->
+END%%
+
 ## Exit Status
 
 On success, `gawk` exits with status code `EXIT_SUCCESS`. On failure, with status code `EXIT_FAILURE`. On fatal error, `gawk` exists with status code `2`. #c

@@ -72,8 +72,8 @@ END%%
 
 %%ANKI
 Basic
-Why is it recommended to avoid using `^`/`$` in `RS`?
-Back: These anchors match the beginning/end of a string, not of a line.
+Why is it recommended to avoid using `^` and `$$` in `RS`?
+Back: These anchors match the beginning and end of a string, not of a line.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707310981375-->
 END%%

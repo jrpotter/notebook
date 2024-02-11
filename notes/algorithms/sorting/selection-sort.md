@@ -20,6 +20,15 @@ Adaptive    | No
 
 ![[selection-sort.gif]]
 
+
+%%ANKI
+Basic
+Describe selection sort in a single sentence.
+Back: Repeatedly put the smallest unsorted record at the end of a sorted array.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1707589393190-->
+END%%
+
 %%ANKI
 Basic
 What is selection sort's best case runtime?

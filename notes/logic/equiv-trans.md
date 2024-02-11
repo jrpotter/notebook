@@ -582,7 +582,7 @@ END%%
 %%ANKI
 Basic
 What is a "theorem" in the equivalence-transformation formal system?
-Back: An equality derived from the axioms and inference rules.
+Back: An equivalence derived from the axioms and inference rules.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707316178712-->
 END%%
@@ -668,7 +668,7 @@ END%%
 
 %%ANKI
 Basic
-Where are $\land$ and $\lor$ found within a proposition in DNF?
+Where are $\land$ and $\lor$ found within a DNF proposition?
 Back: $\lor$ separates disjuncts containing $\land$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707311868998-->
@@ -692,7 +692,7 @@ END%%
 
 %%ANKI
 Basic
-Where are $\land$ and $\lor$ found within a proposition in CNF?
+Where are $\land$ and $\lor$ found within a CNF proposition?
 Back: $\land$ separates conjuncts containing $\lor$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707311869003-->
