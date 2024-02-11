@@ -114,6 +114,6 @@ int main() {
 
 The above snippet can be used to check endianness on the current machine. If big-endian, the output should be `01 23 45 67`. If little-endian, `67 45 23 01`.
 
-## Reference
+## References
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

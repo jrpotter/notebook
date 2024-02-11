@@ -91,6 +91,6 @@ Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambri
 <!--ID: 1707344177515-->
 END%%
 
-## Reference
+## References
 
 * Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).

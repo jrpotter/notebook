@@ -111,6 +111,6 @@ Reference: Yin, Ryan. “NixOS and Flakes Book.” Nix, February 1, 2024. [https
 <!--ID: 1706828225240-->
 END%%
 
-## Reference
+## References
 
 * Yin, Ryan. “NixOS and Flakes Book.” Nix, February 1, 2024. [https://github.com/ryan4yin/nixos-and-flakes-book](https://github.com/ryan4yin/nixos-and-flakes-book)
