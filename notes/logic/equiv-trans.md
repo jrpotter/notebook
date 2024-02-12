@@ -404,7 +404,7 @@ END%%
 %%ANKI
 Basic
 Which of the basic logical operators do De Morgan's Laws apply to?
-Back: $\land$ and $\lor$
+Back: $\neg$, $\land$, and $\lor$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707251673363-->
 END%%

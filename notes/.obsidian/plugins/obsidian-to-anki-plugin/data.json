@@ -114,7 +114,7 @@
     "_journal/2024-02-02.md": "a3b222daee8a50bce4cbac699efc7180",
     "_journal/2024-02-01.md": "3aa232387d2dc662384976fd116888eb",
     "_journal/2024-01-31.md": "7c7fbfccabc316f9e676826bf8dfe970",
-    "logic/equiv-trans.md": "6554eae8e908f848059043299dfb51c6",
+    "logic/equiv-trans.md": "dfe893e20684c4d37c6c439a8722f7a6",
     "_journal/2024-02-07.md": "8d81cd56a3b33883a7706d32e77b5889",
     "algorithms/loop-invariants.md": "cbefc346842c21a6cce5c5edce451eb2",
     "algorithms/loop-invariant.md": "d883dfc997ee28a7a1e24b995377792b",
@@ -144,7 +144,9 @@
     "_journal/2024-02/2024-02-10.md": "562b01f60ea36a3c78181e39b1c02b9f",
     "_journal/2024-02-11.md": "afee9f502b61e17de231cf2f824fbb32",
     "binary/endianness.md": "29c0aea671aa25aead580e9431aba8cc",
-    "logic/normal-form.md": "d6a79aa850e9830def15e9012a774057"
+    "logic/normal-form.md": "d6a79aa850e9830def15e9012a774057",
+    "_journal/2024-02-12.md": "a04ed5a77c12319ab80ba29b13526b3b",
+    "_journal/2024-02/2024-02-11.md": "afee9f502b61e17de231cf2f824fbb32"
   },
   "fields_dict": {
     "Basic": [
