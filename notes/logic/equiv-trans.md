@@ -122,7 +122,7 @@ END%%
 
 %%ANKI
 Basic
-What C operator corresponds to $\neg$?
+What C logical operator corresponds to $\neg$?
 Back: `!`
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 Tags: c
@@ -131,7 +131,7 @@ END%%
 
 %%ANKI
 Basic
-What C operator corresponds to $\land$?
+What C logical operator corresponds to $\land$?
 Back: There isn't one.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 Tags: c
@@ -140,7 +140,7 @@ END%%
 
 %%ANKI
 Basic
-What C operator corresponds to $\lor$?
+What C logical operator corresponds to $\lor$?
 Back: There isn't one.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 Tags: c
@@ -149,7 +149,7 @@ END%%
 
 %%ANKI
 Basic
-What C operator corresponds to $\Rightarrow$?
+What C logical operator corresponds to $\Rightarrow$?
 Back: There isn't one.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 Tags: c
@@ -158,7 +158,7 @@ END%%
 
 %%ANKI
 Basic
-What C operator corresponds to $\Leftrightarrow$?
+What C logical operator corresponds to $\Leftrightarrow$?
 Back: `==`
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 Tags: c
