@@ -617,218 +617,158 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707316276203-->
 END%%
 
-## Normal Forms
+## Textual Substitution
 
-Every proposition can be written in **disjunctive normal form** (DNF) and **conjunctive normal form** (CNF). This is evident with the use of truth tables. To write a proposition in DNF, write its corresponding truth table and $\lor$ each row that evaluates to $T$. To write the same proposition in CNF, apply $\lor$ to each row that evaluates to $F$ and negate it.
-
-$$\neg (a \Rightarrow b) \Leftrightarrow c$$
-
-It's truth table looks like
-
-$$\begin{array}{c|c|c|c|c|c}
-\neg & (a & \Rightarrow & b) & \Leftrightarrow & c \\
-\hline
-F & T & T & T & F & T \\
-F & T & T & T & T & F \\
-T & T & F & F & T & T \\
-T & T & F & F & F & F \\
-F & F & T & T & F & T \\
-F & F & T & T & T & F \\
-F & F & T & F & F & T \\
-F & F & T & F & T & F
-\end{array}$$
-
-and it's DNF looks like
-
-$$
-(a \land b \land \neg c) \lor
-(a \land \neg b \land c) \lor
-(\neg a \land b \land \neg c) \lor
-(\neg a \land \neg b \land \neg c)
-$$
-
-It's CNF results from applying De Morgan's Law to the truth table's "complement":
-
-$$
-\neg(
-  (a \land b \land c) \lor
-  (a \land \neg b \land \neg c) \lor
-  (\neg a \land b \land c) \lor
-  (\neg a \land \neg b \land c)
-)
-$$
+**Textual substitution** refers to the simultaneous replacement of a free identifier with an expression, introducing parentheses as necessary. This concept is just the [[#Equivalence Rules|Substitution Rule]] with different notation. For example, let $E$ and $e$ be expressions and $x$ an identifer. Then $$E_e^x$$ denotes the simultaneous replacement of all free occurrences of $x$ with $e$.
 
 %%ANKI
 Basic
-What construct is used to prove every proposition can be written in DNF or CNF?
-Back: Truth tables
+Textual substitution is derived from what equivalence rule?
+Back: The substitution rule.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707311868994-->
+<!--ID: 1707762304123-->
 END%%
 
 %%ANKI
 Basic
-Where are $\land$ and $\lor$ found within a DNF proposition?
-Back: $\lor$ separates disjuncts containing $\land$.
+What is $E$'s role in textual substitution $E_e^x$?
+Back: It is the expression that free occurrences of $x$ are replaced with $e$ in.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707311868998-->
+<!--ID: 1707762304126-->
 END%%
 
 %%ANKI
 Basic
-What is DNF an acronym for?
-Back: **D**isjunctive **N**ormal **F**orm.
+What is $e$'s role in textual substitution $E_e^x$?
+Back: It is the expression that free occurrences of $x$ in $E$ are substituted with.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707311869000-->
+<!--ID: 1707762304127-->
 END%%
 
 %%ANKI
 Basic
-What is CNF an acronym for?
-Back: **C**onjunctive **N**ormal **F**orm.
+What is $x$'s role in textual substitution $E_e^x$?
+Back: It is the identifier matching free occurrences in $E$ that are replaced with $e$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707311869002-->
+<!--ID: 1707762304129-->
 END%%
 
 %%ANKI
 Basic
-Where are $\land$ and $\lor$ found within a CNF proposition?
-Back: $\land$ separates conjuncts containing $\lor$.
+How is textual substitution $E_e^x$ interpreted as a function?
+Back: As $E(e)$, where $E$ is a function of $x$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707311869003-->
-END%%
-
-## Short-Circuit Evaluation
-
-The $\textbf{cand}$ and $\textbf{cor}$ operator allows short-circuiting evaluation in the case of undefined ($U$) values.
-
-%%ANKI
-Basic
-What truth values do short-circuit evaluation operators act on?
-Back: $T$, $F$, and $U$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707317708622-->
+<!--ID: 1707762304130-->
 END%%
 
 %%ANKI
 Basic
-What C operator corresponds to $\textbf{cand}$?
-Back: `&&`
+Why does Gries prefer notation $E_e^x$ over e.g. $E(e)$?
+Back: The former indicates the identifier to replace.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c
-<!--ID: 1707316606004-->
+<!--ID: 1707762304132-->
 END%%
 
 %%ANKI
 Basic
-Why is $\textbf{cand}$ named the way it is?
-Back: It is short for **c**onditional **and**.
+What two scenarios ensure $E_e^x = E$ is an equivalence?
+Back: $x = e$ or no free occurrences of $x$ exist in $E$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707317708625-->
+<!--ID: 1707762304133-->
 END%%
 
 %%ANKI
 Basic
-How is $p \textbf{ cand } q$ written as a conditional?
-Back: $\textbf{if } p \textbf{ then } q \textbf{ else } F$ 
+Why might $E_e^x = E$ be an equivalence despite identifier $x$ existing in $E$?
+Back: If the only occurrences of $x$ in $E$ are bound.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707317708627-->
+<!--ID: 1707762304135-->
 END%%
 
 %%ANKI
 Basic
-When can $\textbf{cand}$ evaluate to a non-$U$ value despite being given a $U$ operand?
-Back: $F \textbf{ cand } U = F$
+What is required for $E_e^x$ to be valid?
+Back: Substitution must result in a syntactically valid expression.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707317708628-->
+<!--ID: 1707762304137-->
 END%%
 
 %%ANKI
 Basic
-What C operator corresponds to $\textbf{cor}$?
-Back: `||`
+What is the result of the following? $$(x < y \land (\forall i : 0 \leq i < n : b[i] < y))_z^x$$
+Back: $$(z < y \land (\forall i : 0 \leq i < n : b[i] < y))$$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c
-<!--ID: 1707316606007-->
+<!--ID: 1707762304139-->
 END%%
 
 %%ANKI
 Basic
-Why is $\textbf{cor}$ named the way it is?
-Back: It is short for **c**onditional **or**.
+What is the result of the following? $$(x < y \land (\forall i : 0 \leq i < n : b[i] < y))_z^y$$
+Back: $$(x < z \land (\forall i : 0 \leq i < n : b[i] < z))$$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707317708630-->
+<!--ID: 1707762304140-->
 END%%
 
 %%ANKI
 Basic
-How is $p \textbf{ cor } q$ written as a conditional?
-Back: $\textbf{if } p \textbf{ then } T \textbf{ else } q$ 
+What is the result of the following? $$(x < y \land (\forall i : 0 \leq i < n : b[i] < y))_z^i$$
+Back: $$(x < y \land (\forall i : 0 \leq i < n : b[i] < y))$$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707317708632-->
+<!--ID: 1707762304141-->
+END%%
+
+* $(E_u^x)_v^x = E_{u_v^x}^x$
+	* The only possible free occurrences of $x$ that may appear after the first of the sequential substitutions occur in $u$.
+* If $y$ is not free in $E$, then $(E_u^x)_v^y = E_{u_v^y}^x$.
+	* $y$ may not be free in $E$ but substituting $x$ with $u$ can introduce a free occurrence. It doesn't matter if we perform the substitution first or second though.
+
+%%ANKI
+Basic
+How do we simplify $(E_u^x)_v^x$?
+Back: As $E_{u_v^x}^x$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304143-->
 END%%
 
 %%ANKI
 Basic
-When can $\textbf{cor}$ evaluate to a non-$U$ value despite being given a $U$ operand?
-Back: $T \textbf{ cor } U = T$
+How is $E_{u_v^x}^x$ rewritten as sequential substitution?
+Back: As $(E_u^x)_v^x$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707317708633-->
-END%%
-
-* Associative Laws
-	* $E1 \textbf{ cand } (E2 \textbf{ cand } E3) = (E1 \textbf{ cand } E2) \textbf{ cand } E3$
-	* $E1 \textbf{ cor } (E2 \textbf{ cor } E3) = (E1 \textbf{ cor } E2) \textbf{ cor } E3$
-
-%%ANKI
-Basic
-Which of the short-circuit logical operators do the commutative laws apply to?
-Back: Neither of them.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707317708635-->
+<!--ID: 1707762304145-->
 END%%
 
 %%ANKI
 Basic
-Which of the short-circuit logical operators do the associative laws apply to?
-Back: $\textbf{cand}$ and $\textbf{cor}$
+Why is $(E_u^x)_v^x = E_{u_v^x}^x$ an equivalence?
+Back: After the first substitution, the only possible free occurrences of $x$ are in $u$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707317708636-->
-END%%
-
-* Distributive Laws
-	* $E1 \textbf{ cand } (E2 \textbf{ cor } E3) = (E1 \textbf{ cand } E2) \textbf{ cor } (E1 \textbf{ cand } E3)$
-	* $E1 \textbf{ cor } (E2 \textbf{ cand } E3) = (E1 \textbf{ cor } E2) \textbf{ cand } (E1 \textbf{ cor } E3)$
-
-%%ANKI
-Basic
-What is the distributive law of e.g. $\textbf{cor}$ over $\textbf{cand}$?
-Back: $E1 \textbf{ cor } (E2 \textbf{ cand } E3) = (E1 \textbf{ cor } E2) \textbf{ cand } (E1 \textbf{ cor } E3)$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707317708638-->
-END%%
-
-* De Morgan's Laws
-	* $\neg (E1 \textbf{ cand } E2) = \neg E1 \textbf{ cor } \neg E2$
-	* $\neg (E1 \textbf{ cor } E2) = \neg E1 \textbf{ cand } \neg E2$
-
-%%ANKI
-Basic
-Which of the short-circuit logical operators do De Morgan's Laws apply to?
-Back: $\textbf{cand}$ and $\textbf{cor}$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707317708640-->
+<!--ID: 1707762304146-->
 END%%
 
 %%ANKI
 Basic
-What is De Morgan's Law of e.g. $\textbf{cor}$?
-Back: $\neg (E1 \textbf{ cor } E2) = \neg E1 \textbf{ cand } \neg E2$
+In what two scenarios is $(E_u^x)_v^y = E_{u_v^y}^x$ always an equivalence?
+Back: $x = y$ or $y$ is not free in $E$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707317708642-->
+<!--ID: 1707762304148-->
 END%%
 
-Gries lists other "Laws" but they don't seem as important to note here. What's worth noting is that the other [[#Equivalence Schemas]] listed above still apply if we can limit operands to just $T$ and $F$.
+%%ANKI
+Basic
+If $x \neq y$, when is $(E_u^x)_v^y = E_{u_v^y}^x$?
+Back: When $y$ is not free in $E$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304150-->
+END%%
+
+%%ANKI
+Basic
+Why should $y$ not be free in $E$ for $(E_u^x)_v^y = E_{u_v^y}^x$ to be an equivalence?
+Back: If it were, a $v$ would exist in the LHS that doesn't in the RHS.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304152-->
+END%%
 
 ## References
 

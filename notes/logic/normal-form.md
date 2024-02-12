@@ -10,8 +10,8 @@ tags:
 
 An object is said to be in **normal form** if it cannot be reduced any further. Examples of normal form include:
 
-* [[equiv-trans#Normal Forms|Conjunctive Normal Form]]
-* [[equiv-trans#Normal Forms|Disjunctive Normal Form]]
+* [[truth-tables|Conjunctive Normal Form]]
+* [[truth-tables|Disjunctive Normal Form]]
 * [[quantification#Identifiers|Prenex Normal Form]]
 
 %%ANKI
