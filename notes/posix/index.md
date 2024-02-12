@@ -1,3 +1,5 @@
 ---
 title: POSIX
+tags:
+  - posix
 ---

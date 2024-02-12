@@ -1,3 +1,5 @@
 ---
 title: Lua
+tags:
+  - lua
 ---

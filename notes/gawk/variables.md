@@ -213,6 +213,36 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 <!--ID: 1707618833558-->
 END%%
 
+%%ANKI
+Cloze
+Setting `FS` to {`""`} allows examining {each character of a record separately}.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707756447064-->
+END%%
+
+%%ANKI
+Cloze
+Setting `FS` to {`"\n"`} treats the {record as the single field}.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707756447067-->
+END%%
+
+%%ANKI
+Basic
+What value of `FS` ensures `$1 = $0`?
+Back: `"\n"`
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707756447069-->
+END%%
+
+%%ANKI
+Basic
+*Why* does `awk` support a CSV mode?
+Back: Because CSV fields may contain commas and newlines.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707756447071-->
+END%%
+
 ## References
 
 * Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)

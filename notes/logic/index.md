@@ -1,3 +1,5 @@
 ---
 title: Logic
+tags:
+  - logic
 ---

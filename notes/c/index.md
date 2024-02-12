@@ -1,3 +1,5 @@
 ---
 title: C
+tags:
+  - c
 ---
