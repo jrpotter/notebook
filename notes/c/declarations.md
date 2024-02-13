@@ -17,6 +17,22 @@ long        | unsigned long  | 4      | 8
 char *      | -              | 4      | 8
 float       | -              | 4      | 4
 double      | -              | 8      | 8
+Fixed width data integral types (e.g. `int32_t`) can be found by including `<stdint.h>`.
+
+%%ANKI
+Cloze
+The {`<stdint.h>`} header file contains {fixed width data integral types}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707835869728-->
+END%%
+
+%%ANKI
+Basic
+What does the "width" of an integer type refer to?
+Back: The number of bits used to represent its value.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707835869737-->
+END%%
 
 %%ANKI
 What two variants does a C integral type declaration have?

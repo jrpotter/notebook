@@ -13,27 +13,6 @@ Hexadecimal encoding refers to the 16-base representation of binary numbers. Dis
 
 %%ANKI
 Cloze
-A byte consists of {8} bits.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707432641557-->
-END%%
-
-%%ANKI
-Cloze
-A byte consists of {2} nibbles.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707432641560-->
-END%%
-
-%%ANKI
-Cloze
-A nibble consists of {4} bits.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707432641562-->
-END%%
-
-%%ANKI
-Cloze
 A byte consists of {2} hexadecimal digits.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707432641563-->
@@ -90,32 +69,6 @@ Basic
 Back: To the left of the binary sequence.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707432641573-->
-END%%
-
-%%ANKI
-Basic
-How is $2^n$ written in binary?
-Back: As `1` followed by $n$ zeros.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707432641574-->
-END%%
-
-%%ANKI
-Basic
-How is $2^n$ written using bitwise shift operators?
-Back: `1 << n`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tag: c
-<!--ID: 1707432641576-->
-END%%
-
-%%ANKI
-Basic
-What decimal value does `1 << n` translate to?
-Back: $2^n$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tag: c
-<!--ID: 1707432641577-->
 END%%
 
 %%ANKI
@@ -180,22 +133,6 @@ How is $n$ in $2^n$ factored to quickly write the decimal value's hex representa
 Back: $n = i + 4j$ where $0 \leq i \leq 3$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707432641589-->
-END%%
-
-%%ANKI
-Basic
-What process is used to convert from e.g. decimal to another base?
-Back: Divide repeatedly by the base. Maintain remainders right to left.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707432641591-->
-END%%
-
-%%ANKI
-Basic
-Why does converting from e.g. decimal to another base involve repeated division?
-Back: The position of a digit corresponds to the base raised to the position.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707432641592-->
 END%%
 
 %%ANKI
