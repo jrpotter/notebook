@@ -73,24 +73,8 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 <!--ID: 1707405259925-->
 END%%
 
-* `RS` (**R**ecord **S**eparator)
-	* The separator used to distinguish records from one another.
 * `RT` (**R**ecord **T**ext)
 	* The matching separator used to distinguish the currently read record.
-
-%%ANKI
-Cloze
-The {`RS`} variable is used to change the {record separator}.
-Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1707310981382-->
-END%%
-
-%%ANKI
-Cloze
-If `RS` is a string with {more than one character}, it is treated as a {regexp}.
-Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1707310981384-->
-END%%
 
 %%ANKI
 Cloze
@@ -105,6 +89,39 @@ Barring the final record, when is `RT` always equal to `RS`?
 Back: When `RS` is a string containing a single character.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707310981388-->
+END%%
+
+* `RS` (**R**ecord **S**eparator)
+	* The separator used to distinguish records from one another.
+	* Defaults to `"\n"`.
+
+`RS == ??`             | Description
+---------------------- | -------------------------------------
+`"\n"`                 | Records are separated by the newline character. This is the default.
+*any single character* | Records are separated by each occurrence of the character. Multiple successive occurrences delimit empty records.
+`""`                   | Records are separated by runs of blank lines. Leading/trailing newlines in a file are ignored. If `FS` is a single character, then `"\n"` also serves as a field separator.
+*regexp*               | Records are separated by occurrences of characters that match *regexp*. Leading/trailing matches delimit empty records.
+
+%%ANKI
+Cloze
+The {`RS`} variable is used to change the {record separator}.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707310981382-->
+END%%
+
+%%ANKI
+Basic
+What is the default value of `RS`?
+Back: `"\n"`
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707310981380-->
+END%%
+
+%%ANKI
+Cloze
+If `RS` is a string with {more than one character}, it is treated as a {regexp}.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707310981384-->
 END%%
 
 %%ANKI
@@ -131,11 +148,31 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 <!--ID: 1707310981394-->
 END%%
 
+%%ANKI
+Basic
+How is `RS = ""` interpreted?
+Back: `""` indicates runs of newlines should be treated as the record separator.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707829409163-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes `RS` value `""` and `\n\n+`?
+Back: When set to the former, `awk` strips leading/trailing newlines from the file.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707829409170-->
+END%%
+
+%%ANKI
+Cloze
+If `RS = ""` and `FS` is set to {a single character}, the {newline character} *always* acts as a field separator.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707829509362-->
+END%%
+
 * `NF` (**N**umber of **F**ields)
 	* The 1-indexed number of fields found in the current record.
-* `FS` (**F**ield **S**eparator)
-	* The separator used to distinguish fields from one another.
-	* Defaults to `" "` which is a special character for **runs** of spaces, tabs, and newlines.
 
 %%ANKI
 Basic
@@ -167,6 +204,33 @@ The {`NF`} variable specifies the {number of fields in the current record}.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707405259930-->
 END%%
+
+%%ANKI
+Basic
+What does incrementing `NF` do?
+Back: Creates the field and rebuilds the record.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707829863717-->
+END%%
+
+%%ANKI
+Basic
+What does decrementing `NF` do?
+Back: Throws away fields and rebuilds the record.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707829863726-->
+END%%
+
+* `FS` (**F**ield **S**eparator)
+	* The separator used to distinguish fields from one another.
+
+`FS == ??`                   | Description
+---------------------------- | -------------------------------------
+`" "`                        | Fields are separated by runs of whitespace. Leading/trailing whitespace is ignored. This is the default.
+*any other single character* | Fields are separated by each occurrence of the character. Multiple successive occurrences delimit empty fields, as do leading/trailing occurrences.
+`"\n"`                       | Specific instance of the above row. It is used to treat the record as a single field (assuming newlines separate records).
+*regexp*                     | Fields are separated by occurrences of characters that match *regexp*. Leading/trailing matches delimit empty fields.
+`""`                         | Each individual character in the record becomes a separate field.
 
 %%ANKI
 Cloze
@@ -208,7 +272,7 @@ END%%
 %%ANKI
 Basic
 What distinguishes `FS` value `" "` and `[ \t\n]+`?
-Back: When set to the former, `awk` strips leading and trailing whitespace from each record.
+Back: When set to the former, `awk` strips leading/trailing whitespace from each record.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707618833558-->
 END%%
@@ -222,7 +286,7 @@ END%%
 
 %%ANKI
 Cloze
-Setting `FS` to {`"\n"`} treats the {record as the single field}.
+If `RS` has its default value, setting `FS` to {`"\n"`} treats the {record as the single field}.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707756447067-->
 END%%
@@ -230,7 +294,7 @@ END%%
 %%ANKI
 Basic
 What value of `FS` ensures `$1 = $0`?
-Back: `"\n"`
+Back: `RS`
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707756447069-->
 END%%
@@ -241,6 +305,16 @@ Basic
 Back: Because CSV fields may contain commas and newlines.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707756447071-->
+END%%
+
+* `OFS` (**O**utput **F**ield **S**eparator)
+	* Specifies the field separator used on printing.
+
+%%ANKI
+Cloze
+The {`OFS`} variable is used to change the {output field separator}.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1707829783790-->
 END%%
 
 ## References

@@ -88,8 +88,8 @@
     "bash/shebang.md": "9006547710f9a079a3666169fbeda7aa",
     "c/escape-sequences.md": "0d6219ebb51f6f21e026de67603e25b8",
     "c/index.md": "a021c92f19831bdd2bca4cbf813882fe",
-    "gawk/index.md": "0a305a0477085fd2f4145536735ca94a",
-    "gawk/variables.md": "7408f450957ab007fbdbd687121da0d3",
+    "gawk/index.md": "dd851e023e11c556c0272a0dcb6dd55d",
+    "gawk/variables.md": "a9cd0344390974b3bfdf794d75d434e5",
     "index.md": "e48e895feeed7046425bb2ee15419770",
     "journal/2024-01-31.md": "7c7fbfccabc316f9e676826bf8dfe970",
     "journal/2024-02-01.md": "3aa232387d2dc662384976fd116888eb",
@@ -152,7 +152,9 @@
     "c/strings.md": "38f9cf9e2325565589f62e191221a83a",
     "logic/truth-tables.md": "7892ceaa416c9a65acc79ca1e6ff778f",
     "logic/short-circuit.md": "26d300f407f14883022d0ef8dc4f7300",
-    "logic/boolean-algebra.md": "c5d699d407e03d280aa1f201bc3e8b02"
+    "logic/boolean-algebra.md": "c5d699d407e03d280aa1f201bc3e8b02",
+    "_journal/2024-02-13.md": "75ba5d7d77862c50a172a59415ec6a84",
+    "_journal/2024-02/2024-02-12.md": "618c0035a69b48227119379236a02f44"
   },
   "fields_dict": {
     "Basic": [

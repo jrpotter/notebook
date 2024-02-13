@@ -27,13 +27,6 @@ END%%
 
 The above quote is attributed to Brian Kernighan (one of the authors of the [[C]] K&R book).
 
-%%ANKI
-Cloze
-Dark corners are basically {1:fractal} - {1:no matter how much you illuminate, there's always a smaller but darker one.} - Brian Kernighan
-Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1706726911442-->
-END%%
-
 ## Setup
 
 Robbins suggests executing command `set +H` on [[bash]] startup to disable [[C]] shell-style command history.
@@ -127,14 +120,6 @@ In `awk`, what does a "record" refer to?
 Back: The unit that input is read in.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707310981378-->
-END%%
-
-%%ANKI
-Basic
-What is the default record separator?
-Back: The newline character.
-Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1707310981380-->
 END%%
 
 %%ANKI
