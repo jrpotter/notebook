@@ -119,12 +119,12 @@
     "algorithms/loop-invariants.md": "cbefc346842c21a6cce5c5edce451eb2",
     "algorithms/loop-invariant.md": "d883dfc997ee28a7a1e24b995377792b",
     "algorithms/running-time.md": "5efc0791097d2c996f931c9046c95f65",
-    "algorithms/order-growth.md": "ac89d74204040a7c9b870e865c62aa59",
+    "algorithms/order-growth.md": "5fb2e3ccfc3710be7396a37da7c4f162",
     "_journal/2024-02-08.md": "19092bdfe378f31e2774f20d6afbfbac",
     "algorithms/sorting/selection-sort.md": "73a077a726afd376650d1bd9e2d0bed9",
     "algorithms/index 1.md": "6fada1f3d5d3af64687719eb465a5b97",
-    "binary/hexadecimal.md": "033246347c06b6911ea497ce6da25263",
-    "binary/index.md": "4c12fdcd93422987d499cd193737b4c1",
+    "binary/hexadecimal.md": "c3d485f1fd869fe600334ecbef7d5d70",
+    "binary/index.md": "27bdd4423e323cd961ddb307ab28d977",
     "_journal/2024-02-09.md": "a798d35f0b2bd1da130f7ac766166109",
     "c/types.md": "cf3e66e5aee58a94db3fdf0783908555",
     "logic/quantification.md": "37655276de8da531ca2b12706a639224",
@@ -149,13 +149,15 @@
     "_journal/2024-02/2024-02-11.md": "afee9f502b61e17de231cf2f824fbb32",
     "encoding/ascii.md": "c01e50f96d0493d94dc4d520c0b6bb71",
     "encoding/index.md": "071cfa6a5152efeda127b684f420d438",
-    "c/strings.md": "1956bbfd6af40655f945621e4c14fd43",
+    "c/strings.md": "e08be6bdc820ec4903480a736448a5d7",
     "logic/truth-tables.md": "7892ceaa416c9a65acc79ca1e6ff778f",
     "logic/short-circuit.md": "26d300f407f14883022d0ef8dc4f7300",
     "logic/boolean-algebra.md": "c5d699d407e03d280aa1f201bc3e8b02",
     "_journal/2024-02-13.md": "6242ed4fecabf95df6b45d892fee8eb0",
     "_journal/2024-02/2024-02-12.md": "618c0035a69b48227119379236a02f44",
-    "binary/shifts.md": "24a1f56268fdbae4fe22e92c18366abc"
+    "binary/shifts.md": "24a1f56268fdbae4fe22e92c18366abc",
+    "_journal/2024-02-14.md": "22dbfc7f440d63a3c5685a3d32ab9c72",
+    "_journal/2024-02/2024-02-13.md": "6242ed4fecabf95df6b45d892fee8eb0"
   },
   "fields_dict": {
     "Basic": [

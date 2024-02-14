@@ -57,7 +57,7 @@ END%%
 
 %%ANKI
 Basic
-*When* should padding be introduced on converting binary to hexadecimal?
+*When* should padding be introduced in binary to hexadecimal conversion?
 Back: When the number of bits is not a multiple of `4`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707432641571-->
@@ -65,7 +65,7 @@ END%%
 
 %%ANKI
 Basic
-*Where* is padding introduced on binary to hexadecimal conversion?
+*Where* is padding introduced in binary to hexadecimal conversion?
 Back: To the left of the binary sequence.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707432641573-->
@@ -81,7 +81,7 @@ END%%
 
 %%ANKI
 Basic
-What are the possible values the first nibble of $2^n$ can take on?
+What are the possible values in binary that the first nibble of $2^n$ can take on?
 Back: `0001`, `0010`, `0100`, and `1000`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707432641580-->
@@ -90,7 +90,7 @@ END%%
 %%ANKI
 Basic
 How is $j$ interpreted in the hex representation of $2^{i + 4j}$?
-As the number of `0`s in the encoding.
+Back: As the number of `0`s in the encoding.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707432641582-->
 END%%
@@ -149,6 +149,14 @@ How is the *quotient* of e.g. `158 / 16` managed in decimal to hex conversion?
 Back: As the next value to divide by `16`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707432641595-->
+END%%
+
+%%ANKI
+Basic
+When does repeated division in decimal to hex conversion end?
+Back: When the quotient (*not* the remainder) is `0`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707919792632-->
 END%%
 
 %%ANKI

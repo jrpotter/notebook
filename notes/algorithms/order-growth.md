@@ -13,7 +13,7 @@ The **running time** of an algorithm is usually considered as a function of its 
 
 %%ANKI
 Basic
-How is the running time of a program traditionally measured?
+How is the running time of a program measured as a function?
 Back: As a function of its input size.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707334419352-->
