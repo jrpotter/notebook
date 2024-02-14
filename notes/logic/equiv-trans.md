@@ -291,6 +291,13 @@ END%%
 
 %%ANKI
 Basic
+How is tautology $e$ written equivalently with a quantifier?
+Back: For free identifiers $i_1, \ldots, i_n$ in $e$, as $\forall (i_1, \ldots, i_n), e$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
 The term "equivalent" refers to a comparison between what two objects?
 Back: Propositions.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
@@ -619,7 +626,8 @@ END%%
 
 ## Textual Substitution
 
-**Textual substitution** refers to the simultaneous replacement of a free identifier with an expression, introducing parentheses as necessary. This concept is just the [[#Equivalence Rules|Substitution Rule]] with different notation. For example, let $E$ and $e$ be expressions and $x$ an identifer. Then $$E_e^x$$ denotes the simultaneous replacement of all free occurrences of $x$ with $e$.
+**Textual substitution** refers to the simultaneous replacement of a free identifier with an expression, introducing parentheses as necessary. This concept is just the [[#Equivalence Rules|Substitution Rule]] with different notation. Let $\bar{x}$ denote a list of distinct identifiers. If $\bar{e}$ is a list of expressions of the same length as $\bar{x}$, then simultaneous substitution of $\bar{x}$ by $\bar{e}$ in expression $E$ is denoted as $$E_{\bar{e}}^{\bar{x}}$$
+Note that simultaneous substitution is different than sequential substitution.
 
 %%ANKI
 Basic
@@ -631,24 +639,45 @@ END%%
 
 %%ANKI
 Basic
-What is $E$'s role in textual substitution $E_e^x$?
-Back: It is the expression that free occurrences of $x$ are replaced with $e$ in.
+What identifier is guaranteed to not occur in $E_e^x$?
+Back: None.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+What identifier is guaranteed to not occur in $E_{s(e)}^x$?
+Back: $x$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+*Why* does $x$ not occur in $E_{s(e)}^x$?
+Back: Because $s(e)$ evaluates to a constant proposition.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+What is the role of $E$ in textual substitution $E_e^x$?
+Back: It is the expression in which free occurrences of $x$ are replaced.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707762304126-->
 END%%
 
 %%ANKI
 Basic
-What is $e$'s role in textual substitution $E_e^x$?
-Back: It is the expression that free occurrences of $x$ in $E$ are substituted with.
+What is the role of $e$ role in textual substitution $E_e^x$?
+Back: It is the expression that is evaluated and substituted into $E$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707762304127-->
 END%%
 
 %%ANKI
 Basic
-What is $x$'s role in textual substitution $E_e^x$?
-Back: It is the identifier matching free occurrences in $E$ that are replaced with $e$.
+What is the role of $x$ in textual substitution $E_e^x$?
+Back: It is the identifier matching free occurrences in $E$ that are replaced.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707762304129-->
 END%%
@@ -717,10 +746,41 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707762304141-->
 END%%
 
+%%ANKI
+Basic
+In textual substitution, what does e.g. $\bar{x}$ denote?
+Back: A list of *distinct* identifiers.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+What is the role of $E$ in textual substitution $E_{\bar{e}}^{\bar{x}}$?
+Back: It is the expression in which free occurrences of $\bar{x}$ are replaced.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304126-->
+END%%
+
+%%ANKI
+Basic
+What is the role of $\bar{e}$ role in textual substitution $E_{\bar{e}}^{\bar{x}}$?
+Back: It is the expressions that are evaluated and substituted into $E$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304127-->
+END%%
+
+%%ANKI
+Basic
+What is the role of $\bar{x}$ in textual substitution $E_{\bar{e}}^{\bar{x}}$?
+Back: It is the distinct identifiers matching free occurrences in $E$ that are replaced.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304129-->
+END%%
+
+### Theorems
+
 * $(E_u^x)_v^x = E_{u_v^x}^x$
 	* The only possible free occurrences of $x$ that may appear after the first of the sequential substitutions occur in $u$.
-* If $y$ is not free in $E$, then $(E_u^x)_v^y = E_{u_v^y}^x$.
-	* $y$ may not be free in $E$ but substituting $x$ with $u$ can introduce a free occurrence. It doesn't matter if we perform the substitution first or second though.
 
 %%ANKI
 Basic
@@ -746,6 +806,9 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707762304146-->
 END%%
 
+* If $y$ is not free in $E$, then $(E_u^x)_v^y = E_{u_v^y}^x$.
+	* $y$ may not be free in $E$ but substituting $x$ with $u$ can introduce a free occurrence. It doesn't matter if we perform the substitution first or second though.
+
 %%ANKI
 Basic
 In what two scenarios is $(E_u^x)_v^y = E_{u_v^y}^x$ always an equivalence?
@@ -769,6 +832,76 @@ Back: If it were, a $v$ would exist in the LHS that doesn't in the RHS.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707762304152-->
 END%%
+
+%%ANKI
+Basic
+How does Gries denote state $s$ with identifer $x$ set to value $v$?
+Back: $(s; x{:}v)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+How is $(s; x{:}v)$ written instead using set-theoretical notation?
+Back: $(s - \{(x, s(x))\}) \cup \{(x, v)\}$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+Execution of `x := e` in state $s$ terminates in what new state?
+Back: $(s; x{:}s(e))$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+Given state $s$, what statement does $(s; x{:}s(e))$ derive from?
+Back: `x := e`
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+What missing value guarantees state $s$ satisfies equivalence $s = (s; x{:}\_)$?
+Back: $s(x)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+Given state $s$, why is it that $s = (s; x{:}s(x))$?
+Back: Evaluating $x$ in state $s$ yields $s(x)$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+* $s(E_e^x) = s(E_{s(e)}^x)$
+	* Substituting $x$ with $e$ and then evaluating is the same as substituting $x$ with the evaluation of $e$.
+	* This follows directly from the recursive definition of state evaluation.
+
+%%ANKI
+Basic
+How can we simplify $s(E_{s(e)}^x)$?
+Back: As $s(E_e^x)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+What equivalence relates $E_e^x$ with $E_{s(e)}^x$?
+Back: $s(E_e^x) = s(E_{s(e)}^x)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+TODO
+
+* Let $s$ be a state and $s' = (s; x{:}s(e))$. Then $s'(E) = s(E_e^x)$.
+
+TODO
+
+* Given identifiers $\bar{x}$ and fresh identifiers $\bar{u}$, $(E_{\bar{u}}^{\bar{x}})_{\bar{x}}^{\bar{u}} = E$.
+
+TODO
 
 ## References
 
