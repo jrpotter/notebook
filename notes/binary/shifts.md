@@ -156,6 +156,44 @@ Tags: c
 <!--ID: 1707854589813-->
 END%%
 
+In C, it is undefined behavior to shift by more than the width $w$ of an integral type. Typically though, only the last $w$ bits are considered in the computation. For example, given `int32_t x`, `(x << 32) = (x << 0)`.
+
+%%ANKI
+Basic
+According to the C standard, what is the result of shifting an `int32_t` value by `32`?
+Back: It is undefined behavior.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c
+<!--ID: 1707873410765-->
+END%%
+
+%%ANKI
+Basic
+According to the C standard, what is the result of shifting an `int32_t` value by a negative value?
+Back: It is undefined behavior.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c
+<!--ID: 1707873410773-->
+END%%
+
+%%ANKI
+Basic
+Ignoring UB, what *typically* happens when shifting an `int32_t` by `k ≥ 32` bits?
+Back: The shift value is interpreted as `k mod 32`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c
+<!--ID: 1707873410777-->
+END%%
+
+%%ANKI
+Basic
+How is $x \bmod 2^k$ equivalently written as a bit mask?
+Back: `x & (k - 1)`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c
+<!--ID: 1707873410780-->
+END%%
+
 ## References
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

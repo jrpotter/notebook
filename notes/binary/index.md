@@ -1,5 +1,7 @@
 ---
 title: Binary
+TARGET DECK: Obsidian::STEM
+FILE TAGS: binary
 tags:
   - binary
 ---
