@@ -150,7 +150,7 @@ END%%
 
 %%ANKI
 Cloze
-{Arithmetic} right shifts are to {signed} numbers whereas {logical} right shifts are to {unsigned} numbers.
+{1:Arithmetic} right shifts are to {1:signed} numbers whereas {2:logical} right shifts are to {2:unsigned} numbers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c
 <!--ID: 1707854589813-->
@@ -194,6 +194,102 @@ Tags: c
 <!--ID: 1707873410780-->
 END%%
 
+## Arithmetic
+
+Shifting left by a single bit is equivalent to multiplication by $2$. Likewise, logically shifting right is equivalent to floor division by $2$. This is most clearly seen by examining the decimal expansion of a binary value. For example, consider $$001101_2 = 2^3 + 2^2 + 2^0$$
+
+Multiplying by $2$ yields $$2 \cdot (2^3 + 2^2 + 2^0) = 2^4 + 2^3 + 2^1 = 011010_2$$ 
+
+Dividing by $2$ yields $$(2^3 + 2^2 + 2^0) / 2 = 2^2 + 2^1 = 000110_2$$
+
+%%ANKI
+Basic
+Multiplication by 2 is equivalent to what bitwise shift operation?
+Back: Left shifting by 1 bit.
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1708009783552-->
+END%%
+
+%%ANKI
+Basic
+Floor division by 2 is equivalent to what bitwise shift operation?
+Back: Logical right shifting by 1 bit.
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1708009783562-->
+END%%
+
+%%ANKI
+Basic
+Ceiling division by 2 is equivalent to what bitwise shift operation?
+Back: None.
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1708009783565-->
+END%%
+
+%%ANKI
+Cloze
+{1:Multiplication} by 2 is to {2:left shifts} whereas {2:floor division} by 2 is to {1:logical right shifts}.
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1708009783568-->
+END%%
+
+%%ANKI
+Basic
+What arithmetic operation is equivalent to shifting left by $n$ bits?
+Back: Multiplication by $2^n$.
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1708009783571-->
+END%%
+
+%%ANKI
+Basic
+When is $2n + 1$ equivalent to a one-bit cyclic shift left?
+Back: When $n$'s leading bit is `1`.
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1708012138055-->
+END%%
+
+%%ANKI
+Basic
+What arithmetic operation is equivalent to a one-bit cyclic shift left?
+Back: Given $n$ with no leading zeros, $2n + 1$.
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1708012138062-->
+END%%
+
+%%ANKI
+Basic
+What arithmetic operation is equivalent to logically shifting right by $n$ bits?
+Back: Floor division by $2^n$.
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1708009783574-->
+END%%
+
+%%ANKI
+Basic
+Given $n = 0110_2$, what is the binary value of $2n$?
+Back: $1100_2$
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1708012138065-->
+END%%
+
+%%ANKI
+Basic
+Given $n = 0110_2$, what is the binary value of $2n + 1$?
+Back: $1101_2$
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1708012138068-->
+END%%
+
+%%ANKI
+Basic
+Given $n = 0110_2$, what is the binary value of $\lfloor n / 2 \rfloor$?
+Back: $0011_2$
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1708012138071-->
+END%%
+
 ## References
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).

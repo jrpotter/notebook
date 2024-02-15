@@ -74,22 +74,6 @@ END%%
 
 %%ANKI
 Basic
-What name is given to $\land$ operands?
-Back: Conjuncts
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861304-->
-END%%
-
-%%ANKI
-Basic
-What name is given to $\lor$ operands?
-Back: Disjuncts
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861306-->
-END%%
-
-%%ANKI
-Basic
 What name is given to operand $a$ in $a \Rightarrow b$?
 Back: The antecedent
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
@@ -118,51 +102,6 @@ Is $(b \lor d)$ well-defined in $\{(b, T), (c, F)\}$?
 Back: No
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861320-->
-END%%
-
-%%ANKI
-Basic
-What C logical operator corresponds to $\neg$?
-Back: `!`
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c
-<!--ID: 1706994861325-->
-END%%
-
-%%ANKI
-Basic
-What C logical operator corresponds to $\land$?
-Back: There isn't one.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c
-<!--ID: 1706994861327-->
-END%%
-
-%%ANKI
-Basic
-What C logical operator corresponds to $\lor$?
-Back: There isn't one.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c
-<!--ID: 1706994861329-->
-END%%
-
-%%ANKI
-Basic
-What C logical operator corresponds to $\Rightarrow$?
-Back: There isn't one.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c
-<!--ID: 1706994861331-->
-END%%
-
-%%ANKI
-Basic
-What C logical operator corresponds to $\Leftrightarrow$?
-Back: `==`
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c
-<!--ID: 1706994861333-->
 END%%
 
 %%ANKI
@@ -294,6 +233,7 @@ Basic
 How is tautology $e$ written equivalently with a quantifier?
 Back: For free identifiers $i_1, \ldots, i_n$ in $e$, as $\forall (i_1, \ldots, i_n), e$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867032-->
 END%%
 
 %%ANKI
@@ -639,9 +579,34 @@ END%%
 
 %%ANKI
 Basic
+What term refers to $x$ in textual substitution $E_e^x$?
+Back: The reference.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707939006275-->
+END%%
+
+%%ANKI
+Basic
+What term refers to $e$ in textual substitution $E_e^x$?
+Back: The expression.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707939006283-->
+END%%
+
+%%ANKI
+Basic
+What term refers to both $x$ and $e$ together in textual substitution $E_e^x$?
+Back: The reference-expression pair.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707939006288-->
+END%%
+
+%%ANKI
+Basic
 What identifier is guaranteed to not occur in $E_e^x$?
 Back: None.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867036-->
 END%%
 
 %%ANKI
@@ -649,6 +614,7 @@ Basic
 What identifier is guaranteed to not occur in $E_{s(e)}^x$?
 Back: $x$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867039-->
 END%%
 
 %%ANKI
@@ -656,6 +622,7 @@ Basic
 *Why* does $x$ not occur in $E_{s(e)}^x$?
 Back: Because $s(e)$ evaluates to a constant proposition.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867042-->
 END%%
 
 %%ANKI
@@ -751,6 +718,7 @@ Basic
 In textual substitution, what does e.g. $\bar{x}$ denote?
 Back: A list of *distinct* identifiers.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867046-->
 END%%
 
 %%ANKI
@@ -838,6 +806,7 @@ Basic
 How does Gries denote state $s$ with identifer $x$ set to value $v$?
 Back: $(s; x{:}v)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867049-->
 END%%
 
 %%ANKI
@@ -845,6 +814,7 @@ Basic
 How is $(s; x{:}v)$ written instead using set-theoretical notation?
 Back: $(s - \{(x, s(x))\}) \cup \{(x, v)\}$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867053-->
 END%%
 
 %%ANKI
@@ -852,6 +822,7 @@ Basic
 Execution of `x := e` in state $s$ terminates in what new state?
 Back: $(s; x{:}s(e))$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867058-->
 END%%
 
 %%ANKI
@@ -859,6 +830,7 @@ Basic
 Given state $s$, what statement does $(s; x{:}s(e))$ derive from?
 Back: `x := e`
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867062-->
 END%%
 
 %%ANKI
@@ -866,6 +838,7 @@ Basic
 What missing value guarantees state $s$ satisfies equivalence $s = (s; x{:}\_)$?
 Back: $s(x)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867067-->
 END%%
 
 %%ANKI
@@ -873,35 +846,62 @@ Basic
 Given state $s$, why is it that $s = (s; x{:}s(x))$?
 Back: Evaluating $x$ in state $s$ yields $s(x)$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867072-->
 END%%
 
 * $s(E_e^x) = s(E_{s(e)}^x)$
 	* Substituting $x$ with $e$ and then evaluating is the same as substituting $x$ with the evaluation of $e$.
-	* This follows directly from the recursive definition of state evaluation.
 
 %%ANKI
 Basic
 How can we simplify $s(E_{s(e)}^x)$?
 Back: As $s(E_e^x)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867076-->
 END%%
 
 %%ANKI
 Basic
-What equivalence relates $E_e^x$ with $E_{s(e)}^x$?
+Given state $s$, what equivalence relates $E_e^x$ with $E_{s(e)}^x$?
 Back: $s(E_e^x) = s(E_{s(e)}^x)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867080-->
 END%%
-
-TODO
 
 * Let $s$ be a state and $s' = (s; x{:}s(e))$. Then $s'(E) = s(E_e^x)$.
 
-TODO
+%%ANKI
+Cloze
+Let $s$ be a state and $s' = (${$s; x{:}s(e)$}$)$. Then $s'(${$E$}$) = s(${$E_e^x$}$)$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707938187973-->
+END%%
+
+%%ANKI
+Basic
+How can we write an expression equivalent to $s(E_e^x)$ that doesn't use textual substitution?
+Back: Write $s'(E)$ where $s' = (s; x{:}e)$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707939006292-->
+END%%
+
+%%ANKI
+Basic
+Given defined value $v \neq s(x)$, when is $s(E) = (s; x{:}v)(E)$?
+Back: When $x$ is not free in $E$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707939315519-->
+END%%
 
 * Given identifiers $\bar{x}$ and fresh identifiers $\bar{u}$, $(E_{\bar{u}}^{\bar{x}})_{\bar{x}}^{\bar{u}} = E$.
 
-TODO
+%%ANKI
+Basic
+When is $(E_{\bar{u}}^{\bar{x}})_{\bar{x}}^{\bar{u}} = E$ guaranteed to be an equivalence?
+Back: When $\bar{x}$ and $\bar{u}$ are all distinct identifiers.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707939006297-->
+END%%
 
 ## References
 

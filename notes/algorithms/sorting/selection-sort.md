@@ -171,7 +171,7 @@ END%%
 Cloze
 Selection sort makes fewer {swaps} than insertion sort in the average case.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
-<!--ID: 1707500283779-->
+<!--ID: 1708002177782-->
 END%%
 
 ## References

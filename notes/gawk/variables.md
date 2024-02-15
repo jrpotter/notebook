@@ -192,7 +192,7 @@ END%%
 
 %%ANKI
 Basic
-What value is `${NF + 1}` given when we run `${NF + 2} = "test"`?
+What value is `$${NF + 1}` given when we run `${NF + 2} = "test"`?
 Back: `""`
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707491299854-->

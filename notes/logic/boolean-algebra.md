@@ -13,6 +13,67 @@ tags:
 
 %%ANKI
 Basic
+What name is given to $\land$ operands?
+Back: Conjuncts
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1706994861304-->
+END%%
+
+%%ANKI
+Basic
+What name is given to $\lor$ operands?
+Back: Disjuncts
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1706994861306-->
+END%%
+
+%%ANKI
+Basic
+What C logical operator corresponds to $\neg$?
+Back: `!`
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Tags: c
+<!--ID: 1706994861325-->
+END%%
+
+%%ANKI
+Basic
+What C logical operator corresponds to $\land$?
+Back: There isn't one.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Tags: c
+<!--ID: 1706994861327-->
+END%%
+
+%%ANKI
+Basic
+What C logical operator corresponds to $\lor$?
+Back: There isn't one.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Tags: c
+<!--ID: 1706994861329-->
+END%%
+
+%%ANKI
+Basic
+What C logical operator corresponds to $\Rightarrow$?
+Back: There isn't one.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Tags: c
+<!--ID: 1706994861331-->
+END%%
+
+%%ANKI
+Basic
+What C logical operator corresponds to $\Leftrightarrow$?
+Back: `==`
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Tags: c
+<!--ID: 1706994861333-->
+END%%
+
+%%ANKI
+Basic
 What C bit-level operator corresponds to $\neg$?
 Back: `~`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

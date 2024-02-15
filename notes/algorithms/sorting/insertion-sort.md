@@ -153,10 +153,10 @@ Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambri
 END%%
 
 %%ANKI
-Basic
+Cloze
 insertion sort makes fewer {comparisons} than selection sort in the average case.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
-<!--ID: 1707500283783-->
+<!--ID: 1708002185982-->
 END%%
 
 ## Analogy
