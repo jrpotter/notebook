@@ -62,7 +62,7 @@ END%%
 
 %%ANKI
 Basic
-What word sizes are typically nowadays?
+What word sizes are typical nowadays?
 Back: 32- and 64-bit word sizes.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707657889230-->

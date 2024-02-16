@@ -128,7 +128,7 @@
     "_journal/2024-02-09.md": "a798d35f0b2bd1da130f7ac766166109",
     "c/types.md": "cf3e66e5aee58a94db3fdf0783908555",
     "logic/quantification.md": "37655276de8da531ca2b12706a639224",
-    "c/declarations.md": "defa26963137a85c2b66d7be733a7815",
+    "c/declarations.md": "d2e7dcb5bbf6644651f4f25503b165e1",
     "algorithms/sorting/bubble-sort.md": "16dad1016dc6555163e42ba20f1d152d",
     "_journal/2024-02-10.md": "562b01f60ea36a3c78181e39b1c02b9f",
     "_journal/2024-01/2024-01-31.md": "7c7fbfccabc316f9e676826bf8dfe970",
@@ -143,7 +143,7 @@
     "_journal/2024-02/2024-02-01.md": "3aa232387d2dc662384976fd116888eb",
     "_journal/2024-02/2024-02-10.md": "562b01f60ea36a3c78181e39b1c02b9f",
     "_journal/2024-02-11.md": "afee9f502b61e17de231cf2f824fbb32",
-    "binary/endianness.md": "29c0aea671aa25aead580e9431aba8cc",
+    "binary/endianness.md": "54c86119d0b7fadcc0ee86da2ef5b900",
     "logic/normal-form.md": "f8fd5ea205dfb7e331356b0574f0fe14",
     "_journal/2024-02-12.md": "240d17f356305de9c0c00282b2931acd",
     "_journal/2024-02/2024-02-11.md": "afee9f502b61e17de231cf2f824fbb32",
@@ -155,11 +155,15 @@
     "logic/boolean-algebra.md": "370065481448e60aa8ffa67a437b5482",
     "_journal/2024-02-13.md": "6242ed4fecabf95df6b45d892fee8eb0",
     "_journal/2024-02/2024-02-12.md": "618c0035a69b48227119379236a02f44",
-    "binary/shifts.md": "4c8fccaa2a5a38041b8708ace97319df",
+    "binary/shifts.md": "146ee4898faa13b26f00a31024020c2e",
     "_journal/2024-02-14.md": "76d1b607470305fb3f00a47b8e9ece27",
     "_journal/2024-02/2024-02-13.md": "6242ed4fecabf95df6b45d892fee8eb0",
     "_journal/2024-02-15.md": "575ba46d692795d9606de9e635d1f4ac",
-    "_journal/2024-02/2024-02-14.md": "aa009f9569e175a8104b0537ebcc5520"
+    "_journal/2024-02/2024-02-14.md": "aa009f9569e175a8104b0537ebcc5520",
+    "_journal/2024-02-16.md": "aacf3fff471c47bf0251849f81539555",
+    "_journal/2024-02/2024-02-15.md": "16cb7563d404cb543719b7bb5037aeed",
+    "algebra/floor-ceiling.md": "114d4f455fc9729ebac704752d955fcf",
+    "algebra/index.md": "90b842eb694938d87c7c68779a5cacd1"
   },
   "fields_dict": {
     "Basic": [
