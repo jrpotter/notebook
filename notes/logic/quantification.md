@@ -55,6 +55,14 @@ END%%
 
 %%ANKI
 Basic
+What term refers to $S$ in $\exists x : S, P(x)$?
+Back: The domain of discourse.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708199272194-->
+END%%
+
+%%ANKI
+Basic
 What is the identity element of $\lor$?
 Back: $F$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
@@ -228,3 +236,4 @@ END%%
 ## References
 
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+* Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).

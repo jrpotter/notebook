@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-**Equivalence-transformation** refers to a class of calculi for manipulating propositions derived from negation ($\neg$), conjunction ($\land$), disjunction ($\lor$), implication ($\Rightarrow$), and equality ($=$). Gries covers two in "The Science of Programming": a system of evaluation and a formal system. The system of evaluation mirrors how a computer processes instructions, at least in an abstract sense. The formal system serves as a theoretical framework for reasoning about propositions and their transformations without resorting to "lower-level" operations like substitution.
+**Equivalence-transformation** refers to a class of calculi for [[propositional|propositional logic]] derived from negation ($\neg$), conjunction ($\land$), disjunction ($\lor$), implication ($\Rightarrow$), and equality ($=$). Gries covers two in "The Science of Programming": a system of evaluation and a formal system. The system of evaluation mirrors how a computer processes instructions, at least in an abstract sense. The formal system serves as a theoretical framework for reasoning about propositions and their transformations without resorting to "lower-level" operations like substitution.
 
 %%ANKI
 Basic
@@ -25,14 +25,6 @@ What are constant propositions?
 Back: Propositions that contain only constants as operands.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707422675517-->
-END%%
-
-%%ANKI
-Basic
-What are the basic propositional logical operators?
-Back: $\neg$, $\land$, $\lor$, $\Rightarrow$, and $\Leftrightarrow$/$=$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861291-->
 END%%
 
 %%ANKI
@@ -70,22 +62,6 @@ Back: `propext`
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 Tags: lean
 <!--ID: 1706994861302-->
-END%%
-
-%%ANKI
-Basic
-What name is given to operand $a$ in $a \Rightarrow b$?
-Back: The antecedent
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861308-->
-END%%
-
-%%ANKI
-Basic
-What name is given to operand $b$ in $a \Rightarrow b$?
-Back: The consequent
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861310-->
 END%%
 
 %%ANKI
