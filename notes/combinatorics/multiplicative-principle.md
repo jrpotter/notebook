@@ -11,6 +11,8 @@ tags:
 
 The **multiplicative principle** states that two finite sets $A$ and $B$ satisfy $$|A \times B| = |A| \cdot |B|$$
 
+This can be generalized to any number of finite sets in the obvious way.
+
 %%ANKI
 Basic
 What does the multiplicative principle state?

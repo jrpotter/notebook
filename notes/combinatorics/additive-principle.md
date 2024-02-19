@@ -4,11 +4,14 @@ TARGET DECK: Obsidian::STEM
 FILE TAGS: combinatorics set
 tags:
   - combinatorics
+  - set
 ---
 
 ## Overview
 
 The **additive principle** states that two finite and disjoint sets $A$ and $B$ satisfy $$|A \cup B| = |A| + |B|$$
+
+This can be generalized to any number of finite and disjoint sets in the obvious way.
 
 %%ANKI
 Basic

@@ -124,7 +124,7 @@
     "algorithms/sorting/selection-sort.md": "fcd0dc2ebaabd0a4db1baf7e7ef9f7a9",
     "algorithms/index 1.md": "6fada1f3d5d3af64687719eb465a5b97",
     "binary/hexadecimal.md": "c3d485f1fd869fe600334ecbef7d5d70",
-    "binary/index.md": "27bdd4423e323cd961ddb307ab28d977",
+    "binary/index.md": "b4db8fe8ae874a682a5acf81271e303b",
     "_journal/2024-02-09.md": "a798d35f0b2bd1da130f7ac766166109",
     "c/types.md": "cf3e66e5aee58a94db3fdf0783908555",
     "logic/quantification.md": "5d7579a511e9ff683edeec62bcc291b8",
@@ -171,10 +171,12 @@
     "combinatorics/index.md": "f9de9671fdb6068ef2bb5e63051734be",
     "_journal/2024-02-18.md": "67e36dbbb2cac699d4533b5a2eaeb629",
     "_journal/2024-02/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
-    "combinatorics/multiplicative-principle.md": "aec83fc4bafad4ae17bd3b4e92e068a1",
-    "combinatorics/additive-principle.md": "99320b513f16ef6be62bf766cfbd328d",
-    "_journal/2024-02-19.md": "77ade15d43f3fba69bde96d0e062ec13",
-    "_journal/2024-02/2024-02-18.md": "67e36dbbb2cac699d4533b5a2eaeb629"
+    "combinatorics/multiplicative-principle.md": "3e4f600f5300d3d4d64099b8f2bd1458",
+    "combinatorics/additive-principle.md": "84dcd0243263b3c53456086ae43fa00f",
+    "_journal/2024-02-19.md": "87d762a68e9b8e3c7de0f02d651b1101",
+    "_journal/2024-02/2024-02-18.md": "67e36dbbb2cac699d4533b5a2eaeb629",
+    "combinatorics/permutations.md": "3c76f548e22f7271280b9ed82ae584ec",
+    "combinatorics/combinations.md": "0fb5351d4b0ab6c7c8cd17d9423d3dfa"
   },
   "fields_dict": {
     "Basic": [
