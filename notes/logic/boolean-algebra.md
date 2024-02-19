@@ -21,10 +21,26 @@ END%%
 
 %%ANKI
 Basic
+What set operation parallels conjunction?
+Back: $\cap$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1708221293474-->
+END%%
+
+%%ANKI
+Basic
 What name is given to $\lor$ operands?
 Back: Disjuncts
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861306-->
+END%%
+
+%%ANKI
+Basic
+What set operation parallels disjunction?
+Back: $\cup$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1708221293479-->
 END%%
 
 %%ANKI

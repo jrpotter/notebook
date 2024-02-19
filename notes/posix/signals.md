@@ -35,6 +35,21 @@ Tags: linux::cli
 <!--ID: 1706668253908-->
 END%%
 
+%%ANKI
+Basic
+What command can we run to print POSIX signals to the terminal?
+Back: `kill -l`
+Reference: Cooper, Mendel. “Advanced Bash-Scripting Guide,” n.d., 916.
+<!--ID: 1708265979300-->
+END%%
+
+%%ANKI
+Cloze
+{`ascii`} is to ASCII as {`kill -l`} is to POSIX signals.
+Reference: Cooper, Mendel. “Advanced Bash-Scripting Guide,” n.d., 916.
+<!--ID: 1708265979304-->
+END%%
+
 ### SIGHUP (1)
 
 A process receives a `SIGHUP` signal when the terminal it is attached to goes away before it finishes executing.
@@ -143,4 +158,5 @@ END%%
 
 ## References
 
+* Cooper, Mendel. “Advanced Bash-Scripting Guide,” n.d., 916.
 * Dowling, “A List of Signals and What They Mean.”

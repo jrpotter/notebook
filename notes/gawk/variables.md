@@ -207,7 +207,7 @@ END%%
 
 %%ANKI
 Basic
-What does incrementing `NF` do?
+What two things does incrementing `NF` do?
 Back: Creates the field and rebuilds the record.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707829863717-->
@@ -215,7 +215,7 @@ END%%
 
 %%ANKI
 Basic
-What does decrementing `NF` do?
+What two things does decrementing `NF` do?
 Back: Throws away fields and rebuilds the record.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707829863726-->

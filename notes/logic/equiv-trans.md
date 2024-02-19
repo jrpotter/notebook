@@ -606,7 +606,7 @@ Basic
 What is the role of $E$ in textual substitution $E_e^x$?
 Back: It is the expression in which free occurrences of $x$ are replaced.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304126-->
+<!--ID: 1708347042194-->
 END%%
 
 %%ANKI
@@ -614,7 +614,7 @@ Basic
 What is the role of $e$ role in textual substitution $E_e^x$?
 Back: It is the expression that is evaluated and substituted into $E$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304127-->
+<!--ID: 1708347042199-->
 END%%
 
 %%ANKI
@@ -622,7 +622,7 @@ Basic
 What is the role of $x$ in textual substitution $E_e^x$?
 Back: It is the identifier matching free occurrences in $E$ that are replaced.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304129-->
+<!--ID: 1708347042203-->
 END%%
 
 %%ANKI
@@ -651,7 +651,7 @@ END%%
 
 %%ANKI
 Basic
-Why might $E_e^x = E$ be an equivalence despite identifier $x$ existing in $E$?
+If $x \neq e$, why might $E_e^x = E$ be an equivalence despite $x$ existing in $E$?
 Back: If the only occurrences of $x$ in $E$ are bound.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707762304135-->
@@ -708,7 +708,7 @@ END%%
 %%ANKI
 Basic
 What is the role of $\bar{e}$ role in textual substitution $E_{\bar{e}}^{\bar{x}}$?
-Back: It is the expressions that are evaluated and substituted into $E$.
+Back: It is the expressions that are substituted into $E$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707762304127-->
 END%%
