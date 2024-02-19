@@ -75,7 +75,11 @@
   "Added Media": [
     "insertion-sort.gif",
     "selection-sort.gif",
-    "bubble-sort.gif"
+    "bubble-sort.gif",
+    "lattice-path-chessboard.png",
+    "lattice-path-chessboard-colored.png",
+    "lattice-path-before-recurrence.png",
+    "lattice-path-after-recurrence.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "a5ff7313f71777f1f3536e27dd9894fa",
@@ -149,7 +153,7 @@
     "_journal/2024-02/2024-02-11.md": "afee9f502b61e17de231cf2f824fbb32",
     "encoding/ascii.md": "c01e50f96d0493d94dc4d520c0b6bb71",
     "encoding/index.md": "071cfa6a5152efeda127b684f420d438",
-    "c/strings.md": "2c3b6ecf6cf1815598a7be623983856c",
+    "c/strings.md": "813aa7b27c4d9e75b9076681726e11ee",
     "logic/truth-tables.md": "7892ceaa416c9a65acc79ca1e6ff778f",
     "logic/short-circuit.md": "26d300f407f14883022d0ef8dc4f7300",
     "logic/boolean-algebra.md": "f9101b2dfdedb73dc13c34c1a70a0010",
@@ -173,10 +177,10 @@
     "_journal/2024-02/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
     "combinatorics/multiplicative-principle.md": "3e4f600f5300d3d4d64099b8f2bd1458",
     "combinatorics/additive-principle.md": "84dcd0243263b3c53456086ae43fa00f",
-    "_journal/2024-02-19.md": "87d762a68e9b8e3c7de0f02d651b1101",
+    "_journal/2024-02-19.md": "30d16c5373deb9cb128d2e7934ae256a",
     "_journal/2024-02/2024-02-18.md": "67e36dbbb2cac699d4533b5a2eaeb629",
     "combinatorics/permutations.md": "3c76f548e22f7271280b9ed82ae584ec",
-    "combinatorics/combinations.md": "0fb5351d4b0ab6c7c8cd17d9423d3dfa"
+    "combinatorics/combinations.md": "8957575cef86f05918a47fcb5bc5f8c1"
   },
   "fields_dict": {
     "Basic": [

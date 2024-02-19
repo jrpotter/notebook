@@ -46,6 +46,21 @@ END%%
 
 The syntax for the format placeholder is `%[flags][width][.precision][length]specifier`.
 
+%%ANKI
+Basic
+Which header file contains `printf` functionality?
+Back: `stdio.h`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708384441467-->
+END%%
+
+%%ANKI
+Cloze
+{1:`width`} field specifies a {2:minimum} number of characters while {2:`precision`} specifies a {1:maximum}.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708384441472-->
+END%%
+
 Flag      | Description
 --------- | -----------
 `-`       | Left-aligns the output
@@ -58,6 +73,86 @@ Cloze
 The {`-`} flag {left-aligns the output}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1707918756812-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `printf("%-2d abc", 100)`?
+Back: `100 abc`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708384441477-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `printf("%-4d abc", 100)`?
+Back: `100  abc`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708384441481-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `printf("%.4d abc", 100)`?
+Back: `0100 abc`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708384441486-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `printf("%04d abc", 100)`?
+Back: `0100 abc`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708384441491-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `printf("%.4s abc", "efg")`?
+Back: `efg abc`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708384441495-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `printf("%.2s abc", "efg")`?
+Back: `ef abc`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708384441499-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `printf("%.2f abc", 0.01234)`?
+Back: `0.01 abc`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708384441503-->
+END%%
+
+%%ANKI
+Basic
+How does the precision field affect `"%s"` parameters?
+Back: Strings are truncated if longer than the specified precision.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708384441507-->
+END%%
+
+%%ANKI
+Basic
+How does the precision field affect `"%f"` parameters?
+Back: Decimal values are truncated if longer than the specified precision.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708384441511-->
+END%%
+
+%%ANKI
+Basic
+What does a negative width field value indicate?
+Back: This is actually a positive width with a `-` (left-align) flag.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708384441515-->
 END%%
 
 %%ANKI
@@ -168,7 +263,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`d` and `i`} format specifers output a {decimal `signed int`}.
+The {`d` and `i`} format specifers work on a {decimal `signed int`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083040-->
