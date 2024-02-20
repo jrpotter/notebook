@@ -8,15 +8,17 @@ tags:
 
 ## Overview
 
-Signed      | Unsigned       | 32-bit | 64-bit
------------ | -------------- | ------ | ------
-signed char | unsigned char  | 1      | 1
-short       | unsigned short | 2      | 2
-int         | unsigned       | 4      | 4
-long        | unsigned long  | 4      | 8
-char *      | -              | 4      | 8
-float       | -              | 4      | 4
-double      | -              | 8      | 8
+Signed      | Unsigned            | 32-bit | 64-bit
+----------- | ------------------- | ------ | ------
+signed char | unsigned char       | 1      | 1
+short       | unsigned short      | 2      | 2
+int         | unsigned            | 4      | 4
+long        | unsigned long       | 4      | 8
+long long   | unsigned long long  | 8      | 8
+char *      | -                   | 4      | 8
+float       | -                   | 4      | 4
+double      | -                   | 8      | 8
+
 Fixed width data integral types (e.g. `int32_t`) can be found by including `<stdint.h>`.
 
 %%ANKI
@@ -101,6 +103,29 @@ Cloze
 `long` *typically* represents {8} bytes(s) on a 64-bit platform.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707493017222-->
+END%%
+
+%%ANKI
+Cloze
+`long long` *typically* represents {8} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708425521263-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes `long` from `long long`?
+Back: `long long`s are guaranteed to be at least 64-bit wide.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708425521292-->
+END%%
+
+%%ANKI
+Basic
+*Why* is there both a `long` and `long long`?
+Back: `long long`s are at least 64-bit wide, even on 32-bit platforms.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708425521296-->
 END%%
 
 %%ANKI

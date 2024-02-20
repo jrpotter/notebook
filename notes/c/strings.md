@@ -61,6 +61,13 @@ Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia
 <!--ID: 1708384441472-->
 END%%
 
+%%ANKI
+Cloze
+The {`width` and `precision`} fields are output related whereas the {`length`} field is input related.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708425941269-->
+END%%
+
 Flag      | Description
 --------- | -----------
 `-`       | Left-aligns the output
@@ -232,6 +239,57 @@ Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia
 <!--ID: 1707918756888-->
 END%%
 
+Length    | Description
+--------- | -----------
+`hh`      | `int` sized integer argument promoted from a `char`
+`h`       | `int` sized integer argument promoted from a `short`
+`l`       | `long` sized integer argument
+`ll`      | `long long` sized integer argument
+`z`       | `size_t` sized integer argument
+
+%%ANKI
+Basic
+*Why* do length modifiers for e.g. `char` exist?
+Back: For maximum portability in the face of default argument promotions.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708426673637-->
+END%%
+
+%%ANKI
+Cloze
+The {`hh`} length corresponds to the {`char`} type declaration.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708426673664-->
+END%%
+
+%%ANKI
+Cloze
+The {`h`} length corresponds to the {`short`} type declaration.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708426673668-->
+END%%
+
+%%ANKI
+Cloze
+The {`l`} length corresponds to the {`long`} type declaration.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708426673711-->
+END%%
+
+%%ANKI
+Cloze
+The {`ll`} length corresponds to the {`long long`} type declaration.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708426673719-->
+END%%
+
+%%ANKI
+Cloze
+The {`z`} length corresponds to the {`size_t`} type declaration.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+<!--ID: 1708426673725-->
+END%%
+
 Specifier | Description
 --------- | -----------
 `d`, `i`  | a decimal `signed int`
@@ -263,7 +321,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`d` and `i`} format specifers work on a {decimal `signed int`}.
+The {`%d` and `%i`} format specifers work on a {decimal `signed int`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083040-->
@@ -271,7 +329,7 @@ END%%
 
 %%ANKI
 Cloze
-{`d` and `i`} are to `signed` as {`u`} is to `unsigned`.
+{`%d` and `%i`} are to `signed` as {`%u`} is to `unsigned`.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083044-->
@@ -279,7 +337,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`u`} format specifier outputs a {decimal `unsigned int`}.
+The {`%u`} format specifier outputs a {decimal `unsigned int`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083047-->
@@ -287,7 +345,7 @@ END%%
 
 %%ANKI
 Basic
-What distinguishes format specifiers `d` and `i`?
+What distinguishes format specifiers `%d` and `%i`?
 Back: Nothing.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
@@ -297,7 +355,7 @@ END%%
 %%ANKI
 Basic
 Which format specifiers were probably used to yield `printf` output `-12`?
-Back: `d` or `i`
+Back: `%d` or `%i`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083054-->
@@ -305,7 +363,7 @@ END%%
 
 %%ANKI
 Basic
-What distinguishes format specifiers `d` and `u`?
+What distinguishes format specifiers `%d` and `%u`?
 Back: The former is for signed integers, the latter unsigned.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
@@ -314,7 +372,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`x`} format specifier outputs a {lowercase hexadecimal `unsigned int`}.
+The {`%x`} format specifier outputs a {lowercase hexadecimal `unsigned int`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083063-->
@@ -323,7 +381,7 @@ END%%
 %%ANKI
 Basic
 Which format specifier were probably used to yield `printf` output `7af`?
-Back: `x`
+Back: `%x`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083068-->
@@ -331,7 +389,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`X`} format specifier outputs an {uppercase hexadecimal `unsigned int`}.
+The {`%X`} format specifier outputs an {uppercase hexadecimal `unsigned int`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083074-->
@@ -340,7 +398,7 @@ END%%
 %%ANKI
 Basic
 Which format specifier were probably used to yield `printf` output `7AF`?
-Back: `X`
+Back: `%X`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083080-->
@@ -348,7 +406,7 @@ END%%
 
 %%ANKI
 Basic
-What distinguishes format specifiers `x` and `X`?
+What distinguishes format specifiers `%x` and `%X`?
 Back: The former outputs lowercase hex digits, the latter uppercase.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
@@ -357,7 +415,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`o`} format specifier outputs an {octal `unsigned int`}.
+The {`%o`} format specifier outputs an {octal `unsigned int`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083091-->
@@ -365,7 +423,7 @@ END%%
 
 %%ANKI
 Basic
-Why doesn't the `o` format specifier have a corresponding `O` specifier?
+Why doesn't the `%o` format specifier have a corresponding `%O` specifier?
 Back: There is no distinction between lower and uppercase octal digits.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
@@ -374,7 +432,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`s`} format specifiers outputs a {`NUL`-terminated string}.
+The {`%s`} format specifiers outputs a {`NUL`-terminated string}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083100-->
@@ -383,7 +441,7 @@ END%%
 %%ANKI
 Basic
 Which format specifier was probably used to yield `printf` output `abc`?
-Back: `s`
+Back: `%s`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083105-->
@@ -391,7 +449,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`c`} format specifier outputs a {`char` character}.
+The {`%c`} format specifier outputs a {`char` character}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083109-->
@@ -400,7 +458,7 @@ END%%
 %%ANKI
 Basic
 Which format specifier was probably used to yield `printf` output `a`?
-Back: `c`
+Back: `%c`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083113-->
@@ -408,7 +466,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`p`} format specifier outputs a {`void*` address}.
+The {`%p`} format specifier outputs a {`void*` address}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083117-->
@@ -417,7 +475,7 @@ END%%
 %%ANKI
 Basic
 Which format specifier was probably used to yield `printf` output `0b80000000`?
-Back: `p`
+Back: `%p`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083121-->
@@ -425,7 +483,7 @@ END%%
 
 %%ANKI
 Basic
-How is the address outputted by the `p` format specifier written?
+How is the address outputted by the `%p` format specifier written?
 Back: In an implementation-specific way.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf

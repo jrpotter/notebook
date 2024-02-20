@@ -238,9 +238,77 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1708384441423-->
 END%%
 
+## Bit Strings
+
+A [[binary/index|bit string]] can be used to represent subsets of some finite set. A `1` value usually corresponds to inclusion in a subset, whereas a `0` value corresponds to exclusion. Thus, given set e.g. $A = \{1, 2, 3, 4\}$, $0110_2$ would correspond to subset $\{2, 3\}$.
+
+%%ANKI
+Basic
+Given $A = \{1, 2, 3, 4\}$, what subset does $1010_2$ correspond to?
+Back: $\{1, 3\}$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662140-->
+END%%
+
+%%ANKI
+Cloze
+Representing subsets with bit strings, {$0000_2$} maps to {$\varnothing$} $\subseteq \{1, 2, 3, 4\}$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662148-->
+END%%
+
+%%ANKI
+Cloze
+Representing subsets with bit strings, {$1111_2$} maps to {$\{1, 2, 3, 4\}$} $\subseteq \{1, 2, 3, 4\}$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662151-->
+END%%
+
+Bit strings also make it clear that the number of subsets with even cardinality must be equal to the number of subsets with odd cardinality. Hence, $$\binom{n}{0} - \binom{n}{1} + \cdots + (-1)^n \binom{n}{n} = 0$$
+
+%%ANKI
+Basic
+What does $\sum_{k=0}^n (-1)^k \binom{n}{k}$ evaluate to?
+Back: $0$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662154-->
+END%%
+
+%%ANKI
+Basic
+What does expression $\sum_{k=0}^n (-1)^k \binom{n}{k} = 0$ indicate about sets?
+Back: There is an equal number of even-sized subsets as odd-sized subsets.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662157-->
+END%%
+
+%%ANKI
+Basic
+What isomorphism shows finite sets have an equal number of even-sized subsets as odd-sized subsets?
+Back: The one-to-one relationship between subsets and bit strings.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662160-->
+END%%
+
+%%ANKI
+Basic
+Given finite set $A$, how many subsets of even cardinality does $A$ have?
+Back: Let $n = |A|$. Then $2^{n-1}$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662163-->
+END%%
+
+%%ANKI
+Basic
+Given finite set $A$, how many subsets of odd cardinality does $A$ have?
+Back: Let $n = |A|$. Then $2^{n-1}$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662166-->
+END%%
+
 ## Lattice Paths
 
-A **lattice path** is one of the shorted possible paths connecting two points on a lattice, moving only horizontally and vertically. By representing each horizontal move by "1" and each vertical move by "0", we see every lattice path has a corresponding bit string.
+A **lattice path** is one of the shorted possible paths connecting two points on a lattice, moving only horizontally and vertically. By representing each horizontal move by `1` and each vertical move by `1`, we see every lattice path has a corresponding [[#Bit Strings|bit string]].
 
 ![[lattice-path-example.png]]
 
@@ -330,9 +398,9 @@ Back:
 <!--ID: 1708384441446-->
 END%%
 
-## Binomials
+## Binomial Coefficients
 
-A **binomial** is a polynomial containing two terms. Consider $(x + y)^n$.
+A **binomial** is a polynomial containing two terms. Consider $(x + y)^n$. We see that term $x^ky^{n-k}$ maps to *some* bit string containing $k$ `1`s and $n - k$ `0`s. This might feel more obvious when expanding to $x \cdot x \cdots x \cdot y \cdots y$. Since multiplication is commutative, the number of matching "bit strings" is the same as $\binom{n}{k}$.
 
 %%ANKI
 Basic

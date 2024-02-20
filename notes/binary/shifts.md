@@ -105,7 +105,7 @@ END%%
 %%ANKI
 Basic
 How is $x \bmod 2^k$ equivalently written as a bit mask?
-Back: `x & (k - 1)`
+Back: `x & ((1 << k) - 1)`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c
 <!--ID: 1707873410780-->
