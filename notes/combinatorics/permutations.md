@@ -63,6 +63,14 @@ END%%
 
 %%ANKI
 Basic
+How is $n!$ written recursively?
+Back: As $n(n - 1)!$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708451749781-->
+END%%
+
+%%ANKI
+Basic
 How is permutation expressed recursively?
 Back: Put each candidate in the current position, finding all permutations of the remainder each time.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).

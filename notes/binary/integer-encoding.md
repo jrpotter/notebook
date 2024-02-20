@@ -8,7 +8,15 @@ tags:
 
 ## Overview
 
-Integers are typically encoded using either **unsigned encoding** or **two's complement**.
+Integers are typically encoded using either **unsigned encoding** or **two's complement**. The following table highlights how the min and max of these encodings behave:
+
+Value    | $w = 8$ | $w = 16$ | $w = 32$
+-------- | ------- | -------- | ------------
+$UMin_w$ | `0x00`  | `0x0000` | `0x00000000`
+$UMax_w$ | `0xFF`  | `0xFFFF` | `0xFFFFFFFF`
+$TMin_w$ | `0x80`  | `0x8000` | `0x80000000`
+$TMax_w$ | `0x7F`  | `0x7FFF` | `0x7FFFFFFF`
+
 
 %%ANKI
 Basic
@@ -66,6 +74,38 @@ An integral value of -100 has what encoding?
 Back: Two's-complement.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708177246114-->
+END%%
+
+%%ANKI
+Basic
+Which of unsigned encoding or two's-complement exhibit asymmetry in their range?
+Back: Two's-complement.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398379-->
+END%%
+
+%%ANKI
+Basic
+What integral values share the same binary representation in unsigned encoding and two's-complement?
+Back: Nonnegative values $\leq |TMax|$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708454709515-->
+END%%
+
+%%ANKI
+Basic
+According to the C standard, how are `unsigned` integral types encoded?
+Back: Using unsigned encoding.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708455064691-->
+END%%
+
+%%ANKI
+Basic
+According to the C standard, how are `signed` integral types encoded?
+Back: The C standard leaves this unspecified.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708455064696-->
 END%%
 
 ### Unsigned Encoding
@@ -170,10 +210,34 @@ END%%
 
 %%ANKI
 Basic
-Why is "$B2U$" insufficient for use?
-Back: We need to understand how many bits conversion is with respect to.
+What is the hexadecimal representation of $UMin_4$?
+Back: `0x0000`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708179147804-->
+<!--ID: 1708453398386-->
+END%%
+
+%%ANKI
+Basic
+How is the smallest unsigned integer formatted in hexadecimal?
+Back: As all `0`s.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398392-->
+END%%
+
+%%ANKI
+Basic
+What is the hexadecimal representation of $UMax_4$?
+Back: `0xFFFF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398397-->
+END%%
+
+%%ANKI
+Basic
+How is the largest unsigned integer formatted in hexadecimal?
+Back: As all `F`s.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398403-->
 END%%
 
 ### Two's-Complement
@@ -293,10 +357,98 @@ END%%
 
 %%ANKI
 Basic
-Why is "$B2T$" insufficient for use?
-Back: We need to understand how many bits conversion is with respect to.
+What is the hexadecimal representation of $TMin_4$?
+Back: `0x8000`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708179649935-->
+<!--ID: 1708453398408-->
+END%%
+
+%%ANKI
+Basic
+How is the smallest two's-complement integer formatted in hexadecimal?
+Back: With a leading `8` followed by `0`s.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398413-->
+END%%
+
+%%ANKI
+Basic
+What is the hexadecimal representation of $TMax_4$?
+Back: `0x7FFF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398418-->
+END%%
+
+%%ANKI
+Basic
+How is the largest two's-complement integer formatted in hexadecimal?
+Back: With a leading `7` followed by `F`s.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398425-->
+END%%
+
+%%ANKI
+Basic
+How is equality $|TMin| = |TMax|$ modified so that both sides actually balance?
+Back: $|TMin| = |TMax| + 1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398430-->
+END%%
+
+%%ANKI
+Basic
+Which of negative and positive numbers can two's-complement encoding express more of?
+Back: Negative.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398435-->
+END%%
+
+%%ANKI
+Basic
+Why is two's-complement encoding's range asymmetric?
+Back: Leading `1`s correspond to negatives but leading `0`s corerspond to nonnegative numbers (which include $0$.)
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398440-->
+END%%
+
+%%ANKI
+Basic
+How does $UMax$ relate to $TMax$?
+Back: $|UMax| = 2|TMax| + 1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398445-->
+END%%
+
+%%ANKI
+Basic
+What are the binary encodings of $UMax_4$ and $TMax_4$?
+Back: $1111_2$ and $0111_2$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398449-->
+END%%
+
+%%ANKI
+Basic
+Reinterpret $TMax$ in unsigned encoding. What arithmetic operations yield $UMax$?
+Back: Multiply by two and add one.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398454-->
+END%%
+
+%%ANKI
+Basic
+Reinterpret $TMax$ in unsigned encoding. What bitwise operations yield $UMax$?
+Back: One-bit left shift and add one.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398459-->
+END%%
+
+%%ANKI
+Basic
+Reinterpret $UMax$ in two's-complement. What decimal value do you have?
+Back: $-1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398469-->
 END%%
 
 ## References

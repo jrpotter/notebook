@@ -61,7 +61,7 @@ END%%
 
 %%ANKI
 Basic
-Using sigma notation, what identity is used to prove PIE correctly counts members?
+Using sigma notation, what binomial identity is used to prove PIE correctly counts members?
 Back: $\sum_{k=0}^n (-1)^k \binom{n}{k} = 0$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708438356483-->

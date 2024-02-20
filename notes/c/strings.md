@@ -490,6 +490,68 @@ Tags: printf
 <!--ID: 1707852083126-->
 END%%
 
+%%ANKI
+Basic
+Given `int64_t x`, why is `printf("%d", x)` a problem?
+Back: `%d` matches an `int` which is not necessarily 64-bits.
+Tags: printf
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708454462772-->
+END%%
+
+%%ANKI
+Basic
+What must you use when invoking `printf` with a fixed-width integer type? 
+Back: `printf`-specific macros.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: printf
+<!--ID: 1708454462777-->
+END%%
+
+%%ANKI
+Basic
+What is `PRId32` an example macro for?
+Back: A macro that expands to the correct specifier for a 32-bit signed integral type.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: printf
+<!--ID: 1708454462780-->
+END%%
+
+%%ANKI
+Cloze
+{`PRId32`} is to signed whereas {`PRIu32`} is to unsigned.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1708454462784-->
+END%%
+
+%%ANKI
+Basic
+Which C header specifies `printf` macros for fixed-width integral types?
+Back: `<inttypes.h>`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1708454462788-->
+END%%
+
+%%ANKI
+Basic
+Given `int32_t x`, how might we invoke `printf` on it?
+Back: `printf("%" PRId32, x)`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: printf
+<!--ID: 1708454584564-->
+END%%
+
+%%ANKI
+Basic
+What prefix do `printf` macros from `<inttypes.h>` share?
+Back: `PRI`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: printf
+<!--ID: 1708454584568-->
+END%%
+
 ## References
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

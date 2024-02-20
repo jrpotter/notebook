@@ -153,7 +153,7 @@
     "_journal/2024-02/2024-02-11.md": "afee9f502b61e17de231cf2f824fbb32",
     "encoding/ascii.md": "c01e50f96d0493d94dc4d520c0b6bb71",
     "encoding/index.md": "071cfa6a5152efeda127b684f420d438",
-    "c/strings.md": "d3a5405f5d5237ee169a8894ff4e21ab",
+    "c/strings.md": "04b04e2c227e600adb48c74b2dee62b1",
     "logic/truth-tables.md": "7892ceaa416c9a65acc79ca1e6ff778f",
     "logic/short-circuit.md": "26d300f407f14883022d0ef8dc4f7300",
     "logic/boolean-algebra.md": "f9101b2dfdedb73dc13c34c1a70a0010",
@@ -171,7 +171,7 @@
     "algorithms/binary-search.md": "08cb6dc2dfb204a665d8e8333def20ca",
     "_journal/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
     "_journal/2024-02/2024-02-16.md": "e701902e369ec53098fc2deed4ec14fd",
-    "binary/integer-encoding.md": "a2c8c83a20f1124fd5af0f3c23894284",
+    "binary/integer-encoding.md": "32d4c6e59a86f6dc75392eeec6175d11",
     "combinatorics/index.md": "f9de9671fdb6068ef2bb5e63051734be",
     "_journal/2024-02-18.md": "67e36dbbb2cac699d4533b5a2eaeb629",
     "_journal/2024-02/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
@@ -179,11 +179,11 @@
     "combinatorics/additive-principle.md": "84dcd0243263b3c53456086ae43fa00f",
     "_journal/2024-02-19.md": "30d16c5373deb9cb128d2e7934ae256a",
     "_journal/2024-02/2024-02-18.md": "67e36dbbb2cac699d4533b5a2eaeb629",
-    "combinatorics/permutations.md": "3c76f548e22f7271280b9ed82ae584ec",
-    "combinatorics/combinations.md": "c00ae174e8a172be1c3f89c231a2dd03",
-    "_journal/2024-02-20.md": "4e6ff95c5c3163fb909f37c078759b13",
+    "combinatorics/permutations.md": "9351e4d5c4457c34198640cf04bdd888",
+    "combinatorics/combinations.md": "2e7069e018525e10e4e2b9fb46bc8291",
+    "_journal/2024-02-20.md": "b85ba0eeeb16e30a602ccefabcc9763e",
     "_journal/2024-02/2024-02-19.md": "df1a9ab7ab89244021b3003c84640c78",
-    "combinatorics/inclusion-exclusion.md": "0c63d52507b87cf276615715977218cb"
+    "combinatorics/inclusion-exclusion.md": "4d5ba716bc90cd378c7c4c816b224c75"
   },
   "fields_dict": {
     "Basic": [

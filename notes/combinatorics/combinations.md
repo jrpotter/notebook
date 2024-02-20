@@ -160,6 +160,46 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1708368078746-->
 END%%
 
+%%ANKI
+Basic
+How many *increasing* injective functions exist between $\{1, 2, 3\}$ and $\{a, b, c, d, e\}$?
+Back: $\binom{5}{3}$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708446818783-->
+END%%
+
+%%ANKI
+Basic
+How many *decreasing* injective functions exist between $\{1, 2\}$ and $\{a, b, c, d\}$?
+Back: $\binom{4}{2}$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708446818786-->
+END%%
+
+%%ANKI
+Basic
+Given finite sets $A$ and $B$, what is the number of *increasing* injective functions between $A$ and $B$?
+Back: Given $k = |A|$ and $n = |B|$, $\binom{n}{k}$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708446818788-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial concept explains the number of *increasing* injective functions between two finite sets?
+Back: Combinations.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708446818789-->
+END%%
+
+%%ANKI
+Basic
+Given $k = |A|$ and $n = |B|$, *why* is the number of increasing injective functions between $A$ and $B$ equal to $\binom{n}{k}$?
+Back: We are "grouping" all functions by a shared permutation (i.e. the increasing function).
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708446818791-->
+END%%
+
 ## Pascal's Triangle
 
 A visual representation of the binomial coefficient's is in the form of Pascal's Triangle:
@@ -181,6 +221,14 @@ What recurrence relation does $\binom{n}{k}$ satisfy?
 Back: $$\binom{n}{k} = \binom{n - 1}{k - 1} + \binom{n - 1}{k}$$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708384441360-->
+END%%
+
+%%ANKI
+Basic
+*Why* is it that $\binom{n}{k} = \binom{n - 1}{k - 1} + \binom{n - 1}{k}$?
+Back: For each member, we either include in a subset or we don't.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708446818792-->
 END%%
 
 %%ANKI
@@ -316,6 +364,14 @@ In this example, the total number of lattice paths from point $(0, 0)$ to $(3, 2
 
 %%ANKI
 Basic
+How many lattice paths are there from $(0, 0)$ to $(n, n)$?
+Back: $\binom{2n}{n}$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708451749788-->
+END%%
+
+%%ANKI
+Basic
 What is the integer lattice?
 Back: $\{(x, y) : x \in \omega \land y \in \omega\}$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
@@ -448,6 +504,14 @@ How is $(x + y)^n$ written to mirror the binomial recurrence?
 Back: $(x + y)^n = x \cdot (x + y)^{n-1} + y \cdot (x + y)^{n - 1}$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708384441462-->
+END%%
+
+%%ANKI
+Basic
+How is $7^n$ written as a sum of powers of $6$?
+Back: $7^n = (1 + 6)^n$. Apply binomial expansion on the RHS.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708451749791-->
 END%%
 
 ## References
