@@ -108,21 +108,9 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708455064696-->
 END%%
 
-%%ANKI
-Basic
-What does $TMin_w$ evaluate to?
-Back: $-2^{w-1}$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708545383252-->
-END%%
+### Unsigned Encoding
 
-%%ANKI
-Basic
-What does $TMax_w$ evaluate to?
-Back: $2^{w-1} - 1$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708545383255-->
-END%%
+Always represents nonnegative numbers. Given an integral type $\vec{x}$ of $w$ bits, we convert binary to its unsigned encoding with: $$B2U_w(\vec{x}) = \sum_{i=0}^{w-1} 2^ix_i$$
 
 %%ANKI
 Basic
@@ -140,29 +128,9 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708545383258-->
 END%%
 
-### Unsigned Encoding
-
-Always represents nonnegative numbers. Given an integral type $\vec{x}$ of $w$ bits, we convert binary to its unsigned encoding with: $$B2U_w(\vec{x}) = \sum_{i=0}^{w-1} 2^ix_i$$
-
 %%ANKI
 Basic
-What is the largest unsigned value an integral type of $w$ bits can encode?
-Back: $2^w - 1$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708177246119-->
-END%%
-
-%%ANKI
-Basic
-What is the smallest unsigned value an integral type of $w$ bits can encode?
-Back: $0$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708177246123-->
-END%%
-
-%%ANKI
-Basic
-What half-open interval represents the possible $w$-bit unsigned values?
+What half-open interval represents the possible $w$-bit unsigned decimal values?
 Back: $[0, 2^w)$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708177246128-->
@@ -186,7 +154,7 @@ END%%
 
 %%ANKI
 Basic
-What is the decimal expansion of unsigned type $1010_2$?
+What is the decimal expansion of unsigned integer $1010_2$?
 Back: $2^3 + 2^1 = 10$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708177246143-->
@@ -302,23 +270,23 @@ Represents negative numbers along with nonnegative ones. Given an integral type 
 
 %%ANKI
 Basic
-What is the largest two's-complement value an integral type of $w$ bits can encode?
-Back: $2^{w-1} - 1$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708179147807-->
-END%%
-
-%%ANKI
-Basic
-What is the smallest two's-complement value an integral type of $w$ bits can encode?
+What does $TMin_w$ evaluate to?
 Back: $-2^{w-1}$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708179147810-->
+<!--ID: 1708545383252-->
 END%%
 
 %%ANKI
 Basic
-What half-open interval represents the possible $w$-bit two's-complement values?
+What does $TMax_w$ evaluate to?
+Back: $2^{w-1} - 1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708545383255-->
+END%%
+
+%%ANKI
+Basic
+What half-open interval represents the possible $w$-bit two's-complement decimal values?
 Back: $[-2^{w-1}, 2^{w-1})$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708177246128-->
@@ -507,7 +475,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708453398469-->
 END%%
 
-The "two's-complement" of an integer often refers to the binary representation of the integer's additive inverse. For example, $0110_2 = 6$ has two's-complement $1010_2 = -6$. In contrast, the "complement" of an integer is the other integer such that together add up to $2^{w-1}$. For example, $0110_2 = 6$ has complement $0010_2 = 2$ (with respect to $2^3 = 8$).
+The "two's-complement" of an integer often refers to the binary representation of the integer's additive inverse. For example, $0110_2 = 6$ has two's-complement $1010_2 = -6$. In contrast, the "complement" of a nonnegative integer is the other nonnegative integer such that together add up to $2^{w-1}$. For example, $0110_2 = 6$ has complement $0010_2 = 2$ (with respect to $2^3 = 8$).
 
 %%ANKI
 Basic
@@ -515,14 +483,6 @@ What are the median values of two's-complement's encoding range?
 Back: `-1` and `0`
 Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
 <!--ID: 1708545383262-->
-END%%
-
-%%ANKI
-Basic
-In two's-complement, how many negative values can be encoded compared to nonnegative values?
-Back: The same amount.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708545383264-->
 END%%
 
 %%ANKI
@@ -554,6 +514,12 @@ Basic
 Back: Because there is one less representable positive number than negative number.
 Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
 <!--ID: 1708545383270-->
+END%%
+
+%%ANKI
+Cloze
+$TMin$ is called the "{weird number}" because {it is it's own two's-complement}.
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
 END%%
 
 %%ANKI
