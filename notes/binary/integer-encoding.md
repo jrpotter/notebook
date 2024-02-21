@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-Integers are typically encoded using either **unsigned encoding** or **two's complement**. The following table highlights how the min and max of these encodings behave:
+Integers are typically encoded using either **unsigned encoding** or **two's-complement**. The following table highlights how the min and max of these encodings behave:
 
 Value    | $w = 8$ | $w = 16$ | $w = 32$
 -------- | ------- | -------- | ------------
@@ -106,6 +106,38 @@ According to the C standard, how are `signed` integral types encoded?
 Back: The C standard leaves this unspecified.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708455064696-->
+END%%
+
+%%ANKI
+Basic
+What does $TMin_w$ evaluate to?
+Back: $-2^{w-1}$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708545383252-->
+END%%
+
+%%ANKI
+Basic
+What does $TMax_w$ evaluate to?
+Back: $2^{w-1} - 1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708545383255-->
+END%%
+
+%%ANKI
+Basic
+What does $UMin_w$ evaluate to?
+Back: $0$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708545383256-->
+END%%
+
+%%ANKI
+Basic
+What does $UMax_w$ evaluate to?
+Back: $2^w - 1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708545383258-->
 END%%
 
 ### Unsigned Encoding
@@ -238,6 +270,30 @@ How is the largest unsigned integer formatted in hexadecimal?
 Back: As all `F`s.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708453398403-->
+END%%
+
+%%ANKI
+Basic
+How does `n` relate to `~n` in unsigned encoding?
+Back: `~n = UMax - n`
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1708545383259-->
+END%%
+
+%%ANKI
+Basic
+With unsigned encoding, *why* does `n + ~n = UMax`?
+Back: Because this always yields a bit string of all `1`s.
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1708545574154-->
+END%%
+
+%%ANKI
+Basic
+Regardless of word size, what bitwise operations yield $UMax$?
+Back: `~0`
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1708545383261-->
 END%%
 
 ### Two's-Complement
@@ -451,6 +507,112 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708453398469-->
 END%%
 
+The "two's-complement" of an integer often refers to the binary representation of the integer's additive inverse. For example, $0110_2 = 6$ has two's-complement $1010_2 = -6$. In contrast, the "complement" of an integer is the other integer such that together add up to $2^{w-1}$. For example, $0110_2 = 6$ has complement $0010_2 = 2$ (with respect to $2^3 = 8$).
+
+%%ANKI
+Basic
+What are the median values of two's-complement's encoding range?
+Back: `-1` and `0`
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1708545383262-->
+END%%
+
+%%ANKI
+Basic
+In two's-complement, how many negative values can be encoded compared to nonnegative values?
+Back: The same amount.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708545383264-->
+END%%
+
+%%ANKI
+Cloze
+In two's-complement, the {sign bit} partitions the encoding range into two sets.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708545383265-->
+END%%
+
+%%ANKI
+Basic
+How does `n` relate to `~n` in two's-complement?
+Back: `~n = -n - 1`
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1708545383267-->
+END%%
+
+%%ANKI
+Basic
+What value does not have a two's-complement?
+Back: $TMin$
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1708545383268-->
+END%%
+
+%%ANKI
+Basic
+*Why* doesn't $TMin$ have a two's-complement?
+Back: Because there is one less representable positive number than negative number.
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1708545383270-->
+END%%
+
+%%ANKI
+Basic
+What is the result of applying the two's-complement operation on $TMin$?
+Back: $TMin$
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1708545383271-->
+END%%
+
+%%ANKI
+Basic
+What does the two's-complement of $n$ refer to?
+Back: The binary representation of $-n$.
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1708545383273-->
+END%%
+
+%%ANKI
+Basic
+Using two's-complement, what is the *complement* of $0101_2$?
+Back: $0011_2$
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1708545383274-->
+END%%
+
+%%ANKI
+Basic
+Using two's-complement, the *complement* of $0101_2$ is found with respect to what value?
+Back: $2^3 = 8$
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1708545383276-->
+END%%
+
+%%ANKI
+Basic
+What bitwise operations yield the two's-complement of $n$?
+Back: `~n + 1`
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1708545383277-->
+END%%
+
+%%ANKI
+Basic
+Why is two's-complement named the way it is?
+Back: For $x \geq 0$, $-x$'s $w$-bit representation is found using $2^w - x$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708545383279-->
+END%%
+
+%%ANKI
+Basic
+What identity show $3$ and $5$ are complements with respect to $2^3$?
+Back: $3 + 5 = 8$
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1708545383280-->
+END%%
+
 ## References
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
