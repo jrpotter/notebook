@@ -188,7 +188,7 @@ END%%
 
 %%ANKI
 Basic
-What is the closed formula for $(n)_k$ (falling factorial)?
+What is the closed formula for falling factorial $(n)_k$?
 Back: $$(n)_k = \frac{n!}{(n - k)!}$$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708366788619-->

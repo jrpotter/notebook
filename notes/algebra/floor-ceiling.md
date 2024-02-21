@@ -21,7 +21,7 @@ END%%
 %%ANKI
 Basic
 What is the floor of $x$?
-Back: The greatest integer less than $x$.
+Back: The greatest integer less than or equal to $x$.
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708110779649-->
 END%%
@@ -37,7 +37,7 @@ END%%
 %%ANKI
 Basic
 What is the ceiling of $x$?
-Back: The least integer greater than $x$.
+Back: The least integer greater than or equal to $x$.
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708110779663-->
 END%%
@@ -68,7 +68,7 @@ END%%
 
 %%ANKI
 Basic
-What can be said about $x$ if $\lceil x \rceil - \lfloor x \rceil = 0$?
+What can be said about $x$ if $\lceil x \rceil - \lfloor x \rfloor = 0$?
 Back: $x$ is even.
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708110779687-->
@@ -76,7 +76,7 @@ END%%
 
 %%ANKI
 Basic
-What can be said about $x$ if $\lceil x \rceil - \lfloor x \rceil = 1$?
+What can be said about $x$ if $\lceil x \rceil - \lfloor x \rfloor = 1$?
 Back: $x$ is odd.
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708110779693-->
@@ -195,7 +195,7 @@ END%%
 %%ANKI
 Basic
 If `A[p..q]` has odd size, what `r` most fairly allows partitions `A[p..r]` and `A[r+1..q]`?
-Back: $r = \lfloor (p + q) / 2 \rfloor$
+Back: $r = \lfloor (p + q) / 2 \rfloor = \lceil (p + q) / 2 \rceil$
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708114757958-->
 END%%
@@ -203,7 +203,7 @@ END%%
 %%ANKI
 Basic
 If `A[p..q]` has odd size, what `r` most fairly allows partitions `A[p..r-1]` and `A[r..q]`?
-Back: $r = \lceil (p + q) / 2 \rceil$
+Back: $r = \lfloor (p + q) / 2 \rfloor = \lceil (p + q) / 2 \rceil$
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708114757961-->
 END%%

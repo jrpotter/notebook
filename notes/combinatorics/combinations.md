@@ -90,10 +90,18 @@ END%%
 
 %%ANKI
 Basic
-How is the closed formula of $\binom{n}{k}$ written in terms of factorials (*not* falling factorials)?
+Without using falling factorials, what is the closed formula of $\binom{n}{k}$?
 Back: $$\binom{n}{k} = \frac{n!}{k!(n - k)!}$$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708368078700-->
+END%%
+
+%%ANKI
+Basic
+Using falling factorials, what is the closed formula of $\binom{n}{k}$?
+Back: $$\binom{n}{k} = \frac{(n)_k}{k!}$$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708532069694-->
 END%%
 
 %%ANKI
@@ -352,6 +360,68 @@ Given finite set $A$, how many subsets of odd cardinality does $A$ have?
 Back: Let $n = |A|$. Then $2^{n-1}$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708434662166-->
+END%%
+
+### Stars and Bars
+
+The **stars and bars** chart refers to a graphical depiction of distributing $n$ objects (represented as $*$) into $m$ different buckets (delineated via $|$. An example chart looks like so: $$**|***|*||*$$
+
+Notice there are $m - 1$ bars and interspersed amongst the $n$ stars. In the above example, there are $11$ total symbols, $4$ of which are bars, meaning there are $\binom{11}{4}$ ways to distribute the objects amongst the $5$ buckets. We can represent this using bit strings instead, with `0`s as stars and `1`s as bars. The above example is equivalently written as: $$00100010110$$
+
+%%ANKI
+Basic
+What symbols are typically used in a stars and bars chart?
+Back: $*$ and $|$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708532069700-->
+END%%
+
+%%ANKI
+Basic
+What property is exhibited by objects distributed in a stars and bars chart?
+Back: They are identical to one another.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708532069704-->
+END%%
+
+%%ANKI
+Basic
+What kind of chart is the following an example of? $$**|***|*||*$$
+Back: Stars and bars
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708532069707-->
+END%%
+
+%%ANKI
+Basic
+How is the following stars and bars chart written as a bit string? $$**|***|*||*$$
+Back: $00100010110$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708532069711-->
+END%%
+
+%%ANKI
+Basic
+The following stars and bars chart is a single instance of how many possible choices? $$**|***|*||*$$
+Back: $\binom{11}{4}$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708532069714-->
+END%%
+
+%%ANKI
+Basic
+What graphical depiction is used to find the number of integer solutions to the following equation? $$x_1 + x_2 + \cdots + x_k = n$$
+Back: Stars and bars
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708532069717-->
+END%%
+
+%%ANKI
+Basic
+What *is* the distribution corresponding to the following stars and bars chart? $$*||*$$
+Back: A single object in the first and last bucket. No object in the middle.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708532069719-->
 END%%
 
 ## Lattice Paths

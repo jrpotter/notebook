@@ -294,7 +294,7 @@ Class        | Similar To      | Meaning
 `[:punct:]`  |                 | All graphic characters except letters and digits
 `[:space:]`  | `[ \t\n\r\f\v]` | Whitespace characters
 `[:upper:]`  | `[A-Z]`         | Uppercase alphabetic characters
-`[:xdigit:]` | `[0-9A-Fa-f]`   | Hexadecimal digits
+`[:xdigit:]` | `[0-9A-Fa-f]`   | [[radices#Hexadecimal\|Hexadecimal]] digits
 
 %%ANKI
 Basic

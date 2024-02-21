@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-A binary digit or **bit** is a `0` or `1` character. A **bit string** is then a contiguous sequence of bits. It's **weight** is a reference to the number of `1`s in the bit string. Compare the below operation to the method for converting from one numerical base to another (e.g. [[hexadecimal]]).
+A binary digit or **bit** is a `0` or `1` character. A **bit string** is then a contiguous sequence of bits. It's **weight** is a reference to the number of `1`s in the bit string. Compare the below operation to the method for converting from one numerical base to another (e.g. [[radices#Hexadecimal|hexadecimal]]).
 
 ```c
 unsigned int bit_weight(int64_t n) {

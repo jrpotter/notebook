@@ -49,7 +49,7 @@ Tags: bash
 <!--ID: 1706975891817-->
 END%%
 
-* `\xhh`: Consists of one or more hexadecimal digits. The `x` prefix is required to distinguish from octal escape sequences.
+* `\xhh`: Consists of one or more [[radices#Hexadecimal|hexadecimal]] digits. The `x` prefix is required to distinguish from octal escape sequences.
 	* [[bash/index|Bash]] supports this sequence as `$'\xhh'`. One or two digits is supported.
 	* [[gawk/index|gawk]] limits processing to two digits.
 		* Robbins states that using more than two hexadecimal digits can produce undefined results.
