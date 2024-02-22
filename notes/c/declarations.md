@@ -30,6 +30,14 @@ END%%
 
 %%ANKI
 Basic
+Which header file contains `INT32_MAX`?
+Back: `<stdint.h>`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249870-->
+END%%
+
+%%ANKI
+Basic
 What does the "width" of an integer type refer to?
 Back: The number of bits used to represent its value.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
@@ -194,6 +202,147 @@ The C standard sets {1:lower bounds} on data type ranges, but does not set {1:up
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707493017244-->
 END%%
+
+## Integer Literals
+
+Negative integer literals are typed in a counterintuitive way. When the compiler sees a number of form `-X`, the type of `X` is first determined *before* then being negated. Promotion rules are as follows:
+
+C90 (Decimal)   | C90 (Other)     | C99 (Decimal) | C99 (Other)
+--------------- | --------------- | ------------- | ---------
+`int`           | `int`           | `int`         | `int`
+`long`          | `unsigned`      | `long`        | `unsigned`
+`unsigned`      | `long`          | `long long`   | `long`
+`unsigned long` | `unsigned long` | `-`           | `unsigned long`
+`-`             | `-`             | `-`           | `long long`
+`-`             | `-`             | `-`           | `unsigned long long`
+
+%%ANKI
+Basic
+How does the compiler process integer literal `-X`?
+Back: By first determining the type of `X` and then negating the value.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820805-->
+END%%
+
+%%ANKI
+Basic
+What simplification did C99 introduce to decimal integer literals?
+Back: The integer constant is guaranteed a `signed` type.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820816-->
+END%%
+
+%%ANKI
+Basic
+Since what standard was it guaranteed decimal integer literals were `signed`?
+Back: C99
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820820-->
+END%%
+
+%%ANKI
+Basic
+In ISO C90, what integer literals are guaranteed `signed`?
+Back: None.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820823-->
+END%%
+
+%%ANKI
+Basic
+In ISO C99, what integer literals are guaranteed `signed`?
+Back: Decimal integer constants.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820826-->
+END%%
+
+%%ANKI
+Basic
+Why avoid negative octal integer literals?
+Back: Depending on value, the resulting type may be `unsigned`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820829-->
+END%%
+
+%%ANKI
+Basic
+Why avoid negative hexadecimal integer literals?
+Back: Depending on value, the resulting type may be `unsigned`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820833-->
+END%%
+
+%%ANKI
+Basic
+Which header file contains `INT_MAX`?
+Back: `<limits.h>`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249864-->
+END%%
+
+%%ANKI
+Cloze
+{`INT_MAX`} is to `signed` whereas {`UINT_MAX`} is to `unsigned`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820837-->
+END%%
+
+%%ANKI
+Basic
+How does `<limits.h>` define `INT_MIN`?
+Back: As `(-INT_MAX - 1)`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820840-->
+END%%
+
+%%ANKI
+Basic
+*Why* is `INT_MIN` defined as `(-INT_MAX - 1)` instead of directly as e.g. `-2147483648`?
+Back: Because `2147483648` (without `-`) would be sized as a non-`int` before being negated.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820843-->
+END%%
+
+%%ANKI
+Cloze
+`INT_MAX` is to {`<limits.h>`} whereas `INT32_MAX` is to {`<stdint.h>`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249873-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote an `unsigned` integer literal?
+Back: Case-insensitive `U`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249876-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `long` integer literal?
+Back: Case-insensitive `L`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820847-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `long long` integer literal?
+Back: Case-insensitive `LL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820850-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote an `unsigned long long` integer literal?
+Back: Case-insensitive `ULL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820856-->
+END%%
+
+## Pointers
 
 Pointers have the same size as the machine's word size since it should be able to refer to any virtual address.
 

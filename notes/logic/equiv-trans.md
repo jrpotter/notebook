@@ -788,7 +788,7 @@ END%%
 %%ANKI
 Basic
 How is $(s; x{:}v)$ written instead using set-theoretical notation?
-Back: $(s - \{(x, s(x))\}) \cup \{(x, v)\}$
+Back: $(s - \{\langle x, s(x) \rangle\}) \cup \{\langle x, v \rangle\}$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707937867053-->
 END%%

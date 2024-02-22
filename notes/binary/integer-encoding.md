@@ -54,7 +54,7 @@ END%%
 
 %%ANKI
 Basic
-An integral value of 0 has what encoding?
+An integral value of $0_{10}$ likely has what encoding?
 Back: Either unsigned or two's-complement.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708177246105-->
@@ -62,7 +62,7 @@ END%%
 
 %%ANKI
 Basic
-An integral value of 100 has what encoding?
+An integral value of $100_{10}$ likely has what encoding?
 Back: Either unsigned or two's-complement.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708177246109-->
@@ -70,7 +70,7 @@ END%%
 
 %%ANKI
 Basic
-An integral value of -100 has what encoding?
+An integral value of $-100_{10}$ likely has what encoding?
 Back: Two's-complement.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708177246114-->
@@ -87,7 +87,7 @@ END%%
 %%ANKI
 Basic
 What integral values share the same binary representation in unsigned encoding and two's-complement?
-Back: Nonnegative values $\leq |TMax|$.
+Back: Nonnegative values $\leq TMax$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708454709515-->
 END%%
@@ -108,9 +108,83 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708455064696-->
 END%%
 
+%%ANKI
+Basic
+According to the C standard, Is `unsigned` underflow/overflow safe?
+Back: Yes
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708551236389-->
+END%%
+
+%%ANKI
+Basic
+According to the C standard, Is `signed` underflow/overflow safe?
+Back: No
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708551236392-->
+END%%
+
+%%ANKI
+Basic
+Why is `signed` underflow/overflow considered UB?
+Back: Because there is no requirement on how `signed` integers are encoded.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708551236395-->
+END%%
+
+%%ANKI
+Basic
+How does $UMax$ relate to $TMax$?
+Back: $UMax = 2 \cdot TMax + 1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398445-->
+END%%
+
+%%ANKI
+Basic
+*Why* is it $UMax = 2 \cdot TMax + 1$?
+Back: All bit patterns denoting negative numbers in two's-complement are positive in unsigned encoding.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708613447880-->
+END%%
+
+%%ANKI
+Basic
+What are the binary encodings of $UMax_4$ and $TMax_4$?
+Back: $1111_2$ and $0111_2$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398449-->
+END%%
+
+%%ANKI
+Basic
+Reinterpret $TMax$ in unsigned encoding. What arithmetic operations yield $UMax$?
+Back: Multiply by two and add one.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398454-->
+END%%
+
+%%ANKI
+Basic
+Reinterpret $TMax$ in unsigned encoding. What bitwise operations yield $UMax$?
+Back: One-bit left shift and add one.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398459-->
+END%%
+
+%%ANKI
+Basic
+Reinterpret $UMax$ in two's-complement. What decimal value do you have?
+Back: $-1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708453398469-->
+END%%
+
 ### Unsigned Encoding
 
-Always represents nonnegative numbers. Given an integral type $\vec{x}$ of $w$ bits, we convert binary to its unsigned encoding with: $$B2U_w(\vec{x}) = \sum_{i=0}^{w-1} 2^ix_i$$
+Always represents nonnegative numbers. Given an integral type $\vec{x}$ of $w$ bits, we convert binary to its unsigned encoding with: $$B2U_w(\vec{x}) = 2^{w-1}x_{w-1} + \sum_{i=0}^{w-2} 2^ix_i$$
+
+Note we unfold the summation on the RHS by one term to make it's relationship to $T2U_w$ clearer.
 
 %%ANKI
 Basic
@@ -171,7 +245,7 @@ END%%
 %%ANKI
 Basic
 How does Bryant et al. define $B2U_w$?
-Back: $B2U_w(\vec{x}) = \sum_{i=0}^{w-1} 2^ix_i$
+Back: $B2U_w(\vec{x}) = 2^{w-1}x_{w-1} + \sum_{i=0}^{w-2} 2^ix_i$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708179147785-->
 END%%
@@ -179,9 +253,17 @@ END%%
 %%ANKI
 Basic
 What is $B2U_w$ an acronym for?
-Back: **B**inary "to" **u**nsigned.
+Back: **B**inary to **u**nsigned, width $w$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708179147791-->
+END%%
+
+%%ANKI
+Basic
+What is $U2B_w$ an acronym for?
+Back: **U**nsigned to **b**inary, width $w$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708613447885-->
 END%%
 
 %%ANKI
@@ -195,9 +277,17 @@ END%%
 %%ANKI
 Basic
 What is the domain of $B2U_w$?
-Back: Bit vectors of size $w$.
+Back: Bit strings of size $w$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708179147798-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of $U2B_w$?
+Back: $[0, 2^w)$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708613447888-->
 END%%
 
 %%ANKI
@@ -210,10 +300,10 @@ END%%
 
 %%ANKI
 Basic
-What is the hexadecimal representation of $UMin_4$?
-Back: `0x0000`
+What is the range of $U2B_w$?
+Back: Bit strings of length $w$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708453398386-->
+<!--ID: 1708613447891-->
 END%%
 
 %%ANKI
@@ -222,14 +312,6 @@ How is the smallest unsigned integer formatted in hexadecimal?
 Back: As all `0`s.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708453398392-->
-END%%
-
-%%ANKI
-Basic
-What is the hexadecimal representation of $UMax_4$?
-Back: `0xFFFF`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708453398397-->
 END%%
 
 %%ANKI
@@ -250,7 +332,7 @@ END%%
 
 %%ANKI
 Basic
-With unsigned encoding, *why* does `n + ~n = UMax`?
+Using unsigned encoding, *why* does `n + ~n = UMax`?
 Back: Because this always yields a bit string of all `1`s.
 Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
 <!--ID: 1708545574154-->
@@ -282,6 +364,13 @@ What does $TMax_w$ evaluate to?
 Back: $2^{w-1} - 1$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708545383255-->
+END%%
+
+%%ANKI
+Basic
+How do $TMin$ and $TMax$ relate to one another?
+Back: $TMin = -TMax - 1$
+<!--ID: 1708609869518-->
 END%%
 
 %%ANKI
@@ -326,7 +415,6 @@ END%%
 Basic
 What is the weight of the sign bit in $w$-bit two's-complement?
 Back: $-2^{w-1}$
-The {sign bit} refers to the {most significant bit} in two's-complement.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708179649887-->
 END%%
@@ -350,9 +438,17 @@ END%%
 %%ANKI
 Basic
 What is $B2T_w$ an acronym for?
-Back: **B**inary "to" **t**wo's-complement.
+Back: **B**inary to **t**wo's-complement, width $w$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708179649907-->
+END%%
+
+%%ANKI
+Basic
+What is $T2B_w$ an acronym for?
+Back: **T**wo's-complement to **b**inary, width $w$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708613447895-->
 END%%
 
 %%ANKI
@@ -366,9 +462,17 @@ END%%
 %%ANKI
 Basic
 What is the domain of $B2T_w$?
-Back: Bit vectors of size $w$.
+Back: Bit strings of size $w$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708179649921-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of $T2B_w$?
+Back: $[-2^{w-1}, 2^{w-1})$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708613447899-->
 END%%
 
 %%ANKI
@@ -381,10 +485,10 @@ END%%
 
 %%ANKI
 Basic
-What is the hexadecimal representation of $TMin_4$?
-Back: `0x8000`
+What is the range of $T2B_w$?
+Back: Bit strings of length $w$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708453398408-->
+<!--ID: 1708613447903-->
 END%%
 
 %%ANKI
@@ -393,14 +497,6 @@ How is the smallest two's-complement integer formatted in hexadecimal?
 Back: With a leading `8` followed by `0`s.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708453398413-->
-END%%
-
-%%ANKI
-Basic
-What is the hexadecimal representation of $TMax_4$?
-Back: `0x7FFF`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708453398418-->
 END%%
 
 %%ANKI
@@ -429,53 +525,11 @@ END%%
 
 %%ANKI
 Basic
-Why is two's-complement encoding's range asymmetric?
-Back: Leading `1`s correspond to negatives but leading `0`s corerspond to nonnegative numbers (which include $0$.)
+Why is two's-complement's encoding range asymmetric?
+Back: Leading `1`s correspond to negatives but leading `0`s corerspond to nonnegative numbers (which include $0$).
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708453398440-->
 END%%
-
-%%ANKI
-Basic
-How does $UMax$ relate to $TMax$?
-Back: $|UMax| = 2|TMax| + 1$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708453398445-->
-END%%
-
-%%ANKI
-Basic
-What are the binary encodings of $UMax_4$ and $TMax_4$?
-Back: $1111_2$ and $0111_2$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708453398449-->
-END%%
-
-%%ANKI
-Basic
-Reinterpret $TMax$ in unsigned encoding. What arithmetic operations yield $UMax$?
-Back: Multiply by two and add one.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708453398454-->
-END%%
-
-%%ANKI
-Basic
-Reinterpret $TMax$ in unsigned encoding. What bitwise operations yield $UMax$?
-Back: One-bit left shift and add one.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708453398459-->
-END%%
-
-%%ANKI
-Basic
-Reinterpret $UMax$ in two's-complement. What decimal value do you have?
-Back: $-1$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708453398469-->
-END%%
-
-The "two's-complement" of an integer often refers to the binary representation of the integer's additive inverse. For example, $0110_2 = 6$ has two's-complement $1010_2 = -6$. In contrast, the "complement" of a nonnegative integer is the other nonnegative integer such that together add up to $2^{w-1}$. For example, $0110_2 = 6$ has complement $0010_2 = 2$ (with respect to $2^3 = 8$).
 
 %%ANKI
 Basic
@@ -492,90 +546,122 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708545383265-->
 END%%
 
+## Casting
+
+Most implementations of C cast an object of one type to another by simply re-interpreting their binary representation. This casting may happen implicitly if comparing or operating on e.g. `signed` and `unsigned` objects in the same expression. $T2U$ and $U2T$ reflect this method of casting:
+
+$$T2U_w(x) = \begin{cases}
+x + 2^w & x < 0 \\
+x & x \geq 0
+\end{cases}$$
+
+$$U2T_w(x) = \begin{cases}
+x & x \leq TMax_w \\
+x - 2^w & x > TMax_w
+\end{cases}$$
+
 %%ANKI
 Basic
-How does `n` relate to `~n` in two's-complement?
-Back: `~n = -n - 1`
-Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
-<!--ID: 1708545383267-->
+How do most implementations of C perform casting?
+Back: As a reinterpretation of the same byte pattern of the object being casted.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c
+<!--ID: 1708615249879-->
 END%%
 
 %%ANKI
 Basic
-What value does not have a two's-complement?
-Back: $TMin$
-Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
-<!--ID: 1708545383268-->
+What is $T2U_w$ an acronym for?
+Back: **T**wo's-complement to **u**nsigned, width $w$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249883-->
 END%%
 
 %%ANKI
 Basic
-*Why* doesn't $TMin$ have a two's-complement?
-Back: Because there is one less representable positive number than negative number.
-Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
-<!--ID: 1708545383270-->
+For what decimal values $x$ does $T2U_w$ and $U2T_w$ serve as the identity function?
+Back: $0 \leq x \leq TMax_w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249887-->
+END%%
+
+%%ANKI
+Basic
+What values $x$ are unaffected when casting from `signed` to `unsigned`?
+Back: $0 \leq x \leq TMax_w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c
+<!--ID: 1708615249891-->
+END%%
+
+%%ANKI
+Basic
+What values $x$ are unaffected when casting from `unsigned` to `signed`?
+Back: $0 \leq x \leq TMax_w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c
+<!--ID: 1708615249897-->
+END%%
+
+%%ANKI
+Basic
+How are casts implicitly performed in operations containing `signed` and `unsigned` objects?
+Back: `signed` objects are cast to `unsigned` objects.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c
+<!--ID: 1708615249903-->
 END%%
 
 %%ANKI
 Cloze
-$TMin$ is called the "{weird number}" because {it is it's own two's-complement}.
-Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
-END%%
-
-%%ANKI
-Basic
-What is the result of applying the two's-complement operation on $TMin$?
-Back: $TMin$
-Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
-<!--ID: 1708545383271-->
-END%%
-
-%%ANKI
-Basic
-What does the two's-complement of $n$ refer to?
-Back: The binary representation of $-n$.
-Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
-<!--ID: 1708545383273-->
-END%%
-
-%%ANKI
-Basic
-Using two's-complement, what is the *complement* of $0101_2$?
-Back: $0011_2$
-Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
-<!--ID: 1708545383274-->
-END%%
-
-%%ANKI
-Basic
-Using two's-complement, the *complement* of $0101_2$ is found with respect to what value?
-Back: $2^3 = 8$
-Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
-<!--ID: 1708545383276-->
-END%%
-
-%%ANKI
-Basic
-What bitwise operations yield the two's-complement of $n$?
-Back: `~n + 1`
-Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
-<!--ID: 1708545383277-->
-END%%
-
-%%ANKI
-Basic
-Why is two's-complement named the way it is?
-Back: For $x \geq 0$, $-x$'s $w$-bit representation is found using $2^w - x$.
+For {$x < 0$}, $T2U_w(x) =$ {$x + 2^w$}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708545383279-->
+<!--ID: 1708615249908-->
+END%%
+
+%%ANKI
+Cloze
+For {$x \geq 0$}, $T2U_w(x) =$ {$x$}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249914-->
 END%%
 
 %%ANKI
 Basic
-What identity show $3$ and $5$ are complements with respect to $2^3$?
-Back: $3 + 5 = 8$
-Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
-<!--ID: 1708545383280-->
+How is $T2U_w$ written as a function composition?
+Back: $T2U_w = B2U_w \circ T2B_w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249920-->
+END%%
+
+%%ANKI
+Basic
+What is $U2T_w$ an acronym for?
+Back: **U**nsigned to **t**wo's-complement, width $w$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249925-->
+END%%
+
+%%ANKI
+Basic
+How is $U2T_w$ written as a function composition?
+Back: $U2T_w = B2T_w \circ U2B_w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249930-->
+END%%
+
+%%ANKI
+Cloze
+For {$x > TMax_w$}, $U2T_w(x) =$ {$x - 2^w$}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249935-->
+END%%
+
+%%ANKI
+Cloze
+For {$x \leq TMax_w$}, $U2T_w(x) =$ {$x$}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249939-->
 END%%
 
 ## References

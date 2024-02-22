@@ -118,7 +118,7 @@
     "_journal/2024-02-02.md": "a3b222daee8a50bce4cbac699efc7180",
     "_journal/2024-02-01.md": "3aa232387d2dc662384976fd116888eb",
     "_journal/2024-01-31.md": "7c7fbfccabc316f9e676826bf8dfe970",
-    "logic/equiv-trans.md": "4d825c23bf54e8b1e645584d52b2b993",
+    "logic/equiv-trans.md": "08ad9c814f0a46981b218a9c7cc8a3b8",
     "_journal/2024-02-07.md": "8d81cd56a3b33883a7706d32e77b5889",
     "algorithms/loop-invariants.md": "cbefc346842c21a6cce5c5edce451eb2",
     "algorithms/loop-invariant.md": "d883dfc997ee28a7a1e24b995377792b",
@@ -132,7 +132,7 @@
     "_journal/2024-02-09.md": "a798d35f0b2bd1da130f7ac766166109",
     "c/types.md": "cf3e66e5aee58a94db3fdf0783908555",
     "logic/quantification.md": "5d7579a511e9ff683edeec62bcc291b8",
-    "c/declarations.md": "7b0277d89b83fb330970deeb37e664c4",
+    "c/declarations.md": "94c85cb1a09efed2cad6b5b80e9d0be3",
     "algorithms/sorting/bubble-sort.md": "16dad1016dc6555163e42ba20f1d152d",
     "_journal/2024-02-10.md": "562b01f60ea36a3c78181e39b1c02b9f",
     "_journal/2024-01/2024-01-31.md": "7c7fbfccabc316f9e676826bf8dfe970",
@@ -159,7 +159,7 @@
     "logic/boolean-algebra.md": "f9101b2dfdedb73dc13c34c1a70a0010",
     "_journal/2024-02-13.md": "6242ed4fecabf95df6b45d892fee8eb0",
     "_journal/2024-02/2024-02-12.md": "618c0035a69b48227119379236a02f44",
-    "binary/shifts.md": "c7fb2a5722a69bb23047b603edcd0b91",
+    "binary/shifts.md": "ce6f2d80536b8a8b3f05383ce2190e72",
     "_journal/2024-02-14.md": "76d1b607470305fb3f00a47b8e9ece27",
     "_journal/2024-02/2024-02-13.md": "6242ed4fecabf95df6b45d892fee8eb0",
     "_journal/2024-02-15.md": "575ba46d692795d9606de9e635d1f4ac",
@@ -171,7 +171,7 @@
     "algorithms/binary-search.md": "08cb6dc2dfb204a665d8e8333def20ca",
     "_journal/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
     "_journal/2024-02/2024-02-16.md": "e701902e369ec53098fc2deed4ec14fd",
-    "binary/integer-encoding.md": "193566bf1b9e88257002d32bb2bc0bf2",
+    "binary/integer-encoding.md": "afe5e82b534fc5ab409b188addab36f4",
     "combinatorics/index.md": "f9de9671fdb6068ef2bb5e63051734be",
     "_journal/2024-02-18.md": "67e36dbbb2cac699d4533b5a2eaeb629",
     "_journal/2024-02/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
@@ -186,7 +186,9 @@
     "combinatorics/inclusion-exclusion.md": "4d5ba716bc90cd378c7c4c816b224c75",
     "_journal/2024-02-21.md": "b9d944ecebe625da5dd72aeea6a916a2",
     "_journal/2024-02/2024-02-20.md": "af2ef10727726200c4defe2eafc7d841",
-    "algebra/radices.md": "1171835a864103fbc4cbe21d56fcfa1f"
+    "algebra/radices.md": "0fcd901c798eaed8075ff1375e2429dd",
+    "_journal/2024-02-22.md": "e01f1d4bd2f7ac2a667cdfd500885a2a",
+    "_journal/2024-02/2024-02-21.md": "a627f267700f36abd5ceb9b4c294479e"
   },
   "fields_dict": {
     "Basic": [

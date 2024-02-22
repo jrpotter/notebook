@@ -45,7 +45,7 @@ END%%
 %%ANKI
 Basic
 What is a logical right shift operation?
-Back: One that fills the left end of the result with `k` zeros.
+Back: One that fills the left end of the result with zeros.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707854589786-->
 END%%
@@ -53,7 +53,7 @@ END%%
 %%ANKI
 Basic
 What is an arithmetic right shift operation?
-Back: One that fills the left end of the result with `k` copies of the most significant bit.
+Back: One that fills the left end of the result with copies of the most significant bit.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707854589789-->
 END%%
