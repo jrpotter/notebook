@@ -750,6 +750,94 @@ END%%
 
 ### Truncation
 
+Let $$\begin{align*}
+x & = \langle x_{w-1}, \ldots, x_1, x_0 \rangle \\
+x' & = \langle x_{k-1}, \ldots, x_1, x_0 \rangle
+\end{align*}$$
+
+Then in unsigned encoding, truncating $x$ to $k$ bits is equal to $x \bmod 2^k$. This is because $x_i \bmod 2^k = 0$ for all $i \geq k$ meaning $$B2U_k(x') = B2U_w(x) \bmod 2^k$$
+
+%%ANKI
+Basic
+What bit string results from truncating $\langle x_{w-1}, \ldots, x_1, x_0 \rangle$ to $k$ bits?
+Back: $\langle x_{k-1}, \ldots, x_1, x_0 \rangle$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708700130849-->
+END%%
+
+%%ANKI
+Basic
+What is the decimal value of truncating unsigned $x$ to $k$ bits?
+Back: $x \bmod 2^k$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708700130856-->
+END%%
+
+%%ANKI
+Basic
+*Why* does truncating unsigned $x$ to $k$ bits yield $x \bmod 2^k$?
+Back: $\bmod 2^k$ is a convenient way of "zero-ing" out bits $x_{w-1}, \ldots, x_k$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708700130859-->
+END%%
+
+%%ANKI
+Basic
+How is the following equality balanced for $k \leq w$? $$B2U_w(\langle x_{w-1}, \ldots, x_1, x_0 \rangle) = B2U_k(\langle x_{k-1}, \ldots, x_1, x_0 \rangle)$$
+Back: $$B2U_w(\langle x_{w-1}, \ldots, x_1, x_0 \rangle) \bmod 2^k = B2U_k(\langle x_{k-1}, \ldots, x_1, x_0 \rangle)$$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708700225123-->
+END%%
+
+In two's-complement encoding, truncating $x$ to $k$ bits is equal to $U2T_k(T2U_w(x) \bmod 2^k)$. Like with unsigned truncation, $B2U_k(x') = B2U_w(x) \bmod 2^k$. Therefore $$U2T_k(B2U_k(x')) = U2T_k(B2U_w(x) \bmod 2^k)$$
+
+%%ANKI
+Basic
+What is the $k$-truncation of $w$-bit two's-complement $x$?
+Back: $U2T_k(T2U_w(x) \bmod 2^k)$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708701087974-->
+END%%
+
+%%ANKI
+Cloze
+Two's-complement $k$-truncation of $w$-bit $x$ is {$U2T_k$}$(${$T2U_w(x) \bmod 2^k$}$)$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708701087985-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of $U2T_k$ in two's-complement truncation expression $U2T_k(T2U_w(x) \bmod 2^k)$?
+Back: To reinterpret the sign bit correctly.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708702794304-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of $T2U_w$ in two's-complement truncation expression $U2T_k(T2U_w(x) \bmod 2^k)$?
+Back: To ensure $x$ is encoded with the right "type".
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708702794309-->
+END%%
+
+%%ANKI
+Basic
+Why isn't $T2U_w$ in two's-complement truncation $U2T_k(T2U_w(x) \bmod 2^k)$ strictly necessary?
+Back: $x \bmod 2^k$ will always yield an integer in range $[0, 2^k)$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708702794313-->
+END%%
+
+%%ANKI
+Basic
+What additional steps does calculating two's-complement truncation have?
+Back: Casting to and from unsigned encoding.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708701087982-->
+END%%
+
 ## References
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

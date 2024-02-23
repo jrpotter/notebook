@@ -171,7 +171,7 @@
     "algorithms/binary-search.md": "08cb6dc2dfb204a665d8e8333def20ca",
     "_journal/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
     "_journal/2024-02/2024-02-16.md": "e701902e369ec53098fc2deed4ec14fd",
-    "binary/integer-encoding.md": "95571264710f244da40c8203ad1de993",
+    "binary/integer-encoding.md": "ed39771ee9de86423f75fda74b8c5aa2",
     "combinatorics/index.md": "f9de9671fdb6068ef2bb5e63051734be",
     "_journal/2024-02-18.md": "67e36dbbb2cac699d4533b5a2eaeb629",
     "_journal/2024-02/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
@@ -194,7 +194,7 @@
     "c17/strings.md": "bbe8983602adbeb38eff214beddedd84",
     "c17/index.md": "78576ee41d0185df82c59999142f4edb",
     "c17/escape-sequences.md": "ebc63c6cdfbe60bbc2708c1b0c8da8bb",
-    "c17/declarations.md": "d8920390eae79da5d9be08d050ca1b51"
+    "c17/declarations.md": "46b135d583a992991c889d518fec1c0f"
   },
   "fields_dict": {
     "Basic": [
