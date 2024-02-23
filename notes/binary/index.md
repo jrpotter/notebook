@@ -42,7 +42,7 @@ Basic
 How might you use C to find the weight of a bit string?
 Back: Repeatedly divide by `2`, counting all remainders of `1`.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-Tags: c
+Tags: c17
 <!--ID: 1708366788648-->
 END%%
 

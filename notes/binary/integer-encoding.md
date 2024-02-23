@@ -23,7 +23,7 @@ Basic
 What is a C integral type?
 Back: A type representing finite ranges of integers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c
+Tags: c17
 <!--ID: 1708177246087-->
 END%%
 
@@ -32,7 +32,7 @@ Basic
 In what two ways are C integral types encoded?
 Back: Unsigned encoding or two's-complement.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c
+Tags: c17
 <!--ID: 1708177246093-->
 END%%
 
@@ -548,7 +548,7 @@ END%%
 
 ## Casting
 
-Most implementations of C cast an object of one type to another by simply re-interpreting their binary representation. This casting may happen implicitly if comparing or operating on e.g. `signed` and `unsigned` objects in the same expression. $T2U$ and $U2T$ reflect this method of casting:
+Most implementations of C cast an object of one type to another by simply re-interpreting the object's binary representation. This casting may happen implicitly if comparing or operating on e.g. `signed` and `unsigned` objects in the same expression. $T2U$ and $U2T$ reflect this method of casting:
 
 $$T2U_w(x) = \begin{cases}
 x + 2^w & x < 0 \\
@@ -565,7 +565,7 @@ Basic
 How do most implementations of C perform casting?
 Back: As a reinterpretation of the same byte pattern of the object being casted.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c
+Tags: c17
 <!--ID: 1708615249879-->
 END%%
 
@@ -579,10 +579,10 @@ END%%
 
 %%ANKI
 Basic
-For what decimal values $x$ does $T2U_w$ and $U2T_w$ serve as the identity function?
+For what values $x$ does $T2U_w(x) = U2T_w(x) = x$?
 Back: $0 \leq x \leq TMax_w$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708615249887-->
+<!--ID: 1708696117167-->
 END%%
 
 %%ANKI
@@ -590,7 +590,7 @@ Basic
 What values $x$ are unaffected when casting from `signed` to `unsigned`?
 Back: $0 \leq x \leq TMax_w$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c
+Tags: c17
 <!--ID: 1708615249891-->
 END%%
 
@@ -599,7 +599,7 @@ Basic
 What values $x$ are unaffected when casting from `unsigned` to `signed`?
 Back: $0 \leq x \leq TMax_w$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c
+Tags: c17
 <!--ID: 1708615249897-->
 END%%
 
@@ -608,7 +608,7 @@ Basic
 How are casts implicitly performed in operations containing `signed` and `unsigned` objects?
 Back: `signed` objects are cast to `unsigned` objects.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c
+Tags: c17
 <!--ID: 1708615249903-->
 END%%
 
@@ -663,6 +663,92 @@ For {$x \leq TMax_w$}, $U2T_w(x) =$ {$x$}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708615249939-->
 END%%
+
+### Expansion
+
+For unsigned encoding, use **zero extension** to convert numbers to larger types. For example, $1010_2$ can be expanded to 8-bit $00001010_2$.
+
+%%ANKI
+Cloze
+Use {zero} extension to convert {unsigned} numbers to larger types.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708697867799-->
+END%%
+
+%%ANKI
+Basic
+Zero extension is generally used for what type of integer encoding?
+Back: Unsigned.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708697867807-->
+END%%
+
+%%ANKI
+Basic
+*Why* does zero extension of unsigned numbers work?
+Back: The weights of additional bits are zeroed out.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708697867810-->
+END%%
+
+%%ANKI
+Basic
+*Why* does zero extension of two's-complement numbers generally not work?
+Back: A negative value would have its new sign bit be positive.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708697867814-->
+END%%
+
+%%ANKI
+Basic
+How is $\langle x_3, x_2, x_1, x_0 \rangle$ zero extended to 8 bits?
+Back: As $\langle 0, 0, 0, 0, x_3, x_2, x_1, x_0 \rangle$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708697867818-->
+END%%
+
+For two's-complement, use **sign extension** to convert numbers to larger types. This means the additional leftmost bits are set to match the sign bit of the original number. For example, $1010_2$ can be expanded to 8-bit $11111010_2$.
+
+%%ANKI
+Cloze
+Use {sign} extension to convert {two's-complement} numbers to larger types.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708697867821-->
+END%%
+
+%%ANKI
+Basic
+Sign extension is generally used for what type of integer encoding?
+Back: Two's-complement.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708697867825-->
+END%%
+
+%%ANKI
+Basic
+*Why* does sign extension of two's-complement numbers work?
+Back: The new sign bit weight is equal to the swing in the previous sign bit weight.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708697867829-->
+END%%
+
+%%ANKI
+Basic
+*Why* does sign extension of unsigned numbers generally not work?
+Back: It actually does, though we technically call it zero extension.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708697867833-->
+END%%
+
+%%ANKI
+Basic
+How is $\langle x_3, x_2, x_1, x_0 \rangle$ sign extended to 8 bits?
+Back: As $\langle x_3, x_3, x_3, x_3, x_3, x_2, x_1, x_0 \rangle$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708697867839-->
+END%%
+
+### Truncation
 
 ## References
 

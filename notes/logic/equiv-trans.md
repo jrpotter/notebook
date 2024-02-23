@@ -855,8 +855,16 @@ END%%
 
 %%ANKI
 Basic
-How can we write an expression equivalent to $s(E_e^x)$ that doesn't use textual substitution?
-Back: Write $s'(E)$ where $s' = (s; x{:}e)$.
+If $s' = (s; x{:}s(e))$, then $s'(E) = s(E_e^x)$. Why do we not say $s' = (s; x{:}e)$ instead?
+Back: The value of a state's identifier must always be a constant proposition.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1708693353856-->
+END%%
+
+%%ANKI
+Basic
+How do define $s'$ such that $s(E_e^x) = s'(E)$?
+Back: $s' = (s; x{:}s(e))$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707939006292-->
 END%%

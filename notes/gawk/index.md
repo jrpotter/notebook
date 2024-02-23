@@ -310,7 +310,7 @@ END%%
 
 ## Exit Status
 
-On success, `gawk` exits with status code `EXIT_SUCCESS`. On failure, with status code `EXIT_FAILURE`. On fatal error, `gawk` exists with status code `2`. #c
+On success, `gawk` exits with status code `EXIT_SUCCESS`. On failure, with status code `EXIT_FAILURE`. On fatal error, `gawk` exists with status code `2`. #c17
 
 You can specify a custom exit status by using the `exit` statement from within the `awk` program.
 

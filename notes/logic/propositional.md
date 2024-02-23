@@ -172,7 +172,7 @@ END%%
 
 %%ANKI
 Basic
-Which of *if*/*only if* map to *necessary*?
+Which of *if* or *only if* map to *necessary*?
 Back: *if*
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708199272151-->
@@ -180,7 +180,7 @@ END%%
 
 %%ANKI
 Basic
-Which of *if*/*only if* map to *sufficient*?
+Which of *if* or *only if* map to *sufficient*?
 Back: *only if*
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708199272157-->

@@ -1,9 +1,9 @@
 ---
 title: Declarations
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c
+FILE TAGS: c17
 tags:
-  - c
+  - c17
 ---
 
 ## Overview
@@ -207,14 +207,14 @@ END%%
 
 Negative integer literals are typed in a counterintuitive way. When the compiler sees a number of form `-X`, the type of `X` is first determined *before* then being negated. Promotion rules are as follows:
 
-C90 (Decimal)   | C90 (Other)     | C99 (Decimal) | C99 (Other)
---------------- | --------------- | ------------- | ---------
-`int`           | `int`           | `int`         | `int`
-`long`          | `unsigned`      | `long`        | `unsigned`
-`unsigned`      | `long`          | `long long`   | `long`
-`unsigned long` | `unsigned long` | `-`           | `unsigned long`
-`-`             | `-`             | `-`           | `long long`
-`-`             | `-`             | `-`           | `unsigned long long`
+Decimal     | Other Bases
+----------- | --------------------
+`int`       | `int`
+`long`      | `unsigned`
+`long long` | `long`
+`-`         | `unsigned long`
+`-`         | `long long`
+`-`         | `unsigned long long`
 
 %%ANKI
 Basic
@@ -226,31 +226,7 @@ END%%
 
 %%ANKI
 Basic
-What simplification did C99 introduce to decimal integer literals?
-Back: The integer constant is guaranteed a `signed` type.
-Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708631820816-->
-END%%
-
-%%ANKI
-Basic
-Since what standard was it guaranteed decimal integer literals were `signed`?
-Back: C99
-Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708631820820-->
-END%%
-
-%%ANKI
-Basic
-In ISO C90, what integer literals are guaranteed `signed`?
-Back: None.
-Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708631820823-->
-END%%
-
-%%ANKI
-Basic
-In ISO C99, what integer literals are guaranteed `signed`?
+What integer literals are guaranteed `signed`?
 Back: Decimal integer constants.
 Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708631820826-->

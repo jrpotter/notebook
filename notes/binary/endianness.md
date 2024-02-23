@@ -80,7 +80,7 @@ Basic
 How are bytes of `int32_t x = 0x01234567` written in big-endian?
 Back: `0x01 0x23 0x45 0x67`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c
+Tags: c17
 <!--ID: 1707661283779-->
 END%%
 
@@ -89,7 +89,7 @@ Basic
 How are bytes of `int32_t x = 0x01234567` written in little-endian?
 Back: `0x67 0x45 0x23 0x01`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c
+Tags: c17
 <!--ID: 1707661283780-->
 END%%
 

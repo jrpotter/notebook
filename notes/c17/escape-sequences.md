@@ -1,9 +1,9 @@
 ---
 title: Escape Sequences
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c
+FILE TAGS: c17
 tags:
-  - c
+  - c17
 ---
 
 ## Overview

@@ -1,9 +1,9 @@
 ---
 title: Strings
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c
+FILE TAGS: c17
 tags:
-  - c
+  - c17
 ---
 
 ## Overview
@@ -164,7 +164,7 @@ END%%
 
 %%ANKI
 Basic
-The `-` flag overrides what default behavior?
+The `-` `printf` flag overrides what default behavior?
 Back: Output is right-aligned by default.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1707918756840-->
@@ -172,14 +172,14 @@ END%%
 
 %%ANKI
 Cloze
-The {`+`} flag {prepends a plus for positive signed-numeric types}.
+The {`+`} `printf` flag {prepends a plus for positive signed-numeric types}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1707918756846-->
 END%%
 
 %%ANKI
 Basic
-The `+` flag overrides what default behavior?
+The `+` `printf` flag overrides what default behavior?
 Back: Nothing is prepended to positive signed-numeric types by default.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1707918756852-->
@@ -187,14 +187,14 @@ END%%
 
 %%ANKI
 Cloze
-The {`␣`} flag {prepends a space for positive signed-numeric types}.
+The {`␣`} `printf` flag {prepends a space for positive signed-numeric types}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1707918756856-->
 END%%
 
 %%ANKI
 Basic
-The `␣` flag overrides what default behavior?
+The `␣` `printf` flag overrides what default behavior?
 Back: Nothing is prepended to positive signed-numeric types by default.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1707918756861-->
@@ -202,7 +202,7 @@ END%%
 
 %%ANKI
 Basic
-How do the `+` and `␣` flags relate to one another?
+How do the `+` and `␣` `printf` flags relate to one another?
 Back: Both prepend a character to positive signed-numeric types.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1707918756865-->
@@ -210,7 +210,7 @@ END%%
 
 %%ANKI
 Basic
-What happens if both the `+` and `␣` flags are specified?
+What happens if both the `+` and `␣` `printf` flags are specified?
 Back: The `+` flag takes precedence.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1707918756870-->
@@ -218,14 +218,14 @@ END%%
 
 %%ANKI
 Cloze
-The {`0`} flag {prepends zeros for numeric types}.
+The {`0`} `printf` flag {prepends zeros for numeric types}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1707918756875-->
 END%%
 
 %%ANKI
 Basic
-What option must be specified for the `0` flag to take effect?
+What option must be specified for the `0` `printf` flag to take effect?
 Back: The "width" option.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1707918756881-->
@@ -233,7 +233,7 @@ END%%
 
 %%ANKI
 Basic
-The `0` flag overrides what default behavior?
+The `0` `printf` flag overrides what default behavior?
 Back: Spaces are used to match the "width" option by default.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1707918756888-->

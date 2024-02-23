@@ -79,7 +79,7 @@ Basic
 What portability issue do shift operations introduce?
 Back: There is no standard on whether right shifts of signed numbers are logical or arithmetic.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c
+Tags: c17
 <!--ID: 1707854589808-->
 END%%
 
@@ -87,7 +87,7 @@ END%%
 Cloze
 {1:Arithmetic} right shifts are to {1:signed} numbers whereas {2:logical} right shifts are to {2:unsigned} numbers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c
+Tags: c17
 <!--ID: 1707854589813-->
 END%%
 
@@ -98,7 +98,7 @@ Basic
 Ignoring UB, what *typically* happens when shifting an `int32_t` by `k ≥ 32` bits?
 Back: The shift value is interpreted as `k mod 32`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c
+Tags: c17
 <!--ID: 1707873410777-->
 END%%
 
@@ -107,7 +107,7 @@ Basic
 How is $x \bmod 2^k$ equivalently written as a bit mask?
 Back: `x & ((1 << k) - 1)`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c
+Tags: c17
 <!--ID: 1707873410780-->
 END%%
 

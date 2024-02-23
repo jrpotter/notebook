@@ -48,7 +48,7 @@ Basic
 What C logical operator corresponds to $\neg$?
 Back: `!`
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c
+Tags: c17
 <!--ID: 1706994861325-->
 END%%
 
@@ -57,7 +57,7 @@ Basic
 What C logical operator corresponds to $\land$?
 Back: There isn't one.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c
+Tags: c17
 <!--ID: 1706994861327-->
 END%%
 
@@ -66,7 +66,7 @@ Basic
 What C logical operator corresponds to $\lor$?
 Back: There isn't one.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c
+Tags: c17
 <!--ID: 1706994861329-->
 END%%
 
@@ -75,7 +75,7 @@ Basic
 What C logical operator corresponds to $\Rightarrow$?
 Back: There isn't one.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c
+Tags: c17
 <!--ID: 1706994861331-->
 END%%
 
@@ -84,7 +84,7 @@ Basic
 What C logical operator corresponds to $\Leftrightarrow$?
 Back: `==`
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c
+Tags: c17
 <!--ID: 1706994861333-->
 END%%
 

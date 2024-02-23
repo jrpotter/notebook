@@ -119,7 +119,7 @@ Basic
 How does C evaluate `10 / 3`?
 Back: `3`
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
-Tags: c
+Tags: c17
 <!--ID: 1708110779720-->
 END%%
 
@@ -128,7 +128,7 @@ Basic
 How does C evaluate `floor(10.f / 3)`?
 Back: `3`
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
-Tags: c
+Tags: c17
 <!--ID: 1708110779725-->
 END%%
 
@@ -137,7 +137,7 @@ Basic
 How does C evaluate `ceil(10.f / 3)`?
 Back: `4`
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
-Tags: c
+Tags: c17
 <!--ID: 1708110779729-->
 END%%
 
@@ -146,7 +146,7 @@ Basic
 How does C evaluate `-10 / 3`?
 Back: `-3`
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
-Tags: c
+Tags: c17
 <!--ID: 1708110779734-->
 END%%
 
@@ -155,7 +155,7 @@ Basic
 How does C evaluate `floor(-10.f / 3)`?
 Back: `-4`
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
-Tags: c
+Tags: c17
 <!--ID: 1708110779738-->
 END%%
 
@@ -164,7 +164,7 @@ Basic
 How does C evaluate `ceil(-10.f / 3)`?
 Back: `-3`
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
-Tags: c
+Tags: c17
 <!--ID: 1708110779742-->
 END%%
 
@@ -195,7 +195,7 @@ END%%
 %%ANKI
 Basic
 If `A[p..q]` has odd size, what `r` most fairly allows partitions `A[p..r]` and `A[r+1..q]`?
-Back: $r = \lfloor (p + q) / 2 \rfloor = \lceil (p + q) / 2 \rceil$
+Back: $r = (p + q) / 2$
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708114757958-->
 END%%
@@ -203,7 +203,7 @@ END%%
 %%ANKI
 Basic
 If `A[p..q]` has odd size, what `r` most fairly allows partitions `A[p..r-1]` and `A[r..q]`?
-Back: $r = \lfloor (p + q) / 2 \rfloor = \lceil (p + q) / 2 \rceil$
+Back: $r = (p + q) / 2$
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708114757961-->
 END%%
@@ -211,7 +211,7 @@ END%%
 %%ANKI
 Basic
 If `A[p..q]` has odd size, what `r` ensures `A[p..r-1]` has same size as `A[r+1..q]`?
-Back: $r = \lfloor (p + q) / 2 \rfloor = \lceil (p + q) / 2 \rceil$
+Back: $r = (p + q) / 2$
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708114757964-->
 END%%
