@@ -174,6 +174,8 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1708366788613-->
 END%%
 
+## Falling Factorials
+
 If we generalize to choosing $k \leq n$ elements of $k$ objects, we can calculate the $k$-permutation of $n$. This is denoted as $(n)_k$, sometimes called the **falling factorial**. $$(n)_k = \frac{n!}{(n - k)!}$$
 
 The derivation works by noting that we have $n - 0$ possible ways to pick the first object, $n - 1$ ways to pick the second, up until $n - (k - 1)$ ways to pick the last object.
