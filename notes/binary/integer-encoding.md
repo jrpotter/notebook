@@ -822,6 +822,163 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708701087982-->
 END%%
 
+## Arithmetic
+
+### Addition
+
+Addition of two unsigned or two two's-complement numbers operate in much the same way as grade-school arithmetic. Digits are added one-by-one and overflows "carried" to the next summation. Overflows are truncated; the final carry bit is discarded in the underlying bit adder.
+
+%%ANKI
+Basic
+*Why* is adding $w$-bit integral types equal to $w$-bit truncation?
+Back: The underlying bit adder discards any final carry bit.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678721-->
+END%%
+
+%%ANKI
+Basic
+Why should you generally prefer `x < y` over `x - y < 0`?
+Back: The former avoids possible underflows.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678725-->
+END%%
+
+%%ANKI
+Basic
+How is `x - y < 0` rewritten more safely?
+Back: `x < y`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678728-->
+END%%
+
+%%ANKI
+Basic
+What hardware-level advantage does two's-complement introduce over other signed encodings?
+Back: The same circuits can be used for unsigned and two's-complement addition.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678732-->
+END%%
+
+%%ANKI
+Basic
+What representational-level advantage does two's-complement introduce over other signed encodings?
+Back: `0` is encoded in only one way.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678736-->
+END%%
+
+Unsigned addition of $w$-bit integral types, denoted $+_w^u$, behaves like so:
+
+$$x +_w^u y = \begin{cases}
+x + y & \text{if } x + y < 2^w \\
+x + y - 2^w & \text{otherwise}
+\end{cases}$$
+
+This is more simply expressed as $x +_w^u y = (x + y) \bmod 2^w$.
+
+%%ANKI
+Basic
+What kind of overflows does unsigned addition potentially exhibit?
+Back: Positive overflow.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678739-->
+END%%
+
+%%ANKI
+Basic
+Why is unsigned addition overflow *not* UB?
+Back: Because the C standard enforces unsigned encoding of `unsigned` data types.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708799678742-->
+END%%
+
+%%ANKI
+Basic
+What does $+_w^u$ denote?
+Back: Unsigned addition of $w$-bit integral types.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678745-->
+END%%
+
+%%ANKI
+Basic
+Unsigned addition overflow is equivalent to what bit-level manipulation tactic?
+Back: Truncation.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678748-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $x +_w^u y$?
+Back: $(x + y) \bmod 2^w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678751-->
+END%%
+
+%%ANKI
+Basic
+*Why* does $x +_w^u y = (x + y) \bmod 2^w$?
+Back: Because discarding any carry bit is equivalent to truncating the sum to $w$ bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678755-->
+END%%
+
+%%ANKI
+Cloze
+Without using modulo arithmetic, $x +_w^u y =$ {$x + y$} if {$x + y < 2^w$}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678758-->
+END%%
+
+%%ANKI
+Cloze
+Without using modulo arithmetic, $x +_w^u y =$ {$x + y - 2^w$} if {$x + y \geq 2^w$}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678761-->
+END%%
+
+%%ANKI
+Basic
+How do you detect whether unsigned addition $s \coloneqq x +_w^u y$ overflowed?
+Back: Overflow occurs if and only if $s < x$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678765-->
+END%%
+
+%%ANKI
+Basic
+How would you complete the body of this function?
+```c
+/* Determine whether arguments can be added without overflow */
+int uadd_ok(unsigned x, unsigned y);
+```
+Back:
+```c
+return (x + y) >= x;
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678769-->
+END%%
+
+%%ANKI
+Basic
+Does unsigned overflow detection depend on the left or right operand of $s \coloneqq x +_w^u y$?
+Back: Either.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678772-->
+END%%
+
+%%ANKI
+Basic
+Why can we compare $s$ to $x$ or $y$ when detecting overflow of $s \coloneqq x +_w^u y$?
+Back: Because unsigned addition is commutative.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708799678776-->
+END%%
+
 ## References
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
