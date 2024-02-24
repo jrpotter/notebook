@@ -36,6 +36,22 @@ END%%
 
 %%ANKI
 Basic
+How many significant bits are dropped on a left shift by `k`?
+Back: `k`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708784904518-->
+END%%
+
+%%ANKI
+Basic
+How many `0`s exist in the result of a left shift by `k`?
+Back: At least `k`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708784904521-->
+END%%
+
+%%ANKI
+Basic
 What kinds of right shift operations are there?
 Back: Logical and arithmetic
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
@@ -91,15 +107,78 @@ Tags: c17
 <!--ID: 1707854589813-->
 END%%
 
-In C, it is undefined behavior to shift by more than the width $w$ of an integral type. Typically though, only the last $w$ bits are considered in the computation. For example, given `int32_t x`, `(x << 32) = (x << 0)`.
+In C, it is undefined behavior to shift by more than the width $w$ of an integral type.
 
 %%ANKI
 Basic
-Ignoring UB, what *typically* happens when shifting an `int32_t` by `k ≥ 32` bits?
-Back: The shift value is interpreted as `k mod 32`.
+Assuming two's-complement, what is the result of shifting an `int32_t` value by `32`?
+Back: It is undefined behavior.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
-<!--ID: 1707873410777-->
+<!--ID: 1708785613342-->
+END%%
+
+%%ANKI
+Basic
+Assuming two's-complement, what is the result of shifting an `int32_t` value by `31`?
+Back: $-2^{31}$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708785613370-->
+END%%
+
+%%ANKI
+Basic
+What is the result of shifting an `int32_t` value by `-1`?
+Back: It is undefined behavior.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708785613376-->
+END%%
+
+%%ANKI
+Basic
+What is the result of shifting an `uint32_t` value by `32`?
+Back: It is undefined behavior.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708785613383-->
+END%%
+
+%%ANKI
+Basic
+What is the result of shifting an `uint32_t` value by `31`?
+Back: $2^{31}$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708785613389-->
+END%%
+
+%%ANKI
+Basic
+What is the result of shifting an `uint32_t` value by `-1`?
+Back: It is undefined behavior.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708785613393-->
+END%%
+
+%%ANKI
+Basic
+How is $2^n$ written using bitwise shift operators?
+Back: `1 << n`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708784904524-->
+END%%
+
+%%ANKI
+Basic
+What decimal value does `1 << n` translate to?
+Back: $2^n$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708784904526-->
 END%%
 
 %%ANKI

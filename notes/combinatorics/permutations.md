@@ -120,7 +120,7 @@ END%%
 
 %%ANKI
 Basic
-What is $n!$ shorthand for?
+$n!$ is shorthand for what other closed formula?
 Back: $\Pi_{k=1}^n k$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708366788594-->
@@ -198,10 +198,18 @@ END%%
 
 %%ANKI
 Basic
-How many $k$-permutations are there of $n$ objects?
+How is the number of $k$-permutations of $n$ objects denoted?
 Back: $(n)_k$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708366788622-->
+END%%
+
+%%ANKI
+Basic
+How is $n!$ written equivalently as a falling factorial?
+Back: $(n)_n$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708781334241-->
 END%%
 
 %%ANKI

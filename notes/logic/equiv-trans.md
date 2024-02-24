@@ -611,7 +611,7 @@ END%%
 
 %%ANKI
 Basic
-What is the role of $e$ role in textual substitution $E_e^x$?
+What is the role of $e$ in textual substitution $E_e^x$?
 Back: It is the expression that is evaluated and substituted into $E$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1708347042199-->

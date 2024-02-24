@@ -38,22 +38,6 @@ END%%
 
 %%ANKI
 Basic
-What integer values does unsigned encoding represent?
-Back: Nonnegative values.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708177246097-->
-END%%
-
-%%ANKI
-Basic
-What integer values does two's-complement represent?
-Back: Negative, zero, and positive values.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708177246102-->
-END%%
-
-%%ANKI
-Basic
 An integral value of $0_{10}$ likely has what encoding?
 Back: Either unsigned or two's-complement.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

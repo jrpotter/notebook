@@ -16,6 +16,14 @@ Aux. Memory | $O(1)$
 
 %%ANKI
 Basic
+What precondition must the input of binary search satisfy?
+Back: It must already be sorted.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1708781334247-->
+END%%
+
+%%ANKI
+Basic
 What is the best case running time of binary search?
 Back: $\Omega(1)$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
