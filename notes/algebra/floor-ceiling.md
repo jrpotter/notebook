@@ -242,10 +242,42 @@ END%%
 
 %%ANKI
 Basic
+Given `A[p..q]` and $r = \lfloor (p + q) / 2 \rfloor$, what is the size of `A[p..r]` in terms of $n = q - p + 1$?
+Back: $\lceil n / 2 \rceil$.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1708742467192-->
+END%%
+
+%%ANKI
+Basic
+Given `A[p..q]` and $r = \lfloor (p + q) / 2 \rfloor$, what is the size of `A[r+1..q]` in terms of $n = q - p + 1$?
+Back: $\lfloor n / 2 \rfloor$.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1708742467198-->
+END%%
+
+%%ANKI
+Basic
 Given `A[p..q]` and $r = \lceil (p + q) / 2 \rceil$, how does the size of `A[p..r-1]` compare to `A[r..q]`?
 Back: It either has zero or one fewer members.
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708115683354-->
+END%%
+
+%%ANKI
+Basic
+Given `A[p..q]` and $r = \lceil (p + q) / 2 \rceil$, what is the size of `A[r..q]` in terms of $n = q - p + 1$?
+Back: $\lceil n / 2 \rceil$.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1708742467202-->
+END%%
+
+%%ANKI
+Basic
+Given `A[p..q]` and $r = \lceil (p + q) / 2 \rceil$, what is the size of `A[p..r-1]` in terms of $n = q - p + 1$?
+Back: $\lfloor n / 2 \rfloor$.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1708742467207-->
 END%%
 
 %%ANKI

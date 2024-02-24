@@ -79,10 +79,11 @@
     "lattice-path-chessboard.png",
     "lattice-path-chessboard-colored.png",
     "lattice-path-before-recurrence.png",
-    "lattice-path-after-recurrence.png"
+    "lattice-path-after-recurrence.png",
+    "merge-sort.gif"
   ],
   "File Hashes": {
-    "algorithms/index.md": "a5ff7313f71777f1f3536e27dd9894fa",
+    "algorithms/index.md": "cd7c7ba91fb2f961c9f2437777e8e2ac",
     "algorithms/sorting/index.md": "2d5a18a3079d96fa9e3d4289181a8b6c",
     "algorithms/sorting/insertion-sort.md": "00e4edb132d473b0516fde3307ebae30",
     "bash/index.md": "3dfeb538d781e4645e3aaaf32beb1034",
@@ -166,7 +167,7 @@
     "_journal/2024-02/2024-02-14.md": "aa009f9569e175a8104b0537ebcc5520",
     "_journal/2024-02-16.md": "5cc129254afd553829be3364facd23db",
     "_journal/2024-02/2024-02-15.md": "16cb7563d404cb543719b7bb5037aeed",
-    "algebra/floor-ceiling.md": "e9f905f5ec01921e0f19afe8732fb38b",
+    "algebra/floor-ceiling.md": "828b11e642d6803a740b58f27ff047cf",
     "algebra/index.md": "90b842eb694938d87c7c68779a5cacd1",
     "algorithms/binary-search.md": "08cb6dc2dfb204a665d8e8333def20ca",
     "_journal/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
@@ -189,12 +190,13 @@
     "algebra/radices.md": "0fcd901c798eaed8075ff1375e2429dd",
     "_journal/2024-02-22.md": "e01f1d4bd2f7ac2a667cdfd500885a2a",
     "_journal/2024-02/2024-02-21.md": "f423137ae550eb958378750d1f5e98c7",
-    "_journal/2024-02-23.md": "75eec3feffa90a219de77151771fe3fe",
+    "_journal/2024-02-23.md": "219ce9ad15a8733edd476c97628b71fd",
     "_journal/2024-02/2024-02-22.md": "312e55d57868026f6e80f7989a889c2b",
     "c17/strings.md": "bbe8983602adbeb38eff214beddedd84",
     "c17/index.md": "78576ee41d0185df82c59999142f4edb",
     "c17/escape-sequences.md": "ebc63c6cdfbe60bbc2708c1b0c8da8bb",
-    "c17/declarations.md": "46b135d583a992991c889d518fec1c0f"
+    "c17/declarations.md": "46b135d583a992991c889d518fec1c0f",
+    "algorithms/sorting/merge-sort.md": "f66f482e5bd551c765fcba564c938d67"
   },
   "fields_dict": {
     "Basic": [
