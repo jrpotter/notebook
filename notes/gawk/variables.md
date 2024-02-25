@@ -95,12 +95,12 @@ END%%
 	* The separator used to distinguish records from one another.
 	* Defaults to `"\n"`.
 
-`RS == ??`             | Description
----------------------- | -------------------------------------
-`"\n"`                 | Records are separated by the newline character. This is the default.
-*any single character* | Records are separated by each occurrence of the character. Multiple successive occurrences delimit empty records.
-`""`                   | Records are separated by runs of blank lines. Leading/trailing newlines in a file are ignored. If `FS` is a single character, then `"\n"` also serves as a field separator.
-*regexp*               | Records are separated by occurrences of characters that match *regexp*. Leading/trailing matches delimit empty records.
+| `RS == ??`             | Description                                                                                                                                                                     |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `"\n"`                 | Records are separated by the newline character. This is the default.                                                                                                            |
+| *any single character* | Records are separated by each occurrence of the character. Multiple successive occurrences delimit empty records.                                                               |
+| `""`                   | Records are separated by one or more blank lines. Leading/trailing newlines in a file are ignored. If `FS` is a single character, then `"\n"` also serves as a field separator. |
+| *regexp*               | Records are separated by occurrences of characters that match *regexp*. Leading/trailing matches delimit empty records.                                                         |
 
 %%ANKI
 Cloze
@@ -151,7 +151,7 @@ END%%
 %%ANKI
 Basic
 How is `RS = ""` interpreted?
-Back: `""` indicates runs of newlines should be treated as the record separator.
+Back: `""` indicates one or more blank lines should be treated as the record separator.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707829409163-->
 END%%
@@ -162,6 +162,22 @@ What distinguishes `RS` value `""` and `\n\n+`?
 Back: When set to the former, `awk` strips leading/trailing newlines from the file.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707829409170-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes `RS` value `""` and `\n`?
+Back: The former separates on one or more *blank* lines, not just a newline character.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1708867924207-->
+END%%
+
+%%ANKI
+Basic
+What regexp is closest to mirroring `RS = ""` behavior?
+Back: `\n\n+`
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1708867924213-->
 END%%
 
 %%ANKI

@@ -215,7 +215,7 @@ END%%
 %%ANKI
 Basic
 The term "equivalent" refers to a comparison between what two objects?
-Back: Propositions.
+Back: Expressions.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707251673345-->
 END%%
@@ -579,7 +579,7 @@ END%%
 
 %%ANKI
 Basic
-What identifier is guaranteed to not occur in $E_e^x$?
+What identifier is guaranteed to not occur freely in $E_e^x$?
 Back: None.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707937867036-->
@@ -587,7 +587,7 @@ END%%
 
 %%ANKI
 Basic
-What identifier is guaranteed to not occur in $E_{s(e)}^x$?
+What identifier is guaranteed to not occur freely in $E_{s(e)}^x$?
 Back: $x$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707937867039-->
@@ -595,7 +595,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* does $x$ not occur in $E_{s(e)}^x$?
+*Why* does $x$ not occur freely in $E_{s(e)}^x$?
 Back: Because $s(e)$ evaluates to a constant proposition.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707937867042-->

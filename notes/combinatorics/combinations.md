@@ -58,14 +58,6 @@ END%%
 
 %%ANKI
 Basic
-How is a $k$-combination expressed recursively?
-Back: Include or exclude a candidate, then find $(k - 1)$- or $k$-combinations on the remainder.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708369553051-->
-END%%
-
-%%ANKI
-Basic
 How is a $k$-combination of $n$ objects denoted?
 Back: $\binom{n}{k}$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
@@ -138,7 +130,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* are binomial coefficients "symmetric"
+*Why* are binomial coefficients "symmetric"?
 Back: The number of ways to choose $k$ objects is the same as the number of ways to *not* choose those $k$ objects.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708368078729-->
@@ -459,7 +451,7 @@ END%%
 %%ANKI
 Basic
 How many lattice paths exist from one corner of a chess board to the opposite corner?
-Back: $\binom{16}{8}$
+Back: $\binom{14}{7}$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708384441440-->
 END%%

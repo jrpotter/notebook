@@ -43,7 +43,7 @@ END%%
 %%ANKI
 Basic
 What is an atomic statement?
-Back: It cannot be broken up into smaller statements.
+Back: One that cannot be broken up into smaller statements.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708199272087-->
 END%%
@@ -51,7 +51,7 @@ END%%
 %%ANKI
 Basic
 What is a molecular statement?
-Back: It can be broken up into smaller statements.
+Back: One that can be broken up into smaller statements.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708199272091-->
 END%%
@@ -69,14 +69,6 @@ What distinguishes a sentence from a statement?
 Back: The latter is a sentence that can be derived a truth value.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708199272099-->
-END%%
-
-%%ANKI
-Basic
-What distinguishes a sentence from a predicate?
-Back: The latter is a sentence that contains free variables.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708199272103-->
 END%%
 
 %%ANKI

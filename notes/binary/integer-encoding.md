@@ -979,6 +979,22 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708799678776-->
 END%%
 
+%%ANKI
+Basic
+Given integer $0 < x < 2^w$, what is $x$'s unsigned additive inverse?
+Back: $2^w - x$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708808252010-->
+END%%
+
+%%ANKI
+Basic
+Which unsigned integer is its own additive inverse?
+Back: $0$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708808252017-->
+END%%
+
 ## References
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

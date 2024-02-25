@@ -156,6 +156,47 @@ Reference: Dowling, “A List of Signals and What They Mean.”
 <!--ID: 1706815743870-->
 END%%
 
+### SIGILL (4)
+
+%%ANKI
+Cloze
+Signal {`SIGILL`} corresponds to number {4}.
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1708812571645-->
+END%%
+
+%%ANKI
+Basic
+What is the `ILL` in `SIGILL` short for?
+Back: **Ill**egal instruction
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1708812571654-->
+END%%
+
+%%ANKI
+Basic
+When does a process receive a `SIGILL` signal?
+Back: When the CPU encounters an instruction it can't run.
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1708812571659-->
+END%%
+
+%%ANKI
+Basic
+Corruption of machine code would probably cause what signal raise?
+Back: `SIGILL`
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1708812571663-->
+END%%
+
+%%ANKI
+Basic
+Attempts to run a privileged instruction would probably cause what signal raise?
+Back: `SIGILL`
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1708812571668-->
+END%%
+
 ## References
 
 * Cooper, Mendel. “Advanced Bash-Scripting Guide,” n.d., 916.

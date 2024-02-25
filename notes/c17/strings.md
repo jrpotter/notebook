@@ -48,16 +48,18 @@ The syntax for the format placeholder is `%[flags][width][.precision][length]spe
 
 %%ANKI
 Basic
-Which header file contains `printf` functionality?
-Back: `stdio.h`
+Which header file contains basic `printf` functionality?
+Back: `<stdio.h>`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708384441467-->
 END%%
 
 %%ANKI
 Cloze
-{1:`width`} field specifies a {2:minimum} number of characters while {2:`precision`} specifies a {1:maximum}.
+{1:`width`} specifies a {2:minimum} while {2:`precision`} specifies a {1:maximum}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708384441472-->
 END%%
 
@@ -65,76 +67,85 @@ END%%
 Cloze
 The {`width` and `precision`} fields are output related whereas the {`length`} field is input related.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708425941269-->
 END%%
 
-Flag      | Description
---------- | -----------
-`-`       | Left-aligns the output
-`+`       | Prepends a plus for positive signed-numeric types
-`␣`       | Prepends a space for positive signed-numeric types
-`0`       | Prepends zeros for numeric types
+| Flag | Description                                        |
+| ---- | -------------------------------------------------- |
+| `-`  | Left-aligns the output                             |
+| `+`  | Prepends a plus for positive signed-numeric types  |
+| `␣`  | Prepends a space for positive signed-numeric types |
+| `0`  | Prepends zeros for numeric types                   |
 
 %%ANKI
 Cloze
 The {`-`} flag {left-aligns the output}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1707918756812-->
 END%%
 
 %%ANKI
 Basic
 What is the output of `printf("%-2d abc", 100)`?
-Back: `100 abc`
+Back: `100␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708384441477-->
 END%%
 
 %%ANKI
 Basic
 What is the output of `printf("%-4d abc", 100)`?
-Back: `100  abc`
+Back: `100␣␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708384441481-->
 END%%
 
 %%ANKI
 Basic
 What is the output of `printf("%.4d abc", 100)`?
-Back: `0100 abc`
+Back: `0100␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708384441486-->
 END%%
 
 %%ANKI
 Basic
 What is the output of `printf("%04d abc", 100)`?
-Back: `0100 abc`
+Back: `0100␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708384441491-->
 END%%
 
 %%ANKI
 Basic
 What is the output of `printf("%.4s abc", "efg")`?
-Back: `efg abc`
+Back: `efg␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708384441495-->
 END%%
 
 %%ANKI
 Basic
 What is the output of `printf("%.2s abc", "efg")`?
-Back: `ef abc`
+Back: `ef␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708384441499-->
 END%%
 
 %%ANKI
 Basic
 What is the output of `printf("%.2f abc", 0.01234)`?
-Back: `0.01 abc`
+Back: `0.01␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708384441503-->
 END%%
 
@@ -143,6 +154,7 @@ Basic
 How does the precision field affect `"%s"` parameters?
 Back: Strings are truncated if longer than the specified precision.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708384441507-->
 END%%
 
@@ -151,6 +163,7 @@ Basic
 How does the precision field affect `"%f"` parameters?
 Back: Decimal values are truncated if longer than the specified precision.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708384441511-->
 END%%
 
@@ -159,6 +172,7 @@ Basic
 What does a negative width field value indicate?
 Back: This is actually a positive width with a `-` (left-align) flag.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708384441515-->
 END%%
 
@@ -167,6 +181,7 @@ Basic
 The `-` `printf` flag overrides what default behavior?
 Back: Output is right-aligned by default.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1707918756840-->
 END%%
 
@@ -174,6 +189,7 @@ END%%
 Cloze
 The {`+`} `printf` flag {prepends a plus for positive signed-numeric types}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1707918756846-->
 END%%
 
@@ -182,6 +198,7 @@ Basic
 The `+` `printf` flag overrides what default behavior?
 Back: Nothing is prepended to positive signed-numeric types by default.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1707918756852-->
 END%%
 
@@ -189,6 +206,7 @@ END%%
 Cloze
 The {`␣`} `printf` flag {prepends a space for positive signed-numeric types}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1707918756856-->
 END%%
 
@@ -197,6 +215,7 @@ Basic
 The `␣` `printf` flag overrides what default behavior?
 Back: Nothing is prepended to positive signed-numeric types by default.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1707918756861-->
 END%%
 
@@ -205,6 +224,7 @@ Basic
 How do the `+` and `␣` `printf` flags relate to one another?
 Back: Both prepend a character to positive signed-numeric types.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1707918756865-->
 END%%
 
@@ -213,6 +233,7 @@ Basic
 What happens if both the `+` and `␣` `printf` flags are specified?
 Back: The `+` flag takes precedence.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1707918756870-->
 END%%
 
@@ -220,6 +241,7 @@ END%%
 Cloze
 The {`0`} `printf` flag {prepends zeros for numeric types}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1707918756875-->
 END%%
 
@@ -228,6 +250,7 @@ Basic
 What option must be specified for the `0` `printf` flag to take effect?
 Back: The "width" option.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1707918756881-->
 END%%
 
@@ -236,6 +259,7 @@ Basic
 The `0` `printf` flag overrides what default behavior?
 Back: Spaces are used to match the "width" option by default.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1707918756888-->
 END%%
 
@@ -252,6 +276,7 @@ Basic
 *Why* do length modifiers for e.g. `char` exist?
 Back: For maximum portability in the face of default argument promotions.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708426673637-->
 END%%
 
@@ -259,6 +284,7 @@ END%%
 Cloze
 The {`hh`} length corresponds to the {`char`} type declaration.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708426673664-->
 END%%
 
@@ -266,6 +292,7 @@ END%%
 Cloze
 The {`h`} length corresponds to the {`short`} type declaration.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708426673668-->
 END%%
 
@@ -273,6 +300,7 @@ END%%
 Cloze
 The {`l`} length corresponds to the {`long`} type declaration.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708426673711-->
 END%%
 
@@ -280,6 +308,7 @@ END%%
 Cloze
 The {`ll`} length corresponds to the {`long long`} type declaration.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708426673719-->
 END%%
 
@@ -287,6 +316,7 @@ END%%
 Cloze
 The {`z`} length corresponds to the {`size_t`} type declaration.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
 <!--ID: 1708426673725-->
 END%%
 
@@ -494,8 +524,8 @@ END%%
 Basic
 Given `int64_t x`, why is `printf("%d", x)` a problem?
 Back: `%d` matches an `int` which is not necessarily 64-bits.
-Tags: printf
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: printf
 <!--ID: 1708454462772-->
 END%%
 

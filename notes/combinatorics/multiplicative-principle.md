@@ -55,7 +55,7 @@ END%%
 
 %%ANKI
 Basic
-If $A$ is finite, how is $A \times B$ rewritten as $|A|$ disjoint sets?
+If $A$ is finite, how is $A \times B$ rewritten as the union of $|A|$ disjoint sets?
 Back: Given $A = \{a_1, \ldots, a_n\}$, $(\{a_1\} \times B) \cup \cdots \cup (\{a_n\} \times B)$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708217738483-->
@@ -63,7 +63,7 @@ END%%
 
 %%ANKI
 Basic
-If $B$ is finite, how is $A \times B$ rewritten as $|B|$ disjoint sets?
+If $B$ is finite, how is $A \times B$ rewritten as the union of $|B|$ disjoint sets?
 Back: Given $B = \{b_1, \ldots, b_n\}$, $(A \times \{b_1\}) \cup \cdots \cup (A \times \{b_n\})$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708217738487-->
