@@ -822,6 +822,190 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708701087982-->
 END%%
 
+## Shifting
+
+Left shift operations (`<<`) drop the `k` most significant bits and fills the right end of the result with `k` zeros. Right shift operations (`>>`) are classified in two ways:
+
+* **Logical**
+	* Drops the `k` least significant bits and fills the left end of the result with `k` zeros.
+	* This mode is always used when calling `>>` on unsigned data.
+	* Sometimes denoted as `>>>` to disambiguate from arithmetic right shifts.
+* **Arithmetic**
+	* Drops the `k` least significant bits and fills the left end of the result with `k` copies of the most significant bit.
+	* This mode is usually used when calling `>>` on signed data.
+
+%%ANKI
+Basic
+How is decimal value $2^n$ written in binary?
+Back: As `1` followed by $n$ zeros.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707432641574-->
+END%%
+
+%%ANKI
+Basic
+What kinds of left shift operations are there?
+Back: Just logical.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707854589773-->
+END%%
+
+%%ANKI
+Basic
+How many significant bits are dropped on a left shift by `k`?
+Back: `k`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708784904518-->
+END%%
+
+%%ANKI
+Basic
+How many `0`s exist in the result of a left shift by `k`?
+Back: At least `k`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708784904521-->
+END%%
+
+%%ANKI
+Basic
+What kinds of right shift operations are there?
+Back: Logical and arithmetic
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707854589784-->
+END%%
+
+%%ANKI
+Basic
+What is a logical right shift operation?
+Back: One that fills the left end of the result with zeros.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707854589786-->
+END%%
+
+%%ANKI
+Basic
+What is an arithmetic right shift operation?
+Back: One that fills the left end of the result with copies of the most significant bit.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707854589789-->
+END%%
+
+%%ANKI
+Basic
+What kind of right shift operation is *usually* applied to signed numbers?
+Back: Arithmetic.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707854589801-->
+END%%
+
+%%ANKI
+Basic
+What kind of right shift operation is applied to unsigned numbers?
+Back: Logical.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707854589804-->
+END%%
+
+%%ANKI
+Basic
+What portability issue do shift operations introduce?
+Back: There is no standard on whether right shifts of signed numbers are logical or arithmetic.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1707854589808-->
+END%%
+
+%%ANKI
+Cloze
+{1:Arithmetic} right shifts are to {1:signed} numbers whereas {2:logical} right shifts are to {2:unsigned} numbers.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1707854589813-->
+END%%
+
+In C, it is undefined behavior to shift by more than the width $w$ of an integral type.
+
+%%ANKI
+Basic
+Assuming two's-complement, what is the result of shifting an `int32_t` value by `32`?
+Back: It is undefined behavior.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708785613342-->
+END%%
+
+%%ANKI
+Basic
+Assuming two's-complement, what is the result of shifting an `int32_t` value by `31`?
+Back: $-2^{31}$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708785613370-->
+END%%
+
+%%ANKI
+Basic
+What is the result of shifting an `int32_t` value by `-1`?
+Back: It is undefined behavior.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708785613376-->
+END%%
+
+%%ANKI
+Basic
+What is the result of shifting an `uint32_t` value by `32`?
+Back: It is undefined behavior.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708785613383-->
+END%%
+
+%%ANKI
+Basic
+What is the result of shifting an `uint32_t` value by `31`?
+Back: $2^{31}$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708785613389-->
+END%%
+
+%%ANKI
+Basic
+What is the result of shifting an `uint32_t` value by `-1`?
+Back: It is undefined behavior.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708785613393-->
+END%%
+
+%%ANKI
+Basic
+How is $2^n$ written using bitwise shift operators?
+Back: `1 << n`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708784904524-->
+END%%
+
+%%ANKI
+Basic
+What decimal value does `1 << n` translate to?
+Back: $2^n$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708784904526-->
+END%%
+
+%%ANKI
+Basic
+How is $x \bmod 2^k$ equivalently written as a bit mask?
+Back: `x & ((1 << k) - 1)`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1707873410780-->
+END%%
+
 ## Arithmetic
 
 ### Addition
@@ -871,8 +1055,8 @@ END%%
 Unsigned addition of $w$-bit integral types, denoted $+_w^u$, behaves like so:
 
 $$x +_w^u y = \begin{cases}
-x + y & \text{if } x + y < 2^w \\
-x + y - 2^w & \text{otherwise}
+x + y - 2^w & \text{if } x + y \geq 2^w \\
+x + y & \text{otherwise}
 \end{cases}$$
 
 This is more simply expressed as $x +_w^u y = (x + y) \bmod 2^w$.
@@ -928,14 +1112,14 @@ END%%
 
 %%ANKI
 Cloze
-Without using modulo arithmetic, $x +_w^u y =$ {$x + y$} if {$x + y < 2^w$}.
+Without using modular arithmetic, $x +_w^u y =$ {$x + y$} if {$x + y < 2^w$}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708799678758-->
 END%%
 
 %%ANKI
 Cloze
-Without using modulo arithmetic, $x +_w^u y =$ {$x + y - 2^w$} if {$x + y \geq 2^w$}.
+Without using modular arithmetic, $x +_w^u y =$ {$x + y - 2^w$} if {$x + y \geq 2^w$}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708799678761-->
 END%%
@@ -995,7 +1179,119 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708808252017-->
 END%%
 
+Two's-complement addition, denoted $+_w^t$ operates similarly:
+
+$$x +_w^u y = \begin{cases}
+x + y - 2^w & \text{if } x + y \geq 2^{w-1} \\
+x + y + 2^w & \text{if } x + y < -2^{w-1} \\
+x + y & \text{otherwise}
+\end{cases}$$
+
+Unlike with unsigned addition, there is no simpler modulus operation that can be applied.
+
+%%ANKI
+Basic
+What kind of overflows does two's-complement addition potentially exhibit?
+Back: Positive and negative overflow.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708964376220-->
+END%%
+
+%%ANKI
+Basic
+Why is two's-complement addition overflow UB?
+Back: Because the C standard does not mandate any particular signed integer encoding.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1708964376225-->
+END%%
+
+%%ANKI
+Basic
+What does $+_w^t$ denote?
+Back: Two's-complement addition of $w$-bit integral types.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708964376228-->
+END%%
+
+%%ANKI
+Basic
+*Why* doesn't two's-complement addition perform modular arithmetic?
+Back: Because negative values are representable.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708964376231-->
+END%%
+
+%%ANKI
+Cloze
+$x +_w^t y =$ {$x + y - 2^w$} if {$x + y \geq 2^{w-1}$}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708964376235-->
+END%%
+
+%%ANKI
+Cloze
+$x +_w^t y =$ {$x + y + 2^w$} if {$x + y < -2^{w-1}$}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708964376238-->
+END%%
+
+%%ANKI
+Cloze
+$x +_w^t y =$ {$x + y$} if {$-2^{w-1} \leq x + y < 2^{w-1}$}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708964376242-->
+END%%
+
+%%ANKI
+Basic
+How do we detect $x +_w^t y$ positive overflowed?
+Back: This happens iff $x > 0$, $y > 0$, and $x +_w^t y \leq 0$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708964376246-->
+END%%
+
+%%ANKI
+Basic
+How do we detect $x +_w^t y$ negative overflowed?
+Back: This happens iff $x < 0$, $y < 0$, and $x +_w^t y \geq 0$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708964376250-->
+END%%
+
+%%ANKI
+Basic
+How can we write $x +_w^t y$ in terms of unsigned addition?
+Back: $x +_w^t y = U2T_w(T2U_w(x) +_w^u T2U_w(y))$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708964376254-->
+END%%
+
+%%ANKI
+*Why* are we able to characterize $+_w^t$ in terms of $+_w^u$?
+Back: Because two's-complement addition has the same bit-level representation as unsigned addition.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+END%%
+
+%%ANKI
+Basic
+How would you complete the body of this function?
+```c
+/* Determine whether arguments can be added without overflow */
+int tadd_ok(int x, int y);
+```
+Back:
+```c
+int pos_over = x > 0 && y > 0 && (x + y) <= 0;
+int neg_over = x < 0 && y < 0 && (x + y) >= 0;
+return !pos_over && !neg_over;
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708964376259-->
+END%%
+
 ## References
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 * “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
