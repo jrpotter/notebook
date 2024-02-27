@@ -530,6 +530,116 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708545383265-->
 END%%
 
+%%ANKI
+Basic
+Why is two's-complement named the way it is?
+Back: Because there is only one $2$ in $2^w - x$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709060837130-->
+END%%
+
+%%ANKI
+Basic
+Given two's-complement $x \geq 0$, what is the significance of $2^w - x$?
+Back: The result is the binary representation of $-x$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709060849456-->
+END%%
+
+%%ANKI
+Basic
+Let $x$ be a $w$-bit two's-complement number. What is it's complement?
+Back: The number $y$ such that $x + y = 2^w$.
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1709060837141-->
+END%%
+
+%%ANKI
+Basic
+What is the precise definition of the two's-complement of a $w$-bit number?
+Back: The complement of $x$ with respect to $2^w$.
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1709060837145-->
+END%%
+
+%%ANKI
+Basic
+With respect to two's-complement encoding, what is the "weird number"?
+Back: $TMin$
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1709060837149-->
+END%%
+
+%%ANKI
+Basic
+Why is $TMin$ called the "weird number"?
+Back: It is the only number that is it's own complement.
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1709060837151-->
+END%%
+
+%%ANKI
+Basic
+How is $2^w - x$ written schematically, fixed to $w = 8$ bits?
+Back:
+```
+  00000000
+-        x
+----------
+       ...
+```
+Reference: Finley, Thomas. “Two’s Complement,” April 2000. [https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html](https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html).
+<!--ID: 1709060837154-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten to emphasize why "two's-complement" is named the way it is?
+```
+  00000000
+- 01010101
+----------
+       ...
+```
+Back:
+```
+  100000000
+-  01010101
+-----------
+        ...
+```
+Reference: Finley, Thomas. “Two’s Complement,” April 2000. [https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html](https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html).
+<!--ID: 1709060837156-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten to emphasize two's-complement's idea of "invert and add one"?
+```
+  100000000
+-  01010101
+-----------
+        ...
+```
+Back:
+```
+         1
++ 11111111
+- 01010101
+----------
+       ...
+```
+Reference: Finley, Thomas. “Two’s Complement,” April 2000. [https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html](https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html).
+<!--ID: 1709060837160-->
+END%%
+
+%%ANKI
+Cloze
+Subtracting $x$ from {a number of all `1` bits} is equivalent to {`~x`}.
+Reference: Finley, Thomas. “Two’s Complement,” April 2000. [https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html](https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html).
+<!--ID: 1709061032778-->
+END%%
+
 ## Casting
 
 Most implementations of C cast an object of one type to another by simply re-interpreting the object's binary representation. This casting may happen implicitly if comparing or operating on e.g. `signed` and `unsigned` objects in the same expression. $T2U$ and $U2T$ reflect this method of casting:
@@ -1397,5 +1507,6 @@ END%%
 ## References
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* Finley, Thomas. “Two’s Complement,” April 2000. [https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html](https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html).
 * Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 * “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).

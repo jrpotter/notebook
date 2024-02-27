@@ -81,7 +81,9 @@
     "lattice-path-before-recurrence.png",
     "lattice-path-after-recurrence.png",
     "merge-sort.gif",
-    "theta-notation.png"
+    "theta-notation.png",
+    "big-o-notation.png",
+    "big-omega-notation.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "cd7c7ba91fb2f961c9f2437777e8e2ac",
@@ -112,7 +114,7 @@
     "posix/regexp.md": "f5fb177c7356faf1bf768023c2563c54",
     "journal/2024-02-04.md": "e2b5678fc53d7284b71ed6820c02b954",
     "gawk/regexp.md": "d9229f1eabe1b99e965eecaa03bee86c",
-    "_templates/daily.md": "7866014e730e85683155207a02e367d8",
+    "_templates/daily.md": "5863e4524f8d012e153918d238c611a4",
     "_journal/2024-02-05.md": "f8505abd415c50fd97c81fd6153a6d4f",
     "_journal/2024-02-06.md": "1ea415f3c3f5be17f796b9a0d4df565f",
     "_journal/2024-02-04.md": "f77a3c5f3ce7969120f226738836dc92",
@@ -125,7 +127,7 @@
     "algorithms/loop-invariants.md": "cbefc346842c21a6cce5c5edce451eb2",
     "algorithms/loop-invariant.md": "29f9f9090a3109890d333a78acc18b50",
     "algorithms/running-time.md": "5efc0791097d2c996f931c9046c95f65",
-    "algorithms/order-growth.md": "d5481b2611a39f255cbd0bb8a4120a70",
+    "algorithms/order-growth.md": "f4bab009ba9a6af34b9245fe595b0a2a",
     "_journal/2024-02-08.md": "19092bdfe378f31e2774f20d6afbfbac",
     "algorithms/sorting/selection-sort.md": "fcd0dc2ebaabd0a4db1baf7e7ef9f7a9",
     "algorithms/index 1.md": "6fada1f3d5d3af64687719eb465a5b97",
@@ -173,7 +175,7 @@
     "algorithms/binary-search.md": "dbbaf8d4be7aabef1ed232c1906b4c99",
     "_journal/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
     "_journal/2024-02/2024-02-16.md": "e701902e369ec53098fc2deed4ec14fd",
-    "binary/integer-encoding.md": "f4e553365bf596ddc7d24cfb12b63fab",
+    "binary/integer-encoding.md": "81b7d429c05b5bc95c0b3d4d8d3e27f0",
     "combinatorics/index.md": "9a85e8858c50c9797243d6d01e1dcbe7",
     "_journal/2024-02-18.md": "67e36dbbb2cac699d4533b5a2eaeb629",
     "_journal/2024-02/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
@@ -204,7 +206,7 @@
     "_journal/2024-02/2024-02-24.md": "ee92fd63ebbda5f8ffa0abd06700ead1",
     "_journal/2024-02-26.md": "ccbee662c1b2c42027bce1ed6f9a5ac4",
     "_journal/2024-02/2024-02-25.md": "426be827fe8483e4ab432304a2aa6df3",
-    "_journal/2024-02-27.md": "275c99a69ac426820df1803a462154ba",
+    "_journal/2024-02-27.md": "851180f1f7c1aaacd4c0b0ec2639bdf2",
     "_journal/2024-02/2024-02-26.md": "417b84be5d96f9d8adcdedca3b68b141"
   },
   "fields_dict": {
