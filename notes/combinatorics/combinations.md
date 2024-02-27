@@ -530,6 +530,38 @@ END%%
 
 %%ANKI
 Basic
+What is a degree-0 polynomial?
+Back: A constant.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1708974221746-->
+END%%
+
+%%ANKI
+Basic
+What name is given to a degree-0 polynomial?
+Back: A constant.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1708974221749-->
+END%%
+
+%%ANKI
+Basic
+What name is given to a degree-1 polynomial?
+Back: A monomial.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708974221752-->
+END%%
+
+%%ANKI
+Basic
+What name is given to a degree-2 polynomial?
+Back: A binomial.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708974221755-->
+END%%
+
+%%ANKI
+Basic
 What is a binomial?
 Back: A polynomial containing two terms.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).

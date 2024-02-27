@@ -48,6 +48,15 @@ The syntax for the format placeholder is `%[flags][width][.precision][length]spe
 
 %%ANKI
 Basic
+What four optional parts make up a `printf` argument?
+Back: Flags, width, precision, and length.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1708974221761-->
+END%%
+
+%%ANKI
+Basic
 Which header file contains basic `printf` functionality?
 Back: `<stdio.h>`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
