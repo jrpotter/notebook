@@ -94,7 +94,7 @@ END%%
 
 %%ANKI
 Basic
-According to the C standard, Is `unsigned` underflow/overflow safe?
+According to the C standard, Is `unsigned` overflow well-defined?
 Back: Yes
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708551236389-->
@@ -102,7 +102,7 @@ END%%
 
 %%ANKI
 Basic
-According to the C standard, Is `signed` underflow/overflow safe?
+According to the C standard, Is `signed` overflow well-defined?
 Back: No
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708551236392-->
@@ -127,7 +127,7 @@ END%%
 %%ANKI
 Basic
 *Why* is it $UMax = 2 \cdot TMax + 1$?
-Back: All bit patterns denoting negative numbers in two's-complement are positive in unsigned encoding.
+Back: All bit strings representing negative numbers in two's-complement are positive in unsigned encoding.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708613447880-->
 END%%
@@ -308,16 +308,16 @@ END%%
 
 %%ANKI
 Basic
-How does `n` relate to `~n` in unsigned encoding?
-Back: `~n = UMax - n`
+How does $n$ relate to $\textasciitilde n$ in unsigned encoding?
+Back: $n + \textasciitilde n = UMax$
 Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
 <!--ID: 1708545383259-->
 END%%
 
 %%ANKI
 Basic
-Using unsigned encoding, *why* does `n + ~n = UMax`?
-Back: Because this always yields a bit string of all `1`s.
+Using unsigned encoding, *why* does $n + \textasciitilde n = UMax$?
+Back: Because the sum always yields a bit string of all `1`s.
 Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
 <!--ID: 1708545574154-->
 END%%

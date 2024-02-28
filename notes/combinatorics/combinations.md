@@ -410,7 +410,7 @@ END%%
 
 %%ANKI
 Basic
-What *is* the distribution corresponding to the following stars and bars chart? $$*||*$$
+What distribution does the following stars and bars chart represent? $$*||*$$
 Back: A single object in the first and last bucket. No object in the middle.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708532069719-->

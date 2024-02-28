@@ -20,8 +20,15 @@ END%%
 
 %%ANKI
 Basic
-What does the first step in the subtraction process of $100_2 - 10_2$ *look* like?
-Back: $020_2 - 10_2$
+What does the process of "borrowing" in subtraction $100_2 - 10_2$ *look* like?
+Back:
+```
+   2
+  000
+-  10
+-----
+  010
+```
 Reference: “Radix,” in *Wikipedia*, August 6, 2023, [https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173).
 <!--ID: 1708534662989-->
 END%%

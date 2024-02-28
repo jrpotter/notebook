@@ -259,7 +259,7 @@ END%%
 Cloze
 {`FS`} is to `awk` as {`IFS`} is to Bash.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-/END%%
+END%%
 
 %%ANKI
 Basic

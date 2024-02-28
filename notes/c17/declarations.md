@@ -184,7 +184,7 @@ END%%
 %%ANKI
 Basic
 Is declaration `char` signed or unsigned?
-Back: Unknown.
+Back: This is implementation-dependent.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707493017239-->
 END%%

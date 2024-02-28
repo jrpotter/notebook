@@ -158,6 +158,8 @@ END%%
 
 ### SIGILL (4)
 
+Indicates the CPU encountered an instruction it does not understand or does not have permission to execute. Can often indicate corruption in some way or perhaps an attempt to execute data instead of code.
+
 %%ANKI
 Cloze
 Signal {`SIGILL`} corresponds to number {4}.
@@ -195,6 +197,52 @@ Attempts to run a privileged instruction would probably cause what signal raise?
 Back: `SIGILL`
 Reference: Dowling, “A List of Signals and What They Mean.”
 <!--ID: 1708812571668-->
+END%%
+
+### SIGABRT (6)
+
+A signal, usually sent when the process itself invokes `abort()`. Indicates an "emergency stop".
+
+%%ANKI
+Cloze
+Signal {`SIGABRT`} corresponds to number {6}.
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1709131892335-->
+END%%
+
+%%ANKI
+Basic
+What function is usually used to invoke `SIGABRT`?
+Back: `abort()`
+Reference: Dowling, “A List of Signals and What They Mean.”
+Tags: c17
+<!--ID: 1709131892339-->
+END%%
+
+%%ANKI
+Basic
+What signal corresponds to the idea of an "emergency stop"?
+Back: `SIGABRT`
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1709131892342-->
+END%%
+
+%%ANKI
+Basic
+Which header contains the `abort()` function prototype?
+Back: `<stdlib.h>`
+Reference: N/A
+Tags: c17
+<!--ID: 1709131892345-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes `abort()` from `exit()`?
+Back: The former sends a `SIGABRT` signal. The latter closes the application normally.
+Reference: N/A
+Tags: c17
+<!--ID: 1709131892349-->
 END%%
 
 ## References
