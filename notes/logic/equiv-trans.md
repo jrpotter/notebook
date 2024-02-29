@@ -863,7 +863,7 @@ END%%
 
 %%ANKI
 Basic
-How do define $s'$ such that $s(E_e^x) = s'(E)$?
+How do you define $s'$ such that $s(E_e^x) = s'(E)$?
 Back: $s' = (s; x{:}s(e))$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707939006292-->

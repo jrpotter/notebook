@@ -126,8 +126,8 @@ END%%
 
 %%ANKI
 Basic
-*Why* is it $UMax = 2 \cdot TMax + 1$?
-Back: All bit strings representing negative numbers in two's-complement are positive in unsigned encoding.
+Provide a combinatorial explanation on why $UMax$ equals $2 \cdot TMax + 1$.
+Back: There is one more negative number than positive numbers represented in two's-complement.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708613447880-->
 END%%
