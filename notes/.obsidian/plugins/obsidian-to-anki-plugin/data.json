@@ -83,7 +83,12 @@
     "merge-sort.gif",
     "theta-notation.png",
     "big-o-notation.png",
-    "big-omega-notation.png"
+    "big-omega-notation.png",
+    "ordering-y-repetition-y.jpg",
+    "ordering-repetition.jpg",
+    "ordering-y-repetition-n.jpg",
+    "ordering-n-repetition-y.jpg",
+    "ordering-n-repetition-n.jpg"
   ],
   "File Hashes": {
     "algorithms/index.md": "cd7c7ba91fb2f961c9f2437777e8e2ac",
@@ -176,7 +181,7 @@
     "_journal/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
     "_journal/2024-02/2024-02-16.md": "e701902e369ec53098fc2deed4ec14fd",
     "binary/integer-encoding.md": "7ace6ab6c5a4191ae0abdfe7e5abb6a2",
-    "combinatorics/index.md": "9a85e8858c50c9797243d6d01e1dcbe7",
+    "combinatorics/index.md": "200f23380b0817cc13a9acd40996b125",
     "_journal/2024-02-18.md": "67e36dbbb2cac699d4533b5a2eaeb629",
     "_journal/2024-02/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
     "combinatorics/multiplicative-principle.md": "f1430302e0a35b863fa965a834c4e40a",

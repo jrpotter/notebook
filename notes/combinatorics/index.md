@@ -36,34 +36,110 @@ END%%
 
 %%ANKI
 Basic
-If order matters and repeats are allowed, the number of selections is usually formatted in what way?
+What combinatorial *notation* corresponds to the highlighted square?
+![[ordering-y-repetition-y.jpg]]
 Back: $n^k$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708715147783-->
+<!--ID: 1709305803508-->
 END%%
 
 %%ANKI
 Basic
-If order matters and repeats are disallowed, the number of selections is usually formatted in what way?
-Back: $(n)_k$ (falling factorial)
+What combinatorial *concept* corresponds to the highlighted square?
+![[ordering-y-repetition-y.jpg]]
+Back: The multiplicative principle.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708715147784-->
+<!--ID: 1709305803515-->
 END%%
 
 %%ANKI
 Basic
-If order does not matter and repeats are allowed, the number of selections is usually formatted in what way?
-Back: $\binom{n + k}{k}$ (stars and bars)
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708715147786-->
+Which square corresponds to notation $n^k$?
+![[ordering-repetition.jpg]]
+Back:
+![[ordering-y-repetition-y.jpg]]
+<!--ID: 1709305803518-->
 END%%
 
 %%ANKI
 Basic
-If order does not matter and repeats are disallowed, the number of selections is usually formatted in what way?
-Back: $\binom{n}{k}$ (combinations)
+What combinatorial *notation* corresponds to the highlighted square?
+![[ordering-y-repetition-n.jpg]]
+Back: $(n)_k$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708715147787-->
+<!--ID: 1709305912355-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial *concept* corresponds to the highlighted square?
+![[ordering-y-repetition-n.jpg]]
+Back: $k$-permutations (falling factorials)
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709306052449-->
+END%%
+
+%%ANKI
+Basic
+Which square corresponds to notation $(n)_k$?
+![[ordering-repetition.jpg]]
+Back:
+![[ordering-y-repetition-n.jpg]]
+<!--ID: 1709305912359-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial *notation* corresponds to the highlighted square?
+![[ordering-n-repetition-y.jpg]]
+Back: $\binom{n + k}{k}$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709306052455-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial *concept* corresponds to the highlighted square?
+![[ordering-n-repetition-y.jpg]]
+Back: Stars and bars
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709306052461-->
+END%%
+
+%%ANKI
+Basic
+Which square corresponds to notation $\binom{n + k}{k}$?
+![[ordering-repetition.jpg]]
+Back:
+![[ordering-n-repetition-y.jpg]]
+<!--ID: 1709306052468-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial *notation* corresponds to the highlighted square?
+![[ordering-n-repetition-n.jpg]]
+Back: $\binom{n}{k}$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709306140856-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial *concept* corresponds to the highlighted square?
+![[ordering-n-repetition-n.jpg]]
+Back: Combinations
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709306140887-->
+END%%
+
+%%ANKI
+Basic
+Which square corresponds to notation $\binom{n}{k}$?
+![[ordering-repetition.jpg]]
+Back:
+![[ordering-n-repetition-n.jpg]]
+<!--ID: 1709306140891-->
 END%%
 
 ## References
