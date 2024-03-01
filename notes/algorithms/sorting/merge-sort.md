@@ -71,7 +71,7 @@ END%%
 %%ANKI
 Basic
 What is the "combine" step of merge sort?
-Back: Merge the subarrays sorted after the "conquer" step.
+Back: Merge the sorted subarrays produced by the "conquer" step.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742467125-->
 END%%

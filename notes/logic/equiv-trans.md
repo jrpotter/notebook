@@ -707,7 +707,7 @@ END%%
 
 %%ANKI
 Basic
-What is the role of $\bar{e}$ role in textual substitution $E_{\bar{e}}^{\bar{x}}$?
+What is the role of $\bar{e}$ in textual substitution $E_{\bar{e}}^{\bar{x}}$?
 Back: It is the expressions that are substituted into $E$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707762304127-->
