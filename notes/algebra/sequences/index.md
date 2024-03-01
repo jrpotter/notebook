@@ -1,9 +1,10 @@
 ---
 title: Sequences
 TARGET DECK: Obsidian::STEM
-FILE TAGS: algebra
+FILE TAGS: algebra::sequence
 tags:
   - algebra
+  - sequence
 ---
 
 ## Overview
