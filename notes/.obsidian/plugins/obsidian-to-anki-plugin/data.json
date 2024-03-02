@@ -181,7 +181,7 @@
     "_journal/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
     "_journal/2024-02/2024-02-16.md": "e701902e369ec53098fc2deed4ec14fd",
     "binary/integer-encoding.md": "7ace6ab6c5a4191ae0abdfe7e5abb6a2",
-    "combinatorics/index.md": "200f23380b0817cc13a9acd40996b125",
+    "combinatorics/index.md": "477bfcad2d88edfb823072b8afb9d236",
     "_journal/2024-02-18.md": "67e36dbbb2cac699d4533b5a2eaeb629",
     "_journal/2024-02/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
     "combinatorics/multiplicative-principle.md": "f1430302e0a35b863fa965a834c4e40a",
@@ -217,14 +217,15 @@
     "_journal/2024-02/2024-02-27.md": "f75a0d04a875aeee932343dae0c78768",
     "filesystems/index.md": "cbd2b0290a3ba3b32abec4bd8bfefad5",
     "filesystems/cas.md": "34906013a2a60fe5ee0e31809b4838aa",
-    "git/objects.md": "b49015b8ebffc2c976d97b2484c74448",
+    "git/objects.md": "b95228a78744d3f9fe173e575aa0445a",
     "git/index.md": "83d2d95fc549d9e8436946c7bd058d15",
     "encoding/integer.md": "5dd3a961bf259e53da207209051b8335",
     "_journal/2024-02-29.md": "f610f3caed659c1de3eed5f226cab508",
     "_journal/2024-02/2024-02-28.md": "7489377c014a2ff3c535d581961b5b82",
-    "_journal/2024-03-01.md": "e5602f6d41ae9dde85385428ad637d5a",
+    "_journal/2024-03-01.md": "a532486279190b0c12954966cbf8c3fe",
     "_journal/2024-02/2024-02-29.md": "0e502a2c8baf90c2f12859b03f10b5a1",
-    "algebra/sequences.md": "97c217823aacf8910a1a37bde694ecfe"
+    "algebra/sequences.md": "97c217823aacf8910a1a37bde694ecfe",
+    "algebra/sequences/index.md": "e5a7cdfbcb61709ce2963c4b5e53a8f2"
   },
   "fields_dict": {
     "Basic": [
