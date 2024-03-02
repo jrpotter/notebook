@@ -88,7 +88,10 @@
     "ordering-repetition.jpg",
     "ordering-y-repetition-n.jpg",
     "ordering-n-repetition-y.jpg",
-    "ordering-n-repetition-n.jpg"
+    "ordering-n-repetition-n.jpg",
+    "triangular-gnomon.png",
+    "pascals-triangle.webp",
+    "square-gnomon.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "cd7c7ba91fb2f961c9f2437777e8e2ac",
@@ -219,13 +222,17 @@
     "filesystems/cas.md": "34906013a2a60fe5ee0e31809b4838aa",
     "git/objects.md": "b95228a78744d3f9fe173e575aa0445a",
     "git/index.md": "83d2d95fc549d9e8436946c7bd058d15",
-    "encoding/integer.md": "5dd3a961bf259e53da207209051b8335",
+    "encoding/integer.md": "3107074a5070670f2f8fab17abc05fbb",
     "_journal/2024-02-29.md": "f610f3caed659c1de3eed5f226cab508",
     "_journal/2024-02/2024-02-28.md": "7489377c014a2ff3c535d581961b5b82",
     "_journal/2024-03-01.md": "a532486279190b0c12954966cbf8c3fe",
     "_journal/2024-02/2024-02-29.md": "0e502a2c8baf90c2f12859b03f10b5a1",
     "algebra/sequences.md": "97c217823aacf8910a1a37bde694ecfe",
-    "algebra/sequences/index.md": "e5a7cdfbcb61709ce2963c4b5e53a8f2"
+    "algebra/sequences/index.md": "e5a7cdfbcb61709ce2963c4b5e53a8f2",
+    "_journal/2024-03-02.md": "08c3cae1df0079293b47e1e9556f1ce1",
+    "_journal/2024-03/2024-03-01.md": "70da812300f284df72718dd32fc39322",
+    "algebra/sequences/triangular-numbers.md": "18925b0ecae151c3e6d38bc018c632c4",
+    "algebra/sequences/square-numbers.md": "886fb22fb8dbfffdd2cd233558ea3424"
   },
   "fields_dict": {
     "Basic": [
