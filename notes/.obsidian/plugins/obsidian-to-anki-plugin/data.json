@@ -135,7 +135,7 @@
     "algorithms/loop-invariants.md": "cbefc346842c21a6cce5c5edce451eb2",
     "algorithms/loop-invariant.md": "29f9f9090a3109890d333a78acc18b50",
     "algorithms/running-time.md": "5efc0791097d2c996f931c9046c95f65",
-    "algorithms/order-growth.md": "f4bab009ba9a6af34b9245fe595b0a2a",
+    "algorithms/order-growth.md": "cf80f0fddaedbfb1959d05adbfe6cbee",
     "_journal/2024-02-08.md": "19092bdfe378f31e2774f20d6afbfbac",
     "algorithms/sorting/selection-sort.md": "fcd0dc2ebaabd0a4db1baf7e7ef9f7a9",
     "algorithms/index 1.md": "6fada1f3d5d3af64687719eb465a5b97",
@@ -222,7 +222,7 @@
     "filesystems/cas.md": "34906013a2a60fe5ee0e31809b4838aa",
     "git/objects.md": "b95228a78744d3f9fe173e575aa0445a",
     "git/index.md": "83d2d95fc549d9e8436946c7bd058d15",
-    "encoding/integer.md": "3107074a5070670f2f8fab17abc05fbb",
+    "encoding/integer.md": "84a8343b1cf3cd1552c9fce3ef3e52b8",
     "_journal/2024-02-29.md": "f610f3caed659c1de3eed5f226cab508",
     "_journal/2024-02/2024-02-28.md": "7489377c014a2ff3c535d581961b5b82",
     "_journal/2024-03-01.md": "a532486279190b0c12954966cbf8c3fe",
@@ -232,7 +232,9 @@
     "_journal/2024-03-02.md": "08c3cae1df0079293b47e1e9556f1ce1",
     "_journal/2024-03/2024-03-01.md": "70da812300f284df72718dd32fc39322",
     "algebra/sequences/triangular-numbers.md": "18925b0ecae151c3e6d38bc018c632c4",
-    "algebra/sequences/square-numbers.md": "886fb22fb8dbfffdd2cd233558ea3424"
+    "algebra/sequences/square-numbers.md": "886fb22fb8dbfffdd2cd233558ea3424",
+    "_journal/2024-03-03.md": "c4977a3778ed227b768c3f9ad5512670",
+    "_journal/2024-03/2024-03-02.md": "8136792b0ee6e08232e4f60c88d461d2"
   },
   "fields_dict": {
     "Basic": [

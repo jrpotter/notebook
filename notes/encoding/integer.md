@@ -721,6 +721,13 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
+Cloze
+For all $x$, $T2U_w(x)=$ {$x + x_{w-1}2^w$} where $x_{w-1}$ is the most significant bit of $x$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205954-->
+END%%
+
+%%ANKI
 Basic
 How is $T2U_w$ written as a function composition?
 Back: $T2U_w = B2U_w \circ T2B_w$
@@ -1083,7 +1090,7 @@ END%%
 
 %%ANKI
 Basic
-Why can we compare $s$ to $x$ or $y$ when detecting overflow of $s \coloneqq x +_w^u y$?
+Why can we choose to compare $s$ to either $x$ or $y$ when detecting overflow of $s \coloneqq x +_w^u y$?
 Back: Because unsigned addition is commutative.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708799678776-->
@@ -1121,6 +1128,22 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1709042784788-->
 END%%
 
+%%ANKI
+Basic
+Ignoring overflow, what is the width of the largest possible value of $x +_w^u y$?
+Back: $w + 1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205961-->
+END%%
+
+%%ANKI
+Basic
+Ignoring overflow, what is the width of the smallest possible value of $x +_w^u y$?
+Back: $w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205964-->
+END%%
+
 Two's-complement addition, denoted $+_w^t$ operates similarly:
 
 $$x +_w^u y = \begin{cases}
@@ -1141,7 +1164,7 @@ END%%
 
 %%ANKI
 Basic
-Why is two's-complement addition overflow UB?
+Why is signed addition overflow UB?
 Back: Because the C standard does not mandate any particular signed integer encoding.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
@@ -1207,6 +1230,14 @@ How can we write $x +_w^t y$ in terms of unsigned addition?
 Back: $x +_w^t y = U2T_w(T2U_w(x) +_w^u T2U_w(y))$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708964376254-->
+END%%
+
+%%ANKI
+Basic
+How is the following expressed more simply (i.e. using more standard algebra)? $$x +_w^t y = U2T_w(T2U_w(x) +_w^u T2U_w(y))$$
+Back: $x +_w^t y = U2T_w((x + y) \bmod 2^w)$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205967-->
 END%%
 
 %%ANKI
@@ -1318,6 +1349,135 @@ What decimal value does two's-complement `~x` evaluate to?
 Back: `-x - 1`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1709044103781-->
+END%%
+
+%%ANKI
+Basic
+Ignoring overflow, what is the width of the largest possible value of $x +_w^t y$?
+Back: $w + 1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205970-->
+END%%
+
+%%ANKI
+Basic
+Ignoring overflow, what is the width of the smallest possible value of $x +_w^t y$?
+Back: $w + 1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205974-->
+END%%
+
+### Multiplication
+
+Unsigned multiplication, denoted with the $*_w^u$ operator, is defined as follows: $$x *_w^u y = (x \cdot y) \bmod 2^w$$
+
+%%ANKI
+Basic
+What does $*_w^u$ denote?
+Back: Unsigned multiplication of $w$-bit integral types.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205977-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $x *_w^u y$?
+Back: $(x \cdot y) \bmod 2^w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205981-->
+END%%
+
+%%ANKI
+Basic
+*Why* does $x *_w^u y = (x \cdot y) \bmod 2^w$ (at least in C)?
+Back: Because unsigned multiplication is *defined* to be the result truncated to $w$ bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709492205984-->
+END%%
+
+%%ANKI
+Basic
+How do $+_w^u$ and $*_w^u$ behave similarly?
+Back: Letting $\square$ denote either $+$ or $*$, both satisfy $x \;\square_w^u\; y = (x \;\square\; y) \bmod 2^w$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709492205988-->
+END%%
+
+%%ANKI
+Basic
+Ignoring overflow, what is the width of the largest possible value of $x *_w^u y$?
+Back: $2w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205991-->
+END%%
+
+%%ANKI
+Basic
+Ignoring overflow, what is the width of the smallest possible value of $x *_w^u y$?
+Back: $w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205995-->
+END%%
+
+Similarly, two's-complement multiplication is defined as follows: $$x *_w^t y = U2T_w((x \cdot y) \bmod 2^w)$$
+
+%%ANKI
+Basic
+What does $*_w^t$ denote?
+Back: Two's-complement multiplication of $w$-bit integral types.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205998-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $x *_w^t y$?
+Back: $U2T_w((x \cdot y) \bmod 2^w)$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492206002-->
+END%%
+
+%%ANKI
+Basic
+How do $+_w^t$ and $*_w^t$ behave similarly?
+Back: Letting $\square$ denote either $+$ or $*$, both satisfy $x \;\square_w^t\; y = U2T_w((x \;\square\; y) \bmod 2^w)$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709492206006-->
+END%%
+
+%%ANKI
+Basic
+How can we write $x *_w^t y$ in terms of unsigned multiplication?
+Back: $x *_w^t y = U2T_w(T2U_w(x) *_w^u T2U_w(y))$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492206012-->
+END%%
+
+%%ANKI
+Basic
+How is the following expressed more simply (i.e. using more standard algebra)? $$x *_w^t y = U2T_w(T2U_w(x) *_w^u T2U_w(y))$$
+Back: $x *_w^t y = U2T_w((x \cdot y) \bmod 2^w)$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492206017-->
+END%%
+
+%%ANKI
+Basic
+Ignoring overflow, what is the width of the largest possible value of $x *_w^t y$?
+Back: $2w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492206024-->
+END%%
+
+%%ANKI
+Basic
+Ignoring overflow, what is the width of the smallest possible value of $x *_w^t y$?
+Back: $2w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492206031-->
 END%%
 
 ### Shifting

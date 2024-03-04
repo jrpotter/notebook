@@ -169,6 +169,51 @@ Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambri
 <!--ID: 1708974221871-->
 END%%
 
+When encountering equations with asymptotic notation on both sides of the equality, we interpret the equation using the following rule:
+
+> No matter how the anonymous functions are chosen on the left of the equal sign, there is a way to choose the anonymous functions on the right of the equal sign to make the equation valid.
+
+For example, $2n^2 + \Theta(n) = \Theta(n^2)$ states that for all $f(n) \in \Theta(n)$, there exists some $g(n) \in \Theta(n^2)$ such that $2n^2 + f(n) = g(n)$.
+
+%%ANKI
+Basic
+Asymptotic notation on the RHS of an equation is a stand in for what?
+Back: *Some* function in the set that satisfies the equation.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002305-->
+END%%
+
+%%ANKI
+Basic
+Asymptotic notation on the LHS of an equation is a stand in for what?
+Back: *Any* function in the set.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002309-->
+END%%
+
+%%ANKI
+Cloze
+In equations containing asymptotic notation, {1:LHS} is to {1:$\forall$} whereas {2:RHS} is to {2:$\exists$}.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002313-->
+END%%
+
+%%ANKI
+Basic
+How is $2n^2 + \Theta(n) = \Theta(n^2)$ written in propositional logic?
+Back: $\forall f(n) \in \Theta(n), \exists g(n) \in \Theta(n^2), 2n^2 + f(n) = g(n)$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002316-->
+END%%
+
+%%ANKI
+Basic
+*Why* is $\sum_{i=1}^n O(i) \neq O(1) + O(2) + \cdots + O(n)$?
+Back: The number of anonymous functions is equal to the number of times the asymptotic notation appears.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002319-->
+END%%
+
 ## $\Theta$-notation
 
 ![[theta-notation.png]]
@@ -437,7 +482,7 @@ END%%
 
 %%ANKI
 Basic
-Which notation corresponds to asymptotic upper bounds?
+Which notation corresponds to (potentially tight) asymptotic upper bounds?
 Back: $O$-notation.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1709053894088-->
@@ -507,6 +552,112 @@ Why does Cormen et al. say "insertion sort's running time is $O(n^2)$" is an abu
 Back: Because technically its running time depends on the particular input of size $n$.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1709053894105-->
+END%%
+
+## $o$-notation
+
+$o$-notation refers to an upper bound that is not asymptotically tight. It is defined as set $$o(g(n)) = \{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq f(n) < cg(n) \}$$
+
+%%ANKI
+Basic
+What kind of mathematical object is $o(g(n))$?
+Back: A set.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002323-->
+END%%
+
+%%ANKI
+Basic
+Using typical identifiers found in $o(g(n))$, what values do $c$ and $n_0$ take on?
+Back: Positive constants.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002325-->
+END%%
+
+%%ANKI
+Basic
+What names are usually given to the existentially quantified identifers in $o(g(n))$'s definition?
+Back: $n_0$.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002328-->
+END%%
+
+%%ANKI
+Basic
+What names are usually given to the universally quantified identifers in $o(g(n))$'s definition?
+Back: $c$ and $n$.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002331-->
+END%%
+
+%%ANKI
+Cloze
+Using typical identifiers, $f(n) = o(g(n))$ satisfies {$0$} $\leq$ {$f(n)$} $<$ {$cg(n)$}.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002334-->
+END%%
+
+%%ANKI
+Basic
+How does $o$-notation compare to $O$-notation?
+Back: The former denotes an upper bound that is not asymptotically tight.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002337-->
+END%%
+
+%%ANKI
+Basic
+How is $o(g(n))$ pronounced?
+Back: As "little-oh of $g$ of $n$".
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002340-->
+END%%
+
+%%ANKI
+Basic
+How can $f(n) = o(g(n))$ be expressed as a limit?
+Back: $$\lim_{n \to \infty} \frac{f(n)}{g(n)} = 0$$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002344-->
+END%%
+
+%%ANKI
+Basic
+Which notation corresponds to asymptotic upper bounds that are not tight?
+Back: $o$-notation.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002347-->
+END%%
+
+%%ANKI
+Basic
+Every member of $o(g(n))$ is expected to be asymptotically what?
+Back: Nonnegative.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002350-->
+END%%
+
+%%ANKI
+Basic
+How is $o(g(n))$ defined?
+Back: $\{ \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq f(n) < cg(n) \}$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002353-->
+END%%
+
+%%ANKI
+Cloze
+In $O(g(n))$, bound {1:$0 \leq f(n) \leq cg(n)$} holds for {1:some $c > 0$}. In $o(g(n))$, {2:$0 \leq f(n) < cg(n)$} holds for {2:all $c > 0$}.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002359-->
+END%%
+
+%%ANKI
+Basic
+Is $O$-notation considered stronger or weaker than $o$-notation?
+Back: Weaker.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002364-->
 END%%
 
 ## $\Omega$-notation
@@ -595,7 +746,7 @@ END%%
 
 %%ANKI
 Basic
-Which notation corresponds to asymptotic lower bounds?
+Which notation corresponds to (potentially tight) asymptotic lower bounds?
 Back: $\Omega$-notation.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1709055157393-->
@@ -663,6 +814,112 @@ What theorem relates $\Theta(g(n))$, $O(g(n))$, and $\Omega(g(n))$?
 Back: $f(n) = \Theta(g(n))$ if and only if $f(n) \in O(g(n))$ and $f(n) \in \Omega(g(n))$.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1709055157406-->
+END%%
+
+## $\omega$-notation
+
+$\omega$-notation refers to a lower bound that is not asymptotically tight. It is defined as set $$\omega(g(n)) = \{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq cg(n) < f(n) \}$$
+
+%%ANKI
+Basic
+What kind of mathematical object is $\omega(g(n))$?
+Back: A set.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002369-->
+END%%
+
+%%ANKI
+Basic
+Using typical identifiers found in $\omega(g(n))$, what values do $c$ and $n_0$ take on?
+Back: Positive constants.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002374-->
+END%%
+
+%%ANKI
+Basic
+What names are usually given to the existentially quantified identifers in $\omega(g(n))$'s definition?
+Back: $n_0$.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002380-->
+END%%
+
+%%ANKI
+Basic
+What names are usually given to the universally quantified identifers in $\omega(g(n))$'s definition?
+Back: $c$ and $n$.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002385-->
+END%%
+
+%%ANKI
+Cloze
+Using typical identifiers, $f(n) = \omega(g(n))$ satisfies {$0$} $\leq$ {$cg(n)$} $<$ {$f(n)$}.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002390-->
+END%%
+
+%%ANKI
+Basic
+How does $\omega$-notation compare to $\Omega$-notation?
+Back: The former denotes a lower bound that is not asymptotically tight.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002395-->
+END%%
+
+%%ANKI
+Basic
+How is $\omega(g(n))$ pronounced?
+Back: As "little-omega of $g$ of $n$".
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002398-->
+END%%
+
+%%ANKI
+Basic
+How can $f(n) = \omega(g(n))$ be expressed as a limit?
+Back: $$\lim_{n \to \infty} \frac{f(n)}{g(n)} = \infty$$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002402-->
+END%%
+
+%%ANKI
+Basic
+Which notation corresponds to asymptotic lower bounds that are not tight?
+Back: $\omega$-notation.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002406-->
+END%%
+
+%%ANKI
+Basic
+Every member of $\omega(g(n))$ is expected to be asymptotically what?
+Back: Nonnegative.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002410-->
+END%%
+
+%%ANKI
+Basic
+How is $\omega(g(n))$ defined?
+Back: $\{ \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq cg(n) < f(n) \}$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002414-->
+END%%
+
+%%ANKI
+Cloze
+In $\Omega(g(n))$, bound {1:$0 \leq cg(n) \leq f(n)$} holds for {1:some $c > 0$}. In $\omega(g(n))$, {2:$0 \leq cg(n) < f(n)$} holds for {2:all $c > 0$}.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002420-->
+END%%
+
+%%ANKI
+Basic
+Is $\omega$-notation considered stronger or weaker than $\Omega$-notation?
+Back: Stronger.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709519002425-->
 END%%
 
 ## References
