@@ -895,32 +895,24 @@ In two's-complement encoding, truncating $x$ to $k$ bits is equal to $U2T_k(T2U_
 %%ANKI
 Basic
 What is the $k$-truncation of $w$-bit two's-complement $x$?
-Back: $U2T_k(T2U_w(x) \bmod 2^k)$
+Back: $U2T_k(x \bmod 2^k)$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708701087974-->
 END%%
 
 %%ANKI
 Cloze
-Two's-complement $k$-truncation of $w$-bit $x$ is {$U2T_k$}$(${$T2U_w(x) \bmod 2^k$}$)$.
+Two's-complement $k$-truncation of $w$-bit $x$ is {$U2T_k$}$(${$x \bmod 2^k$}$)$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708701087985-->
 END%%
 
 %%ANKI
 Basic
-What is the purpose of $U2T_k$ in two's-complement truncation expression $U2T_k(T2U_w(x) \bmod 2^k)$?
+What is the purpose of $U2T_k$ in two's-complement truncation expression $U2T_k(x \bmod 2^k)$?
 Back: To reinterpret the sign bit correctly.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708702794304-->
-END%%
-
-%%ANKI
-Basic
-What is the purpose of $T2U_w$ in two's-complement truncation expression $U2T_k(T2U_w(x) \bmod 2^k)$?
-Back: To ensure $x$ is encoded with the right "type".
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708702794309-->
 END%%
 
 %%ANKI
@@ -1367,119 +1359,6 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1709492205974-->
 END%%
 
-### Multiplication
-
-Unsigned multiplication, denoted with the $*_w^u$ operator, is defined as follows: $$x *_w^u y = (x \cdot y) \bmod 2^w$$
-
-%%ANKI
-Basic
-What does $*_w^u$ denote?
-Back: Unsigned multiplication of $w$-bit integral types.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1709492205977-->
-END%%
-
-%%ANKI
-Basic
-What is the result of $x *_w^u y$?
-Back: $(x \cdot y) \bmod 2^w$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1709492205981-->
-END%%
-
-%%ANKI
-Basic
-*Why* does $x *_w^u y = (x \cdot y) \bmod 2^w$ (at least in C)?
-Back: Because unsigned multiplication is *defined* to be the result truncated to $w$ bits.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
-<!--ID: 1709492205984-->
-END%%
-
-%%ANKI
-Basic
-How do $+_w^u$ and $*_w^u$ behave similarly?
-Back: Letting $\square$ denote either $+$ or $*$, both satisfy $x \;\square_w^u\; y = (x \;\square\; y) \bmod 2^w$.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
-<!--ID: 1709492205988-->
-END%%
-
-%%ANKI
-Basic
-Ignoring overflow, what is the width of the largest possible value of $x *_w^u y$?
-Back: $2w$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1709492205991-->
-END%%
-
-%%ANKI
-Basic
-Ignoring overflow, what is the width of the smallest possible value of $x *_w^u y$?
-Back: $w$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1709492205995-->
-END%%
-
-Similarly, two's-complement multiplication is defined as follows: $$x *_w^t y = U2T_w((x \cdot y) \bmod 2^w)$$
-
-%%ANKI
-Basic
-What does $*_w^t$ denote?
-Back: Two's-complement multiplication of $w$-bit integral types.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1709492205998-->
-END%%
-
-%%ANKI
-Basic
-What is the result of $x *_w^t y$?
-Back: $U2T_w((x \cdot y) \bmod 2^w)$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1709492206002-->
-END%%
-
-%%ANKI
-Basic
-How do $+_w^t$ and $*_w^t$ behave similarly?
-Back: Letting $\square$ denote either $+$ or $*$, both satisfy $x \;\square_w^t\; y = U2T_w((x \;\square\; y) \bmod 2^w)$.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
-<!--ID: 1709492206006-->
-END%%
-
-%%ANKI
-Basic
-How can we write $x *_w^t y$ in terms of unsigned multiplication?
-Back: $x *_w^t y = U2T_w(T2U_w(x) *_w^u T2U_w(y))$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1709492206012-->
-END%%
-
-%%ANKI
-Basic
-How is the following expressed more simply (i.e. using more standard algebra)? $$x *_w^t y = U2T_w(T2U_w(x) *_w^u T2U_w(y))$$
-Back: $x *_w^t y = U2T_w((x \cdot y) \bmod 2^w)$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1709492206017-->
-END%%
-
-%%ANKI
-Basic
-Ignoring overflow, what is the width of the largest possible value of $x *_w^t y$?
-Back: $2w$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1709492206024-->
-END%%
-
-%%ANKI
-Basic
-Ignoring overflow, what is the width of the smallest possible value of $x *_w^t y$?
-Back: $2w$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1709492206031-->
-END%%
-
 ### Shifting
 
 Left shift operations (`<<`) drop the `k` most significant bits and fills the right end of the result with `k` zeros. Right shift operations (`>>`) are classified in two ways:
@@ -1581,7 +1460,7 @@ Tags: c17
 <!--ID: 1707854589813-->
 END%%
 
-In C, it is undefined behavior to shift by more than the width $w$ of an integral type.
+In C, it is undefined behavior to shift by more than the width $w$ of an integral type or by a negative value.
 
 %%ANKI
 Basic
@@ -1663,6 +1542,301 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 Tags: c17
 <!--ID: 1707873410780-->
 END%%
+
+### Multiplication
+
+Unsigned multiplication, denoted with the $*_w^u$ operator, is defined as follows: $$x *_w^u y = (x \cdot y) \bmod 2^w$$
+%%ANKI
+Basic
+Given decimal integers $m$ and $n$, how many digits exist in $m \cdot n$?
+Back: At most the number of digits in $m$ plus the number of digits in $n$.
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1709563221438-->
+END%%
+
+%%ANKI
+Basic
+Given binary integers $m$ and $n$ of width $w$, how many bits exist in $m \cdot n$?
+Back: At most $2w$.
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1709563221442-->
+END%%
+
+%%ANKI
+Basic
+What does $*_w^u$ denote?
+Back: Unsigned multiplication of $w$-bit integral types.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205977-->
+END%%
+
+%%ANKI
+Basic
+How do you multiply $10_2 \cdot 10_2$ to a $4$-bit unsigned result by hand?
+Back:
+```
+   10
+x  10
+-----
+   00
++ 10
+-----
+ 0100
+```
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1709563221444-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $x *_w^u y$?
+Back: $(x \cdot y) \bmod 2^w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205981-->
+END%%
+
+%%ANKI
+Basic
+*Why* does $x *_w^u y = (x \cdot y) \bmod 2^w$ (at least in C)?
+Back: Because unsigned multiplication is *defined* to be the result truncated to $w$ bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709492205984-->
+END%%
+
+%%ANKI
+Basic
+How do $+_w^u$ and $*_w^u$ behave similarly?
+Back: Letting $\square$ denote either $+$ or $*$, both satisfy $x \;\square_w^u\; y = (x \;\square\; y) \bmod 2^w$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709492205988-->
+END%%
+
+%%ANKI
+Basic
+Ignoring overflow, what is the width of the largest possible value of $x *_w^u y$?
+Back: $2w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205991-->
+END%%
+
+%%ANKI
+Basic
+Ignoring overflow, what is the width of the smallest possible value of $x *_w^u y$?
+Back: $w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205995-->
+END%%
+
+%%ANKI
+Basic
+Given unsigned `x`, what arithmetic operation is equivalent to `x << k`?
+Back: $x *_w^u 2^k$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709570428810-->
+END%%
+
+%%ANKI
+Basic
+What bitwise operation is equivalent to $x *_w^u 2^k$?
+Back: `x << k`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709570428815-->
+END%%
+
+%%ANKI
+Basic
+How is `unsigned x` equivalently modified without using multiplication?
+```c
+x = x * pow(2, k);
+```
+Back:
+```c
+x = (x << k);
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709570428818-->
+END%%
+
+Similarly, two's-complement multiplication is defined as follows: $$x *_w^t y = U2T_w((x \cdot y) \bmod 2^w)$$
+
+%%ANKI
+Basic
+What does $*_w^t$ denote?
+Back: Two's-complement multiplication of $w$-bit integral types.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492205998-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $x *_w^t y$?
+Back: $U2T_w((x \cdot y) \bmod 2^w)$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492206002-->
+END%%
+
+%%ANKI
+Basic
+How do you multiply $10_2 \cdot 01_2$ to a $4$-bit two's-complement result by hand?
+Back:
+```
+   1110
+x  0001
+-------
+   1110
++ 0000
+-------
+   1110
+```
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1709563221447-->
+END%%
+
+%%ANKI
+Basic
+What pre-processing step is done when multiplying to a $w$-bit two's-complement result by hand?
+Back: Sign extend the factors to width $w$.
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1709563221449-->
+END%%
+
+%%ANKI
+Basic
+When performing two's-complement multiplication by hand, why prefer multiplying by a positive value?
+Back: Sign extension of a positive value yields `0`s.
+Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
+<!--ID: 1709563221452-->
+END%%
+
+%%ANKI
+Basic
+How do $+_w^t$ and $*_w^t$ behave similarly?
+Back: Letting $\square$ denote either $+$ or $*$, both satisfy $x \;\square_w^t\; y = U2T_w((x \;\square\; y) \bmod 2^w)$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709492206006-->
+END%%
+
+%%ANKI
+Basic
+How can we write $x *_w^t y$ in terms of unsigned multiplication?
+Back: $x *_w^t y = U2T_w(T2U_w(x) *_w^u T2U_w(y))$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492206012-->
+END%%
+
+%%ANKI
+Basic
+How is the following expressed more simply (i.e. using more standard algebra)? $$x *_w^t y = U2T_w(T2U_w(x) *_w^u T2U_w(y))$$
+Back: $x *_w^t y = U2T_w((x \cdot y) \bmod 2^w)$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492206017-->
+END%%
+
+%%ANKI
+Basic
+Ignoring overflow, what is the width of the largest possible value of $x *_w^t y$?
+Back: $2w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492206024-->
+END%%
+
+%%ANKI
+Basic
+Ignoring overflow, what is the width of the smallest possible value of $x *_w^t y$?
+Back: $2w$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709492206031-->
+END%%
+
+%%ANKI
+Basic
+Given two's-complement `x`, what arithmetic operation is equivalent to `x << k`?
+Back: $x *_w^t 2^k$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709570428822-->
+END%%
+
+%%ANKI
+Basic
+What bitwise operation is equivalent to $x *_w^t 2^k$?
+Back: `x << k`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709570428825-->
+END%%
+
+%%ANKI
+Basic
+Assuming two's-complement encoding, how is `int x` equivalently modified without using multiplication?
+```c
+x = x * pow(2, k);
+```
+Back:
+```c
+x = (x << k);
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709570428828-->
+END%%
+
+%%ANKI
+Basic
+How can we rewrite $x \cdot 1101_2$ as an expression of *only* `<<` and `+`?
+Back: `(x << 3) + (x << 2) + (x << 0)`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709570428832-->
+END%%
+
+%%ANKI
+Basic
+*Why* is $x \cdot 13$ equal to `(x << 3) + (x << 2) + (x << 0)`?
+Back: Because the binary representation of $13$ is $1101_2$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709570428836-->
+END%%
+
+%%ANKI
+Basic
+How can we rewrite $x \cdot 1100_2$ as an expression of *only* `<<` and `-`?
+Back: `(x << 4) - (x << 2)`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709570428839-->
+END%%
+
+%%ANKI
+Basic
+Convert $x \cdot 11011100_2$ to an expression containing `-`. How many `-` operators are there?
+Back: $2$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709570428844-->
+END%%
+
+%%ANKI
+Basic
+Convert $x \cdot K$ to an expression excluding `-`. The number of `+` operators correspond to what?
+Back: One less than the number of `1`s in $K$'s binary representation.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709570428848-->
+END%%
+
+%%ANKI
+Basic
+Convert $x \cdot K$ to an expression containing `-`. The number of `-` operators correspond to what?
+Back: The number of runs of `1`s in $K$'s binary representation.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709570428851-->
+END%%
+
+### Division
+
+
 
 ## References
 
