@@ -180,7 +180,7 @@ END%%
 
 %%ANKI
 Basic
-How do you expand sum $\sum_{k=1}^n k$ to derive closed formula $\frac{n(n + 1)}{2}$?
+How do you expand $\sum_{k=1}^n k$ to derive closed formula $\frac{n(n + 1)}{2}$?
 Back:
 $$\begin{matrix}
 1 & + & 2 & + & \cdots & + & n \\
