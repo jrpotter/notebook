@@ -460,7 +460,7 @@ END%%
 
 %%ANKI
 Basic
-Using typical identifiers, what is the upper bound of $f(n)$ in $O(g(n))$?
+Using typical identifiers, what is the lower bound of $f(n)$ in $O(g(n))$?
 Back: $0$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1709053894080-->

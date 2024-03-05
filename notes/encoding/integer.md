@@ -1473,7 +1473,7 @@ END%%
 
 %%ANKI
 Basic
-Assuming two's-complement, what is the result of shifting an `int32_t` value by `31`?
+Assuming two's-complement, what is the result of shifting `int32_t x = 1` left by `31`?
 Back: $-2^{31}$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
