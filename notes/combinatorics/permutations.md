@@ -12,38 +12,38 @@ tags:
 A **permutation** of some $n$ objects is a (possible) rearrangement of those $n$ objects. The number of permutations is $n!$ since there are $n$ possible ways to pick the first object, $(n - 1)$ possible ways to pick the second, and so on.
 
 ```c
-void permutations_aux(
-  const size_t n,
-  int A[static n],
-  int res[static n],
-  uint64_t choices
-) {
-  if (!choices) {
-    for (size_t i = 0; i < n; ++i) {
-      printf("%d ", A[res[i]]);
+void next(const size_t n, int A[static n]) {
+  size_t pivot = -1;
+  for (size_t i = n - 1; i >= 1; --i) {
+    if (A[i - 1] < A[i]) {
+      pivot = i - 1;
+      break;
     }
-    printf("\n");
+  }
+  if (pivot == -1) {
+    reverse(0, n - 1, A);
     return;
   }
-
-  unsigned int weight = n - bit_weight(choices);
-  for (unsigned int i = 0; i < 64; ++i) {
-    uint64_t next = 1L << i;
-    if (choices & next) {
-      res[weight] = i;
-      permutations_aux(n, A, res, choices & ~next);
+  size_t j = pivot;
+  for (size_t i = pivot + 1; i < n; ++i) {
+    if (A[pivot] < A[i] && (j == pivot || A[i] < A[j])) {
+      j = i;
     }
   }
+  swap(pivot, j, A);
+  reverse(pivot + 1, n - 1, A);
 }
 
 void permutations(const size_t n, int A[static n]) {
-  int *res = malloc(sizeof(int) * n);
-  permutations_aux(n, A, res, (1L << n) - 1);
-  free(res);
+  size_t iters = factorial(n);
+  for (size_t i = 0; i < iters; ++i) {
+    print_array(n, A);
+    next(n, A);
+  }
 }
 ```
 
-The above approach prints out all permutations of a given array, provided the array contains at most `64` digits. It relies on `bit_weight` as defined in [[binary/index|binary]].
+The above approach prints out all permutations of an array.
 
 %%ANKI
 Basic

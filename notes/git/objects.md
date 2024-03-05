@@ -46,6 +46,14 @@ END%%
 
 %%ANKI
 Basic
+How is the SHA-1 of a git object generated?
+Back: By calculating the checksum of the object header + contents.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1709674569885-->
+END%%
+
+%%ANKI
+Basic
 What is "oid" an acronym for?
 Back: **O**bject **id**.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
@@ -117,7 +125,7 @@ END%%
 
 %%ANKI
 Basic
-Where does e.g. `d670460b4b4aece5915caf5c68d12f560a9fe3e4` live in the object database?
+Where does `d670460b4b4aece5915caf5c68d12f560a9fe3e4` live in the object database?
 Back: At `.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4`.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
 <!--ID: 1709177255668-->
@@ -180,6 +188,14 @@ $ git cat-file -p <OID>
 Back: Manual decompression includes the object header.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
 <!--ID: 1709345254716-->
+END%%
+
+%%ANKI
+Basic
+What plumbing command can be used to find the git object type of an oid?
+Back: `cat-file`
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1709674569890-->
 END%%
 
 ## Blobs
@@ -316,6 +332,14 @@ Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Soft
 END%%
 
 %%ANKI
+Basic
+What kind of git objects can a tree contain?
+Back: Blobs and trees.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1709674569895-->
+END%%
+
+%%ANKI
 Cloze
 {`hash-object`} is to blobs as {`write-tree`} is to trees.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
@@ -422,6 +446,75 @@ The `read-tree` and `write-tree` interact indirectly through what?
 Back: The staging area.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
 <!--ID: 1709349279660-->
+END%%
+
+## Commits
+
+Commit objects provide metadata information about particular trees.
+
+> While a tree represents a particular directory state of a working directory, a commit represents that state in "time", and explains how to get there.
+
+%%ANKI
+Basic
+What distinguishes a tree from a commit?
+Back: A commit contains data about a tree (e.g. author, parent commits, etc.).
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1709674569898-->
+END%%
+
+%%ANKI
+Basic
+How do git commits maintain a traversable history?
+Back: Each commit can have parent commits associated with it.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1709674569902-->
+END%%
+
+%%ANKI
+Basic
+What kind of git object is responsible for maintaining history?
+Back: Commits.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1709674569906-->
+END%%
+
+%%ANKI
+Basic
+What plumbing subcommand is used to create commits?
+Back: `commit-tree`
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1709674569911-->
+END%%
+
+%%ANKI
+Cloze
+{`write-tree`} is to trees as {`commit-tree`} is to commits.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1709674569916-->
+END%%
+
+%%ANKI
+Basic
+What does the decompressed header of a commit object look like?
+Back: `commit <size><NUL>`
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1709674569920-->
+END%%
+
+%%ANKI
+Basic
+Commits points to what kind of git object?
+Back: Trees.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1709674569924-->
+END%%
+
+%%ANKI
+Basic
+What does the `commit-tree` subcommand return?
+Back: The oid of the new commit object.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1709674569928-->
 END%%
 
 ## References

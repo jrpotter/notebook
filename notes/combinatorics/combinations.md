@@ -39,7 +39,7 @@ void combinations(const int n, const int k, int A[static n]) {
 }
 ```
 
-The above approach prints out all $k$-combinations of a given array.
+The above approach prints out all $k$-combinations of an array.
 
 %%ANKI
 Basic
