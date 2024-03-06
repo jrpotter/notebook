@@ -549,7 +549,7 @@ END%%
 %%ANKI
 Basic
 Let $x$ be a $w$-bit two's-complement number. What is it's complement?
-Back: The number $y$ such that $x + y = 2^w$.
+Back: $2^w - x$
 Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
 <!--ID: 1709060837141-->
 END%%
@@ -634,10 +634,11 @@ Reference: Finley, Thomas. “Two’s Complement,” April 2000. [https://www.cs
 END%%
 
 %%ANKI
-Cloze
-Subtracting $x$ from {a number of all `1` bits} is equivalent to {`~x`}.
+Basic
+Subtracting `x` from all `1` bits is equivalent to what bitwise operation?.
+Back: `~x`
 Reference: Finley, Thomas. “Two’s Complement,” April 2000. [https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html](https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html).
-<!--ID: 1709061032778-->
+<!--ID: 1709750498315-->
 END%%
 
 ## Casting
@@ -964,7 +965,7 @@ END%%
 %%ANKI
 Basic
 What hardware-level advantage does two's-complement introduce over other signed encodings?
-Back: The same circuits can be used for unsigned and two's-complement addition.
+Back: The same circuits can be used for unsigned and two's-complement arithmetic.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708799678732-->
 END%%

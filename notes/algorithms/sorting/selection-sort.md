@@ -23,7 +23,7 @@ Adaptive    | No
 
 %%ANKI
 Basic
-Describe selection sort in a single sentence.
+Describe `SELECTION_SORT` in a single sentence.
 Back: Repeatedly put the smallest unsorted record at the end of a sorted array.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707589393190-->
@@ -31,7 +31,7 @@ END%%
 
 %%ANKI
 Basic
-What is selection sort's best case runtime?
+What is `SELECTION_SORT`'s best case runtime?
 Back: $\Omega(n^2)$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707398773323-->
@@ -39,7 +39,7 @@ END%%
 
 %%ANKI
 Basic
-What is selection sort's worst case runtime?
+What is `SELECTION_SORT`'s worst case runtime?
 Back: $O(n^2)$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707398773326-->
@@ -47,7 +47,7 @@ END%%
 
 %%ANKI
 Basic
-What is selection sort's average case runtime?
+What is `SELECTION_SORT`'s average case runtime?
 Back: $O(n^2)$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707398773327-->
@@ -55,7 +55,7 @@ END%%
 
 %%ANKI
 Basic
-Is selection sort in place?
+Is `SELECTION_SORT` in place?
 Back: Yes
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707398773328-->
@@ -63,7 +63,7 @@ END%%
 
 %%ANKI
 Basic
-Is selection sort stable?
+Is `SELECTION_SORT` stable?
 Back: No
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707398773330-->
@@ -71,7 +71,7 @@ END%%
 
 %%ANKI
 Basic
-Is selection sort adaptive?
+Is `SELECTION_SORT` adaptive?
 Back: No
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707504634778-->
@@ -101,7 +101,7 @@ void selection_sort(const int n, int A[static n]) {
 Basic
 What sorting algorithm does the following demonstrate?
 ![[selection-sort.gif]]
-Back: Selection sort.
+Back: `SELECTION_SORT`
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707400943836-->
 END%%
@@ -123,7 +123,7 @@ We prove $P$ maintains the requisite properties:
 
 %%ANKI
 Basic
-Given array `A[0..n-1]`, what is selection sort's loop invariant?
+Given array `A[0..n-1]`, what is `SELECTION_SORT`'s loop invariant?
 Back: `A[0..i-1]` is a sorted array of the `i` least elements of `A`.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707398773331-->
@@ -131,7 +131,7 @@ END%%
 
 %%ANKI
 Basic
-What is initialization of selection sort's loop invariant?
+What is initialization of `SELECTION_SORT`'s loop invariant?
 Back: Sorting starts with an empty array which is trivially sorted.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707398773333-->
@@ -139,7 +139,7 @@ END%%
 
 %%ANKI
 Basic
-What is maintenance of selection sort's loop invariant?
+What is maintenance of `SELECTION_SORT`'s loop invariant?
 Back: Each iteration puts the next least element into the sorted subarray.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707398773334-->
@@ -147,7 +147,7 @@ END%%
 
 %%ANKI
 Basic
-How does selection sort partition its input array?
+How does `SELECTION_SORT` partition its input array?
 Back:
 ```
 [ sorted | unsorted ]
@@ -158,7 +158,7 @@ END%%
 
 %%ANKI
 Basic
-Which element will selection sort move to `sorted`?
+Which element will `SELECTION_SORT` move to `sorted`?
 ```
 [ sorted | unsorted ]
 ```
@@ -169,7 +169,7 @@ END%%
 
 %%ANKI
 Cloze
-Selection sort makes fewer {swaps} than insertion sort in the average case.
+`SELECTION_SORT` makes fewer {swaps} than `INSERTION_SORT` in the average case.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708002177782-->
 END%%

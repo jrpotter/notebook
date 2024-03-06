@@ -239,7 +239,7 @@ END%%
 %%ANKI
 Basic
 What distinguishes `abort()` from `exit()`?
-Back: The former sends a `SIGABRT` signal. The latter closes the application normally.
+Back: The latter gracefully closes the application.
 Reference: N/A
 Tags: c17
 <!--ID: 1709131892349-->

@@ -22,7 +22,7 @@ Adaptive    | Yes
 
 %%ANKI
 Basic
-Describe insertion sort in a single sentence.
+Describe `INSERTION_SORT` in a single sentence.
 Back: Repeatedly put the next record into a sorted array from right to left.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707589393194-->
@@ -30,7 +30,7 @@ END%%
 
 %%ANKI
 Basic
-What is insertion sort's best case runtime?
+What is `INSERTION_SORT`'s best case runtime?
 Back: $\Omega(n)$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706925879541-->
@@ -38,7 +38,7 @@ END%%
 
 %%ANKI
 Basic
-What input value does insertion sort perform best on?
+What input value does `INSERTION_SORT` perform best on?
 Back: An already sorted array.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706925921544-->
@@ -46,7 +46,7 @@ END%%
 
 %%ANKI
 Basic
-What is insertion sort's worst case runtime?
+What is `INSERTION_SORT`'s worst case runtime?
 Back: $O(n^2)$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706926586947-->
@@ -54,7 +54,7 @@ END%%
 
 %%ANKI
 Basic
-What input value does insertion sort perform worst on?
+What input value does `INSERTION_SORT` perform worst on?
 Back: An array in reverse-sorted order.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706926586951-->
@@ -62,7 +62,7 @@ END%%
 
 %%ANKI
 Basic
-What is insertion sort's average case runtime?
+What is `INSERTION_SORT`'s average case runtime?
 Back: $O(n^2)$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707329732933-->
@@ -70,7 +70,7 @@ END%%
 
 %%ANKI
 Basic
-Is insertion sort in place?
+Is `INSERTION_SORT` in place?
 Back: Yes
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706926586955-->
@@ -78,7 +78,7 @@ END%%
 
 %%ANKI
 Basic
-Is insertion sort stable?
+Is `INSERTION_SORT` stable?
 Back: Yes
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706926586959-->
@@ -86,7 +86,7 @@ END%%
 
 %%ANKI
 Basic
-Is insertion sort adaptive?
+Is `INSERTION_SORT` adaptive?
 Back: Yes
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707504634779-->
@@ -109,7 +109,7 @@ void insertion_sort(const int n, int A[static n]) {
 Basic
 What sorting algorithm does the following demonstrate?
 ![[insertion-sort.gif]]
-Back: Insertion sort.
+Back: `INSERTION_SORT`
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707400559085-->
 END%%
@@ -131,14 +131,14 @@ We prove $P$ maintains the requisite properties:
 
 %%ANKI
 Basic
-Given array `A[0..n-1]`, what is insertion sort's loop invariant?
+Given array `A[0..n-1]`, what is `INSERTION_SORT`'s loop invariant?
 Back: `A[0..i-1]` consists of the original `A[0..i-1]` elements but in sorted order.
 <!--ID: 1707332638371-->
 END%%
 
 %%ANKI
 Basic
-What is initialization of insertion sort's loop invariant?
+What is initialization of `INSERTION_SORT`'s loop invariant?
 Back: Sorting starts with an singleton array which is trivially sorted.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707332638373-->
@@ -146,7 +146,7 @@ END%%
 
 %%ANKI
 Basic
-What is maintenance of insertion sort's loop invariant?
+What is maintenance of `INSERTION_SORT`'s loop invariant?
 Back: Each iteration puts the current element into sorted order.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1707332638375-->
@@ -154,7 +154,7 @@ END%%
 
 %%ANKI
 Cloze
-insertion sort makes fewer {comparisons} than selection sort in the average case.
+`INSERTION_SORT` makes fewer {comparisons} than `SELECTION_SORT` in the average case.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708002185982-->
 END%%
@@ -167,7 +167,7 @@ If you repeat this process for every card in the deck, your left hand will event
 
 %%ANKI
 Basic
-What analogy does Cormen et al. use to explain insertion sort?
+What analogy does Cormen et al. use to explain `INSERTION_SORT`?
 Back: Sorting a shuffled deck of playing cards.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706927594729-->
@@ -175,7 +175,7 @@ END%%
 
 %%ANKI
 Basic
-What invariant does the left hand maintain in Cormen et al.'s insertion sort analogy?
+What invariant does the left hand maintain in Cormen et al.'s `INSERTION_SORT` analogy?
 Back: It contains all drawn cards in sorted order.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1706927594732-->
@@ -183,7 +183,7 @@ END%%
 
 %%ANKI
 Basic
-How does insertion sort partition its input array?
+How does `INSERTION_SORT` partition its input array?
 Back:
 ```
 [ sorted | unsorted ]
@@ -194,7 +194,7 @@ END%%
 
 %%ANKI
 Basic
-How many comparisons does insertion sort typically perform with `x`?
+How many comparisons does `INSERTION_SORT` typically perform with `x`?
 ```
 [ sorted | x : unsorted ]
 ```
@@ -205,7 +205,7 @@ END%%
 
 %%ANKI
 Basic
-Which element will insertion sort move to `sorted`?
+Which element will `INSERTION_SORT` move to `sorted`?
 ```
 [ sorted | unsorted ]
 ```

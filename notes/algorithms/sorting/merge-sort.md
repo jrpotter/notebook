@@ -22,7 +22,7 @@ Adaptive    | -
 
 %%ANKI
 Basic
-What does the term "merge" in merge sort refer to?
+What does the term "merge" in `MERGE_SORT` refer to?
 Back: The primary operation used to combine array halves.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742467101-->
@@ -30,7 +30,7 @@ END%%
 
 %%ANKI
 Basic
-What is merge sort's best case runtime?
+What is `MERGE_SORT`'s best case runtime?
 Back: $\Omega(n\lg{n})$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742467109-->
@@ -38,7 +38,7 @@ END%%
 
 %%ANKI
 Basic
-What is merge sort's worst case runtime?
+What is `MERGE_SORT`'s worst case runtime?
 Back: $O(n\lg{n})$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742467112-->
@@ -46,7 +46,7 @@ END%%
 
 %%ANKI
 Basic
-What is merge sort's average case runtime?
+What is `MERGE_SORT`'s average case runtime?
 Back: $O(n\lg{n})$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742467115-->
@@ -54,7 +54,7 @@ END%%
 
 %%ANKI
 Basic
-What is the "divide" step of merge sort?
+What is the "divide" step of `MERGE_SORT`?
 Back: Divide the input array into two subarrays of half size.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742467118-->
@@ -62,15 +62,15 @@ END%%
 
 %%ANKI
 Basic
-What is the "conquer" step of merge sort?
-Back: Call merge sort on the "divide"-step's two subarrays.
+What is the "conquer" step of `MERGE_SORT`?
+Back: Call `MERGE_SORT` on the "divide"-step's two subarrays.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742467121-->
 END%%
 
 %%ANKI
 Basic
-What is the "combine" step of merge sort?
+What is the "combine" step of `MERGE_SORT`?
 Back: Merge the sorted subarrays produced by the "conquer" step.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742467125-->
@@ -78,7 +78,7 @@ END%%
 
 %%ANKI
 Basic
-When does merge sort "bottom out"?
+When does `MERGE_SORT` "bottom out"?
 Back: When the sequence to be sorted has length 1 or less.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742467133-->
@@ -128,7 +128,7 @@ void merge_sort(int i, int j, int *A) {
 
 %%ANKI
 Basic
-Where in merge sort's implementation are sentinels useful?
+Where in `MERGE_SORT`'s implementation are sentinels useful?
 Back: As the last elements of the two arrays to combine.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742467137-->
@@ -136,7 +136,7 @@ END%%
 
 %%ANKI
 Basic
-What sentinel values are typically used in merge sort's "merge" operation?
+What sentinel values are typically used in `MERGE_SORT`'s "merge" operation?
 Back: $\infty$ or the record type's equivalent.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742467141-->
@@ -146,7 +146,7 @@ END%%
 Basic
 What sorting algorithm does the following demonstrate?
 ![[merge-sort.gif]]
-Back: Merge sort.
+Back: `MERGE_SORT`
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742590435-->
 END%%

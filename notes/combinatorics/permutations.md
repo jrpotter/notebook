@@ -43,7 +43,7 @@ void permutations(const size_t n, int A[static n]) {
 }
 ```
 
-The above approach prints out all permutations of an array.
+The above approach prints out all permutations of an array (assuming distinct values).
 
 %%ANKI
 Basic
@@ -164,6 +164,250 @@ How many bijective functions exist between finite sets $A$ and $B$ where $|A| = 
 Back: $n!$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708366788613-->
+END%%
+
+### Lexicographic Ordering
+
+We can find the next lexicographic ordering of an array via a procedure of "pivot", "swap", and "reverse". The function `void next(const size_t n, int A[static n])` defined in [[#Overview]] shows the details, taking in a permutation and producing the next, lexicographically speaking. To prove correctness, consider the following:
+
+```
+[ a₁ a₂ ... aᵢ | aᵢ₊₁ aᵢ₊₂ ... aₙ ]
+```
+
+Here the RHS side is the longest increasing sequence we could find, from right to left. That is, $a_{i+1} > a_{i+2} > \cdots > a_n$. Denote $a_i$ as the pivot. Next, swap the smallest element in the RHS greater than $a_i$, say $a_j$, with $a_i$. This produces
+
+```
+[ a₁ a₂ ... aⱼ | aᵢ₊₁ aᵢ₊₂ ... aᵢ ... aₙ ]
+```
+
+Notice the RHS remains in sorted order. Since $a_j$ was the next smallest element, reversing the reverse-sorted RHS produces the next permutation, lexicographically speaking:
+
+```
+[ a₁ a₂ ... aⱼ | aₙ ... aᵢ ... aᵢ₊₂ aᵢ₊₁ ]
+```
+
+Eventually the swapped $a_j$ will be the largest in the RHS ensuring that the breakpoint will eventually move one more position leftward.
+
+%%ANKI
+Basic
+What algorithm does `NEXT_LEXICO_ARRAY` refer to?
+Back: The finding of the next lexicographic ordering of an array.
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610310-->
+END%%
+
+%%ANKI
+Basic
+What does array `A`'s next lexicographic ordering refer to?
+Back: The permutation that follows `A` in a sorted list of all distinct permutations of `A`.
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610316-->
+END%%
+
+%%ANKI
+Basic
+How does lexicographic ordering of arrays relate to permutations of an array?
+Back: Each lexicographic ordering corresponds to a permutation.
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610319-->
+END%%
+
+%%ANKI
+Basic
+`NEXT_LEXICO_ARRAY`: How many invocations guarantee all permutations of `A[1:n]`?
+Back: $n!$
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610322-->
+END%%
+
+%%ANKI
+Basic
+`NEXT_LEXICO_ARRAY`: When does `< n!` iterations yield all permutations of `A[1:n]`?
+Back: When `A` contains duplicates.
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610326-->
+END%%
+
+%%ANKI
+Basic
+What is `NEXT_LEXICO_ARRAY`'s worst-case running time?
+Back: $O(n)$
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610329-->
+END%%
+
+%%ANKI
+Basic
+What is `NEXT_LEXICO_ARRAY`'s best-case running time?
+Back: $\Omega(n)$
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610332-->
+END%%
+
+%%ANKI
+Basic
+What is `NEXT_LEXICO_ARRAY`'s auxiliary memory usage?
+Back: $O(1)$
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610335-->
+END%%
+
+%%ANKI
+Basic
+What is the next lexicographic ordering of `[ 1 3 2 4 ]`?
+Back: `[ 1 3 4 2 ]`
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610344-->
+END%%
+
+%%ANKI
+Basic
+What is the next lexicographic ordering of `[ 2 1 4 3 ]`?
+Back: `[ 2 3 1 4 ]`
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610349-->
+END%%
+
+%%ANKI
+Basic
+What is the next lexicographic ordering of `[ 4 3 2 1 ]`?
+Back: N/A
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610357-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `NEXT_LEXICO_ARRAY([ 1 2 3 4 ])`?
+Back: `[ 1 2 4 3 ]`
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610364-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `NEXT_LEXICO_ARRAY([ 4 3 2 1 ])`?
+Back: `[ 1 2 3 4 ]`
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610371-->
+END%%
+
+%%ANKI
+Basic
+`NEXT_LEXICO_ARRAY`: Which element will be the pivot of `[ 1 2 3 4 ]`?
+Back: `3`
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610377-->
+END%%
+
+%%ANKI
+Basic
+`NEXT_LEXICO_ARRAY`: Which element will be the pivot of `[ 4 3 2 1 ]`?
+Back: N/A
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756677668-->
+END%%
+
+%%ANKI
+Basic
+`NEXT_LEXICO_ARRAY`: What property does the RHS of `A[1:n]` exhibit before swapping?
+```
+[ a₁ a₂ ... aᵢ | aᵢ₊₁ aᵢ₊₂ ... aₙ ]
+```
+Back: Values are in decreasing order.
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610384-->
+END%%
+
+%%ANKI
+Basic
+`NEXT_LEXICO_ARRAY`: What property does the LHS of `A[1:n]` exhibit before swapping?
+```
+[ a₁ a₂ ... aᵢ | aᵢ₊₁ aᵢ₊₂ ... aₙ ]
+```
+Back: N/A
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610393-->
+END%%
+
+%%ANKI
+Basic
+`NEXT_LEXICO_ARRAY`: What property does the RHS of `A[1:n]` exhibit after swapping?
+```
+[ a₁ a₂ ... aⱼ | aₙ ... aᵢ ... aᵢ₊₂ aᵢ₊₁ ]
+```
+Back: Values are in decreasing order.
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610399-->
+END%%
+
+%%ANKI
+Basic
+`NEXT_LEXICO_ARRAY`: What property does the LHS of `A[1:n]` exhibit after swapping?
+```
+[ a₁ a₂ ... aⱼ | aₙ ... aᵢ ... aᵢ₊₂ aᵢ₊₁ ]
+```
+Back: N/A
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610403-->
+END%%
+
+%%ANKI
+Basic
+What is the first step taken in the `NEXT_LEXICO_ARRAY` algorithm?
+Back: Finding the pivot element.
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610408-->
+END%%
+
+%%ANKI
+Basic
+`NEXT_LEXICO_ARRAY`: What does the "pivot" refer to?
+Back: The element preceding the longest increasing subarray from right-to-left.
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610412-->
+END%%
+
+%%ANKI
+Cloze
+The `NEXT_LEXICO_ARRAY` algorithm can be summed up as "{pivot}", "{swap}", and "{reverse}".
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610416-->
+END%%
+
+%%ANKI
+Basic
+`NEXT_LEXICO_ARRAY`: *Which* element is swapped with the pivot?
+Back: The smallest element to its right that is greater than it.
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610421-->
+END%%
+
+%%ANKI
+Basic
+`NEXT_LEXICO_ARRAY`: What is done after swapping the pivot element?
+Back: Reverse the subarray to the right of where the pivot element was originally located.
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610425-->
+END%%
+
+%%ANKI
+Basic
+`NEXT_LEXICO_ARRAY`: What step follows swapping `A[1:n]`'s pivot element?
+```
+[ a₁ a₂ ... aⱼ | aₙ ... aᵢ ... aᵢ₊₂ aᵢ₊₁ ]
+```
+Back: Reverse the elements to the right of $a_j$.
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610429-->
+END%%
+
+%%ANKI
+Basic
+`NEXT_LEXICO_ARRAY`: What invariant is maintained after swapping the pivot?
+Back: The elements to the right of the original pivot remain in non-increasing order.
+Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
+<!--ID: 1709756610432-->
 END%%
 
 ## Falling Factorials

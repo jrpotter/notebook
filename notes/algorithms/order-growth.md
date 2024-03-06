@@ -332,7 +332,7 @@ END%%
 
 %%ANKI
 Basic
-What condition must $g(n)$ satisfy such that otherwise $\Theta(g(n))$ is empty?
+What condition must $g(n)$ satisfy such that $\Theta(g(n))$ is nonempty?
 Back: $g(n)$ must be asymptotically nonnegative.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708974221876-->
@@ -395,6 +395,62 @@ For $n \geq n_0$, what values does the $y$-axis take on?
 Back: Nonnegative values.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1709053894064-->
+END%%
+
+%%ANKI
+Basic
+What is the transitive property of $\Theta$-notation?
+Back: $f(n) = \Theta(g(n))$ and $g(n) = \Theta(h(n))$ implies $f(n) = \Theta(h(n))$.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223294-->
+END%%
+
+%%ANKI
+Basic
+What is the reflexive property of $\Theta$-notation?
+Back: $f(n) = \Theta(f(n))$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223298-->
+END%%
+
+%%ANKI
+Basic
+What condition must $f(n)$ satisfy for equality $f(n) = \Theta(f(n))$ to hold?
+Back: $f(n)$ must be nonnegatively asymptotic.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223303-->
+END%%
+
+%%ANKI
+Basic
+*Why* must $f(n)$ be nonnegatively asymptotic for $f(n) = \Theta(f(n))$ to hold?
+Back: Otherwise $\Theta(f(n))$ is the empty set.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223309-->
+END%%
+
+%%ANKI
+Basic
+What is the symmetric property of $\Theta$-notation?
+Back: $f(n) = \Theta(g(n))$ iff $g(n) = \Theta(f(n))$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223316-->
+END%%
+
+%%ANKI
+Basic
+What is the transpose symmetric property of $\Theta$-notation?
+Back: N/A
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223322-->
+END%%
+
+%%ANKI
+Basic
+$\Theta$-notation is likened to what comparison operator of real numbers?
+Back: $=$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223329-->
 END%%
 
 ## $O$-notation
@@ -471,6 +527,7 @@ Basic
 Using typical identifiers, what is the upper bound of $f(n)$ in $O(g(n))$?
 Back: $cg(n)$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709750359817-->
 END%%
 
 %%ANKI
@@ -498,7 +555,7 @@ END%%
 
 %%ANKI
 Basic
-What condition must $g(n)$ satisfy such that otherwise $O(g(n))$ is empty?
+What condition must $g(n)$ satisfy such that $O(g(n))$ is nonempty?
 Back: $g(n)$ must be asymptotically nonnegative.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1709053894093-->
@@ -552,6 +609,62 @@ Why does Cormen et al. say "insertion sort's running time is $O(n^2)$" is an abu
 Back: Because technically its running time depends on the particular input of size $n$.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1709053894105-->
+END%%
+
+%%ANKI
+Basic
+What is the transitive property of $O$-notation?
+Back: $f(n) = O(g(n))$ and $g(n) = O(h(n))$ implies $f(n) = O(h(n))$.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223338-->
+END%%
+
+%%ANKI
+Basic
+What is the reflexive property of $O$-notation?
+Back: $f(n) = O(f(n))$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223346-->
+END%%
+
+%%ANKI
+Basic
+What condition must $f(n)$ satisfy for equality $f(n) = O(f(n))$ to hold?
+Back: $f(n)$ must be nonnegatively asymptotic.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223352-->
+END%%
+
+%%ANKI
+Basic
+*Why* must $f(n)$ be nonnegatively asymptotic for $f(n) = O(f(n))$ to hold?
+Back: Otherwise $O(f(n))$ is the empty set.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223358-->
+END%%
+
+%%ANKI
+Basic
+What is the symmetric property of $O$-notation?
+Back: N/A
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223365-->
+END%%
+
+%%ANKI
+Basic
+What is the transpose symmetric property of $O$-notation?
+Back: $f(n) = O(g(n))$ iff $g(n) = \Omega(f(n))$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223372-->
+END%%
+
+%%ANKI
+Basic
+$O$-notation is likened to what comparison operator of real numbers?
+Back: $\leq$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223381-->
 END%%
 
 ## $o$-notation
@@ -660,6 +773,77 @@ Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambri
 <!--ID: 1709519002364-->
 END%%
 
+%%ANKI
+Basic
+What condition must $g(n)$ satisfy such that $o(g(n))$ is nonempty?
+Back: $g(n)$ must be asymptotically positive.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709750359822-->
+END%%
+
+%%ANKI
+Basic
+What is the transitive property of $o$-notation?
+Back: $f(n) = o(g(n))$ and $g(n) = o(h(n))$ implies $f(n) = o(h(n))$.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223391-->
+END%%
+
+%%ANKI
+Basic
+What is the reflexive property of $o$-notation?
+Back: N/A
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223399-->
+END%%
+
+%%ANKI
+Basic
+*Why* is there no reflexive property of $o$-notation?
+Back: A function cannot be asymptotically smaller than itself.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223407-->
+END%%
+
+%%ANKI
+Basic
+What is the symmetric property of $o$-notation?
+Back: N/A
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223417-->
+END%%
+
+%%ANKI
+Basic
+What is the transpose symmetric property of $o$-notation?
+Back: $f(n) = o(g(n))$ iff $g(n) = \omega(f(n))$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223426-->
+END%%
+
+%%ANKI
+Basic
+$o$-notation is likened to what comparison operator of real numbers?
+Back: $<$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223435-->
+END%%
+
+%%ANKI
+Cloze
+{1:$\Omega$}-notation is to {2:$\geq$} whereas {2:$o$}-notation is to {1:$<$}.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223442-->
+END%%
+
+%%ANKI
+Basic
+How do we set theoretically say $f(n)$ is asymptotically smaller than $g(n)$?
+Back: $f(n) = o(g(n))$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223449-->
+END%%
+
 ## $\Omega$-notation
 
 ![[big-omega-notation.png]]
@@ -762,7 +946,7 @@ END%%
 
 %%ANKI
 Basic
-What condition must $g(n)$ satisfy such that otherwise $\Omega(g(n))$ is empty?
+What condition must $g(n)$ satisfy such that $\Omega(g(n))$ is nonempty?
 Back: $g(n)$ must be asymptotically nonnegative.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1709055157396-->
@@ -814,6 +998,76 @@ What theorem relates $\Theta(g(n))$, $O(g(n))$, and $\Omega(g(n))$?
 Back: $f(n) = \Theta(g(n))$ if and only if $f(n) \in O(g(n))$ and $f(n) \in \Omega(g(n))$.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1709055157406-->
+END%%
+
+%%ANKI
+Basic
+What is the transitive property of $\Omega$-notation?
+Back: $f(n) = \Omega(g(n))$ and $g(n) = \Omega(h(n))$ implies $f(n) = \Omega(h(n))$.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223456-->
+END%%
+
+%%ANKI
+Basic
+What is the reflexive property of $\Omega$-notation?
+Back: $f(n) = \Omega(f(n))$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223462-->
+END%%
+
+%%ANKI
+Basic
+What condition must $f(n)$ satisfy for equality $f(n) = \Omega(f(n))$ to hold?
+Back: $f(n)$ must be nonnegatively asymptotic.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223468-->
+END%%
+
+%%ANKI
+Basic
+*Why* must $f(n)$ be nonnegatively asymptotic for $f(n) = \Omega(f(n))$ to hold?
+Back: Otherwise $\Omega(f(n))$ is the empty set.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223477-->
+END%%
+
+%%ANKI
+Basic
+What is the symmetric property of $\Omega$-notation?
+Back: N/A
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223486-->
+END%%
+
+%%ANKI
+Basic
+What is the transpose symmetric property of $\Omega$-notation?
+Back: $f(n) = \Omega(g(n))$ iff $g(n) = O(f(n))$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223496-->
+END%%
+
+%%ANKI
+Basic
+$\Omega$-notation is likened to what comparison operator of real numbers?
+Back: $\geq$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223503-->
+END%%
+
+%%ANKI
+Cloze
+{1:$\Theta$}-notation is to {2:$=$} whereas {2:$\Omega$}-notation is to {1:$\geq$}.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223511-->
+END%%
+
+%%ANKI
+Cloze
+{1:$O$}-notation is to {2:$\leq$} whereas {2:$\Omega$}-notation is to {1:$\geq$}.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223522-->
 END%%
 
 ## $\omega$-notation
@@ -920,6 +1174,77 @@ Is $\omega$-notation considered stronger or weaker than $\Omega$-notation?
 Back: Stronger.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1709519002425-->
+END%%
+
+%%ANKI
+Basic
+What condition must $g(n)$ satisfy such that $\omega(g(n))$ is nonempty?
+Back: $g(n)$ must be asymptotically positive.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709750359826-->
+END%%
+
+%%ANKI
+Basic
+What is the transitive property of $\omega$-notation?
+Back: $f(n) = \omega(g(n))$ and $g(n) = \omega(h(n))$ implies $f(n) = \omega(h(n))$.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223531-->
+END%%
+
+%%ANKI
+Basic
+What is the reflexive property of $\omega$-notation?
+Back: N/A
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223537-->
+END%%
+
+%%ANKI
+Basic
+*Why* is there no reflexive property of $\omega$-notation?
+Back: A function cannot be asymptotically larger than itself.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223544-->
+END%%
+
+%%ANKI
+Basic
+What is the symmetric property of $\omega$-notation?
+Back: N/A
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223553-->
+END%%
+
+%%ANKI
+Basic
+What is the transpose symmetric property of $\omega$-notation?
+Back: $f(n) = \omega(g(n))$ iff $g(n) = o(f(n))$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223563-->
+END%%
+
+%%ANKI
+Basic
+$\omega$-notation is likened to what comparison operator of real numbers?
+Back: $>$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223570-->
+END%%
+
+%%ANKI
+Cloze
+{1:$O$}-notation is to {2:$\leq$} whereas {2:$\omega$}-notation is to {1:$>$}.
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223577-->
+END%%
+
+%%ANKI
+Basic
+How do we set theoretically say $f(n)$ is asymptotically larger than $g(n)$?
+Back: $f(n) = \omega(g(n))$
+Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+<!--ID: 1709752223586-->
 END%%
 
 ## References

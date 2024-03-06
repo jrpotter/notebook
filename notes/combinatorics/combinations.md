@@ -13,29 +13,26 @@ A $k$-**combination** of $n$ objects is an unordered "choice" of $k$ objects fro
 
 ```c
 void combinations_aux(
-  const int i, const int n,
-  const int j, const int k,
-  int A[static n],
-  int res[static k]
+  const size_t n, int A[static n],
+  const size_t k, int stack[static k],
+  const size_t i
 ) {
-  if (j == k) {
-    for (int m = 0; m < k; ++m) {
-      printf("%d ", A[res[m]]);
-    }
-    printf("\n");
-    return
-  } else if (n - i < k - j) {
+  if (n < k) {
     return;
   }
-  res[j] = A[i];
-  combinations_aux(i + 1, n, j + 1, k, A, res);
-  combinations_aux(i + 1, n, j, k, A, res);
+  if (k == 0) {
+    print_array(i, stack);
+    return;
+  }
+  stack[i] = A[0];
+  combinations_aux(n - 1, A + 1, k - 1, stack, i + 1);
+  combinations_aux(n - 1, A + 1, k, stack, i);
 }
 
-void combinations(const int n, const int k, int A[static n]) {
-  int *res = malloc(sizeof(int) * k);
-  combinations_aux(0, n, 0, k, A, res);
-  free(res);
+void combinations(const size_t n, const size_t k, int A[static n]) {
+  int *stack = calloc(k, sizeof(int));
+  combinations_aux(n, A, k, stack, 0);
+  free(stack);
 }
 ```
 
