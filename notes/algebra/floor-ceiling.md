@@ -60,7 +60,7 @@ END%%
 
 %%ANKI
 Basic
-What does $\lceil x \rceil - \lfloor x \rceil$ equal?
+What does $\lceil x \rceil - \lfloor x \rfloor$ equal?
 Back: Either $0$ or $1$.
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708110779681-->
@@ -69,7 +69,7 @@ END%%
 %%ANKI
 Basic
 What can be said about $x$ if $\lceil x \rceil - \lfloor x \rfloor = 0$?
-Back: $x$ is even.
+Back: $x$ is an integer.
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708110779687-->
 END%%
@@ -77,9 +77,49 @@ END%%
 %%ANKI
 Basic
 What can be said about $x$ if $\lceil x \rceil - \lfloor x \rfloor = 1$?
-Back: $x$ is odd.
+Back: $x$ is not an integer.
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708110779693-->
+END%%
+
+%%ANKI
+Basic
+What values of $x$ satisfy $\lfloor x \rfloor = \lceil x \rceil - 1$?
+Back: Non-integral values.
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1709831032489-->
+END%%
+
+%%ANKI
+Basic
+What values of $x$ satisfy $\lceil x \rceil = \lfloor x \rfloor + 1$?
+Back: Non-integral values.
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1709831032496-->
+END%%
+
+%%ANKI
+Basic
+What values of $x$ satisfy $\lfloor x \rfloor = \lceil x \rceil + 1$?
+Back: None.
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1709831032505-->
+END%%
+
+%%ANKI
+Basic
+What values of $x$ satisfy $\lceil x \rceil = \lfloor x \rfloor - 1$?
+Back: None.
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1709831032513-->
+END%%
+
+%%ANKI
+Basic
+For what values $k$ is horizontal and vertical shifting of $\lfloor x \rfloor$ the same?
+Back: Integral values.
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1709831032519-->
 END%%
 
 %%ANKI
@@ -88,6 +128,14 @@ What C operator corresponds to floor division?
 Back: None.
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708110779699-->
+END%%
+
+%%ANKI
+Basic
+What C operator corresponds to integer division?
+Back: `/`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709831032524-->
 END%%
 
 %%ANKI
@@ -306,5 +354,6 @@ END%%
 
 ## References
 
+* Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 * Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 * Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).

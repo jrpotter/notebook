@@ -940,7 +940,7 @@ Addition of two unsigned or two two's-complement numbers operate in much the sam
 
 %%ANKI
 Basic
-*Why* is adding $w$-bit integral types equal to $w$-bit truncation?
+*Why* is addition overflow of $w$-bit integral types equivalent to $w$-bit truncation?
 Back: The underlying bit adder discards any final carry bit.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708799678721-->
@@ -1648,7 +1648,7 @@ END%%
 
 %%ANKI
 Basic
-How is `unsigned x` equivalently modified without using multiplication?
+How is `unsigned x` equivalently modified using bitwise operations?
 ```c
 x = x * pow(2, k);
 ```
@@ -1659,6 +1659,21 @@ x = (x << k);
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1709570428818-->
+END%%
+
+%%ANKI
+Basic
+How is `unsigned x` equivalently modified using arithmetic operations?
+```c
+x = (x << k);
+```
+Back:
+```c
+x = x * pow(2, k);
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709831032382-->
 END%%
 
 Similarly, two's-complement multiplication is defined as follows: $$x *_w^t y = U2T_w((x \cdot y) \bmod 2^w)$$
@@ -1771,7 +1786,7 @@ END%%
 
 %%ANKI
 Basic
-Assuming two's-complement encoding, how is `int x` equivalently modified without using multiplication?
+In two's-complement, how is `x` equivalently modified using bitwise operators?
 ```c
 x = x * pow(2, k);
 ```
@@ -1782,6 +1797,21 @@ x = (x << k);
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1709570428828-->
+END%%
+
+%%ANKI
+Basic
+In two's-complement, how is `x` equivalently modified using arithmetic operations?
+```c
+x = (x << k);
+```
+Back:
+```c
+x = x * pow(2, k);
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709831032386-->
 END%%
 
 %%ANKI
@@ -1837,7 +1867,171 @@ END%%
 
 ### Division
 
+Integer division divides the result and discards any fractional result. This has the same effect as rounding toward zero.
 
+%%ANKI
+Basic
+What is integer division?
+Back: Division of two numbers that returns the integer part of the result.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709831032392-->
+END%%
+
+%%ANKI
+Cloze
+Integer division $x / y$ is $\lfloor x / y \rfloor$ when $x \geq 0$ and {1:$y > 0$} or $x \leq 0$ and {1:$y < 0$}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709831032396-->
+END%%
+
+%%ANKI
+Cloze
+Integer division $x / y$ is $\lceil x / y \rceil$ when $x \geq 0$ and {1:$y < 0$} or $x \leq 0$ and {1:$y > 0$}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709831032399-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes integer division from floor division?
+Back: The latter does not round towards $0$ with negative results.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709831032402-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes integer division from ceiling division?
+Back: The latter does not round towards $0$ with positive results.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709831032406-->
+END%%
+
+%%ANKI
+Cloze
+Integer division is often called "truncation {toward zero}".
+Reference: dirkgently, “Answer to ‘What Is the Behavior of Integer Division?,’” _Stack Overflow_, August 30, 2010, [https://stackoverflow.com/a/3602857](https://stackoverflow.com/a/3602857).
+<!--ID: 1709831032412-->
+END%%
+
+%%ANKI
+Cloze
+Unsigned division is to {logical} right shifts. Two's-complement division is to {arithmetic} right shifts.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709831032417-->
+END%%
+
+%%ANKI
+Basic
+What is the result of logical right-shifting unsigned $x$ by $k$ bits?
+Back: $\lfloor x / 2^k \rfloor$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709831032421-->
+END%%
+
+%%ANKI
+Basic
+In unsigned encoding, *why* is floor a part of expression $x \mathop{\texttt{>>}} k = \lfloor x / 2^k \rfloor$?
+Back: Because the least significant bit, which may have value `1`, is dropped.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709831032424-->
+END%%
+
+%%ANKI
+Basic
+In unsigned encoding, how is `x` equivalently modified using bitwise operators?
+```c
+x = floor(x / pow(2, k));
+```
+Back:
+```c
+x = (x >> k);
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709831032428-->
+END%%
+
+%%ANKI
+Basic
+In unsigned encoding, how is `x` equivalently modified using arithmetic operations?
+```c
+x = (x >> k);
+```
+Back:
+```c
+x = floor(x / pow(2, k));
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709831032432-->
+END%%
+
+%%ANKI
+Basic
+What is the result of arithmetic right-shifting two's-complement $x$ by $k$ bits?
+Back: $\lfloor x / 2^k \rfloor$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1709831032435-->
+END%%
+
+%%ANKI
+Basic
+In two's-complement, *why* is floor a part of expression $x \mathop{\texttt{>>}} k = \lfloor x / 2^k \rfloor$?
+Back: Because the least significant bit, which may have value `1`, is dropped.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709831032440-->
+END%%
+
+%%ANKI
+Basic
+In two's-complement, what is `-1 >> 1`?
+Back: `-1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709831032444-->
+END%%
+
+%%ANKI
+Basic
+Why is division by a power of two using arithmetic right-shift `x >> k` considered incorrect?
+Back: This right shift performs floor division, not integer division.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709831032449-->
+END%%
+
+%%ANKI
+Basic
+In two's-complement, how is `x` equivalently modified using bitwise operators?
+```c
+x = floor(x / pow(2, k));
+```
+Back:
+```c
+x = (x >> k);
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709831032455-->
+END%%
+
+%%ANKI
+Basic
+In two's-complement, how is `x` equivalently modified using arithmetic operations?
+```c
+x = (x >> k);
+```
+Back:
+```c
+x = floor(x / pow(2, k));
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1709831032461-->
+END%%
 
 ## References
 

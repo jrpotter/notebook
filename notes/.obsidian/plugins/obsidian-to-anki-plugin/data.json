@@ -91,7 +91,11 @@
     "ordering-n-repetition-n.jpg",
     "triangular-gnomon.png",
     "pascals-triangle.webp",
-    "square-gnomon.png"
+    "square-gnomon.png",
+    "floor-negative.png",
+    "floor-positive.png",
+    "ceil-positive.png",
+    "ceil-negative.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "cd7c7ba91fb2f961c9f2437777e8e2ac",
@@ -119,7 +123,7 @@
     "posix/index.md": "97b1b8ecb9a953e855a9acf0ab25b8c8",
     "posix/signals.md": "e8a62cbece8a6bfc54a4e67bbdf3be7c",
     "templates/daily.md": "7866014e730e85683155207a02e367d8",
-    "posix/regexp.md": "f5fb177c7356faf1bf768023c2563c54",
+    "posix/regexp.md": "eb1e686756c283a60a7213d3ed39e78b",
     "journal/2024-02-04.md": "e2b5678fc53d7284b71ed6820c02b954",
     "gawk/regexp.md": "d9229f1eabe1b99e965eecaa03bee86c",
     "_templates/daily.md": "5863e4524f8d012e153918d238c611a4",
@@ -178,7 +182,7 @@
     "_journal/2024-02/2024-02-14.md": "aa009f9569e175a8104b0537ebcc5520",
     "_journal/2024-02-16.md": "5cc129254afd553829be3364facd23db",
     "_journal/2024-02/2024-02-15.md": "16cb7563d404cb543719b7bb5037aeed",
-    "algebra/floor-ceiling.md": "828b11e642d6803a740b58f27ff047cf",
+    "algebra/floor-ceiling.md": "556406772daaa415d546b1a8bf41b5dd",
     "algebra/index.md": "90b842eb694938d87c7c68779a5cacd1",
     "algorithms/binary-search.md": "27189885f0bc1e8b8b9049da3ed92f98",
     "_journal/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
@@ -220,15 +224,15 @@
     "_journal/2024-02/2024-02-27.md": "f75a0d04a875aeee932343dae0c78768",
     "filesystems/index.md": "cbd2b0290a3ba3b32abec4bd8bfefad5",
     "filesystems/cas.md": "34906013a2a60fe5ee0e31809b4838aa",
-    "git/objects.md": "1c867853b080700a73de55b7be185f8d",
+    "git/objects.md": "e9b98576291ca04496c2f0863f526cfa",
     "git/index.md": "83d2d95fc549d9e8436946c7bd058d15",
-    "encoding/integer.md": "052dce2f39b72cc8d46bea58bfdb1b97",
+    "encoding/integer.md": "e15129fc5ae9a8348c57c2d533feda41",
     "_journal/2024-02-29.md": "f610f3caed659c1de3eed5f226cab508",
     "_journal/2024-02/2024-02-28.md": "7489377c014a2ff3c535d581961b5b82",
     "_journal/2024-03-01.md": "a532486279190b0c12954966cbf8c3fe",
     "_journal/2024-02/2024-02-29.md": "0e502a2c8baf90c2f12859b03f10b5a1",
     "algebra/sequences.md": "97c217823aacf8910a1a37bde694ecfe",
-    "algebra/sequences/index.md": "e5a7cdfbcb61709ce2963c4b5e53a8f2",
+    "algebra/sequences/index.md": "d668df1467c7cc70691aeb1d9b17e39d",
     "_journal/2024-03-02.md": "08c3cae1df0079293b47e1e9556f1ce1",
     "_journal/2024-03/2024-03-01.md": "70da812300f284df72718dd32fc39322",
     "algebra/sequences/triangular-numbers.md": "c6626d8aa86776b6ce794c3551862d5a",
@@ -242,7 +246,11 @@
     "algebra/sequences/geometric.md": "53936ec392b3b714bd4a9bdb4554b582",
     "algebra/sequences/arithmetic.md": "80381ca0f2b3b9a1c155c597a7dea75a",
     "_journal/2024-03-06.md": "ac7a3d764934f49b2be7aa76e402d853",
-    "_journal/2024-03/2024-03-05.md": "94b28d0b9bc62cc0bd99d315fb7c6d30"
+    "_journal/2024-03/2024-03-05.md": "94b28d0b9bc62cc0bd99d315fb7c6d30",
+    "_journal/2024-03-07.md": "7bf68d6d81e89aa00f5ddd7510b69e3e",
+    "_journal/2024-03/2024-03-06.md": "c1d8b6b0d3c5ad34b8135230ec102443",
+    "_journal/2024-03-08.md": "07b6c200dcdc7116e1209c7ba6a01613",
+    "_journal/2024-03/2024-03-07.md": "58b84cabda4e875ab0c9e5317b2b6e2c"
   },
   "fields_dict": {
     "Basic": [

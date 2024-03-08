@@ -281,20 +281,20 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 <!--ID: 1707050923724-->
 END%%
 
-Class        | Similar To      | Meaning
------------- | --------------- | ------------------------------------------------
-`[:alnum:]`  | `[A-Za-z0-9]`   | Alphanumeric characters
-`[:alpha:]`  | `[A-Za-z]`      | Alphabetic characters
-`[:blank:]`  | `[ \t]`         | `' '` and `TAB` characters
-`[:cntrl:]`  |                 | Control characters
-`[:digit:]`  | `[0-9]`         | Numeric characters
-`[:graph:]`  | `[^ [:cntrl:]]` | Printable and visible characters
-`[:lower:]`  | `[a-z]`         | Lowercase alphabetic characters
-`[:print:]`  | `[ [:graph:]]`  | Printable characters
-`[:punct:]`  |                 | All graphic characters except letters and digits
-`[:space:]`  | `[ \t\n\r\f\v]` | Whitespace characters
-`[:upper:]`  | `[A-Z]`         | Uppercase alphabetic characters
-`[:xdigit:]` | `[0-9A-Fa-f]`   | [[radices#Hexadecimal\|Hexadecimal]] digits
+| Class        | Similar To      | Meaning                                          |
+| ------------ | --------------- | ------------------------------------------------ |
+| `[:alnum:]`  | `[A-Za-z0-9]`   | Alphanumeric characters                          |
+| `[:alpha:]`  | `[A-Za-z]`      | Alphabetic characters                            |
+| `[:blank:]`  | `[ \t]`         | `' '` and `TAB` characters                       |
+| `[:cntrl:]`  |                 | Control characters                               |
+| `[:digit:]`  | `[0-9]`         | Numeric characters                               |
+| `[:graph:]`  | `[^ [:cntrl:]]` | Printable and visible characters                 |
+| `[:lower:]`  | `[a-z]`         | Lowercase alphabetic characters                  |
+| `[:print:]`  | `[ [:graph:]]`  | Printable characters                             |
+| `[:punct:]`  |                 | All graphic characters except letters and digits |
+| `[:space:]`  | `[ \t\n\r\f\v]` | Whitespace characters                            |
+| `[:upper:]`  | `[A-Z]`         | Uppercase alphabetic characters                  |
+| `[:xdigit:]` | `[0-9A-Fa-f]`   | [[radices#Hexadecimal\|Hexadecimal]] digits      |
 
 %%ANKI
 Basic
