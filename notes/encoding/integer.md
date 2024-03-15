@@ -643,7 +643,7 @@ END%%
 
 ## Casting
 
-Most implementations of C cast an object of one type to another by simply re-interpreting the object's binary representation. This casting may happen implicitly if comparing or operating on e.g. `signed` and `unsigned` objects in the same expression. $T2U$ and $U2T$ reflect this method of casting:
+Most implementations of C cast an object of `signed` type to `unsigned` type and vice versa, most implementations simply re-interpret the object's binary representation. This casting may happen implicitly if comparing or operating on `signed` and `unsigned` objects in the same expression. $T2U$ and $U2T$ reflect this method of casting:
 
 $$T2U_w(x) = \begin{cases}
 x + 2^w & x < 0 \\
@@ -657,7 +657,7 @@ x - 2^w & x > TMax_w
 
 %%ANKI
 Basic
-How do most implementations of C perform casting?
+How do most implementations of C perform casting of `signed` and `unsigned` types?
 Back: As a reinterpretation of the same byte pattern of the object being casted.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
@@ -1714,7 +1714,7 @@ END%%
 %%ANKI
 Basic
 What pre-processing step is done when multiplying to a $w$-bit two's-complement result by hand?
-Back: Sign extend the factors to width $w$.
+Back: Sign extend the factors to width $2w$.
 Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
 <!--ID: 1709563221449-->
 END%%

@@ -314,7 +314,7 @@ Basic
 ```
 [ a₁ a₂ ... aᵢ | aᵢ₊₁ aᵢ₊₂ ... aₙ ]
 ```
-Back: Values are in decreasing order.
+Back: Values are in non-increasing order.
 Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
 <!--ID: 1709756610384-->
 END%%
@@ -336,7 +336,7 @@ Basic
 ```
 [ a₁ a₂ ... aⱼ | aₙ ... aᵢ ... aᵢ₊₂ aᵢ₊₁ ]
 ```
-Back: Values are in decreasing order.
+Back: Values are in non-increasing order.
 Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
 <!--ID: 1709756610399-->
 END%%

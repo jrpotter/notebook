@@ -1093,7 +1093,7 @@ END%%
 %%ANKI
 Basic
 What names are usually given to the existentially quantified identifers in $\omega(g(n))$'s definition?
-Back: $n_0$.
+Back: $n_0$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1709519002380-->
 END%%
@@ -1179,7 +1179,7 @@ END%%
 %%ANKI
 Basic
 What condition must $g(n)$ satisfy such that $\omega(g(n))$ is nonempty?
-Back: $g(n)$ must be asymptotically positive.
+Back: $g(n)$ must be asymptotically nonnegative.
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1709750359826-->
 END%%

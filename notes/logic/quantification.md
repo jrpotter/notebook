@@ -39,7 +39,7 @@ END%%
 
 %%ANKI
 Basic
-How many members must satisfy a property in existential quantification?
+How many members in the domain of discourse must satisfy a property in existential quantification?
 Back: At least one.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707494819967-->
@@ -81,7 +81,7 @@ END%%
 
 %%ANKI
 Basic
-How many members must satisfy a property in universal quantification?
+How many members in the domain of discourse must satisfy a property in universal quantification?
 Back: All of them.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707494819973-->

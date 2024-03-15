@@ -117,8 +117,8 @@ END%%
 
 %%ANKI
 Basic
-Algebraically speaking, *what* is the $n$th triangular number?
-Back: $\sum_{k=1}^n k$.
+How is the $n$th triangular number written as a summation?
+Back: $\sum_{k=1}^n k$
 Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
 <!--ID: 1709419325914-->
 END%%
@@ -212,7 +212,7 @@ END%%
 Basic
 Where in Pascal's triangle are the natural numbers embedded?
 Back: Along the second leftward diagonal:
-![[pascals-triangle.webp]]
+![[pascals-triangle.png]]
 Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
 <!--ID: 1709419325963-->
 END%%
@@ -221,7 +221,7 @@ END%%
 Basic
 Where in Pascal's triangle are the triangular numbers embedded?
 Back: Along the third leftward diagonal:
-![[pascals-triangle.webp]]
+![[pascals-triangle.png]]
 Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
 <!--ID: 1709419325970-->
 END%%

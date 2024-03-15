@@ -333,9 +333,10 @@ Specifier | Description
 --------- | -----------
 `d`, `i`  | a decimal `signed int`
 `u`       | a decimal `unsigned int`
-`x`       | a hexadecimal `unsigned int` (lowercase)
-`X`       | a hexadecimal `unsigned int` (uppercase)
+`x`, `X`  | a hexadecimal `unsigned int`
 `o`       | an octal `unsigned int`
+`f`, `F`  | a `double` in fixed-point notation
+`e`, `E`  | a `double` in standard notation
 `s`       | a `NUL`-terminated string
 `c`       | a `char` character
 `p`       | `void*` address in an implementation-defined format
@@ -450,6 +451,156 @@ Back: The former outputs lowercase hex digits, the latter uppercase.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083086-->
+END%%
+
+%%ANKI
+Cloze
+The {`%f`} format specifier outputs a {lowercase fixed-point `double`}.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450347005-->
+END%%
+
+%%ANKI
+Cloze
+The {`%F`} format specifier outputs an {uppercase fixed-point `double`}.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450347008-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes format specifiers `%f` and `%F`?
+Back: The former outputs lowercase identifiers, the latter uppercase.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450347010-->
+END%%
+
+%%ANKI
+Basic
+What three special identifiers might specifier `%f` output?
+Back: `inf`, `infinity`, and `nan`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450347012-->
+END%%
+
+%%ANKI
+Basic
+What three special identifiers might specifier `%F` output?
+Back: `INF`, `INFINITY`, and `NAN`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450452444-->
+END%%
+
+%%ANKI
+Basic
+Which format specifier was probably used to yield `printf` output `inf`?
+Back: `%f`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450347014-->
+END%%
+
+%%ANKI
+Cloze
+{1:Fixed-point} notation is to {2:`%f`} whereas {2:standard/exponential} notation is to {1:`%e`}.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450347015-->
+END%%
+
+%%ANKI
+Basic
+Which format specifier was probably used to yield `printf` output `172.345000`?
+Back: `%f`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450347017-->
+END%%
+
+%%ANKI
+Basic
+What term describes the kind of output notation corresponding to `%f`?
+Back: Fixed-point notation.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450347018-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes format specifiers `%e` and `%E`?
+Back: The former outputs an `e`, the latter an `E`.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450347020-->
+END%%
+
+%%ANKI
+Basic
+How many digits follows `e` in the output of `printf` specifier `%e`?
+Back: At least `2`.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450452447-->
+END%%
+
+%%ANKI
+Basic
+Which format specifier was probably used to yield `printf` output `1.723450e+02`?
+Back: `%e`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450347022-->
+END%%
+
+%%ANKI
+Basic
+What is the default precision of `%f`?
+Back: `6`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710452502031-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `printf("%e", 3.14)`?
+Back: `3.140000e00`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450347023-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `printf("%e", 314)`?
+Back: `3.140000e02`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450347025-->
+END%%
+
+%%ANKI
+Basic
+What term describes the kind of output notation corresponding to `%e`?
+Back: Standard or exponential notation.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710450347026-->
+END%%
+
+%%ANKI
+Basic
+What is the default precision of `%e`?
+Back: `6`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710452502034-->
 END%%
 
 %%ANKI

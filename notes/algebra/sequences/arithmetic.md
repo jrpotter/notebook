@@ -115,8 +115,8 @@ END%%
 
 %%ANKI
 Basic
-The triangular numbers belong to what larger class of sequences?
-Back: Arithmetic sequences.
+Interpreted as an arithmetic sequence, what is the common ratio of the triangular numbers?
+Back: $1$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709664600178-->
 END%%
