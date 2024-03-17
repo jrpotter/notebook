@@ -1,9 +1,10 @@
 ---
 title: Integer Encoding
 TARGET DECK: Obsidian::STEM
-FILE TAGS: binary
+FILE TAGS: binary::integer
 tags:
   - binary
+  - integer
 ---
 
 ## Overview

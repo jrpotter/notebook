@@ -93,7 +93,7 @@ END%%
 
 %%ANKI
 Basic
-Let $(a_n)_{n \geq 1}$ be an arithmetic sequence. What does term $n$ correspond to in the following? $$\sum_{k=1}^n a_k = \frac{(a_1 + a_n)(n)}{2}$$
+Let $(a_n)_{n \geq 1}$ be an arithmetic sequence. What does term $n$ correspond to in the following? $$\sum a_k = \frac{(a_1 + a_n)(n)}{2}$$
 Back: The number of terms in the summation.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709664600175-->
@@ -123,7 +123,7 @@ END%%
 
 %%ANKI
 Basic
-Let $(a_n)_{n \geq 1}$ be an arithmetic sequence. What does term $2$ correspond to in the following? $$\sum_{k=1}^n a_k = \frac{(a_1 + a_n)(n)}{2}$$
+Let $(a_n)_{n \geq 1}$ be an arithmetic sequence. What does term $2$ correspond to in the following? $$\sum a_k = \frac{(a_1 + a_n)(n)}{2}$$
 Back: The double-counting that occurs when adding the summation to itself.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709664600179-->
@@ -131,7 +131,7 @@ END%%
 
 %%ANKI
 Basic
-Let $(a_n)_{n \geq 1}$ be an arithmetic sequence. How do we visualize the role of term $2$ in the following? $$\sum_{k=1}^n a_k = \frac{(a_1 + a_n)(n)}{2}$$
+Let $(a_n)_{n \geq 1}$ be an arithmetic sequence. How do we visualize the role of term $2$ in the following? $$\sum a_k = \frac{(a_1 + a_n)(n)}{2}$$
 Back:
 ```
 * * * * -

@@ -100,7 +100,7 @@ END%%
 
 %%ANKI
 Basic
-Let $(a_n)_{n \geq 1}^r$ be a geometric sequence. What does term $n$ correspond to in the following? $$\sum_{k=1}^n a_k = \frac{a_1(1 - r^n)}{1 - r}$$
+Let $(a_n)_{n \geq 1}^r$ be a geometric sequence. What does term $n$ correspond to in the following? $$\sum a_k = \frac{a_1(1 - r^n)}{1 - r}$$
 Back: The number of terms in the summation.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709666305438-->
@@ -122,8 +122,8 @@ END%%
 
 %%ANKI
 Basic
-Let $(a_n)_{n \geq 1}^r$ be a geometric sequence. How is term $1 - r$ derived in the following? $$\sum_{k=1}^n a_k = \frac{a_1(1 - r^n)}{1 - r}$$
-Back: Given $S = \sum_{k=1}^n a_k$, by factoring out $S$ from $S - rS$.
+Let $(a_n)_{n \geq 1}^r$ be a geometric sequence. How is term $1 - r$ derived in the following? $$\sum a_k = \frac{a_1(1 - r^n)}{1 - r}$$
+Back: Given $S = \sum a_k$, by factoring out $S$ from $S - rS$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709666356524-->
 END%%

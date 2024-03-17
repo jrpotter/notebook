@@ -96,7 +96,11 @@
     "floor-positive.png",
     "ceil-positive.png",
     "ceil-negative.png",
-    "pascals-triangle.png"
+    "pascals-triangle.png",
+    "normalized-form.png",
+    "denormalized-form.png",
+    "infinity.png",
+    "nan.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "cd7c7ba91fb2f961c9f2437777e8e2ac",
@@ -196,7 +200,7 @@
     "combinatorics/additive-principle.md": "e968028670f95ee9a7c5499ff7cb6792",
     "_journal/2024-02-19.md": "30d16c5373deb9cb128d2e7934ae256a",
     "_journal/2024-02/2024-02-18.md": "67e36dbbb2cac699d4533b5a2eaeb629",
-    "combinatorics/permutations.md": "989c076a9f6909627f4decafd4118266",
+    "combinatorics/permutations.md": "05744081be9ae2962cf5ba817b5357d2",
     "combinatorics/combinations.md": "5ae0152180a1af7187c43606a4002202",
     "_journal/2024-02-20.md": "b85ba0eeeb16e30a602ccefabcc9763e",
     "_journal/2024-02/2024-02-19.md": "df1a9ab7ab89244021b3003c84640c78",
@@ -208,7 +212,7 @@
     "_journal/2024-02/2024-02-21.md": "f423137ae550eb958378750d1f5e98c7",
     "_journal/2024-02-23.md": "219ce9ad15a8733edd476c97628b71fd",
     "_journal/2024-02/2024-02-22.md": "312e55d57868026f6e80f7989a889c2b",
-    "c17/strings.md": "62b53cc9156eba2b565e33d07813cf50",
+    "c17/strings.md": "d8a1193ecbbc43aa81539585babb91b1",
     "c17/index.md": "78576ee41d0185df82c59999142f4edb",
     "c17/escape-sequences.md": "ebc63c6cdfbe60bbc2708c1b0c8da8bb",
     "c17/declarations.md": "20e200f2b7abcab8f873cd080f4c9770",
@@ -227,7 +231,7 @@
     "filesystems/cas.md": "34906013a2a60fe5ee0e31809b4838aa",
     "git/objects.md": "e9b98576291ca04496c2f0863f526cfa",
     "git/index.md": "83d2d95fc549d9e8436946c7bd058d15",
-    "encoding/integer.md": "ef26036d0c0d215e8b626b5db872b028",
+    "encoding/integer.md": "87f6b405cc33a5f8517588928b0cb17e",
     "_journal/2024-02-29.md": "f610f3caed659c1de3eed5f226cab508",
     "_journal/2024-02/2024-02-28.md": "7489377c014a2ff3c535d581961b5b82",
     "_journal/2024-03-01.md": "a532486279190b0c12954966cbf8c3fe",
@@ -244,8 +248,8 @@
     "_journal/2024-03/2024-03-03.md": "64e2f17b4d57a6bd42a3d1b7f2851b83",
     "_journal/2024-03-05.md": "e9a911c19bb4c0ff451db793248cb4bb",
     "_journal/2024-03/2024-03-04.md": "4948d90a08af2cff58c629c9a2e11ee4",
-    "algebra/sequences/geometric.md": "53936ec392b3b714bd4a9bdb4554b582",
-    "algebra/sequences/arithmetic.md": "674256494cdec6f12be553b27918e2d9",
+    "algebra/sequences/geometric.md": "3cf58281df1d72bdd853eab4d24d75f2",
+    "algebra/sequences/arithmetic.md": "5ac02c9a08962dd816e4c4a53761e602",
     "_journal/2024-03-06.md": "ac7a3d764934f49b2be7aa76e402d853",
     "_journal/2024-03/2024-03-05.md": "94b28d0b9bc62cc0bd99d315fb7c6d30",
     "_journal/2024-03-07.md": "7bf68d6d81e89aa00f5ddd7510b69e3e",
@@ -265,7 +269,11 @@
     "_journal/2024-03-14.md": "1c173cab2e903aad876c5f11d49a8b20",
     "_journal/2024-03/2024-03-13.md": "6a2ad92d0983c36acef93932bfec1758",
     "git/references.md": "73792b2c7a0700a58336e045915ba0d4",
-    "_journal/2024-03-15.md": "879afe6bc882e494be20a284196747a5"
+    "_journal/2024-03-15.md": "a1f0ba85b8d3dd8cf1976373298eb717",
+    "encoding/float.md": "4a1b49e2f3223c913dfdf469429002bd",
+    "_journal/2024-03/2024-03-14.md": "1c173cab2e903aad876c5f11d49a8b20",
+    "_journal/2024-03-16.md": "ef1bcb4d28790c8a32691ddedd6c289f",
+    "_journal/2024-03/2024-03-15.md": "e54b2513beac5f46313b4c37622adf39"
   },
   "fields_dict": {
     "Basic": [

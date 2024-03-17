@@ -337,6 +337,7 @@ Specifier | Description
 `o`       | an octal `unsigned int`
 `f`, `F`  | a `double` in fixed-point notation
 `e`, `E`  | a `double` in standard notation
+`g`, `G`  | a `double` in normal or standard notation
 `s`       | a `NUL`-terminated string
 `c`       | a `char` character
 `p`       | `void*` address in an implementation-defined format
@@ -551,6 +552,15 @@ END%%
 
 %%ANKI
 Basic
+Which format specifiers correspond to scientific notation?
+Back: `%e` and `%E`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710556915108-->
+END%%
+
+%%ANKI
+Basic
 Which format specifier was probably used to yield `printf` output `1.723450e+02`?
 Back: `%e`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
@@ -601,6 +611,94 @@ Back: `6`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1710452502034-->
+END%%
+
+%%ANKI
+Cloze
+The {`%g`} format specifier outputs a {lowercase `double` in fixed-point or standard notation}.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710599835115-->
+END%%
+
+%%ANKI
+Basic
+The {`%G`} format specifier outputs a {uppercase `double` in fixed-point or standard notation}.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710599806324-->
+END%%
+
+%%ANKI
+Basic
+The `%g` format specifier subsumes functionality of what other format specifiers?
+Back: `%f` and `%e`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710599806326-->
+END%%
+
+%%ANKI
+Basic
+The `%G` format specifier subsumes functionality of what other format specifiers?
+Back: `%F` and `%E`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710599806328-->
+END%%
+
+%%ANKI
+Basic
+How does `%g` handle integral values differently from `%f`?
+Back: It excludes a trailing `.` and insignificant `0`s.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710603411171-->
+END%%
+
+%%ANKI
+Basic
+How does `%g` handle non-integral values differently from `%f`?
+Back: It excludes insignifant `0`s after the `.`.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710603411174-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes `%g` from `%G`?
+Back: The former uses lowercase letters. The latter uses uppercase letters.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710599806331-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `printf("%g", 3.14)`?
+Back: `3.14`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710599806333-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `printf("%g", 3)`?
+Back: `3`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710599806334-->
+END%%
+
+%%ANKI
+Basic
+What is the output of `printf("%f", 3)`?
+Back: `3.000000`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710599806336-->
 END%%
 
 %%ANKI
