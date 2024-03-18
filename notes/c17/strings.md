@@ -80,12 +80,13 @@ Tags: printf
 <!--ID: 1708425941269-->
 END%%
 
-| Flag | Description                                        |
-| ---- | -------------------------------------------------- |
-| `-`  | Left-aligns the output                             |
-| `+`  | Prepends a plus for positive signed-numeric types  |
-| `␣`  | Prepends a space for positive signed-numeric types |
-| `0`  | Prepends zeros for numeric types                   |
+Flag | Description
+---- | -----------
+`-`  | Left-aligns the output
+`+`  | Prepends a plus for positive signed-numeric types
+`␣`  | Prepends a space for positive signed-numeric types
+`0`  | Prepends zeros for numeric types
+`#`  | For `g` and `G`, trailing zeros are not removed. For `f`, `F`, `e`, `E`, `g`, and `G`, output always has a decimal point. For `o`, `x`, and `X`, the text `0`, `0x`, and `0X` is prepended to non-zero numbers respectively.
 
 %%ANKI
 Cloze
@@ -270,6 +271,77 @@ Back: Spaces are used to match the "width" option by default.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707918756888-->
+END%%
+
+%%ANKI
+Basic
+How is `%#g` different from `%g`?
+Back: The former always includes a decimal point and may include trailing `0`s.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710673807973-->
+END%%
+
+%%ANKI
+Basic
+How is `%#f` different from `%f`?
+Back: The former always includes a decimal point.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710673807976-->
+END%%
+
+%%ANKI
+Basic
+How is `%#e` different from `%e`?
+Back: The former always includes a decimal point.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710673807979-->
+END%%
+
+%%ANKI
+Basic
+Which `printf` flag can be used to ensure decimal points in the output of floating-point types?
+Back: `#`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710673807981-->
+END%%
+
+%%ANKI
+Basic
+How is `%#o` different from `%o`?
+Back: The former prepends a `0` to the output.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710673807983-->
+END%%
+
+%%ANKI
+Basic
+How is `%#x` different from `%x`?
+Back: The former prepends a `0x` to the output.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710673807986-->
+END%%
+
+%%ANKI
+Basic
+How is `%#X` different from `%X`?
+Back: The former prepends a `0X` to the output.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710673807988-->
+END%%
+
+%%ANKI
+Cloze
+`%#o` is to {`0`} as `%#x` is to {`0x`}.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1710673807990-->
 END%%
 
 Length    | Description
@@ -486,6 +558,42 @@ Back: `inf`, `infinity`, and `nan`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1710450347012-->
+END%%
+
+%%ANKI
+Basic
+Assuming round-to-even, what is the output of `printf("%.0f", 3.5)`?
+Back: `4`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: printf
+<!--ID: 1710675908301-->
+END%%
+
+%%ANKI
+Basic
+Assuming round-to-even, what is the output of `printf("%.0f", 2.5)`?
+Back: `2`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: printf
+<!--ID: 1710675908304-->
+END%%
+
+%%ANKI
+Basic
+How does the C standard define the rounding mode of floating-point specifiers?
+Back: This is implementation specific.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: printf
+<!--ID: 1710675908306-->
+END%%
+
+%%ANKI
+Basic
+What does the rounding mode of floating-point specifiers refer to?
+Back: How numbers with greater than the specified precision are output.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: printf
+<!--ID: 1710675908307-->
 END%%
 
 %%ANKI

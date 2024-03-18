@@ -234,10 +234,33 @@ END%%
 
 %%ANKI
 Basic
+How do we specify an octal integer literal?
+Back: Prepend the literal with a `0`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710673807992-->
+END%%
+
+%%ANKI
+Basic
 Why avoid negative octal integer literals?
 Back: Depending on value, the resulting type may be `unsigned`.
 Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708631820829-->
+END%%
+
+%%ANKI
+Basic
+How do we specify a hexadecimal integer literal?
+Back: Prepend the literal with a `0x` or `0X`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710673807995-->
+END%%
+
+%%ANKI
+Cloze
+Octal literals are to {`0`} whereas hexadecimal literals are to {`0x`/`0X`}.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710673807997-->
 END%%
 
 %%ANKI

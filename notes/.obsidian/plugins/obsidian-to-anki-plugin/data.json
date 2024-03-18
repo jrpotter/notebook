@@ -212,10 +212,10 @@
     "_journal/2024-02/2024-02-21.md": "f423137ae550eb958378750d1f5e98c7",
     "_journal/2024-02-23.md": "219ce9ad15a8733edd476c97628b71fd",
     "_journal/2024-02/2024-02-22.md": "312e55d57868026f6e80f7989a889c2b",
-    "c17/strings.md": "d8a1193ecbbc43aa81539585babb91b1",
+    "c17/strings.md": "3335356dee2b0e28a356adc851ee1375",
     "c17/index.md": "78576ee41d0185df82c59999142f4edb",
     "c17/escape-sequences.md": "ebc63c6cdfbe60bbc2708c1b0c8da8bb",
-    "c17/declarations.md": "20e200f2b7abcab8f873cd080f4c9770",
+    "c17/declarations.md": "cec6866dff8ad160467df62cfceb6872",
     "algorithms/sorting/merge-sort.md": "fdc6311b0f9e7d85899fc77a95872a2f",
     "_journal/2024-02-24.md": "9bb319d5014caf962a9ce3141076cff4",
     "_journal/2024-02/2024-02-23.md": "0aad297148e8cc4058b48b7e45787ca7",
@@ -231,7 +231,7 @@
     "filesystems/cas.md": "34906013a2a60fe5ee0e31809b4838aa",
     "git/objects.md": "e9b98576291ca04496c2f0863f526cfa",
     "git/index.md": "83d2d95fc549d9e8436946c7bd058d15",
-    "encoding/integer.md": "87f6b405cc33a5f8517588928b0cb17e",
+    "encoding/integer.md": "14cbb409fde144875d75eefc53ce7f35",
     "_journal/2024-02-29.md": "f610f3caed659c1de3eed5f226cab508",
     "_journal/2024-02/2024-02-28.md": "7489377c014a2ff3c535d581961b5b82",
     "_journal/2024-03-01.md": "a532486279190b0c12954966cbf8c3fe",
@@ -270,10 +270,13 @@
     "_journal/2024-03/2024-03-13.md": "6a2ad92d0983c36acef93932bfec1758",
     "git/references.md": "73792b2c7a0700a58336e045915ba0d4",
     "_journal/2024-03-15.md": "a1f0ba85b8d3dd8cf1976373298eb717",
-    "encoding/float.md": "4a1b49e2f3223c913dfdf469429002bd",
+    "encoding/float.md": "5c3f06d8efe031e341cd295ff235adcc",
     "_journal/2024-03/2024-03-14.md": "1c173cab2e903aad876c5f11d49a8b20",
     "_journal/2024-03-16.md": "ef1bcb4d28790c8a32691ddedd6c289f",
-    "_journal/2024-03/2024-03-15.md": "e54b2513beac5f46313b4c37622adf39"
+    "_journal/2024-03/2024-03-15.md": "e54b2513beac5f46313b4c37622adf39",
+    "_journal/2024-03-17.md": "72e99c7630085aee2c7f340a06b5ada7",
+    "_journal/2024-03/2024-03-16.md": "ab7629c24ebe70838072cf6acec47cb0",
+    "encoding/floating-point.md": "6aa91498473ea5f8504dfa7f87bf77f4"
   },
   "fields_dict": {
     "Basic": [

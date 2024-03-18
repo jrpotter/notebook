@@ -1,5 +1,5 @@
 ---
-title: Float Encoding
+title: Floating Point
 TARGET DECK: Obsidian::STEM
 FILE TAGS: binary::float ieee
 tags:
@@ -10,18 +10,22 @@ tags:
 
 ## Overview
 
-The IEEE floating-point standard defines an encoding used to represent numbers of form $$(-1)^s \times M \times 2^E$$ where $s$ denotes the **sign bit**, $M$ the **significand**, and $E$ the **exponent**. The binary representation of floating point numbers are segmented into three fields: the sign bit, the exponent field, and the fraction field. Furthermore, there are two forms these fields are interpreted with respect to:
+The IEEE floating-point standard defines an encoding used to represent numbers of form $$(-1)^s \times M \times 2^E$$ where $s$ denotes the **sign bit**, $M$ the **significand**, and $E$ the **exponent**. The binary representation of floating point numbers are segmented into three fields: the sign bit, the exponent field, and the fraction field. Furthermore, there are three classes these fields are interpreted with respect to:
 
 * Normalized Form
 	* Here the exponent field is neither all `0`s nor all `1`s.
 	* The significand is $1 + f$, where $f$ denotes the fractional part.
 	* $E = e - Bias$ where $e$ is the unsigned interpretation of the exponent field.
 * Denormalized Form
-	* Here the exponent field is either all `0`s or all `1`s.
+	* Here the exponent field is all `0`s.
 	* The significand is $f$, where $f$ denotes the fractional part.
 	* $E = 1 - Bias$, defined for smooth transition between normalized and denormalized values.
+* Special Values
+	* Here the exponent field is all `1`s.
+	* If the fraction field is all `0`s, we have an $\infty$ value.
+	* If the fraction field is not all `0`s, we have $NaN$.
 
-The $Bias$ in both forms is set to $2^{k - 1} - 1$ where $k$ denotes the number of bits that make up the exponent field. In C, fields have the following widths:
+The $Bias$ in the first two forms is set to $2^{k - 1} - 1$ where $k$ denotes the number of bits that make up the exponent field. In C, fields have the following widths:
 
 Declaration | Sign Bit | Exponent Field | Fractional Field
 ----------- | -------- | -------------- | ----------------
@@ -158,7 +162,7 @@ END%%
 
 %%ANKI
 Basic
-What IEEE standard describes floating point operations?
+What IEEE standard (number) describes floating point operations?
 Back: 754
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710556914957-->
@@ -167,7 +171,7 @@ END%%
 %%ANKI
 Basic
 What alternative name does IEEE Standard 754 go by?
-Back: IEEE floating point
+Back: IEEE floating-point
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710556914959-->
 END%%
@@ -256,7 +260,7 @@ END%%
 %%ANKI
 Basic
 What visualization explains why $0.11\cdots1_2 = 1 - 2^{-n}$?
-Back: Each additional $1$ halves the remaining interval.
+Back: Each additional $1$ adds half of the remaining interval to a running total.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710556914982-->
 END%%
@@ -558,7 +562,7 @@ END%%
 %%ANKI
 Basic
 When is a floating-point number considered denormalized?
-Back: When the exponent field is either all `0`s or all `1`s.
+Back: When the exponent field is all `0`s.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710556915061-->
 END%%
@@ -951,6 +955,503 @@ How does the smallest exponent *value* relate to the $Bias$?
 Back: It equals $1 - Bias$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710605798354-->
+END%%
+
+%%ANKI
+Basic
+What three forms can an IEEE floating-point number take on?
+Back: Normalized, denormalized, and special value.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710672470749-->
+END%%
+
+%%ANKI
+Basic
+When is a floating-point number considered a special value?
+Back: When the exponent field is all `1`s.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710672470791-->
+END%%
+
+%%ANKI
+Basic
+What special values can a floating-point number take on?
+Back: $\infty$ and $NaN$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710672470794-->
+END%%
+
+%%ANKI
+Basic
+Representable floating-point numbers are denser around what?
+Back: $0$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710672470797-->
+END%%
+
+%%ANKI
+Basic
+IEEE floating-point was designed to allow efficiently sorting using what?
+Back: An integer sorting routine.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710672470799-->
+END%%
+
+%%ANKI
+Basic
+*Why* can IEEE floating-point values be sorted using an integer sorting routine?
+Back: The unsigned interpretation of ascending floating-point numbers is also ascending.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710672470801-->
+END%%
+
+%%ANKI
+Basic
+What complication exists in integer sorting routines applied to IEEE floating-point values?
+Back: The unsigned interpretation of negative floating-point numbers is in descending order.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710672470805-->
+END%%
+
+## Rounding
+
+Because floating-point arithmetic can't represent every real number, it must round results to the "nearest" representable number, however "nearest" is defined. The IEEE floating-point standard defines four **rounding modes** to influence this behavior:
+
+* **Round-to-even** rounds numbers to the closest representable value. In the case of values equally between two representations, it rounds to the number with an even least significant digit.
+* **Round-toward-zero** rounds downward for positive values and upward for negative values.
+* **Round-down** always rounds downward.
+* **Round-up** always rounds upward.
+
+%%ANKI
+Basic
+What are the four rounding modes supported in the IEEE floating-point standard?
+Back: Round-to-even, round-toward-zero, round-down, and round-up.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824748-->
+END%%
+
+%%ANKI
+Cloze
+{1:Round-toward-zero} is to {2:integer} division whereas {2:round-down} is to {1:floor} division.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824750-->
+END%%
+
+%%ANKI
+Cloze
+{1:Round-up} is to {2:ceiling} division whereas {2:round-toward-zero} is to {1:integer} division.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824752-->
+END%%
+
+%%ANKI
+Basic
+What is the default IEEE floating-point standard rounding mode?
+Back: Round-to-even.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824754-->
+END%%
+
+%%ANKI
+Basic
+What alternative name does round-to-even go by?
+Back: Round-to-nearest.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824757-->
+END%%
+
+%%ANKI
+Basic
+How is floating-point `1.40` rounded in round-to-even mode?
+Back: `1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824759-->
+END%%
+
+%%ANKI
+Basic
+How is floating-point `1.50` rounded in round-to-even mode?
+Back: `2`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824761-->
+END%%
+
+%%ANKI
+Basic
+How is floating-point `1.60` rounded in round-to-even mode?
+Back: `2`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824763-->
+END%%
+
+%%ANKI
+Basic
+How is floating-point `-1.50` rounded in round-to-even mode?
+Back: `-2`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824765-->
+END%%
+
+%%ANKI
+Basic
+How is floating-point `1.40` rounded in round-to-zero mode?
+Back: `1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824767-->
+END%%
+
+%%ANKI
+Basic
+How is floating-point `1.50` rounded in round-to-zero mode?
+Back: `1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824769-->
+END%%
+
+%%ANKI
+Basic
+How is floating-point `-1.50` rounded in round-to-zero mode?
+Back: `-1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824771-->
+END%%
+
+%%ANKI
+Basic
+How is floating-point `1.40` rounded in round-down mode?
+Back: `1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824774-->
+END%%
+
+%%ANKI
+Basic
+How is floating-point `1.50` rounded in round-down mode?
+Back: `1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824776-->
+END%%
+
+%%ANKI
+Basic
+How is floating-point `-1.50` rounded in round-down mode?
+Back: `-2`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824778-->
+END%%
+
+%%ANKI
+Basic
+How is floating-point `1.40` rounded in round-up mode?
+Back: `2`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824780-->
+END%%
+
+%%ANKI
+Basic
+How is floating-point `1.50` rounded in round-up mode?
+Back: `2`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824782-->
+END%%
+
+%%ANKI
+Basic
+How is floating-point `-1.50` rounded in round-up mode?
+Back: `-1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824785-->
+END%%
+
+%%ANKI
+Basic
+*Why* does round-to-even prefer even over odd numbers?
+Back: This is an arbitrary choice.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824787-->
+END%%
+
+%%ANKI
+Basic
+*Why* does round-to-even prefer even over always rounding down?
+Back: The former more reliably avoids potential statistical biases.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824790-->
+END%%
+
+%%ANKI
+Basic
+In round-to-even rounding, what bit is considered even?
+Back: `0`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824792-->
+END%%
+
+%%ANKI
+Basic
+In round-to-even rounding, what bit is considered odd?
+Back: `1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824794-->
+END%%
+
+%%ANKI
+Basic
+How does the IEEE floating-point standard define $1/-0$?
+Back: $-\infty$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824796-->
+END%%
+
+%%ANKI
+Basic
+How does the IEEE floating-point standard define $1/+0$?
+Back: $\infty$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824798-->
+END%%
+
+%%ANKI
+Basic
+What value(s) do IEEE floating-point numbers take on in the case of overflow?
+Back: $\pm\infty$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824800-->
+END%%
+
+%%ANKI
+Basic
+What value(s) do IEEE floating-point numbers take on in the case of underflow?
+Back: $0$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824802-->
+END%%
+
+## Arithmetic
+
+%%ANKI
+Basic
+What does $+^f$ denote?
+Back: Floating-point addition.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824805-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $x +^f y$?
+Back: $Round(x + y)$ where $Round$ refers to the current rounding-mode.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824808-->
+END%%
+
+%%ANKI
+Basic
+Is $+^f$ commutative?
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824810-->
+END%%
+
+%%ANKI
+Basic
+Is $+^f$ associative?
+Back: No.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824813-->
+END%%
+
+%%ANKI
+Basic
+Which IEEE floating-point values do not have an additive inverse?
+Back: $\pm\infty$ and $NaN$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824815-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a normalized floating-point value. What is its additive inverse?
+Back: $-f$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824817-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a denormalized floating-point value. What is its additive inverse?
+Back: $-f$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824819-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a special floating-point value. What is its additive inverse?
+Back: N/A
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824822-->
+END%%
+
+%%ANKI
+Basic
+What is the most important group quality $+^f$ is lacking?
+Back: Associativity.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824824-->
+END%%
+
+%%ANKI
+Basic
+What does $*^f$ denote?
+Back: Floating-point multiplication.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824826-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $x *^f* y$?
+Back: $Round(x * y)$ where $Round$ refers to the current rounding-mode.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824827-->
+END%%
+
+%%ANKI
+Basic
+Is $*^f$ commutative?
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824829-->
+END%%
+
+%%ANKI
+Basic
+Is $*^f$ associative?
+Back: No.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824832-->
+END%%
+
+%%ANKI
+Basic
+What is the multiplicative identity of $*^f$?
+Back: $1.0$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824834-->
+END%%
+
+%%ANKI
+Basic
+Does $*^f$ distribute over $+^f$?
+Back: No.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824836-->
+END%%
+
+%%ANKI
+Basic
+What property of floating-point values prevents it behaving like "real math"?
+Back: It represents a finite number of values and rounds results if need be.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824838-->
+END%%
+
+%%ANKI
+Basic
+How is precision affected when casting from `float` to `double`?
+Back: It isn't.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824841-->
+END%%
+
+%%ANKI
+Basic
+How is precision affected when casting from `double` to `float`?
+Back: Rounding may occur.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824844-->
+END%%
+
+%%ANKI
+Basic
+*Why* might rounding occur when casting from `double` to `float`?
+Back: `float`s have less precision.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824846-->
+END%%
+
+%%ANKI
+Basic
+What overflow values might result when casting from `float` to `double`?
+Back: N/A
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824848-->
+END%%
+
+%%ANKI
+Basic
+What overflow values might result when casting from `double` to `float`?
+Back: $\pm\infty$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824850-->
+END%%
+
+%%ANKI
+Basic
+*Why* might overflow occur when casting from `double` to `float`?
+Back: `float`s have smaller range.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824852-->
+END%%
+
+%%ANKI
+Basic
+Assuming no overflow, what is the result of casting a `double` to an `int`?
+Back: The `double`'s value rounded toward `0`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824856-->
+END%%
+
+%%ANKI
+Basic
+Assuming overflow, what is the result of casting a `double` to an `int`?
+Back: The result is implementation-specific.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824858-->
+END%%
+
+%%ANKI
+Basic
+Assuming no overflow, what is the result of casting a `float` to an `int`?
+Back: The `float`'s value rounded toward `0`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824861-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `(int) (double) 1.5`?
+Back: `1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824863-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `(int) (double) -1.5`?
+Back: `-1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824865-->
+END%%
+
+%%ANKI
+Basic
+Assuming overflow, what is the result of casting a `float` to an `int`?
+Back: The result is implementation-specific.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824867-->
 END%%
 
 ## References

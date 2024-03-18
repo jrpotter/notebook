@@ -1,5 +1,5 @@
 ---
-title: Integer Encoding
+title: Integers
 TARGET DECK: Obsidian::STEM
 FILE TAGS: binary::integer
 tags:
@@ -230,7 +230,7 @@ END%%
 %%ANKI
 Basic
 How does Bryant et al. define $B2U_w$?
-Back: $B2U_w(\vec{x}) = 2^{w-1}x_{w-1} + \sum_{i=0}^{w-2} 2^ix_i$
+Back: $B2U_w(\vec{x}) = 2^{w-1}x_{w-1} + \sum_{k=0}^{w-2} 2^kx_k$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708179147785-->
 END%%
@@ -415,7 +415,7 @@ END%%
 %%ANKI
 Basic
 How does Bryant et al. define $B2T_w$?
-Back: $B2T_w(\vec{x}) = -2^{w-1}x_{w-1} + \sum_{i=0}^{w-2} 2^ix_i$
+Back: $B2T_w(\vec{x}) = -2^{w-1}x_{w-1} + \sum_{k=0}^{w-2} 2^kx_k$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708179649901-->
 END%%
@@ -1138,6 +1138,22 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1709492205964-->
 END%%
 
+%%ANKI
+Basic
+Is $+_w^u$ commutative?
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824725-->
+END%%
+
+%%ANKI
+Basic
+Is $+_w^u$ associative?
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824728-->
+END%%
+
 Two's-complement addition, denoted $+_w^t$ operates similarly:
 
 $$x +_w^u y = \begin{cases}
@@ -1359,6 +1375,22 @@ Ignoring overflow, what is the width of the smallest possible value of $x +_w^t 
 Back: $w + 1$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1709492205974-->
+END%%
+
+%%ANKI
+Basic
+Is $+_w^t$ commutative?
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824730-->
+END%%
+
+%%ANKI
+Basic
+Is $+_w^t$ associative?
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824733-->
 END%%
 
 ### Shifting
@@ -1677,6 +1709,30 @@ Tags: c17
 <!--ID: 1709831032382-->
 END%%
 
+%%ANKI
+Basic
+Is $*_w^u$ commutative?
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824735-->
+END%%
+
+%%ANKI
+Basic
+Is $*_w^u$ associative?
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824737-->
+END%%
+
+%%ANKI
+Basic
+Does $*^u_w$ distribute over $+^u_w$?
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824740-->
+END%%
+
 Similarly, two's-complement multiplication is defined as follows: $$x *_w^t y = U2T_w((x \cdot y) \bmod 2^w)$$
 
 %%ANKI
@@ -1813,6 +1869,30 @@ x = x * pow(2, k);
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1709831032386-->
+END%%
+
+%%ANKI
+Basic
+Is $*_w^t$ commutative?
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824742-->
+END%%
+
+%%ANKI
+Basic
+Is $*_w^t$ associative?
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824744-->
+END%%
+
+%%ANKI
+Basic
+Does $*^t_w$ distribute over $+^t_w$?
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824746-->
 END%%
 
 %%ANKI
