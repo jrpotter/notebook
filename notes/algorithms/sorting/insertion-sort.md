@@ -24,7 +24,7 @@ Adaptive    | Yes
 Basic
 Describe `INSERTION_SORT` in a single sentence.
 Back: Repeatedly put the next record into a sorted array from right to left.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707589393194-->
 END%%
 
@@ -32,7 +32,7 @@ END%%
 Basic
 What is `INSERTION_SORT`'s best case runtime?
 Back: $\Omega(n)$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1706925879541-->
 END%%
 
@@ -40,7 +40,7 @@ END%%
 Basic
 What input value does `INSERTION_SORT` perform best on?
 Back: An already sorted array.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1706925921544-->
 END%%
 
@@ -48,7 +48,7 @@ END%%
 Basic
 What is `INSERTION_SORT`'s worst case runtime?
 Back: $O(n^2)$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1706926586947-->
 END%%
 
@@ -56,7 +56,7 @@ END%%
 Basic
 What input value does `INSERTION_SORT` perform worst on?
 Back: An array in reverse-sorted order.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1706926586951-->
 END%%
 
@@ -64,7 +64,7 @@ END%%
 Basic
 What is `INSERTION_SORT`'s average case runtime?
 Back: $O(n^2)$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707329732933-->
 END%%
 
@@ -72,7 +72,7 @@ END%%
 Basic
 Is `INSERTION_SORT` in place?
 Back: Yes
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1706926586955-->
 END%%
 
@@ -80,7 +80,7 @@ END%%
 Basic
 Is `INSERTION_SORT` stable?
 Back: Yes
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1706926586959-->
 END%%
 
@@ -88,7 +88,7 @@ END%%
 Basic
 Is `INSERTION_SORT` adaptive?
 Back: Yes
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634779-->
 END%%
 
@@ -110,7 +110,7 @@ Basic
 What sorting algorithm does the following demonstrate?
 ![[insertion-sort.gif]]
 Back: `INSERTION_SORT`
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707400559085-->
 END%%
 
@@ -140,7 +140,7 @@ END%%
 Basic
 What is initialization of `INSERTION_SORT`'s loop invariant?
 Back: Sorting starts with an singleton array which is trivially sorted.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707332638373-->
 END%%
 
@@ -148,14 +148,14 @@ END%%
 Basic
 What is maintenance of `INSERTION_SORT`'s loop invariant?
 Back: Each iteration puts the current element into sorted order.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707332638375-->
 END%%
 
 %%ANKI
 Cloze
 `INSERTION_SORT` makes fewer {comparisons} than `SELECTION_SORT` in the average case.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708002185982-->
 END%%
 
@@ -169,7 +169,7 @@ If you repeat this process for every card in the deck, your left hand will event
 Basic
 What analogy does Cormen et al. use to explain `INSERTION_SORT`?
 Back: Sorting a shuffled deck of playing cards.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1706927594729-->
 END%%
 
@@ -177,7 +177,7 @@ END%%
 Basic
 What invariant does the left hand maintain in Cormen et al.'s `INSERTION_SORT` analogy?
 Back: It contains all drawn cards in sorted order.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1706927594732-->
 END%%
 
@@ -188,7 +188,7 @@ Back:
 ```
 [ sorted | unsorted ]
 ```
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707399790957-->
 END%%
 
@@ -199,7 +199,7 @@ How many comparisons does `INSERTION_SORT` typically perform with `x`?
 [ sorted | x : unsorted ]
 ```
 Back: One plus however many elements in `sorted` are greater than `x`.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707399790958-->
 END%%
 
@@ -210,10 +210,10 @@ Which element will `INSERTION_SORT` move to `sorted`?
 [ sorted | unsorted ]
 ```
 Back: The first element of `unsorted`.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707399790960-->
 END%%
 
 ## References
 
-* Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+* Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

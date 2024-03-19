@@ -21,7 +21,7 @@ A loop invariant $P$ is a condition that holds before, during, and after each it
 Basic
 What are the three necessary properties of a loop invariant?
 Back: Initialization, maintenance, and termination.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707329732922-->
 END%%
 
@@ -29,7 +29,7 @@ END%%
 Basic
 What does it mean for loop invariant $P$ to respect initialization?
 Back: $P$ is true before the first iteration of the loop.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707329732926-->
 END%%
 
@@ -37,7 +37,7 @@ END%%
 Basic
 What does it mean for loop invariant $P$ to respect maintenance?
 Back: If $P$ is true before an iteration, $P$ is also true before the next iteration.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707329732928-->
 END%%
 
@@ -45,7 +45,7 @@ END%%
 Basic
 What does it mean for loop invariant $P$ to respect termination?
 Back: $P$ provides a condition used to prove an algorithm's correctness.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707329732929-->
 END%%
 
@@ -56,7 +56,7 @@ At what point in the following should initialization of a loop invariant be chec
 for (int i = 0; i < n; ++i) { ... }
 ```
 Back: After `int i = 0` but before `i < n`.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: c17
 <!--ID: 1707329732931-->
 END%%
@@ -66,14 +66,14 @@ Notice loop invariants mirror mathematical induction. Initialization is analogou
 %%ANKI
 Cloze
 Loop invariants are to {initialization} whereas mathematical induction is to {a base case}.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707329951146-->
 END%%
 
 %%ANKI
 Cloze
 Loop invariants are to {maintenance} whereas mathematical induction is to {the inductive step}.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707329951148-->
 END%%
 
@@ -81,10 +81,10 @@ END%%
 Basic
 Which loop invariant property has no analogy to mathematical induction?
 Back: Termination
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707329951150-->
 END%%
 
 ## References
 
-* Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+* Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

@@ -18,7 +18,7 @@ Aux. Memory | $O(1)$
 Basic
 What precondition must the input of `BINARY_SEARCH` satisfy?
 Back: It must already be sorted.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708781334247-->
 END%%
 
@@ -26,7 +26,7 @@ END%%
 Basic
 What is the best case running time of `BINARY_SEARCH`?
 Back: $\Omega(1)$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708117310004-->
 END%%
 
@@ -34,7 +34,7 @@ END%%
 Basic
 What input does `BINARY_SEARCH` perform best on?
 Back: One in which the value being searched for is already in the middle.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708117310011-->
 END%%
 
@@ -42,7 +42,7 @@ END%%
 Basic
 What is the worst case running time of `BINARY_SEARCH`?
 Back: $O(\lg{n})$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708117310015-->
 END%%
 
@@ -50,7 +50,7 @@ END%%
 Basic
 What input does `BINARY_SEARCH` perform worst on?
 Back: One in which the value does not exist.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708117310018-->
 END%%
 
@@ -58,7 +58,7 @@ END%%
 Basic
 What is the typical output of `BINARY_SEARCH`?
 Back: The index of the element in the array being searched for, if found.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708117310021-->
 END%%
 
@@ -108,7 +108,7 @@ int binary_search(const int needle, const int n, int A[static n]) {
 Basic
 In `BINARY_SEARCH`, when could using floor for midpoint calculations yield different answers than ceiling?
 Back: When there exist duplicate members.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708174545522-->
 END%%
 
@@ -116,10 +116,10 @@ END%%
 Basic
 In `BINARY_SEARCH`, what ensures left pointer `L` and right pointers `R` eventually satisfy `L > R`?
 Back: The found midpoint is always excluded from the next `BINARY_SEARCH` invocation.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708174545527-->
 END%%
 
 ## References
 
-* Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+* Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

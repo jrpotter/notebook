@@ -24,7 +24,7 @@ Adaptive    | -
 Basic
 What does the term "merge" in `MERGE_SORT` refer to?
 Back: The primary operation used to combine array halves.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742467101-->
 END%%
 
@@ -32,7 +32,7 @@ END%%
 Basic
 What is `MERGE_SORT`'s best case runtime?
 Back: $\Omega(n\lg{n})$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742467109-->
 END%%
 
@@ -40,7 +40,7 @@ END%%
 Basic
 What is `MERGE_SORT`'s worst case runtime?
 Back: $O(n\lg{n})$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742467112-->
 END%%
 
@@ -48,7 +48,7 @@ END%%
 Basic
 What is `MERGE_SORT`'s average case runtime?
 Back: $O(n\lg{n})$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742467115-->
 END%%
 
@@ -56,7 +56,7 @@ END%%
 Basic
 What is the "divide" step of `MERGE_SORT`?
 Back: Divide the input array into two subarrays of half size.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742467118-->
 END%%
 
@@ -64,7 +64,7 @@ END%%
 Basic
 What is the "conquer" step of `MERGE_SORT`?
 Back: Call `MERGE_SORT` on the "divide"-step's two subarrays.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742467121-->
 END%%
 
@@ -72,7 +72,7 @@ END%%
 Basic
 What is the "combine" step of `MERGE_SORT`?
 Back: Merge the sorted subarrays produced by the "conquer" step.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742467125-->
 END%%
 
@@ -80,7 +80,7 @@ END%%
 Basic
 When does `MERGE_SORT` "bottom out"?
 Back: When the sequence to be sorted has length 1 or less.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742467133-->
 END%%
 
@@ -130,7 +130,7 @@ void merge_sort(int i, int j, int *A) {
 Basic
 Where in `MERGE_SORT`'s implementation are sentinels useful?
 Back: As the last elements of the two arrays to combine.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742467137-->
 END%%
 
@@ -138,7 +138,7 @@ END%%
 Basic
 What sentinel values are typically used in `MERGE_SORT`'s "merge" operation?
 Back: $\infty$ or the record type's equivalent.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742467141-->
 END%%
 
@@ -147,10 +147,10 @@ Basic
 What sorting algorithm does the following demonstrate?
 ![[merge-sort.gif]]
 Back: `MERGE_SORT`
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742590435-->
 END%%
 
 ## References
 
-* Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+* Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

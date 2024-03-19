@@ -33,15 +33,6 @@ END%%
 
 %%ANKI
 Basic
-What alternative does Lua provide to C's `\ooo` sequence?
-Back: `\ddd`, a *decimal* escape sequence.
-Reference: Roberto Ierusalimschy, _Programming in Lua_, Fourth edition (Rio de Janeiro: Lua.org, 2016).
-Tags: lua
-<!--ID: 1706975891813-->
-END%%
-
-%%ANKI
-Basic
 How are C escape sequences exposed in bash?
 Back: Using ANSI-C quoting, i.e. `$$'string'`.
 Reference: Mendel Cooper, “Advanced Bash-Scripting Guide,” n.d., 916.

@@ -24,7 +24,7 @@ Adaptive    | Yes
 Basic
 Describe `BUBBLE_SORT` in a single sentence.
 Back: Repeatedly swap the smaller of adjacent records downward.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707589393196-->
 END%%
 
@@ -32,7 +32,7 @@ END%%
 Basic
 What is `BUBBLE_SORT`'s best case runtime?
 Back: $\Omega(n)$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634781-->
 END%%
 
@@ -40,7 +40,7 @@ END%%
 Basic
 How is it `BUBBLE_SORT` achieves best case linear runtime?
 Back: By terminating when no swaps occurred on a given iteration.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634782-->
 END%%
 
@@ -48,7 +48,7 @@ END%%
 Basic
 What input value does `BUBBLE_SORT` perform best on?
 Back: An already sorted array.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634784-->
 END%%
 
@@ -56,7 +56,7 @@ END%%
 Basic
 What is `BUBBLE_SORT`'s worst case runtime?
 Back: $O(n^2)$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634785-->
 END%%
 
@@ -64,7 +64,7 @@ END%%
 Basic
 What input value does `BUBBLE_SORT` perform worst on?
 Back: An array in reverse-sorted order.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634787-->
 END%%
 
@@ -72,7 +72,7 @@ END%%
 Basic
 What is `BUBBLE_SORT`'s average case runtime?
 Back: $O(n^2)$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634788-->
 END%%
 
@@ -80,7 +80,7 @@ END%%
 Basic
 Is `BUBBLE_SORT` in place?
 Back: Yes
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634789-->
 END%%
 
@@ -88,7 +88,7 @@ END%%
 Basic
 Is `BUBBLE_SORT` stable?
 Back: Yes
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634791-->
 END%%
 
@@ -96,7 +96,7 @@ END%%
 Basic
 Is `BUBBLE_SORT` adaptive?
 Back: Yes
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634792-->
 END%%
 
@@ -126,7 +126,7 @@ Basic
 What sorting algorithm does the following demonstrate?
 ![[bubble-sort.gif]]
 Back: `BUBBLE_SORT`
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634794-->
 END%%
 
@@ -149,7 +149,7 @@ We prove $P$ maintains the requisite properties:
 Basic
 Given array `A[0..n-1]`, what is `BUBBLE_SORT`'s loop invariant?
 Back: `A[0..i-1]` is a sorted array of the `i` least elements of `A`.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634796-->
 END%%
 
@@ -157,7 +157,7 @@ END%%
 Basic
 What is initialization of `BUBBLE_SORT`'s loop invariant?
 Back: Sorting starts with an empty array which is trivially sorted.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634797-->
 END%%
 
@@ -165,7 +165,7 @@ END%%
 Basic
 What is maintenance of `BUBBLE_SORT`'s loop invariant?
 Back: Each iteration puts the next least element into the sorted subarray.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634798-->
 END%%
 
@@ -176,7 +176,7 @@ Back:
 ```
 [ sorted | unsorted ]
 ```
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634800-->
 END%%
 
@@ -187,17 +187,17 @@ Which element will `BUBBLE_SORT` move to `sorted`?
 [ sorted | unsorted ]
 ```
 Back: The least element in `unsorted`.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634801-->
 END%%
 
 %%ANKI
 Cloze
 Selection sort makes fewer {swaps} than `BUBBLE_SORT` in the average case.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634803-->
 END%%
 
 ## References
 
-* Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+* Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

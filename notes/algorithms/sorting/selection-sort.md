@@ -25,7 +25,7 @@ Adaptive    | No
 Basic
 Describe `SELECTION_SORT` in a single sentence.
 Back: Repeatedly put the smallest unsorted record at the end of a sorted array.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707589393190-->
 END%%
 
@@ -33,7 +33,7 @@ END%%
 Basic
 What is `SELECTION_SORT`'s best case runtime?
 Back: $\Omega(n^2)$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707398773323-->
 END%%
 
@@ -41,7 +41,7 @@ END%%
 Basic
 What is `SELECTION_SORT`'s worst case runtime?
 Back: $O(n^2)$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707398773326-->
 END%%
 
@@ -49,7 +49,7 @@ END%%
 Basic
 What is `SELECTION_SORT`'s average case runtime?
 Back: $O(n^2)$
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707398773327-->
 END%%
 
@@ -57,7 +57,7 @@ END%%
 Basic
 Is `SELECTION_SORT` in place?
 Back: Yes
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707398773328-->
 END%%
 
@@ -65,7 +65,7 @@ END%%
 Basic
 Is `SELECTION_SORT` stable?
 Back: No
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707398773330-->
 END%%
 
@@ -73,7 +73,7 @@ END%%
 Basic
 Is `SELECTION_SORT` adaptive?
 Back: No
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634778-->
 END%%
 
@@ -102,7 +102,7 @@ Basic
 What sorting algorithm does the following demonstrate?
 ![[selection-sort.gif]]
 Back: `SELECTION_SORT`
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707400943836-->
 END%%
 
@@ -125,7 +125,7 @@ We prove $P$ maintains the requisite properties:
 Basic
 Given array `A[0..n-1]`, what is `SELECTION_SORT`'s loop invariant?
 Back: `A[0..i-1]` is a sorted array of the `i` least elements of `A`.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707398773331-->
 END%%
 
@@ -133,7 +133,7 @@ END%%
 Basic
 What is initialization of `SELECTION_SORT`'s loop invariant?
 Back: Sorting starts with an empty array which is trivially sorted.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707398773333-->
 END%%
 
@@ -141,7 +141,7 @@ END%%
 Basic
 What is maintenance of `SELECTION_SORT`'s loop invariant?
 Back: Each iteration puts the next least element into the sorted subarray.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707398773334-->
 END%%
 
@@ -152,7 +152,7 @@ Back:
 ```
 [ sorted | unsorted ]
 ```
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707399790952-->
 END%%
 
@@ -163,17 +163,17 @@ Which element will `SELECTION_SORT` move to `sorted`?
 [ sorted | unsorted ]
 ```
 Back: The least element in `unsorted`.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707399790955-->
 END%%
 
 %%ANKI
 Cloze
 `SELECTION_SORT` makes fewer {swaps} than `INSERTION_SORT` in the average case.
-Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708002177782-->
 END%%
 
 ## References
 
-* Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
+* Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
