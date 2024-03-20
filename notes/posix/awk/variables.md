@@ -1,9 +1,9 @@
 ---
 title: Variables
 TARGET DECK: Obsidian::STEM
-FILE TAGS: linux::cli gawk
+FILE TAGS: linux::cli posix::awk
 tags:
-  - gawk
+  - awk
 ---
 
 ## Overview
@@ -80,7 +80,8 @@ END%%
 Cloze
 The {`RT`} variable matches the {input characters that matched `RS`}.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1707310981386-->
+Tags: gnu::awk
+<!--ID: 1710938533567-->
 END%%
 
 %%ANKI
@@ -88,7 +89,16 @@ Basic
 Barring the final record, when is `RT` always equal to `RS`?
 Back: When `RS` is a string containing a single character.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1707310981388-->
+Tags: gnu::awk
+<!--ID: 1710938533571-->
+END%%
+
+%%ANKI
+Basic
+Why is the gawk `RT` variable unnecessary in POSIX `awk`?
+Back: Because POSIX `awk` does not permit setting `RS` to a regexp.
+Tags: gnu::awk
+<!--ID: 1710939301099-->
 END%%
 
 * `RS` (**R**ecord **S**eparator)
@@ -100,7 +110,7 @@ END%%
 | `"\n"`                 | Records are separated by the newline character. This is the default.                                                                                                            |
 | *any single character* | Records are separated by each occurrence of the character. Multiple successive occurrences delimit empty records.                                                               |
 | `""`                   | Records are separated by one or more blank lines. Leading/trailing newlines in a file are ignored. If `FS` is a single character, then `"\n"` also serves as a field separator. |
-| *regexp*               | Records are separated by occurrences of characters that match *regexp*. Leading/trailing matches delimit empty records.                                                         |
+| *regexp*               | Records are separated by occurrences of characters that match *regexp*. Leading/trailing matches delimit empty records. (**GNU only**)                                          |
 
 %%ANKI
 Cloze
@@ -118,9 +128,27 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 END%%
 
 %%ANKI
+Basic
+How is `RS = "ab"` interpreted in POSIX `awk`?
+Back: As if we had instead written `RS = "a"`.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1710939301103-->
+END%%
+
+%%ANKI
+Basic
+How is `RS = "ab"` interpreted in GNU `awk`?
+Back: As a regex matching strings `"ab"`.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+Tags: gnu::awk
+<!--ID: 1710939301107-->
+END%%
+
+%%ANKI
 Cloze
 If `RS` is a string with {more than one character}, it is treated as a {regexp}.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+Tags: gnu::awk
 <!--ID: 1707310981384-->
 END%%
 
@@ -129,6 +157,7 @@ Basic
 What value of `RS` may `gawk` not process correctly?
 Back: A regexp with optional trailing part, e.g. `AB(XYZ)?`.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+Tags: gnu::awk
 <!--ID: 1707310981390-->
 END%%
 
@@ -161,6 +190,7 @@ Basic
 What distinguishes `RS` value `""` and `\n\n+`?
 Back: When set to the former, `awk` strips leading/trailing newlines from the file.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+Tags: gnu::awk
 <!--ID: 1707829409170-->
 END%%
 
@@ -240,13 +270,13 @@ END%%
 * `FS` (**F**ield **S**eparator)
 	* The separator used to distinguish fields from one another.
 
-`FS == ??`                   | Description
----------------------------- | -------------------------------------
-`" "`                        | Fields are separated by runs of whitespace. Leading/trailing whitespace is ignored. This is the default.
-*any other single character* | Fields are separated by each occurrence of the character. Multiple successive occurrences delimit empty fields, as do leading/trailing occurrences.
-`"\n"`                       | Specific instance of the above row. It is used to treat the record as a single field (assuming newlines separate records).
-*regexp*                     | Fields are separated by occurrences of characters that match *regexp*. Leading/trailing matches delimit empty fields.
-`""`                         | Each individual character in the record becomes a separate field.
+| `FS == ??`                   | Description                                                                                                                                         |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `" "`                        | Fields are separated by runs of whitespace. Leading/trailing whitespace is ignored. This is the default.                                            |
+| *any other single character* | Fields are separated by each occurrence of the character. Multiple successive occurrences delimit empty fields, as do leading/trailing occurrences. |
+| `"\n"`                       | Specific instance of the above row. It is used to treat the record as a single field (assuming newlines separate records).                          |
+| *regexp*                     | Fields are separated by occurrences of characters that match *regexp*. Leading/trailing matches delimit empty fields.                               |
+| `""`                         | Each individual character in the record becomes a separate field. (**GNU only**)                                                                    |
 
 %%ANKI
 Cloze
@@ -297,7 +327,25 @@ END%%
 Cloze
 Setting `FS` to {`""`} allows examining {each character of a record separately}.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+Tags: gnu::awk
 <!--ID: 1707756447064-->
+END%%
+
+%%ANKI
+Basic
+How is `FS = ""` interpreted in POSIX `awk`?
+Back: As a no-op.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1710939301112-->
+END%%
+
+%%ANKI
+Basic
+How is `FS = ""` interpreted in GNU `awk`?
+Back: Each individual character in the record becomes a separate field.
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+Tags: gnu::awk
+<!--ID: 1710939301117-->
 END%%
 
 %%ANKI

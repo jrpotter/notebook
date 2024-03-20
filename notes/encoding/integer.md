@@ -30,7 +30,7 @@ END%%
 
 %%ANKI
 Basic
-In what two ways are C integral types encoded?
+In what two ways are C integral types usually encoded?
 Back: Unsigned encoding or two's-complement.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
@@ -838,7 +838,7 @@ END%%
 %%ANKI
 Basic
 *Why* does sign extension of unsigned numbers generally not work?
-Back: It actually does, though we technically call it zero extension.
+Back: If new bits have value `1`, we're adding powers of $2$ to the interpreted value.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708697867833-->
 END%%

@@ -1,9 +1,9 @@
 ---
 title: Regular Expressions
 TARGET DECK: Obsidian::STEM
-FILE TAGS: linux::cli gawk regexp
+FILE TAGS: linux::cli posix::awk regexp
 tags:
-  - gawk
+  - awk
 ---
 
 ## Overview
@@ -13,7 +13,7 @@ Most `awk` patterns are regular expressions delimited with `/`. We can use `~` a
 ```bash
 # Matches any line with `li` somewhere.
 $ awk '/li/' data
-$ awk `$0 ~ /li/` data
+$ awk '$0 ~ /li/' data
 # Matches any line with `li` somewhere in the first field.
 $ awk '$1 ~ /li/' data
 ```
@@ -29,6 +29,47 @@ $ echo aaaabcd | awk '{ sub(/a+/, "<A>"); print }'
 Back: `<A>bcd`
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 <!--ID: 1707231831794-->
+END%%
+
+%%ANKI
+Basic
+How is the following equivalently written using `~`?
+```bash
+$ awk '/li/' data
+```
+Back:
+```bash
+$ awk '$0 ~ /li/' data
+```
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1710940567898-->
+END%%
+
+%%ANKI
+Basic
+What operator is used for regexp matching?
+Back: `~`
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1710940567902-->
+END%%
+
+%%ANKI
+Basic
+What operator is used for regexp non-matching?
+Back: `!~`
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1710940567906-->
+END%%
+
+%%ANKI
+Basic
+How do we write a pattern where the second field matches regexp `/li/`?
+Back:
+```bash
+$ awk '$2 ~ /li/' {...}
+```
+Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
+<!--ID: 1710940567909-->
 END%%
 
 %%ANKI

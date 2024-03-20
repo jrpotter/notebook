@@ -730,11 +730,11 @@ Tags: printf
 END%%
 
 %%ANKI
-Basic
+Cloze
 The {`%G`} format specifier outputs a {uppercase `double` in fixed-point or standard notation}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
-<!--ID: 1710599806324-->
+<!--ID: 1710844199536-->
 END%%
 
 %%ANKI
@@ -767,7 +767,7 @@ END%%
 %%ANKI
 Basic
 How does `%g` handle non-integral values differently from `%f`?
-Back: It excludes insignifant `0`s after the `.`.
+Back: It excludes insignifant `0`s after the decimal point.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1710603411174-->
@@ -784,7 +784,7 @@ END%%
 
 %%ANKI
 Basic
-What is the output of `printf("%g", 3.14)`?
+Assuming fixed-point notation, what is the output of `printf("%g", 3.14)`?
 Back: `3.14`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
@@ -793,7 +793,7 @@ END%%
 
 %%ANKI
 Basic
-What is the output of `printf("%g", 3)`?
+Assuming fixed-point notation, what is the output of `printf("%g", 3)`?
 Back: `3`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
@@ -948,7 +948,123 @@ Tags: printf
 <!--ID: 1708454584568-->
 END%%
 
+## Escape Sequences
+
+C has a standard for processing different escape sequences. Many languages built with C in mind parse these escape sequences in a similar way.
+
+* `\ooo`: Consists of one to three octal digits.
+	* [[bash/index|Bash]] supports this sequence as `$'\ooo'`.
+	* [[posix/awk/index|awk]] supports this sequence directly.
+
+%%ANKI
+Basic
+How are C escape sequences for octal digits denoted?
+Back: As `\ooo`.
+Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
+<!--ID: 1706975891805-->
+END%%
+
+%%ANKI
+Basic
+In C, `\ooo` allows specifying how many octal digits?
+Back: One to three.
+Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
+<!--ID: 1706975891810-->
+END%%
+
+%%ANKI
+Basic
+How are C escape sequences exposed in bash?
+Back: Using ANSI-C quoting, i.e. `$$'string'`.
+Reference: Mendel Cooper, “Advanced Bash-Scripting Guide,” n.d., 916.
+Tags: bash
+<!--ID: 1706975891817-->
+END%%
+
+* `\xhh`: Consists of one or more [[radices#Hexadecimal|hexadecimal]] digits. The `x` prefix is required to distinguish from octal escape sequences.
+	* [[bash/index|Bash]] supports this sequence as `$'\xhh'`. One or two digits is supported.
+	* POSIX [[posix/awk/index|awk]] does not support this sequence.
+
+%%ANKI
+Basic
+How are C escape sequences for hexadecimal digits denoted?
+Back: As `\xhh`.
+Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
+<!--ID: 1706975891820-->
+END%%
+
+%%ANKI
+Basic
+In C, `\x` allows specifying how many hexadecimal digits?
+Back: One or more.
+Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
+<!--ID: 1706975891824-->
+END%%
+
+%%ANKI
+Basic
+What footgun does C's `\x` sequence expose?
+Back: Using more than two hexadecimal digits can produce undefined results.
+Reference: Arnold D. Robbins, “GAWK: Effective AWK Programming,” October 2023, [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf).
+<!--ID: 1706975891828-->
+END%%
+
+* `\uhhhh`: Introduced in C11 to represent Unicode code points. *Must* have exactly four hexadecimal characters specified with `0` leading padding if necessary.
+	* [[bash/index|Bash]] supports this sequence as `$'uhhhh'`. One to four hex digits is supported.
+	* POSIX [[posix/awk/index|awk]] does not support this sequence.
+
+%%ANKI
+Basic
+What two ways are C escape sequences for unicode denoted?
+Back: As `\uhhhh` or `\Uhhhhhhhh`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+Tags: unicode
+<!--ID: 1706975891832-->
+END%%
+
+%%ANKI
+Basic
+In C, `\u` allows specifying how many hexadecimal digits?
+Back: Exactly four.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+Tags: unicode
+<!--ID: 1706975891835-->
+END%%
+
+%%ANKI
+Basic
+In what standard were C's `\u` and `\U` escape sequences introduced?
+Back: C11.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+Tags: unicode
+<!--ID: 1706975891839-->
+END%%
+
+* `\Uhhhhhhhh`: Introduced in C11 to represent larger unicode code points. *Must* have exactly eight hexadecimal characters specified with `0` leading padding if necessary.
+
+%%ANKI
+Basic
+In C, `\U` allows specifying how many hexadecimal digits?
+Back: Exactly eight.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+Tags: unicode
+<!--ID: 1706975891843-->
+END%%
+
+%%ANKI
+Basic
+Why does C have both `\u` and `\U`?
+Back: `\U` accommodates for larger code point values.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+Tags: unicode
+<!--ID: 1706976705750-->
+END%%
+
 ## References
 
+* Arnold D. Robbins, “GAWK: Effective AWK Programming,” October 2023, [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf).
+* Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* Mendel Cooper, “Advanced Bash-Scripting Guide,” n.d., 916.
 * “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).

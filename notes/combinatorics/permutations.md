@@ -87,14 +87,6 @@ END%%
 
 %%ANKI
 Basic
-What combinatorial concept is often associated with the factorial?
-Back: Permutations.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708366788583-->
-END%%
-
-%%ANKI
-Basic
 How does sorting relate to the concept of permutations?
 Back: Sorting aims to efficiently find a specific permutation.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).

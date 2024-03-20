@@ -56,7 +56,7 @@ END%%
 %%ANKI
 Basic
 Is `SELECTION_SORT` in place?
-Back: Yes
+Back: Yes.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707398773328-->
 END%%
@@ -64,7 +64,7 @@ END%%
 %%ANKI
 Basic
 Is `SELECTION_SORT` stable?
-Back: No
+Back: No.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707398773330-->
 END%%
@@ -72,7 +72,7 @@ END%%
 %%ANKI
 Basic
 Is `SELECTION_SORT` adaptive?
-Back: No
+Back: No.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634778-->
 END%%

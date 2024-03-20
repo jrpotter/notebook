@@ -1,5 +1,7 @@
 ---
 title: Bash
+TARGET DECK: Obsidian::STEM
+FILE TAGS: bash
 tags:
   - bash
 ---

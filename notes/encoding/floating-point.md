@@ -867,7 +867,7 @@ END%%
 
 %%ANKI
 Basic
-What is the largest unsigned interpretation of a `float`'s exponent *field*?
+What is the largest unsigned decimal value a normalized `float`'s exponent field can be?
 Back: $2^8 - 2$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
@@ -885,7 +885,7 @@ END%%
 
 %%ANKI
 Basic
-What is the largest unsigned interpretation of a `double`'s exponent field?
+What is the largest unsigned decimal value a normalized `double`'s exponent field can be?
 Back: $2^{11} - 2$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
@@ -936,7 +936,7 @@ END%%
 %%ANKI
 Basic
 How does the largest unsigned interpretation of the exponent *field* relate to the $Bias$?
-Back: The largest unsigned interpretation is $2 \times Bias$.
+Back: The largest unsigned interpretation is $2 \cdot Bias$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710605798347-->
 END%%

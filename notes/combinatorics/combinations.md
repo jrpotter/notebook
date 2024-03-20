@@ -432,7 +432,7 @@ END%%
 %%ANKI
 Basic
 What is the integer lattice?
-Back: $\{(x, y) : x \in \omega \land y \in \omega\}$
+Back: $\omega \times \omega = \{(x, y) : x \in \omega \land y \in \omega\}$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708384441429-->
 END%%
