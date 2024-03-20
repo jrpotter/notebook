@@ -126,7 +126,7 @@ Basic
 How does C denote a hexadecimal numeric constant?
 Back: With `0x` or `0X`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: binary::hex c
+Tags: binary::hex c17
 <!--ID: 1707432641567-->
 END%%
 

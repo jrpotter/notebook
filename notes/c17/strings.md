@@ -954,7 +954,6 @@ C has a standard for processing different escape sequences. Many languages built
 
 * `\ooo`: Consists of one to three octal digits.
 	* [[bash/index|Bash]] supports this sequence as `$'\ooo'`.
-	* [[posix/awk/index|awk]] supports this sequence directly.
 
 %%ANKI
 Basic
@@ -983,7 +982,6 @@ END%%
 
 * `\xhh`: Consists of one or more [[radices#Hexadecimal|hexadecimal]] digits. The `x` prefix is required to distinguish from octal escape sequences.
 	* [[bash/index|Bash]] supports this sequence as `$'\xhh'`. One or two digits is supported.
-	* POSIX [[posix/awk/index|awk]] does not support this sequence.
 
 %%ANKI
 Basic
@@ -1011,14 +1009,13 @@ END%%
 
 * `\uhhhh`: Introduced in C11 to represent Unicode code points. *Must* have exactly four hexadecimal characters specified with `0` leading padding if necessary.
 	* [[bash/index|Bash]] supports this sequence as `$'uhhhh'`. One to four hex digits is supported.
-	* POSIX [[posix/awk/index|awk]] does not support this sequence.
 
 %%ANKI
 Basic
 What two ways are C escape sequences for unicode denoted?
 Back: As `\uhhhh` or `\Uhhhhhhhh`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: unicode
+Tags: encoding::unicode
 <!--ID: 1706975891832-->
 END%%
 
@@ -1027,7 +1024,7 @@ Basic
 In C, `\u` allows specifying how many hexadecimal digits?
 Back: Exactly four.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: unicode
+Tags: encoding::unicode
 <!--ID: 1706975891835-->
 END%%
 
@@ -1036,7 +1033,7 @@ Basic
 In what standard were C's `\u` and `\U` escape sequences introduced?
 Back: C11.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: unicode
+Tags: encoding::unicode
 <!--ID: 1706975891839-->
 END%%
 
@@ -1047,7 +1044,7 @@ Basic
 In C, `\U` allows specifying how many hexadecimal digits?
 Back: Exactly eight.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: unicode
+Tags: encoding::unicode
 <!--ID: 1706975891843-->
 END%%
 
@@ -1056,7 +1053,7 @@ Basic
 Why does C have both `\u` and `\U`?
 Back: `\U` accommodates for larger code point values.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: unicode
+Tags: encoding::unicode
 <!--ID: 1706976705750-->
 END%%
 

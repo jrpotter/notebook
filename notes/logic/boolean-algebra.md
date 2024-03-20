@@ -93,7 +93,7 @@ Basic
 What C bit-level operator corresponds to $\neg$?
 Back: `~`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: binary c
+Tags: binary c17
 <!--ID: 1707774068116-->
 END%%
 
@@ -102,7 +102,7 @@ Basic
 What C bit-level operator corresponds to $\land$?
 Back: `&`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: binary c
+Tags: binary c17
 <!--ID: 1707774068124-->
 END%%
 
@@ -111,7 +111,7 @@ Basic
 What C bit-level operator corresponds to $\lor$?
 Back: `|`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: binary c
+Tags: binary c17
 <!--ID: 1707774068132-->
 END%%
 
@@ -120,7 +120,7 @@ Basic
 What C bit-level operator corresponds to $\oplus$?
 Back: `^`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: binary c
+Tags: binary c17
 <!--ID: 1707774068137-->
 END%%
 
@@ -129,7 +129,7 @@ Basic
 What is the value of `~0b00001111`?
 Back: `0b11110000`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: binary c
+Tags: binary c17
 <!--ID: 1707774068142-->
 END%%
 
@@ -138,7 +138,7 @@ Basic
 What is the value of `0b00001111 & 0b11111111`?
 Back: `0b00001111`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: binary c
+Tags: binary c17
 <!--ID: 1707774068151-->
 END%%
 
@@ -147,7 +147,7 @@ Basic
 What is the value of `0b00001111 | 0b11111111?
 Back: `0b11111111`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: binary c
+Tags: binary c17
 <!--ID: 1707774068161-->
 END%%
 
@@ -156,7 +156,7 @@ Basic
 What is the value of `0b00001111 ^ 0b11111111`?
 Back: `0b11110000`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: binary c
+Tags: binary c17
 <!--ID: 1707774068167-->
 END%%
 
@@ -174,7 +174,7 @@ Basic
 What C bit-level operator corresponds to set complement?
 Back: `~`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: binary c set
+Tags: binary c17 set
 <!--ID: 1707774068179-->
 END%%
 
@@ -183,7 +183,7 @@ Basic
 What C bit-level operator corresponds to $\cup$?
 Back: `|`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: binary c set
+Tags: binary c17 set
 <!--ID: 1707774068186-->
 END%%
 
@@ -192,7 +192,7 @@ Basic
 What C bit-level operator corresponds to $\cap$?
 Back: `&`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: binary c set
+Tags: binary c17 set
 <!--ID: 1707774068192-->
 END%%
 
