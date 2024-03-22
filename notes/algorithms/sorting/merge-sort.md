@@ -9,14 +9,14 @@ tags:
 
 ## Overview
 
-Property    | Value
------------ | --------
-Best Case   | $\Omega(n\lg{n})$
-Worst Case  | $O(n\lg{n})$
-Avg. Case   | $O(n\lg{n})$
-Aux. Memory | -
-Stable      | -
-Adaptive    | -
+| Property    | Value             |
+| ----------- | ----------------- |
+| Best Case   | $\Omega(n\lg{n})$ |
+| Worst Case  | $O(n\lg{n})$      |
+| Avg. Case   | $O(n\lg{n})$      |
+| Aux. Memory | $O(n)$            |
+| Stable      | -                 |
+| Adaptive    | -                 |
 
 ![[merge-sort.gif]]
 
@@ -50,6 +50,14 @@ What is `MERGE_SORT`'s average case runtime?
 Back: $O(n\lg{n})$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742467115-->
+END%%
+
+%%ANKI
+Basic
+How much auxiliary space does `MERGE_SORT` use?
+Back: $O(n)$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1711024614320-->
 END%%
 
 %%ANKI

@@ -13,7 +13,7 @@ The **radix** is the number of unique digits used to represent numbers in a posi
 %%ANKI
 Basic
 What is the process of subtracting a larger digit from a smaller one in radix $r$?
-Back: Decrement the next non-zero and add $r$ to the smaller digit in question.
+Back: Decrement the next nonzero and add $r$ to the smaller digit in question.
 Reference: “Radix,” in *Wikipedia*, August 6, 2023, [https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173).
 <!--ID: 1708534662981-->
 END%%

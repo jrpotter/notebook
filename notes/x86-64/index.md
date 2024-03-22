@@ -1,15 +1,53 @@
 ---
-title: x86
+title: Assembly
 TARGET DECK: Obsidian::STEM
-FILE TAGS: asm::x86
+FILE TAGS: x86-64
 tags:
-  - asm
-  - x86
+  - x86-64
 ---
 
 ## Overview
 
 x86 refers to the architecture first introduced by Intel with their 8086 processor (1978). Intel's i386 (1985), originally named the 80386, expanded the architecture to 32-bits. AMD's Opteron (2003) expanded it again to 64-bits.
+
+%%ANKI
+Basic
+What *is* an ISA?
+Back: A specification describing how a processor behaves.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710959313830-->
+END%%
+
+%%ANKI
+Basic
+What is ISA an acronym for?
+Back: **I**nstruction **s**et **a**rchitecture.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710959313835-->
+END%%
+
+%%ANKI
+Basic
+What is a microarchitecture?
+Back: The way an ISA is implemented in a particular processor.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710959313839-->
+END%%
+
+%%ANKI
+Basic
+How is the term "microarchitecture" often abbreviated?
+Back: uarch
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710959313843-->
+END%%
+
+%%ANKI
+Cloze
+A {microarchitecture} is an implementation of an {ISA}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710959313848-->
+END%%
 
 %%ANKI
 Basic

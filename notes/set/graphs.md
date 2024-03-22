@@ -107,7 +107,7 @@ END%%
 
 %%ANKI
 Basic
-Let $G = \langle V, E \rangle$ be a undirected graph. What conditions must $E$ satisfy?
+Let $G = \langle V, E \rangle$ be an undirected graph. What conditions must $E$ satisfy?
 Back: It is a set of unordered pairs of vertices.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710793937813-->

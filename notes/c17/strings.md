@@ -80,13 +80,13 @@ Tags: printf
 <!--ID: 1708425941269-->
 END%%
 
-Flag | Description
----- | -----------
-`-`  | Left-aligns the output
-`+`  | Prepends a plus for positive signed-numeric types
-`␣`  | Prepends a space for positive signed-numeric types
-`0`  | Prepends zeros for numeric types
-`#`  | For `g` and `G`, trailing zeros are not removed. For `f`, `F`, `e`, `E`, `g`, and `G`, output always has a decimal point. For `o`, `x`, and `X`, the text `0`, `0x`, and `0X` is prepended to non-zero numbers respectively.
+| Flag | Description                                                                                                                                                                                                                 |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-`  | Left-aligns the output                                                                                                                                                                                                      |
+| `+`  | Prepends a plus for positive signed-numeric types                                                                                                                                                                           |
+| `␣`  | Prepends a space for positive signed-numeric types                                                                                                                                                                          |
+| `0`  | Prepends zeros for numeric types                                                                                                                                                                                            |
+| `#`  | For `g` and `G`, trailing zeros are not removed. For `f`, `F`, `e`, `E`, `g`, and `G`, output always has a decimal point. For `o`, `x`, and `X`, the text `0`, `0x`, and `0X` is prepended to nonzero numbers respectively. |
 
 %%ANKI
 Cloze

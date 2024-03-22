@@ -533,7 +533,7 @@ END%%
 
 %%ANKI
 Basic
-Why is two's-complement named the way it is?
+Why is it "two's-complement" instead of "twos'-complement"?
 Back: Because there is only one $2$ in $2^w - x$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1709060837130-->

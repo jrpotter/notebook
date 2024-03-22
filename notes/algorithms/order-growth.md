@@ -995,7 +995,7 @@ END%%
 %%ANKI
 Basic
 What theorem relates $\Theta(g(n))$, $O(g(n))$, and $\Omega(g(n))$?
-Back: $f(n) = \Theta(g(n))$ if and only if $f(n) \in O(g(n))$ and $f(n) \in \Omega(g(n))$.
+Back: $f(n) = \Theta(g(n))$ if and only if $f(n) = O(g(n))$ and $f(n) = \Omega(g(n))$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709055157406-->
 END%%

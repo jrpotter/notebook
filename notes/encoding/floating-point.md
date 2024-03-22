@@ -34,7 +34,7 @@ Declaration | Sign Bit | Exponent Field | Fractional Field
 
 %%ANKI
 Basic
-In base-10 scientific notation, what form do non-zero numbers take on?
+In base-10 scientific notation, what form do nonzero numbers take on?
 Back: $m \times 10^n$
 Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
 <!--ID: 1710556914921-->
@@ -51,7 +51,7 @@ END%%
 %%ANKI
 Basic
 In base-10 scientific notation, what numbers does $m$ take on in form $m \times 10^n$?
-Back: A non-zero real number.
+Back: A nonzero real number.
 Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
 <!--ID: 1710556914926-->
 END%%
@@ -90,7 +90,7 @@ END%%
 
 %%ANKI
 Basic
-In base-2 scientific notation, what form do non-zero numbers take on?
+In base-2 scientific notation, what form do nonzero numbers take on?
 Back: $m \times 2^n$
 Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
 <!--ID: 1710556914939-->
@@ -107,7 +107,7 @@ END%%
 %%ANKI
 Basic
 In base-2 scientific notation, what numbers does $m$ take on in form $m \times 2^n$?
-Back: A non-zero real number.
+Back: A nonzero real number.
 Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
 <!--ID: 1710556914943-->
 END%%
@@ -697,7 +697,7 @@ END%%
 %%ANKI
 Basic
 What is the actual bit encoding of floating-point number $NaN$?
-Back: An exponent field of all `1`s and a non-zero fractional field.
+Back: An exponent field of all `1`s and a nonzero fractional field.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710556915092-->
 END%%
@@ -1062,7 +1062,7 @@ END%%
 
 %%ANKI
 Basic
-How is floating-point `1.40` rounded in round-to-even mode?
+How is floating-point `1.40` rounded to an integer in round-to-even mode?
 Back: `1`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824759-->
@@ -1070,7 +1070,7 @@ END%%
 
 %%ANKI
 Basic
-How is floating-point `1.50` rounded in round-to-even mode?
+How is floating-point `1.50` rounded to an integer in round-to-even mode?
 Back: `2`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824761-->
@@ -1078,7 +1078,7 @@ END%%
 
 %%ANKI
 Basic
-How is floating-point `1.60` rounded in round-to-even mode?
+How is floating-point `1.60` rounded to an integer in round-to-even mode?
 Back: `2`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824763-->
@@ -1086,7 +1086,7 @@ END%%
 
 %%ANKI
 Basic
-How is floating-point `-1.50` rounded in round-to-even mode?
+How is floating-point `-1.50` rounded to an integer in round-to-even mode?
 Back: `-2`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824765-->
@@ -1094,7 +1094,7 @@ END%%
 
 %%ANKI
 Basic
-How is floating-point `1.40` rounded in round-to-zero mode?
+How is floating-point `1.40` rounded to an integer in round-to-zero mode?
 Back: `1`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824767-->
@@ -1102,7 +1102,7 @@ END%%
 
 %%ANKI
 Basic
-How is floating-point `1.50` rounded in round-to-zero mode?
+How is floating-point `1.50` rounded to an integer in round-to-zero mode?
 Back: `1`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824769-->
@@ -1110,7 +1110,7 @@ END%%
 
 %%ANKI
 Basic
-How is floating-point `-1.50` rounded in round-to-zero mode?
+How is floating-point `-1.50` rounded to an integer in round-to-zero mode?
 Back: `-1`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824771-->
@@ -1118,7 +1118,7 @@ END%%
 
 %%ANKI
 Basic
-How is floating-point `1.40` rounded in round-down mode?
+How is floating-point `1.40` rounded to an integer in round-down mode?
 Back: `1`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824774-->
@@ -1126,7 +1126,7 @@ END%%
 
 %%ANKI
 Basic
-How is floating-point `1.50` rounded in round-down mode?
+How is floating-point `1.50` rounded to an integer in round-down mode?
 Back: `1`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824776-->
@@ -1134,7 +1134,7 @@ END%%
 
 %%ANKI
 Basic
-How is floating-point `-1.50` rounded in round-down mode?
+How is floating-point `-1.50` rounded to an integer in round-down mode?
 Back: `-2`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824778-->
@@ -1142,7 +1142,7 @@ END%%
 
 %%ANKI
 Basic
-How is floating-point `1.40` rounded in round-up mode?
+How is floating-point `1.40` rounded to an integer in round-up mode?
 Back: `2`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824780-->
@@ -1150,7 +1150,7 @@ END%%
 
 %%ANKI
 Basic
-How is floating-point `1.50` rounded in round-up mode?
+How is floating-point `1.50` rounded to an integer in round-up mode?
 Back: `2`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824782-->
@@ -1158,7 +1158,7 @@ END%%
 
 %%ANKI
 Basic
-How is floating-point `-1.50` rounded in round-up mode?
+How is floating-point `-1.50` rounded to an integer in round-up mode?
 Back: `-1`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824785-->
@@ -1207,7 +1207,7 @@ END%%
 %%ANKI
 Basic
 How does the IEEE floating-point standard define $1/+0$?
-Back: $\infty$
+Back: $+\infty$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824798-->
 END%%
@@ -1312,7 +1312,7 @@ END%%
 
 %%ANKI
 Basic
-What is the result of $x *^f* y$?
+What is the result of $x *^f y$?
 Back: $Round(x * y)$ where $Round$ refers to the current rounding-mode.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824827-->
