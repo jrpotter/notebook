@@ -517,6 +517,107 @@ Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Soft
 <!--ID: 1709674569928-->
 END%%
 
+## Tags
+
+Tags are (possibly indirect) pointers to a git object. They *usually* point to a commit but aren't required to. There are two types of tags:
+
+* **Lightweight** tags are [[refs|git refs]] that never move. These aren't really git objects in the same way the other objects are.
+* **Annotated** tags are real objects that provide metadata about the object being pointed to.
+
+%%ANKI
+Cloze
+{1:Lightweight} tags are to git {2:refs} whereas {2:annotated} tags are to git {1:objects}.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782248-->
+END%%
+
+%%ANKI
+Basic
+Creation of which of lightweight and/or annotated tags writes a new ref to disk?
+Back: Both.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120977416-->
+END%%
+
+%%ANKI
+Basic
+Creation of which of lightweight and/or annotated tags writes a new object to disk?
+Back: Just annotated tags.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120977419-->
+END%%
+
+%%ANKI
+Basic
+What two kinds of git tags are there?
+Back: Lightweight and annotated.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782251-->
+END%%
+
+%%ANKI
+Basic
+What do git tags point to?
+Back: Any git object.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782253-->
+END%%
+
+%%ANKI
+Basic
+What do git tags *usually* point to?
+Back: Commits.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782256-->
+END%%
+
+%%ANKI
+Basic
+What primitive type does a lightweight tag correspond to?
+Back: A git ref.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782258-->
+END%%
+
+%%ANKI
+Basic
+What primitive type does an annotated tag correspond to?
+Back: A git object.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782261-->
+END%%
+
+%%ANKI
+Basic
+How many pointers does a lightweight tag introduce?
+Back: One.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782264-->
+END%%
+
+%%ANKI
+Basic
+How many pointers does an annotated tag introduce?
+Back: Two.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782267-->
+END%%
+
+%%ANKI
+Basic
+Why is the term "tag object" a slight misnomer?
+Back: A lightweight tag is just a ref, not an object.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782269-->
+END%%
+
+%%ANKI
+Cloze
+Git objects are to {`.git/objects`} whereas git references are to {`.git/refs`}.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782272-->
+END%%
+
 ## References
 
 * Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).

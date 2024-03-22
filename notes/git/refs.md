@@ -1,5 +1,5 @@
 ---
-title: References
+title: Refs
 TARGET DECK: Obsidian::STEM
 FILE TAGS: git
 tags:
@@ -8,7 +8,11 @@ tags:
 
 ## Overview
 
-A **reference** is essentially a file containing an oid. The name of the file can then be used to reference the oid. A **symbolic reference** is a file containing the name of another reference.
+A **reference** (or **ref**) is essentially a file containing an oid. The name of the file can then be used to reference the oid. A **symbolic reference** is a file containing the name of another reference. The primary refs are:
+
+* heads (i.e. branches)
+* remotes (i.e. remote branches)
+* [[objects#Tags|tags]]
 
 %%ANKI
 Basic
@@ -48,6 +52,13 @@ Where on disk are git local branch refs stored?
 Back: `.git/refs/heads`
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
 <!--ID: 1710454031271-->
+END%%
+
+%%ANKI
+Basic
+Where on disk are git remote branch refs stored?
+Back: `.git/refs/remotes`
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
 END%%
 
 %%ANKI
@@ -190,6 +201,37 @@ $ git symbolic-ref HEAD refs/heads/test
 ```
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
 <!--ID: 1710454758079-->
+END%%
+
+%%ANKI
+Cloze
+Branches are to {`refs/heads`} whereas remote branches are to {`refs/remotes`}.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782236-->
+END%%
+
+%%ANKI
+Basic
+What is the primary distinction between local branch refs and remotes?
+Back: The remotes are considered read-only.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782238-->
+END%%
+
+%%ANKI
+Basic
+What safeguard does git employ to keep remotes read-only?
+Back: It never updates `HEAD` to point to a remote ref.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782241-->
+END%%
+
+%%ANKI
+Basic
+What is prevented by git never updating `HEAD` to a remote ref?
+Back: One can't update the remote ref with a commit.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1711120782244-->
 END%%
 
 ## References

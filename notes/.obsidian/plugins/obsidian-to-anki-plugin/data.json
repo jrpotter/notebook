@@ -231,7 +231,7 @@
     "_journal/2024-02/2024-02-27.md": "f75a0d04a875aeee932343dae0c78768",
     "filesystems/index.md": "cbd2b0290a3ba3b32abec4bd8bfefad5",
     "filesystems/cas.md": "34906013a2a60fe5ee0e31809b4838aa",
-    "git/objects.md": "e9b98576291ca04496c2f0863f526cfa",
+    "git/objects.md": "43d825371e820802f2402034fad89480",
     "git/index.md": "83d2d95fc549d9e8436946c7bd058d15",
     "encoding/integer.md": "d4866b6e236c3a67631d03582996eca2",
     "_journal/2024-02-29.md": "f610f3caed659c1de3eed5f226cab508",
@@ -298,10 +298,11 @@
     "x86-64/index.md": "4769ab45ca374c4225c9c4099220be82",
     "_journal/2024-03-21.md": "a2572d2d5be0ee7c7f066d846e2f3e77",
     "_journal/2024-03/2024-03-20.md": "0a73ce399d275fe6ee3134a812f3f4f9",
-    "_journal/2024-03-22.md": "6c14bacf3e8834359f8512b7d7055acc",
+    "_journal/2024-03-22.md": "8da8cda07d3de74f7130981a05dce254",
     "_journal/2024-03/2024-03-21.md": "cd465f71800b080afa5c6bdc75bf9cd3",
     "x86-64/declarations.md": "60f5b240ea5565b33dc3585169fc41b1",
-    "x86-64/instructions.md": "c4b116179d2bd1f9510437e000f9c63d"
+    "x86-64/instructions.md": "c4b116179d2bd1f9510437e000f9c63d",
+    "git/refs.md": "de99450b5a4282ae1a694492f2b7f251"
   },
   "fields_dict": {
     "Basic": [
