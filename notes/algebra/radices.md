@@ -292,7 +292,7 @@ Tags: binary::hex
 <!--ID: 1708631918829-->
 END%%
 
-## References
+## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 * “Radix,” in *Wikipedia*, August 6, 2023, [https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173).

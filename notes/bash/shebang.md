@@ -52,7 +52,7 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 <!--ID: 1706726911470-->
 END%%
 
-## References
+## Bibliography
 
 * Cooper, Mendel. “Advanced Bash-Scripting Guide,” n.d., 916.
 * Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)

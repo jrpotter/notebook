@@ -887,7 +887,7 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707939006297-->
 END%%
 
-## References
+## Bibliography
 
 * Avigad, Jeremy. ‘Theorem Proving in Lean’, n.d.
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.

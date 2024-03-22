@@ -64,6 +64,6 @@ It's interesting to think what else can be used as a measure of a command's robu
 
 The above scenarios are what makes something like [[nix/index|nix]] so compelling.
 
-## References
+## Bibliography
 
 * Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)

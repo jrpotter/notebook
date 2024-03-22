@@ -234,6 +234,6 @@ Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Soft
 <!--ID: 1711120782244-->
 END%%
 
-## References
+## Bibliography
 
 * Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).

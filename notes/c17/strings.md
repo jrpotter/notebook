@@ -1057,7 +1057,7 @@ Tags: encoding::unicode
 <!--ID: 1706976705750-->
 END%%
 
-## References
+## Bibliography
 
 * Arnold D. Robbins, “GAWK: Effective AWK Programming,” October 2023, [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf).
 * Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).

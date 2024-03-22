@@ -108,7 +108,7 @@ Reference: “Kernel — Elixir v1.16.1,” accessed February 2, 2024, [https://
 <!--ID: 1706913303160-->
 END%%
 
-## References
+## Bibliography
 
 * Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 * “Kernel — Elixir v1.16.1,” accessed February 2, 2024, [https://hexdocs.pm/elixir/1.16/Kernel.html#module-structural-comparison](https://hexdocs.pm/elixir/1.16/Kernel.html#module-structural-comparison).

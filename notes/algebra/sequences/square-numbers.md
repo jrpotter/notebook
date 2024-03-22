@@ -126,7 +126,7 @@ Reference: “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipe
 <!--ID: 1709422558648-->
 END%%
 
-## References
+## Bibliography
 
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 * “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).

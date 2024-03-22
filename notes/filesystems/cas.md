@@ -97,7 +97,7 @@ Reference: “Content-Addressable Storage,” in _Wikipedia_, February 27, 2024,
 <!--ID: 1709177255573-->
 END%%
 
-## References
+## Bibliography
 
 * “Content-Addressable Storage,” in _Wikipedia_, February 27, 2024, [https://en.wikipedia.org/w/index.php?title=Content-addressable_storage&oldid=1210669681](https://en.wikipedia.org/w/index.php?title=Content-addressable_storage&oldid=1210669681).
 * Scott Chacon, _Pro Git_, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).

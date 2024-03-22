@@ -2114,7 +2114,7 @@ Tags: c17
 <!--ID: 1709831032461-->
 END%%
 
-## References
+## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 * Finley, Thomas. “Two’s Complement,” April 2000. [https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html](https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html).

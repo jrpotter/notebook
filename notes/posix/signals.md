@@ -245,7 +245,7 @@ Tags: c17
 <!--ID: 1709131892349-->
 END%%
 
-## References
+## Bibliography
 
 * Cooper, Mendel. “Advanced Bash-Scripting Guide,” n.d., 916.
 * Dowling, “A List of Signals and What They Mean.”

@@ -352,7 +352,7 @@ Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete M
 <!--ID: 1708115683366-->
 END%%
 
-## References
+## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 * Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).

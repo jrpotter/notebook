@@ -138,6 +138,6 @@ END%%
 
 Gries lists other "Laws" but they don't seem as important to note here. What's worth noting is that the other [[equiv-trans#Equivalence Schemas|equivalence schemas]] still apply if we can limit operands to just $T$ and $F$.
 
-## References
+## Bibliography
 
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
