@@ -1,5 +1,5 @@
 ---
-title: Assembly
+title: x86-64
 TARGET DECK: Obsidian::STEM
 FILE TAGS: x86-64
 tags:
