@@ -580,7 +580,7 @@ END%%
 %%ANKI
 Basic
 What identifier is guaranteed to not occur freely in $E_e^x$?
-Back: None.
+Back: N/A.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707937867036-->
 END%%

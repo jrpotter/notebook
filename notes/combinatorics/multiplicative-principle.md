@@ -1,5 +1,5 @@
 ---
-title: Combinatorics
+title: Multiplicative Principle
 TARGET DECK: Obsidian::STEM
 FILE TAGS: combinatorics set
 tags:

@@ -543,7 +543,7 @@ END%%
 Basic
 What is the in-degree of vertex $5$?
 ![[directed-graph-example.png]]
-Back: $2$.
+Back: $2$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710796091064-->
 END%%
@@ -552,7 +552,7 @@ END%%
 Basic
 What is the out-degree of vertex $5$?
 ![[directed-graph-example.png]]
-Back: $1$.
+Back: $1$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710796091071-->
 END%%
@@ -798,7 +798,7 @@ END%%
 
 %%ANKI
 Basic
-What path must exist if vertex $u$ is adjacent to vertex $v$?
+What path must exist in a digraph where vertex $u$ is adjacent to vertex $v$?
 Back: $\langle v, u \rangle$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788383-->
