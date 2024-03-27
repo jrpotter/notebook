@@ -22,7 +22,7 @@ END%%
 %%ANKI
 Basic
 What is a figurate number?
-Back: Polygonal numbers or generalizations of polygonal numbers to other dimensions.
+Back: Polygonal numbers and their generalizations to other dimensions.
 Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
 <!--ID: 1709419325856-->
 END%%

@@ -36,15 +36,8 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 END%%
 
 %%ANKI
-Cloze
-A {1:directed} graph $G$ is a pair $\langle V, E \rangle$, where $V$ is a {2:finite set} and $E$ is a {2:binary relation on $V$}.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710793937771-->
-END%%
-
-%%ANKI
 Basic
-Let $G = \langle V, E \rangle$ be a directed graph. What conditions must $V$ satisfy?
+Let $G = \langle V, E \rangle$ be a directed graph. What kind of mathematical object is $V$?
 Back: It is a finite set.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710793937776-->
@@ -52,8 +45,8 @@ END%%
 
 %%ANKI
 Basic
-Let $G = \langle V, E \rangle$ be a directed graph. What conditions must $E$ satisfy?
-Back: It is a binary relation on $E$.
+Let $G = \langle V, E \rangle$ be a directed graph. What kind of mathematical object is $E$?
+Back: It is a binary relation on $V$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710793937779-->
 END%%
@@ -91,15 +84,8 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 END%%
 
 %%ANKI
-Cloze
-An {1:undirected} graph $G$ is a pair $\langle V, E \rangle$, where $V$ is a {2:finite set} and $E$ is a {2:set of unordered pairs of vertices}.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710793937804-->
-END%%
-
-%%ANKI
 Basic
-Let $G = \langle V, E \rangle$ be an undirected graph. What conditions must $V$ satisfy?
+Let $G = \langle V, E \rangle$ be an undirected graph. What kind of mathematical object is $V$?
 Back: It is a finite set.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710793937808-->
@@ -107,7 +93,7 @@ END%%
 
 %%ANKI
 Basic
-Let $G = \langle V, E \rangle$ be an undirected graph. What conditions must $E$ satisfy?
+Let $G = \langle V, E \rangle$ be an undirected graph. What kind of mathematical object is $E$?
 Back: It is a set of unordered pairs of vertices.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710793937813-->
@@ -998,15 +984,6 @@ What are the simple paths to vertex $2$?
 Back: $\langle 2 \rangle$, $\langle 1, 2 \rangle$, $\langle 5, 2 \rangle$, $\langle 1, 5, 2 \rangle$, $\langle 5, 1, 2 \rangle$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788510-->
-END%%
-
-%%ANKI
-Basic
-What are the cycles containing vertex $2$?
-![[undirected-graph-example.png]]
-Back: $\langle 1, 2, 5, 1 \rangle$ and $\langle 1, 5, 2, 1 \rangle$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788515-->
 END%%
 
 %%ANKI

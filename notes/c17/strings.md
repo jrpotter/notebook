@@ -731,7 +731,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`%G`} format specifier outputs a {uppercase `double` in fixed-point or standard notation}.
+The {`%G`} format specifier outputs an {uppercase `double` in fixed-point or standard notation}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1710844199536-->
