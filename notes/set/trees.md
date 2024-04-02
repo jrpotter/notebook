@@ -201,7 +201,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for node $y$ to be an ancestor of node $x$ in a rooted tree?
-Back: $y$ is in the simple path from the root to $x$.
+Back: The simple path from the root to $x$ contains $y$.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1711136844980-->
 END%%
@@ -209,7 +209,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for node $y$ to be a descendent of node $x$ in a rooted tree?
-Back: $x$ is in the simple path from the root to $y$.
+Back: The simple path from the root to $y$ contains $x$.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1711136844983-->
 END%%
@@ -447,7 +447,7 @@ END%%
 %%ANKI
 Basic
 Let $T$ be a rooted tree of height $h$. Which nodes have depth $h$?
-Back: The external nodes.
+Back: The external nodes on the longest simple paths from the root to said nodes.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1711136845150-->
 END%%
