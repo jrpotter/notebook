@@ -79,7 +79,7 @@ END%%
 %%ANKI
 Basic
 Is `BUBBLE_SORT` in place?
-Back: Yes
+Back: Yes.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634789-->
 END%%
@@ -87,7 +87,7 @@ END%%
 %%ANKI
 Basic
 Is `BUBBLE_SORT` stable?
-Back: Yes
+Back: Yes.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634791-->
 END%%
@@ -95,7 +95,7 @@ END%%
 %%ANKI
 Basic
 Is `BUBBLE_SORT` adaptive?
-Back: Yes
+Back: Yes.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634792-->
 END%%

@@ -784,6 +784,24 @@ END%%
 
 %%ANKI
 Basic
+What is the output of `printf("%.1f", 2.0)`?
+Back: `2.0`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1712836989972-->
+END%%
+
+%%ANKI
+Basic
+Assuming fixed-point notation, what is the output of `printf("%.1g", 2.0)`?
+Back: `2`
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1712836989975-->
+END%%
+
+%%ANKI
+Basic
 Assuming fixed-point notation, what is the output of `printf("%g", 3.14)`?
 Back: `3.14`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).

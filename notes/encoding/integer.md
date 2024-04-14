@@ -96,7 +96,7 @@ END%%
 %%ANKI
 Basic
 According to the C standard, Is `unsigned` overflow well-defined?
-Back: Yes
+Back: Yes.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708551236389-->
 END%%
@@ -104,7 +104,7 @@ END%%
 %%ANKI
 Basic
 According to the C standard, Is `signed` overflow well-defined?
-Back: No
+Back: No.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708551236392-->
 END%%

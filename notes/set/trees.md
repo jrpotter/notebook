@@ -391,7 +391,7 @@ END%%
 %%ANKI
 Basic
 Let $T$ be a rooted tree. What does a level refer to?
-Back: All nodes in $T$ that have the same depth.
+Back: A set of nodes in $T$ that have the same depth.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1711136845114-->
 END%%
@@ -594,6 +594,225 @@ What level does node $6$ reside on in the following rooted tree?
 Back: $3$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1711136845240-->
+END%%
+
+An **ordered tree** is a rooted tree in which the children of each node are ordered.
+
+%%ANKI
+Basic
+What is an ordered tree?
+Back: A rooted tree in which the children of each node are ordered.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712406878904-->
+END%%
+
+%%ANKI
+Basic
+Which of ordered trees or rooted trees is the more general concept?
+Back: Rooted trees.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712406878909-->
+END%%
+
+%%ANKI
+Basic
+Which of free trees or ordered trees is the more general concept?
+Back: Free trees.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712406878912-->
+END%%
+
+%%ANKI
+Basic
+Is every rooted tree an ordered tree?
+Back: No.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712406878915-->
+END%%
+
+%%ANKI
+Basic
+Is every ordered tree a rooted tree?
+Back: Yes.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712406878917-->
+END%%
+
+%%ANKI
+Basic
+The following two trees are equivalent when considered as what kind of trees?
+![[ordered-rooted-tree-cmp.png]]
+Back: Rooted/free trees.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712407152755-->
+END%%
+
+%%ANKI
+Basic
+The following two trees are different when considered as what kind of trees?
+![[ordered-rooted-tree-cmp.png]]
+Back: Ordered trees.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712407152763-->
+END%%
+
+A **binary tree** $T$ is a structure defined on a finite set of nodes that either
+
+* contains no nodes, or
+* is composed of three disjoint sets of nodes: a **root** node, a **left subtree**, and a **right subtree**.
+
+%%ANKI
+Basic
+What is the base case used in the recursive definition of a binary tree?
+Back: The empty set.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712409466593-->
+END%%
+
+%%ANKI
+Basic
+What recurrence is used in the recursive definition of a binary tree?
+Back: A binary tree is composed of a root node, a left subtree, and a right subtree.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712409466606-->
+END%%
+
+%%ANKI
+Basic
+How should the nil constructor of an inductive binary tree, say `Tree`, be defined?
+Back:
+```lean
+| constructor : Tree α
+```
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: lean
+<!--ID: 1712409466615-->
+END%%
+
+%%ANKI
+Basic
+How should the non-nil constructor of an inductive binary tree, say `Tree`, be defined?
+Back:
+```lean
+| constructor : α → Tree α → Tree α → Tree α
+```
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: lean
+<!--ID: 1712409466621-->
+END%%
+
+%%ANKI
+Basic
+In the following binary tree type, what name is given to the first argument of `node`?
+```lean
+inductive Tree α where
+| nil : Tree α
+| node : α → Tree α → Tree α → Tree α
+```
+Back: The root node.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: lean
+<!--ID: 1712409466627-->
+END%%
+
+%%ANKI
+Basic
+In the following binary tree type, what name is given to the second argument of `node`?
+```lean
+inductive Tree α where
+| nil : Tree α
+| node : α → Tree α → Tree α → Tree α
+```
+Back: The left subtree.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: lean
+<!--ID: 1712409466634-->
+END%%
+
+%%ANKI
+Basic
+In the following binary tree type, what name is given to the third argument of `node`?
+```lean
+inductive Tree α where
+| nil : Tree α
+| node : α → Tree α → Tree α → Tree α
+```
+Back: The right subtree.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: lean
+<!--ID: 1712409466639-->
+END%%
+
+%%ANKI
+Basic
+Given the following binary tree implementation, how do you construct an empty tree?
+```lean
+inductive Tree α where
+| nil : Tree α
+| node : α → Tree α → Tree α → Tree α
+```
+Back: `nil`
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: lean
+<!--ID: 1712409466643-->
+END%%
+
+%%ANKI
+Basic
+Given the following binary tree implementation, how do you construct a tree with root `a`, left child `b`, and right child `c`?
+```lean
+inductive Tree α where
+| nil : Tree α
+| node : α → Tree α → Tree α → Tree α
+```
+Back: `node 'a' (node 'b' nil nil) (node 'c' nil nil)`
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: lean
+<!--ID: 1712409466648-->
+END%%
+
+%%ANKI
+Basic
+Why isn't a binary tree considered an ordered tree?
+Back: A left child is distinct from a right child, even if the child is the same in both cases.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712409466653-->
+END%%
+
+%%ANKI
+Basic
+Considered as rooted trees, are the following trees the same?
+![[ordered-binary-tree-cmp.png]]
+Back: Yes.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712409466660-->
+END%%
+
+%%ANKI
+Basic
+Considered as ordered trees, are the following trees the same?
+![[ordered-binary-tree-cmp.png]]
+Back: Yes.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712409466670-->
+END%%
+
+%%ANKI
+Basic
+Considered as binary trees, are the following trees the same?
+![[ordered-binary-tree-cmp.png]]
+Back: No.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712409466676-->
+END%%
+
+%%ANKI
+Basic
+Why are these two binary trees not the same?
+![[ordered-binary-tree-cmp.png]]
+Back: `5` is a left child in the first tree but a right child in the second.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712409466682-->
 END%%
 
 ## Bibliography

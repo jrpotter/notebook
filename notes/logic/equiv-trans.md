@@ -67,7 +67,7 @@ END%%
 %%ANKI
 Basic
 Is $(b \land c)$ well-defined in $\{(b, T), (c, F)\}$?
-Back: Yes
+Back: Yes.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861318-->
 END%%
@@ -75,7 +75,7 @@ END%%
 %%ANKI
 Basic
 Is $(b \lor d)$ well-defined in $\{(b, T), (c, F)\}$?
-Back: No
+Back: No.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861320-->
 END%%
@@ -588,7 +588,7 @@ END%%
 %%ANKI
 Basic
 What identifier is guaranteed to not occur freely in $E_{s(e)}^x$?
-Back: $x$.
+Back: $x$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707937867039-->
 END%%

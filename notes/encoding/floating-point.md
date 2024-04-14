@@ -362,7 +362,7 @@ END%%
 %%ANKI
 Basic
 What range of values does the significand $M$ take on in IEEE floating-point?
-Back: Between $1$ and $2 - \epsilon$ or between $0$ and $1 - \epsilon$.
+Back: Between $0$ and $2 - \epsilon$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710556915012-->
 END%%
@@ -501,6 +501,24 @@ What is the value of the bias?
 Back: Given $k$ bits in the exponent field, $2^{k-1} - 1$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710556915044-->
+END%%
+
+%%ANKI
+Basic
+What is the binary representation of a `float`'s bias?
+Back: `01111111`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1712938082200-->
+END%%
+
+%%ANKI
+Basic
+What is the binary representation of a `double`'s bias?
+Back: `01111111111`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1712938082205-->
 END%%
 
 %%ANKI

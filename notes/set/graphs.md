@@ -709,7 +709,7 @@ END%%
 
 %%ANKI
 Basic
-What are the paths of length $1$ from vertex $2$ to vertex $2$?
+What are the paths of length $1$ to vertex $2$?
 ![[directed-graph-example.png]]
 Back: $\langle 1, 2 \rangle$, $\langle 2, 2 \rangle$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -720,7 +720,7 @@ END%%
 Basic
 What are the paths of length $2$ from vertex $2$ to vertex $2$?
 ![[directed-graph-example.png]]
-Back: $\langle 4, 1, 2 \rangle$, $\langle 2, 2, 2 \rangle$
+Back: $\langle 2, 2, 2 \rangle$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788348-->
 END%%

@@ -71,7 +71,7 @@ END%%
 %%ANKI
 Basic
 Is `INSERTION_SORT` in place?
-Back: Yes
+Back: Yes.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1706926586955-->
 END%%
@@ -79,7 +79,7 @@ END%%
 %%ANKI
 Basic
 Is `INSERTION_SORT` stable?
-Back: Yes
+Back: Yes.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1706926586959-->
 END%%
@@ -87,7 +87,7 @@ END%%
 %%ANKI
 Basic
 Is `INSERTION_SORT` adaptive?
-Back: Yes
+Back: Yes.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634779-->
 END%%
