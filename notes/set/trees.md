@@ -1012,15 +1012,6 @@ END%%
 
 %%ANKI
 Basic
-What recursive definition describes the number of nodes in each levelof a complete $k$-ary tree?
-Back: $a_n = k \cdot a_{n-1}$ with $a_0 = 1$
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: algebra::sequence
-<!--ID: 1713118128246-->
-END%%
-
-%%ANKI
-Basic
 What recursive definition describes the number of nodes in each level of a complete $k$-ary tree?
 Back: $a_n = k \cdot a_{n-1}$ with $a_0 = 1$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
