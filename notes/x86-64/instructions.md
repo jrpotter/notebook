@@ -143,19 +143,19 @@ There are three types of operands:
 * **Registers**. These denote the contents of a register.
 * **Memory**. These denote some memory location according to a computed address (i.e. the **effective address**).
 
-| Type      | Form             | Operand Value                      | Name                |
-| --------- | ---------------- | ---------------------------------- | ------------------- |
-| Immediate | $\$Imm$          | $Imm$                              | Immediate           |
-| Register  | $r_a$            | $R[r_a]$                           | Register            |
-| Memory    | $Imm$            | $M[Imm]$                           | Absolute            |
-| Memory    | $(r_a)$          | $M[R[r_a]]$                        | Indirect            |
-| Memory    | $Imm(r_b)$       | $M[Imm + R[r_b]]$                  | Base + displacement |
-| Memory    | $(r_b, r_i)$     | $M[R[r_b] + R[r_i]]$               | Indexed             |
-| Memory    | $Imm(r_b, r_i)$  | $M[Imm + R[r_b] + R[r_i]]$         | Indexed             |
-| Memory    | $(,r_i,s)$       | $M[R[r_i] \cdot s]$                | Scaled indexed      |
-| Memory    | $Imm(,r_i,s)$    | $M[Imm + R[r_i] \cdot s]$          | Scaled indexed      |
-| Memory    | $(r_b,r_i,s)$    | $M[R[r_b] + R[r_i] \cdot s]$       | Scaled indexed      |
-| Memory    | $Imm(r_b,r_i,s)$ | $M[Imm + R[r_b] + R[r_i] \cdot s]$ | Scaled indexed      |
+| Type      | Form              | Operand Value                      | Name                |
+| --------- | ----------------- | ---------------------------------- | ------------------- |
+| Immediate | $\textdollar Imm$ | $Imm$                              | Immediate           |
+| Register  | $r_a$             | $R[r_a]$                           | Register            |
+| Memory    | $Imm$             | $M[Imm]$                           | Absolute            |
+| Memory    | $(r_a)$           | $M[R[r_a]]$                        | Indirect            |
+| Memory    | $Imm(r_b)$        | $M[Imm + R[r_b]]$                  | Base + displacement |
+| Memory    | $(r_b, r_i)$      | $M[R[r_b] + R[r_i]]$               | Indexed             |
+| Memory    | $Imm(r_b, r_i)$   | $M[Imm + R[r_b] + R[r_i]]$         | Indexed             |
+| Memory    | $(,r_i,s)$        | $M[R[r_i] \cdot s]$                | Scaled indexed      |
+| Memory    | $Imm(,r_i,s)$     | $M[Imm + R[r_i] \cdot s]$          | Scaled indexed      |
+| Memory    | $(r_b,r_i,s)$     | $M[R[r_b] + R[r_i] \cdot s]$       | Scaled indexed      |
+| Memory    | $Imm(r_b,r_i,s)$  | $M[Imm + R[r_b] + R[r_i] \cdot s]$ | Scaled indexed      |
 
 %%ANKI
 Basic
@@ -192,7 +192,7 @@ END%%
 %%ANKI
 Basic
 In ATT syntax, how is an immediate written?
-Back: Aa a `$` followed by an integer using standard C notation.
+Back: As a `$$` followed by an integer using standard C notation.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889901-->
 END%%
@@ -200,14 +200,14 @@ END%%
 %%ANKI
 Basic
 In ATT syntax, how is a register written?
-Back: Aa a `%` followed by the name of the register.
+Back: As a `%` followed by the name of the register.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889905-->
 END%%
 
 %%ANKI
 Basic
-What is the operand value of form $\$Imm$?
+What is the operand value of form $\textdollar Imm$?
 Back: $Imm$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889909-->
@@ -312,7 +312,7 @@ END%%
 %%ANKI
 Basic
 What operand form is named "immediate"?
-Back: $\$Imm$
+Back: $\textdollar Imm$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713213168875-->
 END%%
