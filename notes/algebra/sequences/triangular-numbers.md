@@ -254,6 +254,14 @@ Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://e
 <!--ID: 1709419325981-->
 END%%
 
+%%ANKI
+Basic
+The triangular numbers is the sequence of partial sums of what sequence?
+Back: $a_n = n$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713580109292-->
+END%%
+
 ## Bibliography
 
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).

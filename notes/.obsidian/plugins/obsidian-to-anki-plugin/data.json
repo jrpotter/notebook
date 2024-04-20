@@ -210,7 +210,7 @@
     "_journal/2024-02-19.md": "30d16c5373deb9cb128d2e7934ae256a",
     "_journal/2024-02/2024-02-18.md": "67e36dbbb2cac699d4533b5a2eaeb629",
     "combinatorics/permutations.md": "1b994b48798699655ee64df29c640251",
-    "combinatorics/combinations.md": "b83f325caa1a7a97a3873016d6ccefcc",
+    "combinatorics/combinations.md": "1109af89c5f3343ef978e4385c4b3819",
     "_journal/2024-02-20.md": "b85ba0eeeb16e30a602ccefabcc9763e",
     "_journal/2024-02/2024-02-19.md": "df1a9ab7ab89244021b3003c84640c78",
     "combinatorics/inclusion-exclusion.md": "c27b49ee03cc5ee854d0e8bd12a1d505",
@@ -249,7 +249,7 @@
     "algebra/sequences/index.md": "91ec81d3aa22d1baef2ab4b24736c43c",
     "_journal/2024-03-02.md": "08c3cae1df0079293b47e1e9556f1ce1",
     "_journal/2024-03/2024-03-01.md": "70da812300f284df72718dd32fc39322",
-    "algebra/sequences/triangular-numbers.md": "e833b69d767fb33594716cb0b2bd6aa3",
+    "algebra/sequences/triangular-numbers.md": "39a84ee317d3760a2eda7279c83e921a",
     "algebra/sequences/square-numbers.md": "171f7c5a8dac088afba40923ab86c68e",
     "_journal/2024-03-03.md": "c4977a3778ed227b768c3f9ad5512670",
     "_journal/2024-03/2024-03-02.md": "8136792b0ee6e08232e4f60c88d461d2",
@@ -258,7 +258,7 @@
     "_journal/2024-03-05.md": "e9a911c19bb4c0ff451db793248cb4bb",
     "_journal/2024-03/2024-03-04.md": "4948d90a08af2cff58c629c9a2e11ee4",
     "algebra/sequences/geometric.md": "57544cab59f0b8c28d4a11f0273a3119",
-    "algebra/sequences/arithmetic.md": "0e8d8168f04550cb506a218b298c1c7f",
+    "algebra/sequences/arithmetic.md": "6acb04ca2bbd2e39decd23a6451f2266",
     "_journal/2024-03-06.md": "ac7a3d764934f49b2be7aa76e402d853",
     "_journal/2024-03/2024-03-05.md": "94b28d0b9bc62cc0bd99d315fb7c6d30",
     "_journal/2024-03-07.md": "7bf68d6d81e89aa00f5ddd7510b69e3e",
@@ -347,7 +347,13 @@
     "_journal/2024-04-15.md": "c08bd7258def0c2a6b78039bb4aa03b9",
     "_journal/2024-04/2024-04-14.md": "037c77d0e11f2d58ffee61ea0a1708ab",
     "_journal/2024-04-16.md": "0bf6e2f2a3afab73d528cee88c4c1a92",
-    "_journal/2024-04/2024-04-15.md": "256253b0633d878ca58060162beb7587"
+    "_journal/2024-04/2024-04-15.md": "256253b0633d878ca58060162beb7587",
+    "algebra/polynomials.md": "6e20029b44fe0d0c4f35ef8ee4874d82",
+    "algebra/sequences/delta-constant.md": "f51bb01d5475004063e444e2acbcd0a3",
+    "_journal/2024-04-19.md": "a293087860a7f378507a96df0b09dd2b",
+    "_journal/2024-04/2024-04-18.md": "f6e5bee68dbef90a21ca92a846930a88",
+    "_journal/2024-04/2024-04-17.md": "331423470ea83fc990c1ee1d5bd3b3f1",
+    "_journal/2024-04/2024-04-16.md": "2f47dcbc01dd0995e59ae1759122b416"
   },
   "fields_dict": {
     "Basic": [
