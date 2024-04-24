@@ -904,7 +904,7 @@ END%%
 %%ANKI
 Basic
 What is a $k$-ary tree?
-Back: A positional tree in which each node has at most $k$ children.
+Back: A positional tree in which each node has $k$ labels with a potential child.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1713118128223-->
 END%%

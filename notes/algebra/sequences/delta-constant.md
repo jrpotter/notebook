@@ -126,7 +126,7 @@ END%%
 
 %%ANKI
 Basic
-How are arithmetic sequences defined in terms of $\Delta^k$ polynomials?
+How are arithmetic sequences defined in terms of "$\Delta^k$-constant"?
 Back: A sequence is arithmetic if and only if it is $\Delta^1$-constant.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1713580109244-->
@@ -134,7 +134,7 @@ END%%
 
 %%ANKI
 Basic
-How are geometric sequences defined in terms of $\Delta^k$ polynomials?
+How are geometric sequences defined in terms of "$\Delta^k$-constant"?
 Back: N/A
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1713580109250-->

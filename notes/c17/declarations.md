@@ -265,8 +265,8 @@ END%%
 
 %%ANKI
 Basic
-Why avoid negative hexadecimal integer literals?
-Back: Depending on value, the resulting type may be `unsigned`.
+How might C dangerously interpret a negative hexadecimal integer literal?
+Back: Depending on the value, the resulting type may be `unsigned`.
 Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708631820833-->
 END%%

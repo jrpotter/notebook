@@ -990,7 +990,7 @@ END%%
 Basic
 What are the simple cycles containing vertex $2$?
 ![[undirected-graph-example.png]]
-Back: $\langle 1, 2, 5, 1 \rangle$ and $\langle 1, 5, 2, 1 \rangle$
+Back: $\langle 2, 5, 1, 2 \rangle$ and $\langle 2, 1, 5, 2 \rangle$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788519-->
 END%%

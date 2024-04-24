@@ -887,6 +887,193 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707939006297-->
 END%%
 
+### Arrays
+
+An array can be seen as a function from the **domain** of the array to the subscripted values found in the array. We denote array subscript assignment similarly to state identifier assignment: $$(b; i{:}e)[j] = \begin{cases} i = j \rightarrow e \\ i \neq j \rightarrow b[j] \end{cases}$$
+
+%%ANKI
+Basic
+Let $b$ be an array. What does $b.lower$ denote?
+Back: The lower subscript bound of the array.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130015-->
+END%%
+
+%%ANKI
+Basic
+Let $b$ be an array. What does $b.upper$ denote?
+Back: The upper subscript bound of the array.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130019-->
+END%%
+
+%%ANKI
+Basic
+Let $b$ be an array. How is $domain(b)$ defined in set-theoretic notation?
+Back: $\{i \mid b.lower \leq i \leq b.upper\}$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130022-->
+END%%
+
+%%ANKI
+Basic
+Let $b[0{:}2]$ be an array. What is $b.lower$?
+Back: $0$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130025-->
+END%%
+
+%%ANKI
+Basic
+Let $b[0{:}2]$ be an array. What is $b.upper$?
+Back: $2$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130028-->
+END%%
+
+%%ANKI
+Basic
+Execution of `b[i] := e` of array $b$ yields what new value of $b$?
+Back: $b = (b; i{:}e)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130031-->
+END%%
+
+%%ANKI
+Basic
+Let $s$ be a state. What *is* $x$ in $(s; x{:}e)$?
+Back: An identifier found in $s$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130034-->
+END%%
+
+%%ANKI
+Basic
+Let $s$ be a state. What *is* $e$ in $(s; x{:}e)$?
+Back: An expression.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130037-->
+END%%
+
+%%ANKI
+Basic
+Let $s$ be a state. What is $e$'s type in $(s; x{:}e)$?
+Back: A type matching $x$'s declaration.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130041-->
+END%%
+
+%%ANKI
+Basic
+Let $b$ be an array. What *is* $x$ in $(b; x{:}e)$?
+Back: An expression that evaluates to a member of $domain(b)$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130045-->
+END%%
+
+%%ANKI
+Basic
+Let $b$ be an array. What is $e$'s type in $(b; x{:}e)$?
+Back: A type matching $b$'s member declaration.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130050-->
+END%%
+
+%%ANKI
+Basic
+Let $b$ be an array. What case analysis does $(b; i{:}e)[j]$ evaluate to?
+Back: $$(b; i{:}e)[j] = \begin{cases} i = j \rightarrow e \\ i \neq j \rightarrow b[j] \end{cases}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130056-->
+END%%
+
+%%ANKI
+Basic
+Let $b$ be an array. How is $(((b; i{:}e_1); j{:}e_2); k{:}e_3)$ rewritten without nesting?
+Back: As $(b; i{:}e_1; j{:}e_2; k{:}e_3)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130062-->
+END%%
+
+%%ANKI
+Basic
+Let $b$ be an array. How is $(b; (i{:}e_1; (j{:}e_2; (k{:}e_3))))$ rewritten without nesting?
+Back: N/A. This is invalid syntax.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130067-->
+END%%
+
+%%ANKI
+Basic
+Let $b$ be an array. How is $(b; i{:}e_1; j{:}e_2; k{:}e_3)$ rewritten with nesting?
+Back: As $(((b; i{:}e_1); j{:}e_2); k{:}e_3)$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130072-->
+END%%
+
+%%ANKI
+Basic
+Let $b$ be an array. What does $(b; i{:}2; i{:}3; i{:}4)[i]$ evaluate to?
+Back: $4$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130077-->
+END%%
+
+%%ANKI
+Basic
+Let $b$ be an array. How is $(b; 0{:}8; 2{:}9; 0{:}7)[1]$ simplified?
+Back: As $b[1]$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130081-->
+END%%
+
+%%ANKI
+Basic
+According to Gries, what is the traditional interpretation of an array?
+Back: As a collection of subscripted independent variables (with a common name).
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130086-->
+END%%
+
+%%ANKI
+Basic
+According to Gries, what is the new interpretation of an array?
+Back: As a function.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130090-->
+END%%
+
+%%ANKI
+Basic
+What expression results from eliminating $(b; \ldots)$ notation from $(b; i{:}5)[j] = 5$?
+Back: $(i = j \land 5 = 5) \lor (i \neq j \land b[j] = 5)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130095-->
+END%%
+
+%%ANKI
+Basic
+What logical axiom is used when eliminating $(b; \ldots)$ notation from e.g. $(b; i{:}5)[j] = 5$?
+Back: The Law of the Excluded Middle.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130100-->
+END%%
+
+%%ANKI
+Cloze
+For state $s$ and array $b$, {$(s; x{:}s(x))$} is analagous to {$(b; i{:}b[i])$}.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130104-->
+END%%
+
+%%ANKI
+Basic
+What is the simplification of $(b; i{:}b[i]; j{:}b[j]; k{:}b[j])$?
+Back: $(b; k{:}b[j])$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1713793130108-->
+END%%
+
 ## Bibliography
 
 * Avigad, Jeremy. ‘Theorem Proving in Lean’, n.d.

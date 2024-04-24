@@ -365,6 +365,271 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1713213168894-->
 END%%
 
+### `MOV`
+
+%%ANKI
+Basic
+What four variants does `MOV` instructions take on in x86-64?
+Back: `movb`, `movw`, `movl`, `movq`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933397-->
+END%%
+
+%%ANKI
+Basic
+How many bytes does a `movb` instruction operate on?
+Back: One.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933403-->
+END%%
+
+%%ANKI
+Basic
+How many bytes does a `movw` instruction operate on?
+Back: Two.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933406-->
+END%%
+
+%%ANKI
+Basic
+How many bytes does a `movl` instruction operate on?
+Back: Four.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933409-->
+END%%
+
+%%ANKI
+Basic
+How many bytes does a `movq` instruction operate on?
+Back: Eight.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933413-->
+END%%
+
+%%ANKI
+Basic
+What combination of source and destination types is prohibited in `MOV` instructions?
+Back: A source and destination memory address.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933416-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `%rax` after instruction `movl $0x4050,%eax`?
+Back: Upper 32-bits is `0` and lower 32-bits is `0x4050`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933419-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `%rax` after instruction `movq $0x4050,%rax`?
+Back: The 64-bit value is `0x4050`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933423-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `%rax` after instruction `movw $0x4050,%ax`?
+Back: The upper 48 bits are unchanged and the lower 16 bits are `0x4050`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933426-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `%rax` after instruction `movb $0x4050,%al`?
+Back: The upper 56 bits are unchanged and the lower 8 bits are `0x50`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933430-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `%rax` after instruction `movw $0x4050,%al`?
+Back: N/A. Invalid operand for instruction.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933433-->
+END%%
+
+%%ANKI
+Basic
+What caveat is applied to the source operand of `movq`?
+Back: Immediates are 32-bit two's-complement numbers sign extended to 64-bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933437-->
+END%%
+
+%%ANKI
+Basic
+What `mov` instruction is needed when working with 64-bit immediate sources?
+Back: `movabsq`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933441-->
+END%%
+
+%%ANKI
+Basic
+What purpose does `movabsq` solve that `movq` does not?
+Back: `movabsq` can have an arbitrary 64-bit immediate source.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933448-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `%rax` after the following instructions?
+```asm
+movabsq $0x0011223344556677, %rax
+movb    $-1, %al
+```
+Back: `0x00112233445566FF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933452-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `%rax` after the following instructions?
+```asm
+movabsq $0x0011223344556677, %rax
+movw    $-1, %ax
+```
+Back: `0x001122334455FFFF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933455-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `%rax` after the following instructions?
+```asm
+movabsq $0x0011223344556677, %rax
+movl    $-1, %eax
+```
+Back: `0x00000000FFFFFFFF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933458-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `%rax` after the following instructions?
+```asm
+movabsq $0x0011223344556677, %rax
+movq    $-1, %rax
+```
+Back: `0xFFFFFFFFFFFFFFFF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933461-->
+END%%
+
+%%ANKI
+Basic
+What is the `MOVZ` instruction class?
+Back: `MOV` instructions that zero extend the source to fit into the destination.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933464-->
+END%%
+
+%%ANKI
+Basic
+What is the `MOVS` instruction class?
+Back: `MOV` instructions that sign extend the source to fit into the destination.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933466-->
+END%%
+
+%%ANKI
+Basic
+What does the `movzbw` instruction do?
+Back: Moves a zero-extended byte to a word.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933469-->
+END%%
+
+%%ANKI
+Basic
+What does the `movslq` instruction do?
+Back: Moves a sign-extended double word to a quad word.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933472-->
+END%%
+
+%%ANKI
+Basic
+What does the `movslb` instruction do?
+Back: N/A. This instruction does not exist.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933475-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial argument explains the number of `MOVS` instructions?
+Back: There exists an instruction for each smaller declaration to larger declaration.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933478-->
+END%%
+
+%%ANKI
+Basic
+What `MOVZ` instruction is "missing"?
+Back: `movzlq`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933481-->
+END%%
+
+%%ANKI
+Basic
+Why does there not exist a `movzlq` instruction?
+Back: Because `movl` already zeros out the upper bits of a destination register.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933483-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `%rax` after the following instructions?
+```asm
+movabsq $0x0011223344556677, %rax
+movb    $0xAA, %dl
+movb    %dl,%al
+```
+Back: `0x00112233445566AA`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933486-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `%rax` after the following instructions?
+```asm
+movabsq $0x0011223344556677, %rax
+movb    $0xAA, %dl
+movsbq  %dl,%rax
+```
+Back: `0xFFFFFFFFFFFFFFAA`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933489-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `%rax` after the following instructions?
+```asm
+movabsq $0x0011223344556677, %rax
+movb    $0xAA, %dl
+movzbq  %dl,%rax
+```
+Back: `0x00000000000000AA`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1713625933491-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

@@ -169,6 +169,110 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1709302343255-->
 END%%
 
+## Solving Recurrence Relations
+
+%%ANKI
+Basic
+What is the recurrence relation for the Fibonacci sequence?
+Back: $F_n = F_{n-1} + F_{n-2}$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713810280062-->
+END%%
+
+%%ANKI
+Basic
+What does it mean to solve a recurrence relation?
+Back: To find a closed formula satisfying the relation and initial conditions.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713810280066-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a sum to be telescoping?
+Back: Pairs of consecutive terms in the summation cancel each other out.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713810280068-->
+END%%
+
+%%ANKI
+Basic
+What imagery is invoked by the term "telescoping" with respect to a sum?
+Back: A collapsing telescope.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713810280071-->
+END%%
+
+%%ANKI
+Basic
+What summands typically remain after evaluating a telescoping sum?
+Back: The first and the last.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713810280074-->
+END%%
+
+%%ANKI
+Basic
+What is the result of the following after observing telescoping? $$(2 - 1) + (3 - 2) + \cdots + (100 - 99) + (101 - 100)$$
+Back: $-1 + 101$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713810280076-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten to highlight telescoping? $$(2 - 1) + (3 - 2) + \cdots + (100 - 99) + (101 - 100)$$
+Back: $$(-1 + 2) + (-2 + 3) + \cdots + (-99 + 100) + (-100 + 101)$$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713810280079-->
+END%%
+
+%%ANKI
+Basic
+What is the result of the following? $\sum_{n=1}^N (a_n - a_{n-1})$
+Back: $a_N - a_0$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713810280082-->
+END%%
+
+%%ANKI
+Basic
+What property is used to quickly verify the following identity? $$\sum_{n=1}^N (a_n - a_{n-1}) = a_N - a_0$$
+Back: This is a telescoping sum.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713810280085-->
+END%%
+
+%%ANKI
+Basic
+Schematically show how telescoping can be used to solve $a_n = a_{n-1} + f(n)$.
+Back: $$\begin{align*}
+a_1 - a_0 & = f(1) \\
+& \vdots \\
+a_n - a_{n-1} & = f(n) \\
+\hline
+a_n - a_0 & = \sum_{k=1}^n f(k)
+\end{align*}$$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713810280088-->
+END%%
+
+%%ANKI
+Basic
+What is the closed formula of recurrence $a_n = a_{n-1} + f(n)$?
+Back: $a_n = a_0 + \sum_{k=1}^n f(k)$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713810280091-->
+END%%
+
+%%ANKI
+Basic
+What summation property can be used to derive the closed formula of $a_n = a_{n-1} + f(n)$?
+Back: Telescoping.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713810280094-->
+END%%
+
 ## Bibliography
 
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).

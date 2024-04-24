@@ -990,7 +990,7 @@ This is more simply expressed as $x +_w^u y = (x + y) \bmod 2^w$.
 
 %%ANKI
 Basic
-What kind of overflows does unsigned addition potentially exhibit?
+What kind of overflow does unsigned addition potentially exhibit?
 Back: Positive overflow.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708799678739-->
