@@ -171,6 +171,12 @@ END%%
 
 ## Solving Recurrence Relations
 
+We use three different strategies for solving recurrences:
+
+* Telescoping
+* Iteration
+* Characteristic Polynomials
+
 %%ANKI
 Basic
 What is the recurrence relation for the Fibonacci sequence?
@@ -245,15 +251,14 @@ END%%
 
 %%ANKI
 Basic
-Schematically show how telescoping can be used to solve $a_n = a_{n-1} + f(n)$.
+Schematically show how **telescoping** can be used to solve $a_n = a_{n-1} + f(n)$.
 Back: $$\begin{align*}
 a_1 - a_0 & = f(1) \\
 & \vdots \\
 a_n - a_{n-1} & = f(n) \\
 \hline
 a_n - a_0 & = \sum_{k=1}^n f(k)
-\end{align*}$$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+\end{align*}$$Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1713810280088-->
 END%%
 
@@ -271,6 +276,71 @@ What summation property can be used to derive the closed formula of $a_n = a_{n-
 Back: Telescoping.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1713810280094-->
+END%%
+
+%%ANKI
+Basic
+What does it mean to solve a recurrence relation using iteration?
+Back: Repeatedly expand terms, starting at the initial conditions, to discover a pattern.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713998412589-->
+END%%
+
+%%ANKI
+Basic
+What is the result of "iterating" the following recursive definition twice? $$a_n = 3a_{n-1} + 2$$
+Back: $$\begin{align*}
+a_1 & = 3(a_0) + 2 \\
+a_2 & = 3(3(a_0) + 2) + 2
+\end{align*}$$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713998412595-->
+END%%
+
+%%ANKI
+Basic
+Schematically show how **iteration** can be used to solve $a_n = a_{n-1} + f(n)$.
+Back: $$\begin{align*}
+a_1 & = a_0 + f(1) \\
+& \vdots \\
+a_n & = (\cdots((a_0 + f(1)) + f(2)) + \cdots) + f(n) \\
+\hline
+a_n & = a_0 + \sum_{k=1}^n f(k)
+\end{align*}$$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713998412597-->
+END%%
+
+%%ANKI
+Basic
+How fast does the number of terms grow when iterating $a_n = 3a_{n-1} + 2$?
+Back: Linearly.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713998412600-->
+END%%
+
+%%ANKI
+Basic
+How fast does the number of terms grow when iterating $a_n = 2a_{n-1} + 3a_{n-2}$?
+Back: Exponentially (the number of terms double each iteration).
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713998412603-->
+END%%
+
+%%ANKI
+Basic
+Why should you avoid using iteration to solve $a_n = 2a_{n-1} + 3a_{n-2}$?
+Back: The number of terms grows unwieldy very quickly.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713998412607-->
+END%%
+
+%%ANKI
+Basic
+When solving recurrences, is telescoping or iteration a more general technique?
+Back: Iteration.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1713998536738-->
 END%%
 
 ## Bibliography

@@ -1,10 +1,11 @@
 ---
 title: Trees
 TARGET DECK: Obsidian::STEM
-FILE TAGS: set::graph
+FILE TAGS: set::tree
 tags:
   - graph
   - set
+  - tree
 ---
 
 ## Overview
@@ -151,6 +152,22 @@ Is every free tree a rooted tree?
 Back: No.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1711136844955-->
+END%%
+
+%%ANKI
+Basic
+How many levels exist in a rooted tree of height $h$?
+Back: $h + 1$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128242-->
+END%%
+
+%%ANKI
+Basic
+What is the height of a rooted tree with $k$ levels?
+Back: $k - 1$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128244-->
 END%%
 
 %%ANKI
@@ -644,16 +661,16 @@ END%%
 
 %%ANKI
 Basic
-The following two trees are equivalent when considered as what kind of trees?
+The following two trees are equivalent when considered as what (most specific) kind of trees?
 ![[ordered-rooted-tree-cmp.png]]
-Back: Rooted/free trees.
+Back: Rooted trees.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1712407152755-->
 END%%
 
 %%ANKI
 Basic
-The following two trees are different when considered as what kind of trees?
+The following two trees are different when considered as what (most general) kind of trees?
 ![[ordered-rooted-tree-cmp.png]]
 Back: Ordered trees.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -680,6 +697,15 @@ END%%
 
 %%ANKI
 Basic
+Considered as positional trees, are the following trees the same?
+![[ordered-binary-tree-cmp.png]]
+Back: No.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714089436122-->
+END%%
+
+%%ANKI
+Basic
 Considered as binary trees, are the following trees the same?
 ![[ordered-binary-tree-cmp.png]]
 Back: No.
@@ -687,12 +713,540 @@ Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition
 <!--ID: 1712409466676-->
 END%%
 
-### Binary Trees
+%%ANKI
+Basic
+Why are these two binary trees not the same?
+![[ordered-binary-tree-cmp.png]]
+Back: `5` is a left child in the first tree but a right child in the second.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1712409466682-->
+END%%
+
+### Positional Trees
+
+A **positional tree** is a rooted tree in which each child is labeled with a specific positive integer. A **$k$-ary tree** is a positional tree with at most $k$ children/labels. A binary tree is a $2$-ary tree.
+
+A $k$-ary tree is **full** if every node has degree $0$ or $k$. A $k$-ary tree is **perfect** if all leaves have the same depth and all internal nodes have degree $k$. A $k$-ary tree is **complete** if the last level is not filled but all leaves have the same depth and are leftmost arranged.
+
+%%ANKI
+Basic
+Why aren't terms "complete/perfect" and "nearly complete/complete" quite synonymous?
+Back: In the former, "perfect" trees are a subset of "complete" trees.
+Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+<!--ID: 1714088438740-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes a positional tree from a $k$-ary tree?
+Back: A $k$-ary tree cannot have child with label $> k$.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128216-->
+END%%
+
+%%ANKI
+Basic
+Is a $k$-ary tree a positional tree?
+Back: Yes.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714089436130-->
+END%%
+
+%%ANKI
+Basic
+Is a positional tree a $k$-ary tree?
+Back: Not necessarily.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714089436134-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes positional trees from ordered trees?
+Back: Children of the former are labeled with a distinct positive integer.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128219-->
+END%%
+
+%%ANKI
+Basic
+Is the notion of absent children a concept in ordered trees?
+Back: No.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714088438749-->
+END%%
+
+%%ANKI
+Basic
+Is the notion of absent children a concept in positional trees?
+Back: Yes.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714088438754-->
+END%%
+
+%%ANKI
+Basic
+Is the notion of absent children a concept in $k$-ary trees?
+Back: Yes.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714088438759-->
+END%%
+
+%%ANKI
+Basic
+What is a positional tree?
+Back: A rooted tree in which each child is labeled with a distinct positive integer.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128220-->
+END%%
+
+%%ANKI
+Basic
+What is a $k$-ary tree?
+Back: A positional tree with labels greater than $k$ missing.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128223-->
+END%%
+
+%%ANKI
+Basic
+Which of positional trees or $k$-ary trees are more general? 
+Back: The positional tree.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128225-->
+END%%
+
+%%ANKI
+Basic
+Which of positional trees or ordered trees are more general? 
+Back: N/A.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714088438763-->
+END%%
+
+%%ANKI
+Is the concept of fullness related to positional trees or $k$-ary trees?
+Back: $k$-ary trees.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+END%%
+
+%%ANKI
+Basic
+Is the concept of perfectness related to positional trees or $k$-ary trees?
+Back: $k$-ary trees.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128229-->
+END%%
+
+%%ANKI
+Basic
+Is the concept of completeness related to positional trees or $k$-ary trees?
+Back: $k$-ary trees.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714088723844-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a $k$-ary tree to be full?
+Back: Each node has $0$ or $k$ children.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128231-->
+END%%
+
+%%ANKI
+Basic
+What degrees are permitted in a full $k$-ary tree?
+Back: $0$ or $k$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128233-->
+END%%
+
+%%ANKI
+Basic
+What degrees are permitted in a perfect $k$-ary tree?
+Back: $0$ or $k$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128234-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a $k$-ary tree to be perfect?
+Back: All leaves have the same depth and all internal nodes have degree $k$.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128236-->
+END%%
+
+%%ANKI
+Basic
+What is the degree of an internal node in a perfect $k$-ary tree?
+Back: $k$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128239-->
+END%%
+
+%%ANKI
+Basic
+What is the degree of an external node in a perfect $k$-ary tree?
+Back: $0$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128241-->
+END%%
+
+%%ANKI
+Basic
+What recursive definition describes the number of nodes in each level of a perfect $k$-ary tree?
+Back: $a_n = k \cdot a_{n-1}$ with $a_0 = 1$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algebra::sequence
+<!--ID: 1713118128248-->
+END%%
+
+%%ANKI
+Basic
+How many nodes are in a perfect $k$-ary tree of height $h$?
+Back: $$\frac{1 - k^{h+1}}{1 - k}$$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algebra::sequence
+<!--ID: 1713118128249-->
+END%%
+
+%%ANKI
+Basic
+How many internal nodes are in a perfect $k$-ary tree of height $h$?
+Back: $$\frac{1 - k^h}{1 - k}$$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algebra::sequence
+<!--ID: 1714080353459-->
+END%%
+
+%%ANKI
+Basic
+How many external nodes are in a perfect $k$-ary tree of height $h$?
+Back: $k^h$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algebra::sequence
+<!--ID: 1714080353455-->
+END%%
+
+%%ANKI
+Basic
+How many nodes are on level $d$ of a perfect $k$-ary tree?
+Back: $k^d$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algebra::sequence
+<!--ID: 1714080353462-->
+END%%
+
+%%ANKI
+Basic
+What kind of sequence describes the number of nodes in a perfect $k$-ary tree?
+Back: A geometric sequence.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algebra::sequence
+<!--ID: 1713118128251-->
+END%%
+
+%%ANKI
+Basic
+What is the common ratio of the geometric sequence used to count nodes of a perfect $k$-ary tree?
+Back: $k$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algebra::sequence
+<!--ID: 1713118128253-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a $k$-ary tree to be complete?
+Back: The last level is not filled but all leaves have the same depth and are leftmost arranged.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714080353480-->
+END%%
+
+%%ANKI
+Basic
+How is the minimum number of nodes in a complete $k$-ary tree of height $h$ calculated in terms of perfect $k$-ary trees?
+Back: As "the number of nodes in a perfect $k$-ary tree of height $h - 1$" plus $1$.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714082676018-->
+END%%
+
+%%ANKI
+Basic
+What is the maximum number of nodes in a complete binary tree of height $h$?
+Back: $2^{h+1} - 1$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714082676014-->
+END%%
+
+%%ANKI
+Basic
+How is the maximum number of nodes in a complete $k$-ary tree of height $h$ calculated in terms of perfect $k$-ary trees?
+Back: As "the number of nodes in a perfect $k$-ary tree of height $h$".
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714082676022-->
+END%%
+
+#### Binary Trees
 
 A **binary tree** $T$ is a structure defined on a finite set of nodes that either
 
 * contains no nodes, or
 * is composed of three disjoint sets of nodes: a **root** node, a **left subtree**, and a **right subtree**.
+
+%%ANKI
+Basic
+Is a binary tree a $k$-ary tree?
+Back: Yes.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714089436138-->
+END%%
+
+%%ANKI
+Basic
+Is a binary tree a positional tree?
+Back: Yes.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+END%%
+
+%%ANKI
+Basic
+Is a binary tree an ordered tree?
+Back: No.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714089436144-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a binary tree to be full?
+Back: Each node has $0$ or $2$ children.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128213-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a binary tree to be perfect?
+Back: Each leaf has the same depth and all internal nodes have degree $2$.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714081594570-->
+END%%
+
+%%ANKI
+Basic
+Is a perfect binary tree considered full?
+Back: Yes.
+Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+<!--ID: 1714088438720-->
+END%%
+
+%%ANKI
+Basic
+Is a full binary tree considered perfect?
+Back: Not necessarily.
+Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+<!--ID: 1714088438726-->
+END%%
+
+%%ANKI
+Basic
+Is a full binary tree considered complete?
+Back: Not necessarily.
+Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+<!--ID: 1714088438729-->
+END%%
+
+%%ANKI
+Basic
+Is a complete binary tree considered full?
+Back: Not necessarily.
+Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+<!--ID: 1714088438733-->
+END%%
+
+%%ANKI
+Basic
+What alternative term is sometimes used in favor of a "perfect binary tree"?
+Back: A "complete binary tree".
+Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+<!--ID: 1714088438737-->
+END%%
+%%ANKI
+Basic
+What alternative term is sometimes used in favor over a "complete binary tree"?
+Back: Some authors may say "nearly complete" if the last level isn't completely filled.
+Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+<!--ID: 1714088438744-->
+END%%
+
+%%ANKI
+Basic
+What degrees are permitted in a full binary tree?
+Back: $0$ or $2$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714081594576-->
+END%%
+
+%%ANKI
+Basic
+What degrees are permitted in a perfect binary tree?
+Back: $0$ or $2$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714081594579-->
+END%%
+
+%%ANKI
+Basic
+What category of rooted tree does a binary tree fall under?
+Back: A positional tree or $k$-ary tree.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714081594582-->
+END%%
+
+%%ANKI
+Basic
+Is a binary tree a positional tree?
+Back: Yes.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1713118128227-->
+END%%
+
+%%ANKI
+Basic
+How many nodes are in a perfect binary tree of height $h$?
+Back: $2^{h+1} - 1$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algebra::sequence
+<!--ID: 1713118128255-->
+END%%
+
+%%ANKI
+Basic
+How many internal nodes are in a perfect binary tree of height $h$?
+Back: $2^h - 1$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algebra::sequence
+<!--ID: 1714080353472-->
+END%%
+
+%%ANKI
+Basic
+How many external nodes are in a perfect binary tree of height $h$?
+Back: $2^h$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algebra::sequence
+<!--ID: 1714080353469-->
+END%%
+
+%%ANKI
+Basic
+How many nodes are on level $d$ of a perfect binary tree?
+Back: $2^d$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algebra::sequence
+<!--ID: 1714080353465-->
+END%%
+
+%%ANKI
+Basic
+How does the number of internal nodes compare to the number of external nodes in a perfect binary tree?
+Back: There is one more external node than internal node.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algebra::sequence
+<!--ID: 1714080353476-->
+END%%
+
+%%ANKI
+Basic
+Is the following a perfect binary tree?
+![[perfect-tree.png]]
+Back: Yes.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714080353484-->
+END%%
+
+%%ANKI
+Basic
+Is the following a complete binary tree?
+![[perfect-tree.png]]
+Back: Yes.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714080353488-->
+END%%
+
+%%ANKI
+Basic
+Is the following a full binary tree?
+![[perfect-tree.png]]
+Back: Yes.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714088438768-->
+END%%
+
+%%ANKI
+Basic
+Is the following a perfect binary tree?
+![[complete-tree.png]]
+Back: No.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714080353491-->
+END%%
+
+%%ANKI
+Basic
+Is the following a complete binary tree?
+![[complete-tree.png]]
+Back: Yes.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714080353495-->
+END%%
+
+%%ANKI
+Basic
+Is the following a full binary tree?
+![[complete-tree.png]]
+Back: No.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714088438773-->
+END%%
+
+%%ANKI
+Basic
+Is the following a perfect binary tree?
+![[non-complete-tree.png]]
+Back: No.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714080353498-->
+END%%
+
+%%ANKI
+Basic
+Is the following a complete binary tree?
+![[non-complete-tree.png]]
+Back: No.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714080353502-->
+END%%
+
+%%ANKI
+Basic
+Is the following a full binary tree?
+![[non-complete-tree.png]]
+Back: No.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714088438777-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum number of nodes in a complete binary tree of height $h$?
+Back: $2^h$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714082676010-->
+END%%
 
 %%ANKI
 Basic
@@ -812,249 +1366,7 @@ Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition
 <!--ID: 1712409466653-->
 END%%
 
-%%ANKI
-Is a binary tree a $k$-ary tree?
-Back: Yes.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-END%%
-
-ANKI%%
-Is a $k$-ary tree a positional tree?
-Back: Yes.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-END%%
-
-ANK%%
-Is a positional tree a $k$-ary tree?
-Back: Not necessarily.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-END%%
-
-%%ANKI
-Basic
-Why are these two binary trees not the same?
-![[ordered-binary-tree-cmp.png]]
-Back: `5` is a left child in the first tree but a right child in the second.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1712409466682-->
-END%%
-
-### Positional Trees
-
-A **positional tree** is a rooted tree in which each child is labeled with a specific positive integer. A **$k$-ary tree** is a positional tree with at most $k$ children/labels. A binary tree is a $2$-ary tree.
-
-A $k$-ary tree is **full** if every node has degree $0$ or $k$. A $k$-ary tree is **complete** if all leaves have the same depth and all internal nodes have degree $k$.
-
-%%ANKI
-Basic
-What does it mean for a binary tree to be full?
-Back: Each node has $0$ or $2$ children.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128213-->
-END%%
-
-%%ANKI
-What does it mean for a binary tree to be complete?
-Back: Each leaf has the same depth and all internal nodes have degree $2$.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-END%%
-
-%%ANKI
-What degrees are permitted in a full binary tree?
-Back: $0$ or $2$
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-END%%
-
-%%ANKI
-What degrees are permitted in a complete binary tree?
-Back: $0$ or $2$
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-END%%
-
-%%ANKI
-What category of rooted tree does a binary tree fall under?
-Back: A positional tree or $k$-ary tree.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-END%%
-
-%%ANKI
-Basic
-What distinguishes a positional tree from a $k$-ary tree?
-Back: A $k$-ary tree is a positional tree in which each node has at most $k$ children.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128216-->
-END%%
-
-%%ANKI
-Basic
-What distinguishes positional trees from ordered trees?
-Back: The same children in different positions is considered distinct in the former.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128219-->
-END%%
-
-%%ANKI
-Basic
-What is a positional tree?
-Back: A rooted tree in which each child is labeled with a specific positive integer.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128220-->
-END%%
-
-%%ANKI
-Basic
-What is a $k$-ary tree?
-Back: A positional tree in which each node has $k$ labels with a potential child.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128223-->
-END%%
-
-%%ANKI
-Basic
-Which of positional trees or $k$-ary trees are more general? 
-Back: The positional tree.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128225-->
-END%%
-
-%%ANKI
-Basic
-Which of positional trees or $k$-ary trees are more general? 
-Back: The positional tree.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-END%%
-
-%%ANKI
-Basic
-Is a binary tree a positional tree?
-Back: Yes.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128227-->
-END%%
-
-%%ANKI
-Is the concept of fullness related to positional trees or $k$-ary trees?
-Back: $k$-ary trees.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-END%%
-
-%%ANKI
-Basic
-Is the concept of completeness related to positional trees or $k$-ary trees?
-Back: $k$-ary trees.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128229-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for a $k$-ary tree to be full?
-Back: Each node has $0$ or $k$ children.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128231-->
-END%%
-
-%%ANKI
-Basic
-What degrees are permitted in a full $k$-ary tree?
-Back: $0$ or $k$
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128233-->
-END%%
-
-%%ANKI
-Basic
-What degrees are permitted in a complete $k$-ary tree?
-Back: $0$ or $k$
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128234-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for a $k$-ary tree to be complete?
-Back: All leaves have the same depth and all internal nodes have degree $k$.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128236-->
-END%%
-
-%%ANKI
-Basic
-What is the degree of an internal node in a complete $k$-ary tree'?
-Back: $k$
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128239-->
-END%%
-
-%%ANKI
-Basic
-What is the degree of an external node in a complete $k$-ary tree'?
-Back: $0$
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128241-->
-END%%
-
-%%ANKI
-Basic
-How many levels exist in a rooted tree of height $h$?
-Back: $h + 1$
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128242-->
-END%%
-
-%%ANKI
-Basic
-What is the height of a rooted tree with $k$ levels?
-Back: $k - 1$
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1713118128244-->
-END%%
-
-%%ANKI
-Basic
-What recursive definition describes the number of nodes in each level of a complete $k$-ary tree?
-Back: $a_n = k \cdot a_{n-1}$ with $a_0 = 1$
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: algebra::sequence
-<!--ID: 1713118128248-->
-END%%
-
-%%ANKI
-Basic
-What closed formula details the number of nodes in a complete $k$-ary tree of height $h$?
-Back: $$\frac{1 - k^h}{1 - k}$$
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: algebra::sequence
-<!--ID: 1713118128249-->
-END%%
-
-%%ANKI
-Basic
-What kind of sequence describes the number of nodes in a complete $k$-ary tree?
-Back: A geometric sequence.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: algebra::sequence
-<!--ID: 1713118128251-->
-END%%
-
-%%ANKI
-Basic
-What is the common ratio in the geometric sequence counting nodes of a complete $k$-ary tree?
-Back: $k$
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: algebra::sequence
-<!--ID: 1713118128253-->
-END%%
-
-%%ANKI
-Basic
-How many nodes are in a complete binary tree of height $h$?
-Back: $$\frac{1 - 2^h}{1 - 2} = 2^h - 1$$
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: algebra::sequence
-<!--ID: 1713118128255-->
-END%%
-
 ## Bibliography
 
+* “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
 * Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

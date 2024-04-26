@@ -36,7 +36,7 @@ END%%
 
 %%ANKI
 Basic
-Text is more platform-independent than binary because it is unaffected by what two properties?
+Text is more platform-independent than e.g. integer encodings because it is unaffected by what two properties?
 Back: Word size and byte ordering.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707758281270-->
