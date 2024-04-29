@@ -110,21 +110,21 @@ END%%
 
 Consider [[loop-invariant|loop invariant]] $P$ given by
 
-> `A[0..i-1]` is a sorted array of the `i` least elements of `A`.
+> `A[0:i-1]` is a sorted array of the `i` least elements of `A`.
 
 We prove $P$ maintains the requisite properties:
 
 * Initialization
-	* When `i = 0`, `A[0..-1]` is an empty array. This trivially satisfies $P$.
+	* When `i = 0`, `A[0:-1]` is an empty array. This trivially satisfies $P$.
 * Maintenance
-	* Suppose $P$ holds for some `0 ≤ i < n - 1`. Then `A[0..i-1]` is a sorted array of the `i` least elements of `A`. Our inner loop then finds the smallest element in `A[i..n]` and swaps it with `A[i]`. Therefore `A[0..i]` is a sorted array of the `i + 1` least elements of `A`. At the end of the iteration, `i` is incremented meaning `A[0..i-1]` still satisfies $P$.
+	* Suppose $P$ holds for some `0 ≤ i < n - 1`. Then `A[0:i-1]` is a sorted array of the `i` least elements of `A`. Our inner loop then finds the smallest element in `A[i:n]` and swaps it with `A[i]`. Therefore `A[0:i]` is a sorted array of the `i + 1` least elements of `A`. At the end of the iteration, `i` is incremented meaning `A[0:i-1]` still satisfies $P$.
 * Termination
-	* On termination, `i = n - 1` and `A[0..n-2]` are the `n - 1` least elements of `A` in sorted order. But, by exhaustion, `A[n-1]` must be the largest element meaning `A[0..n-1]`, the entire array, is in sorted order.
+	* On termination, `i = n - 1` and `A[0:n-2]` are the `n - 1` least elements of `A` in sorted order. But, by exhaustion, `A[n-1]` must be the largest element meaning `A[0:n-1]`, the entire array, is in sorted order.
 
 %%ANKI
 Basic
-Given array `A[0..n-1]`, what is `SELECTION_SORT`'s loop invariant?
-Back: `A[0..i-1]` is a sorted array of the `i` least elements of `A`.
+Given array `A[0:n-1]`, what is `SELECTION_SORT`'s loop invariant?
+Back: `A[0:i-1]` is a sorted array of the `i` least elements of `A`.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707398773331-->
 END%%

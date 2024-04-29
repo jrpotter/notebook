@@ -134,21 +134,21 @@ END%%
 
 Consider [[loop-invariant|loop invariant]] $P$ given by
 
-> `A[0..i-1]` is a sorted array of the `i` least elements of `A`.
+> `A[0:i-1]` is a sorted array of the `i` least elements of `A`.
 
 We prove $P$ maintains the requisite properties:
 
 * Initialization
-	* When `i = 0`, `A[0..-1]` is an empty array. This trivially satisfies $P$.
+	* When `i = 0`, `A[0:-1]` is an empty array. This trivially satisfies $P$.
 * Maintenance
-	* Suppose $P$ holds for some `0 ≤ i < n - 1`. Then `A[0..i-1]` is a sorted array of the `i` least elements of `A`. Our inner loop now starts at the end of the array and swaps each adjacent pair, putting the smaller of the two closer to position `i`. Repeating this process across all pairs from `n - 1` to `i + 1` ensures `A[i]` is the smallest element of `A[i..n-1]`. Therefore `A[0..i]` is a sorted array of the `i + 1` least elements of `A`. At the end of the iteration, `i` is incremented meaning `A[0..i-1]` still satisfies $P$.
+	* Suppose $P$ holds for some `0 ≤ i < n - 1`. Then `A[0:i-1]` is a sorted array of the `i` least elements of `A`. Our inner loop now starts at the end of the array and swaps each adjacent pair, putting the smaller of the two closer to position `i`. Repeating this process across all pairs from `n - 1` to `i + 1` ensures `A[i]` is the smallest element of `A[i:n-1]`. Therefore `A[0:i]` is a sorted array of the `i + 1` least elements of `A`. At the end of the iteration, `i` is incremented meaning `A[0:i-1]` still satisfies $P$.
 * Termination
-	* Termination happens when `i = n - 1`. Then $P$ implies `A[0..n-2]` is a sorted array of the `n - 1` least elements of `A`. But then `A[n-1]` must be the greatest element of `A` meaning `A[0..n-1]`, the entire array, is in sorted order.
+	* Termination happens when `i = n - 1`. Then $P$ implies `A[0:n-2]` is a sorted array of the `n - 1` least elements of `A`. But then `A[n-1]` must be the greatest element of `A` meaning `A[0:n-1]`, the entire array, is in sorted order.
 
 %%ANKI
 Basic
-Given array `A[0..n-1]`, what is `BUBBLE_SORT`'s loop invariant?
-Back: `A[0..i-1]` is a sorted array of the `i` least elements of `A`.
+Given array `A[0:n-1]`, what is `BUBBLE_SORT`'s loop invariant?
+Back: `A[0:i-1]` is a sorted array of the `i` least elements of `A`.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707504634796-->
 END%%

@@ -118,21 +118,22 @@ END%%
 
 Consider [[loop-invariant|loop invariant]] $P$ given by
 
-> `A[0..i-1]` consists of the original `A[0..i-1]` elements but in sorted order.
+> `A[0:i-1]` consists of the original `A[0:i-1]` elements but in sorted order.
 
 We prove $P$ maintains the requisite properties:
 
 * Initialization
-	* When `i = 1`, `A[0..0]` contains a single element. This trivially satisfies $P$.
+	* When `i = 1`, `A[0:0]` contains a single element. This trivially satisfies $P$.
 * Maintenance
-	* Suppose $P$ holds for some `1 ≤ i < n`. Then `A[0..i-1]` consists of the original `A[0..i-1]` elements but in sorted order. On iteration `i + 1`, the nested for loop puts `A[0..i]` in sorted order. At the end of the iteration, `i` is incremented meaning `A[0..i-1]` still satisfies $P$.
+	* Suppose $P$ holds for some `1 ≤ i < n`. Then `A[0:i-1]` consists of the original `A[0:i-1]` elements but in sorted order. On iteration `i + 1`, the nested for loop puts `A[0:i]` in sorted order. At the end of the iteration, `i` is incremented meaning `A[0:i-1]` still satisfies $P$.
 * Termination
-	* The loop ends because `i < n` is no longer true. Then `i = n`. Since $P$ holds, this means `A[0..n-1]`, the entire array, is in sorted order.
+	* The loop ends because `i < n` is no longer true. Then `i = n`. Since $P$ holds, this means `A[0:n-1]`, the entire array, is in sorted order.
 
 %%ANKI
 Basic
-Given array `A[0..n-1]`, what is `INSERTION_SORT`'s loop invariant?
-Back: `A[0..i-1]` consists of the original `A[0..i-1]` elements but in sorted order.
+Given array `A[0:n-1]`, what is `INSERTION_SORT`'s loop invariant?
+Back: `A[0:i-1]` consists of the original `A[0:i-1]` elements but in sorted order.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707332638371-->
 END%%
 

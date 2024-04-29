@@ -1,10 +1,11 @@
 ---
 title: Heaps
 TARGET DECK: Obsidian::STEM
-FILE TAGS: algorithm::data_structure
+FILE TAGS: data_structure::heap
 tags:
   - algorithm
   - data_structure
+  - heap
 ---
 
 ## Overview
@@ -12,6 +13,37 @@ tags:
 The **binary heap** data structure is an array object that can be viewed as a [[trees#Positional Trees|complete binary tree]].
 
 The primary function used to maintain the max-heap property is `MAX_HEAPIFY_DOWN`. This function assumes the left and right- subtrees at a given node are max heaps but that the current node may be smaller than its children. An analagous function and assumptions exist for `MIN_HEAPIFY_DOWN`.
+
+```c
+inline int left_child(int i) { return (i << 1) + 1; }
+inline int right_child(int i) { return (i << 1) + 2; }
+
+void max_heapify_down(int n, int H[static n], int i) {
+  while (true) {
+    int lc = left_child(i);
+    int rc = right_child(i);
+    int next = i;
+
+    if (lc < n && H[next] < H[lc]) {
+      next = lc;
+    }
+    if (rc < n && H[next] < H[rc]) {
+      next = rc;
+    }
+    if (next == i) {
+      return;
+    }
+    swap(H, i, next);
+    i = next;
+  }
+}
+
+void build_max_heap(int n, int H[static n]) {
+  for (int i = n / 2 - 1; i >= 0; --i) {
+    max_heapify_down(n, H, i);
+  }
+}
+```
 
 %%ANKI
 Cloze
@@ -321,8 +353,8 @@ END%%
 
 %%ANKI
 Basic
-Given heap $H[0{..}n{-}1]$, what is `BUILD_MAX_HEAP`'s loop invariant?
-Back: Each node in $H[i{+}1{..}n{-}1]$ is the root of a max-heap.
+Given heap `H[0:n-1]`, what is `BUILD_MAX_HEAP`'s loop invariant?
+Back: Each node in `H[i+1:n-1]` is the root of a max-heap.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714403425336-->
 END%%
@@ -400,8 +432,8 @@ END%%
 
 %%ANKI
 Basic
-Given heap $H[0{..}n{-}1]$, what is `BUILD_MIN_HEAP`'s loop invariant?
-Back: Each node in $H[i{+}1{..}n{-}1]$ is the root of a min-heap.
+Given heap `H[0:n-1]`, what is `BUILD_MIN_HEAP`'s loop invariant?
+Back: Each node in `H[i+1:n-1]` is the root of a min-heap.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714403425372-->
 END%%
@@ -435,6 +467,14 @@ void BUILD_MIN_HEAP(int n, int H[static n]) {
 ```
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714403425386-->
+END%%
+
+%%ANKI
+Basic
+`BUILD_MIN_HEAP` can sort arrays of what sizes?
+Back: $\leq 2$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714410566848-->
 END%%
 
 ## Bibliography
