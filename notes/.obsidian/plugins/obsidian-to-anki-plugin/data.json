@@ -114,7 +114,9 @@
     "nearly-complete-tree.png",
     "non-nearly-complete-tree.png",
     "perfect-tree.png",
-    "non-complete-tree.png"
+    "non-complete-tree.png",
+    "max-heap-tree.png",
+    "max-heap-array.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -153,7 +155,7 @@
     "_journal/2024-02-02.md": "a3b222daee8a50bce4cbac699efc7180",
     "_journal/2024-02-01.md": "3aa232387d2dc662384976fd116888eb",
     "_journal/2024-01-31.md": "7c7fbfccabc316f9e676826bf8dfe970",
-    "logic/equiv-trans.md": "5d68be4120e7f79e12c35fafeddaf1a1",
+    "logic/equiv-trans.md": "63515dfd471653bc0c8bc4eca66ccaf8",
     "_journal/2024-02-07.md": "8d81cd56a3b33883a7706d32e77b5889",
     "algorithms/loop-invariants.md": "cbefc346842c21a6cce5c5edce451eb2",
     "algorithms/loop-invariant.md": "3b390e720f3b2a98e611b49a0bb1f5a9",
@@ -201,7 +203,7 @@
     "_journal/2024-02/2024-02-14.md": "aa009f9569e175a8104b0537ebcc5520",
     "_journal/2024-02-16.md": "5cc129254afd553829be3364facd23db",
     "_journal/2024-02/2024-02-15.md": "16cb7563d404cb543719b7bb5037aeed",
-    "algebra/floor-ceiling.md": "ffffdd893398da842be2e4337c16bbf7",
+    "algebra/floor-ceiling.md": "412e4fdc424cb17fd818688857c4b5b3",
     "algebra/index.md": "90b842eb694938d87c7c68779a5cacd1",
     "algorithms/binary-search.md": "8533a05ea372e007ab4e8a36fd2772a9",
     "_journal/2024-02-17.md": "7c37cb10515ed3d2f5388eaf02a67048",
@@ -245,7 +247,7 @@
     "filesystems/cas.md": "d41c0d2e943adecbadd10a03fd1e4274",
     "git/objects.md": "c6b7e6a26666386790d25d4ece38175d",
     "git/index.md": "83d2d95fc549d9e8436946c7bd058d15",
-    "encoding/integer.md": "73c42283ff8c3a1d4efb9f9644a4cf3b",
+    "encoding/integer.md": "2ab21152b9468f547ebee496e03bc410",
     "_journal/2024-02-29.md": "f610f3caed659c1de3eed5f226cab508",
     "_journal/2024-02/2024-02-28.md": "7489377c014a2ff3c535d581961b5b82",
     "_journal/2024-03-01.md": "a532486279190b0c12954966cbf8c3fe",
@@ -315,7 +317,7 @@
     "x86-64/declarations.md": "75bc7857cf2207a40cd7f0ee056af2f2",
     "x86-64/instructions.md": "d783bad8dd77748fb412715541cb844d",
     "git/refs.md": "954fc69004aa65b358ec5ce07c1435ce",
-    "set/trees.md": "6c1a245f6b25838c519f5c9bcf96c369",
+    "set/trees.md": "0d21b947917498f107da140cc9fb93a7",
     "_journal/2024-03-24.md": "1974cdb9fc42c3a8bebb8ac76d4b1fd6",
     "_journal/2024-03/2024-03-23.md": "ad4e92cc2bf37f174a0758a0753bf69b",
     "_journal/2024-03/2024-03-22.md": "a509066c9cd2df692549e89f241d7bd9",
@@ -371,7 +373,19 @@
     "_journal/2024-04/2024-04-23.md": "20514052da91b06b979cacb3da758837",
     "_journal/2024-04-25.md": "10c98531cb90a6bc940ea7ae3342f98b",
     "_journal/2024-04/2024-04-24.md": "4cb04e0dea56e0b471fc0e428471a390",
-    "algorithms/heaps.md": "4235ec90b6e251fc992906e0f1fe69e7"
+    "algorithms/heaps.md": "b12c70ec85e514ce912821d133d116d4",
+    "_journal/2024-04-26.md": "3ce37236a9e09e74b547a4f7231df5f0",
+    "_journal/2024-04/2024-04-25.md": "5a81123af29f8ebf0a0d28f820a3a52e",
+    "_journal/2024-04-28.md": "46726bf76a594b987c63ba8b9b6d13d3",
+    "_journal/2024-04/2024-04-27.md": "b0f3753821c232bf819b00fb49415bd0",
+    "_journal/2024-04/2024-04-26.md": "3ce37236a9e09e74b547a4f7231df5f0",
+    "algorithms/sorting/heapsort.md": "e0d368882a8f33d2f42bd3ead4e3914d",
+    "_journal/2024-04-29.md": "7888f4e9497c9d8bd6f4aa759d9abc4d",
+    "_journal/2024-04/2024-04-28.md": "b34a9fe3bccb1f224b96ca00e78ad061",
+    "programming/assertions.md": "bdef9b934d8db94169d6befbc02f33d2",
+    "programming/text-sub.md": "003b8c32ae2f6767cb0d900f85196e67",
+    "programming/equiv-trans.md": "fbadd593688e364ea92f74f23e54bcfc",
+    "programming/index.md": "bb082325e269a95236aa6aff9307fe59"
   },
   "fields_dict": {
     "Basic": [

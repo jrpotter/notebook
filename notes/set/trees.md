@@ -960,7 +960,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for a $k$-ary tree to be complete?
-Back: The last level is not filled but all leaves have the same depth and are leftmost arranged.
+Back: All levels, except maybe the last, are filled. All leaves have the same depth and are leftmost arranged.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714080353480-->
 END%%
@@ -987,6 +987,86 @@ How is the maximum number of nodes in a complete $k$-ary tree of height $h$ calc
 Back: As "the number of nodes in a perfect $k$-ary tree of height $h$".
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714082676022-->
+END%%
+
+%%ANKI
+Basic
+How many internal nodes are in a complete $k$-ary tree of $n$ nodes?
+Back: $\lceil (n - 1) / k \rceil$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714349367630-->
+END%%
+
+%%ANKI
+Basic
+What value of $k$ is used in the following description of a complete $k$-ary tree?
+$$\begin{array}{c|c|c}
+n & \text{external} & \text{internal} \\
+\hline
+1 & 1 & 0 \\
+2 & 1 & 1 \\
+3 & 2 & 1 \\
+4 & 3 & 1 \\
+5 & 4 & 1 \\
+6 & 4 & 2 \\
+7 & 5 & 2 \\
+8 & 6 & 2
+\end{array}$$
+Back: $4$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714349367637-->
+END%%
+
+%%ANKI
+Basic
+What value of $k$ is used in the following description of a complete $k$-ary tree?
+$$\begin{array}{c|c|c}
+n & \text{external} & \text{internal} \\
+\hline
+1 & 1 & 0 \\
+2 & 1 & 1 \\
+3 & 2 & 1 \\
+4 & 2 & 2 \\
+5 & 3 & 2 \\
+6 & 3 & 3 \\
+7 & 4 & 3 \\
+8 & 4 & 4
+\end{array}$$
+Back: $2$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714349367640-->
+END%%
+
+%%ANKI
+Basic
+When does the number of external nodes increment in a growing $k$-ary tree?
+Back: When the next node added already has a sibling.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714349367644-->
+END%%
+
+%%ANKI
+Basic
+When does the number of external nodes remain static in a growing $k$-ary tree?
+Back: When the next node added has no sibling.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714349367647-->
+END%%
+
+%%ANKI
+Basic
+When does the number of internal nodes increment in a growing $k$-ary tree?
+Back: When the next node added has no sibling.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714349367651-->
+END%%
+
+%%ANKI
+Basic
+When does the number of internal nodes remain static in a growing $k$-ary tree?
+Back: When the next node added already has a sibling.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714349367655-->
 END%%
 
 #### Binary Trees
@@ -1165,7 +1245,7 @@ Is the following a perfect binary tree?
 ![[perfect-tree.png]]
 Back: Yes.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1714080353484-->
+<!--ID: 1714180419777-->
 END%%
 
 %%ANKI
@@ -1174,7 +1254,7 @@ Is the following a complete binary tree?
 ![[perfect-tree.png]]
 Back: Yes.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1714080353488-->
+<!--ID: 1714180419781-->
 END%%
 
 %%ANKI
@@ -1183,7 +1263,7 @@ Is the following a full binary tree?
 ![[perfect-tree.png]]
 Back: Yes.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1714088438768-->
+<!--ID: 1714180419784-->
 END%%
 
 %%ANKI
@@ -1192,7 +1272,7 @@ Is the following a perfect binary tree?
 ![[complete-tree.png]]
 Back: No.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1714080353491-->
+<!--ID: 1714180419787-->
 END%%
 
 %%ANKI
@@ -1201,7 +1281,7 @@ Is the following a complete binary tree?
 ![[complete-tree.png]]
 Back: Yes.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1714080353495-->
+<!--ID: 1714180419789-->
 END%%
 
 %%ANKI
@@ -1210,7 +1290,7 @@ Is the following a full binary tree?
 ![[complete-tree.png]]
 Back: No.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1714088438773-->
+<!--ID: 1714180419793-->
 END%%
 
 %%ANKI
@@ -1219,7 +1299,7 @@ Is the following a perfect binary tree?
 ![[non-complete-tree.png]]
 Back: No.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1714080353498-->
+<!--ID: 1714180419802-->
 END%%
 
 %%ANKI
@@ -1228,7 +1308,7 @@ Is the following a complete binary tree?
 ![[non-complete-tree.png]]
 Back: No.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1714080353502-->
+<!--ID: 1714180419809-->
 END%%
 
 %%ANKI
@@ -1237,7 +1317,7 @@ Is the following a full binary tree?
 ![[non-complete-tree.png]]
 Back: No.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1714088438777-->
+<!--ID: 1714180419813-->
 END%%
 
 %%ANKI
@@ -1364,6 +1444,14 @@ Why isn't a binary tree considered an ordered tree?
 Back: A left child is distinct from a right child, even if the child is the same in both cases.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1712409466653-->
+END%%
+
+%%ANKI
+Basic
+How many internal nodes are in a complete binary tree of $n$ nodes?
+Back: $\lceil (n - 1) / 2 \rceil = \lfloor n / 2 \rfloor$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714349367662-->
 END%%
 
 ## Bibliography

@@ -157,7 +157,7 @@ END%%
 %%ANKI
 Basic
 What C operator corresponds to ceiling division?
-Back: None.
+Back: N/A.
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708110779716-->
 END%%
@@ -350,6 +350,136 @@ Given `A[p..q]` and $r = \lfloor (p + q) / 2 \rfloor$, *why* is the size of `A[p
 Back: If `A[p..q]` has odd size, `A[p..r]` contains the midpoint.
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708115683366-->
+END%%
+
+## Identities
+
+For integers $x$ and $y > 0$, $$\begin{align*} \left\lfloor \frac{x}{y} \right\rfloor & = \left\lceil \frac{x}{y} - \frac{y - 1}{y} \right\rceil \\ \left\lceil \frac{x}{y} \right\rceil & = \left\lfloor \frac{x}{y} + \frac{y - 1}{y} \right\rfloor \end{align*}$$
+
+%%ANKI
+Basic
+If $n$ is even, what integer value does $\lfloor n / 2 \rfloor$ evaluate to?
+Back: $n / 2$
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1714182124789-->
+END%%
+
+%%ANKI
+Basic
+If $n$ is odd, what integer value does $\lfloor n / 2 \rfloor$ evaluate to?
+Back: $(n - 1) / 2$
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1714182124796-->
+END%%
+
+%%ANKI
+Basic
+If $n$ is even, what integer value does $\lceil n / 2 \rceil$ evaluate to?
+Back: $n / 2$
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1714182124804-->
+END%%
+
+%%ANKI
+Basic
+If $n$ is odd, what integer value does $\lceil n / 2 \rceil$ evaluate to?
+Back: $(n + 1) / 2$
+Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
+<!--ID: 1714182124809-->
+END%%
+
+%%ANKI
+Basic
+Given integers $x$ and $y > 0$, what value of $Bias$ satisfies the following identity? $$\left\lceil \frac{x}{y} \right\rceil = \left\lfloor \frac{x}{y} + Bias \right\rfloor$$
+Back: $(y - 1) / y$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714182124840-->
+END%%
+
+%%ANKI
+Basic
+Given integers $x$ and $y > 0$, what value of $Bias$ satisfies the following identity? $$\left\lceil \frac{x}{y} \right\rceil = \left\lfloor \frac{x + Bias}{y} \right\rfloor$$
+Back: $(y - 1)$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714184300367-->
+END%%
+
+%%ANKI
+Basic
+Given integers $x$ and $y > 0$, what operator satisfies the following identity? $$\left\lceil \frac{x}{y} \right\rceil = \left\lfloor \frac{x}{y} \;\square\; \frac{y - 1}{y} \right\rfloor$$
+Back: $+$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714182124853-->
+END%%
+
+%%ANKI
+Basic
+What intuition explains why the following identity holds for integers $x$ and $y > 0$? $$\left\lceil \frac{x}{y} \right\rceil = \left\lfloor \frac{x}{y} + \frac{y - 1}{y} \right\rfloor$$
+Back: $(y - 1) / y$ only affects the RHS if and only if $x / y$ is not an integer.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714182124860-->
+END%%
+
+%%ANKI
+Basic
+Given integers $x$ and $y > 0$, what value of $Bias$ satisfies the following identity? $$\left\lfloor \frac{x}{y} \right\rfloor = \left\lceil \frac{x}{y} - Bias \right\rceil$$
+Back: $(y - 1) / y$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714182124874-->
+END%%
+
+%%ANKI
+Basic
+Given integers $x$ and $y > 0$, what value of $Bias$ satisfies the following identity? $$\left\lfloor \frac{x}{y} \right\rfloor = \left\lceil \frac{x - Bias}{y} \right\rceil$$
+Back: $(y - 1)$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714184300372-->
+END%%
+
+%%ANKI
+Basic
+Given integers $x$ and $y > 0$, what operator satisfies the following identity? $$\left\lfloor \frac{x}{y} \right\rfloor = \left\lceil \frac{x}{y} \;\square\; \frac{y - 1}{y} \right\rceil$$
+Back: $-$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714182124867-->
+END%%
+
+%%ANKI
+Basic
+What intuition explains why the following identity holds for integers $x$ and $y > 0$? $$\left\lfloor \frac{x}{y} \right\rfloor = \left\lceil \frac{x}{y} - \frac{y - 1}{y} \right\rceil$$
+Back: $(y - 1) / y$ only affects the RHS if and only if $x / y$ is not an integer.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714182124884-->
+END%%
+
+%%ANKI
+Cloze
+For any integer $n$, floor expression {$\lfloor n / 2 \rfloor$} is equal to ceiling expression {$\lceil (n - 1) / 2 \rceil$}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714349367669-->
+END%%
+
+%%ANKI
+Cloze
+For any integer $n$, ceiling expression {$\lceil n / 2 \rceil$} is equal to floor expression {$\lfloor (n + 1) / 2 \rfloor$}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714349367676-->
+END%%
+
+%%ANKI
+Basic
+What identity generalizes the following? $$\left\lfloor \frac{n}{2} \right\rfloor = \left\lceil \frac{n - 1}{2} \right\rceil$$
+Back: $$\left\lfloor \frac{n}{d} \right\rfloor = \left\lceil \frac{n - (d - 1)}{d} \right\rceil$$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714349367682-->
+END%%
+
+%%ANKI
+Basic
+What identity generalizes the following? $$\left\lceil \frac{n}{2} \right\rceil = \left\lfloor \frac{n + 1}{2} \right\rfloor$$
+Back: $$\left\lceil \frac{n}{d} \right\rceil = \left\lfloor \frac{n + (d - 1)}{d} \right\rfloor$$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714349367688-->
 END%%
 
 ## Bibliography

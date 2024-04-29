@@ -2114,6 +2114,67 @@ Tags: c17
 <!--ID: 1709831032461-->
 END%%
 
+%%ANKI
+Basic
+Assuming no overflow, rewrite expression `x >> k` to instead yield $\lceil x / 2^k \rceil$.
+Back: `(x + (1 << k) - 1) >> k`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1714184300343-->
+END%%
+
+%%ANKI
+Basic
+Assuming no overflow, what is the result of `(x + (1 << k) - 1) >> k`?
+Back: $\lceil x / 2^k \rceil$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1714184300349-->
+END%%
+
+%%ANKI
+Basic
+What value of $Bias$ satisfies the following identity? $$\left\lceil \frac{x}{2^k} \right\rceil = \left\lfloor \frac{x}{2^k} + Bias \right\rfloor$$
+Back: $(2^k - 1) / 2^k$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714184300352-->
+END%%
+
+%%ANKI
+Basic
+What value of $Bias$ satisfies the following identity? $$\left\lceil \frac{x}{2^k} \right\rceil = \left\lfloor \frac{x + Bias}{2^k} \right\rfloor$$
+Back: $2^k - 1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714184300355-->
+END%%
+
+%%ANKI
+Basic
+What floor/ceiling identity does expression `(x + (1 << k) - 1) >> k` exploit?
+Back: $$\left\lceil \frac{x}{y} \right\rceil = \left\lfloor \frac{x + y - 1}{y} \right\rfloor$$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1714184300359-->
+END%%
+
+%%ANKI
+Basic
+In two's-complement, how do we use `>>` to perform integer division of `x > 0` by $2^k$?
+Back: `x >> k`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1714184300362-->
+END%%
+
+%%ANKI
+Basic
+In two's-complement, how do we use `>>` to perform integer division of `x < 0` by $2^k$?
+Back: `(x + (1 << k) - 1) >> k`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1714184300364-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
