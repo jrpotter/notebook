@@ -116,7 +116,9 @@
     "perfect-tree.png",
     "non-complete-tree.png",
     "max-heap-tree.png",
-    "max-heap-array.png"
+    "max-heap-array.png",
+    "max-heapify-1.png",
+    "max-heapify-2.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -373,7 +375,7 @@
     "_journal/2024-04/2024-04-23.md": "20514052da91b06b979cacb3da758837",
     "_journal/2024-04-25.md": "10c98531cb90a6bc940ea7ae3342f98b",
     "_journal/2024-04/2024-04-24.md": "4cb04e0dea56e0b471fc0e428471a390",
-    "algorithms/heaps.md": "b12c70ec85e514ce912821d133d116d4",
+    "algorithms/heaps.md": "ed37002a7600a05794f668e092265522",
     "_journal/2024-04-26.md": "3ce37236a9e09e74b547a4f7231df5f0",
     "_journal/2024-04/2024-04-25.md": "5a81123af29f8ebf0a0d28f820a3a52e",
     "_journal/2024-04-28.md": "46726bf76a594b987c63ba8b9b6d13d3",
