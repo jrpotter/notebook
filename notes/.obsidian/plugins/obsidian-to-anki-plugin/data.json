@@ -234,7 +234,7 @@
     "c17/strings.md": "8f23005c9f8e25c72e2ac6b74b6afd7e",
     "c17/index.md": "78576ee41d0185df82c59999142f4edb",
     "c17/escape-sequences.md": "a8b99070336878b4e8c11e9e4525a500",
-    "c17/declarations.md": "7d45d1b415b66916dbb908f51d034b72",
+    "c17/declarations.md": "155c5472e56e87c54a563cfaaa1dbd7e",
     "algorithms/sorting/merge-sort.md": "6506483f7df6507cee0407bd205dbedd",
     "_journal/2024-02-24.md": "9bb319d5014caf962a9ce3141076cff4",
     "_journal/2024-02/2024-02-23.md": "0aad297148e8cc4058b48b7e45787ca7",
@@ -318,7 +318,7 @@
     "_journal/2024-03-22.md": "8da8cda07d3de74f7130981a05dce254",
     "_journal/2024-03/2024-03-21.md": "cd465f71800b080afa5c6bdc75bf9cd3",
     "x86-64/declarations.md": "75bc7857cf2207a40cd7f0ee056af2f2",
-    "x86-64/instructions.md": "d783bad8dd77748fb412715541cb844d",
+    "x86-64/instructions.md": "b34217258f8dd5a738fb3296d0ac744c",
     "git/refs.md": "954fc69004aa65b358ec5ce07c1435ce",
     "set/trees.md": "0d21b947917498f107da140cc9fb93a7",
     "_journal/2024-03-24.md": "1974cdb9fc42c3a8bebb8ac76d4b1fd6",
@@ -394,7 +394,12 @@
     "proofs/induction.md": "ab9e939efe32a4fb7ef2a0808eeb569f",
     "proofs/index.md": "51a7bc4e30b7a6cc0d4c5712ad603448",
     "_journal/2024-05-01.md": "959ff67fe3db585ba6a7b121d853bbac",
-    "_journal/2024-05-02.md": "962e63ca2f80179253aaf52e6b2aeaad"
+    "_journal/2024-05-02.md": "d7d6ba7e065d807986f0bd77281c0bb1",
+    "data-structures/priority-queues.md": "8c5c6bf62b1a39d8f1f72b800fcb17ff",
+    "data-structures/heaps.md": "0cba4acb7667dcab80fa4e7778e86cc8",
+    "data-structures/index.md": "2605977fad54956b5dc2d8dda9be2b10",
+    "abstract-data-types/priority-queues.md": "d3dad736cb05c47bdc93c52a3a4af083",
+    "abstract-data-types/index.md": "d07dd52473c7bfeb9eabdcc16f4c7e30"
   },
   "fields_dict": {
     "Basic": [

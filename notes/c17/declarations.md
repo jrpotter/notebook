@@ -341,6 +341,73 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708631820856-->
 END%%
 
+%%ANKI
+Basic
+In what order does C cast size and "signedness"?
+Back: C casts size then signedness.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608760-->
+END%%
+
+%%ANKI
+Basic
+In what order does C cast "signedness" and size?
+Back: C casts size then signedness.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677626482-->
+END%%
+
+%%ANKI
+Basic
+Given `short sx`, cast `(unsigned) sx` is more explicitly written as what other sequence of casts?
+Back: `(unsigned) (int) sx`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608762-->
+END%%
+
+%%ANKI
+Basic
+Given `short sx`, are the following two lines equivalent?
+```c
+(unsigned) sx
+(unsigned) (int) sx
+```
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608764-->
+END%%
+
+%%ANKI
+Basic
+Given `short sx`, are the following two lines equivalent?
+```c
+(unsigned) sx
+(unsigned) (unsigned short) sx
+```
+Back: No.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608766-->
+END%%
+
+%%ANKI
+Basic
+Given `short sx`, why is the following not an identity?
+```c
+(unsigned) sx = (unsigned) (unsigned short) sx
+```
+Back: `(unsigned) sx` is equivalent to casting size before "signedness".
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608767-->
+END%%
+
+%%ANKI
+Basic
+What does "signedness" of a variable refer to?
+Back: Whether the variable was declared `signed` or `unsigned`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608769-->
+END%%
+
 ## Pointers
 
 Pointers have the same size as the machine's word size since it should be able to refer to any virtual address.
