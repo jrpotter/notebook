@@ -249,7 +249,7 @@ END%%
 
 %%ANKI
 Basic
-When is `Min_HEAPIFY_DOWN` a no-op?
+When is `MIN_HEAPIFY_DOWN` a no-op?
 Back: When the current node is already smaller than both its children.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714399155448-->
@@ -297,7 +297,7 @@ END%%
 
 %%ANKI
 Basic
-What is the height of a binary heap?
+What is the height of a binary heap defined?
 Back: The height of the heap's root when viewed as a complete binary tree.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714403425300-->
@@ -425,7 +425,7 @@ END%%
 %%ANKI
 Basic
 Why does `BUILD_MIN_HEAP` "ignore" the external nodes of a heap?
-Back: Because they are already max-heaps of size $1$.
+Back: Because they are already min-heaps of size $1$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714403425367-->
 END%%

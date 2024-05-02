@@ -436,7 +436,7 @@ END%%
 
 %%ANKI
 Basic
-Given valid expression $(b; [i]{\circ}s{:}e))$, what can be said about $i$?
+Given valid expression $(b; [i]{\circ}s{:}e)$, what can be said about $i$?
 Back: $i$ is in the domain of $b$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640893-->
@@ -444,7 +444,7 @@ END%%
 
 %%ANKI
 Basic
-Given valid expression $(b; [i]{\circ}s{:}e))$, what is the type of $b$?
+Given valid expression $(b; [i]{\circ}s{:}e)$, what is the type of $b$?
 Back: A function.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640896-->
@@ -452,7 +452,7 @@ END%%
 
 %%ANKI
 Basic
-Given valid expression $(b; \epsilon{\circ}s{:}e))$, what is the type of $b$?
+Given valid expression $(b; \epsilon{\circ}s{:}e)$, what is the type of $b$?
 Back: A scalar or function.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640898-->
@@ -461,7 +461,7 @@ END%%
 %%ANKI
 Basic
 What is the base case of selector update syntax?
-Back: Updates involving the null selector.
+Back: $(b; \epsilon{:}g) = g$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640901-->
 END%%
@@ -476,7 +476,7 @@ END%%
 
 %%ANKI
 Basic
-The nuil selector is the identity element of what operation?
+The null selector is the identity element of what operation?
 Back: Concatenation of sequences of subscripts.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640907-->
@@ -525,7 +525,7 @@ END%%
 %%ANKI
 Basic
 Let $b$ be an array. How is $b[i][j] := e$ rewritten using selector update syntax?
-Back: $(b; [i][j]{:}e)$
+Back: $b := (b; [i][j]{:}e)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640930-->
 END%%
@@ -556,7 +556,7 @@ END%%
 
 %%ANKI
 Basic
-Maintaining selector update syntax, how is $(c; 1{:}3)[1]$ rewritten with a selector?
+Maintaining selector update syntax, how is $(c; 1{:}3)[1]$ more explicitly written with a selector?
 Back: $(c; [1]{:}3)[1]$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640948-->

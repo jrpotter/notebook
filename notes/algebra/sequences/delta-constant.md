@@ -46,14 +46,6 @@ END%%
 
 %%ANKI
 Basic
-What is the base case of the recursive definition of the $k$th differences of $(a_n)$?
-Back: $k = 0$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1713580109133-->
-END%%
-
-%%ANKI
-Basic
 What is the recurrence of the recursive definition of the $(k + 1)$st differences of $(a_n)$?
 Back: The $(k + 1)$st differences is the differences of the $k$th differences.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
@@ -90,6 +82,14 @@ Back: Derivatives.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 Tags: calculus
 <!--ID: 1713580109197-->
+END%%
+
+%%ANKI
+Cloze
+{Derivatives} are to continuous whereas {differences} are to discrete.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+Tags: calculus
+<!--ID: 1714554400146-->
 END%%
 
 %%ANKI
