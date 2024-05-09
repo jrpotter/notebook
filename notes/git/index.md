@@ -87,42 +87,6 @@ Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Soft
 <!--ID: 1714478450660-->
 END%%
 
-%%ANKI
-Basic
-You can convert an untracked file to a tracked file with what status?
-Back: Staged.
-Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
-<!--ID: 1714478450664-->
-END%%
-
-%%ANKI
-Cloze
-An {1:unmodified} tracked file becomes a {2:modified} tracked file after {2:editing} the file.
-Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
-<!--ID: 1714478450668-->
-END%%
-
-%%ANKI
-Cloze
-A {1:modified} tracked file becomes a {2:staged} tracked file after {2:staging} the file.
-Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
-<!--ID: 1714478450673-->
-END%%
-
-%%ANKI
-Cloze
-A {1:staged} tracked file becomes an {2:unmodified} tracked file after {2:committing}.
-Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
-<!--ID: 1714478450678-->
-END%%
-
-%%ANKI
-Cloze
-An untracked file becomes a {1:staged} tracked file after {1:adding} the file.
-Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
-<!--ID: 1714478450683-->
-END%%
-
 ## Bibliography
 
 * Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).

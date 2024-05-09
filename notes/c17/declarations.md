@@ -395,7 +395,7 @@ Given `short sx`, why is the following not an identity?
 ```c
 (unsigned) sx = (unsigned) (unsigned short) sx
 ```
-Back: `(unsigned) sx` is equivalent to casting size before "signedness".
+Back: `(unsigned) sx` casts size before "signedness".
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1714677608767-->
 END%%

@@ -7,5 +7,3 @@ title: "{{date:YYYY-MM-DD}}"
 - [ ] Sheet Music (10 min.)
 - [ ] Go (1 Life & Death Problem)
 - [ ] Korean (Read 1 Story)
-- [ ] Interview Prep (1 Practice Problem)
-- [ ] Log Work Hours (Max 3 hours)

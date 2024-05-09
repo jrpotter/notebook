@@ -34,7 +34,7 @@ END%%
 %%ANKI
 Basic
 Let $(a_n)_{n \geq 0} = P(n)$ and $P(n) \Leftrightarrow n \geq 2$. How is $(a_n)$ written with terms expanded?
-Back: $F$, $F$, $F$, $T$, $T$, $\ldots$
+Back: $F$, $F$, $T$, $T$, $T$, $\ldots$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1714530152705-->
 END%%
@@ -73,14 +73,14 @@ END%%
 
 %%ANKI
 Cloze
-{Closed forms} are to recursive definitions as {direct} is to proofs.
+{Closed formulas} are to recursive definitions as {direct proofs} are to proof strategies.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1714532476735-->
 END%%
 
 %%ANKI
 Cloze
-{Recurrence relations} are to recursive definitions as {induction} is to proofs.
+{Recurrence relations} are to recursive definitions as {induction} is to proof strategies.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1714532476742-->
 END%%

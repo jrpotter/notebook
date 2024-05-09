@@ -157,8 +157,8 @@ END%%
 
 %%ANKI
 Basic
-How do you decode e.g. `.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4`?
-Back: By decompressing the `zlib` data formatted file.
+How is e.g. `.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4` encoded?
+Back: As a `zlib` data formatted file.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
 <!--ID: 1709345254705-->
 END%%

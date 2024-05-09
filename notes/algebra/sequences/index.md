@@ -509,19 +509,11 @@ END%%
 
 %%ANKI
 Basic
-Using the characteristic root technique, what determines the form of the closed solution?
+Using the quadratic characteristic root technique, what distinguishes the form of the closed solution?
 Back: The number of distinct roots of the characteristic polynomial.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 Tags: algebra::polynomial
 <!--ID: 1714487050079-->
-END%%
-
-%%ANKI
-Basic
-Using the characteristic root technique, what determines the form of the closed solution?
-Back: The number of distinct roots of the characteristic polynomial.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-Tags: algebra::polynomial
 END%%
 
 %%ANKI
@@ -544,7 +536,7 @@ END%%
 
 %%ANKI
 Basic
-If $a_n = \alpha a_{n-1} + \beta a_{n-2}$ has solution $a_n = ar^n + bnr^n$, how many roots does its characteristic polynomial have?
+How many distinct roots does the characteristic polynomial of the following have? $$a_n = \alpha a_{n-1} + \beta a_{n-2} = ar^n + bnr^n$$
 Back: One.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 Tags: algebra::polynomial
@@ -553,7 +545,7 @@ END%%
 
 %%ANKI
 Basic
-If $a_n = \alpha a_{n-1} + \beta a_{n-2}$ has solution $a_n = ar_1^n + br_2^n$, how many roots does its characteristic polynomial have?
+How many distinct roots does the characteristic polynomial of the following have? $$a_n = \alpha a_{n-1} + \beta a_{n-2} = ar_1^n + br_2^n$$
 Back: Two.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 Tags: algebra::polynomial

@@ -28,7 +28,7 @@ END%%
 
 %%ANKI
 Cloze
-An {1:ADT} is to an {2:ISA} as a {2:data structure} is to a {1:uarch}.
+An {1:ADT} is to a {2:data structure} as an {2:ISA} is to a {1:uarch}.
 Reference: “Abstract Data Type.” In _Wikipedia_, March 18, 2024. [https://en.wikipedia.org/w/index.php?title=Abstract_data_type&oldid=1214359576](https://en.wikipedia.org/w/index.php?title=Abstract_data_type&oldid=1214359576).
 <!--ID: 1714669011572-->
 END%%

@@ -63,7 +63,7 @@ END%%
 
 %%ANKI
 Basic
-What is the consequenct of $\{Q\}\; S\; \{R\}$ in English?
+What is the consequent of $\{Q\}\; S\; \{R\}$ in English?
 Back: $S$ terminates in a finite amount of time in a state satisfying $R$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714420640231-->

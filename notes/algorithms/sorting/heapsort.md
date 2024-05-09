@@ -168,16 +168,24 @@ We prove $P$ maintains the requisite properties:
 
 %%ANKI
 Basic
-Given array `A[0:n-1]`, what two properties make up `HEAPSORT`'s loop invariant?
-Back: `A[0:i-1]` is a max-heap of the `i` smallest elements. `A[i+1:n]` contains the `n - i` largest elements sorted.
+What loop invariant does `HEAPSORT` maintain on `A[0:i-1]`?
+Back: `A[0:i-1]` is a max-heap of the `i` smallest elements.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1714410566843-->
+<!--ID: 1714840899537-->
+END%%
+
+%%ANKI
+Basic
+What loop invariant does `HEAPSORT` maintain on `A[i:n-1]`?
+Back: `A[i:n-1]` contains the `n - i` largest elements sorted.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1714840899581-->
 END%%
 
 %%ANKI
 Basic
 What is initialization of `HEAPSORT`'s loop invariant?
-Back: `A` is a max-heap.
+Back: The input array is a max-heap.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714410566845-->
 END%%
@@ -185,7 +193,7 @@ END%%
 %%ANKI
 Basic
 What is maintenance of `HEAPSORT`'s loop invariant?
-Back: Each iteration puts the next largest element in sorted order and then heapifies the remaining elements again.
+Back: Swap the root with the last position of the heap. Heapify the new root.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714410566846-->
 END%%
