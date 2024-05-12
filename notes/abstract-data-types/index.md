@@ -41,6 +41,27 @@ Reference: “Abstract Data Type.” In _Wikipedia_, March 18, 2024. [https://en
 <!--ID: 1714677608770-->
 END%%
 
+%%ANKI
+Cloze
+{1:FIFO} is to {2:queues} as {2:LIFO} is to {1:stacks}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715461853935-->
+END%%
+
+%%ANKI
+Cloze
+{`PUSH`} is to stacks as {`ENQUEUE`} is to queues.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715461853939-->
+END%%
+
+%%ANKI
+Cloze
+{`POP`} is to stacks as {`DEQUEUE`} is to queues.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715461853943-->
+END%%
+
 ## Bibliography
 
 * “Abstract Data Type.” In _Wikipedia_, March 18, 2024. [https://en.wikipedia.org/w/index.php?title=Abstract_data_type&oldid=1214359576](https://en.wikipedia.org/w/index.php?title=Abstract_data_type&oldid=1214359576).

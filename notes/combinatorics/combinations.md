@@ -72,7 +72,7 @@ END%%
 %%ANKI
 Basic
 How is $\binom{n}{k}$ combinations of $n$ objects derived?
-Back: As $(n)_k$ $k$-permutations of $n$ divided by $k!$, the numer of possible $k$-orderings.
+Back: As $(n)_k$ $k$-permutations of $n$ divided by $k!$, the number of possible $k$-orderings.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708368078695-->
 END%%

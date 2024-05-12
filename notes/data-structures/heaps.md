@@ -91,7 +91,7 @@ END%%
 %%ANKI
 Basic
 What two sizes are associated with binary heaps?
-Back: The number of valid elements and the size of the underlying array.
+Back: The size of the heap and the capacity of the underlying array.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714356379038-->
 END%%

@@ -367,6 +367,30 @@ END%%
 
 ### `MOV`
 
+The MOV instruction class has four primary variants: `movb`, `movw`, `movl`, and `movq`. There also exist zero extension and sign extension variations in the forms of MOVS and MOVZ.
+
+| Instruction | Operands | Effect           | Description                                 |
+| ----------- | -------- | ---------------- | ------------------------------------------- |
+| `movb`      | S, D     | D <- S           | Move byte                                   |
+| `movw`      | S, D     | D <- S           | Move word                                   |
+| `movl`      | S, D     | D <- S           | Move double word                            |
+| `movq`      | S, D     | D <- S           | Move quad word                              |
+| `movabsq`   | I, R     | R <- I           | Move quad word                              |
+| `movzbw`    | S, R     | R <- ZE(S)       | Move zero-extended byte to word             |
+| `movzbl`    | S, R     | R <- ZE(S)       | Move zero-extended byte to double word      |
+| `movzwl`    | S, R     | R <- ZE(S)       | Move zero-extended word to double word      |
+| `movzbq`    | S, R     | R <- ZE(S)       | Move zero-extended byte to quad word        |
+| `movzwq`    | S, R     | R <- ZE(S)       | Move zero-extended word to quad word        |
+| `movsbw`    | S, R     | R <- SE(S)       | Move sign-extended byte to word             |
+| `movsbl`    | S, R     | R <- SE(S)       | Move sign-extended byte to double word      |
+| `movswl`    | S, R     | R <- SE(S)       | Move sign-extended word to double word      |
+| `movsbq`    | S, R     | R <- SE(S)       | Move sign-extended byte to quad word        |
+| `movswq`    | S, R     | R <- SE(S)       | Move sign-extended word to quad word        |
+| `movslq`    | S, R     | R <- SE(S)       | Move sign-extended double word to quad word |
+| `cltq`      |          | %rax <- SE(%eax) | Sign-extend `%eax` to `%rax`                |
+
+Notice there is no `movzlq` instruction. `movl` covers this functionality since, by convention, instructions moving double words into a 64-bit register automatically zeroes out the upper 32 bits.
+
 %%ANKI
 Basic
 What four variants does `MOV` instructions take on in x86-64?
@@ -586,7 +610,7 @@ END%%
 %%ANKI
 Basic
 Why does there not exist a `movzlq` instruction?
-Back: Because `movl` already zeros out the upper bits of a destination register.
+Back: Because `movl` already zeroes out the upper bits of a destination register.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713625933483-->
 END%%
@@ -645,6 +669,109 @@ Back: Copying the pointer into a register and then using the register in a memor
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1714677608758-->
+END%%
+
+### PUSH and POP
+
+| Instruction | Operands | Effect                                      | Description    |
+| ----------- | -------- | ------------------------------------------- | -------------- |
+| `pushq`     | S        | R[%rsp] <- R[%rsp] - 8<br />M[R[%rsp]] <- S | Push quad word |
+| `popq`      | D        | D <- M[R[%rsp]]<br />R[%rsp] <- R[%rsp] + 8 | Pop quad word  |
+
+In x86 processors, the stack grows downward, with the "top" of the stack corresponding to lower addresses.
+
+%%ANKI
+Basic
+In what direction do x86-64 stacks grow?
+Back: Downward.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715377284944-->
+END%%
+
+%%ANKI
+Cloze
+The x86-64 stack grows such that the top element has the {lowest} address of all stack elements.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715377284947-->
+END%%
+
+%%ANKI
+Basic
+What instruction is used to push elements onto the stack?
+Back: `pushq`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715377284951-->
+END%%
+
+%%ANKI
+Basic
+What instruction is used to pop elements off of the stack?
+Back: `popq`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715377284955-->
+END%%
+
+%%ANKI
+Basic
+How is `pushq %rbp` equivalently written using a pair of instructions?
+Back:
+```asm
+subq 8,%rsp
+movq %rbp,(%rsp)
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715377284959-->
+END%%
+
+%%ANKI
+Basic
+How is `popq %rax` equivalently written using a pair of instructions?
+Back:
+```asm
+movq (%rsp),%rax
+addq 8,%rsp
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715377284962-->
+END%%
+
+%%ANKI
+Cloze
+{1:`pushq`} is to {2:`subq`} as {2:`popq`} is to {1:`addq`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715377284966-->
+END%%
+
+%%ANKI
+Basic
+If `%rsp` has value `0x108`, what value does it have after a `pushq` instruction?
+Back: `0x100`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715377284971-->
+END%%
+
+%%ANKI
+Basic
+If `%rsp` has value `0x108`, what value does it have after a `popq` instruction?
+Back: `0x110`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715377284975-->
+END%%
+
+%%ANKI
+Basic
+Which register contains a pointer to the top of the stack?
+Back: `%rsp`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715377284980-->
+END%%
+
+%%ANKI
+Basic
+What is the `%rsp` register typically used for?
+Back: The stack pointer.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715377284985-->
 END%%
 
 ## Bibliography
