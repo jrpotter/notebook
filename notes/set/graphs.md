@@ -1020,6 +1020,129 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1710807788538-->
 END%%
 
+## Isomorphisms
+
+An **isomorphism** between two graphs $G_1$ and $G_2$ is a bijection $f \colon V_1 \rightarrow V_2$ between the vertices of the graphs such that $(a, b)$ is an edge in $G_1$ if and only if $(f(a), f(b))$ is an edge in $G_2$. Here parenthesis are used to denote either ordered pairs (for directed graphs) or unordered pairs (for undirected graphs).
+
+We say $G_1$ and $G_2$ are **isomorphic**, denoted $G_1 \cong G_2$, if and only if there exists an isomorphism between $G_1$ and $G_2$.
+
+%%ANKI
+Basic
+What kind of mathematical object is an isomorphism between graphs?
+Back: A function.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560168-->
+END%%
+
+%%ANKI
+Basic
+What *kind* of function is an isomorphism between two graphs?
+Back: A bijective function.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560173-->
+END%%
+
+%%ANKI
+Basic
+What *is* an isomorphism between graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$?
+Back: A bijection $f \colon V_1 \rightarrow V_2$ such that $(a, b) \in E_1$ if and only if $(f(a), f(b)) \in E_2$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560176-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of an isomorphism between graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$?
+Back: $V_1$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560179-->
+END%%
+
+%%ANKI
+Basic
+What is the codomain of an isomorphism between graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$?
+Back: $V_2$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560183-->
+END%%
+
+%%ANKI
+Basic
+What is the edge relation of isomorphism $f$ between graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$?
+Back: $(a, b) \in E_1$ if and only if $(f(a), f(b)) \in E_2$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560186-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for graphs $G_1$ and $G_2$ to be isomorphic?
+Back: There exists an isomorphism between them.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560190-->
+END%%
+
+%%ANKI
+Basic
+If two graphs are equal, are they isomorphic?
+Back: Yes.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560195-->
+END%%
+
+%%ANKI
+Basic
+If two graphs are isomorphic, are they equal?
+Back: Not necessarily.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560199-->
+END%%
+
+%%ANKI
+Basic
+Are the following two graphs equal?
+![[graph-isomorphic.png]]
+Back: No.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560203-->
+END%%
+
+%%ANKI
+Basic
+Are the following two graphs isomorphic?
+![[graph-isomorphic.png]]
+Back: Yes.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560207-->
+END%%
+
+%%ANKI
+Basic
+If the following graphs are isomorphic, what is the domain of the isomorphism?
+![[graph-isomorphic.png]]
+Back: $\{a, b, c\}$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560210-->
+END%%
+
+%%ANKI
+Basic
+If the following graphs are isomorphic, what is the codomain of the isomorphism?
+![[graph-isomorphic.png]]
+Back: $\{u, v, w\}$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560214-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for two graphs to be equal?
+Back: Two graphs are equal if their vertex and edge sets are equal.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715537560218-->
+END%%
+
 ## Bibliography
 
+* Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 * Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

@@ -65,6 +65,36 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1715460959188-->
 END%%
 
+%%ANKI
+Cloze
+The {head} of an array refers to {its first element}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715534735208-->
+END%%
+
+%%ANKI
+Cloze
+The {tail} of an array refers to {all but its first element}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715534735211-->
+END%%
+
+%%ANKI
+Basic
+What is the runtime of prepending an element to a large enough array?
+Back: $O(n)$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715534735214-->
+END%%
+
+%%ANKI
+Basic
+What is the runtime of finding the $k$th element of an array?
+Back: $O(1)$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715534735217-->
+END%%
+
 ## Bibliography
 
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
