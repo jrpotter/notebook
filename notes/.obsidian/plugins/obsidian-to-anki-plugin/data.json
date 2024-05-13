@@ -124,7 +124,10 @@
     "array-1d-col-major.png",
     "array-multi-row-major.png",
     "array-multi-col-major.png",
-    "graph-isomorphic.png"
+    "graph-isomorphic.png",
+    "graph-induced-subgraph.png",
+    "graph-subgraph.png",
+    "graph-non-subgraph.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -305,7 +308,7 @@
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
     "set/index.md": "f2e907b2643cd4e5023169dcd96ca828",
-    "set/graphs.md": "cf371ca94c97ec1f33fbd6081985699f",
+    "set/graphs.md": "4bbcea8f5711b1ae26ed0026a4a69800",
     "_journal/2024-03-19.md": "a0807691819725bf44c0262405e97cbb",
     "_journal/2024-03/2024-03-18.md": "63c3c843fc6cfc2cd289ac8b7b108391",
     "awk/variables.md": "e40a20545358228319f789243d8b9f77",
@@ -324,7 +327,7 @@
     "_journal/2024-03/2024-03-21.md": "cd465f71800b080afa5c6bdc75bf9cd3",
     "x86-64/declarations.md": "75bc7857cf2207a40cd7f0ee056af2f2",
     "x86-64/instructions.md": "eef92b487920c7a15f38955c97a48a2d",
-    "git/refs.md": "954fc69004aa65b358ec5ce07c1435ce",
+    "git/refs.md": "e20c2c9b14ba6c2bd235416017c5c474",
     "set/trees.md": "0d21b947917498f107da140cc9fb93a7",
     "_journal/2024-03-24.md": "1974cdb9fc42c3a8bebb8ac76d4b1fd6",
     "_journal/2024-03/2024-03-23.md": "ad4e92cc2bf37f174a0758a0753bf69b",
@@ -423,7 +426,10 @@
     "_journal/2024-05/2024-05-09.md": "2339530b1654a2e8e96d908ecb91b8d1",
     "_journal/2024-05/2024-05-08.md": "0f1b1b9e2abcf3203b511b9e034e86f4",
     "_journal/2024-05/2024-05-07.md": "4b1dde039a251f9a6dc7e606de98616d",
-    "_journal/2024-05/2024-05-06.md": "bc9306348b7063b87741768391d9d8a7"
+    "_journal/2024-05/2024-05-06.md": "bc9306348b7063b87741768391d9d8a7",
+    "_journal/2024-05-13.md": "2dfa53ff061ba94fcbe45261aad6bb30",
+    "_journal/2024-05/2024-05-12.md": "ca9f3996272152ef89924bb328efd365",
+    "git/remotes.md": "2208e34b3195b6f1ec041024a66fb38b"
   },
   "fields_dict": {
     "Basic": [

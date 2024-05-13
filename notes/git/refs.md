@@ -11,7 +11,7 @@ tags:
 A **reference** (or **ref**) is essentially a file containing an oid. The name of the file can then be used to reference the oid. A **symbolic reference** is a file containing the name of another reference. The primary refs are:
 
 * heads (i.e. branches)
-* remotes (i.e. remote branches)
+* [[remotes]] (i.e. remote branches)
 * [[objects#Tags|tags]]
 
 %%ANKI

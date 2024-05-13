@@ -1149,6 +1149,147 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1715543813492-->
 END%%
 
+## Subgraphs
+
+We say $G' = (V', E')$ is a **subgraph** of $G = (V, E)$ provided $V' \subseteq V$ and $E' \subseteq E$. We say $G' = (V', E')$ is an **induced subgraph** of $G = (V, E)$ provided $V' \subseteq V$ and every edge in $E$ whose vertices are still in $V'$ is also an edge in $E'$.
+
+%%ANKI
+Basic
+What *is* a subgraph of $G = (V, E)$?
+Back: A graph $G' = (V', E')$ such that $V' \subseteq V$ and $E' \subseteq E$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715619756612-->
+END%%
+
+%%ANKI
+Basic
+What *is* an induced subgraph of $G = (V, E)$?
+Back: A graph $G' = (V', E')$ such that $V' \subseteq V$ and every edge in $E$ whose vertices are in $V'$ is in $E'$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715619756617-->
+END%%
+
+%%ANKI
+Basic
+Which of subgraphs or induced subgraphs are more general?
+Back: Subgraphs.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715619756621-->
+END%%
+
+%%ANKI
+Basic
+Is an induced subgraph a subgraph?
+Back: Yes.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715619756626-->
+END%%
+
+%%ANKI
+Basic
+Is a subgraph an induced subgraph?
+Back: Not necessarily.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715619756630-->
+END%%
+
+%%ANKI
+Basic
+How can deletion be used to create a subgraph from a graph?
+Back: By deleting vertices (with connected edges) as well as any additional edges.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715619756634-->
+END%%
+
+%%ANKI
+Basic
+How can deletion be used to create an induced subgraph from a graph?
+Back: By only deleting vertices and their connected edges.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715619756637-->
+END%%
+
+%%ANKI
+Basic
+Is the second graph a subgraph of the first?
+![[graph-induced-subgraph.png]]
+Back: Yes.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715620447931-->
+END%%
+
+%%ANKI
+Basic
+Is the second graph an induced subgraph of the first?
+![[graph-induced-subgraph.png]]
+Back: Yes.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715620447935-->
+END%%
+
+%%ANKI
+Basic
+Is the second graph a subgraph of the first?
+![[graph-subgraph.png]]
+Back: Yes.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715620447939-->
+END%%
+
+%%ANKI
+Basic
+Is the second graph an induced subgraph of the first?
+![[graph-subgraph.png]]
+Back: No.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715620447942-->
+END%%
+
+%%ANKI
+Basic
+Why isn't the second graph an induced subgraph of the first?
+![[graph-subgraph.png]]
+Back: The second graph is missing edge $\{a, b\}$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715620447946-->
+END%%
+
+%%ANKI
+Basic
+Is the second graph a subgraph of the first?
+![[graph-non-subgraph.png]]
+Back: No.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715620447949-->
+END%%
+
+%%ANKI
+Basic
+Why isn't the second graph a subgraph of the first?
+![[graph-non-subgraph.png]]
+Back: Edge $\{c, f\}$ is not in the first graph.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715620447952-->
+END%%
+
+%%ANKI
+Basic
+Is the second graph an induced subgraph of the first?
+![[graph-non-subgraph.png]]
+Back: No.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715620447955-->
+END%%
+
+%%ANKI
+Basic
+Why isn't the second graph an induced subgraph of the first?
+![[graph-non-subgraph.png]]
+Back: Because the second graph isn't even a subgraph of the first.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1715620447958-->
+END%%
+
 ## Bibliography
 
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
