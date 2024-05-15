@@ -62,81 +62,6 @@ END%%
 
 ## Instruction Classes
 
-An x86-64 CPU contains a set of 16 general-purpose registers storing 64-bit values. They are used to store integers and pointers.
-
-1 Byte  | 2 Bytes | 4 Bytes | 8 Bytes | Purpose
-------- | ------- | ------- | ------- | -------
-`%al`   | `%ax`   | `%eax`  | `%rax`  | Return value
-`%bl`   | `%bx`   | `%ebx`  | `%rbx`  | Callee saved
-`%cl`   | `%cx`   | `%ecx`  | `%rcx`  | 4th argument
-`%dl`   | `%dx`   | `%edx`  | `%rdx`  | 3rd argument
-`%sil`  | `%si`   | `%esi`  | `%rsi`  | 2nd argument
-`%dil`  | `%di`   | `%edi`  | `%rdi`  | 1st argument
-`%bpl`  | `%bp`   | `%ebp`  | `%rbp`  | Callee saved
-`%spl`  | `%sp`   | `%esp`  | `%rsp`  | Stack pointer
-`%r8b`  | `%r8w`  | `%r8d`  | `%r8`   | 5th argument
-`%r9b`  | `%r9w`  | `%r9d`  | `%r9`   | 6th argument
-`%r10b` | `%r10w` | `%r10d` | `%r10`  | Caller saved
-`%r11b` | `%r11w` | `%r11d` | `%r11`  | Caller saved
-`%r12b` | `%r12w` | `%r12d` | `%r12`  | Callee saved
-`%r13b` | `%r13w` | `%r13d` | `%r13`  | Callee saved
-`%r14b` | `%r14w` | `%r14d` | `%r14`  | Callee saved
-`%r15b` | `%r15w` | `%r15d` | `%r15`  | Callee saved
-
-%%ANKI
-Basic
-How many general-purpose registers are available to x86-64 instructions?
-Back: 16
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713212889856-->
-END%%
-
-%%ANKI
-Cloze
-The x86 64-bit registers all start with prefix {`%r`}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713212889861-->
-END%%
-
-%%ANKI
-Cloze
-The x86 32-bit registers all start with prefix {`%e`}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713212889864-->
-END%%
-
-%%ANKI
-Basic
-Instructions that generate 1-byte quantities do what to the remaining bytes of a register?
-Back: Leaves them alone.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713212889866-->
-END%%
-
-%%ANKI
-Basic
-Instructions that generate 2-byte quantities do what to the remaining bytes of a register?
-Back: Leaves them alone.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713212889869-->
-END%%
-
-%%ANKI
-Basic
-Instructions that generate 4-byte quantities do what to the remaining bytes of a register?
-Back: Zeroes them out.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713212889872-->
-END%%
-
-%%ANKI
-Basic
-Instructions that generate 8-byte quantities do what to the remaining bytes of a register?
-Back: N/A
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713212889874-->
-END%%
-
 There are three types of operands:
 
 * **Immediates**. These denote constant values. In ATT assembly, they are written with a `$` followed by an integer using standard C notation.
@@ -772,6 +697,114 @@ What is the `%rsp` register typically used for?
 Back: The stack pointer.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1715377284985-->
+END%%
+
+### Load Effective Address
+
+| Instruction | Operands | Effect  | Description            |
+| ----------- | -------- | ------- | ---------------------- |
+| `leaq`      | S, D     | D <- &S | Load effective address |
+
+`leaq` is a variant of MOV. The first operand appears to be a memory address, but instead of reading from the designated location, the instruction copies the effective address to the designated location (a register).
+
+%%ANKI
+Basic
+`leaq` is considered a variant of what other instruction class?
+Back: `MOV`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715780601450-->
+END%%
+
+%%ANKI
+Basic
+Why is the `leaq` instruction named the way it is?
+Back: It stands for **l**oad **e**ffective **a**ddress.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715780601455-->
+END%%
+
+%%ANKI
+Cloze
+The {`leaq`} instruction is to x86-64 as the {`&`} operator is to C.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1715780601458-->
+END%%
+
+%%ANKI
+Basic
+Which x86-64 instruction is used to generate pointers?
+Back: `leaq`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715780601461-->
+END%%
+
+%%ANKI
+Basic
+Why doesn't `leaq` have any other size variants?
+Back: x96-64 addresses are always 64-bit.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715780601464-->
+END%%
+
+%%ANKI
+Basic
+Suppose `%rdx` contains $x$. Use `leaq` to set `%rax` to $5x + 7$.
+Back: `leaq 7(%rdx, %rdx, 4), %rax`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715780601467-->
+END%%
+
+%%ANKI
+Basic
+Besides effect memory computations, how else is `leaq` used?
+Back: For certain arithmetic operations.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715780601469-->
+END%%
+
+%%ANKI
+Basic
+Assume `%rbx` holds $p$ and `%rdx` holds $q$. What is the value of `%rax` in the following?
+```asm
+leaq 9(%rdx),%rax
+```
+Back: $9 + q$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715781031929-->
+END%%
+
+%%ANKI
+Basic
+Assume `%rbx` holds $p$ and `%rdx` holds $q$. What is the value of `%rax` in the following?
+```asm
+leaq (%rdx, %rbx),%rax
+```
+Back: $q + q$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715781031935-->
+END%%
+
+%%ANKI
+Basic
+Assume `%rbx` holds $p$ and `%rdx` holds $q$. What is the value of `%rax` in the following?
+```asm
+leaq 2(%rbx, %rbx, 7),%rax
+```
+Back: $2 + 8p$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715781031938-->
+END%%
+
+%%ANKI
+Basic
+Assume `%rbx` holds $p$ and `%rdx` holds $q$. What is the value of `%rax` in the following?
+```asm
+leaq 0xE(, %rdx, 3),%rax
+```
+Back: $14 + 3q$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1715781031941-->
 END%%
 
 ## Bibliography

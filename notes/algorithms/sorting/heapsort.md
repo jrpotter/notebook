@@ -184,7 +184,7 @@ END%%
 
 %%ANKI
 Basic
-What is initialization of `HEAPSORT`'s loop invariant?
+What is initialization of `HEAPSORT`'s extraction-based loop invariant?
 Back: The input array is a max-heap.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714410566845-->
@@ -192,7 +192,7 @@ END%%
 
 %%ANKI
 Basic
-What is maintenance of `HEAPSORT`'s loop invariant?
+What is maintenance of `HEAPSORT`'s extraction-based loop invariant?
 Back: Swap the root with the last position of the heap. Heapify the new root.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714410566846-->

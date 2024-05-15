@@ -155,10 +155,26 @@ END%%
 
 %%ANKI
 Basic
+If $p \Rightarrow q$, which of $p$ or $q$ is considered stronger?
+Back: $p$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869202-->
+END%%
+
+%%ANKI
+Basic
 When is $p$ weaker than $q$?
 Back: When $q \Rightarrow p$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861346-->
+END%%
+
+%%ANKI
+Basic
+If $p \Rightarrow q$, which of $p$ or $q$ is considered weaker?
+Back: $q$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869207-->
 END%%
 
 %%ANKI

@@ -289,7 +289,7 @@ END%%
 
 %%ANKI
 Basic
-How many internal nodes precede the first external node of a heap of size $n$?
+How many internal nodes precede the first external node of a binary heap of size $n$?
 Back: $\lfloor n / 2 \rfloor$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714403425296-->
@@ -297,7 +297,7 @@ END%%
 
 %%ANKI
 Basic
-What is the height of a binary heap defined?
+How is the height of a binary heap defined?
 Back: The height of the heap's root when viewed as a complete binary tree.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714403425300-->

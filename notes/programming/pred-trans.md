@@ -1,0 +1,258 @@
+---
+title: Predicate Transformers
+TARGET DECK: Obsidian::STEM
+FILE TAGS: programming::pred-trans
+tags:
+  - pred_trans
+  - programming
+---
+
+## Overview
+
+Define $\{Q\}\; S\; \{R\}$ as the predicate:
+
+> If execution of $S$ is begun in a state satisfying $Q$, then it is guaranteed to terminate in a finite amount of time in a state satisfying $R$.
+
+%%ANKI
+Basic
+*What* is $Q$ in predicate $\{Q\}\; S\; \{R\}$?
+Back: A predicate.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640219-->
+END%%
+
+%%ANKI
+Basic
+What name is given to $Q$ in $\{Q\}\; S\; \{R\}$?
+Back: The precondition of $S$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640222-->
+END%%
+
+%%ANKI
+Basic
+*What* is $R$ in predicate $\{Q\}\; S\; \{R\}$?
+Back: A predicate.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640224-->
+END%%
+
+%%ANKI
+Basic
+What name is given to $R$ in $\{Q\}\; S\; \{R\}$?
+Back: The postcondition of $S$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640226-->
+END%%
+
+%%ANKI
+Basic
+*What* is $S$ in predicate $\{Q\}\; S\; \{R\}$?
+Back: A program (a sequence of statements).
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640227-->
+END%%
+
+%%ANKI
+Basic
+What is the antecedent of $\{Q\}\; S\; \{R\}$ in English?
+Back: $S$ is executed in a state satisfying $Q$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640229-->
+END%%
+
+%%ANKI
+Basic
+What is the consequent of $\{Q\}\; S\; \{R\}$ in English?
+Back: $S$ terminates in a finite amount of time in a state satisfying $R$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640231-->
+END%%
+
+%%ANKI
+Basic
+How is $\{Q\}\; S\; \{R\}$ defined?
+Back: If $S$ is executed in a state satisfying $Q$, it eventually terminates in a state satisfying $R$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640232-->
+END%%
+
+%%ANKI
+Basic
+How is $\{x = X \land y = Y\}\; swap\; \{x = Y \land y = X\}$ rewritten without free identifiers?
+Back: $\forall x, y, X, Y, \{x = X \land y = Y\}\; swap\; \{x = Y \land y = X\}$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640234-->
+END%%
+
+%%ANKI
+Basic
+What name is given to $X$ in e.g. $\{x = X\}\; S\; \{y = Y\}$?
+Back: The initial value of $x$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640235-->
+END%%
+
+%%ANKI
+Basic
+How is $\{Q\}\; S\; \{R\}$ augmented so that $x$ has initial value $X$?
+Back: $\{Q \land x = X\}\; S\; \{R\}$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640237-->
+END%%
+
+%%ANKI
+Basic
+What name is given to $Y$ in e.g. $\{x = X\}\; S\; \{y = Y\}$?
+Back: The final value of $y$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640238-->
+END%%
+
+%%ANKI
+Basic
+How is $\{Q\}\; S\; \{R\}$ augmented so that $y$ has final value $X$?
+Back: $\{Q\}\; S\; \{R \land y = X\}$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640240-->
+END%%
+
+%%ANKI
+Basic
+How is $\{Q\}\; S\; \{R\}$ augmented so that $y$ has initial value $X$?
+Back: $\{Q \land y = X\}\; S\; \{R\}$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1714420640241-->
+END%%
+
+%%ANKI
+Basic
+*Why* is $\{T\}\; \text{while }T\text{ do skip}\; \{T\}$ everywhere false?
+Back: Because $\text{while }T\text{ do skip}$ never terminates.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869132-->
+END%%
+
+## Weakest Precondition
+
+For any command $S$ and predicate $R$, we define the **weakest precondition** of $S$ with respect to $R$, denoted $wp(S, R)$, as
+
+> the set of *all* states such that execution of $S$ begun in any one of them is guaranteed to terminate in a finite amount of time in a state satisfying $R$.
+
+Expression $\{Q\}\; S\; \{R\}$ is equivalent to $Q \Rightarrow wp(S, R)$.
+
+%%ANKI
+Basic
+What is the predicate transformer $wp$ an acronym for?
+Back: The **w**eakest **p**recondition.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869137-->
+END%%
+
+%%ANKI
+Basic
+Given command $S$ and predicate $R$, how is $wp(S, R)$ defined?
+Back: As the set of *all* states such that execution of $S$ in any one of them eventually terminates in a state satisfying $R$.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869141-->
+END%%
+
+%%ANKI
+Basic
+In terms of implications, how does a precondition compare to the weakest precondition?
+Back: A precondition implies the weakest precondition but not the other way around.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869144-->
+END%%
+
+%%ANKI
+Basic
+In terms of sets of states, how does a precondition compare to the weakest precondition?
+Back: A precondition represents a subset of the states the weakest precondition represents.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869148-->
+END%%
+
+%%ANKI
+Basic
+How is $\{Q\}\; S\; \{R\}$ equivalently written as a predicate involving $wp$?
+Back: $Q \Rightarrow wp(S, R)$
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869153-->
+END%%
+
+%%ANKI
+Basic
+How is $Q \Rightarrow wp(S, R)$ equivalently written as a predicate using assertions?
+Back: $\{Q\}\; S\; \{R\}$
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869157-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical object is the $wp$ transformer?
+Back: A function.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869161-->
+END%%
+
+%%ANKI
+Basic
+Given command $S$ and predicate $R$, what kind of mathematical object is $wp(S, R)$?
+Back: A set (of states).
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869165-->
+END%%
+
+%%ANKI
+Basic
+What does the term "predicate transformer" refer to?
+Back: A function that transforms one predicate into another.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869170-->
+END%%
+
+%%ANKI
+Basic
+What does the following evaluate to? $$wp(''\text{if } x \geq y \text{ then } z := x \text{ else } z := y'', z = y)$$
+Back: $y \geq x$
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869174-->
+END%%
+
+%%ANKI
+Basic
+What does the following evaluate to? $$wp(''\text{if } x \geq y \text{ then } z := x \text{ else } z := y'', z = y - 1)$$
+Back: $F$
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869179-->
+END%%
+
+%%ANKI
+Basic
+What does the following evaluate to? $$wp(''\text{if } x \geq y \text{ then } z := x \text{ else } z := y'', z = y + 1)$$
+Back: $x = y + 1$
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869184-->
+END%%
+
+%%ANKI
+Basic
+What does the following evaluate to? $$wp(''\text{if } x \geq y \text{ then } z := x \text{ else } z := y'', z = max(x, y))$$
+Back: $T$
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869188-->
+END%%
+
+%%ANKI
+Basic
+Given command $S$, how is $wp(S, T)$ interpreted?
+Back: As the set of all states such that execution of $S$ in any of them terminates in a finite amount of time.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715631869196-->
+END%%
+
+## Bibliography
+
+* Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.

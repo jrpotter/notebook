@@ -445,15 +445,15 @@ END%%
 %%ANKI
 Basic
 Given valid expression $(b; [i]{\circ}s{:}e)$, what is the type of $b$?
-Back: A function.
+Back: A function (an array).
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640896-->
 END%%
 
 %%ANKI
 Basic
-Given valid expression $(b; \epsilon{\circ}s{:}e)$, what is the type of $b$?
-Back: A scalar or function.
+Given valid expression $(b; \epsilon{:}e)$, what is the type of $b$?
+Back: A function or scalar.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640898-->
 END%%
