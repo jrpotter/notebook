@@ -232,7 +232,7 @@ END%%
 %%ANKI
 Basic
 How do the `+` and `␣` `printf` flags relate to one another?
-Back: Both prepend a character to positive signed-numeric types.
+Back: Both prepend a character to positively signed-numeric types.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707918756865-->

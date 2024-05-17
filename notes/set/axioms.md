@@ -97,6 +97,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1715688034312-->
 END%%
 
+%%ANKI
+Basic
+How is the empty set defined using set-builder notation?
+Back: $\{x \mid x \neq x\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1715900348141-->
+END%%
+
 ## Pairing Axiom
 
 For any sets $u$ and $v$, there exists a set having as members just $u$ and $v$: $$\forall u, \forall v, \exists B, \forall x, (x \in B \Leftrightarrow x = u \lor x = v)$$
@@ -165,6 +173,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1715688034329-->
 END%%
 
+%%ANKI
+Basic
+How is the pair set $\{u, v\}$ defined using set-builder notation?
+Back: $\{x \mid x = u \lor x = v\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1715900348148-->
+END%%
+
 ## Union Axiom
 
 ### Preliminary Form
@@ -205,10 +221,18 @@ END%%
 
 %%ANKI
 Basic
-What two set theory axioms proves existence of e.g. $\{x_1, x_2, x_3\}$?
+What two set theory axioms prove existence of e.g. $\{x_1, x_2, x_3\}$?
 Back: The pairing axiom and union axiom.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1715688034351-->
+END%%
+
+%%ANKI
+Basic
+How is the union of set $a$ and $b$ defined using set-builder notation?
+Back: $\{x \mid x \in a \lor x \in b\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1715900348153-->
 END%%
 
 ## Power Set Axiom
@@ -253,6 +277,14 @@ How is the power set of set $a$ denoted?
 Back: $\mathscr{P}{a}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1715688034381-->
+END%%
+
+%%ANKI
+Basic
+How is the power set of set $a$ defined using set-builder notation?
+Back: $\{x \mid x \subseteq a\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1715900348160-->
 END%%
 
 ## Bibliography

@@ -10,7 +10,9 @@ tags:
 
 ## Overview
 
-**Equivalence-transformation** refers to a class of calculi for [[propositional|propositional logic]] derived from negation ($\neg$), conjunction ($\land$), disjunction ($\lor$), implication ($\Rightarrow$), and equality ($=$). Gries covers two in "The Science of Programming": a system of evaluation and a formal system. The system of evaluation mirrors how a computer processes instructions, at least in an abstract sense. The formal system serves as a theoretical framework for reasoning about propositions and their transformations without resorting to "lower-level" operations like substitution.
+**Equivalence-transformation** refers to a class of calculi for [[prop-logic|propositional logic]] derived from negation ($\neg$), conjunction ($\land$), disjunction ($\lor$), implication ($\Rightarrow$), and equality ($=$).
+
+Gries covers two in "The Science of Programming": a system of evaluation and a formal system. The system of evaluation mirrors how a computer processes instructions, at least in an abstract sense. The formal system serves as a theoretical framework for reasoning about propositions and their transformations without resorting to "lower-level" operations like substitution.
 
 %%ANKI
 Basic
@@ -18,14 +20,6 @@ Who is the author of "The Science of Programming"?
 Back: David Gries
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861286-->
-END%%
-
-%%ANKI
-Basic
-What are constant propositions?
-Back: Propositions that contain only constants as operands.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707422675517-->
 END%%
 
 %%ANKI
@@ -37,168 +31,11 @@ END%%
 
 %%ANKI
 Basic
-How does Lean define propositional equality?
-Back: Expressions `a` and `b` are propositionally equal iff `a = b` is true.
-Reference: Avigad, Jeremy. ‘Theorem Proving in Lean’, n.d.
-Tags: lean
-<!--ID: 1706994861298-->
-END%%
-
-%%ANKI
-Basic
-How does Lean define `propext`?
-Back:
-```lean
-axiom propext {a b : Prop} : (a ↔ b) → (a = b)
-```
-Reference: Avigad, Jeremy. ‘Theorem Proving in Lean’, n.d.
-Tags: lean
-<!--ID: 1706994861300-->
-END%%
-
-%%ANKI
-Basic
 What Lean theorem justifies Gries' choice of $=$ over $\Leftrightarrow$?
 Back: `propext`
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 Tags: lean
 <!--ID: 1706994861302-->
-END%%
-
-%%ANKI
-Basic
-Is $(b \land c)$ well-defined in $\{(b, T), (c, F)\}$?
-Back: Yes.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861318-->
-END%%
-
-%%ANKI
-Basic
-Is $(b \lor d)$ well-defined in $\{(b, T), (c, F)\}$?
-Back: No.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861320-->
-END%%
-
-%%ANKI
-Basic
-What proposition represents states $\{(b, T)\}$ and $\{(c, F)\}$?
-Back: $b \lor \neg c$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861337-->
-END%%
-
-%%ANKI
-Basic
-What set of states does $a \land b$ represent?
-Back: The set containing just state $\{(a, T), (b, T)\}$.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861339-->
-END%%
-
-%%ANKI
-Basic
-What is sloppy about phrase "the states in $b \lor \neg c$"?
-Back: $b \lor \neg c$ is not a set but a representation of a set (of states).
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861341-->
-END%%
-
-%%ANKI
-Basic
-What is the weakest proposition?
-Back: $T$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861348-->
-END%%
-
-%%ANKI
-Basic
-What set of states does $T$ represent?
-Back: The set of all states.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861350-->
-END%%
-
-%%ANKI
-Basic
-What is the strongest proposition?
-Back: $F$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861352-->
-END%%
-
-%%ANKI
-Basic
-What set of states does $F$ represent?
-Back: The set of no states.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861354-->
-END%%
-
-%%ANKI
-Basic
-What does a proposition *represent*?
-Back: The set of states in which it is true.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861335-->
-END%%
-
-%%ANKI
-Basic
-When is $p$ stronger than $q$?
-Back: When $p \Rightarrow q$.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861343-->
-END%%
-
-%%ANKI
-Basic
-If $p \Rightarrow q$, which of $p$ or $q$ is considered stronger?
-Back: $p$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1715631869202-->
-END%%
-
-%%ANKI
-Basic
-When is $p$ weaker than $q$?
-Back: When $q \Rightarrow p$.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861346-->
-END%%
-
-%%ANKI
-Basic
-If $p \Rightarrow q$, which of $p$ or $q$ is considered weaker?
-Back: $q$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1715631869207-->
-END%%
-
-%%ANKI
-Basic
-A proposition is well-defined with respect to what?
-Back: A state to evaluate against.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861316-->
-END%%
-
-%%ANKI
-Basic
-Why is $b \land c$ stronger than $b \lor c$?
-Back: The former represents a subset of the states the latter represents.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861356-->
-END%%
-
-%%ANKI
-Basic
-What is a state?
-Back: A function mapping identifiers to values.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1706994861314-->
 END%%
 
 %%ANKI

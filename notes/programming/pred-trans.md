@@ -200,7 +200,7 @@ END%%
 %%ANKI
 Basic
 Given command $S$ and predicate $R$, what kind of mathematical object is $wp(S, R)$?
-Back: A set (of states).
+Back: A predicate, i.e. a set of states.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715631869165-->
 END%%
@@ -251,6 +251,95 @@ Given command $S$, how is $wp(S, T)$ interpreted?
 Back: As the set of all states such that execution of $S$ in any of them terminates in a finite amount of time.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715631869196-->
+END%%
+
+### Law of the Excluded Miracle
+
+Given any command $S$, $$wp(S, F) = F$$
+
+%%ANKI
+Basic
+Given command $S$, what does $wp(S, F)$ evaluate to?
+Back: The empty set.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715806256907-->
+END%%
+
+%%ANKI
+Basic
+What does the Law of the Excluded Miracle state?
+Back: For any command $S$, $wp(S, F) = F$.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715806256912-->
+END%%
+
+%%ANKI
+Basic
+What name is given to identity $wp(S, F) = F$?
+Back: The Law of the Excluded Miracle.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715806256915-->
+END%%
+
+%%ANKI
+Basic
+Explain why the Law of the Excluded Miracle holds true.
+Back: No state satisfies $F$ so no precondition can either.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715806256918-->
+END%%
+
+%%ANKI
+Basic
+Why is the Law of the Excluded Miracle named the way it is?
+Back: It would indeed be a miracle if execution could terminate in no state.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715806256921-->
+END%%
+
+### Distributivity of Conjunction
+
+Given command $S$ and predicates $Q$ and $R$, $$wp(S, Q \land R) = wp(S, Q) \land wp(S, R)$$
+
+%%ANKI
+Basic
+What does Distributivity of Conjunction state?
+Back: Given command $S$ and predicates $Q$ and $R$, $wp(S, Q \land R) = wp(S, Q) \land wp(S, R)$.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Cloze
+Distributivity of Conjunction states {$wp(S, Q \land R)$} $=$ {$wp(S, Q) \land wp(S, R)$}.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+In Gries's exposition, is Distributivity of Conjunction taken as an axiom or a theorem?
+Back: An axiom.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+Does $wp(S, Q) \land wp(S, R) \Rightarrow wp(S, Q \land R)$ hold when $S$ is nondeterministic?
+Back: Yes.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+Does $wp(S, Q \land R) \Rightarrow wp(S, Q) \land wp(S, R)$ hold when $S$ is nondeterministic?
+Back: Yes.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Basic
+What does it mean for command $S$ to be nondeterministic?
+Back: Execution may not be the same even if begun in the same state.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 END%%
 
 ## Bibliography

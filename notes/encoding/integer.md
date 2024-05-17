@@ -1054,7 +1054,7 @@ END%%
 %%ANKI
 Basic
 How do you detect whether unsigned addition $s \coloneqq x +_w^u y$ overflowed?
-Back: Overflow occurs if and only if $s < x$.
+Back: Overflow occurs if and only if $s < x$ (or $s < y$).
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708799678765-->
 END%%
@@ -1299,8 +1299,8 @@ END%%
 
 %%ANKI
 Basic
-Which two's-complement integer is its own additive inverse?
-Back: $TMin$
+Which two's-complement integers are their own additive inverse?
+Back: $TMin$ and $0$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1709040965815-->
 END%%

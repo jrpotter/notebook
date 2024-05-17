@@ -13,7 +13,7 @@ An **abstract data type** (ADT) is a mathematical model for data types, defined 
 %%ANKI
 Basic
 What is an ADT an acronym for?
-Back: **A**bstract **D**ata **T**type.
+Back: **A**bstract **D**ata **T**ype.
 Reference: “Abstract Data Type.” In _Wikipedia_, March 18, 2024. [https://en.wikipedia.org/w/index.php?title=Abstract_data_type&oldid=1214359576](https://en.wikipedia.org/w/index.php?title=Abstract_data_type&oldid=1214359576).
 <!--ID: 1714669011569-->
 END%%
