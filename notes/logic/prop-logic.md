@@ -238,6 +238,7 @@ Basic
 Given propositions $p$ and $q$, $p \Leftrightarrow q$ is equivalent to the conjunction of what two expressions?
 Back: $p \Rightarrow q$ and $q \Rightarrow p$.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715969047070-->
 END%%
 
 ## Sets
@@ -393,18 +394,21 @@ Basic
 Given sets $a$ and $b$, $a = b$ is equivalent to the conjunction of what two expressions?
 Back: $a \subseteq b$ and $b \subseteq a$.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715969047071-->
 END%%
 
 %%ANKI
 Cloze
 {$a \Rightarrow b$} is to propositional logic as {$a \subseteq b$} is to sets.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715969047073-->
 END%%
 
 %%ANKI
 Cloze
 {$a \Leftrightarrow b$} is to propositional logic as {$a = b$} is to sets.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715969047074-->
 END%%
 
 ## Bibliography

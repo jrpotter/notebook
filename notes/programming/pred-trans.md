@@ -306,12 +306,14 @@ Basic
 What does Distributivity of Conjunction state?
 Back: Given command $S$ and predicates $Q$ and $R$, $wp(S, Q \land R) = wp(S, Q) \land wp(S, R)$.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715969047060-->
 END%%
 
 %%ANKI
 Cloze
 Distributivity of Conjunction states {$wp(S, Q \land R)$} $=$ {$wp(S, Q) \land wp(S, R)$}.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715969047062-->
 END%%
 
 %%ANKI
@@ -319,6 +321,7 @@ Basic
 In Gries's exposition, is Distributivity of Conjunction taken as an axiom or a theorem?
 Back: An axiom.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715969047064-->
 END%%
 
 %%ANKI
@@ -326,6 +329,7 @@ Basic
 Does $wp(S, Q) \land wp(S, R) \Rightarrow wp(S, Q \land R)$ hold when $S$ is nondeterministic?
 Back: Yes.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715969047065-->
 END%%
 
 %%ANKI
@@ -333,6 +337,7 @@ Basic
 Does $wp(S, Q \land R) \Rightarrow wp(S, Q) \land wp(S, R)$ hold when $S$ is nondeterministic?
 Back: Yes.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715969047067-->
 END%%
 
 %%ANKI
@@ -340,6 +345,7 @@ Basic
 What does it mean for command $S$ to be nondeterministic?
 Back: Execution may not be the same even if begun in the same state.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715969047068-->
 END%%
 
 ## Bibliography

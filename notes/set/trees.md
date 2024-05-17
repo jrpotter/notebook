@@ -722,6 +722,134 @@ Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition
 <!--ID: 1712409466682-->
 END%%
 
+%%ANKI
+Basic
+What $O(n)$ space representation is commonly used for ordered trees with unbounded branching?
+Back: A left-child, right-sibling tree representation.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715969047043-->
+END%%
+
+%%ANKI
+Basic
+A node of a left-child, right-sibling tree representation has what three pointers?
+Back: The parent, left child, and right sibling.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715969047046-->
+END%%
+
+%%ANKI
+Basic
+What is the space usage of a left-child, right-sibling representation?
+Back: Given $n$ nodes in the tree, $O(n)$.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715969047047-->
+END%%
+
+%%ANKI
+Basic
+What space may be wasted in a $k$-child representation of a $k$-ary tree?
+Back: Some children may be absent.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715969047049-->
+END%%
+
+%%ANKI
+Basic
+What space advantage does a left-child, right-sibling representation have over a $k$-child representation?
+Back: Absent children are not stored in the former.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715969047051-->
+END%%
+
+%%ANKI
+Basic
+How is a `struct` of a $k$-child tree representation written?
+Back:
+```c
+struct Node {
+  struct Node *parent;
+  struct Node *children[k];
+};
+```
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: c17
+<!--ID: 1715969047052-->
+END%%
+
+%%ANKI
+Basic
+What tree representation corresponds to the following `struct`?
+```c
+struct Node {
+  struct Node *parent;
+  struct Node *children[k];
+};
+```
+Back: A $k$-ary child representation.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: c17
+<!--ID: 1715969047054-->
+END%%
+
+%%ANKI
+Basic
+How is a `struct` of a left-child, right-sibling tree representation written?
+Back:
+```c
+struct Node {
+  struct Node *parent;
+  struct Node *left;
+  struct Node *next;
+};
+```
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: c17
+<!--ID: 1715969047056-->
+END%%
+
+%%ANKI
+Basic
+What tree representation corresponds to the following `struct`?
+```c
+struct Node {
+  struct Node *parent;
+  struct Node *left;
+  struct Node *next;
+};
+```
+Back: A left-child, right-sibling representation.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: c17
+<!--ID: 1715969047057-->
+END%%
+
+%%ANKI
+Basic
+What is an LCRS tree representation?
+Back: A **l**eft-**c**hild, **r**ight-**s**ibling representation.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715969525815-->
+END%%
+
+%%ANKI
+Basic
+The following is a portion of what kind of tree representation?
+![[lcrs-nodes.png]]
+Back: A left-child, right-sibling representation.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715969525819-->
+END%%
+
+%%ANKI
+Basic
+The following is a portion of what kind of tree representation?
+![[binary-tree-nodes.png]]
+Back: A $k$-ary (binary) child representation.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715969525820-->
+END%%
+
 ### Positional Trees
 
 A **positional tree** is a rooted tree in which each child is labeled with a specific positive integer. A **$k$-ary tree** is a positional tree with at most $k$ children/labels. A binary tree is a $2$-ary tree.
@@ -1452,6 +1580,14 @@ How many internal nodes are in a complete binary tree of $n$ nodes?
 Back: $\lceil (n - 1) / 2 \rceil = \lfloor n / 2 \rfloor$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714349367662-->
+END%%
+
+%%ANKI
+Basic
+A node of a binary tree typically has what three pointers?
+Back: The parent, left child, and right child.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1715969047059-->
 END%%
 
 ## Bibliography

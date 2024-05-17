@@ -127,7 +127,9 @@
     "graph-isomorphic.png",
     "graph-induced-subgraph.png",
     "graph-subgraph.png",
-    "graph-non-subgraph.png"
+    "graph-non-subgraph.png",
+    "lcrs-nodes.png",
+    "binary-tree-nodes.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -307,7 +309,7 @@
     "_journal/2024-03-18.md": "8479f07f63136a4e16c9cd07dbf2f27f",
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
-    "set/index.md": "fd0afffa094e47aace1ec89428218eec",
+    "set/index.md": "923225a165d52476bee68d36ac2e4db3",
     "set/graphs.md": "4bbcea8f5711b1ae26ed0026a4a69800",
     "_journal/2024-03-19.md": "a0807691819725bf44c0262405e97cbb",
     "_journal/2024-03/2024-03-18.md": "63c3c843fc6cfc2cd289ac8b7b108391",
@@ -328,7 +330,7 @@
     "x86-64/declarations.md": "75bc7857cf2207a40cd7f0ee056af2f2",
     "x86-64/instructions.md": "c447f09c6b0ad504726c3232ff5871b4",
     "git/refs.md": "e20c2c9b14ba6c2bd235416017c5c474",
-    "set/trees.md": "0d21b947917498f107da140cc9fb93a7",
+    "set/trees.md": "27bba3f28c31ad9effe9a99a43991bd4",
     "_journal/2024-03-24.md": "1974cdb9fc42c3a8bebb8ac76d4b1fd6",
     "_journal/2024-03/2024-03-23.md": "ad4e92cc2bf37f174a0758a0753bf69b",
     "_journal/2024-03/2024-03-22.md": "a509066c9cd2df692549e89f241d7bd9",
@@ -430,7 +432,7 @@
     "_journal/2024-05-13.md": "71eb7924653eed5b6abd84d3a13b532b",
     "_journal/2024-05/2024-05-12.md": "ca9f3996272152ef89924bb328efd365",
     "git/remotes.md": "2208e34b3195b6f1ec041024a66fb38b",
-    "programming/pred-trans.md": "736e2c6e89494c8f5a2a7998aa905fdd",
+    "programming/pred-trans.md": "7006b05654a0485472166e81700c98f1",
     "set/axioms.md": "063955bf19c703e9ad23be2aee4f1ab7",
     "_journal/2024-05-14.md": "f6ece1d6c178d57875786f87345343c5",
     "_journal/2024-05/2024-05-13.md": "71eb7924653eed5b6abd84d3a13b532b",
@@ -440,8 +442,8 @@
     "_journal/2024-05-16.md": "580c7ec61ec56be92fa8d6affcf0a5f6",
     "_journal/2024-05/2024-05-15.md": "4e6a7e6df32e93f0d8a56bc76613d908",
     "logic/pred-logic.md": "c23c3da8756ac0ef17b9710a67440d84",
-    "logic/prop-logic.md": "4d45544452791470458cfb08656e16c1",
-    "_journal/2024-05-17.md": "4bada636652a610967c4ce51deb2ff43",
+    "logic/prop-logic.md": "f7d3ae42989c1c226c40c8354a546264",
+    "_journal/2024-05-17.md": "6e8033da97f16d9ce32b4d5762bcd573",
     "_journal/2024-05/2024-05-16.md": "9fdfadc3f9ea6a4418fd0e7066d6b10c"
   },
   "fields_dict": {
