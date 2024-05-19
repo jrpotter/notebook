@@ -294,25 +294,16 @@ END%%
 
 The MOV instruction class has four primary variants: `movb`, `movw`, `movl`, and `movq`. There also exist zero extension and sign extension variations in the forms of MOVS and MOVZ.
 
-| Instruction | Operands | Effect           | Description                                 |
-| ----------- | -------- | ---------------- | ------------------------------------------- |
-| `movb`      | S, D     | D <- S           | Move byte                                   |
-| `movw`      | S, D     | D <- S           | Move word                                   |
-| `movl`      | S, D     | D <- S           | Move double word                            |
-| `movq`      | S, D     | D <- S           | Move quad word                              |
-| `movabsq`   | I, R     | R <- I           | Move quad word                              |
-| `movzbw`    | S, R     | R <- ZE(S)       | Move zero-extended byte to word             |
-| `movzbl`    | S, R     | R <- ZE(S)       | Move zero-extended byte to double word      |
-| `movzwl`    | S, R     | R <- ZE(S)       | Move zero-extended word to double word      |
-| `movzbq`    | S, R     | R <- ZE(S)       | Move zero-extended byte to quad word        |
-| `movzwq`    | S, R     | R <- ZE(S)       | Move zero-extended word to quad word        |
-| `movsbw`    | S, R     | R <- SE(S)       | Move sign-extended byte to word             |
-| `movsbl`    | S, R     | R <- SE(S)       | Move sign-extended byte to double word      |
-| `movswl`    | S, R     | R <- SE(S)       | Move sign-extended word to double word      |
-| `movsbq`    | S, R     | R <- SE(S)       | Move sign-extended byte to quad word        |
-| `movswq`    | S, R     | R <- SE(S)       | Move sign-extended word to quad word        |
-| `movslq`    | S, R     | R <- SE(S)       | Move sign-extended double word to quad word |
-| `cltq`      |          | %rax <- SE(%eax) | Sign-extend `%eax` to `%rax`                |
+| Instruction  | Operands | Effect           | Description                          |
+| ------------ | -------- | ---------------- | ------------------------------------ |
+| `mov[bwlq]`  | S, D     | D <- S           | Move byte/word/double word/quad word |
+| `movabsq`    | I, R     | R <- I           | Move quad word                       |
+| `movzb[wlq]` | S, R     | R <- ZE(S)       | Move zero-extended byte              |
+| `movzw[lq]`  | S, R     | R <- ZE(S)       | Move zero-extended word              |
+| `movsb[wlq]` | S, R     | R <- SE(S)       | Move sign-extended byte              |
+| `movsw[lq]`  | S, R     | R <- SE(S)       | Move sign-extended word              |
+| `movslq`     | S, R     | R <- SE(S)       | Move sign-extended double word       |
+| `cltq`       |          | %rax <- SE(%eax) | Sign-extend `%eax` to `%rax`         |
 
 Notice there is no `movzlq` instruction. `movl` covers this functionality since, by convention, instructions moving double words into a 64-bit register automatically zeroes out the upper 32 bits.
 
@@ -757,7 +748,7 @@ END%%
 
 %%ANKI
 Basic
-Besides effect memory computations, how else is `leaq` used?
+Besides effective memory computations, how else is `leaq` used?
 Back: For certain arithmetic operations.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1715780601469-->
@@ -765,7 +756,7 @@ END%%
 
 %%ANKI
 Basic
-Assume `%rbx` holds $p$ and `%rdx` holds $q$. What is the value of `%rax` in the following?
+Assume `%rdx` holds $q$. What is the value of `%rax` in the following?
 ```asm
 leaq 9(%rdx),%rax
 ```
@@ -787,7 +778,7 @@ END%%
 
 %%ANKI
 Basic
-Assume `%rbx` holds $p$ and `%rdx` holds $q$. What is the value of `%rax` in the following?
+Assume `%rbx` holds $p$. What is the value of `%rax` in the following?
 ```asm
 leaq 2(%rbx, %rbx, 7),%rax
 ```
@@ -798,13 +789,284 @@ END%%
 
 %%ANKI
 Basic
-Assume `%rbx` holds $p$ and `%rdx` holds $q$. What is the value of `%rax` in the following?
+Assume `%rdx` holds $q$. What is the value of `%rax` in the following?
 ```asm
 leaq 0xE(, %rdx, 3),%rax
 ```
 Back: $14 + 3q$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1715781031941-->
+END%%
+
+### Unary Operations
+
+| Instruction | Operands | Effect     | Description  |
+| ----------- | -------- | ---------- | ------------ |
+| `inc[bwlq]` | D        | D <- D + 1 | Increment    |
+| `dec[bwlq]` | D        | D <- D - 1 | Decrement    |
+| `neg[bwlq]` | D        | D <- -D    | Negate       |
+| `not[bwlq]` | D        | D <- ~D    | Complement   |
+
+%%ANKI
+Basic
+What four variants do `INC` instructions take on in x86-64?
+Back: `incb`, `incw`, `incl`, `incq`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716125986895-->
+END%%
+
+%%ANKI
+Basic
+Which instruction class corresponds to effect $D \leftarrow D + 1$?
+Back: `INC`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127743477-->
+END%%
+
+%%ANKI
+Basic
+What combination of source and destination types is prohibited in unary instructions?
+Back: A source and destination memory address.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716125986904-->
+END%%
+
+%%ANKI
+Basic
+What do the instructions in the `INC` instruction class do?
+Back: Increments the specified destination by $1$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716125986907-->
+END%%
+
+%%ANKI
+Cloze
+The {`INC`} instruction class is to x86-64 whereas the {`++`} operator is to C.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1716126147793-->
+END%%
+
+%%ANKI
+Basic
+What do the instructions in the `DEC` instruction class do?
+Back: Decrements the specified destination by $1$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716125986910-->
+END%%
+
+%%ANKI
+Basic
+Which instruction class corresponds to effect $D \leftarrow D - 1$?
+Back: `DEC`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127743483-->
+END%%
+
+%%ANKI
+Cloze
+The {`DEC`} instruction class is to x86-64 whereas the {`--`} operator is to C.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1716126147798-->
+END%%
+
+%%ANKI
+Basic
+What do the instructions in the `NEG` instruction class do?
+Back: Negates the specified destination.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716125986913-->
+END%%
+
+%%ANKI
+Basic
+Which instruction class corresponds to effect $D \leftarrow -D$?
+Back: `NEG`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127743486-->
+END%%
+
+%%ANKI
+Cloze
+The {`NEG`} instruction class is to x86-64 whereas the {`-`} operator is to C.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1716126147801-->
+END%%
+
+%%ANKI
+Basic
+What do the instructions in the `NOT` instruction class do?
+Back: Complements the specified destination.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716125986916-->
+END%%
+
+%%ANKI
+Basic
+Which instruction class corresponds to effect $D \leftarrow \textasciitilde D$?
+Back: `NOT`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127743488-->
+END%%
+
+%%ANKI
+Cloze
+The {`NOT`} instruction class is to x86-64 whereas the {`~`} operator is to C.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1716126147804-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `NEG` and `NOT` instruction classes?
+Back: The former negates, the latter complements.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716125986919-->
+END%%
+
+### Binary Operations
+
+| Instruction  | Operands | Effect      | Description    |
+| ------------ | -------- | ----------- | -------------- |
+| `add[bwlq]`  | S, D     | D <- D + S  | Addition       |
+| `sub[bwlq]`  | S, D     | D <- D - S  | Subtraction    |
+| `imul[bwlq]` | S, D     | D <- D * S  | Multiplication |
+| `xor[bwlq]`  | S, D     | D <- D ^ S  | Exclusive-or   |
+| `or[bwlq]`   | S, D     | D <- D \| S | Or             |
+| `and[bwlq]`  | S, D     | D <- D & S  | And            |
+
+%%ANKI
+Basic
+What four variants do `ADD` instructions take on in x86-64?
+Back: `addb`, `addw`, `addl`, `addq`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127743491-->
+END%%
+
+%%ANKI
+Basic
+What combination of source and destination types is prohibited in `ADD` instructions?
+Back: A source and destination memory address.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127743494-->
+END%%
+
+%%ANKI
+Basic
+Which instruction class corresponds to effect $D \leftarrow D + S$?
+Back: `ADD`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127743497-->
+END%%
+
+%%ANKI
+Cloze
+The {`ADD`} instruction class is to x86-64 as the {`+=`} operator is to C.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1716128138030-->
+END%%
+
+%%ANKI
+Basic
+Which instruction class corresponds to effect $D \leftarrow D - S$?
+Back: `SUB`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127743500-->
+END%%
+
+%%ANKI
+Basic
+Which `SUB` instruction is equivalent to `decq %rcx`?
+Back:
+```asm
+subq $1, %rcx
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127853102-->
+END%%
+
+%%ANKI
+Basic
+How does Bryant et al. recommend reading `SUB` instructions?
+Back: As subtracting the first operand *from* the second.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127853106-->
+END%%
+
+%%ANKI
+Cloze
+The {`SUB`} instruction class is to x86-64 as the {`-=`} operator is to C.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1716128138033-->
+END%%
+
+%%ANKI
+Basic
+Which instruction class corresponds to effect $D \leftarrow D * S$?
+Back: `IMUL`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127743502-->
+END%%
+
+%%ANKI
+Cloze
+The {`IMUL`} instruction class is to x86-64 as the {`*=`} operator is to C.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1716128138036-->
+END%%
+
+%%ANKI
+Basic
+Which instruction class corresponds to effect $D \leftarrow D \;^\wedge\; S$?
+Back: `XOR`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127743505-->
+END%%
+
+%%ANKI
+Cloze
+The {`XOR`} instruction class is to x86-64 as the {`^=`} operator is to C.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1716128138040-->
+END%%
+
+%%ANKI
+Basic
+Which instruction class corresponds to effect $D \leftarrow D \mid S$?
+Back: `OR`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127743508-->
+END%%
+
+%%ANKI
+Cloze
+The {`OR`} instruction class is to x86-64 as the {`|=`} operator is to C.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1716128138043-->
+END%%
+
+%%ANKI
+Basic
+Which instruction class corresponds to effect $D \leftarrow D \;\&\; S$?
+Back: `AND`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716127743511-->
+END%%
+
+%%ANKI
+Cloze
+The {`AND`} instruction class is to x86-64 as the {`&=`} operator is to C.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1716128138046-->
 END%%
 
 ## Bibliography

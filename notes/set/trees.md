@@ -786,7 +786,7 @@ struct Node {
   struct Node *children[k];
 };
 ```
-Back: A $k$-ary child representation.
+Back: A $k$-child representation.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: c17
 <!--ID: 1715969047054-->
@@ -845,7 +845,7 @@ END%%
 Basic
 The following is a portion of what kind of tree representation?
 ![[binary-tree-nodes.png]]
-Back: A $k$-ary (binary) child representation.
+Back: A $k$-child (binary) representation.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1715969525820-->
 END%%

@@ -260,7 +260,7 @@ Given any command $S$, $$wp(S, F) = F$$
 %%ANKI
 Basic
 Given command $S$, what does $wp(S, F)$ evaluate to?
-Back: The empty set.
+Back: $F$.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715806256907-->
 END%%

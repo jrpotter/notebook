@@ -1,0 +1,5 @@
+---
+title: Hashing
+tags:
+  - hash
+---
