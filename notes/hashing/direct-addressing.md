@@ -53,7 +53,7 @@ END%%
 %%ANKI
 Basic
 Write pseudocode to test membership of $x$ in direct-address table `T[0:m-1]`.
-Back
+Back:
 ```c
 bool membership(T, x) {
   return T[x.key] != NIL;
@@ -66,7 +66,7 @@ END%%
 %%ANKI
 Basic
 Write pseudocode to insert $x$ into direct-address table `T[0:m-1]`.
-Back
+Back:
 ```c
 void insert(T, x) {
   T[x.key] = x;
@@ -79,7 +79,7 @@ END%%
 %%ANKI
 Basic
 Write pseudocode to delete $x$ from direct-address table `T[0:m-1]`.
-Back
+Back:
 ```c
 void delete(T, x) {
   T[x.key] = NIL;

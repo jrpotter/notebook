@@ -1069,6 +1069,136 @@ Tags: c17
 <!--ID: 1716128138046-->
 END%%
 
+### Shift Operations
+
+| Instruction | Operands | Effect       | Description            |
+| ----------- | -------- | ------------ | ---------------------- |
+| `sal[bwlq]` | k, D     | D <- D << k  | Left shift             |
+| `shl[bwlq]` | k, D     | D <- D << k  | Left shift             |
+| `sar[bwlq]` | k, D     | D <- D >> k  | Arithmetic right shift |
+| `shr[bwlq]` | k, D     | D <- D >>> k | Logical right shift    |
+
+%%ANKI
+Basic
+What do instructions in the `SAL` instruction class do?
+Back: Performs a left shift.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827710-->
+END%%
+
+%%ANKI
+Basic
+What do instructions in the `SHL` instruction class do?
+Back: Performs a left shift.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827717-->
+END%%
+
+%%ANKI
+Basic
+Which instruction classes are related to left shifts?
+Back: `SAL` and `SHL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827720-->
+END%%
+
+
+%%ANKI
+Basic
+Which instruction classes are related to right shifts?
+Back: `SAR` and `SHR`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827723-->
+END%%
+
+%%ANKI
+Basic
+What do instructions in the `SAR` instruction class do?
+Back: Performs an arithmetic right shift.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827725-->
+END%%
+
+%%ANKI
+Basic
+What do instructions in the `SHR` instruction class do?
+Back: Performs a logical right shift.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827729-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `SAR` and `SHR` instruction classes?
+Back: The former is arithmetic whereas the latter is logical.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827732-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `SAL` and `SHL` instruction classes?
+Back: N/A.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827736-->
+END%%
+
+%%ANKI
+Basic
+Which register are shift operations limited to?
+Back: `%cl`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827740-->
+END%%
+
+%%ANKI
+Basic
+How many lower-order bits of `%cl` does e.g. `salb` look at?
+Back: $3$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827744-->
+END%%
+
+%%ANKI
+Basic
+What can the source of a shift operation be?
+Back: An immediate or the `%cl` register.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827748-->
+END%%
+
+%%ANKI
+Basic
+What can the destination of a shift operation be?
+Back: A register or memory location.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827752-->
+END%%
+
+%%ANKI
+Basic
+How many lower-order bits of `%cl` does e.g. `salw` look at?
+Back: $4$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827756-->
+END%%
+
+%%ANKI
+Basic
+How many lower-order bits of `%cl` does e.g. `sall` look at?
+Back: $5$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827760-->
+END%%
+
+%%ANKI
+Basic
+How many lower-order bits of `%cl` does e.g. `salq` look at?
+Back: $6$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1716226827764-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

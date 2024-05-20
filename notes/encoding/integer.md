@@ -1440,7 +1440,7 @@ END%%
 %%ANKI
 Basic
 What kinds of right shift operations are there?
-Back: Logical and arithmetic
+Back: Logical and arithmetic.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707854589784-->
 END%%

@@ -30,7 +30,7 @@ END%%
 %%ANKI
 Basic
 What does the Zermelo-Fraenkel alternative say about classes?
-Back: It gives it no ontological status at all.
+Back: It gives them no ontological status at all.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1715970576763-->
 END%%

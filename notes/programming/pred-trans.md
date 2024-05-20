@@ -297,6 +297,14 @@ Reference: Reference: Gries, David. *The Science of Programming*. Texts and Mon
 <!--ID: 1715806256921-->
 END%%
 
+%%ANKI
+Basic
+In Gries's exposition, is the Law of the Excluded Miracle taken as an axiom or a theorem?
+Back: An axiom.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716227332852-->
+END%%
+
 ### Distributivity of Conjunction
 
 Given command $S$ and predicates $Q$ and $R$, $$wp(S, Q \land R) = wp(S, Q) \land wp(S, R)$$
@@ -326,7 +334,7 @@ END%%
 
 %%ANKI
 Basic
-Does $wp(S, Q) \land wp(S, R) \Rightarrow wp(S, Q \land R)$ hold when $S$ is nondeterministic?
+Is $wp(S, Q) \land wp(S, R) \Rightarrow wp(S, Q \land R)$ true if $S$ is nondeterministic?
 Back: Yes.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715969047065-->
@@ -334,7 +342,7 @@ END%%
 
 %%ANKI
 Basic
-Does $wp(S, Q \land R) \Rightarrow wp(S, Q) \land wp(S, R)$ hold when $S$ is nondeterministic?
+Is $wp(S, Q \land R) \Rightarrow wp(S, Q) \land wp(S, R)$ true if $S$ is nondeterministic?
 Back: Yes.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715969047067-->
@@ -346,6 +354,39 @@ What does it mean for command $S$ to be nondeterministic?
 Back: Execution may not be the same even if begun in the same state.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715969047068-->
+END%%
+
+### Law of Monotonicity
+
+Given command $S$ and predicates $Q$ and $R$, if $Q \Rightarrow R$, then $wp(S, Q) \Rightarrow wp(S, R)$.
+
+%%ANKI
+What does the Law of Monotonicity state?
+Back: Given command $S$ and predicates $Q$ and $R$, if $Q \Rightarrow R$, then $wp(S, Q) \Rightarrow wp(S, R)$.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
+%%ANKI
+Cloze
+Given command $S$, the Law of Monotonicity states that if {1:$Q$} $\Rightarrow$ {2:$R$}, then {2:$wp(S, Q)$} $\Rightarrow$ {1:$wp(S, R)$}.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716227332862-->
+END%%
+
+%%ANKI
+Basic
+In Gries's exposition, is the Law of Monotonicity taken as an axiom or a theorem?
+Back: A theorem.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716227332866-->
+END%%
+
+%%ANKI
+Basic
+Is the Law of Monotonicity true if the relevant command is nondeterministic?
+Back: Yes.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716227332870-->
 END%%
 
 ## Bibliography

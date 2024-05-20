@@ -418,7 +418,7 @@ For each formula $\_\_\_$ not containing $B$, the following is an axiom: $$\fora
 %%ANKI
 Basic
 What do the subset axioms state?
-Back: For each formula $\phi$ not containing $B$, the following is an axiom: $$\forall t_1, \cdots, \forall t_k, \forall c, \exists B, \forall x, (x \in B \Leftrightarrow x \in c \land \_\_\_)$$
+Back: For each formula $\_\_\_$ not containing $B$, the following is an axiom: $$\forall t_1, \cdots, \forall t_k, \forall c, \exists B, \forall x, (x \in B \Leftrightarrow x \in c \land \_\_\_)$$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716074312858-->
 END%%
