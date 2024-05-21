@@ -114,6 +114,30 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1715970576782-->
 END%%
 
+%%ANKI
+Basic
+What kind of formulas are permitted in the entrance requirement of set-builder notation?
+Back: Well-formed formulas in predicate logic.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716237736452-->
+END%%
+
+%%ANKI
+Basic
+*Why* do we require first-order logic in the entrance requirement of set-builder notation?
+Back: To avoid any ambiguity introduced by plain English.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716237736482-->
+END%%
+
+%%ANKI
+Basic
+When is plain English permitted in the entrance requirement of set-builder notation?
+Back: When the English can be translated into predicate logic.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716237736487-->
+END%%
+
 ## Russell's Paradox
 
 Let $R = \{x \mid x \not\in x\}$. Then $R \in R \Leftrightarrow R \not\in R$.
@@ -268,6 +292,86 @@ In the barber paradox, what contradiction arises when we assume the barber does 
 Back: The barber shaves *all* men who do not shave themselves.
 Reference: “Russell’s Paradox,” in *Wikipedia*, April 18, 2024, [https://en.wikipedia.org/w/index.php?title=Russell%27s_paradox&oldid=1219576437](https://en.wikipedia.org/w/index.php?title=Russell%27s_paradox&oldid=1219576437).
 <!--ID: 1716075743555-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. What does $\{x \in A \mid x \not\in x\}$ evaluate to?
+Back: $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716237736492-->
+END%%
+
+%%ANKI
+Basic
+*Why* does $A = \{x \in A \mid x \not\in x\}$?
+Back: No set is a member of itself.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716237736497-->
+END%%
+
+%%ANKI
+Basic
+What two sets are used in the proof of "no set contains all sets"?
+Back: An arbitrary set $A$ and $\{x \in A \mid x \not\in x\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716237736501-->
+END%%
+
+%%ANKI
+Basic
+Let $B = \{x \in A \mid x \not\in x\}$. What biconditional proves $B \not\in A$?
+Back: $B \in B \Leftrightarrow B \in A \land B \not\in B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716237736505-->
+END%%
+
+%%ANKI
+Basic
+Let $B = \{x \in A \mid x \not\in x\}$. What biconditional proves $B \in A$?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716237736510-->
+END%%
+
+%%ANKI
+Basic
+Which paradox is used in the proof of "no set contains all sets"?
+Back: Russell's paradox.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716237736514-->
+END%%
+
+%%ANKI
+Basic
+Which axiom is used in the proof of "no set contains all sets"?
+Back: The subset axiom(s).
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716237736518-->
+END%%
+
+%%ANKI
+Basic
+Let $B = \{x \in A \mid x \not\in x\}$. What contradiction arises when $B \in B$?
+Back: $B \in A \land B \not\in B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716237736522-->
+END%%
+
+%%ANKI
+Basic
+Let $B = \{x \in A \mid x \not\in x\}$. What contradiction arises when $B \not\in A \land B \not\in B$?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716237736526-->
+END%%
+
+%%ANKI
+Basic
+Let $B = \{x \in A \mid x \not\in x\}$. What contradiction arises when $B \in A \land B \not\in B$?
+Back: $B \in B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716237736529-->
 END%%
 
 ## Bibliography

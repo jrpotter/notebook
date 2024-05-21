@@ -157,7 +157,7 @@
     "posix/index.md": "97b1b8ecb9a953e855a9acf0ab25b8c8",
     "posix/signals.md": "f4132369878c683bfac4d7fd863d19ba",
     "templates/daily.md": "7866014e730e85683155207a02e367d8",
-    "posix/regexp.md": "cb53e537fc10ce83307f35497d48179f",
+    "posix/regexp.md": "887711b8fc64ca258d9987133ecf056c",
     "journal/2024-02-04.md": "e2b5678fc53d7284b71ed6820c02b954",
     "gawk/regexp.md": "d9229f1eabe1b99e965eecaa03bee86c",
     "_templates/daily.md": "bfcd221502a23a285af100317b6ef127",
@@ -328,7 +328,7 @@
     "_journal/2024-03-22.md": "8da8cda07d3de74f7130981a05dce254",
     "_journal/2024-03/2024-03-21.md": "cd465f71800b080afa5c6bdc75bf9cd3",
     "x86-64/declarations.md": "75bc7857cf2207a40cd7f0ee056af2f2",
-    "x86-64/instructions.md": "a9fa4596009395c4161fd8601a669c6c",
+    "x86-64/instructions.md": "f463916644562db3160a24fad233eb25",
     "git/refs.md": "e20c2c9b14ba6c2bd235416017c5c474",
     "set/trees.md": "c29347ec0ac2e8d5339514c869ecaedf",
     "_journal/2024-03-24.md": "1974cdb9fc42c3a8bebb8ac76d4b1fd6",
@@ -448,12 +448,14 @@
     "_journal/2024-05-18.md": "c0b58b28f84b31cea91404f43b0ee40c",
     "hashing/direct-addressing.md": "17daf22ed3dfcc465924a175e8f11ce3",
     "hashing/index.md": "340f8583eb51eaef011e3302bddb7ff8",
-    "set/classes.md": "c933ca5dfebc3a0298e8ad948c6877a3",
+    "set/classes.md": "3600fde1c4b30f600862d8d640962e4f",
     "_journal/2024-05-19.md": "fddd90fae08fab9bd83b0ef5d362c93a",
     "_journal/2024-05/2024-05-18.md": "c0b58b28f84b31cea91404f43b0ee40c",
     "_journal/2024-05/2024-05-17.md": "fb880d68077b655ede36d994554f3aba",
-    "_journal/2024-05-20.md": "350024abe16438d4cdd2ceaf95cb53c4",
-    "_journal/2024-05/2024-05-19.md": "fc14fc23d4ddca3628df7eec71a07e27"
+    "_journal/2024-05-20.md": "d58a4ecd3bf9621cbe688f043be61239",
+    "_journal/2024-05/2024-05-19.md": "fc14fc23d4ddca3628df7eec71a07e27",
+    "_journal/2024-05-21.md": "4753ad41a519241d1ab7610bfe3c4038",
+    "_journal/2024-05/2024-05-20.md": "d58a4ecd3bf9621cbe688f043be61239"
   },
   "fields_dict": {
     "Basic": [

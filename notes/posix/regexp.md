@@ -227,14 +227,6 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 <!--ID: 1707050923689-->
 END%%
 
-%%ANKI
-Basic
-What interval expression repetition counts lead to undefined behavior?
-Back: Counts greater than `255`.
-Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
-<!--ID: 1707050923695-->
-END%%
-
 * `|` is the **alternation operator**. It allows specifying match alternatives.
 
 %%ANKI

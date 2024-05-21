@@ -825,8 +825,8 @@ END%%
 
 %%ANKI
 Basic
-What combination of source and destination types is prohibited in unary instructions?
-Back: A source and destination memory address.
+What source/destination types are permitted in unary instructions?
+Back: Registers and memory addresses.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1716125986904-->
 END%%
