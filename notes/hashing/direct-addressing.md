@@ -12,14 +12,6 @@ Given a universe of keys $U = \{0, 1, \ldots, m - 1\}$, a **direct-address table
 
 %%ANKI
 Basic
-With respect to hashing, what does the "universe" of keys refer to?
-Back: Every potential key that may be inserted into the underlying dictionary.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1716046153757-->
-END%%
-
-%%ANKI
-Basic
 Given universe $U$, how many slots must a direct-address table have?
 Back: $|U|$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -65,6 +57,14 @@ END%%
 
 %%ANKI
 Basic
+What is the worst-cast runtime complexity of direct-address table searches?
+Back: $O(1)$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716307180982-->
+END%%
+
+%%ANKI
+Basic
 Write pseudocode to insert $x$ into direct-address table `T[0:m-1]`.
 Back:
 ```c
@@ -78,6 +78,14 @@ END%%
 
 %%ANKI
 Basic
+What is the worst-case runtime complexity of direct-address table insertions?
+Back: $O(1)$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716307180983-->
+END%%
+
+%%ANKI
+Basic
 Write pseudocode to delete $x$ from direct-address table `T[0:m-1]`.
 Back:
 ```c
@@ -87,6 +95,30 @@ void delete(T, x) {
 ```
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1716046153789-->
+END%%
+
+%%ANKI
+Basic
+What is the worst-cast runtime complexity of direct-address table deletions?
+Back: $O(1)$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716307180984-->
+END%%
+
+%%ANKI
+Basic
+In what situation does direct addressing waste space?
+Back: When the number of keys used is much less than the size of the universe.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716307180986-->
+END%%
+
+%%ANKI
+Basic
+In what situation is direct addressing impossible?
+Back: When the size of the universe is too large to hold in memory.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716307180987-->
 END%%
 
 ## Bibliography

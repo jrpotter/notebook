@@ -359,6 +359,82 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1715900348153-->
 END%%
 
+### General Form
+
+For any set $A$, there exists a set $B$ whose elements are exactly the members of the members of $A$: $$\forall A, \exists B, \forall x, x \in B \Leftrightarrow (\exists b \in B, x \in b)$$
+
+%%ANKI
+Basic
+What does the union axiom (general form) state?
+Back: For any set $A$, there exists a set $B$ whose elements are exactly the members of the members of $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007845-->
+END%%
+
+%%ANKI
+Basic
+How is the union axiom (general form) expressed using first-order logic?
+Back: $$\forall A, \exists B, \forall x, x \in B \Leftrightarrow (\exists b \in B, x \in b)$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007849-->
+END%%
+
+%%ANKI
+Basic
+What advantage does the general form of the union axiom have over its prelimiary form?
+Back: The general form can handle infinite sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007851-->
+END%%
+
+%%ANKI
+Basic
+How is the preliminary form of the union axiom proven using the general form?
+Back: For any sets $a$ and $b$, $\bigcup \{a, b\} = a \cup b$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007853-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $\bigcup \{\{2, 4, 6\}, \{6, 16, 26\}, \{0\}\}$?
+Back: $\{2, 4, 6, 16, 26, 0\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007855-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $\bigcup \varnothing$?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007857-->
+END%%
+
+%%ANKI
+Basic
+How is $\bigcup A$ represented in first-order logic?
+Back: $\{x \mid \exists b \in A, x \in b\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007859-->
+END%%
+
+%%ANKI
+Basic
+Roughly speaking, how does $\bigcup A$ adjust as $A$ gets larger?
+Back: $\bigcup A$ gets larger.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007861-->
+END%%
+
+%%ANKI
+Basic
+If $A \subseteq B$, how do $\bigcup A$ and $\bigcup B$ relate?
+Back: $\bigcup A \subseteq \bigcup B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007864-->
+END%%
+
 ## Power Set Axiom
 
 For any set $a$, there is a set whose members are exactly the subsets of $a$: $$\forall a, \exists B, \forall x, (x \in B \Leftrightarrow x \subseteq a)$$
@@ -516,6 +592,68 @@ The subset axioms ensure we do not construct what kind of mathematical object?
 Back: Classes.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716074312909-->
+END%%
+
+%%ANKI
+Basic
+How is $\bigcap A$ represented in first-order logic?
+Back: $\{x \mid \forall b \in A, x \in b\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007866-->
+END%%
+
+%%ANKI
+Cloze
+{1:$\forall$} is to {2:$\bigcap$} whereas {2:$\exists$} is to {1:$\bigcup$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007868-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $\bigcap \{\{2, 4, 6\}, \{6, 16, 26\}, \{0\}\}$?
+Back: $\{6\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007870-->
+END%%
+
+%%ANKI
+Basic
+How does $\bigcap A$ adjust as $A$ gets larger?
+Back: $\bigcap A$ gets smaller.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007872-->
+END%%
+
+%%ANKI
+Basic
+If $A \subseteq B$, how do $\bigcap A$ and $\bigcap B$ relate?
+Back: $\bigcap B \subseteq \bigcap A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007874-->
+END%%
+
+%%ANKI
+Basic
+What class does $\bigcap \varnothing$ correspond to?
+Back: The class of all sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007876-->
+END%%
+
+%%ANKI
+Basic
+*Why* does $\bigcap \varnothing$ present a problem?
+Back: Every set $x$ is a member of every member of $\varnothing$ (vacuously).
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007878-->
+END%%
+
+%%ANKI
+Cloze
+{$\bigcap \varnothing$} is to set theory as {division by zero} is to arithmetic.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007881-->
 END%%
 
 ## Bibliography

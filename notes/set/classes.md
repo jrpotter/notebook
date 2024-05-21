@@ -138,6 +138,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1716237736487-->
 END%%
 
+%%ANKI
+Basic
+Why is "$x$ is an int definable in one line of type" an invalid entrance requirement?
+Back: Because this sentence cannot be expressed in predicate logic.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716309007883-->
+END%%
+
 ## Russell's Paradox
 
 Let $R = \{x \mid x \not\in x\}$. Then $R \in R \Leftrightarrow R \not\in R$.

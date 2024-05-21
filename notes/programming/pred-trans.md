@@ -313,14 +313,14 @@ Given command $S$ and predicates $Q$ and $R$, $$wp(S, Q \land R) = wp(S, Q) \lan
 Basic
 What does Distributivity of Conjunction state?
 Back: Given command $S$ and predicates $Q$ and $R$, $wp(S, Q \land R) = wp(S, Q) \land wp(S, R)$.
-Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715969047060-->
 END%%
 
 %%ANKI
 Cloze
 Distributivity of Conjunction states {$wp(S, Q \land R)$} $=$ {$wp(S, Q) \land wp(S, R)$}.
-Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715969047062-->
 END%%
 
@@ -328,7 +328,7 @@ END%%
 Basic
 In Gries's exposition, is Distributivity of Conjunction taken as an axiom or a theorem?
 Back: An axiom.
-Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715969047064-->
 END%%
 
@@ -336,7 +336,7 @@ END%%
 Basic
 Is $wp(S, Q) \land wp(S, R) \Rightarrow wp(S, Q \land R)$ true if $S$ is nondeterministic?
 Back: Yes.
-Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715969047065-->
 END%%
 
@@ -344,16 +344,8 @@ END%%
 Basic
 Is $wp(S, Q \land R) \Rightarrow wp(S, Q) \land wp(S, R)$ true if $S$ is nondeterministic?
 Back: Yes.
-Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715969047067-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for command $S$ to be nondeterministic?
-Back: Execution may not be the same even if begun in the same state.
-Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1715969047068-->
 END%%
 
 ### Law of Monotonicity
@@ -387,6 +379,129 @@ Is the Law of Monotonicity true if the relevant command is nondeterministic?
 Back: Yes.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716227332870-->
+END%%
+
+### Distributivity of Disjunction
+
+Given command $S$ and predicates $Q$ and $R$, $$wp(S, Q) \lor wp(S, R) \Rightarrow wp(S, Q \lor R)$$
+
+%%ANKI
+Basic
+What does Distributivity of Disjunction state?
+Back: Given command $S$ and predicates $Q$ and $R$, $wp(S, Q) \lor wp(S, R) \Rightarrow wp(S, Q \lor R)$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716310927694-->
+END%%
+
+%%ANKI
+Cloze
+Distributivity of Disjunction states {1:$wp(S, Q) \lor wp(S, r)$} $\Rightarrow$ {1:$wp(S, Q \lor R)$}.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716310927697-->
+END%%
+
+%%ANKI
+Basic
+In Gries's exposition, is Distributivity of Disjunction taken as an axiom or a theorem?
+Back: A theorem.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716310927698-->
+END%%
+
+%%ANKI
+Basic
+Is $wp(S, Q \lor R) \Rightarrow wp(S, Q) \lor wp(S, R)$ true if $S$ is nondeterministic?
+Back: No.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716310927700-->
+END%%
+
+%%ANKI
+Basic
+Is $wp(S, Q) \lor wp(S, R) \Rightarrow wp(S, Q \lor R)$ true if $S$ is nondeterministic?
+Back: Yes.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716310927701-->
+END%%
+
+%%ANKI
+Basic
+Is $wp(S, Q \lor R) \Rightarrow wp(S, Q) \lor wp(S, R)$ true if $S$ is deterministic?
+Back: Yes.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716310927703-->
+END%%
+
+%%ANKI
+Basic
+Is $wp(S, Q) \lor wp(S, R) \Rightarrow wp(S, Q \lor R)$ true if $S$ is deterministic?
+Back: Yes.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716310927710-->
+END%%
+
+%%ANKI
+Basic
+What command does Gries use to demonstrate nondeterminism?
+Back: The flipping of a coin.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716310927712-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for command $S$ to be nondeterministic?
+Back: Execution may not be the same even if begun in the same state.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1715969047068-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ flip a coin and $Q$ be flipping heads. What is $wp(S, Q)$?
+Back: $F$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716310927713-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ flip a coin and $Q$ be flipping tails. What is $wp(S, Q)$?
+Back: $F$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716310927715-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ flip a coin, $Q$ be flipping heads, and $R$ be flipping tails. What is $wp(S, Q \lor R)$?
+Back: $T$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716310927716-->
+END%%
+
+%%ANKI
+Basic
+What determines the direction of implication in Distributivity of Disjunction?
+Back: $F \Rightarrow T$ evaluates truthily but $T \Rightarrow F$ does not.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716310927718-->
+END%%
+
+%%ANKI
+Basic
+*Why* does Distributivity of Disjunction use an implication instead of equality?
+Back: Because the underlying command may be nondeterministic.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716311034191-->
+END%%
+
+%%ANKI
+Basic
+*When* does Distributivity of Disjunction hold under equality (instead of implication)?
+Back: When the underlying command is deterministic.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716311034194-->
 END%%
 
 ## Bibliography
