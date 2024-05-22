@@ -328,7 +328,7 @@
     "_journal/2024-03-22.md": "8da8cda07d3de74f7130981a05dce254",
     "_journal/2024-03/2024-03-21.md": "cd465f71800b080afa5c6bdc75bf9cd3",
     "x86-64/declarations.md": "75bc7857cf2207a40cd7f0ee056af2f2",
-    "x86-64/instructions.md": "f463916644562db3160a24fad233eb25",
+    "x86-64/instructions.md": "ceb9709b7fb4155a36b6f504f0079c58",
     "git/refs.md": "e20c2c9b14ba6c2bd235416017c5c474",
     "set/trees.md": "c29347ec0ac2e8d5339514c869ecaedf",
     "_journal/2024-03-24.md": "1974cdb9fc42c3a8bebb8ac76d4b1fd6",
@@ -455,7 +455,9 @@
     "_journal/2024-05-20.md": "d58a4ecd3bf9621cbe688f043be61239",
     "_journal/2024-05/2024-05-19.md": "fc14fc23d4ddca3628df7eec71a07e27",
     "_journal/2024-05-21.md": "7028d18a55f0a1f65dc0753af431ca42",
-    "_journal/2024-05/2024-05-20.md": "d58a4ecd3bf9621cbe688f043be61239"
+    "_journal/2024-05/2024-05-20.md": "d58a4ecd3bf9621cbe688f043be61239",
+    "_journal/2024-05-22.md": "165219ce7638e30ade424f6c32bb17ff",
+    "_journal/2024-05/2024-05-21.md": "f20e4dd94ea22fcb26049de128bc944e"
   },
   "fields_dict": {
     "Basic": [

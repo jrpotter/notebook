@@ -889,7 +889,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`NEG`} instruction class is to x86-64 whereas the {`-`} operator is to C.
+The {`NEG`} instruction class is to x86-64 whereas the {`-`} *unary* operator is to C.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1716126147801-->
@@ -920,11 +920,10 @@ Tags: c17
 END%%
 
 %%ANKI
-Basic
-What distinguishes the `NEG` and `NOT` instruction classes?
-Back: The former negates, the latter complements.
+Cloze
+{1:`NEG`} is to {2:negation} whereas {2:`NOT`} is to {1:complement}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1716125986919-->
+<!--ID: 1716381321937-->
 END%%
 
 ### Binary Operations
