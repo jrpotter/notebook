@@ -129,7 +129,11 @@
     "graph-subgraph.png",
     "graph-non-subgraph.png",
     "lcrs-nodes.png",
-    "binary-tree-nodes.png"
+    "binary-tree-nodes.png",
+    "venn-diagram-union.png",
+    "venn-diagram-intersection.png",
+    "venn-diagram-rel-comp.png",
+    "venn-diagram-abs-comp.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -258,7 +262,7 @@
     "_journal/2024-02/2024-02-27.md": "f75a0d04a875aeee932343dae0c78768",
     "filesystems/index.md": "cbd2b0290a3ba3b32abec4bd8bfefad5",
     "filesystems/cas.md": "d41c0d2e943adecbadd10a03fd1e4274",
-    "git/objects.md": "8c1da67ac3f568624c3f9623eb2133e1",
+    "git/objects.md": "4ad7a2ab275b5573055ea0433be1e4d7",
     "git/index.md": "ca842957bda479dfa1170ae85f2f37b8",
     "encoding/integer.md": "ab0db8d48734867d42279fb2f2362d25",
     "_journal/2024-02-29.md": "f610f3caed659c1de3eed5f226cab508",
@@ -309,7 +313,7 @@
     "_journal/2024-03-18.md": "8479f07f63136a4e16c9cd07dbf2f27f",
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
-    "set/index.md": "83f21533067c58ada1222a1c53ebbe8a",
+    "set/index.md": "67d869ecf287867199e197b3a7269c52",
     "set/graphs.md": "4bbcea8f5711b1ae26ed0026a4a69800",
     "_journal/2024-03-19.md": "a0807691819725bf44c0262405e97cbb",
     "_journal/2024-03/2024-03-18.md": "63c3c843fc6cfc2cd289ac8b7b108391",
@@ -456,8 +460,9 @@
     "_journal/2024-05/2024-05-19.md": "fc14fc23d4ddca3628df7eec71a07e27",
     "_journal/2024-05-21.md": "7028d18a55f0a1f65dc0753af431ca42",
     "_journal/2024-05/2024-05-20.md": "d58a4ecd3bf9621cbe688f043be61239",
-    "_journal/2024-05-22.md": "165219ce7638e30ade424f6c32bb17ff",
-    "_journal/2024-05/2024-05-21.md": "f20e4dd94ea22fcb26049de128bc944e"
+    "_journal/2024-05-22.md": "da0364a086746087236eb8afd5770ca3",
+    "_journal/2024-05/2024-05-21.md": "f20e4dd94ea22fcb26049de128bc944e",
+    "set/algebra.md": "a6877ceca952c417b52ea637716addbf"
   },
   "fields_dict": {
     "Basic": [

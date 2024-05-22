@@ -359,6 +359,15 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1715900348153-->
 END%%
 
+%%ANKI
+Basic
+What set operation is shaded green in the following venn diagram?
+![[venn-diagram-union.png]]
+Back: $A \cup B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716395245855-->
+END%%
+
 ### General Form
 
 For any set $A$, there exists a set $B$ whose elements are exactly the members of the members of $A$: $$\forall A, \exists B, \forall x, x \in B \Leftrightarrow (\exists b \in B, x \in b)$$
@@ -433,6 +442,54 @@ If $A \subseteq B$, how do $\bigcup A$ and $\bigcup B$ relate?
 Back: $\bigcup A \subseteq \bigcup B$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716309007864-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical object is the absolute complement of set $A$?
+Back: A class.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716395245860-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical object is the relative complement of set $B$ in $A$?
+Back: A set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716395245862-->
+END%%
+
+%%ANKI
+Cloze
+{1:Classes} are to {2:absolute} complements whereas {2:sets} are to {1:relative} complements.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716395245866-->
+END%%
+
+%%ANKI
+Basic
+What contradiction arises when arguing the absolute complement of set $A$ is a set? 
+Back: The union of the complement with $A$ is the *class* of all sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716395245868-->
+END%%
+
+%%ANKI
+Basic
+Why is the absolute complement of sets rarely useful in set theory?
+Back: The absolute complement of a set isn't a set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716395245870-->
+END%%
+
+%%ANKI
+Basic
+What set operation is shaded green in the following venn diagram?
+![[venn-diagram-abs-comp.png]]
+Back: The absolute complement of $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716397645564-->
 END%%
 
 ## Power Set Axiom
@@ -654,6 +711,24 @@ Cloze
 {$\bigcap \varnothing$} is to set theory as {division by zero} is to arithmetic.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716309007881-->
+END%%
+
+%%ANKI
+Basic
+What set operation is shaded green in the following venn diagram?
+![[venn-diagram-intersection.png]]
+Back: $A \cap B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716395245873-->
+END%%
+
+%%ANKI
+Basic
+What set operation is shaded green in the following venn diagram?
+![[venn-diagram-rel-comp.png]]
+Back: $A - B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716395245875-->
 END%%
 
 ## Bibliography

@@ -517,6 +517,30 @@ Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Soft
 <!--ID: 1709674569928-->
 END%%
 
+%%ANKI
+Basic
+How many parents does an initial commit have?
+Back: Zero.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1716397645567-->
+END%%
+
+%%ANKI
+Basic
+How many parents does a "normal" commit have?
+Back: One.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1716397645568-->
+END%%
+
+%%ANKI
+Basic
+How many parents does a "merge" commit have?
+Back: Two or more.
+Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
+<!--ID: 1716397645570-->
+END%%
+
 ## Tags
 
 Tags are (possibly indirect) pointers to a git object. They *usually* point to a commit but aren't required to. There are two types of tags:
