@@ -332,7 +332,7 @@
     "_journal/2024-03-22.md": "8da8cda07d3de74f7130981a05dce254",
     "_journal/2024-03/2024-03-21.md": "cd465f71800b080afa5c6bdc75bf9cd3",
     "x86-64/declarations.md": "75bc7857cf2207a40cd7f0ee056af2f2",
-    "x86-64/instructions.md": "ceb9709b7fb4155a36b6f504f0079c58",
+    "x86-64/instructions.md": "c9ae5dedaa22fbcdc486663877fc1c1e",
     "git/refs.md": "e20c2c9b14ba6c2bd235416017c5c474",
     "set/trees.md": "c29347ec0ac2e8d5339514c869ecaedf",
     "_journal/2024-03-24.md": "1974cdb9fc42c3a8bebb8ac76d4b1fd6",
@@ -423,7 +423,7 @@
     "_journal/2024-05/2024-05-04.md": "866af1876896a343e7a7d9d09d0c24bb",
     "data-structures/intrusive.md": "e43c435136c5de92a094e4e49af9f436",
     "data-structures/linked-lists.md": "a68e7709791e449bee7875ad9680dd96",
-    "data-structures/arrays.md": "bb6b8609d16f9f2565d5238c0f9b8566",
+    "data-structures/arrays.md": "5c320855d1955e897820053a7c3c065b",
     "abstract-data-types/stacks.md": "d4324db19a88211dc6bf4f0e56c74cec",
     "abstract-data-types/queues.md": "db668234b6c6051635321730b7176dcb",
     "_journal/2024-05-12.md": "ca9f3996272152ef89924bb328efd365",
@@ -452,7 +452,7 @@
     "_journal/2024-05-18.md": "c0b58b28f84b31cea91404f43b0ee40c",
     "hashing/direct-addressing.md": "7ffaa27c01130d21aa32cf3b1c407785",
     "hashing/index.md": "c870cf66e0224db58315ac0ba43b9cb1",
-    "set/classes.md": "bd3821b98c0893e1e13c06ff4def81ca",
+    "set/classes.md": "18a09731868070e0c24a42bf0f582619",
     "_journal/2024-05-19.md": "fddd90fae08fab9bd83b0ef5d362c93a",
     "_journal/2024-05/2024-05-18.md": "c0b58b28f84b31cea91404f43b0ee40c",
     "_journal/2024-05/2024-05-17.md": "fb880d68077b655ede36d994554f3aba",
@@ -460,9 +460,10 @@
     "_journal/2024-05/2024-05-19.md": "fc14fc23d4ddca3628df7eec71a07e27",
     "_journal/2024-05-21.md": "7028d18a55f0a1f65dc0753af431ca42",
     "_journal/2024-05/2024-05-20.md": "d58a4ecd3bf9621cbe688f043be61239",
-    "_journal/2024-05-22.md": "da0364a086746087236eb8afd5770ca3",
+    "_journal/2024-05-22.md": "5b4473b7c6483f3aa8727ad0a12f0408",
     "_journal/2024-05/2024-05-21.md": "f20e4dd94ea22fcb26049de128bc944e",
-    "set/algebra.md": "a6877ceca952c417b52ea637716addbf"
+    "set/algebra.md": "a6877ceca952c417b52ea637716addbf",
+    "_journal/2024-05-23.md": "a615207d43991ed0fa09fe0d913567b9"
   },
   "fields_dict": {
     "Basic": [

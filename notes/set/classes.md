@@ -336,14 +336,6 @@ END%%
 
 %%ANKI
 Basic
-Let $B = \{x \in A \mid x \not\in x\}$. What biconditional proves $B \in A$?
-Back: N/A.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716237736510-->
-END%%
-
-%%ANKI
-Basic
 Which paradox is used in the proof of "no set contains all sets"?
 Back: Russell's paradox.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

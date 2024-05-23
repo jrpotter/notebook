@@ -81,7 +81,7 @@ END%%
 
 %%ANKI
 Basic
-What is the runtime of prepending an element to a large enough array?
+What is the runtime of prepending an element to an array (assuming capacity)?
 Back: $O(n)$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1715534735214-->

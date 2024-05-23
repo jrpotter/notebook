@@ -1144,7 +1144,7 @@ END%%
 
 %%ANKI
 Basic
-Which register are shift operations limited to?
+Which register do shift operations refer to?
 Back: `%cl`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1716226827740-->
