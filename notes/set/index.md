@@ -134,6 +134,45 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1715786028667-->
 END%%
 
+%%ANKI
+Basic
+What does an atom refer to in set theory?
+Back: Any entity that is not a set but can exist in one.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716494526269-->
+END%%
+
+%%ANKI
+Cloze
+An {1:atom} in set theory is to {2:atomic} logical statements whereas {2:sets} are to {1:molecular} statements.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716494526273-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes a set from an atom?
+Back: An atom cannot contain other entitites.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716494526277-->
+END%%
+
+%%ANKI
+Basic
+What intuition is broken when a box is viewed as an atom?
+Back: When viewed as an atom, the box is no longer a container.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716494526280-->
+END%%
+
+%%ANKI
+Basic
+Enderton's exposition makes what assumption about atoms?
+Back: The set of all atoms is the empty set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716494526284-->
+END%%
+
 ## Extensionality
 
 If two sets have exactly the same members, then they are equal: $$\forall A, \forall B, (x \in A \Leftrightarrow x \in B) \Rightarrow A = B$$

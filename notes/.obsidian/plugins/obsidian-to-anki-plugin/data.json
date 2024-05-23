@@ -313,7 +313,7 @@
     "_journal/2024-03-18.md": "8479f07f63136a4e16c9cd07dbf2f27f",
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
-    "set/index.md": "67d869ecf287867199e197b3a7269c52",
+    "set/index.md": "6677229fea638f06e473b47aee1cd57a",
     "set/graphs.md": "4bbcea8f5711b1ae26ed0026a4a69800",
     "_journal/2024-03-19.md": "a0807691819725bf44c0262405e97cbb",
     "_journal/2024-03/2024-03-18.md": "63c3c843fc6cfc2cd289ac8b7b108391",
@@ -460,10 +460,12 @@
     "_journal/2024-05/2024-05-19.md": "fc14fc23d4ddca3628df7eec71a07e27",
     "_journal/2024-05-21.md": "7028d18a55f0a1f65dc0753af431ca42",
     "_journal/2024-05/2024-05-20.md": "d58a4ecd3bf9621cbe688f043be61239",
-    "_journal/2024-05-22.md": "5b4473b7c6483f3aa8727ad0a12f0408",
+    "_journal/2024-05-22.md": "da0364a086746087236eb8afd5770ca3",
     "_journal/2024-05/2024-05-21.md": "f20e4dd94ea22fcb26049de128bc944e",
     "set/algebra.md": "a6877ceca952c417b52ea637716addbf",
-    "_journal/2024-05-23.md": "a615207d43991ed0fa09fe0d913567b9"
+    "programming/λ-Calculus.md": "678d665f0c783a47d33b659a6980804b",
+    "_journal/2024-05-23.md": "8b614b7fb2ed72a0372756a576238439",
+    "_journal/2024-05/2024-05-22.md": "5b4473b7c6483f3aa8727ad0a12f0408"
   },
   "fields_dict": {
     "Basic": [
