@@ -422,7 +422,7 @@ END%%
 %%ANKI
 Basic
 How is the union axiom (general form) expressed using first-order logic?
-Back: $$\forall A, \exists B, \forall x, x \in B \Leftrightarrow (\exists b \in B, x \in b)$$
+Back: $$\forall A, \exists B, \forall x, x \in B \Leftrightarrow (\exists a \in A, x \in a)$$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716309007849-->
 END%%
@@ -462,7 +462,7 @@ END%%
 %%ANKI
 Basic
 How is $\bigcup A$ represented in first-order logic?
-Back: $\{x \mid \exists b \in A, x \in b\}$
+Back: $\{x \mid \exists a \in A, x \in a\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716309007859-->
 END%%

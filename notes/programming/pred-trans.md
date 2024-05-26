@@ -410,7 +410,7 @@ END%%
 
 %%ANKI
 Basic
-Is $wp(S, Q \lor R) \Rightarrow wp(S, Q) \lor wp(S, R)$ true if $S$ is nondeterministic?
+Assuming $S$ is nondeterministic, is the following a tautology? $$wp(S, Q \lor R) \Rightarrow wp(S, Q) \lor wp(S, R)$$
 Back: No.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716310927700-->
@@ -418,7 +418,7 @@ END%%
 
 %%ANKI
 Basic
-Is $wp(S, Q) \lor wp(S, R) \Rightarrow wp(S, Q \lor R)$ true if $S$ is nondeterministic?
+Assuming $S$ is nondeterministic, is the following a tautology? $$wp(S, Q) \lor wp(S, R) \Rightarrow wp(S, Q \lor R)$$
 Back: Yes.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716310927701-->
@@ -426,7 +426,7 @@ END%%
 
 %%ANKI
 Basic
-Is $wp(S, Q \lor R) \Rightarrow wp(S, Q) \lor wp(S, R)$ true if $S$ is deterministic?
+Assuming $S$ is deterministic, is the following a tautology? $$wp(S, Q \lor R) \Rightarrow wp(S, Q) \lor wp(S, R)$$
 Back: Yes.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716310927703-->
@@ -434,7 +434,7 @@ END%%
 
 %%ANKI
 Basic
-Is $wp(S, Q) \lor wp(S, R) \Rightarrow wp(S, Q \lor R)$ true if $S$ is deterministic?
+Assuming $S$ is deterministic, is the following a tautology? $$wp(S, Q) \lor wp(S, R) \Rightarrow wp(S, Q \lor R)$$
 Back: Yes.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716310927710-->
@@ -482,7 +482,7 @@ END%%
 
 %%ANKI
 Basic
-What determines the direction of implication in Distributivity of Disjunction?
+What constant operand evaluations determine the direction of implication in Distributivity of Disjunction?
 Back: $F \Rightarrow T$ evaluates truthily but $T \Rightarrow F$ does not.
 Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716310927718-->

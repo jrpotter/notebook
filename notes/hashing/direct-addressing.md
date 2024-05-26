@@ -108,7 +108,7 @@ END%%
 %%ANKI
 Basic
 In what situation does direct addressing waste space?
-Back: When the number of keys used is much less than the size of the universe.
+Back: When the number of keys used is less than the size of the universe.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1716307180986-->
 END%%

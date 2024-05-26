@@ -71,6 +71,14 @@ END%%
 
 %%ANKI
 Basic
+*Why* isn't `SELECTION_SORT` stable?
+Back: The current element of an iteration is potentially swapped into an unstable position.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716632860458-->
+END%%
+
+%%ANKI
+Basic
 Is `SELECTION_SORT` adaptive?
 Back: No.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
