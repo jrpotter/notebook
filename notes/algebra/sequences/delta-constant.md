@@ -18,7 +18,7 @@ A sequence is said to be **$\Delta^k$-constant** if the $k$th differences are co
 
 > The closed formula for a sequence will be a degree $k$ polynomial if and only if the sequence is $\Delta^k$-constant.
 
-This is the discrete analogue to (continuous) derivatives of polynomials.
+This is the discrete analog to (continuous) derivatives of polynomials.
 
 %%ANKI
 Basic
@@ -77,7 +77,7 @@ END%%
 
 %%ANKI
 Basic
-$\Delta^k$-constant sequences are a discrete analogue to what calculus concept?
+$\Delta^k$-constant sequences are a discrete analog to what calculus concept?
 Back: Derivatives.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 Tags: calculus

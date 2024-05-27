@@ -115,6 +115,79 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1716396060625-->
 END%%
 
+### Distributive Laws
+
+For any sets $A$, $B$, and $C$, $$\begin{align*} A \cap (B \cup C) & = (A \cap B) \cup (A \cap C) \\ A \cup (B \cap C) & = (A \cup B) \cap (A \cup C) \end{align*}$$
+
+%%ANKI
+Basic
+The distributive laws of the algebra of sets apply to what operators?
+Back: $\cup$ and $\cap$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716803270441-->
+END%%
+
+%%ANKI
+Cloze
+The distributive law states {$A \cap (B \cup C)$} $=$ {$(A \cap B) \cup (A \cap C)$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716803270447-->
+END%%
+
+%%ANKI
+Cloze
+The distributive law states {$A \cup (B \cap C)$} $=$ {$(A \cup B) \cap (A \cup C)$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716803270452-->
+END%%
+
+### De Morgan's Laws
+
+For any sets $A$, $B$, and $C$, $$\begin{align*} C - (A \cup B) & = (C - A) \cap (C - B) \\ C - (A \cap B) & = (C - A) \cup (C - B) \end{align*}$$
+
+%%ANKI
+Basic
+The De Morgan's laws of the algebra of sets apply to what operators?
+Back: $\cup$, $\cap$, and $-$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716803270457-->
+END%%
+
+%%ANKI
+Cloze
+De Morgan's law states that {$C - (A \cup B)$} $=$ {$(C - A) \cap (C - B)$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716803270461-->
+END%%
+
+%%ANKI
+Cloze
+De Morgan's law states that {$C - (A \cap B)$} $=$ {$(C - A) \cup (C - B)$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716803270466-->
+END%%
+
+%%ANKI
+Cloze
+For their respective De Morgan's laws, {$-$} is to the algebra of sets whereas {$\neg$} is to boolean algebra.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716803270473-->
+END%%
+
+%%ANKI
+Cloze
+For their respective De Morgan's laws, {$\cup$} is to the algebra of sets whereas {$\lor$} is to boolean algebra.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716803270480-->
+END%%
+
+%%ANKI
+Cloze
+For their respective De Morgan's laws, {$\cap$} is to the algebra of sets whereas {$\land$} is to boolean algebra.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716803270485-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

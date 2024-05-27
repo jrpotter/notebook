@@ -125,7 +125,7 @@ END%%
 
 %%ANKI
 Basic
-What polygonal sequence is the summation analogue of factorial?
+What polygonal sequence is the summation analog of factorial?
 Back: The triangular numbers.
 Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
 <!--ID: 1709419325918-->

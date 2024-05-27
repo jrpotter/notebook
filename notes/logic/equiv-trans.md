@@ -367,7 +367,7 @@ END%%
 %%ANKI
 Basic
 How is e.g. the Law of Implication proven in the system of evaluation?
-Back: With truth tables
+Back: With truth tables.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707316178714-->
 END%%

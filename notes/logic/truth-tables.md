@@ -87,6 +87,38 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707311869003-->
 END%%
 
+%%ANKI
+Basic
+What analog to truth tables is found in the algebra of sets?
+Back: Membership tables.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716803633023-->
+END%%
+
+%%ANKI
+Cloze
+{Truth} tables are to propositions whereas {membership} tables are to set identities.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716803633029-->
+END%%
+
+%%ANKI
+Basic
+How many rows are in the truth table of identity $\neg (a \Rightarrow b) \Leftrightarrow c$?
+Back: $2^3 = 8$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716803798112-->
+END%%
+
+%%ANKI
+Basic
+How many rows are in the membership table of identity $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$?
+Back: $2^3 = 8$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716803798123-->
+END%%
+
 ## Bibliography
 
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+* Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
