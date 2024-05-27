@@ -202,7 +202,7 @@
     "_journal/2024-02/2024-02-10.md": "562b01f60ea36a3c78181e39b1c02b9f",
     "_journal/2024-02-11.md": "afee9f502b61e17de231cf2f824fbb32",
     "binary/endianness.md": "63117fe7795e2a10cb2eb7843a089d9d",
-    "logic/normal-form.md": "6fa46165cbbed5d312e0621f98d21f55",
+    "logic/normal-form.md": "389c3a4cf2d924642f21194d78c211e0",
     "_journal/2024-02-12.md": "240d17f356305de9c0c00282b2931acd",
     "_journal/2024-02/2024-02-11.md": "afee9f502b61e17de231cf2f824fbb32",
     "encoding/ascii.md": "34350e7b5a4109bcd21f9f411fda0dbe",
@@ -313,7 +313,7 @@
     "_journal/2024-03-18.md": "8479f07f63136a4e16c9cd07dbf2f27f",
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
-    "set/index.md": "87f04456ea94ca2d06514f98101fa39a",
+    "set/index.md": "4a190fea888f896f6784f350216cdf46",
     "set/graphs.md": "4bbcea8f5711b1ae26ed0026a4a69800",
     "_journal/2024-03-19.md": "a0807691819725bf44c0262405e97cbb",
     "_journal/2024-03/2024-03-18.md": "63c3c843fc6cfc2cd289ac8b7b108391",
@@ -436,7 +436,7 @@
     "_journal/2024-05-13.md": "71eb7924653eed5b6abd84d3a13b532b",
     "_journal/2024-05/2024-05-12.md": "ca9f3996272152ef89924bb328efd365",
     "git/remotes.md": "2208e34b3195b6f1ec041024a66fb38b",
-    "programming/pred-trans.md": "c3039011d2ec6f968cd0c759cbc4b2e6",
+    "programming/pred-trans.md": "24fb4b8d8137626dcacbc02c9ecd07a1",
     "set/axioms.md": "063955bf19c703e9ad23be2aee4f1ab7",
     "_journal/2024-05-14.md": "f6ece1d6c178d57875786f87345343c5",
     "_journal/2024-05/2024-05-13.md": "71eb7924653eed5b6abd84d3a13b532b",
@@ -472,10 +472,11 @@
     "_journal/2024-05/2024-05-23.md": "d0c98b484b1def3a9fd7262dcf2050ad",
     "_journal/2024-05-26.md": "3b95f86726d646f157ebe2ae55e2afda",
     "_journal/2024-05/2024-05-25.md": "3e8a0061fa58a6e5c48d12800d1ab869",
-    "_journal/2024-05-27.md": "825a4bc24833f955581fb5949ec79a4e",
+    "_journal/2024-05-27.md": "b36636d10eab34380f17f288868df3ae",
     "_journal/2024-05/2024-05-26.md": "abe84b5beae74baa25501c818e64fc95",
     "algebra/set.md": "d7b4c7943f3674bb152389f4bef1a234",
-    "algebra/boolean.md": "56d2e0be2853d49b5dface7fa2d785a9"
+    "algebra/boolean.md": "56d2e0be2853d49b5dface7fa2d785a9",
+    "git/merge-conflicts.md": "cb7d4d373639f75f6647be60f3fe97f3"
   },
   "fields_dict": {
     "Basic": [

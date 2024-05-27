@@ -144,9 +144,16 @@ END%%
 
 %%ANKI
 Cloze
-An {1:atom} in set theory is to {2:atomic} logical statements whereas {2:sets} are to {1:molecular} statements.
+An {atom} is to set theory as an {atomic} logical statement is to propositional logic. 
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716494526273-->
+<!--ID: 1716807316136-->
+END%%
+
+%%ANKI
+Cloze
+A {set} is to set theory as a {2:molecular} logical statement is to propositional logic. 
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1716807316144-->
 END%%
 
 %%ANKI
@@ -167,8 +174,8 @@ END%%
 
 %%ANKI
 Basic
-Enderton's exposition makes what assumption about atoms?
-Back: The set of all atoms is the empty set.
+Enderton's exposition makes what assumption about the set of all atoms?
+Back: It is the empty set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716494526284-->
 END%%
@@ -255,7 +262,7 @@ END%%
 %%ANKI
 Basic
 What two properties ensures definition $\varnothing$ is well-defined?
-Back: The empty set exists and is unique.
+Back: Existence and uniqueness.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1715688034312-->
 END%%

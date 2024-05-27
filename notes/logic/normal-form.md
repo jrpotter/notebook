@@ -25,7 +25,7 @@ END%%
 %%ANKI
 Basic
 What zero-order logical normal form(s) have only $\land$ and $\lor$ operators?
-Back: CNF and DNF
+Back: CNF and DNF.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707675369145-->
 END%%

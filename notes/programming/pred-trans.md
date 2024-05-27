@@ -484,7 +484,7 @@ END%%
 Basic
 What constant operand evaluations determine the direction of implication in Distributivity of Disjunction?
 Back: $F \Rightarrow T$ evaluates truthily but $T \Rightarrow F$ does not.
-Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716310927718-->
 END%%
 
@@ -492,7 +492,7 @@ END%%
 Basic
 *Why* does Distributivity of Disjunction use an implication instead of equality?
 Back: Because the underlying command may be nondeterministic.
-Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716311034191-->
 END%%
 
@@ -500,8 +500,96 @@ END%%
 Basic
 *When* does Distributivity of Disjunction hold under equality (instead of implication)?
 Back: When the underlying command is deterministic.
-Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716311034194-->
+END%%
+
+## Commands
+
+### skip
+
+For any predicate $R$, $wp(skip, R) = R$.
+
+%%ANKI
+Basic
+How is the $skip$ command defined?
+Back: As $wp(skip, R) = R$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716810300099-->
+END%%
+
+%%ANKI
+Basic
+Which command does Gries call the "identity transformation"?
+Back: $skip$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716810300109-->
+END%%
+
+%%ANKI
+Cloze
+Provide the specific command: for any predicate $R$, $wp(${$skip$}$, R) = R$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716810300113-->
+END%%
+
+### abort
+
+For any predicate $R$, $wp(abort, R) = F$.
+
+%%ANKI
+Basic
+How is the $abort$ command defined?
+Back: As $wp(abort, R) = F$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716810300116-->
+END%%
+
+%%ANKI
+Cloze
+Provide the specific command: for any predicate $R$, $wp(${$abort$}$, R) = F$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716810300119-->
+END%%
+
+%%ANKI
+Basic
+How is the $abort$ command executed?
+Back: It isn't.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716810300126-->
+END%%
+
+%%ANKI
+Basic
+*Why* can't the $abort$ command be executed?
+Back: Because it terminates in state $F$ which is impossible.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716810300129-->
+END%%
+
+%%ANKI
+Basic
+Which command does Gries introduce as the only whose predicate transformer is "constant"?
+Back: $abort$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716810300133-->
+END%%
+
+%%ANKI
+Basic
+*Why* is $abort$ considered the only "constant" predicate transformer?
+Back: The Law of the Excluded Miracle ensures $wp(S, F) = F$ for any other commands $S$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716810300137-->
+END%%
+
+%%ANKI
+Basic
+Consider $makeTrue$ defined as $wp(makeTrue, R) = T$ for all predicates $R$. What's wrong?
+Back: If $R = F$, $makeTrue$ violates the Law of the Excluded Miracle.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1716810300145-->
 END%%
 
 ## Bibliography
