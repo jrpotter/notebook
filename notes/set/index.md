@@ -182,7 +182,7 @@ END%%
 
 ## Extensionality
 
-If two sets have exactly the same members, then they are equal: $$\forall A, \forall B, (x \in A \Leftrightarrow x \in B) \Rightarrow A = B$$
+If two sets have exactly the same members, then they are equal: $$\forall A, \forall B, (\forall x, x \in A \Leftrightarrow x \in B) \Rightarrow A = B$$
 %%ANKI
 Basic
 What does the extensionality axiom state?
@@ -194,14 +194,14 @@ END%%
 %%ANKI
 Basic
 How is the extensionality axiom expressed using first-order logic?
-Back: $$\forall A, \forall B, (x \in A \Leftrightarrow x \in B) \Rightarrow A = B$$
+Back: $$\forall A, \forall B, (\forall x, x \in A \Leftrightarrow x \in B) \Rightarrow A = B$$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1715649734312-->
 END%%
 
 %%ANKI
 Basic
-The following encodes which set theory axiom? $$\forall A, \forall B, (x \in A \Leftrightarrow x \in B) \Rightarrow A = B$$
+The following encodes which set theory axiom? $$\forall A, \forall B, (\forall x, x \in A \Leftrightarrow x \in B) \Rightarrow A = B$$
 Back: The extensionality axiom.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1715649069254-->

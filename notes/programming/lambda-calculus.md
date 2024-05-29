@@ -145,7 +145,7 @@ END%%
 
 %%ANKI
 Basic
-What term refers to the inductive cases of the $\lambda$-term definition?
+What terms refer to the inductive cases of the $\lambda$-term definition?
 Back: Application and abstraction.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716494526337-->
@@ -198,14 +198,6 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 END%%
 
 %%ANKI
-Basic
-How is expression $MNPQ$ written with parentheses reintroduced?
-Back: $(((MN)P)Q)$
-Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
-<!--ID: 1716498992520-->
-END%%
-
-%%ANKI
 Cloze
 By convention, parentheses in $\lambda$-calculus are {left}-associative.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
@@ -218,13 +210,6 @@ How is expression $\lambda x. \lambda y. MN$ written with parentheses reintroduc
 Back: $(\lambda x. (\lambda y. (MN)))$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716498992530-->
-END%%
-
-%%ANKI
-Cloze
-Expression $(MN)$ is interpreted as applying {$M$} to {$N$}.
-Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
-<!--ID: 1716498992534-->
 END%%
 
 %%ANKI
@@ -398,7 +383,7 @@ END%%
 %%ANKI
 Basic
 What preprocessing step does Hindley et al. recommend when counting occurrences of $\lambda$-terms?
-Back: Reintroduce parentheses in the top-level term.
+Back: Reintroduce parentheses.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716743248127-->
 END%%
@@ -423,7 +408,7 @@ END%%
 %%ANKI
 Basic
 What is the scope of the leftmost $\lambda y$ in the following term? $$(\lambda y. yx(\lambda x. y(\lambda y.z)x))vw$$
-Back: $yx(\lambda x. y(\lambda y. z)x))vw$
+Back: $yx(\lambda x. y(\lambda y. z)x)$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016002-->
 END%%
@@ -462,7 +447,7 @@ $FV(P)$ denotes the set of all free variables of $P$. A **closed term** is a ter
 
 %%ANKI
 Basic
-What kind of $\lambda$-terms are considered bound or free?
+What kind of $\lambda$-terms can be classified as bound and/or free?
 Back: Variables.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016008-->

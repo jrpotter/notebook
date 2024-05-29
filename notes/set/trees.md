@@ -1477,7 +1477,7 @@ Basic
 How should the nil constructor of an inductive binary tree, say `Tree`, be defined?
 Back:
 ```lean
-| constructor : Tree α
+| nil : Tree α
 ```
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: lean
@@ -1489,7 +1489,7 @@ Basic
 How should the non-nil constructor of an inductive binary tree, say `Tree`, be defined?
 Back:
 ```lean
-| constructor : α → Tree α → Tree α → Tree α
+| node : α → Tree α → Tree α → Tree α
 ```
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: lean

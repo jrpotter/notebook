@@ -128,7 +128,7 @@ END%%
 %%ANKI
 Basic
 *Why* is $\{T\}\; \text{while }T\text{ do skip}\; \{T\}$ everywhere false?
-Back: Because $\text{while }T\text{ do skip}$ never terminates.
+Back: Because "$\text{while }T\text{ do skip}$" never terminates.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715631869132-->
 END%%

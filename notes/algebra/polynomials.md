@@ -14,8 +14,8 @@ The coefficients of $p(n)$ are $a_0, a_1, \ldots, a_d$. Furthermore, $a_d \neq 0
 
 %%ANKI
 Basic
-Using sigma notation, a polynomial in $n$ of degree $d$ is a function of what form?
-Back: $p(n) = \sum_{i=0}^d a_in^i$ where $a_d \neq 0$.
+Using sigma notation, a polynomial $p(n)$ in $n$ of degree $d$ is a function of what form?
+Back: $p(n) = \sum_{k=0}^d a_kn^k$ where $a_d \neq 0$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1713580808758-->
 END%%
