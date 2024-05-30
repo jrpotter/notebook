@@ -596,6 +596,128 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1716745016034-->
 END%%
 
+## Substitution
+
+For any $M$, $N$, and $x$, define $[N/x]M$ to be the result of substituting $N$ for every free occurrence of $x$ in $M$, and changing bound variables to avoid clashes.
+
+%%ANKI
+Basic
+How is $E_e^x$ equivalently written in $\lambda$-calculus?
+Back: $[e/x]E$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717032-->
+END%%
+
+%%ANKI
+Basic
+How is $[N/x]M$ equivalently written in equivalence transformation?
+Back: $M_N^x$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717038-->
+END%%
+
+%%ANKI
+Basic
+How does substitution, say $[N/x]M$, affect free variables?
+Back: Every free occurrence of $x$ is substituted with $N$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717043-->
+END%%
+
+%%ANKI
+Basic
+How does substitution, say $[N/x]M$, affect bound variables?
+Back: Bound variables are renamed to avoid name clashes.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717048-->
+END%%
+
+%%ANKI
+Cloze
+$[N/x]M$ is the result of substituting {$N$} for every free occurrence of {$x$} in {$M$}.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717054-->
+END%%
+
+%%ANKI
+Cloze
+{$M^x_e$} is to equivalence transformation whereas {$[e/x]M$} is to $\lambda$-calculus.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717035917143-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $[N/x]x$?
+Back: $N$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717059-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $[N/x]a$, for some atom $a \neq x$?
+Back: $a$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717064-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $[N/x]a$, for some atom $a = x$?
+Back: $N$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717069-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $[N/x](PQ)$?
+Back: $([N/x]P)([N/x]Q)$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717074-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $[N/x](\lambda x. P)$?
+Back: $\lambda x. P$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717080-->
+END%%
+
+%%ANKI
+Basic
+If $x \in FV(P)$ and $y \in FV(N)$, what is the result of $[N/x](\lambda y. P)$?
+Back: $\lambda z. [N/x][z/y]P$ where $z \not\in FV(NP)$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717086-->
+END%%
+
+%%ANKI
+Basic
+If $x \not\in FV(P)$ and $y \in FV(N)$, what is the result of $[N/x](\lambda y. P)$?
+Back: $\lambda y. P$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717092-->
+END%%
+
+%%ANKI
+Basic
+If $x \in FV(P)$ and $y \not\in FV(N)$, what is the result of $[N/x](\lambda y. P)$?
+Back: $\lambda y. [N/x]P$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717097-->
+END%%
+
+%%ANKI
+Basic
+If $x \not\in FV(P)$ and $y \not\in FV(N)$, what is the result of $[N/x](\lambda y. P)$?
+Back: $\lambda y. P$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717036717102-->
+END%%
+
 ## Bibliography
 
 * Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
