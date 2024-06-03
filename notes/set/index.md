@@ -10,6 +10,30 @@ tags:
 
 %%ANKI
 Basic
+What are the two primitive notions of set theory?
+Back: Sets and membership.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717417781230-->
+END%%
+
+%%ANKI
+Basic
+How does Enderton describe a primitive notion?
+Back: An undefined concept other concepts are defined with.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717417781236-->
+END%%
+
+%%ANKI
+Basic
+Axioms can be thought of as doing what to primitive notions?
+Back: Divulging partial information about their meaning.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717417781239-->
+END%%
+
+%%ANKI
+Basic
 How does Knuth define a *dynamic* set?
 Back: As a set that can change over time.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -221,6 +245,14 @@ Which set theory axiom proves uniqueness of $\varnothing$?
 Back: The extensionality axiom.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1715649069259-->
+END%%
+
+%%ANKI
+Basic
+What axiom is used to prove two sets are equal to one another?
+Back: Extensionality.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717372494462-->
 END%%
 
 ## Empty Set Axiom
@@ -747,7 +779,7 @@ END%%
 %%ANKI
 Basic
 *Why* does $\bigcap \varnothing$ present a problem?
-Back: Every set $x$ is a member of every member of $\varnothing$ (vacuously).
+Back: Every set is a member of every member of $\varnothing$ (vacuously).
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716309007878-->
 END%%
@@ -775,6 +807,30 @@ What set operation is shaded green in the following venn diagram?
 Back: $A - B$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716395245875-->
+END%%
+
+%%ANKI
+Basic
+The "subset axioms" are more accurately classified as what?
+Back: An axiom schema.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717368558153-->
+END%%
+
+%%ANKI
+Basic
+What is an axiom schema?
+Back: An infinite bundle of axioms.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717368558159-->
+END%%
+
+%%ANKI
+Basic
+Which of the set theory axioms are more accurately described as an axiom schema?
+Back: The subset axioms.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717368558164-->
 END%%
 
 ## Bibliography

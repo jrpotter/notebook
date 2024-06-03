@@ -563,14 +563,14 @@ END%%
 %%ANKI
 Basic
 *Why* can't the $abort$ command be executed?
-Back: Because it terminates in state $F$ which is impossible.
+Back: By definition it executes in state $F$ which is impossible.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716810300129-->
 END%%
 
 %%ANKI
 Basic
-Which command does Gries introduce as the only whose predicate transformer is "constant"?
+Which command does Gries introduce as the only "constant" predicate transformer?
 Back: $abort$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716810300133-->
@@ -578,15 +578,15 @@ END%%
 
 %%ANKI
 Basic
-*Why* is $abort$ considered the only "constant" predicate transformer?
-Back: The Law of the Excluded Miracle ensures $wp(S, F) = F$ for any other commands $S$.
+How do we prove that $abort$ is the only "constant" predicate transformer?
+Back: For any command $S$, the Law of the Excluded Miracle proves $wp(S, F) = F$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716810300137-->
 END%%
 
 %%ANKI
 Basic
-Consider $makeTrue$ defined as $wp(makeTrue, R) = T$ for all predicates $R$. What's wrong?
+Suppose $makeTrue$ is defined as $wp(makeTrue, R) = T$ for all predicates $R$. What's wrong?
 Back: If $R = F$, $makeTrue$ violates the Law of the Excluded Miracle.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716810300145-->

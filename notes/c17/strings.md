@@ -74,7 +74,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`width` and `precision`} fields are output related whereas the {`length`} field is input related.
+The {1:`width`} and {1:`precision`} fields are output related whereas the {2:`length`} field is input related.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1708425941269-->
@@ -90,7 +90,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`-`} flag {left-aligns the output}.
+The {`-`} flag {left-aligns} the output.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707918756812-->

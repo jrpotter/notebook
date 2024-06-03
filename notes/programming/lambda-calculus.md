@@ -243,6 +243,53 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1716743248098-->
 END%%
 
+### Syntactic Identity
+
+**Syntactic identity** of terms is denoted by "$\equiv$".
+
+%%ANKI
+Basic
+What does it mean for two terms to be syntactically identical?
+Back: The terms are written out using the exact same sequence of characters.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717422855675-->
+END%%
+
+%%ANKI
+Basic
+What form of Lean equality corresponds to $\lambda$-calculus's $\equiv$ operator?
+Back: Syntactic equality.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+Tags: lean
+<!--ID: 1717422855706-->
+END%%
+
+%%ANKI
+Basic
+How does Hindley et al. denote syntactic identity of $\lambda$-terms $M$ and $N$?
+Back: $M \equiv N$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717422855711-->
+END%%
+
+%%ANKI
+Basic
+What syntactic identities are assumed when $MN \equiv PQ$?
+Back: $M \equiv P$ and $N \equiv Q$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717422855716-->
+END%%
+
+%%ANKI
+Basic
+What syntactic identities are assumed when $\lambda x. M \equiv \lambda y. P$?
+Back: $x \equiv y$ and $M \equiv P$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717422855722-->
+END%%
+
+### Length
+
 The length of a $\lambda$-term (denoted $lgh$) is equal to the number of atoms in the term:
 
 * $lgh(a) = 1$ for all atoms $a$;
@@ -319,6 +366,8 @@ The phrase "{induction on $M$}" is shorthand for phrase "{induction on $lgh(M)$}
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf). 
 <!--ID: 1716743248113-->
 END%%
+
+### Occurrence
 
 For $\lambda$-terms $P$ and $Q$, the relation **$P$ occurs in $Q$** is defined by induction on $Q$ as:
 
@@ -436,6 +485,8 @@ Back: We should be asking about a $\lambda x$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016007-->
 END%%
+
+### Free and Bound Variables
 
 An occurrence of a variable $x$ in a term $P$ is called
 
@@ -574,7 +625,7 @@ END%%
 
 %%ANKI
 Basic
-Which specific occurrences are bpund and binding in $\lambda x. x(\lambda y. yz)$?
+Which specific occurrences are bound and binding in $\lambda x. x(\lambda y. yz)$?
 Back: The first $x$ and the first $y$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016031-->
@@ -596,7 +647,7 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1716745016034-->
 END%%
 
-## Substitution
+### Substitution
 
 For any $M$, $N$, and $x$, define $[N/x]M$ to be the result of substituting $N$ for every free occurrence of $x$ in $M$, and changing bound variables to avoid clashes.
 
@@ -634,9 +685,9 @@ END%%
 
 %%ANKI
 Cloze
-$[N/x]M$ is the result of substituting {$N$} for every free occurrence of {$x$} in {$M$}.
+$[N/x]M$ is the result of substituting {1:$N$} for every free occurrence of {1:$x$} in {1:$M$}.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
-<!--ID: 1717036717054-->
+<!--ID: 1717251249627-->
 END%%
 
 %%ANKI
@@ -656,7 +707,7 @@ END%%
 
 %%ANKI
 Basic
-What is the result of $[N/x]a$, for some atom $a \neq x$?
+What is the result of $[N/x]a$, for some atom $a \not\equiv x$?
 Back: $a$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717064-->
@@ -664,7 +715,7 @@ END%%
 
 %%ANKI
 Basic
-What is the result of $[N/x]a$, for some atom $a = x$?
+What is the result of $[N/x]a$, for some atom $a \equiv x$?
 Back: $N$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717069-->

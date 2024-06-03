@@ -13,7 +13,7 @@ A **hash table** `T[0:m-1]` uses a **hash function** to map a universe of keys i
 %%ANKI
 Basic
 With respect to hashing, what does the "universe" of keys refer to?
-Back: Every potential key that may be inserted into the underlying dictionary.
+Back: Every potential key that may be provided to the hash function.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1716046153757-->
 END%%

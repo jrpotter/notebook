@@ -305,7 +305,7 @@ END%%
 %%ANKI
 Basic
 Let $A$ be a set. What does $\{x \in A \mid x \not\in x\}$ evaluate to?
-Back: $A$.
+Back: $A$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716237736492-->
 END%%

@@ -69,7 +69,7 @@ END%%
 %%ANKI
 Basic
 In a `git merge`, what changes are between `=======` and `<<<<<<<`?
-Back: The changes present on the branch being merged into `HEAD`.
+Back: N/A.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
 <!--ID: 1716804846996-->
 END%%
