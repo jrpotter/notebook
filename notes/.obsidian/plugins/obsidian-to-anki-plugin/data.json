@@ -133,7 +133,8 @@
     "venn-diagram-union.png",
     "venn-diagram-intersection.png",
     "venn-diagram-rel-comp.png",
-    "venn-diagram-abs-comp.png"
+    "venn-diagram-abs-comp.png",
+    "venn-diagram-symm-diff.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -313,7 +314,7 @@
     "_journal/2024-03-18.md": "8479f07f63136a4e16c9cd07dbf2f27f",
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
-    "set/index.md": "55a80d53973af2c0343438346e2086b2",
+    "set/index.md": "d1fcdfe4506aab4ec86f30118464fb2a",
     "set/graphs.md": "4bbcea8f5711b1ae26ed0026a4a69800",
     "_journal/2024-03-19.md": "a0807691819725bf44c0262405e97cbb",
     "_journal/2024-03/2024-03-18.md": "63c3c843fc6cfc2cd289ac8b7b108391",
@@ -332,7 +333,7 @@
     "_journal/2024-03-22.md": "8da8cda07d3de74f7130981a05dce254",
     "_journal/2024-03/2024-03-21.md": "cd465f71800b080afa5c6bdc75bf9cd3",
     "x86-64/declarations.md": "75bc7857cf2207a40cd7f0ee056af2f2",
-    "x86-64/instructions.md": "c9ae5dedaa22fbcdc486663877fc1c1e",
+    "x86-64/instructions.md": "06b7fbe1a7a9568b80239310eb72e87a",
     "git/refs.md": "e20c2c9b14ba6c2bd235416017c5c474",
     "set/trees.md": "b085bd8d08dccd8cbf02bb1b7a4baa43",
     "_journal/2024-03-24.md": "1974cdb9fc42c3a8bebb8ac76d4b1fd6",
@@ -466,7 +467,7 @@
     "programming/λ-Calculus.md": "bf36bdaf85abffd171bb2087fb8228b2",
     "_journal/2024-05-23.md": "9d9106a68197adcee42cd19c69d2f840",
     "_journal/2024-05/2024-05-22.md": "3c29eec25f640183b0be365e7a023750",
-    "programming/lambda-calculus.md": "547bc98111e516fc70a415d91db7b3ff",
+    "programming/lambda-calculus.md": "89f024561ea770552bc20056a45dbce6",
     "_journal/2024-05-25.md": "04e8e1cf4bfdbfb286effed40b09c900",
     "_journal/2024-05/2024-05-24.md": "86132f18c7a27ebc7a3e4a07f4867858",
     "_journal/2024-05/2024-05-23.md": "d0c98b484b1def3a9fd7262dcf2050ad",
@@ -474,8 +475,8 @@
     "_journal/2024-05/2024-05-25.md": "3e8a0061fa58a6e5c48d12800d1ab869",
     "_journal/2024-05-27.md": "b36636d10eab34380f17f288868df3ae",
     "_journal/2024-05/2024-05-26.md": "abe84b5beae74baa25501c818e64fc95",
-    "algebra/set.md": "049c5ff36ce8fe99b2c8a8f452d0514f",
-    "algebra/boolean.md": "56d2e0be2853d49b5dface7fa2d785a9",
+    "algebra/set.md": "92de8c0197cef54b5c6c269aac6b93b2",
+    "algebra/boolean.md": "ee41e624f4d3d3aca00020d9a9ae42c8",
     "git/merge-conflicts.md": "af3603c7a8fde60a1982c0950d209b77",
     "_journal/2024-05-28.md": "0f6aeb5ec126560acdc2d8c5c6570337",
     "_journal/2024-05/2024-05-27.md": "e498d5154558ebcf7261302403ea8016",
@@ -489,10 +490,17 @@
     "_journal/2024-05/2024-05-31.md": "4421312bffa6f3c7e501a28be1e3bd5b",
     "_journal/2024-06-02.md": "0059e0332794e0007545b92bc4c1ff9f",
     "_journal/2024-06/2024-06-01.md": "6d39286db9d89975e441c57f6a92cfaf",
-    "_journal/2024-06-03.md": "560019592d88237bdb4b0ea609465ef6",
+    "_journal/2024-06-03.md": "3dbe96317f721515f3e6a20b82e3d537",
     "_journal/2024-06/2024-06-02.md": "0059e0332794e0007545b92bc4c1ff9f",
     "programming/lean.md": "2815eac192c7e231937e2369817a6dc1",
-    "logic/equality.md": "1867b676e0e7c9ec8f1addc40fefb966"
+    "logic/equality.md": "1867b676e0e7c9ec8f1addc40fefb966",
+    "_journal/2024-06-04.md": "a7ca58741dbfdd7e351d835db3884c68",
+    "_journal/2024-06/2024-06-03.md": "3dbe96317f721515f3e6a20b82e3d537",
+    "_journal/2024-06-05.md": "60f82c089f6911db8541a0bca7505ab4",
+    "_journal/2024-06/2024-06-04.md": "52b28035b9c91c9b14cef1154c1a0fa1",
+    "_journal/2024-06-06.md": "3f9109925dea304e7172df39922cc95a",
+    "_journal/2024-06/2024-06-05.md": "b06a0fa567bd81e3b593f7e1838f9de1",
+    "set/relations.md": "411e81682aa5a731cd501031dc3ab59d"
   },
   "fields_dict": {
     "Basic": [

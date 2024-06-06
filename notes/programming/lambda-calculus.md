@@ -18,6 +18,14 @@ If the sequence of atomic constants is empty, the system is called **pure**. Oth
 
 %%ANKI
 Basic
+Who is usually attributed the creation of $\lambda$-calculus?
+Back: Alonzo Church.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717450542692-->
+END%%
+
+%%ANKI
+Basic
 What does a "higher-order function" refer to?
 Back: A function that acts on other functions.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
@@ -767,6 +775,84 @@ If $x \not\in FV(P)$ and $y \not\in FV(N)$, what is the result of $[N/x](\lambda
 Back: $\lambda y. P$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717102-->
+END%%
+
+For all $\lambda$-terms $M$, $N$, and variables $x$:
+
+* $[x/x]M \equiv M$
+* $x \not\in FV(M) \Rightarrow [N/x]M \equiv M$
+* $x \in FV(M) \Rightarrow FV([N/x]M) = FV(N) \cup (FV(M) - \{x\})$
+
+%%ANKI
+Basic
+What is the result of $[x/x]M$?
+Back: $M$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717439837468-->
+END%%
+
+%%ANKI
+Basic
+If $x \not\in FV(M)$, what is the result of $[N/x]M$?
+Back: $M$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717439837499-->
+END%%
+
+%%ANKI
+Basic
+Suppose $x \in FV(M)$. How is $FV([N/x]M)$ equivalently written without substitution?
+Back: $FV(N) \cup (FV(M) - \{x\})$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717449967215-->
+END%%
+
+%%ANKI
+Basic
+Suppose $x \in FV(M)$. How is $FV(N) \cup (FV(M) - \{x\})$ more simply written using substitution?
+Back: $FV([N/x]M)$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717449967220-->
+END%%
+
+%%ANKI
+Basic
+What is the result of $lgh([y/x]M)$?
+Back: $lgh(M)$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717439837513-->
+END%%
+
+%%ANKI
+Basic
+$[N/x]M$ corresponds to which equivalence-transformation inference rule?
+Back: Substitution.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717449830572-->
+END%%
+
+%%ANKI
+Basic
+$[P/v][v/x]M \equiv [P/x]M$ corresponds to which equivalence-transformation inference rule?
+Back: Transitivity.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717449830601-->
+END%%
+
+%%ANKI
+Basic
+Rewrite $(E_u^x)_v^x$ using $\lambda$-calculus syntax.
+Back: $[v/x][u/x]E$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717449830608-->
+END%%
+
+%%ANKI
+Basic
+Rewrite $[x/v][v/x]M$ using equivalence-transformation syntax.
+Back: $(M^x_v)^v_x$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1717449830614-->
 END%%
 
 ## Bibliography

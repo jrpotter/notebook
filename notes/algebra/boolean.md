@@ -180,7 +180,7 @@ END%%
 
 %%ANKI
 Basic
-What C bit-level operator corresponds to $\cup$?
+What C bit-level operator corresponds to set notation $\cup$?
 Back: `|`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: binary c17 set
@@ -188,12 +188,45 @@ Tags: binary c17 set
 END%%
 
 %%ANKI
+Cloze
+{$\cup$} is to the algebra of sets whereas {$\lor$} is to boolean algebra.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+Tags: set
+<!--ID: 1717554445676-->
+END%%
+
+%%ANKI
 Basic
-What C bit-level operator corresponds to $\cap$?
+What C bit-level operator corresponds to set notation $\cap$?
 Back: `&`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: binary c17 set
 <!--ID: 1707774068192-->
+END%%
+
+%%ANKI
+Cloze
+{$\cap$} is to the algebra of sets whereas {$\land$} is to boolean algebra.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+Tags: set
+<!--ID: 1717554445682-->
+END%%
+
+%%ANKI
+Basic
+What C bit-level operator corresponds to set notation $\triangle$?
+Back: `^`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: binary c17 set
+<!--ID: 1717554445689-->
+END%%
+
+%%ANKI
+Cloze
+{$\triangle$} is to the algebra of sets whereas {$\oplus$} is to boolean algebra.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+Tags: set
+<!--ID: 1717554445695-->
 END%%
 
 %%ANKI

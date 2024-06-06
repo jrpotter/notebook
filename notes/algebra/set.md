@@ -520,6 +520,34 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1717073537007-->
 END%%
 
+## Symmetric Difference
+
+Define the **symmetric difference** of sets $A$ and $B$ as $$A \mathop{\triangle} B = (A - B)  \cup (B - A)$$
+
+%%ANKI
+Basic
+What two operators are used in the definition of the symmetric difference?
+Back: $\cup$ and $-$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717554445662-->
+END%%
+
+%%ANKI
+Basic
+How is the symmetric difference of sets $A$ and $B$ denoted?
+Back: $A \mathop{\triangle} B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717554445665-->
+END%%
+
+%%ANKI
+Basic
+How is $A \mathop{\triangle} B$ defined?
+Back: As $(A - B)  \cup (B - A)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717554445670-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

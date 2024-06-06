@@ -468,7 +468,7 @@ END%%
 
 %%ANKI
 Basic
-What advantage does the general form of the union axiom have over its prelimiary form?
+What advantage does the general form of the union axiom have over its preliminary form?
 Back: The general form can handle infinite sets.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716309007851-->
@@ -746,7 +746,7 @@ END%%
 
 %%ANKI
 Basic
-What is the result of $\bigcap \{\{2, 4, 6\}, \{6, 16, 26\}, \{0\}\}$?
+What is the result of $\bigcap \{\{2, 4, 6\}, \{6, 16, 26\}, \{6\}\}$?
 Back: $\{6\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716309007870-->
@@ -807,6 +807,15 @@ What set operation is shaded green in the following venn diagram?
 Back: $A - B$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716395245875-->
+END%%
+
+%%ANKI
+Basic
+What set operation is shaded green in the following venn diagram?
+![[venn-diagram-symm-diff.png]]
+Back: $A \mathop{\triangle} B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717554445655-->
 END%%
 
 %%ANKI

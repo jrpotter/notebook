@@ -84,14 +84,6 @@ There are three types of operands:
 
 %%ANKI
 Basic
-What are the three types of operands instructions can act on?
-Back: Immediates, registers, and memory addresses.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713212889877-->
-END%%
-
-%%ANKI
-Basic
 What are the types of source operands instructions can specify?
 Back: Immediates, registers, and memory addresses.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
