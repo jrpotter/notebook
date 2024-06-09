@@ -493,7 +493,7 @@ END%%
 
 %%ANKI
 Basic
-Which format specifier were probably used to yield `printf` output `7af`?
+Which format specifier was probably used to yield `printf` output `7af`?
 Back: `%x`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
@@ -510,7 +510,7 @@ END%%
 
 %%ANKI
 Basic
-Which format specifier were probably used to yield `printf` output `7AF`?
+Which format specifier was probably used to yield `printf` output `7AF`?
 Back: `%X`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf

@@ -214,7 +214,7 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1709519002319-->
 END%%
 
-## $\Theta$-notation
+## Θ-notation
 
 ![[theta-notation.png]]
 
@@ -844,7 +844,7 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1709752223449-->
 END%%
 
-## $\Omega$-notation
+## Ω-notation
 
 ![[big-omega-notation.png]]
 
@@ -1070,7 +1070,7 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1709752223522-->
 END%%
 
-## $\omega$-notation
+## ω-notation
 
 $\omega$-notation refers to a lower bound that is not asymptotically tight. It is defined as set $$\omega(g(n)) = \{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq cg(n) < f(n) \}$$
 

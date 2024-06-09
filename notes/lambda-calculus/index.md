@@ -251,7 +251,7 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1716743248098-->
 END%%
 
-### Syntactic Identity
+## Syntactic Identity
 
 **Syntactic identity** of terms is denoted by "$\equiv$".
 
@@ -296,7 +296,7 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1717422855722-->
 END%%
 
-### Length
+## Length
 
 The length of a $\lambda$-term (denoted $lgh$) is equal to the number of atoms in the term:
 
@@ -375,7 +375,7 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1716743248113-->
 END%%
 
-### Occurrence
+## Occurrence
 
 For $\lambda$-terms $P$ and $Q$, the relation **$P$ occurs in $Q$** is defined by induction on $Q$ as:
 
@@ -494,7 +494,7 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1716745016007-->
 END%%
 
-### Free and Bound Variables
+## Free and Bound Variables
 
 An occurrence of a variable $x$ in a term $P$ is called
 
@@ -655,7 +655,7 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1716745016034-->
 END%%
 
-### Substitution
+## Substitution
 
 For any $M$, $N$, and $x$, define $[N/x]M$ to be the result of substituting $N$ for every free occurrence of $x$ in $M$, and changing bound variables to avoid clashes.
 
@@ -782,6 +782,7 @@ For all $\lambda$-terms $M$, $N$, and variables $x$:
 * $[x/x]M \equiv M$
 * $x \not\in FV(M) \Rightarrow [N/x]M \equiv M$
 * $x \in FV(M) \Rightarrow FV([N/x]M) = FV(N) \cup (FV(M) - \{x\})$
+* $lgh([y/x]M) = lgh(M)$
 
 %%ANKI
 Basic
@@ -821,38 +822,6 @@ What is the result of $lgh([y/x]M)$?
 Back: $lgh(M)$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717439837513-->
-END%%
-
-%%ANKI
-Basic
-$[N/x]M$ corresponds to which equivalence-transformation inference rule?
-Back: Substitution.
-Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
-<!--ID: 1717449830572-->
-END%%
-
-%%ANKI
-Basic
-$[P/v][v/x]M \equiv [P/x]M$ corresponds to which equivalence-transformation inference rule?
-Back: Transitivity.
-Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
-<!--ID: 1717449830601-->
-END%%
-
-%%ANKI
-Basic
-Rewrite $(E_u^x)_v^x$ using $\lambda$-calculus syntax.
-Back: $[v/x][u/x]E$
-Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
-<!--ID: 1717449830608-->
-END%%
-
-%%ANKI
-Basic
-Rewrite $[x/v][v/x]M$ using equivalence-transformation syntax.
-Back: $(M^x_v)^v_x$
-Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
-<!--ID: 1717449830614-->
 END%%
 
 ## Bibliography

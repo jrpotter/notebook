@@ -482,14 +482,6 @@ END%%
 
 %%ANKI
 Basic
-What constant operand evaluations determine the direction of implication in Distributivity of Disjunction?
-Back: $F \Rightarrow T$ evaluates truthily but $T \Rightarrow F$ does not.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1716310927718-->
-END%%
-
-%%ANKI
-Basic
 *Why* does Distributivity of Disjunction use an implication instead of equality?
 Back: Because the underlying command may be nondeterministic.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.

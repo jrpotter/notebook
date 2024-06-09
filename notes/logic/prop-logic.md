@@ -139,7 +139,7 @@ END%%
 
 %%ANKI
 Basic
-How does "$P$ if $Q$" translate with $\Rightarrow$?
+How do you write "$P$ if $Q$" in propositional logic?
 Back: $Q \Rightarrow P$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708199272127-->
@@ -147,7 +147,23 @@ END%%
 
 %%ANKI
 Basic
-How does "$P$ only if $Q$" translate with $\Rightarrow$?
+How do you write "$P$ if $Q$" using "necessary"?
+Back: $P$ is necessary for $Q$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1717853966420-->
+END%%
+
+%%ANKI
+Basic
+How do you write "$P$ if $Q$" using "sufficient"?
+Back: $Q$ is sufficient for $P$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1717853966425-->
+END%%
+
+%%ANKI
+Basic
+How do you write "$P$ only if $Q$" in propositional logic?
 Back: $P \Rightarrow Q$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708199272134-->
@@ -155,7 +171,23 @@ END%%
 
 %%ANKI
 Basic
-How does "$P$ is necessary for $Q$" translate with $\Rightarrow$?
+How do you write "$P$ only if $Q$" using "necessary"?
+Back: $Q$ is necessary for $P$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1717853966429-->
+END%%
+
+%%ANKI
+Basic
+How do you write "$P$ only if $Q$" using "sufficient"?
+Back: $P$ is sufficient for $Q$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1717853966432-->
+END%%
+
+%%ANKI
+Basic
+How do you write "$P$ is necessary for $Q$" in propositional logic?
 Back: $Q \Rightarrow P$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708199272140-->
@@ -163,7 +195,23 @@ END%%
 
 %%ANKI
 Basic
-How does "$P$ is sufficient for $Q$" translate with $\Rightarrow$?
+How do you write "$P$ is necessary for $Q$" using "if"?
+Back: $P$ if $Q$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1717853966435-->
+END%%
+
+%%ANKI
+Basic
+How do you write "$P$ is necessary for $Q$" using "only if"?
+Back: $Q$ only if $P$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1717853966438-->
+END%%
+
+%%ANKI
+Basic
+How do you write "$P$ is sufficient for $Q$" in propositional logic?
 Back: $P \Rightarrow Q$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708199272145-->
@@ -171,18 +219,50 @@ END%%
 
 %%ANKI
 Basic
-Which of *if* or *only if* map to *necessary*?
-Back: *if*
+How do you write "$P$ is sufficient for $Q$" using "if"?
+Back: $Q$ if $P$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708199272151-->
+<!--ID: 1717853966441-->
 END%%
 
 %%ANKI
 Basic
-Which of *if* or *only if* map to *sufficient*?
-Back: *only if*
+How do you write "$P$ is sufficient for $Q$" using "only if"?
+Back: $P$ only if $Q$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708199272157-->
+<!--ID: 1717853966444-->
+END%%
+
+%%ANKI
+Basic
+How do you write "$P$ if $Q$" using "only if"?
+Back: $Q$ only if $P$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1717853966449-->
+END%%
+
+%%ANKI
+Basic
+How do you write "$P$ is sufficient for $Q$" using "necessary"?
+Back: $Q$ is necessary for $P$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1717853966454-->
+END%%
+
+%%ANKI
+Basic
+How do you write "$P$ only if $Q$" using "if"?
+Back: $Q$ if $P$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1717853966458-->
+END%%
+
+%%ANKI
+Basic
+How do you write "$P$ is necessary for $Q$" using "sufficient"?
+Back: $Q$ is sufficient for $P$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1717853966462-->
 END%%
 
 %%ANKI
