@@ -44,7 +44,7 @@ END%%
 
 %%ANKI
 Basic
-In a `git merge`, what changes are between `<<<<<<<` and `=======`?
+In a `git merge`, what changes are after `<<<<<<<` and before `=======`?
 Back: The changes present on the current branch.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
 <!--ID: 1716804846990-->
@@ -52,7 +52,7 @@ END%%
 
 %%ANKI
 Basic
-In a `git merge`, what changes are between `>>>>>>>` and `=======`?
+In a `git merge`, what changes are after `>>>>>>>` and before `=======`?
 Back: N/A.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
 <!--ID: 1716804846993-->
@@ -60,7 +60,7 @@ END%%
 
 %%ANKI
 Basic
-In a `git merge`, what changes are between `=======` and `>>>>>>>`?
+In a `git merge`, what changes are after `=======` and before `>>>>>>>`?
 Back: The changes present on the branch being merged into `HEAD`.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
 <!--ID: 1716804846999-->
@@ -68,7 +68,7 @@ END%%
 
 %%ANKI
 Basic
-In a `git merge`, what changes are between `=======` and `<<<<<<<`?
+In a `git merge`, what changes are after `=======` and before `<<<<<<<`?
 Back: N/A.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
 <!--ID: 1716804846996-->

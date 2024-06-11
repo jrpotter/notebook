@@ -87,6 +87,46 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1716396060620-->
 END%%
 
+%%ANKI
+Basic
+Is the Cartesian product commutative?
+Back: No.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881694-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't the Cartesian product commutative?
+Back: Because the Cartesian product comprises of *ordered* pairs.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881698-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \neq \varnothing$ and $B \neq \varnothing$. When does $A \times B = B \times A$?
+Back: When $A = B$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881702-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \neq \varnothing$ and $A \neq B$. When does $A \times B = B \times A$?
+Back: When $B = \varnothing$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881705-->
+END%%
+
+%%ANKI
+Basic
+Under what two conditions is $A \times B = B \times A$?
+Back: $A = B$ or either set is the empty set.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881709-->
+END%%
+
 ### Associative Laws
 
 For any sets $A$ and $B$, $$\begin{align*} A \cup (B \cup C) & = (A \cup B) \cup C \\ A \cap (B \cap C) & = (A \cap B) \cap C \end{align*}$$
@@ -113,6 +153,22 @@ What does the intersection associative law state?
 Back: For any sets $A$, $B$, and $C$, $A \cap (B \cap C) = (A \cap B) \cap C$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716396060625-->
+END%%
+
+%%ANKI
+Basic
+Is the Cartesian product associative?
+Back: No.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881712-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't the Cartesian product associative?
+Back: The association of parentheses defines the nesting of the ordered pairs.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881715-->
 END%%
 
 ### Distributive Laws
@@ -251,6 +307,94 @@ Does $\bigcap\, \{A \cup X \mid X \in \mathscr{B}\}$ get smaller or larger as $\
 Back: Larger.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1717372322287-->
+END%%
+
+For any sets $A$, $B$, and $C$, $$\begin{align*} A \times (B \cap C) & = (A \times B) \cap (A \times C) \\ A \times (B \cup C) & = (A \times B) \cup (A \times C) \\ A \times (B - C) & = (A \times B) - (A \times C) \end{align*}$$
+%%ANKI
+Basic
+Which algebra of sets operators is the Cartesian product distributive over?
+Back: $\cap$, $\cup$, and $-$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881718-->
+END%%
+
+%%ANKI
+Basic
+What distributivity rule is satisfied by $\cap$ and $\times$?
+Back: $A \times (B \cap C) = (A \times B) \cap (A \times C)$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881723-->
+END%%
+
+%%ANKI
+Cloze
+The Cartesian product satisfies distributivity: {$A \times (B \cap C)$} $=$ {$(A \times B) \cap (A \times C)$}.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881726-->
+END%%
+
+%%ANKI
+Basic
+What distributivity rule is satisfied by $\cup$ and $\times$?
+Back: $A \times (B \cup C) = (A \times B) \cup (A \times C)$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881731-->
+END%%
+
+%%ANKI
+Cloze
+The Cartesian product satisfies distributivity: {$A \times (B \cup C)$} $=$ {$(A \times B) \cup (A \times C)$}.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881735-->
+END%%
+
+%%ANKI
+Basic
+What distributivity rule is satisfied by $-$ and $\times$?
+Back: $A \times (B - C) = (A \times B) - (A \times C)$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881742-->
+END%%
+
+%%ANKI
+Cloze
+The Cartesian product satisfies distributivity: {$A \times (B - C)$} $=$ {$(A \times B) - (A \times C)$}.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881752-->
+END%%
+
+In addition, $$\begin{align*} A \times \bigcup \mathscr{B} & = \bigcup\, \{A \times X \mid X \in \mathscr{B}\} \\ A \times \bigcap \mathscr{B} & = \bigcap\, \{A \times X \mid X \in \mathscr{B}\} \end{align*}$$
+
+%%ANKI
+Basic
+What is the generalization of identity $A \times (B \cup C) = (A \times B) \cup (A \times C)$?
+Back: $A \times \bigcup \mathscr{B} = \bigcup\, \{A \times X \mid X \in \mathscr{B}\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718069881759-->
+END%%
+
+%%ANKI
+Basic
+What is the specialization of identity $A \times \bigcap \mathscr{B} = \bigcap\, \{A \times X \mid X \in \mathscr{B}\}$?
+Back: $A \times (B \cap C) = (A \times B) \cap (A \times C)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718069881766-->
+END%%
+
+%%ANKI
+Basic
+What is the generalization of identity $A \times (B \cap C) = (A \times B) \cap (A \times C)$?
+Back: $A \times \bigcap \mathscr{B} = \bigcap\, \{A \times X \mid X \in \mathscr{B}\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718069881773-->
+END%%
+
+%%ANKI
+Basic
+What is the specialization of identity $A \times \bigcup \mathscr{B} = \bigcup\, \{A \times X \mid X \in \mathscr{B}\}$?
+Back: $A \times (B \cup C) = (A \times B) \cup (A \times C)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718069881779-->
 END%%
 
 ### De Morgan's Laws
@@ -456,6 +600,18 @@ Why are the monotonicity properties of $\subseteq$ named the way they are?
 Back: The ordering of operands in the antecedent are preserved in the consequent.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1717073536985-->
+END%%
+
+In addition,
+
+* $A \subseteq B \Rightarrow A \times C \subseteq B \times C$
+
+%%ANKI
+Basic
+What monotonicity property does the Cartesian product satisfy?
+Back: $A \subseteq B \Rightarrow A \times C \subseteq B \times C$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1718069881786-->
 END%%
 
 ### Antimonotonicity

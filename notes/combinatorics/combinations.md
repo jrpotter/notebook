@@ -329,14 +329,6 @@ END%%
 
 %%ANKI
 Basic
-What isomorphism shows finite sets have an equal number of even-sized subsets as odd-sized subsets?
-Back: The one-to-one relationship between subsets and bit strings.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708434662160-->
-END%%
-
-%%ANKI
-Basic
 Given finite set $A$, how many subsets of even cardinality does $A$ have?
 Back: Let $n = |A|$. Then $2^{n-1}$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).

@@ -198,7 +198,7 @@ END%%
 
 %%ANKI
 Cloze
-The C standard sets {1:lower bounds} on data type ranges, but does not set {1:upper bounds} (except with fixed-size types).
+{1:Lower} bounds are defined on data type's numeric ranges, but not {1:upper} (except for {2:fixed-size} types).
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707493017244-->
 END%%

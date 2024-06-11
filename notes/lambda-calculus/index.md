@@ -416,7 +416,7 @@ END%%
 %%ANKI
 Basic
 How is "occurs in" recursively defined for application?
-Back: If $P$ occurs in $M$ or $N$, then $P$ occurs in $(MN)$.
+Back: $P$ occurs in $(MN)$ if $P$ occurs in $M$ or $P$ occurs in $N$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716743248122-->
 END%%
@@ -424,7 +424,7 @@ END%%
 %%ANKI
 Basic
 How is "occurs in" recursively defined for abstraction?
-Back: If $P$ occurs in $M$ or $P$ is $x$, then $P$ occurs in $(\lambda x. M)$.
+Back: $P$ occurs in $(\lambda x. M)$ if $P$ occurs in $M$ or $P$ is $x$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716743248124-->
 END%%
@@ -618,7 +618,7 @@ END%%
 %%ANKI
 Basic
 Which specific occurrences are bound in $\lambda x. x(\lambda y. yz)$?
-Back: Each $x$ and each $y$.
+Back: Both $x$s and both $y$s.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016028-->
 END%%

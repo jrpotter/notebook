@@ -51,9 +51,9 @@ END%%
 
 %%ANKI
 Basic
-How is $\langle x, y \rangle$ usually defined?
+How is $\langle x, y \rangle$ most commonly defined?
 Back: As $\{\{x\}, \{x, y\}\}$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1717678753120-->
 END%%
 
@@ -125,7 +125,7 @@ END%%
 Basic
 Why is the Cartesian product named the way it is?
 Back: It is named after René Descartes.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1717679397836-->
 END%%
 
@@ -146,4 +146,5 @@ END%%
 
 ## Bibliography
 
+* “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
