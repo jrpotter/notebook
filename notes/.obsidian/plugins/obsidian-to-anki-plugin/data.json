@@ -134,7 +134,10 @@
     "venn-diagram-intersection.png",
     "venn-diagram-rel-comp.png",
     "venn-diagram-abs-comp.png",
-    "venn-diagram-symm-diff.png"
+    "venn-diagram-symm-diff.png",
+    "relation-ordering-example.png",
+    "open-addressing.png",
+    "closed-addressing.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -173,7 +176,7 @@
     "_journal/2024-02-02.md": "a3b222daee8a50bce4cbac699efc7180",
     "_journal/2024-02-01.md": "3aa232387d2dc662384976fd116888eb",
     "_journal/2024-01-31.md": "7c7fbfccabc316f9e676826bf8dfe970",
-    "logic/equiv-trans.md": "d6d9c7dacac07540ddc20608c8a805e5",
+    "logic/equiv-trans.md": "8bfb004bc500f32620aff7b95c0d92d7",
     "_journal/2024-02-07.md": "8d81cd56a3b33883a7706d32e77b5889",
     "algorithms/loop-invariants.md": "cbefc346842c21a6cce5c5edce451eb2",
     "algorithms/loop-invariant.md": "3b390e720f3b2a98e611b49a0bb1f5a9",
@@ -314,7 +317,7 @@
     "_journal/2024-03-18.md": "8479f07f63136a4e16c9cd07dbf2f27f",
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
-    "set/index.md": "d1fcdfe4506aab4ec86f30118464fb2a",
+    "set/index.md": "24a66a792b7b75329590dcfc495faa91",
     "set/graphs.md": "4bbcea8f5711b1ae26ed0026a4a69800",
     "_journal/2024-03-19.md": "a0807691819725bf44c0262405e97cbb",
     "_journal/2024-03/2024-03-18.md": "63c3c843fc6cfc2cd289ac8b7b108391",
@@ -451,8 +454,8 @@
     "_journal/2024-05-17.md": "fb880d68077b655ede36d994554f3aba",
     "_journal/2024-05/2024-05-16.md": "9fdfadc3f9ea6a4418fd0e7066d6b10c",
     "_journal/2024-05-18.md": "c0b58b28f84b31cea91404f43b0ee40c",
-    "hashing/direct-addressing.md": "87d1052ac7eae3061d88d011432cb693",
-    "hashing/index.md": "8912a564ac1066de14044421fdc35b75",
+    "hashing/direct-addressing.md": "acff356a70980cb4135094fccb3b3187",
+    "hashing/index.md": "2f75e951aac609a2a9da731ef5444214",
     "set/classes.md": "6776b4dc415021e0ef60b323b5c2d436",
     "_journal/2024-05-19.md": "fddd90fae08fab9bd83b0ef5d362c93a",
     "_journal/2024-05/2024-05-18.md": "c0b58b28f84b31cea91404f43b0ee40c",
@@ -475,7 +478,7 @@
     "_journal/2024-05/2024-05-25.md": "3e8a0061fa58a6e5c48d12800d1ab869",
     "_journal/2024-05-27.md": "b36636d10eab34380f17f288868df3ae",
     "_journal/2024-05/2024-05-26.md": "abe84b5beae74baa25501c818e64fc95",
-    "algebra/set.md": "7eb2f9cae83e9aaf16aa42f82cea944f",
+    "algebra/set.md": "9aadf7ca6153592b5af7e942021e56de",
     "algebra/boolean.md": "ee41e624f4d3d3aca00020d9a9ae42c8",
     "git/merge-conflicts.md": "761ad6137ec51d3877f7d5b3615ca5cb",
     "_journal/2024-05-28.md": "0f6aeb5ec126560acdc2d8c5c6570337",
@@ -500,7 +503,7 @@
     "_journal/2024-06/2024-06-04.md": "52b28035b9c91c9b14cef1154c1a0fa1",
     "_journal/2024-06-06.md": "3f9109925dea304e7172df39922cc95a",
     "_journal/2024-06/2024-06-05.md": "b06a0fa567bd81e3b593f7e1838f9de1",
-    "set/relations.md": "42f3dff509071ad31d6831e1c05e5aa9",
+    "set/relations.md": "80ad79358f1ce6ecf488a059c4de78bb",
     "_journal/2024-06-07.md": "795be41cc3c9c0f27361696d237604a2",
     "_journal/2024-06/2024-06-06.md": "db3407dcc86fa759b061246ec9fbd381",
     "_journal/2024-06-08.md": "b20d39dab30b4e12559a831ab8d2f9b8",
@@ -516,8 +519,12 @@
     "_journal/2024-06/2024-06-08.md": "9e1ebc8882a395b96ca765ad5c982d68",
     "_journal/2024-06-10.md": "84d27300b97c8544ab4ec68b06edd824",
     "_journal/2024-06/2024-06-09.md": "4c336a39775846b416aa73278435065f",
-    "_journal/2024-06-11.md": "4988503ee98aa4fe32d5eeaea2cc65a5",
-    "_journal/2024-06/2024-06-10.md": "1fe3a8beb03b1cc9af188b85933339e4"
+    "_journal/2024-06-11.md": "48f46f654a1b8dfeebc01b3adb2bc1d1",
+    "_journal/2024-06/2024-06-10.md": "1fe3a8beb03b1cc9af188b85933339e4",
+    "_journal/2024-06-12.md": "8cc810c0f594093768117f57461e2e9e",
+    "_journal/2024-06/2024-06-11.md": "764ccba25646673fdf7bb6a5f090394d",
+    "hashing/open-addressing.md": "c27e92f2865bbb426fdd1e30fc52f1ed",
+    "hashing/closed-addressing.md": "962a48517969bf5e410cf78fc584051f"
   },
   "fields_dict": {
     "Basic": [

@@ -621,8 +621,8 @@ END%%
 
 %%ANKI
 Basic
-Execution of `b[i] := e` of array $b$ yields what new value of $b$?
-Back: $b = (b; i{:}e)$
+Execution of `b[i] := e` of array $b$ in state $s$ yields what new value of $b$?
+Back: $b = (b; i{:}s(e))$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1713793130031-->
 END%%

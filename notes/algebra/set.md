@@ -27,6 +27,85 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1716396060605-->
 END%%
 
+## Symmetric Difference
+
+Define the **symmetric difference** of sets $A$ and $B$ as $$A \mathop{\triangle} B = (A - B)  \cup (B - A)$$
+
+%%ANKI
+Basic
+What two operators are used in the definition of the symmetric difference?
+Back: $\cup$ and $-$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717554445662-->
+END%%
+
+%%ANKI
+Basic
+How is the symmetric difference of sets $A$ and $B$ denoted?
+Back: $A \mathop{\triangle} B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717554445665-->
+END%%
+
+%%ANKI
+Basic
+How is $A \mathop{\triangle} B$ defined?
+Back: As $(A - B)  \cup (B - A)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717554445670-->
+END%%
+
+## Cartesian Product
+
+Given two sets $A$ and $B$, the **Cartesian product** $A \times B$ is defined as: $$A \times B = \{\langle x, y \rangle \mid x \in A \land y \in B\}$$
+
+%%ANKI
+Basic
+How is the Cartesian product of $A$ and $B$ denoted?
+Back: $A \times B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717679397781-->
+END%%
+
+%%ANKI
+Basic
+Using ordered pairs, how is $A \times B$ defined?
+Back: $\{\langle x, y \rangle \mid x \in A \land y \in B\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717679397797-->
+END%%
+
+%%ANKI
+Basic
+Who is attributed the representation of points in a plane?
+Back: René Descartes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717679397825-->
+END%%
+
+%%ANKI
+Basic
+Why is the Cartesian product named the way it is?
+Back: It is named after René Descartes.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1717679397836-->
+END%%
+
+%%ANKI
+Basic
+Suppose $x, y \in A$. What set is $\langle x, y \rangle$ in?
+Back: $\mathscr{P}\mathscr{P}A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717679397848-->
+END%%
+
+%%ANKI
+Cloze
+{$x \in A$} iff {$\{x\} \subseteq A$} iff {$\{x\} \in \mathscr{P}A$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717679397860-->
+END%%
+
 ## Laws
 
 The algebra of sets obey laws reminiscent (but not exactly) of the algebra of real numbers.
@@ -676,32 +755,43 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1717073537007-->
 END%%
 
-## Symmetric Difference
+### Cancellation Laws
 
-Define the **symmetric difference** of sets $A$ and $B$ as $$A \mathop{\triangle} B = (A - B)  \cup (B - A)$$
+Let $A$, $B$, and $C$ be sets. If $A \neq \varnothing$,
+
+* $(A \times B = A \times C) \Rightarrow B = C$
+* $(B \times A = C \times A) \Rightarrow B = C$
 
 %%ANKI
 Basic
-What two operators are used in the definition of the symmetric difference?
-Back: $\cup$ and $-$.
+What is the left cancellation law of the Cartesian product?
+Back: $(A \times B = A \times C) \Rightarrow B = C$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717554445662-->
+<!--ID: 1718107987907-->
 END%%
 
 %%ANKI
 Basic
-How is the symmetric difference of sets $A$ and $B$ denoted?
-Back: $A \mathop{\triangle} B$
+$(A \times B = A \times C) \Rightarrow B = C$ is always true if what condition is satisfied?
+Back: $A \neq \varnothing$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717554445665-->
+<!--ID: 1718107987918-->
 END%%
 
 %%ANKI
 Basic
-How is $A \mathop{\triangle} B$ defined?
-Back: As $(A - B)  \cup (B - A)$.
+What is the right cancellation law of the Cartesian product?
+Back: $(B \times A = C \times A) \Rightarrow B = C$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717554445670-->
+<!--ID: 1718107987928-->
+END%%
+
+%%ANKI
+Basic
+$(B \times A = C \times A) \Rightarrow B = C$ is always true if what condition is satisfied?
+Back: $A \neq \varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718107987936-->
 END%%
 
 ## Bibliography

@@ -95,53 +95,130 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1717678753145-->
 END%%
 
-Given two sets $A$ and $B$, the **Cartesian product** $A \times B$ is defined as: $$A \times B = \{\langle x, y \rangle \mid x \in A \land y \in B\}$$
+A **relation** $R$ is a set of ordered pairs. The **domain** of $R$ ($\mathop{\text{dom}}{R}$), the **range** of $R$ ($\mathop{\text{ran}}{R}$), and the **field** of $R$ ($\mathop{\text{fld}}{R}$) is defined as:
+
+* $x \in \mathop{\text{dom}}{R} \Leftrightarrow \exists y, \langle x, y \rangle \in R$
+* $x \in \mathop{\text{ran}}{R} \Leftrightarrow \exists t, \langle t, x \rangle \in R$
+* $\mathop{\text{fld}}{R} = \mathop{\text{dom}}{R} \cup \mathop{\text{ran}}{R}$
 
 %%ANKI
 Basic
-How is the Cartesian product of $A$ and $B$ denoted?
-Back: $A \times B$
+What is a relation?
+Back: A set of ordered pairs.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717679397781-->
+<!--ID: 1718107987764-->
 END%%
 
 %%ANKI
 Basic
-Using ordered pairs, how is $A \times B$ defined?
-Back: $\{\langle x, y \rangle \mid x \in A \land y \in B\}$
+Are relations or sets the more general concept?
+Back: Sets.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717679397797-->
+<!--ID: 1718107987776-->
 END%%
 
 %%ANKI
 Basic
-Who is attributed the representation of points in a plane?
-Back: René Descartes.
+How is the ordering relation $<$ on $\{2, 3, 5\}$ defined?
+Back: As set $\{\langle 2, 3\rangle, \langle 2, 5 \rangle, \langle 3, 5 \rangle\}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717679397825-->
+<!--ID: 1718107987783-->
 END%%
 
 %%ANKI
 Basic
-Why is the Cartesian product named the way it is?
-Back: It is named after René Descartes.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
-<!--ID: 1717679397836-->
+How is the ordering relation $<$ on $\{2, 3, 5\}$ visualized?
+Back:
+![[relation-ordering-example.png]]
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718107987794-->
 END%%
 
 %%ANKI
 Basic
-Suppose $x, y \in A$. What set is $\langle x, y \rangle$ in?
-Back: $\mathscr{P}\mathscr{P}A$
+A relation is a set of ordered pairs with what additional restriction?
+Back: N/A.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717679397848-->
+<!--ID: 1718107987803-->
 END%%
 
 %%ANKI
 Cloze
-{$x \in A$} iff {$\{x\} \subseteq A$} iff {$\{x\} \in \mathscr{P}A$}.
+For relation $R$, {$xRy$} is alternative notation for {$\langle x, y \rangle \in R$}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717679397860-->
+<!--ID: 1718107987813-->
+END%%
+
+%%ANKI
+Basic
+How is ordering relation $<$ on set $\mathbb{R}$ defined using set-builder notation?
+Back: As $\{\langle x, y\rangle \in \mathbb{R} \times \mathbb{R} \mid x \text{ is less than } y\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718107987822-->
+END%%
+
+%%ANKI
+Basic
+How is $x < y$ rewritten to emphasize that $<$ is a relation?
+Back: $\langle x, y \rangle \in \;<$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718107987831-->
+END%%
+
+%%ANKI
+Basic
+How is the identity relation on $\omega$ defined using set-builder notation?
+Back: $\{\langle n, n \rangle \mid n \in \omega\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718107987840-->
+END%%
+
+%%ANKI
+Basic
+How is the domain of relation $R$ denoted?
+Back: $\mathop{\text{dom}}{R}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718107987850-->
+END%%
+
+%%ANKI
+Basic
+How is the domain of relation $R$ defined?
+Back: $x \in \mathop{\text{dom}}{R} \Leftrightarrow \exists y, \langle x, y \rangle \in R$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718107987862-->
+END%%
+
+%%ANKI
+Basic
+How is the range of relation $R$ denoted?
+Back: $\mathop{\text{ran}}{R}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718107987872-->
+END%%
+
+%%ANKI
+Basic
+How is the range of relation $R$ defined?
+Back: $x \in \mathop{\text{ran}}{R} \Leftrightarrow \exists t, \langle t, x \rangle \in R$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718107987880-->
+END%%
+
+%%ANKI
+Basic
+How is the field of relation $R$ denoted?
+Back: $\mathop{\text{fld}}{R}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718107987887-->
+END%%
+
+%%ANKI
+Basic
+How is the field of relation $R$ defined?
+Back: $\mathop{\text{fld}}{R} = \mathop{\text{dom}}{R} \cup \mathop{\text{ran}}{R}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718107987897-->
 END%%
 
 ## Bibliography

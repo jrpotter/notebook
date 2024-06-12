@@ -121,6 +121,23 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1716307180987-->
 END%%
 
+%%ANKI
+Basic
+What distinguishes direct addressing from closed and open addressing?
+Back: Direct addressing isn't concerned with conflicting keys.
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718199205862-->
+END%%
+
+%%ANKI
+Basic
+Direct addressing sits between what other addressing types?
+Back: Open and closed addressing.
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718199205872-->
+END%%
+
 ## Bibliography
 
+* “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

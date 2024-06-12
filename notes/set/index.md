@@ -255,6 +255,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1717372494462-->
 END%%
 
+%%ANKI
+Basic
+Let $A$ and $B$ be sets. Proving the following is equivalent to showing what class is a set? $$\exists C, \forall y, (y \in C \Leftrightarrow y = \{x\} \times B \text{ for some } x \in A)$$
+Back: $\{\{x\} \times B \mid x \in A\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718105051820-->
+END%%
+
 ## Empty Set Axiom
 
 There exists a set having no members: $$\exists B, \forall x, x \not\in B$$

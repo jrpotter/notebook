@@ -137,6 +137,48 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1716307180980-->
 END%%
 
+An **independent uniform hash function** is the ideal theoretical abstraction. For each possible input $k$ in universe $U$, an output $h(k)$ is produced randomly and independently chosen from range $\{0, 1, \ldots, m - 1\}$. Once a value $h(k)$ is chosen, each subsequent call to $h$ with the same input $k$ yields the same output $h(k)$.
+
+%%ANKI
+Basic
+What is considered the ideal (though only theoretical) hash function?
+Back: The independent uniform hash function.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718197741507-->
+END%%
+
+%%ANKI
+Basic
+Given independent uniform hash function $h$, what about $h$ is "independent"?
+Back: Each key $k$ has output $h(k)$ determined independently from other keys.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718197741527-->
+END%%
+
+%%ANKI
+Basic
+Given independent uniform hash function $h$, what about $h$ is "uniform"?
+Back: Every output of $h$ is equally likely to be any of the values in its range.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718197741537-->
+END%%
+
+%%ANKI
+Basic
+With respect to hashing, a random oracle refers to what kind of hash function?
+Back: An independent uniform hash function.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718197741545-->
+END%%
+
+%%ANKI
+Basic
+Where does "memory" come into play with independent uniform hash functions?
+Back: Once $h(k)$ is determined, subsequent calls to $h$ with $k$ always yield the same value.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718197741555-->
+END%%
+
 ## Bibliography
 
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
