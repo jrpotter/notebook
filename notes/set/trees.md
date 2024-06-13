@@ -985,7 +985,7 @@ END%%
 %%ANKI
 Basic
 What degrees are permitted in a full $k$-ary tree?
-Back: $0$ or $k$
+Back: $0$ and $k$.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1713118128233-->
 END%%
@@ -993,7 +993,7 @@ END%%
 %%ANKI
 Basic
 What degrees are permitted in a perfect $k$-ary tree?
-Back: $0$ or $k$
+Back: $0$ and $k$.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1713118128234-->
 END%%

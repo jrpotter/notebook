@@ -733,7 +733,7 @@ END%%
 
 %%ANKI
 Basic
-What expression results from eliminating $(b; \ldots)$ notation from $(b; i{:}5)[j] = 5$?
+What propositional expression results from eliminating $(b; \ldots)$ notation from $(b; i{:}5)[j] = 5$?
 Back: $(i = j \land 5 = 5) \lor (i \neq j \land b[j] = 5)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1713793130095-->

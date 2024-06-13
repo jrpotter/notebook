@@ -262,7 +262,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for an edge to be incident from vertex $v$?
-Back: $v$ is the first member of the edge.
+Back: $v$ is the first coordinate of the edge.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710796090888-->
 END%%
@@ -270,7 +270,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for an edge to be incident to vertex $v$?
-Back: $v$ is the second member of the edge.
+Back: $v$ is the second coordinate of the edge.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710796090891-->
 END%%

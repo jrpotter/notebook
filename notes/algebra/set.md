@@ -765,7 +765,7 @@ Let $A$, $B$, and $C$ be sets. If $A \neq \varnothing$,
 %%ANKI
 Basic
 What is the left cancellation law of the Cartesian product?
-Back: $(A \times B = A \times C) \Rightarrow B = C$
+Back: If $A \neq \varnothing$ then $(A \times B = A \times C) \Rightarrow B = C$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718107987907-->
 END%%
@@ -781,7 +781,7 @@ END%%
 %%ANKI
 Basic
 What is the right cancellation law of the Cartesian product?
-Back: $(B \times A = C \times A) \Rightarrow B = C$
+Back: If $A \neq \varnothing$ then $(B \times A = C \times A) \Rightarrow B = C$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718107987928-->
 END%%

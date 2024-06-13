@@ -198,9 +198,16 @@ END%%
 
 %%ANKI
 Cloze
-{1:Lower} bounds are defined on data type's numeric ranges, but not {1:upper} (except for {2:fixed-size} types).
+The C standard defines {lower} bounds on numeric ranges of data types.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707493017244-->
+<!--ID: 1718281813453-->
+END%%
+
+%%ANKI
+Cloze
+The C standard does *not* define {1:upper} bounds on numeric ranges of data types (except for {1:fixed-size} types).
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1718281813458-->
 END%%
 
 ## Integer Literals

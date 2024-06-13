@@ -294,8 +294,8 @@ END%%
 Basic
 What is the result of "iterating" the following recursive definition twice? $$a_n = 3a_{n-1} + 2$$
 Back: $$\begin{align*}
-a_1 & = 3(a_0) + 2 \\
-a_2 & = 3(3(a_0) + 2) + 2
+a_1 & = 3a_0 + 2 \\
+a_2 & = 3(3a_0 + 2) + 2
 \end{align*}$$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1713998412595-->
