@@ -191,6 +191,82 @@ END%%
 
 %%ANKI
 Basic
+Let $A$ be a set containing no ordered pairs. What is $\mathop{\text{dom}} A$?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739893-->
+END%%
+
+%%ANKI
+Basic
+Let $A = \{\{\{x\}, \{x, y\}\}, \{z\}\}$. What is $\mathop{\text{dom}} A$?
+Back: $\{x\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739898-->
+END%%
+
+%%ANKI
+Cloze
+For any set $\mathscr{A}$, $\mathop{\text{dom}}\bigcup\mathscr{A}$ {$=$} $\bigcup\, \{\mathop{\text{dom}} R \mid R \in \mathscr{A}\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739901-->
+END%%
+
+%%ANKI
+Basic
+The following is analagous to what predicate logical expression of commuting quantifiers?$$\mathop{\text{dom}}\bigcup\mathscr{A} = \bigcup\, \{\mathop{\text{dom}} R \mid R \in \mathscr{A}\}$$
+Back: $\exists x, \exists y, P(x, y) \Leftrightarrow \exists y, \exists x, P(x, y)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739907-->
+END%%
+
+%%ANKI
+Cloze
+For any set $\mathscr{A}$, $\mathop{\text{dom}}\bigcap\mathscr{A}$ {$\subseteq$} $\bigcap\, \{\mathop{\text{dom}} R \mid R \in \mathscr{A}\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739910-->
+END%%
+
+%%ANKI
+Basic
+The following is analagous to what predicate logical expression of commuting quantifiers? $$\mathop{\text{dom}}\bigcap\mathscr{A} \subseteq \bigcap\, \{\mathop{\text{dom}} R \mid R \in \mathscr{A}\}$$
+Back: $\exists x, \forall y, P(x, y) \Rightarrow \forall y, \exists x, P(x, y)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739914-->
+END%%
+
+%%ANKI
+Cloze
+For any set $\mathscr{A}$, $\mathop{\text{ran}}\bigcup\mathscr{A}$ {$=$} $\bigcup\, \{\mathop{\text{ran}} R \mid R \in \mathscr{A}\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739918-->
+END%%
+
+%%ANKI
+Basic
+The following is analagous to what predicate logical expression of commuting quantifiers? $$\mathop{\text{ran}}\bigcup\mathscr{A} = \bigcup\, \{\mathop{\text{ran}} R \mid R \in \mathscr{A}\}$$
+Back: $\exists x, \exists y, P(x, y) \Leftrightarrow \exists y, \exists x, P(x, y)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739922-->
+END%%
+
+%%ANKI
+Cloze
+For any set $\mathscr{A}$, $\mathop{\text{ran}}\bigcap\mathscr{A}$ {$\subseteq$} $\bigcap\, \{\mathop{\text{ran}} R \mid R \in \mathscr{A}\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739926-->
+END%%
+
+%%ANKI
+Basic
+The following is analagous to what predicate logical expression of commuting quantifiers? $$\mathop{\text{ran}}\bigcap\mathscr{A} \subseteq \bigcap\, \{\mathop{\text{ran}} R \mid R \in \mathscr{A}\}$$
+Back: $\exists x, \forall y, P(x, y) \Rightarrow \forall y, \exists x, P(x, y)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739931-->
+END%%
+
+%%ANKI
+Basic
 How is the range of relation $R$ denoted?
 Back: $\mathop{\text{ran}}{R}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -207,6 +283,22 @@ END%%
 
 %%ANKI
 Basic
+Let $A$ be a set containing no ordered pairs. What is $\mathop{\text{ran}} A$?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739936-->
+END%%
+
+%%ANKI
+Basic
+Let $A = \{\{\{x\}, \{x, y\}\}, \{z\}\}$. What is $\mathop{\text{ran}} A$?
+Back: $\{y\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739940-->
+END%%
+
+%%ANKI
+Basic
 How is the field of relation $R$ denoted?
 Back: $\mathop{\text{fld}}{R}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -219,6 +311,236 @@ How is the field of relation $R$ defined?
 Back: $\mathop{\text{fld}}{R} = \mathop{\text{dom}}{R} \cup \mathop{\text{ran}}{R}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718107987897-->
+END%%
+
+%%ANKI
+Basic
+Let $A = \{\{\{x\}, \{x, y\}\}, \{z\}\}$. What is $\mathop{\text{fld}} A$?
+Back: $\{x, y\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739945-->
+END%%
+
+%%ANKI
+Basic
+If $\langle x, y \rangle \in A$, what sets are in $\bigcup A$?
+Back: $\{x\}$ and $\{x, y\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739950-->
+END%%
+
+%%ANKI
+Basic
+If $\langle x, y \rangle \in A$, what sets are in $\bigcup \bigcup A$?
+Back: $x$ and $y$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739955-->
+END%%
+
+%%ANKI
+Basic
+$\mathop{\text{fld}} R = \bigcup \bigcup R$ is necessary for what condition?
+Back: $R$ is a relation.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739961-->
+END%%
+
+## n-ary Relations
+
+We define ordered triples as $\langle x, y, z \rangle = \langle \langle x, y \rangle, z \rangle$. We define ordered quadruples as $\langle x_1, x_2, x_3, x_4 \rangle = \langle \langle \langle x_1, x_2 \rangle, x_3 \rangle, x_4 \rangle$. This idea generalizes to $n$-tuples. As a special case, we define the $1$-tuple $\langle x \rangle = x$.
+
+An **$n$-ary relation on $A$** is a set of ordered $n$-tuples with all **components** in $A$. Keep in mind though, a unary ($1$-ary) relation on $A$ is just a subset of $A$ and may not be a relation at all.
+
+%%ANKI
+Basic
+Ordered triple $\langle x, y, z \rangle$ is "syntactic sugar" for what?
+Back: $\langle \langle x, y \rangle, z \rangle$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620058-->
+END%%
+
+%%ANKI
+Basic
+Ordered quadruple $\langle x_1, x_2, x_3, x_4 \rangle$ is "syntactic sugar" for what?
+Back: $\langle \langle \langle x_1, x_2 \rangle, x_3 \rangle, x_4 \rangle$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620086-->
+END%%
+
+%%ANKI
+Basic
+A $1$-tuple $\langle x \rangle$ is "syntactic sugar" for what?
+Back: $x$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620091-->
+END%%
+
+%%ANKI
+Basic
+What simpler construct are $n$-tuples constructed from?
+Back: Ordered pairs.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620096-->
+END%%
+
+%%ANKI
+Basic
+Are $n$-tuples defined in a left- or right-associative way?
+Back: Left-associative.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620101-->
+END%%
+
+%%ANKI
+Basic
+*What* is an $n$-tuple?
+Back: A left-associative nesting of $n$ elements as ordered pairs.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620108-->
+END%%
+
+%%ANKI
+Basic
+*What* is an $n$-ary relation on $A$?
+Back: A set of ordered $n$-tuples with all components in $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620114-->
+END%%
+
+%%ANKI
+Basic
+A $2$-ary relation on $A$ is a subset of what Cartesian product?
+Back: $A \times A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620119-->
+END%%
+
+%%ANKI
+Basic
+A $1$-ary relation on $A$ is a subset of what Cartesian product?
+Back: N/A
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620126-->
+END%%
+
+%%ANKI
+Basic
+A $3$-ary relation on $A$ is a subset of what Cartesian product?
+Back: $(A \times A) \times A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620132-->
+END%%
+
+%%ANKI
+Basic
+What terminological quirk exists with respect to $n$-ary relations on $A$?
+Back: A $1$-ary relation on $A$ may not be a relation at all.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620143-->
+END%%
+
+%%ANKI
+Basic
+A $1$-ary relation on $A$ is a subset of what?
+Back: $A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620149-->
+END%%
+
+%%ANKI
+Basic
+For what values of $n$ is an "$n$-ary relation on $A$" a "relation"?
+Back: $n > 1$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620155-->
+END%%
+
+%%ANKI
+Basic
+For what values of $n$ is an "$n$-ary relation on $A$" *not* a "relation"?
+Back: Potentially when $n = 1$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620160-->
+END%%
+
+%%ANKI
+Basic
+What *is* $n$ in term "$n$-ary relation on $A$"?
+Back: A positive integer.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620165-->
+END%%
+
+%%ANKI
+Basic
+Which of "$n$-ary relations on $A$" and "relations" is more general?
+Back: Relations.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620169-->
+END%%
+
+%%ANKI
+Basic
+Is $\{\langle x \rangle, \langle x, y \rangle, \langle x, y, z \rangle\}$ a relation?
+Back: Indeterminate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620173-->
+END%%
+
+%%ANKI
+Basic
+What must be true for $\{\langle x \rangle, \langle x, y \rangle, \langle x, y, z \rangle\}$ to be a relation?
+Back: $x$ must be an ordered pair.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620178-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $\{\langle \varnothing \rangle, \langle \varnothing, \varnothing \rangle, \langle \varnothing, \varnothing, \varnothing \rangle\}$ a relation?
+Back: $\langle \varnothing \rangle = \varnothing$ is not an ordered pair.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620182-->
+END%%
+
+%%ANKI
+Basic
+Is $\{\langle x, y \rangle, \langle x, y, z \rangle\}$ a relation?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620187-->
+END%%
+
+%%ANKI
+Basic
+Let $x, y, z \in A$. Is $\{\langle x, y \rangle, \langle x, y, z \rangle\}$ a $2$-ary relation on $A$?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620193-->
+END%%
+
+%%ANKI
+Basic
+Let $x, y, z \in A$. *Why* isn't $\{\langle x, y \rangle, \langle x, y, z \rangle\}$ a $2$-ary relation on $A$?
+Back: Because $\langle x, y, z \rangle \not\in A \times A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620199-->
+END%%
+
+%%ANKI
+Basic
+Let $x, y, z \in A$. Is $\{\langle x, y \rangle, \langle x, y, z \rangle\}$ a $3$-ary relation on $A$?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620203-->
+END%%
+
+%%ANKI
+Basic
+Let $x, y, z \in A$. *Why* isn't $\{\langle x, y \rangle, \langle x, y, z \rangle\}$ a $3$-ary relation on $A$?
+Back: Because $\langle x, y \rangle \not\in (A \times A) \times A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718329620208-->
 END%%
 
 ## Bibliography

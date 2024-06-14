@@ -158,6 +158,34 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707494832058-->
 END%%
 
+%%ANKI
+Cloze
+Propositional logical operator: $\forall x, \forall y, P(x, y)$ {$\Leftrightarrow$} $\forall y, \forall x, P(x, y)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739967-->
+END%%
+
+%%ANKI
+Cloze
+Propositional logical operator: $\forall x, \exists y, P(x, y)$ {$\Leftarrow$} {$\exists y, \forall x, P(x, y)$}. 
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739972-->
+END%%
+
+%%ANKI
+Cloze
+Propositional logical operator: $\exists x, \forall y, P(x, y)$ {$\Rightarrow$} $\forall y, \exists x, P(x, y)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327739978-->
+END%%
+
+%%ANKI
+Cloze
+Propositional logical operator: $\exists x, \exists y, P(x, y)$ {$\Leftrightarrow$} $\exists y, \exists x, P(x, y)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718327812365-->
+END%%
+
 ## Identifiers
 
 Identifiers are said to be **bound** if they are parameters to a quantifier. Identifiers that are not bound are said to be **free**. A first-order logic formula is said to be in **prenex normal form** (PNF) if written in two parts: the first consisting of quantifiers and bound variables (the **prefix**), and the second consisting of no quantifiers (the **matrix**).

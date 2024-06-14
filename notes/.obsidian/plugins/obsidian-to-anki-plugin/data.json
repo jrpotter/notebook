@@ -189,7 +189,7 @@
     "binary/index.md": "9089c6f0e86a0727cd03984f51350de0",
     "_journal/2024-02-09.md": "a798d35f0b2bd1da130f7ac766166109",
     "c/types.md": "cf3e66e5aee58a94db3fdf0783908555",
-    "logic/quantification.md": "df25c9b73548438f010f450e3755d030",
+    "logic/quantification.md": "8898b8c0b9f6818942068df0c4428b26",
     "c/declarations.md": "2de27f565d1020819008ae80593af435",
     "algorithms/sorting/bubble-sort.md": "872fb23e41fb3ac36e8c46240e9a027f",
     "_journal/2024-02-10.md": "562b01f60ea36a3c78181e39b1c02b9f",
@@ -503,7 +503,7 @@
     "_journal/2024-06/2024-06-04.md": "52b28035b9c91c9b14cef1154c1a0fa1",
     "_journal/2024-06-06.md": "3f9109925dea304e7172df39922cc95a",
     "_journal/2024-06/2024-06-05.md": "b06a0fa567bd81e3b593f7e1838f9de1",
-    "set/relations.md": "80ad79358f1ce6ecf488a059c4de78bb",
+    "set/relations.md": "303f83287d33a300cf8c7fafe2834235",
     "_journal/2024-06-07.md": "795be41cc3c9c0f27361696d237604a2",
     "_journal/2024-06/2024-06-06.md": "db3407dcc86fa759b061246ec9fbd381",
     "_journal/2024-06-08.md": "b20d39dab30b4e12559a831ab8d2f9b8",
@@ -525,7 +525,7 @@
     "_journal/2024-06/2024-06-11.md": "764ccba25646673fdf7bb6a5f090394d",
     "hashing/open-addressing.md": "c27e92f2865bbb426fdd1e30fc52f1ed",
     "hashing/closed-addressing.md": "962a48517969bf5e410cf78fc584051f",
-    "_journal/2024-06-13.md": "488f93abe604977d0d150070640d50c0",
+    "_journal/2024-06-13.md": "dec86b3a3e43eca306c3cf9a46b260ed",
     "_journal/2024-06/2024-06-12.md": "f82dfa74d0def8c3179d3d076f94558e"
   },
   "fields_dict": {
