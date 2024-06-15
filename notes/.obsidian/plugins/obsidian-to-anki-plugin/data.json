@@ -512,7 +512,7 @@
     "_journal/2024-06/2024-06-06.md": "db3407dcc86fa759b061246ec9fbd381",
     "_journal/2024-06-08.md": "b20d39dab30b4e12559a831ab8d2f9b8",
     "_journal/2024-06/2024-06-07.md": "c6bfc4c1e5913d23ea7828a23340e7d3",
-    "lambda-calculus/alpha-conversion.md": "9965a24624a745af16f10d9ffd78cc0c",
+    "lambda-calculus/alpha-conversion.md": "d3a10cb834e696909b04611c83f738cb",
     "lambda-calculus/index.md": "756c93b8717fd00b04f8a99509066486",
     "x86-64/instructions/condition-codes.md": "56ad6eb395153609a1ec51835925e8c9",
     "x86-64/instructions/logical.md": "818428b9ef84753920dc61e5c2de9199",
@@ -535,7 +535,8 @@
     "_journal/2024-06/2024-06-13.md": "e2722a00585d94794a089e8035e05728",
     "set/functions.md": "34bf35a8ae16a0d735ce7e3e1b5bfa05",
     "_journal/2024-06-15.md": "92cb8dc5c98e10832fb70c0e3ab3cec4",
-    "_journal/2024-06/2024-06-14.md": "5d12bc272238ac985a1d35d3d63ea307"
+    "_journal/2024-06/2024-06-14.md": "5d12bc272238ac985a1d35d3d63ea307",
+    "lambda-calculus/beta-reduction.md": "aa1b302755cde85085abedbde85161df"
   },
   "fields_dict": {
     "Basic": [

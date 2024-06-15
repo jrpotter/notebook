@@ -22,10 +22,34 @@ END%%
 
 %%ANKI
 Basic
+What two ways can we pronounce $P \equiv_\alpha Q$?
+Back: "$P$ is congruent to $Q$" and "$P$ $\alpha$-converts to $Q$".
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718475477173-->
+END%%
+
+%%ANKI
+Basic
 If $P \equiv_\alpha Q$, does $P \equiv Q$?
 Back: Not necessarily.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717687744141-->
+END%%
+
+%%ANKI
+Basic
+What does an $\alpha$-conversion refer to?
+Back: The act of replacing an occurrence of $(\lambda x. M)$ with $\lambda y. [y/x]M$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718475424870-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes terms "$\alpha$-conversion" and "$\alpha$-converts"?
+Back: The latter refers to 0 or more applications of the former.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718475424871-->
 END%%
 
 %%ANKI
@@ -42,6 +66,20 @@ What property must $y$ satisfy for $\lambda x. M \equiv_\alpha \lambda y. M$?
 Back: $y \not\in FV(M)$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717687744147-->
+END%%
+
+%%ANKI
+Cloze
+"$\alpha$-{conversion}" refers to exactly one change of bound variable.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718475424873-->
+END%%
+
+%%ANKI
+Cloze
+"$\alpha$-{converts}" refers to zero or more change of bound variables.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718475424874-->
 END%%
 
 %%ANKI
@@ -102,9 +140,17 @@ END%%
 
 %%ANKI
 Cloze
-$\alpha$-conversion is known as a change of {bound variables}.
+$\alpha$-conversion is known as a change of {bound variable}.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717687744176-->
+END%%
+
+%%ANKI
+Basic
+What greek-prefixed term is a change of bound variable known as?
+Back: An $\alpha$-conversion.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718475424876-->
 END%%
 
 %%ANKI
@@ -382,6 +428,50 @@ What does Hindley et al. say the following implication says about substitution? 
 Back: It is well-defined with respect to $\alpha$-conversion.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1718422981125-->
+END%%
+
+## Simultaneous Substitution
+
+Substitution can be generalized in the natural way to define simultaneous substitution $$[N_1/x_1, N_2/x_2, \ldots, N_n/x_n]M$$ for $n \geq 2$. As in [[equiv-trans#Substitution|equivalence-transformation]], simultaneous substitution is different from sequential substitution.
+
+%%ANKI
+Basic
+How is simultaneous substitution of $N_1$ for $x_1$ and $N_2$ for $x_2$ in $M$ denoted?
+Back: $[N_1/x_1, N_2/x]M$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718473252304-->
+END%%
+
+%%ANKI
+Basic
+How is $[N_1/x_1, N_2/x_2]M$ denoted in the equivalence-transformation system?
+Back: $M_{N_1, N_2}^{x_1, x_2}$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718473252307-->
+END%%
+
+%%ANKI
+Basic
+How is $M_{N_1, N_2}^{x_1, x_2}$ denoted in $\lambda$-calculus?
+Back: $[N_1/x_1, N_2/x_2]M$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718473252312-->
+END%%
+
+%%ANKI
+Basic
+Suppose $M \equiv x_1x_2$. What is the result of $[u/x_1]([x_1/x_2]M)$?
+Back: $uu$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718473252309-->
+END%%
+
+%%ANKI
+Basic
+Suppose $M \equiv x_1x_2$. What is the result of $[u/x_1, x_1/x_2]M$?
+Back: $ux_1$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718473252311-->
 END%%
 
 ## Bibliography
