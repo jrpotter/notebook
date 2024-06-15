@@ -152,6 +152,8 @@ Let $x$, $y$, and $v$ be distinct variables. Then
 * $v \not\in FV(M) \Rightarrow [P/v][v/x]M \equiv_\alpha [P/x]M$
 * $v \not\in FV(M) \Rightarrow [x/v][v/x]M \equiv_\alpha M$
 * $y \not\in FV(P) \Rightarrow [P/x][Q/y]M \equiv_\alpha [([P/x]Q)/y][P/x]M$
+* $x \not\in FV(Q) \land y \not\in FV(P) \Rightarrow [P/x][Q/y]M \equiv_\alpha [Q/y][P/x]M$
+* $[P/x][Q/x]M \equiv_\alpha [([P/x]Q)/x]M$
 
 %%ANKI
 Basic
@@ -186,9 +188,8 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 END%%
 
 %%ANKI
-Basic
-$[P/v][v/x]M \equiv_\alpha [P/x]M$ is necessary for what condition?
-Back: $v \not\in FV(M)$
+Cloze
+{$v \not\in FV(M)$} $\Rightarrow [P/v][v/x]M \equiv_\alpha [P/x]M$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717855810777-->
 END%%
@@ -266,16 +267,53 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 END%%
 
 %%ANKI
-Basic
-$[P/x][Q/y]M \equiv_\alpha [([P/x]Q)/y][P/x]M$ is necessary for what condition?
-Back: $y \not\in FV(P)$
+Cloze
+{$y \not\in FV(P)$} $\Rightarrow [P/x][Q/y]M \equiv_\alpha [([P/x]Q)/y][P/x]M$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717855810784-->
 END%%
 
 %%ANKI
+Cloze
+{$x \not\in FV(Q) \land y \not\in FV(P)$} $\Rightarrow [P/x][Q/y]M \equiv_\alpha [Q/y][P/x]M$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718422235903-->
+END%%
+
+%%ANKI
 Basic
-What happens if the antecedent is false in $y \not\in FV(P) \Rightarrow [P/x][Q/y]M \equiv_\alpha [([P/x]Q)/y][P/x]M$?
+$[P/x][Q/y]M \equiv_\alpha [Q/y][P/x]M$ is a specialization of what more general congruence?
+Back: $[P/x][Q/y]M \equiv_\alpha [([P/x]Q)/y][P/x]M$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718422235909-->
+END%%
+
+%%ANKI
+Cloze
+{$F$} $\Rightarrow [P/x][Q/x]M \equiv_\alpha [([P/x]Q)/x]M$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718422235912-->
+END%%
+
+%%ANKI
+Basic
+What expression containing nested substitutions is congruent to $[P/x][Q/x]M$?
+Back: $[([P/x]Q)/x]M$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718422235916-->
+END%%
+
+%%ANKI
+Basic
+What expression containing adjacent substitutions is congruent to $[([P/x]Q)/x]M$?
+Back: $[P/x][Q/x]M$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718422279995-->
+END%%
+
+%%ANKI
+Basic
+What happens if the antecedent of the following lemma is false? $$y \not\in FV(P) \Rightarrow [P/x][Q/y]M \equiv_\alpha [([P/x]Q)/y][P/x]M$$
 Back: $y$ is subbed in $M$ on the LHS but subbed in both $P$ and $M$ on the RHS.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717855810787-->
@@ -311,6 +349,39 @@ Free occurrences of $y$ are substituted in which $\lambda$-terms of $[([P/x]Q)/y
 Back: $P$ and $M$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717855810802-->
+END%%
+
+For $\lambda$-terms $M$, $M'$, $N$, and $N'$, and variable $x$, $$M \equiv_\alpha M' \land N \equiv_\alpha N' \Rightarrow [N/x]M \equiv_\alpha [N'/x]M'$$
+
+%%ANKI
+Basic
+The proof of which implication shows "substitution is well-behaved w.r.t. $\alpha$-conversion"?
+Back: $M \equiv_\alpha M' \land N \equiv_\alpha N' \Rightarrow [N/x]M \equiv_\alpha [N'/x]M'$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718422973129-->
+END%%
+
+%%ANKI
+Basic
+What does Hindley et al. mean by "substitution is well-behaved w.r.t. $\alpha$-conversion"?
+Back: $\alpha$-converting substitution inputs yields congruent outputs.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718422973135-->
+END%%
+
+%%ANKI
+Cloze
+{$M \equiv_\alpha M' \land N \equiv_\alpha N'$} $\Rightarrow [N/x]M \equiv_\alpha [N'/x]M'$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718422973141-->
+END%%
+
+%%ANKI
+Basic
+What does Hindley et al. say the following implication says about substitution? $$M \equiv_\alpha M' \land N \equiv_\alpha N' \Rightarrow [N/x]M \equiv_\alpha [N'/x]M'$$
+Back: It is well-defined with respect to $\alpha$-conversion.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1718422981125-->
 END%%
 
 ## Bibliography

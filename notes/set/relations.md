@@ -345,6 +345,24 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1718327739961-->
 END%%
 
+A set $A$ is **single-valued** iff for each $x$ in $\mathop{\text{dom}}A$, there is only one $y$ such that $xAy$. A set $A$ is **single-rooted** iff for each $y \in \mathop{\text{ran}}A$, there is only one $x$ such that $xAy$.
+
+%%ANKI
+Basic
+What does it mean for a set $A$ to be "single-valued"?
+Back: For each $x \in \mathop{\text{dom}}A$, there exists a unique $y$ such that $xAy$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718427443355-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a set $A$ to be "single-rooted"?
+Back: For each $y \in \mathop{\text{ran}}A$, there exists a unique $x$ such that $xRy$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718465870483-->
+END%%
+
 ## n-ary Relations
 
 We define ordered triples as $\langle x, y, z \rangle = \langle \langle x, y \rangle, z \rangle$. We define ordered quadruples as $\langle x_1, x_2, x_3, x_4 \rangle = \langle \langle \langle x_1, x_2 \rangle, x_3 \rangle, x_4 \rangle$. This idea generalizes to $n$-tuples. As a special case, we define the $1$-tuple $\langle x \rangle = x$.
@@ -405,6 +423,14 @@ Basic
 Back: A set of ordered $n$-tuples with all components in $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718329620114-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a relation to be on some set $A$?
+Back: The components of the relation's members are members of $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718427443424-->
 END%%
 
 %%ANKI

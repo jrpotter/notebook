@@ -506,7 +506,7 @@ END%%
 %%ANKI
 Basic
 If $x \neq e$, why might $E_e^x = E$ be an equivalence despite $x$ existing in $E$?
-Back: If the only occurrences of $x$ in $E$ are bound.
+Back: The only occurrences of $x$ in $E$ may be bound.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707762304135-->
 END%%

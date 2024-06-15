@@ -137,7 +137,11 @@
     "venn-diagram-symm-diff.png",
     "relation-ordering-example.png",
     "open-addressing.png",
-    "closed-addressing.png"
+    "closed-addressing.png",
+    "function-bijective.png",
+    "function-injective.png",
+    "function-surjective.png",
+    "function-general.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -176,7 +180,7 @@
     "_journal/2024-02-02.md": "a3b222daee8a50bce4cbac699efc7180",
     "_journal/2024-02-01.md": "3aa232387d2dc662384976fd116888eb",
     "_journal/2024-01-31.md": "7c7fbfccabc316f9e676826bf8dfe970",
-    "logic/equiv-trans.md": "fb7f2027b2b323374580fde8a1de579e",
+    "logic/equiv-trans.md": "c52d0907d35d7a3c2e4576f2bd411257",
     "_journal/2024-02-07.md": "8d81cd56a3b33883a7706d32e77b5889",
     "algorithms/loop-invariants.md": "cbefc346842c21a6cce5c5edce451eb2",
     "algorithms/loop-invariant.md": "3b390e720f3b2a98e611b49a0bb1f5a9",
@@ -377,7 +381,7 @@
     "_journal/2024-04-16.md": "0bf6e2f2a3afab73d528cee88c4c1a92",
     "_journal/2024-04/2024-04-15.md": "256253b0633d878ca58060162beb7587",
     "algebra/polynomials.md": "da56d2d6934acfa2c6b7b2c73c87b2c7",
-    "algebra/sequences/delta-constant.md": "70f45d7b8d5c3a147fabc279105c4983",
+    "algebra/sequences/delta-constant.md": "d9af958375cdf993e4ac3c68c1324ba7",
     "_journal/2024-04-19.md": "a293087860a7f378507a96df0b09dd2b",
     "_journal/2024-04/2024-04-18.md": "f6e5bee68dbef90a21ca92a846930a88",
     "_journal/2024-04/2024-04-17.md": "331423470ea83fc990c1ee1d5bd3b3f1",
@@ -503,12 +507,12 @@
     "_journal/2024-06/2024-06-04.md": "52b28035b9c91c9b14cef1154c1a0fa1",
     "_journal/2024-06-06.md": "3f9109925dea304e7172df39922cc95a",
     "_journal/2024-06/2024-06-05.md": "b06a0fa567bd81e3b593f7e1838f9de1",
-    "set/relations.md": "303f83287d33a300cf8c7fafe2834235",
+    "set/relations.md": "d486836acec494ea3b185ec9746df7c9",
     "_journal/2024-06-07.md": "795be41cc3c9c0f27361696d237604a2",
     "_journal/2024-06/2024-06-06.md": "db3407dcc86fa759b061246ec9fbd381",
     "_journal/2024-06-08.md": "b20d39dab30b4e12559a831ab8d2f9b8",
     "_journal/2024-06/2024-06-07.md": "c6bfc4c1e5913d23ea7828a23340e7d3",
-    "lambda-calculus/alpha-conversion.md": "c0d40271a14b1f44b937de7791ca089b",
+    "lambda-calculus/alpha-conversion.md": "9965a24624a745af16f10d9ffd78cc0c",
     "lambda-calculus/index.md": "756c93b8717fd00b04f8a99509066486",
     "x86-64/instructions/condition-codes.md": "56ad6eb395153609a1ec51835925e8c9",
     "x86-64/instructions/logical.md": "818428b9ef84753920dc61e5c2de9199",
@@ -526,7 +530,12 @@
     "hashing/open-addressing.md": "c27e92f2865bbb426fdd1e30fc52f1ed",
     "hashing/closed-addressing.md": "962a48517969bf5e410cf78fc584051f",
     "_journal/2024-06-13.md": "dec86b3a3e43eca306c3cf9a46b260ed",
-    "_journal/2024-06/2024-06-12.md": "f82dfa74d0def8c3179d3d076f94558e"
+    "_journal/2024-06/2024-06-12.md": "f82dfa74d0def8c3179d3d076f94558e",
+    "_journal/2024-06-14.md": "5d12bc272238ac985a1d35d3d63ea307",
+    "_journal/2024-06/2024-06-13.md": "e2722a00585d94794a089e8035e05728",
+    "set/functions.md": "34bf35a8ae16a0d735ce7e3e1b5bfa05",
+    "_journal/2024-06-15.md": "92cb8dc5c98e10832fb70c0e3ab3cec4",
+    "_journal/2024-06/2024-06-14.md": "5d12bc272238ac985a1d35d3d63ea307"
   },
   "fields_dict": {
     "Basic": [
