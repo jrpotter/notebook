@@ -777,6 +777,22 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1717036717102-->
 END%%
 
+%%ANKI
+Basic
+Is $(\lambda x. xy)N \equiv Ny$?
+Back: No.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065185785-->
+END%%
+
+%%ANKI
+Basic
+Is $[N/x]xy \equiv Ny$?
+Back: Yes.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065185789-->
+END%%
+
 For all $\lambda$-terms $M$, $N$, and variables $x$:
 
 * $[x/x]M \equiv M$

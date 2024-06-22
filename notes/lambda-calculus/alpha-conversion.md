@@ -21,6 +21,13 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 END%%
 
 %%ANKI
+Cloze
+$P \equiv Q$ is to {equivalent} whereas $P \equiv_\alpha Q$ is to {congruent}.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065602220-->
+END%%
+
+%%ANKI
 Basic
 What two ways can we pronounce $P \equiv_\alpha Q$?
 Back: "$P$ is congruent to $Q$" and "$P$ $\alpha$-converts to $Q$".

@@ -119,7 +119,7 @@ END%%
 
 %%ANKI
 Basic
-What contradiction is introduced to explain why the strong induction assumption is valid?
+What negation is introduced to explain why the strong induction assumption is valid?
 Back: If $P(n)$ is not true for all $n$, there exists a *first* $n_0$ for which $\neg P(n_0)$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1714574131963-->

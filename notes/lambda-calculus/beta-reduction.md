@@ -167,6 +167,105 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1718475424868-->
 END%%
 
+## Normal Form
+
+A term $Q$ which contains no $\beta$-redexes is called a **$\beta$-normal form** (or a **term in $\beta$-normal form** or just a **$\beta$-nf**). The class of all $\beta$-normal forms is called $\beta$-nf or $\lambda\beta$-nf. If a term $P$ $\beta$-reduces to a term $Q$ in $\beta$-nf, then $Q$ is called a **$\beta$-normal form of $P$**.
+
+%%ANKI
+Basic
+$\beta$-reduction terminates if and only if what?
+Back: We reduce to a term in $\beta$-normal form.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065185793-->
+END%%
+
+%%ANKI
+Basic
+Is $\beta$-reduction guaranteed to terminate?
+Back: No.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065185796-->
+END%%
+
+%%ANKI
+Basic
+Is $\beta$-reduction guaranteed to simplify?
+Back: No.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065185803-->
+END%%
+
+%%ANKI
+Basic
+How is a $\beta$-normal form defined?
+Back: As a $\lambda$-term that contains no $\beta$-redexes.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065185808-->
+END%%
+
+%%ANKI
+Cloze
+The class of {all $\beta$-normal forms} is called {$\beta$-nf/$\lambda\beta$-nf}.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065185812-->
+END%%
+
+%%ANKI
+Basic
+What ambiguity does term "$\beta$-nf" introduce?
+Back: It refers to a specific $\beta$-normal form or the class of $\beta$-normal forms.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065185815-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for term $Q$ to be a $\beta$-normal form of term $P$?
+Back: $P$ $\beta$-reduces to a term $Q$ in $\beta$-nf.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065185819-->
+END%%
+
+%%ANKI
+Basic
+How is the class $\beta$-nf alternatively denoted?
+Back: As $\lambda\beta$-nf.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065185823-->
+END%%
+
+%%ANKI
+Basic
+How is the class $\lambda\beta$-nf alternatively denoted?
+Back: As $\beta$-nf.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065185799-->
+END%%
+
+%%ANKI
+Basic
+What is the $\beta$-normal form of $(\lambda x. x(xy))N$?
+Back: $N(Ny)$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065602204-->
+END%%
+
+%%ANKI
+Basic
+What is the $\beta$-normal form of $(\lambda x. xx)(\lambda x. xx)$?
+Back: N/A.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065602211-->
+END%%
+
+%%ANKI
+Basic
+How many $\beta$-reductions can a term have?
+Back: One or more.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719065602215-->
+END%%
+
 ## Bibliography
 
 * Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).

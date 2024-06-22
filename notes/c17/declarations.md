@@ -212,7 +212,7 @@ END%%
 
 ## Integer Literals
 
-Negative integer literals are typed in a counterintuitive way. When the compiler sees a number of form `-X`, the type of `X` is first determined *before* then being negated. Promotion rules are as follows:
+Negative integer literals are typed in a counterintuitive way. When the compiler sees a number of form `-X`, the type of `X` is determined *before* being negated. Promotion rules are as follows:
 
 Decimal     | Other Bases
 ----------- | --------------------

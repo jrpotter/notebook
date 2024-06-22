@@ -1,0 +1,65 @@
+---
+title: Abstract Rewriting Systems
+TARGET DECK: Obsidian::STEM
+FILE TAGS: ars
+tags:
+  - ars
+---
+
+## Overview
+
+In an **abstract rewriting system** (ARS), an object is said to be in **normal form** if it cannot be rewritten any further, i.e. it is irreducible. An object is said to be in **canonical form** if it is presented in the "standard" representation (where "standard" is defined per field).
+
+In most fields, a canoncial form specifies a *unique* representation.
+
+%%ANKI
+Basic
+What is ARS an acronym for?
+Back: **A**bstract **R**ewriting **S**ystem.
+Reference: “Normal Form,” in _Wikipedia_, April 27, 2024, [https://en.wikipedia.org/w/index.php?title=Normal_form](https://en.wikipedia.org/w/index.php?title=Normal_form_(abstract_rewriting)&oldid=1221094193).
+<!--ID: 1719067812812-->
+END%%
+
+%%ANKI
+Basic
+Canonical/normal forms are associated with what general class of abstract systems?
+Back: Abstract rewriting systems.
+Reference: “Canonical Form,” in _Wikipedia_, January 7, 2024, [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1194093963).
+<!--ID: 1719067812820-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for an object to be in normal form?
+Back: It cannot be rewritten any further, i.e. it is irreducible.
+Reference: Normal Form,” in _Wikipedia_, April 27, 2024, [https://en.wikipedia.org/w/index.php?title=Normal_form](https://en.wikipedia.org/w/index.php?title=Normal_form_(abstract_rewriting)&oldid=1221094193).
+END%%
+
+%%ANKI
+Basic
+What does it mean for an object to be in canonical form?
+Back: It is presented in the "standard" way with respect to the field its presented in.
+Reference: “Canonical Form,” in _Wikipedia_, January 7, 2024, [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1194093963).
+<!--ID: 1719067812824-->
+END%%
+
+%%ANKI
+Basic
+What two assumptions are usually associated with an object in canonical form?
+Back: It is as simply represented as possible and it is uniquely identifying.
+Reference: “Canonical Form,” in _Wikipedia_, January 7, 2024, [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1194093963).
+<!--ID: 1719067812829-->
+END%%
+
+%%ANKI
+Basic
+How do "canonical" and "normal" forms differ in most fields?
+Back: The former usually specifies a unique representation for the object.
+Reference: “Canonical Form,” in _Wikipedia_, January 7, 2024, [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1194093963).
+<!--ID: 1719067812833-->
+END%%
+
+## Bibliography
+
+* “Canonical Form,” in _Wikipedia_, January 7, 2024, [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1194093963).
+* Normal Form,” in _Wikipedia_, April 27, 2024, [https://en.wikipedia.org/w/index.php?title=Normal_form](https://en.wikipedia.org/w/index.php?title=Normal_form_(abstract_rewriting)&oldid=1221094193).
