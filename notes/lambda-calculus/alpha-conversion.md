@@ -62,10 +62,10 @@ END%%
 
 %%ANKI
 Basic
-What property must $y$ satisfy for $\lambda x. M \equiv_\alpha \lambda y. M$?
+What property must $y$ satisfy for $\lambda x. M \equiv_\alpha \lambda y. [y/x]M$?
 Back: $y \not\in FV(M)$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
-<!--ID: 1717687744147-->
+<!--ID: 1718802166425-->
 END%%
 
 %%ANKI
@@ -336,7 +336,7 @@ END%%
 
 %%ANKI
 Cloze
-{$F$} $\Rightarrow [P/x][Q/x]M \equiv_\alpha [([P/x]Q)/x]M$
+{$T$} $\Rightarrow [P/x][Q/x]M \equiv_\alpha [([P/x]Q)/x]M$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1718422235912-->
 END%%
@@ -402,7 +402,7 @@ For $\lambda$-terms $M$, $M'$, $N$, and $N'$, and variable $x$, $$M \equiv_\alph
 %%ANKI
 Basic
 The proof of which implication shows "substitution is well-behaved w.r.t. $\alpha$-conversion"?
-Back: $M \equiv_\alpha M' \land N \equiv_\alpha N' \Rightarrow [N/x]M \equiv_\alpha [N'/x]M'$
+Back: $P \equiv_\alpha P' \land M \equiv_\alpha M' \Rightarrow [P/x]M \equiv_\alpha [P'/x]M'$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1718422973129-->
 END%%

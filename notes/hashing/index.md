@@ -137,6 +137,68 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1716307180980-->
 END%%
 
+Consider hash table $T$ with $m$ slots that stores $n$ entries. Then the **load factor** $\alpha$ for $T$ is defined to be $n / m$, i.e. the average number of entries that map to the same slot.
+
+%%ANKI
+Basic
+The load factor is a ratio of what two numbers?
+Back: The number of entries in the table to the number of slots stored in the table.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188190-->
+END%%
+
+%%ANKI
+Cloze
+The load factor of a hash table {increases} as the number of slots {decrease}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188194-->
+END%%
+
+%%ANKI
+Cloze
+The load factor of a hash table {decreases} as the number of total entries {decrease}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188199-->
+END%%
+
+%%ANKI
+Cloze
+The load factor of a hash table {increases} as the number of total entries {increase}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188204-->
+END%%
+
+%%ANKI
+Cloze
+The load factor of a hash table {decreases} as the number of slots {increase}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188208-->
+END%%
+
+%%ANKI
+Basic
+Let $n / m$ denote the load factor of a hash table. What does $n$ represent?
+Back: The total number of entries in the table.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188214-->
+END%%
+
+%%ANKI
+Basic
+Let $n / m$ denote the load factor of a hash table. What does $m$ represent?
+Back: The number of slots in the table.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188218-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the load factor $\alpha$ of a hash table defined the way it is?
+Back: It represents the average number of entries stored at a slot.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188222-->
+END%%
+
 An **independent uniform hash function** is the ideal theoretical abstraction. For each possible input $k$ in universe $U$, an output $h(k)$ is produced randomly and independently chosen from range $\{0, 1, \ldots, m - 1\}$. Once a value $h(k)$ is chosen, each subsequent call to $h$ with the same input $k$ yields the same output $h(k)$.
 
 %%ANKI

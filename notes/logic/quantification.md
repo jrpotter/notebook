@@ -192,29 +192,6 @@ Identifiers are said to be **bound** if they are parameters to a quantifier. Ide
 
 %%ANKI
 Basic
-When is an identifier said to be bound?
-Back: When it is specified as a parameter to a quantifier.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707674796768-->
-END%%
-
-%%ANKI
-Basic
-When is an identifier said to be free?
-Back: When it isn't specified as a parameter to a quantifier.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707674796770-->
-END%%
-
-%%ANKI
-Cloze
-An identifier that is not {bound} is instead {free}.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707674796772-->
-END%%
-
-%%ANKI
-Basic
 Prenex normal form consists of what two parts?
 Back: The prefix and the matrix.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.

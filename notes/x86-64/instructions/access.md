@@ -348,7 +348,7 @@ Basic
 How is `pushq %rbp` equivalently written using a pair of instructions?
 Back:
 ```asm
-subq 8,%rsp
+subq $8,%rsp
 movq %rbp,(%rsp)
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
@@ -361,7 +361,7 @@ How is `popq %rax` equivalently written using a pair of instructions?
 Back:
 ```asm
 movq (%rsp),%rax
-addq 8,%rsp
+addq $8,%rsp
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1715377284962-->

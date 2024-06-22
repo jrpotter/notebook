@@ -49,6 +49,46 @@ Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” acc
 <!--ID: 1718198755486-->
 END%%
 
+%%ANKI
+Basic
+What is the theoretical maximum load factor in open addressing?
+Back: $1$
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718759188171-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the theoretical maximum load factor of open addressing unbounded?
+Back: An open addressing hash table can only store as many entries as slots.
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718759188176-->
+END%%
+
+%%ANKI
+Basic
+When is the load factor of an open addressing hash table $0$?
+Back: When no entries are stored in the table.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188179-->
+END%%
+
+%%ANKI
+Basic
+When is the load factor of a open addressing hash table $1$?
+Back: When there exist the same number of total entries as slots.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188182-->
+END%%
+
+%%ANKI
+Basic
+When is the load factor of an open addressing hash table $> 1$?
+Back: N/A
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188186-->
+END%%
+
 ## Bibliography
 
 * “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).

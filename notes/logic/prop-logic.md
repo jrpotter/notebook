@@ -335,7 +335,7 @@ END%%
 
 %%ANKI
 Basic
-Is $(b \land c)$ well-defined in $\{(b, T), (c, F)\}$?
+Is $(b \land c)$ well-defined in $\{\langle b, T \rangle, \langle c, F \rangle\}$?
 Back: Yes.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861318-->
@@ -343,7 +343,7 @@ END%%
 
 %%ANKI
 Basic
-Is $(b \lor d)$ well-defined in $\{(b, T), (c, F)\}$?
+Is $(b \lor d)$ well-defined in $\{\langle b, T \rangle, \langle c, F \rangle\}$?
 Back: No.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861320-->
@@ -368,7 +368,7 @@ END%%
 %%ANKI
 Basic
 What set of states does proposition $a \land b$ represent?
-Back: $\{\{(a, T), (b, T)\}\}$
+Back: $\{\{\langle a, T \rangle, \langle b, T \rangle\}\}$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861339-->
 END%%
@@ -376,7 +376,7 @@ END%%
 %%ANKI
 Basic
 What set of states does proposition $a \lor b$ represent?
-Back: $\{\{(a, T), (b, T)\}, \{(a, T), (b, F)\}, \{(a, F), (b, T)\}\}$
+Back: $\{\{\langle a, T \rangle, \langle b, T \rangle\}, \{\langle a, T \rangle, \langle b, F \rangle\}, \{\langle a, F \rangle, \langle b, T \rangle\}\}$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715895996324-->
 END%%

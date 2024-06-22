@@ -651,7 +651,7 @@ END%%
 
 %%ANKI
 Basic
-How many digits follows `e` in the output of `printf` specifier `%e`?
+How many digits follow `e` in the output of `printf` specifier `%e`?
 Back: At least `2`.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf

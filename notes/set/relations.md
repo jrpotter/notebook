@@ -191,6 +191,14 @@ END%%
 
 %%ANKI
 Basic
+What is the most general mathematical object the $\mathop{\text{dom}}$ operation can be applied to?
+Back: Sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718546439334-->
+END%%
+
+%%ANKI
+Basic
 Let $A$ be a set containing no ordered pairs. What is $\mathop{\text{dom}} A$?
 Back: $\varnothing$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -283,6 +291,14 @@ END%%
 
 %%ANKI
 Basic
+What is the most general mathematical object the $\mathop{\text{ran}}$ operation can be applied to?
+Back: Sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718546439338-->
+END%%
+
+%%ANKI
+Basic
 Let $A$ be a set containing no ordered pairs. What is $\mathop{\text{ran}} A$?
 Back: $\varnothing$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -335,6 +351,14 @@ If $\langle x, y \rangle \in A$, what sets are in $\bigcup \bigcup A$?
 Back: $x$ and $y$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718327739955-->
+END%%
+
+%%ANKI
+Basic
+What is the most general mathematical object the $\mathop{\text{fld}}$ operation can be applied to?
+Back: Sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1718546439341-->
 END%%
 
 %%ANKI

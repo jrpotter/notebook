@@ -55,7 +55,7 @@ END%%
 
 %%ANKI
 Basic
-What is the antecedent of $\{Q\}\; S\; \{R\}$ in English?
+Interpret $\{Q\}\; S\; \{R\}$ in English. What is the antecedent of the implication?
 Back: $S$ is executed in a state satisfying $Q$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714420640229-->
@@ -63,7 +63,7 @@ END%%
 
 %%ANKI
 Basic
-What is the consequent of $\{Q\}\; S\; \{R\}$ in English?
+Interpret $\{Q\}\; S\; \{R\}$ in English. What is the consequent of the implication?
 Back: $S$ terminates in a finite amount of time in a state satisfying $R$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714420640231-->
@@ -504,8 +504,8 @@ For any predicate $R$, $wp(skip, R) = R$.
 
 %%ANKI
 Basic
-How is the $skip$ command defined?
-Back: As $wp(skip, R) = R$.
+How is the $skip$ command defined in terms of $wp$?
+Back: For any predicate $R$, $wp(skip, R) = R$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716810300099-->
 END%%
@@ -531,8 +531,8 @@ For any predicate $R$, $wp(abort, R) = F$.
 
 %%ANKI
 Basic
-How is the $abort$ command defined?
-Back: As $wp(abort, R) = F$.
+How is the $abort$ command defined in terms of $wp$?
+Back: For any predicate $R$, $wp(abort, R) = F$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716810300116-->
 END%%
@@ -582,6 +582,42 @@ Suppose $makeTrue$ is defined as $wp(makeTrue, R) = T$ for all predicates $R$. W
 Back: If $R = F$, $makeTrue$ violates the Law of the Excluded Miracle.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716810300145-->
+END%%
+
+### Sequential Composition
+
+**Sequential composition** is one way of composing larger program segments from smaller segments. Let $S1$ and $S2$ be two commands. Then $S1; S2$ is defined as $$wp(''S1; S2'', R) = wp(S1, wp(S2, R))$$
+
+%%ANKI
+Basic
+Let $S1$ and $S2$ be two commands. How is their sequential composition denoted?
+Back: $S1; S2$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1719019485648-->
+END%%
+
+%%ANKI
+Basic
+How is $S1; S2$ defined in terms of $wp$?
+Back: For any predicate $R$, $wp(''S1; S2'', R) = wp(S1, wp(S2, R))$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1719019485654-->
+END%%
+
+%%ANKI
+Basic
+Is sequential composition commutative?
+Back: No.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1719019485662-->
+END%%
+
+%%ANKI
+Basic
+Is sequential composition associative?
+Back: Yes.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1719019485666-->
 END%%
 
 ## Bibliography

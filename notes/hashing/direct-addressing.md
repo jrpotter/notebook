@@ -137,6 +137,14 @@ Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” acc
 <!--ID: 1718199205872-->
 END%%
 
+%%ANKI
+Basic
+What is the theoretical maximum load factor in direct addressing?
+Back: $1$
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718759188227-->
+END%%
+
 ## Bibliography
 
 * “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
