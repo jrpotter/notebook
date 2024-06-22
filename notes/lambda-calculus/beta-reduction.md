@@ -260,8 +260,8 @@ END%%
 
 %%ANKI
 Basic
-How many $\beta$-reductions can a term have?
-Back: One or more.
+How many contractions can make up a $\beta$-reduction?
+Back: Zero or more.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719065602215-->
 END%%
