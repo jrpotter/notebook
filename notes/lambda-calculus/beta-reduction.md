@@ -260,10 +260,42 @@ END%%
 
 %%ANKI
 Basic
-How many contractions can make up a $\beta$-reduction?
+How many contractions make up a $\beta$-reduction?
 Back: Zero or more.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719065602215-->
+END%%
+
+%%ANKI
+Basic
+Is $x(\lambda u. uv)$ in $\beta$-normal form?
+Back: Yes.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719103644322-->
+END%%
+
+%%ANKI
+Basic
+Is $(\lambda u. uv)x$ in $\beta$-normal form?
+Back: No.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719103644323-->
+END%%
+
+%%ANKI
+Basic
+Why isn't $x(\lambda u. uv)$ in $\beta$-normal form?
+Back: N/A. It is.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719103644324-->
+END%%
+
+%%ANKI
+Basic
+Why isn't $(\lambda u. uv)x$ in $\beta$-normal form?
+Back: Because $(\lambda u. uv)x$ is a $\beta$-redex.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719103644325-->
 END%%
 
 ## Bibliography

@@ -440,7 +440,7 @@ END%%
 
 ## Inverses
 
-Let $F$ be an arbitrary set. The **inverse** of $F$ is the set $$F^{-1} = \{\langle u, v \rangle \mid vFu\}.$$
+Let $F$ be an arbitrary set. The **inverse** of $F$ is the set $$F^{-1} = \{\langle u, v \rangle \mid vFu\}$$
 %%ANKI
 Basic
 What kind of mathematical object does the inverse operation apply to?
@@ -617,6 +617,22 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1719017560113-->
 END%%
 
+%%ANKI
+Basic
+How is set $\{\langle u, v \rangle \mid vAu\}$ more simply denoted?
+Back: $A^{-1}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644290-->
+END%%
+
+%%ANKI
+Basic
+What does $\varnothing^{-1}$ evalute to?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644293-->
+END%%
+
 ## Compositions
 
 Let $F$ and $G$ be arbitrary sets. The **composition** of $F$ and $G$ is the set $$F \circ G = \{\langle u, v \rangle \mid \exists t, uGt \land tFv \}$$
@@ -674,6 +690,243 @@ How is the composition of sets $F$ and $G$ defined in set-builder notation?
 Back: $F \circ G = \{\langle u, v \rangle \mid \exists t, uGt \land tFv\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719017560123-->
+END%%
+
+%%ANKI
+Basic
+How is set $\{\langle u, v \rangle \mid \exists t, uBt \land tAv \}$ more simply denoted?
+Back: $A \circ B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644294-->
+END%%
+
+%%ANKI
+Basic
+Let $F$ be an arbitrary set. What is $F \circ \varnothing$?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644295-->
+END%%
+
+%%ANKI
+Basic
+Let $F$ be an arbitrary set. What is $\varnothing \circ F$?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644296-->
+END%%
+
+## Restrictions
+
+Let $F$ and $A$ be arbitrary sets. The **restriction of $F$ to $A$** is the set $$F \restriction A = \{\langle u, v \rangle \mid uFv \land u \in A\}$$
+
+%%ANKI
+Basic
+What kind of mathematical object does the restriction operation apply to?
+Back: Sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644297-->
+END%%
+
+%%ANKI
+Cloze
+$F \restriction A$ is the restriction of $F$ {to} $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644298-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical object does the restriction operation emit?
+Back: Relations.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644299-->
+END%%
+
+%%ANKI
+Basic
+What is the "arity" of the restriction operation in set theory?
+Back: $2$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644300-->
+END%%
+
+%%ANKI
+Basic
+How is the restriction of $F$ to $A$ denoted?
+Back: $F \restriction A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644301-->
+END%%
+
+%%ANKI
+Basic
+How is the restriction of $F$ to $A$ defined?
+Back: $F \restriction A = \{\langle u, v \rangle \mid uFv \land u \in A\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644302-->
+END%%
+
+%%ANKI
+Basic
+Consider function $F \colon A \rightarrow B$. How does $\mathop{\text{dom}}F$ relate to $\mathop{\text{dom}}(F \restriction A)$?
+Back: They are equal.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644303-->
+END%%
+
+%%ANKI
+Basic
+Consider function $F \colon A \rightarrow B$. How does $\mathop{\text{ran}}F$ relate to $\mathop{\text{ran}}(F \restriction A)$?
+Back: They are equal.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644304-->
+END%%
+
+%%ANKI
+Basic
+Consider function $F \colon A \rightarrow B$ and set $C \subseteq A$. How does $\mathop{\text{dom}}F$ relate to $\mathop{\text{dom}}(F \restriction C)$?
+Back: $\mathop{\text{dom}}(F \restriction C) \subseteq \mathop{\text{dom}}F$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644305-->
+END%%
+
+%%ANKI
+Basic
+How is $F \restriction A$ pronounced?
+Back: The restriction of $F$ to $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644306-->
+END%%
+
+%%ANKI
+Basic
+Consider function $F \colon A \rightarrow B$ and set $C \subseteq A$. How does $\mathop{\text{ran}}F$ relate to $\mathop{\text{ran}}(F \restriction C)$?
+Back: $\mathop{\text{ran}}(F \restriction C) \subseteq \mathop{\text{ran}}F$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644307-->
+END%%
+
+%%ANKI
+Basic
+How is set $\{\langle u, v \rangle \mid uAv \land u \in B\}$ more simply denoted?
+Back: $A \restriction B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644308-->
+END%%
+
+%%ANKI
+Basic
+Let $F$ be an arbitrary set. What is $F \restriction \varnothing$?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644309-->
+END%%
+
+## Images
+
+Let $F$ and $A$ be sets. Then the **image of $F$ under $A$** is $$F[\![A]\!] = \{v \mid \exists u \in A, uFv\}$$
+
+%%ANKI
+Basic
+What kind of mathematical object does the image operation apply to?
+Back: Sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644310-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical object does the image operation emit?
+Back: Sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644311-->
+END%%
+
+%%ANKI
+Cloze
+$F[\![A]\!]$ is the image of $F$ {under} $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644312-->
+END%%
+
+%%ANKI
+Basic
+What is the "arity" of the image operation in set theory?
+Back: $2$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644313-->
+END%%
+
+%%ANKI
+Basic
+How is the image of $F$ under $A$ denoted?
+Back: $F[\![A]\!]$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644314-->
+END%%
+
+%%ANKI
+Basic
+How is the image of $F$ under $A$ defined?
+Back: $F[\![A]\!] = \{v \mid \exists u \in A, uFv\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644315-->
+END%%
+
+%%ANKI
+Basic
+How is the image of $F$ under $A$ defined in terms of restrictions?
+Back: $F[\![A]\!] = \mathop{\text{ran}}(F \restriction A)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644316-->
+END%%
+
+%%ANKI
+Basic
+How is set $\{v \mid \exists u \in B, uAv\}$ more simply denoted?
+Back: $A[\![B]\!]$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644317-->
+END%%
+
+%%ANKI
+Basic
+Enderton says "multiple-valued functions" are actually what?
+Back: Relations.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644318-->
+END%%
+
+%%ANKI
+Basic
+Enderton says "multiple-valued functions" are actually what?
+Back: Relations.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+%%ANKI
+Basic
+Enderton says "$F^{-1}(9) = \pm 3$" is preferably written in what way?
+Back: $F^{-1}[\![\{9\}]\!] = \{-3, 3\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644319-->
+END%%
+
+%%ANKI
+Basic
+How is $F^{-1}[\![A]\!]$ defined using set-builder notation?
+Back: $F^{-1}[\![A]\!] = \{x \in \mathop{\text{dom}} F \mid F(x) \in A \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644320-->
+END%%
+
+%%ANKI
+Basic
+Let $F$ be an arbitrary set. What is $F[\![\varnothing]\!]$?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719103644321-->
 END%%
 
 ## Bibliography
