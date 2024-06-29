@@ -476,7 +476,7 @@ END%%
 %%ANKI
 Basic
 How is the inverse of set $F$ defined in set-builder notation?
-Back: $F^{-1} = \{\langle u, v \rangle \mid vFu\}$\
+Back: $F^{-1} = \{\langle u, v \rangle \mid vFu\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719016770752-->
 END%%
@@ -633,6 +633,29 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1719103644293-->
 END%%
 
+%%ANKI
+Basic
+Given set $F$, what does $\mathop{\text{dom}}F^{-1}$ evaluate to?
+Back: $\mathop{\text{ran}}F$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719398756549-->
+END%%
+
+%%ANKI
+Basic
+Given set $F$, what does $\mathop{\text{ran}}F^{-1}$ evaluate to?
+Back: $\mathop{\text{dom}}F$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719398756554-->
+END%%
+
+%%ANKI
+Cloze
+For any set $F$, {1:$F$} is {2:single-valued} iff {2:$F^{-1}$} is {1:single-rooted}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719398756558-->
+END%%
+
 ## Compositions
 
 Let $F$ and $G$ be arbitrary sets. The **composition** of $F$ and $G$ is the set $$F \circ G = \{\langle u, v \rangle \mid \exists t, uGt \land tFv \}$$
@@ -714,6 +737,67 @@ Let $F$ be an arbitrary set. What is $\varnothing \circ F$?
 Back: $\varnothing$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719103644296-->
+END%%
+
+%%ANKI
+Cloze
+Let $F$ be {a function}. If $t \in$ {$\mathop{\text{ran}}F$}, then $F(F^{-1}(t)) = t$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719398756562-->
+END%%
+
+%%ANKI
+Cloze
+Let $F$ be {an injection}. If $t \in$ {$\mathop{\text{dom}}F$}, then $F^{-1}(F(t)) = t$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719398756565-->
+END%%
+
+%%ANKI
+Basic
+If $F$ is a relation and $G$ is a function, is $F \circ G$ a function?
+Back: Not necessarily.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719406791406-->
+END%%
+
+%%ANKI
+Basic
+If $F$ is a function and $G$ is a relation, is $F \circ G$ a function?
+Back: Not necessarily.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719406791410-->
+END%%
+
+%%ANKI
+Basic
+If $F$ is a function and $G$ is a function, is $F \circ G$ a function?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719406791413-->
+END%%
+
+%%ANKI
+Basic
+Let $F$ and $G$ be functions. How is $\mathop{\text{dom}}(F \circ G)$ defined using set-builder notation?
+Back: $\{x \in \mathop{\text{dom}}G \mid G(x) \in \mathop{\text{dom}}F\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719406791415-->
+END%%
+
+%%ANKI
+Cloze
+For any sets $F$ and $G$, {$(F \circ G)^{-1}$} $=$ {$G^{-1} \circ F^{-1}$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719666552283-->
+END%%
+
+%%ANKI
+Basic
+How might you explain $(F \circ G)^{-1} = G^{-1} \circ F^{-1}$ in plain English?
+Back: The opposite of applying $G$ then $F$ is to undo $F$ then $G$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719666552291-->
 END%%
 
 ## Restrictions

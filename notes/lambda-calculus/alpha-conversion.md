@@ -404,12 +404,12 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1717855810802-->
 END%%
 
-For $\lambda$-terms $M$, $M'$, $N$, and $N'$, and variable $x$, $$M \equiv_\alpha M' \land N \equiv_\alpha N' \Rightarrow [N/x]M \equiv_\alpha [N'/x]M'$$
+Substitution is well-defined with respect to $\alpha$-conversion. That is, if $M \equiv_\alpha M'$ and $N \equiv N'$, then $$[N/x]M \equiv_\alpha [N'/x]M'$$
 
 %%ANKI
 Basic
-The proof of which implication shows "substitution is well-behaved w.r.t. $\alpha$-conversion"?
-Back: $P \equiv_\alpha P' \land M \equiv_\alpha M' \Rightarrow [P/x]M \equiv_\alpha [P'/x]M'$
+The proof of which implication shows substitution is well-behaved w.r.t. $\alpha$-conversion?
+Back: $M \equiv_\alpha M' \land N \equiv_\alpha N' \Rightarrow [N/x]M \equiv_\alpha [N'/x]M'$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1718422973129-->
 END%%
@@ -417,7 +417,7 @@ END%%
 %%ANKI
 Basic
 What does Hindley et al. mean by "substitution is well-behaved w.r.t. $\alpha$-conversion"?
-Back: $\alpha$-converting substitution inputs yields congruent outputs.
+Back: Substitution then $\alpha$-conversion is congruent to $\alpha$-conversion then substitution.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1718422973135-->
 END%%
@@ -431,10 +431,26 @@ END%%
 
 %%ANKI
 Basic
-What does Hindley et al. say the following implication says about substitution? $$M \equiv_\alpha M' \land N \equiv_\alpha N' \Rightarrow [N/x]M \equiv_\alpha [N'/x]M'$$
-Back: It is well-defined with respect to $\alpha$-conversion.
+How does Hindley et al. describe the following implication? $$M \equiv_\alpha M' \land N \equiv_\alpha N' \Rightarrow [N/x]M \equiv_\alpha [N'/x]M'$$
+Back: As "substitution is well-defined with respect to $\alpha$-conversion."
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1718422981125-->
+END%%
+
+%%ANKI
+Basic
+Suppose $P \equiv_\alpha Q$. How do $FV(P)$ and $FV(Q)$ relate to one another?
+Back: $FV(P) = FV(Q)$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719406791439-->
+END%%
+
+%%ANKI
+Basic
+*Why* is this implication true: $P \equiv_\alpha Q \Rightarrow FV(P) = FV(Q)$
+Back: $\alpha$-conversions do not modify free variables in any way.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1719406791443-->
 END%%
 
 ## Simultaneous Substitution

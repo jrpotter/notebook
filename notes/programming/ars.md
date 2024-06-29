@@ -59,7 +59,36 @@ Reference: “Canonical Form,” in _Wikipedia_, January 7, 2024, [https://en.wi
 <!--ID: 1719067812833-->
 END%%
 
+## Confluence
+
+**Confluence** is the property by which two different terms can be further reduced to one common term. That is to say, confluence is a property of rewriting systems describing which terms in such a system can be rewritten in more than one way.
+
+%%ANKI
+Basic
+What is confluence?
+Back: A property by which two different terms can be further reduced to one common term.
+Reference: “Confluence (Abstract Rewriting),” in _Wikipedia_, May 22, 2024, [https://en.wikipedia.org/w/index.php?title=Confluence](https://en.wikipedia.org/w/index.php?title=Confluence_(abstract_rewriting)&oldid=1225041322).
+<!--ID: 1719578045810-->
+END%%
+
+%%ANKI
+Basic
+How might $(11 + 9) \times (2 + 4)$ be reduced to demonstrate confluence?
+Back: As $20 \times (2 + 4)$ and as $(11 + 9) \times 6$.
+Reference: “Confluence (Abstract Rewriting),” in _Wikipedia_, May 22, 2024, [https://en.wikipedia.org/w/index.php?title=Confluence](https://en.wikipedia.org/w/index.php?title=Confluence_(abstract_rewriting)&oldid=1225041322).
+<!--ID: 1719578045839-->
+END%%
+
+%%ANKI
+Basic
+How might $(\lambda x. (\lambda y. yx)z)v$ be reduced to demonstrate confluence?
+Back: As $(\lambda y.yv)z$ and as $(\lambda x. zx)v$.
+Reference: “Confluence (Abstract Rewriting),” in _Wikipedia_, May 22, 2024, [https://en.wikipedia.org/w/index.php?title=Confluence](https://en.wikipedia.org/w/index.php?title=Confluence_(abstract_rewriting)&oldid=1225041322).
+<!--ID: 1719578045843-->
+END%%
+
 ## Bibliography
 
 * “Canonical Form,” in _Wikipedia_, January 7, 2024, [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1194093963).
+* “Confluence (Abstract Rewriting),” in _Wikipedia_, May 22, 2024, [https://en.wikipedia.org/w/index.php?title=Confluence](https://en.wikipedia.org/w/index.php?title=Confluence_(abstract_rewriting)&oldid=1225041322).
 * Normal Form,” in _Wikipedia_, April 27, 2024, [https://en.wikipedia.org/w/index.php?title=Normal_form](https://en.wikipedia.org/w/index.php?title=Normal_form_(abstract_rewriting)&oldid=1221094193).

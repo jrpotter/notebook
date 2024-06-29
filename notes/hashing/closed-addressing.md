@@ -147,6 +147,78 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1718759188281-->
 END%%
 
+%%ANKI
+Basic
+What is the worst-case behavior of hashing with chaining?
+Back: All keys hash to the same slot.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1719174576856-->
+END%%
+
+%%ANKI
+Basic
+What is the load factor of a hash table in which all $n$ keys hash to one of $m$ slots?
+Back: $n / m$ (the load factor is a property of the table, not the distribution of keys)
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1719174576860-->
+END%%
+
+%%ANKI
+Basic
+In a hash table with chaining and independent uniform hashing, what is the average *unsuccessful* search runtime?
+Back: Given load factor $\alpha$, $\Theta(1 + \alpha)$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1719174576864-->
+END%%
+
+%%ANKI
+Basic
+In a hash table with chaining and independent uniform hash function $h$, *which* elements are examined in an unsuccessful search for element $x$?
+Back: All the elements in slot $h(x.key)$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1719176493045-->
+END%%
+
+%%ANKI
+Basic
+In a hash table with chaining and independent uniform hashing, what is the average *successful* search runtime?
+Back: Given load factor $\alpha$, $\Theta(1 + \alpha)$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1719176493050-->
+END%%
+
+%%ANKI
+Basic
+In a hash table with chaining and independent uniform hash function $h$, *which* elements are examined in a successful search for element $x$?
+Back: $x$ and the elements preceding $x$ in slot $h(x.key)$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1719176797748-->
+END%%
+
+%%ANKI
+Basic
+In a hash table with chaining and independent uniform hashing, what is the average seach runtime?
+Back: Given load factor $\alpha$, $\Theta(1 + \alpha)$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1719176797752-->
+END%%
+
+%%ANKI
+Basic
+In a hash table with chaining and independent uniform hashing, *when* is the average runtime of search $O(1)$?
+Back: When the number of entries is at most proportional to the number of slots in the table.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1719176797756-->
+END%%
+
+%%ANKI
+Basic
+Suppose $n$ is at most proportional to $m$. How is this denoted in complexity notation?
+Back: $n = O(m)$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1719176797760-->
+END%%
+
 ## Bibliography
 
 * “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).

@@ -400,7 +400,7 @@ For any sets $a$ and $b$, there exists a set whose members are those sets belong
 %%ANKI
 Basic
 What does the union axiom (preliminary form) state?
-Back: For any sets $a$ and $b$, there exists a set whose members are all in either $a$ or $b$.
+Back: For any sets $a$ and $b$, there exists a set whose members are all in either $a$ or $b$ (or both).
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1715688034333-->
 END%%

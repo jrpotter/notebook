@@ -145,7 +145,7 @@ END%%
 %%ANKI
 Basic
 How is $\exists x : S, P(x)$ written in terms of counting quantification?
-Back: $\exists^{\geq 1} x : S, P(x)$
+Back: $\exists^{\geq 1}\, x : S, P(x)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707494832056-->
 END%%
@@ -153,7 +153,7 @@ END%%
 %%ANKI
 Basic
 How is $\forall x : S, P(x)$ written in terms of counting quantification?
-Back: Assuming $S$ has $k$ members, $\exists^{= k} x : S, P(x)$
+Back: Assuming $S$ has $k$ members, $\exists^{= k}\, x : S, P(x)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707494832058-->
 END%%

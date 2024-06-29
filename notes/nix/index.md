@@ -1,5 +1,0 @@
----
-title: Nix
-tags:
-  - nix
----

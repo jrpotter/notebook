@@ -59,7 +59,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* is the theoretical maximum load factor of open addressing unbounded?
+*Why* is the theoretical maximum load factor of open addressing bounded?
 Back: An open addressing hash table can only store as many entries as slots.
 Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
 <!--ID: 1718759188176-->

@@ -137,11 +137,13 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1716307180980-->
 END%%
 
+## Load Factor
+
 Consider hash table $T$ with $m$ slots that stores $n$ entries. Then the **load factor** $\alpha$ for $T$ is defined to be $n / m$, i.e. the average number of entries that map to the same slot.
 
 %%ANKI
 Basic
-The load factor is a ratio of what two numbers?
+The load factor of a hash table is a ratio of what two numbers?
 Back: The number of entries in the table to the number of slots stored in the table.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1718759188190-->
@@ -201,6 +203,8 @@ END%%
 
 An **independent uniform hash function** is the ideal theoretical abstraction. For each possible input $k$ in universe $U$, an output $h(k)$ is produced randomly and independently chosen from range $\{0, 1, \ldots, m - 1\}$. Once a value $h(k)$ is chosen, each subsequent call to $h$ with the same input $k$ yields the same output $h(k)$.
 
+Independent uniform hashing is **universal**, meaning the chance of any two distinct keys colliding is at most $1 / m$.
+
 %%ANKI
 Basic
 What is considered the ideal (though only theoretical) hash function?
@@ -239,6 +243,22 @@ Where does "memory" come into play with independent uniform hash functions?
 Back: Once $h(k)$ is determined, subsequent calls to $h$ with $k$ always yield the same value.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1718197741555-->
+END%%
+
+%%ANKI
+Basic
+What is uniform hashing?
+Back: Any given element is equally likely to hash into any slot.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1719174576842-->
+END%%
+
+%%ANKI
+Basic
+What is independent hashing?
+Back: The slot an element hashes to is independent of where other elements hash to.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1719174576848-->
 END%%
 
 ## Bibliography
