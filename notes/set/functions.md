@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-A **function** $F$ is a single-valued [[relations|relation]]. We say $F$ **maps $A$ into $B$**, denoted $F \colon A \rightarrow B$, if and only if $F$ is a function, $\mathop{\text{dom}}A$, and $\mathop{\text{ran}}F \subseteq B$.
+A **function** $F$ is a single-valued [[relations|relation]]. We say $F$ **maps $A$ into $B$**, denoted $F \colon A \rightarrow B$, if and only if $F$ is a function, $\mathop{\text{dom}}F = A$, and $\mathop{\text{ran}}F \subseteq B$.
 
 %%ANKI
 Basic
@@ -120,6 +120,14 @@ How does the range of a function compare to its codomain?
 Back: The range is a subset of the codomain.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718464126883-->
+END%%
+
+%%ANKI
+Basic
+Is $\varnothing$ a function?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913529-->
 END%%
 
 ## Injections
@@ -258,6 +266,129 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1718465870541-->
 END%%
 
+### Left Inverses
+
+Assume that $F \colon A \rightarrow B$ is a function and $A \neq \varnothing$. Then there exists a function $G \colon B \rightarrow A$ (a **left inverse**) such that $G \circ F = I_A$ if and only if $F$ is one-to-one.
+
+%%ANKI
+Basic
+What is the most specific mathematical object that describes a left inverse?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719683931406-->
+END%%
+
+%%ANKI
+Basic
+How is a left inverse of $F \colon A \rightarrow B$ defined?
+Back: As a function $G \colon B \rightarrow A$ such that $G \circ F = I_A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719684322548-->
+END%%
+
+%%ANKI
+Basic
+How is a left inverse of set $A$ defined?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719684322553-->
+END%%
+
+%%ANKI
+Basic
+Consider $F \colon A \rightarrow B$. If $F$ has a left inverse, what is its domain?
+Back: $B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719680660507-->
+END%%
+
+%%ANKI
+Basic
+What does $I_A$ usually denote?
+Back: The identity function on set $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913532-->
+END%%
+
+%%ANKI
+Basic
+How is the identity function on set $B$ denoted?
+Back: $I_B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719683703723-->
+END%%
+
+%%ANKI
+Basic
+Consider $F \colon A \rightarrow B$. If $F$ has a left inverse, what is its codomain?
+Back: $A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719680660511-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be a left inverse of $F \colon A \rightarrow B$. How can we more simply write $G \circ F$?
+Back: $I_A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913534-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be a left inverse of $F \colon A \rightarrow B$. How can we more simply write $F \circ G$?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913535-->
+END%%
+
+%%ANKI
+Basic
+Let $F$ be a left inverse of function $G$. How do they interestingly compose?
+Back: As $F \circ G$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913538-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $F \colon A \rightarrow B$ and {1:$A \neq \varnothing$}. $F$ has a {2:left} inverse iff $F$ is {3:one-to-one}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913540-->
+END%%
+
+%%ANKI
+Basic
+Does proving "left inverses iff injective" rely on AoC?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913542-->
+END%%
+
+%%ANKI
+Basic
+What are the hypotheses of "left inverses iff injective"?
+Back: Suppose $F \colon A \rightarrow B$ such that $A \neq \varnothing$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719683703726-->
+END%%
+
+%%ANKI
+Basic
+Let $F \colon A \rightarrow B$. *Why* does "left inverses iff injective" require $A \neq \varnothing$?
+Back: Because a mapping from $B$ to $\varnothing$ cannot be a function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719683703729-->
+END%%
+
+%%ANKI
+Basic
+Let $F \colon A \rightarrow B$ and $A \neq \varnothing$. *Why* does "left inverses iff injective" require AoC?
+Back: It doesn't.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719683703730-->
+END%%
+
 ## Surjections
 
 A function is **surjective** or **onto** if each element of the codomain is mapped to by at least one element of the domain. That is, **$F$ maps $A$ onto $B$** if and only if $F$ is a function, $\mathop{\text{dom}}A$, and $\mathop{\text{ran}}F = B$.
@@ -369,6 +500,120 @@ Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 202
 <!--ID: 1718465870573-->
 END%%
 
+### Right Inverses
+
+Assume that $F \colon A \rightarrow B$ is a function and $A \neq \varnothing$. Then there exists a function $G \colon B \rightarrow A$ (a right inverse) such that $F \circ G = I_B$ if and only if $F$ maps $A$ onto $B$.
+
+%%ANKI
+Basic
+What is the most specific mathematical object that describes a right inverse?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719683931410-->
+END%%
+
+%%ANKI
+Basic
+How is a right inverse of $F \colon A \rightarrow B$ defined?
+Back: As a function $G \colon B \rightarrow A$ such that $F \circ G = I_B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719684322557-->
+END%%
+
+%%ANKI
+Basic
+How is a right inverse of set $A$ defined?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719684322561-->
+END%%
+
+%%ANKI
+Cloze
+{1:Left} inverses are to {2:injections} whereas {2:right} inverses are to {1:surjections}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913533-->
+END%%
+
+%%ANKI
+Basic
+Consider $F \colon A \rightarrow B$. If $F$ has a right inverse, what is its domain?
+Back: $B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719680660514-->
+END%%
+
+%%ANKI
+Basic
+Consider $F \colon A \rightarrow B$. If $F$ has a right inverse, what is its codomain?
+Back: $A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719680660513-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be a right inverse of $F \colon A \rightarrow B$. How can we more simply write $G \circ F$?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913536-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be a right inverse of $F \colon A \rightarrow B$. How can we more simply write $F \circ G$?
+Back: The identity function on $B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913537-->
+END%%
+
+%%ANKI
+Basic
+Let $F$ be a right inverse of function $G$. How do they interestingly compose?
+Back: As $G \circ F$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913539-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $F \colon A \rightarrow B$ and {1:$A \neq \varnothing$}. $F$ has a {2:right} inverse iff $F$ is {3:onto $B$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913541-->
+END%%
+
+%%ANKI
+Basic
+Does proving "right inverses iff surjective" rely on AoC?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913543-->
+END%%
+
+%%ANKI
+Basic
+What are the hypotheses of "right inverses iff surjective"?
+Back: Suppose $F \colon A \rightarrow B$ such that $A \neq \varnothing$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719683703732-->
+END%%
+
+%%ANKI
+Basic
+Let $F \colon A \rightarrow B$. *Why* does "right inverses iff surjective" require $A \neq \varnothing$?
+Back: Because a mapping from $B$ to $\varnothing$ cannot be a function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719683703734-->
+END%%
+
+%%ANKI
+Basic
+Let $F \colon A \rightarrow B$ and $A \neq \varnothing$. *Why* does "right inverses iff surjective" require AoC?
+Back: There is no other mechanism for choosing an $x \in A$ for *each* $y \in B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719683703736-->
+END%%
+
 ## Bijections
 
 A function is **bijective** or a **one-to-one correspondence** if each element of the codomain is mapped to by exactly one element of the domain.
@@ -441,6 +686,14 @@ END%%
 ## Inverses
 
 Let $F$ be an arbitrary set. The **inverse** of $F$ is the set $$F^{-1} = \{\langle u, v \rangle \mid vFu\}$$
+%%ANKI
+Basic
+What is the most specific mathematical object that describes an inverse?
+Back: A relation.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719683931414-->
+END%%
+
 %%ANKI
 Basic
 What kind of mathematical object does the inverse operation apply to?
@@ -654,6 +907,14 @@ Cloze
 For any set $F$, {1:$F$} is {2:single-valued} iff {2:$F^{-1}$} is {1:single-rooted}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719398756558-->
+END%%
+
+%%ANKI
+Basic
+Consider function $F \colon \varnothing \rightarrow B$. What is $F^{-1}$?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913530-->
 END%%
 
 ## Compositions
@@ -995,14 +1256,6 @@ Enderton says "$F^{-1}(9) = \pm 3$" is preferably written in what way?
 Back: $F^{-1}[\![\{9\}]\!] = \{-3, 3\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719103644319-->
-END%%
-
-%%ANKI
-Basic
-How is $F^{-1}[\![A]\!]$ defined using set-builder notation?
-Back: $F^{-1}[\![A]\!] = \{x \in \mathop{\text{dom}} F \mid F(x) \in A \}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1719103644320-->
 END%%
 
 %%ANKI

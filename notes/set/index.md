@@ -850,6 +850,28 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1717368558164-->
 END%%
 
+## Axiom of Choice
+
+### Relation Form
+
+For any relation $R$ there exists a function $F \subseteq R$ with $\mathop{\text{dom}}F = \mathop{\text{dom}}R$.
+
+%%ANKI
+Basic
+What is AoC an acronym for?
+Back: The **A**xiom **o**f **C**hoice.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913526-->
+END%%
+
+%%ANKI
+Basic
+What does the Axiom of Choice (relation form) state?
+Back: For any relation $R$ there exists a function $F \subseteq R$ with $\mathop{\text{dom}}F = \mathop{\text{dom}}R$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913527-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
