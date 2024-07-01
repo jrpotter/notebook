@@ -390,7 +390,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for a set $A$ to be "single-rooted"?
-Back: For each $y \in \mathop{\text{ran}}A$, there exists a unique $x$ such that $xRy$.
+Back: For each $y \in \mathop{\text{ran}}A$, there exists a unique $x$ such that $xAy$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718465870483-->
 END%%

@@ -375,8 +375,8 @@ END%%
 
 %%ANKI
 Basic
-Let $F \colon A \rightarrow B$. *Why* does "left inverses iff injective" require $A \neq \varnothing$?
-Back: Because a mapping from $B$ to $\varnothing$ cannot be a function.
+Let $F \colon A \rightarrow B$. *Why* does "left inverses iff injective" assume $A \neq \varnothing$?
+Back: Because a mapping from nonempty $B$ to $\varnothing$ cannot be a function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719683703729-->
 END%%
@@ -600,8 +600,8 @@ END%%
 
 %%ANKI
 Basic
-Let $F \colon A \rightarrow B$. *Why* does "right inverses iff surjective" require $A \neq \varnothing$?
-Back: Because a mapping from $B$ to $\varnothing$ cannot be a function.
+Let $F \colon A \rightarrow B$. *Why* does "right inverses iff surjective" assume $A \neq \varnothing$?
+Back: Because a mapping from nonempty $B$ to $\varnothing$ cannot be a function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719683703734-->
 END%%
@@ -1002,14 +1002,14 @@ END%%
 
 %%ANKI
 Cloze
-Let $F$ be {a function}. If $t \in$ {$\mathop{\text{ran}}F$}, then $F(F^{-1}(t)) = t$.
+Let $F$ be a {function}. If $t \in$ {$\mathop{\text{ran} }F$}, then $F(F^{-1}(t)) = t$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719398756562-->
 END%%
 
 %%ANKI
 Cloze
-Let $F$ be {an injection}. If $t \in$ {$\mathop{\text{dom}}F$}, then $F^{-1}(F(t)) = t$.
+Let $F$ be an {injection}. If $t \in$ {$\mathop{\text{dom} }F$}, then $F^{-1}(F(t)) = t$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719398756565-->
 END%%
