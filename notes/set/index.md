@@ -96,6 +96,11 @@ Tags: adt::dynamic_set
 <!--ID: 1715432070083-->
 END%%
 
+Sets are often denoted using **roster notation** in which members are specified explicitly in a comma-delimited list surrounded by curly braces. Alternatively, **abstraction** (or **set-builder notation**) defines sets using an **entrance requirement**. Examples of the set of prime numbers less than $10$:
+
+* Roster notation: $\{2, 3, 5, 7\}$
+* Set-builder notation: $\{x \mid x < 10 \land x \text{ is prime}\}$
+
 %%ANKI
 Basic
 Define the set of prime numbers less than $10$ using abstraction.
@@ -204,6 +209,100 @@ Enderton's exposition makes what assumption about the set of all atoms?
 Back: It is the empty set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716494526284-->
+END%%
+
+%%ANKI
+Basic
+How are members of the following set defined using extensionality and first-order logic? $$B = \{P(x) \mid \phi(x)\}$$
+Back: $\forall x, P(x) \in B \Leftrightarrow \phi(x)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720369624727-->
+END%%
+
+%%ANKI
+Basic
+How are members of the following set defined using extensionality and first-order logic? $$B = \{x \mid x < 5 \land x \text{ is prime}\}$$
+Back: $\forall x, x \in B \Leftrightarrow (x < 5 \land x \text{ is prime})$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720369624730-->
+END%%
+
+%%ANKI
+Cloze
+$P(x)$ is equivalently written as $x \in$ {$\{v \mid P(v)\}$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720369624733-->
+END%%
+
+%%ANKI
+Cloze
+$\exists A \in B, uFx$ is equivalently written as $x \in$ {$\{v \mid \exists A \in B, uFv\}$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720369624735-->
+END%%
+
+%%ANKI
+Basic
+How is set $\{P(y) \mid y \in B\}$ interpreted?
+Back: As the set of $P(y)$ for all $y \in B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720369624736-->
+END%%
+
+%%ANKI
+Basic
+How many members are in set $\{P(y) \mid y \in B\}$?
+Back: As many as the number of unique $P(y)$ for each $y \in B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720369624737-->
+END%%
+
+%%ANKI
+Basic
+How is set $\{P(y) \mid \exists y \in B\}$ interpreted?
+Back: If $B$ is empty, the empty set. Otherwise as singleton $\{P(y)\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720369624738-->
+END%%
+
+%%ANKI
+Basic
+How many members are in set $\{P(y) \mid \exists y \in B\}$?
+Back: At most $1$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720369624739-->
+END%%
+
+%%ANKI
+Basic
+In set-builder notation, the left side of $\{\ldots \mid \ldots\}$ denotes what?
+Back: The members of the set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720370610010-->
+END%%
+
+%%ANKI
+Basic
+In set-builder notation, the right side of $\{\ldots \mid \ldots\}$ denotes what?
+Back: The entrance requirement.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720370610016-->
+END%%
+
+%%ANKI
+Basic
+How is set $\{v \mid \exists A \in B, v = A\}$ written more compactly?
+Back: $\{A \mid A \in B\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720370610022-->
+END%%
+
+%%ANKI
+Basic
+How is set $\{v \mid \exists A \in B, v \in A\}$ written more compactly?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720370610028-->
 END%%
 
 ## Extensionality
