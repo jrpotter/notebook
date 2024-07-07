@@ -139,7 +139,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for scientific notation $m \times 2^n$ to be in normalized form?
-Back: That $m$ has value $1$.
+Back: That $1 \leq |m| < 2$.
 Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
 <!--ID: 1710556914951-->
 END%%

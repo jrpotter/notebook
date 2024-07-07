@@ -40,14 +40,6 @@ END%%
 
 %%ANKI
 Basic
-What two properties are initialized when creating a new git remote?
-Back: The URL and fetch refspec.
-Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
-<!--ID: 1715623927194-->
-END%%
-
-%%ANKI
-Basic
 What kind of git refs are associated with remotes?
 Back: Remote branch refs.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).

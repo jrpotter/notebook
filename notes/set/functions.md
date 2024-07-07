@@ -328,7 +328,7 @@ END%%
 
 %%ANKI
 Basic
-Let $G$ be a left inverse of $F \colon A \rightarrow B$. How can we more simply write $G \circ F$?
+Let $G$ be a left inverse of $F \colon A \rightarrow B$. How can we more compactly write $G \circ F$?
 Back: $I_A$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719681913534-->
@@ -336,7 +336,7 @@ END%%
 
 %%ANKI
 Basic
-Let $G$ be a left inverse of $F \colon A \rightarrow B$. How can we more simply write $F \circ G$?
+Let $G$ be a left inverse of $F \colon A \rightarrow B$. How can we more compactly write $F \circ G$?
 Back: N/A.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719681913535-->
@@ -553,7 +553,7 @@ END%%
 
 %%ANKI
 Basic
-Let $G$ be a right inverse of $F \colon A \rightarrow B$. How can we more simply write $G \circ F$?
+Let $G$ be a right inverse of $F \colon A \rightarrow B$. How can we more compactly write $G \circ F$?
 Back: N/A.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719681913536-->
@@ -561,8 +561,8 @@ END%%
 
 %%ANKI
 Basic
-Let $G$ be a right inverse of $F \colon A \rightarrow B$. How can we more simply write $F \circ G$?
-Back: The identity function on $B$.
+Let $G$ be a right inverse of $F \colon A \rightarrow B$. How can we more compactly write $F \circ G$?
+Back: $I_B$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719681913537-->
 END%%
