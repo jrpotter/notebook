@@ -243,6 +243,49 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1710793937921-->
 END%%
 
+A graph that allows multiple edges between vertices is called a **multigraph**. It is analagous to the concept of [[bags|multisets]] in set theory.
+
+%%ANKI
+Basic
+What is a multigraph?
+Back: A graph with multiple edges between any two vertices.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1720360545669-->
+END%%
+
+%%ANKI
+Cloze
+{Multigraphs} are to graph theory as {multisets} are to set theory.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1720360545673-->
+END%%
+
+%%ANKI
+Basic
+Does every multigraph correspond to a graph?
+Back: No.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1720360545677-->
+END%%
+
+%%ANKI
+Basic
+Does every graph correspond to a multigraph?
+Back: Yes.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1720360545680-->
+END%%
+
+%%ANKI
+Basic
+Under what conditions is a multigraph considered a graph?
+Back: When the number of edges between any two vertices is $1$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1720360545684-->
+END%%
+
+## Incidence
+
 If $\langle u, v \rangle$ is an edge of a directed graph, we say $\langle u, v \rangle$ is **incident to** $v$ and **incident from** $u$. Furthermore, we say $v$ is **adjacent** to $u$. If $\{u, v\}$ was instead an edge of an undirected graph, we say $\{u, v\}$ is **incident on** $u$ and $v$. Likewise, $v$ is adjacent to $u$ and $u$ is adjacent to $v$.
 
 %%ANKI
@@ -1120,7 +1163,7 @@ END%%
 Basic
 If the following graphs are isomorphic, what is the domain of the isomorphism?
 ![[graph-isomorphic.png]]
-Back: $\{a, b, c\}$.
+Back: $\{a, b, c\}$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1715537560210-->
 END%%
@@ -1129,7 +1172,7 @@ END%%
 Basic
 If the following graphs are isomorphic, what is the codomain of the isomorphism?
 ![[graph-isomorphic.png]]
-Back: $\{u, v, w\}$.
+Back: $\{u, v, w\}$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1715537560214-->
 END%%

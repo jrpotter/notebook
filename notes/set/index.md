@@ -8,6 +8,8 @@ tags:
 
 ## Overview
 
+Set theory begins with two primitive notions of sets and membership. Other axioms are defined relative to these concepts.
+
 %%ANKI
 Basic
 What are the two primitive notions of set theory?
