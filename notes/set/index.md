@@ -305,6 +305,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1720370610028-->
 END%%
 
+%%ANKI
+Basic
+How do you rewrite $\{A \mid A \in B\}$ with an existential in the entrance requirement?
+Back: $\{v \mid A \in B \land v = A\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720381621849-->
+END%%
+
 ## Extensionality
 
 If two sets have exactly the same members, then they are equal: $$\forall A, \forall B, (\forall x, x \in A \Leftrightarrow x \in B) \Rightarrow A = B$$

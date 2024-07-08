@@ -133,7 +133,7 @@ END%%
 %%ANKI
 Basic
 `^` and `$$` belong to what operator category?
-Back: Anchors
+Back: Anchors.
 Reference: “POSIX Basic Regular Expressions,” accessed February 4, 2024, [https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions).
 <!--ID: 1707050923643-->
 END%%

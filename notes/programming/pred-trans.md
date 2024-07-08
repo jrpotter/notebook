@@ -620,6 +620,139 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1719019485666-->
 END%%
 
+### Assignment
+
+The assignment command has form $x \coloneqq e$, provided the types of $x$ and $e$ are the same. This command is read as "$x$ becomes $e$" and is defined as $$wp(''x \coloneqq e'', R) = domain(e) \,\mathop{\textbf{cand}}\, R_e^x$$
+where $domain(e)$ is a predicate that describes the set of all states in which $e$ may be evaluated.
+
+%%ANKI
+Basic
+The assignment command has what form?
+Back: $x \coloneqq e$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926777-->
+END%%
+
+%%ANKI
+Basic
+How is assignment "$x \coloneqq e$" pronounced?
+Back: As "$x$ becomes $e$".
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926789-->
+END%%
+
+%%ANKI
+Basic
+How is assignment "$x \coloneqq e$" defined in terms of $wp$?
+Back: $wp(''x \coloneqq e'', R) = domain(e) \,\mathop{\textbf{cand}}\, R_e^x$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926794-->
+END%%
+
+%%ANKI
+Basic
+In the $wp$ definition of "$x \coloneqq e$", what does $domain(e)$ refer to?
+Back: A predicate that holds if $e$ is well-defined.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926799-->
+END%%
+
+%%ANKI
+Basic
+In the $wp$ definition of "$x \coloneqq e$", $domain(e)$ must exclude which states?
+Back: Those in which evaluation of $e$ would be undefined.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926804-->
+END%%
+
+%%ANKI
+Basic
+What assumption is made when defining assignment as "$wp(''x \coloneqq e'', R) = R_e^x$"?
+Back: $domain(e)$, i.e. evaluation of $e$ is well-defined.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926808-->
+END%%
+
+%%ANKI
+Basic
+How is definition "$wp(''x \coloneqq e'', R) = R_e^x$" more completely stated?
+Back: $wp(''x \coloneqq e'', R) = domain(e) \,\mathop{\textbf{cand}}\, R_e^x$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926813-->
+END%%
+
+%%ANKI
+Basic
+In what way is the $wp$ definition of assignment usually simplified?
+Back: It is assumed evaluation of expressions (i.e. the RHS of $\coloneqq$) are always well-defined.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926818-->
+END%%
+
+%%ANKI
+Basic
+What does Gries state is "bewildering at first" about definition "$wp(''x \coloneqq e'', R) = R_e^x$"?
+Back: Operational habits make us feel the precondition should be $R$ and postcondition $R_e^x$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926824-->
+END%%
+
+%%ANKI
+Basic
+How is definition $wp(''x \coloneqq e'', R) = R_e^x$ informally justified?
+Back: Since $x$ becomes $e$, $R$ is true after execution iff $R_e^x$ is true before execution.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926828-->
+END%%
+
+%%ANKI
+Basic
+What does $wp(''x \coloneqq 5'', x = 5)$ evaluate to?
+Back: $T$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926833-->
+END%%
+
+%%ANKI
+Basic
+What does $wp(''x \coloneqq 5'', x \neq 5)$ evaluate to?
+Back: $F$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926837-->
+END%%
+
+%%ANKI
+Basic
+What does $wp(''x \coloneqq x + 1'', x < 0)$ evaluate to?
+Back: $x < -1$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926842-->
+END%%
+
+%%ANKI
+Basic
+Given array $b$ with subscript range $0{:}100$, what does $wp(''x \coloneqq b[i]'', x = b[i])$ evaluate to?
+Back: $0 \leq i \leq 100$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926846-->
+END%%
+
+%%ANKI
+Basic
+Assume $c$ is constant and $x, y$ are distinct. What does $wp(''x \coloneqq e'', y = c)$ evaluate to?
+Back: $y = c$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926852-->
+END%%
+
+%%ANKI
+Basic
+What does evaluation "$wp(''x \coloneqq e'', y = c) = (y = c)$" demonstrate?
+Back: That assignment (and expression evaluation) should exhibit no side effects.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720447926858-->
+END%%
+
 ## Bibliography
 
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.

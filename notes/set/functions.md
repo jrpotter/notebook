@@ -1266,6 +1266,142 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1719103644321-->
 END%%
 
+The following holds for any sets $F$, $A$, $B$, and $\mathscr{A}$:
+
+* The image of unions is the union of the images:
+	* $F[\![\bigcup\mathscr{A}]\!] = \bigcup\,\{F[\![A]\!] \mid A \in \mathscr{A}\}$
+* The image of intersections is a subset of the intersection of images:
+	* $F[\![\bigcap \mathscr{A}]\!] \subseteq \bigcap\,\{F[\![A]\!] \mid A \in \mathscr{A}\}$
+	* Equality holds if $F$ is single-rooted.
+
+%%ANKI
+Basic
+How does the image of unions relate to the union of images?
+Back: They are equal.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720382880557-->
+END%%
+
+%%ANKI
+Basic
+How does the union of images relate to the images of unions?
+Back: They are equal.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720386023254-->
+END%%
+
+%%ANKI
+Basic
+How does $F[\![A \cup B]\!]$ relate to $F[\![A]\!] \cup F[\![B]\!]$?
+Back: They are equal.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720382880566-->
+END%%
+
+%%ANKI
+Basic
+What is the generalization of identity $F[\![A \cup B]\!] = F[\![A]\!] \cup F[\![B]\!]$?
+Back: $F[\![\bigcup\mathscr{A}]\!] = \bigcup\,\{F[\![A]\!] \mid A \in \mathscr{A}\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720382880569-->
+END%%
+
+%%ANKI
+Basic
+What is the specialization of identity $F[\![\bigcup\mathscr{A}]\!] = \bigcup\,\{F[\![A]\!] \mid A \in \mathscr{A}\}$?
+Back: $F[\![A \cup B]\!] = F[\![A]\!] \cup F[\![B]\!]$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720382880572-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the following identity intuitively true? $$F[\![A \cup B]\!] = F[\![A]\!] \cup F[\![B]\!]$$
+Back: $F(x)$ is in the range of $F$ regardless of whether $x \in A$ or $x \in B$ (or both).
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720382880575-->
+END%%
+
+%%ANKI
+Basic
+How does the image of intersections relate to the intersection of images?
+Back: The former is a subset of the latter.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720386023257-->
+END%%
+
+%%ANKI
+Basic
+How does the intersection of images relate to the image of intersections?
+Back: The latter is a subset of the former.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720386023261-->
+END%%
+
+%%ANKI
+Basic
+What condition on set $F$ makes the following true? $F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$
+Back: N/A. This is always true.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720386023264-->
+END%%
+
+%%ANKI
+Basic
+What condition on set $F$ makes the following true? $F[\![A \cap B]\!] = F[\![A]\!] \cap F[\![B]\!]$
+Back: $F$ is single-rooted.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720386023267-->
+END%%
+
+%%ANKI
+Basic
+What condition on set $F$ makes the following true? $F[\![A]\!] \cap F[\![B]\!] \subseteq F[\![A \cap B]\!]$
+Back: $F$ is single-rooted.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720386023270-->
+END%%
+
+%%ANKI
+Basic
+What is the generalization of identity $F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$?
+Back: $F[\![\bigcap\mathscr{A}]\!] \subseteq \bigcap\,\{F[\![A]\!] \mid A \in \mathscr{A}\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720386023273-->
+END%%
+
+%%ANKI
+Basic
+What is the specialization of identity $F[\![\bigcap\mathscr{A}]\!] \subseteq \bigcap\,\{F[\![A]\!] \mid A \in \mathscr{A}\}$?
+Back: $F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720386023276-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the following identity intuitively true? $$F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$$
+Back: $A \cap B$ could be empty but $F[\![A]\!] \cap F[\![B]\!]$ could be nonempty.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720386023280-->
+END%%
+
+%%ANKI
+Basic
+The following is analagous to what logical expression of commuting quantifiers? $$F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$$
+Back: $\exists x, \forall y, P(x, y) \Rightarrow \forall y, \exists x, P(x, y)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720386023284-->
+END%%
+
+%%ANKI
+Basic
+Given single-rooted $R$, the following is analagous to what logical expression of commuting quantifiers? $$R[\![A \cap B]\!] = R[\![A]\!] \cap R[\![B]\!]$$
+Back: $\exists x, \forall y, P(x, y) \Leftrightarrow \forall y, \exists x, P(x, y)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720386023288-->
+END%%
+
 ## Bibliography
 
 * “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).

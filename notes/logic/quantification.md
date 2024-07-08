@@ -186,6 +186,22 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1718327812365-->
 END%%
 
+%%ANKI
+Basic
+When does $\exists x, \forall y, P(x, y) \Rightarrow \forall y, \exists x, P(x, y)$ hold true?
+Back: Always.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720386023292-->
+END%%
+
+%%ANKI
+Basic
+When does $\forall x, \exists y, P(x, y) \Rightarrow \exists y, \forall x, P(x, y)$ hold true?
+Back: When there exists a $y$ that $P(x, y)$ holds for over all quantified $x$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720386023296-->
+END%%
+
 ## Identifiers
 
 Identifiers are said to be **bound** if they are parameters to a quantifier. Identifiers that are not bound are said to be **free**. A first-order logic formula is said to be in **prenex normal form** (PNF) if written in two parts: the first consisting of quantifiers and bound variables (the **prefix**), and the second consisting of no quantifiers (the **matrix**).
