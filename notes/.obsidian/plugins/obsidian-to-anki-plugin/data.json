@@ -194,7 +194,7 @@
     "binary/index.md": "9089c6f0e86a0727cd03984f51350de0",
     "_journal/2024-02-09.md": "a798d35f0b2bd1da130f7ac766166109",
     "c/types.md": "cf3e66e5aee58a94db3fdf0783908555",
-    "logic/quantification.md": "313cb37b33dfe7604ba4b8d1db4fb90f",
+    "logic/quantification.md": "a83c424bf9f0bc675e9bd09f8118317b",
     "c/declarations.md": "2de27f565d1020819008ae80593af435",
     "algorithms/sorting/bubble-sort.md": "872fb23e41fb3ac36e8c46240e9a027f",
     "_journal/2024-02-10.md": "562b01f60ea36a3c78181e39b1c02b9f",
@@ -322,7 +322,7 @@
     "_journal/2024-03-18.md": "8479f07f63136a4e16c9cd07dbf2f27f",
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
-    "set/index.md": "43b219df1822f002fdac63aa6d1c8f9a",
+    "set/index.md": "9444d7f3660f1b308d268d5833997737",
     "set/graphs.md": "55298be7241906cb6b61673cf0a2e709",
     "_journal/2024-03-19.md": "a0807691819725bf44c0262405e97cbb",
     "_journal/2024-03/2024-03-18.md": "63c3c843fc6cfc2cd289ac8b7b108391",
@@ -534,10 +534,10 @@
     "_journal/2024-06/2024-06-12.md": "f82dfa74d0def8c3179d3d076f94558e",
     "_journal/2024-06-14.md": "5d12bc272238ac985a1d35d3d63ea307",
     "_journal/2024-06/2024-06-13.md": "e2722a00585d94794a089e8035e05728",
-    "set/functions.md": "1a09c0a0f505c5f551a04f0595971d56",
+    "set/functions.md": "4fd3388fb21c77e96c6cfb703f3ed153",
     "_journal/2024-06-15.md": "92cb8dc5c98e10832fb70c0e3ab3cec4",
     "_journal/2024-06/2024-06-14.md": "5d12bc272238ac985a1d35d3d63ea307",
-    "lambda-calculus/beta-reduction.md": "5532f9beec9d265724a8d205326bcf67",
+    "lambda-calculus/beta-reduction.md": "5386403713b42ee1831d15c84de133ba",
     "_journal/2024-06-16.md": "ded6ab660ecc7c3dce3afd2e88e5a725",
     "_journal/2024-06/2024-06-15.md": "c3a55549da9dfc2770bfcf403bf5b30b",
     "_journal/2024-06-17.md": "63df6757bb3384e45093bf2b9456ffac",
@@ -585,7 +585,11 @@
     "_journal/2024-07-07.md": "9ee2d5007c34cc7ff681f3d9e998eca4",
     "_journal/2024-07/2024-07-06.md": "2b794e424985f0e7d4d899163ce5733c",
     "_journal/2024-07-08.md": "03ed5604e680ac9742ee99ae4b1eee8b",
-    "_journal/2024-07/2024-07-07.md": "9ee2d5007c34cc7ff681f3d9e998eca4"
+    "_journal/2024-07/2024-07-07.md": "9ee2d5007c34cc7ff681f3d9e998eca4",
+    "_journal/2024-07-09.md": "00c357e9cfac6de17825b02fdbd00c80",
+    "_journal/2024-07/2024-07-08.md": "03ed5604e680ac9742ee99ae4b1eee8b",
+    "_journal/2024-07-10.md": "2bb3db1f506f4ec7726cb5f2ed2daf24",
+    "_journal/2024-07/2024-07-09.md": "00c357e9cfac6de17825b02fdbd00c80"
   },
   "fields_dict": {
     "Basic": [

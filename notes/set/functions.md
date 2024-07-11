@@ -1271,12 +1271,15 @@ The following holds for any sets $F$, $A$, $B$, and $\mathscr{A}$:
 * The image of unions is the union of the images:
 	* $F[\![\bigcup\mathscr{A}]\!] = \bigcup\,\{F[\![A]\!] \mid A \in \mathscr{A}\}$
 * The image of intersections is a subset of the intersection of images:
-	* $F[\![\bigcap \mathscr{A}]\!] \subseteq \bigcap\,\{F[\![A]\!] \mid A \in \mathscr{A}\}$
+	* $F[\![\bigcap \mathscr{A}]\!] \subseteq \bigcap\,\{F[\![A]\!] \mid A \in \mathscr{A}\}$ for $\mathscr{A} \neq \varnothing$
+	* Equality holds if $F$ is single-rooted.
+* The image of a difference includes the difference of the images:
+	* $F[\![A]\!] - F[\![B]\!] \subseteq F[\![A - B]\!]$
 	* Equality holds if $F$ is single-rooted.
 
 %%ANKI
 Basic
-How does the image of unions relate to the union of images?
+How does the image of unions relate to the union of the images?
 Back: They are equal.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720382880557-->
@@ -1284,7 +1287,7 @@ END%%
 
 %%ANKI
 Basic
-How does the union of images relate to the images of unions?
+How does the union of images relate to the images of the unions?
 Back: They are equal.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720386023254-->
@@ -1324,7 +1327,7 @@ END%%
 
 %%ANKI
 Basic
-How does the image of intersections relate to the intersection of images?
+How does the image of intersections relate to the intersection of the images?
 Back: The former is a subset of the latter.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720386023257-->
@@ -1332,7 +1335,7 @@ END%%
 
 %%ANKI
 Basic
-How does the intersection of images relate to the image of intersections?
+How does the intersection of images relate to the image of the intersections?
 Back: The latter is a subset of the former.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720386023261-->
@@ -1380,8 +1383,8 @@ END%%
 
 %%ANKI
 Basic
-*Why* is the following identity intuitively true? $$F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$$
-Back: $A \cap B$ could be empty but $F[\![A]\!] \cap F[\![B]\!]$ could be nonempty.
+What $\varnothing$-based example is used to show the following is intuitively true? $$F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$$
+Back: $A$ and $B$ might be disjoint even if $F[\![A]\!]$ and $F[\![B]\!]$ are not.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720386023280-->
 END%%
@@ -1400,6 +1403,54 @@ Given single-rooted $R$, the following is analagous to what logical expression o
 Back: $\exists x, \forall y, P(x, y) \Leftrightarrow \forall y, \exists x, P(x, y)$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720386023288-->
+END%%
+
+%%ANKI
+Basic
+How does the image of differences relate to the difference of the images?
+Back: The latter is a subset of the former.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720665224629-->
+END%%
+
+%%ANKI
+Basic
+How does the difference of images relate to the image of the differences?
+Back: The former is a subset of the latter.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720665351075-->
+END%%
+
+%%ANKI
+Basic
+What $\varnothing$-based example is used to show the following is intuitively true? $$F[\![A]\!] - F[\![B]\!] \subseteq F[\![A - B]\!]$$
+Back: $F[\![A]\!]$ and $F[\![B]\!]$ might be the same sets even if $A \neq B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720665224636-->
+END%%
+
+%%ANKI
+Basic
+What condition on set $F$ makes the following true? $F[\![A - B]\!] \subseteq F[\![A]\!] - F[\![B]\!]$
+Back: $F$ is single-rooted.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720665351101-->
+END%%
+
+%%ANKI
+Basic
+What condition on set $F$ makes the following true? $F[\![A - B]\!] = F[\![A]\!] - F[\![B]\!]$
+Back: $F$ is single-rooted.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720665351105-->
+END%%
+
+%%ANKI
+Basic
+What condition on set $F$ makes the following true? $F[\![A]\!] - F[\![B]\!] \subseteq F[\![A - B]\!]$
+Back: N/A. This is always true.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720665351109-->
 END%%
 
 ## Bibliography

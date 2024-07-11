@@ -210,7 +210,7 @@ END%%
 
 ## Normal Form
 
-A term $Q$ which contains no $\beta$-redexes is called a **$\beta$-normal form** (or a **term in $\beta$-normal form** or just a **$\beta$-nf**). The class of all $\beta$-normal forms is called $\beta$-nf or $\lambda\beta$-nf. If a term $P$ $\beta$-reduces to a term $Q$ in $\beta$-nf, then $Q$ is called a **$\beta$-normal form of $P$**.
+A term $Q$ which contains no $\beta$-redexes is called a **$\beta$-normal form** (or a **term in $\beta$-normal form** or just a **$\beta\text{-nf}$**). The class of all $\beta$-normal forms is called $\beta\text{-nf}$ or $\lambda\beta\text{-nf}$. If a term $P$ $\beta$-reduces to a term $Q$ in $\beta\text{-nf}$, then $Q$ is called a **$\beta$-normal form of $P$**.
 
 %%ANKI
 Basic
@@ -246,14 +246,14 @@ END%%
 
 %%ANKI
 Cloze
-The class of {all $\beta$-normal forms} is called {$\beta$-nf/$\lambda\beta$-nf}.
+The class of {all $\beta$-normal forms} is called {$\beta\text{-nf}$/$\lambda\beta\text{-nf}$}.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719065185812-->
 END%%
 
 %%ANKI
 Basic
-What ambiguity does term "$\beta$-nf" introduce?
+What ambiguity does term "$\beta\text{-nf}$" introduce?
 Back: It refers to a specific $\beta$-normal form or the class of $\beta$-normal forms.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719065185815-->
@@ -262,23 +262,23 @@ END%%
 %%ANKI
 Basic
 What does it mean for term $Q$ to be a $\beta$-normal form of term $P$?
-Back: $P$ $\beta$-reduces to a term $Q$ in $\beta$-nf.
+Back: $P$ $\beta$-reduces to a term $Q$ in $\beta\text{-nf}$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719065185819-->
 END%%
 
 %%ANKI
 Basic
-How is the class $\beta$-nf alternatively denoted?
-Back: As $\lambda\beta$-nf.
+How is the class $\beta\text{-nf}$ alternatively denoted?
+Back: As $\lambda\beta\text{-nf}$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719065185823-->
 END%%
 
 %%ANKI
 Basic
-How is the class $\lambda\beta$-nf alternatively denoted?
-Back: As $\beta$-nf.
+How is the class $\lambda\beta\text{-nf}$ alternatively denoted?
+Back: As $\beta\text{-nf}$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719065185799-->
 END%%
@@ -325,18 +325,34 @@ END%%
 
 %%ANKI
 Basic
-Why isn't $x(\lambda u. uv)$ in $\beta$-normal form?
-Back: N/A. It is.
+Is $a(\lambda u. uv)x$ in $\beta$-normal form?
+Back: Yes.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720645031207-->
+END%%
+
+%%ANKI
+Basic
+*Why* is $x(\lambda u. uv)$ in $\beta$-normal form?
+Back: It contains no $\beta$-redex.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719103644324-->
 END%%
 
 %%ANKI
 Basic
-Why isn't $(\lambda u. uv)x$ in $\beta$-normal form?
+*Why* isn't $(\lambda u. uv)x$ in $\beta$-normal form?
 Back: Because $(\lambda u. uv)x$ is a $\beta$-redex.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719103644325-->
+END%%
+
+%%ANKI
+Basic
+*Why* is $a(\lambda u. uv)x$ in $\beta$-normal form?
+Back: With parentheses, $(a(\lambda u. uv))x$ clearly contains no $\beta$-redex.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720645031212-->
 END%%
 
 %%ANKI
@@ -363,11 +379,127 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1719406791436-->
 END%%
 
+As an alternative characterization, the class $\beta\text{-nf}$ is the smallest class such that
+
+* all atoms are in $\beta\text{-nf}$;
+* $M, N \in \beta\text{-nf} \Rightarrow aMN \in \beta\text{-nf}$ for all atoms $a$;
+* $M \in \beta\text{-nf} \Rightarrow \lambda x. M \in \beta\text{-nf}$
+
+%%ANKI
+Basic
+What proposition explains how atoms relate to the definition of $\beta\text{-nf}$?
+Back: All atoms are in $\beta\text{-nf}$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720645978919-->
+END%%
+
+%%ANKI
+Basic
+What proposition explains how applications relate to the definition of $\beta\text{-nf}$?
+Back: For all atoms $a$, if $M, N \in \beta\text{-nf}$, then $aMN \in \beta\text{-nf}$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720645978924-->
+END%%
+
+%%ANKI
+Basic
+Given atom $a$ and $M \in \beta\text{-nf}$, what application is in $\beta\text{-nf}$?
+Back: $aM$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720646122613-->
+END%%
+
+%%ANKI
+Basic
+$M, N \in \beta\text{-nf}$ implies what application is in $\beta\text{-nf}$?
+Back: $aMN$ for any atom $a$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720645978929-->
+END%%
+
+%%ANKI
+Basic
+Given $M, N \in \beta\text{-nf}$, when is $MN \in \beta\text{-nf}$?
+Back: When $M$ is not an abstraction.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720645978933-->
+END%%
+
+%%ANKI
+Basic
+Given $M, N \in \beta\text{-nf}$, when is $MN \not\in \beta\text{-nf}$?
+Back: When $M$ is an abstraction.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720646122620-->
+END%%
+
+%%ANKI
+Basic
+What proposition explains how abstractions relate to the definition of $\beta\text{-nf}$?
+Back: If $M \in \beta\text{-nf}$, then $\lambda x. M \in \beta\text{-nf}$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720645978936-->
+END%%
+
+%%ANKI
+Basic
+$M \in \beta\text{-nf}$ implies what abstraction is in $\beta\text{-nf}$?
+Back: $\lambda x. M$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720645978940-->
+END%%
+
+%%ANKI
+Basic
+Given atom $a$, if $M \equiv aM_1\ldots M_n$ and $M \,\triangleright_\beta\, N$, what form does $N$ have?
+Back: $aN_1\ldots N_n$ where $M_i \,\triangleright_\beta\, N_i$ for $i = 1, \ldots, n$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720649942775-->
+END%%
+
+%%ANKI
+Basic
+Given atom $a$, if $M \equiv aM_1\ldots M_n$ and $M \,\triangleright_\beta\, N$, *why* does $N$ have form $aN_1\ldots N_n$?
+Back: Since $M \equiv ((\cdots((aM_1)M_2)\cdots)M_n)$, every $\beta$-redex must be in an $M_i$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720649942780-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a $\lambda$-term to *be* a $\beta\text{-nf}$?
+Back: The $\lambda$-term contains no $\beta$-redex.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720649942783-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a $\lambda$-term to *have* a $\beta\text{-nf}$?
+Back: The $\lambda$-term can be $\beta$-reduced into a term in $\beta\text{-nf}$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720649942787-->
+END%%
+
+%%ANKI
+Basic
+Suppose $[N/x]M$ is a $\beta\text{-nf}$. Is $M$ a $\beta\text{-nf}$?
+Back: Yes.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720665224642-->
+END%%
+
+%%ANKI
+Basic
+Suppose $[N/x]M$ has a $\beta\text{-nf}$. Does $M$ have a $\beta\text{-nf}$?
+Back: Not necessarily.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1720665224645-->
+END%%
+
 ## Church-Rosser Theorem
 
-If $P \,\triangleright_\beta\, M$ and $P \,\triangleright_\beta\, N$, then there exists a term $T$ such that $M \,\triangleright_\beta\, T$ and $N \,\triangleright_\beta\, T$.
-
-As an immediate corollary, if $P$ has a $\beta$-normal form then it it is unique modulo $\equiv_\alpha$.
+If $P \,\triangleright_\beta\, M$ and $P \,\triangleright_\beta\, N$, then there exists a term $T$ such that $M \,\triangleright_\beta\, T$ and $N \,\triangleright_\beta\, T$. As an immediate corollary, if $P$ has a $\beta$-normal form then it it is unique modulo $\equiv_\alpha$.
 
 %%ANKI
 Basic

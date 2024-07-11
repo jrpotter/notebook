@@ -251,8 +251,8 @@ END%%
 
 %%ANKI
 Basic
-How many members are in set $\{P(y) \mid y \in B\}$?
-Back: As many as the number of unique $P(y)$ for each $y \in B$.
+Given function $P$, how is set $\{P(y) \mid y \in B\}$ more compactly denoted?
+Back: $P[\![B]\!]$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720369624737-->
 END%%
@@ -307,8 +307,8 @@ END%%
 
 %%ANKI
 Basic
-How do you rewrite $\{A \mid A \in B\}$ with an existential in the entrance requirement?
-Back: $\{v \mid A \in B \land v = A\}$
+How is $\{A \mid A \in B\}$ rewritten with an existential in the entrance requirement?
+Back: $\{v \mid \exists A \in B \land v = A\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720381621849-->
 END%%

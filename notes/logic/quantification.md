@@ -232,7 +232,7 @@ END%%
 
 %%ANKI
 Basic
-Which identifiers in the following are bound? $$\exists x, P(x) \land P(y)$$
+Which identifiers in the following are bound? $\exists x, P(x) \land P(y)$
 Back: Just $x$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707674796777-->
@@ -240,7 +240,7 @@ END%%
 
 %%ANKI
 Basic
-Which identifiers in the following are free? $$\exists x, P(x) \land P(y)$$
+Which identifiers in the following are free? $\exists x, P(x) \land P(y)$
 Back: Just $y$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707674796779-->
@@ -248,10 +248,18 @@ END%%
 
 %%ANKI
 Basic
-How is the following rewritten in PNF? $$(\exists x, P(x)) \land (\exists y, P(y))$$
-Back: $\exists x \;y, P(x) \land P(y)$
+How is the following rewritten in PNF? $(\exists x, P(x)) \land (\exists y, Q(y))$
+Back: $\exists x \;y, P(x) \land Q(y)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707675399517-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten in PNF? $(\exists x, P(x)) \land (\forall y, Q(y))$
+Back: N/A.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1720665224639-->
 END%%
 
 ## Bibliography
