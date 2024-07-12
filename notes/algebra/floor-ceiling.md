@@ -291,7 +291,7 @@ END%%
 %%ANKI
 Basic
 Given `A[p:q]` and $r = \lfloor (p + q) / 2 \rfloor$, what is the size of `A[p:r]` in terms of $n = q - p + 1$?
-Back: $\lceil n / 2 \rceil$.
+Back: $\lceil n / 2 \rceil$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742467192-->
 END%%
@@ -299,7 +299,7 @@ END%%
 %%ANKI
 Basic
 Given `A[p:q]` and $r = \lfloor (p + q) / 2 \rfloor$, what is the size of `A[r+1:q]` in terms of $n = q - p + 1$?
-Back: $\lfloor n / 2 \rfloor$.
+Back: $\lfloor n / 2 \rfloor$
 Reference: Thomas H. Cormen et al., *Introduction to Algorithms*, 3rd ed (Cambridge, Mass: MIT Press, 2009).
 <!--ID: 1708742467198-->
 END%%

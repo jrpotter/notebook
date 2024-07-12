@@ -794,6 +794,304 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1718107987936-->
 END%%
 
+## Index Sets
+
+Let $I$ be a set, called the **index set**. Let $F$ be a [[functions|function]] whose domain includes $I$. Then we define $$\bigcup_{i \in I} F(i) = \bigcup\,\{F(i) \mid i \in I\}$$
+and, if $I \neq \varnothing$, $$\bigcap_{i \in I} F(i) = \bigcap\, \{F(i) \mid i \in I\}$$
+
+%%ANKI
+Basic
+What name does $I$ go by in expression $\bigcup_{i \in I} F(i)$?
+Back: The "index set".
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492681-->
+END%%
+
+%%ANKI
+Basic
+How is $\bigcup_{i \in I} F(i)$ alternatively denoted?
+Back: $\bigcup_{i \in I} F_i$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492687-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematic object is $I$ in expression $\bigcup_{i \in I} F(i)$?
+Back: A set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492690-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematic object is $F$ in expression $\bigcup_{i \in I} F(i)$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492693-->
+END%%
+
+%%ANKI
+Basic
+How is $\bigcup_{i \in I} F_i$ alternatively denoted?
+Back: $\bigcup_{i \in I} F(i)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782592276-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematic object is $F$ in expression $\bigcup_{i \in I} F_i$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782592281-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of $F$ assumed to be in expression $\bigcup_{i \in I} F(i)$?
+Back: Some superset of $I$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492696-->
+END%%
+
+%%ANKI
+Basic
+What condition must $I$ satisfy in expression $\bigcup_{i \in I} F(i)$?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492699-->
+END%%
+
+%%ANKI
+Basic
+Suppose $I = \{0, 1, 2\}$. What does $\bigcup_{i \in I} F(i)$ evaluate to?
+Back: $F(0) \cup F(1) \cup F(2)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492702-->
+END%%
+
+%%ANKI
+Basic
+Suppose $I = \varnothing$. What does $\bigcup_{i \in I} F(i)$ evaluate to?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492705-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematic object is $F$ in expression $\bigcap_{i \in I} F(i)$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492709-->
+END%%
+
+%%ANKI
+Basic
+How is $\bigcap_{i \in I} F(i)$ often alternatively denoted?
+Back: $\bigcap_{i \in I} F_i$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492712-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of $F$ assumed to be in expression $\bigcap_{i \in I} F(i)$?
+Back: Some superset of $I$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492716-->
+END%%
+
+%%ANKI
+Basic
+What condition must $I$ satisfy in expression $\bigcap_{i \in I} F(i)$?
+Back: $I \neq \varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492720-->
+END%%
+
+%%ANKI
+Basic
+Suppose $I = \{0, 1, 2\}$. What does $\bigcap_{i \in I} F(i)$ evaluate to?
+Back: $F(0) \cap F(1) \cap F(2)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492724-->
+END%%
+
+%%ANKI
+Basic
+Suppose $I = \varnothing$. What does $\bigcap_{i \in I} F(i)$ evaluate to?
+Back: N/A. This is undefined.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492727-->
+END%%
+
+%%ANKI
+Basic
+How is $\bigcap_{i \in I} F_i$ alternatively denoted?
+Back: $\bigcap_{i \in I} F(i)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782592285-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematic object is $F$ in expression $\bigcap_{i \in I} F_i$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782592288-->
+END%%
+
+## Function Sets
+
+For sets $A$ and $B$, the collection of functions $F$ from $A$ into $B$ is: $$^AB = \{F \mid F \colon A \rightarrow B\}$$
+$^AB$ is read as "$B$-pre-$A$". It is often written as $B^A$ instead.
+
+%%ANKI
+Basic
+For sets $A$ and $B$, how is set $B^A$ defined?
+Back: $\{F \mid F \colon A \rightarrow B\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782833225-->
+END%%
+
+%%ANKI
+Basic
+For sets $A$ and $B$, how is set $^AB$ defined?
+Back: $\{F \mid F \colon A \rightarrow B\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782923177-->
+END%%
+
+%%ANKI
+Basic
+For any function $F \colon A \rightarrow B$, $F$ is a subset of what other set?
+Back: $A \times B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782833233-->
+END%%
+
+%%ANKI
+Basic
+For any function $F \colon A \rightarrow B$, $F$ is a member of what other set?
+Back: $\mathscr{P}(A \times B)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782833236-->
+END%%
+
+%%ANKI
+Basic
+For sets $A$ and $B$, how is set $B^A$ pronounced?
+Back: As "$B$-pre-$A$".
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782923183-->
+END%%
+
+%%ANKI
+Basic
+Why prefer notation $B^A$ over $^AB$?
+Back: The notation mirrors $|B|^{|A|}$, the number of elements in $B^A$ given both sets are finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607431-->
+END%%
+
+%%ANKI
+Basic
+For sets $A$ and $B$, how is set $^AB$ pronounced?
+Back: As "$B$-pre-$A$".
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782923193-->
+END%%
+
+%%ANKI
+Basic
+Why prefer notation $^AB$ over $B^A$?
+Back: Because the sets are written left-to-right, from domain to codomain.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607434-->
+END%%
+
+%%ANKI
+Basic
+*Why* is set $B^A$ denoted the way it is?
+Back: If $A$ and $B$ are finite, then $B^A$ has $|B|^{|A|}$ members.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782923188-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of $^\omega\{0, 1\}$?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607437-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of a member of $^\omega\{0, 1\}$?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607440-->
+END%%
+
+%%ANKI
+Basic
+What is the range of $\{0, 1\}^\omega$?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607444-->
+END%%
+
+%%ANKI
+Basic
+What is the range of a member of $\{0, 1\}^\omega$?
+Back: $\{0, 1\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607448-->
+END%%
+
+%%ANKI
+Basic
+What does $\varnothing^\varnothing$ evaluate to?
+Back: $\{\varnothing\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607451-->
+END%%
+
+%%ANKI
+Basic
+For $A \neq \varnothing$, what does $\varnothing^A$ evaluate to?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607455-->
+END%%
+
+%%ANKI
+Basic
+For $A \neq \varnothing$, *why* does $\varnothing^A = \varnothing$?
+Back: No function can map a nonempty domain to an empty range.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607459-->
+END%%
+
+%%ANKI
+Basic
+For $A \neq \varnothing$, what does $^\varnothing A$ evaluate to?
+Back: $\{\varnothing\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607463-->
+END%%
+
+%%ANKI
+Basic
+For $A \neq \varnothing$, *why* does $^\varnothing A = \{\varnothing\}$?
+Back: $\varnothing$ is the only function with empty domain.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607468-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

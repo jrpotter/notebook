@@ -559,7 +559,7 @@ END%%
 
 %%ANKI
 Basic
-If a $\lambda$-term has $\beta$-normal forms $P$ and $Q$, what can be said about $P$ and $Q$?
+If a $\lambda$-term has $\beta$-normal forms $P$ and $Q$, how do $P$ and $Q$ relate to one another?
 Back: $P \equiv_\alpha Q$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719577152610-->

@@ -108,7 +108,7 @@ END%%
 %%ANKI
 Basic
 What does a hash table collision refer to?
-Back: Two keys hashing to the same slot.
+Back: Two different keys hashing to the same slot.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1716307180976-->
 END%%
