@@ -601,6 +601,201 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1718329620208-->
 END%%
 
+## Equivalence Relations
+
+Given relation $R$ and set $A$, $R$ is an **equivalence relation on $A$** iff $R$ is a binary relation on $A$ that is reflexive on $A$, symmetric, and transitive:
+
+* $R$ is **reflexive on $A$** if $xRx$ for all $x \in A$.
+* $R$ is **symmetric** if whenever $xRy$, then $yRx$.
+* $R$ is **transitive** if whenever $xRy$ and $yRz$, then $xRz$.
+
+%%ANKI
+Cloze
+Binary relation $R$ is {reflexive on $A$} iff {$xRx$ for all $x \in A$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429790-->
+END%%
+
+%%ANKI
+Basic
+Why is it incorrect to ask if $R$ is reflexive?
+Back: We have to ask if $R$ is reflexive on some reference set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429800-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ reflexive?
+Back: N/A. The question must provide a reference set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429804-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ reflexive on $a$?
+Back: N/A. We must ask if $R$ is reflexive on a set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429808-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ reflexive on $\{a\}$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429812-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ reflexive on $\{a, b\}$?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429817-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, *why* isn't $R$ reflexive on $\{a, b\}$?
+Back: Because $\langle b, b \rangle \not\in R$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429820-->
+END%%
+
+%%ANKI
+Cloze
+If $xRx$ for all $x \in A$, $R$ is said to be reflexive {on} $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429824-->
+END%%
+
+%%ANKI
+Cloze
+Binary relation $R$ is {symmetric} iff {$xRy \Rightarrow yRx$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429828-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, b \rangle, \langle b, c \rangle\}$, is $R$ symmetric?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429832-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, b \rangle, \langle b, c \rangle\}$, what additional member(s) must be added to make $R$ symmetric?
+Back: $\langle b, a \rangle$ and $\langle c, b \rangle$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429835-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle, \langle b, b \rangle\}$, which of reflexivity (on $\{a, b\}$), symmetry, and transitivity does $R$ exhibit?
+Back: Reflexivity on $\{a, b\}$ and symmetry.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429839-->
+END%%
+
+%%ANKI
+Cloze
+Binary relation $R$ is {transitive} iff {$xRy \land yRz \Rightarrow xRz$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429843-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, b \rangle, \langle b, c \rangle\}$, is $R$ transitive?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429846-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, b \rangle, \langle b, c \rangle\}$, what additional member(s) must be added to make $R$ transitive?
+Back: Just $\langle a, c \rangle$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429850-->
+END%%
+
+%%ANKI
+Basic
+What is an equivalence relation on $A$?
+Back: A binary relation on $A$ that is reflexive on $A$, symmetric, and transitive.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429853-->
+END%%
+
+%%ANKI
+Cloze
+An equivalence relation on $A$ is a {$2$}-ary relation on $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429857-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle\}$, is $R$ an equivalence relation?
+Back: N/A. The question must provide a reference set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429860-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle\}$, is $R$ an equivalence relation on $\{a\}$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429864-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ an equivalence relation on $\{a\}$?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429868-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ an equivalence relation on $\{a\}$?
+Back: $R$ is neither symmetric nor transitive.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429873-->
+END%%
+
+%%ANKI
+Basic
+Which of symmetric relations and transitive relations is more general?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720969371859-->
+END%%
+
+%%ANKI
+Basic
+Which of equivalence relations on $A$ and symmetric relations is more general?
+Back: Symmetric relations.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720969371866-->
+END%%
+
+%%ANKI
+Basic
+Which of binary relations on $A$ and equivalence relations on $A$ is more general?
+Back: Binary relations on $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720969371869-->
+END%%
+
 ## Bibliography
 
 * “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
