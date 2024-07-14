@@ -395,6 +395,13 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1718465870483-->
 END%%
 
+%%ANKI
+Cloze
+For any binary relation $R$, $R \subseteq$ {1:$\mathop{\text{dom} }R$} $\times$ {1:$\mathop{\text{ran} }R$} $\subseteq$ {2:$\mathop{\text{fld} }R$} $\times$ {2:$\mathop{\text{fld} }R$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720991126990-->
+END%%
+
 ## n-ary Relations
 
 We define ordered triples as $\langle x, y, z \rangle = \langle \langle x, y \rangle, z \rangle$. We define ordered quadruples as $\langle x_1, x_2, x_3, x_4 \rangle = \langle \langle \langle x_1, x_2 \rangle, x_3 \rangle, x_4 \rangle$. This idea generalizes to $n$-tuples. As a special case, we define the $1$-tuple $\langle x \rangle = x$.

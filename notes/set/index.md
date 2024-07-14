@@ -174,6 +174,46 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 END%%
 
 %%ANKI
+Basic
+What German term is used alternatively for "atoms"?
+Back: Urelements.
+Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
+<!--ID: 1720998380904-->
+END%%
+
+%%ANKI
+Basic
+Can sets be members of urelements?
+Back: No.
+Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
+<!--ID: 1720998380907-->
+END%%
+
+%%ANKI
+Basic
+Can urelements be members of sets?
+Back: Yes.
+Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
+<!--ID: 1720998380909-->
+END%%
+
+%%ANKI
+Basic
+Can urelements be members of urelements?
+Back: No.
+Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
+<!--ID: 1720998380910-->
+END%%
+
+%%ANKI
+Basic
+Can sets be members of sets?
+Back: Yes.
+Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
+<!--ID: 1720998380911-->
+END%%
+
+%%ANKI
 Cloze
 An {atom} is to set theory as an {atomic} logical statement is to propositional logic. 
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

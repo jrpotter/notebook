@@ -48,6 +48,13 @@ Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Pres
 END%%
 
 %%ANKI
+Cloze
+{Mereology} is the {philosophical study of part-whole relationships}.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1720998380912-->
+END%%
+
+%%ANKI
 Basic
 What does Effingham mean when saying "concreta" and "abstracta" are terms of art?
 Back: They are terms defined freely by a person to mean whatever one wants.

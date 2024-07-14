@@ -94,12 +94,12 @@ END%%
 
 ## SET
 
-| Instruction | Synonym | Effect   | Description          |
-| ----------- | ------- | -------- | -------------------- |
-| `sete`      | `setz`  | D <- ZF  | Equal / zero         |
-| `setne`     | `setnz` | D <- ~ZF | Not equal / not zero |
-| `sets`      |         | D <- SF  | Negative             |
-| `setns`     |         | D <- ~SF | Nonnegative          |
+| Instruction | Synonym | Effect     | Description          |
+| ----------- | ------- | ---------- | -------------------- |
+| `sete`      | `setz`  | `D <- ZF`  | Equal / zero         |
+| `setne`     | `setnz` | `D <- ~ZF` | Not equal / not zero |
+| `sets`      |         | `D <- SF`  | Negative             |
+| `setns`     |         | `D <- ~SF` | Nonnegative          |
 
 %%ANKI
 Basic
@@ -192,6 +192,69 @@ Cloze
 {`set[ez]`} is to {`ZF`} whereas {`sets`} is to {`SF`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1720793027151-->
+END%%
+
+%%ANKI
+Basic
+What condition code(s) does `sete` refer to?
+Back: `ZF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720992217906-->
+END%%
+
+%%ANKI
+Basic
+When value does `setz` put in its specified destination?
+Back: `ZF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720992217909-->
+END%%
+
+%%ANKI
+Basic
+What condition code(s) does `setnz` refer to?
+Back: `ZF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720992217911-->
+END%%
+
+%%ANKI
+Basic
+When value does `setne` put in its specified destination?
+Back: `~ZF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720992217913-->
+END%%
+
+%%ANKI
+Basic
+What condition code(s) does `sets` refer to?
+Back: `SF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720992217915-->
+END%%
+
+%%ANKI
+Basic
+When value does `setz` put in its specified destination?
+Back: `SF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+END%%
+
+%%ANKI
+Basic
+What condition code(s) does `setns` refer to?
+Back: `SF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720992217916-->
+END%%
+
+%%ANKI
+Basic
+When value does `setns` put in its specified destination?
+Back: `~SF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720992217917-->
 END%%
 
 ## Bibliography
