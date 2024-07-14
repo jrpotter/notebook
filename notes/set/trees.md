@@ -563,7 +563,7 @@ END%%
 
 %%ANKI
 Basic
-Which nodes are descendants to $4$ in the following rooted tree?
+Which nodes are descendants of $4$ in the following rooted tree?
 ![[rooted-tree.png]]
 Back: $4$, $11$, and $2$.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

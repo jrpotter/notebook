@@ -92,6 +92,108 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1717941416513-->
 END%%
 
+## SET
+
+| Instruction | Synonym | Effect   | Description          |
+| ----------- | ------- | -------- | -------------------- |
+| `sete`      | `setz`  | D <- ZF  | Equal / zero         |
+| `setne`     | `setnz` | D <- ~ZF | Not equal / not zero |
+| `sets`      |         | D <- SF  | Negative             |
+| `setns`     |         | D <- ~SF | Nonnegative          |
+
+%%ANKI
+Basic
+What value does a `SET` instruction assign to a destination?
+Back: $0$ or $1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720793027105-->
+END%%
+
+%%ANKI
+Basic
+How large is the destination of a `SET` instruction?
+Back: A single byte.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720793027114-->
+END%%
+
+%%ANKI
+Basic
+What is `q` in the `cmpq` instruction short for?
+Back: **Q**uad word.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720793027119-->
+END%%
+
+%%ANKI
+Basic
+What is `e` in the `sete` instruction short for?
+Back: **E**qual.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720793027124-->
+END%%
+
+%%ANKI
+Basic
+What is `e` in the `setz` instruction short for?
+Back: **Z**ero.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720793027129-->
+END%%
+
+%%ANKI
+Cloze
+{`sete`} is a synonym for {`setz`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720793064815-->
+END%%
+
+%%ANKI
+Basic
+What is `ne` in the `setne` instruction short for?
+Back: **N**ot **e**qual.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720793027134-->
+END%%
+
+%%ANKI
+Basic
+What is `nz` in the `setnz` instruction short for?
+Back: **N**ot **z**ero.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720793027139-->
+END%%
+
+%%ANKI
+Cloze
+{`setne`} is a synonym for {`setnz`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720793064824-->
+END%%
+
+%%ANKI
+Basic
+What is `s` in the `sets` instruction short for?
+Back: **S**igned.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720793027143-->
+END%%
+
+%%ANKI
+Basic
+What is `ns` in the `setns` instruction short for?
+Back: **N**ot **s**igned.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720793027147-->
+END%%
+
+%%ANKI
+Cloze
+{`set[ez]`} is to {`ZF`} whereas {`sets`} is to {`SF`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1720793027151-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

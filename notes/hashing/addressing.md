@@ -1,12 +1,154 @@
 ---
-title: Closed Addressing
+title: Addressing
 TARGET DECK: Obsidian::STEM
-FILE TAGS: hashing::closed
+FILE TAGS: hashing::addressing
 tags:
+  - addressing
   - hashing
 ---
 
 ## Overview
+
+## Direct
+
+Given a universe of keys $U = \{0, 1, \ldots, m - 1\}$, a **direct-address table** has $m$ **slots**. Each slot corresponds to a key in universe $U$.
+
+%%ANKI
+Basic
+Given universe $U$, how many slots must a direct-address table have?
+Back: $|U|$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716046153762-->
+END%%
+
+%%ANKI
+Basic
+What name is given to each position in a direct-address table?
+Back: A slot.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716046153766-->
+END%%
+
+%%ANKI
+Basic
+Given a direct-address table, the element at slot $k$ has what key?
+Back: $k$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716046153770-->
+END%%
+
+%%ANKI
+Basic
+Given a direct-address table, an element with key $k$ is placed in what slot?
+Back: The $k$th slot.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716046153775-->
+END%%
+
+%%ANKI
+Basic
+Write pseudocode to test membership of $x$ in direct-address table `T[0:m-1]`.
+Back:
+```c
+bool membership(T, x) {
+  return T[x.key] != NIL;
+}
+```
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716046153781-->
+END%%
+
+%%ANKI
+Basic
+What is the worst-cast runtime complexity of direct-address table searches?
+Back: $O(1)$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716307180982-->
+END%%
+
+%%ANKI
+Basic
+Write pseudocode to insert $x$ into direct-address table `T[0:m-1]`.
+Back:
+```c
+void insert(T, x) {
+  T[x.key] = x;
+}
+```
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716046153785-->
+END%%
+
+%%ANKI
+Basic
+What is the worst-case runtime complexity of direct-address table insertions?
+Back: $O(1)$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716307180983-->
+END%%
+
+%%ANKI
+Basic
+Write pseudocode to delete $x$ from direct-address table `T[0:m-1]`.
+Back:
+```c
+void delete(T, x) {
+  T[x.key] = NIL;
+}
+```
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716046153789-->
+END%%
+
+%%ANKI
+Basic
+What is the worst-cast runtime complexity of direct-address table deletions?
+Back: $O(1)$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716307180984-->
+END%%
+
+%%ANKI
+Basic
+In what situation does direct addressing waste space?
+Back: When the number of keys used is less than the size of the universe.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716307180986-->
+END%%
+
+%%ANKI
+Basic
+In what situation is direct addressing impossible?
+Back: When the size of the universe is too large to hold in memory.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1716307180987-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes direct addressing from closed and open addressing?
+Back: Direct addressing isn't concerned with conflicting keys.
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718199205862-->
+END%%
+
+%%ANKI
+Basic
+Direct addressing sits between what other addressing types?
+Back: Open and closed addressing.
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718199205872-->
+END%%
+
+%%ANKI
+Basic
+What is the theoretical maximum load factor in direct addressing?
+Back: $1$
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718759188227-->
+END%%
+
+## Closed
 
 In **closed addressing**, a key is always stored in the bucket it's hashed to. Collisions are dealt with using separate data structures on a per-bucket basis.
 
@@ -89,7 +231,7 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1718759188245-->
 END%%
 
-## Chaining
+### Chaining
 
 The most common form of closed addressing is **chaining**. In this scheme, each slot $j$ is a (nullable) pointer to the head of a linked list containing all the elements with hash value $j$.
 
@@ -158,7 +300,7 @@ END%%
 %%ANKI
 Basic
 What is the load factor of a hash table in which all $n$ keys hash to one of $m$ slots?
-Back: $n / m$ (the load factor is a property of the table, not the distribution of keys)
+Back: $n / m$ (the load factor is a property of the table, not the distribution of keys).
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1719174576860-->
 END%%
@@ -217,6 +359,89 @@ Suppose $n$ is at most proportional to $m$. How is this denoted in complexity no
 Back: $n = O(m)$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1719176797760-->
+END%%
+
+## Open
+
+In **open addressing**, keys always reside in the hash table. Collisions are dealt with by searching for other empty buckets within the hash table.
+
+%%ANKI
+Basic
+What does "closed" refer to in term "closed hashing"?
+Back: A key must reside in the hash table.
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718198717434-->
+END%%
+
+%%ANKI
+Basic
+What does "open" refer to in term "open addressing"?
+Back: A key is not necessarily stored in the slot it hashes to.
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718198717447-->
+END%%
+
+%%ANKI
+Cloze
+{Open} addressing is also known as {closed} hashing.
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718198717455-->
+END%%
+
+%%ANKI
+Cloze
+The following is an example of {closed} hashing.
+![[open-addressing.png]]
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718198717464-->
+END%%
+
+%%ANKI
+Cloze
+The following is an example of {open} addressing.
+![[open-addressing.png]]
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718198755486-->
+END%%
+
+%%ANKI
+Basic
+What is the theoretical maximum load factor in open addressing?
+Back: $1$
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718759188171-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the theoretical maximum load factor of open addressing bounded?
+Back: An open addressing hash table can only store as many entries as slots.
+Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
+<!--ID: 1718759188176-->
+END%%
+
+%%ANKI
+Basic
+When is the load factor of an open addressing hash table $0$?
+Back: When no entries are stored in the table.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188179-->
+END%%
+
+%%ANKI
+Basic
+When is the load factor of a open addressing hash table $1$?
+Back: When there exist the same number of total entries as slots.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188182-->
+END%%
+
+%%ANKI
+Basic
+When is the load factor of an open addressing hash table $> 1$?
+Back: N/A
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1718759188186-->
 END%%
 
 ## Bibliography

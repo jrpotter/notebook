@@ -130,6 +130,54 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1719681913529-->
 END%%
 
+%%ANKI
+Basic
+Let $F$, $G$ be functions such that $F \subseteq G$. How does $\mathop{\text{dom}}F$ relate to $\mathop{\text{dom}}G$?
+Back: $\mathop{\text{dom}}F \subseteq \mathop{\text{dom}}G$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720786472245-->
+END%%
+
+%%ANKI
+Basic
+Let $F$, $G$ be functions such that $F \subseteq G$. How does $\mathop{\text{ran}}F$ relate to $\mathop{\text{ran}}G$?
+Back: $\mathop{\text{ran}}F \subseteq \mathop{\text{ran}}G$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720786472251-->
+END%%
+
+%%ANKI
+Basic
+Let $F$, $G$ be functions. Is $F \cap G$ a function?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720786472254-->
+END%%
+
+%%ANKI
+Basic
+Let $F$, $G$ be functions. When is $F \cap G$ a function?
+Back: Always.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720786472262-->
+END%%
+
+%%ANKI
+Basic
+Let $F$, $G$ be functions. Is $F \cup G$ a function?
+Back: Not necessarily.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720786472258-->
+END%%
+
+%%ANKI
+Basic
+Let $F$, $G$ be functions. When is $F \cup G$ a function?
+Back: Iff $f(x) = g(x)$ for every $x \in \mathop{\text{dom}}F \cap \mathop{\text{dom}}G$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720786472266-->
+END%%
+
 ## Injections
 
 A function is **injective** or **one-to-one** if each element of the codomain is mapped to by at most one element of the domain.
@@ -1016,6 +1064,30 @@ END%%
 
 %%ANKI
 Basic
+If $A$ is single-valued and $B$ is single-valued, is $A \circ B$ single-valued?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720787522643-->
+END%%
+
+%%ANKI
+Basic
+If $A$ is single-valued and $B$ is single-rooted, is $A \circ B$ single-valued?
+Back: Not necessarily.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720787522658-->
+END%%
+
+%%ANKI
+Basic
+If $A$ is single-rooted and $B$ is single-rooted, is $A \circ B$ single-rooted?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720787522662-->
+END%%
+
+%%ANKI
+Basic
 If $F$ is a relation and $G$ is a function, is $F \circ G$ a function?
 Back: Not necessarily.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -1040,6 +1112,38 @@ END%%
 
 %%ANKI
 Basic
+If $F$ is an injection and $G$ is an injection, is $F \circ G$ an injection?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720786864217-->
+END%%
+
+%%ANKI
+Basic
+If $F$ is an injection and $G$ is a surjection, is $F \circ G$ a bijection?
+Back: Not necessarily.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720786864223-->
+END%%
+
+%%ANKI
+Basic
+If $F$ is an injection and $G$ is a bijection, is $F \circ G$ a bijection?
+Back: Not necessarily.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720786864226-->
+END%%
+
+%%ANKI
+Basic
+If $F$ is a bijection and $G$ is a bijection, is $F \circ G$ a bijection?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720786864229-->
+END%%
+
+%%ANKI
+Basic
 Let $F$ and $G$ be functions. How is $\mathop{\text{dom}}(F \circ G)$ defined using set-builder notation?
 Back: $\{x \in \mathop{\text{dom}}G \mid G(x) \in \mathop{\text{dom}}F\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -1059,6 +1163,29 @@ How might you explain $(F \circ G)^{-1} = G^{-1} \circ F^{-1}$ in plain English?
 Back: The opposite of applying $G$ then $F$ is to undo $F$ then $G$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719666552291-->
+END%%
+
+%%ANKI
+Basic
+Is composition commutative?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720789624275-->
+END%%
+
+%%ANKI
+Basic
+Is composition associative?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720789624288-->
+END%%
+
+%%ANKI
+Cloze
+For sets $A$, $B$, and $C$, {$(A \circ B)[\![C]\!]$} $=$ {$A[\![B[\![C]\!]]\!]$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720819771083-->
 END%%
 
 ## Restrictions
@@ -1166,6 +1293,52 @@ Let $F$ be an arbitrary set. What is $F \restriction \varnothing$?
 Back: $\varnothing$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719103644309-->
+END%%
+
+%%ANKI
+Cloze
+Let $Q$, $A$, and $B$ be sets. Then {$Q \restriction (A \cup B)$} $=$ {$(Q \restriction A) \cup (Q \restriction B)$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720885546348-->
+END%%
+
+%%ANKI
+Cloze
+Let $Q$, $A$, and $B$ be sets. Then {$Q \restriction (A \cap B)$} $=$ {$(Q \restriction A) \cap (Q \restriction B)$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720885546362-->
+END%%
+
+%%ANKI
+Basic
+Consider sets $A$ and $B$. How is $B \restriction A$ rewritten as a composition?
+Back: $B \circ I_A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720885546354-->
+END%%
+
+%%ANKI
+Basic
+Consider sets $A$ and $B$. How is $A \circ I_B$ rewritten as a restriction?
+Back: $A \restriction B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720885546368-->
+END%%
+
+%%ANKI
+Basic
+Consider sets $A$ and $B$. How is $A \cap B$ be rewritten as a function under some image?
+Back: $I_A[\![B]\!]$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720885546358-->
+END%%
+
+%%ANKI
+Basic
+Consider sets $A$ and $B$. How is $I_B[\![A]\!]$ rewritten as a simpler set operation?
+Back: $B \cap A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720885546374-->
 END%%
 
 ## Images
@@ -1451,6 +1624,14 @@ What condition on set $F$ makes the following true? $F[\![A]\!] - F[\![B]\!] \su
 Back: N/A. This is always true.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720665351109-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \subseteq B$. How does $F[\![A]\!]$ relate to $F[\![B]\!]$?
+Back: $F[\![A]\!] \subseteq F[\![B]\!]$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720819771087-->
 END%%
 
 ## Bibliography

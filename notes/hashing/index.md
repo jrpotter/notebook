@@ -207,8 +207,8 @@ Independent uniform hashing is **universal**, meaning the chance of any two dist
 
 %%ANKI
 Basic
-What is considered the ideal (though only theoretical) hash function?
-Back: The independent uniform hash function.
+What is considered an ideal (though theoretical) hash function?
+Back: An independent uniform hash function.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1718197741507-->
 END%%
@@ -248,7 +248,7 @@ END%%
 %%ANKI
 Basic
 What is uniform hashing?
-Back: Any given element is equally likely to hash into any slot.
+Back: Hasing in which an input key is equally likely to hash into any slot.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1719174576842-->
 END%%
@@ -259,6 +259,307 @@ What is independent hashing?
 Back: The slot an element hashes to is independent of where other elements hash to.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1719174576848-->
+END%%
+
+%%ANKI
+Basic
+In practice, hash functions are designed to handle keys of what two types?
+Back: A fixed-width nonnegative integer or a vector of them.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1720821498614-->
+END%%
+
+%%ANKI
+Basic
+How does Cormen et al. define a "good" hash function?
+Back: It satisfies (approximately) the assumption of independent uniform hashing.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1720821498625-->
+END%%
+
+## Static Hashing
+
+Static hashing refers to providing a single fixed hash function intended to work well on *any* data. Generally speaking, this should not be favored over random hashing.
+
+%%ANKI
+Basic
+What does static hashing refer to?
+Back: Providing a single hash function intended to work well on *any* data.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720821498619-->
+END%%
+
+%%ANKI
+Cloze
+{Static} hashing provides a {single hash function} intended to work well on any data.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720821498622-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for static hashing to be independent?
+Back: Where a key hashes to is independent of where other keys hash to.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720821498628-->
+END%%
+
+%%ANKI
+Basic
+What about independent static hashing is a bit of a misnomer?
+Back: N/A.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720821498631-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for static hashing to be uniform?
+Back: Each key has an equal likelihood of hashing to any slot.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720821498634-->
+END%%
+
+%%ANKI
+Basic
+What about uniform static hashing is a bit of a misnomer?
+Back: Where keys hash to depend on the input keys' probability distribution.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720821498637-->
+END%%
+
+%%ANKI
+Basic
+In static hashing, *why* is uniformity generally impossible?
+Back: Because we use a fixed hash function for *all* data.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720821498640-->
+END%%
+
+%%ANKI
+Basic
+Assuming $m$ slots, why is static hashing function $h(k) = \lfloor km \rfloor$ not generally "good"?
+Back: The probability distribution from which keys were drawn may not be uniform.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720821498644-->
+END%%
+
+%%ANKI
+Basic
+What property must an ideal static hashing function exhibit?
+Back: It must derive hash values independently of any patterns that may exist in the keys.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720821498648-->
+END%%
+
+%%ANKI
+Basic
+What randomization is available to static hashing?
+Back: The distribution of input keys.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720889385376-->
+END%%
+
+### Division Method
+
+The **division method** for creating hash functions maps a key $k$ into one of $m$ slots by taking the remainder of $k$ divided by $m$. That is, $h(k) = k \bmod{m}$.
+
+%%ANKI
+Basic
+The division method is used to produce what?
+Back: A hash function.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720889385404-->
+END%%
+
+%%ANKI
+Basic
+What hyperparameter(s) does the division method require?
+Back: The number of slots in the hash table.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720889385409-->
+END%%
+
+%%ANKI
+Basic
+Given $m$ slots, the division method produces what hash function?
+Back: $h(k) = k \bmod{m}$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720889385414-->
+END%%
+
+%%ANKI
+Basic
+Let $h$ be a division method hash function. What does $h(10)$ evaluate to?
+Back: $10 \bmod{m}$ where $m$ is the number of slots in the hash table.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720889385419-->
+END%%
+
+%%ANKI
+Basic
+Consider hash function $h(k) = k \bmod{m}$. What does $m$ likely represent?
+Back: The number of slots in the hash table.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720889385424-->
+END%%
+
+%%ANKI
+Basic
+Let $m$ be some number of slots. What $m$'s does the division method typically work best on?
+Back: A prime not too close to an exact power of $2$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720889385429-->
+END%%
+
+%%ANKI
+Basic
+Consider hash function $h(k) = k \bmod{m}$. What method was likely used to produce this?
+Back: The division method.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720891800562-->
+END%%
+
+%%ANKI
+Basic
+Is the division method an example of static or random hashing?
+Back: Static.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1720891800592-->
+END%%
+
+### Multiplication Method
+
+The **multiplication method** for creating hash functions first multiples a key $k$ by a constant $0 < A < 1$ and extracts the fractional part of $kA$. Then it multiplies this value by $m$ and takes the floor of the result. That is, $h(k) = \lfloor m(kA \bmod{1}) \rfloor$.
+
+%%ANKI
+Basic
+The multiplication method is used to produce what?
+Back: A hash function.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720891800597-->
+END%%
+
+%%ANKI
+Basic
+What hyperparameter(s) does the multiplication method require?
+Back: Slot count $m$ and some constant $0 < A < 1$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720891800602-->
+END%%
+
+%%ANKI
+Basic
+Given $m$ slots and constant $A$, the multiplication method produces what hash function?
+Back: $h(k) = \lfloor m (kA \bmod{1}) \rfloor$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720891800607-->
+END%%
+
+%%ANKI
+Basic
+What range does the constant $A$ found in the multiplication method take on?
+Back: $0 < A < 1$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720891800612-->
+END%%
+
+%%ANKI
+Basic
+Consider hash function $h(k) = \lfloor m (kA \bmod{1}) \rfloor$. What does $m$ likely represent?
+Back: The number of slots in the hash table.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720891800617-->
+END%%
+
+%%ANKI
+Basic
+Consider hash function $h(k) = \lfloor m (kA \bmod{1}) \rfloor$. What does $A$ likely represent?
+Back: Some constant $0 < A < 1$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720891800622-->
+END%%
+
+%%ANKI
+Basic
+Consider constant $A$ used in the multiplication method. *Why* shouldn't $A = 0$?
+Back: Then the produced hash function is constant.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720891800628-->
+END%%
+
+%%ANKI
+Basic
+Consider constant $A$ used in the multiplication method. *Why* shouldn't $A = 1$?
+Back: Then the produced hash function is constant.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720891800634-->
+END%%
+
+%%ANKI
+Basic
+Consider hash function $h(k) = \lfloor m (kA \bmod{1}) \rfloor$. What method was likely used to produce this?
+Back: The multiplication method.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::static
+<!--ID: 1720891800655-->
+END%%
+
+%%ANKI
+Basic
+Is the multiplication method an example of static or random hashing?
+Back: Static.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1720891800661-->
+END%%
+
+%%ANKI
+Basic
+For $x \in \mathbb{R}^+$, what does $x \bmod{1}$ represent?
+Back: The fractional part of $x$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1720891800639-->
+END%%
+
+%%ANKI
+Basic
+For $x \in \mathbb{R}^+$, what expression does $x \bmod{1}$ evaluate to?
+Back: $x - \lfloor x \rfloor$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1720891800644-->
+END%%
+
+%%ANKI
+Basic
+For $x \in \mathbb{Z}^+$, what expression does $x \bmod{1}$ evaluate to?
+Back: $0$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1720891800649-->
 END%%
 
 ## Bibliography
