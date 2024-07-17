@@ -21,7 +21,7 @@ END%%
 %%ANKI
 Basic
 Who is attributed *the* ontological question?
-Back: Quine.
+Back: Willard Van Orman Quine.
 Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
 <!--ID: 1720912259767-->
 END%%

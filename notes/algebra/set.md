@@ -93,7 +93,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $x, y \in A$. What set is $\langle x, y \rangle$ in?
+Suppose $x, y \in A$. What set, derived from $A$, is $\langle x, y \rangle$ a member of?
 Back: $\mathscr{P}\mathscr{P}A$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1717679397848-->
@@ -758,8 +758,8 @@ Let $A$, $B$, and $C$ be arbitrary sets. Then
 
 %%ANKI
 Basic
-What kind of propositional logical statement are the monotonicity properties of $\subseteq$?
-Back: An implication.
+The monotonicity properties of $\subseteq$ are what kind of propositional logical statement?
+Back: Implications.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1717073536967-->
 END%%

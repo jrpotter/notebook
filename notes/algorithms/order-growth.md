@@ -690,7 +690,7 @@ END%%
 %%ANKI
 Basic
 What names are usually given to the existentially quantified identifers in $o(g(n))$'s definition?
-Back: $n_0$.
+Back: $n_0$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709519002328-->
 END%%
@@ -1035,7 +1035,7 @@ END%%
 %%ANKI
 Basic
 What is the symmetric property of $\Omega$-notation?
-Back: N/A
+Back: N/A.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709752223486-->
 END%%

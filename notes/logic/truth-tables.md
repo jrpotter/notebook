@@ -50,7 +50,7 @@ $$
 %%ANKI
 Basic
 What construct is used to prove every proposition can be written in DNF or CNF?
-Back: Truth tables
+Back: Truth tables.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707311868994-->
 END%%

@@ -1327,7 +1327,7 @@ END%%
 
 %%ANKI
 Basic
-Consider sets $A$ and $B$. How is $A \cap B$ be rewritten as a function under some image?
+Consider sets $A$ and $B$. How is $A \cap B$ rewritten as a function under some image?
 Back: $I_A[\![B]\!]$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720885546358-->
@@ -1634,7 +1634,174 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1720819771087-->
 END%%
 
+## Kernels
+
+Let $F \colon A \rightarrow B$. Define [[relations#Equivalence Relations|equivalence relation]] $\sim$ as $$x \sim y \Leftrightarrow f(x) = f(y)$$
+Relation $\sim$ is called the **(equivalence) kernel** of $f$. The [[relations#Partitions|partition]] induced by $\sim$ on $A$ is called the **coimage** of $f$ (denoted $\mathop{\text{coim}}f$). The **fiber** of an element $y$ under $F$ is $F^{-1}[\![\{y\}]\!]$, i.e. the preimage of singleton set $\{y\}$. Therefore the equivalence classes of $\sim$ are also known as the fibers of $f$.
+
+%%ANKI
+Basic
+What kind of mathematical object is the kernel of $F \colon A \rightarrow B$?
+Back: An equivalence relation.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015583-->
+END%%
+
+%%ANKI
+Basic
+How is the kernel of $F \colon A \rightarrow B$ defined?
+Back: As equivalence relation $\sim$ such that $x \sim y \Leftrightarrow F(x) = F(y)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015586-->
+END%%
+
+%%ANKI
+Basic
+Let $F \colon A \rightarrow B$. What name does the following relation $\sim$ go by? $$x \sim y \Leftrightarrow F(x) = F(y)$$
+Back: The kernel of $F$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015590-->
+END%%
+
+%%ANKI
+Basic
+Let $F \colon A \rightarrow B$. The partition induced by the kernel of $F$ is a partition of what set?
+Back: $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015593-->
+END%%
+
+%%ANKI
+Basic
+Let $F \colon A \rightarrow B$. What does $\mathop{\text{coim}}F$ refer to?
+Back: The coimage of $F$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015596-->
+END%%
+
+%%ANKI
+Basic
+How is the coimage of function $F \colon A \rightarrow B$ defined?
+Back: As $A / {\sim}$ where $x \sim y \Leftrightarrow F(x) = F(y)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015599-->
+END%%
+
+%%ANKI
+Basic
+Let $F \colon A \rightarrow B$. What specific name does a member of $\mathop{\text{coim}}F$ go by?
+Back: A fiber.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015602-->
+END%%
+
+%%ANKI
+Basic
+Let $F \colon A \rightarrow B$. How is the fiber of $y$ under $F$ defined?
+Back: As set $F^{-1}[\![\{y\}]\!]$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015605-->
+END%%
+
+%%ANKI
+Basic
+Let $F \colon A \rightarrow B$. The fibers of $F$ make up what set?
+Back: $\mathop{\text{coim}}F$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015609-->
+END%%
+
+%%ANKI
+Basic
+Let $F \colon A \rightarrow B$. How is $\mathop{\text{coim}}F$ denoted as a quotient set?
+Back: As $A / {\sim}$ where $x \sim y \Leftrightarrow F(x) = F(y)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015613-->
+END%%
+
+%%ANKI
+Basic
+Let $F \colon A \rightarrow B$ and $\sim$ be the kernel of $F$. How does $F$ factor into $\hat{F} \colon A / {\sim} \rightarrow B$?
+Back: $F = \hat{F} \circ \phi$ where $\phi$ is the natural map.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015617-->
+END%%
+
+%%ANKI
+Basic
+Consider factoring $F \colon A \rightarrow B$ by its kernel $\sim$. What name does $\phi$ go by?
+![[function-kernel.png]]
+Back: The natural map (with respect to $\sim$).
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015620-->
+END%%
+
+%%ANKI
+Basic
+Consider factoring $F \colon A \rightarrow B$ by its kernel $\sim$. How is $\phi$ defined?
+![[function-kernel.png]]
+Back: $\phi(x) = [x]_{\sim}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015624-->
+END%%
+
+%%ANKI
+Basic
+Consider factoring $F \colon A \rightarrow B$ by its kernel $\sim$. What name does $\sim$ go by?
+![[function-kernel.png]]
+Back: $\mathop{\text{coim}} F$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015628-->
+END%%
+
+%%ANKI
+Basic
+Consider factoring $F \colon A \rightarrow B$ by its kernel $\sim$. What name do the members of $A / {\sim}$ go by?
+![[function-kernel.png]]
+Back: The fibers of $F$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015633-->
+END%%
+
+%%ANKI
+Basic
+Consider factoring $F \colon A \rightarrow B$ by its kernel $\sim$. What composition is $F$ equal to?
+![[function-kernel.png]]
+Back: $F = \hat{F} \circ \phi$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015638-->
+END%%
+
+%%ANKI
+Basic
+Consider factoring $F \colon A \rightarrow B$ by its kernel $\sim$. Is $\hat{F}$ injective?
+![[function-kernel.png]]
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015642-->
+END%%
+
+%%ANKI
+Basic
+Consider factoring $F \colon A \rightarrow B$ by its kernel $\sim$. Is $\hat{F}$ surjective?
+![[function-kernel.png]]
+Back: Not necessarily.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015646-->
+END%%
+
+%%ANKI
+Basic
+Consider factoring $F \colon A \rightarrow B$ by its kernel $\sim$. Is $\hat{F}$ bijective?
+![[function-kernel.png]]
+Back: Not necessarily.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721223015650-->
+END%%
+
 ## Bibliography
 
 * “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+* “Fiber (Mathematics),” in _Wikipedia_, April 10, 2024, [https://en.wikipedia.org/w/index.php?title=Fiber_(mathematics)&oldid=1218193490](https://en.wikipedia.org/w/index.php?title=Fiber_(mathematics)&oldid=1218193490).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+* “Kernel (Set Theory),” in _Wikipedia_, May 22, 2024, [https://en.wikipedia.org/w/index.php?title=Kernel_(set_theory)&oldid=1225189560](https://en.wikipedia.org/w/index.php?title=Kernel_(set_theory)&oldid=1225189560).

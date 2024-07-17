@@ -404,7 +404,7 @@ END%%
 %%ANKI
 Basic
 Let $h$ be a division method hash function. What does $h(10)$ evaluate to?
-Back: $10 \bmod{m}$ where $m$ is the number of slots in the hash table.
+Back: To $10 \bmod{m}$, where $m$ is the number of slots in the hash table.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: hashing::static
 <!--ID: 1720889385419-->
@@ -426,6 +426,14 @@ Back: A prime not too close to an exact power of $2$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: hashing::static
 <!--ID: 1720889385429-->
+END%%
+
+%%ANKI
+Basic
+Why does the division method prefer a prime number of slots?
+Back: To operate as independently as possible of the input keys.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1721218408542-->
 END%%
 
 %%ANKI

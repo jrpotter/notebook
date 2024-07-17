@@ -557,7 +557,7 @@ END%%
 
 %%ANKI
 Basic
-What is the precise definition of the two's-complement of a $w$-bit number?
+What is the precise definition of the two's-complement of a $w$-bit number $x$?
 Back: The complement of $x$ with respect to $2^w$.
 Reference: “Two’s-Complement.” In *Wikipedia*, January 9, 2024. [https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561](https://en.wikipedia.org/w/index.php?title=Two%27s_complement&oldid=1194543561).
 <!--ID: 1709060837145-->
