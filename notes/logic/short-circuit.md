@@ -84,9 +84,14 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707317708633-->
 END%%
 
-* Associative Laws
-	* $E1 \textbf{ cand } (E2 \textbf{ cand } E3) = (E1 \textbf{ cand } E2) \textbf{ cand } E3$
-	* $E1 \textbf{ cor } (E2 \textbf{ cor } E3) = (E1 \textbf{ cor } E2) \textbf{ cor } E3$
+## Laws
+
+### Associativity
+
+Given propositions $E1$, $E2$, and $E3$,
+
+* $E1 \textbf{ cand } (E2 \textbf{ cand } E3) = (E1 \textbf{ cand } E2) \textbf{ cand } E3$
+* $E1 \textbf{ cor } (E2 \textbf{ cor } E3) = (E1 \textbf{ cor } E2) \textbf{ cor } E3$
 
 %%ANKI
 Basic
@@ -104,9 +109,12 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707317708636-->
 END%%
 
-* Distributive Laws
-	* $E1 \textbf{ cand } (E2 \textbf{ cor } E3) = (E1 \textbf{ cand } E2) \textbf{ cor } (E1 \textbf{ cand } E3)$
-	* $E1 \textbf{ cor } (E2 \textbf{ cand } E3) = (E1 \textbf{ cor } E2) \textbf{ cand } (E1 \textbf{ cor } E3)$
+### Distributivity
+
+Given propositions $E1$, $E2$, and $E3$,
+
+* $E1 \textbf{ cand } (E2 \textbf{ cor } E3) = (E1 \textbf{ cand } E2) \textbf{ cor } (E1 \textbf{ cand } E3)$
+* $E1 \textbf{ cor } (E2 \textbf{ cand } E3) = (E1 \textbf{ cor } E2) \textbf{ cand } (E1 \textbf{ cor } E3)$
 
 %%ANKI
 Basic
@@ -116,9 +124,12 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707317708638-->
 END%%
 
-* De Morgan's Laws
-	* $\neg (E1 \textbf{ cand } E2) = \neg E1 \textbf{ cor } \neg E2$
-	* $\neg (E1 \textbf{ cor } E2) = \neg E1 \textbf{ cand } \neg E2$
+### De Morgan's Laws
+
+Given propositions $E1$ and $E2$,
+
+* $\neg (E1 \textbf{ cand } E2) = \neg E1 \textbf{ cor } \neg E2$
+* $\neg (E1 \textbf{ cor } E2) = \neg E1 \textbf{ cand } \neg E2$
 
 %%ANKI
 Basic
@@ -135,8 +146,6 @@ Back: $\neg (E1 \textbf{ cor } E2) = \neg E1 \textbf{ cand } \neg E2$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707317708642-->
 END%%
-
-Gries lists other "Laws" but they don't seem as important to note here. What's worth noting is that the other [[equiv-trans#Equivalence Schemas|equivalence schemas]] still apply if we can limit operands to just $T$ and $F$.
 
 ## Bibliography
 

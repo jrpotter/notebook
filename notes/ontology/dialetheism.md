@@ -25,7 +25,32 @@ Reference: Graham Priest, Francesco Berto, and Zach Weber, “Dialetheism,” in
 <!--ID: 1721354092775-->
 END%%
 
+%%ANKI
+Basic
+What is used to refer to the so-called "standard logic" of mathematics?
+Back: Classical logic.
+Reference: Graham Priest, Koji Tanaka, and Zach Weber, “Paraconsistent Logic,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/](https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/).
+<!--ID: 1721380604985-->
+END%%
+
+%%ANKI
+Basic
+What classical principle is excluded in paraconsistent logics?
+Back: The principle of explosion.
+Reference: Graham Priest, Koji Tanaka, and Zach Weber, “Paraconsistent Logic,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/](https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/).
+<!--ID: 1721380604997-->
+END%%
+
+%%ANKI
+Basic
+Dialetheism is intimately connected to what type of logical systems?
+Back: Paraconsistent logical systems.
+Reference: Graham Priest, Koji Tanaka, and Zach Weber, “Paraconsistent Logic,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/](https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/).
+<!--ID: 1721380605000-->
+END%%
+
 ## Bibliography
 
 * Graham Priest, Francesco Berto, and Zach Weber, “Dialetheism,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta and Uri Nodelman, Summer 2024 (Metaphysics Research Lab, Stanford University, 2024), [https://plato.stanford.edu/archives/sum2024/entries/dialetheism/](https://plato.stanford.edu/archives/sum2024/entries/dialetheism/).
+* Graham Priest, Koji Tanaka, and Zach Weber, “Paraconsistent Logic,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/](https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/).
 * Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).

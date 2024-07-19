@@ -220,7 +220,7 @@
     "encoding/index.md": "071cfa6a5152efeda127b684f420d438",
     "c/strings.md": "aba6e449906d05aee98e3e536eb43742",
     "logic/truth-tables.md": "a9fe98af6cabc0e4b087086075e09af5",
-    "logic/short-circuit.md": "a3fb33603a38a6d3b268556dcbdfa797",
+    "logic/short-circuit.md": "3c884bcc88007c5568ea7c047fbecb6f",
     "logic/boolean-algebra.md": "56d2e0be2853d49b5dface7fa2d785a9",
     "_journal/2024-02-13.md": "6242ed4fecabf95df6b45d892fee8eb0",
     "_journal/2024-02/2024-02-12.md": "618c0035a69b48227119379236a02f44",
@@ -558,7 +558,7 @@
     "_journal/2024-06-22.md": "8f566883a70458a20d9c750065ce4025",
     "programming/ars.md": "a62db41d53a0ec5973742a09e0b48f0a",
     "_journal/2024-06-23.md": "72e157bbf19d2d35843873ff9e900927",
-    "_journal/2024-06/2024-06-22.md": "81879cf81ad8f4c1b5622614df648252",
+    "_journal/2024-06/2024-06-22.md": "6b55e35f56e7f7c296c8df6812ba62d3",
     "_journal/2024-06/2024-06-21.md": "12e37e2c57abab09c781b32793fbbe1a",
     "startups/financing.md": "1978def9644211c989564faa3e4a56ea",
     "_journal/2024-06-24.md": "7fc0f4cd231ef7cd6aa2b556d1244cf4",
@@ -571,7 +571,7 @@
     "_journal/2024-06/2024-06-27.md": "237c73268a28f652985a5ef7ca7e188e",
     "_journal/2024-06/2024-06-26.md": "9c5d7e6395496736f2f268e9fdba117f",
     "_journal/2024-06-29.md": "9d43f4f33e03a48aa08e13bb5be365e0",
-    "_journal/2024-06/2024-06-28.md": "3f6a47a6324918b6c3af6b9549663372",
+    "_journal/2024-06/2024-06-28.md": "a72817d49ec7fccf96bac9a44fe055d7",
     "_journal/2024-06-30.md": "97d39a4905e296c6c3fd12e48c4283bd",
     "_journal/2024-06/2024-06-29.md": "9d43f4f33e03a48aa08e13bb5be365e0",
     "_journal/2024-07-02.md": "ca0cc5f69580f5f1896f880b0759e466",
@@ -613,7 +613,11 @@
     "_journal/2024-07/2024-07-16.md": "149222eab7a7f58993b8e4dc8a3fb884",
     "_journal/2024-07-18.md": "a9d26ce938228973f07178a15128a681",
     "_journal/2024-07/2024-07-17.md": "0c816cd6110bdd14d3eac4e5b82510cf",
-    "ontology/dialetheism.md": "4d14b681d6913bd775450c52c2417767"
+    "ontology/dialetheism.md": "175e92654e6bbab8c21afbdc040035a2",
+    "abstract-rewriting-systems/index.md": "b7486b7635cb0d8bafc2a2f095af90fb",
+    "abstract-rewriting-systems/normal-form.md": "2fff9a1d85bca0a2941a54b0084a0309",
+    "_journal/2024-07-19.md": "4b6a8d1fea576f6e88d765cbb85e1331",
+    "_journal/2024-07/2024-07-18.md": "237918b58424435959cbc949d01e7932"
   },
   "fields_dict": {
     "Basic": [

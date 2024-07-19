@@ -1,9 +1,9 @@
 ---
 title: Normal Form
 TARGET DECK: Obsidian::STEM
-FILE TAGS: logic
+FILE TAGS: ars::normal
 tags:
-  - logic
+  - ars
 ---
 
 ## Overview
@@ -12,7 +12,8 @@ An object is said to be in **normal form** if it cannot be reduced any further. 
 
 * [[truth-tables|Conjunctive Normal Form]]
 * [[truth-tables|Disjunctive Normal Form]]
-* [[quantification#Identifiers|Prenex Normal Form]]
+* [[pred-logic#Identifiers|Prenex Normal Form]]
+* [[beta-reduction#Normal Form|β-normal forms]]
 
 %%ANKI
 Basic
