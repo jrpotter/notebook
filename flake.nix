@@ -21,15 +21,15 @@
         quartz-src = pkgs.fetchFromGitHub {
           owner = "jackyzha0";
           repo = "quartz";
-          rev = "3e14b2b89b60610eb3ae57603a451f1435ea45c0";
-          hash = "sha256-T5gc1W/tUW72H1x90nDV31hk9CMC4J8wJOtcNUegXNw=";
+          rev = "4b407e786f93a9823b2d6c08ea62cb912a2ede39";
+          hash = "sha256-uyg6jde+PI24llX5etdiY0leaQkhNG227+bzz3NwAn8=";
         };
 
         quartz = pkgs.buildNpmPackage {
           pname = "quartz";
           version = "v4";
           src = quartz-src;
-          npmDepsHash = "sha256-iLZMWvaPnpvWJi+/K8kYDe+8P7YOcwD6wKRRqcX7KCs=";
+          npmDepsHash = "sha256-69lMruXaUQe5tMeblVB4t9G7xPd4r45T2KAYlNRQSOc=";
           dontNpmBuild = true;
         };
       in
