@@ -142,7 +142,7 @@ END%%
 
 %%ANKI
 Basic
-Let $I$ be an index set and $H$ a function $I \subseteq \mathop{\text{dom}}H$. How is $\bigtimes_{i \in I} H(i)$ defined?
+Let $I$ be an index set and $H$ a function such that $I \subseteq \mathop{\text{dom}}H$. How is $\bigtimes_{i \in I} H(i)$ defined?
 Back: $\bigtimes_{i \in I} H(i) = \{ f \mid f \text{ is a function with domain } I \text { and } \forall i \in I, f(i) \in H(i) \}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720964209677-->
@@ -825,8 +825,8 @@ Let $A$, $B$, and $C$ be arbitrary sets. Then
 
 %%ANKI
 Basic
-What kind of propositional logical statement are the antimonotonicity properties of $\subseteq$?
-Back: An implication.
+What kind of propositional logical statements are the antimonotonicity properties of $\subseteq$?
+Back: Implications.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1717073536988-->
 END%%

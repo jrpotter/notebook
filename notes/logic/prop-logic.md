@@ -104,14 +104,7 @@ END%%
 
 ## Implication
 
-Implication is denoted as $\Rightarrow$. It has truth table
-
-$p$ | $q$ | $p \Rightarrow q$
---- | --- | -----------------
-$T$ | $T$ | $T$
-$T$ | $F$ | $F$
-$F$ | $T$ | $T$
-$F$ | $F$ | $T$
+Implication is denoted as $\Rightarrow$. It has truth table $$\begin{array}{c|c|c} p & q & p \Rightarrow q \\ \hline T & T & T \\ T & F & F \\ F & T & T \\ F & F & T \end{array}$$
 
 Implication has a few "equivalent" English expressions that are commonly used.
 Given propositions $P$ and $Q$, we have the following equivalences:
@@ -321,7 +314,273 @@ Reference: Reference: Gries, David. *The Science of Programming*. Texts and Mon
 <!--ID: 1715969047070-->
 END%%
 
-## Sets
+## Laws
+
+### Commutativity
+
+For propositions $E1$ and $E2$:
+
+* $(E1 \land E2) = (E2 \land E1)$
+* $(E1 \lor E2) = (E2 \lor E1)$
+* $(E1 = E2) = (E2 = E1)$
+
+%%ANKI
+Basic
+Which of the basic logical operators do the commutative laws apply to?
+Back: $\land$, $\lor$, and $=$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707251673350-->
+END%%
+
+%%ANKI
+Basic
+What do the commutative laws allow us to do?
+Back: Reorder operands.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707251673351-->
+END%%
+
+%%ANKI
+Basic
+What is the commutative law of e.g. $\land$?
+Back: $E1 \land E2 = E2 \land E1$
+<!--ID: 1707251673353-->
+END%%
+
+### Associativity
+
+For propositions $E1$, $E2$, and $E3$:
+
+* $E1 \land (E2 \land E3) = (E1 \land E2) \land E3$
+* $E1 \lor (E2 \lor E3) = (E1 \lor E2) \lor E3$
+
+%%ANKI
+Basic
+Which of the basic logical operators do the associative laws apply to?
+Back: $\land$ and $\lor$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707251673354-->
+END%%
+
+%%ANKI
+Basic
+What do the associative laws allow us to do?
+Back: Remove parentheses.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707251673355-->
+END%%
+
+%%ANKI
+Basic
+What is the associative law of e.g. $\land$?
+Back: $E1 \land (E2 \land E3) = (E1 \land E2) \land E3$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707251673357-->
+END%%
+
+### Distributivity
+
+For propositions $E1$, $E2$, and $E3$:
+
+* $E1 \lor (E2 \land E3) = (E1 \lor E2) \land (E1 \lor E3)$
+* $E1 \land (E2 \lor E3) = (E1 \land E2) \lor (E1 \land E3)$
+
+%%ANKI
+Basic
+Which of the basic logical operators do the distributive laws apply to?
+Back: $\land$ and $\lor$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707251673358-->
+END%%
+
+%%ANKI
+Basic
+What do the distributive laws allow us to do?
+Back: "Factor" propositions.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707251673360-->
+END%%
+
+%%ANKI
+Basic
+What is the distributive law of e.g. $\land$ over $\lor$?
+Back: $E1 \land (E2 \lor E3) = (E1 \land E2) \lor (E1 \land E3)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707251673361-->
+END%%
+
+### De Morgan's
+
+For propositions $E1$ and $E2$:
+
+* $\neg (E1 \land E2) = \neg E1 \lor \neg E2$
+* $\neg (E1 \lor E2) = \neg E1 \land \neg E2$
+
+%%ANKI
+Basic
+Which of the basic logical operators do De Morgan's laws involve?
+Back: $\neg$, $\land$, and $\lor$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707251673363-->
+END%%
+
+%%ANKI
+Basic
+How is De Morgan's law (distributing $\land$) expressed as an equivalence?
+Back: $\neg (E1 \land E2) = \neg E1 \lor \neg E2$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Tags: programming::equiv-trans
+<!--ID: 1707251673364-->
+END%%
+
+### Law of Negation
+
+For any proposition $E1$, it follows that $\neg (\neg E1) = E1$.
+
+%%ANKI
+Basic
+How is the law of negation expressed as an equivalence?
+Back: $\neg (\neg E1) = E1$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Tags: programming::equiv-trans
+<!--ID: 1707251673365-->
+END%%
+
+### Law of Excluded Middle
+
+For any proposition $E1$, it follows that $E1 \lor \neg E1 = T$.
+
+%%ANKI
+Basic
+Which of the basic logical operators does the law of excluded middle involve?
+Back: $\lor$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707251673367-->
+END%%
+
+%%ANKI
+Basic
+How is the law of excluded middle expressed as an equivalence?
+Back: $E1 \lor \neg E1 = T$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Tags: programming::equiv-trans
+<!--ID: 1707251673368-->
+END%%
+
+%%ANKI
+Basic
+Which equivalence schema is "refuted" by sentence, "This sentence is false."
+Back: The law of excluded middle
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707251779153-->
+END%%
+
+### Law of Contradiction
+
+For any proposition $E1$, it follows that $E1 \land \neg E1 = F$.
+
+%%ANKI
+Basic
+Which of the basic logical operators does the law of contradiction involve?
+Back: $\land$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707251673370-->
+END%%
+
+%%ANKI
+Basic
+How is the law of contradiction expressed as an equivalence?
+Back: $E1 \land \neg E1 = F$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Tags: programming::equiv-trans
+<!--ID: 1707251673371-->
+END%%
+
+%%ANKI
+Cloze
+The law of {1:excluded middle} is to {2:$\lor$} whereas the law of {2:contradiction} is to {1:$\land$}.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707251673373-->
+END%%
+
+%%ANKI
+Basic
+What does the principle of explosion state?
+Back: That any statement can be proven from a contradiction.
+Reference: “Principle of Explosion,” in _Wikipedia_, July 3, 2024, [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1232334233).
+<!--ID: 1721354092779-->
+END%%
+
+%%ANKI
+Basic
+How is the principle of explosion stated in first-order logic?
+Back: $\forall P, F \Rightarrow P$
+Reference: “Principle of Explosion,” in _Wikipedia_, July 3, 2024, [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1232334233).
+<!--ID: 1721354092783-->
+END%%
+
+%%ANKI
+Basic
+What does the law of contradiction say?
+Back: For any proposition $P$, it holds that $\neg (P \land \neg P)$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721354092786-->
+END%%
+
+%%ANKI
+Basic
+How does the principle of explosion relate to the law of contradiction?
+Back: If a contradiction could be proven, then anything can be proven.
+Reference: “Principle of Explosion,” in _Wikipedia_, July 3, 2024, [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1232334233).
+<!--ID: 1721354092789-->
+END%%
+
+%%ANKI
+Basic
+Suppose $P$ and $\neg P$. Show schematically how to use the principle of explosion to prove $Q$.
+Back: $$\begin{align*} P \\ \neg P \\ P \lor Q \\ \hline Q \end{align*}$$Reference: “Principle of Explosion,” in _Wikipedia_, July 3, 2024, [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1232334233).
+<!--ID: 1721354092792-->
+END%%
+
+%%ANKI
+Cloze
+The law of {contradiction} and law of {excluded middle} create a dichotomy in "logical space".
+Reference: “Law of Noncontradiction,” in _Wikipedia_, June 14, 2024, [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1229006759).
+<!--ID: 1721354092795-->
+END%%
+
+%%ANKI
+Basic
+Which property of partitions is analagous to the law of contradiction on "logical space"?
+Back: Disjointedness.
+Reference: “Law of Noncontradiction,” in _Wikipedia_, June 14, 2024, [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1229006759).
+<!--ID: 1721354092798-->
+END%%
+
+%%ANKI
+Basic
+Which property of partitions is analagous to the law of excluded middle on "logical space"?
+Back: Exhaustiveness.
+Reference: “Law of Noncontradiction,” in _Wikipedia_, June 14, 2024, [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1229006759).
+<!--ID: 1721354092801-->
+END%%
+
+%%ANKI
+Cloze
+The law of {1:contradiction} is to "{2:mutually exclusive}" whereas the law of {2:excluded middle} is "{1:jointly exhaustive}".
+Reference: “Law of Noncontradiction,” in _Wikipedia_, June 14, 2024, [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1229006759).
+<!--ID: 1721354092805-->
+END%%
+
+%%ANKI
+Basic
+Which logical law proves equivalence of the law of contradiction and excluded middle?
+Back: De Morgan's law.
+Reference: “Law of Noncontradiction,” in _Wikipedia_, June 14, 2024, [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1229006759).
+<!--ID: 1721355020261-->
+END%%
+
+## As Sets
 
 A **state** is a function that maps identifiers to $T$ or $F$. A proposition can be equivalently seen as a representation of the set of states in which it is true.
 
@@ -494,4 +753,6 @@ END%%
 ## Bibliography
 
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-* Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+* “Law of Noncontradiction,” in _Wikipedia_, June 14, 2024, [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1229006759).
+* * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+* “Principle of Explosion,” in _Wikipedia_, July 3, 2024, [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1232334233).

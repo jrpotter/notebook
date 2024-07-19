@@ -61,6 +61,14 @@ END%%
 
 %%ANKI
 Basic
+Is $\alpha$-conversion a symmetric relation?
+Back: Yes.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567259-->
+END%%
+
+%%ANKI
+Basic
 $\alpha$-conversion is most related to what kind of $\lambda$-term?
 Back: Abstractions.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).

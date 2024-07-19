@@ -497,6 +497,126 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1720665224645-->
 END%%
 
+## β-equality
+
+We say $P$ is **$\beta$-equal** or **$\beta$-convertible** to $Q$ ($P =_\beta Q$) iff $Q$ can be obtained from $P$ by a finite series of $\beta$-contractions, reversed $\beta$-contractions, and changes of bound variables. That is, $P =_\beta Q$ iff there exist $P_0, \ldots, P_n$ ($n \geq 0$) such that $P_0 \equiv P$, $P_n \equiv Q$, and $$\forall i \leq n - 1, (P_i \,\triangleright_{1\beta}\, P_{i+1}) \lor (P_{i+1} \,\triangleright_{1\beta}\, P_i) \lor (P_i \equiv_\alpha P_{i+1}).$$
+
+%%ANKI
+Basic
+$\triangleright_\beta$ denotes what relation?
+Back: $\beta$-reduction.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567121-->
+END%%
+
+%%ANKI
+Basic
+$\triangleright_{1\beta}$ denotes what relation?
+Back: $\beta$-contraction.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567128-->
+END%%
+
+%%ANKI
+Basic
+$=_{\beta}$ denotes what relation?
+Back: $\beta$-equality.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567134-->
+END%%
+
+%%ANKI
+Cloze
+{$\beta$-equality} is also known as {$\beta$-convertibility}.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567144-->
+END%%
+
+%%ANKI
+Basic
+Is $\beta$-reduction a symmetric relation?
+Back: No.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567151-->
+END%%
+
+%%ANKI
+Basic
+Is $\beta$-equality a symmetric relation?
+Back: Yes.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567156-->
+END%%
+
+%%ANKI
+Cloze
+{$\beta$-equality} is the symmetric generalization of {$\beta$-reduction}.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567163-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for $P$ to be $\beta$-equal to $Q$?
+Back: $Q$ can be obtained from $P$ by a finite series of $\beta$-contractions, reversed $\beta$-contractions, and $\alpha$-conversions.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567175-->
+END%%
+
+%%ANKI
+Basic
+How is "$P$ is $\beta$-equal to $Q$" denoted?
+Back: $P =_\beta Q$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567182-->
+END%%
+
+%%ANKI
+Cloze
+$P =_\beta Q$ iff $\exists P_0, \ldots, P_n$ s.t. $P_0 \equiv P$, $P_n \equiv Q$, and $\forall i \leq n - 1$, {$P_i \,\triangleright_{1\beta}\, P_{i+1}$} or {$P_{i+1} \,\triangleright_{1\beta}\, P_i$} or {$P_i \equiv_\alpha P_{i+1}$}.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567189-->
+END%%
+
+%%ANKI
+Basic
+$\beta$-reduction constitute what two operations?
+Back: $\beta$-contractions and $\alpha$-conversions.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567196-->
+END%%
+
+%%ANKI
+Basic
+$\beta$-equality constitute what three operations?
+Back: $\beta$-contractions, reversed $\beta$-contractions, and $\alpha$-conversions.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567202-->
+END%%
+
+%%ANKI
+Cloze
+{$M =_\beta M' \land N =_\beta N'$} $\Rightarrow [N/x]M =_\beta [N'/x]M'$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567212-->
+END%%
+
+%%ANKI
+Basic
+How would Hindley et al. describe the following implication? $$M =_\beta M' \land N =_\beta N' \Rightarrow [N/x]M =_\beta [N'/x]M'$$
+Back: As "substitution is well-defined with respect to $\beta$-equality."
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567219-->
+END%%
+
+%%ANKI
+Basic
+If $P =_\beta Q$, how do $P$ and $Q$'s $\beta$-normal forms relate to one another?
+Back: Either $P$ and $Q$ have the same $\beta$-normal form or neither $P$ nor $Q$ have a $\beta$-normal form.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567227-->
+END%%
+
 ## Church-Rosser Theorem
 
 If $P \,\triangleright_\beta\, M$ and $P \,\triangleright_\beta\, N$, then there exists a term $T$ such that $M \,\triangleright_\beta\, T$ and $N \,\triangleright_\beta\, T$. As an immediate corollary, if $P$ has a $\beta$-normal form then it it is unique modulo $\equiv_\alpha$.
@@ -567,7 +687,7 @@ END%%
 
 %%ANKI
 Basic
-What does the Church-Rosser theorem for $\triangleright_\beta$ state in terms of confluence?
+What does the Church-Rosser theorem state in terms of confluence?
 Back: $\beta$-reduction is confluent.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719577152613-->
@@ -577,7 +697,7 @@ END%%
 Basic
 The following diagram is a representation of what theorem?
 ![[church-rosser.png]]
-Back: The Church-Rosser theorem for $\triangleright_\beta$.
+Back: The Church-Rosser theorem.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719577152616-->
 END%%
@@ -600,11 +720,29 @@ END%%
 
 %%ANKI
 Basic
-In the following Church-Rosser diagram, what do the arrows represent?
+In the following diagram of the Church-Rosser theorem, what do the arrows represent?
 ![[church-rosser.png]]
 Back: $\beta$-reductions.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719577152627-->
+END%%
+
+Likewise, if $P =_\beta Q$, then there exists a term $T$ such that $P \,\triangleright_\beta\, T$ and $Q \,\triangleright_\beta\, T$.
+
+%%ANKI
+Basic
+What does the Church-Rosser theorem state in terms of $=_\beta$?
+Back: If $P =_\beta Q$ then there exists a term $T$ such that $P \,\triangleright_\beta\, T$ and $Q \,\triangleright_\beta\, T$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567238-->
+END%%
+
+%%ANKI
+Basic
+What theorem encourages giving $\beta$-equality its name?
+Back: The Church-Rosser theorem.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1721305567250-->
 END%%
 
 ## Bibliography

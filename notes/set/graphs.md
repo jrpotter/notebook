@@ -563,7 +563,7 @@ END%%
 
 %%ANKI
 Cloze
-Given a directed graph, incident {1:to} is to {1:in}-degrees whereas incident {1:from} is to {1:out}-degrees.
+Given a directed graph, incident {1:to} is to {2:in}-degrees whereas incident {2:from} is to {1:out}-degrees.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710796091058-->
 END%%
