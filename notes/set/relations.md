@@ -673,7 +673,7 @@ END%%
 
 %%ANKI
 Cloze
-If $xRx$ for all $x \in A$, $R$ is said to be reflexive {on} $A$.
+Suppose $xRx$ for all $x \in A$, $R$ is said to be reflexive {on} $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429824-->
 END%%

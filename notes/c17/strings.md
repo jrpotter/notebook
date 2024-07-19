@@ -995,7 +995,7 @@ How are C escape sequences exposed in bash?
 Back: Using ANSI-C quoting, i.e. `$$'string'`.
 Reference: Mendel Cooper, “Advanced Bash-Scripting Guide,” n.d., 916.
 Tags: bash
-<!--ID: 1706975891817-->
+<!--ID: 1721387296231-->
 END%%
 
 * `\xhh`: Consists of one or more [[radices#Hexadecimal|hexadecimal]] digits. The `x` prefix is required to distinguish from octal escape sequences.

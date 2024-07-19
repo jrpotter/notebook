@@ -204,7 +204,7 @@ END%%
 
 %%ANKI
 Basic
-When value does `setz` put in its specified destination?
+In terms of condition codes, what value does `setz` put in its specified destination?
 Back: `ZF`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1720992217909-->
@@ -220,7 +220,7 @@ END%%
 
 %%ANKI
 Basic
-When value does `setne` put in its specified destination?
+In terms of condition codes, what value does `setne` put in its specified destination?
 Back: `~ZF`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1720992217913-->
@@ -236,9 +236,10 @@ END%%
 
 %%ANKI
 Basic
-When value does `setz` put in its specified destination?
+In terms of condition codes, what value does `setz` put in its specified destination?
 Back: `SF`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1721387052533-->
 END%%
 
 %%ANKI
@@ -251,7 +252,7 @@ END%%
 
 %%ANKI
 Basic
-When value does `setns` put in its specified destination?
+In terms of condition codes, what value does `setns` put in its specified destination?
 Back: `~SF`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1720992217917-->

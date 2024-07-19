@@ -404,7 +404,7 @@ END%%
 
 ## Falling Factorials
 
-If we generalize to choosing $k \leq n$ elements of $k$ objects, we can calculate the $k$-permutation of $n$. This is denoted as $(n)_k$, sometimes called the **falling factorial**. $$(n)_k = \frac{n!}{(n - k)!}$$
+If we generalize to choosing $k \leq n$ elements of $n$ objects, we can calculate the $k$-permutation of $n$. This is denoted as $(n)_k$, sometimes called the **falling factorial**. $$(n)_k = \frac{n!}{(n - k)!}$$
 
 The derivation works by noting that we have $n - 0$ possible ways to pick the first object, $n - 1$ ways to pick the second, up until $n - (k - 1)$ ways to pick the last object.
 
@@ -462,6 +462,13 @@ What does $(n)_0$ evaluate to?
 Back: $1$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708366788631-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial problem does $(n)_0$ represent?
+Back: The number of ways to choose $0$ objects from $n$ choices.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 END%%
 
 %%ANKI

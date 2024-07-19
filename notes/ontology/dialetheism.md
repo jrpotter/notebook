@@ -27,7 +27,7 @@ END%%
 
 %%ANKI
 Basic
-What is used to refer to the so-called "standard logic" of mathematics?
+What name is given to the so-called "standard logic" of mathematics?
 Back: Classical logic.
 Reference: Graham Priest, Koji Tanaka, and Zach Weber, “Paraconsistent Logic,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/](https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/).
 <!--ID: 1721380604985-->
@@ -35,7 +35,7 @@ END%%
 
 %%ANKI
 Basic
-What classical principle is excluded in paraconsistent logics?
+What principle is excluded in paraconsistent logics?
 Back: The principle of explosion.
 Reference: Graham Priest, Koji Tanaka, and Zach Weber, “Paraconsistent Logic,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/](https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/).
 <!--ID: 1721380604997-->
