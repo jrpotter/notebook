@@ -760,7 +760,7 @@ END%%
 
 %%ANKI
 Cloze
-In $O(g(n))$, bound {1:$0 \leq f(n) \leq cg(n)$} holds for {1:some $c > 0$}. In $o(g(n))$, {2:$0 \leq f(n) < cg(n)$} holds for {2:all $c > 0$}.
+In $O(g(n))$, bound {1:$0 \leq f(n) \leq cg(n)$} holds for {1:some $c > 0$}. In $o(g(n))$, bound {2:$0 \leq f(n) < cg(n)$} holds for {2:all $c > 0$}.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709519002359-->
 END%%
@@ -1163,7 +1163,7 @@ END%%
 
 %%ANKI
 Cloze
-In $\Omega(g(n))$, bound {1:$0 \leq cg(n) \leq f(n)$} holds for {1:some $c > 0$}. In $\omega(g(n))$, {2:$0 \leq cg(n) < f(n)$} holds for {2:all $c > 0$}.
+In $\Omega(g(n))$, bound {1:$0 \leq cg(n) \leq f(n)$} holds for {1:some $c > 0$}. In $\omega(g(n))$, bound {2:$0 \leq cg(n) < f(n)$} holds for {2:all $c > 0$}.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709519002420-->
 END%%

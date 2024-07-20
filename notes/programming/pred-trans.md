@@ -498,7 +498,7 @@ END%%
 
 ## Commands
 
-### skip
+### Skip
 
 For any predicate $R$, $wp(skip, R) = R$.
 
@@ -525,7 +525,7 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1716810300113-->
 END%%
 
-### abort
+### Abort
 
 For any predicate $R$, $wp(abort, R) = F$.
 
@@ -622,7 +622,9 @@ END%%
 
 ### Assignment
 
-The assignment command has form $x \coloneqq e$, provided the types of $x$ and $e$ are the same. This command is read as "$x$ becomes $e$" and is defined as $$wp(''x \coloneqq e'', R) = domain(e) \,\mathop{\textbf{cand}}\, R_e^x$$
+#### Simple
+
+The assignment command has form $x \coloneqq e$, provided the types of $x$ and $e$ are the same. This command is read as "$x$ becomes $e$" and is defined as $$wp(''x \coloneqq e'', R) = domain(e) \textbf{ cand } R_e^x$$
 where $domain(e)$ is a predicate that describes the set of all states in which $e$ may be evaluated.
 
 %%ANKI
@@ -644,7 +646,7 @@ END%%
 %%ANKI
 Basic
 How is assignment "$x \coloneqq e$" defined in terms of $wp$?
-Back: $wp(''x \coloneqq e'', R) = domain(e) \,\mathop{\textbf{cand}}\, R_e^x$
+Back: $wp(''x \coloneqq e'', R) = domain(e) \textbf{ cand } R_e^x$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1720447926794-->
 END%%
@@ -676,7 +678,7 @@ END%%
 %%ANKI
 Basic
 How is definition "$wp(''x \coloneqq e'', R) = R_e^x$" more completely stated?
-Back: $wp(''x \coloneqq e'', R) = domain(e) \,\mathop{\textbf{cand}}\, R_e^x$
+Back: $wp(''x \coloneqq e'', R) = domain(e) \textbf{ cand } R_e^x$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1720447926813-->
 END%%
@@ -752,6 +754,10 @@ Back: That assignment (and expression evaluation) should exhibit no side effects
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1720447926858-->
 END%%
+
+#### General
+
+TODO
 
 ## Bibliography
 

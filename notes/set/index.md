@@ -276,7 +276,7 @@ END%%
 
 %%ANKI
 Cloze
-$\exists A \in B, uFx$ is equivalently written as $x \in$ {$\{v \mid \exists A \in B, uFv\}$}.
+$\exists u \in A, uFx$ is equivalently written as $x \in$ {$\{v \mid \exists u \in A, uFv\}$}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720369624735-->
 END%%

@@ -469,6 +469,7 @@ Basic
 What combinatorial problem does $(n)_0$ represent?
 Back: The number of ways to choose $0$ objects from $n$ choices.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1721475697031-->
 END%%
 
 %%ANKI

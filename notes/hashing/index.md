@@ -203,8 +203,6 @@ END%%
 
 An **independent uniform hash function** is the ideal theoretical abstraction. For each possible input $k$ in universe $U$, an output $h(k)$ is produced randomly and independently chosen from range $\{0, 1, \ldots, m - 1\}$. Once a value $h(k)$ is chosen, each subsequent call to $h$ with the same input $k$ yields the same output $h(k)$.
 
-Independent uniform hashing is **universal**, meaning the chance of any two distinct keys colliding is at most $1 / m$.
-
 %%ANKI
 Basic
 What is considered an ideal (though theoretical) hash function?
@@ -279,7 +277,7 @@ END%%
 
 ## Static Hashing
 
-Static hashing refers to providing a single fixed hash function intended to work well on *any* data. Generally speaking, this should not be favored over random hashing.
+**Static hashing** refers to providing a single fixed hash function intended to work well on *any* data. Generally speaking, this should not be favored over random hashing.
 
 %%ANKI
 Basic
@@ -570,6 +568,213 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1720891800649-->
 END%%
 
+## Random Hashing
+
+**Random hashing** refers to choosing a hash function randomly in a way that is independent of the keys being stored.
+
+%%ANKI
+Basic
+What does random hashing refer to?
+Back: Choosing a hash function randomly and independently of the keys being stored.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random
+<!--ID: 1721482558926-->
+END%%
+
+%%ANKI
+Basic
+What does random hashing avoid that static hashing doesn't?
+Back: Randomization guarantees no single input always evokes worst-case behavior.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random
+<!--ID: 1721482558932-->
+END%%
+
+### Universal Hashing
+
+Let $\mathscr{H}$ be a finite family of hash functions that map a given universe $U$ of keys into range $\{0, 1, \ldots, m - 1\}$. Such a family is said to be **universal** if $$\forall x, y \in U, x \neq y \Rightarrow |\{h \in \mathscr{H} \mid h(x) = h(y)\}| \leq \frac{|\mathscr{H}|}{m}.$$
+
+%%ANKI
+Basic
+Which of universal hashing or random hashing more general?
+Back: Random hashing.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482558937-->
+END%%
+
+%%ANKI
+Basic
+With respect to universal hashing, what mathematical object is property "universal" attributed to?
+Back: A finite set of hash functions.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482558943-->
+END%%
+
+%%ANKI
+Basic
+What does "family" refer to in the context of universal hashing?
+Back: A finite set of hash functions.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482558948-->
+END%%
+
+%%ANKI
+Basic
+Consider a hash table with $m = 1$ slot. Which hash function families are universal?
+Back: Finite families of hash functions mapping to e.g. $\{0\}$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482558957-->
+END%%
+
+%%ANKI
+Basic
+A "universal family" refers to a finite set of what?
+Back: Hash functions.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482558964-->
+END%%
+
+%%ANKI
+Basic
+Let $\mathscr{H}$ be a universal family and $h \in \mathscr{H}$. What is the domain of $h$?
+Back: The universe of keys.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482558970-->
+END%%
+
+%%ANKI
+Basic
+Let $\mathscr{H}$ be a universal family and $h \in \mathscr{H}$. What is the codomain of $h$?
+Back: $\{0, 1, \ldots, m - 1\}$ (or similar), where $m$ refers to the number of hash table slots.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482558977-->
+END%%
+
+%%ANKI
+Basic
+Consider universal family $\mathscr{H}$ and universe $U$. What does the following evaluate to? $$|\{h \in \mathscr{H} \mid h(x) = h(y)\}| \text{ for distinct } x, y \in U$$
+Back: A value between $0$ and $|\mathscr{H}|$ inclusive.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482558983-->
+END%%
+
+%%ANKI
+Basic
+Let $\mathscr{H} = \{h \mid U \rightarrow \{0, 1, \ldots, m - 1\}\}$ be universal. What first-order logic statement holds?
+Back: $$\forall x, y \in U, x \neq y \Rightarrow |\{h \in \mathscr{H} \mid h(x) = h(y)\}| \leq \frac{|\mathscr{H}|}{m}$$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482558988-->
+END%%
+
+%%ANKI
+Basic
+Let $\mathscr{H} = \{h \mid U \rightarrow \{0, 1, \ldots, m - 1\}\}$ be universal. What does $m > |\mathscr{H}|$ imply?
+Back: For any distinct $x, y \in U$, $h(x) \neq h(y)$ for all $h \in \mathscr{H}$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482558992-->
+END%%
+
+%%ANKI
+Basic
+Independent uniform hashing is equivalent to picking a function from what universal family?
+Back: $^U\{0, 1, \ldots, m\}$, i.e. the set of functions from $U$ to $\{0, 1, \ldots, m\}$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482559002-->
+END%%
+
+%%ANKI
+Basic
+Consider universe $U$ and $\mathscr{H} = \{I_U\}$. Is $\mathscr{H}$ universal?
+Back: Yes.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482559008-->
+END%%
+
+%%ANKI
+Basic
+Consider universe $U$ and $\mathscr{H} = \{I_U\}$. *Why* is $\mathscr{H}$ universal?
+Back: Because for any distinct $x, y \in U$, $I_U(x) \neq I_U(y)$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482559014-->
+END%%
+
+%%ANKI
+Basic
+Consider universe $U$ and $\mathscr{H} = \{h\}$ where $h(x) = 0$. Is $\mathscr{H}$ universal?
+Back: Not necessarily.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482559021-->
+END%%
+
+%%ANKI
+Basic
+Consider universe $U$ and $\mathscr{H} = \{h\}$ where $h(x) = 0$. *When* is $\mathscr{H}$ universal?
+Back: When there exists only one slot in the relevant hash table.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482559031-->
+END%%
+
+%%ANKI
+Basic
+Consider universe $U$ and $\mathscr{H} = \{h\}$ where $h(x) = 0$. *When* is $\mathscr{H}$ not universal?
+Back: When there exists more than one slot in the relevant hash table.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482559043-->
+END%%
+
+%%ANKI
+Basic
+Let $\mathscr{H} = \{h \mid U \rightarrow \{0, 1, \ldots, m - 1\}\}$ be universal. What number decreases as $m$ increases?
+Back: The number of permitted conflicts for each $h \in \mathscr{H}$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482559053-->
+END%%
+
+%%ANKI
+Basic
+Let $\mathscr{H} = \{h \mid U \rightarrow \{0, 1, \ldots, m - 1\}\}$ be universal. What number increases as $|\mathscr{H}|$ increases?
+Back: The number of permitted conflicts for each $h \in \mathscr{H}$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482559059-->
+END%%
+
+%%ANKI
+Basic
+Is $\varnothing$ a universal family?
+Back: Yes.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482559064-->
+END%%
+
+%%ANKI
+Basic
+How might we redefine "universal" to prevent $\varnothing \subseteq \{h \mid h \colon U \rightarrow \{0, 1, \ldots, m - 1\}$ being considered universal?
+Back: $$\forall x, y \in U, x \neq y \Rightarrow \frac{|\varnothing|}{|\varnothing|} \leq \frac{1}{m}$$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: hashing::random hashing::universal
+<!--ID: 1721482559069-->
+END%%
+
 ## Bibliography
 
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+* “Universal Hashing,” in _Wikipedia_, April 18, 2024, [https://en.wikipedia.org/w/index.php?title=Universal_hashing](https://en.wikipedia.org/w/index.php?title=Universal_hashing&oldid=1219538176).

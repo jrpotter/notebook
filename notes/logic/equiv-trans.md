@@ -224,190 +224,11 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707316276203-->
 END%%
 
-## Substitution
+## Selectors
 
-**Textual substitution** refers to the simultaneous replacement of a free identifier with an expression, introducing parentheses as necessary. This concept is just the [[#Equivalence Rules|Substitution Rule]] with different notation. Let $\bar{x}$ denote a list of distinct identifiers. If $\bar{e}$ is a list of expressions of the same length as $\bar{x}$, then simultaneous substitution of $\bar{x}$ by $\bar{e}$ in expression $E$ is denoted as $$E_{\bar{e}}^{\bar{x}}$$
-Note that simultaneous substitution is different than sequential substitution.
+A **selector** denotes a finite sequence of subscript expressions, each enclosed in brackets. $\epsilon$ denotes the empty selector. For example, variable $x$ is equivalently denoted as $x \circ \epsilon$ whereas for array $b$, $b[i]$ is equivalently denoted as $b \circ [i]$.
 
-%%ANKI
-Basic
-Textual substitution is derived from what equivalence rule?
-Back: The substitution rule.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304123-->
-END%%
-
-%%ANKI
-Basic
-What term refers to $x$ in textual substitution $E_e^x$?
-Back: The reference.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707939006275-->
-END%%
-
-%%ANKI
-Basic
-What term refers to $e$ in textual substitution $E_e^x$?
-Back: The expression.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707939006283-->
-END%%
-
-%%ANKI
-Basic
-What term refers to both $x$ and $e$ together in textual substitution $E_e^x$?
-Back: The reference-expression pair.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707939006288-->
-END%%
-
-%%ANKI
-Basic
-What identifier is guaranteed to not occur freely in $E_e^x$?
-Back: N/A.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707937867036-->
-END%%
-
-%%ANKI
-Basic
-What identifier is guaranteed to not occur freely in $E_{s(e)}^x$?
-Back: $x$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707937867039-->
-END%%
-
-%%ANKI
-Basic
-*Why* does $x$ not occur freely in $E_{s(e)}^x$?
-Back: Because $s(e)$ evaluates to a constant proposition.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707937867042-->
-END%%
-
-%%ANKI
-Basic
-What is the role of $E$ in textual substitution $E_e^x$?
-Back: It is the expression in which free occurrences of $x$ are replaced.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1708347042194-->
-END%%
-
-%%ANKI
-Basic
-What is the role of $e$ in textual substitution $E_e^x$?
-Back: It is the expression that is evaluated and substituted into $E$.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1708347042199-->
-END%%
-
-%%ANKI
-Basic
-What is the role of $x$ in textual substitution $E_e^x$?
-Back: It is the identifier matching free occurrences in $E$ that are replaced.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1708347042203-->
-END%%
-
-%%ANKI
-Basic
-How is textual substitution $E_e^x$ interpreted as a function?
-Back: As $E(e)$, where $E$ is a function of $x$.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304130-->
-END%%
-
-%%ANKI
-Basic
-Why does Gries prefer notation $E_e^x$ over e.g. $E(e)$?
-Back: The former indicates the identifier to replace.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304132-->
-END%%
-
-%%ANKI
-Basic
-What two scenarios ensure $E_e^x = E$ is an equivalence?
-Back: $x = e$ or no free occurrences of $x$ exist in $E$.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304133-->
-END%%
-
-%%ANKI
-Basic
-If $x \neq e$, why might $E_e^x = E$ be an equivalence despite $x$ existing in $E$?
-Back: The only occurrences of $x$ in $E$ may be bound.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304135-->
-END%%
-
-%%ANKI
-Basic
-What is required for $E_e^x$ to be valid?
-Back: Substitution must result in a syntactically valid expression.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304137-->
-END%%
-
-%%ANKI
-Basic
-What is the result of the following? $$(x < y \land (\forall i : 0 \leq i < n : b[i] < y))_z^x$$
-Back: $$(z < y \land (\forall i : 0 \leq i < n : b[i] < y))$$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304139-->
-END%%
-
-%%ANKI
-Basic
-What is the result of the following? $$(x < y \land (\forall i : 0 \leq i < n : b[i] < y))_z^y$$
-Back: $$(x < z \land (\forall i : 0 \leq i < n : b[i] < z))$$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304140-->
-END%%
-
-%%ANKI
-Basic
-What is the result of the following? $$(x < y \land (\forall i : 0 \leq i < n : b[i] < y))_z^i$$
-Back: $$(x < y \land (\forall i : 0 \leq i < n : b[i] < y))$$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304141-->
-END%%
-
-%%ANKI
-Basic
-In textual substitution, what does e.g. $\bar{x}$ denote?
-Back: A list of *distinct* identifiers.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707937867046-->
-END%%
-
-%%ANKI
-Basic
-What is the role of $E$ in textual substitution $E_{\bar{e}}^{\bar{x}}$?
-Back: It is the expression in which free occurrences of $\bar{x}$ are replaced.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304126-->
-END%%
-
-%%ANKI
-Basic
-What is the role of $\bar{e}$ in textual substitution $E_{\bar{e}}^{\bar{x}}$?
-Back: It is the expressions that are substituted into $E$.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304127-->
-END%%
-
-%%ANKI
-Basic
-What is the role of $\bar{x}$ in textual substitution $E_{\bar{e}}^{\bar{x}}$?
-Back: It is the distinct identifiers matching free occurrences in $E$ that are replaced.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707762304129-->
-END%%
-
-### Arrays
-
-An array can be seen as a function from the **domain** of the array to the subscripted values found in the array. We denote array subscript assignment similarly to state identifier assignment: $$(b; i{:}e)[j] = \begin{cases} i = j \rightarrow e \\ i \neq j \rightarrow b[j] \end{cases}$$
+**Selector update** syntax allows specifying a new value with previous subscripted values overridden. For instance, $(b; i{:}e)$ denotes $b$ with $b[i]$ now referring to $e$. More formally, for any $j \in \mathop{domain}(b)$, $$(b; i{:}e)[j] = \begin{cases} i = j \rightarrow e \\ i \neq j \rightarrow b[j] \end{cases}$$
 
 %%ANKI
 Basic
@@ -640,9 +461,7 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1714336860005-->
 END%%
 
-### Selector Update Syntax
-
-A **selector** denotes a finite sequence of subscript expressions, each enclosed in brackets. $\epsilon$ denotes the empty selector. We can generalize the above to all variable types as follows: $$\begin{align*} (b; \epsilon{:}g) & = g \\ (b; [i] \circ s{:}e)[j] & = \begin{cases} i \neq j \rightarrow b[j] \\ i = j \rightarrow (b[j]; s{:}e) \end{cases} \end{align*}$$
+Generalizing further to all variable types $x$, $$\begin{align*} (x; \epsilon{:}e) & = e \\ (x; [i] {\circ} s{:}e)[j] & = \begin{cases} i \neq j \rightarrow x[j] \\ i = j \rightarrow (x[j]; s{:}e) \end{cases} \end{align*}$$
 
 %%ANKI
 Basic
@@ -654,8 +473,8 @@ END%%
 
 %%ANKI
 Basic
-Given valid expression $(b; [i]{\circ}s{:}e)$, what can be said about $i$?
-Back: $i$ is in the domain of $b$.
+Given valid expression $(x; [i]{\circ}s{:}e)$, what can be said about $i$?
+Back: $i$ is in the domain of $x$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640893-->
 END%%
@@ -663,14 +482,14 @@ END%%
 %%ANKI
 Basic
 What is the base case of selector update syntax?
-Back: $(b; \epsilon{:}g) = g$
+Back: $(x; \epsilon{:}e) = e$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640901-->
 END%%
 
 %%ANKI
 Basic
-The null selector is usually denoted as what?
+How is the null selector usually denoted?
 Back: $\epsilon$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640904-->
@@ -679,7 +498,7 @@ END%%
 %%ANKI
 Basic
 The null selector is the identity element of what operation?
-Back: Concatenation of sequences of subscripts.
+Back: Subscript sequence concatenation.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640907-->
 END%%
@@ -702,7 +521,7 @@ END%%
 
 %%ANKI
 Basic
-What assignment expression (i.e. using `:=`) is simpler but equivalent to $x := (x; \epsilon{:}e)$?
+How is command $x := (x; \epsilon{:}e)$ more compactly rewritten?
 Back: $x := e$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640917-->
@@ -771,6 +590,172 @@ Back: $(c[1]; \epsilon{:}3)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640953-->
 END%%
+
+## Substitution
+
+**Textual substitution** refers to the replacement of a [[pred-logic#Identifiers|free]] identifier with an expression, introducing parentheses as necessary. This concept amounts to the [[#Equivalence Rules|Substitution Rule]] with different notation.
+
+%%ANKI
+Basic
+Textual substitution is derived from what equivalence rule?
+Back: The substitution rule.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304123-->
+END%%
+
+### Simple
+
+If $x$ denotes a variable and $e$ an expression, substitution of $x$ by $e$ is denoted as $$\large{E_e^x}$$
+
+%%ANKI
+Basic
+What term refers to $x$ in textual substitution $E_e^x$?
+Back: The reference.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707939006275-->
+END%%
+
+%%ANKI
+Basic
+What term refers to $e$ in textual substitution $E_e^x$?
+Back: The expression.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707939006283-->
+END%%
+
+%%ANKI
+Basic
+What term refers to both $x$ and $e$ together in textual substitution $E_e^x$?
+Back: The reference-expression pair.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707939006288-->
+END%%
+
+%%ANKI
+Basic
+What identifier is guaranteed to not occur freely in $E_e^x$?
+Back: N/A.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867036-->
+END%%
+
+%%ANKI
+Basic
+What identifier is guaranteed to not occur freely in $E_{s(e)}^x$?
+Back: $x$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867039-->
+END%%
+
+%%ANKI
+Basic
+*Why* does $x$ not occur freely in $E_{s(e)}^x$?
+Back: Because $s(e)$ evaluates to a constant proposition.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707937867042-->
+END%%
+
+%%ANKI
+Basic
+What is the role of $E$ in textual substitution $E_e^x$?
+Back: It is the expression in which free occurrences of $x$ are replaced.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1708347042194-->
+END%%
+
+%%ANKI
+Basic
+What is the role of $e$ in textual substitution $E_e^x$?
+Back: It is the expression that is evaluated and substituted into $E$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1708347042199-->
+END%%
+
+%%ANKI
+Basic
+What is the role of $x$ in textual substitution $E_e^x$?
+Back: It is the identifier matching free occurrences in $E$ that are replaced.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1708347042203-->
+END%%
+
+%%ANKI
+Basic
+How is textual substitution $E_e^x$ interpreted as a function?
+Back: As $E(e)$, where $E$ is a function of $x$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304130-->
+END%%
+
+%%ANKI
+Basic
+Why does Gries prefer notation $E_e^x$ over e.g. $E(e)$?
+Back: The former indicates the identifier to replace.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304132-->
+END%%
+
+%%ANKI
+Basic
+What two scenarios ensure $E_e^x = E$ is an equivalence?
+Back: $x = e$ or no free occurrences of $x$ exist in $E$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304133-->
+END%%
+
+%%ANKI
+Basic
+If $x \neq e$, why might $E_e^x = E$ be an equivalence despite $x$ existing in $E$?
+Back: The only occurrences of $x$ in $E$ may be bound.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304135-->
+END%%
+
+%%ANKI
+Basic
+What is required for $E_e^x$ to be valid?
+Back: Substitution must result in a syntactically valid expression.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304137-->
+END%%
+
+%%ANKI
+Basic
+What is the result of the following? $$(x < y \land (\forall i : 0 \leq i < n : b[i] < y))_z^x$$
+Back: $$(z < y \land (\forall i : 0 \leq i < n : b[i] < y))$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304139-->
+END%%
+
+%%ANKI
+Basic
+What is the result of the following? $$(x < y \land (\forall i : 0 \leq i < n : b[i] < y))_z^y$$
+Back: $$(x < z \land (\forall i : 0 \leq i < n : b[i] < z))$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304140-->
+END%%
+
+%%ANKI
+Basic
+What is the result of the following? $$(x < y \land (\forall i : 0 \leq i < n : b[i] < y))_z^i$$
+Back: $$(x < y \land (\forall i : 0 \leq i < n : b[i] < y))$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707762304141-->
+END%%
+
+### General
+
+We can generalize textual substitution to operate on a vector of reference-expression pairs, where each reference corresponds to some identifier concatenated with a selector. Let $\bar{x} = \langle x_1, \ldots, x_n \rangle$ denote a vector of identifiers concatenated with selectors and $\bar{e} = \langle e_1, \ldots, e_n \rangle$ denote a vector of expressions. Then textual substitition of $\bar{x}$ with $\bar{e}$ in expression $E$ is denoted as $$\large{E_{\bar{e}}^{\bar{x}}}$$
+
+Substitution is defined recursively as follows:
+
+1. If each $x_i$ is a distinct identifier with a null selector, then $E_{\bar{e}}^{\bar{x}}$ is the simultaneous substitution of $\bar{x}$ with $\bar{e}$.
+2. Adjacent reference-expression pairs may be permuted as long as they begin with different identifiers. That is, for all distinct $b$ and $c$, $$\Large{E_{\bar{e}, \,f, \,h, \,\bar{g}}^{\bar{x}, \,b, \,c, \,\bar{y}} = E_{\bar{x}, \,h, \,f, \,\bar{g}}^{\bar{x}, \,c, \,b, \,\bar{y}}}$$
+3. Multiple assignments to subparts of an object $b$ can be viewed as a single assignment to $b$. That is, provided $b$ does not begin any of the $x_i$, $$\Large{E_{e_1, \,\ldots, \,e_m, \,\bar{g}}^{b \circ s_1, \,\ldots, \,b \circ s_m, \,\bar{x}} = E_{(b; \,s_1{:}e_1; \,\cdots; \,s_m{:}e_m), \,\bar{g}}^{b, \,\bar{x}}}$$
+
+Note that simultaneous substitution is different from sequential substitution.
+
+TODO
 
 ### Theorems
 
@@ -933,7 +918,7 @@ END%%
 %%ANKI
 Basic
 When is $(E_{\bar{u}}^{\bar{x}})_{\bar{x}}^{\bar{u}} = E$ guaranteed to be an equivalence?
-Back: When $\bar{x}$ and $\bar{u}$ are all distinct identifiers.
+Back: When $\bar{x}$ and $\bar{u}$ refer to distinct identifiers.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707939006297-->
 END%%
