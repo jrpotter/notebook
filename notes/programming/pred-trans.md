@@ -622,6 +622,14 @@ END%%
 
 ### Assignment
 
+%%ANKI
+Basic
+What equivalence transformation rule is assignment related to?
+Back: Substitution.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014026-->
+END%%
+
 #### Simple
 
 The assignment command has form $x \coloneqq e$, provided the types of $x$ and $e$ are the same. This command is read as "$x$ becomes $e$" and is defined as $$wp(''x \coloneqq e'', R) = domain(e) \textbf{ cand } R_e^x$$
@@ -757,7 +765,112 @@ END%%
 
 #### General
 
-TODO
+The multiple assignment command has form $$x_1 \circ s_1, \cdots, x_n \circ s_n \coloneqq e_1, \cdots, e_n$$
+where each $x_i$ is an identifier, each $s_i$ is a [[equiv-trans#Selectors|selector]], and each expression $e_i$ has the same type as $x_i \circ s_i$. We denote this assignment more compactly as $\bar{x} \coloneqq \bar{e}$. We define multiple assignment as $$wp(''\bar{x} \coloneqq \bar{e}'', R) = domain(\bar{e}) \textbf{ cand } R_{\bar{e}}^\bar{x}$$
+
+%%ANKI
+Basic
+How is $x \coloneqq e$ expressed in more general form $x_1 \circ s_1, \ldots, x_n \circ s_n \coloneqq e_1, \ldots, e_n$?
+Back: As $x \circ \epsilon \coloneqq e$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014033-->
+END%%
+
+%%ANKI
+Basic
+How is $b[i] \coloneqq e$ expressed in more general form $x_1 \circ s_1, \ldots, x_n \circ s_n \coloneqq e_1, \ldots, e_n$?
+Back: As $b \circ [i] \coloneqq e$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014038-->
+END%%
+
+%%ANKI
+Basic
+Consider assignment command $\bar{x} \coloneqq \bar{e}$. In what order must $\bar{e}$ be evaluated?
+Back: In any order.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014043-->
+END%%
+
+%%ANKI
+Basic
+Consider assignment command $\bar{x} \coloneqq \bar{e}$. In what order must assignment be performed?
+Back: Left-to-right.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014047-->
+END%%
+
+%%ANKI
+Basic
+*Why* must assignment in $\bar{x} \coloneqq \bar{e}$ happen left-to-right?
+Back: Because update selector syntax has right-to-left precedence.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014051-->
+END%%
+
+%%ANKI
+Basic
+Consider assignment command $\bar{x} \coloneqq \bar{e}$. When can assignment be performed in any order?
+Back: When the identifiers in $\bar{x}$ are distinct.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014055-->
+END%%
+
+%%ANKI
+Basic
+The general assignment command has what form?
+Back: $\bar{x} \coloneqq \bar{e}$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014059-->
+END%%
+
+%%ANKI
+Basic
+How is assignment "$\bar{x} \coloneqq \bar{e}$" defined in terms of $wp$?
+Back: $wp(''\bar{x} \coloneqq \bar{e}'', R) = domain(\bar{e}) \textbf{ cand } R_{\bar{e}}^{\bar{x}}$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014064-->
+END%%
+
+%%ANKI
+Basic
+In the $wp$ definition of "$\bar{x} \coloneqq \bar{e}$", what does $domain(\bar{e})$ refer to?
+Back: A predicate that holds if each member of $\bar{e}$ is well-defined.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014068-->
+END%%
+
+%%ANKI
+Basic
+In the $wp$ definition of "$\bar{x} \coloneqq \bar{e}$", $domain(\bar{e})$ must exclude which states?
+Back: Those in which evaluation of any member of $\bar{e}$ would be undefined.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014072-->
+END%%
+
+%%ANKI
+Basic
+What assumption is made when defining assignment as "$wp(''\bar{x} \coloneqq \bar{e}'', R) = R_{\bar{e}}^{\bar{x}}$"?
+Back: $domain(\bar{e})$, i.e. evaluation of each member of $\bar{e}$ is well-defined.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014076-->
+END%%
+
+%%ANKI
+Basic
+How is definition "$wp(''\bar{x} \coloneqq \bar{e}'', R) = R_{\bar{e}}^{\bar{x}}$" more completely stated?
+Back: $wp(''\bar{x} \coloneqq \bar{e}'', R) = domain(\bar{e}) \textbf{ cand } R_{\bar{e}}^{\bar{x}}$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014081-->
+END%%
+
+%%ANKI
+Basic
+Given $\bar{e} = \langle e_1, \ldots, e_n \rangle$, how is $\mathop{domain}(\bar{e})$ defined in predicate logic?
+Back: $\forall i, 1 \leq i \leq n \Rightarrow \mathop{domain}(e_i)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014085-->
+END%%
 
 ## Bibliography
 

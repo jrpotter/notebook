@@ -591,6 +591,30 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1714395640953-->
 END%%
 
+%%ANKI
+Basic
+Consider selector update syntax. Is precedence left-to-right or right-to-left?
+Back: Right-to-left.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014090-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for selector update syntax to have right-to-left precedence?
+Back: Rightmost selectors overwrite duplicate selectors.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014094-->
+END%%
+
+%%ANKI
+Basic
+How is $(b; s_1{:}e_1; s_2{:}e_2; s_1{:}e_3)$ simplified?
+Back: As $(b; s_2{:}e_2; s_1{:}e_3)$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721497014098-->
+END%%
+
 ## Substitution
 
 **Textual substitution** refers to the replacement of a [[pred-logic#Identifiers|free]] identifier with an expression, introducing parentheses as necessary. This concept amounts to the [[#Equivalence Rules|Substitution Rule]] with different notation.
@@ -751,16 +775,150 @@ Substitution is defined recursively as follows:
 
 1. If each $x_i$ is a distinct identifier with a null selector, then $E_{\bar{e}}^{\bar{x}}$ is the simultaneous substitution of $\bar{x}$ with $\bar{e}$.
 2. Adjacent reference-expression pairs may be permuted as long as they begin with different identifiers. That is, for all distinct $b$ and $c$, $$\Large{E_{\bar{e}, \,f, \,h, \,\bar{g}}^{\bar{x}, \,b, \,c, \,\bar{y}} = E_{\bar{x}, \,h, \,f, \,\bar{g}}^{\bar{x}, \,c, \,b, \,\bar{y}}}$$
-3. Multiple assignments to subparts of an object $b$ can be viewed as a single assignment to $b$. That is, provided $b$ does not begin any of the $x_i$, $$\Large{E_{e_1, \,\ldots, \,e_m, \,\bar{g}}^{b \circ s_1, \,\ldots, \,b \circ s_m, \,\bar{x}} = E_{(b; \,s_1{:}e_1; \,\cdots; \,s_m{:}e_m), \,\bar{g}}^{b, \,\bar{x}}}$$
+3. Multiple assignments to subparts of an object $b$ can be viewed as a single assignment to $b$. That is, provided $b$ does not begin any of the $x_i$, $$\Large{E_{e_1, \,\ldots, \,e_m, \,\bar{g}}^{b \,\circ\, s_1, \,\ldots, \,b \,\circ\, s_m, \,\bar{x}} = E_{(b; \,s_1{:}e_1; \,\cdots; \,s_m{:}e_m), \,\bar{g}}^{b, \,\bar{x}}}$$
 
 Note that simultaneous substitution is different from sequential substitution.
 
-TODO
+%%ANKI
+Basic
+Consider $E_{\bar{e}}^{\bar{x}}$. What is each $x_i$ in $\bar{x}$?
+Back: An identifier concatenated with a selector.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879842-->
+END%%
+
+%%ANKI
+Basic
+Consider $E_{\bar{e}}^{\bar{x}}$. What is each $e_i$ in $\bar{e}$?
+Back: An expression.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879845-->
+END%%
+
+%%ANKI
+Basic
+What is the base case in the evaluation of $E_{\bar{e}}^{\bar{x}}$?
+Back: If $\bar{x}$ are distinct identifiers with null selectors, direct simultaneous substitution.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879846-->
+END%%
+
+%%ANKI
+Basic
+Which of $E_{\bar{e}}^{\bar{x}}$'s reference-expression pairs may be moved?
+Back: Adjacent pairs with distinct identifiers.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879847-->
+END%%
+
+%%ANKI
+Basic
+When is $b_1 \circ s_1$ and $b_2 \circ s_2$ said to have distinct identifiers?
+Back: When $b_1 \neq b_2$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879848-->
+END%%
+
+%%ANKI
+Basic
+When is $b_1 \circ s_1$ and $b_2 \circ s_2$ said to have distinct selectors?
+Back: When $s_1 \neq s_2$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879850-->
+END%%
+
+%%ANKI
+Basic
+Suppose $x$ and $y$ are distinct. Is the following a tautology? $$\large{E_{e_1, e_2}^{x, y} = E_{e_2, e_1}^{y, x}}$$
+Back: Yes.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879851-->
+END%%
+
+%%ANKI
+Basic
+When is the following a tautology? $$\large{E_{e_1, e_2}^{x, y} = E_{e_2, e_1}^{y, x}}$$
+Back: When $x$ and $y$ refer to distinct identifiers.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879852-->
+END%%
+
+%%ANKI
+Basic
+Suppose $x = y$. When is the following a tautology? $$\large{E_{e_1, e_2}^{x, y} = E_{e_2, e_1}^{x, y}}$$
+Back: When $e_1 = e_2$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879853-->
+END%%
+
+%%ANKI
+Basic
+Suppose $x$, $y$, and $z$ are distinct. What is the result of a single evaluation step? $$\large{E_{e_1, e_2, e_3}^{x, y, z}}$$
+Back: N/A.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879854-->
+END%%
+
+%%ANKI
+Basic
+Suppose $x \neq y$. What is the result of a single evaluation step? $$\large{E_{e_1, e_2, e_3}^{x, y, x}}$$
+Back: $$\large{E_{e_1, e_3, e_2}^{x, x, y}}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879855-->
+END%%
+
+%%ANKI
+Basic
+Suppose $x \neq y$. What is the result of a single evaluation step? $$\large{E_{e_1, e_3, e_2}^{x, x, y}}$$
+Back: $$\large{E_{(x; \,\epsilon{:}e_1; \,\epsilon{:}e_3), e_2}^{x, y}}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879856-->
+END%%
+
+%%ANKI
+Basic
+Suppose $x \neq y$. What is the result of a single evaluation step? $$\large{E_{(x; \,\epsilon{:}e_1; \,\epsilon{:}e_3), e_2}^{x, y}}$$
+Back: $$\large{E_{e_3, e_2}^{x, y}}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879857-->
+END%%
+
+%%ANKI
+Basic
+Suppose $x \neq y$. *Why* isn't the following a tautology? $$\large{E_{e_1, e_2, e_3}^{x, y, x}} = E_{(x; \epsilon{:}e_1), e_2, e_3}^{x, y, x}$$
+Back: N/A. It is.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879858-->
+END%%
+
+%%ANKI
+Basic
+Suppose $x \neq y$. *Why* isn't the following a tautology? $$\large{E_{e_1, e_2, e_3, e_4}^{x, x, y, x}} = E_{(x; \epsilon{:}e_1; \epsilon{:}e_2), e_3, e_4}^{x, y, x}$$
+Back: Because not every $x$ was made adjacent before grouping.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879859-->
+END%%
+
+%%ANKI
+Basic
+Consider array $b$ and $i \in \mathop{domain}(b)$. What is the result of a single evaluation step? $$\large{E_{e}^{b[i]}}$$
+Back: $$\large{E_{(b; [i]{:}e)}^{b}}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879860-->
+END%%
+
+%%ANKI
+Basic
+Consider identifier $x$, array $b$ and $i \in \mathop{domain}(b)$. What is the result of a single evaluation step? $$\large{E_{b[i]}^{x}}$$
+Back: N/A.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721495879861-->
+END%%
 
 ### Theorems
 
 * $(E_u^x)_v^x = E_{u_v^x}^x$
-	* The only possible free occurrences of $x$ that may appear after the first of the sequential substitutions occur in $u$.
+	* The only possible free occurrences of $x$ that may appear after the first of the substitutions occur in $u$.
 
 %%ANKI
 Basic
@@ -780,13 +938,13 @@ END%%
 
 %%ANKI
 Basic
-Why is $(E_u^x)_v^x = E_{u_v^x}^x$ an equivalence?
+*Why* is $(E_u^x)_v^x = E_{u_v^x}^x$ an equivalence?
 Back: After the first substitution, the only possible free occurrences of $x$ are in $u$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707762304146-->
 END%%
 
-* If $y$ is not free in $E$, then $(E_u^x)_v^y = E_{u_v^y}^x$.
+* If $y \not\in FV(E)$, then $(E_u^x)_v^y = E_{u_v^y}^x$.
 	* $y$ may not be free in $E$ but substituting $x$ with $u$ can introduce a free occurrence. It doesn't matter if we perform the substitution first or second though.
 
 %%ANKI
@@ -807,7 +965,7 @@ END%%
 
 %%ANKI
 Basic
-Why should $y$ not be free in $E$ for $(E_u^x)_v^y = E_{u_v^y}^x$ to be an equivalence?
+Why does $y \not\in FV(E)$ ensure $(E_u^x)_v^y = E_{u_v^y}^x$ is an equivalence?
 Back: If it were, a $v$ would exist in the LHS that doesn't in the RHS.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707762304152-->
@@ -918,7 +1076,7 @@ END%%
 %%ANKI
 Basic
 When is $(E_{\bar{u}}^{\bar{x}})_{\bar{x}}^{\bar{u}} = E$ guaranteed to be an equivalence?
-Back: When $\bar{x}$ and $\bar{u}$ refer to distinct identifiers.
+Back: When $\bar{x}$ and $\bar{u}$ refer to distinct identifiers (concatenated with selectors).
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707939006297-->
 END%%
