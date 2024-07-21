@@ -236,7 +236,7 @@ END%%
 
 %%ANKI
 Basic
-In terms of condition codes, what value does `setz` put in its specified destination?
+In terms of condition codes, what value does `sets` put in its specified destination?
 Back: `SF`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1721387052533-->

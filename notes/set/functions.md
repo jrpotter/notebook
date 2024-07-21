@@ -211,7 +211,7 @@ Basic
 Suppose `Function.Injective f` for $f \colon A \rightarrow B$. What predicate logical formula describes $f$?
 Back: $\forall a_1, a_2 \in A, (f(a_1) = f(a_2) \Rightarrow a_1 = a_2$)
 Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
-Tags: lean logic::predicate
+Tags: lean formal-system::predicate
 <!--ID: 1718464498603-->
 END%%
 
@@ -470,7 +470,7 @@ Basic
 Suppose `Function.Surjective f` for $f \colon A \rightarrow B$. What predicate logical formula describes $f$?
 Back: $\forall b \in B, \exists a \in A, f(a) = b$
 Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
-Tags: lean logic::predicate
+Tags: lean formal-system::predicate
 <!--ID: 1718464498615-->
 END%%
 

@@ -1,7 +1,7 @@
 ---
 title: Predicate Logic
 TARGET DECK: Obsidian::STEM
-FILE TAGS: logic::predicate
+FILE TAGS: formal-system::predicate
 tags:
   - logic
   - predicate
@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-A branch of logic that uses quantified variables over non-logical objects. A **predicate** is a sentence with some number of free variables. A predicate with free variables "plugged in" is a [[prop-logic|proposition]].
+**Predicate logic** is a logical system that uses quantified variables over non-logical objects. A **predicate** is a sentence with some number of free variables. A predicate with free variables "plugged in" is a [[prop-logic|proposition]].
 
 %%ANKI
 Cloze
@@ -70,7 +70,9 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707674796766-->
 END%%
 
-* **Existential quantification** ($\exists$) asserts the existence of at least one member in a set satisfying a property.
+### Existentials
+
+**Existential quantification** ($\exists$) asserts the existence of at least one member in a set satisfying a property.
 
 %%ANKI
 Basic
@@ -112,7 +114,9 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707494819970-->
 END%%
 
-* **Universal quantification** ($\forall$) asserts that every member of a set satisfies a property.
+### Universals
+
+**Universal quantification** ($\forall$) asserts that every member of a set satisfies a property.
 
 %%ANKI
 Basic
@@ -167,7 +171,9 @@ Back: $\neg \forall x : S, \neg P(x)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 END%%
 
-* **Counting quantification** ($\exists^{=k}$ or $\exists^{\geq k}$) asserts that (at least) $k$ (say) members of a set satisfy a property.
+### Counting
+
+**Counting quantification** ($\exists^{=k}$ or $\exists^{\geq k}$) asserts that (at least) $k$ (say) members of a set satisfy a property.
 
 %%ANKI
 Basic
@@ -245,7 +251,7 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1720386023296-->
 END%%
 
-### Identifiers
+## Identifiers
 
 Identifiers are said to be **bound** if they are parameters to a quantifier. Identifiers that are not bound are said to be **free**. A first-order logic formula is said to be in **prenex normal form** (PNF) if written in two parts: the first consisting of quantifiers and bound variables (the **prefix**), and the second consisting of no quantifiers (the **matrix**).
 
@@ -303,42 +309,6 @@ How is the following rewritten in PNF? $(\exists x, P(x)) \land (\forall y, Q(y)
 Back: N/A.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1720665224639-->
-END%%
-
-## As Sets
-
-A **state** is a function that maps identifiers to values. A predicate can be equivalently seen as a representation of the set of states in which it is true.
-
-%%ANKI
-Basic
-Is $(i \geq 0)$ well-defined in $\{(i, -10)\}$?
-Back: Yes.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1715898219881-->
-END%%
-
-%%ANKI
-Basic
-Is $(i \geq 0)$ well-defined in $\{(j, -10)\}$?
-Back: No.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1715898219890-->
-END%%
-
-%%ANKI
-Basic
-What predicate represents states $\{(i, 0), (i, 2), (i, 4), \ldots\}$?
-Back: $i \geq 0$ is even.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1715898219895-->
-END%%
-
-%%ANKI
-Basic
-What is sloppy about phrase "the states in $i + j = 0$"?
-Back: $i + j = 0$ is not a set but a representation of a set (of states).
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1715898219903-->
 END%%
 
 ## Bibliography
