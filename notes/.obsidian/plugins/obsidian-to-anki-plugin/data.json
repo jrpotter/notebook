@@ -620,7 +620,7 @@
     "_journal/2024-07/2024-07-18.md": "237918b58424435959cbc949d01e7932",
     "_journal/2024-07-20.md": "d8685729effc374e4ece1e618c2fdad3",
     "_journal/2024-07/2024-07-19.md": "e9fe4569f88e1ba9393292bcf092edfc",
-    "_journal/2024-07-21.md": "682ee0ada782dd281d8fd217227e985c",
+    "_journal/2024-07-21.md": "dd5dd93f119f69571a78e027fab7da5d",
     "_journal/2024-07/2024-07-20.md": "d8685729effc374e4ece1e618c2fdad3",
     "logic/classical/index.md": "ee0a4b2bfcfa2cab0880db449cb62df1",
     "logic/classical/truth-tables.md": "b739e2824a4a5c26ac446e7c15ce02aa",
@@ -630,7 +630,8 @@
     "formal-system/logical-system/pred-logic.md": "2524ccc09561bc219dab3f32010a0161",
     "formal-system/logical-system/prop-logic.md": "b61ce051795d5a951c763b928ec5cea8",
     "formal-system/index.md": "3d31c99bffdcb05de9f2e32ac6319952",
-    "programming/short-circuit.md": "c256ced42dc3b493aff5a356e5383b6e"
+    "programming/short-circuit.md": "c256ced42dc3b493aff5a356e5383b6e",
+    "formal-system/abstract-rewriting.md": "8424314a627851c5b94be6163f64ba30"
   },
   "fields_dict": {
     "Basic": [
