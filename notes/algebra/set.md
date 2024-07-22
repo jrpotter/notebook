@@ -231,36 +231,6 @@ END%%
 
 ## Laws
 
-The algebra of sets obey laws reminiscent (but not exactly) of the algebra of real numbers.
-
-%%ANKI
-Cloze
-{$\cup$} is to algebra of sets whereas {$+$} is to algebra of real numbers.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716396060607-->
-END%%
-
-%%ANKI
-Cloze
-{$\cap$} is to algebra of sets whereas {$\cdot$} is to algebra of real numbers.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716396060609-->
-END%%
-
-%%ANKI
-Cloze
-{$-$} is to algebra of sets whereas {$-$} is to algebra of real numbers.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716396060611-->
-END%%
-
-%%ANKI
-Cloze
-{$\subseteq$} is to algebra of sets whereas {$\leq$} is to algebra of real numbers.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716396060614-->
-END%%
-
 ### Commutative Laws
 
 For any sets $A$ and $B$, $$\begin{align*} A \cup B & = B \cup A \\ A \cap B & = B \cap A \end{align*}$$

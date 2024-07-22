@@ -279,7 +279,7 @@ END%%
 %%ANKI
 Basic
 Under what conditions is a multigraph considered a graph?
-Back: When the number of edges between any two vertices is $1$.
+Back: When the number of edges from any vertex to any other vertex is at most $1$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1720360545684-->
 END%%

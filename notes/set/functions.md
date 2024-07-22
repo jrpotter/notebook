@@ -1673,8 +1673,8 @@ END%%
 
 %%ANKI
 Basic
-Let $F \colon A \rightarrow B$. What does $\mathop{\text{coim}}F$ refer to?
-Back: The coimage of $F$.
+Let $F \colon A \rightarrow B$. Term "$\mathop{\text{coim}}F$" is shorthand for what?
+Back: The **coim**age of $F$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721223015596-->
 END%%
@@ -1682,14 +1682,14 @@ END%%
 %%ANKI
 Basic
 How is the coimage of function $F \colon A \rightarrow B$ defined?
-Back: As $A / {\sim}$ where $x \sim y \Leftrightarrow F(x) = F(y)$.
+Back: As $A / \mathop{\text{ker}}(F)$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721223015599-->
 END%%
 
 %%ANKI
 Basic
-Let $F \colon A \rightarrow B$. What specific name does a member of $\mathop{\text{coim}}F$ go by?
+Let $F \colon A \rightarrow B$. What term refers to a member of $\mathop{\text{coim}}F$?
 Back: A fiber.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721223015602-->
@@ -1714,7 +1714,7 @@ END%%
 %%ANKI
 Basic
 Let $F \colon A \rightarrow B$. How is $\mathop{\text{coim}}F$ denoted as a quotient set?
-Back: As $A / {\sim}$ where $x \sim y \Leftrightarrow F(x) = F(y)$.
+Back: As $A / \mathop{\text{ker}}(F)$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721223015613-->
 END%%
@@ -1747,7 +1747,7 @@ END%%
 
 %%ANKI
 Basic
-Consider factoring $F \colon A \rightarrow B$ by its kernel $\sim$. What name does $\sim$ go by?
+Consider factoring $F \colon A \rightarrow B$ by its kernel $\sim$. What name does $A /{\sim}$ go by?
 ![[function-kernel.png]]
 Back: $\mathop{\text{coim}} F$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

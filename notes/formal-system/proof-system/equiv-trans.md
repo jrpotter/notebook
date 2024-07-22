@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-**Equivalence-transformation** is a [[formal-system/index|formal-system]] based on classical truth-functional [[pred-logic|predicate logic]] developed by David Gries. It is the foundation upon which [[pred-trans|predicate transformers]] are based.
+**Equivalence-transformation** is a proof system used alongside classical truth-functional [[pred-logic|predicate logic]]. It is the foundation upon which [[pred-trans|predicate transformers]] are based.
 
 %%ANKI
 Basic
@@ -140,6 +140,7 @@ END%%
 Basic
 What is the commutative law of e.g. $\land$?
 Back: $E1 \land E2 = E2 \land E1$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707251673353-->
 END%%
 

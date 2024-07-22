@@ -1123,7 +1123,7 @@ END%%
 
 %%ANKI
 Cloze
-Let $R$ be an equivalence relation on $A$ and $x \in A$. Then {1:$x$ (modulo $R$)} is an {2:equivalence class} whereas {2:$A$ modulo $R$} is a {1:quotient set}.
+Let $R$ be an equivalence relation on $A$ and $x \in A$. Then {1:$x$} (modulo {1:$R$}) is an {2:equivalence class} whereas {2:$A$} modulo {2:$R$} is a {1:quotient set}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721223015580-->
 END%%

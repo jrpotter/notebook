@@ -135,7 +135,7 @@ END%%
 
 %%ANKI
 Basic
-What is `e` in the `setz` instruction short for?
+What is `z` in the `setz` instruction short for?
 Back: **Z**ero.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1720793027129-->
