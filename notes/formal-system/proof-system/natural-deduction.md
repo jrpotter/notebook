@@ -68,6 +68,11 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1721655978506-->
 END%%
 
+### Negation
+
+For proposition $E1$, $$\neg{\text{-}}I{:} \quad \text{TODO}$$
+and $$\neg{\text{-}}E{:} \quad \text{TODO}$$
+
 ### Conjunction
 
 For propositions $E_1, \ldots, E_n$, $$\land{\text{-}}I{:} \quad \begin{array}{c} E_1, \ldots, E_n \\ \hline E_1 \land \cdots \land E_n \end{array}$$
@@ -172,6 +177,135 @@ Which natural deduction inference rule is used in the following? $$\begin{array}
 Back: $\lor{\text{-}}E$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721656601613-->
+END%%
+
+### Implication
+
+For propositions $E1$ and $E2$, $${\Rightarrow}{\text{-}}I: \quad \text{TODO}$$
+and $${\Rightarrow}{\text{-}}E: \quad \begin{array}{c} E1 \Rightarrow E2, E1 \\ \hline E2 \end{array}$$
+
+%%ANKI
+Basic
+In natural deduction, how is implication introduction denoted?
+Back: As ${\Rightarrow}{\text{-}}I$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721665510225-->
+END%%
+
+%%ANKI
+Basic
+In natural deduction, how is implication elimination denoted?
+Back: As ${\Rightarrow}{\text{-}}E$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721665541946-->
+END%%
+
+%%ANKI
+Basic
+*Modus ponens* is associated with which propositional logic operator?
+Back: $\Rightarrow$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721665541949-->
+END%%
+
+%%ANKI
+Basic
+Does *modus ponens* correspond to an introduction or elimination rule?
+Back: Elimination.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721665541951-->
+END%%
+
+%%ANKI
+Cloze
+Natural deduction rule {1:$\Rightarrow$}-{1:$E$} is also known as {modus ponens}.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721665541953-->
+END%%
+
+%%ANKI
+Basic
+How is ${\Rightarrow}{\text{-}}E$ expressed in schematic notation?
+Back: $$\begin{array}{c} E1 \Rightarrow E2, E1 \\ \hline E2 \end{array}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721665510228-->
+END%%
+
+%%ANKI
+Basic
+How is *modus ponens* expressed in schematic notation?
+Back: $$\begin{array}{c} E1 \Rightarrow E2, E1 \\ \hline E2 \end{array}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721665541955-->
+END%%
+
+%%ANKI
+Basic
+Which natural deduction inference rule is used in the following? $$\begin{array}{c} P \Rightarrow Q, P \\ \hline R \end{array}$$
+Back: N/A.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721666244354-->
+END%%
+
+%%ANKI
+Basic
+Which natural deduction inference rule is used in the following? $$\begin{array}{c} P \Rightarrow Q, P \\ \hline Q \end{array}$$
+Back: ${\Rightarrow}{\text{-}}E$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721666244357-->
+END%%
+
+### Biconditional
+
+For propositions $E1$ and $E2$, $${\Leftrightarrow}{\text{-}}I: \quad \begin{array}{c} E1 \Rightarrow E2, E2 \Rightarrow E1 \\ \hline E1 \Leftrightarrow E2 \end{array}$$
+and $${\Leftrightarrow}{\text{-}}E: \quad \begin{array}{c} E1 \Leftrightarrow E2 \\ \hline E1 \Rightarrow E2, E2 \Rightarrow E1 \end{array}$$
+
+%%ANKI
+Basic
+In natural deduction, how is biconditional introduction denoted?
+Back: As ${\Leftrightarrow}{\text{-}}I$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721666244359-->
+END%%
+
+%%ANKI
+Basic
+In natural deduction, how is biconditional elimination denoted?
+Back: As ${\Leftrightarrow}{\text{-}}E$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721666244361-->
+END%%
+
+%%ANKI
+Basic
+How is ${\Leftrightarrow}{\text{-}}I$ expressed in schematic notation?
+Back: $$\begin{array}{c} E1 \Rightarrow E2, E2 \Rightarrow E1 \\ \hline E1 \Leftrightarrow E2 \end{array}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721666244362-->
+END%%
+
+%%ANKI
+Basic
+Which natural deduction inference rule is used in the following? $$\begin{array}{c} P \Rightarrow Q, Q \Rightarrow P \\ \hline Q \Leftrightarrow P \end{array}$$
+Back: ${\Leftrightarrow}{\text{-}}I$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721666244367-->
+END%%
+
+%%ANKI
+Basic
+How is ${\Leftrightarrow}{\text{-}}E$ expressed in schematic notation?
+Back: $$\begin{array}{c} E1 \Leftrightarrow E2 \\ \hline E1 \Rightarrow E2, E2 \Rightarrow E1 \end{array}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721666244366-->
+END%%
+
+%%ANKI
+Basic
+Which natural deduction inference rule is used in the following? $$\begin{array}{c} P \Leftrightarrow Q \\ \hline Q \Rightarrow P \end{array}$$
+Back: ${\Leftrightarrow}{\text{-}}E$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721666244364-->
 END%%
 
 ## Bibliography

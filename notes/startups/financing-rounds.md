@@ -1,5 +1,5 @@
 ---
-title: Financing
+title: Financing Rounds
 TARGET DECK: Obsidian::H&SS
 FILE TAGS: startups::financing
 tags:

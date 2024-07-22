@@ -562,7 +562,7 @@
     "_journal/2024-06/2024-06-21.md": "12e37e2c57abab09c781b32793fbbe1a",
     "startups/financing.md": "1978def9644211c989564faa3e4a56ea",
     "_journal/2024-06-24.md": "7fc0f4cd231ef7cd6aa2b556d1244cf4",
-    "_journal/2024-06/2024-06-23.md": "72e157bbf19d2d35843873ff9e900927",
+    "_journal/2024-06/2024-06-23.md": "9e23344bcc6c9ecc038c349022eaffd7",
     "_journal/2024-06-25.md": "fe70e3c260da1b2bb7535fb1eb656695",
     "_journal/2024-06/2024-06-24.md": "07e731eb482339db5f78c6e255c344a2",
     "_journal/2024-06-26.md": "9c5d7e6395496736f2f268e9fdba117f",
@@ -634,7 +634,9 @@
     "formal-system/abstract-rewriting.md": "8424314a627851c5b94be6163f64ba30",
     "_journal/2024-07-22.md": "dbbf1666c0ed939ce0ce339d41231b04",
     "_journal/2024-07/2024-07-21.md": "62c2651999371dd9ab10d964dac3d0f8",
-    "formal-system/proof-system/natural-deduction.md": "c910adfd2b6d162936db02d2c7f4563e"
+    "formal-system/proof-system/natural-deduction.md": "307f4c24526311a209d0686065ae601c",
+    "startups/term-sheet.md": "3b7fe2e4b067da47cdb2f0517c10e73f",
+    "startups/financing-rounds.md": "00a622fda2b4b442901bde2842309088"
   },
   "fields_dict": {
     "Basic": [
