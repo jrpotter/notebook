@@ -114,64 +114,52 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707494819970-->
 END%%
 
-### Universals
+#### Uniqueness
 
-**Universal quantification** ($\forall$) asserts that every member of a set satisfies a property.
-
-%%ANKI
-Basic
-What symbol denotes universal quantification?
-Back: $\forall$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707494819971-->
-END%%
+We can also denote existence and uniqueness using $\exists!$. For example, $\exists! x, P(x)$ indicates there exists a unique $x$ satisfying $P(x)$, i.e. there is exactly one $x$ such that $P(x)$ holds: $$(\exists! x, P(x)) = (\exists x, P(x)) \land (\forall x, \forall y, (P(x) \land P(y)) \Rightarrow (x = y)))$$
+The first conjunct denotes existence while the second denotes uniqueness.
 
 %%ANKI
 Basic
-How many members in the domain of discourse must satisfy a property in universal quantification?
-Back: All of them.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707494819973-->
+What non-counting quantifer denotes unique existential quantification?
+Back: $\exists!$
+Reference: Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.
+<!--ID: 1721824073159-->
 END%%
 
 %%ANKI
 Basic
-$\forall x : S, P(x)$ is shorthand for what?
-Back: $\forall x, x \in S \Rightarrow P(x)$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707494819976-->
+Unique existential quantification can be expressed using what counting quantification?
+Back: $\exists^{=1}$
+Reference: Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.
+<!--ID: 1721824073162-->
 END%%
 
 %%ANKI
 Basic
-What is the identity element of $\land$?
-Back: $T$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707494819978-->
-END%%
-
-%%ANKI
-Cloze
-{1:$\exists$} is to {2:$\lor$} as {2:$\forall$} is to {1:$\land$}.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707494819979-->
+How is $\exists! x, P(x)$ expanded using the basic existential and universal quantifiers?
+Back: $(\exists x, P(x)) \land (\forall x, \forall y, (P(x) \land P(y)) \Rightarrow (x = y))$
+Reference: Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.
+<!--ID: 1721824073165-->
 END%%
 
 %%ANKI
 Basic
-How is $\forall x : S, P(x)$ equivalently written in terms of existential quantification?
-Back: $\neg \exists x : S, \neg P(x)$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707494819981-->
+How do we write the equivalent existence (not uniqueness) assertion made by $\exists! x, P(x)$?
+Back: $\exists x, P(x))$
+Reference: Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.
+<!--ID: 1721824073168-->
 END%%
 
 %%ANKI
-How is $\exists x : S, P(x)$ equivalently written in terms of universal quantification?
-Back: $\neg \forall x : S, \neg P(x)$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Basic
+How do we write the equivalent uniqueness (not existence) assertion made by $\exists! x, P(x)$?
+Back: $\forall x, \forall y, (P(x) \land P(y)) \Rightarrow (x = y)$
+Reference: Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.
+<!--ID: 1721824073172-->
 END%%
 
-### Counting
+#### Counting
 
 **Counting quantification** ($\exists^{=k}$ or $\exists^{\geq k}$) asserts that (at least) $k$ (say) members of a set satisfy a property.
 
@@ -251,6 +239,63 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1720386023296-->
 END%%
 
+### Universals
+
+**Universal quantification** ($\forall$) asserts that every member of a set satisfies a property.
+
+%%ANKI
+Basic
+What symbol denotes universal quantification?
+Back: $\forall$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707494819971-->
+END%%
+
+%%ANKI
+Basic
+How many members in the domain of discourse must satisfy a property in universal quantification?
+Back: All of them.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707494819973-->
+END%%
+
+%%ANKI
+Basic
+$\forall x : S, P(x)$ is shorthand for what?
+Back: $\forall x, x \in S \Rightarrow P(x)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707494819976-->
+END%%
+
+%%ANKI
+Basic
+What is the identity element of $\land$?
+Back: $T$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707494819978-->
+END%%
+
+%%ANKI
+Cloze
+{1:$\exists$} is to {2:$\lor$} as {2:$\forall$} is to {1:$\land$}.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707494819979-->
+END%%
+
+%%ANKI
+Basic
+How is $\forall x : S, P(x)$ equivalently written in terms of existential quantification?
+Back: $\neg \exists x : S, \neg P(x)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1707494819981-->
+END%%
+
+%%ANKI
+How is $\exists x : S, P(x)$ equivalently written in terms of universal quantification?
+Back: $\neg \forall x : S, \neg P(x)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+END%%
+
 ## Identifiers
 
 Identifiers are said to be **bound** if they are parameters to a quantifier. Identifiers that are not bound are said to be **free**. A first-order logic formula is said to be in **prenex normal form** (PNF) if written in two parts: the first consisting of quantifiers and bound variables (the **prefix**), and the second consisting of no quantifiers (the **matrix**).
@@ -315,3 +360,4 @@ END%%
 
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+* Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.

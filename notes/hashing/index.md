@@ -596,7 +596,7 @@ Let $\mathscr{H}$ be a finite family of hash functions that map a given universe
 
 %%ANKI
 Basic
-Which of universal hashing or random hashing more general?
+Which of universal hashing or random hashing is more general?
 Back: Random hashing.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: hashing::random hashing::universal
@@ -624,7 +624,7 @@ END%%
 %%ANKI
 Basic
 Consider a hash table with $m = 1$ slot. Which hash function families are universal?
-Back: Finite families of hash functions mapping to e.g. $\{0\}$.
+Back: Any finite family of hash functions.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: hashing::random hashing::universal
 <!--ID: 1721482558957-->

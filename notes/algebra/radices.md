@@ -276,7 +276,7 @@ END%%
 
 %%ANKI
 Basic
-Which hexadecimal digits encode binary with a leading `1` bit?
+Which hexadecimal digits are encoded in binary with a leading `1` bit?
 Back: `8` through `F`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: binary::hex
@@ -285,7 +285,7 @@ END%%
 
 %%ANKI
 Basic
-Which hexadecimal digits encode binary with a leading `0` bit?
+Which hexadecimal digits are encoded in binary with a leading `0` bit?
 Back: `0` through `7`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: binary::hex

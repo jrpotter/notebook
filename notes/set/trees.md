@@ -100,7 +100,7 @@ END%%
 Basic
 If the following isn't a forest, why not?
 ![[forest.png]]
-Back: N/A
+Back: N/A. It is.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1711136844934-->
 END%%

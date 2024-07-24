@@ -803,7 +803,49 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1720969371869-->
 END%%
 
-The set $[x]_R$ is defined by $[x]_R = \{t \mid xRt\}$. If $R$ is an equivalence relation and $x \in \mathop{\text{fld}}R$, then $[x]_R$ is called the **equivalence class of $x$ (modulo $R$)**. If the relation $R$ is fixed by the context, we may write just $[x]$.
+%%ANKI
+Basic
+The term "reflexive" is used to describe what kind of mathematical object?
+Back: Relations.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721693996250-->
+END%%
+
+%%ANKI
+Basic
+The term "symmetric" is used to describe what kind of mathematical object?
+Back: Relations.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721694448727-->
+END%%
+
+%%ANKI
+Cloze
+$R$ is symmetric iff {$R^{-1}$} {$\subseteq$} $R$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721694448733-->
+END%%
+
+%%ANKI
+Basic
+The term "transitive" is used to describe what kind of mathematical object?
+Back: Relations.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721694448736-->
+END%%
+
+%%ANKI
+Cloze
+$R$ is transitive iff {$R \circ R$} {$\subseteq$} $R$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721694448740-->
+END%%
+
+### Equivalence Classes
+
+The set $[x]_R$ is defined by $[x]_R = \{t \mid xRt\}$. If $R$ is an equivalence relation and $x \in \mathop{\text{fld}}R$, then $[x]_R$ is called the **equivalence class of $x$ (modulo $R$)**.
+
+If the relation $R$ is fixed by the context, we just write $[x]$.
 
 %%ANKI
 Basic
@@ -811,6 +853,14 @@ How is set $[x]_R$ defined?
 Back: As $\{t \mid xRt\}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721098094107-->
+END%%
+
+%%ANKI
+Basic
+How is set $[x]$ defined?
+Back: As $\{t \mid xRt\}$ for some unspecified $R$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721697124837-->
 END%%
 
 %%ANKI
@@ -832,7 +882,7 @@ END%%
 %%ANKI
 Basic
 What kind of mathematical object is $R$ in $[x]_R$?
-Back: A relation.
+Back: A set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721098094114-->
 END%%
@@ -847,7 +897,7 @@ END%%
 
 %%ANKI
 Cloze
-If {1:$R$ is an equivalence relation} and {1:$x \in \mathop{\text{fld} }R$}, then $[x]_R$ is called the {2:equivalence class of $x$} (modulo {2:$R$}).
+If {1:$R$ is an equivalence relation} and $x \in$ {2:$\mathop{\text{fld} }R$}, then $[x]_R$ is called the {2:equivalence class of $x$} (modulo {2:$R$}).
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721098094128-->
 END%%
@@ -891,7 +941,23 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1721098094158-->
 END%%
 
-## Partitions
+%%ANKI
+Basic
+Given sets $A$ and $x$, how can $[x]_A$ be rewritten as an image?
+Back: $A[\![\{x\}]\!]$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721696946316-->
+END%%
+
+%%ANKI
+Basic
+Given sets $A$ and $x$, how can we write $A[\![\{x\}]\!]$ more compactly?
+Back: $[x]_A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721696946369-->
+END%%
+
+### Partitions
 
 A **partition** $\Pi$ of a set $A$ is a set of nonempty subsets of $A$ that is disjoint and exhaustive.
 
@@ -1001,7 +1067,38 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1721136390215-->
 END%%
 
-## Quotient Sets
+%%ANKI
+Basic
+What name is given to a member of a partition of a set?
+Back: A cell.
+Reference: “Partition of a Set,” in _Wikipedia_, June 18, 2024, [https://en.wikipedia.org/w/index.php?title=Partition_of_a_set](https://en.wikipedia.org/w/index.php?title=Partition_of_a_set&oldid=1229656401).
+<!--ID: 1721696946377-->
+END%%
+
+%%ANKI
+Cloze
+Let $R$ be an equivalence relation. Then {1:cell} $[x]$ of partition $A / R$ is an {2:equivalence class of $A$} (modulo {2:$R$}).
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721696946384-->
+END%%
+
+%%ANKI
+Basic
+Let $R$ be the equivalence relation induced by partition $\Pi$ of $A$. What does $A / R$ equal?
+Back: $\Pi$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721728868200-->
+END%%
+
+%%ANKI
+Basic
+Let $R$ be an equivalence relation on $A$. What equivalence relation does partition $A / R$ induce?
+Back: $R$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721728868210-->
+END%%
+
+### Quotient Sets
 
 If $R$ is an equivalence relation on $A$, then the **quotient set** "$A$ modulo $R$" is defined as $$A / R = \{[x]_R \mid x \in A\}.$$
 
@@ -1019,15 +1116,7 @@ END%%
 
 %%ANKI
 Basic
-Members of $A / R$ are called what?
-Back: Equivalence classes.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1721218408454-->
-END%%
-
-%%ANKI
-Basic
-$A / R$ is a partition of what set?
+Quotient set $A / R$ is a partition of what set?
 Back: $A$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721218408484-->
@@ -1043,10 +1132,26 @@ END%%
 
 %%ANKI
 Basic
+Consider set $A / R$. What kind of mathematical object is $A$?
+Back: A set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721698416717-->
+END%%
+
+%%ANKI
+Basic
 Consider quotient set $A / R$. What kind of mathematical object is $A$?
 Back: A set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721218408514-->
+END%%
+
+%%ANKI
+Basic
+Consider set $A / R$. What kind of mathematical object is $R$?
+Back: A set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721698416723-->
 END%%
 
 %%ANKI
@@ -1059,8 +1164,16 @@ END%%
 
 %%ANKI
 Basic
+How is set $A / R$ defined?
+Back: As $\{[x]_R \mid x \in A\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721698416727-->
+END%%
+
+%%ANKI
+Basic
 How is quotient set $A / R$ defined?
-Back: As set $\{[x]_R \mid x \in A\}$.
+Back: As $\{[x]_R \mid x \in A\}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721218408525-->
 END%%
@@ -1132,3 +1245,4 @@ END%%
 
 * “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+* “Partition of a Set,” in _Wikipedia_, June 18, 2024, [https://en.wikipedia.org/w/index.php?title=Partition_of_a_set](https://en.wikipedia.org/w/index.php?title=Partition_of_a_set&oldid=1229656401).

@@ -293,8 +293,8 @@ END%%
 
 %%ANKI
 Basic
-Under what two conditions is $A \times B = B \times A$?
-Back: $A = B$ or either set is the empty set.
+Under what three conditions is $A \times B = B \times A$?
+Back: $A = B$ or $A = \varnothing$ or $B = \varnothing$.
 Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881709-->
 END%%

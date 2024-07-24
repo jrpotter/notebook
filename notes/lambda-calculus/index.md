@@ -432,7 +432,7 @@ END%%
 %%ANKI
 Basic
 How many occurences of $x$ are in $((xy)(\lambda x. (xy)))$?
-Back: Three.
+Back: $3$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716743248125-->
 END%%

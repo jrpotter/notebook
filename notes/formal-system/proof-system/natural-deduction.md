@@ -181,8 +181,8 @@ END%%
 
 ### Implication
 
-For propositions $E1$ and $E2$, $${\Rightarrow}{\text{-}}I: \quad \text{TODO}$$
-and $${\Rightarrow}{\text{-}}E: \quad \begin{array}{c} E1 \Rightarrow E2, E1 \\ \hline E2 \end{array}$$
+For propositions $E_1, \ldots, E_n$, $${\Rightarrow}{\text{-}}I: \quad \begin{array}{c} \text{from } E_1, \cdots, E_n \text{ infer } E \\ \hline (E_1 \land \cdots \land E_n) \Rightarrow E \end{array}$$
+and $${\Rightarrow}{\text{-}}E: \quad \begin{array}{c} E_1 \Rightarrow E_2, E_1 \\ \hline E_2 \end{array}$$
 
 %%ANKI
 Basic
@@ -190,6 +190,14 @@ In natural deduction, how is implication introduction denoted?
 Back: As ${\Rightarrow}{\text{-}}I$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721665510225-->
+END%%
+
+%%ANKI
+Basic
+How is ${\Rightarrow}{\text{-}}I$ expressed in schematic notation?
+Back: $${\Rightarrow}{\text{-}}I: \quad \begin{array}{c} \text{from } E_1, \cdots, E_n \text{ infer } E \\ \hline (E_1 \land \cdots \land E_n) \Rightarrow E \end{array}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721785548092-->
 END%%
 
 %%ANKI
@@ -307,6 +315,14 @@ Back: ${\Leftrightarrow}{\text{-}}E$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721666244364-->
 END%%
+
+### Existential Quantification
+
+TODO
+
+### Universal Quantification
+
+TODO
 
 ## Bibliography
 
