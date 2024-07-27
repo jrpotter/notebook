@@ -866,15 +866,7 @@ END%%
 
 %%ANKI
 Basic
-Maintaining selector update syntax, how is $(c; 1{:}3)[1]$ more explicitly written with a selector?
-Back: $(c; [1]{:}3)[1]$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1714395640948-->
-END%%
-
-%%ANKI
-Basic
-Maintaining selector update syntax, how is $(c; 1{:}3)[1]$ rewritten with $[1]$ commuted as leftward as possible?
+Maintaining selector update syntax, how is $(c; [1]{:}3)[1]$ rewritten with $[1]$ commuted as leftward as possible?
 Back: $(c[1]; \epsilon{:}3)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1714395640953-->
@@ -1142,7 +1134,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $x$, $y$, and $z$ are distinct. What is the result of a single evaluation step? $$\large{E_{e_1, e_2, e_3}^{x, y, z}}$$
+Suppose $x$, $y$, $z$ are distinct. What next simplification step can be taken before substitution? $$\large{E_{e_1, e_2, e_3}^{x, y, z}}$$
 Back: N/A.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721495879854-->
@@ -1150,7 +1142,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $x \neq y$. What is the result of a single evaluation step? $$\large{E_{e_1, e_2, e_3}^{x, y, x}}$$
+Suppose $x \neq y$. What next simplification step can be taken before substitution? $$\large{E_{e_1, e_2, e_3}^{x, y, x}}$$
 Back: $$\large{E_{e_1, e_3, e_2}^{x, x, y}}$$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721495879855-->
@@ -1158,7 +1150,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $x \neq y$. What is the result of a single evaluation step? $$\large{E_{e_1, e_3, e_2}^{x, x, y}}$$
+Suppose $x \neq y$. What next simplification step can be taken before substitution? $$\large{E_{e_1, e_3, e_2}^{x, x, y}}$$
 Back: $$\large{E_{(x; \,\epsilon{:}e_1; \,\epsilon{:}e_3), e_2}^{x, y}}$$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721495879856-->
@@ -1166,7 +1158,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $x \neq y$. What is the result of a single evaluation step? $$\large{E_{(x; \,\epsilon{:}e_1; \,\epsilon{:}e_3), e_2}^{x, y}}$$
+Suppose $x \neq y$. What next simplification step can be taken before substitution? $$\large{E_{(x; \,\epsilon{:}e_1; \,\epsilon{:}e_3), e_2}^{x, y}}$$
 Back: $$\large{E_{e_3, e_2}^{x, y}}$$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721495879857-->
@@ -1190,7 +1182,7 @@ END%%
 
 %%ANKI
 Basic
-Consider array $b$ and $i \in \mathop{domain}(b)$. What is the result of a single evaluation step? $$\large{E_{e}^{b[i]}}$$
+Consider array $b$ and $i \in \mathop{domain}(b)$. What next simplification step can be taken before substitution? $$\large{E_{e}^{b[i]}}$$
 Back: $$\large{E_{(b; [i]{:}e)}^{b}}$$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721495879860-->
@@ -1198,7 +1190,7 @@ END%%
 
 %%ANKI
 Basic
-Consider identifier $x$, array $b$ and $i \in \mathop{domain}(b)$. What is the result of a single evaluation step? $$\large{E_{b[i]}^{x}}$$
+Consider identifier $x$, array $b$ and $i \in \mathop{domain}(b)$. What next simplification step can be taken before substitution? $$\large{E_{b[i]}^{x}}$$
 Back: N/A.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721495879861-->

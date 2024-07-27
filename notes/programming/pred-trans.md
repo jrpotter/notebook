@@ -770,7 +770,7 @@ where each $x_i$ is an identifier, each $s_i$ is a [[equiv-trans#Selectors|selec
 
 %%ANKI
 Basic
-How is $x \coloneqq e$ expressed in more general form $x_1 \circ s_1, \ldots, x_n \circ s_n \coloneqq e_1, \ldots, e_n$?
+How is simple assignment $x \coloneqq e$ expressed in the following, more general form? $$x_1 \circ s_1, \ldots, x_n \circ s_n \coloneqq e_1, \ldots, e_n$$
 Back: As $x \circ \epsilon \coloneqq e$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721497014033-->
@@ -778,7 +778,7 @@ END%%
 
 %%ANKI
 Basic
-How is $b[i] \coloneqq e$ expressed in more general form $x_1 \circ s_1, \ldots, x_n \circ s_n \coloneqq e_1, \ldots, e_n$?
+How is simple assignment $b[i] \coloneqq e$ expressed in the following, more general form? $$x_1 \circ s_1, \ldots, x_n \circ s_n \coloneqq e_1, \ldots, e_n$$
 Back: As $b \circ [i] \coloneqq e$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721497014038-->
@@ -850,7 +850,7 @@ END%%
 
 %%ANKI
 Basic
-What assumption is made when defining assignment as "$wp(''\bar{x} \coloneqq \bar{e}'', R) = R_{\bar{e}}^{\bar{x}}$"?
+What assumption is made when defining assignment as the following? $$wp(''\bar{x} \coloneqq \bar{e}'', R) = R_{\bar{e}}^{\bar{x}}$$
 Back: $domain(\bar{e})$, i.e. evaluation of each member of $\bar{e}$ is well-defined.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721497014076-->

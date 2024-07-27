@@ -608,19 +608,24 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1718329620208-->
 END%%
 
-## Equivalence Relations
+## Reflexivity
 
-Given relation $R$ and set $A$, $R$ is an **equivalence relation on $A$** iff $R$ is a binary relation on $A$ that is reflexive on $A$, symmetric, and transitive:
-
-* $R$ is **reflexive on $A$** if $xRx$ for all $x \in A$.
-* $R$ is **symmetric** if whenever $xRy$, then $yRx$.
-* $R$ is **transitive** if whenever $xRy$ and $yRz$, then $xRz$.
+A relation $R$ is **reflexive on $A$** iff $xRx$ for all $x \in A$. In relational algebra, we define $R$ to be reflexive on $A$ iff $I_A \subseteq R$.
 
 %%ANKI
-Cloze
-Binary relation $R$ is {reflexive on $A$} iff {$xRx$ for all $x \in A$}.
+Basic
+How is reflexivity of relation $R$ on set $A$ defined in FOL?
+Back: $\forall x \in A, xRx$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720967429790-->
+<!--ID: 1721869969493-->
+END%%
+
+%%ANKI
+Basic
+How is reflexivity of relation $R$ on set $A$ defined in relational algebra?
+Back: $I_A \subseteq R$
+Reference: “Equivalence Relation,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Equivalence_relation](https://en.wikipedia.org/w/index.php?title=Equivalence_relation&oldid=1235801091).
+<!--ID: 1721869969498-->
 END%%
 
 %%ANKI
@@ -665,6 +670,13 @@ END%%
 
 %%ANKI
 Basic
+Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ reflexive on $\{a, b\}$?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+%%ANKI
+Basic
 Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, *why* isn't $R$ reflexive on $\{a, b\}$?
 Back: Because $\langle b, b \rangle \not\in R$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -679,10 +691,130 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 END%%
 
 %%ANKI
-Cloze
-Binary relation $R$ is {symmetric} iff {$xRy \Rightarrow yRx$}.
+Basic
+The term "reflexive" is used to describe what kind of mathematical object?
+Back: Relations.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720967429828-->
+<!--ID: 1721693996250-->
+END%%
+
+### Irreflexivity
+
+A relation $R$ is **irreflexive on $A$** iff $\neg xRx$ for all $x \in A$. That is, it is *never* the case that $xRx$.
+
+%%ANKI
+Basic
+How is irreflexivity of relation $R$ on set $A$ defined in FOL?
+Back: $\forall x \in A, \neg xRx$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721870888378-->
+END%%
+
+%%ANKI
+Basic
+Why is it incorrect to ask if $R$ is irreflexive?
+Back: We have to ask if $R$ is irreflexive on some reference set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721870888384-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ irreflexive?
+Back: N/A. The question must provide a reference set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721870888387-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ irreflexive on $a$?
+Back: N/A. We must ask if $R$ is irreflexive on a set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721870888391-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ irreflexive on $\{a\}$?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721870888395-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ irreflexive on $\{b\}$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721870888400-->
+END%%
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, *why* isn't $R$ irreflexive on $\{a, b\}$?
+Back: Because $\langle a, a \rangle \in R$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721870888406-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $\neg xRx$ for all $x \in A$, $R$ is said to be irreflexive {on} $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721870888411-->
+END%%
+
+%%ANKI
+Basic
+The term "irreflexive" is used to describe what kind of mathematical object?
+Back: Relations.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721870888417-->
+END%%
+
+%%ANKI
+Basic
+Can a nonempty relation be neither reflexive nor irreflexive on the same set?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721911994966-->
+END%%
+
+%%ANKI
+Basic
+Can a nonempty relation be both reflexive and irreflexive on the same set?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721911994996-->
+END%%
+
+%%ANKI
+Basic
+If a nonempty relation isn't reflexive, is it irreflexive?
+Back: Not necessarily.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721911995004-->
+END%%
+
+## Symmetry
+
+A relation $R$ is **symmetric** iff whenever $xRy$, then $yRx$. In relational algebra, we define $R$ to be symmetric iff $R^{-1} \subseteq R$.
+
+%%ANKI
+Basic
+How is symmetry of relation $R$ defined in FOL?
+Back: $\forall x, \forall y, xRy \Rightarrow yRx$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721870204117-->
+END%%
+
+%%ANKI
+Basic
+How is symmetry of relation $R$ defined in relational algebra?
+Back: $R^{-1} \subseteq R$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721870204123-->
 END%%
 
 %%ANKI
@@ -703,17 +835,280 @@ END%%
 
 %%ANKI
 Basic
-Given $R = \{\langle a, a \rangle, \langle b, b \rangle\}$, which of reflexivity (on $\{a, b\}$), symmetry, and transitivity does $R$ exhibit?
-Back: Reflexivity on $\{a, b\}$ and symmetry.
+The term "symmetric" is used to describe what kind of mathematical object?
+Back: Relations.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720967429839-->
+<!--ID: 1721694448727-->
+END%%
+
+### Antisymmetry
+
+A relation $R$ is **antisymmetric** iff whenever $x \neq y$ and $xRy$, then $\neg yRx$.
+
+%%ANKI
+Basic
+How is antisymmetry of relation $R$ defined in FOL?
+Back: $\forall x, \forall y, x \neq y \land xRy \Rightarrow \neg yRx$
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721909725683-->
+END%%
+
+%%ANKI
+Basic
+A relation $R$ on set $A$ that satisfies the following exhibits what property? $$\forall x, y \in A, xRy \land yRx \Rightarrow x = y$$
+Back: Antisymmetry.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721909971801-->
+END%%
+
+%%ANKI
+Basic
+Is $R = \{\langle a, a \rangle, \langle a, b \rangle, \langle b, a \rangle, \langle b, c \rangle\}$ antisymmetric?
+Back: No.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721909725690-->
+END%%
+
+%%ANKI
+Basic
+Is $R = \{\langle a, a \rangle, \langle b, b \rangle, \langle b, c \rangle\}$ antisymmetric?
+Back: Yes.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721909725693-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle, \langle a, b \rangle, \langle b, a \rangle, \langle b, c \rangle\}$ antisymmetric?
+Back: Because $aRb$ and $bRa$.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721909725696-->
+END%%
+
+%%ANKI
+Basic
+Can a nonempty relation be both reflexive and antisymmetric on the same set?
+Back: Yes.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721909725700-->
+END%%
+
+%%ANKI
+Basic
+Can a nonempty relation be both symmetric and antisymmetric on the same set?
+Back: Yes.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721909725703-->
+END%%
+
+%%ANKI
+Basic
+Can a nonempty relation be neither symmetric nor antisymmetric on the same set?
+Back: Yes.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721909971804-->
+END%%
+
+%%ANKI
+Basic
+Which of reflexivity, symmetry, and/or antisymmetry does $\{\langle a, a \rangle, \langle b, b \rangle\}$ exhibit?
+Back: All three.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721909725707-->
+END%%
+
+%%ANKI
+Basic
+Which of reflexivity, symmetry, and/or antisymmetry does $\{\langle a, a \rangle, \langle b, c \rangle\}$ exhibit?
+Back: Antisymmetry.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721909725711-->
+END%%
+
+%%ANKI
+Basic
+Which of reflexivity, symmetry, and/or antisymmetry does $\{\langle a, a \rangle, \langle b, c \rangle, \langle c, b \rangle\}$ exhibit?
+Back: Symmetry.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721909725715-->
+END%%
+
+%%ANKI
+Basic
+Which of reflexivity, symmetry, and/or antisymmetry does $\{\langle a, b \rangle, \langle b, c \rangle, \langle c, b \rangle\}$ exhibit?
+Back: None of them.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721909971807-->
+END%%
+
+%%ANKI
+Basic
+If a nonempty relation isn't symmetric, is it antisymmetric?
+Back: Not necessarily.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721911804446-->
+END%%
+
+%%ANKI
+Basic
+The term "antisymmetric" is used to describe what kind of mathematical object?
+Back: Relations.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721912048138-->
+END%%
+
+### Asymmetry
+
+A relation $R$ is **asymmetric** iff whenever $xRy$, then $\neg yRx$.
+
+%%ANKI
+Basic
+How is antisymmetry of relation $R$ defined in FOL?
+Back: $\forall x, \forall y, xRy \Rightarrow \neg yRx$
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+END%%
+
+%%ANKI
+Basic
+What distinguishes the antecedent of antisymmetry's and asymmetric's FOL definition?
+Back: The former only considers *distinct* pairs of elements.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1721910949017-->
+END%%
+
+%%ANKI
+Basic
+Are antisymmetric relations necessarily asymmetric?
+Back: No.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1721910949023-->
+END%%
+
+%%ANKI
+Basic
+Are asymmetric relations necessarily antisymmetric?
+Back: Yes.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1721910949029-->
 END%%
 
 %%ANKI
 Cloze
-Binary relation $R$ is {transitive} iff {$xRy \land yRz \Rightarrow xRz$}.
+A relation is {asymmetric} if and only if it is both {irreflexive} and {antisymmetric}.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1721910949033-->
+END%%
+
+%%ANKI
+Basic
+Can a relation be both symmetric and asymmetric?
+Back: Yes.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1721910949037-->
+END%%
+
+%%ANKI
+Give an example of a relation that is both symmetric and asymmetric?
+Back: $\varnothing$
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+END%%
+
+%%ANKI
+Basic
+Can a nonempty relation be both symmetric and asymmetric?
+Back: No.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1721910949042-->
+END%%
+
+%%ANKI
+Basic
+Can a nonempty relation be neither symmetric nor asymmetric?
+Back: Yes.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1721911667937-->
+END%%
+
+%%ANKI
+Give an example of a nonempty relation that is both symmetric and asymmetric?
+Back: N/A.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+END%%
+
+%%ANKI
+Basic
+Can a nonempty relation be both reflexive and asymmetric on the same set?
+Back: No.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1721910949047-->
+END%%
+
+%%ANKI
+Basic
+Which of reflexivity, symmetry, and/or asymmetry does $\{\langle a, a \rangle, \langle b, b \rangle\}$ exhibit?
+Back: Reflexivity and symmetry.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1721910949051-->
+END%%
+
+%%ANKI
+Basic
+Which of reflexivity, symmetry, and/or asymmetry does $\{\langle a, a \rangle, \langle b, c \rangle\}$ exhibit?
+Back: None of them.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1721910949055-->
+END%%
+
+%%ANKI
+Basic
+Which of reflexivity, symmetry, and/or asymmetry does $\{\langle a, b \rangle, \langle b, c \rangle\}$ exhibit?
+Back: Asymmetry.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1721910949059-->
+END%%
+
+%%ANKI
+Basic
+A relation $R$ is asymmetric if and only if what other two properties of $R$ hold?
+Back: $R$ is both irreflexive and antisymmetric.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1721911011861-->
+END%%
+
+%%ANKI
+Basic
+If a nonempty relation isn't symmetric, is it asymmetric?
+Back: Not necessarily.
+Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1721911804453-->
+END%%
+
+%%ANKI
+Basic
+The term "asymmetric" is used to describe what kind of mathematical object?
+Back: Relations.
+Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+<!--ID: 1721912048142-->
+END%%
+
+## Transitivity
+
+A relation $R$ is **transitive** iff whenever $xRy$ and $yRz$, then $xRz$. In relational algebra, we define $R$ to be transitive iff $R \circ R \subseteq R$.
+
+%%ANKI
+Basic
+How is transitivity of relation $R$ defined in FOL?
+Back: $\forall x, \forall y, \forall z, xRy \land yRz \Rightarrow xRz$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720967429843-->
+<!--ID: 1721870318644-->
+END%%
+
+%%ANKI
+Basic
+How is transitivity of relation $R$ defined in relational algebra?
+Back: $R \circ R \subseteq R$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721870318654-->
 END%%
 
 %%ANKI
@@ -730,6 +1125,34 @@ Given $R = \{\langle a, b \rangle, \langle b, c \rangle\}$, what additional memb
 Back: Just $\langle a, c \rangle$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429850-->
+END%%
+
+%%ANKI
+Basic
+Which of symmetric relations and transitive relations is more general?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720969371859-->
+END%%
+
+%%ANKI
+Basic
+The term "transitive" is used to describe what kind of mathematical object?
+Back: Relations.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1721694448736-->
+END%%
+
+## Equivalence Relations
+
+Given relation $R$ and set $A$, $R$ is an **equivalence relation on $A$** iff $R$ is a binary relation on $A$ that is reflexive on $A$, symmetric, and transitive.
+
+%%ANKI
+Basic
+Given $R = \{\langle a, a \rangle, \langle b, b \rangle\}$, which of reflexivity (on $\{a, b\}$), symmetry, and transitivity does $R$ exhibit?
+Back: Reflexivity on $\{a, b\}$ and symmetry.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720967429839-->
 END%%
 
 %%ANKI
@@ -781,14 +1204,6 @@ END%%
 
 %%ANKI
 Basic
-Which of symmetric relations and transitive relations is more general?
-Back: N/A.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720969371859-->
-END%%
-
-%%ANKI
-Basic
 Which of equivalence relations on $A$ and symmetric relations is more general?
 Back: Symmetric relations.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -801,44 +1216,6 @@ Which of binary relations on $A$ and equivalence relations on $A$ is more genera
 Back: Binary relations on $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720969371869-->
-END%%
-
-%%ANKI
-Basic
-The term "reflexive" is used to describe what kind of mathematical object?
-Back: Relations.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1721693996250-->
-END%%
-
-%%ANKI
-Basic
-The term "symmetric" is used to describe what kind of mathematical object?
-Back: Relations.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1721694448727-->
-END%%
-
-%%ANKI
-Cloze
-$R$ is symmetric iff {$R^{-1}$} {$\subseteq$} $R$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1721694448733-->
-END%%
-
-%%ANKI
-Basic
-The term "transitive" is used to describe what kind of mathematical object?
-Back: Relations.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1721694448736-->
-END%%
-
-%%ANKI
-Cloze
-$R$ is transitive iff {$R \circ R$} {$\subseteq$} $R$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1721694448740-->
 END%%
 
 ### Equivalence Classes
@@ -1243,6 +1620,9 @@ END%%
 
 ## Bibliography
 
+* “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+* “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
 * “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+* Reference: “Equivalence Relation,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Equivalence_relation](https://en.wikipedia.org/w/index.php?title=Equivalence_relation&oldid=1235801091).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 * “Partition of a Set,” in _Wikipedia_, June 18, 2024, [https://en.wikipedia.org/w/index.php?title=Partition_of_a_set](https://en.wikipedia.org/w/index.php?title=Partition_of_a_set&oldid=1229656401).

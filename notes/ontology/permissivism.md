@@ -61,7 +61,7 @@ END%%
 
 %%ANKI
 Basic
-How does a permissivist interpret English statement "There is an $X$"?
+How is English statement "There is an $X$" interpreted by a permissivist?
 Back: As "$X$ exists".
 Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
 <!--ID: 1720912238035-->

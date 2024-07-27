@@ -104,6 +104,14 @@ Reference: Patrick Keef and David Guichard, “An Introduction to Higher Mathema
 <!--ID: 1721824073092-->
 END%%
 
+%%ANKI
+Basic
+Which natural deduction rule immediatley depends on the existence of a conditional proof?
+Back: ${\Rightarrow}{\text{-}}I$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721825479299-->
+END%%
+
 ### Proof by Contraposition
 
 Since a conditional and its contrapositive are logically equivalent, we can instead prove the negation of the conclusion leads to the negation of our hypotheses.
@@ -189,6 +197,14 @@ Is a proof by contradiction considered direct or indirect?
 Back: Indirect.
 Reference: Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.
 <!--ID: 1721824073130-->
+END%%
+
+%%ANKI
+Basic
+Which natural deduction inference rules embody proof by contradiction?
+Back: $\neg{\text{-}}I$ and $\neg{\text{-}}E$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1721825479310-->
 END%%
 
 ## Existence Proofs
@@ -404,5 +420,6 @@ END%%
 ## Bibliography
 
 * “Constructive Proof,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1217198357).
+* Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 * Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.

@@ -204,8 +204,8 @@ The **b**inary **l**arge **ob**ject (blob) is used to represent arbitrary files.
 
 %%ANKI
 Basic
-Why are git blobs named the way they are?
-Back: It is an acronym for **b**inary **l**arge **ob**ject.
+What are git blobs an acronym for?
+Back: **B**inary **l**arge **ob**ject.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
 <!--ID: 1709345254720-->
 END%%

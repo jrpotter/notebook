@@ -44,6 +44,14 @@ END%%
 
 %%ANKI
 Basic
+In a formal system, a proof is a sequence of what?
+Back: Well-formed formulas.
+Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
+<!--ID: 1721561534235-->
+END%%
+
+%%ANKI
+Basic
 In a proof system, a proof is used to produce what?
 Back: A theorem.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
@@ -52,16 +60,8 @@ END%%
 
 %%ANKI
 Basic
-In a proof system, a proof is a sequence of what?
-Back: Well-formed formulas.
-Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
-<!--ID: 1721561534235-->
-END%%
-
-%%ANKI
-Basic
-In a proof system, how are WFFs produced from one another?
-Back: Via inference rules.
+In a proof system, what mechanism is used to produce WFFs from one another?
+Back: Inference rules.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
 <!--ID: 1721561534241-->
 END%%

@@ -1516,7 +1516,7 @@ END%%
 
 %%ANKI
 Basic
-What condition on set $F$ makes the following true? $F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$
+What condition on set $F$ makes the following true? $$F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$$
 Back: N/A. This is always true.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720386023264-->
@@ -1524,7 +1524,7 @@ END%%
 
 %%ANKI
 Basic
-What condition on set $F$ makes the following true? $F[\![A \cap B]\!] = F[\![A]\!] \cap F[\![B]\!]$
+What condition on set $F$ makes the following true? $$F[\![A \cap B]\!] = F[\![A]\!] \cap F[\![B]\!]$$
 Back: $F$ is single-rooted.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720386023267-->
@@ -1532,7 +1532,7 @@ END%%
 
 %%ANKI
 Basic
-What condition on set $F$ makes the following true? $F[\![A]\!] \cap F[\![B]\!] \subseteq F[\![A \cap B]\!]$
+What condition on set $F$ makes the following true? $$F[\![A]\!] \cap F[\![B]\!] \subseteq F[\![A \cap B]\!]$$
 Back: $F$ is single-rooted.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720386023270-->
@@ -1540,7 +1540,7 @@ END%%
 
 %%ANKI
 Basic
-What is the generalization of identity $F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$?
+What is the generalization of the following identity? $$F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$$
 Back: $F[\![\bigcap\mathscr{A}]\!] \subseteq \bigcap\,\{F[\![A]\!] \mid A \in \mathscr{A}\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720386023273-->
@@ -1548,7 +1548,7 @@ END%%
 
 %%ANKI
 Basic
-What is the specialization of identity $F[\![\bigcap\mathscr{A}]\!] \subseteq \bigcap\,\{F[\![A]\!] \mid A \in \mathscr{A}\}$?
+What is the specialization of the following identity? $$F[\![\bigcap\mathscr{A}]\!] \subseteq \bigcap\,\{F[\![A]\!] \mid A \in \mathscr{A}\}$$
 Back: $F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720386023276-->
@@ -1604,7 +1604,7 @@ END%%
 
 %%ANKI
 Basic
-What condition on set $F$ makes the following true? $F[\![A - B]\!] \subseteq F[\![A]\!] - F[\![B]\!]$
+What condition on set $F$ makes the following true? $$F[\![A - B]\!] \subseteq F[\![A]\!] - F[\![B]\!]$$
 Back: $F$ is single-rooted.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720665351101-->
@@ -1612,7 +1612,7 @@ END%%
 
 %%ANKI
 Basic
-What condition on set $F$ makes the following true? $F[\![A - B]\!] = F[\![A]\!] - F[\![B]\!]$
+What condition on set $F$ makes the following true? $$F[\![A - B]\!] = F[\![A]\!] - F[\![B]\!]$$
 Back: $F$ is single-rooted.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720665351105-->
@@ -1620,7 +1620,7 @@ END%%
 
 %%ANKI
 Basic
-What condition on set $F$ makes the following true? $F[\![A]\!] - F[\![B]\!] \subseteq F[\![A - B]\!]$
+What condition on set $F$ makes the following true? $$F[\![A]\!] - F[\![B]\!] \subseteq F[\![A - B]\!]$$
 Back: N/A. This is always true.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720665351109-->

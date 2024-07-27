@@ -201,80 +201,6 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1718759188222-->
 END%%
 
-An **independent uniform hash function** is the ideal theoretical abstraction. For each possible input $k$ in universe $U$, an output $h(k)$ is produced randomly and independently chosen from range $\{0, 1, \ldots, m - 1\}$. Once a value $h(k)$ is chosen, each subsequent call to $h$ with the same input $k$ yields the same output $h(k)$.
-
-%%ANKI
-Basic
-What is considered an ideal (though theoretical) hash function?
-Back: An independent uniform hash function.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1718197741507-->
-END%%
-
-%%ANKI
-Basic
-Given independent uniform hash function $h$, what about $h$ is "independent"?
-Back: Each key $k$ has output $h(k)$ determined independently from other keys.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1718197741527-->
-END%%
-
-%%ANKI
-Basic
-Given independent uniform hash function $h$, what about $h$ is "uniform"?
-Back: Every output of $h$ is equally likely to be any of the values in its range.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1718197741537-->
-END%%
-
-%%ANKI
-Basic
-With respect to hashing, a random oracle refers to what kind of hash function?
-Back: An independent uniform hash function.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1718197741545-->
-END%%
-
-%%ANKI
-Basic
-Where does "memory" come into play with independent uniform hash functions?
-Back: Once $h(k)$ is determined, subsequent calls to $h$ with $k$ always yield the same value.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1718197741555-->
-END%%
-
-%%ANKI
-Basic
-What is uniform hashing?
-Back: Hasing in which an input key is equally likely to hash into any slot.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1719174576842-->
-END%%
-
-%%ANKI
-Basic
-What is independent hashing?
-Back: The slot an element hashes to is independent of where other elements hash to.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1719174576848-->
-END%%
-
-%%ANKI
-Basic
-In practice, hash functions are designed to handle keys of what two types?
-Back: A fixed-width nonnegative integer or a vector of them.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1720821498614-->
-END%%
-
-%%ANKI
-Basic
-How does Cormen et al. define a "good" hash function?
-Back: It satisfies (approximately) the assumption of independent uniform hashing.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1720821498625-->
-END%%
-
 ## Static Hashing
 
 **Static hashing** refers to providing a single fixed hash function intended to work well on *any* data. Generally speaking, this should not be favored over random hashing.
@@ -714,7 +640,7 @@ END%%
 %%ANKI
 Basic
 Consider universe $U$ and $\mathscr{H} = \{h\}$ where $h(x) = 0$. Is $\mathscr{H}$ universal?
-Back: Not necessarily.
+Back: Indeterminate.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: hashing::random hashing::universal
 <!--ID: 1721482559021-->
@@ -772,6 +698,14 @@ Back: $$\forall x, y \in U, x \neq y \Rightarrow \frac{|\varnothing|}{|\varnothi
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: hashing::random hashing::universal
 <!--ID: 1721482559069-->
+END%%
+
+%%ANKI
+Basic
+What is it that universal hashing makes impossible?
+Back: The ability of an adversary forcing the worst-case running time of hash table operations.
+Tags: hashing::random hashing::universal
+<!--ID: 1722080163399-->
 END%%
 
 ## Bibliography

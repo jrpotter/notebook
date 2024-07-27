@@ -12,19 +12,31 @@ tags:
 A **formal system** is an abstract structure and formalization of an axiomatic system used for inferring theorems from axioms by a set of inference rules. It consists of two components: a **formal language** and a **deductive system**.
 
 %%ANKI
-Basic
-How are conclusions drawn in deductive reasoning?
-Back: From valid inferences on a set of premises.
+Cloze
+{Deductive} reasoning begins with {a set of premises} and draws conclusions by {applying valid inferences}.
 Reference: “Deductive Reasoning,” in _Wikipedia_, June 16, 2024, [https://en.wikipedia.org/w/index.php?title=Deductive_reasoning](https://en.wikipedia.org/w/index.php?title=Deductive_reasoning&oldid=1229329170).
-<!--ID: 1721561534082-->
+<!--ID: 1721991104381-->
 END%%
 
 %%ANKI
-Basic
-How are conclusions drawn in inductive reasoning?
-Back: By generalizing from some body of observations.
+Cloze
+{Inductive} reasoning begins with {a body of observations} and draws conclusions by {generalizing the observations}.
 Reference: “Inductive Reasoning,” in _Wikipedia_, May 6, 2024, [https://en.wikipedia.org/w/index.php?title=Inductive_reasoning](https://en.wikipedia.org/w/index.php?title=Inductive_reasoning&oldid=1222455892).
-<!--ID: 1721561534087-->
+<!--ID: 1721991104385-->
+END%%
+
+%%ANKI
+Cloze
+Deduction is to {premises} whereas induction is to {observations}.
+Reference: “Inductive Reasoning,” in _Wikipedia_, May 6, 2024, [https://en.wikipedia.org/w/index.php?title=Inductive_reasoning](https://en.wikipedia.org/w/index.php?title=Inductive_reasoning&oldid=1222455892).
+<!--ID: 1721991207202-->
+END%%
+
+%%ANKI
+Cloze
+Deduction is to {valid inferences} whereas induction is to {generalizations}.
+Reference: “Inductive Reasoning,” in _Wikipedia_, May 6, 2024, [https://en.wikipedia.org/w/index.php?title=Inductive_reasoning](https://en.wikipedia.org/w/index.php?title=Inductive_reasoning&oldid=1222455892).
+<!--ID: 1721991207211-->
 END%%
 
 %%ANKI
@@ -143,8 +155,7 @@ END%%
 
 %%ANKI
 Basic
-Is the following a WFF of propositional logic?
-Back: $(a \Rightarrow b) \Leftrightarrow c$
+Is the following a WFF of propositional logic? $(a \Rightarrow b) \Leftrightarrow c$
 Back: Yes.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
 Tags: formal-system::propositional
@@ -153,8 +164,7 @@ END%%
 
 %%ANKI
 Basic
-Is the following a WFF of propositional logic?
-Back: $(a \Rightarrow b( \Leftrightarrow c$
+Is the following a WFF of propositional logic? $(a \Rightarrow b( \Leftrightarrow c$
 Back: No.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
 Tags: formal-system::propositional
@@ -163,11 +173,11 @@ END%%
 
 %%ANKI
 Basic
-Is the following a WFF of propositional logic?
-Back: $\forall x, x \in A \Rightarrow x = y$
+Is the following a WFF of propositional logic? $\forall x, x \in A \Rightarrow x = y$
 Back: No.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
 Tags: logic::propositional logic::predicate
+<!--ID: 1722075143977-->
 END%%
 
 %%ANKI
@@ -214,7 +224,7 @@ END%%
 
 %%ANKI
 Basic
-An alphabet belong to which of the two parts of a formal system?
+An alphabet belongs to which of the two parts of a formal system?
 Back: The formal language.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
 <!--ID: 1721561534170-->
@@ -222,7 +232,7 @@ END%%
 
 %%ANKI
 Basic
-A formal grammar belong to which of the two parts of a formal system?
+A formal grammar belongs to which of the two parts of a formal system?
 Back: The formal language.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
 <!--ID: 1721561534173-->
@@ -244,29 +254,29 @@ END%%
 
 %%ANKI
 Cloze
-A {metalanguage} refers to the {language used to talk about a formal system}.
+A {metalanguage} refers to the {language used to talk *about* a formal system}.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
 <!--ID: 1721561534185-->
 END%%
 
 %%ANKI
 Cloze
-An {object language} refers to the {formal language found in a formal system}.
+An {object} language refers to the {formal language found in a formal system}.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
 <!--ID: 1721561534189-->
 END%%
 
 %%ANKI
 Basic
-In a discussion of propositional logic, what is the metalanguage?
-Back: English (or whatever natural language is being used).
+In a discussion of propositional logic, what does the metalanguage refer to?
+Back: The natural language being used to describe propositional logic.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
 <!--ID: 1721561534194-->
 END%%
 
 %%ANKI
 Basic
-In a discussion of propositional logic, what is the object language?
+In a discussion of propositional logic, what does the object language refer to?
 Back: The formal language of propositional logic.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
 <!--ID: 1721561534200-->
