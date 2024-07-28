@@ -59,7 +59,7 @@ END%%
 
 %%ANKI
 Cloze
-A {subject} is to RDF as a recordt is to a relation.
+A {subject} is to RDF as a record is to a relation.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1722187893334-->
 END%%
