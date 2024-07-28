@@ -56,7 +56,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose all properties are self-instantiating? What must be said about *being honest*?
+Suppose all properties are self-instantiating. What must be said about *being honest*?
 Back: The property *being honest* is honest.
 Reference: Francesco Orilia and Michele Paolini Paoletti, “Properties,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/properties/](https://plato.stanford.edu/archives/spr2022/entries/properties/).
 <!--ID: 1720912237980-->

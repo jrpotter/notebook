@@ -510,7 +510,7 @@
     "_journal/2024-06/2024-06-04.md": "52b28035b9c91c9b14cef1154c1a0fa1",
     "_journal/2024-06-06.md": "3f9109925dea304e7172df39922cc95a",
     "_journal/2024-06/2024-06-05.md": "b06a0fa567bd81e3b593f7e1838f9de1",
-    "set/relations.md": "a77290da08db947ace9c6c3374b4f12c",
+    "set/relations.md": "6063a3a4be5b5983d17600b18220897a",
     "_journal/2024-06-07.md": "795be41cc3c9c0f27361696d237604a2",
     "_journal/2024-06/2024-06-06.md": "db3407dcc86fa759b061246ec9fbd381",
     "_journal/2024-06-08.md": "b20d39dab30b4e12559a831ab8d2f9b8",
@@ -601,7 +601,7 @@
     "hashing/addressing.md": "e97c1905cdf5787d94c857fb5f22be8a",
     "ontology/index.md": "15e97e3e8068660314499fb4d1bdd53e",
     "ontology/permissivism.md": "643e815a79bc5c050cde9f996aa44ef5",
-    "ontology/properties.md": "d417db0cecf11b1ed2e17f165d879fa5",
+    "ontology/properties.md": "91ece501551c444afcd119d7197958ef",
     "_journal/2024-07-14.md": "9a74d2dd0f44db58e14f57c8908c3342",
     "_journal/2024-07/2024-07-13.md": "60e8eb09812660a2f2bf86ffafab5714",
     "_journal/2024-07-15.md": "462fb4294cbbe8855071c638351df147",
@@ -634,7 +634,7 @@
     "formal-system/abstract-rewriting.md": "8424314a627851c5b94be6163f64ba30",
     "_journal/2024-07-22.md": "d2ca7ce0bbeef76395fee33c9bf36e9d",
     "_journal/2024-07/2024-07-21.md": "62c2651999371dd9ab10d964dac3d0f8",
-    "formal-system/proof-system/natural-deduction.md": "48e6907912c293a26b08ecbfd76ff058",
+    "formal-system/proof-system/natural-deduction.md": "9d935708822a59134176d2d707025f6c",
     "startups/term-sheet.md": "6b6152af78addb3fe818a7fc9d375fbf",
     "startups/financing-rounds.md": "00a622fda2b4b442901bde2842309088",
     "_journal/2024-07-23.md": "35e18a1d9a8dd0a97e1d9898bc1d8f01",
@@ -646,7 +646,9 @@
     "_journal/2024-07-26.md": "2dfc0c1049e88c75e91a3130819d1608",
     "_journal/2024-07/2024-07-25.md": "087a54db6fb7003994aa409c0b2ca379",
     "_journal/2024-07-27.md": "1ab2b013a217143a91c8e6de068e9f6f",
-    "_journal/2024-07/2024-07-26.md": "c167f734a5037e1a5537b1e95ca6790f"
+    "_journal/2024-07/2024-07-26.md": "c167f734a5037e1a5537b1e95ca6790f",
+    "_journal/2024-07-28.md": "2aafb514903eca2b842487c573c1753a",
+    "_journal/2024-07/2024-07-27.md": "7c48690746d8320494e29e92390eb6ee"
   },
   "fields_dict": {
     "Basic": [

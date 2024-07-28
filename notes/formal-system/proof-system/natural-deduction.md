@@ -55,7 +55,7 @@ END%%
 %%ANKI
 Basic
 With respect to propositional logic, how are natural deduction's inference rules categorized into five?
-Back: As an introduction and elimination rule per propositional logic operators.
+Back: As an introduction and elimination rule per propositional logic operator.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721655978506-->
 END%%
@@ -165,7 +165,7 @@ END%%
 
 %%ANKI
 Basic
-In natural deduction, how is disjunction elimination denoted??
+In natural deduction, how is disjunction elimination denoted?
 Back: As $\lor{\text{-}}E$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721656416284-->
@@ -174,7 +174,7 @@ END%%
 %%ANKI
 Basic
 How is $\lor{\text{-}}I$ expressed in schematic notation?
-Back: $$\lor{\text{-}}I{:} \quad \begin{array}{c} E_i \\ \hline E_1 \lor \cdots \lor E_n \end{array}$$
+Back: $$\begin{array}{c} E_i \\ \hline E_1 \lor \cdots \lor E_n \end{array}$$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721656416288-->
 END%%
@@ -182,7 +182,7 @@ END%%
 %%ANKI
 Basic
 How is $\lor{\text{-}}E$ expressed in schematic notation?
-Back: $$\lor{\text{-}}E{:} \quad \begin{array}{c} E_1 \lor \cdots \lor E_n, E_1 \Rightarrow E, \ldots, E_n \Rightarrow E \\ \hline E \end{array}$$
+Back: $$\begin{array}{c} E_1 \lor \cdots \lor E_n, E_1 \Rightarrow E, \ldots, E_n \Rightarrow E \\ \hline E \end{array}$$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721656416291-->
 END%%
@@ -246,13 +246,6 @@ Does *modus ponens* correspond to an introduction or elimination rule?
 Back: Elimination.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721665541951-->
-END%%
-
-%%ANKI
-Cloze
-Natural deduction rule {1:$\Rightarrow$}-{1:$E$} is also known as {modus ponens}.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1721665541953-->
 END%%
 
 %%ANKI

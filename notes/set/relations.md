@@ -483,7 +483,7 @@ END%%
 %%ANKI
 Basic
 A $1$-ary relation on $A$ is a subset of what Cartesian product?
-Back: N/A
+Back: N/A.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718329620126-->
 END%%
