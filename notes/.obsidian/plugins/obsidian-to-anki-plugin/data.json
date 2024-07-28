@@ -144,7 +144,10 @@
     "function-general.png",
     "church-rosser.png",
     "infinite-cartesian-product.png",
-    "function-kernel.png"
+    "function-kernel.png",
+    "triple-table.png",
+    "table-triple.png",
+    "triple-table-repr.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -599,7 +602,7 @@
     "_journal/2024-07/2024-07-12.md": "6603ed8a3f9a9e87bf40e81b03e96356",
     "hashing/static.md": "3ec6eaee73fb9b599700f5a56b300b83",
     "hashing/addressing.md": "e97c1905cdf5787d94c857fb5f22be8a",
-    "ontology/index.md": "15e97e3e8068660314499fb4d1bdd53e",
+    "ontology/index.md": "0994403dcd84415f1459752129b55f65",
     "ontology/permissivism.md": "643e815a79bc5c050cde9f996aa44ef5",
     "ontology/properties.md": "91ece501551c444afcd119d7197958ef",
     "_journal/2024-07-14.md": "9a74d2dd0f44db58e14f57c8908c3342",
@@ -649,6 +652,12 @@
     "_journal/2024-07/2024-07-26.md": "c167f734a5037e1a5537b1e95ca6790f",
     "_journal/2024-07-28.md": "2aafb514903eca2b842487c573c1753a",
     "_journal/2024-07/2024-07-27.md": "7c48690746d8320494e29e92390eb6ee"
+    "ontology/rdf/index.md": "b9951dcc7a50d38e3238cb8c8dc1da07",
+    "ontology/philosophy/permissivism.md": "643e815a79bc5c050cde9f996aa44ef5",
+    "ontology/philosophy/nominalism.md": "46245c644238157e15c7cb6def27d90a",
+    "ontology/philosophy/index.md": "09c1caab6733a4f13ae35f6898581653",
+    "ontology/philosophy/dialetheism.md": "56dd05b38519f90c5cab93637978b3b3",
+    "ontology/rdf/uri.md": "becfaeb0aeadca9eec4f19f7f8e907b8"
   },
   "fields_dict": {
     "Basic": [
