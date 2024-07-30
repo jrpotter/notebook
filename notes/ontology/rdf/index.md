@@ -13,6 +13,22 @@ The **Resource Description Framework** (RDF) is the foundational representation 
 
 %%ANKI
 Basic
+Which organization standardized RDF?
+Back: W3C
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1722340624977-->
+END%%
+
+%%ANKI
+Basic
+What is W3C an acronym for?
+Back: **W**orld **W**ide **W**eb **C**onsortium.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1722340624982-->
+END%%
+
+%%ANKI
+Basic
 What is RDF an acronym for?
 Back: **R**esource **D**escription **F**ramework.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
@@ -111,6 +127,41 @@ RDF identifiers are represented using what?
 Back: URIs.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1722191359882-->
+END%%
+
+## Standard Namespaces
+
+W3C have defined a number of standard namespaces for use with Web technologies:
+
+* `xsd`
+	* Refers to the XML schema definition.
+* `xmlns`
+	* Refers to XML namespaces.
+* `rdf`
+	* Refers to identifiers used in RDF.
+
+%%ANKI
+Basic
+What is the standard `xsd` namespace an acronym for?
+Back: **X**ML **S**chema **D**efinition.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1722340624986-->
+END%%
+
+%%ANKI
+Basic
+What is the standard `xmlns` namespace an acronym for?
+Back: **XML** **N**ame**s**pace.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1722340624991-->
+END%%
+
+%%ANKI
+Basic
+What is the standard `rdf` namespace an acronym for?
+Back: **R**esource **D**escription **F**ramework.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1722340624996-->
 END%%
 
 ## Bibliography

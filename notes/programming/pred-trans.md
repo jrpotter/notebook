@@ -872,6 +872,149 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1721497014085-->
 END%%
 
+### Alternative
+
+The general form of the **alternative command** is: $$\begin{align*} \textbf{if } & B_1 \rightarrow S_1 \\ \textbf{ | } & B_2 \rightarrow S_2 \\ & \quad\cdots \\ \textbf{ | } & B_n \rightarrow S_n \\ \textbf{fi } & \end{align*}$$
+
+Each $B_i \rightarrow S_i$ is called a **guarded command**. To execute the alternative command, find one true guard and execute the corresponding command. Notice this is nondeterministic. We denote the alternative command as $\text{IF}$ and define $\text{IF}$ in terms of $wp$ as: $$\begin{align*} wp(\text{IF}, R) = \;& (\forall i, 1 \leq i \leq n \Rightarrow domain(B_i)) \;\land \\ & (\exists i, 1 \leq i \leq n \land B_i) \;\land \\ & (\forall i, 1 \leq i \leq n \Rightarrow (B_i \Rightarrow wp(S_i, R))) \end{align*}$$
+
+%%ANKI
+Basic
+How is the alternative command compactly denoted?
+Back: As $\text{IF}$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722256345848-->
+END%%
+
+%%ANKI
+Basic
+What kind of command is $\text{IF}$ a representation of?
+Back: An alternative command.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722256906202-->
+END%%
+
+%%ANKI
+Basic
+What is the general form of the alternative command?
+Back: $$\begin{align*} \textbf{if } & B_1 \rightarrow S_1 \\ \textbf{ | } & B_2 \rightarrow S_2 \\ & \quad\cdots \\ \textbf{ | } & B_n \rightarrow S_n \\ \textbf{fi } & \end{align*}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722256345855-->
+END%%
+
+%%ANKI
+Basic
+What do "guarded commands" refer to?
+Back: Each $B_i \rightarrow S_i$ found in the alternative command.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722256345859-->
+END%%
+
+%%ANKI
+Basic
+*Why* are guarded commands named the way they are?
+Back: The execution of the command is "guarded" by the truthiness of the condition.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722256345863-->
+END%%
+
+%%ANKI
+Basic
+How are alternative commands executed?
+Back: By finding any true guard and executing the corresponding command.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722256345868-->
+END%%
+
+%%ANKI
+Cloze
+Consider $\text{IF}$ containing $B_i \rightarrow S_i$ for $1 \leq i \leq n$. Then $wp(\text{IF}, R)$ is the conjunction of:
+* {$\forall i, 1 \leq i \leq n \Rightarrow domain(B_i)$}
+* {$\exists i, 1 \leq i \leq n \land B_i$}
+* {$\forall i, 1 \leq i \leq n \Rightarrow (B_i \Rightarrow wp(S_i, R))$}
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722256345873-->
+END%%
+
+%%ANKI
+Basic
+What assumption is made when defining $\text{IF}$ as follows? $$\begin{align*} wp(\text{IF}, R) = \;& (\exists i, 1 \leq i \leq n \land B_i) \;\land \\ & (\forall i, 1 \leq i \leq n \Rightarrow (B_i \Rightarrow wp(S_i, R))) \end{align*}$$
+Back: $domain(B_i)$ for $1 \leq i \leq n$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722256906206-->
+END%%
+
+%%ANKI
+Basic
+Under what two conditions does the alternative command abort?
+Back: If a condition isn't well-defined or no condition is satisfied.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722256906210-->
+END%%
+
+%%ANKI
+Basic
+In what way is the alternative command's execution different from traditional case statements?
+Back: It is nondeterministic.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722256906214-->
+END%%
+
+%%ANKI
+Basic
+When *might* the following alternative command abort? $$\begin{align*} \textbf{if } & x > 0 \rightarrow z \coloneqq x \\ \textbf{ | } & x < 0 \rightarrow z \coloneqq -x \\ \textbf{fi } & \end{align*}$$
+Back: When $x = 0$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722257348944-->
+END%%
+
+%%ANKI
+Basic
+When is the first guarded command of the following executed? $$\begin{align*} \textbf{if } & x \geq 0 \rightarrow z \coloneqq x \\ \textbf{ | } & x \leq 0 \rightarrow z \coloneqq -x \\ \textbf{fi } & \end{align*}$$
+Back: When $x \geq 0$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722257348955-->
+END%%
+
+%%ANKI
+Basic
+When are both of the following guarded commands executed? $$\begin{align*} \textbf{if } & x \geq 0 \rightarrow z \coloneqq x \\ \textbf{ | } & x \leq 0 \rightarrow z \coloneqq -x \\ \textbf{fi } & \end{align*}$$
+Back: N/A.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722257348960-->
+END%%
+
+%%ANKI
+Basic
+When are either of the following guarded commands executed? $$\begin{align*} \textbf{if } & x \geq 0 \rightarrow z \coloneqq x \\ \textbf{ | } & x \leq 0 \rightarrow z \coloneqq -x \\ \textbf{fi } & \end{align*}$$
+Back: When $x = 0$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722257348966-->
+END%%
+
+%%ANKI
+Cloze
+Alternative command {$\textbf{if fi}$} is equivalent to command {$abort$}.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722259243605-->
+END%%
+
+%%ANKI
+Basic
+*Why* does command $\textbf{if fi}$ abort?
+Back: Because no guarded command is true (vacuously) by time of execution.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722259243633-->
+END%%
+
+%%ANKI
+Basic
+How is command $skip$ wrapped in a no-op alternative command?
+Back: As $\textbf{if } T \rightarrow skip \textbf{ fi}$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1722259243640-->
+END%%
+
 ## Bibliography
 
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.

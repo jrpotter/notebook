@@ -685,7 +685,7 @@ END%%
 
 %%ANKI
 Cloze
-Suppose $xRx$ for all $x \in A$, $R$ is said to be reflexive {on} $A$.
+If $xRx$ for all $x \in A$, $R$ is said to be reflexive {on} $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429824-->
 END%%
@@ -760,7 +760,7 @@ END%%
 
 %%ANKI
 Cloze
-Suppose $\neg xRx$ for all $x \in A$, $R$ is said to be irreflexive {on} $A$.
+If $\neg xRx$ for all $x \in A$, $R$ is said to be irreflexive {on} $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721870888411-->
 END%%
@@ -1450,13 +1450,6 @@ What name is given to a member of a partition of a set?
 Back: A cell.
 Reference: “Partition of a Set,” in _Wikipedia_, June 18, 2024, [https://en.wikipedia.org/w/index.php?title=Partition_of_a_set](https://en.wikipedia.org/w/index.php?title=Partition_of_a_set&oldid=1229656401).
 <!--ID: 1721696946377-->
-END%%
-
-%%ANKI
-Cloze
-Let $R$ be an equivalence relation. Then {1:cell} $[x]$ of partition $A / R$ is an {2:equivalence class of $A$} (modulo {2:$R$}).
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1721696946384-->
 END%%
 
 %%ANKI

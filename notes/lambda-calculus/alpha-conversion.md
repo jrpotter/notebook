@@ -147,7 +147,7 @@ END%%
 
 %%ANKI
 Basic
-Is the following identity true? $$\lambda x y. x(xy) \equiv_\alpha \lambda u v. u(uv))$$
+Is the following identity true? $$\lambda x y. x(xy) \equiv_\alpha \lambda u v. u(uv)$$
 Back: Yes.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717687744173-->
@@ -257,7 +257,7 @@ END%%
 
 %%ANKI
 Basic
-What happens if the antecedent is false in $v \not\in FV(M) \Rightarrow [P/v][v/x]M \equiv_\alpha [P/x]M$?
+What happens if the antecedent is false in the following? $$v \not\in FV(M) \Rightarrow [P/v][v/x]M \equiv_\alpha [P/x]M$$
 Back: The LHS of the identity has more occurrences of $P$ than the right.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717855810781-->

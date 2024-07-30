@@ -39,7 +39,7 @@ An **indirect proof** works by assuming the denial of the desired conclusion lea
 %%ANKI
 Basic
 What is an indirect proof?
-Back: A proof in which the denial of a conclusion is assumed and shown to yield a contradiction.
+Back: A proof in which the denial of a proposition is assumed and shown to yield a contradiction.
 Reference: Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.
 <!--ID: 1721824073070-->
 END%%
@@ -106,7 +106,7 @@ END%%
 
 %%ANKI
 Basic
-Which natural deduction rule immediatley depends on the existence of a conditional proof?
+Which natural deduction rule depends directly on the existence of a conditional proof?
 Back: ${\Rightarrow}{\text{-}}I$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721825479299-->
@@ -255,7 +255,15 @@ END%%
 
 %%ANKI
 Basic
-Is a constructive proof considered direct or indirect?
+Which of existence proofs or constructive proofs is more general?
+Back: Existence proofs.
+Reference: “Constructive Proof,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1217198357).
+<!--ID: 1722336217056-->
+END%%
+
+%%ANKI
+Basic
+Is a constructive proof usually direct or indirect?
 Back: Usually direct.
 Reference: “Constructive Proof,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1217198357).
 <!--ID: 1721824073149-->
@@ -271,7 +279,15 @@ END%%
 
 %%ANKI
 Basic
-Is a non-constructive proof considered direct or indirect?
+Which of non-constructive proofs or existence proofs is more general?
+Back: Existence proofs.
+Reference: “Constructive Proof,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1217198357).
+<!--ID: 1722336217060-->
+END%%
+
+%%ANKI
+Basic
+Is a non-constructive proof usually direct or indirect?
 Back: Usually indirect.
 Reference: “Constructive Proof,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1217198357).
 <!--ID: 1721824073155-->

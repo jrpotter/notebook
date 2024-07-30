@@ -84,7 +84,7 @@ END%%
 %%ANKI
 Basic
 How is $\neg{\text{-}}I$ expressed in schematic notation?
-Back: $$\neg{\text{-}}I{:} \quad \begin{array}{c} \text{from } E_1 \text{ infer } E_2 \land \neg E_2 \\ \hline \neg E_1 \end{array}$$
+Back: $$\begin{array}{c} \text{from } E_1 \text{ infer } E_2 \land \neg E_2 \\ \hline \neg E_1 \end{array}$$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721825479330-->
 END%%
@@ -92,7 +92,7 @@ END%%
 %%ANKI
 Basic
 How is $\neg{\text{-}}E$ expressed in schematic notation?
-Back: $$\neg{\text{-}}E{:} \quad \begin{array}{c} \text{from } \neg E_1 \text{ infer } E_2 \land \neg E_2 \\ \hline E_1 \end{array}$$
+Back: $$\begin{array}{c} \text{from } \neg E_1 \text{ infer } E_2 \land \neg E_2 \\ \hline E_1 \end{array}$$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721825479336-->
 END%%
@@ -219,7 +219,7 @@ END%%
 %%ANKI
 Basic
 How is ${\Rightarrow}{\text{-}}I$ expressed in schematic notation?
-Back: $${\Rightarrow}{\text{-}}I: \quad \begin{array}{c} \text{from } E_1, \cdots, E_n \text{ infer } E \\ \hline (E_1 \land \cdots \land E_n) \Rightarrow E \end{array}$$
+Back: $$\begin{array}{c} \text{from } E_1, \cdots, E_n \text{ infer } E \\ \hline (E_1 \land \cdots \land E_n) \Rightarrow E \end{array}$$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721785548092-->
 END%%

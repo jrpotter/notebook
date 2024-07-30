@@ -145,15 +145,15 @@ END%%
 
 %%ANKI
 Basic
-How do we write the equivalent existence (not uniqueness) assertion made by $\exists! x, P(x)$?
-Back: $\exists x, P(x))$
+How do we write the existence (not uniqueness) assertion made by $\exists! x, P(x)$?
+Back: $\exists x, P(x)$
 Reference: Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.
 <!--ID: 1721824073168-->
 END%%
 
 %%ANKI
 Basic
-How do we write the equivalent uniqueness (not existence) assertion made by $\exists! x, P(x)$?
+How do we write the uniqueness (not existence) assertion made by $\exists! x, P(x)$?
 Back: $\forall x, \forall y, (P(x) \land P(y)) \Rightarrow (x = y)$
 Reference: Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.
 <!--ID: 1721824073172-->
