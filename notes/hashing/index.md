@@ -328,7 +328,7 @@ END%%
 %%ANKI
 Basic
 Let $h$ be a division method hash function. What does $h(10)$ evaluate to?
-Back: To $10 \bmod{m}$, where $m$ is the number of slots in the hash table.
+Back: $10 \bmod{m}$, where $m$ is the number of slots in the hash table.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: hashing::static
 <!--ID: 1720889385419-->

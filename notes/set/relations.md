@@ -647,7 +647,7 @@ END%%
 %%ANKI
 Basic
 Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ reflexive on $a$?
-Back: N/A. We must ask if $R$ is reflexive on a set.
+Back: N/A. We should ask if $R$ is reflexive on set $\{a\}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429808-->
 END%%
@@ -729,7 +729,7 @@ END%%
 %%ANKI
 Basic
 Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ irreflexive on $a$?
-Back: N/A. We must ask if $R$ is irreflexive on a set.
+Back: N/A. We should ask if $R$ is irreflexive on set $\{a\}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721870888391-->
 END%%

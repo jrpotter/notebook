@@ -123,7 +123,7 @@ END%%
 
 %%ANKI
 Basic
-RDF identifiers are represented using what?
+RDF identifiers use what encoding?
 Back: URIs.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1722191359882-->

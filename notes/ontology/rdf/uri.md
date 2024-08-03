@@ -67,7 +67,7 @@ where the `<authority>` is further composed as
 Cloze
 A URI has the following generic syntax:
 
-{`<schema>`}`:`{`[//<authority>]`}`]`{`<path>`}{`[?<query>]`}{`[#<fragment>]`}.
+{`<scheme>`}`:`{`[//<authority>]`}{`<path>`}{`[?<query>]`}{`[#<fragment>]`}.
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722211276499-->
 END%%
@@ -488,7 +488,7 @@ A **compact URI** (CURIE) is a denser representation of URIs. In its simplest fo
 %%ANKI
 Basic
 URIs in RDF are usually represented in what condensed format?
-Back: CURIE.
+Back: CURIEs.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1722191359875-->
 END%%
@@ -496,7 +496,7 @@ END%%
 %%ANKI
 Basic
 What is CURIE an acronym for?
-Back: **C**ompact **URI**&.
+Back: **C**ompact **URI**s.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1722191359876-->
 END%%
