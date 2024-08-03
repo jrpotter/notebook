@@ -1172,7 +1172,7 @@ END%%
 
 %%ANKI
 Basic
-Given $R = \{\langle a, a \rangle\}$, is $R$ an equivalence relation?
+Is $R = \{\langle a, a \rangle\}$ an equivalence relation?
 Back: N/A. The question must provide a reference set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429860-->
@@ -1180,7 +1180,7 @@ END%%
 
 %%ANKI
 Basic
-Given $R = \{\langle a, a \rangle\}$, is $R$ an equivalence relation on $\{a\}$?
+Is $R = \{\langle a, a \rangle\}$ an equivalence relation on $\{a\}$?
 Back: Yes.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429864-->
@@ -1188,7 +1188,7 @@ END%%
 
 %%ANKI
 Basic
-Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ an equivalence relation on $\{a\}$?
+Is $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ an equivalence relation on $\{a\}$?
 Back: No.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429868-->

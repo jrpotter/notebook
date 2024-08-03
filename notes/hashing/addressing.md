@@ -565,7 +565,7 @@ Sequential examination of slots during dictionary operations is called **probing
 %%ANKI
 Basic
 Consider an open addressing hash table of $m$ slots. What is its hash function's domain?
-Back: Given universe of keys $U$, $U \times \{0, 1, \ldots, m\}$.
+Back: Given universe of keys $U$, $U \times \{0, 1, \ldots, m - 1\}$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1722080163416-->
 END%%

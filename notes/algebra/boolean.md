@@ -14,7 +14,7 @@ tags:
 %%ANKI
 Basic
 What name is given to $\land$ operands?
-Back: Conjuncts
+Back: Conjuncts.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861304-->
 END%%
@@ -30,7 +30,7 @@ END%%
 %%ANKI
 Basic
 What name is given to $\lor$ operands?
-Back: Disjuncts
+Back: Disjuncts.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861306-->
 END%%

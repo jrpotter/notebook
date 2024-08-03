@@ -659,7 +659,7 @@ END%%
 
 %%ANKI
 Basic
-Which law of the algebra of sets is represented by e.g. $C - (A \cup B) = (C - A) \cap (C - B)$?
+Which law of the algebra of sets is represented by the following? $$C - (A \cup B) = (C - A) \cap (C - B)$$
 Back: De Morgan's Law.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1717373048525-->

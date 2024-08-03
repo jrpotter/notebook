@@ -814,7 +814,7 @@ For two's-complement, use **sign extension** to convert numbers to larger types.
 
 %%ANKI
 Cloze
-Use {sign} extension to convert {two's-complement} numbers to larger types.
+Use {sign} extension to convert numbers encoded in {two's-complement} to larger types.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708697867821-->
 END%%

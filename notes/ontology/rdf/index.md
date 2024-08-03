@@ -61,7 +61,7 @@ END%%
 %%ANKI
 Basic
 What three components make up an RDF triple?
-Back: The subject, predicate, and verb.
+Back: The subject, predicate, and object.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1722187893332-->
 END%%
@@ -75,21 +75,21 @@ END%%
 
 %%ANKI
 Cloze
-A {subject} is to RDF as a record is to a relation.
+A {subject} is to a semantic triple as a row number is to a relation record.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1722187893334-->
 END%%
 
 %%ANKI
 Cloze
-A {predicate} is to RDF as an attribute is to a relation.
+A {predicate} is to a semantic triple as an attribute is to a relation record.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1722187893335-->
 END%%
 
 %%ANKI
 Cloze
-An {object} is to RDF as a value is to a relation.
+An {object} is to a semantic triple as a value is to a relation record.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1722187893337-->
 END%%
