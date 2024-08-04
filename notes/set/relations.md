@@ -1091,6 +1091,13 @@ Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [http
 <!--ID: 1721912048142-->
 END%%
 
+%%ANKI
+Cloze
+{1:Distinct} elements is to {2:antisymmetry} whereas {2:any} elements is to {1:asymmetry}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1722735199608-->
+END%%
+
 ## Transitivity
 
 A relation $R$ is **transitive** iff whenever $xRy$ and $yRz$, then $xRz$. In relational algebra, we define $R$ to be transitive iff $R \circ R \subseteq R$.
@@ -1141,6 +1148,128 @@ The term "transitive" is used to describe what kind of mathematical object?
 Back: Relations.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721694448736-->
+END%%
+
+## Connected
+
+A binary relation $R$ on set $A$ is said to be **connected** if for any *distinct* $x, y \in A$, either $xRy$ or $yRx$. The relation is **strongly connected** if for *all* $x, y \in A$, either $xRy$ or $yRx$.
+
+%%ANKI
+Basic
+How is connectivity of relation $R$ on set $A$ defined in FOL?
+Back: $\forall x, y \in A, x \neq y \Rightarrow xRy \lor yRx$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1722735199628-->
+END%%
+
+%%ANKI
+Basic
+Is $R = \{\langle a, b \rangle\}$ connected on set $\{a, b\}$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1722735199637-->
+END%%
+
+%%ANKI
+Basic
+Is $R = \{\langle a, a \rangle\}$ connected on set $\{a, b\}$?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1722735199645-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, b \rangle\}$ connected on set $\{a, b\}$?
+Back: Because neither $aRb$ nor $bRa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1722735199650-->
+END%%
+
+%%ANKI
+Basic
+Which of reflexivity or connectivity is the more general concept?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1722735199658-->
+END%%
+
+%%ANKI
+Basic
+What members must be added to make $R = \{\langle a, b \rangle, \langle b, c \rangle, \langle c, a \rangle\}$ connected on $\{a, b, c\}$?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1722735199662-->
+END%%
+
+%%ANKI
+Basic
+How is strong connectivity of relation $R$ on set $A$ defined in FOL?
+Back: $\forall x, y \in A, xRy \lor yRx$
+Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+<!--ID: 1722735199672-->
+END%%
+
+%%ANKI
+Basic
+Is $R = \{\langle a, b \rangle\}$ strongly connected on set $\{a, b\}$?
+Back: No.
+Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+<!--ID: 1722735199678-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, b \rangle\}$ strongly connected on set $\{a, b\}$?
+Back: Because $\neg aRa$ and $\neg bRb$.
+Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+<!--ID: 1722735199683-->
+END%%
+
+%%ANKI
+Basic
+What members must be added to make $R = \{\langle a, b \rangle, \langle b, c \rangle, \langle c, a \rangle\}$ strongly connected on $\{a, b, c\}$?
+Back: $\langle a, a \rangle$, $\langle b, b \rangle$, $\langle c, c \rangle$
+Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+<!--ID: 1722735199688-->
+END%%
+
+%%ANKI
+Basic
+Which of strong connectivity or reflexivity is the more general concept?
+Back: Reflexivity.
+Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+<!--ID: 1722735199695-->
+END%%
+
+%%ANKI
+Cloze
+{1:Antisymmetry} is to {2:asymmetry} as {2:connectivity} is to {1:strong connectivity}.
+Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+<!--ID: 1722735199702-->
+END%%
+
+%%ANKI
+Basic
+Why might we say asymmetry is "strong antisymmetry"?
+Back: The former implies the latter.
+Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+<!--ID: 1722735199707-->
+END%%
+
+%%ANKI
+Cloze
+{1:Distinct} elements is to {2:connected} whereas {2:any} elements is to {1:strongly connected}.
+Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+<!--ID: 1722735199711-->
+END%%
+
+%%ANKI
+Basic
+What makes "strong connectedness" stronger than "connectedness"?
+Back: The former implies the latter.
+Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+<!--ID: 1722735199715-->
 END%%
 
 ## Equivalence Relations
@@ -1615,7 +1744,8 @@ END%%
 
 * “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
 * “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
-* “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
-* Reference: “Equivalence Relation,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Equivalence_relation](https://en.wikipedia.org/w/index.php?title=Equivalence_relation&oldid=1235801091).
+* “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+* “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+* “Equivalence Relation,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Equivalence_relation](https://en.wikipedia.org/w/index.php?title=Equivalence_relation&oldid=1235801091).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 * “Partition of a Set,” in _Wikipedia_, June 18, 2024, [https://en.wikipedia.org/w/index.php?title=Partition_of_a_set](https://en.wikipedia.org/w/index.php?title=Partition_of_a_set&oldid=1229656401).

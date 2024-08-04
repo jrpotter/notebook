@@ -128,10 +128,18 @@ END%%
 
 %%ANKI
 Basic
-*Why* might $0! = 1$ (barring convention)?
-Back: Because the empty product is $1$, the multiplication identity.
+How is the multiplication identity used to justify equality $0! = 1$?
+Back: The empty product is $1$, i.e. the multiplication identity.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708366788603-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial explanation justifies equality $0! = 1$?
+Back: There is only $1$ way to order $0$ objects.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1722775277862-->
 END%%
 
 %%ANKI
