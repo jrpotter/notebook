@@ -8,6 +8,31 @@ tags:
 
 ## Overview
 
+C declarations were designed so that the declaration of an object looks like the use of the object. This isn't quite true - keywords like `volatile` and `const` only exist in declarations - but for the most part, this philosophy can be leveraged to read C declarations.
+
+## Declarators
+
+A **declarator** in C is roughly an identifier along with pointers, function brackets, or array indications. Pointers will look like one of:
+
+* `*`
+* `* const`
+* `* volatile`
+* `* const volatile`
+* `* volatile const`
+
+whereas **direct declarators** will look like one of:
+
+* `identifier`
+* `identifier[size]`
+* `identifier(args)`
+* `(declarator)`
+
+## Declarations
+
+A **declaration** is then at least one type-specifier (e.g. `signed short`), storage class (e.g. `static`), and/or type qualifier (e.g. `const`) followed by one or more declarators.
+
+### Type Specifiers
+
 Signed      | Unsigned            | 32-bit | 64-bit
 ----------- | ------------------- | ------ | ------
 signed char | unsigned char       | 1      | 1
@@ -415,7 +440,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1714677608769-->
 END%%
 
-## Pointers
+### Pointers
 
 Pointers have the same size as the machine's word size since it should be able to refer to any virtual address.
 
@@ -430,3 +455,4 @@ END%%
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* Peter Van der Linden and Peter VanDerLinden, _Expert C Programming: Deep C Secrets_, Programming Languages / C (Mountain View, Cal.: SunSoft Pr, 1994).
