@@ -269,7 +269,7 @@ END%%
 
 %%ANKI
 Cloze
-$P(x)$ is equivalently written as $x \in$ {$\{v \mid P(v)\}$}.
+$P(x) = T$ is equivalently written as $x \in$ {$\{v \mid P(v)\}$}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720369624733-->
 END%%

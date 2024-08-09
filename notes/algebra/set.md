@@ -55,6 +55,22 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1717554445670-->
 END%%
 
+%%ANKI
+Basic
+Is the symmetric difference commutative?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187675-->
+END%%
+
+%%ANKI
+Basic
+Is the symmetric difference associative?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187680-->
+END%%
+
 ## Cartesian Product
 
 Given two sets $A$ and $B$, the **Cartesian product** $A \times B$ is defined as: $$A \times B = \{\langle x, y \rangle \mid x \in A \land y \in B\}$$

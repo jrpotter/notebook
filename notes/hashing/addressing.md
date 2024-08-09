@@ -555,7 +555,7 @@ END%%
 %%ANKI
 Basic
 When is the load factor of an open addressing hash table $> 1$?
-Back: N/A
+Back: N/A.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1718759188186-->
 END%%

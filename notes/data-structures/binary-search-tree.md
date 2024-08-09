@@ -13,6 +13,14 @@ A binary search tree (BST) is a [[trees#Binary Trees|binary tree]] satisfying th
 
 > Let $x$ be a node in a binary search tree. If $y$ is a node in the left subtree of $x$, then $y.key \leq x.key$. If $y$ is a node in the right subtree of $x$, then $y.key \geq x.key$.
 
+%%ANKI
+Basic
+*Why* can't we define a binary search tree as a B-tree of order $2$?
+Back: A BST isn't guaranteed to be balanced.
+Reference: Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
+<!--ID: 1723211542110-->
+END%%
+
 ## Traversals
 
 Consider an arbitrary node $x$ of some BST. Then:
@@ -457,14 +465,6 @@ END%%
 
 %%ANKI
 Basic
-When does insertion into a BST modify the root node?
-Back: When the tree being inserted into is empty.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1722713303039-->
-END%%
-
-%%ANKI
-Basic
 In terms of the height $h$ of a BST, what is the runtime for inserting a node?
 Back: $O(h)$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -522,7 +522,7 @@ END%%
 %%ANKI
 Basic
 Delete BST node $z$ with two children. If replacing with its predecessor, what two subcases need to be considered?
-Back: If $z$'s predessor is its left child or not.
+Back: If $z$'s predecessor is its left child or not.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1722713303047-->
 END%%
@@ -586,4 +586,5 @@ END%%
 
 ## Bibliography
 
+* Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

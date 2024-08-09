@@ -1008,7 +1008,7 @@ Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https:
 END%%
 
 %%ANKI
-Give an example of a relation that is both symmetric and asymmetric?
+Give an example of a relation that is both symmetric and asymmetric.
 Back: $\varnothing$
 Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
 END%%
@@ -1030,9 +1030,11 @@ Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https:
 END%%
 
 %%ANKI
-Give an example of a nonempty relation that is both symmetric and asymmetric?
+Basic
+Give an example of a nonempty relation that is both symmetric and asymmetric.
 Back: N/A.
 Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+<!--ID: 1723245187584-->
 END%%
 
 %%ANKI
@@ -1096,6 +1098,13 @@ Cloze
 {1:Distinct} elements is to {2:antisymmetry} whereas {2:any} elements is to {1:asymmetry}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1722735199608-->
+END%%
+
+%%ANKI
+Cloze
+A relation $R$ is asymmetric iff $R$ is {antisymmetric} and {irreflexive}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187594-->
 END%%
 
 ## Transitivity
@@ -1270,6 +1279,137 @@ What makes "strong connectedness" stronger than "connectedness"?
 Back: The former implies the latter.
 Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
 <!--ID: 1722735199715-->
+END%%
+
+## Trichotomy
+
+A binary relation $R$ on $A$ is **trichotomous** if for all $x, y \in A$, exactly one of the following holds: $$xRy, \quad x = y, \quad yRx$$
+
+%%ANKI
+Basic
+How is trichotomy of relation $R$ on set $A$ defined in FOL?
+Back: $\forall x, y \in A, (xRy \land x \neq y \land \neg yRx) \lor (\neg xRy \land x = y \land \neg yRx) \lor (\neg xRy \land x \neq y \land yRx)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187598-->
+END%%
+
+%%ANKI
+Basic
+Is $R = \{\langle 2, 3 \rangle, \langle 2, 5 \rangle, \langle 3, 5 \rangle\}$ trichotomous on $\{2, 3, 5\}$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187602-->
+END%%
+
+%%ANKI
+Basic
+Is $R = \{\langle 2, 3 \rangle, \langle 3, 5 \rangle\}$ trichotomous on $\{2, 3, 5\}$?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187605-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle 2, 3 \rangle, \langle 3, 5 \rangle\}$ trichotomous on $\{2, 3, 5\}$?
+Back: Because no ordered pair relates $2$ and $5$ together.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187609-->
+END%%
+
+%%ANKI
+Basic
+Is $R = \{\langle 2, 2 \rangle\}$ trichotomous on $\{2\}$?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187613-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle\}$ trichotomous on $\{a\}$?
+Back: Because $aRa$ and $a = a$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187617-->
+END%%
+
+%%ANKI
+Basic
+Can a relation be both reflexive and trichotomous?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187621-->
+END%%
+
+%%ANKI
+Basic
+Can a nonempty relation be both reflexive and trichotomous?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187628-->
+END%%
+
+%%ANKI
+Basic
+Can a nonempty relation be both irreflexive and trichotomous?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187633-->
+END%%
+
+%%ANKI
+Basic
+Which of trichotomy or irreflexivity is more general?
+Back: Irreflexivity.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187638-->
+END%%
+
+%%ANKI
+Basic
+*Why* must trichotomous relations on (say) set $A$ be irreflexive?
+Back: For any $x \in A$, it follows $x = x$. Then $\neg xRx$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187643-->
+END%%
+
+%%ANKI
+Basic
+Can a nonempty relation be both symmetric and trichotomous?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187648-->
+END%%
+
+%%ANKI
+Basic
+Can a nonempty relation be both antisymmetric and trichotomous?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187654-->
+END%%
+
+%%ANKI
+Basic
+Which of antisymmetry or trichotomy is more general?
+Back: Antisymmetry.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187659-->
+END%%
+
+%%ANKI
+Basic
+*Why* must trichotomous relations on (say) set $A$ be antisymmetric?
+Back: For any $x, y \in A$, if $x \neq y$ then $xRy$ or $yRx$ but not both.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187664-->
+END%%
+
+%%ANKI
+Cloze
+A relation $R$ is trichotomous iff $R$ is {asymmetric} and {connected}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723245187669-->
 END%%
 
 ## Equivalence Relations
