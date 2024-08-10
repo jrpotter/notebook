@@ -170,6 +170,30 @@ Reference: Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Sear
 <!--ID: 1723211542105-->
 END%%
 
+%%ANKI
+Basic
+Why is a B-tree named the way it is?
+Back: There is no definitive answer.
+Reference: Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
+<!--ID: 1723289256280-->
+END%%
+
+%%ANKI
+Basic
+What was the motivation behind the development of the B-tree?
+Back: To find a data structure for efficient search that minimizes disk accesses.
+Reference: Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
+<!--ID: 1723289256283-->
+END%%
+
+%%ANKI
+Basic
+How is the order of a B-tree typically determined?
+Back: By choosing a value that best aligns with the size of a memory block.
+Reference: Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
+<!--ID: 1723289256285-->
+END%%
+
 ## Bibliography
 
 * Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
