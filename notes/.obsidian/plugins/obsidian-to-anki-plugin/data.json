@@ -186,7 +186,12 @@
     "complete-tree.png",
     "non-complete-tree.png",
     "relation-ordering-example.png",
-    "infinite-cartesian-product.png"
+    "infinite-cartesian-product.png",
+    "b-tree-full-node.png",
+    "b-tree-split-node.png",
+    "b-tree-initial.png",
+    "b-tree-inserted-b.png",
+    "b-tree-inserted-q.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -720,8 +725,10 @@
     "_journal/2024-08/2024-08-07.md": "119c052f4109a3e098d825b771af89de",
     "_journal/2024-08-09.md": "2ce3e0c468f51750d8ad86a19bcc3264",
     "_journal/2024-08/2024-08-08.md": "b8211a4c576ff594217e2e9cae9396c0",
-    "data-structures/b-tree.md": "b6085d090b65e457e29d6d36cf4b226a",
-    "data-structures/binary-tree.md": "67b0b5b9688faa205983993fe507079a"
+    "data-structures/b-tree.md": "5f5e6f483ce6beca9fb3a4cd96264e22",
+    "data-structures/binary-tree.md": "67b0b5b9688faa205983993fe507079a",
+    "_journal/2024-08-10.md": "9e4c7c2c0fd9e855d5cf6b5eff18b111",
+    "_journal/2024-08/2024-08-09.md": "2ce3e0c468f51750d8ad86a19bcc3264"
   },
   "fields_dict": {
     "Basic": [
