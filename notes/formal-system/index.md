@@ -90,7 +90,7 @@ END%%
 %%ANKI
 Basic
 Which of a formal system or a deductive system is defined in terms of the other?
-Back: The formal system.
+Back: A deductive system makes up part of a formal system.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
 <!--ID: 1721561534115-->
 END%%

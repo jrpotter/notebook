@@ -29,7 +29,7 @@ whereas **direct declarators** will look like one of:
 
 %%ANKI
 Basic
-What two qualifiers can be found on a pointer?
+What two qualifiers can be used in a pointer declaration?
 Back: `const` and `volatile`.
 Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
 <!--ID: 1722786892098-->
@@ -697,7 +697,7 @@ END%%
 
 %%ANKI
 Basic
-What is the "only advantage" of `enum`s over `#define` according to Linden?
+According to Linden, what is the "only advantage" of `enum`s over `#define`?
 Back: `enum`s can usually be traced in a debugger.
 Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
 <!--ID: 1722786892138-->

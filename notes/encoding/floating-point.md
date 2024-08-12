@@ -10,7 +10,8 @@ tags:
 
 ## Overview
 
-The IEEE floating-point standard defines an encoding used to represent numbers of form $$(-1)^s \times M \times 2^E$$ where $s$ denotes the **sign bit**, $M$ the **significand**, and $E$ the **exponent**. The binary representation of floating point numbers are segmented into three fields: the sign bit, the exponent field, and the fraction field. Furthermore, there are three classes these fields are interpreted with respect to:
+The IEEE floating-point standard defines an encoding used to represent numbers of form $$(-1)^s \times M \times 2^E$$
+where $s$ denotes the **sign bit**, $M$ the **significand**, and $E$ the **exponent**. The binary representation of floating point numbers are segmented into three fields: the sign bit, the exponent field, and the fraction field. Furthermore, there are three classes these fields are interpreted with respect to:
 
 * Normalized Form
 	* Here the exponent field is neither all `0`s nor all `1`s.

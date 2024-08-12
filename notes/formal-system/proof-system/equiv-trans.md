@@ -323,7 +323,7 @@ END%%
 %%ANKI
 Basic
 How does the principle of explosion relate to the law of contradiction?
-Back: If a contradiction could be proven, then anything can be proven.
+Back: If a contradiction could be proven, then anything can be proven (using the principle of explosion).
 Reference: “Principle of Explosion,” in _Wikipedia_, July 3, 2024, [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1232334233).
 <!--ID: 1721354092789-->
 END%%
@@ -1174,7 +1174,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $x \neq y$. *Why* isn't the following a tautology? $$\large{E_{e_1, e_2, e_3, e_4}^{x, x, y, x}} = E_{(x; \epsilon{:}e_1; \epsilon{:}e_2), e_3, e_4}^{x, y, x}$$
+Suppose $x \neq y$. *Why* isn't the following a tautology? $$\large{E_{e_1, e_2, e_3, e_4}^{x[1], x[2], y, x[3]}} = E_{(x; \,[1]{:}e_1; \,[2]{:}e_2), e_3, e_4}^{x, y, x[3]}$$
 Back: Because not every $x$ was made adjacent before grouping.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721495879859-->

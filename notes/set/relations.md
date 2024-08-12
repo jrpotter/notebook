@@ -514,7 +514,7 @@ END%%
 
 %%ANKI
 Basic
-For what values of $n$ is an "$n$-ary relation on $A$" a "relation"?
+For what values of $n$ is an "$n$-ary relation on $A$" definitively a relation?
 Back: $n > 1$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718329620155-->
@@ -1095,13 +1095,6 @@ END%%
 
 %%ANKI
 Cloze
-{1:Distinct} elements is to {2:antisymmetry} whereas {2:any} elements is to {1:asymmetry}.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1722735199608-->
-END%%
-
-%%ANKI
-Cloze
 A relation $R$ is asymmetric iff $R$ is {antisymmetric} and {irreflexive}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1723245187594-->
@@ -1238,7 +1231,7 @@ END%%
 %%ANKI
 Basic
 What members must be added to make $R = \{\langle a, b \rangle, \langle b, c \rangle, \langle c, a \rangle\}$ strongly connected on $\{a, b, c\}$?
-Back: $\langle a, a \rangle$, $\langle b, b \rangle$, $\langle c, c \rangle$
+Back: $\langle a, a \rangle$, $\langle b, b \rangle$, and $\langle c, c \rangle$.
 Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
 <!--ID: 1722735199688-->
 END%%
@@ -1261,21 +1254,14 @@ END%%
 %%ANKI
 Basic
 Why might we say asymmetry is "strong antisymmetry"?
-Back: The former implies the latter.
+Back: Asymmetry implies antisymmetry.
 Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
 <!--ID: 1722735199707-->
 END%%
 
 %%ANKI
-Cloze
-{1:Distinct} elements is to {2:connected} whereas {2:any} elements is to {1:strongly connected}.
-Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
-<!--ID: 1722735199711-->
-END%%
-
-%%ANKI
 Basic
-What makes "strong connectedness" stronger than "connectedness"?
+What makes "strong connectivity" stronger than "connectivity"?
 Back: The former implies the latter.
 Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
 <!--ID: 1722735199715-->

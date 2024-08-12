@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-Let $\lambda$-term $P$ contain an occurrence of $\lambda x. M$, and let $y \not\in FV(M)$. The act of replacing this occurrence of $\lambda x. M$ with $\lambda y. [y/x]M$ is called a **change of bound variable** or an $\alpha$-conversion in $P$.
+Let $\lambda$-term $P$ contain an occurrence of $\lambda x. M$, and let $y \not\in FV(M)$. The act of replacing this occurrence of $\lambda x. M$ with $\lambda y. [y/x]M$ is called a **change of bound variable** or an **$\alpha$-conversion in $P$**.
 
 If $P$ can be changed to $\lambda$-term $Q$ by a finite series of changes of bound variables, we shall say **$P$ is congruent to $Q$**, or **$P$ $\alpha$-converts to $Q$**, or $P \equiv_\alpha Q$.
 

@@ -14,14 +14,14 @@ If and only if $P$ can be changed to a term $Q$ by a finite series of $\beta$-co
 
 %%ANKI
 Cloze
-$\alpha$-{converts} is to $\beta$-{reduces}.
+$\alpha$-{converts} and $\beta$-{reduces} is to 0 or more modifications.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1718475424836-->
 END%%
 
 %%ANKI
 Cloze
-$\alpha$-{conversion} is to $\beta$-{contraction}.
+$\alpha$-{conversion} and $\beta$-{contraction} is to 1 modification.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1718475424840-->
 END%%
@@ -573,7 +573,9 @@ END%%
 
 %%ANKI
 Cloze
-$P =_\beta Q$ iff $\exists P_0, \ldots, P_n$ s.t. $P_0 \equiv P$, $P_n \equiv Q$, and $\forall i \leq n - 1$, {$P_i \,\triangleright_{1\beta}\, P_{i+1}$} or {$P_{i+1} \,\triangleright_{1\beta}\, P_i$} or {$P_i \equiv_\alpha P_{i+1}$}.
+$P =_\beta Q$ iff $\exists P_0, \ldots, P_n$ s.t. $P_0 \equiv P$, $P_n \equiv Q$, and $\forall i \leq n - 1$:
+
+<center>{$P_i \,\triangleright_{1\beta}\, P_{i+1}$} or {$P_{i+1} \,\triangleright_{1\beta}\, P_i$} or {$P_i \equiv_\alpha P_{i+1}$}</center>
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1721305567189-->
 END%%
