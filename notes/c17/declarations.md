@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-C declarations were designed so that the declaration of an object looks like the use of the object. This isn't quite true - keywords like `volatile` and `const` only exist in declarations - but for the most part, this philosophy can be leveraged to read C declarations.
+C declarations were designed so that the **declaration** of an object looks like the use of the object. This isn't quite true - keywords like `volatile` and `const` only exist in declarations - but for the most part, this philosophy can be leveraged to read C declarations.
 
 ## Declarators
 
@@ -911,4 +911,5 @@ END%%
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 * Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.

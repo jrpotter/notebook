@@ -94,19 +94,32 @@ END%%
 
 ## SET
 
-| Instruction | Synonym  | Effect                            | Description                          |
-| ----------- | -------- | --------------------------------- | ------------------------------------ |
-| `sete`      | `setz`   | `D <- ZF`                         | Equal / zero                         |
-| `setne`     | `setnz`  | `D <- ~ZF`                        | Not equal / not zero                 |
-| `sets`      |          | `D <- SF`                         | Negative                             |
-| `setns`     |          | `D <- ~SF`                        | Nonnegative                          |
-| `setl`      | `setnge` | `D <- SF ^ OF`                    | Less (signed `<`)                    |
-| `setle`     | `setng`  | <code>D <- (SF ^ OF) \| ZF</code> | Less or equal (signed `<=`)          |
-| `setg`      | `setnle` | `D <- ~(SF ^ OF) & ~ZF`           | Greater (signed `>`)                 |
-| `setge`     | `setnl`  | `D <- ~(SF ^ OF)`                 | Greater or equal (signed `<=`)       |
-| `setb`      | `setnae` | `D <- CF`                         | Below (unsigned `<`)                 |
+The description of the `SET` commands apply to the case of a comparison instruction. That is, the condition codes are set according to computation `t = a - b`, where `t`, `a`, and `b` may be interpreted as signed or unsigned depending on the `SET` instruction invoked.
 
-Note how the other condition code effects are easy to derive from `setl` and `setb`.
+| Instruction | Synonym  | Evaluation                   | Description                    |
+| ----------- | -------- | ---------------------------- | ------------------------------ |
+| `sete`      | `setz`   | `ZF`                         | Equal / zero                   |
+| `setne`     | `setnz`  | `~ZF`                        | Not equal / not zero           |
+| `sets`      |          | `SF`                         | Negative                       |
+| `setns`     |          | `~SF`                        | Nonnegative                    |
+| `setl`      | `setnge` | `SF ^ OF`                    | Less (signed `<`)              |
+| `setle`     | `setng`  | <code>(SF ^ OF) \| ZF</code> | Less or equal (signed `<=`)    |
+| `setg`      | `setnle` | `~(SF ^ OF) & ~ZF`           | Greater (signed `>`)           |
+| `setge`     | `setnl`  | `~(SF ^ OF)`                 | Greater or equal (signed `<=`) |
+| `setb`      | `setnae` | `CF`                         | Below (unsigned `<`)           |
+| `setbe`     | `setna`  | <code>CF \| ZF</code>        | Below or equal (unsigned `<=`) |
+| `seta`      | `setnbe` | `~CF & ~ZF`                  | Above (unsigned `>`)           |
+| `setae`     | `setnb`  | `~CF`                        | Above or equal (unsigned `>=`) |
+
+Note how the other condition code evaluations are easy to derive from `setl` and `setb`.
+
+%%ANKI
+Basic
+What arithmetic computation is a `SET` instruction's description based on?
+Back: `t = a - b`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723413572733-->
+END%%
 
 %%ANKI
 Basic
@@ -263,14 +276,6 @@ In terms of condition codes, what value does `setns` put in its specified destin
 Back: `~SF`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1720992217917-->
-END%%
-
-%%ANKI
-Basic
-What arithmetic computation is a `SET` instruction's interpretation of condition codes based on?
-Back: `t = a - b`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1723413572733-->
 END%%
 
 %%ANKI
@@ -498,6 +503,99 @@ In terms of condition codes, what value does `setge` put in its specified destin
 Back: `~(SF ^ OF)`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1723466622325-->
+END%%
+
+%%ANKI
+Basic
+What is `a` in the `seta` instruction short for?
+Back: **A**bove.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723471919305-->
+END%%
+
+%%ANKI
+Cloze
+{`seta`} is a synonym for {`setnbe`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723471919313-->
+END%%
+
+%%ANKI
+Basic
+What condition code(s) does `seta` refer to?
+Back: `CF` and `ZF`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723471919317-->
+END%%
+
+%%ANKI
+Basic
+In terms of condition codes, what value does `seta` put in its specified destination?
+Back: `~CF & ~ZF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723471919321-->
+END%%
+
+%%ANKI
+Basic
+What is `ae` in the `setae` instruction short for?
+Back: **A**bove or **e**qual.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723471919325-->
+END%%
+
+%%ANKI
+Cloze
+{`setae`} is a synonym for {`setnb`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723471919329-->
+END%%
+
+%%ANKI
+Basic
+What condition code(s) does `setae` refer to?
+Back: `CF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723471919333-->
+END%%
+
+%%ANKI
+Basic
+In terms of condition codes, what value does `setae` put in its specified destination?
+Back: `~CF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723471919338-->
+END%%
+
+%%ANKI
+Basic
+What is `be` in the `setbe` instruction short for?
+Back: **B**elow or **e**qual.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723471919343-->
+END%%
+
+%%ANKI
+Cloze
+{`setbe`} is a synonym for {`setna`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723471919349-->
+END%%
+
+%%ANKI
+Basic
+What condition code(s) does `setbe` refer to?
+Back: `CF` and `ZF`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723471919355-->
+END%%
+
+%%ANKI
+Basic
+In terms of condition codes, what value does `setbe` put in its specified destination?
+Back: `CF | ZF`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723471919361-->
 END%%
 
 ## Bibliography

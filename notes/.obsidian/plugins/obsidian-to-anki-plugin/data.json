@@ -309,9 +309,9 @@
     "_journal/2024-02-23.md": "219ce9ad15a8733edd476c97628b71fd",
     "_journal/2024-02/2024-02-22.md": "312e55d57868026f6e80f7989a889c2b",
     "c17/strings.md": "2da50edd26eae35c81f70e65bbd12d49",
-    "c17/index.md": "78576ee41d0185df82c59999142f4edb",
+    "c17/index.md": "7662b066e7cf52e94d21fed57dfe227f",
     "c17/escape-sequences.md": "a8b99070336878b4e8c11e9e4525a500",
-    "c17/declarations.md": "e5b4268270bcec35e6f2e4b727c5494e",
+    "c17/declarations.md": "9d0cf7a345d89b454447b3f66d4b7b64",
     "algorithms/sorting/merge-sort.md": "6506483f7df6507cee0407bd205dbedd",
     "_journal/2024-02-24.md": "9bb319d5014caf962a9ce3141076cff4",
     "_journal/2024-02/2024-02-23.md": "0aad297148e8cc4058b48b7e45787ca7",
@@ -569,7 +569,7 @@
     "_journal/2024-06/2024-06-07.md": "c6bfc4c1e5913d23ea7828a23340e7d3",
     "lambda-calculus/alpha-conversion.md": "6df655e60976715e5c6fbbe72b628c6d",
     "lambda-calculus/index.md": "76d58f85c135c7df00081f47df31168e",
-    "x86-64/instructions/condition-codes.md": "77eda8d73ab458bd5ae2e6e11582be74",
+    "x86-64/instructions/condition-codes.md": "b9430cc0ad207f210a8d5ca6dacccbd5",
     "x86-64/instructions/logical.md": "818428b9ef84753920dc61e5c2de9199",
     "x86-64/instructions/arithmetic.md": "271218d855e7291f119f96e91f582738",
     "x86-64/instructions/access.md": "c19bc3392cf493fcc9becf46c818cc50",
@@ -736,7 +736,9 @@
     "_journal/2024-08/2024-08-09.md": "2ce3e0c468f51750d8ad86a19bcc3264",
     "_journal/2024-08-11.md": "acc91e07b43590e90846d2c936dcb3d5",
     "_journal/2024-08/2024-08-10.md": "08e7ea4a78c46645b93ec51e2372d04f",
-    "_journal/2024-08-12.md": "dbce7846aa65606fe528e4cd51022a9f"
+    "_journal/2024-08-12.md": "8a37a2d1381f9d9e29d83031bad80dd0",
+    "_journal/2024-08/2024-08-11.md": "acc91e07b43590e90846d2c936dcb3d5",
+    "c17/types.md": "2bca56b2d95cc358553fb798acde6522"
   },
   "fields_dict": {
     "Basic": [
