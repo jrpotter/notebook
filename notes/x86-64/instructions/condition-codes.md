@@ -325,17 +325,17 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
-Basic
+Cloze
 {1:`setl`} is to {2:signed} integers whereas {2:`setb`} is to {1:unsigned} integers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1723413572761-->
+<!--ID: 1723722545356-->
 END%%
 
 %%ANKI
-Basic
+Cloze
 {1:`setnae`} is to {2:unsigned} integers whereas {2:`setnge`} is to {1:signed} integers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1723413572765-->
+<!--ID: 1723722615056-->
 END%%
 
 %%ANKI
@@ -386,17 +386,17 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
-Basic
+Cloze
 {1:`setle`} is to {2:signed} integers whereas {2:`setbe`} is to {1:unsigned} integers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1723466419240-->
+<!--ID: 1723722615060-->
 END%%
 
 %%ANKI
-Basic
+Cloze
 {1:`setna`} is to {2:unsigned} integers whereas {2:`setng`} is to {1:signed} integers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1723466419242-->
+<!--ID: 1723722615063-->
 END%%
 
 %%ANKI
@@ -431,17 +431,17 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
-Basic
+Cloze
 {1:`setg`} is to {2:signed} integers whereas {2:`seta`} is to {1:unsigned} integers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1723466537473-->
+<!--ID: 1723722615067-->
 END%%
 
 %%ANKI
-Basic
+Cloze
 {1:`setnle`} is to {2:signed} integers whereas {2:`setnbe`} is to {1:unsigned} integers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1723466537477-->
+<!--ID: 1723722615071-->
 END%%
 
 %%ANKI
@@ -476,17 +476,17 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
-Basic
+Cloze
 {1:`setge`} is to {2:signed} integers whereas {2:`setae`} is to {1:unsigned} integers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1723466622316-->
+<!--ID: 1723722615075-->
 END%%
 
 %%ANKI
-Basic
+Cloze
 {1:`setnb`} is to {2:unsigned} integers whereas {2:`setnl`} is to {1:signed} integers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1723466622319-->
+<!--ID: 1723722615079-->
 END%%
 
 %%ANKI

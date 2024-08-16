@@ -570,8 +570,8 @@ END%%
 
 %%ANKI
 Basic
-Is $\{\langle x, y \rangle, \langle x, y, z \rangle\}$ a relation?
-Back: Yes.
+*Why* isn't $\{\langle x, y \rangle, \langle x, y, z \rangle\}$ a relation?
+Back: N/A. It is.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718329620187-->
 END%%
@@ -654,25 +654,18 @@ END%%
 
 %%ANKI
 Basic
-Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ reflexive on $\{a\}$?
-Back: Yes.
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ reflexive on $\{a\}$?
+Back: N/A. It is.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429812-->
 END%%
 
 %%ANKI
 Basic
-Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ reflexive on $\{a, b\}$?
-Back: No.
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ reflexive on $\{a, b\}$?
+Back: Because $\langle b, b \rangle \not\in R$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429817-->
-END%%
-
-%%ANKI
-Basic
-Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ reflexive on $\{a, b\}$?
-Back: No.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 END%%
 
 %%ANKI
@@ -736,23 +729,23 @@ END%%
 
 %%ANKI
 Basic
-Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ irreflexive on $\{a\}$?
-Back: No.
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ irreflexive on $\{a\}$?
+Back: Because $\langle a, a \rangle \in R$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721870888395-->
 END%%
 
 %%ANKI
 Basic
-Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ irreflexive on $\{b\}$?
-Back: Yes.
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ irreflexive on $\{b\}$?
+Back: N/A. It is.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721870888400-->
 END%%
 
 %%ANKI
 Basic
-Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, *why* isn't $R$ irreflexive on $\{a, b\}$?
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ irreflexive on $\{a, b\}$?
 Back: Because $\langle a, a \rangle \in R$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721870888406-->
@@ -819,8 +812,8 @@ END%%
 
 %%ANKI
 Basic
-Given $R = \{\langle a, b \rangle, \langle b, c \rangle\}$, is $R$ symmetric?
-Back: No.
+*Why* isn't $R = \{\langle a, b \rangle, \langle b, c \rangle\}$ symmetric?
+Back: Because $aRb$ and $bRc$ but $\neg bRa$ and $\neg cRb$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429832-->
 END%%
@@ -863,26 +856,18 @@ END%%
 
 %%ANKI
 Basic
-Is $R = \{\langle a, a \rangle, \langle a, b \rangle, \langle b, a \rangle, \langle b, c \rangle\}$ antisymmetric?
-Back: No.
+*Why* isn't $R = \{\langle a, a \rangle, \langle a, b \rangle, \langle b, a \rangle, \langle b, c \rangle\}$ antisymmetric?
+Back: Because $aRb$ and $bRa$.
 Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
 <!--ID: 1721909725690-->
 END%%
 
 %%ANKI
 Basic
-Is $R = \{\langle a, a \rangle, \langle b, b \rangle, \langle b, c \rangle\}$ antisymmetric?
-Back: Yes.
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, b \rangle, \langle b, c \rangle\}$ antisymmetric?
+Back: N/A. It is.
 Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
 <!--ID: 1721909725693-->
-END%%
-
-%%ANKI
-Basic
-*Why* isn't $R = \{\langle a, a \rangle, \langle a, b \rangle, \langle b, a \rangle, \langle b, c \rangle\}$ antisymmetric?
-Back: Because $aRb$ and $bRa$.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
-<!--ID: 1721909725696-->
 END%%
 
 %%ANKI
@@ -970,7 +955,7 @@ END%%
 
 %%ANKI
 Basic
-What distinguishes the antecedent of antisymmetry's and asymmetric's FOL definition?
+What distinguishes the antecedent of antisymmetry's and asymmetry's FOL definition?
 Back: The former only considers *distinct* pairs of elements.
 Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
 <!--ID: 1721910949017-->
@@ -1122,18 +1107,10 @@ END%%
 
 %%ANKI
 Basic
-Given $R = \{\langle a, b \rangle, \langle b, c \rangle\}$, is $R$ transitive?
-Back: No.
+*Why* isn't $R = \{\langle a, b \rangle, \langle b, c \rangle\}$ transitive?
+Back: Because $\langle a, c \rangle \not\in R$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429846-->
-END%%
-
-%%ANKI
-Basic
-Given $R = \{\langle a, b \rangle, \langle b, c \rangle\}$, what additional member(s) must be added to make $R$ transitive?
-Back: Just $\langle a, c \rangle$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720967429850-->
 END%%
 
 %%ANKI
@@ -1166,16 +1143,16 @@ END%%
 
 %%ANKI
 Basic
-Is $R = \{\langle a, b \rangle\}$ connected on set $\{a, b\}$?
-Back: Yes.
+*Why* isn't $R = \{\langle a, b \rangle\}$ connected on set $\{a, b\}$?
+Back: N/A. It is.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1722735199637-->
 END%%
 
 %%ANKI
 Basic
-Is $R = \{\langle a, a \rangle\}$ connected on set $\{a, b\}$?
-Back: No.
+*Why* isn't $R = \{\langle a, a \rangle\}$ connected on set $\{a, b\}$?
+Back: Because $\langle a, b \rangle \not\in R$ and $\langle b, a \rangle \not\in R$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1722735199645-->
 END%%
@@ -1210,14 +1187,6 @@ How is strong connectivity of relation $R$ on set $A$ defined in FOL?
 Back: $\forall x, y \in A, xRy \lor yRx$
 Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
 <!--ID: 1722735199672-->
-END%%
-
-%%ANKI
-Basic
-Is $R = \{\langle a, b \rangle\}$ strongly connected on set $\{a, b\}$?
-Back: No.
-Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
-<!--ID: 1722735199678-->
 END%%
 
 %%ANKI
@@ -1281,18 +1250,10 @@ END%%
 
 %%ANKI
 Basic
-Is $R = \{\langle 2, 3 \rangle, \langle 2, 5 \rangle, \langle 3, 5 \rangle\}$ trichotomous on $\{2, 3, 5\}$?
-Back: Yes.
+*Why* isn't $R = \{\langle 2, 3 \rangle, \langle 2, 5 \rangle, \langle 3, 5 \rangle\}$ trichotomous on $\{2, 3, 5\}$?
+Back: N/A. It is.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1723245187602-->
-END%%
-
-%%ANKI
-Basic
-Is $R = \{\langle 2, 3 \rangle, \langle 3, 5 \rangle\}$ trichotomous on $\{2, 3, 5\}$?
-Back: No.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1723245187605-->
 END%%
 
 %%ANKI
@@ -1301,14 +1262,6 @@ Basic
 Back: Because no ordered pair relates $2$ and $5$ together.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1723245187609-->
-END%%
-
-%%ANKI
-Basic
-Is $R = \{\langle 2, 2 \rangle\}$ trichotomous on $\{2\}$?
-Back: No.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1723245187613-->
 END%%
 
 %%ANKI
@@ -1398,9 +1351,180 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1723245187669-->
 END%%
 
+## Preorders
+
+$R$ is a **preorder on $A$** iff $R$ is a binary relation that is reflexive on set $A$ and transitive.
+
+%%ANKI
+Basic
+What is a preorder on $A$?
+Back: A binary relation reflexive on $A$ and transitive.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723814834775-->
+END%%
+
+%%ANKI
+Basic
+Which of preorders or equivalence relations are the more general concept?
+Back: Preorders.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723814834780-->
+END%%
+
+%%ANKI
+Basic
+*Why* are preorders named the way they are?
+Back: The name suggests its almost a partial order.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723814834783-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle\}$ a preorder?
+Back: N/A. The question must provide a reference set.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723814834790-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle\}$ a preorder on $\{a\}$?
+Back: N/A. It is.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723814834793-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, b \rangle, \langle b, c \rangle, \langle a, c \rangle\}$ a preorder on $\{a, b, c\}$?
+Back: Because $R$ isn't reflexive on $\{a, b, c\}$.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723814834800-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, b \rangle \}$ a preorder on $\{a, b\}$?
+Back: N/A. It is.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723814834804-->
+END%%
+
+## Partial Orders
+
+$R$ is a **partial order on $A$** iff $R$ is a binary relation on set $A$ that is reflexive on $A$, antisymmetric, and transitive.
+
+In other words, a partial order is an antisymmetric preorder.
+
+%%ANKI
+Basic
+What is a partial order on $A$?
+Back: A binary relation on $A$ that is reflexive on $A$, antisymmetric, and transitive.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723816108460-->
+END%%
+
+%%ANKI
+Basic
+Which of preorders and partial orders is the more general concept?
+Back: Preorders.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723816108468-->
+END%%
+
+%%ANKI
+Basic
+Which of partial orders and equivalence relations is the more general concept?
+Back: N/A.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723816108472-->
+END%%
+
+%%ANKI
+Cloze
+A preorder satisfying {antisymmetry} is a {partial order}.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723816108477-->
+END%%
+
+%%ANKI
+Basic
+What two properties do partial orders and equivalence relations have in common?
+Back: Reflexivity and transitivity.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723816108482-->
+END%%
+
+%%ANKI
+Basic
+What property distinguishes partial orders from equivalence relations?
+Back: The former is antisymmetric whereas the latter is symmetric.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723816108487-->
+END%%
+
+%%ANKI
+Basic
+*Why* is a partial order named the way it is?
+Back: Not every pair of elements needs to be comparable.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723816108494-->
+END%%
+
+%%ANKI
+Basic
+Can a relation be both an equivalence relation and a partial order?
+Back: Yes.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723816108501-->
+END%%
+
+%%ANKI
+Basic
+Can a nonempty relation be both an equivalence relation and a partial order?
+Back: Yes.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723816108508-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, b \rangle\}$ a partial order?
+Back: N/A. The question must provide a reference set.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723816108514-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, b \rangle\}$ a partial order on $\{a, b\}$?
+Back: N/A. It is.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723816108519-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ a partial order on $\{a, b\}$?
+Back: N/A. It is.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723816108524-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle, \langle c, b \rangle\}$ a partial order on $\{a, b\}$?
+Back: It isn't antisymmetric.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723816108531-->
+END%%
+
 ## Equivalence Relations
 
-Given relation $R$ and set $A$, $R$ is an **equivalence relation on $A$** iff $R$ is a binary relation on $A$ that is reflexive on $A$, symmetric, and transitive.
+$R$ is an **equivalence relation on $A$** iff $R$ is a binary relation on set $A$ that is reflexive on $A$, symmetric, and transitive.
+
+In other words, an equivalence relation is a symmetric preorder.
 
 %%ANKI
 Basic
@@ -1420,6 +1544,13 @@ END%%
 
 %%ANKI
 Cloze
+A preorder satisfying {symmetry} is an {equivalence relation}.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723814834787-->
+END%%
+
+%%ANKI
+Cloze
 An equivalence relation on $A$ is a {$2$}-ary relation on $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429857-->
@@ -1427,7 +1558,7 @@ END%%
 
 %%ANKI
 Basic
-Is $R = \{\langle a, a \rangle\}$ an equivalence relation?
+*Why* isn't $R = \{\langle a, a \rangle\}$ an equivalence relation?
 Back: N/A. The question must provide a reference set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429860-->
@@ -1435,18 +1566,10 @@ END%%
 
 %%ANKI
 Basic
-Is $R = \{\langle a, a \rangle\}$ an equivalence relation on $\{a\}$?
-Back: Yes.
+*Why* isn't $R = \{\langle a, a \rangle\}$ an equivalence relation on $\{a\}$?
+Back: N/A. It is.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429864-->
-END%%
-
-%%ANKI
-Basic
-Is $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ an equivalence relation on $\{a\}$?
-Back: No.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720967429868-->
 END%%
 
 %%ANKI
@@ -1471,6 +1594,14 @@ Which of binary relations on $A$ and equivalence relations on $A$ is more genera
 Back: Binary relations on $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720969371869-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ an equivalence relation on $\{a, b\}$?
+Back: It isn't symmetric.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723816108538-->
 END%%
 
 ### Equivalence Classes
@@ -1874,4 +2005,6 @@ END%%
 * “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
 * “Equivalence Relation,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Equivalence_relation](https://en.wikipedia.org/w/index.php?title=Equivalence_relation&oldid=1235801091).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+* “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
 * “Partition of a Set,” in _Wikipedia_, June 18, 2024, [https://en.wikipedia.org/w/index.php?title=Partition_of_a_set](https://en.wikipedia.org/w/index.php?title=Partition_of_a_set&oldid=1229656401).
+* “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).

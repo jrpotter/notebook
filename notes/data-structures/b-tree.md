@@ -36,7 +36,7 @@ END%%
 
 %%ANKI
 Basic
-How is the order of a B-tree typically determined?
+How is the order of a B-tree typically decided?
 Back: By choosing a value that best aligns with the size of a memory block.
 Reference: Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
 <!--ID: 1723289256285-->
