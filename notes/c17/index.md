@@ -8,14 +8,59 @@ tags:
 
 ## Overview
 
-An **object** is a region of data storage in the execution environment, the contents of which can represent **values**. We say an object type is **complete** if there is sufficient information to determine the size of objects of that type. Otherwise we say it is **incomplete**.
+> A C program can be seen as a sort of machine that manipulates values: the particular values that variables of the program have at a given time, and also intermediate values that are the result of computed expressions.
 
-An **lvalue** is an expression (with non-`void` object type) that potentially designates an object. An **rvalue** is the "value of the expression."
+This quote describes C's **abstract state machine**. Whatever instructions a C program compiles down to is "unimportant" provided that all **observable states** are correctly reproduced. This is the essence of optimization.
+
+%%ANKI
+Basic
+What feature of C's abstract state machine makes C performant?
+Back: It enables optimization.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856661330-->
+END%%
+
+%%ANKI
+Basic
+C can compile into any sequence of instructions provided what holds?
+Back: All observable states are correctly reproduced.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856661337-->
+END%%
+
+%%ANKI
+Basic
+Why is C's abstract state machine called the way it is?
+Back: Compilers are free to realize the state machine however they see fit.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856661340-->
+END%%
+
+%%ANKI
+Basic
+What three components make up C's abstract state machine?
+Back: Values, types, and binary representations.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856661343-->
+END%%
+
+%%ANKI
+Cloze
+In C's abstract state machine, {binary representations} describe {types} which describe {values}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856668033-->
+END%%
+
+## Values
+
+An **object** is a region of data storage in the execution environment, the contents of which can represent **values**. An **lvalue** is an expression (with non-`void` object type) that potentially designates an object. An **rvalue** is the "value of the expression."
+
+The notion of a value in C is an abstract entity. It exists beyond the program or the representation of the value in the program. For example, the value `0` (no matter how its represented) added to variable `x` should always yield result `x` regardless of platform.
 
 %%ANKI
 Basic
 What does an object refer to?
-Back: A region of data storage in the execution environment, the contents of which can represent values.
+Back: A region of data storage in the execution environment.
 Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 <!--ID: 1723510994830-->
 END%%
@@ -29,58 +74,26 @@ Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70
 END%%
 
 %%ANKI
+Basic
+Why does Gustedt refer to values as abstract entities?
+Back: A value exists beyond a program or any particular representation.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856661349-->
+END%%
+
+%%ANKI
+Basic
+How does Gustedt distinguish the data of a program execution from values?
+Back: The data is the set of values of all objects at a given moment.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856661358-->
+END%%
+
+%%ANKI
 Cloze
 A {value} refers to the contents of an {object} when interpreted as having a specific type.
 Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 <!--ID: 1723510994839-->
-END%%
-
-%%ANKI
-Basic
-Types are partitioned into what two categories?
-Back: Object types and function types.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994842-->
-END%%
-
-%%ANKI
-Basic
-What is an object type?
-Back: A type that describes objects.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994846-->
-END%%
-
-%%ANKI
-Basic
-What is a function type?
-Back: A type that describes functions.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994851-->
-END%%
-
-%%ANKI
-Basic
-What two parts characterize a function type?
-Back: The return type and the number/types of its parameters.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994856-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for an object type to be complete?
-Back: There is sufficient information to determine the size of objects of that type.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994866-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for an object type to be incomplete?
-Back: There is insufficient information to determine the size of objects of that type.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994870-->
 END%%
 
 %%ANKI
@@ -113,22 +126,6 @@ Why are rvalues named the way they are?
 Back: The name is an acronym for **r**ight **value**.
 Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 <!--ID: 1723510994886-->
-END%%
-
-%%ANKI
-Basic
-What object type can an lvalue *not* have?
-Back: `void`
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994890-->
-END%%
-
-%%ANKI
-Basic
-What object type can an lvalue have?
-Back: Any object type other than `void`.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994895-->
 END%%
 
 %%ANKI
@@ -336,6 +333,67 @@ Reference: ISO: Programming Languages - C,” April 12, 2011, [https://port70.ne
 <!--ID: 1723510995006-->
 END%%
 
+## Types
+
+Types are additional properties that C associates with values. All values have a type that is statically determined and all possible operations on a value are determined by its type.
+
+Types are categorized as function types and object types. An object type is **complete** if there is sufficient information to determine the size of objects of that type. Otherwise we say it is **incomplete**.
+
+%%ANKI
+Cloze
+Possible operations on a {value} are determined by its {type}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856661364-->
+END%%
+
+%%ANKI
+Basic
+Types are partitioned into what two categories?
+Back: Object types and function types.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1723510994842-->
+END%%
+
+%%ANKI
+Basic
+What is an object type?
+Back: A type that describes objects.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1723510994846-->
+END%%
+
+%%ANKI
+Basic
+What is a function type?
+Back: A type that describes functions.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1723510994851-->
+END%%
+
+%%ANKI
+Basic
+What two parts characterize a function type?
+Back: The return type and the number/types of its parameters.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1723510994856-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for an object type to be complete?
+Back: There is sufficient information to determine the size of objects of that type.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1723510994866-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for an object type to be incomplete?
+Back: There is insufficient information to determine the size of objects of that type.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1723510994870-->
+END%%
+
 %%ANKI
 Basic
 Does `x` have complete or incomplete object type in the following?
@@ -367,6 +425,72 @@ void *x;
 Back: Complete.
 Reference: ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 <!--ID: 1723510995023-->
+END%%
+
+%%ANKI
+Basic
+What object type can an lvalue *not* have?
+Back: `void`
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1723510994890-->
+END%%
+
+%%ANKI
+Basic
+What object type can an lvalue have?
+Back: Any object type other than `void`.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1723510994895-->
+END%%
+
+## Representation
+
+The **binary representation** of a type is the model used to represent values of said type on a given platform. The **object representation** of a type determines how values are stored in memory, disk, etc.
+
+%%ANKI
+Basic
+What is the binary representation of a type?
+Back: The model used to represent values of the type on a given platform.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856661371-->
+END%%
+
+%%ANKI
+Basic
+What is the binary representation of a value?
+Back: N/A. Binary representations describe types not values.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856661379-->
+END%%
+
+%%ANKI
+Basic
+What is the object representation of a type?
+Back: How a value of a given type is actually stored in memory, disk, etc.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856661386-->
+END%%
+
+%%ANKI
+Cloze
+A {type}'s {binary representation} determines the results of all operations.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856661393-->
+END%%
+
+%%ANKI
+Basic
+Why does Gustedt refer to binary representations as abstract entities?
+Back: Binary representations don't completely determine how values are stored in memory.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856661399-->
+END%%
+
+%%ANKI
+Cloze
+A {binary} representation is abstract whereas an {object} representation is concrete.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723856661405-->
 END%%
 
 ## Bibliography
