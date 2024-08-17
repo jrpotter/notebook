@@ -168,7 +168,12 @@
     "b-tree-initial.png",
     "b-tree-inserted-b.png",
     "b-tree-inserted-q.png",
-    "relation-ordering-example.png"
+    "relation-ordering-example.png",
+    "venn-diagram-union.png",
+    "venn-diagram-abs-comp.png",
+    "venn-diagram-intersection.png",
+    "venn-diagram-rel-comp.png",
+    "venn-diagram-symm-diff.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -348,7 +353,7 @@
     "_journal/2024-03-18.md": "8479f07f63136a4e16c9cd07dbf2f27f",
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
-    "set/index.md": "b43367d200334c53d66fc85a876b9524",
+    "set/index.md": "7354797161e6720469801839b10b64c5",
     "set/graphs.md": "f0cd201673f2a999321dda6c726e8734",
     "_journal/2024-03-19.md": "a0807691819725bf44c0262405e97cbb",
     "_journal/2024-03/2024-03-18.md": "63c3c843fc6cfc2cd289ac8b7b108391",
@@ -534,7 +539,7 @@
     "_journal/2024-06/2024-06-04.md": "52b28035b9c91c9b14cef1154c1a0fa1",
     "_journal/2024-06-06.md": "3f9109925dea304e7172df39922cc95a",
     "_journal/2024-06/2024-06-05.md": "b06a0fa567bd81e3b593f7e1838f9de1",
-    "set/relations.md": "60fed0d4642d214767c077ca44983357",
+    "set/relations.md": "9323fc61ee983487e16f6dd4c1629957",
     "_journal/2024-06-07.md": "795be41cc3c9c0f27361696d237604a2",
     "_journal/2024-06/2024-06-06.md": "db3407dcc86fa759b061246ec9fbd381",
     "_journal/2024-06-08.md": "b20d39dab30b4e12559a831ab8d2f9b8",
@@ -718,8 +723,9 @@
     "_journal/2024-08/2024-08-14.md": "f7d1dede5ab6e4634ad9de3d3426c6f7",
     "_journal/2024-08-16.md": "a25c680684bcffc6a38cebbb448d9d97",
     "_journal/2024-08/2024-08-15.md": "7c3a96a25643b62b0064bf32cb17d92f",
-    "_journal/2024-08-17.md": "f9305a6a34de9a510260bed7d2bb1aca",
-    "_journal/2024-08/2024-08-16.md": "096d9147a9e3e7a947558f8dec763a2c"
+    "_journal/2024-08-17.md": "375318b50134c7cb45a8eb08bc7e586d",
+    "_journal/2024-08/2024-08-16.md": "096d9147a9e3e7a947558f8dec763a2c",
+    "set/order.md": "373f4336d4845a3c2188d2215ac5fbc4"
   },
   "fields_dict": {
     "Basic": [

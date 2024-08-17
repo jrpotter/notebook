@@ -1310,6 +1310,12 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 END%%
 
 %%ANKI
+Cloze
+Let $Q$, $A$, and $B$ be sets. Then {$Q \restriction (A - B)$} $=$ {$(Q \restriction A) - (Q \restriction B)$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+%%ANKI
 Basic
 Consider sets $A$ and $B$. How is $B \restriction A$ rewritten as a composition?
 Back: $B \circ I_A$
