@@ -703,7 +703,7 @@ END%%
 %%ANKI
 Basic
 What is it that universal hashing makes impossible?
-Back: The ability of an adversary forcing the worst-case running time of hash table operations.
+Back: Forcing the worst-case running time of hash table operations.
 Tags: hashing::random hashing::universal
 <!--ID: 1722080163399-->
 END%%

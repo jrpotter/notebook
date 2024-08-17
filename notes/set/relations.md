@@ -1358,7 +1358,7 @@ $R$ is a **preorder on $A$** iff $R$ is a binary relation that is reflexive on s
 %%ANKI
 Basic
 What is a preorder on $A$?
-Back: A binary relation reflexive on $A$ and transitive.
+Back: A binary relation on $A$ that is reflexive on $A$ and transitive.
 Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
 <!--ID: 1723814834775-->
 END%%
@@ -1411,11 +1411,82 @@ Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.
 <!--ID: 1723814834804-->
 END%%
 
+A **strict preorder** replaces reflexivity with irreflexivity. That is, $R$ is a strict preorder on $A$ iff $R$ is a binary relation on set $A$ that is irreflexive on $A$ and transitive.
+
+%%ANKI
+Basic
+What distinguishes a preorder from a strict preorder?
+Back: Strict preorders are irreflexive.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723902729046-->
+END%%
+
+%%ANKI
+Basic
+What is a strict preorder on $A$?
+Back: A binary relation on $A$ that is irreflexive on $A$ and transitive.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723902729097-->
+END%%
+
+%%ANKI
+Basic
+What makes a strict preorder more strict than a non-strict preorder?
+Back: Strict preorders do not allow relating members to themselves.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723902729104-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle\}$ a strict preorder on $\{a\}$?
+Back: $R$ isn't irreflexive.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723902729111-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, b \rangle, \langle b, c \rangle, \langle a, c \rangle\}$ a strict preorder on $\{a, b, c\}$?
+Back: N/A. It is.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723902729117-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, b \rangle \}$ a strict preorder on $\{a, b\}$?
+Back: $R$ isn't irreflexive.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723902729122-->
+END%%
+
+%%ANKI
+Cloze
+A {1:strict} preorder is equivalent to a {1:strict} partial order.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723902729128-->
+END%%
+
+%%ANKI
+Basic
+*Why* is a strict preorder also a strict partial order?
+Back: Irreflexivity and transitivity imply asymmetry (and antisymmetry).
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723902729134-->
+END%%
+
+%%ANKI
+Basic
+What equivalence in order theory serves as a mnemonic for "irreflexivity and transitivity imply asymmetry"?
+Back: A strict preorder is equivalent to a strict partial order.
+Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+<!--ID: 1723902729140-->
+END%%
+
 ## Partial Orders
 
-$R$ is a **partial order on $A$** iff $R$ is a binary relation on set $A$ that is reflexive on $A$, antisymmetric, and transitive.
-
-In other words, a partial order is an antisymmetric preorder.
+$R$ is a **partial order on $A$** iff $R$ is a binary relation on set $A$ that is reflexive on $A$, antisymmetric, and transitive. In other words, a partial order is an antisymmetric preorder.
 
 %%ANKI
 Basic
@@ -1506,7 +1577,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ a partial order on $\{a, b\}$?
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ a partial order on $\{a, b, c\}$?
 Back: N/A. It is.
 Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
 <!--ID: 1723816108524-->
@@ -1514,10 +1585,82 @@ END%%
 
 %%ANKI
 Basic
-*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle, \langle c, b \rangle\}$ a partial order on $\{a, b\}$?
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle, \langle c, b \rangle\}$ a partial order on $\{a, b, c\}$?
 Back: It isn't antisymmetric.
 Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
 <!--ID: 1723816108531-->
+END%%
+
+A **strict partial order** replaces reflexivity with irreflexivity. That is, $R$ is a strict partial order on $A$ iff $R$ is a binary relation on set $A$ that is irreflexive on $A$, antisymmetric, and transitive.
+
+%%ANKI
+Basic
+What distinguishes a partial order from a strict partial order?
+Back: Strict partial orders are irreflexive.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723902024372-->
+END%%
+
+%%ANKI
+Basic
+What is a strict partial order on $A$?
+Back: A binary relation on $A$ that is irreflexive on $A$, antisymmetric, and transitive.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723902024375-->
+END%%
+
+%%ANKI
+Basic
+What makes a strict partial order more strict than a non-strict partial order?
+Back: Strict partial orders do not allow relating members to themselves.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723902729147-->
+END%%
+
+%%ANKI
+Cloze
+Operator {$<$} typically denote a {strict} partial order.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723902024378-->
+END%%
+
+%%ANKI
+Cloze
+Operator {$\leq$} typically denote a {non-strict} partial order.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723902024382-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, b \rangle\}$ a strict partial order?
+Back: N/A. The question must provide a reference set.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723902024385-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ a strict partial order on $\{a, b, c\}$?
+Back: Because it isn't irreflexive.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723902024388-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, c \rangle, \langle b, c \rangle\}$ a strict partial order on $\{a, b, c\}$?
+Back: N/A. It is.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723902024391-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $R = \{\langle a, b \rangle, \langle b, c \rangle, \langle c, b \rangle\}$ a strict partial order on $\{a, b\}$?
+Back: It is neither antisymmetric nor transitive.
+Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+<!--ID: 1723902024394-->
 END%%
 
 ## Equivalence Relations
