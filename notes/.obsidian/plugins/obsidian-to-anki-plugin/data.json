@@ -178,7 +178,15 @@
     "function-injective.png",
     "function-surjective.png",
     "function-general.png",
-    "function-kernel.png"
+    "function-kernel.png",
+    "closed-addressing.png",
+    "open-addressing.png",
+    "directed-graph-example.png",
+    "undirected-graph-example.png",
+    "graph-isomorphic.png",
+    "graph-induced-subgraph.png",
+    "graph-subgraph.png",
+    "graph-non-subgraph.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -359,7 +367,7 @@
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
     "set/index.md": "c103501e345a1b8201a26f2e83ed8379",
-    "set/graphs.md": "f0cd201673f2a999321dda6c726e8734",
+    "set/graphs.md": "ce7030d3bae17b56319e8b5526a63c95",
     "_journal/2024-03-19.md": "a0807691819725bf44c0262405e97cbb",
     "_journal/2024-03/2024-03-18.md": "63c3c843fc6cfc2cd289ac8b7b108391",
     "awk/variables.md": "e40a20545358228319f789243d8b9f77",
@@ -632,7 +640,7 @@
     "_journal/2024-07-13.md": "13b5101306b5542b8a1381a6477378ca",
     "_journal/2024-07/2024-07-12.md": "6603ed8a3f9a9e87bf40e81b03e96356",
     "hashing/static.md": "3ec6eaee73fb9b599700f5a56b300b83",
-    "hashing/addressing.md": "583da2fc0320a2f1daacc0e01ca66d83",
+    "hashing/addressing.md": "01b33abe25aae285e1641fa43470065b",
     "ontology/index.md": "0994403dcd84415f1459752129b55f65",
     "ontology/permissivism.md": "643e815a79bc5c050cde9f996aa44ef5",
     "ontology/properties.md": "91ece501551c444afcd119d7197958ef",
@@ -687,7 +695,7 @@
     "ontology/rdf/index.md": "36424c9bad6088cdee67f74e3b8a019f",
     "ontology/philosophy/permissivism.md": "643e815a79bc5c050cde9f996aa44ef5",
     "ontology/philosophy/nominalism.md": "46245c644238157e15c7cb6def27d90a",
-    "ontology/philosophy/index.md": "6c7c60f91f78fdc1cdd8c012b1ac4ebd",
+    "ontology/philosophy/index.md": "d132b8f4a69bdb664c822366fb27fa64",
     "ontology/philosophy/dialetheism.md": "56dd05b38519f90c5cab93637978b3b3",
     "_journal/2024-07-29.md": "a480e577b06a94755b6ebf4ac9ee5732",
     "_journal/2024-07/2024-07-28.md": "ff5dcfb3dc1b5592894363414e20b02f",
@@ -730,7 +738,9 @@
     "_journal/2024-08/2024-08-15.md": "7c3a96a25643b62b0064bf32cb17d92f",
     "_journal/2024-08-17.md": "b06a551560c377f61a1b39286cd43cee",
     "_journal/2024-08/2024-08-16.md": "096d9147a9e3e7a947558f8dec763a2c",
-    "set/order.md": "373f4336d4845a3c2188d2215ac5fbc4"
+    "set/order.md": "373f4336d4845a3c2188d2215ac5fbc4",
+    "_journal/2024-08-18.md": "240ce6377b91d977f4fedc30724891f6",
+    "ontology/philosophy/properties.md": "41b32249d3e4c23d73ddb3a417d65a4c"
   },
   "fields_dict": {
     "Basic": [

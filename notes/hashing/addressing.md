@@ -596,7 +596,7 @@ END%%
 
 %%ANKI
 Cloze
-{Probing} refers to the {sequential examining of slots} performed in open addressing.
+{Probing} refers to the {iterative examining of slots} performed in open addressing.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1722080563925-->
 END%%

@@ -655,21 +655,88 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1710807788304-->
 END%%
 
-## Paths
+### Handshake Lemma
 
-A **path of length $k$** from a vertex $u$ to vertex $u'$ is a sequence $p = \langle v_0, v_1, \ldots, v_k \rangle$ of vertices such that $u = v_0$, $u' = v_k$, and $(v_{i-1}, v_i) \in E$ for $i = 1, 2, \ldots, k$. In this case, we say $u'$ is **reachable** from $u$ via $p$. A path is **simple** if all vertices in the path are distinct.
+In any graph, the sum of the degrees of vertices in the graph is always twice the number of edges: $$\sum_{v \in V} d(v) = 2e.$$
 
 %%ANKI
 Basic
-Let $G = \langle V, E \rangle$ be a graph. What *is* a path from vertex $u$ to vertex $v$?
-Back: A sequence of vertices $\langle u, \ldots, v \rangle$ such that there is an edge for each consecutive pair of vertices.
+*Why* is the handshake lemma named the way it is?
+Back: It invokes imagery of two vertices meeting (i.e. shaking hands).
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992099102-->
+END%%
+
+%%ANKI
+Basic
+Does the handshake lemma apply to undirected graphs or directed graphs?
+Back: Both.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992099108-->
+END%%
+
+%%ANKI
+Basic
+In graph theory, what does the handshake lemma state?
+Back: For any graph, the sum of the degree of vertices is twice the number of edges.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992099111-->
+END%%
+
+%%ANKI
+Cloze
+For any graph, the {sum of the degree of vertices} is twice the {number of edges}.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992099116-->
+END%%
+
+%%ANKI
+Basic
+How is the handshake lemma expressed using summation notation?
+Back: $\sum_{v \in V} d(v) = 2e$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992099120-->
+END%%
+
+%%ANKI
+Basic
+Consider a graph with the following degree sequence. How many vertices are there? $$\langle 4, 4, 3, 3, 3, 2, 1 \rangle$$
+Back: $7$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992099125-->
+END%%
+
+%%ANKI
+Basic
+Consider a graph with the following degree sequence. How many edges are there? $$\langle 4, 4, 3, 3, 3, 2, 1 \rangle$$
+Back: $10$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992099129-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the handshake lemma true?
+Back: Every edge adds to the degree of two vertices.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992099134-->
+END%%
+
+## Walks
+
+Let $G = (V, E)$ be a graph. A **walk** of $G$ is a sequence of vertices such that consecutive vertices in the sequence are adjacent in $G$. More precisely, a walk (of length $k$) from vertex $v_0$ to vertex $v_k$ is a sequence $w = \langle v_0, v_1, \ldots, v_k \rangle$ of vertices such that $(v_{i-1}, v_i) \in E$ for $i = 1, 2, \ldots, k$. We say $v_k$ is **reachable** from $v_0$ via $w$.
+
+%%ANKI
+Basic
+What is a walk of (say) graph $G$?
+Back: A sequence of vertices such that consecutive vertices in the sequence are adjacent in $G$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788307-->
 END%%
 
 %%ANKI
 Basic
-Let $G = \langle V, E \rangle$ be a graph with path $\langle v_0, v_1, \ldots, v_k \rangle$. What is the path's length?
+Let $G = \langle V, E \rangle$ be a graph with walk $\langle v_0, v_1, \ldots, v_k \rangle$. What is the walk's length?
 Back: $k$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788310-->
@@ -677,23 +744,23 @@ END%%
 
 %%ANKI
 Basic
-In terms of edges, what is the length of a path?
-Back: The number of edges specified in the path.
+In terms of edges, what is the length of a walk?
+Back: The number of edges specified in the walk.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788313-->
 END%%
 
 %%ANKI
 Basic
-In terms of vertices, what is the length of a path?
-Back: One less than the number of vertices specified in the path.
+In terms of vertices, what is the length of a walk?
+Back: One less than the number of vertices specified in the walk.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788317-->
 END%%
 
 %%ANKI
 Basic
-Let $G = \langle V, E \rangle$ be a graph. A path of $G$ is said to contain what?
+Let $G = \langle V, E \rangle$ be a graph. A walk of $G$ is said to contain what?
 Back: Vertices and edges.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788320-->
@@ -701,26 +768,193 @@ END%%
 
 %%ANKI
 Basic
-How does a path of a graph relate to the concept of adjacency?
-Back: Each vertex must be adjacent to the vertex preceding it in the path.
+How does a walk of a graph relate to the concept of adjacency?
+Back: Each vertex must be adjacent to the vertex preceding it in the underlying sequence.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788323-->
 END%%
 
 %%ANKI
 Basic
-How does a path of a directed graph relate to the concept of incidence?
-Back: There exists an edge incident to each vertex that is also incident from the vertex preceding it in the path.
+How does a walk of a directed graph relate to the concept of incidence?
+Back: There exists an edge incident to each vertex that is also incident from the vertex preceding it in the underlying sequence.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788326-->
 END%%
 
 %%ANKI
 Basic
-How does a path of an undirected graph relate to the concept of incidence?
-Back: There exists an edge incident on each vertex and the vertex preceding it in the path.
+How does a walk of an undirected graph relate to the concept of incidence?
+Back: There exists an edge incident on each vertex and the vertex preceding it in the underlying sequence.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788329-->
+END%%
+
+%%ANKI
+Basic
+Reachability is a binary relation on what two kinds of objects?
+Back: Vertices.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1710807788359-->
+END%%
+
+%%ANKI
+Basic
+How does reachability relate to adjacency?
+Back: Reachability is the transitive generalization of adjacency.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1710807788364-->
+END%%
+
+%%ANKI
+Basic
+What proximity-based term describes distinct vertices being maximally close?
+Back: Adjacency.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1710807788370-->
+END%%
+
+%%ANKI
+Cloze
+{Reachability} is the generalization of {adjacency}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1710807788375-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for vertex $u$ to be reachable to vertex $v$?
+Back: There exists a walk from $u$ to $v$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1710807788379-->
+END%%
+
+%%ANKI
+Basic
+What path must exist in a digraph where vertex $u$ is adjacent to vertex $v$?
+Back: $\langle v, u \rangle$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1710807788383-->
+END%%
+
+%%ANKI
+Cloze
+Reachable is to walks of length {1:$\geq 0$} whereas adjacency is to walks of length {1:$1$}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1710807788388-->
+END%%
+
+%%ANKI
+Basic
+What are the walks of length $2$ from vertex $2$ to vertex $2$?
+![[directed-graph-example.png]]
+Back: $\langle 2, 2, 2 \rangle$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1710807788348-->
+END%%
+
+### Trails
+
+A **trail** is a walk in which no edge is repeated.
+
+%%ANKI
+Basic
+What is a trail of (say) graph $G$?
+Back: A walk of $G$ in which no edge is repeated.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992099138-->
+END%%
+
+%%ANKI
+Basic
+Which of walks or trails is more general?
+Back: Walks.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992099148-->
+END%%
+
+%%ANKI
+Basic
+What are the trails of length $2$ from vertex $2$ to vertex $2$?
+![[directed-graph-example.png]]
+Back: N/A.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1723992099157-->
+END%%
+
+%%ANKI
+Basic
+What are the trails of length $4$ from vertex $2$ to vertex $2$?
+![[directed-graph-example.png]]
+Back: $\langle 2, 4, 1, 2, 2 \rangle$ and $\langle 2, 5, 4, 1, 2 \rangle$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1723992099163-->
+END%%
+
+%%ANKI
+Basic
+What are the trails from vertex $2$ to vertex $1$?
+![[undirected-graph-example.png]]
+Back: $\langle 2, 1 \rangle$ and $\langle 2, 5, 1 \rangle$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1723992099175-->
+END%%
+
+### Paths
+
+A **path** is a trail in which no vertex is repeated (except possibly the first and last). A **cycle** is a path that starts and ends at the same vertex. A graph with no cycles is **acyclic**.
+
+In computer science, a cycle is sometimes required to have more than one edge:
+
+* In a directed graph, path $\langle v_0, v_1, \ldots, v_k \rangle$ is a cycle if $v_0 = v_k$ and the path contains at least one edge.
+* In an undirected graph, path $\langle v_0, v_1, \ldots, v_k \rangle$ is a cycle if $v_0 = v_k$ and all edges are distinct.
+
+%%ANKI
+Basic
+What is a path of (say) graph $G$?
+Back: A trail of $G$ in which no vertex is repeated (except possibly the first and last).
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992099142-->
+END%%
+
+%%ANKI
+Basic
+What is a cycle of (say) graph $G$?
+Back: A path of $G$ that starts and ends at the same vertex.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992829997-->
+END%%
+
+%%ANKI
+Basic
+What is a trivial cycle of (say) graph $G$?
+Back: A cycle of length $0$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992830003-->
+END%%
+
+%%ANKI
+Basic
+Which of trails or paths are more general?
+Back: Trails.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992099152-->
+END%%
+
+%%ANKI
+Basic
+Which of cycles or paths are more general?
+Back: Paths.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992830005-->
+END%%
+
+%%ANKI
+Basic
+Which of cycles or trails are more general?
+Back: Trails.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723992830008-->
 END%%
 
 %%ANKI
@@ -761,11 +995,11 @@ END%%
 
 %%ANKI
 Basic
-What are the paths of length $2$ from vertex $2$ to vertex $2$?
+What are the paths of length $4$ from vertex $2$ to vertex $2$?
 ![[directed-graph-example.png]]
-Back: $\langle 2, 2, 2 \rangle$
+Back: $\langle 2, 5, 4, 1, 2 \rangle$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788348-->
+<!--ID: 1723992099168-->
 END%%
 
 %%ANKI
@@ -779,7 +1013,7 @@ END%%
 
 %%ANKI
 Basic
-What are the paths from vertex $3$ to vertex $6$?
+What are the walks from vertex $3$ to vertex $6$?
 ![[undirected-graph-example.png]]
 Back: $\langle 3, 6 \rangle$, $\langle 3, 6, 3, 6 \rangle$, $\ldots$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -788,71 +1022,16 @@ END%%
 
 %%ANKI
 Basic
-Reachability is a binary relation on what two kinds of objects?
-Back: Vertices.
+What are the paths from vertex $3$ to vertex $6$?
+![[undirected-graph-example.png]]
+Back: $\langle 3, 6 \rangle$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788359-->
+<!--ID: 1723992830011-->
 END%%
 
 %%ANKI
 Basic
-How does reachability relate to adjacency?
-Back: Reachability is the transitive generalization of adjacency.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788364-->
-END%%
-
-%%ANKI
-Basic
-What proximity-based term describes distinct vertices being maximally close?
-Back: Adjacency.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788370-->
-END%%
-
-%%ANKI
-Cloze
-{Reachability} is the generalization of {adjacency}.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788375-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for vertex $u$ to be reachable to vertex $v$?
-Back: There exists a path from $u$ to $v$.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788379-->
-END%%
-
-%%ANKI
-Basic
-What path must exist in a digraph where vertex $u$ is adjacent to vertex $v$?
-Back: $\langle v, u \rangle$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788383-->
-END%%
-
-%%ANKI
-Cloze
-Reachable is to paths of length {1:$\geq 0$} whereas adjacency is to paths of length {1:$1$}.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788388-->
-END%%
-
-A path is **simple** if all vertices in the path are distinct. In a directed graph, path $\langle v_0, v_1, \ldots, v_k \rangle$ forms a **cycle** if $v_0 = v_k$ and the path contains at least one edge. In an undirected graph, path $\langle v_0, v_1, \ldots, v_k \rangle$ forms a cycle if $v_0 = v_k$ and all edges are distinct. We say a cycle is **simple** if all vertices in the path (barring the first and last) are distinct. A graph with no simple cycles is **acyclic**.
-
-%%ANKI
-Basic
-What does it mean for a path to be simple?
-Back: All the vertices in the path are distinct.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788392-->
-END%%
-
-%%ANKI
-Basic
-In a directed graph, when is $\langle v_0, v_1, \ldots, v_k \rangle$ considered a cycle?
+In a directed graph, when is path $\langle v_0, v_1, \ldots, v_k \rangle$ considered a non-trivial cycle?
 Back: When $v_0 = v_k$ and there is at least one edge in the path.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788396-->
@@ -876,15 +1055,7 @@ END%%
 
 %%ANKI
 Basic
-What does it mean for a cycle to be simple?
-Back: Except for the first which equals the last, all the vertices in the path are distinct.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788414-->
-END%%
-
-%%ANKI
-Basic
-How many edges exist in a cycle of a directed graph?
+How many edges exist in a non-trivial cycle of a directed graph?
 Back: At least one.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788421-->
@@ -892,7 +1063,7 @@ END%%
 
 %%ANKI
 Basic
-In an undirected graph, when is $\langle v_0, v_1, \ldots, v_k \rangle$ considered a cycle?
+In an undirected graph, when is $\langle v_0, v_1, \ldots, v_k \rangle$ considered a non-trivial cycle?
 Back: When $v_0 = v_k$, $k > 0$, and all edges in the path are distinct.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788428-->
@@ -900,34 +1071,10 @@ END%%
 
 %%ANKI
 Basic
-How many edges exist in a cycle of an undirected graph?
+How many edges exist in a non-trivial cycle of an undirected graph?
 Back: At least three.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788435-->
-END%%
-
-%%ANKI
-Cloze
-Path $\langle 1, 2, 4, 1 \rangle$ is not a simple {1:path} but is a simple {1:cycle}.
-![[directed-graph-example.png]]
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788442-->
-END%%
-
-%%ANKI
-Cloze
-Path $\langle 1, 2, 4 \rangle$ is a simple {1:path} but not a simple {1:cycle}.
-![[directed-graph-example.png]]
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788451-->
-END%%
-
-%%ANKI
-Basic
-With respect to paths, what ambiguity exists with the term "simple"?
-Back: Whether we are referring to simple paths or simple cycles.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788458-->
 END%%
 
 %%ANKI
@@ -950,9 +1097,18 @@ END%%
 
 %%ANKI
 Basic
-What are the simple paths of length $1$ to vertex $2$?
+What are the paths of length $1$ to vertex $2$?
 ![[directed-graph-example.png]]
-Back: $\langle 1, 2 \rangle$
+Back: $\langle 1, 2 \rangle$ and $\langle 2, 2 \rangle$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1710807788479-->
+END%%
+
+%%ANKI
+Basic
+What are the cycles to vertex $2$?
+![[directed-graph-example.png]]
+Back: $\langle 2 \rangle$, $\langle 2, 2 \rangle$, $\langle 2, 4, 1, 2 \rangle$, and $\langle 2, 5, 4, 1, 2 \rangle$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788479-->
 END%%
@@ -970,7 +1126,7 @@ END%%
 Basic
 What are the paths of length $2$ to vertex $2$?
 ![[directed-graph-example.png]]
-Back: $\langle 4, 1, 2 \rangle$ and $\langle 2, 2, 2 \rangle$
+Back: $\langle 4, 1, 2 \rangle$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788487-->
 END%%
@@ -979,32 +1135,14 @@ END%%
 Basic
 What are the cycles of length $3$ to vertex $2$?
 ![[directed-graph-example.png]]
-Back: $\langle 2, 4, 1, 2 \rangle$ and $\langle 2, 2, 2, 2 \rangle$
+Back: $\langle 2, 4, 1, 2 \rangle$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788490-->
 END%%
 
 %%ANKI
 Basic
-What are the simple cycles of length $3$ to vertex $2$?
-![[directed-graph-example.png]]
-Back: $\langle 2, 4, 1, 2 \rangle$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788493-->
-END%%
-
-%%ANKI
-Basic
-What are all the simple cycles containing vertex $2$?
-![[directed-graph-example.png]]
-Back: $\langle 2, 2 \rangle$, $\langle 2, 4, 1, 2 \rangle$, and $\langle 2, 5, 4, 1, 2 \rangle$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1710807788497-->
-END%%
-
-%%ANKI
-Basic
-Why isn't $\langle 3, 6, 3 \rangle$ considered a cycle?
+*Why* isn't $\langle 3, 6, 3 \rangle$ considered a cycle?
 ![[undirected-graph-example.png]]
 Back: All the edges in the path must be distinct.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -1022,7 +1160,7 @@ END%%
 
 %%ANKI
 Basic
-What are the simple paths to vertex $2$?
+What are the paths to vertex $2$?
 ![[undirected-graph-example.png]]
 Back: $\langle 2 \rangle$, $\langle 1, 2 \rangle$, $\langle 5, 2 \rangle$, $\langle 1, 5, 2 \rangle$, $\langle 5, 1, 2 \rangle$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -1031,18 +1169,18 @@ END%%
 
 %%ANKI
 Basic
-What are the simple cycles containing vertex $2$?
+What are the cycles to vertex $2$?
 ![[undirected-graph-example.png]]
-Back: $\langle 2, 5, 1, 2 \rangle$ and $\langle 2, 1, 5, 2 \rangle$
+Back: $\langle 2 \rangle$, $\langle 2, 5, 1, 2 \rangle$ and $\langle 2, 1, 5, 2 \rangle$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788519-->
 END%%
 
 %%ANKI
 Basic
-What are the cycles containing vertex $3$?
+What are the cycles to vertex $3$?
 ![[undirected-graph-example.png]]
-Back: N/A
+Back: $\langle 3 \rangle$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788525-->
 END%%
@@ -1050,7 +1188,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for a graph to be acyclic?
-Back: It has no simple cycles.
+Back: It has no cycles.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788532-->
 END%%
