@@ -1313,6 +1313,7 @@ END%%
 Cloze
 Let $Q$, $A$, and $B$ be sets. Then {$Q \restriction (A - B)$} $=$ {$(Q \restriction A) - (Q \restriction B)$}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723933434787-->
 END%%
 
 %%ANKI

@@ -216,7 +216,7 @@ END%%
 
 ### Literals
 
-Negative integer literals are typed in a counterintuitive way. When the compiler sees a number of form `-X`, the type of `X` is determined *before* being negated. Promotion rules are as follows:
+Negative integer literals are typed in a counterintuitive way. When the compiler sees a number of form `-X`, the type of `X` is determined *before* being negated. Promotion follows the **first fit rule** described as follows:
 
 | Decimal     | Oct/Hex              |
 | ----------- | -------------------- |
@@ -226,6 +226,69 @@ Negative integer literals are typed in a counterintuitive way. When the compiler
 | `-`         | `unsigned long`      |
 | `-`         | `long long`          |
 | `-`         | `unsigned long long` |
+
+%%ANKI
+Basic
+What is the first fit rule?
+Back: A specification on what type is given to an integer literal.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852091-->
+END%%
+
+%%ANKI
+Basic
+What is the signedness of a decimal integer literal?
+Back: `signed`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852099-->
+END%%
+
+%%ANKI
+Basic
+What is the signedness of an octal integer literal?
+Back: `signed` or `unsigned`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852105-->
+END%%
+
+%%ANKI
+Basic
+What is the signedness of a hexadecimal integer literal?
+Back: `signed` or `unsigned`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852113-->
+END%%
+
+%%ANKI
+Basic
+The first fit rule lists what types (in order) for decimal integer literals?
+Back: `int`, `long`, and `long long`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852124-->
+END%%
+
+%%ANKI
+Basic
+The first fit rule lists what types (in order) for octal integer literals?
+Back: `int`, `unsigned`, `long`, `unsigned long`, `long long`, and `unsigned long long`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852132-->
+END%%
+
+%%ANKI
+Basic
+The first fit rule lists what types (in order) for hexadecimal integer literals?
+Back: `int`, `unsigned`, `long`, `unsigned long`, `long long`, and `unsigned long long`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852139-->
+END%%
+
+%%ANKI
+Basic
+The first fit rule lists what types (in order) for hexadecimal integer literals?
+Back: `int`, `unsigned`, `long`, `unsigned long`, `long long`, and `unsigned long long`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+END%%
 
 %%ANKI
 Basic
@@ -265,6 +328,14 @@ How do we specify a hexadecimal integer literal?
 Back: Prepend the literal with a `0x` or `0X`.
 Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710673807995-->
+END%%
+
+%%ANKI
+Basic
+Why avoid negative hexadecimal integer literals?
+Back: Depending on value, the resulting type may be `unsigned`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723937852145-->
 END%%
 
 %%ANKI
@@ -318,38 +389,6 @@ Cloze
 `INT_MAX` is to {`<limits.h>`} whereas `INT32_MAX` is to {`<stdint.h>`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708615249873-->
-END%%
-
-%%ANKI
-Basic
-What suffix can be used to denote an `unsigned` integer literal?
-Back: Case-insensitive `U`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708615249876-->
-END%%
-
-%%ANKI
-Basic
-What suffix can be used to denote a `long` integer literal?
-Back: Case-insensitive `L`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708631820847-->
-END%%
-
-%%ANKI
-Basic
-What suffix can be used to denote a `long long` integer literal?
-Back: Case-insensitive `LL`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708631820850-->
-END%%
-
-%%ANKI
-Basic
-What suffix can be used to denote an `unsigned long long` integer literal?
-Back: Case-insensitive `ULL`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708631820856-->
 END%%
 
 %%ANKI
@@ -417,6 +456,178 @@ What does "signedness" of a variable refer to?
 Back: Whether the variable was declared `signed` or `unsigned`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1714677608769-->
+END%%
+
+Integer constants can be forced to be unsigned or to be a type with minimal width by using the following suffixes:
+
+| Suffix | Type                 |
+| ------ | -------------------- |
+| `U`    | `unsigned`           |
+| `L`    | `long`               |
+| `LL`   | `long long`          |
+| `ULL`  | `unsigned long long` |
+
+%%ANKI
+Basic
+Is an integer literal without a suffix (e.g. `U`) signed or unsigned?
+Back: This depends on the first fit rule.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852153-->
+END%%
+
+%%ANKI
+Basic
+What type is given to an integer literal without a suffix (e.g. `U`)?
+Back: This depends on the first fit rule.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723938382384-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote an `unsigned` integer literal?
+Back: Case-insensitive `U`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249876-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `long` integer literal?
+Back: Case-insensitive `L`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820847-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `long long` integer literal?
+Back: Case-insensitive `LL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820850-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote an `unsigned long long` integer literal?
+Back: Case-insensitive `ULL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820856-->
+END%%
+
+%%ANKI
+Basic
+What type is given to integer literal `-1`?
+Back: `int`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382388-->
+END%%
+
+%%ANKI
+Basic
+What type is given to integer literal `-1U`?
+Back: `unsigned int`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382391-->
+END%%
+
+%%ANKI
+Basic
+What type is given to integer literal `1`?
+Back: `int`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382394-->
+END%%
+
+%%ANKI
+Basic
+What type is given to integer literal `0x0U`?
+Back: `unsigned int`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382398-->
+END%%
+
+## Floating Point
+
+### Literals
+
+Floating-point constants can be forced to be a type with minimal width by using the following suffixes:
+
+| Suffix | Type          |
+| ------ | ------------- |
+| `F`    | `float`       |
+| `L`    | `long double` |
+
+%%ANKI
+Basic
+What type is given to a floating-point literal without a suffix (e.g. `F`)?
+Back: `double`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723938382401-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `float` floating-point literal?
+Back: Case-insensitive `F`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382405-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `double` floating-point literal?
+Back: N/A. Do not use a suffix.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382409-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `long double` floating-point literal?
+Back: Case-insensitive `L`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382414-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0`?
+Back: `double`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382418-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0F`?
+Back: `float`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382423-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0FL`?
+Back: N/A. Invalid suffix.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382427-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0L`?
+Back: `long double`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382432-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0LL`?
+Back: N/A. Invalid suffix.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382436-->
 END%%
 
 ## Bibliography

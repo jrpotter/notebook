@@ -603,6 +603,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1716395245855-->
 END%%
 
+%%ANKI
+Basic
+What does $\bigcup\,\{x\}$ evaluate to?
+Back: $x$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1723933434782-->
+END%%
+
 ### General Form
 
 For any set $A$, there exists a set $B$ whose elements are exactly the members of the members of $A$: $$\forall A, \exists B, \forall x, x \in B \Leftrightarrow (\exists b \in B, x \in b)$$
