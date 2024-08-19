@@ -187,7 +187,15 @@
     "graph-induced-subgraph.png",
     "graph-subgraph.png",
     "graph-non-subgraph.png",
-    "cyclic-undirected-labelled.png"
+    "cyclic-undirected-labelled.png",
+    "free-tree.png",
+    "forest.png",
+    "cyclic-undirected.png",
+    "rooted-tree.png",
+    "ordered-rooted-tree-cmp.png",
+    "ordered-binary-tree-cmp.png",
+    "lcrs-nodes.png",
+    "binary-tree-nodes.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -388,7 +396,7 @@
     "x86-64/declarations.md": "75bc7857cf2207a40cd7f0ee056af2f2",
     "x86-64/instructions.md": "06b7fbe1a7a9568b80239310eb72e87a",
     "git/refs.md": "e20c2c9b14ba6c2bd235416017c5c474",
-    "set/trees.md": "7fe6c967b4221afff80ec0a3a85517c5",
+    "set/trees.md": "f5c6cd3bf1834b84fb0a55114a9c80f6",
     "_journal/2024-03-24.md": "1974cdb9fc42c3a8bebb8ac76d4b1fd6",
     "_journal/2024-03/2024-03-23.md": "ad4e92cc2bf37f174a0758a0753bf69b",
     "_journal/2024-03/2024-03-22.md": "a509066c9cd2df692549e89f241d7bd9",
@@ -563,7 +571,7 @@
     "x86-64/instructions/condition-codes.md": "9c05ed99f5c96162e25f0ec4db55c656",
     "x86-64/instructions/logical.md": "818428b9ef84753920dc61e5c2de9199",
     "x86-64/instructions/arithmetic.md": "271218d855e7291f119f96e91f582738",
-    "x86-64/instructions/access.md": "c19bc3392cf493fcc9becf46c818cc50",
+    "x86-64/instructions/access.md": "3efe399b89b947ab280dc1e045675390",
     "x86-64/instructions/index.md": "72c19067e938ab39ea51d25d6ac2bad9",
     "_journal/2024-06-09.md": "935b3ddf65c51e680ac5c000c7e380af",
     "_journal/2024-06/2024-06-08.md": "9e1ebc8882a395b96ca765ad5c982d68",
@@ -741,7 +749,10 @@
     "_journal/2024-08/2024-08-16.md": "096d9147a9e3e7a947558f8dec763a2c",
     "set/order.md": "373f4336d4845a3c2188d2215ac5fbc4",
     "_journal/2024-08-18.md": "6f8aec69e00401b611db2a377a3aace5",
-    "ontology/philosophy/properties.md": "41b32249d3e4c23d73ddb3a417d65a4c"
+    "ontology/philosophy/properties.md": "41b32249d3e4c23d73ddb3a417d65a4c",
+    "_journal/2024-08-19.md": "e233a2225fdf95a161614e0bc22fce20",
+    "_journal/2024-08/2024-08-18.md": "6f8aec69e00401b611db2a377a3aace5",
+    "_journal/2024-08/2024-08-17.md": "b06a551560c377f61a1b39286cd43cee"
   },
   "fields_dict": {
     "Basic": [

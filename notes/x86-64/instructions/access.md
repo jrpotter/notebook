@@ -294,15 +294,6 @@ Tags: c17
 <!--ID: 1714677608754-->
 END%%
 
-%%ANKI
-Basic
-Dereferencing a pointer in C equates to what two operations in x86?
-Back: Copying the pointer into a register and then using the register in a memory reference.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
-<!--ID: 1714677608758-->
-END%%
-
 ## PUSH and POP
 
 | Instruction | Operands | Effect                                      | Description    |

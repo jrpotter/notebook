@@ -126,9 +126,9 @@ END%%
 
 A **rooted tree** is a free tree in which one vertex is distinguished/blessed as the **root**. We call vertices of rooted trees **nodes**.
 
-Let $T$ be a rooted tree with root $r$. Any node $y$ on the simple path from $r$ to node $x$ is an **ancestor** of $x$. Likewise, $x$ is a **descendant** of $y$. If the last edge on the path from $r$ to $x$ is $\{y, x\}$, $y$ is the **parent** of $x$ and $x$ is a **child** of $y$. Nodes with the same parent are called **siblings**.
+Let $T$ be a rooted tree with root $r$. Any node $y$ on the [[graphs#Paths|path]] from $r$ to node $x$ is an **ancestor** of $x$. Likewise, $x$ is a **descendant** of $y$. If the last edge on the path from $r$ to $x$ is $\{y, x\}$, $y$ is the **parent** of $x$ and $x$ is a **child** of $y$. Nodes with the same parent are called **siblings**.
 
-A node with no children is an **external node** or **leaf**. A node with at least one child is an **internal node** or **nonleaf**. The number of children of a node is the **degree** of said node. The length of the simple path from the root to a node $x$ is the **depth** of $x$ in $T$. A **level** of a tree consists of all nodes at the same depth. The **height** of a node in a tree is the length of the longest simple path from the node to a leaf.
+A node with no children is an **external node** or **leaf**. A node with at least one child is an **internal node** or **nonleaf**. The number of children of a node is the **degree** of said node. The length of the path from the root to a node $x$ is the **depth** of $x$ in $T$. A **level** of a tree consists of all nodes at the same depth. The **height** of a node in a tree is the length of the longest path from the node to a leaf.
 
 %%ANKI
 Basic
@@ -220,7 +220,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for node $y$ to be an ancestor of node $x$ in a rooted tree?
-Back: The simple path from the root to $x$ contains $y$.
+Back: The path from the root to $x$ contains $y$.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1711136844980-->
 END%%
@@ -228,7 +228,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for node $y$ to be a descendent of node $x$ in a rooted tree?
-Back: The simple path from the root to $y$ contains $x$.
+Back: The path from the root to $y$ contains $x$.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1711136844983-->
 END%%
@@ -402,7 +402,7 @@ END%%
 %%ANKI
 Basic
 Let $T$ be a rooted tree. What does the depth of a node refer to?
-Back: The length of the simple path from the root to the node.
+Back: The length of the path from the root to the node.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1711136845107-->
 END%%
@@ -418,7 +418,7 @@ END%%
 %%ANKI
 Basic
 Let $T$ be a rooted tree. What does the height of a node refer to?
-Back: The length of the longest simple path from said node to a leaf.
+Back: The length of the longest path from said node to a leaf.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1711136845119-->
 END%%
@@ -466,7 +466,7 @@ END%%
 %%ANKI
 Basic
 Let $T$ be a rooted tree of height $h$. Which nodes have depth $h$?
-Back: The external nodes on the longest simple paths from the root to said nodes.
+Back: The external nodes on the longest paths from the root to said nodes.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1711136845150-->
 END%%
