@@ -186,7 +186,8 @@
     "graph-isomorphic.png",
     "graph-induced-subgraph.png",
     "graph-subgraph.png",
-    "graph-non-subgraph.png"
+    "graph-non-subgraph.png",
+    "cyclic-undirected-labelled.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -367,7 +368,7 @@
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
     "set/index.md": "c103501e345a1b8201a26f2e83ed8379",
-    "set/graphs.md": "ce7030d3bae17b56319e8b5526a63c95",
+    "set/graphs.md": "6f08a3e8e4896b0325aef6c452bfbb56",
     "_journal/2024-03-19.md": "a0807691819725bf44c0262405e97cbb",
     "_journal/2024-03/2024-03-18.md": "63c3c843fc6cfc2cd289ac8b7b108391",
     "awk/variables.md": "e40a20545358228319f789243d8b9f77",
@@ -739,7 +740,7 @@
     "_journal/2024-08-17.md": "b06a551560c377f61a1b39286cd43cee",
     "_journal/2024-08/2024-08-16.md": "096d9147a9e3e7a947558f8dec763a2c",
     "set/order.md": "373f4336d4845a3c2188d2215ac5fbc4",
-    "_journal/2024-08-18.md": "240ce6377b91d977f4fedc30724891f6",
+    "_journal/2024-08-18.md": "6f8aec69e00401b611db2a377a3aace5",
     "ontology/philosophy/properties.md": "41b32249d3e4c23d73ddb3a417d65a4c"
   },
   "fields_dict": {

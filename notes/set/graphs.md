@@ -1201,6 +1201,42 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1710807788538-->
 END%%
 
+%%ANKI
+Basic
+With maximum specificity, is $\langle B, D, E, J, K, B, A \rangle$ a path, trail, or walk?
+![[cyclic-undirected-labelled.png]]
+Back: A trail.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723995290880-->
+END%%
+
+%%ANKI
+Basic
+With maximum specificity, is $\langle B, D, E, J, K, B \rangle$ a path, trail, or walk?
+![[cyclic-undirected-labelled.png]]
+Back: A path.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723995290889-->
+END%%
+
+%%ANKI
+Basic
+With maximum specificity, is $\langle B, D, B, K, L \rangle$ a path, trail, or walk?
+![[cyclic-undirected-labelled.png]]
+Back: A walk.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723995290893-->
+END%%
+
+%%ANKI
+Basic
+With maximum specificity, is $\langle A, B, D \rangle$ a path, trail, or walk?
+![[cyclic-undirected-labelled.png]]
+Back: A path.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1723995290896-->
+END%%
+
 ## Isomorphisms
 
 An **isomorphism** between two graphs $G_1$ and $G_2$ is a bijection $f \colon V_1 \rightarrow V_2$ between the vertices of the graphs such that $(a, b)$ is an edge in $G_1$ if and only if $(f(a), f(b))$ is an edge in $G_2$. Here parenthesis are used to denote either ordered pairs (for directed graphs) or unordered pairs (for undirected graphs).
