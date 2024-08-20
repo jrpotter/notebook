@@ -1,5 +1,5 @@
 ---
-title: Condition Code Operations
+title: Condition Operations
 TARGET DECK: Obsidian::STEM
 FILE TAGS: x86-64
 tags:
@@ -7,6 +7,10 @@ tags:
 ---
 
 ## Overview
+
+A number of instructions operate with respect to the [[registers#Condition Codes|condition code registers]].
+
+## CMP and TEST
 
 | Instruction  | Operands   | Based On              | Description |
 | ------------ | ---------- | --------------------- | ----------- |

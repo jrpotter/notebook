@@ -83,6 +83,210 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1713212889874-->
 END%%
 
+%%ANKI
+Basic
+How many bytes make up the `%rax` register?
+Back: $8$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420029-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%ax` register?
+Back: $2$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420032-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%al` register?
+Back: $1$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420035-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%eax` register?
+Back: $4$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420039-->
+END%%
+
+%%ANKI
+Cloze
+{1:Double words} are to {2:`%eax`} whereas {2:quad words} are to {1:`%rax`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420043-->
+END%%
+
+%%ANKI
+Cloze
+{1:Words} are to {2:`%ax`} whereas {2:bytes} are to {1:`%al`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420047-->
+END%%
+
+%%ANKI
+Basic
+How do you access the low-order 2 bytes of `%rax`?
+Back: By using `%ax`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420052-->
+END%%
+
+%%ANKI
+Basic
+How do you access the low-order 4 bytes of `%rax`?
+Back: By using `%eax`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420056-->
+END%%
+
+%%ANKI
+Basic
+How do you access the low-order byte of `%rax`?
+Back: By using `%al`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420060-->
+END%%
+
+%%ANKI
+Cloze
+By convention, register {`%rax`} is used for {return values}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420064-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%rsp` register?
+Back: $8$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420068-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%sp` register?
+Back: $2$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420071-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%spl` register?
+Back: $1$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420075-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%esp` register?
+Back: $4$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420079-->
+END%%
+
+%%ANKI
+Cloze
+{1:Words} are to {2:`%sp`} whereas {2:double words} are to {1:`%esp`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420082-->
+END%%
+
+%%ANKI
+Cloze
+{1:Bytes} are to {2:`%spl`} whereas {2:quad words} are to {1:`%rsp`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420086-->
+END%%
+
+%%ANKI
+Basic
+How do you access the low-order 2 bytes of `%rsp`?
+Back: By using `%sp`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420090-->
+END%%
+
+%%ANKI
+Basic
+How do you access the low-order 4 bytes of `%rsp`?
+Back: By using `%esp`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420093-->
+END%%
+
+%%ANKI
+Basic
+How do you access the low-order byte of `%rsp`?
+Back: By using `%spl`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420096-->
+END%%
+
+%%ANKI
+Cloze
+By convention, register {`%rsp`} is used for {the stack pointer}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420100-->
+END%%
+
+%%ANKI
+Cloze
+Which register should I use for an 2 byte return value?
+Back: `%ax`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420103-->
+END%%
+
+%%ANKI
+Cloze
+Which register should I use for a 1 byte stack pointer?
+Back: `%spl`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420106-->
+END%%
+
+%%ANKI
+Cloze
+Which register should I use for a 4 byte stack pointer?
+Back: `%esp`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420109-->
+END%%
+
+%%ANKI
+Cloze
+Which register should I use for an 8 byte return value?
+Back: `%rax`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420113-->
+END%%
+
+%%ANKI
+Basic
+From smallest to largest, list the four "return value" registers.
+Back: `%al`, `%ax`, `%eax`, and `$rax`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420117-->
+END%%
+
+%%ANKI
+Basic
+From smallest to largest, list the four "stack pointer" registers.
+Back: `%spl`, `%sp`, `%esp`, and `$rsp`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1724119420122-->
+END%%
+
+## Condition Codes
+
 The CPU also maintains a set of single-bit **condition code** registers describing attributes of the most recent arithmetic or logical operation.
 
 Code | Name          | Description
