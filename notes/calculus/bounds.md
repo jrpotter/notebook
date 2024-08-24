@@ -264,6 +264,110 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1724115953386-->
 END%%
 
+%%ANKI
+Basic
+Let $S \subseteq \mathbb{R}$ have a supremum. If $h > 0$, *why* does there exist an $x \in S$ such that $x > \mathop{\text{sup}} S - h$?
+Back: Otherwise $\mathop{\text{sup}}S - h$ is an upper bound less than $\mathop{\text{sup}}S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724523640370-->
+END%%
+
+%%ANKI
+Basic
+Let $S \subseteq \mathbb{R}$ have a supremum. If $h > 0$, *why* does there exist an $x \in S$ such that $x < \mathop{\text{sup}} S - h$?
+Back: N/A. This is not necessarily the case.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724523640373-->
+END%%
+
+%%ANKI
+Basic
+Let $S \subseteq \mathbb{R}$ have an infimum. If $h > 0$, *why* does there exist an $x \in S$ such that $x > \mathop{\text{inf}} S + h$?
+Back: N/A. This is not necessarily the case.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724523640374-->
+END%%
+
+%%ANKI
+Basic
+Let $S \subseteq \mathbb{R}$ have an infimum. If $h > 0$, *why* does there exist an $x \in S$ such that $x < \mathop{\text{inf}} S + h$?
+Back: Otherwise $\mathop{\text{inf}}S + h$ is a lower bound greater than $\mathop{\text{inf}}S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724523640375-->
+END%%
+
+%%ANKI
+Basic
+Let $A, B \subseteq \mathbb{R}$ have supremums. What set $C$ satisfies $\mathop{\text{sup}}C = \mathop{\text{sup}}A + \mathop{\text{sup}}B$?
+Back: $C = \{a + b \mid a \in A, b \in B\}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724523640376-->
+END%%
+
+%%ANKI
+Basic
+Let $A, B \subseteq \mathbb{R}$. When is $\mathop{\text{sup}} \,\{a + b \mid a \in A, b \in B\}$ defined?
+Back: When $A$ and $B$ both have a supremum.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724523640377-->
+END%%
+
+%%ANKI
+Basic
+Let $A, B \subseteq \mathbb{R}$. When is $\mathop{\text{inf}} \,\{a + b \mid a \in A, b \in B\}$ defined?
+Back: When $A$ and $B$ both have an infimum.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724523640378-->
+END%%
+
+%%ANKI
+Basic
+Let $A, B \subseteq \mathbb{R}$ have infimums. What set $C$ satisfies $\mathop{\text{inf}}C = \mathop{\text{inf}}A + \mathop{\text{inf}}B$?
+Back: $C = \{a + b \mid a \in A, b \in B\}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724523640379-->
+END%%
+
+%%ANKI
+Basic
+Let $S, T \subseteq \mathbb{R}$ be nonempty sets such that $\forall s \in S, \forall t \in T, s \leq t$. Does $S$ have a supremum?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724523911490-->
+END%%
+
+%%ANKI
+Basic
+Let $S, T \subseteq \mathbb{R}$ be nonempty sets such that $\forall s \in S, \forall t \in T, s \leq t$. Does $T$ have a supremum?
+Back: Indeterminate.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724523911494-->
+END%%
+
+%%ANKI
+Basic
+Let $S, T \subseteq \mathbb{R}$ be nonempty sets such that $\forall s \in S, \forall t \in T, s \leq t$. Does $S$ have an infimum?
+Back: Indeterminate.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724523911496-->
+END%%
+
+%%ANKI
+Basic
+Let $S, T \subseteq \mathbb{R}$ be nonempty sets such that $\forall s \in S, \forall t \in T, s \leq t$. Does $T$ have an infimum?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724523911497-->
+END%%
+
+%%ANKI
+Basic
+Let $S, T \subseteq \mathbb{R}$ be nonempty sets such that $\forall s \in S, \forall t \in T, s \leq t$. How does $\mathop{\text{sup}} S$ compare to $\mathop{\text{inf}} T$?
+Back: $\mathop{\text{sup}}S \leq \mathop{\text{inf}}T$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724523911499-->
+END%%
+
 ### Completeness Axiom
 
 Every nonempty set $S$ of real numbers which is bounded above has a supremum; that is, there is a real number $B$ such that $B = \mathop{\text{sup}} S$.
