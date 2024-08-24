@@ -1115,6 +1115,33 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1720964209648-->
 END%%
 
+## Infinity Axiom
+
+There exists an [[natural-numbers#Inductive Sets|inductive]] set: $$\exists A, [\varnothing \in A \land (\forall a \in A, a^+ \in A)]$$
+
+%%ANKI
+Basic
+What does the infinity axiom state?
+Back: There exists an inductive set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724486269578-->
+END%%
+
+%%ANKI
+Cloze
+The {infinity axiom} asserts the existence of an {inductive set}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724486269581-->
+END%%
+
+%%ANKI
+Basic
+State the infinity axiom in FOL.
+Back: $\exists A, [\varnothing \in A \land (\forall a \in A, a^+ \in A)]$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724486269585-->
+END%%
+
 ## Bibliography
 
 * “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).

@@ -27,7 +27,7 @@ END%%
 %%ANKI
 Basic
 Why are narrow types named the way they are?
-Back: They are considered to small to be used directly in arithmetic expressions.
+Back: They are considered too small to be used directly in arithmetic expressions.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1723859121959-->
 END%%

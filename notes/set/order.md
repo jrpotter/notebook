@@ -89,7 +89,7 @@ END%%
 
 %%ANKI
 Cloze
-Operator {$\leq$} typically denote a {non-strict} preorder.
+Operator {$\leq$} typically denotes a {non-strict} preorder.
 Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
 <!--ID: 1723924394146-->
 END%%
@@ -177,7 +177,7 @@ END%%
 
 %%ANKI
 Cloze
-Operator {$<$} typically denote a {strict} preorder.
+Operator {$<$} typically denotes a {strict} preorder.
 Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
 <!--ID: 1723924394151-->
 END%%
@@ -268,7 +268,7 @@ END%%
 %%ANKI
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ a partial order on $\{a, b, c\}$?
-Back: N/A. It is.
+Back: It isn't reflexive on $\{b, c\}$.
 Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
 <!--ID: 1723816108524-->
 END%%
@@ -276,7 +276,7 @@ END%%
 %%ANKI
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle, \langle c, b \rangle\}$ a partial order on $\{a, b, c\}$?
-Back: It isn't antisymmetric.
+Back: It isn't reflexive on $\{b, c\}$, it isn't antisymmetric, and it isn't transitive.
 Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
 <!--ID: 1723816108531-->
 END%%
@@ -309,14 +309,14 @@ END%%
 
 %%ANKI
 Cloze
-Operator {$<$} typically denote a {strict} partial order.
+Operator {$<$} typically denotes a {strict} partial order.
 Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
 <!--ID: 1723902024378-->
 END%%
 
 %%ANKI
 Cloze
-Operator {$\leq$} typically denote a {non-strict} partial order.
+Operator {$\leq$} typically denotes a {non-strict} partial order.
 Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
 <!--ID: 1723902024382-->
 END%%
@@ -414,7 +414,7 @@ END%%
 %%ANKI
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ an equivalence relation on $\{a, b\}$?
-Back: It isn't symmetric.
+Back: It is neither reflexive on $\{a, b\}$ nor symmetric.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1723816108538-->
 END%%
@@ -855,7 +855,7 @@ END%%
 
 %%ANKI
 Cloze
-Operator {$\leq$} typically denote a {non-strict} total order.
+Operator {$\leq$} typically denotes a {non-strict} total order.
 Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
 <!--ID: 1723923665325-->
 END%%
@@ -896,7 +896,7 @@ END%%
 
 %%ANKI
 Cloze
-Operator {$<$} typically denote a {strict} total order.
+Operator {$<$} typically denotes a {strict} total order.
 Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
 <!--ID: 1723923665330-->
 END%%
@@ -918,7 +918,7 @@ END%%
 
 %%ANKI
 Cloze
-A {non-strict} total order satisfies {strong connectivity} whereas a {strict} total order satisfies {connectivity}.
+A {1:non-strict} total order satisfies {2:strong connectivity} whereas a {2:strict} total order satisfies {1:connectivity}.
 Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
 <!--ID: 1723923665333-->
 END%%

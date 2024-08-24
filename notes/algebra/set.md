@@ -1083,14 +1083,6 @@ END%%
 
 %%ANKI
 Basic
-For any function $F \colon A \rightarrow B$, $F$ is a member of what other set?
-Back: $\mathscr{P}(A \times B)$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720782833236-->
-END%%
-
-%%ANKI
-Basic
 For sets $A$ and $B$, how is set $B^A$ pronounced?
 Back: As "$B$-pre-$A$".
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

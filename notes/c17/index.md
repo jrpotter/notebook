@@ -15,7 +15,7 @@ This quote describes C's **abstract state machine**. Whatever instructions a C p
 %%ANKI
 Basic
 What feature of C's abstract state machine makes C performant?
-Back: It enables optimization.
+Back: The ability to optimize.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1723856661330-->
 END%%

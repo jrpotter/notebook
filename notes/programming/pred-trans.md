@@ -979,7 +979,7 @@ END%%
 %%ANKI
 Basic
 When are both of the following guarded commands executed? $$\begin{align*} \textbf{if } & x \geq 0 \rightarrow z \coloneqq x \\ \textbf{ | } & x \leq 0 \rightarrow z \coloneqq -x \\ \textbf{fi } & \end{align*}$$
-Back: N/A.
+Back: N/A. Only one guard is executed.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1722257348960-->
 END%%

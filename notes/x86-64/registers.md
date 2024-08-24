@@ -238,35 +238,35 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
-Cloze
+Basic
 Which register should I use for an 2 byte return value?
 Back: `%ax`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1724119420103-->
+<!--ID: 1724417749880-->
 END%%
 
 %%ANKI
-Cloze
+Basic
 Which register should I use for a 1 byte stack pointer?
 Back: `%spl`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1724119420106-->
+<!--ID: 1724417749885-->
 END%%
 
 %%ANKI
-Cloze
+Basic
 Which register should I use for a 4 byte stack pointer?
 Back: `%esp`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1724119420109-->
+<!--ID: 1724417749890-->
 END%%
 
 %%ANKI
-Cloze
+Basic
 Which register should I use for an 8 byte return value?
 Back: `%rax`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1724119420113-->
+<!--ID: 1724417749896-->
 END%%
 
 %%ANKI
