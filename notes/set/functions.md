@@ -1050,7 +1050,7 @@ END%%
 
 %%ANKI
 Cloze
-Let $F$ be a {function}. If $t \in$ {$\mathop{\text{ran} }F$}, then $F(F^{-1}(t)) = t$.
+Let $F$ be an {injection}. If $t \in$ {$\mathop{\text{ran} }F$}, then $F(F^{-1}(t)) = t$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719398756562-->
 END%%

@@ -241,7 +241,7 @@ What is the type of `foo` in the the following declaration?
 ```c
 int (*(*foo)(void))[3]
 ```
-Back: A pointer to a function (accepting `void`)  returning a pointer to an array of `int`s.
+Back: A pointer to a function (accepting `void`)  returning a pointer to an array (size `3`) of `int`s.
 Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
 <!--ID: 1722786892118-->
 END%%
@@ -252,7 +252,7 @@ What is the type of `foo` in the the following declaration?
 ```c
 const int (* volatile foo)[64]
 ```
-Back: A `volatile` pointer to an array of `const int`s.
+Back: A `volatile` pointer to an array (size `64`) of `const int`s.
 Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
 <!--ID: 1722786892119-->
 END%%
@@ -307,7 +307,7 @@ What is the type of `foo` in the the following declaration?
 ```c
 char *(*foo[10])(int **);
 ```
-Back: An array of pointers to functions (accepting `int **`) returning pointer-to-char.
+Back: An array (size `10`) of pointers to functions (accepting `int **`) returning pointer-to-char.
 Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
 <!--ID: 1722786892124-->
 END%%
