@@ -1,16 +1,231 @@
 ---
-title: Types
+title: Simple Types
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17
+FILE TAGS: c17::type
 tags:
   - c17
 ---
 
 ## Overview
 
-C has a series of basic types and means of constructing derived types from them.
+The bottom of the type hierarchy consists of **simple types**. This comprises the primitive types that all other types are either based off of or derived from.
 
-## Integers
+| Signed        | Unsigned             | 32-bit | 64-bit |
+| ------------- | -------------------- | ------ | ------ |
+| -             | `bool`               | 1      | 1      |
+| `signed char` | `unsigned char`      | 1      | 1      |
+| `short`       | `unsigned short`     | 2      | 2      |
+| `int`         | `unsigned`           | 4      | 4      |
+| `long`        | `unsigned long`      | 4      | 8      |
+| `long long`   | `unsigned long long` | 8      | 8      |
+
+| Real          | Complex               | 32-bit | 64-bit |
+| ------------- | --------------------- | ------ | ------ |
+| `float`       | -                     | 4      | 4      |
+| `double`      | -                     | 8      | 8      |
+| `long double` | -                     | -      | -      |
+| -             | `float complex`       | 4      | 4      |
+| -             | `double complex`      | 8      | 8      |
+| -             | `long double complex` | -      | -      |
+
+%%ANKI
+Cloze
+The {`<stdint.h>`} header file contains {fixed width data integral types}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707835869728-->
+END%%
+
+%%ANKI
+Basic
+The integer types are grouped into what two classes?
+Back: The signed and unsigned integer types.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1724546870212-->
+END%%
+
+%%ANKI
+Basic
+The floating point types are grouped into what two classes?
+Back: The real and complex floating point types.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1724546870217-->
+END%%
+
+%%ANKI
+Basic
+Which header file contains `INT32_MAX`?
+Back: `<stdint.h>`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249870-->
+END%%
+
+%%ANKI
+Basic
+What does the "width" of an integer type refer to?
+Back: The number of bits used to represent its value.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707835869737-->
+END%%
+
+%%ANKI
+What two variants does a C integral type declaration have?
+Back: Signed and unsigned.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+END%%
+
+%%ANKI
+What does it mean for an integer to be "signed"?
+Back: It can represent negative, zero, and positive values.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+END%%
+
+%%ANKI
+What does it mean for an integer to be "unsigned"?
+Back: It can only represent nonnegative values.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+END%%
+
+%%ANKI
+Basic
+How large is a word?
+Back: This is a machine-dependent value.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707657889227-->
+END%%
+
+%%ANKI
+Basic
+What word sizes are typical nowadays?
+Back: 32- and 64-bit word sizes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707657889230-->
+END%%
+
+%%ANKI
+Cloze
+`char` *typically* represents {1} byte(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017164-->
+END%%
+
+%%ANKI
+Cloze
+`short` *typically* represents {2} byte(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017210-->
+END%%
+
+%%ANKI
+Cloze
+`int` *typically* represents {4} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017215-->
+END%%
+
+%%ANKI
+Cloze
+`unsigned` *typically* represents {4} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017219-->
+END%%
+
+%%ANKI
+Cloze
+`long` *typically* represents {8} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017222-->
+END%%
+
+%%ANKI
+Cloze
+`long long` *typically* represents {8} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708425521263-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes `long` from `long long`?
+Back: `long long`s are guaranteed to be at least 64-bit wide.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708425521292-->
+END%%
+
+%%ANKI
+Basic
+*Why* is there both a `long` and `long long`?
+Back: `long long`s are at least 64-bit wide, even on 32-bit platforms.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708425521296-->
+END%%
+
+%%ANKI
+Cloze
+`char *` *typically* represents {8} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017224-->
+END%%
+
+%%ANKI
+Cloze
+`float` *typically* represents {4} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017227-->
+END%%
+
+%%ANKI
+Cloze
+`double` *typically* represents {8} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017229-->
+END%%
+
+%%ANKI
+Basic
+Is declaration `int` signed or unsigned?
+Back: Signed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017232-->
+END%%
+
+%%ANKI
+Basic
+How is declaration `unsigned` written more precisely?
+Back: `unsigned int`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017234-->
+END%%
+
+%%ANKI
+Basic
+Is declaration `long` signed or unsigned?
+Back: Signed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017237-->
+END%%
+
+%%ANKI
+Cloze
+{1:`float`} has {2:4} byte precision whereas {2:`double`} has {1:8} byte precision.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017242-->
+END%%
+
+%%ANKI
+Cloze
+The C standard defines {lower} bounds on numeric ranges of data types.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1718281813453-->
+END%%
+
+%%ANKI
+Cloze
+The C standard does *not* define {1:upper} bounds on numeric ranges of data types (except for {1:fixed-size} types).
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1718281813458-->
+END%%
+
+## Characters
 
 Type `char` is special since it can be signed or unsigned depending on platform. Keep in mind regardless of its signedness, it is still considered a distinct type from both the `unsigned char` and `signed char` type.
 
@@ -21,6 +236,8 @@ Back: This is implementation-dependent.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707493017239-->
 END%%
+
+## Integers
 
 **Narrow types** cannot be used directly in arithmetic. Instead they are first promoted to a wider type. On almost every system, this promotion will be to a `signed int` of the same value, regardless of the signedness of the narrow type itself.
 
@@ -638,7 +855,93 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1723938382436-->
 END%%
 
+## Enumerated Types
+
+An `enum` is a mapping of identifiers with integer values. They have general form:
+
+```c
+enum optional_tag {
+  type1 ident1;
+  ...
+  typeN identN;
+} optional_var1 ... optional_varN;
+```
+
+%%ANKI
+Basic
+What is the underlined portion of the following declaration called?
+```c
+enum ___ { ... };
+```
+Back: The tag.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892132-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `X`'s from one another in the following?
+```c
+enum X { ... } X;
+```
+Back: The first `X` is a tag whereas the second is a variable with type `enum X`.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892133-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `X`'s from one another in the following?
+```c
+typedef enum X { ... } X;
+```
+Back: The first `X` is a tag whereas the second is an alias for type `enum X`.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892134-->
+END%%
+
+%%ANKI
+Basic
+What is the value of `A` in the following?
+```c
+enum X { A, B, C };
+```
+Back: `0`
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892135-->
+END%%
+
+%%ANKI
+Basic
+What is the value of `B` in the following?
+```c
+enum X { A, B, C };
+```
+Back: `1`
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892136-->
+END%%
+
+%%ANKI
+Basic
+What is the value of `B` in the following?
+```c
+enum X { A=2, B, C };
+```
+Back: `3`
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892137-->
+END%%
+
+%%ANKI
+Basic
+According to Linden, what is the "only advantage" of `enum`s over `#define`?
+Back: `enum`s can usually be traced in a debugger.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892138-->
+END%%
+
 ## Bibliography
 
-* Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-* Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+* Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.

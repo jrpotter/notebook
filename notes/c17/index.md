@@ -337,110 +337,11 @@ END%%
 
 Types are additional properties that C associates with values. All values have a type that is statically determined and all possible operations on a value are determined by its type.
 
-Types are categorized as function types and object types. An object type is **complete** if there is sufficient information to determine the size of objects of that type. Otherwise we say it is **incomplete**.
-
 %%ANKI
 Cloze
 Possible operations on a {value} are determined by its {type}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1723856661364-->
-END%%
-
-%%ANKI
-Basic
-Types are partitioned into what two categories?
-Back: Object types and function types.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994842-->
-END%%
-
-%%ANKI
-Basic
-What is an object type?
-Back: A type that describes objects.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994846-->
-END%%
-
-%%ANKI
-Basic
-What is a function type?
-Back: A type that describes functions.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994851-->
-END%%
-
-%%ANKI
-Basic
-What two parts characterize a function type?
-Back: The return type and the number/types of its parameters.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994856-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for an object type to be complete?
-Back: There is sufficient information to determine the size of objects of that type.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994866-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for an object type to be incomplete?
-Back: There is insufficient information to determine the size of objects of that type.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994870-->
-END%%
-
-%%ANKI
-Basic
-Does `x` have complete or incomplete object type in the following?
-```c
-void x;
-```
-Back: Incomplete.
-Reference: ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510995010-->
-END%%
-
-%%ANKI
-Basic
-Does `x` have complete or incomplete object type in the following?
-```c
-int x;
-```
-Back: Complete.
-Reference: ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510995016-->
-END%%
-
-%%ANKI
-Basic
-Does `x` have complete or incomplete object type in the following?
-```c
-void *x;
-```
-Back: Complete.
-Reference: ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510995023-->
-END%%
-
-%%ANKI
-Basic
-What object type can an lvalue *not* have?
-Back: `void`
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994890-->
-END%%
-
-%%ANKI
-Basic
-What object type can an lvalue have?
-Back: Any object type other than `void`.
-Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
-<!--ID: 1723510994895-->
 END%%
 
 ## Representation
