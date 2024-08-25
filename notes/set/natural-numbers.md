@@ -259,6 +259,14 @@ END%%
 
 %%ANKI
 Basic
+In set theory, $\omega$ denotes what set?
+Back: The natural numbers.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724606314391-->
+END%%
+
+%%ANKI
+Basic
 What is the smallest inductive set?
 Back: $\omega$, i.e. the set of natural numbers.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -279,6 +287,86 @@ Suppose $n \in \omega$. What other sets *must* $n$ be a member of?
 Back: Every other inductive set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1724486757010-->
+END%%
+
+%%ANKI
+Basic
+What can be said about a subset of $\omega$?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724606314394-->
+END%%
+
+%%ANKI
+Basic
+What can be said about an inductive subset of $\omega$?
+Back: It must coincide with $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724606314396-->
+END%%
+
+%%ANKI
+Basic
+Why must every inductive subset of $\omega$ coincide with $\omega$?
+Back: Because $\omega$ is the smallest inductive set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724606314397-->
+END%%
+
+%%ANKI
+Basic
+What does the induction principle for $\omega$ state?
+Back: Every inductive subset of $\omega$ coincides with $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724606314399-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the principle, "every inductive subset of $\omega$ coincides with $\omega$?"
+Back: The induction principle for $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724606314400-->
+END%%
+
+%%ANKI
+Basic
+Inductive sets correspond to what kind of proof method?
+Back: Proof by induction.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724606314401-->
+END%%
+
+%%ANKI
+Basic
+Prove $P(n)$ is true for all $n \in \mathbb{N}$ using induction. What set do we prove is inductive?
+Back: $\{n \in \mathbb{N} \mid P(n)\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724606314403-->
+END%%
+
+%%ANKI
+Basic
+*How* are inductive sets and proof by induction related?
+Back: An induction proof corresponds to proving a related set is inductive.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724606314404-->
+END%%
+
+%%ANKI
+Basic
+What inductive set do we construct to prove the following by induction? $$\text{Every natural number is nonnegative}$$
+Back: $\{n \in \omega \mid 0 \leq n\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724606314405-->
+END%%
+
+%%ANKI
+Basic
+What inductive set do we construct to prove the following by induction? $$\text{Every nonzero natural number is the successor of another natural number}$$
+Back: $\{n \in \omega \mid n = 0 \lor (\exists m \in \omega, n = m^+)\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1724606314406-->
 END%%
 
 ## Bibliography
