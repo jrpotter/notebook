@@ -150,7 +150,7 @@ END%%
 
 %%ANKI
 Basic
-The following is an example of what kind of graph representation?
+The following is an example of what kind of graph representatio?
 ![[adj-matrix-representation.png]]
 Back: An adjacency-matrix representation.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

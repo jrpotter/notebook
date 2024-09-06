@@ -332,7 +332,7 @@ END%%
 %%ANKI
 Basic
 How is set $\{v \mid \exists A \in B, v = A\}$ written more compactly?
-Back: $\{A \mid A \in B\}$
+Back: $B$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720370610022-->
 END%%
@@ -340,7 +340,7 @@ END%%
 %%ANKI
 Basic
 How is set $\{v \mid \exists A \in B, v \in A\}$ written more compactly?
-Back: N/A.
+Back: $\bigcup B$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720370610028-->
 END%%

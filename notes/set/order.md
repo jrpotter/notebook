@@ -41,7 +41,6 @@ A binary relation $R$ on set $A$ is a **preorder on $A$** iff it is reflexive on
 %%ANKI
 Basic
 A binary relation on $A$ is a preorder on $A$ if it satisfies what two properties?
-What is a preorder on $A$?
 Back: Reflexivity on $A$ and transitivity.
 Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
 <!--ID: 1723814834775-->

@@ -271,7 +271,7 @@ END%%
 
 %%ANKI
 Basic
-When is the type domain of `a + b` equal to `unsigned short`?
+When is the common real type of `a + b` equal to `unsigned short`?
 ```c
 unsigned short a;
 signed int b;
@@ -291,7 +291,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose `a` and `b` has signed and unsigned types. When is `a + b` unsigned?
+Suppose `a` and `b` have signed and unsigned types respectively. When is `a + b` unsigned?
 Back: When `b`'s type has higher rank or the range of `a` cannot fit the range of `b`.
 Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 <!--ID: 1724762203465-->
