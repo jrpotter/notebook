@@ -116,7 +116,7 @@ END%%
 
 %%ANKI
 Basic
-Do all multisets correspond to sets?
+Is every multiset a set?
 Back: No.
 Reference: “Multiset,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Multiset&oldid=1217165725](https://en.wikipedia.org/w/index.php?title=Multiset&oldid=1217165725).
 <!--ID: 1720360266867-->
@@ -124,7 +124,7 @@ END%%
 
 %%ANKI
 Basic
-Do all sets correspond to multisets?
+Is every set a multiset?
 Back: Yes.
 Reference: “Multiset,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Multiset&oldid=1217165725](https://en.wikipedia.org/w/index.php?title=Multiset&oldid=1217165725).
 <!--ID: 1720360266873-->

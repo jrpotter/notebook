@@ -323,8 +323,99 @@ Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Progra
 <!--ID: 1722786892125-->
 END%%
 
+## Initializers
+
+An **initializer** is an expression that gives an object a value at time of declaration. Only variable-length arrays (VLAs) do not allow for an initializer. The default initializer looks like `{0}`.
+
+%%ANKI
+Basic
+Which part of the following are initializers?
+```c
+int a = 3;
+```
+Back: `3`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196021580-->
+END%%
+
+%%ANKI
+Basic
+Which part of the following are initializers?
+```c
+double a = { 7.0 };
+```
+Back: `{ 7.0 }`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196021585-->
+END%%
+
+%%ANKI
+Basic
+Which part of the following are initializers?
+```c
+double a = { 7.0 };
+```
+Back: `{ 7.0 }`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+END%%
+
+%%ANKI
+Basic
+How is the following updated to include initializers `1` and `2` for `a` and `b` respectively?
+```c
+int a, b;
+```
+Back:
+```c
+int a = 1, b = 2;
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196021590-->
+END%%
+
+%%ANKI
+Basic
+What object types allow initializers?
+Back: All but VLAs.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196021576-->
+END%%
+
+%%ANKI
+Basic
+What object types do not allow initializers?
+Back: Just variable-length arrays.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196021596-->
+END%%
+
+%%ANKI
+Basic
+What is the default initializer?
+Back: `{0}`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196290195-->
+END%%
+
+%%ANKI
+Basic
+`{0}` is a valid initializer for what object types?
+Back: All but VLAs.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196290203-->
+END%%
+
+%%ANKI
+Basic
+`{0}` is not a valid initializer for what object types?
+Back: Just variable-length arrays.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196290208-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 * “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+* Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 * Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.

@@ -55,7 +55,7 @@ END%%
 %%ANKI
 Basic
 What C logical operator corresponds to $\land$?
-Back: N/A
+Back: N/A.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 Tags: c17
 <!--ID: 1706994861327-->
@@ -64,7 +64,7 @@ END%%
 %%ANKI
 Basic
 What C logical operator corresponds to $\lor$?
-Back: N/A
+Back: N/A.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 Tags: c17
 <!--ID: 1706994861329-->
@@ -73,7 +73,7 @@ END%%
 %%ANKI
 Basic
 What C logical operator corresponds to $\Rightarrow$?
-Back: N/A
+Back: N/A.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 Tags: c17
 <!--ID: 1706994861331-->

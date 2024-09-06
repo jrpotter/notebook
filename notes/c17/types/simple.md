@@ -454,14 +454,6 @@ END%%
 
 %%ANKI
 Basic
-The first fit rule excludes what subcategory of integer types?
-Back: The narrow integers.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1724506993429-->
-END%%
-
-%%ANKI
-Basic
 What is the signedness of a decimal integer literal?
 Back: `signed`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).

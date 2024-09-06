@@ -111,7 +111,7 @@ END%%
 %%ANKI
 Basic
 What is the maximum element of interval $[0, 1] \subseteq \mathbb{R}$?
-Back: $1$.
+Back: $1$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724115133094-->
 END%%
@@ -143,7 +143,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum element of interval $[0, 1] \subseteq \mathbb{R}$?
-Back: $0$.
+Back: $0$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724115133106-->
 END%%
@@ -203,7 +203,7 @@ END%%
 %%ANKI
 Basic
 What distinguishes a supremum from a least upper bound?
-Back: They are synonyms of one another.
+Back: N/A. They are synonyms of one another.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724115953346-->
 END%%
@@ -219,7 +219,7 @@ END%%
 %%ANKI
 Basic
 What is the least upper bound of interval $[0, 1] \subseteq \mathbb{R}$?
-Back: $1$.
+Back: $1$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724115953358-->
 END%%
@@ -227,7 +227,7 @@ END%%
 %%ANKI
 Basic
 What is the supremum of interval $(0, 1) \subseteq \mathbb{R}$?
-Back: $1$.
+Back: $1$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724115953364-->
 END%%
@@ -307,7 +307,7 @@ END%%
 %%ANKI
 Basic
 Let $A, B \subseteq \mathbb{R}$. When is $\mathop{\text{sup}} \,\{a + b \mid a \in A, b \in B\}$ defined?
-Back: When $A$ and $B$ both have a supremum.
+Back: When $A$ and $B$ both have supremums.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724523640377-->
 END%%
@@ -315,7 +315,7 @@ END%%
 %%ANKI
 Basic
 Let $A, B \subseteq \mathbb{R}$. When is $\mathop{\text{inf}} \,\{a + b \mid a \in A, b \in B\}$ defined?
-Back: When $A$ and $B$ both have an infimum.
+Back: When $A$ and $B$ both have infimums.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724523640378-->
 END%%
@@ -383,7 +383,7 @@ END%%
 %%ANKI
 Basic
 Consider $\varnothing \subseteq \mathbb{R}$. Why doesn't the completeness axiom of real numbers apply?
-Back: It only applies to nonempty sets.
+Back: $\varnothing$ is not a nonempty set.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724116323044-->
 END%%
@@ -399,7 +399,7 @@ END%%
 %%ANKI
 Basic
 Consider $\mathbb{R}^+$. Why doesn't the completeness axiom apply?
-Back: It only applies to nonempty sets that are bounded above.
+Back: $\mathbb{R}^+$ is not bounded above.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724116323049-->
 END%%
@@ -426,7 +426,7 @@ A number $B$ is called a **greatest lower bound** (or **infimum**) of a nonempty
 
 %%ANKI
 Basic
-Let $\varnothing \subset S \subseteq \mathbb{R}$. What is a greatest upper bound of $S$?
+Let $\varnothing \subset S \subseteq \mathbb{R}$. What is a greatest lower bound of $S$?
 Back: A lower bound $B$ for $S$ such that no number greater than $B$ is also a lower bound for $S$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724115953392-->
@@ -459,7 +459,7 @@ END%%
 %%ANKI
 Basic
 What distinguishes a greatest lower bound from an infimum?
-Back: They are synonyms of one another.
+Back: N/A. They are synonyms of one another.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724115953417-->
 END%%
@@ -467,7 +467,7 @@ END%%
 %%ANKI
 Basic
 What distinguishes an infimum from a minimum?
-Back: A supremum is not necessarily a member of the reference set.
+Back: An infimum is not necessarily a member of the reference set.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724115953422-->
 END%%
@@ -475,7 +475,7 @@ END%%
 %%ANKI
 Basic
 What is the infimum of interval $[0, 1] \subseteq \mathbb{R}$?
-Back: $0$.
+Back: $0$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724115953428-->
 END%%
@@ -483,7 +483,7 @@ END%%
 %%ANKI
 Basic
 What is the greatest lower bound of interval $(0, 1) \subseteq \mathbb{R}$?
-Back: $0$.
+Back: $0$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724115953433-->
 END%%

@@ -126,6 +126,39 @@ END%%
 
 %%ANKI
 Basic
+Does `x` have complete or incomplete object type in the following?
+```c
+double x[];
+```
+Back: Incomplete.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196021563-->
+END%%
+
+%%ANKI
+Basic
+Does `x` have complete or incomplete object type in the following?
+```c
+double x[] = { 1, 2, };
+```
+Back: Incomplete.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196021568-->
+END%%
+
+%%ANKI
+Basic
+Does `x` have complete or incomplete object type in the following?
+```c
+double x[2] = { 1, 2, };
+```
+Back: Complete.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196021572-->
+END%%
+
+%%ANKI
+Basic
 What object type can an lvalue *not* have?
 Back: `void`
 Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
@@ -199,7 +232,7 @@ END%%
 %%ANKI
 Basic
 The integer types consist of what simple types?
-Back: `char`, signed/unsigned integer types, and `enum`s.
+Back: `char`, (un)signed integer types, and `enum`s.
 Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 <!--ID: 1724546734436-->
 END%%
@@ -255,7 +288,7 @@ END%%
 %%ANKI
 Basic
 Which types are considered both basic types and integer types?
-Back: `char` and the signed/unsigned integer types.
+Back: `char` and the (un)signed integer types.
 Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 <!--ID: 1724546734469-->
 END%%
@@ -393,3 +426,4 @@ END%%
 ## Bibliography
 
 * “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+* Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).

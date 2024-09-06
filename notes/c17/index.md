@@ -107,7 +107,7 @@ END%%
 %%ANKI
 Basic
 Why are lvalues named the way they are?
-Back: The name is an acronym for **l**ocator **value**.
+Back: The name is an acronym for **l**ocator **value** (or **l**eft **value**).
 Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 <!--ID: 1723510994878-->
 END%%

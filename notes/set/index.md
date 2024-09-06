@@ -276,7 +276,7 @@ END%%
 
 %%ANKI
 Cloze
-$\exists u \in A, uFx$ is equivalently written as $x \in$ {$\{v \mid \exists u \in A, uFv\}$}.
+$\exists u \in A, uFx$ is equivalently written as $x \in$ {$F[\![A]\!]$}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720369624735-->
 END%%
@@ -1129,7 +1129,7 @@ END%%
 
 %%ANKI
 Cloze
-The {infinity axiom} asserts the existence of an {inductive set}.
+The {infinity} axiom asserts the existence of an {inductive set}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1724486269581-->
 END%%

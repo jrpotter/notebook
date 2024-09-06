@@ -86,7 +86,7 @@ END%%
 %%ANKI
 Basic
 How many bytes make up the `%rax` register?
-Back: $8$.
+Back: $8$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1724119420029-->
 END%%
@@ -94,7 +94,7 @@ END%%
 %%ANKI
 Basic
 How many bytes make up the `%ax` register?
-Back: $2$.
+Back: $2$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1724119420032-->
 END%%
@@ -102,7 +102,7 @@ END%%
 %%ANKI
 Basic
 How many bytes make up the `%al` register?
-Back: $1$.
+Back: $1$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1724119420035-->
 END%%
@@ -110,7 +110,7 @@ END%%
 %%ANKI
 Basic
 How many bytes make up the `%eax` register?
-Back: $4$.
+Back: $4$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1724119420039-->
 END%%
@@ -163,7 +163,7 @@ END%%
 %%ANKI
 Basic
 How many bytes make up the `%rsp` register?
-Back: $8$.
+Back: $8$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1724119420068-->
 END%%
@@ -171,7 +171,7 @@ END%%
 %%ANKI
 Basic
 How many bytes make up the `%sp` register?
-Back: $2$.
+Back: $2$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1724119420071-->
 END%%
@@ -179,7 +179,7 @@ END%%
 %%ANKI
 Basic
 How many bytes make up the `%spl` register?
-Back: $1$.
+Back: $1$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1724119420075-->
 END%%
@@ -187,7 +187,7 @@ END%%
 %%ANKI
 Basic
 How many bytes make up the `%esp` register?
-Back: $4$.
+Back: $4$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1724119420079-->
 END%%
@@ -272,7 +272,7 @@ END%%
 %%ANKI
 Basic
 From smallest to largest, list the four "return value" registers.
-Back: `%al`, `%ax`, `%eax`, and `$rax`.
+Back: `%al`, `%ax`, `%eax`, and `%rax`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1724119420117-->
 END%%
@@ -280,7 +280,7 @@ END%%
 %%ANKI
 Basic
 From smallest to largest, list the four "stack pointer" registers.
-Back: `%spl`, `%sp`, `%esp`, and `$rsp`.
+Back: `%spl`, `%sp`, `%esp`, and `%rsp`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1724119420122-->
 END%%

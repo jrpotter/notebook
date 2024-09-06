@@ -132,7 +132,7 @@ END%%
 
 %%ANKI
 Basic
-Consider a B-tree of order $7$. How many children $c$ can each non-root node have?
+Consider a B-tree of order $7$. How many children $c$ can each internal non-root node have?
 Back: $4 \leq c \leq 7$
 Reference: Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
 <!--ID: 1723211542063-->
@@ -141,14 +141,14 @@ END%%
 %%ANKI
 Basic
 Consider a B-tree of order $7$. How many children $c$ can the root have?
-Back: $1 \leq c \leq 7$
+Back: $0 \leq c \leq 7$
 Reference: Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
 <!--ID: 1723211542069-->
 END%%
 
 %%ANKI
 Basic
-Consider a B-tree of order $7$. How many keys $k$ can each non-root node have?
+Consider a B-tree of order $7$. How many keys $k$ can each internal non-root node have?
 Back: $3 \leq k < 7$
 Reference: Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
 <!--ID: 1723211542076-->
