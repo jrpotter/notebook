@@ -153,7 +153,7 @@ END%%
 %%ANKI
 Basic
 *Why* is a strict preorder also a strict partial order?
-Back: Irreflexivity and transitivity imply asymmetry (and antisymmetry).
+Back: Irreflexivity and transitivity imply antisymmetry.
 Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
 <!--ID: 1723902729134-->
 END%%

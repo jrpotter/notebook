@@ -45,7 +45,7 @@ END%%
 
 %%ANKI
 Basic
-In permissivism, what is the conseqent to antecedent "$X$ can be described without contradiction"?
+In permissivism, what is the consequent to antecedent "$X$ can be described without contradiction"?
 Back: "$X$ exists."
 Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
 <!--ID: 1720912238027-->

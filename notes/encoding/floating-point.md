@@ -954,7 +954,7 @@ END%%
 
 %%ANKI
 Basic
-How does the largest unsigned interpretation of the exponent *field* relate to the $Bias$?
+How does the unsigned interpretation of the largest normalized exponent *field* relate to the $Bias$?
 Back: The largest unsigned interpretation is $2 \cdot Bias$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710605798347-->
@@ -962,7 +962,7 @@ END%%
 
 %%ANKI
 Basic
-How does the largest exponent *value* relate to the $Bias$?
+How does the largest normalized exponent *value* relate to the $Bias$?
 Back: It equals $Bias$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710605798350-->
@@ -970,7 +970,7 @@ END%%
 
 %%ANKI
 Basic
-How does the smallest exponent *value* relate to the $Bias$?
+How does the smallest normalized exponent *value* relate to the $Bias$?
 Back: It equals $1 - Bias$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710605798354-->

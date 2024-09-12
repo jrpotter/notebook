@@ -194,7 +194,7 @@ END%%
 
 %%ANKI
 Cloze
-A set $A$ is inductive iff {$\varnothing \in A$} and {$A$ is closed under successor}.
+Set $A$ is inductive iff {$\varnothing \in A$} and {$A$ is closed under successor}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1724486269558-->
 END%%

@@ -157,7 +157,7 @@ END%%
 %%ANKI
 Basic
 What closed formula is traditionally used to compute the $n$th triangular number?
-Back: $\frac{n(n + 1)}{2}$
+Back: $\large{\frac{n(n + 1)}{2}}$
 Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
 <!--ID: 1709419325936-->
 END%%
