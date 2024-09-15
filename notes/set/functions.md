@@ -1641,6 +1641,73 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1720819771087-->
 END%%
 
+### Closures
+
+If $S$ is a function and $A$ is a subset of $\mathop{\text{dom}}S$, then $A$ is said to be **closed** under $S$ if and only if whenever $x \in A$, then $S(x) \in A$. This is equivalently expressed as $S[\![A]\!] \subseteq A$.
+
+%%ANKI
+Basic
+Let $A$ be closed under $S$. Then $A$ is a subset of what other set?
+Back: $\mathop{\text{dom}}S$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726363069981-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be closed under $S$. With maximum specificity, what kind of mathematical object is $A$?
+Back: A set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726363069988-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be closed under $S$. With maximum specificity, what kind of mathematical object is $S$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726363069991-->
+END%%
+
+%%ANKI
+Basic
+In FOL, what does it mean for set $A$ to be closed under function $S$?
+Back: $\forall x \in A, S(x) \in A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726363069994-->
+END%%
+
+%%ANKI
+Basic
+What concept is being expressed in "$\forall x \in A, S(x) \in A$"?
+Back: Set $A$ is closed under $S$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726363069997-->
+END%%
+
+%%ANKI
+Basic
+How can we more compactly express "$\forall x \in A, S(x) \in A$"?
+Back: $S[\![A]\!] \subseteq A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726363070000-->
+END%%
+
+%%ANKI
+Cloze
+If $S[\![A]\!] \subseteq A$, then {1:$A$} is closed {2:under} {1:$S$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726363070010-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is closed under function $S$. What imagery does the term "closed" invoke?
+Back: Applying a member of $A$ to $S$ always yields an element in $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726363070015-->
+END%%
+
 ## Kernels
 
 Let $F \colon A \rightarrow B$. Define [[relations#Equivalence Relations|equivalence relation]] $\sim$ as $$x \sim y \Leftrightarrow f(x) = f(y)$$

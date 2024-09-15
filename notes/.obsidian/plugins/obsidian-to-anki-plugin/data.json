@@ -186,7 +186,14 @@
     "infinity.png",
     "nan.png",
     "triangular-gnomon.png",
-    "pascals-triangle.png"
+    "pascals-triangle.png",
+    "function-bijective.png",
+    "function-injective.png",
+    "function-surjective.png",
+    "function-general.png",
+    "function-kernel.png",
+    "peano-system-i.png",
+    "peano-system-ii.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -326,7 +333,7 @@
     "algebra/sequences/index.md": "208174a5a078b120fa11e296ad1d09c1",
     "_journal/2024-03-02.md": "08c3cae1df0079293b47e1e9556f1ce1",
     "_journal/2024-03/2024-03-01.md": "70da812300f284df72718dd32fc39322",
-    "algebra/sequences/triangular-numbers.md": "bf08ea7759b24defb7d5d3912cf04503",
+    "algebra/sequences/triangular-numbers.md": "aafaf54e5aff9ca3c7354591fce9f833",
     "algebra/sequences/square-numbers.md": "171f7c5a8dac088afba40923ab86c68e",
     "_journal/2024-03-03.md": "c4977a3778ed227b768c3f9ad5512670",
     "_journal/2024-03/2024-03-02.md": "8136792b0ee6e08232e4f60c88d461d2",
@@ -578,7 +585,7 @@
     "_journal/2024-06/2024-06-12.md": "f82dfa74d0def8c3179d3d076f94558e",
     "_journal/2024-06-14.md": "5d12bc272238ac985a1d35d3d63ea307",
     "_journal/2024-06/2024-06-13.md": "e2722a00585d94794a089e8035e05728",
-    "set/functions.md": "6716f8a32af73e5a4d1b2cbf6987b60f",
+    "set/functions.md": "59e449d6756b57c846cdf07b0a1b4330",
     "_journal/2024-06-15.md": "92cb8dc5c98e10832fb70c0e3ab3cec4",
     "_journal/2024-06/2024-06-14.md": "5d12bc272238ac985a1d35d3d63ea307",
     "lambda-calculus/beta-reduction.md": "a8e2825c84e842ceef7aa638a493b91a",
@@ -738,7 +745,7 @@
     "_journal/2024-08/2024-08-15.md": "7c3a96a25643b62b0064bf32cb17d92f",
     "_journal/2024-08-17.md": "b06a551560c377f61a1b39286cd43cee",
     "_journal/2024-08/2024-08-16.md": "da1127a1985074a3930b4c3512344025",
-    "set/order.md": "3bf63dd9c8ce6d2b4c6905dab0bd4aad",
+    "set/order.md": "b69f922200514975b7a7028eef030b59",
     "_journal/2024-08-18.md": "6f8aec69e00401b611db2a377a3aace5",
     "ontology/philosophy/properties.md": "41b32249d3e4c23d73ddb3a417d65a4c",
     "_journal/2024-08-19.md": "94836e52ec04a72d3e1dbf3854208f65",
@@ -755,7 +762,7 @@
     "_journal/2024-08/2024-08-21.md": "1637b8ec8475cf3eb4f41d1d86cbf5df",
     "_journal/2024-08/2024-08-20.md": "e8bec308d1b29e411c6799ace7ef6571",
     "_journal/2024-08-23.md": "3b2feab2cc927e267263cb1e9c173d50",
-    "set/natural-numbers.md": "f37647a51f457cb7d335e4e4fff227de",
+    "set/natural-numbers.md": "bf73972ec1ca619ba0124169c25b1c39",
     "_journal/2024-08-24.md": "563fad24740e44734a87d7c3ec46cec4",
     "_journal/2024-08/2024-08-23.md": "7b5a40e83d8f07ff54cd9708017d029c",
     "_journal/2024-08/2024-08-22.md": "050235d5dc772b542773743b57ce3afe",
@@ -797,7 +804,12 @@
     "_journal/2024-09/2024-09-10.md": "71a766783213f58552990b3ab1baeb50",
     "_journal/2024-09/2024-09-08.md": "0949eaf8df8d7e35cc0734d3a823921a",
     "_journal/2024-09/2024-09-07.md": "807e46a75e8b4b414141fb0c7d3f03e4",
-    "_journal/2024-09/2024-09-06.md": "7ea6a87f77cf49943eb76dd1052bd736"
+    "_journal/2024-09/2024-09-06.md": "7ea6a87f77cf49943eb76dd1052bd736",
+    "_journal/2024-09-14.md": "774019f651e728faa288041ce4b265d3",
+    "_journal/2024-09/2024-09-13.md": "8c8f33fdd8242e5ab9adaa797dea7995",
+    "_journal/2024-09/2024-09-12.md": "30968fa3d73c005bdb4acc2025b34e11",
+    "_journal/2024-09-15.md": "a203f489d0205246b9b625354123046c",
+    "_journal/2024-09/2024-09-14.md": "1050e9ae0dfe4196a419105c43c2162f"
   },
   "fields_dict": {
     "Basic": [

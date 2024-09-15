@@ -14,7 +14,7 @@ The $n$th term of the **triangular numbers** $(T_n)_{n \geq 0}$ is the sum of wh
 %%ANKI
 Basic
 What is a polygonal number?
-Back: A number of pebbles that can be arranged into the shape of a regular polygon.
+Back: A number of pebbles that can be arranged into the shape of a regular filled polygon.
 Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
 <!--ID: 1709419325851-->
 END%%

@@ -369,6 +369,175 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1724606314406-->
 END%%
 
+## Peano System
+
+A **Peano system** is a triple $\langle N, S, e \rangle$ consisting of a set $N$, a function $S \colon N \rightarrow N$, and a member $e \in N$ such that the following three conditions are met:
+
+* $e \not\in \mathop{\text{ran}}{S}$;
+* $S$ is one-to-one;
+* Any subset $A$ of $N$ that contains $e$ and is closed under $S$ equals $N$ itself.
+
+%%ANKI
+Basic
+A Peano system is a tuple consisting of how many members?
+Back: $3$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667616-->
+END%%
+
+%%ANKI
+Basic
+Consider Peano system $\langle N, S, e \rangle$. With maximum specificity, what kind of mathematical object is $N$?
+Back: A set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667620-->
+END%%
+
+%%ANKI
+Basic
+Consider Peano system $\langle N, S, e \rangle$. With maximum specificity, what kind of mathematical object is $S$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667623-->
+END%%
+
+%%ANKI
+Basic
+Consider Peano system $\langle N, S, e \rangle$. What is the domain of $S$?
+Back: $N$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667626-->
+END%%
+
+%%ANKI
+Basic
+Consider Peano system $\langle N, S, e \rangle$. What is the codomain of $S$?
+Back: $N$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667629-->
+END%%
+
+%%ANKI
+Basic
+Consider Peano system $\langle N, S, e \rangle$. With maximum specificity, what kind of mathematical object is $e$?
+Back: A set or urelement.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667632-->
+END%%
+
+%%ANKI
+Basic
+In Peano system $\langle N, S, e \rangle$, $e$ is a member of what set?
+Back: $N$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667635-->
+END%%
+
+%%ANKI
+Basic
+In Peano system $\langle N, S, e \rangle$, $e$ is explicitly *not* a member of what set?
+Back: $\mathop{\text{ran}}S$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667639-->
+END%%
+
+%%ANKI
+Cloze
+Consider Peano system $\langle N, S, e \rangle$. Then {1:$e$} $\not\in$ {1:$\mathop{\text{ran} }S$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667643-->
+END%%
+
+%%ANKI
+Basic
+Consider Peano system $\langle N, S, e \rangle$. Function $S$ satisfies what additional condition?
+Back: $S$ is one-to-one.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667648-->
+END%%
+
+%%ANKI
+Basic
+Consider Peano system $\langle N, S, e \rangle$. What two conditions must be satisfied for $A \subseteq N$ to coincide with $N$?
+Back: $e \in A$ and $A$ is closed under $S$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667655-->
+END%%
+
+%%ANKI
+Basic
+What condition of Peano system $\langle N, S, e \rangle$ generalizes the induction principle of $\omega$?
+Back: Any set $A \subseteq N$ containing $e$ and closed under $S$ coincides with $N$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667661-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the condition of Peano systems involving closures?
+Back: The Peano induction postulate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667666-->
+END%%
+
+%%ANKI
+Basic
+The Peano induction postulate of $\langle N, S, e \rangle$ implies $N$ is the smallest set satisfying what?
+Back: That contains $e$ and is closed under $S$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667670-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle N, S, e \rangle$ be a Peano system. *Why* can't there be an $A \subset N$ containing $e$ and closed under $S$?
+Back: The Peano induction postulate states $A$ *must* coincide with $N$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667673-->
+END%%
+
+%%ANKI
+Basic
+*Why* does Peano system $\langle N, S, e \rangle$ have condition $e \not\in \mathop{\text{ran}}S$?
+Back: To avoid cycles in repeated applications of $S$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667676-->
+END%%
+
+%%ANKI
+Basic
+Which condition of Peano system $\langle N, S, e \rangle$ does the following depict?
+![[peano-system-i.png]]
+Back: $e \not\in \mathop{\text{ran}}S$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667679-->
+END%%
+
+%%ANKI
+Basic
+*Why* does Peano system $\langle N, S, e \rangle$ have condition "$S$ is one-to-one"?
+Back: To avoid two members of $N$ mapping to the same element.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667682-->
+END%%
+
+%%ANKI
+Basic
+Which condition of Peano system $\langle N, S, e \rangle$ does the following depict?
+![[peano-system-ii.png]]
+Back: $S$ is one-to-one.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667685-->
+END%%
+
+%%ANKI
+Basic
+What is the Peano induction postulate?
+Back: Given Peano system $\langle N, S, e \rangle$, a set $A \subseteq N$ containing $e$ and closed under $S$ coincides with $N$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726364667688-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
