@@ -1105,14 +1105,6 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1720969371859-->
 END%%
 
-%%ANKI
-Basic
-The term "transitive" is used to describe what kind of mathematical object?
-Back: Relations.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1721694448736-->
-END%%
-
 ## Connected
 
 A binary relation $R$ on set $A$ is said to be **connected** if for any *distinct* $x, y \in A$, either $xRy$ or $yRx$. The relation is **strongly connected** if for *all* $x, y \in A$, either $xRy$ or $yRx$.

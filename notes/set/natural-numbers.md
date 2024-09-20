@@ -538,6 +538,136 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1726364667688-->
 END%%
 
+## Transitivity
+
+A set $A$ is said to be **transitive** iff every member of a member of $A$ is itself a member of $A$. We can equivalently express this using any of the following formulations:
+
+* $x \in a \in A \Rightarrow x \in A$
+* $\bigcup A \subseteq A$
+* $a \in A \Rightarrow a \subseteq A$
+* $A \subseteq \mathscr{P}A$
+
+%%ANKI
+Basic
+What does it mean for $A$ to be a transitive set?
+Back: Every member of a member of $A$ is itself a member of $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209150-->
+END%%
+
+%%ANKI
+Basic
+In what way is the term "transitive set" ambiguous?
+Back: This term can also be used to describe a transitive relation.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209152-->
+END%%
+
+%%ANKI
+Cloze
+A transitive {1:set} is to {2:membership} whereas a transitive {2:relation} is to {1:related}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209154-->
+END%%
+
+%%ANKI
+Cloze
+$A$ is a transitive set iff {$x \in a \in A$} $\Rightarrow$ {$x \in A$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209155-->
+END%%
+
+%%ANKI
+Cloze
+$A$ is a transitive set iff {$\bigcup A$} $\subseteq$ {$A$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209157-->
+END%%
+
+%%ANKI
+Cloze
+$A$ is a transitive set iff {$a \in A$} $\Rightarrow$ {$a \subseteq A$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209158-->
+END%%
+
+%%ANKI
+Cloze
+$A$ is a transitive set iff {$A$} $\subseteq$ {$\mathscr{P} A$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209159-->
+END%%
+
+%%ANKI
+Basic
+Is $\varnothing$ a transitive set?
+Back: Yes.
+<!--ID: 1726797209160-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $\{0, 1\}$ a transitive set?
+Back: N/A. It is.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209161-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $\{1\}$ a transitive set?
+Back: Because $0 \in 1$ but $0 \not\in \{1\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209163-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $\{\varnothing\}$ a transitive set?
+Back: N/A. It is.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209164-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $\{\{\varnothing\}\}$ a transitive set?
+Back: Because $\varnothing \in \{\varnothing\}$ but $\varnothing \not\in \{\{\varnothing\}\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209165-->
+END%%
+
+%%ANKI
+Basic
+Suppose $a$ is a transitive set. *Why* does $\bigcup a \cup a = a$?
+Back: Because transitivity holds if and only if $\bigcup a \subseteq a$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209166-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \cup B = A$. What relation immediately follows?
+Back: $B \subseteq A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209167-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \cap B = A$. What relation immediately follows?
+Back: $B = A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797814900-->
+END%%
+
+%%ANKI
+Cloze
+$A$ is a transitive set iff {$\bigcup$}$A^+ =$ {$A$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726797209168-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

@@ -193,7 +193,8 @@
     "function-general.png",
     "function-kernel.png",
     "peano-system-i.png",
-    "peano-system-ii.png"
+    "peano-system-ii.png",
+    "relation-ordering-example.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -559,7 +560,7 @@
     "_journal/2024-06/2024-06-04.md": "52b28035b9c91c9b14cef1154c1a0fa1",
     "_journal/2024-06-06.md": "3f9109925dea304e7172df39922cc95a",
     "_journal/2024-06/2024-06-05.md": "b06a0fa567bd81e3b593f7e1838f9de1",
-    "set/relations.md": "9323fc61ee983487e16f6dd4c1629957",
+    "set/relations.md": "18d3f9a6bec2a23a576910750fd2158d",
     "_journal/2024-06-07.md": "795be41cc3c9c0f27361696d237604a2",
     "_journal/2024-06/2024-06-06.md": "db3407dcc86fa759b061246ec9fbd381",
     "_journal/2024-06-08.md": "b20d39dab30b4e12559a831ab8d2f9b8",
@@ -762,7 +763,7 @@
     "_journal/2024-08/2024-08-21.md": "1637b8ec8475cf3eb4f41d1d86cbf5df",
     "_journal/2024-08/2024-08-20.md": "e8bec308d1b29e411c6799ace7ef6571",
     "_journal/2024-08-23.md": "3b2feab2cc927e267263cb1e9c173d50",
-    "set/natural-numbers.md": "1135fcfce9759ed4c5689df59b0c9fe3",
+    "set/natural-numbers.md": "353d1eef7b50fa8f635adc928df734fa",
     "_journal/2024-08-24.md": "563fad24740e44734a87d7c3ec46cec4",
     "_journal/2024-08/2024-08-23.md": "7b5a40e83d8f07ff54cd9708017d029c",
     "_journal/2024-08/2024-08-22.md": "050235d5dc772b542773743b57ce3afe",
@@ -810,7 +811,12 @@
     "_journal/2024-09/2024-09-12.md": "30968fa3d73c005bdb4acc2025b34e11",
     "_journal/2024-09-15.md": "0e5d1ecd73edf343d3a268b25140a921",
     "_journal/2024-09/2024-09-14.md": "1050e9ae0dfe4196a419105c43c2162f",
-    "_journal/2024-09-16.md": "bd3f811538b8e8b288b3376246471c0a"
+    "_journal/2024-09-16.md": "bd3f811538b8e8b288b3376246471c0a",
+    "_journal/2024-09/2024-09-18.md": "5cba3e6646783019db268af3b353c5d8",
+    "_journal/2024-09/2024-09-17.md": "caea0dab26b0970c045ccd9e5f2f3765",
+    "_journal/2024-09/2024-09-16.md": "7dd800d514051dd36c33c14623c7c5c8",
+    "_journal/2024-09/2024-09-15.md": "0e5d1ecd73edf343d3a268b25140a921",
+    "_journal/2024-09-19.md": "612f08e8f9ce35f71378e2c4a636c862"
   },
   "fields_dict": {
     "Basic": [
