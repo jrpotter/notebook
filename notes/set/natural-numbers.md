@@ -243,7 +243,7 @@ A **natural number** is a set that belongs to every inductive set.
 
 %%ANKI
 Basic
-How is a natural number *defined* in set theory?
+How is the set of natural numbers *defined* in set theory?
 Back: As a set belonging to every inductive set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1724486756997-->
@@ -506,7 +506,7 @@ END%%
 
 %%ANKI
 Basic
-Which condition of Peano system $\langle N, S, e \rangle$ does the following depict?
+Which condition of Peano system $\langle N, S, e \rangle$ does the following violate?
 ![[peano-system-i.png]]
 Back: $e \not\in \mathop{\text{ran}}S$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -523,7 +523,7 @@ END%%
 
 %%ANKI
 Basic
-Which condition of Peano system $\langle N, S, e \rangle$ does the following depict?
+Which condition of Peano system $\langle N, S, e \rangle$ does the following violate?
 ![[peano-system-ii.png]]
 Back: $S$ is one-to-one.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
