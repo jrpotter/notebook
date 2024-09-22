@@ -1655,7 +1655,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be closed under $S$. With maximum specificity, what kind of mathematical object is $A$?
+Let $A$ be closed under $S$. What kind of mathematical object is $A$?
 Back: A set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1726363069988-->
@@ -1663,7 +1663,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be closed under $S$. With maximum specificity, what kind of mathematical object is $S$?
+Let $A$ be closed under $S$. What kind of mathematical object is $S$?
 Back: A function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1726363069991-->

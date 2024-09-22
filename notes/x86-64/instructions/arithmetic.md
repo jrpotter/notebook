@@ -32,7 +32,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`leaq`} instruction is to x86-64 as the {`&`} operator is to C.
+The {`leaq`} instruction is to x86-64 as the {`&`} unary operator is to C.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1715780601458-->

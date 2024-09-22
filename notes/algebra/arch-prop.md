@@ -78,7 +78,7 @@ END%%
 
 %%ANKI
 Basic
-What mathematical entities are assumed to exist in the formulate of the Archimedean property of the reals?
+What mathematical entities are presumed in the Archimedean property of the reals?
 Back: Two positive real numbers.
 Reference: “Archimedean Property,” in _Wikipedia_, June 23, 2024, [https://en.wikipedia.org/w/index.php?title=Archimedean_property](https://en.wikipedia.org/w/index.php?title=Archimedean_property&oldid=1230567137).
 <!--ID: 1724155425509-->

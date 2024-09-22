@@ -787,6 +787,38 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1715900348160-->
 END%%
 
+%%ANKI
+Basic
+Let $A$ be a set. What does $\bigcup \mathscr{P} A$ evaluate to?
+Back: $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726976526809-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. *Why* does $\bigcup \mathscr{P} A = A$?
+Back: Because $\mathscr{P} A$ evaluates to the subsets of $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726976526815-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. What does $\bigcap \mathscr{P} A$ evaluate to?
+Back: $\varnothing$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726976526819-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. *Why* does $\bigcap \mathscr{P} A = \varnothing$?
+Back: Because $\varnothing \in \mathscr{P} A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726976526824-->
+END%%
+
 ## Subset Axioms
 
 For each formula $\_\_\_$ not containing $B$, the following is an axiom: $$\forall t_1, \cdots, \forall t_k, \forall c, \exists B, \forall x, (x \in B \Leftrightarrow x \in c \land \_\_\_)$$

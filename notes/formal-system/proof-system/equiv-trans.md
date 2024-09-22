@@ -469,13 +469,6 @@ $$
 END%%
 
 %%ANKI
-Cloze
-The system of evaluation has {equivalences} whereas the formal system has {theorems}.
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1707253246458-->
-END%%
-
-%%ANKI
 Basic
 What is a "theorem" in the equivalence-transformation formal system?
 Back: An equivalence derived from the axioms and inference rules.

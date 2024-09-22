@@ -283,7 +283,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $n \in \omega$. What other sets *must* $n$ be a member of?
+Suppose $n \in \omega$. By definition of natural numbers, what other sets must $n$ be a member of?
 Back: Every other inductive set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1724486757010-->
@@ -377,6 +377,8 @@ A **Peano system** is a triple $\langle N, S, e \rangle$ consisting of a set $N$
 * $S$ is one-to-one;
 * Any subset $A$ of $N$ that contains $e$ and is closed under $S$ equals $N$ itself.
 
+Given $\sigma = \{\langle n, n^+ \rangle \mid n \in \omega\}$, $\langle \omega, \sigma, 0 \rangle$ is a Peano system.
+
 %%ANKI
 Basic
 A Peano system is a tuple consisting of how many members?
@@ -387,7 +389,7 @@ END%%
 
 %%ANKI
 Basic
-Consider Peano system $\langle N, S, e \rangle$. With maximum specificity, what kind of mathematical object is $N$?
+Consider Peano system $\langle N, S, e \rangle$. What kind of mathematical object is $N$?
 Back: A set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1726364667620-->
@@ -395,7 +397,7 @@ END%%
 
 %%ANKI
 Basic
-Consider Peano system $\langle N, S, e \rangle$. With maximum specificity, what kind of mathematical object is $S$?
+Consider Peano system $\langle N, S, e \rangle$. What kind of mathematical object is $S$?
 Back: A function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1726364667623-->
@@ -419,7 +421,7 @@ END%%
 
 %%ANKI
 Basic
-Consider Peano system $\langle N, S, e \rangle$. With maximum specificity, what kind of mathematical object is $e$?
+Consider Peano system $\langle N, S, e \rangle$. What kind of mathematical object is $e$?
 Back: A set or urelement.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1726364667632-->
@@ -536,6 +538,70 @@ What is the Peano induction postulate?
 Back: Given Peano system $\langle N, S, e \rangle$, a set $A \subseteq N$ containing $e$ and closed under $S$ coincides with $N$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1726364667688-->
+END%%
+
+%%ANKI
+Basic
+Which Peano system serves as the prototypical example?
+Back: $\langle \omega, \sigma, 0 \rangle$ where $\sigma$ denotes the successor restricted to the natural numbers.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726928580006-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle \omega, \sigma, 0 \rangle$ be a Peano system. How is $\omega$ defined?
+Back: As the set of natural numbers.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726928580037-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle \omega, \sigma, 0 \rangle$ be a Peano system. How is $\sigma$ defined?
+Back: $\{\langle n, n^+ \rangle \mid n \in \omega\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726928580064-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle \omega, \sigma, 0 \rangle$ be a Peano system. What kind of mathematical object is $\sigma$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726928580069-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle \omega, \sigma, 0 \rangle$ be a Peano system. What is the domain of $\sigma$?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726928580075-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle \omega, \sigma, 0 \rangle$ be a Peano system. What is the codomain of $\sigma$?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726928580081-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle \omega, \sigma, 0 \rangle$ be a Peano system. Its Peano induction postulate goes by what other name?
+Back: The induction principle for $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726928580087-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle \omega, \sigma, 0 \rangle$ be a Peano system. The induction principle for $\omega$ satisfies what postulate of the system?
+Back: The Peano induction postulate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726928580092-->
 END%%
 
 ## Transitivity
@@ -666,6 +732,110 @@ Cloze
 $A$ is a transitive set iff {$\bigcup$}$A^+ =$ {$A$}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1726797209168-->
+END%%
+
+%%ANKI
+Basic
+Which sets serve as the prototypical example of transitive sets?
+Back: The natural numbers.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726857149204-->
+END%%
+
+%%ANKI
+Basic
+Is $n \in \omega$ a transitive set?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726857149214-->
+END%%
+
+%%ANKI
+Basic
+Is $\omega$ a transitive set?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726857149225-->
+END%%
+
+%%ANKI
+Basic
+How can we alternatively state "$\omega$ is a transitive set"?
+Back: Every natural number is a set of natural numbers.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726976055230-->
+END%%
+
+%%ANKI
+Basic
+How can we more concisely state "every natural number is a set of natural numbers"?
+Back: $\omega$ is a transitive set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1726976055239-->
+END%%
+
+%%ANKI
+Basic
+What does $\mathscr{P}\,0$ evaluate to?
+Back: $1$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727019806525-->
+END%%
+
+%%ANKI
+Basic
+What does $\mathscr{P}\,1$ evaluate to?
+Back: $2$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727019806532-->
+END%%
+
+%%ANKI
+Basic
+What does $\mathscr{P}\,2$ evaluate to?
+Back: $\{0, 1, 2, \{1\}\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727019806534-->
+END%%
+
+%%ANKI
+Basic
+Suppose $X$ is transitive. Is $\bigcup X$ transitive?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727019806538-->
+END%%
+
+%%ANKI
+Basic
+Suppose for all $x \in X$, $x$ is transitive. Is $X$ transitive?
+Back: Not necessarily.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727019806541-->
+END%%
+
+%%ANKI
+Basic
+Suppose for all $x \in X$, $x$ is transitive. Is $\bigcup X$ transitive?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727019806545-->
+END%%
+
+%%ANKI
+Basic
+Suppose for all $x \in X$, $x$ is transitive. Is $\bigcap X$ transitive?
+Back: N/A. If $X = \varnothing$, $\bigcap X$ is undefined.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727019806550-->
+END%%
+
+%%ANKI
+Basic
+Suppose $X \neq \varnothing$ and for all $x \in X$, $x$ is transitive. Is $\bigcap X$ transitive?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727019806554-->
 END%%
 
 ## Bibliography

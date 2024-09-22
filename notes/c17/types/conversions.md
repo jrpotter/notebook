@@ -216,14 +216,26 @@ What is the type domain of `a + b`?
 unsigned short a;
 signed int b;
 ```
-Back: Indeterminate.
+Back: Real.
 Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 <!--ID: 1724762203469-->
 END%%
 
 %%ANKI
 Basic
-*Why* is the type domain of `a + b` indeterminate?
+What is the common real type of `a + b`?
+```c
+unsigned short a;
+signed int b;
+```
+Back: Indeterminate.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1726840632804-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the common real type of `a + b` indeterminate?
 ```c
 unsigned short a;
 int b;
@@ -235,7 +247,7 @@ END%%
 
 %%ANKI
 Basic
-What *might* the type domain of `a + b` be?
+What *might* the common real type of `a + b` be?
 ```c
 unsigned short a;
 signed int b;
@@ -259,7 +271,7 @@ END%%
 
 %%ANKI
 Basic
-When is the type domain of `a + b` equal to `unsigned int`?
+When is the common real type of `a + b` equal to `unsigned int`?
 ```c
 unsigned short a;
 signed int b;

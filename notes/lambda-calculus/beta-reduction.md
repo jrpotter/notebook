@@ -395,7 +395,7 @@ END%%
 
 %%ANKI
 Basic
-What proposition explains how applications relate to the definition of $\beta\text{-nf}$?
+What proposition explains how atoms and applications relate to the definition of $\beta\text{-nf}$?
 Back: For all atoms $a$, if $M, N \in \beta\text{-nf}$, then $aMN \in \beta\text{-nf}$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1720645978924-->

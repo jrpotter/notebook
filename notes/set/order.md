@@ -487,7 +487,7 @@ END%%
 
 %%ANKI
 Basic
-Consider an equivalence class of $x$ (modulo $R$). With maximum specificity, what kind of mathematical object is $R$?
+Consider an equivalence class of $x$ (modulo $R$). What kind of mathematical object is $R$?
 Back: A relation.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721098094144-->

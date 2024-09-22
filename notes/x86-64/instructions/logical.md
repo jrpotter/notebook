@@ -31,7 +31,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`NEG`} instruction class is to x86-64 whereas the {`-`} *unary* operator is to C.
+The {`NEG`} instruction class is to x86-64 whereas the {`-`} unary operator is to C.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1716126147801-->

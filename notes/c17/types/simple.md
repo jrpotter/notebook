@@ -764,6 +764,64 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1723938382398-->
 END%%
 
+### Integer Constant Expressions
+
+An integer constant expression (ICE) is a compile-time integer value. Its value must be determinable at compile time (e.g. no function calls are permitted), and also no evaluation of an object must participate as an operand.
+
+%%ANKI
+Basic
+What is ICE an acronym for?
+Back: **I**nteger **c**onstant **e**xpression.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810784-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't `b42` in the following considered an ICE?
+```c
+enum { b42 = 42 }
+```
+Back: N/A. It is.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810792-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't `b42` in the following considered an ICE?
+```c
+signed const a42 = 42;
+enum { b42 = a42 }
+```
+Back: Because it depends on the evaluation of object `a42`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810798-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't `c52` in the following considered an ICE?
+```c
+enum { b42 = 42, c52 = b42 + 10 }
+```
+Back: N/A. It is.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810804-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't `b42` in the following considered an ICE?
+```c
+signed const a42() { return 42; }
+enum { b42 = a42() }
+```
+Back: Because it depends on a function call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810810-->
+END%%
+
 ## Floating Point
 
 ### Literals
@@ -933,7 +991,56 @@ Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Progra
 <!--ID: 1722786892138-->
 END%%
 
+%%ANKI
+Basic
+Positional values of `enum`s start at what value?
+Back: `0`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810814-->
+END%%
+
+%%ANKI
+Basic
+What type is given to enumeration constants?
+Back: `signed int`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810819-->
+END%%
+
+%%ANKI
+Basic
+What kind of integer expressions are `enum` constants limited to?
+Back: Integer constant expressions.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810827-->
+END%%
+
+%%ANKI
+Basic
+Besides being an ICE, what other condition is expected on `enum` values?
+Back: The ICE evaluates to an integer that fits within a `signed int`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810833-->
+END%%
+
+%%ANKI
+Basic
+What mechanism(s) are available for defining constants of type `signed int`?
+Back: `enum`s and macros.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810839-->
+END%%
+
+%%ANKI
+Basic
+What mechanism(s) are available for defining constants of type `unsigned int`?
+Back: Macros.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810842-->
+END%%
+
 ## Bibliography
 
 * “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+* Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 * Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.

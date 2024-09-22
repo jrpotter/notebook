@@ -1203,7 +1203,7 @@ END%%
 
 %%ANKI
 Basic
-With maximum specificity, is $\langle B, D, E, J, K, B, A \rangle$ a path, trail, or walk?
+Is $\langle B, D, E, J, K, B, A \rangle$ most precisely a path, trail, or walk?
 ![[cyclic-undirected-labelled.png]]
 Back: A trail.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
@@ -1212,7 +1212,7 @@ END%%
 
 %%ANKI
 Basic
-With maximum specificity, is $\langle B, D, E, J, K, B \rangle$ a path, trail, or walk?
+Is $\langle B, D, E, J, K, B \rangle$ most precisely a path, trail, or walk?
 ![[cyclic-undirected-labelled.png]]
 Back: A path.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
@@ -1221,7 +1221,7 @@ END%%
 
 %%ANKI
 Basic
-With maximum specificity, is $\langle B, D, B, K, L \rangle$ a path, trail, or walk?
+Is $\langle B, D, B, K, L \rangle$ most precisely a path, trail, or walk?
 ![[cyclic-undirected-labelled.png]]
 Back: A walk.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
@@ -1230,7 +1230,7 @@ END%%
 
 %%ANKI
 Basic
-With maximum specificity, is $\langle A, B, D \rangle$ a path, trail, or walk?
+Is $\langle A, B, D \rangle$ most precisely a path, trail, or walk?
 ![[cyclic-undirected-labelled.png]]
 Back: A path.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
