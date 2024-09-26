@@ -70,7 +70,7 @@ END%%
 
 %%ANKI
 Cloze
-We say a sequence is {$\Delta^k$-constant} when the {$k$th differences is constant}.
+We say a sequence is {$\Delta^k$-constant} when the {$k$th differences are constant}.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1713580109189-->
 END%%

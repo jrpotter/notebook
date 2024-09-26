@@ -488,7 +488,7 @@ END%%
 %%ANKI
 Basic
 Consider an equivalence class of $x$ (modulo $R$). What kind of mathematical object is $R$?
-Back: A relation.
+Back: An equivalence relation.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721098094144-->
 END%%

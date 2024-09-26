@@ -135,7 +135,7 @@ END%%
 %%ANKI
 Basic
 Which standard graph representation has worst-case BFS running time of $O(\lvert V \rvert + \lvert E \rvert)$?
-Back: The adjacency-matrix representation.
+Back: The adjacency-list representation.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1727044035989-->
 END%%
@@ -146,6 +146,14 @@ Given graph $\langle V, E \rangle$ with adjacency-list representation, what is t
 Back: $O(\lvert V \rvert + \lvert E \rvert)$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1727044035983-->
+END%%
+
+%%ANKI
+Basic
+Which standard graph representation has worst-case BFS running time of $O(\lvert V \rvert^2)$?
+Back: The adjacency-matrix representation.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1727357400678-->
 END%%
 
 %%ANKI
