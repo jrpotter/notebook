@@ -245,7 +245,16 @@ Tags: c17
 <!--ID: 1709131892349-->
 END%%
 
+%%ANKI
+Basic
+What does it mean for a program to (perform a) trap?
+Back: It is terminated abruptly before its usual end.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727433781278-->
+END%%
+
 ## Bibliography
 
 * Cooper, Mendel. “Advanced Bash-Scripting Guide,” n.d., 916.
 * Dowling, “A List of Signals and What They Mean.”
+* Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).

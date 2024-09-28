@@ -358,14 +358,6 @@ END%%
 
 %%ANKI
 Basic
-What is the binary representation of a value?
-Back: N/A. Binary representations describe types not values.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1723856661379-->
-END%%
-
-%%ANKI
-Basic
 What is the object representation of a type?
 Back: How a value of a given type is actually stored in memory, disk, etc.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
@@ -392,6 +384,14 @@ Cloze
 A {binary} representation is abstract whereas an {object} representation is concrete.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1723856661405-->
+END%%
+
+%%ANKI
+Basic
+Why might the same value have different binary representations?
+Back: Because the binary representation corresponds to the type of the value.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727432711873-->
 END%%
 
 ## Bibliography

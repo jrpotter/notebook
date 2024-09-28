@@ -46,7 +46,7 @@ END%%
 
 %%ANKI
 Basic
-How are natural deduction's inference rules categorized into two?
+With respect to propositional logic, how are natural deduction's inference rules divided into two categories?
 Back: As introduction and elimination rules.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721655978499-->
@@ -54,7 +54,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to propositional logic, how are natural deduction's inference rules categorized into five?
+With respect to propositional logic, how are natural deduction's inference rules divided into five categories?
 Back: As an introduction and elimination rule per propositional logic operator.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721655978506-->

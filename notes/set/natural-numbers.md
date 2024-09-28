@@ -838,6 +838,123 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1727019806554-->
 END%%
 
+## Recursion Theorem
+
+The recursion theorem guarantees recursively defined functions exist. More formally, let $A$ be a set, $a \in A$, and $F \colon A \rightarrow A$. Then there exists a unique function $h \colon \omega \rightarrow A$ such that, for every $n \in \omega$, $$\begin{align*} h(0) & = a \\ h(n^+) & = F(h(n)) \end{align*}$$
+
+%%ANKI
+Basic
+*Why* is the recursion theorem important?
+Back: It guarantees recursively defined functions exist.
+Reference: “Recursion,” in _Wikipedia_, September 23, 2024, [https://en.wikipedia.org/w/index.php?title=Recursion#The_recursion_theorem](https://en.wikipedia.org/w/index.php?title=Recursion&oldid=1247328220#The_recursion_theorem).
+<!--ID: 1727492422625-->
+END%%
+
+%%ANKI
+Basic
+What entities does the recursion theorem presume the existence of?
+Back: A set $A$, an element $a \in A$, and a function $F \colon A \rightarrow A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727492422632-->
+END%%
+
+%%ANKI
+Basic
+Let $a \in A$ and $F \colon A \rightarrow A$. The recursion theorem implies existence of what?
+Back: A unique function $h \colon \omega \rightarrow A$ such that $h(0) = a$ and $h(n^+) = F(h(n))$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727492422636-->
+END%%
+
+%%ANKI
+Basic
+What function "signature" is considered in the consequent of the recursion theorem?
+Back: $h \colon \omega \rightarrow A$ for some set $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727492422666-->
+END%%
+
+%%ANKI
+Basic
+What function "signature" is considered in the antecedent of the recursion theorem?
+Back: $F \colon A \rightarrow A$ for some set $A$ and function $F$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727492422673-->
+END%%
+
+%%ANKI
+Basic
+Suppose the recursion theorem proves $h \colon \omega \rightarrow A$ exists. What does $h(0)$ equal?
+Back: A fixed member of $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727492422679-->
+END%%
+
+%%ANKI
+Basic
+The recursion theorem proves $h \colon \omega \rightarrow A$ exists. What does $h(n^+)$ equal?
+Back: $F(h(n))$ for a fixed $F \colon A \rightarrow A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727492422685-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the recursion theorem named the way it is?
+Back: It guarantees recursively defined functions exist.
+Reference: “Recursion,” in _Wikipedia_, September 23, 2024, [https://en.wikipedia.org/w/index.php?title=Recursion#The_recursion_theorem](https://en.wikipedia.org/w/index.php?title=Recursion&oldid=1247328220#The_recursion_theorem).
+<!--ID: 1727492422693-->
+END%%
+
+%%ANKI
+Basic
+The recursion theorem proves $h$ exists. What kind of mathematical entity is $h$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727492422702-->
+END%%
+
+%%ANKI
+Basic
+The recursion theorem proves function $h$ exists. What is the domain of $h$?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727492422707-->
+END%%
+
+%%ANKI
+Basic
+The recursion theorem proves function $h$ exists. What is the codomain of $h$?
+Back: A fixed set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727492422711-->
+END%%
+
+%%ANKI
+Basic
+The recursion theorem proves $h \colon \omega \rightarrow A$ exists. How do we compute $h(n)$?
+Back: By applying $F$ to a fixed initial element $n$ times.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727492422716-->
+END%%
+
+%%ANKI
+Basic
+Let $a \in A$ and $F \colon A \rightarrow A$. Using the recursion theorem, how else is $F(F(F(F(a))))$ expressed?
+Back: The recursion theorem implies existence of $h \colon \omega \rightarrow A$ satisfying $h(4) = F(F(F(F(a))))$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727492422721-->
+END%%
+
+%%ANKI
+Basic
+Which theorem in set theory implies existence of recursively defined functions?
+Back: The recursion theorem (on $\omega$).
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727492422724-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+* “Recursion,” in _Wikipedia_, September 23, 2024, [https://en.wikipedia.org/w/index.php?title=Recursion#The_recursion_theorem](https://en.wikipedia.org/w/index.php?title=Recursion&oldid=1247328220#The_recursion_theorem).

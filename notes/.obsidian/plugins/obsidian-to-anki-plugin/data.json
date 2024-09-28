@@ -204,7 +204,9 @@
     "graph-induced-subgraph.png",
     "graph-subgraph.png",
     "graph-non-subgraph.png",
-    "bfs.gif"
+    "bfs.gif",
+    "closed-addressing.png",
+    "open-addressing.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -230,7 +232,7 @@
     "nix/callPackage.md": "9aeeaa22878434d3c4498cb92cfe230b",
     "nix/index.md": "4efc7fcc4ea22834ba595497e5fb715c",
     "posix/index.md": "97b1b8ecb9a953e855a9acf0ab25b8c8",
-    "posix/signals.md": "f4132369878c683bfac4d7fd863d19ba",
+    "posix/signals.md": "8cdb56708b187389b5bd4d75e762ec76",
     "templates/daily.md": "7866014e730e85683155207a02e367d8",
     "posix/regexp.md": "d7d1b8cde49c405d44c7e1d9343769c0",
     "journal/2024-02-04.md": "e2b5678fc53d7284b71ed6820c02b954",
@@ -317,7 +319,7 @@
     "_journal/2024-02-23.md": "219ce9ad15a8733edd476c97628b71fd",
     "_journal/2024-02/2024-02-22.md": "312e55d57868026f6e80f7989a889c2b",
     "c17/strings.md": "2da50edd26eae35c81f70e65bbd12d49",
-    "c17/index.md": "b039549b80bde34fab31b61b5e28e9d4",
+    "c17/index.md": "02722edf46dd45f732996eaa1980944f",
     "c17/escape-sequences.md": "a8b99070336878b4e8c11e9e4525a500",
     "c17/declarations.md": "2d7877915bf8a2772d1e4de636ba52a5",
     "algorithms/sorting/merge-sort.md": "6506483f7df6507cee0407bd205dbedd",
@@ -444,7 +446,7 @@
     "_journal/2024-04-16.md": "0bf6e2f2a3afab73d528cee88c4c1a92",
     "_journal/2024-04/2024-04-15.md": "256253b0633d878ca58060162beb7587",
     "algebra/polynomials.md": "da56d2d6934acfa2c6b7b2c73c87b2c7",
-    "algebra/sequences/delta-constant.md": "d9af958375cdf993e4ac3c68c1324ba7",
+    "algebra/sequences/delta-constant.md": "5c8b3e48d054d332a54b85a439e135b8",
     "_journal/2024-04-19.md": "a293087860a7f378507a96df0b09dd2b",
     "_journal/2024-04/2024-04-18.md": "f6e5bee68dbef90a21ca92a846930a88",
     "_journal/2024-04/2024-04-17.md": "331423470ea83fc990c1ee1d5bd3b3f1",
@@ -658,7 +660,7 @@
     "_journal/2024-07-13.md": "13b5101306b5542b8a1381a6477378ca",
     "_journal/2024-07/2024-07-12.md": "8073584fae2fe7bffcd4b69a7cd29058",
     "hashing/static.md": "3ec6eaee73fb9b599700f5a56b300b83",
-    "hashing/addressing.md": "01b33abe25aae285e1641fa43470065b",
+    "hashing/addressing.md": "c068221b70d2e37b8978951e1b91acd9",
     "ontology/index.md": "0994403dcd84415f1459752129b55f65",
     "ontology/permissivism.md": "643e815a79bc5c050cde9f996aa44ef5",
     "ontology/properties.md": "91ece501551c444afcd119d7197958ef",
@@ -694,7 +696,7 @@
     "formal-system/abstract-rewriting.md": "8424314a627851c5b94be6163f64ba30",
     "_journal/2024-07-22.md": "d2ca7ce0bbeef76395fee33c9bf36e9d",
     "_journal/2024-07/2024-07-21.md": "62c2651999371dd9ab10d964dac3d0f8",
-    "formal-system/proof-system/natural-deduction.md": "88cf72e12f3135312c715497493d21ff",
+    "formal-system/proof-system/natural-deduction.md": "f105a27843518778cb6662652a9d7aed",
     "startups/term-sheet.md": "6b6152af78addb3fe818a7fc9d375fbf",
     "startups/financing-rounds.md": "00a622fda2b4b442901bde2842309088",
     "_journal/2024-07-23.md": "35e18a1d9a8dd0a97e1d9898bc1d8f01",
@@ -773,7 +775,7 @@
     "_journal/2024-08/2024-08-21.md": "1637b8ec8475cf3eb4f41d1d86cbf5df",
     "_journal/2024-08/2024-08-20.md": "e8bec308d1b29e411c6799ace7ef6571",
     "_journal/2024-08-23.md": "3b2feab2cc927e267263cb1e9c173d50",
-    "set/natural-numbers.md": "a14465985e87b81ccbe3a5d27159654a",
+    "set/natural-numbers.md": "676bf8295cf8ea27dbcb2750de4ae197",
     "_journal/2024-08-24.md": "563fad24740e44734a87d7c3ec46cec4",
     "_journal/2024-08/2024-08-23.md": "7b5a40e83d8f07ff54cd9708017d029c",
     "_journal/2024-08/2024-08-22.md": "050235d5dc772b542773743b57ce3afe",
@@ -839,7 +841,10 @@
     "_journal/2024-09-25.md": "4527ac5c132aaf5adc6e624c5e4aca5e",
     "_journal/2024-09/2024-09-23.md": "d5589199e01c1794774b310e94d89374",
     "_journal/2024-09-26.md": "ce334b0576d6d7495150abd5c7e1ce61",
-    "_journal/2024-09/2024-09-25.md": "c8a3414e27c8ce635fe995c2dfbf6019"
+    "_journal/2024-09/2024-09-25.md": "c8a3414e27c8ce635fe995c2dfbf6019",
+    "c17/macros.md": "f7bade849d2cf714cd2ff79c4ed003d4",
+    "_journal/2024-09-27.md": "dd82b2c5c5389b6a35c4c2fcf857417c",
+    "_journal/2024-09/2024-09-26.md": "2d3e8325e7ab63168c460f18e7aa1afc"
   },
   "fields_dict": {
     "Basic": [

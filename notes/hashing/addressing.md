@@ -611,7 +611,7 @@ END%%
 
 %%ANKI
 Basic
-Consider open addressed hash table with $m$ slots. What condition must every probe sequence satisfy?
+Consider an open addressed hash table with $m$ slots. What condition must every probe sequence satisfy?
 Back: Each sequence must be a permutation of $\langle 0, 1, \ldots, m - 1 \rangle$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1722080563937-->
