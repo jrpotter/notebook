@@ -783,7 +783,7 @@
     "c17/enums.md": "9414fb67aa256a0a11b7240534c67bf6",
     "c17/derived-types.md": "6fb8f23a2423f05d5bdccb6672a32e38",
     "c17/basic-types.md": "7c6653bf6dc24c2f2aa72fc95c4f7875",
-    "c17/types/simple.md": "0edbd5da2138aa46669135a03b935db9",
+    "c17/types/simple.md": "d9579d4f34e525494f63fbaa72e00f70",
     "c17/types/enumerated.md": "e1f70a30677c776b7b44ac3e0ff4e76d",
     "c17/types/derived.md": "aff0d2b6d218fb67af3cc92ead924de3",
     "c17/types/basic.md": "5064e21e683c0218890058882e06b6f3",
@@ -847,7 +847,9 @@
     "_journal/2024-09/2024-09-26.md": "2d3e8325e7ab63168c460f18e7aa1afc",
     "_journal/2024-09-28.md": "7726baed125a2561def07dcaf48bf5a0",
     "_journal/2024-09/2024-09-27.md": "d788fa04c029009f42387317c549d93e",
-    "encoding/binary.md": "0b9beb6913906aa2523d8ab193c67f67"
+    "encoding/binary.md": "0b9beb6913906aa2523d8ab193c67f67",
+    "_journal/2024-09-29.md": "0afacc43ea98a86a50a5248e0d7afba6",
+    "_journal/2024-09/2024-09-28.md": "1b47792313acf09b1ae768d5918df703"
   },
   "fields_dict": {
     "Basic": [

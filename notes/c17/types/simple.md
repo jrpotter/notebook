@@ -350,7 +350,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum width of a `bool`?
-Back: $1$
+Back: $1$ bit.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341547-->
 END%%
@@ -366,7 +366,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum width of an `unsigned char`?
-Back: $8$
+Back: $8$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341549-->
 END%%
@@ -390,7 +390,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum width of an `unsigned short`?
-Back: $16$
+Back: $16$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341552-->
 END%%
@@ -414,7 +414,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum width of an `unsigned int`?
-Back: $16$
+Back: $16$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341555-->
 END%%
@@ -430,7 +430,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum width of an `unsigned long`?
-Back: $32$
+Back: $32$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341557-->
 END%%
@@ -454,14 +454,22 @@ END%%
 %%ANKI
 Basic
 What is the minimum width of an `unsigned long`?
-Back: $32$
+Back: $32$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 END%%
 
 %%ANKI
 Basic
+What is the minimum width of an `unsigned long long`?
+Back: $64$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727613641635-->
+END%%
+
+%%ANKI
+Basic
 What is the minimum precision of an `unsigned long long`?
-Back: $32$
+Back: $64$
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341560-->
 END%%
@@ -563,7 +571,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum width of a `signed char`?
-Back: $8$
+Back: $8$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341561-->
 END%%
@@ -587,7 +595,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum width of a `signed short`?
-Back: $16$
+Back: $16$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341564-->
 END%%
@@ -603,7 +611,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum width of a `signed int`?
-Back: $16$
+Back: $16$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341566-->
 END%%
@@ -626,7 +634,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum width of a `signed long`?
-Back: $32$
+Back: $32$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341568-->
 END%%
@@ -642,7 +650,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum width of a `signed long long`?
-Back: $64$
+Back: $64$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341570-->
 END%%
