@@ -32,14 +32,6 @@ END%%
 
 %%ANKI
 Basic
-Where are git remotes specified within the `.git` directory?
-Back: In `.git/config`
-Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
-<!--ID: 1715623927191-->
-END%%
-
-%%ANKI
-Basic
 What kind of git refs are associated with remotes?
 Back: Remote branch refs.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).

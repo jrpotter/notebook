@@ -98,20 +98,20 @@ Assume `%rbx` holds $p$. What is the value of `%rax` in the following?
 ```asm
 leaq 2(%rbx, %rbx, 7),%rax
 ```
-Back: $2 + 8p$
+Back: N/A. A scaling factor of $7$ is not allowed.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1715781031938-->
+<!--ID: 1727629670917-->
 END%%
 
 %%ANKI
 Basic
 Assume `%rdx` holds $q$. What is the value of `%rax` in the following?
 ```asm
-leaq 0xE(, %rdx, 3),%rax
+leaq 0xE(, %rdx, 4),%rax
 ```
-Back: $14 + 3q$
+Back: $14 + 4q$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1715781031941-->
+<!--ID: 1727629670921-->
 END%%
 
 ### Unary Operations

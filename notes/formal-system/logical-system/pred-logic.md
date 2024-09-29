@@ -92,7 +92,7 @@ END%%
 
 %%ANKI
 Basic
-$\exists x : S, P(x)$ is shorthand for what?
+$\exists x : S, P(x)$ is an abbreviation for what?
 Back: $\exists x, x \in S \land P(x)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707494819968-->
@@ -261,7 +261,7 @@ END%%
 
 %%ANKI
 Basic
-$\forall x : S, P(x)$ is shorthand for what?
+$\forall x : S, P(x)$ is an abbreviation for what?
 Back: $\forall x, x \in S \Rightarrow P(x)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707494819976-->

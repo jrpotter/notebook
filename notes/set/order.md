@@ -350,8 +350,8 @@ A binary relation $R$ on set $A$ is an **equivalence relation on $A$** iff it is
 
 %%ANKI
 Basic
-Given $R = \{\langle a, a \rangle, \langle b, b \rangle\}$, which of reflexivity (on $\{a, b\}$), symmetry, and transitivity does $R$ exhibit?
-Back: Reflexivity on $\{a, b\}$ and symmetry.
+Given $R = \{\langle a, a \rangle, \langle b, b \rangle\}$, which of reflexivity, symmetry, and/or transitivity does $R$ exhibit?
+Back: All three.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429839-->
 END%%
@@ -562,8 +562,8 @@ END%%
 
 %%ANKI
 Basic
-Let $\Pi$ be a partition of set $A$. What property must each *individual* member of $\Pi$ exhibit?
-Back: Each member is nonempty.
+Let $\Pi$ be a partition of set $A$. What two properties must each *individual* member of $\Pi$ exhibit?
+Back: Each member is a nonempty subset of $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721098094065-->
 END%%

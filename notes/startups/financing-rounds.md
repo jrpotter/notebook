@@ -377,7 +377,7 @@ END%%
 
 %%ANKI
 Cloze
-An {angel} is a shorthand term for an {angel investor}.
+An {angel} is an abbreviated term for an {angel investor}.
 Reference: Brad Feld and Jason Mendelson, _Venture Deals_, 3rd ed., n.d.
 <!--ID: 1719360934700-->
 END%%

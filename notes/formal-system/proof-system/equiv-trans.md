@@ -1393,7 +1393,7 @@ END%%
 
 %%ANKI
 Basic
-What proposition represents states $\{(b, T), (c, T)\}$ and $\{(b, F), (c, F)\}$?
+What DNF proposition represents states $\{(b, T), (c, T)\}$ and $\{(b, F), (c, F)\}$?
 Back: $(b \land c) \lor (\neg b \land \neg c)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861337-->

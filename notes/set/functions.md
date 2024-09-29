@@ -1747,7 +1747,7 @@ END%%
 
 %%ANKI
 Basic
-Let $F \colon A \rightarrow B$. Term "$\mathop{\text{coim}}F$" is shorthand for what?
+Let $F \colon A \rightarrow B$. Term "$\mathop{\text{coim}}F$" is an abbreviation for what?
 Back: The **coim**age of $F$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721223015596-->

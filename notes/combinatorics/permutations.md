@@ -104,7 +104,7 @@ END%%
 
 %%ANKI
 Basic
-$n!$ is shorthand for what other "big operator" formula?
+$n!$ is an abbreviation of what "big operator" formula?
 Back: $\Pi_{k=1}^n k$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708366788594-->

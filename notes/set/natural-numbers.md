@@ -852,6 +852,14 @@ END%%
 
 %%ANKI
 Basic
+The recursion theorem assumes existence of what Peano system?
+Back: $\langle \omega, \sigma, 0 \rangle$ where $\sigma$ is the successor operation restricted to the natural numbers.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727629020357-->
+END%%
+
+%%ANKI
+Basic
 What entities does the recursion theorem presume the existence of?
 Back: A set $A$, an element $a \in A$, and a function $F \colon A \rightarrow A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -908,14 +916,6 @@ END%%
 
 %%ANKI
 Basic
-The recursion theorem proves $h$ exists. What kind of mathematical entity is $h$?
-Back: A function.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1727492422702-->
-END%%
-
-%%ANKI
-Basic
 The recursion theorem proves function $h$ exists. What is the domain of $h$?
 Back: $\omega$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -940,6 +940,14 @@ END%%
 
 %%ANKI
 Basic
+The recursion theorem shows existence of $h \colon \omega \rightarrow A$. What is $A$?
+Back: A set fixed before application of the recursion theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727629020364-->
+END%%
+
+%%ANKI
+Basic
 Let $a \in A$ and $F \colon A \rightarrow A$. Using the recursion theorem, how else is $F(F(F(F(a))))$ expressed?
 Back: The recursion theorem implies existence of $h \colon \omega \rightarrow A$ satisfying $h(4) = F(F(F(F(a))))$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -952,6 +960,107 @@ Which theorem in set theory implies existence of recursively defined functions?
 Back: The recursion theorem (on $\omega$).
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1727492422724-->
+END%%
+
+%%ANKI
+Basic
+In Enderton's recursion theorem proof, function $h \colon \omega \rightarrow A$ is defined as the union of what?
+Back: All "acceptable" functions.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727627702457-->
+END%%
+
+%%ANKI
+Basic
+In Enderton's recursion theorem proof, what is the domain of an acceptable function?
+Back: A subset of $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727627702459-->
+END%%
+
+%%ANKI
+Basic
+In Enderton's recursion theorem proof, what is the codomain of an acceptable function?
+Back: A subset of some fixed set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727627702461-->
+END%%
+
+%%ANKI
+Basic
+In Enderton's recursion theorem proof, what follows if $0 \in \mathop{\text{dom}} v$ for acceptable function $v$?
+Back: $v(0) = a$ for some fixed $a \in A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727627702462-->
+END%%
+
+%%ANKI
+Basic
+In Enderton's recursion theorem proof, what follows if $n^+ \in \mathop{\text{dom}} v$ for acceptable function $v$?
+Back: $n \in \mathop{\text{dom}} v$ and $v(n^+) = F(v(n))$ for some fixed $F \colon A \rightarrow A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727627702464-->
+END%%
+\
+%%ANKI
+Basic
+In Enderton's recursion theorem proof, what term refers to the "approximating" functions?
+Back: They are called "acceptable".
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727627702465-->
+END%%
+
+%%ANKI
+Cloze
+In Enderton's recursion theorem proof, desired $h \colon \omega \rightarrow A$ is defined as $\bigcup$ {$\{ v \mid v \text{ is acceptable} \}$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727627702466-->
+END%%
+
+%%ANKI
+Cloze
+In Enderton's recursion theorem proof, desired $h \colon \omega \rightarrow A$ is {a function} because {$\{ n \in \omega \mid \text{ at most one } y \text{ such that } \langle n, y \rangle \in h \}$} is {an inductive set}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727627702468-->
+END%%
+
+%%ANKI
+Basic
+In Enderton's recursion theorem proof, how is it shown the domain of desired $h \colon \omega \rightarrow A$ equals $\omega$?
+Back: By proving $\mathop{\text{dom}} h$ is an inductive set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727627702469-->
+END%%
+
+%%ANKI
+Cloze
+In Enderton's recursion theorem proof,desired $h \colon \omega \rightarrow A$ is {unique} because {$\{ n \in \omega \mid h_1(n) = h_2(n) \}$} is {an inductive set}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727627702470-->
+END%%
+
+%%ANKI
+Basic
+*Why* is there no function $h \colon \mathbb{Z} \rightarrow \mathbb{Z}$ such that for all $n \in \mathbb{Z}$, $$\begin{align*} h(0) & = 0 \\ h(n + 1) & = h(n) + 1 \end{align*}$$
+Back: Because $\mathbb{Z}$ has no "starting point" to ground the recursive definition.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727629020369-->
+END%%
+
+%%ANKI
+Basic
+*Why* is there no function $h \colon \mathbb{N} \rightarrow \mathbb{N}$ such that for all $n \in \mathbb{N}$$, $$\begin{align*} h(0) & = 0 \\ h(n + 1) & = h(n) + 1 \end{align*}$$
+Back: N/A. The resursive theorem of $\omega$ states such an $h$ exists.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727629020375-->
+END%%
+
+%%ANKI
+Basic
+In what natural way could we generalize the recursion theorem on $\omega$?
+Back: By stating the theorem in terms of arbitrary Peano systems.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727629232445-->
 END%%
 
 ## Bibliography

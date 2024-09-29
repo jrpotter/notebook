@@ -898,6 +898,37 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1727357091109-->
 END%%
 
+%%ANKI
+Basic
+In most cases, how can the following `for` loop be rewritten as a `while` loop?
+```c
+for (init; test; update) { body; }
+```
+Back:
+```c
+init;
+while (test) { body; update }
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1727632288464-->
+END%%
+
+%%ANKI
+Basic
+In what situation are the following two blocks of code not equivalent?
+```c
+for (init; test; update) { body; }
+
+init;
+while (test) { body; update }
+```
+Back: Situations in which the `for`-loop has a `continue` statement in the `body`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1727632288468-->
+END%%
+
 ### CMOV
 
 Like [[access#MOV|MOV]] instructions, but with the data transfer only happening if the move condition is satisfied.

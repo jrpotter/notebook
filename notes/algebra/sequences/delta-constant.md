@@ -46,8 +46,8 @@ END%%
 
 %%ANKI
 Basic
-What is the recurrence of the recursive definition of the $(k + 1)$st differences of $(a_n)$?
-Back: The $(k + 1)$st differences is the differences of the $k$th differences.
+How are the $(k + 1)$st differences of $(a_n)$ defined recursively?
+Back: As the differences of the $k$th differences of $(a_n)$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1713580109153-->
 END%%

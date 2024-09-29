@@ -370,7 +370,7 @@ END%%
 
 %%ANKI
 Cloze
-The phrase "{induction on $M$}" is shorthand for phrase "{induction on $lgh(M)$}".
+The phrase "{induction on $M$}" is an abbrevation of phrase "{induction on $lgh(M)$}".
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf). 
 <!--ID: 1716743248113-->
 END%%
