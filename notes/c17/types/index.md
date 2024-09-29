@@ -314,6 +314,20 @@ END%%
 
 %%ANKI
 Cloze
+Integer types are to {1:$\mathbb{N}$} and {2:$\mathbb{Z}$}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341581-->
+END%%
+
+%%ANKI
+Cloze
+Floating-point types are to {1:$\mathbb{R}$} and {2:$\mathbb{C}$}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341582-->
+END%%
+
+%%ANKI
+Cloze
 The {real} types contrast the {complex} types.
 Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 <!--ID: 1724543977387-->

@@ -61,28 +61,26 @@ END%%
 
 %%ANKI
 Basic
-What does the "width" of an integer type refer to?
-Back: The number of bits used to represent its value.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707835869737-->
-END%%
-
-%%ANKI
 What two variants does a C integral type declaration have?
 Back: Signed and unsigned.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1727551341544-->
 END%%
 
 %%ANKI
+Basic
 What does it mean for an integer to be "signed"?
 Back: It can represent negative, zero, and positive values.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1727551341545-->
 END%%
 
 %%ANKI
+Basic
 What does it mean for an integer to be "unsigned"?
 Back: It can only represent nonnegative values.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1727551341546-->
 END%%
 
 %%ANKI
@@ -206,7 +204,7 @@ END%%
 
 %%ANKI
 Cloze
-{1:`float`} has {2:4} byte precision whereas {2:`double`} has {1:8} byte precision.
+{1:`float`} has {2:4} byte width whereas {2:`double`} has {1:8} byte width.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707493017242-->
 END%%
@@ -265,19 +263,17 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1723859121972-->
 END%%
 
-### Unsigned
+### Unsigned Integers
 
-These correspond to nonnegative integer values.
-
-| Name                 | Narrow | Rank |
-| -------------------- | ------ | ---- |
-| `bool`               | Yes    | 0    |
-| `char` (maybe)       | Yes    | 1    |
-| `unsigned char`      | Yes    | 1    |
-| `unsighed short`     | Yes    | 2    |
-| `unsigned int`       | No     | 3    |
-| `unsigned long`      | No     | 4    |
-| `unsigned long long` | No     | 5    |
+| Name                 | Narrow | Rank | Minimum Width |
+| -------------------- | ------ | ---- | ------------- |
+| `bool`               | Yes    | 0    | 1             |
+| `char` (maybe)       | Yes    | 1    | -             |
+| `unsigned char`      | Yes    | 1    | 8             |
+| `unsighed short`     | Yes    | 2    | 16            |
+| `unsigned int`       | No     | 3    | 16            |
+| `unsigned long`      | No     | 4    | 32            |
+| `unsigned long long` | No     | 5    | 64            |
 
 %%ANKI
 Basic
@@ -351,21 +347,154 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1723859122023-->
 END%%
 
-### Signed
+%%ANKI
+Basic
+What is the minimum width of a `bool`?
+Back: $1$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341547-->
+END%%
 
-These correspond to possibly negative integer values.
+%%ANKI
+Basic
+What is the minimum precision of a `bool`?
+Back: $1$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341548-->
+END%%
 
-| Name                 | Narrow | Rank |
-| -------------------- | ------ | ---- |
-| `char` (maybe)       | Yes    | 1    |
-| `signed char`        | Yes    | 1    |
-| `signed short`       | Yes    | 2    |
-| `signed int`         | No     | 3    |
-| `signed long`        | No     | 4    |
-| `signed long long`   | No     | 5    |
-| `float`              | -      | -    |
-| `double`             | -      | -    |
-| `long double`        | -      | -    |
+%%ANKI
+Basic
+What is the minimum width of an `unsigned char`?
+Back: $8$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341549-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of an `unsigned char`?
+Back: $8$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341550-->
+END%%
+
+%%ANKI
+Basic
+What is the maximum precision of an `unsigned char`?
+Back: N/A. C does not define maximum precisions.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341551-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of an `unsigned short`?
+Back: $16$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341552-->
+END%%
+
+%%ANKI
+Basic
+What is the underlying binary representation used to encode an `unsigned short`?
+Back: Unsigned encoding.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341553-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of an `unsigned short`?
+Back: $16$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341554-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of an `unsigned int`?
+Back: $16$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341555-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of an `unsigned int`?
+Back: $16$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341556-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of an `unsigned long`?
+Back: $32$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341557-->
+END%%
+
+%%ANKI
+Basic
+What is the underlying binary representation used to encode an `unsigned long`?
+Back: Unsigned encoding.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341558-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of an `unsigned long`?
+Back: $32$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341559-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of an `unsigned long`?
+Back: $32$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of an `unsigned long long`?
+Back: $32$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341560-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the smallest possible `unsigned long long`?
+Back: As `0`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157085-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the largest possible `unsigned long long`?
+Back: As `ULLONG_MAX`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157086-->
+END%%
+
+### Signed Integers
+
+| Name               | Narrow | Rank | Minimum Width |
+| ------------------ | ------ | ---- | ------------- |
+| `char` (maybe)     | Yes    | 1    | -             |
+| `signed char`      | Yes    | 1    | 8             |
+| `signed short`     | Yes    | 2    | 16            |
+| `signed int`       | No     | 3    | 16            |
+| `signed long`      | No     | 4    | 32            |
+| `signed long long` | No     | 5    | 64            |
+| `float`            | -      | -    | -             |
+| `double`           | -      | -    | -             |
+| `long double`      | -      | -    | -             |
 
 %%ANKI
 Basic
@@ -429,6 +558,117 @@ Which signed non-narrow type has the smallest rank?
 Back: `signed int`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1723859122080-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of a `signed char`?
+Back: $8$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341561-->
+END%%
+
+%%ANKI
+Basic
+What is the underlying binary representation used to encode a `signed char`?
+Back: N/A. This is implementation specific.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341562-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of a `signed char`?
+Back: $7$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341563-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of a `signed short`?
+Back: $16$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341564-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of a `signed short`?
+Back: $15$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341565-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of a `signed int`?
+Back: $16$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341566-->
+END%%
+
+%%ANKI
+Basic
+What is the underlying binary representation used to encode a `signed char`?
+Back: N/A. This is implementation specific.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of a `signed int`?
+Back: $15$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341567-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of a `signed long`?
+Back: $32$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341568-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of a `signed long`?
+Back: $31$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341569-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of a `signed long long`?
+Back: $64$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341570-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of a `signed long long`?
+Back: $63$
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341571-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the smallest possible `signed int`?
+Back: As `INT_MIN`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157087-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the largest possible `signed int`?
+Back: As `INT_MAX`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157088-->
 END%%
 
 ### Literals
@@ -675,7 +915,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1714677608769-->
 END%%
 
-Integer constants can be forced to be unsigned or to be a type with minimal width by using the following suffixes:
+Integer constants can be made a certain signedness or type by using the following suffixes:
 
 | Suffix | Type                 |
 | ------ | -------------------- |
@@ -826,7 +1066,7 @@ END%%
 
 ### Literals
 
-Floating-point constants can be forced to be a type with minimal width by using the following suffixes:
+Floating-point constants can be made a certain type by using the following suffixes:
 
 | Suffix | Type          |
 | ------ | ------------- |
@@ -903,6 +1143,117 @@ What type is given to floating-point literal `-1.0LL`?
 Back: N/A. Invalid suffix.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1723938382436-->
+END%%
+
+%%ANKI
+Cloze
+`INT_MAX` is to {`<limits.h>`} whereas `DBL_MAX` is to {`<float.h>`}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157090-->
+END%%
+
+%%ANKI
+Basic
+What does `DBL_MIN` refer to?
+Back: The smallest `double` strictly greater than 0.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157091-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the smallest possible `double`?
+Back: As `-DBL_MAX`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157092-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the largest possible `double`?
+Back: As `DBL_MAX`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157093-->
+END%%
+
+## Exact-Width Integer Types
+
+The `stdint.h` library contains **exact-width integer types**. These are aliases to types that represent an exact width and sign representation:
+
+* If the type `uintN_t` is provided, it is an unsigned integer type with exactly $N$ bits of width and precision.
+* If the type `intN_t` is provided, is is signed, with two's complement representation, has a width of exactly $N$ bits and a precision of $N - 1$.
+
+The C standard says these `typedef`s *must* be defined if they can be satisfied. Otherwise they may not exist.
+
+%%ANKI
+Cloze
+The {`<stdint.h>`} library contains {exact-width integer types}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341572-->
+END%%
+
+%%ANKI
+Basic
+Suppose `uintN_t` exists. What is its width?
+Back: `N` bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341573-->
+END%%
+
+%%ANKI
+Basic
+Suppose `uintN_t` exists. What is its precision?
+Back: `N`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341574-->
+END%%
+
+%%ANKI
+Basic
+Suppose `uintN_t` exists. It is encoded using what binary representation?
+Back: Unsigned encoding.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341575-->
+END%%
+
+%%ANKI
+Basic
+Suppose `intN_t` exists. What is its width?
+Back: `N` bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341576-->
+END%%
+
+%%ANKI
+Basic
+Suppose `intN_t` exists. What is its precision?
+Back: `N - 1`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341577-->
+END%%
+
+%%ANKI
+Basic
+Suppose `intN_t` exists. It is encoded using what binary representation?
+Back: Two's-complement encoding.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341578-->
+END%%
+
+%%ANKI
+Basic
+Suppose a platform has a 32-bit signed integer type. Why might `int32_t` not be defined?
+Back: The platform may not use two's-complement encoding.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341579-->
+END%%
+
+%%ANKI
+Basic
+Suppose a platform has a 32-bit signed two's-complement integer type. Why might `int32_t` not be defined?
+Back: N/A. The C standard states `int32_t` *must* be defined.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341580-->
 END%%
 
 ## Enumerated Types

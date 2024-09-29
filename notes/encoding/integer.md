@@ -11,13 +11,38 @@ tags:
 
 Integers are typically encoded using either **unsigned encoding** or **two's-complement**. The following table highlights how the min and max of these encodings behave:
 
-Value    | $w = 8$ | $w = 16$ | $w = 32$
--------- | ------- | -------- | ------------
-$UMin_w$ | `0x00`  | `0x0000` | `0x00000000`
-$UMax_w$ | `0xFF`  | `0xFFFF` | `0xFFFFFFFF`
-$TMin_w$ | `0x80`  | `0x8000` | `0x80000000`
-$TMax_w$ | `0x7F`  | `0x7FFF` | `0x7FFFFFFF`
+| Value    | $w = 8$ | $w = 16$ | $w = 32$     |
+| -------- | ------- | -------- | ------------ |
+| $UMin_w$ | `0x00`  | `0x0000` | `0x00000000` |
+| $UMax_w$ | `0xFF`  | `0xFFFF` | `0xFFFFFFFF` |
+| $TMin_w$ | `0x80`  | `0x8000` | `0x80000000` |
+| $TMax_w$ | `0x7F`  | `0x7FFF` | `0x7FFFFFFF` |
 
+The **width** of an integer type refers to the number of bits used in the type's binary representation. It's **precision** refers to the number of bits used in the type's binary representation, excluding those used for signedness.
+
+%%ANKI
+Basic
+What does the "width" of an integer type refer to?
+Back: The number of bits used to represent its value.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1707835869737-->
+END%%
+
+%%ANKI
+Basic
+What does the "precision" of an integer type refer to?
+Back: The number of bits used to represent its value, excluding bits used for sign representations.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341542-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the "width" from the "precision" of an integer type?
+Back: The latter does not consider bits used for sign representations.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341543-->
+END%%
 
 %%ANKI
 Basic

@@ -33,6 +33,8 @@ Declaration | Sign Bit | Exponent Field | Fractional Field
 `float`     | `1`      | `8`            | `23`
 `double`    | `1`      | `11`           | `52`
 
+The **precision** of a floating-point type refers to the number of bits found in the fractional field.
+
 %%ANKI
 Basic
 In base-10 scientific notation, what form do nonzero numbers take on?
@@ -1032,6 +1034,14 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1710672470805-->
 END%%
 
+%%ANKI
+Basic
+What does the precision of a floating-point number refer to?
+Back: The number of bits found in its fractional field.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157081-->
+END%%
+
 ## Rounding
 
 Because floating-point arithmetic can't represent every real number, it must round results to the "nearest" representable number, however "nearest" is defined. The IEEE floating-point standard defines four **rounding modes** to influence this behavior:
@@ -1268,8 +1278,8 @@ END%%
 %%ANKI
 Basic
 Is $+^f$ commutative?
-Back: Yes.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Back: No.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1710680824810-->
 END%%
 
