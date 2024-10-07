@@ -929,6 +929,68 @@ Tags: c17
 <!--ID: 1727632288468-->
 END%%
 
+%%ANKI
+Basic
+What efficient data structure do `switch` statements compile down into?
+Back: Jump tables.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1727908553985-->
+END%%
+
+%%ANKI
+Basic
+What two conditions must be satisfied before a `switch` statement employs a jump table?
+Back: A sufficient number of `case` statements that span a small range of values.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1727908554004-->
+END%%
+
+%%ANKI
+Basic
+*Why* might a `switch` statements be faster than an equivalent `if`/`else` chain?
+Back: A `switch` statement can compile down into a jump table.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1727908554023-->
+END%%
+
+%%ANKI
+Basic
+What is a jump table?
+Back: An array of (code) memory locations to potentially jump to.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1727908554057-->
+END%%
+
+%%ANKI
+Basic
+Suppose a `switch` compiles into a jump table. What *is* a missing case?
+Back: An offset in the jump table corresponding to an unspecified `case` statement.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1727908554070-->
+END%%
+
+%%ANKI
+Basic
+Suppose a `switch` compiles into a jump table. How are missing cases handled?
+Back: By using the label (memory location) for the default case.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1727908554114-->
+END%%
+
+%%ANKI
+Basic
+Suppose a `switch` compiles into a jump table. How are duplicate cases handled?
+Back: By using the same label (memory location) for all duplicate cases.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1727908554128-->
+END%%
+
 ### CMOV
 
 Like [[access#MOV|MOV]] instructions, but with the data transfer only happening if the move condition is satisfied.

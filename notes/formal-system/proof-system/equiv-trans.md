@@ -1168,7 +1168,7 @@ END%%
 %%ANKI
 Basic
 Suppose $x \neq y$. *Why* isn't the following a tautology? $$\large{E_{e_1, e_2, e_3, e_4}^{x[1], x[2], y, x[3]}} = E_{(x; \,[1]{:}e_1; \,[2]{:}e_2), e_3, e_4}^{x, y, x[3]}$$
-Back: Because not every $x$ was made adjacent before grouping.
+Back: N/A. It is.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721495879859-->
 END%%

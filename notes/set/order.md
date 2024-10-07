@@ -603,9 +603,17 @@ END%%
 %%ANKI
 Basic
 Is $\{A\}$ a partition of set $A$?
-Back: Yes.
+Back: Not necessarily.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721098094091-->
+END%%
+
+%%ANKI
+Basic
+When is $\{A\}$ a partition of set $A$?
+Back: When $A \neq \varnothing$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727951100840-->
 END%%
 
 %%ANKI

@@ -469,9 +469,17 @@ END%%
 %%ANKI
 Basic
 What condition of Peano system $\langle N, S, e \rangle$ generalizes the induction principle of $\omega$?
-Back: Any set $A \subseteq N$ containing $e$ and closed under $S$ coincides with $N$.
+Back: The Peano induction postulate.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1726364667661-->
+END%%
+
+%%ANKI
+Basic
+Given Peano system $\langle N, S, e \rangle$, what does the Peano induction postulate state?
+Back: Any set $A \subseteq N$ containing $e$ and closed under $S$ coincides with $N$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1727895401785-->
 END%%
 
 %%ANKI
@@ -852,7 +860,7 @@ END%%
 
 %%ANKI
 Basic
-The recursion theorem assumes existence of what Peano system?
+The recursion theorem on $\omega$ assumes existence of what Peano system?
 Back: $\langle \omega, \sigma, 0 \rangle$ where $\sigma$ is the successor operation restricted to the natural numbers.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1727629020357-->
@@ -965,7 +973,7 @@ END%%
 %%ANKI
 Basic
 In Enderton's recursion theorem proof, function $h \colon \omega \rightarrow A$ is defined as the union of what?
-Back: All "acceptable" functions.
+Back: The set of "acceptable" functions.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1727627702457-->
 END%%
@@ -1004,7 +1012,7 @@ END%%
 \
 %%ANKI
 Basic
-In Enderton's recursion theorem proof, what term refers to the "approximating" functions?
+In Enderton's recursion theorem proof, what term is used to refer to the "approximating" functions?
 Back: They are called "acceptable".
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1727627702465-->
@@ -1019,7 +1027,7 @@ END%%
 
 %%ANKI
 Cloze
-In Enderton's recursion theorem proof, desired $h \colon \omega \rightarrow A$ is {a function} because {$\{ n \in \omega \mid \text{ at most one } y \text{ such that } \langle n, y \rangle \in h \}$} is {an inductive set}.
+In Enderton's recursion theorem proof, desired $h \colon \omega \rightarrow A$ is {a function} because {$\{ n \in \omega \mid \text{at most one } y \text{ such that } \langle n, y \rangle \in h \}$} is {an inductive set}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1727627702468-->
 END%%
@@ -1049,7 +1057,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* is there no function $h \colon \mathbb{N} \rightarrow \mathbb{N}$ such that for all $n \in \mathbb{N}$$, $$\begin{align*} h(0) & = 0 \\ h(n + 1) & = h(n) + 1 \end{align*}$$
+*Why* is there no function $h \colon \mathbb{N} \rightarrow \mathbb{N}$ such that for all $n \in \mathbb{N}$, $$\begin{align*} h(0) & = 0 \\ h(n + 1) & = h(n) + 1 \end{align*}$$
 Back: N/A. The resursive theorem of $\omega$ states such an $h$ exists.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1727629020375-->

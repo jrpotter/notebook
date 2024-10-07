@@ -100,14 +100,6 @@ END%%
 
 %%ANKI
 Basic
-What is the minimum number of keys a non-root node in a B-tree can have?
-Back: N/A. It depends on the tree's order.
-Reference: Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
-<!--ID: 1723211542035-->
-END%%
-
-%%ANKI
-Basic
 What is the minimum number of keys a non-root node in a B-tree of order $m$ can have?
 Back: $\lceil m / 2 \rceil - 1$
 Reference: Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).

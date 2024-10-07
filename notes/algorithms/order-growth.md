@@ -792,7 +792,7 @@ END%%
 %%ANKI
 Basic
 What is the reflexive property of $o$-notation?
-Back: N/A
+Back: N/A.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709752223399-->
 END%%

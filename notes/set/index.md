@@ -36,7 +36,7 @@ END%%
 
 %%ANKI
 Basic
-How does Knuth define a *dynamic* set?
+How does Cormen et al. define a *dynamic* set?
 Back: As a set that can change over time.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: adt::dynamic_set
@@ -45,7 +45,7 @@ END%%
 
 %%ANKI
 Basic
-How does Knuth distinguish mathematical sets from dynamic sets?
+How does Cormen et al. distinguish mathematical sets from dynamic sets?
 Back: The former is assumed to be unchanging.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: adt::dynamic_set
@@ -54,7 +54,7 @@ END%%
 
 %%ANKI
 Basic
-How does Knuth define a dictionary?
+How does Cormen et al. define a dictionary?
 Back: As a dynamic set that allows insertions, deletions, and membership tests.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: adt::dynamic_set

@@ -42,6 +42,35 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1707758281270-->
 END%%
 
+%%ANKI
+Basic
+What kind of array has literals?
+Back: Strings.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1728244147668-->
+END%%
+
+%%ANKI
+Cloze
+A {string} is a {`NUL`}-terminated array of {`char`}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1728244147671-->
+END%%
+
+%%ANKI
+Cloze
+`<string.h>` uses prefix {`mem`} to refer to {array} arguments.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1728244147673-->
+END%%
+
+%%ANKI
+Cloze
+`<string.h>` uses prefix {`str`} to refer to {string} arguments.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1728244147676-->
+END%%
+
 ## `printf`
 
 The syntax for the format placeholder is `%[flags][width][.precision][length]specifier`.

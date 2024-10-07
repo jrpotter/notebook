@@ -461,7 +461,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum width of an `unsigned long long`?
-Back: $64$
+Back: $64$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727613641635-->
 END%%

@@ -87,7 +87,7 @@ Assume `%rbx` holds $p$ and `%rdx` holds $q$. What is the value of `%rax` in the
 ```asm
 leaq (%rdx, %rbx),%rax
 ```
-Back: $q + q$
+Back: $q + p$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1715781031935-->
 END%%
