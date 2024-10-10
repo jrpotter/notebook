@@ -28,22 +28,6 @@ END%%
 
 %%ANKI
 Basic
-Given a hash table with hash function $h$, the element at slot $k$ has what key?
-Back: A key $k'$ such that $h(k') = k$.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1716307180961-->
-END%%
-
-%%ANKI
-Basic
-Given a hash table with hash function $h$, an element with key $k$ is placed in what slot?
-Back: $h(k)$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1716307180962-->
-END%%
-
-%%ANKI
-Basic
 Given a hash table `T[0:m-1]`, what is the domain of a hash function?
 Back: The universe of keys.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

@@ -1,447 +1,406 @@
 ---
-title: Memory Access
+title: Procedures
 TARGET DECK: Obsidian::STEM
 FILE TAGS: x86-64
 tags:
   - x86-64
 ---
 
-## MOV
+## Overview
 
-The MOV instruction class has four primary variants: `movb`, `movw`, `movl`, and `movq`. There also exist zero extension and sign extension variations in the forms of MOVS and MOVZ.
+The x86-64 stack grows towards lower addresses. When a procedure is invoked, more spack on the top of the stack is allocated for that procedure to make use of. This portion of the stack is called a **frame**. The general shape of the stack looks as follows:
 
-| Instruction  | Operands | Effect           | Description                          |
-| ------------ | -------- | ---------------- | ------------------------------------ |
-| `mov[bwlq]`  | S, D     | D <- S           | Move byte/word/double word/quad word |
-| `movabsq`    | I, R     | R <- I           | Move quad word                       |
-| `movzb[wlq]` | S, R     | R <- ZE(S)       | Move zero-extended byte              |
-| `movzw[lq]`  | S, R     | R <- ZE(S)       | Move zero-extended word              |
-| `movsb[wlq]` | S, R     | R <- SE(S)       | Move sign-extended byte              |
-| `movsw[lq]`  | S, R     | R <- SE(S)       | Move sign-extended word              |
-| `movslq`     | S, R     | R <- SE(S)       | Move sign-extended double word       |
-| `cltq`       |          | %rax <- SE(%eax) | Sign-extend `%eax` to `%rax`         |
+![[x86-64-stack.png]]
 
-Notice there is no `movzlq` instruction. `movl` covers this functionality since, by convention, instructions moving double words into a 64-bit register automatically zeroes out the upper 32 bits.
+Note parts of this diagram are omitted when possible. For instance, a stack frame may not exist at all if all arguments to a **leaf procedure** can be passed through registers. A leaf procedure is a function that does not call another function.
 
-%%ANKI
+%%ANKII
 Basic
-What four variants does `MOV` instructions take on in x86-64?
-Back: `movb`, `movw`, `movl`, `movq`
+What ADT is used internally in procedure-calling mechanisms?
+Back: A stack.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933397-->
+END%%
+
+%%ANKII
+Cloze
+The x86-64 stack grows towards {lower} addresses.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 END%%
 
 %%ANKI
 Basic
-How many bytes does a `movb` instruction operate on?
-Back: One.
+What is a frame w.r.t. the x86-64 stack?
+Back: A region of the stack dedicated to a particular function call.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933403-->
+<!--ID: 1728480337611-->
 END%%
 
 %%ANKI
 Basic
-How many bytes does a `movw` instruction operate on?
-Back: Two.
+What instructions are used to store and retrieve from the x86-64 stack?
+Back: `pushq` and `popq`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933406-->
+<!--ID: 1728480337614-->
 END%%
 
 %%ANKI
 Basic
-How many bytes does a `movl` instruction operate on?
-Back: Four.
+What does the "stack pointer" refer to w.r.t. the x86-64 stack?
+Back: Register `%rsp`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933409-->
+<!--ID: 1728480337617-->
 END%%
 
 %%ANKI
 Basic
-How many bytes does a `movq` instruction operate on?
-Back: Eight.
+How is the stack pointer manipulated to allocate space on the x86-64 stack?
+Back: By decrementing `%rsp` by an appropriate amount.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933413-->
+<!--ID: 1728480337621-->
 END%%
 
 %%ANKI
 Basic
-What combination of source and destination types is prohibited in `MOV` instructions?
-Back: A source and destination memory address.
+How is the stack pointer manipulated to deallocate space on the x86-64 stack?
+Back: By incrementing `%rsp` by an appropriate amount.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933416-->
+<!--ID: 1728480337604-->
 END%%
 
 %%ANKI
 Basic
-What is the result of `%rax` after instruction `movl $0x4050,%eax`?
-Back: Upper 32-bits is `0` and lower 32-bits is `0x4050`.
+Suppose procedure `P` calls `Q`. What data sits at the end of `P`'s frame?
+Back: A return address.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933419-->
-END%%
-
-%%ANKI
-Basic
-What is the result of `%rax` after instruction `movq $0x4050,%rax`?
-Back: The 64-bit value is `0x4050`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933423-->
-END%%
-
-%%ANKI
-Basic
-What is the result of `%rax` after instruction `movw $0x4050,%ax`?
-Back: The upper 48 bits are unchanged and the lower 16 bits are `0x4050`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933426-->
-END%%
-
-%%ANKI
-Basic
-What is the result of `%rax` after instruction `movb $0x4050,%al`?
-Back: The upper 56 bits are unchanged and the lower 8 bits are `0x50`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933430-->
-END%%
-
-%%ANKI
-Basic
-What is the result of `%rax` after instruction `movw $0x4050,%al`?
-Back: N/A. Invalid operand for instruction.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933433-->
-END%%
-
-%%ANKI
-Basic
-What caveat is applied to the source operand of `movq`?
-Back: Immediates are 32-bit two's-complement numbers sign extended to 64-bits.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933437-->
-END%%
-
-%%ANKI
-Basic
-What `mov` instruction is needed when working with 64-bit immediate sources?
-Back: `movabsq`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933441-->
-END%%
-
-%%ANKI
-Basic
-What purpose does `movabsq` solve that `movq` does not?
-Back: `movabsq` can have an arbitrary 64-bit immediate source.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933448-->
-END%%
-
-%%ANKI
-Basic
-What is the result of `%rax` after the following instructions?
-```asm
-movabsq $0x0011223344556677, %rax
-movb    $-1, %al
-```
-Back: `0x00112233445566FF`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933452-->
-END%%
-
-%%ANKI
-Basic
-What is the result of `%rax` after the following instructions?
-```asm
-movabsq $0x0011223344556677, %rax
-movw    $-1, %ax
-```
-Back: `0x001122334455FFFF`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933455-->
-END%%
-
-%%ANKI
-Basic
-What is the result of `%rax` after the following instructions?
-```asm
-movabsq $0x0011223344556677, %rax
-movl    $-1, %eax
-```
-Back: `0x00000000FFFFFFFF`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933458-->
-END%%
-
-%%ANKI
-Basic
-What is the result of `%rax` after the following instructions?
-```asm
-movabsq $0x0011223344556677, %rax
-movq    $-1, %rax
-```
-Back: `0xFFFFFFFFFFFFFFFF`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933461-->
-END%%
-
-%%ANKI
-Basic
-What is the `MOVZ` instruction class?
-Back: `MOV` instructions that zero extend the source to fit into the destination.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933464-->
-END%%
-
-%%ANKI
-Basic
-What is the `MOVS` instruction class?
-Back: `MOV` instructions that sign extend the source to fit into the destination.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933466-->
-END%%
-
-%%ANKI
-Basic
-What does the `movzbw` instruction do?
-Back: Moves a zero-extended byte to a word.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933469-->
-END%%
-
-%%ANKI
-Basic
-What does the `movslq` instruction do?
-Back: Moves a sign-extended double word to a quad word.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933472-->
-END%%
-
-%%ANKI
-Basic
-What does the `movslb` instruction do?
-Back: N/A. This instruction does not exist.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933475-->
-END%%
-
-%%ANKI
-Basic
-What combinatorial argument explains the number of `MOVS` instructions?
-Back: There exists an instruction for each smaller declaration to larger declaration.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933478-->
-END%%
-
-%%ANKI
-Basic
-What `MOVZ` instruction is "missing"?
-Back: `movzlq`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933481-->
-END%%
-
-%%ANKI
-Basic
-Why does there not exist a `movzlq` instruction?
-Back: Because `movl` already zeroes out the upper bits of a destination register.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933483-->
-END%%
-
-%%ANKI
-Basic
-What is the result of `%rax` after the following instructions?
-```asm
-movabsq $0x0011223344556677, %rax
-movb    $0xAA, %dl
-movb    %dl,%al
-```
-Back: `0x00112233445566AA`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933486-->
-END%%
-
-%%ANKI
-Basic
-What is the result of `%rax` after the following instructions?
-```asm
-movabsq $0x0011223344556677, %rax
-movb    $0xAA, %dl
-movsbq  %dl,%rax
-```
-Back: `0xFFFFFFFFFFFFFFAA`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933489-->
-END%%
-
-%%ANKI
-Basic
-What is the result of `%rax` after the following instructions?
-```asm
-movabsq $0x0011223344556677, %rax
-movb    $0xAA, %dl
-movzbq  %dl,%rax
-```
-Back: `0x00000000000000AA`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1713625933491-->
+<!--ID: 1728481058927-->
 END%%
 
 %%ANKI
 Cloze
-A {pointer} in C is a {memory address} in x86.
+A {leaf} procedure is a function that {does not call another function}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
-<!--ID: 1714677608754-->
+<!--ID: 1728481058953-->
 END%%
 
 %%ANKI
 Basic
-Which register does `cltq` target?
-Back: `%rax`
+Suppose procedure `P` calls `Q`. The return address belongs to who's frame?
+Back: `P`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728382784100-->
+<!--ID: 1728481058960-->
 END%%
 
 %%ANKI
 Basic
-What does the `cltq` instruction do?
-Back: Sign extends `%eax` to `%rax`.
+Suppose procedure `P` calls `Q`. Why is the return address considered to be in `P`'s frame?
+Back: It is state relevant to `P`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728382784104-->
+<!--ID: 1728481058966-->
+END%%
+
+## Control Transfer
+
+Like [[conditions#JMP|JMP]] instructions, `call` allows specifying a direct or indirect operand. `call` pushes the address of the instruction following it onto the stack and updates the PC to the operand. `ret` reverts these steps.
+
+| Instruction | Operands    | Description      |
+| ----------- | ----------- | ---------------- |
+| `call`      | Label       | Procedure call   |
+| `call`      | \**Operand* | Procedure call   |
+| `ret`       |             | Return from call |
+
+%%ANKI
+Cloze
+The {`call`} instruction is the counterpart to the {`ret`} instruction.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728558288130-->
 END%%
 
 %%ANKI
 Basic
-What equivalent instruction to the following does x86-64 provide?
-```asm
-movslq %eax, %rax
+What two things does the `call` instruction do?
+Back: It pushes the return address on the stack and updates the PC.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728558288148-->
+END%%
+
+%%ANKI
+Basic
+What two things does the `ret` instruction do?
+Back: It pops the return address off the stack and updates the PC.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728558288160-->
+END%%
+
+%%ANKI
+Basic
+The operand forms of `call` mirror what other instruction class?
+Back: `JMP`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728558288165-->
+END%%
+
+%%ANKI
+Basic
+A `call` instruction pushes what address onto the stack?
+Back: That of the instruction following the `call` instruction.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728558288171-->
+END%%
+
+%%ANKI
+Basic
+What return address is pushed onto the stack after `call` is run?
+```x86
+1: ...
+2: callq .L1
+3: ...
 ```
-Back: `cltq`
+Back: `3`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728382784107-->
+<!--ID: 1728558288177-->
 END%%
 
 %%ANKI
 Basic
-What equivalent instruction to the following does x86-64 provide?
-```asm
-movzlq %eax, %rax
+What address is the PC updated to after `call` is run?
+```x86
+1: ...
+2: callq .L1
+3: ...
 ```
-Back: N/A.
+Back: That corresponding to label `.L1`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728479148446-->
+<!--ID: 1728558288183-->
 END%%
 
 %%ANKI
 Basic
-How can the following instruction be rewritten using a MOV?
-```asm
-cltq
-```
-Back: `movslq %eax, %rax`
+Which register(s) does a `call` instruction update?
+Back: `%rsp` and `%rip`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728382784110-->
+<!--ID: 1728559336730-->
 END%%
-
-## PUSH and POP
-
-| Instruction | Operands | Effect                                      | Description    |
-| ----------- | -------- | ------------------------------------------- | -------------- |
-| `pushq`     | S        | R[%rsp] <- R[%rsp] - 8<br />M[R[%rsp]] <- S | Push quad word |
-| `popq`      | D        | D <- M[R[%rsp]]<br />R[%rsp] <- R[%rsp] + 8 | Pop quad word  |
-
-In x86 processors, the stack grows downward, with the "top" of the stack corresponding to lower addresses.
 
 %%ANKI
 Basic
-In what direction do x86-64 stacks grow?
-Back: Downward.
+Which register(s) does a `ret` instruction update?
+Back: `%rsp` and `%rip`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1715377284944-->
+<!--ID: 1728559336760-->
+END%%
+
+## Data Transfer
+
+x86-64 employs 6 registers for passing integral (i.e. integer and pointer) arguments between caller and callee.
+
+| Bits | Arg 1  | Arg2   | Arg3   | Arg4   | Arg5   | Arg6   |
+| ---- | ------ | ------ | ------ | ------ | ------ | ------ |
+| 64   | `%rdi` | `%rsi` | `%rdx` | `%rcx` | `%r8`  | `%r9`  |
+| 32   | `%edi` | `%esi` | `%edx` | `%ecx` | `%r8d` | `%r9d` |
+| 16   | `%di`  | `%si`  | `%dx`  | `%cx`  | `%r8w` | `%r9w` |
+| 8    | `%dil` | `%sil` | `%dl`  | `%cl`  | `%r8b` | `%r9b` |
+
+%%ANKI
+Basic
+How many registers are available for passing integral arguments between procedures?
+Back: `6`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336766-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%rdi` register?
+Back: $8$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336770-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%di` register?
+Back: $2$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336774-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%dil` register?
+Back: $1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336779-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%edi` register?
+Back: $4$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336782-->
 END%%
 
 %%ANKI
 Cloze
-The x86-64 stack grows such that the top element has the {lowest} address of all stack elements.
+By convention, register {`%rdi`} is used for {the first integral argument}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1715377284947-->
-END%%
-
-%%ANKI
-Basic
-What instruction is used to push elements onto the stack?
-Back: `pushq`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1715377284951-->
-END%%
-
-%%ANKI
-Basic
-What instruction is used to pop elements off of the stack?
-Back: `popq`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1715377284955-->
-END%%
-
-%%ANKI
-Basic
-How is `pushq %rbp` equivalently written using a pair of instructions?
-Back:
-```asm
-subq $8,%rsp
-movq %rbp,(%rsp)
-```
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1715377284959-->
-END%%
-
-%%ANKI
-Basic
-How is `popq %rax` equivalently written using a pair of instructions?
-Back:
-```asm
-movq (%rsp),%rax
-addq $8,%rsp
-```
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1715377284962-->
+<!--ID: 1728559336787-->
 END%%
 
 %%ANKI
 Cloze
-{1:`pushq`} is to {2:`subq`} as {2:`popq`} is to {1:`addq`}.
+{1:Words} are to {2:`%di`} whereas {2:double words} are to {1:`%edi`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1715377284966-->
+<!--ID: 1728559336792-->
+END%%
+
+%%ANKI
+Cloze
+{1:Bytes} are to {2:`%dil`} whereas {2:quad words} are to {1:`%rdi`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336797-->
 END%%
 
 %%ANKI
 Basic
-If `%rsp` has value `0x108`, what value does it have after a `pushq` instruction?
-Back: `0x100`
+How do you access the low-order 2 bytes of `%rdi`?
+Back: By using `%di`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1715377284971-->
+<!--ID: 1728559336802-->
 END%%
 
 %%ANKI
 Basic
-If `%rsp` has value `0x108`, what value does it have after a `popq` instruction?
-Back: `0x110`
+How do you access the low-order 4 bytes of `%rdi`?
+Back: By using `%edi`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1715377284975-->
+<!--ID: 1728559336808-->
 END%%
 
 %%ANKI
 Basic
-Which register contains a pointer to the top of the stack?
-Back: `%rsp`
+How do you access the low-order byte of `%rdi`?
+Back: By using `%dil`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1715377284980-->
+<!--ID: 1728559336813-->
 END%%
 
 %%ANKI
 Basic
-What is the `%rsp` register typically used for?
-Back: The stack pointer.
+Which register should the first integral argument of a procedure be placed in?
+Back: `%rdi`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1715377284985-->
+<!--ID: 1728559336817-->
 END%%
+
+%%ANKI
+Basic
+From smallest to largest, list the four "first integral argument" registers.
+Back: `%dil`, `%di`, `%edi`, and `%rdi`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336823-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%rsi` register?
+Back: $8$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336829-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%si` register?
+Back: $2$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336834-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%sil` register?
+Back: $1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336838-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up the `%esi` register?
+Back: $4$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336843-->
+END%%
+
+%%ANKI
+Cloze
+By convention, register {`%rsi`} is used for {the second integral argument}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336847-->
+END%%
+
+%%ANKI
+Cloze
+{1:Words} are to {2:`%si`} whereas {2:double words} are to {1:`%esi`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336852-->
+END%%
+
+%%ANKI
+Cloze
+{1:Bytes} are to {2:`%sil`} whereas {2:quad words} are to {1:`%rsi`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336856-->
+END%%
+
+%%ANKI
+Basic
+How do you access the low-order 2 bytes of `%rsi`?
+Back: By using `%si`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336860-->
+END%%
+
+%%ANKI
+Basic
+How do you access the low-order 4 bytes of `%rsi`?
+Back: By using `%esi`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336864-->
+END%%
+
+%%ANKI
+Basic
+How do you access the low-order byte of `%rsi`?
+Back: By using `%sil`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336868-->
+END%%
+
+%%ANKI
+Basic
+Which register should the second integral argument of a procedure be placed in?
+Back: `%rsi`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336872-->
+END%%
+
+%%ANKI
+Basic
+From smallest to largest, list the four "second integral argument" registers.
+Back: `%sil`, `%si`, `%esi`, and `%rsi`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336876-->
+END%%
+
+%%ANKI
+Cloze
+{1:`%rdi`} is to the {2:first} integral argument whereas {2:`%rsi`} is to the {1:second} integral argument.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728559336879-->
+END%%
+
+## Bibliography
+
+* Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

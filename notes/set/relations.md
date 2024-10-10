@@ -705,14 +705,6 @@ END%%
 
 %%ANKI
 Basic
-Given $R = \{\langle a, a \rangle, \langle b, c \rangle\}$, is $R$ irreflexive on $a$?
-Back: N/A. We should ask if $R$ is irreflexive on set $\{a\}$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1721870888391-->
-END%%
-
-%%ANKI
-Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ irreflexive on $\{a\}$?
 Back: Because $\langle a, a \rangle \in R$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

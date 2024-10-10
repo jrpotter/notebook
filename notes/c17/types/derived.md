@@ -335,20 +335,6 @@ END%%
 
 %%ANKI
 Basic
-Suppose I pass the following array to a function. What does the parameter look like?
-```c
-double a[M][N][P];
-```
-Back:
-```c
-double a[][N][P];
-```
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1728244147578-->
-END%%
-
-%%ANKI
-Basic
 Why shouldn't you use the `sizeof` operator on array parameters to functions?
 Back: The innermost dimension of an array parameter to a function is lost.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).

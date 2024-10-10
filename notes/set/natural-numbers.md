@@ -730,7 +730,7 @@ END%%
 %%ANKI
 Basic
 Suppose $A \cap B = A$. What relation immediately follows?
-Back: $B = A$
+Back: $A \subseteq B$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1726797814900-->
 END%%

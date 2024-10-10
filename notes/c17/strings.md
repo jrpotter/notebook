@@ -44,7 +44,7 @@ END%%
 
 %%ANKI
 Basic
-What kind of array has literals?
+What kind of array can be expressed as a literal?
 Back: Strings.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1728244147668-->

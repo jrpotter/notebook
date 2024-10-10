@@ -285,6 +285,21 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1724119420122-->
 END%%
 
+%%ANKI
+Cloze
+By convention, register {`%rip`} is used for {the program counter}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728558288189-->
+END%%
+
+%%ANKI
+Basic
+Which register is used to track the instruction to execute next?
+Back: `%rip`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1728558297568-->
+END%%
+
 ## Condition Codes
 
 The CPU also maintains a set of single-bit **condition code** registers describing attributes of the most recent arithmetic or logical operation.
