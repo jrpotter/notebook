@@ -580,7 +580,7 @@
     "_journal/2024-06/2024-06-04.md": "52b28035b9c91c9b14cef1154c1a0fa1",
     "_journal/2024-06-06.md": "3f9109925dea304e7172df39922cc95a",
     "_journal/2024-06/2024-06-05.md": "b06a0fa567bd81e3b593f7e1838f9de1",
-    "set/relations.md": "2759e68e8dd19f513fca2da8d2506433",
+    "set/relations.md": "f29889b9cde0e8bb24fae4f5c37fb7ad",
     "_journal/2024-06-07.md": "795be41cc3c9c0f27361696d237604a2",
     "_journal/2024-06/2024-06-06.md": "db3407dcc86fa759b061246ec9fbd381",
     "_journal/2024-06-08.md": "b20d39dab30b4e12559a831ab8d2f9b8",
@@ -748,7 +748,7 @@
     "_journal/2024-08/2024-08-07.md": "119c052f4109a3e098d825b771af89de",
     "_journal/2024-08-09.md": "2ce3e0c468f51750d8ad86a19bcc3264",
     "_journal/2024-08/2024-08-08.md": "b8211a4c576ff594217e2e9cae9396c0",
-    "data-structures/b-tree.md": "011f11424c9892219dcaa66de72f3f18",
+    "data-structures/b-tree.md": "4c1d61ab9b9184e02c3455fb0c701369",
     "data-structures/binary-tree.md": "67b0b5b9688faa205983993fe507079a",
     "_journal/2024-08-10.md": "08e7ea4a78c46645b93ec51e2372d04f",
     "_journal/2024-08/2024-08-09.md": "2ce3e0c468f51750d8ad86a19bcc3264",
@@ -791,7 +791,7 @@
     "c17/enums.md": "9414fb67aa256a0a11b7240534c67bf6",
     "c17/derived-types.md": "6fb8f23a2423f05d5bdccb6672a32e38",
     "c17/basic-types.md": "7c6653bf6dc24c2f2aa72fc95c4f7875",
-    "c17/types/simple.md": "502c7a742e8516057f820c75cc7a096e",
+    "c17/types/simple.md": "48e455d1cb6a631fe74e419e52e0a695",
     "c17/types/enumerated.md": "e1f70a30677c776b7b44ac3e0ff4e76d",
     "c17/types/derived.md": "cd77112313bd0f9cf99b0f224a364179",
     "c17/types/basic.md": "5064e21e683c0218890058882e06b6f3",
@@ -876,7 +876,13 @@
     "_journal/2024-10/2024-10-08.md": "2f737d8198b12bf635808964c4887ae1",
     "x86-64/procedures.md": "c36268b99c0681bfca245e0538a302e0",
     "_journal/2024-10-10.md": "29e4be2c164c63f8b7aab56bddee3dd6",
-    "_journal/2024-10/2024-10-09.md": "b718c6f4cfe3069fcc0faf07ec414f73"
+    "_journal/2024-10/2024-10-09.md": "b718c6f4cfe3069fcc0faf07ec414f73",
+    "_journal/2024-10-15.md": "6e696a8d16ba257ed89e8564b771d290",
+    "_journal/2024-10/2024-10-14.md": "fbb5a82a18e3acca55bb46a824a9419d",
+    "_journal/2024-10/2024-10-13.md": "8882c01060a4a909fd890180db356e73",
+    "_journal/2024-10/2024-10-12.md": "1c299384b7f1fffa4e9f50fa5a1c05c2",
+    "_journal/2024-10/2024-10-11.md": "6c98c6541efcb92854c1de68a2881d89",
+    "_journal/2024-10/2024-10-10.md": "b7c386d47a9f1e860effaa36001404ba"
   },
   "fields_dict": {
     "Basic": [

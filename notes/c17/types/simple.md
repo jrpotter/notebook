@@ -358,7 +358,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum precision of a `bool`?
-Back: $1$
+Back: $1$ bit.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341548-->
 END%%
@@ -374,7 +374,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum precision of an `unsigned char`?
-Back: $8$
+Back: $8$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341550-->
 END%%
@@ -406,7 +406,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum precision of an `unsigned short`?
-Back: $16$
+Back: $16$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341554-->
 END%%
@@ -422,7 +422,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum precision of an `unsigned int`?
-Back: $16$
+Back: $16$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341556-->
 END%%
@@ -446,7 +446,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum precision of an `unsigned long`?
-Back: $32$
+Back: $32$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341559-->
 END%%
@@ -469,7 +469,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum precision of an `unsigned long long`?
-Back: $64$
+Back: $64$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341560-->
 END%%
@@ -587,7 +587,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum precision of a `signed char`?
-Back: $7$
+Back: $7$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341563-->
 END%%
@@ -603,7 +603,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum precision of a `signed short`?
-Back: $15$
+Back: $15$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341565-->
 END%%
@@ -626,7 +626,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum precision of a `signed int`?
-Back: $15$
+Back: $15$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341567-->
 END%%
@@ -642,7 +642,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum precision of a `signed long`?
-Back: $31$
+Back: $31$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341569-->
 END%%
@@ -658,7 +658,7 @@ END%%
 %%ANKI
 Basic
 What is the minimum precision of a `signed long long`?
-Back: $63$
+Back: $63$ bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341571-->
 END%%
@@ -1028,7 +1028,7 @@ END%%
 Basic
 *Why* isn't `b42` in the following considered an ICE?
 ```c
-enum { b42 = 42 }
+enum { b42 = 42 };
 ```
 Back: N/A. It is.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
@@ -1040,7 +1040,7 @@ Basic
 *Why* isn't `b42` in the following considered an ICE?
 ```c
 signed const a42 = 42;
-enum { b42 = a42 }
+enum { b42 = a42 };
 ```
 Back: Because it depends on the evaluation of object `a42`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
@@ -1051,7 +1051,7 @@ END%%
 Basic
 *Why* isn't `c52` in the following considered an ICE?
 ```c
-enum { b42 = 42, c52 = b42 + 10 }
+enum { b42 = 42, c52 = b42 + 10 };
 ```
 Back: N/A. It is.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
@@ -1063,7 +1063,7 @@ Basic
 *Why* isn't `b42` in the following considered an ICE?
 ```c
 signed const a42() { return 42; }
-enum { b42 = a42() }
+enum { b42 = a42() };
 ```
 Back: Because it depends on a function call.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
@@ -1235,7 +1235,7 @@ END%%
 %%ANKI
 Basic
 Suppose `intN_t` exists. What is its precision?
-Back: `N - 1`
+Back: `N - 1` bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341577-->
 END%%
