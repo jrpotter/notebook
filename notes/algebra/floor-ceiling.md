@@ -44,7 +44,7 @@ END%%
 
 %%ANKI
 Basic
-When does $\lfloor x / 2 \rfloor = \lceil x / 2 \rceil$?
+Given integer $x$, when does $\lfloor x / 2 \rfloor = \lceil x / 2 \rceil$?
 Back: When $x$ is even.
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708110779668-->
@@ -52,7 +52,7 @@ END%%
 
 %%ANKI
 Basic
-When does $\lfloor x / 2 \rfloor \neq \lceil x / 2 \rceil$?
+Given integer $x$, when does $\lfloor x / 2 \rfloor \neq \lceil x / 2 \rceil$?
 Back: When $x$ is odd.
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
 <!--ID: 1708110779674-->

@@ -1708,6 +1708,164 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1726363070015-->
 END%%
 
+Let $f$ be a function from $B$ into $B$ and assume $A \subseteq B$. There are two possible methods for constructing the **closure** $C$ of $A$ under $f$. The top-down approach defines $C^*$ to be the intersection of all closed supersets of $A$: $$C^* = \bigcap\, \{X \mid A \subseteq X \subseteq B \land f[\![X]\!] \subseteq X \}$$
+
+The bottom-up approach defines $C_*$ to be $$C_* = \bigcup_{i \in \omega} h(i)$$
+where $h \colon \omega \rightarrow \mathscr{P}(B)$ is recursively defined as: $$\begin{align*} h(0) & = A, \\ h(n^+) &= h(n) \cup f[\![h(n)]\!]. \end{align*}$$
+
+Note that the [[natural-numbers#Recursion Theorem|recursion theorem]] proves $h$ is indeed a function.
+
+%%ANKI
+Basic
+Let $f \colon B \rightarrow B$ and $A \subseteq B$. How is the top-down closure $C^*$ of $A$ under $f$ defined?
+Back: $\bigcap\, \{ X \mid A \subseteq X \subseteq B \land f[\![X]\!] \subseteq X \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379328-->
+END%%
+
+%%ANKI
+Basic
+Let $f \colon B \rightarrow B$ and $A \subseteq B$. What is the smallest set the closure $C^*$ of $A$ under $f$ can be?
+Back: $A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379332-->
+END%%
+
+%%ANKI
+Basic
+Let $f \colon B \rightarrow B$ and $A \subseteq B$. What is the largest set the closure $C^*$ of $A$ under $f$ can be?
+Back: $B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379336-->
+END%%
+
+%%ANKI
+Basic
+Let $f \colon B \rightarrow B$ and $A \subseteq B$. How is the bottom-up closure $C_*$ of $A$ under $f$ defined assuming appropriate $h \colon \omega \rightarrow \mathscr{P}(B)$?
+Back: $\bigcup \mathop{\text{ran}} h$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379339-->
+END%%
+
+%%ANKI
+Basic
+Let $f \colon B \rightarrow B$ and $A \subseteq B$. What is the smallest set the closure $C_*$ of $A$ under $f$ can be?
+Back: $A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379342-->
+END%%
+
+%%ANKI
+Basic
+Let $f \colon B \rightarrow B$ and $A \subseteq B$. What is the largest set the closure $C_*$ of $A$ under $f$ can be?
+Back: $B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379345-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be the closure of $A$ under $f$. What kind of mathematical entity is $A$?
+Back: A set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379348-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be the closure of $A$ under $f$. What kind of mathematical entity is $f$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379352-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be the closure of $A$ under $f$. What kind of mathematical entity is $C$?
+Back: A set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379355-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be the closure of $A$ under $f$. What two ways can $C$ be defined?
+Back: Bottom-up or top-down.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379358-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be the closure of $A$ under $f$. How is the top-down closure denoted?
+Back: As $C^*$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379361-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be the closure of $A$ under $f$. How is the bottom-up closure denoted?
+Back: As $C_*$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379364-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be the closure of $A$ under $f$. What is the "signature" of $f$?
+Back: $f \colon B \rightarrow B$ for some $B \supseteq A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379367-->
+END%%
+
+%%ANKI
+Basic
+Let $C_*$ be the closure of $A$ under $f$ defined in terms of function $h$. What is $h$'s domain?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379370-->
+END%%
+
+%%ANKI
+Basic
+Let $C_*$ be the closure of $A$ under $f$ defined in terms of function $h$. What is $h$'s codomain?
+Back: Assume $f$ maps $B$ into $B$, Then $h$'s codomain is $B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379373-->
+END%%
+
+%%ANKI
+Basic
+Let $C_*$ be the closure of $A$ under $f$ defined in terms of function $h$. What does $h(0)$ evaluate to?
+Back: $A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379378-->
+END%%
+
+%%ANKI
+Basic
+Let $C_*$ be the closure of $A$ under $f$ defined in terms of function $h$. What does $h(n^+)$ evaluate to?
+Back: $h(n) \cup f[\![h(n)]\!]$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379385-->
+END%%
+
+%%ANKI
+Basic
+Let $C_*$ be the closure of $A$ under $f$ defined in terms of function $h$. What theorem proves $h$'s existence?
+Back: The recursion theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379392-->
+END%%
+
+%%ANKI
+Cloze
+The top-down closure $C^*$ of $A$ under $f$ is the {intersection} of all {closed supersets} of $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379398-->
+END%%
+
 ## Kernels
 
 Let $F \colon A \rightarrow B$. Define [[relations#Equivalence Relations|equivalence relation]] $\sim$ as $$x \sim y \Leftrightarrow f(x) = f(y)$$

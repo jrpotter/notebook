@@ -36,14 +36,6 @@ END%%
 
 %%ANKI
 Basic
-What two categories do propositions fall within?
-Back: Atomic and molecular propositions.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708199272083-->
-END%%
-
-%%ANKI
-Basic
 What is an atomic proposition?
 Back: One that cannot be broken up into smaller propositions.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).

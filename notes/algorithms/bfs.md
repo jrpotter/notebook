@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-Bread-first search operates on a graph $G = \langle V, E \rangle$ and a **source** vertex $s$. It works by distinguishing between discovered and undiscovered nodes, incrementally marking nodes adjacent to discovered nodes from undiscovered to discovered.
+Bread-first search operates on a graph $G = \langle V, E \rangle$ and a **source** vertex $s$.
 
 ![[bfs.gif]]
 
@@ -167,7 +167,7 @@ END%%
 %%ANKI
 Basic
 *Why* is BFS of an adjacency-list representation $O(\lvert V \rvert + \lvert E \rvert)$?
-Back: For each vertex being analyzed, we only examine its immediately adjacent vertices.
+Back: For each vertex being analyzed, we examine all of its adjacent vertices.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1727044184060-->
 END%%

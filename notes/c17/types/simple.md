@@ -1211,7 +1211,7 @@ END%%
 %%ANKI
 Basic
 Suppose `uintN_t` exists. What is its precision?
-Back: `N`
+Back: `N` bits.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341574-->
 END%%

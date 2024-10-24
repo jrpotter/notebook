@@ -735,6 +735,13 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1716397645564-->
 END%%
 
+%%ANKI
+Cloze
+Let $A$ be a set and $C = \bigcup\, \{ x \mid \_\_\_ \}$. Then $C$ {$\supseteq$} $A$ if $A$ satisfies the {entrance requirement}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684927439-->
+END%%
+
 ## Power Set Axiom
 
 For any set $a$, there is a set whose members are exactly the subsets of $a$: $$\forall a, \exists B, \forall x, (x \in B \Leftrightarrow x \subseteq a)$$
@@ -986,6 +993,13 @@ Cloze
 {$\bigcap \varnothing$} is to set theory as {division by zero} is to arithmetic.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716309007881-->
+END%%
+
+%%ANKI
+Cloze
+Let $A$ be a set and $C = \bigcap\, \{ x \mid \_\_\_ \}$. Then $C$ {$\subseteq$} $A$ if $A$ satisfies the {entrance requirement}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684927446-->
 END%%
 
 %%ANKI
