@@ -311,7 +311,7 @@ END%%
 
 %%ANKI
 Basic
-Are array elements typically lvalues or rvalues?
+Are array accesses typically lvalues or rvalues?
 Back: lvalues.
 Reference: ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 <!--ID: 1723510994997-->

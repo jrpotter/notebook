@@ -1071,6 +1071,240 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1727629232445-->
 END%%
 
+### Addition
+
+For each $m \in \omega$, there exists (by the recursion theorem) a unique function $A_m \colon \omega \rightarrow \omega$ such that for all $n \in \omega$, $$\begin{align*} A_m(0) & = m, \\ A_m(n^+) & = A_m(n)^+ \end{align*}$$
+
+**Addition** ($+$) is the binary operation on $\omega$ such that for any $m, n \in \omega$, $$m + n = A_m(n).$$
+
+%%ANKI
+Basic
+Let $A_m \colon \omega \rightarrow \omega$ denote recursively defined addition. How is $A_m(n)$ more traditionally denoted?
+Back: As $m + n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914175-->
+END%%
+
+%%ANKI
+Basic
+Let $A_m \colon \omega \rightarrow \omega$ denote recursively defined addition. How is $m + n$ defined in terms of $A_m$?
+Back: As $A_m(n)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914179-->
+END%%
+
+%%ANKI
+Basic
+Let $A_m \colon \omega \rightarrow \omega$ denote recursively defined addition. What does $A_m(0)$ evalute to?
+Back: $m$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914180-->
+END%%
+
+%%ANKI
+Basic
+Let $A_m \colon \omega \rightarrow \omega$ denote recursively defined addition. What does $A_m(n^+)$ evalute to?
+Back: $A_m(n)^+$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914181-->
+END%%
+
+%%ANKI
+Basic
+Let $A_m \colon \omega \rightarrow \omega$ denote recursively defined addition. How do we know $A_m$ exists?
+Back: The recursion theorem states it does.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914182-->
+END%%
+
+%%ANKI
+Basic
+How is $m + n$ defined as a relation?
+Back: $\{ \langle m, n, A_m(n) \rangle \mid m, n \in \omega \}$ where $A_m \colon \omega \rightarrow \omega$ is recursively defined addition.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914183-->
+END%%
+
+%%ANKI
+Basic
+Is $+$ (addition) a function, operation, both, or neither?
+Back: Both.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914184-->
+END%%
+
+%%ANKI
+Basic
+Without introducing new notation, what does $m + 0$ evaluate to?
+Back: $m$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914185-->
+END%%
+
+%%ANKI
+Basic
+Without introducing new notation, what does $m + n^+$ evaluate to?
+Back: $(m + n)^+$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914186-->
+END%%
+
+### Multiplication
+
+For each $m \in \omega$, there exists (by the recursion theorem) a unique function $M_m \colon \omega \rightarrow \omega$ such that for all $n \in \omega$, $$\begin{align*} M_m(0) & = 0, \\ M_m(n^+) & = M_m(n) + m \end{align*}$$
+
+**Multiplication** ($\cdot$) is the binary operation on $\omega$ such that for any $m, n \in \omega$, $$m \cdot n = M_m(n).$$
+
+%%ANKI
+Basic
+Let $M_m \colon \omega \rightarrow \omega$ denote recursively defined multiplication. How is $M_m(n)$ more traditionally denoted?
+Back: As $m \cdot n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914187-->
+END%%
+
+%%ANKI
+Basic
+Let $M_m \colon \omega \rightarrow \omega$ denote recursively defined multiplication. How is $m \cdot n$ defined in terms of $M_m$?
+Back: As $M_m(n)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914188-->
+END%%
+
+%%ANKI
+Basic
+Let $M_m \colon \omega \rightarrow \omega$ denote recursively defined multiplication. What does $M_m(0)$ evalute to?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914189-->
+END%%
+
+%%ANKI
+Basic
+Let $M_m \colon \omega \rightarrow \omega$ denote recursively defined multiplication. What does $M_m(n^+)$ evalute to?
+Back: $M_m(n) + m$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914190-->
+END%%
+
+%%ANKI
+Basic
+Let $M_m \colon \omega \rightarrow \omega$ denote recursively defined multiplication. How do we know $M_m$ exists?
+Back: The recursion theorem states it does.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914191-->
+END%%
+
+%%ANKI
+Basic
+How is $m \cdot n$ defined as a relation?
+Back: $\{ \langle m, n, M_m(n) \rangle \mid m, n \in \omega \}$ where $M_m \colon \omega \rightarrow \omega$ is recursively defined multiplication.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914192-->
+END%%
+
+%%ANKI
+Basic
+Is $\cdot$ (multiplication) a function, operation, both, or neither?
+Back: Both.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914193-->
+END%%
+
+%%ANKI
+Basic
+Without introducing new notation, what does $m \cdot 0$ evaluate to?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914194-->
+END%%
+
+%%ANKI
+Basic
+Without introducing new notation, what does $m \cdot n^+$ evaluate to?
+Back: $m \cdot n + m$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914195-->
+END%%
+
+### Exponentiation
+
+For each $m \in \omega$, there exists (by the recursion theorem) a unique function $E_m \colon \omega \rightarrow \omega$ such that for all $n \in \omega$, $$\begin{align*} E_m(0) & = 1, \\ E_m(n^+) & = E_m(n) \cdot m \end{align*}$$
+
+**Exponentiation** is the binary operation on $\omega$ such that for any $m, n \in \omega$, $$m^n = E_m(n).$$
+
+%%ANKI
+Basic
+Let $E_m \colon \omega \rightarrow \omega$ denote recursively defined exponentiation. How is $E_m(n)$ more traditionally denoted?
+Back: As $m^n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914196-->
+END%%
+
+%%ANKI
+Basic
+Let $E_m \colon \omega \rightarrow \omega$ denote recursively defined exponentiation. How is $m^n$ defined in terms of $E_m$?
+Back: As $E_m(n)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914197-->
+END%%
+
+%%ANKI
+Basic
+Let $E_m \colon \omega \rightarrow \omega$ denote recursively defined exponentiation. What does $E_m(0)$ evalute to?
+Back: $1$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914198-->
+END%%
+
+%%ANKI
+Basic
+Let $E_m \colon \omega \rightarrow \omega$ denote recursively defined exponentiation. What does $E_m(n^+)$ evalute to?
+Back: $E_m(n) \cdot m$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914199-->
+END%%
+
+%%ANKI
+Basic
+Let $E_m \colon \omega \rightarrow \omega$ denote recursively defined exponentiation. How do we know $E_m$ exists?
+Back: The recursion theorem states it does.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914200-->
+END%%
+
+%%ANKI
+Basic
+How is $m^n$ defined as a relation?
+Back: $\{ \langle m, n, E_m(n) \rangle \mid m, n \in \omega \}$ where $E_m \colon \omega \rightarrow \omega$ is recursively defined exponentiation.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914201-->
+END%%
+
+%%ANKI
+Basic
+Is exponentiation a function, operation, both, or neither?
+Back: Both.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914202-->
+END%%
+
+%%ANKI
+Basic
+Without introducing new notation, what does $m^0$ evaluate to?
+Back: $1$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914203-->
+END%%
+
+%%ANKI
+Basic
+Without introducing new notation, what does $m^{(n^+)}$ evaluate to?
+Back: $m^n \cdot m$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729804914204-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

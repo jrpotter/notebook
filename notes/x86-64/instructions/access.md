@@ -304,6 +304,14 @@ END%%
 
 %%ANKI
 Basic
+What is instruction `cltq` an acronym for?
+Back: **C**onvert **l**ong **t**o **q**uad.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1729808568362-->
+END%%
+
+%%ANKI
+Basic
 What does the `cltq` instruction do?
 Back: Sign extends `%eax` to `%rax`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
@@ -312,7 +320,7 @@ END%%
 
 %%ANKI
 Basic
-What equivalent instruction to the following does x86-64 provide?
+What equivalent no-operand instruction does x86-64 provide?
 ```asm
 movslq %eax, %rax
 ```
@@ -323,7 +331,7 @@ END%%
 
 %%ANKI
 Basic
-What equivalent instruction to the following does x86-64 provide?
+What equivalent no-operand instruction does x86-64 provide?
 ```asm
 movzlq %eax, %rax
 ```
@@ -334,7 +342,7 @@ END%%
 
 %%ANKI
 Basic
-How can the following instruction be rewritten using a MOV?
+How is the following instruction equivalently rewritten using MOV?
 ```asm
 cltq
 ```

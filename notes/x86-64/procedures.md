@@ -191,414 +191,195 @@ END%%
 
 ## Data Transfer
 
-x86-64 employs 6 registers for passing integral (i.e. integer and pointer) arguments between caller and callee.
+The 6 registers used for passing integral arguments are highlighted [[registers#Integral Arguments|here]]. If more than 6 integral arguments are specified to a procedure, the surplus are placed onto the stack in the caller's frame.
 
-| Bits | Arg 1  | Arg2   | Arg3   | Arg4   | Arg5   | Arg6   |
-| ---- | ------ | ------ | ------ | ------ | ------ | ------ |
-| 64   | `%rdi` | `%rsi` | `%rdx` | `%rcx` | `%r8`  | `%r9`  |
-| 32   | `%edi` | `%esi` | `%edx` | `%ecx` | `%r8d` | `%r9d` |
-| 16   | `%di`  | `%si`  | `%dx`  | `%cx`  | `%r8w` | `%r9w` |
-| 8    | `%dil` | `%sil` | `%dl`  | `%cl`  | `%r8b` | `%r9b` |
+The 7th argument is placed closer to the top of the stack (i.e. with lower address) than subsequent arguments.
 
 %%ANKI
 Basic
-How many registers are available for passing integral arguments between procedures?
-Back: `6`
+Which frame contains the 7th argument?
+```c
+void P() {
+  ...
+  Q(1, 2, 3, 4, 5, 6, 7);
+  ...
+}
+```
+Back: `P`'s frame.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336766-->
+Tags: c17
+<!--ID: 1729810820635-->
 END%%
 
 %%ANKI
 Basic
-How many bytes make up the `%rdi` register?
-Back: $8$
+Which frame contains the return address?
+```c
+void P() {
+  ...
+  Q(1, 2, 3);
+  ...
+}
+```
+Back: `P`'s frame.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336770-->
+Tags: c17
+<!--ID: 1729811536734-->
 END%%
 
 %%ANKI
 Basic
-How many bytes make up the `%di` register?
-Back: $2$
+Which of the 7th or 8th argument has lower address?
+```c
+void P() {
+  ...
+  Q(1, 2, 3, 4, 5, 6, 7, 8);
+  ...
+}
+```
+Back: The 7th argument.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336774-->
+Tags: c17
+<!--ID: 1729808568349-->
 END%%
 
 %%ANKI
 Basic
-How many bytes make up the `%dil` register?
-Back: $1$
+Which of the 7th or 8th argument is nearer the stack's top?
+```c
+void P() {
+  ...
+  Q(1, 2, 3, 4, 5, 6, 7, 8);
+  ...
+}
+```
+Back: The 7th argument.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336779-->
+Tags: c17
+<!--ID: 1729810820663-->
 END%%
 
 %%ANKI
 Basic
-How many bytes make up the `%edi` register?
-Back: $4$
+Which arguments are placed onto the stack?
+```c
+void P() {
+  ...
+  Q(1, 2, 3, 4, 5, 6, 7, 8);
+  ...
+}
+```
+Back: Arguments 7 and 8.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336782-->
+Tags: c17
+<!--ID: 1729810820678-->
 END%%
+
+%%ANKI
+Basic
+Which of the 6th or 7th argument is nearer the stack's top?
+```c
+void P() {
+  ...
+  Q(1, 2, 3, 4, 5, 6, 7);
+  ...
+}
+```
+Back: N/A. Argument 6 isn't placed onto the stack at all.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1729808568354-->
+END%%
+
+%%ANKI
+Basic
+Which of the 7th argument or the return address is nearer the stack's top?
+```c
+void P() {
+  ...
+  Q(1, 2, 3, 4, 5, 6, 7);
+  ...
+}
+```
+Back: The return address.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1729808568358-->
+END%%
+
+In some cases, integral values still need to be placed onto the stack. For example, operator `&` is applied to a local variable and hence we must be able to generate an address for it.
 
 %%ANKI
 Cloze
-By convention, register {`%rdi`} is used for {the first integral argument}.
+In the following, `P` is the {caller} and `Q` is the {callee}.
+```c
+int P() { Q(); }
+```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336787-->
-END%%
-
-%%ANKI
-Cloze
-{1:Words} are to {2:`%di`} whereas {2:double words} are to {1:`%edi`}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336792-->
-END%%
-
-%%ANKI
-Cloze
-{1:Bytes} are to {2:`%dil`} whereas {2:quad words} are to {1:`%rdi`}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336797-->
+Tags: c17
+<!--ID: 1729810820682-->
 END%%
 
 %%ANKI
 Basic
-How do you access the low-order 2 bytes of `%rdi`?
-Back: By using `%di`.
+*Why* doesn't `P` have to allocate any local variables on the stack?
+```c
+void P() {
+  int a = 100;
+  Q(a);
+}
+```
+Back: A register can be set to immediate `$100` for `Q` to access.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336802-->
+Tags: c17
+<!--ID: 1729810820698-->
 END%%
 
 %%ANKI
 Basic
-How do you access the low-order 4 bytes of `%rdi`?
-Back: By using `%edi`.
+*Why* doesn't `P` have to allocate any local variables on the stack?
+```c
+void P() {
+  int a = 100;
+  Q(&a);
+}
+```
+Back: N/A. It does since we need an address for `a` to supply to `Q`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336808-->
+Tags: c17
+<!--ID: 1729810820701-->
 END%%
 
 %%ANKI
 Basic
-How do you access the low-order byte of `%rdi`?
-Back: By using `%dil`.
+Is `P`'s local stack variables or arguments to `Q` nearer the stack's top?
+```c
+void P() {
+  ...
+  Q(1, 2, 3, 4, 5, 6);
+  ...
+}
+```
+Back: N/A. `P` does not have any arguments passed to `Q` on the stack.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336813-->
+Tags: c17
+<!--ID: 1729811536739-->
 END%%
 
 %%ANKI
 Basic
-Which register should the first integral argument of a procedure be placed in?
-Back: `%rdi`
+Is `P`'s local stack variables or arguments to `Q` nearer the stack's top?
+```c
+void P() {
+  ...
+  Q(1, 2, 3, 4, 5, 6, 7);
+  ...
+}
+```
+Back: The arguments to `Q`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336817-->
-END%%
-
-%%ANKI
-Basic
-From smallest to largest, list the four "first integral argument" registers.
-Back: `%dil`, `%di`, `%edi`, and `%rdi`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336823-->
-END%%
-
-%%ANKI
-Basic
-How many bytes make up the `%rsi` register?
-Back: $8$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336829-->
-END%%
-
-%%ANKI
-Basic
-How many bytes make up the `%si` register?
-Back: $2$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336834-->
-END%%
-
-%%ANKI
-Basic
-How many bytes make up the `%sil` register?
-Back: $1$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336838-->
-END%%
-
-%%ANKI
-Basic
-How many bytes make up the `%esi` register?
-Back: $4$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336843-->
-END%%
-
-%%ANKI
-Cloze
-By convention, register {`%rsi`} is used for {the second integral argument}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336847-->
-END%%
-
-%%ANKI
-Cloze
-{1:Words} are to {2:`%si`} whereas {2:double words} are to {1:`%esi`}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336852-->
-END%%
-
-%%ANKI
-Cloze
-{1:Bytes} are to {2:`%sil`} whereas {2:quad words} are to {1:`%rsi`}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336856-->
-END%%
-
-%%ANKI
-Basic
-How do you access the low-order 2 bytes of `%rsi`?
-Back: By using `%si`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336860-->
-END%%
-
-%%ANKI
-Basic
-How do you access the low-order 4 bytes of `%rsi`?
-Back: By using `%esi`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336864-->
-END%%
-
-%%ANKI
-Basic
-How do you access the low-order byte of `%rsi`?
-Back: By using `%sil`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336868-->
-END%%
-
-%%ANKI
-Basic
-Which register should the second integral argument of a procedure be placed in?
-Back: `%rsi`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336872-->
-END%%
-
-%%ANKI
-Basic
-From smallest to largest, list the four "second integral argument" registers.
-Back: `%sil`, `%si`, `%esi`, and `%rsi`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336876-->
-END%%
-
-%%ANKI
-Cloze
-{1:`%rdi`} is to the {2:first} integral argument whereas {2:`%rsi`} is to the {1:second} integral argument.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336879-->
-END%%
-
-%%ANKI
-Basic
-How many bytes make up the `%rdx` register?
-Back: $8$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729533668317-->
-END%%
-
-%%ANKI
-Basic
-How many bytes make up the `%dx` register?
-Back: $2$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729533668324-->
-END%%
-
-%%ANKI
-Basic
-How many bytes make up the `%dl` register?
-Back: $1$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729533668328-->
-END%%
-
-%%ANKI
-Basic
-How many bytes make up the `%edx` register?
-Back: $4$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729533668334-->
-END%%
-
-%%ANKI
-Cloze
-By convention, register {`%rdx`} is used for {the third integral argument}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729533668338-->
-END%%
-
-%%ANKI
-Cloze
-{1:Words} are to {2:`%dx`} whereas {2:double words} are to {1:`%edx`}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729533668341-->
-END%%
-
-%%ANKI
-Cloze
-{1:Bytes} are to {2:`%dl`} whereas {2:quad words} are to {1:`%rdx`}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729533668345-->
-END%%
-
-%%ANKI
-Basic
-How do you access the low-order 2 bytes of `%rdx`?
-Back: By using `%dx`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729174-->
-END%%
-
-%%ANKI
-Basic
-How do you access the low-order 4 bytes of `%rdx`?
-Back: By using `%edx`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729533668349-->
-END%%
-
-%%ANKI
-Basic
-How do you access the low-order byte of `%rdx`?
-Back: By using `%dl`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729533668352-->
-END%%
-
-%%ANKI
-Basic
-Which register should the third integral argument of a procedure be placed in?
-Back: `%rdx`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729533668358-->
-END%%
-
-%%ANKI
-Basic
-From smallest to largest, list the four "third integral argument" registers.
-Back: `%dl`, `%dx`, `%edx`, and `%rdx`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729533668361-->
-END%%
-
-%%ANKI
-Cloze
-{1:`%dil`} is to the {2:first} integral argument whereas {2:`%dl`} is to the {1:third} integral argument.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729612004982-->
-END%%
-
-%%ANKI
-Basic
-How many bytes make up the `%rcx` register?
-Back: $8$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729180-->
-END%%
-
-%%ANKI
-Basic
-How many bytes make up the `%ecx` register?
-Back: $4$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729183-->
-END%%
-
-%%ANKI
-Basic
-How many bytes make up the `%cx` register?
-Back: $2$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729186-->
-END%%
-
-%%ANKI
-Basic
-How many bytes make up the `%cl` register?
-Back: $1$
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729189-->
-END%%
-
-%%ANKI
-Cloze
-By convention, register {`%rcx`} is used for {the fourth integral argument}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729193-->
-END%%
-
-%%ANKI
-Cloze
-{1:Words} are to {2:`%cx`} whereas {2:quad words} are to {1:`%rcx`}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729196-->
-END%%
-
-%%ANKI
-Cloze
-{1:Bytes} are to {2:`%cl`} whereas {2:double words} are to {1:`%ecx`}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729200-->
-END%%
-
-%%ANKI
-Basic
-How do you access the low-order 2 bytes of `%rcx`?
-Back: By using `%cx`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729203-->
-END%%
-
-%%ANKI
-Basic
-How do you access the low-order 4 bytes of `%rcx`?
-Back: By using `%ecx`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729207-->
-END%%
-
-%%ANKI
-Basic
-How do you access the low-order byte of `%rcx`?
-Back: By using `%cl`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729210-->
-END%%
-
-%%ANKI
-Basic
-Which register should the fourth integral argument of a procedure be placed in?
-Back: `%rcx`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729214-->
-END%%
-
-%%ANKI
-Basic
-From smallest to largest, list the four "fourth integral argument" registers.
-Back: `%cl`, `%cx`, `%ecx`, and `%rcx`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729217-->
-END%%
-
-%%ANKI
-Cloze
-{1:`%di`} is to the {2:first} integral argument whereas {2:`%cx`} is to the {1:fourth} integral argument.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1729641729221-->
+Tags: c17
+<!--ID: 1729811536743-->
 END%%
 
 ## Bibliography

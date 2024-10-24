@@ -178,6 +178,80 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1720786472266-->
 END%%
 
+An **operation** on some set (say) $S$ is a function with "signature" $S \times \cdots \times S \rightarrow S$. More precisely, an $n$-ary operation on $S$ is a function $S^n \rightarrow S$ where $n \geq 0$.
+
+%%ANKI
+Basic
+Let $A$ and $B$ be disjoint sets. Is $f \colon A \rightarrow B$ a function, operation, both, or neither?
+Back: Function.
+Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+<!--ID: 1729804914205-->
+END%%
+
+%%ANKI
+Basic
+Let $A \subseteq B$. Is $f \colon A \rightarrow B$ a function, operation, or both?
+Back: Both.
+Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+<!--ID: 1729804914206-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be disjoint sets. $f \colon A \rightarrow B$ is an operation on what set?
+Back: N/A.
+Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+<!--ID: 1729804914207-->
+END%%
+
+%%ANKI
+Basic
+Let $A \subseteq B$. $f \colon A \rightarrow B$ is an operation on what set?
+Back: $B$.
+Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+<!--ID: 1729804914208-->
+END%%
+
+%%ANKI
+Basic
+What is the arity of operation $f \colon A \rightarrow A$?
+Back: $1$
+Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+<!--ID: 1729804914209-->
+END%%
+
+%%ANKI
+Basic
+What is the arity of operation $f \colon A \times A \rightarrow A$?
+Back: $2$
+Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+<!--ID: 1729804914210-->
+END%%
+
+%%ANKI
+Basic
+What is the arity of operation $f \colon A \times \cdots \times A \rightarrow A$?
+Back: The number of terms in $A \times \cdots \times A$.
+Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+<!--ID: 1729804914211-->
+END%%
+
+%%ANKI
+Basic
+Why is it incomplete to state function $f$ is an operation?
+Back: We have to ask what set $f$ is an operation on.
+Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+<!--ID: 1729804914212-->
+END%%
+
+%%ANKI
+Basic
+Which of operations or functions is the more general concept?
+Back: Functions.
+Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+<!--ID: 1729804914213-->
+END%%
+
 ## Injections
 
 A function is **injective** or **one-to-one** if each element of the codomain is mapped to by at most one element of the domain.
@@ -2037,3 +2111,4 @@ END%%
 * “Fiber (Mathematics),” in _Wikipedia_, April 10, 2024, [https://en.wikipedia.org/w/index.php?title=Fiber_(mathematics)&oldid=1218193490](https://en.wikipedia.org/w/index.php?title=Fiber_(mathematics)&oldid=1218193490).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 * “Kernel (Set Theory),” in _Wikipedia_, May 22, 2024, [https://en.wikipedia.org/w/index.php?title=Kernel_(set_theory)&oldid=1225189560](https://en.wikipedia.org/w/index.php?title=Kernel_(set_theory)&oldid=1225189560).
+* “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
