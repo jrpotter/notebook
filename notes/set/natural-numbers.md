@@ -1305,6 +1305,72 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1729804914204-->
 END%%
 
+## Ordering
+
+For natural numbers $m$ and $n$, define $m$ to be **less than $n$** if and only if $m \in n$. It follows $m \in n \Leftrightarrow m^+ \in n^+$.
+
+%%ANKI
+Basic
+Let $m, n \in \omega$. How does Enderton prefer denoting $m$ is less than $n$?
+Back: As $m \in n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1730118488824-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$. What dual meaning does Enderton give $m \in n$?
+Back: Set membership and ordering.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1730118488827-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$. How does Enderton prefer denoting $m$ is less than or equal to $n$?
+Back: As $m \underline\in n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1730118488830-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$. How is $m \underline\in n$ defined?
+Back: As $m \in n \lor m = n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1730118488833-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$. How is $m = n \lor m \in n$ more compactly denoted?
+Back: As $m \underline\in n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1730118488837-->
+END%%
+
+%%ANKI
+Cloze
+Let $m, n \in \omega$. $m$ {$\in$} $n^+ \Leftrightarrow m$ {$\underline\in$} $n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1730118488842-->
+END%%
+
+%%ANKI
+Cloze
+Let $m, n \in \omega$. $m$ {$\in$} $n \Leftrightarrow m^+$ {$\in$} $n^+$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1730118488846-->
+END%%
+
+%%ANKI
+Basic
+What does the trichotomy law for $\omega$ state?
+Back: For any $m, n \in \omega$ exactly one of $m \in n$, $m = n$, or $n \in m$ holds.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1730118488850-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

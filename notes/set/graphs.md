@@ -928,7 +928,7 @@ END%%
 %%ANKI
 Basic
 What is a trivial cycle of (say) graph $G$?
-Back: A cycle of length $0$.
+Back: A cycle of length $0$, i.e. a single vertex.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1723992830003-->
 END%%

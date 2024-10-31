@@ -1061,6 +1061,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1723925562044-->
 END%%
 
+%%ANKI
+Basic
+Let $A, B$ be sets. How is $A \subset B$ defined in FOL?
+Back: $A \subset B \Leftrightarrow A \subseteq B \land A \neq B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1730118488855-->
+END%%
+
 ## Axiom of Choice
 
 This axiom assumes the existence of some choice function capable of selecting some element from a nonempty set. Note this axiom is controversial because it is non-constructive: there is no procedure we can follow to decide which element was chosen.

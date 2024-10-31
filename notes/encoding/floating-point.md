@@ -1318,7 +1318,7 @@ END%%
 %%ANKI
 Basic
 Let $f$ be a special floating-point value. What is its additive inverse?
-Back: N/A
+Back: N/A.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824822-->
 END%%

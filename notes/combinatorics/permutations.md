@@ -271,7 +271,7 @@ END%%
 %%ANKI
 Basic
 What is the next lexicographic ordering of `[ 4 3 2 1 ]`?
-Back: N/A
+Back: N/A.
 Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
 <!--ID: 1709756610357-->
 END%%
