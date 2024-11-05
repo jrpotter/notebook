@@ -282,6 +282,30 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1713213168894-->
 END%%
 
+%%ANKI
+Basic
+Consider scaled index operand form $Imm(r_b, r_i, s)$. What values can $r_b$ take on?
+Back: Any 64-bit register.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1730740461653-->
+END%%
+
+%%ANKI
+Basic
+Consider scaled index operand form $Imm(r_b, r_i, s)$. What values can $r_i$ take on?
+Back: Any 64-bit register.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1730740461655-->
+END%%
+
+%%ANKI
+Basic
+Consider scaled index operand form $Imm(r_b, r_i, s)$. What values can $s$ take on?
+Back: $1$, $2$, $4$, or $8$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1730740461656-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

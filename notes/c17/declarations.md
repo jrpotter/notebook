@@ -132,54 +132,6 @@ Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Progra
 <!--ID: 1722786892108-->
 END%%
 
-%%ANKI
-Basic
-What is the type of `x` in the following?
-```c
-#define int_ptr int *
-int_ptr x, y;
-```
-Back: `int *`
-Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
-<!--ID: 1722786892109-->
-END%%
-
-%%ANKI
-Basic
-What is the type of `y` in the following?
-```c
-#define int_ptr int *
-int_ptr x, y;
-```
-Back: `int`
-Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
-<!--ID: 1722786892110-->
-END%%
-
-%%ANKI
-Basic
-What is the type of `x` in the following?
-```c
-typedef int_ptr int *
-int_ptr x, y;
-```
-Back: `int *`
-Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
-<!--ID: 1722786892111-->
-END%%
-
-%%ANKI
-Basic
-What is the type of `y` in the following?
-```c
-typedef int_ptr int *
-int_ptr x, y;
-```
-Back: `int *`
-Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
-<!--ID: 1722786892112-->
-END%%
-
 Declarations can be read by complying with the precedence rules outlined below:
 
 1. Find the name of the declaration.

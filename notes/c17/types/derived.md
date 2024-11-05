@@ -508,6 +508,53 @@ Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70
 <!--ID: 1728244147664-->
 END%%
 
+%%ANKI
+Basic
+Add initializer with first element set to `1` using designated initialization.
+```c
+int example[3];
+```
+Back:
+```c
+int example[3] = { [0] = 1 };
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470057-->
+END%%
+
+%%ANKI
+Basic
+Add initializer with first element set to `1` *without* using designated initialization.
+```c
+int example[3];
+```
+Back:
+```c
+int example[3] = { 1 };
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470061-->
+END%%
+
+%%ANKI
+Basic
+What is the value of `example[1]` in the following?
+```c
+int example[2] = { [0] = 1 };
+```
+Back: `0`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470063-->
+END%%
+
+%%ANKI
+Basic
+Are arrays passed by reference or value?
+Back: Reference.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755493-->
+END%%
+
 ### Structures
 
 A `struct` is a grouping of data together. It has the following general form:
@@ -560,6 +607,125 @@ Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Progra
 <!--ID: 1722786892128-->
 END%%
 
+%%ANKI
+Basic
+Define an object with `fieldA` set to `1` using designated initialization.
+```c
+struct example { int fieldA; };
+```
+Back:
+```c
+struct example test = { .fieldA = 1 };
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470065-->
+END%%
+
+%%ANKI
+Basic
+Define an object with `fieldA` set to `1` *without* using designated initialization.
+```c
+struct example { int fieldA; };
+```
+Back:
+```c
+struct example test = { 1 };
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470066-->
+END%%
+
+%%ANKI
+Basic
+What is the value of `test.fieldB` in the following?
+```c
+struct example { int fieldA; int fieldB; };
+struct example test = { .fieldA = 1 };
+```
+Back: `0`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470068-->
+END%%
+
+%%ANKI
+Basic
+Are `struct`s well-defined with respect to `=` (i.e. assignment)?
+Back: Yes.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755496-->
+END%%
+
+%%ANKI
+Basic
+Are `struct`s well-defined with respect to `==` (i.e. equality)?
+Back: No.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755498-->
+END%%
+
+%%ANKI
+Basic
+Are `struct`s well-defined with respect to `!=` (i.e. inequality)?
+Back: No.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755499-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, what are valid member types of a `struct`?
+Back: All object types except VLAs.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755500-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, what object type is not a valid `struct` member type?
+Back: VLAs.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755501-->
+END%%
+
+%%ANKI
+Basic
+Declare a variable `var` of the nested `struct` with member `c` set to `1`.
+```c
+struct A {
+  struct B { int c; };
+};
+```
+Back: `struct B var = { 1 };`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755502-->
+END%%
+
+%%ANKI
+Basic
+What is the visibility of `struct B` with respect to `struct A`?
+```c
+struct A {
+  struct B { int c; };
+};
+```
+Back: They have the same visibility.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755503-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for `struct A` and `struct B` to have the same visibility?
+```c
+struct A {
+  struct B { int c; };
+};
+```
+Back: Nesting `struct`s does not introduce any notion of scope.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755504-->
+END%%
+
 ## Unions
 
 A `union` is a grouping of data together but with overlaid storage. It has the following general form:
@@ -607,7 +773,7 @@ END%%
 
 ## Pointers
 
-Pointers have the same size as the machine's word size since it should be able to refer to any virtual address.
+Pointers have the same size as the machine's word size since it should be able to refer to any virtual address. All pointers are either **valid**, **null**, or **indeterminate**.
 
 %%ANKI
 Basic
@@ -615,6 +781,257 @@ Basic
 Back: Because it should be able to refer to any virtual address.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1707493017246-->
+END%%
+
+%%ANKI
+Basic
+How is a pointer represented in binary?
+Back: N/A. This is implementation specific.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730755551586-->
+END%%
+
+%%ANKI
+Basic
+What three states can a pointer be in?
+Back: Valid, null, or indeterminate.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730755551590-->
+END%%
+
+%%ANKI
+Basic
+How is a pointer made null?
+Back: By initializing or assigning the pointer to `0`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730755551592-->
+END%%
+
+%%ANKI
+Basic
+When does a pointer evaluate to `false`?
+Back: When it is a null pointer.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730755551594-->
+END%%
+
+%%ANKI
+Basic
+When does a pointer evaluate to `true`?
+Back: When it is not a null pointer.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730755551596-->
+END%%
+
+%%ANKI
+Basic
+Suppose a pointer logically evaluates to `true`. Why can't we use it?
+Back: Logical evaluation can't distinguish valid pointers from indeterminate pointers.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730755551598-->
+END%%
+
+%%ANKI
+Basic
+What is the result of dereferencing an indeterminate pointer?
+Back: Undefined behavior.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730755551599-->
+END%%
+
+%%ANKI
+Basic
+What is the result of dereferencing a null pointer?
+Back: Undefined behavior.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730755551601-->
+END%%
+
+%%ANKI
+Basic
+How is `r->field` equivalently written using `*`?
+Back: `(*r).field`
+Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1730757470069-->
+END%%
+
+%%ANKI
+Basic
+How is `(*r).field` more compactly written?
+Back: `r->field`
+Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1730757492874-->
+END%%
+
+%%ANKI
+Basic
+How many members *must* be defined in a `struct` initializer?
+Back: One.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755505-->
+END%%
+
+%%ANKI
+Basic
+Are `struct`s passed by reference or value?
+Back: Value.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755506-->
+END%%
+
+C allows arithmetic on pointers, where the computed value is scaled according to the size of the data type referenced by the pointer.
+
+%%ANKI
+Basic
+How is the following (assumed valid) expression simplified?
+```c
+*&E
+```
+Back: As just `E`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1730740461664-->
+END%%
+
+%%ANKI
+Basic
+How is the following (assumed valid) expression simplified?
+```c
+&*E
+```
+Back: As just `E`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1730740461665-->
+END%%
+
+%%ANKI
+Cloze
+Pointer arithmetic {`*(A + i)`} is equivalent to array reference `A[i]`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1730740461666-->
+END%%
+
+%%ANKI
+Basic
+Given the following, how can we equivalent write `A[1][2]` using pointer arithmetic?
+```c
+int main() {
+  int A[3][4];
+  return 0;
+}
+```
+Back: `A + 6`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1730745799783-->
+END%%
+
+%%ANKI
+Basic
+Given the following, how can we equivalent write `A[2][0]` using pointer arithmetic?
+```c
+int main() {
+  int A[3][4];
+  return 0;
+}
+```
+Back: `A + 8`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1730745799787-->
+END%%
+
+%%ANKI
+Basic
+Given the following, how can we equivalent write `A[1][2]` using pointer arithmetic?
+```c
+int main() {
+  int A[4][3];
+  return 0;
+}
+```
+Back: `A + 5`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1730745799789-->
+END%%
+
+%%ANKI
+Basic
+Given the following, how can we equivalent write `A[1][0]` using pointer arithmetic?
+```c
+int main() {
+  int A[4][3];
+  return 0;
+}
+```
+Back: `A + 3`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1730745799791-->
+END%%
+
+%%ANKI
+Basic
+How is the `return` statement likely translated to x86-64?
+```c
+int* example(int *E) {
+  return E;
+}
+```
+Back:
+```asm
+movq %rdi,%rax
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1730740461667-->
+END%%
+
+%%ANKI
+Basic
+How is the `return` statement likely translated to x86-64?
+```c
+int example(int *E) {
+  return E[0];
+}
+```
+Back:
+```asm
+movl (%rdi),%eax
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1730740461668-->
+END%%
+
+%%ANKI
+Basic
+How is the `return` statement likely translated to x86-64?
+```c
+int example(int *E, int i) {
+  return E[i];
+}
+```
+Back:
+```asm
+movl (%rdi, %rsi, 4),%eax
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1730740461669-->
+END%%
+
+%%ANKI
+Basic
+How is the `return` statement likely translated to x86-64?
+```c
+int example(int *E) {
+  return &E[2];
+}
+```
+Back:
+```asm
+leaq 8(%rdi),%rax
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1730740461670-->
 END%%
 
 ## Bibliography
