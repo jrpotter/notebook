@@ -1360,24 +1360,40 @@ END%%
 
 %%ANKI
 Basic
-What type is given to enumeration constants?
-Back: `signed int`
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727022810819-->
+What name is given to members of an enumeration?
+Back: An enumeration constant.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1730902791672-->
 END%%
 
 %%ANKI
 Basic
-What kind of integer expressions are `enum` constants limited to?
-Back: Integer constant expressions.
+What type is given to enumerated-type variables?
+Back: N/A. This is compiler dependent.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902856916-->
+END%%
+
+%%ANKI
+Basic
+What type is *usually* given to enumerated-type variables?
+Back: `int`
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902856922-->
+END%%
+
+%%ANKI
+Basic
+What kind of integer expressions are enumeration constants limited to?
+Back: Integer constant expressions with value representable as an `int`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727022810827-->
 END%%
 
 %%ANKI
 Basic
-Besides being an ICE, what other condition is expected on `enum` values?
-Back: The ICE evaluates to an integer that fits within a `signed int`.
+Besides being an ICE, what other condition is expected on enumeration constants?
+Back: The ICE evaluates to an integer that fits within an `int`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727022810833-->
 END%%
@@ -1402,4 +1418,5 @@ END%%
 
 * “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
 * Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.

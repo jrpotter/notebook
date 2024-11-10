@@ -29,7 +29,7 @@ END%%
 %%ANKI
 Basic
 Suppose $S \subseteq \mathbb{R}$ is bounded below by $B$. What property does set $S$ exhibit?
-Back: $S$ is nonempty..
+Back: $S$ is nonempty.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724115335387-->
 END%%

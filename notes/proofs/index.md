@@ -295,12 +295,16 @@ END%%
 
 ## Induction
 
-Let $P(n)$ be a predicate. To prove $P(n)$ is true for all $n \geq n_0$, we prove:
+### Weak Induction
 
-* **Base case**: Prove $P(n_0)$ is true. This is usually done directly.
-* **Inductive case**: Prove $P(k) \Rightarrow P(k + 1)$ for all $k \geq n_0$.
+Let $P(n)$ be a predicate depending on a number $n \in \mathbb{N}$. Assume that
 
-Within the inductive case, $P(k)$ is known as the **inductive hypothesis**.
+* **Base case**: $P(n_0)$ is true for some $n_0 \geq 0$, and
+* **Inductive case**: for all $k \geq n_0$, $P(k) \Rightarrow P(k + 1)$.
+
+Then $P(n)$ is true for all $n \geq n_0$.
+
+Within the inductive case, $P(k)$ is known as the **inductive hypothesis**. The formal justification of proof by induction is intimately tied to the idea of [[natural-numbers#Inductive Sets|inductive sets]].
 
 %%ANKI
 Cloze
@@ -342,7 +346,7 @@ END%%
 
 %%ANKI
 Basic
-What proposition is typically proven in the base case of an inductive proof?
+What proposition is typically proven in the base case of a weak induction proof?
 Back: $P(n_0)$ for some $n_0 \geq 0$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1714530152713-->
@@ -350,7 +354,7 @@ END%%
 
 %%ANKI
 Basic
-What proposition is typically proven in the inductive case of an inductive proof?
+What proposition is typically proven in the inductive case of a weak induction proof?
 Back: $P(k) \Rightarrow P(k + 1)$ for all $k \geq n_0$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1714530152718-->
@@ -396,33 +400,29 @@ END%%
 
 ### Strong Induction
 
-Strong induction expands the induction hypothesis. Let $P(n)$ be a predicate. To prove $P(n)$ is true for all $n \geq n_0$, we prove:
+Let $P(n)$ be a predicate depending on a number $n \in \mathbb{N}$. Assume that
 
-* **Base case**: Prove $P(n_0)$ is true. This is usually done directly.
-* **Inductive case**: Assume $P(k)$ is true for all $n_0 \leq k < n$. Then prove $P(n)$ is true.
+* **Base case**: $P(n_0)$ is true for some $n_0 \geq 0$, and
+* **Inductive case**: for all $k \geq n_0$, $P(n_0) \land P(n_0 + 1) \land \cdots \land P(k) \Rightarrow P(k + 1)$.
+
+Then $P(n)$ is true for all $n \geq n_0$.
+
+The formal justification of proof by induction is intimately tied to the idea of [[natural-numbers#Inductive Sets|inductive sets]] and the [[natural-numbers#Well-Ordering Principle|well-ordering principle]].
 
 %%ANKI
 Basic
 Using typical identifiers, what is the inductive hypothesis of $P(n)$ using strong induction?
-Back: Assume $P(k)$ for all $k < n$.
+Back: Assume $P(k)$ for all $n_0 \leq k < n$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1714574131949-->
 END%%
 
 %%ANKI
 Basic
-Why is strong induction considered stronger than weak induction?
-Back: It can be used to solve at least the same set of problems weak induction can.
+Why makes strong induction "stronger" than weak induction?
+Back: It gives more propositions in the antecedent of the inductive case.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1714574131955-->
-END%%
-
-%%ANKI
-Basic
-What negation is introduced to explain why the strong induction assumption is valid?
-Back: If $P(n)$ is not true for all $n$, there exists a *first* $n_0$ for which $\neg P(n_0)$.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1714574131963-->
 END%%
 
 %%ANKI
@@ -431,6 +431,58 @@ What distinguishes the base case of weak and strong induction proofs?
 Back: The latter may have more than one base case.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1714574131969-->
+END%%
+
+%%ANKI
+Basic
+How is the following strong induction clause rewritten to use weak induction? $$P(0) \land P(1) \land \cdots \land P(k) \Rightarrow P(k + 1)$$
+Back: As $Q(k) \Rightarrow Q(k + 1)$ where $Q(n) = P(0) \land P(1) \land \cdots \land P(n)$ for all $n \in \omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731203636959-->
+END%%
+
+%%ANKI
+Basic
+How is the following weak induction clause rewritten to use strong induction? $$P(k) \Rightarrow P(k + 1)$$
+Back: As $P(n_0) \land P(n_0 + 1) \land \cdots \land P(k) \Rightarrow P(k + 1)$ for some $0 \leq n_0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731203636963-->
+END%%
+
+### Well-Ordering Principle
+
+This is covered [[natural-numbers#Well-Ordering Principle|here]]. It is equivalent to weak and strong induction.
+
+%%ANKI
+Basic
+What are the three most commonly used principles of induction?
+Back: Weak induction, strong induction, and well-ordering.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731203636955-->
+END%%
+
+%%ANKI
+Basic
+Why are names "weak" and "strong" induction a misnomer?
+Back: Weak and strong induction are logically equivalent.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731204485580-->
+END%%
+
+%%ANKI
+Basic
+What is PMI an acronym for?
+Back: The **p**rinciple of **m**athematical **i**nduction.
+Reference: N/A.
+<!--ID: 1731205303107-->
+END%%
+
+%%ANKI
+Basic
+What is WOP an acronym for?
+Back: The **w**ell-**o**rdering **p**rinciple.
+Reference: N/A.
+<!--ID: 1731205303114-->
 END%%
 
 ## Bibliography

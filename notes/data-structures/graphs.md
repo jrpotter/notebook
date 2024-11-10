@@ -30,7 +30,7 @@ END%%
 %%ANKI
 Basic
 What are the two standard ways of representing graphs in memory?
-Back: The adjacency-list and adjacency-matrix representation.
+Back: The adjacency-list and adjacency-matrix representations.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1724614579422-->
 END%%

@@ -825,7 +825,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose a pointer logically evaluates to `true`. Why can't we use it?
+Suppose a pointer logically evaluates to `true`. Why might it still be unsafe to use?
 Back: Logical evaluation can't distinguish valid pointers from indeterminate pointers.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1730755551598-->
@@ -851,7 +851,7 @@ END%%
 Basic
 How is `r->field` equivalently written using `*`?
 Back: `(*r).field`
-Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1730757470069-->
 END%%
 
@@ -859,7 +859,7 @@ END%%
 Basic
 How is `(*r).field` more compactly written?
 Back: `r->field`
-Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1730757492874-->
 END%%
 
@@ -912,56 +912,56 @@ END%%
 
 %%ANKI
 Basic
-Given the following, how can we equivalent write `A[1][2]` using pointer arithmetic?
+How do we rewrite the return statement using pointer arithmetic?
 ```c
-int main() {
+int func() {
   int A[3][4];
-  return 0;
+  return A[1][2];
 }
 ```
-Back: `A + 6`
+Back: `return *(A + 6);`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1730745799783-->
 END%%
 
 %%ANKI
 Basic
-Given the following, how can we equivalent write `A[2][0]` using pointer arithmetic?
+How do we rewrite the return statement using pointer arithmetic?
 ```c
-int main() {
+int func() {
   int A[3][4];
-  return 0;
+  return A[2][0];
 }
 ```
-Back: `A + 8`
+Back: `return *(A + 8);`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1730745799787-->
 END%%
 
 %%ANKI
 Basic
-Given the following, how can we equivalent write `A[1][2]` using pointer arithmetic?
+How do we rewrite the return statement using pointer arithmetic?
 ```c
-int main() {
+int func() {
   int A[4][3];
-  return 0;
+  return A[1][2];
 }
 ```
-Back: `A + 5`
+Back: `return *(A + 5);`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1730745799789-->
 END%%
 
 %%ANKI
 Basic
-Given the following, how can we equivalent write `A[1][0]` using pointer arithmetic?
+How do we rewrite the return statement using pointer arithmetic?
 ```c
-int main() {
+int func() {
   int A[4][3];
-  return 0;
+  return A[1][0];
 }
 ```
-Back: `A + 3`
+Back: `return *(A + 3);`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1730745799791-->
 END%%
@@ -970,9 +970,7 @@ END%%
 Basic
 How is the `return` statement likely translated to x86-64?
 ```c
-int* example(int *E) {
-  return E;
-}
+int* func(int *E) { return E; }
 ```
 Back:
 ```asm
@@ -987,9 +985,7 @@ END%%
 Basic
 How is the `return` statement likely translated to x86-64?
 ```c
-int example(int *E) {
-  return E[0];
-}
+int func(int *E) { return E[0]; }
 ```
 Back:
 ```asm
@@ -1004,9 +1000,7 @@ END%%
 Basic
 How is the `return` statement likely translated to x86-64?
 ```c
-int example(int *E, int i) {
-  return E[i];
-}
+int func(int *E, int i) { return E[i]; }
 ```
 Back:
 ```asm
@@ -1021,9 +1015,7 @@ END%%
 Basic
 How is the `return` statement likely translated to x86-64?
 ```c
-int example(int *E) {
-  return &E[2];
-}
+int* func(int *E) { return &E[2]; }
 ```
 Back:
 ```asm

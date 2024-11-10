@@ -488,8 +488,8 @@ END%%
 
 %%ANKI
 Basic
-What is wrong with asking "what is the scope of $x$ in $\lambda$-term $P$"?
-Back: We should be asking about a $\lambda x$.
+What is wrong with asking "what is the scope of $x$ in $\lambda x. P$"?
+Back: We should be asking what the scope of $\lambda x$ is.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016007-->
 END%%

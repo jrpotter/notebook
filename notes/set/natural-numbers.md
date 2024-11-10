@@ -1149,6 +1149,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1729804914186-->
 END%%
 
+%%ANKI
+Basic
+What is the order-preserving property of addition on $\omega$ in FOL?
+Back: $\forall m, n, p \in \omega, m \in n \Leftrightarrow m + p \in n + p$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731170040087-->
+END%%
+
 ### Multiplication
 
 For each $m \in \omega$, there exists (by the recursion theorem) a unique function $M_m \colon \omega \rightarrow \omega$ such that for all $n \in \omega$, $$\begin{align*} M_m(0) & = 0, \\ M_m(n^+) & = M_m(n) + m \end{align*}$$
@@ -1225,6 +1233,14 @@ Without introducing new notation, what does $m \cdot n^+$ evaluate to?
 Back: $m \cdot n + m$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1729804914195-->
+END%%
+
+%%ANKI
+Basic
+What is the order-preserving property of multiplication on $\omega$ in FOL?
+Back: $\forall m, n, p \in \omega, m \in n \Leftrightarrow m \cdot p^+ \in n \cdot p^+$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731170040116-->
 END%%
 
 ### Exponentiation
@@ -1307,7 +1323,11 @@ END%%
 
 ## Ordering
 
-For natural numbers $m$ and $n$, define $m$ to be **less than $n$** if and only if $m \in n$. It follows $m \in n \Leftrightarrow m^+ \in n^+$.
+For natural numbers $m$ and $n$, define $m$ to be **less than $n$** if and only if $m \in n$. The following biconditionals hold true:
+
+* $m \in n \Leftrightarrow m^+ \in n^+$
+* $m \in n \Leftrightarrow m \subset n$
+* $m \underline{\in} n \Leftrightarrow m \subseteq n$
 
 %%ANKI
 Basic
@@ -1365,10 +1385,174 @@ END%%
 
 %%ANKI
 Basic
+Let $m, n \in \omega$. What is the strict analog of $m \underline{\in} n \Leftrightarrow m \subseteq n$?
+Back: $m \in n \Leftrightarrow m \subset n$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731168085673-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$. What is the non-strict analog of $m \in n \Leftrightarrow m \subset n$?
+Back: $m \underline{\in} n \Leftrightarrow m \subseteq n$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731168085679-->
+END%%
+
+%%ANKI
+Basic
+In what three ways does Enderton denote strict ordering of the natural numbers?
+Back: $\in$, $\subset$, and $<$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731170040122-->
+END%%
+
+%%ANKI
+Basic
+In what three ways does Enderton denote non-strict ordering of the natural numbers?
+Back: $\underline{\in}$, $\subseteq$, and $\leq$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731170040128-->
+END%%
+
+%%ANKI
+Basic
 What does the trichotomy law for $\omega$ state?
 Back: For any $m, n \in \omega$ exactly one of $m \in n$, $m = n$, or $n \in m$ holds.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1730118488850-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$. If $m \in n$, why is it that $m \subseteq n$?
+Back: Because $n$ is a transitive set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731168085682-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$. If $m \in n$, why is it that $m \subset n$?
+Back: Because $n$ is a transitive set and no natural number is a member of itself.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731168085685-->
+END%%
+
+%%ANKI
+Basic
+What does Enterton describe is the typical way of using trichotomy in proofs?
+Back: Showing that two of the three possibilities is false.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731168085688-->
+END%%
+
+### Well-Ordering Principle
+
+Let $A$ be a nonempty subset of $\omega$. Then there is some $m \in A$ such that $m \underline{\in} n$ for all $n \in A$.
+
+%%ANKI
+Basic
+What does the well-ordering principle state?
+Back: Every nonempty subset of $\omega$ has a least element.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731200524848-->
+END%%
+
+%%ANKI
+Basic
+How is the well-ordering principle stated in FOL?
+Back: $\forall A \subseteq \omega, A \neq \varnothing \Rightarrow \exists m \in A, \forall n \in A, m \underline{\in} n$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731200524851-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set of $\omega$. What condition is necessary for $A$ to have a least element?
+Back: $A \neq \varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731200524854-->
+END%%
+
+%%ANKI
+Basic
+What principle states every nonempty subset of $\omega$ has a least element?
+Back: The well-ordering principle.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731200524857-->
+END%%
+
+%%ANKI
+Basic
+What principle states every nonempty subset of $\omega$ has a greatest element?
+Back: N/A. This is not true.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731200524861-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is a subset of $\omega$ without a least element. What can be said about $A$?
+Back: $A = \varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731200524864-->
+END%%
+
+%%ANKI
+Basic
+*Why* is there no function $f \colon \omega \rightarrow \omega$ such that $f(n^+) \in f(n)$ for all $n \in \omega$?
+Back: $\mathop{\text{ran}} f$ would violate the well-ordering principle.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731200524868-->
+END%%
+
+%%ANKI
+Basic
+The following is a FOL representation of what principle?
+$$\forall A \subseteq \omega, A \neq \varnothing \Rightarrow \exists m \in A, \forall n \in A, m \underline{\in} n$$
+Back: The well-ordering principle for $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731203636938-->
+END%%
+
+%%ANKI
+Basic
+How can we show set $S$ coincides with $\omega$ using the well-ordering principle?
+Back: By showing $\omega - S$ has no least element.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731204485586-->
+END%%
+
+### Strong Induction Principle
+
+Let $A$ be a subset of $\omega$ and assume that for every $n \in \omega$, $$\text{if every number less than } n \text{ is in } A, \text{then } n \in A.$$
+Then $A = \omega$.
+
+%%ANKI
+Basic
+Let $A \subseteq \omega$. The strong induction principle for $\omega$ assumes what about every $n \in \omega$?
+Back: If every number less than $n$ is in $A$, then $n \in A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731203636943-->
+END%%
+
+%%ANKI
+Basic
+The following is a FOL representation of what principle?
+$$[\forall A \subseteq \omega, 0 \in A \land (\forall n \in \omega, n^+ \in \omega)] \Rightarrow A = \omega$$
+Back: The weak induction principle for $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731203636947-->
+END%%
+
+%%ANKI
+Basic
+The following is a FOL representation of what principle?
+$$[\forall A \subseteq \omega, \forall n \in \omega, (\forall m \in n, m \in A) \Rightarrow n \in A] \Rightarrow A = \omega$$
+Back: The strong induction principle for $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1731203636951-->
 END%%
 
 ## Bibliography

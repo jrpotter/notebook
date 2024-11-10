@@ -44,22 +44,6 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1710959313818-->
 END%%
 
-%%ANKI
-Basic
-What term describes assembly lines with a leading `.`?
-Back: Directives.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1710959313822-->
-END%%
-
-%%ANKI
-Basic
-Assembly directives are important for what two programs?
-Back: The assembler and the linker.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1710959313826-->
-END%%
-
 ## Instruction Classes
 
 There are three types of operands:

@@ -384,7 +384,7 @@ END%%
 %%ANKI
 Basic
 Why isn't $a_n = 2a_{n-1} + 3a_{n-2}$ a linear homogeneous recurrence relation with constant coefficients?
-Back: It is.
+Back: N/A. It is.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 Tags: algebra::polynomial
 <!--ID: 1714487050023-->
