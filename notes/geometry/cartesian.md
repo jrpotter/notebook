@@ -12,14 +12,14 @@ In plane analytic geometry, the **Cartesian coordinate system** uniquely specifi
 
 %%ANKI
 Cloze
-The {$x$-coordinate} of a point is sometimes called its {abscissa).
+The {$x$-coordinate} of a point is sometimes called its {abscissa}.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1731184865785-->
 END%%
 
 %%ANKI
 Cloze
-The {$y$-coordinate} of a point is sometimes called its {ordinate).
+The {$y$-coordinate} of a point is sometimes called its {ordinate}.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1731184865791-->
 END%%

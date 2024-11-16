@@ -1904,7 +1904,7 @@ END%%
 %%ANKI
 Basic
 Let $C_*$ be the closure of $A$ under $f$ defined in terms of function $h$. What is $h$'s codomain?
-Back: Assume $A \subseteq B$ and $f \colon B \rightarrow B$. Then $h$'s codomain is $B$.
+Back: Assume $A \subseteq B$ and $f \colon B \rightarrow B$. Then $h$'s codomain is $\mathscr{P}(B)$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1729684379373-->
 END%%
