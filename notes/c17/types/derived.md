@@ -1026,6 +1026,62 @@ Tags: x86-64
 <!--ID: 1730740461670-->
 END%%
 
+%%ANKI
+Basic
+Suppose `char *p` has address `S`. What is the result of the following?
+```c
+(int *) p + 7
+```
+Back: `S + 28`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731942192201-->
+END%%
+
+%%ANKI
+Basic
+Suppose `char *p` has address `S`. What is the result of the following?
+```c
+(int *) (p + 7)
+```
+Back: `S + 7`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731942192210-->
+END%%
+
+%%ANKI
+Basic
+How do we declare a function pointer `fp` to the following?
+```c
+int foo(int x, int *p);
+```
+Back:
+```c
+int (*fp)(int, int *);
+```
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731942192213-->
+END%%
+
+%%ANKI
+Basic
+What do the following two lines declare instances of?
+```c
+int (*fp)(int, int *);
+int *fp(int, int *);
+```
+Back: The first is a function pointer. The second is a function.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731942192218-->
+END%%
+
+%%ANKI
+Basic
+What is the value of a function pointer?
+Back: The address of the first instruction in the function's machine-code representation.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731942192229-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

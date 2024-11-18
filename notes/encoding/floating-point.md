@@ -1325,8 +1325,8 @@ END%%
 
 %%ANKI
 Basic
-What is the most important group quality $+^f$ is lacking?
-Back: Associativity.
+What are the most important group qualities $+^f$ is lacking?
+Back: Associativity and commutativity.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824824-->
 END%%

@@ -546,7 +546,7 @@ END%%
 
 %%ANKI
 Basic
-When is the load factor of a open addressing hash table $1$?
+When does the load factor of an open addressing hash table equal $1$?
 Back: When there exist the same number of total entries as slots.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1718759188182-->

@@ -961,7 +961,7 @@ END%%
 Basic
 What are the paths from vertex $3$ to vertex $6$?
 ![[directed-graph-example.png]]
-Back: N/A
+Back: N/A.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788332-->
 END%%

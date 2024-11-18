@@ -291,7 +291,7 @@ END%%
 
 %%ANKI
 Basic
-What can be said about a subset of $\omega$?
+What can be said about subsets of $\omega$?
 Back: N/A.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1724606314394-->
@@ -299,8 +299,8 @@ END%%
 
 %%ANKI
 Basic
-What can be said about an inductive subset of $\omega$?
-Back: It must coincide with $\omega$.
+What can be said about inductive subsets of $\omega$?
+Back: They must coincide with $\omega$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1724606314396-->
 END%%
