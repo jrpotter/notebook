@@ -320,10 +320,7 @@ END%%
 
 %%ANKI
 Basic
-What equivalent no-operand instruction does x86-64 provide?
-```asm
-movslq %eax, %rax
-```
+How is `movslq %eax, %rax` equivalently written using a single no-operand instruction?
 Back: `cltq`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1728382784107-->
@@ -331,10 +328,7 @@ END%%
 
 %%ANKI
 Basic
-What equivalent no-operand instruction does x86-64 provide?
-```asm
-movzlq %eax, %rax
-```
+How is `movzlq %eax, %rax` equivalently written using a single no-operand instruction?
 Back: N/A.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1728479148446-->
@@ -396,8 +390,8 @@ Basic
 How is `pushq %rbp` equivalently written using a pair of instructions?
 Back:
 ```asm
-subq $8,%rsp
-movq %rbp,(%rsp)
+subq $8, %rsp
+movq %rbp, (%rsp)
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1715377284959-->
@@ -408,8 +402,8 @@ Basic
 How is `popq %rax` equivalently written using a pair of instructions?
 Back:
 ```asm
-movq (%rsp),%rax
-addq $8,%rsp
+movq (%rsp), %rax
+addq $8, %rsp
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1715377284962-->
@@ -448,8 +442,12 @@ END%%
 
 %%ANKI
 Basic
-What is the `%rsp` register typically used for?
-Back: The stack pointer.
+Why is register `%rsp` named the way it is?
+Back: It stands for **s**tack **p**ointer.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1715377284985-->
 END%%
+
+## Bibliography
+
+* Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

@@ -134,100 +134,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1730121604407-->
 END%%
 
-## CALL and RET
-
-Like [[conditions#JMP|JMP]] instructions, `call` allows specifying a direct or indirect operand. `call` pushes the address of the instruction following it onto the stack and updates the PC to the operand. `ret` reverts these steps.
-
-| Instruction | Operands    | Description      |
-| ----------- | ----------- | ---------------- |
-| `call`      | Label       | Procedure call   |
-| `call`      | \**Operand* | Procedure call   |
-| `ret`       |             | Return from call |
-
-%%ANKI
-Cloze
-The {`call`} instruction is the counterpart to the {`ret`} instruction.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728558288130-->
-END%%
-
-%%ANKI
-Basic
-What two things does the `call` instruction do?
-Back: It pushes the return address on the stack and updates the PC.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728558288148-->
-END%%
-
-%%ANKI
-Basic
-What two things does the `ret` instruction do?
-Back: It pops the return address off the stack and updates the PC.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728558288160-->
-END%%
-
-%%ANKI
-Basic
-The operand forms of `call` mirror what other instruction class?
-Back: `JMP`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728558288165-->
-END%%
-
-%%ANKI
-Basic
-A `call` instruction pushes what address onto the stack?
-Back: That of the instruction following the `call` instruction.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728558288171-->
-END%%
-
-%%ANKI
-Basic
-What return address is pushed onto the stack after `call` is run?
-```x86
-1: ...
-2: callq .L1
-3: ...
-```
-Back: `3`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728558288177-->
-END%%
-
-%%ANKI
-Basic
-What address is the PC updated to after `call` is run?
-```x86
-1: ...
-2: callq .L1
-3: ...
-```
-Back: That corresponding to label `.L1`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728558288183-->
-END%%
-
-%%ANKI
-Basic
-Which register(s) does a `call` instruction update?
-Back: `%rsp` and `%rip`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336730-->
-END%%
-
-%%ANKI
-Basic
-Which register(s) does a `ret` instruction update?
-Back: `%rsp` and `%rip`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1728559336760-->
-END%%
-
-## Local Storage
-
-### On the Stack
+## Local Variables
 
 x86-64 employs 6 registers for passing integral (i.e. integer and pointer) arguments between caller and callee.
 
@@ -633,7 +540,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1730120207052-->
 END%%
 
-### In Registers
+## Callee-Saved Registers
 
 x86-64 employs 6 registers as callee-saved registers. If procedure `P` calls procedure `Q`, `Q` *must* preserve the values of these registers. That is, if `Q` were to modify these registers, `Q` is also responsible for restoring these values before returning back to `P`.
 
@@ -658,6 +565,14 @@ How many registers are designated as callee-saved?
 Back: 6.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1730121604414-->
+END%%
+
+%%ANKI
+Basic
+Which registers are designated as caller-saved?
+Back: All but callee-saved registers and `%rsp`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731946757133-->
 END%%
 
 %%ANKI
@@ -689,6 +604,153 @@ Suppose `P` calls `Q` with 8 integral arguments. Which of `P`'s callee-saved val
 Back: `P`'s arguments to `Q`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1730121604434-->
+END%%
+
+%%ANKI
+Basic
+Which number-suffixed register(s) are used for passing integral arguments to procedures?
+Back: `%r8` and `%r9`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731938810848-->
+END%%
+
+%%ANKI
+Basic
+Which number-suffixed register(s) are conventionally designated "callee-saved"?
+Back: `%r12`, `%13`, `%r14`, and `%r15`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731938810852-->
+END%%
+
+%%ANKI
+Basic
+Which number-suffixed register(s) are conventionally designated "caller-saved"?
+Back: `%r10` and `%r11`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731938810854-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a register to be callee-saved?
+Back: The callee must ensure the register's value is unchanged by the time it returns.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731938810857-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a register to be caller-saved?
+Back: Any procedure can modify the register's value.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731938810860-->
+END%%
+
+%%ANKI
+Basic
+*Why* are caller-saved registers named the way they are?
+Back: It's up to the caller to preserve their value before a procedure call.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731938810863-->
+END%%
+
+%%ANKI
+Basic
+What misnomer does designating `%r10` and `%r11` as caller-saved registers introduce?
+Back: This seems to imply there are no other caller-saved registers.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731946757135-->
+END%%
+
+## Frame Pointer
+
+The **frame pointer**, also known as the **base pointer**, marks the start of a variable-sized frame. `%rbp` is pushed onto the stack (since it is caller-saved) and its value updated to the new value of `%rsp`. Relative offsets are then computed according to it.
+
+%%ANKI
+Basic
+Why is register `%rbp` named the way it is?
+Back: It stands for **b**ase **p**ointer.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634150-->
+END%%
+
+%%ANKI
+Cloze
+{1:`%rsp`} is to {2:fixed}-sized frames whereas {2:`%rbp`} is to {1:variable}-sized frames.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634151-->
+END%%
+
+%%ANKI
+Basic
+When is the `%rbp` register used?
+Back: When working with variable-sized frames.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634153-->
+END%%
+
+%%ANKI
+Basic
+In fixed-sized frames, what is the first callee-saved register on the stack?
+Back: Indeterminate.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634154-->
+END%%
+
+%%ANKI
+Basic
+In variable-sized frames, what is the first callee-saved register on the stack?
+Back: `%rbp`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634155-->
+END%%
+
+%%ANKI
+Basic
+What is typically the ultimate instruction of a fixed-sized frame?
+Back: `ret`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634156-->
+END%%
+
+%%ANKI
+Basic
+What is typically the penultimate instruction of a fixed-sized frame?
+Back: Indeterminate.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634157-->
+END%%
+
+%%ANKI
+Basic
+What is typically the ultimate instruction of a variable-sized frame?
+Back: `ret`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634158-->
+END%%
+
+%%ANKI
+Basic
+What is typically the penultimate instruction of a variable-sized frame?
+Back: `leave`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634159-->
+END%%
+
+%%ANKI
+Basic
+Assume frame `Q` starts at address `S`. If applicable, what address is its frame pointer set to?
+Back: `S + 8`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634160-->
+END%%
+
+%%ANKI
+Basic
+Assume frame `Q` starts at address `S`. When applicable, *why* is `%rbp` set to `S + 8`?
+Back: It's the value of `%rsp` after pushing the previous value of `%rbp`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634161-->
 END%%
 
 ## Bibliography

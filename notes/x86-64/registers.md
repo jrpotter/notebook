@@ -309,50 +309,10 @@ END%%
 
 %%ANKI
 Basic
-Which number-suffixed register(s) are used for passing integral arguments to procedures?
-Back: `%r8` and `%r9`.
+What misnomer does designating registers for a certain purpose introduce?
+Back: Designations are convention-based. Registers can be used for any purpose.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1731938810848-->
-END%%
-
-%%ANKI
-Basic
-Which number-suffixed register(s) are conventionally designated "callee-saved"?
-Back: `%r12`, `%13`, `%r14`, and `%r15`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1731938810852-->
-END%%
-
-%%ANKI
-Basic
-Which number-suffixed register(s) are conventionally designated "caller-saved"?
-Back: `%r10` and `%r11`.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1731938810854-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for a register to be callee-saved?
-Back: The callee must ensure the register's value is unchanged by the time it returns.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1731938810857-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for a register to be caller-saved?
-Back: Any procedure can modify the register's value.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1731938810860-->
-END%%
-
-%%ANKI
-Basic
-*Why* are caller-saved registers named the way they are?
-Back: It's up to the caller to preserve their value before a procedure call.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1731938810863-->
+<!--ID: 1731946757131-->
 END%%
 
 ## Condition Codes

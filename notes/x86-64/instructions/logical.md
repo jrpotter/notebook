@@ -8,10 +8,10 @@ tags:
 
 ### Unary Operations
 
-| Instruction | Operands | Effect     | Description |
-| ----------- | -------- | ---------- | ----------- |
-| `neg[bwlq]` | D        | D <- -D    | Negate      |
-| `not[bwlq]` | D        | D <- ~D    | Complement  |
+| Instruction | Operands | Effect  | Description |
+| ----------- | -------- | ------- | ----------- |
+| `neg[bwlq]` | D        | D <- -D | Negate      |
+| `not[bwlq]` | D        | D <- ~D | Complement  |
 
 %%ANKI
 Basic

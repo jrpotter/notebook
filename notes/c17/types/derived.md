@@ -40,7 +40,7 @@ END%%
 
 ### Arrays
 
-An array is a contiguous sequence of objects. An array is either a **fixed-length array** (FLA) or a **variable-length array** (VLA).
+An array is a contiguous sequence of objects. An array is either a **fixed-length array** or a **variable-length array**.
 
 %%ANKI
 Cloze
@@ -153,114 +153,6 @@ Arrays fall under what two categories?
 Back: Fixed-length and variable-length.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727957575990-->
-END%%
-
-%%ANKI
-Basic
-Where *must* a VLA be declared?
-Back: Within a function.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957575996-->
-END%%
-
-%%ANKI
-Basic
-What two ways can the length of an FLA be specified?
-Back: By an ICE or an initializer.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576002-->
-END%%
-
-%%ANKI
-Basic
-Is the following an FLA or VLA?
-```c
-double a[4];
-```
-Back: FLA.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576008-->
-END%%
-
-%%ANKI
-Basic
-Is the following an FLA or VLA?
-```c
-double a[];
-```
-Back: N/A. This is invalid syntax.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576013-->
-END%%
-
-%%ANKI
-Basic
-Is the following an FLA or VLA?
-```c
-double a[] = { 0 };
-```
-Back: FLA.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576019-->
-END%%
-
-%%ANKI
-Basic
-Is the following an FLA or VLA?
-```c
-int n = 2;
-double a[n];
-```
-Back: VLA.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576025-->
-END%%
-
-%%ANKI
-Basic
-Is the following an FLA or VLA?
-```c
-#define n 2
-double a[n];
-```
-Back: FLA.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576030-->
-END%%
-
-%%ANKI
-Basic
-Is the following an FLA or VLA?
-```c
-enum { n = 2 };
-double a[n];
-```
-Back: FLA.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576036-->
-END%%
-
-%%ANKI
-Basic
-Is the following an FLA or VLA?
-```c
-int n = 2;
-double a[n] = {0};
-```
-Back: N/A. This is an invalid assignment.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576041-->
-END%%
-
-%%ANKI
-Basic
-For the following to be an FLA, what must `N` be?
-```c
-double a[N];
-```
-Back: An ICE.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576047-->
 END%%
 
 %%ANKI
@@ -553,6 +445,165 @@ Are arrays passed by reference or value?
 Back: Reference.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1730758755493-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+double a[4];
+```
+Back: FLA.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576008-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+double a[];
+```
+Back: N/A. This is invalid syntax.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576013-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+double a[] = { 0 };
+```
+Back: FLA.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576019-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+int n = 2;
+double a[n];
+```
+Back: VLA.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576025-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+#define n 2
+double a[n];
+```
+Back: FLA.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576030-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+enum { n = 2 };
+double a[n];
+```
+Back: FLA.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576036-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+int n = 2;
+double a[n] = {0};
+```
+Back: N/A. This is an invalid assignment.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576041-->
+END%%
+
+#### Fixed-Length
+
+A fixed-length array (FLA) has a predetermined size. Their stack allocations can be computed at compilation time.
+
+%%ANKI
+Basic
+What is FLA an acronym for?
+Back: **F**ixed-**l**ength **a**rray.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634166-->
+END%%
+
+%%ANKI
+Basic
+What two ways can the length of an FLA be specified?
+Back: By an ICE or an initializer.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576002-->
+END%%
+
+%%ANKI
+Basic
+For the following to be an FLA, what must `N` be?
+```c
+double a[N];
+```
+Back: An ICE.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576047-->
+END%%
+
+%%ANKI
+Basic
+*Why* must FLAs be declared within a function?
+Back: N/A. They can exist elsewhere.
+Tags: x86-64
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634167-->
+END%%
+
+#### Variable-Length
+
+A variable-length array (VLA) has its size determined at runtime. Their stack allocations must be determined with respect to other registers available to the frame.
+
+%%ANKI
+Basic
+What is VLA an acronym for?
+Back: **V**ariable-**l**ength **a**rray.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634168-->
+END%%
+
+%%ANKI
+Basic
+Where *must* a VLA be declared?
+Back: Within a function.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575996-->
+END%%
+
+%%ANKI
+Basic
+*Why* do variable-length arrays require use of a frame pointer?
+Back: Offsets depend on how much space must be allocated on the stack.
+Tags: x86-64
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634169-->
+END%%
+
+%%ANKI
+Basic
+*Why* must VLAs be declared within a function?
+Back: Their implementation relies on frame pointers.
+Tags: x86-64
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634170-->
 END%%
 
 ### Structures

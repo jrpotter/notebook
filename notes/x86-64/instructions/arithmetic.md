@@ -6,7 +6,7 @@ tags:
   - x86-64
 ---
 
-### Load Effective Address
+### LEAQ
 
 | Instruction | Operands | Effect  | Description            |
 | ----------- | -------- | ------- | ---------------------- |
@@ -237,7 +237,7 @@ END%%
 
 %%ANKI
 Basic
-Which `SUB` instruction is equivalent to `decq %rcx`?
+How is `decq %rcx` equivalently written using the `SUB` instruction class?
 Back:
 ```asm
 subq $1, %rcx
