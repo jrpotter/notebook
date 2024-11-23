@@ -1133,6 +1133,143 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1731942192229-->
 END%%
 
+%%ANKI
+Basic
+Trap representations are most relevant to what kind of derivied type?
+Back: Pointers.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726948-->
+END%%
+
+%%ANKI
+Basic
+What does a trap representation refer to?
+Back: An invalid interpretation of a bit pattern as a specific type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726951-->
+END%%
+
+%%ANKI
+Basic
+What happens when accessing an object with a trap representation of its type?
+Back: Undefined behavior.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726952-->
+END%%
+
+%%ANKI
+Basic
+*Why* must a dereferenced object have the correct designated type?
+Back: A trap representation of an object's type leads to undefined behavior.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726953-->
+END%%
+
+%%ANKI
+Basic
+Refer to the following. *Why* isn't the pointer addition considered correct?
+```c
+double A[2] = { 0.0, 1.0 };
+double* p = &A[0] + 2;
+```
+Back: N/A. It is.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726954-->
+END%%
+
+%%ANKI
+Basic
+Refer to the following. *Why* isn't the pointer addition considered correct?
+```c
+double A[2] = { 0.0, 1.0 };
+double* p = &A[0] + 3;
+```
+Back: Pointers cannot refer to addresses beyond that immediately following the array.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726955-->
+END%%
+
+%%ANKI
+Basic
+Refer to the following. What values of `N` yield a valid pointer assignment?
+```c
+double A[2] = { 0.0, 1.0 };
+double* p = &A[N];
+```
+Back: `0`, `1`, and `2`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726956-->
+END%%
+
+%%ANKI
+Basic
+Refer to the following. What is the first value of `N` that yields an invalid pointer assignment?
+```c
+double A[2] = { 0.0, 1.0 };
+double* p = &A[N];
+```
+Back: `3`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726957-->
+END%%
+
+%%ANKI
+Basic
+Refer to the following. Is the last line a valid dereference?
+```c
+double A[2] = { 0.0, 1.0 };
+double a = *(&A[1]);
+```
+Back: Yes.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726958-->
+END%%
+
+%%ANKI
+Basic
+Refer to the following. Is the last line a valid dereference?
+```c
+double A[2] = { 0.0, 1.0 };
+double a = *(&A[2]);
+```
+Back: No.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726959-->
+END%%
+
+%%ANKI
+Cloze
+A pointer must point to a {valid object}, or {one position beyond} a valid object, or be {null}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726960-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. At what point *could* the program crash?
+```c
+double A[] = { 0.0, 1.0 };
+double* p = &A[0] + 2;
+double q = *p;
+```
+Back: On the third line.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726961-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. At what point *could* the program crash?
+```c
+double A[] = { 0.0, 1.0 };
+double* p = &A[0] + 3;
+double q = *p;
+```
+Back: On the second line.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726962-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

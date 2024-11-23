@@ -136,6 +136,8 @@ Tags: printf
 <!--ID: 1708425941269-->
 END%%
 
+### Flags
+
 | Flag | Description                                                                                                                                                                                                                 |
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `-`  | Left-aligns the output                                                                                                                                                                                                      |
@@ -400,6 +402,8 @@ Tags: printf
 <!--ID: 1710673807990-->
 END%%
 
+### Length
+
 Length    | Description
 --------- | -----------
 `hh`      | `int` sized integer argument promoted from a `char`
@@ -456,6 +460,8 @@ Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia
 Tags: printf
 <!--ID: 1708426673725-->
 END%%
+
+### Specifiers
 
 Specifier | Description
 --------- | -----------
@@ -958,6 +964,15 @@ Back: In an implementation-specific way.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 Tags: printf
 <!--ID: 1707852083126-->
+END%%
+
+%%ANKI
+Basic
+What should be done to a pointer outputted by the `%p` format specifier?
+Back: It should be cast to a `void*` pointer.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+Tags: printf
+<!--ID: 1732397726966-->
 END%%
 
 %%ANKI

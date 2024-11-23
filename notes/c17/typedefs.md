@@ -105,6 +105,40 @@ END%%
 
 %%ANKI
 Basic
+When can two pointers be subtracted?
+Back: Only if both refer to elements of the same array object.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726963-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `p - q` in the following?
+```c
+double A[4] = { 0.0, 1.0, 2.0, -3.0 };
+double* p = &A[1];
+double* q = &A[3];
+```
+Back: `-2`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726964-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `p - q` in the following?
+```c
+double A[4] = { 0.0, 1.0, 2.0, -3.0 };
+double* p = &A[3];
+double* q = &A[1];
+```
+Back: `2`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726965-->
+END%%
+
+%%ANKI
+Basic
 Is `size_t` signed or unsigned?
 Back: Unsigned.
 Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
