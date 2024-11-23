@@ -930,8 +930,8 @@
     "_journal/2024-11/2024-11-08.md": "806bbade5f8339579287687f9433334e",
     "_journal/2024-11/2024-11-07.md": "434ec3f15d7065ea740127aa8477dd17",
     "x86-64/directives.md": "019c1c1d04efb26c3e8758aac4543cc7",
-    "geometry/cartesian.md": "b7003f70ab4822aa6eb4b84ba35f6e65",
-    "geometry/index.md": "679dcd097f4bebe417828c695444c88c",
+    "geometry/cartesian.md": "52eed93bf2d456ffab76e73d1031187c",
+    "geometry/index.md": "130185982889f115c9415f14c4424848",
     "_journal/2024-11-10.md": "5478337fd2017b99d0b359713a511e66",
     "_journal/2024-11/2024-11-09.md": "46f3a640223ef533f4523837b67b57c3",
     "_journal/2024-11-18.md": "5567592053951cee80450cf582df270a",
@@ -950,7 +950,10 @@
     "_journal/2024-11/2024-11-21.md": "951b6034d60a40dbd8201c50abf0dbb9",
     "_journal/2024-11/2024-11-20.md": "951b6034d60a40dbd8201c50abf0dbb9",
     "_journal/2024-11/2024-11-19.md": "d879f57154cb27cb168eb1f1f430e312",
-    "set/cardinality.md": "499e758bc0929af06736fa2974aade60"
+    "set/cardinality.md": "499e758bc0929af06736fa2974aade60",
+    "geometry/area.md": "3c6e53a64ad3150d8f81f6e4a63da61a",
+    "_journal/2024-11-23.md": "cd8db62b2aa0d67d50c0aa8257956732",
+    "_journal/2024-11/2024-11-22.md": "51117030e2364dbce3a8d507dead86ae"
   },
   "fields_dict": {
     "Basic": [

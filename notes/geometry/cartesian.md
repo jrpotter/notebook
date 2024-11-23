@@ -25,6 +25,30 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 END%%
 
 %%ANKI
+Basic
+What is an ordinate set?
+Back: A set bounded by the $x$-axis and the graph of a nonnegative function.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1732381333459-->
+END%%
+
+%%ANKI
+Basic
+An ordinate set is bounded below by what?
+Back: The $x$-axis, i.e. $y = 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1732381333464-->
+END%%
+
+%%ANKI
+Basic
+An ordinate set is bounded above by what?
+Back: The graph of a nonnegative function.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1732381333469-->
+END%%
+
+%%ANKI
 Cloze
 The {origin} of a Cartesian coordinate system has coordinates $\langle 0, 0 \rangle$.
 Reference: “Cartesian Coordinate System,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system](https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system&oldid=1252434514).
