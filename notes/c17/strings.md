@@ -86,6 +86,33 @@ END%%
 
 %%ANKI
 Basic
+What is the purpose of the width field in a `printf` argument?
+Back: It specifies a minimum number of characters to ouput.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1732285301746-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the precision field in a `printf` argument?
+Back: It specifies the maximum limit on the output, depending on the argument type.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1732285301754-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the length field in a `printf` argument?
+Back: It specifies the size of the `printf` argument before default promotion.
+Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
+Tags: printf
+<!--ID: 1732285301762-->
+END%%
+
+%%ANKI
+Basic
 Which header file contains basic `printf` functionality?
 Back: `<stdio.h>`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).

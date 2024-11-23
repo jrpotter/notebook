@@ -87,7 +87,7 @@ END%%
 %%ANKI
 Basic
 What is a binomial?
-Back: A polynomial containing two terms.
+Back: A polynomial containing two non-like terms.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708368078759-->
 END%%

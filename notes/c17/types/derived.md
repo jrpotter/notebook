@@ -563,8 +563,8 @@ END%%
 Basic
 *Why* must FLAs be declared within a function?
 Back: N/A. They can exist elsewhere.
-Tags: x86-64
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
 <!--ID: 1731952634167-->
 END%%
 
@@ -592,8 +592,8 @@ END%%
 Basic
 *Why* do variable-length arrays require use of a frame pointer?
 Back: Offsets depend on how much space must be allocated on the stack.
-Tags: x86-64
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
 <!--ID: 1731952634169-->
 END%%
 
@@ -601,8 +601,8 @@ END%%
 Basic
 *Why* must VLAs be declared within a function?
 Back: Their implementation relies on frame pointers.
-Tags: x86-64
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
 <!--ID: 1731952634170-->
 END%%
 

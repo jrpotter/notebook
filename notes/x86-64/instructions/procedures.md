@@ -152,7 +152,7 @@ END%%
 %%ANKI
 Basic
 Variable-sized frames use which of `leave` and/or `ret`?
-Back: Bot
+Back: Both.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1731952715103-->
 END%%

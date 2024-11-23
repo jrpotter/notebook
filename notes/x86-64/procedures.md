@@ -585,7 +585,7 @@ END%%
 
 %%ANKI
 Cloze
-By convention, register `%rbp` is used for {callee-saved values}.
+By convention, register `%rbp` is used for {base pointers}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1730121604421-->
 END%%
@@ -683,8 +683,8 @@ END%%
 
 %%ANKI
 Basic
-When is the `%rbp` register used?
-Back: When working with variable-sized frames.
+What kind of frames use the `%rbp` register?
+Back: Variable-sized frames.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1731952634153-->
 END%%
@@ -751,6 +751,23 @@ Assume frame `Q` starts at address `S`. When applicable, *why* is `%rbp` set to 
 Back: It's the value of `%rsp` after pushing the previous value of `%rbp`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1731952634161-->
+END%%
+
+%%ANKI
+Basic
+Allocate an array in a stack frame. Is the start of the array nearer the stack's top or bottom?
+Back: Bottom.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1732025483593-->
+END%%
+
+%%ANKI
+Basic
+Suppose an array exists in "Local variables". What region is trampled in a buffer overflow?
+![[buffer-overflow.png]]
+Back: The return address.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1732025483600-->
 END%%
 
 ## Bibliography
