@@ -528,6 +528,47 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1727957576041-->
 END%%
 
+Evaluation of an array `A` returns `&A[0]`, i.e. a [[#Pointers|pointer]] to the first array element. This is called **array decay**.
+
+%%ANKI
+Basic
+What is the effect of array decay?
+Back: Evaluation of an array `A` returns `&A[0]`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953228-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the implicit conversion of an array to a pointer?
+Back: Array decay.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953231-->
+END%%
+
+%%ANKI
+Basic
+According to Gustedt, what C feature explains why are there no "array values"?
+Back: Array-to-pointer decay.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953234-->
+END%%
+
+%%ANKI
+Basic
+Why can't arrays directly be made arguments to functions?
+Back: Because array arguments decay to pointers.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953237-->
+END%%
+
+%%ANKI
+Cloze
+In a function declaration, any array parameter rewrites to {a pointer}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953240-->
+END%%
+
 #### Fixed-Length
 
 A fixed-length array (FLA) has a predetermined size. Their stack allocations can be computed at compilation time.
@@ -1268,6 +1309,217 @@ double q = *p;
 Back: On the second line.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732397726962-->
+END%%
+
+### NULL
+
+The `NULL` macro refers to a **null pointer constant**, an ICE with value `0` or such an expression cast to type `void*`. The following table lists some valid values `NULL` can take on:
+
+| Expansion                  | Type                 |
+| -------------------------- | -------------------- |
+| `0U`                       | `unsigned`           |
+| `0`                        | `signed`             |
+| `\0`                       | `signed`             |
+| Enum constant of value `0` | `signed`             |
+| `0UL`                      | `unsigned long`      |
+| `0L`                       | `signed long`        |
+| `0ULL`                     | `unsigned long long` |
+| `0LL`                      | `signed long long`   |
+| `(void*)0`                 | `void*`              |
+
+%%ANKI
+Basic
+How are null pointer constants defined in terms of ICEs?
+Back: As any ICE with value `0` or such an expression cast to type `void*`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644395-->
+END%%
+
+%%ANKI
+Basic
+What *must* the `NULL` macro expand to?
+Back: Any null pointer constant.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644434-->
+END%%
+
+%%ANKI
+Basic
+Which of the following members of the list are ICEs?
+```c
+0U, '\0', 0UL, (void*)0, 5LL
+```
+Back: `0U`, `\0`, and `0UL`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644440-->
+END%%
+
+%%ANKI
+Basic
+Which of the following members of the list are null pointer constants?
+```c
+0U, '\0', 0UL, (void*)0, 5LL
+```
+Back: `0U`, `\0`, `0UL`, and `(void*)0`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644446-->
+END%%
+
+%%ANKI
+Basic
+Which of the following members of the list could `NULL` be identical to?
+```c
+0U, '\0', 0UL, (void*)0, 5LL
+```
+Back: `0U`, `\0`, `0UL`, and `(void*)0`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644454-->
+END%%
+
+%%ANKI
+Basic
+Which of the following members of the list are pointer constants?
+```c
+0U, '\0', 0UL, (void*)0, 5LL
+```
+Back: Just `(void*)0`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644461-->
+END%%
+
+%%ANKI
+Basic
+Why does Gustedt discourage use of `NULL`?
+Back: The type of value it expands to is implementation-specific.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644469-->
+END%%
+
+%%ANKI
+Basic
+What is wrong with the following invocation?
+```c
+printf("%d, %p", 1, NULL);
+```
+Back: `NULL` may not refer to a pointer type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644475-->
+END%%
+
+%%ANKI
+Basic
+What value must `NULL` have for the following to be correct?
+```c
+printf("%d, %p", 1, NULL);
+```
+Back: `(void*)0`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644482-->
+END%%
+
+## Functions
+
+A function `f` without a following opening `(` is converted to a pointer to its start. This is called **function decay**.
+
+%%ANKI
+Basic
+What is the effect of function decay?
+Back: Evaluation of a function `f` without a following opening `(` is converted to a pointer to its start.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953243-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the implicit conversion of a function to a pointer?
+Back: Function decay.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953247-->
+END%%
+
+%%ANKI
+Basic
+According to Gustedt, what C feature explains why are there no "function values"?
+Back: Function-to-pointer decay.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953250-->
+END%%
+
+%%ANKI
+Basic
+Why can't functions directly be made arguments to functions?
+Back: Because function arguments decay to pointers.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953255-->
+END%%
+
+%%ANKI
+Cloze
+{1:Function pointers} are to {2:`(...)`} whereas {2:pointers} are to {1:`[...]`}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953260-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+f(3);
+```
+Back: Decay, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953264-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+(&f)(3);
+```
+Back: Address of, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953269-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+(*f)(3);
+```
+Back: Decay, dereference, decay, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953273-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+(*&f)(3);
+```
+Back: Address of, dereference, decay, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953277-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+(&*f)(3);
+```
+Back: Decay, dereference, address of, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953281-->
+END%%
+
+%%ANKI
+Cloze
+{1:Pointers} refer to {2:arrays} whereas {2:function pointers} refer to {1:functions}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953285-->
 END%%
 
 ## Bibliography

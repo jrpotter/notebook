@@ -6,7 +6,7 @@ tags:
   - set
 ---
 
-## Overview
+## Equinumerosity
 
 We say set $A$ is **equinumerous** to set $B$, written ($A \approx B$) if and only if there exists a [[functions#Injections|one-to-one]] function from $A$ [[functions#Surjections|onto]] $B$.
 
@@ -58,7 +58,51 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1732295060366-->
 END%%
 
-## Equivalence Concept
+### Power Sets
+
+No set is equinumerous to its [[set/index#Power Set Axiom|power set]]. This is typically shown using a diagonalization argument.
+
+%%ANKI
+Basic
+What basic set operation produces a new set the original isn't equinumerous to?
+Back: The power set operation.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732541309202-->
+END%%
+
+%%ANKI
+Basic
+What kind of argument is typically made to prove no set is equinumerous to its power set?
+Back: A diagonalization argument.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732541309208-->
+END%%
+
+%%ANKI
+Basic
+Who is attributed the discovery of the diagonalization argument?
+Back: Georg Cantor.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732541309212-->
+END%%
+
+%%ANKI
+Basic
+Let $g \colon A \rightarrow \mathscr{P}A$. Using a diagonalization argument, what set is *not* in $\mathop{\text{ran}}(g)$?
+Back: $\{ x \in A \mid x \not\in g(x) \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732541309216-->
+END%%
+
+%%ANKI
+Basic
+Let $g \colon A \rightarrow \mathscr{P}A$. *Why* isn't $B = \{x \in A \mid x \not\in g(x) \}$ in $\mathop{\text{ran}}(g)$?
+Back: For all $x \in A$, $x \in B \Leftrightarrow x \not\in g(x)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732541309221-->
+END%%
+
+### Equivalence Concept
 
 For any sets $A$, $B$, and $C$:
 
@@ -141,6 +185,150 @@ Basic
 Back: Because then the field of this "relation" would be a set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1732295060403-->
+END%%
+
+## Finiteness
+
+A set is **finite** if and only if it is equinumerous to some [[natural-numbers|natural number]]. Otherwise it is **infinite**.
+
+%%ANKI
+Basic
+How does Enderton define a finite set?
+Back: As a set equinumerous to some natural number.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231320-->
+END%%
+
+%%ANKI
+Basic
+How does Enderton define an infinite set?
+Back: As a set not equinumerous to any natural number.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231330-->
+END%%
+
+%%ANKI
+Basic
+Is $n \in \omega$ a finite set?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231336-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $n \in \omega$ a finite set?
+Back: N/A. It is.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231342-->
+END%%
+
+%%ANKI
+Basic
+Is $\omega$ a finite set?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231347-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $\omega$ a finite set?
+Back: There is no natural number equinumerous to $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231353-->
+END%%
+
+### Pigeonhole Principle
+
+No natural number is equinumerous to a proper subset of itself. More generally, no finite set is equinumerous to a proper subset of itself.
+
+%%ANKI
+Basic
+How does Enderton state the pigeonhole principle for $\omega$?
+Back: No natural number is equinumerous to a proper subset of itself.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231358-->
+END%%
+
+%%ANKI
+Basic
+How does Enderton state the pigeonhole principle for finite sets?
+Back: No finite set is equinumerous to a proper subset of itself.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231364-->
+END%%
+
+%%ANKI
+Basic
+Let $m \in n \in \omega$. What principle precludes $m \approx n$?
+Back: The pigeonhole principle.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231369-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a set and $n \in \omega$ such that $S \approx n$. For $m \in \omega$, when might $S \approx m$?
+Back: *Only* if $m = n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231374-->
+END%%
+
+%%ANKI
+Basic
+What is the generalization of the pigeonhole principle for $\omega$?
+Back: The pigeonhole principle for finite sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231379-->
+END%%
+
+%%ANKI
+Basic
+What is the specialization of the pigeonhole principle for finite sets?
+Back: The pigeonhole principle for $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231385-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following theorem? $$\text{No finite set is equinumerous to a proper subset of itself.}$$
+Back: The pigeonhole principle.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231391-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a finite set and $f \colon S \rightarrow S$ be injective. Is $f$ a bijection?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231396-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a finite set and $f \colon S \rightarrow S$ be injective. *Why* must $f$ be surjective?
+Back: Otherwise $f$ is a bijection between $S$ and a proper subset of $S$, a contradiction.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231401-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a finite set and $f \colon S \rightarrow S$ be surjective. Is $f$ a bijection?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231407-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a finite set and $f \colon S \rightarrow S$ be surjective. *Why* must $f$ be injective?
+Back: Otherwise $f$ is a bijection between a proper subset of $S$ and $S$, a contradiction.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1732545231412-->
 END%%
 
 ## Bibliography

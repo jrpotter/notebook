@@ -265,7 +265,7 @@
     "algorithms/loop-invariants.md": "cbefc346842c21a6cce5c5edce451eb2",
     "algorithms/loop-invariant.md": "3b390e720f3b2a98e611b49a0bb1f5a9",
     "algorithms/running-time.md": "5efc0791097d2c996f931c9046c95f65",
-    "algorithms/order-growth.md": "434073572a080e423c1bf464806c6d65",
+    "algorithms/order-growth.md": "b50d02ccb785d9e50210f4c29836af70",
     "_journal/2024-02-08.md": "19092bdfe378f31e2774f20d6afbfbac",
     "algorithms/sorting/selection-sort.md": "73415c44d6f4429f43c366078fd4bf98",
     "algorithms/index 1.md": "6fada1f3d5d3af64687719eb465a5b97",
@@ -800,7 +800,7 @@
     "c17/basic-types.md": "7c6653bf6dc24c2f2aa72fc95c4f7875",
     "c17/types/simple.md": "44d56a2998f3bba578f14672c8b0ee3c",
     "c17/types/enumerated.md": "e1f70a30677c776b7b44ac3e0ff4e76d",
-    "c17/types/derived.md": "3776627765547e91086735ab834c2de1",
+    "c17/types/derived.md": "9d3a800fb7c944a9391f495c6978c99e",
     "c17/types/basic.md": "5064e21e683c0218890058882e06b6f3",
     "c17/types/index.md": "14b651bcfc8b2d62ffd200a74a9a2a6b",
     "_journal/2024-08-25.md": "e73a8edbd027d0f1a39289540eb512f2",
@@ -950,10 +950,14 @@
     "_journal/2024-11/2024-11-21.md": "951b6034d60a40dbd8201c50abf0dbb9",
     "_journal/2024-11/2024-11-20.md": "951b6034d60a40dbd8201c50abf0dbb9",
     "_journal/2024-11/2024-11-19.md": "d879f57154cb27cb168eb1f1f430e312",
-    "set/cardinality.md": "499e758bc0929af06736fa2974aade60",
+    "set/cardinality.md": "c334d969afe9248c691cb6d3623c958a",
     "geometry/area.md": "3c6e53a64ad3150d8f81f6e4a63da61a",
     "_journal/2024-11-23.md": "911f82ab8aede5ecdb96493aef64b0b9",
-    "_journal/2024-11/2024-11-22.md": "51117030e2364dbce3a8d507dead86ae"
+    "_journal/2024-11/2024-11-22.md": "51117030e2364dbce3a8d507dead86ae",
+    "_journal/2024-11-24.md": "225661114ad1b605132873e83acdf777",
+    "_journal/2024-11/2024-11-23.md": "1649e2f050cfb45a0c8cf52be29f625f",
+    "_journal/2024-11-25.md": "7f06ceccab35f6119f71d2e26174f142",
+    "_journal/2024-11/2024-11-24.md": "894b021e6335d4e6947448c8d362c083"
   },
   "fields_dict": {
     "Basic": [
