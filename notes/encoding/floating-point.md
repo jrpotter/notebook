@@ -1414,7 +1414,7 @@ END%%
 %%ANKI
 Basic
 What overflow values might result when casting from `float` to `double`?
-Back: N/A
+Back: N/A.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710680824848-->
 END%%

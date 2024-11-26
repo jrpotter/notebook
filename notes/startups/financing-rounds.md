@@ -48,7 +48,7 @@ END%%
 
 %%ANKI
 Basic
-What two financing rounds can follow a Series B round?
+What two financing rounds can *immediately* follow a Series B round?
 Back: A "Series B-1" or "Series C".
 Reference: Brad Feld and Jason Mendelson, _Venture Deals_, 3rd ed., n.d.
 <!--ID: 1719151159514-->
