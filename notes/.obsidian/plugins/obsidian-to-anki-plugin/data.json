@@ -334,7 +334,7 @@
     "_journal/2024-02-23.md": "219ce9ad15a8733edd476c97628b71fd",
     "_journal/2024-02/2024-02-22.md": "312e55d57868026f6e80f7989a889c2b",
     "c17/strings.md": "02f329f678efe939dbb5501399130296",
-    "c17/index.md": "611dd21439d56575172ef004c7635382",
+    "c17/index.md": "14c1dff9cb7e0272128ac1b89b3494b9",
     "c17/escape-sequences.md": "a8b99070336878b4e8c11e9e4525a500",
     "c17/declarations.md": "c853b9584365ba69ac5845082061a8dd",
     "algorithms/sorting/merge-sort.md": "6506483f7df6507cee0407bd205dbedd",
@@ -798,9 +798,9 @@
     "c17/enums.md": "9414fb67aa256a0a11b7240534c67bf6",
     "c17/derived-types.md": "6fb8f23a2423f05d5bdccb6672a32e38",
     "c17/basic-types.md": "7c6653bf6dc24c2f2aa72fc95c4f7875",
-    "c17/types/simple.md": "44d56a2998f3bba578f14672c8b0ee3c",
+    "c17/types/simple.md": "07bc1e1d1e6764353e99ea018a37f781",
     "c17/types/enumerated.md": "e1f70a30677c776b7b44ac3e0ff4e76d",
-    "c17/types/derived.md": "9d3a800fb7c944a9391f495c6978c99e",
+    "c17/types/derived.md": "74c608d72b25794bc3887f58f001bab2",
     "c17/types/basic.md": "5064e21e683c0218890058882e06b6f3",
     "c17/types/index.md": "14b651bcfc8b2d62ffd200a74a9a2a6b",
     "_journal/2024-08-25.md": "e73a8edbd027d0f1a39289540eb512f2",
@@ -919,7 +919,7 @@
     "_journal/2024-10/2024-10-31.md": "8c5e70f566953974f252da9472e527f0",
     "_journal/2024-10/2024-10-30.md": "054bdbf52843fa2445f6b9f91d5ca46e",
     "_journal/2024-10/2024-10-29.md": "432b3b073dafd54421ff6f7182ab9a58",
-    "c17/alignment.md": "20c03c33df5feaa16c8cf6e7c67603df",
+    "c17/alignment.md": "7f10089d8e71e0c61c20f84ff95d78a8",
     "_journal/2024-11-05.md": "6a599e6bc9dcd12a0940956285ae4d00",
     "_journal/2024-11-06.md": "c91de8a099cfee2514e1054400996e76",
     "_journal/2024-11/2024-11-05.md": "79a1304037e18fefa135d576db040784",
@@ -957,7 +957,9 @@
     "_journal/2024-11-24.md": "225661114ad1b605132873e83acdf777",
     "_journal/2024-11/2024-11-23.md": "1649e2f050cfb45a0c8cf52be29f625f",
     "_journal/2024-11-25.md": "1ec17a8473fa9c4779090ecbd22d70ef",
-    "_journal/2024-11/2024-11-24.md": "894b021e6335d4e6947448c8d362c083"
+    "_journal/2024-11/2024-11-24.md": "894b021e6335d4e6947448c8d362c083",
+    "_journal/2024-11-26.md": "29bc0b54d23034b9108e567a1d5fa8ac",
+    "_journal/2024-11/2024-11-25.md": "1ec17a8473fa9c4779090ecbd22d70ef"
   },
   "fields_dict": {
     "Basic": [

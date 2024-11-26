@@ -304,7 +304,7 @@ struct foo {
   char c;
 };
 ```
-Back: $16$
+Back: `16`
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
 <!--ID: 1730902219825-->
 END%%
@@ -318,7 +318,7 @@ struct foo {
   char c;
 };
 ```
-Back: $4$
+Back: `4`
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
 <!--ID: 1730902219830-->
 END%%

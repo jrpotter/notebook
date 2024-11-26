@@ -1417,6 +1417,40 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1732456644482-->
 END%%
 
+### Aliasing
+
+Accessing the same object through different pointers is called **aliasing**. With the exclusion of [[simple#Character Types|character types]], only pointers of the same base type may alias.
+
+%%ANKI
+Basic
+What does aliasing refer to?
+Back: Accessing the same object through different pointers.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732623646937-->
+END%%
+
+%%ANKI
+Basic
+Is aliasing possible in the following function?
+```c
+void foo(double const* a, double* b);
+```
+Back: Yes.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732623646945-->
+END%%
+
+%%ANKI
+Basic
+Is aliasing possible in the following function?
+```c
+void foo(double const* a, float* b);
+```
+Back: No.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732623646948-->
+END%%
+
 ## Functions
 
 A function `f` without a following opening `(` is converted to a pointer to its start. This is called **function decay**.

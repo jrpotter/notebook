@@ -344,7 +344,7 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1723856661364-->
 END%%
 
-## Representation
+## Representations
 
 The **binary representation** of a type is the model used to represent values of said type on a given platform. The **object representation** of a type determines how values are stored in memory, disk, etc.
 
@@ -392,6 +392,38 @@ Why might the same value have different binary representations?
 Back: Because the binary representation corresponds to the type of the value.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727432711873-->
+END%%
+
+%%ANKI
+Basic
+The `sizeof` operator returns values in units of what?
+Back: Bytes.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732622657260-->
+END%%
+
+%%ANKI
+Basic
+Consider object `A`. What is "the type" of its object representation?
+Back: `unsigned char[sizeof A]`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732622657263-->
+END%%
+
+%%ANKI
+Basic
+Every object can be viewed as an array of what type?
+Back: `unsigned char`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732622657266-->
+END%%
+
+%%ANKI
+Basic
+Which type is considered the "atom" of all object types?
+Back: `unsigned char`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732622657269-->
 END%%
 
 ## Bibliography

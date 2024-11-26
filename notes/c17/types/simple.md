@@ -223,18 +223,6 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1718281813458-->
 END%%
 
-## Characters
-
-Type `char` is special since it can be signed or unsigned depending on platform. Keep in mind regardless of its signedness, it is still considered a distinct type from both the `unsigned char` and `signed char` type.
-
-%%ANKI
-Basic
-Is declaration `char` signed or unsigned?
-Back: This is implementation-dependent.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707493017239-->
-END%%
-
 ## Integers
 
 **Narrow types** cannot be used directly in arithmetic. Instead they are first promoted to a wider type. On almost every system, this promotion will be to a `signed int` of the same value, regardless of the signedness of the narrow type itself.
@@ -261,6 +249,74 @@ Unsigned narrow types found are usually promoted to what larger type?
 Back: A `signed int`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1723859121972-->
+END%%
+
+### Character Types
+
+The three types `char`, `signed char`, and `unsigned char` are collectively called the **character types**. The implementation defines `char` to have the same range, representation, and behavior as either `signed char` or `unsigned char`, but is considered incompatible with both. That is, it is a distinct type in the eyes of the type system.
+
+%%ANKI
+Basic
+Is declaration `char` signed or unsigned?
+Back: This is implementation-dependent.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017239-->
+END%%
+
+%%ANKI
+Basic
+What are the character types?
+Back: `char`, `signed char`, and `unsigned char`.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1732622657234-->
+END%%
+
+%%ANKI
+Basic
+`char` has the same range, representation, and behavior as what other type?
+Back: Either `signed char` or `unsigned char`.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1732622657240-->
+END%%
+
+%%ANKI
+Basic
+How do you check if `char` has the same representation as a `signed char` or `unsigned char`?
+Back: Check if `CHAR_MIN` has value `SCHAR_MIN` or `0` respectively.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1732622657243-->
+END%%
+
+%%ANKI
+Basic
+Which header defines `CHAR_MIN`?
+Back: `limits.h`
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1732622657247-->
+END%%
+
+%%ANKI
+Basic
+Which character type should be used for strings?
+Back: `char`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732622657250-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for `char` to be incompatible with other character types?
+Back: The type system considers it to be a distinct type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732622657253-->
+END%%
+
+%%ANKI
+Basic
+What does `sizeof(char)` evaluate to?
+Back: `1`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732622657256-->
 END%%
 
 ### Unsigned Integers
