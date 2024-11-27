@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-For a large class of modern ISAs, storage for basic C datatypes respect **self-alignmnet**. This means `char`s can start on any byte address, `short`s on any even address, 4-byte `int`s and `float`s must start on an address divisible by 4, and `double`s must start on an address divisible by 8. Likewise pointers are also self-aligned.
+For a large class of modern ISAs, storage for basic C datatypes respect **self-alignment**. This means `char`s can start on any byte address, `short`s on any even address, 4-byte `int`s and `float`s must start on an address divisible by 4, and `double`s must start on an address divisible by 8. Likewise pointers are also self-aligned.
 
 Wasted space introduced solely for alignment purposes is referred to as **slop**.
 

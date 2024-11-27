@@ -221,7 +221,8 @@
     "arg-build-area.png",
     "stack-frame.png",
     "buffer-overflow.png",
-    "infinite-cartesian-product.png"
+    "infinite-cartesian-product.png",
+    "postage-function.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -802,7 +803,7 @@
     "c17/types/enumerated.md": "e1f70a30677c776b7b44ac3e0ff4e76d",
     "c17/types/derived.md": "74c608d72b25794bc3887f58f001bab2",
     "c17/types/basic.md": "5064e21e683c0218890058882e06b6f3",
-    "c17/types/index.md": "14b651bcfc8b2d62ffd200a74a9a2a6b",
+    "c17/types/index.md": "ae2ebd695b4eeadbabf28c814ce3a052",
     "_journal/2024-08-25.md": "e73a8edbd027d0f1a39289540eb512f2",
     "_journal/2024-08/2024-08-24.md": "563fad24740e44734a87d7c3ec46cec4",
     "algebra/abs-val.md": "a47bc08db62304eb526d15ede3e300cf",
@@ -959,7 +960,8 @@
     "_journal/2024-11-25.md": "1ec17a8473fa9c4779090ecbd22d70ef",
     "_journal/2024-11/2024-11-24.md": "894b021e6335d4e6947448c8d362c083",
     "_journal/2024-11-26.md": "29bc0b54d23034b9108e567a1d5fa8ac",
-    "_journal/2024-11/2024-11-25.md": "1ec17a8473fa9c4779090ecbd22d70ef"
+    "_journal/2024-11/2024-11-25.md": "1ec17a8473fa9c4779090ecbd22d70ef",
+    "calculus/intervals.md": "3c2f6803bf7f89a626b76c464bd715e1"
   },
   "fields_dict": {
     "Basic": [
