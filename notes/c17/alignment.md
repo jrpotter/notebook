@@ -42,7 +42,7 @@ END%%
 
 %%ANKI
 Basic
-What addresses can a `int` be stored at?
+What addresses can an `int` be stored at?
 Back: Any address divisible by 4.
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
 <!--ID: 1730831516934-->

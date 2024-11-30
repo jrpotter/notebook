@@ -319,7 +319,7 @@ END%%
 
 %%ANKI
 Basic
-Trap representations are most relevant to what kind of derivied type?
+Trap representations are most relevant to what kind of derived type?
 Back: Pointers.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732397726948-->

@@ -500,7 +500,7 @@ END%%
 For any sets $A$, $B$, and $C$, $$\begin{align*} A \times (B \cap C) & = (A \times B) \cap (A \times C) \\ A \times (B \cup C) & = (A \times B) \cup (A \times C) \\ A \times (B - C) & = (A \times B) - (A \times C) \end{align*}$$
 %%ANKI
 Basic
-Which of the algebra of sets operators does the Cartesian product distributive over?
+Which of the algebra of sets operators does the Cartesian product distribute over?
 Back: $\cap$, $\cup$, and $-$
 Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881718-->

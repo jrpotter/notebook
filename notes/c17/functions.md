@@ -469,7 +469,7 @@ END%%
 %%ANKI
 Basic
 Which library defines `EXIT_SUCCESS`?
-Back: `stdlib.h`
+Back: `<stdlib.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415810-->
 END%%
@@ -477,7 +477,7 @@ END%%
 %%ANKI
 Basic
 Which library defines `EXIT_FAILURE`?
-Back: `stdlib.h`
+Back: `<stdlib.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415813-->
 END%%
@@ -503,7 +503,7 @@ Which library declares the following prototype?
 ```c
 noreturn void exit(int)
 ```
-Back: `stdlib.h`
+Back: `<stdlib.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415823-->
 END%%
@@ -542,7 +542,7 @@ END%%
 %%ANKI
 Basic
 Which library is `noreturn` defined in?
-Back: `stdnoreturn.h`
+Back: `<stdnoreturn.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415846-->
 END%%
