@@ -492,7 +492,7 @@ Which of the following members of the list are ICEs?
 ```c
 0U, '\0', 0UL, (void*)0, 5LL
 ```
-Back: `0U`, `\0`, and `0UL`.
+Back: `0U`, `\0`, `0UL`, and `5LL`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732456644440-->
 END%%

@@ -20,6 +20,12 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 END%%
 
 %%ANKI
+Cloze
+Linkage is a property of {identifiers}, not {objects}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).<!--ID: 1733064425171-->
+END%%
+
+%%ANKI
 Basic
 What capability does linkage allow identifiers to perform?
 Back: Reference to the same object or function.
@@ -143,6 +149,18 @@ Basic
 Back: Its always external.
 Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
 <!--ID: 1733010193289-->
+END%%
+
+%%ANKI
+Basic
+Consider the following translation unit. What is the linkage of `x`?
+```c
+int x;
+static int x;
+```
+Back: N/A. Undefined behavior.
+Reference: “ISO: Programming Languages - C,” April 12, 2011, [https://port70.net/~nsz/c/c11/n1570.pdf](https://port70.net/~nsz/c/c11/n1570.pdf).
+<!--ID: 1733022430503-->
 END%%
 
 %%ANKI
