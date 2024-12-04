@@ -886,7 +886,7 @@ END%%
 Basic
 What are the trails of length $4$ from vertex $2$ to vertex $2$?
 ![[directed-graph-example.png]]
-Back: $\langle 2, 4, 1, 2, 2 \rangle$ and $\langle 2, 5, 4, 1, 2 \rangle$
+Back: $\langle 2, 4, 1, 2, 2 \rangle$, $\langle 2, 2, 4, 1, 2 \rangle$, and $\langle 2, 5, 4, 1, 2 \rangle$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1723992099163-->
 END%%

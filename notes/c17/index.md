@@ -404,7 +404,7 @@ END%%
 
 %%ANKI
 Basic
-Consider object `A`. What is "the type" of its object representation?
+Consider object `A`. What is the "type" of its object representation?
 Back: `unsigned char[sizeof A]`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732622657263-->

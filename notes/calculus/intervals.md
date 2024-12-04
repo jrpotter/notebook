@@ -55,7 +55,7 @@ END%%
 
 %%ANKI
 Cloze
-Let $a, b \in \mathbb{R}$ s.t. $a < b$. Then {$(a, b]$ and $[a, b)$]} denote {half-open} intervals.
+Let $a, b \in \mathbb{R}$ s.t. $a < b$. Then {$(a, b]$ and $[a, b)$} denote {half-open} intervals.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1732624724942-->
 END%%
@@ -162,6 +162,39 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1732627945416-->
 END%%
 
+Given two partitions $P_1$ and $P_2$, the **common refinement** of $P_1$ and $P_2$ is the partition formed by adjoining the subdivision points of $P_1$ and $P_2$ together.
+
+%%ANKI
+Basic
+How is the common refinement of partitions $P_1$ and $P_2$ defined?
+Back: The partition formed by adjoining the subdivision points of $P_1$ and $P_2$ together.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316861990-->
+END%%
+
+%%ANKI
+Basic
+Consider partitions $P_1 = \{a, x_1, b\}$ and $P_2 = \{a, x_2, b\}$. What are the possible common refinements of $P_1$ and $P_2$?
+Back: $\{a, x_1 = x_2, b\}$, $\{a, x_1, x_2, b\}$, or $\{a, x_2, x_1, b\}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316861994-->
+END%%
+
+%%ANKI
+Basic
+Partition $P' = \{0, 1, 2, 3, 4\}$ is the common refinement of $P = \{0, 1, 4\}$ and what other (minimal) partition?
+Back: $\{0, 2, 3, 4\}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316861997-->
+END%%
+
+%%ANKI
+Cloze
+Partition $P' = \{0, 1, 2, 3, 4\}$ is a {refinement} of partition $P = \{0, 1, 4\}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316862000-->
+END%%
+
 ## Step Functions
 
 A function $s$, whose domain is a closed interval $[a, b]$, is called a **step function** if and only if there exists a [[#Partitions|partition]] $P = \{a, x_1, \ldots, x_{n-1}, b\}$ of $[a, b]$ such that $s$ is constant on each open subinterval of $P$.
@@ -225,6 +258,103 @@ What minimally refined partition is associated with the following step function?
 Back: $\{0, 1, 2, 3, 4\}$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1732627945444-->
+END%%
+
+%%ANKI
+Basic
+What maximally refined partition is associated with the following step function?
+![[postage-function.png]]
+Back: N/A. There is no *maximally* refined partition.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733318358915-->
+END%%
+
+%%ANKI
+Basic
+How is the sum of two real functions $f$ and $g$ denoted?
+Back: $f + g$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316862003-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be real functions with a common domain. What kind of mathematical entity is $f + g$?
+Back: A function.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316862006-->
+END%%
+
+%%ANKI
+Basic
+How is the product of two real functions $f$ and $g$ denoted?
+Back: $f \cdot g$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316862009-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be real functions with a common domain. What kind of mathematical entity is $f \cdot g$?
+Back: A function.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316862014-->
+END%%
+
+%%ANKI
+Basic
+How is the quotient of two real functions $f$ and $g$ denoted?
+Back: $f / g$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316862017-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be real functions with a common domain. What kind of mathematical entity is $f / g$?
+Back: A function, provided $g(x) \neq 0$ for all $x$ in $g$'s domain.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316862020-->
+END%%
+
+%%ANKI
+Basic
+When is the sum of two step functions also a step function?
+Back: Always.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316862024-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the sum of two step functions also a step function?
+Back: The partition of the sum is the common refinement of the partitions of the summands.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316862028-->
+END%%
+
+%%ANKI
+Basic
+When is the multiplication of two step functions also a step function?
+Back: Always.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316862031-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the product of two step functions also a step function?
+Back: The partition of the product is the common refinement of the partitions of the factors.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316862035-->
+END%%
+
+%%ANKI
+Basic
+When is the quotient of two step functions also a step function?
+Back: When the divisor has nonzero value along its domain.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733316862038-->
 END%%
 
 ## Bibliography

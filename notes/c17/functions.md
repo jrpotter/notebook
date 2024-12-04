@@ -602,6 +602,67 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1732293415869-->
 END%%
 
+### Variable-Length Arrays
+
+Within a function prototype, a parameter can denote a [[derived#Variable-Length|VLA]] using `[*]` syntax. For example, the following prototypes are all (more or less) equivalent:
+
+```c
+int sum2d(int  , int  , int a[*][*]);
+int sum2d(int n, int  , int a[n][*]);
+int sum2d(int  , int m, int a[*][m]);
+int sum2d(int n, int m, int a[n][m]);
+int sum2d(int  , int  , int a[][*]);
+int sum2d(int  , int  , int (*a)[*]);
+int sum2d(int  , int m, int (*a)[m]);
+```
+
+%%ANKI
+Basic
+In what context are VLAs declared with `[*]` actually useful?
+Back: Function prototypes.
+Reference: https://stackoverflow.com/a/17371914
+<!--ID: 1733144155068-->
+END%%
+
+%%ANKI
+Basic
+Maintaining array syntax, rewrite the following without parameter names.
+```c
+int sum2d(int n, int m, int a[n][m]);
+```
+Back:
+```c
+int sum2d(int, int, int a[*][*]);
+```
+Reference: https://stackoverflow.com/a/17371914
+<!--ID: 1733144155073-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the first `*` considered redundant in the following?
+```c
+int sum2d(int, int, int a[*][*]);
+```
+Back: Array decay.
+Reference: https://stackoverflow.com/a/17371914
+<!--ID: 1733144155076-->
+END%%
+
+%%ANKI
+Basic
+How can we rewrite the following with as few `*`s as possible?
+```c
+int sum2d(int, int, int a[*][*]);
+```
+Back:
+```c
+int sum2d(int, int, int a[][*]);
+```
+Reference: https://stackoverflow.com/a/17371914
+<!--ID: 1733144155079-->
+END%%
+
 ## Bibliography
 
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).

@@ -411,7 +411,7 @@ END%%
 %%ANKI
 Basic
 How is a left inverse of set $A$ defined?
-Back: N/A.
+Back: N/A. Left inverses are only applicable to functions.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719684322553-->
 END%%
@@ -645,7 +645,7 @@ END%%
 %%ANKI
 Basic
 How is a right inverse of set $A$ defined?
-Back: N/A.
+Back: N/A. Right inverses are only applicable to functions.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719684322561-->
 END%%
