@@ -78,7 +78,7 @@ What return address is pushed onto the stack after `call` is run?
 2: callq .L1
 3: ...
 ```
-Back: `3`
+Back: The address corresponding to line `3`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1728558288177-->
 END%%

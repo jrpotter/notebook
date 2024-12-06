@@ -523,7 +523,7 @@ Is the following an FLA or VLA?
 int n = 2;
 double a[n] = {0};
 ```
-Back: N/A. This is an invalid assignment.
+Back: N/A. Variable-sized objects may not be initialized.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727957576041-->
 END%%

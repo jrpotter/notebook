@@ -113,14 +113,14 @@ END%%
 
 ## Prototypes
 
-A function declaration/definition has two ways of using declarators: **parameter type lists** and **identifier type lists**. To make the distinction clear, consider the following two ways of defining an `add` function:
+There exist two ways for a function [[c17/declarations|declaration]] to use declarators: **parameter type lists** and **identifier type lists**. To make the distinction clear, consider the following ways of defining an `add` function:
 
 ```c
 int f(int x, int y) { return x + y; }  // Paramter type list
 int f(x, y) int x; int y; { return x + y }  // Identifier type list
 ```
 
-A function **prototype** is a kind of function [[c17/declarations|declaration]] that specifies the function signature. There are three important points to make note of:
+A function **prototype** is a function declaration that specifies a function signature. There are three important points to make note of:
 
 * Empty identifier lists are interpreted as "the compiler has not been told what this function's arguments are."
 * The standard prohibits declaring functions with a non-empty identifier list.
@@ -166,7 +166,7 @@ END%%
 
 %%ANKI
 Basic
-Which of identifier type lists and/or parameter type lists considered obsolete?
+Which of identifier type lists and/or parameter type lists are considered obsolete?
 Back: Identifier type lists.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1732031751470-->
@@ -275,11 +275,22 @@ END%%
 
 %%ANKI
 Basic
-Is the following a prototype or a declaration?
+Is the following a prototype, declaration, both, or neither?
+```c
+void f();
+```
+Back: A declaration.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733492504375-->
+END%%
+
+%%ANKI
+Basic
+Is the following a prototype, declaration, both, or neither?
 ```c
 void f(void);
 ```
-Back: A prototype.
+Back: Both.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1732031751509-->
 END%%

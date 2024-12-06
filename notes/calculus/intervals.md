@@ -99,6 +99,38 @@ END%%
 
 %%ANKI
 Basic
+Let $a, b \in \mathbb{R}$ s.t. $a < b$ and $P = \{x_0, x_1, \ldots, x_n\}$ be a partition of $[a, b]$. What must $x_0$ equal?
+Back: $a$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733520215138-->
+END%%
+
+%%ANKI
+Basic
+Let $a, b \in \mathbb{R}$ s.t. $a < b$ and $P = \{x_0, x_1, \ldots, x_n\}$ be a partition of $[a, b]$. What must $x_n$ equal?
+Back: $b$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733520215144-->
+END%%
+
+%%ANKI
+Basic
+Let $a, b \in \mathbb{R}$ s.t. $a < b$ and $P = \{x_0, x_1, \ldots, x_n\}$ be a partition of $[a, b]$. How many subdivision points does $P$ have?
+Back: $n + 1$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733520215150-->
+END%%
+
+%%ANKI
+Basic
+Let $a, b \in \mathbb{R}$ s.t. $a < b$ and $P = \{x_0, x_1, \ldots, x_n\}$ be a partition of $[a, b]$. How many subintervals does $P$ have?
+Back: $n$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1733520215156-->
+END%%
+
+%%ANKI
+Basic
 Let $a, b \in \mathbb{R}$ s.t. $a < b$. How is a partition of interval $[a, b]$ denoted?
 Back: As $\{a, x_1, \ldots, x_{n-1}, b\}$ where $a < x_1 < \cdots < x_{n-1} < b$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

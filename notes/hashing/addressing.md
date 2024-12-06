@@ -194,7 +194,7 @@ END%%
 %%ANKI
 Basic
 What is the theoretical maximum load factor in closed addressing?
-Back: N/A
+Back: N/A. There is no maximum.
 Reference: “Hash Tables: Open vs Closed Addressing | Programming.Guide,” accessed June 12, 2024, [https://programming.guide/hash-tables-open-vs-closed-addressing.html](https://programming.guide/hash-tables-open-vs-closed-addressing.html).
 <!--ID: 1718759188231-->
 END%%

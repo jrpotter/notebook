@@ -11,7 +11,22 @@ tags:
 
 For a large class of modern ISAs, storage for basic C datatypes respect **self-alignment**. This means `char`s can start on any byte address, `short`s on any even address, 4-byte `int`s and `float`s must start on an address divisible by 4, and `double`s must start on an address divisible by 8. Likewise pointers are also self-aligned.
 
+%%ANKI
+Basic
+What does self-alignment refer to?
+Back: The placement of C datatypes on an address divisible by the size of the datatype.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730831516929-->
+END%%
+
 Wasted space introduced solely for alignment purposes is referred to as **slop**.
+
+%%ANKI
+Cloze
+With respect to memory alignment, {slop} is {waste space for padding datatypes to their alignment}.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730831516944-->
+END%%
 
 ## Structures
 
@@ -23,14 +38,6 @@ A `struct`'s **stride address** refers to the first address following the `struc
 	1. This ensures each element in an array satsifies its self-alignment requirement.
 
 The `sizeof` operator on a `struct` returns the total space used between its leading address and its stride address.
-
-%%ANKI
-Basic
-What does self-alignment refer to?
-Back: The placement of C datatypes on an address divisible by the size of the datatype.
-Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
-<!--ID: 1730831516929-->
-END%%
 
 %%ANKI
 Basic
@@ -86,13 +93,6 @@ How does self-alignment make access faster?
 Back: It enables single instruction fetches and puts.
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
 <!--ID: 1730831516943-->
-END%%
-
-%%ANKI
-Cloze
-With respect to memory alignment, {slop} is {waste space for padding datatypes to their alignment}.
-Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
-<!--ID: 1730831516944-->
 END%%
 
 %%ANKI

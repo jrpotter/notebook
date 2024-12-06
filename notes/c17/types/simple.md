@@ -1417,32 +1417,40 @@ END%%
 %%ANKI
 Basic
 What name is given to members of an enumeration?
-Back: An enumeration constant.
+Back: Enumeration constants.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1730902791672-->
 END%%
 
 %%ANKI
 Basic
-What type is given to enumerated-type variables?
-Back: N/A. This is compiler dependent.
-Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
-<!--ID: 1730902856916-->
+An enumerated type must be compatible with what three possibilities?
+Back: A `char`, a signed integer type, or an unsigned integer type.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733403803028-->
 END%%
 
 %%ANKI
 Basic
-What type is *usually* given to enumerated-type variables?
-Back: `int`
-Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
-<!--ID: 1730902856922-->
+What is the type given to an enumerated type?
+Back: N/A. This is implementation-defined.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733403803055-->
+END%%
+
+%%ANKI
+Basic
+What restriction is enforced on the implementation-defined enumerated type?
+Back: It must be capable of representing the values of all the members of the `enum`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733403803058-->
 END%%
 
 %%ANKI
 Basic
 What kind of integer expressions are enumeration constants limited to?
 Back: Integer constant expressions with value representable as an `int`.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1727022810827-->
 END%%
 
@@ -1450,23 +1458,23 @@ END%%
 Basic
 Besides being an ICE, what other condition is expected on enumeration constants?
 Back: The ICE evaluates to an integer that fits within an `int`.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1727022810833-->
 END%%
 
 %%ANKI
 Basic
 What mechanism(s) are available for defining constants of type `signed int`?
-Back: `enum`s and macros.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+Back: Macros and (possibly) `enum`s.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1727022810839-->
 END%%
 
 %%ANKI
 Basic
 What mechanism(s) are available for defining constants of type `unsigned int`?
-Back: Macros.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+Back: Macros and (possibly) `enum`s.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1727022810842-->
 END%%
 

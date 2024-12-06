@@ -131,7 +131,152 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1731185808252-->
 END%%
 
+## Translations
+
+There are two kinds of translations that we can do to a graph: **shifting** and **scaling**. A **reflection** is a special case of scaling.
+
+%%ANKI
+Basic
+What are the two kinds of translations that can be done to a graph?
+Back: Shifting and scaling.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520214987-->
+END%%
+
+%%ANKI
+Basic
+Which of the two kinds of translations is reflection a special case of?
+Back: Scaling.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520269110-->
+END%%
+
+### Shifting
+
+A **vertical shift** adds a constant to every $y$-coordinate of a graph, leaving the $x$-coordinate unchanged. A **horizontal shift** adds a constant to every $x$-coordinate of a graph, leaving the $y$-coordinate unchanged.
+
+%%ANKI
+Basic
+What does it mean for a shift of a graph to be rigid?
+Back: A shift does not change the size or shape of the graph.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520214993-->
+END%%
+
+%%ANKI
+Basic
+A {vertical} shift adds a constant to the {$y$}-coordinates of a graph.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520214996-->
+END%%
+
+%%ANKI
+Cloze
+A {horizontal} shift adds a constant to the {$x$}-coordinates of a graph.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520215005-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x)$ be a function and $k$ be a constant. What kind of translation is $f(x + k)$?
+Back: A horizontal shift.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520215013-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x)$ be a function and $k$ be a constant. What kind of translation is $f(x) + k$?
+Back: A vertical shift.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520215016-->
+END%%
+
+%%ANKI
+Cloze
+Let $f(x)$ be a function and $k$ be a constant. $f(x + k)$ horizontally shifts {left} when {$k > 0$}.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520215019-->
+END%%
+
+%%ANKI
+Cloze
+Let $f(x)$ be a function and $k$ be a constant. $f(x) + k$ vertically shifts {down} when {$k < 0$}.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520215023-->
+END%%
+
+%%ANKI
+Cloze
+Let $f(x)$ be a function and $k$ be a constant. $f(x) - k$ vertically shifts {up} when {$k > 0$}.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520215027-->
+END%%
+
+%%ANKI
+Cloze
+Let $f(x)$ be a function and $k$ be a constant. $f(x + k)$ horizontally shifts {right} when {$k < 0$}.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520215031-->
+END%%
+
+%%ANKI
+Basic
+Consider the graph of $f(x)$ below. What does $f(x)$ equal?
+![[abs-right.png]]
+Back: $f(x) = \lvert x - 2 \rvert$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520215034-->
+END%%
+
+%%ANKI
+Basic
+Consider the graph of $f(x)$ below. What does $f(x)$ equal?
+![[abs-left.png]]
+Back: $f(x) = \lvert x + 2 \rvert$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520215040-->
+END%%
+
+%%ANKI
+Basic
+Consider the graph of $f(x)$ below. What does $f(x)$ equal?
+![[abs-up.png]]
+Back: $f(x) = \lvert x \rvert + 2$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520215046-->
+END%%
+
+%%ANKI
+Basic
+Consider the graph of $f(x)$ below. What does $f(x)$ equal?
+![[abs-down.png]]
+Back: $f(x) = \lvert x \rvert - 2$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520215049-->
+END%%
+
+%%ANKI
+Basic
+Consider the graph of $f(x)$ below. What does $f(x)$ equal?
+![[abs-right-down.png]]
+Back: $f(x) = \lvert x - 2 \rvert - 2$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520215053-->
+END%%
+
+%%ANKI
+Basic
+Consider the graph of $f(x)$ below. What does $f(x)$ equal?
+![[abs-left-down.png]]
+Back: $f(x) = \lvert x + 2 \rvert - 2$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733520215056-->
+END%%
+
 ## Bibliography
 
 * “Cartesian Coordinate System,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system](https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system&oldid=1252434514).
+* “James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

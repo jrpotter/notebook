@@ -189,7 +189,7 @@ END%%
 
 ## Finiteness
 
-A set is **finite** if and only if it is equinumerous to some [[natural-numbers|natural number]]. Otherwise it is **infinite**.
+A set is **finite** if and only if it is equinumerous to a [[natural-numbers|natural number]]. Otherwise it is **infinite**.
 
 %%ANKI
 Basic
@@ -242,6 +242,8 @@ END%%
 ### Pigeonhole Principle
 
 No natural number is equinumerous to a proper subset of itself. More generally, no finite set is equinumerous to a proper subset of itself.
+
+Likewise, any set equinumerous to a proper subset of itself must be infinite.
 
 %%ANKI
 Basic
@@ -329,6 +331,108 @@ Let $S$ be a finite set and $f \colon S \rightarrow S$ be surjective. *Why* must
 Back: Otherwise $f$ is a bijection between a proper subset of $S$ and $S$, a contradiction.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1732545231412-->
+END%%
+
+%%ANKI
+Basic
+What does the contrapositive of the pigeonhole principle state?
+Back: Any set equinumerous to a proper subset of itself is infinite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760079-->
+END%%
+
+%%ANKI
+Basic
+What general strategy is used to prove $\omega$ is an infinite set?
+Back: Prove $\omega$ is equinumerous to a proper subset of itself.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760085-->
+END%%
+
+## Cardinal Numbers
+
+A **cardinal number** is a set that is $\mathop{\text{card}} A$ for some set $A$. The set $\mathop{\text{card}} A$ is defined such that
+
+* For any sets $A$ and $B$, $\mathop{\text{card}}A = \mathop{\text{card}}B$ iff $A \approx B$.
+* For a finite set $A$, $\mathop{\text{card}}A$ is the natural number $n$ for which $A \approx n$.
+
+%%ANKI
+Basic
+How is the cardinal number of set $A$ denoted?
+Back: As $\mathop{\text{card}} A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760088-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is finite. What does $\mathop{\text{card}} A$ evaluate to?
+Back: The unique $n \in \omega$ such that $A \approx n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760091-->
+END%%
+
+%%ANKI
+Basic
+Consider $n \in \omega$. What does $\mathop{\text{card}} n$ evaluate to?
+Back: $n$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760094-->
+END%%
+
+%%ANKI
+Basic
+Suppose $a$, $b$, and $c$ are distinct objects. What does $\mathop{\text{card}} \{a, b, c\}$ evaluate to?
+Back: $3$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760097-->
+END%%
+
+%%ANKI
+Basic
+What does Enderton refer to by the "process called 'counting'"?
+Back: Choosing a one-to-one correspondence between two sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760099-->
+END%%
+
+%%ANKI
+Cloze
+A {cardinal number} is a set that is {$\mathop{\text{card}} A$} for some set $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760102-->
+END%%
+
+%%ANKI
+Basic
+How do cardinal numbers relate to equinumerosity?
+Back: For any sets $A$ and $B$, $\mathop{\text{card}} A = \mathop{\text{card}} B$ iff $A \approx B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760105-->
+END%%
+
+%%ANKI
+Basic
+According to Enderton, what is the "essential demand" for defining numbers?
+Back: Defining cardinal numbers such that for any sets $A$ and $B$, $\mathop{\text{card}} A = \mathop{\text{card}} B$ iff $A \approx B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760108-->
+END%%
+
+%%ANKI
+Basic
+What name is given to $\mathop{\text{card}} \omega$?
+Back: $\aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760110-->
+END%%
+
+%%ANKI
+Basic
+Who is attributed the assignment $\mathop{\text{card}} \omega = \aleph_0$?
+Back: Georg Cantor.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760113-->
 END%%
 
 ## Bibliography
