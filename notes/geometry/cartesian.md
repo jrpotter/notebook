@@ -151,9 +151,23 @@ Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” acces
 <!--ID: 1733520269110-->
 END%%
 
+%%ANKI
+Cloze
+{1:Adding} is to {2:shifting} as {2:multiplying} is to {1:scaling}.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558471-->
+END%%
+
+%%ANKI
+Cloze
+{1:Dividing} is to {2:scaling} as {2:subtracting} is to {1:shifting}.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558480-->
+END%%
+
 ### Shifting
 
-A **vertical shift** adds a constant to every $y$-coordinate of a graph, leaving the $x$-coordinate unchanged. A **horizontal shift** adds a constant to every $x$-coordinate of a graph, leaving the $y$-coordinate unchanged.
+A **vertical shift** adds/subtracts a constant to every $y$-coordinate of a graph, leaving the $x$-coordinate unchanged. A **horizontal shift** adds/subtracts a constant to every $x$-coordinate of a graph, leaving the $y$-coordinate unchanged.
 
 %%ANKI
 Basic
@@ -165,16 +179,38 @@ END%%
 
 %%ANKI
 Basic
-A {vertical} shift adds a constant to the {$y$}-coordinates of a graph.
+Which of the two fundamental graph translations is considered "rigid"?
+Back: Shifts.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558483-->
+END%%
+
+%%ANKI
+Basic
+A {vertical} shift adds/subtracts a constant to the {$y$}-coordinates of a graph.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1733520214996-->
 END%%
 
 %%ANKI
 Cloze
-A {horizontal} shift adds a constant to the {$x$}-coordinates of a graph.
+A {horizontal} shift adds/subtracts a constant to the {$x$}-coordinates of a graph.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1733520215005-->
+END%%
+
+%%ANKI
+Cloze
+A {horizontal} shift corresponds to adding/subtracting the {input} of a function.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558486-->
+END%%
+
+%%ANKI
+Cloze
+A {vertical} shift corresponds to adding/subtracting the {output} of a function.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558489-->
 END%%
 
 %%ANKI
@@ -273,6 +309,120 @@ Consider the graph of $f(x)$ below. What does $f(x)$ equal?
 Back: $f(x) = \lvert x + 2 \rvert - 2$
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1733520215056-->
+END%%
+
+### Scaling
+
+A **vertical scaling** will multiply/divide every $y$-coordinate of a graph, leaving the $x$-coordinate unchanged. A **horizontal scaling** will multiply/divide every $x$-coordinate of a graph, leaving the $y$-coordinate unchanged.
+
+Scaling is also known as **stretching** and **compressing**.
+
+%%ANKI
+Basic
+What does it mean for a scaling of a graph to be non-rigid?
+Back: A scaling changes the size and/or shape of the graph.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558492-->
+END%%
+
+%%ANKI
+Basic
+A {vertical} scaling multiplies/divides the {$y$}-coordinates of a graph.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558496-->
+END%%
+
+%%ANKI
+Cloze
+A {horizontal} scaling multiplies/divides the {$x$}-coordinates of a graph.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558499-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x)$ be a function and $k$ be a constant. What kind of translation is $kf(x)$?
+Back: A vertical scaling.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558503-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x)$ be a function and $k$ be a constant. What kind of translation is $f(kx)$?
+Back: A horizontal scaling.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558507-->
+END%%
+
+%%ANKI
+Cloze
+A {vertical} scaling corresponds to multiplying/dividing the {output} of a function.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558513-->
+END%%
+
+%%ANKI
+Cloze
+A {horizontal} scaling corresponds to multiplying/dividing the {input} of a function.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558519-->
+END%%
+
+%%ANKI
+Cloze
+Let $f(x)$ be a function and $k$ be a constant. $f(kx)$ is horizontally {stretched} when {$0 < \lvert k \rvert < 1$}.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558523-->
+END%%
+
+%%ANKI
+Cloze
+Let $f(x)$ be a function and $k$ be a constant. $kf(x)$ is vertically {stretched} when {$\lvert k \rvert > 1$}.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558528-->
+END%%
+
+%%ANKI
+Cloze
+Let $f(x)$ be a function and $k$ be a constant. $kf(x)$ is vertically {compressed} when {$0 < \lvert k \rvert < 1$}.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558532-->
+END%%
+
+%%ANKI
+Cloze
+Let $f(x)$ be a function and $k$ be a constant. $f(kx)$ is horizontally {compressed} when {$\lvert k \rvert > 1$}.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558536-->
+END%%
+
+%%ANKI
+Cloze
+Let $f(t)$ be a function of time. Vertically compressing $f(t)$ means it takes {more} time to reach a value.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558540-->
+END%%
+
+%%ANKI
+Cloze
+Let $f(t)$ be a function of time. Horizontally compressing $f(t)$ means it takes {less} time to reach a value.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558545-->
+END%%
+
+%%ANKI
+Cloze
+Let $f(t)$ be a function of time. Vertically stretching $f(t)$ means it takes {less} time to reach a value.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558550-->
+END%%
+
+%%ANKI
+Cloze
+Let $f(t)$ be a function of time. Horizontally stretching $f(t)$ means it takes {more} time to reach a value.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1733522558555-->
 END%%
 
 ## Bibliography
