@@ -189,6 +189,98 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1732381333365-->
 END%%
 
+This property lets us prove $\varnothing$ is measurable with the expected area: $$a(\varnothing) = a(T - T) = a(T) - a(T) = 0$$
+
+%%ANKI
+Basic
+Is the empty set considered measurable?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734013716384-->
+END%%
+
+%%ANKI
+Basic
+Which axiom of area is used to prove $\varnothing$ is measurable?
+Back: The difference property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734013716403-->
+END%%
+
+%%ANKI
+Basic
+What does $a(\varnothing)$ evaluate to?
+Back: $0$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734013716406-->
+END%%
+
+%%ANKI
+Basic
+What chain of equalities is used to prove that $a(\varnothing) = 0$?
+Back: For any $T \in \mathscr{M}$, $a(\varnothing) = a(T - T) = a(T) - a(T) = 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734013716410-->
+END%%
+
+This property also lets us state the **monotone property**: $$\forall S, T \in \mathscr{M}, S \subseteq T \Rightarrow a(S) \leq a(T)$$
+
+%%ANKI
+Basic
+What does the monotone property of area state in FOL?
+Back: $\forall S, T \in \mathscr{M}, S \subseteq T \Rightarrow a(S) \leq a(T)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734013716414-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following property? $$\forall S, T \in \mathscr{M}, S \subseteq T \Rightarrow a(S) \leq a(T)$$
+Back: The monotone property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734013767208-->
+END%%
+
+%%ANKI
+Basic
+Which axiom(s) of area are used to prove the monotone property?
+Back: The nonnegative and difference properties.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734013716417-->
+END%%
+
+%%ANKI
+Basic
+Let $S, T \in \mathscr{M}$ such that $S \subseteq T$. Why is the difference property needed to show $a(T - S) \geq 0$?
+Back: It states $T - S$ is measurable.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734013716421-->
+END%%
+
+%%ANKI
+Basic
+Let $S, T \in \mathscr{M}$ such that $S \subseteq T$. Why is the difference property needed to show $a(S - T) \geq 0$?
+Back: N/A. The difference property says nothing about $S - T$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734013716426-->
+END%%
+
+%%ANKI
+Basic
+Let $S, T \in \mathscr{M}$ such that $T \subseteq S$. Why is the difference property needed to show $a(S - T) \geq 0$?
+Back: It states $S - T$ is measurable.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734013716430-->
+END%%
+
+%%ANKI
+Basic
+Let $S, T \in \mathscr{M}$ such that $S \subseteq T$. Why is the nonnegative property needed to show $a(T - S) \geq 0$?
+Back: It states the area of any measurable set is $\geq 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734013716434-->
+END%%
+
 ### Invariance Under Congruence
 
 If $S \in \mathscr{M}$ and $T$ is congruent to $S$, then $T \in \mathscr{M}$ and $a(S) = a(T)$.

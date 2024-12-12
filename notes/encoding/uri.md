@@ -3,7 +3,6 @@ title: Uniform Resource Identifiers
 TARGET DECK: Obsidian::STEM
 FILE TAGS: uri
 tags:
-  - rdf
   - uri
 ---
 

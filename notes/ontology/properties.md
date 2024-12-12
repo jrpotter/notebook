@@ -1,7 +1,7 @@
 ---
 title: Properties
 TARGET DECK: Obsidian::H&SS
-FILE TAGS: ontology::philosophy
+FILE TAGS: ontology
 tags:
   - ontology
 ---

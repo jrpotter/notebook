@@ -1,9 +1,8 @@
 ---
 title: RDF
 TARGET DECK: Obsidian::STEM
-FILE TAGS: ontology::rdf
+FILE TAGS: rdf
 tags:
-  - ontology
   - rdf
 ---
 
