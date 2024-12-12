@@ -15,7 +15,7 @@ tags:
 %%ANKI
 Basic
 Who is the author of "The Science of Programming"?
-Back: David Gries
+Back: David Gries.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1706994861286-->
 END%%

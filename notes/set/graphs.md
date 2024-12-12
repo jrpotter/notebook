@@ -1064,7 +1064,7 @@ END%%
 %%ANKI
 Basic
 In an undirected graph, when is $\langle v_0, v_1, \ldots, v_k \rangle$ considered a non-trivial cycle?
-Back: When $v_0 = v_k$, $k > 0$, and all edges in the path are distinct.
+Back: When the tuple forms a path satisfying $v_0 = v_k$ for some $k > 0$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788428-->
 END%%

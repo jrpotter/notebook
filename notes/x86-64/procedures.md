@@ -37,7 +37,7 @@ END%%
 
 %%ANKI
 Basic
-What instructions are used to store and retrieve from the x86-64 stack?
+What two instructions are used to adjust the top of the x86-64 stack?
 Back: `pushq` and `popq`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1728480337614-->

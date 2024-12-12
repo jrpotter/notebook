@@ -1259,7 +1259,7 @@ END%%
 %%ANKI
 Basic
 Can a relation be both reflexive and trichotomous?
-Back: Yes.
+Back: Yes, the empty relation.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1723245187621-->
 END%%

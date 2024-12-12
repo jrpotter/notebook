@@ -660,20 +660,6 @@ Reference: https://stackoverflow.com/a/17371914
 <!--ID: 1733144155076-->
 END%%
 
-%%ANKI
-Basic
-How can we rewrite the following with as few `*`s as possible?
-```c
-int sum2d(int, int, int a[*][*]);
-```
-Back:
-```c
-int sum2d(int, int, int a[][*]);
-```
-Reference: https://stackoverflow.com/a/17371914
-<!--ID: 1733144155079-->
-END%%
-
 ## Bibliography
 
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).

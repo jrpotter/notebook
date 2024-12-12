@@ -36,7 +36,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose there exists a one-to-one function $F$ from $A$ into $B$. When is $A \approx B$?
+Suppose there exists a one-to-one function $F$ from $A$ into $B$. When does this imply $A \approx B$?
 Back: When $F$ is also onto $B$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1732295060358-->
@@ -44,7 +44,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose there exists a function $F$ from $A$ onto $B$. When is $A \approx B$?
+Suppose there exists a function $F$ from $A$ onto $B$. When does this imply $A \approx B$?
 Back: When $F$ is also one-to-one.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1732295060362-->
@@ -52,7 +52,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose there exists a one-to-one function $F$ from $A$ onto $B$. When is $A \approx B$?
+Suppose there exists a one-to-one function $F$ from $A$ onto $B$. When does this imply $A \approx B$?
 Back: Always, by definition.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1732295060366-->
@@ -433,6 +433,321 @@ Who is attributed the assignment $\mathop{\text{card}} \omega = \aleph_0$?
 Back: Georg Cantor.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733407760113-->
+END%%
+
+If one set $A$ of cardinality $\kappa$ is finite, then all of them are. In this case $\kappa$ is a **finite cardinal**. Otherwise $\kappa$ is an **infinite cardinal**.
+
+%%ANKI
+Basic
+How many sets $A$ exist such that $\mathop{\text{card}} A = 0$?
+Back: $1$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315442-->
+END%%
+
+%%ANKI
+Basic
+How many sets $A$ exist such that $\mathop{\text{card}} A = n^+$ for some $n \in \omega$?
+Back: An infinite many.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315447-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \omega$. When is $\{X \mid \mathop{\text{card}} X = n\}$ a set?
+Back: When $n = 0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315450-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \omega$. When is $\{X \mid \mathop{\text{card}} X = n\}$ a class?
+Back: Always.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315453-->
+END%%
+
+%%ANKI
+Basic
+What class can we construct to prove $\{X \mid \mathop{\text{card}} X = 1\}$ is not a set?
+Back: $\bigcup\, \{\{X\} \mid X \text{ is a set} \}$, i.e. the union of all singleton sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315456-->
+END%%
+
+%%ANKI
+Basic
+What is a finite cardinal?
+Back: A cardinal number equal to $\mathop{\text{card}} A$ for some finite set $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315459-->
+END%%
+
+%%ANKI
+Basic
+What is an infinite cardinal?
+Back: A cardinal number equal to $\mathop{\text{card}} A$ for some infinite set $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315461-->
+END%%
+
+%%ANKI
+Basic
+The finite cardinals are exactly what more basic set?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315464-->
+END%%
+
+%%ANKI
+Basic
+What set does $\aleph_0$ refer to?
+Back: $\mathop{\text{card}} \omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315466-->
+END%%
+
+%%ANKI
+Basic
+What is the "smallest" infinite cardinal?
+Back: $\aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315469-->
+END%%
+
+%%ANKI
+Basic
+Let $C \subseteq A$ where $A \approx n$ for some $n \in \omega$. What does $\mathop{\text{card}} C$ evaluate to?
+Back: A natural number $m$ such that $m \underline{\in} n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315471-->
+END%%
+
+%%ANKI
+Basic
+Let $C \subset A$ where $A \approx n$ for some $n \in \omega$. What does $\mathop{\text{card}} C$ evaluate to?
+Back: A natural number $m$ such that $m \in n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315474-->
+END%%
+
+%%ANKI
+Basic
+How is proposition "any subset of a finite set is finite" expressed in FOL?
+Back: $\forall n \in \omega, \forall A \approx n, \forall B \subseteq A, \exists m \in n, B \approx m$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315477-->
+END%%
+
+%%ANKI
+Basic
+How is the following more succinctly stated? $$\forall n \in \omega, \forall A \approx n, \forall B \subseteq A, \exists m \in n, B \approx m$$
+Back: Any subset of a finite set is finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315479-->
+END%%
+
+%%ANKI
+Basic
+Suppose sets $A$ and $B$ are finite. When is $A \cup B$ infinite?
+Back: The union of two finite sets is always finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675522739-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. What is the largest value $\mathop{\text{card}}(A \cup B)$ can evaluate to?
+Back: $m + n$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785274-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. What is the smallest value $\mathop{\text{card}}(A \cup B)$ can evaluate to?
+Back: $\mathop{\text{max}}(m, n)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785281-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. When does $\mathop{\text{card}}(A \cup B) = m + n$?
+Back: When $A$ and $B$ are disjoint.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785284-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. When does $\mathop{\text{card}}(A \cup B) = m$?
+Back: When $B \subseteq A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785287-->
+END%%
+
+%%ANKI
+Basic
+Suppose sets $A$ and $B$ are finite. When is $A \cap B$ finite?
+Back: The intersection of two finite sets is always finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675522748-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. What is the largest value $\mathop{\text{card}}(A \cap B)$ can evaluate to?
+Back: $\mathop{\text{min}}(m, n)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785290-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. What is the smallest value $\mathop{\text{card}}(A \cap B)$ can evaluate to?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785292-->
+END%%
+
+%%ANKI
+Basic
+Suppose sets $A$ and $B$ are finite. When is $A \times B$ finite?
+Back: The Cartesian product of two finite sets is always finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675522751-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$ such that $A \approx m$ and $B \approx n$. What does $\mathop{\text{card}}(A \times B)$ evaluate to?
+Back: $m \cdot n$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785295-->
+END%%
+
+### Addition
+
+Let $\kappa$ and $\lambda$ be any cardinal numbers. Then $\kappa + \lambda = \mathop{\text{card}}(K \cup L)$, where $K$ and $L$ are any disjoint sets of cardinality $\kappa$ and $\lambda$, respectively.
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be any cardinal numbers. How is $\kappa + \lambda$ defined?
+Back: As $\mathop{\text{card}}(K \cup L)$ where $K$ and $L$ are disjoint sets with cardinality $\kappa$ and $\lambda$, respectively.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710439132-->
+END%%
+
+%%ANKI
+Basic
+Let $K$ and $L$ be sets. How is $\mathop{\text{card}}(K \cup L)$ expressed in terms of cardinal numbers?
+Back: N/A. $K$ and $L$ must be *disjoint* sets for this to make sense.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710439139-->
+END%%
+
+%%ANKI
+Basic
+Let $K$ and $L$ be disjoint sets. How is $\mathop{\text{card}}(K \cup L)$ expressed in terms of cardinal numbers?
+Back: As $\kappa + \lambda$ where $\kappa = \mathop{\text{card}} K$ and $\lambda = \mathop{\text{card}} L$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710439142-->
+END%%
+
+%%ANKI
+Basic
+Let $K \approx \kappa$ and $L \approx \lambda$. What is necessary for $\mathop{\text{card}}(K \cup L) \approx \kappa + \lambda$?
+Back: That $K$ and $L$ are disjoint.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710439146-->
+END%%
+
+%%ANKI
+Cloze
+{Addition} of cardinal numbers is defined in terms of the {union} of sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710439150-->
+END%%
+
+### Multiplication
+
+Let $\kappa$ and $\lambda$ be any cardinal numbers. Then $\kappa \cdot \lambda = \mathop{\text{card}}(K \times L)$, where $K$ and $L$ are any sets of cardinality $\kappa$ and $\lambda$, respectively.
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be any cardinal numbers. How is $\kappa \cdot \lambda$ defined?
+Back: As $\mathop{\text{card}}(K \times L)$ where $K$ and $L$ are sets with cardinality $\kappa$ and $\lambda$, respectively.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710439153-->
+END%%
+
+%%ANKI
+Basic
+Let $K$ and $L$ be sets. How is $\mathop{\text{card}}(K \times L)$ expressed in terms of cardinal numbers?
+Back: As $\kappa \cdot \lambda$ where $\kappa = \mathop{\text{card}} K$ and $\lambda = \mathop{\text{card}} L$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710439156-->
+END%%
+
+%%ANKI
+Basic
+Let $K \approx \kappa$ and $L \approx \lambda$. What is necessary for $\mathop{\text{card}}(K \times L) \approx \kappa \cdot \lambda$?
+Back: N/A. This is true by definition.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710439159-->
+END%%
+
+%%ANKI
+Cloze
+{Multiplication} of cardinal numbers is defined in terms of the {Cartesian product} of sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710439162-->
+END%%
+
+### Exponentiation
+
+Let $\kappa$ and $\lambda$ be any cardinal numbers. Then $\kappa^\lambda = \mathop{\text{card}}(^LK)$, where $K$ and $L$ are any sets of cardinality $\kappa$ and $\lambda$, respectively.
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be any cardinal numbers. How is $\kappa^\lambda$ defined?
+Back: As $\mathop{\text{card}}(^LK)$ where $K$ and $L$ are sets with cardinality $\kappa$ and $\lambda$, respectively.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710439165-->
+END%%
+
+%%ANKI
+Basic
+Let $K$ and $L$ be sets. How is $\mathop{\text{card}}(^LK)$ expressed in terms of cardinal numbers?
+Back: As $\kappa^\lambda$ where $\kappa = \mathop{\text{card}} K$ and $\lambda = \mathop{\text{card}} L$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710439168-->
+END%%
+
+%%ANKI
+Basic
+Let $K$ and $L$ be sets. How is $\mathop{\text{card}}(^KL)$ expressed in terms of cardinal numbers?
+Back: As $\lambda^\kappa$ where $\kappa = \mathop{\text{card}} K$ and $\lambda = \mathop{\text{card}} L$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710755119-->
+END%%
+
+%%ANKI
+Basic
+Let $K \approx \kappa$ and $L \approx \lambda$. What is necessary for $\mathop{\text{card}}(^LK) \approx \kappa^\lambda$?
+Back: N/A. This is true by definition.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710439171-->
+END%%
+
+%%ANKI
+Cloze
+{Exponentiation} of cardinal numbers is defined in terms of the {set of functions} between sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733710439174-->
 END%%
 
 ## Bibliography

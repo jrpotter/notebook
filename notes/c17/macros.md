@@ -99,7 +99,7 @@ END%%
 %%ANKI
 Basic
 Why aren't compound literals suitable for ICE?
-Back: They are objects, not constants.
+Back: Compound literals are objects, not constants.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727432419498-->
 END%%
@@ -173,7 +173,7 @@ END%%
 %%ANKI
 Basic
 What does the `#` operator do?
-Back: Stringify arguments.
+Back: Stringifies arguments.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1733308613469-->
 END%%
@@ -232,7 +232,7 @@ END%%
 Basic
 Given the following translation unit, what is output to `stdout`?
 ```c
-#define foo(T, U) #T
+#define foo(T) #T
 
 int main(void) { printf("%d\n", foo(123)); }
 ```

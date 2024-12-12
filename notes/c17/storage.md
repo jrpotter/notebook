@@ -73,7 +73,7 @@ END%%
 
 %%ANKI
 Basic
-When; does an object whose identifier has external linkage have a static storage duration?
+When does an object whose identifier has external linkage have a static storage duration?
 Back: When the identifier is declared without storage-class specifier `_Thread_local`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733060664884-->
@@ -81,7 +81,7 @@ END%%
 
 %%ANKI
 Basic
-When; does an object whose identifier has external linkage have a thread storage duration?
+When does an object whose identifier has external linkage have a thread storage duration?
 Back: When the identifier is declared with storage-class specifier `_Thread_local`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733060664888-->
@@ -298,7 +298,7 @@ END%%
 %%ANKI
 Basic
 Which storage class specifier(s) can be used to declare an object with automatic storage duration?
-Back: `auto`
+Back: `auto` and {`register`}.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733064332819-->
 END%%
@@ -694,7 +694,7 @@ END%%
 
 %%ANKI
 Basic
-Variables declared with storage-class specifier can't alias?
+Variables declared with what storage-class specifier can't alias?
 Back: `register`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1733242332404-->

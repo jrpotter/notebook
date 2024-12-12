@@ -581,7 +581,7 @@ END%%
 %%ANKI
 Basic
 Consider closed hashing in a table of $m$ slots. What is the hash function's domain?
-Back: Given universe of keys $U$, $U \times \{0, 1, \ldots, m\}$.
+Back: Given universe of keys $U$, $U \times \{0, 1, \ldots, m - 1\}$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1722081955442-->
 END%%

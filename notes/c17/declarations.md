@@ -18,11 +18,11 @@ C declarations were designed so that the declaration of an object looks like the
 
 %%ANKI
 Basic
-Consider the following translation unit. What does the declaration refer to?
+Which parts of the following translation unit are declarations?
 ```c
 extern const int x, y;
 ```
-Back: The entire line.
+Back: The entire line is a single declaration.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733401142066-->
 END%%
@@ -40,7 +40,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. What does the declaration refer to?
+Which parts of the following translation unit are declarations?
 ```c
 int* a, b;
 ```

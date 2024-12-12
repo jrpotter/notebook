@@ -745,7 +745,7 @@ END%%
 
 %%ANKI
 Basic
-Is the following considered a direct or indirect jump?
+Is the following considered a direct or indirect jump instruction?
 ```x86
 jmp *(%rax)
 ```
@@ -756,7 +756,7 @@ END%%
 
 %%ANKI
 Basic
-Is the following considered a direct or indirect jump?
+Is the following considered a direct or indirect jump instruction?
 ```x86
 jmp .L1
 ```
@@ -767,7 +767,7 @@ END%%
 
 %%ANKI
 Basic
-Is the following considered a direct or indirect jump?
+Is the following considered a direct or indirect jump instruction?
 ```x86
 jmp *%rax
 ```
@@ -778,7 +778,7 @@ END%%
 
 %%ANKI
 Basic
-Is the following considered a direct or indirect jump?
+Is the following considered a direct or indirect jump instruction?
 ```x86
 jg *%rax
 ```

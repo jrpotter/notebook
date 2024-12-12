@@ -538,14 +538,6 @@ END%%
 
 %%ANKI
 Basic
-When is variable $x$ in term $P$ said to be "free and binding"?
-Back: N/A.
-Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
-<!--ID: 1716745016014-->
-END%%
-
-%%ANKI
-Basic
 When is variable $x$ in term $P$ said to be "bound" and "free"?
 Back: When one occurrence is bound and another occurrence is free.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).

@@ -9,8 +9,6 @@ tags:
 
 ## Overview
 
-This is an overview of specific POSIX signals.
-
 Code  | Name
 ----- | --------------
 1     | SIGHUP
@@ -23,8 +21,6 @@ Code  | Name
 11    | SIGSEGV
 13    | SIGPIPE
 15    | SIGTERM
-
-## Details
 
 %%ANKI
 Basic
@@ -50,7 +46,15 @@ Reference: Cooper, Mendel. “Advanced Bash-Scripting Guide,” n.d., 916.
 <!--ID: 1708265979304-->
 END%%
 
-### SIGHUP (1)
+%%ANKI
+Basic
+What does it mean for a program to (perform a) trap?
+Back: It is terminated abruptly before its usual end.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727433781278-->
+END%%
+
+## SIGHUP (1)
 
 A process receives a `SIGHUP` signal when the terminal it is attached to goes away before it finishes executing.
 
@@ -129,7 +133,7 @@ Reference: `man 1 ps`
 <!--ID: 1706670390919-->
 END%%
 
-### SIGINT (2)
+## SIGINT (2)
 
 Indicates the process was interrupted by the user. Happens when pressing `Ctrl-C` from the controlling terminal.
 
@@ -156,7 +160,7 @@ Reference: Dowling, “A List of Signals and What They Mean.”
 <!--ID: 1706815743870-->
 END%%
 
-### SIGILL (4)
+## SIGILL (4)
 
 Indicates the CPU encountered an instruction it does not understand or does not have permission to execute. Can often indicate corruption in some way or perhaps an attempt to execute data instead of code.
 
@@ -199,7 +203,7 @@ Reference: Dowling, “A List of Signals and What They Mean.”
 <!--ID: 1708812571668-->
 END%%
 
-### SIGABRT (6)
+## SIGABRT (6)
 
 A signal, usually sent when the process itself invokes `abort()`. Indicates an "emergency stop".
 
@@ -221,7 +225,7 @@ END%%
 
 %%ANKI
 Basic
-What signal corresponds to the idea of an "emergency stop"?
+Which signal corresponds to the idea of an "emergency stop"?
 Back: `SIGABRT`
 Reference: Dowling, “A List of Signals and What They Mean.”
 <!--ID: 1709131892342-->
@@ -245,12 +249,39 @@ Tags: c17
 <!--ID: 1709131892349-->
 END%%
 
+## SIGBUS (7)
+
+Indicates the CPU encountered an instruction to access memory it cannot physically address, i.e. an invalid address for the address bus.
+
+%%ANKI
+Cloze
+Signal {`SIGBUS`} corresponds to number {7}.
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1733839282847-->
+END%%
+
 %%ANKI
 Basic
-What does it mean for a program to (perform a) trap?
-Back: It is terminated abruptly before its usual end.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727433781278-->
+Which signal usually corresponds to alignment errors when accessing memory?
+Back: `SIGBUS`
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1733839282851-->
+END%%
+
+%%ANKI
+Basic
+When does the CPU emit a `SIGBUS` signal?
+Back: When it tries accessing memory it cannot physically address.
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1733839282854-->
+END%%
+
+%%ANKI
+Basic
+What is the `BUS` in `SIGBUS` short for?
+Back: **Bus** error.
+Reference: Dowling, “A List of Signals and What They Mean.”
+<!--ID: 1733839282857-->
 END%%
 
 ## Bibliography

@@ -426,7 +426,289 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1732622657269-->
 END%%
 
+## Compilation
+
+Most compilation systems provide a **compiler driver** that invokes a **preprocessor**, **compiler**, **assembler**, and [[linkers/static|linker]]:
+
+1. The C preprocessor (e.g. `cpp`) translates C source files (`.h` and `.c`) into ASCII intermediate files (`.i`).
+2. The C compiler (e.g. `cc1`) translates intermediate files into ASCII assembly-language files (`.s`).
+3. The assembler translates assembly-language files into **relocatable object** files (`.o`).
+4. The linker bundles all relocatable object files and produces an **executable object** file.
+
+%%ANKI
+Basic
+The compiler driver usually consists of what four programs?
+Back: The preprocessor, compiler, assembler, and linker.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099482-->
+END%%
+
+%%ANKI
+Basic
+The term "C compiler" usually refers to what more accurate term?
+Back: A compiler driver.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607180457-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, what kind of file typically has a `.h` extension?
+Back: C header files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099489-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, what kind of file typically has a `.c` extension?
+Back: C translation units.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099492-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, what kind of file typically has a `.i` extension?
+Back: ASCII intermediate files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099495-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, what kind of file typically has a `.s` extension?
+Back: ASCII assembly-language files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099498-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, what kind of file typically has a `.o` extension?
+Back: Relocatable object files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099501-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, a C preprocessor usually inputs files with what extension(s)?
+Back: `.h` and `.c`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099505-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, a C preprocessor usually outputs files with what extension(s)?
+Back: `.i`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099508-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, a C compiler (not compiler driver) usually inputs files with what extension(s)?
+Back: `.i`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099511-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, a C compiler (not compiler driver) usually outputs files with what extension(s)?
+Back: `.s`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099514-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, an assembler usually inputs files with what extension(s)?
+Back: `.s`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099518-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, an assembler usually outputs files with what extension(s)?
+Back: `.o`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099521-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, a linker usually inputs files with what extension(s)?
+Back: `.o`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099525-->
+END%%
+
+%%ANKI
+Basic
+What ambiguity exists when discussing the C compiler?
+Back: We could refer to the compiler (e.g. `cc1`) or the compiler driver.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099533-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, what kind of file does a linker usually input?
+Back: Relocatable object files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099537-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, what kind of file does a linker usually output?
+Back: Executable object files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099540-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, what kind of file does an assembler usually input?
+Back: ASCII assembly-language files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099544-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, what kind of file does an assembler usually output?
+Back: Relocatable object files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099547-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, what kind of file does a C preprocessor usually input?
+Back: C source files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099551-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, what kind of file does a C preprocessor usually output?
+Back: ASCII intermediate files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099555-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, what kind of file does a C compiler (not compiler driver) usually input?
+Back: ASCII intermediate files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099560-->
+END%%
+
+%%ANKI
+Basic
+On Unix systems, what kind of file does a C compiler (not compiler driver) usually output?
+Back: ASCII assembly-language files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099566-->
+END%%
+
+%%ANKI
+Basic
+Which component of a compiler driver produces ASCII intermediate files?
+Back: The preprocessor.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099570-->
+END%%
+
+%%ANKI
+Basic
+Which component of a compiler driver produces an executable object file?
+Back: The linker.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099576-->
+END%%
+
+%%ANKI
+Basic
+Which component of a compiler driver produces ASCII assembly-language files?
+Back: The compiler.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099581-->
+END%%
+
+%%ANKI
+Basic
+Which component of a compiler driver produces ASCII relocatable object files?
+Back: The assembler.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099587-->
+END%%
+
+The operating system provides a function called the **loader** that copies the code and data of the executable object file into memory, and then transfers control to the beginning of the program.
+
+%%ANKI
+Basic
+What function does the OS provider to run an executable object file?
+Back: The loader.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099593-->
+END%%
+
+%%ANKI
+Basic
+What kind of file does a loader usually input?
+Back: An executable object file.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099598-->
+END%%
+
+%%ANKI
+Cloze
+The loader copies {code and data} from an {executable object file} into {memory}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099604-->
+END%%
+
+%%ANKI
+Basic
+The loader copies code and data from what kind of file?
+Back: An executable object file.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099609-->
+END%%
+
+%%ANKI
+Basic
+The loader copies code and data into what?
+Back: Memory.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099614-->
+END%%
+
+%%ANKI
+Cloze
+The loader transfers {control} to the {beginning of a loaded program}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099619-->
+END%%
+
+%%ANKI
+Basic
+At a high-level, the loader is responsible for performing what two actions?
+Back: Copying code/data and beginning program execution.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733607099625-->
+END%%
+
 ## Bibliography
 
+* Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
