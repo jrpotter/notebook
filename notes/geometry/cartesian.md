@@ -186,10 +186,10 @@ Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” acces
 END%%
 
 %%ANKI
-Basic
+Cloze
 A {vertical} shift adds/subtracts a constant to the {$y$}-coordinates of a graph.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
-<!--ID: 1733520214996-->
+<!--ID: 1734278286937-->
 END%%
 
 %%ANKI
@@ -245,7 +245,7 @@ END%%
 
 %%ANKI
 Cloze
-Let $f(x)$ be a function and $k$ be a constant. $f(x) - k$ vertically shifts {up} when {$k > 0$}.
+Let $f(x)$ be a function and $k$ be a constant. $f(x) + k$ vertically shifts {up} when {$k > 0$}.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1733520215027-->
 END%%

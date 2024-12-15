@@ -182,7 +182,7 @@ END%%
 %%ANKI
 Basic
 What floating point encoding is guaranteed by the C standard?
-Back: N/A
+Back: N/A.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1710556914961-->

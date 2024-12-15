@@ -1440,7 +1440,7 @@ END%%
 
 %%ANKI
 Basic
-What restriction is enforced on the implementation-defined enumerated type?
+What size restriction is enforced on the implementation-defined enumerated type?
 Back: It must be capable of representing the values of all the members of the `enum`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733403803058-->

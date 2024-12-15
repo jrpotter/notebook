@@ -432,7 +432,7 @@ END%%
 
 %%ANKI
 Basic
-How many valid prototypes of `main` are available?
+How many possible valid prototypes of `main` are available?
 Back: Indeterminate. Depends on the system.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415798-->

@@ -398,7 +398,7 @@ END%%
 
 %%ANKI
 Cloze
-A {cardinal number} is a set that is {$\mathop{\text{card}} A$} for some set $A$.
+A {cardinal number} is a set that is {$\mathop{\text{card} } A$} for some set $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733407760102-->
 END%%
@@ -413,7 +413,7 @@ END%%
 
 %%ANKI
 Basic
-According to Enderton, what is the "essential demand" for defining numbers?
+According to Enderton, what is the "essential demand" for defining cardinal numbers?
 Back: Defining cardinal numbers such that for any sets $A$ and $B$, $\mathop{\text{card}} A = \mathop{\text{card}} B$ iff $A \approx B$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733407760108-->

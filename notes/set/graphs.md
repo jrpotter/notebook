@@ -831,7 +831,7 @@ END%%
 
 %%ANKI
 Basic
-What path must exist in a digraph where vertex $u$ is adjacent to vertex $v$?
+What edge must exist in a digraph where vertex $u$ is adjacent to vertex $v$?
 Back: $\langle v, u \rangle$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788383-->
