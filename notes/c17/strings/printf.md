@@ -1,77 +1,13 @@
 ---
-title: Strings
+title: printf
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17
+FILE TAGS: c17::printf
 tags:
   - c17
+  - printf
 ---
 
 ## Overview
-
-A contiguous sequence of characters terminated by the `NUL` character (refer to [[ascii|ASCII]]). Text data is said to be more platform-independent than [[endianness|binary]] data since it is unaffected by word size or byte ordering.
-
-%%ANKI
-Basic
-What is a C-style string?
-Back: A character array terminated with a `NUL` character.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707758281264-->
-END%%
-
-%%ANKI
-Basic
-What character terminates all C-style strings?
-Back: `NUL`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707758281266-->
-END%%
-
-%%ANKI
-Basic
-What is the decimal value of `NUL` in ASCII encoding?
-Back: `0`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707758281268-->
-END%%
-
-%%ANKI
-Basic
-Text is more platform-independent than e.g. integer encodings because it is unaffected by what two properties?
-Back: Word size and byte ordering.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707758281270-->
-END%%
-
-%%ANKI
-Basic
-What kind of array can be expressed as a literal?
-Back: Strings.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1728244147668-->
-END%%
-
-%%ANKI
-Cloze
-A {string} is a {`NUL`}-terminated array of {`char`}.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1728244147671-->
-END%%
-
-%%ANKI
-Cloze
-`<string.h>` uses prefix {`mem`} to refer to {array} arguments.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1728244147673-->
-END%%
-
-%%ANKI
-Cloze
-`<string.h>` uses prefix {`str`} to refer to {string} arguments.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1728244147676-->
-END%%
-
-## `printf`
 
 The syntax for the format placeholder is `%[flags][width][.precision][length]specifier`.
 
@@ -80,7 +16,6 @@ Basic
 What four optional parts make up a `printf` argument?
 Back: Flags, width, precision, and length.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708974221761-->
 END%%
 
@@ -89,7 +24,6 @@ Basic
 What is the purpose of the width field in a `printf` argument?
 Back: It specifies a minimum number of characters to ouput.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1732285301746-->
 END%%
 
@@ -98,7 +32,6 @@ Basic
 What is the purpose of the precision field in a `printf` argument?
 Back: It specifies the maximum limit on the output, depending on the argument type.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1732285301754-->
 END%%
 
@@ -107,7 +40,6 @@ Basic
 What is the purpose of the length field in a `printf` argument?
 Back: It specifies the size of the `printf` argument before default promotion.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1732285301762-->
 END%%
 
@@ -116,7 +48,6 @@ Basic
 Which header file contains basic `printf` functionality?
 Back: `<stdio.h>`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708384441467-->
 END%%
 
@@ -124,7 +55,6 @@ END%%
 Cloze
 {1:`width`} specifies a {2:minimum} while {2:`precision`} specifies a {1:maximum}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708384441472-->
 END%%
 
@@ -132,11 +62,10 @@ END%%
 Cloze
 The {1:`width`} and {1:`precision`} fields are output related whereas the {2:`length`} field is input related.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708425941269-->
 END%%
 
-### Flags
+## Flags
 
 | Flag | Description                                                                                                                                                                                                                 |
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -150,7 +79,6 @@ END%%
 Cloze
 The {`-`} flag {left-aligns} the output.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707918756812-->
 END%%
 
@@ -159,7 +87,6 @@ Basic
 What is the output of `printf("%-2d abc", 100)`?
 Back: `100␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708384441477-->
 END%%
 
@@ -168,7 +95,6 @@ Basic
 What is the output of `printf("%-4d abc", 100)`?
 Back: `100␣␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708384441481-->
 END%%
 
@@ -177,7 +103,6 @@ Basic
 What is the output of `printf("%.4d abc", 100)`?
 Back: `0100␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708384441486-->
 END%%
 
@@ -186,7 +111,6 @@ Basic
 What is the output of `printf("%04d abc", 100)`?
 Back: `0100␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708384441491-->
 END%%
 
@@ -195,7 +119,6 @@ Basic
 What is the output of `printf("%.4s abc", "efg")`?
 Back: `efg␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708384441495-->
 END%%
 
@@ -204,7 +127,6 @@ Basic
 What is the output of `printf("%.2s abc", "efg")`?
 Back: `ef␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708384441499-->
 END%%
 
@@ -213,7 +135,6 @@ Basic
 What is the output of `printf("%.2f abc", 0.01234)`?
 Back: `0.01␣abc`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708384441503-->
 END%%
 
@@ -222,7 +143,6 @@ Basic
 How does the precision field affect `"%s"` parameters?
 Back: Strings are truncated if longer than the specified precision.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708384441507-->
 END%%
 
@@ -231,7 +151,6 @@ Basic
 How does the precision field affect `"%f"` parameters?
 Back: Decimal values are truncated if longer than the specified precision.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708384441511-->
 END%%
 
@@ -240,7 +159,6 @@ Basic
 What does a negative width field value indicate?
 Back: This is actually a positive width with a `-` (left-align) flag.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708384441515-->
 END%%
 
@@ -249,7 +167,6 @@ Basic
 The `-` `printf` flag overrides what default behavior?
 Back: Output is right-aligned by default.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707918756840-->
 END%%
 
@@ -257,7 +174,6 @@ END%%
 Cloze
 The {`+`} `printf` flag {prepends a plus for positive signed-numeric types}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707918756846-->
 END%%
 
@@ -266,7 +182,6 @@ Basic
 The `+` `printf` flag overrides what default behavior?
 Back: Nothing is prepended to positive signed-numeric types by default.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707918756852-->
 END%%
 
@@ -274,7 +189,6 @@ END%%
 Cloze
 The {`␣`} `printf` flag {prepends a space for positive signed-numeric types}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707918756856-->
 END%%
 
@@ -283,7 +197,6 @@ Basic
 The `␣` `printf` flag overrides what default behavior?
 Back: Nothing is prepended to positive signed-numeric types by default.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707918756861-->
 END%%
 
@@ -292,7 +205,6 @@ Basic
 How do the `+` and `␣` `printf` flags relate to one another?
 Back: Both prepend a character to positively signed-numeric types.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707918756865-->
 END%%
 
@@ -301,7 +213,6 @@ Basic
 What happens if both the `+` and `␣` `printf` flags are specified?
 Back: The `+` flag takes precedence.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707918756870-->
 END%%
 
@@ -309,7 +220,6 @@ END%%
 Cloze
 The {`0`} `printf` flag {prepends zeros for numeric types}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707918756875-->
 END%%
 
@@ -318,7 +228,6 @@ Basic
 What option must be specified for the `0` `printf` flag to take effect?
 Back: The "width" option.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707918756881-->
 END%%
 
@@ -327,7 +236,6 @@ Basic
 The `0` `printf` flag overrides what default behavior?
 Back: Spaces are used to match the "width" option by default.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707918756888-->
 END%%
 
@@ -336,7 +244,6 @@ Basic
 How is `%#g` different from `%g`?
 Back: The former always includes a decimal point and may include trailing `0`s.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710673807973-->
 END%%
 
@@ -345,7 +252,6 @@ Basic
 How is `%#f` different from `%f`?
 Back: The former always includes a decimal point.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710673807976-->
 END%%
 
@@ -354,7 +260,6 @@ Basic
 How is `%#e` different from `%e`?
 Back: The former always includes a decimal point.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710673807979-->
 END%%
 
@@ -363,7 +268,6 @@ Basic
 Which `printf` flag can be used to ensure decimal points in the output of floating-point types?
 Back: `#`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710673807981-->
 END%%
 
@@ -372,7 +276,6 @@ Basic
 How is `%#o` different from `%o`?
 Back: The former prepends a `0` to the output.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710673807983-->
 END%%
 
@@ -381,7 +284,6 @@ Basic
 How is `%#x` different from `%x`?
 Back: The former prepends a `0x` to the output.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710673807986-->
 END%%
 
@@ -390,7 +292,6 @@ Basic
 How is `%#X` different from `%X`?
 Back: The former prepends a `0X` to the output.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710673807988-->
 END%%
 
@@ -398,11 +299,10 @@ END%%
 Cloze
 `%#o` is to {`0`} as `%#x` is to {`0x`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710673807990-->
 END%%
 
-### Length
+## Length
 
 Length    | Description
 --------- | -----------
@@ -417,7 +317,6 @@ Basic
 *Why* do length modifiers for e.g. `char` exist?
 Back: For maximum portability in the face of default argument promotions.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708426673637-->
 END%%
 
@@ -425,7 +324,6 @@ END%%
 Cloze
 The {`hh`} length corresponds to the {`char`} type declaration.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708426673664-->
 END%%
 
@@ -433,7 +331,6 @@ END%%
 Cloze
 The {`h`} length corresponds to the {`short`} type declaration.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708426673668-->
 END%%
 
@@ -441,7 +338,6 @@ END%%
 Cloze
 The {`l`} length corresponds to the {`long`} type declaration.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708426673711-->
 END%%
 
@@ -449,7 +345,6 @@ END%%
 Cloze
 The {`ll`} length corresponds to the {`long long`} type declaration.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708426673719-->
 END%%
 
@@ -457,11 +352,10 @@ END%%
 Cloze
 The {`z`} length corresponds to the {`size_t`} type declaration.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708426673725-->
 END%%
 
-### Specifiers
+## Specifiers
 
 Specifier | Description
 --------- | -----------
@@ -481,7 +375,6 @@ Basic
 What character do `printf` format specifiers start with?
 Back: `%`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083029-->
 END%%
 
@@ -490,7 +383,6 @@ Basic
 Why is `printf` named the way it is?
 Back: It stands for **print f**ormatted.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083037-->
 END%%
 
@@ -498,7 +390,6 @@ END%%
 Cloze
 The {`%d` and `%i`} format specifers work on a {decimal `signed int`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083040-->
 END%%
 
@@ -506,7 +397,6 @@ END%%
 Cloze
 {`%d` and `%i`} are to `signed` as {`%u`} is to `unsigned`.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083044-->
 END%%
 
@@ -514,7 +404,6 @@ END%%
 Cloze
 The {`%u`} format specifier outputs a {decimal `unsigned int`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083047-->
 END%%
 
@@ -523,7 +412,6 @@ Basic
 What distinguishes format specifiers `%d` and `%i`?
 Back: Nothing.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083050-->
 END%%
 
@@ -532,7 +420,6 @@ Basic
 Which format specifiers were probably used to yield `printf` output `-12`?
 Back: `%d` or `%i`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083054-->
 END%%
 
@@ -541,7 +428,6 @@ Basic
 What distinguishes format specifiers `%d` and `%u`?
 Back: The former is for signed integers, the latter unsigned.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083058-->
 END%%
 
@@ -549,7 +435,6 @@ END%%
 Cloze
 The {`%x`} format specifier outputs a {lowercase hexadecimal `unsigned int`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083063-->
 END%%
 
@@ -558,7 +443,6 @@ Basic
 Which format specifier was probably used to yield `printf` output `7af`?
 Back: `%x`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083068-->
 END%%
 
@@ -566,7 +450,6 @@ END%%
 Cloze
 The {`%X`} format specifier outputs an {uppercase hexadecimal `unsigned int`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083074-->
 END%%
 
@@ -575,7 +458,6 @@ Basic
 Which format specifier was probably used to yield `printf` output `7AF`?
 Back: `%X`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083080-->
 END%%
 
@@ -584,7 +466,6 @@ Basic
 What distinguishes format specifiers `%x` and `%X`?
 Back: The former outputs lowercase hex digits, the latter uppercase.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083086-->
 END%%
 
@@ -592,7 +473,6 @@ END%%
 Cloze
 The {`%f`} format specifier outputs a {lowercase fixed-point `double`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450347005-->
 END%%
 
@@ -600,7 +480,6 @@ END%%
 Cloze
 The {`%F`} format specifier outputs an {uppercase fixed-point `double`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450347008-->
 END%%
 
@@ -609,7 +488,6 @@ Basic
 What distinguishes format specifiers `%f` and `%F`?
 Back: The former outputs lowercase identifiers, the latter uppercase.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450347010-->
 END%%
 
@@ -618,7 +496,6 @@ Basic
 What three special identifiers might specifier `%f` output?
 Back: `inf`, `infinity`, and `nan`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450347012-->
 END%%
 
@@ -627,7 +504,6 @@ Basic
 Assuming round-to-even, what is the output of `printf("%.0f", 3.5)`?
 Back: `4`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: printf
 <!--ID: 1710675908301-->
 END%%
 
@@ -636,7 +512,6 @@ Basic
 Assuming round-to-even, what is the output of `printf("%.0f", 2.5)`?
 Back: `2`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: printf
 <!--ID: 1710675908304-->
 END%%
 
@@ -645,7 +520,6 @@ Basic
 How does the C standard define the rounding mode of floating-point specifiers?
 Back: This is implementation specific.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: printf
 <!--ID: 1710675908306-->
 END%%
 
@@ -654,7 +528,6 @@ Basic
 What does the rounding mode of floating-point specifiers refer to?
 Back: How numbers with greater than the specified precision are output.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: printf
 <!--ID: 1710675908307-->
 END%%
 
@@ -663,7 +536,6 @@ Basic
 What three special identifiers might specifier `%F` output?
 Back: `INF`, `INFINITY`, and `NAN`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450452444-->
 END%%
 
@@ -672,7 +544,6 @@ Basic
 Which format specifier was probably used to yield `printf` output `inf`?
 Back: `%f`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450347014-->
 END%%
 
@@ -680,7 +551,6 @@ END%%
 Cloze
 {1:Fixed-point} notation is to {2:`%f`} whereas {2:standard/exponential} notation is to {1:`%e`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450347015-->
 END%%
 
@@ -689,7 +559,6 @@ Basic
 Which format specifier was probably used to yield `printf` output `172.345000`?
 Back: `%f`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450347017-->
 END%%
 
@@ -698,7 +567,6 @@ Basic
 What term describes the kind of output notation corresponding to `%f`?
 Back: Fixed-point notation.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450347018-->
 END%%
 
@@ -707,7 +575,6 @@ Basic
 What distinguishes format specifiers `%e` and `%E`?
 Back: The former outputs an `e`, the latter an `E`.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450347020-->
 END%%
 
@@ -716,7 +583,6 @@ Basic
 How many digits follow `e` in the output of `printf` specifier `%e`?
 Back: At least `2`.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450452447-->
 END%%
 
@@ -725,7 +591,6 @@ Basic
 Which format specifiers correspond to scientific notation?
 Back: `%e` and `%E`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710556915108-->
 END%%
 
@@ -734,7 +599,6 @@ Basic
 Which format specifier was probably used to yield `printf` output `1.723450e+02`?
 Back: `%e`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450347022-->
 END%%
 
@@ -743,7 +607,6 @@ Basic
 What is the default precision of `%f`?
 Back: `6`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710452502031-->
 END%%
 
@@ -752,7 +615,6 @@ Basic
 What is the output of `printf("%e", 3.14)`?
 Back: `3.140000e00`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450347023-->
 END%%
 
@@ -761,7 +623,6 @@ Basic
 What is the output of `printf("%e", 314)`?
 Back: `3.140000e02`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450347025-->
 END%%
 
@@ -770,7 +631,6 @@ Basic
 What term describes the kind of output notation corresponding to `%e`?
 Back: Standard or exponential notation.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710450347026-->
 END%%
 
@@ -779,7 +639,6 @@ Basic
 What is the default precision of `%e`?
 Back: `6`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710452502034-->
 END%%
 
@@ -787,7 +646,6 @@ END%%
 Cloze
 The {`%g`} format specifier outputs a {lowercase `double` in fixed-point or standard notation}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710599835115-->
 END%%
 
@@ -795,7 +653,6 @@ END%%
 Cloze
 The {`%G`} format specifier outputs an {uppercase `double` in fixed-point or standard notation}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710844199536-->
 END%%
 
@@ -804,7 +661,6 @@ Basic
 The `%g` format specifier subsumes functionality of what other format specifiers?
 Back: `%f` and `%e`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710599806326-->
 END%%
 
@@ -813,7 +669,6 @@ Basic
 The `%G` format specifier subsumes functionality of what other format specifiers?
 Back: `%F` and `%E`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710599806328-->
 END%%
 
@@ -822,7 +677,6 @@ Basic
 How does `%g` handle integral values differently from `%f`?
 Back: It excludes a trailing `.` and insignificant `0`s.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710603411171-->
 END%%
 
@@ -831,7 +685,6 @@ Basic
 How does `%g` handle non-integral values differently from `%f`?
 Back: It excludes insignifant `0`s after the decimal point.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710603411174-->
 END%%
 
@@ -840,7 +693,6 @@ Basic
 What distinguishes `%g` from `%G`?
 Back: The former uses lowercase letters. The latter uses uppercase letters.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710599806331-->
 END%%
 
@@ -849,7 +701,6 @@ Basic
 What is the output of `printf("%.1f", 2.0)`?
 Back: `2.0`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1712836989972-->
 END%%
 
@@ -858,7 +709,6 @@ Basic
 Assuming fixed-point notation, what is the output of `printf("%.1g", 2.0)`?
 Back: `2`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1712836989975-->
 END%%
 
@@ -867,7 +717,6 @@ Basic
 Assuming fixed-point notation, what is the output of `printf("%g", 3.14)`?
 Back: `3.14`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710599806333-->
 END%%
 
@@ -876,7 +725,6 @@ Basic
 Assuming fixed-point notation, what is the output of `printf("%g", 3)`?
 Back: `3`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710599806334-->
 END%%
 
@@ -885,7 +733,6 @@ Basic
 What is the output of `printf("%f", 3)`?
 Back: `3.000000`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1710599806336-->
 END%%
 
@@ -893,7 +740,6 @@ END%%
 Cloze
 The {`%o`} format specifier outputs an {octal `unsigned int`}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083091-->
 END%%
 
@@ -902,7 +748,6 @@ Basic
 Why doesn't the `%o` format specifier have a corresponding `%O` specifier?
 Back: There is no distinction between lower and uppercase octal digits.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083096-->
 END%%
 
@@ -910,7 +755,6 @@ END%%
 Cloze
 The {`%s`} format specifiers outputs a {`NUL`-terminated string}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083100-->
 END%%
 
@@ -919,7 +763,6 @@ Basic
 Which format specifier was probably used to yield `printf` output `abc`?
 Back: `%s`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083105-->
 END%%
 
@@ -927,7 +770,6 @@ END%%
 Cloze
 The {`%c`} format specifier outputs a {`char` character}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083109-->
 END%%
 
@@ -936,7 +778,6 @@ Basic
 Which format specifier was probably used to yield `printf` output `a`?
 Back: `%c`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083113-->
 END%%
 
@@ -944,7 +785,6 @@ END%%
 Cloze
 The {`%p`} format specifier outputs a {`void*` address}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083117-->
 END%%
 
@@ -953,7 +793,6 @@ Basic
 Which format specifier was probably used to yield `printf` output `0b80000000`?
 Back: `%p`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083121-->
 END%%
 
@@ -962,7 +801,6 @@ Basic
 How is the address outputted by the `%p` format specifier written?
 Back: In an implementation-specific way.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1707852083126-->
 END%%
 
@@ -971,7 +809,6 @@ Basic
 What should be done to a pointer outputted by the `%p` format specifier?
 Back: It should be cast to a `void*` pointer.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: printf
 <!--ID: 1732397726966-->
 END%%
 
@@ -980,7 +817,6 @@ Basic
 Given `int64_t x`, why is `printf("%d", x)` a problem?
 Back: `%d` matches an `int` which is not necessarily 64-bits.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: printf
 <!--ID: 1708454462772-->
 END%%
 
@@ -989,7 +825,6 @@ Basic
 What must you use when invoking `printf` with a fixed-width integer type? 
 Back: `printf`-specific macros.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: printf
 <!--ID: 1708454462777-->
 END%%
 
@@ -998,7 +833,6 @@ Basic
 What is `PRId32` an example macro for?
 Back: A macro that expands to the correct specifier for a 32-bit signed integral type.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: printf
 <!--ID: 1708454462780-->
 END%%
 
@@ -1006,7 +840,6 @@ END%%
 Cloze
 {`PRId32`} is to signed whereas {`PRIu32`} is to unsigned.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708454462784-->
 END%%
 
@@ -1015,7 +848,6 @@ Basic
 Which C header specifies `printf` macros for fixed-width integral types?
 Back: `<inttypes.h>`
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-Tags: printf
 <!--ID: 1708454462788-->
 END%%
 
@@ -1024,7 +856,6 @@ Basic
 Given `int32_t x`, how might we invoke `printf` on it?
 Back: `printf("%" PRId32, x)`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: printf
 <!--ID: 1708454584564-->
 END%%
 
@@ -1033,292 +864,11 @@ Basic
 What prefix do `printf` macros from `<inttypes.h>` share?
 Back: `PRI`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: printf
 <!--ID: 1708454584568-->
-END%%
-
-## Escape Sequences
-
-C has a standard for processing different escape sequences. Many languages built with C in mind parse these escape sequences in a similar way.
-
-* `\ooo`: Consists of one to three octal digits.
-	* [[bash/index|Bash]] supports this sequence as `$'\ooo'`.
-
-%%ANKI
-Basic
-How are C escape sequences for octal digits denoted?
-Back: As `\ooo`.
-Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
-<!--ID: 1706975891805-->
-END%%
-
-%%ANKI
-Basic
-In C, `\ooo` allows specifying how many octal digits?
-Back: One to three.
-Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
-<!--ID: 1706975891810-->
-END%%
-
-%%ANKI
-Basic
-How are C escape sequences exposed in bash?
-Back: Using ANSI-C quoting, i.e. `$$'string'`.
-Reference: Mendel Cooper, “Advanced Bash-Scripting Guide,” n.d., 916.
-Tags: bash
-<!--ID: 1721387296231-->
-END%%
-
-* `\xhh`: Consists of one or more [[radices#Hexadecimal|hexadecimal]] digits. The `x` prefix is required to distinguish from octal escape sequences.
-	* [[bash/index|Bash]] supports this sequence as `$'\xhh'`. One or two digits is supported.
-
-%%ANKI
-Basic
-How are C escape sequences for hexadecimal digits denoted?
-Back: As `\xhh`.
-Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
-<!--ID: 1706975891820-->
-END%%
-
-%%ANKI
-Basic
-In C, `\x` allows specifying how many hexadecimal digits?
-Back: One or more.
-Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
-<!--ID: 1706975891824-->
-END%%
-
-%%ANKI
-Basic
-What footgun does C's `\x` sequence expose?
-Back: Using more than two hexadecimal digits can produce undefined results.
-Reference: Arnold D. Robbins, “GAWK: Effective AWK Programming,” October 2023, [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf).
-<!--ID: 1706975891828-->
-END%%
-
-* `\uhhhh`: Introduced in C11 to represent Unicode code points. *Must* have exactly four hexadecimal characters specified with `0` leading padding if necessary.
-	* [[bash/index|Bash]] supports this sequence as `$'uhhhh'`. One to four hex digits is supported.
-
-%%ANKI
-Basic
-What two ways are C escape sequences for unicode denoted?
-Back: As `\uhhhh` or `\Uhhhhhhhh`.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: encoding::unicode
-<!--ID: 1706975891832-->
-END%%
-
-%%ANKI
-Basic
-In C, `\u` allows specifying how many hexadecimal digits?
-Back: Exactly four.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: encoding::unicode
-<!--ID: 1706975891835-->
-END%%
-
-%%ANKI
-Basic
-In what standard were C's `\u` and `\U` escape sequences introduced?
-Back: C11.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: encoding::unicode
-<!--ID: 1706975891839-->
-END%%
-
-* `\Uhhhhhhhh`: Introduced in C11 to represent larger unicode code points. *Must* have exactly eight hexadecimal characters specified with `0` leading padding if necessary.
-
-%%ANKI
-Basic
-In C, `\U` allows specifying how many hexadecimal digits?
-Back: Exactly eight.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: encoding::unicode
-<!--ID: 1706975891843-->
-END%%
-
-%%ANKI
-Basic
-Why does C have both `\u` and `\U`?
-Back: `\U` accommodates for larger code point values.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: encoding::unicode
-<!--ID: 1706976705750-->
-END%%
-
-## Copying Functions
-
-The two primary functions used for copying memory are `memcpy` and `memmove`:
-
-```c
-void* memcpy(void* restrict s1, const void* restrict s2, size_t n);
-void* memmove(void* s1, const void* s2, size_t n);
-```
-
-%%ANKI
-Basic
-What are the two primary functions provided by the standard library for copying memory?
-Back: `memcpy` and `memmove`.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837986-->
-END%%
-
-%%ANKI
-Basic
-What is the function prototype of `memcpy`?
-Back:
-```c
-void* memcpy(void* restrict s1, const void* restrict s2, size_t n);
-```
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837987-->
-END%%
-
-%%ANKI
-Basic
-What does the `memcpy` function do?
-Back: Copies a specified number of bytes from one object to another.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837989-->
-END%%
-
-%%ANKI
-Basic
-Disregarding out of bounds errors, when does `memcpy` invoke undefined behavior?
-Back: When copying occurs between objects that overlap in memory.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837990-->
-END%%
-
-%%ANKI
-Basic
-What does the first argument of `memcpy` refer to?
-Back: The destination address bytes are copied to.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837991-->
-END%%
-
-%%ANKI
-Basic
-What does the second argument of `memcpy` refer to?
-Back: The source address bytes are copied from.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837993-->
-END%%
-
-%%ANKI
-Basic
-What does the third argument of `memcpy` refer to?
-Back: The number of bytes to copy from the source address.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837994-->
-END%%
-
-%%ANKI
-Basic
-Which of `memcpy` or `memmove` is faster?
-Back: `memcpy`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837995-->
-END%%
-
-%%ANKI
-Basic
-*Why* is `memmove` slower than `memcpy`?
-Back: It's implemented as if copying first into a temporary array that does not overlap the arguments in memory.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837996-->
-END%%
-
-%%ANKI
-Basic
-When should you prefer using `memcpy` instead of `memmove`?
-Back: When the copying occurs between objects that do not overlap in memory.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837997-->
-END%%
-
-%%ANKI
-Basic
-Which standard header library defines `memcpy`?
-Back: `<string.h>`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837998-->
-END%%
-
-%%ANKI
-Basic
-What is the function prototype of `memmove`?
-Back:
-```c
-void* memmove(void* s1, const void* s2, size_t n);
-```
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837999-->
-END%%
-
-%%ANKI
-Basic
-What does the first argument of `memmove` refer to?
-Back: The destination address bytes are copied to.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843838000-->
-END%%
-
-%%ANKI
-Basic
-What does the second argument of `memmove` refer to?
-Back: The source address bytes are copied from.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843838001-->
-END%%
-
-%%ANKI
-Basic
-What does the third argument of `memmove` refer to?
-Back: The number of bytes to copy from the source address.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843838002-->
-END%%
-
-%%ANKI
-Basic
-Disregarding out of bounds errors, when does `memmove` invoke undefined behavior?
-Back: N/A.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843838003-->
-END%%
-
-%%ANKI
-Basic
-When should you prefer using `memmove` instead of `memcopy`?
-Back: When the copying occurs between objects that overlap in memory.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843838004-->
-END%%
-
-%%ANKI
-Basic
-Which standard header library defines `memmove`?
-Back: `<string.h>`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843838005-->
-END%%
-
-%%ANKI
-Basic
-What does the `memmove` function do?
-Back: Copies a specified number of bytes from one object to another.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843838006-->
 END%%
 
 ## Bibliography
 
-* Arnold D. Robbins, “GAWK: Effective AWK Programming,” October 2023, [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf).
-* Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-* “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-* Mendel Cooper, “Advanced Bash-Scripting Guide,” n.d., 916.
 * “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).

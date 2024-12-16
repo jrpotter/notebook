@@ -985,7 +985,7 @@
     "c17/linkage.md": "1e4f60f07619b9cbf2f71f11aae9e5f4",
     "_journal/2024-11-30.md": "c6040ba2caf1c9ff55faed25d7879e9a",
     "_journal/2024-11/2024-11-29.md": "4896d849b6345010669047323521e21a",
-    "_journal/2024-11/2024-11-28.md": "e9d252bc4bc3d6f70db56c36e1090e86",
+    "_journal/2024-11/2024-11-28.md": "dd843bc11263a1dca3c9e27ab4fd8c68",
     "_journal/2024-11/2024-11-27.md": "7f44f4c91fea0c5c05d542aeeb9e723d",
     "_journal/2024-12-01.md": "d34aff07b7fa8a9a05f84841496d13b5",
     "_journal/2024-11/2024-11-30.md": "c6040ba2caf1c9ff55faed25d7879e9a",
@@ -1005,7 +1005,7 @@
     "_journal/2024-12-08.md": "5662897539b222db1af45dcd217f0796",
     "_journal/2024-12/2024-12-07.md": "bfb6c4db0acbacba19f03a04ec29fa5c",
     "linkers/static.md": "cc56ddfc33f605d26b954ec242abc4cf",
-    "linkers/index.md": "73b07789a48be8a611941d50ae4f3831",
+    "linkers/index.md": "18d4a03aa1a94418d450a5107e7c883d",
     "_journal/2024-12-09.md": "8988f0e8f0060f4b86d17e0bc4e7ff7e",
     "_journal/2024-12/2024-12-08.md": "5662897539b222db1af45dcd217f0796",
     "_journal/2024-12-10.md": "c12d380d24d7d1dc2e74a57a1b79399e",
@@ -1024,7 +1024,10 @@
     "_journal/2024-12/2024-12-12.md": "59e71caa4e9ebdb11a7c7549c33bed20",
     "linkers/object-files.md": "77767f310330b8650a5023dd0522226c",
     "_journal/2024-12-16.md": "77c27920d5b44b6315c2ea22b990eefc",
-    "_journal/2024-12/2024-12-15.md": "be66c8808d8bb66d4e7b91db7c93c94a"
+    "_journal/2024-12/2024-12-15.md": "be66c8808d8bb66d4e7b91db7c93c94a",
+    "linkers/elf.md": "83a27a7d71ca26f8f034770a31d58fa0",
+    "c17/strings/printf.md": "8b67cfbccaf35dd9488b73e7e5555405",
+    "c17/strings/index.md": "3fa6f42967f3cc786740bb8537c62682"
   },
   "fields_dict": {
     "Basic": [
