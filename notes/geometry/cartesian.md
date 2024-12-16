@@ -326,10 +326,10 @@ Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” acces
 END%%
 
 %%ANKI
-Basic
+Cloze
 A {vertical} scaling multiplies/divides the {$y$}-coordinates of a graph.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
-<!--ID: 1733522558496-->
+<!--ID: 1734299397501-->
 END%%
 
 %%ANKI

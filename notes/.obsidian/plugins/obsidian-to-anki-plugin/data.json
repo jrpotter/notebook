@@ -946,7 +946,7 @@
     "_journal/2024-11/2024-11-08.md": "806bbade5f8339579287687f9433334e",
     "_journal/2024-11/2024-11-07.md": "434ec3f15d7065ea740127aa8477dd17",
     "x86-64/directives.md": "019c1c1d04efb26c3e8758aac4543cc7",
-    "geometry/cartesian.md": "94730b4de278495430d0c7951ed3e17c",
+    "geometry/cartesian.md": "1977d6fd05109456cf1824822b836b02",
     "geometry/index.md": "cac68c1b624dbb0552e56cce47bcc21d",
     "_journal/2024-11-10.md": "5478337fd2017b99d0b359713a511e66",
     "_journal/2024-11/2024-11-09.md": "46f3a640223ef533f4523837b67b57c3",
@@ -1005,7 +1005,7 @@
     "_journal/2024-12-08.md": "5662897539b222db1af45dcd217f0796",
     "_journal/2024-12/2024-12-07.md": "bfb6c4db0acbacba19f03a04ec29fa5c",
     "linkers/static.md": "cc56ddfc33f605d26b954ec242abc4cf",
-    "linkers/index.md": "84ffda7dddc04d2843b98224f1b7a0e1",
+    "linkers/index.md": "73b07789a48be8a611941d50ae4f3831",
     "_journal/2024-12-09.md": "8988f0e8f0060f4b86d17e0bc4e7ff7e",
     "_journal/2024-12/2024-12-08.md": "5662897539b222db1af45dcd217f0796",
     "_journal/2024-12-10.md": "c12d380d24d7d1dc2e74a57a1b79399e",
@@ -1018,10 +1018,13 @@
     "encoding/uri.md": "394abe477b882e1414dd2fb151fea823",
     "encoding/xml.md": "5b345c09ac60821f88ed5b592e411df6",
     "encoding/rdf.md": "b32d6c0a2249794da89d9c7fb7ca325e",
-    "_journal/2024-12-15.md": "bc05b98f4e4d30c7f2db73f1cef9d806",
+    "_journal/2024-12-15.md": "be66c8808d8bb66d4e7b91db7c93c94a",
     "_journal/2024-12/2024-12-14.md": "d2223f90fd1ce3d82a4fbb6828a1ec56",
     "_journal/2024-12/2024-12-13.md": "d2223f90fd1ce3d82a4fbb6828a1ec56",
-    "_journal/2024-12/2024-12-12.md": "59e71caa4e9ebdb11a7c7549c33bed20"
+    "_journal/2024-12/2024-12-12.md": "59e71caa4e9ebdb11a7c7549c33bed20",
+    "linkers/object-files.md": "77767f310330b8650a5023dd0522226c",
+    "_journal/2024-12-16.md": "77c27920d5b44b6315c2ea22b990eefc",
+    "_journal/2024-12/2024-12-15.md": "be66c8808d8bb66d4e7b91db7c93c94a"
   },
   "fields_dict": {
     "Basic": [
