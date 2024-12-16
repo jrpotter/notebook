@@ -643,15 +643,15 @@ END%%
 
 %%ANKI
 Basic
-Let $K$ and $L$ be sets. How is $\mathop{\text{card}}(K \cup L)$ expressed in terms of cardinal numbers?
-Back: N/A. $K$ and $L$ must be *disjoint* sets for this to make sense.
+Let $K$ and $L$ be sets. What does $\mathop{\text{card}}(K \cup L)$ evaluate to?
+Back: N/A. $K$ and $L$ must be disjoint sets for evaluation to make sense.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733710439139-->
 END%%
 
 %%ANKI
 Basic
-Let $K$ and $L$ be disjoint sets. How is $\mathop{\text{card}}(K \cup L)$ expressed in terms of cardinal numbers?
+Let $K$ and $L$ be disjoint sets. What does $\mathop{\text{card}}(K \cup L)$ evaluate to?
 Back: As $\kappa + \lambda$ where $\kappa = \mathop{\text{card}} K$ and $\lambda = \mathop{\text{card}} L$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733710439142-->
@@ -672,6 +672,30 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1733710439150-->
 END%%
 
+%%ANKI
+Basic
+How do we prove $2 + 2 = 4$ using the recursion theorem?
+Back: By proving $A_2(2) = 2^{++} = 4$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734374219320-->
+END%%
+
+%%ANKI
+Basic
+How do we prove $2 + 2 = 4$ using cardinal numbers?
+Back: By proving for disjoint sets $K \approx 2$ and $L \approx 2$, that $K \cup L \approx 4$ holds.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734374219323-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$. What does $m + n$ evaluate to in terms of cardinal numbers?
+Back: $\mathop{\text{card}}((m \times \{0\}) \cup (n \times \{1\}))$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734374219325-->
+END%%
+
 ### Multiplication
 
 Let $\kappa$ and $\lambda$ be any cardinal numbers. Then $\kappa \cdot \lambda = \mathop{\text{card}}(K \times L)$, where $K$ and $L$ are any sets of cardinality $\kappa$ and $\lambda$, respectively.
@@ -686,7 +710,7 @@ END%%
 
 %%ANKI
 Basic
-Let $K$ and $L$ be sets. How is $\mathop{\text{card}}(K \times L)$ expressed in terms of cardinal numbers?
+Let $K$ and $L$ be sets. What does $\mathop{\text{card}}(K \times L)$ evaluate to?
 Back: As $\kappa \cdot \lambda$ where $\kappa = \mathop{\text{card}} K$ and $\lambda = \mathop{\text{card}} L$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733710439156-->
@@ -707,6 +731,30 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1733710439162-->
 END%%
 
+%%ANKI
+Basic
+How do we prove $2 \cdot 2 = 4$ using the recursion theorem?
+Back: By proving $M_2(2) = 2 + 2 = 4$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734374219326-->
+END%%
+
+%%ANKI
+Basic
+How do we prove $2 \cdot 2 = 4$ using cardinal numbers?
+Back: By proving for sets $K \approx 2$ and $L \approx 2$, that $K \times L \approx 4$ holds.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734374219327-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$. What does $m \cdot n$ evaluate to in terms of cardinal numbers?
+Back: $\mathop{\text{card}}(m \times n)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734374219328-->
+END%%
+
 ### Exponentiation
 
 Let $\kappa$ and $\lambda$ be any cardinal numbers. Then $\kappa^\lambda = \mathop{\text{card}}(^LK)$, where $K$ and $L$ are any sets of cardinality $\kappa$ and $\lambda$, respectively.
@@ -721,7 +769,7 @@ END%%
 
 %%ANKI
 Basic
-Let $K$ and $L$ be sets. How is $\mathop{\text{card}}(^LK)$ expressed in terms of cardinal numbers?
+Let $K$ and $L$ be sets. What does $\mathop{\text{card}}(^LK)$ evaluate to?
 Back: As $\kappa^\lambda$ where $\kappa = \mathop{\text{card}} K$ and $\lambda = \mathop{\text{card}} L$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733710439168-->
@@ -748,6 +796,30 @@ Cloze
 {Exponentiation} of cardinal numbers is defined in terms of the {set of functions} between sets.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733710439174-->
+END%%
+
+%%ANKI
+Basic
+How do we prove $2^2 = 4$ using the recursion theorem?
+Back: By proving $E_2(2) = 2 \cdot 2 = 4$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734374219330-->
+END%%
+
+%%ANKI
+Basic
+How do we prove $2^2 = 4$ using cardinal numbers?
+Back: By proving for sets $K \approx 2$ and $L \approx 2$, that $^LK \approx 4$ holds.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734374219331-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$. What does $m^n$ evaluate to in terms of cardinal numbers?
+Back: $\mathop{\text{card}}(^nm)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734374219332-->
 END%%
 
 ## Bibliography
