@@ -645,7 +645,7 @@ END%%
 
 %%ANKI
 Basic
-Which component of a compiler driver produces ASCII relocatable object files?
+Which component of a compiler driver produces relocatable object files?
 Back: The assembler.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1733607099587-->
@@ -655,7 +655,7 @@ The operating system provides a function called the **loader** that copies the c
 
 %%ANKI
 Basic
-What function does the OS provider to run an executable object file?
+What function does the OS provide to run executable object files?
 Back: The loader.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1733607099593-->

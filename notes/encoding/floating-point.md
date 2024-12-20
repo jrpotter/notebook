@@ -442,7 +442,7 @@ END%%
 
 %%ANKI
 Cloze
-The exponent field of a `float` has {`8`} bits and a `double` has {`11`} bits.
+The exponent field of a `float` has {`8`} bits whereas a `double` has {`11`} bits.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1710556915030-->

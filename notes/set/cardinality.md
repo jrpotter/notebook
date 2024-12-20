@@ -552,7 +552,7 @@ END%%
 %%ANKI
 Basic
 Suppose sets $A$ and $B$ are finite. When is $A \cup B$ infinite?
-Back: The union of two finite sets is always finite.
+Back: N/A. The union of two finite sets is always finite.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733675522739-->
 END%%
@@ -591,8 +591,8 @@ END%%
 
 %%ANKI
 Basic
-Suppose sets $A$ and $B$ are finite. When is $A \cap B$ finite?
-Back: The intersection of two finite sets is always finite.
+Suppose sets $A$ and $B$ are finite. When is $A \cap B$ infinite?
+Back: N/A. The intersection of two finite sets is always finite.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733675522748-->
 END%%
@@ -615,18 +615,10 @@ END%%
 
 %%ANKI
 Basic
-Suppose sets $A$ and $B$ are finite. When is $A \times B$ finite?
-Back: The Cartesian product of two finite sets is always finite.
+Suppose sets $A$ and $B$ are finite. When is $A \times B$ infinite?
+Back: N/A. The Cartesian product of two finite sets is always finite.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733675522751-->
-END%%
-
-%%ANKI
-Basic
-Let $m, n \in \omega$ such that $A \approx m$ and $B \approx n$. What does $\mathop{\text{card}}(A \times B)$ evaluate to?
-Back: $m \cdot n$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733693785295-->
 END%%
 
 ### Addition
@@ -643,14 +635,6 @@ END%%
 
 %%ANKI
 Basic
-Let $K$ and $L$ be sets. What does $\mathop{\text{card}}(K \cup L)$ evaluate to?
-Back: N/A. $K$ and $L$ must be disjoint sets for evaluation to make sense.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733710439139-->
-END%%
-
-%%ANKI
-Basic
 Let $K$ and $L$ be disjoint sets. What does $\mathop{\text{card}}(K \cup L)$ evaluate to?
 Back: As $\kappa + \lambda$ where $\kappa = \mathop{\text{card}} K$ and $\lambda = \mathop{\text{card}} L$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -659,7 +643,7 @@ END%%
 
 %%ANKI
 Basic
-Let $K \approx \kappa$ and $L \approx \lambda$. What is necessary for $\mathop{\text{card}}(K \cup L) \approx \kappa + \lambda$?
+Let $\mathop{\text{card}}(K) = \kappa$ and $\mathop{\text{card}}(L) = \lambda$. What is necessary for $\mathop{\text{card}}(K \cup L) = \kappa + \lambda$?
 Back: That $K$ and $L$ are disjoint.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733710439146-->
@@ -694,6 +678,62 @@ Let $m, n \in \omega$. What does $m + n$ evaluate to in terms of cardinal number
 Back: $\mathop{\text{card}}((m \times \{0\}) \cup (n \times \{1\}))$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1734374219325-->
+END%%
+
+%%ANKI
+Basic
+What cardinal number does $0 + \aleph_0$ evaluate to?
+Back: $\aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487310-->
+END%%
+
+%%ANKI
+Basic
+Expression $0 + \aleph_0$ corresponds to the cardinality of what set?
+Back: $\varnothing \cup \omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487313-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \omega$. What cardinal number does $n^+ + \aleph_0$ evaluate to?
+Back: $\aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487316-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \omega$. Expression $n + \aleph_0$ corresponds to the cardinality of what set?
+Back: $(n \times \{0\}) \cup (\omega \times \{1\})$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487319-->
+END%%
+
+%%ANKI
+Basic
+What cardinal number does $\aleph_0 + \aleph_0$ evaluate to?
+Back: $\aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487326-->
+END%%
+
+%%ANKI
+Basic
+Expression $\aleph_0 + \aleph_0$ corresponds to the cardinality of what set?
+Back: $(\omega \times \{0\}) \cup (\omega \times \{1\})$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487330-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be a cardinal number. What cardinal number does $\kappa + 0$ evaluate to?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487333-->
 END%%
 
 ### Multiplication
@@ -733,6 +773,14 @@ END%%
 
 %%ANKI
 Basic
+Let $m, n \in \omega$ such that $A \approx m$ and $B \approx n$. What does $\mathop{\text{card}}(A \times B)$ evaluate to?
+Back: $m \cdot n$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785295-->
+END%%
+
+%%ANKI
+Basic
 How do we prove $2 \cdot 2 = 4$ using the recursion theorem?
 Back: By proving $M_2(2) = 2 + 2 = 4$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -753,6 +801,70 @@ Let $m, n \in \omega$. What does $m \cdot n$ evaluate to in terms of cardinal nu
 Back: $\mathop{\text{card}}(m \times n)$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1734374219328-->
+END%%
+
+%%ANKI
+Basic
+What cardinal number does $0 \cdot \aleph_0$ evaluate to?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487336-->
+END%%
+
+%%ANKI
+Basic
+Expression $0 \cdot \aleph_0$ corresponds to the cardinality of what set?
+Back: $\varnothing \times \omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487339-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \omega$. What cardinal number does $n^+ \cdot \aleph_0$ evaluate to?
+Back: $\aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487342-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \omega$. Expression $n \cdot \aleph_0$ corresponds to the cardinality of what set?
+Back: $n \times \omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487345-->
+END%%
+
+%%ANKI
+Basic
+What cardinal number does $\aleph_0 \cdot \aleph_0$ evaluate to?
+Back: $\aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487349-->
+END%%
+
+%%ANKI
+Basic
+Expression $\aleph_0 \cdot \aleph_0$ corresponds to the cardinality of what set?
+Back: $\omega \times \omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487352-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be a cardinal number. What cardinal number does $\kappa \cdot 0$ evaluate to?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487356-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be a cardinal number. What cardinal number does $\kappa \cdot 1$ evaluate to?
+Back: $\kappa$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487359-->
 END%%
 
 ### Exponentiation
@@ -820,6 +932,62 @@ Let $m, n \in \omega$. What does $m^n$ evaluate to in terms of cardinal numbers?
 Back: $\mathop{\text{card}}(^nm)$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1734374219332-->
+END%%
+
+%%ANKI
+Basic
+What cardinal number does $0^{\aleph_0}$ evaluate to?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487363-->
+END%%
+
+%%ANKI
+Basic
+Expression $0^{\aleph_0}$ corresponds to the cardinality of what set?
+Back: $^\omega \varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487368-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be a nonzero cardinal number. What cardinal number does $0^\kappa$ evaluate to?
+Back: $0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487372-->
+END%%
+
+%%ANKI
+Basic
+What cardinal number does $0^0$ evaluate to?
+Back: $1$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487376-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be a cardinal number. Expression $0^\kappa$ corresponds to the cardinality of what set?
+Back: $^K\varnothing$ where $\mathop{\text{card}} K = \kappa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487381-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be a cardinal number. What cardinal number does $\kappa^0$ evaluate to?
+Back: $1$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487384-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be a cardinal number. Expression $\kappa^0$ corresponds to the cardinality of what set?
+Back: $^\varnothing K$ where $\mathop{\text{card}} K = \kappa$..
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734520487388-->
 END%%
 
 ## Bibliography

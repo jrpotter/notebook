@@ -131,13 +131,13 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1731185808252-->
 END%%
 
-## Translations
+## Transformations
 
-There are two kinds of translations that we can do to a graph: **shifting** and **scaling**. A **reflection** is a special case of scaling.
+There are two kinds of transformations that we can do to a graph: **shifting** and **scaling**. A **reflection** is a special case of scaling.
 
 %%ANKI
 Basic
-What are the two kinds of translations that can be done to a graph?
+What are the two kinds of transformations that can be done to a graph?
 Back: Shifting and scaling.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1733520214987-->
@@ -145,7 +145,7 @@ END%%
 
 %%ANKI
 Basic
-Which of the two kinds of translations is reflection a special case of?
+Which of the two kinds of transformations is reflection a special case of?
 Back: Scaling.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1733520269110-->
@@ -165,6 +165,150 @@ Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” acces
 <!--ID: 1733522558480-->
 END%%
 
+%%ANKI
+Basic
+Given function $f$, which of $a$, $b$, $c$, and/or $d$ relate to shifting? $$y = af(b[x - c]) + d$$
+Back: $c$ and $d$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734620943896-->
+END%%
+
+%%ANKI
+Basic
+Given function $f$, which of $a$, $b$, $c$, and/or $d$ relate to a horizontal transformation? $$y = af(b[x - c]) + d$$
+Back: $b$ and $c$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734620943904-->
+END%%
+
+%%ANKI
+Basic
+Given function $f$, which of $a$, $b$, $c$, and/or $d$ relate to a vertical transformation? $$y = af(b[x - c]) + d$$
+Back: $a$ and $d$.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734620943910-->
+END%%
+
+%%ANKI
+Basic
+Given function $f$, which of $a$, $b$, $c$, and/or $d$ relate to scaling? $$y = af(b[x - c]) + d$$
+Back: $a$ and $b$.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734620943916-->
+END%%
+
+%%ANKI
+Basic
+Given function $f$, which of $a$, $b$, $c$, and/or $d$ apply a transformation that "acts normally"? $$y = af(b[x - c]) + d$$
+Back: $a$ and $d$.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734620943921-->
+END%%
+
+%%ANKI
+Basic
+Given function $f$, which of $a$, $b$, $c$, and/or $d$ apply a transformation that "acts inversely"? $$y = af(b[x - c]) + d$$
+Back: $b$ and $c$.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734620943926-->
+END%%
+
+%%ANKI
+Basic
+Which of horizontal and/or vertical transformations "act inversely"?
+Back: Horizontal transformations.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734620943931-->
+END%%
+
+%%ANKI
+Basic
+Which of horizontal and/or vertical transformations "act normally"?
+Back: Vertical transformations.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734620943937-->
+END%%
+
+%%ANKI
+Basic
+How is the graph of $y = f(x)$ transformed in the graph of $y = \frac{1}{2}f(\frac{x}{3})$?
+Back: It's horizontally scaled by $3$ and vertically compressed by $2$.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656174535-->
+END%%
+
+%%ANKI
+Basic
+Consider $y = f(x)$. Is $y = af(bx)$ first scaled vertically or horizontally?
+Back: N/A. There is no order of operations in this case.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656174588-->
+END%%
+
+%%ANKI
+Basic
+How is the graph of $y = f(x)$ transformed in the graph of $y = f(x - 3) + 2$?
+Back: It's shifted right by $3$ and shifted up by $2$.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656174596-->
+END%%
+
+%%ANKI
+Basic
+Consider $y = f(x)$. Is $y = f(x + a) + b$ first shifted vertically or horizontally?
+Back: N/A. There is no order of operations in this case.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656174604-->
+END%%
+
+%%ANKI
+Basic
+How is the graph of $y = f(x)$ transformed in the graph of $y = 2f(x) + 5$?
+Back: It's vertically scaled by $2$ and then shifted up by $5$.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656174610-->
+END%%
+
+%%ANKI
+Basic
+Consider $y = f(x)$. Is $y = af(x) + b$ first scaled or shifted?
+Back: Scaled.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656174615-->
+END%%
+
+%%ANKI
+Basic
+Consider $y = f(x)$. Is $y = f(ax) + b$ first scaled or shifted?
+Back: Scaled.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656174619-->
+END%%
+
+%%ANKI
+Basic
+How is the graph of $y = f(x)$ transformed in the graph of $y = f(2x - 3)$?
+Back: It's horizontally compressed by $2$ and then shifted right by $3/2$.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656174624-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has domain $(-2, 5)$. What is the domain of $2f(x - 3) - 5$?
+Back: $(1, 8)$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734657098882-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has range $[4, 8]$. What is the range of $2f(x - 3) - 5$?
+Back: $[3, 11]$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734657098887-->
+END%%
+
 ### Shifting
 
 A **vertical shift** adds/subtracts a constant to every $y$-coordinate of a graph, leaving the $x$-coordinate unchanged. A **horizontal shift** adds/subtracts a constant to every $x$-coordinate of a graph, leaving the $y$-coordinate unchanged.
@@ -179,7 +323,7 @@ END%%
 
 %%ANKI
 Basic
-Which of the two fundamental graph translations is considered "rigid"?
+Which of the two fundamental graph transformations is considered "rigid"?
 Back: Shifts.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1733522558483-->
@@ -215,7 +359,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f(x)$ be a function and $k$ be a constant. What kind of translation is $f(x + k)$?
+Let $f(x)$ be a function and $k$ be a constant. What kind of transformations is $f(x + k)$?
 Back: A horizontal shift.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1733520215013-->
@@ -223,7 +367,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f(x)$ be a function and $k$ be a constant. What kind of translation is $f(x) + k$?
+Let $f(x)$ be a function and $k$ be a constant. What kind of transformations is $f(x) + k$?
 Back: A vertical shift.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1733520215016-->
@@ -311,6 +455,70 @@ Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” acces
 <!--ID: 1733520215056-->
 END%%
 
+%%ANKI
+Basic
+Horizontal shifting of a function affects which of its range and/or domain?
+Back: The domain.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938097-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has domain $(-2, 5)$. What is the domain of $f(x - 2)$?
+Back: $(0, 7)$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938102-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has domain $(-2, 5)$. What is the domain of $f(x + 2)$?
+Back: $(-4, 3)$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938105-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has domain $(-2, 5)$. What is the domain of $f(x) + 2$?
+Back: $(-2, 5)$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938109-->
+END%%
+
+%%ANKI
+Basic
+Vertical shifting of a function affects which of its range and/or domain?
+Back: The range.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938112-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has range $[4, 8]$. What is the range of $f(x - 2)$?
+Back: $[4, 8]$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938116-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has range $[4, 8]$. What is the range of $f(x) - 2$?
+Back: $[2, 6]$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938120-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has range $[4, 8]$. What is the range of $f(x) + 2$?
+Back: $[6, 10]$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938124-->
+END%%
+
 ### Scaling
 
 A **vertical scaling** will multiply/divide every $y$-coordinate of a graph, leaving the $x$-coordinate unchanged. A **horizontal scaling** will multiply/divide every $x$-coordinate of a graph, leaving the $y$-coordinate unchanged.
@@ -341,7 +549,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f(x)$ be a function and $k$ be a constant. What kind of translation is $kf(x)$?
+Let $f(x)$ be a function and $k$ be a constant. What kind of transformation is $kf(x)$?
 Back: A vertical scaling.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1733522558503-->
@@ -349,7 +557,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f(x)$ be a function and $k$ be a constant. What kind of translation is $f(kx)$?
+Let $f(x)$ be a function and $k$ be a constant. What kind of transformation is $f(kx)$?
 Back: A horizontal scaling.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1733522558507-->
@@ -423,6 +631,144 @@ Cloze
 Let $f(t)$ be a function of time. Horizontally stretching $f(t)$ means it takes {more} time to reach a value.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1733522558555-->
+END%%
+
+%%ANKI
+Basic
+Horizontal scaling of a function affects which of its range and/or domain?
+Back: The domain.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938129-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has domain $(-2, 5)$. What is the domain of $f(2x)$?
+Back: $(-1, 5/2)$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938133-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has domain $(-2, 5)$. What is the domain of $2f(x)$?
+Back: $(-2, 5)$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938137-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has domain $(-2, 5)$. What is the domain of $f(x / 2)$?
+Back: $(-4, 10)$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938141-->
+END%%
+
+%%ANKI
+Basic
+Vertical scaling of a function affects which of its range and/or domain?
+Back: The range.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938145-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has range $[4, 8]$. What is the range of $f(2x)$?
+Back: $[4, 8]$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938149-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has range $[4, 8]$. What is the range of $2f(x)$?
+Back: $[8, 16]$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938152-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has range $[4, 8]$. What is the range of $f(x) / 2$?
+Back: $[2, 4]$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938156-->
+END%%
+
+### Reflecting
+
+A **reflection** is a special case of a [[#Scaling|scaling]].
+
+%%ANKI
+Basic
+A reflection is a special case of what other kind of transformation?
+Back: A scaling.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734620943942-->
+END%%
+
+%%ANKI
+Cloze
+To reflect a function's graph about the {$y$}-axis, multiply its {inputs} by $-1$.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734620943947-->
+END%%
+
+%%ANKI
+Cloze
+To reflect a function's graph about the {$x$}-axis, multiply its {outputs} by $-1$.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734620943953-->
+END%%
+
+%%ANKI
+Basic
+Consider the graph of $f(x)$. Is $f(-x)$ its horizontal or vertical reflection?
+Back: Horizontal (reflection along the $y$-axis).
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938160-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has domain $(-2, 5)$. What is the domain of $f(-x)$?
+Back: $(-5, 2)$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938163-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has domain $(-2, 5)$. What is the range of $f(-x)$?
+Back: The same as that of $f(x)$.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938167-->
+END%%
+
+%%ANKI
+Basic
+Consider the graph of $f(x)$. Is $-f(x)$ its horizontal or vertical reflection?
+Back: Vertical (reflection along the $x$-axis).
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938171-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has range $[4, 8]$. What is the domain of $-f(x)$?
+Back: The same as that of $f(x)$.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938174-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x)$ has range $[4, 8]$. What is the range of $-f(x)$?
+Back: $[-8, -4]$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1734656938178-->
 END%%
 
 ## Bibliography

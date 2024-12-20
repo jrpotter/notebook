@@ -12,8 +12,6 @@ tags:
 
 Modern [[x86-64/index|x86-64]] Linux systems use the ELF (Executable and Linkable Format) object file format.
 
-![[elf.png]]
-
 %%ANKI
 Basic
 What object file format do modern x86-64 Linux machines typically use?
@@ -38,11 +36,46 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1734356868446-->
 END%%
 
-### Relocatable Object Files
+## Relocatable Object Files
 
-A typical ELF relocatable object file contains the following sections:
+![[elf.png]]
 
-#### `.text`
+%%ANKI
+Basic
+A relocatable object file is typically broken up into what three regions?
+Back: The header, sections, and the section header table.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879220-->
+END%%
+
+%%ANKI
+Basic
+In a relocatable object file, what exists between the header and section header table?
+Back: The sections.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879305-->
+END%%
+
+%%ANKI
+Cloze
+A relocatable object file consists of a {header}, {sections}, and a {section header table}, in that order.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879322-->
+END%%
+
+%%ANKI
+Basic
+Where in a relocatable object file does the section header table exist?
+Back: At the end.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879328-->
+END%%
+
+## Sections
+
+A typical ELF object file contains the following sections:
+
+### `.text`
 
 The machine code of the compiled program.
 
@@ -69,7 +102,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1734367304872-->
 END%%
 
-#### `.rodata`
+### `.rodata`
 
 Read-only data such as the format strings in [[c17/strings/printf|printf]] statements and [[conditions#JMP|jump tables]] for switch statements.
 
@@ -114,7 +147,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1734367304878-->
 END%%
 
-#### `.data`
+### `.data`
 
 Global and static C variables initialized to a non-zero value.
 
@@ -187,7 +220,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1734369188110-->
 END%%
 
-#### `.bss`
+### `.bss`
 
 Uninitialized global and static C variables, along with any global or static variables initialized to zero.
 
@@ -298,7 +331,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1734369188106-->
 END%%
 
-#### `.symtab`
+### `.symtab`
 
 A symbol table with information about functions and global variables defined and referenced in the program.
 
@@ -324,6 +357,96 @@ Why is the `.symtab` ELF section named the way it is?
 Back: It's short for **sym**bol **tab**le.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734370180083-->
+END%%
+
+### `.rel.text`
+
+A list of locations in the `.text` section that will need to be modified when the linker combines this object file with others.
+
+%%ANKI
+Basic
+What does the `.rel.text` section of an ELF file contain?
+Back: Relocation entries for the `.text` section.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879344-->
+END%%
+
+%%ANKI
+Basic
+Why is the `.rel.text` ELF section named the way it is?
+Back: It's short for **rel**ocation entries for the `.text` section.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879386-->
+END%%
+
+%%ANKI
+Cloze
+The {`.rel.text`} section contains {relocation entries} for the `.text` section.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879393-->
+END%%
+
+### `.rel.data`
+
+A list of locations in the `.data` section that will need to be modified when the linker combines this object file with others.
+
+%%ANKI
+Basic
+What does the `.rel.data` section of an ELF file contain?
+Back: Relocation entries for the `.data` section.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879404-->
+END%%
+
+%%ANKI
+Basic
+Why is the `.rel.data` ELF section named the way it is?
+Back: It's short for **rel**ocation entries for the `.data` section.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879407-->
+END%%
+
+%%ANKI
+Cloze
+The {`.rel.data`} section contains {relocation entries} for the `.data` section.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879414-->
+END%%
+
+### `.strtab`
+
+A string table for the symbol tables in the `.symtab` section as well as for section names in the section headers. It is a sequence of `NUL`-terminated character strings.
+
+%%ANKI
+Basic
+What does the `.strtab` section of an ELF file contain?
+Back: A string table.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879418-->
+END%%
+
+%%ANKI
+Basic
+Why is the `.strtab` ELF section named the way it is?
+Back: It is short for **str**ing **tab**le.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879422-->
+END%%
+
+%%ANKI
+Basic
+The `.strtab` provides information for what other, non-debug ELF section?
+Back: `.symtab`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879427-->
+END%%
+
+%%ANKI
+Basic
+Section names are contained in what ELF section?
+Back: `.strtab`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734456879433-->
 END%%
 
 ## Bibliography
