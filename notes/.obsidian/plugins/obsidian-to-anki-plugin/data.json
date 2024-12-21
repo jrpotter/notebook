@@ -1016,7 +1016,7 @@
     "_journal/2024-12/2024-12-10.md": "d4f43b32220dbe174be514397b1bb035",
     "_journal/2024-12/2024-12-11.md": "e7393c01b44c5b804f86f45b8b899b59",
     "encoding/uri.md": "394abe477b882e1414dd2fb151fea823",
-    "encoding/xml.md": "5b345c09ac60821f88ed5b592e411df6",
+    "encoding/xml.md": "01a66b1a102cccc682f8f1cab0f50bc6",
     "encoding/rdf.md": "f5c2c0156046a9474bae3577e739c5ce",
     "_journal/2024-12-15.md": "be66c8808d8bb66d4e7b91db7c93c94a",
     "_journal/2024-12/2024-12-14.md": "d2223f90fd1ce3d82a4fbb6828a1ec56",
@@ -1025,7 +1025,7 @@
     "linkers/object-files.md": "77767f310330b8650a5023dd0522226c",
     "_journal/2024-12-16.md": "d867a62a955f3d080ae25f31464d53c4",
     "_journal/2024-12/2024-12-15.md": "be66c8808d8bb66d4e7b91db7c93c94a",
-    "linkers/elf.md": "64262b8ec7d85bab4bd32a238beac638",
+    "linkers/elf.md": "cc24068cbf2599446b6bc0d1f612c7c5",
     "c17/strings/printf.md": "8b67cfbccaf35dd9488b73e7e5555405",
     "c17/strings/index.md": "3fa6f42967f3cc786740bb8537c62682",
     "_journal/2024-12-17.md": "ae55db66c9835876c4a0343ac0806951",
@@ -1033,7 +1033,12 @@
     "_journal/2024-12-18.md": "9cf32faceb4d52bf2303e8dcce7bda20",
     "_journal/2024-12/2024-12-17.md": "afea61b79ad8dcb02a99e385dce1bbc2",
     "_journal/2024-12-19.md": "0064c8a827222092a55b3d896033b84b",
-    "_journal/2024-12/2024-12-18.md": "06f32ecf5bc088c6db98476fadfd0b5c"
+    "_journal/2024-12/2024-12-18.md": "06f32ecf5bc088c6db98476fadfd0b5c",
+    "threads/index.md": "28783464146ed09603b477bad4b761bc",
+    "_journal/2024-12-20.md": "2e6b1826035eaa60aeb328f61d9bc976",
+    "_journal/2024-12/2024-12-19.md": "cd09c9e522a3b206b8a3524d615fadd5",
+    "_journal/2024-12-21.md": "51bc26a6ec147bd57e0efffd75c266c6",
+    "_journal/2024-12/2024-12-20.md": "3c896dac68ce1bfb1f28cb7da4325c6c"
   },
   "fields_dict": {
     "Basic": [

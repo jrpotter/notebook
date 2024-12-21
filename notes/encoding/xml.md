@@ -249,7 +249,7 @@ Which namespace is attribute `b` a member of?
   <bar a="1" p:b="2" />
 </foo>
 ```
-Back: `p`
+Back: `ns1`
 Reference: “XML Namespace,” in _Wikipedia_, April 11, 2024, [https://en.wikipedia.org/w/index.php?title=XML_namespace](https://en.wikipedia.org/w/index.php?title=XML_namespace&oldid=1218316095).
 <!--ID: 1733842094375-->
 END%%
