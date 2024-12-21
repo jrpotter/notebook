@@ -1,7 +1,7 @@
 ---
 title: RDF
 TARGET DECK: Obsidian::STEM
-FILE TAGS: rdf
+FILE TAGS: ontology::rdf
 tags:
   - rdf
 ---
@@ -9,6 +9,8 @@ tags:
 ## Overview
 
 The **Resource Description Framework** (RDF) is the foundational representation language of the Semantic Web. The basic building block of RDF is the **triple** containing a **subject**, **predicate**, and **object**. Global identifiers of resources are represented as [[uri|URIs]] (or, more generally, IRIs). These URIs can be expressed more compactly as [[uri#CURIEs|CURIEs]].
+
+A **graph** is a set of triples. A **named graph** is a particular set of triples with an associated name. When using named graphs, the term **quads** is often used in favor of triples. This refers to the original triple along with the name of the graph the triple is associated with.
 
 %%ANKI
 Basic
@@ -128,114 +130,62 @@ Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web
 <!--ID: 1722191359882-->
 END%%
 
-## Reification
-
-**Reification** refers to the process by which an abstract idea is made concrete. In the context of RDF, it refers to writing RDF statements about RDF statements.
-
 %%ANKI
 Basic
-What is reification?
-Back: The process by which an abstract idea is made concrete.
-Reference: “Reification (Knowledge Representation),” in _Wikipedia_, October 3, 2023, [https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)](https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)&oldid=1178437461).
-<!--ID: 1734385502410-->
-END%%
-
-%%ANKI
-Basic
-In the context of RDF, what does reification typically refer to?
-Back: Creating RDF statements about RDF statements.
-Reference: “Reification (Knowledge Representation),” in _Wikipedia_, October 3, 2023, [https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)](https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)&oldid=1178437461).
-<!--ID: 1734385502419-->
-END%%
-
-%%ANKI
-Basic
-In the context of RDF, what abstract notion is typically reified?
-Back: RDF statements.
+How does RDF define a graph?
+Back: As a set of triples.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1734385502422-->
+<!--ID: 1734804443458-->
 END%%
 
 %%ANKI
 Basic
-What term describes making an abstract concept concrete?
-Back: Reification.
+How does RDF define a named graph?
+Back: A graph with a name.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1734385502427-->
+<!--ID: 1734804443462-->
 END%%
 
-This kind of metadata about statements often take the forms of:
-
-* **Provenance**. Information about the source of a statement.
-* **Likelihood**. Information quantifying some probability regarding the statement.
-* **Context**. Information about a setting in which a statement holds.
-* **Time frame**. Information that holds within a particular period of time.
-
 %%ANKI
-Basic
-What might reifying a statement with respect to its provenance refer to?
-Back: Information about the source of the statement.
+Cloze
+{1:Triples} are to {2:graphs} whereas {2:quads} are to {1:named graphs}.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1734385502431-->
+<!--ID: 1734804443465-->
 END%%
 
 %%ANKI
 Basic
-What "form" of reification does the following sentence take on? $$\text{Wikipedia says Shakespeare wrote Hamlet.}$$
-Back: Provenance.
+What name is given to the members of a triple?
+Back: "Subject", "predicate", and "object".
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1734385502435-->
+<!--ID: 1734804443466-->
 END%%
 
 %%ANKI
 Basic
-What might reifying a statement with respect to its likelihood refer to?
-Back: Information quantifying some probability of the statement holding.
+What name is given to the members of a quad?
+Back: "Subject", "predicate", "object", and "graph".
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1734385502439-->
+<!--ID: 1734804443468-->
+END%%
+
+%%ANKI
+Cloze
+RDF is a {data model} whereas XML is a {serialization}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+Tags: xml
+<!--ID: 1734805690321-->
 END%%
 
 %%ANKI
 Basic
-What "form" of reification does the following sentence take on? $$\text{It is 90\% probable that Shakespeare wrote Hamlet.}$$
-Back: Likelihood.
+How might RDF and XML relate to one another?
+Back: XML can be used to serialize RDF.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1734385502443-->
-END%%
-
-%%ANKI
-Basic
-What might reifying a statement with respect to its context refer to?
-Back: Information about a setting in which the statement holds.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1734385502448-->
-END%%
-
-%%ANKI
-Basic
-What "form" of reification does the following sentence take on? $$\text{Kenneth Branagh played Hamlet in the movie.}$$
-Back: Context.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1734385502453-->
-END%%
-
-%%ANKI
-Basic
-What might reifying a statement with respect to its time frame refer to?
-Back: Information about a period of time in which the statement holds.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1734385502458-->
-END%%
-
-%%ANKI
-Basic
-What "form" of reification does the following sentence take on? $$\text{Hamlet plays on Broadway Jan. 11th through Mar. 12th.}$$
-Back: Time frame.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1734385502463-->
+Tags: xml
+<!--ID: 1734805690328-->
 END%%
 
 ## Bibliography
 
 * Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-* “Reification (Knowledge Representation),” in _Wikipedia_, October 3, 2023, [https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)](https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)&oldid=1178437461).

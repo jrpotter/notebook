@@ -62,17 +62,11 @@ END%%
 
 No set is equinumerous to its [[set/index#Power Set Axiom|power set]]. This is typically shown using a diagonalization argument.
 
-%%ANKI
-Basic
-What basic set operation produces a new set the original isn't equinumerous to?
-Back: The power set operation.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1732541309202-->
-END%%
+For any set $A$, $^A2 \approx \mathscr{P}(A)$.
 
 %%ANKI
 Basic
-What kind of argument is typically made to prove no set is equinumerous to its power set?
+What kind of argument is typically used to show $A \not\approx {\mathscr{P}(A)}$?
 Back: A diagonalization argument.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1732541309208-->
@@ -100,6 +94,94 @@ Let $g \colon A \rightarrow \mathscr{P}A$. *Why* isn't $B = \{x \in A \mid x \no
 Back: For all $x \in A$, $x \in B \Leftrightarrow x \not\in g(x)$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1732541309221-->
+END%%
+
+%%ANKI
+Basic
+For any set $A$, $\mathscr{P}(A)$ is equinumerous to what set of functions?
+Back: $^A2$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734802664285-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be any set. How is bijection $H \colon \,^A2 \rightarrow \mathscr{P}(A)$ typically defined?
+Back: $H(f) = \{a \in A \mid f(a) = 1\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734802664293-->
+END%%
+
+%%ANKI
+Basic
+For any set $A$, $^A2$ is equinumerous to what of $A$?
+Back: Its powerset.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734802664297-->
+END%%
+
+%%ANKI
+Basic
+What kind of argument is typically used to show $A \not\approx {^A2}$?
+Back: A diagonalization argument.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734802664301-->
+END%%
+
+%%ANKI
+Basic
+For any set $A$, what is the cardinality of its powerset?
+Back: $2^{\mathop{\text{card}}A}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734803273736-->
+END%%
+
+%%ANKI
+Basic
+What does $\mathop{\text{card}} \mathscr{P}(A)$ evaluate to?
+Back: $2^{\mathop{\text{card}}A}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734803273739-->
+END%%
+
+%%ANKI
+Basic
+The cardinality of what set equals $2^{\mathop{\text{card}}A}$?
+Back: $\mathscr{P}(A)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734803273741-->
+END%%
+
+%%ANKI
+Basic
+What does $\mathop{\text{card}} \mathscr{P}(\omega)$ evaluate to?
+Back: $2^{\aleph_0}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734803273742-->
+END%%
+
+%%ANKI
+Basic
+Why is the "power set" named the way it is?
+Back: Because $\mathop{\text{card}} \mathscr{P}(A)$ equals $2$ to the power of $\mathop{\text{card}} A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734803273743-->
+END%%
+
+%%ANKI
+Basic
+*How* do we know $\aleph_0 \not\approx 2^{\aleph_0}$ holds?
+Back: No set is equinumerous to its power set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734803273744-->
+END%%
+
+%%ANKI
+Basic
+For any cardinal number $\kappa$, *how* do we know $\kappa \not\approx 2^\kappa$?
+Back: No set is equinumerous to its power set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734803273745-->
 END%%
 
 ### Equivalence Concept
@@ -865,6 +947,13 @@ Let $\kappa$ be a cardinal number. What cardinal number does $\kappa \cdot 1$ ev
 Back: $\kappa$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1734520487359-->
+END%%
+
+%%ANKI
+Cloze
+For any cardinal number $\kappa$, addition's {$\kappa + \kappa$} equals multiplication's {$2 \cdot \kappa$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1734803273746-->
 END%%
 
 ### Exponentiation
