@@ -1055,9 +1055,11 @@
     "formal-system/language.md": "7797d33a0b0eb187d43dda46a138fb25",
     "computability/automaton.md": "e01a115d4df90f565c51435e3f558d1e",
     "computability/index.md": "92042eac186e5772144f86141fbac155",
-    "_journal/2024-12-23.md": "0a7cf306d477020e020ed23ce3c2d68d",
+    "_journal/2024-12-23.md": "72b0964a8a5ed8ba0acf7fe10b5de279",
     "_journal/2024-12/2024-12-22.md": "75375a867efc5b3aff406c73394d4814",
-    "computability/language.md": "9ee8bd16c231e71855ab1d8dae3188cb"
+    "computability/language.md": "9ee8bd16c231e71855ab1d8dae3188cb",
+    "posix/bash.md": "0bb06efa5d62635595f1a005be5bcbde",
+    "computability/regexp.md": "623753e4d631d12f6e80a83d7bde2301"
   },
   "fields_dict": {
     "Basic": [
