@@ -1,7 +1,7 @@
 ---
 title: Breadth-First Search
 TARGET DECK: Obsidian::STEM
-FILE TAGS: algorithm data_structure::graph
+FILE TAGS: algorithm::bfs data_structure::graph
 tags:
   - bfs
   - graph
@@ -12,6 +12,8 @@ tags:
 Bread-first search operates on a graph $G = \langle V, E \rangle$ and a **source** vertex $s$.
 
 ![[bfs.gif]]
+
+To keep track of progress, BFS colors each vertex white, gray, or black. All vertices start out white. They are colored gray upon discovery. They are painted black once all edges have been explored.
 
 %%ANKI
 Basic
@@ -29,50 +31,11 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 END%%
 
 %%ANKI
-Cloze
-The {1:source} of breadth-first {2:search} is the {2:root} of the breadth-first {1:tree}.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1727042295723-->
-END%%
-
-%%ANKI
 Basic
 Which of undirected and directed graphs is BFS applicable to?
 Back: Both.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1727042295728-->
-END%%
-
-%%ANKI
-Basic
-With respect to breadth-first trees, what does the predecessor of a node $N$ refer to?
-Back: The node from which $N$ was discovered.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1727042295733-->
-END%%
-
-%%ANKI
-Basic
-With respect to breadth-first trees, what does the parent of a node $N$ refer to?
-Back: The node from which $N$ was discovered.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1727042295739-->
-END%%
-
-%%ANKI
-Basic
-With respect to breadth-first trees, the predecessor of a node is also known as what?
-Back: The parent of the node.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1727044035958-->
-END%%
-
-%%ANKI
-Basic
-With respect to breadth-first trees, the parent of a node is also known as what?
-Back: The predecessor of the node.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1727044035963-->
 END%%
 
 %%ANKI
@@ -97,12 +60,13 @@ What basic graph algorithm is the following a demonstration of?
 ![[bfs.gif]]
 Back: Breadth-first search.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algorithm::dfs
 <!--ID: 1727044035969-->
 END%%
 
 %%ANKI
 Basic
-In BFS, what happens to the nodes found within the internal queue?
+What happens to nodes found within the internal queue?
 Back: Undiscovered nodes adjacent to those in the queue are enqueued.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1727044035972-->
@@ -113,6 +77,7 @@ Basic
 Which of BFS or DFS is used to find shortest paths?
 Back: BFS.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+Tags: algorithm::dfs
 <!--ID: 1727044035975-->
 END%%
 
@@ -178,6 +143,114 @@ Basic
 Back: For each vertex being analyzed, we must examine $\lvert V \rvert$ entries for adjacent vertices.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1727044184066-->
+END%%
+
+%%ANKI
+Basic
+What does a white vertex typically represent?
+Back: A vertex that has not been discovered.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+END%%
+
+%%ANKI
+Basic
+When is a white vertex painted gray?
+Back: Upon discovery.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+END%%
+
+%%ANKI
+Basic
+When is a white vertex painted black?
+Back: N/A. It must be painted gray before it's painted black.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+END%%
+
+%%ANKI
+Basic
+What does a gray vertex typically represent?
+Back: A vertex that is in the queue, i.e. the frontier discovery happens against.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+END%%
+
+%%ANKI
+Basic
+When is a gray vertex painted white?
+Back: N/A.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+END%%
+
+%%ANKI
+Basic
+When is a gray vertex painted black?
+Back: After all of its edges have been examined.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+END%%
+
+%%ANKI
+Basic
+What does a black vertex typically represent?
+Back: A vertex whose edges have all been explored.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+END%%
+
+## Breadth-First Forests
+
+To color an entire graph black, BFS may need to be invoked multiple times. After each invocation of BFS, a new invocation can be run with any remaining white vertex as the source. Each invocation yields a **breadth-first tree**. Multiple invocations yield a **breadth-first forest**.
+
+%%ANKI
+Basic
+When might white vertices remain after BFS is invoked?
+Back: When there exist vertices unreachable from the last used source vertex.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735081276213-->
+END%%
+
+%%ANKI
+Basic
+How many invocations of BFS are required to color a graph black?
+Back: One or more.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735081276214-->
+END%%
+
+%%ANKI
+Cloze
+The {1:source} of a breadth-first {2:search} is the {2:root} of a breadth-first {1:tree}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1727042295723-->
+END%%
+
+%%ANKI
+Basic
+With respect to breadth-first trees, what does the predecessor of a node $N$ refer to?
+Back: The node from which $N$ was discovered.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1727042295733-->
+END%%
+
+%%ANKI
+Basic
+With respect to breadth-first trees, what does the parent of a node $N$ refer to?
+Back: The node from which $N$ was discovered.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1727042295739-->
+END%%
+
+%%ANKI
+Basic
+With respect to breadth-first trees, the predecessor of a node is also known as what?
+Back: The parent of the node.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1727044035958-->
+END%%
+
+%%ANKI
+Basic
+With respect to breadth-first trees, the parent of a node is also known as what?
+Back: The predecessor of the node.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1727044035963-->
 END%%
 
 ## Bibliography

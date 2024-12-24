@@ -632,7 +632,7 @@
     "_journal/2024-06/2024-06-12.md": "f82dfa74d0def8c3179d3d076f94558e",
     "_journal/2024-06-14.md": "5d12bc272238ac985a1d35d3d63ea307",
     "_journal/2024-06/2024-06-13.md": "e2722a00585d94794a089e8035e05728",
-    "set/functions.md": "7cee6b7684ca51b706bce617b8d06c90",
+    "set/functions.md": "a7062cbcbbee036de8133380a90135f9",
     "_journal/2024-06-15.md": "92cb8dc5c98e10832fb70c0e3ab3cec4",
     "_journal/2024-06/2024-06-14.md": "8bbe0e1ca371756b91eec66af73911ce",
     "lambda-calculus/beta-reduction.md": "0935987f2bac0e6298735f2b26fd5885",
@@ -869,7 +869,7 @@
     "_journal/2024-09/2024-09-20.md": "69cf79bb0cb8c116a9c0f671671fdc44",
     "_journal/2024-09-22.md": "2d00b00b4eb9964465f30210187603cf",
     "_journal/2024-09/2024-09-21.md": "2e6425f4db0187082947c3e0cb24f754",
-    "algorithms/bfs.md": "082644a948180337a0065bb11d28aff9",
+    "algorithms/bfs.md": "2baad5ef237e596ca1808d759e63aa72",
     "_journal/2024-09-23.md": "c0a87ca092a36e2761e844f34296f2f7",
     "_journal/2024-09/2024-09-22.md": "c27835ce1d82d10c906b40b420145d0c",
     "_journal/2024-09-25.md": "4527ac5c132aaf5adc6e624c5e4aca5e",
@@ -917,7 +917,7 @@
     "_journal/2024-10/2024-10-16.md": "cd778e1be2737462d885ae038c7b9744",
     "_journal/2024-10/2024-10-15.md": "c21679bd2c3b29f5a86d56a1fd23b18f",
     "_journal/2024-10-22.md": "4af65962007cfecdb2c679b44b56d25f",
-    "algorithms/dfs.md": "5fe40544db71b5cc79f4f8149478fc8e",
+    "algorithms/dfs.md": "48f87e5976e1a9469b009346332ea92d",
     "_journal/2024-10/2024-10-21.md": "de1a0861e87df29aeff11a291f8fbd45",
     "_journal/2024-10-23.md": "51b2ca6edf23b6a64fd7d3638a0b54cb",
     "_journal/2024-10/2024-10-22.md": "5ff4eb7eba58e77c4fb65b7162a485e6",
@@ -969,7 +969,7 @@
     "_journal/2024-11/2024-11-21.md": "951b6034d60a40dbd8201c50abf0dbb9",
     "_journal/2024-11/2024-11-20.md": "951b6034d60a40dbd8201c50abf0dbb9",
     "_journal/2024-11/2024-11-19.md": "d879f57154cb27cb168eb1f1f430e312",
-    "set/cardinality.md": "29566dcf1454b9eed649b7d8c4d2335b",
+    "set/cardinality.md": "5da2685e8a2e210d3923f81369ad7028",
     "geometry/area.md": "7f947bb5ac782495a1fb4a63bb2463e7",
     "_journal/2024-11-23.md": "911f82ab8aede5ecdb96493aef64b0b9",
     "_journal/2024-11/2024-11-22.md": "51117030e2364dbce3a8d507dead86ae",
@@ -1059,7 +1059,9 @@
     "_journal/2024-12/2024-12-22.md": "75375a867efc5b3aff406c73394d4814",
     "computability/language.md": "9ee8bd16c231e71855ab1d8dae3188cb",
     "posix/bash.md": "0bb06efa5d62635595f1a005be5bcbde",
-    "computability/regexp.md": "623753e4d631d12f6e80a83d7bde2301"
+    "computability/regexp.md": "623753e4d631d12f6e80a83d7bde2301",
+    "_journal/2024-12-24.md": "d26217e8cc96080d232b86f9f8a08c65",
+    "_journal/2024-12/2024-12-23.md": "72b0964a8a5ed8ba0acf7fe10b5de279"
   },
   "fields_dict": {
     "Basic": [

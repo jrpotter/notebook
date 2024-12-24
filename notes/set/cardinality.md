@@ -703,6 +703,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1733675522751-->
 END%%
 
+%%ANKI
+Basic
+Suppose sets $A$ and $B$ are finite. When is $^BA$ infinite?
+Back: N/A. The set of functions from one finite set to another is always finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143693-->
+END%%
+
 ### Addition
 
 Let $\kappa$ and $\lambda$ be any cardinal numbers. Then $\kappa + \lambda = \mathop{\text{card}}(K \cup L)$, where $K$ and $L$ are any disjoint sets of cardinality $\kappa$ and $\lambda$, respectively.
@@ -816,6 +824,38 @@ Let $\kappa$ be a cardinal number. What cardinal number does $\kappa + 0$ evalua
 Back: $0$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1734520487333-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be cardinal numbers. Does $\kappa + \lambda = \lambda + \kappa$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143694-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be cardinal numbers. *Why* does $\kappa + \lambda = \lambda + \kappa$?
+Back: Because the union of sets is commutative.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143695-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. Does $\kappa + (\lambda + \mu) = (\kappa + \lambda) + \mu$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143696-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. *Why* does $\kappa + (\lambda + \mu) = (\kappa + \lambda) + \mu$?
+Back: Because the union of sets is associative.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143697-->
 END%%
 
 ### Multiplication
@@ -956,6 +996,62 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1734803273746-->
 END%%
 
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be cardinal numbers. Does $\kappa \cdot \lambda = \lambda \cdot \kappa$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143698-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be cardinal numbers. *Why* does $\kappa \cdot \lambda = \lambda \cdot \kappa$?
+Back: Because $K \times L \approx L \times K$ for any sets $K$ and $L$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143699-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. Does $\kappa \cdot (\lambda \cdot \mu) = (\kappa \cdot \lambda) \cdot \mu$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143700-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. *Why* does $\kappa \cdot (\lambda \cdot \mu) = (\kappa \cdot \lambda) \cdot \mu$?
+Back: Because $K \times (L \times M) \approx (K \times L) \times M$ for any sets $K$, $L$, and $M$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143701-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. What does the distributive property state?
+Back: $\kappa \cdot (\lambda + \mu) = (\kappa \cdot \lambda) + (\kappa \cdot \mu)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143702-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. *Why* does $\kappa \cdot (\lambda + \mu) = (\kappa \cdot \lambda) + (\kappa \cdot \mu)$?
+Back: Because the Cartesian product distributes over the union operation.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143703-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be cardinal numbers. What does $\kappa \cdot (\lambda + 1)$ evaluate to?
+Back: $\kappa \cdot \lambda + \kappa$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143704-->
+END%%
+
 ### Exponentiation
 
 Let $\kappa$ and $\lambda$ be any cardinal numbers. Then $\kappa^\lambda = \mathop{\text{card}}(^LK)$, where $K$ and $L$ are any sets of cardinality $\kappa$ and $\lambda$, respectively.
@@ -1077,6 +1173,67 @@ Let $\kappa$ be a cardinal number. Expression $\kappa^0$ corresponds to the card
 Back: $^\varnothing K$ where $\mathop{\text{card}} K = \kappa$..
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1734520487388-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be cardinal numbers. Does $\kappa ^ \lambda = \lambda ^ \kappa$?
+Back: Not necessarily.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143705-->
+END%%
+
+%%ANKI
+Cloze
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. Then $\kappa^{\lambda + \mu} =$ {$\kappa^\lambda \cdot \kappa^\mu$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143706-->
+END%%
+
+%%ANKI
+Cloze
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. Then $(\kappa \cdot \lambda)^\mu =$ {$\kappa^\mu \cdot \lambda^\mu$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143707-->
+END%%
+
+%%ANKI
+Cloze
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. Then $(\kappa^\lambda)^\mu =$ {$\kappa^{\lambda \cdot \mu}$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143708-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. What $\lambda$-calculus concept does $(\kappa^\lambda)^\mu = \kappa^{\lambda \cdot \mu}$ embody?
+Back: Currying.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143709-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be cardinal numbers. Rewrite $\kappa^{\lambda + 1}$ without using addition.
+Back: $\kappa^\lambda \cdot \kappa$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143710-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be a cardinal number. How is the factorial of $\kappa$ denoted?
+Back: $\kappa !$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143711-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be a cardinal number. How is the factorial of $\kappa$ defined?
+Back: As $\mathop{\text{card}} \{ f \mid f \text{ is a permutation of } K\}$ for some $\mathop{\text{card}} K = \kappa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143712-->
 END%%
 
 ## Bibliography
