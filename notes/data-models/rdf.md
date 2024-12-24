@@ -1,8 +1,9 @@
 ---
 title: RDF
 TARGET DECK: Obsidian::STEM
-FILE TAGS: ontology::rdf
+FILE TAGS: data_model::rdf
 tags:
+  - data_model
   - rdf
 ---
 
@@ -173,7 +174,7 @@ END%%
 Cloze
 RDF is a {data model} whereas XML is a {serialization}.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-Tags: xml
+Tags: serialization::xml
 <!--ID: 1734805690321-->
 END%%
 
@@ -182,7 +183,7 @@ Basic
 How might RDF and XML relate to one another?
 Back: XML can be used to serialize RDF.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-Tags: xml
+Tags: serialization::xml
 <!--ID: 1734805690328-->
 END%%
 

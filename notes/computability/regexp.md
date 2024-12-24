@@ -8,6 +8,10 @@ tags:
 
 ## Overview
 
+TODO
+
+## Extensions
+
 The following ERE (**E**xtended **R**egular **E**xpression) operators were defined to achieve consistency between programs like `grep`, `sed`, and `awk`. In POSIX, regexps are greedy.
 
 %%ANKI
@@ -253,7 +257,7 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 <!--ID: 1707050923713-->
 END%%
 
-## Character Classes
+### Character Classes
 
 Notation for describing a class of characters specific to a given locale/character set.
 

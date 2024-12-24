@@ -1,8 +1,9 @@
 ---
 title: XML
 TARGET DECK: Obsidian::STEM
-FILE TAGS: xml
+FILE TAGS: serialization::xml
 tags:
+  - serialization
   - xml
 ---
 

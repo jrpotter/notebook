@@ -237,7 +237,10 @@
     "abs-down.png",
     "abs-right-down.png",
     "abs-left-down.png",
-    "triple-table-repr.png"
+    "triple-table-repr.png",
+    "state-diagram.png",
+    "state-diagram-ends1.png",
+    "state-diagram-ends0.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -578,7 +581,7 @@
     "_journal/2024-05/2024-05-25.md": "3e8a0061fa58a6e5c48d12800d1ab869",
     "_journal/2024-05-27.md": "b36636d10eab34380f17f288868df3ae",
     "_journal/2024-05/2024-05-26.md": "abe84b5beae74baa25501c818e64fc95",
-    "algebra/set.md": "6cf503bd1118d22a45f1571057bea96d",
+    "algebra/set.md": "ae08c25c07ecedb2a05c02b258b4542a",
     "algebra/boolean.md": "c9bd5abb601be6d2bedd24d5f54848b0",
     "git/merge-conflicts.md": "761ad6137ec51d3877f7d5b3615ca5cb",
     "_journal/2024-05-28.md": "0f6aeb5ec126560acdc2d8c5c6570337",
@@ -976,7 +979,7 @@
     "_journal/2024-11/2024-11-24.md": "894b021e6335d4e6947448c8d362c083",
     "_journal/2024-11-26.md": "29bc0b54d23034b9108e567a1d5fa8ac",
     "_journal/2024-11/2024-11-25.md": "1ec17a8473fa9c4779090ecbd22d70ef",
-    "calculus/intervals.md": "6a317fb5053b172611e9e7ae6f66f609",
+    "calculus/intervals.md": "7da1830e226834566eab2c5bd2cae466",
     "c17/storage.md": "07f0aa969d502df97f757318bde3c166",
     "c17/functions.md": "76b12732875998c44b22ba3531cf88a0",
     "_journal/2024-11-27.md": "5a58e3a0bd08c689d30600021937495d",
@@ -999,7 +1002,7 @@
     "_journal/2024-12/2024-12-04.md": "965f6619edf1002d960203e3e12a413b",
     "_journal/2024-12-06.md": "d75323d0fec57f4fc1f13cb4370df18d",
     "_journal/2024-12/2024-12-05.md": "4f3b1e7a43e01cc97b0eed6fbc6c1f96",
-    "calculus/integrals.md": "e8d36a8fae9cd785374f419996ef5269",
+    "calculus/integrals.md": "edc4e00d8e2b9a7cd14836bb543bb8b6",
     "_journal/2024-12-07.md": "bfb6c4db0acbacba19f03a04ec29fa5c",
     "_journal/2024-12/2024-12-06.md": "d73b611d2d15827186a0252d9b9a6580",
     "_journal/2024-12-08.md": "5662897539b222db1af45dcd217f0796",
@@ -1015,7 +1018,7 @@
     "_journal/2024-12-11.md": "e7393c01b44c5b804f86f45b8b899b59",
     "_journal/2024-12/2024-12-10.md": "d4f43b32220dbe174be514397b1bb035",
     "_journal/2024-12/2024-12-11.md": "e7393c01b44c5b804f86f45b8b899b59",
-    "encoding/uri.md": "394abe477b882e1414dd2fb151fea823",
+    "encoding/uri.md": "09552882689f55414786d709c43f6697",
     "encoding/xml.md": "01a66b1a102cccc682f8f1cab0f50bc6",
     "encoding/rdf.md": "87a47be25bc5754a11166a4b7663cada",
     "_journal/2024-12-15.md": "be66c8808d8bb66d4e7b91db7c93c94a",
@@ -1042,7 +1045,19 @@
     "encoding/xml/rdf.md": "f4491dd28b937da3182d701a863e40fe",
     "encoding/xml/index.md": "01a66b1a102cccc682f8f1cab0f50bc6",
     "ontology/reification.md": "ef8275957dcc1a7e5501722d4652e41c",
-    "ontology/rdf.md": "fd273c30bec6f46b68547f0d392620b1"
+    "ontology/rdf.md": "fd273c30bec6f46b68547f0d392620b1",
+    "data-models/rdf.md": "a07c290d11087346757185b8047c94c7",
+    "serialization/xml.md": "84b632282ebcc2b6216923a02abdd4c2",
+    "serialization/index.md": "5ed7e99e4efc4844839ea357d351f5d8",
+    "data-models/index.md": "9e60f40798490f0743f291e55f492033",
+    "_journal/2024-12-22.md": "015dbf675853a81db07d641e8dab7fd4",
+    "_journal/2024-12/2024-12-21.md": "1c1a5791f7519c92e882957cf417b51f",
+    "formal-system/language.md": "7797d33a0b0eb187d43dda46a138fb25",
+    "computability/automaton.md": "e01a115d4df90f565c51435e3f558d1e",
+    "computability/index.md": "92042eac186e5772144f86141fbac155",
+    "_journal/2024-12-23.md": "0a7cf306d477020e020ed23ce3c2d68d",
+    "_journal/2024-12/2024-12-22.md": "75375a867efc5b3aff406c73394d4814",
+    "computability/language.md": "9ee8bd16c231e71855ab1d8dae3188cb"
   },
   "fields_dict": {
     "Basic": [

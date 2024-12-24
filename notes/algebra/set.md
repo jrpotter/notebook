@@ -366,7 +366,7 @@ For any sets $A$, $B$, and $C$, $$\begin{align*} A \cap (B \cup C) & = (A \cap B
 %%ANKI
 Basic
 The distributive laws of the algebra of sets apply to what operators?
-Back: $\cup$ and $\cap$
+Back: $\cup$ and $\cap$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716803270441-->
 END%%

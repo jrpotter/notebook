@@ -1,7 +1,7 @@
 ---
 title: Intervals
 TARGET DECK: Obsidian::STEM
-FILE TAGS: calculus::intervals
+FILE TAGS: calculus::interval
 tags:
   - calculus
 ---
