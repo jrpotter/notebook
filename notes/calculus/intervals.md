@@ -55,7 +55,7 @@ END%%
 
 %%ANKI
 Cloze
-Let $a, b \in \mathbb{R}$ s.t. $a < b$. Then {$(a, b]$ and $[a, b)$} denote {half-open} intervals.
+Let $a, b \in \mathbb{R}$ s.t. $a < b$. Then {1:$(a, b]$} and {1:$[a, b)$} denote {2:half-open} intervals.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1732624724942-->
 END%%

@@ -980,7 +980,7 @@
     "_journal/2024-11/2024-11-24.md": "894b021e6335d4e6947448c8d362c083",
     "_journal/2024-11-26.md": "29bc0b54d23034b9108e567a1d5fa8ac",
     "_journal/2024-11/2024-11-25.md": "1ec17a8473fa9c4779090ecbd22d70ef",
-    "calculus/intervals.md": "7da1830e226834566eab2c5bd2cae466",
+    "calculus/intervals.md": "163f636be5d9f61ae675b9619408e4c6",
     "c17/storage.md": "528d7409c1c0298baf9bb55738699f47",
     "c17/functions.md": "76b12732875998c44b22ba3531cf88a0",
     "_journal/2024-11-27.md": "5a58e3a0bd08c689d30600021937495d",
@@ -1068,7 +1068,9 @@
     "linkers/relocatable.md": "fa89f08afe9a54d7b4e6374282983753",
     "data-models/federation.md": "1d92747304186bd2833a00a488fcac48",
     "_journal/2024-12-26.md": "022aeaf68d46fd39b23aca9c577f3f41",
-    "_journal/2024-12/2024-12-25.md": "1717d37b074df58175ec0272adc278de"
+    "_journal/2024-12/2024-12-25.md": "1717d37b074df58175ec0272adc278de",
+    "_journal/2024-12-27.md": "acb4db426b352cb7b90194ef73ce05e5",
+    "_journal/2024-12/2024-12-26.md": "59e59cad1ae568adbe8e27e98d36c59c"
   },
   "fields_dict": {
     "Basic": [
