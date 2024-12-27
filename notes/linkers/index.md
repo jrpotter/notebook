@@ -103,7 +103,7 @@ END%%
 
 Object files come in three forms:
 
-1. **Relocatable object files**. Contains binary code and data in a form that can be combined with other relocatable object files at compile time.
+1. [[relocatable|Relocatable object files]]. Contains binary code and data in a form that can be combined with other relocatable object files at compile time.
 2. **Executable object files**. Contains binary code and data in a form that can be copied directly into memory and executed.
 3. **Shared object files**. A special type of relocatable object file that can be loaded into memory and linked dynamically, at either load time or run time.
 
@@ -119,15 +119,6 @@ END%%
 
 %%ANKI
 Basic
-Relocatable object files are outputs of which compiler driver component?
-Back: The assembler.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
-<!--ID: 1734356868394-->
-END%%
-
-%%ANKI
-Basic
 Executable object files are outputs of which compiler driver component?
 Back: The linker.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
@@ -137,27 +128,11 @@ END%%
 
 %%ANKI
 Basic
-Relocatable object files are inputs into which compiler driver component?
-Back: The linker.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
-<!--ID: 1734356868403-->
-END%%
-
-%%ANKI
-Basic
 Executable object files are inputs into which compiler driver component?
 Back: N/A.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1734356868406-->
-END%%
-
-%%ANKI
-Cloze
-A {shared} object file is a special case of a {relocatable} object file.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1734356868428-->
 END%%
 
 %%ANKI
@@ -190,6 +165,13 @@ In what way is the term "object file" misused by Bryant et al.?
 Back: Technically this term only refers to object modules on disk.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734356868433-->
+END%%
+
+%%ANKI
+Cloze
+A {shared} object file is a special case of a {relocatable} object file.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1734356868428-->
 END%%
 
 ## Bibliography

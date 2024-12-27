@@ -821,7 +821,7 @@ END%%
 %%ANKI
 Basic
 Let $\kappa$ be a cardinal number. What cardinal number does $\kappa + 0$ evaluate to?
-Back: $0$
+Back: $\kappa$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1734520487333-->
 END%%
@@ -1082,7 +1082,7 @@ END%%
 
 %%ANKI
 Basic
-Let $K \approx \kappa$ and $L \approx \lambda$. What is necessary for $\mathop{\text{card}}(^LK) \approx \kappa^\lambda$?
+Let $\mathop{\text{card}}K = \kappa$ and $\mathop{\text{card}} L = \lambda$. What is necessary for $\mathop{\text{card}}(^LK) = \kappa^\lambda$?
 Back: N/A. This is true by definition.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733710439171-->
@@ -1170,7 +1170,7 @@ END%%
 %%ANKI
 Basic
 Let $\kappa$ be a cardinal number. Expression $\kappa^0$ corresponds to the cardinality of what set?
-Back: $^\varnothing K$ where $\mathop{\text{card}} K = \kappa$..
+Back: $^\varnothing K$ where $\mathop{\text{card}} K = \kappa$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1734520487388-->
 END%%

@@ -1,8 +1,9 @@
 ---
 title: Regular Expressions
 TARGET DECK: Obsidian::STEM
-FILE TAGS: regexp
+FILE TAGS: computability::regexp
 tags:
+  - computability
   - regexp
 ---
 

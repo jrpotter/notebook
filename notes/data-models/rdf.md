@@ -187,6 +187,89 @@ Tags: serialization::xml
 <!--ID: 1734805690328-->
 END%%
 
+## Blank Nodes
+
+A **blank node** (bnode) is a node in an RDF graph representing a resource for which a [[uri|URI]] is not specified. That is, the represented resource is anonymous. Such a node can only be used as a subject or object in an RDF triple.
+
+%%ANKI
+Basic
+What is a blank node?
+Back: A node in an RDF graph representing a resource with an unspecified URI.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735162429073-->
+END%%
+
+%%ANKI
+Cloze
+A {bnode} is shorthand for a {blank node}.
+Back: A node in an RDF graph representing a resource with an unspecified URI.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735162429077-->
+END%%
+
+%%ANKI
+Basic
+Which quantifier does a bnode correspond to?
+Back: $\exists$
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735162429079-->
+END%%
+
+%%ANKI
+Basic
+What name is given to a node with an unspecified URI?
+Back: A blank node.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735162429089-->
+END%%
+
+%%ANKI
+Basic
+What "position" in an RDF triple can a blank node take on?
+Back: Either the subject or object.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735162429097-->
+END%%
+
+%%ANKI
+Basic
+What "position" in an RDF triple is a blank node prohibited to take on?
+Back: The predicate.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735162429102-->
+END%%
+
+## Federation
+
+The RDF data model was designed from the beginning with [[federation|data federation]] in mind. Because every RDF store represents RDF data in the same way (i.e. as a set of triples), federation is as simple as combining the commonly encoded data into a single store before querying.
+
+%%ANKI
+Basic
+What mechanism makes RDF data federation easy?
+Back: Every source communicates data in the same way (i.e. as a set of triples).
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+Tags: data_model::federation
+<!--ID: 1735176997772-->
+END%%
+
+%%ANKI
+Basic
+In the context of RDF, what does federation refer to?
+Back: The combining of multiple RDF stores into a single (possibly virtual) view.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+Tags: data_model::federation
+<!--ID: 1735176997776-->
+END%%
+
+%%ANKI
+Basic
+What does the federated graph refer to?
+Back: The graph produced by combining various federated data sources.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+Tags: data_model::federation
+<!--ID: 1735176997779-->
+END%%
+
 ## Bibliography
 
 * Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.

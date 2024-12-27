@@ -496,6 +496,159 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1735008834191-->
 END%%
 
+%%ANKI
+Basic
+What is a nonregular language?
+Back: One that exists beyond the capabilities of a finite automaton.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593029-->
+END%%
+
+## Regular Operations
+
+Let $A$ and $B$ be languages. Then the **regular operations** union, intersection, concatenation, and Kleene star are defined as:
+
+* Union: $A \cup B = \{x \mid x \in A \lor x \in B \}$
+* Intersection: $A \cap B = \{x \mid x \in A \land x \in B\}$
+* Concatenation: $A \circ B = \{ xy \mid x \in A \land y \in B \}$
+* Kleene star: $A^* = \{ x_1x_2\cdots x_k \mid k \geq 0 \land x_i \in A \}$
+
+%%ANKI
+Basic
+Let $A$ and $B$ be languages. How is the union regular operation defined?
+Back: As $A \cup B = \{ x \mid x \in A \lor x \in B \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593059-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be languages. How is the intersection regular operation defined?
+Back: As $A \cap B = \{ x \mid x \in A \land x \in B \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593065-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be languages. How is the concatenation regular operation defined?
+Back: As $A \circ B = \{ xy \mid x \in A \land y \in B \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593071-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a language. How is the Kleene star regular operation defined?
+Back: As $A^* = \{ x_1x_2 \cdots x_k \mid k \geq 0 \land x_i \in A \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593075-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be languages. How is their union denoted?
+Back: $A \cup B$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593080-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be languages. How is their intersection denoted?
+Back: $A \cap B$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593085-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be languages. How is their concatenation denoted?
+Back: $A \circ B$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593089-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a language. How is its Kleene star denoted?
+Back: $A^*$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593093-->
+END%%
+
+%%ANKI
+Basic
+Why are the regular operations named the way they are?
+Back: Because the set of regular languages is closed under them.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593097-->
+END%%
+
+%%ANKI
+Basic
+Let $A = \{a, b \}$ and $B = \{c, d\}$ be languages. What does $A \cup B$ evaluate to?
+Back: $\{a, b, c, d\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593102-->
+END%%
+
+%%ANKI
+Basic
+Let $A = \{a, b \}$ and $B = \{c, d\}$ be languages. What does $A \cap B$ evaluate to?
+Back: $\varnothing$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593106-->
+END%%
+
+%%ANKI
+Basic
+Let $A = \{a, b \}$ and $B = \{c, d\}$ be languages. What does $A \circ B$ evaluate to?
+Back: $\{ac, ad, bc, bd\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593113-->
+END%%
+
+%%ANKI
+Basic
+Let $A = \{a, b \}$ be a language. What does $A^*$ evaluate to?
+Back: $\{\epsilon, a, b, aa, ab, ba, bb, \ldots\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593119-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a language. What regular operation is denoted as $A^*$?
+Back: The Kleene star.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593126-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be languages. What regular operation is denoted as $A \cup B$?
+Back: The union.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593131-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be languages. What regular operation is denoted as $A \cap B$?
+Back: The intersection.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593138-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be languages. What regular operation is denoted as $A \circ B$?
+Back: The concatenation.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1735160593144-->
+END%%
+
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).

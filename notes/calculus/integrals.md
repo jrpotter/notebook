@@ -128,7 +128,7 @@ END%%
 %%ANKI
 Basic
 Let $s$ be a constant function. What does $\int_a^b s(x) \,dx$ evaluate to?
-Back: $c(b - a)$
+Back: $c(b - a)$ where $s(x) = c$ for all $x \in [a, b]$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1733520215126-->
 END%%

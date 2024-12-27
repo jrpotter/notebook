@@ -852,7 +852,7 @@ END%%
 
 %%ANKI
 Cloze
-Storage allocated through `malloc` is {uninitialized} and has {no type}.
+Storage allocated through `malloc` is neither {initialized} nor has a {type}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874729-->
 END%%

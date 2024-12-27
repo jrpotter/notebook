@@ -168,7 +168,7 @@ END%%
 %%ANKI
 Basic
 Given function $f$, which of $a$, $b$, $c$, and/or $d$ relate to shifting? $$y = af(b[x - c]) + d$$
-Back: $c$ and $d$
+Back: $c$ and $d$.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1734620943896-->
 END%%
@@ -176,7 +176,7 @@ END%%
 %%ANKI
 Basic
 Given function $f$, which of $a$, $b$, $c$, and/or $d$ relate to a horizontal transformation? $$y = af(b[x - c]) + d$$
-Back: $b$ and $c$
+Back: $b$ and $c$.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1734620943904-->
 END%%
@@ -232,7 +232,7 @@ END%%
 %%ANKI
 Basic
 How is the graph of $y = f(x)$ transformed in the graph of $y = \frac{1}{2}f(\frac{x}{3})$?
-Back: It's horizontally scaled by $3$ and vertically compressed by $2$.
+Back: It's horizontally stretched by $3$ and vertically compressed by $2$.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1734656174535-->
 END%%
@@ -264,7 +264,7 @@ END%%
 %%ANKI
 Basic
 How is the graph of $y = f(x)$ transformed in the graph of $y = 2f(x) + 5$?
-Back: It's vertically scaled by $2$ and then shifted up by $5$.
+Back: It's vertically stretched by $2$ and then shifted up by $5$.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1734656174610-->
 END%%

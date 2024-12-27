@@ -304,16 +304,18 @@ A depth-first forest can contain four different types of edges:
 
 %%ANKI
 Basic
-How many edge types might there exist in a depth-first forest?
+In a depth-first forest, edges are classified in how many ways?
 Back: Four.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735085295252-->
 END%%
 
 %%ANKI
 Basic
-What are the different edge types possibly found in a depth-first forest?
+In a depth-first forest, what are the four edge classifications?
 Back: Tree, forward, back, and cross.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735085295257-->
 END%%
 
 %%ANKI
@@ -321,6 +323,7 @@ Basic
 Let $\langle u, v \rangle$ be an edge in a depth-first forest. When is $\langle u, v \rangle$ a tree edge?
 Back: When $v$ was first discovered along edge $\langle u, v \rangle$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735085295260-->
 END%%
 
 %%ANKI
@@ -328,6 +331,7 @@ Basic
 Let $\langle u, v \rangle$ be an edge in a depth-first forest. When is $\langle u, v \rangle$ a back edge?
 Back: When $v$ is an ancestor of edge $u$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735085295263-->
 END%%
 
 %%ANKI
@@ -335,11 +339,12 @@ Basic
 Let $\langle u, v \rangle$ be an edge in a depth-first forest. When is $\langle u, v \rangle$ a forward edge?
 Back: When $\langle u, v \rangle$ is a non-tree edge such that $v$ is a proper descendant of $u$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735085295267-->
 END%%
 
 %%ANKI
 Let $\langle u, v \rangle$ be an edge in a depth-first forest. When is $\langle u, v \rangle$ a cross edge?
-Back: When $\langle u, v \rangle$ is not a tree, forward, or back edge.
+Back: When $u$ and $v$ have no ancestor-descendant relation.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 END%%
 
@@ -348,6 +353,119 @@ Basic
 What kind of edge is a self-loop in a depth-first forest classified as?
 Back: A back edge.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735085295270-->
+END%%
+
+%%ANKI
+Basic
+Consider depth-first forest with edge $\langle u, v \rangle$. What kind of edge is it if:
+* $\langle u, v \rangle$ is not a tree edge; and
+* $v$ is a descendant of $u$.
+Back: A forward edge.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735085295273-->
+END%%
+
+%%ANKI
+Basic
+Consider depth-first forest with edge $\langle u, v \rangle$. What kind of edge is it if:
+* $\langle u, v \rangle$ is not a tree edge; and
+* $v$ is *not* a descendant of $u$.
+Back: Either a back edge or cross edge.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735085295276-->
+END%%
+
+%%ANKI
+Basic
+Consider depth-first forest with edge $\langle u, v \rangle$. What kind of edge is it if:
+* $\langle u, v \rangle$ is not a tree edge; and
+* $v$ is an ancestor of $u$.
+Back: A back edge.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735085295280-->
+END%%
+
+%%ANKI
+Basic
+Consider depth-first forest with edge $\langle u, v \rangle$. What kind of edge is it if:
+* $\langle u, v \rangle$ is not a tree edge; and
+* $v$ is *not* an ancestor of $u$.
+Back: Either a forward edge or cross edge.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735085295283-->
+END%%
+
+%%ANKI
+Basic
+Consider depth-first forest with edge $\langle u, v \rangle$. What kind of edge is it if:
+* $u$ and $v$ share no ancestor-descendant relation.
+Back: A cross edge.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735085295287-->
+END%%
+
+%%ANKI
+Basic
+Assuming solid lines are tree edges, how is edge $\langle s, c \rangle$ classified?
+![[dfs-edge-classification.png]]
+Back: As a forward edge.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735086202724-->
+END%%
+
+%%ANKI
+Basic
+Assuming solid lines are tree edges, *why* is edge $\langle s, c \rangle$ a forward edge?
+![[dfs-edge-classification.png]]
+Back: Because $c$ is a descendant of $s$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735086202728-->
+END%%
+
+%%ANKI
+Basic
+Assuming solid lines are tree edges, how is edge $\langle c, s \rangle$ classified?
+![[dfs-edge-classification.png]]
+Back: N/A. This edge does not exist.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735086202730-->
+END%%
+
+%%ANKI
+Basic
+Assuming solid lines are tree edges, how is edge $\langle b, s \rangle$ classified?
+![[dfs-edge-classification.png]]
+Back: As a back edge.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735086202733-->
+END%%
+
+%%ANKI
+Basic
+Assuming solid lines are tree edges, *why* is edge $\langle b, s \rangle$ a back edge?
+![[dfs-edge-classification.png]]
+Back: Because $s$ is an ancestor of $b$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735086202736-->
+END%%
+
+%%ANKI
+Basic
+Assuming solid lines are tree edges, how is edge $\langle d, c \rangle$ classified?
+![[dfs-edge-classification.png]]
+Back: As a cross edge.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735086202738-->
+END%%
+
+%%ANKI
+Basic
+Assuming solid lines are tree edges, *why* is edge $\langle d, c \rangle$ a cross edge?
+![[dfs-edge-classification.png]]
+Back: Because $d$ and $c$ have no ancestor-descendant relation between them.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735086202741-->
 END%%
 
 ## Bibliography

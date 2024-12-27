@@ -483,13 +483,14 @@ END%%
 
 ## CURIEs
 
-A **compact URI** (CURIE) is a denser representation of URIs. In its simplest form, it consists of a namespace and identifier separated by a colon. For example, `geo:England`.
+A **compact URI** (CURIE) is a denser representation of IRIs. In its simplest form, it consists of a **prefix** and **reference**, separated by a colon. For example, `geo:England`.
 
 %%ANKI
 Basic
 URIs in RDF are usually represented in what condensed format?
 Back: CURIEs.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
+Tags: data_model::rdf
 <!--ID: 1722191359875-->
 END%%
 
@@ -497,40 +498,81 @@ END%%
 Basic
 What is CURIE an acronym for?
 Back: **C**ompact **URI**s.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
 <!--ID: 1722191359876-->
 END%%
 
 %%ANKI
 Basic
+How is term "compact URI" usually abbreviated?
+Back: CURIE.
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
+<!--ID: 1735267631863-->
+END%%
+
+%%ANKI
+Basic
 Consider CURIE `geo:England`. What is `geo` an example of?
-Back: A namespace.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+Back: A prefix.
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
 <!--ID: 1722191359877-->
 END%%
 
 %%ANKI
 Basic
 Consider CURIE `geo:England`. What is `England` an example of?
-Back: An identifier.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+Back: A reference.
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
 <!--ID: 1722191359878-->
 END%%
 
 %%ANKI
 Basic
 In its simplest form, a CURIE is made up of what two parts?
-Back: A namespace and an identifier.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+Back: A prefix and a reference.
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
 <!--ID: 1722191359880-->
 END%%
 
 %%ANKI
 Basic
-The namespace and identifier of a CURIE is usually separated by what?
+The prefix and reference of a CURIE is separated by what?
 Back: A colon (`:`).
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
 <!--ID: 1722191359881-->
+END%%
+
+%%ANKI
+Basic
+A CURIE is an abbreviation for strings intended to represent what?
+Back: IRIs.
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
+<!--ID: 1735267631867-->
+END%%
+
+%%ANKI
+Basic
+Consider CURIE `geo:England`. What is the prefix?
+Back: `geo`
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
+<!--ID: 1735267631870-->
+END%%
+
+%%ANKI
+Basic
+Consider CURIE `geo:England`. What is the reference?
+Back: `England`
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
+<!--ID: 1735267631873-->
+END%%
+
+%%ANKI
+Basic
+Which CURIE prefix is reserved for use by languages that support RDF?
+Back: `_`
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
+Tags: data_model::rdf
+<!--ID: 1735267631877-->
 END%%
 
 ## Bibliography

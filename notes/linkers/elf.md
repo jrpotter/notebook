@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-Modern [[x86-64/index|x86-64]] Linux systems use the ELF (Executable and Linkable Format) object file format.
+ELF (Executable and Linkable Format) is the modern [[linkers/index#Object Files|object file]] form used by [[x86-64/index|x86-64]] Linux systems.
 
 %%ANKI
 Basic
@@ -34,41 +34,6 @@ What is ELF an example of?
 Back: An object file format.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734356868446-->
-END%%
-
-## Relocatable Object Files
-
-![[elf.png]]
-
-%%ANKI
-Basic
-A relocatable object file is typically broken up into what three regions?
-Back: The header, sections, and the section header table.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1734456879220-->
-END%%
-
-%%ANKI
-Basic
-In a relocatable object file, what exists between the header and section header table?
-Back: The sections.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1734456879305-->
-END%%
-
-%%ANKI
-Cloze
-A relocatable object file consists of a {header}, {sections}, and a {section header table}, in that order.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1734456879322-->
-END%%
-
-%%ANKI
-Basic
-Where in a relocatable object file does the section header table exist?
-Back: At the end.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1734456879328-->
 END%%
 
 ## Sections
@@ -389,18 +354,25 @@ END%%
 
 %%ANKI
 Basic
-How does the size of the `.bss` section compare to that of the `.data` section?
-Back: Less than or equal since the `.bss` section is always empty.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1734369188136-->
-END%%
-
-%%ANKI
-Basic
 What mneumonic does Bryant et al. suggest to remember the `.bss` and `.data` distinction?
 Back: `.bss` is a backronym for "**B**etter **S**ave **S**pace!"
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734369188140-->
+END%%
+
+%%ANKI
+Basic
+Why is the `.bss` section named the way it is?
+Back: It was originally an acronym for **b**lock **s**tarted by **s**ymbol.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735155720948-->
+END%%
+
+%%ANKI
+Cloze
+{Block started by symbol} is the actual acronym for Bryan et al.'s mneumonic {better save space}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735155720954-->
 END%%
 
 %%ANKI
