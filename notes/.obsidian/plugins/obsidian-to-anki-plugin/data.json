@@ -1029,7 +1029,7 @@
     "linkers/object-files.md": "77767f310330b8650a5023dd0522226c",
     "_journal/2024-12-16.md": "d867a62a955f3d080ae25f31464d53c4",
     "_journal/2024-12/2024-12-15.md": "be66c8808d8bb66d4e7b91db7c93c94a",
-    "linkers/elf.md": "46e6b1ae505a198eedc336e9ef54e419",
+    "linkers/elf.md": "6b54c2628bcd6e39df9cf3d09a68b62b",
     "c17/strings/printf.md": "8b67cfbccaf35dd9488b73e7e5555405",
     "c17/strings/index.md": "3fa6f42967f3cc786740bb8537c62682",
     "_journal/2024-12-17.md": "ae55db66c9835876c4a0343ac0806951",
@@ -1065,11 +1065,11 @@
     "_journal/2024-12/2024-12-23.md": "72b0964a8a5ed8ba0acf7fe10b5de279",
     "_journal/2024-12-25.md": "1717d37b074df58175ec0272adc278de",
     "_journal/2024-12/2024-12-24.md": "dcd3bd8b82ca4d47a9642a46d8bece0d",
-    "linkers/relocatable.md": "fa89f08afe9a54d7b4e6374282983753",
+    "linkers/relocatable.md": "df8ceb9739969516b6fb6b35dc8d208e",
     "data-models/federation.md": "1d92747304186bd2833a00a488fcac48",
     "_journal/2024-12-26.md": "022aeaf68d46fd39b23aca9c577f3f41",
     "_journal/2024-12/2024-12-25.md": "1717d37b074df58175ec0272adc278de",
-    "_journal/2024-12-27.md": "acb4db426b352cb7b90194ef73ce05e5",
+    "_journal/2024-12-27.md": "abc4a39a50305f3558181189eefb2058",
     "_journal/2024-12/2024-12-26.md": "59e59cad1ae568adbe8e27e98d36c59c"
   },
   "fields_dict": {

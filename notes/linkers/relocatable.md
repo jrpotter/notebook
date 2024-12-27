@@ -124,6 +124,323 @@ Tags: c17
 <!--ID: 1735159138677-->
 END%%
 
+## Pseudosections
+
+There are three special pseudosections specified in the section header table that do not have entries in the section header table. Note pseudosections only exist in relocatable object files.
+
+%%ANKI
+Basic
+How many types of pseudosections can be found in relocatable object files?
+Back: Three.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812817-->
+END%%
+
+%%ANKI
+Basic
+How many types of pseudosections can be found in executable object files?
+Back: Zero.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812819-->
+END%%
+
+%%ANKI
+Basic
+What are the three pseudosections possibly found in relocatable object files?
+Back: ABS, UNDEF, and COMMON.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812820-->
+END%%
+
+%%ANKI
+Basic
+In what region of an ELF file can references to pseudosections be found?
+Back: The section header table.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812821-->
+END%%
+
+%%ANKI
+Basic
+Why are ELF pseudosections named the way they are?
+Back: They don't actually correspond to any ELF section.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343872318-->
+END%%
+
+### `ABS`
+
+Marks symbols that should not be relocated.
+
+%%ANKI
+Basic
+What does the ABS pseudosection indicate?
+Back: The corresponding symbol should not be relocated.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812822-->
+END%%
+
+%%ANKI
+Basic
+Why is the ABS pseudosection named the way it is?
+Back: It's short for **abs**olute.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812823-->
+END%%
+
+### `UNDEF`
+
+Marks undefined symbols. These are referenced in the object module but (presumably) defined elsewhere.
+
+%%ANKI
+Basic
+What does the UNDEF pseudosection indicate?
+Back: The corresponding symbol is (presumably) defined elsewhere.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812824-->
+END%%
+
+%%ANKI
+Basic
+Why is the UNDEF pseudosection named the way it is?
+Back: It's short for **undef**ined.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812825-->
+END%%
+
+### `COMMON`
+
+Assuming `-fcommon`, marks unitialized data objects that are not yet allocated.
+
+%%ANKI
+Basic
+What does the `COMMON` pseudosection indicate?
+Back: The corresponding symbol is uninitialized and not yet allocated.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812826-->
+END%%
+
+%%ANKI
+Basic
+What C variables are marked `COMMON` instead of put in `.bss`?
+Back: Global uninitialized variables.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812827-->
+END%%
+
+%%ANKI
+Basic
+What C variables are put in `.bss` instead of marked `COMMON`?
+Back: Static variables or global variables initialized to zero.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812828-->
+END%%
+
+%%ANKI
+Basic
+Assuming `-fcommon`, what kind of C variables does the `.bss` section contain?
+Back: Static variables or global and static variables initialized to zero.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1735343812829-->
+END%%
+
+%%ANKI
+Basic
+Assuming `-fcommon`, what kind of C variables does the `COMMON` section contain?
+Back: Global uninitialized variables.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1735343812830-->
+END%%
+
+%%ANKI
+Basic
+Assuming `-fcommon`, which ELF section contains uninitialized global C variables?
+Back: N/A. These are "placed" into the `COMMON` pseudosection.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1735343812831-->
+END%%
+
+%%ANKI
+Basic
+Assuming `-fcommon`, which ELF section contains global C variables initialized to a zero value?
+Back: `.bss`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1735343812832-->
+END%%
+
+%%ANKI
+Basic
+Consider the following translation unit. Assuming `-fcommon`, which ELF section will `foo` end up in?
+```c
+int foo = 0;
+```
+Back: `.bss`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1735343812833-->
+END%%
+
+%%ANKI
+Basic
+Consider the following translation unit. Assuming `-fcommon`, which ELF section will `foo` end up in?
+```c
+int foo;
+```
+Back: N/A. It is "placed" into the `COMMON` pseudosection.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1735343812834-->
+END%%
+
+At compile time, the compiler exports each global symbol as either **strong** or **weak**, and the assembler encodes this information in the symbol table. Functions and initialized global variables get strong symbols whereas uninitialized global variables get weak symbols. The linker then resolves global symbols as follows:
+
+1. Multiple strong symbols with the same name are not allowed.
+2. Given a strong symbol and multiple weak symbols with the same name, choose the strong symbol.
+3. Given multiple weak symbols with the same name, choose *any* of the weak symbols.
+
+%%ANKI
+Basic
+Assuming `-fcommon`, global symbols are further categorized into what two buckets?
+Back: Strong and weak.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812835-->
+END%%
+
+%%ANKI
+Basic
+Which component of the compiler driver indicates whether a global variable is strong or weak?
+Back: The compiler.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1735343812836-->
+END%%
+
+%%ANKI
+Basic
+Does a function correspond to a strong or weak symbol?
+Back: Strong.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812837-->
+END%%
+
+%%ANKI
+Basic
+Does a globally initialized variable correspond to a strong or weak symbol?
+Back: Strong.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812838-->
+END%%
+
+%%ANKI
+Basic
+Does a globally uninitialized variable correspond to a strong or weak symbol?
+Back: Weak.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812839-->
+END%%
+
+%%ANKI
+Basic
+Does a static variable correspond to a strong or weak symbol?
+Back: N/A. Strong and weak describe global variables.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812840-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` considered strong or weak in the following translation unit?
+```c
+int foo;
+```
+Back: Weak.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812841-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` considered strong or weak in the following translation unit?
+```c
+int foo = 0;
+```
+Back: Strong.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812842-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` considered strong or weak in the following translation unit?
+```c
+int foo = 1;
+```
+Back: Strong.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812843-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` considered strong or weak in the following translation unit?
+```c
+int foo();
+```
+Back: Strong.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812844-->
+END%%
+
+%%ANKI
+Basic
+How does a linker resolve multiple strong symbols with the same name?
+Back: N/A. It throws an error.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812845-->
+END%%
+
+%%ANKI
+Basic
+How does a linker resolve one strong symbol and multiple weak symbols with the same name?
+Back: It prefers the strong symbol.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812846-->
+END%%
+
+%%ANKI
+Basic
+How does a linker resolve one weak symbol and multiple strong symbols with the same name?
+Back: N/A. It throws an error.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812847-->
+END%%
+
+%%ANKI
+How does a linker resolve multiple weak symbols with the same name?
+Back: By arbitrarily picking one.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+END%%
+
+%%ANKI
+Cloze
+Assuming `-fcommon`, {1:strong} is to {2:`.bss`} whereas {2:weak} is to {1:`COMMON`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735343812848-->
+END%%
+
+%%ANKI
+Basic
+Why is `COMMON` considered in conflict with the C standard?
+Back: C only allows a single definition for any object.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1735343812849-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

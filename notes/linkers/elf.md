@@ -46,7 +46,7 @@ The machine code of the compiled program.
 
 %%ANKI
 Basic
-What does the `.text` section of an ELF file contain?
+What does the `.text` section contain?
 Back: The machine code of the compiled program.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734367304868-->
@@ -62,7 +62,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`.text`} section contains the {machine code} of the compiled program.
+The {`.text`} ELF section contains the {machine code} of the compiled program.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734367304872-->
 END%%
@@ -73,7 +73,7 @@ Read-only data such as the format strings in [[c17/strings/printf|printf]] state
 
 %%ANKI
 Basic
-What does the `.rodata` section of an ELF file contain?
+What does the `.rodata` section contain?
 Back: Read-only data.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734367304874-->
@@ -97,7 +97,7 @@ END%%
 
 %%ANKI
 Basic
-In what section of an ELF file would a `printf` format string be found in?
+In what ELF section would a `printf` format string be found in?
 Back: `.rodata`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17::printf
@@ -106,7 +106,7 @@ END%%
 
 %%ANKI
 Basic
-In what section of an ELF file would a jump table be found in?
+In what ELF section would a jump table be found in?
 Back: `.rodata`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734367304878-->
@@ -118,7 +118,7 @@ Global and static C variables initialized to a non-zero value.
 
 %%ANKI
 Basic
-What kind of global/static C variables does the `.data` section of an ELF file contain?
+What kind of global/static C variables does the `.data` section contain?
 Back: Those initialized to a non-zero value.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
@@ -198,7 +198,7 @@ Thread-local global and static C variables initialized to a non-zero value.
 
 %%ANKI
 Basic
-What kind of global/static C variables does the `.tdata` section of an ELF file contain?
+What kind of global/static C variables does the `.tdata` section contain?
 Back: Thread-local variables initialized to a non-zero value.
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
 Tags: c17
@@ -265,12 +265,12 @@ END%%
 
 ### `.bss`
 
-Uninitialized global and static C variables, along with any global or static variables initialized to zero.
+Assuming `-fno-common`, contains global and static C variables, along with any global or static variables initialized to zero.
 
 %%ANKI
 Basic
-What kind of global/static C variables does the `.bss` section of an ELF file contain?
-Back: Unitialized variables or those initialized to zero.
+Assuming `-fno-common`, what kind of C variables does the `.bss` section contain?
+Back: Uninitialized global and static variables or those initialized to zero.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1734368832077-->
@@ -278,7 +278,7 @@ END%%
 
 %%ANKI
 Basic
-Which ELF section contains uninitialized global C variables?
+Assuming `-fno-common`, which ELF section contains uninitialized global C variables?
 Back: `.bss`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
@@ -287,7 +287,7 @@ END%%
 
 %%ANKI
 Basic
-Which ELF section contains global C variables initialized to a zero value?
+Assuming `-fno-common`, which ELF section contains global C variables initialized to a zero value?
 Back: `.bss`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
@@ -296,7 +296,7 @@ END%%
 
 %%ANKI
 Basic
-Which two ELF sections contain global/static C variables?
+Assuming `-fno-common`, which two ELF sections contain global and static C variables?
 Back: `.data` and `.bss`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
@@ -305,7 +305,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. Which ELF section will `foo` end up in?
+Consider the following translation unit. Assuming `-fno-common`, which ELF section will `foo` end up in?
 ```c
 int foo = 0;
 ```
@@ -317,7 +317,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. Which ELF section will `foo` end up in?
+Consider the following translation unit. Assuming `-fno-common`, which ELF section will `foo` end up in?
 ```c
 int foo;
 ```
@@ -329,8 +329,8 @@ END%%
 
 %%ANKI
 Basic
-Both `.bss` and `.data` hold what kind of C variables?
-Back: Global or static variables.
+Assuming `-fno-common`, both `.bss` and `.data` hold what kind of C variables?
+Back: Global and static variables.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1734369188121-->
@@ -370,14 +370,14 @@ END%%
 
 %%ANKI
 Cloze
-{Block started by symbol} is the actual acronym for Bryan et al.'s mneumonic {better save space}.
+{Block started by symbol} is the actual acronym for Bryant et al.'s mneumonic {better save space}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1735155720954-->
 END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. Which ELF section will `bar` end up in?
+Consider the following translation unit. Assuming `-fno-common`, which section will `bar` end up in?
 ```c
 int foo() {
   static int bar = 0;
@@ -395,7 +395,7 @@ Uninitialized global and static thread-local C variables, along with any global 
 
 %%ANKI
 Basic
-What kind of global/static C variables does the `.tbss` section of an ELF file contain?
+What kind of global/static C variables does the `.tbss` section contain?
 Back: Unitialized thread-local variables or those initialized to zero.
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
 Tags: c17
@@ -500,7 +500,7 @@ A symbol table with information about functions and global variables defined and
 
 %%ANKI
 Basic
-What does the `.symtab` section of an ELF file contain?
+What does the `.symtab` section contain?
 Back: A symbol table for functions and global variables.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734370180072-->
@@ -516,7 +516,7 @@ END%%
 
 %%ANKI
 Basic
-Why is the `.symtab` ELF section named the way it is?
+Why is the `.symtab` section named the way it is?
 Back: It's short for **sym**bol **tab**le.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734370180083-->
@@ -528,7 +528,7 @@ A list of locations in the `.text` section that will need to be modified when th
 
 %%ANKI
 Basic
-What does the `.rel.text` section of an ELF file contain?
+What does the `.rel.text` section contain?
 Back: Relocation entries for the `.text` section.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734456879344-->
@@ -536,7 +536,7 @@ END%%
 
 %%ANKI
 Basic
-Why is the `.rel.text` ELF section named the way it is?
+Why is the `.rel.text` section named the way it is?
 Back: It's short for **rel**ocation entries for the `.text` section.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734456879386-->
@@ -544,7 +544,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`.rel.text`} section contains {relocation entries} for the `.text` section.
+The {`.rel.text`} ELF section contains {relocation entries} for the `.text` section.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734456879393-->
 END%%
@@ -555,7 +555,7 @@ A list of locations in the `.data` section that will need to be modified when th
 
 %%ANKI
 Basic
-What does the `.rel.data` section of an ELF file contain?
+What does the `.rel.data` section contain?
 Back: Relocation entries for the `.data` section.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734456879404-->
@@ -563,7 +563,7 @@ END%%
 
 %%ANKI
 Basic
-Why is the `.rel.data` ELF section named the way it is?
+Why is the `.rel.data` section named the way it is?
 Back: It's short for **rel**ocation entries for the `.data` section.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734456879407-->
@@ -571,7 +571,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`.rel.data`} section contains {relocation entries} for the `.data` section.
+The {`.rel.data`} ELF section contains {relocation entries} for the `.data` section.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734456879414-->
 END%%
@@ -582,7 +582,7 @@ A string table for the symbol tables in the `.symtab` section as well as for sec
 
 %%ANKI
 Basic
-What does the `.strtab` section of an ELF file contain?
+What does the `.strtab` section contain?
 Back: A string table.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734456879418-->
@@ -590,7 +590,7 @@ END%%
 
 %%ANKI
 Basic
-Why is the `.strtab` ELF section named the way it is?
+Why is the `.strtab` section named the way it is?
 Back: It is short for **str**ing **tab**le.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734456879422-->
