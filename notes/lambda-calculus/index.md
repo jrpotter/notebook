@@ -74,7 +74,7 @@ END%%
 
 %%ANKI
 Basic
-How many variables exist in a $\lambda$-calculus formal system?
+How many variables exist in a $\lambda$-calculus system?
 Back: An infinite number.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716494526306-->
@@ -82,7 +82,7 @@ END%%
 
 %%ANKI
 Basic
-How many atomic constants exist in a $\lambda$-calculus formal system?
+How many atomic constants exist in a $\lambda$-calculus system?
 Back: Zero or more.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716494526309-->
@@ -90,15 +90,15 @@ END%%
 
 %%ANKI
 Basic
-What distinguishes variables and atomic constants?
-Back: The latter is meant to refer to constants outside the formal system.
+What distinguishes variables and atomic constants in the $\lambda$-calculus?
+Back: The latter is meant to refer to constants outside the system.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716494526312-->
 END%%
 
 %%ANKI
 Basic
-What two classes of expressions does an "atom" potentially refer to?
+What two classes of expressions does an "atom" potentially refer to in the $\lambda$-calculus?
 Back: Variables and atomic constants.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716494526316-->
@@ -106,7 +106,7 @@ END%%
 
 %%ANKI
 Basic
-What general term describes both variables and atomic constants?
+What general term refers to both variables and atomic constants in the $\lambda$-calculus?
 Back: Atoms.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716494526319-->
@@ -114,7 +114,7 @@ END%%
 
 %%ANKI
 Basic
-Why are variables and atomic constants called "atoms"?
+Why are variables and atomic constants called "atoms" in the $\lambda$-calculus?
 Back: They are not composed of smaller $\lambda$-terms.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716494526322-->
