@@ -441,6 +441,66 @@ Tags: c17
 <!--ID: 1735343812849-->
 END%%
 
+## Static Libraries
+
+A **static library** is a format for packaging multiple relocatable object files together. When the linker builds the output executable, it only copies the object modules in the library referenced by the application program.
+
+On Linux systems, static libraries are typically stored on disk as an **archive**. An archive is a collection of concatenated relocatable object files with a header that describes the size and location of each member object file.
+
+%%ANKI
+Cloze
+A {static library} packages multiple {relocatable object files} together.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735352006086-->
+END%%
+
+%%ANKI
+Basic
+A static library is a collection of what kind of files?
+Back: Relocatable object files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735352006090-->
+END%%
+
+%%ANKI
+Basic
+What memory-saving strategy does static libraries allow linkers to employ?
+Back: Only copying relocatable object files actually used by the application program.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735352006092-->
+END%%
+
+%%ANKI
+Basic
+Linux typically uses what file format for its static libraries?
+Back: Archives.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735352006095-->
+END%%
+
+%%ANKI
+Cloze
+On Linux machines, an {archive} typically has a {`.a`} suffix.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735352006098-->
+END%%
+
+%%ANKI
+Basic
+On Linux machines, what kind of files usually have a `.a` suffix?
+Back: Archives.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735352006100-->
+END%%
+
+%%ANKI
+Basic
+A Linux archive file is a specific example of what more general kind of file?
+Back: A static library.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735352006103-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

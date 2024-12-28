@@ -1236,6 +1236,50 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1735074143712-->
 END%%
 
+### Ordering
+
+A set $A$ is **dominated** by a set $B$, written $A \preceq B$, if and only if there is a one-to-one function from $A$ into $B$. In other words, $A \preceq B$ if and only if $A$ is equinumerous to some subset of $B$.
+
+%%ANKI
+Basic
+How do we denote that set $A$ is dominated by set $B$?
+Back: $A \preceq B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735353438914-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \preceq B$. Then what must exist by definition?
+Back: A one-to-one function from $A$ into $B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735353438921-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \preceq B$. Then what must $A$ be equinumerous to?
+Back: Some subset of $B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735353438924-->
+END%%
+
+%%ANKI
+Basic
+What does $A \preceq B$ denote?
+Back: That $A$ is dominated by $B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735353438928-->
+END%%
+
+%%ANKI
+Basic
+How do we expand expression $A \preceq B$ using FOL?
+Back: $\exists C, C \subseteq B \land A \approx C$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735353438932-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
