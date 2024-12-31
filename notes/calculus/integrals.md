@@ -254,7 +254,7 @@ END%%
 
 %%ANKI
 Basic
-What is the following identity called? $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$
+Assume the following integrals are defined. What is the following identity called? $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$
 
 Back: The additive property w.r.t. the integrand.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
@@ -283,7 +283,7 @@ END%%
 
 %%ANKI
 Basic
-What is the following identity called? $$\int_a^b c \cdot f(x) \,dx = c\int_a^b f(x) \,dx$$
+Assume the following integrals are defined. What is the following identity called? $$\int_a^b c \cdot f(x) \,dx = c\int_a^b f(x) \,dx$$
 
 Back: The homogeneous property.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
@@ -304,7 +304,7 @@ END%%
 
 %%ANKI
 Basic
-What is the following identity called? $$\int_a^b [c_1f(x) + c_2g(x)] \,dx = c_1 \int_a^b f(x) \,dx + c_2 \int_a^b g(x) \,dx$$
+Assume the following integrals are defined. What is the following identity called? $$\int_a^b [c_1f(x) + c_2g(x)] \,dx = c_1 \int_a^b f(x) \,dx + c_2 \int_a^b g(x) \,dx$$
 Back: The linearity property.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463704-->
@@ -375,7 +375,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be integrable over an interval containing $a$, $b$, and $c$. What is the following identity called? $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx = \int_a^c f(x) \,dx$$
+Assume the following integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx = \int_a^c f(x) \,dx$$
 
 Back: The additive property w.r.t. the interval of integration.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
@@ -404,6 +404,58 @@ The additive property of area corresponds to what basic property of integrals?
 Back: The additive property w.r.t. the interval of integration.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735613867225-->
+END%%
+
+### Invariance Under Translation
+
+Let $f$ be integrable over $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b f(x) \,dx = \int_{a+c}^{b+c} f(x - c) \,dx$$
+
+%%ANKI
+Basic
+What does the invariance under translation propery of integrals state?
+Back: Let $f$ be integrable over $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b f(x) \,dx = \int_{a+c}^{b+c} f(x - c) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735616354212-->
+END%%
+
+%%ANKI
+Basic
+Assume the following integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx = \int_{a+c}^{b+c} f(x - c) \,dx$$
+Back: Invariance under translation.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735616354216-->
+END%%
+
+%%ANKI
+Basic
+Invariance of integrals under translation corresponds to what property of area?
+Back: Invariance under congruence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735616354218-->
+END%%
+
+%%ANKI
+Basic
+Invariance of area under congruence corresponds to what basic property of integrals?
+Back: Invariance under translation.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735616354219-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable over $[a, b]$ and $g(x) = f(x - c)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
+Back: $\int_{a+c}^{b+c} g(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735616354220-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable over $[a, b]$ and $g(x) = f(x + c)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
+Back: $\int_{a-c}^{b-c} g(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735616354222-->
 END%%
 
 ## Bibliography
