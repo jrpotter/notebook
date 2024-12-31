@@ -159,7 +159,7 @@ END%%
 %%ANKI
 Basic
 Let $s$ be a step function over $[a, b]$. What does $\int_a^b s(x) \,dx$ evaluate to after swapping limits of integration?
-Back: As $-\int_b^a s(x) \,dx$.
+Back: $-\int_b^a s(x) \,dx$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734816555515-->
 END%%
@@ -202,7 +202,7 @@ Let $s$ and $t$ be step functions defined on $[a, b]$. Then $$\int_a^b s(x) + t(
 
 %%ANKI
 Basic
-Let $s$ and $t$ be step functions over $[a, b]$. What does the additive property state?
+Let $s$ and $t$ be step functions over $[a, b]$. What does the additive property of integrals state?
 Back: $\int_a^b s(x) + t(x) \,dx = \int_a^b s(x) \,dx + \int_a^b t(x) \,dx$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463659-->
@@ -231,7 +231,7 @@ Let $s$ be a step function defined on $[a, b]$. Let $c \in \mathbb{R}$. Then $$\
 
 %%ANKI
 Basic
-Let $s$ be a step function over $[a, b]$. What does the homogeneous property state?
+Let $s$ be a step function over $[a, b]$. What does the homogeneous property of integrals state?
 Back: For all $c \in \mathbb{R}$, $\int_a^b c \cdot s(x) \,dx = c \int_a^b s(x) \,dx$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463679-->
@@ -252,7 +252,7 @@ Let $s$ and $t$ be step functions defined on $[a, b]$. Let $c_1, c_2 \in \mathbb
 
 %%ANKI
 Basic
-Let $s$ and $t$ be step functions over $[a, b]$ and $c_1, c_2 \in \mathbb{R}$. What does the linearity property state?
+Let $s$ and $t$ be step functions over $[a, b]$ and $c_1, c_2 \in \mathbb{R}$. What does the linearity property of integrals state?
 Back: $\int_a^b [c_1 s(x) + c_2 t(x)] \,dx = c_1 \int_a^b s(x) \,dx + c_2 \int_a^b t(x) \,dx$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463699-->
@@ -276,7 +276,7 @@ END%%
 
 %%ANKI
 Cloze
-The {linearity} property is a combination of the {additive} and {homogenous} properties.
+The {linearity} property of integrals is a combination of the {additive} and {homogenous} properties.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463693-->
 END%%
@@ -287,8 +287,8 @@ Let $s$ and $t$ be step functions defined on $[a, b]$. Suppose $s(x) < t(x)$ for
 
 %%ANKI
 Basic
-Let $s$ and $t$ be step functions over $[a, b]$. What does the comparison theorem state?
-Back: If $s(x) < t(x)$ for all $x \in [a, b]$, $\int_a^b s(x) \,dx < \int_a^b t(x) \,dx$.
+Let $s$ and $t$ be step functions over $[a, b]$. What does the comparison theorem of integrals state?
+Back: If $s(x) < t(x)$ for all $x \in [a, b]$, then $\int_a^b s(x) \,dx < \int_a^b t(x) \,dx$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734815755275-->
 END%%

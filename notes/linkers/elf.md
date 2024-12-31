@@ -198,7 +198,7 @@ Thread-local global and static C variables initialized to a non-zero value.
 
 %%ANKI
 Basic
-What kind of global/static C variables does the `.tdata` section contain?
+What kind of global and static C variables does the `.tdata` section contain?
 Back: Thread-local variables initialized to a non-zero value.
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
 Tags: c17
@@ -395,7 +395,7 @@ Uninitialized global and static thread-local C variables, along with any global 
 
 %%ANKI
 Basic
-What kind of global/static C variables does the `.tbss` section contain?
+What kind of global and static C variables does the `.tbss` section contain?
 Back: Unitialized thread-local variables or those initialized to zero.
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
 Tags: c17
@@ -422,8 +422,8 @@ END%%
 
 %%ANKI
 Basic
-Which two ELF sections contain global/static thread-local C variables?
-Back: `.tdata` and `.bss`
+Which two ELF sections contain global and static thread-local C variables?
+Back: `.tdata` and `.tbss`
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
 Tags: c17
 <!--ID: 1734745402975-->
@@ -469,15 +469,6 @@ Back: `.tbss`
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
 Tags: c17
 <!--ID: 1734745402993-->
-END%%
-
-%%ANKI
-Basic
-How does the size of the `.tbss` section compare to that of the `.tdata` section?
-Back: Less than or equal since the `.tbss` section is always empty.
-Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
-<!--ID: 1734745402997-->
 END%%
 
 %%ANKI

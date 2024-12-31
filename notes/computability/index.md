@@ -185,14 +185,6 @@ END%%
 
 %%ANKI
 Basic
-How is the concatenation of strings $x$ and $y$ over some alphabet denoted?
-Back: $xy$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734903366671-->
-END%%
-
-%%ANKI
-Basic
 Let $x$ be a string over some alphabet. What does $xx$ denote?
 Back: The concatenation of $x$ with itself.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
@@ -201,7 +193,7 @@ END%%
 
 %%ANKI
 Cloze
-Let $x$ be a string over some alphabet. Then {$xx$} $=$ {$x^2$}.
+Let $x$ be a string over some alphabet. Then {$xx$} is equivalently denoted as {$x^2$}.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1734903366679-->
 END%%
@@ -249,7 +241,7 @@ END%%
 %%ANKI
 Basic
 What is a language?
-Back: A nonempty set of strings.
+Back: A set of strings.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1734903366705-->
 END%%

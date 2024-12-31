@@ -126,7 +126,7 @@ END%%
 %%ANKI
 Basic
 RDF identifiers use what encoding?
-Back: URIs.
+Back: IRIs.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1722191359882-->
 END%%
@@ -142,7 +142,7 @@ END%%
 %%ANKI
 Basic
 How does RDF define a named graph?
-Back: A graph with a name.
+Back: As a graph (a set of triples) with a name.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1734804443462-->
 END%%
@@ -170,21 +170,33 @@ Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web
 <!--ID: 1734804443468-->
 END%%
 
+The RDF data model was designed from the beginning with [[federation|data federation]] in mind. Because every RDF store represents RDF data in the same way (i.e. as a set of triples), federation is as simple as combining the commonly encoded data into a single store before querying.
+
 %%ANKI
-Cloze
-RDF is a {data model} whereas XML is a {serialization}.
+Basic
+What mechanism makes RDF data federation easy?
+Back: Every source communicates data in the same way (i.e. as a set of triples).
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-Tags: serialization::xml
-<!--ID: 1734805690321-->
+Tags: data_model::federation
+<!--ID: 1735176997772-->
 END%%
 
 %%ANKI
 Basic
-How might RDF and XML relate to one another?
-Back: XML can be used to serialize RDF.
+In the context of RDF, what does federation refer to?
+Back: The combining of multiple RDF stores into a single (possibly virtual) view.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-Tags: serialization::xml
-<!--ID: 1734805690328-->
+Tags: data_model::federation
+<!--ID: 1735176997776-->
+END%%
+
+%%ANKI
+Basic
+What does the federated graph refer to?
+Back: The graph produced by combining various federated data sources.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+Tags: data_model::federation
+<!--ID: 1735176997779-->
 END%%
 
 ## Blank Nodes
@@ -239,37 +251,203 @@ Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web
 <!--ID: 1735162429102-->
 END%%
 
-## Federation
+## Serializations
 
-The RDF data model was designed from the beginning with [[federation|data federation]] in mind. Because every RDF store represents RDF data in the same way (i.e. as a set of triples), federation is as simple as combining the commonly encoded data into a single store before querying.
+The original syntax and standard for writing RDF was RDF/XML. Turtle is an alternative, more human-readable, syntax. Besides these two exist many others.
 
 %%ANKI
 Basic
-What mechanism makes RDF data federation easy?
-Back: Every source communicates data in the same way (i.e. as a set of triples).
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-Tags: data_model::federation
-<!--ID: 1735176997772-->
+Which RDF serialization is most widely used?
+Back: Turtle.
+Reference: “Resource Description Framework,” in _Wikipedia_, November 25, 2024, [https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework](https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework&oldid=1259544587).
+<!--ID: 1735507470222-->
 END%%
 
 %%ANKI
 Basic
-In the context of RDF, what does federation refer to?
-Back: The combining of multiple RDF stores into a single (possibly virtual) view.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-Tags: data_model::federation
-<!--ID: 1735176997776-->
+Why is Turtle named the way it is?
+Back: It is an "acronym" for **Te**rse **R**DF **T**riple **L**anguag**e**.
+Reference: “Resource Description Framework,” in _Wikipedia_, November 25, 2024, [https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework](https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework&oldid=1259544587).
+<!--ID: 1735507470227-->
 END%%
 
 %%ANKI
 Basic
-What does the federated graph refer to?
-Back: The graph produced by combining various federated data sources.
+What is RDF/XML a container for?
+Back: RDF data.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-Tags: data_model::federation
-<!--ID: 1735176997779-->
+<!--ID: 1735507470230-->
+END%%
+
+%%ANKI
+Basic
+What is Turtle a container for?
+Back: RDF data.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735507470233-->
+END%%
+
+%%ANKI
+Cloze
+RDF is a {data model} whereas XML is a {serialization format}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+Tags: serialization::xml
+<!--ID: 1734805690321-->
+END%%
+
+%%ANKI
+Cloze
+RDF is a {data model} whereas Turtle is a {serialization format}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735507470236-->
+END%%
+
+%%ANKI
+Basic
+How might RDF and XML relate to one another?
+Back: XML can be used to serialize RDF.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+Tags: serialization::xml
+<!--ID: 1734805690328-->
+END%%
+
+## SPARQL
+
+SPARQL (SPARQL Protocol and RDF Query Language) is the standard way to access RDF data using a query language. Query patterns are represented in a variant of Turtle, the most ubiquitous language used to express RDF itself.
+
+A server for the SPARQL protocol is called a **SPARQL endpoint**. It accepts SPARQL queries and returns results, according to the details of the protocol.
+
+%%ANKI
+Basic
+SPARQL syntax most closely resembles which RDF serialization format?
+Back: Turtle.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735507470239-->
+END%%
+
+%%ANKI
+Basic
+What is the standard means of querying an RDF store?
+Back: SPARQL.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735506488320-->
+END%%
+
+%%ANKI
+Basic
+What is SPARQL an acronym for?
+Back: **S**PARQL **P**rotocol **a**nd **R**DF **Q**uery **L**anguage.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735506488325-->
+END%%
+
+%%ANKI
+Cloze
+{1:SPARQL} is to {2:RDF} as {2:SQL} is to {1:RDBMS}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735506488332-->
+END%%
+
+%%ANKI
+Basic
+The following snippet is an example of what language?
+```sparql
+SELECT ?movie WHERE {:JamesDean :playedIn ?movie}
+```
+Back: SPARQL
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735506488335-->
+END%%
+
+%%ANKI
+Basic
+What do the `:`s indicate in the following query?
+```sparql
+SELECT ?movie WHERE {:JamesDean :playedIn ?movie}
+```
+Back: The default namespace.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735506488338-->
+END%%
+
+%%ANKI
+Basic
+How are namespaces introduced in a SPARQL query?
+Back: With the `:` character.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735507470242-->
+END%%
+
+%%ANKI
+Basic
+What do the `?`s indicate in the following query?
+```sparql
+SELECT ?movie WHERE {:JamesDean :playedIn ?movie}
+```
+Back: Variables to be matched against.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735506488341-->
+END%%
+
+%%ANKI
+Basic
+How are variables introduced in a SPARQL query?
+Back: With the `?` character.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735507470245-->
+END%%
+
+%%ANKI
+Basic
+What do the curly braces (`{}`) indicate in the following query?
+```sparql
+SELECT ?movie WHERE {:JamesDean :playedIn ?movie}
+```
+Back: A graph pattern.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735506488344-->
+END%%
+
+%%ANKI
+Basic
+How are graph patterns introduced in a SPARQL query?
+Back: With the `{` and `}` characters.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735507470248-->
+END%%
+
+%%ANKI
+Basic
+In SPARQL, what is a graph pattern?
+Back: A graph with wildcards, used to match against a data graph.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735521898594-->
+END%%
+
+%%ANKI
+Cloze
+A {server for the SPARQL protocol} is called a {SPARQL endpoint}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735507470252-->
+END%%
+
+%%ANKI
+Basic
+What is a SPARQL endpoint?
+Back: A server that can respond to SPARQL queries.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735507470256-->
+END%%
+
+%%ANKI
+Basic
+What does Allemang et al. describe as the most web-friendly way to provide access to RDF data?
+Back: Exposing a SPARQL endpoint to the data.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1735507470259-->
 END%%
 
 ## Bibliography
 
 * Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+* “Resource Description Framework,” in _Wikipedia_, November 25, 2024, [https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework](https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework&oldid=1259544587).

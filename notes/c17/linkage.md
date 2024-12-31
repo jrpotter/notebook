@@ -229,7 +229,7 @@ END%%
 
 %%ANKI
 Basic
-What is the linkage of a local variable without a storage specified?
+What is the linkage of a local variable without a storage specifier?
 Back: None.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733010193297-->

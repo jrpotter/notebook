@@ -298,7 +298,7 @@ END%%
 %%ANKI
 Basic
 Which storage class specifier(s) can be used to declare an object with automatic storage duration?
-Back: `auto` and {`register`}.
+Back: `auto` and `register`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733064332819-->
 END%%

@@ -1238,7 +1238,9 @@ END%%
 
 ### Ordering
 
-A set $A$ is **dominated** by a set $B$, written $A \preceq B$, if and only if there is a one-to-one function from $A$ into $B$. In other words, $A \preceq B$ if and only if $A$ is equinumerous to some subset of $B$.
+A set $A$ is **dominated** by a set $B$, written $A \preceq B$, if and only if there is a one-to-one function from $A$ into $B$. In other words, $A \preceq B$ if and only if $A$ is equinumerous to some subset of $B$. Then $$\mathop{\text{card}}A \leq \mathop{\text{card}}B \text{ if and only if } A \preceq B.$$
+
+Furthermore, $$\mathop{\text{card}}A < \mathop{\text{card}}B \text{ if and only if } A \preceq B \text{ and } A \not\approx B.$$
 
 %%ANKI
 Basic
@@ -1246,6 +1248,14 @@ How do we denote that set $A$ is dominated by set $B$?
 Back: $A \preceq B$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1735353438914-->
+END%%
+
+%%ANKI
+Basic
+How do we denote that set $A$ is strictly dominated by set $B$?
+Back: $A \prec B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305902-->
 END%%
 
 %%ANKI
@@ -1258,10 +1268,42 @@ END%%
 
 %%ANKI
 Basic
+Suppose $A \prec B$. Then what must exist by definition?
+Back: A one-to-one function from $A$ into $B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305907-->
+END%%
+
+%%ANKI
+Basic
 Suppose $A \preceq B$. Then what must $A$ be equinumerous to?
-Back: Some subset of $B$.
+Back: A subset of $B$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1735353438924-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \preceq B$. Then what must $A$ *not* be equinumerous to?
+Back: N/A. There is no restriction here.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305910-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \prec B$. Then what must $A$ be equinumerous to?
+Back: A subset of $B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305914-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \prec B$. Then what must $A$ *not* be equinumerous to?
+Back: $B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305917-->
 END%%
 
 %%ANKI
@@ -1274,10 +1316,136 @@ END%%
 
 %%ANKI
 Basic
+What does $A \prec B$ denote?
+Back: That $A$ is strictly dominated by $B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305921-->
+END%%
+
+%%ANKI
+Basic
 How do we expand expression $A \preceq B$ using FOL?
 Back: $\exists C, C \subseteq B \land A \approx C$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1735353438932-->
+END%%
+
+%%ANKI
+Basic
+How do we expand expression $A \prec B$ using FOL?
+Back: $A \not\approx B \land \exists C, C \subseteq B \land A \approx C$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305924-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be cardinal numbers. How is $\kappa \leq \lambda$ defined?
+Back: As $K \preceq L$ for sets satisfying $\mathop{\text{card}}K = \kappa$ and $\mathop{\text{card}} L = \lambda$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305927-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be cardinal numbers. How is $\kappa < \lambda$ defined?
+Back: As $K \preceq L$ and $K \not\approx L$ for sets satisfying $\mathop{\text{card}}K = \kappa$ and $\mathop{\text{card}} L = \lambda$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305931-->
+END%%
+
+%%ANKI
+Cloze
+{$\leq$} on cardinal numbers corresponds to {$\preceq$} on sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305934-->
+END%%
+
+%%ANKI
+Cloze
+{$<$} on cardinal numbers corresponds to {$\prec$} on sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305942-->
+END%%
+
+%%ANKI
+Basic
+How is $\mathop{\text{card} }K \leq \mathop{\text{card} }L$ defined in terms of equinumerosity?
+Back: $\mathop{\text{card} }K \leq \mathop{\text{card} }L$ iff $K$ is equinumerous to a subset of $L$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305947-->
+END%%
+
+%%ANKI
+Basic
+How is $\mathop{\text{card} }K < \mathop{\text{card} }L$ defined in terms of equinumerosity?
+Back: $\mathop{\text{card} }K < \mathop{\text{card} }L$ iff $K$ is equinumerous to a subset of $L$ and $K \not\approx L$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305952-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be cardinal numbers. Restate the following in terms of sets: $$\kappa < \lambda \text{ iff } \kappa \leq \lambda \text{ and } \kappa \neq \lambda$$
+Back: Given $\mathop{\text{card}}K = \kappa$ and $\mathop{\text{card}}L = \lambda$, $\mathop{\text{card}}K < \mathop{\text{card}}L$ iff $K \preceq L$ and $K \not\approx L$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305957-->
+END%%
+
+%%ANKI
+Basic
+Let $K$ and $L$ be sets. Restate the following in terms of cardinal numbers: $$\mathop{\text{card}}K < \mathop{\text{card}}L \text{ iff } K \preceq L \text{ and } K \not\approx L.$$
+Back: Given $\mathop{\text{card}}K = \kappa$ and $\mathop{\text{card}}L = \lambda$,  $\kappa < \lambda$ iff $\kappa \leq \lambda$ and $\kappa \neq \lambda$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493305962-->
+END%%
+
+%%ANKI
+Basic
+Let $K$ and $L$ be sets. *Why* can't we use the following definition? $$\mathop{\text{card}} K \leq \mathop{\text{card}} L \text{ iff } \exists A \subseteq L, K \approx A$$
+Back: N/A. This is a suitable definition.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493767848-->
+END%%
+
+%%ANKI
+Basic
+Let $K$ and $L$ be sets. *Why* can't we use the following definition? $$\mathop{\text{card}} K < \mathop{\text{card}} L \text{ iff } \exists A \subset L, K \approx A$$
+Back: Infinite sets may be equinumerous to a proper subset of themselves.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735493767854-->
+END%%
+
+%%ANKI
+Basic
+For any $n \in \omega$, *why* is $n < \aleph_0$?
+Back: $n \not\approx \omega$ and there exists an injective function $f \colon n \rightarrow \omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735522988804-->
+END%%
+
+%%ANKI
+Basic
+For any cardinal number $\kappa$, *why* is $\kappa < 2^\kappa$?
+Back: Assuming $\mathop{\text{card}}K = \kappa$, $K \not\approx \mathscr{P}(K)$ and there exists an injective function $f \colon K \rightarrow \mathscr{P}(K)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735522988810-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest cardinal number?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735522988813-->
+END%%
+
+%%ANKI
+Basic
+What is the largest cardinal number?
+Back: N/A. There is no largest cardinal number.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735522988817-->
 END%%
 
 ## Bibliography

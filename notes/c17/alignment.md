@@ -516,7 +516,7 @@ END%%
 
 %%ANKI
 Basic
-What is the sign of the following bit-field?
+What is the signedness of the following bit-field?
 ```c
 struct foo { int bar : 1; };
 ```
@@ -527,7 +527,7 @@ END%%
 
 %%ANKI
 Basic
-What is the sign of the following bit-field?
+What is the signedness of the following bit-field?
 ```c
 struct foo { signed bar : 1; };
 ```
@@ -538,7 +538,7 @@ END%%
 
 %%ANKI
 Basic
-What is the sign of the following bit-field?
+What is the signedness of the following bit-field?
 ```c
 struct foo { unsigned bar : 1; };
 ```
