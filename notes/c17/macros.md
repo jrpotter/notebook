@@ -308,7 +308,7 @@ Given the following translation unit, what is output to `stdout`?
 
 int main(void) { printf("%s\n", foo(123, 456)); }
 ```
-Back: N/A. Pasting formed `"123""456"`, an invalid preprocessing token.
+Back: N/A. Pasting forms `"123""456"`, an invalid preprocessing token.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1733308613501-->
 END%%
@@ -321,7 +321,7 @@ Given the following translation unit, what is output to `stdout`?
 
 int main(void) { printf("%s\n", foo("123", "456")); }
 ```
-Back: N/A. Pasting formed `"123""456"`, an invalid preprocessing token.
+Back: N/A. Pasting forms `"123""456"`, an invalid preprocessing token.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1733308613504-->
 END%%

@@ -149,7 +149,7 @@ END%%
 %%ANKI
 Basic
 What does a gray vertex typically represent?
-Back: A vertex that is in the queue, i.e. the frontier discovery happens against.
+Back: A vertex that is in the stack, i.e. the frontier discovery happens against.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735081276189-->
 END%%
@@ -197,7 +197,7 @@ END%%
 %%ANKI
 Basic
 Suppose vertex $v$ has discovery time $d$ and finish time $f$. When was $v$ colored white?
-Back: At timestamps $< f$.
+Back: At timestamps $< d$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735081276199-->
 END%%
@@ -212,11 +212,22 @@ END%%
 
 %%ANKI
 Basic
-Suppose vertex $v$ has discovery time $d$ and finish time $t$. When was $v$ colored black?
+Suppose vertex $v$ has discovery time $d$ and finish time $f$. When was $v$ colored black?
 Back: At timestamps $\geq f$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735081276201-->
 END%%
+
+## Parenthesis Theorem
+
+In any depth-first search of a graph, for any two vertices $u$ and $v$, exactly one of the following three conditions holds:
+
+1. The intervals $[u.d, u.f]$ and $[v.d, v.f]$ are disjoint.
+	* No ancestor-descendant relation exists between $u$ and $v$.
+2. The interval $[u.d, u.f]$ is contained entirely within $[v.d, v.f]$.
+	* $u$ is a descendant of $v$.
+3. The interval $[v.d, v.f]$ is contained entirely within $[u.d, u.f]$.
+	* $v$ is a descendant of $u$.
 
 %%ANKI
 Basic
@@ -224,6 +235,86 @@ What aspect of DFS has parenthesis structure?
 Back: The discovery and finish timestamps of vertices.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735081276202-->
+END%%
+
+%%ANKI
+Basic
+Let $u$ be a vertex. What does $u.d$ refer to?
+Back: When vertex $u$ was discovered during DFS.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232417-->
+END%%
+
+%%ANKI
+Basic
+Let $u$ be a vertex. What does $u.f$ refer to?
+Back: When vertex $u$ was finished processing during DFS.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232423-->
+END%%
+
+%%ANKI
+Basic
+Given vertices $a$ and $b$, what does the parenthesis theorem state?
+Back: Either $[a.d, a.f]$ and $[b.d, b.f]$ are disjoint or one interval is contained entirely within the other.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232427-->
+END%%
+
+%%ANKI
+Basic
+If $a$ is a descendant of $b$, what can be said about their discovery and finish times?
+Back: $b.d < a.d < a.f < b.f$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232431-->
+END%%
+
+%%ANKI
+Basic
+If $b$ is a descendant of $a$, what can be said about their discovery and finish times?
+Back: $a.d < b.d < b.f < a.f$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232435-->
+END%%
+
+%%ANKI
+Basic
+If $a$ and $b$ have no ancestor-descendant relation, what can be said about their discovery and finish times?
+Back: $[a.d, a.f]$ and $[b.d, b.f]$ are disjoint.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232439-->
+END%%
+
+%%ANKI
+Basic
+Let $a$ and $b$ be vertices with timestamps satisfying $a.d < b.d < b.f < a.f$. What ancestor-descendant relation exists?
+Back: $b$ is a descendant of $a$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232443-->
+END%%
+
+%%ANKI
+Basic
+Let $a$ and $b$ be vertices with timestamps satisfying $a.d < b.d < a.f < b.f$. What ancestor-descendant relation exists?
+Back: N/A. This is an impossible chain of inequalities.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232447-->
+END%%
+
+%%ANKI
+Basic
+Let $a$ and $b$ be vertices with timestamps satisfying $b.d < a.d < b.f < a.f$. What ancestor-descendant relation exists?
+Back: N/A. This is an impossible chain of inequalities.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232451-->
+END%%
+
+%%ANKI
+Basic
+Let $a$ and $b$ be vertices with timestamps satisfying $b.d < a.d < a.f < b.f$. What ancestor-descendant relation exists?
+Back: $a$ is a descendant of $b$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232455-->
 END%%
 
 ## Depth-First Forests
@@ -292,7 +383,7 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1735081276210-->
 END%%
 
-### Edge Classification
+## Edge Classification
 
 A depth-first forest can contain four different types of edges:
 
@@ -329,7 +420,7 @@ END%%
 %%ANKI
 Basic
 Let $\langle u, v \rangle$ be an edge in a depth-first forest. When is $\langle u, v \rangle$ a back edge?
-Back: When $v$ is an ancestor of edge $u$.
+Back: When $v$ is an ancestor of $u$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735085295263-->
 END%%
@@ -443,7 +534,6 @@ END%%
 
 %%ANKI
 Basic
-Assuming solid lines are tree edges, *why* is edge $\langle b, s \rangle$ a back edge?
 ![[dfs-edge-classification.png]]
 Back: Because $s$ is an ancestor of $b$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -466,6 +556,62 @@ Assuming solid lines are tree edges, *why* is edge $\langle d, c \rangle$ a cros
 Back: Because $d$ and $c$ have no ancestor-descendant relation between them.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735086202741-->
+END%%
+
+%%ANKI
+Basic
+Let $v$ be white when $\langle u, v \rangle$ is explored. What kind of edge is $\langle u, v \rangle$ classified as?
+Back: A tree edge.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232459-->
+END%%
+
+%%ANKI
+Basic
+Let $v$ be gray when $\langle u, v \rangle$ is explored. What kind of edge is $\langle u, v \rangle$ classified as?
+Back: A back edge.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232463-->
+END%%
+
+%%ANKI
+Basic
+Let $v$ be black when $\langle u, v \rangle$ is explored. What kind of edge is $\langle u, v \rangle$ classified as?
+Back: Either a forward edge or cross edge.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232469-->
+END%%
+
+%%ANKI
+Basic
+Let $v$ be black when $\langle u, v \rangle$ is explored. If $u.d < v.d$, what kind of edge is $\langle u, v \rangle$ classified as?
+Back: A forward edge.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232475-->
+END%%
+
+%%ANKI
+Basic
+Let $v$ be black when $\langle u, v \rangle$ is explored. If $v.d < u.d$, what kind of edge is $\langle u, v \rangle$ classified as?
+Back: A cross edge.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232480-->
+END%%
+
+%%ANKI
+Basic
+When performing DFS on a directed graph, what possible edge classifications are there?
+Back: Tree, forward, back, and cross.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785623431-->
+END%%
+
+%%ANKI
+Basic
+When performing DFS on an undirected graph, what possible edge classifications are there?
+Back: Tree and back.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785623439-->
 END%%
 
 ## Bibliography

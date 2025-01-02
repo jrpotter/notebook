@@ -13,7 +13,7 @@ The integral is usually defined first in terms of step functions and then genera
 
 Suppose $f$ is [[#Integrable Functions|integrable]] on interval $[a, b]$. Then the **integral** of $f$ from $a$ to $b$ is denoted as $$\int_a^b f(x) \,dx.$$
 
-The **lower limit of integration** is $a$. The **upper limit of integration** is $b$. Together they form the **limits of integration**. $f(x)$ is called the **integrand** whereas $dx$ is called the **differential**. Furthermore, we define $$\int_a^b f(x) \,dx = -\int_b^a f(x) \,dx \quad\text{and}\quad \int_a^a f(x)\,dx = 0.$$
+The **lower limit of integration** is $a$. The **upper limit of integration** is $b$. Together they form the **integration limits**. $f(x)$ is called the **integrand** whereas $dx$ is called the **differential**. Furthermore, we define $$\int_a^b f(x) \,dx = -\int_b^a f(x) \,dx \quad\text{and}\quad \int_a^a f(x)\,dx = 0.$$
 
 %%ANKI
 Basic
@@ -49,7 +49,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be integrable over $[a, b]$. What does $\int_a^b f(x) \,dx$ evaluate to after swapping limits of integration?
+Let $f$ be integrable over $[a, b]$. What does $\int_a^b f(x) \,dx$ evaluate to after swapping integration limits?
 Back: $-\int_b^a f(x) \,dx$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734816555515-->
@@ -90,7 +90,7 @@ END%%
 %%ANKI
 Basic
 What name is given collectively to $a$ and $b$ in $\int_a^b f(x) \,dx$?
-Back: The limits of integration.
+Back: The integration limits.
 Reference: “Integral.” In _Wikipedia_, December 31, 2024. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1266307875).
 <!--ID: 1734816555526-->
 END%%
@@ -269,25 +269,49 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1734814463673-->
 END%%
 
-### Homogeneousness
+### Vertical Scaling
 
-Let $f$ be integrable over $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c\int_a^b f(x) \,dx$$
+Let $f$ be integrable over $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c\int_a^b f(x) \,dx.$$
+
+This is also known as the **homogeneous property**.
 
 %%ANKI
 Basic
 What does the homogeneous property of integrals state?
-Back: Let $f$ be integrable over $[a, b]$ and $c \in \mathbb{R}$. Then $\int_a^b c \cdot f(x) \,dx = c \int_a^b f(x) \,dx$.
+Back: Let $f$ be integrable over $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c \int_a^b f(x) \,dx.$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463679-->
 END%%
 
 %%ANKI
 Basic
+What does the vertical scaling property of integrals state?
+Back: Let $f$ be integrable over $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c \int_a^b f(x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735744900572-->
+END%%
+
+%%ANKI
+Basic
 Assume the following integrals are defined. What is the following identity called? $$\int_a^b c \cdot f(x) \,dx = c\int_a^b f(x) \,dx$$
 
-Back: The homogeneous property.
+Back: The vertical scaling (or homogeneous) property.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463685-->
+END%%
+
+%%ANKI
+Cloze
+The {vertical scaling} property of integrals is also known as the {homogeneous} property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735745285982-->
+END%%
+
+%%ANKI
+Cloze
+The {vertical scaling} property of integrals corresponds to a change of scale on the {$y$}-axis.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735743913546-->
 END%%
 
 ### Linearity
@@ -313,14 +337,14 @@ END%%
 %%ANKI
 Basic
 The linearity property is immediately derived from what other two properties?
-Back: The additive property w.r.t. the integrand and homogeneousness.
+Back: The additive property w.r.t. the integrand and vertical scaling.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463710-->
 END%%
 
 %%ANKI
 Cloze
-The {linearity} property of integrals is an immediate consequence of {additivity w.r.t the integrand} and {homogenousness}.
+The {linearity} property of integrals follows from the {additivity w.r.t the integrand} property and the {homogenous} property.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463693-->
 END%%
@@ -363,12 +387,12 @@ END%%
 
 ### Interval of Integration Additivity
 
-If two of the following three integrals exist, the third also exists, and we have $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx = \int_a^c f(x) \,dx$$
+Let $f$ be integrable over an interval containing $a$, $b$, and $c$. Then $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx = \int_a^c f(x) \,dx$$
 
 %%ANKI
 Basic
 What does the additivity property w.r.t. the interval of integration state?
-Back: If two of the following three integrals exist, the third also exists, and we have $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx = \int_a^c f(x) \,dx$$
+Back: Let $f$ be integrable over an interval containing $a$, $b$, and $c$. Then $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx = \int_a^c f(x) \,dx$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735613867221-->
 END%%
@@ -456,6 +480,181 @@ Let $f$ be integrable over $[a, b]$ and $g(x) = f(x + c)$. What integral of $g$ 
 Back: $\int_{a-c}^{b-c} g(x) \,dx$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735616354222-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten so that the integrand is just $f(x)$? $$\int_a^b f(x + c) \,dx$$
+Back: $$\int_{a+c}^{b+c} f(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735750191049-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten so that the integrand is just $f(x)$? $$\int_a^b f(x - c) \,dx$$
+Back: $$\int_{a-c}^{b-c} f(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735750317904-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten so that the integration limits are just $a$ and $b$? $$\int_{a+c}^{b+c} f(x) \,dx$$
+Back: $$\int_{a}^{b} f(x + c) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735750317913-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten so that the integration limits are just $a$ and $b$? $$\int_{a-c}^{b-c} f(x) \,dx$$
+Back: $$\int_{a}^{b} f(x - c) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735751159481-->
+END%%
+
+### Horizontal Scaling
+
+Let $f$ be integrable on $[a, b]$. Then for all $k \in \mathbb{R}$ such that $k \neq 0$, $$\int_a^b f(x) \,dx = \frac{1}{k} \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx.$$
+
+%%ANKI
+Basic
+What does the horizontal scaling property of integrals state?
+Back: Let $f$ be integrable over $[a, b]$ and $k \in \mathbb{R}$ s.t. $k \neq 0$. Then $$\int_a^b f(x) \,dx = \frac{1}{k} \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735743913556-->
+END%%
+
+%%ANKI
+Basic
+Assume the following integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx = \frac{1}{k} \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx$$
+Back: The horizontal scaling property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735743913568-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable over $[a, b]$ and $g(x) = f(x / k)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
+Back: $\frac{1}{k} \int_{ka}^{kb} g(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735743913575-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable over $[a, b]$ and $g(x) = f(kx)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
+Back: $k \int_{a/k}^{b/k} g(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735743913580-->
+END%%
+
+%%ANKI
+Cloze
+The {horizontal scaling} property of integrals corresponds to a change of scale on the {$x$}-axis.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735743913591-->
+END%%
+
+%%ANKI
+Basic
+What identity relates horizontal and vertical scaling of integrals?
+Back: $$\int_a^b kf(x) \,dx = \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735749673647-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten so that the integrand is just $f(x)$? $$\int_a^b f(kx) \,dx$$
+Back: $$\frac{1}{k} \int_{ka}^{kb} f(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735750191055-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten so that the integrand is just $f(x)$? $$\int_a^b f\left(\frac{x}{k}\right) \,dx$$
+Back: $$k \int_{a / k}^{b / k} f(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735751159485-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten so that the integration limits are just $a$ and $b$? $$\int_{ka}^{kb} f(x) \,dx$$
+Back: $$k \int_{a}^{b} f(kx) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735751159489-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten so that the integration limits are just $a$ and $b$? $$\int_{a/k}^{b/k} f(x) \,dx$$
+Back: $$\frac{1}{k} \int_{a}^{b} f\left(\frac{x}{k}\right) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735751159493-->
+END%%
+
+### Reflection
+
+The reflection properties are special cases of the vertical and horizontal scaling properties. Let $f$ be integrable over $[a, b]$. Then $$\int_a^b f(x) \,dx = -\int_a^b -f(x) \,dx \quad\text{and}\quad \int_a^b f(x) \,dx = \int_{-b}^{-a} f(-x) \,dx.$$
+
+%%ANKI
+Basic
+What does the horizontal reflection property of integrals state?
+Back: Let $f$ be integrable over $[a, b]$. Then $$\int_a^b f(x) \,dx = \int_{-b}^{-a} f(-x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735744900576-->
+END%%
+
+%%ANKI
+Basic
+What does the vertical reflection property of integrals state?
+Back: Let $f$ be integrable over $[a, b]$. Then $$\int_a^b f(x) \,dx = -\int_{a}^{b} -f(x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735745285987-->
+END%%
+
+%%ANKI
+Basic
+Assume the following integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx = \int_{-b}^{-a} f(-x) \,dx.$$
+Back: The horizontal reflection property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735744900581-->
+END%%
+
+%%ANKI
+Basic
+Assume the following integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx = -\int_{a}^{b} -f(x) \,dx.$$
+Back: The vertical reflection property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735745285989-->
+END%%
+
+%%ANKI
+Basic
+The horizontal reflection property of integrals is a special case of what other basic property?
+Back: Horizontal scaling.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735744900585-->
+END%%
+
+%%ANKI
+Basic
+The vertical reflection property of integrals is a special case of what other basic property?
+Back: Vertical scaling.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735745285992-->
+END%%
+
+%%ANKI
+Basic
+The reflection property of integrals is a scaling by what value?
+Back: $-1$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735744900590-->
 END%%
 
 ## Bibliography

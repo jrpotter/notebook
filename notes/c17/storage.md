@@ -238,7 +238,7 @@ END%%
 %%ANKI
 Basic
 What is the lifetime of an object with thread storage duration?
-Back: The entire execution fo the thread for which it is created.
+Back: The entire execution of the thread for which it is created.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733060664939-->
 END%%

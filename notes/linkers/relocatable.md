@@ -118,7 +118,7 @@ END%%
 %%ANKI
 Basic
 With respect to linkers, a local symbol corresponds to what kind of C construct?
-Back: A static function or global variable defined in the given module.
+Back: A static function or variable defined in the given module.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1735159138677-->

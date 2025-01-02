@@ -724,6 +724,20 @@ Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” acces
 END%%
 
 %%ANKI
+Cloze
+A {horizontal} reflection mirrors over/through the {$y$}-axis.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1735744900558-->
+END%%
+
+%%ANKI
+Cloze
+A {vertical} reflection mirrors over/through the {$x$}-axis.
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1735744900564-->
+END%%
+
+%%ANKI
 Basic
 Consider the graph of $f(x)$. Is $f(-x)$ its horizontal or vertical reflection?
 Back: Horizontal (reflection along the $y$-axis).
@@ -769,6 +783,14 @@ Suppose $f(x)$ has range $[4, 8]$. What is the range of $-f(x)$?
 Back: $[-8, -4]$
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1734656938178-->
+END%%
+
+%%ANKI
+Basic
+A reflection of a graph is a scaling by what value?
+Back: $-1$
+Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+<!--ID: 1735744900567-->
 END%%
 
 ## Bibliography

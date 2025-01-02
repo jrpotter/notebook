@@ -632,7 +632,7 @@ END%%
 Basic
 Which vertices are isolated in the following?
 ![[directed-graph-example.png]]
-Back: N/A
+Back: N/A.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710796091112-->
 END%%

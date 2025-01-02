@@ -255,7 +255,7 @@ END%%
 %%ANKI
 Basic
 How is a permutation defined using the concept of functions?
-Back: A permutation of a set $A$ is a one-to-one function from $A$ to $A$.
+Back: A permutation of a set $A$ is a one-to-one function from $A$ onto $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1735074143690-->
 END%%

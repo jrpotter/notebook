@@ -25,7 +25,7 @@ A [[language]] is called a **regular language** if a finite automaton recognizes
 
 %%ANKI
 Basic
-A finite automaton comprises of how many components?
+A finite automaton is defined as a tuple of how many components?
 Back: Five.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1734999643206-->
@@ -130,7 +130,7 @@ END%%
 %%ANKI
 Basic
 Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. How does $q_0$ relate to $Q$?
-Back: $q_0 \subseteq Q$
+Back: $q_0 \in Q$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1734999643257-->
 END%%
@@ -255,7 +255,7 @@ END%%
 
 %%ANKI
 Cloze
-{1:Edges} are to {2:diagraphs} whereas {2:transitions} are to {1:state diagrams}.
+{1:Edges} are to {2:graphs} whereas {2:transitions} are to {1:state diagrams}.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1734999643325-->
 END%%
@@ -540,7 +540,7 @@ END%%
 %%ANKI
 Basic
 Let $A$ be a language. How is the Kleene star regular operation defined?
-Back: As $A^* = \{ x_1x_2 \cdots x_k \mid k \geq 0 \land x_i \in A \}$
+Back: As $A^* = \{ x_1x_2 \cdots x_k \mid k \geq 0 \land x_1, \ldots, x_k \in A \}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1735160593075-->
 END%%
