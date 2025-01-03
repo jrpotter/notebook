@@ -880,6 +880,14 @@ Each $B_i \rightarrow S_i$ is called a **guarded command**. To execute the alter
 
 %%ANKI
 Basic
+The conventional `if` statement corresponds to what command?
+Back: The alternative command.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1735873377633-->
+END%%
+
+%%ANKI
+Basic
 How is the alternative command compactly denoted?
 Back: As $\text{IF}$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
@@ -962,6 +970,14 @@ END%%
 
 %%ANKI
 Basic
+Suppose two guards of an alternative command is true. Which is chosen?
+Back: Either is permitted.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1735873377661-->
+END%%
+
+%%ANKI
+Basic
 When *might* the following alternative command abort? $$\begin{align*} \textbf{if } & x > 0 \rightarrow z \coloneqq x \\ \textbf{ | } & x < 0 \rightarrow z \coloneqq -x \\ \textbf{fi } & \end{align*}$$
 Back: When $x = 0$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
@@ -1013,6 +1029,98 @@ How is command $skip$ wrapped in a no-op alternative command?
 Back: As $\textbf{if } T \rightarrow skip \textbf{ fi}$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1722259243640-->
+END%%
+
+### Iterative
+
+The general form of the **iterative command** is: $$\begin{align*} \textbf{do } & B_1 \rightarrow S_1 \\ \textbf{ | } & B_2 \rightarrow S_2 \\ & \quad\cdots \\ \textbf{ | } & B_n \rightarrow S_n \\ \textbf{od } & \end{align*}$$
+
+%%ANKI
+Basic
+The conventional `while` statement corresponds to what command?
+Back: The iterative command.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1735873377664-->
+END%%
+
+%%ANKI
+Cloze
+{1:$\text{IF}$} is to the {2:alternative} command whereas {2:$\text{DO}$} is to the {1:iterative} command.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1735873377667-->
+END%%
+
+%%ANKI
+Basic
+How is the iterative command compactly denoted?
+Back: As $\text{DO}$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1735873377671-->
+END%%
+
+%%ANKI
+Basic
+What kind of command is $\text{DO}$ a representation of?
+Back: An iterative command.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1735873377674-->
+END%%
+
+%%ANKI
+Basic
+What is the general form of the iterative command?
+Back: $$\begin{align*} \textbf{do } & B_1 \rightarrow S_1 \\ \textbf{ | } & B_2 \rightarrow S_2 \\ & \quad\cdots \\ \textbf{ | } & B_n \rightarrow S_n \\ \textbf{od } & \end{align*}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1735873377678-->
+END%%
+
+%%ANKI
+Basic
+How are iterative commands executed?
+Back: By repeatedly choosing any true guard and executing the corresponding command.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1735873377683-->
+END%%
+
+%%ANKI
+Basic
+What does it mean to "perform an iteration" of an iterative command?
+Back: Choosing a true guard and executing its command.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1735873377687-->
+END%%
+
+%%ANKI
+Basic
+In what way is the iterative command's execution different from traditional loop statements?
+Back: It is nondeterministic.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1735873377691-->
+END%%
+
+%%ANKI
+Basic
+Suppose two guards of an iterative command is true. Which is chosen?
+Back: Either is permitted.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1735873377695-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten to have just one iterative guard? $$\begin{align*} \textbf{do } & B_1 \rightarrow S_1 \\ \textbf{ | } & B_2 \rightarrow S_2 \\ & \quad\cdots \\ \textbf{ | } & B_n \rightarrow S_n \\ \textbf{od } & \end{align*}$$
+Back: Given $BB = B_1 \lor \cdots \lor B_n$, as $$\begin{align*} \textbf{do } & BB \rightarrow \textbf{if } B_1 \rightarrow S_1 \\ & \quad\quad\quad \textbf{ | } B_2 \rightarrow S_2 \\ & \quad\quad\quad \quad\cdots \\ & \quad\quad\quad \textbf{ | } B_n \rightarrow S_n \\ & \quad\quad\quad \textbf{fi } \\ \textbf{od } & \end{align*}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1735873377699-->
+END%%
+
+%%ANKI
+Basic
+Which command is demonstrated in the following diagram?
+![[iterative-command.png]]
+Back: The iterative command.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1735873599850-->
 END%%
 
 ## Bibliography

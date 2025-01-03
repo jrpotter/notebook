@@ -225,21 +225,23 @@ Basic
 What C variables are marked `COMMON` instead of put in `.bss`?
 Back: Global uninitialized variables.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
 <!--ID: 1735343812827-->
 END%%
 
 %%ANKI
 Basic
 What C variables are put in `.bss` instead of marked `COMMON`?
-Back: Static variables or global variables initialized to zero.
+Back: Static variables and global variables initialized to zero.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
 <!--ID: 1735343812828-->
 END%%
 
 %%ANKI
 Basic
 Assuming `-fcommon`, what kind of C variables does the `.bss` section contain?
-Back: Static variables or global and static variables initialized to zero.
+Back: Static variables and global variables initialized to zero.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1735343812829-->

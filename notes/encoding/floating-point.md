@@ -852,6 +852,15 @@ END%%
 
 %%ANKI
 Basic
+Let `float x = 1.0`. What does `x`'s exponent *value* equal?
+Back: $0$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1735827481751-->
+END%%
+
+%%ANKI
+Basic
 Let `double x = 1.0`. What is the bit representation of `x`'s exponent *field*?
 Back: `01111111111`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

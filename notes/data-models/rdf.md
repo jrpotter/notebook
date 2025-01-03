@@ -201,12 +201,12 @@ END%%
 
 ## Blank Nodes
 
-A **blank node** (bnode) is a node in an RDF graph representing a resource for which a [[uri|URI]] is not specified. That is, the represented resource is anonymous. Such a node can only be used as a subject or object in an RDF triple.
+A **blank node** (bnode) is a node in an RDF graph representing a resource for which a [[uri|IRI]] is not specified. That is, the represented resource is anonymous. Such a node can only be used as a subject or object in an RDF triple.
 
 %%ANKI
 Basic
 What is a blank node?
-Back: A node in an RDF graph representing a resource with an unspecified URI.
+Back: A node in an RDF graph representing a resource with an unspecified IRI.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1735162429073-->
 END%%
@@ -214,7 +214,6 @@ END%%
 %%ANKI
 Cloze
 A {bnode} is shorthand for a {blank node}.
-Back: A node in an RDF graph representing a resource with an unspecified URI.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1735162429077-->
 END%%

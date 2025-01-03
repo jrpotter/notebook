@@ -241,7 +241,9 @@
     "state-diagram.png",
     "state-diagram-ends1.png",
     "state-diagram-ends0.png",
-    "dfs-edge-classification.png"
+    "dfs-edge-classification.png",
+    "complex-plane-point.png",
+    "iterative-command.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -417,7 +419,7 @@
     "_journal/2024-03/2024-03-15.md": "e54b2513beac5f46313b4c37622adf39",
     "_journal/2024-03-17.md": "72e99c7630085aee2c7f340a06b5ada7",
     "_journal/2024-03/2024-03-16.md": "ab7629c24ebe70838072cf6acec47cb0",
-    "encoding/floating-point.md": "d19e3f992bf2e073d2049fb0973c89bd",
+    "encoding/floating-point.md": "4deee7fd18a0efdf18fee993013ba4b0",
     "_journal/2024-03-18.md": "8479f07f63136a4e16c9cd07dbf2f27f",
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
@@ -544,7 +546,7 @@
     "_journal/2024-05-13.md": "71eb7924653eed5b6abd84d3a13b532b",
     "_journal/2024-05/2024-05-12.md": "ca9f3996272152ef89924bb328efd365",
     "git/remotes.md": "6fbbc95efa421c720e40500e5d133639",
-    "programming/pred-trans.md": "c02471c6c9728dd19f8df7bc180ef8b1",
+    "programming/pred-trans.md": "5b271eebe32e33108d7a36ad98600148",
     "set/axioms.md": "063955bf19c703e9ad23be2aee4f1ab7",
     "_journal/2024-05-14.md": "f6ece1d6c178d57875786f87345343c5",
     "_journal/2024-05/2024-05-13.md": "d549dd75fb42b4280d4914781edb0113",
@@ -1047,7 +1049,7 @@
     "encoding/xml/index.md": "01a66b1a102cccc682f8f1cab0f50bc6",
     "ontology/reification.md": "ef8275957dcc1a7e5501722d4652e41c",
     "ontology/rdf.md": "fd273c30bec6f46b68547f0d392620b1",
-    "data-models/rdf.md": "98594898837f981dcbdd26df80e93a87",
+    "data-models/rdf.md": "122bad0fa8e2b299e75e744bc5c246d6",
     "serialization/xml.md": "84b632282ebcc2b6216923a02abdd4c2",
     "serialization/index.md": "5ed7e99e4efc4844839ea357d351f5d8",
     "data-models/index.md": "9e60f40798490f0743f291e55f492033",
@@ -1065,7 +1067,7 @@
     "_journal/2024-12/2024-12-23.md": "72b0964a8a5ed8ba0acf7fe10b5de279",
     "_journal/2024-12-25.md": "1717d37b074df58175ec0272adc278de",
     "_journal/2024-12/2024-12-24.md": "dcd3bd8b82ca4d47a9642a46d8bece0d",
-    "linkers/relocatable.md": "64c3c75dca8ec9676bd80a9a9feb7887",
+    "linkers/relocatable.md": "31b5d8700a787e5aeee41f819864bcd9",
     "data-models/federation.md": "1d92747304186bd2833a00a488fcac48",
     "_journal/2024-12-26.md": "022aeaf68d46fd39b23aca9c577f3f41",
     "_journal/2024-12/2024-12-25.md": "1717d37b074df58175ec0272adc278de",
@@ -1416,7 +1418,10 @@
     "_journal/2024/2024-12/2024-12-03.md": "54480a38f1e16e48529cbb99c5349c74",
     "_journal/2024/2024-12/2024-12-02.md": "beb50f6f3656470f2cb28b759b652994",
     "_journal/2024/2024-12/2024-12-01.md": "84987be103489d6447eba85726aa2489",
-    "_journal/2025-01-01.md": "3cf29f753c27313c95a435a7845b4c13"
+    "_journal/2025-01-01.md": "3cf29f753c27313c95a435a7845b4c13",
+    "_journal/2025-01-02.md": "d836d831495d0646e7bf8c564579f9f1",
+    "_journal/2025-01/2025-01-01.md": "3cf29f753c27313c95a435a7845b4c13",
+    "algebra/complex.md": "37befb93643418cd8905c49e2f53627b"
   },
   "fields_dict": {
     "Basic": [
