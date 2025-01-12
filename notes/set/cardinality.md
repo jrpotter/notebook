@@ -495,14 +495,6 @@ END%%
 
 %%ANKI
 Basic
-According to Enderton, what is the "essential demand" for defining cardinal numbers?
-Back: Defining cardinal numbers such that for any sets $A$ and $B$, $\mathop{\text{card}} A = \mathop{\text{card}} B$ iff $A \approx B$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733407760108-->
-END%%
-
-%%ANKI
-Basic
 What name is given to $\mathop{\text{card}} \omega$?
 Back: $\aleph_0$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -726,7 +718,7 @@ END%%
 %%ANKI
 Basic
 Let $K$ and $L$ be disjoint sets. What does $\mathop{\text{card}}(K \cup L)$ evaluate to?
-Back: As $\kappa + \lambda$ where $\kappa = \mathop{\text{card}} K$ and $\lambda = \mathop{\text{card}} L$.
+Back: $\mathop{\text{card}}K + \mathop{\text{card}}L$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733710439142-->
 END%%
@@ -873,14 +865,14 @@ END%%
 %%ANKI
 Basic
 Let $K$ and $L$ be sets. What does $\mathop{\text{card}}(K \times L)$ evaluate to?
-Back: As $\kappa \cdot \lambda$ where $\kappa = \mathop{\text{card}} K$ and $\lambda = \mathop{\text{card}} L$.
+Back: $\mathop{\text{card}}K \cdot \mathop{\text{card}}L$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733710439156-->
 END%%
 
 %%ANKI
 Basic
-Let $K \approx \kappa$ and $L \approx \lambda$. What is necessary for $\mathop{\text{card}}(K \times L) \approx \kappa \cdot \lambda$?
+Let $\mathop{\text{card}}K = \kappa$ and $\mathop{\text{card}}L = \lambda$. What is necessary for $\mathop{\text{card}}(K \times L) = \kappa \cdot \lambda$?
 Back: N/A. This is true by definition.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733710439159-->
@@ -1067,7 +1059,7 @@ END%%
 %%ANKI
 Basic
 Let $K$ and $L$ be sets. What does $\mathop{\text{card}}(^LK)$ evaluate to?
-Back: As $\kappa^\lambda$ where $\kappa = \mathop{\text{card}} K$ and $\lambda = \mathop{\text{card}} L$.
+Back: To $\kappa^\lambda$ where $\kappa = \mathop{\text{card}} K$ and $\lambda = \mathop{\text{card}} L$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733710439168-->
 END%%

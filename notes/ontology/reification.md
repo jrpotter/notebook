@@ -59,7 +59,7 @@ END%%
 
 %%ANKI
 Basic
-What "form" of reification does the following sentence take on? $$\text{Wikipedia says Shakespeare wrote Hamlet.}$$
+What "form(s)" of reification does the following sentence take on? $$\text{Wikipedia says Shakespeare wrote Hamlet.}$$
 Back: Provenance.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1734385502435-->
@@ -75,7 +75,7 @@ END%%
 
 %%ANKI
 Basic
-What "form" of reification does the following sentence take on? $$\text{It is 90\% probable that Shakespeare wrote Hamlet.}$$
+What "form(s)" of reification does the following sentence take on? $$\text{It is 90\% probable that Shakespeare wrote Hamlet.}$$
 Back: Likelihood.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1734385502443-->
@@ -91,7 +91,7 @@ END%%
 
 %%ANKI
 Basic
-What "form" of reification does the following sentence take on? $$\text{Kenneth Branagh played Hamlet in the movie.}$$
+What "form(s)" of reification does the following sentence take on? $$\text{Kenneth Branagh played Hamlet in the movie.}$$
 Back: Context.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1734385502453-->
@@ -107,7 +107,7 @@ END%%
 
 %%ANKI
 Basic
-What "form" of reification does the following sentence take on? $$\text{Hamlet plays on Broadway Jan. 11th through Mar. 12th.}$$
+What "form(s)" of reification does the following sentence take on? $$\text{Hamlet plays on Broadway Jan. 11th through Mar. 12th.}$$
 Back: Time frame.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1734385502463-->

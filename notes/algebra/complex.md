@@ -14,7 +14,7 @@ where $i$ is the **imaginary number** defined as $i^2 = -1$.
 
 %%ANKI
 Basic
-How is set the complex numbers denoted?
+How is the set of complex numbers denoted?
 Back: As $\mathbb{C}$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1735870487309-->
@@ -76,7 +76,7 @@ Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh editi
 END%%
 
 %%ANKI
-Cloze
+Basic
 What real number is identified with $-\pi + 0i$?
 Back: $-\pi$
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
@@ -84,7 +84,7 @@ Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh editi
 END%%
 
 %%ANKI
-Cloze
+Basic
 What real number is identified with $\pi + 2i$?
 Back: N/A.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).

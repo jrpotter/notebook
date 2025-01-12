@@ -683,7 +683,7 @@ END%%
 %%ANKI
 Basic
 How does `%g` handle non-integral values differently from `%f`?
-Back: It excludes insignifant `0`s after the decimal point.
+Back: It excludes insignificant `0`s after the decimal point.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1710603411174-->
 END%%

@@ -7,274 +7,21 @@ tags:
   - computability
 ---
 
-## Finite Automata
+## Overview
 
-A **finite automaton** is a $5$-tuple $\langle Q, \Sigma, \delta, q_0, F \rangle$, where
+**Finite automata** are classified as either **deterministic** or **nondeterministic**. These two representations are equivalent.
 
-1. $Q$ is a finite set called the **states**;
-2. $\Sigma$ is a finite set called the alphabet;
-3. $\delta \colon Q \times \Sigma \rightarrow Q$ is the **transition function**;
-4. $q_0 \in Q$ is the **start state**; and
-5. $F \subseteq Q$ is the set of **final states**.
+If $s$ is processed by finite automaton $M$ such that $M$ finishes in an accept state, we say $M$ **accepts** $s$. Otherwise $M$ **rejects** $s$. If $A$ is the set of all strings that $M$ accepts, we say that $A$ is the **language of machine $M$**, denoted $L(M) = A$. We say that $M$ **recognizes** $A$.
 
-These automaton are typically denoted using a **state diagram** like below. The start state is indicated by an arrow pointing at it from nowhere. An accept state is denoted with a double circle.
-
-![[state-diagram.png]]
-
-A [[language]] is called a **regular language** if a finite automaton recognizes it.
+A [[computability/index|language]] is called a **regular language** if a finite automaton recognizes it.
 
 %%ANKI
 Basic
-A finite automaton is defined as a tuple of how many components?
-Back: Five.
+Finite automaton are largely classified in what two buckets?
+Back: Deterministic and nondeterministic.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643206-->
+<!--ID: 1736721887587-->
 END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What kind of mathematical entity is $Q$?
-Back: A finite set of states.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643211-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What name is given to $Q$?
-Back: $M$'s states.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643215-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What is $\Sigma$?
-Back: An alphabet.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643218-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What kind of mathematical entity is $\delta$?
-Back: A function.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643221-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What name is given to $\delta$?
-Back: $M$'s transition function.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643224-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What is $\delta$'s domain?
-Back: $Q \times \Sigma$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643227-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What is $\delta$'s codomain?
-Back: $Q$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643230-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What kind of mathematical entity is $q_0$?
-Back: An urelement.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643233-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What name is given to $q_0$?
-Back: $M$'s start state.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643238-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What name is given to $F$?
-Back: $M$'s final states.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643242-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What kind of mathematical entity is $F$?
-Back: A finite set.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643247-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. How does $F$ relate to $Q$?
-Back: $F \subseteq Q$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643252-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. How does $q_0$ relate to $Q$?
-Back: $q_0 \in Q$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643257-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. How does $q_0$ relate to $F$?
-Back: N/A.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643263-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M$. How many start states does $M$ have?
-Back: One.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643267-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M$. How many accept states does $M$ have?
-Back: Zero or more.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643272-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M$. How is $M$'s start state denoted in a state diagram?
-Back: With an arrow pointing to it from nowhere.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643277-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M$. How is $M$'s final states denoted in a state diagram?
-Back: With double circles.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643282-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M$. How is $M$'s transition function denoted in a state diagram?
-Back: As edges to and from states.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643286-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M$. How is $M$'s alphabet denoted in a state diagram?
-Back: With symbols labeling each edge.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643291-->
-END%%
-
-%%ANKI
-Basic
-Consider diagram of finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What does $Q$ evaluate to?
-![[state-diagram.png]]
-Back: $Q = \{q_1, q_2, q_3\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643296-->
-END%%
-
-%%ANKI
-Basic
-Consider diagram of finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What does $\Sigma$ evaluate to?
-![[state-diagram.png]]
-Back: $\Sigma = \{0, 1\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643301-->
-END%%
-
-%%ANKI
-Basic
-Consider diagram of finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What does $q_0$ evaluate to?
-![[state-diagram.png]]
-Back: $q_0 = q_1$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643305-->
-END%%
-
-%%ANKI
-Basic
-Consider diagram of finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What does $\mathop{\text{dom}}\delta$ evaluate to?
-![[state-diagram.png]]
-Back: $\{q_1, q_2, q_3\} \times \{0, 1\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643309-->
-END%%
-
-%%ANKI
-Basic
-Consider diagram of finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What does $\mathop{\text{ran}}\delta$ evaluate to?
-![[state-diagram.png]]
-Back: $\{q_1, q_2, q_3\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643313-->
-END%%
-
-%%ANKI
-Basic
-Consider diagram of finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$. What does $F$ evaluate to?
-![[state-diagram.png]]
-Back: $F = \{q_2\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643317-->
-END%%
-
-%%ANKI
-Basic
-What name is given to a finite automaton's standard graphical depiction?
-Back: Its state diagram.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643321-->
-END%%
-
-%%ANKI
-Cloze
-{1:Edges} are to {2:graphs} whereas {2:transitions} are to {1:state diagrams}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643325-->
-END%%
-
-%%ANKI
-Cloze
-{1:Vertices} are to {2:graphs} whereas {2:states} are to {1:state diagrams}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643328-->
-END%%
-
-%%ANKI
-Cloze
-The {final} states of a finite automaton are also called the {accept} states.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643332-->
-END%%
-
-If $s$ is processed by machine $M$ such that $M$ finishes in an accept state, we say $M$ **accepts** $s$. Otherwise $M$ **rejects** $s$. If $A$ is the set of all strings that $M$ accepts, we say that $A$ is the **language of machine $M$**, denoted $L(M) = A$. We say that $M$ **recognizes** $A$.
 
 %%ANKI
 Basic
@@ -349,136 +96,10 @@ END%%
 
 %%ANKI
 Basic
-Suppoe finite automaton $M$ does not accept any strings. What language does it recognize?
+Suppose finite automaton $M$ does not accept any strings. What language does it recognize?
 Back: $\varnothing$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1734999643385-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $Q$ evaluate to?
-![[state-diagram-ends1.png]]
-Back: $Q = \{q_1, q_2\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643390-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $\Sigma$ evaluate to?
-![[state-diagram-ends1.png]]
-Back: $\Sigma = \{0, 1\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643396-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $F$ evaluate to?
-![[state-diagram-ends1.png]]
-Back: $F = \{q_2\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643402-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $q_0$ evaluate to?
-![[state-diagram-ends1.png]]
-Back: $q_0 = q_1$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643408-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $\mathop{\text{dom}}\delta$ evaluate to?
-![[state-diagram-ends1.png]]
-Back: $\{q_1, q_2\} \times \{0, 1\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643415-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $\mathop{\text{ran}}\delta$ evaluate to?
-![[state-diagram-ends1.png]]
-Back: $\{q_1, q_2\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643420-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $L(M)$ evaluate to?
-![[state-diagram-ends1.png]]
-Back: $\{w \mid w \text{ ends with a } 1 \}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643424-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $Q$ evaluate to?
-![[state-diagram-ends0.png]]
-Back: $Q = \{q_1, q_2\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643428-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $\Sigma$ evaluate to?
-![[state-diagram-ends0.png]]
-Back: $\Sigma = \{0, 1\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643433-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $F$ evaluate to?
-![[state-diagram-ends0.png]]
-Back: $F = \{q_1\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643440-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $q_0$ evaluate to?
-![[state-diagram-ends0.png]]
-Back: $q_0 = q_1$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643445-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $\mathop{\text{dom}}\delta$ evaluate to?
-![[state-diagram-ends0.png]]
-Back: $\{q_1, q_2\} \times \{0, 1\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643450-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $\mathop{\text{ran}}\delta$ evaluate to?
-![[state-diagram-ends0.png]]
-Back: $\{q_1, q_2\}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643455-->
-END%%
-
-%%ANKI
-Basic
-Consider finite automaton $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ below. What does $L(M)$ evaluate to?
-![[state-diagram-ends0.png]]
-Back: $\{w \mid w = \epsilon \lor w \text{ ends with a } 0 \}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643459-->
 END%%
 
 %%ANKI
@@ -502,6 +123,405 @@ What is a nonregular language?
 Back: One that exists beyond the capabilities of a finite automaton.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1735160593029-->
+END%%
+
+## Determinism
+
+A **deterministic finite automaton** (DFA) is a $5$-tuple $\langle Q, \Sigma, \delta, q_0, F \rangle$, where
+
+1. $Q$ is a finite set called the **states**;
+2. $\Sigma$ is a finite set called the alphabet;
+3. $\delta \colon Q \times \Sigma \rightarrow Q$ is the **transition function**;
+4. $q_0 \in Q$ is the **start state**; and
+5. $F \subseteq Q$ is the set of **final states**.
+
+These automaton are typically denoted using a **state diagram** like below. The start state is indicated by an arrow pointing at it from nowhere. An accept state is denoted with a double circle.
+
+![[dfa-example.png]]
+
+%%ANKI
+Basic
+A deterministic finite automaton is defined as a tuple of how many components?
+Back: Five.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643206-->
+END%%
+
+%%ANKI
+Basic
+What is DFA an acronym for?
+Back: **D**eterministic **f**inite **a**utomata.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736721887614-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What kind of mathematical entity is $Q$?
+Back: A finite set of states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643211-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What name is given to $Q$?
+Back: $M$'s states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643215-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What is $\Sigma$?
+Back: An alphabet.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643218-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What kind of mathematical entity is $\delta$?
+Back: A function.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643221-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What name is given to $\delta$?
+Back: $M$'s transition function.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643224-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What is $\delta$'s domain?
+Back: $Q \times \Sigma$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643227-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What is $\delta$'s codomain?
+Back: $Q$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643230-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What kind of mathematical entity is $q_0$?
+Back: An urelement.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643233-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What name is given to $q_0$?
+Back: $M$'s start state.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643238-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What name is given to $F$?
+Back: $M$'s final states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643242-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What kind of mathematical entity is $F$?
+Back: A finite set.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643247-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. How does $F$ relate to $Q$?
+Back: $F \subseteq Q$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643252-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. How does $q_0$ relate to $Q$?
+Back: $q_0 \in Q$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643257-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. How does $q_0$ relate to $F$?
+Back: N/A.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643263-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a DFA. How many start states does $M$ have?
+Back: One.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643267-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a DFA. How many accept states does $M$ have?
+Back: Zero or more.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643272-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a DFA. How is $M$'s start state denoted in a state diagram?
+Back: With an arrow pointing to it from nowhere.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643277-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a DFA. How is $M$'s final states denoted in a state diagram?
+Back: With double circles.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643282-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a DFA. How is $M$'s transition function denoted in a state diagram?
+Back: As edges to and from states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643286-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a DFA. How is $M$'s alphabet denoted in a state diagram?
+Back: With symbols labeling each edge.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643291-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $Q$ evaluate to?
+![[dfa-example.png]]
+Back: $Q = \{q_1, q_2, q_3\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643296-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $\Sigma$ evaluate to?
+![[dfa-example.png]]
+Back: $\Sigma = \{0, 1\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643301-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $q_0$ evaluate to?
+![[dfa-example.png]]
+Back: $q_0 = q_1$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643305-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $\mathop{\text{dom}}\delta$ evaluate to?
+![[dfa-example.png]]
+Back: $\{q_1, q_2, q_3\} \times \{0, 1\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643309-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $\mathop{\text{ran}}\delta$ evaluate to?
+![[dfa-example.png]]
+Back: $\{q_1, q_2, q_3\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643313-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $F$ evaluate to?
+![[dfa-example.png]]
+Back: $F = \{q_2\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643317-->
+END%%
+
+%%ANKI
+Basic
+What name is given to a DFA's standard graphical depiction?
+Back: Its state diagram.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643321-->
+END%%
+
+%%ANKI
+Cloze
+{1:Edges} are to {2:graphs} whereas {2:transitions} are to {1:state diagrams}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643325-->
+END%%
+
+%%ANKI
+Cloze
+{1:Vertices} are to {2:graphs} whereas {2:states} are to {1:state diagrams}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643328-->
+END%%
+
+%%ANKI
+Cloze
+The {final} states of a DFA are also called the {accept} states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643332-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $Q$ evaluate to?
+![[dfa-ends1.png]]
+Back: $Q = \{q_1, q_2\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643390-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $\Sigma$ evaluate to?
+![[dfa-ends1.png]]
+Back: $\Sigma = \{0, 1\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643396-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $F$ evaluate to?
+![[dfa-ends1.png]]
+Back: $F = \{q_2\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643402-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $q_0$ evaluate to?
+![[dfa-ends1.png]]
+Back: $q_0 = q_1$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643408-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $\mathop{\text{dom}}\delta$ evaluate to?
+![[dfa-ends1.png]]
+Back: $\{q_1, q_2\} \times \{0, 1\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643415-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $\mathop{\text{ran}}\delta$ evaluate to?
+![[dfa-ends1.png]]
+Back: $\{q_1, q_2\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643420-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $L(M)$ evaluate to?
+![[dfa-ends1.png]]
+Back: $\{w \mid w \text{ ends with a } 1 \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643424-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $Q$ evaluate to?
+![[dfa-ends0.png]]
+Back: $Q = \{q_1, q_2\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643428-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $\Sigma$ evaluate to?
+![[dfa-ends0.png]]
+Back: $\Sigma = \{0, 1\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643433-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $F$ evaluate to?
+![[dfa-ends0.png]]
+Back: $F = \{q_1\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643440-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $q_0$ evaluate to?
+![[dfa-ends0.png]]
+Back: $q_0 = q_1$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643445-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $\mathop{\text{dom}}\delta$ evaluate to?
+![[dfa-ends0.png]]
+Back: $\{q_1, q_2\} \times \{0, 1\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643450-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $\mathop{\text{ran}}\delta$ evaluate to?
+![[dfa-ends0.png]]
+Back: $\{q_1, q_2\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643455-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $L(M)$ evaluate to?
+![[dfa-ends0.png]]
+Back: $\{w \mid w = \epsilon \lor w \text{ ends with a } 0 \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643459-->
 END%%
 
 ## Regular Operations

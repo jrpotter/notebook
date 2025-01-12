@@ -602,7 +602,7 @@ END%%
 %%ANKI
 Basic
 Linking fails at symbol resolution if what set(s) are nonempty?
-Back: Either the set of unresolved symbols or relocatable object files.
+Back: The set of unresolved symbols.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1736632025912-->
 END%%
@@ -620,7 +620,7 @@ Basic
 Let `p.o` depends on `libx.a`. What minimal command lets `cc` resolve all symbol references?
 Back:
 ```bash
-$ cc p.o -x
+$ cc p.o -lx
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1736632025920-->
@@ -631,7 +631,7 @@ Basic
 Let `p.o` depends on `liby.a` which depends on `libx.a` . What minimal command lets `cc` resolve all symbol references?
 Back:
 ```bash
-$ cc p.o -y -x
+$ cc p.o -ly -lx
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1736632025924-->

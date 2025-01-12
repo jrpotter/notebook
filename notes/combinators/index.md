@@ -235,7 +235,7 @@ END%%
 %%ANKI
 Basic
 In a combinatory logic system, what is a combinator?
-Back: A closed term with no atomic constants.
+Back: A closed term with no atomic constants (besides the basic combinators).
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1735413657662-->
 END%%
