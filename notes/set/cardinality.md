@@ -1236,7 +1236,7 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1735074143712-->
 END%%
 
-### Ordering
+## Ordering
 
 A set $A$ is **dominated** by a set $B$, written $A \preceq B$, if and only if there is a one-to-one function from $A$ into $B$. In other words, $A \preceq B$ if and only if $A$ is equinumerous to some subset of $B$. Then $$\mathop{\text{card}}A \leq \mathop{\text{card}}B \text{ if and only if } A \preceq B.$$
 
@@ -1520,6 +1520,174 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1736702905267-->
 END%%
 
+### Schröder-Bernstein Theorem
+
+For any sets $A$ and $B$, if $A \preceq B$ and $B \preceq A$, then $A \approx B$.
+
+%%ANKI
+Basic
+In terms of sets, what does the Schröder-Bernstein theorem state?
+Back: For any sets $A$ and $B$, if $A \preceq B$ and $B \preceq A$, then $A \approx B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736711693540-->
+END%%
+
+%%ANKI
+Basic
+In terms of cardinal numbers, what does the Schröder-Bernstein theorem state?
+Back: For any cardinal numbers $\kappa$ and $\lambda$, if $\kappa \leq \lambda$ and $\lambda \leq \kappa$, then $\kappa = \lambda$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736711693542-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be cardinals numbers. What name is given to the following conditional? $$\kappa \leq \lambda \land \lambda \leq \kappa \Rightarrow \kappa = \lambda$$
+Back: The Schröder-Bernstein theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736711693543-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be sets. What name is given to the following conditional? $$A \preceq B \land B \preceq A \Rightarrow A \approx B$$
+Back: The Schröder-Bernstein theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736711693544-->
+END%%
+
+%%ANKI
+Basic
+The following is a visual depiction of what theorem?
+![[schroder-bernstein.png]]
+Back: The Schröder-Bernstein theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736711693545-->
+END%%
+
+%%ANKI
+Basic
+Consider injections $f \colon A \rightarrow B$ and $g \colon B \rightarrow A$. What set is "reflected" in the proof of the Schröder-Bernstein theorem?
+Back: $A - \mathop{\text{ran}}g$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736711693546-->
+END%%
+
+%%ANKI
+Basic
+The proof of the Schröder-Bernstein theorem uses concepts from what "paradox"?
+Back: Hilbert's paradox of the Grand Hotel.
+Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+<!--ID: 1736711693547-->
+END%%
+
+%%ANKI
+Basic
+Consider this visual proof of the Schröder-Bernstein theorem. The first yellow segment corresponds to what set?
+![[schroder-bernstein.png]]
+Back: $A - \mathop{\text{ran}}g$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736711693548-->
+END%%
+
+%%ANKI
+Basic
+Consider this visual proof of the Schröder-Bernstein theorem. The second yellow segment corresponds to what set?
+![[schroder-bernstein.png]]
+Back: $g[\![f[\![A - \mathop{\text{ran}}g]\!]]\!]$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736711693549-->
+END%%
+
+%%ANKI
+Cloze
+Consider injections $f \colon A \rightarrow B$ and $g \colon B \rightarrow A$. Then  $h \colon A \rightarrow B$ is a bijection where:
+* {$C_0$} $=$ {$A - \mathop{\text{ran} }g$} and {$C_{n^+}$} $=$ {$g[\![f[\![C_n]\!]]\!]$};
+* $h(x) =$ {$f(x)$} if {$x \in \bigcup_{n} C_n$};
+* $h(x) =$ {$g^{-1}(x)$} otherwise.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736711693550-->
+END%%
+
+## Hilbert's Hotel
+
+Consider a hypothetical hotel with rooms numbered $1$, $2$, $3$, and so on with no upper limit. That is, there is a countably infinite number of rooms in this hotel. Furthermore, it's assumed every room is occupied.
+
+Hilbert's hotel shows that any finite or countably infinite number of additional guests can still be accommodated for.
+
+%%ANKI
+Basic
+How many rooms exist in Hilbert's Hotel?
+Back: A countably infinite number.
+Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+<!--ID: 1736711693551-->
+END%%
+
+%%ANKI
+Basic
+What does Hilbert's Hotel assume about every one of its rooms?
+Back: That they are occupied.
+Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+<!--ID: 1736711693552-->
+END%%
+
+%%ANKI
+Basic
+How many rooms are there assumed to be in Hilbert's Hotel?
+Back: A countably infinite number of them, i.e. $\omega$.
+Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+<!--ID: 1736711693553-->
+END%%
+
+%%ANKI
+Basic
+Add one guest to Hilbert's Hotel. Typically, the occupant of room $n$ moves to what room?
+Back: $n + 1$
+Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+<!--ID: 1736711693554-->
+END%%
+
+%%ANKI
+Basic
+Add $k \in \mathbb{N}$ guests to Hilbert's Hotel. Typically, the occupant of room $n$ moves to what room?
+Back: $n + k$
+Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+<!--ID: 1736711693555-->
+END%%
+
+%%ANKI
+Basic
+Add a countably infinite number of guests to Hilbert's Hotel. Typically, the occupant of room $n$ moves to what room?
+Back: $2n$
+Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+<!--ID: 1736711693556-->
+END%%
+
+%%ANKI
+Basic
+Add a countably infinite number of guests to Hilbert's Hotel. Moving occupant of room $n$ to room $2n$ makes which rooms available?
+Back: All odd-numbered rooms.
+Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+<!--ID: 1736711693557-->
+END%%
+
+%%ANKI
+Basic
+What "paradox" does Hilbert's Hotel raise?
+Back: A fully occupied hotel can still make room for more guests.
+Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+<!--ID: 1736711693558-->
+END%%
+
+%%ANKI
+Basic
+Hilbert's paradox of the Grand Hotel illustates the existence of what mathematical entity?
+Back: A bijection between any countably infinite set and $\mathbb{N}$.
+Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+<!--ID: 1736711693559-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+* “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
