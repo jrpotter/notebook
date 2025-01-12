@@ -57,14 +57,14 @@ END%%
 
 %%ANKI
 Cloze
-{Symbol resolution} associates each {symbol reference} with exactly one {symbol definition}.
+The {symbol resolution} phase associates each {symbol reference} with exactly one {symbol definition}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1733671136092-->
 END%%
 
 %%ANKI
 Cloze
-{Relocation} assigns a {memory location} to each symbol and {updates references} accordingly.
+The {relocation} phase assigns a {memory location} to each symbol and {updates references} accordingly.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1733671136097-->
 END%%

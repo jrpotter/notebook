@@ -207,7 +207,7 @@ END%%
 
 %%ANKI
 Basic
-Let $s$ be a step function. How does $\int_a^b s(x) \,dx$ change as $s$'s partition is refined?
+Let $s$ be a step function. How does the value of $\int_a^b s(x) \,dx$ change as $s$'s partition is refined?
 Back: N/A. Its value does not change.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1733520215118-->
@@ -416,7 +416,7 @@ END%%
 
 %%ANKI
 Basic
-The additvity theorem w.r.t. intervals of integration corresponds to what property of area?
+The additivity theorem w.r.t. intervals of integration corresponds to what property of area?
 Back: The additive property of area.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735613867224-->

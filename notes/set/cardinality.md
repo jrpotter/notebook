@@ -480,7 +480,7 @@ END%%
 
 %%ANKI
 Cloze
-A {cardinal number} is a set that is {$\mathop{\text{card} } A$} for some set $A$.
+A {cardinal number} is denoted as {$\mathop{\text{card} } A$} for some set $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733407760102-->
 END%%
@@ -1324,7 +1324,7 @@ END%%
 
 %%ANKI
 Basic
-How do we expand expression $A \preceq B$ using FOL?
+In terms of sets, how do we expand expression $A \preceq B$ using FOL?
 Back: $\exists C, C \subseteq B \land A \approx C$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1735353438932-->
@@ -1332,7 +1332,7 @@ END%%
 
 %%ANKI
 Basic
-How do we expand expression $A \prec B$ using FOL?
+In terms of sets, how do we expand expression $A \prec B$ using FOL?
 Back: $A \not\approx B \land \exists C, C \subseteq B \land A \approx C$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1735493305924-->
@@ -1446,6 +1446,78 @@ What is the largest cardinal number?
 Back: N/A. There is no largest cardinal number.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1735522988817-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be a cardinal number. Does $\kappa \leq \kappa$ hold true?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736702905232-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be a cardinal number. Restate $\kappa \leq \kappa$ in terms of sets.
+Back: Let $K$ be a set s.t. $\mathop{\text{card}}K = \kappa$. Then $K \preceq K$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736702905238-->
+END%%
+
+%%ANKI
+Basic
+Let $K$ be a set. Restate $K \preceq K$ in terms of cardinal numbers.
+Back: Assuming $\mathop{\text{card}}K = \kappa$, $\kappa \leq \kappa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736702905241-->
+END%%
+
+%%ANKI
+Basic
+*Why* does $\kappa \leq \kappa$ for any cardinal number $\kappa$?
+Back: For set $K$ s.t. $\mathop{\text{card}}K = \kappa$, $K \preceq K$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736702905244-->
+END%%
+
+%%ANKI
+Basic
+For set $K$, which function most naturally proves $K \preceq K$?
+Back: The identity function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736702905248-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for cardinal numbers to obey transitivity?
+Back: Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. If $\kappa \leq \lambda$ and $\lambda \leq \mu$, then $\kappa \leq \mu$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736702905252-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. Restate the following in terms of sets: $$\text{if } \kappa \leq \lambda \text{ and } \lambda \leq \mu, \text{ then } \kappa \leq \mu$$
+Back: Let $K$, $L$, and $M$ be sets s.t. $\mathop{\text{card}}K = \kappa$, $\mathop{\text{card}}L = \lambda$, and $\mathop{\text{card}}M = \mu$. Then $$\text{if } K \preceq L \text{ and } L \preceq M, \text{ then } K \preceq M$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736702905257-->
+END%%
+
+%%ANKI
+Basic
+Let $K$, $L$, and $M$ be sets. Restate the following in terms of cardinal numbers: $$\text{if } K \preceq L \text{ and } L \preceq M, \text{ then } K \preceq M$$
+Back: Let $\mathop{\text{card}}K = \kappa$, $\mathop{\text{card}}L = \lambda$, and $\mathop{\text{card}}M = \mu$. Then $$\text{if } \kappa \leq \lambda \text{ and } \lambda \leq \mu, \text{ then } \kappa \leq \mu$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736702905262-->
+END%%
+
+%%ANKI
+Basic
+Suppose $K \preceq L$ and $L \preceq M$. *Why* must $K \preceq M$?
+Back: There exist injective functions $f \colon K \rightarrow L$ and $g \colon L \rightarrow M$. Then $f \circ g$ is one-to-one from $K$ to $M$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1736702905267-->
 END%%
 
 ## Bibliography

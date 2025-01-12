@@ -19,7 +19,7 @@ If the sequence of atomic constants is empty (besides the basic combinators), th
 
 %%ANKI
 Basic
-Who is usually attributed the creation of combinatory logic system?
+Who is usually attributed the creation of combinatory logic?
 Back: Moses Schönfinkel.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1735413657635-->
@@ -36,7 +36,7 @@ END%%
 %%ANKI
 Basic
 How many atomic constants exist in a combinatory logic system?
-Back: Zero or more.
+Back: The basic combinators plus zero or more.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1735413657637-->
 END%%
@@ -98,7 +98,7 @@ END%%
 
 %%ANKI
 Basic
-What term refers to the base case of the $CL$-term definition?
+What term(s) correspond to the base case of the $CL$-term definition?
 Back: The atoms.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1735413657645-->
@@ -106,7 +106,7 @@ END%%
 
 %%ANKI
 Basic
-What expression refers to the inductive cases of the $CL$-term definition?
+What term(s) correspond to the inductive case of the $CL$-term definition?
 Back: For $CL$-terms $X$ and $Y$, $(XY)$ is a $CL$-term.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1735413657646-->

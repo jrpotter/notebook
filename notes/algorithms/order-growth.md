@@ -302,7 +302,7 @@ END%%
 %%ANKI
 Basic
 Using typical identifiers, what is the upper bound of $c_2g(n)$ in $\Theta(g(n))$?
-Back: N/A
+Back: N/A.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708974221844-->
 END%%

@@ -222,11 +222,11 @@ END%%
 
 In any depth-first search of a graph, for any two vertices $u$ and $v$, exactly one of the following three conditions holds:
 
-1. The intervals $[u.d, u.f]$ and $[v.d, v.f]$ are disjoint.
+1. The intervals $[u{.}d, u{.}f]$ and $[v{.}d, v{.}f]$ are disjoint.
 	* No ancestor-descendant relation exists between $u$ and $v$.
-2. The interval $[u.d, u.f]$ is contained entirely within $[v.d, v.f]$.
+2. The interval $[u{.}d, u{.}f]$ is contained entirely within $[v{.}d, v{.}f]$.
 	* $u$ is a descendant of $v$.
-3. The interval $[v.d, v.f]$ is contained entirely within $[u.d, u.f]$.
+3. The interval $[v{.}d, v{.}f]$ is contained entirely within $[u{.}d, u{.}f]$.
 	* $v$ is a descendant of $u$.
 
 %%ANKI
@@ -239,7 +239,7 @@ END%%
 
 %%ANKI
 Basic
-Let $u$ be a vertex. What does $u.d$ refer to?
+Let $u$ be a vertex. What does $u{.}d$ refer to?
 Back: When vertex $u$ was discovered during DFS.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735785232417-->
@@ -247,7 +247,7 @@ END%%
 
 %%ANKI
 Basic
-Let $u$ be a vertex. What does $u.f$ refer to?
+Let $u$ be a vertex. What does $u{.}f$ refer to?
 Back: When vertex $u$ was finished processing during DFS.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735785232423-->
@@ -256,7 +256,7 @@ END%%
 %%ANKI
 Basic
 Given vertices $a$ and $b$, what does the parenthesis theorem state?
-Back: Either $[a.d, a.f]$ and $[b.d, b.f]$ are disjoint or one interval is contained entirely within the other.
+Back: Either $[a{.}d, a{.}f]$ and $[b{.}d, b{.}f]$ are disjoint or one interval is contained entirely within the other.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735785232427-->
 END%%
@@ -264,7 +264,7 @@ END%%
 %%ANKI
 Basic
 If $a$ is a descendant of $b$, what can be said about their discovery and finish times?
-Back: $b.d < a.d < a.f < b.f$
+Back: $b{.}d < a{.}d < a{.}f < b{.}f$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735785232431-->
 END%%
@@ -272,7 +272,7 @@ END%%
 %%ANKI
 Basic
 If $b$ is a descendant of $a$, what can be said about their discovery and finish times?
-Back: $a.d < b.d < b.f < a.f$
+Back: $a{.}d < b{.}d < b{.}f < a{.}f$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735785232435-->
 END%%
@@ -280,14 +280,14 @@ END%%
 %%ANKI
 Basic
 If $a$ and $b$ have no ancestor-descendant relation, what can be said about their discovery and finish times?
-Back: $[a.d, a.f]$ and $[b.d, b.f]$ are disjoint.
+Back: $[a{.}d, a{.}f]$ and $[b{.}d, b{.}f]$ are disjoint.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735785232439-->
 END%%
 
 %%ANKI
 Basic
-Let $a$ and $b$ be vertices with timestamps satisfying $a.d < b.d < b.f < a.f$. What ancestor-descendant relation exists?
+Let $a$ and $b$ be vertices with timestamps satisfying $a{.}d < b{.}d < b{.}f < a{.}f$. What ancestor-descendant relation exists?
 Back: $b$ is a descendant of $a$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735785232443-->
@@ -295,7 +295,7 @@ END%%
 
 %%ANKI
 Basic
-Let $a$ and $b$ be vertices with timestamps satisfying $a.d < b.d < a.f < b.f$. What ancestor-descendant relation exists?
+Let $a$ and $b$ be vertices with timestamps satisfying $a{.}d < b{.}d < a{.}f < b{.}f$. What ancestor-descendant relation exists?
 Back: N/A. This is an impossible chain of inequalities.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735785232447-->
@@ -303,7 +303,7 @@ END%%
 
 %%ANKI
 Basic
-Let $a$ and $b$ be vertices with timestamps satisfying $b.d < a.d < b.f < a.f$. What ancestor-descendant relation exists?
+Let $a$ and $b$ be vertices with timestamps satisfying $b{.}d < a{.}d < b{.}f < a{.}f$. What ancestor-descendant relation exists?
 Back: N/A. This is an impossible chain of inequalities.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735785232451-->
@@ -311,7 +311,7 @@ END%%
 
 %%ANKI
 Basic
-Let $a$ and $b$ be vertices with timestamps satisfying $b.d < a.d < a.f < b.f$. What ancestor-descendant relation exists?
+Let $a$ and $b$ be vertices with timestamps satisfying $b{.}d < a{.}d < a{.}f < b{.}f$. What ancestor-descendant relation exists?
 Back: $a$ is a descendant of $b$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735785232455-->
