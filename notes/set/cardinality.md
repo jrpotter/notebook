@@ -1482,7 +1482,7 @@ END%%
 
 %%ANKI
 Basic
-What does it mean for cardinal numbers to obey transitivity?
+What does it mean for cardinal number ordering to obey transitivity?
 Back: Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. If $\kappa \leq \lambda$ and $\lambda \leq \mu$, then $\kappa \leq \mu$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1736702905252-->
@@ -1560,7 +1560,7 @@ END%%
 %%ANKI
 Basic
 Consider injections $f \colon A \rightarrow B$ and $g \colon B \rightarrow A$. What set is "reflected" in the proof of the Schröder-Bernstein theorem?
-Back: $A - \mathop{\text{ran}}g$
+Back: Either $A - \mathop{\text{ran}}g$ or $B - \mathop{\text{ran}} f$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1736711693546-->
 END%%

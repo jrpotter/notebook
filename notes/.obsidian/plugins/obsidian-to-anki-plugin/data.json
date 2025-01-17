@@ -233,7 +233,9 @@
     "schroder-bernstein.png",
     "dfs.gif",
     "dfs-edge-classification.png",
-    "complex-plane-point.png"
+    "complex-plane-point.png",
+    "nfa-example.png",
+    "topological-sort.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -910,7 +912,7 @@
     "_journal/2024-10/2024-10-16.md": "cd778e1be2737462d885ae038c7b9744",
     "_journal/2024-10/2024-10-15.md": "c21679bd2c3b29f5a86d56a1fd23b18f",
     "_journal/2024-10-22.md": "4af65962007cfecdb2c679b44b56d25f",
-    "algorithms/dfs.md": "0f86e65b9ac6c4dbdd3b9c2a108a65fb",
+    "algorithms/dfs.md": "12a95fbc2fafaf87ee648c480ee041c3",
     "_journal/2024-10/2024-10-21.md": "de1a0861e87df29aeff11a291f8fbd45",
     "_journal/2024-10-23.md": "51b2ca6edf23b6a64fd7d3638a0b54cb",
     "_journal/2024-10/2024-10-22.md": "5ff4eb7eba58e77c4fb65b7162a485e6",
@@ -962,7 +964,7 @@
     "_journal/2024-11/2024-11-21.md": "951b6034d60a40dbd8201c50abf0dbb9",
     "_journal/2024-11/2024-11-20.md": "951b6034d60a40dbd8201c50abf0dbb9",
     "_journal/2024-11/2024-11-19.md": "d879f57154cb27cb168eb1f1f430e312",
-    "set/cardinality.md": "9610578a6ef32f70f90bfc7b52dea844",
+    "set/cardinality.md": "4c76186740c2ad2ae29ca9b8d9343065",
     "geometry/area.md": "7f947bb5ac782495a1fb4a63bb2463e7",
     "_journal/2024-11-23.md": "911f82ab8aede5ecdb96493aef64b0b9",
     "_journal/2024-11/2024-11-22.md": "51117030e2364dbce3a8d507dead86ae",
@@ -995,7 +997,7 @@
     "_journal/2024-12/2024-12-04.md": "965f6619edf1002d960203e3e12a413b",
     "_journal/2024-12-06.md": "d75323d0fec57f4fc1f13cb4370df18d",
     "_journal/2024-12/2024-12-05.md": "4f3b1e7a43e01cc97b0eed6fbc6c1f96",
-    "calculus/integrals.md": "beb50fc6a61c39a2808fda142fbbc36b",
+    "calculus/integrals.md": "bd32e10748a897647ccb04a7bc1144bb",
     "_journal/2024-12-07.md": "bfb6c4db0acbacba19f03a04ec29fa5c",
     "_journal/2024-12/2024-12-06.md": "d73b611d2d15827186a0252d9b9a6580",
     "_journal/2024-12-08.md": "5662897539b222db1af45dcd217f0796",
@@ -1046,7 +1048,7 @@
     "_journal/2024-12-22.md": "015dbf675853a81db07d641e8dab7fd4",
     "_journal/2024-12/2024-12-21.md": "1c1a5791f7519c92e882957cf417b51f",
     "formal-system/language.md": "7797d33a0b0eb187d43dda46a138fb25",
-    "computability/automaton.md": "fbcaa13a3e2053f252c58f0662fe7ada",
+    "computability/automaton.md": "1dd5048ea2a66d8090a85945593fcf68",
     "computability/index.md": "d7938428ed0b0224c1fe1e59d1fab118",
     "_journal/2024-12-23.md": "72b0964a8a5ed8ba0acf7fe10b5de279",
     "_journal/2024-12/2024-12-22.md": "75375a867efc5b3aff406c73394d4814",
@@ -1429,7 +1431,17 @@
     "_journal/2025-01/2025-01-09.md": "166ff75c5ea1bf5110931fa054e1565e",
     "_journal/2025-01/2025-01-08.md": "d8dbe63942449a91fbf793c318032e10",
     "_journal/2025-01-12.md": "78a1a91743280f9caf2e700ee0a0f830",
-    "_journal/2025-01/2025-01-11.md": "057a8b69a650941d1a838d220d5f59ab"
+    "_journal/2025-01/2025-01-11.md": "057a8b69a650941d1a838d220d5f59ab",
+    "_journal/2025-01-13.md": "d961f4b6134e31c91d34abfc46348557",
+    "_journal/2025-01/2025-01-12.md": "78a1a91743280f9caf2e700ee0a0f830",
+    "_journal/2025-01-14.md": "e97c7a14d5aa75d10b96f6dd392ffc50",
+    "_journal/2025-01/2025-01-13.md": "c0ab363c3b496dc24eb282715d9ffb15",
+    "_journal/2025-01-15.md": "a26cc179123037eebbb33f4cf87b27fb",
+    "_journal/2025-01/2025-01-14.md": "88eb99d4319693c7f4cd2357618a19f8",
+    "_journal/2025-01/2025-01-15.md": "a559a6eba2958e2664ad25c1e3236d87",
+    "_journal/2025-01-16.md": "e3a21059205784a4e88bfe3b4deac7f7",
+    "_journal/2025-01-17.md": "ba60278a6cca1832ad28c273b01b0745",
+    "_journal/2025-01/2025-01-16.md": "e3a21059205784a4e88bfe3b4deac7f7"
   },
   "fields_dict": {
     "Basic": [

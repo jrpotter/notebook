@@ -238,7 +238,192 @@ END%%
 
 ## Integrable Functions
 
-TODO
+Let $f$ be a function defined and bounded on $[a, b]$. Let $s$ and $t$ denote arbitrary step functions defined on $[a, b]$ such that $s(x) \leq f(x) \leq t(x)$ for all $x \in [a, b]$. If for every such $s$ and $t$, there is exactly one number $I$ satisfying $$\int_a^b s(x) \,dx \leq I \leq \int_a^b t(x) \,dx,$$
+then $I$ is said to be the **integral of $f$ from $a$ to $b$** and is denoted by symbol $\int_a^b f(x) \,dx$. When such an $I$ exists, the function $f$ is said to be **integrable** on $[a, b]$.
+
+%%ANKI
+Basic
+The integral of a function is approximated above and below by integrals of what kind of functions?
+Back: Step functions.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736892432232-->
+END%%
+
+%%ANKI
+Basic
+How is the integral of $f$ from $a$ to $b$ denoted?
+Back: As $\int_a^b f(x) \,dx$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+END%%
+
+%%ANKI
+Basic
+*Why* does Apostol only consider integrals of functions that are bounded over an interval?
+Back: Because the integral is defined by approximating step functions above and below the function.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736892432249-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for function $f$ to be bounded on $[a, b]$?
+Back: There exists some $M > 0$ such that $-M \leq f(x) \leq M$ for all $x \in [a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736892432252-->
+END%%
+
+%%ANKI
+Cloze
+The {integral of $f$ from $a$ to $b$} is denoted as {$\int_a^b f(x) \,dx$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736892432255-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for step function $s$ to be below function $f$ on $[a, b]$?
+Back: That $s(x) \leq f(x)$ for all $x \in [a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736892432259-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for step function $s$ to be above function $f$ on $[a, b]$?
+Back: That $f(x) \leq s(x)$ for all $x \in [a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736892432262-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function. Let $s$ and $t$ be step functions such that $s$ is above $f$ and $t$ is below $f$. What inequality arises?
+Back: $t \leq f \leq s$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736892432266-->
+END%%
+
+%%ANKI
+Cloze
+Let $f$ be a function defined and {bounded} on $[a, b]$. Let $s$ and $t$ denote {arbitrary step functions} such that {$$s(x) \leq f(x) \leq t(x)$$} for all $x \in [a, b]$. If for every such $s$ and $t$, there is {exactly one} $I$ such that {$$\int_a^b s(x) \,dx \leq I \leq \int_a^b t(x) \,dx,$$} then $I$ is said to be the {integral of $f$ from $a$ to $b$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736892432271-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function defined and bounded on $[a, b]$. What must there exist exactly one of for $f$ to be integrable on $[a, b]$?
+Back: A number $I$ such that $\int_a^b s(x) \,dx \leq I \leq \int_a^b t(x) \,dx$ for all step functions $s$ and $t$ satisfying $s \leq f \leq t$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736892432277-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function defined and bounded on $[a, b]$. What does it mean for $f$ to be integrable on $[a, b]$?
+Back: There exists exactly one number $I$ such that $\int_a^b s(x) \,dx \leq I \leq \int_a^b t(x) \,dx$ for all step functions $s$ and $t$ satisfying $s \leq f \leq t$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736892432282-->
+END%%
+
+The **lower integral** of $f$, denoted by $\underline{I}(f)$, is defined as $$\underline{I}(f) = \mathop{\text{sup}} \left\{ \int_a^b s(x) \,dx \mid s \leq f \right\}.$$
+Likewise, the **upper integral** of $f$, denoted by $\bar{I}(f)$, is defined as $$\bar{I}(f) = \mathop{\text{inf}} \left\{ \int_a^b t(x) \,dx \mid f \leq t \right\}.$$
+Thus $f$ is integrable on $[a, b]$ if and only if $\int_a^b f(x) \,dx = \underline{I}(f) = \bar{I}(f)$.
+
+%%ANKI
+Basic
+Let $f$ be a function defined and bounded on $[a, b]$. How is the lower integral of $f$ denoted?
+Back: $\underline{I}(f)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736893396749-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function defined and bounded on $[a, b]$. What does $\underline{I}(f)$ denote?
+Back: The lower integral of $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736893441504-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function defined and bounded on $[a, b]$. How is the upper integral of $f$ denoted?
+Back: $\bar{I}(f)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736893396757-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function defined and bounded on $[a, b]$. What does $\bar{I}(f)$ denote?
+Back: The upper integral of $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736893441509-->
+END%%
+
+%%ANKI
+Cloze
+Let $f$ be a function defined and bounded on $[a, b]$. Then {1: $\underline{I}(f)$} is to a {2:supremum} whereas {2:$\bar{I}(f)$} is to an {1:infimum}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736893396764-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function defined and bounded on $[a, b]$. How do we know the following set is nonempty? $$\left\{ \int_a^b t(x) \, dx \mid s \text{ is a step function below } f \right\}$$
+Back: It's nonempty because $f$ is bounded.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736893396770-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function defined and bounded on $[a, b]$. $\underline{I}(f)$ equals the supremum of what set?
+Back: $\left\{ \int_a^b s(x) \, dx \mid s \text{ is a step function below } f \right\}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736893396776-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function defined and bounded on $[a, b]$. $\underline{I}(f)$ equals the infimum of what set?
+Back: N/A. The lower integral is a supremum.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736893396782-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function defined and bounded on $[a, b]$. How do we know the following set is nonempty? $$\left\{ \int_a^b t(x) \, dx \mid t \text{ is a step function above } f \right\}$$
+Back: It's nonempty because $f$ is bounded.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736893396788-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function defined and bounded on $[a, b]$. $\bar{I}(f)$ equals the supremum of what set?
+Back: N/A. The upper integral is an infimum.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736893396794-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function defined and bounded on $[a, b]$. $\bar{I}(f)$ equals the infimum of what set?
+Back: $\left\{ \int_a^b t(x) \, dx \mid t \text{ is a step function above } f \right\}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736893396799-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function defined and bounded on $[a, b]$. If $s$ and $t$ are step functions s.t. $s \leq f \leq t$, what integral property guarantees $\int_a^b s(x) \,dx \leq \int_a^b t(x) \,dx$?
+Back: The comparison theorem.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1736893396804-->
+END%%
 
 ### Integrand Additivity
 

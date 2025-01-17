@@ -125,6 +125,20 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1735160593029-->
 END%%
 
+%%ANKI
+Cloze
+{1:Edges} are to {2:graphs} whereas {2:transitions} are to {1:state diagrams}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643325-->
+END%%
+
+%%ANKI
+Cloze
+{1:Vertices} are to {2:graphs} whereas {2:states} are to {1:state diagrams}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1734999643328-->
+END%%
+
 ## Determinism
 
 A **deterministic finite automaton** (DFA) is a $5$-tuple $\langle Q, \Sigma, \delta, q_0, F \rangle$, where
@@ -317,6 +331,31 @@ END%%
 
 %%ANKI
 Basic
+Let $M$ be a DFA. What labels are permitted over arrows in its state diagram?
+Back: Members of its alphabet.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769438-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a DFA. How many edges must leave a given state?
+Back: One for each symbol in its alphabet.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769445-->
+END%%
+
+%%ANKI
+Basic
+Is the following state diagram that of an NFA or DFA?
+![[dfa-example.png]]
+Back: Indeterminate.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769448-->
+END%%
+
+%%ANKI
+Basic
 Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What does $Q$ evaluate to?
 ![[dfa-example.png]]
 Back: $Q = \{q_1, q_2, q_3\}$
@@ -375,20 +414,6 @@ What name is given to a DFA's standard graphical depiction?
 Back: Its state diagram.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1734999643321-->
-END%%
-
-%%ANKI
-Cloze
-{1:Edges} are to {2:graphs} whereas {2:transitions} are to {1:state diagrams}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643325-->
-END%%
-
-%%ANKI
-Cloze
-{1:Vertices} are to {2:graphs} whereas {2:states} are to {1:state diagrams}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734999643328-->
 END%%
 
 %%ANKI
@@ -522,6 +547,329 @@ Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted DFA. What do
 Back: $\{w \mid w = \epsilon \lor w \text{ ends with a } 0 \}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1734999643459-->
+END%%
+
+## Nondeterminism
+
+A **nondeterministic finite automaton** (NFA) is a $5$-tuple $\langle Q, \Sigma, \delta, q_0, F \rangle$, where
+
+1. $Q$ is a finite set called the **states**;
+2. $\Sigma$ is a finite set called the alphabet;
+3. $\delta: Q \times (\Sigma \cup \{\epsilon\}) \rightarrow \mathscr{P}(Q)$ is the **transition function**;
+4. $q_0 \in Q$ is the **start state**; and
+5. $F \subseteq Q$ is the set of **final states**.
+
+Like DFAs, these automaton are typically denoted using a **state diagram**. Unlike DFAs, not every state needs an exiting transition arrow for each symbol in the alphabet. Also, arrows can be labeled $\epsilon$ for the empty string.
+
+%%ANKI
+Basic
+A nondeterministic finite automaton is defined as a tuple of how many components?
+Back: Five.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769451-->
+END%%
+
+%%ANKI
+Basic
+What is NFA an acronym for?
+Back: **N**ondeterministic **f**inite **a**utomata.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769454-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What kind of mathematical entity is $Q$?
+Back: A finite set of states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769457-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What name is given to $Q$?
+Back: $M$'s states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769460-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What is $\Sigma$?
+Back: An alphabet.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769463-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What kind of mathematical entity is $\delta$?
+Back: A function.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769465-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What name is given to $\delta$?
+Back: $M$'s transition function.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769468-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What is $\delta$'s domain?
+Back: $Q \times (\Sigma \cup \{\epsilon\})$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769471-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What is $\delta$'s codomain?
+Back: $\mathscr{P}(Q)$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769474-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What kind of mathematical entity is $q_0$?
+Back: An urelement.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769477-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What name is given to $q_0$?
+Back: $M$'s start state.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769480-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What name is given to $F$?
+Back: $M$'s final states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769483-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What kind of mathematical entity is $F$?
+Back: A finite set.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769486-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. How does $F$ relate to $Q$?
+Back: $F \subseteq Q$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769490-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. How does $q_0$ relate to $Q$?
+Back: $q_0 \in Q$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769493-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. How does $q_0$ relate to $F$?
+Back: N/A.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769496-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be an NFA. How many start states does $M$ have?
+Back: One.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769500-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be an NFA. How many accept states does $M$ have?
+Back: Zero or more.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769503-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be an NFA. How is $M$'s start state denoted in a state diagram?
+Back: With an arrow pointing to it from nowhere.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769506-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be an NFA. How is $M$'s final states denoted in a state diagram?
+Back: With double circles.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769510-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be an NFA. How is $M$'s transition function denoted in a state diagram?
+Back: As edges to and from states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769513-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be an NFA. How is $M$'s alphabet denoted in a state diagram?
+Back: With symbols labeling each edge.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769517-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be an NFA. What labels are permitted over arrows in its state diagram?
+Back: Members of its alphabet or $\epsilon$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769520-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be an NFA. How many edges must leave a given state?
+Back: Zero or more.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769523-->
+END%%
+
+%%ANKI
+Basic
+Is the following state diagram that of an NFA or DFA?
+![[nfa-example.png]]
+Back: NFA.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769525-->
+END%%
+
+%%ANKI
+Basic
+What two reasons explain why the following state diagram depicts an NFA?
+![[nfa-example.png]]
+Back: Missing labels/edges and existence of an $\epsilon$-labeled edge.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769528-->
+END%%
+
+%%ANKI
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted NFA. What does $Q$ evaluate to?
+![[nfa-example.png]]
+Back: $Q = \{q_1, q_2, q_3\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+END%%
+
+%%ANKI
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted NFA. What does $\Sigma$ evaluate to?
+![[nfa-example.png]]
+Back: $\Sigma = \{a, b\}$ or $\Sigma = \{a, b, \epsilon\}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted NFA. What does $q_0$ evaluate to?
+![[nfa-example.png]]
+Back: $q_0 = q_1$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769531-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted NFA. What does $\mathop{\text{dom}}\delta$ evaluate to?
+![[nfa-example.png]]
+Back: $\{q_1, q_2, q_3\} \times \{a, b, \epsilon\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769534-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted NFA. What does $\mathop{\text{ran}}\delta$ evaluate to?
+![[nfa-example.png]]
+Back: $\mathscr{P}(\{q_1, q_2, q_3\})$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769536-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted NFA. What does $F$ evaluate to?
+![[nfa-example.png]]
+Back: $\{q_1\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769539-->
+END%%
+
+%%ANKI
+Basic
+What name is given to an NFA's standard graphical depiction?
+Back: Its state diagram.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769541-->
+END%%
+
+%%ANKI
+Cloze
+The {final} states of an NFA are also called the {accept} states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769544-->
+END%%
+
+%%ANKI
+Basic
+Does the following NFA accept string `baba`?
+![[nfa-example.png]]
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769547-->
+END%%
+
+%%ANKI
+Basic
+Does the following NFA accept string `abab`?
+![[nfa-example.png]]
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769550-->
+END%%
+
+%%ANKI
+Basic
+Does the following NFA accept string `abba`?
+![[nfa-example.png]]
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769553-->
+END%%
+
+%%ANKI
+Basic
+Does the following NFA accept string `baab`?
+![[nfa-example.png]]
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1736781769556-->
 END%%
 
 ## Regular Operations
