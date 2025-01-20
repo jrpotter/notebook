@@ -257,7 +257,8 @@
     "function-general.png",
     "function-kernel.png",
     "triangular-gnomon.png",
-    "pascals-triangle.png"
+    "pascals-triangle.png",
+    "example-arc.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -1464,12 +1465,13 @@
     "_journal/2025-01-16.md": "e3a21059205784a4e88bfe3b4deac7f7",
     "_journal/2025-01-17.md": "08a5f05bb572db9495bfc2b4feb8e0a9",
     "_journal/2025-01/2025-01-16.md": "e3a21059205784a4e88bfe3b4deac7f7",
-    "trigonometry/index.md": "6d07d5ba5e352f182a19b8a3d804321b",
-    "geometry/circle.md": "751a5aada6521281f1d8edb463572943",
+    "trigonometry/index.md": "06c82d1cf3789cc8cefd37e6b64fdc4a",
+    "geometry/circle.md": "9469e5512a6a92a962985eab99d00606",
     "_journal/2025-01-18.md": "8655fbf94aeec13efe9b6d2087c1f37e",
     "_journal/2025-01/2025-01-17.md": "08a5f05bb572db9495bfc2b4feb8e0a9",
-    "_journal/2025-01-19.md": "a37c6f534cf5e272619c5f813974afcf",
-    "_journal/2025-01/2025-01-18.md": "7a1655887093f37ffe86309d90459b3b"
+    "_journal/2025-01-19.md": "2acb8c3c37b9a44f06bac4903efed5ad",
+    "_journal/2025-01/2025-01-18.md": "7a1655887093f37ffe86309d90459b3b",
+    "trigonometry/unit-circle.md": "4a8fb4b5ac1bc2b645f18b0b8079897c"
   },
   "fields_dict": {
     "Basic": [

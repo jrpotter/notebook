@@ -8,7 +8,9 @@ tags:
 
 ## Overview
 
-Trigonometry was originally derived from a Greek word meaning "triangle measuring". It has generalized to studying periodicity.
+Trigonometry was originally derived from a Greek word meaning "triangle measuring". It has since been generalized to refer to the study of periodicity.
+
+If the real number $t$ is the directed length of an arc (either positive or negative) measured on the [[unit-circle|unit circle]] $x^2 + y^2 = 1$ (with counterclockwise as the positive direction) with initial point $\langle 1, 0 \rangle$ and terminal point $\langle x, y \rangle$, then the **cosine** of $t$, denoted $\cos(t)$, and **sine** of $t$, denoted $\sin(t)$, are defined to be $$\cos(t) = x \quad\text{and}\quad \sin(t) = y.$$
 
 %%ANKI
 Basic
@@ -18,196 +20,220 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737167693405-->
 END%%
 
-## Unit Circle
-
-On the [[cartesian|Cartesian coordinate system]], the **unit circle** is the [[circle]] with center at the origin and radius $1$.
-
 %%ANKI
 Basic
-On the Cartesian coordinate system, what is the unit circle?
-Back: The circle with center at the origin and radius $1$.
+What are the two most fundamental trigonometric functions?
+Back: $\sin$ and $\cos$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737167693410-->
+<!--ID: 1737349513249-->
+END%%
+
+%%ANKI
+Cloze
+The {sine} of $t$ is denoted as {$\sin(t)$}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1737349513250-->
+END%%
+
+%%ANKI
+Cloze
+The {cosine} of $t$ is denoted as {$\cos(t)$}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1737349513251-->
 END%%
 
 %%ANKI
 Basic
-On the Cartesian coordinate system, where is the center of the unit circle located?
-Back: At $\langle 0, 0 \rangle$, i.e. the origin.
+Map $[0, t]$ to the unit circle. Geometrically, what does $\cos(t)$ correspond to?
+Back: The $x$-coordinate of the arc's terminal point.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737167693413-->
+<!--ID: 1737349513252-->
 END%%
 
 %%ANKI
 Basic
-What is the radius of the unit circle?
-Back: $1$
+Map $[0, t]$ to the unit circle. Geometrically, what does $\sin(t)$ correspond to?
+Back: The $y$-coordinate of the arc's terminal point.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737167693416-->
+<!--ID: 1737349513253-->
+END%%
+
+%%ANKI
+Cloze
+The {1:$x$}-coordinate is to {2:$\cos$} whereas the {2:$y$}-coordinate is to {1:$\sin$}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1737349513254-->
 END%%
 
 %%ANKI
 Basic
-What is the diameter of the unit circle?
-Back: $2$
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737167693419-->
-END%%
-
-%%ANKI
-Basic
-What is the circumference of the unit circle?
-Back: $2\pi$
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737167693428-->
-END%%
-
-%%ANKI
-Basic
-What is the area of the unit circle?
-Back: $\pi$
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737167693435-->
-END%%
-
-%%ANKI
-Basic
-Which real numbers does the point $\langle 0, 0 \rangle$ on the unit circle map to?
-Back: N/A. This point is not on the circle itself.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737168795237-->
-END%%
-
-%%ANKI
-Basic
-Which real numbers does the point $\langle 1, 0 \rangle$ on the unit circle map to?
-Back: $2\pi k$ for all $k \in \mathbb{Z}$.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737168795241-->
-END%%
-
-%%ANKI
-Basic
-Which point on the unit circle does number $2\pi$ map to?
+Suppose an arc on the unit circle has terminal point $\langle \cos(t), \sin(t) \rangle$. What was its initial point?
 Back: $\langle 1, 0 \rangle$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737168795265-->
+<!--ID: 1737349513255-->
 END%%
 
 %%ANKI
 Basic
-Which point on the unit circle does number $\frac{3\pi}{2}$ map to?
-Back: $\langle 0, -1 \rangle$
+What geometric aspect of the unit circle corresponds to the input of the cosine function?
+Back: Arc length.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737168795244-->
+<!--ID: 1737349513257-->
 END%%
 
 %%ANKI
 Basic
-Which real numbers does the point $\langle 0, -1 \rangle$ on the unit circle map to?
-Back:$\frac{3\pi}{2} + 2\pi k$ for all $k \in \mathbb{Z}$.
+What geometric aspect of the unit circle corresponds to the output of the cosine function?
+Back: The $x$-coordinate of an arc's terminal point.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737168795269-->
+<!--ID: 1737349513258-->
 END%%
 
 %%ANKI
 Basic
-Which real numbers does the point $\langle 0, 1 \rangle$ on the unit circle map to?
-Back: $\frac{\pi}{2} + 2\pi k$ for all $k \in \mathbb{Z}$.
+What geometric aspect of the unit circle corresponds to the input of sine?
+Back: Arc length.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737168795248-->
+<!--ID: 1737349513259-->
 END%%
 
 %%ANKI
 Basic
-Which point on the unit circle does number $\frac{\pi}{2}$ map to?
-Back: $\langle 0, 1 \rangle$
+What geometric aspect of the unit circle corresponds to the output of the sine function?
+Back: The $y$-coordinate of an arc's terminal point.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737168795261-->
+<!--ID: 1737349513261-->
 END%%
 
 %%ANKI
 Basic
-Which point on the unit circle does number $\pi$ map to?
-Back: $\langle -1, 0 \rangle$
+Consider the following arc with length $t$ on the unit circle. What is the terminal point's $x$-coordinate?
+![[example-arc.png]]
+Back: $\cos(t)$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737168795252-->
+<!--ID: 1737349513260-->
 END%%
 
 %%ANKI
 Basic
-Which real numbers does the point $\langle -1, 0 \rangle$ on the unit circle map to?
-Back: $\pi + 2\pi k$ for all $k \in \mathbb{Z}$.
+Consider the following arc with length $t$ on the unit circle. What is the terminal point's $y$-coordinate?
+![[example-arc.png]]
+Back: $\sin(t)$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737168795256-->
+<!--ID: 1737349513256-->
 END%%
 
 %%ANKI
 Basic
-Which real numbers correspond to the highlighted point on the unit circle?
-![[unit-circle-1-0.png]]
-Back: $2 \pi k$ for all $k \in \mathbb{Z}$.
+Consider the following arc with length $t$ on the unit circle. With maximum specificity, what is its terminal point?
+![[example-arc.png]]
+Back: $\langle \cos(t), \sin(t) \rangle$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737169243685-->
+<!--ID: 1737349513262-->
 END%%
 
 %%ANKI
 Basic
-Which real numbers correspond to the highlighted point on the unit circle?
-![[unit-circle-0-1.png]]
-Back: $\frac{\pi}{2} + 2\pi k$ for all $k \in \mathbb{Z}$.
+What does $\cos(0)$ evaluate to?
+Back: $1$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737169243690-->
+<!--ID: 1737349971441-->
 END%%
 
 %%ANKI
 Basic
-Which real numbers correspond to the highlighted point on the unit circle?
-![[unit-circle-n1-0.png]]
-Back: $\pi + 2\pi k$ for all $k \in \mathbb{Z}$.
+What does $\cos\left(\frac{\pi}{2}\right)$ evaluate to?
+Back: $0$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737169243692-->
+<!--ID: 1737349971443-->
 END%%
 
 %%ANKI
 Basic
-Which real numbers correspond to the highlighted point on the unit circle?
-![[unit-circle-0-n1.png]]
-Back: $\frac{3\pi}{2} + 2\pi k$ for all $k \in \mathbb{Z}$.
+What does $\cos\left(-\frac{\pi}{2}\right)$ evaluate to?
+Back: $0$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737169243695-->
+<!--ID: 1737349971445-->
 END%%
 
 %%ANKI
 Basic
-*Why* does point $\langle 1, 0 \rangle$ on the unit circle coincide with real number $2\pi$?
-Back: Because the circumference of the unit circle is $2\pi$.
+What does $\cos\left(\pi\right)$ evaluate to?
+Back: $-1$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737169683142-->
+<!--ID: 1737349971446-->
 END%%
 
 %%ANKI
 Basic
-*Why* does point $\langle -1, 0 \rangle$ on the unit circle coincide with real number $\pi$?
-Back: Because half the circumference of the unit circle is $\pi$.
+What does $\sin(2\pi)$ evaluate to?
+Back: $0$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737169683151-->
+<!--ID: 1737349971447-->
 END%%
 
 %%ANKI
 Basic
-What is the "periodicity" of the unit circle?
-Back: $2 \pi$
+What does $\sin\left(\frac{\pi}{2}\right)$ evaluate to?
+Back: $1$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737230158153-->
+<!--ID: 1737349971449-->
 END%%
 
 %%ANKI
 Basic
-What property of the unit circle does its periodicity correspond to?
-Back: Its circumference.
+What does $\sin\left(-\frac{\pi}{2}\right)$ evaluate to?
+Back: $-1$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737230158163-->
+<!--ID: 1737349971450-->
+END%%
+
+%%ANKI
+Basic
+What does $\sin\left(\pi\right)$ evaluate to?
+Back: $0$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1737349971451-->
+END%%
+
+%%ANKI
+Basic
+Why are $\sin$ and $\cos$ called circular functions?
+Back: Their values are determined by coordinates of points on the unit circle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1737349971452-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of $\cos$?
+Back: $\mathbb{R}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1737349971453-->
+END%%
+
+%%ANKI
+Basic
+What is the range of $\cos$?
+Back: $[-1, 1]$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1737349971454-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of $\sin$?
+Back: $\mathbb{R}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1737349971455-->
+END%%
+
+%%ANKI
+Basic
+What is the range of $\sin$?
+Back: $[-1, 1]$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1737349971456-->
 END%%
 
 ## Bibliography

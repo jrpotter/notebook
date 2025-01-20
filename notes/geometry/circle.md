@@ -13,7 +13,7 @@ A **circle** is a shape consisting of all points in a plane at a given distance 
 
 On the [[cartesian|Cartesian coordinate system]], the equation of a circle with radius $r$ and center $\langle h, k \rangle$ is $$(x - h)^2 + (y - k)^2 = r^2.$$
 
-Such a circle has circumference $2\pi r$ and [[area]] $\pi r^2$.
+Such a circle has circumference $2\pi r$ and [[area]] $\pi r^2$. A continuous segment along the circumference of a circle is called an **arc**.
 
 %%ANKI
 Basic
@@ -195,6 +195,15 @@ Reference: “Circle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.
 <!--ID: 1737168379578-->
 END%%
 
+%%ANKI
+Basic
+What term is used to describe a continuous portion of a circle?
+Back: An arc.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1737347029852-->
+END%%
+
 ## Bibliography
 
 * “Circle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Circle](https://en.wikipedia.org/w/index.php?title=Circle&oldid=1268270102).
+* Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
