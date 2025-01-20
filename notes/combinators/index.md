@@ -335,6 +335,77 @@ Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combi
 <!--ID: 1735413657674-->
 END%%
 
+%%ANKI
+Basic
+Assume basis $\mathbf{S}$, $\mathbf{K}$, and $\mathbf{I}$. *Why* isn't $((\mathbf{S}(\mathbf{K}\mathbf{S}))\mathbf{K})$ a combinator?
+Back: N/A. It is.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1737212699921-->
+END%%
+
+%%ANKI
+Basic
+Assume basis $\mathbf{S}$, $\mathbf{K}$, and $\mathbf{I}$. *Why* isn't $((\mathbf{S}(\mathbf{K}x))((\mathbf{S}\mathbf{K})\mathbf{K}))$ a combinator?
+Back: It contains atom $x$ which isn't a basic combinator.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1737212699927-->
+END%%
+
+%%ANKI
+Basic
+Assume basis $\mathbf{S}$, $\mathbf{K}$, and $\mathbf{I}$. *Why* isn't $((\mathbf{S}(\mathbf{K}0))((\mathbf{S}\mathbf{K})\mathbf{K}))$ a combinator?
+Back: It contains atom $0$ which isn't a basic combinator.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1737212699932-->
+END%%
+
+%%ANKI
+Basic
+Assume basis $\mathbf{S}$, $\mathbf{K}$, and $\mathbf{I}$. *Why* isn't $((\mathbf{S}(\mathbf{K}\mathbf{S}))\mathbf{K})$ a closed term?
+Back: N/A. It is.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1737212699937-->
+END%%
+
+%%ANKI
+Basic
+Assume basis $\mathbf{S}$, $\mathbf{K}$, and $\mathbf{I}$. *Why* isn't $((\mathbf{S}(\mathbf{K}x))((\mathbf{S}\mathbf{K})\mathbf{K}))$ a closed term?
+Back: It contains variable $x$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1737212699942-->
+END%%
+
+%%ANKI
+Basic
+Assume basis $\mathbf{S}$, $\mathbf{K}$, and $\mathbf{I}$. *Why* isn't $((\mathbf{S}(\mathbf{K}0))((\mathbf{S}\mathbf{K})\mathbf{K}))$ a closed term?
+Back: N/A. It is.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1737212699947-->
+END%%
+
+%%ANKI
+Cloze
+By convention, parentheses in combinatory logic are {left}-associative.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1737245400699-->
+END%%
+
+%%ANKI
+Basic
+How is $CL$-term $UVWX$ written with parentheses reintroduced?
+Back: $(((UV)W)X)$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1737245400709-->
+END%%
+
+%%ANKI
+Basic
+In combinatory logic, is $UVW \equiv ((UV)W)$?
+Back: Yes.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1737245400737-->
+END%%
+
 ## Basic Combinators
 
 The combinatory logic is a notation that eliminate the need for quantified variables. We start with basis $\mathbf{S}$, $\mathbf{K}$, and $\mathbf{I}$. These **basic combinators** are defined as:

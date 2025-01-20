@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-The simplest extension to RDF that allows a modeler to manage inference is **RDF Schema** (RDFS).
+The simplest extension to RDF that allows a modeler to manage inference is **RDF Schema** (RDFS). Triples that are inserted directly into an underlying RDF store are called **asserted triples**. Triples that are derived from inference rules are called **inferred triples**.
 
 %%ANKI
 Basic
@@ -24,6 +24,44 @@ What is RDFS an acronym for?
 Back: **R**esource **D**escription **F**ramework **S**chema.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1736629473653-->
+END%%
+
+%%ANKI
+Cloze
+An {asserted} triple is contrary to an {inferred} triple.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1737167693491-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a triple to be asserted?
+Back: The triple exists directly in the underlying RDF store.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1737167693496-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a triple to be inferred?
+Back: The triple is derived from some set of inference rules.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1737167693501-->
+END%%
+
+%%ANKI
+Cloze
+{Asserted} triples are used to derive {inferred} triples.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1737167693506-->
+END%%
+
+%%ANKI
+Basic
+When might a triple be both asserted and inferred?
+Back: When the inference engine infers an already existing triple.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1737167693510-->
 END%%
 
 ## Classes

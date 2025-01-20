@@ -534,6 +534,7 @@ END%%
 
 %%ANKI
 Basic
+Why is edge $\langle b, s \rangle$ classified as a back edge?
 ![[dfs-edge-classification.png]]
 Back: Because $s$ is an ancestor of $b$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

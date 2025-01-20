@@ -637,6 +637,335 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1736632025924-->
 END%%
 
+## Relocation Entries
+
+Whenever the assembler encounters a reference to an object whose ultimate location is unknown, it generates a **relocation entry** that tells the linker how to modify the reference when it merges the object file into an executable. Each entry looks something like:
+
+```c
+struct Elf64_Rela {
+  long offset;       // Offset of the reference to relocate
+  long type : 32,    // Relocation type
+       symbol : 32;  // Symbol table index
+  long addend;       // Additional constant used to bias the value
+};
+```
+
+%%ANKI
+Basic
+What is emitted by the assembler to help the linker relocate sections?
+Back: Relocation entries.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733671136107-->
+END%%
+
+%%ANKI
+Cloze
+The assembler outputs {relocation entries} to guide the linker during {relocation}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733671136112-->
+END%%
+
+%%ANKI
+Cloze
+The {1:assembler} outputs relocation entries to guide the {1:linker} during relocation.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1733671136117-->
+END%%
+
+%%ANKI
+Basic
+Which component of a compiler driver produces relocation entries?
+Back: The assembler.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1737257167650-->
+END%%
+
+%%ANKI
+Basic
+How many relocation entries are produced for any given object module?
+Back: One for every reference whose ultimate address is unknown.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1737257167677-->
+END%%
+
+%%ANKI
+Basic
+*Why* aren't relocation entries relevant for executable object files?
+Back: All memory addresses should be resolved once the executable is produced.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1737257167683-->
+END%%
+
+%%ANKI
+Cloze
+Relocation entries for {data} are placed in {`.rel.data`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1737257167690-->
+END%%
+
+%%ANKI
+Cloze
+Relocation entries for {code} are placed in {`.rel.text`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1737257167696-->
+END%%
+
+%%ANKI
+Basic
+At what point during linking are relocation entries no longer necessary?
+Back: When the fully merged executable object file is produced.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1737257167702-->
+END%%
+
+%%ANKI
+Basic
+Relocation entries are included in what kind of object module?
+Back: Relocatable object modules.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1737257167707-->
+END%%
+
+%%ANKI
+Basic
+A relocation entry corresponds to what kind of C construct?
+Back: A `struct`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1737257167712-->
+END%%
+
+%%ANKI
+Basic
+Consider the following ELF relocation entry. What is the purpose of `offset`?
+```c
+struct Elf64_Rela {
+  long offset;
+  long type : 32;
+  long symbol : 32;
+  long addend;
+};
+```
+Back: It is the offset of the reference to relocate.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385837-->
+END%%
+
+%%ANKI
+Basic
+Consider the following ELF relocation entry. What is the `offset` measured relative to?
+```c
+struct Elf64_Rela {
+  long offset;
+  long type : 32;
+  long symbol : 32;
+  long addend;
+};
+```
+Back: The start of the section the reference is located in.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385840-->
+END%%
+
+%%ANKI
+Basic
+Consider the following ELF relocation entry. What is the purpose of `symbol`?
+```c
+struct Elf64_Rela {
+  long offset;
+  long type : 32;
+  long symbol : 32;
+  long addend;
+};
+```
+Back: It identifies the symbol the modified reference should point to.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385843-->
+END%%
+
+%%ANKI
+Basic
+Consider the following ELF relocation entry. `symbol` is an index into what table?
+```c
+struct Elf64_Rela {
+  long offset;
+  long type : 32;
+  long symbol : 32;
+  long addend;
+};
+```
+Back: `.symtab`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385846-->
+END%%
+
+%%ANKI
+Basic
+Consider the following ELF relocation entry. What is the purpose of `addend`?
+```c
+struct Elf64_Rela {
+  long offset;
+  long type : 32;
+  long symbol : 32;
+  long addend;
+};
+```
+Back: To bias the value of the modified reference.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385849-->
+END%%
+
+%%ANKI
+Basic
+Consider the following ELF relocation entry. What is the purpose of `type`?
+```c
+struct Elf64_Rela {
+  long offset;
+  long type : 32;
+  long symbol : 32;
+  long addend;
+};
+```
+Back: To indicate to the linker what algorithm should be used to compute the relocated address.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385853-->
+END%%
+
+%%ANKI
+Basic
+Consider the following ELF relocation entry. What are the two most basic values of `type`?
+```c
+struct Elf64_Rela {
+  long offset;
+  long type : 32;
+  long symbol : 32;
+  long addend;
+};
+```
+Back: `R_X86_64_32` and `R_X86_64_PC32`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385856-->
+END%%
+
+%%ANKI
+Cloze
+{1:`R_X86_64_32`} is to {2:absolute} whereas {2:`R_X86_64_PC32`} is to {1:relative}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: linker::elf x86-64
+<!--ID: 1737320385860-->
+END%%
+
+%%ANKI
+Basic
+What is the significance of `R` in type `R_X86_64_32`?
+Back: It is the prefix used for relocation entry `type` values.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385864-->
+END%%
+
+%%ANKI
+Basic
+What is the significance of `32` in type `R_X86_64_32`?
+Back: The reference is relocated using a 32-bit absolute address.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385867-->
+END%%
+
+%%ANKI
+Basic
+What is the significance of `PC` in type `R_X86_64_PC32`?
+Back: It is short for **p**rogram **c**ounter.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385871-->
+END%%
+
+%%ANKI
+Basic
+What is the significance of `PC32` in type `R_X86_64_PC32`?
+Back: The reference is relocated using a 32-bit PC-relative address.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385875-->
+END%%
+
+%%ANKI
+Basic
+`R_X86_64_32` is a possible value for what field in the following ELF relocation entry?
+```c
+struct Elf64_Rela {
+  long offset;
+  long type : 32;
+  long symbol : 32;
+  long addend;
+};
+```
+Back: `type`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385879-->
+END%%
+
+%%ANKI
+Basic
+`R_X86_64_PC32` is a possible value for what field in the following ELF relocation entry?
+```c
+struct Elf64_Rela {
+  long offset;
+  long type : 32;
+  long symbol : 32;
+  long addend;
+};
+```
+Back: `type`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385883-->
+END%%
+
+%%ANKI
+Basic
+Consider the following ELF relocation entry. What should `type` be if relocating PC-relatively?
+```c
+struct Elf64_Rela {
+  long offset;
+  long type : 32;
+  long symbol : 32;
+  long addend;
+};
+```
+Back: `R_X86_64_PC32`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385887-->
+END%%
+
+%%ANKI
+Basic
+Consider the following ELF relocation entry. What should `type` be if relocating absolutely?
+```c
+struct Elf64_Rela {
+  long offset;
+  long type : 32;
+  long symbol : 32;
+  long addend;
+};
+```
+Back: `R_X86_64_32`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 linker::elf x86-64
+<!--ID: 1737320385894-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

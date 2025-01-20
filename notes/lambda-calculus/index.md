@@ -214,7 +214,7 @@ END%%
 
 %%ANKI
 Basic
-How is expression $\lambda x. \lambda y. MN$ written with parentheses reintroduced?
+How is $\lambda$-term $\lambda x. \lambda y. MN$ written with parentheses reintroduced?
 Back: $(\lambda x. (\lambda y. (MN)))$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716498992530-->

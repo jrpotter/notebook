@@ -1035,6 +1035,9 @@ END%%
 
 The general form of the **iterative command** is: $$\begin{align*} \textbf{do } & B_1 \rightarrow S_1 \\ \textbf{ | } & B_2 \rightarrow S_2 \\ & \quad\cdots \\ \textbf{ | } & B_n \rightarrow S_n \\ \textbf{od } & \end{align*}$$
 
+We denote the iterative command as $\text{DO}$ and define $\text{DO}$ in terms of $wp$ as: $$wp(\text{DO}, R) = \exists k \geq 0, H_k(R)$$
+where $H_k$ is given [[algebra/sequences/index|recursive definition]]: $$\begin{align*} H_0(R) & = \neg (B_1 \lor \cdots \lor B_n) \land R \\ H_{k+1}(R) & = H_0(R) \lor wp(\text{IF}, H_k(R)) \end{align*}$$
+
 %%ANKI
 Basic
 The conventional `while` statement corresponds to what command?
@@ -1121,6 +1124,130 @@ Which command is demonstrated in the following diagram?
 Back: The iterative command.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1735873599850-->
+END%%
+
+%%ANKI
+Cloze
+{1:$\text{IF}$} is to {2:$abort$} whereas {2:$\text{DO}$} is to {1:$skip$}.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737187609860-->
+END%%
+
+%%ANKI
+Basic
+Given associated recursive definition $H_k$, what is the formal definition of $\text{DO}$?
+Back: For some predicate $R$, $wp(\text{DO}, R) = \exists k \geq 0, H_k(R)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737187609865-->
+END%%
+
+%%ANKI
+Basic
+In the following definition, what does $H_k(R)$ represent? $$wp(\text{DO}, R) = \exists k \geq 0, H_k(R)$$
+Back: The set of states in which execution of $\text{DO}$ terminates in $k$ or fewer iterations.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737187609868-->
+END%%
+
+%%ANKI
+Basic
+In the following definition, how is $H_0$ defined? $$wp(\text{DO}, R) = \exists k \geq 0, H_k(R)$$
+Back: Given guards $B_1, \ldots, B_n$, as $H_0 = \neg (B_1 \lor \cdots \lor B_n) \land R$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737187609870-->
+END%%
+
+%%ANKI
+Basic
+In the following definition, what set of states does $H_0(R)$ correspond to? $$wp(\text{DO}, R) = \exists k \geq 0, H_k(R)$$
+Back: Those in which $\text{DO}$ finishes execution in $0$ iterations with $R$ true.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737188069810-->
+END%%
+
+%%ANKI
+Basic
+In the following definition, how is $H_{k+1}$ defined? $$wp(\text{DO}, R) = \exists k \geq 0, H_k(R)$$
+Back: As $H_{k+1}(R) = H_0(R) \lor wp(\text{IF}, H_k(R))$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737187609873-->
+END%%
+
+%%ANKI
+Basic
+In the following definition, what set of states does $H_k(R)$ correspond to? $$wp(\text{DO}, R) = \exists k \geq 0, H_k(R)$$
+Back: Those in which $\text{DO}$ finishes execution in $k$ or fewer iterations with $R$ true.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737188069815-->
+END%%
+
+%%ANKI
+Basic
+Let $H_k$ denote the associated recursive definition of $wp(\text{DO}, R)$. *Why* does $H_k \Rightarrow H_{k+1}$?
+Back: $H_{k+1}$ is the set of states in which $\text{DO}$ finishes execution in $k$ *or fewer* iterations.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737188069819-->
+END%%
+
+%%ANKI
+Basic
+Let $H_k$ denote the associated recursive definition of $wp(\text{DO}, R)$. *Why* does $H_{k + 1} \Rightarrow H_k$?
+Back: N/A. It doesn't.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737188069822-->
+END%%
+
+%%ANKI
+Basic
+How is the associated recursive definition of $wp(\text{DO}, R)$ described in plain English?
+Back: As the set of states in which execution of $\text{DO}$ terminates in a finite number of iterations with $R$ true.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737187609876-->
+END%%
+
+%%ANKI
+Cloze
+Iterative command {$\textbf{do od}$} is equivalent to command {$skip$}.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737187609879-->
+END%%
+
+%%ANKI
+Basic
+*Why* does command $\textbf{do od}$ skip?
+Back: The $\text{DO}$ command iterates until no guard is satisfied.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737187609882-->
+END%%
+
+%%ANKI
+Basic
+What does $wp(\textbf{do } T \rightarrow skip \textbf{ od}, R)$ evaluate to?
+Back: $F$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737187609885-->
+END%%
+
+%%ANKI
+Basic
+*Why* does $wp(\textbf{do } T \rightarrow skip \textbf{ od}, R)$ evaluate to $F$?
+Back: $\textbf{do } T \rightarrow skip \text{ od}$ never terminates.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737187609888-->
+END%%
+
+%%ANKI
+Cloze
+The {$\text{DO}$} command corresponds to zero or more {$\text{IF}$} commands.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737187609892-->
+END%%
+
+%%ANKI
+Cloze
+Let $R$ be a predicate. Then $wp(\text{DO}, R) = \exists k,$ {$k \geq 0$} $\land$ $H_k(R)$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737187609895-->
 END%%
 
 ## Bibliography

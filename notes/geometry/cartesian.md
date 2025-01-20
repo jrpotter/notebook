@@ -215,22 +215,6 @@ END%%
 
 %%ANKI
 Basic
-Which of horizontal and/or vertical transformations "act inversely"?
-Back: Horizontal transformations.
-Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
-<!--ID: 1734620943931-->
-END%%
-
-%%ANKI
-Basic
-Which of horizontal and/or vertical transformations "act normally"?
-Back: Vertical transformations.
-Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
-<!--ID: 1734620943937-->
-END%%
-
-%%ANKI
-Basic
 How is the graph of $y = f(x)$ transformed in the graph of $y = \frac{1}{2}f(\frac{x}{3})$?
 Back: It's horizontally stretched by $3$ and vertically compressed by $2$.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).

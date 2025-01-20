@@ -204,11 +204,65 @@ END%%
 
 %%ANKI
 Basic
+What hexadecimal value does $2^{0 + 4(0)}$ evaluate to?
+Back: `0x1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: binary::hex
+<!--ID: 1737232783457-->
+END%%
+
+%%ANKI
+Basic
+What hexadecimal value does $2^{0 + 4(2)}$ evaluate to?
+Back: `0x100`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: binary::hex
+<!--ID: 1737232783462-->
+END%%
+
+%%ANKI
+Basic
+Write `0x10000` in form $2^{i + 4j}$. What values of $i$ and $j$ satisfy this?
+Back: $i = 0$ and $j = 4$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: binary::hex
+<!--ID: 1737232783466-->
+END%%
+
+%%ANKI
+Basic
 How is the $1$ in $2^{1 + 4j}$ translated to hex?
 Back: As hex digit `2`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: binary::hex
 <!--ID: 1707432641585-->
+END%%
+
+%%ANKI
+Basic
+What hexadecimal value does $2^{1 + 4(2)}$ evaluate to?
+Back: `0x200`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: binary::hex
+<!--ID: 1737232783469-->
+END%%
+
+%%ANKI
+Basic
+What hexadecimal value does $2^{1 + 4(3)}$ evaluate to?
+Back: `0x2000`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: binary::hex
+<!--ID: 1737232783480-->
+END%%
+
+%%ANKI
+Basic
+Write `0x200` in form $2^{i + 4j}$. What values of $i$ and $j$ satisfy this?
+Back: $i = 1$ and $j = 2$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: binary::hex
+<!--ID: 1737232783488-->
 END%%
 
 %%ANKI
@@ -222,11 +276,47 @@ END%%
 
 %%ANKI
 Basic
+What hexadecimal value does $2^{2 + 4(1)}$ evaluate to?
+Back: `0x40`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: binary::hex
+<!--ID: 1737232783492-->
+END%%
+
+%%ANKI
+Basic
+Write `0x4000` in form $2^{i + 4j}$. What values of $i$ and $j$ satisfy this?
+Back: $i = 2$ and $j = 3$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: binary::hex
+<!--ID: 1737232783497-->
+END%%
+
+%%ANKI
+Basic
 How is the $3$ in $2^{3 + 4j}$ translated to hex?
 Back: As hex digit `8`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: binary::hex
 <!--ID: 1707432641587-->
+END%%
+
+%%ANKI
+Basic
+What hexadecimal value does $2^{3 + 4(0)}$ evaluate to?
+Back: `0x8`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: binary::hex
+<!--ID: 1737232783501-->
+END%%
+
+%%ANKI
+Basic
+Write `0x80` in form $2^{i + 4j}$. What values of $i$ and $j$ satisfy this?
+Back: $i = 3$ and $j = 1$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: binary::hex
+<!--ID: 1737232783505-->
 END%%
 
 %%ANKI

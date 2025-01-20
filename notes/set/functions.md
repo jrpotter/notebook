@@ -199,7 +199,7 @@ END%%
 %%ANKI
 Basic
 Let $A$ and $B$ be disjoint sets. $f \colon A \rightarrow B$ is an operation on what set?
-Back: N/A.
+Back: N/A. $f$ is not an operation.
 Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
 <!--ID: 1729804914207-->
 END%%

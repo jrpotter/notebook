@@ -247,11 +247,10 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 END%%
 
 %%ANKI
-Basic
-A language is a set satisfying what?
-Back: It contains strings over some alphabet.
+Cloze
+A {language} is a set containing {strings} over some {alphabet}.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
-<!--ID: 1734903366709-->
+<!--ID: 1737232847428-->
 END%%
 
 %%ANKI
