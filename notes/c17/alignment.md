@@ -674,7 +674,6 @@ struct foo { unsigned bar : 31; };
 ```
 Back: N/A. This is correct.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-Tags: x86-64
 <!--ID: 1734662614146-->
 END%%
 
@@ -686,7 +685,6 @@ struct foo { unsigned bar : 32; };
 ```
 Back: N/A. This is correct.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-Tags: x86-64
 <!--ID: 1734662614152-->
 END%%
 
@@ -698,13 +696,12 @@ struct foo { unsigned bar : 33; };
 ```
 Back: The width of a bit-field cannot exceed its types (in this case `unsigned int`).
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-Tags: x86-64
 <!--ID: 1734662614158-->
 END%%
 
 %%ANKI
 Basic
-Assume a byte-sized storage unit, no overlapping units, and low-to-high order. How is the following packed in memory?
+Assume a byte-sized storage unit, no overlapping units, and low-to-high order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
   signed a : 4;
@@ -715,11 +712,11 @@ struct foo {
 Back:
 ```c
 struct foo {
+  _padding : 4;  // 4 bits
+  signed c : 4;  // 4 bits
   _padding : 2;  // 2 bits
   signed b : 2;  // 2 bits
   signed a : 4;  // 4 bits
-  _padding : 4;  // 4 bits
-  signed c : 4;  // 4 bits
 };
 ```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -728,7 +725,7 @@ END%%
 
 %%ANKI
 Basic
-Assume a byte-sized storage unit, overlapping units, and low-to-high order. How is the following packed in memory?
+Assume a byte-sized storage unit, overlapping units, and low-to-high order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
   signed a : 4;
@@ -740,9 +737,9 @@ Back:
 ```c
 struct foo {
   _padding : 4;  // 4 bits
-  signed a : 4;  // 4 bits
-  _padding : 4;  // 4 bits
   signed c : 4;  // 4 bits
+  _padding : 4;  // 4 bits
+  signed a : 4;  // 4 bits
 };
 ```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -751,7 +748,7 @@ END%%
 
 %%ANKI
 Basic
-Assume a byte-sized storage unit, overlapping units, and high-to-low order. How is the following packed in memory?
+Assume a byte-sized storage unit, overlapping units, and high-to-low order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
   signed a : 4;
@@ -774,7 +771,7 @@ END%%
 
 %%ANKI
 Basic
-Assume a `32`-bit storage unit, no overlapping units, and low-to-high order. How is the following packed in memory?
+Assume a `32`-bit storage unit, no overlapping units, and low-to-high order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
   signed a : 4;
@@ -797,7 +794,7 @@ END%%
 
 %%ANKI
 Basic
-Assume a byte-sized storage unit, overlapping units, and low-to-high order. How is the following packed in memory?
+Assume a byte-sized storage unit, overlapping units, and low-to-high order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
   signed a : 4;
@@ -820,7 +817,7 @@ END%%
 
 %%ANKI
 Basic
-Assume a `32`-bit storage unit, no overlapping units, and low-to-high order. How is the following packed in memory?
+Assume a `32`-bit storage unit, no overlapping units, and low-to-high order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
   signed a : 4;
@@ -843,7 +840,7 @@ END%%
 
 %%ANKI
 Basic
-Assume a byte-sized storage unit, overlapping units, and high-to-low order. How is the following packed in memory?
+Assume a byte-sized storage unit, overlapping units, and high-to-low order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
   signed a : 4;
@@ -866,7 +863,7 @@ END%%
 
 %%ANKI
 Basic
-Assume a byte-sized storage unit, no overlapping units, and high-to-low order. How is the following packed in memory?
+Assume a byte-sized storage unit, no overlapping units, and high-to-low order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
   signed a : 4;
@@ -890,7 +887,7 @@ END%%
 
 %%ANKI
 Basic
-Assume a `32`-bit storage unit, overlapping units, and high-to-low order. How is the following packed in memory?
+Assume a `32`-bit storage unit, overlapping units, and high-to-low order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
   signed a : 4;
