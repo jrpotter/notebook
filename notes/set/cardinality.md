@@ -1512,6 +1512,46 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1736702905267-->
 END%%
 
+%%ANKI
+Basic
+What does $\mathop{\text{card}}\mathbb{R}$ evaluate to?
+Back: $2^{\aleph_0}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1737422908951-->
+END%%
+
+%%ANKI
+Basic
+$\mathbb{R}$ is equinumerous to the power set of what?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1737422908963-->
+END%%
+
+%%ANKI
+Basic
+$\mathscr{P}(\omega)$ is equinumerous to what other well-known set?
+Back: $\mathbb{R}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1737422908966-->
+END%%
+
+%%ANKI
+Basic
+What does $\mathop{\text{card}}(\mathbb{R} \times \mathbb{R})$ evaluate to?
+Back: $2^{\aleph_0}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1737424465812-->
+END%%
+
+%%ANKI
+Basic
+Expression $2^{\aleph_0} \cdot 2^{\aleph_0}$ corresponds to the cardinality of what set?
+Back: $\mathbb{R} \times \mathbb{R}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1737424465818-->
+END%%
+
 ### Schröder-Bernstein Theorem
 
 For any sets $A$ and $B$, if $A \preceq B$ and $B \preceq A$, then $A \approx B$.
@@ -1599,6 +1639,38 @@ Consider injections $f \colon A \rightarrow B$ and $g \colon B \rightarrow A$. T
 * $h(x) =$ {$g^{-1}(x)$} otherwise.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1736711693550-->
+END%%
+
+%%ANKI
+Basic
+Enderton proves $\mathbb{R} \approx \mathscr{P}(\omega)$ by applying the Schröder-Bernstein theorem on what two sets?
+Back: $\mathbb{R}$ and $^\omega 2$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1737422908971-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \subseteq B \subseteq C$ and $A \approx C$. What theorem is used to prove $A \approx B$?
+Back: The Schröder-Bernstein theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1737424465821-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \subseteq B \subseteq C$ and $A \approx B$. What theorem is used to prove $B \approx C$?
+Back: N/A. This is not necessarily true.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1737424465826-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \subseteq B \subseteq C$ and $C \approx A$. What theorem is used to prove $B \approx C$?
+Back: The Schröder-Bernstein theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1737424465829-->
 END%%
 
 ## Hilbert's Hotel

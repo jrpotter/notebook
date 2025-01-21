@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-Types in C are categorized corresponding to a hierarchy with a foundation comprising of the [[simple|simple types]]. These types are then grouped and further categorized until we reach the top of the hierarchy consisting of all types.
+Types in C are categorized corresponding to a hierarchy with a foundation comprising of the [[#Simple Types|simple types]]. These types are then grouped and further categorized until we reach the top of the hierarchy consisting of all types.
 
 %%ANKI
 Basic
@@ -171,6 +171,1438 @@ What object type can an lvalue have?
 Back: Any object type other than `void`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1723510994895-->
+END%%
+
+## Simple Types
+
+The bottom of the type hierarchy consists of **simple types**. This comprises the primitive types that all other types are either based off of or derived from.
+
+| Signed        | Unsigned             | 32-bit | 64-bit |
+| ------------- | -------------------- | ------ | ------ |
+| -             | `bool`               | 1      | 1      |
+| `signed char` | `unsigned char`      | 1      | 1      |
+| `short`       | `unsigned short`     | 2      | 2      |
+| `int`         | `unsigned`           | 4      | 4      |
+| `long`        | `unsigned long`      | 4      | 8      |
+| `long long`   | `unsigned long long` | 8      | 8      |
+
+| Real          | Complex               | 32-bit | 64-bit |
+| ------------- | --------------------- | ------ | ------ |
+| `float`       | -                     | 4      | 4      |
+| `double`      | -                     | 8      | 8      |
+| `long double` | -                     | -      | -      |
+| -             | `float complex`       | 4      | 4      |
+| -             | `double complex`      | 8      | 8      |
+| -             | `long double complex` | -      | -      |
+
+%%ANKI
+Cloze
+The {`<stdint.h>`} header file contains {fixed width data integral types}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707835869728-->
+END%%
+
+%%ANKI
+Basic
+The integer types are grouped into what two classes?
+Back: The signed and unsigned integer types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546870212-->
+END%%
+
+%%ANKI
+Basic
+The floating point types are grouped into what two classes?
+Back: The real and complex floating point types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546870217-->
+END%%
+
+%%ANKI
+Basic
+Which header file contains `INT32_MAX`?
+Back: `<stdint.h>`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249870-->
+END%%
+
+%%ANKI
+Basic
+What two variants does a C integral type declaration have?
+Back: Signed and unsigned.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1727551341544-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for an integer to be "signed"?
+Back: It can represent negative, zero, and positive values.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1727551341545-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for an integer to be "unsigned"?
+Back: It can only represent nonnegative values.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1727551341546-->
+END%%
+
+%%ANKI
+Basic
+How large is a word?
+Back: This is a machine-dependent value.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707657889227-->
+END%%
+
+%%ANKI
+Basic
+What word sizes are typical nowadays?
+Back: 32- and 64-bit word sizes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707657889230-->
+END%%
+
+%%ANKI
+Cloze
+`char` *typically* represents {1} byte(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017164-->
+END%%
+
+%%ANKI
+Cloze
+`short` *typically* represents {2} byte(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017210-->
+END%%
+
+%%ANKI
+Cloze
+`int` *typically* represents {4} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017215-->
+END%%
+
+%%ANKI
+Cloze
+`unsigned` *typically* represents {4} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017219-->
+END%%
+
+%%ANKI
+Cloze
+`long` *typically* represents {8} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017222-->
+END%%
+
+%%ANKI
+Cloze
+`long long` *typically* represents {8} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708425521263-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes `long` from `long long`?
+Back: `long long`s are guaranteed to be at least 64-bit wide.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708425521292-->
+END%%
+
+%%ANKI
+Basic
+*Why* is there both a `long` and `long long`?
+Back: `long long`s are at least 64-bit wide, even on 32-bit platforms.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708425521296-->
+END%%
+
+%%ANKI
+Cloze
+`char *` *typically* represents {8} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017224-->
+END%%
+
+%%ANKI
+Cloze
+`float` *typically* represents {4} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017227-->
+END%%
+
+%%ANKI
+Cloze
+`double` *typically* represents {8} bytes(s) on a 64-bit platform.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017229-->
+END%%
+
+%%ANKI
+Basic
+Is declaration `int` signed or unsigned?
+Back: Signed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017232-->
+END%%
+
+%%ANKI
+Basic
+How is declaration `unsigned` written more precisely?
+Back: `unsigned int`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017234-->
+END%%
+
+%%ANKI
+Basic
+Is declaration `long` signed or unsigned?
+Back: Signed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017237-->
+END%%
+
+%%ANKI
+Cloze
+{1:`float`} has {2:4} byte width whereas {2:`double`} has {1:8} byte width.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017242-->
+END%%
+
+%%ANKI
+Cloze
+The C standard defines {lower} bounds on numeric ranges of data types.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1718281813453-->
+END%%
+
+%%ANKI
+Cloze
+The C standard does *not* define {1:upper} bounds on numeric ranges of data types (except for {1:fixed-size} types).
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1718281813458-->
+END%%
+
+### Integers
+
+**Narrow types** cannot be used directly in arithmetic. Instead they are first promoted to a wider type. On almost every system, this promotion will be to a `signed int` of the same value, regardless of the signedness of the narrow type itself.
+
+%%ANKI
+Basic
+Why are narrow types named the way they are?
+Back: They are considered too small to be used directly in arithmetic expressions.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859121959-->
+END%%
+
+%%ANKI
+Basic
+Signed narrow types are usually promoted to what larger type?
+Back: A `signed int`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859121968-->
+END%%
+
+%%ANKI
+Basic
+Unsigned narrow types found are usually promoted to what larger type?
+Back: A `signed int`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859121972-->
+END%%
+
+#### Character Types
+
+The three types `char`, `signed char`, and `unsigned char` are collectively called the **character types**. The implementation defines `char` to have the same range, representation, and behavior as either `signed char` or `unsigned char`, but is considered incompatible with both. That is, it is a distinct type in the eyes of the type system.
+
+%%ANKI
+Basic
+Is declaration `char` signed or unsigned?
+Back: This is implementation-dependent.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707493017239-->
+END%%
+
+%%ANKI
+Basic
+What are the character types?
+Back: `char`, `signed char`, and `unsigned char`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1732622657234-->
+END%%
+
+%%ANKI
+Basic
+`char` has the same range, representation, and behavior as what other type?
+Back: Either `signed char` or `unsigned char`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1732622657240-->
+END%%
+
+%%ANKI
+Basic
+How do you check if `char` has the same representation as a `signed char` or `unsigned char`?
+Back: Check if `CHAR_MIN` has value `SCHAR_MIN` or `0` respectively.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1732622657243-->
+END%%
+
+%%ANKI
+Basic
+Which header defines `CHAR_MIN`?
+Back: `<limits.h>`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1732622657247-->
+END%%
+
+%%ANKI
+Basic
+Which character type should be used for strings?
+Back: `char`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732622657250-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for `char` to be incompatible with other character types?
+Back: The type system considers it to be a distinct type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732622657253-->
+END%%
+
+%%ANKI
+Basic
+What does `sizeof(char)` evaluate to?
+Back: `1`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732622657256-->
+END%%
+
+#### Unsigned Integers
+
+| Name                 | Narrow | Rank | Minimum Width |
+| -------------------- | ------ | ---- | ------------- |
+| `bool`               | Yes    | 0    | 1             |
+| `char` (maybe)       | Yes    | 1    | -             |
+| `unsigned char`      | Yes    | 1    | 8             |
+| `unsighed short`     | Yes    | 2    | 16            |
+| `unsigned int`       | No     | 3    | 16            |
+| `unsigned long`      | No     | 4    | 32            |
+| `unsigned long long` | No     | 5    | 64            |
+
+%%ANKI
+Basic
+Which basic unsigned type has the smallest rank?
+Back: `bool`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859121975-->
+END%%
+
+%%ANKI
+Basic
+Which unsigned type next succeeds `bool` in rank?
+Back: `unsigned char` and (maybe) `char`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859121979-->
+END%%
+
+%%ANKI
+Basic
+Which unsigned type next succeeds `unsigned char` in rank?
+Back: `unsigned short`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859121983-->
+END%%
+
+%%ANKI
+Basic
+Which unsigned type next succeeds `unsigned short` in rank?
+Back: `unsigned int`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859121987-->
+END%%
+
+%%ANKI
+Basic
+Which unsigned type next succeeds `unsigned int` in rank?
+Back: `unsigned long`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859121993-->
+END%%
+
+%%ANKI
+Basic
+Which unsigned type next succeeds `unsigned long` in rank?
+Back: `unsigned long long`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859121999-->
+END%%
+
+%%ANKI
+Basic
+Which unsigned type next succeeds `unsigned long long` in rank?
+Back: N/A.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859122007-->
+END%%
+
+%%ANKI
+Basic
+Which unsigned narrow type has the highest rank?
+Back: `unsigned short`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859122015-->
+END%%
+
+%%ANKI
+Basic
+Which unsigned non-narrow type has the smallest rank?
+Back: `unsigned int`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859122023-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of a `bool`?
+Back: $1$ bit.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341547-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of a `bool`?
+Back: $1$ bit.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341548-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of an `unsigned char`?
+Back: $8$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341549-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of an `unsigned char`?
+Back: $8$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341550-->
+END%%
+
+%%ANKI
+Basic
+What is the maximum precision of an `unsigned char`?
+Back: N/A. C does not define maximum precisions.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341551-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of an `unsigned short`?
+Back: $16$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341552-->
+END%%
+
+%%ANKI
+Basic
+What is the underlying binary representation used to encode an `unsigned short`?
+Back: Unsigned encoding.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341553-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of an `unsigned short`?
+Back: $16$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341554-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of an `unsigned int`?
+Back: $16$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341555-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of an `unsigned int`?
+Back: $16$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341556-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of an `unsigned long`?
+Back: $32$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341557-->
+END%%
+
+%%ANKI
+Basic
+What is the underlying binary representation used to encode an `unsigned long`?
+Back: Unsigned encoding.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341558-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of an `unsigned long`?
+Back: $32$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341559-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of an `unsigned long`?
+Back: $32$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of an `unsigned long long`?
+Back: $64$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727613641635-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of an `unsigned long long`?
+Back: $64$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341560-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the smallest possible `unsigned long long`?
+Back: As `0`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157085-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the largest possible `unsigned long long`?
+Back: As `ULLONG_MAX`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157086-->
+END%%
+
+#### Signed Integers
+
+| Name               | Narrow | Rank | Minimum Width |
+| ------------------ | ------ | ---- | ------------- |
+| `char` (maybe)     | Yes    | 1    | -             |
+| `signed char`      | Yes    | 1    | 8             |
+| `signed short`     | Yes    | 2    | 16            |
+| `signed int`       | No     | 3    | 16            |
+| `signed long`      | No     | 4    | 32            |
+| `signed long long` | No     | 5    | 64            |
+| `float`            | -      | -    | -             |
+| `double`           | -      | -    | -             |
+| `long double`      | -      | -    | -             |
+
+%%ANKI
+Basic
+Which basic signed type has the smallest rank?
+Back: `signed char` and (maybe) `char`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859122030-->
+END%%
+
+%%ANKI
+Basic
+Which signed type succeeds `signed char` in rank?
+Back: `signed short`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859122037-->
+END%%
+
+%%ANKI
+Basic
+Which signed type succeeds `signed short` in rank?
+Back: `signed int`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859122044-->
+END%%
+
+%%ANKI
+Basic
+Which signed type succeeds `signed int` in rank?
+Back: `signed long`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859122052-->
+END%%
+
+%%ANKI
+Basic
+Which signed type succeeds `signed long` in rank?
+Back: `signed long long`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859122059-->
+END%%
+
+%%ANKI
+Basic
+Which signed type succeeds `signed long long` in rank?
+Back: N/A.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859122066-->
+END%%
+
+%%ANKI
+Basic
+Which signed narrow type has the highest rank?
+Back: `signed short`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859122073-->
+END%%
+
+%%ANKI
+Basic
+Which signed non-narrow type has the smallest rank?
+Back: `signed int`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723859122080-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of a `signed char`?
+Back: $8$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341561-->
+END%%
+
+%%ANKI
+Basic
+What is the underlying binary representation used to encode a `signed char`?
+Back: N/A. This is implementation specific.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341562-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of a `signed char`?
+Back: $7$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341563-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of a `signed short`?
+Back: $16$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341564-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of a `signed short`?
+Back: $15$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341565-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of a `signed int`?
+Back: $16$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341566-->
+END%%
+
+%%ANKI
+Basic
+What is the underlying binary representation used to encode a `signed char`?
+Back: N/A. This is implementation specific.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of a `signed int`?
+Back: $15$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341567-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of a `signed long`?
+Back: $32$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341568-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of a `signed long`?
+Back: $31$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341569-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum width of a `signed long long`?
+Back: $64$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341570-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum precision of a `signed long long`?
+Back: $63$ bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341571-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the smallest possible `signed int`?
+Back: As `INT_MIN`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157087-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the largest possible `signed int`?
+Back: As `INT_MAX`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157088-->
+END%%
+
+#### Enumerations
+
+An `enum` is a mapping of identifiers with integer values. They have general form:
+
+```c
+enum optional_tag {
+  type1 ident1;
+  ...
+  typeN identN;
+} optional_var1 ... optional_varN;
+```
+
+%%ANKI
+Basic
+What is the underlined portion of the following declaration called?
+```c
+enum ___ { ... };
+```
+Back: The tag.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892132-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `X`'s from one another in the following?
+```c
+enum X { ... } X;
+```
+Back: The first `X` is a tag whereas the second is a variable with type `enum X`.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892133-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `X`'s from one another in the following?
+```c
+typedef enum X { ... } X;
+```
+Back: The first `X` is a tag whereas the second is an alias for type `enum X`.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892134-->
+END%%
+
+%%ANKI
+Basic
+What is the value of `A` in the following?
+```c
+enum X { A, B, C };
+```
+Back: `0`
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892135-->
+END%%
+
+%%ANKI
+Basic
+What is the value of `B` in the following?
+```c
+enum X { A, B, C };
+```
+Back: `1`
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892136-->
+END%%
+
+%%ANKI
+Basic
+What is the value of `B` in the following?
+```c
+enum X { A=2, B, C };
+```
+Back: `3`
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892137-->
+END%%
+
+%%ANKI
+Basic
+According to Linden, what is the "only advantage" of `enum`s over `#define`?
+Back: `enum`s can usually be traced in a debugger.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892138-->
+END%%
+
+%%ANKI
+Basic
+Positional values of `enum`s start at what value?
+Back: `0`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810814-->
+END%%
+
+%%ANKI
+Basic
+What name is given to members of an enumeration?
+Back: Enumeration constants.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1730902791672-->
+END%%
+
+%%ANKI
+Basic
+What mechanism(s) are available for defining constants of type `signed int`?
+Back: Macros and (possibly) `enum`s.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1727022810839-->
+END%%
+
+%%ANKI
+Basic
+What mechanism(s) are available for defining constants of type `unsigned int`?
+Back: Macros and (possibly) `enum`s.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1727022810842-->
+END%%
+
+#### Exact-Width
+
+The `stdint.h` library contains **exact-width integer types**. These are aliases to types that represent an exact width and sign representation:
+
+* If the type `uintN_t` is provided, it is an unsigned integer type with exactly $N$ bits of width and precision.
+* If the type `intN_t` is provided, is is signed, with two's complement representation, has a width of exactly $N$ bits and a precision of $N - 1$.
+
+The C standard says these `typedef`s *must* be defined if they can be satisfied. Otherwise they may not exist.
+
+%%ANKI
+Cloze
+The {`<stdint.h>`} library contains {exact-width integer types}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341572-->
+END%%
+
+%%ANKI
+Basic
+Suppose `uintN_t` exists. What is its width?
+Back: `N` bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341573-->
+END%%
+
+%%ANKI
+Basic
+Suppose `uintN_t` exists. What is its precision?
+Back: `N` bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341574-->
+END%%
+
+%%ANKI
+Basic
+Suppose `uintN_t` exists. It is encoded using what binary representation?
+Back: Unsigned encoding.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341575-->
+END%%
+
+%%ANKI
+Basic
+Suppose `intN_t` exists. What is its width?
+Back: `N` bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341576-->
+END%%
+
+%%ANKI
+Basic
+Suppose `intN_t` exists. What is its precision?
+Back: `N - 1` bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341577-->
+END%%
+
+%%ANKI
+Basic
+Suppose `intN_t` exists. It is encoded using what binary representation?
+Back: Two's-complement encoding.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341578-->
+END%%
+
+%%ANKI
+Basic
+Suppose a platform has a 32-bit signed integer type. Why might `int32_t` not be defined?
+Back: The platform may not use two's-complement encoding.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341579-->
+END%%
+
+%%ANKI
+Basic
+Suppose a platform has a 32-bit signed two's-complement integer type. Why might `int32_t` not be defined?
+Back: N/A. The C standard states `int32_t` *must* be defined.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341580-->
+END%%
+
+#### Literals
+
+Negative integer literals are typed in a counterintuitive way. When the compiler sees a number of form `-X`, the type of `X` is determined *before* being negated. Promotion follows the **first fit rule** described as follows:
+
+| Decimal     | Oct/Hex              |
+| ----------- | -------------------- |
+| `int`       | `int`                |
+| `long`      | `unsigned`           |
+| `long long` | `long`               |
+| `-`         | `unsigned long`      |
+| `-`         | `long long`          |
+| `-`         | `unsigned long long` |
+
+%%ANKI
+Basic
+What is the first fit rule?
+Back: A specification on what type is given to an integer literal.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852091-->
+END%%
+
+%%ANKI
+Basic
+What is the signedness of a decimal integer literal?
+Back: `signed`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852099-->
+END%%
+
+%%ANKI
+Basic
+What is the signedness of an octal integer literal?
+Back: `signed` or `unsigned`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852105-->
+END%%
+
+%%ANKI
+Basic
+What is the signedness of a hexadecimal integer literal?
+Back: `signed` or `unsigned`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852113-->
+END%%
+
+%%ANKI
+Basic
+The first fit rule lists what types (in order) for decimal integer literals?
+Back: `int`, `long`, and `long long`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852124-->
+END%%
+
+%%ANKI
+Basic
+The first fit rule lists what types (in order) for octal integer literals?
+Back: `int`, `unsigned`, `long`, `unsigned long`, `long long`, and `unsigned long long`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852132-->
+END%%
+
+%%ANKI
+Basic
+The first fit rule lists what types (in order) for hexadecimal integer literals?
+Back: `int`, `unsigned`, `long`, `unsigned long`, `long long`, and `unsigned long long`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852139-->
+END%%
+
+%%ANKI
+Basic
+The first fit rule lists what types (in order) for hexadecimal integer literals?
+Back: `int`, `unsigned`, `long`, `unsigned long`, `long long`, and `unsigned long long`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+END%%
+
+%%ANKI
+Basic
+How does the compiler process integer literal `-X`?
+Back: By first determining the type of `X` and then negating the value.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820805-->
+END%%
+
+%%ANKI
+Basic
+What integer literals are guaranteed `signed`?
+Back: Decimal integer constants.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820826-->
+END%%
+
+%%ANKI
+Basic
+How do we specify an octal integer literal?
+Back: Prepend the literal with a `0`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710673807992-->
+END%%
+
+%%ANKI
+Basic
+Why avoid negative octal integer literals?
+Back: Depending on value, the resulting type may be `unsigned`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820829-->
+END%%
+
+%%ANKI
+Basic
+How do we specify a hexadecimal integer literal?
+Back: Prepend the literal with a `0x` or `0X`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710673807995-->
+END%%
+
+%%ANKI
+Basic
+Why avoid negative hexadecimal integer literals?
+Back: Depending on value, the resulting type may be `unsigned`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723937852145-->
+END%%
+
+%%ANKI
+Cloze
+Octal literals are to {`0`} whereas hexadecimal literals are to {`0x`/`0X`}.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710673807997-->
+END%%
+
+%%ANKI
+Basic
+How might C dangerously interpret a negative hexadecimal integer literal?
+Back: Depending on the value, the resulting type may be `unsigned`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820833-->
+END%%
+
+%%ANKI
+Basic
+Which header file contains `INT_MAX`?
+Back: `<limits.h>`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249864-->
+END%%
+
+%%ANKI
+Cloze
+{`INT_MAX`} is to `signed` whereas {`UINT_MAX`} is to `unsigned`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820837-->
+END%%
+
+%%ANKI
+Basic
+How does `<limits.h>` define `INT_MIN`?
+Back: As `(-INT_MAX - 1)`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820840-->
+END%%
+
+%%ANKI
+Basic
+*Why* is `INT_MIN` defined as `(-INT_MAX - 1)` instead of directly as e.g. `-2147483648`?
+Back: Because `2147483648` (without `-`) would be sized as a non-`int` before being negated.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820843-->
+END%%
+
+%%ANKI
+Cloze
+`INT_MAX` is to {`<limits.h>`} whereas `INT32_MAX` is to {`<stdint.h>`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249873-->
+END%%
+
+%%ANKI
+Basic
+In what order does C cast size and "signedness"?
+Back: C casts size then signedness.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608760-->
+END%%
+
+%%ANKI
+Basic
+In what order does C cast "signedness" and size?
+Back: C casts size then signedness.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677626482-->
+END%%
+
+%%ANKI
+Basic
+Given `short sx`, cast `(unsigned) sx` is more explicitly written as what other sequence of casts?
+Back: `(unsigned) (int) sx`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608762-->
+END%%
+
+%%ANKI
+Basic
+Given `short sx`, are the following two lines equivalent?
+```c
+(unsigned) sx
+(unsigned) (int) sx
+```
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608764-->
+END%%
+
+%%ANKI
+Basic
+Given `short sx`, are the following two lines equivalent?
+```c
+(unsigned) sx
+(unsigned) (unsigned short) sx
+```
+Back: No.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608766-->
+END%%
+
+%%ANKI
+Basic
+Given `short sx`, why is the following not an identity?
+```c
+(unsigned) sx = (unsigned) (unsigned short) sx
+```
+Back: `(unsigned) sx` casts size before "signedness".
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608767-->
+END%%
+
+%%ANKI
+Basic
+What does "signedness" of a variable refer to?
+Back: Whether the variable was declared `signed` or `unsigned`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608769-->
+END%%
+
+Integer constants can be made a certain signedness or type by using the following suffixes:
+
+| Suffix | Type                 |
+| ------ | -------------------- |
+| `U`    | `unsigned`           |
+| `L`    | `long`               |
+| `LL`   | `long long`          |
+| `ULL`  | `unsigned long long` |
+
+%%ANKI
+Basic
+Is an integer literal without a suffix (e.g. `U`) signed or unsigned?
+Back: This depends on the first fit rule.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852153-->
+END%%
+
+%%ANKI
+Basic
+What type is given to an integer literal without a suffix (e.g. `U`)?
+Back: This depends on the first fit rule.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723938382384-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote an `unsigned` integer literal?
+Back: Case-insensitive `U`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249876-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `long` integer literal?
+Back: Case-insensitive `L`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820847-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `long long` integer literal?
+Back: Case-insensitive `LL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820850-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote an `unsigned long long` integer literal?
+Back: Case-insensitive `ULL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820856-->
+END%%
+
+%%ANKI
+Basic
+What type is given to integer literal `-1`?
+Back: `int`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382388-->
+END%%
+
+%%ANKI
+Basic
+What type is given to integer literal `-1U`?
+Back: `unsigned int`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382391-->
+END%%
+
+%%ANKI
+Basic
+What type is given to integer literal `1`?
+Back: `int`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382394-->
+END%%
+
+%%ANKI
+Basic
+What type is given to integer literal `0x0U`?
+Back: `unsigned int`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382398-->
+END%%
+
+#### Integer Constant Expressions
+
+An integer constant expression (ICE) is a compile-time integer value. Its value must be determinable at compile time (e.g. no function calls are permitted), and also no evaluation of an object must participate as an operand.
+
+%%ANKI
+Basic
+What is ICE an acronym for?
+Back: **I**nteger **c**onstant **e**xpression.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810784-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't `b42` in the following considered an ICE?
+```c
+enum { b42 = 42 };
+```
+Back: N/A. It is.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810792-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't `b42` in the following considered an ICE?
+```c
+signed const a42 = 42;
+enum { b42 = a42 };
+```
+Back: Because it depends on the evaluation of object `a42`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810798-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't `c52` in the following considered an ICE?
+```c
+enum { b42 = 42, c52 = b42 + 10 };
+```
+Back: N/A. It is.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810804-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't `b42` in the following considered an ICE?
+```c
+signed const a42() { return 42; }
+enum { b42 = a42() };
+```
+Back: Because it depends on a function call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727022810810-->
+END%%
+
+### Floating Point
+
+#### Literals
+
+Floating-point constants can be made a certain type by using the following suffixes:
+
+| Suffix | Type          |
+| ------ | ------------- |
+| `F`    | `float`       |
+| `L`    | `long double` |
+
+%%ANKI
+Basic
+What type is given to a floating-point literal without a suffix (e.g. `F`)?
+Back: `double`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723938382401-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `float` floating-point literal?
+Back: Case-insensitive `F`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382405-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `double` floating-point literal?
+Back: N/A. Do not use a suffix.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382409-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `long double` floating-point literal?
+Back: Case-insensitive `L`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382414-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0`?
+Back: `double`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382418-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0F`?
+Back: `float`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382423-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0FL`?
+Back: N/A. Invalid suffix.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382427-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0L`?
+Back: `long double`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382432-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0LL`?
+Back: N/A. Invalid suffix.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382436-->
+END%%
+
+%%ANKI
+Cloze
+`INT_MAX` is to {`<limits.h>`} whereas `DBL_MAX` is to {`<float.h>`}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157090-->
+END%%
+
+%%ANKI
+Basic
+What does `DBL_MIN` refer to?
+Back: The smallest `double` strictly greater than 0.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157091-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the smallest possible `double`?
+Back: As `-DBL_MAX`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157092-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the largest possible `double`?
+Back: As `DBL_MAX`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157093-->
 END%%
 
 ## Basic Types
@@ -437,310 +1869,971 @@ Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open
 <!--ID: 1724546734502-->
 END%%
 
-## Conversions
+## Derived Types
 
-> Several operators convert operand values from one type to another automatically.
-
-The above quote refers to **implicit conversions**. Alternatively, we can use cast operations to perform **explicit conversions**.
-
-### Usual Arithmetic Conversions
-
-As a general rule, the result of an operation has the type of the operand with wider range. The usual arithmetic conversions behave according to the following pattern:
-
-1. Determine a **common real type** for the operands and result.
-2. Convert each operand, without change of type domain, to a type with real type matching the common real type.
-3. Unless explicitly stated otherwise, the common real type is the corresponding real type of the result, whose type domain is that of the operands if they are the same and complex otherwise.
-
-Common real types are prioritized in the following order:
-
-1. `long double`
-2. `double`
-3. `float`
-4. If both operands have the same signedness, the higher ranked type.
-5. If the unsigned operand has rank $\geq$ than that of the other, the unsigned type.
-6. If the signed operand's includes that of the other, the signed type.
-7. The unsigned integer type corresponding to that of the signed integer type.
+A type is said to be **derived** if they are defined relative to other types. [[pointers|Pointers]] are also examples of derived types.
 
 %%ANKI
 Basic
-What is the common real type of `a` and `b`?
-```c
-long double a;
-long double complex b;
-```
-Back: `long double`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203391-->
+What is a derived type?
+Back: A type defined relative to other types.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575885-->
+END%%
+
+### Aggregate Data Types
+
+The **aggregate data types** are so called because they combine multiple instances of one or several other data types.
+
+%%ANKI
+Basic
+What are the two aggregate data types?
+Back: Arrays and structures.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575896-->
 END%%
 
 %%ANKI
 Basic
-What is the common real type of `a` and `b`?
-```c
-long double a;
-long complex b;
-```
-Back: `long double`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203395-->
+Why are the aggregate data types named the way they are?
+Back: They combine multiple instances of one or several other data types.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575904-->
+END%%
+
+#### Arrays
+
+An array is a contiguous sequence of objects. An array is either a **fixed-length array** or a **variable-length array**.
+
+%%ANKI
+Cloze
+{Arrays} combine items that all have the same {base type}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575931-->
 END%%
 
 %%ANKI
 Basic
-What is the type domain of `a + b`?
+What is the base type of the following array?
 ```c
-long double a;
-long complex b;
-```
-Back: Complex.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203398-->
-END%%
-
-%%ANKI
-Basic
-What is the common real type of `a` and `b`?
-```c
-double complex a;
-long b;
+double a[4];
 ```
 Back: `double`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203402-->
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575934-->
 END%%
 
 %%ANKI
 Basic
-What is the type domain of `a + b`?
+What is the base type of the following array?
 ```c
-long double a;
-long complex b;
+double a[4][4];
 ```
-Back: Complex.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+Back: `double[4]`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575942-->
 END%%
 
 %%ANKI
 Basic
-What is the common real type of `a` and `b`?
+How are parentheses introduced to the following declaration without affecting meaning?
 ```c
-float a;
-double b;
+double a[4][4];
 ```
-Back: `double`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203405-->
-END%%
-
-%%ANKI
-Basic
-What is the common real type of `a` and `b`?
+Back:
 ```c
-long long a;
-float b;
+double (a[4])[4];
 ```
-Back: `float`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203408-->
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575950-->
 END%%
 
 %%ANKI
 Basic
-What is the type domain of `a + b`?
+Consider the following. How many objects make up `a[0]`?
 ```c
-long long a;
-float b;
+double a[M][N];
 ```
-Back: Real.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203419-->
+Back: `N`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575955-->
 END%%
 
 %%ANKI
 Basic
-*Why* is the common real type of `a` and `b` equal to `float`?
+Consider the following. How many objects make up `a[M - 1]`?
 ```c
-long long a;
-float b;
+double a[M][N];
 ```
-Back: Because floating-point types have priority over integer types.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203427-->
+Back: `N`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575960-->
 END%%
 
 %%ANKI
 Basic
-What is the type domain of `a + b`?
+Consider the following. How many objects make up `a[N - 1]`?
 ```c
-long long a;
-long long b;
+double a[M][N];
 ```
-Back: Real.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203431-->
+Back: Indeterminate. This may not be a valid array access.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575965-->
 END%%
 
 %%ANKI
 Basic
-What is the common real type of `a` and `b`?
+Consider the following where `N < M`. How many objects make up `a[N - 1]`?
 ```c
-long long a;
-long long b;
+double a[M][N];
 ```
-Back: `long long`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203436-->
+Back: `N`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575971-->
 END%%
 
 %%ANKI
 Basic
-What is the common real type of `a` and `b`?
+Consider the following where `M < N`. How many objects make up `a[N - 1]`?
 ```c
-unsigned int a;
-signed short b;
+double a[M][N];
 ```
-Back: `unsigned int`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203440-->
+Back: N/A. Invalid array access.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575977-->
+END%%
+
+%%ANKI
+Cloze
+Array `a[M][N]` is a sequence of {1:`M`} objects each containing {1:`N`} objects.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575984-->
 END%%
 
 %%ANKI
 Basic
-What is the common real type of `a` and `b`?
+Arrays fall under what two categories?
+Back: Fixed-length and variable-length.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575990-->
+END%%
+
+%%ANKI
+Basic
+Replace `EXPR` in the following with an expression to compute the length of `A`.
 ```c
-unsigned a;
-signed int b;
+int A[N];
+size_t len = EXPR;
 ```
-Back: `unsigned`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203445-->
+Back: `(sizeof A) / (sizeof A[0])`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576053-->
 END%%
 
 %%ANKI
 Basic
-*Why* is the common real type of `a` and `b` equal to `unsigned`?
+What two syntactic forms does the `sizeof` operator come in?
+Back: With and without parentheses.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576058-->
+END%%
+
+%%ANKI
+Basic
+When can the `sizeof` operator elide parentheses?
+Back: When operating on an object.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576068-->
+END%%
+
+%%ANKI
+Basic
+When does the `sizeof` operator *require* parentheses?
+Back: When operating on a type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576074-->
+END%%
+
+%%ANKI
+Basic
+Apply the possible syntactic forms of the `sizeof` operator to object `a`.
+Back:
 ```c
-unsigned a;
-signed int b;
+sizeof a
+sizeof(a)
 ```
-Back: Because `unsigned` has rank $\geq$ that of `signed int`.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203450-->
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576079-->
 END%%
 
 %%ANKI
 Basic
-What is the type domain of `a + b`?
+Apply the possible syntactic forms of the `sizeof` operator to type `int`.
+Back:
 ```c
-unsigned a;
-signed int b;
+sizeof(int)
 ```
-Back: Real.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203454-->
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576083-->
 END%%
 
 %%ANKI
 Basic
-What is the type domain of `a + b`?
+Suppose I pass the following array to a function. Which dimension is lost?
 ```c
-unsigned short a;
-signed int b;
+double a[M][N][P];
 ```
-Back: Real.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203469-->
+Back: `M`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1728244147560-->
 END%%
 
 %%ANKI
 Basic
-What is the common real type of `a + b`?
+Why shouldn't you use the `sizeof` operator on array parameters to functions?
+Back: The innermost dimension of an array parameter to a function is lost.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1728244147581-->
+END%%
+
+%%ANKI
+Basic
+How is the following array parameter rewritten using pointer syntax?
 ```c
-unsigned short a;
-signed int b;
+void foo(int a[const]) {}
 ```
-Back: Indeterminate.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1726840632804-->
-END%%
-
-%%ANKI
-Basic
-*Why* is the common real type of `a + b` indeterminate?
+Back:
 ```c
-unsigned short a;
-int b;
+void foo(int *const a) {}
 ```
-Back: Because the rank of `unsigned short` is $<$ that of `int`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203475-->
+<!--ID: 1728244147585-->
 END%%
 
 %%ANKI
 Basic
-What *might* the common real type of `a + b` be?
+How is the following array parameter rewritten using pointer syntax?
 ```c
-unsigned short a;
-signed int b;
+void foo(const int a[]) {}
 ```
-Back: `signed int` or `unsigned int`.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203479-->
-END%%
-
-%%ANKI
-Basic
-When is the common real type of `a + b` equal to `signed int`?
+Back:
 ```c
-unsigned short a;
-signed int b;
+void foo(const int *a) {}
 ```
-Back: When `signed int` can represent all the values of `unsigned short`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203484-->
+<!--ID: 1728244147614-->
 END%%
 
 %%ANKI
 Basic
-When is the common real type of `a + b` equal to `unsigned int`?
+How is the following pointer parameter rewritten using array syntax?
 ```c
-unsigned short a;
-signed int b;
+void foo(int *restrict a) {}
 ```
-Back: When `signed int` cannot represent all the values of `unsigned short`.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203488-->
-END%%
-
-%%ANKI
-Basic
-When is the common real type of `a + b` equal to `unsigned short`?
+Back:
 ```c
-unsigned short a;
-signed int b;
+void foo(int a[restrict]) {}
 ```
-Back: N/A. It never is.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203492-->
+<!--ID: 1728244147617-->
 END%%
 
 %%ANKI
 Basic
-Suppose `a` and `b` has signed and unsigned types respectively. When is `a + b` signed?
-Back: When `b`'s type has lower rank and the range of `b` is included in the range of `a`.
+How is the following pointer parameter rewritten using array syntax?
+```c
+void foo(volatile int *a) {}
+```
+Back:
+```c
+void foo(volatile int a[]) {}
+```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203460-->
+<!--ID: 1728244147620-->
 END%%
 
 %%ANKI
 Basic
-Suppose `a` and `b` have signed and unsigned types respectively. When is `a + b` unsigned?
-Back: When `b`'s type has higher rank or the range of `a` cannot fit the range of `b`.
+What does the `3` keyword guarantee to the compiler?
+```c
+void bar(int a[3]);
+```
+Back: N/A. It is ignored.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724762203465-->
+<!--ID: 1728244147623-->
+END%%
+
+%%ANKI
+Basic
+*Why* might you see e.g. `3` like in the following prototype?
+```c
+void bar(int a[3]);
+```
+Back: It serves as documentation.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147625-->
+END%%
+
+%%ANKI
+Basic
+In the following, what does the `static` keyword guarantee to the compiler?
+```c
+void bar(int a[static 3]);
+```
+Back: The minimum number of elements for the compiler to assume `a` contains.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147628-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following produce a compilation error?
+```c
+void foo(int a[3]);
+
+int main() {
+  int a[] = { 1, 2 };
+  foo(a);
+}
+```
+Back: N/A. It doesn't.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147652-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following produce a compilation error?
+```c
+void foo(int a[static 3]);
+
+int main() {
+  int a[] = { 1, 2 };
+  foo(a);
+}
+```
+Back: Because the argument to `foo` does not have at least `3` elements.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147655-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following produce a compilation error?
+```c
+void foo(int a[static 3]);
+
+int main() {
+  int a[] = { 1, 2, 3, 4 };
+  foo(a);
+}
+```
+Back: N/A. It doesn't.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147658-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following produce a compilation error?
+```c
+void foo(int a[3]);
+
+int main() {
+  foo(0);
+}
+```
+Back: N/A. It doesn't.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147661-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following produce a compilation error?
+```c
+void foo(int a[static 1]);
+
+int main() {
+  foo(0);
+}
+```
+Back: Because `static` indicates a valid pointer must be passed to `foo`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147664-->
+END%%
+
+%%ANKI
+Basic
+Add initializer with first element set to `1` using designated initialization.
+```c
+int example[3];
+```
+Back:
+```c
+int example[3] = { [0] = 1 };
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470057-->
+END%%
+
+%%ANKI
+Basic
+Add initializer with first element set to `1` *without* using designated initialization.
+```c
+int example[3];
+```
+Back:
+```c
+int example[3] = { 1 };
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470061-->
+END%%
+
+%%ANKI
+Basic
+What is the value of `example[1]` in the following?
+```c
+int example[2] = { [0] = 1 };
+```
+Back: `0`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470063-->
+END%%
+
+%%ANKI
+Basic
+Are arrays passed by reference or value?
+Back: Reference.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755493-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+double a[4];
+```
+Back: FLA.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576008-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+double a[];
+```
+Back: N/A. This is invalid syntax.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576013-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+double a[] = { 0 };
+```
+Back: FLA.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576019-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+int n = 2;
+double a[n];
+```
+Back: VLA.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576025-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+#define n 2
+double a[n];
+```
+Back: FLA.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576030-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+enum { n = 2 };
+double a[n];
+```
+Back: FLA.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576036-->
+END%%
+
+%%ANKI
+Basic
+Is the following an FLA or VLA?
+```c
+int n = 2;
+double a[n] = {0};
+```
+Back: N/A. Variable-sized objects may not be initialized.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576041-->
+END%%
+
+Evaluation of an array `A` returns `&A[0]`, i.e. a [[#Pointers|pointer]] to the first array element. This is called **array decay**.
+
+%%ANKI
+Basic
+What is the effect of array decay?
+Back: Evaluation of an array `A` returns `&A[0]`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953228-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the implicit conversion of an array to a pointer?
+Back: Array decay.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953231-->
+END%%
+
+%%ANKI
+Basic
+According to Gustedt, what C feature explains why are there no "array values"?
+Back: Array-to-pointer decay.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953234-->
+END%%
+
+%%ANKI
+Basic
+Why can't arrays directly be made arguments to functions?
+Back: Because array arguments decay to pointers.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953237-->
+END%%
+
+%%ANKI
+Cloze
+In a function declaration, any array parameter rewrites to {a pointer}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953240-->
+END%%
+
+##### Fixed-Length
+
+A fixed-length array (FLA) has a predetermined size. Their stack allocations can be computed at compilation time.
+
+%%ANKI
+Basic
+What is FLA an acronym for?
+Back: **F**ixed-**l**ength **a**rray.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634166-->
+END%%
+
+%%ANKI
+Basic
+What two ways can the length of an FLA be specified?
+Back: By an ICE or an initializer.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576002-->
+END%%
+
+%%ANKI
+Basic
+For the following to be an FLA, what must `N` be?
+```c
+double a[N];
+```
+Back: An ICE.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576047-->
+END%%
+
+%%ANKI
+Basic
+*Why* must FLAs be declared within a function?
+Back: N/A. They can exist elsewhere.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1731952634167-->
+END%%
+
+##### Variable-Length
+
+A variable-length array (VLA) has its size determined at runtime. Their stack allocations must be determined with respect to other registers available to the frame.
+
+%%ANKI
+Basic
+What is VLA an acronym for?
+Back: **V**ariable-**l**ength **a**rray.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731952634168-->
+END%%
+
+%%ANKI
+Basic
+Where *must* a VLA be declared?
+Back: Within a function.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957575996-->
+END%%
+
+%%ANKI
+Basic
+*Why* do variable-length arrays require use of a frame pointer?
+Back: Offsets depend on how much space must be allocated on the stack.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1731952634169-->
+END%%
+
+%%ANKI
+Basic
+*Why* must VLAs be declared within a function?
+Back: Their implementation relies on frame pointers.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1731952634170-->
+END%%
+
+#### Structures
+
+A `struct` is a grouping of data together. It has the following general form:
+
+```c
+struct optional_tag {
+  type_1 ident1;
+  ...
+  type_N identN;
+} optional_var1 ... optional_varM;
+```
+
+%%ANKI
+Cloze
+{Structures} combine items that may have different {base types}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576087-->
+END%%
+
+%%ANKI
+Basic
+What is the underlined portion of the following declaration called?
+```c
+struct ___ { ... };
+```
+Back: The tag.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892126-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `X`'s from one another in the following?
+```c
+struct X { ... } X;
+```
+Back: The first `X` is a tag whereas the second is a variable with type `struct X`.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892127-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `X`'s from one another in the following?
+```c
+typedef struct X { ... } X;
+```
+Back: The first `X` is a tag whereas the second is an alias for type `struct X`.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892128-->
+END%%
+
+%%ANKI
+Basic
+Define an object with `fieldA` set to `1` using designated initialization.
+```c
+struct example { int fieldA; };
+```
+Back:
+```c
+struct example test = { .fieldA = 1 };
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470065-->
+END%%
+
+%%ANKI
+Basic
+Define an object with `fieldA` set to `1` *without* using designated initialization.
+```c
+struct example { int fieldA; };
+```
+Back:
+```c
+struct example test = { 1 };
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470066-->
+END%%
+
+%%ANKI
+Basic
+What is the value of `test.fieldB` in the following?
+```c
+struct example { int fieldA; int fieldB; };
+struct example test = { .fieldA = 1 };
+```
+Back: `0`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470068-->
+END%%
+
+%%ANKI
+Basic
+Are `struct`s well-defined with respect to `=` (i.e. assignment)?
+Back: Yes.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755496-->
+END%%
+
+%%ANKI
+Basic
+Are `struct`s well-defined with respect to `==` (i.e. equality)?
+Back: No.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755498-->
+END%%
+
+%%ANKI
+Basic
+Are `struct`s well-defined with respect to `!=` (i.e. inequality)?
+Back: No.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755499-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, what are valid member types of a `struct`?
+Back: All object types except VLAs.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755500-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, what object type is not a valid `struct` member type?
+Back: VLAs.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755501-->
+END%%
+
+%%ANKI
+Basic
+Declare a variable `var` of the nested `struct` with member `c` set to `1`.
+```c
+struct A {
+  struct B { int c; };
+};
+```
+Back: `struct B var = { 1 };`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755502-->
+END%%
+
+%%ANKI
+Basic
+What is the visibility of `struct B` with respect to `struct A`?
+```c
+struct A {
+  struct B { int c; };
+};
+```
+Back: They have the same visibility.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755503-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for `struct A` and `struct B` to have the same visibility?
+```c
+struct A {
+  struct B { int c; };
+};
+```
+Back: Nesting `struct`s does not introduce any notion of scope.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755504-->
+END%%
+
+### Unions
+
+A `union` is a grouping of data together but with overlaid storage. It has the following general form:
+
+```c
+union optional_tag {
+  type1 ident1;
+  ...
+  typeN identN;
+} optional_var1 ... optional_varN;
+```
+
+%%ANKI
+Basic
+What is the underlined portion of the following declaration called?
+```c
+union ___ { ... };
+```
+Back: The tag.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892129-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `X`'s from one another in the following?
+```c
+union X { ... } X;
+```
+Back: The first `X` is a tag whereas the second is a variable with type `union X`.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892130-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `X`'s from one another in the following?
+```c
+typedef union X { ... } X;
+```
+Back: The first `X` is a tag whereas the second is an alias for type `union X`.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892131-->
+END%%
+
+### Functions
+
+A function `f` without a following opening `(` is converted to a pointer to its start. This is called **function decay**.
+
+%%ANKI
+Basic
+What is the effect of function decay?
+Back: Evaluation of a function `f` without a following opening `(` is converted to a pointer to its start.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953243-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the implicit conversion of a function to a pointer?
+Back: Function decay.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953247-->
+END%%
+
+%%ANKI
+Basic
+According to Gustedt, what C feature explains why are there no "function values"?
+Back: Function-to-pointer decay.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953250-->
+END%%
+
+%%ANKI
+Basic
+Why can't functions directly be made arguments to functions?
+Back: Because function arguments decay to pointers.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953255-->
+END%%
+
+%%ANKI
+Cloze
+{1:Function pointers} are to {2:`(...)`} whereas {2:pointers} are to {1:`[...]`}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953260-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+f(3);
+```
+Back: Decay, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953264-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+(&f)(3);
+```
+Back: Address of, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953269-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+(*f)(3);
+```
+Back: Decay, dereference, decay, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953273-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+(*&f)(3);
+```
+Back: Address of, dereference, decay, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953277-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+(&*f)(3);
+```
+Back: Decay, dereference, address of, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953281-->
+END%%
+
+%%ANKI
+Cloze
+{1:Pointers} refer to {2:arrays} whereas {2:function pointers} refer to {1:functions}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953285-->
 END%%
 
 ## Bibliography
 
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+* Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.

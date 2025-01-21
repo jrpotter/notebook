@@ -203,7 +203,7 @@ END%%
 
 %%ANKI
 Basic
-What arc describes the portion of a unit circle found in the first quadrant?
+What interval maps to the portion of a unit circle found in the first quadrant?
 Back: $\left(0, \frac{\pi}{2}\right)$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737347029839-->
@@ -211,7 +211,7 @@ END%%
 
 %%ANKI
 Basic
-What arc describes the portion of a unit circle found in the third quadrant?
+What interval maps to the portion of a unit circle found in the third quadrant?
 Back: $\left(\pi, \frac{3\pi}{2}\right)$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737347029841-->
@@ -219,7 +219,7 @@ END%%
 
 %%ANKI
 Basic
-What arc describes the portion of a unit circle found in the fourth quadrant?
+What interval maps to the portion of a unit circle found in the fourth quadrant?
 Back: $\left(\frac{3\pi}{2}, 2\pi\right)$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737347029843-->
@@ -227,7 +227,7 @@ END%%
 
 %%ANKI
 Basic
-What arc describes the portion of a unit circle found in the second quadrant?
+What interval maps to the portion of a unit circle found in the second quadrant?
 Back: $\left(\frac{\pi}{2}, \pi\right)$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737347029844-->

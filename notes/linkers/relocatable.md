@@ -856,7 +856,7 @@ END%%
 
 %%ANKI
 Cloze
-{1:`R_X86_64_32`} is to {2:absolute} whereas {2:`R_X86_64_PC32`} is to {1:relative}.
+{1:`R_X86_64_32`} is to {2:absolute} whereas {2:`R_X86_64_PC32`} is to {1:PC-relative}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: linker::elf x86-64
 <!--ID: 1737320385860-->
@@ -882,7 +882,7 @@ END%%
 
 %%ANKI
 Basic
-What is the significance of `PC` in type `R_X86_64_PC32`?
+What is `PC` an acronym of in type `R_X86_64_PC32`?
 Back: It is short for **p**rogram **c**ounter.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17 linker::elf x86-64

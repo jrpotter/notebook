@@ -357,7 +357,7 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1733242332384-->
 END%%
 
-For these objects that do not have a [[derived#Variable-Length|VLA]] type, its lifetime extends from entry into its enclosing block until execution of that block ends. Its initial value is indeterminate. If initialization is specified, it is performed each time the declaration or compound literal is reached in the execution of the block.
+For these objects that do not have a [[c17/types/index#Variable-Length|VLA]] type, its lifetime extends from entry into its enclosing block until execution of that block ends. Its initial value is indeterminate. If initialization is specified, it is performed each time the declaration or compound literal is reached in the execution of the block.
 
 For these objects that do have a VLA type, its lifetime extends from the declaration of the object until execution of the program leaves the scope of the declaration.
 
@@ -675,7 +675,7 @@ END%%
 
 In contrast to `auto`, there also exists a `register` [[#Storage-Class Specifiers|storage-class specifier]]. The `&` operator is not allowed for variables declared with `register` meaning variables declared with `register` can't [[pointers#Aliasing|alias]].
 
-Because of [[derived#Arrays|array-to-pointer decay]], arrays with storage-class `register` are useless.
+Because of [[types/index#Arrays|array-to-pointer decay]], arrays with storage-class `register` are useless.
 
 %%ANKI
 Basic
@@ -984,7 +984,6 @@ END%%
 Storage-class specifiers are used to control an object's storage duration and an identifier's linkage. There are six storage-class specifiers:
 
 * `typedef`
-	* Discussed in [[typedefs]].
 	* Is called a "storage-class specifier" for syntactic convenience only.
 * `extern`
 	* Discussed in [[linkage]] and [[#Static]].
@@ -1005,22 +1004,6 @@ How many different storage-class specifiers are there?
 Back: Six.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733242332426-->
-END%%
-
-%%ANKI
-Basic
-Which storage-class specifier isn't *really* a storage-class specifier?
-Back: `typedef`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733242332430-->
-END%%
-
-%%ANKI
-Basic
-Syntactically, what makes `typedef` a special storage-class specifier?
-Back: It is labeled a "storage-class specifier" for syntactic convenience.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733242332435-->
 END%%
 
 %%ANKI
@@ -1079,7 +1062,171 @@ Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open
 <!--ID: 1733242459501-->
 END%%
 
+### typedefs
+
+The `<stddef.h>` header defines a few standard `typedef`s:
+
+* `ptrdiff_t`: the signed integer type of the result of subtracting two pointers.
+* `size_t`: the unsigned integer type of the result of the `sizeof` operator.
+
+The standard often uses `typedef`s ending with `_t`.
+
+%%ANKI
+Basic
+Which storage-class specifier isn't *really* a storage-class specifier?
+Back: `typedef`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733242332430-->
+END%%
+
+%%ANKI
+Basic
+Syntactically, what makes `typedef` a special storage-class specifier?
+Back: It is labeled a "storage-class specifier" for syntactic convenience.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733242332435-->
+END%%
+
+%%ANKI
+Basic
+What is the type of `x` in the following?
+```c
+#define int_ptr int *
+int_ptr x, y;
+```
+Back: `int *`
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892109-->
+END%%
+
+%%ANKI
+Basic
+What is the type of `y` in the following?
+```c
+#define int_ptr int *
+int_ptr x, y;
+```
+Back: `int`
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892110-->
+END%%
+
+%%ANKI
+Basic
+What is the type of `x` in the following?
+```c
+typedef int_ptr int *
+int_ptr x, y;
+```
+Back: `int *`
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892111-->
+END%%
+
+%%ANKI
+Basic
+What is the type of `y` in the following?
+```c
+typedef int_ptr int *
+int_ptr x, y;
+```
+Back: `int *`
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892112-->
+END%%
+
+%%ANKI
+Basic
+What header defines `size_t`?
+Back: `<stddef.h>`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1730740461658-->
+END%%
+
+%%ANKI
+Basic
+What header defines `ptrdiff_t`?
+Back: `<stddef.h>`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1730740461659-->
+END%%
+
+%%ANKI
+Basic
+`ptrdiff_t` is used as the type of what result?
+Back: Subtracting two pointers.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1730740461660-->
+END%%
+
+%%ANKI
+Basic
+`size_t` is used as the type of what result?
+Back: The `sizeof` operation.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1730740461661-->
+END%%
+
+%%ANKI
+Basic
+Is `ptrdiff_t` signed or unsigned?
+Back: Signed.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1730740461662-->
+END%%
+
+%%ANKI
+Basic
+When can two pointers be subtracted?
+Back: Only if both refer to elements of the same array object.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726963-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `p - q` in the following?
+```c
+double A[4] = { 0.0, 1.0, 2.0, -3.0 };
+double* p = &A[1];
+double* q = &A[3];
+```
+Back: `-2`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726964-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `p - q` in the following?
+```c
+double A[4] = { 0.0, 1.0, 2.0, -3.0 };
+double* p = &A[3];
+double* q = &A[1];
+```
+Back: `2`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726965-->
+END%%
+
+%%ANKI
+Basic
+Is `size_t` signed or unsigned?
+Back: Unsigned.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1730740461663-->
+END%%
+
+%%ANKI
+Basic
+The C standard typically suffixes `typedef`s with what?
+Back: `_t`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755507-->
+END%%
+
 ## Bibliography
 
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
