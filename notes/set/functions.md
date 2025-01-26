@@ -1723,7 +1723,7 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1720819771087-->
 END%%
 
-### Closures
+## Closures
 
 If $S$ is a function and $A$ is a subset of $\mathop{\text{dom}}S$, then $A$ is said to be **closed** under $S$ if and only if whenever $x \in A$, then $S(x) \in A$. This is equivalently expressed as $S[\![A]\!] \subseteq A$.
 
@@ -1790,61 +1790,6 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1726363070015-->
 END%%
 
-Let $f$ be a function from $B$ into $B$ and assume $A \subseteq B$. There are two possible methods for constructing the **closure** $C$ of $A$ under $f$. The top-down approach defines $C^*$ to be the intersection of all closed supersets of $A$: $$C^* = \bigcap\, \{X \mid A \subseteq X \subseteq B \land f[\![X]\!] \subseteq X \}$$
-
-The bottom-up approach defines $C_*$ to be $$C_* = \bigcup_{i \in \omega} h(i)$$
-where $h \colon \omega \rightarrow \mathscr{P}(B)$ is recursively defined as: $$\begin{align*} h(0) & = A, \\ h(n^+) &= h(n) \cup f[\![h(n)]\!]. \end{align*}$$
-
-Note that the [[natural-numbers#Recursion Theorem|recursion theorem]] proves $h$ is indeed a function.
-
-%%ANKI
-Basic
-Let $f \colon B \rightarrow B$ and $A \subseteq B$. How is the top-down closure $C^*$ of $A$ under $f$ defined?
-Back: $\bigcap\, \{ X \mid A \subseteq X \subseteq B \land f[\![X]\!] \subseteq X \}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1729684379328-->
-END%%
-
-%%ANKI
-Basic
-Let $f \colon B \rightarrow B$ and $A \subseteq B$. What is the smallest set the closure $C^*$ of $A$ under $f$ can be?
-Back: $A$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1729684379332-->
-END%%
-
-%%ANKI
-Basic
-Let $f \colon B \rightarrow B$ and $A \subseteq B$. What is the largest set the closure $C^*$ of $A$ under $f$ can be?
-Back: $B$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1729684379336-->
-END%%
-
-%%ANKI
-Basic
-Let $f \colon B \rightarrow B$ and $A \subseteq B$. How is the bottom-up closure $C_*$ of $A$ under $f$ defined assuming appropriate $h \colon \omega \rightarrow \mathscr{P}(B)$?
-Back: $\bigcup \mathop{\text{ran}} h$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1729684379339-->
-END%%
-
-%%ANKI
-Basic
-Let $f \colon B \rightarrow B$ and $A \subseteq B$. What is the smallest set the closure $C_*$ of $A$ under $f$ can be?
-Back: $A$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1729684379342-->
-END%%
-
-%%ANKI
-Basic
-Let $f \colon B \rightarrow B$ and $A \subseteq B$. What is the largest set the closure $C_*$ of $A$ under $f$ can be?
-Back: $B$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1729684379345-->
-END%%
-
 %%ANKI
 Basic
 Let $C$ be the closure of $A$ under $f$. What kind of mathematical entity is $A$?
@@ -1879,6 +1824,103 @@ END%%
 
 %%ANKI
 Basic
+Let $C$ be the closure of $A$ under $f$. What is the "signature" of $f$?
+Back: $f \colon B \rightarrow B$ for some $B \supseteq A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379367-->
+END%%
+
+### Top-down Approach
+
+Let $f$ be a function from $B$ into $B$ and assume $A \subseteq B$. The top-down approach for constructing the closure $C$ of $A$ under $f$ defines $C^*= C$ to be the intersection of all closed supersets of $A$: $$C^* = \bigcap\, \{X \mid A \subseteq X \subseteq B \land f[\![X]\!] \subseteq X \}$$
+
+%%ANKI
+Basic
+Let $f \colon B \rightarrow B$ and $A \subseteq B$. How is the top-down closure $C^*$ of $A$ under $f$ defined?
+Back: $\bigcap\, \{ X \mid A \subseteq X \subseteq B \land f[\![X]\!] \subseteq X \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379328-->
+END%%
+
+%%ANKI
+Basic
+Let $f \colon B \rightarrow B$ and $A \subseteq B$. What is the smallest set the closure $C^*$ of $A$ under $f$ can be?
+Back: $A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379332-->
+END%%
+
+%%ANKI
+Basic
+Let $f \colon B \rightarrow B$ and $A \subseteq B$. What is the largest set the closure $C^*$ of $A$ under $f$ can be?
+Back: $B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379336-->
+END%%
+
+%%ANKI
+Cloze
+The top-down closure $C^*$ of $A$ under $f$ is the {intersection} of all {closed supersets} of $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379398-->
+END%%
+
+%%ANKI
+Cloze
+The following defines the {top-down} closure of {$A$} under {$f \colon B \rightarrow B$}. $$C^* = \bigcap\,\{ X \mid A \subseteq X \subseteq B \land f[\![X]\!] \subseteq X \}$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1737552610476-->
+END%%
+
+%%ANKI
+Basic
+Consider the following definition of a top-down closure. Why is the first conjunct important? $$C^* = \bigcap\,\{ X \mid A \subseteq X \subseteq B \land f[\![X]\!] \subseteq X \}$$
+Back: It ensures the set we're finding a closure of is a subset of the result.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1737552610482-->
+END%%
+
+%%ANKI
+Basic
+Consider the following definition of a top-down closure. Why is the second conjunct important? $$C^* = \bigcap\,\{ X \mid A \subseteq X \subseteq B \land f[\![X]\!] \subseteq X \}$$
+Back: It restricts consideration to just the subsets of $B$ that are actually closed.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1737552610485-->
+END%%
+
+### Bottom-Up Approach
+
+Let $f$ be a function from $B$ into $B$ and assume $A \subseteq B$. The bottom-up approach for constructing the closure $C$ of $A$ under $f$ defines $C_* = C$ to be $$C_* = \bigcup_{i \in \omega} h(i)$$
+where $h \colon \omega \rightarrow \mathscr{P}(B)$ is recursively defined as: $$\begin{align*} h(0) & = A, \\ h(n^+) &= h(n) \cup f[\![h(n)]\!]. \end{align*}$$
+
+Note that the [[natural-numbers#Recursion Theorem|recursion theorem]] proves $h$ is indeed a function.
+
+%%ANKI
+Basic
+Let $f \colon B \rightarrow B$ and $A \subseteq B$. How is the bottom-up closure $C_*$ of $A$ under $f$ defined assuming appropriate $h \colon \omega \rightarrow \mathscr{P}(B)$?
+Back: $\bigcup \mathop{\text{ran}} h$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379339-->
+END%%
+
+%%ANKI
+Basic
+Let $f \colon B \rightarrow B$ and $A \subseteq B$. What is the smallest set the closure $C_*$ of $A$ under $f$ can be?
+Back: $A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379342-->
+END%%
+
+%%ANKI
+Basic
+Let $f \colon B \rightarrow B$ and $A \subseteq B$. What is the largest set the closure $C_*$ of $A$ under $f$ can be?
+Back: $B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1729684379345-->
+END%%
+
+%%ANKI
+Basic
 Let $C$ be the closure of $A$ under $f$. How is the top-down closure denoted?
 Back: As $C^*$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -1891,14 +1933,6 @@ Let $C$ be the closure of $A$ under $f$. How is the bottom-up closure denoted?
 Back: As $C_*$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1729684379364-->
-END%%
-
-%%ANKI
-Basic
-Let $C$ be the closure of $A$ under $f$. What is the "signature" of $f$?
-Back: $f \colon B \rightarrow B$ for some $B \supseteq A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1729684379367-->
 END%%
 
 %%ANKI
@@ -1939,13 +1973,6 @@ Let $C_*$ be the closure of $A$ under $f$ defined in terms of function $h$. What
 Back: The recursion theorem.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1729684379392-->
-END%%
-
-%%ANKI
-Cloze
-The top-down closure $C^*$ of $A$ under $f$ is the {intersection} of all {closed supersets} of $A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1729684379398-->
 END%%
 
 ## Kernels

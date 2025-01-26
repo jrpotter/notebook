@@ -1250,6 +1250,89 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1737187609895-->
 END%%
 
+#### Bound Functions
+
+A **bound function** $t \colon \mathbb{N} \rightarrow \mathbb{N}$ returns an upper bound on the number of iterations an iterative command may perform. On every iteration, it must evaluate to a smaller number than in the previous iteration. That is, $t(k^+) < t(k)$ for all $k \in \mathbb{N}$. In this way, we guarantee the iterative command eventually terminates.
+
+%%ANKI
+Basic
+Let $t$ be a bound function of some iterative command. What is its "signature"?
+Back: $t \colon \mathbb{N} \rightarrow \mathbb{N}$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737923385422-->
+END%%
+
+%%ANKI
+Basic
+Let $t$ be a bound function of some iterative command. What does its input correspond to?
+Back: The number of iterations performed so far.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737923385427-->
+END%%
+
+%%ANKI
+Basic
+Let $t$ be a bound function of some iterative command. What does its output correspond to?
+Back: An upper bound on the number of iterations that may still be performed.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737923385430-->
+END%%
+
+%%ANKI
+Basic
+Is it sufficient for a bound function to be monotonically decreasing?
+Back: No, it must be *strictly* monotonically decreasing.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737923385433-->
+END%%
+
+%%ANKI
+Basic
+Is it sufficient for a bound function to be strictly monotonically decreasing?
+Back: Yes.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737923385436-->
+END%%
+
+%%ANKI
+Basic
+Let $t$ be a bound function of some iterative command. For $k \in \mathbb{N}$, how does $t(k)$ and $t(k^+)$ relate?
+Back: $t(k^+) < t(k)$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737923385438-->
+END%%
+
+%%ANKI
+Basic
+With respect to iterative commands, what does term "invariant" usually describe?
+Back: A condition that holds before and after each iteration.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737923385441-->
+END%%
+
+%%ANKI
+Basic
+With respect to iterative commands, what does term "variant" usually describe?
+Back: The associated bound function.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737923385444-->
+END%%
+
+%%ANKI
+Basic
+What kind of bound does an iterative command's bound function describe?
+Back: An upper bound on the number of iterations.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737923385446-->
+END%%
+
+%%ANKI
+Basic
+With respect to iterative commands, "{1:variant}" is to a {2:function} whereas "{2:invariant}" is to a {1:predicate}.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1737923385449-->
+END%%
+
 ## Bibliography
 
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.

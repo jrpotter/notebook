@@ -342,7 +342,7 @@ END%%
 %%ANKI
 Basic
 Let $t$ be the length of an arc with initial point $\langle 1, 0 \rangle$ and terminal point in quadrant IV. What is the sign of $\cos(t)$?
-Back: $\cos(t) < 0$
+Back: $\cos(t) > 0$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737416715562-->
 END%%
@@ -410,8 +410,8 @@ END%%
 
 %%ANKI
 Basic
-What shape is used to derive the Pythagorean Identity?
-Back: The unit circle.
+What shapes are used to derive the Pythagorean Identity?
+Back: Right triangles inscribed in the unit circle.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737418825329-->
 END%%

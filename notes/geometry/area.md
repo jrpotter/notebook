@@ -393,6 +393,22 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1732381333419-->
 END%%
 
+%%ANKI
+Basic
+Which property of area proves step regions are measurable?
+Back: Choice of scale.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1737688734612-->
+END%%
+
+%%ANKI
+Basic
+What shapes make up a step region?
+Back: Rectangles.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1737688734618-->
+END%%
+
 ### Exhaustion Property
 
 Let $Q$ be a set. If there exists exactly one $c$ such that $a(S) \leq c \leq a(T)$ for all step regions $S$ and $T$ satisfying $S \subseteq Q \subseteq T$, then $Q \in \mathscr{M}$ and $a(Q) = c$.

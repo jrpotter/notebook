@@ -872,6 +872,97 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1736781769556-->
 END%%
 
+## Equivalence
+
+Two finite automaton are **equivalent** if they recognize the same language. As it turns out, every NFA can be converted to an equivalent DFA.
+
+%%ANKI
+Basic
+What does it mean for two finite automaton to be equivalent?
+Back: They recognize the same language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1737552610488-->
+END%%
+
+%%ANKI
+Basic
+What equivalence is typically most important in the discussion of finite automata?
+Back: That between NFAs and DFAs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1737552610492-->
+END%%
+
+### Epsilon-Closure
+
+Let $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. Define the **$\epsilon$-closure** of a set of states $A \subseteq Q$ as all states reachable from any state in $A$ along zero or more $\epsilon$-transitions.
+
+More formally, define $f \colon \mathscr{P}(Q) \rightarrow \mathscr{P}(Q)$ to be given by $$f(R) = \bigcup\,\{ \delta(r, \epsilon) \mid r \in R \}.$$
+
+Then the $\epsilon$-closure of $A \subseteq Q$ using the [[functions#Top-down Approach|top-down approach]] is $$\epsilon^*(A) = \bigcap\,\{ X \mid A \subseteq X \subseteq \mathscr{P}(Q) \land f[\![X]\!] \subseteq X \}.$$
+
+Using the [[functions#Bottom-Up Approach|bottom-up approach]], $$\epsilon_*(A) = \bigcup_{n \in \mathbb{N}} h(n)$$
+where $h \colon \mathbb{N} \rightarrow \mathscr{P}(Q)$ is defined in the usual way.
+
+%%ANKI
+Basic
+In plain English, what is the $\epsilon$-closure of a set of states?
+Back: All the states reachable from this set along zero or more $\epsilon$-transitions.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1737552610495-->
+END%%
+
+%%ANKI
+Basic
+How is the $\epsilon$-closure of say $A$ usually denoted?
+Back: As $\epsilon(A)$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1737552610498-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. Define $f \colon \mathscr{P}(Q) \rightarrow \mathscr{P}(Q)$, where $f$ returns adjacent states along an $\epsilon$-transition.
+Back: $f(A) = \bigcup\, \{ \delta(a, \epsilon) \mid a \in A \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1737552610503-->
+END%%
+
+%%ANKI
+Basic
+Is the concept of $\epsilon$-closures most relevant to NFAs or DFAs?
+Back: NFAs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1737552610507-->
+END%%
+
+%%ANKI
+Basic
+*Why* are $\epsilon$-closures primarily relevant to NFAs, not DFAs?
+Back: Because DFAs do not support $\epsilon$-transitions.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1737552610512-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What is $f$'s "signature" in the following? $$\epsilon(A) = \bigcap\, \{X \mid A \subseteq X \subseteq \mathscr{P}(Q) \land f[\![X]\!] \subseteq X\}$$
+Back: $f \colon \mathscr{P}(Q) \rightarrow \mathscr{P}(Q)$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1737552610519-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. How must $f \colon \mathscr{P}(Q) \rightarrow \mathscr{P}(Q)$ be defined in the following? $$\epsilon(A) = \bigcap\, \{X \mid A \subseteq X \subseteq \mathscr{P}(Q) \land f[\![X]\!] \subseteq X\}$$
+Back: As $f(R) = \bigcup\, \{ \delta(r, \epsilon) \mid r \in R \}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1737552610525-->
+END%%
+
+### Power Set Construction
+
+TODO
+
 ## Regular Operations
 
 Let $A$ and $B$ be languages. Then the **regular operations** union, intersection, concatenation, and Kleene star are defined as:

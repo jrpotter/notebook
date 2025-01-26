@@ -425,6 +425,38 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1736893396804-->
 END%%
 
+%%ANKI
+Basic
+Let $f$ be a nonnegative function, integrable on $[a, b]$. What set corresponds to its graph?
+Back: $\{ \langle x, f(x) \rangle \mid a \leq x \leq b \}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1737688734624-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a nonnegative function, integrable on $[a, b]$. What name is given to the following set? $$\{ \langle x, f(x) \mid a \leq x \leq b \}$$
+Back: The graph of $f$ on interval $[a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1737688734628-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a nonnegative function, integrable on $[a, b]$. What is the area of its graph?
+Back: $0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1737688734632-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a nonnegative function, integrable on $[a, b]$. What strategy is used to prove the area of its graph is $0$?
+Back: Show the area of its ordinate set is the same with and without its graph.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1737688734635-->
+END%%
+
 ### Integrand Additivity
 
 Let $f$ and $g$ be integrable over $[a, b]$. Then $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$

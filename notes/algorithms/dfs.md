@@ -196,7 +196,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose vertex $v$ has discovery time $d$ and finish time $f$. When was $v$ colored white?
+Suppose vertex $v$ has discovery time $d$ and finish time $f$. When is $v$ colored white?
 Back: At timestamps $< d$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735081276199-->
@@ -204,7 +204,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose vertex $v$ has discovery time $d$ and finish time $f$. When was $v$ colored gray?
+Suppose vertex $v$ has discovery time $d$ and finish time $f$. When is $v$ colored gray?
 Back: At timestamps $\geq d$ and $< f$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735081276200-->
@@ -212,7 +212,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose vertex $v$ has discovery time $d$ and finish time $f$. When was $v$ colored black?
+Suppose vertex $v$ has discovery time $d$ and finish time $f$. When is $v$ colored black?
 Back: At timestamps $\geq f$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735081276201-->

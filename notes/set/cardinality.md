@@ -36,24 +36,24 @@ END%%
 
 %%ANKI
 Basic
-Suppose there exists a one-to-one function $F$ from $A$ into $B$. When does this imply $A \approx B$?
-Back: When $F$ is also onto $B$.
+Suppose there exists a one-to-one function $F$ from $A$ into $B$. What else is necessary for $A \approx B$?
+Back: $F$ is onto $B$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1732295060358-->
 END%%
 
 %%ANKI
 Basic
-Suppose there exists a function $F$ from $A$ onto $B$. When does this imply $A \approx B$?
-Back: When $F$ is also one-to-one.
+Suppose there exists a function $F$ from $A$ onto $B$. What else is necessary for $A \approx B$?
+Back: $F$ is one-to-one.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1732295060362-->
 END%%
 
 %%ANKI
 Basic
-Suppose there exists a one-to-one function $F$ from $A$ onto $B$. When does this imply $A \approx B$?
-Back: Always, by definition.
+Suppose there exists a one-to-one function $F$ from $A$ onto $B$. What else is necessary for $A \approx B$?
+Back: N/A. This is sufficient.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1732295060366-->
 END%%
