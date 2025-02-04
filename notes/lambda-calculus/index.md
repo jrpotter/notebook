@@ -298,7 +298,7 @@ END%%
 
 ## Length
 
-The length of a $\lambda$-term (denoted $lgh$) is equal to the number of atoms in the term:
+The **length** of a $\lambda$-term (denoted $lgh$) is equal to the number of atoms in the term:
 
 * $lgh(a) = 1$ for all atoms $a$;
 * $lgh(MN) = lgh(M) + lgh(N)$;
@@ -322,7 +322,7 @@ END%%
 
 %%ANKI
 Basic
-For atom $a$, what does $lgh(a)$ equal?
+In $\lambda$-calculus, what does $lgh(a)$ equal for some atom $a$?
 Back: $1$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716743248103-->
@@ -385,7 +385,7 @@ For $\lambda$-terms $P$ and $Q$, the relation **$P$ occurs in $Q$** is defined b
 
 %%ANKI
 Basic
-What is the base case of recursive definition "$P$ occurs in $Q$"?
+Given $\lambda$-terms $P$ and $Q$, what is the base case of recursive definition "$P$ occurs in $Q$"?
 Back: $P$ occurs in $P$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716743248115-->
@@ -393,7 +393,7 @@ END%%
 
 %%ANKI
 Basic
-What intuition does the "occurs in" relation aim to capture?
+What intuition does the "occurs in" relation of $\lambda$-calculus aim to capture?
 Back: Whether a $\lambda$-term appears somewhere in another $\lambda$-term.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716743248117-->
@@ -401,21 +401,21 @@ END%%
 
 %%ANKI
 Cloze
-If $P$ occurs in {1:$M$} or {1:$N$}, then $P$ occurs in $(MN)$.
+Given $\lambda$-terms $P$, $M$, and $N$, if $P$ occurs in {1:$M$} or {1:$N$}, then $P$ occurs in $(MN)$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716743248118-->
 END%%
 
 %%ANKI
 Cloze
-If $P$ occurs in {1:$M$} or $P$ {1:is $x$}, then $P$ occurs in $(\lambda x. M)$.
+Given $\lambda$-terms $P$ and $M$, if $P$ occurs in {1:$M$} or $P$ {1:is $x$}, then $P$ occurs in $(\lambda x. M)$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716743248120-->
 END%%
 
 %%ANKI
 Basic
-How is "occurs in" recursively defined for application?
+In $\lambda$-calculus, how is "occurs in" recursively defined for application?
 Back: $P$ occurs in $(MN)$ if $P$ occurs in $M$ or $P$ occurs in $N$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716743248122-->
@@ -423,7 +423,7 @@ END%%
 
 %%ANKI
 Basic
-How is "occurs in" recursively defined for abstraction?
+In $\lambda$-calculus, how is "occurs in" recursively defined for abstraction?
 Back: $P$ occurs in $(\lambda x. M)$ if $P$ occurs in $M$ or $P$ is $x$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716743248124-->
@@ -514,7 +514,7 @@ END%%
 
 %%ANKI
 Basic
-When is variable $x$ in term $P$ said to be "bound"?
+When is variable $x$ in $\lambda$-term $P$ said to be "bound"?
 Back: When it is in the scope of a $\lambda x$ in $P$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016009-->
@@ -522,7 +522,7 @@ END%%
 
 %%ANKI
 Basic
-When is variable $x$ in term $P$ said to be "bound and binding"?
+When is variable $x$ in $\lambda$-term $P$ said to be "bound and binding"?
 Back: If and only if it is the $x$ in some occurrence of $\lambda x$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016011-->
@@ -530,7 +530,7 @@ END%%
 
 %%ANKI
 Basic
-When is variable $x$ in term $P$ said to be "free"?
+When is variable $x$ in $\lambda$-term $P$ said to be "free"?
 Back: When it is not bound.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016012-->
@@ -538,7 +538,7 @@ END%%
 
 %%ANKI
 Basic
-When is variable $x$ in term $P$ said to be "bound" and "free"?
+When is variable $x$ in $\lambda$-term $P$ said to be "bound" and "free"?
 Back: When one occurrence is bound and another occurrence is free.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016015-->
@@ -546,7 +546,7 @@ END%%
 
 %%ANKI
 Basic
-When is variable $x$ called a "bound variable of $P$"?
+When is variable $x$ called a "bound variable of $\lambda$-term $P$"?
 Back: When $x$ has at least one binding occurrence in $P$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016017-->
@@ -554,7 +554,7 @@ END%%
 
 %%ANKI
 Basic
-When is variable $x$ called a "free variable of $P$"?
+When is variable $x$ called a "free variable of $\lambda$-term $P$"?
 Back: When $x$ has at least one free occurrence in $P$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016018-->
@@ -562,7 +562,7 @@ END%%
 
 %%ANKI
 Cloze
-{$FV(P)$} denotes the {set of all free variables} of $P$.
+{$FV(P)$} denotes the {set of all free variables} of $\lambda$-term $P$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016020-->
 END%%
@@ -661,7 +661,7 @@ END%%
 
 %%ANKI
 Basic
-How is $[N/x]M$ equivalently written in equivalence transformation?
+Given $\lambda$-terms $M$, $N$, and $x$, how is $[N/x]M$ equivalently written in equivalence transformation?
 Back: $M_N^x$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717038-->
@@ -669,7 +669,7 @@ END%%
 
 %%ANKI
 Basic
-How does substitution, say $[N/x]M$, affect free variables?
+In $\lambda$-calculus, how does substitution, say $[N/x]M$, affect free variables?
 Back: Every free occurrence of $x$ is substituted with $N$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717043-->
@@ -677,7 +677,7 @@ END%%
 
 %%ANKI
 Basic
-How does substitution, say $[N/x]M$, affect bound variables?
+In $\lambda$-calculus, how does substitution, say $[N/x]M$, affect bound variables?
 Back: Bound variables are renamed to avoid name clashes.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717048-->
@@ -685,7 +685,7 @@ END%%
 
 %%ANKI
 Cloze
-$[N/x]M$ is the result of substituting {1:$N$} for every free occurrence of {1:$x$} in {1:$M$}.
+In $\lambda$-calculus,, $[N/x]M$ is the result of substituting {1:$N$} for every free occurrence of {1:$x$} in {1:$M$}.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717251249627-->
 END%%
@@ -699,7 +699,7 @@ END%%
 
 %%ANKI
 Basic
-What is the result of $[N/x]x$?
+In $\lambda$-calculus, what is the result of $[N/x]x$?
 Back: $N$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717059-->
@@ -707,7 +707,7 @@ END%%
 
 %%ANKI
 Basic
-What is the result of $[N/x]a$, for some atom $a \not\equiv x$?
+In $\lambda$-calculus, what is the result of $[N/x]a$, for some atom $a \not\equiv x$?
 Back: $a$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717064-->
@@ -715,7 +715,7 @@ END%%
 
 %%ANKI
 Basic
-What is the result of $[N/x]a$, for some atom $a \equiv x$?
+In $\lambda$-calculus, what is the result of $[N/x]a$, for some atom $a \equiv x$?
 Back: $N$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717069-->
@@ -723,7 +723,7 @@ END%%
 
 %%ANKI
 Basic
-What is the result of $[N/x](PQ)$?
+In $\lambda$-calculus, what is the result of $[N/x](PQ)$?
 Back: $([N/x]P)([N/x]Q)$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717074-->
@@ -731,7 +731,7 @@ END%%
 
 %%ANKI
 Basic
-What is the result of $[N/x](\lambda x. P)$?
+In $\lambda$-calculus, what is the result of $[N/x](\lambda x. P)$?
 Back: $\lambda x. P$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717080-->
@@ -739,7 +739,7 @@ END%%
 
 %%ANKI
 Basic
-If $x \in FV(P)$ and $y \in FV(N)$, what is the result of $[N/x](\lambda y. P)$?
+In $\lambda$-calculus, if $x \in FV(P)$ and $y \in FV(N)$, what is the result of $[N/x](\lambda y. P)$?
 Back: $\lambda z. [N/x][z/y]P$ where $z \not\in FV(NP)$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717086-->
@@ -747,7 +747,7 @@ END%%
 
 %%ANKI
 Basic
-If $x \not\in FV(P)$ and $y \in FV(N)$, what is the result of $[N/x](\lambda y. P)$?
+In $\lambda$-calculus, if $x \not\in FV(P)$ and $y \in FV(N)$, what is the result of $[N/x](\lambda y. P)$?
 Back: $\lambda y. P$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717092-->
@@ -755,7 +755,7 @@ END%%
 
 %%ANKI
 Basic
-If $x \in FV(P)$ and $y \not\in FV(N)$, what is the result of $[N/x](\lambda y. P)$?
+In $\lambda$-calculus,, if $x \in FV(P)$ and $y \not\in FV(N)$, what is the result of $[N/x](\lambda y. P)$?
 Back: $\lambda y. [N/x]P$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717097-->
@@ -763,7 +763,7 @@ END%%
 
 %%ANKI
 Basic
-If $x \not\in FV(P)$ and $y \not\in FV(N)$, what is the result of $[N/x](\lambda y. P)$?
+In $\lambda$-calculus, if $x \not\in FV(P)$ and $y \not\in FV(N)$, what is the result of $[N/x](\lambda y. P)$?
 Back: $\lambda y. P$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717036717102-->
@@ -771,7 +771,7 @@ END%%
 
 %%ANKI
 Basic
-Is $(\lambda x. xy)N \equiv Ny$?
+In $\lambda$-calculus, is $(\lambda x. xy)N \equiv Ny$?
 Back: No.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719065185785-->
@@ -779,7 +779,7 @@ END%%
 
 %%ANKI
 Basic
-Is $[N/x]xy \equiv Ny$?
+In $\lambda$-calculus, is $[N/x]xy \equiv Ny$?
 Back: Yes.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1719065185789-->
@@ -794,7 +794,7 @@ For all $\lambda$-terms $M$, $N$, and variables $x$:
 
 %%ANKI
 Basic
-What is the result of $[x/x]M$?
+In $\lambda$-calculus, what is the result of $[x/x]M$?
 Back: $M$.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717439837468-->
@@ -802,7 +802,7 @@ END%%
 
 %%ANKI
 Basic
-If $x \not\in FV(M)$, what is the result of $[N/x]M$?
+In $\lambda$-calculus, if $x \not\in FV(M)$, what is the result of $[N/x]M$?
 Back: $M$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717439837499-->
@@ -810,7 +810,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $x \in FV(M)$. How is $FV([N/x]M)$ equivalently written without substitution?
+Suppose $\lambda$-term $x \in FV(M)$. How is $FV([N/x]M)$ equivalently written without substitution?
 Back: $FV(N) \cup (FV(M) - \{x\})$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717449967215-->
@@ -818,7 +818,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $x \in FV(M)$. How is $FV(N) \cup (FV(M) - \{x\})$ more simply written using substitution?
+Suppose $\lambda$-term $x \in FV(M)$. How is $FV(N) \cup (FV(M) - \{x\})$ more simply written using substitution?
 Back: $FV([N/x]M)$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717449967220-->
@@ -826,7 +826,7 @@ END%%
 
 %%ANKI
 Basic
-What is the result of $lgh([y/x]M)$?
+In $\lambda$-calculus, what is the result of $lgh([y/x]M)$?
 Back: $lgh(M)$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1717439837513-->

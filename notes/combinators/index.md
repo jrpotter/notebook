@@ -486,6 +486,234 @@ Reference: Smullyan, Raymond M. _To Mock a Mockingbird_. Oxford: Oxford universi
 <!--ID: 1735404184959-->
 END%%
 
+## Length
+
+The **length** of a $CL$-term (denoted $lgh$) is equal to the number of atoms in the term:
+
+* $lgh(a) = 1$
+* $lgh(MN) = lgh(M) + lgh(N)$
+
+%%ANKI
+Basic
+What is the base case of the recursive definition of the "length of a $CL$-term"?
+Back: $lgh(a) = 1$ for all atoms $a$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391544-->
+END%%
+
+%%ANKI
+Basic
+What does the length of a $CL$-term measure?
+Back: The number of atoms in the term.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391549-->
+END%%
+
+%%ANKI
+Basic
+In combinatory logic, what does $lgh(a)$ equal for some atom $a$?
+Back: $1$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391555-->
+END%%
+
+%%ANKI
+Basic
+What is the inductive case of the recursive definition of the "length of a $CL$-term"?
+Back: For $CL$-terms $M$ and $N$, $lgh(MN) = lgh(M) + lgh(N)$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391560-->
+END%%
+
+%%ANKI
+Basic
+For $CL$-terms $M$ and $N$, what does $lgh(MN)$ equal?
+Back: $lgh(M) + lgh(N)$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391563-->
+END%%
+
+%%ANKI
+Basic
+Let $X \equiv x\mathbf{K}(\mathbf{SS}xy)$. What is $lgh(X)$?
+Back: $6$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391566-->
+END%%
+
+%%ANKI
+Basic
+How is $x\mathbf{K}(\mathbf{SS}xy)$ rewritten with parentheses reintroduced?
+Back: $((x\mathbf{K})(((\mathbf{SS})x)y))$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391568-->
+END%%
+
+## Occurrence
+
+For $CL$-terms $P$ and $Q$, the relation **$P$ occurs in $Q$** is defined by induction on $Q$ as:
+
+* $P$ occurs in $P$;
+* if $P$ occurs in $M$ or in $N$, then $P$ occurs in $(MN)$;
+
+%%ANKI
+Basic
+Given $CL$-terms $P$ and $Q$, what is the base case of recursive definition "$P$ occurs in $Q$"?
+Back: $P$ occurs in $P$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391571-->
+END%%
+
+%%ANKI
+Basic
+What intuition does the "occurs in" relation of combinator logic aim to capture?
+Back: Whether a $CL$-term appears somewhere in another $CL$-term.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391574-->
+END%%
+
+%%ANKI
+Cloze
+Given $CL$-terms $P$, $M$, and $N$, if $P$ occurs in {1:$M$} or {1:$N$}, then $P$ occurs in $(MN)$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391576-->
+END%%
+
+%%ANKI
+Basic
+In combinatory logic, how is "occurs in" recursively defined for application?
+Back: $P$ occurs in $(MN)$ if $P$ occurs in $M$ or $P$ occurs in $N$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391580-->
+END%%
+
+%%ANKI
+Basic
+How many occurences of $x$ are in $x\mathbf{K}(\mathbf{SS}xy)$?
+Back: $2$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391582-->
+END%%
+
+%%ANKI
+Basic
+What preprocessing step does Hindley et al. recommend when counting occurrences of $CL$-terms?
+Back: Reintroduce parentheses.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391586-->
+END%%
+
+## Free Variables
+
+$FV(P)$ denotes all the variables of $P$. Note in $CL$-terms, *all* occurrences of variables are free because there is no $\lambda$ to bind them.
+
+%%ANKI
+Basic
+What kind of $CL$-terms can be classified as bound and/or free?
+Back: Variables.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391589-->
+END%%
+
+%%ANKI
+Basic
+When is variable $x$ in $CL$-term $P$ said to be "bound"?
+Back: N/A. Combinatory logic does not have a $\lambda$ to bind variables.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391593-->
+END%%
+
+%%ANKI
+Basic
+When is variable $x$ in $CL$-term $P$ said to be "bound and binding"?
+Back: N/A. Combinatory logic does not have a $\lambda$ to bind variables.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391597-->
+END%%
+
+%%ANKI
+Basic
+When is variable $x$ in $CL$-term $P$ said to be "free"?
+Back: Always. Every variable in combinatory logic is free.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391601-->
+END%%
+
+%%ANKI
+Basic
+When is variable $x$ in $CL$-term $P$ said to be "bound" and "free"?
+Back: N/A. Combinatory logic does not have a $\lambda$ to bind variables.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391605-->
+END%%
+
+%%ANKI
+Cloze
+{$FV(P)$} denotes the {set of all (free) variables} of $CL$-term $P$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391609-->
+END%%
+
+%%ANKI
+Basic
+Let $Y = \mathbf{K}(x\mathbf{S})((x\mathbf{S}yz)(\mathbf{I}x))$. What does $FV(Y)$ evaluate to?
+Back: $FV(Y) = \{x, y, z\}$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391613-->
+END%%
+
+## Substitution
+
+For any $M$, $N$, and $x$, define $[N/x]M$ to be the result of substituting $N$ for every occurrence of $x$ in $M$.
+
+%%ANKI
+Basic
+In combinatory logic, how does substitution, say $[N/x]M$, affect free variables?
+Back: Every (free) variable of $x$ is substituted with $N$.
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391617-->
+END%%
+
+%%ANKI
+Basic
+In combinatory logic, what does $[U/x]x$ evaluate to?
+Back: $U$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391621-->
+END%%
+
+%%ANKI
+Basic
+In combinatory logic, what does $[U/x]a$ for some atom $a \not\equiv x$ evaluate to?
+Back: $a$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391626-->
+END%%
+
+%%ANKI
+Basic
+In combinatory logic, what does $[U/x](VW)$ evaluate to?
+Back: $(([U/x]V)([U/x]W))$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391631-->
+END%%
+
+%%ANKI
+Basic
+What does $[(\mathbf{SK})/x](yxx)$ evaluate to?
+Back: $y(\mathbf{SK})(\mathbf{SK})$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391639-->
+END%%
+
+%%ANKI
+Basic
+What does $[(\mathbf{SK})/x, (\mathbf{KI}/y)](yxx)$ evaluate to?
+Back: $\mathbf{KI}(\mathbf{SK})(\mathbf{SK})$
+Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
+<!--ID: 1738627391644-->
+END%%
+
 ## Bibliography
 
 * “Combinatory Logic.” In _Wikipedia_, August 25, 2024. [https://en.wikipedia.org/w/index.php?title=Combinatory_logic](https://en.wikipedia.org/w/index.php?title=Combinatory_logic&oldid=1242193088).

@@ -190,7 +190,7 @@ END%%
 
 %%ANKI
 Basic
-Which SPARQL keyword is used to introduce transform triples into new ones?
+Which SPARQL keyword is used to transform triples into new ones?
 Back: `CONSTRUCT`
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1736348906658-->

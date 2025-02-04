@@ -1327,10 +1327,10 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 END%%
 
 %%ANKI
-Basic
+Cloze
 With respect to iterative commands, "{1:variant}" is to a {2:function} whereas "{2:invariant}" is to a {1:predicate}.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1737923385449-->
+<!--ID: 1737991560411-->
 END%%
 
 ## Bibliography
