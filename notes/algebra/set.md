@@ -1139,7 +1139,7 @@ END%%
 
 %%ANKI
 Basic
-What is the range of $\{0, 1\}^\omega$?
+What is the codomain of $\{0, 1\}^\omega$?
 Back: $\varnothing$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720783607444-->
@@ -1147,7 +1147,7 @@ END%%
 
 %%ANKI
 Basic
-What is the range of a member of $\{0, 1\}^\omega$?
+What is the codomain of a member of $\{0, 1\}^\omega$?
 Back: $\{0, 1\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720783607448-->

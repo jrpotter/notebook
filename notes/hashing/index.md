@@ -569,7 +569,7 @@ END%%
 
 %%ANKI
 Basic
-Consider universal family $\mathscr{H}$ and universe $U$. What number does the following evaluate to? $$|\{h \in \mathscr{H} \mid h(x) = h(y)\}| \text{ for distinct } x, y \in U$$
+Consider universal family $\mathscr{H}$ and universe $U$. What range of numbers does the following evaluate to? $$|\{h \in \mathscr{H} \mid h(x) = h(y)\}| \text{ for distinct } x, y \in U$$
 Back: A value between $0$ and $|\mathscr{H}|$ inclusive.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: hashing::random hashing::universal

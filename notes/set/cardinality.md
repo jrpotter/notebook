@@ -1673,6 +1673,119 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1737424465829-->
 END%%
 
+### Order-Preservation Properties
+
+For cardinal numbers $\kappa$, $\lambda$, and $\mu$,
+
+* If $\kappa \leq \lambda$, then $\kappa + \mu \leq \lambda + \mu$;
+* If $\kappa \leq \lambda$, then $\kappa \cdot \mu \leq \lambda \cdot \mu;,
+* If $\kappa \leq \lambda$, then $\kappa ^ \mu \leq \lambda ^ \mu$;
+* If $\kappa \leq \lambda$ and not both $\kappa$ and $\mu$ equal zero, then $\mu^\kappa \leq \mu^\lambda$.
+
+%%ANKI
+Basic
+What is the order-preserving property of addition on cardinal numbers?
+Back: For cardinal numbers $\kappa$, $\lambda$, and $\mu$, if $\kappa \leq \lambda$, then $\kappa + \mu \leq \lambda + \mu$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1739146532529-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. What is the following property called? $$\kappa \leq \lambda \Rightarrow \kappa + \mu \leq \lambda + \mu$$
+Back: The order-preserving property of addition.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1739146532536-->
+END%%
+
+%%ANKI
+Basic
+Let $K$, $L$, $M$ be disjoint sets and $f \colon K \rightarrow L$ be an injection. How do you most naturally construct injection $g \colon K \cup M \rightarrow L \cup M$?
+Back: As $$g(x) = \begin{cases} f(x) & \text{if } x \in K \\ x & \text{otherwise} \end{cases}$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1739146532539-->
+END%%
+
+%%ANKI
+Basic
+What is the order-preserving property of multiplication on cardinal numbers?
+Back: For cardinal numbers $\kappa$, $\lambda$, and $\mu$, if $\kappa \leq \lambda$, then $\kappa \cdot \mu \leq \lambda \cdot \mu$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1739146532543-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. What is the following property called? $$\kappa \leq \lambda \Rightarrow \kappa \cdot \mu \leq \lambda \cdot \mu$$
+Back: The order-preserving property of multiplication.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1739146532547-->
+END%%
+
+%%ANKI
+Basic
+Let $K$, $L$, $M$ be sets and $f \colon K \rightarrow L$ be an injection. How do you most naturally construct injection $g \colon K \times M \rightarrow L \times M$?
+Back: As $g(x, y) = \langle f(x), y \rangle$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1739146532550-->
+END%%
+
+%%ANKI
+Basic
+What is the order-preserving property of exponentiation on cardinal numbers?
+Back: For cardinal numbers $\kappa$, $\lambda$, and $\mu$, if $\kappa \leq \lambda$, then $\kappa ^ \mu \leq \lambda ^ \mu$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1739146532554-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. What is the following property called? $$\kappa \leq \lambda \Rightarrow \kappa ^ \mu \leq \lambda ^ \mu$$
+Back: The order-preserving property of exponentiation.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1739146532559-->
+END%%
+
+%%ANKI
+Basic
+Let $K$, $L$, $M$ be sets and $f \colon K \rightarrow L$ be an injection. How do you most naturally construct injection $g \colon {^MK} \rightarrow {^ML}$?
+Back: As $g(p) = \{ \langle u, f(v) \rangle \mid \langle u, v \rangle \in p \}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1739146532563-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. Does $\mu^\kappa \leq \mu^\lambda$ hold true?
+Back: Not necessarily.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1739146532569-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. Under what condition does $\mu^\kappa \leq \mu^\lambda$ hold true?
+Back: When either $\mu \neq 0$ or $\kappa \neq 0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1739146532574-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. Under what condition does $\mu^\kappa \leq \mu^\lambda$ *not* hold true?
+Back: When $\kappa = 0$, $\mu = 0$, and $\lambda \neq 0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1739146532579-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers such that $\kappa = \mu = 0$. When does $\mu^\kappa \leq \mu^\lambda$ hold true?
+Back: If and only if $\lambda = 0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1739146532585-->
+END%%
+
 ## Hilbert's Hotel
 
 Consider a hypothetical hotel with rooms numbered $1$, $2$, $3$, and so on with no upper limit. That is, there is a countably infinite number of rooms in this hotel. Furthermore, it's assumed every room is occupied.

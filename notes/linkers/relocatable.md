@@ -10,7 +10,7 @@ tags:
 
 **Relocatable object files** are those, typically ending with a `.o` suffix, produced by the assembler. They contain binary code and data in a form that can be combined with other relocatable object files at compile time. The following diagram shows how one looks like when formatted using [[elf|ELF]]:
 
-![[elf.png]]
+![[relocatable-elf.png]]
 
 %%ANKI
 Basic
@@ -33,7 +33,7 @@ END%%
 %%ANKI
 Basic
 A relocatable object file is typically broken up into what three regions?
-Back: The header, sections, and the section header table.
+Back: The ELF header, sections, and the section header table.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: linker::elf
 <!--ID: 1734456879220-->
@@ -41,7 +41,7 @@ END%%
 
 %%ANKI
 Basic
-In a relocatable object file, what exists between the header and section header table?
+In a relocatable object file, what exists between the ELF header and section header table?
 Back: The sections.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: linker::elf
@@ -50,7 +50,7 @@ END%%
 
 %%ANKI
 Cloze
-A relocatable object file consists of a {header}, {sections}, and a {section header table}, in that order.
+A relocatable object file consists of an {ELF header}, {sections}, and a {section header table}, in that order.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: linker::elf
 <!--ID: 1734456879322-->
@@ -617,10 +617,10 @@ END%%
 
 %%ANKI
 Basic
-Let `p.o` depends on `libx.a`. What minimal command lets `cc` resolve all symbol references?
+Let `p.c` depends on `libx.a`. What minimal command lets `cc` resolve all symbol references?
 Back:
 ```bash
-$ cc p.o -lx
+$ cc p.c -lx
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1736632025920-->
@@ -628,10 +628,10 @@ END%%
 
 %%ANKI
 Basic
-Let `p.o` depends on `liby.a` which depends on `libx.a` . What minimal command lets `cc` resolve all symbol references?
+Let `p.c` depends on `liby.a` which depends on `libx.a` . What minimal command lets `cc` resolve all symbol references?
 Back:
 ```bash
-$ cc p.o -ly -lx
+$ cc p.c -ly -lx
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1736632025924-->

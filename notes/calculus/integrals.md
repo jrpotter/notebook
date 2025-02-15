@@ -371,8 +371,8 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be a function defined and bounded on $[a, b]$. How do we know the following set is nonempty? $$\left\{ \int_a^b t(x) \, dx \mid s \text{ is a step function below } f \right\}$$
-Back: It's nonempty because $f$ is bounded.
+Let $f$ be a function defined and bounded on $[a, b]$. How do we know the following set is nonempty? $$\left\{ \int_a^b s(x) \, dx \mid s \text{ is a step function below } f \right\}$$
+Back: Because $f$ is bounded.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1736893396770-->
 END%%
@@ -396,7 +396,7 @@ END%%
 %%ANKI
 Basic
 Let $f$ be a function defined and bounded on $[a, b]$. How do we know the following set is nonempty? $$\left\{ \int_a^b t(x) \, dx \mid t \text{ is a step function above } f \right\}$$
-Back: It's nonempty because $f$ is bounded.
+Back: Because $f$ is bounded.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1736893396788-->
 END%%

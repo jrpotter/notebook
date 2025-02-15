@@ -865,6 +865,8 @@ int sum2d(int  , int  , int (*a)[*]);
 int sum2d(int  , int m, int (*a)[m]);
 ```
 
+The primary distinction is that an array type with `[]` is incomplete. An array type with `[*]` is a VLA type with an unspecified size but is nontheless considered complete.
+
 %%ANKI
 Basic
 In what context are VLAs declared with `[*]` actually useful?
@@ -896,6 +898,44 @@ int sum2d(int, int, int a[*][*]);
 Back: Array decay.
 Reference: https://stackoverflow.com/a/17371914
 <!--ID: 1733144155076-->
+END%%
+
+%%ANKI
+Basic
+Consider the following type. Is it complete or incomplete?
+```c
+int[]
+```
+Back: Incomplete.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472073-->
+END%%
+
+%%ANKI
+Basic
+Consider the following type. Is it complete or incomplete?
+```c
+int[*]
+```
+Back: Complete.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472076-->
+END%%
+
+%%ANKI
+Basic
+In what way is `[*]` for arrays and `()` for function declarations similar?
+Back: They indicate an unspecified size (a concept distinct from a variable or unknown size).
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472079-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes `int[]` and `int[*]` from one another?
+Back: The former is an incomplete array type. The latter is a complete VLA type.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472083-->
 END%%
 
 ## Precedence Rules

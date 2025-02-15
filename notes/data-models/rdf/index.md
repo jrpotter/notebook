@@ -192,7 +192,7 @@ END%%
 
 %%ANKI
 Basic
-What does the federated graph refer to?
+What does a federated graph refer to?
 Back: The graph produced by combining various federated data sources.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 Tags: data_model::federation

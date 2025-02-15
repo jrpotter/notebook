@@ -265,14 +265,6 @@ END%%
 
 %%ANKI
 Basic
-Which `printf` flag can be used to ensure decimal points in the output of floating-point types?
-Back: `#`
-Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
-<!--ID: 1710673807981-->
-END%%
-
-%%ANKI
-Basic
 How is `%#o` different from `%o`?
 Back: The former prepends a `0` to the output.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).

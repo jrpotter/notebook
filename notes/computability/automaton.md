@@ -805,7 +805,7 @@ END%%
 
 %%ANKI
 Basic
-Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted NFA. What does $\mathop{\text{ran}}\delta$ evaluate to?
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the depicted NFA. What does the codomain of $\delta$ evaluate to?
 ![[nfa-example.png]]
 Back: $\mathscr{P}(\{q_1, q_2, q_3\})$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).

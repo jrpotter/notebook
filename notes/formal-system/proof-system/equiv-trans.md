@@ -154,7 +154,7 @@ For propositions $E1$, $E2$, and $E3$:
 %%ANKI
 Basic
 Which of the basic logical operators do the associative laws apply to?
-Back: $\land$ and $\lor$
+Back: $\land$, $\lor$, and $=$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707251673354-->
 END%%

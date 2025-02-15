@@ -261,8 +261,8 @@ Array types are compatible if the element types are compatible and the sizes (wh
 Basic
 How compatible are the following and why?
 ```c
-int x[5];
-int x[5];
+int[5];
+int[5];
 ```
 Back: Fully compatible. They are identical declarations.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -273,8 +273,8 @@ END%%
 Basic
 How compatible are the following and why?
 ```c
-int x[5];
-int x[];
+int[5];
+int[];
 ```
 Back: Fully compatible. Only one array size need be declared.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -285,8 +285,8 @@ END%%
 Basic
 How compatible are the following and why?
 ```c
-int x[];
-int x[];
+int[];
+int[];
 ```
 Back: Fully compatible. They are identical declarations.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -297,8 +297,8 @@ END%%
 Basic
 How compatible are the following and why?
 ```c
-int x[4];
-int x[5];
+int[4];
+int[5];
 ```
 Back: Incompatible. Their sizes do not match.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -309,24 +309,116 @@ END%%
 Basic
 How compatible are the following and why?
 ```c
-volatile int x[5];
-const int x[5];
+volatile int[5];
+const int[5];
 ```
 Back: Nearly compatible. They are identical if disregarding type qualifiers.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1738625713874-->
 END%%
 
+If both types in question are array types, determining the composite type follows these rules:
+
+* If one type is an array of known constant size, the composite type is an array of that size.
+* Otherwise, if one type is a VLA whose size is specified by an expression that isn't evaluated, the behavior is undefined.
+* Otherwise, if one type is a VLA whose size is specified, the composite type is a VLA of that size.
+* Otherwise, if one type is a VLA of [[c17/declarations#Variable-Length Arrays|unspecified size]], the composite type is a VLA of unspecified size.
+* Otherwise, both types are arrays of unknown size and the composite type is an array of unknown size.
+
 %%ANKI
 Basic
-How compatible are the following and why?
+Consider the following array types. What is their composite type?
 ```c
-int x[5];
-int y[5];
+int[5];
+int[5];
 ```
-Back: Fully compatible. Identifiers are not considered for array type compatibility.
+Back: `int[5]`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1738625713878-->
+<!--ID: 1738852148669-->
+END%%
+
+%%ANKI
+Basic
+Consider the following array types. What is their composite type?
+```c
+int[*];
+int[5];
+```
+Back: `int[5]`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738852148674-->
+END%%
+
+%%ANKI
+Basic
+Consider the following array types. What is their composite type?
+```c
+int[*];
+int[*];
+```
+Back: `int[*]`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472049-->
+END%%
+
+%%ANKI
+Basic
+Consider the following array types. What is their composite type?
+```c
+int[n]; // VLA of size `n`
+int[*];
+```
+Back: `int[n]`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472053-->
+END%%
+
+%%ANKI
+Basic
+Consider the following array types. What is their composite type?
+```c
+int[];
+int[*];
+```
+Back: `int[*]`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472056-->
+END%%
+
+%%ANKI
+Basic
+Consider the following array types. What is their composite type?
+```c
+int[];
+int[];
+```
+Back: `int[]`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472060-->
+END%%
+
+%%ANKI
+Basic
+What type corresponds to an "array of ints of unknown size"?
+Back: `int[]`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472063-->
+END%%
+
+%%ANKI
+Basic
+What type corresponds to an "array of ints of unspecified size"?
+Back: `int[*]`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472067-->
+END%%
+
+%%ANKI
+Basic
+What is the element type of a composite array type?
+Back: The composite type of the two element types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738854058421-->
 END%%
 
 #### Structures
@@ -633,8 +725,8 @@ Function types that specify the argument types are compatible with function type
 Basic
 How compatible are the following and why?
 ```c
-void foo(int a, int b);
-void foo(int a, int b);
+void (*)(int a, int b);
+void (*)(int a, int b);
 ```
 Back: Fully compatible. They are identical declarations.
 Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
@@ -645,20 +737,8 @@ END%%
 Basic
 How compatible are the following and why?
 ```c
-void foo(int a, int b);
-void bar(int a, int b);
-```
-Back: Fully compatible. Identifiers are not considered for function type compatibility.
-Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
-<!--ID: 1738625713885-->
-END%%
-
-%%ANKI
-Basic
-How compatible are the following and why?
-```c
-void foo(char a, int b);
-void foo(int a, char b);
+void (*)(char a, int b);
+void (*)(int a, char b);
 ```
 Back: Incompatible. The arguments are not compatible.
 Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
@@ -669,8 +749,8 @@ END%%
 Basic
 How compatible are the following and why?
 ```c
-void foo();
-void foo(int a, int b);
+void (*)();
+void (*)(int a, int b);
 ```
 Back: Fully compatible. Functions with argument types are compatible with those without them if default promotion rules align.
 Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
@@ -681,8 +761,8 @@ END%%
 Basic
 How compatible are the following and why?
 ```c
-void foo();
-void foo(int a, char b);
+void (*)();
+void (*)(int a, char b);
 ```
 Back: Incompatible. `char` can never match because of default promotion rules.
 Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
@@ -693,8 +773,8 @@ END%%
 Basic
 How compatible are the following and why?
 ```c
-int foo(int a);
-int* foo(int a);
+int (*)(int a);
+int* (*)(int a);
 ```
 Back: Incompatible. The return types are incompatible.
 Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
@@ -705,8 +785,8 @@ END%%
 Basic
 How compatible are the following and why?
 ```c
-int foo(int a);
-int foo(int b);
+int (*)(int a);
+int (*)(int b);
 ```
 Back: Fully compatible. Argument identifiers are not considered for function type compatibility.
 Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
@@ -717,28 +797,437 @@ END%%
 Basic
 How compatible are the following and why?
 ```c
-const int foo(int a);
-int foo(int a);
+const int (*)(int a);
+int (*)(int a);
 ```
 Back: Nearly compatible. They types would be fully compatible if ignoring type qualifiers.
 Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
 <!--ID: 1738625713911-->
 END%%
 
-
 %%ANKI
 Basic
 How compatible are the following and why?
 ```c
-int foo(int a, ...);
-int foo(int a);
+int (*)(int a, ...);
+int (*)(int a);
 ```
 Back: Incompatible. If one type specifies `...`, both must to be compatible.
 Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
 <!--ID: 1738625713915-->
 END%%
 
+If both types in question are function types, determining the composite type follows these rules:
+
+* If only one type is a function type with a [[c17/declarations#Prototypes|parameter type list]], the composite type is a function type with the parameter type list.
+* If both types are function types with parameter type lists, the type of each parameter in the composite parameter type list is the composite type of the corresponding parameters.
+
+%%ANKI
+Basic
+Consider the following function types. What is their composite type?
+```c
+int (*)();
+int (*)(int, int);
+```
+Back: `int (*)(int, int)`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738854058426-->
+END%%
+
+%%ANKI
+Basic
+Consider the following function types. What is their composite type?
+```c
+int (*)();
+int (*)();
+```
+Back: `int (*)()`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738854058429-->
+END%%
+
+%%ANKI
+Basic
+Consider two function types with parameter type lists. What is their composite type?
+Back: A function type with parameter type list containing the pairwise composite types of the parameters.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738854058432-->
+END%%
+
+%%ANKI
+Basic
+Consider two function types with identifier type lists. What is their composite type?
+Back: A function type with an identifier type list.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738854058435-->
+END%%
+
+## Effective Types
+
+The **effective type** of an object for an access to its stored value is the declared type of the object, if any.
+
+%%ANKI
+Basic
+The notion of an effective type is applicable to what?
+Back: Any C object.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739143899462-->
+END%%
+
+%%ANKI
+Basic
+What is the effective type for the following object?
+```c
+int x = 1;
+```
+Back: `int`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739143899465-->
+END%%
+
+%%ANKI
+Basic
+What is the effective type for the following object?
+```c
+unsigned char *x;
+```
+Back: `unsigned char *`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739143899468-->
+END%%
+
+%%ANKI
+Basic
+What is the effective type for the following object?
+```c
+struct t u;
+```
+Back: `struct t`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739143899471-->
+END%%
+
+%%ANKI
+Basic
+What is the effective type for the following object?
+```c
+(long long){ 0 };
+```
+Back: `long long`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739143899481-->
+END%%
+
+%%ANKI
+Basic
+What is the effective type for the following object?
+```c
+malloc(sizeof(double));
+```
+Back: N/A. The allocated object has no effective type yet.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739143899486-->
+END%%
+
+%%ANKI
+Basic
+In what situation does an object exist without an effective type?
+Back: When dynamically allocating an object using e.g. `malloc`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739143899490-->
+END%%
+
+%%ANKI
+Basic
+What kind of objects have no declared type?
+Back: Allocated objects.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739143899494-->
+END%%
+
+If a value is stored into an object having no declared type through an lvalue having a type that is not a character type, then the type of the lvalue becomes the effective type of the object for that access and for subsequent accesses that do not modify the stored value.
+
+%%ANKI
+Basic
+In the context of effective types, what types are exceptions?
+Back: Character types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739143899498-->
+END%%
+
+%%ANKI
+Basic
+After running the following, what is the effective type of `vec[0]`?
+```c
+#define N 10
+
+double* vec = malloc(sizeof(double[N]]));
+```
+Back: N/A. `vec[0]` does not yet have an effective type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1739143899506-->
+END%%
+
+%%ANKI
+Basic
+After running the following, what is the effective type of `vec[0]`?
+```c
+#define N 10
+
+double* vec = malloc(sizeof(double[N]]));
+vec[0] = 0.0;
+```
+Back: `double`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1739143899510-->
+END%%
+
+%%ANKI
+Basic
+After running the following, what is the effective type of `vec[0]`?
+```c
+#define N 10
+
+char* vec = malloc(sizeof(char[N]]));
+vec[0] = 0;
+```
+Back: N/A. Even after assignment, `vec[0]` does not have an effective type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1739143899514-->
+END%%
+
+%%ANKI
+Basic
+After running the following, what is the effective type of access `vec[1]`?
+```c
+#define N 10
+
+double* vec = malloc(sizeof(double[N]]));
+vec[0] = 0.0;
+```
+Back: N/A. `vec[1]` does not yet have an effective type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1739143899519-->
+END%%
+
+If a value is copied into an object having no declared type using [[c17/strings/index#Copying Functions|memcpy or memmove]], or is copied as an array of character type, then the effective type of the modified object for that access and for subsequent accesses that do not modify the value is the effective type of the object from which the value is copied, if it has one.
+
+%%ANKI
+Basic
+What C standard functions are special in the context of effective types?
+Back: `memcpy` and `memmove`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1739143899525-->
+END%%
+
+%%ANKI
+Basic
+After running the following, what is the effective type of `vec[0]`?
+```c
+double src = 0.0;
+double* vec = malloc(sizeof(double[N]]));
+memcpy(vec, src, sizeof(double));
+```
+Back: `double`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1739143899531-->
+END%%
+
+%%ANKI
+Basic
+After running the following, what is the effective type of access `vec[1]`?
+```c
+double src = 0.0;
+double* vec = malloc(sizeof(double[N]]));
+memcpy(vec, src, sizeof(double));
+```
+Back: N/A. `vec[1]` does not yet have an effective type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1739143899537-->
+END%%
+
+%%ANKI
+Basic
+After running the following, what is the effective type of access `vec[0]`?
+```c
+long long src = 0;
+double* vec = malloc(sizeof(double[N]]));
+memcpy(vec, src, sizeof(double));
+```
+Back: `long long`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1739143899544-->
+END%%
+
+For all other accesses to an object having no declared type, the effective type of the object is simply the type of the lvalue used for the access.
+
+%%ANKI
+Basic
+What is the effective type of `vec[0]` on line 2?
+```c
+double* vec = malloc(sizeof(double[N]]));
+vec[0];
+```
+Back: `double`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1739143899550-->
+END%%
+
+%%ANKI
+Basic
+What is the effective type of `vec[0]` on line 2?
+```c
+double* vec = malloc(sizeof(long long)));
+vec[0];
+```
+Back: `double`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1739143899556-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the effective type of `vec[0]` on line 2 `long long`?
+```c
+double* vec = malloc(sizeof(long long)));
+vec[0];
+```
+Back: N/A. It isn't.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1739143899562-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the effective type of `vec[0]` on line 2 `double`?
+```c
+double* vec = malloc(sizeof(long long)));
+vec[0];
+```
+Back: Because no assignment was made, the effective type defaults to that of the `lvalue`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1739143899568-->
+END%%
+
+%%ANKI
+Basic
+When might an object's effective type change?
+Back: After a reassignment.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1739143899577-->
+END%%
+
+### Access
+
+An object shall have its stored value accessed only by an lvalue expression with one of the following types:
+
+1. A type nearly compatible with the effective type of the object;
+2. A type that is the signed or unsigned type corresponding to the effective type of the object;
+3. A type that is the signed or unsigned type corresponding to a qualified version of the effective type of the object;
+4. An aggregate or union type that includes one of the aforementioned types among its members;
+5. A character type.
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+int x = 42;
+const int *p = &x;
+```
+Back: Yes. `const int` is nearly compatible with `int`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724511-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+unsigned int x = 42;
+int *p = (int *)&x;
+```
+Back: Yes. Effective type `unsigned int` can be accessed by an `int`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724516-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+unsigned int x = 42;
+float *p = (float *)&x;
+```
+Back: No. Effective type `unsigned int` is incompatible with `float`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724519-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+unsigned int x = 42;
+float *q = (float *)&x;
+unsigned int *p = (unsigned int *)q;
+```
+Back: Yes. Only *accesses* are considered w.r.t. well-definedness of effective types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724522-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+int x = 42;
+unsigned int *p = (unsigned int *)&x;
+```
+Back: Yes. Effective type `int` can be accessed by an `unsigned int`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724525-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+int x = 42;
+char *p = (char *)&x;
+```
+Back: Yes. Effective type `int` can be accessed by any character type.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724528-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+struct x { int y; };
+struct x tmp = { .y = 0 };
+float *p = (float *)tmp;
+```
+Back: No. Effective type `int` cannot be accessed by a `float`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724532-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+struct x { int y; };
+struct x tmp = { .y = 0 };
+signed const *p = (signed const *)&tmp;
+```
+Back: Yes. Effective type `int` is nearly compatible with `signed const`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724536-->
+END%%
+
 ## Bibliography
 
 * “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+* Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
