@@ -713,6 +713,203 @@ Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 
 <!--ID: 1737544419671-->
 END%%
 
+If two types are nearly compatible, and the first type has all the qualifiers of the second type, we say the first is **upward compatible** with the second. Only two forms of implicit conversions are permitted for data pointers:
+
+1. Assignments to and from `void*`, and
+2. Assignments where the assigned pointer's target type is upward compatible with the right operand.
+	1. That is, assignments add a qualifier to the target type.
+
+%%ANKI
+Basic
+What does it mean for a type to be upward compatible with another?
+Back: The types are nearly compatible and the first type has all the qualifiers of the second.
+Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
+<!--ID: 1740106368877-->
+END%%
+
+%%ANKI
+Basic
+Is `int *` upward compatible with `int *`?
+Back: Yes.
+Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
+<!--ID: 1740106368879-->
+END%%
+
+%%ANKI
+Basic
+Is `const int *` upward compatible with `int *`?
+Back: Yes.
+Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
+<!--ID: 1740106368880-->
+END%%
+
+%%ANKI
+Basic
+Is `int *` upward compatible with `const int *`?
+Back: No.
+Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
+<!--ID: 1740106368881-->
+END%%
+
+%%ANKI
+Basic
+Is `const volatile int *` upward compatible with `const int *`?
+Back: Yes.
+Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
+<!--ID: 1740106368882-->
+END%%
+
+%%ANKI
+Basic
+Is `const volatile int *` upward compatible with `volatile int *`?
+Back: Yes.
+Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
+<!--ID: 1740106368883-->
+END%%
+
+%%ANKI
+Basic
+Is `int *` upward compatible with `const volatile int *`?
+Back: No.
+Reference: “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
+<!--ID: 1740106368884-->
+END%%
+
+%%ANKI
+Basic
+What does Gustedt describe as the easiest way to protect variables from aliasing?
+Back: Avoid the `&` operator.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1740106368885-->
+END%%
+
+%%ANKI
+Basic
+What implicit conversion to a different target type is permitted for data pointers?
+Back: Those to and from `void*`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1740106368886-->
+END%%
+
+%%ANKI
+Basic
+What implicit conversion to the same target type is permitted for data pointers?
+Back: Those that add a qualifier to the target type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1740106368887-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't the pointer assignment well-defined in the following?
+```c
+int a = 0;
+int *b = &a;
+```
+Back: N/A. It is.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1740106368888-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't the pointer assignment well-defined in the following?
+```c
+int a = 0;
+void *b = &a;
+```
+Back: N/A. It is.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1740106368889-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't the pointer assignment well-defined in the following?
+```c
+int a = 0;
+void *b = &a;
+double *c = b;
+```
+Back: Because `double *` is not upward compatible with `int *`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1740106368890-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't the pointer assignment well-defined in the following?
+```c
+int a = 0;
+void *b = &a;
+unsigned int *c = b;
+```
+Back: Because `unsigned int *` isn't upward compatible with `int *`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1740106368891-->
+END%%
+
+%%ANKI
+Basic
+*Why* doesn't the following raise a compilation error?
+```c
+int a = 0;
+void *b = &a;
+unsigned int *c = b;
+```
+Back: Implicit conversions to and from `void *` are allowed.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1740106368892-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't the pointer assignment well-defined in the following?
+```c
+int a = 0;
+const int *b = &a;
+```
+Back: N/A. It is.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1740106368893-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't the pointer assignment well-defined in the following?
+```c
+const int a = 0;
+int *b = &a;
+```
+Back: `int *` isn't upward compatible with `const int *`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1740106368894-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't the pointer assignment well-defined in the following?
+```c
+float a = 0;
+double *b = &a;
+```
+Back: `double *` isn't upward compatible with `float *`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1740106368895-->
+END%%
+
+%%ANKI
+Basic
+*Why* doesn't the following raise a compilation error?
+```c
+float a = 0;
+double *b = &a;
+```
+Back: N/A. It does.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1740106368896-->
+END%%
+
 ### Functions
 
 Function types that specify argument types are compatible if the return types are compatible and the argument types are compatible, argument by argument. In addition, they must all agree in whether they use `...` to allow additional arguments.
@@ -1117,7 +1314,7 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1739143899577-->
 END%%
 
-### Access
+### Aliasing
 
 An object shall have its stored value accessed only by an lvalue expression with one of the following types:
 
@@ -1146,7 +1343,7 @@ Consider the following. Is dereferencing `p` well-defined and why?
 unsigned int x = 42;
 int *p = (int *)&x;
 ```
-Back: Yes. Effective type `unsigned int` can be accessed by an `int`.
+Back: No. `int *` is not upward compatible with `unsigned int *`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1739372724516-->
 END%%
@@ -1183,7 +1380,7 @@ Consider the following. Is dereferencing `p` well-defined and why?
 int x = 42;
 unsigned int *p = (unsigned int *)&x;
 ```
-Back: Yes. Effective type `int` can be accessed by an `unsigned int`.
+Back: No. `unsigned int *` is not upward compatible with `int *`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1739372724525-->
 END%%
@@ -1221,9 +1418,67 @@ struct x { int y; };
 struct x tmp = { .y = 0 };
 signed const *p = (signed const *)&tmp;
 ```
-Back: Yes. Effective type `int` is nearly compatible with `signed const`.
+Back: Yes. `signed const *` is upward compatible with `int`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1739372724536-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is undefined behavior invoked and why?
+```c
+int foo(signed x, unsigned y);
+
+int main(void) {
+  signed x = 1;
+  signed y = 2;
+  return foo(x, y);
+}
+```
+Back: No. `signed` objects can be accessed through `unsigned` objects.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1740107515257-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is undefined behavior invoked and why?
+```c
+int foo(signed x, float y);
+
+int main(void) {
+  signed x = 1;
+  signed y = 2;
+  return foo(x, y);
+}
+```
+Back: Yes. A `signed` type cannot be accessed using a `float` type.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1740107515259-->
+END%%
+
+%%ANKI
+Basic
+*Must* an object be accessed through a compatible type?
+Back: Not necessarily.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1740106368897-->
+END%%
+
+%%ANKI
+Basic
+When can an object with simple type be accessed using an lvalue with non-compatible type?
+Back: Integer types can be accessed by an lvalue with different signedness.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1740106368898-->
+END%%
+
+%%ANKI
+Basic
+What non-simple types allow access to objects using lvalues with non-compatible types?
+Back: Aggregate types and unions.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1740106368899-->
 END%%
 
 ## Bibliography
