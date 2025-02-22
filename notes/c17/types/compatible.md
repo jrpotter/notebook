@@ -526,7 +526,7 @@ Basic
 Assuming they are defined in different TUs, how compatible are the following and why?
 ```c
 struct x { int a; };
-struct y { int b; };
+struct y { int a; };
 ```
 Back: Incompatible. Tags `x` and `y` do not match.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -831,20 +831,33 @@ int a = 0;
 void *b = &a;
 double *c = b;
 ```
-Back: Because `double *` is not upward compatible with `int *`.
+Back: N/A. The assignment is well-defined even if access wouldn't be.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1740106368890-->
 END%%
 
 %%ANKI
 Basic
-*Why* isn't the pointer assignment well-defined in the following?
+*Why* would dereferencing `c` yield undefined behavior in the following?
+```c
+int a = 0;
+void *b = &a;
+double *c = b;
+```
+Back: Because `double` is not compatible with `int`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1740184006487-->
+END%%
+
+%%ANKI
+Basic
+*Why* would dereferencing `c` yield undefined behavior in the following?
 ```c
 int a = 0;
 void *b = &a;
 unsigned int *c = b;
 ```
-Back: Because `unsigned int *` isn't upward compatible with `int *`.
+Back: N/A. Access to a `signed int` can be done through an `unsigned int`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1740106368891-->
 END%%
@@ -864,38 +877,26 @@ END%%
 
 %%ANKI
 Basic
-*Why* isn't the pointer assignment well-defined in the following?
+*Why* doesn't the following raise a compilation error?
 ```c
 int a = 0;
 const int *b = &a;
 ```
-Back: N/A. It is.
+Back: Because `const int *` is upward compatible with `int *`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1740106368893-->
 END%%
 
 %%ANKI
 Basic
-*Why* isn't the pointer assignment well-defined in the following?
+*Why* doesn't the following raise a compilation error?
 ```c
 const int a = 0;
 int *b = &a;
 ```
-Back: `int *` isn't upward compatible with `const int *`.
+Back: N/A. It will since `int *` isn't upward compatible with `const int *`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1740106368894-->
-END%%
-
-%%ANKI
-Basic
-*Why* isn't the pointer assignment well-defined in the following?
-```c
-float a = 0;
-double *b = &a;
-```
-Back: `double *` isn't upward compatible with `float *`.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1740106368895-->
 END%%
 
 %%ANKI
@@ -905,9 +906,9 @@ Basic
 float a = 0;
 double *b = &a;
 ```
-Back: N/A. It does.
+Back: N/A. It will since `double *` isn't upward compatible with `float *`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1740106368896-->
+<!--ID: 1740106368895-->
 END%%
 
 ### Functions
@@ -1063,6 +1064,12 @@ END%%
 
 The **effective type** of an object for an access to its stored value is the declared type of the object, if any.
 
+If a value is stored into an object having no declared type through an lvalue having a type that is not a character type, then the type of the lvalue becomes the effective type of the object for that access and for subsequent accesses that do not modify the stored value.
+
+If a value is copied into an object having no declared type using [[c17/strings/index#Copying Functions|memcpy or memmove]], or is copied as an array of character type, then the effective type of the modified object for that access and for subsequent accesses that do not modify the value is the effective type of the object from which the value is copied, if it has one.
+
+For all other accesses to an object having no declared type, the effective type of the object is simply the type of the lvalue used for the access.
+
 %%ANKI
 Basic
 The notion of an effective type is applicable to what?
@@ -1142,16 +1149,6 @@ Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open
 <!--ID: 1739143899494-->
 END%%
 
-If a value is stored into an object having no declared type through an lvalue having a type that is not a character type, then the type of the lvalue becomes the effective type of the object for that access and for subsequent accesses that do not modify the stored value.
-
-%%ANKI
-Basic
-In the context of effective types, what types are exceptions?
-Back: Character types.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1739143899498-->
-END%%
-
 %%ANKI
 Basic
 After running the following, what is the effective type of `vec[0]`?
@@ -1207,8 +1204,6 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1739143899519-->
 END%%
 
-If a value is copied into an object having no declared type using [[c17/strings/index#Copying Functions|memcpy or memmove]], or is copied as an array of character type, then the effective type of the modified object for that access and for subsequent accesses that do not modify the value is the effective type of the object from which the value is copied, if it has one.
-
 %%ANKI
 Basic
 What C standard functions are special in the context of effective types?
@@ -1255,8 +1250,6 @@ Back: `long long`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1739143899544-->
 END%%
-
-For all other accesses to an object having no declared type, the effective type of the object is simply the type of the lvalue used for the access.
 
 %%ANKI
 Basic
@@ -1309,9 +1302,63 @@ END%%
 %%ANKI
 Basic
 When might an object's effective type change?
-Back: After a reassignment.
+Back: After a reassignment, `memcpy`, or `memmove`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1739143899577-->
+END%%
+
+%%ANKI
+Basic
+Objects with what storage duration have effective types determined specially?
+Back: Allocated.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444604-->
+END%%
+
+%%ANKI
+Basic
+Objects with what storage duration have effective types that can change?
+Back: Allocated.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444635-->
+END%%
+
+%%ANKI
+Basic
+Objects with what storage duration have effective types that remain fixed?
+Back: Static, thread local, and automatic.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444641-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following invoke undefined behavior?
+```c
+bool is_negative(float f) {
+  unsigned *i = malloc(sizeof(f));
+  memcpy(i, &f, sizeof(f));
+  return (0x800000000 & *i) != 0;
+}
+```
+Back: `*i` has effective type `float` but is accessed as an `unsigned`.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444647-->
+END%%
+
+%%ANKI
+Basic
+What is the effective type of `*i`?
+```c
+bool is_negative(float f) {
+  unsigned *i = malloc(sizeof(f));
+  memcpy(i, &f, sizeof(f));
+  return (0x800000000 & *i) != 0;
+}
+```
+Back: `float`
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444653-->
 END%%
 
 ### Aliasing
@@ -1343,7 +1390,7 @@ Consider the following. Is dereferencing `p` well-defined and why?
 unsigned int x = 42;
 int *p = (int *)&x;
 ```
-Back: No. `int *` is not upward compatible with `unsigned int *`.
+Back: Yes. Signedness makes no difference to well-definedness of effective types.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1739372724516-->
 END%%
@@ -1380,7 +1427,7 @@ Consider the following. Is dereferencing `p` well-defined and why?
 int x = 42;
 unsigned int *p = (unsigned int *)&x;
 ```
-Back: No. `unsigned int *` is not upward compatible with `int *`.
+Back: Yes. Signedness makes no difference to well-definedness of effective types.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1739372724525-->
 END%%
@@ -1395,6 +1442,18 @@ char *p = (char *)&x;
 Back: Yes. Effective type `int` can be accessed by any character type.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1739372724528-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+int x = 42;
+unsigned char *p = (unsigned char *)&x;
+```
+Back: Yes. Effective type `int` can be accessed by any character type.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1740137590547-->
 END%%
 
 %%ANKI
@@ -1481,8 +1540,101 @@ Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open
 <!--ID: 1740106368899-->
 END%%
 
+### Strict Aliasing Rule
+
+The strict aliasing rule dictates that pointers are assumed not to alias if they point to fundamentally different types, except for character pointer types and `void *`.
+
+%%ANKI
+Basic
+What does the strict aliasing rule dictate?
+Back: Pointers are assumed not to alias if they point to fundamentally different types.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444659-->
+END%%
+
+%%ANKI
+Basic
+What two pointer types are exceptions to the strict aliasing rule?
+Back: Character pointer types and `void *`.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444664-->
+END%%
+
+%%ANKI
+Basic
+Suppose strict aliasing is *not* enabled. What value does `n` hold?
+```c
+void foo(int *x, short *y) {
+  *x = 40;
+  *y = 0;
+  *x += 2;
+}
+
+int n = 0;
+foo(&n, (short *) &n);
+```
+Back: `2`
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444670-->
+END%%
+
+%%ANKI
+Basic
+Suppose strict aliasing is enabled. What value does `n` hold?
+```c
+void foo(int *x, short *y) {
+  *x = 40;
+  *y = 0;
+  *x += 2;
+}
+
+int n = 0;
+foo(&n, (short *) &n);
+```
+Back: `42`
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444676-->
+END%%
+
+### Type Punning
+
+**Type punning** refers to any strategy used to circumvent the type system of a programming language. In C, there are three primary strategies: unions, `memcpy`/`memove`, and character pointer types.
+
+%%ANKI
+Basic
+What is type punning?
+Back: Any strategy used to circumvent the type system of a programming language.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444681-->
+END%%
+
+%%ANKI
+Basic
+Type punning can be done in C using what three primary strategies?
+Back: Unions, `memcpy`/`memmove`, and casts to character types.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444686-->
+END%%
+
+%%ANKI
+Basic
+Which type punning strategy typically can't be used with allocated objects?
+Back: `memcpy`/`memmove`
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444691-->
+END%%
+
+%%ANKI
+Basic
+*Why* is it not necessarily safe to use `memcpy` when type punning allocated objects?
+Back: `memcpy` changes the object's effective type.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444696-->
+END%%
+
 ## Bibliography
 
 * “Compatible Types (GNU C Language Manual),” accessed January 22, 2025, [https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Compatible-Types.html).
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).

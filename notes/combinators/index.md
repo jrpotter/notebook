@@ -566,7 +566,7 @@ END%%
 
 %%ANKI
 Basic
-What intuition does the "occurs in" relation of combinator logic aim to capture?
+What intuition does the "occurs in" relation of combinatory logic aim to capture?
 Back: Whether a $CL$-term appears somewhere in another $CL$-term.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1738627391574-->

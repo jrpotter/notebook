@@ -68,7 +68,7 @@ END%%
 
 %%ANKI
 Basic
-What is the maximum number of children a node in a B-tree have?
+What is the maximum number of children a node in a B-tree can have?
 Back: A number equal to the tree's order.
 Reference: Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
 <!--ID: 1723211542010-->

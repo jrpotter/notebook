@@ -435,7 +435,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be a nonnegative function, integrable on $[a, b]$. What name is given to the following set? $$\{ \langle x, f(x) \mid a \leq x \leq b \}$$
+Let $f$ be a nonnegative function, integrable on $[a, b]$. What name is given to the following set? $$\{ \langle x, f(x) \rangle \mid a \leq x \leq b \}$$
 Back: The graph of $f$ on interval $[a, b]$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1737688734628-->

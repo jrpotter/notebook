@@ -1164,7 +1164,13 @@ END%%
 %%ANKI
 Basic
 The first fit rule lists what types (in order) for hexadecimal integer literals?
-Back: `int`, `unsigned`, `long`, `unsigned long`, `long long`, and `unsigned long long`.
+Back:
+1. `int`
+2. `unsigned`
+3. `long`
+4. `unsigned long`
+5. `long long`
+6. `unsigned long long`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1723937852139-->
 END%%
@@ -1172,7 +1178,13 @@ END%%
 %%ANKI
 Basic
 The first fit rule lists what types (in order) for hexadecimal integer literals?
-Back: `int`, `unsigned`, `long`, `unsigned long`, `long long`, and `unsigned long long`.
+Back:
+1. `int`
+2. `unsigned`
+3. `long`
+4. `unsigned long`
+5. `long long`
+6. `unsigned long long`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 END%%
 

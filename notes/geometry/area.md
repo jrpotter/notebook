@@ -379,7 +379,7 @@ END%%
 
 %%ANKI
 Basic
-The point is considered a special case of what other shape?
+In Apostol's axioms of area, the point is considered a special case of what other shape?
 Back: A rectangle.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1732381333414-->

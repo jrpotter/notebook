@@ -15,8 +15,8 @@ A binary search tree (BST) is a [[trees#Binary Trees|binary tree]] satisfying th
 
 %%ANKI
 Basic
-*Why* can't we define a binary search tree as a B-tree of order $2$?
-Back: A BST isn't guaranteed to be balanced.
+What stronger property does a B-tree of order $2$ exhibit over a binary search tree?
+Back: A B-tree is guaranteed to be balanced.
 Reference: Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
 <!--ID: 1723211542110-->
 END%%
