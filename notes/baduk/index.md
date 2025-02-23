@@ -6,9 +6,11 @@ tags:
   - baduk
 ---
 
-## Glossary
+## Overview
 
-### Dame
+This page includes terms used throughout the game of Go that aren't exhaustive enough to warrant their own page.
+
+## Dame
 
 **Dame** has two main meanings:
 

@@ -961,7 +961,114 @@ END%%
 
 ### Power Set Construction
 
-TODO
+The **power set construction** describes the process by which an NFA can be converted into an equivalent DFA:
+
+Let $N$ = $\langle Q, \Sigma, \delta, q_0, F \rangle$ be the NFA recognizing some language $A$. Define the following:
+
+1. $Q' = \mathscr{P}(Q)$
+2. $\Sigma' = \Sigma - \{ \epsilon \}$
+3. $\delta'(R, a) = \bigcup_{r \in R} \epsilon(\delta(r, a))$
+4. $q_0' = \epsilon(\{q_0\})$
+5. $F' = \{R \in Q' \mid R \text{ contains an accept state of } N \}$
+
+Then $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA equivalent to $N$, i.e. it also recognizes $A$.
+
+%%ANKI
+Basic
+Consider an NFA with $k$ states. How many states does its equivalent DFA have?
+Back: $2^k$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740343331652-->
+END%%
+
+%%ANKI
+Basic
+Let $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA and $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ be its equivalent DFA. How is $Q'$ defined?
+Back: $Q' = \mathscr{P}(Q)$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740343331693-->
+END%%
+
+%%ANKI
+Basic
+Let $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA and $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ be its equivalent DFA. How is $\Sigma'$ defined?
+Back: $\Sigma' = \Sigma - \{\epsilon\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740343331698-->
+END%%
+
+%%ANKI
+Basic
+Let $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA and $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ be its equivalent DFA. How is $\delta'$ defined?
+Back: $\delta'(R, a) = \bigcup_{r \in R} \epsilon(\delta(r, a))$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740343331704-->
+END%%
+
+%%ANKI
+Basic
+Let $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA and $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ be its equivalent DFA. What is the domain of $\delta'$?
+Back: $Q' \times \Sigma'$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740343331710-->
+END%%
+
+%%ANKI
+Basic
+Let $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA and $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ be its equivalent DFA. What is the codomain of $\delta'$?
+Back: $Q'$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740343331715-->
+END%%
+
+%%ANKI
+Basic
+Let $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA and $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ be its equivalent DFA. How is $q_0'$ defined?
+Back: $q_0' = \epsilon(\{q_0\})$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740343331719-->
+END%%
+
+%%ANKI
+Basic
+Let $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA and $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ be its equivalent DFA. How is $F'$ defined?
+Back: $F' = \{ R \in Q' \mid R \text{ contains an accept state of } N \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740343331724-->
+END%%
+
+%%ANKI
+Basic
+Let $N$ be an NFA. What process is used to construct an equivalent DFA?
+Back: The power set construction.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740343331728-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a DFA. What process is used to construct an equivalent NFA?
+Back: N/A. Every DFA is also an NFA.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740343331732-->
+END%%
+
+%%ANKI
+Basic
+Which states of a DFA are safe to remove without affecting its operation?
+Back: Non-starting states that have no transitions to them.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740343331736-->
+END%%
+
+%%ANKI
+Basic
+Which states in the following DFA are redundant?
+![[dfa-redundant-states.png]]
+Back: $\{1\}$ and $\{1, 2\}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740343331741-->
+END%%
 
 ## Regular Operations
 

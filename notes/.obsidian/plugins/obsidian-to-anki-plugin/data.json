@@ -236,7 +236,18 @@
       "**/*.excalidraw.md"
     ]
   },
-  "Added Media": [],
+  "Added Media": [
+    "dfa-example.png",
+    "dfa-ends1.png",
+    "dfa-ends0.png",
+    "nfa-example.png",
+    "dfa-redundant-states.png",
+    "straight-three-center.png",
+    "straight-three-center-marked.png",
+    "straight-three-edge.png",
+    "straight-three-edge-marked.png",
+    "dame.png"
+  ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
     "algorithms/sorting/index.md": "4a66e28bce754de5df31ec2f4aed7e93",
@@ -1048,7 +1059,7 @@
     "_journal/2024-12-22.md": "015dbf675853a81db07d641e8dab7fd4",
     "_journal/2024-12/2024-12-21.md": "1c1a5791f7519c92e882957cf417b51f",
     "formal-system/language.md": "7797d33a0b0eb187d43dda46a138fb25",
-    "computability/automaton.md": "c4195806656a08b74929c699c7bc5595",
+    "computability/automaton.md": "d59c57a4d1b285e75ef7d0371a3b76f4",
     "computability/index.md": "16ae7a270363055f7096b7dd8c09a977",
     "_journal/2024-12-23.md": "72b0964a8a5ed8ba0acf7fe10b5de279",
     "_journal/2024-12/2024-12-22.md": "75375a867efc5b3aff406c73394d4814",
@@ -1498,9 +1509,13 @@
     "_journal/2025-02/2025-02-14.md": "61fc95a48ceff82ccac7720a0a828af8",
     "_journal/2025-02/2025-02-13.md": "44e5a03409b0bb6aa6c173764051d114",
     "_journal/2025-02/2025-02-12.md": "1254bc3e1fe281da11c9953d44357039",
-    "baduk/index.md": "f948d5bc42c1d8d3e94a4e424339e53f",
+    "baduk/index.md": "ac8ad897a2a6a831ff5577b1e47e5d31",
     "_journal/2025-02-21.md": "6bf25bb0b70fa38ef7202607df601ed4",
-    "_journal/2025-02/2025-02-20.md": "4dc57ff1f7b9cad7118a459035d20733"
+    "_journal/2025-02/2025-02-20.md": "4dc57ff1f7b9cad7118a459035d20733",
+    "_journal/2025-02-23.md": "e2c73b7fa990bd8a4128af1f9fcbda79",
+    "_journal/2025-02/2025-02-22.md": "4d7944ec9f41bd2c3f15f89e91663870",
+    "_journal/2025-02/2025-02-21.md": "6bf25bb0b70fa38ef7202607df601ed4",
+    "baduk/nakade.md": "7f522e1b410d415dc9dbbf5bf9382580"
   },
   "fields_dict": {
     "Basic": [
