@@ -1215,6 +1215,161 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1735160593144-->
 END%%
 
+%%ANKI
+Basic
+Let $A_1$ and $A_2$ be regular languages with NFAs $N_1$ and $N_2$ respectively. How do we prove $A_1 \cup A_2$ is regular?
+Back: Construct an NFA with start state having $\epsilon$-transitions to $N_1$'s and $N_2$'s start states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717795-->
+END%%
+
+%%ANKI
+Basic
+How is $Q$ likely defined given the following:
+* $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
+* $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
+* $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \cup A_2$.
+Back: $Q = \{q_0\} \cup Q_1 \cup Q_2$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717826-->
+END%%
+
+%%ANKI
+Basic
+How is $F$ likely defined given the following:
+* $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
+* $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
+* $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \cup A_2$.
+Back: $F = F_1 \cup F_2$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717832-->
+END%%
+
+%%ANKI
+Basic
+Assuming $q \in Q_1$, how is $\delta(q, a)$ likely defined given the following:
+* $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
+* $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
+* $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \cup A_2$.
+Back: $\delta(q, a) = \delta_1(q, a)$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717839-->
+END%%
+
+%%ANKI
+Basic
+Assuming $q \in Q_2$, how is $\delta(q, a)$ likely defined given the following:
+* $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
+* $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
+* $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \cup A_2$.
+Back: $\delta(q, a) = \delta_2(q, a)$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717845-->
+END%%
+
+%%ANKI
+Basic
+How is $\delta(q_0, \epsilon)$ likely defined given the following:
+* $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
+* $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
+* $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \cup A_2$.
+Back: $\delta(q_0, \epsilon) = \{q_1, q_2\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717851-->
+END%%
+
+%%ANKI
+Basic
+Let $N_1$, $N_2$, and $N$ be NFAs. What regular operation is depicted below?
+![[nfa-union.png]]
+Back: Union.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717858-->
+END%%
+
+%%ANKI
+Basic
+Let $A_1$ and $A_2$ be regular languages with NFAs $N_1$ and $N_2$ respectively. How do we prove $A_1 \circ A_2$ is regular?
+Back: Construct an NFA with start state matching $N_1$ and $\epsilon$-transitions from $N_1$'s final states to $N_2$'s start state.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717864-->
+END%%
+
+%%ANKI
+Basic
+How is $Q$ likely defined given the following:
+* $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
+* $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
+* $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \circ A_2$.
+Back: $Q = Q_1 \cup Q_2$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717868-->
+END%%
+
+%%ANKI
+Basic
+How is $q_0$ likely defined given the following:
+* $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
+* $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
+* $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \circ A_2$.
+Back: $q_0 = q_1$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717873-->
+END%%
+
+%%ANKI
+Basic
+How is $F$ likely defined given the following:
+* $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
+* $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
+* $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \circ A_2$.
+Back: $F = F_2$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717878-->
+END%%
+
+%%ANKI
+Basic
+Assuming $q \in Q_1$ and $q \not\in F_1$, how is $\delta(q, a)$ likely defined given the following:
+* $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
+* $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
+* $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \circ A_2$.
+Back: $\delta(q, a) = \delta_1(q, a)$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717883-->
+END%%
+
+%%ANKI
+Basic
+Assuming $q \in Q_1$ and $a \neq \epsilon$, how is $\delta(q, a)$ likely defined given the following:
+* $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
+* $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
+* $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \circ A_2$.
+Back: $\delta(q, a) = \delta_1(q, a)$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717888-->
+END%%
+
+%%ANKI
+Basic
+Assuming $q \in Q_1$ and $a = \epsilon$, how is $\delta(q, a)$ likely defined given the following:
+* $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
+* $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
+* $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \circ A_2$.
+Back: $\delta(q, a) = \delta_1(q, a) \cup \{q_2\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717892-->
+END%%
+
+%%ANKI
+Basic
+Let $N_1$, $N_2$, and $N$ be NFAs. What regular operation is depicted below?
+![[nfa-concatentation.png]]
+Back: Concatenation.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1740842717897-->
+END%%
+
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).

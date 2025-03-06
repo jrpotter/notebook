@@ -64,7 +64,7 @@ END%%
 Basic
 If the following isn't a free tree, why not?
 ![[free-tree.png]]
-Back: N/A
+Back: This is a free tree.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1711136844918-->
 END%%

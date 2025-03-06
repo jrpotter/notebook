@@ -677,7 +677,7 @@ END%%
 
 %%ANKI
 Basic
-How might we redefine "universal" to prevent $\varnothing \subseteq \{h \mid h \colon U \rightarrow \{0, 1, \ldots, m - 1\}$ being considered universal?
+How might we redefine "universal" to prevent $\varnothing$ being considered universal w.r.t. an $m$-slot hash table?
 Back: $$\forall x, y \in U, x \neq y \Rightarrow \frac{|\varnothing|}{|\varnothing|} \leq \frac{1}{m}$$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: hashing::random hashing::universal

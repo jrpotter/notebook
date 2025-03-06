@@ -260,6 +260,150 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1735074143690-->
 END%%
 
+## Monotonicity
+
+A function $f$ is said to be **increasing** on a set $S$ if $f(x) \leq f(y)$ for every pair of points $x$ and $y$ in $S$ with $x < y$. If the strict inequality $f(x) < f(y)$ holds for all $x < y$ in $S$, the function is said to be **strictly increasing** on $S$.
+
+Similarly, $f$ is called **decreasing** on $S$ if $f(x) \geq f(y)$ for all $x < y$ and **strictly decreasing** if $f(x) > f(y)$.
+
+A function is **monotonic** on $S$ if it is increasing on $S$ or decreasing on $S$. It is **strictly monotonic** if it is either strictly increasing on $S$ or strictly decreasing on $S$.
+
+%%ANKI
+Basic
+What does it mean for a function $f$ to be increasing on a set $S$?
+Back: $f(x) \leq f(y)$ for every pair of points $x, y \in S$ satisfying $x < y$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902434-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a function $f$ to be strictly increasing on a set $S$?
+Back: $f(x) < f(y)$ for every pair of points $x, y \in S$ satisfying $x < y$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902437-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a function $f$ to be decreasing on a set $S$?
+Back: $f(x) \geq f(y)$ for every pair of points $x, y \in S$ satisfying $x < y$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902440-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a function $f$ to be strictly decreasing on a set $S$?
+Back: $f(x) > f(y)$ for every pair of points $x, y \in S$ satisfying $x < y$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902443-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a function $f$ to be monotonic on a set $S$?
+Back: $f$ is either increasing on $S$ or decreasing on $S$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902446-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a function $f$ to be strictly monotonic on a set $S$?
+Back: $f$ is either strictly increasing on $S$ or strictly decreasing on $S$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902449-->
+END%%
+
+%%ANKI
+Basic
+Let $c$ be a constant and $f(x) = c$ on interval $[a, b]$. Is $f$ increasing on $\mathbb{R}$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902451-->
+END%%
+
+%%ANKI
+Basic
+Let $c$ be a constant and $f(x) = c$ on interval $[a, b]$. Is $f$ strictly increasing on $\mathbb{R}$?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902454-->
+END%%
+
+%%ANKI
+Basic
+Let $c$ be a constant and $f(x) = c$ on interval $[a, b]$. Is $f$ monotonic on $\mathbb{R}$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902457-->
+END%%
+
+%%ANKI
+Basic
+Let $c$ be a constant and $f(x) = c$ on interval $[a, b]$. Is $f$ strictly monotonic on $\mathbb{R}$?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902460-->
+END%%
+
+%%ANKI
+Basic
+Consider real-valued function $f(x) = -x$. Is $f$ decreasing on $\mathbb{R}$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902463-->
+END%%
+
+%%ANKI
+Basic
+Consider real-valued function $f(x) = -x$. Is $f$ strictly decreasing on $\mathbb{R}$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902466-->
+END%%
+
+%%ANKI
+Basic
+Consider real-valued function $f(x) = -x$. Is $f$ monotonic on $\mathbb{R}$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902470-->
+END%%
+
+%%ANKI
+Basic
+Consider real-valued function $f(x) = -x$. Is $f$ strictly monotonic on $\mathbb{R}$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902475-->
+END%%
+
+%%ANKI
+Basic
+Consider real-valued function $f(x) = \lvert x \rvert$. Is $f$ strictly monotonic on $[-1, 1]$?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902479-->
+END%%
+
+%%ANKI
+Basic
+On what interval is $f(x) = \lvert x \rvert$ strictly increasing?
+Back: $[0, \infty)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902483-->
+END%%
+
+%%ANKI
+Basic
+On what interval is $f(x) = \lvert x \rvert$ strictly decreasing?
+Back: $(-\infty, 0]$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1740580902488-->
+END%%
+
 ## Injections
 
 A function is **injective** or **one-to-one** if each element of the codomain is mapped to by at most one element of the domain.

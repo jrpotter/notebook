@@ -247,42 +247,10 @@ An existence proof is said to be **constructive** if it demonstrates the existen
 
 %%ANKI
 Basic
-Which more general proof method do constructive proofs fall under?
-Back: Existence proofs.
-Reference: “Constructive Proof,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1217198357).
-<!--ID: 1721824073146-->
-END%%
-
-%%ANKI
-Basic
-Which of existence proofs or constructive proofs is more general?
-Back: Existence proofs.
-Reference: “Constructive Proof,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1217198357).
-<!--ID: 1722336217056-->
-END%%
-
-%%ANKI
-Basic
 Is a constructive proof usually direct or indirect?
 Back: Usually direct.
 Reference: “Constructive Proof,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1217198357).
 <!--ID: 1721824073149-->
-END%%
-
-%%ANKI
-Basic
-Which more general proof method do non-constructive proofs fall under?
-Back: Existence proofs.
-Reference: “Constructive Proof,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1217198357).
-<!--ID: 1721824073152-->
-END%%
-
-%%ANKI
-Basic
-Which of non-constructive proofs or existence proofs is more general?
-Back: Existence proofs.
-Reference: “Constructive Proof,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1217198357).
-<!--ID: 1722336217060-->
 END%%
 
 %%ANKI

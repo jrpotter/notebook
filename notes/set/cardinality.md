@@ -354,7 +354,7 @@ END%%
 %%ANKI
 Basic
 Let $S$ be a set and $n \in \omega$ such that $S \approx n$. For $m \in \omega$, when might $S \approx m$?
-Back: *Only* if $m = n$.
+Back: If and only if $m = n$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1732545231374-->
 END%%

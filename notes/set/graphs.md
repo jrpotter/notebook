@@ -1237,6 +1237,74 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1723995290896-->
 END%%
 
+## Transpose
+
+Let $G = \langle V, E \rangle$ be a directed graph. We define the **transpose of $G$** as $G^T = \langle V, E^T \rangle$ where $$E^T = \{ \langle v, u \rangle \mid \langle u, v \rangle \in E \}$$
+
+%%ANKI
+Basic
+What is the transpose of undirected graph $G = \langle V, E \rangle$?
+Back: N/A. The transpose is only defined for directed graphs.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1740796923271-->
+END%%
+
+%%ANKI
+Basic
+What is the transpose of directed graph $G = \langle V, E \rangle$?
+Back: $G^T = \langle V, E^T \rangle$ where $E^T = \{ \langle v, u \rangle \mid \langle u, v \rangle \in E \}$.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1740796923301-->
+END%%
+
+%%ANKI
+Basic
+How is the transpose of directed graph $G$ denoted?
+Back: As $G^T$.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1740796923307-->
+END%%
+
+%%ANKI
+Basic
+In plain English, what is the transpose of a directed graph?
+Back: The graph produced by switching the direction of each edge.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1740796923313-->
+END%%
+
+%%ANKI
+Basic
+Given an adjacency list representation, what is the time complexity of finding the transpose of directed graph $G = \langle V, E \rangle$?
+Back: $\Theta(\lvert V \rvert + \lvert E \rvert)$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1740796923318-->
+END%%
+
+%%ANKI
+Basic
+Given an adjacency matrix representation, what is the time complexity of finding the transpose of directed graph $G = \langle V, E \rangle$?
+Back: $\Theta(\lvert V \rvert^2)$
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1740796923323-->
+END%%
+
+%%ANKI
+Basic
+How do the SCCs of a directed graph and that of its transpose relate?
+Back: They are the same.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1740796923328-->
+END%%
+
+%%ANKI
+Basic
+*Why* are the SCCs of a directed graph the same as that of its transpose?
+Back: The "is mutually reachable" relation is symmetric.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1740796923333-->
+END%%
+
 ## Isomorphisms
 
 An **isomorphism** between two graphs $G_1$ and $G_2$ is a bijection $f \colon V_1 \rightarrow V_2$ between the vertices of the graphs such that $(a, b)$ is an edge in $G_1$ if and only if $(f(a), f(b))$ is an edge in $G_2$. Here parenthesis are used to denote either ordered pairs (for directed graphs) or unordered pairs (for undirected graphs).

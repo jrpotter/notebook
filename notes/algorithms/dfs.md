@@ -218,6 +218,72 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1735081276201-->
 END%%
 
+## Depth-First Forests
+
+To color an entire graph black, BFS may need to be invoked multiple times. After each invocation of BFS, a new invocation can be run with any remaining white vertex as the source. Each invocation yields a **depth-first tree**. Multiple invocations yield a **depth-first forest**.
+
+%%ANKI
+Basic
+With respect to depth-first trees, what does the predecessor of a node $N$ refer to?
+Back: The node from which $N$ was discovered.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1729641729235-->
+END%%
+
+%%ANKI
+Basic
+When might white vertices remain after DFS is invoked?
+Back: When there exist vertices unreachable from the last used source vertex.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735081276203-->
+END%%
+
+%%ANKI
+Basic
+How many invocations of DFS are required to color a graph black?
+Back: One or more.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735081276205-->
+END%%
+
+%%ANKI
+Cloze
+The {1:source} of a depth-first {2:search} is the {2:root} of a depth-first {1:tree}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735081276206-->
+END%%
+
+%%ANKI
+Basic
+With respect to depth-first trees, what does the predecessor of a node $N$ refer to?
+Back: The node from which $N$ was discovered.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+END%%
+
+%%ANKI
+Basic
+With respect to depth-first trees, what does the parent of a node $N$ refer to?
+Back: The node from which $N$ was discovered.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735081276207-->
+END%%
+
+%%ANKI
+Basic
+With respect to depth-first trees, the predecessor of a node is also known as what?
+Back: The parent of the node.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735081276209-->
+END%%
+
+%%ANKI
+Basic
+With respect to depth-first trees, the parent of a node is also known as what?
+Back: The predecessor of the node.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735081276210-->
+END%%
+
 ## Parenthesis Theorem
 
 In any depth-first search of a graph, for any two vertices $u$ and $v$, exactly one of the following three conditions holds:
@@ -315,72 +381,6 @@ Let $a$ and $b$ be vertices with timestamps satisfying $b{.}d < a{.}d < a{.}f < 
 Back: $a$ is a descendant of $b$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735785232455-->
-END%%
-
-## Depth-First Forests
-
-To color an entire graph black, BFS may need to be invoked multiple times. After each invocation of BFS, a new invocation can be run with any remaining white vertex as the source. Each invocation yields a **depth-first tree**. Multiple invocations yield a **depth-first forest**.
-
-%%ANKI
-Basic
-With respect to depth-first trees, what does the predecessor of a node $N$ refer to?
-Back: The node from which $N$ was discovered.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1729641729235-->
-END%%
-
-%%ANKI
-Basic
-When might white vertices remain after DFS is invoked?
-Back: When there exist vertices unreachable from the last used source vertex.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735081276203-->
-END%%
-
-%%ANKI
-Basic
-How many invocations of DFS are required to color a graph black?
-Back: One or more.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735081276205-->
-END%%
-
-%%ANKI
-Cloze
-The {1:source} of a depth-first {2:search} is the {2:root} of a depth-first {1:tree}.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735081276206-->
-END%%
-
-%%ANKI
-Basic
-With respect to depth-first trees, what does the predecessor of a node $N$ refer to?
-Back: The node from which $N$ was discovered.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-END%%
-
-%%ANKI
-Basic
-With respect to depth-first trees, what does the parent of a node $N$ refer to?
-Back: The node from which $N$ was discovered.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735081276207-->
-END%%
-
-%%ANKI
-Basic
-With respect to depth-first trees, the predecessor of a node is also known as what?
-Back: The parent of the node.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735081276209-->
-END%%
-
-%%ANKI
-Basic
-With respect to depth-first trees, the parent of a node is also known as what?
-Back: The predecessor of the node.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735081276210-->
 END%%
 
 ## Edge Classification
@@ -736,6 +736,10 @@ Back:
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1737086266703-->
 END%%
+
+## Kosaraju's Algorithm
+
+TODO
 
 ## Bibliography
 
