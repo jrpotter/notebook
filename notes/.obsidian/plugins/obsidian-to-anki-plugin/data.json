@@ -291,7 +291,9 @@
     "bulky-five-pyramid-four.png",
     "dfs.gif",
     "dfs-edge-classification.png",
-    "topological-sort.png"
+    "topological-sort.png",
+    "adj-list-representation.png",
+    "adj-matrix-representation.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -472,7 +474,7 @@
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
     "set/index.md": "29f5f295765101fe11d821faa908b027",
-    "set/graphs.md": "b12a6b25ba1676a15262f46cfa34d11f",
+    "set/graphs.md": "39a6f511cde3111029ee358a275bbac6",
     "_journal/2024-03-19.md": "a0807691819725bf44c0262405e97cbb",
     "_journal/2024-03/2024-03-18.md": "2c711c50247a9880f7ed0d33b16e1101",
     "awk/variables.md": "e40a20545358228319f789243d8b9f77",
@@ -876,7 +878,7 @@
     "_journal/2024-08-25.md": "e73a8edbd027d0f1a39289540eb512f2",
     "_journal/2024-08/2024-08-24.md": "563fad24740e44734a87d7c3ec46cec4",
     "algebra/abs-val.md": "a47bc08db62304eb526d15ede3e300cf",
-    "data-structures/graphs.md": "0f47148557943dbca068c166d3e4169a",
+    "data-structures/graphs.md": "cc38b2b3f38aad99aa8ce9c7f1d2418c",
     "_journal/2024-08-26.md": "5bed1b0ee34e546c31760f5a0aa5ca19",
     "_journal/2024-08/2024-08-25.md": "a3337b4658677810127350ef3e0ad146",
     "_journal/2024-08-27.md": "d9ffc6ea2128ab5a86ab5f2619206736",
@@ -1171,7 +1173,7 @@
     "_journal/2024/2024-10/2024-10-25.md": "0597575213a2bb0e15052efa9404dd1b",
     "_journal/2024/2024-10/2024-10-24.md": "7a6b0b950b0492b4bf178a52a1a86de5",
     "_journal/2024/2024-10/2024-10-23.md": "919e5b7773f496f89bb9f1b45a99da7b",
-    "_journal/2024/2024-10/2024-10-22.md": "5ff4eb7eba58e77c4fb65b7162a485e6",
+    "_journal/2024/2024-10/2024-10-22.md": "2192ff26b9c3c4dd9f6dd2ace60391cf",
     "_journal/2024/2024-10/2024-10-21.md": "de1a0861e87df29aeff11a291f8fbd45",
     "_journal/2024/2024-10/2024-10-20.md": "cae8694ffce3aed71a29446d8444c7a3",
     "_journal/2024/2024-10/2024-10-19.md": "2b221729d097a67c8d8f68a416889fe8",
@@ -1468,7 +1470,7 @@
     "_journal/2024/2024-12/2024-12-01.md": "84987be103489d6447eba85726aa2489",
     "_journal/2025-01-01.md": "3cf29f753c27313c95a435a7845b4c13",
     "_journal/2025-01-02.md": "d836d831495d0646e7bf8c564579f9f1",
-    "_journal/2025-01/2025-01-01.md": "3cf29f753c27313c95a435a7845b4c13",
+    "_journal/2025-01/2025-01-01.md": "981aac0f96c4d22235de0c13d8917e37",
     "algebra/complex.md": "56cb9e1f6da0fe1e75f750709a35803f",
     "_journal/2025-01-03.md": "357ed3ed9951645822fd743bfa82c0c4",
     "_journal/2025-01/2025-01-02.md": "34d34115bf1e09f72443aab02f33c7d8",
@@ -1497,7 +1499,7 @@
     "_journal/2025-01/2025-01-15.md": "a559a6eba2958e2664ad25c1e3236d87",
     "_journal/2025-01-16.md": "e3a21059205784a4e88bfe3b4deac7f7",
     "_journal/2025-01-17.md": "08a5f05bb572db9495bfc2b4feb8e0a9",
-    "_journal/2025-01/2025-01-16.md": "e3a21059205784a4e88bfe3b4deac7f7",
+    "_journal/2025-01/2025-01-16.md": "89bbdc1090a59f734a32fb7b71c9c65b",
     "trigonometry/index.md": "5ea402987a5795e25c33671f7b8415af",
     "geometry/circle.md": "9469e5512a6a92a962985eab99d00606",
     "_journal/2025-01-18.md": "8655fbf94aeec13efe9b6d2087c1f37e",
@@ -1578,7 +1580,12 @@
     "_journal/2025-03/2025-03-01.md": "2bc1c3499b24623ff974a48aa32f0ac0",
     "_journal/2025-03-05.md": "66d120bf73dc37991bd2df149995fe7d",
     "_journal/2025-03/2025-03-04.md": "9121533d86d835c56a8148858ef0277e",
-    "_journal/2025-03/2025-03-03.md": "b0fa11fcbec56850ae234c7665283cc3"
+    "_journal/2025-03/2025-03-03.md": "b0fa11fcbec56850ae234c7665283cc3",
+    "algorithms/dfs/kosaraju.md": "2e5594b4a3e6bcf390263538dfd768da",
+    "algorithms/dfs/topological-sort.md": "0840db3ade9321e127cc81946b135c7a",
+    "algorithms/dfs/index.md": "f1e3eabb7fc0b856c0e81e2b29d084d0",
+    "_journal/2025-03-06.md": "e69b200f43b26412d9cd97172b7f09d6",
+    "_journal/2025-03/2025-03-05.md": "66829ff47db7c3978b78ed97de9e65a8"
   },
   "fields_dict": {
     "Basic": [
