@@ -155,7 +155,7 @@ END%%
 %%ANKI
 Basic
 When does a partially linked executable become fully linked?
-Back: In memory after the loader invokes dynamic linking.
+Back: In memory after the dynamic linker is invoked.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1741823727639-->
 END%%
