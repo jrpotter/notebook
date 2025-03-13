@@ -40,33 +40,6 @@ END%%
 
 A typical ELF object file contains the following sections:
 
-### `.init`
-
-This section defines a small function, called `_init`, that will be called by a program's initialization code. Only found in [[executable|executable object files]].
-
-%%ANKI
-Basic
-What does the `.init` section contain?
-Back: The `_init` function.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653724-->
-END%%
-
-%%ANKI
-Basic
-What kind of object file is the `.init` section relevant for?
-Back: Executable object files.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653729-->
-END%%
-
-%%ANKI
-Cloze
-The {`.init`} section contains the {`_init`} function.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653735-->
-END%%
-
 ### `.text`
 
 The machine code of the compiled program.
@@ -628,6 +601,33 @@ Section names are contained in what ELF section?
 Back: `.strtab`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734456879433-->
+END%%
+
+### `.interp`
+
+Contains the path name of the dynamic linker to be used by the loader. Only exists on partially linked executable object files.
+
+%%ANKI
+Cloze
+The {`.interp`} section contains the {path name} of the {dynamic linker} to be used by the loader.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741823727647-->
+END%%
+
+%%ANKI
+Basic
+What special section exists only in partially linked executable object files?
+Back: `.interp`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741823727648-->
+END%%
+
+%%ANKI
+Basic
+On Linux machines, what path name is probably found in an `.interp` section?
+Back: `ld-linux.so`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741823727649-->
 END%%
 
 ## Bibliography

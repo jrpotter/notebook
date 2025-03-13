@@ -11,12 +11,99 @@ tags:
 
 For a large class of modern ISAs, storage for basic C datatypes respect **self-alignment**. This means `char`s can start on any byte address, `short`s on any even address, 4-byte `int`s and `float`s must start on an address divisible by 4, and `double`s must start on an address divisible by 8. Likewise pointers are also self-aligned.
 
+`_Alignof` (or macro `alignof`) returns the alignment of a given type. `_Alignas` (or macro `alignas`) can be used to force allocation at a given alignment.
+
 %%ANKI
 Basic
 What does self-alignment refer to?
 Back: The placement of C datatypes on an address divisible by the size of the datatype.
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
 <!--ID: 1730831516929-->
+END%%
+
+%%ANKI
+Cloze
+Objects of most {non-character} types must start on a {word boundary}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798409-->
+END%%
+
+%%ANKI
+Basic
+What does "the alignment of a type" refer to?
+Back: What memory addresses an object of that type can start on.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798412-->
+END%%
+
+%%ANKI
+Basic
+Which signal is usually emitted on alignment issues?
+Back: `SIGBUS`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798414-->
+END%%
+
+%%ANKI
+Cloze
+{1:`_Alignof`} is a {2:keyword} whereas {2:`alignof`} is a {1:macro}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798416-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `_Alignof` keyword?
+Back: It returns the alignment of a given type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798417-->
+END%%
+
+%%ANKI
+Basic
+Which keyword returns the alignment of a type?
+Back: `_Alignof`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798419-->
+END%%
+
+%%ANKI
+Basic
+Which standard library contains `alignof`?
+Back: `<stdalign.h>`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798420-->
+END%%
+
+%%ANKI
+Cloze
+{1:`_Alignas`} is a {2:keyword} whereas {2:`alignas`} is a {1:macro}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798421-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `_Alignas` keyword?
+Back: It forces allocation to a given alignment.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798422-->
+END%%
+
+%%ANKI
+Basic
+Which keyword forces allocation to a given alignment?
+Back: `_Alignas`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798423-->
+END%%
+
+%%ANKI
+Basic
+Which standard library contains `alignas`?
+Back: `<stdalign.h>`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798424-->
 END%%
 
 Wasted space introduced solely for alignment purposes is referred to as **slop**.
@@ -943,4 +1030,5 @@ END%%
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+* Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 * Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).

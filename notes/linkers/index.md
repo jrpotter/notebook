@@ -23,6 +23,29 @@ END%%
 
 %%ANKI
 Basic
+Which static linker is typically used on Linux x86-64 systems?
+Back: `ld`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741298168045-->
+END%%
+
+%%ANKI
+Basic
+Which dynamic linker is typically used on Linux x86-64 systems?
+Back: `ld-linux.so`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741822671243-->
+END%%
+
+%%ANKI
+Cloze
+The {1:static} linker is to {2:`ld`} whereas the {2:dynamic} linker is to {1:`ld-linux.so`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741822671244-->
+END%%
+
+%%ANKI
+Basic
 Which of symbol resolution or relocation happens first?
 Back: Symbol resolution.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

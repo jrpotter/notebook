@@ -49,6 +49,14 @@ Reference: “Nakade at Sensei’s Library,” accessed February 23, 2025, https
 <!--ID: 1741013698163-->
 END%%
 
+%%ANKI
+Basic
+What are the two most common five-space nakade shapes?
+Back: The bulky five and cross five.
+Reference: “Nakade at Sensei’s Library,” accessed February 23, 2025, https://senseis.xmp.net/?Nakade.
+<!--ID: 1741299004981-->
+END%%
+
 ### Straight Three
 
 The **straight three** refers to a basic shape with three open spaces directly in a line. The following indicates the nakade:
@@ -74,7 +82,7 @@ END%%
 
 %%ANKI
 Basic
-Which point should be played by white to kill the black group?
+Which point should be played by White to kill the Black group?
 ![[straight-three-center.png]]
 Back:
 ![[straight-three-center-marked.png]]
@@ -93,7 +101,7 @@ END%%
 
 %%ANKI
 Basic
-Which point should be played by white to kill the black group?
+Which point should be played by White to kill the Black group?
 ![[straight-three-edge.png]]
 Back:
 ![[straight-three-edge-marked.png]]
@@ -126,7 +134,7 @@ END%%
 
 %%ANKI
 Basic
-Which point should be played by white to kill the black group?
+Which point should be played by White to kill the Black group?
 ![[bent-three-center.png]]
 Back:
 ![[bent-three-center-marked.png]]
@@ -159,7 +167,7 @@ END%%
 
 %%ANKI
 Basic
-Which point should be played by white to kill the black group?
+Which point should be played by White to kill the Black group?
 ![[pyramid-four-center.png]]
 Back:
 ![[pyramid-four-center-marked.png]]
@@ -184,7 +192,7 @@ END%%
 
 %%ANKI
 Basic
-Which point should be played by white to kill the black group?
+Which point should be played by White to kill the Black group?
 ![[bulky-five-center.png]]
 Back:
 ![[bulky-five-center-marked.png]]
@@ -200,6 +208,31 @@ Back:
 ![[bulky-five-pyramid-four.png]]
 Reference: “Nakade at Sensei’s Library,” accessed February 23, 2025, https://senseis.xmp.net/?Nakade.
 <!--ID: 1741013698182-->
+END%%
+
+### Cross Five
+
+The **cross five** refers to a basic shape with five open spaces arranged as follows:
+
+![[cross-five-center.png]]
+
+%%ANKI
+Basic
+Which name describes the following nakade?
+![[cross-five-center.png]]
+Back: A cross five.
+Reference: “Nakade at Sensei’s Library,” accessed February 23, 2025, https://senseis.xmp.net/?Nakade.
+<!--ID: 1741299004988-->
+END%%
+
+%%ANKI
+Basic
+Which point should be played by White to kill the Black group?
+![[cross-five-center.png]]
+Back:
+![[cross-five-center-marked.png]]
+Reference: “Nakade at Sensei’s Library,” accessed February 23, 2025, https://senseis.xmp.net/?Nakade.
+<!--ID: 1741299004992-->
 END%%
 
 ## Bibliography

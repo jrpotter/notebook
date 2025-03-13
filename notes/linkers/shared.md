@@ -1,5 +1,5 @@
 ---
-title: Executable Object Files
+title: Shared Object Files
 TARGET DECK: Obsidian::STEM
 FILE TAGS: linker
 tags:
@@ -8,198 +8,217 @@ tags:
 
 ## Overview
 
-**Executable object files** are those produced by the linker. They contain binary code and data in a form that can be easy to load into memory. The following diagram shows how one looks like when formatted using [[elf|ELF]]:
+A **shared object file** is a special type of [[relocatable|relocatable object file]] that, at runtime, can be loaded into an arbitrary memory location and linked with a program in memory.
 
-![[executable-elf.png]]
-
-The ELF header contains the [[loader|entry point]] of the program.
+![[dynamic-linking-overview.png]]
 
 %%ANKI
 Basic
-Executable object files are outputs of which compiler driver component?
-Back: The linker.
+A shared object file is a special instance of what other kind of file?
+Back: A relocatable object file.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
-END%%
-
-%%ANKI
-Basic
-An executable object file is typically broken up into what four regions?
-Back: The ELF header, program header table, sections, and the section header table.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653604-->
-END%%
-
-%%ANKI
-Basic
-In an executable object file, what exists between the ELF header and section header table?
-Back: The program header table and the sections.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653610-->
+<!--ID: 1741822671229-->
 END%%
 
 %%ANKI
 Cloze
-An executable object file consists of an {ELF header}, {program header table}, {sections}, and a {section header table}, in that order.
+On Linux machines, a {shared library} typically has a {`.so`} extension.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653614-->
-END%%
-
-%%ANKI
-Basic
-Where in an executable object file does the section header table exist?
-Back: At the end.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653617-->
-END%%
-
-%%ANKI
-Basic
-Which part of an executable object file contains the entry point?
-Back: The ELF header.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653621-->
-END%%
-
-%%ANKI
-Basic
-Since an executable object file is fully linked, it doesn't require what sections found in relocatable object files?
-Back: The `.rel` sections.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653631-->
+<!--ID: 1741822671230-->
 END%%
 
 %%ANKI
 Cloze
-The {program} header table is also known as the {segment} header table.
+On Windows machines, a {shared library} typically has a {`.dll`} extension.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653641-->
+<!--ID: 1741822671231-->
 END%%
 
 %%ANKI
 Basic
-What two segments are described by the program header table?
-Back: The code segment and data segment.
+On Linux machines, what kind of files usually have a `.so` extension?
+Back: Shared object files.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653646-->
+<!--ID: 1741822671232-->
 END%%
 
 %%ANKI
 Basic
-Which segment is the ELF header of an executable object file found in?
-Back: The code segment.
+On Linux machines, why was the `.so` suffix chosen for shared libraries?
+Back: It's short for **s**hared **o**bject.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653651-->
-END%%
-
-%%ANKI
-Basic
-Which segment is the program header table of an executable object file found in?
-Back: The code segment.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653656-->
-END%%
-
-%%ANKI
-Basic
-Which segment is the `.debug` section of an executable object file found in?
-Back: N/A. This section isn't loaded into memory.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653661-->
-END%%
-
-%%ANKI
-Basic
-Which segment is the `.bss` section of an executable object file found in?
-Back: The data segment.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653666-->
-END%%
-
-%%ANKI
-Basic
-Which segment is the `.rodata` section of an executable object file found in?
-Back: The code segment.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653671-->
-END%%
-
-%%ANKI
-Basic
-Which segment is the `.line` section of an executable object file found in?
-Back: N/A. This section isn't loaded into memory.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653675-->
-END%%
-
-%%ANKI
-Basic
-Which segment is the `.data` section of an executable object file found in?
-Back: The data segment.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653679-->
-END%%
-
-%%ANKI
-Basic
-Which segment is the `.init` section of an executable object file found in?
-Back: The code segment.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653684-->
-END%%
-
-%%ANKI
-Basic
-Which segment is the `.symtab` section of an executable object file found in?
-Back: N/A. This section isn't loaded into memory.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653689-->
+<!--ID: 1741822671233-->
 END%%
 
 %%ANKI
 Cloze
-The {1:code} segment of an executable object file has {2:read} and {2:execute} permissions.
+{1:Shared} libraries are to {2:`.so`} whereas {2:static} libraries are to {1:`.a`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653694-->
+<!--ID: 1741822671234-->
+END%%
+
+%%ANKI
+Basic
+What memory-saving strategy do shared libraries allow linkers to employ?
+Back: The code and data of a single `.so` file is shared by all programs that reference it.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741822671235-->
+END%%
+
+%%ANKI
+Basic
+Why must executables be relinked after a dependent shared library update?
+Back: N/A. Shared libraries are loaded at runtime so relinking is avoided.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741822671236-->
+END%%
+
+%%ANKI
+Basic
+Dynamic linking involves what kind of relocatable object files?
+Back: Shared object files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741822671237-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes shared object files from shared libraries?
+Back: N/A. They refer to the same thing.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741822671238-->
+END%%
+
+%%ANKI
+Basic
+How many copies of a shared library are typically found on a machine?
+Back: Just the one.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741822671239-->
+END%%
+
+%%ANKI
+Basic
+*Why* is there just one copy of a shared library found on a machine?
+Back: Every executable can link against the same copy dynamically at runtime.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741822671240-->
+END%%
+
+%%ANKI
+Basic
+How many copies of a shared object file's `.text` section is in memory?
+Back: One.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741822671241-->
+END%%
+
+%%ANKI
+Basic
+How many copies of a shared object file's `.data` section is in memory?
+Back: One for each process that references the shared library.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741822671242-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for an executable to be partially linked?
+Back: The dynamic linker must load in shared libraries at runtime.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741823727633-->
 END%%
 
 %%ANKI
 Cloze
-The {1:data} segment of an executable object file has {2:read} and {2:write} permissions.
+An executable is either {partially} or {fully} linked.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653699-->
+<!--ID: 1741823727636-->
 END%%
 
 %%ANKI
 Basic
-The program header table is relevant to what kind of object file?
-Back: Executable object files.
+What kind of linker(s) are necessary to produce a fully linked executable?
+Back: A static linker.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653704-->
+<!--ID: 1741823727637-->
 END%%
 
 %%ANKI
 Basic
-Which executable object segment(s) has read permissions?
-Back: The code and data segments.
+What kind of linker(s) are necessary to produce a partially linked executable?
+Back: A static linker.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653709-->
+<!--ID: 1741823727638-->
 END%%
 
 %%ANKI
 Basic
-Which executable object segment(s) has write permissions?
-Back: The data segment.
+When does a partially linked executable become fully linked?
+Back: In memory after the loader invokes dynamic linking.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653714-->
+<!--ID: 1741823727639-->
 END%%
 
 %%ANKI
 Basic
-Which executable object segment(s) has execute permissions?
-Back: The code segment.
+Why must a static linker still need to reference a shared library?
+Back: To copy relocation and symbol table information into the partially linked executable.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653719-->
+<!--ID: 1741823727640-->
+END%%
+
+%%ANKI
+Basic
+What two thingsare copied from a shared library during static linking?
+Back: Relocation info and symbol table info.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741823727641-->
+END%%
+
+%%ANKI
+Basic
+What is the following a diagram of?
+![[dynamic-linking-process.png]]
+Back: Dynamic linking.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741823727642-->
+END%%
+
+%%ANKI
+Basic
+Why is `libc.so` and `libvector.so` referenced twice in the following?
+![[dynamic-linking-process.png]]
+Back: The first time copies relocation/symbol table info necessary to fully link by the second reference.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741823727643-->
+END%%
+
+%%ANKI
+Basic
+Which component(s) in the following are partially linked executables?
+![[dynamic-linking-process.png]]
+Back: Just `prog21`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741823727644-->
+END%%
+
+%%ANKI
+Basic
+Which component(s) in the following diagram are fully linked executables?
+![[dynamic-linking-process.png]]
+Back: N/A. A fully linked executable exists in memory after dynamic linking.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741823727645-->
+END%%
+
+%%ANKI
+Basic
+Which component(s) in the following diagram are relocatable object files?
+![[dynamic-linking-process.png]]
+Back: `main.o`, `libc.so`, and `libvector.so`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1741823727646-->
 END%%
 
 ## Bibliography

@@ -651,7 +651,7 @@ END%%
 
 ### main
 
-`main` is a special function serving as the entrypoint to C programs. It can have several different prototypes, but the following two are always possible:
+`main` is a special function serving as the entry point to C programs. It can have several different prototypes, but the following two are always possible:
 
 ```c
 int main(void);
@@ -662,7 +662,7 @@ The only two return values guaranteed to work on all platform is `EXIT_SUCCESS` 
 
 %%ANKI
 Basic
-Which function serves as the entrypoint of C programs?
+Which user-defined function serves as the entry point of C programs?
 Back: `main`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415792-->

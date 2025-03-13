@@ -651,62 +651,6 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1733607099587-->
 END%%
 
-The operating system provides a function called the **loader** that copies the code and data of the executable object file into memory, and then transfers control to the beginning of the program.
-
-%%ANKI
-Basic
-What function does the OS provide to run executable object files?
-Back: The loader.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099593-->
-END%%
-
-%%ANKI
-Basic
-What kind of file does a loader usually input?
-Back: An executable object file.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099598-->
-END%%
-
-%%ANKI
-Cloze
-The loader copies {code and data} from an {executable object file} into {memory}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099604-->
-END%%
-
-%%ANKI
-Basic
-The loader copies code and data from what kind of file?
-Back: An executable object file.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099609-->
-END%%
-
-%%ANKI
-Basic
-The loader copies code and data into what?
-Back: Memory.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099614-->
-END%%
-
-%%ANKI
-Cloze
-The loader transfers {control} to the {beginning of a loaded program}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099619-->
-END%%
-
-%%ANKI
-Basic
-At a high-level, the loader is responsible for performing what two actions?
-Back: Copying code/data and beginning program execution.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099625-->
-END%%
-
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
