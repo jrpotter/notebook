@@ -250,7 +250,9 @@
     "abs-left-down.png",
     "infinite-cartesian-product.png",
     "topological-sort.png",
-    "postage-function.png"
+    "postage-function.png",
+    "angle-bac.png",
+    "triangle-letters.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -1476,7 +1478,7 @@
     "_journal/2025-01-23.md": "1af640a491732d6d415bee6e2fc3b7f4",
     "_journal/2025-01-24.md": "319e30ad018a5a4e84c0fc4e475760ed",
     "_journal/2025-01/2025-01-23.md": "1af640a491732d6d415bee6e2fc3b7f4",
-    "trigonometry/angles.md": "f27d6356870d9f68edd71ec0ee168a10",
+    "trigonometry/angles.md": "c03037f66cde24535591ca0b4cf9dff5",
     "_journal/2025-01-26.md": "e6d620886c296c51303d24eb1d3623a6",
     "_journal/2025-01/2025-01-25.md": "6135d90c6db0becd571e99f22e864a63",
     "_journal/2025-01/2025-01-24.md": "7985e17b8aa0973977df8d7e3659889f",
@@ -1553,7 +1555,7 @@
     "_journal/2025-03/2025-03-08.md": "60827ee25caba95903ba79a157a6c8b9",
     "_journal/2025-03/2025-03-07.md": "d62114af2e84e9e03fd3c0d7d4e5097d",
     "_journal/2025-03/2025-03-06.md": "51313b4ffa2bf311756d57e53cfa85fe",
-    "_journal/2025-03-16.md": "1b4202b3e07be453f137414a27cc7500",
+    "_journal/2025-03-16.md": "25ed512d3bc0e1efa84edd9abfdd20a5",
     "_journal/2025-03/2025-03-15.md": "b15eb57dbed69e0933824928da1a3763",
     "_journal/2025-03/2025-03-14.md": "e0568f37ed163eb6d5292c195d2d384f",
     "_journal/2025-03/2025-03-13.md": "3060598095491329b8fb1a55c198c3b2",

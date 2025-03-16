@@ -428,6 +428,46 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1740671218391-->
 END%%
 
+%%ANKI
+Basic
+What does Sundstrom et al. state is the main reason why radians are preferred over degrees?
+Back: Radians have no dimension.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742164993433-->
+END%%
+
+%%ANKI
+Basic
+A degree is equal to how many radians?
+Back: $\pi / 180$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742164993440-->
+END%%
+
+%%ANKI
+Basic
+A radian is equal to how many degrees?
+Back: $180 / \pi$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742164993446-->
+END%%
+
+%%ANKI
+Basic
+Let the measure of some angle evaluate to $2$. Are we using radians or degrees?
+Back: Radians.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742164993451-->
+END%%
+
+%%ANKI
+Basic
+Let the measure of some angle evaluate to $2\degree$. Are we using radians or degrees?
+Back: Degrees.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742164993456-->
+END%%
+
 ## Bibliography
 
 * “Subtended Angle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Subtended_angle](https://en.wikipedia.org/w/index.php?title=Subtended_angle&oldid=1268107647).
