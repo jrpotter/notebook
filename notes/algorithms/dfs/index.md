@@ -218,6 +218,38 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1735081276201-->
 END%%
 
+%%ANKI
+Basic
+An invocation of DFS on an undirected graph's transpose colors which nodes?
+Back: Those reachable from the source vertex.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742148753838-->
+END%%
+
+%%ANKI
+Basic
+An invocation of DFS on an undirected graph colors which nodes?
+Back: Those reachable from the source vertex.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742148753839-->
+END%%
+
+%%ANKI
+Basic
+An invocation of DFS on a directed graph's transpose colors which nodes?
+Back: Those the source vertex is reachable from.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742148753840-->
+END%%
+
+%%ANKI
+Basic
+An invocation of DFS on a directed graph colors which nodes?
+Back: Those reachable from the source vertex.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742148753841-->
+END%%
+
 ## Depth-First Forests
 
 To color an entire graph black, BFS may need to be invoked multiple times. After each invocation of BFS, a new invocation can be run with any remaining white vertex as the source. Each invocation yields a **depth-first tree**. Multiple invocations yield a **depth-first forest**.

@@ -1305,6 +1305,22 @@ Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition
 <!--ID: 1740796923333-->
 END%%
 
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be an undirected graph. When does $G = G^T$?
+Back: Always.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742148753831-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be a directed graph. When does $G = G^T$?
+Back: When $\forall \langle u, v \rangle \in E, \langle v, u \rangle \in E$.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742148753833-->
+END%%
+
 ## Isomorphisms
 
 An **isomorphism** between two graphs $G_1$ and $G_2$ is a bijection $f \colon V_1 \rightarrow V_2$ between the vertices of the graphs such that $(a, b)$ is an edge in $G_1$ if and only if $(f(a), f(b))$ is an edge in $G_2$. Here parenthesis are used to denote either ordered pairs (for directed graphs) or unordered pairs (for undirected graphs).

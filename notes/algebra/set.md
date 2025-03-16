@@ -222,7 +222,7 @@ END%%
 
 %%ANKI
 Basic
-Assume AoC and $H(j) \neq \varnothing$ for all $j \in I$. What does $\bigtimes_{i \in I} H(i)$ evaluate to?
+Assume AoC and $H(j) \neq \varnothing$ for all $j \in I$. What set does $\bigtimes_{i \in I} H(i)$ evaluate to?
 Back: $\{f \mid f \text{ is a function with domain } I \text{ and } \forall i \in I, f(i) \in H(i)\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720964209709-->

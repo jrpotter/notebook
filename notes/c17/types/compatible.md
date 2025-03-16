@@ -640,7 +640,7 @@ Assuming they are defined in different TUs, how compatible are the following and
 union x { signed a; };
 union x { const a; };
 ```
-Back: Incompatible. `const` must be specified on both `a` members.
+Back: Nearly compatible. `const` is an alias for `const signed`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1737474344489-->
 END%%

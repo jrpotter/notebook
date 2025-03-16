@@ -31,7 +31,7 @@ END%%
 
 %%ANKI
 Cloze
-The loader copies {code and data} from an {executable object file} into {memory}.
+Roughly speaking, the loader copies {code/data} from an {executable object} file into {memory}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1733607099604-->
 END%%

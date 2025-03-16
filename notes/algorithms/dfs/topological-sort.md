@@ -129,6 +129,54 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1737086266703-->
 END%%
 
+%%ANKI
+Basic
+Suppose $A$ is the first vertex listed in a topological ordering of digraph $G = \langle V, E \rangle$. How many outgoing edges might $A$ have?
+Back: $0$ or more.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742150391919-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is the first vertex listed in a topological ordering of digraph $G = \langle V, E \rangle$. How many incoming edges might $A$ have?
+Back: Exactly $0$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742150391923-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is the last vertex listed in a topological ordering of digraph $G = \langle V, E \rangle$. How many outgoing edges might $A$ have?
+Back: Exactly $0$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742150391925-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is the last vertex listed in a topological ordering of digraph $G = \langle V, E \rangle$. How many incoming edges might $A$ have?
+Back: $0$ or more.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742150391927-->
+END%%
+
+%%ANKI
+Basic
+Consider a topological ordering of digraph $G = \langle V, E \rangle$. Which vertex is guaranteed to have $0$ outgoing edges?
+Back: The last vertex listed.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742150391929-->
+END%%
+
+%%ANKI
+Basic
+Consider a topological ordering of digraph $G = \langle V, E \rangle$. Which vertex is guaranteed to have $0$ incoming edges?
+Back: The first vertex listed.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742150391930-->
+END%%
+
 ## Bibliography
 
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

@@ -227,6 +227,64 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1733316862000-->
 END%%
 
+A function $f$ is said to be **piecewise monotonic** on an interval $[a, b]$ if there is a partition $P$ of $[a, b]$ such that $f$ is [[functions#Monotonicity|monotonic]] on each open subinterval of $P$.
+
+%%ANKI
+Basic
+What does it mean for a function $f$ to be piecewise monotonic on $[a, b]$?
+Back: There is a partition $P$ of $[a, b]$ such that $f$ is monotonic on each open subinterval of $P$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1742152469437-->
+END%%
+
+%%ANKI
+Basic
+Let $c$ be a constant. *Why* is $f(x) = c$ piecewise monotonic on interval $[a, b]$?
+Back: Because *any* interval of a constant function is montonic.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1742152469440-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a step function. *Why* is $f$ piecewise monotonic on some interval $[a, b]$.
+Back: By definition, there exists a partition $P$ on $[a, b]$ so that each open subinterval of $P$ is monotonic.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1742152469443-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = x^p$ for some integer $p > 0$. *Why* is $f$ piecewise monotonic on some interval $[a, b]$?
+Back: Because $f$ is monotonic on $(-\infty, 0)$ and monotonic on $(0, \infty)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1742152469445-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = x^p$ for some integer $p > 0$. When is $f$ increasing on $(0, \infty)$?
+Back: Always.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1742152641644-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = x^p$ for some integer $p > 0$. When is $f$ increasing on $(-\infty, 0)$?
+Back: When $p$ is odd.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1742152641646-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = x^p$ for some integer $p > 0$. When is $f$ decreasing on $(-\infty, 0)$?
+Back: When $p$ is even.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1742152641648-->
+END%%
+
 ## Step Functions
 
 A function $s$, whose domain is a closed interval $[a, b]$, is called a **step function** if and only if there exists a [[#Partitions|partition]] $P = \{a, x_1, \ldots, x_{n-1}, b\}$ of $[a, b]$ such that $s$ is constant on each open subinterval of $P$.

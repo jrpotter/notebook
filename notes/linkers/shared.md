@@ -60,7 +60,7 @@ END%%
 %%ANKI
 Basic
 What memory-saving strategy do shared libraries allow linkers to employ?
-Back: The code and data of a single `.so` file is shared by all programs that reference it.
+Back: The code of a single `.so` file is shared by all programs that reference it.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1741822671235-->
 END%%
@@ -219,6 +219,56 @@ Which component(s) in the following diagram are relocatable object files?
 Back: `main.o`, `libc.so`, and `libvector.so`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1741823727646-->
+END%%
+
+## Position-Independent Code
+
+Code that can be executed correctly regardless of its memory address at runtime is called **position-independent code** (PIC). Generally speaking, it avoids absolute addresses in favor of relative addressing.
+
+%%ANKI
+Basic
+What is position-independent code?
+Back: Code that can be executed correctly regardless of its memory address at runtime.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1742151941018-->
+END%%
+
+%%ANKI
+Basic
+What is PIC an acronym for?
+Back: **P**osition-**I**ndependent **C**ode.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1742151941022-->
+END%%
+
+%%ANKI
+Basic
+What does the `-fpic` compiler flag specify?
+Back: Position-independent code.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1742151941024-->
+END%%
+
+%%ANKI
+Cloze
+{Shared} object files *must* be compiled with the {`-fpic`} flag.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1742151941026-->
+END%%
+
+%%ANKI
+Basic
+What name is given to code that executes correctly regardless of its memory address?
+Back: Position-independent code (PIC).
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1742151941028-->
+END%%
+
+%%ANKI
+Cloze
+References to symbols in the same executable require {PC-relative} addressing to be considered {PIC}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1742151941029-->
 END%%
 
 ## Bibliography

@@ -351,7 +351,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f(x)$ be a function and $k$ be a constant. What kind of transformations is $f(x) + k$?
+Let $f(x)$ be a function and $k$ be a constant. What kind of transformation is $f(x) + k$?
 Back: A vertical shift.
 Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 <!--ID: 1733520215016-->

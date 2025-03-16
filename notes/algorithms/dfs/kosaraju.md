@@ -18,15 +18,15 @@ Assuming an [[data-structures/graphs#Adjacency-List|adjacency-list]] representat
 
 %%ANKI
 Basic
-Let $G = \langle V, E \rangle$ be a directed graph. What does its "component graph" refer to?
-Back: The graph formed by viewing all SCC as a single node.
+Let $G = \langle V, E \rangle$ be a directed graph. What does its "underlying component graph" refer to?
+Back: The graph formed by viewing each SCC as a single node.
 Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
 <!--ID: 1741270294202-->
 END%%
 
 %%ANKI
 Basic
-Let $G = \langle V, E \rangle$ be a directed graph. When its $G$'s component graph the same as $G$?
+Let $G = \langle V, E \rangle$ be a directed graph. When $G$'s component graph the same as $G$?
 Back: When $G$ is acyclic.
 Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
 <!--ID: 1741270294206-->
@@ -89,6 +89,78 @@ Assuming an adjacency-list representation, what is the runtime of Kosaraju's alg
 Back: $\Theta(\lvert V \rvert + \lvert E \rvert)$
 Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
 <!--ID: 1741270294227-->
+END%%
+
+%%ANKI
+Basic
+Describe the DFS-based algorithm used to find an undirected graph's components?
+Back: Perform DFS like normal. Each tree in the forest is a component.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1742148753835-->
+END%%
+
+%%ANKI
+Basic
+Perform DFS on an undirected graph. When is the undirected graph connected?
+Back: When only one tree exists in the produced forest.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1742148753837-->
+END%%
+
+%%ANKI
+Basic
+What is the theoretical minimum number of nodes needed to be processed to find all SCCs in a digraph?
+Back: The same number as SCCs.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1742150391932-->
+END%%
+
+%%ANKI
+Basic
+Suppose digraph $G = \langle V, E \rangle$ has $n$ SCCs. What is the minimum number of vertices we have to examine in $G$ to find them all?
+Back: $n$.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1742150391933-->
+END%%
+
+%%ANKI
+Basic
+Suppose digraph $G = \langle V, E \rangle$ has $n$ SCCs. What is the maximum number of vertices we have to examine in $G$ to find them all?
+Back: $\lvert V \rvert$.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1742150391934-->
+END%%
+
+%%ANKI
+Basic
+What vertices of digraph $G$ make up the vertices of its underlying component graph?
+Back: The equivalence classes of mutually reachable vertices.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1742150391935-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be a digraph. What are the edges of its underlying component graph?
+Back: An edge exists between two SCCs if there exists an edge between any members of the two SCCs in question.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1742150391936-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for Kosaraju's algorithm to *not* use topological sorting?
+Back: Directed graphs with cycles don't have a topolocial sort.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1742150391937-->
+END%%
+
+%%ANKI
+Basic
+Why is it a misnomer to say Kosaraju's algorithm employs topological sort?
+Back: Directed graphs with cycles don't have a topolocial sort.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1742150391938-->
 END%%
 
 ## Bibliography
