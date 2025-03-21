@@ -1786,6 +1786,38 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1739146532585-->
 END%%
 
+%%ANKI
+Basic
+What cardinal number does $\aleph_0 \cdot 2^{\aleph_0}$ evaluate to?
+Back: $2^{\aleph_0}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1742391755125-->
+END%%
+
+%%ANKI
+Basic
+What lower and upper bounds can be used to prove $\aleph_0 \cdot 2^{\aleph_0} = 2^{\aleph_0}$?
+Back: $2^{\aleph_0} \leq \aleph_0 \cdot 2^{\aleph_0} \leq 2^{\aleph_0} \cdot 2^{\aleph_0}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1742391755132-->
+END%%
+
+%%ANKI
+Basic
+Translate the following into language using sets: $$\aleph_0 \leq \kappa \text{ for any infinite cardinal } \kappa$$
+Back: $\omega \preceq A$ for any infinite set $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1742391755138-->
+END%%
+
+%%ANKI
+Basic
+Translate the following into language using cardinal numbers: $$\omega \preceq A \text{ for any infinite set } A$$
+Back: $\aleph_0 \leq \kappa$ for any infinite cardinal $\kappa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1742391755144-->
+END%%
+
 ## Hilbert's Hotel
 
 Consider a hypothetical hotel with rooms numbered $1$, $2$, $3$, and so on with no upper limit. That is, there is a countably infinite number of rooms in this hotel. Furthermore, it's assumed every room is occupied.

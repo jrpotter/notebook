@@ -274,7 +274,7 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1740669678010-->
 END%%
 
-### Degrees and Radians
+## Degrees and Radians
 
 Angles are measures in **degrees** and **radians**.
 
@@ -466,6 +466,101 @@ Let the measure of some angle evaluate to $2\degree$. Are we using radians or de
 Back: Degrees.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1742164993456-->
+END%%
+
+On a circle of radius $r$, the arc length $s$ intercepted by a central angle with radian measure $\theta$ is $$s = r\theta.$$
+
+Notice then that a radian measure is a ratio of two lengths (the quotient of the length of an arc by a radius of a circle), which makes radian measure a dimensionless quantity.
+
+%%ANKI
+Cloze
+A circle with radius {1:$1$} has circumference {2:$2\pi$} whereas a circle with radius {2:$r$} has circumference {1:$2\pi r$}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742389899446-->
+END%%
+
+%%ANKI
+Basic
+On a circle of radius $r$, the arc length $s$ intercepted by a central angle with radian measure $\theta$ is what?
+Back: $s = r\theta$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742389899451-->
+END%%
+
+%%ANKI
+Basic
+What is the length of the red arc?
+![[arc-length-scale.png]]
+Back: $\theta$ radians.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742389899456-->
+END%%
+
+%%ANKI
+Basic
+What is the length of the blue arc?
+![[arc-length-scale.png]]
+Back: $r\theta$ radians.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742389899461-->
+END%%
+
+%%ANKI
+Basic
+How does the length of the blue arc relate to that of the red?
+![[arc-length-scale.png]]
+Back: It is longer by a factor of $r$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742389899465-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the blue arc length $r$ times that of the red arc length?
+![[arc-length-scale.png]]
+Back: The ratio of circumferences of the circles is $r$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742389899469-->
+END%%
+
+%%ANKI
+Basic
+A radian measure is a ratio of what two lengths?
+Back: Arc length over radius.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742390905691-->
+END%%
+
+%%ANKI
+Basic
+What technical reason explains why radian measure is dimensionless?
+Back: It is defined as the ratio between arc length of a circle and its radius (units cancel).
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742390905694-->
+END%%
+
+%%ANKI
+Basic
+What is the following ratio known as? $$\frac{\text{arc length}}{\text{radius}}$$
+Back: A radian measure.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742390905697-->
+END%%
+
+%%ANKI
+Basic
+What is the following multiple known as? $$\text{radian measure} \cdot \text{radius}$$
+Back: Arc length.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742390905700-->
+END%%
+
+%%ANKI
+Basic
+What does the following evaluate to? $$\frac{\text{arc length}}{\text{radian measure}}$$
+Back: The radius of the circle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1742390905709-->
 END%%
 
 ## Bibliography

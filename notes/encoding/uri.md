@@ -228,7 +228,7 @@ END%%
 Cloze
 The authority of a URI has the following generic syntax:
 
-{`[<userinfo>@]`}{`<host>`}{`[:<port>]`}
+`//`{`[<userinfo>@]`}{`<host>`}{`[:<port>]`}
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722211744669-->
 END%%
@@ -268,7 +268,7 @@ END%%
 %%ANKI
 Basic
 The following URI specifies what authority? $$\text{ldap://[2001:db8::7]/c=GB?objectClass?one}$$
-Back: `[2001:db8::7]`
+Back: `//[2001:db8::7]`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790223-->
 END%%
@@ -340,7 +340,7 @@ END%%
 %%ANKI
 Basic
 The following URI specifies what authority? $$\text{telnet://192.0.2.16:80/}$$
-Back: `192.0.2.16:80`
+Back: `//192.0.2.16:80`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790272-->
 END%%

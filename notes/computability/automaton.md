@@ -1063,11 +1063,20 @@ END%%
 
 %%ANKI
 Basic
-Which states in the following DFA are redundant?
+Assuming start state $\{3\}$, which states in the following DFA are redundant?
 ![[dfa-redundant-states.png]]
 Back: $\{1\}$ and $\{1, 2\}$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1740343331741-->
+END%%
+
+%%ANKI
+Basic
+Assuming start state $\{3\}$, *why* is state $\{1\}$ redundant in the following DFA?
+![[dfa-redundant-states.png]]
+Back: $\{1\}$ has no incoming transition.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1742390157667-->
 END%%
 
 ## Regular Operations
