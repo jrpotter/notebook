@@ -316,105 +316,6 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1735081276210-->
 END%%
 
-## Parenthesis Theorem
-
-In any depth-first search of a graph, for any two vertices $u$ and $v$, exactly one of the following three conditions holds:
-
-1. The intervals $[u{.}d, u{.}f]$ and $[v{.}d, v{.}f]$ are disjoint.
-	* No ancestor-descendant relation exists between $u$ and $v$.
-2. The interval $[u{.}d, u{.}f]$ is contained entirely within $[v{.}d, v{.}f]$.
-	* $u$ is a descendant of $v$.
-3. The interval $[v{.}d, v{.}f]$ is contained entirely within $[u{.}d, u{.}f]$.
-	* $v$ is a descendant of $u$.
-
-%%ANKI
-Basic
-What aspect of DFS has parenthesis structure?
-Back: The discovery and finish timestamps of vertices.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735081276202-->
-END%%
-
-%%ANKI
-Basic
-Let $u$ be a vertex. What does $u{.}d$ refer to?
-Back: When vertex $u$ was discovered during DFS.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735785232417-->
-END%%
-
-%%ANKI
-Basic
-Let $u$ be a vertex. What does $u{.}f$ refer to?
-Back: When vertex $u$ was finished processing during DFS.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735785232423-->
-END%%
-
-%%ANKI
-Basic
-Given vertices $a$ and $b$, what does the parenthesis theorem state?
-Back: Either $[a{.}d, a{.}f]$ and $[b{.}d, b{.}f]$ are disjoint or one interval is contained entirely within the other.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735785232427-->
-END%%
-
-%%ANKI
-Basic
-If $a$ is a descendant of $b$, what can be said about their discovery and finish times?
-Back: $b{.}d < a{.}d < a{.}f < b{.}f$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735785232431-->
-END%%
-
-%%ANKI
-Basic
-If $b$ is a descendant of $a$, what can be said about their discovery and finish times?
-Back: $a{.}d < b{.}d < b{.}f < a{.}f$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735785232435-->
-END%%
-
-%%ANKI
-Basic
-If $a$ and $b$ have no ancestor-descendant relation, what can be said about their discovery and finish times?
-Back: $[a{.}d, a{.}f]$ and $[b{.}d, b{.}f]$ are disjoint.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735785232439-->
-END%%
-
-%%ANKI
-Basic
-Let $a$ and $b$ be vertices with timestamps satisfying $a{.}d < b{.}d < b{.}f < a{.}f$. What ancestor-descendant relation exists?
-Back: $b$ is a descendant of $a$.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735785232443-->
-END%%
-
-%%ANKI
-Basic
-Let $a$ and $b$ be vertices with timestamps satisfying $a{.}d < b{.}d < a{.}f < b{.}f$. What ancestor-descendant relation exists?
-Back: N/A. This is an impossible chain of inequalities.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735785232447-->
-END%%
-
-%%ANKI
-Basic
-Let $a$ and $b$ be vertices with timestamps satisfying $b{.}d < a{.}d < b{.}f < a{.}f$. What ancestor-descendant relation exists?
-Back: N/A. This is an impossible chain of inequalities.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735785232451-->
-END%%
-
-%%ANKI
-Basic
-Let $a$ and $b$ be vertices with timestamps satisfying $b{.}d < a{.}d < a{.}f < b{.}f$. What ancestor-descendant relation exists?
-Back: $a$ is a descendant of $b$.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735785232455-->
-END%%
-
 ## Edge Classification
 
 A depth-first forest can contain four different types of edges:
@@ -645,6 +546,164 @@ When performing DFS on an undirected graph, what possible edge classifications a
 Back: Tree and back.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735785623439-->
+END%%
+
+## Parenthesis Theorem
+
+In any depth-first search of a graph, for any two vertices $u$ and $v$, exactly one of the following three conditions holds:
+
+1. The intervals $[u{.}d, u{.}f]$ and $[v{.}d, v{.}f]$ are disjoint.
+	* No ancestor-descendant relation exists between $u$ and $v$.
+2. The interval $[u{.}d, u{.}f]$ is contained entirely within $[v{.}d, v{.}f]$.
+	* $u$ is a descendant of $v$.
+3. The interval $[v{.}d, v{.}f]$ is contained entirely within $[u{.}d, u{.}f]$.
+	* $v$ is a descendant of $u$.
+
+%%ANKI
+Basic
+What aspect of DFS has parenthesis structure?
+Back: The discovery and finish timestamps of vertices.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735081276202-->
+END%%
+
+%%ANKI
+Basic
+Let $u$ be a vertex. What does $u{.}d$ refer to?
+Back: When vertex $u$ was discovered during DFS.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232417-->
+END%%
+
+%%ANKI
+Basic
+Let $u$ be a vertex. What does $u{.}f$ refer to?
+Back: When vertex $u$ was finished processing during DFS.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232423-->
+END%%
+
+%%ANKI
+Basic
+Given vertices $a$ and $b$, what does the parenthesis theorem state?
+Back: Either $[a{.}d, a{.}f]$ and $[b{.}d, b{.}f]$ are disjoint or one interval is contained entirely within the other.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232427-->
+END%%
+
+%%ANKI
+Basic
+If $a$ is a descendant of $b$, what can be said about their discovery and finish times?
+Back: $b{.}d < a{.}d < a{.}f < b{.}f$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232431-->
+END%%
+
+%%ANKI
+Basic
+If $b$ is a descendant of $a$, what can be said about their discovery and finish times?
+Back: $a{.}d < b{.}d < b{.}f < a{.}f$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232435-->
+END%%
+
+%%ANKI
+Basic
+If $a$ and $b$ have no ancestor-descendant relation, what can be said about their discovery and finish times?
+Back: $[a{.}d, a{.}f]$ and $[b{.}d, b{.}f]$ are disjoint.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232439-->
+END%%
+
+%%ANKI
+Basic
+Let $a$ and $b$ be vertices with timestamps satisfying $a{.}d < b{.}d < b{.}f < a{.}f$. What ancestor-descendant relation exists?
+Back: $b$ is a descendant of $a$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232443-->
+END%%
+
+%%ANKI
+Basic
+Let $a$ and $b$ be vertices with timestamps satisfying $a{.}d < b{.}d < a{.}f < b{.}f$. What ancestor-descendant relation exists?
+Back: N/A. This is an impossible chain of inequalities.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232447-->
+END%%
+
+%%ANKI
+Basic
+Let $a$ and $b$ be vertices with timestamps satisfying $b{.}d < a{.}d < b{.}f < a{.}f$. What ancestor-descendant relation exists?
+Back: N/A. This is an impossible chain of inequalities.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232451-->
+END%%
+
+%%ANKI
+Basic
+Let $a$ and $b$ be vertices with timestamps satisfying $b{.}d < a{.}d < a{.}f < b{.}f$. What ancestor-descendant relation exists?
+Back: $a$ is a descendant of $b$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1735785232455-->
+END%%
+
+### White-Path Theorem
+
+In a depth-first forest of a directed or undirected graph $G = \langle V, E \rangle$, vertex $v$ is a descendant of vertex $u$ if and only if at the time $u{.}d$ that the search discovers $u$, there is a path from $u$ to $v$ consisting entirely of white vertices.
+
+%%ANKI
+Basic
+The white-path theorem is related to which search algorithm?
+Back: DFS.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324047-->
+END%%
+
+%%ANKI
+Basic
+Which propositional operator is used in the statement of the white-path theorem?
+Back: The biconditional.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324049-->
+END%%
+
+%%ANKI
+Basic
+Does the white-path theorem apply to directed graphs?
+Back: Yes.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324050-->
+END%%
+
+%%ANKI
+Basic
+Does the white-path theorem apply to undirected graphs?
+Back: Yes.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324051-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be a graph. What does the white-path theorem state?
+Back: $v$ is a descendant of $u$ in a depth-first forest of $G$ if and only if at $u{.}d$ there exists a path of only white vertices from $u$ to $v$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324052-->
+END%%
+
+%%ANKI
+Cloze
+Let $G = \langle V, E \rangle$ be a graph. The white-path theorem states $v$ is a {1:descendant} of $u$ in a {2:depth-first forest} of $G$ if and only if at {3:$u{.}d$} there exists a path of only {4:white vertices} from {4:$u$} to {4:$v$}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324053-->
+END%%
+
+%%ANKI
+Basic
+The white-path theorem is a consequence of what other DFS based theorem?
+Back: The parenthesis theorem.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324054-->
 END%%
 
 ## Bibliography

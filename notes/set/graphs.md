@@ -724,7 +724,9 @@ END%%
 
 ## Walks
 
-Let $G = (V, E)$ be a graph. A **walk** of $G$ is a sequence of vertices such that consecutive vertices in the sequence are adjacent in $G$. More precisely, a walk (of length $k$) from vertex $v_0$ to vertex $v_k$ is a sequence $w = \langle v_0, v_1, \ldots, v_k \rangle$ of vertices such that $(v_{i-1}, v_i) \in E$ for $i = 1, 2, \ldots, k$. We say $v_k$ is **reachable** from $v_0$ via $w$.
+Let $G = (V, E)$ be a graph. A **walk** of $G$ is a sequence of vertices such that consecutive vertices in the sequence are adjacent in $G$. More precisely, a walk (of length $k$) from vertex $v_0$ to vertex $v_k$ is a sequence $w = \langle v_0, v_1, \ldots, v_k \rangle$ of vertices such that $(v_{i-1}, v_i) \in E$ for $i = 1, 2, \ldots, k$.
+
+We say $v_k$ is **reachable** from $v_0$ via $w$. We denote reachability of $v_k$ from $v_0$ as $v_0 \leadsto v_k$.
 
 %%ANKI
 Basic
@@ -732,6 +734,22 @@ What is a walk of (say) graph $G$?
 Back: A sequence of vertices such that consecutive vertices in the sequence are adjacent in $G$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1710807788307-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ and $v_1, v_2 \in V$. What does $v_1 \leadsto v_2$ denote?
+Back: That $v_2$ is reachable from $v_1$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324023-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ and $v_1, v_2 \in E$. If $v_1 \leadsto v_2$ is true, what exists?
+Back: A walk starting at $v_1$ and ending at $v_2$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324027-->
 END%%
 
 %%ANKI

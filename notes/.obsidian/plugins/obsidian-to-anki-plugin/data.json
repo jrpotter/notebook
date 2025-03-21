@@ -245,7 +245,16 @@
     "angle-bac.png",
     "triangle-letters.png",
     "arc-length-scale.png",
-    "schroder-bernstein.png"
+    "schroder-bernstein.png",
+    "directed-graph-example.png",
+    "undirected-graph-example.png",
+    "cyclic-undirected-labelled.png",
+    "graph-isomorphic.png",
+    "graph-induced-subgraph.png",
+    "graph-subgraph.png",
+    "graph-non-subgraph.png",
+    "dfs.gif",
+    "dfs-edge-classification.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -426,7 +435,7 @@
     "_journal/2024-03/2024-03-17.md": "23f9672f5c93a6de52099b1b86834e8b",
     "set/directed-graph.md": "b4b8ad1be634a0a808af125fe8577a53",
     "set/index.md": "29f5f295765101fe11d821faa908b027",
-    "set/graphs.md": "0490e29221e6df150827f13b0732d079",
+    "set/graphs.md": "66922b5dbdc896bedc123ef3fcc74fed",
     "_journal/2024-03-19.md": "a0807691819725bf44c0262405e97cbb",
     "_journal/2024-03/2024-03-18.md": "2c711c50247a9880f7ed0d33b16e1101",
     "awk/variables.md": "e40a20545358228319f789243d8b9f77",
@@ -1533,9 +1542,9 @@
     "_journal/2025-03-05.md": "66d120bf73dc37991bd2df149995fe7d",
     "_journal/2025-03/2025-03-04.md": "9121533d86d835c56a8148858ef0277e",
     "_journal/2025-03/2025-03-03.md": "b0fa11fcbec56850ae234c7665283cc3",
-    "algorithms/dfs/kosaraju.md": "e549ef9a7a34719b973243ddec1df863",
+    "algorithms/dfs/kosaraju.md": "4330f7c8b2f40350cbe7b7a35f6a2882",
     "algorithms/dfs/topological-sort.md": "db7d09b53a9a382f8ea3c4bf312b5d3f",
-    "algorithms/dfs/index.md": "2e58ba258ba8258b958c008b5899b43c",
+    "algorithms/dfs/index.md": "4a208dcff5e0dc645815f1b088ec16b9",
     "_journal/2025-03-06.md": "33604a79a8e1e7f6c9de10d12f84c8a2",
     "_journal/2025-03/2025-03-05.md": "66829ff47db7c3978b78ed97de9e65a8",
     "linkers/loader.md": "3b488cc4b6cd018e7e52864c799c4e2e",
@@ -1556,7 +1565,9 @@
     "_journal/2025-03-19.md": "0d061ed6a9528e9ed2646d8272875ce2",
     "_journal/2025-03/2025-03-18.md": "68a82c4d5f2b7746770a051713d58169",
     "_journal/2025-03/2025-03-17.md": "06bae842d348465af37dd8847bc08843",
-    "_journal/2025-03/2025-03-16.md": "8d0de7b65d87840b480b8f4a102a01b2"
+    "_journal/2025-03/2025-03-16.md": "8d0de7b65d87840b480b8f4a102a01b2",
+    "_journal/2025-03-20.md": "ecdddf0f927214d4ab5f32aec5510008",
+    "_journal/2025-03/2025-03-19.md": "b5cd884b31fef3edaff528bf5296129e"
   },
   "fields_dict": {
     "Basic": [

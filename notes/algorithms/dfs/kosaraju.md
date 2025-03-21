@@ -163,6 +163,131 @@ Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [ht
 <!--ID: 1742150391938-->
 END%%
 
+%%ANKI
+Basic
+With respect to DFS, what does the discovery time of an SCC refer to?
+Back: The earliest discovery time of the vertices in the SCC.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324031-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be an SCC. With respect to DFS, how is the discovery time $d(C)$ defined?
+Back: As $d(C) = \min{\{v{.}d \mid v \in C\}}$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324032-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be an SCC. With respect to DFS, what does $d(C)$ denote?
+Back: The discovery time of $C$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526441075-->
+END%%
+
+%%ANKI
+Basic
+With respect to DFS, what does the finish time of an SCC refer to?
+Back: The latest discovery time of the vertices in the SCC.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324034-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be an SCC. With respect to DFS, how is the finish time $f(C)$ defined?
+Back: As $f(C) = \max{\{v{.}f \mid v \in C\}}$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324039-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be an SCC. With respect to DFS, what does $f(C)$ denote?
+Back: The finish time of $C$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526441079-->
+END%%
+
+%%ANKI
+Cloze
+The {1:discovery} time of an SCC corresponds to a {2:minimum} whereas the {2:finish} time of an SCC corresponds to a {1:maximum}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324040-->
+END%%
+
+%%ANKI
+Basic
+Which two theorems does Cormen et al. use to characterize when one vertex is a descendant of another in a depth-first foreset?
+Back: The parenthesis theorem and white-path theorem.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324041-->
+END%%
+
+%%ANKI
+Basic
+*Why* can't $v_2 \leadsto v_1$ given:
+1. Digraph $G = \langle V, E \rangle$
+2. SCCs $C_1$ and $C_2$
+3. Vertices $u_1, v_1 \in C_1$ and $u_2, v_2 \in C_2$
+4. $u_1 \leadsto u_2$
+Back: N/A. This is true only if $C_1$ and $C_2$ are distinct.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324042-->
+END%%
+
+%%ANKI
+Basic
+*Why* can't $v_2 \leadsto v_1$ given:
+1. Digraph $G = \langle V, E \rangle$
+2. Distinct SCCs $C_1$ and $C_2$
+3. Vertices $u_1, v_1 \in C_1$ and $u_2, v_2 \in C_2$
+4. $u_1 \leadsto u_2$
+Back: Because then the vertices of $C_1$ and $C_2$ would be mutually reachable.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324044-->
+END%%
+
+%%ANKI
+Basic
+How must $d(C_1)$ and $d(C_2)$ relate given:
+1. Digraph $G = \langle V, E \rangle$
+2. Distinct SCCs $C_1$ and $C_2$
+3. $\langle u, v \rangle \in E$ such that $u \in C_1$ and $v \in C_2$
+Back: Either $d(C_1) < d(C_2)$ or $d(C_1) > d(C_2)$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324045-->
+END%%
+
+%%ANKI
+Basic
+How must $f(C_1)$ and $f(C_2)$ relate given:
+1. Digraph $G = \langle V, E \rangle$
+2. Distinct SCCs $C_1$ and $C_2$
+3. $\langle u, v \rangle \in E$ such that $u \in C_1$ and $v \in C_2$
+Back: $f(C_1) > f(C_2)$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526324046-->
+END%%
+
+%%ANKI
+Basic
+During DFS of a digraph, which vertex in an SCC has the earliest discovery time?
+Back: The first vertex of the SCC discovered.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526773772-->
+END%%
+
+%%ANKI
+Basic
+During DFS of a digraph, which vertex in an SCC has the latest finish time?
+Back: The first vertex of the SCC discovered.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742526773792-->
+END%%
+
 ## Bibliography
 
 * _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
