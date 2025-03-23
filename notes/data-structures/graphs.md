@@ -387,6 +387,47 @@ Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition
 <!--ID: 1737715981561-->
 END%%
 
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be a digraph. What does $G^{\text{SCC}}$ denote?
+Back: $G$'s underlying (strongly connected) components graph.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742764343357-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be a directed graph. What does its "underlying component graph" refer to?
+Back: The graph formed by viewing each SCC as a single node.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1741270294202-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be a directed graph. When does $G$'s component graph correspond most directly to $G$'s vertices?
+Back: When $G$ is acyclic.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1741270294206-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be a DAG. *Why* is $G$'s component graph the same as $G$?
+Back: There are no two vertices mutually reachable from one another.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1741270294209-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be a directed graph. *Why* must $G$'s component graph be acyclic?
+Back: Any two nodes that are mutually reachable are put in the same SCC.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1741270294212-->
+END%%
+
 ## Bibliography
 
+* _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
 * Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

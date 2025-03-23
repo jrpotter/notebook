@@ -254,7 +254,9 @@
     "graph-subgraph.png",
     "graph-non-subgraph.png",
     "dfs.gif",
-    "dfs-edge-classification.png"
+    "dfs-edge-classification.png",
+    "adj-list-representation.png",
+    "adj-matrix-representation.png"
   ],
   "File Hashes": {
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
@@ -839,7 +841,7 @@
     "_journal/2024-08-25.md": "e73a8edbd027d0f1a39289540eb512f2",
     "_journal/2024-08/2024-08-24.md": "563fad24740e44734a87d7c3ec46cec4",
     "algebra/abs-val.md": "a47bc08db62304eb526d15ede3e300cf",
-    "data-structures/graphs.md": "cc38b2b3f38aad99aa8ce9c7f1d2418c",
+    "data-structures/graphs.md": "6b0f2ff460cb331c5f19296925ef29ec",
     "_journal/2024-08-26.md": "5bed1b0ee34e546c31760f5a0aa5ca19",
     "_journal/2024-08/2024-08-25.md": "a3337b4658677810127350ef3e0ad146",
     "_journal/2024-08-27.md": "d9ffc6ea2128ab5a86ab5f2619206736",
@@ -983,7 +985,7 @@
     "_journal/2024-11/2024-11-21.md": "951b6034d60a40dbd8201c50abf0dbb9",
     "_journal/2024-11/2024-11-20.md": "951b6034d60a40dbd8201c50abf0dbb9",
     "_journal/2024-11/2024-11-19.md": "d879f57154cb27cb168eb1f1f430e312",
-    "set/cardinality.md": "8249c1f98a3d74d69155a2520b2f636c",
+    "set/cardinality.md": "f654534ee43b8b9773384c8e6c48eb6e",
     "geometry/area.md": "547a97e8c2ddf2f153034d304c32768f",
     "_journal/2024-11-23.md": "911f82ab8aede5ecdb96493aef64b0b9",
     "_journal/2024-11/2024-11-22.md": "51117030e2364dbce3a8d507dead86ae",
@@ -1542,9 +1544,9 @@
     "_journal/2025-03-05.md": "66d120bf73dc37991bd2df149995fe7d",
     "_journal/2025-03/2025-03-04.md": "9121533d86d835c56a8148858ef0277e",
     "_journal/2025-03/2025-03-03.md": "b0fa11fcbec56850ae234c7665283cc3",
-    "algorithms/dfs/kosaraju.md": "4330f7c8b2f40350cbe7b7a35f6a2882",
+    "algorithms/dfs/kosaraju.md": "715a235a3524fb000cb608c05ff23baf",
     "algorithms/dfs/topological-sort.md": "db7d09b53a9a382f8ea3c4bf312b5d3f",
-    "algorithms/dfs/index.md": "4a208dcff5e0dc645815f1b088ec16b9",
+    "algorithms/dfs/index.md": "782d7b624611911a5486beba9bf44716",
     "_journal/2025-03-06.md": "33604a79a8e1e7f6c9de10d12f84c8a2",
     "_journal/2025-03/2025-03-05.md": "66829ff47db7c3978b78ed97de9e65a8",
     "linkers/loader.md": "3b488cc4b6cd018e7e52864c799c4e2e",
@@ -1567,7 +1569,11 @@
     "_journal/2025-03/2025-03-17.md": "06bae842d348465af37dd8847bc08843",
     "_journal/2025-03/2025-03-16.md": "8d0de7b65d87840b480b8f4a102a01b2",
     "_journal/2025-03-20.md": "ecdddf0f927214d4ab5f32aec5510008",
-    "_journal/2025-03/2025-03-19.md": "b5cd884b31fef3edaff528bf5296129e"
+    "_journal/2025-03/2025-03-19.md": "b5cd884b31fef3edaff528bf5296129e",
+    "_journal/2025-03-23.md": "c65c05eb2b3d7d8ae90115c3a34fa0a7",
+    "_journal/2025-03/2025-03-22.md": "1895ca402d8079ee10d762efc70f392a",
+    "_journal/2025-03/2025-03-21.md": "75c671a6a9a7314134bbc587c04b3baf",
+    "_journal/2025-03/2025-03-20.md": "fcd0cab0f2632b2aaace9a5cd8d011b4"
   },
   "fields_dict": {
     "Basic": [

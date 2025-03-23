@@ -1228,6 +1228,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1735074143712-->
 END%%
 
+%%ANKI
+Basic
+What simpler cardinal number does $(2^{\aleph_0})^{\aleph_0}$ evaluate to?
+Back: $2^{\aleph_0}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1742762630254-->
+END%%
+
 ## Ordering
 
 A set $A$ is **dominated** by a set $B$, written $A \preceq B$, if and only if there is a one-to-one function from $A$ into $B$. In other words, $A \preceq B$ if and only if $A$ is equinumerous to some subset of $B$. Then $$\mathop{\text{card}}A \leq \mathop{\text{card}}B \text{ if and only if } A \preceq B.$$

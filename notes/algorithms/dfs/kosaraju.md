@@ -18,38 +18,6 @@ Assuming an [[data-structures/graphs#Adjacency-List|adjacency-list]] representat
 
 %%ANKI
 Basic
-Let $G = \langle V, E \rangle$ be a directed graph. What does its "underlying component graph" refer to?
-Back: The graph formed by viewing each SCC as a single node.
-Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
-<!--ID: 1741270294202-->
-END%%
-
-%%ANKI
-Basic
-Let $G = \langle V, E \rangle$ be a directed graph. When $G$'s component graph the same as $G$?
-Back: When $G$ is acyclic.
-Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
-<!--ID: 1741270294206-->
-END%%
-
-%%ANKI
-Basic
-Let $G = \langle V, E \rangle$ be a DAG. *Why* is $G$'s component graph the same as $G$?
-Back: There are no two vertices mutually reachable from one another.
-Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
-<!--ID: 1741270294209-->
-END%%
-
-%%ANKI
-Basic
-Let $G = \langle V, E \rangle$ be a directed graph. *Why* must $G$'s component graph be acyclic?
-Back: Any two nodes that are mutually reachable are put in the same SCC.
-Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
-<!--ID: 1741270294212-->
-END%%
-
-%%ANKI
-Basic
 What does Kosaraju's algorithm input?
 Back: A directed graph.
 Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
@@ -286,6 +254,65 @@ During DFS of a digraph, which vertex in an SCC has the latest finish time?
 Back: The first vertex of the SCC discovered.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1742526773792-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be a digraph with distinct SCCs $C_1$ and $C_2$. If $u \in C_1$, $v \in C_2$, and $\langle u, v \rangle \in E$, what edge(s) cannot exist in $E$?
+Back: Any edge $\langle v', u' \rangle$ where $v' \in C_2$ and $u' \in C_1$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742764343369-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be a digraph with distinct SCCs $C_1$ and $C_2$. If $f(C_1) > f(C_2)$, what edge(s) cannot exist in $E$?
+Back: Any edge $\langle u, v \rangle$ with $u \in C_2$ and $v \in C_1$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742764343385-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be a digraph with distinct SCCs $C_1$ and $C_2$. If $f(C_2) > f(C_1)$, what edge(s) cannot exist in $E$?
+Back: Any edge $\langle u, v \rangle$ with $u \in C_1$ and $v \in C_2$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742764343389-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be a digraph with distinct SCCs $C_1$ and $C_2$. If $f(C_1) > f(C_2)$, what edge(s) cannot exist in $E^T$?
+Back: Any edge $\langle u, v \rangle$ with $u \in C_1$ and $v \in C_2$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742764343393-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be a digraph with distinct SCCs $C_1$ and $C_2$. If $f(C_2) > f(C_1)$, what edge(s) cannot exist in $E^T$?
+Back: Any edge $\langle u, v \rangle$ with $u \in C_2$ and $v \in C_1$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742764343398-->
+END%%
+
+%%ANKI
+Basic
+With respect to DFS, edges between two distinct SCCs of a graph cannot be classified in what way?
+Back: As back edges.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1742765507113-->
+END%%
+
+%%ANKI
+Cloze
+Kosaraju's algorithm on digraph $G$ is summarized as the following steps:
+1. {Call $\text{DFS}(G)$ to compute finish times $u{.}f$ for each vertex $u$}.
+2. {Create $G^T$}.
+3. {Call $\text{DFS}(G^T)$ in order of decreasing $u{.}f$ emitted in (1)}.
+4. {Output each depth-first tree in (3) as a separate SCC}.
+Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
+<!--ID: 1742765507122-->
 END%%
 
 ## Bibliography

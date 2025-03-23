@@ -548,6 +548,38 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1735785623439-->
 END%%
 
+%%ANKI
+Basic
+Consider DFS on digraph $G = \langle V, E \rangle$. If $\langle u, v \rangle$ is a tree edge, how do $u{.}f$ and $v{.}f$ relate?
+Back: $u{.}f > v{.}f$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742765507128-->
+END%%
+
+%%ANKI
+Basic
+Consider DFS on digraph $G = \langle V, E \rangle$. If $\langle u, v \rangle$ is a back edge, how do $u{.}f$ and $v{.}f$ relate?
+Back: $v{.}f > u{.}f$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742765507131-->
+END%%
+
+%%ANKI
+Basic
+Consider DFS on digraph $G = \langle V, E \rangle$. If $\langle u, v \rangle$ is a forward edge, how do $u{.}f$ and $v{.}f$ relate?
+Back: $u{.}f > v{.}f$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742765507140-->
+END%%
+
+%%ANKI
+Basic
+Consider DFS on digraph $G = \langle V, E \rangle$. If $\langle u, v \rangle$ is a cross edge, how do $u{.}f$ and $v{.}f$ relate?
+Back: $u{.}f > v{.}f$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1742765507144-->
+END%%
+
 ## Parenthesis Theorem
 
 In any depth-first search of a graph, for any two vertices $u$ and $v$, exactly one of the following three conditions holds:
