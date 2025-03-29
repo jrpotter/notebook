@@ -888,6 +888,13 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1719683703736-->
 END%%
 
+%%ANKI
+Cloze
+{1:Right} inverse are to {2:surjections} as {2:left} inverses are to {1:injections}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1742768406146-->
+END%%
+
 ## Bijections
 
 A function is **bijective** or a **one-to-one correspondence** if each element of the codomain is mapped to by exactly one element of the domain.

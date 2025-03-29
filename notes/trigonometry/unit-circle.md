@@ -311,6 +311,208 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737347197477-->
 END%%
 
+## Reference Arcs
+
+Certain values are common enough to warrant memorizing:
+
+* $\cos{(\pi / 6)} = \sqrt{3} / 2$
+* $\sin{(\pi / 6)} = 1 / 2$
+* $\cos{(\pi / 4)} = \sqrt{2} / 2$
+* $\sin{(\pi / 4)} = \sqrt{2} / 2$
+* $\cos{(\pi / 3)} = 1 / 2$
+* $\sin{(\pi / 3)} = \sqrt{3} / 2$
+
+%%ANKI
+Cloze
+An angle of {$90$}$\degree$ corresponds to {$\pi / 2$} radians.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1740671218355-->
+END%%
+
+%%ANKI
+Cloze
+An angle of {$180$}$\degree$ corresponds to {$\pi$} radians.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1740671218360-->
+END%%
+
+%%ANKI
+Cloze
+An angle of {$270$}$\degree$ corresponds to {$3\pi / 2$} radians.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1740671218366-->
+END%%
+
+%%ANKI
+Cloze
+An angle of {$360$}$\degree$ corresponds to {$2\pi$} radians.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1740671218370-->
+END%%
+
+%%ANKI
+Cloze
+An angle of {$30$}$\degree$ corresponds to {$\pi / 6$} radians.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743257537260-->
+END%%
+
+%%ANKI
+Cloze
+An angle of {$45$}$\degree$ corresponds to {$\pi / 4$} radians.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743257537285-->
+END%%
+
+%%ANKI
+Basic
+In degrees, what three angles are typically highlighted in the first quadrant of the unit circle?
+Back: $30\degree$, $45\degree$, and $60\degree$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743257537312-->
+END%%
+
+%%ANKI
+Basic
+In radians, what three angles are typically highlighted in the first quadrant of the unit circle?
+Back: $\pi / 6$, $\pi / 4$, and $\pi / 3$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743257537324-->
+END%%
+
+%%ANKI
+Basic
+What special triangle does $\pi / 6$ correspond to?
+Back: A $30$-$60$-$90$ right triangle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258911386-->
+END%%
+
+%%ANKI
+Basic
+What special triangle does $\pi / 3$ correspond to?
+Back: A $30$-$60$-$90$ right triangle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258911392-->
+END%%
+
+%%ANKI
+Basic
+What special triangle does $\pi / 4$ correspond to?
+Back: A $45$-$45$-$90$ right triangle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258911395-->
+END%%
+
+%%ANKI
+Cloze
+An angle of {$60$}$\degree$ corresponds to {$\pi / 3$} radians.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743257537330-->
+END%%
+
+%%ANKI
+Basic
+Assume hypotenuse of length $1$. How long is the base of the following triangle?
+![[triangle-30-60-90.png]]
+Back: $\sqrt{3} / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258229811-->
+END%%
+
+%%ANKI
+Basic
+Assume hypotenuse of length $1$. What is the altitude of the following triangle?
+![[triangle-30-60-90.png]]
+Back: $1 / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258229836-->
+END%%
+
+%%ANKI
+Basic
+Assume hypotenuse of length $1$. How long is the base of the following triangle?
+![[triangle-45-45-90.png]]
+Back: $\sqrt{2} / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258229842-->
+END%%
+
+%%ANKI
+Basic
+Assume hypotenuse of length $1$. What is the altitude of the following triangle?
+![[triangle-45-45-90.png]]
+Back: $\sqrt{2} / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258229847-->
+END%%
+
+%%ANKI
+Basic
+Assume hypotenuse of length $1$. How long is the base of the following triangle?
+![[triangle-60-30-90.png]]
+Back: $1 / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258229853-->
+END%%
+
+%%ANKI
+Basic
+Assume hypotenuse of length $1$. What is the altitude of the following triangle?
+![[triangle-60-30-90.png]]
+Back: $\sqrt{3} / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258229858-->
+END%%
+
+%%ANKI
+Basic
+What does $\cos{(\pi / 6)}$ evaluate to?
+Back: $\sqrt{3} / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258911399-->
+END%%
+
+%%ANKI
+Basic
+What does $\sin{(\pi / 6)}$ evaluate to?
+Back: $1 / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258911402-->
+END%%
+
+%%ANKI
+Basic
+What does $\cos{(\pi / 4)}$ evaluate to?
+Back: $\sqrt{2} / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258911405-->
+END%%
+
+%%ANKI
+Basic
+What does $\sin{(\pi / 4)}$ evaluate to?
+Back: $\sqrt{2} / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258911409-->
+END%%
+
+%%ANKI
+Basic
+What does $\cos{(\pi / 3)}$ evaluate to?
+Back: $1 / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258911412-->
+END%%
+
+%%ANKI
+Basic
+What does $\sin{(\pi / 3)}$ evaluate to?
+Back: $\sqrt{3} / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1743258911416-->
+END%%
+
 ## Bibliography
 
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.

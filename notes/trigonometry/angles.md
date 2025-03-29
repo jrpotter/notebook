@@ -346,31 +346,11 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 END%%
 
 %%ANKI
-Cloze
-An angle of {$90$}$\degree$ corresponds to {$\pi / 2$} radians.
+Basic
+How are angles of triangles conventionally measured?
+Back: Using degrees.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1740671218355-->
-END%%
-
-%%ANKI
-Cloze
-An angle of {$180$}$\degree$ corresponds to {$\pi$} radians.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1740671218360-->
-END%%
-
-%%ANKI
-Cloze
-An angle of {$270$}$\degree$ corresponds to {$3\pi / 2$} radians.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1740671218366-->
-END%%
-
-%%ANKI
-Cloze
-An angle of {$360$}$\degree$ corresponds to {$2\pi$} radians.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1740671218370-->
+<!--ID: 1743257537335-->
 END%%
 
 %%ANKI
