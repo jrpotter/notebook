@@ -80,7 +80,7 @@ END%%
 
 %%ANKI
 Basic
-The relation form of AoC posits the existence of what mathematical object?
+The relation form of AoC asserts the existence of what mathematical object?
 Back: A function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720964209631-->
@@ -88,15 +88,30 @@ END%%
 
 %%ANKI
 Basic
-Given relation $R$, AoC implies existence of function $F$. How does $F$ relate to $R$?
+Given relation $R$, the relation form of AoC asserts existence of function $F$. How does $F$ relate to $R$?
 Back: $F \subseteq R$ and $\mathop{\text{dom}} F = \mathop{\text{dom}} R$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720964209636-->
 END%%
 
-### Infinite Cartesian Product Form
+%%ANKI
+Basic
+Given relation $R$, the relation form of AoC asserts existence of function $F$. What does $\mathop{\text{dom}}F$ evaluate to?
+Back: $\mathop{\text{dom}} R$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
 
-For any set $I$ and function $H$ with domain $I$, if $H(i) \neq \varnothing$ for all $i \in I$, then $\bigtimes_{i \in I} H(i) \neq \varnothing$.
+%%ANKI
+Cloze
+For any relation $R$, the relation form of AoC asserts existence of function $F$ satisfying:
+1. {$F \subseteq R$}
+2. {$\mathop{\text{dom}}F = \mathop{\text{dom}}R$}
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+### Multiplicative Form
+
+For any set $I$ and function $H$ with domain $I$, if $H(i) \neq \varnothing$ for all $i \in I$, then $\bigtimes_{i \in I} H(i) \neq \varnothing$. Note this statement relies on the [[set#Cartesian Product|Cartesian product]] of infinite sets. 
 
 %%ANKI
 Basic
@@ -120,6 +135,99 @@ What is the consequent used in the multiplicative form of AoC?
 Back: $\bigtimes_{i \in I} H(i) \neq \varnothing$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720964209648-->
+END%%
+
+%%ANKI
+Basic
+Let $H$ be a function with domain $I$. Set $\bigtimes_{i \in I} H(i)$ has what kind of mathematical entity as members?
+Back: Functions.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+%%ANKI
+Basic
+The multiplicative form of AoC asserts the existence of what mathematical object?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+%%ANKI
+Basic
+Let $H$ be a function with domain $I$. A member $F \in \bigtimes_{i \in I} H(i)$ has what domain?
+Back: $\mathop{\text{dom}} F = I$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+### Covering Form
+
+For any set $A$, there exists a function $F$ with $\mathop{\text{dom}}(F) = \mathscr{P}(A) - \{\varnothing\}$ such that $F(B) \in B$ for all $B \in \mathop{\text{dom}}(F)$.
+
+%%ANKI
+Basic
+What does the covering form of AoC state?
+Back: For any set $A$, there exists a function $F \colon \mathscr{P}(A) - \{\varnothing\}$ such that $F(B) \in B$ for every $B \in \mathop{\text{dom}} F$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+%%ANKI
+Basic
+The covering form of AoC asserts the existence of what mathematical object?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+%%ANKI
+Basic
+For any set $A$, the covering form of AoC asserts existence of function $F$. What does $\mathop{\text{dom}}F$ evaluate to?
+Back: $\mathscr{P}(A) - \{\varnothing\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+%%ANKI
+Basic
+For any set $A$, the covering form of AoC asserts existence of function $F$. What property does $F$ satisfy?
+Back: $F(B) \in B$ for all $B \in \mathscr{P}(A) - \{\varnothing\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+%%ANKI
+Cloze
+For any set $A$, the covering form of AoC asserts existence of function $F$ satisfying:
+1. {$\mathop{\text{dom}}F = \mathscr{P}(A) - \{\varnothing\}$}
+2. {$\forall B \in \mathop{\text{dom}} F, F(B) \in B$}
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+### Partition Form
+
+Let $P$ be a [[order#Partitions|partition]] of set $A$. Then there exists a set $B$ containing exactly one element from each member of $P$.
+
+%%ANKI
+Basic
+What does the covering form of AoC state?
+Back: Let $P$ be a partition of set $A$. Then there exists a set $B$ containing exactly one element from each member of $P$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+%%ANKI
+Basic
+The partition form of AoC asserts the existence of what mathematical object?
+Back: A set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+%%ANKI
+Basic
+Let $P$ be a partition of set $A$. What does the partition form of AoC assert existence of?
+Back: A set $B$ containing exactly one member from each member of $P$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+%%ANKI
+Cloze
+Let $P$ be a partition of set $A$. The partition form of AoC asserts existence of set $C$ satisfying:
+1. {$\forall B \in P, \exists!\, b \in B, b \in C$}
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 END%%
 
 ## Bibliography
