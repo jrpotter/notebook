@@ -99,6 +99,7 @@ Basic
 Given relation $R$, the relation form of AoC asserts existence of function $F$. What does $\mathop{\text{dom}}F$ evaluate to?
 Back: $\mathop{\text{dom}} R$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743376072883-->
 END%%
 
 %%ANKI
@@ -107,6 +108,7 @@ For any relation $R$, the relation form of AoC asserts existence of function $F$
 1. {$F \subseteq R$}
 2. {$\mathop{\text{dom}}F = \mathop{\text{dom}}R$}
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743376072886-->
 END%%
 
 ### Multiplicative Form
@@ -142,6 +144,7 @@ Basic
 Let $H$ be a function with domain $I$. Set $\bigtimes_{i \in I} H(i)$ has what kind of mathematical entity as members?
 Back: Functions.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743376072888-->
 END%%
 
 %%ANKI
@@ -149,6 +152,7 @@ Basic
 The multiplicative form of AoC asserts the existence of what mathematical object?
 Back: A function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743376072889-->
 END%%
 
 %%ANKI
@@ -156,6 +160,7 @@ Basic
 Let $H$ be a function with domain $I$. A member $F \in \bigtimes_{i \in I} H(i)$ has what domain?
 Back: $\mathop{\text{dom}} F = I$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743376072891-->
 END%%
 
 ### Covering Form
@@ -167,6 +172,7 @@ Basic
 What does the covering form of AoC state?
 Back: For any set $A$, there exists a function $F \colon \mathscr{P}(A) - \{\varnothing\}$ such that $F(B) \in B$ for every $B \in \mathop{\text{dom}} F$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743376072892-->
 END%%
 
 %%ANKI
@@ -174,6 +180,7 @@ Basic
 The covering form of AoC asserts the existence of what mathematical object?
 Back: A function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743376072893-->
 END%%
 
 %%ANKI
@@ -181,6 +188,7 @@ Basic
 For any set $A$, the covering form of AoC asserts existence of function $F$. What does $\mathop{\text{dom}}F$ evaluate to?
 Back: $\mathscr{P}(A) - \{\varnothing\}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743376072894-->
 END%%
 
 %%ANKI
@@ -188,6 +196,7 @@ Basic
 For any set $A$, the covering form of AoC asserts existence of function $F$. What property does $F$ satisfy?
 Back: $F(B) \in B$ for all $B \in \mathscr{P}(A) - \{\varnothing\}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743376072895-->
 END%%
 
 %%ANKI
@@ -196,6 +205,7 @@ For any set $A$, the covering form of AoC asserts existence of function $F$ sati
 1. {$\mathop{\text{dom}}F = \mathscr{P}(A) - \{\varnothing\}$}
 2. {$\forall B \in \mathop{\text{dom}} F, F(B) \in B$}
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743376072896-->
 END%%
 
 ### Partition Form
@@ -214,6 +224,7 @@ Basic
 The partition form of AoC asserts the existence of what mathematical object?
 Back: A set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743376072897-->
 END%%
 
 %%ANKI
@@ -221,6 +232,7 @@ Basic
 Let $P$ be a partition of set $A$. What does the partition form of AoC assert existence of?
 Back: A set $B$ containing exactly one member from each member of $P$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743376072898-->
 END%%
 
 %%ANKI
@@ -228,6 +240,7 @@ Cloze
 Let $P$ be a partition of set $A$. The partition form of AoC asserts existence of set $C$ satisfying:
 1. {$\forall B \in P, \exists!\, b \in B, b \in C$}
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743376072899-->
 END%%
 
 ## Bibliography
