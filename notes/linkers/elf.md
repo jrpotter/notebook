@@ -36,6 +36,109 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1734356868446-->
 END%%
 
+%%ANKI
+Basic
+In ELF, which of sections or segments contains the other?
+Back: Segments contain sections.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743295591597-->
+END%%
+
+%%ANKI
+Basic
+Consider the output of `readelf -lW a.out`. How is `Offset` interpreted?
+```txt
+  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
+  PHDR           0x000040 0x0000000000400040 0x0000000000400040 0x0002d8 0x0002d8 R   0x8
+  INTERP         0x000318 0x0000000000400318 0x0000000000400318 0x00001c 0x00001c R   0x1
+      [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]
+  LOAD           0x000000 0x0000000000400000 0x0000000000400000 0x000508 0x000508 R   0x1000
+  LOAD           0x001000 0x0000000000401000 0x0000000000401000 0x000149 0x000149 R E 0x1000
+  LOAD           0x002000 0x0000000000402000 0x0000000000402000 0x0000d4 0x0000d4 R   0x1000
+  LOAD           0x002e10 0x0000000000403e10 0x0000000000403e10 0x000214 0x000218 RW  0x1000
+```
+Back: As the offset in the file the corresponding segment starts at.
+Reference: _PIC GOT PLT OMG: How Does the Procedure Linkage Table Work in Linux?_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=Ss2e6JauS0Y).
+<!--ID: 1743294422131-->
+END%%
+
+%%ANKI
+Basic
+Consider the output of `readelf -lW a.out`. Which segment contains the `.data` section?
+```txt
+Elf file type is EXEC (Executable file)
+Entry point 0x401040
+There are 13 program headers, starting at offset 64
+
+Program Headers:
+  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
+  PHDR           0x000040 0x0000000000400040 0x0000000000400040 0x0002d8 0x0002d8 R   0x8
+  INTERP         0x000318 0x0000000000400318 0x0000000000400318 0x00001c 0x00001c R   0x1
+      [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]
+  LOAD           0x000000 0x0000000000400000 0x0000000000400000 0x000508 0x000508 R   0x1000
+  LOAD           0x001000 0x0000000000401000 0x0000000000401000 0x000149 0x000149 R E 0x1000
+  LOAD           0x002000 0x0000000000402000 0x0000000000402000 0x0000d4 0x0000d4 R   0x1000
+  LOAD           0x002e10 0x0000000000403e10 0x0000000000403e10 0x000214 0x000218 RW  0x1000
+```
+Back: The `RW ` `LOAD` segment.
+Reference: _PIC GOT PLT OMG: How Does the Procedure Linkage Table Work in Linux?_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=Ss2e6JauS0Y).
+<!--ID: 1743295591602-->
+END%%
+
+%%ANKI
+Basic
+Consider the output of `readelf -lW a.out`. Which segment contains the `.bss` section?
+```txt
+  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
+  PHDR           0x000040 0x0000000000400040 0x0000000000400040 0x0002d8 0x0002d8 R   0x8
+  INTERP         0x000318 0x0000000000400318 0x0000000000400318 0x00001c 0x00001c R   0x1
+      [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]
+  LOAD           0x000000 0x0000000000400000 0x0000000000400000 0x000508 0x000508 R   0x1000
+  LOAD           0x001000 0x0000000000401000 0x0000000000401000 0x000149 0x000149 R E 0x1000
+  LOAD           0x002000 0x0000000000402000 0x0000000000402000 0x0000d4 0x0000d4 R   0x1000
+  LOAD           0x002e10 0x0000000000403e10 0x0000000000403e10 0x000214 0x000218 RW  0x1000
+```
+Back: The `RW ` `LOAD` segment.
+Reference: _PIC GOT PLT OMG: How Does the Procedure Linkage Table Work in Linux?_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=Ss2e6JauS0Y).
+<!--ID: 1743295591607-->
+END%%
+
+%%ANKI
+Basic
+Consider the output of `readelf -lW a.out`. Which segment contains the `.text` section?
+```txt
+  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
+  PHDR           0x000040 0x0000000000400040 0x0000000000400040 0x0002d8 0x0002d8 R   0x8
+  INTERP         0x000318 0x0000000000400318 0x0000000000400318 0x00001c 0x00001c R   0x1
+      [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]
+  LOAD           0x000000 0x0000000000400000 0x0000000000400000 0x000508 0x000508 R   0x1000
+  LOAD           0x001000 0x0000000000401000 0x0000000000401000 0x000149 0x000149 R E 0x1000
+  LOAD           0x002000 0x0000000000402000 0x0000000000402000 0x0000d4 0x0000d4 R   0x1000
+  LOAD           0x002e10 0x0000000000403e10 0x0000000000403e10 0x000214 0x000218 RW  0x1000
+```
+Back: The `R E` `LOAD` segment.
+Reference: _PIC GOT PLT OMG: How Does the Procedure Linkage Table Work in Linux?_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=Ss2e6JauS0Y).
+<!--ID: 1743295591611-->
+END%%
+
+%%ANKI
+Basic
+Consider the output of `readelf -lW a.out`. Why is `MemSiz` greater than `FileSiz` in the last `LOAD` segment?
+```txt
+  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
+  PHDR           0x000040 0x0000000000400040 0x0000000000400040 0x0002d8 0x0002d8 R   0x8
+  INTERP         0x000318 0x0000000000400318 0x0000000000400318 0x00001c 0x00001c R   0x1
+      [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]
+  LOAD           0x000000 0x0000000000400000 0x0000000000400000 0x000508 0x000508 R   0x1000
+  LOAD           0x001000 0x0000000000401000 0x0000000000401000 0x000149 0x000149 R E 0x1000
+  LOAD           0x002000 0x0000000000402000 0x0000000000402000 0x0000d4 0x0000d4 R   0x1000
+  LOAD           0x002e10 0x0000000000403e10 0x0000000000403e10 0x000214 0x000218 RW  0x1000
+```
+Back: The `.bss` section does not reserve any disk space.
+Reference: _PIC GOT PLT OMG: How Does the Procedure Linkage Table Work in Linux?_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=Ss2e6JauS0Y).
+<!--ID: 1743295591615-->
+END%%
+
 ## Sections
 
 A typical ELF object file contains the following sections:
@@ -485,6 +588,62 @@ Tags: c17
 <!--ID: 1734745403003-->
 END%%
 
+### `.got`
+
+The [[shared#Global Offset Table|global offset table]]. Contains 8 byte entries for each global data object.
+
+%%ANKI
+Basic
+What does the `.got` section contain?
+Back: The global offset table.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743295591620-->
+END%%
+
+%%ANKI
+Basic
+Which ELF section contains the global offset table?
+Back: `.got`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743295591625-->
+END%%
+
+%%ANKI
+Basic
+Why is the `.got` section named the way it is?
+Back: It's short for the **g**lobal **o**ffset **t**able.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743295591630-->
+END%%
+
+### `.plt`
+
+The [[shared#Procedure Linkage Table|procedure linkage table]]. Contains 16 byte code entries that perform lazy binding.
+
+%%ANKI
+Basic
+What does the `.plt` section contain?
+Back: The procedure linkage table.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974662-->
+END%%
+
+%%ANKI
+Basic
+Which ELF section contains the procedure linkage table?
+Back: `.plt`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974666-->
+END%%
+
+%%ANKI
+Basic
+Why is the `.plt` section named the way it is?
+Back: It's short for the **p**rocedure **l**inkage **t**able.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974669-->
+END%%
+
 ### `.symtab`
 
 A symbol table with information about functions and global variables defined and referenced in the program.
@@ -633,4 +792,5 @@ END%%
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* _PIC GOT PLT OMG: How Does the Procedure Linkage Table Work in Linux?_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=Ss2e6JauS0Y).
 * Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.

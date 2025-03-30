@@ -228,7 +228,7 @@ END%%
 %%ANKI
 Basic
 Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What kind of mathematical entity is $q_0$?
-Back: An urelement.
+Back: A set or urelement.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1734999643233-->
 END%%
@@ -1031,7 +1031,7 @@ END%%
 
 %%ANKI
 Basic
-Let $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA and $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ be its equivalent DFA. How is $F'$ defined?
+Let $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA and $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ be its equivalent DFA. How is $F'$ defined using set-builder notation?
 Back: $F' = \{ R \in Q' \mid R \text{ contains an accept state of } N \}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1740343331724-->
@@ -1350,7 +1350,7 @@ END%%
 
 %%ANKI
 Basic
-Assuming $q \in Q_1$ and $a \neq \epsilon$, how is $\delta(q, a)$ likely defined given the following:
+Assuming $q \in F_1$ and $a \neq \epsilon$, how is $\delta(q, a)$ likely defined given the following:
 * $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
 * $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
 * $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \circ A_2$.
@@ -1361,13 +1361,24 @@ END%%
 
 %%ANKI
 Basic
-Assuming $q \in Q_1$ and $a = \epsilon$, how is $\delta(q, a)$ likely defined given the following:
+Assuming $q \in F_1$ and $a = \epsilon$, how is $\delta(q, a)$ likely defined given the following:
 * $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
 * $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
 * $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \circ A_2$.
 Back: $\delta(q, a) = \delta_1(q, a) \cup \{q_2\}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
 <!--ID: 1740842717892-->
+END%%
+
+%%ANKI
+Basic
+Assuming $q \in Q_2$, how is $\delta(q, a)$ likely defined given the following:
+* $N_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ be an NFA recognizing $A_1$.
+* $N_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be an NFA recognizing $A_2$.
+* $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA recognizing $A_1 \circ A_2$.
+Back: $\delta(q, a) = \delta_2(q, a)$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1743284610379-->
 END%%
 
 %%ANKI

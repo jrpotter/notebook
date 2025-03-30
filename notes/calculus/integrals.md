@@ -874,6 +874,95 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1735744900590-->
 END%%
 
+## Bounded Monotonic Functions
+
+If $f$ is monotonic on a closed interval $[a, b]$, then $f$ is integrable on $[a, b]$.
+
+%%ANKI
+Basic
+According to Apostol, the importance of monotonic functions in integration theory is due to what theorem?
+Back: If $f$ is monotonic on a closed interval $[a, b]$, then $f$ is integrable on $[a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743283589729-->
+END%%
+
+%%ANKI
+Basic
+What is wrong with the following statement? $$\text{If } f \text{ is monotonic on interval } (a, b), \text{ then } f \text{ is integrable on } (a, b).$$
+Back: We cannot make this claim on *open* interval $(a, b)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743283589734-->
+END%%
+
+%%ANKI
+Basic
+If $f$ is monotonic on $[a, b]$, must $f$ be bounded?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743283589737-->
+END%%
+
+%%ANKI
+Basic
+If $f$ is monotonic on $(a, b)$, must $f$ be bounded?
+Back: No.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743283589739-->
+END%%
+
+%%ANKI
+Basic
+The following is a visual aid in proving integrability of what functions?
+![[integral-bounded-increasing.png]]
+Back: Bounded increasing (monotonic) functions.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743283589742-->
+END%%
+
+%%ANKI
+Basic
+What is the width of each subinterval in the following visual aid?
+![[integral-bounded-increasing.png]]
+Back: $(b - a) / n$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743283589745-->
+END%%
+
+%%ANKI
+Basic
+What is the area of the shaded region in the following visual aid?
+![[integral-bounded-increasing.png]]
+Back: $$\frac{(b - a)(f(b) - f(a))}{n}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743283589749-->
+END%%
+
+%%ANKI
+Basic
+Apostol proves that monotonic function $f$ on $[a, b]$ is integrable by proving what equality?
+Back: $\bar{I}(f) = \underline{I}(f)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743283589753-->
+END%%
+
+%%ANKI
+Basic
+What expression evaluates to $\int_a^b t_n$ in the following visual aid?
+![[integral-bounded-increasing.png]]
+Back: $\sum_{k=1}^{n} f(x_k)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743283589757-->
+END%%
+
+%%ANKI
+Basic
+What expression evaluates to $\int_a^b s_n$ in the following visual aid?
+![[integral-bounded-increasing.png]]
+Back: $\sum_{k=0}^{n-1} f(x_k)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743283589762-->
+END%%
+
 ## Bibliography
 
 * “Integral.” In _Wikipedia_, December 31, 2024. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1266307875).

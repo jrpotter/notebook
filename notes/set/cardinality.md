@@ -1154,7 +1154,7 @@ END%%
 %%ANKI
 Basic
 Let $\kappa$ be a cardinal number. What cardinal number does $\kappa^0$ evaluate to?
-Back: $1$.
+Back: $0$ if $\kappa > 0$, otherwise $1$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1734520487384-->
 END%%

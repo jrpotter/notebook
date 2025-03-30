@@ -1075,7 +1075,7 @@ END%%
 
 %%ANKI
 Basic
-For any function $F \colon A \rightarrow B$, $F$ is a subset of what other set?
+For any function $F \colon A \rightarrow B$, $F$ is a subset of what Cartesian product?
 Back: $A \times B$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720782833233-->

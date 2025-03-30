@@ -247,7 +247,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be a step function. *Why* is $f$ piecewise monotonic on some interval $[a, b]$.
+Let $f$ be a step function. *Why* is $f$ piecewise monotonic on some interval $[a, b] \subseteq \mathbb{R}$.
 Back: By definition, there exists a partition $P$ on $[a, b]$ so that each open subinterval of $P$ is monotonic.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1742152469443-->
@@ -255,7 +255,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f(x) = x^p$ for some integer $p > 0$. *Why* is $f$ piecewise monotonic on some interval $[a, b]$?
+Let $f(x) = x^p$ for some integer $p > 0$. *Why* is $f$ piecewise monotonic on some interval $[a, b] \subseteq \mathbb{R}$?
 Back: Because $f$ is monotonic on $(-\infty, 0)$ and monotonic on $(0, \infty)$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1742152469445-->
@@ -283,6 +283,54 @@ Let $f(x) = x^p$ for some integer $p > 0$. When is $f$ decreasing on $(-\infty, 
 Back: When $p$ is even.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1742152641648-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \sqrt{x}$. *Why* is $f$ piecewise monotonic on some interval $[a, b] \subseteq \mathbb{R}$?
+Back: N/A. $f$ isn't defined for negative values.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743260676480-->
+END%%
+
+%%ANKI
+Basic
+Let $f \colon \mathbb{R} \rightarrow \mathbb{R}$ given by $f(x) = \sqrt{x}$. What largest interval is $f$ piecewise monotonic over?
+Back: $[0, \infty)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743260676483-->
+END%%
+
+%%ANKI
+Basic
+Let $g \colon [-r, r] \rightarrow \mathbb{R}$ be given by $g(x) = \sqrt{r^2 - x^2}$. Is $g$ strictly monotonic over its domain?
+Back: No.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743260676486-->
+END%%
+
+%%ANKI
+Basic
+Let $g \colon [-r, r] \rightarrow \mathbb{R}$ be given by $g(x) = \sqrt{r^2 - x^2}$. Is $g$ monotonic over its domain?
+Back: No.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743260676490-->
+END%%
+
+%%ANKI
+Basic
+Let $g \colon [-r, r] \rightarrow \mathbb{R}$ be given by $g(x) = \sqrt{r^2 - x^2}$. Is $g$ piecewise monotonic over its domain?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743260676494-->
+END%%
+
+%%ANKI
+Basic
+Let $g \colon [-r, r] \rightarrow \mathbb{R}$ be given by $g(x) = \sqrt{r^2 - x^2}$. What are the "pieces" $g$ is piecewise monotonic over?
+Back: $[-r, 0]$ and $[0, r]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743260676497-->
 END%%
 
 ## Step Functions

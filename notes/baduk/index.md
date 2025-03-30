@@ -58,7 +58,7 @@ END%%
 
 %%ANKI
 Basic
-What term is used to describe the circled points?
+What term is used to describe the circled empty points?
 ![[dame.png]]
 Back: Dame.
 Reference: “Dame at Sensei’s Library.” Accessed February 21, 2025. [https://senseis.xmp.net/?Dame](https://senseis.xmp.net/?Dame).

@@ -271,6 +271,235 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1742151941029-->
 END%%
 
+### Global Offset Table
+
+The **global offset table** (GOT) exists in the data segment. It contains an 8-byte entry for each global data object (procedure or global variable) referenced by the object module.
+
+%%ANKI
+Basic
+According to Bryant et al., compilers generate PIC references to global variables by exploiting what fact?
+Back: The data segment is always the same distance from the code segment.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743295591564-->
+END%%
+
+%%ANKI
+Cloze
+Relevant to PIC, the distance between any {1:instruction} in the {1:code} segment and any {2:variable} in the {2:data} segment is a run-time {3:constant}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+END%%
+
+%%ANKI
+Cloze
+Relevant to PIC, the distance between any {1:instruction} in the {1:code} segment and any {2:variable} in the {2:data} segment is a run-time {3:constant}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743295591569-->
+END%%
+
+%%ANKI
+Basic
+What is GOT an acronym for?
+Back: **G**lobal **O**ffset **T**able.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743295591571-->
+END%%
+
+%%ANKI
+Basic
+What kind of linking is the GOT relevant to?
+Back: Dynamic linking.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743295591574-->
+END%%
+
+%%ANKI
+Basic
+How large is each entry in the GOT?
+Back: 8 bytes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743295591577-->
+END%%
+
+%%ANKI
+Basic
+Ignoring entries common to all GOTs, how many entries does any one GOT have?
+Back: One for every global data object referenced by the module.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743295591581-->
+END%%
+
+%%ANKI
+Basic
+With respect to the GOT and C, what does a global data object refer to?
+Back: A function or global variable.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1743295591584-->
+END%%
+
+%%ANKI
+Basic
+In which ELF segment is the GOT found in?
+Back: The data segment.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743295591588-->
+END%%
+
+%%ANKI
+Basic
+Why are the entries in the GOT 8 bytes wide?
+Back: Each entry is an absolute address.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743295591592-->
+END%%
+
+### Procedure Linkage Table
+
+The **procedure linkage table** (PLT) exists in the code segment. It is used to enable **lazy binding** of function calls, deferring the binding of each procedure address until the first time the procedure is called.
+
+%%ANKI
+Basic
+What is PLT an acronym for?
+Back: **P**rocedure **L**inkage **T**able.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974571-->
+END%%
+
+%%ANKI
+Basic
+What kind of linking is the PLT relevant to?
+Back: Dynamic linking.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974597-->
+END%%
+
+%%ANKI
+Basic
+How large is each entry in the PLT?
+Back: 16 bytes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974600-->
+END%%
+
+%%ANKI
+Basic
+Ignoring entries common to all PLTs, how many entries does any one PLT have?
+Back: One for every shared library function called by the module.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974603-->
+END%%
+
+%%ANKI
+Basic
+Which of the GOT or PLT is useful independent of the other?
+Back: The GOT is useful even without the PLT.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974606-->
+END%%
+
+%%ANKI
+Basic
+In what situations is the GOT used without the PLT?
+Back: For global variables.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974609-->
+END%%
+
+%%ANKI
+Basic
+In what situations is the PLT used without the GOT?
+Back: N/A.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974613-->
+END%%
+
+%%ANKI
+Cloze
+The {1:GOT} is to {2:$8$ bytes} whereas the {2:PLT} is to {1:16 bytes}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974617-->
+END%%
+
+%%ANKI
+Basic
+With respect to dynamic linking, what is lazy binding?
+Back: Deferring binding of a procedure address until the procedure is first called.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974620-->
+END%%
+
+%%ANKI
+Basic
+With respect to dynamic linking, lazy binding is associated with what kind of global data object?
+Back: Procedures.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974624-->
+END%%
+
+%%ANKI
+Cloze
+The {1:GOT} is to {2:data} whereas the {2:PLT} is to {1:code}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974628-->
+END%%
+
+%%ANKI
+Basic
+Which of the PLT or GOT is readonly?
+Back: The PLT.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974632-->
+END%%
+
+%%ANKI
+Basic
+Which of the PLT or GOT can be written to?
+Back: The GOT.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974636-->
+END%%
+
+%%ANKI
+Basic
+How many lines of assembly does each PLT entry correspond to?
+Back: Three.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974640-->
+END%%
+
+%%ANKI
+Basic
+What does the first line of a PLT entry do?
+Back: Indirectly jumps to the address specified by its corresponding GOT entry.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974644-->
+END%%
+
+%%ANKI
+Basic
+What do lines two and three of a PLT entry do?
+Back: Invokes the dynamic linker and overwrites the corresponding GOT entry.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974649-->
+END%%
+
+%%ANKI
+Basic
+When a procedure is first called, the GOT entry corresponding to a PLT entry contains what address?
+Back: That of the second instruction of the PLT entry.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974653-->
+END%%
+
+%%ANKI
+Basic
+When a procedure is called a second time, the GOT entry corresponding to a PLT entry contains what address?
+Back: That of the dynamically linked procedure.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743296974658-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* _PIC GOT PLT OMG: How Does the Procedure Linkage Table Work in Linux?_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=Ss2e6JauS0Y).
