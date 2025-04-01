@@ -72,6 +72,11 @@ The group of resources that are RDFS classes is itself a class called `rdfs:Clas
 
 If a class `C` is a subclass of a class `C'`, then all instances of `C` will also be instances of `C'`. The `rdfs:subClassOf` property may be used to state that one class is a subclass of another.
 
+```sparql
+CONSTRUCT { ?x rdf:type ?B }
+    WHERE { ?A rdf:subClassOf ?B. ?x rdf:type ?A }
+```
+
 %%ANKI
 Basic
 What is a resource?
@@ -192,14 +197,113 @@ END%%
 
 %%ANKI
 Basic
-How is the type propagation rule stated in SPARQL?
+How is the type propagation rule defined in SPARQL?
 Back:
 ```sparql
 CONSTRUCT { ?x rdf:type ?B }
-    WHERE { ?A rdf:subClassOf ?B. ?x rdf:type ?A }
+    WHERE { ?A rdfs:subClassOf ?B. ?x rdf:type ?A }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1736629473701-->
+END%%
+
+%%ANKI
+Basic
+How is the meaning of `rdfs:subClassOf` defined in SPARQL?
+Back:
+```sparql
+CONSTRUCT { ?x rdf:type ?B }
+    WHERE { ?A rdfs:subClassOf ?B. ?x rdf:type ?A }
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1743453116890-->
+END%%
+
+## Properties
+
+The `rdfs:subPropertyOf` property may be used to state that one property is a subproperty of another.
+
+```sparql
+CONSTRUCT { ?x ?r ?y }
+    WHERE { ?x ?q ?y. ?q rdfs:subPropertyOf ?r }
+```
+
+A property `p` is often annotated with the `rdfs:domain` and `rdfs:range` properties. 
+For any triple involving `p`, these properties specify the classes the subject and object of the triple should be members of respectively.
+
+```sparql
+CONSTRUCT { ?x rdf:type ?D }
+    WHERE { ?P rdf:domain ?D. ?x ?P ?y }
+
+CONSTRUCT { ?y rdf:type ?R }
+    WHERE { ?P rdf:range ?R. ?x ?P ?y }
+```
+
+%%ANKI
+Cloze
+{1:`rdfs:subPropertyOf`} is to {2:properties} whereas {2:`rdfs:subClassOf`} is to {1:classes}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1743453116898-->
+END%%
+
+%%ANKI
+Basic
+How is the meaning of `rdfs:subPropertyOf` defined in SPARQL?
+Back:
+```sparql
+CONSTRUCT { ?x ?r ?y }
+    WHERE { ?x ?q ?y. ?q rdfs:subPropertyOf ?r }
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1743453116901-->
+END%%
+
+%%ANKI
+Basic
+How is the meaning of `rdfs:domain` defined in SPARQL?
+Back:
+```sparql
+CONSTRUCT { ?x rdf:type ?D }
+    WHERE { ?P rdfs:domain ?D. ?x ?P ?y }
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1743453116904-->
+END%%
+
+%%ANKI
+Basic
+In what way does `?P rdfs:domain ?D` work "backwards"?
+Back: RDFS infers any subject used by `?P` *must* be a member of `?D`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1743453116908-->
+END%%
+
+%%ANKI
+Basic
+How is the meaning of `rdfs:range` defined in SPARQL?
+Back:
+```sparql
+CONSTRUCT { ?y rdf:type ?R }
+    WHERE { ?P rdfs:range ?R. ?x ?P ?y }
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1743453116911-->
+END%%
+
+%%ANKI
+Basic
+In what way does `?P rdfs:range ?R` work "backwards"?
+Back: RDFS infers any object used by `?P` *must* be a member of `?R`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1743453116914-->
+END%%
+
+%%ANKI
+Basic
+In what way is RDFS more tolerant than SHACL?
+Back: RDFS has no notion of an incorrect or inconsistent inference.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1743460538953-->
 END%%
 
 ## Bibliography

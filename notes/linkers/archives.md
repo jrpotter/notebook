@@ -212,7 +212,7 @@ END%%
 
 %%ANKI
 Basic
-Let `p.c` depends on `libx.a`. What minimal command lets `cc` resolve all symbol references?
+Suppose `p.c` depends on `libx.a`. What minimal command lets `cc` resolve all symbol references?
 Back:
 ```bash
 $ cc p.c -lx
@@ -223,7 +223,7 @@ END%%
 
 %%ANKI
 Basic
-Let `p.c` depends on `liby.a` which depends on `libx.a` . What minimal command lets `cc` resolve all symbol references?
+Suppose `p.c` depends on `liby.a` which depends on `libx.a` . What minimal command lets `cc` resolve all symbol references?
 Back:
 ```bash
 $ cc p.c -ly -lx

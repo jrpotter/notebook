@@ -415,7 +415,7 @@ END%%
 
 %%ANKI
 Cloze
-The {1:GOT} is to {2:$8$ bytes} whereas the {2:PLT} is to {1:16 bytes}.
+The {1:GOT} is to {2:$8$} bytes whereas the {2:PLT} is to {1:$16$} bytes.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1743296974617-->
 END%%
@@ -438,7 +438,7 @@ END%%
 
 %%ANKI
 Cloze
-The {1:GOT} is to {2:data} whereas the {2:PLT} is to {1:code}.
+The {1:GOT} is to the {2:data} segment whereas the {2:PLT} is to the {1:code} segment.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1743296974628-->
 END%%

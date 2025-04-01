@@ -66,11 +66,6 @@ END%%
 Basic
 Consider the output of `readelf -lW a.out`. Which segment contains the `.data` section?
 ```txt
-Elf file type is EXEC (Executable file)
-Entry point 0x401040
-There are 13 program headers, starting at offset 64
-
-Program Headers:
   Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
   PHDR           0x000040 0x0000000000400040 0x0000000000400040 0x0002d8 0x0002d8 R   0x8
   INTERP         0x000318 0x0000000000400318 0x0000000000400318 0x00001c 0x00001c R   0x1

@@ -197,8 +197,8 @@ END%%
 
 %%ANKI
 Basic
-Which natural deduction inference rule is used in the following? $$\begin{array}{rc} 1. & P \lor Q \\ 2. & P \Rightarrow R \\ 3. & Q \Rightarrow R \\ \hline & R \end{array}$$
-Back: $\lor{\text{-}}E$
+Which natural deduction inference rules are used in the following? $$\begin{array}{rc} 1. & P \lor Q \\ 2. & P \Rightarrow R \\ 3. & Q \Rightarrow R \\ \hline & R \end{array}$$
+Back: $\lor{\text{-}}E$ and ${\Rightarrow}{\text{-}}E$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1721656601613-->
 END%%

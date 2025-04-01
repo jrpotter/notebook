@@ -949,7 +949,7 @@ END%%
 Basic
 What expression evaluates to $\int_a^b t_n$ in the following visual aid?
 ![[integral-bounded-increasing.png]]
-Back: $\sum_{k=1}^{n} f(x_k)$
+Back: $$\sum_{k=1}^{n} \frac{(b - a)f(x_k)}{n}$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1743283589757-->
 END%%
@@ -958,7 +958,7 @@ END%%
 Basic
 What expression evaluates to $\int_a^b s_n$ in the following visual aid?
 ![[integral-bounded-increasing.png]]
-Back: $\sum_{k=0}^{n-1} f(x_k)$
+Back: $$\sum_{k=0}^{n-1} \frac{(b - a)f(x_k)}{n}$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1743283589762-->
 END%%

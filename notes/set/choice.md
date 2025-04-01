@@ -106,7 +106,7 @@ END%%
 Cloze
 For any relation $R$, the relation form of AoC asserts existence of function $F$ satisfying:
 1. {$F \subseteq R$}
-2. {$\mathop{\text{dom}}F = \mathop{\text{dom}}R$}
+2. {$\mathop{\text{dom} }F = \mathop{\text{dom} }R$}
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1743376072886-->
 END%%
@@ -202,8 +202,8 @@ END%%
 %%ANKI
 Cloze
 For any set $A$, the covering form of AoC asserts existence of function $F$ satisfying:
-1. {$\mathop{\text{dom}}F = \mathscr{P}(A) - \{\varnothing\}$}
-2. {$\forall B \in \mathop{\text{dom}} F, F(B) \in B$}
+1. {$\mathop{\text{dom} }F = \mathscr{P}(A) - \{\varnothing\}$}
+2. {$\forall B \in \mathop{\text{dom} } F, F(B) \in B$}
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1743376072896-->
 END%%
