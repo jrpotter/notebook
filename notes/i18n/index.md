@@ -13,7 +13,7 @@ tags:
 %%ANKI
 Basic
 What is a locale?
-Back: A collection of settings that encompass changes between locations.
+Back: A collection of settings that encompass things that change from one location to another.
 Reference: “Internationalization and Localization.” In _Wikipedia_, March 29, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1282974704).
 <!--ID: 1743737725471-->
 END%%

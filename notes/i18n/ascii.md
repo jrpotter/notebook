@@ -1,10 +1,10 @@
 ---
 title: ASCII
 TARGET DECK: Obsidian::STEM
-FILE TAGS: encoding::ascii
+FILE TAGS: i18n::ascii
 tags:
-  - encoding
   - ascii
+  - i18n
 ---
 
 ## Overview
