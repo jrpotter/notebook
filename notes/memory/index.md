@@ -475,15 +475,180 @@ END%%
 
 #### Flash
 
+**Flash** is a nonvolatile storage device based on EEPROMs.
+
+%%ANKI
+Basic
+Is flash considered volatile or nonvolatile?
+Back: Nonvolatile.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039692-->
+END%%
+
+%%ANKI
+Basic
+Flash is based on what kind of ROM?
+Back: EEPROMs.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039699-->
+END%%
+
+#### Solid State Disks
+
 TODO
 
-#### Solid State Drives
+### Hard Disk Drives
 
-TODO
+Hard disk drives are constructed with one or more **platters** stacked on top of each other and encased in a sealed package. Each platter consists of two **surfaces** coated with magnetic recording material. A rotating **spindle** in the center of the platters rotates them at a fixed rotational rate.
 
-### Hard Disk Disks
+Each surface consists of a collection of concentric rings called **tracks**. Each track is further partitioned into a collection of **sectors**, each of which contains an equal number of data bits. Sectors are separated by **gaps** where no data bits are stored; gaps store formatting bits used to identify sectors.
 
-TODO
+![[hdd.png]]
+
+%%ANKI
+Cloze
+* A(n) {HDD} consists of a collection of...
+* {platters} which have two...
+* {surfaces} containing concentric...
+* {tracks} further partitioned into...
+* {sectors} and {gaps}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039701-->
+END%%
+
+%%ANKI
+Basic
+What is HDD an acronym for?
+Back: **H**ard **d**isk **d**rive.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039704-->
+END%%
+
+%%ANKI
+Basic
+Is an HDD considered volatile or nonvolatile?
+Back: Nonvolatile.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039706-->
+END%%
+
+%%ANKI
+Basic
+With respect to HDDs, what is a platter?
+Back: A circular, rigid disk coated with a magnetic material where data is stored.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039709-->
+END%%
+
+%%ANKI
+Basic
+With respect to HDDs, what is a surface?
+Back: One of the two sides on a platter.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039711-->
+END%%
+
+%%ANKI
+Basic
+How many platters can be found in an HDD?
+Back: One or more.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039713-->
+END%%
+
+%%ANKI
+Cloze
+An HDD with {1:$n$} {2:platters} has {2:$2n$} {1:surfaces}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039716-->
+END%%
+
+%%ANKI
+Basic
+Consider an HDD with 6 surfaces. How many platters does it have?
+Back: Three.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039718-->
+END%%
+
+%%ANKI
+Basic
+Consider an HDD with 5 surfaces. How many platters does it have?
+Back: N/A. An HDD can only have an even number of surfaces.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039721-->
+END%%
+
+%%ANKI
+Basic
+What component exists in the center of any HDD platter?
+Back: The spindle.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039724-->
+END%%
+
+%%ANKI
+Basic
+What is the role of the spindle in an HDD?
+Back: It performs the actual rotating of platters.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039726-->
+END%%
+
+%%ANKI
+Basic
+With respect to HDDs, what is a track?
+Back: A ring, found on a platter, in which data is recorded.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039729-->
+END%%
+
+%%ANKI
+Basic
+With respect to HDDs, how are tracks further divided?
+Back: Into sectors and gaps.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039732-->
+END%%
+
+%%ANKI
+Cloze
+With respect to HDDs, {1:sectors} are to {2:data} bits whereas {2:gaps} are to {1:formatting} bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039735-->
+END%%
+
+%%ANKI
+Basic
+With respect to HDDs, what is a cylinder?
+Back: A collection of tracks on all surfaces that are equidistant from the center of the spindle.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039737-->
+END%%
+
+%%ANKI
+Basic
+Consider an HDD with $n$ platters. A cylinder consists of how many tracks?
+Back: $2n$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039740-->
+END%%
+
+%%ANKI
+Basic
+Consider an HDD with $n$ platters. A cylinder spans how many surfaces?
+Back: $2n$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039743-->
+END%%
+
+%%ANKI
+Basic
+With respect to HDDs, *what* purpose do gaps provide within a track?
+Back: They are used to identify sectors.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743646039746-->
+END%%
 
 ## Bibliography
 
