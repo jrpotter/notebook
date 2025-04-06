@@ -66,7 +66,7 @@ Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wiki
 <!--ID: 1720964209627-->
 END%%
 
-### Relation Form
+## Relation Form
 
 For any relation $R$ there exists a function $F \subseteq R$ with $\mathop{\text{dom}}F = \mathop{\text{dom}}R$.
 
@@ -111,7 +111,7 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1743376072886-->
 END%%
 
-### Multiplicative Form
+## Multiplicative Form
 
 For any set $I$ and function $H$ with domain $I$, if $H(i) \neq \varnothing$ for all $i \in I$, then $\bigtimes_{i \in I} H(i) \neq \varnothing$. Note this statement relies on the [[set#Cartesian Product|Cartesian product]] of infinite sets. 
 
@@ -163,7 +163,7 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1743376072891-->
 END%%
 
-### Covering Form
+## Covering Form
 
 For any set $A$, there exists a function $F$ with $\mathop{\text{dom}}(F) = \mathscr{P}(A) - \{\varnothing\}$ such that $F(B) \in B$ for all $B \in \mathop{\text{dom}}(F)$.
 
@@ -208,7 +208,7 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1743376072896-->
 END%%
 
-### Partition Form
+## Partition Form
 
 Let $P$ be a [[order#Partitions|partition]] of set $A$. Then there exists a set $B$ containing exactly one element from each member of $P$.
 
@@ -241,6 +241,57 @@ Let $P$ be a partition of set $A$. The partition form of AoC asserts existence o
 1. {$\forall B \in P, \exists!\, b \in B, b \in C$}
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1743376072899-->
+END%%
+
+## Zorn's Lemma
+
+Let $\mathscr{B}$ be a set. We say $\mathscr{B}$ is a **chain** if and only if for any $C, D \in \mathscr{B}$ either $C \subseteq D$ or $D \subseteq C$. In other words, $\subseteq$ is a [[order#Total Order|total order]] on $\mathscr{B}$.
+
+%%ANKI
+Basic
+Let $\mathscr{B}$ be a set. When is $\mathscr{B}$ a chain?
+Back: If for any $C, D \in \mathscr{B}$, either $C \subseteq D$ or $D \subseteq C$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743974940651-->
+END%%
+
+%%ANKI
+Cloze
+Set $A$ is called a {chain} iff {$\subseteq$} is a {total order} on $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743974940653-->
+END%%
+
+%%ANKI
+Basic
+*Why* is $\{0, 1, 2\}$ a chain?
+Back: Because $0 \subseteq 1 \subseteq 2$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743974940655-->
+END%%
+
+%%ANKI
+Basic
+*Why* is $\{\{a\}, \{b, c\}, \{a, b, c\}\}$ a chain?
+Back: N/A. It isn't since e.g. $\{a\} \not\subseteq \{b, c\}$ and $\{b, c\} \not\subseteq \{a\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743974940657-->
+END%%
+
+%%ANKI
+Basic
+*Why* is $\{3\}$ a chain?
+Back: Because $\subseteq$ is strongly connected on $\{3\}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743974940658-->
+END%%
+
+%%ANKI
+Basic
+Which chain has smallest cardinality?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1743974940660-->
 END%%
 
 ## Bibliography
