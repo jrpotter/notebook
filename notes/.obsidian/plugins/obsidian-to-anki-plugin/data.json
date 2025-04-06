@@ -1584,7 +1584,7 @@
     "_journal/2025-03/2025-03-23.md": "eead0ead31ed31f00d64d901cfa93b9e",
     "_journal/2025-03-30.md": "dc06d4b4fb689e05bb933bd42352cf91",
     "_journal/2025-03/2025-03-29.md": "7eebe2ef79efe30c1896f5079c62fd44",
-    "memory/index.md": "9f64a7353aa6ef11e1be382e96ea3c84",
+    "memory/index.md": "1085c71866277c914f4c749a84f91cae",
     "_journal/2025-03-31.md": "452cdf973616d62a4bbc3e7c23c0cd9b",
     "_journal/2025-03/2025-03-30.md": "eac94765e50413a5801fdc599dd5ed7b",
     "_journal/2025-04-01.md": "025dfd45f462c925cc3b0f4c5efb9ad7",
@@ -1600,7 +1600,12 @@
     "network/index.md": "5980d28b6bcdadff42a74aa678622cc9",
     "i18n/ascii.md": "4c910bc1b5d3169b3c6c6447d745325a",
     "_journal/2025-04-04.md": "bd4b634503d979e45b1a7379e648b256",
-    "_journal/2025-04/2025-04-03.md": "92a049492122da5d0000924aed9b5017"
+    "_journal/2025-04/2025-04-03.md": "92a049492122da5d0000924aed9b5017",
+    "i18n/unicode.md": "7a4a1532a86c52ebdcc7f9b0b5c39c89",
+    "_journal/2025-04-05.md": "c85624bbc10de14b676ab072044aa760",
+    "_journal/2025-04/2025-04-04.md": "bd4b634503d979e45b1a7379e648b256",
+    "_journal/2025-04-06.md": "7c02b85f69de0d8182d706d03bef6407",
+    "_journal/2025-04/2025-04-05.md": "9235c97037fe35cde3fe3d527375b394"
   },
   "fields_dict": {
     "Basic": [

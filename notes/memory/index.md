@@ -650,6 +650,157 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1743646039746-->
 END%%
 
+* **Recording density** (bits/in). The number of bits in a 1-inch segment of a track.
+* **Track density** (tracks/in). The number of tracks in a 1-inch segment of the radius extending from the center of the platter.
+* **Areal density** (bits/in$^2$). The product of recording density and track density.
+
+To maximize areal density, **multiple zone recording** partitions the set of cylinders into disjoint subsets called **recording zones**. Each track in each cylinder in a zone has the same number of sectors, which is determined by the number of sectors in the innermost track of the zone.
+
+%%ANKI
+Basic
+Recording density is a measure used for what kind of storage devices?
+Back: HDDs.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447527-->
+END%%
+
+%%ANKI
+Basic
+What unit of measurement is typically associated with recording density?
+Back: $\text{bits}/\text{in}$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447534-->
+END%%
+
+%%ANKI
+Cloze
+{Recording} density measures the number of bits in a 1-inch {segment of a track}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447537-->
+END%%
+
+%%ANKI
+Basic
+What HDD-related measurement has units $\text{bits}/\text{in}$?
+Back: Recording density.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447540-->
+END%%
+
+%%ANKI
+Basic
+Track density is a measure used for what kind of storage devices?
+Back: HDDs.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447543-->
+END%%
+
+%%ANKI
+Basic
+What unit of measurement is typically associated with track density?
+Back: $\text{tracks}/\text{in}$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447546-->
+END%%
+
+%%ANKI
+Cloze
+{Track} density measures the number of tracks in a 1-inch {segment of the radius}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447549-->
+END%%
+
+%%ANKI
+Basic
+What HDD-related measurement has units $\text{tracks}/\text{in}$?
+Back: Track density.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447552-->
+END%%
+
+%%ANKI
+Basic
+Areal density is a measure used for what kind of storage devices?
+Back: HDDs.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447555-->
+END%%
+
+%%ANKI
+Basic
+What unit of measurement is typically associated with areal density?
+Back: $\text{bits}/\text{in}^2$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447558-->
+END%%
+
+%%ANKI
+Cloze
+{Areal} density is the product of {recording} density and {track} density.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447561-->
+END%%
+
+%%ANKI
+Basic
+What HDD-related measurement has units $\text{bits} / \text{in}^2$?
+Back: Areal density.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447564-->
+END%%
+
+%%ANKI
+Basic
+What is multiple zone recording?
+Back: The partitioning of cylinders into disjoint subsets s.t. each track within a subset has the same number of sectors.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447567-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the subsets formed in multiple zone recording?
+Back: Recording zones.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447571-->
+END%%
+
+%%ANKI
+Basic
+Recording zones are considered a contiguous collection of what?
+Back: Cylinders.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447575-->
+END%%
+
+%%ANKI
+Basic
+How many sectors are found within a track of a recording zone?
+Back: The same number as that of the innermost track in the zone.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447579-->
+END%%
+
+%%ANKI
+Basic
+Multiple zone recording is a technique used to increase what kind of density?
+Back: Areal density.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447583-->
+END%%
+
+%%ANKI
+Cloze
+The capacity of an HDD is given by:
+* {$\text{\# bytes} / \text{sector}$} $\times$
+* {$\text{average \# sectors} / \text{track}$} $\times$
+* {$\text{\# track} / \text{surface}$} $\times$
+* {$\text{\# surfaces} / \text{platter}$} $\times$
+* {$\text{\# platters} / \text{disk}$}
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1743943447587-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
