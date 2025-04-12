@@ -1042,7 +1042,7 @@ END%%
 
 %%ANKI
 Cloze
-In Enderton's recursion theorem proof,desired $h \colon \omega \rightarrow A$ is {unique} because {$\{ n \in \omega \mid h_1(n) = h_2(n) \}$} is {an inductive set}.
+In Enderton's recursion theorem proof, desired $h \colon \omega \rightarrow A$ is {unique} because {$\{ n \in \omega \mid h_1(n) = h_2(n) \}$} is {an inductive set}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1727627702470-->
 END%%

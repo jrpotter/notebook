@@ -133,6 +133,13 @@ Reference: `man 1 ps`
 <!--ID: 1706670390919-->
 END%%
 
+%%ANKI
+Cloze
+Command `ps T` lets us view all processes that would receive a {1:`SIGHUP`} signal when {1:the current terminal exits}.
+Reference: `man 1 ps`
+<!--ID: 1744332718204-->
+END%%
+
 ## SIGINT (2)
 
 Indicates the process was interrupted by the user. Happens when pressing `Ctrl-C` from the controlling terminal.

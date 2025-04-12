@@ -177,7 +177,7 @@ END%%
 %%ANKI
 Basic
 Let $f$ be the mapping of a coded character set. What does $\mathop{\text{dom}} f$ evaluate to?
-Back: A character repertoire.
+Back: A character repertoire (or subset of).
 Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
 <!--ID: 1743818321554-->
 END%%

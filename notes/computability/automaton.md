@@ -1487,6 +1487,195 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1743461820221-->
 END%%
 
+## Regular Expressions
+
+A **regular expression** is a textual representation of some language. They are equivalent to [[automaton|finite automaton]] in their descriptive power. More formally, we say $R$ is a regular expression if $R$ is
+
+1. $a$ for some $a$ in the alphabet $\Sigma$,
+2. $\epsilon$,
+3. $\varnothing$,
+4. $(R_1 \cup R_2)$ where $R_1$ and $R_2$ are regular expressions,
+5. $(R_1 \circ R_2)$ where $R_1$ and $R_2$ are regular expressions,
+6. $(R_1^*)$ where $R_1$ is a regular expression.
+
+Note individual symbols like $a \in \Sigma$ or $\epsilon$ are interpreted as singleton sets.
+
+%%ANKI
+Basic
+What language is expressed with regex $(0 \cup 1)0^*$?
+Back: Strings starting with a $0$ or $1$ and ending in any number of $0$s.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920312-->
+END%%
+
+%%ANKI
+Basic
+What mathematical entity do regular expressions evaluate to?
+Back: Languages.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920319-->
+END%%
+
+%%ANKI
+Basic
+In formal regular expressions, which of union or concatenation has higher precedence?
+Back: Concatenation.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920321-->
+END%%
+
+%%ANKI
+Basic
+In formal regular expressions, which of union or Kleene star has higher precedence?
+Back: Kleene star.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920324-->
+END%%
+
+%%ANKI
+Basic
+In formal regular expressions, which of Kleene star or concatenation has higher precedence?
+Back: Kleene star.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920326-->
+END%%
+
+%%ANKI
+Basic
+In formal regular expressions, which regular operation has highest precedence?
+Back: Kleene star.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920329-->
+END%%
+
+%%ANKI
+Basic
+In formal regular expressions, which regular operation has lowest precedence?
+Back: Union.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920331-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes regular expressions $\epsilon$ and $\varnothing$?
+Back: $L(\epsilon)$ is the set containing the empty string whereas $L(\varnothing)$ is empty.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920335-->
+END%%
+
+%%ANKI
+Basic
+Let $R$ be a regular language. How is $R^+$ defined in terms of Kleene star?
+Back: $R^+ = RR^*$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920339-->
+END%%
+
+%%ANKI
+Basic
+Let $R$ be a regular language. How is $R^k$ interpreted for some integer $k > 0$?
+Back: As $R$ concatenated with itself $k$ times.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920342-->
+END%%
+
+%%ANKI
+Basic
+Let $\Sigma = \{0, 1\}$. What language does regular expression $\Sigma^*1\Sigma^*$ evaluate to?
+Back: $\{w \mid w \text{ has at least one } 1 \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920346-->
+END%%
+
+%%ANKI
+Basic
+What language does regular expression $1^*(01^+)*$ evaluate to?
+Back: $\{w \mid \text{every } 0 \text{ in } w \text{ is followed by at least one } 1 \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920350-->
+END%%
+
+%%ANKI
+Basic
+What language does regular expression $1^*\varnothing$ evaluate to?
+Back: $\varnothing$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920355-->
+END%%
+
+%%ANKI
+Basic
+What language does regular expression $\varnothing^*$ evaluate to?
+Back: $\{ \epsilon \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920360-->
+END%%
+
+%%ANKI
+Basic
+What language does regular expression $\varnothing^+$ evaluate to?
+Back: $\varnothing$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920364-->
+END%%
+
+%%ANKI
+Basic
+Let $\Sigma = \{0, 1\}$. What language does regular expression $(\Sigma\Sigma)^*$ evaluate to?
+Back: $\{w \mid w \text{ is a bitstring of even length} \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920369-->
+END%%
+
+%%ANKI
+Basic
+Consider regular operation $\cup$. What language serves as its identity element?
+Back: $\varnothing$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920374-->
+END%%
+
+%%ANKI
+Basic
+Consider regular operation $\circ$. What language serves as its identity element?
+Back: $\{\epsilon\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920378-->
+END%%
+
+%%ANKI
+Basic
+Let $R$ be a regular expression. $R \cup \varnothing$ simplfies to what expression?
+Back: $R$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920383-->
+END%%
+
+%%ANKI
+Basic
+Let $R$ be a regular expression. $R \circ \epsilon$ simplifies to what expression?
+Back: $R$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920388-->
+END%%
+
+%%ANKI
+Basic
+Let $R$ be a regular expression. $R \cup \epsilon$ simplifies to what expression?
+Back: N/A. This can't be written more simply.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920392-->
+END%%
+
+%%ANKI
+Basic
+Let $R$ be a regular expression. $R \circ \varnothing$ simplifies to what expression?
+Back: $\varnothing$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).
+<!--ID: 1744414920397-->
+END%%
+
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Australia Brazil Japan Korea Mexiko Singapore Spain United Kingdom United States: Cengage Learning, 2013).

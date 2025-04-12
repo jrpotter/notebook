@@ -181,6 +181,343 @@ Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.
 <!--ID: 1723924394151-->
 END%%
 
+### Bounds
+
+Let $P$ be a preordered set with order relation $\leq$.
+
+An element $m \in P$ is **maximal** if there is no other element of $P$ greater than $m$. Likewise, an element $n \in P$ is **minimal** if there is no other element of $P$ less than $n$.
+
+An element $M \in P$ is a **maximum** if $M$ is greater than or equal to any other element in $P$. An element $N \in P$ is a **minimum** if $N$ is less than or equal to any other element in $P$.
+
+Given some subset $S$ of $P$, an **upper bound** of $S$ is some $U \in P$ such that $U$ is greater than or equal to every element of $S$. Likewise, a **lower bound** of $S$ is some $L \in P$ such that $L$ is less than or equal to every element of $S$.
+
+%%ANKI
+Basic
+What is a maximal element of preorder $\langle P, \leq \rangle$?
+Back: An element of $P$ such that no other element of $P$ is greater than it.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175482-->
+END%%
+
+%%ANKI
+Basic
+What is a minimal element of preorder $\langle P, \leq \rangle$?
+Back: An element of $P$ such that no other member of $P$ is less than it.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175491-->
+END%%
+
+%%ANKI
+Basic
+What is a maximum element of preorder $\langle P, \leq \rangle$?
+Back: An element of $P$ that is greater than or equal to all other members of $P$.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175493-->
+END%%
+
+%%ANKI
+Basic
+What is a minimum element of preorder $\langle P, \leq \rangle$?
+Back: An element of $P$ that is less than or equal to all other members of $P$.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175496-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a subset of preorder $\langle P, \leq \rangle$. What is an upper bound of $S$?
+Back: A member of $P$ greater than or equal to all members of $S$.
+Reference: “Upper and Lower Bounds.” In _Wikipedia_, March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds](https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds&oldid=1281896174).
+<!--ID: 1744075175499-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a subset of preorder $\langle P, \leq \rangle$. What is a lower bound of $S$?
+Back: A member of $P$ greater than or equal to all members of $S$.
+Reference: “Upper and Lower Bounds.” In _Wikipedia_, March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds](https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds&oldid=1281896174).
+<!--ID: 1744075175501-->
+END%%
+
+%%ANKI
+Basic
+With respect to a preorder, what distinguishes a maximum from an upper bound?
+Back: A maximum *must* be a member of the preorder in question.
+Reference: “Upper and Lower Bounds.” In _Wikipedia_, March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds](https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds&oldid=1281896174).
+<!--ID: 1744075175504-->
+END%%
+
+%%ANKI
+Basic
+With respect to a preorder, what distinguishes a maximum from a maximal?
+Back: A maximum must be greater than or equal to *every* other member of the preorder.
+Reference: “Upper and Lower Bounds.” In _Wikipedia_, March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds](https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds&oldid=1281896174).
+<!--ID: 1744075175507-->
+END%%
+
+%%ANKI
+Basic
+With respect to a preorder, what two things distinguish a lower bound from a minimal?
+Back:
+1. A lower bound is less than or equal to *every* element of the preorder. 
+2. A minimal *must* be a member of the subset in question.
+Reference: “Upper and Lower Bounds.” In _Wikipedia_, March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds](https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds&oldid=1281896174).
+<!--ID: 1744075175509-->
+END%%
+
+%%ANKI
+Basic
+With respect to a preorder, what distinguishes a minimal from a minimum?
+Back: A minimum must be less than or equal to *every* other member of the preorder.
+Reference: “Upper and Lower Bounds.” In _Wikipedia_, March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds](https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds&oldid=1281896174).
+<!--ID: 1744075175512-->
+END%%
+
+%%ANKI
+Basic
+How many minimal elements might a nonempty preorder have?
+Back: Zero or more.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175515-->
+END%%
+
+%%ANKI
+Basic
+How many minimum elements might a nonempty preorder have?
+Back: Zero or more.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175518-->
+END%%
+
+%%ANKI
+Basic
+When might a nonempty preorder have $0$ minimal elements?
+Back: When a set has infinitely many smaller elements also in the set.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175520-->
+END%%
+
+%%ANKI
+Basic
+Consider preordered set $(-\infty, -1] \in \mathbb{R}$ with order relation $\leq$. How many minimal elements does this set have?
+Back: $0$
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175523-->
+END%%
+
+%%ANKI
+Basic
+Consider preordered set $(-\infty, -1] \in \mathbb{R}$ with order relation $\leq$. How many minimum elements does this set have?
+Back: $0$
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175526-->
+END%%
+
+%%ANKI
+Basic
+Consider preordered set $(-\infty, -1] \in \mathbb{R}$ with order relation $\leq$. How many maximal elements does this set have?
+Back: $1$
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175529-->
+END%%
+
+%%ANKI
+Basic
+Consider preordered set $(-\infty, -1] \in \mathbb{R}$ with order relation $\leq$. How many maximum elements does this set have?
+Back: $1$
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175532-->
+END%%
+
+%%ANKI
+Basic
+How many maximal elements might a nonempty preorder have?
+Back: Zero or more.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175535-->
+END%%
+
+%%ANKI
+Basic
+How many maximum elements might a nonempty preorder have?
+Back: Zero or more.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175538-->
+END%%
+
+%%ANKI
+Basic
+When might a nonempty preorder have $0$ maximal elements?
+Back: When a set has infinitely many larger elements also in the set.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175541-->
+END%%
+
+%%ANKI
+Basic
+Consider preordered set $\{ s \in \mathbb{Q} \mid 1 \leq s^2 \leq 2 \}$ with order relation $\leq$. How many minimal elements does this set have?
+Back: $1$
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175545-->
+END%%
+
+%%ANKI
+Basic
+Consider preordered set $\{ s \in \mathbb{Q} \mid 1 \leq s^2 \leq 2 \}$ with order relation $\leq$. How many minimum elements does this set have?
+Back: $1$
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175549-->
+END%%
+
+%%ANKI
+Basic
+Consider preordered set $\{ s \in \mathbb{Q} \mid 1 \leq s^2 \leq 2 \}$ with order relation $\leq$. How many maximal elements does this set have?
+Back: $0$
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175552-->
+END%%
+
+%%ANKI
+Basic
+Consider preordered set $\{ s \in \mathbb{Q} \mid 1 \leq s^2 \leq 2 \}$ with order relation $\leq$. How many maximum elements does this set have?
+Back: $0$
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175556-->
+END%%
+
+%%ANKI
+Basic
+When might preorder $\langle P, \leq \rangle$ have more than one maximum element?
+Back: When $a \leq b$ and $b \leq a$ for distinct $a, b \in P$ are both maximums.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175560-->
+END%%
+
+%%ANKI
+Basic
+When property of preorders allows them to have more than one maximum?
+Back: They are not necessarily antisymmetric.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175564-->
+END%%
+
+%%ANKI
+Basic
+How many minimal elements can a nonempty partial order have?
+Back: Zero or more.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175568-->
+END%%
+
+%%ANKI
+Basic
+How many minimum elements can a nonempty partial order have?
+Back: Zero or one.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175571-->
+END%%
+
+%%ANKI
+Basic
+How many maximal elements can a nonempty partial order have?
+Back: Zero or more.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175575-->
+END%%
+
+%%ANKI
+Basic
+How many maximum elements can a nonempty partial order have?
+Back: Zero or one.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175582-->
+END%%
+
+%%ANKI
+Cloze
+A preorder can have {zero or more} maximum(s) whereas a partial order can have {at most one} maximum(s).
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175586-->
+END%%
+
+%%ANKI
+Cloze
+A partial order can have {zero or more} minimal(s) whereas a preorder can have {zero or more} minimal(s).
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175589-->
+END%%
+
+%%ANKI
+Basic
+How many maximal elements can a nonempty total order have?
+Back: At most one.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175593-->
+END%%
+
+%%ANKI
+Basic
+How many maximum elements can a nonempty total order have?
+Back: At most one.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175597-->
+END%%
+
+%%ANKI
+Basic
+How many minimal elements can a nonempty total order have?
+Back: At most one.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175600-->
+END%%
+
+%%ANKI
+Basic
+How many minimum elements can a nonempty total order have?
+Back: At most one.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175603-->
+END%%
+
+%%ANKI
+Cloze
+A preorder can have {zero or more} maximal(s) whereas a total order can have {at most one} maximal(s).
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175607-->
+END%%
+
+%%ANKI
+Basic
+When might a nonempty total have $0$ minimal elements?
+Back: When a set has infinitely many smaller elements also in the set.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175610-->
+END%%
+
+%%ANKI
+Basic
+Consider the following set ordered by containment. Which elements are minimal? $$\{\{d, o\}, \{d, o, g\}, \{g, o, a, d\}, \{o, a, f\}\}$$
+Back: $\{d, o\}$ and $\{o, a, f\}$.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175613-->
+END%%
+
+%%ANKI
+Basic
+Consider the following set ordered by containment. Which elements are maximal? $$\{\{d, o\}, \{d, o, g\}, \{g, o, a, d\}, \{o, a, f\}\}$$
+Back: $\{g, o, a, d\}$ and $\{o, a, f\}$.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175616-->
+END%%
+
+%%ANKI
+Basic
+Consider the following set ordered by containment. What is the maximum? $$\{\{d, o\}, \{d, o, g\}, \{g, o, a, d\}, \{o, a, f\}\}$$
+Back: N/A. There is no maximum.
+Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
+<!--ID: 1744075175620-->
+END%%
+
 ## Partial Orders
 
 A binary relation $R$ on set $A$ is a **partial order on $A$** iff it is reflexive on $A$, antisymmetric, and transitive. In other words, a partial order is an antisymmetric preorder.
@@ -342,6 +679,117 @@ Basic
 Back: It is neither antisymmetric nor transitive.
 Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
 <!--ID: 1723902024394-->
+END%%
+
+### Hasse Diagrams
+
+Let $\langle P, \leq \rangle$ be a poset. For distinct $a, b \in P$, we say $b$ **covers** $a$ if $a \leq b$ and there does not exist any distinct third element $x$ such that $a \leq x \leq b$.
+
+A **Hasse diagram** is a [[set/graphs|directed graph]] that encodes a finite poset $\langle P, \leq \rangle$. It consists of a vertex for each element of $P$, with a directed edge (usually oriented upwards) from $a \in P$ to $b \in P$ whenever $b$ covers $a$.
+
+%%ANKI
+Basic
+Let $\langle P, \leq \rangle$ be a poset. For distinct $a, b \in P$, what does it mean for $b$ to cover $a$?
+Back: $a \leq b$ and there is no distinct $x \in P$ such that $a \leq x \leq b$.
+Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+<!--ID: 1744465553289-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle P, \leq \rangle$ be a poset. Let $a, b \in P$ such that $b$ covers $a$. What two inequalities are implied?
+Back: That $a \neq b$ and $a \leq b$.
+Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+<!--ID: 1744465553297-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle P, \leq \rangle$ be a poset. Let $a, b \in P$ such that $a$ covers $b$. What two inequalities are implied?
+Back: That $a \neq b$ and $b \leq a$.
+Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+<!--ID: 1744465553300-->
+END%%
+
+%%ANKI
+Basic
+Consider partial order $P = \{\varnothing, \{1\}, \{2\}, \{1, 2\}\}$ with ordering relation $\subseteq$. Which element(s) cover $\{\varnothing\}$?
+Back: $\{1\}$ and $\{2\}$.
+Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+<!--ID: 1744465553303-->
+END%%
+
+%%ANKI
+Basic
+Consider partial order $P = \{\varnothing, \{1\}, \{2\}, \{1, 2\}\}$ with ordering relation $\subseteq$. Which element(s) cover $\{1\}$?
+Back: $\{1, 2\}$
+Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+<!--ID: 1744465553305-->
+END%%
+
+%%ANKI
+Basic
+Consider partial order $P = \{\varnothing, \{1\}, \{2\}, \{1, 2\}\}$ with ordering relation $\subseteq$. Which element(s) does $\{1, 2\}$ cover?
+Back: $\{1\}$ and $\{2\}$.
+Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+<!--ID: 1744465553308-->
+END%%
+
+%%ANKI
+Basic
+How are partial orders typically visualized?
+Back: As Hasse diagrams.
+Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+<!--ID: 1744465553311-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle P, \leq \rangle$ be a finite partial order. How many vertices are in its Hasse diagram?
+Back: $\lvert P \rvert$
+Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+<!--ID: 1744465553314-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle P, \leq \rangle$ be a finite partial order. What do the vertices in its Hasse diagram correspond to?
+Back: The elements of $P$.
+Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+<!--ID: 1744465553318-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle P, \leq \rangle$ be a finite partial order. What do the edges in its Hasse diagram correspond to?
+Back: The coverings of members of $P$ by other members of $P$.
+Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+<!--ID: 1744465553322-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle P, \leq \rangle$ be a finite partial order. How many edges are in its Hasse diagram?
+Back: $\lvert \{ \langle a, b \rangle \mid a, b \in P \land b \text{ covers } a \} \rvert$.
+Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+<!--ID: 1744465553325-->
+END%%
+
+%%ANKI
+Basic
+What is the following likely an example of?
+![[hasse-diagram.png]]
+Back: A Hasse diagram.
+Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+<!--ID: 1744465553330-->
+END%%
+
+%%ANKI
+Basic
+How are chains visualized in a Hasse diagram?
+Back: By following the directed edges from one vertex to another.
+Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+<!--ID: 1744465553333-->
 END%%
 
 ## Equivalence Relations
@@ -965,9 +1413,12 @@ END%%
 ## Bibliography
 
 * “Equivalence Relation,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Equivalence_relation](https://en.wikipedia.org/w/index.php?title=Equivalence_relation&oldid=1235801091).
+* “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 * John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+* “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
 * “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
 * “Partition of a Set,” in _Wikipedia_, June 18, 2024, [https://en.wikipedia.org/w/index.php?title=Partition_of_a_set](https://en.wikipedia.org/w/index.php?title=Partition_of_a_set&oldid=1229656401).
 * “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
 * “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+* “Upper and Lower Bounds.” In _Wikipedia_, March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds](https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds&oldid=1281896174).

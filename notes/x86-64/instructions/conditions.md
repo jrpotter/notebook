@@ -949,7 +949,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* might a `switch` statements be faster than an equivalent `if`/`else` chain?
+*Why* might a `switch` statement be faster than an equivalent `if`/`else` chain?
 Back: A `switch` statement can compile down into a jump table.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17

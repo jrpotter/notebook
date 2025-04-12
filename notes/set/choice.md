@@ -245,56 +245,116 @@ END%%
 
 ## Zorn's Lemma
 
-Let $\mathscr{B}$ be a set. We say $\mathscr{B}$ is a **chain** if and only if for any $C, D \in \mathscr{B}$ either $C \subseteq D$ or $D \subseteq C$. In other words, $\subseteq$ is a [[order#Total Order|total order]] on $\mathscr{B}$.
+Let $A$ be a [[order#Partial Orders|partially ordered set]] with ordering relation $\leq$. A **chain** is a subset of $A$ that is [[order#Total Order|totally ordered]] for the induced order.
+
+If every chain $B \subseteq A$ has an upper bound also in $A$, then Zorn's lemma states that $A$ must have a [[order#Bounds|maximal]] element.
 
 %%ANKI
 Basic
-Let $\mathscr{B}$ be a set. When is $\mathscr{B}$ a chain?
-Back: If for any $C, D \in \mathscr{B}$, either $C \subseteq D$ or $D \subseteq C$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1743974940651-->
-END%%
-
-%%ANKI
-Cloze
-Set $A$ is called a {chain} iff {$\subseteq$} is a {total order} on $A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1743974940653-->
+Chains are usually defined as subsets of what kind of mathematical object?
+Back: Partial orders.
+Reference: “Zorn’s Lemma.” In _Wikipedia_, March 12, 2025. [https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma](https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma&oldid=1280130090).
+<!--ID: 1744126029157-->
 END%%
 
 %%ANKI
 Basic
-*Why* is $\{0, 1, 2\}$ a chain?
-Back: Because $0 \subseteq 1 \subseteq 2$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1743974940655-->
+What is a chain?
+Back: A subset of a partial order that is totally ordered on the induced order.
+Reference: “Zorn’s Lemma.” In _Wikipedia_, March 12, 2025. [https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma](https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma&oldid=1280130090).
+<!--ID: 1744126029166-->
 END%%
 
 %%ANKI
 Basic
-*Why* is $\{\{a\}, \{b, c\}, \{a, b, c\}\}$ a chain?
+In the specific case of containment, what is a chain?
+Back: A subset of a poset that is totally ordered on $\subseteq$.
+Reference: “Zorn’s Lemma.” In _Wikipedia_, March 12, 2025. [https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma](https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma&oldid=1280130090).
+<!--ID: 1744126029169-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a poset with ordering relation $\leq$. When is $B \subseteq A$ considered a chain?
+Back: If $B$ is totally ordered with respect to $\leq$.
+Reference: “Zorn’s Lemma.” In _Wikipedia_, March 12, 2025. [https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma](https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma&oldid=1280130090).
+<!--ID: 1744126029173-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle P, \subseteq \rangle$ be a partial order, $B = \{0, 1, 2\}$, and $B \subseteq P$. Why is $B$ a chain?
+Back: Because $0 \subseteq 1 \subseteq 2$, i.e. $B$ is totally ordered with respect to $\subseteq$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744126029176-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle P, \subseteq \rangle$ be a partial order, $B = \{\{a\}, \{b, c\}, \{a, b, c\}\}$, and $B \subseteq P$. Why is $B$ a chain?
 Back: N/A. It isn't since e.g. $\{a\} \not\subseteq \{b, c\}$ and $\{b, c\} \not\subseteq \{a\}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1743974940657-->
+<!--ID: 1744126029180-->
 END%%
 
 %%ANKI
 Basic
-*Why* is $\{3\}$ a chain?
+Let $\langle P, \subseteq \rangle$ be a partial order, $B = \{3\}$, and $B \subseteq P$. Why is $B$ a chain?
 Back: Because $\subseteq$ is strongly connected on $\{3\}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1743974940658-->
+<!--ID: 1744126029184-->
 END%%
 
 %%ANKI
 Basic
-Which chain has smallest cardinality?
-Back: $\varnothing$
+Zorn's lemma is equivalent to what axiom?
+Back: The axiom of choice.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1743974940660-->
+<!--ID: 1744126029187-->
+END%%
+
+%%ANKI
+Basic
+What does Zorn's lemma state?
+Back: If every chain of a poset $P$ has an upper bound also in $P$, then $P$ contains a maximal element.
+Reference: “Zorn’s Lemma.” In _Wikipedia_, March 12, 2025. [https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma](https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma&oldid=1280130090).
+<!--ID: 1744126029191-->
+END%%
+
+%%ANKI
+Basic
+Which equivalence to AoC involves the concept of chains?
+Back: Zorn's lemma.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744126029194-->
+END%%
+
+%%ANKI
+Basic
+Consider poset $P = [0, \infty)$ with ordering relation $\leq$. Does Zorn's lemma apply?
+Back: No. There exist chains of $P$ with no upper bound in $P$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744126029201-->
+END%%
+
+%%ANKI
+Basic
+Consider poset $P = (-\infty, 0]$ with ordering relation $\leq$. Does Zorn's lemma apply?
+Back: Yes. $0 \in P$ is an upper bound for every chain of $P$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744126029206-->
+END%%
+
+%%ANKI
+Basic
+Consider poset $P = (-\infty, 0)$ with ordering relation $\leq$. Does Zorn's lemma apply?
+Back: No. There exist chains of $P$ with no upper bound in $P$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744126029211-->
 END%%
 
 ## Bibliography
 
 * “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+* “Zorn’s Lemma.” In _Wikipedia_, March 12, 2025. [https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma](https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma&oldid=1280130090).

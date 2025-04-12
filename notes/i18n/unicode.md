@@ -181,6 +181,88 @@ Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.or
 <!--ID: 1743890674385-->
 END%%
 
+## UTF-32
+
+UTF-32 is a fixed-width encoding that stores each code unit in 4 bytes (32 bits). UTF-32 is effectively synonymous with UCS-32.
+
+%%ANKI
+Cloze
+{UTF-32} is synonymous with {UCS-4}.
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817131-->
+END%%
+
+%%ANKI
+Basic
+What is UTF-32 an acronym for?
+Back: **U**niform **T**ransformation **F**ormat (**32**-bit).
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817141-->
+END%%
+
+%%ANKI
+Basic
+How many UTF-32 code units does it take to encode a code point?
+Back: One.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330844-->
+END%%
+
+%%ANKI
+Basic
+What is UCS-4 an acronym for?
+Back: **U**niversal **C**haracter **S**et (**4**-byte).
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817144-->
+END%%
+
+%%ANKI
+Cloze
+UCS-4 is {fixed}-width whereas UTF-32 is {fixed}-width.
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817148-->
+END%%
+
+%%ANKI
+Basic
+Which Unicode transformation formats are fixed-length encodings?
+Back: Just UTF-32.
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817151-->
+END%%
+
+%%ANKI
+Basic
+Which Unicode transformation formats are variable-length encodings?
+Back: UTF-8 and UTF-16.
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817155-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, what is the main advantage of UTF-32?
+Back: Every code point can be directly indexed.
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817159-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, what is the main disadvantage of UTF-32?
+Back: It is space inefficient.
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817163-->
+END%%
+
+%%ANKI
+Basic
+In what way might someone argue UTF-32 is still variable-width?
+Back: Code points still can't be processed in isolation (e.g. combining characters sequences or emojis).
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817167-->
+END%%
+
 ## UTF-16
 
 UTF-16 is a variable-width encoding that superseded UCS-2.
@@ -188,6 +270,11 @@ UTF-16 is a variable-width encoding that superseded UCS-2.
 Codes points "in the BMP" (i.e. less than $2^{16}$) are encoded using a single 16-bit code unit.
 
 Code points "above the BMP" (i.e. greater than or equal to $2^{16}$) are encoded using two 16-bit code units. These two code units are chosen from the **surrogate range** `0xD800-0xDFFF`. Values in this range are not used as characters, and UTF-16 provides no legal way to code them as individual code points.
+
+| Binary                                   | Code Point                           | Range              |
+| ---------------------------------------- | ------------------------------------ | ------------------ |
+| `xxxxxxxxxxxxxxxx`                       | `xxxxxxxxxxxxxxxx`                   | `0x0000-0xFFFF`    |
+| `110110xxxxxxxxxx`<br>`110111yyyyyyyyyy` | `xxxxxxxxxxyyyyyyyyyy +`<br>`0x1000` | `0x10000-0x10FFFF` |
 
 %%ANKI
 Cloze
@@ -221,7 +308,15 @@ END%%
 
 %%ANKI
 Basic
-What is the first code unit defined in the UTF-16 surrogate range?
+How many UTF-16 code units does it take to encode a code point?
+Back: One or two.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330835-->
+END%%
+
+%%ANKI
+Basic
+What is the first hexadecimal value defined in the UTF-16 surrogate range?
 Back: `0xD800`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743891757962-->
@@ -229,7 +324,7 @@ END%%
 
 %%ANKI
 Basic
-What is the last code unit defined in the UTF-16 surrogate range?
+What is the last hexadecimal value defined in the UTF-16 surrogate range?
 Back: `0xDFFF`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743891757972-->
@@ -237,7 +332,7 @@ END%%
 
 %%ANKI
 Basic
-What codes points are included in the UTF-16 surrogate range?
+What hexadecimal range comprise UTF-16 surrogates?
 Back: `0xD800-0xDFFF`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743891757986-->
@@ -284,15 +379,15 @@ END%%
 
 %%ANKI
 Basic
-What range(s) of code point values are represented by a single UTF-16 code unit?
-Back: `U+0000-U+D7FF` and `U+E000-U+FFFF`.
+What hexadecimal range(s) comprise code points representable with a single UTF-16 code unit?
+Back: `0x0000-0xD7FF` and `0xE000-0xFFFF`.
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743898501971-->
 END%%
 
 %%ANKI
 Cloze
-With respect to UTF-16, a surrogate {1:pair} consists of a {2:high} surrogate and a {2:low surrogate}.
+With respect to UTF-16, a surrogate {1:pair} consists of a {2:high} surrogate and a {2:low} surrogate.
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743898501973-->
 END%%
@@ -322,7 +417,7 @@ END%%
 
 %%ANKI
 Basic
-In UTF-16, the high surrogate is found in what range of code units?
+The high surrogate is found in what hexadecimal range of UTF-16 code units?
 Back: `0xD800-0xDBFF`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743899036711-->
@@ -330,7 +425,7 @@ END%%
 
 %%ANKI
 Basic
-In UTF-16, the low surrogate is found in what range of code units?
+The low surrogate is found in what hexadecimal range of UTF-16 code units?
 Back: `0xDC00-0xDFFF`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743899036720-->
@@ -338,7 +433,7 @@ END%%
 
 %%ANKI
 Basic
-In UTF-16, the trailing surrogate is found in what range of code units?
+The trailing surrogate is found in what hexadecimal range of UTF-16 code units?
 Back: `0xDC00-0xDFFF`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743899036722-->
@@ -346,7 +441,7 @@ END%%
 
 %%ANKI
 Basic
-In UTF-16, the leading surrogate is found in what range of code units?
+The leading surrogate is found in what hexadecimal range of UTF-16 code units?
 Back: `0xD800-0xDBFF`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743899036724-->
@@ -466,8 +561,132 @@ Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.or
 <!--ID: 1743944550754-->
 END%%
 
+## UTF-8
+
+UTF-8 is a variable-width encoding. Code points are stored using 1 to 4 bytes each. It uses a system of binary prefixes:
+
+| Binary                               | Code Point              | Range              |
+| ------------------------------------ | ----------------------- | ------------------ |
+| `0xxxxxxx`                           | `xxxxxxx`               | `0x0000-0x007F`    |
+| `110xxxxx 10yyyyyy`                  | `xxxxxyyyyyy`           | `0x0080-0x07FF`    |
+| `1110xxxx 10yyyyyy 10zzzzzz`         | `xxxxyyyyyyzzzzzz`      | `0x0800-0xFFFF`    |
+| `1110xxx 10yyyyyy 10zzzzzz 10wwwwww` | `xxxyyyyyyzzzzzzwwwwww` | `0x10000-0x10FFFF` |
+
+%%ANKI
+Basic
+What is UTF-8 an acronym for?
+Back: **U**niform **T**ransformation **F**ormat (**8** bit).
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330846-->
+END%%
+
+%%ANKI
+Basic
+How many UTF-8 code units does it take to encode a code point?
+Back: One to four.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330849-->
+END%%
+
+%%ANKI
+Basic
+Consider a code point of one UTF-8 code unit. What binary prefix does the code point have?
+Back: `0`
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330853-->
+END%%
+
+%%ANKI
+Basic
+Consider a code point of two UTF-8 code units. What binary prefix do the code units have?
+Back: `110` and `10` respectively.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330856-->
+END%%
+
+%%ANKI
+Basic
+Consider a code point of three UTF-8 code units. What binary prefix do the code units have?
+Back: `1110`, `10`, and `10` respectively.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330860-->
+END%%
+
+%%ANKI
+Basic
+Consider a code point of four UTF-8 code units. What binary prefix do the code units have?
+Back: `11110`, `10`, `10`, and `10` respectively.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330864-->
+END%%
+
+%%ANKI
+Basic
+In UTF-8, what is the significance of the `0` binary prefix?
+Back: It indicates a code point encoded with one code unit.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330867-->
+END%%
+
+%%ANKI
+Basic
+In UTF-8, what is the significance of the `10` binary prefix?
+Back: It indicates a continuation byte.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330871-->
+END%%
+
+%%ANKI
+Basic
+In UTF-8, what is the significance of the `110` binary prefix?
+Back: It indicates a code point encoded with two code units.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330875-->
+END%%
+
+%%ANKI
+Basic
+In UTF-8, what is the significance of the `1110` binary prefix?
+Back: It indicates a code point encoded with three code units.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330879-->
+END%%
+
+%%ANKI
+Basic
+In UTF-8, what is the significance of the `11110` binary prefix?
+Back: It indicates a code point encoded with four code units.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330884-->
+END%%
+
+%%ANKI
+Basic
+*Why* do single-byte UTF-8 code points have a `0` binary prefix?
+Back: Because UTF-8 was designed to overlap ASCII.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330888-->
+END%%
+
+%%ANKI
+Basic
+How does UTF-8 encode ASCII code points in a backwards-compatible way? 
+Back: UTF-8 and ASCII encodings overlap.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330892-->
+END%%
+
+%%ANKI
+Basic
+How does UTF-8 encode non-ASCII code points in a backwards-compatible way? 
+Back: All non-ASCII code points are encoded using sequences of bytes outside the ASCII code space.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330896-->
+END%%
+
 ## Bibliography
 
 * “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
 * Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
 * “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+* “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).

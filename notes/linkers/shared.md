@@ -170,7 +170,7 @@ END%%
 
 %%ANKI
 Basic
-What two thingsare copied from a shared library during static linking?
+What two things are copied from a shared library during static linking?
 Back: Relocation info and symbol table info.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1741823727641-->

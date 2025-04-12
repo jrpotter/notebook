@@ -313,6 +313,8 @@ END%%
 
 ## Reference Arcs
 
+Let **reference arc** $\hat{t}$ for an arc $t$ is the smallest non-negative arc between the terminal point of the arc $t$ and the closer of the two $x$-intercepts of the unit circle.
+
 Certain values are common enough to warrant memorizing:
 
 * $\cos{(\pi / 6)} = \sqrt{3} / 2$
@@ -511,6 +513,166 @@ What does $\sin{(\pi / 3)}$ evaluate to?
 Back: $\sqrt{3} / 2$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1743258911416-->
+END%%
+
+%%ANKI
+Basic
+Consider arc $t$ along the unit circle with initial point $\langle 1, 0 \rangle$. *What* is $t$'s reference arc?
+Back: The smallest non-negative arc between $t$'s terminal point and the closer of the two $x$-intercepts of the unit circle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300012-->
+END%%
+
+%%ANKI
+Basic
+Consider arc $0 < t < \pi / 2$ along the unit circle with initial point $\langle 1, 0 \rangle$. What real number does its reference arc map to?
+Back: $t$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300016-->
+END%%
+
+%%ANKI
+Basic
+Consider arc $\pi / 2 < t < \pi$ along the unit circle with initial point $\langle 1, 0 \rangle$. What real number does its reference arc map to?
+Back: $\pi - t$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300018-->
+END%%
+
+%%ANKI
+Basic
+Consider arc $\pi < t < 3\pi / 2$ along the unit circle with initial point $\langle 1, 0 \rangle$. What real number does its reference arc map to?
+Back: $t - \pi$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300020-->
+END%%
+
+%%ANKI
+Basic
+Consider arc $3\pi / 2 < t < 2\pi$ along the unit circle with initial point $\langle 1, 0 \rangle$. What real number does its reference arc map to?
+Back: $2\pi - t$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300023-->
+END%%
+
+%%ANKI
+Basic
+Let $\pi / 2 < t < \pi$. Leveraging reference arcs, what simpler expression is $\cos{(\pi - t)}$ equal to?
+Back: $-\cos{t}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300025-->
+END%%
+
+%%ANKI
+Basic
+Let $\pi / 2 < t < \pi$. Leveraging reference arcs, what simpler expression is $\sin{(\pi - t)}$ equal to?
+Back: $\sin{t}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300028-->
+END%%
+
+%%ANKI
+Basic
+Let $\pi < t < 3\pi / 2$. Leveraging reference arcs, what simpler expression is $\cos{(t - \pi)}$ equal to?
+Back: $-\cos{t}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300030-->
+END%%
+
+%%ANKI
+Basic
+Let $\pi < t < 3\pi / 2$. Leveraging reference arcs, what simpler expression is $\sin{(t - \pi)}$ equal to?
+Back: $-\sin{t}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300032-->
+END%%
+
+%%ANKI
+Basic
+Let $3\pi / 2 < t < 2\pi$. Leveraging reference arcs, what simpler expression is $\cos{(2\pi - t)}$ equal to?
+Back: $\cos{t}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300034-->
+END%%
+
+%%ANKI
+Basic
+Let $3\pi / 2 < t < 2\pi$. Leveraging reference arcs, what simpler expression is $\sin{(2\pi - t)}$ equal to?
+Back: $-\sin{t}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300036-->
+END%%
+
+%%ANKI
+Basic
+Consider the arc from $\langle 1, 0 \rangle$ and the depicted terminal point. What is its reference arc?
+![[reference-point-I.png]]
+Back:
+![[reference-arc-I.png]]
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300039-->
+END%%
+
+%%ANKI
+Basic
+Consider the arc from $\langle 1, 0 \rangle$ and the depicted terminal point. What is its reference arc?
+![[reference-point-IV.png]]
+Back:
+![[reference-arc-IV.png]]
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300041-->
+END%%
+
+%%ANKI
+Basic
+Consider the arc from $\langle 1, 0 \rangle$ and the depicted terminal point. What is its reference arc?
+![[reference-point-III.png]]
+Back:
+![[reference-arc-III.png]]
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300043-->
+END%%
+
+%%ANKI
+Basic
+Consider the arc from $\langle 1, 0 \rangle$ and the depicted terminal point. What is its reference arc?
+![[reference-point-II.png]]
+Back:
+![[reference-arc-II.png]]
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300046-->
+END%%
+
+%%ANKI
+Basic
+Consider an arc $t$ starting at $\langle 1, 0 \rangle$ and ending in quadrant II. Its reference arc is between what two points?
+Back: The terminal point of $t$ and $\langle -1, 0 \rangle$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300048-->
+END%%
+
+%%ANKI
+Basic
+Consider an arc $t$ starting at $\langle 1, 0 \rangle$ and ending in quadrant IV. Its reference arc is between what two points?
+Back: The terminal point of $t$ and $\langle 1, 0 \rangle$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300050-->
+END%%
+
+%%ANKI
+Basic
+Consider an arc $t$ starting at $\langle 1, 0 \rangle$ and ending in quadrant III. Its reference arc is between what two points?
+Back: $\langle -1, 0 \rangle$ and the terminal point of $t$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300053-->
+END%%
+
+%%ANKI
+Basic
+Consider an arc $t$ starting at $\langle 1, 0 \rangle$ and ending in quadrant I. Its reference arc is between what two points?
+Back: $\langle 1, 0 \rangle$ and the terminal point of $t$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744412300055-->
 END%%
 
 ## Bibliography

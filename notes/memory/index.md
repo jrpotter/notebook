@@ -792,11 +792,11 @@ END%%
 %%ANKI
 Cloze
 The capacity of an HDD is given by:
-* {$\text{\# bytes} / \text{sector}$} $\times$
-* {$\text{average \# sectors} / \text{track}$} $\times$
-* {$\text{\# track} / \text{surface}$} $\times$
-* {$\text{\# surfaces} / \text{platter}$} $\times$
-* {$\text{\# platters} / \text{disk}$}
+* {$\# \text{ bytes} / \text{sector}$} $\times$
+* {$\text{average } \# \text{ sectors} / \text{track}$} $\times$
+* {$\# \text{ track} / \text{surface}$} $\times$
+* {$\# \text{ surfaces} / \text{platter}$} $\times$
+* {$\# \text{ platters} / \text{disk}$}
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1743943447587-->
 END%%
