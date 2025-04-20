@@ -386,6 +386,280 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737418825321-->
 END%%
 
+### Tangent
+
+The **tangent function** is the quotient of the sine function by the cosine function. For real number $t \neq 0$, $$\tan{(t)} = \frac{\sin{(t)}}{\cos{(t)}}.$$
+
+%%ANKI
+Basic
+For $t \in \mathbb{R}$, what does $\tan{t}$ refer to?
+Back: The tangent of $t$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010301110-->
+END%%
+
+%%ANKI
+Cloze
+The {1:tangent} function is the quotient of the {2:sine} function by the {2:cosine} function.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744900283731-->
+END%%
+
+%%ANKI
+Basic
+In which quadrant(s) is $\tan{t} > 0$?
+Back: Quadrants I and III.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744900283740-->
+END%%
+
+%%ANKI
+Basic
+In which quadrant(s) is $\tan{t} < 0$?
+Back: Quadrants II and IV.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744900283743-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of the tangent function?
+Back: All reals $t$ where $t \neq \pi / 2 + k\pi$ for all integers $k$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744900283746-->
+END%%
+
+%%ANKI
+Basic
+What is the range of the tangent function?
+Back: $\mathbb{R}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744900283749-->
+END%%
+
+%%ANKI
+Basic
+How is the tangent function denoted?
+Back: As $\tan{t}$ for some real number $t$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744900283752-->
+END%%
+
+%%ANKI
+Basic
+For real number $t$, how is $\tan{t}$ defined?
+Back: $$\tan{(t)} = \frac{\sin{(t)}}{\cos{(t)}}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744900283755-->
+END%%
+
+%%ANKI
+Basic
+For what values $t$ does $\tan{t} = 0$?
+Back: $k\pi$ for all integers $k$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1744900283758-->
+END%%
+
+%%ANKI
+Basic
+Let $t \in \mathbb{R}$. Assuming the following is defined, how is the following more compactly written? $$\frac{\sin{t}}{\cos{t}}$$
+Back: $\tan{t}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010301118-->
+END%%
+
+### Secant
+
+The **secant function** is the reciprocal of the cosine function. That is, for any real number $t$, $$\sec{(t)} = \frac{1}{\cos{(t)}}.$$
+
+%%ANKI
+Basic
+For $t \in \mathbb{R}$, what does $\sec{t}$ refer to?
+Back: The secant of $t$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010301121-->
+END%%
+
+%%ANKI
+Basic
+Let $t \in \mathbb{R}$. Assuming the following is defined, how is the following more compactly written? $$\frac{1}{\cos{t}}$$
+Back: $\sec{t}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010301124-->
+END%%
+
+%%ANKI
+Basic
+Let $t \in \mathbb{R}$. Assuming the following is defined, how is the following more compactly written? $$\frac{\tan{t}}{\sin{t}}$$
+Back: $\sec{t}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811532-->
+END%%
+
+%%ANKI
+Basic
+How is the secant function typically denoted?
+Back: For some real number $t$, $\sec{t}$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010301127-->
+END%%
+
+%%ANKI
+Cloze
+The {secant} function is the reciprocal of the {cosine} function.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010301130-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of the secant function?
+Back: All reals $t$ where $t \neq \pi / 2 + k\pi$ for all integers $k$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010301133-->
+END%%
+
+%%ANKI
+Basic
+What is the range of the secant function?
+Back: $\mathbb{R}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010301136-->
+END%%
+
+%%ANKI
+Basic
+Which of the six basic trigonometric functions is defined with $\cos$ in the denominator?
+Back: $\tan$ and $\sec$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010301139-->
+END%%
+
+### Cosecant
+
+The **cosecant function** is the reciprocal of the sine function. That is, for any real number $t$, $$\csc{(t)} = \frac{1}{\sin{(t)}}.$$
+
+%%ANKI
+Basic
+For $t \in \mathbb{R}$, what does $\csc{t}$ refer to?
+Back: The cosecant of $t$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811539-->
+END%%
+
+%%ANKI
+Basic
+Let $t \in \mathbb{R}$. Assuming the following is defined, how is the following more compactly written? $$\frac{1}{\sin{t}}$$
+Back: $\csc{t}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811541-->
+END%%
+
+%%ANKI
+Basic
+Let $t \in \mathbb{R}$. Assuming the following is defined, how is the following more compactly written? $$\frac{\cot{t}}{\cos{t}}$$
+Back: $\csc{t}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811543-->
+END%%
+
+%%ANKI
+Basic
+How is the cosecant function typically denoted?
+Back: For some real number $t$, $\csc{t}$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811546-->
+END%%
+
+%%ANKI
+Cloze
+The {cosecant} function is the reciprocal of the {sine} function.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811548-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of the cosecant function?
+Back: All reals $t$ where $t \neq k\pi$ for all integers $k$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811550-->
+END%%
+
+%%ANKI
+Basic
+What is the range of the secant function?
+Back: $\mathbb{R}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+END%%
+
+%%ANKI
+Basic
+Which of the six basic trigonometric functions is defined with $\sin$ in the denominator?
+Back: $\cot$ and $\csc$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811553-->
+END%%
+
+### Cotangent
+
+The **cotangent function** is the reciprocal of the tangent function. That is, for any real number $t$, $$\cot{(t)} = \frac{1}{\tan{(t)}} = \frac{\cos{(t)}}{\sin{(t)}}.$$
+
+%%ANKI
+Basic
+For $t \in \mathbb{R}$, what does $\cot{t}$ refer to?
+Back: The cotangent of $t$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811555-->
+END%%
+
+%%ANKI
+Basic
+Let $t \in \mathbb{R}$. Assuming the following is defined, how is the following more compactly written? $$\frac{\sin{t}}{\cos{t}}$$
+Back: $\cot{t}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811558-->
+END%%
+
+%%ANKI
+Basic
+How is the cotangent function typically denoted?
+Back: For some real number $t$, $\cot{t}$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811560-->
+END%%
+
+%%ANKI
+Cloze
+The {cotangent} function is the reciprocal of the {tangent} function.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811563-->
+END%%
+
+%%ANKI
+Cloze
+{1:Sine} is to {2:cosecant} whereas {2:cosine} is to {1:secant}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811566-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of the cotangent function?
+Back: All reals $t$ where $t \neq k\pi$ for all integers $k$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811568-->
+END%%
+
+%%ANKI
+Basic
+What is the range of the cotangent function?
+Back: $\mathbb{R}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745010811571-->
+END%%
+
 ## Identities
 
 ### Pythagorean Identity

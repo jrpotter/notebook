@@ -66,6 +66,104 @@ Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wiki
 <!--ID: 1720964209627-->
 END%%
 
+%%ANKI
+Basic
+Does the following require AoC? Why or why not?
+
+> For any set $A \neq \varnothing$, there exists some $y \in A$.
+
+Back: No. No choice on *which* $y \in A$ was made.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744897010231-->
+END%%
+
+%%ANKI
+Basic
+Does the following require AoC? Why or why not?
+
+> For any set $A \neq \varnothing$, $\exists y \in A$. Then $\{y\} \subseteq A$.
+
+Back: No. No choice on *which* $y \in A$ was made.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744898356981-->
+END%%
+
+%%ANKI
+Basic
+Does the following require AoC? Why or why not?
+
+> Let $R$ be a relation. For any $x \in \mathop{\text{dom}}R$, $\exists y$ such that $xRy$. Then $\{y\} \subseteq [x]_R$.
+
+Back: No. No choice on *which* $y \in \mathop{\text{ran}}R$ was made.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744898356991-->
+END%%
+
+%%ANKI
+Basic
+Does the following require AoC? Why or why not?
+
+> Let $R$ be a relation. For any $x \in \mathop{\text{dom}}R$, $\exists y_x$ such that $xRy_x$. Define $S = \{y_x \mid x \in \mathop{\text{dom}} R \}$.
+
+Back: Yes. For each $x \in \mathop{\text{dom}}R$, we are "choosing" a corresponding $y_x$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744898356994-->
+END%%
+
+%%ANKI
+Basic
+Does the following require AoC? Why or why not?
+
+> Any infinite subset of $\omega$ is equinumerous to $\omega$.
+
+Back: No. There exists a choice function for $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745076132156-->
+END%%
+
+%%ANKI
+Basic
+Does the following require AoC? Why or why not?
+
+> $\aleph_0$ is the smallest infinite cardinal.
+
+Back: Yes. A choice function provided by AoC is used to prove $\omega$ is dominated by any infinite set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745076132163-->
+END%%
+
+%%ANKI
+Basic
+What choice function is typically used for $\omega$?
+Back: $F \colon \mathscr{P}(\omega) - \{\varnothing\} \rightarrow \omega$ given by $F(N) = \text{the least element of } N$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744898356997-->
+END%%
+
+%%ANKI
+Basic
+Do finite sets have a choice function?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744898357000-->
+END%%
+
+%%ANKI
+Basic
+Do infinite sets have a choice function?
+Back: Not necessarily.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744898357002-->
+END%%
+
+%%ANKI
+Basic
+What induction-based principle relates to the choice function typically used for $\omega$?
+Back: The well-ordering principle.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744898357005-->
+END%%
+
 ## Relation Form
 
 For any relation $R$ there exists a function $F \subseteq R$ with $\mathop{\text{dom}}F = \mathop{\text{dom}}R$.
@@ -243,6 +341,42 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1743376072899-->
 END%%
 
+## Cardinal Comparability
+
+For any two cardinal numbers $\kappa$ and $\lambda$, either $\kappa \leq \lambda$ or $\lambda \leq \kappa$.
+
+%%ANKI
+Basic
+Let $C$ and $D$ be sets. Is either $C \preceq D$ or $D \preceq C$?
+Back: Yes, if you accept the axiom of choice.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744555922881-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ and $\lambda$ be cardinal numbers. Is either $\kappa \leq \lambda$ or $\lambda \leq \kappa$?
+Back: Yes, if you accept the axiom of choice.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744555922891-->
+END%%
+
+%%ANKI
+Basic
+With respect to AoC, what does cardinal comparability state?
+Back: For any two cardinal numbers $\kappa$ and $\lambda$, either $\kappa \leq \lambda$ or $\lambda \leq \kappa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744555922893-->
+END%%
+
+%%ANKI
+Basic
+With respect to AoC, how is cardinal comparability expressed in terms of sets?
+Back: For any sets $C$ and $D$, either $C \preceq D$ or $D \preceq C$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744555922896-->
+END%%
+
 ## Zorn's Lemma
 
 Let $A$ be a [[order#Partial Orders|partially ordered set]] with ordering relation $\leq$. A **chain** is a subset of $A$ that is [[order#Total Order|totally ordered]] for the induced order.
@@ -351,6 +485,22 @@ Consider poset $P = (-\infty, 0)$ with ordering relation $\leq$. Does Zorn's lem
 Back: No. There exist chains of $P$ with no upper bound in $P$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744126029211-->
+END%%
+
+%%ANKI
+Basic
+When using Zorn's lemma to prove the relation form of AoC, what partial order is formed?
+Back: For some relation $R$, $\{f \subseteq R \mid f \text{ is a function} \}$ with ordering relation $\subseteq$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744897010242-->
+END%%
+
+%%ANKI
+Basic
+When using Zorn's lemma to prove cardinal comparability, what partial order is formed?
+Back: For any sets $C$ and $D$, $\{f \colon C \rightarrow D \mid f \text{ is an injection} \land \mathop{\text{dom}}f \subseteq C \land \mathop{\text{ran}}f \subseteq D \}$ with ordering relation $\subseteq$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1744897010246-->
 END%%
 
 ## Bibliography

@@ -162,7 +162,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what scheme? $$\text{http://www.example.com/questions/3456/my-document}$$
+The following URI specifies what scheme?
+
+> http://www.example.com/questions/3456/my-document
+
 Back: `http`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212201466-->
@@ -170,7 +173,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what authority? $$\text{http://www.example.com/questions/3456/my-document}$$
+The following URI specifies what authority?
+
+> http://www.example.com/questions/3456/my-document
+
 Back: `//www.example.com`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212201450-->
@@ -178,7 +184,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what userinfo? $$\text{http://www.example.com/questions/3456/my-document}$$
+The following URI specifies what userinfo?
+
+> http://www.example.com/questions/3456/my-document
+
 Back: N/A. It is undefined.
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212472982-->
@@ -186,7 +195,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what port? $$\text{http://www.example.com/questions/3456/my-document}$$
+The following URI specifies what port?
+
+> http://www.example.com/questions/3456/my-document
+
 Back: N/A. It is undefined.
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212472988-->
@@ -194,7 +206,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what host? $$\text{http://www.example.com/questions/3456/my-document}$$
+The following URI specifies what host? 
+
+> http://www.example.com/questions/3456/my-document
+
 Back: `www.example.com`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212472995-->
@@ -202,7 +217,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what path? $$\text{http://www.example.com/questions/3456/my-document}$$
+The following URI specifies what path?
+
+> http://www.example.com/questions/3456/my-document
+
 Back: `/questions/3456/my-document`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212201416-->
@@ -210,7 +228,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what query? $$\text{http://www.example.com/questions/3456/my-document}$$
+The following URI specifies what query?
+
+> http://www.example.com/questions/3456/my-document
+
 Back: N/A. It is undefined.
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212201460-->
@@ -218,7 +239,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what fragment? $$\text{http://www.example.com/questions/3456/my-document}$$
+The following URI specifies what fragment?
+
+> http://www.example.com/questions/3456/my-document
+
 Back: N/A. It is undefined.
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212201472-->
@@ -228,7 +252,8 @@ END%%
 Cloze
 The authority of a URI has the following generic syntax:
 
-`//`{`[<userinfo>@]`}{`<host>`}{`[:<port>]`}
+> `//`{`[<userinfo>@]`}{`<host>`}{`[:<port>]`}
+
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722211744669-->
 END%%
@@ -251,7 +276,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what scheme? $$\text{ldap://[2001:db8::7]/c=GB?objectClass?one}$$
+The following URI specifies what scheme?
+
+> ldap://[2001:db8::7]/c=GB?objectClass?one
+
 Back: `ldap`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212473001-->
@@ -259,7 +287,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what fragment? $$\text{ldap://[2001:db8::7]/c=GB?objectClass?one}$$
+The following URI specifies what fragment?
+
+> ldap://[2001:db8::7]/c=GB?objectClass?one
+
 Back: N/A. It is undefined.
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790216-->
@@ -267,7 +298,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what authority? $$\text{ldap://[2001:db8::7]/c=GB?objectClass?one}$$
+The following URI specifies what authority?
+
+> ldap://[2001:db8::7]/c=GB?objectClass?one
+
 Back: `//[2001:db8::7]`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790223-->
@@ -275,7 +309,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what query? $$\text{ldap://[2001:db8::7]/c=GB?objectClass?one}$$
+The following URI specifies what query?
+
+> ldap://[2001:db8::7]/c=GB?objectClass?one
+
 Back: `objectClass?one`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790228-->
@@ -283,7 +320,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what path? $$\text{ldap://[2001:db8::7]/c=GB?objectClass?one}$$
+The following URI specifies what path?
+
+> ldap://[2001:db8::7]/c=GB?objectClass?one
+
 Back: `/c=GB`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790232-->
@@ -291,7 +331,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what scheme? $$\text{tel:+1-816-555-1212}$$
+The following URI specifies what scheme?
+
+> tel:+1-816-555-1212
+
 Back: `tel`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790236-->
@@ -299,7 +342,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what authority? $$\text{tel:+1-816-555-1212}$$
+The following URI specifies what authority?
+
+> tel:+1-816-555-1212
+
 Back: N/A. It is undefined.
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790241-->
@@ -307,7 +353,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what path? $$\text{tel:+1-816-555-1212}$$
+The following URI specifies what path?
+
+> tel:+1-816-555-1212
+
 Back: `+1-816-555-1212`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790247-->
@@ -315,7 +364,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what query? $$\text{tel:+1-816-555-1212}$$
+The following URI specifies what query?
+
+> tel:+1-816-555-1212
+
 Back: N/A. It is undefined.
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790252-->
@@ -323,7 +375,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what fragment? $$\text{tel:+1-816-555-1212}$$
+The following URI specifies what fragment?
+
+> tel:+1-816-555-1212
+
 Back: N/A. It is undefined.
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790258-->
@@ -331,7 +386,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what scheme? $$\text{telnet://192.0.2.16:80/}$$
+The following URI specifies what scheme?
+
+> telnet://192.0.2.16:80/
+
 Back: `telnet`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790265-->
@@ -339,7 +397,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what authority? $$\text{telnet://192.0.2.16:80/}$$
+The following URI specifies what authority?
+
+> telnet://192.0.2.16:80/
+
 Back: `//192.0.2.16:80`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790272-->
@@ -347,7 +408,10 @@ END%%
 
 %%ANKI
 Basic
-The following URI specifies what path? $$\text{telnet://192.0.2.16:80/}$$
+The following URI specifies what path?
+
+> telnet://192.0.2.16:80/
+
 Back: `/`
 Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
 <!--ID: 1722212790279-->

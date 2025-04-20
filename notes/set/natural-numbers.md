@@ -355,7 +355,10 @@ END%%
 
 %%ANKI
 Basic
-What inductive set do we construct to prove the following by induction? $$\text{Every natural number is nonnegative}$$
+What inductive set do we construct to prove the following by induction?
+
+> Every natural number is nonnegative.
+
 Back: $\{n \in \omega \mid 0 \leq n\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1724606314405-->
@@ -363,7 +366,10 @@ END%%
 
 %%ANKI
 Basic
-What inductive set do we construct to prove the following by induction? $$\text{Every nonzero natural number is the successor of another natural number}$$
+What inductive set do we construct to prove the following by induction?
+
+> Every nonzero natural number is the successof of another natural number.
+
 Back: $\{n \in \omega \mid n = 0 \lor (\exists m \in \omega, n = m^+)\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1724606314406-->
@@ -1526,8 +1532,7 @@ END%%
 
 ### Strong Induction Principle
 
-Let $A$ be a subset of $\omega$ and assume that for every $n \in \omega$, $$\text{if every number less than } n \text{ is in } A, \text{then } n \in A.$$
-Then $A = \omega$.
+Let $A$ be a subset of $\omega$ and assume that for every $n \in \omega$, if every number less than $n$ is in $A$, then $n \in A$. Then $A = \omega$.
 
 %%ANKI
 Basic

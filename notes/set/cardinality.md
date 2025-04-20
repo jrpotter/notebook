@@ -321,6 +321,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1732545231353-->
 END%%
 
+%%ANKI
+Basic
+Let $\kappa < \aleph_0$ be a cardinal number. What can be said about $\kappa$?
+Back: $\kappa$ must be finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745076132167-->
+END%%
+
 ### Pigeonhole Principle
 
 No natural number is equinumerous to a proper subset of itself. More generally, no finite set is equinumerous to a proper subset of itself.
@@ -377,7 +385,10 @@ END%%
 
 %%ANKI
 Basic
-What name is given to the following theorem? $$\text{No finite set is equinumerous to a proper subset of itself.}$$
+What name is given to the following theorem?
+
+> No finite set is equinumerous to a proper subset of itself.
+
 Back: The pigeonhole principle.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1732545231391-->
@@ -429,6 +440,46 @@ What general strategy is used to prove $\omega$ is an infinite set?
 Back: Prove $\omega$ is equinumerous to a proper subset of itself.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733407760085-->
+END%%
+
+%%ANKI
+Basic
+How did Dedekind define an infinite set?
+Back: As a set equinumerous to a proper subset of itself.
+<!--ID: 1745098267311-->
+END%%
+
+%%ANKI
+Basic
+Suppose a set is equinumerous to a subset of itself. Is it infinite?
+Back: Not necessarly (must be a *proper* subset).
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745098267320-->
+END%%
+
+%%ANKI
+Basic
+Suppose a set is equinumerous to a proper subset of itself. Is it infinite?
+Back: Not necessarly (must be a *proper* subset).
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745098267323-->
+END%%
+
+%%ANKI
+Basic
+Suppose a set is infinite. Is it equinumerous to a proper subset of itself?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745098267326-->
+END%%
+
+%%ANKI
+Basic
+What is the following a visual proof of?
+![[dedekind-infinite.png]]
+Back: An infinite set is equinumerous to a proper subset of itself.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745098267330-->
 END%%
 
 ## Cardinal Numbers
@@ -585,10 +636,34 @@ END%%
 
 %%ANKI
 Basic
+What is the "smallest" infinite set?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745076132169-->
+END%%
+
+%%ANKI
+Basic
 What is the "smallest" infinite cardinal?
 Back: $\aleph_0$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1733675315469-->
+END%%
+
+%%ANKI
+Basic
+What axiom is necessary to prove $\aleph_0$ is the smallest infinite cardinal?
+Back: The axiom of choice.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745076132172-->
+END%%
+
+%%ANKI
+Basic
+Let $A \subseteq \omega$ be an infinite set. What can we say about $A$?
+Back: $A$ is equinumerous to $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745076132175-->
 END%%
 
 %%ANKI
@@ -1498,16 +1573,22 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. Restate the following in terms of sets: $$\text{if } \kappa \leq \lambda \text{ and } \lambda \leq \mu, \text{ then } \kappa \leq \mu$$
-Back: Let $K$, $L$, and $M$ be sets s.t. $\mathop{\text{card}}K = \kappa$, $\mathop{\text{card}}L = \lambda$, and $\mathop{\text{card}}M = \mu$. Then $$\text{if } K \preceq L \text{ and } L \preceq M, \text{ then } K \preceq M$$
+Let $\kappa$, $\lambda$, and $\mu$ be cardinal numbers. Restate the following in terms of sets:
+
+> If $\kappa \leq \lambda$ and $\lambda \leq \mu$, then $\kappa \leq \mu$.
+
+Back: Let $K$, $L$, and $M$ be sets s.t. $\mathop{\text{card}}K = \kappa$, $\mathop{\text{card}}L = \lambda$, and $\mathop{\text{card}}M = \mu$. If $K \preceq L$ and $L \preceq M$, then $K \preceq M$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1736702905257-->
 END%%
 
 %%ANKI
 Basic
-Let $K$, $L$, and $M$ be sets. Restate the following in terms of cardinal numbers: $$\text{if } K \preceq L \text{ and } L \preceq M, \text{ then } K \preceq M$$
-Back: Let $\mathop{\text{card}}K = \kappa$, $\mathop{\text{card}}L = \lambda$, and $\mathop{\text{card}}M = \mu$. Then $$\text{if } \kappa \leq \lambda \text{ and } \lambda \leq \mu, \text{ then } \kappa \leq \mu$$
+Let $K$, $L$, and $M$ be sets. Restate the following in terms of cardinal numbers:
+
+> If $K \preceq L$ and $L \preceq M$, then $K \preceq M$.
+
+Back: Let $\mathop{\text{card}}K = \kappa$, $\mathop{\text{card}}L = \lambda$, and $\mathop{\text{card}}M = \mu$. If $\kappa \leq \lambda$ and $\lambda \leq \mu$, then $\kappa \leq \mu$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1736702905262-->
 END%%

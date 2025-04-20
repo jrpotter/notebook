@@ -888,7 +888,10 @@ END%%
 
 %%ANKI
 Basic
-What is wrong with the following statement? $$\text{If } f \text{ is monotonic on interval } (a, b), \text{ then } f \text{ is integrable on } (a, b).$$
+What is wrong with the following statement?
+
+> If $f$ is monotonic on interval $(a, b)$, then $f$ is integrable on $(a, b)$.
+
 Back: We cannot make this claim on *open* interval $(a, b)$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1743283589734-->
