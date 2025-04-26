@@ -852,7 +852,7 @@ END%%
 
 ### Positional Trees
 
-A **positional tree** is a rooted tree in which each child is labeled with a specific positive integer. A **$k$-ary tree** is a positional tree with at most $k$ children/labels. A [[binary-tree|binary tree]] is a $2$-ary tree.
+A **positional tree** is a rooted tree in which each child is labeled with a specific positive integer. A **$k$-ary tree** is a positional tree with at most $k$ children/labels. A [[binary_tree|binary tree]] is a $2$-ary tree.
 
 A $k$-ary tree is **full** if every node has degree $0$ or $k$. A $k$-ary tree is **perfect** if all leaves have the same depth and all internal nodes have degree $k$. A $k$-ary tree is **complete** if the last level is not filled but all leaves have the same depth and are leftmost arranged.
 

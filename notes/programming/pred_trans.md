@@ -1,7 +1,7 @@
 ---
 title: Predicate Transformers
 TARGET DECK: Obsidian::STEM
-FILE TAGS: programming::pred-trans
+FILE TAGS: programming::pred_trans
 tags:
   - pred_trans
   - programming

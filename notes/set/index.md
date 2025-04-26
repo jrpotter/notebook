@@ -1075,7 +1075,7 @@ The axiom of choice is elaborated on in [[choice]].
 
 ## Infinity Axiom
 
-There exists an [[natural-numbers#Inductive Sets|inductive]] set: $$\exists A, [\varnothing \in A \land (\forall a \in A, a^+ \in A)]$$
+There exists an [[natural_numbers#Inductive Sets|inductive]] set: $$\exists A, [\varnothing \in A \land (\forall a \in A, a^+ \in A)]$$
 
 %%ANKI
 Basic

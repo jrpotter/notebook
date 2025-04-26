@@ -2044,7 +2044,7 @@ END%%
 Let $f$ be a function from $B$ into $B$ and assume $A \subseteq B$. The bottom-up approach for constructing the closure $C$ of $A$ under $f$ defines $C_* = C$ to be $$C_* = \bigcup_{i \in \omega} h(i)$$
 where $h \colon \omega \rightarrow \mathscr{P}(B)$ is recursively defined as: $$\begin{align*} h(0) & = A, \\ h(n^+) &= h(n) \cup f[\![h(n)]\!]. \end{align*}$$
 
-Note that the [[natural-numbers#Recursion Theorem|recursion theorem]] proves $h$ is indeed a function.
+Note that the [[natural_numbers#Recursion Theorem|recursion theorem]] proves $h$ is indeed a function.
 
 %%ANKI
 Basic

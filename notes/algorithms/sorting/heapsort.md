@@ -153,7 +153,7 @@ END%%
 
 ## Loop Invariant
 
-Consider [[loop-invariant|loop invariant]] $P$ given by
+Consider [[loop_invariant|loop invariant]] $P$ given by
 
 > `A[0:i-1]` is a max-heap containing the `i` smallest elements of `A`. `A[i:n-1]` contains the `n - i` largest elements of `A` sorted.
 

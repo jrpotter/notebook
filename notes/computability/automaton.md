@@ -1137,7 +1137,7 @@ How many states are in the power set construction of the following NFA?
 ![[nfa-example-powerset.png]]
 Back: $4$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745625798119-->
+<!--ID: 1745636174230-->
 END%%
 
 %%ANKI
@@ -1146,7 +1146,7 @@ Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set constructio
 ![[nfa-example-powerset.png]]
 Back: $Q = \{\varnothing, \{1\}, \{2\}, \{1, 2\} \}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745625798128-->
+<!--ID: 1745636174233-->
 END%%
 
 %%ANKI
@@ -1155,7 +1155,7 @@ Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set constructio
 ![[nfa-example-powerset.png]]
 Back: $q_0 = \{1\}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745625798131-->
+<!--ID: 1745636174235-->
 END%%
 
 %%ANKI
@@ -1164,7 +1164,7 @@ Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set constructio
 ![[nfa-example-powerset.png]]
 Back: $F = \{1\}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745625798134-->
+<!--ID: 1745636174236-->
 END%%
 
 %%ANKI
@@ -1173,7 +1173,7 @@ Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set constructio
 ![[nfa-example-powerset.png]]
 Back: $\delta(\{1\}, a) = \{1, 2\}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745625798137-->
+<!--ID: 1745636174238-->
 END%%
 
 %%ANKI
@@ -1182,7 +1182,7 @@ Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set constructio
 ![[nfa-example-powerset.png]]
 Back: $\delta(\{2\}, a) = \varnothing$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745625798139-->
+<!--ID: 1745636174239-->
 END%%
 
 %%ANKI
@@ -1191,7 +1191,7 @@ Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set constructio
 ![[nfa-example-powerset.png]]
 Back: $\delta(\{1, 2\}, a) = \{1, 2\}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745625798142-->
+<!--ID: 1745636174240-->
 END%%
 
 %%ANKI
@@ -1200,7 +1200,7 @@ Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set constructio
 ![[nfa-example-powerset.png]]
 Back: $\delta(\{1, 2\}, b) = \{1, 2\}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745625798145-->
+<!--ID: 1745636174241-->
 END%%
 
 %%ANKI

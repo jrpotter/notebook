@@ -271,7 +271,7 @@ END%%
 
 ## Finiteness
 
-A set is **finite** if and only if it is equinumerous to a [[natural-numbers|natural number]]. Otherwise it is **infinite**.
+A set is **finite** if and only if it is equinumerous to a [[natural_numbers|natural number]]. Otherwise it is **infinite**.
 
 %%ANKI
 Basic

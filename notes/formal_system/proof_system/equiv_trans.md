@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-**Equivalence-transformation** is a proof system used alongside classical truth-functional [[pred_logic|predicate logic]]. It is the foundation upon which [[pred-trans|predicate transformers]] are based.
+**Equivalence-transformation** is a proof system used alongside classical truth-functional [[pred_logic|predicate logic]]. It is the foundation upon which [[pred_trans|predicate transformers]] are based.
 
 %%ANKI
 Basic

@@ -116,7 +116,7 @@ END%%
 
 ## Loop Invariant
 
-Consider [[loop-invariant|loop invariant]] $P$ given by
+Consider [[loop_invariant|loop invariant]] $P$ given by
 
 > `A[0:i-1]` consists of the original `A[0:i-1]` elements but in sorted order.
 

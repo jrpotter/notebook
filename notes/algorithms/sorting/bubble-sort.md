@@ -132,7 +132,7 @@ END%%
 
 ## Loop Invariant
 
-Consider [[loop-invariant|loop invariant]] $P$ given by
+Consider [[loop_invariant|loop invariant]] $P$ given by
 
 > `A[0:i-1]` is a sorted array of the `i` least elements of `A`.
 

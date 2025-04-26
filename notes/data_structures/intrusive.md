@@ -16,7 +16,7 @@ struct Point {
 }
 ```
 
-A non-intrusive implementation of a [[linked-lists|doubly linked list]] would look as follows:
+A non-intrusive implementation of a [[linked_lists|doubly linked list]] would look as follows:
 
 ```c
 struct ListNode {

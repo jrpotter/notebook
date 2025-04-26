@@ -16,7 +16,7 @@ Examples of normal form include:
 * [[truth-tables|Conjunctive Normal Form]]
 * [[truth-tables|Disjunctive Normal Form]]
 * [[pred_logic#Identifiers|Prenex Normal Form]]
-* [[beta-reduction#Normal Form|β-normal forms]]
+* [[beta_reduction#Normal Form|β-normal forms]]
 
 In most fields, a canoncial form specifies a *unique* representation.
 

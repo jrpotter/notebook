@@ -562,7 +562,7 @@ END%%
 
 ## Aliasing
 
-Accessing the same object through different pointers is called **aliasing**. With the exclusion of [[types/index#Character Types|character types]], only pointers of the same base type may alias.
+Accessing the same object through different pointers is called **aliasing**. With the exclusion of [[c17/types/index#Character Types|character types]], only pointers of the same base type may alias.
 
 %%ANKI
 Basic

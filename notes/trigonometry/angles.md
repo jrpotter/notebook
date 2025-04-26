@@ -278,7 +278,7 @@ END%%
 
 Angles are measures in **degrees** and **radians**.
 
-An angle of $1\degree$ is the angle in standard position on the [[unit-circle|unit circle]] that is [[#Subtended Angles|subtended by]] an arc measuring $1/360$th of the circle's circumference.
+An angle of $1\degree$ is the angle in standard position on the [[unit_circle|unit circle]] that is [[#Subtended Angles|subtended by]] an arc measuring $1/360$th of the circle's circumference.
 
 An angle of $1$ radian is the angle in standard position on the unit circle that is subtended by an arc measuring the length of the circle's radius (in the positive direction).
 

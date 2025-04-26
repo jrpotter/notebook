@@ -1,7 +1,7 @@
 ---
 title: Short-Circuit
 TARGET DECK: Obsidian::STEM
-FILE TAGS: programming::short-circuit
+FILE TAGS: programming::short_circuit
 tags:
   - logic
   - programming

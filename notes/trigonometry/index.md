@@ -102,7 +102,7 @@ END%%
 
 ### Sine
 
-If the real number $t$ is the directed length of an arc (either positive or negative) measured on the [[unit-circle|unit circle]] $x^2 + y^2 = 1$ (with counterclockwise as the positive direction) with initial point $\langle 1, 0 \rangle$ and terminal point $\langle x, y \rangle$, then the **sine** of $t$, denoted $\sin(t)$ is defined to be $$\sin(t) = y.$$
+If the real number $t$ is the directed length of an arc (either positive or negative) measured on the [[unit_circle|unit circle]] $x^2 + y^2 = 1$ (with counterclockwise as the positive direction) with initial point $\langle 1, 0 \rangle$ and terminal point $\langle x, y \rangle$, then the **sine** of $t$, denoted $\sin(t)$ is defined to be $$\sin(t) = y.$$
 
 %%ANKI
 Cloze
@@ -265,7 +265,7 @@ END%%
 
 ### Cosine
 
-If the real number $t$ is the directed length of an arc (either positive or negative) measured on the [[unit-circle|unit circle]] $x^2 + y^2 = 1$ (with counterclockwise as the positive direction) with initial point $\langle 1, 0 \rangle$ and terminal point $\langle x, y \rangle$, then the **cosine** of $t$, denoted $\cos(t)$, is defined to be $$\cos(t) = x.$$
+If the real number $t$ is the directed length of an arc (either positive or negative) measured on the [[unit_circle|unit circle]] $x^2 + y^2 = 1$ (with counterclockwise as the positive direction) with initial point $\langle 1, 0 \rangle$ and terminal point $\langle x, y \rangle$, then the **cosine** of $t$, denoted $\cos(t)$, is defined to be $$\cos(t) = x.$$
 
 %%ANKI
 Cloze

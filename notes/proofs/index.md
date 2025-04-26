@@ -272,7 +272,7 @@ Let $P(n)$ be a predicate depending on a number $n \in \mathbb{N}$. Assume that
 
 Then $P(n)$ is true for all $n \geq n_0$.
 
-Within the inductive case, $P(k)$ is known as the **inductive hypothesis**. The formal justification of proof by induction is intimately tied to the idea of [[natural-numbers#Inductive Sets|inductive sets]].
+Within the inductive case, $P(k)$ is known as the **inductive hypothesis**. The formal justification of proof by induction is intimately tied to the idea of [[natural_numbers#Inductive Sets|inductive sets]].
 
 %%ANKI
 Cloze
@@ -375,7 +375,7 @@ Let $P(n)$ be a predicate depending on a number $n \in \mathbb{N}$. Assume that
 
 Then $P(n)$ is true for all $n \geq n_0$.
 
-The formal justification of proof by induction is intimately tied to the idea of [[natural-numbers#Inductive Sets|inductive sets]] and the [[natural-numbers#Well-Ordering Principle|well-ordering principle]].
+The formal justification of proof by induction is intimately tied to the idea of [[natural_numbers#Inductive Sets|inductive sets]] and the [[natural_numbers#Well-Ordering Principle|well-ordering principle]].
 
 %%ANKI
 Basic
@@ -419,7 +419,7 @@ END%%
 
 ### Well-Ordering Principle
 
-This is covered [[natural-numbers#Well-Ordering Principle|here]]. It is equivalent to weak and strong induction.
+This is covered [[natural_numbers#Well-Ordering Principle|here]]. It is equivalent to weak and strong induction.
 
 %%ANKI
 Basic

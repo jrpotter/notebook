@@ -103,7 +103,7 @@ END%%
 
 If $S, T \in \mathscr{M}$, then $S \cup T$ and $S \cap T$ are in $\mathscr{M}$. Also $$a(S \cup T) = a(S) + a(T) - a(S \cap T).$$
 
-Notice this last formulation is a special case of [[inclusion-exclusion|PIE]].
+Notice this last formulation is a special case of [[inclusion_exclusion|PIE]].
 
 %%ANKI
 Basic
