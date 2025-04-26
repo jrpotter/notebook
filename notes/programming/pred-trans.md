@@ -782,7 +782,7 @@ END%%
 #### General
 
 The multiple assignment command has form $$x_1 \circ s_1, \cdots, x_n \circ s_n \coloneqq e_1, \cdots, e_n$$
-where each $x_i$ is an identifier, each $s_i$ is a [[equiv-trans#Selectors|selector]], and each expression $e_i$ has the same type as $x_i \circ s_i$. We denote this assignment more compactly as $\bar{x} \coloneqq \bar{e}$. We define multiple assignment as $$wp(''\bar{x} \coloneqq \bar{e}'', R) = domain(\bar{e}) \textbf{ cand } R_{\bar{e}}^\bar{x}$$
+where each $x_i$ is an identifier, each $s_i$ is a [[equiv_trans#Selectors|selector]], and each expression $e_i$ has the same type as $x_i \circ s_i$. We denote this assignment more compactly as $\bar{x} \coloneqq \bar{e}$. We define multiple assignment as $$wp(''\bar{x} \coloneqq \bar{e}'', R) = domain(\bar{e}) \textbf{ cand } R_{\bar{e}}^\bar{x}$$
 
 %%ANKI
 Basic

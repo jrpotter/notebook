@@ -1,16 +1,16 @@
 ---
 title: Equivalence Transformation
 TARGET DECK: Obsidian::STEM
-FILE TAGS: formal-system::equiv-trans
+FILE TAGS: formal_system::equiv_trans
 tags:
-  - equiv-trans
+  - equiv_trans
   - logic
   - programming
 ---
 
 ## Overview
 
-**Equivalence-transformation** is a proof system used alongside classical truth-functional [[pred-logic|predicate logic]]. It is the foundation upon which [[pred-trans|predicate transformers]] are based.
+**Equivalence-transformation** is a proof system used alongside classical truth-functional [[pred_logic|predicate logic]]. It is the foundation upon which [[pred-trans|predicate transformers]] are based.
 
 %%ANKI
 Basic
@@ -44,7 +44,7 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707251673342-->
 END%%
 
-A [[prop-logic|proposition]] is said to be a **tautology** if it evaluates to $T$ in every state it is well-defined in. We say propositions $E1$ and $E2$ are **equivalent** if $E1 = E2$ is a tautology. In this case, we say $E1 = E2$ is an **equivalence**.
+A [[prop_logic|proposition]] is said to be a **tautology** if it evaluates to $T$ in every state it is well-defined in. We say propositions $E1$ and $E2$ are **equivalent** if $E1 = E2$ is a tautology. In this case, we say $E1 = E2$ is an **equivalence**.
 
 %%ANKI
 Basic
@@ -891,7 +891,7 @@ END%%
 
 ## Substitution
 
-**Textual substitution** refers to the replacement of a [[pred-logic#Identifiers|free]] identifier with an expression, introducing parentheses as necessary. This concept amounts to the [[#Equivalence Rules|Substitution Rule]] with different notation.
+**Textual substitution** refers to the replacement of a [[pred_logic#Identifiers|free]] identifier with an expression, introducing parentheses as necessary. This concept amounts to the [[#Equivalence Rules|Substitution Rule]] with different notation.
 
 %%ANKI
 Basic

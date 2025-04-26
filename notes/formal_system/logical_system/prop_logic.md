@@ -1,7 +1,7 @@
 ---
 title: Propositional Logic
 TARGET DECK: Obsidian::STEM
-FILE TAGS: formal-system::propositional
+FILE TAGS: formal_system::propositional
 tags:
   - logic
   - propositional

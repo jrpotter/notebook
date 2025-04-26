@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-Assuming an [[data-structures/graphs#Adjacency-List|adjacency-list]] representation of a directed graph, Kosaraju's algorithm is a $\Theta(\lvert V \rvert + \lvert E \rvert)$-time procedure for finding the [[data-structures/graphs#Components|strongly-connected comopnents]] of the graph. The algorithm runs on a directed graph $G$ as follows:
+Assuming an [[data_structures/graphs#Adjacency-List|adjacency-list]] representation of a directed graph, Kosaraju's algorithm is a $\Theta(\lvert V \rvert + \lvert E \rvert)$-time procedure for finding the [[data_structures/graphs#Components|strongly-connected comopnents]] of the graph. The algorithm runs on a directed graph $G$ as follows:
 
 1. Call $\text{DFS}(G)$ to compute finish times $u{.}f$ for each vertex $u$;
 2. Create $G^T$;

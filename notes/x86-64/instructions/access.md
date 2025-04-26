@@ -2,8 +2,7 @@
 title: Memory Access
 TARGET DECK: Obsidian::STEM
 FILE TAGS: x86-64
-tags:
-  - x86-64
+tags: []
 ---
 
 ## MOV

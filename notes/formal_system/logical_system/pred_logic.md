@@ -1,7 +1,7 @@
 ---
 title: Predicate Logic
 TARGET DECK: Obsidian::STEM
-FILE TAGS: formal-system::predicate
+FILE TAGS: formal_system::predicate
 tags:
   - logic
   - predicate
@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-**Predicate logic** is a logical system that uses quantified variables over non-logical objects. A **predicate** is a sentence with some number of free variables. A predicate with free variables "plugged in" is a [[prop-logic|proposition]].
+**Predicate logic** is a logical system that uses quantified variables over non-logical objects. A **predicate** is a sentence with some number of free variables. A predicate with free variables "plugged in" is a [[prop_logic|proposition]].
 
 %%ANKI
 Cloze

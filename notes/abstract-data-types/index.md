@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-An **abstract data type** (ADT) is a mathematical model for data types, defined in terms of its behavior (semantics). An ADT's implementation often takes the form of a [[data-structures/index|data structure]].
+An **abstract data type** (ADT) is a mathematical model for data types, defined in terms of its behavior (semantics). An ADT's implementation often takes the form of a [[data_structures/index|data structure]].
 
 %%ANKI
 Basic

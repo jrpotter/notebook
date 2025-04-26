@@ -463,7 +463,7 @@ END%%
 
 ## Simultaneous Substitution
 
-Substitution can be generalized in the natural way to define simultaneous substitution $$[N_1/x_1, N_2/x_2, \ldots, N_n/x_n]M$$ for $n \geq 2$. As in [[equiv-trans#Substitution|equivalence-transformation]], simultaneous substitution is different from sequential substitution.
+Substitution can be generalized in the natural way to define simultaneous substitution $$[N_1/x_1, N_2/x_2, \ldots, N_n/x_n]M$$ for $n \geq 2$. As in [[equiv_trans#Substitution|equivalence-transformation]], simultaneous substitution is different from sequential substitution.
 
 %%ANKI
 Basic

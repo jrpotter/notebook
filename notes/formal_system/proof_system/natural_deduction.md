@@ -1,16 +1,16 @@
 ---
 title: Natural Deduction
 TARGET DECK: Obsidian::STEM
-FILE TAGS: formal-system::natural-deduction
+FILE TAGS: formal_system::natural_deduction
 tags:
   - logic
-  - natural-deduction
+  - natural_deduction
   - programming
 ---
 
 ## Overview
 
-Natural deduction is a proof system typically used alongside classical truth-functional [[prop-logic|propositional]] and [[pred-logic|predicate]] logic. It is meant to mimic the patterns of reasoning that one might "naturally" make when forming arguments in plain English.
+Natural deduction is a proof system typically used alongside classical truth-functional [[prop_logic|propositional]] and [[pred_logic|predicate]] logic. It is meant to mimic the patterns of reasoning that one might "naturally" make when forming arguments in plain English.
 
 %%ANKI
 Basic

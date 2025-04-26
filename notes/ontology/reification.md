@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-**Reification** refers to the process by which an abstract idea is made concrete. For example, in the context of [[data-models/rdf/index|RDF]], it refers to writing RDF statements about RDF statements.
+**Reification** refers to the process by which an abstract idea is made concrete. For example, in the context of [[data_models/rdf/index|RDF]], it refers to writing RDF statements about RDF statements.
 
 %%ANKI
 Basic

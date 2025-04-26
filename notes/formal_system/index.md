@@ -1,9 +1,9 @@
 ---
 title: Logic
 TARGET DECK: Obsidian::STEM
-FILE TAGS: formal-system
+FILE TAGS: formal_system
 tags:
-  - formal-system
+  - formal_system
   - logic
 ---
 
@@ -158,7 +158,7 @@ Basic
 Is the following a WFF of propositional logic? $(a \Rightarrow b) \Leftrightarrow c$
 Back: Yes.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
-Tags: formal-system::propositional
+Tags: formal_system::propositional
 <!--ID: 1721561534150-->
 END%%
 
@@ -167,7 +167,7 @@ Basic
 Is the following a WFF of propositional logic? $(a \Rightarrow b( \Leftrightarrow c$
 Back: No.
 Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipedia.org/w/index.php?title=Formal_system](https://en.wikipedia.org/w/index.php?title=Formal_system&oldid=1223254138).
-Tags: formal-system::propositional
+Tags: formal_system::propositional
 <!--ID: 1721561574169-->
 END%%
 
@@ -196,7 +196,7 @@ Reference: “Formal System,” in _Wikipedia_, May 10, 2024, [https://en.wikipe
 <!--ID: 1721561534157-->
 END%%
 
-A deductive system can be further subcategorized as either a [[formal-system/proof-system/index|proof system]] or a [[formal-system/logical-system/index|logical system]]. In both cases, the general principle is to define a (possibly empty) set of **axioms** alongside a set of **inference rules** that together can be used to infer **theorems**.
+A deductive system can be further subcategorized as either a [[formal_system/proof_system/index|proof system]] or a [[formal_system/logical_system/index|logical system]]. In both cases, the general principle is to define a (possibly empty) set of **axioms** alongside a set of **inference rules** that together can be used to infer **theorems**.
 
 %%ANKI
 Basic

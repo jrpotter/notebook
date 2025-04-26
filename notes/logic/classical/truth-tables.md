@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-In classical logic, every [[prop-logic|proposition]] can be written in **disjunctive normal form** (DNF) and **conjunctive normal form** (CNF). This is evident with the use of truth tables. To write a proposition in DNF, write its corresponding truth table and $\lor$ each row that evaluates to $T$. To write the same proposition in CNF, apply $\lor$ to each row that evaluates to $F$ and negate it.
+In classical logic, every [[prop_logic|proposition]] can be written in **disjunctive normal form** (DNF) and **conjunctive normal form** (CNF). This is evident with the use of truth tables. To write a proposition in DNF, write its corresponding truth table and $\lor$ each row that evaluates to $T$. To write the same proposition in CNF, apply $\lor$ to each row that evaluates to $F$ and negate it.
 
 $$\neg (a \Rightarrow b) \Leftrightarrow c$$
 

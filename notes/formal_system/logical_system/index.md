@@ -1,9 +1,9 @@
 ---
 title: Logical Systems
 TARGET DECK: Obsidian::STEM
-FILE TAGS: formal-system
+FILE TAGS: formal_system
 tags:
-  - formal-system
+  - formal_system
   - logic
 ---
 
