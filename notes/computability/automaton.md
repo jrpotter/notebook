@@ -1291,6 +1291,7 @@ Let $A$ and $B$ be regular languages over alphabet $\Sigma$. Then the **regular 
 * Union: $A \cup B = \{x \mid x \in A \lor x \in B \}$
 * Intersection: $A \cap B = \{x \mid x \in A \land x \in B\}$
 * Complement: $A^C = \{ x \mid x \in \Sigma^* - A \}$
+* Reversal: $A^R = \{ x^R \mid x \in A \}$
 * Concatenation: $A \circ B = \{ xy \mid x \in A \land y \in B \}$
 * Kleene star: $A^* = \{ x_1x_2\cdots x_k \mid k \geq 0 \land x_i \in A \}$
 
@@ -1356,6 +1357,14 @@ Let $A$ be a language. How is its complement denoted?
 Back: $A^C$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745371322656-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a language. How is its reversal denoted?
+Back: $A^R$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745638450115-->
 END%%
 
 %%ANKI
@@ -1436,6 +1445,22 @@ Let $A$ and $B$ be languages. What regular operation is denoted as $A \circ B$?
 Back: The concatenation.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1735160593144-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a language. What regular operation is denoted as $A^R$?
+Back: The reversal.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745638450117-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a language. What regular operation is denoted as $A^C$?
+Back: The complement.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745638450119-->
 END%%
 
 %%ANKI
@@ -1598,6 +1623,46 @@ How is the complement of a DFA constructed?
 Back: By swapping the status of its accept states and non-accept states.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745371322681-->
+END%%
+
+%%ANKI
+Basic
+How is $Q'$ likely defined given the following?
+* $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
+* $N = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is an NFA recognizing $A^R$.
+Back: $Q' = Q \cup \{q_0'\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745638450120-->
+END%%
+
+%%ANKI
+Basic
+How is $q_0'$ likely defined given the following?
+* $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
+* $N = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is an NFA recognizing $A^R$.
+Back: As a new state.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745638450121-->
+END%%
+
+%%ANKI
+Basic
+How is $\delta'$ likely defined given the following?
+* $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
+* $N = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is an NFA recognizing $A^R$.
+Back: $\delta' = \delta^{-1} \cup \{ \langle q_0', \epsilon, F \rangle \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745638450122-->
+END%%
+
+%%ANKI
+Basic
+How is $F'$ likely defined given the following?
+* $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
+* $N = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is an NFA recognizing $A^R$.
+Back: $F' = \{q_0\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745638450123-->
 END%%
 
 %%ANKI
