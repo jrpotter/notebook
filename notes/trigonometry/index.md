@@ -60,6 +60,46 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737349971452-->
 END%%
 
+%%ANKI
+Basic
+Suppose $\cos{x} > 0$ and $\tan{x} < 0$. What quadrant does the terminal point of the corresponding arc lie in?
+Back: Quadrant IV.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745182418061-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\tan{x} > 0$ and $\csc{x} < 0$. What quadrant does the terminal point of the corresponding arc lie in?
+Back: Quadrant III.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745182418069-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\sec{x} < 0$ and $\csc{x} > 0$. What quadrant does the terminal point of the corresponding arc lie in?
+Back: Quadrant II.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745182418072-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\sin{x} < 0$ and $\sec{x} > 0$. What quadrant does the terminal point of the corresponding arc lie in?
+Back: Quadrant IV.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745182418075-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\sin{x} < 0$ and $\cot{x} > 0$. What quadrant does the terminal point of the corresponding arc lie in?
+Back: Quadrant III.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745182418078-->
+END%%
+
 ### Sine
 
 If the real number $t$ is the directed length of an arc (either positive or negative) measured on the [[unit-circle|unit circle]] $x^2 + y^2 = 1$ (with counterclockwise as the positive direction) with initial point $\langle 1, 0 \rangle$ and terminal point $\langle x, y \rangle$, then the **sine** of $t$, denoted $\sin(t)$ is defined to be $$\sin(t) = y.$$

@@ -801,6 +801,184 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1743943447587-->
 END%%
 
+#### Operation
+
+Disks read and write bits stored on the magnetic surface using a **read/write head** connected to the end of an **actuator arm**. By moving the arm back and forth along its radial axias, the drive can position the head over any track on the surface (a mechanical motion known as a **seek**).
+
+![[actuator-arm.png]]
+
+There is one read/write head for each surface, all connected to a single arm. At any point in time, all heads are positioned on the same cylinder.
+
+Disks read and write data in sector-size blocks. The **access time** for a sector has three main components:
+
+* **Seek time**. The time required to move the actuator arm so the read/write heads are positioned correctly.
+* **Rotational latency**. The time required to rotate the disk until the first bit of the desired sector is under the head.
+* **Transfer time**. The time required to read or write the contents of a sector.
+
+%%ANKI
+Cloze
+In HDDs, a {read/write head} is attached to the end of an {actuator arm}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950916-->
+END%%
+
+%%ANKI
+Basic
+With respect to an HDD, what is a seek?
+Back: The moving of an actuator arm to position a read/write head over a track.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950926-->
+END%%
+
+%%ANKI
+Basic
+In an HDD, how many actuator arms are present?
+Back: Just the one.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950929-->
+END%%
+
+%%ANKI
+Basic
+In an HDD, how many read/write heads are present?
+Back: One for each surface.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950932-->
+END%%
+
+%%ANKI
+Basic
+In an HDD, what restriction does having one actuator arm enforce?
+Back: All read/write heads are always positioned on the same cylinder.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950934-->
+END%%
+
+%%ANKI
+Basic
+HDDs read and write data in blocks of what size?
+Back: Sector-sized blocks.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950937-->
+END%%
+
+%%ANKI
+Cloze
+In HDDs, the {access time} for a sector is a sum of the {seek time}, {rotational latency}, and {transfer time}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950940-->
+END%%
+
+%%ANKI
+Basic
+What three measurements are summed to produce the access time of an HDD sector?
+Back: Seek time, rotational latency, and transfer time.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950943-->
+END%%
+
+%%ANKI
+Basic
+In the context of HDDs, what does the following equal?
+
+> Seek time + rotational latency + transfer time
+
+Back: The access time (of a sector).
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950946-->
+END%%
+
+%%ANKI
+Basic
+In the context of HDDs, what is seek time?
+Back: The amount of time required to rotate the actuator arm so a read/write head is positioned over a desired track.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950950-->
+END%%
+
+%%ANKI
+Basic
+In the context of HDDs, what is rotational latency?
+Back: The amount of time required to rotate the disk before the first bit of the desired sector is positioned under a read/write head.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950953-->
+END%%
+
+%%ANKI
+Basic
+In the context of HDDs, what is transfer time?
+Back: The amount of time required to read/write content to/from a sector.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950956-->
+END%%
+
+%%ANKI
+Cloze
+{1:Seek time} is to {2:tracks} whereas {2:rotational latency} is to {1:sectors}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950959-->
+END%%
+
+#### Logical Disk Blocks
+
+Modern disks hide their geometry, instead presenting to the OS a sequence of $B$ sector-size **logical blocks** numbered $0$, $1$, $\ldots$, $B - 1$. A small hardware or firmware device in the disk package, called the **disk controller** maps logical block numbers to physical disk sectors by translating each logical block number to a $\langle surface, track, sector \rangle$ triple.
+
+%%ANKI
+Basic
+In what way do modern HDDs abstract their geometry?
+Back: They map $\langle surface, track, sector \rangle$ triples into logical block numbers.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950962-->
+END%%
+
+%%ANKI
+Basic
+Suppose an HDD has $B$ logical blocks. How are they indexed?
+Back: As $0$, $1$, $\ldots$, $B - 1$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950965-->
+END%%
+
+%%ANKI
+Basic
+What does the disk controller of an HDD do?
+Back: Map logical block numbers to physical sectors.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950968-->
+END%%
+
+%%ANKI
+Basic
+In an HDD, how large is a logical block?
+Back: The same size as its corresponding sector.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950972-->
+END%%
+
+%%ANKI
+Basic
+What device is used to map logical block numbers to HDD sectors?
+Back: A disk controller.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950976-->
+END%%
+
+%%ANKI
+Basic
+In an HDD, a disk controller inputs what?
+Back: Logical block numbers.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950980-->
+END%%
+
+%%ANKI
+Basic
+In an HDD, a disk controller outputs what?
+Back: A $\langle surface, track, sector \rangle$ triple.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1745503950984-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

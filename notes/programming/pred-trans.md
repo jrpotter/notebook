@@ -253,6 +253,22 @@ Reference: Reference: Gries, David. *The Science of Programming*. Texts and Mon
 <!--ID: 1715631869196-->
 END%%
 
+%%ANKI
+Basic
+Suppose $wp(S, R)$ is true. Then what predicate is true?
+Back: Some predicate $Q$ that implies $wp(S, R)$.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745279386179-->
+END%%
+
+%%ANKI
+Basic
+Suppose $wp(S, x > 0)$ is true. What does this mean?
+Back: We are in a state such that execution of command $S$ will finish in a finite amount of time in a state satisfying $x > 0$.
+Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745279386187-->
+END%%
+
 ### Law of the Excluded Miracle
 
 Given any command $S$, $$wp(S, F) = F$$
@@ -1199,6 +1215,24 @@ END%%
 
 %%ANKI
 Basic
+The associated recursive definition of $wp(\text{DO}, R)$ is defined as $$H_k(R) = H_0(R) \lor wp(\text{IF}, H_{k-1}(R)).$$
+What is the purpose of the first conjunct?
+Back: It is what permits $\text{DO}$ to terminate in *fewer* than $k$ iterations.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745279386190-->
+END%%
+
+%%ANKI
+Basic
+Let $H_k$ denote the associated recursive definition of $wp(\text{DO}, R)$. Define $$H'_k(R) = wp(\text{IF}, H_{k-1}(R)).$$
+In what way does $H'_k$ differ from $H_k$?
+Back: $H'_k$ specifies termination in *exactly* $k$ iterations.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745279386192-->
+END%%
+
+%%ANKI
+Basic
 How is the associated recursive definition of $wp(\text{DO}, R)$ described in plain English?
 Back: As the set of states in which execution of $\text{DO}$ terminates in a finite number of iterations with $R$ true.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
@@ -1331,6 +1365,145 @@ Cloze
 With respect to iterative commands, "{1:variant}" is to a {2:function} whereas "{2:invariant}" is to a {1:predicate}.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1737991560411-->
+END%%
+
+#### Understanding a Loop
+
+Consider loop $\text{DO}$. Suppose a predicate $P$ satisfies
+
+1. $P \land B_i \Rightarrow wp(S_i, P)$ for all $1 \leq i \leq n$.
+
+Suppose further that an integer function $t$ satisfies the following, where $t1$ is a fresh identifier:
+
+2. $P \land \text{BB} \Rightarrow (t > 0)$,
+3. $P \land B_i \Rightarrow wp(''t1 \coloneqq t; S_i'', t < t1)$, for $1 \leq i \leq n$.
+
+Then $P \Rightarrow wp(\text{DO}, P \land \neg\text{BB})$.
+
+%%ANKI
+Basic
+Consider loop $\text{DO}$ and predicate $P$. How is the following understood in plain English?
+
+> $P \land B_i \Rightarrow wp(S_i, P)$ for all $1 \leq i \leq n$.
+
+Back: $P$ is a loop invariant. That is, it holds true after each iteration of $\text{DO}$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745271259983-->
+END%%
+
+%%ANKI
+Basic
+Consider loop $\text{DO}$, predicate $P$, and integer function $t$. How is the following understood in plain English?
+
+> $P \land \text{BB} \Rightarrow (t > 0)$
+
+Back: If the loop invariant and a guard holds true, the bound function is positive.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745271259990-->
+END%%
+
+%%ANKI
+Basic
+Consider loop $\text{DO}$, predicate $P$, integer function $t$, and fresh identifier $t1$. How is the following understood in plain English?
+
+> $P \land B_i \Rightarrow wp(''t1 \coloneqq t; S_i'', t < t1)$, for $1 \leq i \leq n$.
+
+Back: If the loop invariant and a guard holds true, execution of the guarded command decreases the bound function.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745271259996-->
+END%%
+
+%%ANKI
+Cloze
+Consider loop $\text{DO}$. Suppose a {predicate} $P$ satisfies
+
+1. {$P \land B_i \Rightarrow wp(S_i, P)$} for all $1 \leq i \leq n$.
+
+Suppose further that an {integer function} $t$ satisfies the following, where $t1$ is a {fresh identifier}:
+
+2. {$P \land \text{BB} \Rightarrow (t > 0)$},
+3. {$P \land B_i \Rightarrow wp(''t1 \coloneqq t; S_i'', t < t1)$}, for $1 \leq i \leq n$.
+
+Then {$P \Rightarrow wp(\text{DO}, P \land \neg\text{BB})$}.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745271259999-->
+END%%
+
+%%ANKI
+Cloze
+Consider loop $\text{DO}$, predicate $P$, integer function $t$, fresh identifier $t1$, and postcondition $R$. Gries uses the following checklist to understand a loop:
+1. Show that {1:$P$ is true} before {1:execution of the loop begins}.
+2. Show that {2:$$\{ P \land B_i\}\; S_i\; \{P\}$$} for $1 \leq i \leq n$.
+3. Show that {3:$P \land \neg\text{BB} \Rightarrow R$}.
+4. Show that {4:$P \land \text{BB} \Rightarrow (t > 0)$}.
+5. Show that {5:$$\{P \land B_i\}\; t1 \coloneqq t; S_i\; \{t < t1 \}$$} for $1 \leq i \leq n$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745371440678-->
+END%%
+
+%%ANKI
+Basic
+Consider Gries's $\text{DO}$ checklist. What does step 1 mean?
+1. Show $P$ is true before execution of the loop begins.
+2. Show $\{P \land B_i\}\; S_i\; \{P\}$, for $1 \leq i \leq n$.
+3. Show $P \land \neg\text{BB} \Rightarrow R$.
+4. Show $P \land \text{BB} \Rightarrow (t > 0)$.
+5. Show $\{P \land B_i\}\; t1 \coloneqq t; S_i \{t < t1\}$, for $1 \leq i \leq n$.
+Back: A relevant loop invariant should hold before entering a loop.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745271260005-->
+END%%
+
+%%ANKI
+Basic
+Consider Gries's $\text{DO}$ checklist. What does step 2 mean?
+1. Show $P$ is true before execution of the loop begins.
+2. Show $\{P \land B_i\}\; S_i\; \{P\}$, for $1 \leq i \leq n$.
+3. Show $P \land \neg\text{BB} \Rightarrow R$.
+4. Show $P \land \text{BB} \Rightarrow (t > 0)$.
+5. Show $\{P \land B_i\}\; t1 \coloneqq t; S_i \{t < t1\}$, for $1 \leq i \leq n$.
+Back: Each guarded command must terminate in a finite amount of time such that the loop invariant is preserved.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745271260008-->
+END%%
+
+%%ANKI
+Basic
+Consider Gries's $\text{DO}$ checklist. What does step 3 mean?
+1. Show $P$ is true before execution of the loop begins.
+2. Show $\{P \land B_i\}\; S_i\; \{P\}$, for $1 \leq i \leq n$.
+3. Show $P \land \neg\text{BB} \Rightarrow R$.
+4. Show $P \land \text{BB} \Rightarrow (t > 0)$.
+5. Show $\{P \land B_i\}\; t1 \coloneqq t; S_i \{t < t1\}$, for $1 \leq i \leq n$.
+Back: Upon termination of the loop, the desired postcondition holds.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745271260012-->
+END%%
+
+%%ANKI
+Basic
+Consider Gries's $\text{DO}$ checklist. What does step 4 mean?
+1. Show $P$ is true before execution of the loop begins.
+2. Show $\{P \land B_i\}\; S_i\; \{P\}$, for $1 \leq i \leq n$.
+3. Show $P \land \neg\text{BB} \Rightarrow R$.
+4. Show $P \land \text{BB} \Rightarrow (t > 0)$.
+5. Show $\{P \land B_i\}\; t1 \coloneqq t;\, S_i\; \{t < t1\}$, for $1 \leq i \leq n$.
+Back: If any guard in the loop holds true, the bound function must be positive.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745271260015-->
+END%%
+
+%%ANKI
+Basic
+Consider Gries's $\text{DO}$ checklist. What does step 5 mean?
+1. Show $P$ is true before execution of the loop begins.
+2. Show $\{P \land B_i\}\; S_i\; \{P\}$, for $1 \leq i \leq n$.
+3. Show $P \land \neg\text{BB} \Rightarrow R$.
+4. Show $P \land \text{BB} \Rightarrow (t > 0)$.
+5. Show $\{P \land B_i\}\; t1 \coloneqq t;\, S_i\; \{t < t1\}$, for $1 \leq i \leq n$.
+Back: Each iteration of the loop strictly decreases the bound function.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1745271260018-->
 END%%
 
 ## Bibliography

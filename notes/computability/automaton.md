@@ -872,6 +872,58 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1736781769556-->
 END%%
 
+%%ANKI
+Basic
+Consider an NFA state with two arrows matching the next input symbol. How does the NFA compute?
+Back: The NFA "splits" into two copies, each of which processes the rest of the input.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745374581437-->
+END%%
+
+%%ANKI
+Basic
+Consider an NFA state with no arrow matching the next input symbol. How does the NFA compute?
+Back: The given NFA "copy" dies. It has failed to accept the input.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745374581448-->
+END%%
+
+%%ANKI
+Basic
+Assume alphabet $\{0, 1\}$. What is the simplest NFA that recognizes the following language? $$\{ w \mid w \text{ ends with 00 } \}$$
+Back:
+![[nfa-ends-00.png]]
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745374581452-->
+END%%
+
+%%ANKI
+Basic
+Consider the following NFA. Is string $\text{0101}$ accepted?
+![[nfa-ends-00.png]]
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745374581457-->
+END%%
+
+%%ANKI
+Basic
+Consider the following NFA. Is string $\text{1000}$ accepted?
+![[nfa-ends-00.png]]
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745374581462-->
+END%%
+
+%%ANKI
+Basic
+What language does the following NFA recognize?
+![[nfa-ends-00.png]]
+Back: $\{ w \mid w \text{ ends with 00} \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745374581465-->
+END%%
+
 ## Equivalence
 
 Two finite automaton are **equivalent** if they recognize the same language. As it turns out, every NFA can be converted to an equivalent DFA.
@@ -1079,12 +1131,166 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1742390157667-->
 END%%
 
+%%ANKI
+Basic
+How many states are in the power set construction of the following NFA?
+![[nfa-example-powerset.png]]
+Back: $4$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798119-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $Q$ evaluate to?
+![[nfa-example-powerset.png]]
+Back: $Q = \{\varnothing, \{1\}, \{2\}, \{1, 2\} \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798128-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $q_0$ evaluate to?
+![[nfa-example-powerset.png]]
+Back: $q_0 = \{1\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798131-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $F$ evaluate to?
+![[nfa-example-powerset.png]]
+Back: $F = \{1\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798134-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $\delta(\{1\}, a)$ evaluate to?
+![[nfa-example-powerset.png]]
+Back: $\delta(\{1\}, a) = \{1, 2\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798137-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $\delta(\{2\}, a)$ evaluate to?
+![[nfa-example-powerset.png]]
+Back: $\delta(\{2\}, a) = \varnothing$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798139-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $\delta(\{1, 2\}, a)$ evaluate to?
+![[nfa-example-powerset.png]]
+Back: $\delta(\{1, 2\}, a) = \{1, 2\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798142-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $\delta(\{1, 2\}, b)$ evaluate to?
+![[nfa-example-powerset.png]]
+Back: $\delta(\{1, 2\}, b) = \{1, 2\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798145-->
+END%%
+
+%%ANKI
+Basic
+How many states are in the power set construction of the following NFA?
+![[nfa-example2-powerset.png]]
+Back: $8$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798147-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $Q$ evaluate to?
+![[nfa-example2-powerset.png]]
+Back: $Q = \mathscr{P}(\{ 1, 2, 3 \})$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798150-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $q_0$ evaluate to?
+![[nfa-example2-powerset.png]]
+Back: $q_0 = \{1\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798152-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $F$ evaluate to?
+![[nfa-example2-powerset.png]]
+Back: $F = \{\{2\}, \{1, 2\}, \{2, 3\}, \{1, 2, 3\}\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798155-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $\delta(\{1\}, a)$ evaluate to?
+![[nfa-example2-powerset.png]]
+Back: $\delta(\{1\}, a) = \{1, 3\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798158-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $\delta(\{1\}, b)$ evaluate to?
+![[nfa-example2-powerset.png]]
+Back: $\delta(\{1\}, b) = \varnothing$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798161-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $\delta(\{1, 2\}, a)$ evaluate to?
+![[nfa-example2-powerset.png]]
+Back: $\delta(\{1, 2\}, a) = \{1, 3\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798164-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $\delta(\{2, 3\}, a)$ evaluate to?
+![[nfa-example2-powerset.png]]
+Back: $\delta(\{2, 3\}, a) = \{1, 3\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798167-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $\delta(\{2, 3\}, b)$ evaluate to?
+![[nfa-example2-powerset.png]]
+Back: $\delta(\{2, 3\}, b) = \{2, 3\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798169-->
+END%%
+
 ## Regular Operations
 
-Let $A$ and $B$ be languages. Then the **regular operations** union, intersection, concatenation, and Kleene star are defined as:
+Let $A$ and $B$ be regular languages over alphabet $\Sigma$. Then the **regular operations** union, intersection, concatenation, and Kleene star are defined as:
 
 * Union: $A \cup B = \{x \mid x \in A \lor x \in B \}$
 * Intersection: $A \cap B = \{x \mid x \in A \land x \in B\}$
+* Complement: $A^C = \{ x \mid x \in \Sigma^* - A \}$
 * Concatenation: $A \circ B = \{ xy \mid x \in A \land y \in B \}$
 * Kleene star: $A^* = \{ x_1x_2\cdots x_k \mid k \geq 0 \land x_i \in A \}$
 
@@ -1142,6 +1348,14 @@ Let $A$ and $B$ be languages. How is their concatenation denoted?
 Back: $A \circ B$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1735160593089-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a language. How is its complement denoted?
+Back: $A^C$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745371322656-->
 END%%
 
 %%ANKI
@@ -1230,6 +1444,160 @@ Let $A_1$ and $A_2$ be regular languages with NFAs $N_1$ and $N_2$ respectively.
 Back: Construct an NFA with start state having $\epsilon$-transitions to $N_1$'s and $N_2$'s start states.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1740842717795-->
+END%%
+
+%%ANKI
+Basic
+How is $Q$ likely defined given the following?
+* $M_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA recognizing $A_1$.
+* $M_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA recognizing $A_2$.
+* $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A_1 \cup A_2$.
+Back: $Q = Q_1 \times Q_2$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745368250215-->
+END%%
+
+%%ANKI
+Basic
+How is $F$ likely defined given the following?
+* $M_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA recognizing $A_1$.
+* $M_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA recognizing $A_2$.
+* $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A_1 \cup A_2$.
+Back: $F = \{ \langle x, y \rangle \mid x \in F_1 \lor y \in F_2 \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745368250227-->
+END%%
+
+%%ANKI
+Basic
+How is $\delta$ likely defined given the following?
+* $M_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA recognizing $A_1$.
+* $M_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA recognizing $A_2$.
+* $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A_1 \cup A_2$.
+Back: $\delta(\langle x, y \rangle, a) = \langle \delta_1(x, a), \delta_2(y, a) \rangle$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745368250232-->
+END%%
+
+%%ANKI
+Basic
+How is $q_0$ likely defined given the following?
+* $M_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA recognizing $A_1$.
+* $M_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA recognizing $A_2$.
+* $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A_1 \cup A_2$.
+Back: $q_0 = \langle q_1, q_2 \rangle$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745368250236-->
+END%%
+
+%%ANKI
+Basic
+How is $Q$ likely defined given the following?
+* $M_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA recognizing $A_1$.
+* $M_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA recognizing $A_2$.
+* $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A_1 \cap A_2$.
+Back: $Q = Q_1 \times Q_2$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745368250240-->
+END%%
+
+%%ANKI
+Basic
+How is $F$ likely defined given the following?
+* $M_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA recognizing $A_1$.
+* $M_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA recognizing $A_2$.
+* $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A_1 \cap A_2$.
+Back: $F = \{ \langle x, y \rangle \mid x \in F_1 \land y \in F_2 \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745368250243-->
+END%%
+
+%%ANKI
+Basic
+How is $\delta$ likely defined given the following?
+* $M_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA recognizing $A_1$.
+* $M_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA recognizing $A_2$.
+* $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A_1 \cap A_2$.
+Back: $\delta(\langle x, y \rangle, a) = \langle \delta_1(x, a), \delta_2(y, a) \rangle$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745368250247-->
+END%%
+
+%%ANKI
+Basic
+How is $q_0$ likely defined given the following?
+* $M_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA recognizing $A_1$.
+* $M_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA recognizing $A_2$.
+* $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A_1 \cap A_2$.
+Back: $q_0 = \langle q_1, q_2 \rangle$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745368250251-->
+END%%
+
+%%ANKI
+Basic
+How is $Q'$ likely defined given the following?
+* $M_1 = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
+* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $A^C$.
+Back: $Q' = Q$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745371322665-->
+END%%
+
+%%ANKI
+Basic
+How is $\Sigma'$ likely defined given the following?
+* $M_1 = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
+* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $A^C$.
+Back: $\Sigma' = \Sigma$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745371322668-->
+END%%
+
+%%ANKI
+Basic
+How is $\delta'$ likely defined given the following?
+* $M_1 = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
+* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $A^C$.
+Back: $\delta' = \delta$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745371322670-->
+END%%
+
+%%ANKI
+Basic
+How is $q_0'$ likely defined given the following?
+* $M_1 = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
+* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $A^C$.
+Back: $q_0' = q_0$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745371322673-->
+END%%
+
+%%ANKI
+Basic
+How is $F'$ likely defined given the following?
+* $M_1 = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
+* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $A^C$.
+Back: $F' = Q - F$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745371322675-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a regular language over alphabet $\Sigma$. What strings are members of $A^C$?
+Back: $\Sigma^* - A$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745371322678-->
+END%%
+
+%%ANKI
+Basic
+How is the complement of a DFA constructed?
+Back: By swapping the status of its accept states and non-accept states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745371322681-->
 END%%
 
 %%ANKI
@@ -1859,10 +2227,74 @@ END%%
 
 %%ANKI
 Basic
+When using the pumping lemma to prove $\{0^n1^n \mid n \geq 0\}$ isn't regular, what three cases are "pumped" to prove a contradiction?
+Back: A string of $0$s, a string of $1$s, and a string of both $0$s and $1$s.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745628822108-->
+END%%
+
+%%ANKI
+Basic
 What is the general strategy for proving e.g. $A = \{0^n1^n \mid n \geq 0\}$ is not a regular language?
 Back: Assume $A$ is regular. Use the pumping lemma to show a contradiction.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745173738890-->
+END%%
+
+%%ANKI
+Basic
+What property of DFAs does the pumping lemma exploit?
+Back: Its finiteness.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798172-->
+END%%
+
+%%ANKI
+Basic
+In the pumping lemma for regular languages, what constraints are set on the pumping constant?
+Back: It must be a positive integer.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745628822117-->
+END%%
+
+%%ANKI
+Basic
+Why must the pumping constant for regular languages be positive?
+Back: There is no valid DFA consisting of $0$ states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745628822121-->
+END%%
+
+%%ANKI
+Basic
+Why must the pumping constant for regular languages be an integer?
+Back: There is no valid DFA consisting of a non-integral number of states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745628822125-->
+END%%
+
+%%ANKI
+Basic
+The pumping lemma for regular languages allows writing strings $s$ of length at least the pumping constant $p$ as $s = xyz$. What integral range does $\lvert x \rvert$ fall in?
+Back: $0 \leq \lvert x \rvert < p$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745629741104-->
+END%%
+
+%%ANKI
+Basic
+The pumping lemma for regular languages allows writing strings $s$ of length at least the pumping constant $p$ as $s = xyz$. What integral range does $\lvert y \rvert$ fall in?
+Back: $0 < \lvert y \rvert \leq p$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745629741112-->
+END%%
+
+%%ANKI
+Basic
+The pumping lemma for regular languages allows writing strings $s$ of length at least the pumping constant $p$ as $s = xyz$. What integral range does $\lvert z \rvert$ fall in?
+Back: $0 \leq \lvert z \rvert < \lvert s \rvert$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745629741115-->
 END%%
 
 ## Bibliography
