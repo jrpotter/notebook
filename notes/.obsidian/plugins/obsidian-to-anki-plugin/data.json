@@ -387,7 +387,7 @@
     "data_structures/arrays.md": "5c320855d1955e897820053a7c3c065b",
     "data_models/rdf/sparql.md": "8b3937a6ea4e9d37e57afabd4eb065a5",
     "data_models/rdf/shacl.md": "f71ed50c7a35c9bb446ab2c95fbead66",
-    "data_models/rdf/rdfs.md": "c2569582490825b6d53acdd82286d552",
+    "data_models/rdf/rdfs.md": "1e984099a1736fe1e4567fdba6d1c846",
     "data_models/rdf/index.md": "c645ff9aadb3eb01b031ce34f63a69bd",
     "data_models/index.md": "9e60f40798490f0743f291e55f492033",
     "data_models/federation.md": "1d92747304186bd2833a00a488fcac48",
@@ -406,8 +406,8 @@
     "set/graphs.md": "66922b5dbdc896bedc123ef3fcc74fed",
     "set/functions.md": "ba947166fc20bdb8cfd79014488d0ac5",
     "set/classes.md": "6776b4dc415021e0ef60b323b5c2d436",
-    "set/choice.md": "b634d22be9fb4061997b0c05bdccdec1",
-    "set/cardinality.md": "c5cb0cd7272c58e4d8cc27d298870acf",
+    "set/choice.md": "a9672709b8d4bc467b3f911d0cf53c6c",
+    "set/cardinality.md": "dfd20d9f129297d9d35040288ccca295",
     "set/bags.md": "70320231f84a49e34a31130eb71e5086",
     "serialization/xml.md": "84b632282ebcc2b6216923a02abdd4c2",
     "serialization/index.md": "5ed7e99e4efc4844839ea357d351f5d8",
@@ -1001,7 +1001,9 @@
     "algebra/arch_prop.md": "bca3724ef5aae3f7f20907108087af47",
     "algebra/abs_val.md": "a47bc08db62304eb526d15ede3e300cf",
     "_journal/2025-04-26.md": "353df72892d0f83fa6f2cb4cd0f35d45",
-    "_journal/2025-04/2025-04-25.md": "1aadbb96e98bd728d84502df25cb5e1b"
+    "_journal/2025-04/2025-04-25.md": "1aadbb96e98bd728d84502df25cb5e1b",
+    "_journal/2025-04-27.md": "6ac7c6213c60654abef500153f7c04bf",
+    "_journal/2025-04/2025-04-26.md": "f19ddf4c96f744de6bd842e48d212d14"
   },
   "fields_dict": {
     "Basic": [

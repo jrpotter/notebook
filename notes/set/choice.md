@@ -379,9 +379,7 @@ END%%
 
 ## Zorn's Lemma
 
-Let $A$ be a [[order#Partial Orders|partially ordered set]] with ordering relation $\leq$. A **chain** is a subset of $A$ that is [[order#Total Order|totally ordered]] for the induced order.
-
-If every chain $B \subseteq A$ has an upper bound also in $A$, then Zorn's lemma states that $A$ must have a [[order#Bounds|maximal]] element.
+Let $A$ be a [[order#Partial Orders|partially ordered set]] with ordering relation $\leq$. A **chain** is a subset of $A$ that is [[order#Total Order|totally ordered]] for the induced order. If every chain $B \subseteq A$ has an upper bound also in $A$, then Zorn's lemma states that $A$ must have a [[order#Bounds|maximal]] element.
 
 %%ANKI
 Basic
@@ -501,6 +499,38 @@ When using Zorn's lemma to prove cardinal comparability, what partial order is f
 Back: For any sets $C$ and $D$, $\{f \colon C \rightarrow D \mid f \text{ is an injection} \land \mathop{\text{dom}}f \subseteq C \land \mathop{\text{ran}}f \subseteq D \}$ with ordering relation $\subseteq$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744897010246-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a function with domain $\omega$ such that $S(n) \subseteq S(n^+)$. Is the following true? $$\bigcup_{n \in \omega} S(n) \in \{ S(n) \mid n \in \omega \}$$
+Back: Indeterminate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745778997733-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a function with domain $\omega$ such that $S(n) \subseteq S(n^+)$. *When* is the following true? $$\bigcup_{n \in \omega} S(n) \in \{ S(n) \mid n \in \omega \}$$
+Back: If $\exists n \in \omega, \forall m \geq n, S(n) = S(m)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745778997736-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a function with domain $\omega$ such that $S(n) \subseteq S(n^+)$. *When* is the following false? $$\bigcup_{n \in \omega} S(n) \in \{ S(n) \mid n \in \omega \}$$
+Back: If $\forall n \in \omega, \exists m > n, S(n) \subset S(m)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745778997738-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a function with domain $\omega$ such that $S(n) \subset S(n^+)$. *Why* isn't the following true? $$\bigcup_{k \in \omega} S(k) \in \{ S(n) \mid n \in \omega \}$$
+Back: For all $n \in \omega$, $\bigcup_{k \in \omega} S(k) \neq S(n)$ since $S(n^+)$ is a larger set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745778997739-->
 END%%
 
 ## Bibliography

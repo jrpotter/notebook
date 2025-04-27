@@ -329,6 +329,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1745076132167-->
 END%%
 
+%%ANKI
+Basic
+*Why* is it that $\kappa < \aleph_0$ if and only if $\kappa$ is a finite cardinal?
+Back: Because $\omega$ is the smallest infinite set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745793633634-->
+END%%
+
 ### Pigeonhole Principle
 
 No natural number is equinumerous to a proper subset of itself. More generally, no finite set is equinumerous to a proper subset of itself.

@@ -219,6 +219,178 @@ Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web
 <!--ID: 1743453116890-->
 END%%
 
+%%ANKI
+Basic
+Where in any sourced RDF does RDFS define the type propagation rule?
+Back: N/A. Its defined in the formal spec.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596647-->
+END%%
+
+### Intersection
+
+Let $A$, $B$, and $C$ be classes such that $A \cap B = C$. RDFS is only able to model one side of this equality, namely: $$x \in C \Rightarrow x \in A \land x \in B$$
+
+It does so using the following inference rules:
+
+```turtle
+:C rdfs:subClassOf :A .
+:C rdfs:subClassOf :B .
+```
+
+%%ANKI
+Basic
+Is RDFS capable of modeling class intersection?
+Back: No.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596649-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \cap B = C$. What implied subset expressions can RDFS model?
+Back: $C \subseteq A \cap B$
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596650-->
+END%%
+
+%%ANKI
+Basic
+What subset expression is represented by the following RDF triples?
+```turtle
+:C rdfs:subClassOf :A .
+:C rdfs:subClassOf :B .
+```
+Back: $C \subseteq A \cap B$
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596651-->
+END%%
+
+%%ANKI
+Basic
+Given classes $A$, $B$, and $C$, how is $A \cap B \subseteq C$ modeled in RDFS?
+Back: N/A. RDFS is not capable of modeling this.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596652-->
+END%%
+
+%%ANKI
+Basic
+Given classes $A$, $B$, and $C$, how is $C \subseteq A \cap B$ modeled in RDFS?
+Back:
+```turtle
+:C rdfs:subClassOf :A .
+:C rdfs:subClassOf :B .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596653-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following holds. What can we infer from `?x rdf:type :C .`?
+```turtle
+:C rdfs:subClassOf :A .
+:C rdfs:subClassOf :B .
+```
+Back:
+```turtle
+?x rdf:type :A .
+?x rdf:type :B .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596654-->
+END%%
+
+### Union
+
+Let $A$, $B$, and $C$ be classes such that $A \cup B = C$. RDFS is only able to model one side of this equality, namely: $$x \in A \lor x \in B \Rightarrow x \in C$$
+
+It does so using the following inference rules:
+
+```turtle
+:A rdfs:subClassOf :C .
+:B rdfs:subClassOf :C .
+```
+
+%%ANKI
+Basic
+Is RDFS capable of modeling class union?
+Back: No.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596655-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \cup B = C$. What implied subset expressions can RDFS model?
+Back: $A \cup B \subseteq C$
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596656-->
+END%%
+
+%%ANKI
+Basic
+What subset expression is represented by the following RDF triples?
+```turtle
+:A rdfs:subClassOf :C .
+:B rdfs:subClassOf :C .
+```
+Back: $A \cup B \subseteq C$
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596657-->
+END%%
+
+%%ANKI
+Basic
+Given classes $A$, $B$, and $C$, how is $A \cup B \subseteq C$ modeled in RDFS?
+Back:
+```turtle
+:A rdfs:subClassOf :C .
+:B rdfs:subClassOf :C .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596658-->
+END%%
+
+%%ANKI
+Basic
+Given classes $A$, $B$, and $C$, how is $C \subseteq A \cup B$ modeled in RDFS?
+Back: N/A. RDFS is not capable of modeling this.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596659-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following holds. What can we infer from `?x rdf:type :A .`?
+```turtle
+:A rdfs:subClassOf :C .
+:B rdfs:subClassOf :C .
+```
+Back:
+```turtle
+?x rdf:type :C .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596660-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following holds. What can we infer from `?x rdf:type :B .`?
+```turtle
+:A rdfs:subClassOf :C .
+:B rdfs:subClassOf :C .
+```
+Back:
+```turtle
+?x rdf:type :C .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596661-->
+END%%
+
 ## Properties
 
 The `rdfs:subPropertyOf` property may be used to state that one property is a subproperty of another.
@@ -308,7 +480,7 @@ END%%
 
 %%ANKI
 Basic
-What `CONSTRUCT` shows `rdfs:domain` being inferred "up the inheritance tree"?
+What `CONSTRUCT` query demonstrates how `rdfs:domain` is inferred "up the inheritance tree"?
 Back:
 ```sparql
 CONSTRUCT { ?P rdfs:domain ?C. }
@@ -320,7 +492,7 @@ END%%
 
 %%ANKI
 Basic
-What `CONSTRUCT` shows `rdfs:range` being inferred "up the inheritance tree"?
+What `CONSTRUCT` query demonstrates how `rdfs:range` is inferred "up the inheritance tree"?
 Back:
 ```sparql
 CONSTRUCT { ?P rdfs:range ?C. }
@@ -328,6 +500,169 @@ CONSTRUCT { ?P rdfs:range ?C. }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1745503950992-->
+END%%
+
+### Intersection
+
+Let $P$, $Q$, and $R$ be properties such that $P \cap Q = R$. RDFS is only able to model one side of this equality, namely: $$x \in R \Rightarrow x \in P \land x \in Q$$
+
+It does so using the following inference rules:
+
+```turtle
+:R rdfs:subPropertyOf :P .
+:R rdfs:subPropertyOf :Q .
+```
+
+%%ANKI
+Basic
+Is RDFS capable of modeling property intersection?
+Back: No.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596662-->
+END%%
+
+%%ANKI
+Basic
+Suppose $R = P \cap Q$. What implied subset expressions can RDFS model?
+Back: $R \subseteq P \cap Q$
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596663-->
+END%%
+
+%%ANKI
+Basic
+What subset expression is represented by the following RDF triples?
+```turtle
+:R rdfs:subPropertyOf :P .
+:R rdfs:subPropertyOf :Q .
+```
+Back: $R \subseteq P \cap Q$
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596664-->
+END%%
+
+%%ANKI
+Basic
+Given properties $P$, $Q$, and $R$, how is $P \cap Q \subseteq R$ modeled in RDFS?
+Back: N/A. RDFS is not capable of modeling this.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596665-->
+END%%
+
+%%ANKI
+Basic
+Given properties $P$, $Q$, and $R$, how is $R \subseteq P \cap Q$ modeled in RDFS?
+Back:
+```turtle
+:R rdfs:subPropertyOf :P .
+:R rdfs:subPropertyOf :Q .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596666-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following holds. What can we infer from `?x :R ?y .`?
+```turtle
+:R rdfs:subPropertyOf :P .
+:R rdfs:subPropertyOf :Q .
+```
+Back:
+```turtle
+?x :P ?y .
+?x :Q ?y .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596667-->
+END%%
+
+### Union
+
+Let $P$, $Q$, and $R$ be properties such that $P \cup Q = R$. RDFS is only able to model one side of this equality, namely: $$x \in P \lor x \in Q \Rightarrow x \in R$$
+
+It does so using the following inference rules:
+
+```turtle
+:P rdfs:subPropertyOf :R .
+:Q rdfs:subPropertyOf :R .
+```
+
+%%ANKI
+Basic
+Is RDFS capable of modeling property union?
+Back: No.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596668-->
+END%%
+
+%%ANKI
+Basic
+Suppose $R = P \cup Q$. What implied subset expressions can RDFS model?
+Back: $P \cup Q \subseteq R$
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596669-->
+END%%
+
+%%ANKI
+Basic
+What subset expression is represented by the following RDF triples?
+```turtle
+:R rdfs:subPropertyOf :P .
+:R rdfs:subPropertyOf :Q .
+```
+Back: $R \subseteq P \cap Q$
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+END%%
+
+%%ANKI
+Basic
+Given properties $P$, $Q$, and $R$, how is $P \cup Q \subseteq R$ modeled in RDFS?
+Back:
+```turtle
+:P rdfs:subPropertyOf :R .
+:Q rdfs:subPropertyOf :R .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596670-->
+END%%
+
+%%ANKI
+Basic
+Given properties $P$, $Q$, and $R$, how is $R \subseteq P \cup Q$ modeled in RDFS?
+Back: N/A. RDFS is not capable of modeling this.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596671-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following holds. What can we infer from `?x :P ?y .`?
+```turtle
+:P rdfs:subPropertyOf :R .
+:Q rdfs:subPropertyOf :R .
+```
+Back:
+```turtle
+?x :R ?y .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596672-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following holds. What can we infer from `?x :Q ?y .`?
+```turtle
+:P rdfs:subPropertyOf :R .
+:Q rdfs:subPropertyOf :R .
+```
+Back:
+```turtle
+?x :R ?y .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1745791596673-->
 END%%
 
 ## Bibliography
