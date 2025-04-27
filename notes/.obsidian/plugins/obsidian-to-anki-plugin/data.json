@@ -443,7 +443,7 @@
     "lambda-calculus/beta-reduction.md": "0935987f2bac0e6298735f2b26fd5885",
     "lambda-calculus/alpha-conversion.md": "9ed70bcab72534c2b2ac3402f55696a9",
     "index.md": "e48e895feeed7046425bb2ee15419770",
-    "i18n/unicode.md": "f8cf0197eac6a2b2772885238e527937",
+    "i18n/unicode.md": "cecd4ad6fd5a9712ae8e08926b26e6b4",
     "i18n/index.md": "3f6abf8da9f6bd14a1b05ea60e930d9b",
     "i18n/ascii.md": "4c910bc1b5d3169b3c6c6447d745325a",
     "hashing/index.md": "4adb5a9d6815110b3fc2af8a25d054e1",
@@ -999,7 +999,9 @@
     "algorithms/binary_search.md": "8533a05ea372e007ab4e8a36fd2772a9",
     "algebra/floor_ceiling.md": "78496445da3054dd720f00a485fc433a",
     "algebra/arch_prop.md": "bca3724ef5aae3f7f20907108087af47",
-    "algebra/abs_val.md": "a47bc08db62304eb526d15ede3e300cf"
+    "algebra/abs_val.md": "a47bc08db62304eb526d15ede3e300cf",
+    "_journal/2025-04-26.md": "353df72892d0f83fa6f2cb4cd0f35d45",
+    "_journal/2025-04/2025-04-25.md": "1aadbb96e98bd728d84502df25cb5e1b"
   },
   "fields_dict": {
     "Basic": [

@@ -684,6 +684,244 @@ Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accesse
 <!--ID: 1744340330896-->
 END%%
 
+## Normalization
+
+A **grapheme cluster** is a string of one or more code points that make up a "user-perceived character". Every grapheme cluster is either composed, decomposed, or some combination of the two. This means two visually identical grapheme clusters may be comprised of different sequences of code points.
+
+For example, the Vietnamese letter “ệ” can be expressed in five different ways:
+
+* Fully composed: `U+1EC7 “ệ”`
+* Partially composed: `U+1EB9 “ẹ” + U+0302 “◌̂”`
+* Partially composed: `U+00EA “ê” + U+0323 “◌̣”`
+* Fully decomposed: `U+0065 “e” + U+0323 “◌̣” + U+0302 “◌̂”`
+* Fully decomposed: `U+0065 “e” + U+0302 “◌̂” + U+0323 “◌̣”`
+
+Visually identical grapheme clusters are said to be **canonically equivalent**. To handle canonically equivalent strings, **normalization forms** were introduced.
+
+%%ANKI
+Basic
+What is a grapheme cluster?
+Back: One or more code points that constitution a "user-perceived character".
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745728695690-->
+END%%
+
+%%ANKI
+Basic
+Using Unicode terminology, the cursor of a text editor typically moves at what granularity?
+Back: A grapheme cluster.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745728695694-->
+END%%
+
+%%ANKI
+Basic
+What is a diacritic?
+Back: A sign adorned on a letter indicating a change in pronunciation.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745728695695-->
+END%%
+
+%%ANKI
+Basic
+Where are diacritics usually found?
+Back: Either above or below the marked letter.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745728695699-->
+END%%
+
+%%ANKI
+Cloze
+Grapheme clusters are {composed}, {decomposed}, or some mix of the two.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745728695700-->
+END%%
+
+%%ANKI
+Basic
+How many grapheme clusters make up "Á"?
+Back: One.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745728695702-->
+END%%
+
+%%ANKI
+Basic
+How many code points make up "Á"?
+Back: Either one or two.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745728695703-->
+END%%
+
+%%ANKI
+Cloze
+If "Á" is {composed}, it is made up of {one} code point(s).
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745728695704-->
+END%%
+
+%%ANKI
+Cloze
+If "Á" is {decomposed}, it is made up of {two} code point(s).
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745728695705-->
+END%%
+
+%%ANKI
+Basic
+How many canonically equivalent ways can letter "ệ" be expressed?
+Back: Five.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261977-->
+END%%
+
+%%ANKI
+Basic
+What are the fully composed ways letter "ệ" can be expressed?
+Back: As "ệ".
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745728695706-->
+END%%
+
+%%ANKI
+Basic
+What are the partially composed ways letter "ệ" can be expressed?
+Back:
+1. As "ẹ" + "◌̂".
+2. As "ê" + "◌̣".
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745728695707-->
+END%%
+
+%%ANKI
+Basic
+What are the fully decomposed ways letter "ệ" can be expressed?
+Back:
+1. As "e" + "◌̂" + "◌̣".
+2. As "e" + "◌̣" + "◌̂".
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745728787051-->
+END%%
+
+%%ANKI
+Basic
+In Unicode, what does it mean for strings to be canonically equivalent?
+Back: The strings should be treated in purposes of searching, rendering, etc.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261980-->
+END%%
+
+%%ANKI
+Basic
+In Unicode, must two canonically equivalent strings have the same binary representation?
+Back: No.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261981-->
+END%%
+
+%%ANKI
+Basic
+Why is it a possible misnomer to say grapheme cluster "ệ" is the same as "ệ"?
+Back: They may be canonically equivalent, but their corresponding sequence of code points may differ.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261983-->
+END%%
+
+%%ANKI
+Basic
+What *is* a normalization form?
+Back: A strategy for converting strings into a form allowing comparison byte-by-byte.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261984-->
+END%%
+
+%%ANKI
+Basic
+What two normalization forms are used for canonical equivalence?
+Back: NFD and NFC.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261986-->
+END%%
+
+%%ANKI
+Cloze
+{1:NFD} is to {2:decomposed} whereas {2:NFC} is to {1:composed}.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261987-->
+END%%
+
+%%ANKI
+Basic
+What is NFD an acronym for?
+Back: **N**ormalization **F**orm Canonical **D**ecomposition.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261988-->
+END%%
+
+%%ANKI
+Basic
+What is NFC an acronym for?
+Back: **N**ormalization **F**orm Canonical **C**omposition.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261989-->
+END%%
+
+%%ANKI
+Basic
+In what order are diacritics placed when using NFD?
+Back: Diacritics below the character are placed before those above.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261990-->
+END%%
+
+%%ANKI
+Basic
+In what order are diacritics placed when using NFC?
+Back: Diacritics below the character are placed before those above.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261991-->
+END%%
+
+%%ANKI
+Basic
+How is "Amélie" expressed in NFD?
+Back: As `"A" + "m" + "e" + "◌́" + "l" + "i" + "e".
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261992-->
+END%%
+
+%%ANKI
+Basic
+How is "Amélie" expressed in NFC?
+Back: As `"A" + "m" + "é" + "l" + "i" + "e"`.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261993-->
+END%%
+
+%%ANKI
+Basic
+Which of NFC or NFD typically result in strings with fewer code points?
+Back: NFC.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261994-->
+END%%
+
+%%ANKI
+Basic
+Is a string in NFD partially or fully decomposed?
+Back: Fully decomposed.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261995-->
+END%%
+
+%%ANKI
+Basic
+Is a string in NFC partially or fully composed?
+Back: Fully composed if possible, partially composed otherwise.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1745730261996-->
+END%%
+
 ## Bibliography
 
 * “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
