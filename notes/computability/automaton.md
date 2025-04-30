@@ -1162,7 +1162,7 @@ END%%
 Basic
 Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $F$ evaluate to?
 ![[nfa-example-powerset.png]]
-Back: $F = \{1\}$
+Back: $F = \{ \{1\}, \{1, 2\} \}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745636174236-->
 END%%
@@ -1270,7 +1270,7 @@ END%%
 Basic
 Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $\delta(\{2, 3\}, a)$ evaluate to?
 ![[nfa-example2-powerset.png]]
-Back: $\delta(\{2, 3\}, a) = \{1, 3\}$
+Back: $\delta(\{2, 3\}, a) = \{1, 2\}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745625798167-->
 END%%
@@ -1297,7 +1297,7 @@ Let $A$ and $B$ be regular languages over alphabet $\Sigma$. Then the **regular 
 
 %%ANKI
 Basic
-Let $A$ and $B$ be languages. How is the union regular operation defined?
+Let $A$ and $B$ be regular languages. How is the union operation defined?
 Back: As $A \cup B = \{ x \mid x \in A \lor x \in B \}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1735160593059-->
@@ -1305,7 +1305,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ and $B$ be languages. How is the intersection regular operation defined?
+Let $A$ and $B$ be regular languages. How is the intersection operation defined?
 Back: As $A \cap B = \{ x \mid x \in A \land x \in B \}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1735160593065-->
@@ -1313,7 +1313,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ and $B$ be languages. How is the concatenation regular operation defined?
+Let $A$ and $B$ be regular languages. How is the concatenation operation defined?
 Back: As $A \circ B = \{ xy \mid x \in A \land y \in B \}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1735160593071-->
@@ -1321,7 +1321,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be a language. How is the Kleene star regular operation defined?
+Let $A$ be a regular language. How is the Kleene star operation defined?
 Back: As $A^* = \{ x_1x_2 \cdots x_k \mid k \geq 0 \land x_1, \ldots, x_k \in A \}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1735160593075-->
@@ -1329,7 +1329,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ and $B$ be languages. How is their union denoted?
+Let $A$ and $B$ be regular languages. How is their union denoted?
 Back: $A \cup B$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1735160593080-->
@@ -1337,7 +1337,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ and $B$ be languages. How is their intersection denoted?
+Let $A$ and $B$ be regular languages. How is their intersection denoted?
 Back: $A \cap B$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1735160593085-->
@@ -1345,7 +1345,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ and $B$ be languages. How is their concatenation denoted?
+Let $A$ and $B$ be regular languages. How is their concatenation denoted?
 Back: $A \circ B$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1735160593089-->
@@ -1353,7 +1353,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be a language. How is its complement denoted?
+Let $A$ be a regular language. How is its complement denoted?
 Back: $A^C$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745371322656-->
@@ -1361,7 +1361,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be a language. How is its reversal denoted?
+Let $A$ be a regular language. How is its reversal denoted?
 Back: $A^R$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745638450115-->

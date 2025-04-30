@@ -468,7 +468,7 @@ END%%
 %%ANKI
 Basic
 Suppose a set is equinumerous to a proper subset of itself. Is it infinite?
-Back: Not necessarly (must be a *proper* subset).
+Back: Yes.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1745098267323-->
 END%%
@@ -1913,6 +1913,152 @@ Translate the following into language using cardinal numbers: $$\omega \preceq A
 Back: $\aleph_0 \leq \kappa$ for any infinite cardinal $\kappa$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1742391755144-->
+END%%
+
+## Countable Sets
+
+A set $A$ is **countable** if and only if $A \preceq \omega$. That is, if and only if $\mathop{\text{card}} A \leq \aleph_0$.
+
+%%ANKI
+Basic
+In terms of sets, what does it mean for a set $A$ to be countable?
+Back: $A \preceq \omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052440-->
+END%%
+
+%%ANKI
+Basic
+In terms of cardinal numbers, what does it mean for a set $A$ to be countable?
+Back: $\mathop{\text{card}} A \leq \aleph_0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052450-->
+END%%
+
+%%ANKI
+Cloze
+A set $A$ is countable iff either {$A$ is finite} or {$A$ has cardinality $\aleph_0$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052453-->
+END%%
+
+%%ANKI
+Cloze
+A set is either {countable} or {uncountable}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052456-->
+END%%
+
+%%ANKI
+Basic
+Is the set $\mathbb{Z}$ countable or uncountable?
+Back: Countable.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052459-->
+END%%
+
+%%ANKI
+Basic
+Is the set $\mathbb{Q}$ countable or uncountable?
+Back: Countable.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052462-->
+END%%
+
+%%ANKI
+Basic
+Is the set $\mathbb{R}$ countable or uncountable?
+Back: Uncountable.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052465-->
+END%%
+
+%%ANKI
+Basic
+Is the set $\mathbb{C}$ countable or uncountable?
+Back: Uncountable.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052468-->
+END%%
+
+%%ANKI
+Basic
+Appealing to the definition of countability, *why* is $\mathbb{R}$ uncountable?
+Back: Because it strictly dominates $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052471-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be the subset of a countable set. Is $A$ countable or uncountable?
+Back: Countable.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052475-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be the subset of an uncountable set. Is $A$ countable or uncountable?
+Back: Indeterminate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052479-->
+END%%
+
+%%ANKI
+Basic
+*Why* must the union of two countable sets countable?
+Back: The union of these two sets must have at most cardinality $\aleph_0 + \aleph_0 = \aleph_0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052483-->
+END%%
+
+%%ANKI
+Basic
+The union of two countable sets has at most what cardinality?
+Back: $\aleph_0 + \aleph_0 = \aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052487-->
+END%%
+
+%%ANKI
+Basic
+*Why* must the Cartesian product of two countable sets countable?
+Back: The Cartesian product of these two sets must have at most cardinality $\aleph_0 \cdot \aleph_0 = \aleph_0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052490-->
+END%%
+
+%%ANKI
+Basic
+The Cartesian product of two countable sets has at most what cardinality?
+Back: $\aleph_0 \cdot \aleph_0 = \aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052494-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is a countable set. Is $\mathscr{P}(A)$ countable or uncountable?
+Back: Indeterminate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052497-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is a countable set. When is $\mathscr{P}(A)$ countable?
+Back: When $A$ is finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052501-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is a countable set. When is $\mathscr{P}(A)$ uncountable?
+Back: When $A$ is infinite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745875052504-->
 END%%
 
 ## Hilbert's Hotel

@@ -116,7 +116,7 @@ Does the following require AoC? Why or why not?
 
 > Any infinite subset of $\omega$ is equinumerous to $\omega$.
 
-Back: No. There exists a choice function for $\omega$.
+Back: No. There already exists a choice function for $\omega$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1745076132156-->
 END%%

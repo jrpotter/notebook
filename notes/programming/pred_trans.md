@@ -1224,7 +1224,7 @@ END%%
 
 %%ANKI
 Basic
-Let $H_k$ denote the associated recursive definition of $wp(\text{DO}, R)$. Define $$H'_k(R) = wp(\text{IF}, H_{k-1}(R)).$$
+Let $H_k$ denote the associated recursive definition of $wp(\text{DO}, R)$. Define $$H'_k(R) = wp(\text{IF}, H'_{k-1}(R)).$$
 In what way does $H'_k$ differ from $H_k$?
 Back: $H'_k$ specifies termination in *exactly* $k$ iterations.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.

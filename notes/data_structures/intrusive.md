@@ -168,7 +168,7 @@ END%%
 
 %%ANKI
 Basic
-Which of intrusive or non-intrusive containers perform more de-allocations?
+Which of intrusive or non-intrusive containers perform more deallocations?
 Back: Non-intrusive.
 Reference: Fuchsia. “Introduction to Fbl Intrusive Containers.” Accessed May 12, 2024. [https://fuchsia.dev/fuchsia-src/development/languages/c-cpp/fbl_containers_guide/introduction](https://fuchsia.dev/fuchsia-src/development/languages/c-cpp/fbl_containers_guide/introduction).
 <!--ID: 1715534735152-->

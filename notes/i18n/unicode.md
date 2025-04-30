@@ -701,7 +701,7 @@ Visually identical grapheme clusters are said to be **canonically equivalent**. 
 %%ANKI
 Basic
 What is a grapheme cluster?
-Back: One or more code points that constitution a "user-perceived character".
+Back: One or more code points that constitute a "user-perceived character".
 Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
 <!--ID: 1745728695690-->
 END%%
@@ -806,7 +806,7 @@ END%%
 %%ANKI
 Basic
 In Unicode, what does it mean for strings to be canonically equivalent?
-Back: The strings should be treated in purposes of searching, rendering, etc.
+Back: The strings should be treated identical in purposes of searching, rendering, etc.
 Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
 <!--ID: 1745730261980-->
 END%%
@@ -885,7 +885,7 @@ END%%
 %%ANKI
 Basic
 How is "Amélie" expressed in NFD?
-Back: As `"A" + "m" + "e" + "◌́" + "l" + "i" + "e".
+Back: As `"A" + "m" + "e" + "◌́" + "l" + "i" + "e"`.
 Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
 <!--ID: 1745730261992-->
 END%%
