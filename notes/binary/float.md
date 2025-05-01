@@ -76,6 +76,13 @@ Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en
 END%%
 
 %%ANKI
+Cloze
+With respect to IEEE-754, the {significand} is sometimes referred to as the {mantissa}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746064935045-->
+END%%
+
+%%ANKI
 Basic
 What term refers to $n$ in scientific notation $m \times 10^n$?
 Back: The exponent.

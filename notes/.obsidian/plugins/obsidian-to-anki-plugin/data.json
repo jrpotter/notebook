@@ -356,7 +356,11 @@
     "triangle-inequality.png",
     "triangle-inequality-degenerate.png",
     "cosine-graph.png",
-    "sine-graph.png"
+    "sine-graph.png",
+    "normalized-form.png",
+    "denormalized-form.png",
+    "infinity.png",
+    "nan.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -488,7 +492,7 @@
     "c17/alignment.md": "beca2f5170de4fad88e33b7ab2bf6536",
     "binary/integer.md": "f98ca0221b24c16b80aea45d01fcbfd7",
     "binary/index.md": "a7cf4467f1edc6a27869b958cf9f1dba",
-    "binary/float.md": "dddec0b3554874b8d8642371fc9a0a6a",
+    "binary/float.md": "56a5c60dff7c247fde8b51d0f908adc7",
     "baduk/nakade.md": "6b6e3884a667f7165e463ec687a59705",
     "baduk/live-shapes.md": "c034408b5d6f66756236453ae828a682",
     "baduk/index.md": "e686e1e787c4463769aa5407b7eb8d6b",
@@ -1011,8 +1015,9 @@
     "trigonometry/periodicity.md": "9e8d9838c88314bb5f90b42be9b88925",
     "_journal/2025-04-29.md": "dbe16c8b8295396a80f5255129081304",
     "_journal/2025-04/2025-04-28.md": "605569fe675492a2d3ec15986c898d25",
-    "_journal/2025-04-30.md": "a560f0e653ee5155f12ee15a2c87bab0",
-    "_journal/2025-04/2025-04-29.md": "dbe16c8b8295396a80f5255129081304"
+    "_journal/2025-04-30.md": "f06d8965f9f1e80d33a359bdb8dd1cc4",
+    "_journal/2025-04/2025-04-29.md": "dbe16c8b8295396a80f5255129081304",
+    "algebra/logarithms.md": "a497e763028f11e04ade84feadea1c88"
   },
   "fields_dict": {
     "Basic": [
