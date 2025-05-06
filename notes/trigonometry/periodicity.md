@@ -49,7 +49,7 @@ END%%
 %%ANKI
 Basic
 An odd function exhibits what kind of symmetric?
-Back: Symmetry about the $y$-axis.
+Back: Symmetry about the origin.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1746023817967-->
 END%%
@@ -65,7 +65,7 @@ END%%
 %%ANKI
 Basic
 An even function exhibits what kind of symmetric?
-Back: Symmetry about the origin.
+Back: Symmetry about the $y$-axis.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1746023817971-->
 END%%
@@ -112,7 +112,7 @@ END%%
 
 ## Sinusoidal Functions
 
-A **sinusoidal wave** (or **sinusoid**) is a periodic wave whose waveform is the trigonometric sine function. Both $y = \sin{(t)}$ and $y = \cos{(t)}$ are sinusoidal waves. The sine and cosine functions are called **sinusoidal functions**.
+A **sinusoidal wave** (or **sinusoid**) is a periodic wave whose waveform is the trigonometric sine function. Both $y = \sin{(t)}$ and $y = \cos{(t)}$ are sinusoidal waves. The sine (and cosine) functions are called **sinusoidal functions**.
 
 The **amplitude** of a sinusoid is one-half the distance between the minimum and maximum functional values. That is, $$\text{Amplitude} = \frac{1}{2} \lvert (\text{max } y\text{-coordinate}) - (\text{min } y\text{-coordinate}) \rvert$$
 
@@ -181,7 +181,7 @@ END%%
 %%ANKI
 Basic
 What are the horizontal intercept(s) of $y = \sin{x}$?
-Back: $\langle 0, k\pi \rangle$ for all integers $k$.
+Back: $\langle k\pi, 0 \rangle$ for all integers $k$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1745979898155-->
 END%%
@@ -197,7 +197,7 @@ END%%
 %%ANKI
 Basic
 What are the horizontal intercept(s) of $y = \cos{x}$?
-Back: $\langle 0, \pi / 2 + k \pi \rangle$ for all integers $k$.
+Back: $\langle \pi / 2 + k \pi, 0 \rangle$ for all integers $k$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1745979898163-->
 END%%

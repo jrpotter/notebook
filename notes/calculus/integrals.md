@@ -457,6 +457,14 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1737688734635-->
 END%%
 
+%%ANKI
+Basic
+Which equalities does Apostol typically use to prove the integral of $f$ from $[a, b]$ equals $\int_a^b f(x) \,dx$?
+Back: $\underline{I}(f) = \int_a^b f(x) \,dx = \bar{I}(f)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1746108789210-->
+END%%
+
 ### Integrand Additivity
 
 Let $f$ and $g$ be integrable over $[a, b]$. Then $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$

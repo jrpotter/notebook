@@ -2007,7 +2007,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* must the union of two countable sets countable?
+*Why* must the union of two countable sets be countable?
 Back: The union of these two sets must have at most cardinality $\aleph_0 + \aleph_0 = \aleph_0$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1745875052483-->
@@ -2023,7 +2023,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* must the Cartesian product of two countable sets countable?
+*Why* must the Cartesian product of two countable sets be countable?
 Back: The Cartesian product of these two sets must have at most cardinality $\aleph_0 \cdot \aleph_0 = \aleph_0$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1745875052490-->
@@ -2059,6 +2059,249 @@ Suppose $A$ is a countable set. When is $\mathscr{P}(A)$ uncountable?
 Back: When $A$ is infinite.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1745875052504-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be an onto function from $A$ to $B$. Which set dominates which?
+Back: $B \preceq A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746492475694-->
+END%%
+
+%%ANKI
+Cloze
+Let $f \colon A \rightarrow B$ be a(n) {1:surjection}. Then {2:$B$} $\preceq$ {2:$A$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746492475698-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a one-to-one function from $A$ to $B$. Which set dominates which?
+Back: $A \preceq B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746492475685-->
+END%%
+
+%%ANKI
+Cloze
+Let $f \colon A \rightarrow B$ be a(n) {1:injection}. Then {2:$A$} $\preceq$ {2:$B$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746492522286-->
+END%%
+
+%%ANKI
+Basic
+Suppose $B \preceq A$. What injection must exist?
+Back: A function from $B$ to $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746492983437-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \preceq B$. What injection must exist?
+Back: A function from $A$ to $B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746492983445-->
+END%%
+
+%%ANKI
+Basic
+Suppose $B \preceq A$. What surjection must exist?
+Back: A function from $A$ to $B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746492983448-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \preceq B$. What surjection must exist?
+Back: A function from $B$ to $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746492983450-->
+END%%
+
+%%ANKI
+Cloze
+Set $A$ is countable iff there exists a(n) {injective} function $F \colon A \rightarrow \omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746495360060-->
+END%%
+
+%%ANKI
+Cloze
+Set $A$ is countable iff there exists a(n) {surjective} function $F \colon \omega \rightarrow A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746495360071-->
+END%%
+
+### Union
+
+A countable union of countable sets is countable.
+
+%%ANKI
+Basic
+How does the notion of countability extend to unions?
+Back: A countable union of countable sets is countable.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746496463212-->
+END%%
+
+%%ANKI
+Basic
+What does a "countable union" refer to?
+Back: The union of a countable set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746496463219-->
+END%%
+
+%%ANKI
+Basic
+What is wrong with the following statement?
+
+> A union of countable sets is countable.
+
+Back: A *countable* union of countable sets is countable.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746496463222-->
+END%%
+
+%%ANKI
+Basic
+What is wrong with the following statement?
+
+> A countable union of sets is countable.
+
+Back: A countable union of *countable* sets is countable.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746496463225-->
+END%%
+
+%%ANKI
+Basic
+How might you visualize the countable union $\bigcup A$ of countable sets?
+Back: $$\begin{align*} A_1 & = \{ a_{11}, \,a_{12}, \,\ldots, \,a_{1n}, \,\ldots \} \\ A_2 & = \{ a_{21}, \,a_{22}, \,\ldots, \,a_{2n}, \,\ldots \} \\ \vdots \\ A_m & = \{ a_{m1}, \,a_{m2}, \,\ldots, \,a_{mn}, \,\ldots \} \\ \vdots \end{align*}$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746496463228-->
+END%%
+
+### Sequences
+
+Let $A$ be a set. A **sequence** in $A$ is a function from some natural number into $A$. Let $\text{Sq}(A)$ be the set of all sequences in $A$: $$\begin{align*} \text{Sq}(A) & = \{ f \mid \exists n \in \omega, f \colon n \rightarrow A \} \\ & = {^0}A \cup {^1}A \cup {^2}A \cup \cdots \end{align*}$$
+
+The **length** of a sequence is its domain.
+
+%%ANKI
+Basic
+How does Enderton define a sequence in set $A$?
+Back: As a function from some natural number to $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312144-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. What special name does Enderton give function $f \colon n \rightarrow A$?
+Back: A sequence.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312153-->
+END%%
+
+%%ANKI
+Cloze
+Let $A$ be a set. Function $f \colon n \rightarrow A$ is called a sequence {in $A$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312156-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. What does $\text{Sq}(A)$ denote?
+Back: The set of all sequences in $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312159-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. How is $\text{Sq}(A)$ defined in set-builder notation?
+Back: $\text{Sq}(A) = \{ f \mid \exists n \in \omega, f \colon n \rightarrow A \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312162-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. $\text{Sq}(A)$ is the union of what sets?
+Back: $\text{Sq}(A) = {^0}A \cup {^1}A \cup {^2}A \cup \cdots$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312164-->
+END%%
+
+%%ANKI
+Basic
+How is the length of a sequence in set $A$ defined?
+Back: As the domain of the sequence.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312167-->
+END%%
+
+%%ANKI
+Basic
+Let function $f$ be a sequence in set $A$. What is the length of $f$?
+Back: $\mathop{\text{dom}}(f)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312170-->
+END%%
+
+%%ANKI
+Basic
+Which of functions or sequences are more general?
+Back: Functions.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312173-->
+END%%
+
+%%ANKI
+Basic
+What does the cardinality of $\text{Sq}(\omega)$ evaluate to?
+Back: $\aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312176-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. *Why* is $\text{Sq}(A)$ countable?
+Back: N/A. This isn't true if $A$ is uncountable.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312179-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a countable set. *Why* is $\text{Sq}(A)$ countable?
+Back: Because $\text{Sq}(A)$ is a countable union of countable sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312182-->
+END%%
+
+%%ANKI
+Basic
+Consider alphabet $A = \{a, b, \ldots, z\}$. How does Enderton denote the set of $5$-letter words that can be made from $A$?
+Back: ${^5}A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312185-->
+END%%
+
+%%ANKI
+Basic
+Consider alphabet $A = \{a, b, \ldots, z\}$. How does Enderton denote the set of words that can be made from $A$?
+Back: $\text{Sq}(A)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1746501312187-->
 END%%
 
 ## Hilbert's Hotel

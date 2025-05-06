@@ -444,8 +444,8 @@ END%%
 
 %%ANKI
 Basic
-In what way does `?P rdfs:domain ?D` work "backwards"?
-Back: RDFS infers any subject used by `?P` *must* be a member of `?D`.
+In what way does `:P rdfs:domain :D` work "backwards"?
+Back: RDFS infers any subject used by `:P` *must* be a member of `:D`.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1743453116908-->
 END%%
@@ -464,8 +464,8 @@ END%%
 
 %%ANKI
 Basic
-In what way does `?P rdfs:range ?R` work "backwards"?
-Back: RDFS infers any object used by `?P` *must* be a member of `?R`.
+In what way does `:P rdfs:range :R` work "backwards"?
+Back: RDFS infers any object used by `:P` *must* be a member of `:R`.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1743453116914-->
 END%%

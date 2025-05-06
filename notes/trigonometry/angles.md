@@ -480,7 +480,7 @@ END%%
 Basic
 What is the length of the blue arc?
 ![[arc-length-scale.png]]
-Back: $r\theta$ radians.
+Back: $r\theta$ units of length.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1742389899461-->
 END%%

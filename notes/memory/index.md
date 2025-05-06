@@ -495,11 +495,135 @@ END%%
 
 #### Solid State Disks
 
-TODO
+A solid state disk (SSD) is based on flash memory. An SSD package consists of one or more flash memory chips and a **flash translation layer** responsible for translating requests for logical blocks into accesses of the underlying physical device.
+
+Flash memory consists of a sequence of blocks, where each block consists of a number of pages. A page can only be written to after the entire block to which it belongs has been erased. **Wear-leveling** logic is used to maximize the lifetime of each block by spreading erasures evenly across all blocks.
+
+%%ANKI
+Basic
+What is SSD an acronym for?
+Back: **S**olid **S**tate **D**rive.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746105685138-->
+END%%
+
+%%ANKI
+Basic
+SSDs are based on what kind of memory?
+Back: Flash.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746105685148-->
+END%%
+
+%%ANKI
+Basic
+What does the flash translation layer of an SSD do?
+Back: Maps logical block numbers to physical blocks/pages.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746105685151-->
+END%%
+
+%%ANKI
+Basic
+What does the flash translation layer of an SSD input?
+Back: Logical block numbers.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746105685154-->
+END%%
+
+%%ANKI
+Basic
+What does the flash translation layer of an SSD output?
+Back: A $\langle block, page \rangle$ pair.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746105685157-->
+END%%
+
+%%ANKI
+Cloze
+The {1:flash translation layer} is to {2:SSDs} whereas the {2:disk controller} is to {1:HDDs}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746105685164-->
+END%%
+
+%%ANKI
+Basic
+In the context of SSDs, which of blocks or pages contain the other?
+Back: Blocks contain pages.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746105685167-->
+END%%
+
+%%ANKI
+Cloze
+An SSD is made up of {blocks} which are further made up of {pages}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746105685170-->
+END%%
+
+%%ANKI
+Basic
+Which of reading or writing is faster in an SSD?
+Back: Reading.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746105685173-->
+END%%
+
+%%ANKI
+Basic
+What two things make writing to an SSD slower than reading from one?
+Back: Each write must:
+1. Copy contents of the block to another block.
+2. Erase the entire block the page is in.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746105685160-->
+END%%
+
+%%ANKI
+Basic
+What two things may happen when writing to a page in an SSD?
+Back:
+1. Copy contents of the block to another block.
+2. Erase the entire block the page is in.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746105685176-->
+END%%
+
+%%ANKI
+Basic
+What dictates the lifetime of an SSD?
+Back: The number of writes before a block wears out.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746106028534-->
+END%%
+
+%%ANKI
+Basic
+In an SSD, where is wear-leveling logic found?
+Back: In the flash translation layer.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746106028542-->
+END%%
+
+%%ANKI
+Basic
+In the context of SSDs, what is wear-leveling logic?
+Back: Logic used to spread erasures evenly across blocks.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746106028544-->
+END%%
+
+%%ANKI
+Basic
+Which of SSDs or HDDs are typically more expensive?
+Back: SSDs.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1746106028547-->
+END%%
 
 ### Hard Disk Drives
 
-Hard disk drives are constructed with one or more **platters** stacked on top of each other and encased in a sealed package. Each platter consists of two **surfaces** coated with magnetic recording material. A rotating **spindle** in the center of the platters rotates them at a fixed rotational rate.
+Hard disk drives (HDDs) are constructed with one or more **platters** stacked on top of each other and encased in a sealed package. Each platter consists of two **surfaces** coated with magnetic recording material. A rotating **spindle** in the center of the platters rotates them at a fixed rotational rate.
 
 Each surface consists of a collection of concentric rings called **tracks**. Each track is further partitioned into a collection of **sectors**, each of which contains an equal number of data bits. Sectors are separated by **gaps** where no data bits are stored; gaps store formatting bits used to identify sectors.
 
@@ -942,7 +1066,7 @@ END%%
 %%ANKI
 Basic
 What does the disk controller of an HDD do?
-Back: Map logical block numbers to physical sectors.
+Back: Maps logical block numbers to physical sectors.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1745503950968-->
 END%%

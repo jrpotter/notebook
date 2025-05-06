@@ -52,7 +52,7 @@ END%%
 %%ANKI
 Basic
 Consider equation $b^y = x$. What term is used to refer to $x$?
-Back: The anilogarithm.
+Back: The antilogarithm.
 Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
 <!--ID: 1746064353211-->
 END%%
@@ -268,6 +268,22 @@ Expression $274,246 \cdot 0.0005461$  is equivalently expressed as $10$ to what 
 Back: $\log_{10}{274,246} + \log_{10}{0.0005461}$
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1746068831050-->
+END%%
+
+%%ANKI
+Basic
+What does $10^{\log_{10}{x}}$ evaluate to?
+Back: $x$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1746104748484-->
+END%%
+
+%%ANKI
+Basic
+*Why* does $10^{\log_{10}{x}} = x$?
+Back: Because $\log_{10}{x}$ evaluates to exponent $y$ such that $10^y = x$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1746104748492-->
 END%%
 
 ## Bibliography

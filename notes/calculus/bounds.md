@@ -8,6 +8,10 @@ tags:
 
 ## Overview
 
+Refer to [[order#Bounds]] for a more general description of these properties.
+
+## Bounds
+
 Suppose $S$ is a nonempty set of real numbers and suppose there are numbers $L$ and $U$ such that $L \leq x \leq U$ for all $x \in S$. Then $S$ is said to be **bounded below** by $L$ and **bounded above** by $U$. The number $L$ is said to be a **lower bound** for $S$; the number $U$ is said to be an **upper bound** for $S$.
 
 %%ANKI
@@ -368,58 +372,6 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1724523911499-->
 END%%
 
-### Completeness Axiom
-
-Every nonempty set $S$ of real numbers which is bounded above has a supremum; that is, there is a real number $B$ such that $B = \mathop{\text{sup}} S$.
-
-%%ANKI
-Basic
-What does the completeness axiom of real numbers state?
-Back: Every nonempty set of real numbers bounded above has a supremum.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1724116323038-->
-END%%
-
-%%ANKI
-Basic
-Consider $\varnothing \subseteq \mathbb{R}$. Why doesn't the completeness axiom of real numbers apply?
-Back: $\varnothing$ is not a nonempty set.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1724116323044-->
-END%%
-
-%%ANKI
-Basic
-Consider $(0, 1) \subseteq \mathbb{R}$. Why doesn't the completeness axiom of real numbers apply?
-Back: N/A. It does.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1724116323046-->
-END%%
-
-%%ANKI
-Basic
-Consider $\mathbb{R}^+$. Why doesn't the completeness axiom apply?
-Back: $\mathbb{R}^+$ is not bounded above.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1724116323049-->
-END%%
-
-%%ANKI
-Basic
-Consider $(-\infty, 0)$. Why doesn't the completeness axiom apply?
-Back: N/A. It does.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1724116323052-->
-END%%
-
-%%ANKI
-Basic
-What arbitrary decision was made when formulating the completeness axiom of real numbers?
-Back: Whether to use supremums or infimums.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1724116323055-->
-END%%
-
 ## Greatest Lower Bounds
 
 A number $B$ is called a **greatest lower bound** (or **infimum**) of a nonempty set $S$ if $B$ is a lower bound for $S$ and no number greater than $B$ is a lower bound for $S$. This is denoted as $B = \mathop{\text{glb}} S$ or $B = \mathop{\text{inf}} S$.
@@ -518,6 +470,86 @@ Is a minimum of a nonempty subset $S$ of $\mathbb{R}$ a greatest lower bound of 
 Back: Yes.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1724115953452-->
+END%%
+
+## Completeness Axiom
+
+Every nonempty set $S$ of real numbers which is bounded above has a supremum; that is, there is a real number $B$ such that $B = \mathop{\text{sup}} S$.
+
+%%ANKI
+Basic
+What does the completeness axiom of real numbers state?
+Back: Every nonempty set of real numbers bounded above has a supremum.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724116323038-->
+END%%
+
+%%ANKI
+Basic
+Consider $\varnothing \subseteq \mathbb{R}$. Why doesn't the completeness axiom of real numbers apply?
+Back: $\varnothing$ is not a nonempty set.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724116323044-->
+END%%
+
+%%ANKI
+Basic
+Consider $(0, 1) \subseteq \mathbb{R}$. Why doesn't the completeness axiom of real numbers apply?
+Back: N/A. It does.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724116323046-->
+END%%
+
+%%ANKI
+Basic
+Consider $\mathbb{R}^+$. Why doesn't the completeness axiom apply?
+Back: $\mathbb{R}^+$ is not bounded above.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724116323049-->
+END%%
+
+%%ANKI
+Basic
+Consider $(-\infty, 0)$. Why doesn't the completeness axiom apply?
+Back: N/A. It does.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724116323052-->
+END%%
+
+%%ANKI
+Basic
+What arbitrary decision was made when formulating the completeness axiom of real numbers?
+Back: Whether to use supremums or infimums.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1724116323055-->
+END%%
+
+%%ANKI
+Cloze
+Let $c$ {$>$} $0$ and $S \subseteq \mathbb{R}$. Then {$c \cdot \sup\,\{ x \mid x \in S\}$} $=$ {$\sup\,\{ cx \mid x \in S \}$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1746315403955-->
+END%%
+
+%%ANKI
+Cloze
+Let $c$ {$>$} $0$ and $S \subseteq \mathbb{R}$. Then {$c \cdot \inf\,\{ x \mid x \in S\}$} $=$ {$\inf\,\{ cx \mid x \in S \}$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1746315403958-->
+END%%
+
+%%ANKI
+Cloze
+Let $c$ {$<$} $0$ and $S \subseteq \mathbb{R}$. Then {$c \cdot \sup\,\{ x \mid x \in S\}$} $=$ {$\inf\,\{ cx \mid x \in S \}$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1746315403963-->
+END%%
+
+%%ANKI
+Cloze
+Let $c$ {$<$} $0$ and $S \subseteq \mathbb{R}$. Then {$c \cdot \inf\,\{ x \mid x \in S\}$} $=$ {$\sup\,\{ cx \mid x \in S \}$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1746315403967-->
 END%%
 
 ## Bibliography
