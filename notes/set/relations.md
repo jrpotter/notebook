@@ -979,7 +979,7 @@ END%%
 %%ANKI
 Basic
 Can a relation be both symmetric and asymmetric?
-Back: Yes.
+Back: Yes, the empty set.
 Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
 <!--ID: 1721910949037-->
 END%%

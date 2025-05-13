@@ -469,7 +469,7 @@ END%%
 
 %%ANKI
 Basic
-What does the first line of a PLT entry do?
+What does the first instruction of a PLT entry do?
 Back: Indirectly jumps to the address specified by its corresponding GOT entry.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1743296974644-->
@@ -477,10 +477,26 @@ END%%
 
 %%ANKI
 Basic
-What do lines two and three of a PLT entry do?
-Back: Invokes the dynamic linker and overwrites the corresponding GOT entry.
+What does the second instruction of a PLT entry do?
+Back: Pushes a tag identifying the procedure onto the stack.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1743296974649-->
+<!--ID: 1747141197009-->
+END%%
+
+%%ANKI
+Basic
+What does the third instruction of a PLT entry do?
+Back: Invokes the dynamic linker.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1747141197013-->
+END%%
+
+%%ANKI
+Basic
+What does the fourth instruction of a PLT entry do?
+Back: N/A. A PLT entry only has three instructions.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1747141197016-->
 END%%
 
 %%ANKI

@@ -2030,7 +2030,7 @@ END%%
 
 %%ANKI
 Basic
-Arrays fall under what two categories?
+Arrays in C are classified in what two ways?
 Back: Fixed-length and variable-length.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727957575990-->

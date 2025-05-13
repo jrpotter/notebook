@@ -112,9 +112,13 @@ END%%
 
 ## Sinusoidal Functions
 
-A **sinusoidal wave** (or **sinusoid**) is a periodic wave whose waveform is the trigonometric sine function. Both $y = \sin{(t)}$ and $y = \cos{(t)}$ are sinusoidal waves. The sine (and cosine) functions are called **sinusoidal functions**.
+Let $A$, $B$, $C$, and $D$ be constants with $B \neq 0$. A **sinusoidal function** is one of form $$A\sin{(B[t - C])} + D.$$
+
+The graph of a sinusoidal function is called a **sinusoidal wave** (or **sinusoid**). Both $y = \sin{(t)}$ and $y = \cos{(t)}$ are sinusoidal waves. 
 
 The **amplitude** of a sinusoid is one-half the distance between the minimum and maximum functional values. That is, $$\text{Amplitude} = \frac{1}{2} \lvert (\text{max } y\text{-coordinate}) - (\text{min } y\text{-coordinate}) \rvert$$
+
+A horizontal shift of a sinusoid is called a **phase shift**.
 
 %%ANKI
 Cloze
@@ -377,6 +381,236 @@ The cosine function is symmetric with respect to what?
 Back: The $y$-axis.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1746023885368-->
+END%%
+
+%%ANKI
+Basic
+What is the most general form of a sinusoidal function?
+Back: Given constants $A$, $B \neq 0$, $C$, and $D$, $$A\sin{(B[t - C])} + D.$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917919-->
+END%%
+
+%%ANKI
+Basic
+Let $B > 0$. When is the period of $\sin{(Bt)}$ greater than $2\pi$?
+Back: When $0 < B < 1$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917928-->
+END%%
+
+%%ANKI
+Basic
+Let $B > 0$. When is the period of $\sin{(Bt)}$ less than $2\pi$?
+Back: When $B > 1$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917931-->
+END%%
+
+%%ANKI
+Basic
+Let $B > 0$. What is the period of $\sin{(Bt)}$?
+Back: $2\pi / B$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917935-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B > 0$ be constants. What is the period of $A\sin{(Bt)}$?
+Back: $2\pi / B$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917938-->
+END%%
+
+%%ANKI
+Basic
+What is the period of $\sin{(4t)}$?
+Back: $\pi / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917942-->
+END%%
+
+%%ANKI
+Basic
+What is the period of $\sin{(t / 2)}$?
+Back: $4\pi$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917946-->
+END%%
+
+%%ANKI
+Basic
+Given $B > 0$, *why* is the period of $\sin{(Bt)}$ equal to $2\pi / B$?
+Back: Because $Bt$ equals $2 \pi$ when $t = 2\pi / B$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917951-->
+END%%
+
+%%ANKI
+Basic
+What is the amplitude of the following sinusoid? $$y = 3\cos{\left(\frac{1}{3}t\right)}$$
+Back: $3$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917955-->
+END%%
+
+%%ANKI
+Basic
+What is the period of the following sinusoid? $$y = 3\cos{\left(\frac{1}{3}t\right)}$$
+Back: $6\pi$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917959-->
+END%%
+
+%%ANKI
+Basic
+What is the amplitude of the following sinusoid? $$y = -2\sin{\left(\frac{\pi}{2}t\right)}$$
+Back: $2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917964-->
+END%%
+
+%%ANKI
+Basic
+What is the period of the following sinusoid? $$y = -2\sin{\left(\frac{\pi}{2}t\right)}$$
+Back: $4$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917968-->
+END%%
+
+%%ANKI
+Basic
+For what values of $C$ does $y = \sin{(t - C)}$ shift right?
+Back: $C > 0$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917972-->
+END%%
+
+%%ANKI
+Basic
+For what values of $C$ does $y = \sin{(t - C)}$ shift left?
+Back: $C < 0$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917976-->
+END%%
+
+%%ANKI
+Basic
+For what values of $C$ does $y = \sin{(t + C)}$ shift right?
+Back: $C < 0$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917980-->
+END%%
+
+%%ANKI
+Basic
+For what values of $C$ does $y = \sin{(t + C)}$ shift left?
+Back: $C > 0$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917984-->
+END%%
+
+%%ANKI
+Basic
+The term "phase shift" is usually used for what kind of functions?
+Back: Sinusoidal functions.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917987-->
+END%%
+
+%%ANKI
+Basic
+The term "vertical shift" is usually used for what kind of functions?
+Back: Sinusoidal functions.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917991-->
+END%%
+
+%%ANKI
+Basic
+What kind of transformation does a phase shift of a sinusoidal function refer to?
+Back: A horizontal translation.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917994-->
+END%%
+
+%%ANKI
+Basic
+What kind of transformation does a vertical shift of a sinusoidal function refer to?
+Back: A vertical translation.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578917997-->
+END%%
+
+%%ANKI
+Cloze
+A {phase shift} of a sinusoidal function is a {horizontal} translation.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578918001-->
+END%%
+
+%%ANKI
+Cloze
+A {vertical shift} of a sinusoidal function is a {vertical} translation.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578918005-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be a constant. What interval does $[0, 2\pi]$ map to in $\sin{(t - C)}$?
+Back: $[C, 2\pi + C]$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578918010-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be a constant. What interval does $[0, 2\pi]$ map to in $\sin{(t + C)}$?
+Back: $[-C, 2\pi - C]$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578918014-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be a constant. *Why* does interval $[0, 2\pi]$ map to $[C, 2\pi + C]$ in $\sin{(t - C)}$?
+Back: Because this interval is now mapped to $0 \leq t - C \leq 2\pi$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578918018-->
+END%%
+
+%%ANKI
+Basic
+In the following graph, which constant(s) affect the period of $y = \sin{t}$? $$A\sin{(B[t - C])} + D$$
+Back: $B$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578918022-->
+END%%
+
+%%ANKI
+Basic
+In the following graph, which constant(s) affect the amplitude of $y = \sin{t}$? $$A\sin{(B[t - C])} + D$$
+Back: $A$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578918026-->
+END%%
+
+%%ANKI
+Basic
+In the following graph, which constant(s) apply a vertical shift to $y = \sin{t}$? $$A\sin{(B[t - C])} + D$$
+Back: $D$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578918030-->
+END%%
+
+%%ANKI
+Basic
+In the following graph, which constant(s) apply a horizontal shift to $y = \sin{t}$? $$A\sin{(B[t - C])} + D$$
+Back: $C$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746578918034-->
 END%%
 
 ## Bibliography

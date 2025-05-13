@@ -303,7 +303,7 @@ END%%
 %%ANKI
 Basic
 `NEXT_LEXICO_ARRAY`: Which element will be the pivot of `[ 4 3 2 1 ]`?
-Back: N/A
+Back: N/A.
 Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
 <!--ID: 1709756677668-->
 END%%

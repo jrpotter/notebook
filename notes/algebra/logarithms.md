@@ -10,6 +10,8 @@ tags:
 
 In the equation $b^y = x$, the exponent $y$ is known as the **logarithm** of the number $x$ using a **base** $b$, denoted $y = \log_b{x}$. The **characteristic** refers to the integer part of the logarithm whereas the **mantissa** refers to the fractional part. The mantissa is always a positive number between $0$ and $1$.
 
+The base $b$ is restricted to a positive value $\neq 1$. That is, $0 < b < 1$ or $b > 1$.
+
 %%ANKI
 Basic
 Who is usually attributed the creation of logarithms?
@@ -284,6 +286,146 @@ Basic
 Back: Because $\log_{10}{x}$ evaluates to exponent $y$ such that $10^y = x$.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1746104748492-->
+END%%
+
+%%ANKI
+Basic
+How is the base-$10$ antilog usually denoted on calculators?
+Back: $10^x$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197020-->
+END%%
+
+%%ANKI
+Basic
+Consider $y = \log_b{x}$. What range of values can $b$ take on?
+Back: $0 < b < 1$ or $b > 1$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1746654262701-->
+END%%
+
+%%ANKI
+Basic
+Consider $y = \log_b{x}$. *Why* can't $b > 1$?
+Back: N/A. It can.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1746654262710-->
+END%%
+
+%%ANKI
+Basic
+Consider $y = \log_b{x}$. *Why* can't $b = 1$?
+Back: Because $1^y = x$ only holds true if $x = 1$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1746654262713-->
+END%%
+
+%%ANKI
+Basic
+Consider $y = \log_b{x}$. *Why* can't $b < 1$?
+Back: N/A. It can.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1746654262717-->
+END%%
+
+%%ANKI
+Basic
+Consider $y = \log_b{x}$. *Why* can't $b = 0$?
+Back: Because $0^y = x$ only holds when $x = 1 \land y = 0$ or $x = 0 \land y \neq 0$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1746654262720-->
+END%%
+
+%%ANKI
+Basic
+Consider $y = \log_b{x}$. *Why* can't $b < 0$?
+Back: Because a negative value raised to some power has undesirable properties.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1746654262723-->
+END%%
+
+%%ANKI
+Basic
+What is the so-called "Iff Antilog Rule"?
+Back: $m = n$ iff $b^m = b^n$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197023-->
+END%%
+
+%%ANKI
+Basic
+What is the so-called "Iff Log Rule"?
+Back: $m = n$ iff $\log_b{m} = \log_b{n}$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197025-->
+END%%
+
+## Product Rule
+
+Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x \cdot y)} = \log_b{x} + \log_b{y}$$
+
+%%ANKI
+Basic
+What does the product rule for logarithms state?
+Back: $\log_b{(x \cdot y)} = \log_b{x} + \log_b{y}$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197028-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{(x \cdot y)}$ written using $+$?
+Back: As $\log_b{x} + \log_b{y}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197031-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{x} \cdot \log_b{y}$ written using $+$?
+Back: N/A.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197033-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{x} + \log_b{y}$ written using $\cdot$?
+Back: As $\log_b{(x \cdot y)}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197036-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{(x + y)}$ written using $\cdot$?
+Back: N/A.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197039-->
+END%%
+
+%%ANKI
+Basic
+The product rule of logarithms is based on what property of exponents?
+Back: $b^m \cdot b^n = b^{m + n}$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197041-->
+END%%
+
+%%ANKI
+Basic
+Rewrite the following expression using $\log$ and $\mathop{\text{antilog}}$. $$4971.26 \cdot 0.2459$$
+Back: $\mathop{\text{antilog}}(\log{4971.26} + \log{0.2459})$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197044-->
+END%%
+
+%%ANKI
+Basic
+Rewrite the following expression using $\log$ and $\mathop{\text{antilog}}$. $$x \cdot y$$
+Back: $\mathop{\text{antilog}}(\log{x} + \log{y})$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197047-->
 END%%
 
 ## Bibliography

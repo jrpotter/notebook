@@ -359,7 +359,7 @@ END%%
 
 %%ANKI
 Basic
-In what way is the term ROM a misnomery?
+In what way is the term "ROM" a misnomer?
 Back: Some types of ROMs can be written to.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1743467764508-->

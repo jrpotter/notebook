@@ -92,8 +92,6 @@ With respect to character encodings:
 * A **code space** is the range of numerical values spanned by a coded character set.
 * A **code unit** is the minimum bit combination that can represent a character in a character encoding.
 
-A **character set** (or charset) is often used to describe either a coded character set
-
 %%ANKI
 Basic
 With respect to character encoding, what is a character?
@@ -124,14 +122,6 @@ How is the term "character set" typically abbreviated?
 Back: As "charset".
 Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
 <!--ID: 1743819899169-->
-END%%
-
-%%ANKI
-Basic
-A "character set" probably refers to one of what two concepts?
-Back: A coded character set or a character encoding.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
-<!--ID: 1743819899172-->
 END%%
 
 %%ANKI

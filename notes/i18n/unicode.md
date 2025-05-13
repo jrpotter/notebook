@@ -44,7 +44,7 @@ END%%
 %%ANKI
 Basic
 How many code points exist in a Unicode/UCS plane?
-Back: $65,536$ ($2^{16}$).
+Back: $2^{16}$.
 Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
 <!--ID: 1743888408959-->
 END%%
@@ -152,7 +152,7 @@ END%%
 %%ANKI
 Basic
 How large is UCS-2's code space?
-Back: $65,536$ ($2^{16}$).
+Back: $2^{16}$.
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743890674377-->
 END%%

@@ -552,6 +552,69 @@ Tags: algebra::polynomial
 <!--ID: 1714487050095-->
 END%%
 
+%%ANKI
+Basic
+Characteristic polynomial $x^2 + \alpha x + \beta$ corresponds to what recurrence relation?
+Back: $a_n + \alpha a_{n-1} + \beta a_{n-2} = 0$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+Tags: algebra::polynomial
+<!--ID: 1746712393416-->
+END%%
+
+%%ANKI
+Basic
+What is the characteristic polynomial of the Fibonacci sequence?
+Back: $x^2 - x - 1$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+Tags: algebra::polynomial
+<!--ID: 1746712393428-->
+END%%
+
+%%ANKI
+Basic
+What is the characteristic equation of the Fibonacci sequence?
+Back: $x^2 - x - 1 = 0$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+Tags: algebra::polynomial
+<!--ID: 1746712393433-->
+END%%
+
+%%ANKI
+Basic
+What are the initial conditions of the Fibonacci sequence?
+Back: $F_0 = 0$ and $F_1 = 1$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+Tags: algebra::polynomial
+<!--ID: 1746712393437-->
+END%%
+
+%%ANKI
+Basic
+What is the Fibonacci sequence's recurrence relation?
+Back: $F_n = F_{n-1} + F_{n-2}$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+Tags: algebra::polynomial
+<!--ID: 1746712393441-->
+END%%
+
+%%ANKI
+Basic
+What is the characteristic polynomial of the following recurrence relation? $$a_n = 2a_{n-1} + a_{n-2} - 3a_{n-3}$$
+Back: $x^3 - 2x^2 - x + 3$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+Tags: algebra::polynomial
+<!--ID: 1746712393445-->
+END%%
+
+%%ANKI
+Basic
+Given the following recurrence relation, how is its characteristic polynomial derived? $$a_n = \alpha a_{n-1} + \beta a_{n-2}$$
+Back: By guessing solution $r^n$ and deriving $$\begin{align*} 0 & = a_n - \alpha a_{n-1} - \beta a_{n-2} \\ & = r^n - \alpha r^{n-1} - \beta r^{n-2} \\ & = r^{n-2}(r^2 - \alpha r - \beta) \end{align*}$$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+Tags: algebra::polynomial
+<!--ID: 1746712393448-->
+END%%
+
 ## Bibliography
 
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
