@@ -193,7 +193,7 @@ END%%
 %%ANKI
 Basic
 Is $\{x \mid x \in x\}$ a set?
-Back: Yes.
+Back: Yes, the empty set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716074610694-->
 END%%

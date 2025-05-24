@@ -613,6 +613,135 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1746578918034-->
 END%%
 
+## Frequency
+
+The **frequency** of a sinusoidal function is the number of periods (or cycles) per unit time. That is, $$\text{frequency} = \frac{1}{\text{period}}$$
+
+%%ANKI
+Cloze
+The {frequency} of a sinusoidal function is the {number of periods per unit time}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747696423838-->
+END%%
+
+%%ANKI
+Basic
+How is the frequency of a sinusoidal function defined?
+Back: As the number of periods per unit time.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747792364320-->
+END%%
+
+%%ANKI
+Basic
+How is frequency most commonly measured?
+Back: The hertz.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747696423846-->
+END%%
+
+%%ANKI
+Basic
+How is one hertz defined?
+Back: As one cycle per second.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747696423848-->
+END%%
+
+%%ANKI
+Basic
+What is the inverse of the frequency of a sinusoidal function?
+Back: The period.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747696423851-->
+END%%
+
+%%ANKI
+Basic
+What is the inverse of the period of a sinusoidal function?
+Back: The frequency.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747696423853-->
+END%%
+
+%%ANKI
+Basic
+What is the equation used to define frequency of a sinusoidal function?
+Back: $$\text{frequency} = \frac{1}{\text{period}}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747696423856-->
+END%%
+
+%%ANKI
+Cloze
+Frequency is the {number of cycles} per {unit time}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747696423858-->
+END%%
+
+%%ANKI
+Cloze
+The period is the {amount of time} to complete {one cycle}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747696423861-->
+END%%
+
+%%ANKI
+Basic
+Suppose the period of a sinusoidal function is $5$ seconds. What is the frequency?
+Back: $1 / 5$ cycles/sec.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747696423864-->
+END%%
+
+%%ANKI
+Basic
+Suppose the frequency of a sinusoidal function is $2$ cycles/sec. What is the period?
+Back: $1 / 2$ seconds.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747696423866-->
+END%%
+
+%%ANKI
+Basic
+What units is the frequency of a sinusoidal function measured in?
+Back: Cycles per unit time.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747696423869-->
+END%%
+
+%%ANKI
+Basic
+Suppose your heart rate is $50$ BPM. What is the frequency of your heart rate (in terms of minutes)?
+Back: $50$ BPM.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747698071176-->
+END%%
+
+%%ANKI
+Basic
+Suppose your heart rate is 50 BPM. What is the period of your heart rate (in terms of minutes)?
+Back: $1 / 50$ minutes.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747698071188-->
+END%%
+
+%%ANKI
+Basic
+Suppose your heart rate is $50$ BPM. What is the frequency of your heart rate (in terms of seconds)?
+Back: $5 / 6$ beats per second.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747698071195-->
+END%%
+
+%%ANKI
+Basic
+Suppose your heart rate is $50$ BPM. What is the period of your heart rate (in terms of seconds)?
+Back: $6 / 5$ seconds.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1747698141423-->
+END%%
+
 ## Bibliography
 
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.

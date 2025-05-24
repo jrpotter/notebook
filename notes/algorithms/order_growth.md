@@ -646,7 +646,7 @@ END%%
 %%ANKI
 Basic
 What is the symmetric property of $O$-notation?
-Back: N/A
+Back: N/A.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709752223365-->
 END%%

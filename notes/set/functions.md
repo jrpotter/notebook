@@ -966,7 +966,10 @@ END%%
 
 ## Inverses
 
-Let $F$ be an arbitrary set. The **inverse** of $F$ is the set $$F^{-1} = \{\langle u, v \rangle \mid vFu\}$$
+Let $F$ be an arbitrary set. The **inverse** of $F$ is the set $$F^{-1} = \{\langle u, v \rangle \mid vFu\}.$$
+
+The inverse of a function, if one exists, can be found by exchanging the $x$ and $y$ variables in the corresponding equation.
+
 %%ANKI
 Basic
 What is the most specific mathematical object that describes an inverse?
@@ -1196,6 +1199,38 @@ Consider function $F \colon \varnothing \rightarrow B$. What is $F^{-1}$?
 Back: $\varnothing$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719681913530-->
+END%%
+
+%%ANKI
+Basic
+Let $y = 3x + 1$. What is the corresponding inverse function?
+Back: $x = 3y + 1$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150805-->
+END%%
+
+%%ANKI
+Basic
+Suppose $y = f(x)$ for some function $f$. Assuming it exists, how is the inverse function found?
+Back: By swapping $x$ and $y$ in the equation.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150814-->
+END%%
+
+%%ANKI
+Basic
+Suppose $y = f(x)$. Then $f$ and $f^{-1}$ are symmetric about what line?
+Back: $y = x$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150817-->
+END%%
+
+%%ANKI
+Basic
+*Why* is a function $f$ and its inverse $f^{-1}$ symmetric about the line $y = x$?
+Back: Because $f^{-1}$ is found by swapping $x$ and $y$ in $y = f(x)$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150819-->
 END%%
 
 ## Compositions
@@ -2298,3 +2333,4 @@ END%%
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 * “Kernel (Set Theory),” in _Wikipedia_, May 22, 2024, [https://en.wikipedia.org/w/index.php?title=Kernel_(set_theory)&oldid=1225189560](https://en.wikipedia.org/w/index.php?title=Kernel_(set_theory)&oldid=1225189560).
 * “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+* Umbarger, Dan. _Explaining Logarithms_, n.d.

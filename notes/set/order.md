@@ -234,7 +234,7 @@ END%%
 %%ANKI
 Basic
 Let $S$ be a subset of preorder $\langle P, \leq \rangle$. What is a lower bound of $S$?
-Back: A member of $P$ greater than or equal to all members of $S$.
+Back: A member of $P$ less than or equal to all members of $S$.
 Reference: “Upper and Lower Bounds.” In _Wikipedia_, March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds](https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds&oldid=1281896174).
 <!--ID: 1744075175501-->
 END%%

@@ -1506,6 +1506,22 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1745271260018-->
 END%%
 
+%%ANKI
+Basic
+How do we formally prove that $P$ holds true before execution of the following loop? $$\begin{array}{l} \{T\} \\ x, y \coloneqq a, b; \\ \{\mathop{inv} \,P \colon \text{the invariant} \} \\ \{\mathop{bound} \,t \colon \text{the bound function} \} \\ \begin{align*} \textbf{do } & B_1 \rightarrow S_1 \\ \textbf{ | } & B_2 \rightarrow S_2 \\ & \quad\cdots \\ \textbf{ | } & B_n \rightarrow S_n \\ \textbf{od } & \end{align*} \end{array}$$
+Back: By proving $T \Rightarrow wp(''x, y \coloneqq a, b'', P)$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1747861797171-->
+END%%
+
+%%ANKI
+Basic
+How do we formally prove that $P$ holds true before execution of the following loop? $$\begin{array}{l} \{T\} \\ Q_1 \\ Q_2 \\ \{\mathop{inv} \,P \colon \text{the invariant} \} \\ \{\mathop{bound} \,t \colon \text{the bound function} \} \\ \begin{align*} \textbf{do } & B_1 \rightarrow S_1 \\ \textbf{ | } & B_2 \rightarrow S_2 \\ & \quad\cdots \\ \textbf{ | } & B_n \rightarrow S_n \\ \textbf{od } & \end{align*} \end{array}$$
+Back: By proving $\{T\}\; Q_1; Q_2 \;\{ P\}$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1747861797178-->
+END%%
+
 ## Bibliography
 
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.

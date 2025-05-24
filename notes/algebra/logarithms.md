@@ -10,7 +10,7 @@ tags:
 
 In the equation $b^y = x$, the exponent $y$ is known as the **logarithm** of the number $x$ using a **base** $b$, denoted $y = \log_b{x}$. The **characteristic** refers to the integer part of the logarithm whereas the **mantissa** refers to the fractional part. The mantissa is always a positive number between $0$ and $1$.
 
-The base $b$ is restricted to a positive value $\neq 1$. That is, $0 < b < 1$ or $b > 1$.
+In real analysis, the base $b$ is restricted to a positive value $\neq 1$. That is, $0 < b < 1$ or $b > 1$.
 
 %%ANKI
 Basic
@@ -298,7 +298,7 @@ END%%
 
 %%ANKI
 Basic
-Consider $y = \log_b{x}$. What range of values can $b$ take on?
+Consider $y = \log_b{x}$. In real analysis, what range of values can $b$ take on?
 Back: $0 < b < 1$ or $b > 1$.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1746654262701-->
@@ -306,7 +306,7 @@ END%%
 
 %%ANKI
 Basic
-Consider $y = \log_b{x}$. *Why* can't $b > 1$?
+Consider $y = \log_b{x}$. In real analysis, *why* can't $b > 1$?
 Back: N/A. It can.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1746654262710-->
@@ -314,7 +314,7 @@ END%%
 
 %%ANKI
 Basic
-Consider $y = \log_b{x}$. *Why* can't $b = 1$?
+Consider $y = \log_b{x}$. In real analysis, *why* can't $b = 1$?
 Back: Because $1^y = x$ only holds true if $x = 1$.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1746654262713-->
@@ -322,7 +322,7 @@ END%%
 
 %%ANKI
 Basic
-Consider $y = \log_b{x}$. *Why* can't $b < 1$?
+Consider $y = \log_b{x}$. In real analysis, *why* can't $b < 1$?
 Back: N/A. It can.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1746654262717-->
@@ -330,7 +330,7 @@ END%%
 
 %%ANKI
 Basic
-Consider $y = \log_b{x}$. *Why* can't $b = 0$?
+Consider $y = \log_b{x}$. In real analysis, *why* can't $b = 0$?
 Back: Because $0^y = x$ only holds when $x = 1 \land y = 0$ or $x = 0 \land y \neq 0$.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1746654262720-->
@@ -338,7 +338,7 @@ END%%
 
 %%ANKI
 Basic
-Consider $y = \log_b{x}$. *Why* can't $b < 0$?
+Consider $y = \log_b{x}$. In real analysis, *why* can't $b < 0$?
 Back: Because a negative value raised to some power has undesirable properties.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1746654262723-->
@@ -426,6 +426,202 @@ Rewrite the following expression using $\log$ and $\mathop{\text{antilog}}$. $$x
 Back: $\mathop{\text{antilog}}(\log{x} + \log{y})$
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1747141197047-->
+END%%
+
+## Inverses
+
+Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\begin{align*} \log_b{b^x} & = x \\ b^{\log_b{x}} & = x \end{align*}$$
+
+%%ANKI
+Basic
+Suppose $\log_b{y} = c$ for some constant $c$. What value of $y$ satisfies the identity?
+Back: $y = b^c$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150822-->
+END%%
+
+%%ANKI
+Basic
+Suppose $b^y = c$ for some constant $c$. What value of $y$ satisfies the identity?
+Back: $y = \log_b{c}$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150824-->
+END%%
+
+%%ANKI
+Basic
+Let $y = 2^x$. What is this equation's domain?
+Back: All reals.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150827-->
+END%%
+
+%%ANKI
+Basic
+Let $y = 2^x$. What is this equation's range?
+Back: All positive reals.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150829-->
+END%%
+
+%%ANKI
+Basic
+Let $y = \log_2{x}$. What is this equation's domain?
+Back: All positive reals.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150832-->
+END%%
+
+%%ANKI
+Basic
+Let $y = \log_2{x}$. What is this equation's range?
+Back: All reals.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150834-->
+END%%
+
+%%ANKI
+Basic
+Let $y = 0.5^x$. What is this equation's domain?
+Back: All reals.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150837-->
+END%%
+
+%%ANKI
+Basic
+Let $y = 0.5^x$. What is this equation's range?
+Back: All positive reals.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150839-->
+END%%
+
+%%ANKI
+Basic
+Let $y = \log_{0.5}{x}$. What is this equation's domain?
+Back: All positive reals.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150842-->
+END%%
+
+%%ANKI
+Basic
+Let $y = \log_{0.5}{x}$. What is this equation's range?
+Back: All reals.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150845-->
+END%%
+
+%%ANKI
+Basic
+Let $b > 0$, $b \neq 1$. What is the $y$-intercept of $y = b^x$?
+Back: $\langle 0, 1 \rangle$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150848-->
+END%%
+
+%%ANKI
+Basic
+Let $b > 0$, $b \neq 1$. What is the $x$-intercept of $y = b^x$?
+Back: N/A. Does not exist.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150851-->
+END%%
+
+%%ANKI
+Basic
+Let $b > 0$, $b \neq 1$. What is the $y$-intercept of $y = \log_b{x}$?
+Back: N/A. Does not exist.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150854-->
+END%%
+
+%%ANKI
+Basic
+Let $b > 0$, $b \neq 1$. What is the $x$-intercept of $y = \log_b{x}$?
+Back: $\langle 1, 0 \rangle$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150859-->
+END%%
+
+%%ANKI
+Basic
+Suppose $b > 1$. What does the following limit evaluate to? $$\lim_{x \rightarrow +\infty} b^x$$
+Back: $+\infty$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150863-->
+END%%
+
+%%ANKI
+Basic
+Suppose $b > 1$. What does the following limit evaluate to? $$\lim_{x \rightarrow -\infty} b^x$$
+Back: $0$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150867-->
+END%%
+
+%%ANKI
+Basic
+Suppose $b > 1$. What does the following limit evaluate to? $$\lim_{x \rightarrow +\infty} \log_b{x}$$
+Back: $+\infty$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150872-->
+END%%
+
+%%ANKI
+Basic
+Suppose $b > 1$. What does the following limit evaluate to? $$\lim_{x \rightarrow -\infty} \log_b{x}$$
+Back: N/A. $\log_b{x}$ is undefined for negative values of $x$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150876-->
+END%%
+
+%%ANKI
+Basic
+Suppose $b > 1$. What does the following limit evaluate to? $$\lim_{x \rightarrow 0^+} \log_b{x}$$
+Back: $-\infty$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150882-->
+END%%
+
+%%ANKI
+Basic
+Suppose $0 < b < 1$. What does the following limit evaluate to? $$\lim_{x \rightarrow +\infty} b^x$$
+Back: $0$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150886-->
+END%%
+
+%%ANKI
+Basic
+Suppose $0 < b < 1$. What does the following limit evaluate to? $$\lim_{x \rightarrow -\infty} b^x$$
+Back: $+\infty$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150891-->
+END%%
+
+%%ANKI
+Basic
+Suppose $0 < b < 1$. What does the following limit evaluate to? $$\lim_{x \rightarrow +\infty} \log_b{x}$$
+Back: $-\infty$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150895-->
+END%%
+
+%%ANKI
+Basic
+Suppose $0 < b < 1$. What does the following limit evaluate to? $$\lim_{x \rightarrow -\infty} \log_b{x}$$
+Back: N/A. $\log_b{x}$ is undefined for negative values of $x$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150900-->
+END%%
+
+%%ANKI
+Basic
+Suppose $0 < b < 1$. What does the following limit evaluate to? $$\lim_{x \rightarrow 0^+} \log_b{x}$$
+Back: $+\infty$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747792150904-->
 END%%
 
 ## Bibliography

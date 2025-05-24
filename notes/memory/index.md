@@ -12,6 +12,54 @@ The **memory hierarchy** refers to the various storage devices used in a compute
 
 ![[memory-hierarchy.png]]
 
+%%ANKI
+Basic
+Typically speaking, what does L0 refer to in the memory hierarchy?
+Back: CPU registers.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1747861797199-->
+END%%
+
+%%ANKI
+Basic
+L1, L2, and L3 caches typically use what kind of RAM?
+Back: SRAM.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1747861797203-->
+END%%
+
+%%ANKI
+Basic
+Which of SRAM or DRAM memory devices sit higher on the memory hierarchy?
+Back: SRAM.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1747861797207-->
+END%%
+
+%%ANKI
+Basic
+How does capacity tend to change as you move to lower levels of the memory hierarchy?
+Back: Capacity increases.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1747861797211-->
+END%%
+
+%%ANKI
+Basic
+How does cost tend to change as you move to lower levels of the memory hierarchy?
+Back: Cost (per byte) decreases.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1747861797214-->
+END%%
+
+%%ANKI
+Basic
+How does speed tend to change as you move to lower levels of the memory hierarchy?
+Back: Speed (access time) decreases.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1747861797217-->
+END%%
+
 ## Storage Devices
 
 A storage device is called **volatile** if they lose their information when supply voltage is turned off. **Nonvolatile** memories retain their information even when powered off.
