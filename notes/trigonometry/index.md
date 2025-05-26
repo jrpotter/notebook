@@ -656,7 +656,7 @@ END%%
 
 %%ANKI
 Basic
-Let $t \in \mathbb{R}$. Assuming the following is defined, how is the following more compactly written? $$\frac{\sin{t}}{\cos{t}}$$
+Let $t \in \mathbb{R}$. Assuming the following is defined, how is the following more compactly written? $$\frac{\cos{t}}{\sin{t}}$$
 Back: $\cot{t}$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1745010811558-->

@@ -53,7 +53,7 @@ END%%
 Basic
 How is $\langle x, y \rangle$ most commonly defined?
 Back: As $\{\{x\}, \{x, y\}\}$.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1717678753120-->
 END%%
 

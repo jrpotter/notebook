@@ -57,7 +57,7 @@ END%%
 
 %%ANKI
 Basic
-What do the `:`s indicate in the following query?
+What is the significance of the colons (`:`) in the following query?
 ```sparql
 SELECT ?movie WHERE {:JamesDean :playedIn ?movie}
 ```

@@ -103,7 +103,7 @@ END%%
 Basic
 Why is the Cartesian product named the way it is?
 Back: It is named after René Descartes.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1717679397836-->
 END%%
 
@@ -279,7 +279,7 @@ END%%
 Basic
 Is the Cartesian product commutative?
 Back: No.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881694-->
 END%%
 
@@ -287,7 +287,7 @@ END%%
 Basic
 *Why* isn't the Cartesian product commutative?
 Back: Because the Cartesian product comprises of *ordered* pairs.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881698-->
 END%%
 
@@ -295,7 +295,7 @@ END%%
 Basic
 Suppose $A \neq \varnothing$ and $B \neq \varnothing$. When does $A \times B = B \times A$?
 Back: When $A = B$.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881702-->
 END%%
 
@@ -303,7 +303,7 @@ END%%
 Basic
 Suppose $A \neq \varnothing$ and $A \neq B$. When does $A \times B = B \times A$?
 Back: When $B = \varnothing$.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881705-->
 END%%
 
@@ -311,7 +311,7 @@ END%%
 Basic
 Under what three conditions is $A \times B = B \times A$?
 Back: $A = B$ or $A = \varnothing$ or $B = \varnothing$.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881709-->
 END%%
 
@@ -347,7 +347,7 @@ END%%
 Basic
 Is the Cartesian product associative?
 Back: No.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881712-->
 END%%
 
@@ -355,7 +355,7 @@ END%%
 Basic
 *Why* isn't the Cartesian product associative?
 Back: The association of parentheses defines the nesting of the ordered pairs.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881715-->
 END%%
 
@@ -502,7 +502,7 @@ For any sets $A$, $B$, and $C$, $$\begin{align*} A \times (B \cap C) & = (A \tim
 Basic
 Which of the algebra of sets operators does the Cartesian product distribute over?
 Back: $\cap$, $\cup$, and $-$
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881718-->
 END%%
 
@@ -510,14 +510,14 @@ END%%
 Basic
 What distributivity rule is satisfied by $\cap$ and $\times$?
 Back: $A \times (B \cap C) = (A \times B) \cap (A \times C)$
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881723-->
 END%%
 
 %%ANKI
 Cloze
 The Cartesian product satisfies distributivity: {$A \times (B \cap C)$} $=$ {$(A \times B) \cap (A \times C)$}.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881726-->
 END%%
 
@@ -525,14 +525,14 @@ END%%
 Basic
 What distributivity rule is satisfied by $\cup$ and $\times$?
 Back: $A \times (B \cup C) = (A \times B) \cup (A \times C)$
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881731-->
 END%%
 
 %%ANKI
 Cloze
 The Cartesian product satisfies distributivity: {$A \times (B \cup C)$} $=$ {$(A \times B) \cup (A \times C)$}.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881735-->
 END%%
 
@@ -540,14 +540,14 @@ END%%
 Basic
 What distributivity rule is satisfied by $-$ and $\times$?
 Back: $A \times (B - C) = (A \times B) - (A \times C)$
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881742-->
 END%%
 
 %%ANKI
 Cloze
 The Cartesian product satisfies distributivity: {$A \times (B - C)$} $=$ {$(A \times B) - (A \times C)$}.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881752-->
 END%%
 
@@ -798,7 +798,7 @@ In addition,
 Basic
 What monotonicity property does the Cartesian product satisfy?
 Back: $A \subseteq B \Rightarrow A \times C \subseteq B \times C$
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881786-->
 END%%
 
@@ -1195,4 +1195,5 @@ END%%
 
 ## Bibliography
 
+* “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

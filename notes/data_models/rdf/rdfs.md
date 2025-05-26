@@ -484,7 +484,7 @@ What `CONSTRUCT` query demonstrates how `rdfs:domain` is inferred "up the inheri
 Back:
 ```sparql
 CONSTRUCT { ?P rdfs:domain ?C. }
-    WHERE { ?P rdfs:domain ?D. ?D rdf:subClassof ?C. }
+    WHERE { ?P rdfs:domain ?D. ?D rdf:subClassOf ?C. }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1745503950988-->
@@ -496,7 +496,7 @@ What `CONSTRUCT` query demonstrates how `rdfs:range` is inferred "up the inherit
 Back:
 ```sparql
 CONSTRUCT { ?P rdfs:range ?C. }
-    WHERE { ?P rdfs:range ?D. ?D rdf:subClassof ?C. }
+    WHERE { ?P rdfs:range ?D. ?D rdf:subClassOf ?C. }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1745503950992-->

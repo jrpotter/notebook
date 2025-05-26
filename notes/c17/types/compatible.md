@@ -1378,7 +1378,7 @@ Consider the following. Is dereferencing `p` well-defined and why?
 int x = 42;
 const int *p = &x;
 ```
-Back: Yes. `const int` is nearly compatible with `int`.
+Back: Yes. `const int` is upward compatible with `int`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1739372724511-->
 END%%

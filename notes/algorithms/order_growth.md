@@ -509,7 +509,7 @@ END%%
 %%ANKI
 Basic
 Using typical identifiers, what is the upper bound of $cg(n)$ in $O(g(n))$?
-Back: N/A
+Back: N/A.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709053894078-->
 END%%
@@ -517,7 +517,7 @@ END%%
 %%ANKI
 Basic
 Using typical identifiers, what is the lower bound of $f(n)$ in $O(g(n))$?
-Back: $0$
+Back: $0$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709053894080-->
 END%%
@@ -525,7 +525,7 @@ END%%
 %%ANKI
 Basic
 Using typical identifiers, what is the upper bound of $f(n)$ in $O(g(n))$?
-Back: $cg(n)$
+Back: $cg(n)$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709750359817-->
 END%%
@@ -590,7 +590,7 @@ END%%
 %%ANKI
 Basic
 In set-theoretic notation, what does it mean for $\Theta$-notation to be stronger than $O$-notation?
-Back: $\Theta(g(n)) \subseteq O(g(n))$
+Back: $\Theta(g(n)) \subseteq O(g(n))$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709053894101-->
 END%%
@@ -598,7 +598,7 @@ END%%
 %%ANKI
 Basic
 What notation corresponds to worst-case running times?
-Back: $O$-notation
+Back: $O$-notation.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709053894103-->
 END%%
@@ -646,7 +646,7 @@ END%%
 %%ANKI
 Basic
 What is the symmetric property of $O$-notation?
-Back: N/A.
+Back: N/A. This has a *transpose* symmetric property.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709752223365-->
 END%%
@@ -1035,7 +1035,7 @@ END%%
 %%ANKI
 Basic
 What is the symmetric property of $\Omega$-notation?
-Back: N/A.
+Back: N/A. This has a *transpose* symmetric property.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1709752223486-->
 END%%

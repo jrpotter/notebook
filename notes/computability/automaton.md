@@ -1650,7 +1650,7 @@ Basic
 How is $\delta'$ likely defined given the following?
 * $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
 * $N = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is an NFA recognizing $A^R$.
-Back: $\delta' = \delta^{-1} \cup \{ \langle q_0', \epsilon, F \rangle \}$
+Back: $\delta' = \delta^{-1} \cup \{ \langle q_0', \epsilon, f \rangle \mid f \in F \}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745638450122-->
 END%%

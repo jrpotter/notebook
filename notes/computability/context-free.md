@@ -478,7 +478,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to context-free grammars, what is a unit ule?
+With respect to context-free grammars, what is a unit rule?
 Back: Rules of the form $A \rightarrow B$ for some variables $A$ and $B$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1748052528111-->
@@ -495,9 +495,11 @@ END%%
 %%ANKI
 Cloze
 Every rule of the CNF of a CFG is:
+
 1. {$S \rightarrow \epsilon$}
 2. {$A \rightarrow BC$}
 3. {$A \rightarrow a$}
+
 where $a$ is any terminal, and $A$, $B$, and $C$ are variables distinct from start variable $S$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1748052528118-->
@@ -562,7 +564,7 @@ END%%
 %%ANKI
 Basic
 Why isn't the following CFG in CNF? $$\begin{align*} A & \rightarrow BC \mid \epsilon \\ B & \rightarrow b \\ C & \rightarrow c \end{align*}$$
-Back: N/A.
+Back: N/A. We assume $A$ is the start variable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1748052778269-->
 END%%
@@ -621,49 +623,56 @@ END%%
 %%ANKI
 Basic
 What CFG is produced after introducing start variable $S_0$ a la CNF? $$\begin{align*} S & \rightarrow ASA \mid aB \\ A & \rightarrow B \mid S \\ B & \rightarrow b \mid \epsilon \end{align*}$$
-Back: $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \\ A & \rightarrow B \mid S \\ B & \rightarrow b \mid \epsilon \end{align*}$$Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+Back: $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \\ A & \rightarrow B \mid S \\ B & \rightarrow b \mid \epsilon \end{align*}$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1748052528152-->
 END%%
 
 %%ANKI
 Basic
 What CFG is produced after eliminating $\epsilon$-rule $B \rightarrow \epsilon$ a la CNF? $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \\ A & \rightarrow B \mid S \\ B & \rightarrow b \mid \epsilon \end{align*}$$
-Back: $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \\ A & \rightarrow B \mid S \mid \epsilon \\ B & \rightarrow b \end{align*}$$Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+Back: $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \\ A & \rightarrow B \mid S \mid \epsilon \\ B & \rightarrow b \end{align*}$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1748052528155-->
 END%%
 
 %%ANKI
 Basic
 What CFG is produced after eliminating $\epsilon$-rule $A \rightarrow \epsilon$ a la CNF? $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \\ A & \rightarrow B \mid S \mid \epsilon \\ B & \rightarrow b \end{align*}$$
-Back: $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \mid S \\ A & \rightarrow B \mid S \\ B & \rightarrow b \end{align*}$$Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+Back: $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \mid S \\ A & \rightarrow B \mid S \\ B & \rightarrow b \end{align*}$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1748052528158-->
 END%%
 
 %%ANKI
 Basic
 What CFG is produced after eliminating unit rule $S \rightarrow S$ a la CNF? $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \mid S \\ A & \rightarrow B \mid S \\ B & \rightarrow b \end{align*}$$
-Back: $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \\ A & \rightarrow B \mid S \\ B & \rightarrow b \end{align*}$$Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+Back: $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \\ A & \rightarrow B \mid S \\ B & \rightarrow b \end{align*}$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1748052528161-->
 END%%
 
 %%ANKI
 Basic
 What CFG is produced after eliminating unit rule $S_0 \rightarrow S$ a la CNF? $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \\ A & \rightarrow B \mid S \\ B & \rightarrow b \end{align*}$$
-Back: $$\begin{align*} S_0 & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \\ A & \rightarrow B \mid S \\ B & \rightarrow b \end{align*}$$Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+Back: $$\begin{align*} S_0 & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \\ A & \rightarrow B \mid S \\ B & \rightarrow b \end{align*}$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1748052528164-->
 END%%
 
 %%ANKI
 Basic
 What CFG is produced after eliminating unit rule $A \rightarrow B$ a la CNF? $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \mid S \\ A & \rightarrow B \mid S \\ B & \rightarrow b \end{align*}$$
-Back: $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \\ A & \rightarrow S \mid b \\ B & \rightarrow b \end{align*}$$Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+Back: $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \\ A & \rightarrow S \mid b \\ B & \rightarrow b \end{align*}$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1748052528168-->
 END%%
 
 %%ANKI
 Basic
 What CFG is produced after eliminating unit rule $A \rightarrow S$ a la CNF? $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \\ A & \rightarrow S \mid b \\ B & \rightarrow b \end{align*}$$
-Back: $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \\ A & \rightarrow b \mid ASA \mid aB \mid a \mid SA \mid AS \\ B & \rightarrow b \end{align*}$$Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+Back: $$\begin{align*} S_0 & \rightarrow S \\ S & \rightarrow ASA \mid aB \mid a \mid SA \mid AS \\ A & \rightarrow b \mid ASA \mid aB \mid a \mid SA \mid AS \\ B & \rightarrow b \end{align*}$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1748052528171-->
 END%%
 

@@ -108,7 +108,7 @@ END%%
 
 %%ANKI
 Basic
-What is the operand value of form $\textdollar Imm$?
+Given memory $M$ and registers $R$, what is the operand value of form $\textdollar Imm$?
 Back: $Imm$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889909-->
@@ -116,7 +116,7 @@ END%%
 
 %%ANKI
 Basic
-What is the operand value of form $r_a$?
+Given memory $M$ and registers $R$, what is the operand value of form $r_a$?
 Back: $R[r_a]$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889912-->
@@ -124,7 +124,7 @@ END%%
 
 %%ANKI
 Basic
-What is the operand value of form $Imm$?
+Given memory $M$ and registers $R$, what is the operand value of form $Imm$?
 Back: $M[Imm]$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889916-->
@@ -132,7 +132,7 @@ END%%
 
 %%ANKI
 Basic
-What is the operand value of form $(r_a)$?
+Given memory $M$ and registers $R$, what is the operand value of form $(r_a)$?
 Back: $M[R[r_a]]$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889920-->
@@ -140,7 +140,7 @@ END%%
 
 %%ANKI
 Basic
-What is the operand value of form $Imm(r_b)$?
+Given memory $M$ and registers $R$, what is the operand value of form $Imm(r_b)$?
 Back: $M[Imm + R[r_b]]$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889923-->
@@ -148,7 +148,7 @@ END%%
 
 %%ANKI
 Basic
-What is the operand value of form $(r_b, r_i)$?
+Given memory $M$ and registers $R$, what is the operand value of form $(r_b, r_i)$?
 Back: $M[R[r_b] + R[r_i]]$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889927-->
@@ -156,7 +156,7 @@ END%%
 
 %%ANKI
 Basic
-What is the operand value of form $Imm(r_b, r_i)$?
+Given memory $M$ and registers $R$, what is the operand value of form $Imm(r_b, r_i)$?
 Back: $M[Imm + R[r_b] + R[r_i]]$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889930-->
@@ -164,7 +164,7 @@ END%%
 
 %%ANKI
 Basic
-What is the operand value of form $(,r_i,s)$?
+Given memory $M$ and registers $R$, what is the operand value of form $(,r_i,s)$?
 Back: $M[R[r_i] \cdot s]$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889933-->
@@ -172,7 +172,7 @@ END%%
 
 %%ANKI
 Basic
-What is the operand value of form $Imm(,r_i,s)$?
+Given memory $M$ and registers $R$, what is the operand value of form $Imm(,r_i,s)$?
 Back: $M[Imm + R[r_i] \cdot s]$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889937-->
@@ -180,7 +180,7 @@ END%%
 
 %%ANKI
 Basic
-What is the operand value of form $(r_b,r_i,s)$?
+Given memory $M$ and registers $R$, what is the operand value of form $(r_b,r_i,s)$?
 Back: $M[R[r_b] + R[r_i] \cdot s]$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889941-->
@@ -188,7 +188,7 @@ END%%
 
 %%ANKI
 Basic
-What is the operand value of form $Imm(r_b,r_i,s)$?
+Given memory $M$ and registers $R$, what is the operand value of form $Imm(r_b,r_i,s)$?
 Back: $M[Imm + R[r_b] + R[r_i] \cdot s]$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713212889945-->

@@ -2137,6 +2137,86 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1746495360071-->
 END%%
 
+%%ANKI
+Basic
+Let $A$ and $B$ be countable sets. Is $A \times B$ countable?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748146342033-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be countable sets. How do we visualize countability of $A \times B$?
+Back: By enumerating the following in a diagonal path: $$\begin{matrix} \langle a_1, b_1 \rangle, \langle a_1, b_2 \rangle, \langle a_1, b_3 \rangle, \ldots \\ \langle a_2, b_1 \rangle, \langle a_2, b_2 \rangle, \langle a_2, b_3 \rangle, \ldots \\ \langle a_3, b_1 \rangle, \langle a_3, b_2 \rangle, \langle a_3, b_3 \rangle, \ldots \\ \vdots \end{matrix}$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748146342037-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. Is $n$-ary Cartesian power $A^n$ countable?
+Back: Iff $A$ is countable.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342041-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a countable set and $n \in \omega$. Is $n$-ary Cartesian power $A^n$ countable?
+Back: Yes.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342045-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. What Cartesian product is ${^n}A$ equinumerous to?
+Back: $A^n = A \times A \times \cdots \times A$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342049-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. How do we show ${^n}A \preceq A^n$ (the $n$-ary Cartesian power)?
+Back: Define injection $f \colon {^n}A \rightarrow A^n$ as $$f(g) = \langle g(0), g(1), \ldots, g(n - 1) \rangle.$$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342053-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. How do we show the $n$-ary Cartesian power $A^n \preceq {^n}A$?
+Back: Define injection $f \colon A^n \rightarrow {^n}A$ as $$f(\langle a_1, \ldots, a_n \rangle) = \{ \langle 0, a_1 \rangle, \langle 1, a_2 \rangle, \ldots, \langle n - 1, a_n \rangle \}.$$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342057-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. Is ${^n}A$ countable?
+Back: Iff $A$ is countable.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342061-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. How is $0$-ary Cartesian power $A^0$ usually defined?
+Back: As $\{\varnothing\}$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342064-->
+END%%
+
+%%ANKI
+Basic
+What motivation leads to defining $0$-ary Cartesian power $A^0 = \{ \varnothing \}$?
+Back: To ensure $A^0$ is isomorphic to ${^0}A = \{\varnothing\}$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342068-->
+END%%
+
 ### Union
 
 A countable union of countable sets is countable.
@@ -2211,6 +2291,13 @@ END%%
 
 %%ANKI
 Cloze
+The set of all {sequences} of set $A$ of length {$n \in \omega$} is denoted as {${^n}A$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748146342071-->
+END%%
+
+%%ANKI
+Cloze
 Let $A$ be a set. Function $f \colon n \rightarrow A$ is called a sequence {in $A$}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1746501312156-->
@@ -2234,8 +2321,8 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be a set. $\text{Sq}(A)$ is the union of what sets?
-Back: $\text{Sq}(A) = {^0}A \cup {^1}A \cup {^2}A \cup \cdots$
+Let $A$ be a set. How is $\text{Sq}(A)$ defined using $\bigcup$?
+Back: $\text{Sq}(A) = \bigcup \,\{ {^n}A \mid n \in \omega \}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1746501312164-->
 END%%
