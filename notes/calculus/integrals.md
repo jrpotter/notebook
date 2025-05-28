@@ -494,6 +494,22 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1734814463673-->
 END%%
 
+%%ANKI
+Basic
+Let $f$ be even and integrable on $[0, b]$. What does the following integral evaluate to? $$\int_{-b}^b f(x) \,dx$$
+Back: $2 \int_0^b f(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1748462635288-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be odd and integrable on $[0, b]$. What does the following integral evaluate to? $$\int_{-b}^b f(x) \,dx$$
+Back: $0$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1748462635294-->
+END%%
+
 ### Vertical Scaling
 
 Let $f$ be integrable over $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c\int_a^b f(x) \,dx.$$

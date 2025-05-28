@@ -10,10 +10,6 @@ tags:
 
 A [[functions|function]] $f$ is **periodic** with **period** $p$ if $f(t + p) = f(t)$ for all $t$ in the domain of $f$ and $p$ is the smallest positive number that has this property.
 
-A function $f$ is said to be **odd** if $-f(t) = f(-t)$ for all $t$ in $f$'s domain.
-
-A function $f$ is said to be **even** if $f(t) = f(-t)$ for all $t$ in $f$'s domain.
-
 %%ANKI
 Basic
 What does it mean for a function to be periodic?
@@ -36,78 +32,6 @@ What are the two most commonly referenced periodic functions?
 Back: $\sin$ and $\cos$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1745979190598-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for a function $f$ to be odd?
-Back: $-f(x) = f(-x)$ for all $x \in \mathop{\text{dom}} f$.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1746023817962-->
-END%%
-
-%%ANKI
-Basic
-An odd function exhibits what kind of symmetric?
-Back: Symmetry about the origin.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1746023817967-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for a function $f$ to be even?
-Back: $f(x) = f(-x)$ for all $x \in \mathop{\text{dom}} f$.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1746023817969-->
-END%%
-
-%%ANKI
-Basic
-An even function exhibits what kind of symmetric?
-Back: Symmetry about the $y$-axis.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1746023817971-->
-END%%
-
-%%ANKI
-Basic
-If $f$ is even, $f(-x)$ equals what?
-Back: $f(x)$
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1746023817974-->
-END%%
-
-%%ANKI
-Basic
-If $f$ is odd, $f(-x)$ equals what?
-Back: $-f(-x)$
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1746023817976-->
-END%%
-
-%%ANKI
-Basic
-With respect to functions, how were the terms "even" and "odd" likely derived?
-Back: $f(x) = x^n$ exhibits even or odd properties when $n$ is even or odd respectively.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1746024124733-->
-END%%
-
-%%ANKI
-Basic
-When is $f(x) = x^n$ an even function?
-Back: When $n$ is an even integer.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1746024124740-->
-END%%
-
-%%ANKI
-Basic
-When is $f(x) = x^n$ an odd function?
-Back: When $n$ is an odd integer.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1746024124742-->
 END%%
 
 ## Sinusoidal Functions
@@ -611,6 +535,38 @@ In the following graph, which constant(s) apply a horizontal shift to $y = \sin{
 Back: $C$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1746578918034-->
+END%%
+
+%%ANKI
+Basic
+The maximum of $y = \sin{x}$ is how far along one period?
+Back: $1 / 4$ of the period.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748394942676-->
+END%%
+
+%%ANKI
+Basic
+The minimum of $y = \sin{x}$ is how far along one period?
+Back: $3 / 4$ of the period.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748394942684-->
+END%%
+
+%%ANKI
+Basic
+What is the period of the following sinusoid? $$2\sin{\left( 3t + \frac{\pi}{2} \right)}$$
+Back: $2 \pi / 3$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748394942686-->
+END%%
+
+%%ANKI
+Basic
+What is the phase shift of the following sinusoid? $$2\sin{\left( 3t + \frac{\pi}{2} \right)}$$
+Back: $- \pi / 6$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748394942689-->
 END%%
 
 ## Frequency

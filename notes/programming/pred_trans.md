@@ -1419,7 +1419,7 @@ Consider loop $\text{DO}$. Suppose a {predicate} $P$ satisfies
 
 1. {$P \land B_i \Rightarrow wp(S_i, P)$} for all $1 \leq i \leq n$.
 
-Suppose further that an {integer function} $t$ satisfies the following, where $t1$ is a {fresh identifier}:
+Suppose further that a {bounds function} $t$ satisfies the following, where $t1$ is a {fresh identifier}:
 
 2. {$P \land \text{BB} \Rightarrow (t > 0)$},
 3. {$P \land B_i \Rightarrow wp(''t1 \coloneqq t; S_i'', t < t1)$}, for $1 \leq i \leq n$.

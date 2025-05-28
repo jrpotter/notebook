@@ -260,6 +260,80 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1735074143690-->
 END%%
 
+A function $f$ is said to be **odd** if $-f(x) = f(-x)$ for all $x$ in $f$'s domain. Likewise, $f$ is said to be **even** if $f(x) = f(-x)$ for all $x$ in $f$'s domain.
+
+%%ANKI
+Basic
+What does it mean for a function $f$ to be odd?
+Back: $-f(x) = f(-x)$ for all $x \in \mathop{\text{dom}} f$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746023817962-->
+END%%
+
+%%ANKI
+Basic
+An odd function exhibits what kind of symmetric?
+Back: Symmetry about the origin.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746023817967-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a function $f$ to be even?
+Back: $f(x) = f(-x)$ for all $x \in \mathop{\text{dom}} f$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746023817969-->
+END%%
+
+%%ANKI
+Basic
+An even function exhibits what kind of symmetric?
+Back: Symmetry about the $y$-axis.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746023817971-->
+END%%
+
+%%ANKI
+Basic
+If $f$ is even, $f(-x)$ equals what?
+Back: $f(x)$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746023817974-->
+END%%
+
+%%ANKI
+Basic
+If $f$ is odd, $f(-x)$ equals what?
+Back: $-f(-x)$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746023817976-->
+END%%
+
+%%ANKI
+Basic
+With respect to functions, how were the terms "even" and "odd" likely derived?
+Back: $f(x) = x^n$ exhibits even or odd properties when $n$ is even or odd respectively.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746024124733-->
+END%%
+
+%%ANKI
+Basic
+When is $f(x) = x^n$ an even function?
+Back: When $n$ is an even integer.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746024124740-->
+END%%
+
+%%ANKI
+Basic
+When is $f(x) = x^n$ an odd function?
+Back: When $n$ is an odd integer.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746024124742-->
+END%%
+
 ## Monotonicity
 
 A function $f$ is said to be **increasing** on a set $S$ if $f(x) \leq f(y)$ for every pair of points $x$ and $y$ in $S$ with $x < y$. If the strict inequality $f(x) < f(y)$ holds for all $x < y$ in $S$, the function is said to be **strictly increasing** on $S$.
@@ -2333,4 +2407,5 @@ END%%
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 * “Kernel (Set Theory),” in _Wikipedia_, May 22, 2024, [https://en.wikipedia.org/w/index.php?title=Kernel_(set_theory)&oldid=1225189560](https://en.wikipedia.org/w/index.php?title=Kernel_(set_theory)&oldid=1225189560).
 * “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+* Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 * Umbarger, Dan. _Explaining Logarithms_, n.d.

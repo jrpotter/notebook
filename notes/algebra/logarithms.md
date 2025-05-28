@@ -339,9 +339,25 @@ END%%
 %%ANKI
 Basic
 Consider $y = \log_b{x}$. In real analysis, *why* can't $b < 0$?
-Back: Because a negative value raised to some power has undesirable properties.
+Back: Because such a logarithm is complex, not real.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1746654262723-->
+END%%
+
+%%ANKI
+Basic
+In real analysis, what values for $b$ is the logarithm function $y = \log_b{x}$ usually restricted to?
+Back: $b > 0$ and $b \neq 1$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1748459668978-->
+END%%
+
+%%ANKI
+Basic
+In real analysis, what values for $b$ is the exponential function $y = b^x$ usually restricted to?
+Back: $b > 0$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1748459668981-->
 END%%
 
 %%ANKI

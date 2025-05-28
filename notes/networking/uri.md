@@ -1,9 +1,9 @@
 ---
 title: Uniform Resource Identifiers
 TARGET DECK: Obsidian::STEM
-FILE TAGS: network::uri
+FILE TAGS: networking::uri
 tags:
-  - network
+  - networking
   - uri
 ---
 

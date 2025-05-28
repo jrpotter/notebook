@@ -249,6 +249,69 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1747172744373-->
 END%%
 
+%%ANKI
+Basic
+What is the cardinality of $\mathbb{Z}[x]$?
+Back: $\aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748393420189-->
+END%%
+
+%%ANKI
+Basic
+Which of the algebraic and/or transcendental numbers is countable?
+Back: The algebraic numbers.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748393420191-->
+END%%
+
+%%ANKI
+Basic
+How is injection $f$, used to prove $\mathbb{Z}[x] \preceq \text{Sq}(\omega)$, most naturally defined?
+Back: Injection $f \colon \mathbb{Z}[x] \rightarrow \text{Sq}(w)$ given by $$f(a_0 + \cdots + a_nx^n) = \{ \langle 0, a_0 \rangle, \ldots, \langle n, a_n \rangle \}.$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748393420194-->
+END%%
+
+%%ANKI
+Basic
+The algebraic numbers is a $(\text{i})$ countable union of $(\text{ii})$ countable sets. What does $(\text{i})$ typically refer to?
+Back: $\mathbb{Z}[x]$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748393420197-->
+END%%
+
+%%ANKI
+Basic
+The algebraic numbers is a $(\text{i})$ countable union of $(\text{ii})$ countable sets. What does $(\text{ii})$ typically refer to?
+Back: The roots of some nonzero $p \in \mathbb{Z}[x]$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748393420199-->
+END%%
+
+%%ANKI
+Basic
+What does the union of the algebraic and transcendental numbers equal?
+Back: $\mathbb{R}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748393420202-->
+END%%
+
+%%ANKI
+Basic
+What contradiction is raised if we assume the transcendental numbers are countable?
+Back: $\mathbb{R}$ is countable.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748393420205-->
+END%%
+
+%%ANKI
+Cloze
+The {1:algebraic} numbers is {2:countable} whereas the {2:transcendental} numbers is {1:uncountable}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748393420208-->
+END%%
+
 ## Bibliography
 
 * Fraleigh, John B. _A First Course in Abstract Algebra_. Seventh edition, Pearson new international edition. Harlow: Pearson, 2014.

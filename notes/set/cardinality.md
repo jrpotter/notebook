@@ -2391,6 +2391,17 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1746501312187-->
 END%%
 
+%%ANKI
+Basic
+If being pedantic, why is the following incorrect?
+
+> If $a_1, a_2, \ldots, a_n \in A$, then $\langle a_1, a_2, \ldots, a_n \rangle \in \text{Sq}(A)$.
+
+Back: Technically, the members of $\text{Sq}(A)$ are functions, not an ($n$-ary) tuple.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748393420181-->
+END%%
+
 ## Hilbert's Hotel
 
 Consider a hypothetical hotel with rooms numbered $1$, $2$, $3$, and so on with no upper limit. That is, there is a countably infinite number of rooms in this hotel. Furthermore, it's assumed every room is occupied.
