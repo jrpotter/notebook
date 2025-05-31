@@ -45,7 +45,7 @@ END%%
 
 %%ANKI
 Cloze
-{Protocols} belong to {protocol suites} which are designed by {reference models}.
+{Protocols} belong to {protocol suites} which in turn are designed by {reference models}.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1748374204855-->
 END%%
@@ -136,10 +136,9 @@ Reference: “Multiplexing.” In _Wikipedia_, May 24, 2025. [https://en.wikiped
 <!--ID: 1748377124479-->
 END%%
 
-
 ## Telecommunications
 
-A **telecommunications network** is a group of nodes interconnected by **telecommunications links** used to exchange messages between the nodes. A telecommunication link is any communication channel that connects two or more devices for the purpose of data transmission. Messages/signals are transmitted using the following techniques:
+A **telecommunications network** is a group of nodes interconnected by **telecommunications links** used to exchange messages between the nodes. A telecommunication link is any communication channel that connects two or more devices for the purpose of data transmission.
 
 %%ANKI
 Basic
@@ -204,6 +203,114 @@ Reference: “Telecommunications Network.” In _Wikipedia_, May 24, 2025. [http
 <!--ID: 1748376567828-->
 END%%
 
+A **connection-oriented** network is one in which "per-flow" **state** is established prior to the exchange of data. This is done using a signaling protocol that supports connection establishment, clearing, and status information.
+
+In a connection-oriented packet network, each packet would contain an index into a state table held on each switch. Such a table would contain information on the next switch along the path for the packet.
+
+%%ANKI
+Basic
+What is a connection-oriented network?
+Back: One in which a connection must be established between two nodes before data can be communicated.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487037238-->
+END%%
+
+%%ANKI
+Basic
+Is a connection-oriented network built on circuits or packets?
+Back: Both are possible.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487037247-->
+END%%
+
+%%ANKI
+Basic
+In a connection-oriented packet network, what routing information is stored in a packet?
+Back: An index into a switch's state table .
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487037249-->
+END%%
+
+%%ANKI
+Basic
+In a connection-oriented packet network, what routing information is stored in a switch?
+Back: A state table describing which switch a packet should be routed to.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487037251-->
+END%%
+
+In constrast, a **connectionless** network uses **datagrams**, a special type of packet in which all the identifying information for the source and final destination resides inside the packet itself.
+
+%%ANKI
+Cloze
+A {connection-oriented} network contrasts a {connectionless} network.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487037254-->
+END%%
+
+%%ANKI
+Basic
+What is a datagram?
+Back: A packet containing all identifying information for its source and final destination.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487037256-->
+END%%
+
+%%ANKI
+Basic
+Which of connection-oriented or connectionless networks are datagrams associated with?
+Back: Connectionless.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487037259-->
+END%%
+
+%%ANKI
+Basic
+Why are packets found in a connectionless network larger than that of connection-oriented networks?
+Back: Because the packets contain source/destination information.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487037261-->
+END%%
+
+%%ANKI
+Basic
+Is a connectionless network built on circuits or packets?
+Back: Packets.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487037263-->
+END%%
+
+%%ANKI
+Basic
+In a connectionless network, what routing information is stored in a packet?
+Back: At least information about the packet's source and final destination.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487037266-->
+END%%
+
+%%ANKI
+Basic
+In a connectionless packet network, what routing information is stored in a switch?
+Back: N/A. No information is necessary.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487037268-->
+END%%
+
+%%ANKI
+Cloze
+Connection-oriented network packets are {smaller} than those of connectionless networks.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487037271-->
+END%%
+
+%%ANKI
+Basic
+Which of packets or datagrams is the more general term?
+Back: Packets.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487410062-->
+END%%
+
 ### Circuit Switching
 
 **Circuit switching** is a method of implementing a telecommunications network in which two nodes establish a circuit through the network before the nodes may communicate.
@@ -256,6 +363,14 @@ Reference: “Message Switching.” In _Wikipedia_, January 17, 2025. [https://e
 <!--ID: 1748376567857-->
 END%%
 
+%%ANKI
+Basic
+Is circuit switching considered connection-oriented or connectionless?
+Back: Connection-oriented.
+Reference: “Virtual Circuit.” In _Wikipedia_, September 16, 2024. [https://en.wikipedia.org/w/index.php?title=Virtual_circuit](https://en.wikipedia.org/w/index.php?title=Virtual_circuit&oldid=1245939640).
+<!--ID: 1748487037274-->
+END%%
+
 ### Message Switching
 
 **Message switching** is a method of implementing a telecommunications network in which messages are routed to a destination, in their entirety, one hop at a time.
@@ -286,6 +401,8 @@ END%%
 ### Packet Switching
 
 **Packet switching** is a method of implementing a telecommunications network in which data is broken into short messages (i.e. **packets**), that are transmitted over a digital network.
+
+**Virtual circuits** are used to transport data between two nodes over a packet switching network once a connection is established between them.
 
 %%ANKI
 Basic
@@ -327,6 +444,60 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1748377124483-->
 END%%
 
+%%ANKI
+Basic
+Is packet switching considered connection-oriented or connectionless?
+Back: Both are possible.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487037276-->
+END%%
+
+%%ANKI
+Basic
+What is a virtual circuit?
+Back: A means of transporting data between two nodes on a packet switching network once a connection is established between them.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487410071-->
+END%%
+
+%%ANKI
+Basic
+Which of circuit switching or packet switching are virtual circuits built on top of?
+Back: Packet switching.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487410074-->
+END%%
+
+%%ANKI
+Basic
+Are virtual circuits considered connection-oriented or connectionless?
+Back: Connection-oriented.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487410076-->
+END%%
+
+%%ANKI
+Basic
+Are datagrams considered connection-oriented or connectionless?
+Back: Connectionless.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487410079-->
+END%%
+
+%%ANKI
+Cloze
+{1:Virtual circuits} are to {2:connection-oriented} whereas {2:datagrams} are to {1:connectionless}.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487410082-->
+END%%
+
+%%ANKI
+Cloze
+With respect to routing information, {1:datagrams} are to {2:packets} whereas {2:virtual circuits} are to {1:packet switches}.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748487410085-->
+END%%
+
 ## Bibliography
 
 * “Circuit Switching.” In _Wikipedia_, May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).
@@ -335,3 +506,4 @@ END%%
 * “Multiplexing.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1292011292).
 * “Packet Switching.” In _Wikipedia_, May 22, 2025. [https://en.wikipedia.org/w/index.php?title=Packet_switching](https://en.wikipedia.org/w/index.php?title=Packet_switching&oldid=1291717331).
 * “Telecommunications Network.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
+* “Virtual Circuit.” In _Wikipedia_, September 16, 2024. [https://en.wikipedia.org/w/index.php?title=Virtual_circuit](https://en.wikipedia.org/w/index.php?title=Virtual_circuit&oldid=1245939640).

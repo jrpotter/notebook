@@ -125,7 +125,7 @@ END%%
 %%ANKI
 Basic
 Given the following, what does the mantissa evaluate to? $$\log_{10}(120) = 2.07918$$
-Back: $0.7918$
+Back: $0.07918$
 Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
 <!--ID: 1746064353216-->
 END%%

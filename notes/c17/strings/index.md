@@ -199,17 +199,6 @@ END%%
 
 %%ANKI
 Basic
-What is the function prototype of `memcpy`?
-Back:
-```c
-void* memcpy(void* restrict s1, const void* restrict s2, size_t n);
-```
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837987-->
-END%%
-
-%%ANKI
-Basic
 What does the `memcpy` function do?
 Back: Copies a specified number of bytes from one object to another.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -278,17 +267,6 @@ Which standard header library defines `memcpy`?
 Back: `<string.h>`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1732843837998-->
-END%%
-
-%%ANKI
-Basic
-What is the function prototype of `memmove`?
-Back:
-```c
-void* memmove(void* s1, const void* s2, size_t n);
-```
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732843837999-->
 END%%
 
 %%ANKI

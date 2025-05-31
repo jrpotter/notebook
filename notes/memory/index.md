@@ -1145,7 +1145,7 @@ END%%
 
 %%ANKI
 Basic
-In an HDD, a disk controller outputs what?
+In an HDD, a disk controller outputs what triple?
 Back: A $\langle surface, track, sector \rangle$ triple.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1745503950984-->

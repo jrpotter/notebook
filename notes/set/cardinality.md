@@ -2217,9 +2217,25 @@ Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.
 <!--ID: 1748146342068-->
 END%%
 
+%%ANKI
+Basic
+Suppose $A$ is countable. What injection must exist?
+Back: An injection $f \colon A \rightarrow \omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748570530136-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is countable. What surjection must exist?
+Back: A surjection $f \colon \omega \rightarrow A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748570530144-->
+END%%
+
 ### Union
 
-A countable union of countable sets is countable.
+A countable union of countable sets is countable. More generally, if every member of a set $A$ has cardinality $\kappa$ or less, then $$\mathop{\text{card}} \bigcup A \leq (\mathop{\text{card}} A) \cdot \kappa.$$
 
 %%ANKI
 Basic
@@ -2265,6 +2281,58 @@ How might you visualize the countable union $\bigcup A$ of countable sets?
 Back: $$\begin{align*} A_1 & = \{ a_{11}, \,a_{12}, \,\ldots, \,a_{1n}, \,\ldots \} \\ A_2 & = \{ a_{21}, \,a_{22}, \,\ldots, \,a_{2n}, \,\ldots \} \\ \vdots \\ A_m & = \{ a_{m1}, \,a_{m2}, \,\ldots, \,a_{mn}, \,\ldots \} \\ \vdots \end{align*}$$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1746496463228-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of the surjection Enderton used to prove the following?
+
+> A countable union of countable sets, $\bigcup A$, is countable.
+
+Back: $\omega \times \omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748570530146-->
+END%%
+
+%%ANKI
+Basic
+What is the codomain of the surjection Enderton used to prove the following?
+
+> A countable union of countable sets, $\bigcup A$, is countable.
+
+Back: $\bigcup A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748570530149-->
+END%%
+
+%%ANKI
+Basic
+How is the following further generalized?
+
+> A countable union of countable sets is countable.
+
+Back: If $A$ is a set with members of at most cardinality $\kappa$, then $\mathop{\text{card}} \bigcup A \leq (\mathop{\text{card}} A) \cdot \kappa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748570530152-->
+END%%
+
+%%ANKI
+Basic
+What countability-related specialization exists of the following?
+
+> If every member of a set $A$ has cardinality $\kappa$ or less, then $\mathop{\text{card}} \bigcup A \leq (\mathop{\text{card}} A) \cdot \kappa$.
+
+Back: A countable union of countable sets is countable.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748570530155-->
+END%%
+
+%%ANKI
+Basic
+Suppose every member of a set $A$ has cardinality $\kappa$ or less. How do we equivalently state the following in terms of sets? $$\mathop{\text{card}} \bigcup A \leq (\mathop{\text{card}} A) \cdot \kappa$$
+Back: $\bigcup A \preceq A \times K$ for some set $K$ with cardinality $\kappa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1748570530157-->
 END%%
 
 ### Sequences

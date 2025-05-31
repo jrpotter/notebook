@@ -738,6 +738,98 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737418825332-->
 END%%
 
+### Phase Shift
+
+For any real number $t$, $$\begin{align*} \sin{x} & = \cos{\left(x - \frac{\pi}{2} \right)} \\ \cos{x} & = \sin{\left(x + \frac{\pi}{2}\right)} \end{align*}$$
+
+%%ANKI
+Cloze
+What is the phase shift difference between sine and cosine?
+Back: $\pi / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748703585837-->
+END%%
+
+%%ANKI
+Basic
+The sine function is a $\pi / 2$ phase shift of cosine in which direction?
+Back: To the right.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748703585846-->
+END%%
+
+%%ANKI
+Basic
+Let $t$ be any real number. How is $\sin{t}$ equivalently expressed using cosine?
+Back: $\sin{t} = \cos{(t - \pi / 2)}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748703585849-->
+END%%
+
+%%ANKI
+Basic
+The cosine function is a $\pi / 2$ phase shift of sine in which direction?
+Back: To the left.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748703585852-->
+END%%
+
+%%ANKI
+Basic
+Let $t$ be any real number. How is $\cos{t}$ equivalently expressed using sine?
+Back: $\cos{t} = \sin{(t + \pi / 2)}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748703585855-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest positive value of $k$ that satisfies the following? $$\sin{x} = \sin{(x + k)}$$
+Back: $2\pi$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748703585858-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest positive value of $k$ that satisfies the following? $$\sin{x} = \cos{(x + k)}$$
+Back: $3\pi / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748703585861-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest positive value of $k$ that satisfies the following? $$\sin{x} = \cos{(x - k)}$$
+Back: $\pi / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748703585864-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest positive value of $k$ that satisfies the following? $$\cos{x} = \cos{(x + k)}$$
+Back: $2\pi$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748703585867-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest positive value of $k$ that satisfies the following? $$\cos{x} = \sin{(x + k)}$$
+Back: $\pi / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748703585870-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest positive value of $k$ that satisfies the following? $$\cos{x} = \sin{(x - k)}$$
+Back: $3\pi / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748703585874-->
+END%%
+
 ## Bibliography
 
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
