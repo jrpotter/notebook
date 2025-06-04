@@ -51,6 +51,239 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1747861797195-->
 END%%
 
+Consider a computer system where each memory address has $m$ bits. A cache for such a machine is defined as a tuple $\langle S, E, B, m \rangle$ where
+
+* $S$ refers to the number of **cache sets**;
+* $E$ refers to the number of **cache lines** per set;
+* $B$ refers to the size (in bytes) of the **cache block** found in each line.
+
+Each cache line also contains a **valid bit** indicating whether or not the line contains meaningful information and $t$ **tag bits** that uniquely identifies which cache block is stored in the cache line.
+
+![[generic-cache.png]]
+
+The parameters $S$ and $B$ induce a partitioning of the $m$ address bits into the following three fields:
+
+![[address-partition.png]]
+
+The $s$ **set index bits** for an index into the array of $S$ sets. The $b$ **block offset bits** give the offset of the word in the $B$-byte cache block, provided the valid bit is set and the tag bits match.
+
+The **capacity** of a cache $C$ is usually defined as $C = S \cdot E \cdot B$. Notice this excludes the overhead of the valid and tag bits.
+
+%%ANKI
+Basic
+A generic cache is usually defined as a tuple of how many parameters?
+Back: Four.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142102-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle S, E, B, m \rangle$. What does $S$ refer to?
+Back: The number of cache sets.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142105-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle S, E, B, m \rangle$. What does $E$ refer to?
+Back: The number of cache lines per set.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142108-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle S, E, B, m \rangle$. What does $B$ refer to?
+Back: The size of the cache block (in bytes) found in each cache line.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142110-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle S, E, B, m \rangle$. What does $m$ refer to?
+Back: The size (in bits) of any memory address.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142113-->
+END%%
+
+%%ANKI
+Cloze
+Cache {blocks} are found in cache {lines} which are found in cache {sets}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142116-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle S, E, B, m \rangle$. Which parameter(s) induce a partitioning on addresses?
+Back: $S$ and $B$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142119-->
+END%%
+
+%%ANKI
+Basic
+With respect to caching, an address is partitioned into what three fields?
+Back: The tag, the set index, and the block offset.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142122-->
+END%%
+
+%%ANKI
+Cloze
+A {memory address} is partitioned into a {tag}, {set index}, and {block offset}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027776933-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the $t$ tag bits produced by partitioning address $A$?
+Back: They are compared against the tags of cache lines that might contain $A$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142125-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the $s$ set index bits produced by partitioning address $A$?
+Back: It indicates which of the $2^s$ cache sets would contain $A$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142128-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the $b$ block offset bits produced by partitioning address $A$?
+Back: It indicates where in the $2^b$ bytes-sized cache block $A$ is.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142131-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle S, E, B, m \rangle$. How many bits make up the set index of an address?
+Back: $s = \log_2(S)$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142134-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle S, E, B, m \rangle$. How many bits make up the block offset of an address?
+Back: $b = \log_2(B)$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142137-->
+END%%
+
+%%ANKI
+Basic
+A cache line consists of what three fields (in order)?
+Back: A valid bit, a tag, and a cache block.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142140-->
+END%%
+
+%%ANKI
+Cloze
+A {valid bit}, {tag}, and {cache block} make up a {cache line}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027776943-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the valid bit found within a cache line?
+Back: It indicates whether or not the cache line contains meaningful information.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142143-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the tag found within a cache line?
+Back: It identifies which data blocks are stored within the cache block.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142146-->
+END%%
+
+%%ANKI
+Basic
+A line in a cache set contains a word at address $A$ iff what two things are true?
+Back:
+1. The valid bit is set.
+2. The tag bits in the line match the tag bits in $A$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142149-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle 4, 1, 8, 6 \rangle$. What is the tag of memory address `101101`?
+Back: `1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027776946-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle 4, 1, 8, 6 \rangle$. What is the set index of memory address `101101`?
+Back: `01`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027776949-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle 4, 1, 8, 6 \rangle$. What is the block offset of memory address `101101`?
+Back: `101`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027776952-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle 4, 1, 8, 6 \rangle$. What are the possible set indices an address can have?
+Back: `00`, `01`, `10`, or `11`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027776955-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle 4, 1, 8, 6 \rangle$. What are the possible block offsets an address can have?
+Back: `000`, `001`, `010`, `011`, `100`, `101`, `110`, or `111`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027776959-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle S, E, B, m \rangle$. How many bits $t$ make up an address's tag?
+Back: $t = m - \log_2(S) - \log_2(B)$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027776962-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle S, E, B, m \rangle$. How is its capacity $C$ usually determined?
+Back: As $C = S \cdot E \cdot B$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749028189056-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle S, E, B, m \rangle$. What overhead is usually excluded when describing its capacity?
+Back: The valid bits and tag bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749028189064-->
+END%%
+
 ## Cache Misses
 
 When a data object can be retreived from a cache as opposed to a larger, slower device, we have what is called a **cache hit**. Otherwise we have a **cache miss**.
@@ -131,7 +364,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1748461340162-->
 END%%
 
-### Replacement Policies
+## Replacement Policies
 
 The process of overwriting an existing block is known as **eviction**. The evicted block is sometimes referred to as a **victim block**. The decision about which block to evict is governed by the cache's **replacement policy**.
 
@@ -181,7 +414,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1748460535228-->
 END%%
 
-### Placement Policies
+## Placement Policies
 
 A **placement policy** determines where to place a block it has retrieved from level $k + 1$ into level $k$.
 

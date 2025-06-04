@@ -742,6 +742,8 @@ END%%
 
 For any real number $t$, $$\begin{align*} \sin{x} & = \cos{\left(x - \frac{\pi}{2} \right)} \\ \cos{x} & = \sin{\left(x + \frac{\pi}{2}\right)} \end{align*}$$
 
+We say the cosine function is **leading** (corresponding to a negative phase shift) and the sine function is **lagging** (corresponding to a positive phase shift).
+
 %%ANKI
 Cloze
 What is the phase shift difference between sine and cosine?
@@ -772,6 +774,45 @@ The cosine function is a $\pi / 2$ phase shift of sine in which direction?
 Back: To the left.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1748703585852-->
+END%%
+
+%%ANKI
+Basic
+Which of sine or cosine is considered leading in front of the other?
+Back: Cosine leads sine.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748742454510-->
+END%%
+
+%%ANKI
+Basic
+Which of sine or cosine is considered lagging behind the other?
+Back: Sine lags behind cosine.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748742454515-->
+END%%
+
+%%ANKI
+Cloze
+{1:Sine} is to {2:lagging} as {2:cosine} is to {1:leading}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748742454517-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for sinusoid $A$ to lag behind sinusoid $B$?
+Back: $A$ corresponds to (but is not necessarily equal to) a positive phase shift of $B$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748742454520-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for sinusoid $A$ to lead $B$?
+Back: $A$ corresponds to (but is not necessarily equal to) a negative phase shift of $B$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1748742454523-->
 END%%
 
 %%ANKI

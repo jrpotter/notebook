@@ -203,7 +203,58 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737347029852-->
 END%%
 
+## Disks
+
+A **disk** is the region in a plane bounded by a circle. A disk is said to be **closed** if it contains the circle that constitutes its boundary. Its said to be **open** otherwise.
+
+%%ANKI
+Basic
+What is a disk?
+Back: The region in a plane bounded by a circle.
+Reference: “Disk (Mathematics).” In _Wikipedia_, March 28, 2025. [https://en.wikipedia.org/w/index.php?title=Disk_(mathematics)](https://en.wikipedia.org/w/index.php?title=Disk_\(mathematics\)&oldid=1282846212).
+<!--ID: 1748811266637-->
+END%%
+
+%%ANKI
+Basic
+What alternative spelling of a "disk" might one encounter?
+Back: "Disc".
+Reference: “Disk (Mathematics).” In _Wikipedia_, March 28, 2025. [https://en.wikipedia.org/w/index.php?title=Disk_(mathematics)](https://en.wikipedia.org/w/index.php?title=Disk_\(mathematics\)&oldid=1282846212).
+<!--ID: 1748811266648-->
+END%%
+
+%%ANKI
+Cloze
+A {disk} is the region in a plane bounded by a {circle}.
+Reference: “Disk (Mathematics).” In _Wikipedia_, March 28, 2025. [https://en.wikipedia.org/w/index.php?title=Disk_(mathematics)](https://en.wikipedia.org/w/index.php?title=Disk_\(mathematics\)&oldid=1282846212).
+<!--ID: 1748811266652-->
+END%%
+
+%%ANKI
+Cloze
+A disk is said to be either {open} or {closed}.
+Reference: “Disk (Mathematics).” In _Wikipedia_, March 28, 2025. [https://en.wikipedia.org/w/index.php?title=Disk_(mathematics)](https://en.wikipedia.org/w/index.php?title=Disk_\(mathematics\)&oldid=1282846212).
+<!--ID: 1748811266655-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a disc to be open?
+Back: The region described by the disc does not include its boundary.
+Reference: “Disk (Mathematics).” In _Wikipedia_, March 28, 2025. [https://en.wikipedia.org/w/index.php?title=Disk_(mathematics)](https://en.wikipedia.org/w/index.php?title=Disk_\(mathematics\)&oldid=1282846212).
+<!--ID: 1748811266658-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a disc to be cloze?
+Back: The region described by the disc does include its boundary.
+Reference: “Disk (Mathematics).” In _Wikipedia_, March 28, 2025. [https://en.wikipedia.org/w/index.php?title=Disk_(mathematics)](https://en.wikipedia.org/w/index.php?title=Disk_\(mathematics\)&oldid=1282846212).
+<!--ID: 1748811266662-->
+END%%
+
 ## Bibliography
 
 * “Circle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Circle](https://en.wikipedia.org/w/index.php?title=Circle&oldid=1268270102).
+* “Disk (Mathematics).” In _Wikipedia_, March 28, 2025. [https://en.wikipedia.org/w/index.php?title=Disk_(mathematics)](https://en.wikipedia.org/w/index.php?title=Disk_\(mathematics\)&oldid=1282846212).
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.

@@ -369,7 +369,11 @@
     "dynamic-linking-process.png",
     "hasse-diagram.png",
     "infinite-cartesian-product.png",
-    "cache-hit-miss.png"
+    "cache-hit-miss.png",
+    "unit-circle.png",
+    "circle-right.png",
+    "circle-left-down.png",
+    "circle-left-up.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -407,7 +411,7 @@
     "data_models/index.md": "9e60f40798490f0743f291e55f492033",
     "data_models/federation.md": "1d92747304186bd2833a00a488fcac48",
     "trigonometry/unit-circle.md": "d35f98e044f6a1144657cc97a63a8f7a",
-    "trigonometry/index.md": "aa3a5469daf7a999181c46a62ae108ee",
+    "trigonometry/index.md": "d417aa3ad31fe7acfa8238af6072ed1b",
     "trigonometry/angles.md": "3a668bff279e53ae381a72b0d079c959",
     "threads/index.md": "28783464146ed09603b477bad4b761bc",
     "startups/term-sheet.md": "6b6152af78addb3fe818a7fc9d375fbf",
@@ -443,7 +447,7 @@
     "ontology/index.md": "0994403dcd84415f1459752129b55f65",
     "network/uri.md": "522cef53f05d73803310e65450a10798",
     "network/index.md": "5980d28b6bcdadff42a74aa678622cc9",
-    "memory/index.md": "c1f0d565e05190917bbb33b977f4a054",
+    "memory/index.md": "77d039483f933b946c43a65eebb072a5",
     "logic/index.md": "717099c8fefb416eed7dcf83a2284297",
     "logic/classical/truth-tables.md": "7ca6dbd61c8c259804358ba6d10cfdc1",
     "logic/classical/index.md": "ee0a4b2bfcfa2cab0880db449cb62df1",
@@ -469,7 +473,7 @@
     "git/merge-conflicts.md": "761ad6137ec51d3877f7d5b3615ca5cb",
     "git/index.md": "ca842957bda479dfa1170ae85f2f37b8",
     "geometry/index.md": "cac68c1b624dbb0552e56cce47bcc21d",
-    "geometry/circle.md": "9469e5512a6a92a962985eab99d00606",
+    "geometry/circle.md": "b0e5ee2309333d64104efda20eb57fa0",
     "geometry/cartesian.md": "578bc58cb0666a5be64a1b8b80aacdf1",
     "geometry/area.md": "167644890739fa7471a0a6e8bcb6290c",
     "filesystems/index.md": "cbd2b0290a3ba3b32abec4bd8bfefad5",
@@ -1003,7 +1007,7 @@
     "startups/financing_rounds.md": "7afdaa5fca76552ec46ed6392bbd372a",
     "set/natural_numbers.md": "cafd241537eef6a6438c5470a16f5d5e",
     "programming/short_circuit.md": "cfa402a43aebe7929591559cf83a2ff5",
-    "programming/pred_trans.md": "f30a452ea487f786edf1a50ace59f9d2",
+    "programming/pred_trans.md": "0fd4440ba816c74a4beb281440ca2914",
     "git/merge_conflicts.md": "761ad6137ec51d3877f7d5b3615ca5cb",
     "combinatorics/multiplicative_principle.md": "7c06835fa34cfefa217a10cf11ef4ab0",
     "combinatorics/inclusion_exclusion.md": "c27b49ee03cc5ee854d0e8bd12a1d505",
@@ -1065,7 +1069,7 @@
     "_journal/2025-05/2025-05-19.md": "fa9406f7193a94c190e446fe8fd7b2d8",
     "_journal/2025-05-21.md": "6e3676964b845722da2d73058c09cd08",
     "_journal/2025-05/2025-05-20.md": "51ce0323438d41a81b62fbd8bcf09ab5",
-    "memory/caches.md": "a6a175177d9e7e9a1e80fa9126aff847",
+    "memory/caches.md": "c47f19e681905dcf72bb8060b97cd76a",
     "_journal/2025-05-23.md": "1a92e11dadb062dc5291d23d19e7a63b",
     "_journal/2025-05/2025-05-22.md": "5602e0e85df4fe9e37d4f6706f42baeb",
     "_journal/2025-05/2025-05-21.md": "6c6b73aa3befe5e7a0cf3849180767de",
@@ -1086,7 +1090,13 @@
     "_journal/2025-05-30.md": "5362b0a76447676287539af4fa2aaab3",
     "_journal/2025-05/2025-05-29.md": "a85172b58168d7189e2152f602aa9b9c",
     "_journal/2025-05-31.md": "84f8782b7ef79a61154a332d81b150a8",
-    "_journal/2025-05/2025-05-30.md": "6c6a3e81f2abf0c0e1adbf31df0357c1"
+    "_journal/2025-05/2025-05-30.md": "6c6a3e81f2abf0c0e1adbf31df0357c1",
+    "_journal/2025-06-01.md": "35d61a563184be3e8eb69b327aeceb75",
+    "_journal/2025-05/2025-05-31.md": "9643bb6d8a74e53828caa576fa91c8ea",
+    "_journal/2025-06-04.md": "15409e1e0f89083222c731309582f104",
+    "_journal/2025-06/2025-06-03.md": "406e58e83657a716c7f144e04d90d8ac",
+    "_journal/2025-06/2025-06-02.md": "7ebb7bb97ea6e508329c0fa4b099a9e1",
+    "_journal/2025-06/2025-06-01.md": "35d61a563184be3e8eb69b327aeceb75"
   },
   "fields_dict": {
     "Basic": [

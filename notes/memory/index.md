@@ -15,9 +15,17 @@ The **memory hierarchy** refers to the various storage devices used in a compute
 %%ANKI
 Basic
 Typically speaking, what does L0 refer to in the memory hierarchy?
-Back: CPU registers.
+Back: The register file.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1747861797199-->
+END%%
+
+%%ANKI
+Basic
+What is a register file?
+Back: An array of registers on a CPU.
+Reference: “Register File.” In _Wikipedia_, March 2, 2025. [https://en.wikipedia.org/w/index.php?title=Register_file](https://en.wikipedia.org/w/index.php?title=Register_file&oldid=1278398836).
+<!--ID: 1749027142096-->
 END%%
 
 %%ANKI
@@ -26,6 +34,14 @@ L1, L2, and L3 caches typically use what kind of RAM?
 Back: SRAM.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1747861797203-->
+END%%
+
+%%ANKI
+Basic
+Why is the e.g. L1 cache named the way it is?
+Back: It stands for **l**evel **1**.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749027142099-->
 END%%
 
 %%ANKI
@@ -1154,3 +1170,4 @@ END%%
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* “Register File.” In _Wikipedia_, March 2, 2025. [https://en.wikipedia.org/w/index.php?title=Register_file](https://en.wikipedia.org/w/index.php?title=Register_file&oldid=1278398836).
