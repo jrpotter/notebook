@@ -288,7 +288,7 @@ END%%
 
 %%ANKI
 Basic
-An even function exhibits what kind of symmetric?
+An even function exhibits what kind of symmetry?
 Back: Symmetry about the $y$-axis.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1746023817971-->
@@ -305,7 +305,7 @@ END%%
 %%ANKI
 Basic
 If $f$ is odd, $f(-x)$ equals what?
-Back: $-f(-x)$
+Back: $-f(x)$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1746023817976-->
 END%%

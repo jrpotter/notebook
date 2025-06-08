@@ -1363,15 +1363,15 @@ END%%
 
 %%ANKI
 Basic
-What *is* an isomorphism between graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$?
-Back: A bijection $f \colon V_1 \rightarrow V_2$ such that $(a, b) \in E_1$ if and only if $(f(a), f(b)) \in E_2$.
+What *is* an isomorphism between graphs $G_1 = \langle V_1, E_1 \rangle$ and $G_2 = \langle V_2, E_2 \rangle$?
+Back: A bijection $f \colon V_1 \rightarrow V_2$ such that $\langle a, b \rangle \in E_1$ if and only if $\langle f(a), f(b) \rangle \in E_2$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1715537560176-->
 END%%
 
 %%ANKI
 Basic
-What is the domain of an isomorphism between graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$?
+What is the domain of an isomorphism between graphs $G_1 = \langle V_1, E_1 \rangle$ and $G_2 = \langle V_2, E_2 \rangle$?
 Back: $V_1$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1715537560179-->
@@ -1379,7 +1379,7 @@ END%%
 
 %%ANKI
 Basic
-What is the codomain of an isomorphism between graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$?
+What is the codomain of an isomorphism between graphs $G_1 = \langle V_1, E_1 \rangle$ and $G_2 = \langle V_2, E_2 \rangle$?
 Back: $V_2$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1715537560183-->
@@ -1387,8 +1387,8 @@ END%%
 
 %%ANKI
 Basic
-What is the edge relation of isomorphism $f$ between graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$?
-Back: $(a, b) \in E_1$ if and only if $(f(a), f(b)) \in E_2$.
+What is the edge relation of isomorphism $f$ between graphs $G_1 = \langle V_1, E_1 \rangle$ and $G_2 = \langle V_2, E_2 \rangle$?
+Back: $\langle a, b \rangle \in E_1$ if and only if $\langle f(a), f(b) \rangle \in E_2$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1715537560186-->
 END%%

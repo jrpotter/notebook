@@ -201,7 +201,7 @@ Basic
 What is the following query expected to return?
 ```sparql
 SELECT ?a
- WHERE { ?a :hasParent :Joe . }
+WHERE { ?a :hasParent :Joe . }
 ```
 Back: Joe's immediate children.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
@@ -213,7 +213,7 @@ Basic
 What is the following query expected to return?
 ```sparql
 SELECT ?a
- WHERE { ?a :hasParent* :Joe . }
+WHERE { ?a :hasParent* :Joe . }
 ```
 Back: Joe *and* his descendants.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
@@ -225,11 +225,19 @@ Basic
 What is the following query expected to return?
 ```sparql
 SELECT ?a
- WHERE { ?a :hasParent+ :Joe . }
+WHERE { ?a :hasParent+ :Joe . }
 ```
 Back: Joe's descendants.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1736348906662-->
+END%%
+
+%%ANKI
+Basic
+How is the keyword `a` understood in SPARQL?
+Back: As shorthand for `rdf:type`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1749331998335-->
 END%%
 
 ## Bibliography

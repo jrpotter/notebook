@@ -587,7 +587,7 @@ END%%
 
 %%ANKI
 Basic
-What non-implementation-defined types can a bit-field be declared with?
+What types *must* be possible to declare bit-fields with?
 Back: `_Bool`, `signed int`, or `unsigned int`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1734662614063-->
@@ -595,7 +595,7 @@ END%%
 
 %%ANKI
 Basic
-What types can a bit-field be declared with?
+What types *can* a bit-field be declared with?
 Back: `_Bool`, `signed int`, `unsigned int`, or some other implementation-defined type.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1734662614068-->

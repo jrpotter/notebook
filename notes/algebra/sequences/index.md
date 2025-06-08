@@ -536,7 +536,7 @@ END%%
 
 %%ANKI
 Basic
-How many distinct roots does the characteristic polynomial of the following have? $$a_n = \alpha a_{n-1} + \beta a_{n-2} = ar^n + bnr^n$$
+How many distinct roots does the following characteristic polynomial have? $$ar^n + bnr^n$$
 Back: One.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 Tags: algebra::polynomial
@@ -545,7 +545,7 @@ END%%
 
 %%ANKI
 Basic
-How many distinct roots does the characteristic polynomial of the following have? $$a_n = \alpha a_{n-1} + \beta a_{n-2} = ar_1^n + br_2^n$$
+How many distinct roots does the following characteristic polynomial have? $$ar_1^n + br_2^n$$
 Back: Two.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 Tags: algebra::polynomial

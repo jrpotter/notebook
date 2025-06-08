@@ -1028,7 +1028,7 @@ Then $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA equivalent to
 %%ANKI
 Basic
 Consider an NFA with $k$ states. How many states does its equivalent DFA have?
-Back: $2^k$
+Back: $2^k$ (or fewer if unreachable states are formed in the power set construction).
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1740343331652-->
 END%%

@@ -139,8 +139,8 @@ END%%
 
 %%ANKI
 Basic
-What is the period of the $\sin$ function?
-Back: $2 \pi$
+What is the period of $y = \sin{x}$?
+Back: $2 \pi$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1745979190600-->
 END%%
@@ -569,7 +569,7 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1748394942689-->
 END%%
 
-## Frequency
+### Frequency
 
 The **frequency** of a sinusoidal function is the number of periods (or cycles) per unit time. That is, $$\text{frequency} = \frac{1}{\text{period}}$$
 
@@ -696,6 +696,18 @@ Suppose your heart rate is $50$ BPM. What is the period of your heart rate (in t
 Back: $6 / 5$ seconds.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1747698141423-->
+END%%
+
+## Other Trigonometric Functions
+
+The tangent function is periodic with period $\pi$.
+
+%%ANKI
+Basic
+What is the period of the tangent function?
+Back: $\pi$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749333600814-->
 END%%
 
 ## Bibliography

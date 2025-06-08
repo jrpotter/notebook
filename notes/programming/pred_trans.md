@@ -935,6 +935,38 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1721497014085-->
 END%%
 
+%%ANKI
+Basic
+How does Gries suggest when finding a solution for $x$ in the following assertion? $$\{T\} \;a \coloneqq a + 1; b \coloneqq x \;\{a = b\}$$
+Back: Rewrite $x$ as a function of $a$ and $b$, i.e. as $x(a, b)$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1749415555609-->
+END%%
+
+%%ANKI
+Basic
+What's wrong with the following attempt to find a solution for $x$? $$\begin{align*} wp(''a & \coloneqq a + 1; b \coloneqq x'', a = b) \\ & = wp(''a \coloneqq a + 1'', a = x) \\ & = a + 1 = x \end{align*}$$
+Back: $x$ must be considered a function of $a$ and $b$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1749415555618-->
+END%%
+
+%%ANKI
+Basic
+What is the value of $x(a, b)$ given the following? $$\begin{align*} wp(''a & \coloneqq a + 1; b \coloneqq x(a, b)'', a = b) \\ & = wp(''a \coloneqq a + 1'', a = x(a, b)) \\ & = a + 1 = x(a + 1, b) \end{align*}$$
+Back: $x(a, b) = a$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1749415555621-->
+END%%
+
+%%ANKI
+Basic
+Given predicate $P \colon a = A$, show that $wp(''a \coloneqq a / 2'', a = A / 2) = T$.
+Back: $$\begin{align*} wp(''a & \coloneqq a / 2'', a = A / 2) \\ & = \left[ a = A / 2 \right]^a_{a / 2} \\ & = \left[ a / 2 = A / 2 \right] \\ & = \left[ A / 2 = A / 2 \right] \quad(P) \\ & = T \end{align*}$$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1749415555624-->
+END%%
+
 ### Alternative
 
 The general form of the **alternative command** is: $$\begin{align*} \textbf{if } & B_1 \rightarrow S_1 \\ \textbf{ | } & B_2 \rightarrow S_2 \\ & \quad\cdots \\ \textbf{ | } & B_n \rightarrow S_n \\ \textbf{fi } & \end{align*}$$
@@ -1092,6 +1124,14 @@ How is command $skip$ wrapped in a no-op alternative command?
 Back: As $\textbf{if } T \rightarrow skip \textbf{ fi}$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1722259243640-->
+END%%
+
+%%ANKI
+Basic
+Why does Gries encourage making the guards of an alternative command as strong as possible?
+Back: It is better to abort than silently handle unexpected cases.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1749415555627-->
 END%%
 
 ### Iterative

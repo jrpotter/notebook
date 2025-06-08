@@ -818,14 +818,6 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 END%%
 
 %%ANKI
-Basic
-What is the shared antecedent of the antimonotonicity properties of $\subseteq$?
-Back: N/A.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717073536991-->
-END%%
-
-%%ANKI
 Cloze
 {1:Monotonicity} of $\subseteq$ is to {2:$\bigcup$} whereas {2:antimonotonicity} of $\subseteq$ is to {1:$\bigcap$}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

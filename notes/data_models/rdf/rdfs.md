@@ -73,8 +73,8 @@ The group of resources that are RDFS classes is itself a class called `rdfs:Clas
 If a class `C` is a subclass of a class `C'`, then all instances of `C` will also be instances of `C'`. The `rdfs:subClassOf` property may be used to state that one class is a subclass of another.
 
 ```sparql
-CONSTRUCT { ?x rdf:type ?B }
-    WHERE { ?A rdf:subClassOf ?B. ?x rdf:type ?A }
+CONSTRUCT { ?x a ?B }
+WHERE { ?A rdf:subClassOf ?B. ?x a ?A }
 ```
 
 %%ANKI
@@ -197,11 +197,11 @@ END%%
 
 %%ANKI
 Basic
-How is the type propagation rule defined in SPARQL?
+How is the type propagation rule understood using SPARQL?
 Back:
 ```sparql
-CONSTRUCT { ?x rdf:type ?B }
-    WHERE { ?A rdfs:subClassOf ?B. ?x rdf:type ?A }
+CONSTRUCT { ?x a ?B }
+WHERE { ?A rdfs:subClassOf ?B. ?x a ?A }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1736629473701-->
@@ -209,11 +209,11 @@ END%%
 
 %%ANKI
 Basic
-How is the meaning of `rdfs:subClassOf` defined in SPARQL?
+How is `rdfs:subClassOf` understood using SPARQL?
 Back:
 ```sparql
-CONSTRUCT { ?x rdf:type ?B }
-    WHERE { ?A rdfs:subClassOf ?B. ?x rdf:type ?A }
+CONSTRUCT { ?x a ?B }
+WHERE { ?A rdfs:subClassOf ?B. ?x a ?A }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1743453116890-->
@@ -397,18 +397,18 @@ The `rdfs:subPropertyOf` property may be used to state that one property is a su
 
 ```sparql
 CONSTRUCT { ?x ?r ?y }
-    WHERE { ?x ?q ?y. ?q rdfs:subPropertyOf ?r }
+WHERE { ?x ?q ?y. ?q rdfs:subPropertyOf ?r }
 ```
 
 A property `p` is often annotated with the `rdfs:domain` and `rdfs:range` properties. 
 For any triple involving `p`, these properties specify the classes the subject and object of the triple should be members of respectively.
 
 ```sparql
-CONSTRUCT { ?x rdf:type ?D }
-    WHERE { ?P rdf:domain ?D. ?x ?P ?y }
+CONSTRUCT { ?x a ?D }
+WHERE { ?P rdf:domain ?D. ?x ?P ?y }
 
-CONSTRUCT { ?y rdf:type ?R }
-    WHERE { ?P rdf:range ?R. ?x ?P ?y }
+CONSTRUCT { ?y a ?R }
+WHERE { ?P rdf:range ?R. ?x ?P ?y }
 ```
 
 %%ANKI
@@ -420,11 +420,11 @@ END%%
 
 %%ANKI
 Basic
-How is the meaning of `rdfs:subPropertyOf` defined in SPARQL?
+How is `rdfs:subPropertyOf` understood using SPARQL?
 Back:
 ```sparql
 CONSTRUCT { ?x ?r ?y }
-    WHERE { ?x ?q ?y. ?q rdfs:subPropertyOf ?r }
+WHERE { ?x ?q ?y. ?q rdfs:subPropertyOf ?r }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1743453116901-->
@@ -432,11 +432,11 @@ END%%
 
 %%ANKI
 Basic
-How is the meaning of `rdfs:domain` defined in SPARQL?
+How is `rdfs:domain` understood using SPARQL?
 Back:
 ```sparql
-CONSTRUCT { ?x rdf:type ?D }
-    WHERE { ?P rdfs:domain ?D. ?x ?P ?y }
+CONSTRUCT { ?x a ?D }
+WHERE { ?P rdfs:domain ?D. ?x ?P ?y }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1743453116904-->
@@ -452,11 +452,11 @@ END%%
 
 %%ANKI
 Basic
-How is the meaning of `rdfs:range` defined in SPARQL?
+How is `rdfs:range` understood using SPARQL?
 Back:
 ```sparql
-CONSTRUCT { ?y rdf:type ?R }
-    WHERE { ?P rdfs:range ?R. ?x ?P ?y }
+CONSTRUCT { ?y a ?R }
+WHERE { ?P rdfs:range ?R. ?x ?P ?y }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1743453116911-->
@@ -484,7 +484,7 @@ What `CONSTRUCT` query demonstrates how `rdfs:domain` is inferred "up the inheri
 Back:
 ```sparql
 CONSTRUCT { ?P rdfs:domain ?C. }
-    WHERE { ?P rdfs:domain ?D. ?D rdf:subClassOf ?C. }
+WHERE { ?P rdfs:domain ?D. ?D rdf:subClassOf ?C. }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1745503950988-->
@@ -496,7 +496,7 @@ What `CONSTRUCT` query demonstrates how `rdfs:range` is inferred "up the inherit
 Back:
 ```sparql
 CONSTRUCT { ?P rdfs:range ?C. }
-    WHERE { ?P rdfs:range ?D. ?D rdf:subClassOf ?C. }
+WHERE { ?P rdfs:range ?D. ?D rdf:subClassOf ?C. }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1745503950992-->

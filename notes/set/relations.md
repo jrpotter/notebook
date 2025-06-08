@@ -639,7 +639,7 @@ END%%
 %%ANKI
 Basic
 Is $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ reflexive on $a$?
-Back: No.
+Back: No, it's reflexive on $\{a\}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720967429808-->
 END%%
@@ -647,7 +647,7 @@ END%%
 %%ANKI
 Basic
 Is $R = \{\langle a, a \rangle\}$ reflexive on $a$?
-Back: No.
+Back: No, it's reflexive on $\{a\}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1728996104568-->
 END%%

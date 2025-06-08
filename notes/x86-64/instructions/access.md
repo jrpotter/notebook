@@ -120,7 +120,7 @@ END%%
 
 %%ANKI
 Basic
-What `mov` instruction is needed when working with 64-bit immediate sources?
+What `mov` instruction moves 64-bit immediate sources into registers?
 Back: `movabsq`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1713625933441-->

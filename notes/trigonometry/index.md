@@ -509,6 +509,78 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1745010301118-->
 END%%
 
+%%ANKI
+Basic
+What is the simplest example of a function with vertical asymptote at $x = 1$?
+Back: $$f(x) = \frac{1}{x - 1}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749333600824-->
+END%%
+
+%%ANKI
+Basic
+What is the simplest example of a function with vertical asymptotes at $x = 1$ and $x = -1$?
+Back: $$f(x) = \frac{1}{(x - 1)(x + 1)}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749333600826-->
+END%%
+
+%%ANKI
+Basic
+Where are the vertical asymptotes in the graph of $y = \tan{x}$?
+Back: At values $x = \pi / 2 + \pi k$ for all $k \in \mathbb{Z}$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749333600829-->
+END%%
+
+%%ANKI
+Basic
+For what $x \in [-2\pi, 2\pi]$ is $\tan{x}$ undefined?
+Back: $-3\pi/2$, $-\pi/2$, $\pi/2$, and $3\pi / 2$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749333600832-->
+END%%
+
+%%ANKI
+Basic
+What does $\tan{x}$ tend towards when approaching $x = \pi / 2$ from the left?
+Back: $+ \infty$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749333600835-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following limit hold? $${\large \lim_{x \rightarrow \frac{\pi}{2}^-} \tan{x} = +\infty}$$
+Back: Because $\sin{x} \rightarrow 1^-$ and $\cos{x} \rightarrow 0^-$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749333600838-->
+END%%
+
+%%ANKI
+Basic
+What does $\tan{x}$ tend towards when approaching $x = -\pi / 2$ from the right?
+Back: $- \infty$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749333600841-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following limit hold? $${\large \lim_{x \rightarrow -\frac{\pi}{2}^+} \tan{x} = -\infty}$$
+Back: Because $\sin{x} \rightarrow -1^+$ and $\cos{x} \rightarrow 0^+$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749333600844-->
+END%%
+
+%%ANKI
+Basic
+Consider $f(x) = \tan{x}$ over a single period. Is $f$ increasing or decreasing?
+Back: Increasing.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749333600848-->
+END%%
+
 ### Secant
 
 The **secant function** is the reciprocal of the cosine function. That is, for any real number $t$, $$\sec{(t)} = \frac{1}{\cos{(t)}}.$$

@@ -498,6 +498,26 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1748487410085-->
 END%%
 
+## Layering
+
+**Layering** refers to the hierarchical structure and separation of responsibilities used to approach networking-related protocol suites. The most frequently cited layering model is [[osi|OSI]].
+
+%%ANKI
+Basic
+With respect to networking, what does layering refer to?
+Back: The hierarchical structure and separation of responsibilities used when implementing protocol suites.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1749131741104-->
+END%%
+
+%%ANKI
+Basic
+What is the most frequently cited layering model?
+Back: OSI.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1749131741108-->
+END%%
+
 ## Bibliography
 
 * “Circuit Switching.” In _Wikipedia_, May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).

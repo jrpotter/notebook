@@ -69,7 +69,7 @@ END%%
 
 %%ANKI
 Cloze
-An {exponential} function might also be called an {antilogarithm}.
+A(n) {exponential} function might also be called an {antilogarithm}.
 Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
 <!--ID: 1746064935051-->
 END%%
@@ -154,7 +154,7 @@ END%%
 
 %%ANKI
 Basic
-Let the base-$10$ characteristic of $x$ be $c$. What is the characteristic of $10 \cdot x$?
+Let the base-$10$ characteristic of $x$ be $c$. What is the characteristic of $x \cdot 10$?
 Back: $1 + c$
 Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
 <!--ID: 1746064353220-->
@@ -162,10 +162,26 @@ END%%
 
 %%ANKI
 Basic
-Let the base-$10$ mantissa of $x$ be $m$. What is the mantissa of $10 \cdot x$?
+Let the base-$10$ characteristic of $x$ be $c$. What is the characteristic of $x \div 10$?
+Back: $1 + c$
+Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+<!--ID: 1749393067542-->
+END%%
+
+%%ANKI
+Basic
+Let the base-$10$ mantissa of $x$ be $m$. What is the mantissa of $x \cdot 10$?
 Back: $m$
 Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
 <!--ID: 1746064353221-->
+END%%
+
+%%ANKI
+Basic
+Let the base-$10$ mantissa of $x$ be $m$. What is the mantissa of $x \div 10$?
+Back: $m$
+Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+<!--ID: 1749393067549-->
 END%%
 
 %%ANKI
@@ -224,7 +240,7 @@ END%%
 
 %%ANKI
 Basic
-Using the following log table, how is $4,971.26$ equivalently expressed?
+Using the following log table, how is $4971.26$ equivalently expressed?
 | Logarithm | Exponent Form  | Number  |
 | --------- | -------------- | ------- |
 | $0$       | $10^0$         | $1$     |
@@ -270,6 +286,14 @@ Expression $274,246 \cdot 0.0005461$  is equivalently expressed as $10$ to what 
 Back: $\log_{10}{274,246} + \log_{10}{0.0005461}$
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1746068831050-->
+END%%
+
+%%ANKI
+Basic
+Expression $274,246 \div 0.0005461$  is equivalently expressed as $10$ to what power?
+Back: $\log_{10}{274,246} - \log_{10}{0.0005461}$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749393067552-->
 END%%
 
 %%ANKI
@@ -374,74 +398,6 @@ What is the so-called "Iff Log Rule"?
 Back: $m = n$ iff $\log_b{m} = \log_b{n}$
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1747141197025-->
-END%%
-
-## Product Rule
-
-Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x \cdot y)} = \log_b{x} + \log_b{y}$$
-
-%%ANKI
-Basic
-What does the product rule for logarithms state?
-Back: $\log_b{(x \cdot y)} = \log_b{x} + \log_b{y}$
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1747141197028-->
-END%%
-
-%%ANKI
-Basic
-How is $\log_b{(x \cdot y)}$ written using $+$?
-Back: As $\log_b{x} + \log_b{y}$.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1747141197031-->
-END%%
-
-%%ANKI
-Basic
-How is $\log_b{x} \cdot \log_b{y}$ written using $+$?
-Back: N/A.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1747141197033-->
-END%%
-
-%%ANKI
-Basic
-How is $\log_b{x} + \log_b{y}$ written using $\cdot$?
-Back: As $\log_b{(x \cdot y)}$.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1747141197036-->
-END%%
-
-%%ANKI
-Basic
-How is $\log_b{(x + y)}$ written using $\cdot$?
-Back: N/A.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1747141197039-->
-END%%
-
-%%ANKI
-Basic
-The product rule of logarithms is based on what property of exponents?
-Back: $b^m \cdot b^n = b^{m + n}$
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1747141197041-->
-END%%
-
-%%ANKI
-Basic
-Rewrite the following expression using $\log$ and $\mathop{\text{antilog}}$. $$4971.26 \cdot 0.2459$$
-Back: $\mathop{\text{antilog}}(\log{4971.26} + \log{0.2459})$
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1747141197044-->
-END%%
-
-%%ANKI
-Basic
-Rewrite the following expression using $\log$ and $\mathop{\text{antilog}}$. $$x \cdot y$$
-Back: $\mathop{\text{antilog}}(\log{x} + \log{y})$
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1747141197047-->
 END%%
 
 ## Inverses
@@ -638,6 +594,156 @@ Suppose $0 < b < 1$. What does the following limit evaluate to? $$\lim_{x \right
 Back: $+\infty$.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1747792150904-->
+END%%
+
+## Product Rule
+
+Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x \cdot y)} = \log_b{x} + \log_b{y}$$
+
+%%ANKI
+Basic
+What does the product rule for logarithms state?
+Back: $\log_b{(x \cdot y)} = \log_b{x} + \log_b{y}$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197028-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{(x \cdot y)}$ written using $+$?
+Back: As $\log_b{x} + \log_b{y}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197031-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{x} \cdot \log_b{y}$ written using $+$?
+Back: N/A.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197033-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{x} + \log_b{y}$ written using $\cdot$?
+Back: As $\log_b{(x \cdot y)}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197036-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{(x + y)}$ written using $\cdot$?
+Back: N/A.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197039-->
+END%%
+
+%%ANKI
+Basic
+The product rule of logarithms is based on what property of exponents?
+Back: $b^m \cdot b^n = b^{m + n}$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197041-->
+END%%
+
+%%ANKI
+Basic
+Rewrite the following expression using $\log$ and $\mathop{\text{antilog}}$. $$4971.26 \cdot 0.2459$$
+Back: $\mathop{\text{antilog}}(\log{4971.26} + \log{0.2459})$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197044-->
+END%%
+
+%%ANKI
+Basic
+Rewrite the following expression using $\log$ and $\mathop{\text{antilog}}$. $$x \cdot y$$
+Back: $\mathop{\text{antilog}}(\log{x} + \log{y})$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1747141197047-->
+END%%
+
+%%ANKI
+Cloze
+To {1:multiply} two numbers, {1:add} their respective {2:logs} and take the {2:antilog} of the {1:sum}.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749393067555-->
+END%%
+
+## Quotient Rule
+
+Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x \div y)} = \log_b{x} - \log_b{y}$$
+
+%%ANKI
+Basic
+What does the quotient rule for logarithms state?
+Back: $\log_b{(x \div y)} = \log_b{x} - \log_b{y}$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749393067559-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{(x \div y)}$ written using $-$?
+Back: As $\log_b{x} - \log_b{y}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749393067563-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{x} \div \log_b{y}$ written using $-$?
+Back: N/A.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749393067568-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{x} - \log_b{y}$ written using $\div$?
+Back: As $\log_b{(x \div y)}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749393067572-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{(x - y)}$ written using $\div$?
+Back: N/A.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749393067576-->
+END%%
+
+%%ANKI
+Basic
+The quotient rule of logarithms is based on what property of exponents?
+Back: $b^m \div b^n = b^{m - n}$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749393067581-->
+END%%
+
+%%ANKI
+Basic
+Rewrite the following expression using $\log$ and $\mathop{\text{antilog}}$. $$4971.26 \div 0.2459$$
+Back: $\mathop{\text{antilog}}(\log{4971.26} - \log{0.2459})$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749393067585-->
+END%%
+
+%%ANKI
+Basic
+Rewrite the following expression using $\log$ and $\mathop{\text{antilog}}$. $$x \div y$$
+Back: $\mathop{\text{antilog}}(\log{x} - \log{y})$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749393067589-->
+END%%
+
+%%ANKI
+Cloze
+To {1:divide} two numbers, {1:subtract} their respective {2:logs} and take the {2:antilog} of the {1:difference}.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749393067593-->
 END%%
 
 ## Bibliography

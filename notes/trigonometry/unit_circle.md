@@ -675,6 +675,99 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1744412300055-->
 END%%
 
+## Tangent
+
+The tangent function can also be found on the unit circle. Using the below diagram as a reference, $$\tan{t} = \frac{\sin{t}}{\cos{t}} = \frac{y}{x},$$
+the slope of the line through points $\langle 0, 0 \rangle$ and $\langle \cos{t}, \sin{t} \rangle$. This line intersects the vertical line through $\langle 1, 0 \rangle$ at point $\langle 1, m \rangle$. Thus the line also has slope $m / 1 = m$. Hence $\tan{t} = m$.
+
+![[tangent-unit-circle.png]]
+
+%%ANKI
+Basic
+What is the following a visualization of?
+![[tangent-unit-circle.png]]
+Back: $\tan{t}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749334884159-->
+END%%
+
+%%ANKI
+Basic
+How is $y = \tan{t}$ visualized on the unit circle?
+Back:
+![[tangent-unit-circle.png]]
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749334884167-->
+END%%
+
+%%ANKI
+Basic
+Let $0 \leq t < \pi / 2$. What vertical line is related to visualizing $\tan{t}$?
+Back: The vertical line through $\langle 1, 0 \rangle$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749334884170-->
+END%%
+
+%%ANKI
+Basic
+Let $\pi / 2 < t \leq \pi$. What vertical line is related to visualizing $\tan{t}$?
+Back: The vertical line through $\langle -1, 0 \rangle$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749334884172-->
+END%%
+
+%%ANKI
+Basic
+Let $\pi \leq t < 3\pi / 2$. What vertical line is related to visualizing $\tan{t}$?
+Back: The vertical line through $\langle -1, 0 \rangle$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749334884175-->
+END%%
+
+%%ANKI
+Basic
+Let $3\pi / 2 < t \leq 2\pi$. What vertical line is related to visualizing $\tan{t}$?
+Back: The vertical line through $\langle 1, 0 \rangle$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749334884177-->
+END%%
+
+%%ANKI
+Basic
+Which part of the following diagram corresponds to $\cos{t}$?
+![[tangent-unit-circle-empty.png]]
+Back: The $x$-coordinate of the point $t$ radians along the unit circle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749334884180-->
+END%%
+
+%%ANKI
+Basic
+Which part of the following diagram corresponds to $\sin{t}$?
+![[tangent-unit-circle-empty.png]]
+Back: The $y$-coordinate of the point $t$ radians along the unit circle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749334884183-->
+END%%
+
+%%ANKI
+Basic
+Which part of the following diagram corresponds to $\tan{t}$?
+![[tangent-unit-circle-empty.png]]
+Back: The height of the right triangle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749334884185-->
+END%%
+
+%%ANKI
+Basic
+What is the motivation behind the triangle in the following diagram?
+![[tangent-unit-circle-empty.png]]
+Back: The slope of the line through the hypotenuse equals the triangle's height.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749334884188-->
+END%%
+
 ## Bibliography
 
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.

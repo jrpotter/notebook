@@ -247,7 +247,7 @@ END%%
 
 %%ANKI
 Basic
-What does it mean for a disc to be cloze?
+What does it mean for a disc to be closed?
 Back: The region described by the disc does include its boundary.
 Reference: “Disk (Mathematics).” In _Wikipedia_, March 28, 2025. [https://en.wikipedia.org/w/index.php?title=Disk_(mathematics)](https://en.wikipedia.org/w/index.php?title=Disk_\(mathematics\)&oldid=1282846212).
 <!--ID: 1748811266662-->
