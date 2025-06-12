@@ -445,7 +445,7 @@ END%%
 
 %%ANKI
 Basic
-What is the role of the presentation layer?
+What is the role of the application layer?
 Back: It specifies methods for accomplishing some user-initiated task.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749134718604-->

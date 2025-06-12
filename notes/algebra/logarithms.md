@@ -155,7 +155,7 @@ END%%
 %%ANKI
 Basic
 Let the base-$10$ characteristic of $x$ be $c$. What is the characteristic of $x \cdot 10$?
-Back: $1 + c$
+Back: $c + 1$
 Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
 <!--ID: 1746064353220-->
 END%%
@@ -163,7 +163,7 @@ END%%
 %%ANKI
 Basic
 Let the base-$10$ characteristic of $x$ be $c$. What is the characteristic of $x \div 10$?
-Back: $1 + c$
+Back: $c - 1$
 Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
 <!--ID: 1749393067542-->
 END%%
@@ -282,16 +282,16 @@ END%%
 
 %%ANKI
 Basic
-Expression $274,246 \cdot 0.0005461$  is equivalently expressed as $10$ to what power?
-Back: $\log_{10}{274,246} + \log_{10}{0.0005461}$
+Expression $274246 \cdot 0.0005461$  is equivalently expressed as $10$ to what power?
+Back: $\log_{10}{274246} + \log_{10}{0.0005461}$
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1746068831050-->
 END%%
 
 %%ANKI
 Basic
-Expression $274,246 \div 0.0005461$  is equivalently expressed as $10$ to what power?
-Back: $\log_{10}{274,246} - \log_{10}{0.0005461}$
+Expression $274246 \div 0.0005461$  is equivalently expressed as $10$ to what power?
+Back: $\log_{10}{274246} - \log_{10}{0.0005461}$
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1749393067552-->
 END%%
@@ -664,13 +664,6 @@ Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1747141197047-->
 END%%
 
-%%ANKI
-Cloze
-To {1:multiply} two numbers, {1:add} their respective {2:logs} and take the {2:antilog} of the {1:sum}.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1749393067555-->
-END%%
-
 ## Quotient Rule
 
 Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x \div y)} = \log_b{x} - \log_b{y}$$
@@ -737,13 +730,6 @@ Rewrite the following expression using $\log$ and $\mathop{\text{antilog}}$. $$x
 Back: $\mathop{\text{antilog}}(\log{x} - \log{y})$
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1749393067589-->
-END%%
-
-%%ANKI
-Cloze
-To {1:divide} two numbers, {1:subtract} their respective {2:logs} and take the {2:antilog} of the {1:difference}.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1749393067593-->
 END%%
 
 ## Bibliography

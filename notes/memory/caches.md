@@ -284,6 +284,14 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1749028189064-->
 END%%
 
+%%ANKI
+Basic
+Why are cache set index bits chosen from the middle?
+Back: It better maps adjacent memory addresses to different cache sets.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409512-->
+END%%
+
 ## Cache Misses
 
 When a data object can be retreived from a cache as opposed to a larger, slower device, we have what is called a **cache hit**. Otherwise we have a **cache miss**.
@@ -422,6 +430,8 @@ Restrictive placement policies may lead to **conflict misses**, in which the cac
 
 A **working set** refers to a set of blocks frequently accessed by some portion of a program. A **capacity miss** is a cache miss that occurs because the working set is larger than the capacity of the cache.
 
+**Thrashing** refers to any situation in which a cache is repeatedly loading and evicting the same sets of cache blocks.
+
 %%ANKI
 Basic
 With respect to caching, what is a placement policy?
@@ -531,6 +541,124 @@ With respect to caches, what does the "working set of a phase" refer to?
 Back: The set of data objects frequently accessed by some part of a program.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1748461340196-->
+END%%
+
+%%ANKI
+Basic
+What does thrashing refer to?
+Back: Any situation in which a cache is repeatedly loading and evicting the same set of cache blocks.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409519-->
+END%%
+
+%%ANKI
+Basic
+Which kind of cache miss is most typically associated with thrashing?
+Back: Conflict misses.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409522-->
+END%%
+
+### Direct-Mapped Caches
+
+A cache $\langle S, E, B, m \rangle$ where $E = 1$ is called a **direct-mapped cache**.
+
+%%ANKI
+Basic
+Which cache placement policy is considered simplest?
+Back: Direct-mapped caches.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409525-->
+END%%
+
+%%ANKI
+Basic
+What is a direct-mapped cache?
+Back: A cache with one line per set.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409528-->
+END%%
+
+%%ANKI
+Basic
+Which parameter of cache $\langle S, E, B, m \rangle$ is used to category a cache's placement policy?
+Back: $E$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409532-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle S, E, B, m \rangle$ be a direct-mapped cache. What is the value of $E$?
+Back: $E = 1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409536-->
+END%%
+
+%%ANKI
+Cloze
+The process of a cache determining a hit or miss and retrieving a value consists of three steps:
+1. {set selection}
+2. {line matching}
+3. {word extraction}
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409541-->
+END%%
+
+%%ANKI
+Basic
+Which cache placement policy has the simplest corresponding replacement policy?
+Back: Direct-mapped caches.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409546-->
+END%%
+
+%%ANKI
+Basic
+What replacement policy must a direct-mapped cache use?
+Back: Just replace the one and only line in the set.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409550-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle 4, 1, 2, 4 \rangle$. How many bytes are in a cache block?
+Back: $2$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409554-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle 4, 1, 2, 4 \rangle$. What are the possible block offset bits?
+Back: `0` and `1`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409558-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle 4, 1, 2, 4 \rangle$. What are the possible set index bits?
+Back: `00`, `01`, `10`, and `11`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409561-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle 4, 1, 2, 4 \rangle$. How many cache blocks are there?
+Back: $4$ (one for each cache line).
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409565-->
+END%%
+
+%%ANKI
+Basic
+Consider cache $\langle 4, 1, 2, 4 \rangle$. How many (logical) block numbers are there?
+Back: $8$ (two for each cache block).
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1749768409570-->
 END%%
 
 ## Bibliography

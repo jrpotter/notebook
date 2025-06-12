@@ -90,8 +90,8 @@ END%%
 
 %%ANKI
 Basic
-Let $G = \langle V, \Sigma, R, S \rangle$ be a CFG. What property must $V$ satisfy?
-Back: It must be disjoint from $\Sigma$.
+Let $G = \langle V, \Sigma, R, S \rangle$ be a CFG. What properties must $V$ satisfy?
+Back: It must be a finite set disjoint from $\Sigma$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1746370634220-->
 END%%
@@ -114,8 +114,8 @@ END%%
 
 %%ANKI
 Basic
-Let $G = \langle V, \Sigma, R, S \rangle$ be a CFG. What property must $\Sigma$ satisfy?
-Back: It must be disjoint from $V$.
+Let $G = \langle V, \Sigma, R, S \rangle$ be a CFG. What properties must $\Sigma$ satisfy?
+Back: It must be a finite set disjoint from $V$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1746370634228-->
 END%%
@@ -161,7 +161,7 @@ END%%
 %%ANKI
 Basic
 Let $G = \langle V, \Sigma, R, S \rangle$ be a CFG. What property must $S$ satisfy?
-Back: It must be a member of $S$.
+Back: It must be a member of $V$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1746370634250-->
 END%%
@@ -169,7 +169,7 @@ END%%
 %%ANKI
 Basic
 Suppose $A$ is a variable and $uAv$ yields $uwv$. What must exist in the CFG?
-Back: A rule starting $A \rightarrow w$.
+Back: A rule stating $A \rightarrow w$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1746370634254-->
 END%%

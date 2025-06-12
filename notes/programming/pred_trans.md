@@ -937,7 +937,7 @@ END%%
 
 %%ANKI
 Basic
-How does Gries suggest when finding a solution for $x$ in the following assertion? $$\{T\} \;a \coloneqq a + 1; b \coloneqq x \;\{a = b\}$$
+How does Gries suggest finding a solution for $x$ in the following assertion? $$\{T\} \;a \coloneqq a + 1; b \coloneqq x \;\{a = b\}$$
 Back: Rewrite $x$ as a function of $a$ and $b$, i.e. as $x(a, b)$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1749415555609-->
