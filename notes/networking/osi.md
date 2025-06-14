@@ -105,8 +105,8 @@ END%%
 
 %%ANKI
 Basic
-Which of network or host devices is the physical layer typically associated with?
-Back: Network devices.
+Is the physical layer associated with network devices, host devices, or both?
+Back: Both.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749134703559-->
 END%%
@@ -172,8 +172,8 @@ END%%
 
 %%ANKI
 Basic
-Which of network or host devices is the link layer typically associated with?
-Back: Network devices.
+Is the link layer associated with network devices, host devices, or both?
+Back: Both.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749134703586-->
 END%%
@@ -233,8 +233,8 @@ END%%
 
 %%ANKI
 Basic
-Which of network or host devices is the network layer typically associated with?
-Back: Network devices.
+Is the network layer associated with network devices, host devices, or both?
+Back: Both.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749134703607-->
 END%%
@@ -283,7 +283,7 @@ END%%
 
 %%ANKI
 Basic
-Which of network or host devices is the transport layer typically associated with?
+Is the transport layer associated with network devices, host devices, or both?
 Back: Host devices.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749134703626-->
@@ -350,7 +350,7 @@ END%%
 
 %%ANKI
 Basic
-Which of network or host devices is the session layer typically associated with?
+Is the session layer associated with network devices, host devices, or both?
 Back: Host devices.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749134703650-->
@@ -409,7 +409,7 @@ END%%
 
 %%ANKI
 Basic
-Which of network or host devices is the presentation layer typically associated with?
+Is the presentation layer associated with network devices, host devices, or both?
 Back: Host devices.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749134703671-->
@@ -461,7 +461,7 @@ END%%
 
 %%ANKI
 Basic
-Which of network or host devices is the application layer typically associated with?
+Is the application layer associated with network devices, host devices, or both?
 Back: Host devices.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749134703683-->

@@ -164,7 +164,9 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1744898357005-->
 END%%
 
-## Relation Form
+## Equivalences
+
+### Relation Form
 
 For any relation $R$ there exists a function $F \subseteq R$ with $\mathop{\text{dom}}F = \mathop{\text{dom}}R$.
 
@@ -209,7 +211,7 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1743376072886-->
 END%%
 
-## Multiplicative Form
+### Multiplicative Form
 
 For any set $I$ and function $H$ with domain $I$, if $H(i) \neq \varnothing$ for all $i \in I$, then $\bigtimes_{i \in I} H(i) \neq \varnothing$. Note this statement relies on the [[set#Cartesian Product|Cartesian product]] of infinite sets. 
 
@@ -261,7 +263,7 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1743376072891-->
 END%%
 
-## Covering Form
+### Covering Form
 
 For any set $A$, there exists a function $F$ with $\mathop{\text{dom}}(F) = \mathscr{P}(A) - \{\varnothing\}$ such that $F(B) \in B$ for all $B \in \mathop{\text{dom}}(F)$.
 
@@ -306,7 +308,7 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1743376072896-->
 END%%
 
-## Partition Form
+### Partition Form
 
 Let $P$ be a [[order#Partitions|partition]] of set $A$. Then there exists a set $B$ containing exactly one element from each member of $P$.
 
@@ -341,7 +343,7 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1743376072899-->
 END%%
 
-## Cardinal Comparability
+### Cardinal Comparability
 
 For any two cardinal numbers $\kappa$ and $\lambda$, either $\kappa \leq \lambda$ or $\lambda \leq \kappa$.
 
@@ -377,7 +379,39 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1744555922896-->
 END%%
 
-## Zorn's Lemma
+%%ANKI
+Basic
+For cardinal numbers $\kappa$ and $\lambda$, suppose $\kappa \not\leq \lambda$. What does this imply?
+Back: N/A. This depends on whether we assume the axiom of choice.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749847121003-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$ be cardinal numbers such that $\kappa \not\leq \lambda$. Given AoC, what does this imply?
+Back: That $\lambda < \kappa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749847121007-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$ be cardinal numbers. Given AoC, *why* can we assume $\lambda < \kappa$ if $\kappa \not\leq \lambda$?
+Back: AoC is equivalent to the proposition that either $\kappa \leq \lambda$ or $\lambda \leq \kappa$ holds true.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749847121012-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$ be cardinal numbers. *Why* can we assume $\lambda < \kappa$ if $\kappa \not\leq \lambda$?
+Back: N/A. This is only true if we assume the axiom of choice.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749847121016-->
+END%%
+
+### Zorn's Lemma
 
 Let $A$ be a [[order#Partial Orders|partially ordered set]] with ordering relation $\leq$. A **chain** is a subset of $A$ that is [[order#Total Order|totally ordered]] for the induced order. If every chain $B \subseteq A$ has an upper bound also in $A$, then Zorn's lemma states that $A$ must have a [[order#Bounds|maximal]] element.
 
@@ -531,6 +565,42 @@ Let $S$ be a function with domain $\omega$ such that $S(n) \subset S(n^+)$. *Why
 Back: For all $n \in \omega$, $\bigcup_{k \in \omega} S(k) \neq S(n)$ since $S(n^+)$ is a larger set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1745778997739-->
+END%%
+
+%%ANKI
+Basic
+Suppose you wanted to apply Zorn's lemma to the following set. Why do we have the $f = \varnothing$ disjunct? $$\begin{align*} \mathscr{H} = \{ f \mid & \,f = \varnothing \lor \text{for some infinite } A \subseteq B, \\ & f \text{ is a } \text{one-to-one correspondence } \\ & \text{between } A \times A \text{ and } A \}. \end{align*}$$
+Back: Zorn's lemma requires that $\mathscr{H}$ contains the union of any chain, including the empty one.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749869956534-->
+END%%
+
+## Arithmetic of Infinite Cardinals
+
+Assuming the axiom of choice, it follows that for any infinite cardinal $\kappa$, $$\kappa \cdot \kappa = \kappa.$$
+
+%%ANKI
+Basic
+Let $\kappa$ be a cardinal number. Assuming AoC, what does $\kappa \cdot \kappa$ simplify to?
+Back: Indeterminate. Depends on whether $\kappa$ is finite or not.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749869956545-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be a finite cardinal number. Assuming AoC, what does $\kappa \cdot \kappa$ simplify to?
+Back: N/A. This is the simplest value.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749869956548-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa \cdot \kappa$ simplify to?
+Back: $\kappa \cdot \kappa = \kappa$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749869956551-->
 END%%
 
 ## Bibliography

@@ -88,6 +88,8 @@ END%%
 
 **Multiplexing** is a method by which multiple data signals are combined into one signal over a shared medium. **Demultiplexing** is the reverse process, in which the original channels are extracted on the receiver end.
 
+**Protocol multiplexing** allows multiple different protocols to coexist on the same infrastructure, as well as multiple instantiations of the same protocol object to be used simultaneously without confusion.
+
 %%ANKI
 Basic
 What is multiplexing?
@@ -134,6 +136,22 @@ Suppose a device is labeled DMX. What is it probably?
 Back: A demultiplexer.
 Reference: “Multiplexing.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1292011292).
 <!--ID: 1748377124479-->
+END%%
+
+%%ANKI
+Basic
+With respect to different protocols, what does protocol multiplexing refer to?
+Back: Mixing multiple protocols on the same infrastructure.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1749871716540-->
+END%%
+
+%%ANKI
+Basic
+With respect to a single protocol, what does protocol multiplexing refer to?
+Back: Mixing multiple instantiations of the same protocol objects without confusion.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1749871716550-->
 END%%
 
 ## Telecommunications
@@ -502,6 +520,8 @@ END%%
 
 **Layering** refers to the hierarchical structure and separation of responsibilities used to approach networking-related protocol suites. The most frequently cited layering model is [[osi|OSI]].
 
+When an object, called a **protocol data unit** (PDU), at one layer is carried by a lower layer, it is said to be **encapsulated** by the next layer down.
+
 %%ANKI
 Basic
 With respect to networking, what does layering refer to?
@@ -516,6 +536,70 @@ What is the most frequently cited layering model?
 Back: OSI.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749131741108-->
+END%%
+
+%%ANKI
+Basic
+What is PDU an acronym for?
+Back: A **P**rotocol **D**ata **U**nit.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1749871716553-->
+END%%
+
+%%ANKI
+Cloze
+A {1:PDU} from layer {2:$N$} is {2:encapsulated} as opaque data by layer {1:$N - 1$}.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1749871716556-->
+END%%
+
+%%ANKI
+Basic
+The PDU encapsulated in layer $N$ is provided from where?
+Back: Layer $N + 1$.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1749871716560-->
+END%%
+
+%%ANKI
+Basic
+Which layer is responsible for encapsulating the PDU from layer $N$?
+Back: $N - 1$.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1749871716564-->
+END%%
+
+%%ANKI
+Basic
+What term refers to the object encapsulated by a below layer?
+Back: A PDU.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1749871716568-->
+END%%
+
+%%ANKI
+Basic
+What is a layer 4 PDU?
+Back: A PDU produced by layer 4 (the transport layer).
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1749871716572-->
+END%%
+
+%%ANKI
+Basic
+According to Fall et al., what is the essence of encapsulation?
+Back: Treating data from the layer above as opaque, uninterpretable information.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1749871716576-->
+END%%
+
+%%ANKI
+Basic
+What concept is the following diagram a depiction of?
+![[encapsulation.png]]
+Back: Encapsulation.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1749872056729-->
 END%%
 
 ## Bibliography

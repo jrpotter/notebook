@@ -283,7 +283,7 @@ END%%
 
 ### Invariance Under Congruence
 
-If $S \in \mathscr{M}$ and $T$ is congruent to $S$, then $T \in \mathscr{M}$ and $a(S) = a(T)$.
+If $S \in \mathscr{M}$ and $T$ is [[shape|congruent]] to $S$, then $T \in \mathscr{M}$ and $a(S) = a(T)$.
 
 %%ANKI
 Basic

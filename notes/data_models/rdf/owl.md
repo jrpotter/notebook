@@ -44,13 +44,6 @@ CONSTRUCT { ?y ?Q ?x. }
 WHERE { ?x ?P ?y. ?P owl:inverseOf ?Q. }
 ```
 
-In the special case in which a property is its own inverse, OWL introduces the `owl:SymmetricProperty` class, understood as:
-
-```sparql
-CONSTRUCT { ?p owl:inverseOf ?p. }
-WHERE { ?p a owl:SymmetricProperty. }
-```
-
 %%ANKI
 Basic
 Which OWL property most closely aligns with mathematical inverses?
@@ -78,6 +71,17 @@ WHERE { ?x ?P ?y. ?P owl:inverseOf ?Q. }
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1749331998321-->
 END%%
+
+## Relationships
+
+### Symmetry
+
+In the special case in which a property is its own inverse, OWL introduces the `owl:SymmetricProperty` class, understood as:
+
+```sparql
+CONSTRUCT { ?p owl:inverseOf ?p. }
+WHERE { ?p a owl:SymmetricProperty. }
+```
 
 %%ANKI
 Basic
@@ -118,6 +122,47 @@ WHERE { ?P a owl:SymmetricProperty. }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1749331998332-->
+END%%
+
+%%ANKI
+Basic
+Which OWL class corresponds to relation symmetry?
+Back: `owl:SymmetricProperty`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1749910472002-->
+END%%
+
+### Transitivity
+
+The OWL `owl:TransitiveProperty` is understood as:
+
+```sparql
+CONSTRUCT { ?x ?p ?z . }
+WHERE { ?x ?p ?y.
+        ?y ?p ?z.
+        ?p a owl:TransitiveProperty. }
+```
+
+%%ANKI
+Basic
+Which OWL class corresponds to relation transitivity?
+Back: `owl:TransitiveProperty`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1749910472005-->
+END%%
+
+%%ANKI
+Basic
+How is `owl:TransitiveProperty` understood using SPARQL?
+Back:
+```sparql
+CONSTRUCT { ?x ?p ?z . }
+WHERE { ?x ?p ?y.
+        ?y ?p ?z.
+        ?p a owl:TransitiveProperty. }
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1749910472008-->
 END%%
 
 ## Bibliography

@@ -937,6 +937,8 @@ END%%
 
 Let $\kappa$ and $\lambda$ be any cardinal numbers. Then $\kappa \cdot \lambda = \mathop{\text{card}}(K \times L)$, where $K$ and $L$ are any sets of cardinality $\kappa$ and $\lambda$, respectively.
 
+For any infinite cardinal $\kappa$, $\kappa \cdot \kappa = \kappa$.
+
 %%ANKI
 Basic
 Let $\kappa$ and $\lambda$ be any cardinal numbers. How is $\kappa \cdot \lambda$ defined?
@@ -2366,7 +2368,7 @@ END%%
 
 %%ANKI
 Cloze
-Let $A$ be a set. Function $f \colon n \rightarrow A$ is called a sequence {in $A$}.
+Let $A$ be a set. Function $f \colon n \rightarrow A$ is called a sequence {in} $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1746501312156-->
 END%%

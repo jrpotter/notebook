@@ -581,7 +581,7 @@ END%%
 
 %%ANKI
 Basic
-Which parameter of cache $\langle S, E, B, m \rangle$ is used to category a cache's placement policy?
+Which parameter of cache $\langle S, E, B, m \rangle$ is used to categorize a cache's placement policy?
 Back: $E$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1749768409532-->

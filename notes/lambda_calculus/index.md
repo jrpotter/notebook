@@ -641,7 +641,7 @@ END%%
 
 %%ANKI
 Basic
-Given $\lambda$-term $P$, what kind of mathematic object is $FV(P)$?
+Given $\lambda$-term $P$, what kind of mathematical object is $FV(P)$?
 Back: A set.
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
 <!--ID: 1716745016034-->

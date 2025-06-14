@@ -617,6 +617,22 @@ Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://
 <!--ID: 1723816108531-->
 END%%
 
+%%ANKI
+Basic
+Let $P$ be a partial order and $a, b \in P$. If $a \not\lt b$, must it be the case that $b < a$?
+Back: No, it's possible $a = b$ or $a$ and $b$ don't relate to each other at all.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749847120962-->
+END%%
+
+%%ANKI
+Basic
+Let $P$ be a partial order and $a, b \in P$. If $a \not\leq b$, must it be the case that $b < a$?
+Back: No, it's possible $a$ and $b$ don't relate to each other at all.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749847120970-->
+END%%
+
 A binary relation $R$ on set $A$ is a **strict partial order on $A$** iff it is irreflexive on $A$, antisymmetric, and transitive.
 
 %%ANKI
@@ -679,6 +695,22 @@ Basic
 Back: It is neither antisymmetric nor transitive.
 Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
 <!--ID: 1723902024394-->
+END%%
+
+%%ANKI
+Basic
+Let $P$ be a strict partial order and $a, b \in P$. If $a \not\lt b$, must it be the case that $b < a$?
+Back: No, it's possible $a$ and $b$ don't relate to each other at all.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749847120974-->
+END%%
+
+%%ANKI
+Basic
+Let $P$ be a strict partial order and $a, b \in P$. If $a \not\leq b$, must it be the case that $b < a$?
+Back: No, it's possible $a$ and $b$ don't relate to each other at all.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749847120978-->
 END%%
 
 ### Hasse Diagrams
@@ -1339,6 +1371,22 @@ Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikiped
 <!--ID: 1723923665328-->
 END%%
 
+%%ANKI
+Basic
+Let $S$ be a total order and $a, b \in P$. If $a \not\lt b$, must it be the case that $b < a$?
+Back: No, it's possible $a = b$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749847120982-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a total order and $a, b \in P$. If $a \not\leq b$, must it be the case that $b < a$?
+Back: Yes, since $a \neq b$ and $S$ is strongly connected.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749847120988-->
+END%%
+
 A binary relation $R$ on set $A$ is a **strict total order on $A$** iff it is irreflexive on $A$, antisymmetric, transitive, and connected. In other words, a strict total order is a connected strict partial order.
 
 %%ANKI
@@ -1408,6 +1456,22 @@ Basic
 Back: It is neither antisymmetric nor transitive.
 Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
 <!--ID: 1723923665337-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a strict total order and $a, b \in P$. If $a \not\lt b$, must it be the case that $b < a$?
+Back: Yes, since $S$ is irreflexive and connected.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749847120993-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a strict total order and $a, b \in P$. If $a \not\leq b$, must it be the case that $b < a$?
+Back: Yes, since $S$ is irreflexive and connected.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1749847120997-->
 END%%
 
 ## Bibliography
