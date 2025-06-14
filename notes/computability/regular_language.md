@@ -1,7 +1,7 @@
 ---
 title: Automaton
 TARGET DECK: Obsidian::STEM
-FILE TAGS: computability::automaton
+FILE TAGS: computability::regular
 tags:
   - automaton
   - computability
@@ -137,6 +137,15 @@ Cloze
 {1:Vertices} are to {2:graphs} whereas {2:states} are to {1:state diagrams}.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1734999643328-->
+END%%
+
+%%ANKI
+Basic
+The following is a schematic of what kind of automaton?
+![[schematic-finite-automaton.png]]
+Back: A finite automaton.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267156-->
 END%%
 
 ## Determinism
@@ -1922,7 +1931,7 @@ END%%
 
 ## Regular Expressions
 
-A **regular expression** is a textual representation of some language. They are equivalent to [[automaton|finite automaton]] in their descriptive power. More formally, we say $R$ is a regular expression if $R$ is
+A **regular expression** is a textual representation of some language. They are equivalent to [[regular_language|finite automaton]] in their descriptive power. More formally, we say $R$ is a regular expression if $R$ is
 
 1. $a$ for some $a$ in the alphabet $\Sigma$,
 2. $\epsilon$,

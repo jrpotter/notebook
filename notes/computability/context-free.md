@@ -700,6 +700,289 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1748052528180-->
 END%%
 
+## Pushdown Automaton
+
+A (nondeterministic) **pushdown automaton** (PDA) is a $6$-tuple $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$, where $Q$, $\Sigma$, $\Gamma$, and $F$ are all finite sets, and
+
+1. $Q$ is the set of states,
+2. $\Sigma$ is the input alphabet,
+3. $\Gamma$ is the stack alphabet,
+4. $\delta \colon Q \times \Sigma_\epsilon \times \Gamma_\epsilon \rightarrow \mathscr{P}(Q \times \Gamma_\epsilon)$ is the transition function,
+5. $q_0 \in Q$ is the start state, and
+6. $F \subseteq Q$ is the set of accept states.
+
+%%ANKI
+Basic
+What is PDA an acronym for?
+Back: **P**ush**d**own **a**utomaton.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267158-->
+END%%
+
+%%ANKI
+Basic
+A pushdown automaton introduces what additional data structure to a finite automaton?
+Back: A stack.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267160-->
+END%%
+
+%%ANKI
+Basic
+How are pushdown automatons typically abbreviated?
+Back: As PDAs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267161-->
+END%%
+
+%%ANKI
+Basic
+The formal definition of a PDA is a tuple of what length?
+Back: Six.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267162-->
+END%%
+
+%%ANKI
+Basic
+Does term "finite automaton" typically refer to the deterministic or nondeterministic variant?
+Back: N/A.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267164-->
+END%%
+
+%%ANKI
+Basic
+Does term "pushdown automaton" typically refer to the deterministic or nondeterministic variant?
+Back: The nondeterministic variant.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267165-->
+END%%
+
+%%ANKI
+Basic
+Why are nondeterminstic PDAs typically highlighted over deterministic ones?
+Back: Nondeterministic PDAs are equivalent to CFGs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267167-->
+END%%
+
+%%ANKI
+Basic
+Which of deterministic or nondeterministic finite automaton recognize more languages?
+Back: N/A. They are equivalent in power.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267168-->
+END%%
+
+%%ANKI
+Basic
+Which of deterministic or nondeterministic pushdown automaton recognize more languages?
+Back: Nondeterministic PDAs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267169-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. What is $Q$?
+Back: A finite set of states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267170-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. What is $\Sigma$?
+Back: A finite set corresponding to the input alphabet.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267171-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. What is $\Gamma$?
+Back: A finite set corresponding to the stack alphabet.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267172-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. What is $\delta$?
+Back: The transition function.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267173-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. What is $q_0$?
+Back: The start state.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267174-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. How does $q_0$ relate to other members of the tuple?
+Back: $q_0 \in Q$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922915372-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. What is $F$?
+Back: The set of final states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267175-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. How does $F$ relate to other members of the tuple?
+Back: $F \subseteq Q$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922915374-->
+END%%
+
+%%ANKI
+Basic
+The following is a schematic of what kind of automaton?
+![[schematic-pushdown-automaton.png]]
+Back: A pushdown automaton.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267176-->
+END%%
+
+%%ANKI
+Basic
+What two alphabets are associated with a PDA?
+Back: The input alphabet and the stack alphabet.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267177-->
+END%%
+
+%%ANKI
+Basic
+Writing a symbol to a PDA's stack corresponds to what ADT operation?
+Back: Pushing.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267178-->
+END%%
+
+%%ANKI
+Basic
+Removing a symbol to a PDA's stack corresponds to what ADT operation?
+Back: Popping.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267179-->
+END%%
+
+%%ANKI
+Basic
+What does Sipser call the "heart of any formal definition of an automaton"?
+Back: The transition function.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267180-->
+END%%
+
+%%ANKI
+Basic
+Let $\Sigma$ be some alphabet. What does $\Sigma_\epsilon$ denote?
+Back: The set $\Sigma \cup \{\epsilon\}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267181-->
+END%%
+
+%%ANKI
+Basic
+How might set $\Sigma \cup \{\epsilon\}$ be alternatively denoted?
+Back: As $\Sigma_\epsilon$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267166-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. What is the domain of $\delta$?
+Back: $Q \times \Sigma_\epsilon \times \Gamma_\epsilon$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922915375-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. What is the codomain of $\delta$?
+Back: $Q \times \Sigma_\epsilon \times \Gamma_\epsilon$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922915377-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA, $q \in Q$, $\gamma \in \Gamma$. How is $\epsilon$ in $\delta(q, \epsilon, \gamma)$ interpreted?
+Back: As not advancing the input tape.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922915379-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA, $q \in Q$, $\sigma \in \Sigma$. How is $\epsilon$ in $\delta(q, \sigma, \epsilon)$ interpreted?
+Back: As not popping the stack.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922915380-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. What is the codomain of $\delta$?
+Back: $\mathscr{P}(Q \times \Gamma_\epsilon)$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. Why is $Q$ included in $\delta$'s codomain specification?
+Back: The PDA may transition to a different state.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922915382-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. Why is $\Gamma_\epsilon$ included in $\delta$'s codomain specification?
+Back: The PDA may write to the stack.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922915383-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. Why is the power set operation included in $\delta$'s codomain specification?
+Back: The PDA is nondeterministic.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922915384-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. How is reading from the stack specified?
+Back: As an input to the transition function $\delta$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922915385-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. How is writing to the stack specified?
+Back: As an output to the transition function $\delta$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922915387-->
+END%%
+
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
