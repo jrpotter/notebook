@@ -1134,6 +1134,14 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1749415555627-->
 END%%
 
+%%ANKI
+Basic
+Which command does Gries encourage guards of to be made as strong as possible?
+Back: The alternative command.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1750081663610-->
+END%%
+
 ### Iterative
 
 The general form of the **iterative command** is: $$\begin{align*} \textbf{do } & B_1 \rightarrow S_1 \\ \textbf{ | } & B_2 \rightarrow S_2 \\ & \quad\cdots \\ \textbf{ | } & B_n \rightarrow S_n \\ \textbf{od } & \end{align*}$$
@@ -1369,6 +1377,29 @@ Cloze
 Let $R$ be a predicate. Then $wp(\text{DO}, R) = \exists k,$ {$k \geq 0$} $\land$ $H_k(R)$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1737187609895-->
+END%%
+
+%%ANKI
+Basic
+Why does Gries encourage making the guards of an iterative command as weak as possible?
+Back: It is better to never terminate than silently handle unexpected cases.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1750081663622-->
+END%%
+
+%%ANKI
+Cloze
+Gries encourages {1:strong} guards for {2:alternative} commands and {2:weak} guards for {1:iterative} commands.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1750081663626-->
+END%%
+
+%%ANKI
+Basic
+Which command does Gries encourage guards of to be made as weak as possible?
+Back: The iterative command.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1750081663629-->
 END%%
 
 #### Bound Functions

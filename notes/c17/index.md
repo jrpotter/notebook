@@ -22,7 +22,7 @@ END%%
 
 %%ANKI
 Basic
-C can compile into any sequence of instructions provided what holds?
+A C compiler can produce any sequence of assembly instructions provided what holds?
 Back: All observable states are correctly reproduced.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1723856661337-->

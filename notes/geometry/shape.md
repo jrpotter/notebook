@@ -21,7 +21,7 @@ END%%
 
 %%ANKI
 Basic
-Why aren't ellipses and circles considered the same shape?
+Why aren't circles and (non-circular) ellipses considered the same shape?
 Back: You cannot get from one to another under the similarity transformations.
 Reference: “Shape.” In _Wikipedia_, January 23, 2025. [https://en.wikipedia.org/w/index.php?title=Shape](https://en.wikipedia.org/w/index.php?title=Shape&oldid=1271335237).
 <!--ID: 1749910471956-->
@@ -51,14 +51,14 @@ END%%
 
 %%ANKI
 Cloze
-{1:Chirality} is to {2:reflection} as {2:size} is to {1:uniform scaling}.
+{1:Chirality} is to {2:reflection} as {2:size} is to {1:scale}.
 Reference: “Shape.” In _Wikipedia_, January 23, 2025. [https://en.wikipedia.org/w/index.php?title=Shape](https://en.wikipedia.org/w/index.php?title=Shape&oldid=1271335237).
 <!--ID: 1749910471967-->
 END%%
 
 %%ANKI
 Basic
-Why aren't squares and rectangles considered the same shape?
+Why aren't squares and (non-square) rectangles considered the same shape?
 Back: You cannot get from one to another under the similarity transformations.
 Reference: “Shape.” In _Wikipedia_, January 23, 2025. [https://en.wikipedia.org/w/index.php?title=Shape](https://en.wikipedia.org/w/index.php?title=Shape&oldid=1271335237).
 <!--ID: 1749910471970-->

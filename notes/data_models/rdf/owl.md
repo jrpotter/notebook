@@ -165,6 +165,157 @@ Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web
 <!--ID: 1749910472008-->
 END%%
 
+## Equivalence
+
+### Classes
+
+Two classes are said to be **equivalent** if their class extensions contain the same exact set of members. In RDFS, this is expressed as
+
+```turtle
+?A rdf:subClassOf ?B
+?B rdf:subClassOf ?A
+```
+
+In OWL, this is expressed simply as:
+
+```turtle
+?A owl:equivalentClass ?B
+```
+
+%%ANKI
+Basic
+What does it mean for two classes to be equivalent?
+Back: The two classes have the same members, i.e. the same class extension.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1750206490888-->
+END%%
+
+%%ANKI
+Basic
+How is equivalence between classes `A` and `B` expressed in RDFS?
+Back:
+```turtle
+A rdf:subClassOf B
+B rdf:subClassOf A
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1750206490893-->
+END%%
+
+%%ANKI
+Basic
+How is equivalence between classes `A` and `B` expressed in OWL?
+Back:
+```turtle
+A owl:equivalentClass B
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1750206490895-->
+END%%
+
+### Properties
+
+When two properties are equivalent, we expect that in any triple that uses one as a predicate, the other can be substituted. In RDFS, this is expressed as:
+
+```turtle
+?P rdfs:subPropertyOf ?Q
+?Q rdfs:subPropertyOf ?Q
+```
+
+In OWL, this is expressed simply as:
+
+```turtle
+?P owl:equivalentProperty ?Q
+```
+
+%%ANKI
+Basic
+What does it mean for two properties to be equivalent?
+Back: In any triple that uses one of the properties as a predicate, the other can be substituted.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1750206490898-->
+END%%
+
+%%ANKI
+Basic
+How is equivalence between properties `P` and `Q` expressed in RDFS?
+Back:
+```turtle
+A rdf:subPropertyOf B .
+B rdf:subPropertyOf A .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1750206490901-->
+END%%
+
+%%ANKI
+Basic
+How is equivalence between properties `P` and `Q` expressed in OWL?
+Back:
+```turtle
+P owl:equivalentProperty Q .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1750206490904-->
+END%%
+
+%%ANKI
+Cloze
+Classes is to {`owl:equivalentClass`} whereas properties are to {`owl:equivalentProperty`}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1750206490907-->
+END%%
+
+### Individuals
+
+Members of classes are called **individuals**. We can indicate two references to individuals actually refer to the same individual using the `owl:sameAs` construct. In SPARQL,
+
+```sparql
+CONSTRUCT { ?x ?p ?o. }
+WHERE { ?y ?p ?o. ?x owl:sameAs ?y. }
+
+CONSTRUCT { ?s ?x ?o. }
+WHERE { ?s ?y ?o. ?x owl:sameAs ?y. }
+
+CONSTRUCT { ?s ?p ?x. }
+WHERE { ?s ?p ?y. ?x owl:sameAs ?y. }
+```
+
+with the reverse direction handled by noting `owl:sameAs` is a `owl:SymmetricProperty`.
+
+%%ANKI
+Basic
+How is equivalence between individuals `x` and `y` expressed in OWL?
+Back:
+```turtle
+x owl:sameAs y .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1750206490910-->
+END%%
+
+%%ANKI
+Basic
+What is an "individual"?
+Back: A member of some class.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1750206490914-->
+END%%
+
+%%ANKI
+Cloze
+{1:Classes} are to {2:`owl:equivalentClass`} whereas {2:individuals} are to {1:`owl:sameAs`}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1750206490918-->
+END%%
+
+%%ANKI
+Cloze
+{1:Individuals} are to {2:`owl:sameAs`} whereas {2:properties} are to {1:`owl:equivalentProperty`}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1750206490922-->
+END%%
+
 ## Bibliography
 
 * Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.

@@ -259,6 +259,30 @@ END%%
 
 %%ANKI
 Basic
+What is the cardinality of the set of algebraic numbers?
+Back: $\aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750167844254-->
+END%%
+
+%%ANKI
+Basic
+What is the cardinality of the set of transcendental numbers?
+Back: $2^{\aleph_0}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750167844257-->
+END%%
+
+%%ANKI
+Basic
+Let $T$ and $A$ be the set of transcendental and algebraic numbers. How do we prove $\mathop{\text{card}}(T) = 2^{\aleph_0}$?
+Back: $\mathop{\text{card}}{(T \cup A)} = 2^{\aleph_0}$ and $\mathop{\text{card}}(A) < 2^{\aleph_0}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750167844261-->
+END%%
+
+%%ANKI
+Basic
 Which of the algebraic and/or transcendental numbers is countable?
 Back: The algebraic numbers.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

@@ -156,7 +156,7 @@ Is the following bent four in the corner alive?
 ![[bent-four-corner-alive.png]]
 Back: Yes.
 Reference: Bent Four In The Corner — The Magic of Go Game, 2022 [https://www.youtube.com](https://www.youtube.com/watch?v=_0uxv-u60CE).
-<!--ID: 1740838109952-->
+<!--ID: 1750165476380-->
 END%%
 
 %%ANKI

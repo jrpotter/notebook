@@ -577,6 +577,8 @@ END%%
 
 ## Arithmetic of Infinite Cardinals
 
+### Squaring
+
 Assuming the axiom of choice, it follows that for any infinite cardinal $\kappa$, $$\kappa \cdot \kappa = \kappa.$$
 
 %%ANKI
@@ -601,6 +603,173 @@ Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa \cd
 Back: $\kappa \cdot \kappa = \kappa$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749869956551-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be a cardinal number. Assuming AoC, what does $\kappa^\kappa$ simplfiy to?
+Back: Indeterminate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750170196911-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa^\kappa$ simplfiy to?
+Back: $2^\kappa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750170196923-->
+END%%
+
+%%ANKI
+Cloze
+Let $\kappa$ be an infinite cardinal number. Assuming AoC, the following is used to prove $\kappa^\kappa = 2^\kappa$:
+* {$\kappa^\kappa$}
+* {$\leq (2^\kappa)^\kappa$}
+* {$= 2^{\kappa \cdot \kappa}$}
+* {$= 2^\kappa$}
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750170196927-->
+END%%
+
+### Absorption Law
+
+Let $\kappa$ and $\lambda$ be cardinal numbers, the larger of which is infinite and the smaller of which is nonzero. Then $$\kappa + \lambda = \kappa \cdot \lambda = \mathop{\text{max}}(\kappa, \lambda).$$
+
+%%ANKI
+Basic
+The absorption law of cardinal numbers assumes the larger cardinal number is what?
+Back: Infinite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750166835291-->
+END%%
+
+%%ANKI
+Basic
+The absorption law of cardinal numbers assumes the smaller cardinal number is what?
+Back: Nonzero.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750166835299-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$ be cardinal numbers. Assuming AoC, what does $\kappa + \lambda$ simplify to?
+Back: Indeterminate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750166835302-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$ be cardinal numbers. Assuming AoC, what does $\kappa \cdot \lambda$ simplify to?
+Back: Indeterminate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750166835305-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa \cdot 0$ simplify to?
+Back: $0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750166835308-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is infinite and $\lambda \neq 0$. Assuming AoC, what does $\kappa \cdot \lambda$ simplify to?
+Back: $\mathop{\text{max}}(\kappa, \lambda)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750166835311-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is finite and $\lambda \neq 0$. Assuming AoC, what does $\kappa \cdot \lambda$ simplify to?
+Back: Indeterminate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750166835314-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa + 0$ simplify to?
+Back: $\kappa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750166835317-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is finite and $\lambda \neq 0$. Assuming AoC, what does $\kappa + \lambda$ simplify to?
+Back: Indeterminate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750166835320-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is infinite and $\lambda \neq 0$. Assuming AoC, what does $\kappa + \lambda$ simplify to?
+Back: $\mathop{\text{max}}(\kappa, \lambda)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750166835323-->
+END%%
+
+%%ANKI
+Basic
+The absorption law of cardinal numbers assumes what set theory axiom?
+Back: The axiom of choice.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750166835326-->
+END%%
+
+%%ANKI
+Basic
+Which law states the following cardinal number identities under AoC? $$\kappa + \lambda = \kappa \cdot \lambda = \mathop{\text{max}}(\kappa, \lambda)$$
+Back: The absorption law of cardinal numbers.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750166835328-->
+END%%
+
+%%ANKI
+Basic
+Let $\mathop{\text{card}}(K) = \kappa$ and $\mathop{\text{card}}(L) = \lambda$ s.t. $\lambda \leq \kappa$. What does $\mathop{\text{card}}(K - L)$ evaluate to?
+Back: Some cardinal number between $0$ and $\kappa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750167844239-->
+END%%
+
+%%ANKI
+Basic
+Let $\mathop{\text{card}}(K) = \kappa$ and $\mathop{\text{card}}(L) = \lambda$ s.t. $\lambda < \kappa$. What does $\mathop{\text{card}}(K - L)$ evaluate to?
+Back: $\kappa$ (since $\lambda$ is strictly smaller than $\kappa$).
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750167844250-->
+END%%
+
+%%ANKI
+Cloze
+Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is infinite and $0 < \lambda \leq \kappa$. Assuming AoC, the following is used to prove the absorption law of addition:
+* $\kappa$
+* {$\leq \kappa + \lambda$}
+* {$\leq \kappa + \kappa$}
+* {$= 2 \cdot \kappa$}
+* {$\leq \kappa \cdot \kappa$}
+* $= \kappa$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750170196931-->
+END%%
+
+%%ANKI
+Cloze
+Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is infinite and $0 < \lambda \leq \kappa$. Assuming AoC, the following is used to prove the absorption law of multiplication:
+* $\kappa$
+* {$\leq \kappa \cdot \lambda$}
+* {$\leq \kappa \cdot \kappa$}
+* $= \kappa$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750170196935-->
 END%%
 
 ## Bibliography

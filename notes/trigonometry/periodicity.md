@@ -34,6 +34,14 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1745979190598-->
 END%%
 
+%%ANKI
+Basic
+Let $y = f(x)$ have period $p$. What is the period of $y = f(Bx)$?
+Back: $p / B$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749994457987-->
+END%%
+
 ## Sinusoidal Functions
 
 Let $A$, $B$, $C$, and $D$ be constants with $B \neq 0$. A **sinusoidal function** is one of form $$A\sin{(B[t - C])} + D.$$
@@ -700,7 +708,7 @@ END%%
 
 ## Other Trigonometric Functions
 
-The tangent function is periodic with period $\pi$.
+The tangent and cotangent functions are periodic with period $\pi$. The secant and cosecant functions are periodic with period $2\pi$.
 
 %%ANKI
 Basic
@@ -708,6 +716,62 @@ What is the period of the tangent function?
 Back: $\pi$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1749333600814-->
+END%%
+
+%%ANKI
+Basic
+What is the period of $y = \tan{(Bt)}$?
+Back: $\pi / B$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749994457990-->
+END%%
+
+%%ANKI
+Basic
+What is the period of the cotangent function?
+Back: $\pi$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749994457994-->
+END%%
+
+%%ANKI
+Basic
+What is the period of the secant function?
+Back: $2\pi$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749994457997-->
+END%%
+
+%%ANKI
+Basic
+Where are the vertical asymptotes in the graph of $y = \sec{x}$?
+Back: At $x = \pi / 2 + k\pi$ for all $k \in \mathbb{Z}$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749994458000-->
+END%%
+
+%%ANKI
+Basic
+What is the period of the cosecant function?
+Back: $2\pi$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749994458003-->
+END%%
+
+%%ANKI
+Basic
+Where are the vertical asymptotes in the graph of $y = \csc{x}$?
+Back: At $x = k\pi$ for all $k \in \mathbb{Z}$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749994458007-->
+END%%
+
+%%ANKI
+Basic
+Which of the six basic trigonometric functions do not intersect the $x$-axis?
+Back: The secant and cosecant functions.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749994458010-->
 END%%
 
 ## Bibliography

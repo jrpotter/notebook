@@ -292,6 +292,54 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1749768409512-->
 END%%
 
+%%ANKI
+Basic
+Let $C$ be the capacity of cache $\langle S, E, B, m \rangle$. What does $C / B$ evaluate to?
+Back: $C / B = S \cdot E$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750082153956-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be the capacity of cache $\langle S, E, B, m \rangle$. In plain English, what does $C / B$ correspond to?
+Back: The total number of cache lines in the cache.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750082153964-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be the capacity of cache $\langle S, E, B, m \rangle$. What does $C / S$ evaluate to?
+Back: $C / S = E \cdot B$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750082153967-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be the capacity of cache $\langle S, E, B, m \rangle$. In plain English, what does $C / S$ correspond to?
+Back: The number of bytes in any one cache set.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750082153969-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be the capacity of cache $\langle S, E, B, m \rangle$. What does $C / E$ evaluate to?
+Back: $C / E = S \cdot B$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750082153972-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be the capacity of cache $\langle S, E, B, m \rangle$. In plain English, what does $C / E$ correspond to?
+Back: The greatest lower bound of the number of bytes in the cache.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750082153975-->
+END%%
+
 ## Cache Misses
 
 When a data object can be retreived from a cache as opposed to a larger, slower device, we have what is called a **cache hit**. Otherwise we have a **cache miss**.
@@ -420,6 +468,88 @@ What is a random replacement policy?
 Back: One in which a random block is evicted.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1748460535228-->
+END%%
+
+### Least Recently Used
+
+A **least recently used** (LRU) replacement policy replaces the cache line that was last accessed the furthest in the past.
+
+%%ANKI
+Basic
+What is LRU an acronym for?
+Back: **L**east **r**ecently **u**sed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000444-->
+END%%
+
+%%ANKI
+Basic
+Which cache line does an LRU replacement policy evict?
+Back: The line last accessed the furthest in the past.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000454-->
+END%%
+
+%%ANKI
+Basic
+Which of LRU, LFU, both, or neither, track when a cache line is accessed?
+Back: Both.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084186887-->
+END%%
+
+%%ANKI
+Basic
+Consider the following table. Which data object should be evicted according to an LRU policy?
+| Object | &nbsp; | Last Accessed |
+| --- | --- | --- |
+| A | | 3 minutes ago |
+| B | | 6 minutes ago |
+| C | | 1 minute ago |
+Back: Object B.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084186898-->
+END%%
+
+### Least Frequently Used
+
+A **least frequently used** (LFU) replacement policy replaaces the cache line that has been referenced the fewest times over some past time window.
+
+%%ANKI
+Basic
+What is LFU an acronym for?
+Back: **L**east **f**requently **u**sed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000457-->
+END%%
+
+%%ANKI
+Basic
+Which cache line does an LFU replacement policy evict?
+Back: The line accessed the fewest times over a past time window.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000460-->
+END%%
+
+%%ANKI
+Basic
+Which of LRU, LFU, both, or neither, maintain a count of references?
+Back: LFU.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084186903-->
+END%%
+
+%%ANKI
+Basic
+Consider the following table. Which data object should be evicted according to an LFU policy?
+| Object | &nbsp; | Last Accessed |
+| --- | --- | --- |
+| A | | 3 minutes ago |
+| B | | 6 minutes ago |
+| C | | 1 minute ago |
+Back: Indeterminate.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084356607-->
 END%%
 
 ## Placement Policies
@@ -574,7 +704,7 @@ END%%
 %%ANKI
 Basic
 What is a direct-mapped cache?
-Back: A cache with one line per set.
+Back: A cache $\langle S, E, B, m \rangle$ satisfying $E = 1$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1749768409528-->
 END%%
@@ -659,6 +789,119 @@ Consider cache $\langle 4, 1, 2, 4 \rangle$. How many (logical) block numbers ar
 Back: $8$ (two for each cache block).
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1749768409570-->
+END%%
+
+### Set Associative Caches
+
+A cache $\langle S, E, B, m \rangle$ where $1 < E < C / B$ is called a **set associative cache**.
+
+%%ANKI
+Basic
+What is a set associative cache?
+Back: A cache $\langle S, E, B, m \rangle$ satisfying $1 < E < C / B$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000463-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle S, E, B, m \rangle$ be a set associative cache. What is the value of $E$?
+Back: $1 < E < C / B$ where $C$ corresponds to the cache's capacity.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000467-->
+END%%
+
+%%ANKI
+Basic
+What is associative memory?
+Back: An array of key/value pairs that takes in a key and returns a value with matching key.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000470-->
+END%%
+
+%%ANKI
+Basic
+In contrast to associative memory, what is the input to conventional memory?
+Back: A memory address.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000473-->
+END%%
+
+%%ANKI
+Basic
+In contrast to conventional memory, what is the input to associative memory?
+Back: A key.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000477-->
+END%%
+
+%%ANKI
+Cloze
+The input to {1:conventional} memory is {2:memory addresses} whereas the input to {2:associative memory} is {1:keys}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000480-->
+END%%
+
+%%ANKI
+Cloze
+{1:Conventional} memory is an array of {2:values} whereas {2:associative} memory is an array of {1:key/value pairs}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000483-->
+END%%
+
+%%ANKI
+Basic
+*Why* are set associative caches named the way they are?
+Back: Each cache set acts as associative memory.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000486-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle S, E, B, m \rangle$ be a set associative cache. What aspect of the cache is considered associative memory?
+Back: Each cache set.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000489-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle S, E, B, m \rangle$ be a set associative cache. How is the key of its associative memory defined?
+Back: As the concatenation of the valid bit and tag bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000493-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle S, E, B, m \rangle$ be a set associative cache. How is the value of its associative memory defined?
+Back: As the cache blocks.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000496-->
+END%%
+
+%%ANKI
+Basic
+What is a $k$-way set associative cache?
+Back: A set associative cache with $k$ cache lines in each set.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000500-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle S, E, B, m \rangle$ be a $k$-way set associative cache. What does $k$ equal?
+Back: $k = E$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000504-->
+END%%
+
+%%ANKI
+Basic
+A {set associative} cache is the compromise between a {direct-mapped} cache and {fully associative} cache.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750084000508-->
 END%%
 
 ## Bibliography

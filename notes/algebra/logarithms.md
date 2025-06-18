@@ -732,6 +732,58 @@ Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1749393067589-->
 END%%
 
+## Power Rule
+
+Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x^y)} = y\log_b{x}$$
+
+%%ANKI
+Basic
+In real analysis, what does the power rule of logarithms state?
+Back: For $b > 0$, $b \neq 1$, and $x, y \in \mathbb{R}$, $$\log_b{(x^y)} = y\log_b{x}$$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749996371360-->
+END%%
+
+%%ANKI
+Basic
+The power rule of logarithms generalizes what other rule of logarithms?
+Back: The product rule.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749996371371-->
+END%%
+
+%%ANKI
+Basic
+The power rule of logarithms is analogous to what rule of antilogarithms?
+Back: $(b^m)^n = b^{mn}$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749996371375-->
+END%%
+
+%%ANKI
+Basic
+Transform identity $23^x = 35$ using the logarithms power rule.
+Back: $x\log{23} = \log{35}$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749996371378-->
+END%%
+
+%%ANKI
+Basic
+Transform identity $\sqrt[7]{23} = x$ using the logarithms power rule.
+Back: $\frac{1}{7}\log{23} = \log{x}$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749996371382-->
+END%%
+
+%%ANKI
+Basic
+Suppose $b^x = y$. Rewrite this identity with $x$ isolated, i.e. $x = \,?$.
+Back: $x = \log{y} / \log{b}$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1749996371385-->
+END%%
+
 ## Bibliography
 
 * “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).

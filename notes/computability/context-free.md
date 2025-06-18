@@ -874,7 +874,7 @@ END%%
 
 %%ANKI
 Basic
-Removing a symbol to a PDA's stack corresponds to what ADT operation?
+Removing a symbol from a PDA's stack corresponds to what ADT operation?
 Back: Popping.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1749922267179-->
@@ -915,7 +915,7 @@ END%%
 %%ANKI
 Basic
 Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. What is the codomain of $\delta$?
-Back: $Q \times \Sigma_\epsilon \times \Gamma_\epsilon$
+Back: $\mathscr{P}(Q \times \Gamma_\epsilon)$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1749922915377-->
 END%%
