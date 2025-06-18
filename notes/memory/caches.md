@@ -791,6 +791,14 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1749768409570-->
 END%%
 
+%%ANKI
+Basic
+What name is given to the placement policy with a single cache line per cache set?
+Back: Direct-mapped.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750209845457-->
+END%%
+
 ### Set Associative Caches
 
 A cache $\langle S, E, B, m \rangle$ where $1 < E < C / B$ is called a **set associative cache**.
@@ -902,6 +910,58 @@ Basic
 A {set associative} cache is the compromise between a {direct-mapped} cache and {fully associative} cache.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1750084000508-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the placement policy with multiple cache sets and multiple cache lines?
+Back: Set associative.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750209845459-->
+END%%
+
+### Fully Associative Caches
+
+A cache $\langle S, E, B, m \rangle$ where  $E = C / B$ is called a **fully associative cache**.
+
+%%ANKI
+Basic
+What is a fully associative cache?
+Back: A cache $\langle S, E, B, m \rangle$ satisfying $E = C / B$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750209845461-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle S, E, B, m \rangle$ be a fully associative cache. What does $S$ evaluate to?
+Back: $1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750209845463-->
+END%%
+
+%%ANKI
+Basic
+How many set index bits does a fully associative cache use, and why?
+Back: $0$ since there is only one cache set in the cache.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750209845464-->
+END%%
+
+%%ANKI
+Basic
+What are the three cache placement policy options used in the CPU?
+Back: Direct-mapped, set associative, and fully associative.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750209845466-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the placement policy with a single cache set and multiple cache lines?
+Back: Fully associative.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750209845467-->
 END%%
 
 ## Bibliography
