@@ -12,6 +12,12 @@ In the equation $b^y = x$, the exponent $y$ is known as the **logarithm** of the
 
 In real analysis, the base $b$ is restricted to a positive value $\neq 1$. That is, $0 < b < 1$ or $b > 1$.
 
+A few notational conveniences are introduced for common bases:
+
+* $\log{x}$, the **common logarithm**, assumes a base $10$.
+* $\ln{x}$, the **natural logarithm**, assumes a base $e$.
+* $\lg{x}$, the **binary logarithm**, assumes a base $2$.
+
 %%ANKI
 Basic
 Who is usually attributed the creation of logarithms?
@@ -400,6 +406,150 @@ Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1747141197025-->
 END%%
 
+%%ANKI
+Basic
+How many $0$s precede the decimal point in $10^5$?
+Back: $5$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797610-->
+END%%
+
+%%ANKI
+Basic
+How many $0$s follow the decimal point in $10^{-5}$?
+Back: $5$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797620-->
+END%%
+
+%%ANKI
+Basic
+Let $n > 0$ be an integer. How many $0$s follow the decimal point in $10^{-n}$?
+Back: $n - 1$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797623-->
+END%%
+
+%%ANKI
+Basic
+Let $n > 0$ be an integer. How many $0$s precede the decimal point in $10^n$?
+Back: $n$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797627-->
+END%%
+
+%%ANKI
+Basic
+How is $10{,}000{,}000$ equivalently expressed as an exponential?
+Back: As $10^7$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797631-->
+END%%
+
+%%ANKI
+Basic
+How is $0{.}00001$ equivalently expressed as an exponential?
+Back: As $10^{-5}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797635-->
+END%%
+
+%%ANKI
+Basic
+What base is assumed in notation $\log{x}$?
+Back: $10$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797640-->
+END%%
+
+%%ANKI
+Basic
+What name is given to notation $\log$ (with no explicit base)?
+Back: The common logarithm.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750270145256-->
+END%%
+
+%%ANKI
+Basic
+The common logarithm assumes what base?
+Back: $10$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750270145264-->
+END%%
+
+%%ANKI
+Basic
+What base is assumed in notation $\ln{x}$?
+Back: $e$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797645-->
+END%%
+
+%%ANKI
+Basic
+The natural logarithm assumes what base?
+Back: $e$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750270145266-->
+END%%
+
+%%ANKI
+Basic
+What name is given to notation $\ln$?
+Back: The natural logarithm.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797650-->
+END%%
+
+%%ANKI
+Basic
+What base is assumed in notation $\lg{x}$?
+Back: $2$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1750269797654-->
+END%%
+
+%%ANKI
+Basic
+The binary logarithm assumes what base?
+Back: $2$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1750270145269-->
+END%%
+
+%%ANKI
+Basic
+What name is given to notation $\lg$?
+Back: The binary logarithm.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797659-->
+END%%
+
+%%ANKI
+Basic
+How can we write $\log{x}$ with an explicit base?
+Back: As $\log_{10}{x}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797664-->
+END%%
+
+%%ANKI
+Basic
+How can we write $\ln{x}$ with an explicit base?
+Back: As $\log_e{x}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797668-->
+END%%
+
+%%ANKI
+Basic
+How can we write $\lg{x}$ with an explicit base?
+Back: As $\log_2{x}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797672-->
+END%%
+
 ## Inverses
 
 Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\begin{align*} \log_b{b^x} & = x \\ b^{\log_b{x}} & = x \end{align*}$$
@@ -598,7 +748,7 @@ END%%
 
 ## Product Rule
 
-Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x \cdot y)} = \log_b{x} + \log_b{y}$$
+Given $b > 0$, $b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x \cdot y)} = \log_b{x} + \log_b{y}$$
 
 %%ANKI
 Basic
@@ -666,7 +816,7 @@ END%%
 
 ## Quotient Rule
 
-Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x \div y)} = \log_b{x} - \log_b{y}$$
+Given $b > 0$, $b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x \div y)} = \log_b{x} - \log_b{y}$$
 
 %%ANKI
 Basic
@@ -734,7 +884,7 @@ END%%
 
 ## Power Rule
 
-Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x^y)} = y\log_b{x}$$
+Given $b > 0$, $b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x^y)} = y\log_b{x}$$
 
 %%ANKI
 Basic
@@ -784,7 +934,52 @@ Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1749996371385-->
 END%%
 
+## Change of Base Rule
+
+Given $p, q > 0$ such that $p \neq 1$ and $q \neq 1$, and $x, y \in \mathbb{R}$, $$\log_p{x} = \frac{\log_q{x}}{\log_q{p}}$$
+
+%%ANKI
+Basic
+What does the change of base rule from $p$ to $q$ state?
+Back: $$\log_p{x} = \frac{\log_q{x}}{\log_q{p}}$$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797677-->
+END%%
+
+%%ANKI
+Basic
+The change of base rule is based off of what other logarithm rule?
+Back: The power rule.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797681-->
+END%%
+
+%%ANKI
+Basic
+Apply the change of base rule of $\lg{x}$ to base $10$.
+Back: $$\lg{x} = \frac{\log{x}}{\log{2}}$$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797686-->
+END%%
+
+%%ANKI
+Basic
+Apply the change of base rule of $\lg{x}$ to base $3$.
+Back: $$\lg{x} = \frac{\log_3{x}}{\log_3{2}}$$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797690-->
+END%%
+
+%%ANKI
+Basic
+Which rule allows converting logs from one base to another?
+Back: The change of base rule.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797694-->
+END%%
+
 ## Bibliography
 
 * “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+* Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 * Umbarger, Dan. _Explaining Logarithms_, n.d.

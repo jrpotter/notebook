@@ -1,7 +1,7 @@
 ---
 title: Circle
 TARGET DECK: Obsidian::STEM
-FILE TAGS: geometry::circle
+FILE TAGS: geometry::conics::circle
 tags:
   - circle
   - geometry
@@ -9,11 +9,9 @@ tags:
 
 ## Overview
 
-A **circle** is a shape consisting of all points in a plane at a given distance from a given point, i.e. the **center**. In this way, a circle is characterized by its center and **radius**, the distance from the center to any point of the circle. The perimeter of a circle is known as its **circumference**.
+A **circle** is a shape consisting of all points in a plane at a given distance from a given point, i.e. the **center**. In this way, a circle is characterized by its center and **radius**, the distance from the center to any point of the circle.
 
-On the [[cartesian|Cartesian coordinate system]], the equation of a circle with radius $r$ and center $\langle h, k \rangle$ is $$(x - h)^2 + (y - k)^2 = r^2.$$
-
-Such a circle has circumference $2\pi r$ and [[area]] $\pi r^2$. A continuous segment along the circumference of a circle is called an **arc**.
+The perimeter of a circle is known as its **circumference**. A circle with radius $r$ has circumference $2\pi r$ and [[area]] $\pi r^2$. A continuous segment along the circumference of a circle is called an **arc**.
 
 %%ANKI
 Basic
@@ -37,22 +35,6 @@ The perimeter of a circle is known as what?
 Back: Its circumference.
 Reference: “Circle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Circle](https://en.wikipedia.org/w/index.php?title=Circle&oldid=1268270102).
 <!--ID: 1737167693445-->
-END%%
-
-%%ANKI
-Basic
-What is the Cartesian equation of a circle with radius $r$ and center $\langle h, k \rangle$?
-Back: $(x - h)^2 + (y - k)^2 = r^2$
-Reference: “Circle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Circle](https://en.wikipedia.org/w/index.php?title=Circle&oldid=1268270102).
-<!--ID: 1737167693448-->
-END%%
-
-%%ANKI
-Basic
-Given indeterminates $x$ and $y$, the following equation describes what shape? $$(x - h)^2 + (y - k)^2 = r^2$$
-Back: A circle with radius $r$ and center $\langle h, k \rangle$.
-Reference: “Circle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Circle](https://en.wikipedia.org/w/index.php?title=Circle&oldid=1268270102).
-<!--ID: 1737167693451-->
 END%%
 
 %%ANKI
@@ -101,6 +83,34 @@ Consider a circle with radius $r$. What does the following evaluate to? $$\pi r^
 Back: Its area.
 Reference: “Circle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Circle](https://en.wikipedia.org/w/index.php?title=Circle&oldid=1268270102).
 <!--ID: 1737167693472-->
+END%%
+
+%%ANKI
+Basic
+What term is used to describe a continuous portion of a circle?
+Back: An arc.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1737347029852-->
+END%%
+
+## Cartesian coordinates
+
+On the [[cartesian|Cartesian coordinate system]], the equation of a circle with radius $r$ and center $\langle h, k \rangle$ is $$(x - h)^2 + (y - k)^2 = r^2.$$
+
+%%ANKI
+Basic
+What is the Cartesian equation of a circle with radius $r$ and center $\langle h, k \rangle$?
+Back: $(x - h)^2 + (y - k)^2 = r^2$
+Reference: “Circle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Circle](https://en.wikipedia.org/w/index.php?title=Circle&oldid=1268270102).
+<!--ID: 1737167693448-->
+END%%
+
+%%ANKI
+Basic
+Given indeterminates $x$ and $y$, the following equation describes what shape? $$(x - h)^2 + (y - k)^2 = r^2$$
+Back: A circle with radius $r$ and center $\langle h, k \rangle$.
+Reference: “Circle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Circle](https://en.wikipedia.org/w/index.php?title=Circle&oldid=1268270102).
+<!--ID: 1737167693451-->
 END%%
 
 %%ANKI
@@ -195,14 +205,6 @@ Reference: “Circle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.
 <!--ID: 1737168379578-->
 END%%
 
-%%ANKI
-Basic
-What term is used to describe a continuous portion of a circle?
-Back: An arc.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1737347029852-->
-END%%
-
 ## Disks
 
 A **disk** is the region in a plane bounded by a circle. A disk is said to be **closed** if it contains the circle that constitutes its boundary. Its said to be **open** otherwise.
@@ -258,3 +260,4 @@ END%%
 * “Circle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Circle](https://en.wikipedia.org/w/index.php?title=Circle&oldid=1268270102).
 * “Disk (Mathematics).” In _Wikipedia_, March 28, 2025. [https://en.wikipedia.org/w/index.php?title=Disk_(mathematics)](https://en.wikipedia.org/w/index.php?title=Disk_\(mathematics\)&oldid=1282846212).
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+* Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

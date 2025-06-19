@@ -283,7 +283,7 @@ END%%
 
 ### Invariance Under Congruence
 
-If $S \in \mathscr{M}$ and $T$ is [[shape|congruent]] to $S$, then $T \in \mathscr{M}$ and $a(S) = a(T)$.
+If $S \in \mathscr{M}$ and $T$ is [[geometry/index|shape]] to $S$, then $T \in \mathscr{M}$ and $a(S) = a(T)$.
 
 %%ANKI
 Basic
@@ -444,6 +444,168 @@ Which axiom of area is typically used to prove ordinate sets are measurable?
 Back: The exhaustion property.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1732381333444-->
+END%%
+
+## Regions Between Graphs
+
+If two functions $f$ and $g$ are related by the inequality $f(x) \leq g(x)$ for all $x$ in an interval $[a, b]$, we write $f \leq g$ on $[a, b]$. If $f \leq g$ on $[a, b]$, the set $S$ consisting of all points $\langle x, y \rangle$ satisfying the inequalities $$f(x) \leq y \leq g(x), \quad a \leq x \leq b,$$
+is called the **region between the graphs of $f$ and $g$**.
+
+![[regions-between-graphs.png]]
+
+If $f$ and $g$ are [[integrals|integrable]] functions on $[a, b]$, then the area of the region between the graphs of $f$ and $g$ satisfies $$a(S) = \int_a^b [g(x) - f(x)] \,dx$$
+
+%%ANKI
+Basic
+Let $f$ and $g$ be functions. What does it mean for $f \leq g$ on $[a, b]$?
+Back: $f(x) \leq g(x)$ for all $x$ in interval $[a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1749331998340-->
+END%%
+
+%%ANKI
+Basic
+What name is given to set $S$ in the following?
+![[regions-between-graphs.png]]
+Back: The region between the graphs of $f$ and $g$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1749331998342-->
+END%%
+
+%%ANKI
+Basic
+In the following, $S$ consists of all points $\langle x, y \rangle$ satisfying what two inequalities?
+![[regions-between-graphs.png]]
+Back:
+1. $a \leq x \leq b$
+2. $f(x) \leq y \leq g(x)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1749331998345-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f$ and $g$ in the following are nonnegative, integrable functions. What is the area of $S$?
+![[regions-between-graphs.png]]
+Back: $\int_a^b g(x) - f(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1749331998348-->
+END%%
+
+%%ANKI
+Basic
+How does Apostol define $\pi$?
+Back: To be the area of a unit disk.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1749331998351-->
+END%%
+
+%%ANKI
+Basic
+Without $\pi$, how is the area of a unit disk determined?
+Back: By calculating $\int_a^b g(x) - f(x) \,dx$ where $g(x) = \sqrt{1 - x^2}$ and $f(x) = -\sqrt{1 - x^2}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1749331998354-->
+END%%
+
+%%ANKI
+Basic
+A disk of radius $r$ is congruent to the region bounded by what two graphs?
+Back: $g(x) = \sqrt{r^2 - x^2}$ and $f(x) = -\sqrt{r^2 - x^2}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1749331998356-->
+END%%
+
+%%ANKI
+Basic
+Let $A(r)$ denote the area of a disk of radius $r$. How does $A(r)$ relate to $A(1)$?
+Back: $A(r) = r^2 A(1)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1749331998359-->
+END%%
+
+### Similarity Transformations
+
+Let $S$ be a set of points on the plane. Let $kS$ denote the set obtained by multiplying the coordinates of each point of $S$ by $k > 0$. Then $kS$ is [[geometry/index#Similarity|similar]] to $S$ and the process by which we produced $kS$ is called a **similarity transformation**.
+
+Let $f$ be nonnegative and [[integrals|integrable]] on $[a, b]$. Let $S$ be its ordinate set. Then for $k > 0$, $$a(kS) = k^2a(S).$$
+
+%%ANKI
+Basic
+Let $S$ be a set of points. For what values of $k > 0$ is $kS$ similar to $S$?
+Back: Any value of $k > 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1750260055309-->
+END%%
+
+%%ANKI
+Basic
+Let $S$ be a set of points. For what values of $k > 0$ is $kS$ congruent to $S$?
+Back: $k = 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1750260055323-->
+END%%
+
+%%ANKI
+Cloze
+Let $S$ be a set of points. If $k > 1$, then $kS$ is called a {stretching/expansion} from the origin.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1750260055331-->
+END%%
+
+%%ANKI
+Cloze
+Let $S$ be a set of points. If $0 < k < 1$, then $kS$ is called a {shrinking/contraction} to the origin.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1750260055340-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be nonnegative and integrable on $[a, b]$. Let $S$ be its ordinate set. For some $k > 0$, what is the area of $kS$?
+Back: $k^2$ times the area of $S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1750260055350-->
+END%%
+
+%%ANKI
+Basic
+Let $A(S)$ denote the area of an ordinate set $S$. How does $A(S)$ relate to $A(kS)$?
+Back: $A(kS) = k^2 A(S)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1750260055361-->
+END%%
+
+%%ANKI
+Basic
+The length of a scaled object is changed by what amount?
+Back: The scale factor.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1750260055371-->
+END%%
+
+%%ANKI
+Basic
+The area of a scaled object is changed by what amount?
+Back: The square of the scale factor.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1750260055381-->
+END%%
+
+%%ANKI
+Basic
+The volume of a scaled object is changed by what amount?
+Back: The cube of the scale factor.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1750260055392-->
+END%%
+
+%%ANKI
+Basic
+Which basic property of integrals is the area scale factor intimately tied to?
+Back: The horizontal scaling property, i.e. the expansion property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1750260055402-->
 END%%
 
 ## Bibliography
