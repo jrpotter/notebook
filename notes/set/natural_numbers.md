@@ -388,7 +388,7 @@ Given $\sigma = \{\langle n, n^+ \rangle \mid n \in \omega\}$, $\langle \omega, 
 %%ANKI
 Basic
 A Peano system is a tuple consisting of how many members?
-Back: $3$
+Back: Three.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1726364667616-->
 END%%

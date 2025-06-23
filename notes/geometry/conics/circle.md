@@ -93,9 +93,9 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737347029852-->
 END%%
 
-## Cartesian coordinates
+## Cartesian Equation
 
-On the [[cartesian|Cartesian coordinate system]], the equation of a circle with radius $r$ and center $\langle h, k \rangle$ is $$(x - h)^2 + (y - k)^2 = r^2.$$
+Within the [[cartesian|Cartesian coordinate system]], the equation of a circle with radius $r$ and center $\langle h, k \rangle$ is $$(x - h)^2 + (y - k)^2 = r^2.$$
 
 %%ANKI
 Basic
@@ -203,6 +203,38 @@ In what direction(s) is the unit circle shifted in the following? $$(x - 3)^2 + 
 Back: Right by $3$ and down by $3$.
 Reference: “Circle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Circle](https://en.wikipedia.org/w/index.php?title=Circle&oldid=1268270102).
 <!--ID: 1737168379578-->
+END%%
+
+%%ANKI
+Basic
+What is the Cartesian equation of a circle centered at the origin with radius $r$?
+Back: $x^2 + y^2 = r^2$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1731185808249-->
+END%%
+
+%%ANKI
+Basic
+What figure does the following Cartesian equation characterize? $x^2 + y^2 = r^2$
+Back: A circle with radius $r$ centered around the origin.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1731185808252-->
+END%%
+
+%%ANKI
+Basic
+What is the Cartesian equation of a circle with center $(h, k)$ and radius $r$?
+Back: $(x - h)^2 + (y - k)^2 = r^2$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743260676470-->
+END%%
+
+%%ANKI
+Basic
+Let $g \colon [-r, r] \rightarrow \mathbb{R}$ be given by $g(x) = \sqrt{r^2 - x^2}$. What does the graph of $g$ depict?
+Back: A semicircle of radius $r$, centered at the origin.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1743260676477-->
 END%%
 
 ## Disks

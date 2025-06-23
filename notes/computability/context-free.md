@@ -352,7 +352,7 @@ Basic
 What are the leftmost derivation(s) of $a$ in the following context-free grammar? $$\begin{align*} A & \rightarrow B \mid C \\ B & \rightarrow a \\ C & \rightarrow a \end{align*}$$
 Back:
 1. $A \Rightarrow B \Rightarrow a$
-2. $A \Rightarrow C \Rightarrow c$
+2. $A \Rightarrow C \Rightarrow a$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1747171295660-->
 END%%
@@ -363,6 +363,14 @@ Why is the following context-free grammar ambiguous? $$\begin{align*} A & \right
 Back: String $a$ is derived ambiguously.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1747171295662-->
+END%%
+
+%%ANKI
+Basic
+Why do we say $a$ has two leftmost derivationsin the following context-free grammar? $$\begin{align*} A & \rightarrow B \mid C \\ B & \rightarrow a \\ C & \rightarrow a \end{align*}$$
+Back: Because $A \rightarrow B$ and $A \rightarrow C$ are different production rules.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1750599072655-->
 END%%
 
 %%ANKI

@@ -417,7 +417,7 @@ END%%
 %%ANKI
 Basic
 How many $0$s follow the decimal point in $10^{-5}$?
-Back: $5$
+Back: $4$
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1750269797620-->
 END%%

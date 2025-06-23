@@ -937,8 +937,6 @@ END%%
 
 Let $\kappa$ and $\lambda$ be any cardinal numbers. Then $\kappa \cdot \lambda = \mathop{\text{card}}(K \times L)$, where $K$ and $L$ are any sets of cardinality $\kappa$ and $\lambda$, respectively.
 
-For any infinite cardinal $\kappa$, $\kappa \cdot \kappa = \kappa$.
-
 %%ANKI
 Basic
 Let $\kappa$ and $\lambda$ be any cardinal numbers. How is $\kappa \cdot \lambda$ defined?
@@ -2157,70 +2155,6 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be a set and $n \in \omega$. Is $n$-ary Cartesian power $A^n$ countable?
-Back: Iff $A$ is countable.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
-<!--ID: 1748146342041-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ be a countable set and $n \in \omega$. Is $n$-ary Cartesian power $A^n$ countable?
-Back: Yes.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
-<!--ID: 1748146342045-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ be a set and $n \in \omega$. What Cartesian product is ${^n}A$ equinumerous to?
-Back: $A^n = A \times A \times \cdots \times A$
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
-<!--ID: 1748146342049-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ be a set and $n \in \omega$. How do we show ${^n}A \preceq A^n$ (the $n$-ary Cartesian power)?
-Back: Define injection $f \colon {^n}A \rightarrow A^n$ as $$f(g) = \langle g(0), g(1), \ldots, g(n - 1) \rangle.$$
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
-<!--ID: 1748146342053-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ be a set and $n \in \omega$. How do we show the $n$-ary Cartesian power $A^n \preceq {^n}A$?
-Back: Define injection $f \colon A^n \rightarrow {^n}A$ as $$f(\langle a_1, \ldots, a_n \rangle) = \{ \langle 0, a_1 \rangle, \langle 1, a_2 \rangle, \ldots, \langle n - 1, a_n \rangle \}.$$
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
-<!--ID: 1748146342057-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ be a set and $n \in \omega$. Is ${^n}A$ countable?
-Back: Iff $A$ is countable.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
-<!--ID: 1748146342061-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ be a set. How is $0$-ary Cartesian power $A^0$ usually defined?
-Back: As $\{\varnothing\}$.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
-<!--ID: 1748146342064-->
-END%%
-
-%%ANKI
-Basic
-What motivation leads to defining $0$-ary Cartesian power $A^0 = \{ \varnothing \}$?
-Back: To ensure $A^0$ is isomorphic to ${^0}A = \{\varnothing\}$.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
-<!--ID: 1748146342068-->
-END%%
-
-%%ANKI
-Basic
 Suppose $A$ is countable. What injection must exist?
 Back: An injection $f \colon A \rightarrow \omega$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -2470,6 +2404,30 @@ If being pedantic, why is the following incorrect?
 Back: Technically, the members of $\text{Sq}(A)$ are functions, not an ($n$-ary) tuple.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1748393420181-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a finite set. Assuming AoC, which of $A$ or $\mathop{\text{Sq}}(A)$ dominates the other?
+Back: $A \preceq \mathop{\text{Sq}}(A)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750646455320-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be an infinite set. Assuming AoC, which of $A$ or $\mathop{\text{Sq}}(A)$ dominates the other?
+Back: N/A. $A$ and $\mathop{\text{Sq}}(A)$ are equinumerous.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750646455330-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be an infinite set and $k \in \omega$. Assuming AoC, which of $A$ or $^kA$ dominates the other?
+Back: Indeterminate. Depends if $k = 0$ or not.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750646455334-->
 END%%
 
 ## Hilbert's Hotel

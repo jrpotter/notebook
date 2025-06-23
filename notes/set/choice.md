@@ -772,6 +772,22 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1750170196935-->
 END%%
 
+%%ANKI
+Basic
+Assuming AoC, what is the cardinality of the set of functions from $\mathbb{R}$ into $\mathbb{R}$?
+Back: $2^{2^{\aleph_0}}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750380584657-->
+END%%
+
+%%ANKI
+Basic
+Assuming AoC, how is expression $(2^{\aleph_0})^{2^\aleph_0}$ simplified?
+Back: As $(2^{\aleph_0})^{2^\aleph_0} = 2^{\aleph_0 \cdot 2^{\aleph_0}} = 2^{2^{\aleph_0}}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750380584666-->
+END%%
+
 ## Bibliography
 
 * “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).

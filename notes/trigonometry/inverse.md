@@ -16,7 +16,7 @@ The **arcsine** function is the inverse [[trigonometry/index#Sine|sine]] functio
 
 %%ANKI
 Basic
-What name is given to the inverse since function?
+What name is given to the inverse sine function?
 Back: The arcsine function.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1750267816363-->

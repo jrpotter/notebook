@@ -138,7 +138,7 @@ END%%
 %%ANKI
 Basic
 When is a host device considered a router?
-Back: When it forwards packets from one network interface to another?
+Back: When it forwards packets from one network interface to another.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1750171974234-->
 END%%

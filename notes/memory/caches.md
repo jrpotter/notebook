@@ -906,10 +906,10 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
-Basic
+Cloze
 A {set associative} cache is the compromise between a {direct-mapped} cache and {fully associative} cache.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1750084000508-->
+<!--ID: 1750379051734-->
 END%%
 
 %%ANKI

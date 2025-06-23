@@ -73,7 +73,13 @@ END%%
 
 ## Cartesian Product
 
-Given two sets $A$ and $B$, the **Cartesian product** $A \times B$ is defined as: $$A \times B = \{\langle x, y \rangle \mid x \in A \land y \in B\}$$
+Given two sets $A$ and $B$, the **Cartesian product** $A \times B$ is defined as: $$A \times B = \{\langle x, y \rangle \mid x \in A \land y \in B\}.$$
+
+The **Cartesian square** of a set $A$ is the Cartesian product $$A^2 = A \times A.$$
+
+The **$n$-ary Cartesian power** of a set $A$, denoted $A^n$, is defined as $$\begin{align*} A^n & = A \times A \times \cdots \times A \\ & = \{ \langle a_1, \ldots, a_n \rangle \mid a_i \in A \text{ for every } i \in \{1, \ldots, n \}\}. \end{align*}$$
+
+As a special case, the $0$-ary Cartesian power, denoted $A^0$, is defined as the singleton set containing the empty function (with codomain $A$).
 
 %%ANKI
 Basic
@@ -120,6 +126,110 @@ Cloze
 {$x \in A$} iff {$\{x\} \subseteq A$} iff {$\{x\} \in \mathscr{P}A$}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1717679397860-->
+END%%
+
+%%ANKI
+Basic
+How is the Cartesian square of a set $A$ denoted?
+Back: As $A^2$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455339-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. How is $A^2$ defined?
+Back: As $A \times A$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455343-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. What name is given to $A^n$?
+Back: The $n$-ary Cartesian power of $A$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455348-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. How is $A^n$ defined?
+Back: As $A \times A \times \cdots \times A$ (where $A$ is repeated $n$ times).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455352-->
+END%%
+
+%%ANKI
+Basic
+How is the $n$-ary Cartesian power of a set $A$ denoted?
+Back: As $A^n$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455357-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. What name is given to $A^2$?
+Back: The Cartesian square.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455363-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. How is $A^0$ defined?
+Back: As the singleton set $\{\varnothing\}$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455368-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. *Why* does $A^0 = \{\varnothing\}$, i.e. what does $\varnothing$ correspond to?
+Back: $\varnothing$ corresponds to the empty function with codomain $A$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455372-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. Is $n$-ary Cartesian power $A^n$ countable?
+Back: Iff $A$ is countable.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342041-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a countable set and $n \in \omega$. Is $n$-ary Cartesian power $A^n$ countable?
+Back: Yes.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342045-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. What Cartesian product is ${^n}A$ equinumerous to?
+Back: $A^n = A \times A \times \cdots \times A$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342049-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. How is $0$-ary Cartesian power $A^0$ usually defined?
+Back: As $\{\varnothing\}$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342064-->
+END%%
+
+%%ANKI
+Basic
+What motivation leads to defining $0$-ary Cartesian power $A^0 = \{ \varnothing \}$?
+Back: To ensure $A^0$ is isomorphic to ${^0}A = \{\varnothing\}$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342068-->
 END%%
 
 We can also form (something like) the Cartesian product of infinitely many sets, provided that the sets are suitably indexed. Let $I$ be an index set and $H$ a function whose domain includes $I$. Define $$\bigtimes_{i \in I} H(i) = \{f \mid f \text{ is a function with domain } I \text{ and } \forall i \in I, f(i) \in H(i)\}$$
@@ -1183,6 +1293,30 @@ For $A \neq \varnothing$, *why* does $^\varnothing A = \{\varnothing\}$?
 Back: $\varnothing$ is the only function with empty domain.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720783607468-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. How do we show ${^n}A \preceq A^n$ (the $n$-ary Cartesian power)?
+Back: Define injection $f \colon {^n}A \rightarrow A^n$ as $$f(g) = \langle g(0), g(1), \ldots, g(n - 1) \rangle.$$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342053-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. How do we show the $n$-ary Cartesian power $A^n \preceq {^n}A$?
+Back: Define injection $f \colon A^n \rightarrow {^n}A$ as $$f(\langle a_1, \ldots, a_n \rangle) = \{ \langle 0, a_1 \rangle, \langle 1, a_2 \rangle, \ldots, \langle n - 1, a_n \rangle \}.$$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342057-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. Is ${^n}A$ countable?
+Back: Iff $A$ is countable.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342061-->
 END%%
 
 ## Bibliography
