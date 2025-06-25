@@ -622,7 +622,7 @@ END%%
 
 %%ANKI
 Basic
-What is the inverse of the period of a sinusoidal function?
+What term refers to the inverse of a sinusoidal function's period?
 Back: The frequency.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1747696423853-->

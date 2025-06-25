@@ -1319,6 +1319,22 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1742762630254-->
 END%%
 
+%%ANKI
+Basic
+Let $A$ be a set. What does $\mathop{\text{card}} \mathscr{P}(A)$ evaluate to?
+Back: $2^{\mathop{\text{card}}A}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750734043595-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. *Why* does $\mathop{\text{card}} \mathscr{P}(A) = 2^{\mathop{\text{card}} A}$?
+Back: Because $\mathscr{P}(A)$ is equinumerous to $^2A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750734043597-->
+END%%
+
 ## Ordering
 
 A set $A$ is **dominated** by a set $B$, written $A \preceq B$, if and only if there is a one-to-one function from $A$ into $B$. In other words, $A \preceq B$ if and only if $A$ is equinumerous to some subset of $B$. Then $$\mathop{\text{card}}A \leq \mathop{\text{card}}B \text{ if and only if } A \preceq B.$$

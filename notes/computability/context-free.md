@@ -523,7 +523,7 @@ END%%
 
 %%ANKI
 Basic
-Assume CNF. What additional restriction is enforced on the following rule? $$A \rightarrow a$$
+Assume CNF. Besides eliminating unit rules, what additional restriction is enforced on the following? $$A \rightarrow a$$
 Back: Unless $A$ is the start variable, $a \neq \epsilon$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1748052586110-->

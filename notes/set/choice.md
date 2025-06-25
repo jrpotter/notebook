@@ -632,6 +632,22 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1750170196927-->
 END%%
 
+%%ANKI
+Basic
+Let $\kappa$ be a cardinal number. Assuming AoC, what does $\kappa!$ simplfiy to?
+Back: Indeterminate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750734043589-->
+END%%
+
+%%ANKI
+Basic
+Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa!$ simplfiy to?
+Back: $2^\kappa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750734043592-->
+END%%
+
 ### Absorption Law
 
 Let $\kappa$ and $\lambda$ be cardinal numbers, the larger of which is infinite and the smaller of which is nonzero. Then $$\kappa + \lambda = \kappa \cdot \lambda = \mathop{\text{max}}(\kappa, \lambda).$$
