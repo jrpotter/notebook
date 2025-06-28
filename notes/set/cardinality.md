@@ -2524,6 +2524,75 @@ Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, Decembe
 <!--ID: 1736711693559-->
 END%%
 
+## Continuum Hypothesis
+
+The continuum hypothesis states that there are no sets with cardinality between $\aleph_0$ and $2^{\aleph_0}$. The generalized continuum hypothesis states that for any infinite cardinal $\kappa$, there is no cardinal number between $\kappa$ and $2^\kappa$.
+
+%%ANKI
+Basic
+What does the continuum hypothesis state?
+Back: There is no set with cardinality between $\aleph_0$ and $2^{\aleph_0}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750820079160-->
+END%%
+
+%%ANKI
+Basic
+What does the generalized continuum hypothesis state?
+Back: For any infinite cardinal $\kappa$, there is no set with cardinality between $\kappa$ and $2^\kappa$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750820079180-->
+END%%
+
+%%ANKI
+Basic
+What is the following a reformulation of?
+
+> Every uncountable set of real numbers is equinumerous to the set of all real numbers.
+
+Back: The continuum hypothesis.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750820079169-->
+END%%
+
+%%ANKI
+Basic
+What was Gödel's primary contribution with respect to the continuum hypothesis?
+Back: He showed the continuum hypothesis could not be refuted on the basis of the set theory axioms.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750820079173-->
+END%%
+
+%%ANKI
+Basic
+What was Cohen's primary contribution with respect to the continuum hypothesis?
+Back: He showed the continuum hypothesis could not be proved on the basis of the set theory axioms.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750820079177-->
+END%%
+
+%%ANKI
+Cloze
+{Gödel} showed the continuum hypothesis could not be {refuted}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750820079184-->
+END%%
+
+%%ANKI
+Cloze
+{Cohen} showed the continuum hypothesis could not be {proved}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750820079188-->
+END%%
+
+%%ANKI
+Basic
+Which two mathematicians showed the continuum hypothesis could not be proven nor disproven respectively?
+Back: Cohen and Gödel.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750820079192-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

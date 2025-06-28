@@ -171,7 +171,7 @@ END%%
 %%ANKI
 Basic
 Let $A$ be a set. What name is given to $A^2$?
-Back: The Cartesian square.
+Back: The Cartesian square of $A$.
 Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1750646455363-->
 END%%

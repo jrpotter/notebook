@@ -367,7 +367,7 @@ END%%
 
 %%ANKI
 Basic
-Why do we say $a$ has two leftmost derivationsin the following context-free grammar? $$\begin{align*} A & \rightarrow B \mid C \\ B & \rightarrow a \\ C & \rightarrow a \end{align*}$$
+Why do we say $a$ has two leftmost derivations in the following context-free grammar? $$\begin{align*} A & \rightarrow B \mid C \\ B & \rightarrow a \\ C & \rightarrow a \end{align*}$$
 Back: Because $A \rightarrow B$ and $A \rightarrow C$ are different production rules.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1750599072655-->

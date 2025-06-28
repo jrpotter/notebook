@@ -70,8 +70,8 @@ END%%
 
 %%ANKI
 Basic
-How does speed tend to change as you move to lower levels of the memory hierarchy?
-Back: Speed (access time) decreases.
+How does access time tend to change as you move to lower levels of the memory hierarchy?
+Back: Access time tends to decrease.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1747861797217-->
 END%%

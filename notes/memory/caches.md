@@ -11,6 +11,8 @@ tags:
 
 A **cache** is a storage device that acts as a staging area for data objects stored in a larger, slower device. The process of using a cache is known as **caching**.
 
+A cache that only holds instructions is called an **i-cache**. A cache that holds only program data is called a **d-cache**. A cache that holds both instructions and data is called a **unified cache**.
+
 %%ANKI
 Basic
 What is a cache?
@@ -50,6 +52,55 @@ Back: To amortize against the longer access times.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1747861797195-->
 END%%
+
+%%ANKI
+Basic
+What is an i-cache?
+Back: A cache that only holds instructions.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262191-->
+END%%
+
+%%ANKI
+Basic
+What is a d-cache?
+Back: A cache that only holds program data.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262199-->
+END%%
+
+%%ANKI
+Basic
+What is a unified cache?
+Back: A cache that holds both instructions and program data.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262201-->
+END%%
+
+%%ANKI
+Cloze
+{1:I-caches} are to {2:instructions} whereas {2:d-caches} are to {1:program data}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262204-->
+END%%
+
+%%ANKI
+Basic
+Which of i-caches, d-caches, both, or neither are typically read-only?
+Back: I-caches.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262206-->
+END%%
+
+%%ANKI
+Basic
+What property of i-caches make them typically simpler than d-caches?
+Back: I-caches are usually read-only.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262208-->
+END%%
+
+## Formalization
 
 Consider a computer system where each memory address has $m$ bits. A cache for such a machine is defined as a tuple $\langle S, E, B, m \rangle$ where
 
@@ -689,6 +740,22 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1749768409522-->
 END%%
 
+%%ANKI
+Basic
+What does a cache's associativity refer to?
+Back: The number of cache lines per cache set.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262211-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a cache to have higher associativity than another?
+Back: The cache with higher associativity has more cache lines per cache set.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262213-->
+END%%
+
 ### Direct-Mapped Caches
 
 A cache $\langle S, E, B, m \rangle$ where $E = 1$ is called a **direct-mapped cache**.
@@ -962,6 +1029,224 @@ What name is given to the placement policy with a single cache set and multiple 
 Back: Fully associative.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1750209845467-->
+END%%
+
+## Performance
+
+Cache performance is evaluated with a number of metrics:
+
+* The **miss rate** refers to the fraction of memory references that miss.
+	* $\text{\# misses} \mathop{/} \text{\# references}$
+* The **hit rate** refers to the fraction of memory references that hit.
+	* $1 - \text{miss rate}$
+* The **hit time** is the time it takes to deliver a word from the cache to the CPU.
+	* This includes the time for set selection, line matching, and word retrieval.
+* The **miss penalty** refers to any additional time incurred because of a cache miss.
+
+%%ANKI
+Basic
+What does the miss rate of a cache refer to?
+Back: The fraction of memory references that miss.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262216-->
+END%%
+
+%%ANKI
+Basic
+What does the hit rate of a cache refer to?
+Back: The fraction of memory references that hit.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262219-->
+END%%
+
+%%ANKI
+Basic
+What does the hit time of a cache refer to?
+Back: The time it takes to deliver a word from the cache to the CPU.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262222-->
+END%%
+
+%%ANKI
+Basic
+What does the miss penalty of a cache refer to?
+Back: Any additional time incurred because of a cache miss.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262225-->
+END%%
+
+%%ANKI
+Basic
+With respect to caching, the following is the definition of what metric? $$\frac{\text{\# misses}}{\text{\# references}}$$
+Back: The miss rate.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262229-->
+END%%
+
+%%ANKI
+Basic
+With respect to caching, the following is the definition of what metric? $$\frac{\text{\# hits}}{\text{\# references}}$$
+Back: The hit rate.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262233-->
+END%%
+
+%%ANKI
+Basic
+With respect to caching, the following is the definition of what metric? $$1 - \text{miss rate}$$
+Back: The hit rate.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262236-->
+END%%
+
+%%ANKI
+Cloze
+The {hit time} is the time it takes to deliver a word from the {cache} to the {CPU}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262240-->
+END%%
+
+%%ANKI
+Basic
+Suppose a cache miss occurs. What cache performance, latency-related metric is now relevant?
+Back: The miss penalty.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262244-->
+END%%
+
+%%ANKI
+Basic
+Suppose a cache hit occurs. What cache performance, latency-related metric is now relevant?
+Back: The hit time.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262247-->
+END%%
+
+%%ANKI
+Basic
+How does increasing the size of a cache tend to affect the hit rate?
+Back: It tends to increase the hit rate.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262251-->
+END%%
+
+%%ANKI
+Basic
+*Why* does increasing the size of a cache tend to increase the hit rate?
+Back: More data blocks fit within the cache.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262254-->
+END%%
+
+%%ANKI
+Basic
+How does increasing the size of a cache tend to affect the hit time?
+Back: It tends to increase the hit time.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262257-->
+END%%
+
+%%ANKI
+Basic
+*Why* does increasing the size of a cache tend to increase the hit time?
+Back: It tends to be harder to make larger memories run fast.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262261-->
+END%%
+
+%%ANKI
+Basic
+Larger cache blocks tend to help programs that exploit what kind of locality?
+Back: Spatial locality.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262264-->
+END%%
+
+%%ANKI
+Basic
+Larger cache blocks tend to hurt programs that exploit what kind of locality?
+Back: Temporal locality.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262267-->
+END%%
+
+%%ANKI
+Basic
+*Why* do larger cache blocks help programs that exploit spatial locality?
+Back: More adjacent data objects can be stored into the cache block at once.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262270-->
+END%%
+
+%%ANKI
+Basic
+*Why* do larger cache blocks hurt programs that exploit temporal locality?
+Back: For a given cache size, larger cache blocks imply fewer cache lines.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262274-->
+END%%
+
+%%ANKI
+Basic
+How does increasing the size of a cache block tend to affect the miss penalty?
+Back: It tends to increase the miss penalty.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262277-->
+END%%
+
+%%ANKI
+Basic
+*Why* does increasing the size of a cache block tend to increase the miss penalty?
+Back: Because it takes more time to transfer larger blocks.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262280-->
+END%%
+
+%%ANKI
+Cloze
+Caches with {higher} associativity tend to have fewer {conflict} misses.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262283-->
+END%%
+
+%%ANKI
+Basic
+Why are caches with higher associativity less prone to thrashing?
+Back: Two data blocks that map to the same set can coexist in different cache lines.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262286-->
+END%%
+
+%%ANKI
+Basic
+How does increasing the associativity of a cache tend to affect the hit time?
+Back: It tends to increase the hit time.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262289-->
+END%%
+
+%%ANKI
+Basic
+How does increasing the associativity of a cache tend to affect the miss penalty?
+Back: It tends to increase the miss penalty.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262292-->
+END%%
+
+%%ANKI
+Basic
+*Why* does increasing the associativity of a cache tend to increase the hit time?
+Back: Because of the increased complexity in implementation.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262296-->
+END%%
+
+%%ANKI
+Basic
+*Why* does increasing the associativity of a cache tend to increase the miss penalty?
+Back: Because of the increased complexity of choosing a victim line.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1750822262299-->
 END%%
 
 ## Bibliography

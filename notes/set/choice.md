@@ -164,6 +164,22 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1744898357005-->
 END%%
 
+%%ANKI
+Basic
+Which mathematician showed the axiom of choice could not be refuted from the other axioms of set theory?
+Back: Gödel.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750820157258-->
+END%%
+
+%%ANKI
+Basic
+Which mathematician showed the axiom of choice could not be proved from the other axioms of set theory?
+Back: Cohen.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1750820157265-->
+END%%
+
 ## Equivalences
 
 ### Relation Form
@@ -798,8 +814,8 @@ END%%
 
 %%ANKI
 Basic
-Assuming AoC, how is expression $(2^{\aleph_0})^{2^\aleph_0}$ simplified?
-Back: As $(2^{\aleph_0})^{2^\aleph_0} = 2^{\aleph_0 \cdot 2^{\aleph_0}} = 2^{2^{\aleph_0}}$.
+Assuming AoC, how is expression $(2^{\aleph_0})^{2^{\aleph_0}}$ simplified?
+Back: As $(2^{\aleph_0})^{2^{\aleph_0}} = 2^{\aleph_0 \cdot 2^{\aleph_0}} = 2^{2^{\aleph_0}}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750380584666-->
 END%%

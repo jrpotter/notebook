@@ -92,7 +92,7 @@ END%%
 %%ANKI
 Basic
 In dotted-quad notation, what range of values can each number take on?
-Back: An integer between $1$ and $255$ inclusive.
+Back: An integer between $0$ and $255$ inclusive.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1750512996089-->
 END%%
@@ -108,7 +108,7 @@ END%%
 %%ANKI
 Basic
 `65.256.130.107` is an example of what kind of IP address?
-Back: N/A. Numbers in IPv4 addresses are between $1$ and $255$ inclusive.
+Back: N/A. Numbers in IPv4 addresses are between $0$ and $255$ inclusive.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1750512996094-->
 END%%
@@ -149,17 +149,17 @@ END%%
 
 %%ANKI
 Cloze
-{1:IPv4} addresses have {2:$32$} bits whereas {2:IPv6} addresses have {1:$64$} bits.
+{1:IPv4} addresses have {2:$32$} bits whereas {2:IPv6} addresses have {1:$128$} bits.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1750512996105-->
 END%%
 
 %%ANKI
-Cloze
+Basic
 The fields in an IPv6 address are separated by what character?
 Back: `:`
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1750512996108-->
+<!--ID: 1750858889279-->
 END%%
 
 %%ANKI
@@ -196,7 +196,7 @@ END%%
 
 %%ANKI
 Basic
-When digits can we omit writing in an IPv6 address's block?
+What digits can we omit writing in an IPv6 address's block?
 Back: Leading `0`s.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1750512996120-->

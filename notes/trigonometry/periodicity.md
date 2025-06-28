@@ -598,7 +598,7 @@ END%%
 
 %%ANKI
 Basic
-How is frequency most commonly measured?
+What unit of measurement is most commonly associated with frequency?
 Back: The hertz.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1747696423846-->

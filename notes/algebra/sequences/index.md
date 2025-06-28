@@ -303,7 +303,7 @@ END%%
 
 %%ANKI
 Basic
-Schematically show how **iteration** can be used to solve $a_n = a_{n-1} + f(n)$.
+Schematically show how iteration can be used to solve $a_n = a_{n-1} + f(n)$.
 Back: $$\begin{align*}
 a_1 & = a_0 + f(1) \\
 & \vdots \\
