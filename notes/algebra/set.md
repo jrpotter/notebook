@@ -575,38 +575,6 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1717367767311-->
 END%%
 
-%%ANKI
-Basic
-Does $\bigcup\, \{A \cap X \mid X \in \mathscr{B}\}$ get smaller or larger as $\mathscr{B}$ gets larger?
-Back: Larger.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717372322278-->
-END%%
-
-%%ANKI
-Basic
-Does $\bigcup\, \{A \cap X \mid X \in \mathscr{B}\}$ get smaller or larger as $\mathscr{B}$ gets smaller?
-Back: Smaller.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717372322281-->
-END%%
-
-%%ANKI
-Basic
-Does $\bigcap\, \{A \cup X \mid X \in \mathscr{B}\}$ get smaller or larger as $\mathscr{B} \neq \varnothing$ gets larger?
-Back: Smaller.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717372322284-->
-END%%
-
-%%ANKI
-Basic
-Does $\bigcap\, \{A \cup X \mid X \in \mathscr{B}\}$ get smaller or larger as $\mathscr{B} \neq \varnothing$ gets smaller?
-Back: Larger.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717372322287-->
-END%%
-
 For any sets $A$, $B$, and $C$, $$\begin{align*} A \times (B \cap C) & = (A \times B) \cap (A \times C) \\ A \times (B \cup C) & = (A \times B) \cup (A \times C) \\ A \times (B - C) & = (A \times B) - (A \times C) \end{align*}$$
 %%ANKI
 Basic

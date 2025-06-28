@@ -335,7 +335,11 @@
     "schroder-bernstein.png",
     "infinite-cartesian-product.png",
     "sine-graph.png",
-    "cosine-graph.png"
+    "cosine-graph.png",
+    "unicast.png",
+    "broadcast.png",
+    "multicast.png",
+    "anycast.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -485,7 +489,7 @@
     "algorithms/dfs/index.md": "782d7b624611911a5486beba9bf44716",
     "algorithms/binary-search.md": "8533a05ea372e007ab4e8a36fd2772a9",
     "algorithms/bfs.md": "2baad5ef237e596ca1808d759e63aa72",
-    "algebra/set.md": "332c681e34d41dd32c98295b345b5db6",
+    "algebra/set.md": "95fb269fca7d7fbbc263fde4482e5ca9",
     "algebra/sequences/triangular-numbers.md": "12c81fa4d79d67c4853efcbc7b26f4c8",
     "algebra/sequences/square-numbers.md": "171f7c5a8dac088afba40923ab86c68e",
     "algebra/sequences/index.md": "d124b89095b051dab02c445ceb391ac0",
@@ -1108,7 +1112,7 @@
     "_journal/2025-06-21.md": "0bfd070193d94d0ade93624d145d6c0a",
     "_journal/2025-06/2025-06-20.md": "5f9e1591afa346858827bbba9531ba8f",
     "_journal/2025-06-22.md": "d77c94f15acac43d0d46f0a9cf785cc7",
-    "_journal/2025-06/2025-06-21.md": "b7214002715ce9f538d81dbfadbf73f8",
+    "_journal/2025-06/2025-06-21.md": "589fa9fbbf80ab5ed33adf39eb5d4d61",
     "_journal/2025-06-23.md": "674be586bb07c6b57870d083b57751d9",
     "_journal/2025-06/2025-06-22.md": "3c814ec3180fa329479cc32924df6feb",
     "_journal/2025-06-24.md": "1c6d2c46c24456933a1216525d445065",
@@ -1118,7 +1122,10 @@
     "_journal/2025-06-26.md": "03ec78cc04e20e5f228c81821130f8bb",
     "_journal/2025-06/2025-06-25.md": "8290acf61c44c420f04e49847cd28ec6",
     "_journal/2025-06-27.md": "aa00449ee57b7757a8b63df52c1c6e7a",
-    "_journal/2025-06/2025-06-26.md": "782c71ee6dbff1958dbcbf03ce049dec"
+    "_journal/2025-06/2025-06-26.md": "782c71ee6dbff1958dbcbf03ce049dec",
+    "_journal/2025-06-28.md": "31f1b27d33749e02e8d15d1c565f90a0",
+    "_journal/2025-06/2025-06-27.md": "aa00449ee57b7757a8b63df52c1c6e7a",
+    "networking/ip.md": "a873d841ae1b548b8c430dd911d6bf0f"
   },
   "fields_dict": {
     "Basic": [

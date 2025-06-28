@@ -42,9 +42,9 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1750512996071-->
 END%%
 
-## Addressing
+## Format
 
-IP addresses are expressed in one of two formats: IPv4 and IPv6.
+IP addresses are typically expressed in one of two formats: IPv4 and IPv6.
 
 %%ANKI
 Basic
@@ -111,6 +111,14 @@ Basic
 Back: N/A. Numbers in IPv4 addresses are between $0$ and $255$ inclusive.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1750512996094-->
+END%%
+
+%%ANKI
+Basic
+How many possible addresses does IPv4 have in its address space?
+Back: $2^{32}$
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1751119772828-->
 END%%
 
 ### IPv6
@@ -328,6 +336,186 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1751082430912-->
 END%%
 
+%%ANKI
+Basic
+How many possible addresses does IPv6 have in its address space?
+Back: $2^{128}$
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1751119772835-->
+END%%
+
+## Addressing Methods
+
+%%ANKI
+Basic
+With respect to IP, what are the four most commonly used addressing methods?
+Back: Unicast, broadcast, multicast, and anycast.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751121327332-->
+END%%
+
+### Unicast
+
+A **unicast** delivers a message to a specific node in a network using a *one-to-one* association between a sender and receiver.
+
+![[unicast.png]]
+
+%%ANKI
+Basic
+What is a unicast?
+Back: A transmission from one point in a network to another.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772838-->
+END%%
+
+%%ANKI
+Cloze
+A {one-to-one} transmission is a(n) {uni}cast.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772842-->
+END%%
+
+%%ANKI
+Basic
+The following depicts what kind of network addressing method?
+![[unicast.png]]
+Back: Unicasting.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772846-->
+END%%
+
+%%ANKI
+Basic
+Which IP addressing method has a one-to-one association?
+Back: Unicasting.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772849-->
+END%%
+
+### Broadcast
+
+A **broadcast** delivers a message to all nodes in a network using a *one-to-all* association. A single message from one sender is routed to all possible endpoints associated with a broadcast address.
+
+![[broadcast.png]]
+
+%%ANKI
+Basic
+What is a broadcast?
+Back: A transmission in which a message is delivered to all possible recipients.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772853-->
+END%%
+
+%%ANKI
+Cloze
+A {one-to-all} transmission is a(n) {broad}cast.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772856-->
+END%%
+
+%%ANKI
+Basic
+The following depicts what kind of network addressing method?
+![[broadcast.png]]
+Back: Broadcasting.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772859-->
+END%%
+
+%%ANKI
+Basic
+Which IP addressing method has a one-to-all association?
+Back: Broadcasting.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772863-->
+END%%
+
+### Multicast
+
+A **multicast** delivers a message to a group of nodes in a network using a *one-to-many-of-many* or *many-to-many-of-many* association. Messages are routed simultaneously in a single transmission to many recipients.
+
+![[multicast.png]]
+
+%%ANKI
+Basic
+What is a multicast?
+Back: A transmission in which a message is delivered to many recipients.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772866-->
+END%%
+
+%%ANKI
+Basic
+The following depicts what kind of network addressing method?
+![[multicast.png]]
+Back: Multicasting.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772869-->
+END%%
+
+%%ANKI
+Basic
+Which IP addressing method has a one-to-many-of-many association?
+Back: Multicasting.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772873-->
+END%%
+
+%%ANKI
+Basic
+Which IP addressing method has a many-to-many-of-many association?
+Back: Multicasting.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772876-->
+END%%
+
+### Anycast
+
+An **anycast** delivers a message to any one out of a group of nodes using a *one-to-one-of-many* association. Typically the recipient is the one closest to the source of the message.
+
+![[anycast.png]]
+
+%%ANKI
+Basic
+What is an anycast?
+Back: A transmission in which a message is delivered to one of a group of possible recipients.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772879-->
+END%%
+
+%%ANKI
+Cloze
+A {one-to-one-of-many} transmission is a(n) {any}cast.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772882-->
+END%%
+
+%%ANKI
+Basic
+The following depicts what kind of network addressing method?
+![[anycast.png]]
+Back: Anycasting.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772885-->
+END%%
+
+%%ANKI
+Basic
+Which IP addressing method has a one-to-one-of-many association?
+Back: Anycasting.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772888-->
+END%%
+
+%%ANKI
+Basic
+Which of the possible recipients in an anycast is a message typically delivered to?
+Back: The one closest to the source of the message.
+Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
+<!--ID: 1751119772891-->
+END%%
+
 ## Bibliography
 
+* “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
 * Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
