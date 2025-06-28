@@ -298,6 +298,36 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1750512996158-->
 END%%
 
+%%ANKI
+Basic
+What is wrong with the following URL?
+
+> `http://2001:0db8:85a3:08d3:1319:8a2e:0370:7344:443/`
+
+Back: The colon separting the port is potentially confused with the IPv6 address.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1751082430907-->
+END%%
+
+%%ANKI
+Basic
+How is an IPv6 address adjusted to avoid potential ambiguity?
+Back: By surrounding the address with square brackets.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1751082430910-->
+END%%
+
+%%ANKI
+Basic
+Rewrite the following so there is no ambiguity:
+
+> `http://2001:0db8:85a3:08d3:1319:8a2e:0370:7344:443/`
+
+Back: `http://[2001:0db8:85a3:08d3:1319:8a2e:0370:7344]:443/`
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1751082430912-->
+END%%
+
 ## Bibliography
 
 * Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
