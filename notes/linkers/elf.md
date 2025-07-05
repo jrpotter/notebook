@@ -1,7 +1,7 @@
 ---
 title: ELF
 TARGET DECK: Obsidian::STEM
-FILE TAGS: linker::elf x86-64
+FILE TAGS: linker::elf processor::x86-64
 tags:
   - elf
   - linker
@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-ELF (Executable and Linkable Format) is the modern [[linkers/index#Object Files|object file]] form used by [[x86-64/index|x86-64]] Linux systems.
+ELF (Executable and Linkable Format) is the modern [[linkers/index#Object Files|object file]] form used by [[processor/x86-64/index|x86-64]] Linux systems.
 
 %%ANKI
 Basic

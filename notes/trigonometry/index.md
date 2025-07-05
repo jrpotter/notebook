@@ -10,12 +10,62 @@ tags:
 
 Trigonometry was originally derived from a Greek word meaning "triangle measuring". It has since been generalized to refer to the study of periodicity.
 
+![[circular-trigonometric.png]]
+
+There exists a duality between the use of $\sin$, $\cos$, and other related functions. They are technically called **circular functions** when they use arc lengths as inputs and technically called **trigonometric functions** when they use angles as inputs. The relationship between the two is so close, the terms are safe to use interchangeably.
+
 %%ANKI
 Basic
 Trigonometry was originally the study of what geometric shape?
 Back: Triangles.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737167693405-->
+END%%
+
+%%ANKI
+Cloze
+{Trigonometric} functions are also called {circular} functions.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751578592388-->
+END%%
+
+%%ANKI
+Basic
+If being pedantic, which cosine is considered a trigonometric function?
+Back: The one that takes angles as input.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751578592398-->
+END%%
+
+%%ANKI
+Basic
+If being pedantic, which cosine is considered a circular function?
+Back: The one that takes arc lengths as input.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751578592402-->
+END%%
+
+%%ANKI
+Cloze
+{1:Circular} functions are to {2:arc lengths} whereas {2:trigonometric} functions are to {1:angles}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751578592405-->
+END%%
+
+%%ANKI
+Basic
+If being pedantic, what distinguishes a circular function from a trigonometric function?
+Back: The former takes arc lengths as input. The latter takes in angles.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751578592408-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial argument explains why we have six trigonometric functions?
+Back: Of the 3 sides of a triangle, there are $(3)_2 = 6$ ways of picking two sides.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883766-->
 END%%
 
 ## Functions
@@ -103,6 +153,8 @@ END%%
 ### Sine
 
 If the real number $t$ is the directed length of an arc (either positive or negative) measured on the [[unit_circle|unit circle]] $x^2 + y^2 = 1$ (with counterclockwise as the positive direction) with initial point $\langle 1, 0 \rangle$ and terminal point $\langle x, y \rangle$, then the **sine** of $t$, denoted $\sin(t)$ is defined to be $$\sin(t) = y.$$
+
+For any point $\langle x, y \rangle$ other than the origin on the terminal side of an angle $\theta$ in standard position, $$\sin{\theta} = \frac{y}{r}, \quad r = \sqrt{x^2 + y^2}.$$
 
 %%ANKI
 Cloze
@@ -263,9 +315,29 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737418825316-->
 END%%
 
+%%ANKI
+Basic
+Based on the following, what does $\sin{\theta}$ equal?
+![[trig-angle-def.png]]
+Back: $y / r$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883775-->
+END%%
+
+%%ANKI
+Basic
+Consider the following similar triangles. How is the value of $\sin{\theta}$ derived?
+![[trig-similar-triangle-def.png]]
+Back: $$\sin{\theta} = v = \frac{v}{1} = \frac{y}{r}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883777-->
+END%%
+
 ### Cosine
 
 If the real number $t$ is the directed length of an arc (either positive or negative) measured on the [[unit_circle|unit circle]] $x^2 + y^2 = 1$ (with counterclockwise as the positive direction) with initial point $\langle 1, 0 \rangle$ and terminal point $\langle x, y \rangle$, then the **cosine** of $t$, denoted $\cos(t)$, is defined to be $$\cos(t) = x.$$
+
+For any point $\langle x, y \rangle$ other than the origin on the terminal side of an angle $\theta$ in standard position, $$\cos{\theta} = \frac{x}{r}, \quad r = \sqrt{x^2 + y^2}.$$
 
 %%ANKI
 Cloze
@@ -426,9 +498,29 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737418825321-->
 END%%
 
+%%ANKI
+Basic
+Based on the following, what does $\cos{\theta}$ equal?
+![[trig-angle-def.png]]
+Back: $x / r$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883780-->
+END%%
+
+%%ANKI
+Basic
+Consider the following similar triangles. How is the value of $\cos{\theta}$ derived?
+![[trig-similar-triangle-def.png]]
+Back: $$\cos{\theta} = u = \frac{u}{1} = \frac{x}{r}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883783-->
+END%%
+
 ### Tangent
 
 The **tangent function** is the quotient of the sine function by the cosine function. For real number $t \neq 0$, $$\tan{(t)} = \frac{\sin{(t)}}{\cos{(t)}}.$$
+
+For any point $\langle x, y \rangle$ other than the origin on the terminal side of an angle $\theta$ in standard position, $$\tan{\theta} = \frac{y}{x}.$$
 
 %%ANKI
 Basic
@@ -581,9 +673,29 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1749333600848-->
 END%%
 
+%%ANKI
+Basic
+Based on the following, what does $\tan{\theta}$ equal?
+![[trig-angle-def.png]]
+Back: $y / x$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883785-->
+END%%
+
+%%ANKI
+Basic
+Consider the following similar triangles. How is the value of $\tan{\theta}$ derived?
+![[trig-similar-triangle-def.png]]
+Back: $$\tan{\theta} = \frac{\sin{\theta}}{\cos{\theta}} = \frac{v}{u} = \frac{y}{x}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883788-->
+END%%
+
 ### Secant
 
 The **secant function** is the reciprocal of the cosine function. That is, for any real number $t$, $$\sec{(t)} = \frac{1}{\cos{(t)}}.$$
+
+For any point $\langle x, y \rangle$ other than the origin on the terminal side of an angle $\theta$ in standard position, $$\sec{\theta} = \frac{r}{x}, \quad r = \sqrt{x^2 + y^2}.$$
 
 %%ANKI
 Basic
@@ -648,9 +760,29 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1745010301139-->
 END%%
 
+%%ANKI
+Basic
+Based on the following, what does $\sec{\theta}$ equal?
+![[trig-angle-def.png]]
+Back: $r / x$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883790-->
+END%%
+
+%%ANKI
+Basic
+Consider the following similar triangles. How is the value of $\sec{\theta}$ derived?
+![[trig-similar-triangle-def.png]]
+Back: $$\sec{\theta} = \frac{1}{\cos{\theta}} = \frac{1}{u} = \frac{r}{x}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883793-->
+END%%
+
 ### Cosecant
 
 The **cosecant function** is the reciprocal of the sine function. That is, for any real number $t$, $$\csc{(t)} = \frac{1}{\sin{(t)}}.$$
+
+For any point $\langle x, y \rangle$ other than the origin on the terminal side of an angle $\theta$ in standard position, $$\sec{\theta} = \frac{r}{y}, \quad r = \sqrt{x^2 + y^2}.$$
 
 %%ANKI
 Basic
@@ -714,9 +846,29 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1745010811553-->
 END%%
 
+%%ANKI
+Basic
+Based on the following, what does $\csc{\theta}$ equal?
+![[trig-angle-def.png]]
+Back: $r / y$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883797-->
+END%%
+
+%%ANKI
+Basic
+Consider the following similar triangles. How is the value of $\csc{\theta}$ derived?
+![[trig-similar-triangle-def.png]]
+Back: $$\csc{\theta} = \frac{1}{\sin{\theta}} = \frac{1}{v} = \frac{r}{y}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883801-->
+END%%
+
 ### Cotangent
 
 The **cotangent function** is the reciprocal of the tangent function. That is, for any real number $t$, $$\cot{(t)} = \frac{1}{\tan{(t)}} = \frac{\cos{(t)}}{\sin{(t)}}.$$
+
+For any point $\langle x, y \rangle$ other than the origin on the terminal side of an angle $\theta$ in standard position, $$\cot{\theta} = \frac{x}{y}.$$
 
 %%ANKI
 Basic
@@ -770,6 +922,24 @@ What is the range of the cotangent function?
 Back: $\mathbb{R}$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1745010811571-->
+END%%
+
+%%ANKI
+Basic
+Based on the following, what does $\cot{\theta}$ equal?
+![[trig-angle-def.png]]
+Back: $x / y$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883805-->
+END%%
+
+%%ANKI
+Basic
+Consider the following similar triangles. How is the value of $\cot{\theta}$ derived?
+![[trig-similar-triangle-def.png]]
+Back: $$\cot{\theta} = \frac{\cos{\theta}}{\sin{\theta}} = \frac{u}{v} = \frac{x}{y}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883808-->
 END%%
 
 ## Identities

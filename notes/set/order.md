@@ -633,6 +633,46 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1749847120970-->
 END%%
 
+%%ANKI
+Basic
+Let $\leq$ be a partial ordering on set $A$. What does $\mathop{\text{fld}} \leq$ equal?
+Back: $A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1751376306711-->
+END%%
+
+%%ANKI
+Basic
+Let $\leq$ be a partial ordering on set $A$. *Why* does $\mathop{\text{fld}} \mathop{\leq} = A$?
+Back: Because $\leq$ is reflexive; for all $x \in A$, $\langle x, x \rangle \in \mathop{\leq}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1751376306720-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. Is $\varnothing$ a partial ordering on $A$?
+Back: Indeterminate. Depends if $A$ is empty or not.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1751376306723-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a nonempty set. Is $\varnothing$ a partial ordering on $A$?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1751376306726-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a nonempty set. *Why* isn't $\varnothing$ a partial ordering on $A$?
+Back: Because $\varnothing$ isn't reflexive on $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1751376306729-->
+END%%
+
 A binary relation $R$ on set $A$ is a **strict partial order on $A$** iff it is irreflexive on $A$, antisymmetric, and transitive.
 
 %%ANKI
@@ -713,6 +753,38 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1749847120978-->
 END%%
 
+%%ANKI
+Basic
+Let $<$ be a strict partial ordering on set $A$. What does $\mathop{\text{fld}} <$ equal?
+Back: Indeterminate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1751376306732-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. Is $\varnothing$ a strict partial ordering on $A$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1751376306736-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a nonempty set. Is $\varnothing$ a strict partial ordering on $A$?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1751376306740-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. *Why* is $\varnothing$ a strict partial ordering on $A$?
+Back: Because $\varnothing$ is irreflexive on $A$, antisymmetric, and transitive.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1751376306744-->
+END%%
+
 ### Hasse Diagrams
 
 Let $\langle P, \leq \rangle$ be a poset. For distinct $a, b \in P$, we say $b$ **covers** $a$ if $a \leq b$ and there does not exist any distinct third element $x$ such that $a \leq x \leq b$.
@@ -745,7 +817,7 @@ END%%
 
 %%ANKI
 Basic
-Consider partial order $P = \{\varnothing, \{1\}, \{2\}, \{1, 2\}\}$ with ordering relation $\subseteq$. Which element(s) cover $\{\varnothing\}$?
+Consider set $P = \{\varnothing, \{1\}, \{2\}, \{1, 2\}\}$ with partial order $\subseteq$. Which element(s) cover $\{\varnothing\}$?
 Back: $\{1\}$ and $\{2\}$.
 Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553303-->
@@ -753,7 +825,7 @@ END%%
 
 %%ANKI
 Basic
-Consider partial order $P = \{\varnothing, \{1\}, \{2\}, \{1, 2\}\}$ with ordering relation $\subseteq$. Which element(s) cover $\{1\}$?
+Consider set $P = \{\varnothing, \{1\}, \{2\}, \{1, 2\}\}$ with partial order $\subseteq$. Which element(s) cover $\{1\}$?
 Back: $\{1, 2\}$
 Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553305-->
@@ -761,7 +833,7 @@ END%%
 
 %%ANKI
 Basic
-Consider partial order $P = \{\varnothing, \{1\}, \{2\}, \{1, 2\}\}$ with ordering relation $\subseteq$. Which element(s) does $\{1, 2\}$ cover?
+Consider set $P = \{\varnothing, \{1\}, \{2\}, \{1, 2\}\}$ with partial order $\subseteq$. Which element(s) does $\{1, 2\}$ cover?
 Back: $\{1\}$ and $\{2\}$.
 Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553308-->

@@ -143,6 +143,38 @@ Expression $\{Q\}\; S\; \{R\}$ is equivalent to $Q \Rightarrow wp(S, R)$.
 
 %%ANKI
 Basic
+What is the weakest predicate?
+Back: $T$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1751373733285-->
+END%%
+
+%%ANKI
+Basic
+What is the strongest predicate?
+Back: $F$
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1751373733292-->
+END%%
+
+%%ANKI
+Basic
+What is the "upper bound" of strengthening that can be done to a predicate?
+Back: Strengthening it to $F$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1751373733300-->
+END%%
+
+%%ANKI
+Basic
+What is the "upper bound" of weakening that can be done to a predicate?
+Back: Weakening it to $T$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1751373733304-->
+END%%
+
+%%ANKI
+Basic
 What is the predicate transformer $wp$ an acronym for?
 Back: The **w**eakest **p**recondition.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
@@ -1147,7 +1179,7 @@ END%%
 The general form of the **iterative command** is: $$\begin{align*} \textbf{do } & B_1 \rightarrow S_1 \\ \textbf{ | } & B_2 \rightarrow S_2 \\ & \quad\cdots \\ \textbf{ | } & B_n \rightarrow S_n \\ \textbf{od } & \end{align*}$$
 
 We denote the iterative command as $\text{DO}$ and define $\text{DO}$ in terms of $wp$ as: $$wp(\text{DO}, R) = \exists k \geq 0, H_k(R)$$
-where $H_k$ is given [[algebra/sequences/index|recursive definition]]: $$\begin{align*} H_0(R) & = \neg (B_1 \lor \cdots \lor B_n) \land R \\ H_{k+1}(R) & = H_0(R) \lor wp(\text{IF}, H_k(R)) \end{align*}$$
+where $H_k$ is given [[sequences/index|recursive definition]]: $$\begin{align*} H_0(R) & = \neg (B_1 \lor \cdots \lor B_n) \land R \\ H_{k+1}(R) & = H_0(R) \lor wp(\text{IF}, H_k(R)) \end{align*}$$
 
 %%ANKI
 Basic
@@ -1400,6 +1432,30 @@ Which command does Gries encourage guards of to be made as weak as possible?
 Back: The iterative command.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1750081663629-->
+END%%
+
+%%ANKI
+Basic
+*Why* can you weaken a guard of an iterative command without newly violating the invariant?
+Back: N/A. This is not true.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1751373733294-->
+END%%
+
+%%ANKI
+Basic
+*Why* can you strengthen a guard of an iterative command without newly violating the invariant?
+Back: A stronger predicate implies the original predicate.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1751373733297-->
+END%%
+
+%%ANKI
+Basic
+When does strengthening an iterative command's guard allow removing the guard altogether?
+Back: When it can be strengthened to $F$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1751373733308-->
 END%%
 
 #### Bound Functions

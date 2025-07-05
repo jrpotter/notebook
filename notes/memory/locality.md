@@ -113,7 +113,7 @@ Basic
 Suppose `int A[] = {0, 1, 2}` starts at address $M$. What addresses are visited with a stride-1 reference pattern?
 Back: $M$, $M + 4$, $M + 8$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64 c17
+Tags: c17 processor::x86-64
 <!--ID: 1747143060961-->
 END%%
 
@@ -122,7 +122,7 @@ Basic
 Suppose `int A[] = {0, 1, 2, 3}` starts at address $M$. What addresses are visited with a stride-2 reference pattern?
 Back: $M$ and $M + 8$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64 c17
+Tags: c17 processor::x86-64
 <!--ID: 1747143060964-->
 END%%
 

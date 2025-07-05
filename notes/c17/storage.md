@@ -658,7 +658,7 @@ Basic
 What data likely exists in an object with automatic storage duration *before* initialization?
 Back: Whatever data existed beforehand at its address in the stack.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1733316862041-->
 END%%
 
@@ -667,7 +667,7 @@ Basic
 What assembly-level translation justifies why the lifetime of objects with automatic storage duration may precede their declaration?
 Back: Stack space for automatic variables is allocated at function start.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1733316862045-->
 END%%
 

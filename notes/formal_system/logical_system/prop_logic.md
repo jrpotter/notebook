@@ -73,27 +73,6 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707422675517-->
 END%%
 
-%%ANKI
-Basic
-How does Lean define propositional equality?
-Back: Expressions `a` and `b` are propositionally equal iff `a = b` is true.
-Reference: Avigad, Jeremy. ‘Theorem Proving in Lean’, n.d.
-Tags: lean
-<!--ID: 1706994861298-->
-END%%
-
-%%ANKI
-Basic
-How does Lean define `propext`?
-Back:
-```lean
-axiom propext {a b : Prop} : (a ↔ b) → (a = b)
-```
-Reference: Avigad, Jeremy. ‘Theorem Proving in Lean’, n.d.
-Tags: lean
-<!--ID: 1706994861300-->
-END%%
-
 ## Implication
 
 Implication is denoted as $\Rightarrow$. In classical logic, it has truth table $$\begin{array}{c|c|c} p & q & p \Rightarrow q \\ \hline T & T & T \\ T & F & F \\ F & T & T \\ F & F & T \end{array}$$

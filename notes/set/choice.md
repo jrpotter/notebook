@@ -229,7 +229,7 @@ END%%
 
 ### Multiplicative Form
 
-For any set $I$ and function $H$ with domain $I$, if $H(i) \neq \varnothing$ for all $i \in I$, then $\bigtimes_{i \in I} H(i) \neq \varnothing$. Note this statement relies on the [[set#Cartesian Product|Cartesian product]] of infinite sets. 
+For any set $I$ and function $H$ with domain $I$, if $H(i) \neq \varnothing$ for all $i \in I$, then $\bigtimes_{i \in I} H(i) \neq \varnothing$. Note this statement relies on the [[algebra#Cartesian Product|Cartesian product]] of infinite sets. 
 
 %%ANKI
 Basic
@@ -457,7 +457,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be a poset with ordering relation $\leq$. When is $B \subseteq A$ considered a chain?
+Let $A$ be a set with partial order $\leq$. When is $B \subseteq A$ considered a chain?
 Back: If $B$ is totally ordered with respect to $\leq$.
 Reference: “Zorn’s Lemma.” In _Wikipedia_, March 12, 2025. [https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma](https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma&oldid=1280130090).
 <!--ID: 1744126029173-->
@@ -498,7 +498,7 @@ END%%
 %%ANKI
 Basic
 What does Zorn's lemma state?
-Back: If every chain of a poset $P$ has an upper bound also in $P$, then $P$ contains a maximal element.
+Back: If every chain of a partial order $P$ has an upper bound also in $P$, then $P$ contains a maximal element.
 Reference: “Zorn’s Lemma.” In _Wikipedia_, March 12, 2025. [https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma](https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma&oldid=1280130090).
 <!--ID: 1744126029191-->
 END%%
@@ -513,7 +513,7 @@ END%%
 
 %%ANKI
 Basic
-Consider poset $P = [0, \infty)$ with ordering relation $\leq$. Does Zorn's lemma apply?
+Consider set $P = [0, \infty)$ with partial order $\leq$. Does Zorn's lemma apply?
 Back: No. There exist chains of $P$ with no upper bound in $P$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744126029201-->
@@ -521,7 +521,7 @@ END%%
 
 %%ANKI
 Basic
-Consider poset $P = (-\infty, 0]$ with ordering relation $\leq$. Does Zorn's lemma apply?
+Consider set $P = (-\infty, 0]$ with partial order $\leq$. Does Zorn's lemma apply?
 Back: Yes. $0 \in P$ is an upper bound for every chain of $P$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744126029206-->
@@ -529,7 +529,7 @@ END%%
 
 %%ANKI
 Basic
-Consider poset $P = (-\infty, 0)$ with ordering relation $\leq$. Does Zorn's lemma apply?
+Consider set $P = (-\infty, 0)$ with partial order $\leq$. Does Zorn's lemma apply?
 Back: No. There exist chains of $P$ with no upper bound in $P$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744126029211-->
@@ -537,16 +537,16 @@ END%%
 
 %%ANKI
 Basic
-When using Zorn's lemma to prove the relation form of AoC, what partial order is formed?
-Back: For some relation $R$, $\{f \subseteq R \mid f \text{ is a function} \}$ with ordering relation $\subseteq$.
+When using Zorn's lemma to prove the relation form of AoC, what poset is formed?
+Back: For a relation $R$, $\{f \subseteq R \mid f \text{ is a function} \}$ with ordering relation $\subseteq$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744897010242-->
 END%%
 
 %%ANKI
 Basic
-When using Zorn's lemma to prove cardinal comparability, what partial order is formed?
-Back: For any sets $C$ and $D$, $\{f \colon C \rightarrow D \mid f \text{ is an injection} \land \mathop{\text{dom}}f \subseteq C \land \mathop{\text{ran}}f \subseteq D \}$ with ordering relation $\subseteq$.
+When using Zorn's lemma to prove cardinal comparability, what poset is formed?
+Back: For sets $C$ and $D$, $\{f \colon C \rightarrow D \mid f \text{ is an injection} \land \mathop{\text{dom}}f \subseteq C \land \mathop{\text{ran}}f \subseteq D \}$ with ordering relation $\subseteq$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744897010246-->
 END%%

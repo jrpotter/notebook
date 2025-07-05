@@ -554,7 +554,7 @@ struct Elf64_Rela {
 ```
 Back: It is the offset of the reference to relocate.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385837-->
 END%%
 
@@ -571,7 +571,7 @@ struct Elf64_Rela {
 ```
 Back: The start of the section the reference is located in.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385840-->
 END%%
 
@@ -588,7 +588,7 @@ struct Elf64_Rela {
 ```
 Back: It identifies the symbol the modified reference should point to.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385843-->
 END%%
 
@@ -605,7 +605,7 @@ struct Elf64_Rela {
 ```
 Back: `.symtab`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385846-->
 END%%
 
@@ -622,7 +622,7 @@ struct Elf64_Rela {
 ```
 Back: To bias the value of the modified reference.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385849-->
 END%%
 
@@ -639,7 +639,7 @@ struct Elf64_Rela {
 ```
 Back: To indicate to the linker what algorithm should be used to compute the relocated address.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385853-->
 END%%
 
@@ -656,7 +656,7 @@ struct Elf64_Rela {
 ```
 Back: `R_X86_64_32` and `R_X86_64_PC32`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385856-->
 END%%
 
@@ -664,7 +664,7 @@ END%%
 Cloze
 {1:`R_X86_64_32`} is to {2:absolute} whereas {2:`R_X86_64_PC32`} is to {1:PC-relative}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: linker::elf x86-64
+Tags: linker::elf processor::x86-64
 <!--ID: 1737320385860-->
 END%%
 
@@ -673,7 +673,7 @@ Basic
 What is the significance of `R` in type `R_X86_64_32`?
 Back: It is the prefix used for relocation entry `type` values.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385864-->
 END%%
 
@@ -682,7 +682,7 @@ Basic
 What is the significance of `32` in type `R_X86_64_32`?
 Back: The reference is relocated using a 32-bit absolute address.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385867-->
 END%%
 
@@ -691,7 +691,7 @@ Basic
 What is `PC` an acronym of in type `R_X86_64_PC32`?
 Back: It is short for **p**rogram **c**ounter.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385871-->
 END%%
 
@@ -700,7 +700,7 @@ Basic
 What is the significance of `PC32` in type `R_X86_64_PC32`?
 Back: The reference is relocated using a 32-bit PC-relative address.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385875-->
 END%%
 
@@ -717,7 +717,7 @@ struct Elf64_Rela {
 ```
 Back: `type`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385879-->
 END%%
 
@@ -734,7 +734,7 @@ struct Elf64_Rela {
 ```
 Back: `type`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385883-->
 END%%
 
@@ -751,7 +751,7 @@ struct Elf64_Rela {
 ```
 Back: `R_X86_64_PC32`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385887-->
 END%%
 
@@ -768,7 +768,7 @@ struct Elf64_Rela {
 ```
 Back: `R_X86_64_32`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf x86-64
+Tags: c17 linker::elf processor::x86-64
 <!--ID: 1737320385894-->
 END%%
 

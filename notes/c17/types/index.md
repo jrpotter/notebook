@@ -1745,10 +1745,26 @@ END%%
 
 %%ANKI
 Basic
-Which of basic types or integer types is a subset of the other?
+Which of the basic types or integer types is a subset of the other?
 Back: N/A.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1724546734477-->
+END%%
+
+%%ANKI
+Basic
+Why aren't the basic types a subset of the integer types?
+Back: The basic types include floating point types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1751370229142-->
+END%%
+
+%%ANKI
+Basic
+Why aren't the integer types a subset of the basic types?
+Back: The integer types include enumerations.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1751370229149-->
 END%%
 
 ## Arithmetic Types
@@ -2486,7 +2502,7 @@ Basic
 *Why* must FLAs be declared within a function?
 Back: N/A. They can exist elsewhere.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1731952634167-->
 END%%
 
@@ -2515,7 +2531,7 @@ Basic
 *Why* do variable-length arrays require use of a frame pointer?
 Back: Offsets depend on how much space must be allocated on the stack.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1731952634169-->
 END%%
 
@@ -2524,7 +2540,7 @@ Basic
 *Why* must VLAs be declared within a function?
 Back: Their implementation relies on frame pointers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1731952634170-->
 END%%
 

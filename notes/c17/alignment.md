@@ -1,7 +1,7 @@
 ---
 title: Alignment
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17::alignment x86-64
+FILE TAGS: c17::alignment processor::x86-64
 tags:
   - c17
   - x86-64
@@ -699,7 +699,7 @@ Basic
 What are the addressable storage units supported in x86-64?
 Back: A byte, word, double word, or quad word.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1734662614105-->
 END%%
 
@@ -716,7 +716,7 @@ Basic
 Does x86-64 allow bit-fields to overlap adjacent addressable storage units?
 Back: No.
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1734662614115-->
 END%%
 

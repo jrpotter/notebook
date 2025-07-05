@@ -339,7 +339,7 @@ END%%
 
 %%ANKI
 Basic
-Prove $P(n)$ is true for all $n \in \mathbb{N}$ using induction. What set do we prove is inductive?
+When showing $P(n)$ is true for all $n \in \mathbb{N}$ using induction, what set do we prove is inductive?
 Back: $\{n \in \mathbb{N} \mid P(n)\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1724606314403-->
@@ -1524,7 +1524,7 @@ END%%
 
 %%ANKI
 Basic
-How can we show set $S$ coincides with $\omega$ using the well-ordering principle?
+How do we use the well-ordering principle to show set $S \subseteq \omega$ coincides with $\omega$?
 Back: By showing $\omega - S$ has no least element.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1731204485586-->

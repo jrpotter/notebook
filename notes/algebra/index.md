@@ -8,6 +8,10 @@ tags:
 
 ## Overview
 
+TODO: arithmetic, algebra
+
+## Equations
+
 An **equation** is a relation between two expressions that may be true for some values of the variables. To **solve** an equation means to find all of the values for the variables that make the two expressions on either side of the equation equal to one another.
 
 An **identity** is an equation that is true for all allowable values of the variables.

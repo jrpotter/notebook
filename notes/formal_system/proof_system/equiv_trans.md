@@ -29,15 +29,6 @@ END%%
 
 %%ANKI
 Basic
-What Lean theorem justifies Gries' choice of $=$ over $\Leftrightarrow$?
-Back: `propext`
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: lean
-<!--ID: 1706994861302-->
-END%%
-
-%%ANKI
-Basic
 What are the two calculi Gries describes equivalence-transformation with?
 Back: A formal system and a system of evaluation.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
@@ -1559,5 +1550,4 @@ END%%
 
 ## Bibliography
 
-* Avigad, Jeremy. ‘Theorem Proving in Lean’, n.d.
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.

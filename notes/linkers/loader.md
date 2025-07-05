@@ -106,7 +106,7 @@ Basic
 On Linux x86-64 systems, does the stack grow towards larger or smaller addresses?
 Back: Smaller.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1741298168034-->
 END%%
 
@@ -115,7 +115,7 @@ Basic
 On Linux x86-64 systems, does the heap grow towards larger or smaller addresses?
 Back: Larger.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1741298168036-->
 END%%
 
@@ -123,7 +123,7 @@ END%%
 Cloze
 On Linux x86-64 systems, the {1:heap} grows towards {2:larger} addresses while the {2:stack} grows towards {1:smaller} addresses.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1741298168037-->
 END%%
 
@@ -132,7 +132,7 @@ Basic
 After loading on Linux x86-64 systems, which of the code or data segment starts on a larger address?
 Back: The data segment.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1741298168038-->
 END%%
 
@@ -141,7 +141,7 @@ Basic
 After loading on Linux x86-64 systems, which of the code or data segment starts on a smaller address?
 Back: The code segment.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1741298168039-->
 END%%
 

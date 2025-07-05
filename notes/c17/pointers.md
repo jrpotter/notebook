@@ -212,7 +212,7 @@ Back:
 movq %rdi,%rax
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1730740461667-->
 END%%
 
@@ -227,7 +227,7 @@ Back:
 movl (%rdi),%eax
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1730740461668-->
 END%%
 
@@ -242,7 +242,7 @@ Back:
 movl (%rdi, %rsi, 4),%eax
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1730740461669-->
 END%%
 
@@ -257,7 +257,7 @@ Back:
 leaq 8(%rdi),%rax
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1730740461670-->
 END%%
 

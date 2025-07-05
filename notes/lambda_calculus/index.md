@@ -265,15 +265,6 @@ END%%
 
 %%ANKI
 Basic
-What form of Lean equality corresponds to $\lambda$-calculus's $\equiv$ operator?
-Back: Syntactic equality.
-Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).
-Tags: lean
-<!--ID: 1717422855706-->
-END%%
-
-%%ANKI
-Basic
 How does Hindley et al. denote syntactic identity of $\lambda$-terms $M$ and $N$?
 Back: $M \equiv N$
 Reference: Hindley, J Roger, and Jonathan P Seldin. “Lambda-Calculus and Combinators, an Introduction,” n.d. [https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf](https://www.cin.ufpe.br/~djo/files/Lambda-Calculus%20and%20Combinators.pdf).

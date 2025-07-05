@@ -991,6 +991,180 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1749922915387-->
 END%%
 
+%%ANKI
+Basic
+Let $P = \langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. What values can $P$ have in its stack on start?
+Back: N/A. It must be empty.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470786-->
+END%%
+
+%%ANKI
+Basic
+Let $P = \langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. What values can $P$ have in its stack on accept?
+Back: Any values of $\Gamma$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470795-->
+END%%
+
+%%ANKI
+Basic
+Let $P = \langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. When does $P$ accept input $w$?
+Back: When it finishes processing $w$ in a state belonging to $F$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470798-->
+END%%
+
+%%ANKI
+Basic
+Let $P = \langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. In the following, $b$ is a member of what set? $$\langle r_{i+1}, b \rangle \in \delta(r_i, w_{i+1}, a)$$
+Back: $\Gamma_\epsilon$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470800-->
+END%%
+
+%%ANKI
+Basic
+Let $P = \langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. In the following, $a$ is a member of what set? $$\langle r_{i+1}, b \rangle \in \delta(r_i, w_{i+1}, a)$$
+Back: $\Gamma_\epsilon$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470804-->
+END%%
+
+%%ANKI
+Basic
+Let $P = \langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. In the following, $r_i$ is a member of what set? $$\langle r_{i+1}, b \rangle \in \delta(r_i, w_{i+1}, a)$$
+Back: $Q$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470807-->
+END%%
+
+%%ANKI
+Basic
+Let $P = \langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. In the following, $w_{i+1}$ is a member of what set? $$\langle r_{i+1}, b \rangle \in \delta(r_i, w_{i+1}, a)$$
+Back: $\Sigma_\epsilon$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470811-->
+END%%
+
+%%ANKI
+Basic
+Let $P = \langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. In the following, $r_{i+1}$ is a member of what set? $$\langle r_{i+1}, b \rangle \in \delta(r_i, w_{i+1}, a)$$
+Back: $Q$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470816-->
+END%%
+
+%%ANKI
+Basic
+The following is a state diagram for what kind of automaton?
+![[pda-0n1n.png]]
+Back: A (nondeterministic) pushdown automaton.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470821-->
+END%%
+
+%%ANKI
+Basic
+Let $a, b \rightarrow c$ be the label of a PDA's state diagram. What does it mean for $a$ to be $\epsilon$?
+Back: The transition is made without reading a symbol from the input tape.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470827-->
+END%%
+
+%%ANKI
+Basic
+Let $a, b \rightarrow c$ be the label of a PDA's state diagram. What does it mean for $b$ to be $\epsilon$?
+Back: The transition is made without popping a symbol off the stack.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470833-->
+END%%
+
+%%ANKI
+Basic
+Let $a, b \rightarrow c$ be the label of a PDA's state diagram. What does it mean for $c$ to be $\epsilon$?
+Back: The transition is made without pushing a symbol onto the stack.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470839-->
+END%%
+
+%%ANKI
+Basic
+The following PDA recognizes what language?
+![[pda-0n1n.png]]
+Back: $\{ 0^n1^n \mid n \geq 0 \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470845-->
+END%%
+
+%%ANKI
+Basic
+How are start states denoted in a PDA's state diagram?
+Back: An arrow from nowhere points to the start state.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470850-->
+END%%
+
+%%ANKI
+Basic
+How are final states denoted in a PDA's state diagram?
+Back: With double circles.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470856-->
+END%%
+
+%%ANKI
+Basic
+How does one typically detect when a PDA's stack is empty?
+Back: By initially placing a special symbol $\$$ onto the stack.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470861-->
+END%%
+
+%%ANKI
+Basic
+How does one detect when the last input symbol is processed by a PDA?
+Back: By accepting on a final state with no outbound transitions.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470866-->
+END%%
+
+%%ANKI
+Basic
+What is the meaning of transition $q_1 \rightarrow q_2$ in the following?
+![[pda-0n1n.png]]
+Back: The $\$$ symbol is pushed onto the stack which allows us to detect when the stack is empty later on.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470870-->
+END%%
+
+%%ANKI
+Basic
+What is the meaning of transition $q_3 \rightarrow q_4$ in the following?
+![[pda-0n1n.png]]
+Back: The $\$$ symbol is popped off the stack, indicating the stack is empty.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470874-->
+END%%
+
+%%ANKI
+Basic
+What language does the following PDA recognize?
+![[input-reverse-pda.png]]
+Back: $\{ ww^R \mid w \in \{0, 1\}^* \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470878-->
+END%%
+
+%%ANKI
+Basic
+What is the meaning of transition $q_2 \rightarrow q_3$ in the following?
+![[input-reverse-pda.png]]
+Back: It nondeterministically checks if we're at the middle of the input.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1751511470882-->
+END%%
+
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).

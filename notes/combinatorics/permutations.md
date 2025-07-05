@@ -531,6 +531,34 @@ Reference: “Derangement.” In _Wikipedia_, June 23, 2025. [https://en.wikiped
 <!--ID: 1750773335206-->
 END%%
 
+## Inversions
+
+Let $\pi$ be a permutation. There is an **inversion** of $\pi$ between $i$ and $j$ if $i < j$ and $\pi(i) > \pi (j)$.
+
+%%ANKI
+Basic
+What bounds function does Gries use when sorting an array?
+Back: The number of inversions in the array.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1751373733313-->
+END%%
+
+%%ANKI
+Basic
+What is an inversion of permutation $\pi$?
+Back: A pair $\langle i, j \rangle$ such that $i < j$ and $\pi(i) > \pi(j)$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1751373733316-->
+END%%
+
+%%ANKI
+Basic
+How many inversions exist in sequence $\langle 1, 3, 2, 0 \rangle$?
+Back: Four.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1751373733320-->
+END%%
+
 ## Bibliography
 
 * “Derangement.” In _Wikipedia_, June 23, 2025. [https://en.wikipedia.org/w/index.php?title=Derangement](https://en.wikipedia.org/w/index.php?title=Derangement&oldid=1297049355).

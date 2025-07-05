@@ -23,7 +23,7 @@ END%%
 
 %%ANKI
 Basic
-Which level in the memory hierarchy serves as a cache for L0?
+L0 serves as a cache for what level in the memory hierarchy?
 Back: N/A. L0 is typically the top of the memory hierarchy.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1747861797184-->
@@ -31,7 +31,7 @@ END%%
 
 %%ANKI
 Basic
-Which level in the memory hierarchy serves as a cache for L1?
+L1 serves as a cache for what level in the memory hierarchy?
 Back: L0.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1747861797187-->

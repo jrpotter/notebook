@@ -114,6 +114,48 @@ Reference: “Similarity (Geometry).” In _Wikipedia_, May 16, 2025. [https://e
 <!--ID: 1749910471987-->
 END%%
 
+%%ANKI
+Basic
+How must angles of two similar triangles relate to one another?
+Back: They must be equal.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883812-->
+END%%
+
+%%ANKI
+Basic
+How must side lengths of two similar triangles relate to one another?
+Back: They must be proportional.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883816-->
+END%%
+
+%%ANKI
+Basic
+How do the following two triangles relate to one another?
+![[similar-triangles.png]]
+Back: They are similar.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883820-->
+END%%
+
+%%ANKI
+Basic
+How do we know the following two triangles are similar?
+![[similar-triangles.png]]
+Back: Their angles measure equally.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883824-->
+END%%
+
+%%ANKI
+Cloze
+In the following, {$a / d$} equals {$b / e$}.
+![[similar-triangles.png]]
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1751635883829-->
+END%%
+
 ## Congruence
 
 Two sets of points are **congruent** if and only if one can be obtained from the other by just translation, rotation, and reflection.
@@ -172,3 +214,4 @@ END%%
 
 * “Shape.” In _Wikipedia_, January 23, 2025. [https://en.wikipedia.org/w/index.php?title=Shape](https://en.wikipedia.org/w/index.php?title=Shape&oldid=1271335237).
 * “Similarity (Geometry).” In _Wikipedia_, May 16, 2025. [https://en.wikipedia.org/w/index.php?title=Similarity_(geometry)](https://en.wikipedia.org/w/index.php?title=Similarity_\(geometry\)&oldid=1290691543).
+* Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.

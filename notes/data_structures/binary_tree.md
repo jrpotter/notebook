@@ -140,7 +140,7 @@ Basic
 How many nodes are in a perfect binary tree of height $h$?
 Back: $2^{h+1} - 1$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: algebra::sequence
+Tags: sequence
 <!--ID: 1713118128255-->
 END%%
 
@@ -149,7 +149,7 @@ Basic
 How many internal nodes are in a perfect binary tree of height $h$?
 Back: $2^h - 1$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: algebra::sequence
+Tags: sequence
 <!--ID: 1714080353472-->
 END%%
 
@@ -158,7 +158,7 @@ Basic
 How many external nodes are in a perfect binary tree of height $h$?
 Back: $2^h$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: algebra::sequence
+Tags: sequence
 <!--ID: 1714080353469-->
 END%%
 
@@ -167,7 +167,7 @@ Basic
 How many nodes are on level $d$ of a perfect binary tree?
 Back: $2^d$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: algebra::sequence
+Tags: sequence
 <!--ID: 1714080353465-->
 END%%
 
@@ -176,7 +176,7 @@ Basic
 How does the number of internal nodes compare to the number of external nodes in a perfect binary tree?
 Back: There is one more external node than internal node.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: algebra::sequence
+Tags: sequence
 <!--ID: 1714080353476-->
 END%%
 
@@ -283,100 +283,6 @@ What recurrence is used in the recursive definition of a binary tree?
 Back: A binary tree is composed of a root node, a left subtree, and a right subtree.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1712409466606-->
-END%%
-
-%%ANKI
-Basic
-How should the nil constructor of an inductive binary tree, say `Tree`, be defined?
-Back:
-```lean
-| nil : Tree α
-```
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: lean
-<!--ID: 1712409466615-->
-END%%
-
-%%ANKI
-Basic
-How should the non-nil constructor of an inductive binary tree, say `Tree`, be defined?
-Back:
-```lean
-| node : α → Tree α → Tree α → Tree α
-```
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: lean
-<!--ID: 1712409466621-->
-END%%
-
-%%ANKI
-Basic
-In the following binary tree type, what name is given to the first argument of `node`?
-```lean
-inductive Tree α where
-| nil : Tree α
-| node : α → Tree α → Tree α → Tree α
-```
-Back: The root node.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: lean
-<!--ID: 1712409466627-->
-END%%
-
-%%ANKI
-Basic
-In the following binary tree type, what name is given to the second argument of `node`?
-```lean
-inductive Tree α where
-| nil : Tree α
-| node : α → Tree α → Tree α → Tree α
-```
-Back: The left subtree.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: lean
-<!--ID: 1712409466634-->
-END%%
-
-%%ANKI
-Basic
-In the following binary tree type, what name is given to the third argument of `node`?
-```lean
-inductive Tree α where
-| nil : Tree α
-| node : α → Tree α → Tree α → Tree α
-```
-Back: The right subtree.
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: lean
-<!--ID: 1712409466639-->
-END%%
-
-%%ANKI
-Basic
-Given the following binary tree implementation, how do you construct an empty tree?
-```lean
-inductive Tree α where
-| nil : Tree α
-| node : α → Tree α → Tree α → Tree α
-```
-Back: `nil`
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: lean
-<!--ID: 1712409466643-->
-END%%
-
-%%ANKI
-Basic
-Given the following binary tree implementation, how do you construct a tree with root `a`, left child `b`, and right child `c`?
-```lean
-inductive Tree α where
-| nil : Tree α
-| node : α → Tree α → Tree α → Tree α
-```
-Back: `node 'a' (node 'b' nil nil) (node 'c' nil nil)`
-Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: lean
-<!--ID: 1712409466648-->
 END%%
 
 %%ANKI
