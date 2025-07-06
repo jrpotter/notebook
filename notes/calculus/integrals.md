@@ -990,6 +990,79 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1743283589762-->
 END%%
 
+## Average Value
+
+Let $f$ be integrable on an interval $[a, b]$. We define the **average value of $f$ on $[a, b]$**, denoted $A(f)$, by the formula $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx.$$
+
+Let $w$ be a nonnegative function such that $\int_a^b w(x) \,dx \neq 0$. Then the **weighted average value of $f$ on $[a, b]$**, denoted $A(f)$, is given by formula $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}.$$
+
+In this context, $w$ is called a **weight function**.
+
+
+%%ANKI
+Basic
+Let $f$ be integrable on an interval $[a, b]$. How is $A(f)$, the average value of $f$ on $[a, b]$, defined?
+Back: $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704321-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on an interval $[a, b]$. What name is given to $A(f)$ in the following? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
+Back: The average value of $f$ on $[a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704322-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a nonnegative, integrable function on $[a, b]$. How do we geometrically interpret the following? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
+Back: As the rectangle with base $[a, b]$ and altitude $A(f)$ having area equal to $\int_a^b f(x) \,dx$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704324-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on an interval $[a, b]$. How is the average value of $f$ on $[a, b]$ reimagined as a weighted average value? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
+Back: With weight function $w(x) = 1$ for all $x \in [a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704325-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on $[a, b]$ and $w$ be its weight function. How is $A(f)$, the weighted average value of $f$ on $[a, b]$, defined?
+Back: $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x)}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704326-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on $[a, b]$ and nonnegative $w$ satisfy $\int_a^b w(x) \,dx \neq 0$. What name is given to $A(f)$ in the following? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x)}$$
+Back: The weighted average value of $f$ on $[a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704327-->
+END%%
+
+%%ANKI
+Basic
+What name is used to describe $w$ in the following equation? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x)}$$
+Back: $w$ is called a weight function.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704328-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be an integrable function on $[a, b]$ and $w$ be its weight function. What two conditions must $w$ satisfy?
+Back: It must be nonnegative and $\int_a^b w(x) \,dx \neq 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704329-->
+END%%
+
 ## Bibliography
 
 * “Integral.” In _Wikipedia_, December 31, 2024. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1266307875).

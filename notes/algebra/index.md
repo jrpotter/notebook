@@ -8,7 +8,31 @@ tags:
 
 ## Overview
 
-TODO: arithmetic, algebra
+**Algebra** is the branch of mathematics that deals with abstract systems, i.e. algebraic structures, and the manipulation of expressions within those systems. It is a generalization of [[arithmetic/index|arithmetic]] that introduces variables and other algebraic operations.
+
+%%ANKI
+Basic
+What is algebra?
+Back: A branch of mathematics that deals with abstract systems and the manipulation of expressions within those systems.
+Reference: “Algebra.” In _Wikipedia_, July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
+<!--ID: 1751748536956-->
+END%%
+
+%%ANKI
+Basic
+Which of algebra or arithmetic is considered a generalization of the other?
+Back: Algebra is a generalization of arithmetic.
+Reference: “Algebra.” In _Wikipedia_, July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
+<!--ID: 1751748536957-->
+END%%
+
+%%ANKI
+Basic
+Which of calculus or algebra is considered a generalization of the other?
+Back: N/A. These are distinct, fundamental concepts in mathematics.
+Reference: “Algebra.” In _Wikipedia_, July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
+<!--ID: 1751752967231-->
+END%%
 
 ## Equations
 
@@ -58,4 +82,5 @@ END%%
 
 ## Bibliography
 
+* “Algebra.” In _Wikipedia_, July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.

@@ -1,8 +1,9 @@
 ---
 title: Logarithms
 TARGET DECK: Obsidian::STEM
-FILE TAGS: logarithm
+FILE TAGS: arithmetic::logarithm
 tags:
+  - arithmetic
   - logarithm
 ---
 

@@ -82,8 +82,8 @@ END%%
 
 %%ANKI
 Basic
-What is the most common four-space nakade shape?
-Back: The pyramid four.
+What are the two most common four-space nakade shape?
+Back: The pyramid four and square four.
 Reference: “Nakade at Sensei’s Library,” accessed February 23, 2025, https://senseis.xmp.net/?Nakade.
 <!--ID: 1741013698163-->
 END%%
@@ -96,11 +96,19 @@ Reference: “Nakade at Sensei’s Library,” accessed February 23, 2025, https
 <!--ID: 1741299004981-->
 END%%
 
+%%ANKI
+Basic
+What is the most common six-space nakade shape?
+Back: The rabbity six.
+Reference: Reference: Davies, James. _Elementary Go Series Vol. 4 - Life and Death_. Vol. 4. 7 vols., n.d.
+<!--ID: 1751754179285-->
+END%%
+
 ### Straight Three
 
-The **straight three** refers to a basic shape with three open spaces directly in a line. The following indicates the nakade:
+The **straight three** refers to a basic shape with three open spaces arranged as follows:
 
-![[straight-three-center-marked.png]]
+![[straight-three-center.png]]
 
 %%ANKI
 Basic
@@ -150,7 +158,7 @@ END%%
 
 ### Bent Three
 
-The **bent three** refers to a basic shape with three open spaces at a 90 degree angle. The following indicates the nakade:
+The **bent three** refers to a basic shape with three open spaces arranged as follows:
 
 ![[bent-three-center.png]]
 
@@ -181,9 +189,32 @@ Reference: “Nakade at Sensei’s Library,” accessed February 23, 2025, https
 <!--ID: 1740542770944-->
 END%%
 
+### Square Four
+
+The **square four** refers to a basic shape with four open spaces arranged as follows:
+
+![[square-four.png]]
+
+%%ANKI
+Basic
+In plain English, how would you describe the square four nakade shape?
+Back: As four open spaces, arranged in a square, surrounded by stones of a single color.
+Reference: Davies, James. _Elementary Go Series Vol. 4 - Life and Death_. Vol. 4. 7 vols., n.d.
+<!--ID: 1751748536952-->
+END%%
+
+%%ANKI
+Basic
+Which name describes the following nakade?
+![[square-four.png]]
+Back: A square four.
+Reference: Davies, James. _Elementary Go Series Vol. 4 - Life and Death_. Vol. 4. 7 vols., n.d.
+<!--ID: 1751748536954-->
+END%%
+
 ### Pyramid Four
 
-The **pyramid four** refers to a basic shape with four open spaces arranged in a T-shape. The following indicates the nakade:
+The **pyramid four** refers to a basic shape with four open spaces arranged as follows:
 
 ![[pyramid-four-center.png]]
 
@@ -274,6 +305,55 @@ Reference: “Nakade at Sensei’s Library,” accessed February 23, 2025, https
 <!--ID: 1741299004992-->
 END%%
 
+### Rabbity Six
+
+The **rabbity six** refers to a basic shape with six open spaces arranged as follows:
+
+![[rabbity-six.png]]
+
+%%ANKI
+Basic
+What name describes the following nakade?
+![[rabbity-six.png]]
+Back: The rabbity six.
+Reference: Davies, James. _Elementary Go Series Vol. 4 - Life and Death_. Vol. 4. 7 vols., n.d.
+<!--ID: 1751754179290-->
+END%%
+
+%%ANKI
+Basic
+Which point should be played by White to kill the following group?
+![[rabbity-six.png]]
+Back:
+![[rabbity-six-marked.png]]
+Reference: Davies, James. _Elementary Go Series Vol. 4 - Life and Death_. Vol. 4. 7 vols., n.d.
+<!--ID: 1751754179293-->
+END%%
+
+%%ANKI
+Basic
+The rabbity six can be reduced into what other nakade shape?
+Back: The bulky five.
+Reference: Davies, James. _Elementary Go Series Vol. 4 - Life and Death_. Vol. 4. 7 vols., n.d.
+<!--ID: 1751754179296-->
+END%%
+
+%%ANKI
+Basic
+Consider an eyespace with $n$ open spaces. For what values of $n$ are there possible nakade?
+Back: $n \leq 6$
+Reference: Davies, James. _Elementary Go Series Vol. 4 - Life and Death_. Vol. 4. 7 vols., n.d.
+<!--ID: 1751754179298-->
+END%%
+
+%%ANKI
+Basic
+Consider an eyespace with $n$ open spaces. For what values of $n$ can you guarantee life?
+Back: $n \geq 7$
+Reference: Davies, James. _Elementary Go Series Vol. 4 - Life and Death_. Vol. 4. 7 vols., n.d.
+<!--ID: 1751754179299-->
+END%%
+
 ## Live Shapes
 
 **Live shapes** refer to shapes that are unambiguously alive. They may have big eyes that cannot be made into a dead shape.
@@ -311,7 +391,7 @@ END%%
 
 ### Bent Four
 
-The **bent four** refers to a basic shape with four open spaces at a 90 degree angle. The following indicates the shape:
+The **bent four** refers to a basic shape with four open spaces at a 90 degree angle. The following is an example:
 
 ![[bent-four-center.png]]
 
@@ -458,6 +538,7 @@ END%%
 ## Bibliography
 
 * Bent Four In The Corner — The Magic of Go Game, 2022 [https://www.youtube.com](https://www.youtube.com/watch?v=_0uxv-u60CE).
+* Davies, James. _Elementary Go Series Vol. 4 - Life and Death_. Vol. 4. 7 vols., n.d.
 * “Live Shape at Sensei’s Library,” accessed February 28, 2025, [https://senseis.xmp.net/?LiveShape](https://senseis.xmp.net/?LiveShape).
 * “Nakade at Sensei’s Library,” accessed February 23, 2025, https://senseis.xmp.net/?Nakade.
 * “Shape at Sensei’s Library.” Accessed June 20, 2025. [https://senseis.xmp.net/?Shape](https://senseis.xmp.net/?Shape).

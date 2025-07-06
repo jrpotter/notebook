@@ -391,7 +391,14 @@
     "ordered-binary-tree-cmp.png",
     "lcrs-nodes.png",
     "binary-tree-nodes.png",
-    "class-b-subnet.png"
+    "class-b-subnet.png",
+    "adj-list-representation.png",
+    "adj-matrix-representation.png",
+    "directed-graph-example.png",
+    "undirected-graph-example.png",
+    "square-four.png",
+    "rabbity-six.png",
+    "rabbity-six-marked.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -417,7 +424,7 @@
     "data_structures/intrusive.md": "a58bac05feb0ddd41475635b908f523d",
     "data_structures/index.md": "2605977fad54956b5dc2d8dda9be2b10",
     "data_structures/heaps.md": "a0289574930328d422b9b53047936274",
-    "data_structures/graphs.md": "6b0f2ff460cb331c5f19296925ef29ec",
+    "data_structures/graphs.md": "8ef82f8cddd88c4f3af11ace0a3e166f",
     "data_structures/binary-tree.md": "67b0b5b9688faa205983993fe507079a",
     "data_structures/binary-search-tree.md": "57200de8379f27c7c116ee855a15d6df",
     "data_structures/b-tree.md": "f60b11bf1221e74a36accec63eb1c681",
@@ -506,7 +513,7 @@
     "combinatorics/combinations.md": "396fc32255710eaf33213efaafdc43d4",
     "combinatorics/additive-principle.md": "d036ac511e382d5c1caca437341a5915",
     "calculus/intervals.md": "8c54f65fdae1cfa7b1dc078070ad4f94",
-    "calculus/integrals.md": "847ba8772903bd09696b05eb85055d26",
+    "calculus/integrals.md": "6f8c7349186d02ae1e5127d18e2ac49d",
     "calculus/index.md": "5ee4d950533ae330ca5ef9e113fe87f3",
     "calculus/bounds.md": "018df29d5ab3391facc020f69afd79db",
     "c17/types/index.md": "6be8422383d854bc3df90e211f3b3195",
@@ -550,7 +557,7 @@
     "algebra/sequences/arithmetic.md": "63cb1bd3a0d01942f4f7a4212c742cfd",
     "algebra/radices.md": "01fbaba8f81929581707d8df5ad0d912",
     "algebra/polynomials.md": "99544fd170eb3388e9eea783ffbaf670",
-    "algebra/index.md": "e22d9dc88985c006595c6944bee4d825",
+    "algebra/index.md": "88f9615c6242d645430faef25ce080ba",
     "algebra/floor-ceiling.md": "78496445da3054dd720f00a485fc433a",
     "algebra/complex.md": "56cb9e1f6da0fe1e75f750709a35803f",
     "algebra/boolean.md": "c9bd5abb601be6d2bedd24d5f54848b0",
@@ -1152,7 +1159,7 @@
     "_journal/2025-06-19.md": "3dbc934ac688051f16b96ed399937404",
     "_journal/2025-06/2025-06-18.md": "89c838adcf2b7f7ca7eee68633bfeaf9",
     "geometry/similarity.md": "598bd486ccda415c089156d28c887f8f",
-    "baduk/shape.md": "81b99439184cd1dc13ea9d27d0d9119f",
+    "baduk/shape.md": "ff2b62bda0eaec90c53af9e0d642068a",
     "baduk/sente.md": "0a2f33e516f045a671d05dfb800a4325",
     "baduk/seki.md": "91602d5ab96bde71020424982a426c27",
     "baduk/miai.md": "7947802bd3ab4745de6be8915f0fe5dd",
@@ -1216,8 +1223,11 @@
     "discrete/floor_ceiling.md": "f4bac80a381844946e1df45279714fe5",
     "set/algebra.md": "95fb269fca7d7fbbc263fde4482e5ca9",
     "logic/boolean_algebra.md": "bd32d8769544ef4ff7f927e4b360206a",
-    "_journal/2025-07-05.md": "d8d0e398440d9856342eb60a554da193",
-    "_journal/2025-07/2025-07-04.md": "13487a42a2d971e073999906b2360637"
+    "_journal/2025-07-05.md": "ff1fba2e661f57f68cb8cd10c50ceb67",
+    "_journal/2025-07/2025-07-04.md": "13487a42a2d971e073999906b2360637",
+    "arithmetic/radices.md": "12b737159e94b6aa954f2a8d2be74e54",
+    "arithmetic/logarithms.md": "ea3e249d3a7b1c3466dc4a997237c6f2",
+    "arithmetic/index.md": "83e9f72ab4a6fb2d7013e40598a2cd58"
   },
   "fields_dict": {
     "Basic": [
