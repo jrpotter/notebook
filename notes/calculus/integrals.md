@@ -1063,6 +1063,130 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1751751704329-->
 END%%
 
+## Indefinite Integrals
+
+Let $f$ be a function such that the integral $\int_a^x f(t) \,dt$ exists for each $x$ in an interval $[a, b]$. The function $F$, an **indefinite integral of $f$**, is given by $$F(x) = \int_a^x f(t) \,dt, \quad a \leq x \leq b.$$
+
+%%ANKI
+Basic
+Why is an indefinite integral named the way it is?
+Back: Because the right and left bounds of integration are not decided.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080000-->
+END%%
+
+%%ANKI
+Basic
+Why is a definite integral named the way it is?
+Back: Because there is a specific numerical value that can be calculated.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080007-->
+END%%
+
+%%ANKI
+Basic
+What is an indefinite integral of some function $f$?
+Back: Assuming well-definedness, a function $F(x) = \int_a^x f(t) \,dt$ for some lower limit $a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080010-->
+END%%
+
+%%ANKI
+Basic
+An indefinite integral $F$ of some function $f$ keeps what parts of its definition fixed?
+Back: The lower limit of integration and $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080012-->
+END%%
+
+%%ANKI
+Basic
+Why do we say *an* indefinite integral of a function vs. *the* indefinite integral of a function?
+Back: An indefinite integral depends on the lower limit of integration.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080015-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on $[a, b]$. What is the following function called? $$F(x) = \int_a^x f(t) \,dt$$
+Back: An indefinite integral of $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080018-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on $[a, b]$ and $F_1, F_2$ be indefinite integrals of $f$. How do $F_1$ and $F_2$ relate to one another?
+Back: They differ by a constant.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080020-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on $[a, b]$ and $F$ be an indefinite integral of $f$. What does $\int_a^b f(t) \,dt$ evaluate to?
+Back: $F(b) - F(a)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080023-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on $[a, b]$ and $F$ be an indefinite integral of $f$. Prove the following holds. $$\int_a^b f(t) \,dt = F(b) - F(a)$$
+Back: Assuming $F$ is defined with lower limit $c \in [a, b]$, $$\int_a^b f(t) \,dt = \int_c^b f(t) \,dt - \int_c^a f(t) \,dt = F(b) - F(a).$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080025-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on $[a, b]$ and $F_1, F_2$ be indefinite integrals of $f$. Why does the following hold? $$F_1(b) - F_1(a) = F_2(b) - F_2(a)$$
+Back: On both sides of the equation, the constant terms cancel out.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080028-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on $[a, b]$ and $F_1, F_2$ be indefinite integrals of $f$. The value of $F_2(x) - F_1(x)$ depends on the choice of what?
+Back: Lower limits used in the definitions of $F_1$ and $F_2$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080031-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on $[a, b]$ and $F$ be an indefinite integral of $f$. What does $F(x) \big|_a^b$ denote?
+Back: $F(x) \big|_a^b = F(b) - F(a)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080033-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on $[a, b]$ and $F$ be an indefinite integral of $f$. How is $F(b) - F(a)$ more compactly denoted?
+Back: As $F(x) \big|_a^b$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080036-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on $[a, b]$ and $F_1, F_2$ be indefinite integrals of $f$. The value $F_2(x) - F_1(x)$ is independent of what?
+Back: $x$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080039-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be integrable on $[a, b]$. What is the geometric interpretation of $F(x) = \int_a^x f(t) \,dt$?
+Back: The area of the region above the $x$-axis minus that of the region below on $[a, x]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080042-->
+END%%
+
 ## Bibliography
 
 * “Integral.” In _Wikipedia_, December 31, 2024. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1266307875).
