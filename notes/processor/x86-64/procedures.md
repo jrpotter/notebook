@@ -741,14 +741,14 @@ END%%
 %%ANKI
 Basic
 Assume frame `Q` starts at address `S`. If applicable, what address is its frame pointer set to?
-Back: `S + 8`
+Back: `S - 8`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1731952634160-->
 END%%
 
 %%ANKI
 Basic
-Assume frame `Q` starts at address `S`. When applicable, *why* is `%rbp` set to `S + 8`?
+Assume frame `Q` starts at address `S`. When applicable, *why* is `%rbp` set to `S - 8`?
 Back: It's the value of `%rsp` after pushing the previous value of `%rbp`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1731952634161-->

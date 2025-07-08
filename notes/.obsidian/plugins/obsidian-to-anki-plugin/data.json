@@ -398,7 +398,8 @@
     "undirected-graph-example.png",
     "square-four.png",
     "rabbity-six.png",
-    "rabbity-six-marked.png"
+    "rabbity-six-marked.png",
+    "encapsulation.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -444,7 +445,7 @@
     "startups/financing-rounds.md": "7afdaa5fca76552ec46ed6392bbd372a",
     "set/trees.md": "dce8b52011dc43ff8a27f65b4a8c6ce1",
     "set/relations.md": "1519599fedbb9c6fbf65a7338edaa108",
-    "set/order.md": "be07ab1fc2f79d2273485b87b918b7ec",
+    "set/order.md": "4fa19bb76247f5cc3a1034f749154bde",
     "set/natural-numbers.md": "cafd241537eef6a6438c5470a16f5d5e",
     "set/index.md": "02561afbfe03f77fa16d860f9a8b6452",
     "set/graphs.md": "4ae261314f623bf2f573697a8c64ba64",
@@ -544,7 +545,7 @@
     "algorithms/loop-invariant.md": "3b390e720f3b2a98e611b49a0bb1f5a9",
     "algorithms/index.md": "3ac071354e55242919cc574eb43de6f8",
     "algorithms/dfs/topological-sort.md": "db7d09b53a9a382f8ea3c4bf312b5d3f",
-    "algorithms/dfs/kosaraju.md": "67ae95a6654351032f7af323be5bc7d9",
+    "algorithms/dfs/kosaraju.md": "ded0ff6e12771b28509d45d66711506b",
     "algorithms/dfs/index.md": "782d7b624611911a5486beba9bf44716",
     "algorithms/binary-search.md": "8533a05ea372e007ab4e8a36fd2772a9",
     "algorithms/bfs.md": "2baad5ef237e596ca1808d759e63aa72",
@@ -1105,7 +1106,7 @@
     "_journal/2025-05-26.md": "c434323da6959d80d4af8079c7d57e11",
     "_journal/2025-05/2025-05-25.md": "a5600e7b49003cc75d296714271518dc",
     "networking/uri.md": "9e747214d53fb275c6f28a8a29db53b7",
-    "networking/index.md": "eeafeebe6c8f4328499fefea5d9e154a",
+    "networking/index.md": "9ec42800da4af2ceb523f21abcf074ee",
     "_journal/2025-05-27.md": "cc216d8f859204d13aa2b422d7aaeb96",
     "_journal/2025-05/2025-05-26.md": "c434323da6959d80d4af8079c7d57e11",
     "_journal/2025-05-28.md": "d69fd9e9388032af01c1875d744febe4",
@@ -1125,7 +1126,7 @@
     "_journal/2025-06-05.md": "77477bf17fca76a60965f6a09f88fc90",
     "_journal/2025-06/2025-06-04.md": "80259ba1704ac25af674e6a65bc39c32",
     "networking/osi.md": "df7d116af22ebc5eb081aa006c023169",
-    "data_models/rdf/owl.md": "f8223d8494b84370381902ee1ff7822a",
+    "data_models/rdf/owl.md": "33a51d5fbedc91a1e2b7e3ad356fb0da",
     "_journal/2025-06-07.md": "8439f1aee75616ecfda9046fc597eb25",
     "_journal/2025-06/2025-06-06.md": "98b699e2ce9eab44cd4ec388ddee99b8",
     "_journal/2025-06/2025-06-05.md": "c9b96203a7135c0ce95adcbbc0004554",
@@ -1158,7 +1159,7 @@
     "geometry/conics/circle.md": "25d984b8a79be24eca19d5cc56b1cc06",
     "_journal/2025-06-19.md": "3dbc934ac688051f16b96ed399937404",
     "_journal/2025-06/2025-06-18.md": "89c838adcf2b7f7ca7eee68633bfeaf9",
-    "geometry/similarity.md": "598bd486ccda415c089156d28c887f8f",
+    "geometry/similarity.md": "7ebee20157a184cfae0d00c5dd08d0a3",
     "baduk/shape.md": "ff2b62bda0eaec90c53af9e0d642068a",
     "baduk/sente.md": "0a2f33e516f045a671d05dfb800a4325",
     "baduk/seki.md": "91602d5ab96bde71020424982a426c27",
@@ -1196,9 +1197,9 @@
     "algebra/structures.md": "7fcdf91babd4c56d213e11a95093578f",
     "_journal/2025-07-02.md": "4f15feca4bb966e8a6bdbc0283885d6f",
     "_journal/2025-07/2025-07-01.md": "4ed6c1c9f4da2a9317b6fdaae28e0ec6",
-    "processor/exceptions.md": "7aa538b0889465bc52a0f7360aa86225",
+    "processor/exceptions.md": "ad89ee348baa6d3901245ef90b38fcb9",
     "processor/x86-64/registers.md": "210f509f2bb415384a798a5ce19d5d61",
-    "processor/x86-64/procedures.md": "50a1d53704b0ef196cab5b33a31b635c",
+    "processor/x86-64/procedures.md": "74920e9db14959fd63dcb2e00f65da13",
     "processor/x86-64/instructions/procedures.md": "11e3f172d8c87bd431a8421560c8d63b",
     "processor/x86-64/instructions/logical.md": "687b1705afb181789eeb055206319bef",
     "processor/x86-64/instructions/index.md": "709f103e7d68513cda75363c41c851eb",
@@ -1233,7 +1234,9 @@
     "networking/ip/classful.md": "f18de002a7c9f27b179ba6494b8d5f36",
     "arithmetic/gcd.md": "f4b3b9e4ed96ab7b0f9acca924629172",
     "_journal/2025-07-06.md": "848e70dc681e114329ec9f6a340ce94b",
-    "_journal/2025-07/2025-07-05.md": "14c9ccf2f6104a62799bb40962d3ead9"
+    "_journal/2025-07/2025-07-05.md": "14c9ccf2f6104a62799bb40962d3ead9",
+    "_journal/2025-07-07.md": "7cfe5be7b0794882a2965c3693986915",
+    "_journal/2025-07/2025-07-06.md": "76047372eb4d19671a1dabc2f9bb9d1c"
   },
   "fields_dict": {
     "Basic": [

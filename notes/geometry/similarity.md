@@ -149,11 +149,12 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 END%%
 
 %%ANKI
-Cloze
-In the following, {$a / d$} equals {$b / e$}.
+Basic
+In the following, $a / d$ equals what other ratios?.
 ![[similar-triangles.png]]
+Back: $b / e$ and $c / f$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1751635883829-->
+<!--ID: 1751895769568-->
 END%%
 
 ## Congruence

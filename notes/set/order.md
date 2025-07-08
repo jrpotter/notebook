@@ -1459,6 +1459,32 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1749847120988-->
 END%%
 
+%%ANKI
+Basic
+Let $A$ be a finite set of $n$ elements. Let $R$ be a total order on $A$. What does $\lvert R \rvert$ evaluate to?
+Back: $\binom{n}{2} + n$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+Tags: combinatorics
+<!--ID: 1751930699091-->
+END%%
+
+%%ANKI
+Basic
+Let $1 \leq i \leq j \leq n$ be integers. How many possible choices of $i$ and $j$ are there?
+Back: $\binom{n}{2} + n$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+Tags: combinatorics
+<!--ID: 1751931004960-->
+END%%
+
+%%ANKI
+Basic
+Let $1 \leq i \leq j \leq n$ be integers. How many possible choices of $i$ and $j$ are there?
+Back: $\binom{n}{2} + n$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+Tags: combinatorics
+END%%
+
 A binary relation $R$ on set $A$ is a **strict total order on $A$** iff it is irreflexive on $A$, antisymmetric, transitive, and connected. In other words, a strict total order is a connected strict partial order.
 
 %%ANKI
@@ -1544,6 +1570,24 @@ Let $S$ be a strict total order and $a, b \in P$. If $a \not\leq b$, must it be 
 Back: Yes, since $S$ is irreflexive and connected.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749847120997-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a finite set of $n$ elements. Let $R$ be a strict total order on $A$. What does $\lvert R \rvert$ evaluate to?
+Back: $\binom{n}{2}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+Tags: combinatorics
+<!--ID: 1751930699097-->
+END%%
+
+%%ANKI
+Basic
+Let $1 \leq i < j \leq n$ be integers. How many possible choices of $i$ and $j$ are there?
+Back: $\binom{n}{2}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+Tags: combinatorics
+<!--ID: 1751931004968-->
 END%%
 
 ## Bibliography

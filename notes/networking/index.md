@@ -244,7 +244,7 @@ END%%
 %%ANKI
 Basic
 In a connection-oriented packet network, what routing information is stored in a packet?
-Back: An index into a switch's state table .
+Back: An index into a switch's state table.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1748487037249-->
 END%%
@@ -315,10 +315,11 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 END%%
 
 %%ANKI
-Cloze
-Connection-oriented network packets are {smaller} than those of connectionless networks.
+Basic
+Which of connection-oriented or connectionless network packets are smaller?
+Back: Connection-oriented packets are smaller.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1748487037271-->
+<!--ID: 1751896196710-->
 END%%
 
 %%ANKI
@@ -507,13 +508,6 @@ Cloze
 {1:Virtual circuits} are to {2:connection-oriented} whereas {2:datagrams} are to {1:connectionless}.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1748487410082-->
-END%%
-
-%%ANKI
-Cloze
-With respect to routing information, {1:datagrams} are to {2:packets} whereas {2:virtual circuits} are to {1:packet switches}.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1748487410085-->
 END%%
 
 ## Layering

@@ -118,7 +118,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for Kosaraju's algorithm to *not* use topological sorting?
-Back: Directed graphs with cycles don't have a topolocial sort.
+Back: Directed graphs with cycles don't have a topological sort.
 Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=HOOmetF56BI).
 <!--ID: 1742150391937-->
 END%%

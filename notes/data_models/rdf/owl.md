@@ -605,8 +605,13 @@ The above defines a restriction class containing as members those with at least 
 
 %%ANKI
 Basic
-The `owl:someValuesFrom` constraint describes a class of individuals satisfying what?
-Back: Having at least one value of the corresponding property as an instance of the associated class description or data range.
+What does the following restriction class contain?
+```turtle
+[ a owl:Restriction ;
+  owl:onProperty ?P ;
+  owl:someValuesFrom ?C ]
+```
+Back: Resources mapped with `?P` to at least one member of `?C`.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1751735628508-->
 END%%
@@ -620,7 +625,7 @@ END%%
 
 %%ANKI
 Basic
-Which OWL construct corresponds to an existential value constraint?
+Which OWL construct corresponds to the existential value constraint?
 Back: The `owl:someValuesFrom` construct.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1751735628514-->
@@ -661,8 +666,13 @@ The above defines a restriction class containing as members those with each of t
 
 %%ANKI
 Basic
-The `owl:allValuesFrom` constraint describes a class of individuals satisfying what?
-Back: Having every value of the corresponding property as an instance of the associated class description or data range.
+What does the following restriction class contain?
+```turtle
+[ a owl:Restriction ;
+  owl:onProperty ?P ;
+  owl:allValuesFrom ?C ]
+```
+Back: Resources mapped with `?P` to only members of `?C`.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1751735628522-->
 END%%
@@ -676,7 +686,7 @@ END%%
 
 %%ANKI
 Basic
-Which OWL construct corresponds to a universal value constraint?
+Which OWL construct corresponds to the universal value constraint?
 Back: The `owl:allValuesFrom` construct.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1751735628528-->
@@ -717,15 +727,20 @@ The above defines a restriction class containing as members those with parent `:
 
 %%ANKI
 Basic
-The `owl:hasValue` constraint describes a class of individuals satisfying what?
-Back: Having the specified value for the corresponding property.
+What does the following restriction class contain?
+```turtle
+[ a owl:Restriction ;
+  owl:onProperty ?P ;
+  owl:hasValue ?I ]
+```
+Back: Resources mapped with `?P` to a value semantically equal to `?I`.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1751735628536-->
 END%%
 
 %%ANKI
 Basic
-Which OWL construct corresponds to an equality value constraint?
+Which OWL construct corresponds to the equality value constraint?
 Back: The `owl:hasValue` construct.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1751735628539-->
