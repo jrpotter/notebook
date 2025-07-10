@@ -399,7 +399,11 @@
     "square-four.png",
     "rabbity-six.png",
     "rabbity-six-marked.png",
-    "encapsulation.png"
+    "encapsulation.png",
+    "interrupt-diagram-minimal.png",
+    "trap-diagram-minimal.png",
+    "fault-diagram-minimal.png",
+    "abort-diagram-minimal.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -1197,7 +1201,7 @@
     "algebra/structures.md": "7fcdf91babd4c56d213e11a95093578f",
     "_journal/2025-07-02.md": "4f15feca4bb966e8a6bdbc0283885d6f",
     "_journal/2025-07/2025-07-01.md": "4ed6c1c9f4da2a9317b6fdaae28e0ec6",
-    "processor/exceptions.md": "ad89ee348baa6d3901245ef90b38fcb9",
+    "processor/exceptions.md": "39f87d050021d2868650721d1c32f359",
     "processor/x86-64/registers.md": "210f509f2bb415384a798a5ce19d5d61",
     "processor/x86-64/procedures.md": "74920e9db14959fd63dcb2e00f65da13",
     "processor/x86-64/instructions/procedures.md": "11e3f172d8c87bd431a8421560c8d63b",
@@ -1236,7 +1240,10 @@
     "_journal/2025-07-06.md": "848e70dc681e114329ec9f6a340ce94b",
     "_journal/2025-07/2025-07-05.md": "14c9ccf2f6104a62799bb40962d3ead9",
     "_journal/2025-07-07.md": "7cfe5be7b0794882a2965c3693986915",
-    "_journal/2025-07/2025-07-06.md": "76047372eb4d19671a1dabc2f9bb9d1c"
+    "_journal/2025-07/2025-07-06.md": "76047372eb4d19671a1dabc2f9bb9d1c",
+    "_journal/2025-07-09.md": "4478dcd06893bfe66e7e34349a9684de",
+    "_journal/2025-07/2025-07-08.md": "8ea1838f41d137be7ca628e6c310d0df",
+    "_journal/2025-07/2025-07-07.md": "c18495a4872595e19aaa0aade3d53b89"
   },
   "fields_dict": {
     "Basic": [

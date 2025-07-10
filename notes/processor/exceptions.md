@@ -177,6 +177,389 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1751550403114-->
 END%%
 
+## Exception Classes
+
+There exist four classes of exceptions with the following characteristics:
+
+Name | Cause | Async/Sync | Return Behavior
+---- | ---- | ---- | ----
+Interrupt | Signal from I/O device | Async | Returns to next instruction
+Trap | Intentional exception | Sync | Returns to next instruction
+Fault | Potentially recoverable error | Sync | Might return to current instruction
+Abort | Nonrecoverable error | Sync | Never Returns
+
+%%ANKI
+Basic
+How many hardware exception classes are there?
+Back: Four.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058199-->
+END%%
+
+%%ANKI
+Basic
+What are the four hardware exception classes?
+Back: Interrupts, traps, faults, and aborts.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058200-->
+END%%
+
+%%ANKI
+Basic
+Which hardware exception classes are asynchronous?
+Back: Just interrupts.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058201-->
+END%%
+
+%%ANKI
+Basic
+Which hardware exception classes are synchronous?
+Back: Traps, faults, and aborts.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058202-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a hardware exception to be asynchronous?
+Back: It is triggered as a result of some signal from an I/O device external to the processor.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058203-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a hardware exception to be synchronous?
+Back: It is triggered as a result of executing an instruction.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058204-->
+END%%
+
+%%ANKI
+Basic
+Which of the four hardware exception classes return control to the next instruction?
+Back: Interrupts and traps.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058205-->
+END%%
+
+### Interrupts
+
+An **interrupt** is an asynchronous exception, signaled from an I/O device.
+
+![[interrupt-diagram-text.png]]
+
+%%ANKI
+Basic
+What is a hardware interrupt?
+Back: An exception that occurs as a result of some signal from an I/O device external to the processor.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058206-->
+END%%
+
+%%ANKI
+Basic
+Exception handlers for interrupts are called what?
+Back: Interrupt handlers.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058207-->
+END%%
+
+%%ANKI
+Basic
+Are hardware interrupts sychronous or asynchronous?
+Back: Asynchronous.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058208-->
+END%%
+
+%%ANKI
+Basic
+Which user program instruction is run after an interrupt handler finishes?
+Back: The instruction after the most recently executed in the user program.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058209-->
+END%%
+
+%%ANKI
+Basic
+Which class of hardware exception corresponds to I/O devices external to the processor?
+Back: Interrupts.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058210-->
+END%%
+
+%%ANKI
+Basic
+Suppose an interrupt triggers. When does the interrupt handler run?
+Back: After the currently executing instruction finishes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058211-->
+END%%
+
+%%ANKI
+Basic
+What kind of hardware exception is depicted in the following?
+![[interrupt-diagram-minimal.png]]
+Back: Interrupts.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058212-->
+END%%
+
+### Traps
+
+A **trap** is an intentional exception that occurs as a result of executing an instruction. The most important use of traps is to provide **system calls**, a procedure-like interface between user programs and the kernel.
+
+![[trap-diagram-text.png]]
+
+%%ANKI
+Basic
+What is a hardware trap?
+Back: An exception that occurs intentionally as a result of executing an instruction.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058213-->
+END%%
+
+%%ANKI
+Basic
+Exception handlers for traps are called what?
+Back: Trap handlers.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058214-->
+END%%
+
+%%ANKI
+Basic
+Are hardware traps sychronous or asynchronous?
+Back: Synchronous.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058215-->
+END%%
+
+%%ANKI
+Basic
+Which of the four hardware exceptions are considered intentional?
+Back: Traps.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058216-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a hardware trap to be intentional?
+Back: It is invoked precisely because of the exceptional control flow it allows.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058217-->
+END%%
+
+%%ANKI
+Basic
+What is the most common kind of trap used?
+Back: System calls.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058218-->
+END%%
+
+%%ANKI
+Basic
+What is a misnomer associated with the term "system call"?
+Back: It is a trap, not a procedure call.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058219-->
+END%%
+
+%%ANKI
+Basic
+Which class of hardware exception corresponds to system calls?
+Back: Traps.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058220-->
+END%%
+
+%%ANKI
+Basic
+Suppose a trap triggers. When does the trap handler run?
+Back: After the currently executing instruction finishes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058221-->
+END%%
+
+%%ANKI
+Basic
+Which user program instruction is run after a trap handler finishes?
+Back: The instruction after the most recently executed in the user program.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058222-->
+END%%
+
+%%ANKI
+Basic
+What kind of hardware exception is depicted in the following?
+![[trap-diagram-minimal.png]]
+Back: Traps.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058223-->
+END%%
+
+### Faults
+
+A **fault** is an exception that occurs from error conditions that a handler might be able to correct.
+
+![[fault-diagram-text.png]]
+
+%%ANKI
+Basic
+What is a hardware fault?
+Back: An exception that occurs as a result of an error condition that a handler might be able to correct.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058224-->
+END%%
+
+%%ANKI
+Basic
+Exception handlers for faults are called what?
+Back: Fault handlers.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058225-->
+END%%
+
+%%ANKI
+Basic
+Are hardware faults sychronous or asynchronous?
+Back: Synchronous.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058226-->
+END%%
+
+%%ANKI
+Basic
+Which of the four hardware exceptions are considered recoverable?
+Back: Faults.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058227-->
+END%%
+
+%%ANKI
+Basic
+What is the most common kind of fault encountered?
+Back: Page faults, with respect to virtual memory.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058228-->
+END%%
+
+%%ANKI
+Basic
+Which class of hardware exception corresponds to possibly recoverable errors?
+Back: Faults.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058229-->
+END%%
+
+%%ANKI
+Basic
+Suppose a fault triggers. When does the fault handler run?
+Back: After the currently executing instruction finishes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058230-->
+END%%
+
+%%ANKI
+Basic
+Which user program instruction is run after a fault handler successfully recovers?
+Back: The instruction that originally triggered the fault.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058231-->
+END%%
+
+%%ANKI
+Basic
+Which user program instruction is run after a fault handler unsuccessfully recovers?
+Back: N/A. The program is aborted.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058232-->
+END%%
+
+%%ANKI
+Basic
+What kind of hardware exception is depicted in the following?
+![[fault-diagram-minimal.png]]
+Back: Faults.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058233-->
+END%%
+
+### Aborts
+
+An **abort** is an exception that occurs from unrecoverable fatal errors. Control is never returned to the user program.
+
+![[abort-diagram-text.png]]
+
+%%ANKI
+Basic
+What is a hardware abort?
+Back: An exception that occurs as a result of an unrecoverable fatal error.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058234-->
+END%%
+
+%%ANKI
+Basic
+Exception handlers for aborts are called what?
+Back: Abort handlers.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058235-->
+END%%
+
+%%ANKI
+Basic
+Are hardware aborts sychronous or asynchronous?
+Back: Synchronous.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058236-->
+END%%
+
+%%ANKI
+Basic
+Which of the four hardware exceptions are considered unrecoverable?
+Back: Aborts.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058237-->
+END%%
+
+%%ANKI
+Basic
+Which class of hardware exception corresponds to unrecoverable errors?
+Back: Aborts.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058238-->
+END%%
+
+%%ANKI
+Basic
+Suppose an abort triggers. When does the abort handler run?
+Back: After the currently executing instruction finishes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058239-->
+END%%
+
+%%ANKI
+Basic
+Which user program instruction is run after an abort handler runs?
+Back: N/A. The program is aborted.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058240-->
+END%%
+
+%%ANKI
+Basic
+What kind of hardware exception is depicted in the following?
+![[abort-diagram-minimal.png]]
+Back: Aborts.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752093058241-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
