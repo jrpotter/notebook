@@ -199,6 +199,106 @@ Tags: data_model::federation
 <!--ID: 1735176997779-->
 END%%
 
+## Principles
+
+There exist a few guiding principles in RDF that influence how all higher-level constructs work:
+
+* Anyone can say Anything About Any Topic (AAA)
+	* This principle states anyone can publish to RDF. This includes dissenting/contradictory information.
+* Open World Assumption (OWA)
+	* This principle states that there may exist additional information on any topic that isn't immediately available.
+	* This contrasts the Closed World Assumption (CWA) most people expect.
+* Nonunique Naming Assumption
+	* This principle states two resources with different names can still refer to the same thing.
+	* This contrasts the Unique Naming Assumption most people expect.
+
+%%ANKI
+Basic
+What is AAA an acronym for?
+Back: **A**nyone can say **A**nything about **A**ny topic.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430392-->
+END%%
+
+%%ANKI
+Basic
+What does the AAA principle state?
+Back: Anyone can publish any sort of data to RDF.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430399-->
+END%%
+
+%%ANKI
+Basic
+What is OWA an acronym for?
+Back: **O**pen **W**orld **A**ssumption.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430406-->
+END%%
+
+%%ANKI
+Basic
+What does the Open World Assumption actually assume?
+Back: There may exist additional information on a topic that isn't immediately available.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430414-->
+END%%
+
+%%ANKI
+Basic
+What is CWA an acronym for?
+Back: **C**losed **W**orld **A**ssumption.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430421-->
+END%%
+
+%%ANKI
+Basic
+What does the Closed World Assumption actually assume?
+Back: All information about a particular topic is available.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430429-->
+END%%
+
+%%ANKI
+Cloze
+{OWA} is in contrast to {CWA}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430438-->
+END%%
+
+%%ANKI
+Basic
+What does the Nonunique Naming Assumption actually assume?
+Back: Names are not unique, i.e. two resources with different names may actually be the same.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430448-->
+END%%
+
+%%ANKI
+Basic
+What does the Unique Naming Assumption actually assume?
+Back: Two resources with different names must refer to two distinct things.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430456-->
+END%%
+
+%%ANKI
+Basic
+Which of OWA or CWA does RDF employ?
+Back: OWA.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430465-->
+END%%
+
+%%ANKI
+Basic
+Which of the Unique or Nonunique Naming Assumption does RDF employ?
+Back: The Nonunique Naming Assumption.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430474-->
+END%%
+
 ## Blank Nodes
 
 A **blank node** (bnode) is a node in an RDF graph representing a resource for which a [[uri|IRI]] is not specified. That is, the represented resource is anonymous. Such a node can only be used as a subject or object in an RDF triple.

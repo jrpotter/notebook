@@ -133,6 +133,14 @@ END%%
 
 %%ANKI
 Basic
+Which C construct must be compatible with a `char`, signed integer type, or unsigned integer type?
+Back: Enumerated types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1752191856010-->
+END%%
+
+%%ANKI
+Basic
 What is the type given to an enumerated type?
 Back: N/A. This is implementation-defined.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).

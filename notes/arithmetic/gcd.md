@@ -141,7 +141,7 @@ END%%
 %%ANKI
 Basic
 What is the least common multiple of integers $a$ and $b$?
-Back: The greatest positive integer that can be divided by both $a$ and $b$.
+Back: The smallest positive integer that can be divided by both $a$ and $b$.
 Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751830087201-->
 END%%

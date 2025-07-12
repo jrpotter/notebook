@@ -1234,7 +1234,7 @@ END%%
 Basic
 Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be the power set construction of the following NFA. What does $q_0$ evaluate to?
 ![[nfa-example2-powerset.png]]
-Back: $q_0 = \{1\}$
+Back: $q_0 = \{1, 2\}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745625798152-->
 END%%

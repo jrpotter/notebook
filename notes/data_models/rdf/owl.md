@@ -319,7 +319,7 @@ CONSTRUCT { ?s ?p ?x. }
 WHERE { ?s ?p ?y. ?x owl:sameAs ?y. }
 ```
 
-with the reverse direction handled by noting `owl:sameAs` is a `owl:SymmetricProperty`.
+with the reverse direction handled by noting `owl:sameAs` is a `owl:SymmetricProperty`. Likewise, `owl:differentFrom` states to individuals are semantically distinct.
 
 %%ANKI
 Basic
@@ -352,6 +352,45 @@ Cloze
 {1:Individuals} are to {2:`owl:sameAs`} whereas {2:properties} are to {1:`owl:equivalentProperty`}.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1750206490922-->
+END%%
+
+%%ANKI
+Basic
+Which guiding RDF principle does `owl:sameAs` most closely relate to?
+Back: The Nonunique Naming Assumption.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430328-->
+END%%
+
+%%ANKI
+Basic
+Which OWL construct allows stating two individuals are semantically equivalent?
+Back: `owl:sameAs`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430336-->
+END%%
+
+%%ANKI
+Cloze
+{`owl:sameAs`} is in constrast to {`owl:differentFrom`}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430341-->
+END%%
+
+%%ANKI
+Basic
+Which guiding RDF principle does `owl:differentFrom` most closely relate to?
+Back: The Nonunique Naming Assumption.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430345-->
+END%%
+
+%%ANKI
+Basic
+Which OWL construct allows stating two individuals are semantically distinct?
+Back: `owl:differentFrom`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430350-->
 END%%
 
 ## Functional Properties
@@ -765,6 +804,73 @@ What two resource kinds can the `owl:hasValue` construct specify?
 Back: Either an individual or data value.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1751735628545-->
+END%%
+
+### Enumerations
+
+The `owl:oneOf` property takes a list of classes as a value and asserts that a resource is semantically equivalent to one of the options.
+
+```turtle
+O1 a owl:Class ;
+   owl:oneOf (ns:A ns:B ...) .
+```
+
+%%ANKI
+Basic
+Which OWL construct corresponds to enumerations?
+Back: `owl:oneOf`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430354-->
+END%%
+
+%%ANKI
+Basic
+Suppose `:A owl:oneOf (:B :C)`. What triples can we infer?
+Back: Either `:A owl:sameAs :B` or `:A owl:sameAs :C`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430360-->
+END%%
+
+%%ANKI
+Basic
+Suppose `:A owl:oneOf (:B :C)` and `:A owl:differentFrom :B`. What triples can we infer?
+Back: `:A owl:sameAs :C`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430365-->
+END%%
+
+%%ANKI
+Cloze
+{`owl:oneOf`} is a generalization of {`owl:hasValue`}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430372-->
+END%%
+
+## Set Operations
+
+The `owl:unionOf` and `owl:intersectionOf` properties take a list of classes as a value. The union of two or more classes includes the members of all those classes combined. The intersection of two or more classes includes the members that belong to every one of the classes.
+
+```turtle
+U1 a owl:Class ;
+   owl:unionOf (ns:A ns:B ...) .
+I1 a owl:Class ;
+   owl:intersectionOf (ns:A ns:B ...) .
+```
+
+%%ANKI
+Basic
+Which OWL construct corresponds to set unions?
+Back: `owl:unionOf`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430378-->
+END%%
+
+%%ANKI
+Basic
+Which OWL construct corresponds to set intersections?
+Back: `owl:intersectionOf`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752244430385-->
 END%%
 
 ## Bibliography

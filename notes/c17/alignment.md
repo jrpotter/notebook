@@ -595,6 +595,14 @@ END%%
 
 %%ANKI
 Basic
+Which C construct must be compatible with a `_Bool`, `int`, or `unsigned int`?
+Back: Bit fields.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1752191856021-->
+END%%
+
+%%ANKI
+Basic
 What types *can* a bit-field be declared with?
 Back: `_Bool`, `signed int`, `unsigned int`, or some other implementation-defined type.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).

@@ -95,6 +95,15 @@ END%%
 
 %%ANKI
 Basic
+Which header contains the `syscall` function?
+Back: `<unistd.h>`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1752201359315-->
+END%%
+
+%%ANKI
+Basic
 What two steps are conducted during the process of loading?
 Back: Copying code/data into memory and running the program.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

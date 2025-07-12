@@ -10,8 +10,6 @@ tags:
 
 A **protocol** is a set of common behaviors communicated by using a common language. A **protocol suite** is a collection of related protocols. The **reference model** for the protocol suite is the design that specifies how various protocols of a protocol suite relate to each other and divide up tasks to be accomplished.
 
-TCP/IP forms the basis of the **Internet**, a wide area network (WAN) spanning the globe. The Internet refers to the ability to provide basic communication of messages between computers. The **World Wide Web** (WWW) is an application that uses the Internet for communication.
-
 %%ANKI
 Basic
 What is a protocol?
@@ -48,40 +46,6 @@ Cloze
 {Protocols} belong to {protocol suites} which in turn are designed by {reference models}.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1748374204855-->
-END%%
-
-%%ANKI
-Basic
-What is wrong with the following statement?
-
-> TCP/IP is a protocol.
-
-Back: It is actually a protocol suite.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1748374204858-->
-END%%
-
-%%ANKI
-Basic
-What is WWW an acronym for?
-Back: **W**orld **W**ide **W**eb.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1748374204866-->
-END%%
-
-%%ANKI
-Basic
-Assuming distinct from WWW, what does the "Internet" typically refer to?
-Back: The basic communication of messages conducted between computers.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1748374204870-->
-END%%
-
-%%ANKI
-Cloze
-WWW is an application that uses {the Internet} for communication.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1748374204874-->
 END%%
 
 ## Multiplexing

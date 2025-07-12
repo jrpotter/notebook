@@ -1,15 +1,15 @@
 ---
 title: Network Devices
 TARGET DECK: Obsidian::STEM
-FILE TAGS: networking::devices
+FILE TAGS: networking::hardware
 tags:
-  - devices
+  - hardware
   - networking
 ---
 
 ## Overview
 
-A device with multiple network interfaces is said to be **multihomed**.
+A **network interface** is the point of interconnection between a computer and a network. It can be physical or virtual. A device with multiple network interfaces is said to be **multihomed**.
 
 %%ANKI
 Basic
@@ -29,10 +29,54 @@ END%%
 
 %%ANKI
 Basic
-When is a host device considered multihomed?
+When is a host considered multihomed?
 Back: When it has multiple network interfaces.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1750171974198-->
+END%%
+
+%%ANKI
+Basic
+What is a network interface?
+Back: The point of interconnection between a computer and a network.
+Reference: “Network Interface Controller.” In _Wikipedia_, July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
+<!--ID: 1752196389610-->
+END%%
+
+%%ANKI
+Cloze
+A network interface is either {physical} or {virtual}.
+Reference: “Network Interface Controller.” In _Wikipedia_, July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
+<!--ID: 1752196389619-->
+END%%
+
+## Network Interface Controller
+
+A **network interface controller**, or **NIC**, is a computer hardware component that connects a computer to a computer network. An NIC is considered a [[osi#Physical|physical layer]] device as well as a [[osi#link|link layer]] device.
+
+%%ANKI
+Basic
+What is NIC an acronym for?
+Back: **N**etwork **i**nterface **c**ontroller.
+Reference: “Network Interface Controller.” In _Wikipedia_, July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
+<!--ID: 1752196389626-->
+END%%
+
+%%ANKI
+Basic
+What term is typically used to describe physical network interfaces?
+Back: Network interface controllers.
+Reference: “Network Interface Controller.” In _Wikipedia_, July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
+<!--ID: 1752196389628-->
+END%%
+
+%%ANKI
+Basic
+What OSI layer(s) does an NIC span?
+Back: The physical and link layers.
+Reference: “Network Interface Controller.” In _Wikipedia_, July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
+Tags: networking::osi
+<!--ID: 1752196389631-->
 END%%
 
 ## Modems
@@ -155,4 +199,5 @@ END%%
 
 * Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 * “Modem.” In _Wikipedia_, May 28, 2025. [https://en.wikipedia.org/w/index.php?title=Modem](https://en.wikipedia.org/w/index.php?title=Modem&oldid=1292730745).
+* “Network Interface Controller.” In _Wikipedia_, July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
 * “Router (Computing).” In _Wikipedia_, May 26, 2025. [https://en.wikipedia.org/w/index.php?title=Router_(computing)](https://en.wikipedia.org/w/index.php?title=Router_\(computing\)&oldid=1292291533).

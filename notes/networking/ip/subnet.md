@@ -57,7 +57,7 @@ END%%
 Basic
 Based on the following class `B` partitioning scheme, how many subnetworks are available?
 ![[class-b-subnet.png]]
-Back: $256$
+Back: $2^8$, i.e. $256$.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1751740084515-->
 END%%
@@ -66,7 +66,7 @@ END%%
 Basic
 Based on the following class `B` partitioning scheme, how many hosts are available per subnetwork?
 ![[class-b-subnet.png]]
-Back: $254$, i.e. $256 - 2$
+Back: $254$, i.e. $2^8 - 2$.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1751740084520-->
 END%%

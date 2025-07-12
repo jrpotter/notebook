@@ -9,6 +9,8 @@ tags:
 
 ## Overview
 
+TCP/IP forms the basis of the **Internet**, a wide area network (WAN) spanning the globe. The Internet refers to the ability to provide basic communication of messages between computers. The **World Wide Web** (WWW) is an application that uses the Internet for communication.
+
 When devices are attached to a network based on the IP protocol, they are assigned addresses that must be coordinated so as to not duplicate other addresses in use on the network. Groups of IP addresses are **allocated** to users and organizations who then **assign** these addresses to devices.
 
 IP addresses are typically expressed in one of two formats: IPv4 and IPv6.
@@ -50,6 +52,40 @@ In what two ways are IP addresses expressed?
 Back: As IPv4 or IPv6.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1750512996075-->
+END%%
+
+%%ANKI
+Basic
+What is wrong with the following statement?
+
+> TCP/IP is a protocol.
+
+Back: It is actually a protocol suite.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748374204858-->
+END%%
+
+%%ANKI
+Basic
+What is WWW an acronym for?
+Back: **W**orld **W**ide **W**eb.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748374204866-->
+END%%
+
+%%ANKI
+Basic
+Assuming distinct from WWW, what does the "Internet" typically refer to?
+Back: The basic communication of messages conducted between computers.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748374204870-->
+END%%
+
+%%ANKI
+Cloze
+WWW is an application that uses {the Internet} for communication.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1748374204874-->
 END%%
 
 ## IPv4
@@ -396,6 +432,8 @@ A **broadcast** delivers a message to all nodes in a network using a *one-to-all
 
 ![[broadcast.png]]
 
+In every IPv4 [[subnet|subnetwork]] is a specially designated **subnet broadcast address**, formed by setting the network/subnetwork portion of the address to an appropriate value and the bits in the host portion to `1`. Address `255.255.255.255` is reserved as the **local net broadcast address** and is never forwarded by routers.
+
 %%ANKI
 Basic
 What is a broadcast?
@@ -426,6 +464,187 @@ Which IP addressing method has a one-to-all association?
 Back: Broadcasting.
 Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
 <!--ID: 1751119772863-->
+END%%
+
+%%ANKI
+Basic
+Consider IPv4 address `128.32.1.0/24`. What is its subnet broadcast address?
+Back: `128.32.1.255`
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422423-->
+END%%
+
+%%ANKI
+Basic
+Consider IPv4 address `128.32.1.170/24`. Who are the recipients of a datagram with destination `128.32.1.255`?
+Back: Every machine on subnetwork `128.32.1.0/24`.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422430-->
+END%%
+
+%%ANKI
+Basic
+Who are the recipients of a directed broadcast?
+Back: Hosts in the specified subnetwork.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422433-->
+END%%
+
+%%ANKI
+Basic
+Who are the recipients of a local net broadcast?
+Back: Hosts in the local network.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422437-->
+END%%
+
+%%ANKI
+Basic
+How is the subnet broadcast address of an IPv4 subnetwork formed?
+Back: Concatenating the network/subnetwork portion with a host portion of all `1` bits.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422440-->
+END%%
+
+%%ANKI
+Basic
+Assuming IPv4, which portion(s) of a subnet broadcast address must be all `1`s?
+Back: The host portion.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422444-->
+END%%
+
+%%ANKI
+Basic
+Assuming IPv4, which portion(s) of a subnet broadcast address must be all `0`s?
+Back: N/A.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422448-->
+END%%
+
+%%ANKI
+Basic
+Assuming IPv4, which portion(s) of a local net broadcast address must be all `1`s?
+Back: The network, subnetwork, and host portions.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422453-->
+END%%
+
+%%ANKI
+Basic
+Assuming IPv4, which portion(s) of a local net broadcast address must be all `0`s?
+Back: N/A. No `0` is found in the address.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422457-->
+END%%
+
+%%ANKI
+Basic
+How is IPv4 address `A` and subset mask `M` used to form subnet broadcast address `B`?
+Back: `B = A | ~M`
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422461-->
+END%%
+
+%%ANKI
+Basic
+A subnet broadcast address always ends with what?
+Back: A run of `1`s.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422465-->
+END%%
+
+%%ANKI
+Basic
+Subnet broadcast addresses are relevant to which of IPv4 or IPv6?
+Back: Just IPv4.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422469-->
+END%%
+
+%%ANKI
+Basic
+What does IPv6 use in favor of IPv4 subnet broadcast addresses?
+Back: Multicasting.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422474-->
+END%%
+
+%%ANKI
+Cloze
+IPv4 is to broadcasting whereas IPv6 is to {multicasting}.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422478-->
+END%%
+
+%%ANKI
+Basic
+What is a directed broadcast?
+Back: A datagram with a subnet broadcast address as its destination.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422482-->
+END%%
+
+%%ANKI
+Basic
+What is a limited broadcast?
+Back: A datagram with a local net broadcast address as its destination.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422486-->
+END%%
+
+%%ANKI
+Basic
+Why is a limited broadcast named the way it is?
+Back: It only reaches hosts on the local network.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422489-->
+END%%
+
+%%ANKI
+Cloze
+A {datagram} with a {subnet broadcast address} as its destination is called a {directed} broadcast.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422493-->
+END%%
+
+%%ANKI
+Basic
+Which IPv4 address is *never* forwarded by routers?
+Back: The local net broadcast, i.e. `255.255.255.255`.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422496-->
+END%%
+
+%%ANKI
+Basic
+A {local net} broadcast is also called a {limited} broadcast.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422500-->
+END%%
+
+%%ANKI
+Basic
+What do the bits of a local net broadcast address and subnet broadcast addresses have in common?
+Back: Both end in a run of `1`s.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422504-->
+END%%
+
+%%ANKI
+Basic
+Assuming IPv4 is supported, how many distinct subnet broadcast addresses are there in a site?
+Back: One for each subnet configured in the site.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422508-->
+END%%
+
+%%ANKI
+Basic
+Assuming IPv4 is supported, how many distinct local net broadcast addresses are there in a site?
+Back: Exactly one.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752191422512-->
 END%%
 
 ### Multicast

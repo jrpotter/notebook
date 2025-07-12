@@ -587,7 +587,7 @@ END%%
 
 %%ANKI
 Basic
-Why isn't the following CFG in CNF? $$\begin{align*} A & \rightarrow BC \\ B & \rightarrow bc \end{align*}$$
+Why isn't the following CFG in CNF? $$\begin{align*} A & \rightarrow BC \\ B & \rightarrow bd \\ C & \rightarrow c \end{align*}$$
 Back: Because $B$ has a rule with more than one terminal.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1748052528136-->

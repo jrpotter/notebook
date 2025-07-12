@@ -255,7 +255,7 @@ END%%
 %%ANKI
 Basic
 How does Bryant et al. define $B2U_w$?
-Back: $B2U_w(\vec{x}) = 2^{w-1}x_{w-1} + \sum_{k=0}^{w-2} 2^kx_k$
+Back: $B2U_w(\vec{x}) = \sum_{k=0}^{w-1} 2^kx_k$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708179147785-->
 END%%

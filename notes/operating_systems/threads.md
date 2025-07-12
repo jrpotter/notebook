@@ -1,7 +1,7 @@
 ---
 title: Threads
 TARGET DECK: Obsidian::STEM
-FILE TAGS: threads
+FILE TAGS: os::threads
 tags:
   - threads
 ---

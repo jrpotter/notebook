@@ -150,7 +150,7 @@ END%%
 
 %%ANKI
 Basic
-In the following, $a / d$ equals what other ratios?.
+In the following, $a / d$ equals what other ratios?
 ![[similar-triangles.png]]
 Back: $b / e$ and $c / f$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.

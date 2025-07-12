@@ -333,6 +333,30 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1751635883777-->
 END%%
 
+%%ANKI
+Basic
+In right triangles, how is $\sin{\theta}$ defined in terms of $\text{opp}$, $\text{adj}$, and $\text{hyp}$?
+Back: $$\sin{\theta} = \frac{\text{opp}}{\text{hyp}}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752239968210-->
+END%%
+
+%%ANKI
+Basic
+What is "SOH" in "SOHCAHTOA" an abbreviation for?
+Back: **S**ine-**O**pposite-**H**ypotenuse.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752239968217-->
+END%%
+
+%%ANKI
+Basic
+SOHCAHTOA is relevant for what kind of triangles?
+Back: Right triangles.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752239968220-->
+END%%
+
 ### Cosine
 
 If the real number $t$ is the directed length of an arc (either positive or negative) measured on the [[unit_circle|unit circle]] $x^2 + y^2 = 1$ (with counterclockwise as the positive direction) with initial point $\langle 1, 0 \rangle$ and terminal point $\langle x, y \rangle$, then the **cosine** of $t$, denoted $\cos(t)$, is defined to be $$\cos(t) = x.$$
@@ -516,6 +540,22 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1751635883783-->
 END%%
 
+%%ANKI
+Basic
+In right triangles, how is $\cos{\theta}$ defined in terms of $\text{opp}$, $\text{adj}$, and $\text{hyp}$?
+Back: $$\cos{\theta} = \frac{\text{adj}}{\text{hyp}}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752239968223-->
+END%%
+
+%%ANKI
+Basic
+What is "CAH" in "SOHCAHTOA" an abbreviation for?
+Back: **C**osine-**A**djacent-**H**ypotenuse.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752239968226-->
+END%%
+
 ### Tangent
 
 The **tangent function** is the quotient of the sine function by the cosine function. For real number $t \neq 0$, $$\tan{(t)} = \frac{\sin{(t)}}{\cos{(t)}}.$$
@@ -689,6 +729,22 @@ Consider the following similar triangles. How is the value of $\tan{\theta}$ der
 Back: $$\tan{\theta} = \frac{\sin{\theta}}{\cos{\theta}} = \frac{v}{u} = \frac{y}{x}$$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1751635883788-->
+END%%
+
+%%ANKI
+Basic
+In right triangles, how is $\tan{\theta}$ defined in terms of $\text{opp}$, $\text{adj}$, and $\text{hyp}$?
+Back: $$\tan{\theta} = \frac{\text{opp}}{\text{adj}}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752239968228-->
+END%%
+
+%%ANKI
+Basic
+What is "TOA" in "SOHCAHTOA" an abbreviation for?
+Back: **T**angent-**O**pposite-**A**djacent.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752239968232-->
 END%%
 
 ### Secant
