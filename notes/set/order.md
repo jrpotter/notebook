@@ -11,6 +11,8 @@ tags:
 
 An **order** refers to a binary [[relations|relation]] that defines how elements of a set relate to one another in terms of "less than", "equal to", or "greater than".
 
+In many cases, there exist orders with strict and non-strict variants. If unspecified, I assume non-strict.
+
 %%ANKI
 Cloze
 An order is a {2}-ary relation.
@@ -36,7 +38,7 @@ END%%
 
 ## Preorders
 
-A binary relation $R$ on set $A$ is a **preorder on $A$** iff it is reflexive on $A$ and transitive.
+A binary relation $R$ on set $A$ is a **non-strict preorder on $A$** iff it is reflexive on $A$ and transitive. If $R$ is instead irreflexive on $A$, it is a **strict preorder**.
 
 %%ANKI
 Basic
@@ -92,8 +94,6 @@ Operator {$\leq$} typically denotes a {non-strict} preorder.
 Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
 <!--ID: 1723924394146-->
 END%%
-
-A binary relation $R$ on set $A$ is a **strict preorder on $A$** iff it is irreflexive on $A$ and transitive.
 
 %%ANKI
 Basic
@@ -185,11 +185,11 @@ END%%
 
 Let $P$ be a preordered set with order relation $\leq$.
 
-An element $m \in P$ is **maximal** if there is no other element of $P$ greater than $m$. Likewise, an element $n \in P$ is **minimal** if there is no other element of $P$ less than $n$.
+An element $m \in P$ is **maximal** if there is no other element of $P$ greater than $m$. It is a **maximum** if $m$ is greater than or equal to every element of $P$.
 
-An element $M \in P$ is a **maximum** if $M$ is greater than or equal to any other element in $P$. An element $N \in P$ is a **minimum** if $N$ is less than or equal to any other element in $P$.
+Given some subset $S$ of $P$, an **upper bound** of $S$ is some $U \in P$ such that $U$ is greater than or equal to every element of $S$.
 
-Given some subset $S$ of $P$, an **upper bound** of $S$ is some $U \in P$ such that $U$ is greater than or equal to every element of $S$. Likewise, a **lower bound** of $S$ is some $L \in P$ such that $L$ is less than or equal to every element of $S$.
+Analagous definitions exist for **minimal**, **minimum**, and **lower bound**.
 
 %%ANKI
 Basic
@@ -210,7 +210,7 @@ END%%
 %%ANKI
 Basic
 What is a maximum element of preorder $\langle P, \leq \rangle$?
-Back: An element of $P$ that is greater than or equal to all other members of $P$.
+Back: An element of $P$ that is greater than or equal to every member of $P$.
 Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
 <!--ID: 1744075175493-->
 END%%
@@ -218,7 +218,7 @@ END%%
 %%ANKI
 Basic
 What is a minimum element of preorder $\langle P, \leq \rangle$?
-Back: An element of $P$ that is less than or equal to all other members of $P$.
+Back: An element of $P$ that is less than or equal to every member of $P$.
 Reference: “Maximal and Minimal Elements.” In _Wikipedia_, May 5, 2024. [https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements](https://en.wikipedia.org/w/index.php?title=Maximal_and_minimal_elements&oldid=1222354611).
 <!--ID: 1744075175496-->
 END%%
@@ -226,7 +226,7 @@ END%%
 %%ANKI
 Basic
 Let $S$ be a subset of preorder $\langle P, \leq \rangle$. What is an upper bound of $S$?
-Back: A member of $P$ greater than or equal to all members of $S$.
+Back: A member of $P$ greater than or equal to every members of $S$.
 Reference: “Upper and Lower Bounds.” In _Wikipedia_, March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds](https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds&oldid=1281896174).
 <!--ID: 1744075175499-->
 END%%
@@ -234,7 +234,7 @@ END%%
 %%ANKI
 Basic
 Let $S$ be a subset of preorder $\langle P, \leq \rangle$. What is a lower bound of $S$?
-Back: A member of $P$ less than or equal to all members of $S$.
+Back: A member of $P$ less than or equal to every members of $S$.
 Reference: “Upper and Lower Bounds.” In _Wikipedia_, March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds](https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds&oldid=1281896174).
 <!--ID: 1744075175501-->
 END%%
@@ -250,7 +250,7 @@ END%%
 %%ANKI
 Basic
 With respect to a preorder, what distinguishes a maximum from a maximal?
-Back: A maximum must be greater than or equal to *every* other member of the preorder.
+Back: A maximum must be greater than or equal to *every* member of the preorder.
 Reference: “Upper and Lower Bounds.” In _Wikipedia_, March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds](https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds&oldid=1281896174).
 <!--ID: 1744075175507-->
 END%%
@@ -268,7 +268,7 @@ END%%
 %%ANKI
 Basic
 With respect to a preorder, what distinguishes a minimal from a minimum?
-Back: A minimum must be less than or equal to *every* other member of the preorder.
+Back: A minimum must be less than or equal to *every* member of the preorder.
 Reference: “Upper and Lower Bounds.” In _Wikipedia_, March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds](https://en.wikipedia.org/w/index.php?title=Upper_and_lower_bounds&oldid=1281896174).
 <!--ID: 1744075175512-->
 END%%
@@ -520,7 +520,9 @@ END%%
 
 ## Partial Orders
 
-A binary relation $R$ on set $A$ is a **partial order on $A$** iff it is reflexive on $A$, antisymmetric, and transitive. In other words, a partial order is an antisymmetric preorder.
+A binary relation $R$ on set $A$ is a **non-strict partial order on $A$** iff it is reflexive on $A$, antisymmetric, and transitive. In other words, a non-strict partial order is an antisymmetric preorder.
+
+If $R$ is instead irreflexive on $A$, it is a **strict partial order**.
 
 %%ANKI
 Basic
@@ -672,8 +674,6 @@ Back: Because $\varnothing$ isn't reflexive on $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751376306729-->
 END%%
-
-A binary relation $R$ on set $A$ is a **strict partial order on $A$** iff it is irreflexive on $A$, antisymmetric, and transitive.
 
 %%ANKI
 Basic
@@ -1371,7 +1371,9 @@ END%%
 
 ## Total Order
 
-A binary relation $R$ on set $A$ is a **total order on $A$** iff it is reflexive on $A$, antisymmetric, transitive, and strongly connected. In other words, a total order is a strongly connected partial order.
+A binary relation $R$ on set $A$ is a **non-strict total order on $A$** iff it is reflexive on $A$, antisymmetric, transitive, and strongly connected. In other words, a non-strict total order is a strongly connected partial order.
+
+If instead $R$ is irreflexive on $A$ and connected, then $R$ is a **strict total order on $A$**. In other words, a strict total order is a connected strict partial order.
 
 %%ANKI
 Basic
@@ -1445,7 +1447,7 @@ END%%
 
 %%ANKI
 Basic
-Let $S$ be a total order and $a, b \in P$. If $a \not\lt b$, must it be the case that $b < a$?
+Let $R$ be a total order on $S$ and $a, b \in S$. If $a \not\lt b$, must it be the case that $b < a$?
 Back: No, it's possible $a = b$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749847120982-->
@@ -1453,8 +1455,8 @@ END%%
 
 %%ANKI
 Basic
-Let $S$ be a total order and $a, b \in P$. If $a \not\leq b$, must it be the case that $b < a$?
-Back: Yes, since $a \neq b$ and $S$ is strongly connected.
+Let $R$ be a total order on $S$ and $a, b \in S$. If $a \not\leq b$, must it be the case that $b < a$?
+Back: Yes, since $a \neq b$ and $R$ is strongly connected.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749847120988-->
 END%%
@@ -1484,8 +1486,6 @@ Back: $\binom{n}{2} + n$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 Tags: combinatorics
 END%%
-
-A binary relation $R$ on set $A$ is a **strict total order on $A$** iff it is irreflexive on $A$, antisymmetric, transitive, and connected. In other words, a strict total order is a connected strict partial order.
 
 %%ANKI
 Basic
@@ -1558,16 +1558,16 @@ END%%
 
 %%ANKI
 Basic
-Let $S$ be a strict total order and $a, b \in P$. If $a \not\lt b$, must it be the case that $b < a$?
-Back: Yes, since $S$ is irreflexive and connected.
+Let $R$ be a strict total order on $S$ and $a, b \in S$. If $a \not\lt b$, must it be the case that $b < a$?
+Back: Yes, since $R$ is irreflexive and connected.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749847120993-->
 END%%
 
 %%ANKI
 Basic
-Let $S$ be a strict total order and $a, b \in P$. If $a \not\leq b$, must it be the case that $b < a$?
-Back: Yes, since $S$ is irreflexive and connected.
+Let $R$ be a strict total order on $S$ and $a, b \in S$. If $a \not\leq b$, must it be the case that $b < a$?
+Back: Yes, since $R$ is irreflexive and connected.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749847120997-->
 END%%
@@ -1588,6 +1588,59 @@ Back: $\binom{n}{2}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 Tags: combinatorics
 <!--ID: 1751931004968-->
+END%%
+
+## Well Order
+
+A **non-strict well ordering on $A$** is a non-strict total order on $A$ with the additional property that every nonempty subset of $A$ has a minimum element.
+
+A **strict well ordering on $A$** is a strict total order on $A$ with the additional property that every nonempty subset of $A$ has a minimal element.
+
+%%ANKI
+Basic
+What is a non-strict well ordering on $A$?
+Back: A non-strict total ordering on $A$ such that every nonempty subset of $A$ has a minimum element.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752330043264-->
+END%%
+
+%%ANKI
+Basic
+What is a strict well ordering on $A$?
+Back: A strict total ordering on $A$ such that every nonempty subset of $A$ has a minimal element.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752330043273-->
+END%%
+
+%%ANKI
+Cloze
+With respect to well orderings, {1:non-strict} is to {2:minimum} whereas {2:strict} is to {1:minimal}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752330043276-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the definition of strict well orderings use minimals instead of minimums?
+Back: Because strict well orderings are irreflexive.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752330043279-->
+END%%
+
+%%ANKI
+Basic
+Let $R$ be a strict total order on $(-\infty, 0] \subseteq \mathbb{R}$ with ordering relation $<$. Why isn't $R$ a well order?
+Back: Because there exist subsets, e.g. $(-\infty, 0]$, with no minimal element.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752330043282-->
+END%%
+
+%%ANKI
+Basic
+Let $R$ be a strict total order on $[0, \infty) \subseteq \mathbb{R}$ with ordering relation $<$. Why isn't $R$ a well order?
+Back: Because there exist subsets, e.g. $(0, 1]$, with no minimal element.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752330043285-->
 END%%
 
 ## Bibliography

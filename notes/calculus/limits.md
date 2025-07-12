@@ -161,14 +161,6 @@ END%%
 
 %%ANKI
 Basic
-In terms of neighborhoods, how is the following symbolism defined in plain English? $$\lim_{x \rightarrow p} f(x) = A$$
-Back: For every neighborhood $N_1(A)$, there exists a neighborhood $N_2(p)$ such that if $x \in N_2(p) - \{p\}$, then $f(x) \in N_1(A)$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1752286067046-->
-END%%
-
-%%ANKI
-Basic
 How many neighborhoods are specified in the definition of a limit?
 Back: Two.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
@@ -177,10 +169,103 @@ END%%
 
 %%ANKI
 Basic
+In terms of neighborhoods, how is the following symbolism defined in plain English? $$\lim_{x \rightarrow p} f(x) = A$$
+Back: For every neighborhood $N_1(A)$, there exists a neighborhood $N_2(p)$ such that if $x \in N_2(p) - \{p\}$, then $f(x) \in N_1(A)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1752286067046-->
+END%%
+
+%%ANKI
+Basic
 In terms of neighborhoods, how is the following symbolism defined in FOL? $$\lim_{x \rightarrow p} f(x) = A$$
 Back: $\forall N_1(A), \exists N_2(p), \left( x \in N_2(p) - \{p\} \right) \Rightarrow f(x) \in N_1(A)$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1752286067053-->
+END%%
+
+## Epsilon-Delta
+
+The $\epsilon, \delta$-terminology is an alternative formulation of the definition of limits, in terms of the radii of the neighborhoods. Let $A$ be a real number and $f$ a function defined on some neighborhood of a point $p$ (except possibly at $p$). Then $$\lim_{x \rightarrow p} f(x) = p$$
+
+means that for every $\epsilon > 0$, there exists a $\delta > 0$ such that $$\lvert f(x) - A \rvert < \epsilon \text{ whenever } 0 < \lvert x - p \rvert < \delta.$$
+
+%%ANKI
+Basic
+How does the neighborhood definition of limits relate to the $\epsilon, \delta$-definition?
+Back: The $\epsilon,\delta$-definition is a reformulation in terms of the neighborhood radii.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1752320529983-->
+END%%
+
+%%ANKI
+Cloze
+With respect to $\lim f(x) = A$ as $x \rightarrow p$, {1:$N_1(A)$} is to {1:$\epsilon$} whereas {2:$N_2(p)$} is to {2:$\delta$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1752320529995-->
+END%%
+
+%%ANKI
+Basic
+In terms of $\epsilon, \delta$, how is the following symbolism defined in plain English? $$\lim_{x \rightarrow p} f(x) = A$$
+Back: For all $\epsilon > 0$, there exists a $\delta > 0$ such that if $0 < \lvert x - p \rvert < \delta$, then $\lvert f(x) - A \rvert < \epsilon$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1752320529992-->
+END%%
+
+%%ANKI
+Basic
+In terms of $\epsilon, \delta$, how is the following symbolism defined in FOL? $$\lim_{x \rightarrow p} f(x) = A$$
+Back: $\forall \epsilon > 0, \exists \delta > 0, \left( 0 < \lvert x - p \rvert < \delta \right) \Rightarrow \lvert f(x) - A \rvert < \epsilon$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1752320529998-->
+END%%
+
+%%ANKI
+Basic
+What is the geometric analog to the $\epsilon, \delta$-definition of limits?
+Back: The neighborhood definition.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1752321238693-->
+END%%
+
+%%ANKI
+Basic
+What is the analytical analog to the neighborhood definition of limits?
+Back: The $\epsilon, \delta$-definition.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1752321238696-->
+END%%
+
+%%ANKI
+Basic
+Rewrite the following with $h \rightarrow 0$ rewritten as $x \rightarrow p$. $$\lim_{h \rightarrow 0} f(p + h) = A$$
+Back: $$\lim_{x \rightarrow p} f(x) = A$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1752321238683-->
+END%%
+
+%%ANKI
+Basic
+Rewrite the following with $x \rightarrow p$ rewritten as $h \rightarrow 0$. $$\lim_{x \rightarrow p} f(x) = A$$
+Back: $$\lim_{h \rightarrow 0} f(p + h) = A$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1752321238699-->
+END%%
+
+%%ANKI
+Basic
+Let $p, c \in \mathbb{R}$ and $f(x) = c$. What does the following evaluate to? $$\lim_{x \rightarrow p} f(x)$$
+Back: $c$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1752321454308-->
+END%%
+
+%%ANKI
+Basic
+Let $p, c \in \mathbb{R}$ and $f(x) = x$. What does the following evaluate to? $$\lim_{x \rightarrow p} f(x)$$
+Back: $p$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1752321454317-->
 END%%
 
 ## Bibliography

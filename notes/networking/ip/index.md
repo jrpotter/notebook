@@ -432,7 +432,7 @@ A **broadcast** delivers a message to all nodes in a network using a *one-to-all
 
 ![[broadcast.png]]
 
-In every IPv4 [[subnet|subnetwork]] is a specially designated **subnet broadcast address**, formed by setting the network/subnetwork portion of the address to an appropriate value and the bits in the host portion to `1`. Address `255.255.255.255` is reserved as the **local net broadcast address** and is never forwarded by routers.
+In every IPv4 [[class#Subnetting|subnet]] is a specially designated **subnet broadcast address**, formed by setting the network/subnetwork portion of the address to an appropriate value and the bits in the host portion to `1`. Address `255.255.255.255` is reserved as the **local net broadcast address** and is never forwarded by routers.
 
 %%ANKI
 Basic

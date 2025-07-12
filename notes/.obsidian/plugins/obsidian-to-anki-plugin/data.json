@@ -467,7 +467,7 @@
     "startups/financing-rounds.md": "7afdaa5fca76552ec46ed6392bbd372a",
     "set/trees.md": "dce8b52011dc43ff8a27f65b4a8c6ce1",
     "set/relations.md": "1519599fedbb9c6fbf65a7338edaa108",
-    "set/order.md": "4fa19bb76247f5cc3a1034f749154bde",
+    "set/order.md": "e89c44f67767a5477154ebe63fd344ec",
     "set/natural-numbers.md": "cafd241537eef6a6438c5470a16f5d5e",
     "set/index.md": "02561afbfe03f77fa16d860f9a8b6452",
     "set/graphs.md": "4ae261314f623bf2f573697a8c64ba64",
@@ -1252,7 +1252,7 @@
     "arithmetic/logarithms.md": "ea3e249d3a7b1c3466dc4a997237c6f2",
     "arithmetic/index.md": "83e9f72ab4a6fb2d7013e40598a2cd58",
     "networking/ip/subnet.md": "c9259f72b5e0f193156601130571932a",
-    "networking/ip/index.md": "fec5096ae6b42508dfe4c064e7e7c1cd",
+    "networking/ip/index.md": "6008a815c6636fbc8afca6ea864d301b",
     "networking/ip/classful.md": "f18de002a7c9f27b179ba6494b8d5f36",
     "arithmetic/gcd.md": "0fce281499ff95ebd6538202533a2725",
     "_journal/2025-07-06.md": "848e70dc681e114329ec9f6a340ce94b",
@@ -1271,7 +1271,10 @@
     "_journal/2025-07-11.md": "828e1a48ca2cc873b7b02de215e29068",
     "_journal/2025-07/2025-07-10.md": "89ca719914811a5cb5ff9b2454633a73",
     "geometry/curvature.md": "9f80263cdd29886e7d0b6aafd97bcf2d",
-    "calculus/limits.md": "af19e1d2f26bba13cf34ee969dbddfc7"
+    "calculus/limits.md": "0521b4864ecbd2a1b91626117f010b66",
+    "_journal/2025-07-12.md": "55ae40960fc3bb841284e40a4c66d833",
+    "_journal/2025-07/2025-07-11.md": "cd8e5414705e77e8fa0cefbe03098202",
+    "networking/ip/class.md": "0641b7a0c1a5c5dd68a55042f96a4ce3"
   },
   "fields_dict": {
     "Basic": [
