@@ -40,10 +40,18 @@ END%%
 
 %%ANKI
 Basic
-What distinguishes kernel mode from user mode?
-Back: What instructions can be executed and what memory locations can be accessed.
+With respect to the processor, what distinguishes kernel mode from user mode?
+Back: A process in kernel mode can execute any instruction.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1752201359279-->
+<!--ID: 1752494012257-->
+END%%
+
+%%ANKI
+Basic
+With respect to the memory system, what distinguishes kernel mode from user mode?
+Back: A process in kernel mode can access any memory location.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752494012265-->
 END%%
 
 %%ANKI

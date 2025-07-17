@@ -325,7 +325,7 @@ Basic
 ```
 [ a₁ a₂ ... aᵢ | aᵢ₊₁ aᵢ₊₂ ... aₙ ]
 ```
-Back: N/A
+Back: N/A.
 Reference: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/)
 <!--ID: 1709756610393-->
 END%%

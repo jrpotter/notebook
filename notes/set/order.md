@@ -1155,7 +1155,7 @@ END%%
 %%ANKI
 Basic
 Is $\{A\}$ a partition of set $A$?
-Back: Not necessarily.
+Back: If and only if $A \neq \varnothing$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721098094091-->
 END%%
@@ -1642,6 +1642,51 @@ Back: Because there exist subsets, e.g. $(0, 1]$, with no minimal element.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1752330043285-->
 END%%
+
+## Initial Segments
+
+Let $\leq$ be a partial order on set $A$. Then the **initial segment up to $t$**, for some $t \in A$, is $$\mathop{\text{seg}_\leq} t = \{ x \in A \mid x \leq t \}.$$
+
+%%ANKI
+Basic
+Let $\leq$ be a partial order on $A$ and let $t \in A$. What does $\mathop{\text{seg}_\leq} t$ denote?
+Back: The initial segment up to $t$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752493936291-->
+END%%
+
+%%ANKI
+Basic
+Let $\leq$ be a partial order on $A$ and let $t \in A$. How is the initial segment up to $t$ denoted?
+Back: $\mathop{\text{seg}_\leq} t$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752493936298-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a partial order on set $A$. What is the initial segment up to $t \in A$?
+Back: Set $\{x \in A \mid x < t \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752493936301-->
+END%%
+
+%%ANKI
+Basic
+Let $\leq$ be a partial order on set $A$. What is the initial segment up to $t \in A$?
+Back: Set $\{x \in A \mid x \leq t \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752493936304-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \omega$. What does $\mathop{\text{seg}_{\in}} n$ evaluate to?
+Back: $\{x \mid x \in n\}$, which equals $n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752493936307-->
+END%%
+
 
 ## Bibliography
 

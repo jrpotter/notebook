@@ -610,17 +610,17 @@ END%%
 
 %%ANKI
 Basic
-Which IPv4 address is *never* forwarded by routers?
+Which IPv4 broadcast address is *never* forwarded by routers?
 Back: The local net broadcast, i.e. `255.255.255.255`.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752191422496-->
 END%%
 
 %%ANKI
-Basic
+Cloze
 A {local net} broadcast is also called a {limited} broadcast.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1752191422500-->
+<!--ID: 1752493944214-->
 END%%
 
 %%ANKI

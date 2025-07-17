@@ -105,14 +105,6 @@ END%%
 
 %%ANKI
 Basic
-Is the physical layer associated with network devices, host devices, or both?
-Back: Both.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1749134703559-->
-END%%
-
-%%ANKI
-Basic
 With respect to OSI, L1 refers to what?
 Back: The physical layer.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
@@ -172,14 +164,6 @@ END%%
 
 %%ANKI
 Basic
-Is the link layer associated with network devices, host devices, or both?
-Back: Both.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1749134703586-->
-END%%
-
-%%ANKI
-Basic
 In what way does the link layer build on the physical layer?
 Back: It involves using the physical layer to transmit data between machines on the same link.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
@@ -232,14 +216,6 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 END%%
 
 %%ANKI
-Basic
-Is the network layer associated with network devices, host devices, or both?
-Back: Both.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1749134703607-->
-END%%
-
-%%ANKI
 Cloze
 The {network} layer is also commonly referred to as the {internetwork} layer.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
@@ -279,14 +255,6 @@ What is the role of the transport layer?
 Back: It specifies methods for end-to-end communication between applications on a network.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749134703623-->
-END%%
-
-%%ANKI
-Basic
-Is the transport layer associated with network devices, host devices, or both?
-Back: Host devices.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1749134703626-->
 END%%
 
 %%ANKI
@@ -350,14 +318,6 @@ END%%
 
 %%ANKI
 Basic
-Is the session layer associated with network devices, host devices, or both?
-Back: Host devices.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1749134703650-->
-END%%
-
-%%ANKI
-Basic
 In what way does the session layer build on the transport layer?
 Back: It involves building up a session across multiple connections, each of which abide by the transport layer.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
@@ -409,14 +369,6 @@ END%%
 
 %%ANKI
 Basic
-Is the presentation layer associated with network devices, host devices, or both?
-Back: Host devices.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1749134703671-->
-END%%
-
-%%ANKI
-Basic
 In what way does the presentation layer build on the session layer?
 Back: It involves the actual presentation of data transmitted during a session.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
@@ -457,14 +409,6 @@ Skype is an example typically associated with which OSI layer?
 Back: The application layer.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749134703680-->
-END%%
-
-%%ANKI
-Basic
-Is the application layer associated with network devices, host devices, or both?
-Back: Host devices.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1749134703683-->
 END%%
 
 %%ANKI

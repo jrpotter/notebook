@@ -693,14 +693,6 @@ END%%
 
 %%ANKI
 Basic
-Which propositional operator is used in the statement of the white-path theorem?
-Back: The biconditional.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1742526324049-->
-END%%
-
-%%ANKI
-Basic
 Does the white-path theorem apply to directed graphs?
 Back: Yes.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

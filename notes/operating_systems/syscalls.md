@@ -1,122 +1,135 @@
 ---
-title: Loader
+title: System Calls
 TARGET DECK: Obsidian::STEM
-FILE TAGS: linker::loader
+FILE TAGS: os::syscalls
 tags:
-  - linker
-  - loader
+  - os
+  - syscalll
 ---
 
 ## Overview
 
-The operating system provides a function called the **loader** that copies the code and data of the executable object file into memory, and then transfers control to the beginning of the program. The process of copying a program into memory and running it is called **loading**.
-
-The program's first instruction is called the **entry point**. On x86-64 Linux machines, this always corresponds to the address of the `_start` function typically found in `crt1.o`. This object file is silently linked by the compiler driver.
+A **system call** is a procedure-like interface between user programs and the kernel. It is not a procedure - it is a [[exceptions#Traps|trap]]. This allows lifting from user mode to kernel mode.
 
 %%ANKI
 Basic
-What function does the OS provide to run executable object files?
-Back: The loader.
+What is the most common kind of trap used?
+Back: System calls.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099593-->
+<!--ID: 1752093058218-->
 END%%
 
 %%ANKI
 Basic
-What kind of file does a loader usually input?
-Back: An executable object file.
+What is a misnomer associated with the term "system call"?
+Back: It is a trap, not a procedure call.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099598-->
-END%%
-
-%%ANKI
-Cloze
-Roughly speaking, the loader copies {code/data} from an {executable object} file into {memory}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099604-->
+<!--ID: 1752093058219-->
 END%%
 
 %%ANKI
 Basic
-The loader copies code and data from what kind of file?
-Back: An executable object file.
+Which class of hardware exception corresponds to system calls?
+Back: Traps.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099609-->
-END%%
-
-%%ANKI
-Cloze
-The loader transfers {control} to the {beginning of a loaded program}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099619-->
+<!--ID: 1752093058220-->
 END%%
 
 %%ANKI
 Basic
-At a high-level, the loader is responsible for performing what two actions?
-Back: Copying code/data and beginning program execution.
+On Linux systems, what C function can be used to invoke the loader?
+Back: `execve`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099625-->
+Tags: c17 linker::loader os::linux
+<!--ID: 1741298168029-->
+END%%
+
+%%ANK
+Basic
+Which header contains the `execve` function?
+Back: `<unistd.h>`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 os::linux
 END%%
 
 %%ANKI
 Basic
-With respect to executable object files, what doe the entry point refer to?
-Back: The address of the first instruction to execute.
+Why is `<unistd.h>` named the way it is?
+Back: It corresponds to **st**an**d**ard functions for **Uni**x (POSIX) systems.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1738637653626-->
+Tags: c17 os::linux
+<!--ID: 1741298168032-->
 END%%
 
 %%ANKI
 Basic
-What two steps are conducted during the process of loading?
-Back: Copying code/data into memory and running the program.
+Which header contains the `syscall` function?
+Back: `<unistd.h>`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1741298168033-->
+Tags: c17 os::linux
+<!--ID: 1752201359315-->
 END%%
 
 %%ANKI
 Basic
-On Linux x86-64 systems, does the stack grow towards larger or smaller addresses?
-Back: Smaller.
+On Linux systems, what C function can be used to spawn a child process?
+Back: `fork`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: processor::x86-64
-<!--ID: 1741298168034-->
+Tags: c17 os::linux
+<!--ID: 1752497519540-->
+END%%
+
+%%ANK
+Basic
+Which header contains the `fork` function?
+Back: `<unistd.h>`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
 END%%
 
 %%ANKI
 Basic
-On Linux x86-64 systems, does the heap grow towards larger or smaller addresses?
-Back: Larger.
+If successful, how many times does the `fork` function return?
+Back: Two times.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: processor::x86-64
-<!--ID: 1741298168036-->
-END%%
-
-%%ANKI
-Cloze
-On Linux x86-64 systems, the {1:heap} grows towards {2:larger} addresses while the {2:stack} grows towards {1:smaller} addresses.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: processor::x86-64
-<!--ID: 1741298168037-->
+Tags: c17 os::linux
+<!--ID: 1752497519549-->
 END%%
 
 %%ANKI
 Basic
-After loading on Linux x86-64 systems, which of the code or data segment starts on a larger address?
-Back: The data segment.
+If successful, when does `fork` return value `0`?
+Back: When running as the child process.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: processor::x86-64
-<!--ID: 1741298168038-->
+Tags: c17 os::linux
+<!--ID: 1752497519552-->
 END%%
 
 %%ANKI
 Basic
-After loading on Linux x86-64 systems, which of the code or data segment starts on a smaller address?
-Back: The code segment.
+If successful, when does `fork` return a value greater than `0`?
+Back: When running as the parent process.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: processor::x86-64
-<!--ID: 1741298168039-->
+Tags: c17 os::linux
+<!--ID: 1752497519554-->
+END%%
+
+%%ANKI
+Basic
+Assume `fork` returns a positive integer. What does this integer correspond to?
+Back: The child process's PID.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 os::linux
+<!--ID: 1752497519557-->
+END%%
+
+%%ANKI
+Basic
+If successful, how many times does the `execve` function return?
+Back: Zero times.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 os::linux
+<!--ID: 1752497519560-->
 END%%
 
 ## Bibliography

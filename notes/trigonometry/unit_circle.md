@@ -763,7 +763,7 @@ END%%
 Basic
 What is the motivation behind the triangle in the following diagram?
 ![[tangent-unit-circle-empty.png]]
-Back: The slope of the line through the hypotenuse equals the triangle's height.
+Back: The slope of the line through the hypotenuse, i.e. the tangent, equals the triangle's height.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1749334884188-->
 END%%

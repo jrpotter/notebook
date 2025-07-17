@@ -309,7 +309,7 @@ END%%
 
 ### Traps
 
-A **trap** is an intentional exception that occurs as a result of executing an instruction. The most important use of traps is to provide **system calls**, a procedure-like interface between user programs and the kernel.
+A **trap** is an intentional exception that occurs as a result of executing an instruction. The most important use of traps is to provide [[syscalls|system calls]].
 
 ![[trap-diagram-text.png]]
 
@@ -351,30 +351,6 @@ What does it mean for a hardware trap to be intentional?
 Back: It is invoked precisely because of the exceptional control flow it allows.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752093058217-->
-END%%
-
-%%ANKI
-Basic
-What is the most common kind of trap used?
-Back: System calls.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1752093058218-->
-END%%
-
-%%ANKI
-Basic
-What is a misnomer associated with the term "system call"?
-Back: It is a trap, not a procedure call.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1752093058219-->
-END%%
-
-%%ANKI
-Basic
-Which class of hardware exception corresponds to system calls?
-Back: Traps.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1752093058220-->
 END%%
 
 %%ANKI

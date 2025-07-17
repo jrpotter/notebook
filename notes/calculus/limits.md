@@ -129,22 +129,6 @@ END%%
 
 %%ANKI
 Basic
-Suppose the following equality holds. What is $A$ expected to satisfy? $$\lim_{x \rightarrow p} f(x) = A$$
-Back: $A$ is a real number.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1752286067032-->
-END%%
-
-%%ANKI
-Basic
-Suppose the following equality holds. What is $f$ expected to satisfy? $$\lim_{x \rightarrow p} f(x) = A$$
-Back: $f$ is a function defined on some neighborhood of $p$, except possibly at $p$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1752286067035-->
-END%%
-
-%%ANKI
-Basic
 Suppose the following equality holds. What is the domain of $f$ assumed to be? $$\lim_{x \rightarrow p} f(x) = A$$
 Back: A superset of $N(p) - \{p\}$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
@@ -153,7 +137,7 @@ END%%
 
 %%ANKI
 Basic
-How is "the limit of $f(x), as $x$ approaches $p$, is equal to $A$" denoted?
+How is "the limit of $f(x)$, as $x$ approaches $p$, is equal to $A$" denoted?
 Back: $$\lim_{x \rightarrow p} f(x) = A$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1752286067042-->
