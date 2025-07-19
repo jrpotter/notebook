@@ -815,6 +815,21 @@ O1 a owl:Class ;
    owl:oneOf (ns:A ns:B ...) .
 ```
 
+We can assert that every resource in a list is distinct from one another using `owl:AllDifferent` together with `owl:distinctMembers`. For example, the following indicates each of the planets in our solar system are different.
+
+```turtle
+[ a owl:AllDifferent ;
+  owl:distinctMembers ( ss:Mercury
+                        ss:Venus
+                        ss:Earth
+                        ss:Mars
+                        ss:Jupiter
+                        ss:Saturn
+                        ss:Uranus
+                        ss:Neptune)
+] .
+```
+
 %%ANKI
 Basic
 Which OWL construct corresponds to enumerations?
@@ -844,6 +859,63 @@ Cloze
 {`owl:oneOf`} is a generalization of {`owl:hasValue`}.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1752244430372-->
+END%%
+
+%%ANKI
+Cloze
+The {`owl:AllDifferent`} class is used with the {`owl:distinctMembers`} property.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752789057001-->
+END%%
+
+%%ANKI
+Basic
+The following bnode is used to create what inferred triples?
+```turtle
+[ a owl:AllDifferent ;
+  owl:distinctMembers (:A :B :C)
+] .
+```
+Back: Ignoring symmetry,
+1. `:A owl:differentFrom :B`
+2. `:A owl:differentFrom :C`
+3. `:B owl:differentFrom :C`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752789057012-->
+END%%
+
+%%ANKI
+Basic
+How are the following three triples written using a list?
+```turtle
+:A owl:differentFrom :B .
+:A owl:differentFrom :C .
+:B owl:differentFrom :C .
+```
+Back:
+```turtle
+[ a owl:AllDifferent ;
+  owl:distinctMembers (:A :B :C)
+] .
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752789057019-->
+END%%
+
+%%ANKI
+Basic
+Which *class* is used when indicating a list of resources are `owl:differentFrom` one another?
+Back: `owl:AllDifferent`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752789057025-->
+END%%
+
+%%ANKI
+Basic
+Which *property* is used when indicating a list of resources are `owl:differentFrom` one another?
+Back: `owl:distinctMembers`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752789057032-->
 END%%
 
 ## Set Operations

@@ -13,6 +13,8 @@ An **angle** is formed by rotating a ray about its initial point. The ray in its
 
 When the vertex of an angle is at the origin in the Cartesian coordinate system, and the initial side lies along the positive $x$-axis, then the angle is in **standard position**.
 
+An angle measuring less than $90\degree$ is called an **acute angle**. An angle measuring exactly $90\degree$ is called a **right angle**. An angle measure greater than $90\degree$ is called an **obtuse angle**.
+
 %%ANKI
 Basic
 How is a line passing through points $A$ and $B$ typically denoted?
@@ -199,6 +201,35 @@ When can we *not* designate an angle in standard position to some quadrant?
 Back: When its terminal side lies on the $x$- or $y$-axis.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737921787539-->
+END%%
+
+%%ANKI
+Cloze
+A(n) {acute} angle measures {less than $90\degree$}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376862-->
+END%%
+
+%%ANKI
+Cloze
+A(n) {obtuse} angle measures {greater than $90\degree$}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376865-->
+END%%
+
+%%ANKI
+Cloze
+A(n) {right} angle measures {exactly $90\degree$}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376868-->
+END%%
+
+%%ANKI
+Basic
+The three angles of a triangle measure to what?
+Back: $180\degree$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376871-->
 END%%
 
 ## Subtended Angles

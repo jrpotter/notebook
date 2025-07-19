@@ -155,6 +155,133 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1751119772828-->
 END%%
 
+### Special-Use Addresses
+
+There exist a number of IPv4 addresses designated for special purposes. The following describes a subset of them:
+
+| Prefix               | Special Use                                                                       |
+| -------------------- | --------------------------------------------------------------------------------- |
+| `0.0.0.0/8`          | Hosts on the local network. May be used only as a source IP address.              |
+| `10.0.0.0/8`         | Address for private networks. Such addresses never appear on the public Internet. |
+| `127.0.0.0/8`        | Internet host loopback addresses.                                                 |
+| `172.16.0.0/12`      | Address for private networks. Such addresses never appear on the public Internet. |
+| `192.168.0.0/16`     | Address for private networks. Such addresses never appear on the public Internet. |
+| `255.255.255.255/32` | The local network (limited) broadcast address.                                    |
+
+%%ANKI
+Basic
+What is IPv4 prefix `0.0.0.0/8` designated for?
+Back: Hosts on the local network.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649265-->
+END%%
+
+%%ANKI
+Basic
+What is IPv4 prefix `10.0.0.0/8` designated for?
+Back: Addresses for private networks.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649273-->
+END%%
+
+%%ANKI
+Basic
+What is IPv4 prefix `127.0.0.0/8` designated for?
+Back: Internet host loopback addresses.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649275-->
+END%%
+
+%%ANKI
+Basic
+What is IPv4 prefix `172.16.0.0/12` designated for?
+Back: Addresses for private networks.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649278-->
+END%%
+
+%%ANKI
+Basic
+What is IPv4 prefix `192.168.0.0/16` designated for?
+Back: Addresses for private networks.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649280-->
+END%%
+
+%%ANKI
+Basic
+What is IPv4 prefix `255.255.255.255/32` designated for?
+Back: The local net (limited) broadcast address.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649283-->
+END%%
+
+%%ANKI
+Cloze
+The IPv4 prefix {`10.0.0.0`}`/`{`8`} is designated for private network addresses.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649286-->
+END%%
+
+%%ANKI
+Cloze
+The IPv4 prefix {`172.16.0.0`}`/`{`12`} is designated for private network addresses.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649289-->
+END%%
+
+%%ANKI
+Cloze
+The IPv4 prefix {`192.168.0.0`}`/`{`16`} is designated for private network addresses.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649292-->
+END%%
+
+%%ANKI
+Basic
+Which IPv4 prefix is designated for hosts on a local network?
+Back: `0.0.0.0/8`
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649295-->
+END%%
+
+%%ANKI
+Basic
+Which IPv4 prefix is designated for Internet host loopback addresses?
+Back: `127.0.0.0/8`
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649298-->
+END%%
+
+%%ANKI
+Basic
+Which IPv4 prefix is designated for local net broadcast addresses?
+Back: `255.255.255.255/32`
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649302-->
+END%%
+
+%%ANKI
+Cloze
+The IPv4 prefix {`0.0.0.0`}`/`{`8`} is designated for hosts on the local network.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649307-->
+END%%
+
+%%ANKI
+Cloze
+The IPv4 prefix {`127.0.0.0`}`/`{`8`} is designated for Internet host loopback addresses.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649311-->
+END%%
+
+%%ANKI
+Cloze
+The IPv4 prefix {`255.255.255.255`}`/`{`32`} is designated for limited broadcast addresses.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649315-->
+END%%
+
 ## IPv6
 
 An IPv6 address is a 128-bit nonnegative integer. An address is typically represented as eight **blocks** (also called **fields**) of four hexadecimal numbers each. In addition:
@@ -376,6 +503,85 @@ How many possible addresses does IPv6 have in its address space?
 Back: $2^{128}$
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1751119772835-->
+END%%
+
+### Special-Use Addresses
+
+There exist a number of IPv6 addresses designated for special purposes. The following describes a subset of them:
+
+| Prefix          | Special Use                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------------------- |
+| `::/128`        | The unspecified address. May be used as a source IP address.                                      |
+| `::1/128`       | The Internet host loopback address.                                                               |
+| `::ffff:0:0/96` | IPv4-mapped addresses. Such addresses never appear in pcaket headers. For internal host use only. |
+
+%%ANKI
+Basic
+What is IPv6 prefix `::/128` designated for?
+Back: The unspecified address.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649319-->
+END%%
+
+%%ANKI
+Basic
+What is IPv6 prefix `::1/128` designated for?
+Back: The Internet host loopback address.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649324-->
+END%%
+
+%%ANKI
+Basic
+What is IPv6 prefix `::ffff:0:0/96` designated for?
+Back: IPv4-mapped addresses.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649328-->
+END%%
+
+%%ANKI
+Basic
+Which IPv6 prefix is designated for the unspecified address?
+Back: `::/128`
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649332-->
+END%%
+
+%%ANKI
+Basic
+Which IPv6 prefix is designated for the Internet loopback address?
+Back: `::1/128`
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649336-->
+END%%
+
+%%ANKI
+Basic
+Which IPv6 prefix is designated for IPv4-mapped addresses?
+Back: `::ffff:0:0/96`
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649339-->
+END%%
+
+%%ANKI
+Cloze
+The IPv6 prefix {`::`}`/`{`128`} is designated for the unspecified address.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649343-->
+END%%
+
+%%ANKI
+Cloze
+The IPv6 prefix {`::1`}`/`{`128`} is designated for the Internet loopback address.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649346-->
+END%%
+
+%%ANKI
+Cloze
+The IPv6 prefix {`::ffff:0:0`}`/`{`96`} is designated for IPv4-mapped addresses.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752809649350-->
 END%%
 
 ## Addressing Methods

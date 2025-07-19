@@ -68,6 +68,69 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1751635883766-->
 END%%
 
+%%ANKI
+Cloze
+A {right} triangle is in contrast to an {oblique} triangle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376814-->
+END%%
+
+%%ANKI
+Basic
+What is a right triangle?
+Back: A triangle that contains a right angle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376824-->
+END%%
+
+%%ANKI
+Basic
+What is an oblique triangle?
+Back: A triangle that does not contain a right angle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376828-->
+END%%
+
+%%ANKI
+Basic
+What is the maximum number of acute angles in an oblique triangle?
+Back: Three.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376831-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum number of acute angles in an oblique triangle?
+Back: Two.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376834-->
+END%%
+
+%%ANKI
+Basic
+What is the maximum number of obtuse angles in an oblique triangle?
+Back: One.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376837-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum number of obtuse angles in an oblique triangle?
+Back: Zero.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376840-->
+END%%
+
+%%ANKI
+Basic
+*Why* is it an oblique triangle have at most one obtuse angle?
+Back: The sum of the three angles in the triangle must add up to $180\degree$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376844-->
+END%%
+
 ## Functions
 
 %%ANKI
@@ -1167,6 +1230,56 @@ What is the smallest positive value of $k$ that satisfies the following? $$\cos{
 Back: $3\pi / 2$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1748703585874-->
+END%%
+
+### Law of Sines
+
+In a triangle, if $a$, $b$, and $c$ are the lengths of the sides opposite angles $\alpha$, $\beta$, and $\gamma$ respectively, then $$\frac{\sin{\alpha}}{a} = \frac{\sin{\beta}}{b} = \frac{\sin{\gamma}}{c}.$$
+
+![[law-of-sines-three.png]]
+
+%%ANKI
+Basic
+Consider the following triangle. What does the law of sines state?
+![[law-of-sines-three.png]]
+Back: $$\frac{\sin{\alpha}}{a} = \frac{\sin{\beta}}{b} = \frac{\sin{\gamma}}{c}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376847-->
+END%%
+
+%%ANKI
+Basic
+The law of sines involves what four quantities?
+Back: Two side lengths and two angles opposite said sides.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376850-->
+END%%
+
+%%ANKI
+Basic
+The law of sines involves what two pairs?
+Back: Two pairs of side lengths opposite an angle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376853-->
+END%%
+
+%%ANKI
+Basic
+Consider the following triangle. What does the law of sines state?
+![[law-of-sines-two.png]]
+Back: $$\frac{\sin{\theta}}{x} = \frac{\sin{\phi}}{y}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376856-->
+END%%
+
+%%ANKI
+Basic
+What auxiliary element is drawn in the following to prove the law of sines?
+![[law-of-sines-three.png]]
+Back:
+![[law-of-sines-three-aux.png]]
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752787376859-->
 END%%
 
 ## Bibliography

@@ -350,6 +350,50 @@ Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web
 <!--ID: 1735162429102-->
 END%%
 
+%%ANKI
+Basic
+In Turtle, what does `[ ... ]` denote?
+Back: A blank node.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752789057038-->
+END%%
+
+## Lists
+
+Lists are defined recursively using `rdf:first` and `rdf:rest`. Lists are denoted in Turtle using parentheses (i.e. `(...)`).
+
+%%ANKI
+Basic
+In Turtle, what does `( ... )` denote?
+Back: A list.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752789057044-->
+END%%
+
+%%ANKI
+Basic
+What two RDF constructs are used to define a list?
+Back: `rdf:first` and `rdf:rest`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752789057050-->
+END%%
+
+%%ANKI
+Basic
+How is the head of a list described in RDF?
+Back: With `rdf::first`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752789057056-->
+END%%
+
+%%ANKI
+Basic
+How is the tail of a list described in RDF?
+Back: With `rdf::rest`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1752789057062-->
+END%%
+
 ## Serializations
 
 The original syntax and standard for writing RDF was RDF/XML. Turtle is an alternative, more human-readable, syntax. Besides these two exist many others.

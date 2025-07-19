@@ -301,6 +301,127 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1731204485586-->
 END%%
 
+## Transfinite Induction
+
+Let $<$ be a strict [[order#Well Order|well ordering]] on set $A$. We say that $B \subseteq A$ is a **$<$-inductive** subset of $A$ if and only if for every $t \in A$, $$\mathop{\text{seg}_<}t \subseteq B \Rightarrow t \in B.$$
+
+The **transfinite induction principle** states that if $<$ is a strict well ordering on set $A$, any $<$-inductive subset of $A$ must coincide with $A$.
+
+%%ANKI
+Basic
+The transfinite induction principle is a generalization of what other principle?
+Back: The strong induction principle.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278037-->
+END%%
+
+%%ANKI
+Basic
+Which kind of ordering is transfinite induction applicable to?
+Back: Strict well orderings.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278046-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on $A$. What does it mean for $B$ to be an $<$-inductive subset of $A$?
+Back: For all $t \in A$, if $\mathop{\text{seg}_<}t \subseteq B$, then $t \in B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278049-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on $A$. What is an $<$-inductive subset of $A$?
+Back: A set $B$ such that for all $t \in A$, if $\mathop{\text{seg}_<} t \subseteq B$, then $t \in B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278052-->
+END%%
+
+%%ANKI
+Basic
+Well orderings are the basis of which induction principle?
+Back: The transfinite induction principle.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278055-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a well ordering on $A$. What does the transfinite induction principle state?
+Back: Any $<$-inductive subset of $A$ coincides with $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278057-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a well ordering on $A$. What alternative name is given to $B$ in the following?
+
+> A subset $B$ of $A$ such that for all $t \in A$, $\mathop{\text{seg}_<} t \subseteq B \Rightarrow t \in B$.
+
+Back: $B$ is an $<$-inductive subset of $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278061-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a well ordering on $A$. In FOL, what property does $<$-inductive subset $B$ of $A$ satisfy?
+Back: $\forall t \in A, \mathop{\text{seg}_<}t \subseteq B \Rightarrow t \in B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278064-->
+END%%
+
+%%ANKI
+Basic
+The strong induction principle for $\omega$ can be generalized further into what principle?
+Back: The transfinite induction principle.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278067-->
+END%%
+
+%%ANKI
+Basic
+Which of strict or non-strict well orderings is transfinite induction related to?
+Back: Strict well orderings.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278071-->
+END%%
+
+%%ANKI
+Basic
+Let $\leq$ be a non-strict well ordering on $A$. *Why* doesn't transfinite induction work?
+Back: Transfinite induction applies to *strict* well orderings.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278074-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on $A$. *Why* doesn't transfinite induction work?
+Back: N/A. It does.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278077-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict total ordering on $A$. *Why* doesn't transfinite induction work?
+Back: Transfinite induction applies to strict **well** orderings.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278080-->
+END%%
+
+%%ANKI
+Basic
+Why must transfinite induction be based on strict well orderings instead of non-strict ones?
+Back: Let $\leq$ be a non-strict well ordering $\leq$ on $A$. Then for all $t \in A$, $t$ is in $\mathop{\text{seg}_\leq} t$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1752812278083-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
