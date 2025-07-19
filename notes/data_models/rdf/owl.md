@@ -886,11 +886,14 @@ END%%
 
 %%ANKI
 Basic
-How are the following three triples written using a list?
+How are the following triples more compactly written in OWL?
 ```turtle
 :A owl:differentFrom :B .
 :A owl:differentFrom :C .
+:B owl:differentFrom :A .
 :B owl:differentFrom :C .
+:C owl:differentFrom :A .
+:C owl:differentFrom :B .
 ```
 Back:
 ```turtle

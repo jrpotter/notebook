@@ -99,6 +99,14 @@ END%%
 
 %%ANKI
 Basic
+In the classful addressing scheme, which class(es) held unicast addresses?
+Back: Classes `A`, `B`, and `C`.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752949990722-->
+END%%
+
+%%ANKI
+Basic
 With respect to IPv4, class `D` was designated for what kind of addresses?
 Back: Multicast addresses.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
@@ -107,10 +115,26 @@ END%%
 
 %%ANKI
 Basic
+In the classful addressing scheme, which class(es) held multicast addresses?
+Back: Class `D`.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752949990724-->
+END%%
+
+%%ANKI
+Basic
 With respect to IPv4, class `E` was designated for what kind of addresses?
 Back: N/A. They were reserved.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1751133197518-->
+END%%
+
+%%ANKI
+Basic
+In the classful addressing scheme, which class(es) were reserved?
+Back: Class `E`.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752949990726-->
 END%%
 
 %%ANKI

@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-A **process** is an instance of a program in execution. Each program in the system runs in the **context** of some process. The context consists of the state that the program needs to run correctly.
+A **process** is an instance of a program in execution. Each program in the system runs in the **context** of some process. The context consists of the state that the program needs to run correctly. Every process is uniquely identified with a **process ID** (PID). Every process belongs to exactly one a **process group**, identified by a **process group ID** (PGID).
 
 %%ANKI
 Cloze
@@ -47,6 +47,119 @@ How do processes relate to programs?
 Back: The former is the abstract representation of a program's execution.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752201359183-->
+END%%
+
+%%ANKI
+Basic
+How are processes typically referenced?
+Back: With a PID.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037151-->
+END%%
+
+%%ANKI
+Basic
+What is PID an acronym for?
+Back: **P**rocess **ID**.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037152-->
+END%%
+
+%%ANKI
+Basic
+What is PGID an acronym for?
+Back: **P**rocess **G**roup **ID**.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037153-->
+END%%
+
+%%ANKI
+Basic
+A process can belong to how many process groups?
+Back: Every process belongs to exactly one process group.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037154-->
+END%%
+
+%%ANKI
+Basic
+How many processes can a process group have?
+Back: One or more.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037155-->
+END%%
+
+%%ANKI
+Basic
+By default, what process group does a child process belong to?
+Back: That of its parent process.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037156-->
+END%%
+
+%%ANKI
+Basic
+Which Linux utility can be used to send arbitrary signals to processes?
+Back: `kill`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037157-->
+END%%
+
+%%ANKI
+Basic
+From the shell, how do you send signal `9` to process with PID `123`?
+Back: `kill -9 123`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037158-->
+END%%
+
+%%ANKI
+Basic
+From the shell, how do you send signal `9` to process with PGID `123`?
+Back: `kill -9 -123`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037159-->
+END%%
+
+%%ANKI
+Basic
+What does the first argument in the following command correspond to?
+```bash
+$ kill -9 -9
+```
+Back: Signal `9`, i.e. `SIGKILL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037160-->
+END%%
+
+%%ANKI
+Basic
+What does the second argument in the following command correspond to?
+```bash
+$ kill -9 -9
+```
+Back: Process group with PGID `9`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037161-->
+END%%
+
+%%ANKI
+Basic
+What does the second argument in the following command correspond to?
+```bash
+$ kill -9 9
+```
+Back: Process with PID `9`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037162-->
+END%%
+
+%%ANKI
+Basic
+In which way is the `kill` Linux utility a misnomer?
+Back: It can be used to send any signal, not just `SIGKILL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037163-->
 END%%
 
 ## Logical Control Flow
@@ -248,6 +361,105 @@ What is the scheduler?
 Back: The portion of the kernel responsible for scheduling.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752201359268-->
+END%%
+
+## Jobs
+
+Unix shells use the abstraction of a **job** to represent the processes that are created as a result of evaluating a single command line.
+
+%%ANKI
+Basic
+Which of processes or jobs is more general?
+Back: Jobs.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037164-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes process groups from jobs?
+Back: Jobs are a shell-specific abstraction that may or may not correspond to a process group.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037165-->
+END%%
+
+%%ANKI
+Basic
+How many foregroup jobs might a Unix shell have running?
+Back: At most one.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037166-->
+END%%
+
+%%ANKI
+Basic
+How many background jobs might a Unix shell have running?
+Back: Zero or more.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037167-->
+END%%
+
+%%ANKI
+Basic
+Consider the following command line. How many processes exist after executing?
+```bash
+$ ls | sort
+```
+Back: Three (`ls`, `sort`, and the foreground job).
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037168-->
+END%%
+
+%%ANKI
+Basic
+Consider the following command line. How many process groups exist after executing?
+```bash
+$ ls | sort
+```
+Back: One.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037169-->
+END%%
+
+%%ANKI
+Basic
+Consider the following command line. How many jobs exist after executing?
+```bash
+$ ls | sort
+```
+Back: One.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037170-->
+END%%
+
+%%ANKI
+Basic
+Consider the following command line. What process group does the `ls` process belong to?
+```bash
+$ ls | sort
+```
+Back: That of the foreground job.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037171-->
+END%%
+
+%%ANKI
+Basic
+Consider the following command line. What process group does the `sort` process belong to?
+```bash
+$ ls | sort
+```
+Back: That of the foreground job.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037172-->
+END%%
+
+%%ANKI
+Basic
+How do you indicate to the shell a job should be run in the background?
+Back: By appending an `&` to the end of the command.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037173-->
 END%%
 
 ## Bibliography

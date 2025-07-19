@@ -74,7 +74,7 @@ END%%
 Basic
 What combinatorial *concept* corresponds to the highlighted square?
 ![[ordering-y-repetition-n.jpg]]
-Back: $k$-permutations (falling factorials)
+Back: $k$-permutations (falling factorials).
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709306052449-->
 END%%
@@ -101,7 +101,7 @@ END%%
 Basic
 What combinatorial *concept* corresponds to the highlighted square?
 ![[ordering-n-repetition-y.jpg]]
-Back: Stars and bars
+Back: Stars and bars.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709306052461-->
 END%%
@@ -128,7 +128,7 @@ END%%
 Basic
 What combinatorial *concept* corresponds to the highlighted square?
 ![[ordering-n-repetition-n.jpg]]
-Back: Combinations
+Back: Combinations.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709306140887-->
 END%%

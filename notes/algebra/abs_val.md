@@ -68,7 +68,7 @@ END%%
 
 %%ANKI
 Basic
-Let $x, a \in \mathbb{R}$ and $a \geq 0$. How is $\lvert x \rvert \leq a$ geometricaly depicted?
+Let $x, a \in \mathbb{R}$ and $a \geq 0$. How is $\lvert x \rvert \leq a$ visually depicted?
 Back:
 ![[abs-value-geom.png]]
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

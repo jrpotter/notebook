@@ -125,7 +125,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* is it an oblique triangle have at most one obtuse angle?
+*Why* is it an oblique triangle has at most one obtuse angle?
 Back: The sum of the three angles in the triangle must add up to $180\degree$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1752787376844-->
@@ -747,7 +747,7 @@ END%%
 %%ANKI
 Basic
 *Why* does the following limit hold? $${\large \lim_{x \rightarrow \frac{\pi}{2}^-} \tan{x} = +\infty}$$
-Back: Because $\sin{x} \rightarrow 1^-$ and $\cos{x} \rightarrow 0^-$.
+Back: Because $\sin{x} \rightarrow 1$ and $\cos{x} \rightarrow 0$ as $x \rightarrow \frac{\pi}{2}^-$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1749333600838-->
 END%%
@@ -763,7 +763,7 @@ END%%
 %%ANKI
 Basic
 *Why* does the following limit hold? $${\large \lim_{x \rightarrow -\frac{\pi}{2}^+} \tan{x} = -\infty}$$
-Back: Because $\sin{x} \rightarrow -1^+$ and $\cos{x} \rightarrow 0^+$.
+Back: Because $\sin{x} \rightarrow -1$ and $\cos{x} \rightarrow 0$ as $x \rightarrow -\frac{\pi}{2}^+$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1749333600844-->
 END%%

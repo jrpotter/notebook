@@ -236,28 +236,34 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1752895140075-->
 END%%
 
+%%ANKI
+Basic
+When does a process attempt to receive a signal?
+Back: When switching from kernel mode to user mode.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037114-->
+END%%
+
 ## Common Signals
 
 Some of the more common signals include:
 
-| Number | Name    | Corresponding Event                       |
-| ------ | ------- | ----------------------------------------- |
-| 1      | SIGHUP  | Terminal line hangup                      |
-| 2      | SIGINT  | Interrupt from keyboard                   |
-| 4      | SIGILL  | Illegal instruction                       |
-| 6      | SIGABRT | Abort signal from `abort` function        |
-| 7      | SIGBUS  | Bus error                                 |
-| 8      | SIGFPE  | Floating-point exception                  |
-| 9      | SIGKILL | Kill program                              |
-| 11     | SIGSEGV | Invalid memory reference (seg fault)      |
-| 13     | SIGPIPE | Wrote to a pipe with no reader            |
-| 15     | SIGTERM | Software termination signal               |
-| 17     | SIGCHLD | A child process has stopped or terminated |
-| 18     | SIGCONT | Continue process if stopped               |
-| 19     | SIGSTOP | Stop signal not from terminal             |
-| 20     | SIGTSTP | Stop signal from terminal
+| Number | Name      | Default Action          | Corresponding Event                  |
+| ------ | --------- | ----------------------- | ------------------------------------ |
+| 1      | `SIGHUP`  | Terminate               | Terminal line hangup                 |
+| 2      | `SIGINT`  | Terminate               | Interrupt from keyboard              |
+| 4      | `SIGILL`  | Terminate               | Illegal instruction                  |
+| 6      | `SIGABRT` | Terminate and dump core | Abort signal from `abort` function   |
+| 7      | `SIGBUS`  | Terminate               | Bus error                            |
+| 8      | `SIGFPE`  | Terminate and dump core | Floating-point exception             |
+| 9      | `SIGKILL` | Terminate               | Kill program                         |
+| 11     | `SIGSEGV` | Terminate and dump core | Invalid memory reference (seg fault) |
+| 15     | `SIGTERM` | Terminate               | Software termination signal          |
+| 18     | `SIGCONT` | Ignore                  | Continue process if stopped          |
+| 19     | `SIGSTOP` | Stop until `SIGCONT`    | Stop signal not from terminal        |
+| 20     | `SIGTSTP` | Stop until `SIGCONT`    | Stop signal from terminal            |
 
-### SIGHUP (1)
+### SIGHUP
 
 A process receives a `SIGHUP` signal when the terminal it is attached to goes away before it finishes executing.
 
@@ -339,7 +345,15 @@ Reference: `man 1 ps`
 <!--ID: 1744332718204-->
 END%%
 
-### SIGINT (2)
+%%ANKI
+Basic
+What is the default action of the `SIGHUP` signal?
+Back: Termination.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037116-->
+END%%
+
+### SIGINT
 
 Indicates the process was interrupted by the user. Happens when pressing `Ctrl-C` from the controlling terminal.
 
@@ -374,7 +388,15 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1752895140079-->
 END%%
 
-### SIGILL (4)
+%%ANKI
+Basic
+What is the default action of the `SIGINT` signal?
+Back: Termination.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037117-->
+END%%
+
+### SIGILL
 
 Indicates the CPU encountered an instruction it does not understand or does not have permission to execute. Often implies corruption in some way or perhaps an attempt to execute data instead of code.
 
@@ -416,7 +438,15 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708812571668-->
 END%%
 
-### SIGABRT (6)
+%%ANKI
+Basic
+What is the default action of the `SIGILL` signal?
+Back: Termination.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037118-->
+END%%
+
+### SIGABRT
 
 Indicates an "emergency stop". Usually emitted when the process itself invokes `abort()`. 
 
@@ -469,7 +499,15 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1752895140085-->
 END%%
 
-### SIGBUS (7)
+%%ANKI
+Basic
+What is the default action of the `SIGABRT` signal?
+Back: Termination and core dump.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037119-->
+END%%
+
+### SIGBUS
 
 Indicates the CPU encountered an instruction to access memory it cannot physically address, i.e. an invalid address for the address bus.
 
@@ -504,7 +542,15 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1733839282857-->
 END%%
 
-### SIGFPE (8)
+%%ANKI
+Basic
+What is the default action of the `SIGBUS` signal?
+Back: Termination.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037120-->
+END%%
+
+### SIGFPE
 
 Indicates the CPU performed some fatal arithmetic error. Division by zero, overflows, underflows, etc. all trigger this signal.
 
@@ -529,6 +575,261 @@ When does a process receive a `SIGFPE` signal?
 Back: When an instruction invokes a fatal arithmetic error.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752895140098-->
+END%%
+
+%%ANKI
+Basic
+What is the default action of the `SIGFPE` signal?
+Back: Termination and core dump.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037121-->
+END%%
+
+### SIGKILL
+
+Indicates a process should be killed. This signal cannot be ignored nor caught.
+
+%%ANKI
+Cloze
+Signal {`SIGKILL`} corresponds to number {9}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037122-->
+END%%
+
+%%ANKI
+Basic
+In what way is `SIGKILL` "stronger" than e.g. `SIGINT`?
+Back: It can be neither caught nor ignored.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037123-->
+END%%
+
+%%ANKI
+Basic
+What signal should be used to force termination of a program?
+Back: `SIGKILL`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037124-->
+END%%
+
+%%ANKI
+Basic
+What is the default action of the `SIGKILL` signal?
+Back: Termination.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037125-->
+END%%
+
+### SIGSEGV
+
+Indicates an instruction performed a memory access violation, trying to read from or write to a memory area the current process does not have access to.
+
+%%ANKI
+Cloze
+Signal {`SIGSEGV`} corresponds to number {11}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037126-->
+END%%
+
+%%ANKI
+Basic
+What is `SEGV` in `SIGSEGV` an acronym for?
+Back: **Seg**mentation **V**iolation.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037127-->
+END%%
+
+%%ANKI
+Basic
+When does a process receive a `SIGSEGV` signal?
+Back: When an instruction attempts to read from or write to a memory location it does not have access to.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037128-->
+END%%
+
+%%ANKI
+Basic
+What is the default action of the `SIGSEGV` signal?
+Back: Termination and core dump.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037129-->
+END%%
+
+### SIGTERM
+
+Indicates the process should terminate.
+
+%%ANKI
+Cloze
+Signal {`SIGTERM`} corresponds to number {`15`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037130-->
+END%%
+
+%%ANKI
+Basic
+Assuming the process isn't suspended, what is the default action of the `SIGTERM` signal?
+Back: Termination
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037131-->
+END%%
+
+%%ANKI
+Cloze
+{1:`SIGINT`} is to {1:`SIGTERM`} as {2:`SIGTSTP`} is to {1:`SIGSTOP`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037132-->
+END%%
+
+%%ANKI
+Basic
+Which signal is the terminal analog to `SIGTERM`?
+Back: `SIGINT`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037133-->
+END%%
+
+%%ANKI
+Basic
+Which signal is the non-terminal analog to `SIGINT`?
+Back: `SIGTERM`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037134-->
+END%%
+
+### SIGCONT
+
+Indicates the process should resume if it was suspended.
+
+%%ANKI
+Cloze
+Signal {`SIGCONT`} corresponds to number {18}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037135-->
+END%%
+
+%%ANKI
+Basic
+Assuming the process isn't suspended, what is the default action of the `SIGCONT` signal?
+Back: To ignore the signal.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037136-->
+END%%
+
+%%ANKI
+Basic
+Which signal is used to resume an otherwise suspended process?
+Back: `SIGCONT`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037137-->
+END%%
+
+%%ANKI
+Basic
+Which two Unix shell commands are most commonly used to trigger `SIGCONT`?
+Back: `fg` and `bg`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037138-->
+END%%
+
+### SIGSTOP
+
+Indicates the process should be stopped, i.e. suspended.
+
+%%ANKI
+Cloze
+Signal {`SIGSTOP`} corresponds to number {19}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037139-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes `SIGSTOP` and `SIGTSTP`?
+Back: The latter is a stop signal *not* from the terminal.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037140-->
+END%%
+
+%%ANKI
+Basic
+What is the default action of the `SIGSTOP` signal?
+Back: Stop until `SIGCONT`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037141-->
+END%%
+
+%%ANKI
+Cloze
+By default, {`SIGSTOP`} and {`SIGTSTP`} have roughtly the same intended purpose.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037142-->
+END%%
+
+### SIGTSTP
+
+Indicates the process was stopped by the user. Happens when pressing `Ctrl-Z` from the controlling terminal.
+
+%%ANKI
+Cloze
+Signal {`SIGTSTP`} corresponds to number {20}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037143-->
+END%%
+
+%%ANKI
+Basic
+What control sequence usually triggers a `SIGTSTP`?
+Back: `Ctrl-Z`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037144-->
+END%%
+
+%%ANKI
+Basic
+What is the `TSTP` in `SIGTSTP` short for?
+Back: **T**erminal **St**o**p**.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037145-->
+END%%
+
+%%ANKI
+Basic
+When does a process receive a `SIGTSTP` signal?
+Back: When `Ctrl-Z` is pressed while the process is running in the foreground.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037146-->
+END%%
+
+%%ANKI
+Cloze
+{1:`SIGINT`} is to {2:`Ctrl-C`} whereas {2:`SIGTSTP`} is to {1:`Ctrl-Z`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037147-->
+END%%
+
+%%ANKI
+Basic
+What is the default action of the `SIGTSTP` signal?
+Back: Stop until `SIGCONT`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037148-->
+END%%
+
+%%ANKI
+Basic
+Which signal is the terminal analog to `SIGSTOP`?
+Back: `SIGTSTP`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037149-->
+END%%
+
+%%ANKI
+Basic
+Which signal is the non-terminal analog to `SIGTSTP`?
+Back: `SIGSTOP`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1752949037150-->
 END%%
 
 ## Bibliography

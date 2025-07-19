@@ -170,7 +170,7 @@ There exist a number of IPv4 addresses designated for special purposes. The foll
 
 %%ANKI
 Basic
-What is IPv4 prefix `0.0.0.0/8` designated for?
+What special use is IPv4 prefix `0.0.0.0/8` designated for?
 Back: Hosts on the local network.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649265-->
@@ -178,7 +178,7 @@ END%%
 
 %%ANKI
 Basic
-What is IPv4 prefix `10.0.0.0/8` designated for?
+What special use is IPv4 prefix `10.0.0.0/8` designated for?
 Back: Addresses for private networks.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649273-->
@@ -186,7 +186,7 @@ END%%
 
 %%ANKI
 Basic
-What is IPv4 prefix `127.0.0.0/8` designated for?
+What special use is IPv4 prefix `127.0.0.0/8` designated for?
 Back: Internet host loopback addresses.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649275-->
@@ -194,7 +194,7 @@ END%%
 
 %%ANKI
 Basic
-What is IPv4 prefix `172.16.0.0/12` designated for?
+What special use is IPv4 prefix `172.16.0.0/12` designated for?
 Back: Addresses for private networks.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649278-->
@@ -202,7 +202,7 @@ END%%
 
 %%ANKI
 Basic
-What is IPv4 prefix `192.168.0.0/16` designated for?
+What special use is IPv4 prefix `192.168.0.0/16` designated for?
 Back: Addresses for private networks.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649280-->
@@ -210,7 +210,7 @@ END%%
 
 %%ANKI
 Basic
-What is IPv4 prefix `255.255.255.255/32` designated for?
+What special use is IPv4 prefix `255.255.255.255/32` designated for?
 Back: The local net (limited) broadcast address.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649283-->
@@ -517,7 +517,7 @@ There exist a number of IPv6 addresses designated for special purposes. The foll
 
 %%ANKI
 Basic
-What is IPv6 prefix `::/128` designated for?
+What special use is IPv6 prefix `::/128` designated for?
 Back: The unspecified address.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649319-->
@@ -525,7 +525,7 @@ END%%
 
 %%ANKI
 Basic
-What is IPv6 prefix `::1/128` designated for?
+What special use is IPv6 prefix `::1/128` designated for?
 Back: The Internet host loopback address.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649324-->
@@ -533,7 +533,7 @@ END%%
 
 %%ANKI
 Basic
-What is IPv6 prefix `::ffff:0:0/96` designated for?
+What special use is IPv6 prefix `::ffff:0:0/96` designated for?
 Back: IPv4-mapped addresses.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649328-->
@@ -892,6 +892,14 @@ Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [htt
 <!--ID: 1751119772876-->
 END%%
 
+%%ANKI
+Basic
+*How* is multicast addressing accomplished?
+Back: By having one or more hosts join a group designated with a multicast IP address.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752949990713-->
+END%%
+
 ### Anycast
 
 An **anycast** delivers a message to any one out of a group of nodes using a *one-to-one-of-many* association. Typically the recipient is the one closest to the source of the message.
@@ -936,6 +944,14 @@ Which of the possible recipients in an anycast is a message typically delivered 
 Back: The one closest to the source of the message.
 Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
 <!--ID: 1751119772891-->
+END%%
+
+%%ANKI
+Basic
+*How* is anycast addressing accomplished?
+Back: By advertising the same unicast routes from multiple locations in the Internet.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1752949990718-->
 END%%
 
 ## Bibliography
