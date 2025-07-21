@@ -1234,9 +1234,15 @@ END%%
 
 ### Law of Sines
 
-In a triangle, if $a$, $b$, and $c$ are the lengths of the sides opposite angles $\alpha$, $\beta$, and $\gamma$ respectively, then $$\frac{\sin{\alpha}}{a} = \frac{\sin{\beta}}{b} = \frac{\sin{\gamma}}{c}.$$
+If $a$, $b$, and $c$ are the lengths of the sides of a triangle opposite angles $\alpha$, $\beta$, and $\gamma$ respectively, then $$\frac{\sin{\alpha}}{a} = \frac{\sin{\beta}}{b} = \frac{\sin{\gamma}}{c}.$$
 
-![[law-of-sines-three.png]]
+%%ANKI
+Basic
+What does the law of sines state?
+Back: If $a$, $b$, and $c$ are the lengths of the sides of a triangle opposite angles $\alpha$, $\beta$, and $\gamma$ respectively, then $$\frac{\sin{\alpha}}{a} = \frac{\sin{\beta}}{b} = \frac{\sin{\gamma}}{c}.$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752968452354-->
+END%%
 
 %%ANKI
 Basic
@@ -1249,18 +1255,10 @@ END%%
 
 %%ANKI
 Basic
-The law of sines involves what four quantities?
+What four quantities does the law of sines relate?
 Back: Two side lengths and two angles opposite said sides.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1752787376850-->
-END%%
-
-%%ANKI
-Basic
-The law of sines involves what two pairs?
-Back: Two pairs of side lengths opposite an angle.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1752787376853-->
 END%%
 
 %%ANKI
@@ -1280,6 +1278,124 @@ Back:
 ![[law-of-sines-three-aux.png]]
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1752787376859-->
+END%%
+
+%%ANKI
+Basic
+Let $0 \leq \sin{\theta} \leq 1$. How many solutions are there for $\theta$ between $0\degree$ and $180\degree$?
+Back: One if $\sin{\theta} = 1$ and two otherwise.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752977938117-->
+END%%
+
+%%ANKI
+Basic
+Let $0 \leq \sin{\theta} < 1$. How many solutions are there for $\theta$ between $0\degree$ and $180\degree$?
+Back: Two.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752977938128-->
+END%%
+
+%%ANKI
+Basic
+Let $0 < \sin{\theta} \leq 1$. How many solutions are there for $\theta$ between $0\degree$ and $180\degree$?
+Back: One if $\sin{\theta} = 1$ and two otherwise.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752977938133-->
+END%%
+
+### Law of Cosines
+
+If $a$, $b$, and $c$ are the lengths of the sides of a triangle and $\theta$ is the angle between the sides $a$ and $b$, then $$c^2 = a^2 + b^2 - 2ab\cos{\theta}.$$
+
+%%ANKI
+Basic
+What does the law of cosines state?
+Back: If $a$, $b$, and $c$ are the lengths of the sides of a triangle and $\theta$ is the angle between the sides $a$ and $b$, then $$c^2 = a^2 + b^2 - 2ab\cos{\theta}.$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752968452361-->
+END%%
+
+%%ANKI
+Cloze
+The {law of cosines} is a generalization of the {Pythagorean theorem}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752968452366-->
+END%%
+
+%%ANKI
+Basic
+What does the law of cosines state about the following triangle?
+![[law-of-cosines.png]]
+Back: $z^2 = x^2 + y^2 - 2xy\cos{\theta}$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752968452371-->
+END%%
+
+%%ANKI
+Basic
+What auxiliary element is drawn in the following to prove the law of cosines?
+![[law-of-cosines-three.png]]
+Back:
+![[law-of-cosines-three-aux.png]]
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752968452375-->
+END%%
+
+%%ANKI
+Basic
+What four quantities does the law of cosines relate?
+Back: Three sides of a triangle and an angle.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752968452380-->
+END%%
+
+%%ANKI
+Basic
+What term is added to the following to form the law of cosines? $$c^2 = a^2 + b^2$$
+Back: $-2abcos{\theta}$ on the RHS, where $\theta$ is the angle between sides of length $a$ and $b$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752968452384-->
+END%%
+
+%%ANKI
+Basic
+Why does the law of cosines simplify to the Pythagorean theorem for right triangles?
+Back: Because $\cos{90\degree} = 0$, cancelling out term $-2abcos{\theta}$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752968452388-->
+END%%
+
+%%ANKI
+Basic
+Let $0 \leq \cos{\theta} \leq 1$. How many solutions are there for $\theta$ between $0\degree$ and $180\degree$?
+Back: One.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752977938137-->
+END%%
+
+%%ANKI
+Basic
+Let $0 \leq \cos{\theta} < 1$. How many solutions are there for $\theta$ between $0\degree$ and $180\degree$?
+Back: One.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752977938141-->
+END%%
+
+%%ANKI
+Basic
+Let $0 < \cos{\theta} \leq 1$. How many solutions are there for $\theta$ between $0\degree$ and $180\degree$?
+Back: One.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752977938145-->
+END%%
+
+%%ANKI
+Basic
+*Why* does Sundstrom say the law of cosines is easier than the law of sines to determine an angle in a triangle?
+Back: The equation for the Law of Sines can produce two possible angles.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1752977938149-->
 END%%
 
 ## Bibliography

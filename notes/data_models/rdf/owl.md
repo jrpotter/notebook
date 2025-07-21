@@ -921,6 +921,198 @@ Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web
 <!--ID: 1752789057032-->
 END%%
 
+### Cardinality
+
+The `owl:cardinality` construct is used to specify the number of distinct values a property can have for any subject. `owl:minCardinality` and `owl:maxCardinality` define lower and upper bounds respectively. For example:
+
+```turtle
+[ a owl:Restriction;
+  owl:onProperty :P ;
+  owl:cardinality 5
+] .
+```
+
+%%ANKI
+Basic
+What is the purpose of the `owl:cardinality` construct?
+Back: It specifies the number of distinct values a property can have for any subject.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020469057-->
+END%%
+
+%%ANKI
+Basic
+Which OWL construct allows specifying the number of distinct values a property can have for any subject?
+Back: `owl:cardinality`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020469066-->
+END%%
+
+%%ANKI
+Basic
+Which OWL construct allows specifying a lower bound on the number of distinct values a property can have for any subject?
+Back: `owl:minCardinality`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020469069-->
+END%%
+
+%%ANKI
+Basic
+Which OWL construct allows specifying an upper bound on the number of distinct values a property can have for any subject?
+Back: `owl:maxCardinality`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020469071-->
+END%%
+
+%%ANKI
+Basic
+The `owl:cardinality` is intended to be used with what other property or properties?
+Back: Just `owl:onProperty`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020469074-->
+END%%
+
+%%ANKI
+Basic
+The `owl:minCardinality` is intended to be used with what other property or properties?
+Back: Just `owl:onProperty`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020469083-->
+END%%
+
+%%ANKI
+Basic
+The `owl:maxCardinality` is intended to be used with what other property or properties?
+Back: Just `owl:onProperty`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020469090-->
+END%%
+
+%%ANKI
+Basic
+How is the following class interpreted in plain English?
+```turtle
+[ a owl:Restriction ;
+  owl:onProperty :hasPlayer ;
+  owl:cardinality 9
+] ;
+```
+Back: As the class of things with exactly `9` players.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020469077-->
+END%%
+
+%%ANKI
+Basic
+How is the following class interpreted in plain English?
+```turtle
+[ a owl:Restriction ;
+  owl:onProperty :hasPlayer ;
+  owl:minCardinality 10
+] ;
+```
+Back: As the class of things with at least `10` players.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020469080-->
+END%%
+
+%%ANKI
+Basic
+How is the following class interpreted in plain English?
+```turtle
+[ a owl:Restriction ;
+  owl:onProperty :hasPlayer ;
+  owl:maxCardinality 2
+] ;
+```
+Back: As the class of things with at most `2` players.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020469086-->
+END%%
+
+#### Qualification
+
+A qualified cardinality restriction allows including an additional reference, using `owl:onClass`, to a specific subject. For example:
+
+```turtle
+[ a owl:Restriction;
+  owl:onClass :C ;
+  owl:onProperty :P ;
+  owl:qualifiedCardinality 5
+] .
+```
+
+%%ANKI
+Basic
+What is the purpose of the `owl:qualifiedCardinality` construct?
+Back: It specifies the number of distinct values a property can have for a specific subject.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020917816-->
+END%%
+
+%%ANKI
+Basic
+Which OWL construct allows specifying the number of distinct values a property can have for a specific subject?
+Back: `owl:qualifiedCardinality`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020917818-->
+END%%
+
+%%ANKI
+Basic
+Which OWL construct allows specifying a lower bound on the number of distinct values a property can have for a specific subject?
+Back: `owl:minQualifiedCardinality`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020917821-->
+END%%
+
+%%ANKI
+Basic
+Which OWL construct allows specifying an upper bound on the number of distinct values a property can have for a specific subject?
+Back: `owl:maxQualifiedCardinality`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020917824-->
+END%%
+
+%%ANKI
+Basic
+The `owl:minQualifiedCardinality` is intended to be used with what other property or properties?
+Back: `owl:onClass` and `owl:onProperty`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020917834-->
+END%%
+
+%%ANKI
+Basic
+The `owl:qualifiedCardinality` is intended to be used with what other property or properties?
+Back: `owl:onClass` and `owl:onProperty`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020917827-->
+END%%
+
+%%ANKI
+Basic
+The `owl:maxQualifiedCardinality` is intended to be used with what other property or properties?
+Back: `owl:onClass` and `owl:onProperty`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020917807-->
+END%%
+
+%%ANKI
+Basic
+How is the following class interpreted in plain English?
+```turtle
+[ a owl:Restriction ;
+  owl:onClass :BaseballTeam ;
+  owl:onProperty :hasPlayer ;
+  owl:qualifiedCardinality 9
+] ;
+```
+Back: As the class of all baseball teams with exactly `9` players.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753020917830-->
+END%%
+
 ## Set Operations
 
 The `owl:unionOf` and `owl:intersectionOf` properties take a list of classes as a value. The union of two or more classes includes the members of all those classes combined. The intersection of two or more classes includes the members that belong to every one of the classes.

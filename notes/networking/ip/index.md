@@ -565,21 +565,21 @@ END%%
 
 %%ANKI
 Cloze
-The IPv6 prefix {`::`}`/`{`128`} is designated for the unspecified address.
+The IPv6 prefix {`꞉꞉`}`/`{`128`} is designated for the unspecified address.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649343-->
 END%%
 
 %%ANKI
 Cloze
-The IPv6 prefix {`::1`}`/`{`128`} is designated for the Internet loopback address.
+The IPv6 prefix {`꞉꞉1`}`/`{`128`} is designated for the Internet loopback address.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649346-->
 END%%
 
 %%ANKI
 Cloze
-The IPv6 prefix {`::ffff:0:0`}`/`{`96`} is designated for IPv4-mapped addresses.
+The IPv6 prefix {`꞉꞉ffff꞉0꞉0`}`/`{`96`} is designated for IPv4-mapped addresses.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649350-->
 END%%
