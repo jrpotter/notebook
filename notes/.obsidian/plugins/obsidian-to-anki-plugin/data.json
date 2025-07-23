@@ -459,7 +459,10 @@
     "vector-parallelogram-rule.png",
     "vector-subtraction-side.png",
     "diff-vectors-one.png",
-    "diff-vectors-two.png"
+    "diff-vectors-two.png",
+    "vector-standard-position.png",
+    "dot-product-proof.png",
+    "dot-product-angle.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -1318,7 +1321,7 @@
     "_journal/2025-07/2025-07-12.md": "1c26a720df8e7f93e793ec8eaecde25b",
     "proofs/induction.md": "b8e658ebcb26bcbd39e242490df23db9",
     "operating_systems/syscalls.md": "ef164400387aec1af4c0612aa84ba94d",
-    "operating_systems/signals.md": "91b2b5d92dee842d0c3a8184702254df",
+    "operating_systems/signals.md": "6ef13b4dde6e34197c9a632398d2fd48",
     "_journal/2025-07-16.md": "70d3c84a75e4c2efb42f153647e55e9f",
     "_journal/2025-07/2025-07-15.md": "d903461b156b0ab01a8ef0552f0c6f22",
     "_journal/2025-07/2025-07-14.md": "0c810bfe02492732f6bc66b9714accff",
@@ -1330,9 +1333,13 @@
     "_journal/2025-07/2025-07-18.md": "522263dd7458dc107b727f04b4621ada",
     "_journal/2025-07-20.md": "b16f8dea28fcb8deb577cd46d31f0885",
     "_journal/2025-07/2025-07-19.md": "5ab38dd10d14b97dd3543c20bdc4491f",
-    "_journal/2025-07-21.md": "02cbf258a96c79604396d630dd6e4524",
+    "_journal/2025-07-21.md": "dbd008937396f3a43754e7ea65d15393",
     "_journal/2025-07/2025-07-20.md": "557d761b0d44a3b40393359396328621",
-    "geometry/vectors.md": "fe3d7d3945f13ed7ea962222be68008c"
+    "geometry/vectors.md": "3da858c7413761bb2b055323c529100f",
+    "_journal/2025-07-22.md": "26529ead8e3ae32f2384eea44ab35aa0",
+    "_journal/2025-07/2025-07-21.md": "dbd008937396f3a43754e7ea65d15393",
+    "_journal/2025-07-23.md": "3a67aad49b00f302f755cbf68986914d",
+    "_journal/2025-07/2025-07-22.md": "af19bb9a45662b20e253ba4249a2d2f3"
   },
   "fields_dict": {
     "Basic": [

@@ -119,22 +119,6 @@ END%%
 
 %%ANKI
 Basic
-In how many ways can a process receive a signal?
-Back: Three.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1752895140020-->
-END%%
-
-%%ANKI
-Basic
-What are the three ways a system can receive a signal?
-Back: By ignoring the signal, terminating, or catching the signal.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1752895140024-->
-END%%
-
-%%ANKI
-Basic
 What does it mean for a process to catch a signal?
 Back: A user-level function is invoked when the signal is received.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
@@ -244,6 +228,115 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1752949037114-->
 END%%
 
+%%ANKI
+What two bit vectors are most relevant to signals?
+Back: The pending and blocked bit vectors.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+END%%
+
+%%ANKI
+Basic
+What is a process's signal mask?
+Back: The bit vector representing blocked signals.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753136506310-->
+END%%
+
+%%ANKI
+Cloze
+The {blocked bit vector} is also known as the {signal mask}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753136506319-->
+END%%
+
+%%ANKI
+Basic
+What bitwise operation is performed when the kernel checks if a process has a pending signal?
+Back: `pending & ~blocked`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753136506321-->
+END%%
+
+%%ANKI
+Basic
+What bitwise operation finds all unblocked pending signals?
+Back: `pending & ~blocked`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753136506324-->
+END%%
+
+%%ANKI
+Basic
+Suppose `pending & ~blocked` is empty for process `p`. Where does the kernel pass control?
+Back: To the next instruction in the logical control flow of `p`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753136506326-->
+END%%
+
+%%ANKI
+Basic
+Suppose `pending & ~blocked` is not empty for process `p`. Where does the kernel pass control?
+Back: To the instruction responsible for receiving one of the pending signals.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753136506328-->
+END%%
+
+%%ANKI
+Basic
+What implicit blocking mechanism exists in the Linux kernel?
+Back: If a signal is being handled and the same type signal is sent, the sent signal is kept pending until the handler finishes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753141632807-->
+END%%
+
+%%ANKI
+Basic
+Let $n$ be a signal number. If a signal of type $n$ is being handled, what happens when another signal of type $n$ is sent?
+Back: It is blocked until the current handler returns.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753141632816-->
+END%%
+
+%%ANKI
+Basic
+Let $m$ and $n$ be distinct signal numbers. If a signal of type $m$ is being handled, what happens when a signal of type $n$ is sent?
+Back: The $m$ handler is paused while the $n$ handler is executed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753141632818-->
+END%%
+
+%%ANKI
+Basic
+Which C function is most flexible w.r.t. updating a process's blocked bit vector?
+Back: `sigprocmask`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753141632821-->
+END%%
+
+%%ANKI
+Basic
+Which C function is most flexible w.r.t. updating a process's pending bit vector?
+Back: `kill`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753141632823-->
+END%%
+
+%%ANKI
+Basic
+Which C function is most flexible w.r.t. updating a process's signal mask?
+Back: `sigprocmask`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753141632825-->
+END%%
+
+%%ANKI
+Basic
+Why can't signals be used to count occurrences of events?
+Back: If a signal is already pending, a duplicate signal is discarded.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753142491481-->
+END%%
+
 ## Common Signals
 
 Some of the more common signals include:
@@ -262,6 +355,87 @@ Some of the more common signals include:
 | 18     | `SIGCONT` | Ignore                  | Continue process if stopped          |
 | 19     | `SIGSTOP` | Stop until `SIGCONT`    | Stop signal not from terminal        |
 | 20     | `SIGTSTP` | Stop until `SIGCONT`    | Stop signal from terminal            |
+
+%%ANKI
+Basic
+How many predefined default actions are available to signals?
+Back: Five.
+Reference: `man 7 signal`
+<!--ID: 1752895140020-->
+END%%
+
+%%ANKI
+Basic
+What are the five default actions a process can perform when receiving a signal?
+Back:
+1. Ignore
+2. Terminate
+3. Core
+4. Stop
+5. Continue
+Reference: `man 7 signal`
+<!--ID: 1752895140024-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes ignoring signals and blocking signals?
+Back: The latter persists the pending state of the signal until unblocking.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753136506331-->
+END%%
+
+%%ANKI
+Basic
+Which signals cannot have their default actions changed?
+Back: `SIGSTOP` and `SIGKILL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753136506333-->
+END%%
+
+%%ANKI
+Basic
+Which signals can have their default actions updated?
+Back: All but `SIGSTOP` and `SIGKILL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753136506336-->
+END%%
+
+%%ANKI
+Basic
+Which C function is used to change signal handlers?
+Back: `signal`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1753136506338-->
+END%%
+
+%%ANKI
+Basic
+Which C header includes functions for updating signal handlers?
+Back: `<signal.h>`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1753136506341-->
+END%%
+
+%%ANKI
+Basic
+Which C macro corresponds to default signal actions?
+Back: `SIG_DFL`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1753136506344-->
+END%%
+
+%%ANKI
+Basic
+Which C macro corresponds to ignoring a signal?
+Back: `SIG_IGN`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1753136506347-->
+END%%
 
 ### SIGHUP
 
@@ -347,7 +521,7 @@ END%%
 
 %%ANKI
 Basic
-What is the default action of the `SIGHUP` signal?
+Which of the five default actions is `SIGHUP` associated with?
 Back: Termination.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037116-->
@@ -390,7 +564,7 @@ END%%
 
 %%ANKI
 Basic
-What is the default action of the `SIGINT` signal?
+Which of the five default actions is `SIGINT` associated with?
 Back: Termination.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037117-->
@@ -440,7 +614,7 @@ END%%
 
 %%ANKI
 Basic
-What is the default action of the `SIGILL` signal?
+Which of the five default actions is `SIGILL` associated with?
 Back: Termination.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037118-->
@@ -501,8 +675,8 @@ END%%
 
 %%ANKI
 Basic
-What is the default action of the `SIGABRT` signal?
-Back: Termination and core dump.
+Which of the five default actions is `SIGABRT` associated with?
+Back: Core dump.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037119-->
 END%%
@@ -544,7 +718,7 @@ END%%
 
 %%ANKI
 Basic
-What is the default action of the `SIGBUS` signal?
+Which of the five default actions is `SIGBUS` associated with?
 Back: Termination.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037120-->
@@ -579,8 +753,8 @@ END%%
 
 %%ANKI
 Basic
-What is the default action of the `SIGFPE` signal?
-Back: Termination and core dump.
+Which of the five default actions is `SIGFPE` associated with?
+Back: Core dump.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037121-->
 END%%
@@ -614,7 +788,7 @@ END%%
 
 %%ANKI
 Basic
-What is the default action of the `SIGKILL` signal?
+Which of the five default actions is `SIGKILL` associated with?
 Back: Termination.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037125-->
@@ -649,8 +823,8 @@ END%%
 
 %%ANKI
 Basic
-What is the default action of the `SIGSEGV` signal?
-Back: Termination and core dump.
+Which of the five default actions is `SIGSEGV` associated with?
+Back: Core dump.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037129-->
 END%%
@@ -667,16 +841,8 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
-Basic
-Assuming the process isn't suspended, what is the default action of the `SIGTERM` signal?
-Back: Termination
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1752949037131-->
-END%%
-
-%%ANKI
 Cloze
-{1:`SIGINT`} is to {1:`SIGTERM`} as {2:`SIGTSTP`} is to {1:`SIGSTOP`}.
+{1:`SIGINT`} is to {2:`SIGTERM`} as {2:`SIGTSTP`} is to {1:`SIGSTOP`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037132-->
 END%%
@@ -697,6 +863,14 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1752949037134-->
 END%%
 
+%%ANKI
+Basic
+Which of the five default actions is `SIGTERM` associated with?
+Back: Termination.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753188288506-->
+END%%
+
 ### SIGCONT
 
 Indicates the process should resume if it was suspended.
@@ -706,14 +880,6 @@ Cloze
 Signal {`SIGCONT`} corresponds to number {18}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037135-->
-END%%
-
-%%ANKI
-Basic
-Assuming the process isn't suspended, what is the default action of the `SIGCONT` signal?
-Back: To ignore the signal.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1752949037136-->
 END%%
 
 %%ANKI
@@ -732,6 +898,14 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1752949037138-->
 END%%
 
+%%ANKI
+Basic
+Which of the five default actions is `SIGCONT` associated with?
+Back: Continue.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753188288513-->
+END%%
+
 ### SIGSTOP
 
 Indicates the process should be stopped, i.e. suspended.
@@ -746,15 +920,15 @@ END%%
 %%ANKI
 Basic
 What distinguishes `SIGSTOP` and `SIGTSTP`?
-Back: The latter is a stop signal *not* from the terminal.
+Back: The latter is sent from the terminal whereas the former is not.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037140-->
 END%%
 
 %%ANKI
 Basic
-What is the default action of the `SIGSTOP` signal?
-Back: Stop until `SIGCONT`.
+Which of the five default actions is `SIGSTOP` associated with?
+Back: Stop.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037141-->
 END%%
@@ -810,8 +984,8 @@ END%%
 
 %%ANKI
 Basic
-What is the default action of the `SIGTSTP` signal?
-Back: Stop until `SIGCONT`.
+Which of the five default actions is `SIGTSTP` associated with?
+Back: Stop.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037148-->
 END%%
