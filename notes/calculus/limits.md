@@ -608,6 +608,105 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1753086694881-->
 END%%
 
+## Properties
+
+Let $f$ and $g$ be functions such that $$\lim_{x \rightarrow p} f(x) = A \quad\text{and}\quad \lim_{x \rightarrow p} g(x) = B.$$
+
+Then
+
+* $\lim_{x \rightarrow p} \left[ f(x) + g(x) \right] = A + B$,
+* $\lim_{x \rightarrow p} \left[ f(x) - g(x) \right] = A - B$,
+* $\lim_{x \rightarrow p} \left[ f(x) \cdot g(x) \right] = A \cdot B$,
+* $\lim_{x \rightarrow p} \left[ f(x) \div g(x) \right] = A \div B$ if $B \neq 0$.
+
+%%ANKI
+Basic
+Suppose $f(x) \rightarrow A$ and $g(x) \rightarrow B$ as $x \rightarrow p$. What does the following equal? $$\lim_{x \rightarrow p} \left[ f(x) + g(x) \right]$$
+Back: $A + B$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753386691578-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x) \rightarrow A$ and $g(x) \rightarrow B$ as $x \rightarrow p$. What does the following equal? $$\lim_{x \rightarrow p} \left[ f(x) - g(x) \right]$$
+Back: $A - B$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753386691582-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x) \rightarrow A$ and $g(x) \rightarrow B$ as $x \rightarrow p$. What does the following equal? $$\lim_{x \rightarrow p} \left[ f(x) \cdot g(x) \right]$$
+Back: $A \cdot B$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753386691583-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x) \rightarrow A$ and $g(x) \rightarrow B$ as $x \rightarrow p$. What does the following equal? $$\lim_{x \rightarrow p} \left[ f(x) \div g(x) \right]$$
+Back: $A \div B$ provided $B \neq 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753386691584-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f$ and $g$ are continuous at point $p$. *Why* is $f + g$ also continuous at $p$?
+Back: The limit of sums is equal to the sum of the limits.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753386691585-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f$ and $g$ are continuous at point $p$. *Why* is $f - g$ also continuous at $p$?
+Back: The limit of differences is equal to the difference of the limits.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753386691586-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f$ and $g$ are continuous at point $p$. *Why* is $f \cdot g$ also continuous at $p$?
+Back: The limit of products is equal to the product of the limits.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753386691587-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f$ and $g$ are continuous at point $p$. *Why* is $f \div g$ also continuous at $p$?
+Back: N/A. This holds only if and only if $g(p) \neq 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753386691588-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f$ and $g$ are continuous at point $p$. Assuming $g(p) \neq 0$, *why* is $f \div g$ also continuous at $p$?
+Back: The limit of quotients is equal to the quotient of the limits.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753386691589-->
+END%%
+
+%%ANKI
+Basic
+How do we prove $f(x) = x^2$ is continuous everywhere?
+Back: Since $g(x) = x$ is continuous everywhere, the product $g \cdot g = f$ must be continuous everywhere.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753386691590-->
+END%%
+
+%%ANKI
+Basic
+How do we prove $f(x) = 1 / x$ is continuous everywhere except $x \neq 0$?
+Back: Since $g(x) = 1$ and $h(x) = x$ are continuous everywhere, their quotient $g / h = f$ must also be wherever $h(x) \neq 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753386691591-->
+END%%
+
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

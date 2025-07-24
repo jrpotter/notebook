@@ -551,6 +551,38 @@ Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1750269797672-->
 END%%
 
+%%ANKI
+Basic
+Which arithmetic operation converts multiplication problems into addition problems?
+Back: Logarithms.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1753386691592-->
+END%%
+
+%%ANKI
+Basic
+Which arithmetic operation converts addition problems into multiplication problems?
+Back: Exponentials.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1753386691593-->
+END%%
+
+%%ANKI
+Basic
+Which arithmetic operation converts subtraction problems into division problems?
+Back: Exponentials.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1753386691594-->
+END%%
+
+%%ANKI
+Basic
+Which arithmetic operation converts division problems into subtraction problems?
+Back: Logarithms.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1753386691595-->
+END%%
+
 ## Inverses
 
 Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\begin{align*} \log_b{b^x} & = x \\ b^{\log_b{x}} & = x \end{align*}$$
