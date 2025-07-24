@@ -11,40 +11,7 @@ tags:
 
 TCP/IP forms the basis of the **Internet**, a wide area network (WAN) spanning the globe. The Internet refers to the ability to provide basic communication of messages between computers. The **World Wide Web** (WWW) is an application that uses the Internet for communication.
 
-When devices are attached to a network based on the IP protocol, they are assigned addresses that must be coordinated so as to not duplicate other addresses in use on the network. Groups of IP addresses are **allocated** to users and organizations who then **assign** these addresses to devices.
-
 IP addresses are typically expressed in one of two formats: IPv4 and IPv6.
-
-%%ANKI
-Cloze
-{1:Allocation} is to {2:users/organizations} whereas {2:assignment} is to {1:devices}.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1750512996061-->
-END%%
-
-%%ANKI
-Basic
-In a typical home network, IP addresses are *allocated* to whom?
-Back: The ISP.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1750512996065-->
-END%%
-
-%%ANKI
-Basic
-In a typical home network, IP addresses are *assigned* to whom?
-Back: The ISP's customers.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1750512996068-->
-END%%
-
-%%ANKI
-Basic
-*Why* must IP addresses be allocated at all?
-Back: To ensure all devices on the network have a unique address.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1750512996071-->
-END%%
 
 %%ANKI
 Basic
@@ -952,6 +919,219 @@ Basic
 Back: By advertising the same unicast routes from multiple locations in the Internet.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752949990718-->
+END%%
+
+## Allocation
+
+IP address space is **allocated**, usually in large chunks, by a collection of hierarchically organized **authorities**.
+
+At the top of this hierarchy is the Internet Assigned Numbers Authority (IANA). For unicast IPv4 and IPv6 address space, the IANA delegates much of its allocation authority to a few **regional Internet registries** (RIRs). The authorities then allocate address space to various owners - ISPs, smaller authorities, etc.
+
+Address ranges owned and managed by ISPs are called **provider-aggregatable** (PA) since they consist of one or more prefixes that can be aggregated with other prefixes the ISP owns. This is in contrast to **provider-independent** (PI) address space consisting of addresses allocated to a user directly and that can be used with any ISP.
+
+%%ANKI
+Cloze
+{1:Allocation} is to {2:users/organizations} whereas {2:assignment} is to {1:devices}.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1750512996061-->
+END%%
+
+%%ANKI
+Basic
+In a typical home network, IP addresses are *allocated* to whom?
+Back: The ISP.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1750512996065-->
+END%%
+
+%%ANKI
+Basic
+In a typical home network, IP addresses are *assigned* to whom?
+Back: The ISP's customers.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1750512996068-->
+END%%
+
+%%ANKI
+Basic
+*Why* must IP addresses be allocated at all?
+Back: To ensure all devices on the network have a unique address.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1750512996071-->
+END%%
+
+%%ANKI
+Cloze
+IP address space is {allocated}, usually in large chunks, by a collection of {hierarchically} organized {authorities}.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239492-->
+END%%
+
+%%ANKI
+Basic
+How are authorities organized?
+Back: In a hierarchy.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239503-->
+END%%
+
+%%ANKI
+Basic
+In the collection of hierarchically organized authorites, who sits at the top?
+Back: The IANA.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239505-->
+END%%
+
+%%ANKI
+Basic
+What is IANA an acronym for?
+Back: **I**nternet **A**ssigned **N**umbers **A**uthority.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239507-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the IANA?
+Back: To coordinate the Internet's globally unique identifiers.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239510-->
+END%%
+
+%%ANKI
+Basic
+To whom does the IANA delegate allocation to?
+Back: RIRs.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239512-->
+END%%
+
+%%ANKI
+Basic
+*What* does the IANA delegate to RIRs?
+Back: Allocation of IP addresses.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239515-->
+END%%
+
+%%ANKI
+Basic
+IP addresses corresponding to which addressing methods is allocated in advance?
+Back: Unicast and multicast addresses.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239517-->
+END%%
+
+%%ANKI
+Basic
+What is RIR an acronym for?
+Back: **R**egional **I**nternet **R**egistry.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239520-->
+END%%
+
+%%ANKI
+Basic
+RIRs have been delegated allocation from whom?
+Back: The IANA.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239522-->
+END%%
+
+%%ANKI
+Basic
+To whom do RIRs delegate allocation to?
+Back: ISPs or smaller authorities.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239525-->
+END%%
+
+%%ANKI
+Basic
+The IANA and RIRs are both referred to as what?
+Back: Authorities.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239528-->
+END%%
+
+%%ANKI
+Basic
+What is ISP an acronym for?
+Back: **I**nternet **S**ervice **P**rovider.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239530-->
+END%%
+
+%%ANKI
+Cloze
+ISPs have {PA} and {PI} address ranges.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239533-->
+END%%
+
+%%ANKI
+Basic
+With respect to ISPs, what is PA an acronym for?
+Back: **P**rovider-**A**ggregatable.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239536-->
+END%%
+
+%%ANKI
+Basic
+What is a PA address range?
+Back: Address ranges owned and managed by ISPs.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239539-->
+END%%
+
+%%ANKI
+Basic
+Why are provider-aggregatable address ranges named the way they are?
+Back: Since they are owned by ISPs, they consist of one or more prefixes that can be aggregated with other prefixes the ISP owns.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239541-->
+END%%
+
+%%ANKI
+Basic
+With respect to ISPs, what is PI an acronym for?
+Back: **P**rovider-**I**ndependent.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239544-->
+END%%
+
+%%ANKI
+Basic
+What is a PI address range?
+Back: An address range consisting of addresses allocated directly to a user and that can be used with any ISP.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239548-->
+END%%
+
+%%ANKI
+Basic
+Why are provider-independent address ranges named the way they are?
+Back: They contain addresses that can be used with an ISP.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239551-->
+END%%
+
+%%ANKI
+Basic
+Which of PI or PA address ranges are typically cheaper?
+Back: PA address ranges.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239555-->
+END%%
+
+%%ANKI
+Basic
+*Why* are PI address ranges more expensive than PA address ranges?
+Back: PI address ranges have to be configured specially by the ISP.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1753369239559-->
 END%%
 
 ## Bibliography

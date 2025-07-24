@@ -506,30 +506,14 @@ END%%
 
 %%ANKI
 Cloze
-A {1:PDU} from layer {2:$N$} is {2:encapsulated} as opaque data by layer {1:$N - 1$}.
+A {1:PDU} from layer $N$ is {2:encapsulated} as opaque data by layer $N - 1$.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749871716556-->
 END%%
 
 %%ANKI
 Basic
-The PDU encapsulated in layer $N$ is provided from where?
-Back: Layer $N + 1$.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1749871716560-->
-END%%
-
-%%ANKI
-Basic
-Which layer is responsible for encapsulating the PDU from layer $N$?
-Back: $N - 1$.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1749871716564-->
-END%%
-
-%%ANKI
-Basic
-What term refers to the object encapsulated by a below layer?
+What term refers to the object encapsulated by a different layer?
 Back: A PDU.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749871716568-->
@@ -537,7 +521,7 @@ END%%
 
 %%ANKI
 Basic
-What is a layer 4 PDU?
+What is a "layer 4 PDU"?
 Back: A PDU produced by layer 4 (the transport layer).
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749871716572-->
@@ -546,7 +530,7 @@ END%%
 %%ANKI
 Basic
 According to Fall et al., what is the essence of encapsulation?
-Back: Treating data from the layer above as opaque, uninterpretable information.
+Back: Treating data from a previous layer as opaque, uninterpretable information.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1749871716576-->
 END%%

@@ -34,11 +34,10 @@ Reference: Graham Priest, Koji Tanaka, and Zach Weber, “Paraconsistent Logic,�
 END%%
 
 %%ANKI
-Basic
-What principle is excluded in paraconsistent logics?
-Back: The principle of explosion.
+Cloze
+The principle of {explosion} is excluded in paraconsistent logics.
 Reference: Graham Priest, Koji Tanaka, and Zach Weber, “Paraconsistent Logic,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/](https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/).
-<!--ID: 1721380604997-->
+<!--ID: 1753361473356-->
 END%%
 
 %%ANKI

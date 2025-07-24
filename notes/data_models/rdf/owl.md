@@ -997,7 +997,7 @@ How is the following class interpreted in plain English?
   owl:cardinality 9
 ] ;
 ```
-Back: As the class of things with exactly `9` players.
+Back: As the class of things with exactly `9` distinct players.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1753020469077-->
 END%%
@@ -1011,7 +1011,7 @@ How is the following class interpreted in plain English?
   owl:minCardinality 10
 ] ;
 ```
-Back: As the class of things with at least `10` players.
+Back: As the class of things with at least `10` distinct players.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1753020469080-->
 END%%
@@ -1025,7 +1025,7 @@ How is the following class interpreted in plain English?
   owl:maxCardinality 2
 ] ;
 ```
-Back: As the class of things with at most `2` players.
+Back: As the class of things with at most `2` distinct players.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1753020469086-->
 END%%
@@ -1108,7 +1108,7 @@ How is the following class interpreted in plain English?
   owl:qualifiedCardinality 9
 ] ;
 ```
-Back: As the class of all baseball teams with exactly `9` players.
+Back: As the class of all baseball teams with exactly `9` distinct players.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1753020917830-->
 END%%

@@ -92,6 +92,22 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1724609565721-->
 END%%
 
+%%ANKI
+Basic
+Is the absolute value operation multiplicative?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753369239564-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for the absolute value operation to be multiplicative?
+Back: For any $x, y \in \mathbb{R}$, $\lvert x \rvert \lvert y \rvert = \lvert x y \rvert$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753369239568-->
+END%%
+
 ## Triangle Inequality
 
 Let $x, y \in \mathbb{R}$. Then the **triangle inequality** of $\mathbb{R}$ states $$\lvert x + y \rvert \leq \lvert x \rvert + \lvert y \rvert.$$
@@ -233,6 +249,22 @@ Cloze
 The length of any side of a triangle is {greater than} or equal to the {difference} of the other two side lengths.
 Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
 <!--ID: 1753095321572-->
+END%%
+
+%%ANKI
+Basic
+Let $x, y \in \mathbb{R}$. How do we show $\lvert x \rvert - \lvert y \rvert \leq \lvert x - y \rvert$?
+Back: By applying the triangle inequality to $\lvert (x - y) + y \rvert$.
+Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+<!--ID: 1753364926458-->
+END%%
+
+%%ANKI
+Basic
+Let $x, y \in \mathbb{R}$. How do we show $\lvert x \rvert - \lvert y \rvert \geq -\lvert x - y \rvert$?
+Back: By applying the triangle inequality to $\lvert (y - x) + x \rvert$.
+Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+<!--ID: 1753364926466-->
 END%%
 
 ## Bibliography
