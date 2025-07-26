@@ -59,7 +59,7 @@ END%%
 
 ### Static
 
-An object whose identifier is declared without storage-class specifier `_Thread_local`, and either with external or internal [[linkage]] or with the storage-class specifier `static`, has static storage duration.
+An object whose identifier is declared without storage-class specifier `_Thread_local`, and either with external or internal [[c17/index#Linkage|linkage]] or with the storage-class specifier `static`, has static storage duration.
 
 Its lifetime is the entire execution of the program and its stored value is initialized only once, prior to program startup. Initialization *always* happens.
 
@@ -986,9 +986,9 @@ Storage-class specifiers are used to control an object's storage duration and an
 * `typedef`
 	* Is called a "storage-class specifier" for syntactic convenience only.
 * `extern`
-	* Discussed in [[linkage]] and [[#Static]].
+	* Discussed in [[c17/index#Linkage|Linkage]] and [[#Static]].
 * `static`
-	* Discussed in [[linkage]] and [[#Static]].
+	* Discussed in [[c17/index#Linkage|Linkage]] and [[#Static]].
 * `_Thread_local`
 	* Discussed in [[#Thread Local]].
 * `auto`

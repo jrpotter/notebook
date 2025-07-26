@@ -779,5 +779,5 @@ END%%
 
 ## Bibliography
 
-*  Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+* Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 * _Wikipedia_. “Euclidean vector.” May 7, 2025. [https://en.wikipedia.org/w/index.php?title=Euclidean_vector](https://en.wikipedia.org/w/index.php?title=Euclidean_vector&oldid=1289250160).

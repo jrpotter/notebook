@@ -1009,6 +1009,4 @@ END%%
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-* Cooper, Mendel. “Advanced Bash-Scripting Guide,” n.d., 916.
-* Dowling, “A List of Signals and What They Mean.”
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).

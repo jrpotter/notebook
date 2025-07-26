@@ -16,6 +16,8 @@ The Web Ontology Language, OWL, is an extension to [[rdfs|RDFS]] that introduces
 	* This is a `rdfs:subClassOf rdfs:Class` used in most OWL models.
 * `owl:DatatypeProperty`
 	* Indicates the value of the property should be an item of some XML data type.
+* `owl:Nothing`
+	* Is the class corresponding to the empty set. An empty class is said to be **unsatisfiable**.
 * `owl:ObjectProperty`
 	* Indicates the value of the property should be an RDF resource.
 
@@ -71,6 +73,60 @@ What is an `owl:ObjectProperty`?
 Back: A property whose value is an RDF resource.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1751735628470-->
+END%%
+
+%%ANKI
+Basic
+What OWL construct corresponds to the empty set?
+Back: `owl:Nothing`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753536440906-->
+END%%
+
+%%ANKI
+Basic
+What is an unsatisfiable class?
+Back: A class whose class extension is empty.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753536440914-->
+END%%
+
+%%ANKI
+Basic
+*Why* is an unsatisfiable class named the way it is?
+Back: It is empty, i.e. no member satisfies the entrance requirements of the class extension.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753536440917-->
+END%%
+
+%%ANKI
+Basic
+Which unsatisfiable class does OWL include by default?
+Back: `owl:Nothing`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753536440919-->
+END%%
+
+%%ANKI
+Basic
+Suppose `A` is satisfiable and `B` is unsatisfiable. Is `C` satisfiable?
+```turtle
+C owl:unionOf ( A, B ) .
+```
+Back: Yes.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753536440922-->
+END%%
+
+%%ANKI
+Basic
+Suppose `A` is satisfiable and `B` is unsatisfiable. Is `C` satisfiable?
+```turtle
+C owl:intersectionOf ( A, B ) .
+```
+Back: No.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753536440924-->
 END%%
 
 ## Inverse
@@ -319,7 +375,9 @@ CONSTRUCT { ?s ?p ?x. }
 WHERE { ?s ?p ?y. ?x owl:sameAs ?y. }
 ```
 
-with the reverse direction handled by noting `owl:sameAs` is a `owl:SymmetricProperty`. Likewise, `owl:differentFrom` states to individuals are semantically distinct.
+with the reverse direction handled by noting `owl:sameAs` is a `owl:SymmetricProperty`. 
+
+Likewise, `owl:differentFrom` states two individuals are semantically distinct. The `owl:disjointWith` property states members of the two specified classes must be `owl:differentFrom` one another. Multiple classes can be labeled distinct using the `owl:AllDisjointClasses` property.
 
 %%ANKI
 Basic
@@ -391,6 +449,51 @@ Which OWL construct allows stating two individuals are semantically distinct?
 Back: `owl:differentFrom`
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1752244430350-->
+END%%
+
+%%ANKI
+Cloze
+{1:`owl:disjointWith`} is to {2:classes} whereas {2:`owl:differentFrom`} is to {1:individuals}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753535106773-->
+END%%
+
+%%ANKI
+Basic
+Which OWL *property* corresponds to disjointedness?
+Back: `owl:disjointWith`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753535106778-->
+END%%
+
+%%ANKI
+Basic
+Which OWL *class* corresponds to disjointedness?
+Back: `owl:AllDisjointClasses`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753535106781-->
+END%%
+
+%%ANKI
+Cloze
+{1:`owl:AllDisjointClasses`} is a {2:class} whereas {2:`owl:disjointWith`} is a {1:property}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753535106784-->
+END%%
+
+%%ANKI
+Basic
+What other OWL construct *must* be used alongside `owl:AllDisjointClasses`?
+Back: `owl:members`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753535106787-->
+END%%
+
+%%ANKI
+Cloze
+{1:`owl:AllDisjointClasses`} is to {2:`owl:members`} whereas {2:`owl:Restriction`} is to {`owl:onProperty`}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753535106790-->
 END%%
 
 ## Functional Properties
@@ -921,6 +1024,20 @@ Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web
 <!--ID: 1752789057032-->
 END%%
 
+%%ANKI
+Cloze
+{1:`owl:AllDifferent`} is to {2:individuals} whereas {2:`owl:AllDisjointClasses`} is to {1:classes}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753535106793-->
+END%%
+
+%%ANKI
+Cloze
+{1:`owl:AllDifferent`} is to {2:`owl:distinctMembers`} whereas {2:`owl:AllDisjointClasses`} is to {1:`owl:members`}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753535106797-->
+END%%
+
 ### Cardinality
 
 The `owl:cardinality` construct is used to specify the number of distinct values a property can have for any subject. `owl:minCardinality` and `owl:maxCardinality` define lower and upper bounds respectively. For example:
@@ -1115,13 +1232,13 @@ END%%
 
 ## Set Operations
 
-The `owl:unionOf` and `owl:intersectionOf` properties take a list of classes as a value. The union of two or more classes includes the members of all those classes combined. The intersection of two or more classes includes the members that belong to every one of the classes.
+### Union
+
+The `owl:unionOf` property take a list of classes as a value. The union of two or more classes includes the members of all those classes combined.
 
 ```turtle
 U1 a owl:Class ;
    owl:unionOf (ns:A ns:B ...) .
-I1 a owl:Class ;
-   owl:intersectionOf (ns:A ns:B ...) .
 ```
 
 %%ANKI
@@ -1134,10 +1251,59 @@ END%%
 
 %%ANKI
 Basic
+The `owl:unionOf` property takes what as a value?
+Back: A list of classes.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753535106800-->
+END%%
+
+### Intersection
+
+The `owl:intersectionOf` property take a list of classes as a value. The intersection of two or more classes includes the members that belong to every one of the classes.
+
+```turtle
+I1 a owl:Class ;
+   owl:intersectionOf (ns:A ns:B ...) .
+```
+
+%%ANKI
+Basic
 Which OWL construct corresponds to set intersections?
 Back: `owl:intersectionOf`
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1752244430385-->
+END%%
+
+%%ANKI
+Basic
+The `owl:intersectionOf` property takes what as a value?
+Back: A list of classes.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753535106802-->
+END%%
+
+### Complement
+
+The `owl:complementOf` property takes another class as a value. The complement of a class includes every resource that does not belong to the value class.
+
+```turtle
+C1 owl:complementOf C2 .
+```
+
+%%ANKI
+Basic
+Which OWL construct corresponds to set complements?
+Back: `owl:complementOf`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753535106805-->
+END%%
+
+%%ANKI
+Basic
+The `owl:complementOf` property takes what as a value?
+Back: A class.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753535106808-->
 END%%
 
 ## Bibliography

@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-A **declaration** specifies the interpretation and attributes of a set of identifiers. It indicates [[linkage]], [[storage|storage duration]], and part of the type of the entities that the **declarators** denote. For example, the following declaration has two declarators `x` and `y`, both of type `const int`, declared in file scope with static storage duration.
+A **declaration** specifies the interpretation and attributes of a set of identifiers. It indicates [[c17/index#Linkage|linkage]], [[storage|storage duration]], and part of the type of the entities that the **declarators** denote. For example, the following declaration has two declarators `x` and `y`, both of type `const int`, declared in file scope with static storage duration.
 
 ```c
 extern const int x, y;

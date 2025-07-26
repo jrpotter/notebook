@@ -42,6 +42,14 @@ Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Pres
 <!--ID: 1721137271080-->
 END%%
 
+%%ANKI
+Basic
+Why is nominalism called what is is?
+Back: It states that abstract do not exist *other than* as being names or labels.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1753473783764-->
+END%%
+
 ## Bibliography
 
 * Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).

@@ -117,6 +117,47 @@ Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Pres
 <!--ID: 1720894782989-->
 END%%
 
+## Commitments
+
+An **ontological commitment** of a language is one or more objects postulated to exist by that language.
+
+A statement does not necessarily indicate any ontological commitment to an object. Oftentimes it is understood that the statement is meant to be **paraphrased** in a manner consistent with the speaker's philosophy.
+
+%%ANKI
+Basic
+What is an ontological commitment?
+Back: An assertion that something exists, i.e. is real.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1753473783767-->
+END%%
+
+%%ANKI
+Basic
+What does it mean to paraphrase?
+Back: To render a text using different words without losing any of the original meaning.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1753473783771-->
+END%%
+
+%%ANKI
+Basic
+Does the following statement ontologically commit to the existence of "holes"?
+
+> There are holes in the bucket.
+
+Back: Not necessarily.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1753473783775-->
+END%%
+
+%%ANKI
+Basic
+With respect to ontological commitments, what is the purpose of paraphrasing?
+Back: It states that a surface level view of a statement is not necessarily asserting the existence of something.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1753473783780-->
+END%%
+
 ## Bibliography
 
 * Francesco Orilia and Michele Paolini Paoletti, “Properties,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/properties/](https://plato.stanford.edu/archives/spr2022/entries/properties/).

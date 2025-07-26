@@ -181,100 +181,18 @@ Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.or
 <!--ID: 1743890674385-->
 END%%
 
-## UTF-32
-
-UTF-32 is a fixed-width encoding that stores each code unit in 4 bytes (32 bits). UTF-32 is effectively synonymous with UCS-32.
-
-%%ANKI
-Cloze
-{UTF-32} is synonymous with {UCS-4}.
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
-<!--ID: 1744333817131-->
-END%%
-
-%%ANKI
-Basic
-What is UTF-32 an acronym for?
-Back: **U**niform **T**ransformation **F**ormat (**32**-bit).
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
-<!--ID: 1744333817141-->
-END%%
-
-%%ANKI
-Basic
-How many UTF-32 code units does it take to encode a code point?
-Back: One.
-Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
-<!--ID: 1744340330844-->
-END%%
-
-%%ANKI
-Basic
-What is UCS-4 an acronym for?
-Back: **U**niversal **C**haracter **S**et (**4**-byte).
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
-<!--ID: 1744333817144-->
-END%%
-
-%%ANKI
-Cloze
-UCS-4 is {fixed}-width whereas UTF-32 is {fixed}-width.
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
-<!--ID: 1744333817148-->
-END%%
-
-%%ANKI
-Basic
-Which Unicode transformation formats are fixed-length encodings?
-Back: Just UTF-32.
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
-<!--ID: 1744333817151-->
-END%%
-
-%%ANKI
-Basic
-Which Unicode transformation formats are variable-length encodings?
-Back: UTF-8 and UTF-16.
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
-<!--ID: 1744333817155-->
-END%%
-
-%%ANKI
-Basic
-Generally speaking, what is the main advantage of UTF-32?
-Back: Every code point can be directly indexed.
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
-<!--ID: 1744333817159-->
-END%%
-
-%%ANKI
-Basic
-Generally speaking, what is the main disadvantage of UTF-32?
-Back: It is space inefficient.
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
-<!--ID: 1744333817163-->
-END%%
-
-%%ANKI
-Basic
-In what way might someone argue UTF-32 is still variable-width?
-Back: Code points still can't be processed in isolation (e.g. combining characters sequences or emojis).
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
-<!--ID: 1744333817167-->
-END%%
-
 ## UTF-16
 
 UTF-16 is a variable-width encoding that superseded UCS-2.
 
-Codes points "in the BMP" (i.e. less than $2^{16}$) are encoded using a single 16-bit code unit.
-
-Code points "above the BMP" (i.e. greater than or equal to $2^{16}$) are encoded using two 16-bit code units. These two code units are chosen from the **surrogate range** `0xD800-0xDFFF`. Values in this range are not used as characters, and UTF-16 provides no legal way to code them as individual code points.
+Codes points "in the BMP" (i.e. less than $2^{16}$) are encoded using a single 16-bit code unit. Code points "above the BMP" (i.e. greater than or equal to $2^{16}$) are encoded using two 16-bit code units. These two code units are chosen from the **surrogate range** `0xD800-0xDFFF`. Values in this range are not used as characters, and UTF-16 provides no legal way to code them as individual code points.
 
 | Binary                                   | Code Point                           | Range              |
 | ---------------------------------------- | ------------------------------------ | ------------------ |
 | `xxxxxxxxxxxxxxxx`                       | `xxxxxxxxxxxxxxxx`                   | `0x0000-0xFFFF`    |
 | `110110xxxxxxxxxx`<br>`110111yyyyyyyyyy` | `xxxxxxxxxxyyyyyyyyyy +`<br>`0x1000` | `0x10000-0x10FFFF` |
+
+If the encoding type is UTF-16BE, we assume a big-endian order. If UTF-16LE, we assume a little-endian order. If UTF-16, we rely on the **byte order mark** (BOM). This is a 16-bit code unit with value `U+FEFF` that precedes the first actual coded value. If an opposite-endian decoder reads value `U+FFFE`, it knows the endianness must be opposite.
 
 %%ANKI
 Cloze
@@ -485,9 +403,21 @@ Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.or
 <!--ID: 1743899036734-->
 END%%
 
-### Endianness
+%%ANKI
+Basic
+Suppose a nonempty document is ASCII encoded. Is it UTF-16 encoded?
+Back: No.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753399800320-->
+END%%
 
-If the encoding type is UTF-16BE, we assume a big-endian order. If UTF-16LE, we assume a little-endian order. If UTF-16, we rely on the **byte order mark** (BOM). This is a 16-bit code unit with value `U+FEFF` that precedes the first actual coded value. If an opposite-endian decoder reads value `U+FFFE`, it knows the endianness must be opposite.
+%%ANKI
+Basic
+What two variants of UTF-16 exist?
+Back: UTF-16LE and UTF-16BE.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753399800329-->
+END%%
 
 %%ANKI
 Basic
@@ -559,6 +489,106 @@ With respect to UTF-16, when is a BOM strictly unnecessary?
 Back: When decoding explicitly UTF-16BE or UTF-16LE.
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743944550754-->
+END%%
+
+## UTF-32
+
+UTF-32 is a fixed-width encoding that stores each code unit in 4 bytes (32 bits). UTF-32 is effectively synonymous with UCS-32.
+
+Like UTF-16, UTF-32 also has big- and little-endian variants.
+
+%%ANKI
+Cloze
+{UTF-32} is synonymous with {UCS-4}.
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817131-->
+END%%
+
+%%ANKI
+Basic
+What is UTF-32 an acronym for?
+Back: **U**niform **T**ransformation **F**ormat (**32**-bit).
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817141-->
+END%%
+
+%%ANKI
+Basic
+How many UTF-32 code units does it take to encode a code point?
+Back: One.
+Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+<!--ID: 1744340330844-->
+END%%
+
+%%ANKI
+Basic
+What is UCS-4 an acronym for?
+Back: **U**niversal **C**haracter **S**et (**4**-byte).
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817144-->
+END%%
+
+%%ANKI
+Cloze
+UCS-4 is {fixed}-width whereas UTF-32 is {fixed}-width.
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817148-->
+END%%
+
+%%ANKI
+Basic
+Which Unicode transformation formats are fixed-length encodings?
+Back: Just UTF-32.
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817151-->
+END%%
+
+%%ANKI
+Basic
+Which Unicode transformation formats are variable-length encodings?
+Back: UTF-8 and UTF-16.
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817155-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, what is the main advantage of UTF-32?
+Back: Every code point can be directly indexed.
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817159-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, what is the main disadvantage of UTF-32?
+Back: It is space inefficient.
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817163-->
+END%%
+
+%%ANKI
+Basic
+In what way might someone argue UTF-32 is still variable-width?
+Back: Code points still can't be processed in isolation (e.g. combining characters sequences or emojis).
+Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+<!--ID: 1744333817167-->
+END%%
+
+%%ANKI
+Basic
+Suppose a nonempty document is ASCII encoded. Is it UTF-32 encoded?
+Back: No.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753399800331-->
+END%%
+
+%%ANKI
+Basic
+What two variants of UTF-32 exist?
+Back: UTF-32LE and UTF-32BE.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753399800334-->
 END%%
 
 ## UTF-8
@@ -682,6 +712,38 @@ How does UTF-8 encode non-ASCII code points in a backwards-compatible way?
 Back: All non-ASCII code points are encoded using sequences of bytes outside the ASCII code space.
 Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
 <!--ID: 1744340330896-->
+END%%
+
+%%ANKI
+Basic
+Suppose a nonempty document is ASCII encoded. Is it UTF-8 encoded?
+Back: Yes.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753399800337-->
+END%%
+
+%%ANKI
+Basic
+Suppose a nonempty document is UTF-8 encoded. Is it ASCII encoded?
+Back: Not necessarily.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753399800339-->
+END%%
+
+%%ANKI
+Basic
+What two variants of UTF-8 exist?
+Back: N/A.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753399800342-->
+END%%
+
+%%ANKI
+Basic
+Why does Beej believe UTF-8 has become the dominant multibyte encoding?
+Back: Because it is backwards compatible with ASCII.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753399800348-->
 END%%
 
 ## Normalization
@@ -924,6 +986,7 @@ END%%
 
 ## Bibliography
 
+* Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 * “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
 * Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
 * “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).

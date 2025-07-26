@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-A contiguous sequence of characters terminated by the `NUL` character (refer to [[ascii|ASCII]]). Text data is said to be more platform-independent than [[endianness|binary]] data since it is unaffected by word size or byte ordering.
+A contiguous sequence of characters terminated by the `NUL` character (refer to [[ascii|ASCII]]). Text data is said to be more platform-independent than [[binary/index#Endianness|binary]] data since it is unaffected by word size or byte ordering.
 
 %%ANKI
 Basic
@@ -76,7 +76,6 @@ END%%
 C has a standard for processing different escape sequences. Many languages built with C in mind parse these escape sequences in a similar way.
 
 * `\ooo`: Consists of one to three octal digits.
-	* [[bash/index|Bash]] supports this sequence as `$'\ooo'`.
 
 %%ANKI
 Basic
@@ -94,17 +93,7 @@ Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language
 <!--ID: 1706975891810-->
 END%%
 
-%%ANKI
-Basic
-How are C escape sequences exposed in bash?
-Back: Using ANSI-C quoting, i.e. `$$'string'`.
-Reference: Mendel Cooper, “Advanced Bash-Scripting Guide,” n.d., 916.
-Tags: bash
-<!--ID: 1721387296231-->
-END%%
-
 * `\xhh`: Consists of one or more [[radices#Hexadecimal|hexadecimal]] digits. The `x` prefix is required to distinguish from octal escape sequences.
-	* [[bash/index|Bash]] supports this sequence as `$'\xhh'`. One or two digits is supported.
 
 %%ANKI
 Basic
@@ -131,7 +120,6 @@ Reference: Arnold D. Robbins, “GAWK: Effective AWK Programming,” October 202
 END%%
 
 * `\uhhhh`: Introduced in C11 to represent Unicode code points. *Must* have exactly four hexadecimal characters specified with `0` leading padding if necessary.
-	* [[bash/index|Bash]] supports this sequence as `$'uhhhh'`. One to four hex digits is supported.
 
 %%ANKI
 Basic
@@ -180,7 +168,209 @@ Tags: encoding::unicode
 <!--ID: 1706976705750-->
 END%%
 
-## Copying Functions
+%%ANKI
+Basic
+Which escape sequences are used for Unicode code points?
+Back: `\u` and `\U`.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753474351765-->
+END%%
+
+%%ANKI
+Cloze
+{1:`\u`} is to {2:$16$} bits whereas {2:`\U`} is to {1:$32$} bits.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753474351775-->
+END%%
+
+%%ANKI
+Basic
+How is `\U000003C0` expressed using `\u`?
+Back: As `\u03C0`.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753474351779-->
+END%%
+
+%%ANKI
+Basic
+How is `\u03C0` expressed using `\U`?
+Back: As `\U000003C0`.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753474351782-->
+END%%
+
+## Multibyte Characters
+
+A **multibyte string** is a C string composed of **multibyte characters**. A multibyte character is a character that may require more than one byte to represent.
+
+%%ANKI
+Basic
+In C, what is `mb` typically an acronym for?
+Back: **M**ulti**b**yte.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843881-->
+END%%
+
+%%ANKI
+Basic
+In C, what is `mbs` typically an acronym for?
+Back: **M**ulti**b**yte **s**tring.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843884-->
+END%%
+
+%%ANKI
+Basic
+In C, what is `mbc` typically an acronym for?
+Back: **M**ulti**b**yte **c**haracter.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843888-->
+END%%
+
+%%ANKI
+Basic
+What is a multibyte string?
+Back: A string consisting of multibyte characters.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843892-->
+END%%
+
+%%ANKI
+Basic
+What is a multibyte character?
+Back: A character that is represented in one or more bytes.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843895-->
+END%%
+
+%%ANKI
+Basic
+Is the following considered a multibyte string?
+```c
+char *s = "\u20AC1.23";
+```
+Back: Yes.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843900-->
+END%%
+
+%%ANKI
+Basic
+Is the following considered a multibyte string?
+```c
+char *s = "Hello, world!";
+```
+Back: Yes.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843905-->
+END%%
+
+%%ANKI
+Cloze
+The {`MB_MAX_LENGTH`} macro corresponds to the {maximum number of bytes a character can be encoded in}.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843909-->
+END%%
+
+%%ANKI
+Basic
+In what header is `MB_MAX_LENGTH` defined?
+Back: `<limits.h>`
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843913-->
+END%%
+
+## Wide Characters
+
+A **wide character** is a single value that can uniquely represent any character in the current [[i18n/index#Locales|locale]]. The primary type used is `wchar_t` included from `<wchar.h>`.
+
+%%ANKI
+Basic
+What is a wide character?
+Back: A single value that can uniquely represent any character in the current locale.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843917-->
+END%%
+
+%%ANKI
+Basic
+How large is a wide character?
+Back: N/A. This is implementation specific.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843921-->
+END%%
+
+%%ANKI
+Basic
+How is the size of a `wchar_t` determined?
+Back: It must be able to represent all code points of the largest extended character set specified among the supported locales.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843925-->
+END%%
+
+%%ANKI
+Cloze
+{1:Multibyte} character strings are arrays of {2:bytes} whereas {2:wide} character strings are arrays of {1:characters}.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843929-->
+END%%
+
+%%ANKI
+Basic
+What type is primarily used with respect to wide characters?
+Back: `wchar_t`
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843932-->
+END%%
+
+%%ANKI
+Basic
+Which library includes wide character support?
+Back: `<wchar.h>`
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843936-->
+END%%
+
+%%ANKI
+Basic
+In C, what is `wc` typically an acronym for?
+Back: **W**ide **c**haracter.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843939-->
+END%%
+
+%%ANKI
+Basic
+In C, what is `wcs` typically an acronym for?
+Back: **W**ide **c**haracter **s**tring.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843943-->
+END%%
+
+%%ANKI
+Cloze
+In C, if you're not a {multibyte} character, then you're a {wide} character.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843946-->
+END%%
+
+%%ANKI
+Basic
+How is a wide character string literal denoted?
+Back: As `L"..."`.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843950-->
+END%%
+
+%%ANKI
+Basic
+How is a wide character literal denoted?
+Back: As `L'...'`.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843953-->
+END%%
+
+## Copying
 
 The two primary functions used for copying memory are `memcpy` and `memmove`:
 
@@ -327,9 +517,8 @@ END%%
 
 ## Bibliography
 
-* Arnold D. Robbins, “GAWK: Effective AWK Programming,” October 2023, [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf).
+* Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 * Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-* Mendel Cooper, “Advanced Bash-Scripting Guide,” n.d., 916.

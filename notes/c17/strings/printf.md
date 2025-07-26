@@ -349,18 +349,20 @@ END%%
 
 ## Specifiers
 
-Specifier | Description
---------- | -----------
-`d`, `i`  | a decimal `signed int`
-`u`       | a decimal `unsigned int`
-`x`, `X`  | a hexadecimal `unsigned int`
-`o`       | an octal `unsigned int`
-`f`, `F`  | a `double` in fixed-point notation
-`e`, `E`  | a `double` in standard notation
-`g`, `G`  | a `double` in normal or standard notation
-`s`       | a `NUL`-terminated string
-`c`       | a `char` character
-`p`       | `void*` address in an implementation-defined format
+| Specifier | Description                                         |
+| --------- | --------------------------------------------------- |
+| `d`, `i`  | a decimal `signed int`                              |
+| `u`       | a decimal `unsigned int`                            |
+| `x`, `X`  | a hexadecimal `unsigned int`                        |
+| `o`       | an octal `unsigned int`                             |
+| `f`, `F`  | a `double` in fixed-point notation                  |
+| `e`, `E`  | a `double` in standard notation                     |
+| `g`, `G`  | a `double` in normal or standard notation           |
+| `s`       | a `NUL`-terminated string                           |
+| `ls`      | a wide character string                             |
+| `c`       | a `char` character                                  |
+| `lc`      | a `wchar_t` wide character                          |
+| `p`       | `void*` address in an implementation-defined format |
 
 %%ANKI
 Basic
@@ -745,9 +747,16 @@ END%%
 
 %%ANKI
 Cloze
-The {`%s`} format specifiers outputs a {`NUL`-terminated string}.
+The {`%s`} format specifier outputs a {`NUL`-terminated string}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1707852083100-->
+END%%
+
+%%ANKI
+Cloze
+The {`%ls`} format specifier outputs a {wide character string}.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843865-->
 END%%
 
 %%ANKI
@@ -763,6 +772,13 @@ Cloze
 The {`%c`} format specifier outputs a {`char` character}.
 Reference: “Printf,” in *Wikipedia*, January 18, 2024, [https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962](https://en.wikipedia.org/w/index.php?title=Printf&oldid=1196716962).
 <!--ID: 1707852083109-->
+END%%
+
+%%ANKI
+Cloze
+The {`%lc`} format specifier outputs a {wide character}.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753479843876-->
 END%%
 
 %%ANKI
