@@ -64,18 +64,24 @@ Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web
 <!--ID: 1737167693510-->
 END%%
 
+%%ANKI
+Basic
+Which of RDF, RDFS, or OWL first introduces the notion of a resource?
+Back: RDF.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753568271138-->
+END%%
+
+%%ANKI
+Cloze
+{`rdfs`}`:`{`Resource`} is the class of everything.
+Reference: “RDF 1.2 Schema,” accessed January 11, 2025, [https://www.w3.org/TR/rdf12-schema/#ch_class](https://www.w3.org/TR/rdf12-schema/#ch_class).
+<!--ID: 1753568271141-->
+END%%
+
 ## Classes
 
-All things described by RDF are called **resources**. Resources may be divided into groups called **classes**. Classes are themselves resources. The `rdf:type` property may be used to state that a resource is an instance of a class. Associated with a class is a set, called the **class extension** of the class, which is the set of the instances of the class. A class may be a member of its own class extension.
-
-The group of resources that are RDFS classes is itself a class called `rdfs:Class`. The `rdfs:Resource` class is the class of everything.
-
-If a class `C` is a subclass of a class `C'`, then all instances of `C` will also be instances of `C'`. The `rdfs:subClassOf` property may be used to state that one class is a subclass of another.
-
-```sparql
-CONSTRUCT { ?x a ?B }
-WHERE { ?A rdf:subClassOf ?B. ?x a ?A }
-```
+All things described by RDF are called **resources**. In RDFS, resources may be divided into groups called **classes**. The `rdf:type` property states a resource is an instance of a class. Associated with a class is its **class extension**, i.e. the set containing all of the instances of the class. A class may be a member of its own class extension.
 
 %%ANKI
 Basic
@@ -116,29 +122,6 @@ Reference: “RDF 1.2 Schema,” accessed January 11, 2025, [https://www.w3.org/
 END%%
 
 %%ANKI
-Cloze
-The {`rdfs:subClassOf`} property states {a class is a subclass of another}.
-Reference: “RDF 1.2 Schema,” accessed January 11, 2025, [https://www.w3.org/TR/rdf12-schema/#ch_class](https://www.w3.org/TR/rdf12-schema/#ch_class).
-<!--ID: 1736629473670-->
-END%%
-
-%%ANKI
-Basic
-Which property describes "`?A` is an instance of `?B`"?
-Back: `rdf:type`
-Reference: “RDF 1.2 Schema,” accessed January 11, 2025, [https://www.w3.org/TR/rdf12-schema/#ch_class](https://www.w3.org/TR/rdf12-schema/#ch_class).
-<!--ID: 1736629473672-->
-END%%
-
-%%ANKI
-Basic
-Which property describes "`?A`'s class extension is a subset of `?B`'s"?
-Back: `rdfs:subClassOf`
-Reference: “RDF 1.2 Schema,” accessed January 11, 2025, [https://www.w3.org/TR/rdf12-schema/#ch_class](https://www.w3.org/TR/rdf12-schema/#ch_class).
-<!--ID: 1736629473675-->
-END%%
-
-%%ANKI
 Basic
 *What* is the class extension of a class?
 Back: The collection of instances of the class.
@@ -168,6 +151,53 @@ What is the class extension of `rdfs:Resource`?
 Back: Every resource.
 Reference: “RDF 1.2 Schema,” accessed January 11, 2025, [https://www.w3.org/TR/rdf12-schema/#ch_class](https://www.w3.org/TR/rdf12-schema/#ch_class).
 <!--ID: 1736629473688-->
+END%%
+
+%%ANKI
+Basic
+Which of RDF, RDFS, or OWL first introduces the notion of a class?
+Back: RDFS.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753568271143-->
+END%%
+
+%%ANKI
+Cloze
+{`rdfs`}`:`{`Class`} is the class of RDF classes.
+Reference: “RDF 1.2 Schema,” accessed January 11, 2025, [https://www.w3.org/TR/rdf12-schema/#ch_class](https://www.w3.org/TR/rdf12-schema/#ch_class).
+<!--ID: 1753568271145-->
+END%%
+
+### Subclasses
+
+If a class `C` is a subclass of a class `C'`, then all instances of `C` will also be instances of `C'`. The `rdfs:subClassOf` property may be used to state that one class is a subclass of another.
+
+```sparql
+CONSTRUCT { ?x a ?B }
+WHERE { ?A rdfs:subClassOf ?B. ?x a ?A }
+```
+
+%%ANKI
+Cloze
+The {`rdfs:subClassOf`} property states {a class is a subclass of another}.
+Reference: “RDF 1.2 Schema,” accessed January 11, 2025, [https://www.w3.org/TR/rdf12-schema/#ch_class](https://www.w3.org/TR/rdf12-schema/#ch_class).
+<!--ID: 1736629473670-->
+END%%
+
+%%ANKI
+Basic
+Which property describes "`?A` is an instance of `?B`"?
+Back: `rdf:type`
+Reference: “RDF 1.2 Schema,” accessed January 11, 2025, [https://www.w3.org/TR/rdf12-schema/#ch_class](https://www.w3.org/TR/rdf12-schema/#ch_class).
+<!--ID: 1736629473672-->
+END%%
+
+%%ANKI
+Basic
+Which property describes "`?A`'s class extension is a subset of `?B`'s"?
+Back: `rdfs:subClassOf`
+Reference: “RDF 1.2 Schema,” accessed January 11, 2025, [https://www.w3.org/TR/rdf12-schema/#ch_class](https://www.w3.org/TR/rdf12-schema/#ch_class).
+<!--ID: 1736629473675-->
 END%%
 
 %%ANKI
@@ -393,42 +423,16 @@ END%%
 
 ## Properties
 
-The `rdfs:subPropertyOf` property may be used to state that one property is a subproperty of another.
-
-```sparql
-CONSTRUCT { ?x ?r ?y }
-WHERE { ?x ?q ?y. ?q rdfs:subPropertyOf ?r }
-```
-
-A property `p` is often annotated with the `rdfs:domain` and `rdfs:range` properties. 
-For any triple involving `p`, these properties specify the classes the subject and object of the triple should be members of respectively.
+A property `P` is often annotated with the `rdfs:domain` and `rdfs:range` properties. 
+For any triple involving `P`, these properties specify the classes the subject and object of the triple should be members of respectively.
 
 ```sparql
 CONSTRUCT { ?x a ?D }
-WHERE { ?P rdf:domain ?D. ?x ?P ?y }
+WHERE { ?P rdfs:domain ?D. ?x ?P ?y }
 
 CONSTRUCT { ?y a ?R }
-WHERE { ?P rdf:range ?R. ?x ?P ?y }
+WHERE { ?P rdfs:range ?R. ?x ?P ?y }
 ```
-
-%%ANKI
-Cloze
-{1:`rdfs:subPropertyOf`} is to {2:properties} whereas {2:`rdfs:subClassOf`} is to {1:classes}.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1743453116898-->
-END%%
-
-%%ANKI
-Basic
-How is `rdfs:subPropertyOf` understood using SPARQL?
-Back:
-```sparql
-CONSTRUCT { ?x ?r ?y }
-WHERE { ?x ?q ?y. ?q rdfs:subPropertyOf ?r }
-```
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1743453116901-->
-END%%
 
 %%ANKI
 Basic
@@ -472,19 +476,11 @@ END%%
 
 %%ANKI
 Basic
-In what way is RDFS more tolerant than SHACL?
-Back: RDFS has no notion of an incorrect or inconsistent inference.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1743460538953-->
-END%%
-
-%%ANKI
-Basic
 What `CONSTRUCT` query demonstrates how `rdfs:domain` is inferred "up the inheritance tree"?
 Back:
 ```sparql
 CONSTRUCT { ?P rdfs:domain ?C. }
-WHERE { ?P rdfs:domain ?D. ?D rdf:subClassOf ?C. }
+WHERE { ?P rdfs:domain ?D. ?D rdfs:subClassOf ?C. }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1745503950988-->
@@ -496,10 +492,61 @@ What `CONSTRUCT` query demonstrates how `rdfs:range` is inferred "up the inherit
 Back:
 ```sparql
 CONSTRUCT { ?P rdfs:range ?C. }
-WHERE { ?P rdfs:range ?D. ?D rdf:subClassOf ?C. }
+WHERE { ?P rdfs:range ?D. ?D rdfs:subClassOf ?C. }
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1745503950992-->
+END%%
+
+%%ANKI
+Basic
+Which of RDF, RDFS, or OWL first introduces the notion of a property?
+Back: RDF.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753568271146-->
+END%%
+
+%%ANKI
+Cloze
+{`rdf`}`:`{`Property`} is the class of RDF properties.
+Reference: “RDF 1.2 Schema,” accessed January 11, 2025, [https://www.w3.org/TR/rdf12-schema/#ch_class](https://www.w3.org/TR/rdf12-schema/#ch_class).
+<!--ID: 1753568271148-->
+END%%
+
+### Subproperties
+
+The `rdfs:subPropertyOf` property may be used to state that one property is a subproperty of another.
+
+```sparql
+CONSTRUCT { ?x ?r ?y }
+WHERE { ?x ?q ?y. ?q rdfs:subPropertyOf ?r }
+```
+
+%%ANKI
+Cloze
+{1:`rdfs:subPropertyOf`} is to {2:properties} whereas {2:`rdfs:subClassOf`} is to {1:classes}.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1743453116898-->
+END%%
+
+%%ANKI
+Basic
+How is `rdfs:subPropertyOf` understood using SPARQL?
+Back:
+```sparql
+CONSTRUCT { ?x ?r ?y }
+WHERE { ?x ?q ?y. ?q rdfs:subPropertyOf ?r }
+```
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1743453116901-->
+END%%
+
+%%ANKI
+Basic
+In what way is RDFS more tolerant than SHACL?
+Back: RDFS has no notion of an incorrect or inconsistent inference.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1743460538953-->
 END%%
 
 ### Intersection

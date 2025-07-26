@@ -495,7 +495,7 @@
     "data_structures/arrays.md": "5c320855d1955e897820053a7c3c065b",
     "data_models/rdf/sparql.md": "273138a0be910f1aeb35036238edefbe",
     "data_models/rdf/shacl.md": "f71ed50c7a35c9bb446ab2c95fbead66",
-    "data_models/rdf/rdfs.md": "80962281c9221133db37849a5a8de9c6",
+    "data_models/rdf/rdfs.md": "9d7e686e6a2e9bbc6246ad3332e3611e",
     "data_models/rdf/index.md": "050bd0315651b2cc73cfcb46519a200d",
     "data_models/index.md": "9e60f40798490f0743f291e55f492033",
     "data_models/federation.md": "1d92747304186bd2833a00a488fcac48",
@@ -1189,7 +1189,7 @@
     "_journal/2025-06-05.md": "77477bf17fca76a60965f6a09f88fc90",
     "_journal/2025-06/2025-06-04.md": "80259ba1704ac25af674e6a65bc39c32",
     "networking/osi.md": "48b7d17809b91ef2f6a1dc6ec40194d3",
-    "data_models/rdf/owl.md": "d3a865672dab349e68f5b729d558455c",
+    "data_models/rdf/owl.md": "c2d759182a0445d039a7dc83eb700ff9",
     "_journal/2025-06-07.md": "8439f1aee75616ecfda9046fc597eb25",
     "_journal/2025-06/2025-06-06.md": "98b699e2ce9eab44cd4ec388ddee99b8",
     "_journal/2025-06/2025-06-05.md": "c9b96203a7135c0ce95adcbbc0004554",
@@ -1344,7 +1344,7 @@
     "_journal/2025-07/2025-07-23.md": "8f7e33cb586d0e0af769939b0a66dd62",
     "_journal/2025-07-25.md": "b54b6850ac9f54f590ac23ec4e8d2bf5",
     "_journal/2025-07/2025-07-24.md": "00a31bbc3218022660f5f95183e7edb7",
-    "_journal/2025-07-26.md": "d10637754373e684395dbf0d88efe486",
+    "_journal/2025-07-26.md": "c83f74efec8892ab17d8cf69974007f0",
     "_journal/2025-07/2025-07-25.md": "1d9843c79340e28f06f0190d8d5df6e6"
   },
   "fields_dict": {

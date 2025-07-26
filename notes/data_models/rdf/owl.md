@@ -78,7 +78,7 @@ END%%
 %%ANKI
 Basic
 What OWL construct corresponds to the empty set?
-Back: `owl:Nothing`
+Back: `owl:Nothing`.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1753536440906-->
 END%%
@@ -375,9 +375,7 @@ CONSTRUCT { ?s ?p ?x. }
 WHERE { ?s ?p ?y. ?x owl:sameAs ?y. }
 ```
 
-with the reverse direction handled by noting `owl:sameAs` is a `owl:SymmetricProperty`. 
-
-Likewise, `owl:differentFrom` states two individuals are semantically distinct. The `owl:disjointWith` property states members of the two specified classes must be `owl:differentFrom` one another. Multiple classes can be labeled distinct using the `owl:AllDisjointClasses` property.
+with the reverse direction handled by noting `owl:sameAs` is a `owl:SymmetricProperty`.  Likewise, `owl:differentFrom` states two individuals are semantically distinct.
 
 %%ANKI
 Basic
@@ -449,51 +447,6 @@ Which OWL construct allows stating two individuals are semantically distinct?
 Back: `owl:differentFrom`
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1752244430350-->
-END%%
-
-%%ANKI
-Cloze
-{1:`owl:disjointWith`} is to {2:classes} whereas {2:`owl:differentFrom`} is to {1:individuals}.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1753535106773-->
-END%%
-
-%%ANKI
-Basic
-Which OWL *property* corresponds to disjointedness?
-Back: `owl:disjointWith`
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1753535106778-->
-END%%
-
-%%ANKI
-Basic
-Which OWL *class* corresponds to disjointedness?
-Back: `owl:AllDisjointClasses`
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1753535106781-->
-END%%
-
-%%ANKI
-Cloze
-{1:`owl:AllDisjointClasses`} is a {2:class} whereas {2:`owl:disjointWith`} is a {1:property}.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1753535106784-->
-END%%
-
-%%ANKI
-Basic
-What other OWL construct *must* be used alongside `owl:AllDisjointClasses`?
-Back: `owl:members`
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1753535106787-->
-END%%
-
-%%ANKI
-Cloze
-{1:`owl:AllDisjointClasses`} is to {2:`owl:members`} whereas {2:`owl:Restriction`} is to {`owl:onProperty`}.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1753535106790-->
 END%%
 
 ## Functional Properties
@@ -680,13 +633,6 @@ What other OWL construct *must* be used alongside `owl:Restriction`?
 Back: `owl:onProperty`
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1751735628483-->
-END%%
-
-%%ANKI
-Cloze
-The {`owl:hasValue`} constraint is a special case of the {`owl:someValuesFrom`} constraint.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1751735628485-->
 END%%
 
 ### Value Constraints
@@ -909,6 +855,13 @@ Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web
 <!--ID: 1751735628545-->
 END%%
 
+%%ANKI
+Cloze
+The {`owl:hasValue`} constraint is a special case of the {`owl:someValuesFrom`} constraint.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1751735628485-->
+END%%
+
 ### Enumerations
 
 The `owl:oneOf` property takes a list of classes as a value and asserts that a resource is semantically equivalent to one of the options.
@@ -916,21 +869,6 @@ The `owl:oneOf` property takes a list of classes as a value and asserts that a r
 ```turtle
 O1 a owl:Class ;
    owl:oneOf (ns:A ns:B ...) .
-```
-
-We can assert that every resource in a list is distinct from one another using `owl:AllDifferent` together with `owl:distinctMembers`. For example, the following indicates each of the planets in our solar system are different.
-
-```turtle
-[ a owl:AllDifferent ;
-  owl:distinctMembers ( ss:Mercury
-                        ss:Venus
-                        ss:Earth
-                        ss:Mars
-                        ss:Jupiter
-                        ss:Saturn
-                        ss:Uranus
-                        ss:Neptune)
-] .
 ```
 
 %%ANKI
@@ -962,80 +900,6 @@ Cloze
 {`owl:oneOf`} is a generalization of {`owl:hasValue`}.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1752244430372-->
-END%%
-
-%%ANKI
-Cloze
-The {`owl:AllDifferent`} class is used with the {`owl:distinctMembers`} property.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1752789057001-->
-END%%
-
-%%ANKI
-Basic
-The following bnode is used to create what inferred triples?
-```turtle
-[ a owl:AllDifferent ;
-  owl:distinctMembers (:A :B :C)
-] .
-```
-Back: Ignoring symmetry,
-1. `:A owl:differentFrom :B`
-2. `:A owl:differentFrom :C`
-3. `:B owl:differentFrom :C`
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1752789057012-->
-END%%
-
-%%ANKI
-Basic
-How are the following triples more compactly written in OWL?
-```turtle
-:A owl:differentFrom :B .
-:A owl:differentFrom :C .
-:B owl:differentFrom :A .
-:B owl:differentFrom :C .
-:C owl:differentFrom :A .
-:C owl:differentFrom :B .
-```
-Back:
-```turtle
-[ a owl:AllDifferent ;
-  owl:distinctMembers (:A :B :C)
-] .
-```
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1752789057019-->
-END%%
-
-%%ANKI
-Basic
-Which *class* is used when indicating a list of resources are `owl:differentFrom` one another?
-Back: `owl:AllDifferent`
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1752789057025-->
-END%%
-
-%%ANKI
-Basic
-Which *property* is used when indicating a list of resources are `owl:differentFrom` one another?
-Back: `owl:distinctMembers`
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1752789057032-->
-END%%
-
-%%ANKI
-Cloze
-{1:`owl:AllDifferent`} is to {2:individuals} whereas {2:`owl:AllDisjointClasses`} is to {1:classes}.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1753535106793-->
-END%%
-
-%%ANKI
-Cloze
-{1:`owl:AllDifferent`} is to {2:`owl:distinctMembers`} whereas {2:`owl:AllDisjointClasses`} is to {1:`owl:members`}.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1753535106797-->
 END%%
 
 ### Cardinality
