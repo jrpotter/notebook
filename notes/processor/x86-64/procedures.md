@@ -285,7 +285,7 @@ END%%
 
 %%ANKI
 Basic
-Let $S$ denote `%rsp` before pushing parameter `int a` onto the stack. What is `%rsp` now?
+Let $S$ denote `%rsp` before pushing argument `int a` onto the stack. What is `%rsp` now?
 Back: $S - 8$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1730119064915-->
@@ -293,7 +293,7 @@ END%%
 
 %%ANKI
 Basic
-Let $S$ denote `%rsp` before pushing parameter `short a` onto the stack. What is `%rsp` now?
+Let $S$ denote `%rsp` before pushing argument `short a` onto the stack. What is `%rsp` now?
 Back: $S - 8$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1730119064921-->
@@ -301,7 +301,7 @@ END%%
 
 %%ANKI
 Basic
-Let $S$ denote `%rsp` before pushing parameter `bool a` onto the stack. What is `%rsp` now?
+Let $S$ denote `%rsp` before pushing argument `bool a` onto the stack. What is `%rsp` now?
 Back: $S - 8$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1730119064924-->
@@ -309,7 +309,7 @@ END%%
 
 %%ANKI
 Basic
-After calling `Q`, how much space do local parameters occupy in `P`'s stack frame?
+After calling `Q`, how much space do local arguments occupy in `P`'s stack frame?
 ```c
 void P() {
   Q(1, 2, 3, 4, 5, 6);
@@ -322,7 +322,7 @@ END%%
 
 %%ANKI
 Basic
-After calling `Q`, how much space do local parameters occupy in `P`'s stack frame?
+After calling `Q`, how much space do local arguments occupy in `P`'s stack frame?
 ```c
 void P() {
   Q(1, 2, 3, 4, 5, 6, 7, 8);
@@ -335,7 +335,7 @@ END%%
 
 %%ANKI
 Basic
-After calling `Q`, how much space do local parameters occupy in `P`'s stack frame?
+After calling `Q`, how much space do local arguments occupy in `P`'s stack frame?
 ```c
 void P() {
   Q(1, 2, 3, 4, 5, 6, true, 8);

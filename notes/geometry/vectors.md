@@ -80,7 +80,7 @@ END%%
 
 %%ANKI
 Basic
-Draw vector $\mathbf{a}$ as an arrow. What does the head of $\mathbf{a}$ refer to?
+Draw vector $\mathbf{a}$ as an arrow. What part of the drawing does the head of $\mathbf{a}$ refer to?
 Back: The part of the arrow with the arrowhead.
 Reference: _Wikipedia_. “Euclidean vector.” May 7, 2025. [https://en.wikipedia.org/w/index.php?title=Euclidean_vector](https://en.wikipedia.org/w/index.php?title=Euclidean_vector&oldid=1289250160).
 <!--ID: 1753094708145-->
@@ -88,7 +88,7 @@ END%%
 
 %%ANKI
 Basic
-Draw vector $\mathbf{a}$ as an arrow. What does the tail of $\mathbf{a}$ refer to?
+Draw vector $\mathbf{a}$ as an arrow. What part of the drawing does the tail of $\mathbf{a}$ refer to?
 Back: The part of the arrow without the arrowhead.
 Reference: _Wikipedia_. “Euclidean vector.” May 7, 2025. [https://en.wikipedia.org/w/index.php?title=Euclidean_vector](https://en.wikipedia.org/w/index.php?title=Euclidean_vector&oldid=1289250160).
 <!--ID: 1753094708148-->
@@ -479,7 +479,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\mathbf{a}$ and $\mathbf{b}$ be vectors. What is the methodology used to find their sum's graphical representation called?
+Let $\mathbf{a}$ and $\mathbf{b}$ be vectors. The pictorial method used to find their sum's graphical representation is called what?
 Back: The parallelogram rule.
 Reference: _Wikipedia_. “Euclidean vector.” May 7, 2025. [https://en.wikipedia.org/w/index.php?title=Euclidean_vector](https://en.wikipedia.org/w/index.php?title=Euclidean_vector&oldid=1289250160).
 <!--ID: 1753094708176-->
@@ -695,7 +695,7 @@ END%%
 
 %%ANKI
 Basic
-What trigonometric identity is used to relate the dot product of two vectors and the angle between them?
+What identity is used to prove the relation between the dot product of two vectors and the angle between them?
 Back: The law of cosines.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1753197024797-->
@@ -703,7 +703,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^2$. What visual aid is used to find the angle between them?
+Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^2$. How do you visualize the angle between them?
 Back:
 ![[dot-product-proof.png]]
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
@@ -732,7 +732,7 @@ END%%
 %%ANKI
 Basic
 Let $\mathbf{u} = \mathbf{i} + 3\mathbf{j}$ and $\mathbf{v} = 2\mathbf{i} + 2\mathbf{j}$. What does $\mathbf{u} \cdot \mathbf{v}$ evaluate to?
-Back: $\mathbf{u} \cdot \mathbf{v} = (1)(2) + (3)(6) = 20$
+Back: $\mathbf{u} \cdot \mathbf{v} = (1)(2) + (3)(2) = 8$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1753197024808-->
 END%%

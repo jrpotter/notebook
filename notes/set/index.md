@@ -10,6 +10,8 @@ tags:
 
 Set theory begins with two primitive notions of sets and membership. Other axioms are defined relative to these concepts.
 
+The [[choice|Axiom of Choice]] is elaborated on separately.
+
 %%ANKI
 Basic
 What are the two primitive notions of set theory?
@@ -828,27 +830,29 @@ END%%
 
 ## Subset Axioms
 
-For each formula $\_\_\_$ not containing $B$, the following is an axiom: $$\forall t_1, \cdots, \forall t_k, \forall c, \exists B, \forall x, (x \in B \Leftrightarrow x \in c \land \_\_\_)$$
+The "subset axioms" refer to an axiom schema stating:
+
+> For any formula $\phi(x)$ not containing the letter $B$, $$\forall A, \exists B, \forall x, (x \in B \Leftrightarrow x \in A \land \phi(x)).$$
 
 %%ANKI
 Basic
 What do the subset axioms state?
-Back: For each formula $\_\_\_$ not containing $B$, the following is an axiom: $$\forall t_1, \cdots, \forall t_k, \forall c, \exists B, \forall x, (x \in B \Leftrightarrow x \in c \land \_\_\_)$$
+Back: For each formula $\phi(x)$ not containing the letter $B$, $$\forall A, \exists B, \forall x, (x \in B \Leftrightarrow x \in A \land \phi(x))$$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716074312858-->
 END%%
 
 %%ANKI
 Basic
-Let $\_\_\_$ be a wff excluding $B$. How is its subset axiom stated in first-order logic?
-Back: $$\forall t_1, \cdots, \forall t_k, \forall c, \exists B, \forall x, (x \in B \Leftrightarrow x \in c \land \_\_\_)$$
+Let $\phi(x)$ be a wff excluding letter $B$. How is its subset axiom stated in FOL?
+Back: $$\forall A, \exists B, \forall x, (x \in B \Leftrightarrow x \in A \land \phi(x))$$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716074312864-->
 END%%
 
 %%ANKI
 Basic
-The following encodes which set theory axiom(s)? $$\forall t_1, \cdots, \forall t_k, \forall c, \exists B, \forall x, (x \in B \Leftrightarrow x \in c \land \_\_\_)$$
+The following encodes which set theory axiom(s)? $$\forall A, \exists B, \forall x, (x \in B \Leftrightarrow x \in A \land \phi(x))$$
 Back: The subset axioms.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1716074312869-->
@@ -1047,8 +1051,8 @@ END%%
 
 %%ANKI
 Basic
-Which of the set theory axioms are more accurately described as an axiom schema?
-Back: The subset axioms.
+Which of the set theory axiom(s) are more accurately described as an axiom schema?
+Back: The subset and replacement axioms.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1717368558164-->
 END%%
@@ -1069,9 +1073,13 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1730118488855-->
 END%%
 
-## Axiom of Choice
-
-The axiom of choice is elaborated on in [[choice]].
+%%ANKI
+Basic
+Why are we careful to use term "formula" vs. "relation"/"function" when stating the subset axioms?
+Back: Because the formulas used are not restricted to sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228022-->
+END%%
 
 ## Infinity Axiom
 
@@ -1098,6 +1106,70 @@ State the infinity axiom in FOL.
 Back: $\exists A, [\varnothing \in A \land (\forall a \in A, a^+ \in A)]$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1724486269585-->
+END%%
+
+## Replacement Axioms
+
+The "replacement axioms" refer to an axiom schema stating:
+
+> For any formula $\phi(x, y)$ not containing the letter $B$, $$\begin{align*} \forall A, & \big[ \forall x \in A, \forall y_1, y_2, (\phi(x, y_1) \land \phi(x, y_2) \Rightarrow y_1 = y_2) \big] \Rightarrow \\ & \big[ \exists B, \forall y, (y \in B \Leftrightarrow \exists x \in A, \phi(x, y) \big] \end{align*}$$
+
+Notice the top-level antecedent states that formula $\phi(x, y)$ is a [[classes#Function-Class|function-class]].
+
+%%ANKI
+Basic
+What do the replacement axioms state?
+Back: For each formula $\phi(x, y)$ not containing the letter $B$, $$\begin{align*} \forall A, & \big[ \forall x \in A, \forall y_1, y_2, (\phi(x, y_1) \land \phi(x, y_2) \Rightarrow y_1 = y_2) \big] \Rightarrow \\ & \big[ \exists B, \forall y, (y \in B \Leftrightarrow \exists x \in A, \phi(x, y) \big] \end{align*}$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228031-->
+END%%
+
+%%ANKI
+Basic
+Let $\phi(x, y)$ be a wff excluding letter $B$. How is its replacement axiom stated in FOL?
+Back: $$\begin{align*} \forall A, & \big[ \forall x \in A, \forall y_1, y_2, (\phi(x, y_1) \land \phi(x, y_2) \Rightarrow y_1 = y_2) \big] \Rightarrow \\ & \big[ \exists B, \forall y, (y \in B \Leftrightarrow \exists x \in A, \phi(x, y) \big] \end{align*}$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228034-->
+END%%
+
+%%ANKI
+Basic
+The following encodes which set theory axiom(s)? $$\begin{align*} \forall A, & \big[ \forall x \in A, \forall y_1, y_2, (\phi(x, y_1) \land \phi(x, y_2) \Rightarrow y_1 = y_2) \big] \Rightarrow \\ & \big[ \exists B, \forall y, (y \in B \Leftrightarrow \exists x \in A, \phi(x, y) \big] \end{align*}$$
+Back: The replacement axioms.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228037-->
+END%%
+
+%%ANKI
+Basic
+The concept of function-classes is most relevant for what set theoretic axiom(s)?
+Back: The replacement axioms.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228040-->
+END%%
+
+%%ANKI
+Basic
+Let $H$ be a function-class and $A$ a set. What intuition yielded the replacement axioms, i.e. that $H[\![A]\!]$ is a set?
+Back: Since $A$ is a set and $H[\![A]\!]$ can't be larger than $A$, $H[\![A]\!]$ should also be a set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228043-->
+END%%
+
+%%ANKI
+Basic
+Why are we careful to use term "formula" vs. "relation"/"function" when stating the replacement axioms?
+Back: Because the formulas used are not restricted to sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228046-->
+END%%
+
+%%ANKI
+Basic
+The antececent of a replacement axiom instantiation corresponds to what class concept?
+Back: Function-classes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228049-->
 END%%
 
 ## Bibliography

@@ -630,15 +630,6 @@ Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.o
 <!--ID: 1735267631873-->
 END%%
 
-%%ANKI
-Basic
-Which CURIE prefix is reserved for use by languages that support RDF?
-Back: `_`
-Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
-Tags: data_model::rdf
-<!--ID: 1735267631877-->
-END%%
-
 ## Bibliography
 
 * Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.

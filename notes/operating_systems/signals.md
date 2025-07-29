@@ -291,15 +291,15 @@ END%%
 
 %%ANKI
 Basic
-Let $n$ be a signal number. If a signal of type $n$ is being handled, what happens when another signal of type $n$ is sent?
-Back: It is blocked until the current handler returns.
+Let $n$ be a signal number. If a signal of type $n$ is being handled, what happens when another signal of type $n$ is received?
+Back: N/A. It is blocked until the current handler returns.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1753141632816-->
 END%%
 
 %%ANKI
 Basic
-Let $m$ and $n$ be distinct signal numbers. If a signal of type $m$ is being handled, what happens when a signal of type $n$ is sent?
+Let $m$ and $n$ be distinct signal numbers. If a signal of type $m$ is being handled, what happens when a signal of type $n$ is received?
 Back: The $m$ handler is paused while the $n$ handler is executed.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1753141632818-->

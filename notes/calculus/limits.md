@@ -538,7 +538,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $f(x) \rightarrow A$ as $x \rightarrow p$. If $f$ is continuous at point $p$, can be said about $f$ at $p$?
+Suppose $f(x) \rightarrow A$ as $x \rightarrow p$. If $f$ is continuous at point $p$, what can be said about $f$ at $p$?
 Back: $f$ is defined at $p$ and $A = f(p)$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1753086694853-->

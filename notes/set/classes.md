@@ -374,6 +374,74 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1716237736529-->
 END%%
 
+## Function-Class
+
+A **function-class** $H$ is a class of ordered pairs that satisfies the definition of being a [[functions|function]] except that it may not be a set. That is, for all $\langle x, y_1 \rangle \in H$, if $\langle x, y_2 \rangle \in H$, then it follows that $y_1 = y_2$.
+
+%%ANKI
+Basic
+Let $F$ be a function and $A$ a set. Is $F[\![A]\!]$ a set?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228053-->
+END%%
+
+%%ANKI
+Basic
+Let $F$ be a function-class and $A$ a set. Is $F[\![A]\!]$ a set?
+Back: Yes, if we assume the replacement axioms.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228056-->
+END%%
+
+%%ANKI
+Basic
+In plain English, how does Enderton define a "function-class"?
+Back: As a class of ordered-pairs satisfying the definition of a function except that it may not be a set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228059-->
+END%%
+
+%%ANKI
+Basic
+Which of functions or function-classes are more general?
+Back: Function-classes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228063-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes a function from a function-class?
+Back: A function is guaranteed to be a set; a function-class is not.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228066-->
+END%%
+
+%%ANKI
+Basic
+Suppose $F$ is a function class. What does this mean?
+Back: $F$ is a class of ordered pairs satisfying the definition of a function except it may not be a set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228069-->
+END%%
+
+%%ANKI
+Basic
+In the definition of a function-class $H$, what does it mean for $H$ to "satisfy the definition of a function"?
+Back: For all $\langle x, y_1 \rangle \in H$, if $\langle x, y_2 \rangle \in H$, then $y_1 = y_2$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228073-->
+END%%
+
+%%ANKI
+Basic
+Let $F$ be a function-class and $A$ a set. What notational abuse is occurring with $F[\![A]\!]$.
+Back: The image operation is technically only defined with respect to sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1753740228076-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

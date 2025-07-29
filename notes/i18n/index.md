@@ -522,7 +522,64 @@ Tags: c17 linux
 <!--ID: 1753391372242-->
 END%%
 
+%%ANKI
+Basic
+What locale do C programs initialize with?
+Back: The `C` locale.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1753744670162-->
+END%%
+
+%%ANKI
+Basic
+What does function invocation `setlocale(LC_ALL, "")` do?
+Back: Updates each locale category with the locale specified from the corresponding environment variables.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1753744670171-->
+END%%
+
+%%ANKI
+Basic
+What standard-defined string values can be provided to `setlocale`?
+Back: `""` and `"C"`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1753744670174-->
+END%%
+
+%%ANKI
+Basic
+How is argument `""` interpreted when passed to `setlocale`?
+Back: As reading the corresponding environment variable and using its value for the locale.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1753744670177-->
+END%%
+
+%%ANKI
+Basic
+How is argument `"C"` interpreted when passed to `setlocale`?
+Back: As specifying the minimal environment for C translation.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1753744670180-->
+END%%
+
+%%ANKI
+Basic
+What is the default locale used by C programs?
+Back: The `C` locale.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1753744670183-->
+END%%
+
+%%ANKI
+Basic
+Why should you invoke `setlocale` before e.g. `mbstowcs`?
+Back: `setlocale` affects how multibyte strings are converted to wide character strings.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1753749115873-->
+END%%
+
 ## Bibliography
 
+* Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 * “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
 * “Internationalization and Localization.” In _Wikipedia_, March 29, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1282974704).

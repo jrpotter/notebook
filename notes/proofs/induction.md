@@ -246,7 +246,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be a set of $\omega$. What condition is necessary for $A$ to have a least element?
+Let $A$ be a subset of $\omega$. What condition is necessary for $A$ to have a least element?
 Back: $A \neq \varnothing$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1731200524854-->

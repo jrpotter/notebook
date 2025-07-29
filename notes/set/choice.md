@@ -623,7 +623,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$ be a cardinal number. Assuming AoC, what does $\kappa^\kappa$ simplfiy to?
+Let $\kappa$ be a cardinal number. Assuming AoC, what does $\kappa^\kappa$ simplify to?
 Back: Indeterminate.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750170196911-->
@@ -631,7 +631,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa^\kappa$ simplfiy to?
+Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa^\kappa$ simplify to?
 Back: $2^\kappa$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750170196923-->
@@ -650,7 +650,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$ be a cardinal number. Assuming AoC, what does $\kappa!$ simplfiy to?
+Let $\kappa$ be a cardinal number. Assuming AoC, what does $\kappa!$ simplify to?
 Back: Indeterminate.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750734043589-->
@@ -658,7 +658,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa!$ simplfiy to?
+Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa!$ simplify to?
 Back: $2^\kappa$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750734043592-->

@@ -962,7 +962,7 @@ END%%
 
 %%ANKI
 Cloze
-IP address space is {allocated}, usually in large chunks, by a collection of {hierarchically} organized {authorities}.
+IP address space is {allocated}, usually in large chunks, by a collection of hierarchically organized {authorities}.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1753369239492-->
 END%%

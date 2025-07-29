@@ -10,16 +10,32 @@ tags:
 
 ## Overview
 
-The Web Ontology Language, OWL, is an extension to [[rdfs|RDFS]] that introduces several more constructs for organizing and inferring information. Some general-purpose constructs that aren't as easily categorized as others include:
+The Web Ontology Language, OWL, is an extension to [[rdfs|RDFS]] that introduces several more constructs for organizing and inferring information. The entirety of the so-called "OWL universe" is divided into three parts - individuals, classes, and properties.
+
+Some general-purpose constructs that aren't as easily categorized as others include:
 
 * `owl:Class`
 	* This is a `rdfs:subClassOf rdfs:Class` used in most OWL models.
 * `owl:DatatypeProperty`
 	* Indicates the value of the property should be an item of some XML data type.
-* `owl:Nothing`
-	* Is the class corresponding to the empty set. An empty class is said to be **unsatisfiable**.
 * `owl:ObjectProperty`
 	* Indicates the value of the property should be an RDF resource.
+
+%%ANKI
+Basic
+The so-called "OWL universe" is divided into what three parts?
+Back: Classes, properties, and individuals.
+Reference: “OWL 2 Syntax.” Accessed July 27, 2025. [https://www.w3.org/TR/owl2-syntax/](https://www.w3.org/TR/owl2-syntax/).
+<!--ID: 1753575103006-->
+END%%
+
+%%ANKI
+Basic
+Every class in OWL must belong to what class?
+Back: `owl:Class`
+Reference: “OWL 2 Syntax.” Accessed July 27, 2025. [https://www.w3.org/TR/owl2-syntax/](https://www.w3.org/TR/owl2-syntax/).
+<!--ID: 1753575103020-->
+END%%
 
 %%ANKI
 Cloze
@@ -77,38 +93,6 @@ END%%
 
 %%ANKI
 Basic
-What OWL construct corresponds to the empty set?
-Back: `owl:Nothing`.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1753536440906-->
-END%%
-
-%%ANKI
-Basic
-What is an unsatisfiable class?
-Back: A class whose class extension is empty.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1753536440914-->
-END%%
-
-%%ANKI
-Basic
-*Why* is an unsatisfiable class named the way it is?
-Back: It is empty, i.e. no member satisfies the entrance requirements of the class extension.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1753536440917-->
-END%%
-
-%%ANKI
-Basic
-Which unsatisfiable class does OWL include by default?
-Back: `owl:Nothing`
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1753536440919-->
-END%%
-
-%%ANKI
-Basic
 Suppose `A` is satisfiable and `B` is unsatisfiable. Is `C` satisfiable?
 ```turtle
 C owl:unionOf ( A, B ) .
@@ -129,7 +113,9 @@ Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web
 <!--ID: 1753536440924-->
 END%%
 
-## Inverse
+## Relationships
+
+### Inverse
 
 The `owl:inverseOf` property allows inferring triples that work in the inverse direction. It can be understood by the following SPARQL construct:
 
@@ -165,8 +151,6 @@ WHERE { ?x ?P ?y. ?P owl:inverseOf ?Q. }
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1749331998321-->
 END%%
-
-## Relationships
 
 ### Symmetry
 
@@ -1168,6 +1152,126 @@ The `owl:complementOf` property takes what as a value?
 Back: A class.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1753535106808-->
+END%%
+
+## Description Logic
+
+OWL 2 introduces a subset of OWL called **OWL DL** (OWL Description Logic). It is the largest subset of OWL that retains decidability. Additional constructs are present with respect to the DL subset:
+
+* `owl:Nothing`
+	* Is the class corresponding to the empty set. An empty class is said to be **unsatisfiable**.
+* `owl:Thing`
+	* The class whose extension comprises all individuals of the OWL universe.
+* `owl:bottomDataProperty`
+	* The datatype property that does not connect any individual with a literal.
+* `owl:topDataProperty`
+	* The datatype property that connects all possible individuals with all literals.
+* `owl:bottomObjectProperty`
+	* The object property that does not connect any pair of individuals.
+* `owl:topObjectProperty`
+	* The object property that connects all possible pairs of individuals.
+
+%%ANKI
+Basic
+What is DL an acronym for in "OWL DL"?
+Back: **D**escription **L**ogic.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753621522059-->
+END%%
+
+%%ANKI
+Basic
+What is OWL DL?
+Back: The largest subset of OWL that retains decidability.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753621522067-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `owl:Thing` class?
+Back: It is the class whose extension comprises all individuals.
+Reference: “OWL 2 Syntax.” Accessed July 27, 2025. [https://www.w3.org/TR/owl2-syntax/](https://www.w3.org/TR/owl2-syntax/).
+<!--ID: 1753575103015-->
+END%%
+
+%%ANKI
+Basic
+Every individual in OWL must belong to what class?
+Back: `owl:Thing`
+Reference: “OWL 2 Syntax.” Accessed July 27, 2025. [https://www.w3.org/TR/owl2-syntax/](https://www.w3.org/TR/owl2-syntax/).
+<!--ID: 1753575103018-->
+END%%
+
+%%ANKI
+Basic
+What OWL construct corresponds to the empty set?
+Back: `owl:Nothing`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753536440906-->
+END%%
+
+%%ANKI
+Basic
+What is an unsatisfiable class?
+Back: A class whose class extension is empty.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753536440914-->
+END%%
+
+%%ANKI
+Basic
+*Why* is an unsatisfiable class named the way it is?
+Back: It is empty, i.e. no member satisfies the entrance requirements of the class extension.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753536440917-->
+END%%
+
+%%ANKI
+Basic
+Which unsatisfiable class does OWL include by default?
+Back: `owl:Nothing`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1753536440919-->
+END%%
+
+%%ANKI
+Cloze
+{1:`owl:Thing`} is to the {2:top} whereas {2:`owl:Nothing`} is to the {1:bottom}.
+Reference: “OWL 2 Syntax.” Accessed July 27, 2025. [https://www.w3.org/TR/owl2-syntax/](https://www.w3.org/TR/owl2-syntax/).
+<!--ID: 1753621522071-->
+END%%
+
+%%ANKI
+Basic
+What is `owl:topObjectProperty`?
+Back: The object property connecting all possible pairs of individuals.
+Reference: “OWL 2 Syntax.” Accessed July 27, 2025. [https://www.w3.org/TR/owl2-syntax/](https://www.w3.org/TR/owl2-syntax/).
+<!--ID: 1753621522075-->
+END%%
+
+%%ANKI
+Basic
+What is `owl:bottomObjectProperty`?
+Back: The object property that does not connect any pair of individuals.
+Reference: “OWL 2 Syntax.” Accessed July 27, 2025. [https://www.w3.org/TR/owl2-syntax/](https://www.w3.org/TR/owl2-syntax/).
+<!--ID: 1753621522079-->
+END%%
+
+%%ANKI
+Basic
+What is `owl:topDataProperty`?
+Back: The datatype property connecting all possible individuals with all literals.
+Reference: “OWL 2 Syntax.” Accessed July 27, 2025. [https://www.w3.org/TR/owl2-syntax/](https://www.w3.org/TR/owl2-syntax/).
+<!--ID: 1753621522083-->
+END%%
+
+%%ANKI
+Basic
+What is `owl:bottomDataProperty`?
+Back: The datatype property that does not connect any individual with a literal.
+Reference: “OWL 2 Syntax.” Accessed July 27, 2025. [https://www.w3.org/TR/owl2-syntax/](https://www.w3.org/TR/owl2-syntax/).
+<!--ID: 1753621522086-->
 END%%
 
 ## Bibliography

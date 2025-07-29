@@ -636,7 +636,7 @@ END%%
 %%ANKI
 Basic
 What two things make writing to an SSD slower than reading from one?
-Back: Each write must:
+Back: Each write may:
 1. Copy contents of the block to another block.
 2. Erase the entire block the page is in.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

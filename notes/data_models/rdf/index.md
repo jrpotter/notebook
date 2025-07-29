@@ -303,6 +303,8 @@ END%%
 
 A **blank node** (bnode) is a node in an RDF graph representing a resource for which a [[uri|IRI]] is not specified. That is, the represented resource is anonymous. Such a node can only be used as a subject or object in an RDF triple.
 
+The namespace prefix `_` has special meaning. It is reserved for bnodes. RDF processors are free to generate anonymous URIs with this prefix as they see fit.
+
 %%ANKI
 Basic
 What is a blank node?
@@ -356,6 +358,31 @@ In Turtle, what does `[ ... ]` denote?
 Back: A blank node.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1752789057038-->
+END%%
+
+%%ANKI
+Basic
+Which CURIE prefix is reserved for use by languages that support RDF?
+Back: `_`
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
+Tags: data_model::rdf
+<!--ID: 1735267631877-->
+END%%
+
+%%ANKI
+Basic
+The `_` prefix is primarily used by RDF processors in what context?
+Back: The automatic generation of URIs for bnodes.
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
+<!--ID: 1753721049082-->
+END%%
+
+%%ANKI
+Basic
+Why shouldn't you use the `_` prefix?
+Back: The RDF processor will often reserve its use for bnodes.
+Reference: “CURIE Syntax 1.0,” accessed December 26, 2024, [https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax](https://www.w3.org/TR/2010/NOTE-curie-20101216/#s_syntax).
+<!--ID: 1753721049085-->
 END%%
 
 ## Lists

@@ -135,7 +135,7 @@ END%%
 %%ANKI
 Basic
 How are geometric sequences defined in terms of "$\Delta^k$-constant"?
-Back: N/A
+Back: N/A.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1713580109250-->
 END%%

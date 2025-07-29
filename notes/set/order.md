@@ -1447,7 +1447,7 @@ END%%
 
 %%ANKI
 Basic
-Let $R$ be a total order on $S$ and $a, b \in S$. If $a \not\lt b$, must it be the case that $b < a$?
+Let $R$ be a total order on $S$ and $a, b \in S$. If $\neg aRb$, must it be the case that $bRa$?
 Back: No, it's possible $a = b$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749847120982-->
@@ -1455,7 +1455,7 @@ END%%
 
 %%ANKI
 Basic
-Let $R$ be a total order on $S$ and $a, b \in S$. If $a \not\leq b$, must it be the case that $b < a$?
+Let $R$ be a total order on $S$ and $a, b \in S$. If $a \neq b$ and $\neg aRb$, must it be the case that $bRa$?
 Back: Yes, since $a \neq b$ and $R$ is strongly connected.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749847120988-->
@@ -1558,7 +1558,7 @@ END%%
 
 %%ANKI
 Basic
-Let $R$ be a strict total order on $S$ and $a, b \in S$. If $a \not\lt b$, must it be the case that $b < a$?
+Let $R$ be a strict total order on $S$ and $a, b \in S$. If $\neg aRb$, must it be the case that $bRa$?
 Back: Yes, since $R$ is irreflexive and connected.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749847120993-->
@@ -1566,7 +1566,7 @@ END%%
 
 %%ANKI
 Basic
-Let $R$ be a strict total order on $S$ and $a, b \in S$. If $a \not\leq b$, must it be the case that $b < a$?
+Let $R$ be a strict total order on $S$ and $a, b \in S$. If $a \neq b$ and $\neg aRb$, must it be the case that $bRa$?
 Back: Yes, since $R$ is irreflexive and connected.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749847120997-->
@@ -1629,7 +1629,7 @@ END%%
 
 %%ANKI
 Basic
-Let $R$ be a strict total order on $(-\infty, 0] \subseteq \mathbb{R}$ with ordering relation $<$. Why isn't $R$ a well order?
+Let $R$ be a strict total order on $(-\infty, 0] \subseteq \mathbb{R}$. Why isn't $R$ a well order?
 Back: Because there exist subsets, e.g. $(-\infty, 0]$, with no minimal element.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1752330043282-->
@@ -1637,7 +1637,7 @@ END%%
 
 %%ANKI
 Basic
-Let $R$ be a strict total order on $[0, \infty) \subseteq \mathbb{R}$ with ordering relation $<$. Why isn't $R$ a well order?
+Let $R$ be a strict total order on $[0, \infty) \subseteq \mathbb{R}$. Why isn't $R$ a well order?
 Back: Because there exist subsets, e.g. $(0, 1]$, with no minimal element.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1752330043285-->
