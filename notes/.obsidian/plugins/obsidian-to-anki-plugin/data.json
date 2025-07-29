@@ -505,8 +505,8 @@
     "data_models/index.md": "9e60f40798490f0743f291e55f492033",
     "data_models/federation.md": "1d92747304186bd2833a00a488fcac48",
     "trigonometry/unit-circle.md": "d35f98e044f6a1144657cc97a63a8f7a",
-    "trigonometry/index.md": "11726b2faeea1e6fea196c0a3ed79e87",
-    "trigonometry/angles.md": "20eb366d83cb27ad366f099a3ab8999e",
+    "trigonometry/index.md": "1ed5a283f89faac5655b5b0923b0cd9f",
+    "trigonometry/angles.md": "06c33af5993351e03e75652625d4163a",
     "threads/index.md": "28783464146ed09603b477bad4b761bc",
     "startups/term-sheet.md": "6b6152af78addb3fe818a7fc9d375fbf",
     "startups/index.md": "00fd32876fc7a190dfecb2c37c15aadc",
@@ -1226,7 +1226,7 @@
     "geometry/conics/index.md": "ce2e2f698875754ed8cf6b11ecce24bf",
     "geometry/conics/circle.md": "25d984b8a79be24eca19d5cc56b1cc06",
     "_journal/2025-06-19.md": "3dbc934ac688051f16b96ed399937404",
-    "_journal/2025-06/2025-06-18.md": "89c838adcf2b7f7ca7eee68633bfeaf9",
+    "_journal/2025-06/2025-06-18.md": "10be573cc13788707b34960d144361ff",
     "geometry/similarity.md": "1751126a3dc116581963cc777b1f41fb",
     "baduk/shape.md": "ff2b62bda0eaec90c53af9e0d642068a",
     "baduk/sente.md": "0a2f33e516f045a671d05dfb800a4325",
@@ -1354,7 +1354,9 @@
     "_journal/2025-07-27.md": "5b127e8842301b0302e48cbbf051d73c",
     "_journal/2025-07/2025-07-26.md": "94e97de5e539640c2eeaf2fc0c9d9311",
     "_journal/2025-07-28.md": "b65a1e97a135916af49ccbc3eb7e8169",
-    "_journal/2025-07/2025-07-27.md": "4d4b56e61091f7b2f638a8043227967d"
+    "_journal/2025-07/2025-07-27.md": "4d4b56e61091f7b2f638a8043227967d",
+    "_journal/2025-07-29.md": "e06f27aa8d8d4542616b950372cd3416",
+    "_journal/2025-07/2025-07-28.md": "08cb27d761340f814465e32a05f64c0b"
   },
   "fields_dict": {
     "Basic": [

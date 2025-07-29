@@ -15,6 +15,8 @@ When the vertex of an angle is at the origin in the Cartesian coordinate system,
 
 An angle measuring less than $90\degree$ is called an **acute angle**. An angle measuring exactly $90\degree$ is called a **right angle**. An angle measure greater than $90\degree$ is called an **obtuse angle**.
 
+Two angles that together sum up to $90\degree$ are called **complementary angles**. Two angles that together sum up to $180\degree$ are called **supplementary angles**.
+
 %%ANKI
 Basic
 How is a line passing through points $A$ and $B$ typically denoted?
@@ -230,6 +232,44 @@ The three angles of a triangle measure to what?
 Back: $180\degree$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1752787376871-->
+END%%
+
+%%ANKI
+Cloze
+Two angles that add up to {$90\degree$} are called {complementary} angles.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639518-->
+END%%
+
+%%ANKI
+Cloze
+Two angles that add up to {$180\degree$} are called {supplementary} angles.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639520-->
+END%%
+
+%%ANKI
+Basic
+Consider complementary angles $\alpha$ and $\beta$. If $\alpha = 35\degree$, what does $\beta$ equal?
+Back: $\beta = 90\degree - 35\degree = 55\degree$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639523-->
+END%%
+
+%%ANKI
+Basic
+Consider supplementary angles $\alpha$ and $\beta$. If $\alpha = 35\degree$, what does $\beta$ equal?
+Back: $\beta = 180\degree - 35\degree = 145\degree$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639526-->
+END%%
+
+%%ANKI
+Basic
+The measure of the two acute angles in a right triangle add up to what?
+Back: $90\degree$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639529-->
 END%%
 
 ## Subtended Angles
