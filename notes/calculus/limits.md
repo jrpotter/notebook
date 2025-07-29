@@ -610,6 +610,8 @@ END%%
 
 ## Properties
 
+### Arithmetic
+
 Let $f$ and $g$ be functions such that $$\lim_{x \rightarrow p} f(x) = A \quad\text{and}\quad \lim_{x \rightarrow p} g(x) = B.$$
 
 Then
@@ -705,6 +707,56 @@ How do we prove $f(x) = 1 / x$ is continuous everywhere except $x \neq 0$?
 Back: Since $g(x) = 1$ and $h(x) = x$ are continuous everywhere, their quotient $g / h = f$ must also be wherever $h(x) \neq 0$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1753386691591-->
+END%%
+
+### Squeeze Theorem
+
+Suppose that $f(x) \leq g(x) \leq h(x)$ for all $x \neq p$ in some neighborhood $N(p)$. Suppose also that $$\lim_{x \rightarrow p} f(x) = \lim_{x \rightarrow p} h(x) = A.$$
+
+Then $g(x) \rightarrow A$ as $x \rightarrow p$.
+
+%%ANKI
+Basic
+What does the squeeze theorem state in terms of neighborhoods?
+Back: Let $f(x) \leq g(x) \leq h(x)$ for all $x \neq p$ in some neighborhood $N(p)$. Suppose also that $$\lim_{x \rightarrow p} f(x) = \lim_{x \rightarrow p} h(x) = A.$$
+Then $g(x) \rightarrow A$ as $x \rightarrow p$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753807878267-->
+END%%
+
+%%ANKI
+Basic
+Why is the squeeze theorem named the way it is?
+Back: It invokes imagery of a function squeezing in between a lower and upper bound.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753807878269-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) \leq g(x) \leq h(x)$ for all $x \neq p$ in some neighborhood $N(p)$. Suppose that $$\lim_{x \rightarrow p} f(x) = \lim_{x \rightarrow p} g(x) = A.$$
+What does the limit of $h$ as $x$ approaches $p$ equal?
+Back: Indeterminate.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753807878271-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) \leq g(x) \leq h(x)$ for all $x \neq p$ in some neighborhood $N(p)$. Suppose that $$\lim_{x \rightarrow p} f(x) = \lim_{x \rightarrow p} h(x) = A.$$
+What does the limit of $g$ as $x$ approaches $p$ equal?
+Back: $A$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753807878273-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) \leq g(x) \leq h(x)$ for all $x \neq p$ in some neighborhood $N(p)$. Suppose that $$\lim_{x \rightarrow p} g(x) = \lim_{x \rightarrow p} h(x) = A.$$
+What does the limit of $f$ as $x$ approaches $p$ equal?
+Back: Indeterminate.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1753807878274-->
 END%%
 
 ## Bibliography
