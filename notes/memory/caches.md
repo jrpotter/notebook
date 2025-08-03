@@ -1031,6 +1031,14 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1750209845467-->
 END%%
 
+%%ANKI
+Basic
+What is the most ubiquitous example of a fully associative cache?
+Back: The virtual memory system.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754189768124-->
+END%%
+
 ## Performance
 
 Cache performance is evaluated with a number of metrics:

@@ -342,6 +342,30 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1754189294514-->
 END%%
 
+%%ANKI
+Basic
+Why are the size of virtual pages made relatively large?
+Back: To amortize against the cost of retrieving them from disk.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754189768107-->
+END%%
+
+%%ANKI
+Basic
+What placement policy do virtual memory systems typically use?
+Back: Fully associative.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754189768117-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for VM systems to be fully associative?
+Back: Any page can be placed in any page frame.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754189768120-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

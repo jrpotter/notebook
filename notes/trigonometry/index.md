@@ -267,7 +267,7 @@ END%%
 
 %%ANKI
 Basic
-What is the missing RHS of cofunction identity $\sin{x} = \ldots$?
+The cofunction identity states $\sin{x}$ equals what?
 Back: $\cos{\left( \frac{\pi}{2} - x \right)}$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1753797639498-->
@@ -275,7 +275,7 @@ END%%
 
 %%ANKI
 Basic
-What is the missing RHS of cofunction identity $\cot{x} = \ldots$?
+The cofunction identity states $\cot{x}$ equals what?
 Back: $\tan{\left( \frac{\pi}{2} - x \right)}$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1753797639500-->
@@ -283,7 +283,7 @@ END%%
 
 %%ANKI
 Basic
-What is the missing RHS of cofunction identity $\tan{x} = \ldots$?
+The cofunction identity states $\tan{x}$ equals what?
 Back: $\cot{\left( \frac{\pi}{2} - x \right)}$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1753797639503-->
@@ -291,7 +291,7 @@ END%%
 
 %%ANKI
 Basic
-What is the missing RHS of cofunction identity $\cos{x} = \ldots$?
+The cofunction identity states $\cos{x}$ equals what?
 Back: $\sin{\left( \frac{\pi}{2} - x \right)}$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1753797639507-->
@@ -299,7 +299,7 @@ END%%
 
 %%ANKI
 Basic
-What is the missing RHS of cofunction identity $\sec{x} = \ldots$?
+The cofunction identity states $\sec{x}$ equals what?
 Back: $\csc{\left( \frac{\pi}{2} - x \right)}$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1753797639510-->
@@ -307,7 +307,7 @@ END%%
 
 %%ANKI
 Basic
-What is the missing RHS of cofunction identity $\csc{x} = \ldots$?
+The cofunction identity states $\csc{x}$ equals what?
 Back: $\sec{\left( \frac{\pi}{2} - x \right)}$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1753797639513-->
