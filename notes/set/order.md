@@ -1643,13 +1643,18 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1752330043285-->
 END%%
 
-## Initial Segments
+### Initial Segments
 
-Let $\leq$ be a partial order on set $A$. Then the **initial segment up to $t$**, for some $t \in A$, is $$\mathop{\text{seg}_\leq} t = \{ x \in A \mid x \leq t \}.$$
+Let $<$ be a strict well ordering on set $A$. Then the **initial segment up to $t$**, for some $t \in A$, is $$\mathop{\text{seg}_<} t = \{ x \in A \mid x < t \}.$$
+
+For a set $B$, define set $^{<A}B$ and [[classes|class]] $^{<A}\mathbf{V}$ respectively as $$\begin{align*}
+^{<A}B & = \{ f \mid \text{for some } t \in A, f \text{ is a function from } \mathop{\text{seg}_<}{t} \text{ into } B \}, \\
+^{<A} \mathbf{V} & = \{ f \mid \text{for some } t \in A, f \text{ is a function with } \mathop{\text{dom}} f = \mathop{\text{seg}_<} t \}.
+\end{align*}$$
 
 %%ANKI
 Basic
-Let $\leq$ be a partial order on $A$ and let $t \in A$. What does $\mathop{\text{seg}_\leq} t$ denote?
+Let $<$ be a strict well ordering on $A$ and let $t \in A$. What does $\mathop{\text{seg}_<} t$ denote?
 Back: The initial segment up to $t$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1752493936291-->
@@ -1657,26 +1662,18 @@ END%%
 
 %%ANKI
 Basic
-Let $\leq$ be a partial order on $A$ and let $t \in A$. How is the initial segment up to $t$ denoted?
-Back: $\mathop{\text{seg}_\leq} t$
+Let $<$ be a strict well ordering on $A$ and let $t \in A$. How is the initial segment up to $t$ denoted?
+Back: $\mathop{\text{seg}_<} t$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1752493936298-->
 END%%
 
 %%ANKI
 Basic
-Let $<$ be a partial order on set $A$. What is the initial segment up to $t \in A$?
+Let $<$ be a strict well ordering on set $A$. What is the initial segment up to $t \in A$?
 Back: Set $\{x \in A \mid x < t \}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1752493936301-->
-END%%
-
-%%ANKI
-Basic
-Let $\leq$ be a partial order on set $A$. What is the initial segment up to $t \in A$?
-Back: Set $\{x \in A \mid x \leq t \}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1752493936304-->
 END%%
 
 %%ANKI
@@ -1687,6 +1684,100 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1752493936307-->
 END%%
 
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on set $A$. Let $B$ be a set. What kind of mathematical entity is $^{<A} B$?
+Back: A set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754245698939-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on set $A$. Let $B$ be a set. How is $^{<A}B$ defined?
+Back: As $$^{<A}B = \{ f \mid \text{for some } t \in A, f \text{ is a function from } \mathop{\text{seg}_<}t \text{ into } B \}.$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754245698940-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on set $A$. Let $B$ be a set. What kind of mathematical entity is $f \in {^{<A}B}$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754245698941-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on set $A$. Let $B$ be a set, and $f \in {^{<A}B}$. What is the domain of $f$?
+Back: $\mathop{\text{seg}_<}t$ for some $t \in A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754245698942-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on set $A$. Let $B$ be a set and $f \in {^{<A}B}$. What is the codomain of $f$?
+Back: $B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754245698943-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on set $A$. What kind of mathematical entity does Enderton have $^{<A}\mathbf{V}$ denote?
+Back: A class.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754245698944-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on set $A$. How does Enderton define $^{<A}\mathbf{V}$?
+Back: As $$^{<A}\mathbf{V} = \{ f \mid \text{for some } t \in A, f \text{ is a function with } \mathop{\text{dom}}f = \mathop{\text{seg}_t} A \}.$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754245698945-->
+END%%
+
+%%ANKI
+Basic
+For what concept does Enderton introduce $^{<A}B$ notation?
+Back: Transfinite recursion.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754245698946-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on set $A$. Let $f \in {^{<A}\mathbf{V}}$. What is the domain of $f$?
+Back: For some $t \in A$, $\mathop{\text{seg}_<}t$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754245698947-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on set $A$. Let $f \in {^{<A}\mathbf{V}}$. What is the domain of $f$?
+Back: For some $t \in A$, $\mathop{\text{seg}_<}t$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on set $A$. Let $f \in {^{<A}\mathbf{V}}$. What is the codomain of $f$?
+Back: N/A. This is intentionally unspecified.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754245698948-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on set $A$. What kind of mathematical entity is $f \in {^{<A}\mathbf{V}}$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754245698949-->
+END%%
 
 ## Bibliography
 

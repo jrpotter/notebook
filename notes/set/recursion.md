@@ -494,6 +494,96 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1729804914204-->
 END%%
 
+## Transfinite Recursion
+
+For any formula $\gamma(x, y)$, the following is a theorem:
+
+> Assume that $<$ is a [[order#Well Order|well ordering]] on a set $A$. Assume that for any $f$ there is a unique $y$ such that $\gamma(f, y)$. Then there exists a function $F$ with domain $A$ such that, for all $t \in A$, $$\gamma(F \restriction \mathop{\text{seg}_<}t, F(t)).$$
+
+We say $F$ is **$\gamma$-constructed** if $\gamma(F \restriction \mathop{\text{seg}_<}t, F(t))$ holds for all $t \in \mathop{\text{dom}} F$.
+
+%%ANKI
+Basic
+The transfinite recursion theorem asserts the existence of what kind of mathematical entity?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754246610267-->
+END%%
+
+%%ANKI
+Basic
+Let $\gamma(x, y)$ be a formula. What does the transfinite recursion theorem state?
+Back: Assume $<$ is a well ordering on a set $A$. Assume that for any $f$ there is a unique $y$ such that $\gamma(f, y)$. Then there exists a function $F$ with domain $A$ such that, for all $t \in A$, $$\gamma(F \restriction \mathop{\text{seg}_t}, F(t)).$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754246610268-->
+END%%
+
+%%ANKI
+Basic
+The transfinite recursion theorem assumes existence of what kind of ordering?
+Back: A well order.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754246610270-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the transfinite recursion theorem employ a formula, e.g. $\gamma(x, y)$?
+Back: Because classes have no ontological status in the Zermelo-Fraenkel alternative.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754246610271-->
+END%%
+
+%%ANKI
+Cloze
+For any formula $\gamma(x, y)$, the following is a theorem:
+
+> Assume $<$ is a {well ordering} on set $A$. Assume {for all $f$} there exists a {unique $y$} such that {$\gamma(f, y)$}. Then there exists a {unique function $F$} with {domain $A$} such that {$\gamma(F \restriction \mathop{\text{seg}_<}t, F(t))$}.
+
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754246610272-->
+END%%
+
+%%ANKI
+Basic
+The transfinite recursion theorem is a generalization of what other theorem?
+Back: The recursion theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754246610273-->
+END%%
+
+%%ANKI
+Basic
+In what way does the transfinite recursion theorem generalize the recursion theorem?
+Back: It applies to any well ordering, not just $\in$ on the natural numbers.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754246610274-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a well ordering on $A$. Suppose $F$ is $\gamma$-constructed. What kind of mathematical entity is $F$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754246929394-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a well ordering on $A$. Suppose $F$ is $\gamma$-constructed. What kind of mathematical entity is $\gamma$?
+Back: N/A. It's a general formula.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754246929400-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a well ordering on $A$. What does it mean for $F$ to be $\gamma$-constructed?
+Back: $\gamma(F \restriction \mathop{\text{seg}_<}t, F(t))$ is true for all $t \in \mathop{\text{dom}}F$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754246929403-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

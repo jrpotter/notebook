@@ -22,7 +22,7 @@ END%%
 Basic
 Why is the Axiom of Choice named the way it is?
 Back: It assumes the existence of some choice function.
-Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
+Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
 <!--ID: 1720964209614-->
 END%%
 
@@ -30,7 +30,7 @@ END%%
 Basic
 The Axiom of Choice assumes the existence of what?
 Back: A choice function.
-Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
+Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
 <!--ID: 1742768673990-->
 END%%
 
@@ -38,7 +38,7 @@ END%%
 Basic
 What is the fundamental reason AoC is considered controversial?
 Back: It is non-constructive: there is no procedure we can follow to decide which element to choose.
-Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
+Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
 <!--ID: 1742768674003-->
 END%%
 
@@ -46,7 +46,7 @@ END%%
 Basic
 In Russell's analogy, why is AoC unnecessary to pick left shoes from an infinite set of shoe pairs?
 Back: The choice function can be defined directly, i.e. as "pick left shoe".
-Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
+Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
 <!--ID: 1720964209620-->
 END%%
 
@@ -54,7 +54,7 @@ END%%
 Basic
 In Russell's analogy, why is AoC necessary to pick socks from an infinite set of sock pairs?
 Back: There is no choice function to choose/prefer one sock from/over the other.
-Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
+Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
 <!--ID: 1720964209624-->
 END%%
 
@@ -62,7 +62,7 @@ END%%
 Basic
 What objects does Russell's analogy use when explaining AoC?
 Back: Pairs of shoes vs. pairs of (indistinguishable) socks.
-Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
+Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
 <!--ID: 1720964209627-->
 END%%
 
@@ -822,6 +822,6 @@ END%%
 
 ## Bibliography
 
-* “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
+* “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 * “Zorn’s Lemma.” In _Wikipedia_, March 12, 2025. [https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma](https://en.wikipedia.org/w/index.php?title=Zorn%27s_lemma&oldid=1280130090).

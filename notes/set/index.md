@@ -1182,7 +1182,5 @@ END%%
 
 ## Bibliography
 
-* “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-* “Russell’s Paradox,” in *Wikipedia*, April 18, 2024, [https://en.wikipedia.org/w/index.php?title=Russell%27s_paradox&oldid=1219576437](https://en.wikipedia.org/w/index.php?title=Russell%27s_paradox&oldid=1219576437).
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
