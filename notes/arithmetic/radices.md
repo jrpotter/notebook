@@ -107,7 +107,7 @@ END%%
 
 %%ANKI
 Cloze
-A nibble consists of {1} hexadecimal digits.
+A nibble consists of {1} hexadecimal digit(s).
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: binary::hex
 <!--ID: 1708534663022-->

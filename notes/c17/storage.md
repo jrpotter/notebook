@@ -200,9 +200,9 @@ END%%
 
 ### Thread Local
 
-An object whose identifier is declared with the storage-class specified `_Thread_local` has thread storage duration.
+An object whose identifier is declared with the storage-class specified `_Thread_local` has thread storage duration. Its lifetime is the entire execution of the thread for which it is created, and its stored value is initialized when the thread is started.
 
-Its lifetime is the entire execution of the thread for which it is created, and its stored value is initialized when the thread is started.
+Refer to [[threads#Thread-Local Storage|TLS]].
 
 %%ANKI
 Basic

@@ -1006,6 +1006,52 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1752949037150-->
 END%%
 
+## Safety
+
+A function is **async-signal-safe** if and only if it can be safely called from a signal handler. This holds either because it is [[threads#Safety|reentrant]] or because it cannot be interrupted by a signal handler.
+
+%%ANKI
+Basic
+What is an async-signal-safe function?
+Back: A function that can be safely called from a signal handler.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753825971358-->
+END%%
+
+%%ANKI
+Cloze
+{1:Threads} are to {2:thread-safe} functions whereas {2:signals} are to {1:async-signal-safe} functions.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753825971367-->
+END%%
+
+%%ANKI
+Basic
+A function `f` is async-signal-safe if either of what two conditions hold?
+Back:
+1. `f` is reentrant.
+2. `f` cannot be interrupted by a signal handler.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753825971370-->
+END%%
+
+%%ANKI
+Basic
+What name is used to describe functions that can be called safely in signal handlers?
+Back: Async-signal-safe functions.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1753825971373-->
+END%%
+
+%%ANKI
+Basic
+With respect to signals, what variables should be marked as `volatile`?
+Back: Global variables modified by a signal handler and accessed elsewhere.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1753897177560-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

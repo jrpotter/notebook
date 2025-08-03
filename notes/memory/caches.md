@@ -1172,7 +1172,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* do larger cache blocks help programs that exploit spatial locality?
+For a given cache size, *why* do larger cache blocks help programs that exploit spatial locality?
 Back: More adjacent data objects can be stored into the cache block at once.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1750822262270-->
@@ -1180,8 +1180,8 @@ END%%
 
 %%ANKI
 Basic
-*Why* do larger cache blocks hurt programs that exploit temporal locality?
-Back: For a given cache size, larger cache blocks imply fewer cache lines.
+For a given cache size, *why* do larger cache blocks hurt programs that exploit temporal locality?
+Back: Larger cache blocks imply fewer cache lines.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1750822262274-->
 END%%

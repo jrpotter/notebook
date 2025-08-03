@@ -319,8 +319,8 @@ Basic
 How is equivalence between properties `P` and `Q` expressed in RDFS?
 Back:
 ```turtle
-A rdf:subPropertyOf B .
-B rdf:subPropertyOf A .
+A rdfs:subPropertyOf B .
+B rdfs:subPropertyOf A .
 ```
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1750206490901-->
@@ -359,7 +359,9 @@ CONSTRUCT { ?s ?p ?x. }
 WHERE { ?s ?p ?y. ?x owl:sameAs ?y. }
 ```
 
-with the reverse direction handled by noting `owl:sameAs` is a `owl:SymmetricProperty`.  Likewise, `owl:differentFrom` states two individuals are semantically distinct.
+The reverse direction is handled by noting `owl:sameAs` is a `owl:SymmetricProperty`.
+
+The `owl:differentFrom` property states two individuals are semantically distinct. The `owl:AllDifferent` class allows stating multiple individuals are all distinct from one another.
 
 %%ANKI
 Basic
@@ -431,6 +433,29 @@ Which OWL construct allows stating two individuals are semantically distinct?
 Back: `owl:differentFrom`
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1752244430350-->
+END%%
+
+%%ANKI
+Basic
+What does the `owl:AllDifferent` class specify?
+Back: It indicates every listed individual is `owl:differentFrom` one another.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754021301608-->
+END%%
+
+%%ANKI
+Basic
+Which class generalizes `owl:differentFrom` to more than two classes?
+Back: `owl:AllDifferent`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754021301618-->
+END%%
+
+%%ANKI
+Cloze
+{`owl:differentFrom`} is a property whereas {`owl:AllDifferent`} is a class.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754021301622-->
 END%%
 
 ## Functional Properties
@@ -1148,10 +1173,75 @@ END%%
 
 %%ANKI
 Basic
+The `owl:complementOf` property takes what as a subject?
+Back: A class.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754020829208-->
+END%%
+
+%%ANKI
+Basic
 The `owl:complementOf` property takes what as a value?
 Back: A class.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1753535106808-->
+END%%
+
+### Disjointedness
+
+The `owl:disjointWith` property indicates that the class extensions of two classes do not overlap in any way.
+
+```turtle
+C1 owl:disjointWith C2 .
+```
+
+The `owl:AllDisjointClasses` allows specifying more than two classes at a time.
+
+%%ANKI
+Basic
+Which OWL construct corresponds to disjoint sets?
+Back: `owl:disjointWith`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754020829219-->
+END%%
+
+%%ANKI
+Basic
+The `owl:disjointWith` property takes what as a subject?
+Back: A class.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754020829223-->
+END%%
+
+%%ANKI
+Basic
+The `owl:disjointWith` property takes what as a value?
+Back: A class.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754020829226-->
+END%%
+
+%%ANKI
+Basic
+Which class generalizes `owl:disjointWith` to more than two classes?
+Back: `owl:AllDisjointClasses`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754021301625-->
+END%%
+
+%%ANKI
+Cloze
+{`owl:disjointWith`} is a property whereas {`owl:AllDisjointClasses`} is a class.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754021301628-->
+END%%
+
+%%ANKI
+Basic
+What does the `owl:AllDisjointClasses` class specify?
+Back: It indicates every listed class is `owl:disjointWith` one another.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754021301631-->
 END%%
 
 ## Description Logic

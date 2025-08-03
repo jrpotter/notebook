@@ -479,15 +479,6 @@ END%%
 
 %%ANKI
 Basic
-Which locale category is related to how numeric values are formatted?
-Back: N/A. Depends if the numeric values are monetary-related or not.
-Reference: `man 7 locale`
-Tags: c17 linux
-<!--ID: 1753391372230-->
-END%%
-
-%%ANKI
-Basic
 Which locale category is related to how non-monetary numeric values are formatted?
 Back: `LC_NUMERIC`
 Reference: `man 7 locale`

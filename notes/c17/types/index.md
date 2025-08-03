@@ -1937,7 +1937,9 @@ END%%
 
 #### Arrays
 
-An array is a contiguous sequence of objects. An array is either a **fixed-length array** or a **variable-length array**.
+An array is a contiguous sequence of objects. A **fixed-length array** (FLA) has a predetermined size. Their stack allocations can be computed at compilation time. A **variable-length array** (VLA) has its size determined at runtime. Their stack allocations must be determined with respect to other registers available to the frame.
+
+Evaluation of an array `A` returns `&A[0]`, i.e. a [[#Pointers|pointer]] to the first array element. This is called **array decay**.
 
 %%ANKI
 Cloze
@@ -2425,8 +2427,6 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1727957576041-->
 END%%
 
-Evaluation of an array `A` returns `&A[0]`, i.e. a [[#Pointers|pointer]] to the first array element. This is called **array decay**.
-
 %%ANKI
 Basic
 What is the effect of array decay?
@@ -2466,10 +2466,6 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1732551953240-->
 END%%
 
-##### Fixed-Length
-
-A fixed-length array (FLA) has a predetermined size. Their stack allocations can be computed at compilation time.
-
 %%ANKI
 Basic
 What is FLA an acronym for?
@@ -2505,10 +2501,6 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 Tags: processor::x86-64
 <!--ID: 1731952634167-->
 END%%
-
-##### Variable-Length
-
-A variable-length array (VLA) has its size determined at runtime. Their stack allocations must be determined with respect to other registers available to the frame.
 
 %%ANKI
 Basic

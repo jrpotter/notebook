@@ -28,14 +28,6 @@ END%%
 
 %%ANKI
 Basic
-What two characteristics are used to evaluate how good a shape is?
-Back: Its efficiency and its flexibility.
-Reference: “Shape at Sensei’s Library.” Accessed June 20, 2025. [https://senseis.xmp.net/?Shape](https://senseis.xmp.net/?Shape).
-<!--ID: 1750472548755-->
-END%%
-
-%%ANKI
-Basic
 What does it mean for a shape to be efficient?
 Back: It uses as few stones as possible to accomplish a given task.
 Reference: “Shape at Sensei’s Library.” Accessed June 20, 2025. [https://senseis.xmp.net/?Shape](https://senseis.xmp.net/?Shape).

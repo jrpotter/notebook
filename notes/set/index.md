@@ -1081,6 +1081,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1753740228022-->
 END%%
 
+%%ANKI
+Basic
+*Why* does the Zermelo-Fraenkel alternative employ axiom schemas?
+Back: Because classes have no ontological status, i.e. they can't be used.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1754145622895-->
+END%%
+
 ## Infinity Axiom
 
 There exists an [[natural_numbers#Inductive Sets|inductive]] set: $$\exists A, [\varnothing \in A \land (\forall a \in A, a^+ \in A)]$$

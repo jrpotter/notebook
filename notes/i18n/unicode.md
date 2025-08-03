@@ -777,22 +777,6 @@ Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accesse
 END%%
 
 %%ANKI
-Basic
-What is a diacritic?
-Back: A sign adorned on a letter indicating a change in pronunciation.
-Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
-<!--ID: 1745728695695-->
-END%%
-
-%%ANKI
-Basic
-Where are diacritics usually found?
-Back: Either above or below the marked letter.
-Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
-<!--ID: 1745728695699-->
-END%%
-
-%%ANKI
 Cloze
 Grapheme clusters are {composed}, {decomposed}, or some mix of the two.
 Reference: Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).

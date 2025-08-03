@@ -481,6 +481,110 @@ Tags: serialization::xml
 <!--ID: 1734805690328-->
 END%%
 
+## Dereferencing
+
+There are two standard naming schemes for creating dereferenceable HTTP URIs. These separate the last part of a URI using either a hash (`#`) or a slash (`/`).
+
+When using hash URIs, a URI with no fragment is used to reference a page. A URI with a fragment is used to reference a thing. The `#this` fragment is often appended to a URI to describe the thing a page is about.
+
+When using slash URIs, a URI that responds with status code `200` returns a representation of the page itself. A response with status code `303` gives a URI that describes the thing the page is about.
+
+%%ANKI
+Basic
+What are the two standard naming schemes for dereferencing URIs?
+Back: Hash URIs and slash URIs.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754011556355-->
+END%%
+
+%%ANKI
+Basic
+Which of hash URIs or slash URIs employ redirects?
+Back: Slash URIs.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754011556359-->
+END%%
+
+%%ANKI
+Basic
+What syntactically distinguishes hash URIs and slash URIs?
+Back: The last part of a URI is separated with a `#` in the former and a `/` in the latter.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754011556362-->
+END%%
+
+%%ANKI
+Basic
+Which of hash URIs or slash URIs is considered more modular?
+Back: Slash URIs.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754011556365-->
+END%%
+
+%%ANKI
+Basic
+What does the HTTP dereferencing range issue concern itself with?
+Back: The ambiguity around whether a URI refers to a page or a thing.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754011556368-->
+END%%
+
+%%ANKI
+Basic
+Using hash URIs, what does URI `http://www.example.com/bob` refer to?
+Back: The document at URI `http://www.example.com/bob`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754011556371-->
+END%%
+
+%%ANKI
+Basic
+Using hash URIs, what does URI `http://www.example.com/bob#this` refer to?
+Back: The thing described by `http://www.example.com/bob` (i.e. `bob`).
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754011556377-->
+END%%
+
+%%ANKI
+Basic
+Which redirect code is used with slash URIs?
+Back: `303` See Other.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754011556380-->
+END%%
+
+%%ANKI
+Basic
+What readable name is associated with HTTP status code `303`?
+Back: See other.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754011556383-->
+END%%
+
+%%ANKI
+Basic
+Which fragment is typically used with hash URIs to solve the HTTP dereferencing range issue?
+Back: `#this`
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754011556386-->
+END%%
+
+%%ANKI
+Basic
+Using slash URIs, how is the response with status code `200` interpreted when requesting `http://www.example.com/bob`?
+Back: As a description of the document at URI `http://www.example.com/bob`.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754011556389-->
+END%%
+
+%%ANKI
+Basic
+Using slash URIs, how is the response with status code `303` interpreted when requesting `http://www.example.com/bob`?
+Back: As a URI of the thing described by `http://www.example.com/bob` (i.e. `bob`).
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1754011556393-->
+END%%
+
 ## Bibliography
 
 * Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.

@@ -883,7 +883,7 @@ int sum2d(int n, int m, int a[n][m]);
 ```
 Back:
 ```c
-int sum2d(int, int, int a[*][*]);
+int sum2d(int, int, int[*][*]);
 ```
 Reference: https://stackoverflow.com/a/17371914
 <!--ID: 1733144155073-->
