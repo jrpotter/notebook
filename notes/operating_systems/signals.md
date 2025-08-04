@@ -1027,16 +1027,6 @@ END%%
 
 %%ANKI
 Basic
-A function `f` is async-signal-safe if either of what two conditions hold?
-Back:
-1. `f` is reentrant.
-2. `f` cannot be interrupted by a signal handler.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1753825971370-->
-END%%
-
-%%ANKI
-Basic
 What name is used to describe functions that can be called safely in signal handlers?
 Back: Async-signal-safe functions.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

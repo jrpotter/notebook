@@ -20,7 +20,7 @@ END%%
 
 %%ANKI
 Cloze
-{`goto`} is to C whereas {`jmp`} is to x86-64.
+`goto` is to C whereas {`jmp`} is to x86-64.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 Tags: x86-64
 <!--ID: 1753827838097-->
@@ -177,7 +177,7 @@ END%%
 
 %%ANKI
 Basic
-What does the controlling expression of a conditional?
+What does the controlling expression of a conditional refer to?
 Back: The expression being checked for truthiness.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1753897177611-->
@@ -193,7 +193,7 @@ END%%
 
 %%ANKI
 Basic
-Gustedt defines a conditional into what two parts?
+Gustedt divides a conditional into what two parts?
 Back: The controlling expression and dependent block.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1753897177618-->
@@ -235,7 +235,7 @@ END%%
 %%ANKI
 Basic
 What restriction is enforced on the return value of `setjmp`?
-Back: It can only be used in simple comparsions of a conditional's controlling expression.
+Back: It can only be used in simple comparsions within a conditional's controlling expression.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1753897177636-->
 END%%

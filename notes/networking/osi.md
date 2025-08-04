@@ -29,14 +29,6 @@ END%%
 
 %%ANKI
 Basic
-How many layers exist in the OSI model?
-Back: Seven.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1749131741095-->
-END%%
-
-%%ANKI
-Basic
 Roughly speaking, networked devices are expected to implement which layers of the OSI model?
 Back: The physical, link, and network layers.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
@@ -59,7 +51,19 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1749134703541-->
 END%%
 
-## Physical
+## Layers
+
+The OSI model has seven layers.
+
+%%ANKI
+Basic
+How many layers exist in the OSI model?
+Back: Seven.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1749131741095-->
+END%%
+
+### Physical
 
 Specifies methods for moving digital information across a communication medium.
 
@@ -111,7 +115,7 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1749134703562-->
 END%%
 
-## Link
+### Link
 
 Specifies methods for establishing connectivity to a neighbor sharing the same medium and, in general, for communication across a single link.
 
@@ -178,7 +182,7 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1749134703592-->
 END%%
 
-## Network
+### Network
 
 Specifies methods for communicating in a multihop fashion across potentially different types of link networks.
 
@@ -238,7 +242,7 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1749134703617-->
 END%%
 
-## Transport
+### Transport
 
 Specifies methods for end-to-end communication between applications on a network.
 
@@ -281,7 +285,7 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1749134703635-->
 END%%
 
-## Session
+### Session
 
 Specifies methods for multiple connections constituting a communication session.
 
@@ -332,7 +336,7 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1749134703656-->
 END%%
 
-## Presentation
+### Presentation
 
 Specifies methods for preparing data for transmission and reception between different systems.
 
@@ -383,7 +387,7 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1749134703677-->
 END%%
 
-## Application
+### Application
 
 Specifies methods for accomplishing some user-initiated task.
 

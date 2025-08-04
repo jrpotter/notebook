@@ -38,6 +38,15 @@ Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [htt
 <!--ID: 1751121327332-->
 END%%
 
+%%ANKI
+Basic
+What layer in the OSI model is IP concerned with?
+Back: L3, i.e. the network layer.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+Tags: networking::osi
+<!--ID: 1754342300838-->
+END%%
+
 ## Allocation
 
 IP address space is **allocated**, usually in large chunks, by a collection of hierarchically organized **authorities**.
@@ -251,7 +260,9 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1753369239559-->
 END%%
 
-## Unicast
+## Addressing Methods
+
+### Unicast
 
 A **unicast** delivers a message to a specific host in a network using a *one-to-one* association between a sender and receiver.
 
@@ -289,7 +300,7 @@ Reference: “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [htt
 <!--ID: 1751119772849-->
 END%%
 
-## Broadcast
+### Broadcast
 
 A **broadcast** delivers a message to all hosts in a network using a *one-to-all* association. A single message from one sender is routed to all possible endpoints associated with a broadcast address.
 
@@ -510,7 +521,7 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1752191422512-->
 END%%
 
-## Multicast
+### Multicast
 
 A **multicast** delivers a message to a group of hosts in a network using a *one-to-many-of-many* or *many-to-many-of-many* association. Messages are routed simultaneously in a single transmission to many recipients.
 
@@ -644,7 +655,7 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1753822510505-->
 END%%
 
-## Anycast
+### Anycast
 
 An **anycast** delivers a message to any one out of a group of hosts using a *one-to-one-of-many* association. Typically the recipient is the one closest to the source of the message.
 

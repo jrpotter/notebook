@@ -226,7 +226,67 @@ int main() {
 
 The above snippet can be used to check endianness on the current machine. If big-endian, the output should be `01 23 45 67`. If little-endian, `67 45 23 01`.
 
+### Network Order
+
+Bytes sent out over a network are always in big-endian mode. For this reason, we call big-endian mode the **network byte order**. In contrast, the endianness of the machine connected to a network is called **host byte order**. This may be either big-endian or little-endian.
+
+%%ANKI
+Basic
+What endianness is network byte order in?
+Back: Big-endianness.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754343624446-->
+END%%
+
+%%ANKI
+Basic
+What endianness is host byte order in?
+Back: Either big-endianness or little-endianness.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754343624450-->
+END%%
+
+%%ANKI
+Basic
+*Why* is network byte order named the way it is?
+Back: It is the endianness used by networking protocols.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754343624455-->
+END%%
+
+%%ANKI
+Cloze
+{Network} byte order is in potential contrast to {host} byte order.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754343624459-->
+END%%
+
+%%ANKI
+Basic
+What do network and host byte order refer?
+Back: Endianness.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754343624463-->
+END%%
+
+%%ANKI
+Basic
+Which of network or host byte order should be used when sending data?
+Back: Network.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754343624468-->
+END%%
+
+%%ANKI
+Basic
+Which of network or host byte order should be used when receiving data?
+Back: Host.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754343624473-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 * “Endianness,” in _Wikipedia_, December 19, 2024, [https://en.wikipedia.org/w/index.php?title=Endianness](https://en.wikipedia.org/w/index.php?title=Endianness&oldid=1264018894).
+* Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.

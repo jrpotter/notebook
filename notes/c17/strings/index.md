@@ -438,7 +438,7 @@ END%%
 
 %%ANKI
 Basic
-What kind of string literal is prefixed with a `u`?
+Assuming relevant macros are defined, what kind of string literal is prefixed with a `u`?
 Back: A UTF-16 encoded string.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 Tags: i18n::unicode
@@ -447,7 +447,7 @@ END%%
 
 %%ANKI
 Basic
-What kind of string literal is prefixed with a `U`?
+Assuming relevant macros are defined, what kind of string literal is prefixed with a `U`?
 Back: A UTF-32 encoded string.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 Tags: i18n::unicode
@@ -537,7 +537,7 @@ END%%
 
 %%ANKI
 Basic
-When is `U"..."` guaranteed to be UTF-16 encoded?
+When is `U"..."` guaranteed to be UTF-32 encoded?
 Back: When `__STDC_UTF_32__` is defined to `1`.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 Tags: i18n::unicode

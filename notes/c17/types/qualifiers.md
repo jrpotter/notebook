@@ -48,7 +48,7 @@ END%%
 
 %%ANKI
 Basic
-What type *should* be given to string literals?
+If introduced today, what type *should* be given to string literals?
 Back: `char const[]`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1753897177576-->

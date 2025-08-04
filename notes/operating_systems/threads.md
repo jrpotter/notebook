@@ -122,11 +122,24 @@ END%%
 
 %%ANKI
 Basic
-Suppose a C function has arguments that are only passed by value. Is it guaranteed reentrant?
-Back: No, if it accesses shared data in the function body.
+Can a C function with the following properties be guaranteed reentrant? Why?
+* Arguments are passed only by value.
+* No arguments correspond to pointers.
+Back: No. It might still access shared data in the function body.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1753825531625-->
+END%%
+
+%%ANKI
+Basic
+Can a C function with the following properties be guaranteed reentrant? Why?
+* Arguments are passed only by value.
+* No access to global data in the function body.
+Back: No. It may still be passed a pointer (by value).
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1754314232637-->
 END%%
 
 %%ANKI

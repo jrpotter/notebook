@@ -82,6 +82,22 @@ END%%
 
 %%ANKI
 Basic
+How many bits make up an IPv6 address's block?
+Back: `16` bits.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1754343624434-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up an IPv6 address's block?
+Back: Two.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1754343624439-->
+END%%
+
+%%ANKI
+Basic
 How many blocks make up an IPv6 address?
 Back: Eight.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.

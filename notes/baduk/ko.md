@@ -156,7 +156,7 @@ END%%
 
 %%ANKI
 Cloze
-A {1:multi-step} ko involves {2:one} ko whereas a {2:multi-stage} ko involes {1:at least two} ko.
+A {1:multi-step} ko involves {2:one} ko whereas a {2:multi-stage} ko involves {1:at least two} ko.
 Reference: Davies, James. _Elementary Go Series Vol. 4 - Life and Death_. Vol. 4. 7 vols., n.d.
 <!--ID: 1751208761539-->
 END%%
