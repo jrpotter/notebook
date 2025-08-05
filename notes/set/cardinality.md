@@ -2546,7 +2546,7 @@ END%%
 
 %%ANKI
 Basic
-What is the following a reformulation of?
+The following is a reformulation of what hypothesis?
 
 > Every uncountable set of real numbers is equinumerous to the set of all real numbers.
 

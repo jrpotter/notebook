@@ -1,0 +1,525 @@
+---
+title: Networking
+TARGET DECK: Obsidian::STEM
+FILE TAGS: c17::networking
+tags:
+  - networking
+---
+
+## Overview
+
+Typically C network code begins with address resolution.
+
+Each `addrinfo` struct, one or more of which is returned by `getaddrinfo()`, contains an Internet address that can be specified in a call to `bind()` or `connect()`. It contains the following fields:
+
+```c
+struct addrinfo {
+  int              ai_flags;
+  int              ai_family;
+  int              ai_socktype;
+  int              ai_protocol;
+  socklen_t        ai_addrlen;
+  struct sockaddr *ai_addr;
+  char            *ai_canonname;
+  struct addrinfo *ai_next;
+};
+```
+
+For Internet-facing code:
+
+* The `ai_family` field indicates which address family is being used.
+	* `AF_INET` or `AF_INET6` are used for [[ipv4|IPv4]] and [[ipv6|IPv6]] respectively.
+	* `AF_UNSPEC` can be provided instead if IPv4 or IPv6 can be used.
+* The `ai_socktype` field indicates which socket type is being used.
+	* `SOCK_STREAM` or `SOCK_DGRAM` are used for [[tcp|TCP]] and [[udp|UDP]] respectively.
+* The `ai_addr` field contains data related to the actual address.
+	* Tthis value can be cast to a `struct sockaddr_in` or `struct sockaddr_in6`, dependeing on the value of the `ai_family`.
+	* This also specifies a 16-bit **port number** used to distinguish per-application traffic on the same host.
+
+%%ANKI
+Basic
+What kind of intrusive data structure is used by `struct addrinfo`?
+Back: A linked list.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302421-->
+END%%
+
+%%ANKI
+Basic
+Which function is typically used to retrieve `struct addrinfo`s?
+Back: `getaddrinfo`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302430-->
+END%%
+
+%%ANKI
+Basic
+Which C header file contains `struct addrinfo`?
+Back: `<netdb.h>`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302433-->
+END%%
+
+%%ANKI
+Basic
+Which prefix is used by the fields in a `struct addrinfo`?
+Back: `ai_`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302437-->
+END%%
+
+%%ANKI
+Basic
+What field/value is used to specify a TCP connection?
+```c
+struct addrinfo {
+  int              ai_flags;
+  int              ai_family;
+  int              ai_socktype;
+  int              ai_protocol;
+  socklen_t        ai_addrlen;
+  struct sockaddr *ai_addr;
+  char            *ai_canonname;
+  struct addrinfo *ai_next;
+};
+```
+Back: `ai_socktype` with value `SOCK_STREAM`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302440-->
+END%%
+
+%%ANKI
+Basic
+What field/value is used to specify a UDP connection?
+```c
+struct addrinfo {
+  int              ai_flags;
+  int              ai_family;
+  int              ai_socktype;
+  int              ai_protocol;
+  socklen_t        ai_addrlen;
+  struct sockaddr *ai_addr;
+  char            *ai_canonname;
+  struct addrinfo *ai_next;
+};
+```
+Back: `ai_socktype` with value `SOCK_DGRAM`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302445-->
+END%%
+
+%%ANKI
+Basic
+What field/value is used to specify an IPv4 address?
+```c
+struct addrinfo {
+  int              ai_flags;
+  int              ai_family;
+  int              ai_socktype;
+  int              ai_protocol;
+  socklen_t        ai_addrlen;
+  struct sockaddr *ai_addr;
+  char            *ai_canonname;
+  struct addrinfo *ai_next;
+};
+```
+Back: `ai_family` with value `AF_INET`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302452-->
+END%%
+
+%%ANKI
+Basic
+What field/value is used to specify an IPv6 address?
+```c
+struct addrinfo {
+  int              ai_flags;
+  int              ai_family;
+  int              ai_socktype;
+  int              ai_protocol;
+  socklen_t        ai_addrlen;
+  struct sockaddr *ai_addr;
+  char            *ai_canonname;
+  struct addrinfo *ai_next;
+};
+```
+Back: `ai_family` with value `AF_INET6`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302460-->
+END%%
+
+%%ANKI
+Basic
+If the relevant address family is set, which field contains an IP address?
+```c
+struct addrinfo {
+  int              ai_flags;
+  int              ai_family;
+  int              ai_socktype;
+  int              ai_protocol;
+  socklen_t        ai_addrlen;
+  struct sockaddr *ai_addr;
+  char            *ai_canonname;
+  struct addrinfo *ai_next;
+};
+```
+Back: `ai_addr`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302466-->
+END%%
+
+%%ANKI
+Basic
+In C network programming, what does the `AF_` prefix specify?
+Back: An **a**ddress **f**amily, e.g. `AF_INET` or `AF_INET6`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302470-->
+END%%
+
+%%ANKI
+Basic
+What value can be passed to `ai_family` to indicate *either* IPv4 or IPv6?
+```c
+struct addrinfo {
+  int              ai_flags;
+  int              ai_family;
+  int              ai_socktype;
+  int              ai_protocol;
+  socklen_t        ai_addrlen;
+  struct sockaddr *ai_addr;
+  char            *ai_canonname;
+  struct addrinfo *ai_next;
+};
+```
+Back: `AF_UNSPEC`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302475-->
+END%%
+
+%%ANKI
+Cloze
+{1:IPv4} is to {2:`AF_INET`} as {2:IPv6} is to {1:`AF_INET6`}.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302479-->
+END%%
+
+%%ANKI
+Cloze
+{1:IPv4} is to {2:`sockaddr_in`} as {2:IPv6} is to {1:`sockaddr_in6`}.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302483-->
+END%%
+
+%%ANKI
+Basic
+If `ai_family` is `AF_INET`, the `ai_addr` field can be cast to what other `struct`?
+```c
+struct addrinfo {
+  int              ai_flags;
+  int              ai_family;
+  int              ai_socktype;
+  int              ai_protocol;
+  socklen_t        ai_addrlen;
+  struct sockaddr *ai_addr;
+  char            *ai_canonname;
+  struct addrinfo *ai_next;
+};
+```
+Back: A `struct sockaddr_in`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302487-->
+END%%
+
+%%ANKI
+Basic
+If `ai_family` is `AF_INET6`, the `ai_addr` field can be cast to what other `struct`?
+```c
+struct addrinfo {
+  int              ai_flags;
+  int              ai_family;
+  int              ai_socktype;
+  int              ai_protocol;
+  socklen_t        ai_addrlen;
+  struct sockaddr *ai_addr;
+  char            *ai_canonname;
+  struct addrinfo *ai_next;
+};
+```
+Back: A `struct sockaddr_in6`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302491-->
+END%%
+
+%%ANKI
+Basic
+What does the `_in` suffix in `struct sockaddr_in` indicate?
+Back: An **In**ternet (IPv4) address.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302496-->
+END%%
+
+%%ANKI
+Basic
+What does the `_in6` suffix in `struct sockaddr_in6` indicate?
+Back: An **In**ternet (IPv**6**) address.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754382302502-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of a port number?
+Back: It distinguishes traffic sent to the same IP address.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754343624413-->
+END%%
+
+%%ANKI
+Basic
+How many bits make up a port number?
+Back: `16` bits.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754343624421-->
+END%%
+
+%%ANKI
+Basic
+How many bytes make up a port number?
+Back: Two.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754343624425-->
+END%%
+
+%%ANKI
+Basic
+Which port numbers are considered reserved?
+Back: Those under `1024`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754343624429-->
+END%%
+
+%%ANKI
+Basic
+What is an address family?
+Back: A format used by addresses for routing by a network (L3) protocol.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754403601867-->
+END%%
+
+%%ANKI
+Basic
+What are the members of the `AF_INET` address family?
+Back: IPv4 addresses.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754403601870-->
+END%%
+
+%%ANKI
+Basic
+What are the members of the `AF_INET6` address family?
+Back: IPv6 addresses.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754403601872-->
+END%%
+
+## Socket
+
+The `socket()` function is used to get a socket descriptor. Typically this function is supplied values from a `struct addrinfo` populated by the `getaddrinfo()` function.
+
+```c
+int socket(int domain, int type, int protocol);
+```
+
+%%ANKI
+Basic
+Which C header file contains socket-related functionality?
+Back: `<sys/socket.h>`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754342300798-->
+END%%
+
+%%ANKI
+Basic
+What C function is used to create a socket?
+Back: `socket`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754342300803-->
+END%%
+
+%%ANKI
+Basic
+What does the return value of `socket` correspond to?
+Back: The newly created socket's file descriptor.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754342300807-->
+END%%
+
+%%ANKI
+Basic
+What are the two primary Internet-related socket `type`s that can be passed to `socket`?
+Back: `SOCK_STREAM` and `SOCK_DGRAM`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754342300812-->
+END%%
+
+%%ANKI
+Cloze
+{1:`SOCK_STREAM`} is to {2:TCP} whereas {2:`SOCK_DGRAM`} is to {1:UDP}.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754342300816-->
+END%%
+
+%%ANKI
+Basic
+What macro is supplied to `socket` to indicate TCP?
+Back: `SOCK_STREAM`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754342300820-->
+END%%
+
+%%ANKI
+Basic
+What macro is supplied to `socket` to indicate UDP?
+Back: `SOCK_DGRAM`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754342300824-->
+END%%
+
+%%ANKI
+Basic
+Which protocol do "Stream Sockets" correspond to?
+Back: TCP.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754342300829-->
+END%%
+
+%%ANKI
+Basic
+Which protocol do "Datagram Sockets" correspond to?
+Back: UDP.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754342300833-->
+END%%
+
+%%ANKI
+Basic
+In C network programming, what does the `PF_` prefix specify?
+Back: A **p**rotocol **f**amily, e.g. `PF_INET` or `PF_INET6`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754403601875-->
+END%%
+
+%%ANKI
+Cloze
+{1:IPv4} is to {2:`PF_INET`} as {2:IPv6} is to {1:`PF_INET6`}.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754403601878-->
+END%%
+
+%%ANKI
+Basic
+What is a protocol family?
+Back: A group of network protocols that work together.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754403601881-->
+END%%
+
+%%ANKI
+Basic
+What are the members of the `PF_INET` protocol family?
+Back: Anything related to the IPv4 protocol (e.g. sockets, ports, etc.).
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754403601884-->
+END%%
+
+%%ANKI
+Basic
+What are the members of the `PF_INET6` protocol family?
+Back: Anything related to the IPv6 protocol (e.g. sockets, ports, etc.).
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754403601888-->
+END%%
+
+%%ANKI
+Basic
+How do the values of `PF_INET` and `AF_INET` relate to one another?
+Back: In practice, they are identical. In theory, they could be different.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754403601892-->
+END%%
+
+## Binding
+
+The `bind()` function is used to associate a socket descriptor to a given port on the host machine.
+
+```c
+int bind(int sockfd, struct sockaddr *my_addr, int addrlen);
+```
+
+%%ANKI
+Basic
+What is the purpose of the `bind()` function?
+Back: It associates a socket FD to a given port on the host machine.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754404434268-->
+END%%
+
+%%ANKI
+Basic
+Which function is used to associate a socket to a port?
+Back: `bind()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754404434273-->
+END%%
+
+%%ANKI
+Basic
+What function is typically used to obtain a socket FD passed to `bind()`?
+Back: `socket()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754404434276-->
+END%%
+
+%%ANKI
+Basic
+What `struct sockaddr` is expected to be passed into a call to `bind()`?
+Back: That corresponding to the address of the host machine.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754404434279-->
+END%%
+
+%%ANKI
+Basic
+*Why* does `bind()` take in a `struct sockaddr` if it's binding locally anyway?
+Back: You may have a specific local IP address you want to bind.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754404434283-->
+END%%
+
+%%ANKI
+Basic
+What ports should generally not be specified to a `bind()` call?
+Back: Those under `1024`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754404434286-->
+END%%
+
+%%ANKI
+Basic
+Assuming a process is running as a normal user, what ports can be specified to `bind()`?
+Back: Those in range `1024` and `65535` inclusive.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754404434289-->
+END%%
+
+%%ANKI
+Basic
+What is the largest available port number?
+Back: `65525`, i.e. $2^{16} - 1$.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754404434292-->
+END%%
+
+## Bibliography
+
+* Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.

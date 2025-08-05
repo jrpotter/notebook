@@ -347,7 +347,7 @@ END%%
 
 %%ANKI
 Cloze
-The $v \in \mathbb{R}^2$ and $z \in \mathbb{C}$. $\lVert v \rVert =$ {$\sqrt{v \cdot v}$} whereas $\lvert z \rvert =$ {$\sqrt{z \bar{z}}$}.
+The $v \in \mathbb{R}^2$ and $z \in \mathbb{C}$. $\lVert v \rVert =$ {$\sqrt{v \cdot v}$} whereas $\lvert z \rvert =$ {$\sqrt{z \bar{z} }$}.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1754096829575-->
 END%%
@@ -546,7 +546,7 @@ END%%
 
 %%ANKI
 Basic
-Is the absolute value on $\mathbb{C}$ a multiplicative operation?
+Is the modulus operation on $\mathbb{C}$ multiplicative?
 Back: Yes.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1754097769969-->
@@ -554,7 +554,7 @@ END%%
 
 %%ANKI
 Basic
-What does it mean for the absolute value on $\mathbb{C}$ to be a multiplicative operation?
+What does it mean for the modulus operation on $\mathbb{C}$ to be multiplicative?
 Back: For any $x, y \in \mathbb{C}$, $\lvert x \rvert \lvert y \rvert = \lvert x y \rvert$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1754097769980-->
@@ -598,7 +598,7 @@ END%%
 
 %%ANKI
 Basic
-In complex number division, what is the purpose of the conjugate simlification step?
+In complex number division, what is the purpose of the conjugate simplification step?
 Back: To ensure the denominator is a real number (as opposed to a complex one).
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1754141872877-->

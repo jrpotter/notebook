@@ -1161,8 +1161,8 @@ END%%
 
 %%ANKI
 Basic
-`size_t` is used as the type of what result?
-Back: The `sizeof` operation.
+`size_t` is used as the return type of what?
+Back: The `sizeof` operator.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1730740461661-->
 END%%

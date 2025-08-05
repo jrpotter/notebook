@@ -651,7 +651,7 @@ END%%
 %%ANKI
 Basic
 Let $\kappa$ be a cardinal number. Assuming AoC, what does $\kappa!$ simplify to?
-Back: Indeterminate.
+Back: Indeterminate. Depends if $\kappa$ is infinite or not.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750734043589-->
 END%%

@@ -449,7 +449,9 @@ where $a$ is any terminal, and $A$, $B$, and $C$ are variables distinct from sta
 
 1. Introduce a new start variable $S_0$ with rule $S_0 \rightarrow S$.
 2. Eliminate all $\epsilon$-rules (except for the start variable).
+	1. These are the rules that map a variable to $\epsilon$.
 3. Eliminate all unit rules.
+	1. These are the rules that map a variable to another variable.
 4. Introduce new rules to match forms above.
 
 %%ANKI
@@ -1163,6 +1165,21 @@ What is the meaning of transition $q_2 \rightarrow q_3$ in the following?
 Back: It nondeterministically checks if we're at the middle of the input.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1751511470882-->
+END%%
+
+%%ANKI
+Cloze
+{1:PDAs} are to {2:CFLs} whereas {2:DFAs/NFAs} are to {1:regular languages}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1754385910962-->
+END%%
+
+%%ANKI
+Basic
+How does a PDA relate to a finite automaton?
+Back: Every PDA is a finite automaton that ignores its stack.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1754385910972-->
 END%%
 
 ## Bibliography
