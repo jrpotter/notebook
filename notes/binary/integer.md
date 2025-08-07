@@ -1949,26 +1949,26 @@ END%%
 
 %%ANKI
 Basic
-Convert $x \cdot 11011100_2$ to an expression containing `-`. How many `-` operators are there?
-Back: $2$
+How is $x \cdot 11011100_2$ equivalently written using `<<`, `+`, and `-`?
+Back: `((x << 8) - (x << 6)) + ((x << 5) - (x << 2))`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1709570428844-->
+<!--ID: 1754572634434-->
 END%%
 
 %%ANKI
 Basic
-Convert $x \cdot K$ to an expression excluding `-`. The number of `+` operators correspond to what?
-Back: One less than the number of `1`s in $K$'s binary representation.
+How is $x \cdot 11011100_2$ equivalently written using just `<<` and `+`?
+Back: `(x << 7) + (x << 6) + ((x << 4) + (x << 3) + (x << 2)`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1709570428848-->
+<!--ID: 1754572634442-->
 END%%
 
 %%ANKI
 Basic
-Convert $x \cdot K$ to an expression containing `-`. The number of `-` operators correspond to what?
-Back: The number of runs of `1`s in $K$'s binary representation.
+Let $K$ be a constant. How many ways does Bryant et al. describe computing $x \cdot K$ using `<<`?
+Back: Two.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1709570428851-->
+<!--ID: 1754572554485-->
 END%%
 
 ### Division

@@ -428,7 +428,7 @@ END%%
 
 ## Compilation
 
-Most compilation systems provide a **compiler driver** that invokes a **preprocessor**, **compiler**, **assembler**, and **linker**:
+Most compilation systems provide a **compiler driver** that invokes a [[preprocessor]], **compiler**, **assembler**, and [[linkers/index|linker]]:
 
 1. The C preprocessor (e.g. `cpp`) translates C source files (`.h` and `.c`) into ASCII intermediate files (`.i`).
 2. The C compiler (e.g. `cc1`) translates intermediate files into ASCII assembly-language files (`.s`).

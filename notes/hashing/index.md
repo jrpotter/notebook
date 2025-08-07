@@ -217,15 +217,6 @@ END%%
 
 %%ANKI
 Basic
-What about independent static hashing is a bit of a misnomer?
-Back: N/A.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: hashing::static
-<!--ID: 1720821498631-->
-END%%
-
-%%ANKI
-Basic
 What does it mean for static hashing to be uniform?
 Back: Each key has an equal likelihood of hashing to any slot.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

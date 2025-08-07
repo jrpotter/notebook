@@ -30,13 +30,6 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
-Cloze
-Roughly speaking, the loader copies {code/data} from an {executable object} file into {memory}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1733607099604-->
-END%%
-
-%%ANKI
 Basic
 The loader copies code and data from what kind of file?
 Back: An executable object file.
@@ -54,7 +47,7 @@ END%%
 %%ANKI
 Basic
 At a high-level, the loader is responsible for performing what two actions?
-Back: Copying code/data and beginning program execution.
+Back: Mapping code/data and beginning program execution.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1733607099625-->
 END%%
@@ -70,7 +63,7 @@ END%%
 %%ANKI
 Basic
 What two steps are conducted during the process of loading?
-Back: Copying code/data into memory and running the program.
+Back: Mapping code/data into memory and running the program.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1741298168033-->
 END%%
@@ -80,7 +73,7 @@ Basic
 On Linux x86-64 systems, does the stack grow towards larger or smaller addresses?
 Back: Smaller.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: processor::x86-64
+Tags: os::linux processor::x86-64
 <!--ID: 1741298168034-->
 END%%
 
@@ -89,7 +82,7 @@ Basic
 On Linux x86-64 systems, does the heap grow towards larger or smaller addresses?
 Back: Larger.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: processor::x86-64
+Tags: os::linux processor::x86-64
 <!--ID: 1741298168036-->
 END%%
 
@@ -97,7 +90,7 @@ END%%
 Cloze
 On Linux x86-64 systems, the {1:heap} grows towards {2:larger} addresses while the {2:stack} grows towards {1:smaller} addresses.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: processor::x86-64
+Tags: os::linux processor::x86-64
 <!--ID: 1741298168037-->
 END%%
 
@@ -106,7 +99,7 @@ Basic
 After loading on Linux x86-64 systems, which of the code or data segment starts on a larger address?
 Back: The data segment.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: processor::x86-64
+Tags: os::linux processor::x86-64
 <!--ID: 1741298168038-->
 END%%
 
@@ -117,6 +110,31 @@ Back: The code segment.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: processor::x86-64
 <!--ID: 1741298168039-->
+END%%
+
+## Virtual Memory
+
+Using [[virtual|virtual memory]], the loader does not actually copy any data from disk into memory. Instead, virtual pages are allocated for the code/data segments and then marked as uncached. The VM system then pages them in on demand.
+
+%%ANKI
+Basic
+The loader acts on what kind of object file?
+Back: An executable object file.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: memory::virtual os::linux
+<!--ID: 1754429038211-->
+END%%
+
+%%ANKI
+Basic
+What is wrong with the following statement?
+
+> The loader copies code and data from an executable object file into memory.
+
+Back: The loader memory maps the code and data segment. It does *not* copy anything into memory directly.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: memory::virtual os::linux
+<!--ID: 1754429038216-->
 END%%
 
 ## Bibliography

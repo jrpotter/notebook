@@ -1338,7 +1338,7 @@ Given `short sx`, are the following two lines equivalent?
 (unsigned) sx
 (unsigned) (unsigned short) sx
 ```
-Back: No.
+Back: No. Size is cast before signedness.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1714677608766-->
 END%%
@@ -1349,7 +1349,7 @@ Given `short sx`, why is the following not an identity?
 ```c
 (unsigned) sx = (unsigned) (unsigned short) sx
 ```
-Back: `(unsigned) sx` casts size before "signedness".
+Back: `(unsigned) sx` casts size before signedness.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1714677608767-->
 END%%

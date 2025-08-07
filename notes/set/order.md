@@ -1735,7 +1735,7 @@ END%%
 %%ANKI
 Basic
 Let $<$ be a strict well ordering on set $A$. How does Enderton define $^{<A}\mathbf{V}$?
-Back: As $$^{<A}\mathbf{V} = \{ f \mid \text{for some } t \in A, f \text{ is a function with } \mathop{\text{dom}}f = \mathop{\text{seg}_t} A \}.$$
+Back: As $$^{<A}\mathbf{V} = \{ f \mid \text{for some } t \in A, f \text{ is a function with } \mathop{\text{dom}}f = \mathop{\text{seg}_<} t \}.$$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1754245698945-->
 END%%

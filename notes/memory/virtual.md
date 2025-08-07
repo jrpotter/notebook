@@ -38,6 +38,14 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
+Basic
+How is it the code segment can *always* start at address `0x4000000`?
+Back: Each process has its own virtual address space.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754428249581-->
+END%%
+
+%%ANKI
 Cloze
 {Physical} addressing is in contrast to {virtual} addressing.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
@@ -179,7 +187,7 @@ END%%
 
 Physical memory serves as a [[caches|cache]] for virtual memory, backed by disk. Virtual memory is partitioned into fixed-size blocks called **virtual pages** (or just **pages**). Physical memory is also partitioned into **physical pages** (or **page frames**) of the same size.
 
-A **page table** is used to map each allocated page to a location in physical memory or on disk. It is an array of **page table entries** (PTEs), each of which consists of a valid bit and a (possibly null) memory address.
+A **page table** is used to map each allocated page to a location in physical memory or on disk. It is an array of **page table entries** (PTEs), each of which consists of a valid bit, permission bits, and a (possibly null) memory address. Each [[processes|process]] has its own page table and virtual address space.
 
 Each virtual page belongs to any one of three disjoint sets:
 
@@ -389,17 +397,58 @@ END%%
 
 %%ANKI
 Cloze
-A {page table} is an array of {page table entries}.
+A(n) {page table} is an array of {page table entries}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754255440585-->
 END%%
 
 %%ANKI
 Basic
-A PTE is partitioned into what two fields?
-Back: A valid bit and an address field.
+A PTE is partitioned into what three fields?
+Back: A valid bit, permission bits, and an address field.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754255440592-->
+END%%
+
+%%ANKI
+Basic
+What three permission bits are typically associated with a PTE?
+Back: A kernel mode bit, a read bit, and a write bit.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754431141839-->
+END%%
+
+%%ANKI
+Basic
+Suppose a PTE has a kernel mode permission bit set. What does this mean?
+Back: The page should only be accessed by a process in kernel mode.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754431141851-->
+END%%
+
+%%ANKI
+Basic
+Suppose a PTE has a read permission bit unset. What does this mean?
+Back: The page should not be able to be read from.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754431141858-->
+END%%
+
+%%ANKI
+Basic
+Suppose a PTE has a write permission bit unset. What does this mean?
+Back: The page should not be able to be written to.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754431141867-->
+END%%
+
+%%ANKI
+Basic
+What signal does Linux raise when violating a PTE permission?
+Back: `SIGSEGV`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1754431141878-->
 END%%
 
 %%ANKI
@@ -428,7 +477,7 @@ END%%
 
 %%ANKI
 Basic
-A PTE with valid bit `1` corresopnds to what kind of page?
+A PTE with valid bit `1` corresponds to what kind of page?
 Back: A cached page.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754255440632-->
@@ -559,6 +608,94 @@ How is the page table updated when allocating a new page?
 Back: Keeping its PTE's valid bit `0` and updating its address field to a new page on disk.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754320112971-->
+END%%
+
+%%ANKI
+Basic
+What does the number of page tables correspond to?
+Back: The number of processes managed by the OS.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754428249588-->
+END%%
+
+%%ANKI
+Basic
+What does the number of virtual address spaces correspond to?
+Back: The number of processes managed by the OS.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754428249592-->
+END%%
+
+%%ANKI
+Basic
+What does the number of physical address spaces correspond to?
+Back: There is just the one.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754428249595-->
+END%%
+
+%%ANKI
+Basic
+Which C function is most commonly used to allocate more virtual pages?
+Back: `malloc`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1754429038183-->
+END%%
+
+%%ANKI
+Basic
+What conditions do the virtual pages allocated by `malloc` satisfy?
+Back: They are contiguous and large enough to hold the requested amount of data.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1754429038188-->
+END%%
+
+## Memory Mapping
+
+**Memory mapping** refers to the mapping of contiguous virtual pages to an arbitrary location in an arbitrary [[operating_systems/files|file]].
+
+%%ANKI
+Basic
+What is memory mapping?
+Back: The mapping of contiguous virtual pages to an arbitrary location in an arbitrary file.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754429038191-->
+END%%
+
+%%ANKI
+Basic
+Which system call is used for memory mapping?
+Back: `mmap`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 os::linux
+<!--ID: 1754429038194-->
+END%%
+
+%%ANKI
+Basic
+Why is the `mmap` system call named the way it is?
+Back: It's short for **m**emory **map**ping.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 os::linux
+<!--ID: 1754429038197-->
+END%%
+
+%%ANKI
+Basic
+Which part of the C execution pipeline first employs memory mapping?
+Back: The loader.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754429038201-->
+END%%
+
+%%ANKI
+Basic
+How does VM allow a single copy of a shared library to be used by multiple processes?
+Back: Each process will have virtual pages mapped to the same physical pages containing the shared library code/data.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754429038206-->
 END%%
 
 ## Bibliography

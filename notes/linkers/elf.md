@@ -167,7 +167,7 @@ END%%
 
 ### `.rodata`
 
-Read-only data such as the format strings in [[c17/strings/printf|printf]] statements and [[conditions#JMP|jump tables]] for switch statements.
+Read-only data such as the format strings in [[streams#Printing|printf]] statements and [[conditions#JMP|jump tables]] for switch statements.
 
 %%ANKI
 Basic
@@ -198,7 +198,7 @@ Basic
 In what ELF section would a `printf` format string be found in?
 Back: `.rodata`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17::printf
+Tags: c17::stream
 <!--ID: 1734367304877-->
 END%%
 

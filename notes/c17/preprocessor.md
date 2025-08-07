@@ -1,12 +1,169 @@
 ---
-title: Macros
+title: Preprocessor
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17::macro
+FILE TAGS: c17::preprocessor
 tags:
   - c17
+  - preprocessor
 ---
 
 ## Overview
+
+The C preprocessor translates C source files (`.h` and `.c`) into ASCII intermediate files (`.i`).
+
+## Directives
+
+Preprocessing **directives** refer to lines within a C source file prefixed with a `#`. These are processed by the preprocessor before compilation.
+
+%%ANKI
+Basic
+Preprocessing directives start with what character?
+Back: `#`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414411-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten using `defined`?
+```c
+#ifdef A
+...
+#endif
+```
+Back:
+```c
+#if defined(A)
+...
+#endif
+```
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414420-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten using `defined`?
+```c
+#ifndef A
+...
+#endif
+```
+Back:
+```c
+#if !defined(A)
+...
+#endif
+```
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414423-->
+END%%
+
+%%ANKI
+Basic
+When should `defined` be preferred over `ifdef`?
+Back: When managing multiple conditions.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414426-->
+END%%
+
+%%ANKI
+Basic
+What preprocessing directive is used to undo a `#define`?
+Back: `#undef`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414429-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `#undef` directive?
+Back: To undefine a value previously defined using `#define`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414432-->
+END%%
+
+%%ANKI
+Basic
+How does `#undef` behave if provided an identifier that is not defined?
+Back: As a no-op.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414435-->
+END%%
+
+%%ANKI
+Basic
+Which preprocessing directive is used to import another file?
+Back: `#include`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414438-->
+END%%
+
+%%ANKI
+Basic
+Which preprocessing directive can be used to intentionally terminate compilation?
+Back: `#error`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414441-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `#error` directive?
+Back: To emit a user-defined message and terminate compilation.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414445-->
+END%%
+
+%%ANKI
+Basic
+What preprocessing directive is typically implementation-specific?
+Back: `#pragma`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414449-->
+END%%
+
+%%ANKI
+Basic
+When is `#pragma` *not* implementation-specific?
+Back: When `STDC` immediately follows the `#pragma` token.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414453-->
+END%%
+
+%%ANKI
+Basic
+How is preprocessing directive `#` interpreted (i.e. with nothing following the hash)?
+Back: As a no-op.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414457-->
+END%%
+
+%%ANKI
+Basic
+What is the null preprocessing directive?
+Back: The `#` token followed by a newline.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414461-->
+END%%
+
+%%ANKI
+Basic
+What character is used to indicate the end of a preprocessing directive?
+Back: A newline.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414464-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the backslash used to continue a preprocessing directive onto a new line?
+Back: The backslash is used to escape characters (in this case, the newline).
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1754524414468-->
+END%%
+
+## Macros
 
 Macros refer to `#define` directives that specify terms that should be textually replaced by the preprocessor during compilation:
 
@@ -26,6 +183,14 @@ What preprocessor directive is used to define macros?
 Back: `#define`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727432419429-->
+END%%
+
+%%ANKI
+Basic
+Which preprocessing directive is used to create function-like macros?
+Back: `#define`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1754524414472-->
 END%%
 
 %%ANKI
@@ -154,12 +319,18 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1727432419511-->
 END%%
 
-## Operators
+### Operators
 
 The `#` operator is used to stringify an argument. For example, calling `foo(bar)` in the following yields `"bar"`.
 
 ```c
 #define foo(T) #T
+```
+
+The `##` operator is used to concatenate tokens. For example, calling `foo(bar)` in the following yields `bar_init`.
+
+```c
+#define foo(T) T ## _init
 ```
 
 %%ANKI
@@ -267,12 +438,6 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1733308613488-->
 END%%
 
-The `##` operator is used to concatenate tokens. For example, calling `foo(bar)` in the following yields `bar_init`.
-
-```c
-#define foo(T) T ## _init
-```
-
 %%ANKI
 Basic
 In what context is the `##` operator found?
@@ -339,7 +504,7 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1733308613507-->
 END%%
 
-## Variable Argument Lists
+### Variable Argument Lists
 
 The construct `...` provides an argument list of variable length. This set of arguments is then accessible inside the macro expansion as `__VA_ARGS__`.
 
@@ -407,4 +572,5 @@ END%%
 
 ## Bibliography
 
+* “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).

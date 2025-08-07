@@ -448,7 +448,23 @@ Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754403601892-->
 END%%
 
-## Binding
+%%ANKI
+Basic
+Which C function is usually invoked before `socket()`?
+Back: `getaddrinfo()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695721-->
+END%%
+
+%%ANKI
+Basic
+Which C function is usually invoked after `socket()`?
+Back: `bind()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695730-->
+END%%
+
+## Bind
 
 The `bind()` function is used to associate a socket descriptor to a given port on the host machine.
 
@@ -518,6 +534,173 @@ What is the largest available port number?
 Back: `65525`, i.e. $2^{16} - 1$.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754404434292-->
+END%%
+
+%%ANKI
+Basic
+From a client perspective, what C function is usually called after `bind()`?
+Back: `connect()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695733-->
+END%%
+
+%%ANKI
+Basic
+From a server perspective, what C function is usually called after `bind()`?
+Back: `listen()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695740-->
+END%%
+
+## Connect
+
+The `connect()` function is used to connect to some host interface listening for incoming connections.
+
+```c
+int connect(int sockfd, struct sockaddr *serv_addr, int addrlen);
+```
+
+%%ANKI
+Basic
+What is the purpose of the `connect()` function?
+Back: It connects to a host interface listening for incoming connections.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754488540938-->
+END%%
+
+%%ANKI
+Basic
+If not manually handled, what does `connect()` automatically do?
+Back: Bind to an unbound local port.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754488540949-->
+END%%
+
+%%ANKI
+Basic
+What additional check does `connect()` perform when called?
+Back: It checks whether the supplied socket is bound or not.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754488540953-->
+END%%
+
+%%ANKI
+Basic
+Which C function is used by a client to connect to a server?
+Back: `connect()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754488540956-->
+END%%
+
+%%ANKI
+Basic
+In what order should `connect()`, `socket()`, and `bind()` be called in?
+Back: `socket()`, `bind()`, and `connect()`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754488540946-->
+END%%
+
+%%ANKI
+Basic
+In what order should `connect()`, `bind()`, and `socket()` be called in?
+Back: `socket()`, `bind()`, and `connect()`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754488540960-->
+END%%
+
+## Listen
+
+The `listen()` function is used to prepare a socket for incoming connections.
+
+```c
+int listen(int sockfd, int backlog);
+```
+
+%%ANKI
+Basic
+What is the purpose of the `listen()` function?
+Back: To prepare a socket for incoming connections.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695743-->
+END%%
+
+%%ANKI
+Basic
+In what order should `connect()`, `socket()`, `listen()`, and `bind()` be called in?
+Back: N/A. There is no necessary relation between `connect()` and `listen()`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695747-->
+END%%
+
+%%ANKI
+Basic
+In what order should `socket()`, `listen()`, and `bind()` be called in?
+Back: `socket()`, `bind()`, and `listen()`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695750-->
+END%%
+
+%%ANKI
+Basic
+Which C function is used to prepare for incoming connections?
+Back: `listen()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695754-->
+END%%
+
+%%ANKI
+Basic
+Which function is usually invoked after the `listen()` function?
+Back: `accept()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695757-->
+END%%
+
+## Accept
+
+The `accept()` function returns a new socket file descriptor for any pending connection found.
+
+```c
+int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
+```
+
+%%ANKI
+Basic
+What is the purpose of the `accept()` function?
+Back: To provide a new socket for communicating with a single pending connection.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695760-->
+END%%
+
+%%ANKI
+Cloze
+The {`listen()`} function is used in conjunction with the {`accept()`} function.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695763-->
+END%%
+
+%%ANKI
+Basic
+In what order should `accept()`, `socket()`, `listen()`, and `bind()` be called in?
+Back: `socket()`, `bind()`, `listen()`, and `accept()`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695766-->
+END%%
+
+%%ANKI
+Basic
+Which function is usually invoked before the `accept()` function?
+Back: `listen()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695770-->
+END%%
+
+%%ANKI
+Basic
+Assuming success, what does the return value of `accept()` correspond to?
+Back: A new socket file descriptor.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754489695773-->
 END%%
 
 ## Bibliography

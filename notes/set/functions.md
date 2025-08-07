@@ -706,14 +706,6 @@ END%%
 
 %%ANKI
 Basic
-What are the hypotheses of "left inverses iff injective"?
-Back: Suppose $F \colon A \rightarrow B$ such that $A \neq \varnothing$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1719683703726-->
-END%%
-
-%%ANKI
-Basic
 Let $F \colon A \rightarrow B$. *Why* does "left inverses iff injective" assume $A \neq \varnothing$?
 Back: Because a mapping from nonempty $B$ to $\varnothing$ cannot be a function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -918,14 +910,6 @@ Does proving "right inverses iff surjective" rely on AoC?
 Back: Yes.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719681913543-->
-END%%
-
-%%ANKI
-Basic
-What are the hypotheses of "right inverses iff surjective"?
-Back: Suppose $F \colon A \rightarrow B$ such that $A \neq \varnothing$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1719683703732-->
 END%%
 
 %%ANKI

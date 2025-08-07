@@ -76,6 +76,9 @@ END%%
 C has a standard for processing different escape sequences. Many languages built with C in mind parse these escape sequences in a similar way.
 
 * `\ooo`: Consists of one to three octal digits.
+* `\xhh`: Consists of one or more [[radices#Hexadecimal|hexadecimal]] digits. The `x` prefix is required to distinguish from octal escape sequences.
+* `\uhhhh`: Introduced in C11 to represent Unicode code points. *Must* have exactly four hexadecimal characters specified with `0` leading padding if necessary.
+* `\Uhhhhhhhh`: Introduced in C11 to represent larger unicode code points. *Must* have exactly eight hexadecimal characters specified with `0` leading padding if necessary.
 
 %%ANKI
 Basic
@@ -92,8 +95,6 @@ Back: One to three.
 Reference: Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
 <!--ID: 1706975891810-->
 END%%
-
-* `\xhh`: Consists of one or more [[radices#Hexadecimal|hexadecimal]] digits. The `x` prefix is required to distinguish from octal escape sequences.
 
 %%ANKI
 Basic
@@ -118,8 +119,6 @@ Back: Using more than two hexadecimal digits can produce undefined results.
 Reference: Arnold D. Robbins, “GAWK: Effective AWK Programming,” October 2023, [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf).
 <!--ID: 1706975891828-->
 END%%
-
-* `\uhhhh`: Introduced in C11 to represent Unicode code points. *Must* have exactly four hexadecimal characters specified with `0` leading padding if necessary.
 
 %%ANKI
 Basic
@@ -147,8 +146,6 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 Tags: encoding::unicode
 <!--ID: 1706975891839-->
 END%%
-
-* `\Uhhhhhhhh`: Introduced in C11 to represent larger unicode code points. *Must* have exactly eight hexadecimal characters specified with `0` leading padding if necessary.
 
 %%ANKI
 Basic

@@ -347,7 +347,7 @@ END%%
 
 %%ANKI
 Cloze
-The $v \in \mathbb{R}^2$ and $z \in \mathbb{C}$. $\lVert v \rVert =$ {$\sqrt{v \cdot v}$} whereas $\lvert z \rvert =$ {$\sqrt{z \bar{z} }$}.
+Let $v \in \mathbb{R}^2$ and $z \in \mathbb{C}$. $\lVert v \rVert =$ {$\sqrt{v \cdot v}$} whereas $\lvert z \rvert =$ {$\sqrt{z \bar{z} }$}.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1754096829575-->
 END%%

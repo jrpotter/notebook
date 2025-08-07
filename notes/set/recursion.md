@@ -538,7 +538,7 @@ END%%
 Cloze
 For any formula $\gamma(x, y)$, the following is a theorem:
 
-> Assume $<$ is a {well ordering} on set $A$. Assume {for all $f$} there exists a {unique $y$} such that {$\gamma(f, y)$}. Then there exists a {unique function $F$} with {domain $A$} such that {$\gamma(F \restriction \mathop{\text{seg}_<}t, F(t))$}.
+> Assume $<$ is a {well ordering} on set $A$. Assume {for all $f$} there exists a {unique $y$} such that {$\gamma(f, y)$}. Then there exists a {unique function $F$} with {domain $A$} such that, for {all $t \in A$}, {$\gamma(F \restriction \mathop{\text{seg}_<}t, F(t))$}.
 
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1754246610272-->
