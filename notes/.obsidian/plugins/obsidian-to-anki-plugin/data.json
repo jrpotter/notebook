@@ -1314,7 +1314,7 @@
     "operating_systems/threads.md": "2a66e0d9038e7469c56cc3987d4aebfd",
     "operating_systems/concurrency.md": "18a51368551fa7473e97a3d852c2f177",
     "operating_systems/processes.md": "1da5345043ee2a07bc46f48da0c320ef",
-    "networking/hardware.md": "6b83f2f62dabfb329f6df58a1b20af8e",
+    "networking/hardware.md": "bcde9875f7d581ca106cb58af8776e06",
     "_journal/2025-07-11.md": "828e1a48ca2cc873b7b02de215e29068",
     "_journal/2025-07/2025-07-10.md": "89ca719914811a5cb5ff9b2454633a73",
     "geometry/curvature.md": "9f80263cdd29886e7d0b6aafd97bcf2d",
@@ -1395,10 +1395,15 @@
     "c17/strings.md": "aa3e21a5aacb8db4ac15b28da4d4b4a2",
     "_journal/2025-08-08.md": "81513e0d838f18f85f64fb78e9b055d3",
     "_journal/2025-08/2025-08-07.md": "01ee39a04b8f25a8c0dfb44d3139d3ce",
-    "_journal/2025-08-09.md": "de46c9bd4d58ef7632e6c170533358b6",
+    "_journal/2025-08-09.md": "a3aeb7d7697183f7fc7824b863f9ce81",
     "_journal/2025-08/2025-08-08.md": "df154db125c63cb6afcf122d8a94d01d",
     "c17/sockets.md": "615b0e88adb248cf6ccc00bce194291c",
-    "c17/signals.md": "fd1232152cf2ed82a9905d1681c80711"
+    "c17/signals.md": "fd1232152cf2ed82a9905d1681c80711",
+    "networking/transport/index.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "networking/transport/tcp.md": "93ba50215a81b91667bf90c26bccc97e",
+    "networking/transport/udp.md": "2c209a455f9d018d8ea42f26ac5c957e",
+    "networking/proxies.md": "cbb14fa336b1210ae469b6ce9a6e8c0e",
+    "networking/firewalls.md": "ce5961f3accd696350fd82b86fab70cf"
   },
   "fields_dict": {
     "Basic": [

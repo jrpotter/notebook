@@ -1,7 +1,7 @@
 ---
 title: TCP
 TARGET DECK: Obsidian::STEM
-FILE TAGS: networking::tcp
+FILE TAGS: networking::transport
 tags:
   - networking
   - tcp

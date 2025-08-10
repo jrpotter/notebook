@@ -1,7 +1,7 @@
 ---
 title: UDP
 TARGET DECK: Obsidian::STEM
-FILE TAGS: networking::udp
+FILE TAGS: networking::transport
 tags:
   - networking
   - udp
@@ -49,7 +49,6 @@ Basic
 Which of TCP and/or UDP guarantee delivery?
 Back: Just TCP.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
-Tags: networking::tcp
 <!--ID: 1754342300756-->
 END%%
 
@@ -58,7 +57,6 @@ Basic
 Which of TCP and/or UDP is considered connection-oriented?
 Back: Just TCP.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
-Tags: networking::tcp
 <!--ID: 1754342300758-->
 END%%
 
@@ -67,7 +65,6 @@ Basic
 Which of TCP and/or UDP is considered connectionless?
 Back: Just UDP.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
-Tags: networking::tcp
 <!--ID: 1754342300761-->
 END%%
 
@@ -76,7 +73,6 @@ Basic
 Which of TCP and/or UDP delivers error-free packets?
 Back: Both, though UDP does not guarantee the order the packets are delivered in.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
-Tags: networking::tcp
 <!--ID: 1754342300764-->
 END%%
 
@@ -84,7 +80,6 @@ END%%
 Cloze
 {1:TCP} is to {2:connection-oriented} whereas {2:UDP} is to {1:connectionless}.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
-Tags: networking::tcp
 <!--ID: 1754342300767-->
 END%%
 

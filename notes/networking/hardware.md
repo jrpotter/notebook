@@ -50,7 +50,7 @@ Reference: “Network Interface Controller.” In _Wikipedia_, July 10, 2025. [h
 <!--ID: 1752196389619-->
 END%%
 
-## Network Interface Controller
+## NICs
 
 A **network interface controller**, or **NIC**, is a computer hardware component that connects a computer to a computer network. An NIC is considered a [[osi#Physical|physical layer]] device as well as a [[osi#link|link layer]] device.
 
@@ -81,9 +81,7 @@ END%%
 
 ## Modems
 
-A **modem** (modulator-demodulator) is a device that converts data from a digital format into a format suitable for analog transmission.
-
-It transmits data by modulating one or more carrier wave signals to encode digital information, while the receive demodulates the signal to recreate the original digital information.
+A **modem** (modulator-demodulator) is a device that converts data from a digital format into a format suitable for analog transmission. It transmits data by modulating one or more carrier wave signals to encode digital information, while the receiver demodulates the signal to recreate the original digital information.
 
 %%ANKI
 Basic
@@ -127,9 +125,7 @@ END%%
 
 ## Routers
 
-A **router** is a networking device that forwards data packets between computer networks, from one interface to another.
-
-It performs the "traffic directing" functions of network protocols, e.g. reading the network address information in a packet header to determine the ultimate destination.
+A **router** is a networking device that forwards data packets between computer networks, from one interface to another. It performs the "traffic directing" functions of network protocols, e.g. reading the network address information in a packet header to determine the ultimate destination.
 
 %%ANKI
 Basic
