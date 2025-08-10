@@ -684,14 +684,6 @@ END%%
 
 %%ANKI
 Basic
-Which part of the C execution pipeline first employs memory mapping?
-Back: The loader.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1754429038201-->
-END%%
-
-%%ANKI
-Basic
 How does VM allow a single copy of a shared library to be used by multiple processes?
 Back: Each process will have virtual pages mapped to the same physical pages containing the shared library code/data.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

@@ -1,9 +1,10 @@
 ---
-title: Networking
+title: Sockets
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17::networking
+FILE TAGS: c17::socket
 tags:
-  - networking
+  - c17
+  - socket
 ---
 
 ## Overview
@@ -47,9 +48,17 @@ END%%
 %%ANKI
 Basic
 Which function is typically used to retrieve `struct addrinfo`s?
-Back: `getaddrinfo`
+Back: `getaddrinfo()`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754382302430-->
+END%%
+
+%%ANKI
+Basic
+Why is the `<netdb.h>` header named the way it is?
+Back: It's short for **net**work **d**ata**b**ase.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754790552888-->
 END%%
 
 %%ANKI
@@ -70,7 +79,7 @@ END%%
 
 %%ANKI
 Basic
-What field/value is used to specify a TCP connection?
+What field and value is used to specify a TCP connection?
 ```c
 struct addrinfo {
   int              ai_flags;
@@ -90,7 +99,7 @@ END%%
 
 %%ANKI
 Basic
-What field/value is used to specify a UDP connection?
+What field and value is used to specify a UDP connection?
 ```c
 struct addrinfo {
   int              ai_flags;
@@ -110,7 +119,7 @@ END%%
 
 %%ANKI
 Basic
-What field/value is used to specify an IPv4 address?
+What field and value is used to specify `ai_addr` is an IPv4 address?
 ```c
 struct addrinfo {
   int              ai_flags;
@@ -130,7 +139,7 @@ END%%
 
 %%ANKI
 Basic
-What field/value is used to specify an IPv6 address?
+What field and value is used to specify `ai_addr` is an IPv6 address?
 ```c
 struct addrinfo {
   int              ai_flags;
@@ -194,6 +203,14 @@ struct addrinfo {
 Back: `AF_UNSPEC`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754382302475-->
+END%%
+
+%%ANKI
+Basic
+What does the `AF_UNSPEC` address family indicate?
+Back: That any requested IP addresses can be either IPv4 or IPv6.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754701589115-->
 END%%
 
 %%ANKI
@@ -322,7 +339,9 @@ Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754403601872-->
 END%%
 
-## Socket
+## Initialization
+
+### Socket
 
 The `socket()` function is used to get a socket descriptor. Typically this function is supplied values from a `struct addrinfo` populated by the `getaddrinfo()` function.
 
@@ -332,7 +351,7 @@ int socket(int domain, int type, int protocol);
 
 %%ANKI
 Basic
-Which C header file contains socket-related functionality?
+On Linux, which C header file contains socket-related functionality?
 Back: `<sys/socket.h>`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754342300798-->
@@ -464,7 +483,7 @@ Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695730-->
 END%%
 
-## Bind
+### Bind
 
 The `bind()` function is used to associate a socket descriptor to a given port on the host machine.
 
@@ -494,14 +513,6 @@ What function is typically used to obtain a socket FD passed to `bind()`?
 Back: `socket()`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754404434276-->
-END%%
-
-%%ANKI
-Basic
-What `struct sockaddr` is expected to be passed into a call to `bind()`?
-Back: That corresponding to the address of the host machine.
-Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
-<!--ID: 1754404434279-->
 END%%
 
 %%ANKI
@@ -552,7 +563,9 @@ Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695740-->
 END%%
 
-## Connect
+## Client
+
+### Connect
 
 The `connect()` function is used to connect to some host interface listening for incoming connections.
 
@@ -608,7 +621,9 @@ Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754488540960-->
 END%%
 
-## Listen
+## Server
+
+### Listen
 
 The `listen()` function is used to prepare a socket for incoming connections.
 
@@ -656,7 +671,7 @@ Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695757-->
 END%%
 
-## Accept
+### Accept
 
 The `accept()` function returns a new socket file descriptor for any pending connection found.
 
@@ -701,6 +716,154 @@ Assuming success, what does the return value of `accept()` correspond to?
 Back: A new socket file descriptor.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695773-->
+END%%
+
+## Communication
+
+### Connection-Oriented
+
+To send and receive data on a connection-oriented socket, `send()` and `recv()` are used respectively.
+
+```c
+int send(int sockfd, const void *msg, int len, int flags);
+int recv(int sockfd, void *buf, int len, int flags);
+```
+
+%%ANKI
+Basic
+What function is used to send on a connected socket?
+Back: `send()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590202-->
+END%%
+
+%%ANKI
+Cloze
+{1:`send()`} is to {2:sockets} whereas {2:`write()`} is to {1:files}.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590212-->
+END%%
+
+%%ANKI
+Basic
+What function is used to receive on a connected socket?
+Back: `recv()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590217-->
+END%%
+
+%%ANKI
+Cloze
+{1:`recv()`} is to {2:sockets} whereas {2:`read()`} is to {1:files}.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590220-->
+END%%
+
+### Connectionless
+
+To send and receive data on a connectionless socket, `sendto()` and `recvfrom()` are used respectively.
+
+```c
+int sendto(int sockfd, const void *msg, int len, unsigned int flags,
+           const struct sockaddr *to, socklen_t tolen);
+int recvfrom(int sockfd, void *buf, int len, unsigned int flags,
+             struct sockaddr *from, int *fromlen);)
+```
+
+%%ANKI
+Basic
+What function is used to send on a socket that isn't connected?
+Back: `sendto()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590229-->
+END%%
+
+%%ANKI
+Cloze
+{1:`send()`} is to {2:connection-oriented} whereas {2:`sendto()`} is to {1:connectionless}.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590232-->
+END%%
+
+%%ANKI
+Basic
+What additional information does `sendto()` need over `send()`?
+Back: The remote host address.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590235-->
+END%%
+
+%%ANKI
+Basic
+What function is used to receive on a socket that isn't connected?
+Back: `recvfrom()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590241-->
+END%%
+
+%%ANKI
+Cloze
+{1:`recvfrom()`} is to {2:connectionless} whereas {2:`recv()`} is to {1:connection-oriented}.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590244-->
+END%%
+
+%%ANKI
+Basic
+What additional information does `recvfrom()` provide over `recv()`?
+Back: The remote host address.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590247-->
+END%%
+
+## Termination
+
+The `close()` [[syscalls]] can be used on sockets to close the underlying connection.
+
+For more control, the `shutdown()` function can be used instead. This allows cutting communication off only in one direction. Note this function doesn't close the file descriptor though - `close()` still needs to be called. 
+
+```c
+int shutdown(int sockfd, int how);
+```
+
+%%ANKI
+Basic
+What function is used to turn down a socket?
+Back: `close()`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590253-->
+END%%
+
+%%ANKI
+Basic
+Why does `close()` work on both files and sockets?
+Back: On Linux, both are files (i.e. they each have an associated file descriptor).
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590256-->
+END%%
+
+%%ANKI
+Basic
+Which of `shutdown()` or `close()` is more general?
+Back: N/A.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590259-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `shutdown()` function?
+Back: It allows stopping socket communication in just one direction.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590262-->
+END%%
+
+%%ANKI
+Basic
+*Why* is `shutdown()` not a replacement for `close()`?
+Back: The former configures the socket but does not close the socket descriptor.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590266-->
 END%%
 
 ## Bibliography

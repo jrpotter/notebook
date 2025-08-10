@@ -23,7 +23,7 @@ END%%
 
 %%ANKI
 Basic
-What are the two statuses a group may have?
+What are the two possible statuses Davies attributes to a group?
 Back: Settled or unsettled.
 Reference: Davies, James. _Elementary Go Series Vol. 4 - Life and Death_. Vol. 4. 7 vols., n.d.
 <!--ID: 1751146368990-->
@@ -48,7 +48,7 @@ END%%
 %%ANKI
 Basic
 Why is sente irrelevant for a settled group?
-Back: It is understood the group can be made alive in gote.
+Back: It is understood the group is alive (possibly in gote).
 Reference: Davies, James. _Elementary Go Series Vol. 4 - Life and Death_. Vol. 4. 7 vols., n.d.
 <!--ID: 1751146369001-->
 END%%

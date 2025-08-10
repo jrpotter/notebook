@@ -401,42 +401,6 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1753136506336-->
 END%%
 
-%%ANKI
-Basic
-Which C function is used to change signal handlers?
-Back: `signal`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
-<!--ID: 1753136506338-->
-END%%
-
-%%ANKI
-Basic
-Which C header includes functions for updating signal handlers?
-Back: `<signal.h>`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
-<!--ID: 1753136506341-->
-END%%
-
-%%ANKI
-Basic
-Which C macro corresponds to default signal actions?
-Back: `SIG_DFL`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
-<!--ID: 1753136506344-->
-END%%
-
-%%ANKI
-Basic
-Which C macro corresponds to ignoring a signal?
-Back: `SIG_IGN`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
-<!--ID: 1753136506347-->
-END%%
-
 ### SIGHUP
 
 A process receives a `SIGHUP` signal when the terminal it is attached to goes away before it finishes executing.
@@ -871,6 +835,41 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1753188288506-->
 END%%
 
+### SIGCHLD
+
+Indicates a child process has stopped or terminated.
+
+%%ANKI
+Cloze
+Signal {`SIGCHLD`} corresponds to number {17}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754790552789-->
+END%%
+
+%%ANKI
+Basic
+Which signal is used to indicate a child process has stopped?
+Back: `SIGCHLD`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754790552793-->
+END%%
+
+%%ANKI
+Basic
+Which signal is used to indicate a child process has terminated?
+Back: `SIGCHLD`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754790552796-->
+END%%
+
+%%ANKI
+Basic
+Which of the five default actions is `SIGCHLD` associated with?
+Back: Ignore.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754790552799-->
+END%%
+
 ### SIGCONT
 
 Indicates the process should resume if it was suspended.
@@ -1004,42 +1003,6 @@ Which signal is the non-terminal analog to `SIGTSTP`?
 Back: `SIGSTOP`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037150-->
-END%%
-
-## Safety
-
-A function is **async-signal-safe** if and only if it can be safely called from a signal handler. This holds either because it is [[threads#Safety|reentrant]] or because it cannot be interrupted by a signal handler.
-
-%%ANKI
-Basic
-What is an async-signal-safe function?
-Back: A function that can be safely called from a signal handler.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1753825971358-->
-END%%
-
-%%ANKI
-Cloze
-{1:Threads} are to {2:thread-safe} functions whereas {2:signals} are to {1:async-signal-safe} functions.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1753825971367-->
-END%%
-
-%%ANKI
-Basic
-What name is used to describe functions that can be called safely in signal handlers?
-Back: Async-signal-safe functions.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1753825971373-->
-END%%
-
-%%ANKI
-Basic
-With respect to signals, what variables should be marked as `volatile`?
-Back: Global variables modified by a signal handler and accessed elsewhere.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
-<!--ID: 1753897177560-->
 END%%
 
 ## Bibliography
