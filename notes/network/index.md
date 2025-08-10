@@ -1,9 +1,9 @@
 ---
 title: Network
 TARGET DECK: Obsidian::STEM
-FILE TAGS: networking
+FILE TAGS: network
 tags:
-  - networking
+  - network
 ---
 
 ## Overview

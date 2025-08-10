@@ -1,9 +1,10 @@
 ---
 title: UDP
 TARGET DECK: Obsidian::STEM
-FILE TAGS: networking::transport
+FILE TAGS: network::transport
 tags:
-  - networking
+  - network
+  - transport
   - udp
 ---
 
@@ -24,7 +25,7 @@ Basic
 What layer in the OSI model is UDP concerned with?
 Back: L4, i.e. the transport layer.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-Tags: networking::osi
+Tags: network::osi
 <!--ID: 1754342300748-->
 END%%
 

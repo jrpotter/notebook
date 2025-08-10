@@ -1,10 +1,10 @@
 ---
 title: IPv4
 TARGET DECK: Obsidian::STEM
-FILE TAGS: networking::ip
+FILE TAGS: network::ip
 tags:
   - ip
-  - networking
+  - network
 ---
 
 ## Overview

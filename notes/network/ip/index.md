@@ -1,10 +1,10 @@
 ---
 title: Internet Protocol
 TARGET DECK: Obsidian::STEM
-FILE TAGS: networking::ip
+FILE TAGS: network::ip
 tags:
   - ip
-  - networking
+  - network
 ---
 
 ## Overview
@@ -43,7 +43,7 @@ Basic
 What layer in the OSI model is IP concerned with?
 Back: L3, i.e. the network layer.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-Tags: networking::osi
+Tags: network::osi
 <!--ID: 1754342300838-->
 END%%
 

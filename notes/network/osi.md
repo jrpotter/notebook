@@ -1,9 +1,9 @@
 ---
 title: Open Systems Interconnections
 TARGET DECK: Obsidian::STEM
-FILE TAGS: networking::osi
+FILE TAGS: network::osi
 tags:
-  - networking
+  - network
   - osi
 ---
 
