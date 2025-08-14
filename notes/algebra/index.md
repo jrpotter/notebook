@@ -80,6 +80,13 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1750995930771-->
 END%%
 
+%%ANKI
+Cloze
+A(n) {1:equation} is to a(n) {2:proposition} as a(n) {2:identity} is to a(n) {1:tautology}.
+Reference: “Algebra.” In _Wikipedia_, July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
+<!--ID: 1755181906108-->
+END%%
+
 ## Bibliography
 
 * “Algebra.” In _Wikipedia_, July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).

@@ -149,7 +149,7 @@ END%%
 
 %%ANKI
 Basic
-What name does Knuth give the LHS of $n? = \sum_{k=1}^n k$?
+What name does Knuth give the LHS of th3e following? $$n? = \sum_{k=1}^n k$$
 Back: The termial.
 Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
 <!--ID: 1709419325927-->

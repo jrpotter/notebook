@@ -319,7 +319,7 @@ END%%
 
 %%ANKI
 Basic
-What network device enables connecting a host to a network?
+What network device, integrated into a host, enables connecting to a network?
 Back: An NIC.
 Reference: _Wikipedia_. “Network interface controller.” July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
 <!--ID: 1754830146423-->
@@ -546,8 +546,8 @@ END%%
 
 %%ANKI
 Basic
-What networking device is used to communicate two devices connected to it with Ethernet cables?
-Back: A switch (or hub).
+What networking device(s) are used to communicate between two devices connected to it with Ethernet cables?
+Back: A switch or hub.
 Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
 <!--ID: 1754830088543-->
 END%%
@@ -562,7 +562,7 @@ END%%
 
 %%ANKI
 Basic
-What distinguishes a switch from a Router?
+What distinguishes a switch from a router?
 Back: The former relays packets between connected devices. The latter forwards packets between different networks.
 Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
 <!--ID: 1754828653064-->
@@ -570,14 +570,14 @@ END%%
 
 %%ANKI
 Cloze
-{1:Switches} are to {2:unicast} whereas {2:hubs} are to {1:broadcast}.
+{1:Switches} are to {2:unicast} whereas {2:Ethernet hubs} are to {1:broadcast}.
 Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
 <!--ID: 1754828653066-->
 END%%
 
 %%ANKI
 Cloze
-{1:Routers} are to the {2:IP} layer whereas {2:switches} are to the {1:link} layer.
+{1:Routers} are to the {2:network} layer whereas {2:switches} are to the {1:link} layer.
 Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
 Tags: network::osi
 <!--ID: 1754828653069-->

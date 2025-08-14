@@ -332,7 +332,7 @@ END%%
 %%ANKI
 Basic
 How is the *remainder* of e.g. `158 / 16` managed in decimal to hex conversion?
-Back: Assuming big-endian, as the next most significant bit of our conversion.
+Back: Assuming big-endian, as the next most significant nibble of our conversion.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: binary::hex
 <!--ID: 1707432641594-->

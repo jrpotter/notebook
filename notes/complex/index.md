@@ -12,7 +12,7 @@ The set $\mathbb{C}$ of **complex numbers** is defined by $\mathbb{C} = \{a + bi
 
 For any complex number of the form $z = a + bi$, $a, b \in \mathbb{R}$, the number $a$ is called the **real part** of $z$ and the number $b$ is called the **imaginary part** of $z$. This is denoted as $\mathop{\text{Re}}(z) = a$ and $\mathop{\text{Im}}(z) = b$ respectively.
 
-The **modulus** of $z$, denoted $\lvert z \rvert$, is defined as $\lvert z \rvert = \sqrt{a^2 + b^2}$. The **argument** of $z$, denoted $\mathop{\text{arg}}(z)$, is the angle between the complex number and the positive real axis. Note that we can write $z$ in **polar form** as $$z = r(\cos{\theta} + i\sin{\theta}).$$
+The **modulus** of $z$, denoted $\lvert z \rvert$, is defined as $\lvert z \rvert = \sqrt{a^2 + b^2}$. The **argument** of $z$, denoted $\mathop{\text{Arg}}(z)$, is the angle $-\pi < \theta \leq \pi$ between the complex number and the positive real axis.
 
 ![[complex-number.png]]
 
@@ -201,14 +201,14 @@ END%%
 %%ANKI
 Basic
 How is the argument of complex number $z \in \mathbb{C}$ denoted?
-Back: As $\mathop{\text{arg}}(z)$.
+Back: As $\mathop{\text{Arg}}(z)$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1754142941985-->
 END%%
 
 %%ANKI
 Basic
-Let $z \in \mathbb{C}$. What does $\mathop{\text{arg}}(z)$ denote?
+Let $z \in \mathbb{C}$. What does $\mathop{\text{Arg}}(z)$ denote?
 Back: The argument of $z$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1754142941994-->
@@ -263,26 +263,18 @@ END%%
 
 %%ANKI
 Basic
-Let $z \in \mathbb{C}$. How is $z$ written in polar form?
-Back: If $r = \lvert z \rvert$ and $\theta = \mathop{\text{arg}}(z)$, as $z = r(\cos{\theta} + i\sin{\theta})$.
-Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
-<!--ID: 1754142942020-->
+Let $z \in \mathbb{C}$. In radians, the principal value of $\mathop{\text{Arg}}(z)$ is usually restricted to what range?
+Back: $-\pi < \mathop{\text{Arg}}(z) \leq \pi$
+Reference: _Wikipedia_. “Argument (complex analysis).” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Argument_(complex_analysis)](https://en.wikipedia.org/w/index.php?title=Argument_\(complex_analysis\)&oldid=1304064700).
+<!--ID: 1755142984768-->
 END%%
 
 %%ANKI
 Basic
-Let $z \in \mathbb{C}$ such that $z = r(\cos{\theta} + i\sin{\theta})$. What does $r$ correspond to?
-Back: $r = \lvert z \rvert$
-Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
-<!--ID: 1754142942024-->
-END%%
-
-%%ANKI
-Basic
-Let $z \in \mathbb{C}$ such that $z = r(\cos{\theta} + i\sin{\theta})$. What does $\theta$ correspond to?
-Back: $\theta = \mathop{\text{arg}}(z)$
-Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
-<!--ID: 1754142942028-->
+Let $z \in \mathbb{C}$. In degrees, the principal value of $\mathop{\text{Arg}}(z)$ is usually restricted to what range?
+Back: $-180\degree < \mathop{\text{Arg}}(z) \leq 180\degree$
+Reference: _Wikipedia_. “Argument (complex analysis).” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Argument_(complex_analysis)](https://en.wikipedia.org/w/index.php?title=Argument_\(complex_analysis\)&oldid=1304064700).
+<!--ID: 1755142984769-->
 END%%
 
 ## Conjugates
@@ -625,3 +617,4 @@ END%%
 * “Complex Plane,” in _Wikipedia_, December 14, 2024, [https://en.wikipedia.org/w/index.php?title=Complex_plane](https://en.wikipedia.org/w/index.php?title=Complex_plane&oldid=1263031649).
 * John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+* _Wikipedia_. “Argument (complex analysis).” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Argument_(complex_analysis)](https://en.wikipedia.org/w/index.php?title=Argument_\(complex_analysis\)&oldid=1304064700).

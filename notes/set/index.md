@@ -1180,6 +1180,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1753740228049-->
 END%%
 
+%%ANKI
+Basic
+Why are the replacement axioms named the way they are?
+Back: The axioms state that "replacing" each element of a set produces another set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1755047501306-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

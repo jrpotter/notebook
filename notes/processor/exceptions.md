@@ -116,14 +116,6 @@ END%%
 
 %%ANKI
 Basic
-If an exception handler does not return control to a program, what instruction is run?
-Back: N/A. The original program is aborted.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1751550403091-->
-END%%
-
-%%ANKI
-Basic
 What is an exception number?
 Back: A unique nonnegative integer assigned to an exception class.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

@@ -584,6 +584,14 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1754246929403-->
 END%%
 
+%%ANKI
+Basic
+Enderton's proof of the transfinite recursion theorem mirrors his proof of which simpler theorem?
+Back: That of the recursion theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1755118724730-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

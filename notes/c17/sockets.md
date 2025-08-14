@@ -816,6 +816,22 @@ Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590247-->
 END%%
 
+%%ANKI
+Basic
+On the client, what function is optional with `SOCK_DGRAM` but not `SOCK_STREAM`?
+Back: `connect()`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1755120537913-->
+END%%
+
+%%ANKI
+Basic
+On the server, what two functions are optional with `SOCK_DGRAM` but not `SOCK_STREAM`?
+Back: `listen()` and `accept()`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1755120537916-->
+END%%
+
 ## Termination
 
 The `close()` [[syscalls]] can be used on sockets to close the underlying connection.

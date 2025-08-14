@@ -1698,7 +1698,7 @@ END%%
 %%ANKI
 Basic
 Is `enum` considered a basic type?
-Back: No.
+Back: No, it's a simple type.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1724546734443-->
 END%%
@@ -1706,7 +1706,7 @@ END%%
 %%ANKI
 Basic
 Is `enum` considered a complex type?
-Back: No.
+Back: No, it's a real type.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1724546734447-->
 END%%

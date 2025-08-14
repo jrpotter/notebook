@@ -777,7 +777,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be integrable over $[a, b]$ and $g(x) = f(x / k)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
+Let $f$ be integrable over $[a, b]$ and $g(x) = f(x / k)$. What integral of $g(x)$ equals $\int_a^b f(x) \,dx$?
 Back: $\frac{1}{k} \int_{ka}^{kb} g(x) \,dx$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735743913575-->
@@ -785,7 +785,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be integrable over $[a, b]$ and $g(x) = f(kx)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
+Let $f$ be integrable over $[a, b]$ and $g(x) = f(kx)$. What integral of $g(x)$ equals $\int_a^b f(x) \,dx$?
 Back: $k \int_{a/k}^{b/k} g(x) \,dx$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735743913580-->
