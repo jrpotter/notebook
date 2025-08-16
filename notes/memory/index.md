@@ -400,7 +400,7 @@ END%%
 
 %%ANKI
 Cloze
-{1:RAM} is to {2:volatile} as {2:ROM} is to {1:nonvolatile}.
+{1:Random} {1:access} memory is to {2:volatile} as {2:read} {2:only} memory is to {1:nonvolatile}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1743468844648-->
 END%%

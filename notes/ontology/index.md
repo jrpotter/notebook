@@ -1,3 +1,165 @@
 ---
-title: Ontology
+title: Ontology (Philosophy)
+TARGET DECK: Obsidian::H&SS
+FILE TAGS: ontology
+tags:
+  - ontology
 ---
+
+## Overview
+
+Ontology is the philosophical study of being. Generally *things* are split into two broad categories: **abstract** and **concrete** things. These words are "terms of art" and their definition is not standardized in any way.
+
+%%ANKI
+Basic
+What did Quine declare as *the* ontological question?
+Back: "What is there?"
+Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
+<!--ID: 1720912238054-->
+END%%
+
+%%ANKI
+Basic
+Who is attributed *the* ontological question?
+Back: Willard Van Orman Quine.
+Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
+<!--ID: 1720912259767-->
+END%%
+
+%%ANKI
+Cloze
+{Ontology} is the {philosophical study of being}.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1720912238058-->
+END%%
+
+%%ANKI
+Cloze
+{Epistemology} is the {philosophical study of knowledge}.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1720912238062-->
+END%%
+
+%%ANKI
+Cloze
+{Taxonomy} is the {branch of science concerned with categorization}.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1720912238066-->
+END%%
+
+%%ANKI
+Cloze
+{Mereology} is the {philosophical study of part-whole relationships}.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1720998380912-->
+END%%
+
+%%ANKI
+Basic
+What does Effingham mean when saying "concreta" and "abstracta" are terms of art?
+Back: They are terms defined freely by a person to mean whatever one wants.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1720894782942-->
+END%%
+
+%%ANKI
+Cloze
+In general, ontologists often categorize things as either {concreta} or {abstracta}.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1720894782951-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, what does someone *probably* mean by "concrete" things?
+Back: Things that exists in space and/or time.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1720894782957-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, what does someone *probably* mean by "abstract" things?
+Back: Things that exist in neither space nor time.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1720894782965-->
+END%%
+
+%%ANKI
+Basic
+Is a material object considered concreta?
+Back: Usually.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1720894782971-->
+END%%
+
+%%ANKI
+Basic
+Is an immaterial object considered concreta?
+Back: Possibly.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1720894782978-->
+END%%
+
+%%ANKI
+Basic
+Is a material object considered abstracta?
+Back: Not usually.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1720894782984-->
+END%%
+
+%%ANKI
+Basic
+Is an immaterial object considered abstracta?
+Back: Possibly.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1720894782989-->
+END%%
+
+## Commitments
+
+An **ontological commitment** of a language is one or more objects postulated to exist by that language.
+
+A statement does not necessarily indicate any ontological commitment to an object. Oftentimes it is understood that the statement is meant to be **paraphrased** in a manner consistent with the speaker's philosophy.
+
+%%ANKI
+Basic
+What is an ontological commitment?
+Back: An assertion that something exists, i.e. is real.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1753473783767-->
+END%%
+
+%%ANKI
+Basic
+What does it mean to paraphrase?
+Back: To render a text using different words without losing any of the original meaning.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1753473783771-->
+END%%
+
+%%ANKI
+Basic
+Does the following statement ontologically commit to the existence of "holes"?
+
+> There are holes in the bucket.
+
+Back: Not necessarily.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1753473783775-->
+END%%
+
+%%ANKI
+Basic
+With respect to ontological commitments, what is the purpose of paraphrasing?
+Back: It states that a surface level view of a statement is not necessarily asserting the existence of something.
+Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+<!--ID: 1753473783780-->
+END%%
+
+## Bibliography
+
+* Francesco Orilia and Michele Paolini Paoletti, “Properties,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/properties/](https://plato.stanford.edu/archives/spr2022/entries/properties/).
+* Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+* Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).

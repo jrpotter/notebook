@@ -22,7 +22,7 @@ A signal that has been sent but not yet received is called a **pending signal**.
 %%ANKI
 Basic
 What does it mean for a program to (perform a) trap?
-Back: It is terminated abruptly before its usual end.
+Back: It encountered an instruction that requires a switch from user mode to kernel mode.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727433781278-->
 END%%

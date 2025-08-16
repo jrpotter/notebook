@@ -13,6 +13,8 @@ In **physical addressing**, the CPU accesses main memory directly using a **phys
 
 In **virtual addressing**, the CPU accesses main memory indirectly using a **virtual address** (VA). This is converted into a physical address, in a process known as **address translation**, by the **memory management unit** (MMU) found on the CPU. The MMU performs this translation via a lookup table whose contents are managed by the [[operating_systems/index|OS]].
 
+An **address space** is an ordered set of nonnegative integer addresses.
+
 %%ANKI
 Basic
 In what way does virtual memory enhance efficiency?
@@ -131,10 +133,6 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1754147709253-->
 END%%
 
-## Address Spaces
-
-An **address space** is an ordered set of nonnegative integer addresses.
-
 %%ANKI
 Basic
 What is an address space?
@@ -197,6 +195,8 @@ Each virtual page belongs to any one of three disjoint sets:
 	* PTEs have their valid bit set to `1`. Their address field refers to an address in main memory.
 * **Uncached**. Pages that are not currently cached in physical memory.
 	* PTEs have their valid bit set to `1`. Their address field refers to an address in disk.
+
+The starting address of a page table is contained in a special CPU register called the **page table base register** (PTBR).
 
 %%ANKI
 Cloze
@@ -650,6 +650,335 @@ Back: They are contiguous and large enough to hold the requested amount of data.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1754429038188-->
+END%%
+
+%%ANKI
+Basic
+Where is the page table's address maintained?
+Back: In the page table base register.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423032-->
+END%%
+
+%%ANKI
+Basic
+Where is a page table's address maintained?
+Back: In the page table base register.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423033-->
+END%%
+
+%%ANKI
+Cloze
+The {1:ETBR} is to {2:exception handler addresses} whereas the {2:PTBR} is to {1:PTEs}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423034-->
+END%%
+
+%%ANKI
+Basic
+With respect to virtual memory, what is PTBR an acronym for?
+Back: The **p**age **t**able **b**ase **r**egister.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423035-->
+END%%
+
+### Address Translation
+
+**Address translation** refers to the mapping of an $n$-bit virtual address space into an $m$-bit physical address space.
+
+Assume each page, in both virtual and physical memory, has size $P = 2^p$ bits. Then an $n$-bit virtual address is partitioned into an $n - p$ **virtual page number** (VPN) and a $p$-bit **virtual page offset** (VPO). Likewise, an $m$-bit physical address is divided into an $m - p$ **physical page number** (PPN) and a $p$-bit **physical page offset** (PPO).
+
+The MMU uses a VPN to index into the page table. If a non-null memory address (i.e. a PPN) is found in the corresponding PTE, an $m$-bit physical address is formed by concatenating the PPN and the VPO. Notice the PPO is equivalent to the VPO.
+
+![[address-translation.png]]
+
+%%ANKI
+Basic
+What is address translation?
+Back: The mapping of a VAS to a PAS.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+END%%
+
+%%ANKI
+Basic
+In the functional view of address translation, what is the domain?
+Back: A virtual address space.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423036-->
+END%%
+
+%%ANKI
+Basic
+In the functional view of address translation, what is the codomain?
+Back: The physical address space and `NULL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423037-->
+END%%
+
+%%ANKI
+Basic
+In the functional view of address translation, *why* does the codomain contain `NULL`?
+Back: Because a PTE in a page table may have the invalid bit set.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423038-->
+END%%
+
+%%ANKI
+Basic
+With respect to virtual memory, what is VPN an acronym for?
+Back: **V**irtual **P**age **N**umber.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423039-->
+END%%
+
+%%ANKI
+Basic
+With respect to virtual memory, what is VPO an acronym for?
+Back: **V**irtual **P**age **O**ffset.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423040-->
+END%%
+
+%%ANKI
+Basic
+With respect to virtual memory, what is PPN an acronym for?
+Back: **P**hysical **P**age **N**umber.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423041-->
+END%%
+
+%%ANKI
+Basic
+With respect to virtual memory, what is PPO an acronym for?
+Back: **P**hysical **P**age **O**ffset.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423042-->
+END%%
+
+%%ANKI
+Basic
+The VPN of a VA serves as an index into what data structure?
+Back: A page table.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423043-->
+END%%
+
+%%ANKI
+Basic
+Consider an $n$-bit VAS and $m$-bit PAS with $p$-bit pages. How large is a VPN?
+Back: $n - p$ bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423044-->
+END%%
+
+%%ANKI
+Basic
+Consider an $n$-bit VAS and $m$-bit PAS with $p$-bit pages. How large is a VPO?
+Back: $p$ bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423045-->
+END%%
+
+%%ANKI
+Basic
+Consider an $n$-bit VAS and $m$-bit PAS with $p$-bit pages. How large is a PPN?
+Back: $m - p$ bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423046-->
+END%%
+
+%%ANKI
+Basic
+Consider an $n$-bit VAS and $m$-bit PAS with $p$-bit pages. How large is a PPO?
+Back: $p$ bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423047-->
+END%%
+
+%%ANKI
+Basic
+In address translation, how does a VPN and PPO relate to one another?
+Back: A VPN maps to a PPN which is in concatenated with a PPO.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423048-->
+END%%
+
+%%ANKI
+Basic
+In address translation, how does a VPO and PPO relate to one another?
+Back: They should be identical.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423049-->
+END%%
+
+%%ANKI
+Basic
+In address translation, *why* are the VPO and PPO the same?
+Back: Because the page size is the same in virtual and physical address spaces.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423050-->
+END%%
+
+%%ANKI
+Cloze
+A {virtual address} is partitioned into a {virtual page number} and {virtual page offset}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423051-->
+END%%
+
+%%ANKI
+Cloze
+A {physical address} is partitioned into a {physical page number} and {physical page offset}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423052-->
+END%%
+
+%%ANKI
+Basic
+What underlying data structure is used to convert VPNs into PPNs?
+Back: A page table.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423053-->
+END%%
+
+%%ANKI
+Basic
+During address translation, which portion of a VA is actually translated?
+Back: The VPN.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423054-->
+END%%
+
+%%ANKI
+Basic
+What does `A` correspond to in the following diagram?
+![[address-translation-marked.png]]
+Back: The page table base register.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423055-->
+END%%
+
+%%ANKI
+Basic
+What does `B` correspond to in the following diagram?
+![[address-translation-marked.png]]
+Back: A virtual page number.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423056-->
+END%%
+
+%%ANKI
+Basic
+What does `C` correspond to in the following diagram?
+![[address-translation-marked.png]]
+Back: A virtual page offset.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423057-->
+END%%
+
+%%ANKI
+Basic
+What does `D` correspond to in the following diagram?
+![[address-translation-marked.png]]
+Back: A physical page number.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423058-->
+END%%
+
+%%ANKI
+Basic
+What does `E` correspond to in the following diagram?
+![[address-translation-marked.png]]
+Back: A physical page offset.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423059-->
+END%%
+
+%%ANKI
+Basic
+What do `B` and `C` together correspond to in the following diagram?
+![[address-translation-marked.png]]
+Back: A virtual address.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423060-->
+END%%
+
+%%ANKI
+Basic
+What do `D` and `E` together correspond to in the following diagram?
+![[address-translation-marked.png]]
+Back: A physical address.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423061-->
+END%%
+
+%%ANKI
+Basic
+The following is a high-level diagram of what device's process?
+![[address-translation-marked.png]]
+Back: The MMU.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423062-->
+END%%
+
+### Translation Lookaside Buffer
+
+The **translation lookaside buffer** (TLB) is a small, virtually addressed cache where each cache line holds a block consisting of a single PTE.
+
+%%ANKI
+Basic
+What is TLB an acronym for?
+Back: **T**ranslation **L**ookaside **B**uffer.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755302174437-->
+END%%
+
+%%ANKI
+Cloze
+A(n) {TLB} is a cache used by a(n) {MMU}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755302174440-->
+END%%
+
+%%ANKI
+Basic
+What is a TLB?
+Back: A small, virtually addressed cache containing PTEs.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755302174441-->
+END%%
+
+%%ANKI
+Basic
+What are contained in the cache blocks of a TLB?
+Back: Page table entries.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755302174443-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of a TLB?
+Back: To avoid having to lookup PTEs from another cache or main memory.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755302174445-->
+END%%
+
+%%ANKI
+Basic
+What round-trip does a TLB potentially avoid?
+Back: Retrieval of a PTE from an off-chip cache or main memory.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755302174446-->
+END%%
+
+%%ANKI
+Basic
+Where does a TLB reside?
+Back: On an MMU chip.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755302174447-->
 END%%
 
 ## Memory Mapping

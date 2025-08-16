@@ -139,6 +139,54 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1755126865890-->
 END%%
 
+%%ANKI
+Basic
+How is imaginary number $i$ expressed in polar form?
+Back: $i = \cos{(\pi / 2)} + i \sin{(\pi / 2)}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1755303780469-->
+END%%
+
+%%ANKI
+Basic
+Let $i$ denote the imaginary number. What is $\mathop{\text{Arg}}(i)$?
+Back: $\pi / 2$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1755303780473-->
+END%%
+
+%%ANKI
+Basic
+Let $z \in \mathbb{C}$. What is $\mathop{\text{Arg}}(z \cdot i)$?
+Back: $\mathop{\text{Arg}}(z) + \frac{\pi}{2}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1755303780475-->
+END%%
+
+%%ANKI
+Basic
+Let $z \in \mathbb{C}$. What is $\mathop{\text{Arg}}(z / i)$?
+Back: $\mathop{\text{Arg}}(z) - \frac{\pi}{2}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1755303780477-->
+END%%
+
+%%ANKI
+Basic
+*Why* does multiplying a complex number by $i$ rotate by $90\degree$ counterclockwise?
+Back: The product's argument is the sum of the multipliers' arguments.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1755303780479-->
+END%%
+
+%%ANKI
+Basic
+*Why* does dividing a complex number by $i$ rotate by $90\degree$ clockwise?
+Back: The quotient's argument is the difference of the divisors' arguments.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1755303780480-->
+END%%
+
 ### Division
 
 Let $w = r(\cos{\alpha} + i\sin{\beta})$ and $z = s(\cos{\beta} + i\sin{\beta})$. If $z \neq 0$, then $$\frac{w}{z} = \frac{r}{s}[\cos{(\alpha - \beta)} + i\sin{(\alpha - \beta)}].$$

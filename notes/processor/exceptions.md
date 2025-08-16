@@ -52,14 +52,6 @@ END%%
 
 %%ANKI
 Basic
-Which instruction is pushed onto the stack when an event triggers an exception?
-Back: Either the current instruction or the one after.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1751550403071-->
-END%%
-
-%%ANKI
-Basic
 After an event, what determines which instruction is pushed onto the stack?
 Back: The exception class.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
@@ -70,7 +62,7 @@ END%%
 
 Every exception is given a unique nonnegative integer called its **exception number**. This is used as an index into the exception table in which entry $k$ contains the address of the handler for exception $k$.
 
-The starting address of the exception table is contained in a special CPU register called the **exception table base register**.
+The starting address of the exception table is contained in a special CPU register called the **exception table base register** (ETBR).
 
 ![[exception-table.png]]
 
@@ -167,6 +159,22 @@ An exception is an indirect procedure call. What does "indirect" here refer to?
 Back: The exception handler is invoked indirectly through the exception table.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1751550403114-->
+END%%
+
+%%ANKI
+Basic
+With respect to exceptions, what is ETBR an acronym for?
+Back: The **e**xception **t**able **b**ase **r**egister.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423028-->
+END%%
+
+%%ANKI
+Basic
+Where is the exception table's address maintained?
+Back: In the exception table base register.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755301423031-->
 END%%
 
 ## Exception Classes
