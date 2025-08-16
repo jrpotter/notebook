@@ -469,7 +469,8 @@
     "venn-diagram-rel-comp.png",
     "venn-diagram-symm-diff.png",
     "complex-number.png",
-    "address-translation-marked.png"
+    "address-translation-marked.png",
+    "single-level-page-table.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -1375,7 +1376,7 @@
     "_journal/2025-08-02.md": "c237a676f64a904803c1fb58cecad9d3",
     "set/recursion.md": "e521e16edc2ef1b7d4d558da2e4a24ee",
     "_journal/2025-08/2025-08-01.md": "f8b49984d092121918bee1a9a2a71965",
-    "memory/virtual.md": "fd4e3187915f54d904f4a35c31ca4e16",
+    "memory/virtual.md": "f33406fe1a19fad862004a2bcb1cb096",
     "_journal/2025-08-03.md": "29738bd25bb4dfa7fc0a231a96ec8966",
     "_journal/2025-08/2025-08-02.md": "c237a676f64a904803c1fb58cecad9d3",
     "_journal/2025-08-04.md": "01b1a6aa5e0c0205364f82e07521dbd8",
@@ -1433,7 +1434,7 @@
     "ontology/dialetheism.md": "192d2d359f752d0a2a0da67e7f12cf7a",
     "ontology/properties.md": "52b2a8d1f0ac90aa771f7f154e1094a4",
     "_journal/2025-08-16.md": "145258836326e9e46353682e75ce9b3a",
-    "_journal/2025-08/2025-08-15.md": "d410b4c59c0b4ac029eab3a6758f8990"
+    "_journal/2025-08/2025-08-15.md": "00ce7e0eed902fce2b2842b7a2b9fc0b"
   },
   "fields_dict": {
     "Basic": [

@@ -11,9 +11,7 @@ tags:
 
 In **physical addressing**, the CPU accesses main memory directly using a **physical address** (PA). Each byte-size cell in main memory has a unique physical address to accommodate.
 
-In **virtual addressing**, the CPU accesses main memory indirectly using a **virtual address** (VA). This is converted into a physical address, in a process known as **address translation**, by the **memory management unit** (MMU) found on the CPU. The MMU performs this translation via a lookup table whose contents are managed by the [[operating_systems/index|OS]].
-
-An **address space** is an ordered set of nonnegative integer addresses.
+In **virtual addressing**, the CPU accesses main memory indirectly using a **virtual address** (VA). A virtual address is converted into a physical address via a process called **address translation**. This is performed by the **memory management unit** (MMU) found on the CPU.
 
 %%ANKI
 Basic
@@ -112,15 +110,15 @@ END%%
 
 %%ANKI
 Basic
-What data structure is used by the MMU to perform address translation?
-Back: A page table.
+What data structures are used by the MMU to perform address translation?
+Back: Page table.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754147709244-->
 END%%
 
 %%ANKI
 Basic
-What is responsible for updating the contents of the MMU's lookup table?
+What is responsible for updating the contents of the MMU's lookup tables?
 Back: The operating system.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754147709249-->
@@ -132,6 +130,17 @@ The {CPU} emits a {VA} which is translated by the {MMU} into a {PA}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754147709253-->
 END%%
+
+%%ANKI
+Cloze
+{Physical} memory serves as a cache for {virtual} memory.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754189294424-->
+END%%
+
+## Address Spaces
+
+An **address space** is an ordered set of nonnegative integer addresses. The physical memory system has a **physical address space** (PAS). Each process has its own **virtual address space** (VAS).
 
 %%ANKI
 Basic
@@ -167,25 +176,63 @@ END%%
 
 %%ANKI
 Basic
-Virtual address spaces are typically of what two sizes?
-Back: $32$- or $64$-bit.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1754147709270-->
-END%%
-
-%%ANKI
-Basic
 The size of an address space is characterized by the number of bits needed to represent what?
 Back: The largest address.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754147709274-->
 END%%
 
-## Caching
+%%ANKI
+Basic
+With respect to virtual memory, what is PAS an acronym for?
+Back: **P**hysical **A**ddress **S**pace.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755382190332-->
+END%%
 
-Physical memory serves as a [[caches|cache]] for virtual memory, backed by disk. Virtual memory is partitioned into fixed-size blocks called **virtual pages** (or just **pages**). Physical memory is also partitioned into **physical pages** (or **page frames**) of the same size.
+%%ANKI
+Basic
+With respect to virtual memory, what is VAS an acronym for?
+Back: **V**irtual **A**ddress **S**pace.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755382190335-->
+END%%
 
-A **page table** is used to map each allocated page to a location in physical memory or on disk. It is an array of **page table entries** (PTEs), each of which consists of a valid bit, permission bits, and a (possibly null) memory address. Each [[processes|process]] has its own page table and virtual address space.
+%%ANKI
+Basic
+Which of the physical and/or virtual address spaces are typically larger?
+Back: Virtual address spaces.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754189294514-->
+END%%
+
+%%ANKI
+Basic
+What does the number of virtual address spaces correspond to?
+Back: The number of processes managed by the OS.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754428249592-->
+END%%
+
+%%ANKI
+Basic
+What does the number of physical address spaces correspond to?
+Back: There is just the one.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754428249595-->
+END%%
+
+%%ANKI
+Basic
+Virtual address spaces are typically of what two sizes?
+Back: $32$- or $64$-bit.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1754147709270-->
+END%%
+
+## Pages
+
+Virtual memory is partitioned into fixed-size blocks called **virtual pages** (or **pages**). Physical memory is also partitioned into **physical pages** (or **page frames**) of the same size.
 
 Each virtual page belongs to any one of three disjoint sets:
 
@@ -195,15 +242,6 @@ Each virtual page belongs to any one of three disjoint sets:
 	* PTEs have their valid bit set to `1`. Their address field refers to an address in main memory.
 * **Uncached**. Pages that are not currently cached in physical memory.
 	* PTEs have their valid bit set to `1`. Their address field refers to an address in disk.
-
-The starting address of a page table is contained in a special CPU register called the **page table base register** (PTBR).
-
-%%ANKI
-Cloze
-{Physical} memory serves as a cache for {virtual} memory.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1754189294424-->
-END%%
 
 %%ANKI
 Cloze
@@ -349,14 +387,6 @@ END%%
 
 %%ANKI
 Basic
-Which of the physical and/or virtual address spaces are typically larger?
-Back: Virtual address spaces.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1754189294514-->
-END%%
-
-%%ANKI
-Basic
 Why are the size of virtual pages made relatively large?
 Back: To amortize against the cost of retrieving them from disk.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
@@ -379,9 +409,15 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1754189768120-->
 END%%
 
+## Page Tables
+
+A **page table** is a lookup table managed by the [[operating_systems/index|OS]]. It is an array of **page table entries** (PTEs), each of which consists of a valid bit, permission bits, and a (possibly null) memory address. Page tables are usually arranged in a hierarchy. A hierarchy of more than one level is called a **multi-level page table**. Each [[processes|process]] has its own hierarchy of page tables.
+
+The starting address of a page table is contained in a special CPU register called the **page table base register** (PTBR).
+
 %%ANKI
 Basic
-What name is given to the lookup table used by an MMU?
+What name is given to the lookup tables used by an MMU?
 Back: A page table.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754255440567-->
@@ -517,7 +553,7 @@ END%%
 
 %%ANKI
 Basic
-Consider an $n$-bit machine with pages of size $P = 2^p$. How many entries are in the page table?
+Consider an $n$-bit machine with pages of size $P = 2^p$. How many entries are in a single-level page table?
 Back: $2^n / 2^p = 2^{n - p}$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754255440677-->
@@ -525,7 +561,7 @@ END%%
 
 %%ANKI
 Basic
-What determines the size of the page table?
+What determines the size of a single-level page table?
 Back: The number of virtual pages that fit within the virtual address space.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754255440686-->
@@ -604,7 +640,7 @@ END%%
 
 %%ANKI
 Basic
-How is the page table updated when allocating a new page?
+How are page tables updated when allocating a new page?
 Back: Keeping its PTE's valid bit `0` and updating its address field to a new page on disk.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754320112971-->
@@ -612,26 +648,10 @@ END%%
 
 %%ANKI
 Basic
-What does the number of page tables correspond to?
+Assuming single-level hierarchies, what does the number of page tables correspond to?
 Back: The number of processes managed by the OS.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754428249588-->
-END%%
-
-%%ANKI
-Basic
-What does the number of virtual address spaces correspond to?
-Back: The number of processes managed by the OS.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1754428249592-->
-END%%
-
-%%ANKI
-Basic
-What does the number of physical address spaces correspond to?
-Back: There is just the one.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1754428249595-->
 END%%
 
 %%ANKI
@@ -661,14 +681,6 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
-Basic
-Where is a page table's address maintained?
-Back: In the page table base register.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1755301423033-->
-END%%
-
-%%ANKI
 Cloze
 The {1:ETBR} is to {2:exception handler addresses} whereas the {2:PTBR} is to {1:PTEs}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
@@ -685,13 +697,11 @@ END%%
 
 ### Address Translation
 
-**Address translation** refers to the mapping of an $n$-bit virtual address space into an $m$-bit physical address space.
+Consider a $k$-level page table hierarchy. Then a virtual address is partitioned into $k$ **virtual page numbers** (VPNs) and a **virtual page offset** (VPO).
 
-Assume each page, in both virtual and physical memory, has size $P = 2^p$ bits. Then an $n$-bit virtual address is partitioned into an $n - p$ **virtual page number** (VPN) and a $p$-bit **virtual page offset** (VPO). Likewise, an $m$-bit physical address is divided into an $m - p$ **physical page number** (PPN) and a $p$-bit **physical page offset** (PPO).
+Each VPN $1 \leq i \leq k$ is used to index into a page table at level $i$. Each PTE in a level $1 \leq j < k$ table points to the base of some page table at level $j + 1$. Each PTE in a level $k$ table contains either a **physical page number** (PPN) or the address of a disk block. The PPN is concatenated with the VPO. also known as the **physical page offset** (PPO), to construct the physical address.
 
-The MMU uses a VPN to index into the page table. If a non-null memory address (i.e. a PPN) is found in the corresponding PTE, an $m$-bit physical address is formed by concatenating the PPN and the VPO. Notice the PPO is equivalent to the VPO.
-
-![[address-translation.png]]
+![[multi-level-page-table.png]]
 
 %%ANKI
 Basic
@@ -758,15 +768,22 @@ END%%
 
 %%ANKI
 Basic
-The VPN of a VA serves as an index into what data structure?
+A VPN of a VA serves as an index into what data structure?
 Back: A page table.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423043-->
 END%%
 
 %%ANKI
+Cloze
+A {single}-level page table hierarchy is in contrast to a {multi}-level page table hierarchy.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755382190339-->
+END%%
+
+%%ANKI
 Basic
-Consider an $n$-bit VAS and $m$-bit PAS with $p$-bit pages. How large is a VPN?
+Assume an $n$-bit VAS, $m$-bit PAS, and $p$-bit pages. How large is a VPN in a single-level page table?
 Back: $n - p$ bits.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423044-->
@@ -774,7 +791,15 @@ END%%
 
 %%ANKI
 Basic
-Consider an $n$-bit VAS and $m$-bit PAS with $p$-bit pages. How large is a VPO?
+Assume an $n$-bit VAS, $m$-bit PAS, and $p$-bit pages. How large is a VPN in a multi-level page table?
+Back: Indeterminate.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755382728624-->
+END%%
+
+%%ANKI
+Basic
+Assume an $n$-bit VAS, $m$-bit PAS, and $p$-bit pages. How large is a VPO in a single-level page table?
 Back: $p$ bits.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423045-->
@@ -782,7 +807,15 @@ END%%
 
 %%ANKI
 Basic
-Consider an $n$-bit VAS and $m$-bit PAS with $p$-bit pages. How large is a PPN?
+Assume an $n$-bit VAS, $m$-bit PAS, and $p$-bit pages. How large is a VPO in a multi-level page table?
+Back: $p$ bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755382728627-->
+END%%
+
+%%ANKI
+Basic
+Assume an $n$-bit VAS, $m$-bit PAS, and $p$-bit pages. How large is a PPN in a single-level page table?
 Back: $m - p$ bits.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423046-->
@@ -790,7 +823,15 @@ END%%
 
 %%ANKI
 Basic
-Consider an $n$-bit VAS and $m$-bit PAS with $p$-bit pages. How large is a PPO?
+Assume an $n$-bit VAS, $m$-bit PAS, and $p$-bit pages. How large is a PPN in a multi-level page table?
+Back: $m - p$ bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755382728629-->
+END%%
+
+%%ANKI
+Basic
+Assume an $n$-bit VAS, $m$-bit PAS, and $p$-bit pages. How large is a PPO in a single-level page table?
 Back: $p$ bits.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423047-->
@@ -798,15 +839,23 @@ END%%
 
 %%ANKI
 Basic
-In address translation, how does a VPN and PPO relate to one another?
-Back: A VPN maps to a PPN which is in concatenated with a PPO.
+Assume an $n$-bit VAS, $m$-bit PAS, and $p$-bit pages. How large is a PPO in a multi-level page table?
+Back: $p$ bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755382728630-->
+END%%
+
+%%ANKI
+Basic
+In address translation, how do VPNs and PPOs relate to one another?
+Back: A chain of VPNs maps to a PPN which is concatenated with the PPO.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423048-->
 END%%
 
 %%ANKI
 Basic
-In address translation, how does a VPO and PPO relate to one another?
+In address translation, how do VPOs and PPOs relate to one another?
 Back: They should be identical.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423049-->
@@ -821,23 +870,25 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
-Cloze
-A {virtual address} is partitioned into a {virtual page number} and {virtual page offset}.
+Basic
+In a $k$-level page table hierarchy, how many VPNs is a VA partitioned into?
+Back: $k$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1755301423051-->
-END%%
-
-%%ANKI
-Cloze
-A {physical address} is partitioned into a {physical page number} and {physical page offset}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1755301423052-->
+<!--ID: 1755382728632-->
 END%%
 
 %%ANKI
 Basic
-What underlying data structure is used to convert VPNs into PPNs?
-Back: A page table.
+In a $k$-level page table hierarchy, how many PPNs is a PA partitioned into?
+Back: Just the one.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755382728633-->
+END%%
+
+%%ANKI
+Basic
+What underlying data structures are used to convert VPNs into a PPN?
+Back: Page tables.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423053-->
 END%%
@@ -845,7 +896,7 @@ END%%
 %%ANKI
 Basic
 During address translation, which portion of a VA is actually translated?
-Back: The VPN.
+Back: Its VPNs.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423054-->
 END%%
@@ -853,7 +904,7 @@ END%%
 %%ANKI
 Basic
 What does `A` correspond to in the following diagram?
-![[address-translation-marked.png]]
+![[single-level-page-table.png]]
 Back: The page table base register.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423055-->
@@ -862,7 +913,7 @@ END%%
 %%ANKI
 Basic
 What does `B` correspond to in the following diagram?
-![[address-translation-marked.png]]
+![[single-level-page-table.png]]
 Back: A virtual page number.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423056-->
@@ -871,7 +922,7 @@ END%%
 %%ANKI
 Basic
 What does `C` correspond to in the following diagram?
-![[address-translation-marked.png]]
+![[single-level-page-table.png]]
 Back: A virtual page offset.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423057-->
@@ -880,7 +931,7 @@ END%%
 %%ANKI
 Basic
 What does `D` correspond to in the following diagram?
-![[address-translation-marked.png]]
+![[single-level-page-table.png]]
 Back: A physical page number.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423058-->
@@ -889,7 +940,7 @@ END%%
 %%ANKI
 Basic
 What does `E` correspond to in the following diagram?
-![[address-translation-marked.png]]
+![[single-level-page-table.png]]
 Back: A physical page offset.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423059-->
@@ -898,7 +949,7 @@ END%%
 %%ANKI
 Basic
 What do `B` and `C` together correspond to in the following diagram?
-![[address-translation-marked.png]]
+![[single-level-page-table.png]]
 Back: A virtual address.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423060-->
@@ -907,7 +958,7 @@ END%%
 %%ANKI
 Basic
 What do `D` and `E` together correspond to in the following diagram?
-![[address-translation-marked.png]]
+![[single-level-page-table.png]]
 Back: A physical address.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423061-->
@@ -915,11 +966,35 @@ END%%
 
 %%ANKI
 Basic
-The following is a high-level diagram of what device's process?
-![[address-translation-marked.png]]
+Which device is responsible for performing the process diagrammed below?
+![[single-level-page-table.png]]
 Back: The MMU.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755301423062-->
+END%%
+
+%%ANKI
+Basic
+Consider a $2$-level page table hierarchy. What does it mean for a level 1 PTE to be `NULL`?
+Back: Every page in its corresponding level 2 page table is unallocated.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755382728634-->
+END%%
+
+%%ANKI
+Basic
+Consider a $2$-level page table hierarchy. What does it mean for a level 1 PTE to not be `NULL`?
+Back: At least one page in its corresponding level 2 page table is allocated.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755382728635-->
+END%%
+
+%%ANKI
+Basic
+*Why* are page tables typically arranged in a hierarchy?
+Back: It reduces the amount of memory usage significantly.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755382728636-->
 END%%
 
 ### Translation Lookaside Buffer
@@ -979,6 +1054,14 @@ Where does a TLB reside?
 Back: On an MMU chip.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755302174447-->
+END%%
+
+%%ANKI
+Basic
+Why are multi-level page table hierarchies only slightly slower than single-level ones?
+Back: Because of TLBs.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755382728638-->
 END%%
 
 ## Memory Mapping
