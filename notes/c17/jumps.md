@@ -22,7 +22,7 @@ END%%
 Cloze
 `goto` is to C whereas {`jmp`} is to x86-64.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1753827838097-->
 END%%
 

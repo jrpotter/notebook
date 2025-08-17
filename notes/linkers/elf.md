@@ -198,7 +198,7 @@ Basic
 In what ELF section would a `printf` format string be found in?
 Back: `.rodata`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17::stream
+Tags: c17::io::stream
 <!--ID: 1734367304877-->
 END%%
 

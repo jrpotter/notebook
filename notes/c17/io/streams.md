@@ -1,9 +1,10 @@
 ---
 title: Streams
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17::stream
+FILE TAGS: c17::io::stream
 tags:
   - c17
+  - io
   - stream
 ---
 
@@ -19,6 +20,12 @@ Files are typically closed using `fclose()`. This is likely a wrapper around the
 
 ```c
 int fclose(FILE *stream);
+```
+
+Open file descriptors can be examined or modified  using `fcntl()`:
+
+```c
+int fcntl(int fd, int op, ... /* arg */ );
 ```
 
 %%ANKI
@@ -277,6 +284,38 @@ Cloze
 With respect to `fopen()`, {exclusive} mode is indicated with a {`x`} character.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1754659255224-->
+END%%
+
+%%ANKI
+Basic
+Which C function is used to examine open file descriptors?
+Back: `fcntl()`
+Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
+<!--ID: 1755442726688-->
+END%%
+
+%%ANKI
+Basic
+Why is the `fcntl()` function named the way it is?
+Back: It is an acronym for **f**ile **c**o**nt**ro**l**.
+Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
+<!--ID: 1755442726690-->
+END%%
+
+%%ANKI
+Basic
+Which C function is used to modify open file descriptors?
+Back: `fcntl()`
+Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
+<!--ID: 1755442726691-->
+END%%
+
+%%ANKI
+Basic
+Which C header includes the `fcntl()` function?
+Back: `<fcntl.h>`
+Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
+<!--ID: 1755442726692-->
 END%%
 
 ## Buffering

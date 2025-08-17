@@ -521,6 +521,30 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1752191422512-->
 END%%
 
+%%ANKI
+Basic
+Assuming IPv4, which of TCP and/or UDP allow broadcasting?
+Back: Just UDP.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1755448358969-->
+END%%
+
+%%ANKI
+Basic
+Assuming IPv6, which of TCP and/or UDP allow broadcasting?
+Back: N/A. IPv6 does not support broadcasting.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1755448358973-->
+END%%
+
+%%ANKI
+Basic
+Assuming IPv4, *why* does TCP not allow broadcasting?
+Back: TCP is a connection-oriented protocol.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1755448358975-->
+END%%
+
 ### Multicast
 
 A **multicast** delivers a message to a group of hosts in a network using a *one-to-many-of-many* or *many-to-many-of-many* association. Messages are routed simultaneously in a single transmission to many recipients.
@@ -713,3 +737,4 @@ END%%
 
 * “Broadcasting (Networking).” In _Wikipedia_, August 3, 2024. [https://en.wikipedia.org/w/index.php?title=Broadcasting_(networking)](https://en.wikipedia.org/w/index.php?title=Broadcasting_\(networking\)&oldid=1238402634).
 * Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+* Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.

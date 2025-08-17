@@ -200,14 +200,6 @@ END%%
 
 %%ANKI
 Basic
-Which of the physical and/or virtual address spaces are typically larger?
-Back: Virtual address spaces.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1754189294514-->
-END%%
-
-%%ANKI
-Basic
 What does the number of virtual address spaces correspond to?
 Back: The number of processes managed by the OS.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
@@ -407,6 +399,22 @@ What does it mean for VM systems to be fully associative?
 Back: Any page can be placed in any page frame.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754189768120-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a page to be dirty?
+Back: It has been modified in memory.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755389158063-->
+END%%
+
+%%ANKI
+Basic
+What must the OS do to dirty pages?
+Back: It needs to be written to disk before being replaced in memory.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755389158066-->
 END%%
 
 ## Page Tables
@@ -975,7 +983,7 @@ END%%
 
 %%ANKI
 Basic
-Consider a $2$-level page table hierarchy. What does it mean for a level 1 PTE to be `NULL`?
+Consider a $2$-level page table hierarchy. What does a `NULL` level 1 PTE imply?
 Back: Every page in its corresponding level 2 page table is unallocated.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755382728634-->
@@ -983,7 +991,7 @@ END%%
 
 %%ANKI
 Basic
-Consider a $2$-level page table hierarchy. What does it mean for a level 1 PTE to not be `NULL`?
+Consider a $2$-level page table hierarchy. What does a non-`NULL` level 1 PTE imply?
 Back: At least one page in its corresponding level 2 page table is allocated.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755382728635-->
@@ -995,6 +1003,30 @@ Basic
 Back: It reduces the amount of memory usage significantly.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755382728636-->
+END%%
+
+%%ANKI
+Basic
+In a multi-level page table hierarchy, what does the PTBR point to?
+Back: The start of the level one page table.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755389158069-->
+END%%
+
+%%ANKI
+Basic
+Consider a $3$-level page table hierarchy. How is the start of a level $1$ page table found?
+Back: By referencing the PTBR.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755389158071-->
+END%%
+
+%%ANKI
+Basic
+Consider a $3$-level page table hierarchy. How is the start of a level $2$ page table found?
+Back: This is found in the PTEs of the level $1$ page table.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755389158072-->
 END%%
 
 ### Translation Lookaside Buffer
@@ -1059,9 +1091,57 @@ END%%
 %%ANKI
 Basic
 Why are multi-level page table hierarchies only slightly slower than single-level ones?
-Back: Because of TLBs.
+Back: Because of the TLB.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1755382728638-->
+END%%
+
+%%ANKI
+Basic
+Consider a single-level page table hierarchy. How many TLBs does an MMU employ?
+Back: Just one.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755389158073-->
+END%%
+
+%%ANKI
+Basic
+Consider a multi-level page table hierarchy. How many TLBs does an MMU employ?
+Back: Just one.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755389158074-->
+END%%
+
+%%ANKI
+Basic
+Are TLBs typically virtually or physically addressed?
+Back: Virtually addressed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755434688437-->
+END%%
+
+%%ANKI
+Basic
+Are L1 SRAM caches typically virtually or physically addressed?
+Back: Physically addressed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755434720688-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a cache to be virtually addressed instead of physically addressed?
+Back: Virtual addresses (instead of physical addresses) are used to index into the cache.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755389158077-->
+END%%
+
+%%ANKI
+Basic
+*Why* do TLBs not employ block offset bits in their cache architecture?
+Back: There is only one data object per cache block (i.e. the cached PTE).
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755389158078-->
 END%%
 
 ## Memory Mapping

@@ -1,9 +1,10 @@
 ---
 title: Sockets
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17::socket
+FILE TAGS: c17::io::socket
 tags:
   - c17
+  - io
   - socket
 ---
 

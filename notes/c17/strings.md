@@ -125,7 +125,7 @@ Basic
 What two ways are C escape sequences for unicode denoted?
 Back: As `\uhhhh` or `\Uhhhhhhhh`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: encoding::unicode
+Tags: i18n::unicode
 <!--ID: 1706975891832-->
 END%%
 
@@ -134,7 +134,7 @@ Basic
 In C, `\u` allows specifying how many hexadecimal digits?
 Back: Exactly four.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: encoding::unicode
+Tags: i18n::unicode
 <!--ID: 1706975891835-->
 END%%
 
@@ -143,7 +143,7 @@ Basic
 In what standard were C's `\u` and `\U` escape sequences introduced?
 Back: C11.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: encoding::unicode
+Tags: i18n::unicode
 <!--ID: 1706975891839-->
 END%%
 
@@ -152,7 +152,7 @@ Basic
 In C, `\U` allows specifying how many hexadecimal digits?
 Back: Exactly eight.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: encoding::unicode
+Tags: i18n::unicode
 <!--ID: 1706975891843-->
 END%%
 
@@ -161,7 +161,7 @@ Basic
 Why does C have both `\u` and `\U`?
 Back: `\U` accommodates for larger code point values.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: encoding::unicode
+Tags: i18n::unicode
 <!--ID: 1706976705750-->
 END%%
 
@@ -170,6 +170,7 @@ Basic
 Which escape sequences are used for Unicode code points?
 Back: `\u` and `\U`.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
 <!--ID: 1753474351765-->
 END%%
 
@@ -177,6 +178,7 @@ END%%
 Cloze
 {1:`\u`} is to {2:$16$} bits whereas {2:`\U`} is to {1:$32$} bits.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
 <!--ID: 1753474351775-->
 END%%
 
@@ -185,6 +187,7 @@ Basic
 How is `\U000003C0` expressed using `\u`?
 Back: As `\u03C0`.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
 <!--ID: 1753474351779-->
 END%%
 
@@ -193,6 +196,7 @@ Basic
 How is `\u03C0` expressed using `\U`?
 Back: As `\U000003C0`.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
 <!--ID: 1753474351782-->
 END%%
 
