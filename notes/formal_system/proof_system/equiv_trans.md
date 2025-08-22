@@ -469,7 +469,7 @@ END%%
 
 %%ANKI
 Basic
-How is e.g. the Law of Implication proven in the system of evaluation?
+How is the law of implication proven in the system of evaluation?
 Back: With truth tables.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707316178714-->
@@ -477,7 +477,7 @@ END%%
 
 %%ANKI
 Basic
-How is e.g. the Law of Implication proven in the formal system?
+How is the law of implication proven in the formal system?
 Back: It isn't. It is an axiom.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707316178715-->

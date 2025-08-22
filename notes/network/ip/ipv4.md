@@ -80,7 +80,7 @@ There exist a number of IPv4 addresses designated for special purposes. The foll
 
 | Prefix               | Special Use                                                                       |
 | -------------------- | --------------------------------------------------------------------------------- |
-| `0.0.0.0/8`          | Hosts on the local network. May be used only as a source IP address.              |
+| `0.0.0.0/32`         | The unspecified address. May be used as a source IP address.                      |
 | `10.0.0.0/8`         | Address for private networks. Such addresses never appear on the public Internet. |
 | `127.0.0.0/8`        | Internet host loopback addresses.                                                 |
 | `172.16.0.0/12`      | Address for private networks. Such addresses never appear on the public Internet. |
@@ -90,10 +90,42 @@ There exist a number of IPv4 addresses designated for special purposes. The foll
 
 %%ANKI
 Basic
-What special use is IPv4 prefix `0.0.0.0/8` designated for?
-Back: Hosts on the local network.
+What special use is IPv4 prefix `0.0.0.0/32` designated for?
+Back: The unspecified address.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649265-->
+END%%
+
+%%ANKI
+Basic
+What IPv4 address is often called the "wildcard address"?
+Back: `0.0.0.0`
+Reference: _Wikipedia_. “0.0.0.0.” July 23, 2025. [https://en.wikipedia.org/w/index.php?title=0.0.0.0](https://en.wikipedia.org/w/index.php?title=0.0.0.0&oldid=1302178851).
+<!--ID: 1755629919080-->
+END%%
+
+%%ANKI
+Basic
+Which of `0.0.0.0` or `127.0.0.1` can accept more connections?
+Back: `0.0.0.0`
+Reference: _Wikipedia_. “0.0.0.0.” July 23, 2025. [https://en.wikipedia.org/w/index.php?title=0.0.0.0](https://en.wikipedia.org/w/index.php?title=0.0.0.0&oldid=1302178851).
+<!--ID: 1755629919081-->
+END%%
+
+%%ANKI
+Basic
+If a socket is bound to `127.0.0.1`, which connections does it accept?
+Back: Those from the same machine.
+Reference: _Wikipedia_. “0.0.0.0.” July 23, 2025. [https://en.wikipedia.org/w/index.php?title=0.0.0.0](https://en.wikipedia.org/w/index.php?title=0.0.0.0&oldid=1302178851).
+<!--ID: 1755629919082-->
+END%%
+
+%%ANKI
+Basic
+If a socket is bound to `0.0.0.0`, which connections does it accept?
+Back: Those from any of the host's network interfaces (e.g. localhost, LAN IPs, public IPs, etc.).
+Reference: _Wikipedia_. “0.0.0.0.” July 23, 2025. [https://en.wikipedia.org/w/index.php?title=0.0.0.0](https://en.wikipedia.org/w/index.php?title=0.0.0.0&oldid=1302178851).
+<!--ID: 1755629919083-->
 END%%
 
 %%ANKI
@@ -167,8 +199,8 @@ END%%
 
 %%ANKI
 Basic
-Which IPv4 prefix is designated for hosts on a local network?
-Back: `0.0.0.0/8`
+Which IPv4 prefix is designated for the unspecified address?
+Back: `0.0.0.0/32`
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649295-->
 END%%
@@ -199,7 +231,7 @@ END%%
 
 %%ANKI
 Cloze
-The IPv4 prefix {`0.0.0.0`}`/`{`8`} is designated for hosts on the local network.
+The IPv4 prefix {`0.0.0.0`}`/`{`32`} is designated for the unspecified address.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752809649307-->
 END%%
@@ -228,3 +260,4 @@ END%%
 ## Bibliography
 
 * Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+* _Wikipedia_. “0.0.0.0.” July 23, 2025. [https://en.wikipedia.org/w/index.php?title=0.0.0.0](https://en.wikipedia.org/w/index.php?title=0.0.0.0&oldid=1302178851).

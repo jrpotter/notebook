@@ -186,7 +186,7 @@ END%%
 %%ANKI
 Basic
 The number of logical control flows of a computer corresponds to what?
-Back: The number of individual processes running on the computer.
+Back: The number of individual threads running on the computer.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752201359194-->
 END%%

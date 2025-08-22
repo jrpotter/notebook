@@ -35,7 +35,7 @@ For Internet-facing code:
 * The `ai_socktype` field indicates which socket type is being used.
 	* `SOCK_STREAM` or `SOCK_DGRAM` are used for [[tcp|TCP]] and [[udp|UDP]] respectively.
 * The `ai_addr` field contains data related to the actual address.
-	* Tthis value can be cast to a `struct sockaddr_in` or `struct sockaddr_in6`, dependeing on the value of the `ai_family`.
+	* Tthis value can be cast to a `struct sockaddr_in` or `struct sockaddr_in6`, depending on the value of the `ai_family`.
 	* This also specifies a 16-bit **port number** used to distinguish per-application traffic on the same host.
 
 %%ANKI
@@ -76,6 +76,14 @@ Which prefix is used by the fields in a `struct addrinfo`?
 Back: `ai_`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754382302437-->
+END%%
+
+%%ANKI
+Basic
+What does the `AI_` prefix typically denote?
+Back: Something related to `struct addressinfo`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1755629919084-->
 END%%
 
 %%ANKI
@@ -340,7 +348,15 @@ Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754403601872-->
 END%%
 
-## Initialization
+%%ANKI
+Basic
+Which C function is typically used to consume a `struct addrinfo` instance?
+Back: `getaddrinfo()`
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1755629919085-->
+END%%
+
+## API
 
 ### Socket
 
@@ -492,6 +508,13 @@ The `bind()` function is used to associate a socket descriptor to a given port o
 int bind(int sockfd, struct sockaddr *my_addr, int addrlen);
 ```
 
+The `AI_PASSIVE` constant can be passed to a `struct addrinfo` instance beforehand to indicate on what addresses a socket can accept on. This resolves to either one of the following:
+
+* `INADDR_ANY`. Usually corresponds to address `0.0.0.0`.
+* `IN6ADDR_ANY_INIT`. Usually corresponds to address `::`.
+* `INADDR_LOOPBACK`. Usually corresponds to address `127.0.0.1`.
+* `IN6ADDR_LOOPBACK_INIT`. Usually corresponds to address `::1`.
+
 %%ANKI
 Basic
 What is the purpose of the `bind()` function?
@@ -564,7 +587,55 @@ Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695740-->
 END%%
 
-## Client
+%%ANKI
+Basic
+What is the purpose of the `AI_PASSIVE` flag?
+Back: It indicates we want to bind to an IP of the host we're running on.
+Reference: “Getaddrinfo(3) - Linux Manual Page.” Accessed August 19, 2025. [https://man7.org/linux/man-pages/man3/getaddrinfo.3.html](https://man7.org/linux/man-pages/man3/getaddrinfo.3.html).
+<!--ID: 1755629919086-->
+END%%
+
+%%ANKI
+Cloze
+The C macro {`INADDR_ANY`} usually corresponds to IPv4 address {`0.0.0.0`}. 
+Reference: “Getaddrinfo(3) - Linux Manual Page.” Accessed August 19, 2025. [https://man7.org/linux/man-pages/man3/getaddrinfo.3.html](https://man7.org/linux/man-pages/man3/getaddrinfo.3.html).
+<!--ID: 1755629919087-->
+END%%
+
+%%ANKI
+Cloze
+The C macro {`IN6ADDR_ANY_INIT`} usually corresponds to IPv6 address {`꞉꞉`}. 
+Reference: “Getaddrinfo(3) - Linux Manual Page.” Accessed August 19, 2025. [https://man7.org/linux/man-pages/man3/getaddrinfo.3.html](https://man7.org/linux/man-pages/man3/getaddrinfo.3.html).
+<!--ID: 1755629919088-->
+END%%
+
+%%ANKI
+Cloze
+The C macro {`INADDR_LOOPBACK`} usually corresponds to IPv4 address {`127.0.0.1`}. 
+Reference: “Getaddrinfo(3) - Linux Manual Page.” Accessed August 19, 2025. [https://man7.org/linux/man-pages/man3/getaddrinfo.3.html](https://man7.org/linux/man-pages/man3/getaddrinfo.3.html).
+<!--ID: 1755629919089-->
+END%%
+
+%%ANKI
+Cloze
+The C macro {`IN6ADDR_LOOPBACK_INIT`} usually corresponds to IPv6 address {`꞉꞉1`}. 
+Reference: “Getaddrinfo(3) - Linux Manual Page.” Accessed August 19, 2025. [https://man7.org/linux/man-pages/man3/getaddrinfo.3.html](https://man7.org/linux/man-pages/man3/getaddrinfo.3.html).
+<!--ID: 1755629919090-->
+END%%
+
+%%ANKI
+Cloze
+{1:`INADDR_ANY`} is to {2:IPv4} whereas {2:`IN6ADDR_ANY_INIT`} is to {1:IPv6}.
+Reference: “Getaddrinfo(3) - Linux Manual Page.” Accessed August 19, 2025. [https://man7.org/linux/man-pages/man3/getaddrinfo.3.html](https://man7.org/linux/man-pages/man3/getaddrinfo.3.html).
+<!--ID: 1755629919091-->
+END%%
+
+%%ANKI
+Cloze
+{1:`INADDR_LOOPBACK`} is to {2:IPv4} whereas {2:`IN6ADDR_LOOPBACK_INIT`} is to {1:IPv6}.
+Reference: “Getaddrinfo(3) - Linux Manual Page.” Accessed August 19, 2025. [https://man7.org/linux/man-pages/man3/getaddrinfo.3.html](https://man7.org/linux/man-pages/man3/getaddrinfo.3.html).
+<!--ID: 1755629919092-->
+END%%
 
 ### Connect
 
@@ -621,8 +692,6 @@ Back: `socket()`, `bind()`, and `connect()`.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754488540960-->
 END%%
-
-## Server
 
 ### Listen
 
@@ -719,7 +788,55 @@ Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695773-->
 END%%
 
-## Communication
+### Termination
+
+The `close()` [[syscalls]] can be used on sockets to close the underlying connection.
+
+For more control, the `shutdown()` function can be used instead. This allows cutting communication off only in one direction. Note this function doesn't close the file descriptor though - `close()` still needs to be called. 
+
+```c
+int shutdown(int sockfd, int how);
+```
+
+%%ANKI
+Basic
+What function is used to turn down a socket?
+Back: `close()`.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590253-->
+END%%
+
+%%ANKI
+Basic
+Why does `close()` work on both files and sockets?
+Back: On Linux, both are files (i.e. they each have an associated file descriptor).
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590256-->
+END%%
+
+%%ANKI
+Basic
+Which of `shutdown()` or `close()` is more general?
+Back: N/A.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590259-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `shutdown()` function?
+Back: It allows stopping socket communication in just one direction.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590262-->
+END%%
+
+%%ANKI
+Basic
+*Why* is `shutdown()` not a replacement for `close()`?
+Back: The former configures the socket but does not close the socket descriptor.
+Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+<!--ID: 1754779590266-->
+END%%
 
 ### Connection-Oriented
 
@@ -833,56 +950,7 @@ Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755120537916-->
 END%%
 
-## Termination
-
-The `close()` [[syscalls]] can be used on sockets to close the underlying connection.
-
-For more control, the `shutdown()` function can be used instead. This allows cutting communication off only in one direction. Note this function doesn't close the file descriptor though - `close()` still needs to be called. 
-
-```c
-int shutdown(int sockfd, int how);
-```
-
-%%ANKI
-Basic
-What function is used to turn down a socket?
-Back: `close()`.
-Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
-<!--ID: 1754779590253-->
-END%%
-
-%%ANKI
-Basic
-Why does `close()` work on both files and sockets?
-Back: On Linux, both are files (i.e. they each have an associated file descriptor).
-Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
-<!--ID: 1754779590256-->
-END%%
-
-%%ANKI
-Basic
-Which of `shutdown()` or `close()` is more general?
-Back: N/A.
-Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
-<!--ID: 1754779590259-->
-END%%
-
-%%ANKI
-Basic
-What is the purpose of the `shutdown()` function?
-Back: It allows stopping socket communication in just one direction.
-Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
-<!--ID: 1754779590262-->
-END%%
-
-%%ANKI
-Basic
-*Why* is `shutdown()` not a replacement for `close()`?
-Back: The former configures the socket but does not close the socket descriptor.
-Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
-<!--ID: 1754779590266-->
-END%%
-
 ## Bibliography
 
+* “Getaddrinfo(3) - Linux Manual Page.” Accessed August 19, 2025. [https://man7.org/linux/man-pages/man3/getaddrinfo.3.html](https://man7.org/linux/man-pages/man3/getaddrinfo.3.html).
 * Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.

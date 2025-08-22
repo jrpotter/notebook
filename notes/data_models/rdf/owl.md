@@ -904,13 +904,6 @@ Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web
 <!--ID: 1752244430365-->
 END%%
 
-%%ANKI
-Cloze
-{`owl:oneOf`} is a generalization of {`owl:hasValue`}.
-Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-<!--ID: 1752244430372-->
-END%%
-
 ### Cardinality
 
 The `owl:cardinality` construct is used to specify the number of distinct values a property can have for any subject. `owl:minCardinality` and `owl:maxCardinality` define lower and upper bounds respectively. For example:

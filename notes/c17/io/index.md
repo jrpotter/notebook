@@ -240,7 +240,7 @@ END%%
 %%ANKI
 Basic
 Why is `epoll` named the way it is?
-Back: It's an acronym for **e**vent **poll**ing.
+Back: It's shorthand for **e**vent **poll**ing.
 Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
 Tags: os::linux
 <!--ID: 1755447619137-->
@@ -285,7 +285,7 @@ END%%
 %%ANKI
 Basic
 Which mode should `epoll` be in to match the semantics of `poll()`?
-Back: Level-Triggered.
+Back: Level-triggered mode.
 Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
 Tags: os::linux
 <!--ID: 1755447619142-->
@@ -293,7 +293,7 @@ END%%
 
 %%ANKI
 Basic
-The mode `epoll` is in controls how which function behaves?
+The `epoll` mode determines which function's behavior?
 Back: `epoll_wait()`
 Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
 Tags: os::linux
@@ -357,7 +357,7 @@ END%%
 %%ANKI
 Basic
 What is `EPOLLET` an acronym for?
-Back: **E**vent **poll**ing, **e**vent-**t**riggered.
+Back: **E**vent **poll**ing, **e**dge-**t**riggered.
 Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
 Tags: os::linux
 <!--ID: 1755447619150-->

@@ -48,7 +48,7 @@ END%%
 
 %%ANKI
 Basic
-Let $a$ be an integer. What does $\gcd(a, 0)$ evaluate to?
+Let $a$ be a nonzero integer. What does $\gcd(a, 0)$ evaluate to?
 Back: $\lvert a \rvert$
 Reference: “Greatest Common Divisor.” In _Wikipedia_, July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
 <!--ID: 1751830087191-->
@@ -56,7 +56,7 @@ END%%
 
 %%ANKI
 Basic
-Let $b$ be an integer. What does $\gcd(0, b)$ evaluate to?
+Let $b$ be a nonzero integer. What does $\gcd(0, b)$ evaluate to?
 Back: $\lvert b \rvert$
 Reference: “Greatest Common Divisor.” In _Wikipedia_, July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
 <!--ID: 1751830087192-->
@@ -118,7 +118,7 @@ END%%
 
 %%ANKI
 Basic
-Let $P$ a set of positive integers ordered by the divisibility relation. What specific name does the infimum of $A \subseteq P$ go by?
+Let $P$ be a set of positive integers ordered by the divisibility relation. What specific name does the infimum of $A \subseteq P$ go by?
 Back: The GCD of $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751830087199-->
@@ -218,7 +218,7 @@ END%%
 
 %%ANKI
 Basic
-Let $P$ a set of positive integers ordered by the divisibility relation. What specific name does the supremum of $A \subseteq P$ go by?
+Let $P$ be a set of positive integers ordered by the divisibility relation. What specific name does the supremum of $A \subseteq P$ go by?
 Back: The LCM of $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751830087210-->

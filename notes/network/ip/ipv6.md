@@ -267,6 +267,38 @@ END%%
 
 %%ANKI
 Basic
+What IPv6 address is often called the "wildcard address"?
+Back: `::`
+Reference: _Wikipedia_. “0.0.0.0.” July 23, 2025. [https://en.wikipedia.org/w/index.php?title=0.0.0.0](https://en.wikipedia.org/w/index.php?title=0.0.0.0&oldid=1302178851).
+<!--ID: 1755629919073-->
+END%%
+
+%%ANKI
+Basic
+Which of `::` or `::1` can accept more connections?
+Back: `::`
+Reference: _Wikipedia_. “0.0.0.0.” July 23, 2025. [https://en.wikipedia.org/w/index.php?title=0.0.0.0](https://en.wikipedia.org/w/index.php?title=0.0.0.0&oldid=1302178851).
+<!--ID: 1755629919076-->
+END%%
+
+%%ANKI
+Basic
+If a socket is bound to `::1`, which connections does it accept?
+Back: Those from the same machine.
+Reference: _Wikipedia_. “0.0.0.0.” July 23, 2025. [https://en.wikipedia.org/w/index.php?title=0.0.0.0](https://en.wikipedia.org/w/index.php?title=0.0.0.0&oldid=1302178851).
+<!--ID: 1755629919077-->
+END%%
+
+%%ANKI
+Basic
+If a socket is bound to `::`, which connections does it accept?
+Back: Those from any of the host's network interfaces (e.g. localhost, LAN IPs, public IPs, etc.).
+Reference: _Wikipedia_. “0.0.0.0.” July 23, 2025. [https://en.wikipedia.org/w/index.php?title=0.0.0.0](https://en.wikipedia.org/w/index.php?title=0.0.0.0&oldid=1302178851).
+<!--ID: 1755629919078-->
+END%%
+
+%%ANKI
+Basic
 What special use is IPv6 prefix `::1/128` designated for?
 Back: The Internet host loopback address.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
@@ -349,6 +381,14 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1753822510448-->
 END%%
 
+%%ANKI
+Cloze
+{`꞉꞉/128`} is to IPv6 whereas {`0.0.0.0/32`} is to IPv4.
+Reference: _Wikipedia_. “0.0.0.0.” July 23, 2025. [https://en.wikipedia.org/w/index.php?title=0.0.0.0](https://en.wikipedia.org/w/index.php?title=0.0.0.0&oldid=1302178851).
+<!--ID: 1755627631719-->
+END%%
+
 ## Bibliography
 
 * Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+* _Wikipedia_. “0.0.0.0.” July 23, 2025. [https://en.wikipedia.org/w/index.php?title=0.0.0.0](https://en.wikipedia.org/w/index.php?title=0.0.0.0&oldid=1302178851).

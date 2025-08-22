@@ -47,7 +47,7 @@ END%%
 
 %%ANKI
 Cloze
-{Multitasking} is also known as {time slicing}.
+Multitasking is also known as {time} {slicing}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752201359139-->
 END%%

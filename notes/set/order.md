@@ -1670,8 +1670,8 @@ END%%
 
 %%ANKI
 Basic
-Let $<$ be a strict well ordering on set $A$. What is the initial segment up to $t \in A$?
-Back: Set $\{x \in A \mid x < t \}$
+Let $<$ be a strict well ordering on set $A$. How is the initial segment up to $t \in A$ defined?
+Back: As set $\{x \in A \mid x < t \}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1752493936301-->
 END%%

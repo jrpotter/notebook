@@ -273,7 +273,7 @@ END%%
 %%ANKI
 Basic
 How many invocations of DFS are required to color a graph black?
-Back: One or more.
+Back: One or more, i.e. one for each tree in the forest.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1735081276205-->
 END%%
