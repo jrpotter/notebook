@@ -1146,20 +1146,44 @@ END%%
 
 ## Memory Mapping
 
-**Memory mapping** refers to the mapping of contiguous virtual pages to an arbitrary location in an arbitrary [[operating_systems/files|file]].
+**Memory mapping** refers to the initialization of virtual memory areas by associating it with an **object** on disk.
+
+```c
+void *mmap(void *start, size_t length, int prot, int flags,
+           int fd, off_t offset);
+int munmap(void *start, size_t length);
+```
 
 %%ANKI
 Basic
 What is memory mapping?
-Back: The mapping of contiguous virtual pages to an arbitrary location in an arbitrary file.
+Back: Initializing virtual memory areas by associated it with an object on disk.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754429038191-->
 END%%
 
 %%ANKI
 Basic
+Which C header contains the `mmap()` function?
+Back: `<sys/mman.h>`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1755920563825-->
+END%%
+
+%%ANKI
+Basic
+Why is the `<sys/mman.h>` header named the way it is?
+Back: `mman` is short for **m**emory **man**agement.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1755920563830-->
+END%%
+
+%%ANKI
+Basic
 Which system call is used for memory mapping?
-Back: `mmap`
+Back: `mmap()`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17 os::linux
 <!--ID: 1754429038194-->
@@ -1167,7 +1191,24 @@ END%%
 
 %%ANKI
 Basic
-Why is the `mmap` system call named the way it is?
+Which system call is used to delete a memory mapped region?
+Back: `munmap()`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 os::linux
+<!--ID: 1755920563832-->
+END%%
+
+%%ANKI
+Cloze
+{1:`mmap()`} is to {2:`malloc()`} as {2:`munmap()`} is to {1:`free()`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 os::linux
+<!--ID: 1755920563834-->
+END%%
+
+%%ANKI
+Basic
+Why is the `mmap()` system call named the way it is?
 Back: It's short for **m**emory **map**ping.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17 os::linux
@@ -1176,10 +1217,433 @@ END%%
 
 %%ANKI
 Basic
+Why is the `munmap()` system call named the way it is?
+Back: It's short for **m**emory **unmap**ping.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 os::linux
+<!--ID: 1755920563836-->
+END%%
+
+### Object Types
+
+There exist two types of objects:
+
+* A **regular** [[files|file]]. The file section is divided into page-size pieces, with each piece containing the initial contents of a virtual page.
+* An **anonymous** file. This file, created by the kernel, contains all binary zeros. When swapping, the kernel simply erases the victim page as opposed to swapping out with contents on disk.
+
+The kernel swaps virtual pages in and out of the **swap file**. Note this implies the size of the swap file bounds the total amount of virtual pages that can be allocated.
+
+%%ANKI
+Basic
 How does VM allow a single copy of a shared library to be used by multiple processes?
 Back: Each process will have virtual pages mapped to the same physical pages containing the shared library code/data.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754429038206-->
+END%%
+
+%%ANKI
+Basic
+With respect to memory mapping, what are the different kinds of objects on disk?
+Back: Either a regular file or an anonymous file.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866238-->
+END%%
+
+%%ANKI
+Basic
+With respect to memory mapping, how many different object types on disk are there?
+Back: Two.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866247-->
+END%%
+
+%%ANKI
+Basic
+With respect to memory mapping, what is a "regular file"?
+Back: A normal Linux file, e.g. an executable object file.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121247-->
+END%%
+
+%%ANKI
+Basic
+With respect to memory mapping, what is an "anonymous file"?
+Back: A file created by the kernel containing all binary zeroes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121252-->
+END%%
+
+%%ANKI
+Basic
+Which of regular or anonymous files are generally considered more performant?
+Back: Anonymous files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121257-->
+END%%
+
+%%ANKI
+Basic
+*Why* are anonymous files more performant than regular files?
+Back: Swapping out pages does not require reading/writing to disk.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121262-->
+END%%
+
+%%ANKI
+Cloze
+{1:Demand} paging is to {2:regular} files whereas {2:demand-zero} paging is to {1:anonymous} files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121267-->
+END%%
+
+%%ANKI
+Basic
+*Why* is demand-zero paging named the way it is?
+Back: When first touching a page mapped to an anonymous file, the victim page is simply zeroed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121271-->
+END%%
+
+%%ANKI
+Basic
+With respect to memory mapping, what kind of object does demand-zero paging relate to?
+Back: Anonymous files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121276-->
+END%%
+
+%%ANKI
+Basic
+With respect to memory mapping, what kind of object does demand paging relate to?
+Back: Both regular and anonymous files.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121281-->
+END%%
+
+%%ANKI
+Basic
+What is demand-zero paging?
+Back: Zeroing out a victim page mapped to an anonymous file on first touch.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121286-->
+END%%
+
+%%ANKI
+Basic
+If a page is larger than a memory mapped object, how is the swapped-in page initialized?
+Back: As the object contents followed by padding zeroes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121291-->
+END%%
+
+%%ANKI
+Basic
+What is a swap file?
+Back: The region virtual pages are swapped in and out of.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121295-->
+END%%
+
+%%ANKI
+Basic
+The swap file bounds what?
+Back: The number of virtual pages the OS can allocate at any given moment.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121300-->
+END%%
+
+%%ANKI
+Basic
+*Why* is it recommended the swap file is at least as large as physical memory?
+Back: Since otherwise the OS can allocate fewer virtual pages than physical pages.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121305-->
+END%%
+
+%%ANKI
+Basic
+In what file are virtual pages swapped in and out of?
+Back: The swap file.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121309-->
+END%%
+
+%%ANKI
+Basic
+When does a regular file switch from demand-zero paging to demand paging?
+Back: N/A. It is always demand paged.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121314-->
+END%%
+
+%%ANKI
+Basic
+When does an anonymous file switch from demand-zero paging to demand paging?
+Back: After the corresponding virtual pages are initialized.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755913121318-->
+END%%
+
+### Shared/Private
+
+An object can be mapped into an area of virtual memory as either a **shared object** or a **private object**. Only a single copy of a shared object needs to be stored in physical memory. Private objects are mapped into virtual memory using **copy-on-write** (COW). Once a process attempts to write to a private object, the kernel produces a copy the process writes to instead.
+
+%%ANKI
+Cloze
+An object can be mapped as either a {shared} object or {private} object.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866251-->
+END%%
+
+%%ANKI
+Basic
+With respect to memory mapping, how many ways can an object be mapped to a VM area?
+Back: Two.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866256-->
+END%%
+
+%%ANKI
+Basic
+With respect to memory mapping, in what two ways can an object be mapped to a VM area?
+Back: As either a shared object or private object.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866260-->
+END%%
+
+%%ANKI
+Basic
+Assuming appropriate permissions, how are changes to a shared object reflected on disk?
+Back: Changes are also reflected in the original object on disk.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866264-->
+END%%
+
+%%ANKI
+Basic
+Assuming appropriate permissions, how are changes to a private object reflected on disk?
+Back: Changes are not reflected in the original object on disk.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866269-->
+END%%
+
+%%ANKI
+Basic
+With respect to memory mapping, why is a shared object named the way it is?
+Back: The corresponding object on disk and memory can be seen by multiple processes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866273-->
+END%%
+
+%%ANKI
+Basic
+With respect to memory mapping, why is a private object named the way it is?
+Back: The corresponding object on disk and memory can be seen by multiple processes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866277-->
+END%%
+
+%%ANKI
+Basic
+How is it the kernel is able to determine if a shared object is already mapped into a VM area?
+Back: By referencing each object's unique filename.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866282-->
+END%%
+
+%%ANKI
+Basic
+What is COW an acronym for?
+Back: **C**opy-**o**n-**w**rite.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755918866286-->
+END%%
+
+%%ANKI
+Basic
+What does copy-on-write refer to?
+Back: A strategy in which a copy of data is made when a write operation is to be performed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1755918866290-->
+END%%
+
+%%ANKI
+Basic
+How many copies of a shared object are stored in physical memory?
+Back: N/A. There are no copies of a shared object.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866295-->
+END%%
+
+%%ANKI
+Basic
+How many copies of a private object are stored in physical memory?
+Back: One or more.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866299-->
+END%%
+
+%%ANKI
+Basic
+Assuming appropriate permissions, when is a copy of a shared object made?
+Back: N/A. Only one instance of a shared object exists in physical memory.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866307-->
+END%%
+
+%%ANKI
+Basic
+Assuming appropriate permissions, when is a copy of a private object made?
+Back: When a process attempts to write to the object.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866311-->
+END%%
+
+%%ANKI
+Basic
+*Why* are copies of private objects made at write instead of e.g. when a process begins?
+Back: To minimize the amount of physical memory needed by all the running processes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866315-->
+END%%
+
+%%ANKI
+Basic
+Is a process's stack shared or private?
+Back: Private.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866320-->
+END%%
+
+%%ANKI
+Basic
+Is a process's stack file-backed or demand-zero?
+Back: Demand-zero.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866325-->
+END%%
+
+%%ANKI
+Basic
+Is a process's memory-mapped region for shared libraries file-backed or demand-zero?
+Back: File-backed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866334-->
+END%%
+
+%%ANKI
+Basic
+Is a process's heap shared or private?
+Back: Private.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866338-->
+END%%
+
+%%ANKI
+Basic
+Is a process's heap file-backed or demand-zero?
+Back: Demand-zero.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866343-->
+END%%
+
+%%ANKI
+Basic
+Is a process's `.bss` section shared or private?
+Back: Private.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866347-->
+END%%
+
+%%ANKI
+Basic
+Is a process's `.bss` section file-backed or demand-zero?
+Back: Demand-zero.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866351-->
+END%%
+
+%%ANKI
+Basic
+Is a process's `.data` section shared or private?
+Back: Private.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866355-->
+END%%
+
+%%ANKI
+Basic
+Is a process's `.data` section file-backed or demand-zero?
+Back: File-backed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866360-->
+END%%
+
+%%ANKI
+Basic
+Is a process's `.code` section shared or private?
+Back: Private.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866364-->
+END%%
+
+%%ANKI
+Basic
+Is a process's `.code` section file-backed or demand-zero?
+Back: File-backed.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866368-->
+END%%
+
+%%ANKI
+Basic
+A processes's `.data` section is typically file-backed. Why aren't changes then committed to disk?
+Back: This section is made private copy-on-write.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: os::linux
+<!--ID: 1755918866373-->
 END%%
 
 ## Bibliography
