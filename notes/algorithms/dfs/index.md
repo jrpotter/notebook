@@ -431,7 +431,7 @@ END%%
 
 %%ANKI
 Basic
-Assuming solid lines are tree edges, how is edge $\langle s, c \rangle$ classified?
+Assume source vertex $s$ and solid lines represent tree edges. How is edge $\langle s, c \rangle$ classified?
 ![[dfs-edge-classification.png]]
 Back: As a forward edge.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -440,7 +440,7 @@ END%%
 
 %%ANKI
 Basic
-Assuming solid lines are tree edges, *why* is edge $\langle s, c \rangle$ a forward edge?
+Assume source vertex $s$ and solid lines represent tree edges. *Why* is edge $\langle s, c \rangle$ a forward edge?
 ![[dfs-edge-classification.png]]
 Back: Because $c$ is a descendant of $s$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -449,7 +449,7 @@ END%%
 
 %%ANKI
 Basic
-Assuming solid lines are tree edges, how is edge $\langle c, s \rangle$ classified?
+Assume source vertex $s$ and solid lines represent tree edges. How is edge $\langle c, s \rangle$ classified?
 ![[dfs-edge-classification.png]]
 Back: N/A. This edge does not exist.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -458,7 +458,7 @@ END%%
 
 %%ANKI
 Basic
-Assuming solid lines are tree edges, how is edge $\langle b, s \rangle$ classified?
+Assume source vertex $s$ and solid lines represent tree edges. How is edge $\langle b, s \rangle$ classified?
 ![[dfs-edge-classification.png]]
 Back: As a back edge.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -467,7 +467,7 @@ END%%
 
 %%ANKI
 Basic
-Why is edge $\langle b, s \rangle$ classified as a back edge?
+Assume source vertex $s$. Why is edge $\langle b, s \rangle$ classified as a back edge?
 ![[dfs-edge-classification.png]]
 Back: Because $s$ is an ancestor of $b$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -476,7 +476,7 @@ END%%
 
 %%ANKI
 Basic
-Assuming solid lines are tree edges, how is edge $\langle d, c \rangle$ classified?
+Assume source vertex $s$ and solid lines represent tree edges. How is edge $\langle d, c \rangle$ classified?
 ![[dfs-edge-classification.png]]
 Back: As a cross edge.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
@@ -485,7 +485,7 @@ END%%
 
 %%ANKI
 Basic
-Assuming solid lines are tree edges, *why* is edge $\langle d, c \rangle$ a cross edge?
+Assume source vertex $s$ and solid lines represent tree edges. *Why* is edge $\langle d, c \rangle$ a cross edge?
 ![[dfs-edge-classification.png]]
 Back: Because $d$ and $c$ have no ancestor-descendant relation between them.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

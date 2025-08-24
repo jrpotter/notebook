@@ -222,6 +222,168 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1755126865894-->
 END%%
 
+## De Moivre's Theorem
+
+Let $z = r(\cos{\theta} + i\sin{\theta})$ be a complex number and $n$ be any integer. Then $$z^n = r^n\left[ \cos{(n\theta)} + i\sin{(n\theta)} \right].$$
+
+%%ANKI
+Basic
+What does de Moivre's theorem state?
+Back: For any complex number $z = r(\cos{\theta} + i\sin{\theta})$ and any integer $n$, $$z^n = r^n \left[ \cos{(n\theta)} + i\sin{(n\theta)} \right].$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145667-->
+END%%
+
+%%ANKI
+Basic
+How is de Moivre's theorem proven?
+Back: By induction on the multiplication of complex numbers.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145670-->
+END%%
+
+%%ANKI
+Basic
+Let $z = r(\cos{\theta} + i\sin{\theta})$ and $n \in \mathbb{Z}$. What name is given to the following identity? $$z^n = r^n \left[ \cos{(n\theta)} + i\sin{(n\theta)} \right].$$
+Back: De Moivre's theorem.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145671-->
+END%%
+
+%%ANKI
+Basic
+Let $z = r(\cos{\theta} + i\sin{\theta})$. In what way does de Moivre's theorem generalize the following identity? $$z^2 = r^2 \left[ \cos{(2\theta)} + i\sin{(2\theta)} \right]$$
+Back: De Moivre's theorem shows that for any $n \in \mathbb{Z}$, $$z^n = r^n \left[ \cos{(n\theta)} + i\sin{(n\theta)} \right].$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145672-->
+END%%
+
+%%ANKI
+Basic
+Let $z = r(\cos{\theta} + i\sin{\theta})$. What does $z^0$ equal?
+Back: $z^0 = r^0(\cos{0} + i\sin{0}) = 1$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145674-->
+END%%
+
+%%ANKI
+Basic
+Let $z = r(\cos{\theta} + i\sin{\theta})$. What does $z^{-1}$ equal?
+Back: $z^{-1} = r^{-1} \left[ \cos{(-\theta)} + i\sin{(-\theta)} \right]$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145675-->
+END%%
+
+### Roots
+
+Let $z = r(\cos{\theta} + i\sin{\theta})$ be a complex number. Then, for $k = 0, 1, \ldots, n - 1$, the **$n$th roots of $z$** are given by $$\large \sqrt[n]{r} \left[ \cos{\left( \frac{\theta + 2\pi k}{n} \right)} + i\sin{\left( \frac{\theta + 2\pi k}{n} \right)} \right].$$
+
+The solutions to $x^n = 1$ are called the **$n$th roots of unity**.
+
+![[fifth-roots-unity.png]]
+
+%%ANKI
+Basic
+Let $z = r(\cos{\theta} + i\sin{\theta})$ be a complex number. How many $n$th roots of $z$ exist?
+Back: $n$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145676-->
+END%%
+
+%%ANKI
+Basic
+Let $z = r(\cos{\theta} + i\sin{\theta})$ be a complex number. What are the $n$th roots of $z$?
+Back: For $k = 0, 1, \ldots, n - 1$, $$\large \sqrt[n]{r} \left[ \cos{\left( \frac{\theta + 2\pi k}{n} \right)} + i\sin{\left( \frac{\theta + 2\pi k}{n} \right)} \right]$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145677-->
+END%%
+
+%%ANKI
+Basic
+Let $z = r(\cos{\theta} + i\sin{\theta})$ be a complex number. What is the "first" of its $n$th roots of $z$?
+Back: $$\large \sqrt[n]{r} \left[ \cos{\left( \frac{\theta}{n} \right)} + i\sin{\left( \frac{\theta}{n} \right)} \right]$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145678-->
+END%%
+
+%%ANKI
+Basic
+Let $z = r(\cos{\theta} + i\sin{\theta})$ be a complex number. What is the "last" of its $n$th roots of $z$?
+Back: $$\large \sqrt[n]{r} \left[ \cos{\left( \frac{\theta + 2\pi(n - 1)}{n} \right)} + i\sin{\left( \frac{\theta + 2\pi(n - 1)}{n} \right)} \right]$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145679-->
+END%%
+
+%%ANKI
+Basic
+Which theorem is used to find the $n$th roots of a complex number?
+Back: De Moivre's theorem.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145680-->
+END%%
+
+%%ANKI
+Basic
+Finding the complex square roots of $1$ is equivalent to solving what equation?
+Back: $z^2 = 1$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145681-->
+END%%
+
+%%ANKI
+Basic
+How many square roots of complex number $1$ exist?
+Back: Two.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145682-->
+END%%
+
+%%ANKI
+Cloze
+The solutions to {$x^n = 1$} are called the {$n$th roots of unity}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145683-->
+END%%
+
+%%ANKI
+Cloze
+Let $z \in \mathbb{C}$. The solutions to {$x^n = z$} are called the {$n$th roots of $z$}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145684-->
+END%%
+
+%%ANKI
+Basic
+What are the solutions to $x^4 = 1$?
+Back: For $k = 0, 1, 2, 3$, $$\large \cos{\left( \frac{2\pi k}{4} \right)} + i\sin{\left( \frac{2 \pi k}{4} \right)}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145685-->
+END%%
+
+%%ANKI
+Basic
+With respect to complex numbers, what does unity refer to?
+Back: The number $1$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145686-->
+END%%
+
+%%ANKI
+Basic
+How is unity written in polar form?
+Back: $1 = \cos{0} + i\sin{0}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145687-->
+END%%
+
+%%ANKI
+Basic
+What is the following a depiction of? ![[fifth-roots-unity.png]]
+Back: The fifth roots of unity.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756056145688-->
+END%%
+
 ## Bibliography
 
 * John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).

@@ -97,7 +97,7 @@ END%%
 %%ANKI
 Basic
 Which exception classes can be used to promote a process from user mode to kernel mode?
-Back: Interrupts, traps, and faults.
+Back: All of them.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752201359303-->
 END%%

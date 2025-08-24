@@ -793,7 +793,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to HDDs, how are tracks further divided?
+With respect to HDDs, how are tracks further subdivided?
 Back: Into sectors and gaps.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1743646039732-->

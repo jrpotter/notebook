@@ -854,7 +854,7 @@ END%%
 
 A **positional tree** is a rooted tree in which each child is labeled with a specific positive integer. A **$k$-ary tree** is a positional tree with at most $k$ children/labels. A [[binary_tree|binary tree]] is a $2$-ary tree.
 
-A $k$-ary tree is **full** if every node has degree $0$ or $k$. A $k$-ary tree is **perfect** if all leaves have the same depth and all internal nodes have degree $k$. A $k$-ary tree is **complete** if the last level is not filled but all leaves have the same depth and are leftmost arranged.
+A $k$-ary tree is **full** if every node has degree $0$ or $k$. A $k$-ary tree is **perfect** if all leaves have the same depth and all internal nodes have degree $k$. A $k$-ary tree is **complete** if all leaves have the same depth and are leftmost arranged.
 
 %%ANKI
 Basic
@@ -972,6 +972,21 @@ Is the concept of completeness related to positional trees or $k$-ary trees?
 Back: $k$-ary trees.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1714088723844-->
+END%%
+
+%%ANKI
+Basic
+*Why* is completeness relevant to $k$-ary trees but not positional trees?
+Back: Because positional trees have no concept of fullness .
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1756056905290-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a $k$-ary tree to be complete?
+Back: All leaves have the same depth and are leftmost arranged.
+Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 END%%
 
 %%ANKI

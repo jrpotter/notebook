@@ -1289,7 +1289,7 @@ END%%
 %%ANKI
 Basic
 *Why* are anonymous files more performant than regular files?
-Back: Swapping out pages does not require reading/writing to disk.
+Back: Initially "swapping in" of pages does not require reading from disk.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: os::linux
 <!--ID: 1755913121262-->
@@ -1435,7 +1435,7 @@ END%%
 %%ANKI
 Basic
 Assuming appropriate permissions, how are changes to a shared object reflected on disk?
-Back: Changes are also reflected in the original object on disk.
+Back: Changes are not reflected in the original object on disk.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: os::linux
 <!--ID: 1755918866264-->
@@ -1462,7 +1462,7 @@ END%%
 %%ANKI
 Basic
 With respect to memory mapping, why is a private object named the way it is?
-Back: The corresponding object on disk and memory can be seen by multiple processes.
+Back: Changes made to the object are only visible to the writing process.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: os::linux
 <!--ID: 1755918866277-->
@@ -1505,7 +1505,7 @@ END%%
 %%ANKI
 Basic
 How many copies of a private object are stored in physical memory?
-Back: One or more.
+Back: Zero or more.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: os::linux
 <!--ID: 1755918866299-->
