@@ -326,7 +326,7 @@ END%%
 
 ### Partition Form
 
-Let $P$ be a [[order#Partitions|partition]] of set $A$. Then there exists a set $B$ containing exactly one element from each member of $P$.
+Let $P$ be a [[equiv-rel#Partitions|partition]] of set $A$. Then there exists a set $B$ containing exactly one element from each member of $P$.
 
 %%ANKI
 Basic
@@ -429,7 +429,7 @@ END%%
 
 ### Zorn's Lemma
 
-Let $A$ be a [[order#Partial Orders|partially ordered set]] with ordering relation $\leq$. A **chain** is a subset of $A$ that is [[order#Total Order|totally ordered]] for the induced order. If every chain $B \subseteq A$ has an upper bound also in $A$, then Zorn's lemma states that $A$ must have a [[order#Bounds|maximal]] element.
+Let $A$ be a [[partial|partially ordered set]] with ordering relation $\leq$. A **chain** is a subset of $A$ that is [[total|totally ordered]] for the induced order. If every chain $B \subseteq A$ has an upper bound also in $A$, then Zorn's lemma states that $A$ must have a [[preorder#Bounds|maximal]] element.
 
 %%ANKI
 Basic

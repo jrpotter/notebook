@@ -105,6 +105,14 @@ END%%
 
 %%ANKI
 Basic
+In a single-threaded program, when is reentrancy most commonly considered?
+Back: In functions that recursively call themselves.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756121842995-->
+END%%
+
+%%ANKI
+Basic
 *Why* don't reentrant functions need synchronization operations?
 Back: Because they have no shared state.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

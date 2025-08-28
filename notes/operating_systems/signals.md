@@ -45,15 +45,7 @@ END%%
 
 %%ANKI
 Basic
-In the transfer of a signal, who is the sender?
-Back: The kernel.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1752895139977-->
-END%%
-
-%%ANKI
-Basic
-In the transfer of a signal, who is the receiver?
+What are the possible receivers of a signal?
 Back: A process or process group.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752895139981-->
@@ -159,7 +151,7 @@ END%%
 
 %%ANKI
 Cloze
-A {process} can {catch} a signal by executing a {signal handler}.
+A {process} can {catch} a signal by installing a {signal handler}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752895140049-->
 END%%
@@ -934,7 +926,7 @@ END%%
 
 %%ANKI
 Cloze
-By default, {`SIGSTOP`} and {`SIGTSTP`} have roughtly the same intended purpose.
+By default, {`SIGSTOP`} and {`SIGTSTP`} have roughly the same intended purpose.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037142-->
 END%%

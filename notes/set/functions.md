@@ -1717,6 +1717,22 @@ END%%
 
 %%ANKI
 Basic
+How is $\mathop{\text{ran}}(F \restriction A)$ equivalently written using an image operation?
+Back: $\mathop{\text{ran}}(F \restriction A) = F[\![A]\!]$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1756072000419-->
+END%%
+
+%%ANKI
+Basic
+How is $F[\![A]\!]$ equivalently written using a restriction operation?
+Back: $F[\![A]\!] = \mathop{\text{ran}}(F \restriction A)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1756072000428-->
+END%%
+
+%%ANKI
+Basic
 How is set $\{v \mid \exists u \in B, uAv\}$ more simply denoted?
 Back: $A[\![B]\!]$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

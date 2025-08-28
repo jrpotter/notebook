@@ -191,7 +191,7 @@ END%%
 
 ## Components
 
-An undirected graph is **connected** if every two vertices are reachable from one another. The **connected components** of an undirected graph are the [[order#Equivalence Classes|equivalence classes]] under the "is mutually reachable" relation.
+An undirected graph is **connected** if every two vertices are reachable from one another. The **connected components** of an undirected graph are the [[equiv-rel#Equivalence Classes|equivalence classes]] under the "is mutually reachable" relation.
 
 A directed graph is **strongly connected** if every two vertices are reachable from one another. The **strongly connected components** of a digraph are the equivalence classes under the "is mutually reachable" relation.
 

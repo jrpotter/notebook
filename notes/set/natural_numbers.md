@@ -616,7 +616,7 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1726928580092-->
 END%%
 
-## Transitivity
+## Transitive Sets
 
 A set $A$ is said to be **transitive** iff every member of a member of $A$ is itself a member of $A$. We can equivalently express this using any of the following formulations:
 
@@ -768,14 +768,6 @@ Is $\omega$ a transitive set?
 Back: Yes.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1726857149225-->
-END%%
-
-%%ANKI
-Basic
-How can we alternatively state "$\omega$ is a transitive set"?
-Back: Every natural number is a set of natural numbers.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1726976055230-->
 END%%
 
 %%ANKI

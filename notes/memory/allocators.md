@@ -163,8 +163,17 @@ Tags: c17
 END%%
 
 %%ANKI
+Basic
+Why is `calloc()` named the way it is?
+Back: It's short for **c**lear **alloc**ation.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1756121842999-->
+END%%
+
+%%ANKI
 Cloze
-{1:`malloc()`} is to {2:initialized} whereas {2:`calloc()`} is to {1:uninitialized}.
+{1:`malloc()`} is to {2:uninitialized} whereas {2:`calloc()`} is to {1:initialized}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
 <!--ID: 1756048394563-->
@@ -179,7 +188,16 @@ Tags: c17
 <!--ID: 1756048394566-->
 END%%
 
-## Design
+%%ANKI
+Basic
+Why is `realloc()` named the way it is?
+Back: It's short for **re**size **alloc**ation.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17
+<!--ID: 1756121843001-->
+END%%
+
+## Metrics
 
 Generally speaking, the author of an allocator needs to find a balance between maximizing the following two metrics:
 
@@ -282,6 +300,14 @@ What metric is calculated using the following fraction? $$\frac{\text{allocated 
 Back: Peak utilization.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1756048394594-->
+END%%
+
+%%ANKI
+Basic
+What is the primary cause of poor heap utilization?
+Back: Fragmentation.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756388532828-->
 END%%
 
 ## Bibliography

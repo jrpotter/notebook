@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-Refer to [[order#Bounds]] for a more general description of these properties.
+Refer to [[preorder#Bounds]] for a more general description of these properties.
 
 ## Bounds
 

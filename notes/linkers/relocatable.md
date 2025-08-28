@@ -154,7 +154,7 @@ END%%
 
 %%ANKI
 Basic
-In what region of an ELF file can references to pseudosections be found?
+In what region of a relocatable ELF file can references to pseudosections be found?
 Back: The section header table.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1735343812821-->

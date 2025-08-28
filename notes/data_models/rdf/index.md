@@ -408,7 +408,7 @@ END%%
 %%ANKI
 Basic
 How is the head of a list described in RDF?
-Back: With `rdf::first`.
+Back: With `rdf:first`.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1752789057056-->
 END%%
@@ -416,7 +416,7 @@ END%%
 %%ANKI
 Basic
 How is the tail of a list described in RDF?
-Back: With `rdf::rest`.
+Back: With `rdf:rest`.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1752789057062-->
 END%%

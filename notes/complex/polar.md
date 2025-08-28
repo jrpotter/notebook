@@ -340,14 +340,14 @@ END%%
 
 %%ANKI
 Cloze
-The solutions to {$x^n = 1$} are called the {$n$th roots of unity}.
+The solutions to equation {$x^n = 1$} are called the {$n$th roots of unity}.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1756056145683-->
 END%%
 
 %%ANKI
 Cloze
-Let $z \in \mathbb{C}$. The solutions to {$x^n = z$} are called the {$n$th roots of $z$}.
+Let $z \in \mathbb{C}$. The solutions to equation {$x^n = z$} are called the {$n$th roots of $z$}.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1756056145684-->
 END%%

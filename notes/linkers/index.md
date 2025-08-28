@@ -167,8 +167,8 @@ END%%
 
 %%ANKI
 Basic
-What is an object module?
-Back: A sequence of bytes.
+In terms of object files, what is an object module?
+Back: An object file loaded into memory.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1734356868413-->
 END%%

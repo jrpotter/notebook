@@ -303,7 +303,7 @@ END%%
 
 ## Transfinite Induction
 
-Let $<$ be a strict [[order#Well Order|well ordering]] on set $A$. We say that $B \subseteq A$ is a **$<$-inductive** subset of $A$ if and only if for every $t \in A$, $$\mathop{\text{seg}_<}t \subseteq B \Rightarrow t \in B.$$
+Let $<$ be a strict [[well|well ordering]] on set $A$. We say that $B \subseteq A$ is a **$<$-inductive** subset of $A$ if and only if for every $t \in A$, $$\mathop{\text{seg}_<}t \subseteq B \Rightarrow t \in B.$$
 
 The **transfinite induction principle** states that if $<$ is a strict well ordering on set $A$, any $<$-inductive subset of $A$ must coincide with $A$.
 
@@ -439,14 +439,6 @@ Let $<$ be a strict total order such that transfinite induction holds. What can 
 Back: $<$ must be a strict well order.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1753088850990-->
-END%%
-
-%%ANKI
-Basic
-Let $<$ be a strict well order on $A$. What does the transfinite induction principle state?
-Back: If $B$ is an $<$-inductive subset of $A$, then $B = A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1753088850997-->
 END%%
 
 %%ANKI

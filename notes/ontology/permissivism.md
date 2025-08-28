@@ -101,7 +101,7 @@ END%%
 
 %%ANKI
 Basic
-Why is permissivism called what is is?
+Why is permissivism called what it is?
 Back: It is permissive in what is considered real or not.
 Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
 <!--ID: 1753473783756-->
