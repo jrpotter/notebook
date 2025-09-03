@@ -197,6 +197,42 @@ Tags: c17
 <!--ID: 1756121843001-->
 END%%
 
+%%ANKI
+Basic
+What is the `brk()` system call used to manage?
+Back: The memory allocated for a process's heap?
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 os::linux
+<!--ID: 1756850620557-->
+END%%
+
+%%ANKI
+Basic
+What is the `sbrk()` system call used to manage?
+Back: The memory allocated for a process's heap?
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 os::linux
+<!--ID: 1756850620564-->
+END%%
+
+%%ANKI
+Cloze
+What legacy system call(s) were used prior to `mmap()` and `munmap()`?
+Back: `brk()` and `sbrk()` (not respectively).
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 os::linux
+<!--ID: 1756850620561-->
+END%%
+
+%%ANKI
+Cloze
+What modern system call(s) are used in place of `brk()` and `sbrk()`?
+Back: `mmap()` and `munmap()` (not respectively).
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: c17 os::linux
+<!--ID: 1756850620563-->
+END%%
+
 ## Metrics
 
 Generally speaking, the author of an allocator needs to find a balance between maximizing the following two metrics:
@@ -310,6 +346,105 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1756388532828-->
 END%%
 
+## Free Lists
+
+A **free list** is a [[linked_lists|linked list]] in which each data element of the list corresponds to an unallocated region of memory. The first word of each unallocated region contains a pointer to the next. A free list is **implicit** if free blocks are located using the size fields in block headers (both allocated and free) instead of pointers.
+
+A **placement policy** is a strategy used when finding a free block large enough to accommodate an allocation request. Common policies include:
+
+* **First Fit**. Search from the beginning for a large enough free block.
+* **Next Fit**. Search from the last allocated block for a large enough free block.
+* **Best Fit**. Search for the smallest free block large enough to handle the request.
+
+%%ANKI
+Basic
+What kind of data structure does a free list typically correspond to?
+Back: A linked list.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756849791405-->
+END%%
+
+%%ANKI
+Basic
+What is typically introduced as the simplest practical dynamic memory allocator?
+Back: (Implicit) free lists.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756849791407-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes free lists from implicit free lists?
+Back: The former uses explicit pointers to locate the next free blocks.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756849791408-->
+END%%
+
+%%ANKI
+Basic
+What is "implicit" in an implicit free list?
+Back: The "pointers" used to connect free blocks together.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756849791409-->
+END%%
+
+%%ANKI
+Basic
+*How* do implicit free lists find the next blocks if they don't use pointers?
+Back: By referencing the size of the allocated region between any two free blocks.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756849791410-->
+END%%
+
+%%ANKI
+Basic
+Where are the pointers in each free list block typically located?
+Back: Within a header.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756849791411-->
+END%%
+
+%%ANKI
+Basic
+With respect to free lists, first fit, next fit, and best fit are all examples of what?
+Back: Placement policies.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756849791412-->
+END%%
+
+%%ANKI
+Basic
+With respect to free lists, what is a placement policy?
+Back: The strategy used to choose a free block used to service an allocation request.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756849791413-->
+END%%
+
+%%ANKI
+Basic
+With respect to free lists, how does the first fit placement policy work?
+Back: By searching from the start for a free block large enough to accommodate the allocation request.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756849791414-->
+END%%
+
+%%ANKI
+Basic
+With respect to free lists, how does the next fit placement policy work?
+Back: By searching from the last allocated block for a free block large enough to accommodate the allocation request.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756849791415-->
+END%%
+
+%%ANKI
+Basic
+With respect to free lists, how does the best fit placement policy work?
+Back: By searching for the smallest free block large enough to accommodate the allocation request.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756849791416-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* _Wikipedia_. “Free list.” March 10, 2025. [https://en.wikipedia.org/w/index.php?title=Free_list](https://en.wikipedia.org/w/index.php?title=Free_list&oldid=1279719515).

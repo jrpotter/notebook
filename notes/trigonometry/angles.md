@@ -11,11 +11,7 @@ tags:
 
 An **angle** is formed by rotating a ray about its initial point. The ray in its initial position is called the **initial side** of the angle, and the position of the ray after it has been rotated is called the **terminal side** of the angle. The initial point of the ray is called the **vertex of the angle**.
 
-When the vertex of an angle is at the origin in the Cartesian coordinate system, and the initial side lies along the positive $x$-axis, then the angle is in **standard position**.
-
-An angle measuring less than $90\degree$ is called an **acute angle**. An angle measuring exactly $90\degree$ is called a **right angle**. An angle measure greater than $90\degree$ is called an **obtuse angle**.
-
-Two angles that together sum up to $90\degree$ are called **complementary angles**. Two angles that together sum up to $180\degree$ are called **supplementary angles**.
+When the vertex of an angle is at the origin in the [[cartesian|Cartesian coordinate system]], and the initial side lies along the positive $x$-axis, then the angle is in **standard position**.
 
 %%ANKI
 Basic
@@ -205,6 +201,12 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737921787539-->
 END%%
 
+## Triangles
+
+An angle measuring less than $90\degree$ is called an **acute angle**. An angle measuring exactly $90\degree$ is called a **right angle**. An angle measure greater than $90\degree$ is called an **obtuse angle**.
+
+Two angles that together sum up to $90\degree$ are called **complementary angles**. Two angles that together sum up to $180\degree$ are called **supplementary angles**.
+
 %%ANKI
 Cloze
 A(n) {acute} angle measures {less than $90\degree$}.
@@ -345,7 +347,7 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1740669678010-->
 END%%
 
-## Degrees and Radians
+## Measurement
 
 Angles are measures in **degrees** and **radians**.
 

@@ -1,16 +1,15 @@
 ---
 title: Cartesian Coordinate System
 TARGET DECK: Obsidian::STEM
-FILE TAGS: geometry::coordinates
+FILE TAGS: geometry::cartesian
 tags:
+  - coordinates
   - geometry
 ---
 
 ## Overview
 
-In [[geometry/index|plane analytic geometry]], the **Cartesian coordinate system** in a plane uniquely specifies a point by a pair of real numbers called its **coordinates**. These coordinates represent signed distances to the point from two fixed perpendicular oriented lines called the **axes**. The point where the axes meet is called the **origin** and have coordinates $\langle 0, 0 \rangle$.
-
-Higher-dimensional analogs are formed in the natural way.
+In [[geometry/index|plane analytic geometry]], the **Cartesian coordinate system** in a plane uniquely specifies coordinates using a pair of real numbers. These coordinates represent signed distances to the point from two fixed perpendicular oriented lines called the **axes**. The point where the axes meet is called the **origin** and has coordinates $\langle 0, 0 \rangle$.
 
 An equation that completely characterizes a figure within the Cartesian coordinate system is called a **Cartesian equation**.
 
@@ -26,6 +25,22 @@ Cloze
 The {$y$-coordinate} of a point is sometimes called its {ordinate}.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1731184865791-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle x, y \rangle$ be a Cartesian coordinate. How is $x$ visualized?
+Back: As the signed horizontal distance from the vertical axis.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1756403787426-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle x, y \rangle$ be a Cartesian coordinate. How is $y$ visualized?
+Back: As the signed vertical distance from the horizontal axis.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1756403787427-->
 END%%
 
 %%ANKI
@@ -113,6 +128,22 @@ What is a Cartesian equation?
 Back: An equation that completely characterizes a figure within a Cartesian coordinate system.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1731185808246-->
+END%%
+
+%%ANKI
+Basic
+How many axes does a Cartesian coordinate system have?
+Back: Two.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1756403787428-->
+END%%
+
+%%ANKI
+Basic
+Let $P$ be a point in the Cartesian coordinate system. How many coordinates map to $P$?
+Back: Exactly one.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756849791427-->
 END%%
 
 ## Transformations
@@ -487,6 +518,14 @@ Reference: James Jones, “Shifting, Reflecting, and Stretching Graphs,” acces
 <!--ID: 1734656938124-->
 END%%
 
+%%ANKI
+Basic
+The Caresian coordinate system also goes by what other geometric name?
+Back: The rectangular coordinate system.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1756403787429-->
+END%%
+
 ### Scaling
 
 A **vertical scaling** will multiply/divide every $y$-coordinate of a graph, leaving the $x$-coordinate unchanged. A **horizontal scaling** will multiply/divide every $x$-coordinate of a graph, leaving the $y$-coordinate unchanged.
@@ -765,4 +804,5 @@ END%%
 
 * “Cartesian Coordinate System,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system](https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system&oldid=1252434514).
 * “James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
+* Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

@@ -9,6 +9,8 @@ tags:
 
 ## Overview
 
+A **linked list** is a linear collection of data elements in which each element points to the next.
+
 %%ANKI
 Basic
 What does it mean for a linked list to be singly linked?

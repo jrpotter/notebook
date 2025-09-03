@@ -10,6 +10,8 @@ tags:
 
 Let $z \in \mathbb{C}$ such that $r = \lvert z \rvert$ and $\theta = \mathop{\text{arg}}(z)$. Then we can write $z$ in **polar form** as $$z = r(\cos{\theta} + i\sin{\theta}).$$
 
+We can also equivalently express $z$ as a **complex exponential**: $z = re^{i\theta}$.
+
 %%ANKI
 Basic
 Let $z \in \mathbb{C}$. How is $z$ written in polar form?
@@ -33,10 +35,6 @@ Back: $\theta = \mathop{\text{arg}}(z)$
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1754142942028-->
 END%%
-
-## Exponentials
-
-Let $z \in \mathbb{C}$ such that $r = \lvert z \rvert$ and $\theta = \mathop{\text{arg}}(z)$. Then, as an alternative to the polar form, we can express $z$ using a complex exponential: $$z = re^{i\theta}.$$
 
 %%ANKI
 Basic

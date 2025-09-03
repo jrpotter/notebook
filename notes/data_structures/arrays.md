@@ -9,6 +9,8 @@ tags:
 
 ## Overview
 
+An **array** is a data structure consisting of a collection of contiguously stored data elements, all of which have the same memory size. Each element is associated with an **index** used to compute its offset from the start of the array's memory.
+
 %%ANKI
 Basic
 What does it mean to store a matrix in row-major order?
