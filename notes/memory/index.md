@@ -800,6 +800,14 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
+Basic
+With respect to HDDs, which of tracks or sectors contains the other?
+Back: Tracks contain sectors.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1757026243922-->
+END%%
+
+%%ANKI
 Cloze
 With respect to HDDs, {1:sectors} are to {2:data} bits whereas {2:gaps} are to {1:formatting} bits.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
@@ -837,6 +845,10 @@ Back: They are used to identify sectors.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1743646039746-->
 END%%
+
+#### Metrics
+
+There exist a few common metrics used to evaluate the capacity of an HDD:
 
 * **Recording density** (bits/in). The number of bits in a 1-inch segment of a track.
 * **Track density** (tracks/in). The number of tracks in a 1-inch segment of the radius extending from the center of the platter.

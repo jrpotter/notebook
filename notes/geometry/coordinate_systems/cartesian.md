@@ -520,7 +520,7 @@ END%%
 
 %%ANKI
 Basic
-The Caresian coordinate system also goes by what other geometric name?
+The Cartesian coordinate system also goes by what other geometric name?
 Back: The rectangular coordinate system.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1756403787429-->

@@ -658,19 +658,21 @@ int main(void);
 int main(int argc, char* argv[argc+1]);
 ```
 
-The only two return values guaranteed to work on all platform is `EXIT_SUCCESS` and `EXIT_FAILURE`. Reaching the end of `main` is equivalent to a `reutrn` with value `EXIT_SUCCESS`.
+The only two return values guaranteed to work on all platform is `EXIT_SUCCESS` and `EXIT_FAILURE`. Reaching the end of `main` is equivalent to a `return` with value `EXIT_SUCCESS`.
+
+In hosted environments, a third argument `char *envp[]` is included. This points to a null-terminated array of pointers to `char`, each of which points to a string encoding an environment variable as `NAME=value`.
 
 %%ANKI
 Basic
 Which user-defined function serves as the entry point of C programs?
-Back: `main`
+Back: `main()`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415792-->
 END%%
 
 %%ANKI
 Basic
-How many possible valid prototypes of `main` are available?
+How many possible valid prototypes of `main()` are available?
 Back: Indeterminate. Depends on the system.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415798-->
@@ -678,7 +680,7 @@ END%%
 
 %%ANKI
 Basic
-How many "official" prototypes of `main` are available?
+How many "official" prototypes of `main()` are available?
 Back: Two.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415801-->
@@ -686,7 +688,7 @@ END%%
 
 %%ANKI
 Basic
-What are the "official" prototypes of `main`?
+What are the "official" prototypes of `main()`?
 Back:
 ```c
 int main(void);
@@ -698,18 +700,19 @@ END%%
 
 %%ANKI
 Basic
-What are the "official" prototypes of `main`?
+What are the "official" prototypes of `main()`?
 Back:
 ```c
 int main(void);
 int main(int argc, char* argv[argc + 1]);
 ```
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757166206673-->
 END%%
 
 %%ANKI
 Basic
-What are the only portable values that `main` can return?
+What are the only portable values that `main()` can return?
 Back: `EXIT_SUCCESS` and `EXIT_FAILURE`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415807-->
@@ -741,7 +744,7 @@ END%%
 
 %%ANKI
 Cloze
-Returning {1:`s`} in {1:`main`} is equivalent to invoking function {2:`exit`} with argument {2:`s`}.
+Returning {1:`s`} in {1:`main()`} is equivalent to invoking function {2:`exit()`} with argument {2:`s`}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415819-->
 END%%
@@ -849,6 +852,38 @@ int main(int argc, char* argv[argc + 1]);
 Back: `2`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415869-->
+END%%
+
+%%ANKI
+Basic
+In hosted environments, what name is traditionally given to `main()`'s third argument?
+Back: `envp`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1757166206676-->
+END%%
+
+%%ANKI
+Basic
+In hosted environments, what type is given to `main()`'s `envp` argument?
+Back: `char *envp[]`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1757166206678-->
+END%%
+
+%%ANKI
+Basic
+In hosted environments, what does the `envp` argument to `main()` contain?
+Back: Environment variables.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1757166206681-->
+END%%
+
+%%ANKI
+Basic
+In hosted environments, what format is an entry in `main()`'s `envp` argument in?
+Back: `NAME=value`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1757166206683-->
 END%%
 
 ### Variable-Length Arrays

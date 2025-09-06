@@ -385,7 +385,7 @@ END%%
 
 %%ANKI
 Basic
-How many foregroup jobs might a Unix shell have running?
+How many foreground jobs might a Unix shell have running?
 Back: At most one.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752949037166-->

@@ -13,7 +13,7 @@ A **binary structure** is a pair $\langle A, R \rangle$ consisting of a set $A$ 
 
 %%ANKI
 Basic
-What is a structure?
+What is a binary structure?
 Back: A pair $\langle A, R \rangle$ consisting of a set $A$ and a binary relation $R$ on $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751416133860-->
@@ -21,7 +21,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\langle A, R \rangle$ be a structure. What kind of mathematical entity is $A$?
+Let $\langle A, R \rangle$ be a binary structure. What kind of mathematical entity is $A$?
 Back: A set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751416133870-->
@@ -29,7 +29,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\langle A, R \rangle$ be a structure. What kind of mathematical entity is $R$?
+Let $\langle A, R \rangle$ be a binary structure. What kind of mathematical entity is $R$?
 Back: A binary relation on $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751416133878-->
@@ -37,7 +37,7 @@ END%%
 
 %%ANKI
 Basic
-A structure is a tuple of how many elements?
+A binary structure is a tuple of how many elements?
 Back: Two.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751416133887-->
@@ -46,7 +46,7 @@ END%%
 %%ANKI
 Basic
 A poset is an example of what kind of abstract mathematical entity?
-Back: A structure.
+Back: A (binary) structure.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751416316736-->
 END%%
@@ -54,7 +54,7 @@ END%%
 %%ANKI
 Basic
 What is a poset?
-Back: A structure $\langle P, \leq \rangle$ such that $\leq$ is a partial order on set $P$.
+Back: A binary structure $\langle P, \leq \rangle$ such that $\leq$ is a partial order on set $P$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751416427787-->
 END%%

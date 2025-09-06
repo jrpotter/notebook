@@ -1885,7 +1885,7 @@ END%%
 %%ANKI
 Basic
 What term is added to the following to form the law of cosines? $$c^2 = a^2 + b^2$$
-Back: $-2abcos{\theta}$ on the RHS, where $\theta$ is the angle between sides of length $a$ and $b$.
+Back: $-2ab\cos{\theta}$ on the RHS, where $\theta$ is the angle between sides of length $a$ and $b$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1752968452384-->
 END%%
@@ -1893,7 +1893,7 @@ END%%
 %%ANKI
 Basic
 Why does the law of cosines simplify to the Pythagorean theorem for right triangles?
-Back: Because $\cos{90\degree} = 0$, cancelling out term $-2abcos{\theta}$.
+Back: Because $\cos{90\degree} = 0$, cancelling out term $-2ab\cos{\theta}$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1752968452388-->
 END%%

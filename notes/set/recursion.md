@@ -498,7 +498,7 @@ END%%
 
 For any formula $\gamma(x, y)$, the following is a theorem:
 
-> Assume that $<$ is a [[well|well ordering]] on a set $A$. Assume that for any $f$ there is a unique $y$ such that $\gamma(f, y)$. Then there exists a function $F$ with domain $A$ such that, for all $t \in A$, $$\gamma(F \restriction \mathop{\text{seg}_<}t, F(t)).$$
+> Assume that $<$ is a [[well|well ordering]] on a set $A$. Assume that for any $f$ there is a unique $y$ such that $\gamma(f, y)$. Then there exists a unique function $F$ with domain $A$ such that, for all $t \in A$, $$\gamma(F \restriction \mathop{\text{seg}_<}t, F(t)).$$
 
 We say $F$ is **$\gamma$-constructed** if $\gamma(F \restriction \mathop{\text{seg}_<}t, F(t))$ holds for all $t \in \mathop{\text{dom}} F$.
 
@@ -513,7 +513,7 @@ END%%
 %%ANKI
 Basic
 Let $\gamma(x, y)$ be a formula. What does the transfinite recursion theorem state?
-Back: Assume $<$ is a well ordering on a set $A$. Assume that for any $f$ there is a unique $y$ such that $\gamma(f, y)$. Then there exists a function $F$ with domain $A$ such that, for all $t \in A$, $$\gamma(F \restriction \mathop{\text{seg}_<t}, F(t)).$$
+Back: Assume $<$ is a well ordering on a set $A$. Assume that for any $f$ there is a unique $y$ such that $\gamma(f, y)$. Then there exists a unique function $F$ with domain $A$ such that, for all $t \in A$, $$\gamma(F \restriction \mathop{\text{seg}_<t}, F(t)).$$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1754246610268-->
 END%%

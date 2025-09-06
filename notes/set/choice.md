@@ -151,7 +151,7 @@ END%%
 %%ANKI
 Basic
 Do infinite sets have a choice function?
-Back: Not necessarily.
+Back: Without AoC, not necessarily.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744898357002-->
 END%%
@@ -766,7 +766,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\mathop{\text{card}}(K) = \kappa$ and $\mathop{\text{card}}(L) = \lambda$ s.t. $\lambda \leq \kappa$. What does $\mathop{\text{card}}(K - L)$ evaluate to?
+Let $\mathop{\text{card}}(K) = \kappa$ and $\mathop{\text{card}}(L) = \lambda$ s.t. $\lambda \leq \kappa$ and $\kappa$ is infinite. What does $\mathop{\text{card}}(K - L)$ evaluate to?
 Back: Some cardinal number between $0$ and $\kappa$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750167844239-->
@@ -774,7 +774,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\mathop{\text{card}}(K) = \kappa$ and $\mathop{\text{card}}(L) = \lambda$ s.t. $\lambda < \kappa$. What does $\mathop{\text{card}}(K - L)$ evaluate to?
+Let $\mathop{\text{card}}(K) = \kappa$ and $\mathop{\text{card}}(L) = \lambda$ s.t. $\lambda < \kappa$ and $\kappa$ is infinite. What does $\mathop{\text{card}}(K - L)$ evaluate to?
 Back: $\kappa$ (since $\lambda$ is strictly smaller than $\kappa$).
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750167844250-->

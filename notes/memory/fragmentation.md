@@ -18,6 +18,8 @@ There exist two types of fragmentation:
 * **External fragmentation**. This refers to scattered, unallocated space between allocated blocks.
 	* That is, there is enough aggregate free memory to satisfy an allocate request, but no single free block is large enough to handle it.
 
+**False fragmentation** refers to the situation in which adjacent free blocks are divided too finely to be used, despite the fact that coalescing them together would yield a usable block.
+
 %%ANKI
 Basic
 What is fragmentation?
@@ -95,6 +97,46 @@ How is external fragmentation quantified?
 Back: N/A. This is entirely dependent on future allocation requests.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1756388532825-->
+END%%
+
+%%ANKI
+Basic
+What does false fragmentation refer to?
+Back: A situation in which adjacent free blocks are large enough in aggregate, but divided too small to be used.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756866128042-->
+END%%
+
+%%ANKI
+Basic
+Why is "false fragmentation" named the way it is?
+Back: The fragmentation is superficial; coalescing blocks immediately resolves the issue.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756866128051-->
+END%%
+
+%%ANKI
+Basic
+How is false fragmentation fixed?
+Back: By coalescing adjacent free blocks.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756866128056-->
+END%%
+
+%%ANKI
+Basic
+Dividing otherwise free memory into small unusable blocks goes by what name?
+Back: False fragmentation.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756866128060-->
+END%%
+
+%%ANKI
+Basic
+Is false fragmentation an example of internal or external fragmentation?
+Back: N/A. It is fragmentation only at a superficial level.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1756866128065-->
 END%%
 
 ## Compaction
@@ -212,7 +254,7 @@ END%%
 
 %%ANKI
 Basic
-How might copaction hurt defragmentation?
+How might compaction hurt defragmentation?
 Back: Rearranging blocks may move otherwise contiguous blocks of a file.
 Reference: https://stackoverflow.com/a/23940632
 <!--ID: 1756392488652-->
