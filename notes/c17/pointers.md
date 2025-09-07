@@ -594,6 +594,34 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1732623646948-->
 END%%
 
+### Restrict Qualifier
+
+The `restrict` type qualifier indicates an object referred to by a pointer is only accessible through said pointer. That is, a `restrict`-qualified pointer has to provide exclusive access.
+
+%%ANKI
+Basic
+What can the `restrict` keyword be used to qualify?
+Back: Pointers.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1753897177582-->
+END%%
+
+%%ANKI
+Basic
+What does the `restrict` type qualifier indicate?
+Back: That the associated pointer isn't aliased.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1753897177585-->
+END%%
+
+%%ANKI
+Basic
+Which C optimization does the `restrict` type qualifier reinforce?
+Back: The strict-aliasing rule.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1753897177587-->
+END%%
+
 ## Bibliography
 
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).

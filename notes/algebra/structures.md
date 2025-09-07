@@ -141,38 +141,6 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 END%%
 
 %%ANKI
-Basic
-Suppose $\langle A, R \rangle$ is a partial order isomorphic to $\langle B, S \rangle$. What can be said about $\langle B, S \rangle$?
-Back: $\langle B, S \rangle$ is also a partial order.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1756333255846-->
-END%%
-
-%%ANKI
-Basic
-Suppose $\langle A, R \rangle$ is a total order isomorphic to $\langle B, S \rangle$. What can be said about $\langle B, S \rangle$?
-Back: $\langle B, S \rangle$ is also a total order.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1756333255848-->
-END%%
-
-%%ANKI
-Basic
-Suppose $\langle A, R \rangle$ is a strict well order isomorphic to $\langle B, S \rangle$. What can be said about $\langle B, S \rangle$?
-Back: $\langle B, S \rangle$ is also a strict well order.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1756333255851-->
-END%%
-
-%%ANKI
-Basic
-How many isomorphisms can exist between two strict well-ordered structures?
-Back: At most one.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1756383085187-->
-END%%
-
-%%ANKI
 Cloze
 Equinumerosity applies to {1:sets} whereas isomorphisms apply to {1:structures}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

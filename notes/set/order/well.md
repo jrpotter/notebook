@@ -196,6 +196,36 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1754245698949-->
 END%%
 
+## Trichotomy
+
+For any two well-ordered structures, either they are [[structures#Isomorphisms|isomorphic]] or one is isomorphic to an initial segment of the other.
+
+%%ANKI
+Basic
+What does the "trichotomy law" for well-ordered structures state?
+Back: For any two well-ordered structures, either they are isomorphic or one is isomorphic to an initial segment of the other.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757271691239-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $\langle P, R \rangle$ and $\langle Q, S \rangle$ are well-ordered structures. Then one of the following holds:
+* {1:$\langle P, R \rangle \cong \langle Q, S \rangle$}
+* {2:$\langle \mathop{\text{seg} } p, R\degree \rangle \cong \langle Q, S \rangle$} for some {2:$p \in P$}.
+* {3:$\langle P, R \rangle \cong \langle \mathop{\text{seg} } q, S\degree \rangle$} for some {2:$q \in Q$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757271691246-->
+END%%
+
+%%ANKI
+Basic
+How is the trichotomy law of natural numbers generalized?
+Back: As the "trichotomy law" of well-ordered structures.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757271691252-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

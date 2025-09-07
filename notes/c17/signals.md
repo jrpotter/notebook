@@ -308,6 +308,47 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1753897177560-->
 END%%
 
+### Volatile Qualifier
+
+The `volatile` type qualifier indicates that the corresponding object must be:
+
+* reloaded from memory every time it is accessed, and
+* stored to memory each time it is modified.
+
+In other words, they are protected (or potentially inhibited) from optimization.
+
+%%ANKI
+Basic
+What does the `volatile` type qualifier ensure when accessing an object?
+Back: It is reloaded from memory.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1753897177590-->
+END%%
+
+%%ANKI
+Basic
+What does the `volatile` type qualifier ensure when modifying an object?
+Back: It is stored to memory.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1753897177593-->
+END%%
+
+%%ANKI
+Basic
+Which type qualifier is used to "protect" against optimizations?
+Back: `volatile`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1753897177596-->
+END%%
+
+%%ANKI
+Basic
+Which type qualifier is used to "inhibit" optimizations?
+Back: `volatile`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1753897177599-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

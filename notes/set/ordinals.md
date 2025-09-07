@@ -191,6 +191,58 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1756333255840-->
 END%%
 
+## Ordinal Numbers
+
+Let $<$ be a strict well ordering on a set $A$. The **ordinal number of $\langle A, < \rangle$** is its $\in$-image. An **ordinal number** is a set that is the ordinal number of some well-ordered structure.
+
+%%ANKI
+Basic
+What concept are ordinal numbers defined in terms of?
+Back: $\in$-images of strict well orderings.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757241703536-->
+END%%
+
+%%ANKI
+Basic
+Let $<$ be a strict well ordering on a set $A$. What is the ordinal number of $\langle A, < \rangle$?
+Back: Its $\in$-image.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757241703544-->
+END%%
+
+%%ANKI
+Basic
+What is an ordinal number?
+Back: An $\in$-image of some well-ordered structure.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757241703546-->
+END%%
+
+%%ANKI
+Basic
+What biconditional explains the well-definedness of ordinal numbers?
+Back: Two well ordered structures are isomorphic iff they have equal $\in$-images.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757241703549-->
+END%%
+
+%%ANKI
+Basic
+Why is $3$ an ordinal number?
+Back: Because it is an $\in$-image of a well-ordered structure.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757241703551-->
+END%%
+
+%%ANKI
+Basic
+Why is $\omega$ an ordinal number?
+Back: Because it is an $\in$-image of a well-ordered structure.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757241703553-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

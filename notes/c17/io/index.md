@@ -52,7 +52,7 @@ END%%
 
 ## Multiplexing
 
-**I/O multiplexing** refers to any method that allows a single thread to handle multiple I/O [[streams]] [[concurrency|concurrently]]. Notice this definition's relation to [[network/index#Multiplexing|network multiplexing]].
+**I/O multiplexing** refers to any method that allows a single thread to handle multiple I/O [[streams]] [[operating_systems/concurrency|concurrently]]. Notice this definition's relation to [[network/index#Multiplexing|network multiplexing]].
 
 %%ANKI
 Basic
