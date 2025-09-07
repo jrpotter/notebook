@@ -979,9 +979,9 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1733242332420-->
 END%%
 
-## Storage-Class Specifiers
+## Storage Class Specifiers
 
-Storage-class specifiers are used to control an object's storage duration and an identifier's linkage. There are six storage-class specifiers:
+**Storage class specifiers** are used to control an object's storage duration and an identifier's linkage. There are six storage-class specifiers:
 
 * `typedef`
 	* Is called a "storage-class specifier" for syntactic convenience only.
@@ -1223,6 +1223,21 @@ The C standard typically suffixes `typedef`s with what?
 Back: `_t`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1730758755507-->
+END%%
+
+%%ANKI
+Cloze
+A storage {class specifier} is to syntax whereas a storage {duration} is to semantics.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757180490445-->
+END%%
+
+%%ANKI
+Basic
+Which of storage class specifiers and durations are used to affect the other?
+Back: Storage class specifiers are used to define storage durations.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757180490448-->
 END%%
 
 ## Bibliography

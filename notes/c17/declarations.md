@@ -973,6 +973,102 @@ Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open
 <!--ID: 1738853472083-->
 END%%
 
+### Array Syntax
+
+Functions that receive pointers should generally prefer using array syntax for additional documentation and static checking:
+
+```c
+void foo(T a[static 1]);
+void bar(T a[static N]);
+void baz(size_t n, T a[n]);
+void qux(T *a);
+```
+
+These generally should be interpreted in the following way:
+
+* `foo` takes in a pointer to a single non-null object of type `T`.
+* `bar` takes in a non-null pointer to a collection of at least `N` objects of type `T`.
+* `baz` takes in a pointer to a collection of objects of unknown number.
+* `qux` takes in a pointer to a single object of the type or a null pointer.
+
+%%ANKI
+Basic
+How is the array syntax in the following interpreted?
+```c
+void foo(double a[static 1]);
+```
+Back: As a non-null pointer to a collection of at least one `double`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757175451603-->
+END%%
+
+%%ANKI
+Basic
+How is the array syntax in the following interpreted?
+```c
+void foo(double a[static 3]);
+```
+Back: As a non-null pointer to a collection of at least three `double`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757175451607-->
+END%%
+
+%%ANKI
+Basic
+How is the array syntax in the following interpreted?
+```c
+void foo(double a[3]);
+```
+Back: As a pointer to a collection of `double` (documented as at least `3`).
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757175451610-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the following two lines?
+```c
+void foo(double a[static 3]);
+void foo(double a[3]);
+```
+Back: The former is used by the compiler for static analysis and possible optimizations.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757175451614-->
+END%%
+
+%%ANKI
+Basic
+Does the following define a VLA? Why or why not?
+```c
+void foo(double a[3]);
+```
+Back: No. This is just a `double *`, with a *documented* minimum length of `3`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757175451617-->
+END%%
+
+%%ANKI
+Basic
+Does the following define a VLA? Why or why not?
+```c
+void foo(double a[static 3]);
+```
+Back: No. This is just a `double *`, with an attempted statically asserted minimum length of `3`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757175451621-->
+END%%
+
+%%ANKI
+Basic
+Does the following define a VLA? Why or why not?
+```c
+void foo(size_t n, double a[n]);
+```
+Back: No. `a` is still just a `double *` though it uses VLA-like syntax.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757175451624-->
+END%%
+
 ## Precedence Rules
 
 Declarations can be read by complying with the precedence rules outlined below:

@@ -647,12 +647,12 @@
     "c17/types/compatible.md": "d4b318c47e6985380c94374732fa3a13",
     "c17/strings/printf.md": "6fdc90cb1d979804596f227fe623bfe7",
     "c17/strings/index.md": "aa3e21a5aacb8db4ac15b28da4d4b4a2",
-    "c17/storage.md": "3520e6ed2947d4feff1c016a68af73d9",
+    "c17/storage.md": "d2cb7a04729804d7d57cc084e53e3a07",
     "c17/pointers.md": "563043e70941149d2d7257edda502046",
     "c17/macros.md": "611c852cacec48fec16b5545041e4242",
     "c17/linkage.md": "3ecde4ae340bc79b4d55f38e82ab9d41",
     "c17/index.md": "cbecc51cf0dee813142a82b73788c52a",
-    "c17/declarations.md": "b5bcfe6f8f1a4a05709d3105afafc045",
+    "c17/declarations.md": "cc29bb332a3b052b2494bdbb9a773623",
     "c17/alignment.md": "69fcb21e99c5ddc866353b51756367aa",
     "binary/integer.md": "de43db9c4c3fa92c53ffde7ceb833e45",
     "binary/index.md": "c42bc4aac4516fa8cb73dc7c7a7e6c05",
@@ -1536,8 +1536,10 @@
     "_journal/2025-09/2025-09-03.md": "671a9647a6edbaea7b594f7e5b3988d3",
     "_journal/2025-09/2025-09-02.md": "75b4e533cba6a875a8b676d721616afb",
     "_journal/2025-09-05.md": "3fb5ae61e153781c9de479995175fe21",
-    "_journal/2025-09-06.md": "b27838ba223b17f03b0e06c33367bab1",
-    "_journal/2025-09/2025-09-04.md": "75552700f29856e680be98cbf9ae0b7e"
+    "_journal/2025-09-06.md": "4f85f1bb30eb36fb081c0e14d9023c0e",
+    "_journal/2025-09/2025-09-04.md": "75552700f29856e680be98cbf9ae0b7e",
+    "_journal/2025-09/2025-09-05.md": "3fb5ae61e153781c9de479995175fe21",
+    "c17/performance.md": "65b939bbefa2443fbde6708b1753431d"
   },
   "fields_dict": {
     "Basic": [
