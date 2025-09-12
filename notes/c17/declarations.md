@@ -173,10 +173,26 @@ END%%
 
 %%ANKI
 Basic
-What is VMT an acronym form?
+What is VMT an acronym for?
 Back: **V**ariably **m**odified **t**ype.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733403144674-->
+END%%
+
+%%ANKI
+Basic
+Is every VLA a VMT?
+Back: Yes.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1757611392705-->
+END%%
+
+%%ANKI
+Basic
+Is every VMT a VLA?
+Back: No.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1757611392708-->
 END%%
 
 %%ANKI
@@ -886,93 +902,6 @@ Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open
 <!--ID: 1757166206683-->
 END%%
 
-### Variable-Length Arrays
-
-Within a function prototype, a parameter can denote a [[c17/types/index#Variable-Length|VLA]] using `[*]` syntax. For example, the following prototypes are all (more or less) equivalent:
-
-```c
-int sum2d(int  , int  , int a[*][*]);
-int sum2d(int n, int  , int a[n][*]);
-int sum2d(int  , int m, int a[*][m]);
-int sum2d(int n, int m, int a[n][m]);
-int sum2d(int  , int  , int a[][*]);
-int sum2d(int  , int  , int (*a)[*]);
-int sum2d(int  , int m, int (*a)[m]);
-```
-
-The primary distinction is that an array type with `[]` is incomplete. An array type with `[*]` is a VLA type with an unspecified size but is nontheless considered complete.
-
-%%ANKI
-Basic
-In what context are VLAs declared with `[*]` actually useful?
-Back: Function prototypes.
-Reference: https://stackoverflow.com/a/17371914
-<!--ID: 1733144155068-->
-END%%
-
-%%ANKI
-Basic
-Maintaining array syntax, rewrite the following without parameter names.
-```c
-int sum2d(int n, int m, int a[n][m]);
-```
-Back:
-```c
-int sum2d(int, int, int[*][*]);
-```
-Reference: https://stackoverflow.com/a/17371914
-<!--ID: 1733144155073-->
-END%%
-
-%%ANKI
-Basic
-*Why* is the first `*` considered redundant in the following?
-```c
-int sum2d(int, int, int a[*][*]);
-```
-Back: Array decay.
-Reference: https://stackoverflow.com/a/17371914
-<!--ID: 1733144155076-->
-END%%
-
-%%ANKI
-Basic
-Consider the following type. Is it complete or incomplete?
-```c
-int[]
-```
-Back: Incomplete.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1738853472073-->
-END%%
-
-%%ANKI
-Basic
-Consider the following type. Is it complete or incomplete?
-```c
-int[*]
-```
-Back: Complete.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1738853472076-->
-END%%
-
-%%ANKI
-Basic
-In what way is `[*]` for arrays and `()` for function declarations similar?
-Back: They indicate an unspecified size (a concept distinct from a variable or unknown size).
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1738853472079-->
-END%%
-
-%%ANKI
-Basic
-What distinguishes `int[]` and `int[*]` from one another?
-Back: The former is an incomplete array type. The latter is a complete VLA type.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1738853472083-->
-END%%
-
 ### Array Syntax
 
 Functions that receive pointers should generally prefer using array syntax for additional documentation and static checking:
@@ -1067,6 +996,93 @@ void foo(size_t n, double a[n]);
 Back: No. `a` is still just a `double *` though it uses VLA-like syntax.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757175451624-->
+END%%
+
+### VMT Parameters
+
+Within a function prototype, a parameter can denote a VMT using `[*]` syntax. For example, the following prototypes are all (more or less) equivalent:
+
+```c
+int sum2d(int  , int  , int a[*][*]);
+int sum2d(int n, int  , int a[n][*]);
+int sum2d(int  , int m, int a[*][m]);
+int sum2d(int n, int m, int a[n][m]);
+int sum2d(int  , int  , int a[][*]);
+int sum2d(int  , int  , int (*a)[*]);
+int sum2d(int  , int m, int (*a)[m]);
+```
+
+The primary distinction is that a parameter with suffix `[]` is incomplete. A parameter with suffix `[*]` is considered complete but with unspecified size.
+
+%%ANKI
+Basic
+In what context are VMTs declared with `[*]` used?
+Back: Function prototypes.
+Reference: https://stackoverflow.com/a/17371914
+<!--ID: 1733144155068-->
+END%%
+
+%%ANKI
+Basic
+Maintaining array syntax, rewrite the following without parameter names.
+```c
+int sum2d(int n, int m, int a[n][m]);
+```
+Back:
+```c
+int sum2d(int, int, int[*][*]);
+```
+Reference: https://stackoverflow.com/a/17371914
+<!--ID: 1733144155073-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the first `*` considered redundant in the following?
+```c
+int sum2d(int, int, int a[*][*]);
+```
+Back: Array decay.
+Reference: https://stackoverflow.com/a/17371914
+<!--ID: 1733144155076-->
+END%%
+
+%%ANKI
+Basic
+Consider the following type. Is it complete or incomplete?
+```c
+int[]
+```
+Back: Incomplete.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472073-->
+END%%
+
+%%ANKI
+Basic
+Consider the following type. Is it complete or incomplete?
+```c
+int[*]
+```
+Back: Complete.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472076-->
+END%%
+
+%%ANKI
+Basic
+In what way is `[*]` for arrays and `()` for function declarations similar?
+Back: They indicate an unspecified size (a concept distinct from a variable or unknown size).
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472079-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes `int[]` and `int[*]` from one another?
+Back: The former is considered incomplete whereas the latter is considered complete.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1738853472083-->
 END%%
 
 ## Precedence Rules

@@ -300,7 +300,7 @@ END%%
 %%ANKI
 Basic
 Which C function is most flexible w.r.t. updating a process's blocked bit vector?
-Back: `sigprocmask`
+Back: `sigprocmask()`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1753141632821-->
 END%%
@@ -308,7 +308,7 @@ END%%
 %%ANKI
 Basic
 Which C function is most flexible w.r.t. updating a process's pending bit vector?
-Back: `kill`
+Back: `kill()`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1753141632823-->
 END%%
@@ -316,7 +316,7 @@ END%%
 %%ANKI
 Basic
 Which C function is most flexible w.r.t. updating a process's signal mask?
-Back: `sigprocmask`
+Back: `sigprocmask()`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1753141632825-->
 END%%

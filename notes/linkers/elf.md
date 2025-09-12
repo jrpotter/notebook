@@ -138,7 +138,7 @@ END%%
 
 A typical ELF object file contains the following sections:
 
-### `.text`
+### .text
 
 The machine code of the compiled program.
 
@@ -165,7 +165,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1734367304872-->
 END%%
 
-### `.rodata`
+### .rodata
 
 Read-only data such as the format strings in [[streams#Printing|printf]] statements and [[conditions#JMP|jump tables]] for switch statements.
 
@@ -210,7 +210,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1734367304878-->
 END%%
 
-### `.data`
+### .data
 
 Global and static C variables initialized to a non-zero value.
 
@@ -290,7 +290,7 @@ Tags: c17
 <!--ID: 1734369188110-->
 END%%
 
-### `.tdata`
+### .tdata
 
 Thread-local global and static C variables initialized to a non-zero value.
 
@@ -361,7 +361,7 @@ Tags: c17
 <!--ID: 1734745402961-->
 END%%
 
-### `.bss`
+### .bss
 
 Assuming `-fno-common`, contains global and static C variables, along with any global or static variables initialized to zero.
 
@@ -487,7 +487,7 @@ Tags: c17
 <!--ID: 1734369188106-->
 END%%
 
-### `.tbss`
+### .tbss
 
 Uninitialized global and static thread-local C variables, along with any global or static thread-local variables initialized to zero.
 
@@ -583,7 +583,84 @@ Tags: c17
 <!--ID: 1734745403003-->
 END%%
 
-### `.got`
+### .init
+
+The `.init` section contains initialization code. It is a single block of assembly, superseded by the `.init_array` section.
+
+%%ANKI
+Cloze
+The {`.init`} section is the complement of the {`.fini`} section.
+Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
+<!--ID: 1757425364775-->
+END%%
+
+%%ANKI
+Cloze
+The {`.init`} section is superseded by the {`.init_array`} section.
+Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
+<!--ID: 1757425364780-->
+END%%
+
+%%ANKI
+Basic
+What does the `.init` section contain?
+Back: Initialization code (in the form of a single block of assembly).
+Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
+<!--ID: 1757425364782-->
+END%%
+
+### .init_array
+
+The `.init_array` section contains an array of pointers to functions that should be invoked on initialization.
+
+%%ANKI
+Basic
+What does the `.init_array` section contain?
+Back: An array of function pointers to invoke on initialization.
+Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
+<!--ID: 1757425364785-->
+END%%
+
+%%ANKI
+Basic
+Which of `.init` or `.init_array` is preferred in modern applications?
+Back: `.init_array`
+Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
+<!--ID: 1757425364788-->
+END%%
+
+### .fini
+
+The `.fini` section contains finalization code. It is a single block of assembly, superseded by the `.fini_array` section.
+
+%%ANKI
+Cloze
+The {`.fini`} section is superseded by the {`.fini_array`} section.
+Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
+<!--ID: 1757425364791-->
+END%%
+
+### .fini_array
+
+The `.fini_array` section contains an array of pointers to functions that should be invoked on finalization.
+
+%%ANKI
+Basic
+What does the `.fini_array` section contain?
+Back: An array of function pointers to invoke on finalization.
+Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
+<!--ID: 1757425364795-->
+END%%
+
+%%ANKI
+Basic
+Which of `.fini` or `.fini_array` is preferred in modern applications?
+Back: `.fini_array`
+Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
+<!--ID: 1757425364799-->
+END%%
+
+### .got
 
 The [[shared#Global Offset Table|global offset table]]. Contains 8 byte entries for each global data object.
 
@@ -611,7 +688,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1743295591630-->
 END%%
 
-### `.plt`
+### .plt
 
 The [[shared#Procedure Linkage Table|procedure linkage table]]. Contains 16 byte code entries that perform lazy binding.
 
@@ -639,7 +716,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1743296974669-->
 END%%
 
-### `.symtab`
+### .symtab
 
 A symbol table with information about functions and global variables defined and referenced in the program.
 
@@ -667,7 +744,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1734370180083-->
 END%%
 
-### `.rel.text`
+### .rel.text
 
 A list of locations in the `.text` section that will need to be modified when the linker combines this object file with others.
 
@@ -694,7 +771,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1734456879393-->
 END%%
 
-### `.rel.data`
+### .rel.data
 
 A list of locations in the `.data` section that will need to be modified when the linker combines this object file with others.
 
@@ -721,7 +798,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1734456879414-->
 END%%
 
-### `.strtab`
+### .strtab
 
 A string table for the symbol tables in the `.symtab` section as well as for section names in the section headers. It is a sequence of `NUL`-terminated character strings.
 
@@ -757,7 +834,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1734456879433-->
 END%%
 
-### `.interp`
+### .interp
 
 Contains the path name of the dynamic linker to be used by the loader. Only exists on partially linked executable object files.
 
@@ -787,5 +864,6 @@ END%%
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
 * _PIC GOT PLT OMG: How Does the Procedure Linkage Table Work in Linux?_, 2020, [https://www.youtube.com](https://www.youtube.com/watch?v=Ss2e6JauS0Y).
 * Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.

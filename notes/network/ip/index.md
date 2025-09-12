@@ -239,7 +239,7 @@ END%%
 %%ANKI
 Basic
 Why are provider-independent address ranges named the way they are?
-Back: They contain addresses that can be used with an ISP.
+Back: They contain addresses that can be used with any ISP.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1753369239551-->
 END%%

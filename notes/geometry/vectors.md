@@ -712,7 +712,7 @@ END%%
 
 %%ANKI
 Basic
-Given the following, what does $\cos{\theta}$ equal?
+Given the following, what does $\cos{\theta}$ equal in terms of the dot product?
 ![[dot-product-proof.png]]
 Back: $$\cos{\theta} = \frac{\mathbf{u} \cdot \mathbf{v}}{\lVert \mathbf{u} \rVert \lVert \mathbf{v} \rVert}$$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.

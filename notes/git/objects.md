@@ -136,7 +136,7 @@ Basic
 What regular files exist in the object database after `git init`?
 Back: None.
 Reference: Scott Chacon, *Pro Git*, Second edition, The Expert’s Voice in Software Development (New York, NY: Apress, 2014).
-<!--ID: 1709177255672-->
+
 END%%
 
 %%ANKI

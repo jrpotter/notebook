@@ -453,7 +453,7 @@ END%%
 
 %%ANKI
 Basic
-What value BOM does a same-endian decode on a UTF-16 stream?
+A same-endian decoder encounters what BOM on a UTF-16 stream?
 Back: `U+FEFF`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743944550736-->
@@ -461,7 +461,7 @@ END%%
 
 %%ANKI
 Basic
-What value BOM does an opposite-endian decode on a UTF-16 stream?
+An opposite-endian decoder encounters what BOM on a UTF-16 stream?
 Back: `U+FFFE`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743944550741-->
@@ -740,7 +740,7 @@ END%%
 
 %%ANKI
 Basic
-Why does Beej believe UTF-8 has become the dominant multibyte encoding?
+Beej believes UTF-8 has become the dominant multibyte encoding for what reason?
 Back: Because it is backwards compatible with ASCII.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 <!--ID: 1753399800348-->

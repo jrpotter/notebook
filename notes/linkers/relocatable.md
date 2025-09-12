@@ -67,7 +67,7 @@ END%%
 
 ## Symbols
 
-Every relocatable object module $m$ has a [[elf#`.symtab`|symbol table]] that contains information about the symbols defined and referenced by $m$. In the context of a linker, there are three different kinds of symbols:
+Every relocatable object module $m$ has a [[elf#.symtab|symbol table]] that contains information about the symbols defined and referenced by $m$. In the context of a linker, there are three different kinds of symbols:
 
 1. **Global symbols** defined by $m$ and that can be referenced by other modules.
 2. Global symbols referenced by $m$ but defined by another module.

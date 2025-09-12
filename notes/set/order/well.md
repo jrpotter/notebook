@@ -213,7 +213,7 @@ Cloze
 Suppose $\langle P, R \rangle$ and $\langle Q, S \rangle$ are well-ordered structures. Then one of the following holds:
 * {1:$\langle P, R \rangle \cong \langle Q, S \rangle$}
 * {2:$\langle \mathop{\text{seg} } p, R\degree \rangle \cong \langle Q, S \rangle$} for some {2:$p \in P$}.
-* {3:$\langle P, R \rangle \cong \langle \mathop{\text{seg} } q, S\degree \rangle$} for some {2:$q \in Q$}.
+* {3:$\langle P, R \rangle \cong \langle \mathop{\text{seg} } q, S\degree \rangle$} for some {3:$q \in Q$}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1757271691246-->
 END%%
@@ -224,6 +224,34 @@ How is the trichotomy law of natural numbers generalized?
 Back: As the "trichotomy law" of well-ordered structures.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1757271691252-->
+END%%
+
+## By Epsilon
+
+We say a set $A$ is **well ordered by epsilon** if and only if the following relation is a well ordering on $A$: $$\in_A = \{ \langle x, y \rangle \in A \times A \mid x \in y \}$$
+
+%%ANKI
+Basic
+What does it mean for a set $A$ to be well ordered by epsilon?
+Back: Relation $\{ \langle x, y \rangle \in A \times A \mid x \in y \}$ is a well ordering on $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757608004872-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set well ordered by epsilon. How is the corresponding relation typically denoted?
+Back: As $\in_A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757608004881-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set well ordered by epsilon. How is the corresponding relation defined?
+Back: As $\{ \langle x, y \rangle \in A \times A \mid x \in y \}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757608004884-->
 END%%
 
 ## Bibliography

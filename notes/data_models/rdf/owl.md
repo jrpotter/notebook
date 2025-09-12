@@ -31,7 +31,7 @@ END%%
 
 %%ANKI
 Basic
-Every class in OWL must belong to what class?
+Every class in OWL is expected to belong to what class?
 Back: `owl:Class`
 Reference: “OWL 2 Syntax.” Accessed July 27, 2025. [https://www.w3.org/TR/owl2-syntax/](https://www.w3.org/TR/owl2-syntax/).
 <!--ID: 1753575103020-->

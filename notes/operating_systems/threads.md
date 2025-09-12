@@ -176,8 +176,8 @@ END%%
 
 %%ANKI
 Basic
-In what way is the term "reentrant function" a slight misnomer?
-Back: It is not equivalent to the concept of "thread-safe function".
+How is term "reentrant function" often misunderstood?
+Back: It's often believed to be equivalent to the concept of a "thread-safe function".
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1753826427183-->
 END%%

@@ -32,7 +32,7 @@ END%%
 
 %%ANKI
 Basic
-In an executable object file, what exists between the ELF header and section header table?
+In an executable object file, what two entries exist between the ELF header and section header table?
 Back: The program header table and the sections.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1738637653610-->

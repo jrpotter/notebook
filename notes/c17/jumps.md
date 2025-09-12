@@ -44,7 +44,7 @@ END%%
 
 %%ANKI
 Basic
-What is the only C identifier with function scope?
+What class of C identifiers have function scope?
 Back: Labels.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1753827838107-->

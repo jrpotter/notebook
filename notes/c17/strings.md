@@ -71,6 +71,42 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1728244147676-->
 END%%
 
+%%ANKI
+Basic
+How is the following C statement evaluated?
+```c
+char const test[] = "ab" + "cd";
+```
+Back: N/A. This is invalid syntax.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543786-->
+END%%
+
+%%ANKI
+Basic
+How is the following C statement evaluated?
+```c
+char const test[] = "ab" "cd";
+```
+Back: As assigning `"abcd"` to `test`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543791-->
+END%%
+
+%%ANKI
+Basic
+How should the following be rewritten to reflect the author's likely intent?
+```c
+char const test[] = "ab" + "cd";
+```
+Back:
+```c
+char const test[] = "ab" "cd";
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543795-->
+END%%
+
 ## Escape Sequences
 
 C has a standard for processing different escape sequences. Many languages built with C in mind parse these escape sequences in a similar way.

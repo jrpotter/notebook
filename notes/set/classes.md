@@ -436,7 +436,7 @@ END%%
 
 %%ANKI
 Basic
-Let $F$ be a function-class and $A$ a set. What notational abuse is occurring with $F[\![A]\!]$.
+Let $F$ be a function-class and $A$ a set. What notational abuse is occurring with $F[\![A]\!]$?
 Back: The image operation is technically only defined with respect to sets.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1753740228076-->

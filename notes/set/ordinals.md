@@ -11,17 +11,9 @@ tags:
 
 Assume $<$ is a strict [[well|well ordering]] on $A$ and define $\gamma(x, y)$ as the formula "$y = \mathop{\text{ran}} x$". The [[recursion#Transfinite Recursion|transfinite recursion theorem]] then presents us with a unique [[functions|function]] with domain $A$ such that for any $t \in A$, $$E(t) = \mathop{\text{ran}}(E \restriction \mathop{\text{seg}_<}t) = E [\![\mathop{\text{seg}_<} t ]\!]$$
 
-Then $\alpha = \mathop{\text{ran}}(E)$ is called the **epsilon-image** (denoted $\in$-image) of the well-ordered [[structures|structure]] $\langle A, < \rangle$. The name "$\in$-image" derives from the fact that the membership relation is a well ordering on $\alpha$: $$\in_\alpha = \{ \langle x, y \rangle \in \alpha \times \alpha \mid x \in y \}$$
+Then $\alpha = \mathop{\text{ran}}(E)$ is called the **epsilon-image** (denoted $\in$-image) of the well-ordered [[structures|structure]] $\langle A, < \rangle$. The name "$\in$-image" derives from the fact that $\alpha$ is [[well#By Epsilon|well ordered by epsilon]].
 
 An $\in$-image of $\langle A, < \rangle$ is a [[natural_numbers#Transitive Sets|transitive set]].
-
-%%ANKI
-Basic
-How is the membership relation $\in$ defined on set $A$?
-Back: As $\mathop{\in} = \{ \langle x, y \rangle \in A \times A \mid x \in y \}$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1756129683917-->
-END%%
 
 %%ANKI
 Basic
@@ -145,7 +137,7 @@ END%%
 
 %%ANKI
 Basic
-Let $n \in \omega$. What is the $\in$-image of strict well order $\langle n, \in_n \rangle$, where $\in_n$ denotes the membership relation on $n$?
+Let $n \in \omega$. What is the $\in$-image of strict well order $\langle n, \in_n \rangle$?
 Back: $n$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1756301380200-->
@@ -153,7 +145,7 @@ END%%
 
 %%ANKI
 Basic
-What is the $\in$-image of strict well order $\langle \omega, \in_\omega \rangle$, where $\in_\omega$ denotes the membership relation on $\omega$?
+What is the $\in$-image of strict well order $\langle \omega, \in_\omega \rangle$?
 Back: $\omega$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1756301380208-->
@@ -170,7 +162,7 @@ END%%
 %%ANKI
 Basic
 Let $\alpha$ be a $\in$-image of strict well order $\langle A, < \rangle$. What two structures are isomorphic?
-Back: Let $\in_\alpha$ be the membership relation on $\alpha$. Then $\langle \alpha, \in \rangle \cong \langle A, < \rangle$.
+Back: $\langle \alpha, \in_\alpha \rangle$ is isomorphic to $\langle A, < \rangle$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1756331535816-->
 END%%
@@ -186,7 +178,7 @@ END%%
 %%ANKI
 Basic
 Let $\alpha$ be a $\in$-image of strict well order $\langle A, < \rangle$. *How* do we know $\alpha$ is well ordered?
-Back: $\langle \alpha, \in_\alpha \rangle$, where $\in_\alpha$ denotes the membership relation on $\alpha$, is isomorphic to $\langle A, < \rangle$.
+Back: $\langle \alpha, \in_\alpha \rangle$ is isomorphic to $\langle A, < \rangle$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1756333255840-->
 END%%
@@ -194,6 +186,8 @@ END%%
 ## Ordinal Numbers
 
 Let $<$ be a strict well ordering on a set $A$. The **ordinal number of $\langle A, < \rangle$** is its $\in$-image. An **ordinal number** is a set that is the ordinal number of some well-ordered structure.
+
+Let $\alpha$ be any transitive set that is well ordered by epsilon. Then $\alpha$ is an ordinal number. In fact, $\alpha$ is the $\in$-image of $\langle \alpha, \in_\alpha \rangle$.
 
 %%ANKI
 Basic
@@ -241,6 +235,48 @@ Why is $\omega$ an ordinal number?
 Back: Because it is an $\in$-image of a well-ordered structure.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1757241703553-->
+END%%
+
+%%ANKI
+Basic
+Why are ordinal numbers transitive sets?
+Back: They are $\in$-images which are transitive sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757608326669-->
+END%%
+
+%%ANKI
+Cloze
+Let $\alpha$ be an ordinal number. Then $\alpha$ is well ordered by {epsilon}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757608326678-->
+END%%
+
+%%ANKI
+Basic
+What is wrong with the following statement?
+
+> Let $\alpha$ be an ordinal number. Then $\alpha$ is the ordinal number of $\alpha$.
+
+Back: $\alpha$ is the ordinal number of $\langle \alpha, \in_\alpha \rangle$, not $\alpha$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757609535669-->
+END%%
+
+%%ANKI
+Basic
+What is the $\in$-image of ordinal number $\alpha$?
+Back: N/A. The $\in$-image applies to well ordered structures, not sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757609535672-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal number. What is the $\in$-image of $\langle \alpha, \in_\alpha \rangle$?
+Back: $\alpha$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757609535675-->
 END%%
 
 ## Bibliography

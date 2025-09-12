@@ -556,7 +556,7 @@ END%%
 %%ANKI
 Basic
 What is the default locale used by C programs?
-Back: The `C` locale.
+Back: The `"C"` locale.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1753744670183-->
 END%%

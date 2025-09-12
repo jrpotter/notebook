@@ -177,6 +177,14 @@ For types that don't have literals that describe their constants, we can use **c
 #define NAME (T){ INIT }
 ```
 
+Some commonly used macros recognized by the preprocessor includes:
+
+* `__LINE__`. Expands to a decimal integer constant for the number of the line in source.
+* `__DATE__`. Expands to a string literal containing the date of compilation.
+* `__TIME__`. Expands to a string literal containing the time of compilation.
+* `__FILE__`. Expands to a string literal containing the name of the current TU.
+* `__func__`. Expands to a local static variable holding the name of the enclosing function.
+
 %%ANKI
 Basic
 What preprocessor directive is used to define macros?
@@ -225,18 +233,6 @@ What is the difference between the following two lines?
 Back: N/A. They are equivalent.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727432419485-->
-END%%
-
-%%ANKI
-Basic
-What is the difference between the following two lines?
-```c
-#define MACRO (T){ INIT }
-#define MACRO(T){ INIT }
-```
-Back: The first defines a compound literal. The latter defines a function-like macro.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727432419489-->
 END%%
 
 %%ANKI
@@ -317,6 +313,390 @@ Generally speaking, what character should *not* be specified at the end of a mac
 Back: `;`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727432419511-->
+END%%
+
+%%ANKI
+Cloze
+The `__LINE__` macro expands to a {decimal integer} literal.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923754-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `__LINE__` macro?
+Back: It expands to the current line number in source.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923758-->
+END%%
+
+%%ANKI
+Basic
+With respect to C types, what kind of number does `__LINE__` expand to?
+Back: A decimal integer constant.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923762-->
+END%%
+
+%%ANKI
+Basic
+Why is `__LINE__` inherently dangerous?
+Back: Decimal integer constants are subject to the first fit rule.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923765-->
+END%%
+
+%%ANKI
+Cloze
+The `__DATE__` macro expands to a {string} literal.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923768-->
+END%%
+
+%%ANKI
+Basic
+What does the `__DATE__` macro expand to?
+Back: A string literal containing the date of compilation.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923772-->
+END%%
+
+%%ANKI
+Cloze
+The `__TIME__` macro expands to a {string} literal.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923776-->
+END%%
+
+%%ANKI
+Basic
+What does the `__TIME__` macro expand to?
+Back: A string literal containing the time of compilation.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923780-->
+END%%
+
+%%ANKI
+Cloze
+The `__FILE__` macro expands to a {string} literal.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923783-->
+END%%
+
+%%ANKI
+Basic
+What does the `__FILE__` macro expand to?
+Back: A string literal containing the name of the enclosing TU.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923787-->
+END%%
+
+%%ANKI
+Basic
+What does the `__FUNC__` macro expand to?
+Back: N/A. This is not a predefined macro.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923790-->
+END%%
+
+%%ANKI
+Basic
+What does the `__func__` macro expand to?
+Back: A static local variable containing the name of the enclosing function.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923793-->
+END%%
+
+%%ANKI
+Basic
+Which macro can be used to get the name of the current line number?
+Back: `__LINE__`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923797-->
+END%%
+
+%%ANKI
+Basic
+Which macro can be used to get the name of the current function?
+Back: `__func__`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923800-->
+END%%
+
+%%ANKI
+Basic
+Which macro can be used to get the name of the current TU?
+Back: `__FILE__`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757596923803-->
+END%%
+
+## Function-Like Macros
+
+If the name of a macro is immediately followed by a left parenthesis, the macro is said to be **function-like** or **functional**.
+
+The preprocessor temporarily disables the definition of macros on expansion to avoid infinite recursion. To avoid any ambiguity in the resulting expression, parameter references should be surrounded by parentheses in the replacement text.
+
+%%ANKI
+Basic
+How is a macro made to be function-like?
+Back: By immediately following the name of the macro with a left parenthesis.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543800-->
+END%%
+
+%%ANKI
+Basic
+How do macro calls avoid infinite recursion?
+Back: By disabling the macro definition on expansion.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543805-->
+END%%
+
+%%ANKI
+Basic
+How should parameter references be protected in macro definitions?
+Back: With surrounding parentheses.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543812-->
+END%%
+
+%%ANKI
+Basic
+*Why* should parameter references by surrounded with parentheses in a macro's replacement text?
+Back: To avoid any ambiguity in the resulting expansion.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543819-->
+END%%
+
+%%ANKI
+Basic
+How should the following be rewritten more safely?
+```c
+#define add(a, b) a + b
+```
+Back:
+```c
+#define add(a, b) (a) + (b)
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543827-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the C preprocessor disable macro definitions on expansion?
+Back: To avoid infinite recursion.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543837-->
+END%%
+
+%%ANKI
+Basic
+What is the difference between the following two lines?
+```c
+#define MACRO (T){ INIT }
+#define MACRO(T){ INIT }
+```
+Back: The first defines a compound literal. The latter defines a function-like macro.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727432419489-->
+END%%
+
+%%ANKI
+Basic
+*Why* do macro identifiers live in a namespace of their own?
+Back: Macro replacement is done in an early translation phase.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543846-->
+END%%
+
+%%ANKI
+Basic
+How is the following C equivalently written with the order of definitions reversed?
+```c
+inline
+char const* string_literal(char const str[static 1]) {
+  return str;
+}
+
+#define string_literal(s) string_literal("" s "")
+```
+Back:
+```c
+#define string_literal(s) string_literal("" s "")
+
+inline
+char const* (string_literal)(char const str[static 1]) {
+  return str;
+}
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543856-->
+END%%
+
+%%ANKI
+Basic
+How does one typically avoid expanding functional macro calls?
+Back: By surrounding the macro reference with parentheses.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543865-->
+END%%
+
+%%ANKI
+Basic
+Under what condition are functional macros *not* expanded?
+Back: When they are not followed immediately by a left parenthesis.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543874-->
+END%%
+
+%%ANKI
+Basic
+How can default arguments of e.g. standard library functions be provided in C?
+Back: By defining macros of the same name as the function with arguments supplied.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757597638069-->
+END%%
+
+### Argument Checking
+
+Certain tricks can be used to ensure arguments match an expected type:
+
+* If parameter `s` is expected to be a string literal, write `"" s ""` in the replacement text.
+* Integer types can be promoted using an appropriate `0`, e.g. `+0.0F`, `+0UL`, etc.
+* Assignment-compatibility can be enforced using compound literals.
+
+%%ANKI
+Basic
+How can string literal arguments be checked in a functional macro definition?
+Back: By surrounding the parameter name with `""` in the replacement text.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543883-->
+END%%
+
+%%ANKI
+Basic
+Does the following raise a compilation error? If so, why?
+```c
+#define string_literal(S) string_literal("" S "")
+
+int main(void) {
+  char *s1 = "abc";
+  char *s2 = string_literal(s1);
+}
+```
+Back: Yes. The macro call expects only string literals to be passed to it.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543891-->
+END%%
+
+%%ANKI
+Basic
+Does the following raise a compilation error? If so, why?
+```c
+#define string_literal(S) string_literal("" S "")
+
+int main(void) {
+  char *s1 = string_literal("abc");
+}
+```
+Back: No.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543899-->
+END%%
+
+%%ANKI
+Basic
+How can we ensure a macro argument `X` is promoted to a floating point?
+Back: By writing `(X) + 0.0F` in the replacement text.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543910-->
+END%%
+
+%%ANKI
+Basic
+How can we ensure a macro argument `X` is promoted to an unsigned long?
+Back: By writing `(X) + 0.0UL` in the replacement text.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543922-->
+END%%
+
+%%ANKI
+Basic
+What is dangerous about the following macro definition?
+```c
+#define PRINT(X) printf("%p", (void*)(X))
+```
+Back: Non-pointer types might be passed to `PRINT` calls.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543936-->
+END%%
+
+%%ANKI
+Basic
+How is the following macro written safely?
+```c
+#define PRINT(X) printf("%p", (void*)(X))
+```
+Back:
+```c
+#define PRINT(X) printf("%p", ((void*){0}) = (X)))
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543951-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the assignment in the following macro?
+```c
+#define PRINT(X) printf("%p", ((void*){0}) = (X)))
+```
+Back: It leverages implicit conversions to ensure `X` is a pointer type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543963-->
+END%%
+
+%%ANKI
+Basic
+What problem does the following macro demonstrate?
+```c
+#define ERROR_RETURN(CODE) if (CODE) return -1
+```
+Back: The dangling else problem.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543974-->
+END%%
+
+%%ANKI
+Basic
+How is the following macro rewritten to avoid the dangling else problem?
+```c
+#define ERROR_RETURN(CODE) if (CODE) return -1
+```
+Back:
+```c
+#define ERROR_RETURN(CODE) do { if (CODE) return -1 } while (false)
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543983-->
+END%%
+
+%%ANKI
+Basic
+What is the dangling else problem?
+Back: Writing macros using `if` can lead to ambiguous `else` parsing in certain contexts.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512543992-->
+END%%
+
+%%ANKI
+Basic
+What is the typical solution to the dangling else problem?
+Back: Surrounding the conditional with a `do-while(false)`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757512544004-->
 END%%
 
 ### Operators
@@ -568,6 +948,14 @@ int main(void) { printf("%d\n", foo(123, 456, 789)); }
 Back: `123456`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1733309129401-->
+END%%
+
+%%ANKI
+Basic
+If present, where must `...` be listed in a function macro definition?
+Back: As the last parameter in the parameter list.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757611392696-->
 END%%
 
 ## Bibliography

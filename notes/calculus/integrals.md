@@ -472,7 +472,7 @@ Let $f$ and $g$ be integrable over $[a, b]$. Then $$\int_a^b f(x) + g(x) \,dx = 
 %%ANKI
 Basic
 What does the additivity property w.r.t. the integrand state?
-Back: Let $f$ and $g$ be integrable over $[a, b]$. Then $\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx$.
+Back: Let $f$ and $g$ be integrable over $[a, b]$. Then $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx.$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463659-->
 END%%

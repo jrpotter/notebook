@@ -1622,7 +1622,7 @@ Consider Gries's $\text{DO}$ checklist. What does step 1 mean?
 2. Show $\{P \land B_i\}\; S_i\; \{P\}$, for $1 \leq i \leq n$.
 3. Show $P \land \neg\text{BB} \Rightarrow R$.
 4. Show $P \land \text{BB} \Rightarrow (t > 0)$.
-5. Show $\{P \land B_i\}\; t1 \coloneqq t; S_i \{t < t1\}$, for $1 \leq i \leq n$.
+5. Show $\{P \land B_i\}\; t1 \coloneqq t; S_i \;\{t < t1\}$, for $1 \leq i \leq n$.
 Back: A relevant loop invariant should hold before entering a loop.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1745271260005-->
