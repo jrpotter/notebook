@@ -566,7 +566,7 @@ END%%
 %%ANKI
 Basic
 What is the largest available port number?
-Back: `65525`, i.e. $2^{16} - 1$.
+Back: `65535`, i.e. $2^{16} - 1$.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754404434292-->
 END%%

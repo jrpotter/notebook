@@ -2084,7 +2084,7 @@ END%%
 
 %%ANKI
 Basic
-In two's-complement, *why* is floor a part of expression $x \mathop{\texttt{>>}} k = \lfloor x / 2^k \rfloor$?
+Assuming two's complement and arithmetic shifting, *why* is floor a part of expression $x \mathop{\texttt{>>}} k = \lfloor x / 2^k \rfloor$?
 Back: Because the least significant bit, which may have value `1`, is dropped.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17
@@ -2093,7 +2093,7 @@ END%%
 
 %%ANKI
 Basic
-In two's-complement, what is `-1 >> 1`?
+Assuming two's complement and arithmetic shifting, what is `-1 >> 1`?
 Back: `-1`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c17

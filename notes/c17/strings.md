@@ -607,6 +607,22 @@ Tags: i18n::unicode
 <!--ID: 1753749115946-->
 END%%
 
+%%ANKI
+Basic
+What does the `__STDC_UTF_16__` macro indicate when defined?
+Back: The values of `char16_t` are UTF-16 encoded.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1757693034839-->
+END%%
+
+%%ANKI
+Basic
+What does the `__STDC_UTF_32__` macro indicate when defined?
+Back: The values of `char32_t` are UTF-32 encoded.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1757693034841-->
+END%%
+
 ## Copying
 
 The two primary functions used for copying memory are `memcpy` and `memmove`:

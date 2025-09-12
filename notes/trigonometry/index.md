@@ -966,7 +966,7 @@ END%%
 %%ANKI
 Basic
 What is the range of the secant function?
-Back: $\mathbb{R}$
+Back: $\mathbb{R} - (-1, 1)$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1745010301136-->
 END%%
@@ -1052,9 +1052,10 @@ END%%
 
 %%ANKI
 Basic
-What is the range of the secant function?
-Back: $\mathbb{R}$
+What is the range of the cosecant function?
+Back: $\mathbb{R} - (-1, 1)$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1757693262479-->
 END%%
 
 %%ANKI
