@@ -920,6 +920,185 @@ These generally should be interpreted in the following way:
 * `baz` takes in a pointer to a collection of objects of unknown number.
 * `qux` takes in a pointer to a single object of the type or a null pointer.
 
+Additionally, the following pairs of lines are equivalent means of expressing the same parameters:
+
+```c
+void foo(T a[const]);
+void foo(T *const a);
+
+void bar(const int a[]);
+void bar(const int *a);
+```
+
+This holds for other type qualifiers like `volatile` and `restrict`.
+
+%%ANKI
+Basic
+How is the following array parameter rewritten using pointer syntax?
+```c
+void foo(int a[const]) {}
+```
+Back:
+```c
+void foo(int *const a) {}
+```
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147585-->
+END%%
+
+%%ANKI
+Basic
+How is the following array parameter rewritten using pointer syntax?
+```c
+void foo(const int a[]) {}
+```
+Back:
+```c
+void foo(const int *a) {}
+```
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147614-->
+END%%
+
+%%ANKI
+Basic
+How is the following pointer parameter rewritten using array syntax?
+```c
+void foo(int *restrict a) {}
+```
+Back:
+```c
+void foo(int a[restrict]) {}
+```
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147617-->
+END%%
+
+%%ANKI
+Basic
+How is the following pointer parameter rewritten using array syntax?
+```c
+void foo(volatile int *a) {}
+```
+Back:
+```c
+void foo(volatile int a[]) {}
+```
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147620-->
+END%%
+
+%%ANKI
+Basic
+What does the `3` keyword guarantee to the compiler?
+```c
+void bar(int a[3]);
+```
+Back: N/A. It is ignored.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147623-->
+END%%
+
+%%ANKI
+Basic
+*Why* might you see e.g. `3` like in the following prototype?
+```c
+void bar(int a[3]);
+```
+Back: It serves as documentation.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147625-->
+END%%
+
+%%ANKI
+Basic
+In the following, what does the `static` keyword guarantee to the compiler?
+```c
+void bar(int a[static 3]);
+```
+Back: The minimum number of elements for the compiler to assume `a` contains.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147628-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following produce a compilation error?
+```c
+void foo(int a[3]);
+
+int main() {
+  int a[] = { 1, 2 };
+  foo(a);
+}
+```
+Back: N/A. It doesn't.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147652-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following produce a compilation error?
+```c
+void foo(int a[static 3]);
+
+int main() {
+  int a[] = { 1, 2 };
+  foo(a);
+}
+```
+Back: Because the argument to `foo` does not have at least `3` elements.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147655-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following produce a compilation error?
+```c
+void foo(int a[static 3]);
+
+int main() {
+  int a[] = { 1, 2, 3, 4 };
+  foo(a);
+}
+```
+Back: N/A. It doesn't.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147658-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following produce a compilation error?
+```c
+void foo(int a[3]);
+
+int main() {
+  foo(0);
+}
+```
+Back: N/A. It doesn't.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147661-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following produce a compilation error?
+```c
+void foo(int a[static 1]);
+
+int main() {
+  foo(0);
+}
+```
+Back: Because `static` indicates a valid pointer must be passed to `foo`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1728244147664-->
+END%%
+
 %%ANKI
 Basic
 How is the array syntax in the following interpreted?

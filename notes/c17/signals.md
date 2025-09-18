@@ -275,7 +275,7 @@ END%%
 
 ## Safety
 
-A function is **async-signal-safe** if and only if it can be safely called from a signal handler. This holds either because it is [[threads#Safety|reentrant]] or because it cannot be interrupted by a signal handler.
+A function is **async-signal-safe** if and only if it can be safely called from a signal handler. This holds either because it is [[operating_systems/threads#Safety|reentrant]] or because it cannot be interrupted by a signal handler.
 
 %%ANKI
 Basic
@@ -349,7 +349,79 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1753897177599-->
 END%%
 
+### Atomicity
+
+The `<signal.h>` header also exports the `sig_atomic_t` type. This is an integer type with a minimal width of 8 bits. Memory-load (evaluation) and store (assignment) are guaranteed atomic; other operations are not.
+
+%%ANKI
+Basic
+Which header exports `sig_atomic_t`?
+Back: `<signal.h>`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757948456140-->
+END%%
+
+%%ANKI
+Basic
+What atomicity-related type is exported by `<signal.h>`?
+Back: `sig_atomic_t`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757948456143-->
+END%%
+
+%%ANKI
+Basic
+Why is `sig_atomic_t` named the way it is?
+Back: It is an **atomic** type for use in **sig**nal handlers.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757948456145-->
+END%%
+
+%%ANKI
+Basic
+What kind of type does `sig_atomic_t` refer to?
+Back: A (signed or unsigned) integer type of width at least 8 bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757948456148-->
+END%%
+
+%%ANKI
+Basic
+How wide is a `sig_atomic_t`?
+Back: At least 8 bits.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757948456151-->
+END%%
+
+%%ANKI
+Basic
+What operations are guaranteed atomic with respect to `sig_atomic_t`?
+Back: Evaluation and assignment.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757948456153-->
+END%%
+
+%%ANKI
+Basic
+What two reasons does Gustedt state `sig_atomic_t` shouldn't be used for counters?
+Back:
+1. Increments can be divided into multiple instructions.
+2. The `sig_atomic_t` variable can easily overflow.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757948456156-->
+END%%
+
+%%ANKI
+Basic
+What type qualifier is usually associated with `sig_atomic_t`?
+Back: `volatile`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1757948456159-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+* Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 * “Syscalls(2) - Linux Manual Page.” Accessed August 8, 2025. [https://man7.org/linux/man-pages/man2/syscalls.2.html](https://man7.org/linux/man-pages/man2/syscalls.2.html).

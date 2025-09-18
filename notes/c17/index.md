@@ -1074,6 +1074,244 @@ Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open
 <!--ID: 1733010193306-->
 END%%
 
+## Sequencing
+
+In the absence of threads, most of C's formalization on evaluation order is done with **sequence points**. These are points in the syntactical specification of the program that imposes a serialization of the execution.
+
+The existence of sequence points only impose that there is *some* order. It may be ambiguous still *which* possibly order is actually taken. When two evaluations are ambiguously ordered, we say they are **indeterminately sequenced**.
+
+%%ANKI
+Basic
+What is a sequence point?
+Back: Some point in the syntax of the program that imposes a serialization of the execution.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757732499313-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for two function calls to be indeterminately sequenced?
+Back: The order in which they are called is ambiguous but nonetheless sequenced.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757852965002-->
+END%%
+
+### Sequence Points
+
+The following constitute the sequence points found in C's grammar:
+
+* The end of a statement with either a semicolon (`;`) or closing brace (`}`).
+* The end of an expression before the comma operator (`,`).
+* The end of a declaration, with either a semicolon (`;`) or comma (`,`).
+* The end of the controlling expression of `if`, `switch`, `for`, and `while`.
+* The end of the controlling expression for conditional evaluation (`?:`).
+* The end of the controlling expression for short-circuit evaluation (`&&`) and (`||`).
+* After the evaluations of the function designator and function arguments, but before the actual call.
+* Updating an object with assignment, increment, or decrement operators is sequenced after evaluation of operands.
+* Initialization-list expressions for array or structure types are indeterminately sequenced.
+
+Additionally, the execution of a function call is sequenced with respect to all evaluations of the caller. That is, once a function call is invoked, it is completed before other evaluations are performed.
+
+%%ANKI
+Basic
+Which four C operators evaluate their first operand first?
+Back: `&&`, `||`, `?:`, and `,`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757732499322-->
+END%%
+
+%%ANKI
+Basic
+How does the comma operator (`,`) work?
+Back: It evaluates its operands in order and returns the value of the rightmost operand.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757732499326-->
+END%%
+
+%%ANKI
+Basic
+Let `A` be a two-dimensional array. What value does `A[i, j]` return?
+Back: `A[j]`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757732499331-->
+END%%
+
+%%ANKI
+Basic
+Assume `A` is a two-dimensional array. *Why* does `A[i, j]` actually return `A[j]`?
+Back: The `,` operator returns the result of its rightmost operand, i.e. `j`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757732499337-->
+END%%
+
+%%ANKI
+Basic
+What is the evaluation order of `f(a)` and `f(b)` in the following?
+```c
+int x = (f(a), f(b));
+```
+Back: `f(a)` is evaluated and then `f(b)` is evaluated.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757732499343-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `x` in the following?
+```c
+int x = (f(a), f(b));
+```
+Back: `f(b)`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757732499348-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `x` in the following?
+```c
+int x = f(a), f(b);
+```
+Back: N/A. This is invalid syntax.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757732499353-->
+END%%
+
+%%ANKI
+Basic
+What is the evaluation order of `f(a)` and `f(b)` in the following?
+```c
+int x = f(a) + f(b);
+```
+Back: N/A. There is no pre-established order.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757732499358-->
+END%%
+
+%%ANKI
+Basic
+What is the evaluation order of `f(a)` and `f(b)` in the following?
+```c
+printf("%d and %d\n", f(a), f(b));
+```
+Back: N/A. There is no pre-established order.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757732499362-->
+END%%
+
+%%ANKI
+Basic
+*Why* does Gustedt say functions called inside expressions should not have side effects?
+Back: Because function calls and most operators don't sequence their operands.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757732499366-->
+END%%
+
+%%ANKI
+Basic
+In what order is the following sequenced?
+```c
+int a = 10;
+return a;
+```
+Back: The first statement, the second statement.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757852965011-->
+END%%
+
+%%ANKI
+Basic
+What are the sequence points in the following?
+```c
+int a = 10;
+return a;
+```
+Back: The semicolons.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757852965014-->
+END%%
+
+%%ANKI
+Basic
+With respect to sequence points, what are the possible first evaluations?
+```c
+foo(a, bar(b));
+```
+Back: One of `foo`, `a`, `bar`, or `b`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757852965018-->
+END%%
+
+%%ANKI
+Basic
+What sequence of function calls are performed in the following?
+```c
+foo(a, bar(b));
+```
+Back: First `bar(b)` is called and then `foo(a, bar(b))`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757852965022-->
+END%%
+
+%%ANKI
+Basic
+With respect to sequence points, what are the possible first evaluations?
+```c
+if (a || b) {
+  return c;
+}
+```
+Back: `a` is guaranteed to be evaluated first.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757852965026-->
+END%%
+
+%%ANKI
+Basic
+With respect to sequence points, what are the possible first evaluations?
+```c
+if (a + b < 1) {
+  return c;
+}
+```
+Back: Either `a`, `b`, or `1` is evaluated first.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757852965030-->
+END%%
+
+%%ANKI
+Basic
+With respect to sequence points, what are the possible first evaluations?
+```c
+int a[3] = { [0] = b, [1] = c, [2] = d };
+```
+Back: Any one of `b`, `c`, or `d`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757852965033-->
+END%%
+
+%%ANKI
+Basic
+With respect to sequence points, what are the possible first evaluations?
+```c
+struct S example = { .field1 = b, .field2 = c };
+```
+Back: Either `b` or `c`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757852965036-->
+END%%
+
+%%ANKI
+Basic
+What are the sequence points in the following?
+```c
+if (a) { }
+```
+Back: After the controlling expression and the `}`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757853214698-->
+END%%
+
 ## Bibliography
 
 * Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).

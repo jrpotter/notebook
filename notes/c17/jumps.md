@@ -348,6 +348,14 @@ END%%
 
 %%ANKI
 Basic
+What type qualifier is especially important in the context of `longjmp`s?
+Back: `volatile`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757854412473-->
+END%%
+
+%%ANKI
+Basic
 With respect to nonlocal jumps, what variables should be marked as `volatile`?
 Back: Variables modified across `longjmp` invocations.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).

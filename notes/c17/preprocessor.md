@@ -431,6 +431,108 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1757596923803-->
 END%%
 
+### Conditional Features
+
+A few macros are conditionally defined by an implementation:
+
+* `__STDC_NO_ATOMICS__`: If defined as `1`, indicates the implementation does not support atomic types nor the `<stdatomic.h>` header.
+* `__STDC_NO_COMPLEX__`: If defined as `1`, indicates the implementation does not support complex types or the `<complex.h>` header.
+* `__STDC_NO_THREADS__`: If defined as `1`, indicates the implementation does not support the `<threads.h>` header.
+* `__STDC_NO_VLA__`: If defined as `1`, indicates the implementation does not support VLAs or VMTs.
+
+%%ANKI
+Basic
+Which header indicates a C implementation does not support atomics?
+Back: `__STDC_NO_ATOMICS__`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835612-->
+END%%
+
+%%ANKI
+Basic
+How is it determined whether `<stdatomic.h>` is available on a platform?
+Back: Checking whether or not `__STDC_NO_ATOMICS__` is defined as `1`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835615-->
+END%%
+
+%%ANKI
+Basic
+How is it determined whether the `_Atomic` qualifier is available on a platform?
+Back: Checking whether or not `__STDC_NO_ATOMICS__` is defined as `1`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835618-->
+END%%
+
+%%ANKI
+Basic
+Which header indicates a C implementation does not support complex numbers?
+Back: `__STDC_NO_COMPLEX__`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835621-->
+END%%
+
+%%ANKI
+Basic
+How is it determined whether `<complex.h>` is available on a platform?
+Back: Checking whether or not `__STDC_NO_COMPLEX__` is defined as `1`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835624-->
+END%%
+
+%%ANKI
+Basic
+Which header indicates a C implementation does not support threads?
+Back: `__STDC_NO_THREADS__`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835627-->
+END%%
+
+%%ANKI
+Basic
+How is it determined whether `<threads.h>` is available on a platform?
+Back: Checking whether or not `__STDC_NO_THREADS__` is defined as `1`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835630-->
+END%%
+
+%%ANKI
+Basic
+Which header indicates a C implementation does not support VLAs?
+Back: `__STDC_NO_VLA__`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835632-->
+END%%
+
+%%ANKI
+Basic
+Which header indicates a C implementation does not support VMTs?
+Back: `__STDC_NO_VLA__`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835635-->
+END%%
+
+%%ANKI
+Cloze
+{1:`__STDC_NO_ATOMICS__`} is to {2:`<stdatomic.h>`} whereas {2:`__STDC_NO_THREADS__`} is to {1:`<threads.h>`}.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835638-->
+END%%
+
+%%ANKI
+Cloze
+{1:`__STDC_NO_THREADS__`} is to {2:`<threads.h>`} whereas {2:`__STDC_NO_COMPLEX__`} is to {1:`<complex.h>`}.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835641-->
+END%%
+
+%%ANKI
+Cloze
+{1:`__STDC_NO_COMPLEX__`} is to {2:`<complex.h>`} whereas {2:`__STDC_NO_ATOMICS__`} is to {1:`<stdatomic.h>`}.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835644-->
+END%%
+
 ## Function-Like Macros
 
 If the name of a macro is immediately followed by a left parenthesis, the macro is said to be **function-like** or **functional**.
