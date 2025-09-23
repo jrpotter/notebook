@@ -220,7 +220,7 @@ END%%
 %%ANKI
 Basic
 What does the `sigdelset()` function do?
-Back: Removes a specific signal number to the argument set.
+Back: Removes a specific signal number from the argument set.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552862-->
 END%%

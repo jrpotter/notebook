@@ -362,7 +362,7 @@ END%%
 
 %%ANKI
 Basic
-Besides `fflush()`, when else is a stream implicitly flushed?
+Besides `fflush()`, what other stream function implicitly flushes?
 Back: When calling `fclose()`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754660845408-->
@@ -390,7 +390,7 @@ size_t fread(void *restrict ptr,
 
 %%ANKI
 Basic
-Which standard function is most commonly used for reading raw data?
+Which standard library function is most commonly used for reading raw data?
 Back: `fread()`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1754660206802-->
@@ -398,7 +398,7 @@ END%%
 
 %%ANKI
 Basic
-Which C header includes the `fread` function?
+Which C header includes the `fread()` function?
 Back: `<stdio.h>`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1754660206808-->
@@ -432,23 +432,23 @@ char *fgets(char *restrict s, int n, FILE *restrict stream);
 
 %%ANKI
 Basic
-Which standard function is most commonly used for reading unformatted characters?
-Back: `fgetc`
+Which standard library function is most commonly used for reading unformatted characters?
+Back: `fgetc()`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754659255228-->
 END%%
 
 %%ANKI
 Basic
-Which standard function is most commonly used for reading unformatted strings?
-Back: `fgets`
+Which standard library function is most commonly used for reading unformatted strings?
+Back: `fgets()`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087252-->
 END%%
 
 %%ANKI
 Basic
-On what character(s) does `fgets` premarturely terminate?
+On what character(s) does `fgets()` premarturely terminate?
 Back: The newline and EOF characters.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087259-->
@@ -456,7 +456,7 @@ END%%
 
 %%ANKI
 Basic
-Assuming no `\n` or EOF, how many characters does `fgets` read?
+Assuming no `\n` or EOF, how many characters does `fgets()` read?
 Back: One less than the specified limit.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087262-->
@@ -464,7 +464,7 @@ END%%
 
 %%ANKI
 Basic
-Why does `fgets` read one less than the specified limit?
+Why does `fgets()` read one less than the specified limit?
 Back: It automatically includes a trailing `\0` character.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087265-->
@@ -472,7 +472,7 @@ END%%
 
 %%ANKI
 Basic
-What is the purpose of the `fgetc` function?
+What is the purpose of the `fgetc()` function?
 Back: To read a character from a stream.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754659255231-->
@@ -480,7 +480,7 @@ END%%
 
 %%ANKI
 Basic
-What is the purpose of the `fgets` function?
+What is the purpose of the `fgets()` function?
 Back: To read a string from a stream.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754659255235-->
@@ -488,7 +488,7 @@ END%%
 
 %%ANKI
 Basic
-Which C header includes the `fgets` function?
+Which C header includes the `fgets()` function?
 Back: `<stdio.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087268-->
@@ -496,14 +496,14 @@ END%%
 
 %%ANKI
 Cloze
-{1:`fgetc`} is to {2:characters} as {2:`fgets`} is to {1:strings}.
+{1:`fgetc()`} is to {2:characters} as {2:`fgets()`} is to {1:strings}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754659255238-->
 END%%
 
 %%ANKI
 Cloze
-{1:`fgets`} is to {2:text} as {2:`fread`} is to {1:binary}.
+{1:`fgets()`} is to {2:text} as {2:`fread()`} is to {1:binary}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754660206812-->
 END%%
@@ -518,7 +518,7 @@ int fscanf(FILE *restrict stream, const char *restrict format, ...);
 
 %%ANKI
 Basic
-What three optional parts make up a `fscanf` argument?
+What three optional parts make up a `fscanf()` argument?
 Back: Assignment suppression, width, and length.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087271-->
@@ -526,7 +526,7 @@ END%%
 
 %%ANKI
 Basic
-What is the purpose of the assignment suppression field in an `fscanf` argument?
+What is the purpose of the assignment suppression field in an `fscanf()` argument?
 Back: It reads in the substring without assigning to any variable.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087275-->
@@ -534,7 +534,7 @@ END%%
 
 %%ANKI
 Basic
-How is `fscanf`'s assignment suppression field denoted?
+How is `fscanf()`'s assignment suppression field denoted?
 Back: As `*`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087279-->
@@ -542,7 +542,7 @@ END%%
 
 %%ANKI
 Basic
-How is `*` interpreted in an `fscanf` argument?
+How is `*` interpreted in an `fscanf()` argument?
 Back: As assignment suppression.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087283-->
@@ -550,7 +550,7 @@ END%%
 
 %%ANKI
 Basic
-What is the purpose of the width field in a `fscanf` argument?
+What is the purpose of the width field in a `fscanf()` argument?
 Back: It specifies a maximum number of characters to input.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087287-->
@@ -558,30 +558,30 @@ END%%
 
 %%ANKI
 Basic
-What is the purpose of the length field in a `fscanf` argument?
-Back: It specifies the size of the `fscanf` specifier before default promotion.
+What is the purpose of the length field in a `fscanf()` argument?
+Back: It specifies the size of the `fscanf()` specifier before default promotion.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087292-->
 END%%
 
 %%ANKI
 Basic
-Which standard function is most commonly used for reading formatted text?
-Back: `fscanf`
+Which standard library function is most commonly used for reading formatted text?
+Back: `fscanf()`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087296-->
 END%%
 
 %%ANKI
 Cloze
-{`fscanf`} is to formatted as {`fgets`} is to unformatted.
+{`fscanf()`} is to formatted as {`fgets()`} is to unformatted.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087301-->
 END%%
 
 %%ANKI
 Basic
-Which C header includes the `fscanf` function?
+Which C header includes the `fscanf()` function?
 Back: `<stdio.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087306-->
@@ -601,7 +601,7 @@ size_t fwrite(const void *restrict ptr,
 
 %%ANKI
 Basic
-Which standard function is most commonly used for writing raw data?
+Which standard library function is most commonly used for writing binary data?
 Back: `fwrite()`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1754660206815-->
@@ -642,23 +642,23 @@ int fputs(const char *restrict s, FILE *restrict stream);
 
 %%ANKI
 Basic
-Which standard function is most commonly used for writing unformatted characters?
-Back: `fputc`
+Which standard library function is most commonly used for writing unformatted characters?
+Back: `fputc()`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754659255242-->
 END%%
 
 %%ANKI
 Basic
-Which standard function is most commonly used for writing unformatted strings?
-Back: `fputs`
+Which standard library function is most commonly used for writing unformatted strings?
+Back: `fputs()`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087311-->
 END%%
 
 %%ANKI
 Basic
-What is the purpose of the `fputc` function?
+What is the purpose of the `fputc()` function?
 Back: To write a character to a stream.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754659255245-->
@@ -666,7 +666,7 @@ END%%
 
 %%ANKI
 Basic
-What is the purpose of the `fputs` function?
+What is the purpose of the `fputs()` function?
 Back: To write a string to a stream (excluding the `\0` character).
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087317-->
@@ -674,7 +674,7 @@ END%%
 
 %%ANKI
 Basic
-Which character(s) are not written by `fputs`?
+Which character(s) are not written by `fputs()`?
 Back: The trailing `\0` character of a NUL-terminated string.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087322-->
@@ -682,21 +682,21 @@ END%%
 
 %%ANKI
 Cloze
-{1:`fputc`} is to {2:characters} as {2:`fputs`} is to {1:strings}.
+{1:`fputc()`} is to {2:characters} as {2:`fputs()`} is to {1:strings}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754659255248-->
 END%%
 
 %%ANKI
 Cloze
-{`fputs`} is to output as {`fgets`} is to input.
+{`fputs()`} is to output as {`fgets()`} is to input.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087328-->
 END%%
 
 %%ANKI
 Basic
-Which C header includes the `fputs` function?
+Which C header includes the `fputs()` function?
 Back: `<stdio.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087333-->
@@ -704,7 +704,7 @@ END%%
 
 %%ANKI
 Cloze
-{1:`fwrite`} is to {2:binary} as {2:`fputs`} is to {1:text}.
+{1:`fwrite()`} is to {2:binary} as {2:`fputs()`} is to {1:text}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754660206822-->
 END%%
@@ -719,7 +719,7 @@ int fprintf(FILE *restrict stream, const char *restrict format, ...);
 
 %%ANKI
 Basic
-What four optional parts make up a `fprintf` argument?
+What four optional parts make up a `fprintf()` argument?
 Back: Flags, width, precision, and length.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1708974221761-->
@@ -727,7 +727,7 @@ END%%
 
 %%ANKI
 Basic
-What is the purpose of the width field in a `fprintf` argument?
+What is the purpose of the width field in a `fprintf()` argument?
 Back: It specifies a minimum number of characters to ouput.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732285301746-->
@@ -735,7 +735,7 @@ END%%
 
 %%ANKI
 Basic
-What is the purpose of the precision field in a `fprintf` argument?
+What is the purpose of the precision field in a `fprintf()` argument?
 Back: It specifies the maximum limit on the output, depending on the argument type.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732285301754-->
@@ -743,15 +743,15 @@ END%%
 
 %%ANKI
 Basic
-What is the purpose of the length field in a `fprintf` argument?
-Back: It specifies the size of the `fprintf` specifier before default promotion.
+What is the purpose of the length field in a `fprintf()` argument?
+Back: It specifies the size of the `fprintf()` specifier before default promotion.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732285301762-->
 END%%
 
 %%ANKI
 Basic
-Which C header includes the`fprintf` function?
+Which C header includes the`fprintf()` function?
 Back: `<stdio.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1708384441467-->
@@ -773,7 +773,7 @@ END%%
 
 %%ANKI
 Basic
-What character do `fprintf` format specifiers start with?
+What character do `fprintf()` format specifiers start with?
 Back: `%`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1707852083029-->
@@ -781,7 +781,7 @@ END%%
 
 %%ANKI
 Basic
-Why is `fprintf` named the way it is?
+Why is `fprintf()` named the way it is?
 Back: It stands for **f**ile **print f**ormatted.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1707852083037-->
@@ -789,7 +789,7 @@ END%%
 
 %%ANKI
 Basic
-Which C header specifies `fprintf` macros for fixed-width integral types?
+Which C header specifies `fprintf()` macros for fixed-width integral types?
 Back: `<inttypes.h>`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708454462788-->
@@ -797,7 +797,7 @@ END%%
 
 %%ANKI
 Basic
-What prefix do `fprintf` macros from `<inttypes.h>` share?
+What prefix do `fprintf()` macros from `<inttypes.h>` share?
 Back: `PRI`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708454584568-->
@@ -805,15 +805,15 @@ END%%
 
 %%ANKI
 Basic
-`printf` is a specific instance of what more general function?
-Back: `fprintf`
+`printf()` is a specific instance of what more general function?
+Back: `fprintf()`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1754577087338-->
 END%%
 
 %%ANKI
 Basic
-What specialization does `printf` perform over `fprintf`?
+What specialization does `printf()` perform over `fprintf()`?
 Back: It assumes stream `stdout`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1754577087343-->
@@ -821,22 +821,22 @@ END%%
 
 %%ANKI
 Basic
-Which standard function is most commonly used for writing formatted text?
-Back: `fprintf`
+Which standard library function is most commonly used for writing formatted text?
+Back: `fprintf()`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087347-->
 END%%
 
 %%ANKI
 Cloze
-{`fprintf`} is to output as {`fscanf`} is to input.
+{`fprintf()`} is to output as {`fscanf()`} is to input.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087351-->
 END%%
 
 %%ANKI
 Cloze
-{`fprintf`} is to formatted as {`fputs`} is to unformatted.
+{`fprintf()`} is to formatted as {`fputs()`} is to unformatted.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1754577087356-->
 END%%

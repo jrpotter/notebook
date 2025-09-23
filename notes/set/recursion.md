@@ -521,7 +521,7 @@ END%%
 %%ANKI
 Basic
 The transfinite recursion theorem assumes existence of what kind of ordering?
-Back: A well order.
+Back: A strict well ordering.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1754246610270-->
 END%%
@@ -579,7 +579,7 @@ END%%
 %%ANKI
 Basic
 Let $<$ be a well ordering on $A$. What does it mean for $F$ to be $\gamma$-constructed?
-Back: $\gamma(F \restriction \mathop{\text{seg}_<}t, F(t))$ is true for all $t \in \mathop{\text{dom}}F$.
+Back: $\gamma(F \restriction \mathop{\text{seg}_<}t, F(t))$ is true for all $t \in A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1754246929403-->
 END%%

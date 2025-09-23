@@ -168,7 +168,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ is a variable and $uAv$ yields $uwv$. What must exist in the CFG?
+Suppose $A$ is a variable and $uAv$ *yields* $uwv$. What must exist in the CFG?
 Back: A rule stating $A \rightarrow w$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1746370634254-->
@@ -176,7 +176,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ is a variable and $uAv$ derives $uwv$. What must exist in the CFG?
+Suppose $A$ is a variable and $uAv$ *derives* $uwv$. What must exist in the CFG?
 Back: A sequence of rules that takes in $A$ and produces a $w$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1746501627359-->

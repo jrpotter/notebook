@@ -208,7 +208,7 @@ END%%
 
 %%ANKI
 Basic
-What does the number of physical address spaces correspond to?
+How many physical address spaces are found on a machine?
 Back: There is just the one.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754428249595-->
@@ -272,14 +272,6 @@ How do the size of virtual pages and physical pages relate?
 Back: They must be the same size.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754189294447-->
-END%%
-
-%%ANKI
-Basic
-What can be said about the size of a page in virtual memory?
-Back: It must be a power of $2$.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1754189294450-->
 END%%
 
 %%ANKI
@@ -633,7 +625,7 @@ END%%
 %%ANKI
 Basic
 With respect to virtual memory, what does it mean to swap a page out?
-Back: A page was moved from pysical memory to disk.
+Back: A page was moved from physical memory to disk.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754320112965-->
 END%%

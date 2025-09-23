@@ -161,7 +161,7 @@ END%%
 %%ANKI
 Basic
 When is an object with static storage duration initialized?
-Back: Prior to program startup (before `main` is called).
+Back: Prior to program startup (before `main()` is called).
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733060664914-->
 END%%

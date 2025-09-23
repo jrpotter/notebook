@@ -351,7 +351,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $s$ is a step function with domain $[a, b]$. This implies existence of what?
+Suppose $s$ is a step function with domain $[a, b]$. By definition, what must exist?
 Back: A partition of $[a, b]$ such that $s$ is constant on each open subinterval.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1732627945421-->

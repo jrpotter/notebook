@@ -118,7 +118,7 @@ END%%
 %%ANKI
 Basic
 Let $x < 0$ and $y = 0$. What is $\mathop{\text{atan2}}(y, x)$ defined to be?
-Back: $\arctan{(y / x)} + \pi$
+Back: $\pi$
 Reference: _Wikipedia_. “atan2.” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Atan2](https://en.wikipedia.org/w/index.php?title=Atan2&oldid=1304064532).
 <!--ID: 1755142984759-->
 END%%

@@ -308,7 +308,7 @@ END%%
 %%ANKI
 Basic
 Suppose thread $T_1$ runs an atomic operation on a shared object. What guarantee is provided to thread $T_2$ accessing that object?
-Back: $T_2$ sees the state of the object before or after the atomic operation completes.
+Back: $T_2$ sees the state of the object before the operation begins or after the operation ends.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1758034772916-->
 END%%
@@ -403,7 +403,7 @@ END%%
 %%ANKI
 Basic
 Test-and-set is a member of what class of atomic instructions?
-Back: The read-write-modify instructions.
+Back: The read-modify-write instructions.
 Reference: _Wikipedia_. “Read–modify–write.” March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write](https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write&oldid=1281913553).
 <!--ID: 1758122014205-->
 END%%
@@ -471,7 +471,7 @@ END%%
 %%ANKI
 Basic
 Fetch-and-add is a member of what class of atomic instructions?
-Back: The read-write-modify instructions.
+Back: The read-modify-write instructions.
 Reference: _Wikipedia_. “Read–modify–write.” March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write](https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write&oldid=1281913553).
 <!--ID: 1758122014208-->
 END%%
@@ -544,7 +544,7 @@ END%%
 %%ANKI
 Basic
 Compare-and-swap is a member of what class of atomic instructions?
-Back: The read-write-modify instructions.
+Back: The read-modify-write instructions.
 Reference: _Wikipedia_. “Read–modify–write.” March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write](https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write&oldid=1281913553).
 <!--ID: 1758122014211-->
 END%%

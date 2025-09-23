@@ -272,7 +272,7 @@ END%%
 
 %%ANKI
 Basic
-An odd function exhibits what kind of symmetric?
+An odd function exhibits what kind of symmetry?
 Back: Symmetry about the origin.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1746023817967-->

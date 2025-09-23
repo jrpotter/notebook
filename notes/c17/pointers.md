@@ -220,7 +220,9 @@ END%%
 Basic
 How is the `return` statement likely translated to x86-64?
 ```c
-int func(int *E) { return E[0]; }
+int func(int *E) {
+  return E[0];
+}
 ```
 Back:
 ```asm
@@ -235,7 +237,9 @@ END%%
 Basic
 How is the `return` statement likely translated to x86-64?
 ```c
-int func(int *E, int i) { return E[i]; }
+int func(int *E, int i) {
+  return E[i];
+}
 ```
 Back:
 ```asm
@@ -250,7 +254,9 @@ END%%
 Basic
 How is the `return` statement likely translated to x86-64?
 ```c
-int* func(int *E) { return &E[2]; }
+int* func(int *E) {
+  return &E[2];
+}
 ```
 Back:
 ```asm

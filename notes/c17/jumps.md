@@ -275,7 +275,7 @@ END%%
 
 %%ANKI
 Basic
-Is the following switch statement valid? Why or why not?
+Is the following conditional valid? Why or why not?
 ```c
 if (setjmp(buf) < 5) {
   ...
@@ -340,7 +340,7 @@ END%%
 
 %%ANKI
 Basic
-Why is an argument of `0` to `longjmp` replaced automatically replaced with a `1`?
+Why is an argument of `0` to `longjmp` automatically replaced with a `1`?
 Back: To ensure `setjmp` only returns `0` during normal control flow.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1753897177687-->

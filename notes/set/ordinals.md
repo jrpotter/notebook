@@ -659,7 +659,7 @@ END%%
 
 %%ANKI
 Basic
-How is the Burali-Forti theorem proven?
+Prove the Burali-Forti theorem.
 Back: Let $A$ be a set containing every ordinal. Then $A$ is an ordinal. Then $A \in A$, a contradiction.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1757849086354-->

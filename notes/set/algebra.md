@@ -260,14 +260,6 @@ END%%
 
 %%ANKI
 Basic
-What is the range of $H$ in $\bigtimes_{i \in I} H(i)$?
-Back: Some superset of $\{H(i) \mid i \in I\}$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720964209672-->
-END%%
-
-%%ANKI
-Basic
 Let $I$ be an index set and $H$ a function such that $I \subseteq \mathop{\text{dom}}H$. How is $\bigtimes_{i \in I} H(i)$ defined?
 Back: $\bigtimes_{i \in I} H(i) = \{ f \mid f \text{ is a function with domain } I \text { and } \forall i \in I, f(i) \in H(i) \}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

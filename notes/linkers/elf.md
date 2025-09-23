@@ -468,7 +468,7 @@ END%%
 
 %%ANKI
 Cloze
-{Block started by symbol} is the actual acronym for Bryant et al.'s mneumonic {better save space}.
+{Block started by symbol} is the actual acronym corresponding to Bryant et al.'s mneumonic {better save space}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1735155720954-->
 END%%

@@ -112,7 +112,7 @@ END%%
 
 %%ANKI
 Basic
-What is the identity element of $\cdot$ (multiplication)?
+What is the multiplicative identity?
 Back: $1$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1708366788597-->

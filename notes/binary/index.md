@@ -263,7 +263,7 @@ END%%
 
 %%ANKI
 Basic
-What do network and host byte order refer?
+What do terms "network byte order" and "host byte order" refer to?
 Back: Endianness.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754343624463-->

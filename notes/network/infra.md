@@ -576,14 +576,6 @@ Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipe
 END%%
 
 %%ANKI
-Cloze
-{1:Routers} are to the {2:network} layer whereas {2:switches} are to the {1:link} layer.
-Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
-Tags: network::osi
-<!--ID: 1754828653069-->
-END%%
-
-%%ANKI
 Basic
 What OSI layer(s) is a switch typically associated with?
 Back: The L2 (link) layer.

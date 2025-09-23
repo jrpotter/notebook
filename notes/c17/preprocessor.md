@@ -451,7 +451,7 @@ END%%
 %%ANKI
 Basic
 How is it determined whether `<stdatomic.h>` is available on a platform?
-Back: Checking whether or not `__STDC_NO_ATOMICS__` is defined as `1`.
+Back: By checking that `__STDC_NO_ATOMICS__` is not defined as `1`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1758024835615-->
 END%%
@@ -459,7 +459,7 @@ END%%
 %%ANKI
 Basic
 How is it determined whether the `_Atomic` qualifier is available on a platform?
-Back: Checking whether or not `__STDC_NO_ATOMICS__` is defined as `1`.
+Back: By checking that `__STDC_NO_ATOMICS__` is not defined as `1`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1758024835618-->
 END%%
@@ -475,7 +475,7 @@ END%%
 %%ANKI
 Basic
 How is it determined whether `<complex.h>` is available on a platform?
-Back: Checking whether or not `__STDC_NO_COMPLEX__` is defined as `1`.
+Back: By checking that `__STDC_NO_COMPLEX__` is not defined as `1`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1758024835624-->
 END%%
@@ -491,7 +491,7 @@ END%%
 %%ANKI
 Basic
 How is it determined whether `<threads.h>` is available on a platform?
-Back: Checking whether or not `__STDC_NO_THREADS__` is defined as `1`.
+Back: By checking that `__STDC_NO_THREADS__` is not defined as `1`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1758024835630-->
 END%%

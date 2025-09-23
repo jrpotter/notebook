@@ -377,7 +377,7 @@ END%%
 %%ANKI
 Basic
 What C function is used to create a socket?
-Back: `socket`
+Back: `socket()`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754342300803-->
 END%%
