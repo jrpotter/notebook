@@ -12,6 +12,8 @@ tags:
 
 The `_Atomic(...)` specifier is used to declare an atomic object. Operations on atomic objects are synchronized across threads. Additionally, if the atomic type is lock-free, then the corresponding operations are uninterruptible.
 
+`_Atomic` cannot be applied to array types.
+
 %%ANKI
 Basic
 In what two forms can the `_Atomic` keyword be specified in?
@@ -66,6 +68,14 @@ What additional guarantee does the lock-free property on atomic objects provide?
 Back: Operations on the object are uninterruptible.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1758807032795-->
+END%%
+
+%%ANKI
+Basic
+Which types cannot be declared with `_Atomic`?
+Back: Array types.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759031903268-->
 END%%
 
 ## Test-and-set

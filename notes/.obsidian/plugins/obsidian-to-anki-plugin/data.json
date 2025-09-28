@@ -653,7 +653,7 @@
     "c17/macros.md": "611c852cacec48fec16b5545041e4242",
     "c17/linkage.md": "3ecde4ae340bc79b4d55f38e82ab9d41",
     "c17/index.md": "ef26dc26d894ef153249f001a53633d7",
-    "c17/declarations.md": "a2743dbc09b82c1e66499fd2a9587bf3",
+    "c17/declarations.md": "585bc0666c4341d2feb6741a82b38556",
     "c17/alignment.md": "69fcb21e99c5ddc866353b51756367aa",
     "binary/integer.md": "f02c67fba6237aceee78ca6b35660b91",
     "binary/index.md": "1af10e10c1441641a762167fb7fd2f68",
@@ -1511,7 +1511,7 @@
     "memory/allocators.md": "0af79ee5940fc8c7370fa857a4174bd1",
     "_journal/2025-08-25.md": "39277ad1387cc7131a876bf3aee43546",
     "_journal/2025-08/2025-08-24.md": "5a931fc3b3d3aa2dcd45d9f574efccab",
-    "set/ordinals.md": "3d7b083806b7b20ba30424555d31bdc2",
+    "set/ordinals.md": "c5f3ce055760e3beed767bd7a8706606",
     "set/order/well.md": "fa1e390cb0c004adab1d4e3f9e1d2365",
     "set/order/total.md": "85e101403ded9fcbc539a953d9082c79",
     "set/order/equiv-rel.md": "a6155aa366227b4212049f6a02787e49",
@@ -1546,7 +1546,7 @@
     "c17/atomics.md": "f928520b8875613a34cf0a53d9a66ffe",
     "_journal/2025-09-08.md": "32da414c101d9fa6b3a10334663d410c",
     "_journal/2025-09/2025-09-07.md": "a80c339cf69283f2a9f03ae723cd9a74",
-    "c17/runtime.md": "3536494b72f4eab8e451f2f128f2ec62",
+    "c17/runtime.md": "5bf171b195a9b8ddb545d17940cea3f8",
     "_journal/2025-09-09.md": "39158dc1348d41a3c10865131f41a57a",
     "_journal/2025-09/2025-09-08.md": "32da414c101d9fa6b3a10334663d410c",
     "_journal/2025-09-10.md": "1765e0fd14b091b505bf7d8913a2273a",
@@ -1562,7 +1562,7 @@
     "_journal/2025-09/2025-09-14.md": "24e6e325fd636f607c9b1e505a3433e4",
     "_journal/2025-09-16.md": "52ccda23715c16ad7695844367c44548",
     "_journal/2025-09/2025-09-15.md": "8118d284f3e070c2855dfcd83ca8283e",
-    "c17/threads.md": "f81a7dfa325299ceaf073adf6b0a7fff",
+    "c17/threads.md": "13039378991a097a8493c36fbf772125",
     "algorithms/non-blocking.md": "c2ae6e93c493cf8590f8c76b1be391b3",
     "_journal/2025-09-17.md": "fa7f087d4928b48744ba5065b6de95c6",
     "_journal/2025-09/2025-09-16.md": "62bb04cbfc5078941fb18127fde05374",
@@ -1577,7 +1577,10 @@
     "_journal/2025-09/2025-09-23.md": "2a06ee9dc14e98fc17c7d9c9c6b27237",
     "_journal/2025-09-25.md": "cf2402a30aca1d4bdbe4d9c9d4a75ad0",
     "_journal/2025-09/2025-09-24.md": "7da55c3ee42e529bdb81a74b0c9e3d8d",
-    "c17/types/atomics.md": "a5b7e4497f46561ea910e1faaa99c49f"
+    "c17/types/atomics.md": "ec95bb07bb48b43de70095ef10e8c412",
+    "_journal/2025-09-27.md": "f3cb3dd8960734b80de5137e32a38b4f",
+    "_journal/2025-09/2025-09-26.md": "07cda6d284926b9e29d8b29316aae105",
+    "_journal/2025-09/2025-09-25.md": "cf2402a30aca1d4bdbe4d9c9d4a75ad0"
   },
   "fields_dict": {
     "Basic": [

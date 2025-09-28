@@ -658,6 +658,30 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1758889573345-->
 END%%
 
+%%ANKI
+Basic
+What is the smallest ordinal number?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759031903257-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest ordinal number that is not the successor of another?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759031903262-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest nonzero ordinal number that is not the successor of another?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759031903265-->
+END%%
+
 ### Burali-Forti Theorem
 
 There is no set to which every ordinal number belongs.
