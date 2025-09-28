@@ -44,7 +44,7 @@ END%%
 
 ## Wait-freedom
 
-An algorithm is **wait-free** if every operation has a bound on the number of steps the algorithm will take before the operation completes. In other words, the algorithm guarantees per-thread progress.
+An algorithm is **wait-free** if it guarantees per-thread progress. In other words, every thread is guaranteed to make progress over an arbitrary period of time, regardless of timing or ordering of thread execution.
 
 %%ANKI
 Basic
@@ -89,17 +89,227 @@ Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https:
 <!--ID: 1758122049272-->
 END%%
 
+%%ANKI
+Basic
+*Why* can't a wait-free algorithm livelock?
+Back: Because we guarantee each thread eventually makes progress.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712675-->
+END%%
+
+%%ANKI
+Basic
+*Why* can't a wait-free algorithm deadlock?
+Back: Because we guarantee each thread eventually makes progress.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712685-->
+END%%
+
 ## Lock-freedom
 
-TODO
+An algorithm is **lock-free** if it guarantees system-wide progress. In other words, at least one thread is guaranteed to make progress over an arbitrary period of time.
+
+%%ANKI
+Basic
+An algorithm is considered lock-free when it satisfies what condition(s)?
+Back: When the algorithm guarantees system-level progress.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712688-->
+END%%
+
+%%ANKI
+Basic
+Why is the term "lock-free" appropriately named?
+Back: It implies that there is no possibility of blocking on locks.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712691-->
+END%%
+
+%%ANKI
+Basic
+Which non-blocking guarantee is summarized in the following?
+
+> "We can finish our operation in a bounded number of steps no matter what we all do."
+
+Back: Lock-freedom.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712694-->
+END%%
+
+%%ANKI
+Basic
+Which non-blocking guarantee ensures system-wide progress even in the face of contention?
+Back: Lock-freedom.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712697-->
+END%%
+
+%%ANKI
+Basic
+Which of wait-freedom or lock-freedom is more general?
+Back: Lock-freedom.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712700-->
+END%%
+
+%%ANKI
+Basic
+Are all wait-free algorithms also lock-free?
+Back: Yes.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712704-->
+END%%
+
+%%ANKI
+Basic
+Are all lock-free algorithms also wait-free?
+Back: No.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712709-->
+END%%
+
+%%ANKI
+Basic
+Suppose two threads contend for a lock. Why is this not lock-free?
+Back: Suspension of the thread holding the lock means the other will block.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712714-->
+END%%
+
+%%ANKI
+Basic
+Which non-blocking guarantee sits in the middle of the hierarchy?
+Back: Lock-freedom.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712718-->
+END%%
+
+%%ANKI
+Basic
+*Why* must a wait-free algorithm be lock-free?
+Back: If we can guarantee per-thread progress, then we can guarantee system-wide progress.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712723-->
+END%%
+
+%%ANKI
+Basic
+*Why* can't a lock-free algorithm livelock?
+Back: Because we guarantee at least one thread eventually makes progress.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712727-->
+END%%
+
+%%ANKI
+Basic
+*Why* can't a lock-free algorithm deadlock?
+Back: Because we guarantee at least one thread eventually makes progress.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712730-->
+END%%
 
 ## Obstruction-freedom
 
-TODO
+An algorithm is **obstruction-free** if it guarantees thread-level progress if said thread can run in isolation. In other words, so long as other threads do not interfere, any one thread can make progress over an arbitrary period of time.
 
-## Address-freedom
+%%ANKI
+Basic
+An algorithm is considered obstruction-free when it satisfies what condition(s)?
+Back: When a thread can guarantee progress if run in isolation.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712734-->
+END%%
 
-TODO
+%%ANKI
+Basic
+Why is the term "obstruction-free" appropriately named?
+Back: Threads can make progress if other threads do not obstruct it.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712738-->
+END%%
+
+%%ANKI
+Basic
+Which non-blocking guarantee is summarized in the following?
+
+> "I can finish my operation in a bounded number of steps if others leave me alone."
+
+Back: Obstruction-freedom.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712741-->
+END%%
+
+%%ANKI
+Basic
+Which of wait-freedom or obstruction-freedom is more general?
+Back: Obstruction-freedom.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712745-->
+END%%
+
+%%ANKI
+Basic
+Which of obstruction-freedom or lock-freedom is more general?
+Back: Obstruction-freedom.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712748-->
+END%%
+
+%%ANKI
+Basic
+Are all lock-free algorithms also obstruction-free?
+Back: Yes.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712752-->
+END%%
+
+%%ANKI
+Basic
+Suppose two threads contend for a lock. Why is this not obstruction-free?
+Back: Suspension of the thread holding the lock means the other will block.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712755-->
+END%%
+
+%%ANKI
+Basic
+Which non-blocking guarantee is the most general?
+Back: Obstruction-freedom.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712758-->
+END%%
+
+%%ANKI
+Basic
+*Why* must a lock-free algorithm be obstruction-free?
+Back: If we can guarantee progress with contention, then we can guarantee progress without contention.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712761-->
+END%%
+
+%%ANKI
+Basic
+*Why* can't an obstruction-free algorithm livelock?
+Back: N/A. It can.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712765-->
+END%%
+
+%%ANKI
+Basic
+*Why* can't an obstruction-free algorithm deadlock?
+Back: Because any thread should be able to make progress in isolation.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712768-->
+END%%
+
+%%ANKI
+Basic
+What is the weakest non-blocking guarantee?
+Back: Obstruction-freedom.
+Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+<!--ID: 1758715712771-->
+END%%
 
 ## Bibliography
 

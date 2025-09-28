@@ -27,7 +27,7 @@ Common real types are prioritized in the following order:
 3. `float`
 4. If both operands have the same signedness, the higher ranked type.
 5. If the unsigned operand has rank $\geq$ than that of the other, the unsigned type.
-6. If the signed operand's includes that of the other, the signed type.
+6. If the signed operand type can accommodate that of the other, the signed type.
 7. The unsigned integer type corresponding to that of the signed integer type.
 
 %%ANKI

@@ -618,6 +618,46 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1757849086343-->
 END%%
 
+%%ANKI
+Basic
+Let $\langle A, < \rangle$ have ordinal $\alpha$. Let $t \in A$ and $\langle \mathop{\text{seg}}t, <^\circ \rangle$ have ordinal $\beta$. How do $\alpha$ and $\beta$ relate?
+Back: $\beta \in \alpha$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1758889573323-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle A, < \rangle$ have ordinal $\alpha$. Let $t \in A$ and $\langle \mathop{\text{seg}}t, <^\circ \rangle$ have ordinal $\beta$. *Why* is $\beta \in \alpha$?
+Back: The function used to construct $\beta$ is a subset of that used to construct $\alpha$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1758889573332-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle A, < \rangle$ have ordinal $\alpha$ and $B \subset A$ s.t $\langle B, <^\circ \rangle$ has ordinal $\beta$. How do $\alpha$ and $\beta$ relate?
+Back: $\beta \in \alpha$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1758889573336-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle A, < \rangle$ have ordinal $\alpha$ and $B \subseteq A$ s.t $\langle B, <^\circ \rangle$ has ordinal $\beta$. How do $\alpha$ and $\beta$ relate?
+Back: $\beta \underline{\in} \alpha$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1758889573341-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle A, < \rangle$ have ordinal $\alpha$ and $B \subset A$ s.t $\langle B, <^\circ \rangle$ has ordinal $\beta$. We can show $\beta \in \alpha$ by proving existence of what isomorphism?
+Back: $\langle \beta, \in_\beta \rangle \cong \langle \mathop{\text{seg}} t, <^\circ \rangle$ for some $t \in A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1758889573345-->
+END%%
+
 ### Burali-Forti Theorem
 
 There is no set to which every ordinal number belongs.

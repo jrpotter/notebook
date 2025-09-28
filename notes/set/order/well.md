@@ -198,7 +198,13 @@ END%%
 
 ## Trichotomy
 
-For any two well-ordered structures, either they are [[structures#Isomorphisms|isomorphic]] or one is isomorphic to an initial segment of the other.
+For any two well-ordered structures, either they are [[structures#Isomorphisms|isomorphic]] or one is isomorphic to an initial segment of the other. More precisely, let $<_A$ and $<_B$ be well orderings on $A$ and $B$ respectively. Then exactly one of the following holds:
+
+1. $\langle A, <_A \rangle \cong \langle B, <_B \rangle$,
+2. $\langle A, <_A \rangle \cong \langle \mathop{\text{seg}}b, <_B^\circ \rangle$ for some $b \in B$,
+3. $\langle \mathop{\text{seg}}a, <_A^\circ \rangle \cong \langle B, <_B \rangle$ for some $a \in A$.
+
+Note the $\degree$ symbol is used to denote an [[set/order/index#Induced Orderings|induced ordering]].
 
 %%ANKI
 Basic
@@ -224,6 +230,25 @@ How is the trichotomy law of natural numbers generalized?
 Back: As the "trichotomy law" of well-ordered structures.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1757271691252-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle A, <_A \rangle$ and $\langle B, <_B \rangle$ be well orderings. What possible options does well ordering trichotomy present?
+Back:
+1. $\langle A, <_A \rangle \cong \langle B, <_B \rangle$,
+2. $\langle A, <_A \rangle \cong \langle \mathop{\text{seg}} b, <_B^\circ \rangle$ for some $b \in B$,
+3. $\langle \mathop{\text{seg}} a, <_A^\circ \rangle \cong \langle B, <_B \rangle$ for some $a \in A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1758889573350-->
+END%%
+
+%%ANKI
+Basic
+How many of the possible options presented in well order trichotomy can simultaneously hold true?
+Back: Exactly one option must hold true.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1758889573353-->
 END%%
 
 ## By Epsilon
