@@ -178,7 +178,7 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1753826427183-->
 END%%
 
-## Synchronization
+## Contention
 
 **Contention** refers to performance degradation because two threads access shared resources. **Starvation** refers to situations in which threads are unable to access shared resources and therefore are unable to make progress.
 
@@ -289,273 +289,15 @@ Reference: _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https:
 <!--ID: 1758122014194-->
 END%%
 
-## Read-modify-write
+## Storage
 
-An operation is said to be **atomic** if it cannot be interrupted.
+### Thread-Local Storage
 
-The **read-modify-write** (RMW) instructions are a class of atomic instructions that both read a memory location and write a new value into it, either with a new value or some function of the old.
-
-If a thread were to run an atomic operation, other threads are only able to see the state before or after the operation was run. That is, another thread cannot see any intermediate state of an atomic operation.
+**Thread-Local Storage** (TLS) is a memory management method that uses static or global memory local to a thread.
 
 %%ANKI
 Basic
-What is an atomic operation?
-Back: An operation that cannot be interrupted.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1758034772908-->
-END%%
-
-%%ANKI
-Basic
-Suppose thread $T_1$ runs an atomic operation on a shared object. What guarantee is provided to thread $T_2$ accessing that object?
-Back: $T_2$ sees the state of the object before the operation begins or after the operation ends.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1758034772916-->
-END%%
-
-%%ANKI
-Basic
-With respect to atomic instructions, what is RMW an acronym for?
-Back: **R**ead-**m**odify-**w**rite.
-Reference: _Wikipedia_. “Read–modify–write.” March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write](https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write&oldid=1281913553).
-<!--ID: 1758122014197-->
-END%%
-
-%%ANKI
-Basic
-What distinguishes the class of read-modify-write instructions?
-Back: They atomically read from a memory location and (potentially) write a new value in its place.
-Reference: _Wikipedia_. “Read–modify–write.” March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write](https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write&oldid=1281913553).
-<!--ID: 1758122014200-->
-END%%
-
-%%ANKI
-Basic
-What are the three most ubiquitous read-modify-write instructions?
-Back:
-1. Test-and-set
-2. Fetch-and-add
-3. Compare-and-swap
-Reference: _Wikipedia_. “Read–modify–write.” March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write](https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write&oldid=1281913553).
-<!--ID: 1758122014202-->
-END%%
-
-### Test-and-set
-
-The **test-and-set** (TAS) instruction writes a flag value to a memory location and returns the old value as a single atomic operation. Abstracting away suitable atomicity constructs, the following pseudocode demonstrates how this instruction typically works:
-
-```c
-int test_and_set(int *ptr, int new) {
-  int old = *ptr;
-  *ptr = new;
-  return old;
-}
-```
-
-%%ANKI
-Basic
-What does the test-and-set instruction do atomically?
-Back: Writes a value to a memory location and returns the old value.
-Reference: _Wikipedia_. “Test-and-set.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Test-and-set](https://en.wikipedia.org/w/index.php?title=Test-and-set&oldid=1306902344).
-<!--ID: 1758034772919-->
-END%%
-
-%%ANKI
-Cloze
-The test-and-set instruction can be broken down into the following logical steps:
-1. {Store the old value at $M$},
-2. {Set the new value at $M$},
-3. {Return the old value}.
-Reference: _Wikipedia_. “Test-and-set.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Test-and-set](https://en.wikipedia.org/w/index.php?title=Test-and-set&oldid=1306902344).
-<!--ID: 1758034772922-->
-END%%
-
-%%ANKI
-Basic
-What atomic instruction does the following pseudocode emulate?
-```c
-int _____(int *ptr, int new) {
-  int old = *ptr;
-  *ptr = new;
-  return old;
-}
-```
-Back: The test-and-set instruction.
-Reference: _Wikipedia_. “Test-and-set.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Test-and-set](https://en.wikipedia.org/w/index.php?title=Test-and-set&oldid=1306902344).
-<!--ID: 1758034772924-->
-END%%
-
-%%ANKI
-Cloze
-The {test}-and-{set} instruction is a well-known atomic instruction.
-Reference: _Wikipedia_. “Test-and-set.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Test-and-set](https://en.wikipedia.org/w/index.php?title=Test-and-set&oldid=1306902344).
-<!--ID: 1758034772927-->
-END%%
-
-%%ANKI
-Basic
-With respect to atomic instructions, what is TAS an acronym for?
-Back: **T**est-**a**nd-**s**et.
-Reference: _Wikipedia_. “Test-and-set.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Test-and-set](https://en.wikipedia.org/w/index.php?title=Test-and-set&oldid=1306902344).
-<!--ID: 1758034772930-->
-END%%
-
-%%ANKI
-Basic
-Test-and-set is a member of what class of atomic instructions?
-Back: The read-modify-write instructions.
-Reference: _Wikipedia_. “Read–modify–write.” March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write](https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write&oldid=1281913553).
-<!--ID: 1758122014205-->
-END%%
-
-### Fetch-and-add
-
-The **fetch-and-add** (FAA) instruction atomically increments a value in a memory location and returns the old value. Abstracting away suitable atomicity constructs, the following pseudocode demonstrates how this instruction typically works:
-
-```c
-int fetch_and_add(int *ptr, int add) {
-  int old = *ptr;
-  *ptr += add;
-  return old;
-}
-```
-
-%%ANKI
-Basic
-What does the fetch-and-add instruction do atomically?
-Back: Increments a value in a memory location and returns the old value.
-Reference: _Wikipedia_. “Fetch-and-add.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Fetch-and-add](https://en.wikipedia.org/w/index.php?title=Fetch-and-add&oldid=1306889087).
-<!--ID: 1758034772932-->
-END%%
-
-%%ANKI
-Cloze
-The fetch-and-add instruction can be broken down into the following logical steps:
-1. {Store the old value at $M$},
-2. {Increment the value at $M$ by some number},
-3. {Return the old value}.
-Reference: _Wikipedia_. “Fetch-and-add.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Fetch-and-add](https://en.wikipedia.org/w/index.php?title=Fetch-and-add&oldid=1306889087).
-<!--ID: 1758034772935-->
-END%%
-
-%%ANKI
-Basic
-What atomic instruction does the following pseudocode emulate?
-```c
-int _____(int *ptr, int add) {
-  int old = *ptr;
-  *ptr += add;
-  return old;
-}
-```
-Back: The fetch-and-add instruction.
-Reference: _Wikipedia_. “Fetch-and-add.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Fetch-and-add](https://en.wikipedia.org/w/index.php?title=Fetch-and-add&oldid=1306889087).
-<!--ID: 1758034772938-->
-END%%
-
-%%ANKI
-Cloze
-The {fetch}-and-{add} instruction is a well-known atomic instruction.
-Reference: _Wikipedia_. “Fetch-and-add.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Fetch-and-add](https://en.wikipedia.org/w/index.php?title=Fetch-and-add&oldid=1306889087).
-<!--ID: 1758034772941-->
-END%%
-
-%%ANKI
-Basic
-With respect to atomic instructions, what is FAA an acronym for?
-Back: **F**etch-**a**nd-**a**dd.
-Reference: _Wikipedia_. “Fetch-and-add.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Fetch-and-add](https://en.wikipedia.org/w/index.php?title=Fetch-and-add&oldid=1306889087).
-<!--ID: 1758034772944-->
-END%%
-
-%%ANKI
-Basic
-Fetch-and-add is a member of what class of atomic instructions?
-Back: The read-modify-write instructions.
-Reference: _Wikipedia_. “Read–modify–write.” March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write](https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write&oldid=1281913553).
-<!--ID: 1758122014208-->
-END%%
-
-### Compare-and-swap
-
-The **compare-and-swap** (CAS) instruction atomically compares a value in memory with an old value, updating it if the values are equal. Abstracting away suitable atomicity constructs, the following pseudocode demonstrates how this instruction typically works:
-
-```c
-int compare_and_swap(int *ptr, int old, int new) {
-  int prev = *ptr;
-  if (prev == old) {
-    *ptr = new;
-  }
-  return prev;
-}
-```
-
-%%ANKI
-Basic
-What does the compare-and-swap instruction do atomically?
-Back: Compares a value in memory to an old value, updating it if the values are equal.
-Reference: _Wikipedia_. “Compare-and-swap.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Compare-and-swap](https://en.wikipedia.org/w/index.php?title=Compare-and-swap&oldid=1306886335).
-<!--ID: 1758034772947-->
-END%%
-
-%%ANKI
-Cloze
-The compare-and-swap instruction can be broken down into the following logical steps:
-1. {Store the old value at $M$},
-2. {Compare the value at $M$ with some number},
-3. {If equal, update the value at $M$ with a new number},
-4. {Return the old value}.
-Reference: _Wikipedia_. “Compare-and-swap.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Compare-and-swap](https://en.wikipedia.org/w/index.php?title=Compare-and-swap&oldid=1306886335).
-<!--ID: 1758034772949-->
-END%%
-
-%%ANKI
-Basic
-What atomic instruction does the following pseudocode emulate?
-```c
-int _____(int *ptr, int old, int new) {
-  int prev = *ptr;
-  if (prev == old) {
-    *ptr = new;
-  }
-  return prev;
-}
-```
-Back: The compare-and-swap instruction.
-Reference: _Wikipedia_. “Compare-and-swap.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Compare-and-swap](https://en.wikipedia.org/w/index.php?title=Compare-and-swap&oldid=1306886335).
-<!--ID: 1758034772953-->
-END%%
-
-%%ANKI
-Cloze
-The {compare}-and-{swap} instruction is a well-known atomic instruction.
-Reference: _Wikipedia_. “Compare-and-swap.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Compare-and-swap](https://en.wikipedia.org/w/index.php?title=Compare-and-swap&oldid=1306886335).
-<!--ID: 1758034772957-->
-END%%
-
-%%ANKI
-Basic
-With respect to atomic instructions, what is CAS an acronym for?
-Back: **C**ompare-**a**nd-**s**wap.
-Reference: _Wikipedia_. “Compare-and-swap.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Compare-and-swap](https://en.wikipedia.org/w/index.php?title=Compare-and-swap&oldid=1306886335).
-<!--ID: 1758034772959-->
-END%%
-
-%%ANKI
-Basic
-Compare-and-swap is a member of what class of atomic instructions?
-Back: The read-modify-write instructions.
-Reference: _Wikipedia_. “Read–modify–write.” March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write](https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write&oldid=1281913553).
-<!--ID: 1758122014211-->
-END%%
-
-## Thread-Local Storage
-
-**Thread-Local Storage** (TLS) is a memory management method that uses static or global memory local to a thread. In C17, the keyword `_Thread_local` is used for defining thread-local variables.
-
-%%ANKI
-Basic
-In the context of memory management, what is TLS an acronym for?
+In the context of threads, what is TLS an acronym for?
 Back: **T**hread-**L**ocal **S**torage.
 Reference: “Thread-Local Storage,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1252543227).
 <!--ID: 1734745402895-->
@@ -563,29 +305,52 @@ END%%
 
 %%ANKI
 Basic
-What storage class specifier is used to modify TLS?
-Back: `_Thread_local`
-Reference: “Thread-Local Storage,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1252543227).
-Tags: c17
-<!--ID: 1734745402931-->
-END%%
-
-%%ANKI
-Basic
 What is thread-local storage?
-Back: A memory management method that uses static or global memory local to a thread.
+Back: A storage method that uses static or global memory local to a thread.
 Reference: “Thread-Local Storage,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1252543227).
 <!--ID: 1734745402937-->
 END%%
 
+### Thread-Specific Data
+
+**Thread-specific data** (TSD) refers to a dynamically managed per-thread storage manipulated with an API. This often involves using a key global to the process, but by which each thread can retrieve its own copy of the associated data.
+
+%%ANKI
+Basic
+In the context of threads, what is TSD an acronym for?
+Back: **T**hread-**S**pecific **D**ata.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1759062508147-->
+END%%
+
+%%ANKI
+Basic
+What is thread-specific data?
+Back: A dynamically managed per-thread storage manipulated with an API.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1759062508153-->
+END%%
+
+%%ANKI
+Basic
+How is data typically retrieved from TSD?
+Back: By specifying a key global to the process.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1759062508156-->
+END%%
+
+%%ANKI
+Cloze
+In TSD, {1:keys} are global to the {2:process} whereas {2:values} are specific to a {1:thread}.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1759062508159-->
+END%%
+
 ## Bibliography
 
+* “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 * “Starvation and Livelock.” Accessed September 17, 2025. [https://docs.oracle.com/javase/tutorial/essential/concurrency/starvelive.html](https://docs.oracle.com/javase/tutorial/essential/concurrency/starvelive.html).
 * “Thread-Local Storage,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1252543227).
-* _Wikipedia_. “Compare-and-swap.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Compare-and-swap](https://en.wikipedia.org/w/index.php?title=Compare-and-swap&oldid=1306886335).
 * _Wikipedia_. “Deadlock (computer science).” August 4, 2025. [https://en.wikipedia.org/w/index.php?title=Deadlock_(computer_science)](https://en.wikipedia.org/w/index.php?title=Deadlock_\(computer_science\)&oldid=1304234437).
-* _Wikipedia_. “Fetch-and-add.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Fetch-and-add](https://en.wikipedia.org/w/index.php?title=Fetch-and-add&oldid=1306889087).
 * _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
-* _Wikipedia_. “Read–modify–write.” March 23, 2025. [https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write](https://en.wikipedia.org/w/index.php?title=Read%E2%80%93modify%E2%80%93write&oldid=1281913553).
-* _Wikipedia_. “Test-and-set.” August 20, 2025. [https://en.wikipedia.org/w/index.php?title=Test-and-set](https://en.wikipedia.org/w/index.php?title=Test-and-set&oldid=1306902344).

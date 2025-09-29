@@ -636,7 +636,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\langle A, < \rangle$ have ordinal $\alpha$ and $B \subset A$ s.t $\langle B, <^\circ \rangle$ has ordinal $\beta$. How do $\alpha$ and $\beta$ relate?
+Let $\langle A, < \rangle$ have ordinal $\alpha$. Let $B \subset A$ and $\langle B, <^\circ \rangle$ have ordinal $\beta$. How do $\alpha$ and $\beta$ relate?
 Back: $\beta \in \alpha$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1758889573336-->
@@ -644,7 +644,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\langle A, < \rangle$ have ordinal $\alpha$ and $B \subseteq A$ s.t $\langle B, <^\circ \rangle$ has ordinal $\beta$. How do $\alpha$ and $\beta$ relate?
+Let $\langle A, < \rangle$ have ordinal $\alpha$. Let $B \subseteq A$ and $\langle B, <^\circ \rangle$ have ordinal $\beta$. How do $\alpha$ and $\beta$ relate?
 Back: $\beta \underline{\in} \alpha$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1758889573341-->
@@ -652,7 +652,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\langle A, < \rangle$ have ordinal $\alpha$ and $B \subset A$ s.t $\langle B, <^\circ \rangle$ has ordinal $\beta$. We can show $\beta \in \alpha$ by proving existence of what isomorphism?
+Let $\langle A, < \rangle$ have ordinal $\alpha$. Let $B \subset A$ and $\langle B, <^\circ \rangle$ have ordinal $\beta$. We can show $\beta \in \alpha$ by proving existence of what isomorphism?
 Back: $\langle \beta, \in_\beta \rangle \cong \langle \mathop{\text{seg}} t, <^\circ \rangle$ for some $t \in A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1758889573345-->
@@ -680,6 +680,14 @@ What is the smallest nonzero ordinal number that is not the successor of another
 Back: $\omega$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1759031903265-->
+END%%
+
+%%ANKI
+Basic
+Let $R$ be a well ordering on $A$. Why isn't the following considered proof that $A$ is countable? $$\begin{align*} f(\min A) & = 0 \\ f(\min (A - \min A)) & = 1 \\ & \ldots \end{align*}$$
+Back: The $\ldots$ might be abstracting over an uncountable number of steps.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759158146894-->
 END%%
 
 ### Burali-Forti Theorem

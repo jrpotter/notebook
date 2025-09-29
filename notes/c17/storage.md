@@ -729,7 +729,7 @@ Dynamically allocated objects have allocated storage duration. Their lifetime sp
 
 %%ANKI
 Basic
-Which standard library header exposes `malloc`?
+Which standard library header exposes `malloc()`?
 Back: `<stdlib.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874715-->
@@ -737,7 +737,7 @@ END%%
 
 %%ANKI
 Basic
-Which standard library header exposes `free`?
+Which standard library header exposes `free()`?
 Back: `<stdlib.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874716-->
@@ -745,7 +745,7 @@ END%%
 
 %%ANKI
 Basic
-Why is `malloc` named the way it is?
+Why is `malloc()` named the way it is?
 Back: It stands for **m**emory **alloc**ate.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874717-->
@@ -754,29 +754,29 @@ END%%
 %%ANKI
 Basic
 Which two functions are most prominently used for managing dynamically allocated memory?
-Back: `malloc` and `free`.
+Back: `malloc()` and `free()`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874718-->
 END%%
 
 %%ANKI
 Cloze
-Generally speaking, memory created with {`malloc`} should be deleted with {`free`}.
+Generally speaking, memory created with {`malloc()`} should be deleted with {`free()`}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874719-->
 END%%
 
 %%ANKI
 Basic
-What three specialized variants of `malloc` are exposed by `<stdlib.h>`?
-Back: `calloc`, `realloc`, and `aligned_alloc`.
+What three specialized variants of `malloc()` are exposed by `<stdlib.h>`?
+Back: `calloc()`, `realloc()`, and `aligned_alloc()`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874720-->
 END%%
 
 %%ANKI
 Basic
-On success, what does a call to `malloc` return?
+On success, what does a call to `malloc()` return?
 Back: A valid `void*` pointer.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874721-->
@@ -784,7 +784,7 @@ END%%
 
 %%ANKI
 Basic
-On failure, what does a call to `malloc` return?
+On failure, what does a call to `malloc()` return?
 Back: A null pointer value.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874722-->
@@ -792,7 +792,7 @@ END%%
 
 %%ANKI
 Basic
-What are the argument(s) to `malloc`?
+What are the argument(s) to `malloc()`?
 Back: The size (in bytes) of the block of memory to allocate.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874723-->
@@ -822,15 +822,15 @@ END%%
 
 %%ANKI
 Basic
-What possible error can occur by explicitly casting the return type of `malloc`?
-Back: If `<stdlib.h>` isn't imported, older C compilers assume `malloc` returns an `int`.
+What possible error can occur by explicitly casting the return type of `malloc()`?
+Back: If `<stdlib.h>` isn't imported, older C compilers assume `malloc()` returns an `int`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874726-->
 END%%
 
 %%ANKI
 Basic
-Without `<stdlib.h>`, an older C compiler might assume what `malloc` declaration?
+Without `<stdlib.h>`, an older C compiler might assume what `malloc()` declaration?
 Back:
 ```c
 int malloc();
@@ -841,7 +841,7 @@ END%%
 
 %%ANKI
 Basic
-Within `<stdlib.h>`, what function prototype does `malloc` have?
+Within `<stdlib.h>`, what function prototype does `malloc()` have?
 Back:
 ```c
 void* malloc(size_t size);
@@ -852,7 +852,7 @@ END%%
 
 %%ANKI
 Cloze
-Storage allocated through `malloc` is neither {initialized} nor has a {type}.
+Storage allocated through `malloc()` is neither {initialized} nor has a {type}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874729-->
 END%%
@@ -933,7 +933,7 @@ END%%
 
 %%ANKI
 Basic
-`malloc` and its variants all have the `size` parameter in what position?
+`malloc()` and its variants all have the `size` parameter in what position?
 Back: The last position.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874736-->
@@ -941,7 +941,7 @@ END%%
 
 %%ANKI
 Basic
-What storage duration is associated with `malloc` and `free`?
+What storage duration is associated with `malloc()` and `free()`?
 Back: Allocated.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1733064332825-->
@@ -958,7 +958,7 @@ END%%
 %%ANKI
 Basic
 What two functions are typically used to deallocate an allocated object?
-Back: `free` and `realloc`.
+Back: `free()` and `realloc()`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1733064332831-->
 END%%

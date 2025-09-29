@@ -123,70 +123,218 @@ Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open
 <!--ID: 1759032994766-->
 END%%
 
-## Streams
+## Storage
 
-All stream functions besides `fopen()` and `fclose()` are race-free meaning a properly initialized `FILE*` can be used race-free by several threads. To avoid garbled output lines, calls to printing-related functions should always print an entire line. That is, concurrent write operations should print entire lines at once.
+Keyword `_Thread_local` is used for defining variables in [[operating_systems/threads#Thread-Local Storage|TLS]]. This should be prefered when a thread-specific object can be initialized at compile time.
 
-%%ANKI
-Basic
-Which stream functions are race-free?
-Back: All except `fopen()` and `fclose()`.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: c17::io::stream
-<!--ID: 1759032994768-->
-END%%
+[[operating_systems/threads#Thread-Specific Data|TSD]] is referred to as **thread-specific storage** (TSS) in C but operates in much the same way. Each object within TSS has an associated key. Once a key is set, upon thread creation, the value associated with all keys is initialized to a null pointer value in the new thread.
 
-%%ANKI
-Basic
-Which stream functions are *not* race-free?
-Back: `fopen()` and `fclose()`.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: c17::io::stream
-<!--ID: 1759032994769-->
-END%%
+```c
+int tss_create(tss_t *key, tss_dtor_t dtor);
+void *tss_get(tss_t key);
+int tss_set(tss_t key, void *val);
+```
 
 %%ANKI
 Basic
-Gustedt reminds that stream functions being race-free does not mean what?
-Back: That writes to a stream will happen without tearing.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: c17::io::stream
-<!--ID: 1759032994771-->
-END%%
-
-%%ANKI
-Basic
-How can stream functions be used so that writes do not exhibit tearing?
-Back: Concurrent writes should always print entire lines at once.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: c17::io::stream
-<!--ID: 1759032994773-->
+What storage class specifier is used to modify TLS?
+Back: `_Thread_local`
+Reference: “Thread-Local Storage,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1252543227).
+<!--ID: 1734745402931-->
 END%%
 
 %%ANKI
 Cloze
-{1:`fopen()`} is to {2:`call_once()`} whereas {2:`fclose()`} is to {1:`atexit()`}.
+Generally speaking, {1:TLS} is to {2:compile-time} whereas {2:TSD} is to {1:runtime}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: c17::io::stream
-<!--ID: 1759032994775-->
+<!--ID: 1759062508162-->
 END%%
 
 %%ANKI
 Basic
-In a multithreaded environment, how is `fopen()` safely called from a thread?
-Back: By wrapping the call within a `call_once()` invocation.
+In C parlance, what alternative name does TSD go by?
+Back: Thread-specific storage (TSS).
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: c17::io::stream
-<!--ID: 1759032994780-->
+<!--ID: 1759062508165-->
 END%%
 
 %%ANKI
 Basic
-In a multithreaded environment, how is `fclose()` safely called from a thread?
-Back: By registering the cleanup with the `atexit()` (or similar) function.
+In the context of C threading, what is TSS an acronym for?
+Back: **T**hread-**s**pecific **s**torage.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-Tags: c17::io::stream
-<!--ID: 1759032994781-->
+<!--ID: 1759062508169-->
+END%%
+
+%%ANKI
+Basic
+In C, what is the most natural way of modifying TLS?
+Back: Using the `_Thread_local` qualifier on an object.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759062508172-->
+END%%
+
+%%ANKI
+Basic
+In C, what is the most natural way of modifying TSD?
+Back: Using the `tss_` family of functions.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759062508175-->
+END%%
+
+%%ANKI
+Basic
+Which function is used to create a new value in TSD?
+Back: `tss_create()`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759062508178-->
+END%%
+
+%%ANKI
+Basic
+Which C standard library includes the `tss_t` typedef?
+Back: `<threads.h>`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759062508181-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `tss_t` type?
+Back: It refers to a thread-specific storage pointer (i.e. a key).
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759062508184-->
+END%%
+
+%%ANKI
+Basic
+C's concept of TSS is typically referred to as what in the wider community?
+Back: Thread-specific data (TSD).
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759062508187-->
+END%%
+
+%%ANKI
+Basic
+What is Gustedt's rule of thumb for when to use TLS vs. TSD?
+Back: Use the former if initialization can happen at compile-time, and the latter otherwise.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759062508190-->
+END%%
+
+## Mutexes
+
+The C standard provides [[concurrency#Mutexes|mutex]] support with the `mtx_t` type. An object of this type can be initialized using a valid combination of the following flags:
+
+1. `mtx_plain` to create a mutex that does not support timeout.
+2. `mtx_timed` to create a mutex that supports timeout.
+3. `mtx_recursive` to create a mutex that supports recursive locking.
+
+```c
+void mtx_init(mtx_t *mtx, int type);
+void mtx_destroy(mtx_t *mtx);
+int mtx_lock(mtx_t *mtx);
+int mtx_unlock(mtx_t *mtx);
+```
+
+%%ANKI
+Basic
+What type is provided by the C standard for mutex support?
+Back: `mtx_t`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759163282068-->
+END%%
+
+%%ANKI
+Basic
+Which header is mutex support provided in?
+Back: `<threads.h>`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759163282078-->
+END%%
+
+%%ANKI
+Basic
+How many flags can be passed to a call to `mtx_init()`?
+Back: Three.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759163282080-->
+END%%
+
+%%ANKI
+Basic
+What are the three flags available to `mtx_init()` calls?
+Back: `mtx_plain`, `mtx_timed`, and `mtx_recursive`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759163282083-->
+END%%
+
+%%ANKI
+Cloze
+The {`mtx_plain`} flag is used to create a mutex that {does not support timeout}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759163282087-->
+END%%
+
+%%ANKI
+Cloze
+The {`mtx_timed`} flag is used to create a mutex that {does support timeout}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759163282091-->
+END%%
+
+%%ANKI
+Cloze
+The {`mtx_recursive`} flag is used to create a mutex that {supports recursive locking}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759163282095-->
+END%%
+
+%%ANKI
+Basic
+Which C standard function must be called to initialize a mutex?
+Back: `mtx_init()`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759163282100-->
+END%%
+
+%%ANKI
+Basic
+Which C standard function must be called to uninitialize a mutex?
+Back: `mtx_destroy()`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759163282104-->
+END%%
+
+%%ANKI
+Basic
+Which C standard function is most commonly used to acquire a mutex?
+Back: `mtx_lock()`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759163282108-->
+END%%
+
+%%ANKI
+Basic
+Which C standard function is most commonly used to release a mutex?
+Back: `mtx_unlock()`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759163282111-->
+END%%
+
+%%ANKI
+Basic
+Which combination of `mtx_plain`, `mtx_timed`, and `mtx_recursive` are compatible with one another?
+Back: `mtx_plain | mtx_recursive` and `mtx_timed | mtx_recursive`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759163282115-->
+END%%
+
+%%ANKI
+Cloze
+{1:`malloc()`} is to {2:`free()`} as {2:`mtx_lock()`} is to {1:`mtx_unlock()`}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759163282118-->
 END%%
 
 ## Bibliography

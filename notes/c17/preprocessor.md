@@ -490,6 +490,14 @@ END%%
 
 %%ANKI
 Basic
+Which header indicates a C implementation does not provide a mutex type?
+Back: `__STDC_NO_THREADS__`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1759163282122-->
+END%%
+
+%%ANKI
+Basic
 How is it determined whether `<threads.h>` is available on a platform?
 Back: By checking that `__STDC_NO_THREADS__` is not defined as `1`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).

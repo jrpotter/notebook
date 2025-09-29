@@ -39,7 +39,7 @@ END%%
 %%ANKI
 Basic
 Let $z \in \mathbb{C}$. How is $z$ written as a complex exponential?
-Back: If $r = \lvert z \rvert$ and $\theta = \mathop{\text{Arg}}(z)$, as $z = e^{i\theta}$.
+Back: If $r = \lvert z \rvert$ and $\theta = \mathop{\text{Arg}}(z)$, as $z = re^{i\theta}$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1755126865878-->
 END%%

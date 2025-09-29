@@ -454,6 +454,7 @@ END%%
 Basic
 How did Dedekind define an infinite set?
 Back: As a set equinumerous to a proper subset of itself.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1745098267311-->
 END%%
 

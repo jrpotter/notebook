@@ -841,6 +841,65 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1754577087356-->
 END%%
 
+## Concurrency
+
+All stream functions besides `fopen()` and `fclose()` are race-free meaning a properly initialized `FILE*` can be used race-free by several threads. To avoid garbled output lines, calls to printing-related functions should always print an entire line. That is, concurrent write operations should print entire lines at once.
+
+%%ANKI
+Basic
+Which stream functions are race-free?
+Back: All except `fopen()` and `fclose()`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759032994768-->
+END%%
+
+%%ANKI
+Basic
+Which stream functions are *not* race-free?
+Back: `fopen()` and `fclose()`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759032994769-->
+END%%
+
+%%ANKI
+Basic
+Gustedt reminds that stream functions being race-free does not mean what?
+Back: That writes to a stream will happen without tearing.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759032994771-->
+END%%
+
+%%ANKI
+Basic
+How can stream functions be used so that writes do not exhibit tearing?
+Back: Concurrent writes should always print entire lines at once.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759032994773-->
+END%%
+
+%%ANKI
+Cloze
+{1:`fopen()`} is to {2:`call_once()`} whereas {2:`fclose()`} is to {1:`atexit()`}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759032994775-->
+END%%
+
+%%ANKI
+Basic
+In a multithreaded environment, how is `fopen()` safely called from a thread?
+Back: By wrapping the call within a `call_once()` invocation.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759032994780-->
+END%%
+
+%%ANKI
+Basic
+In a multithreaded environment, how is `fclose()` safely called from a thread?
+Back: By registering the cleanup with the `atexit()` (or similar) function.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759032994781-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
