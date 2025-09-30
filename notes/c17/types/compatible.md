@@ -121,49 +121,7 @@ END%%
 
 ### Enumerations
 
-An enumeration type must be compatible with a `char`, signed integer type, or unsigned integer type. The choice of type is implementation-defined, but shall be capable of representing the values of all the members of the enumeration.
-
-%%ANKI
-Basic
-An enumerated type must be compatible with what three possibilities?
-Back: A `char`, a signed integer type, or an unsigned integer type.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733403803028-->
-END%%
-
-%%ANKI
-Basic
-Which C construct must be compatible with a `char`, signed integer type, or unsigned integer type?
-Back: Enumerated types.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1752191856010-->
-END%%
-
-%%ANKI
-Basic
-What is the type given to an enumerated type?
-Back: N/A. This is implementation-defined.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733403803055-->
-END%%
-
-%%ANKI
-Basic
-What kind of integer expressions are enumeration constants limited to?
-Back: Integer constant expressions with value representable as an `int`.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1727022810827-->
-END%%
-
-%%ANKI
-Basic
-Besides being an ICE, what other condition is expected on enumeration constants?
-Back: The ICE evaluates to an integer that fits within an `int`.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1727022810833-->
-END%%
-
-If two enumeration types are declared in separate translation units, they are compatible if they are declared with the same tag (or lack thereof) and there exists a one-to-one correspondence between their members such that each pair of corresponding members are declared with the same name and compatible types. Additionally, corresponding members must have the same values.
+If two enumerations are declared in separate translation units, they are compatible if they are declared with the same tag (or lack thereof) and there exists a one-to-one correspondence between their members such that each pair of corresponding members are declared with the same name and compatible types. Additionally, corresponding members must have the same values.
 
 %%ANKI
 Basic

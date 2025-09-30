@@ -279,7 +279,7 @@ END%%
 
 An **initializer** is an expression that gives an object a value at time of declaration.
 
-All objects (except VLAs) can be zero-initialized with `= { 0 }`. Since C23, all objects (including VLAs) can instead be zero-initialized with `= {}`.
+All objects (except VLAs) can be zero-initialized with `= { 0 }`. Since C23, all objects (including VLAs) can instead be **empty initialized** with `= {}`. Such objects are also zeroed.
 
 %%ANKI
 Basic

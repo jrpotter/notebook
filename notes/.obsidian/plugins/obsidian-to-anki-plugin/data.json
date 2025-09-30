@@ -643,9 +643,9 @@
     "calculus/integrals.md": "6f559f8fbe1ee1fa20bce5f19466a0cc",
     "calculus/index.md": "5ee4d950533ae330ca5ef9e113fe87f3",
     "calculus/bounds.md": "4cd53e6ba4250077cea2c875ce9cf684",
-    "c17/types/index.md": "b63e5a61dabf2b7916d8bb7a6cba5e3a",
+    "c17/types/index.md": "edea8790d682056e9d71471338ad2003",
     "c17/types/conversions.md": "3409bda8d4ed4dd82bd43fb274677fb7",
-    "c17/types/compatible.md": "838d5b5a8ec1d66683daef3ff2363721",
+    "c17/types/compatible.md": "546a8009bc030761908bfc9ead2cddff",
     "c17/strings/printf.md": "6fdc90cb1d979804596f227fe623bfe7",
     "c17/strings/index.md": "aa3e21a5aacb8db4ac15b28da4d4b4a2",
     "c17/storage.md": "2161a82d65fffba32a11d106153a5095",
@@ -1585,10 +1585,12 @@
     "_journal/2025-09/2025-09-27.md": "87c3b2673e73393166998fc4691a74bd",
     "_journal/2025-09-29.md": "b11ff418a8ad275e633b4ea32cc3dd22",
     "_journal/2025-09/2025-09-28.md": "2ea2672e2c8bd09ed4f98d1a8132f93a",
-    "_journal/2025-09-30.md": "29fae49c172b9b839b1cbfb0a1042002",
+    "_journal/2025-09-30.md": "ceeefe3e9cc5054513dfa0ca306a37d4",
     "_journal/2025-09/2025-09-29.md": "c41a0e460d5fac84afc487fa1c11aa82",
     "c23/index.md": "43a9bb2f1b10969977cb434dd9e6fdff",
-    "c23/declarations.md": "81cd6299ab6919ae0f75ddd165507942"
+    "c23/declarations.md": "887320ab3268bf92efc37d17f5b46aed",
+    "c23/types/simple.md": "7c84700aa7bff434d0516e6561874a04",
+    "c23/types/index.md": "f0e488e920afe93bd3effb1ad4b92bf0"
   },
   "fields_dict": {
     "Basic": [

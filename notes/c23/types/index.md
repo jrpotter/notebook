@@ -1,0 +1,1047 @@
+---
+title: Types
+TARGET DECK: Obsidian::STEM
+FILE TAGS: c23::types
+tags:
+  - c23
+  - types
+---
+
+## Overview
+
+Types in C are categorized corresponding to a hierarchy with a foundation comprising of the [[simple|simple types]]. These types are then grouped and further categorized until we reach the top of the hierarchy consisting of all types.
+
+All types are categorized as **function types** or **object types**. An object type is **complete** if there is sufficient information to determine the size of objects of that type. Otherwise we say it is **incomplete**.
+
+The **basic types** comprise of `char`, the signed/unsigned integer types, and the floating point types. All basic types are complete object types.
+
+The **integer types** comprise of `char`, the signed/unsigned integer types, and `enum`s.
+
+The **arithmetic types** comprise of the integer and floating point types. Each arithmetic type belongs to one **type domain**: the **real type domain** contains the real types and the **complex type domain** contains the complex types.
+
+%%ANKI
+Basic
+What is the foundational category of types?
+Back: The simple types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734400-->
+END%%
+
+%%ANKI
+Basic
+Why are "simple types" named the way they are?
+Back: These types are primitives in the type hierarchy.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734408-->
+END%%
+
+%%ANKI
+Basic
+Why are "real types" named the way they are?
+Back: They refer to types that belong to $\mathbb{R}$.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734411-->
+END%%
+
+%%ANKI
+Basic
+Why are "real types" named the way they are?
+Back: They refer to types that belong to $\mathbb{C}$.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+END%%
+
+%%ANKI
+Basic
+Types are partitioned into what two top-level categories?
+Back: Object types and function types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1723510994842-->
+END%%
+
+%%ANKI
+Basic
+What is an object type?
+Back: A type that describes objects.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1723510994846-->
+END%%
+
+%%ANKI
+Basic
+What is a function type?
+Back: A type that describes functions.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1723510994851-->
+END%%
+
+%%ANKI
+Basic
+What two parts characterize a function type?
+Back: The return type and the number/types of its parameters.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1723510994856-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for an object type to be complete?
+Back: There is sufficient information to determine the size of objects of that type.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1723510994866-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for an object type to be incomplete?
+Back: There is insufficient information to determine the size of objects of that type.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1723510994870-->
+END%%
+
+%%ANKI
+Basic
+Does `x` have complete or incomplete object type in the following?
+```c
+void x;
+```
+Back: Incomplete.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1723510995010-->
+END%%
+
+%%ANKI
+Basic
+Does `x` have complete or incomplete object type in the following?
+```c
+int x;
+```
+Back: Complete.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1723510995016-->
+END%%
+
+%%ANKI
+Basic
+Does `x` have complete or incomplete object type in the following?
+```c
+void *x;
+```
+Back: Complete.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1723510995023-->
+END%%
+
+%%ANKI
+Basic
+Does `x` have complete or incomplete object type in the following?
+```c
+double x[];
+```
+Back: Incomplete.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196021563-->
+END%%
+
+%%ANKI
+Basic
+Does `x` have complete or incomplete object type in the following?
+```c
+double x[] = { 1, 2, };
+```
+Back: Incomplete.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196021568-->
+END%%
+
+%%ANKI
+Basic
+Does `x` have complete or incomplete object type in the following?
+```c
+double x[2] = { 1, 2, };
+```
+Back: Complete.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196021572-->
+END%%
+
+%%ANKI
+Basic
+What object type can an lvalue *not* have?
+Back: `void`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1723510994890-->
+END%%
+
+%%ANKI
+Basic
+What object type can an lvalue have?
+Back: Any object type other than `void`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1723510994895-->
+END%%
+
+%%ANKI
+Basic
+Are the basic types a subset of object types or function types?
+Back: Object types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734414-->
+END%%
+
+%%ANKI
+Basic
+The basic types consist of what simple types?
+Back: `char`, signed/unsigned integer types, and the floating point types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734417-->
+END%%
+
+%%ANKI
+Basic
+Is `int` considered a basic type?
+Back: Yes.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734421-->
+END%%
+
+%%ANKI
+Basic
+Are the integer types a subset of object types or function types?
+Back: Object types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734431-->
+END%%
+
+%%ANKI
+Basic
+The integer types consist of what simple types?
+Back: `char`, (un)signed integer types, and `enum`s.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734436-->
+END%%
+
+%%ANKI
+Basic
+Is `enum` considered a simple type?
+Back: Yes.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734439-->
+END%%
+
+%%ANKI
+Basic
+Is `enum` considered a basic type?
+Back: No, but it is considered a simple type.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734443-->
+END%%
+
+%%ANKI
+Basic
+Is `enum` considered a complex type?
+Back: No, it's a real type.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734447-->
+END%%
+
+%%ANKI
+Basic
+Is `enum` considered a real type?
+Back: Yes.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734452-->
+END%%
+
+%%ANKI
+Basic
+What category of types is considered a basic type but not an integer type?
+Back: Floating point types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734458-->
+END%%
+
+%%ANKI
+Basic
+What category of types is considered an integer type but not a basic type?
+Back: Enumerated types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734463-->
+END%%
+
+%%ANKI
+Basic
+Which types are considered both basic types and integer types?
+Back: `char` and the (un)signed integer types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734469-->
+END%%
+
+%%ANKI
+Basic
+Which of the basic types or integer types is a subset of the other?
+Back: N/A.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734477-->
+END%%
+
+%%ANKI
+Basic
+Why aren't the basic types a subset of the integer types?
+Back: The basic types include floating point types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1751370229142-->
+END%%
+
+%%ANKI
+Basic
+Why aren't the integer types a subset of the basic types?
+Back: The integer types include enumerations.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1751370229149-->
+END%%
+
+%%ANKI
+Cloze
+Integer and floating point types are collectively called {arithmetic} types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724543977383-->
+END%%
+
+%%ANKI
+Cloze
+Integer types are to {1:$\mathbb{N}$} and {2:$\mathbb{Z}$}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341581-->
+END%%
+
+%%ANKI
+Cloze
+Floating-point types are to {1:$\mathbb{R}$} and {2:$\mathbb{C}$}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727551341582-->
+END%%
+
+%%ANKI
+Cloze
+The {real} types contrast the {complex} types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724543977387-->
+END%%
+
+%%ANKI
+Basic
+Which two smaller category of types make up the arithmetic types?
+Back: The integer and floating point types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724543977391-->
+END%%
+
+%%ANKI
+Basic
+The arithmetic types are categorized into what type domains?
+Back: The real type domain and the complex type domain.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724543977395-->
+END%%
+
+%%ANKI
+Basic
+Which type domain does `int` fall under?
+Back: The real type domain.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724543977399-->
+END%%
+
+%%ANKI
+Basic
+Which type domain does `float complex` fall under?
+Back: The complex type domain.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724543977404-->
+END%%
+
+%%ANKI
+Basic
+Which type domain does `float` fall under?
+Back: The real type domain.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724543977408-->
+END%%
+
+%%ANKI
+Basic
+Which type domain does `long double` fall under?
+Back: The real type domain.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724543977412-->
+END%%
+
+%%ANKI
+Basic
+Which type domain does `bool` fall under?
+Back: The real type domain.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724543977417-->
+END%%
+
+%%ANKI
+Basic
+Which type domain does `double complex` fall under?
+Back: The complex type domain.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724543977422-->
+END%%
+
+%%ANKI
+Basic
+Which of basic types or arithmetic types is a subset of the other?
+Back: Basic types is a subset of arithmetic types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734484-->
+END%%
+
+%%ANKI
+Basic
+Which of arithmetic types or integer types is a subset of the other?
+Back: Integer types is a subset of arithmetic types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734489-->
+END%%
+
+%%ANKI
+Basic
+Which of the real types or integer types is a subset of the other?
+Back: The integer types is a subset of the real types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734493-->
+END%%
+
+%%ANKI
+Basic
+Which of the real types or floating point types is a subset of the other?
+Back: N/A.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734498-->
+END%%
+
+%%ANKI
+Basic
+Which types belong to the intersection of real and floating point types?
+Back: Floating point types in the real type domain.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546734502-->
+END%%
+
+## Literals
+
+Since C23, number literals can use an apostrophe (`'`) as a digit separator. For example, `10000` can instead be written as `10'000`.
+
+%%ANKI
+Basic
+Which C standard introduced the digit separator?
+Back: C23.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759238122378-->
+END%%
+
+%%ANKI
+Basic
+How is `10000` written equivalently with a digit separator?
+Back: As `10'000`.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759238122388-->
+END%%
+
+%%ANKI
+Basic
+What character is used as a digit separator in C number literals?
+Back: The apostrophe (`'`).
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759238122390-->
+END%%
+
+### Integers
+
+Negative integer literals are typed in a counterintuitive way. When the compiler sees a number of form `-X`, the type of `X` is determined *before* being negated. Promotion follows the **first fit rule** described as follows:
+
+| Decimal     | Binary, Octal, and Hexadecimal |
+| ----------- | ------------------------------ |
+| `int`       | `int`                          |
+| `long`      | `unsigned`                     |
+| `long long` | `long`                         |
+| `-`         | `unsigned long`                |
+| `-`         | `long long`                    |
+| `-`         | `unsigned long long`           |
+
+Integer constants can be made a certain signedness or type by using the following suffixes. Note these supply a lower bound on the rank of the resulting type.
+
+| Suffix | Type (At Least)      |
+| ------ | -------------------- |
+| `U`    | `unsigned`           |
+| `L`    | `long`               |
+| `LL`   | `long long`          |
+| `ULL`  | `unsigned long long` |
+
+%%ANKI
+Basic
+What is the first fit rule?
+Back: A specification on what type is given to an integer literal.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852091-->
+END%%
+
+%%ANKI
+Basic
+What is the signedness of a decimal integer literal?
+Back: `signed`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852099-->
+END%%
+
+%%ANKI
+Basic
+What is the signedness of an octal integer literal?
+Back: `signed` or `unsigned`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852105-->
+END%%
+
+%%ANKI
+Basic
+What is the signedness of a hexadecimal integer literal?
+Back: `signed` or `unsigned`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852113-->
+END%%
+
+%%ANKI
+Basic
+The first fit rule lists what types (in order) for decimal integer literals?
+Back: `int`, `long`, and `long long`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852124-->
+END%%
+
+%%ANKI
+Basic
+The first fit rule lists what types (in order) for octal integer literals?
+Back:
+1. `int`
+2. `unsigned`
+3. `long`
+4. `unsigned long`
+5. `long long`
+6. `unsigned long long`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852132-->
+END%%
+
+%%ANKI
+Basic
+The first fit rule lists what types (in order) for hexadecimal integer literals?
+Back:
+1. `int`
+2. `unsigned`
+3. `long`
+4. `unsigned long`
+5. `long long`
+6. `unsigned long long`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852139-->
+END%%
+
+%%ANKI
+Basic
+The first fit rule lists what types (in order) for hexadecimal integer literals?
+Back:
+1. `int`
+2. `unsigned`
+3. `long`
+4. `unsigned long`
+5. `long long`
+6. `unsigned long long`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+END%%
+
+%%ANKI
+Basic
+The first fit rule lists what types (in order) for binary integer literals?
+Back:
+1. `int`
+2. `unsigned`
+3. `long`
+4. `unsigned long`
+5. `long long`
+6. `unsigned long long`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759242450702-->
+END%%
+
+%%ANKI
+Basic
+How does the compiler process integer literal `-X`?
+Back: By first determining the type of `X` and then negating the value.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820805-->
+END%%
+
+%%ANKI
+Basic
+What integer literals are guaranteed `signed`?
+Back: Decimal integer constants.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820826-->
+END%%
+
+%%ANKI
+Basic
+How do we specify an octal integer literal?
+Back: Prepend the literal with a `0`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710673807992-->
+END%%
+
+%%ANKI
+Basic
+Why avoid negative octal integer literals?
+Back: Depending on value, the resulting type may be `unsigned`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820829-->
+END%%
+
+%%ANKI
+Basic
+How do we specify a hexadecimal integer literal?
+Back: Prepend the literal with a `0x` or `0X`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710673807995-->
+END%%
+
+%%ANKI
+Basic
+Why avoid negative hexadecimal integer literals?
+Back: Depending on value, the resulting type may be `unsigned`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723937852145-->
+END%%
+
+%%ANKI
+Basic
+How do we specify a binary integer literal?
+Back: Prepend the literal with a `0b` or `0B`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1759242450710-->
+END%%
+
+%%ANKI
+Basic
+Why avoid negative binary integer literals?
+Back: Depending on value, the resulting type may be `unsigned`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1759242450714-->
+END%%
+
+%%ANKI
+Cloze
+Octal literals are to {`0`} whereas hexadecimal literals are to {`0x`/`0X`}.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710673807997-->
+END%%
+
+%%ANKI
+Cloze
+Hexadecimal literals are to {`0x/OX`} whereas binary literals are to {`0b`/`0B`}.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1759242450717-->
+END%%
+
+%%ANKI
+Basic
+How might C dangerously interpret a negative hexadecimal integer literal?
+Back: Depending on the value, the resulting type may be `unsigned`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820833-->
+END%%
+
+%%ANKI
+Basic
+Which header file contains `INT_MAX`?
+Back: `<limits.h>`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249864-->
+END%%
+
+%%ANKI
+Cloze
+{`INT_MAX`} is to `signed` whereas {`UINT_MAX`} is to `unsigned`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820837-->
+END%%
+
+%%ANKI
+Basic
+How does `<limits.h>` define `INT_MIN`?
+Back: As `(-INT_MAX - 1)`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820840-->
+END%%
+
+%%ANKI
+Basic
+*Why* is `INT_MIN` defined as `(-INT_MAX - 1)` instead of directly as e.g. `-2147483648`?
+Back: Because `2147483648` (without `-`) would be sized as a non-`int` before being negated.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820843-->
+END%%
+
+%%ANKI
+Cloze
+`INT_MAX` is to {`<limits.h>`} whereas `INT32_MAX` is to {`<stdint.h>`}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249873-->
+END%%
+
+%%ANKI
+Basic
+In what order does C cast size and "signedness"?
+Back: C casts size then signedness.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608760-->
+END%%
+
+%%ANKI
+Basic
+In what order does C cast "signedness" and size?
+Back: C casts size then signedness.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677626482-->
+END%%
+
+%%ANKI
+Basic
+Given `short sx`, cast `(unsigned) sx` is more explicitly written as what other sequence of casts?
+Back: `(unsigned) (int) sx`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608762-->
+END%%
+
+%%ANKI
+Basic
+Given `short sx`, are the following two lines equivalent?
+```c
+(unsigned) sx
+(unsigned) (int) sx
+```
+Back: Yes.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608764-->
+END%%
+
+%%ANKI
+Basic
+Given `short sx`, are the following two lines equivalent?
+```c
+(unsigned) sx
+(unsigned) (unsigned short) sx
+```
+Back: No. Size is cast before signedness.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608766-->
+END%%
+
+%%ANKI
+Basic
+Given `short sx`, why is the following not an identity?
+```c
+(unsigned) sx = (unsigned) (unsigned short) sx
+```
+Back: `(unsigned) sx` casts size before signedness.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608767-->
+END%%
+
+%%ANKI
+Basic
+What does "signedness" of a variable refer to?
+Back: Whether the variable was declared `signed` or `unsigned`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1714677608769-->
+END%%
+
+%%ANKI
+Basic
+Is an integer literal without a suffix (e.g. `U`) signed or unsigned?
+Back: This depends on the first fit rule.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723937852153-->
+END%%
+
+%%ANKI
+Basic
+What type is given to an integer literal without a suffix (e.g. `U`)?
+Back: This depends on the first fit rule.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723938382384-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote an integer literal with rank at least `unsigned`?
+Back: Case-insensitive `U`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249876-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote an integer literal with rank at least `long`?
+Back: Case-insensitive `L`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820847-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote an integer literal with rank at least `long long`?
+Back: Case-insensitive `LL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820850-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote an integer literal with rank at least `unsigned long long`?
+Back: Case-insensitive `ULL`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708631820856-->
+END%%
+
+%%ANKI
+Basic
+What type is given to integer literal `-1`?
+Back: `int`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382388-->
+END%%
+
+%%ANKI
+Basic
+What type is given to integer literal `-1U`?
+Back: `unsigned int`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382391-->
+END%%
+
+%%ANKI
+Basic
+What type is given to integer literal `1`?
+Back: `int`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382394-->
+END%%
+
+%%ANKI
+Basic
+What type is given to integer literal `0x0U`?
+Back: `unsigned int`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382398-->
+END%%
+
+### Floating-Point
+
+Floating-point constants can be made a certain type by using the following suffixes.
+
+| Suffix | Type (At Least) |
+| ------ | --------------- |
+| `F`    | `float`         |
+| `L`    | `long double`   |
+
+%%ANKI
+Basic
+What type is given to a floating-point literal without a suffix (e.g. `F`)?
+Back: `double`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1723938382401-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `float` floating-point literal?
+Back: Case-insensitive `F`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382405-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `double` floating-point literal?
+Back: N/A. Do not use a suffix.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382409-->
+END%%
+
+%%ANKI
+Basic
+What suffix can be used to denote a `long double` floating-point literal?
+Back: Case-insensitive `L`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382414-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0`?
+Back: `double`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382418-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0F`?
+Back: `float`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382423-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0FL`?
+Back: N/A. Invalid suffix.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382427-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0L`?
+Back: `long double`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382432-->
+END%%
+
+%%ANKI
+Basic
+What type is given to floating-point literal `-1.0LL`?
+Back: N/A. Invalid suffix.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1723938382436-->
+END%%
+
+%%ANKI
+Cloze
+`INT_MAX` is to {`<limits.h>`} whereas `DBL_MAX` is to {`<float.h>`}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157090-->
+END%%
+
+%%ANKI
+Basic
+What does `DBL_MIN` refer to?
+Back: The smallest `double` strictly greater than 0.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157091-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the smallest possible `double`?
+Back: As `-DBL_MAX`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157092-->
+END%%
+
+%%ANKI
+Basic
+How do we portably compute the largest possible `double`?
+Back: As `DBL_MAX`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727552157093-->
+END%%
+
+## Integer Constant Expressions
+
+An **integer constant expression** (ICE) is a compile-time integer value. Its value must be determinable at compile time (e.g. no function calls are permitted). The only objects that may be evaluated are those defined as `constexpr`.
+
+%%ANKI
+Basic
+What is ICE an acronym for?
+Back: **I**nteger **c**onstant **e**xpression.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1727022810784-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't `b42` in the following considered an ICE?
+```c
+enum { b42 = 42 };
+```
+Back: N/A. It is.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1727022810792-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't `b42` in the following considered an ICE?
+```c
+signed const a42 = 42;
+enum { b42 = a42 };
+```
+Back: Because it depends on the evaluation of object `a42`.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1727022810798-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't `b42` in the following considered an ICE?
+```c
+signed constexpr a42 = 42;
+enum { b42 = a42 };
+```
+Back: N/A. It is.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759270805501-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't `c52` in the following considered an ICE?
+```c
+enum { b42 = 42, c52 = b42 + 10 };
+```
+Back: N/A. It is.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1727022810804-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't `b42` in the following considered an ICE?
+```c
+signed const a42() { return 42; }
+enum { b42 = a42() };
+```
+Back: Because it depends on a function call.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1727022810810-->
+END%%
+
+%%ANKI
+Basic
+What objects may be evaluated in an ICE?
+Back: Just those declared with `constexpr`.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759270805503-->
+END%%
+
+## Bibliography
+
+* Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+* “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+* Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+* Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
