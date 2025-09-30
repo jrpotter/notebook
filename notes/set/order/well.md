@@ -7,11 +7,13 @@ tags:
   - set
 ---
 
-## Well Order
+## Overview
 
 A **non-strict well ordering on $A$** is a non-strict total order on $A$ with the additional property that every nonempty subset of $A$ has a minimum element.
 
 A **strict well ordering on $A$** is a strict total order on $A$ with the additional property that every nonempty subset of $A$ has a minimal element.
+
+In the context of well orderings, an **infinitely descending chain** on set $A$ is an infinitely descending [[cardinality#Sequences|sequence]] into $A$. That is, a function $f \colon \omega \rightarrow A$ such that for all $n \in \omega$, $f(n^+) < f(n)$. A [[total|strict total ordering]] is a well ordering if and only if there is no infinitely descending chain.
 
 %%ANKI
 Basic
@@ -58,6 +60,69 @@ Let $R$ be a strict total order on $[0, \infty) \subseteq \mathbb{R}$. Why isn't
 Back: Because there exist subsets, e.g. $(0, 1]$, with no minimal element.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1752330043285-->
+END%%
+
+%%ANKI
+Basic
+In the context of partial orders, what does a chain likey refer to?
+Back: A subset of the partial order totally ordered by the induced ordering relation.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759173593560-->
+END%%
+
+%%ANKI
+Basic
+In the context of well orders, what does a chain likely refer to?
+Back: An infinitely descending sequence.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759173593564-->
+END%%
+
+%%ANKI
+Basic
+How is an infinitely descending chain defined on well ordered structure $\langle A, < \rangle$?
+Back: As a function $f \colon \omega \rightarrow A$ such that $f(n^+) < f(n)$ for all $n \in \omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759173593567-->
+END%%
+
+%%ANKI
+Basic
+In the context of well orderings, why might the term "chain" be confusing?
+Back: A chain can mean something else for partial orders (which well orders are).
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759173593569-->
+END%%
+
+%%ANKI
+Basic
+In the context of well orderings, what two additional qualifiers are usually attributed to term "chain"?
+Back: "Infinitely descending".
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759173593571-->
+END%%
+
+%%ANKI
+Cloze
+A {strict total order} is a {strict well order} if and only if it has no {infinitely descending chains}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759173593573-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\langle A, < \rangle$ is a strict well ordering. What contradiction is raised if we assume existence of infinitely descending chain $f \colon \omega \rightarrow A$?
+Back: $\mathop{\text{ran}} f$ should have a minimum element by definition of well orderings.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759173593575-->
+END%%
+
+%%ANKI
+Basic
+Suppose $R$ and $R^{-1}$ are well orderings on set $S$. Why must $S$ be finite?
+Back: Otherwise we imply existence of an infinitely descending chain on $S$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759174512950-->
 END%%
 
 ## Initial Segments

@@ -337,6 +337,131 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1759163282118-->
 END%%
 
+### Condition Variables
+
+A **condition variable** is a synchronization primitive used alongside a mutex to block one or more threads until another thread notifies the variable.
+
+A condition variable is represented with type `cnd_t`. `cnd_wait()` (and its variants) *must* be invoked while its corresponding mutex is locked.
+
+```c
+int cnd_init(cnd_t *cond);
+int cnd_destroy(cnd_t *cond);
+int cnd_wait(cnd_t *cond, mtx_t *mtx);
+int cnd_signal(cnd_t *cond);
+int cnd_broadcast(cnd_t *cond);
+```
+
+%%ANKI
+Basic
+A condition variable must be used alongside what other synchronization primitive?
+Back: A mutex.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264227-->
+END%%
+
+%%ANKI
+Basic
+What is a condition variable?
+Back: A synchronization primitive used with a mutex to block threads until notification.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264229-->
+END%%
+
+%%ANKI
+Basic
+What two C standard functions are used to notify threads waiting on a condition variable?
+Back: `cnd_signal()` and `cnd_broadcast()`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264231-->
+END%%
+
+%%ANKI
+Basic
+What type is provided by the C standard for condition variable support?
+Back: `cnd_t`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264232-->
+END%%
+
+%%ANKI
+Basic
+Why must condition variables checked within a loop?
+Back: Waiting can return even when the condition expression did not change.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264233-->
+END%%
+
+%%ANKI
+Basic
+Which C standard function involving condition variables *must* be invoked within a critical section?
+Back: `cnd_wait()` (or its variants).
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264235-->
+END%%
+
+%%ANKI
+Basic
+*Why* must `cnd_wait()` be called within a critical section?
+Back: The call to `cnd_wait()` will unlock (and subsequently re-lock) the associated mutex.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264236-->
+END%%
+
+%%ANKI
+Basic
+Which C standard library includes the `cnd_t` type?
+Back: `<threads.h>`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264237-->
+END%%
+
+%%ANKI
+Basic
+What does the `cnd_signal()` function do?
+Back: Resumes a thread waiting on the associated condition variable.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264238-->
+END%%
+
+%%ANKI
+Basic
+What does the `cnd_broadcast()` function do?
+Back: Resumes all threads waiting on the associated condition variable.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264239-->
+END%%
+
+%%ANKI
+Cloze
+{1:`mtx_init()`} is to {2:`mtx_destroy()`} as {2:`cnd_init()`} is to {1:`cnd_destroy()`}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264240-->
+END%%
+
+%%ANKI
+Basic
+What C construct is a call to `cnd_wait()` typically wrapped within?
+Back: A `while` loop re-checking the condition expression.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264241-->
+END%%
+
+%%ANKI
+Basic
+How many condition variables can be used simultaneously with one mutex?
+Back: Any number.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264242-->
+END%%
+
+%%ANKI
+Basic
+How many mutexes can be used simultaneously with one condition variable?
+Back: Exactly one.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759170264243-->
+END%%
+
 ## Bibliography
 
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
