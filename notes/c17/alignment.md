@@ -11,7 +11,7 @@ tags:
 
 For a large class of modern ISAs, storage for basic C datatypes respect **self-alignment**. This means `char`s can start on any byte address, `short`s on any even address, 4-byte `int`s and `float`s must start on an address divisible by 4, and `double`s must start on an address divisible by 8. Likewise pointers are also self-aligned.
 
-`_Alignof` (or macro `alignof`) returns the alignment of a given type. `_Alignas` (or macro `alignas`) can be used to force allocation at a given alignment.
+`alignof` (`_Alignof`) returns the alignment of a given type. `alignas` (`_Alignas`) can be used to force allocation at a given alignment.
 
 %%ANKI
 Basic
@@ -42,13 +42,6 @@ Which signal is usually emitted on alignment issues?
 Back: `SIGBUS`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1741824798414-->
-END%%
-
-%%ANKI
-Cloze
-{1:`_Alignof`} is a {2:keyword} whereas {2:`alignof`} is a {1:macro}.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1741824798416-->
 END%%
 
 %%ANKI

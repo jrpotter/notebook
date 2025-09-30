@@ -1,14 +1,14 @@
 ---
 title: Declarations
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17
+FILE TAGS: c23
 tags:
-  - c17
+  - c23
 ---
 
 ## Overview
 
-A **declaration** specifies the interpretation and attributes of a set of identifiers. It indicates [[c17/index#Linkage|linkage]], [[storage|storage duration]], and part of the type of the entities that the **declarators** denote. For example, the following declaration has two declarators `x` and `y`, both of type `const int`, declared in file scope with static storage duration.
+A **declaration** specifies the interpretation and attributes of a set of identifiers. It indicates [[c23/index#Linkage|linkage]], [[storage|storage duration]], and part of the type of the entities that the **declarators** denote. For example, the following declaration has two declarators `x` and `y`, both of type `const int`, declared in file scope with static storage duration.
 
 ```c
 extern const int x, y;
@@ -277,7 +277,9 @@ END%%
 
 ### Initializers
 
-An **initializer** is an expression that gives an object a value at time of declaration. Only variable-length arrays (VLAs) do not allow for an initializer. The default initializer looks like `{0}`.
+An **initializer** is an expression that gives an object a value at time of declaration.
+
+All objects (except VLAs) can be zero-initialized with `= { 0 }`. Since C23, all objects (including VLAs) can instead be zero-initialized with `= {}`.
 
 %%ANKI
 Basic
@@ -327,7 +329,7 @@ END%%
 
 %%ANKI
 Basic
-What object types allow initializers?
+In C17, which object types allow initializers?
 Back: All but VLAs.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1725196021576-->
@@ -335,7 +337,7 @@ END%%
 
 %%ANKI
 Basic
-What object types do not allow initializers?
+In C17, which object types prohibit initializers?
 Back: Just variable-length arrays.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1725196021596-->
@@ -343,7 +345,23 @@ END%%
 
 %%ANKI
 Basic
-What is the default initializer?
+In C23, which object types allow initializers?
+Back: All of them.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759244265520-->
+END%%
+
+%%ANKI
+Basic
+In C23, which object types prohibit initializers?
+Back: None of them.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759244265530-->
+END%%
+
+%%ANKI
+Basic
+In C17, what serves as the default (zero) initializer?
 Back: `{0}`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1725196290195-->
@@ -351,10 +369,17 @@ END%%
 
 %%ANKI
 Basic
-`{0}` is a valid initializer for what object types?
-Back: All but VLAs.
+In C23, what serves as the default (zero) initializer?
+Back: `{}`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1725196290203-->
+<!--ID: 1759244265533-->
+END%%
+
+%%ANKI
+Basic
+`{0}` is a valid initializer for what object types?
+Back: All except VLAs.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 END%%
 
 %%ANKI
@@ -367,40 +392,38 @@ END%%
 
 ## Prototypes
 
-There exist two ways for a function declaration to use declarators: **parameter type lists** and **identifier type lists**. To make the distinction clear, consider the following ways of defining an `add` function:
+There exist two ways for a function declaration to use declarators: **parameter type lists** and **identifier type lists**. Note that identifier type lists were removed in the C23 standard though. To make the distinction clear, consider the following ways of defining an `add` function:
 
 ```c
 int f(int x, int y) { return x + y; }  // Paramter type list
 int f(x, y) int x; int y; { return x + y }  // Identifier type list
 ```
 
-A function **prototype** is a function declaration that specifies a function signature. There are three important points to make note of:
+A function **prototype** is a function declaration that specifies a function signature. A prototype with empty parentheses (e.g. `<T> foo()`) is interpreted differently depending on the standard:
 
-* Empty identifier lists are interpreted as "the compiler has not been told what this function's arguments are."
-* The standard prohibits declaring functions with a non-empty identifier list.
-* Empty parameter lists are not allowed.
+* Prior to C23, this is interpreted as an empty identifier list. That is, arguments may be available, but the compiler doesn't know what they are.
+* Since C23, on advent of identifier type list removal, this is unambiguously interpreted as `<T> foo(void)`.
 
-Therefore:
+Empty identifier lists are invalid. Thus prototypes are only possible with parameter type lists. Examples include:
 
 ```c
-// Uses an empty identifer list. This declares a function `foo`
-// that takes an unknown specification of arguments.
+// C17: Empty identifer list.
+//      `foo` takes an unknown specification of arguments.
+// C23: Equivalent to `void foo(void)`.
 void foo();
-// Uses a non-empty identifier list. Compiler error.
+// C17: Uses a non-empty identifier list. Compiler error.
 void foo(x, y);
-// Uses a non-empty identifier list. Compiler error.
+// C17: Uses a non-empty identifier list. Compiler error.
 void foo(x, y) int x; int y;
-// Uses a non-empty identifier list. Definitions allow this.
+// C17: Uses a non-empty identifier list. Definitions allow this.
 void foo(x, y) int x; int y; { }
-// Uses a non-empty parameter list. This prototypes a function
-// `foo` that takes no arguments.
+// Uses a non-empty parameter list.
+// This prototypes a function `foo` that takes no arguments.
 void foo(void);
-// Uses a non-empty parameter list. This prototypes and defines
-// a function `foo` that takes no arguments.
+// Uses a non-empty parameter list.
+// This defines a function `foo` that takes no arguments.
 void foo(void) {}
 ```
-
-Together these points imply a function prototype *must* use a parameter type list.
 
 %%ANKI
 Basic
@@ -454,9 +477,31 @@ Is the following a prototype or a declaration?
 ```c
 void foo();
 ```
-Back: A declaration.
+Back: N/A. Depends on the C standard.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1732031751479-->
+END%%
+
+%%ANKI
+Basic
+In C17, is the following a prototype or a declaration?
+```c
+void foo();
+```
+Back: A declaration.
+Reference: _Wikipedia_. “C23 (C standard revision).” September 7, 2025. [https://en.wikipedia.org/w/index.php?title=C23_(C_standard_revision)](https://en.wikipedia.org/w/index.php?title=C23_\(C_standard_revision\)&oldid=1310111059).
+<!--ID: 1759244265537-->
+END%%
+
+%%ANKI
+Basic
+In C23, is the following a prototype or a declaration?
+```c
+void foo();
+```
+Back: A prototype.
+Reference: _Wikipedia_. “C23 (C standard revision).” September 7, 2025. [https://en.wikipedia.org/w/index.php?title=C23_(C_standard_revision)](https://en.wikipedia.org/w/index.php?title=C23_\(C_standard_revision\)&oldid=1310111059).
+<!--ID: 1759244265540-->
 END%%
 
 %%ANKI
@@ -472,7 +517,7 @@ END%%
 
 %%ANKI
 Basic
-What compilation error does the following raise?
+Assume C17. What compilation error does the following raise?
 ```c
 void foo(x, y);
 ```
@@ -483,7 +528,18 @@ END%%
 
 %%ANKI
 Basic
-What compilation error does the following raise?
+Assume C23. What compilation error does the following raise?
+```c
+void foo(x, y) int x; int y {};
+```
+Back: Identifier type lists are not supported.
+Reference: _Wikipedia_. “C23 (C standard revision).” September 7, 2025. [https://en.wikipedia.org/w/index.php?title=C23_(C_standard_revision)](https://en.wikipedia.org/w/index.php?title=C23_\(C_standard_revision\)&oldid=1310111059).
+<!--ID: 1759244265542-->
+END%%
+
+%%ANKI
+Basic
+Assume C17. What compilation error does the following raise?
 ```c
 void foo(x, y) int x; int y;
 ```
@@ -494,7 +550,7 @@ END%%
 
 %%ANKI
 Basic
-What compilation error does the following raise?
+Assume C17. What compilation error does the following raise?
 ```c
 void foo(x, y) int x; int y; {}
 ```
@@ -505,7 +561,7 @@ END%%
 
 %%ANKI
 Basic
-What function prototype is declared in the following?
+Assume C17. What function prototype is declared in the following?
 ```c
 void foo(x, y) int x; int y; {}
 ```
@@ -516,7 +572,7 @@ END%%
 
 %%ANKI
 Basic
-What compilation error does the following raise?
+Assume C17. What compilation error does the following raise?
 ```c
 void foo();
 
@@ -529,13 +585,37 @@ END%%
 
 %%ANKI
 Basic
-Is the following a prototype, declaration, both, or neither?
+Assume C23. What compilation error does the following raise?
+```c
+void foo();
+
+int main(void) { foo(1); }
+```
+Back: Function `foo` takes no arguments.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1759244265545-->
+END%%
+
+%%ANKI
+Basic
+Assume C17. Is the following a prototype, declaration, both, or neither?
 ```c
 void f();
 ```
 Back: A declaration.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733492504375-->
+END%%
+
+%%ANKI
+Basic
+Assume C23. Is the following a prototype, declaration, both, or neither?
+```c
+void f();
+```
+Back: Both.
+Reference: _Wikipedia_. “C23 (C standard revision).” September 7, 2025. [https://en.wikipedia.org/w/index.php?title=C23_(C_standard_revision)](https://en.wikipedia.org/w/index.php?title=C23_\(C_standard_revision\)&oldid=1310111059).
+<!--ID: 1759244265548-->
 END%%
 
 %%ANKI
@@ -597,13 +677,24 @@ END%%
 
 %%ANKI
 Basic
-How many arguments does the following declaration specify?
+Assume C17. How many arguments does the following declaration specify?
 ```c
 void foo();
 ```
 Back: Some number unknown to the compiler.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1732031751531-->
+END%%
+
+%%ANKI
+Basic
+Assume C23. How many arguments does the following declaration specify?
+```c
+void foo();
+```
+Back: Zero.
+Reference: _Wikipedia_. “C23 (C standard revision).” September 7, 2025. [https://en.wikipedia.org/w/index.php?title=C23_(C_standard_revision)](https://en.wikipedia.org/w/index.php?title=C23_\(C_standard_revision\)&oldid=1310111059).
+<!--ID: 1759244265552-->
 END%%
 
 %%ANKI
@@ -619,7 +710,7 @@ END%%
 
 %%ANKI
 Basic
-Why might the following snippet raise a compilation error?
+Assume C17. Why might the following snippet raise a compilation error?
 ```c
 int foo();
 int foo(int a);
@@ -631,7 +722,19 @@ END%%
 
 %%ANKI
 Basic
-*Why* might the following snippet raise a compilation error?
+Assume C23. Why might the following snippet raise a compilation error?
+```c
+int foo();
+int foo(int a);
+```
+Back: These prototypes are incompatible (i.e. number of arguments don't match).
+Reference: _Wikipedia_. “C23 (C standard revision).” September 7, 2025. [https://en.wikipedia.org/w/index.php?title=C23_(C_standard_revision)](https://en.wikipedia.org/w/index.php?title=C23_\(C_standard_revision\)&oldid=1310111059).
+<!--ID: 1759244265555-->
+END%%
+
+%%ANKI
+Basic
+Assume C17. *Why* might the following snippet raise a compilation error?
 ```c
 int foo();
 int foo(float a);
@@ -643,7 +746,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* might the following snippet raise a compilation error?
+Assume C17. *Why* might the following snippet raise a compilation error?
 ```c
 int foo();
 int foo(char a);
@@ -655,7 +758,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* might the following snippet raise a compilation error?
+Assume C17. *Why* might the following snippet raise a compilation error?
 ```c
 int foo();
 int foo(double a);
@@ -940,6 +1043,55 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1757175451624-->
 END%%
 
+### Function Pointers
+
+Whenever a function pointer cannot be null, we can supply a function pointer parameter without a `*`. For example, the first line is a non-null variant of the second:
+
+```c
+int atexit(void handler(void));
+int atexit(void (*handler)(void));
+```
+
+%%ANKI
+Basic
+What distinguishes the function pointer parameters in the following lines?
+```c
+int atexit(void handler(void));
+int atexit(void (*handler)(void));
+```
+Back: The former cannot be handed a null pointer.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759238122407-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten to allow for a null function pointer parameter?
+```c
+int atexit(void handler(void));
+```
+Back:
+```c
+int atexit(void (*handler)(void));
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759238122410-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten to prohibit a null function pointer parameter?
+```c
+int atexit(void (*handler)(void));
+```
+Back:
+```c
+int atexit(void handler(void));
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759238122414-->
+END%%
+
 ### VMT Parameters
 
 Within a function prototype, a parameter can denote a VMT using `[*]` syntax. For example, the following prototypes are all (more or less) equivalent:
@@ -1178,3 +1330,4 @@ END%%
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 * Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+* _Wikipedia_. “C23 (C standard revision).” September 7, 2025. [https://en.wikipedia.org/w/index.php?title=C23_(C_standard_revision)](https://en.wikipedia.org/w/index.php?title=C23_\(C_standard_revision\)&oldid=1310111059).

@@ -322,7 +322,7 @@ If both types in question are array types, determining the composite type follow
 * If one type is an array of known constant size, the composite type is an array of that size.
 * Otherwise, if one type is a VLA whose size is specified by an expression that isn't evaluated, the behavior is undefined.
 * Otherwise, if one type is a VLA whose size is specified, the composite type is a VLA of that size.
-* Otherwise, if one type is a VLA of [[c17/declarations#Variable-Length Arrays|unspecified size]], the composite type is a VLA of unspecified size.
+* Otherwise, if one type is a VLA of [[c23/declarations#Variable-Length Arrays|unspecified size]], the composite type is a VLA of unspecified size.
 * Otherwise, both types are arrays of unknown size and the composite type is an array of unknown size.
 
 %%ANKI
@@ -1017,7 +1017,7 @@ END%%
 
 If both types in question are function types, determining the composite type follows these rules:
 
-* If only one type is a function type with a [[c17/declarations#Prototypes|parameter type list]], the composite type is a function type with the parameter type list.
+* If only one type is a function type with a [[c23/declarations#Prototypes|parameter type list]], the composite type is a function type with the parameter type list.
 * If both types are function types with parameter type lists, the type of each parameter in the composite parameter type list is the composite type of the corresponding parameters.
 
 %%ANKI

@@ -1,16 +1,26 @@
 ---
-title: C17
+title: C23
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17
+FILE TAGS: c23
 tags:
-  - c17
+  - c23
 ---
 
 ## Overview
 
+The five latest C standards are called C89, C99, C11, C17, and C23.
+
 > A C program can be seen as a sort of machine that manipulates values: the particular values that variables of the program have at a given time, and also intermediate values that are the result of computed expressions.
 
 This quote describes C's **abstract state machine**. Whatever instructions a C program compiles down to is "unimportant" provided that all **observable states** are correctly reproduced. This is the essence of optimization.
+
+%%ANKI
+Basic
+What names are given to the five latest C standards?
+Back: C89, C99, C11, C17, and C23.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759238122402-->
+END%%
 
 %%ANKI
 Basic

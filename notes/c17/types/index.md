@@ -195,6 +195,8 @@ The bottom of the type hierarchy consists of **simple types**. This comprises th
 | -             | `double complex`      | 8      | 8      |
 | -             | `long double complex` | -      | -      |
 
+Since C23, number literals can use an apostrophe (`'`) as a digit separator. For example, `10000` can instead be written as `10'000`.
+
 %%ANKI
 Cloze
 The {`<stdint.h>`} header file contains {fixed width data integral types}.
@@ -390,6 +392,30 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1718281813458-->
 END%%
 
+%%ANKI
+Basic
+Which C standard introduced the digit separator?
+Back: C23.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759238122378-->
+END%%
+
+%%ANKI
+Basic
+How is `10000` written equivalently with a digit separator?
+Back: As `10'000`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759238122388-->
+END%%
+
+%%ANKI
+Basic
+What character is used as a digit separator in C number literals?
+Back: The apostrophe (`'`).
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759238122390-->
+END%%
+
 ### Integers
 
 **Narrow types** cannot be used directly in arithmetic. Instead they are first promoted to a wider type. On almost every system, this promotion will be to a `signed int` of the same value, regardless of the signedness of the narrow type itself.
@@ -497,6 +523,30 @@ END%%
 | `unsigned int`       | No     | 3    | 16            |
 | `unsigned long`      | No     | 4    | 32            |
 | `unsigned long long` | No     | 5    | 64            |
+
+%%ANKI
+Basic
+What boolean-related keywords are available in C17?
+Back: Just `_Bool`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759238122392-->
+END%%
+
+%%ANKI
+Basic
+What boolean-related keywords are available in C23?
+Back: `_Bool`, `bool`, `true`, and `false`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759238122395-->
+END%%
+
+%%ANKI
+Basic
+In C17, access to `bool` is available in what header?
+Back: `<stdbool.h>`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759238122397-->
+END%%
 
 %%ANKI
 Basic
@@ -1104,14 +1154,23 @@ END%%
 
 Negative integer literals are typed in a counterintuitive way. When the compiler sees a number of form `-X`, the type of `X` is determined *before* being negated. Promotion follows the **first fit rule** described as follows:
 
-| Decimal     | Oct/Hex              |
-| ----------- | -------------------- |
-| `int`       | `int`                |
-| `long`      | `unsigned`           |
-| `long long` | `long`               |
-| `-`         | `unsigned long`      |
-| `-`         | `long long`          |
-| `-`         | `unsigned long long` |
+| Decimal     | Binary, Octal, and Hexadecimal |
+| ----------- | ------------------------------ |
+| `int`       | `int`                          |
+| `long`      | `unsigned`                     |
+| `long long` | `long`                         |
+| `-`         | `unsigned long`                |
+| `-`         | `long long`                    |
+| `-`         | `unsigned long long`           |
+
+Integer constants can be made a certain signedness or type by using the following suffixes. Note these supply a lower bound on the rank of the resulting type.
+
+| Suffix | Type (At Least)      |
+| ------ | -------------------- |
+| `U`    | `unsigned`           |
+| `L`    | `long`               |
+| `LL`   | `long long`          |
+| `ULL`  | `unsigned long long` |
 
 %%ANKI
 Basic
@@ -1196,6 +1255,20 @@ END%%
 
 %%ANKI
 Basic
+The first fit rule lists what types (in order) for binary integer literals?
+Back:
+1. `int`
+2. `unsigned`
+3. `long`
+4. `unsigned long`
+5. `long long`
+6. `unsigned long long`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759242450702-->
+END%%
+
+%%ANKI
+Basic
 How does the compiler process integer literal `-X`?
 Back: By first determining the type of `X` and then negating the value.
 Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
@@ -1243,10 +1316,33 @@ Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems
 END%%
 
 %%ANKI
+Basic
+How do we specify a binary integer literal?
+Back: Prepend the literal with a `0b` or `0B`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1759242450710-->
+END%%
+
+%%ANKI
+Basic
+Why avoid negative binary integer literals?
+Back: Depending on value, the resulting type may be `unsigned`.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1759242450714-->
+END%%
+
+%%ANKI
 Cloze
 Octal literals are to {`0`} whereas hexadecimal literals are to {`0x`/`0X`}.
 Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1710673807997-->
+END%%
+
+%%ANKI
+Cloze
+Hexadecimal literals are to {`0x/OX`} whereas binary literals are to {`0b`/`0B`}.
+Reference: Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1759242450717-->
 END%%
 
 %%ANKI
@@ -1362,15 +1458,6 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1714677608769-->
 END%%
 
-Integer constants can be made a certain signedness or type by using the following suffixes:
-
-| Suffix | Type                 |
-| ------ | -------------------- |
-| `U`    | `unsigned`           |
-| `L`    | `long`               |
-| `LL`   | `long long`          |
-| `ULL`  | `unsigned long long` |
-
 %%ANKI
 Basic
 Is an integer literal without a suffix (e.g. `U`) signed or unsigned?
@@ -1389,7 +1476,7 @@ END%%
 
 %%ANKI
 Basic
-What suffix can be used to denote an `unsigned` integer literal?
+What suffix can be used to denote an integer literal with rank at least `unsigned`?
 Back: Case-insensitive `U`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708615249876-->
@@ -1397,7 +1484,7 @@ END%%
 
 %%ANKI
 Basic
-What suffix can be used to denote a `long` integer literal?
+What suffix can be used to denote an integer literal with rank at least `long`?
 Back: Case-insensitive `L`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708631820847-->
@@ -1405,7 +1492,7 @@ END%%
 
 %%ANKI
 Basic
-What suffix can be used to denote a `long long` integer literal?
+What suffix can be used to denote an integer literal with rank at least `long long`?
 Back: Case-insensitive `LL`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708631820850-->
@@ -1413,7 +1500,7 @@ END%%
 
 %%ANKI
 Basic
-What suffix can be used to denote an `unsigned long long` integer literal?
+What suffix can be used to denote an integer literal with rank at least `unsigned long long`?
 Back: Case-insensitive `ULL`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708631820856-->
@@ -1513,12 +1600,12 @@ END%%
 
 #### Literals
 
-Floating-point constants can be made a certain type by using the following suffixes:
+Floating-point constants can be made a certain type by using the following suffixes.
 
-| Suffix | Type          |
-| ------ | ------------- |
-| `F`    | `float`       |
-| `L`    | `long double` |
+| Suffix | Type (At Least) |
+| ------ | --------------- |
+| `F`    | `float`         |
+| `L`    | `long double`   |
 
 %%ANKI
 Basic
@@ -2255,9 +2342,45 @@ Is the following an FLA or VLA?
 int n = 2;
 double a[n] = {0};
 ```
-Back: N/A. Variable-sized objects may not be initialized.
+Back: N/A. Variable-sized objects may not be initialized with `{0}`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727957576041-->
+END%%
+
+%%ANKI
+Basic
+Is the following valid C17 code?
+```c
+int n = 2;
+double a[n] = {};
+```
+Back: No. Empty initializer `{}` is not available in C17.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759242450720-->
+END%%
+
+%%ANKI
+Basic
+Is the following valid C23 code?
+```c
+int n = 2;
+double a[n] = {0};
+```
+Back: No. A VLA should be initialized with `{}`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759242450723-->
+END%%
+
+%%ANKI
+Basic
+Is the following valid C23 code?
+```c
+int n = 2;
+double a[n] = {};
+```
+Back: Yes.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759242450726-->
 END%%
 
 %%ANKI
