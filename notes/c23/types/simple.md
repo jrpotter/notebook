@@ -333,6 +333,8 @@ END%%
 
 ## Unsigned Integers
 
+Unsigned integers employ [[integer#Unsigned Encoding|unsigned encoding]]. Overflow is well-defined, wrapping around as expected.
+
 | Name                 | Narrow | Rank | Minimum Width |
 | -------------------- | ------ | ---- | ------------- |
 | `bool`               | Yes    | 0    | 1             |
@@ -345,8 +347,24 @@ END%%
 
 %%ANKI
 Basic
+In C17, unsigned integer types use what encoding?
+Back: Unsigned encoding.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759322173241-->
+END%%
+
+%%ANKI
+Basic
+In C23, unsigned integer types use what encoding?
+Back: Unsigned encoding.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759322173244-->
+END%%
+
+%%ANKI
+Basic
 What boolean-related keywords are available in C17?
-Back: Just `_Bool`.
+Back: `_Bool`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759238122392-->
 END%%
@@ -354,7 +372,7 @@ END%%
 %%ANKI
 Basic
 What boolean-related keywords are available in C23?
-Back: `_Bool`, `bool`, `true`, and `false`.
+Back: `bool` (with alternative spelling `_Bool`), `true`, and `false`.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759238122395-->
 END%%
@@ -584,6 +602,8 @@ END%%
 
 ## Signed Integers
 
+Prior to C23, signed integers had no required encoding. Since C23, they must use [[integer#Two's-Complement|two's-complement]]. Overflow is undefined.
+
 | Name               | Narrow | Rank | Minimum Width |
 | ------------------ | ------ | ---- | ------------- |
 | `char` (maybe)     | Yes    | 1    | -             |
@@ -595,6 +615,30 @@ END%%
 | `float`            | -      | -    | -             |
 | `double`           | -      | -    | -             |
 | `long double`      | -      | -    | -             |
+
+%%ANKI
+Basic
+In C17, signed integer types use what encoding?
+Back: Indeterminate. This is implementation-specific.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759322173248-->
+END%%
+
+%%ANKI
+Basic
+In C23, signed integer types use what encoding?
+Back: Two's-complement.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759322173251-->
+END%%
+
+%%ANKI
+Basic
+For which of signed and/or unsigned integer types is overflow well-defined?
+Back: Just unsigned integer types.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759322173254-->
+END%%
 
 %%ANKI
 Basic
@@ -1004,3 +1048,4 @@ END%%
 * Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* _Wikipedia_. “C23 (C standard revision).” September 7, 2025. [https://en.wikipedia.org/w/index.php?title=C23_(C_standard_revision)](https://en.wikipedia.org/w/index.php?title=C23_\(C_standard_revision\)&oldid=1310111059).

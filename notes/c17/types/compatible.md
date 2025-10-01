@@ -605,7 +605,7 @@ END%%
 
 ### Pointers
 
-Two [[pointers]] are compatible if their target types are compatible and they have the same type qualifiers.
+Two [[c17/types/pointers]] are compatible if their target types are compatible and they have the same type qualifiers.
 
 %%ANKI
 Basic

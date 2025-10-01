@@ -673,7 +673,7 @@ END%%
 
 #### Register
 
-In contrast to `auto`, there also exists a `register` [[#Storage-Class Specifiers|storage-class specifier]]. The `&` operator is not allowed for variables declared with `register` meaning variables declared with `register` can't [[pointers#Aliasing|alias]].
+In contrast to `auto`, there also exists a `register` [[#Storage-Class Specifiers|storage-class specifier]]. The `&` operator is not allowed for variables declared with `register` meaning variables declared with `register` can't [[c17/types/pointers#Aliasing|alias]].
 
 Because of [[c17/types/index#Arrays|array-to-pointer decay]], arrays with storage-class `register` are useless.
 

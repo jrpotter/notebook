@@ -1,21 +1,21 @@
 ---
 title: Runtime
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17::crt
+FILE TAGS: c23::crt
 tags:
-  - c17
+  - c23
   - crt
 ---
 
 ## Overview
 
-The C runtime is a collection of object files provided by the compiler toolchain. It contains functionality that wraps around the actual invocation of `main()`. Namely, the following files are included:
+The C runtime is a collection of object files provided by the compiler toolchain. It contains functionality that wraps around the actual invocation of `main`. Namely, the following files are included:
 
 * `crt0.o` or `crt1.o` (the number indicates the ABI version)
 * `crti.o` (used for partially constructing the [[elf#.init|.init]] and [[elf#.fini|.fini]] sections)
 * `crtn.o` (used for partially constructing the [[elf#.init|.init]] and [[elf#.fini|.fini]] sections)
 
-The `_init()` and `_fini()` functions are assembled by the linker in three parts:
+The `_init` and `_fini` functions are assembled by the linker in three parts:
 
 1. The function prologues are built from `crti.o`
 2. The body is built from linked objects
@@ -50,7 +50,7 @@ END%%
 %%ANKI
 Basic
 What is the primary purpose of the (say) `crt0.o` file?
-Back: It wraps calls to `main()` with initialization and finalization code.
+Back: It wraps calls to `main` with initialization and finalization code.
 Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
 <!--ID: 1757425364818-->
 END%%
@@ -92,7 +92,7 @@ END%%
 %%ANKI
 Basic
 With respect to the C runtime, what function is usually invoked first?
-Back: `_start()`
+Back: `_start`
 Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
 <!--ID: 1757425364837-->
 END%%
@@ -100,7 +100,7 @@ END%%
 %%ANKI
 Basic
 What function is exported from the `.init` section?
-Back: `_init()`
+Back: `_init`
 Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
 Tags: linker::elf
 <!--ID: 1757425364841-->
@@ -109,7 +109,7 @@ END%%
 %%ANKI
 Basic
 What function is exported from the `.fini` section?
-Back: `_fini()`
+Back: `_fini`
 Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
 Tags: linker::elf
 <!--ID: 1757425364844-->
@@ -117,16 +117,16 @@ END%%
 
 %%ANKI
 Basic
-Which compiler-provided function is used to invoke `main()`?
-Back: `_start()`
+Which compiler-provided function is used to invoke `main`?
+Back: `_start`
 Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
 <!--ID: 1757425468915-->
 END%%
 
 %%ANKI
 Basic
-Why is the `_start()` function introduced as a wrapper around `main()`?
-Back: It calls initialization and finalization code before and after `main()` respectively.
+Why is the `_start` function introduced as a wrapper around `main`?
+Back: It calls initialization and finalization code before and after `main` respectively.
 Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
 <!--ID: 1757425468923-->
 END%%
@@ -165,7 +165,7 @@ END%%
 
 ## Startup
 
-The `main()` function is typically described as the special function serving as the entry point to C programs. Though this is not technically true, from a practical perspective it is true enough. It can have several different prototypes, but the following two are always possible:
+The `main` function is typically described as the special function serving as the entry point to C programs. Though this is not technically true, from a practical perspective it is true enough. It can have several different prototypes, but the following two are always possible:
 
 ```c
 int main(void);
@@ -179,14 +179,14 @@ In hosted environments, a third argument `char *envp[]` is included. This points
 %%ANKI
 Basic
 Which user-defined function serves as the entry point of C programs?
-Back: `main()`
+Back: `main`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415792-->
 END%%
 
 %%ANKI
 Basic
-How many possible valid prototypes of `main()` are available?
+How many possible valid prototypes of `main` are available?
 Back: Indeterminate. Depends on the system.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415798-->
@@ -194,7 +194,7 @@ END%%
 
 %%ANKI
 Basic
-How many "official" prototypes of `main()` are available?
+How many "official" prototypes of `main` are available?
 Back: Two.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415801-->
@@ -202,7 +202,7 @@ END%%
 
 %%ANKI
 Basic
-What are the "official" prototypes of `main()`?
+What are the "official" prototypes of `main`?
 Back:
 ```c
 int main(void);
@@ -214,19 +214,7 @@ END%%
 
 %%ANKI
 Basic
-What are the "official" prototypes of `main()`?
-Back:
-```c
-int main(void);
-int main(int argc, char* argv[argc + 1]);
-```
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1757166206673-->
-END%%
-
-%%ANKI
-Basic
-What are the only portable values that `main()` can return?
+What are the only portable values that `main` can return?
 Back: `EXIT_SUCCESS` and `EXIT_FAILURE`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415807-->
@@ -258,7 +246,7 @@ END%%
 
 %%ANKI
 Cloze
-Returning {1:`s`} in {1:`main()`} is equivalent to invoking function {2:`exit()`} with argument {2:`s`}.
+Returning {1:`s`} in {1:`main`} is equivalent to invoking function {2:`exit`} with argument {2:`s`}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415819-->
 END%%
@@ -370,7 +358,7 @@ END%%
 
 %%ANKI
 Basic
-In hosted environments, what name is traditionally given to `main()`'s third argument?
+In hosted environments, what name is traditionally given to `main`'s third argument?
 Back: `envp`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1757166206676-->
@@ -378,7 +366,7 @@ END%%
 
 %%ANKI
 Basic
-In hosted environments, what type is given to `main()`'s `envp` argument?
+In hosted environments, what type is given to `main`'s `envp` argument?
 Back: `char *envp[]`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1757166206678-->
@@ -386,7 +374,7 @@ END%%
 
 %%ANKI
 Basic
-In hosted environments, what does the `envp` argument to `main()` contain?
+In hosted environments, what does the `envp` argument to `main` contain?
 Back: Environment variables.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1757166206681-->
@@ -394,7 +382,7 @@ END%%
 
 %%ANKI
 Basic
-In hosted environments, what format is an entry in `main()`'s `envp` argument in?
+In hosted environments, what format is an entry in `main`'s `envp` argument in?
 Back: `NAME=value`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1757166206683-->
@@ -402,7 +390,7 @@ END%%
 
 ## Shutdown
 
-Returning from `main()` is semantically equivalent to invoking the `exit()` function. On `exit()`, any functions registered with `atexit()` are called in reverse order of registration. A number of cleanup operations (e.g. closing open file descriptors, flushing buffers, etc.) are also performed.
+Returning from `main` is semantically equivalent to invoking the `exit` function. On `exit`, any functions registered with `atexit` are called in reverse order of registration. A number of cleanup operations (e.g. closing open file descriptors, flushing buffers, etc.) are also performed.
 
 ```c
 _Noreturn void exit(int status);
@@ -410,14 +398,14 @@ _Noreturn void exit(int status);
 
 Other termination functions exist:
 
-* `quick_exit()`
-	* Functions registered with `at_quick_exit()` are called in reverse order.
+* `quick_exit`
+	* Functions registered with `at_quick_exit` are called in reverse order.
 	* Other cleanup operations are implementation-defined.
-* `_Exit()`
-	* No functions registered with `atexit()` or `at_quick_exit()` are run. 
+* `_Exit`
+	* No functions registered with `atexit` or `at_quick_exit` are run. 
 	* Other cleanup operations are implementation-defined.
 
-Unlike the above three, `abort()` can be used to cause abnormal program termination.
+Unlike the above three, `abort` can be used to cause abnormal program termination.
 
 ```c
 _Noreturn void abort(void);
@@ -425,23 +413,23 @@ _Noreturn void abort(void);
 
 %%ANKI
 Basic
-Returning from `main()` is semantically equivalent to calling what stdlib function?
-Back: `exit()`
+Returning from `main` is semantically equivalent to calling what stdlib function?
+Back: `exit`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759031903272-->
 END%%
 
 %%ANKI
 Basic
-Which function is used to register callbacks on `exit()`?
-Back: `atexit()`
+Which function is used to register callbacks on `exit`?
+Back: `atexit`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759031903275-->
 END%%
 
 %%ANKI
 Basic
-How many functions can be registered with `atexit()`?
+How many functions can be registered with `atexit`?
 Back: At least 32.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759033147758-->
@@ -449,38 +437,38 @@ END%%
 
 %%ANKI
 Basic
-What are the other two alternatives usually discussed alongside `exit()`?
-Back: `quick_exit()` and `_Exit()`.
+What are the other two alternatives usually discussed alongside `exit`?
+Back: `quick_exit` and `_Exit`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759031903278-->
 END%%
 
 %%ANKI
 Cloze
-{1:`exit()`} is to {2:`atexit()`} whereas {2:`quick_exit()`} is to {1:`at_quick_exit()`}.
+{1:`exit`} is to {2:`atexit`} whereas {2:`quick_exit`} is to {1:`at_quick_exit`}.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759031903281-->
 END%%
 
 %%ANKI
 Basic
-What function is used to register callbacks on `exit()`?
-Back: `atexit()`
+What function is used to register callbacks on `exit`?
+Back: `atexit`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759031903285-->
 END%%
 
 %%ANKI
 Basic
-What function is used to register callbacks on `quick_exit()`?
-Back: `at_quick_exit()`
+What function is used to register callbacks on `quick_exit`?
+Back: `at_quick_exit`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759031903288-->
 END%%
 
 %%ANKI
 Basic
-How many functions can be registered with `at_quick_exit()`?
+How many functions can be registered with `at_quick_exit`?
 Back: At least 32.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759033147762-->
@@ -488,7 +476,7 @@ END%%
 
 %%ANKI
 Basic
-What function is used to register callbacks on `_Exit()`?
+What function is used to register callbacks on `_Exit`?
 Back: N/A.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759031903290-->
@@ -496,48 +484,48 @@ END%%
 
 %%ANKI
 Basic
-Which of `exit()` or `_Exit()` is generally faster?
-Back: `_Exit()`
+Which of `exit` or `_Exit` is generally faster?
+Back: `_Exit`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759031903294-->
 END%%
 
 %%ANKI
 Basic
-Which of `exit()` or `_Exit()` is generally safer?
-Back: `exit()`
+Which of `exit` or `_Exit` is generally safer?
+Back: `exit`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759031903296-->
 END%%
 
 %%ANKI
 Basic
-When might you prefer `quick_exit()` over `exit()`?
-Back: When unconcerned with cleanup operations performed by `exit()`.
+When might you prefer `quick_exit` over `exit`?
+Back: When unconcerned with cleanup operations performed by `exit`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759031903299-->
 END%%
 
 %%ANKI
 Basic
-When might you prefer `_Exit()` over `exit()`?
-Back: When unconcerned with cleanup operations performed by `exit()`.
+When might you prefer `_Exit` over `exit`?
+Back: When unconcerned with cleanup operations performed by `exit`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759031903303-->
 END%%
 
 %%ANKI
 Basic
-When might you prefer `_Exit()` over `quick_exit()`?
-Back: When unconcerned with running functions registered by `at_quick_exit()`.
+When might you prefer `_Exit` over `quick_exit`?
+Back: When unconcerned with running functions registered by `at_quick_exit`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759031903306-->
 END%%
 
 %%ANKI
 Basic
-Which of `exit()`, `quick_exit()`, `_Exit()`, and `abort()` cause normal program termination?
-Back: `exit()`, `quick_exit()`, and `_Exit()`.
+Which of `exit`, `quick_exit`, `_Exit`, and `abort` cause normal program termination?
+Back: `exit`, `quick_exit`, and `_Exit`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759031903309-->
 END%%
