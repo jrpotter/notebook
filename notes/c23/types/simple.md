@@ -263,7 +263,9 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1723859121972-->
 END%%
 
-## Character Types
+## Types
+
+### Characters
 
 The three types `char`, `signed char`, and `unsigned char` are collectively called the **character types**. The implementation defines `char` to have the same range, representation, and behavior as either `signed char` or `unsigned char`, but is considered incompatible with both. That is, it is a distinct type in the eyes of the type system.
 
@@ -331,7 +333,7 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1732622657256-->
 END%%
 
-## Unsigned Integers
+### Unsigned Integers
 
 Unsigned integers employ [[integer#Unsigned Encoding|unsigned encoding]]. Overflow is well-defined, wrapping around as expected.
 
@@ -600,7 +602,7 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1727552157086-->
 END%%
 
-## Signed Integers
+### Signed Integers
 
 Prior to C23, signed integers had no required encoding. Since C23, they must use [[integer#Two's-Complement|two's-complement]]. Overflow is undefined.
 
@@ -815,7 +817,7 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1727552157088-->
 END%%
 
-## Enumerations
+### Enumerations
 
 **Enumerations**, declared with the `enum` keyword, are mappings between identifiers and integer values. Members of an `enum` are called **enumeration constants**.
 
@@ -937,7 +939,7 @@ END%%
 
 %%ANKI
 Basic
-In C17, what underlying type is associated with `enum`s?
+Consider an `enum` in C17. What is its underlying type?
 Back: A `char`, signed integer type, or unsigned integer type.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759271567047-->
@@ -945,7 +947,7 @@ END%%
 
 %%ANKI
 Basic
-In C17, ICEs used to define enumeration constants are required to fit within what type?
+Consider an `enum` in C17. ICEs used to define its enumeration constants must fit within what type?
 Back: `signed int`.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759271567057-->
@@ -953,7 +955,7 @@ END%%
 
 %%ANKI
 Basic
-In C23, what underlying type is associated with `enum`s?
+Consider an `enum` in C23 with no fixed type. What is its underlying type?
 Back: A `char`, signed integer type, or unsigned integer type.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759271567060-->
@@ -961,7 +963,7 @@ END%%
 
 %%ANKI
 Basic
-In C23, ICEs used to define enumeration constants are required to fit within what type?
+Consider an `enum` in C23. ICEs used to define its enumeration constants must fit within what type?
 Back: That of the underlying type of the corresponding `enum`.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759271567063-->
@@ -983,7 +985,7 @@ END%%
 
 %%ANKI
 Basic
-Assume C23. What can be said about an `enum`'s underlying type if its constants are defined with decimal literals?
+Consider an `enum` in C23 with no fixed type. What can be said about its underlying type if all constants are defined with decimal literals?
 Back: It must be `signed`.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759271567069-->
@@ -991,7 +993,7 @@ END%%
 
 %%ANKI
 Basic
-Assume C23. What can be said about the underlying type of an `enum` if its constants are defined with hexadecimal literals?
+Consider an `enum` in C23 with no fixed type. What can be said about its underlying type if all constants are defined with hexadecimal literals?
 Back: It may be `signed` or `unsigned`.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759271567072-->
@@ -999,7 +1001,7 @@ END%%
 
 %%ANKI
 Basic
-In C17, what kind of integer expressions are enumeration constants limited to?
+Assume C17. What kind of integer expressions are enumeration constants limited to?
 Back: ICEs with value representable as an `int`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1727022810827-->
@@ -1007,16 +1009,16 @@ END%%
 
 %%ANKI
 Basic
-In C17, how do you define an `enum` with underlying type `short`?
-Back: N/A. The choice of underlying type was implementation-defined.
+Assume C17. How do you define an `enum` with underlying type `short`?
+Back: N/A. The choice of underlying type is implementation-defined.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759272953349-->
 END%%
 
 %%ANKI
 Basic
-In C23, how do you define an `enum` with underlying type `short`?
-Back: By including `: short` prior to the `enum` definition.
+Assume C23. How do you define an `enum` with underlying type `short`?
+Back: By including `: short` prior to the `enum` body.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759272953351-->
 END%%
@@ -1041,6 +1043,303 @@ enum X { A = 0, B, C };
 Back: `signed int`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759272953356-->
+END%%
+
+## Usual Arithmetic Conversions
+
+As a general rule, the result of an operation has the type of the operand with wider range. The usual arithmetic conversions behave according to the following pattern:
+
+1. Determine a **common real type** for the operands and result.
+2. Convert each operand, without change of type domain, to a type with real type matching the common real type.
+3. Unless explicitly stated otherwise, the common real type is the corresponding real type of the result, whose type domain is that of the operands if they are the same and complex otherwise.
+
+Common real types are prioritized in the following order:
+
+1. `long double`
+2. `double`
+3. `float`
+4. If both operands have the same signedness, the higher ranked type.
+5. If the unsigned operand has rank $\geq$ than that of the other, the unsigned type.
+6. If the signed operand type can accommodate that of the other, the signed type.
+7. The unsigned integer type corresponding to that of the signed integer type.
+
+%%ANKI
+Basic
+What is the common real type of `a` and `b`?
+```c
+long double a;
+long double complex b;
+```
+Back: `long double`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203391-->
+END%%
+
+%%ANKI
+Basic
+What is the common real type of `a` and `b`?
+```c
+long double a;
+long complex b;
+```
+Back: `long double`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203395-->
+END%%
+
+%%ANKI
+Basic
+What is the type domain of `a + b`?
+```c
+long double a;
+long complex b;
+```
+Back: Complex.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203398-->
+END%%
+
+%%ANKI
+Basic
+What is the common real type of `a` and `b`?
+```c
+double complex a;
+long b;
+```
+Back: `double`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203402-->
+END%%
+
+%%ANKI
+Basic
+What is the type domain of `a + b`?
+```c
+long double a;
+long complex b;
+```
+Back: Complex.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+END%%
+
+%%ANKI
+Basic
+What is the common real type of `a` and `b`?
+```c
+float a;
+double b;
+```
+Back: `double`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203405-->
+END%%
+
+%%ANKI
+Basic
+What is the common real type of `a` and `b`?
+```c
+long long a;
+float b;
+```
+Back: `float`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203408-->
+END%%
+
+%%ANKI
+Basic
+What is the type domain of `a + b`?
+```c
+long long a;
+float b;
+```
+Back: Real.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203419-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the common real type of `a` and `b` equal to `float`?
+```c
+long long a;
+float b;
+```
+Back: Because floating-point types have priority over integer types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203427-->
+END%%
+
+%%ANKI
+Basic
+What is the type domain of `a + b`?
+```c
+long long a;
+long long b;
+```
+Back: Real.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203431-->
+END%%
+
+%%ANKI
+Basic
+What is the common real type of `a` and `b`?
+```c
+long long a;
+long long b;
+```
+Back: `long long`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203436-->
+END%%
+
+%%ANKI
+Basic
+What is the common real type of `a` and `b`?
+```c
+unsigned int a;
+signed short b;
+```
+Back: `unsigned int`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203440-->
+END%%
+
+%%ANKI
+Basic
+What is the common real type of `a` and `b`?
+```c
+unsigned a;
+signed int b;
+```
+Back: `unsigned`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203445-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the common real type of `a` and `b` equal to `unsigned`?
+```c
+unsigned a;
+signed int b;
+```
+Back: Because `unsigned` has rank $\geq$ that of `signed int`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203450-->
+END%%
+
+%%ANKI
+Basic
+What is the type domain of `a + b`?
+```c
+unsigned a;
+signed int b;
+```
+Back: Real.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203454-->
+END%%
+
+%%ANKI
+Basic
+What is the type domain of `a + b`?
+```c
+unsigned short a;
+signed int b;
+```
+Back: Real.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203469-->
+END%%
+
+%%ANKI
+Basic
+What is the common real type of `a + b`?
+```c
+unsigned short a;
+signed int b;
+```
+Back: Indeterminate.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1726840632804-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the common real type of `a + b` indeterminate?
+```c
+unsigned short a;
+int b;
+```
+Back: Because the rank of `unsigned short` is $<$ that of `int`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203475-->
+END%%
+
+%%ANKI
+Basic
+What *might* the common real type of `a + b` be?
+```c
+unsigned short a;
+signed int b;
+```
+Back: `signed int` or `unsigned int`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203479-->
+END%%
+
+%%ANKI
+Basic
+When is the common real type of `a + b` equal to `signed int`?
+```c
+unsigned short a;
+signed int b;
+```
+Back: When `signed int` can represent all the values of `unsigned short`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203484-->
+END%%
+
+%%ANKI
+Basic
+When is the common real type of `a + b` equal to `unsigned int`?
+```c
+unsigned short a;
+signed int b;
+```
+Back: When `signed int` cannot represent all the values of `unsigned short`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203488-->
+END%%
+
+%%ANKI
+Basic
+When is the common real type of `a + b` equal to `unsigned short`?
+```c
+unsigned short a;
+signed int b;
+```
+Back: N/A. It never is.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203492-->
+END%%
+
+%%ANKI
+Basic
+Suppose `a` and `b` has signed and unsigned types respectively. When is `a + b` signed?
+Back: When `b`'s type has lower rank and the range of `b` is included in the range of `a`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203460-->
+END%%
+
+%%ANKI
+Basic
+Suppose `a` and `b` have signed and unsigned types respectively. When is `a + b` unsigned?
+Back: When `b`'s type has higher rank or the range of `a` cannot fit the range of `b`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724762203465-->
 END%%
 
 ## Bibliography

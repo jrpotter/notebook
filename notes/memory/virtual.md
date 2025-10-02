@@ -1396,7 +1396,7 @@ END%%
 
 ### Shared/Private
 
-An object can be mapped into an area of virtual memory as either a **shared object** or a **private object**. Only a single copy of a shared object needs to be stored in physical memory. Private objects are mapped into virtual memory using **copy-on-write** (COW). Once a process attempts to write to a private object, the kernel produces a copy the process writes to instead.
+An object can be mapped into an area of virtual memory as either a **shared object** or a **private object**. Only a single copy of a shared object needs to be stored in physical memory. Private objects are mapped into virtual memory using **copy-on-write** (COW). Once a process attempts to write to a private object, the kernel produces a copy that the process writes to instead.
 
 %%ANKI
 Cloze
@@ -1422,24 +1422,6 @@ Back: As either a shared object or private object.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: os::linux
 <!--ID: 1755918866260-->
-END%%
-
-%%ANKI
-Basic
-Assuming appropriate permissions, how are changes to a shared object reflected on disk?
-Back: Changes are not reflected in the original object on disk.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: os::linux
-<!--ID: 1755918866264-->
-END%%
-
-%%ANKI
-Basic
-Assuming appropriate permissions, how are changes to a private object reflected on disk?
-Back: Changes are not reflected in the original object on disk.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: os::linux
-<!--ID: 1755918866269-->
 END%%
 
 %%ANKI

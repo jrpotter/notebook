@@ -473,17 +473,6 @@ END%%
 
 %%ANKI
 Basic
-Is the following a prototype or a declaration?
-```c
-void foo();
-```
-Back: N/A. Depends on the C standard.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1732031751479-->
-END%%
-
-%%ANKI
-Basic
 In C17, is the following a prototype or a declaration?
 ```c
 void foo();

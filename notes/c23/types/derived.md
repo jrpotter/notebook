@@ -509,7 +509,171 @@ Tags: processor::x86-64
 <!--ID: 1731952634170-->
 END%%
 
+### Structure
+
+A **structure** is used to combine multiple objects of potentially different data types together into a single construct. Except for VLAs, any data type is allowed to be a `struct` member.
+
+%%ANKI
+Cloze
+{Structures} combine items that may have different {base types}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576087-->
+END%%
+
+%%ANKI
+Basic
+What is the underlined portion of the following declaration called?
+```c
+struct ___ { ... };
+```
+Back: The tag.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892126-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `X`'s from one another in the following?
+```c
+struct X { ... } X;
+```
+Back: The first `X` is a tag whereas the second is a variable with type `struct X`.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892127-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `X`'s from one another in the following?
+```c
+typedef struct X { ... } X;
+```
+Back: The first `X` is a tag whereas the second is an alias for type `struct X`.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892128-->
+END%%
+
+%%ANKI
+Basic
+Define an object with `fieldA` set to `1` using designated initialization.
+```c
+struct example { int fieldA; };
+```
+Back:
+```c
+struct example test = { .fieldA = 1 };
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470065-->
+END%%
+
+%%ANKI
+Basic
+Define an object with `fieldA` set to `1` *without* using designated initialization.
+```c
+struct example { int fieldA; };
+```
+Back:
+```c
+struct example test = { 1 };
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470066-->
+END%%
+
+%%ANKI
+Basic
+What is the value of `test.fieldB` in the following?
+```c
+struct example { int fieldA; int fieldB; };
+struct example test = { .fieldA = 1 };
+```
+Back: `0`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730757470068-->
+END%%
+
+%%ANKI
+Basic
+Are `struct`s well-defined with respect to `=` (i.e. assignment)?
+Back: Yes.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755496-->
+END%%
+
+%%ANKI
+Basic
+Are `struct`s well-defined with respect to `==` (i.e. equality)?
+Back: No.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755498-->
+END%%
+
+%%ANKI
+Basic
+Are `struct`s well-defined with respect to `!=` (i.e. inequality)?
+Back: No.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755499-->
+END%%
+
+%%ANKI
+Basic
+What types can be used by members of a `struct`?
+Back: All object types except VLAs.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755500-->
+END%%
+
+%%ANKI
+Basic
+What types cannot be used by members of a `struct`?
+Back: Just VLAs.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755501-->
+END%%
+
+%%ANKI
+Basic
+Declare a variable `var` of the nested `struct` with member `c` set to `1`.
+```c
+struct A {
+  struct B { int c; };
+};
+```
+Back: `struct B var = { 1 };`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755502-->
+END%%
+
+%%ANKI
+Basic
+What is the visibility of `struct B` with respect to `struct A`?
+```c
+struct A {
+  struct B { int c; };
+};
+```
+Back: They have the same visibility.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755503-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for `struct A` and `struct B` to have the same visibility?
+```c
+struct A {
+  struct B { int c; };
+};
+```
+Back: Nesting `struct`s does not introduce any notion of scope.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1730758755504-->
+END%%
+
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.

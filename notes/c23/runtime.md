@@ -255,50 +255,11 @@ END%%
 Basic
 Which library declares the following prototype?
 ```c
-noreturn void exit(int)
+[[noreturn]] void exit(int)
 ```
 Back: `<stdlib.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732293415823-->
-END%%
-
-%%ANKI
-Basic
-What does keyword `_Noreturn` indicate?
-Back: The associated callee will never return control back to the caller.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1732293415827-->
-END%%
-
-%%ANKI
-Basic
-What kind of syntactical construct is `_Noreturn`?
-Back: A special keyword.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1732293415832-->
-END%%
-
-%%ANKI
-Basic
-What kind of syntactical construct is `noreturn`?
-Back: A macro.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1732293415836-->
-END%%
-
-%%ANKI
-Cloze
-{1:`_Noreturn`} is a {2:keyword} whereas {2:`noreturn`} is a {1:macro}.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1732293415841-->
-END%%
-
-%%ANKI
-Basic
-Which library is `noreturn` defined in?
-Back: `<stdnoreturn.h>`
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1732293415846-->
 END%%
 
 %%ANKI
@@ -534,3 +495,4 @@ END%%
 
 * Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+* Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).

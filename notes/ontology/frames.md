@@ -54,14 +54,6 @@ END%%
 
 %%ANKI
 Basic
-What characterizes terminals found within a frame?
-Back: Some criteria defining how data can be assigned to it.
-Reference: Minsky, Marvin. “A Framework for Representing Knowledge.” _The Psychology of Computer Vision_, June 1974, 76.
-<!--ID: 1755310347014-->
-END%%
-
-%%ANKI
-Basic
 What do terminals in a frame specify?
 Back: Conditions that assignments must satisfy.
 Reference: Minsky, Marvin. “A Framework for Representing Knowledge.” _The Psychology of Computer Vision_, June 1974, 76.

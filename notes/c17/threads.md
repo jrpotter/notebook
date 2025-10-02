@@ -255,7 +255,7 @@ END%%
 
 %%ANKI
 Basic
-How many flags can be passed to a call to `mtx_init()`?
+How many different values of flags can be passed to a call to `mtx_init()`?
 Back: Three.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759163282080-->
@@ -385,7 +385,7 @@ END%%
 
 %%ANKI
 Basic
-Why must condition variables checked within a loop?
+Why must condition variables be checked within a loop?
 Back: Waiting can return even when the condition expression did not change.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759170264233-->
@@ -440,7 +440,7 @@ END%%
 
 %%ANKI
 Basic
-What C construct is a call to `cnd_wait()` typically wrapped within?
+What C conditional is a call to `cnd_wait()` typically wrapped within?
 Back: A `while` loop re-checking the condition expression.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759170264241-->

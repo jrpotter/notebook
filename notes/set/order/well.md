@@ -64,7 +64,7 @@ END%%
 
 %%ANKI
 Basic
-In the context of partial orders, what does a chain likey refer to?
+In the context of partial orders, what does a chain likely refer to?
 Back: A subset of the partial order totally ordered by the induced ordering relation.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1759173593560-->
