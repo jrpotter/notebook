@@ -9,7 +9,9 @@ tags:
 
 ## Overview
 
-**Attributes** are a new syntactic construct introduced in C23. Denoted as `[[...]]`, they specify additional information for various source constructs.
+**Attributes** are a new syntactic construct introduced in C23. Delimited with `[[...]]`, they specify additional information for various source constructs. 
+
+The `__has_c_attribute` can be used in [[c23/preprocessor|preprocessor]] conditionals to test for presence of an attribute.
 
 %%ANKI
 Basic
@@ -19,7 +21,49 @@ Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https:
 <!--ID: 1759457837042-->
 END%%
 
-## deprecated
+%%ANKI
+Basic
+Which preprocessor conditional is used to check the existence of an attribute?
+Back: `__has_c_attribute`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759513717031-->
+END%%
+
+%%ANKI
+Cloze
+{1:`__has_include`} is to {2:source files} whereas {2:`__has_c_attribute`} is to {1:attributes}.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759513717034-->
+END%%
+
+## Standard Attributes
+
+Standard attributes have an equivalent form with leading and trailing double underscores. Generally these should be preferred to avoid application-defined macros from interfering with them.
+
+%%ANKI
+Basic
+Generally speaking, attributes are preferred in what form?
+Back: Double underscore form.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759513717003-->
+END%%
+
+%%ANKI
+Cloze
+The {`[[fallthrough]]`} attribute is equivalently expressed as {`[[__fallthrough__]]`}.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759513717008-->
+END%%
+
+%%ANKI
+Basic
+Why does Gustedt recommend using the double underscore form of attributes?
+Back: To avoid macro replacements from interfering with them.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759513717011-->
+END%%
+
+### deprecated
 
 The `[[deprecated]]` attribute marks names and entities whose use is still allowed, but is discouraged for some reason.
 
@@ -39,7 +83,7 @@ Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https:
 <!--ID: 1759458546224-->
 END%%
 
-## fallthrough
+### fallthrough
 
 The `[[fallthrough]]` attribute is intended to suppress diagnostics that an implementation may otherwise issue for a `case` or `default` label reachable from another `case` or `default` label.
 
@@ -117,7 +161,7 @@ Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https:
 <!--ID: 1759457837062-->
 END%%
 
-## maybe_unused
+### maybe_unused
 
 The `[[maybe_unused]]` attribute indicates that a name or entity is possibly intentionally unused.
 
@@ -145,7 +189,7 @@ Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https:
 <!--ID: 1759458900652-->
 END%%
 
-## nodiscard
+### nodiscard
 
 The `[[nodiscard]]` attribute indicates the return value of a function should not be evaluated to a void expression. This can be suppressed only if explicitly casting to `void`.
 
@@ -165,7 +209,7 @@ Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https:
 <!--ID: 1759458900658-->
 END%%
 
-## noreturn
+### noreturn
 
 The `[[noreturn]]` attribute should produce diagnostics for attributed functions that appear capable of returning to its caller.
 
@@ -248,7 +292,51 @@ Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https:
 <!--ID: 1759457837068-->
 END%%
 
+## Prefixed Attributes
+
+Alongside the standard attributes are the **prefixed attributes**. They have form `prefix::suffix`, where `prefix` is an identifier chosen by some vendor (e.g. `clang`).
+
+%%ANKI
+Cloze
+C23 introduced {standard} attributes and {prefixed} attributes.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759513717015-->
+END%%
+
+%%ANKI
+Basic
+Which new token is introduced for use with prefixed attributes?
+Back: `::`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759513717018-->
+END%%
+
+%%ANKI
+Basic
+How are prefixed attributes denoted?
+Back: As `prefix::suffix`.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759513717022-->
+END%%
+
+%%ANKI
+Basic
+Which prefixed attributes are provided by the C23 standard?
+Back: N/A.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759513717025-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, who defines prefixed attributes?
+Back: Vendors of e.g. toolchains, compilers, etc.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759513717028-->
+END%%
+
 ## Bibliography
 
+* Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 * Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
