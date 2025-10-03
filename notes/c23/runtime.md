@@ -491,8 +491,41 @@ Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open
 <!--ID: 1759031903309-->
 END%%
 
+%%ANKI
+Basic
+Which pair of functions can be used to define an alternative list of termination handlers to `exit`/`atexit`?
+Back: `quick_exit`/`at_quick_exit`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759411285143-->
+END%%
+
+%%ANKI
+Basic
+Which function is considered "next" in severity after `exit`?
+Back: `quick_exit`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759411285153-->
+END%%
+
+%%ANKI
+Basic
+Which function is considered "next" in severity after `quick_exit`?
+Back: `_Exit`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759411285158-->
+END%%
+
+%%ANKI
+Basic
+Which function is considered "next" in severity after `_Exit`?
+Back: `abort`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759411285162-->
+END%%
+
 ## Bibliography
 
 * Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
+* Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).

@@ -9,9 +9,181 @@ tags:
 
 ## Overview
 
-TODO
+**Attributes** are a new syntactic construct introduced in C23. Denoted as `[[...]]`, they specify additional information for various source constructs.
+
+%%ANKI
+Basic
+How are attributes denoted?
+Back: By surrounding the attribute token with `[[...]]`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759457837042-->
+END%%
+
+## deprecated
+
+The `[[deprecated]]` attribute marks names and entities whose use is still allowed, but is discouraged for some reason.
+
+%%ANKI
+Basic
+What is the purpose of the `[[deprecated]]` attribute?
+Back: To indicate some entity's usage is discouraged for some reason.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759458546217-->
+END%%
+
+%%ANKI
+Basic
+Which attribute is used to mark a function as obsolescent?
+Back: `[[deprecated]]`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759458546224-->
+END%%
+
+## fallthrough
+
+The `[[fallthrough]]` attribute is intended to suppress diagnostics that an implementation may otherwise issue for a `case` or `default` label reachable from another `case` or `default` label.
+
+%%ANKI
+Basic
+The `[[fallthrough]]` attribute is associated with what C construct?
+Back: `switch` statements.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759457837051-->
+END%%
+
+%%ANKI
+Basic
+Where are `[[fallthrough]]` attributes found?
+Back: As the last line of a `case` or `default` block.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759457837053-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `[[fallthrough]]` attribute?
+Back: To suppress diagnostics about `switch` cases reachable from one another.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759458546227-->
+END%%
+
+%%ANKI
+Basic
+Consider the following `switch` statement. Is a diagnostic recommended for `case 1`?
+```c
+switch (n) {
+case 1:
+case 2:
+  g();
+  break;
+}
+```
+Back: No.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759457837056-->
+END%%
+
+%%ANKI
+Basic
+Consider the following `switch` statement. Is a diagnostic recommended for `case 1`?
+```c
+switch (n) {
+case 1:
+  f();
+case 2:
+  g();
+  break;
+}
+```
+Back: Yes.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759457837059-->
+END%%
+
+%%ANKI
+Basic
+Assume C23. How do we suppress the diagnostic issued for `case 1`?
+```c
+switch (n) {
+case 1:
+  f();
+case 2:
+  g();
+  break;
+}
+```
+Back: Adding a `[[fallthrough]];` statement after `case 1`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759457837062-->
+END%%
+
+## maybe_unused
+
+The `[[maybe_unused]]` attribute indicates that a name or entity is possibly intentionally unused.
+
+%%ANKI
+Basic
+What is the purpose of the `[[maybe_unused]]` attribute?
+Back: To indicate a name or entity is possibly intentionally unused.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759458900640-->
+END%%
+
+%%ANKI
+Basic
+Suppose `[[maybe_unused]]` is attributed to an unused object. Is a diagnostic expected?
+Back: No.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759458900649-->
+END%%
+
+%%ANKI
+Basic
+Suppose `[[maybe_unused]]` is attributed to a used object. Is a diagnostic expected?
+Back: No.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759458900652-->
+END%%
+
+## nodiscard
+
+The `[[nodiscard]]` attribute indicates the return value of a function should not be evaluated to a void expression. This can be suppressed only if explicitly casting to `void`.
+
+%%ANKI
+Basic
+What is the purpose of the `[[nodiscard]]` attribute?
+Back: To indicate the return value of a function should not be ignored.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759458900655-->
+END%%
+
+%%ANKI
+Basic
+How is a `[[nodiscard]]` function call suppressed?
+Back: By explicitly casting the return value to `void`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759458900658-->
+END%%
 
 ## noreturn
+
+The `[[noreturn]]` attribute should produce diagnostics for attributed functions that appear capable of returning to its caller.
+
+%%ANKI
+Basic
+The `[[noreturn]]` attribute is associated with what C construct?
+Back: Functions.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759457837065-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `[[noreturn]]` attribute?
+Back: To indicate a function is expected to never return control back to the caller.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759458546230-->
+END%%
 
 %%ANKI
 Basic
@@ -66,6 +238,14 @@ Which standard makes the `_Noreturn` keyword obsolete?
 Back: C23.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759354507862-->
+END%%
+
+%%ANKI
+Basic
+What is the expected return type of a `[[noreturn]]` function?
+Back: `void`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759457837068-->
 END%%
 
 ## Bibliography

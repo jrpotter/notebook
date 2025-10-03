@@ -249,6 +249,14 @@ END%%
 
 %%ANKI
 Basic
+What is a narrow type?
+Back: An integer type that cannot be used directly in arithmetic expressions.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759498725518-->
+END%%
+
+%%ANKI
+Basic
 Signed narrow types are usually promoted to what larger type?
 Back: A `signed int`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
@@ -1340,6 +1348,63 @@ Suppose `a` and `b` have signed and unsigned types respectively. When is `a + b`
 Back: When `b`'s type has higher rank or the range of `a` cannot fit the range of `b`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1724762203465-->
+END%%
+
+## Checked Arithmetic
+
+In C23, the `<stdckdint.h>` header was introduced. It defines several macros for performing checked integer arithmetic. Operations behave as if operands were signed integer types with infinite range. The result is then converted into the desired type.
+
+```c
+bool ckd_add(type1 *result, type2 a, type3 b);
+bool ckd_sub(type1 *result, type2 a, type3 b);
+bool ckd_mul(type1 *result, type2 a, type3 b);
+```
+
+%%ANKI
+Cloze
+The {`<stdckdint.h>`} header is used to perform {checked integer arithmetic}.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759495410472-->
+END%%
+
+%%ANKI
+Basic
+What three functions are made available through `<stdckdint.h>`?
+Back: `ckd_add`, `ckd_sub`, and `ckd_mul`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759495410482-->
+END%%
+
+%%ANKI
+Basic
+What does the return type of functions in `<stdckdint.h>` represent?
+Back: Whether or not the respective operations overflowed.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759495410484-->
+END%%
+
+%%ANKI
+Basic
+Why is the `<stdckdint.h>` header named the way it is?
+Back: It corresponds to **st**an**d**ard **c**hec**k**e**d** **int**eger arithmetic.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759495410487-->
+END%%
+
+%%ANKI
+Basic
+What prefix is shared by the functions in `<stdckdint.h>`?
+Back: `ckd_`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759495410490-->
+END%%
+
+%%ANKI
+Basic
+Which C header contains the `ckd_add` function?
+Back: `<stdckdint.h>`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759495410492-->
 END%%
 
 ## Bibliography

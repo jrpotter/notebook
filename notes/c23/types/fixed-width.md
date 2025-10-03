@@ -113,7 +113,7 @@ Since C23, **bit-precise integer types** allow specifying quantities that should
 
 Literal types may use case-insensitive suffix `wb` to specify signed bit-precise integer types. Likewise, case-insensitive suffix `wbu` specifies unsigned bit-precise integer types.
 
-Also since C23, additional bit operations have been made available in the `<stdbit.h>` header.
+Since C23, additional bit operations have been made available in the `<stdbit.h>` header. These functions act on unsigned integer types.
 
 %%ANKI
 Basic
@@ -207,6 +207,30 @@ Which C23 header provides additional bit operations?
 Back: `<stdbit.h>`
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759322173238-->
+END%%
+
+%%ANKI
+Basic
+The functions in `<stdbit.h>` act on what types?
+Back: Unsigned integer types.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759495410495-->
+END%%
+
+%%ANKI
+Basic
+What value of `N` is permitted in place of `signed _BitInt(N)`?
+Back: A value greater than `1`.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759499034043-->
+END%%
+
+%%ANKI
+Basic
+What value of `N` is permitted in place of `unsigned _BitInt(N)`?
+Back: A value greater than `0`.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759499034055-->
 END%%
 
 ## Bibliography

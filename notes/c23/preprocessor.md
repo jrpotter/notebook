@@ -23,7 +23,7 @@ END%%
 
 %%ANKI
 Basic
-Which preprocessing directive can be used to intentionally terminate compilation?
+Which preprocessing directive can be used to emit a diagnostic with termination?
 Back: `#error`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1754524414441-->
@@ -32,9 +32,25 @@ END%%
 %%ANKI
 Basic
 What is the purpose of the `#error` directive?
-Back: To emit a user-defined message and terminate compilation.
+Back: To emit a diagnostic with termination.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1754524414445-->
+END%%
+
+%%ANKI
+Basic
+Which preprocessing directive can be used to emit a diagnostic without termination?
+Back: `#warning`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841624-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `#warning` directive?
+Back: To emit a diagnostic without termination.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841632-->
 END%%
 
 %%ANKI
@@ -243,6 +259,248 @@ Assume C23. How do we test whether `#include "header"` will succeed?
 Back: By first evaluating `__has_include("header")`.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759374264902-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, where are `#include` directives typically found?
+Back: At the start of C source files.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841634-->
+END%%
+
+## Binary File Inclusion
+
+Beginning in C23, the `#embed` directive searches in an inplementation-defined sequence of locations for a resource uniquely identified by the string found between either angle brackets (`<...>`) or quotes (`"..."`).
+
+The directive is replaced with a comma-delimited list of integer constant expressions. As such, it is often used in the following way:
+
+```c
+static char const example[] = {
+#embed "resource.ext"
+}
+```
+
+The `__has_embed` operator can be used to check if a resource is available for inclusion. In addition, there exist a few standard **embed parameters** that can control how embedding works:
+
+* `limit(...)` specifies a maximum to the number of elements to include from the resource.
+* `if_empty(...)` places a token in place of the embedded result if the resource is empty.
+* `prefix(...)` places a token before the embedded result if the resource is non-empty.
+* `suffix(...)` places a token after the embedded result if the resource is non-empty.
+
+%%ANKI
+Basic
+Which preprocessing directive is used to include binary files into the C executable?
+Back: `#embed`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1759410841637-->
+END%%
+
+%%ANKI
+Basic
+What two forms of the `#embed` preprocessing directive are available?
+Back: `#embed <...>` and `#embed "..."`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841640-->
+END%%
+
+%%ANKI
+Basic
+How does the C standard say `#embed <header>` is interpreted?
+Back: As searching for `header` in an implementation-defined sequence of locations.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841643-->
+END%%
+
+%%ANKI
+Basic
+How does the C standard say `#embed "header"` is interpreted?
+Back: As searching for `header` in an implementation-defined sequence of locations.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841646-->
+END%%
+
+%%ANKI
+Basic
+In practice, where does `#embed <HEADER>` search first?
+Back: In a system-defined location containing the system headers.
+Reference: https://stackoverflow.com/a/3162067
+<!--ID: 1759410841649-->
+END%%
+
+%%ANKI
+Basic
+In practice, where does `#embed "HEADER"` search first?
+Back: With respect to the local directory containing the file the directive lives in.
+Reference: https://stackoverflow.com/a/3162067
+<!--ID: 1759410841653-->
+END%%
+
+%%ANKI
+Basic
+Which of `#embed <...>` and/or `#embed "..."`  fallback to the other?
+Back: `#embed "..."` falls back onto `#embed <...>`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841657-->
+END%%
+
+%%ANKI
+Basic
+Suppose the target resource is found. What is `#embed resource.ext` replaced with?
+Back: A comma-delimited list of integer constant expressions.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841661-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, where are `#embed` directives typically found?
+Back: Within array definition bodies.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841665-->
+END%%
+
+%%ANKI
+Basic
+How many standard `#embed` parameters are available?
+Back: Four.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841670-->
+END%%
+
+%%ANKI
+Cloze
+The {`__has_embed`} operator is used to check if {a resource is available for inclusion}.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841677-->
+END%%
+
+%%ANKI
+Basic
+Assume C23. How do we test whether `#embed <header>` will succeed?
+Back: By first evaluating `__has_embed(<header>)`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841682-->
+END%%
+
+%%ANKI
+Basic
+Assume C23. How do we test whether `#embed "header"` will succeed?
+Back: By first evaluating `__has_embed("header")`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841686-->
+END%%
+
+%%ANKI
+Basic
+How is `#embed` parameter `limit` interpreted?
+Back: As specifying a maximum number of elements to embed from a resource.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841690-->
+END%%
+
+%%ANKI
+Basic
+How is `#embed` parameter `if_empty` interpreted?
+Back: As specifying a token to include if the target resource is empty.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841694-->
+END%%
+
+%%ANKI
+Basic
+How is `#embed` parameter `prefix` interpreted?
+Back: As specifying a token to include before the embedded resource if said resource is non-empty.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841699-->
+END%%
+
+%%ANKI
+Basic
+How is `#embed` parameter `suffix` interpreted?
+Back: As specifying a token to include after the embedded resource if said resource is non-empty.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841704-->
+END%%
+
+%%ANKI
+Basic
+How is the following `#embed` modified to include at most 4 elements?
+```c
+static char const example[] = {
+#embed "resource.ext"
+}
+```
+Back:
+```c
+static char const example[] = {
+#embed "resource.ext" limit(4)
+}
+```
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841708-->
+END%%
+
+%%ANKI
+Basic
+Assume the resource is empty. How is the following `#embed` modified to just `0`?
+```c
+static char const example[] = {
+#embed "resource.ext"
+}
+```
+Back:
+```c
+static char const example[] = {
+#embed "resource.ext" if_empty(0)
+}
+```
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841712-->
+END%%
+
+%%ANKI
+Basic
+How is the following `#embed` modified to prepend with a `0` element?
+```c
+static char const example[] = {
+#embed "resource.ext"
+}
+```
+Back:
+```c
+static char const example[] = {
+#embed "resource.ext" prefix(0,)
+}
+```
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841716-->
+END%%
+
+%%ANKI
+Basic
+How is the following `#embed` modified to append with a `0` element?
+```c
+static char const example[] = {
+#embed "resource.ext"
+}
+```
+Back:
+```c
+static char const example[] = {
+#embed "resource.ext" suffix(,0)
+}
+```
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841720-->
+END%%
+
+%%ANKI
+Basic
+The list produced by `#embed` is delimited with what character?
+Back: A comma (`,`).
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759410841723-->
 END%%
 
 ## Macros
@@ -505,6 +763,116 @@ Which macro can be used to get the name of the current TU?
 Back: `__FILE__`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757596923803-->
+END%%
+
+### Implementation Flags
+
+A few macros are defined by the implementation to indicate some subset of the language is unavailable:
+
+* `__STDC_NO_ATOMICS__`: If defined as `1`, indicates the implementation does not support atomic types nor the `<stdatomic.h>` header.
+* `__STDC_NO_COMPLEX__`: If defined as `1`, indicates the implementation does not support complex types or the `<complex.h>` header.
+* `__STDC_NO_THREADS__`: If defined as `1`, indicates the implementation does not support the `<threads.h>` header.
+* `__STDC_NO_VLA__`: If defined as `1`, indicates the implementation does not support VLAs or VMTs.
+
+%%ANKI
+Basic
+Which header indicates a C implementation does not support atomics?
+Back: `__STDC_NO_ATOMICS__`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835612-->
+END%%
+
+%%ANKI
+Basic
+How is it determined whether `<stdatomic.h>` is available on a platform?
+Back: By checking that `__STDC_NO_ATOMICS__` is not defined as `1`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835615-->
+END%%
+
+%%ANKI
+Basic
+How is it determined whether the `_Atomic` qualifier is available on a platform?
+Back: By checking that `__STDC_NO_ATOMICS__` is not defined as `1`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835618-->
+END%%
+
+%%ANKI
+Basic
+Which header indicates a C implementation does not support complex numbers?
+Back: `__STDC_NO_COMPLEX__`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835621-->
+END%%
+
+%%ANKI
+Basic
+How is it determined whether `<complex.h>` is available on a platform?
+Back: By checking that `__STDC_NO_COMPLEX__` is not defined as `1`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835624-->
+END%%
+
+%%ANKI
+Basic
+Which header indicates a C implementation does not support threads?
+Back: `__STDC_NO_THREADS__`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835627-->
+END%%
+
+%%ANKI
+Basic
+Which header indicates a C implementation does not provide a mutex type?
+Back: `__STDC_NO_THREADS__`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1759163282122-->
+END%%
+
+%%ANKI
+Basic
+How is it determined whether `<threads.h>` is available on a platform?
+Back: By checking that `__STDC_NO_THREADS__` is not defined as `1`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835630-->
+END%%
+
+%%ANKI
+Basic
+Which header indicates a C implementation does not support VLAs?
+Back: `__STDC_NO_VLA__`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835632-->
+END%%
+
+%%ANKI
+Basic
+Which header indicates a C implementation does not support VMTs?
+Back: `__STDC_NO_VLA__`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835635-->
+END%%
+
+%%ANKI
+Cloze
+{1:`__STDC_NO_ATOMICS__`} is to {2:`<stdatomic.h>`} whereas {2:`__STDC_NO_THREADS__`} is to {1:`<threads.h>`}.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835638-->
+END%%
+
+%%ANKI
+Cloze
+{1:`__STDC_NO_THREADS__`} is to {2:`<threads.h>`} whereas {2:`__STDC_NO_COMPLEX__`} is to {1:`<complex.h>`}.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835641-->
+END%%
+
+%%ANKI
+Cloze
+{1:`__STDC_NO_COMPLEX__`} is to {2:`<complex.h>`} whereas {2:`__STDC_NO_ATOMICS__`} is to {1:`<stdatomic.h>`}.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1758024835644-->
 END%%
 
 ## Bibliography
