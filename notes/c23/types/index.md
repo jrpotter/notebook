@@ -1038,6 +1038,699 @@ Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://i
 <!--ID: 1759270805503-->
 END%%
 
+## Size
+
+The `sizeof` operator returns the size in bytes of its operand. The return type is `size_t`, an unsigned integer type, defined in `<stddef.h>`. For specific types, the `sizeof` operator has the following semantics:
+
+* `char`, `unsigned char`, and `signed char` returns size `1`.
+* Array types return the total number of bytes in the array.
+* Structures and unions return the total number of bytes in such an object, including internal and trailing padding.
+
+The operand is only evaluated in the case of a VLA.
+
+%%ANKI
+Basic
+What is the return type of the `sizeof` operator?
+Back: `size_t`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1730740461661-->
+END%%
+
+%%ANKI
+Basic
+What standard C header provides `size_t`?
+Back: `<stddef.h>`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1730740461658-->
+END%%
+
+%%ANKI
+Basic
+Is `size_t` signed or unsigned?
+Back: Unsigned.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1730740461663-->
+END%%
+
+%%ANKI
+Basic
+What kind of type is `size_t`?
+Back: It is an unsigned integer type.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1759529892630-->
+END%%
+
+%%ANKI
+Basic
+Replace `EXPR` in the following with an expression to compute the length of `A`.
+```c
+int A[N];
+size_t len = EXPR;
+```
+Back: `(sizeof A) / (sizeof A[0])`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576053-->
+END%%
+
+%%ANKI
+Basic
+What two syntactic forms does the `sizeof` operator come in?
+Back: With and without parentheses.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576058-->
+END%%
+
+%%ANKI
+Basic
+When can the `sizeof` operator elide parentheses?
+Back: When operating on an object.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576068-->
+END%%
+
+%%ANKI
+Basic
+When does the `sizeof` operator *require* parentheses?
+Back: When operating on a type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576074-->
+END%%
+
+%%ANKI
+Basic
+Apply the possible syntactic forms of the `sizeof` operator to object `a`.
+Back:
+```c
+sizeof a
+sizeof(a)
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576079-->
+END%%
+
+%%ANKI
+Basic
+Apply the possible syntactic forms of the `sizeof` operator to type `int`.
+Back:
+```c
+sizeof(int)
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727957576083-->
+END%%
+
+%%ANKI
+Basic
+What does `sizeof(unsigned char)` evaluate to?
+Back: `1`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759529892633-->
+END%%
+
+%%ANKI
+Basic
+What does `sizeof` return when passed an array type?
+Back: The total size (in bytes) in the array.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759529892636-->
+END%%
+
+%%ANKI
+Basic
+What does `sizeof` return when passed a `struct`?
+Back: The total size (in bytes) in such an object, including internal and trailing padding.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759529892639-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `sizeof(struct foo)`?
+```c
+struct foo {
+  char *p;
+  char c;
+};
+```
+Back: `16`
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+Tags: x86-64
+<!--ID: 1730902219825-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `sizeof(struct foo)`?
+```c
+struct foo {
+  short s;
+  char c;
+};
+```
+Back: `4`
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+Tags: x86-64
+<!--ID: 1730902219830-->
+END%%
+
+%%ANKI
+Basic
+What "hidden" space is returned by `sizeof` on `struct` types?
+Back: Internal and trailing padding.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219834-->
+END%%
+
+%%ANKI
+Basic
+What "hidden" space is returned by `sizeof` on `union` types?
+Back: Trailing padding.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1759529892642-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `sizeof(struct foo)`?
+```c
+struct foo {
+  short s;
+  int z[];
+};
+```
+Back: At least `2`.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+Tags: x86-64
+<!--ID: 1759529892645-->
+END%%
+
+%%ANKI
+Basic
+Roughly speaking, how does a flexible array member affect the results of `sizeof`?
+Back: `sizeof` is calculated as if the flexible array member wasn't present.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1759529892648-->
+END%%
+
+%%ANKI
+Basic
+The `sizeof` operator on `union`s returns what?
+Back: The `sizeof` that of its widest member plus any trailing padding.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731165663214-->
+END%%
+
+%%ANKI
+Basic
+When is the operand of the `sizeof` operator evaluated?
+Back: Only when supplied a VLA.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759531256099-->
+END%%
+
+%%ANKI
+Basic
+The `sizeof` operator on `struct`s returns the space used between what two addresses?
+Back: The `struct`'s leading address and stride address.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1731165663196-->
+END%%
+
+## Alignment
+
+For a large class of modern ISAs, storage for basic C datatypes respect **self-alignment**. This means `char`s can start on any byte address, `short`s on any even address, 4-byte `int`s and `float`s must start on an address divisible by 4, and `double`s must start on an address divisible by 8. Likewise pointers are also self-aligned.
+
+The `alignof` (`_Alignof`) operator yields the alignment requirement of its operand type. The return type is also `size_t`. If applied to an array type, the alignment requirement of the element type is instead returned. The operand is never evaluated.
+
+`alignas` (`_Alignas`) can be used to force allocation at a given alignment.
+
+%%ANKI
+Basic
+What does self-alignment refer to?
+Back: The placement of datatypes on an address divisible by the size of the datatype.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730831516929-->
+END%%
+
+%%ANKI
+Cloze
+Objects of most {non-character} types must start on a {word boundary}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798409-->
+END%%
+
+%%ANKI
+Basic
+What does "the alignment of a type" refer to?
+Back: What memory addresses an object of that type can start on.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798412-->
+END%%
+
+%%ANKI
+Basic
+Which signal is usually emitted on alignment issues?
+Back: `SIGBUS`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798414-->
+END%%
+
+%%ANKI
+Basic
+What is the return type of the `alignof` operator?
+Back: `size_t`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759531256109-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `alignof` operator?
+Back: It returns the alignment of a given type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798417-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `alignas` operator?
+Back: It forces allocation to a given alignment.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798422-->
+END%%
+
+%%ANKI
+Cloze
+In C17, {`_Alignof`} is a keyword whereas {`alignof`} is a macro.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759531256113-->
+END%%
+
+%%ANKI
+Basic
+In C17, which standard library provides the `alignof` macro?
+Back: `<stdalign.h>`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798420-->
+END%%
+
+%%ANKI
+Cloze
+In C17, {1:`_Alignas`} is a {2:keyword} whereas {2:`alignas`} is a {1:macro}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798421-->
+END%%
+
+%%ANKI
+Basic
+Which keyword returns the alignment of a type?
+Back: `alignof` (`_Alignof`)
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798419-->
+END%%
+
+%%ANKI
+Basic
+Which keyword forces allocation to a given alignment?
+Back: `alignas` (`_Alignas`)
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798423-->
+END%%
+
+%%ANKI
+Basic
+In C17, which standard library provides the `alignas` macro?
+Back: `<stdalign.h>`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1741824798424-->
+END%%
+
+%%ANKI
+Basic
+When is the operand of the `alignof` operator evaluated?
+Back: Never.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759531256118-->
+END%%
+
+%%ANKI
+Basic
+What does `alignof(unsigned char)` evaluate to?
+Back: `1`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759531256123-->
+END%%
+
+%%ANKI
+Basic
+What does `alignof` return when passed an array type?
+Back: The alignment of the array's element type.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759531256128-->
+END%%
+
+%%ANKI
+Basic
+What addresses can a `char` be stored at?
+Back: Any address.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730831516932-->
+END%%
+
+%%ANKI
+Basic
+What addresses can an `int` be stored at?
+Back: Any address divisible by 4.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730831516934-->
+END%%
+
+%%ANKI
+Basic
+What addresses can a `short` be stored at?
+Back: Any address divisible by 2.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730831516936-->
+END%%
+
+%%ANKI
+Basic
+What addresses can a `double` be stored at (outside of a `struct`)?
+Back: Any address divisible by 8.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730831516938-->
+END%%
+
+%%ANKI
+Basic
+What addresses can a `double` be stored at (inside of a `struct`)?
+Back: Depending on compiler, addresses divisible by 4 or 8.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730988416659-->
+END%%
+
+%%ANKI
+Basic
+What addresses can a pointer be stored at?
+Back: Any address divisible by 8.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730831516941-->
+END%%
+
+%%ANKI
+Basic
+How does self-alignment make access faster?
+Back: It enables single instruction fetches and puts.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730831516943-->
+END%%
+
+%%ANKI
+Basic
+Assume allocated order matches source order. How are the following variables aligned?
+```c
+char *p;
+char c;
+short x;
+```
+Back:
+```c
+char *p;     // 8 bytes
+char c;      // 1 byte
+char pad[1]; // 1 byte
+short x;     // 2 bytes
+```
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219762-->
+END%%
+
+%%ANKI
+Basic
+Assume allocated order matches source order. How are the following variables aligned?
+```c
+long x;
+short c;
+float f;
+```
+Back:
+```c
+long x;      // 8 bytes
+short c;     // 2 bytes
+char pad[2]; // 2 bytes
+float f;     // 4 bytes
+```
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219769-->
+END%%
+
+%%ANKI
+Basic
+Assume allocated order matches source order. What is the value of `N`?
+```c
+char c;
+char pad1[M];
+char *p;
+char pad2[N];
+int x;
+```
+Back: $0$
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219773-->
+END%%
+
+%%ANKI
+Basic
+Assume allocated order matches source order. What is the value of `M`?
+```c
+char c;
+char pad1[M];
+char *p;
+char pad2[N];
+int x;
+```
+Back: Between $0$ and $7$ inclusive.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219776-->
+END%%
+
+%%ANKI
+Basic
+Consider `short A[N]`. What is the internal padding of this array?
+Back: $0$, i.e. `A` has no internal padding.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219780-->
+END%%
+
+%%ANKI
+Basic
+Consider `char* A[N]`. What is the internal padding of this array?
+Back: $0$, i.e. `A` has no internal padding.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219784-->
+END%%
+
+%%ANKI
+Basic
+What is the alignment of a `struct` instance?
+Back: That of its widest scalar member.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219788-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the alignment of a `struct` instance that of its widest scalar member?
+Back: It is an easy way to ensure all members are self-aligned.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219792-->
+END%%
+
+%%ANKI
+Basic
+*Why* does a `struct` sometimes introduce trailing padding?
+Back: To ensure each element of an array of these `struct`s is self-aligned.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731165663191-->
+END%%
+
+%%ANKI
+Cloze
+The address of a `struct` is the same as its {first member}.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219797-->
+END%%
+
+%%ANKI
+Basic
+How much leading padding does a `struct` instance have?
+Back: $0$
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219802-->
+END%%
+
+%%ANKI
+Basic
+How are members of the following `struct` aligned?
+```c
+struct foo {
+  char *p;
+  char c;
+  long x;
+};
+```
+Back:
+```c
+struct foo {
+  char *p;     // 8 bytes
+  char c;      // 1 byte
+  char pad[7]; // 7 bytes
+  long x;      // 8 bytes
+};
+```
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219809-->
+END%%
+
+%%ANKI
+Basic
+How are members of the following `struct` aligned?
+```c
+struct foo {
+  char c;
+  char *p;
+  long x;
+};
+```
+Back:
+```c
+struct foo {
+  char c;      // 1 byte
+  char pad[7]; // 7 bytes
+  char *p;     // 8 bytes
+  long x;      // 8 bytes
+};
+```
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219814-->
+END%%
+
+%%ANKI
+Basic
+How are members of the following `struct` aligned?
+```c
+struct foo {
+  char c;
+  struct bar {
+    char *p;
+    short x;
+  } bar;
+};
+```
+Back:
+```c
+struct foo {
+  char c;         // 1 byte
+  char pad[7];    // 7 bytes
+  struct bar {
+    char *p;      // 8 bytes
+    short x;      // 2 bytes
+    char pad2[6]; // 6 bytes
+  } bar;
+};
+```
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219840-->
+END%%
+
+%%ANKI
+Basic
+How are members of the following `struct` aligned?
+```c
+struct foo {
+  char c;
+  struct bar {
+    short x;
+  } bar;
+};
+```
+Back:
+```c
+struct foo {
+  char c;         // 1 byte
+  char pad[1];    // 1 byte
+  struct bar {
+    short x;      // 2 bytes
+  } bar;
+};
+```
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219846-->
+END%%
+
+%%ANKI
+Basic
+What is the alignment of a nested `struct`?
+Back: That of its widest scalar member.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219851-->
+END%%
+
+%%ANKI
+Basic
+What is the offset of field `u` in the following?
+```c
+struct foo {
+  char u;
+  int v;
+};
+```
+Back: `0`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731165663205-->
+END%%
+
+%%ANKI
+Basic
+What is the offset of field `v` in the following?
+```c
+struct foo {
+  char u;
+  int v;
+};
+```
+Back: `4`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731165663209-->
+END%%
+
+%%ANKI
+Basic
+What is the offset of field `u` in the following?
+```c
+union foo {
+  char u;
+  int v;
+};
+```
+Back: `0`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731165663237-->
+END%%
+
+%%ANKI
+Basic
+What is the offset of field `v` in the following?
+```c
+union foo {
+  char u;
+  int v;
+};
+```
+Back: `0`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1731165663242-->
+END%%
+
 ## Bibliography
 
 * Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
@@ -1045,3 +1738,4 @@ END%%
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 * Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
 * Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+* Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).

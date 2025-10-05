@@ -17,7 +17,7 @@ A **null pointer constant** is one of:
 * an ICE with value `0` cast to type `void*`, or
 * the `nullptr` value.
 
-C allows arithmetic on pointers, where the computed value is scaled according to the size of the data type referenced by the pointer.
+C allows arithmetic on pointers, where the computed value is scaled according to the size of the data type referenced by the pointer. All pointer differences have type `ptrdiff_t`, provided by the `<stddef.h>` header.
 
 %%ANKI
 Basic
@@ -497,6 +497,85 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1732456644446-->
 END%%
 
+%%ANKI
+Basic
+What header defines `ptrdiff_t`?
+Back: `<stddef.h>`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1730740461659-->
+END%%
+
+%%ANKI
+Basic
+`ptrdiff_t` is used as the type of what result?
+Back: Subtracting two pointers.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1730740461660-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `ptrdiff_t` type?
+Back: To encode signed differences of positions or sizes.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759533806072-->
+END%%
+
+%%ANKI
+Basic
+Is `ptrdiff_t` signed or unsigned?
+Back: Signed.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1730740461662-->
+END%%
+
+%%ANKI
+Basic
+When can two pointers be subtracted?
+Back: Only if both refer to elements of the same array object.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726963-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `p - q` in the following?
+```c
+double A[4] = { 0.0, 1.0, 2.0, -3.0 };
+double* p = &A[1];
+double* q = &A[3];
+```
+Back: `-2`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726964-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `p - q` in the following?
+```c
+double A[4] = { 0.0, 1.0, 2.0, -3.0 };
+double* p = &A[3];
+double* q = &A[1];
+```
+Back: `2`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732397726965-->
+END%%
+
+%%ANKI
+Basic
+What type is given to `p - q` in the following?
+```c
+double A[4] = { 0.0, 1.0, 2.0, -3.0 };
+double* p = &A[3];
+double* q = &A[1];
+```
+Back: `ptrdiff_t`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759533806083-->
+END%%
+
 ## nullptr
 
 The `nullptr` keyword is introduced in C23. Its type, `nullptr_t`, is provided in `<stddef.h>`. Objects of this type have the same size and alignment as a pointer to a character type. The corresponding object representation is the same as that of a null pointer value of type `void*`.
@@ -547,6 +626,72 @@ What is the object representation of a `nullptr_t` object?
 Back: The same as that of null pointer of type `void*`.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759325776951-->
+END%%
+
+## NULL
+
+The `NULL` macro is defined to be some null pointer constant. As a result, a conforming compiler can choose any of the following to expand it to: `0U`, `0`, `\0`, `0UL`, `(void*)0`, an enum constant of value `0`, etc.
+
+As a result, it's usage is not predictable. In particular, make note that it doesn't have to be a pointer constant.
+
+%%ANKI
+Basic
+What *must* the `NULL` macro expand to?
+Back: Any null pointer constant.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644434-->
+END%%
+
+%%ANKI
+Basic
+Which of the following members of the list could `NULL` be identical to?
+```c
+0U, '\0', 0UL, (void*)0, 5LL
+```
+Back: `0U`, `\0`, `0UL`, and `(void*)0`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644454-->
+END%%
+
+%%ANKI
+Basic
+Which of the following members of the list are pointer constants?
+```c
+0U, '\0', 0UL, (void*)0, 5LL
+```
+Back: Just `(void*)0`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644461-->
+END%%
+
+%%ANKI
+Basic
+Why does Gustedt discourage use of `NULL`?
+Back: The type of value it expands to is implementation-specific.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644469-->
+END%%
+
+%%ANKI
+Basic
+What is wrong with the following invocation?
+```c
+printf("%d, %p", 1, NULL);
+```
+Back: `NULL` may not refer to a pointer type.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644475-->
+END%%
+
+%%ANKI
+Basic
+What value must `NULL` have for the following to be correct?
+```c
+printf("%d, %p", 1, NULL);
+```
+Back: `(void*)0`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732456644482-->
 END%%
 
 ## Bibliography

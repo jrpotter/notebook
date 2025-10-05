@@ -1083,7 +1083,9 @@ END%%
 
 ### VMT Parameters
 
-Within a function prototype, a parameter can denote a VMT using `[*]` syntax. For example, the following prototypes are all (more or less) equivalent:
+Within a function prototype, a parameter can denote a VMT using `[*]` syntax. Unlike a parameter with suffix `[]`, a parameter with suffix `[*]` is considered complete (but with unspecified size).
+
+For example, the following prototypes are all (more or less) equivalent:
 
 ```c
 int sum2d(int  , int  , int a[*][*]);
@@ -1095,7 +1097,7 @@ int sum2d(int  , int  , int (*a)[*]);
 int sum2d(int  , int m, int (*a)[m]);
 ```
 
-The primary distinction is that a parameter with suffix `[]` is incomplete. A parameter with suffix `[*]` is considered complete but with unspecified size.
+Arrays passed to functions still undergo [[derived#Arrays|array-to-pointer decay]]. Therefore array arguments lose their innermost dimension.
 
 %%ANKI
 Basic
@@ -1166,6 +1168,69 @@ What distinguishes `int[]` and `int[*]` from one another?
 Back: The former is considered incomplete whereas the latter is considered complete.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1738853472083-->
+END%%
+
+%%ANKI
+Basic
+When passing an array to a function, which dimensions are lost?
+Back: The innermost dimension.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759541090918-->
+END%%
+
+%%ANKI
+Basic
+How is the following prototype equivalently declared with array-to-pointer decay in mind?
+```c
+void func(int m, int A[m]);
+```
+Back:
+```c
+void func(int m, int *A);
+```
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759541090928-->
+END%%
+
+%%ANKI
+Basic
+How is the following prototype equivalently declared with array-to-pointer decay in mind?
+```c
+void func(int m, int n, int A[m][n]);
+```
+Back:
+```c
+void func(int m, int n, int (*A)[n]);
+```
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759541090931-->
+END%%
+
+%%ANKI
+Basic
+How is the following prototype equivalently declared with array-to-pointer decay in mind?
+```c
+void func(int m, int n, int p, int A[m][n][p]);
+```
+Back:
+```c
+void func(int m, int n, int p, int (*A)[n][p]);
+```
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759541090935-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten to make the VLA relationship clearer?
+```c
+int func(int, int[]);
+```
+Back:
+```c
+int func(int, int[*]);
+```
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 END%%
 
 ## Precedence Rules

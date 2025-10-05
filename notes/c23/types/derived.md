@@ -43,7 +43,7 @@ END%%
 
 An array is a contiguous sequence of objects. A **fixed-length array** (FLA) has a predetermined size. Their stack allocations can be computed at compilation time. A **variable-length array** (VLA) has its size determined at runtime. Their stack allocations must be determined with respect to other registers available to the frame.
 
-Evaluation of an array `A` returns `&A[0]`, i.e. a [[#Pointers|pointer]] to the first array element. This is called **array decay**.
+Evaluation of an array `A` returns `&A[0]`, i.e. a [[#Pointers|pointer]] to the first array element. This is called **array-to-pointer decay** (or just **array decay**).
 
 %%ANKI
 Cloze
@@ -156,65 +156,6 @@ Arrays in C are classified in what two ways?
 Back: Fixed-length and variable-length.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727957575990-->
-END%%
-
-%%ANKI
-Basic
-Replace `EXPR` in the following with an expression to compute the length of `A`.
-```c
-int A[N];
-size_t len = EXPR;
-```
-Back: `(sizeof A) / (sizeof A[0])`
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576053-->
-END%%
-
-%%ANKI
-Basic
-What two syntactic forms does the `sizeof` operator come in?
-Back: With and without parentheses.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576058-->
-END%%
-
-%%ANKI
-Basic
-When can the `sizeof` operator elide parentheses?
-Back: When operating on an object.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576068-->
-END%%
-
-%%ANKI
-Basic
-When does the `sizeof` operator *require* parentheses?
-Back: When operating on a type.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576074-->
-END%%
-
-%%ANKI
-Basic
-Apply the possible syntactic forms of the `sizeof` operator to object `a`.
-Back:
-```c
-sizeof a
-sizeof(a)
-```
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576079-->
-END%%
-
-%%ANKI
-Basic
-Apply the possible syntactic forms of the `sizeof` operator to type `int`.
-Back:
-```c
-sizeof(int)
-```
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1727957576083-->
 END%%
 
 %%ANKI
@@ -513,6 +454,8 @@ END%%
 
 A **structure** is used to combine multiple objects of potentially different data types together into a single construct. Except for VLAs, any data type is allowed to be a `struct` member.
 
+As a special case, the last member of a structure with more than one named member may have an incomplete array type. This is called a **flexible array member**. Accessing the member behaves as if that member were replaced with the longest array that would not make the structure larger than the object being accessed.
+
 %%ANKI
 Cloze
 {Structures} combine items that may have different {base types}.
@@ -670,6 +613,101 @@ struct A {
 Back: Nesting `struct`s does not introduce any notion of scope.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1730758755504-->
+END%%
+
+%%ANKI
+Basic
+Is the following valid? If not, why?
+```c
+struct example {
+  int z[];
+};
+```
+Back: No. Flexible array members can only be used in `struct`s with more than one named member.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759529892652-->
+END%%
+
+%%ANKI
+Basic
+Is the following valid? If not, why?
+```c
+struct example {
+  int a;
+  int z[];
+};
+```
+Back: Yes.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759529892656-->
+END%%
+
+%%ANKI
+Basic
+Is the following valid? If not, why?
+```c
+struct example {
+  int a[];
+  int z;
+};
+```
+Back: No. Only the final member is allowed to be an incomplete array type.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759529892662-->
+END%%
+
+%%ANKI
+Basic
+What name is given to `z` in the following?
+```c
+struct example {
+  int a;
+  int z[];
+};
+```
+Back: A flexible array member.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759529892668-->
+END%%
+
+#### Stride Address
+
+A `struct`'s **stride address** refers to the first address following the `struct` data that has the same alignment as the `struct`. In general the compiler adds various constraints to how a `struct` is layed out:
+
+1. The `struct`'s alignment follows that of its widest scalar member.
+	* This guarantees each member satisfies its own self-alignment requirement.
+2. The `struct` introduces trailing padding up to its stride address.
+	* This ensures each element in an array satsifies its self-alignment requirement.
+
+%%ANKI
+Basic
+What value is a `struct`s internal padding initialized to?
+Back: Undefined.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730831516946-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't equality for `struct`s well-defined?
+Back: The value of internal padding is undefined.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730831516947-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't inequality for `struct`s well-defined?
+Back: The value of internal padding is undefined.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730831516948-->
+END%%
+
+%%ANKI
+Cloze
+A `struct`'s {stride address} is {the first address following the `struct`'s data with the same alignment as the `struct`}.
+Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+<!--ID: 1730902219820-->
 END%%
 
 ## Bit-Fields
