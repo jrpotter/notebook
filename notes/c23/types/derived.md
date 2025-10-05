@@ -710,6 +710,51 @@ Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed Nove
 <!--ID: 1730902219820-->
 END%%
 
+## Unions
+
+A `union` is a grouping of data together but with overlaid storage. It is especially useful for [[effective#Type Punning|type punning]].
+
+%%ANKI
+Basic
+What is the underlined portion of the following declaration called?
+```c
+union ___ { ... };
+```
+Back: The tag.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892129-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `X`'s from one another in the following?
+```c
+union X { ... } X;
+```
+Back: The first `X` is a tag whereas the second is a variable with type `union X`.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892130-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the `X`'s from one another in the following?
+```c
+typedef union X { ... } X;
+```
+Back: The first `X` is a tag whereas the second is an alias for type `union X`.
+Reference: Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+<!--ID: 1722786892131-->
+END%%
+
+%%ANKI
+Basic
+Which class of derived types is especially useful for type punning?
+Back: Unions.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759670705918-->
+END%%
+
 ## Bit-Fields
 
 A member of a structure or union may be declared to consist of a specified number of bits (including a sign bit, if any). Such a member is called a **bit-field**; its width is preceded by a colon. Its width must be an ICE with a nonnegative value that fits within the specified type. For example:
@@ -1241,6 +1286,7 @@ END%%
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 * Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
 * Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).

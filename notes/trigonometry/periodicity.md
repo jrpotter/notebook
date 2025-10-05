@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-A [[functions|function]] $f$ is **periodic** with **period** $p$ if $f(t + p) = f(t)$ for all $t$ in the domain of $f$ and $p$ is the smallest positive number that has this property.
+A [[set/functions|function]] $f$ is **periodic** with **period** $p$ if $f(t + p) = f(t)$ for all $t$ in the domain of $f$ and $p$ is the smallest positive number that has this property.
 
 %%ANKI
 Basic

@@ -11,11 +11,7 @@ tags:
 
 Pointers have the same size as the machine's word size since they should be able to refer to any virtual address. All pointers are either **valid**, **null**, or **indeterminate**.
 
-A **null pointer constant** is one of:
-
-* an ICE with value `0`,
-* an ICE with value `0` cast to type `void*`, or
-* the `nullptr` value.
+A **null pointer constant** is an ICE with value `0`, an ICE with value `0` cast to type `void*`, or the `nullptr` value.
 
 C allows arithmetic on pointers, where the computed value is scaled according to the size of the data type referenced by the pointer. All pointer differences have type `ptrdiff_t`, provided by the `<stddef.h>` header.
 
@@ -698,7 +694,7 @@ END%%
 
 An object shall have its stored value accessed only by an lvalue expression with one of the following types:
 
-1. A type [[c17/types/compatible|nearly compatible]] with the [[c17/types/compatible#Effective Types|effective type]] of the object.
+1. A type [[c23/types/compatible|nearly compatible]] with the [[effective|effective type]] of the object.
 2. A type that is the signed or unsigned type corresponding to the effective type of the object.
 3. A type that is the signed or unsigned type corresponding to a [[qualifiers|qualified]] version of the effective type of the object.
 4. An [[derived#Aggregate Data Types|aggregate]] or union type that includes one of the aforementioned types among its members.

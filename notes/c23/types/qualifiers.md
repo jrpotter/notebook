@@ -11,6 +11,8 @@ tags:
 
 The **qualifiers** `const`, `volatile`, and `restrict` are used to convert unqualified versions of types to their qualified versions.
 
+Starting in C23, an array and its element type are always considered to be identically qualified. Other derived types (such as pointers) are not qualified by the qualifiers of the type from which it is derived. For example, a pointer to a `const` type does not mean the pointer itself is `const`.
+
 %%ANKI
 Basic
 How is the type `float *` pronounced?
@@ -65,6 +67,73 @@ What are the three available type qualifiers?
 Back: `const`, `restrict`, and `volatile`.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759634461882-->
+END%%
+
+%%ANKI
+Basic
+Assume C17. Type qualifiers propagate for which derived types?
+Back: None.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759679099740-->
+END%%
+
+%%ANKI
+Basic
+Assume C23. Type qualifiers propagate for which derived types?
+Back: Just arrays.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759679099745-->
+END%%
+
+%%ANKI
+Basic
+Which standard began permitting the following code?
+```c
+void matrix_func(int N, const float x[N][N]);
+
+int main(void) {
+  int N = 100;
+  float x[N][N];
+  matrix_func(N, x);
+}
+```
+Back: C23.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759679099747-->
+END%%
+
+%%ANKI
+Basic
+Assume C17. Why isn't the following considered valid?
+```c
+void matrix_func(int N, const float x[N][N]);
+
+int main(void) {
+  int N = 100;
+  float x[N][N];
+  matrix_func(N, x);
+}
+```
+Back: Type qualifiers do not propagate for derived types.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759679099750-->
+END%%
+
+%%ANKI
+Basic
+Assume C17. Why is the following considered valid?
+```c
+void matrix_func(int N, const float x[N][N]);
+
+int main(void) {
+  int N = 100;
+  float x[N][N];
+  matrix_func(N, x);
+}
+```
+Back: The qualifiers associated with an array and its element type is considered identical.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759679099752-->
 END%%
 
 ## const

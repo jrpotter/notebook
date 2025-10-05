@@ -233,7 +233,48 @@ Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://i
 <!--ID: 1759499034055-->
 END%%
 
+%%ANKI
+Basic
+Which C23 macro corresponds to little-endian encoding?
+Back: `__STDC_ENDIAN_LITTLE__`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759670705900-->
+END%%
+
+%%ANKI
+Basic
+Which C23 macro corresponds to big-endian encoding?
+Back: `__STDC_ENDIAN_BIG__`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759670705908-->
+END%%
+
+%%ANKI
+Basic
+Which C23 macro is used to determine the endianess of the current machine?
+Back: `__STDC_ENDIAN_NATIVE__`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759670705910-->
+END%%
+
+%%ANKI
+Basic
+Which standard C header provides the `__STDC_ENDIAN_NATIVE__` macro?
+Back: `<stdbit.h>`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759670705913-->
+END%%
+
+%%ANKI
+Basic
+What two values is `__STDC_ENDIAN_NATIVE__` most likely to correspond to?
+Back: Either `__STDC_ENDIAN_LITTLE__` or `__STDC_ENDIAN_BIG__`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759670705915-->
+END%%
+
 ## Bibliography
 
 * Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).

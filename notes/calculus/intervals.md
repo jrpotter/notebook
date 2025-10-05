@@ -227,7 +227,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1733316862000-->
 END%%
 
-A function $f$ is said to be **piecewise monotonic** on an interval $[a, b]$ if there is a partition $P$ of $[a, b]$ such that $f$ is [[functions#Monotonicity|monotonic]] on each open subinterval of $P$.
+A function $f$ is said to be **piecewise monotonic** on an interval $[a, b]$ if there is a partition $P$ of $[a, b]$ such that $f$ is [[set/functions#Monotonicity|monotonic]] on each open subinterval of $P$.
 
 %%ANKI
 Basic

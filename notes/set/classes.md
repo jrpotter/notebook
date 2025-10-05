@@ -376,7 +376,7 @@ END%%
 
 ## Function-Class
 
-A **function-class** $H$ is a class of ordered pairs that satisfies the definition of being a [[functions|function]] except that it may not be a set. That is, for all $\langle x, y_1 \rangle \in H$, if $\langle x, y_2 \rangle \in H$, then it follows that $y_1 = y_2$.
+A **function-class** $H$ is a class of ordered pairs that satisfies the definition of being a [[set/functions|function]] except that it may not be a set. That is, for all $\langle x, y_1 \rangle \in H$, if $\langle x, y_2 \rangle \in H$, then it follows that $y_1 = y_2$.
 
 %%ANKI
 Basic

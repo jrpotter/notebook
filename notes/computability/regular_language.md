@@ -959,9 +959,9 @@ Let $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. Define the **$\ep
 
 More formally, define $f \colon \mathscr{P}(Q) \rightarrow \mathscr{P}(Q)$ to be given by $$f(R) = \bigcup\,\{ \delta(r, \epsilon) \mid r \in R \}.$$
 
-Then the $\epsilon$-closure of $A \subseteq Q$ using the [[functions#Top-down Approach|top-down approach]] is $$\epsilon^*(A) = \bigcap\,\{ X \mid A \subseteq X \subseteq \mathscr{P}(Q) \land f[\![X]\!] \subseteq X \}.$$
+Then the $\epsilon$-closure of $A \subseteq Q$ using the [[set/functions#Top-down Approach|top-down approach]] is $$\epsilon^*(A) = \bigcap\,\{ X \mid A \subseteq X \subseteq \mathscr{P}(Q) \land f[\![X]\!] \subseteq X \}.$$
 
-Using the [[functions#Bottom-Up Approach|bottom-up approach]], $$\epsilon_*(A) = \bigcup_{n \in \mathbb{N}} h(n)$$
+Using the [[set/functions#Bottom-Up Approach|bottom-up approach]], $$\epsilon_*(A) = \bigcup_{n \in \mathbb{N}} h(n)$$
 where $h \colon \mathbb{N} \rightarrow \mathscr{P}(Q)$ is defined in the usual way.
 
 %%ANKI

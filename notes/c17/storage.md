@@ -357,7 +357,7 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1733242332384-->
 END%%
 
-For these objects that do not have a [[c17/types/index#Variable-Length|VLA]] type, its lifetime extends from entry into its enclosing block until execution of that block ends. Its initial value is indeterminate. If initialization is specified, it is performed each time the declaration or compound literal is reached in the execution of the block.
+For these objects that do not have a [[derived#Arrays|VLA]] type, its lifetime extends from entry into its enclosing block until execution of that block ends. Its initial value is indeterminate. If initialization is specified, it is performed each time the declaration or compound literal is reached in the execution of the block.
 
 For these objects that do have a VLA type, its lifetime extends from the declaration of the object until execution of the program leaves the scope of the declaration.
 
@@ -675,7 +675,7 @@ END%%
 
 In contrast to `auto`, there also exists a `register` [[#Storage-Class Specifiers|storage-class specifier]]. The `&` operator is not allowed for variables declared with `register` meaning variables declared with `register` can't [[c23/types/pointers#Aliasing|alias]].
 
-Because of [[c17/types/index#Arrays|array-to-pointer decay]], arrays with storage-class `register` are useless.
+Because of [[derived#Arrays|array-to-pointer decay]], arrays with storage-class `register` are useless.
 
 %%ANKI
 Basic

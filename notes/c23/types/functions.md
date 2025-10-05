@@ -1,14 +1,116 @@
 ---
-title: Performance
+title: Functions
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17
+FILE TAGS: c23::types
 tags:
-  - c17
+  - c23
+  - types
 ---
 
 ## Overview
 
-Performance refers to how efficiently a C program can perform a task. Improving performance of a task refers to speeding up computation while preserving semantic equivalence between any transformations to the underlying code.
+A **function** is a reusable block of code that runs a particular task. A function reference without a following opening `(` is converted to a [[pointers|pointer]] to its start. This conversion is called **function decay**.
+
+%%ANKI
+Basic
+What is the effect of function decay?
+Back: Evaluation of a function `f` without a following opening `(` is converted to a pointer to its start.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953243-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the implicit conversion of a function to a pointer?
+Back: Function decay.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953247-->
+END%%
+
+%%ANKI
+Basic
+According to Gustedt, what C feature explains why are there no "function values"?
+Back: Function-to-pointer decay.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953250-->
+END%%
+
+%%ANKI
+Basic
+Why can't functions directly be made arguments to functions?
+Back: Because function arguments decay to pointers.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953255-->
+END%%
+
+%%ANKI
+Cloze
+{1:Function pointers} are to {2:`(...)`} whereas {2:pointers} are to {1:`[...]`}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953260-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+f(3);
+```
+Back: Decay, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953264-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+(&f)(3);
+```
+Back: Address of, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953269-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+(*f)(3);
+```
+Back: Decay, dereference, decay, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953273-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+(*&f)(3);
+```
+Back: Address of, dereference, decay, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953277-->
+END%%
+
+%%ANKI
+Basic
+In what order are decays, dereferences, address ofs, and calls performed in the following?
+```c
+(&*f)(3);
+```
+Back: Decay, dereference, address of, call.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953281-->
+END%%
+
+%%ANKI
+Cloze
+{1:Pointers} refer to {2:arrays} whereas {2:function pointers} refer to {1:functions}.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732551953285-->
+END%%
 
 ## Inlining
 
@@ -18,7 +120,7 @@ The `inline` qualifier is associated with a function definition. It *suggests* t
 * All pointers to the same `inline` function will compare as equal, even if obtained in different TUs.
 * An `inline` function that is not used in a specific TU will be completely absent from the binary of that TU.
 
-An `inline` function definition usually, but not necessarily, exists in a header file. An additional declaration without `inline` ensures emittance of the function symbol. though such a declaration can only exist in exactly one TU.
+An `inline` function definition usually, but not necessarily, exists in a header file. An additional declaration without `inline` ensures emittance of the function symbol, though such a declaration can only exist in exactly one TU.
 
 %%ANKI
 Basic
