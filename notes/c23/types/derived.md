@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-A type is said to be **derived** if it is defined relative to other types. [[c17/types/pointers|Pointers]] are examples of derived types.
+A type is said to be **derived** if it is defined relative to other types. [[c23/types/pointers|Pointers]] are examples of derived types.
 
 %%ANKI
 Basic

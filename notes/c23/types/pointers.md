@@ -694,6 +694,271 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1732456644482-->
 END%%
 
+## Aliasing
+
+An object shall have its stored value accessed only by an lvalue expression with one of the following types:
+
+1. A type [[c17/types/compatible|nearly compatible]] with the [[c17/types/compatible#Effective Types|effective type]] of the object.
+2. A type that is the signed or unsigned type corresponding to the effective type of the object.
+3. A type that is the signed or unsigned type corresponding to a [[qualifiers|qualified]] version of the effective type of the object.
+4. An [[derived#Aggregate Data Types|aggregate]] or union type that includes one of the aforementioned types among its members.
+5. A character type.
+
+%%ANKI
+Basic
+What does aliasing refer to?
+Back: Accessing the same object through different pointers.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732623646937-->
+END%%
+
+%%ANKI
+Basic
+Is aliasing possible in the following function?
+```c
+void foo(double const* a, double* b);
+```
+Back: Yes.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732623646945-->
+END%%
+
+%%ANKI
+Basic
+Is aliasing possible in the following function?
+```c
+void foo(double const* a, float* b);
+```
+Back: No.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1732623646948-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+int x = 42;
+const int *p = &x;
+```
+Back: Yes. `const int` is upward compatible with `int`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724511-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+unsigned int x = 42;
+int *p = (int *)&x;
+```
+Back: Yes. Signedness makes no difference to well-definedness of effective types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724516-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+unsigned int x = 42;
+float *p = (float *)&x;
+```
+Back: No. Effective type `unsigned int` is incompatible with `float`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724519-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+unsigned int x = 42;
+float *q = (float *)&x;
+unsigned int *p = (unsigned int *)q;
+```
+Back: Yes. Only *accesses* are considered w.r.t. well-definedness of effective types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724522-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+int x = 42;
+unsigned int *p = (unsigned int *)&x;
+```
+Back: Yes. Signedness makes no difference to well-definedness of effective types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724525-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+int x = 42;
+char *p = (char *)&x;
+```
+Back: Yes. Effective type `int` can be accessed by any character type.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724528-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+int x = 42;
+unsigned char *p = (unsigned char *)&x;
+```
+Back: Yes. Effective type `int` can be accessed by any character type.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1740137590547-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+struct x { int y; };
+struct x tmp = { .y = 0 };
+float *p = (float *)tmp;
+```
+Back: No. Effective type `int` cannot be accessed by a `float`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724532-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is dereferencing `p` well-defined and why?
+```c
+struct x { int y; };
+struct x tmp = { .y = 0 };
+signed const *p = (signed const *)&tmp;
+```
+Back: Yes. `signed const *` is upward compatible with `int`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1739372724536-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is undefined behavior invoked and why?
+```c
+int foo(signed x, unsigned y);
+
+int main(void) {
+  signed x = 1;
+  signed y = 2;
+  return foo(x, y);
+}
+```
+Back: No. `signed` objects can be accessed through `unsigned` objects.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1740107515257-->
+END%%
+
+%%ANKI
+Basic
+Consider the following. Is undefined behavior invoked and why?
+```c
+int foo(signed x, float y);
+
+int main(void) {
+  signed x = 1;
+  signed y = 2;
+  return foo(x, y);
+}
+```
+Back: Yes. A `signed` type cannot be accessed using a `float` type.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1740107515259-->
+END%%
+
+%%ANKI
+Basic
+*Must* an object be accessed through a compatible type?
+Back: Not necessarily.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1740106368897-->
+END%%
+
+%%ANKI
+Basic
+When can an object with simple type be accessed using an lvalue with non-compatible type?
+Back: Integer types can be accessed by an lvalue with different signedness.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1740106368898-->
+END%%
+
+%%ANKI
+Basic
+What non-simple types allow access to objects using lvalues with non-compatible types?
+Back: Aggregate types and unions.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1740106368899-->
+END%%
+
+### Strict Aliasing Rule
+
+The strict aliasing rule dictates that pointers are assumed not to alias if they point to fundamentally different types, except for character pointer types and `void *`. The rule is leveraged by the compiler for optimization opportunities.
+
+%%ANKI
+Basic
+What does the strict aliasing rule dictate?
+Back: Pointers are assumed not to alias if they point to fundamentally different types.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444659-->
+END%%
+
+%%ANKI
+Basic
+What two pointer types are exceptions to the strict aliasing rule?
+Back: Character pointer types and `void *`.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444664-->
+END%%
+
+%%ANKI
+Basic
+Suppose strict aliasing is *not* enabled. What value does `n` hold?
+```c
+void foo(int *x, short *y) {
+  *x = 40;
+  *y = 0;
+  *x += 2;
+}
+
+int n = 0;
+foo(&n, (short *) &n);
+```
+Back: `2`
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444670-->
+END%%
+
+%%ANKI
+Basic
+Suppose strict aliasing is enabled. What value does `n` hold?
+```c
+void foo(int *x, short *y) {
+  *x = 40;
+  *y = 0;
+  *x += 2;
+}
+
+int n = 0;
+foo(&n, (short *) &n);
+```
+Back: `42`
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1740189444676-->
+END%%
+
 ## Bibliography
 
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).

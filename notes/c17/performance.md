@@ -10,58 +10,6 @@ tags:
 
 Performance refers to how efficiently a C program can perform a task. Improving performance of a task refers to speeding up computation while preserving semantic equivalence between any transformations to the underlying code.
 
-## Const Qualifier
-
-The `const` type qualifier indicates that an object is read-only. This may be used by the compiler for optimizations.
-
-%%ANKI
-Basic
-What does the `const` type qualifier indicate?
-Back: That the corresponding object is read-only.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1753897177565-->
-END%%
-
-%%ANKI
-Basic
-In what way is `const` "just a suggestion"?
-Back: Other parts of the program that sees the same variable without the qualifier may change it.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1753897177567-->
-END%%
-
-%%ANKI
-Basic
-What distinguishes `const` qualified objects from constants?
-Back: The former refers to a read-only object, not a compile time constant.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1753897177570-->
-END%%
-
-%%ANKI
-Basic
-What type is given to string literals?
-Back: `char*`
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1753897177573-->
-END%%
-
-%%ANKI
-Basic
-If introduced today, what type *should* be given to string literals?
-Back: `char const[]`
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1753897177576-->
-END%%
-
-%%ANKI
-Basic
-*Why* are string literals typed `char*` instead of `char const[]`?
-Back: Because the `const` keyword was introduced after string literals.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1753897177579-->
-END%%
-
 ## Inlining
 
 The `inline` qualifier is associated with a function definition. It *suggests* to the compiler that the qualified function may be inlined at callsites. Also,

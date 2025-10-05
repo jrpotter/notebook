@@ -1231,6 +1231,7 @@ Back:
 int func(int, int[*]);
 ```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1759634461884-->
 END%%
 
 ## Precedence Rules
