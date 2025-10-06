@@ -121,7 +121,7 @@ END%%
 
 %%ANKI
 Basic
-Assume C17. Why is the following considered valid?
+Assume C23 Why is the following considered valid?
 ```c
 void matrix_func(int N, const float x[N][N]);
 
@@ -191,7 +191,7 @@ END%%
 %%ANKI
 Basic
 What misnomer is associated with the `const` type qualifier?
-Back: `const` types do not refer to constants.
+Back: That `const` types refer to constants (they instead refer to readonly objects).
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759634461883-->
 END%%
@@ -291,7 +291,7 @@ Disregard the standard. Is the following dangerous? If so, why?
 int **p1 = 0;
 const int **p2 = p1;
 ```
-Back: Yes because it allows updating `const int` objects.
+Back: Yes because such a conversion allows updating `const int` objects.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759638852494-->
 END%%
@@ -315,7 +315,7 @@ Does the C standard allow the following assignments?
 int **p1 = 0;
 int *const *const p2 = p1;
 ```
-Back: No.
+Back: Yes.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759638852497-->
 END%%
