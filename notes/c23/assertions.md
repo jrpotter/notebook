@@ -108,6 +108,38 @@ Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https:
 <!--ID: 1759412418779-->
 END%%
 
+## unreachable
+
+Starting in C23, the `<stddef.h>` header also provides the `unreachable` macro. This function-like macro indicates the particular flow control that leads to the invocation will never be taken. If reached, the behavior is undefined.
+
+%%ANKI
+Basic
+Which standard C header provides the `unreachable` macro?
+Back: `<stddef.h>`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+END%%
+
+%%ANKI
+Basic
+Which C standard introduced the `unreachable` macro?
+Back: C23.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the `unreachable` macro?
+Back: To state some control flow that reaches the macro will never be taken.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+END%%
+
+%%ANKI
+Basic
+What is the result of reaching an `unreachable` invocation?
+Back: Undefined behavior.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+END%%
+
 ## Bibliography
 
 * Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).

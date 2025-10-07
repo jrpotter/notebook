@@ -572,6 +572,13 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1759533806083-->
 END%%
 
+%%ANKI
+Basic
+What is the maximum distance permitted to be tracked between two pointers?
+Back: The maximum distance supported by `ptrdiff_t`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+END%%
+
 ## nullptr
 
 The `nullptr` keyword is introduced in C23. Its type, `nullptr_t`, is provided in `<stddef.h>`. Objects of this type have the same size and alignment as a pointer to a character type. The corresponding object representation is the same as that of a null pointer value of type `void*`.
