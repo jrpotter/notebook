@@ -1,14 +1,19 @@
 ---
 title: Storage
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17::storage
+FILE TAGS: c23::storage
 tags:
-  - c17
+  - c23
+  - storage
 ---
 
 ## Overview
 
-An object has a **storage duration** that determines its **lifetime**. There are four storage durations: **static**, **thread**, **automatic**, and **allocated**.
+C objects can be annotated with **storage class** specifiers. These are used to adjust the object's **storage duration** and/or [[linkers/index|linkage]].
+
+## Storage Durations
+
+There are four different storage durations recognized in C: **static**, **thread**, **automatic**, and **allocated**.
 
 %%ANKI
 Cloze
@@ -59,9 +64,7 @@ END%%
 
 ### Static
 
-An object whose identifier is declared without storage-class specifier `_Thread_local`, and either with external or internal [[c23/index#Linkage|linkage]] or with the storage-class specifier `static`, has static storage duration.
-
-Its lifetime is the entire execution of the program and its stored value is initialized only once, prior to program startup. Initialization *always* happens.
+Objects with a static storage duration have a lifetime that span the entirety of the program execution. Such objects are always initialized, prior to program [[c23/runtime|startup]].
 
 %%ANKI
 Basic
@@ -73,23 +76,7 @@ END%%
 
 %%ANKI
 Basic
-When does an object whose identifier has external linkage have a static storage duration?
-Back: When the identifier is declared without storage-class specifier `_Thread_local`.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733060664884-->
-END%%
-
-%%ANKI
-Basic
-When does an object whose identifier has external linkage have a thread storage duration?
-Back: When the identifier is declared with storage-class specifier `_Thread_local`.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733060664888-->
-END%%
-
-%%ANKI
-Basic
-Which storage class specifier(s) can be used to declare an object with static storage duration?
+Which storage class specifier(s) are used to declare an object with static storage duration?
 Back: `extern` and `static`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733064022801-->
@@ -97,7 +84,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. What is the storage duration of the object with identifier `x`?
+Consider the following TU. What is the storage duration of the object with identifier `x`?
 ```c
 int x;
 ```
@@ -108,7 +95,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. What is the storage duration of the object with identifier `x`?
+Consider the following TU. What is the storage duration of the object with identifier `x`?
 ```c
 extern int x;
 ```
@@ -119,7 +106,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. What is the storage duration of the object with identifier `x`?
+Consider the following TU. What is the storage duration of the object with identifier `x`?
 ```c
 static int x;
 ```
@@ -130,18 +117,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. What is the storage duration of the object with identifier `x`?
-```c
-_Thread_local int x;
-```
-Back: Thread.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733060664903-->
-END%%
-
-%%ANKI
-Basic
-Consider the following translation unit. What is the storage duration of the object with identifier `x`?
+Consider the following TU. What is the storage duration of the object with identifier `x`?
 ```c
 void foo() { static int x; }
 ```
@@ -161,25 +137,17 @@ END%%
 %%ANKI
 Basic
 When is an object with static storage duration initialized?
-Back: Prior to program startup (before `main()` is called).
+Back: Prior to program startup (before `main` is called).
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733060664914-->
 END%%
 
 %%ANKI
 Basic
-How many times can object with static storage duration be initialized?
+How many times can an object with static storage duration be initialized?
 Back: Only once.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733060664922-->
-END%%
-
-%%ANKI
-Basic
-An object with static storage duration must have what linkage?
-Back: Internal or external.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733064022808-->
 END%%
 
 %%ANKI
@@ -198,41 +166,76 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1733242332366-->
 END%%
 
-### Thread Local
+%%ANKI
+Basic
+What is the linkage of an identifier corresponding to an object with static storage duration?
+Back: One of internal, external, or none.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759790776070-->
+END%%
 
-An object whose identifier is declared with the storage-class specified `_Thread_local` has thread storage duration. Its lifetime is the entire execution of the thread for which it is created, and its stored value is initialized when the thread is started.
+%%ANKI
+Basic
+In what situation could an object with static storage duration have an identifier with no linkage?
+Back: When declared with `static` storage class specifier within a block.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759790776079-->
+END%%
+
+### Thread
+
+An object whose identifier is declared with the storage class specifier `thread_local` has thread storage duration. Its lifetime is the entire execution of the thread for which it is created, and its stored value is initialized when the thread is started.
 
 Refer to [[operating_systems/threads#Thread-Local Storage|TLS]].
 
 %%ANKI
 Basic
-Which keyword declares an object with thread local storage duration?
-Back: `_Thread_local`
+Consider the following TU. What is the storage duration of the object with identifier `x`?
+```c
+thread_local int x;
+```
+Back: Thread.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733060664903-->
+END%%
+
+%%ANKI
+Basic
+When does an object whose identifier has external linkage have a static storage duration?
+Back: When the identifier is declared without `thread_local`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733060664884-->
+END%%
+
+%%ANKI
+Basic
+When does an object whose identifier has external linkage have a thread storage duration?
+Back: When the identifier is declared with `thread_local`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733060664888-->
+END%%
+
+%%ANKI
+Basic
+Which storage class specifier declares an object with thread local storage duration?
+Back: `thread_local`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733060664926-->
 END%%
 
 %%ANKI
 Cloze
-{1:`_Thread_local`} is a {2:keyword} whereas {2:`thread_local`} is a {1:macro}.
+Assume C17. {1:`_Thread_local`} is a {2:keyword} whereas {2:`thread_local`} is a {1:macro}.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733060664930-->
 END%%
 
 %%ANKI
 Basic
-Which library is `thread_local` defined in?
+Assume C17. Which library is `thread_local` defined in?
 Back: `<threads.h>`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733060664934-->
-END%%
-
-%%ANKI
-Basic
-Which storage class specifier(s) can be used to declare an object with thread storage duration?
-Back: `_Thread_local`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733064022811-->
 END%%
 
 %%ANKI
@@ -253,10 +256,18 @@ END%%
 
 %%ANKI
 Basic
-An object with thread storage duration must have what linkage?
-Back: Internal or external.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733064022814-->
+What is the linkage of an identifier corresponding to an object with thread storage duration?
+Back: One of internal, external, or none.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759791002490-->
+END%%
+
+%%ANKI
+Basic
+In what situation could an object with thread storage duration have an identifier with no linkage?
+Back: When declared with `static` and `thread_local` storage class specifiers within a block.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759791002498-->
 END%%
 
 %%ANKI
@@ -277,27 +288,23 @@ END%%
 
 ### Automatic
 
-An object whose identifier is declared with no linkage and without the storage-class specifier `static` has automatic storage duration, as do some compound literals.
+Within a block, a variable or compound literal has automatic storage duration if it is declared without a storage class or with any of `auto`, `constexpr`, or `register`. Additionally, some temporary objects returned by function calls have automatic storage durations.
+
+For objects that do not have a [[derived#Arrays|VLA]] type, their lifetime extends from entry into its enclosing block until execution of that block ends. Their initial values are indeterminate. If initialization is specified, it is performed each time the declaration or compound literal is reached in the execution of the block.
+
+For objects that do have a VLA type, their lifetime extends from their declaration until execution of the program leaves the scope of the declaration.
 
 %%ANKI
 Basic
-Which keyword is used to declare automatic storage duration?
-Back: `auto`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733064022818-->
+Which three storage class specifiers *may* declare an object with automatic storage duration?
+Back: `auto`, `register`, and `constexpr`.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759791915939-->
 END%%
 
 %%ANKI
 Basic
-Which storage class specifier is essentially never used in modern C?
-Back: `auto`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733064022821-->
-END%%
-
-%%ANKI
-Basic
-Which storage class specifier(s) can be used to declare an object with automatic storage duration?
+Which two storage class specifiers definitively declare an object with automatic storage duration?
 Back: `auto` and `register`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733064332819-->
@@ -305,7 +312,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. What is the storage duration of the object with identifier `x`?
+Consider the following TU. What is the storage duration of the object with identifier `x`?
 ```c
 void foo() { int x; }
 ```
@@ -316,7 +323,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. What is the storage duration of the object with identifier `x`?
+Consider the following TU. What is the storage duration of the object with identifier `x`?
 ```c
 void foo(int x) { }
 ```
@@ -357,10 +364,6 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1733242332384-->
 END%%
 
-For these objects that do not have a [[derived#Arrays|VLA]] type, its lifetime extends from entry into its enclosing block until execution of that block ends. Its initial value is indeterminate. If initialization is specified, it is performed each time the declaration or compound literal is reached in the execution of the block.
-
-For these objects that do have a VLA type, its lifetime extends from the declaration of the object until execution of the program leaves the scope of the declaration.
-
 %%ANKI
 Basic
 Consider non-temporary object with automatic storage duration. What property determines its lifetime?
@@ -395,7 +398,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. What is the lifetime of the object with identifier `x`?
+Consider the following TU. What is the lifetime of the object with identifier `x`?
 ```c
 void foo(int x) { }
 ```
@@ -406,7 +409,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. What is the lifetime of the object with identifier `x`?
+Consider the following TU. What is the lifetime of the object with identifier `x`?
 ```c
 void foo() {
   int z;
@@ -421,7 +424,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. What is the value of `x` at line 1?
+Consider the following TU. What is the value of `x` at line 1?
 ```c
 void foo() {
   int z = 0;  // Line 1
@@ -436,7 +439,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. What is the value of `x` at line 3?
+Consider the following TU. What is the value of `x` at line 3?
 ```c
 void foo() {
   int z = 0;  // Line 1
@@ -451,7 +454,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. What is the lifetime of the object referred to by identifier `x`?
+Consider the following TU. What is the lifetime of the object referred to by identifier `x`?
 ```c
 void foo() {
   int z;
@@ -466,7 +469,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. Does `x`'s lifetime extend to line 1?
+Consider the following TU. Does `x`'s lifetime extend to line 1?
 ```c
 void foo() {
   int z = 0;  // Line 1
@@ -481,7 +484,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. Does `x`'s lifetime extend to line 1?
+Consider the following TU. Does `x`'s lifetime extend to line 1?
 ```c
 void foo() {
   int z = 0;      // Line 1
@@ -496,7 +499,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. Does `x`'s lifetime extend to line 1?
+Consider the following TU. Does `x`'s lifetime extend to line 1?
 ```c
 void foo() {
   int z = 0;      // Line 1
@@ -519,7 +522,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. Does `x`'s lifetime extend to line 1?
+Consider the following TU. Does `x`'s lifetime extend to line 1?
 ```c
 void foo(int n) {
   int z = 0;  // Line 1
@@ -534,7 +537,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. Does `x`'s lifetime extend to line 3?
+Consider the following TU. Does `x`'s lifetime extend to line 3?
 ```c
 void foo(int n) {
   int x[n];   // Line 1
@@ -549,7 +552,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. What is the lifetime of the object with identifier `x`?
+Consider the following TU. What is the lifetime of the object with identifier `x`?
 ```c
 void foo(int n) {
   int z;
@@ -564,7 +567,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. Does `x`'s lifetime extend to line 3?
+Consider the following TU. Does `x`'s lifetime extend to line 3?
 ```c
 void foo(int n) {
   { int x[n]; }  // Line 1
@@ -579,7 +582,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following translation unit. Does `x`'s lifetime extend to line 3?
+Consider the following TU. Does `x`'s lifetime extend to line 3?
 ```c
 void foo(int n) {
   int x[n];       // Line 1
@@ -591,6 +594,8 @@ Back: Yes.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733064022928-->
 END%%
+
+#### Temporary
 
 A non-lvalue expression with structure or union type, where the structure or union contains a member with array type refers to an object with automatic storage duration and **temporary lifetime**. Its lifetime lasts for the duration of the expression evaluation it is found within.
 
@@ -671,52 +676,7 @@ Tags: processor::x86-64
 <!--ID: 1733316862045-->
 END%%
 
-#### Register
-
-In contrast to `auto`, there also exists a `register` [[#Storage-Class Specifiers|storage-class specifier]]. The `&` operator is not allowed for variables declared with `register` meaning variables declared with `register` can't [[c23/types/pointers#Aliasing|alias]].
-
-Because of [[derived#Arrays|array-to-pointer decay]], arrays with storage-class `register` are useless.
-
-%%ANKI
-Basic
-What restriction is enforced on objects with storage-class `register`?
-Back: The `&` operator is not allowed.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1733242332397-->
-END%%
-
-%%ANKI
-Cloze
-The {`auto`} and {`register`} storage-class specifiers are used with automatic storage duration.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1733242332400-->
-END%%
-
-%%ANKI
-Basic
-Variables declared with what storage-class specifier can't alias?
-Back: `register`
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1733242332404-->
-END%%
-
-%%ANKI
-Basic
-According to Gustedt, the `register` storage-class specifier is useless for what kind of objects?
-Back: Arrays.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1733242332409-->
-END%%
-
-%%ANKI
-Basic
-According to Gustedt, *why* is the `register` storage-class specifier useless for arrays?
-Back: In most contexts, arrays decay to an address in which case `register` is not applicable.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1733242332412-->
-END%%
-
-## Dynamic Allocation
+### Allocated
 
 The `<stdlib.h>` header provides the two most prominent functions used for managing dynamic memory: `malloc` and `free`. The former is used to allocate new memory whereas the latter is used to annihilate it.
 
@@ -725,11 +685,11 @@ void* malloc(size_t size);
 void free(void*);
 ```
 
-Dynamically allocated objects have allocated storage duration. Their lifetime spans allocation to explicit destruction.
+Dynamically allocated objects have allocated storage duration. Their lifetime spans from allocation to explicit destruction.
 
 %%ANKI
 Basic
-Which standard library header exposes `malloc()`?
+Which standard library header exposes `malloc`?
 Back: `<stdlib.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874715-->
@@ -737,7 +697,7 @@ END%%
 
 %%ANKI
 Basic
-Which standard library header exposes `free()`?
+Which standard library header exposes `free`?
 Back: `<stdlib.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874716-->
@@ -745,7 +705,7 @@ END%%
 
 %%ANKI
 Basic
-Why is `malloc()` named the way it is?
+Why is `malloc` named the way it is?
 Back: It stands for **m**emory **alloc**ate.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874717-->
@@ -754,29 +714,29 @@ END%%
 %%ANKI
 Basic
 Which two functions are most prominently used for managing dynamically allocated memory?
-Back: `malloc()` and `free()`.
+Back: `malloc` and `free`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874718-->
 END%%
 
 %%ANKI
 Cloze
-Generally speaking, memory created with {`malloc()`} should be deleted with {`free()`}.
+Generally speaking, memory created with {`malloc`} should be deleted with {`free`}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874719-->
 END%%
 
 %%ANKI
 Basic
-What three specialized variants of `malloc()` are exposed by `<stdlib.h>`?
-Back: `calloc()`, `realloc()`, and `aligned_alloc()`.
+What three specialized variants of `malloc` are exposed by `<stdlib.h>`?
+Back: `calloc`, `realloc`, and `aligned_alloc`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874720-->
 END%%
 
 %%ANKI
 Basic
-On success, what does a call to `malloc()` return?
+On success, what does a call to `malloc` return?
 Back: A valid `void*` pointer.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874721-->
@@ -784,7 +744,7 @@ END%%
 
 %%ANKI
 Basic
-On failure, what does a call to `malloc()` return?
+On failure, what does a call to `malloc` return?
 Back: A null pointer value.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874722-->
@@ -792,7 +752,7 @@ END%%
 
 %%ANKI
 Basic
-What are the argument(s) to `malloc()`?
+What are the argument(s) to `malloc`?
 Back: The size (in bytes) of the block of memory to allocate.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874723-->
@@ -822,15 +782,15 @@ END%%
 
 %%ANKI
 Basic
-What possible error can occur by explicitly casting the return type of `malloc()`?
-Back: If `<stdlib.h>` isn't imported, older C compilers assume `malloc()` returns an `int`.
+What possible error can occur by explicitly casting the return type of `malloc`?
+Back: If `<stdlib.h>` isn't imported, older C compilers assume `malloc` returns an `int`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874726-->
 END%%
 
 %%ANKI
 Basic
-Without `<stdlib.h>`, an older C compiler might assume what `malloc()` declaration?
+Without `<stdlib.h>`, an older C compiler might assume what `malloc` declaration?
 Back:
 ```c
 int malloc();
@@ -841,7 +801,7 @@ END%%
 
 %%ANKI
 Basic
-Within `<stdlib.h>`, what function prototype does `malloc()` have?
+Within `<stdlib.h>`, what function prototype does `malloc` have?
 Back:
 ```c
 void* malloc(size_t size);
@@ -852,7 +812,7 @@ END%%
 
 %%ANKI
 Cloze
-Storage allocated through `malloc()` is neither {initialized} nor has a {type}.
+Storage allocated through `malloc` is neither {initialized} nor has a {type}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874729-->
 END%%
@@ -933,7 +893,7 @@ END%%
 
 %%ANKI
 Basic
-`malloc()` and its variants all have the `size` parameter in what position?
+`malloc` and its variants all have the `size` parameter in what position?
 Back: The last position.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732755874736-->
@@ -941,7 +901,7 @@ END%%
 
 %%ANKI
 Basic
-What storage duration is associated with `malloc()` and `free()`?
+What storage duration is associated with `malloc` and `free`?
 Back: Allocated.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1733064332825-->
@@ -958,7 +918,7 @@ END%%
 %%ANKI
 Basic
 What two functions are typically used to deallocate an allocated object?
-Back: `free()` and `realloc()`.
+Back: `free` and `realloc`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1733064332831-->
 END%%
@@ -979,28 +939,28 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1733242332420-->
 END%%
 
-## Storage Class Specifiers
+## Storage Classes
 
-**Storage class specifiers** are used to control an object's storage duration and an identifier's linkage. There are six storage-class specifiers:
+Prior to C23, there exist six different storage class specifiers: `typedef`, `auto`, `static`, `extern`, `thread_local` (`_Thread_local`), and `register`. C23 added the `constexpr` storage class specifier.
 
-* `typedef`
-	* Is called a "storage-class specifier" for syntactic convenience only.
-* `extern`
-	* Discussed in [[c23/index#Linkage|Linkage]] and [[#Static]].
-* `static`
-	* Discussed in [[c23/index#Linkage|Linkage]] and [[#Static]].
-* `_Thread_local`
-	* Discussed in [[#Thread Local]].
-* `auto`
-	* Discussed in [[#Automatic]].
-* `register`
-	* Discussed in [[#Automatic]].
-
-At most, one storage-class specifier may be given in the declaration specifiers in a declaration, except that `_Thread_local` may appear with `static` or `extern`.
+%%ANKI
+Cloze
+A storage {class specifier} is to syntax whereas a storage {duration} is to semantics.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757180490445-->
+END%%
 
 %%ANKI
 Basic
-How many different storage-class specifiers are there?
+Which of storage class specifiers and durations are used to affect the other?
+Back: Storage class specifiers are used to define storage durations.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1757180490448-->
+END%%
+
+%%ANKI
+Basic
+C17 defines how many different storage-class specifiers?
 Back: Six.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733242332426-->
@@ -1008,47 +968,23 @@ END%%
 
 %%ANKI
 Basic
-A `_Thread_local` storage-class specifier can appear next to what other specifier(s)?
-Back: `static` and `extern`.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733242332440-->
+C23 defines how many different storage-class specifiers?
+Back: Seven.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759803207952-->
 END%%
 
 %%ANKI
 Basic
-An `extern` storage-class specifier can appear next to what other specifier(s)?
-Back: Just `_Thread_local`.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733242332446-->
+Which storage class specifiers did C23 introduce?
+Back: Just `constexpr`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759803207964-->
 END%%
 
 %%ANKI
 Basic
-A `static` storage-class specifier can appear next to what other specifier(s)?
-Back: Just `_Thread_local`.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733242332451-->
-END%%
-
-%%ANKI
-Basic
-Which storage-class specifiers are most related to linkage?
-Back: `extern` and `static`.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733242332455-->
-END%%
-
-%%ANKI
-Basic
-Which storage-class specifiers are most related to automatic storage duration?
-Back: `auto` and `register`.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733242332460-->
-END%%
-
-%%ANKI
-Basic
-What about an object might a storage-class specifier control?
+What about an object might a storage class specifier control?
 Back: The storage duration.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733242459497-->
@@ -1056,15 +992,15 @@ END%%
 
 %%ANKI
 Basic
-What about an identifier might a storage-class specifier control?
+What about an identifier might a storage class specifier control?
 Back: The linkage.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733242459501-->
 END%%
 
-### typedefs
+### typedef
 
-The standard often uses `typedef`s ending with `_t`.
+The `typedef` storage class specifier is used to create alternative names for types. It is considered a storage class specifier primarily for syntactic convenience only. The standard library typically denotes `typedef` identifiers with an underscore `_t`.
 
 %%ANKI
 Basic
@@ -1138,23 +1074,233 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1730758755507-->
 END%%
 
+### auto
+
+The `auto` storage class specifier is rarely used. As of C23, the same keyword is used for type inference.
+
 %%ANKI
-Cloze
-A storage {class specifier} is to syntax whereas a storage {duration} is to semantics.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1757180490445-->
+Basic
+Which legacy keyword is used to declare automatic storage duration?
+Back: `auto`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733064022818-->
+END%%
+
+### static
+
+The `static` storage class specifier indicates an identifier has internal [[linkers/index|linkage]].
+
+%%ANKI
+Basic
+Which storage-class specifiers are most related to linkage?
+Back: `extern` and `static`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733242332455-->
 END%%
 
 %%ANKI
 Basic
-Which of storage class specifiers and durations are used to affect the other?
-Back: Storage class specifiers are used to define storage durations.
+What linkage does a keyword associated with `static` have?
+Back: Internal.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733010193282-->
+END%%
+
+%%ANKI
+Basic
+Which keyword is usually associated with internal linkage?
+Back: `static`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733010193283-->
+END%%
+
+### extern
+
+The `extern` storage class specifier indicates an identifier (usually) has external [[linkers/index|linkage]].
+
+%%ANKI
+Basic
+Which keyword is usually associated with external linkage?
+Back: `extern`
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733010193280-->
+END%%
+
+%%ANKI
+Basic
+What linkage does a keyword annotated with `extern` have?
+Back: Internal or external.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733010193281-->
+END%%
+
+### thread_local
+
+The `thread_local` storage class specifier indicates an object has [[#Thread|thread]] storage duration. Before C23, `thread_local` was instead a macro, provided by `<threads.h>`, corresponding to keyword `_Thread_local`.
+
+%%ANKI
+Basic
+A `thread_local` storage class specifier can appear next to what other specifier(s)?
+Back: `static` and `extern`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733242332440-->
+END%%
+
+%%ANKI
+Basic
+An `extern` storage class specifier can appear next to what other specifier(s)?
+Back: Just `thread_local`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733242332446-->
+END%%
+
+%%ANKI
+Basic
+A `static` storage class specifier can appear next to what other specifier(s)?
+Back: Just `thread_local`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733242332451-->
+END%%
+
+### register
+
+The `register` storage class specifier declares an object with automatic storage duration. The `&` operator is not allowed on variables declared with `register`. This means such variables cannot [[c23/types/pointers#Aliasing|alias]].
+
+Because of [[derived#Arrays|array-to-pointer decay]], arrays with storage-class `register` are essentially useless.
+
+%%ANKI
+Basic
+What restriction is enforced on objects with storage class `register`?
+Back: The `&` operator is not allowed.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1757180490448-->
+<!--ID: 1733242332397-->
+END%%
+
+%%ANKI
+Cloze
+The {`auto`} and {`register`} storage class specifiers definitely declare objects with with automatic storage duration.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1733242332400-->
+END%%
+
+%%ANKI
+Basic
+Variables declared with what storage class specifier can't alias?
+Back: `register`
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1733242332404-->
+END%%
+
+%%ANKI
+Basic
+According to Gustedt, the `register` storage class specifier is useless for what kind of objects?
+Back: Arrays.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1733242332409-->
+END%%
+
+%%ANKI
+Basic
+According to Gustedt, *why* is the `register` storage class specifier useless for arrays?
+Back: In most contexts, arrays decay to an address in which case `register` is not applicable.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1733242332412-->
+END%%
+
+%%ANKI
+Basic
+Which two storage class specifiers are most related to automatic storage duration?
+Back: `auto` and `register`.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1733242332460-->
+END%%
+
+### constexpr
+
+The `constexpr` storage class specifier indicates a value should be fixed at compilation. If not present, the `const` qualifier is implicitly added to the object's type.
+
+%%ANKI
+Basic
+Consider a `constexpr` object in file-scope. What is this object's storage duration?
+Back: Static.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759792055990-->
+END%%
+
+%%ANKI
+Basic
+Consider a `constexpr` object in file-scope. The corresponding identifier has what linkage?
+Back: Internal.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759792885890-->
+END%%
+
+%%ANKI
+Basic
+Which linkage-related storage class specifiers cannot be used alongside `constexpr`?
+Back: `extern`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759792885897-->
+END%%
+
+%%ANKI
+Basic
+Consider a `constexpr` object in block-scope. What is this object's storage duration?
+Back: Static or automatic.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759792055997-->
+END%%
+
+%%ANKI
+Basic
+Consider a `constexpr` object in block-scope. The corresponding identifier has what linkage?
+Back: N/A. Such an identifier has no linkage.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759792885899-->
+END%%
+
+%%ANKI
+Basic
+Consider a `constexpr` object in block-scope with the `static` specifier. What is this object's storage duration?
+Back: Static.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759792056000-->
+END%%
+
+%%ANKI
+Basic
+Consider a `constexpr` object in block-scope with the `static` specifier. The corresponding identifier has what linkage?
+Back: Internal.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759792885902-->
+END%%
+
+%%ANKI
+Basic
+Consider a `constexpr` object in block-scope without the `static` specifier. What is this object's storage duration?
+Back: Automatic.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759792056002-->
+END%%
+
+%%ANKI
+Basic
+Consider a `constexpr` object in block-scope without the `static` specifier. The corresponding identifier has what linkage?
+Back: N/A. Such an identifier has no linkage.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759792885905-->
+END%%
+
+%%ANKI
+Basic
+What additional qualifier is implicitly added to a `constexpr` type?
+Back: `const`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759803666217-->
 END%%
 
 ## Bibliography
 
+* Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-* Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-* Van der Linden, Peter. _Expert C Programming: Deep C Secrets_. Programming Languages / C. Mountain View, Cal.: SunSoft Pr, 1994.
+* Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).

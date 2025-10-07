@@ -960,6 +960,153 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1727552157093-->
 END%%
 
+### Compound Literals
+
+A **compound literal** is an object of form `(T){ INIT }`. That is, a type in parentheses followed by an initializer in curly braces.
+
+Since C23, a compound literal can include [[c23/storage#Storage Classes|storage classes]] in their types. Compound literals have the same lifetime as a variable that would be declared with the same storage class within the same context.
+
+The only possible exception are those that are `const`-qualified without any storage class specification in block scope. Such compound literals may not correspond to a unique object and can refer to storage available to the whole program execution.
+
+%%ANKI
+Basic
+What is the general specification of a compound literal (without a storage class specifier)?
+Back: `(T){ INIT }`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759790776084-->
+END%%
+
+%%ANKI
+Basic
+What is the general specification of a compound literal (with a storage class specifier)?
+Back: `(STORAGE_CLASS T){ INIT }`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759790776087-->
+END%%
+
+%%ANKI
+Basic
+What term is used to refer to the replacement side of the following macro?
+```c
+#define MACRO (T){ INIT }
+```
+Back: A compound literal.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727432419481-->
+END%%
+
+%%ANKI
+Basic
+What is `T` a reference to in the following compound literal?
+```c
+#define MACRO (T){ INIT }
+```
+Back: A type-specifier.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727432419492-->
+END%%
+
+%%ANKI
+Basic
+What is `INIT` a reference to in the following compound literal?
+```c
+#define MACRO (T){ INIT }
+```
+Back: An initializer.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727432419495-->
+END%%
+
+%%ANKI
+Basic
+Why aren't compound literals suitable for ICE?
+Back: Compound literals are objects, not constants.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727432419498-->
+END%%
+
+%%ANKI
+Basic
+How can the following be rewritten so that `MACRO` is an object?
+```c
+#define MACRO 5
+```
+Back:
+```c
+#define MACRO (int){5}
+```
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727432419500-->
+END%%
+
+%%ANKI
+Basic
+What is the difference between the following two lines?
+```c
+#define MACRO 5
+#define MACRO (int){5}
+```
+Back: The former is a literal whereas the latter is a compound literal.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727432419503-->
+END%%
+
+%%ANKI
+Basic
+Why should compound literals be, generally speaking, `const`-qualified?
+Back: Doing so gives the optimizer more room to generate good binary code.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1727432419506-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, what is the lifetime of a compound literal?
+Back: The same as that of a variable declared with the same storage class specifier in the same context.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759790776090-->
+END%%
+
+%%ANKI
+Basic
+What kind of compound literals are exceptions to the general lifetime rule?
+Back: Those that are `const`-qualified, without a storage class specifier, in block scope.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759790776092-->
+END%%
+
+%%ANKI
+Basic
+What is the storage duration of compound literal `(const int){ 0 }` in block scope?
+Back: Either static or automatic.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759790776095-->
+END%%
+
+%%ANKI
+Basic
+What is the storage duration of compound literal `(thread_local int){ 0 }` in block scope?
+Back: Thread.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759790776098-->
+END%%
+
+%%ANKI
+Basic
+What is the storage duration of compound literal `(static int){ 0 }` in block scope?
+Back: Static.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759790776102-->
+END%%
+
+%%ANKI
+Basic
+What is the storage duration of compound literal `(constexpr int){ 0 }` in block scope?
+Back: Static.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759790776106-->
+END%%
+
 ## Integer Constant Expressions
 
 An **integer constant expression** (ICE) is a compile-time integer value. Its value must be determinable at compile time (e.g. no function calls are permitted). The only objects that may be evaluated are those defined as `constexpr`.

@@ -807,38 +807,6 @@ END%%
 
 %%ANKI
 Basic
-Which keyword is usually associated with external linkage?
-Back: `extern`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733010193280-->
-END%%
-
-%%ANKI
-Basic
-What linkage does a keyword annotated with `extern` have?
-Back: Internal or external.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733010193281-->
-END%%
-
-%%ANKI
-Basic
-What linkage does a keyword associated with `static` have?
-Back: Internal.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733010193282-->
-END%%
-
-%%ANKI
-Basic
-Which keyword is usually associated with internal linkage?
-Back: `static`
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1733010193283-->
-END%%
-
-%%ANKI
-Basic
 Within a translation unit, what happens if an identifer has both external and internal linkage?
 Back: Undefined behavior.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).

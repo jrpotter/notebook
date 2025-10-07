@@ -13,7 +13,7 @@ A **function** is a reusable block of code that runs a particular task. A functi
 
 %%ANKI
 Basic
-What is the effect of function decay?
+What is function decay?
 Back: Evaluation of a function `f` without a following opening `(` is converted to a pointer to its start.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1732551953243-->

@@ -454,6 +454,8 @@ END%%
 
 A **structure** is used to combine multiple objects of potentially different data types together into a single construct. Except for VLAs, any data type is allowed to be a `struct` member.
 
+The offset of a member can be found using the `offsetof` macro provided by `<stddef.h>`.
+
 As a special case, the last member of a structure with more than one named member may have an incomplete array type. This is called a **flexible array member**. Accessing the member behaves as if that member were replaced with the longest array that would not make the structure larger than the object being accessed.
 
 %%ANKI
@@ -500,11 +502,11 @@ END%%
 Basic
 Define an object with `fieldA` set to `1` using designated initialization.
 ```c
-struct example { int fieldA; };
+struct s { int fieldA; };
 ```
 Back:
 ```c
-struct example test = { .fieldA = 1 };
+struct s t = { .fieldA = 1 };
 ```
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1730757470065-->
@@ -514,11 +516,11 @@ END%%
 Basic
 Define an object with `fieldA` set to `1` *without* using designated initialization.
 ```c
-struct example { int fieldA; };
+struct s { int fieldA; };
 ```
 Back:
 ```c
-struct example test = { 1 };
+struct s t = { 1 };
 ```
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1730757470066-->
@@ -528,8 +530,8 @@ END%%
 Basic
 What is the value of `test.fieldB` in the following?
 ```c
-struct example { int fieldA; int fieldB; };
-struct example test = { .fieldA = 1 };
+struct s { int fieldA; int fieldB; };
+struct s test = { .fieldA = 1 };
 ```
 Back: `0`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
@@ -619,7 +621,7 @@ END%%
 Basic
 Is the following valid? If not, why?
 ```c
-struct example {
+struct s {
   int z[];
 };
 ```
@@ -632,7 +634,7 @@ END%%
 Basic
 Is the following valid? If not, why?
 ```c
-struct example {
+struct s {
   int a;
   int z[];
 };
@@ -646,7 +648,7 @@ END%%
 Basic
 Is the following valid? If not, why?
 ```c
-struct example {
+struct s {
   int a[];
   int z;
 };
@@ -660,7 +662,7 @@ END%%
 Basic
 What name is given to `z` in the following?
 ```c
-struct example {
+struct s {
   int a;
   int z[];
 };
@@ -668,6 +670,75 @@ struct example {
 Back: A flexible array member.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759529892668-->
+END%%
+
+%%ANKI
+Basic
+Which C header includes the `offsetof` macro?
+Back: `<stddef.h>`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759785807795-->
+END%%
+
+%%ANKI
+Basic
+What is the return type of the `offsetof` macro?
+Back: `size_t`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759785807805-->
+END%%
+
+%%ANKI
+Basic
+Given the following `struct`, why is the call to `malloc` slightly wasteful?
+```c
+struct s {
+  int a;
+  int z[];
+}
+struct s tmp = malloc(sizeof(struct s) + sizeof(int[4]));
+```
+Back: The compiler may repurpose padding included in `sizeof(struct example)`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759785807811-->
+END%%
+
+%%ANKI
+Basic
+Consider the following `struct`. *Why* isn't the initialization considered valid?
+```c
+struct s {
+  int n;
+  double d[];
+}
+struct s t = { 1, { 4.2 } };
+```
+Back: Because `struct s` is treated as if it didn't have member `d`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759785807813-->
+END%%
+
+%%ANKI
+Basic
+How do `sizeof(struct s1)` and `sizeof(struct s2)` relate given the following?
+```c
+struct s1 { int n; };
+struct s2 { int n; int z []; };
+```
+Back: `sizeof(struct s2) >= sizeof(struct s1)`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759785807816-->
+END%%
+
+%%ANKI
+Basic
+How do `sizeof(struct s)` and `offsetof(struct s, d)` relate given the following?
+```c
+struct s { int n; int d[]; };
+```
+Back: `sizeof(struct s) >= offsetof(struct s, d)`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759785807819-->
 END%%
 
 #### Stride Address

@@ -1,14 +1,25 @@
 ---
 title: Strings
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17
+FILE TAGS: c23::types
 tags:
-  - c17
+  - c23
+  - string
 ---
 
 ## Overview
 
-A contiguous sequence of characters terminated by the `NUL` character (refer to [[ascii|ASCII]]). Text data is said to be more platform-independent than [[binary/index#Endianness|binary]] data since it is unaffected by word size or byte ordering.
+A C-style **string** is a contiguous sequence of characters terminated by the `NUL` character (refer to [[ascii|ASCII]]). Text data is considered more platform-independent than [[binary/index#Endianness|binary]] data since it is unaffected by word size or byte ordering.
+
+Strings can embed **escape sequences**, denoted with a backslash (`\`), used to represent characters:
+
+* `\ooo`: Consists of one to three octal digits.
+* `\xhh`: Consists of one or more [[radices#Hexadecimal|hexadecimal]] digits.
+	* The `x` prefix is required to distinguish from octal escape sequences.
+* `\uhhhh`: Introduced in C11 to represent Unicode code points. 
+	* Must have exactly four hexadecimal characters specified with `0` leading padding if necessary.
+* `\Uhhhhhhhh`: Introduced in C11 to represent larger unicode code points.
+	* Must have exactly eight hexadecimal characters specified with `0` leading padding if necessary.
 
 %%ANKI
 Basic
@@ -106,15 +117,6 @@ char const test[] = "ab" "cd";
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757512543795-->
 END%%
-
-## Escape Sequences
-
-C has a standard for processing different escape sequences. Many languages built with C in mind parse these escape sequences in a similar way.
-
-* `\ooo`: Consists of one to three octal digits.
-* `\xhh`: Consists of one or more [[radices#Hexadecimal|hexadecimal]] digits. The `x` prefix is required to distinguish from octal escape sequences.
-* `\uhhhh`: Introduced in C11 to represent Unicode code points. *Must* have exactly four hexadecimal characters specified with `0` leading padding if necessary.
-* `\Uhhhhhhhh`: Introduced in C11 to represent larger unicode code points. *Must* have exactly eight hexadecimal characters specified with `0` leading padding if necessary.
 
 %%ANKI
 Basic
@@ -236,9 +238,11 @@ Tags: i18n::unicode
 <!--ID: 1753474351782-->
 END%%
 
-## Multibyte Characters
+## Multibyte Strings
 
-A **multibyte string** is a C string composed of **multibyte characters**. A multibyte character is a character that may require more than one byte to represent.
+A **multibyte string** is a C-style string composed of **multibyte characters**. A multibyte character is a character that may require more than one byte to represent.
+
+Multibyte characters are represented with type `char`. Multibyte strings are represented with type `char*`.
 
 %%ANKI
 Basic
@@ -317,9 +321,104 @@ Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5,
 <!--ID: 1753479843913-->
 END%%
 
-## Wide Characters
+### UTF-8
 
-A **wide character** is a single value that can uniquely represent all code points of the largest extended character set specified among the supported [[i18n/index#Locales|locales]]. The primary type used is `wchar_t` included from `<wchar.h>`.
+A [[unicode#UTF-8|UTF-8]] string literal is prefixed with `u8`. Since C23, a UTF-8 character literal is denoted in the same way.
+
+%%ANKI
+Basic
+How is a UTF-8 string literal specified?
+Back: As `u8"..."`.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
+<!--ID: 1753749115888-->
+END%%
+
+%%ANKI
+Basic
+Assume C17. How is a UTF-8 character literal specified?
+Back: N/A.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+Tags: i18n::unicode
+<!--ID: 1759806044342-->
+END%%
+
+%%ANKI
+Basic
+Assume C23. How is a UTF-8 character literal specified?
+Back: As `u8'...'`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+Tags: i18n::unicode
+<!--ID: 1759806044352-->
+END%%
+
+%%ANKI
+Basic
+What kind of string literal is prefixed with a `u8`?
+Back: A UTF-8 encoded string.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
+<!--ID: 1753749115898-->
+END%%
+
+%%ANKI
+Basic
+What type is given to string literal `u8"..."`?
+Back: `char8_t*`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+Tags: i18n::unicode
+<!--ID: 1753749115908-->
+END%%
+
+%%ANKI
+Basic
+What type is given to character literal `u8'...'`?
+Back: `char8_t`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+Tags: i18n::unicode
+<!--ID: 1759806044357-->
+END%%
+
+%%ANKI
+Basic
+Which C standard header provides the `char8_t` type?
+Back: `<uchar.h>`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+Tags: i18n::unicode
+<!--ID: 1759806044361-->
+END%%
+
+%%ANKI
+Basic
+Why is the `<uchar.h>` header named the way it is?
+Back: It's short for **u**nicode **char**acters.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+Tags: i18n::unicode
+<!--ID: 1759806044366-->
+END%%
+
+%%ANKI
+Basic
+Assume C17. Is string literal `u8"..."` guaranteed to be UTF-8 encoded?
+Back: Yes.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
+<!--ID: 1753749115927-->
+END%%
+
+%%ANKI
+Basic
+Assume C23. Is string literal `u8"..."` guaranteed to be UTF-8 encoded?
+Back: Yes.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+Tags: i18n::unicode
+END%%
+
+## Wide Character Strings
+
+A **wide character** is a single value that can uniquely represent all code points of the largest extended character set specified among the supported [[i18n/index#Locales|locales]]. A **wide character string** is a NUL-terminated array of wide characters.
+
+Wide characters are represented with type `wchar_t`. Wide character strings are represented with type `wchar_t*`.
 
 %%ANKI
 Basic
@@ -409,10 +508,18 @@ END%%
 
 %%ANKI
 Basic
-Which C header includes the `wchar_t` typedef?
+Which C standard header provides the `wchar_t` type?
 Back: `<wchar.h>`
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 <!--ID: 1753749115879-->
+END%%
+
+%%ANKI
+Basic
+Why is the `<wchar.h>` header named the way it is?
+Back: It's short for **w**ide **char**acters.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1759806044370-->
 END%%
 
 %%ANKI
@@ -425,26 +532,23 @@ END%%
 
 %%ANKI
 Basic
+What type is given to char literal `L'...'?
+Back: `wchar_t`
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+<!--ID: 1759806044374-->
+END%%
+
+%%ANKI
+Basic
 What type is given to string literal `L"..."`?
 Back: `wchar_t*`
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 <!--ID: 1753749115885-->
 END%%
 
-## Unicode Support
+### UTF-16
 
-A string literal can be [[unicode#UTF-8|UTF-8]] encoded by prefixing a string with `u8`. Likewise, you can specify a [[unicode#UTF-16|UTF-16]] encoded string literal with prefix `u` and a [[unicode#UTF-32|UTF-32]] encoded string literal with prefix `U` (assuming `__STDC_UTF_16__` and `__STDC_UTF_32__` are defined respectively).
-
-As an alternative to wide characters, one can also use `char16_t` and `char32_t`.
-
-%%ANKI
-Basic
-How is a UTF-8 string literal specified?
-Back: As `u8"..."`.
-Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
-Tags: i18n::unicode
-<!--ID: 1753749115888-->
-END%%
+If the `__STDC_UTF_16__` macro is set to `1`, then `char16_t` strings are [[unicode#UTF-16|UTF-16]] encoded. Character and string literals of type `char16_t` are denoted with a `u` prefix. Since C23, this macro must be set to `1`.
 
 %%ANKI
 Basic
@@ -453,24 +557,6 @@ Back: As `u"..."`.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 Tags: i18n::unicode
 <!--ID: 1753749115892-->
-END%%
-
-%%ANKI
-Basic
-How is a UTF-32 string literal specified?
-Back: As `U"..."`.
-Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
-Tags: i18n::unicode
-<!--ID: 1753749115895-->
-END%%
-
-%%ANKI
-Basic
-What kind of string literal is prefixed with a `u8`?
-Back: A UTF-8 encoded string.
-Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
-Tags: i18n::unicode
-<!--ID: 1753749115898-->
 END%%
 
 %%ANKI
@@ -484,20 +570,11 @@ END%%
 
 %%ANKI
 Basic
-Assuming relevant macros are defined, what kind of string literal is prefixed with a `U`?
-Back: A UTF-32 encoded string.
+What type is given to character literal `u'...'`?
+Back: `char16_t`
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 Tags: i18n::unicode
-<!--ID: 1753749115905-->
-END%%
-
-%%ANKI
-Basic
-What type is given to string literal `u8"..."`?
-Back: `char*`
-Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
-Tags: i18n::unicode
-<!--ID: 1753749115908-->
+<!--ID: 1753749115911-->
 END%%
 
 %%ANKI
@@ -511,43 +588,7 @@ END%%
 
 %%ANKI
 Basic
-What type is given to string literal `U"..."`?
-Back: `char32_t*`
-Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
-Tags: i18n::unicode
-<!--ID: 1753749115914-->
-END%%
-
-%%ANKI
-Basic
-Which C header includes the `char16_t` and `char32_t` typedefs?
-Back: `<uchar.h>`
-Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
-Tags: i18n::unicode
-<!--ID: 1753749115921-->
-END%%
-
-%%ANKI
-Basic
-Why aren't `char16_t` and `char32_t` considered wide?
-Back: They may not be wide enough to hold every code point of every available locale.
-Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
-Tags: i18n::unicode
-<!--ID: 1753749115924-->
-END%%
-
-%%ANKI
-Basic
-Is string literal `u8"..."` guaranteed to be UTF-8 encoded?
-Back: Yes.
-Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
-Tags: i18n::unicode
-<!--ID: 1753749115927-->
-END%%
-
-%%ANKI
-Basic
-Is string literal `u"..."` guaranteed to be UTF-16 encoded?
+Assume C17. Is string literal `u"..."` guaranteed to be UTF-16 encoded?
 Back: No.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 Tags: i18n::unicode
@@ -556,11 +597,10 @@ END%%
 
 %%ANKI
 Basic
-Is string literal `U"..."` guaranteed to be UTF-32 encoded?
-Back: No.
-Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Assume C23. Is string literal `u"..."` guaranteed to be UTF-16 encoded?
+Back: Yes.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 Tags: i18n::unicode
-<!--ID: 1753749115933-->
 END%%
 
 %%ANKI
@@ -570,6 +610,89 @@ Back: When `__STDC_UTF_16__` is defined to `1`.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 Tags: i18n::unicode
 <!--ID: 1753749115936-->
+END%%
+
+%%ANKI
+Basic
+What is the endianness of string literal `u"..."`?
+Back: The native endianness, i.e. that of the machine.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
+<!--ID: 1753749115917-->
+END%%
+
+%%ANKI
+Basic
+What does the `__STDC_UTF_16__` macro indicate when defined?
+Back: The `char16_t` type corresponds to a UTF-16 encoding.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1757693034839-->
+END%%
+
+### UTF-32
+
+If the `__STDC_UTF_32__` macro is set to `1`, then `char32_t` strings are [[unicode#UTF-32|UTF-32]] encoded. Character and string literals of type `char32_t` are denoted with a `U` prefix. Since C23, this macro must be set to `1`.
+
+%%ANKI
+Basic
+How is a UTF-32 string literal specified?
+Back: As `U"..."`.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
+<!--ID: 1753749115895-->
+END%%
+
+%%ANKI
+Basic
+Assuming relevant macros are defined, what kind of string literal is prefixed with a `U`?
+Back: A UTF-32 encoded string.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
+<!--ID: 1753749115905-->
+END%%
+
+%%ANKI
+Basic
+What type is given to character literal `U'...'`?
+Back: `char32_t`
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
+<!--ID: 1759806044378-->
+END%%
+
+%%ANKI
+Basic
+What type is given to string literal `U"..."`?
+Back: `char32_t*`
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
+<!--ID: 1753749115914-->
+END%%
+
+%%ANKI
+Basic
+Which C standard header includes the `char16_t` and `char32_t` typedefs?
+Back: `<uchar.h>`
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
+<!--ID: 1753749115921-->
+END%%
+
+%%ANKI
+Basic
+Assume C17. Is string literal `U"..."` guaranteed to be UTF-32 encoded?
+Back: No.
+Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
+Tags: i18n::unicode
+<!--ID: 1753749115933-->
+END%%
+
+%%ANKI
+Basic
+Assume C23. Is string literal `U"..."` guaranteed to be UTF-32 encoded?
+Back: Yes.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+Tags: i18n::unicode
 END%%
 
 %%ANKI
@@ -591,15 +714,6 @@ END%%
 
 %%ANKI
 Basic
-What is the endianness of string literal `u"..."`?
-Back: The native endianness, i.e. that of the machine.
-Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
-Tags: i18n::unicode
-<!--ID: 1753749115917-->
-END%%
-
-%%ANKI
-Basic
 What is the endianness of string literal `U"..."`?
 Back: The native endianness, i.e. that of the machine.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
@@ -609,16 +723,8 @@ END%%
 
 %%ANKI
 Basic
-What does the `__STDC_UTF_16__` macro indicate when defined?
-Back: The values of `char16_t` are UTF-16 encoded.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1757693034839-->
-END%%
-
-%%ANKI
-Basic
 What does the `__STDC_UTF_32__` macro indicate when defined?
-Back: The values of `char32_t` are UTF-32 encoded.
+Back: The `char32_t` type corresponds to a UTF-32 encoding.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1757693034841-->
 END%%
@@ -773,5 +879,7 @@ END%%
 * Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 * Brian W. Kernighan and Dennis M. Ritchie, *The C Programming Language*, 2nd ed (Englewood Cliffs, N.J: Prentice Hall, 1988).
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+* Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).

@@ -33,7 +33,7 @@ END%%
 
 %%ANKI
 Basic
-What are the name of the axes in a polar coordinate system?
+What are the names of the axes in a polar coordinate system?
 Back: The polar axis.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1756403787416-->

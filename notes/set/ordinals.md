@@ -120,7 +120,7 @@ END%%
 %%ANKI
 Basic
 How was the "image" part of term "$\in$-image" derived?
-Back: An $\in$-image is derived by using the image operation in transfinite induction.
+Back: An $\in$-image is derived by using the image operation in transfinite recursion.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1756129683954-->
 END%%
