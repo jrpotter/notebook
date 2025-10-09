@@ -412,6 +412,7 @@ Assume C23. Is string literal `u8"..."` guaranteed to be UTF-8 encoded?
 Back: Yes.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 Tags: i18n::unicode
+<!--ID: 1759849363707-->
 END%%
 
 ## Wide Character Strings
@@ -532,7 +533,7 @@ END%%
 
 %%ANKI
 Basic
-What type is given to char literal `L'...'?
+What type is given to char literal `L'...'`?
 Back: `wchar_t`
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 <!--ID: 1759806044374-->
@@ -601,6 +602,7 @@ Assume C23. Is string literal `u"..."` guaranteed to be UTF-16 encoded?
 Back: Yes.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 Tags: i18n::unicode
+<!--ID: 1759849363711-->
 END%%
 
 %%ANKI
@@ -693,6 +695,7 @@ Assume C23. Is string literal `U"..."` guaranteed to be UTF-32 encoded?
 Back: Yes.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 Tags: i18n::unicode
+<!--ID: 1759849363714-->
 END%%
 
 %%ANKI

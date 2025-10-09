@@ -265,7 +265,7 @@ END%%
 %%ANKI
 Basic
 In what situation could an object with thread storage duration have an identifier with no linkage?
-Back: When declared with `static` and `thread_local` storage class specifiers within a block.
+Back: When declared as `static` and `thread_local` within a block.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759791002498-->
 END%%
@@ -1270,7 +1270,7 @@ END%%
 %%ANKI
 Basic
 Consider a `constexpr` object in block-scope with the `static` specifier. The corresponding identifier has what linkage?
-Back: Internal.
+Back: N/A. Such an identifier has no linkage.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759792885902-->
 END%%

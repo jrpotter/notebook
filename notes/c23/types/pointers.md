@@ -577,6 +577,7 @@ Basic
 What is the maximum distance permitted to be tracked between two pointers?
 Back: The maximum distance supported by `ptrdiff_t`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759849363718-->
 END%%
 
 ## nullptr

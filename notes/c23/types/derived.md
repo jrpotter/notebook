@@ -869,7 +869,7 @@ END%%
 
 %%ANKI
 Basic
-What types does the standard require are possible to declare bit-fields with?
+What types does the standard require bit-fields to be possibly declared with?
 Back: `bool`, `signed int`, `unsigned int`, or bit-precise integer type.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1734662614063-->

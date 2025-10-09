@@ -42,7 +42,7 @@ Standard attributes have an equivalent form with leading and trailing double und
 
 %%ANKI
 Basic
-Generally speaking, attributes are preferred in what form?
+Generally speaking, attributes in header files are preferred in what form?
 Back: Double underscore form.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759513717003-->
@@ -57,7 +57,7 @@ END%%
 
 %%ANKI
 Basic
-Why does Gustedt recommend using the double underscore form of attributes?
+Why does Gustedt recommend using the double underscore form of attributes in header files?
 Back: To avoid macro replacements from interfering with them.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759513717011-->

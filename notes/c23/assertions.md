@@ -117,6 +117,7 @@ Basic
 Which standard C header provides the `unreachable` macro?
 Back: `<stddef.h>`
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759849363721-->
 END%%
 
 %%ANKI
@@ -124,6 +125,7 @@ Basic
 Which C standard introduced the `unreachable` macro?
 Back: C23.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759849363725-->
 END%%
 
 %%ANKI
@@ -131,6 +133,7 @@ Basic
 What is the purpose of the `unreachable` macro?
 Back: To state some control flow that reaches the macro will never be taken.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759849363728-->
 END%%
 
 %%ANKI
@@ -138,6 +141,7 @@ Basic
 What is the result of reaching an `unreachable` invocation?
 Back: Undefined behavior.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759849363731-->
 END%%
 
 ## Bibliography

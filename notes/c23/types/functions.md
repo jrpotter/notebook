@@ -261,6 +261,146 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1757237047532-->
 END%%
 
+## Variadic Functions
+
+The final parameter of a function may be `...`. Specifying this parameter produces a so-called **variadic function**. Before C23, the `...` parameter required at least one other parameter before it. Since C23, this requirement is no longer in place.
+
+When passed to a variadic parameter, arithmetic types are converted in the same manner as in arithmetic operations, with the exception of `float` arguments which are converted to `double`.
+
+The `<stdarg.h>` header provides the `va_list` type used to represent the variadic argument list. It also provides a number of macros for traversing/manipulating the list.
+
+%%ANKI
+Basic
+Which C header provides variadic function support?
+Back: `<stdarg.h>`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759891570236-->
+END%%
+
+%%ANKI
+Basic
+What type corresponds to the `...` parameter in a variadic function?
+Back: `va_list`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759891570238-->
+END%%
+
+%%ANKI
+Basic
+Which C header includes the `va_list` type?
+Back: `<stdarg.h>`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759891570239-->
+END%%
+
+%%ANKI
+Basic
+According to Gustedt, what should you prefer in favor of variadic functions?
+Back: Variadic function-like macros.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759891570240-->
+END%%
+
+%%ANKI
+Cloze
+{1`__VA_ARGS__`} is to {2:macros} whereas {2:`va_list`} is to {1:functions}.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759891570241-->
+END%%
+
+%%ANKI
+Basic
+Suppose a `short` is passed to a function's variadic parameter. What type is it converted to?
+Back: `int`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759891570242-->
+END%%
+
+%%ANKI
+Basic
+Suppose a `float` is passed to a function's variadic parameter. What type is it converted to?
+Back: `double`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759891570243-->
+END%%
+
+%%ANKI
+Basic
+Suppose a `char` is passed to a function's variadic parameter. What type is it converted to?
+Back: `int`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759891570245-->
+END%%
+
+%%ANKI
+Basic
+Suppose a `double` is passed to a function's variadic parameter. What type is it converted to?
+Back: N/A. It remains a `double`.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759891570246-->
+END%%
+
+%%ANKI
+Basic
+How is a function made variadic?
+Back: By placing a `...` parameter at the end of its parameter list.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759891570247-->
+END%%
+
+%%ANKI
+Basic
+Assume C17. Is the following prototype valid? If not, why?
+```c
+void func(...);
+```
+Back: No. Variadic functions must have at least one other parameter before `...`.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759891570248-->
+END%%
+
+%%ANKI
+Basic
+Assume C17. Is the following prototype valid? If not, why?
+```c
+void func(int a, ...);
+```
+Back: Yes.
+Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1759891570249-->
+END%%
+
+%%ANKI
+Basic
+Assume C23. Is the following prototype valid? If not, why?
+```c
+void func(...);
+```
+Back: Yes.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759891570250-->
+END%%
+
+%%ANKI
+Basic
+Assume C23. Is the following prototype valid? If not, why?
+```c
+void func(int a, ...);
+```
+Back: Yes.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759891570251-->
+END%%
+
+%%ANKI
+Basic
+What is the most ubiquitous example of a variadic function still in common use?
+Back: `printf`
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1759891570252-->
+END%%
+
 ## Bibliography
 
+* Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).

@@ -71,14 +71,6 @@ END%%
 
 %%ANKI
 Basic
-Let $\alpha$ be an $\in$-image of strict well order $\langle A, < \rangle$. What does $x \in y \in \alpha$ imply?
-Back: $x \in \alpha$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1756129683940-->
-END%%
-
-%%ANKI
-Basic
 Let $\alpha$ be an $\in$-image of strict well order $\langle A, < \rangle$. Then $\bigcup \alpha$ is a subset of what?
 Back: $\alpha$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -91,14 +83,6 @@ Let $\alpha$ be an $\in$-image of strict well order $\langle A, < \rangle$. If $
 Back: $\alpha$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1756129683944-->
-END%%
-
-%%ANKI
-Basic
-Let $\alpha$ be an $\in$-image of strict well order $\langle A, < \rangle$. Then $\alpha$ is a subset of what?
-Back: $\mathscr{P}\, \alpha$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1756129683946-->
 END%%
 
 %%ANKI

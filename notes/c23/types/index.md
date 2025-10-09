@@ -1102,9 +1102,9 @@ END%%
 %%ANKI
 Basic
 What is the storage duration of compound literal `(constexpr int){ 0 }` in block scope?
-Back: Static.
+Back: Automatic.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
-<!--ID: 1759790776106-->
+<!--ID: 1759849585599-->
 END%%
 
 ## Integer Constant Expressions
