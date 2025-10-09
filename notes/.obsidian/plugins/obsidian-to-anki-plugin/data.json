@@ -1615,15 +1615,17 @@
     "_journal/2025-10/2025-10-04.md": "566c26badc5111fe60f5cd2148a3401a",
     "_journal/2025-10-06.md": "df88ee9566e78a9780594a3110c69afa",
     "_journal/2025-10/2025-10-05.md": "8f97de7cee606c24cb9d3c0568929892",
-    "c23/storage.md": "9ffa291abadf78d95f3d93eb913deff3",
+    "c23/storage.md": "e4b446d56b33865553b76a74fdea407f",
     "c23/types/strings.md": "4f6605b54b230014b62895c19bd64d3d",
     "c23/io/index.md": "31511f71366305782b81a50bf682b827",
     "_journal/2025-10-07.md": "77c32b94a70cfb0c0a8ae932460fed98",
     "_journal/2025-10/2025-10-06.md": "df88ee9566e78a9780594a3110c69afa",
     "c23/errors.md": "74e10e98b29dd61d4579453360c246b4",
-    "c23/generic.md": "63c5d2b82e26fd21c9a6150b9f670280",
+    "c23/generic.md": "726278409e4bbeb94703354beba8838b",
     "_journal/2025-10/2025-10-07.md": "4f0f90885d29198aacb0d9831abdaa8c",
-    "_journal/2025-10-08.md": "5c1f70e4479eb13ad02551e6bafe80cf"
+    "_journal/2025-10-08.md": "5c1f70e4479eb13ad02551e6bafe80cf",
+    "_journal/2025-10-09.md": "fe77db893662e3d1343b300573fc6ac7",
+    "_journal/2025-10/2025-10-08.md": "5c1f70e4479eb13ad02551e6bafe80cf"
   },
   "fields_dict": {
     "Basic": [

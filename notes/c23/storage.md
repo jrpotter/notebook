@@ -1178,7 +1178,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`auto`} and {`register`} storage class specifiers definitely declare objects with with automatic storage duration.
+The {`auto`} and {`register`} storage class specifiers definitively declare objects with automatic storage duration.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1733242332400-->
 END%%

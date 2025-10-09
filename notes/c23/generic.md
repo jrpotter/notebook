@@ -153,7 +153,7 @@ END%%
 Basic
 Consider the following. What type does the `_Generic` statement match against?
 ```c
-int a[4] = 0;
+int a[4] = {0};
 _Generic(&a, ...);
 ```
 Back: A type compatible with `int(*)[4]`.
@@ -230,9 +230,31 @@ Reference: Tatham, Simon. “Workarounds for C11 `_Generic`.” Accessed October
 <!--ID: 1759955240956-->
 END%%
 
-## Type Inference
+%%ANKI
+Basic
+What types are allowed to be supplied to a `_Generic` case?
+Back: Any complete object type other than a VMT.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1760016142619-->
+END%%
 
-### auto
+%%ANKI
+Basic
+Can type `int(*)[4]` be used in a `_Generic` case? If not, why?
+Back: Yes.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1760016142628-->
+END%%
+
+%%ANKI
+Basic
+Can type `int(*)[]` be used in a `_Generic` case? If not, why?
+Back: No, it is not a complete type.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1760016142631-->
+END%%
+
+## Type Inference
 
 The [[storage#auto|auto]] storage class specifier can also be used for type inference. A definition of an inferred object must contain a direct declarator (e.g. no pointer indicators) and an assignment expression (e.g. no expressions which declare `struct`s or `union`s). Optionally, the left-hand side may include [[qualifiers|type qualifiers]] or [[attributes]].
 
@@ -282,7 +304,7 @@ END%%
 Basic
 Consider the following. What is the inferred type of `b`?
 ```c
-int a[4] = { 0 };
+int a[4] = {0};
 auto b = a;
 ```
 Back: `int*`
@@ -294,7 +316,7 @@ END%%
 Basic
 Consider the following. What is the inferred type of `b`?
 ```c
-int a[4] = { 0 };
+int a[4] = {0};
 auto b = &a;
 ```
 Back: `int(*)[4]`
@@ -343,7 +365,7 @@ Consider the following. Is the second `const` qualifier redundant?
 const int a = 1;
 const auto b = a;
 ```
-Back: No. `auto` has the type of `a` after lvalue conversion (i.e. dropping qualifiers).
+Back: No. `auto` corresponds to type `int` after lvalue conversion (i.e. dropping qualifiers).
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759978994541-->
 END%%
@@ -360,7 +382,7 @@ Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https:
 <!--ID: 1759978994542-->
 END%%
 
-### typeof
+### Typeof Operators
 
 TODO
 
