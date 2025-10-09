@@ -192,7 +192,7 @@ Basic
 Which C function is used to find the argument of a complex number?
 Back: `atan2()`
 Reference: _Wikipedia_. “atan2.” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Atan2](https://en.wikipedia.org/w/index.php?title=Atan2&oldid=1304064532).
-Tags: c17 complex
+Tags: c23 complex
 <!--ID: 1755142984767-->
 END%%
 
@@ -201,7 +201,7 @@ Basic
 How is `atan2(0, 0)` usually defined in C?
 Back: As `0`.
 Reference: _Wikipedia_. “atan2.” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Atan2](https://en.wikipedia.org/w/index.php?title=Atan2&oldid=1304064532).
-Tags: c17 complex
+Tags: c23 complex
 <!--ID: 1755143382356-->
 END%%
 
@@ -209,7 +209,7 @@ END%%
 Cloze
 The C function `atan2` helps convert {1:cartesian} coordinates to {1:polar} coordinates.
 Reference: _Wikipedia_. “atan2.” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Atan2](https://en.wikipedia.org/w/index.php?title=Atan2&oldid=1304064532).
-Tags: c17 complex
+Tags: c23 complex
 <!--ID: 1755143505511-->
 END%%
 
@@ -218,7 +218,7 @@ Basic
 How does C function `atan2` help convert cartesian coordinates to polar coordinates?
 Back: It returns the angle between the positive real axis and the ray from origin to the point in question.
 Reference: _Wikipedia_. “atan2.” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Atan2](https://en.wikipedia.org/w/index.php?title=Atan2&oldid=1304064532).
-Tags: c17 complex
+Tags: c23 complex
 <!--ID: 1755143505514-->
 END%%
 

@@ -33,7 +33,7 @@ END%%
 Cloze
 {`union`} is to the additive property whereas {`struct`} is to the multiplicative property.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-Tags: c17
+Tags: c23
 <!--ID: 1708221293483-->
 END%%
 
@@ -42,7 +42,7 @@ Basic
 Which C construct corresponds to the multiplicative property?
 Back: `struct`
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-Tags: c17
+Tags: c23
 <!--ID: 1708221293489-->
 END%%
 

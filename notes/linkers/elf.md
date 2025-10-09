@@ -198,7 +198,7 @@ Basic
 In what ELF section would a `printf` format string be found in?
 Back: `.rodata`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17::io::stream
+Tags: c23::io::stream
 <!--ID: 1734367304877-->
 END%%
 
@@ -219,7 +219,7 @@ Basic
 What kind of global/static C variables does the `.data` section contain?
 Back: Those initialized to a non-zero value.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734368832070-->
 END%%
 
@@ -228,7 +228,7 @@ Basic
 Which ELF section contains global C variables initialized to a non-zero value?
 Back: `.data`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734368832073-->
 END%%
 
@@ -237,7 +237,7 @@ Basic
 Which ELF section contains static C variables initialized to a non-zero value?
 Back: `.data`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734368832075-->
 END%%
 
@@ -246,7 +246,7 @@ Basic
 Which ELF section contains local C variables initialized to a non-zero value?
 Back: N/A.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734368832076-->
 END%%
 
@@ -258,7 +258,7 @@ int foo = 1;
 ```
 Back: `.data`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734369188095-->
 END%%
 
@@ -272,7 +272,7 @@ int foo() {
 ```
 Back: N/A.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734369188101-->
 END%%
 
@@ -286,7 +286,7 @@ int foo() {
 ```
 Back: `.data`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734369188110-->
 END%%
 
@@ -299,7 +299,7 @@ Basic
 What kind of global and static C variables does the `.tdata` section contain?
 Back: Thread-local variables initialized to a non-zero value.
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402941-->
 END%%
 
@@ -308,7 +308,7 @@ Basic
 Which ELF section contains global thread-local C variables initialized to a non-zero value?
 Back: `.tdata`
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402945-->
 END%%
 
@@ -317,7 +317,7 @@ Basic
 Which ELF section contains static thread-local C variables initialized to a non-zero value?
 Back: `.tdata`
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402949-->
 END%%
 
@@ -329,7 +329,7 @@ _Thread_local int foo = 1;
 ```
 Back: `.tdata`
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402952-->
 END%%
 
@@ -343,7 +343,7 @@ int foo() {
 ```
 Back: `.tdata`.
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402957-->
 END%%
 
@@ -357,7 +357,7 @@ int foo() {
 ```
 Back: N/A. Compilation error - `bar` must have global storage.
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402961-->
 END%%
 
@@ -370,7 +370,7 @@ Basic
 Assuming `-fno-common`, what kind of C variables does the `.bss` section contain?
 Back: Uninitialized global and static variables or those initialized to zero.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734368832077-->
 END%%
 
@@ -379,7 +379,7 @@ Basic
 Assuming `-fno-common`, which ELF section contains uninitialized global C variables?
 Back: `.bss`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734368832078-->
 END%%
 
@@ -388,7 +388,7 @@ Basic
 Assuming `-fno-common`, which ELF section contains global C variables initialized to a zero value?
 Back: `.bss`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734368832079-->
 END%%
 
@@ -397,7 +397,7 @@ Basic
 Assuming `-fno-common`, which two ELF sections contain global and static C variables?
 Back: `.data` and `.bss`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734368832080-->
 END%%
 
@@ -409,7 +409,7 @@ int foo = 0;
 ```
 Back: `.bss`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734369188113-->
 END%%
 
@@ -421,7 +421,7 @@ int foo;
 ```
 Back: `.bss`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734369188117-->
 END%%
 
@@ -430,7 +430,7 @@ Basic
 Assuming `-fno-common`, both `.bss` and `.data` hold what kind of C variables?
 Back: Global and static variables.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734369188121-->
 END%%
 
@@ -483,7 +483,7 @@ int foo() {
 ```
 Back: `.bss`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734369188106-->
 END%%
 
@@ -496,7 +496,7 @@ Basic
 What kind of global and static C variables does the `.tbss` section contain?
 Back: Unitialized thread-local variables or those initialized to zero.
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402964-->
 END%%
 
@@ -505,7 +505,7 @@ Basic
 Which ELF section contains uninitialized thread-local global C variables?
 Back: `.tbss`
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402968-->
 END%%
 
@@ -514,7 +514,7 @@ Basic
 Which ELF section contains global thread-local C variables initialized to a zero value?
 Back: `.tbss`
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402971-->
 END%%
 
@@ -523,7 +523,7 @@ Basic
 Which two ELF sections contain global and static thread-local C variables?
 Back: `.tdata` and `.tbss`
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402975-->
 END%%
 
@@ -535,7 +535,7 @@ _Thread_local int foo = 0;
 ```
 Back: `.tbss`
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402980-->
 END%%
 
@@ -547,7 +547,7 @@ _Thread_local int foo;
 ```
 Back: `.tbss`
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402984-->
 END%%
 
@@ -556,7 +556,7 @@ Basic
 Both `.tbss` and `.tdata` hold what kind of C variables?
 Back: Global or static thread-local variables.
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402989-->
 END%%
 
@@ -565,7 +565,7 @@ Basic
 Which of `.tdata` and/or `.tbss` is considered a "placeholder"?
 Back: `.tbss`
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745402993-->
 END%%
 
@@ -579,7 +579,7 @@ int foo() {
 ```
 Back: `.tbss`.
 Reference: Ulrich Drepper, “ELF Handling For Thread-Local Storage,” n.d.
-Tags: c17
+Tags: c23
 <!--ID: 1734745403003-->
 END%%
 

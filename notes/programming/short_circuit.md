@@ -24,7 +24,7 @@ Basic
 What C operator corresponds to $\textbf{cand}$?
 Back: `&&`
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c17
+Tags: c23
 <!--ID: 1707316606004-->
 END%%
 
@@ -57,7 +57,7 @@ Basic
 What C operator corresponds to $\textbf{cor}$?
 Back: `||`
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-Tags: c17
+Tags: c23
 <!--ID: 1707316606007-->
 END%%
 

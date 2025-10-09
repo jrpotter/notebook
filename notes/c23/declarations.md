@@ -380,6 +380,7 @@ Basic
 `{0}` is a valid initializer for what object types?
 Back: All except VLAs.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+<!--ID: 1725196290203-->
 END%%
 
 %%ANKI

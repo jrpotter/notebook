@@ -120,7 +120,7 @@ Basic
 Suppose a C function takes in a pointer. Can it still be reentrant?
 Back: Yes, if callers ensure the pointers refer to nonshared data.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1753825531620-->
 END%%
 
@@ -131,7 +131,7 @@ Can a C function with the following properties be guaranteed reentrant? Why?
 * No arguments correspond to pointers.
 Back: No. It might still access shared data in the function body.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1753825531625-->
 END%%
 
@@ -142,7 +142,7 @@ Can a C function with the following properties be guaranteed reentrant? Why?
 * No access to global data in the function body.
 Back: No. It may still be passed a pointer (by value).
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1754314232637-->
 END%%
 

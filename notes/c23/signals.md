@@ -1,40 +1,39 @@
 ---
 title: Signals
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17::signal
+FILE TAGS: c23::signal
 tags:
-  - c17
+  - c23
   - signal
 ---
 
 ## Overview
 
-The principal function used in C to adjust signals is `signal()`:
+The principal function used in C to adjust signals is `signal`. Note that use of this function in multithreaded programs is explicitly regarded as undefined behavior.
 
 ```c
 typedef void (*sighandler_t)(int);
-
 sighandler_t signal(int signum, sighandler_t handler);
 ```
 
-The `signal()` function is used to change the action associated with a signal `signum` in one of three ways:
+The `signal` function is used to change the action associated with a signal `signum` in one of three ways:
 
 * If `handler` is `SIG_IGN`, then signals of type `signum` are ignored.
 * If `handler` is `SIG_DFL`, then the action for signals of type `signum` reverts to the default action.
 * Other handler is the address of a user-defined function.
 
-On Linux machines, it's generally preferred to instead use `sigaction()`:
+On Linux machines, it's generally preferred to instead use `sigaction`:
 
 ```c
 int sigaction(int signum,
-              const struct sigaction *_Nullable restrict act,
-              struct sigaction *_Nullable restrict oldact);)
+              const struct sigaction *restrict act,
+              struct sigaction *restrict oldact);)
 ```
 
 %%ANKI
 Basic
 Which C standard function is used to change signal handlers?
-Back: `signal()`
+Back: `signal`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1753136506338-->
 END%%
@@ -83,7 +82,7 @@ END%%
 %%ANKI
 Basic
 On Linux machines, what C function is preferred to change signal handlers?
-Back: `sigaction()`
+Back: `sigaction`
 Reference: “Syscalls(2) - Linux Manual Page.” Accessed August 8, 2025. [https://man7.org/linux/man-pages/man2/syscalls.2.html](https://man7.org/linux/man-pages/man2/syscalls.2.html).
 Tags: os::linux
 <!--ID: 1754790552806-->
@@ -91,7 +90,7 @@ END%%
 
 %%ANKI
 Basic
-What is the purpose of the `sigaction()` function?
+What is the purpose of the `sigaction` function?
 Back: To change the action taken by a process on receipt of a specific signal.
 Reference: “Syscalls(2) - Linux Manual Page.” Accessed August 8, 2025. [https://man7.org/linux/man-pages/man2/syscalls.2.html](https://man7.org/linux/man-pages/man2/syscalls.2.html).
 Tags: os::linux
@@ -100,10 +99,26 @@ END%%
 
 %%ANKI
 Cloze
-{1:`struct sigaction`} is to {2:`sigaction()`} whereas {2:`sighandler_t`} is to {1:`signal()`}.
+{1:`struct sigaction`} is to {2:`sigaction`} whereas {2:`sighandler_t`} is to {1:`signal`}.
 Reference: “Syscalls(2) - Linux Manual Page.” Accessed August 8, 2025. [https://man7.org/linux/man-pages/man2/syscalls.2.html](https://man7.org/linux/man-pages/man2/syscalls.2.html).
 Tags: os::linux
 <!--ID: 1754790552812-->
+END%%
+
+%%ANKI
+Basic
+When is the use of the `signal` function undefined behavior?
+Back: When invoked in a multithreaded program.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1760045251280-->
+END%%
+
+%%ANKI
+Basic
+Suppose a function uses `signal`. What scenario may still invoke undefined behavior?
+Back: This function could be linked into a program that uses threads.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1760045251284-->
 END%%
 
 ## Signal Mask
@@ -126,7 +141,7 @@ int sigismember(const sigset_t *set, int signum);
 
 %%ANKI
 Basic
-What does the `sigprocmask()` function do?
+What does the `sigprocmask` function do?
 Back: Updates the process's blocked bit vector.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552815-->
@@ -150,7 +165,7 @@ END%%
 
 %%ANKI
 Basic
-What does an argument of `SIG_BLOCK` to `sigprocmask()` indicate?
+What does an argument of `SIG_BLOCK` to `sigprocmask` indicate?
 Back: To add the specified signals to the sigmask.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552825-->
@@ -158,7 +173,7 @@ END%%
 
 %%ANKI
 Basic
-What does an argument of `SIG_UNBLOCK` to `sigprocmask()` indicate?
+What does an argument of `SIG_UNBLOCK` to `sigprocmask` indicate?
 Back: To remove the specified signals to the sigmask.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552829-->
@@ -166,7 +181,7 @@ END%%
 
 %%ANKI
 Basic
-What does an argument of `SIG_SETMASK` to `sigprocmask()` indicate?
+What does an argument of `SIG_SETMASK` to `sigprocmask` indicate?
 Back: To set the specified signals as the sigmask.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552833-->
@@ -174,7 +189,7 @@ END%%
 
 %%ANKI
 Basic
-What does the `sigemptyset()` function do?
+What does the `sigemptyset` function do?
 Back: Initializes its argument to the empty set.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552838-->
@@ -182,7 +197,7 @@ END%%
 
 %%ANKI
 Basic
-What does the `sigfillset()` function do?
+What does the `sigfillset` function do?
 Back: Initializes its argument to set containing every signal.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552842-->
@@ -190,28 +205,28 @@ END%%
 
 %%ANKI
 Cloze
-The {`sigemptyset()`} function acts in contrast to the {`sigfillset()`} function.
+The {`sigemptyset`} function acts in contrast to the {`sigfillset`} function.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552847-->
 END%%
 
 %%ANKI
 Cloze
-With respect to `sigprocmask()`, {`SIG_BLOCK`} works in contrast to {`SIG_UNBLOCK`}.
+With respect to `sigprocmask`, {`SIG_BLOCK`} works in contrast to {`SIG_UNBLOCK`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552852-->
 END%%
 
 %%ANKI
 Cloze
-The {`sigaddset()`} function acts in contrast to the {`sigdelset()`} function.
+The {`sigaddset`} function acts in contrast to the {`sigdelset`} function.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552856-->
 END%%
 
 %%ANKI
 Basic
-What does the `sigaddset()` function do?
+What does the `sigaddset` function do?
 Back: Adds a specific signal number to the argument set.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552859-->
@@ -219,7 +234,7 @@ END%%
 
 %%ANKI
 Basic
-What does the `sigdelset()` function do?
+What does the `sigdelset` function do?
 Back: Removes a specific signal number from the argument set.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552862-->
@@ -227,7 +242,7 @@ END%%
 
 %%ANKI
 Basic
-What does the `sigismember()` function do?
+What does the `sigismember` function do?
 Back: Checks whether a signal number belongs to the argument set.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552866-->
@@ -236,7 +251,7 @@ END%%
 %%ANKI
 Basic
 Which function is used to clear a `sigset_t`?
-Back: `sigemptyset()`
+Back: `sigemptyset`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552869-->
 END%%
@@ -244,7 +259,7 @@ END%%
 %%ANKI
 Basic
 Which function is used to add all signal numbers to a `sigset_t`?
-Back: `sigfillset()`
+Back: `sigfillset`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552872-->
 END%%
@@ -252,7 +267,7 @@ END%%
 %%ANKI
 Basic
 Which function is used to add one signal number to a `sigset_t`?
-Back: `sigaddset()`
+Back: `sigaddset`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552876-->
 END%%
@@ -260,7 +275,7 @@ END%%
 %%ANKI
 Basic
 Which function is used to remove one signal number to a `sigset_t`?
-Back: `sigdelset()`
+Back: `sigdelset`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552880-->
 END%%
@@ -268,7 +283,7 @@ END%%
 %%ANKI
 Basic
 Which function is used to check if a `sigset_t` contains a signal number?
-Back: `sigismember()`
+Back: `sigismember`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1754790552884-->
 END%%
@@ -306,6 +321,54 @@ With respect to signals, what variables should be marked as `volatile`?
 Back: Global variables modified by a signal handler and accessed elsewhere.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1753897177560-->
+END%%
+
+%%ANKI
+Basic
+Is the `exit` function considered async-signal-safe?
+Back: No.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1760045251287-->
+END%%
+
+%%ANKI
+Basic
+Is the `quick_exit` function considered async-signal-safe?
+Back: Yes.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1760045251289-->
+END%%
+
+%%ANKI
+Basic
+Is the `_Exit` function considered async-signal-safe?
+Back: Yes.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1760045251291-->
+END%%
+
+%%ANKI
+Basic
+Is the `abort` function considered async-signal-safe?
+Back: Yes.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1760045251292-->
+END%%
+
+%%ANKI
+Basic
+Is the `signal` function considered async-signal-safe?
+Back: Not necessarily.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1760045251294-->
+END%%
+
+%%ANKI
+Basic
+When can the `signal` function be called from within a signal handler?
+Back: When operating on the same signal the current function is handling.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1760045251295-->
 END%%
 
 ### Atomicity

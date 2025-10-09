@@ -592,7 +592,7 @@ Basic
 What function is usually used to invoke `SIGABRT`?
 Back: `abort`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709131892339-->
 END%%
 
@@ -608,7 +608,7 @@ Basic
 Which header contains the `abort()` function prototype?
 Back: `<stdlib.h>`
 Reference: N/A
-Tags: c17
+Tags: c23
 <!--ID: 1709131892345-->
 END%%
 
@@ -617,7 +617,7 @@ Basic
 What distinguishes `abort` from `exit`?
 Back: The latter gracefully closes the application.
 Reference: N/A
-Tags: c17
+Tags: c23
 <!--ID: 1709131892349-->
 END%%
 

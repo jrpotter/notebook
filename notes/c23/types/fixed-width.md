@@ -111,7 +111,7 @@ END%%
 
 Since C23, **bit-precise integer types** allow specifying quantities that should fit within a specified number of bits. The number of bits is provided as an argument to the `_BitInt` specifier.
 
-Literal types may use case-insensitive suffix `wb` to specify signed bit-precise integer types. Likewise, case-insensitive suffix `wbu` specifies unsigned bit-precise integer types.
+Literal types may use case-insensitive suffix `wb` to specify signed bit-precise integer types. Likewise, case-insensitive suffix `uwb` specifies unsigned bit-precise integer types.
 
 Since C23, additional bit operations have been made available in the `<stdbit.h>` header. These functions act on unsigned integer types.
 
@@ -125,7 +125,7 @@ END%%
 
 %%ANKI
 Basic
-What type is given to literal `7wbu`?
+What type is given to literal `7uwb`?
 Back: `unsigned _BitInt(3)`
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759322173213-->
@@ -133,7 +133,7 @@ END%%
 
 %%ANKI
 Basic
-What type is given to literal `3wbu`?
+What type is given to literal `3uwb`?
 Back: `unsigned _BitInt(2)`
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759322173216-->
@@ -158,7 +158,7 @@ END%%
 %%ANKI
 Basic
 What suffix is used to specify an unsigned bit-precise integer literal?
-Back: `wbu` or `WBU`.
+Back: `uwb` or `UWB`.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759322173224-->
 END%%
@@ -167,7 +167,7 @@ END%%
 Basic
 What is the bit-precise integer type of the following sum?
 ```c
-7wbu + 1wbu
+7uwb + 1uwb
 ```
 Back: `unsigned _BitInt(3)`
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
@@ -178,7 +178,7 @@ END%%
 Basic
 What is the result of the following sum and why?
 ```c
-7wbu + 1wbu
+7uwb + 1uwb
 ```
 Back: `0` because the sum `8` overflows three bits in unsigned encoding.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).

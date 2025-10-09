@@ -109,7 +109,7 @@ xp ? *xp : 0
 ```
 Back: Dereferencing `xp` may throw a null pointer dereferencing error.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1727357091105-->
 END%%
 
@@ -911,7 +911,7 @@ init;
 while (test) { body; update }
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1727632288464-->
 END%%
 
@@ -926,7 +926,7 @@ while (test) { body; update }
 ```
 Back: Situations in which the `for`-loop has a `continue` statement in the `body`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1727632288468-->
 END%%
 
@@ -935,7 +935,7 @@ Basic
 What efficient data structure do `switch` statements compile down into?
 Back: Jump tables.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1727908553985-->
 END%%
 
@@ -944,7 +944,7 @@ Basic
 What two conditions must be satisfied before a `switch` statement employs a jump table?
 Back: A sufficient number of `case` statements that span a small range of values.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1727908554004-->
 END%%
 
@@ -953,7 +953,7 @@ Basic
 *Why* might a `switch` statement be faster than an equivalent `if`/`else` chain?
 Back: A `switch` statement can compile down into a jump table.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1727908554023-->
 END%%
 
@@ -970,7 +970,7 @@ Basic
 Suppose a `switch` compiles into a jump table. What *is* a missing case?
 Back: An offset in the jump table corresponding to an unspecified `case` statement.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1727908554070-->
 END%%
 
@@ -979,7 +979,7 @@ Basic
 Suppose a `switch` compiles into a jump table. How are missing cases handled?
 Back: By using the label (memory location) for the default case.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1727908554114-->
 END%%
 
@@ -988,7 +988,7 @@ Basic
 Suppose a `switch` compiles into a jump table. How are duplicate cases handled?
 Back: By using the same label (memory location) for all duplicate cases.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1727908554128-->
 END%%
 

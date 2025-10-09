@@ -451,7 +451,7 @@ Basic
 Evaluate `int t = a + b` for `int` `a` and `b`. When is `CF` set?
 Back: When `(unsigned) t < (unsigned) a`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1717941416597-->
 END%%
 
@@ -460,7 +460,7 @@ Basic
 Evaluate `int t = a + b` for `int` `a` and `b`. When is `ZF` set?
 Back: When `t == 0`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1717941416601-->
 END%%
 
@@ -469,7 +469,7 @@ Basic
 Evaluate `int t = a + b` for `int` `a` and `b`. When is `SF` set?
 Back: When `t < 0`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1717941416605-->
 END%%
 
@@ -478,7 +478,7 @@ Basic
 Evaluate `int t = a + b` for `int` `a` and `b`. When is `OF` set?
 Back: When `(t <= 0 && a > 0 && b > 0) || (t >= 0 && a < 0 && b < 0)`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1717941416609-->
 END%%
 

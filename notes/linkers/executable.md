@@ -19,7 +19,7 @@ Basic
 Executable object files are outputs of which compiler driver component?
 Back: The linker.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 END%%
 
 %%ANKI

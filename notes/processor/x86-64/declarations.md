@@ -139,7 +139,7 @@ END%%
 Cloze
 C integral declaration {`char`} corresponds to Intel data type {`byte`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1711116523858-->
 END%%
 
@@ -147,7 +147,7 @@ END%%
 Cloze
 C integral declaration {`short`} corresponds to Intel data type {`word`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1711116523862-->
 END%%
 
@@ -155,7 +155,7 @@ END%%
 Cloze
 C integral declaration {`int`} corresponds to Intel data type {`double word`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1711116523866-->
 END%%
 
@@ -163,7 +163,7 @@ END%%
 Cloze
 C integral declaration {`long`} corresponds to Intel data type {`quad word`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1711116523870-->
 END%%
 
@@ -171,7 +171,7 @@ END%%
 Cloze
 C declaration `char *` corresponds to Intel data type {`quad word`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1711116523874-->
 END%%
 
@@ -179,7 +179,7 @@ END%%
 Cloze
 C floating-point declaration {`float`} corresponds to Intel data type {`single-precision`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1711116523877-->
 END%%
 
@@ -194,7 +194,7 @@ END%%
 Cloze
 C floating-point declaration {`double`} corresponds to Intel data type {`double-precision`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1711116523885-->
 END%%
 

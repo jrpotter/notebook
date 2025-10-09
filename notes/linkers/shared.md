@@ -333,7 +333,7 @@ Basic
 With respect to the GOT and C, what does a global data object refer to?
 Back: A function or global variable.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1743295591584-->
 END%%
 

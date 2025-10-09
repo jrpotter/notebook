@@ -152,7 +152,7 @@ Basic
 Executable object files are outputs of which compiler driver component?
 Back: The linker.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734356868399-->
 END%%
 
@@ -161,7 +161,7 @@ Basic
 Executable object files are inputs into which compiler driver component?
 Back: N/A.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734356868406-->
 END%%
 

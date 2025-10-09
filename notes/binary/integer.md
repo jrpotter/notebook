@@ -49,7 +49,7 @@ Basic
 What is a C integral type?
 Back: A type representing finite ranges of integers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708177246087-->
 END%%
 
@@ -58,7 +58,7 @@ Basic
 In what two ways are C integral types usually encoded?
 Back: Unsigned encoding or two's-complement.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708177246093-->
 END%%
 
@@ -686,7 +686,7 @@ Basic
 How do most implementations of C perform casting of `signed` and `unsigned` types?
 Back: As a reinterpretation of the same byte pattern of the object being casted.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708615249879-->
 END%%
 
@@ -711,7 +711,7 @@ Basic
 What values $x$ are unaffected when casting from `signed` to `unsigned`?
 Back: $0 \leq x \leq TMax_w$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708615249891-->
 END%%
 
@@ -720,7 +720,7 @@ Basic
 What values $x$ are unaffected when casting from `unsigned` to `signed`?
 Back: $0 \leq x \leq TMax_w$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708615249897-->
 END%%
 
@@ -729,7 +729,7 @@ Basic
 How are casts implicitly performed in operations containing `signed` and `unsigned` objects?
 Back: `signed` objects are cast to `unsigned` objects.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708615249903-->
 END%%
 
@@ -1026,7 +1026,7 @@ Basic
 Why is unsigned addition overflow *not* UB?
 Back: Because the C standard enforces unsigned encoding of `unsigned` data types.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708799678742-->
 END%%
 
@@ -1202,7 +1202,7 @@ Basic
 Why is signed addition overflow UB?
 Back: Because the C standard does not mandate any particular signed integer encoding.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708964376225-->
 END%%
 
@@ -1507,7 +1507,7 @@ Basic
 What portability issue do shift operations introduce?
 Back: There is no standard on whether right shifts of signed numbers are logical or arithmetic.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1707854589808-->
 END%%
 
@@ -1515,7 +1515,7 @@ END%%
 Cloze
 {1:Arithmetic} right shifts are to {1:signed} numbers whereas {2:logical} right shifts are to {2:unsigned} numbers.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1707854589813-->
 END%%
 
@@ -1526,7 +1526,7 @@ Basic
 Assuming two's-complement, what is the result of shifting an `int32_t` value by `32`?
 Back: It is undefined behavior.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708785613342-->
 END%%
 
@@ -1535,7 +1535,7 @@ Basic
 Assuming two's-complement, what is the result of shifting `int32_t x = 1` left by `31`?
 Back: $-2^{31}$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708785613370-->
 END%%
 
@@ -1544,7 +1544,7 @@ Basic
 What is the result of shifting an `int32_t` value by `-1`?
 Back: It is undefined behavior.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708785613376-->
 END%%
 
@@ -1553,7 +1553,7 @@ Basic
 What is the result of shifting an `uint32_t` value by `32`?
 Back: It is undefined behavior.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708785613383-->
 END%%
 
@@ -1562,7 +1562,7 @@ Basic
 What is the result of shifting an `uint32_t` value by `31`?
 Back: $2^{31}$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708785613389-->
 END%%
 
@@ -1571,7 +1571,7 @@ Basic
 What is the result of shifting an `uint32_t` value by `-1`?
 Back: It is undefined behavior.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708785613393-->
 END%%
 
@@ -1580,7 +1580,7 @@ Basic
 How is $2^n$ written using bitwise shift operators?
 Back: `1 << n`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708784904524-->
 END%%
 
@@ -1589,7 +1589,7 @@ Basic
 What decimal value does `1 << n` translate to?
 Back: $2^n$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1708784904526-->
 END%%
 
@@ -1598,7 +1598,7 @@ Basic
 How is $x \bmod 2^k$ equivalently written as a bit mask?
 Back: `x & ((1 << k) - 1)`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1707873410780-->
 END%%
 
@@ -1659,7 +1659,7 @@ Basic
 *Why* does $x *_w^u y = (x \cdot y) \bmod 2^w$ (at least in C)?
 Back: Because unsigned multiplication is *defined* to be the result truncated to $w$ bits.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709492205984-->
 END%%
 
@@ -1668,7 +1668,7 @@ Basic
 How do $+_w^u$ and $*_w^u$ behave similarly?
 Back: Letting $\square$ denote either $+$ or $*$, both satisfy $x \;\square_w^u\; y = (x \;\square\; y) \bmod 2^w$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709492205988-->
 END%%
 
@@ -1715,7 +1715,7 @@ Back:
 x = (x << k);
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709570428818-->
 END%%
 
@@ -1730,7 +1730,7 @@ Back:
 x = x * pow(2, k);
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709831032382-->
 END%%
 
@@ -1814,7 +1814,7 @@ Basic
 How do $+_w^t$ and $*_w^t$ behave similarly?
 Back: Letting $\square$ denote either $+$ or $*$, both satisfy $x \;\square_w^t\; y = U2T_w((x \;\square\; y) \bmod 2^w)$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709492206006-->
 END%%
 
@@ -1877,7 +1877,7 @@ Back:
 x = (x << k);
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709570428828-->
 END%%
 
@@ -1892,7 +1892,7 @@ Back:
 x = x * pow(2, k);
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709831032386-->
 END%%
 
@@ -1925,7 +1925,7 @@ Basic
 How can we rewrite $x \cdot 1101_2$ as an expression of *only* `<<` and `+`?
 Back: `(x << 3) + (x << 2) + (x << 0)`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709570428832-->
 END%%
 
@@ -1934,7 +1934,7 @@ Basic
 *Why* is $x \cdot 13$ equal to `(x << 3) + (x << 2) + (x << 0)`?
 Back: Because the binary representation of $13$ is $1101_2$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709570428836-->
 END%%
 
@@ -1943,7 +1943,7 @@ Basic
 How can we rewrite $x \cdot 1100_2$ as an expression of *only* `<<` and `-`?
 Back: `(x << 4) - (x << 2)`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709570428839-->
 END%%
 
@@ -2040,7 +2040,7 @@ Basic
 In unsigned encoding, *why* is floor a part of expression $x \mathop{\texttt{>>}} k = \lfloor x / 2^k \rfloor$?
 Back: Because the least significant bit, which may have value `1`, is dropped.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709831032424-->
 END%%
 
@@ -2055,7 +2055,7 @@ Back:
 x = (x >> k);
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709831032428-->
 END%%
 
@@ -2070,7 +2070,7 @@ Back:
 x = floor(x / pow(2, k));
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709831032432-->
 END%%
 
@@ -2087,7 +2087,7 @@ Basic
 Assuming two's complement and arithmetic shifting, *why* is floor a part of expression $x \mathop{\texttt{>>}} k = \lfloor x / 2^k \rfloor$?
 Back: Because the least significant bit, which may have value `1`, is dropped.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709831032440-->
 END%%
 
@@ -2096,7 +2096,7 @@ Basic
 Assuming two's complement and arithmetic shifting, what is `-1 >> 1`?
 Back: `-1`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709831032444-->
 END%%
 
@@ -2105,7 +2105,7 @@ Basic
 Why is division by a power of two using arithmetic right-shift `x >> k` considered incorrect?
 Back: This right shift performs floor division, not integer division.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709831032449-->
 END%%
 
@@ -2120,7 +2120,7 @@ Back:
 x = (x >> k);
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709831032455-->
 END%%
 
@@ -2135,7 +2135,7 @@ Back:
 x = floor(x / pow(2, k));
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1709831032461-->
 END%%
 
@@ -2144,7 +2144,7 @@ Basic
 Assuming no overflow, rewrite expression `x >> k` to instead yield $\lceil x / 2^k \rceil$.
 Back: `(x + (1 << k) - 1) >> k`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1714184300343-->
 END%%
 
@@ -2153,7 +2153,7 @@ Basic
 Assuming no overflow, what is the result of `(x + (1 << k) - 1) >> k`?
 Back: $\lceil x / 2^k \rceil$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1714184300349-->
 END%%
 
@@ -2178,7 +2178,7 @@ Basic
 What floor/ceiling identity does expression `(x + (1 << k) - 1) >> k` exploit?
 Back: $$\left\lceil \frac{x}{y} \right\rceil = \left\lfloor \frac{x + y - 1}{y} \right\rfloor$$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1714184300359-->
 END%%
 
@@ -2187,7 +2187,7 @@ Basic
 In two's-complement, how do we use `>>` to perform integer division of `x > 0` by $2^k$?
 Back: `x >> k`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1714184300362-->
 END%%
 
@@ -2196,7 +2196,7 @@ Basic
 In two's-complement, how do we use `>>` to perform integer division of `x < 0` by $2^k$?
 Back: `(x + (1 << k) - 1) >> k`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1714184300364-->
 END%%
 

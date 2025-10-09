@@ -773,7 +773,7 @@ struct Node {
 };
 ```
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: c17
+Tags: c23
 <!--ID: 1715969047052-->
 END%%
 
@@ -788,7 +788,7 @@ struct Node {
 ```
 Back: A $k$-child representation.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: c17
+Tags: c23
 <!--ID: 1715969047054-->
 END%%
 
@@ -804,7 +804,7 @@ struct Node {
 };
 ```
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: c17
+Tags: c23
 <!--ID: 1715969047056-->
 END%%
 
@@ -820,7 +820,7 @@ struct Node {
 ```
 Back: A left-child, right-sibling representation.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: c17
+Tags: c23
 <!--ID: 1715969047057-->
 END%%
 

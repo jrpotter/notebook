@@ -17,7 +17,7 @@ Basic
 Relocatable object files are outputs of which compiler driver component?
 Back: The assembler.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734356868394-->
 END%%
 
@@ -26,7 +26,7 @@ Basic
 Relocatable object files are inputs into which compiler driver component?
 Back: The linker.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1734356868403-->
 END%%
 
@@ -102,7 +102,7 @@ Basic
 With respect to linkers, a global (defined) symbol corresponds to what kind of C construct?
 Back: A nonstatic function or global variable defined in the given module.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735159138659-->
 END%%
 
@@ -111,7 +111,7 @@ Basic
 With respect to linkers, a global (referenced) symbol corresponds to what kind of C construct?
 Back: A nonstatic function or global variable defined in a different module.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735159138666-->
 END%%
 
@@ -120,7 +120,7 @@ Basic
 With respect to linkers, a local symbol corresponds to what kind of C construct?
 Back: A static function or variable defined in the given module.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735159138677-->
 END%%
 
@@ -225,7 +225,7 @@ Basic
 What C variables are marked `COMMON` instead of put in `.bss`?
 Back: Global uninitialized variables.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735343812827-->
 END%%
 
@@ -234,7 +234,7 @@ Basic
 What C variables are put in `.bss` instead of marked `COMMON`?
 Back: Static variables and global variables initialized to zero.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735343812828-->
 END%%
 
@@ -243,7 +243,7 @@ Basic
 Assuming `-fcommon`, what kind of C variables does the `.bss` section contain?
 Back: Static variables and global variables initialized to zero.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735343812829-->
 END%%
 
@@ -252,7 +252,7 @@ Basic
 Assuming `-fcommon`, what kind of C variables does the `COMMON` section contain?
 Back: Global uninitialized variables.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735343812830-->
 END%%
 
@@ -261,7 +261,7 @@ Basic
 Assuming `-fcommon`, which ELF section contains uninitialized global C variables?
 Back: N/A. These are "placed" into the `COMMON` pseudosection.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735343812831-->
 END%%
 
@@ -270,7 +270,7 @@ Basic
 Assuming `-fcommon`, which ELF section contains global C variables initialized to a zero value?
 Back: `.bss`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735343812832-->
 END%%
 
@@ -282,7 +282,7 @@ int foo = 0;
 ```
 Back: `.bss`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735343812833-->
 END%%
 
@@ -294,7 +294,7 @@ int foo;
 ```
 Back: N/A. It is "placed" into the `COMMON` pseudosection.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735343812834-->
 END%%
 
@@ -317,7 +317,7 @@ Basic
 Which component of the compiler driver indicates whether a global variable is strong or weak?
 Back: The compiler.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735343812836-->
 END%%
 
@@ -439,7 +439,7 @@ Basic
 Why is `COMMON` considered in conflict with the C standard?
 Back: C only allows a single definition for any object.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735343812849-->
 END%%
 
@@ -537,7 +537,7 @@ Basic
 A relocation entry corresponds to what kind of C construct?
 Back: A `struct`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1737257167712-->
 END%%
 
@@ -554,7 +554,7 @@ struct Elf64_Rela {
 ```
 Back: It is the offset of the reference to relocate.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385837-->
 END%%
 
@@ -571,7 +571,7 @@ struct Elf64_Rela {
 ```
 Back: The start of the section the reference is located in.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385840-->
 END%%
 
@@ -588,7 +588,7 @@ struct Elf64_Rela {
 ```
 Back: It identifies the symbol the modified reference should point to.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385843-->
 END%%
 
@@ -605,7 +605,7 @@ struct Elf64_Rela {
 ```
 Back: `.symtab`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385846-->
 END%%
 
@@ -622,7 +622,7 @@ struct Elf64_Rela {
 ```
 Back: To bias the value of the modified reference.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385849-->
 END%%
 
@@ -639,7 +639,7 @@ struct Elf64_Rela {
 ```
 Back: To indicate to the linker what algorithm should be used to compute the relocated address.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385853-->
 END%%
 
@@ -656,7 +656,7 @@ struct Elf64_Rela {
 ```
 Back: `R_X86_64_32` and `R_X86_64_PC32`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385856-->
 END%%
 
@@ -673,7 +673,7 @@ Basic
 What is the significance of `R` in type `R_X86_64_32`?
 Back: It is the prefix used for relocation entry `type` values.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385864-->
 END%%
 
@@ -682,7 +682,7 @@ Basic
 What is the significance of `32` in type `R_X86_64_32`?
 Back: The reference is relocated using a 32-bit absolute address.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385867-->
 END%%
 
@@ -691,7 +691,7 @@ Basic
 What is `PC` an acronym of in type `R_X86_64_PC32`?
 Back: It is short for **p**rogram **c**ounter.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385871-->
 END%%
 
@@ -700,7 +700,7 @@ Basic
 What is the significance of `PC32` in type `R_X86_64_PC32`?
 Back: The reference is relocated using a 32-bit PC-relative address.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385875-->
 END%%
 
@@ -717,7 +717,7 @@ struct Elf64_Rela {
 ```
 Back: `type`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385879-->
 END%%
 
@@ -734,7 +734,7 @@ struct Elf64_Rela {
 ```
 Back: `type`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385883-->
 END%%
 
@@ -751,7 +751,7 @@ struct Elf64_Rela {
 ```
 Back: `R_X86_64_PC32`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385887-->
 END%%
 
@@ -768,7 +768,7 @@ struct Elf64_Rela {
 ```
 Back: `R_X86_64_32`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::elf processor::x86-64
+Tags: c23 linker::elf processor::x86-64
 <!--ID: 1737320385894-->
 END%%
 

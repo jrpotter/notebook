@@ -57,7 +57,7 @@ for (int i = 0; i < n; ++i) { ... }
 ```
 Back: After `int i = 0` but before `i < n`.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: c17
+Tags: c23
 <!--ID: 1707329732931-->
 END%%
 

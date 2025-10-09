@@ -35,7 +35,7 @@ END%%
 Cloze
 The {`leaq`} instruction is to x86-64 as the {`&`} unary operator is to C.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1715780601458-->
 END%%
 
@@ -158,7 +158,7 @@ END%%
 Cloze
 The {`INC`} instruction class is to x86-64 whereas the {`++`} operator is to C.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1716126147793-->
 END%%
 
@@ -182,11 +182,9 @@ END%%
 Cloze
 The {`DEC`} instruction class is to x86-64 whereas the {`--`} operator is to C.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1716126147798-->
 END%%
-
-
 
 ### Binary Operations
 
@@ -224,7 +222,7 @@ END%%
 Cloze
 The {`ADD`} instruction class is to x86-64 as the {`+=`} operator is to C.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1716128138030-->
 END%%
 
@@ -259,7 +257,7 @@ END%%
 Cloze
 The {`SUB`} instruction class is to x86-64 as the {`-=`} operator is to C.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1716128138033-->
 END%%
 
@@ -275,7 +273,7 @@ END%%
 Cloze
 The {`IMUL`} instruction class is to x86-64 as the {`*=`} operator is to C.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1716128138036-->
 END%%
 

@@ -168,7 +168,7 @@ Basic
 How does C evaluate `10 / 3`?
 Back: `3`
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
-Tags: c17
+Tags: c23
 <!--ID: 1708110779720-->
 END%%
 
@@ -177,7 +177,7 @@ Basic
 How does C evaluate `floor(10.f / 3)`?
 Back: `3`
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
-Tags: c17
+Tags: c23
 <!--ID: 1708110779725-->
 END%%
 
@@ -186,7 +186,7 @@ Basic
 How does C evaluate `ceil(10.f / 3)`?
 Back: `4`
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
-Tags: c17
+Tags: c23
 <!--ID: 1708110779729-->
 END%%
 
@@ -195,7 +195,7 @@ Basic
 How does C evaluate `-10 / 3`?
 Back: `-3`
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
-Tags: c17
+Tags: c23
 <!--ID: 1708110779734-->
 END%%
 
@@ -204,7 +204,7 @@ Basic
 How does C evaluate `floor(-10.f / 3)`?
 Back: `-4`
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
-Tags: c17
+Tags: c23
 <!--ID: 1708110779738-->
 END%%
 
@@ -213,7 +213,7 @@ Basic
 How does C evaluate `ceil(-10.f / 3)`?
 Back: `-3`
 Reference: Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
-Tags: c17
+Tags: c23
 <!--ID: 1708110779742-->
 END%%
 

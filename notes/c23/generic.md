@@ -384,7 +384,189 @@ END%%
 
 ### Typeof Operators
 
-TODO
+The typeof operators refer to the `typeof` and `typeof_unqual` operators. The former returns the exact type of the provided type name or that of the provided expression. The `typeof_unqual` operators works similarly, but strips top-level type qualifiers and `_Atomic` specifiers.
+
+The operand is only evaluated in the case of a VMT.
+
+%%ANKI
+Basic
+Which operators are collectively called the typeof operators?
+Back: `typeof` and `typeof_unqual`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998809-->
+END%%
+
+%%ANKI
+Basic
+The typeof operators cannot be applied to what expressions?
+Back: Those that designate a bit-member field.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998811-->
+END%%
+
+%%ANKI
+Basic
+What are the possible operands of the typeof operators?
+Back: Either an expression or type name.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998812-->
+END%%
+
+%%ANKI
+Basic
+When is the operand of a typeof operator evaluated?
+Back: When the operand is a VMT.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998814-->
+END%%
+
+%%ANKI
+Basic
+When is the operand of a typeof operator not evaluated?
+Back: When the operand is anything but a VMT.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998815-->
+END%%
+
+%%ANKI
+Basic
+How is the following equivalently rewritten using the `typeof` operator?
+```c
+auto x = 5
+```
+Back:
+```c
+typeof(5) x = 5;
+```
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998816-->
+END%%
+
+%%ANKI
+Basic
+In what situations does `auto` behave differently than `typeof`?
+Back: When the `typeof` operator is given a VMT.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998817-->
+END%%
+
+%%ANKI
+Basic
+Given the following, what type does `typeof(a)` correspond to?
+```c
+int a = 5;
+```
+Back: `int`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998818-->
+END%%
+
+%%ANKI
+Basic
+Given the following, what type does `typeof(a)` correspond to?
+```c
+const int a = 5;
+```
+Back: `const int`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998819-->
+END%%
+
+%%ANKI
+Basic
+Given the following, what type does `typeof(a)` correspond to?
+```c
+int a[4] = {0};
+```
+Back: `int[4]`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998820-->
+END%%
+
+%%ANKI
+Basic
+Given the following, what type does `typeof(a)` correspond to?
+```c
+const int a[4] = {0};
+```
+Back: `const int[4]`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998821-->
+END%%
+
+%%ANKI
+Basic
+Given the following, what type does `typeof_unqual(a)` correspond to?
+```c
+const int a = 0;
+```
+Back: `int`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998822-->
+END%%
+
+%%ANKI
+Basic
+Given the following, what type does `typeof_unqual(a)` correspond to?
+```c
+const int a[4] = {0};
+```
+Back: `int[4]`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998823-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes `typeof` and `typeof_unqual`?
+Back: The latter returns a non-atomic unqualified version of its operand's type.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998824-->
+END%%
+
+%%ANKI
+Basic
+Given the following, what type does `typeof(a)` correspond to?
+```c
+_Atomic(int) a = 0;
+```
+Back: `_Atomic(int)`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998825-->
+END%%
+
+%%ANKI
+Basic
+Given the following, what type does `typeof_unqual(a)` correspond to?
+```c
+const _Atomic(int) a = 0;
+```
+Back: `int`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998826-->
+END%%
+
+%%ANKI
+Basic
+Given the following, what type does `typeof_unqual(a)` correspond to?
+```c
+const int *a = 0;
+```
+Back: `const int *`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998827-->
+END%%
+
+%%ANKI
+Basic
+Given the following, what type does `typeof_unqual(a)` correspond to?
+```c
+int *const a = 0;
+```
+Back: `int *`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760041998828-->
+END%%
 
 ## Bibliography
 

@@ -191,7 +191,7 @@ Basic
 What floating point encoding is guaranteed by the C standard?
 Back: N/A.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710556914961-->
 END%%
 
@@ -398,7 +398,7 @@ Basic
 How many bits make up the sign field of a `float`?
 Back: `1`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710556915017-->
 END%%
 
@@ -407,7 +407,7 @@ Basic
 How many bits make up the exponent field of a `float`?
 Back: `8`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710556915019-->
 END%%
 
@@ -416,7 +416,7 @@ Basic
 How many bits make up the fraction field of a `float`?
 Back: `23`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710556915022-->
 END%%
 
@@ -425,7 +425,7 @@ Basic
 How many bits make up the sign field of a `double`?
 Back: `1`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710556915024-->
 END%%
 
@@ -434,7 +434,7 @@ Basic
 How many bits make up the exponent field of a `double`?
 Back: `11`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710556915026-->
 END%%
 
@@ -443,7 +443,7 @@ Basic
 How many bits make up the fraction field of a `double`?
 Back: `52`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710556915028-->
 END%%
 
@@ -451,7 +451,7 @@ END%%
 Cloze
 The exponent field of a `float` has {`8`} bits whereas a `double` has {`11`} bits.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710556915030-->
 END%%
 
@@ -459,7 +459,7 @@ END%%
 Cloze
 The fraction field of a `float` has {`23`} bits and a `double` has {`52`} bits.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710556915032-->
 END%%
 
@@ -468,7 +468,7 @@ Basic
 Which IEEE floating-point fields have the same width in `float`s and `double`s?
 Back: The sign bit field.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710556915034-->
 END%%
 
@@ -477,7 +477,7 @@ Basic
 Which IEEE floating-point fields have different widths in `float`s and `double`s?
 Back: The exponent and fraction fields.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710556915036-->
 END%%
 
@@ -518,7 +518,7 @@ Basic
 What is the binary representation of a `float`'s bias?
 Back: `01111111`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1712938082200-->
 END%%
 
@@ -527,7 +527,7 @@ Basic
 What is the binary representation of a `double`'s bias?
 Back: `01111111111`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1712938082205-->
 END%%
 
@@ -792,7 +792,7 @@ Basic
 What is the first integer value not exactly representable by a `float`?
 Back: $2^{24} + 1$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710605798317-->
 END%%
 
@@ -801,7 +801,7 @@ Basic
 What is the first integer value not exactly representable by a `double`?
 Back: $2^{53} + 1$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710605798319-->
 END%%
 
@@ -826,7 +826,7 @@ Basic
 What is the bit representation of the largest normalized positive `float`?
 Back: Sign bit `0`, exponent field $11 \cdots 10_2$, fraction field all `1`s.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710605798325-->
 END%%
 
@@ -835,7 +835,7 @@ Basic
 What is the bit representation of the smallest positive `float`?
 Back: Sign bit `0`, exponent field `0`s, fraction field $00 \cdots 01_2$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710607581719-->
 END%%
 
@@ -844,7 +844,7 @@ Basic
 What is the bit representation of the smallest normalized positive `float`?
 Back: Sign bit `0`, exponent field $00 \cdots 01_2$, fraction field all `0`s.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710605798329-->
 END%%
 
@@ -853,7 +853,7 @@ Basic
 Let `float x = 1.0`. What is the bit representation of `x`'s exponent *field*?
 Back: `01111111`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710605798327-->
 END%%
 
@@ -862,7 +862,7 @@ Basic
 Let `float x = 1.0`. What does `x`'s exponent *value* equal?
 Back: $0$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1735827481751-->
 END%%
 
@@ -871,7 +871,7 @@ Basic
 Let `double x = 1.0`. What is the bit representation of `x`'s exponent *field*?
 Back: `01111111111`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710605798331-->
 END%%
 
@@ -880,7 +880,7 @@ Basic
 What is the bit representation of the largest normalized positive `double`?
 Back: Sign bit `0`, exponent field $11 \cdots 10_2$, fraction field all `1`s.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710605798333-->
 END%%
 
@@ -889,7 +889,7 @@ Basic
 What is the bit representation of the smallest normalized positive `double`?
 Back: Sign bit `0`, exponent field $00 \cdots 01_2$, fraction field all `0`s.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710605798335-->
 END%%
 
@@ -898,7 +898,7 @@ Basic
 What is the bit representation of the smallest positive `double`?
 Back: Sign bit `0`, exponent field all `0`s, fraction field $00 \cdots 01_2$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710607581722-->
 END%%
 
@@ -907,7 +907,7 @@ Basic
 What is the largest unsigned decimal value a normalized `float`'s exponent field can be?
 Back: $2^8 - 2$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710605798337-->
 END%%
 
@@ -916,7 +916,7 @@ Basic
 What is the smallest positive `float` that can be exactly represented?
 Back: $2^{-23}$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710607581724-->
 END%%
 
@@ -925,7 +925,7 @@ Basic
 What is the largest unsigned decimal value a normalized `double`'s exponent field can be?
 Back: $2^{11} - 2$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710605798339-->
 END%%
 
@@ -934,7 +934,7 @@ Basic
 What is the smallest positive `double` that can be exactly represented?
 Back: $2^{-52}$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1710607581726-->
 END%%
 

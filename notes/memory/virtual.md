@@ -659,7 +659,7 @@ Basic
 Which C function is most commonly used to allocate more virtual pages?
 Back: `malloc`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1754429038183-->
 END%%
 
@@ -668,7 +668,7 @@ Basic
 What conditions do the virtual pages allocated by `malloc` satisfy?
 Back: They are contiguous and large enough to hold the requested amount of data.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1754429038188-->
 END%%
 
@@ -1159,7 +1159,7 @@ Basic
 Which C header contains the `mmap()` function?
 Back: `<sys/mman.h>`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1755920563825-->
 END%%
 
@@ -1168,7 +1168,7 @@ Basic
 Why is the `<sys/mman.h>` header named the way it is?
 Back: `mman` is short for **m**emory **man**agement.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1755920563830-->
 END%%
 
@@ -1177,7 +1177,7 @@ Basic
 Which system call is used for memory mapping?
 Back: `mmap()`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1754429038194-->
 END%%
 
@@ -1186,7 +1186,7 @@ Basic
 Which system call is used to delete a memory mapped region?
 Back: `munmap()`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1755920563832-->
 END%%
 
@@ -1194,7 +1194,7 @@ END%%
 Cloze
 {1:`mmap()`} is to {2:`malloc()`} as {2:`munmap()`} is to {1:`free()`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1755920563834-->
 END%%
 
@@ -1203,7 +1203,7 @@ Basic
 Why is the `mmap()` system call named the way it is?
 Back: It's short for **m**emory **map**ping.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1754429038197-->
 END%%
 
@@ -1212,7 +1212,7 @@ Basic
 Why is the `munmap()` system call named the way it is?
 Back: It's short for **m**emory **unmap**ping.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1755920563836-->
 END%%
 

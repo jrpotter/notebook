@@ -1,9 +1,9 @@
 ---
 title: I/O
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17::io
+FILE TAGS: c23::io
 tags:
-  - c17
+  - c23
   - io
 ---
 

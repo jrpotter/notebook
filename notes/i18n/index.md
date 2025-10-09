@@ -341,7 +341,7 @@ Basic
 Which C header contains locale-related functionality?
 Back: `<locale.h>`
 Reference: `man 7 locale`
-Tags: c17
+Tags: c23
 <!--ID: 1753391372152-->
 END%%
 
@@ -383,7 +383,7 @@ Basic
 What does the `LC_ALL` macro refer to?
 Back: A catch-all for all the other available locale categories.
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372177-->
 END%%
 
@@ -401,7 +401,7 @@ Basic
 What does the `LC_COLLATE` macro determine?
 Back: Sorting order and regular expression settings.
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372187-->
 END%%
 
@@ -410,7 +410,7 @@ Basic
 What does the `LC_CTYPE` macro determine?
 Back: Interpretation of byte sequences and character classifications.
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372192-->
 END%%
 
@@ -419,7 +419,7 @@ Basic
 What does the `LC_MONETARY` macro determine?
 Back: The formatting used for monetary-related numeric values.
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372196-->
 END%%
 
@@ -428,7 +428,7 @@ Basic
 What does the `LC_NUMERIC` macro determine?
 Back: The formatting used for nonmonetary numeric values.
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372200-->
 END%%
 
@@ -437,7 +437,7 @@ Basic
 What does the `LC_TIME` macro determine?
 Back: The formatting used for date and time values.
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372204-->
 END%%
 
@@ -446,7 +446,7 @@ Basic
 Which locale category is related to the order strings are sorted in?
 Back: `LC_COLLATE`
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372209-->
 END%%
 
@@ -455,7 +455,7 @@ Basic
 Which locale category is related to the interpretation of byte sequences as characters?
 Back: `LC_CTYPE`
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372214-->
 END%%
 
@@ -464,7 +464,7 @@ Basic
 Which locale category is related to how characters are classified?
 Back: `LC_CTYPE`
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372220-->
 END%%
 
@@ -473,7 +473,7 @@ Basic
 Which locale category is related to how monetary values are formatted?
 Back: `LC_MONETARY`
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372226-->
 END%%
 
@@ -482,7 +482,7 @@ Basic
 Which locale category is related to how non-monetary numeric values are formatted?
 Back: `LC_NUMERIC`
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372233-->
 END%%
 
@@ -491,7 +491,7 @@ Basic
 Which locale category is related to how time values are formatted?
 Back: `LC_TIME`
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372236-->
 END%%
 
@@ -500,7 +500,7 @@ Basic
 Which locale category is related to how date values are formatted?
 Back: `LC_TIME`
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372239-->
 END%%
 
@@ -509,7 +509,7 @@ Basic
 Which locale category is used to update every other category?
 Back: `LC_ALL`
 Reference: `man 7 locale`
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1753391372242-->
 END%%
 

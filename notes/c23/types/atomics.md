@@ -1,10 +1,10 @@
 ---
 title: Atomics
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17::threads
+FILE TAGS: c23::threads
 tags:
   - atomics
-  - c17
+  - c23
   - threads
 ---
 
@@ -80,7 +80,7 @@ END%%
 
 ## Test-and-set
 
-The `atomic_flag` type, found in `<stdatomic.h>`, provides the [[operating_systems/threads#Test-and-set|test-and-set]] functionality. It should be initialized to the clear state by assigning to macro `ATOMIC_FLAG_INIT`.
+The `atomic_flag` type, found in `<stdatomic.h>`, provides the [[operating_systems/concurrency#Test-and-set|test-and-set]] functionality. It should be initialized to the clear state by assigning to macro `ATOMIC_FLAG_INIT`.
 
 %%ANKI
 Basic

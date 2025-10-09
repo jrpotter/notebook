@@ -1,9 +1,9 @@
 ---
 title: Sockets
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17::io::socket
+FILE TAGS: c23::io::socket
 tags:
-  - c17
+  - c23
   - io
   - socket
 ---
@@ -12,7 +12,7 @@ tags:
 
 Typically C network code begins with address resolution.
 
-Each `addrinfo` struct, one or more of which is returned by `getaddrinfo()`, contains an Internet address that can be specified in a call to `bind()` or `connect()`. It contains the following fields:
+Each `addrinfo` struct, one or more of which is returned by `getaddrinfo`, contains an Internet address that can be specified in a call to `bind` or `connect`. It contains the following fields:
 
 ```c
 struct addrinfo {
@@ -49,7 +49,7 @@ END%%
 %%ANKI
 Basic
 Which function is typically used to retrieve `struct addrinfo`s?
-Back: `getaddrinfo()`
+Back: `getaddrinfo`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754382302430-->
 END%%
@@ -351,7 +351,7 @@ END%%
 %%ANKI
 Basic
 Which C function is typically used to consume a `struct addrinfo` instance?
-Back: `getaddrinfo()`
+Back: `getaddrinfo`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755629919085-->
 END%%
@@ -360,7 +360,7 @@ END%%
 
 ### Socket
 
-The `socket()` function is used to get a socket descriptor. Typically this function is supplied values from a `struct addrinfo` populated by the `getaddrinfo()` function.
+The `socket` function is used to get a socket descriptor. Typically this function is supplied values from a `struct addrinfo` populated by the `getaddrinfo` function.
 
 ```c
 int socket(int domain, int type, int protocol);
@@ -377,7 +377,7 @@ END%%
 %%ANKI
 Basic
 What C function is used to create a socket?
-Back: `socket()`
+Back: `socket`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754342300803-->
 END%%
@@ -486,23 +486,23 @@ END%%
 
 %%ANKI
 Basic
-Which C function is usually invoked before `socket()`?
-Back: `getaddrinfo()`
+Which C function is usually invoked before `socket`?
+Back: `getaddrinfo`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695721-->
 END%%
 
 %%ANKI
 Basic
-Which C function is usually invoked after `socket()`?
-Back: `bind()`
+Which C function is usually invoked after `socket`?
+Back: `bind`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695730-->
 END%%
 
 ### Bind
 
-The `bind()` function is used to associate a socket descriptor to a given port on the host machine.
+The `bind` function is used to associate a socket descriptor to a given port on the host machine.
 
 ```c
 int bind(int sockfd, struct sockaddr *my_addr, int addrlen);
@@ -517,7 +517,7 @@ The `AI_PASSIVE` constant can be passed to a `struct addrinfo` instance beforeha
 
 %%ANKI
 Basic
-What is the purpose of the `bind()` function?
+What is the purpose of the `bind` function?
 Back: It associates a socket FD to a given port on the host machine.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754404434268-->
@@ -526,22 +526,22 @@ END%%
 %%ANKI
 Basic
 Which function is used to associate a socket to a port?
-Back: `bind()`
+Back: `bind`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754404434273-->
 END%%
 
 %%ANKI
 Basic
-What function is typically used to obtain a socket FD passed to `bind()`?
-Back: `socket()`
+What function is typically used to obtain a socket FD passed to `bind`?
+Back: `socket`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754404434276-->
 END%%
 
 %%ANKI
 Basic
-*Why* does `bind()` take in a `struct sockaddr` if it's binding locally anyway?
+*Why* does `bind` take in a `struct sockaddr` if it's binding locally anyway?
 Back: You may have a specific local IP address you want to bind.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754404434283-->
@@ -549,7 +549,7 @@ END%%
 
 %%ANKI
 Basic
-What ports should generally not be specified to a `bind()` call?
+What ports should generally not be specified to a `bind` call?
 Back: Those under `1024`.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754404434286-->
@@ -557,7 +557,7 @@ END%%
 
 %%ANKI
 Basic
-Assuming a process is running as a normal user, what ports can be specified to `bind()`?
+Assuming a process is running as a normal user, what ports can be specified to `bind`?
 Back: Those in range `1024` and `65535` inclusive.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754404434289-->
@@ -573,16 +573,16 @@ END%%
 
 %%ANKI
 Basic
-From a client perspective, what C function is usually called after `bind()`?
-Back: `connect()`
+From a client perspective, what C function is usually called after `bind`?
+Back: `connect`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695733-->
 END%%
 
 %%ANKI
 Basic
-From a server perspective, what C function is usually called after `bind()`?
-Back: `listen()`
+From a server perspective, what C function is usually called after `bind`?
+Back: `listen`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695740-->
 END%%
@@ -639,7 +639,7 @@ END%%
 
 ### Connect
 
-The `connect()` function is used to connect to some host interface listening for incoming connections.
+The `connect` function is used to connect to some host interface listening for incoming connections.
 
 ```c
 int connect(int sockfd, struct sockaddr *serv_addr, int addrlen);
@@ -647,7 +647,7 @@ int connect(int sockfd, struct sockaddr *serv_addr, int addrlen);
 
 %%ANKI
 Basic
-What is the purpose of the `connect()` function?
+What is the purpose of the `connect` function?
 Back: It connects to a host interface listening for incoming connections.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754488540938-->
@@ -655,7 +655,7 @@ END%%
 
 %%ANKI
 Basic
-If not manually handled, what does `connect()` automatically do?
+If not manually handled, what does `connect` automatically do?
 Back: Bind to an unbound local port.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754488540949-->
@@ -663,7 +663,7 @@ END%%
 
 %%ANKI
 Basic
-What additional check does `connect()` perform when called?
+What additional check does `connect` perform when called?
 Back: It checks whether the supplied socket is bound or not.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754488540953-->
@@ -672,30 +672,30 @@ END%%
 %%ANKI
 Basic
 Which C function is used by a client to connect to a server?
-Back: `connect()`
+Back: `connect`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754488540956-->
 END%%
 
 %%ANKI
 Basic
-In what order should `connect()`, `socket()`, and `bind()` be called in?
-Back: `socket()`, `bind()`, and `connect()`.
+In what order should `connect`, `socket`, and `bind` be called in?
+Back: `socket`, `bind`, and `connect`.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754488540946-->
 END%%
 
 %%ANKI
 Basic
-In what order should `connect()`, `bind()`, and `socket()` be called in?
-Back: `socket()`, `bind()`, and `connect()`.
+In what order should `connect`, `bind`, and `socket` be called in?
+Back: `socket`, `bind`, and `connect`.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754488540960-->
 END%%
 
 ### Listen
 
-The `listen()` function is used to prepare a socket for incoming connections.
+The `listen` function is used to prepare a socket for incoming connections.
 
 ```c
 int listen(int sockfd, int backlog);
@@ -703,7 +703,7 @@ int listen(int sockfd, int backlog);
 
 %%ANKI
 Basic
-What is the purpose of the `listen()` function?
+What is the purpose of the `listen` function?
 Back: To prepare a socket for incoming connections.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695743-->
@@ -711,16 +711,16 @@ END%%
 
 %%ANKI
 Basic
-In what order should `connect()`, `socket()`, `listen()`, and `bind()` be called in?
-Back: N/A. There is no necessary relation between `connect()` and `listen()`.
+In what order should `connect`, `socket`, `listen`, and `bind` be called in?
+Back: N/A. There is no necessary relation between `connect` and `listen`.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695747-->
 END%%
 
 %%ANKI
 Basic
-In what order should `socket()`, `listen()`, and `bind()` be called in?
-Back: `socket()`, `bind()`, and `listen()`.
+In what order should `socket`, `listen`, and `bind` be called in?
+Back: `socket`, `bind`, and `listen`.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695750-->
 END%%
@@ -728,22 +728,22 @@ END%%
 %%ANKI
 Basic
 Which C function is used to prepare for incoming connections?
-Back: `listen()`
+Back: `listen`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695754-->
 END%%
 
 %%ANKI
 Basic
-Which function is usually invoked after the `listen()` function?
-Back: `accept()`
+Which function is usually invoked after the `listen` function?
+Back: `accept`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695757-->
 END%%
 
 ### Accept
 
-The `accept()` function returns a new socket file descriptor for any pending connection found.
+The `accept` function returns a new socket file descriptor for any pending connection found.
 
 ```c
 int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
@@ -751,7 +751,7 @@ int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
 
 %%ANKI
 Basic
-What is the purpose of the `accept()` function?
+What is the purpose of the `accept` function?
 Back: To provide a new socket for communicating with a single pending connection.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695760-->
@@ -759,30 +759,30 @@ END%%
 
 %%ANKI
 Cloze
-The {`listen()`} function is used in conjunction with the {`accept()`} function.
+The {`listen`} function is used in conjunction with the {`accept`} function.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695763-->
 END%%
 
 %%ANKI
 Basic
-In what order should `accept()`, `socket()`, `listen()`, and `bind()` be called in?
-Back: `socket()`, `bind()`, `listen()`, and `accept()`.
+In what order should `accept`, `socket`, `listen`, and `bind` be called in?
+Back: `socket`, `bind`, `listen`, and `accept`.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695766-->
 END%%
 
 %%ANKI
 Basic
-Which function is usually invoked before the `accept()` function?
-Back: `listen()`
+Which function is usually invoked before the `accept` function?
+Back: `listen`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695770-->
 END%%
 
 %%ANKI
 Basic
-Assuming success, what does the return value of `accept()` correspond to?
+Assuming success, what does the return value of `accept` correspond to?
 Back: A new socket file descriptor.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754489695773-->
@@ -790,9 +790,9 @@ END%%
 
 ### Termination
 
-The `close()` [[syscalls]] can be used on sockets to close the underlying connection.
+The `close` [[syscalls]] can be used on sockets to close the underlying connection.
 
-For more control, the `shutdown()` function can be used instead. This allows cutting communication off only in one direction. Note this function doesn't close the file descriptor though - `close()` still needs to be called. 
+For more control, the `shutdown` function can be used instead. This allows cutting communication off only in one direction. Note this function doesn't close the file descriptor though - `close` still needs to be called. 
 
 ```c
 int shutdown(int sockfd, int how);
@@ -801,14 +801,14 @@ int shutdown(int sockfd, int how);
 %%ANKI
 Basic
 What function is used to turn down a socket?
-Back: `close()`.
+Back: `close`.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590253-->
 END%%
 
 %%ANKI
 Basic
-Why does `close()` work on both files and sockets?
+Why does `close` work on both files and sockets?
 Back: On Linux, both are files (i.e. they each have an associated file descriptor).
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590256-->
@@ -816,7 +816,7 @@ END%%
 
 %%ANKI
 Basic
-Which of `shutdown()` or `close()` is more general?
+Which of `shutdown` or `close` is more general?
 Back: N/A.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590259-->
@@ -824,7 +824,7 @@ END%%
 
 %%ANKI
 Basic
-What is the purpose of the `shutdown()` function?
+What is the purpose of the `shutdown` function?
 Back: It allows stopping socket communication in just one direction.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590262-->
@@ -832,7 +832,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* is `shutdown()` not a replacement for `close()`?
+*Why* is `shutdown` not a replacement for `close`?
 Back: The former configures the socket but does not close the socket descriptor.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590266-->
@@ -840,7 +840,7 @@ END%%
 
 ### Connection-Oriented
 
-To send and receive data on a connection-oriented socket, `send()` and `recv()` are used respectively.
+To send and receive data on a connection-oriented socket, `send` and `recv` are used respectively.
 
 ```c
 int send(int sockfd, const void *msg, int len, int flags);
@@ -850,14 +850,14 @@ int recv(int sockfd, void *buf, int len, int flags);
 %%ANKI
 Basic
 What function is used to send on a connected socket?
-Back: `send()`
+Back: `send`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590202-->
 END%%
 
 %%ANKI
 Cloze
-{1:`send()`} is to {2:sockets} whereas {2:`write()`} is to {1:files}.
+{1:`send`} is to {2:sockets} whereas {2:`write`} is to {1:files}.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590212-->
 END%%
@@ -865,47 +865,49 @@ END%%
 %%ANKI
 Basic
 What function is used to receive on a connected socket?
-Back: `recv()`
+Back: `recv`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590217-->
 END%%
 
 %%ANKI
 Cloze
-{1:`recv()`} is to {2:sockets} whereas {2:`read()`} is to {1:files}.
+{1:`recv`} is to {2:sockets} whereas {2:`read`} is to {1:files}.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590220-->
 END%%
 
 ### Connectionless
 
-To send and receive data on a connectionless socket, `sendto()` and `recvfrom()` are used respectively.
+To send and receive data on a connectionless socket, `sendto` and `recvfrom` are used respectively.
 
 ```c
-int sendto(int sockfd, const void *msg, int len, unsigned int flags,
+int sendto(int sockfd, const void *msg,
+           int len, unsigned int flags,
            const struct sockaddr *to, socklen_t tolen);
-int recvfrom(int sockfd, void *buf, int len, unsigned int flags,
+int recvfrom(int sockfd, void *buf,
+             int len, unsigned int flags,
              struct sockaddr *from, int *fromlen);)
 ```
 
 %%ANKI
 Basic
 What function is used to send on a socket that isn't connected?
-Back: `sendto()`
+Back: `sendto`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590229-->
 END%%
 
 %%ANKI
 Cloze
-{1:`send()`} is to {2:connection-oriented} whereas {2:`sendto()`} is to {1:connectionless}.
+{1:`send`} is to {2:connection-oriented} whereas {2:`sendto`} is to {1:connectionless}.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590232-->
 END%%
 
 %%ANKI
 Basic
-What additional information does `sendto()` need over `send()`?
+What additional information does `sendto` need over `send`?
 Back: The remote host address.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590235-->
@@ -914,21 +916,21 @@ END%%
 %%ANKI
 Basic
 What function is used to receive on a socket that isn't connected?
-Back: `recvfrom()`
+Back: `recvfrom`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590241-->
 END%%
 
 %%ANKI
 Cloze
-{1:`recvfrom()`} is to {2:connectionless} whereas {2:`recv()`} is to {1:connection-oriented}.
+{1:`recvfrom`} is to {2:connectionless} whereas {2:`recv`} is to {1:connection-oriented}.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590244-->
 END%%
 
 %%ANKI
 Basic
-What additional information does `recvfrom()` provide over `recv()`?
+What additional information does `recvfrom` provide over `recv`?
 Back: The remote host address.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754779590247-->
@@ -937,7 +939,7 @@ END%%
 %%ANKI
 Basic
 On the client, what function is optional with `SOCK_DGRAM` but not `SOCK_STREAM`?
-Back: `connect()`.
+Back: `connect`.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755120537913-->
 END%%
@@ -945,7 +947,7 @@ END%%
 %%ANKI
 Basic
 On the server, what two functions are optional with `SOCK_DGRAM` but not `SOCK_STREAM`?
-Back: `listen()` and `accept()`.
+Back: `listen` and `accept`.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755120537916-->
 END%%

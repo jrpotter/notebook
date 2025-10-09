@@ -42,7 +42,7 @@ Basic
 How might you use C to find the weight of a bit string?
 Back: Repeatedly divide by `2`, counting all remainders of `1`.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-Tags: c17
+Tags: c23
 <!--ID: 1708366788648-->
 END%%
 
@@ -156,7 +156,7 @@ Basic
 How are bytes of `int32_t x = 0x01234567` written in big-endian?
 Back: `0x01 0x23 0x45 0x67`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1707661283779-->
 END%%
 
@@ -165,7 +165,7 @@ Basic
 How are bytes of `int32_t x = 0x01234567` written in little-endian?
 Back: `0x67 0x45 0x23 0x01`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1707661283780-->
 END%%
 

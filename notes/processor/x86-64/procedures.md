@@ -358,7 +358,7 @@ void P() {
 ```
 Back: `P`'s frame.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1729810820635-->
 END%%
 
@@ -374,7 +374,7 @@ void P() {
 ```
 Back: `P`'s frame.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1729811536734-->
 END%%
 
@@ -390,7 +390,7 @@ void P() {
 ```
 Back: The 7th argument.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1729808568349-->
 END%%
 
@@ -406,7 +406,7 @@ void P() {
 ```
 Back: The 7th argument.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1729810820663-->
 END%%
 
@@ -422,7 +422,7 @@ void P() {
 ```
 Back: Arguments 7 and 8.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1729810820678-->
 END%%
 
@@ -438,7 +438,7 @@ void P() {
 ```
 Back: N/A. Argument 6 isn't placed onto the stack at all.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1729808568354-->
 END%%
 
@@ -454,7 +454,7 @@ void P() {
 ```
 Back: The return address.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1729808568358-->
 END%%
 
@@ -467,7 +467,7 @@ In the following, `P` is the {caller} and `Q` is the {callee}.
 int P() { Q(); }
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1729810820682-->
 END%%
 
@@ -482,7 +482,7 @@ void P() {
 ```
 Back: A register can be set to immediate `$100` for `Q` to access.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1729810820698-->
 END%%
 
@@ -497,7 +497,7 @@ void P() {
 ```
 Back: N/A. It does since we need an address for `a` to supply to `Q`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1729810820701-->
 END%%
 
@@ -513,7 +513,7 @@ void P() {
 ```
 Back: N/A. `P` does not have any arguments passed to `Q` on the stack.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1729811536739-->
 END%%
 
@@ -529,7 +529,7 @@ void P() {
 ```
 Back: The arguments to `Q`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1729811536743-->
 END%%
 

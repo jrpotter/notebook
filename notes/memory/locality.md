@@ -65,7 +65,7 @@ for (i = 0; i < N; i++) {
 return sum;
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1747143060942-->
 END%%
 
@@ -80,7 +80,7 @@ for (i = 0; i < N; i++) {
 return sum;
 ```
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1747143060949-->
 END%%
 
@@ -113,7 +113,7 @@ Basic
 Suppose `int A[] = {0, 1, 2}` starts at address $M$. What addresses are visited with a stride-1 reference pattern?
 Back: $M$, $M + 4$, $M + 8$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 processor::x86-64
+Tags: c23 processor::x86-64
 <!--ID: 1747143060961-->
 END%%
 
@@ -122,7 +122,7 @@ Basic
 Suppose `int A[] = {0, 1, 2, 3}` starts at address $M$. What addresses are visited with a stride-2 reference pattern?
 Back: $M$ and $M + 8$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 processor::x86-64
+Tags: c23 processor::x86-64
 <!--ID: 1747143060964-->
 END%%
 
@@ -177,7 +177,7 @@ return sum;
 ```
 Back: N/A. This function exhibits good locality.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1747143060982-->
 END%%
 
@@ -193,7 +193,7 @@ return sum;
 ```
 Back: $k = 1$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1747143060985-->
 END%%
 
@@ -209,7 +209,7 @@ return sum;
 ```
 Back: Because C uses row-major order.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1747143060988-->
 END%%
 
@@ -225,7 +225,7 @@ return sum;
 ```
 Back: $k = M$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1747143060991-->
 END%%
 

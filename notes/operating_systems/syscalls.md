@@ -40,7 +40,7 @@ Basic
 On Linux systems, what C function can be used to invoke the loader?
 Back: `execve()`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 linker::loader os::linux
+Tags: c23 linker::loader os::linux
 <!--ID: 1741298168029-->
 END%%
 
@@ -49,7 +49,7 @@ Basic
 Which header contains the `execve` function?
 Back: `<unistd.h>`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 END%%
 
 %%ANKI
@@ -57,7 +57,7 @@ Basic
 Why is `<unistd.h>` named the way it is?
 Back: It corresponds to **st**an**d**ard functions for **Uni**x (POSIX) systems.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1741298168032-->
 END%%
 
@@ -66,7 +66,7 @@ Basic
 Which header contains the `syscall` function?
 Back: `<unistd.h>`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1752201359315-->
 END%%
 
@@ -75,7 +75,7 @@ Basic
 On Linux systems, what C function can be used to spawn a child process?
 Back: `fork()`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1752497519540-->
 END%%
 
@@ -84,7 +84,7 @@ Basic
 Which header contains the `fork()` function?
 Back: `<unistd.h>`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 END%%
 
 %%ANKI
@@ -92,7 +92,7 @@ Basic
 If successful, how many times does the `fork()` function return?
 Back: Two times.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1752497519549-->
 END%%
 
@@ -101,7 +101,7 @@ Basic
 If successful, when does `fork()` return value `0`?
 Back: When running as the child process.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1752497519552-->
 END%%
 
@@ -110,7 +110,7 @@ Basic
 If successful, when does `fork()` return a value greater than `0`?
 Back: When running as the parent process.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1752497519554-->
 END%%
 
@@ -119,7 +119,7 @@ Basic
 Assume `fork()` returns a positive integer. What does this integer correspond to?
 Back: The child process's PID.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1752497519557-->
 END%%
 
@@ -128,7 +128,7 @@ Basic
 If successful, how many times does the `execve()` function return?
 Back: Zero times.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1752497519560-->
 END%%
 

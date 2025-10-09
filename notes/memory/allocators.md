@@ -29,7 +29,7 @@ Basic
 Which of the two high-level classification of dynamic memory allocators does C use?
 Back: Explicit allocators.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1756044642367-->
 END%%
 
@@ -124,7 +124,7 @@ Basic
 What explicit allocator does the C standard library provide?
 Back: The `malloc` and `free` family of functions.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1756048394553-->
 END%%
 
@@ -133,7 +133,7 @@ Basic
 How large is the block of memory returned by `malloc`?
 Back: At least as large as the requested size in bytes.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1756048394557-->
 END%%
 
@@ -142,7 +142,7 @@ Basic
 Which C standard library function should be used to allocate uninitialized memory?
 Back: `malloc`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1756048394559-->
 END%%
 
@@ -151,7 +151,7 @@ Basic
 Which C standard library function should be used to allocate initialized memory?
 Back: `calloc`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1756048394561-->
 END%%
 
@@ -160,7 +160,7 @@ Basic
 Why is `calloc` named the way it is?
 Back: It's short for **c**lear **alloc**ation.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1756121842999-->
 END%%
 
@@ -168,7 +168,7 @@ END%%
 Cloze
 {1:`malloc`} is to {2:uninitialized} whereas {2:`calloc`} is to {1:initialized}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1756048394563-->
 END%%
 
@@ -177,7 +177,7 @@ Basic
 Which C standard library function should be used to change the size of an allocated block?
 Back: `realloc`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1756048394566-->
 END%%
 
@@ -186,7 +186,7 @@ Basic
 Why is `realloc` named the way it is?
 Back: It's short for **re**size **alloc**ation.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17
+Tags: c23
 <!--ID: 1756121843001-->
 END%%
 
@@ -195,7 +195,7 @@ Basic
 What is the `brk` system call used to manage?
 Back: The memory allocated for a process's heap.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1756850620557-->
 END%%
 
@@ -204,7 +204,7 @@ Basic
 What is the `sbrk` system call used to manage?
 Back: The memory allocated for a process's heap.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1756850620564-->
 END%%
 
@@ -213,7 +213,7 @@ Basic
 What legacy system call(s) were used prior to `mmap` and `munmap`?
 Back: `brk` and `sbrk` (not respectively).
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1757011910208-->
 END%%
 
@@ -222,7 +222,7 @@ Basic
 What modern system call(s) are used in place of `brk` and `sbrk`?
 Back: `mmap` and `munmap` (not respectively).
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: c17 os::linux
+Tags: c23 os::linux
 <!--ID: 1757011910213-->
 END%%
 

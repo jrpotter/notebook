@@ -66,7 +66,7 @@ struct Point {
 }
 ```
 Reference: Fuchsia. “Introduction to Fbl Intrusive Containers.” Accessed May 12, 2024. [https://fuchsia.dev/fuchsia-src/development/languages/c-cpp/fbl_containers_guide/introduction](https://fuchsia.dev/fuchsia-src/development/languages/c-cpp/fbl_containers_guide/introduction).
-Tags: c17 data_structure::linked_list
+Tags: c23 data_structure::linked_list
 <!--ID: 1715534735133-->
 END%%
 
@@ -81,7 +81,7 @@ struct Point {
 ```
 Back: Intrusive.
 Reference: Fuchsia. “Introduction to Fbl Intrusive Containers.” Accessed May 12, 2024. [https://fuchsia.dev/fuchsia-src/development/languages/c-cpp/fbl_containers_guide/introduction](https://fuchsia.dev/fuchsia-src/development/languages/c-cpp/fbl_containers_guide/introduction).
-Tags: c17 data_structure::linked_list
+Tags: c23 data_structure::linked_list
 <!--ID: 1715534821493-->
 END%%
 
@@ -115,7 +115,7 @@ struct ListNode {
 }
 ```
 Reference: Fuchsia. “Introduction to Fbl Intrusive Containers.” Accessed May 12, 2024. [https://fuchsia.dev/fuchsia-src/development/languages/c-cpp/fbl_containers_guide/introduction](https://fuchsia.dev/fuchsia-src/development/languages/c-cpp/fbl_containers_guide/introduction).
-Tags: c17 data_structure::linked_list
+Tags: c23 data_structure::linked_list
 <!--ID: 1715534735137-->
 END%%
 
@@ -130,7 +130,7 @@ struct Point {
 ```
 Back: Zero or one.
 Reference: Fuchsia. “Introduction to Fbl Intrusive Containers.” Accessed May 12, 2024. [https://fuchsia.dev/fuchsia-src/development/languages/c-cpp/fbl_containers_guide/introduction](https://fuchsia.dev/fuchsia-src/development/languages/c-cpp/fbl_containers_guide/introduction).
-Tags: c17 data_structure::linked_list
+Tags: c23 data_structure::linked_list
 <!--ID: 1715534735140-->
 END%%
 
@@ -145,7 +145,7 @@ struct ListNode {
 ```
 Back: Zero or more.
 Reference: Fuchsia. “Introduction to Fbl Intrusive Containers.” Accessed May 12, 2024. [https://fuchsia.dev/fuchsia-src/development/languages/c-cpp/fbl_containers_guide/introduction](https://fuchsia.dev/fuchsia-src/development/languages/c-cpp/fbl_containers_guide/introduction).
-Tags: c17 data_structure::linked_list
+Tags: c23 data_structure::linked_list
 <!--ID: 1715534735143-->
 END%%
 

@@ -1,9 +1,9 @@
 ---
 title: Threads
 TARGET DECK: Obsidian::STEM
-FILE TAGS: c17::threads
+FILE TAGS: c23::threads
 tags:
-  - c17
+  - c23
   - threads
 ---
 
@@ -44,7 +44,7 @@ END%%
 %%ANKI
 Basic
 Which function is typically used to start a thread?
-Back: `thrd_create()`
+Back: `thrd_create`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1758034772970-->
 END%%
@@ -52,7 +52,7 @@ END%%
 %%ANKI
 Basic
 Which function is typically used to wait for a thread?
-Back: `thrd_join()`
+Back: `thrd_join`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1758034772972-->
 END%%
@@ -76,14 +76,14 @@ void call_once(once_flag *flag, void (*func)(void));
 %%ANKI
 Basic
 Which function is used to guarantee invocation of a callback exactly once?
-Back: `call_once()`
+Back: `call_once`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759032994716-->
 END%%
 
 %%ANKI
 Basic
-What is the function prototype of `call_once()`?
+What is the function prototype of `call_once`?
 Back:
 ```c
 void call_once(once_flag *flag, void (*func)(void));
@@ -94,7 +94,7 @@ END%%
 
 %%ANKI
 Basic
-The `call_once()` function is given a flag of what type?
+The `call_once` function is given a flag of what type?
 Back: `once_flag`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759032994750-->
@@ -117,7 +117,7 @@ END%%
 
 %%ANKI
 Basic
-How do multiple threads behave to a `call_once()` invocation?
+How do multiple threads behave to a `call_once` invocation?
 Back: One thread triggers the callback while the others wait for it to terminate.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759032994766-->
@@ -138,7 +138,7 @@ int tss_set(tss_t key, void *val);
 %%ANKI
 Basic
 What storage class specifier is used to modify TLS?
-Back: `_Thread_local`
+Back: `thread_local`
 Reference: “Thread-Local Storage,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1252543227).
 <!--ID: 1734745402931-->
 END%%
@@ -169,7 +169,7 @@ END%%
 %%ANKI
 Basic
 In C, what is the most natural way of modifying TLS?
-Back: Using the `_Thread_local` qualifier on an object.
+Back: Using the `thread_local` qualifier on an object.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759062508172-->
 END%%
@@ -185,7 +185,7 @@ END%%
 %%ANKI
 Basic
 Which function is used to create a new value in TSD?
-Back: `tss_create()`
+Back: `tss_create`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759062508178-->
 END%%
@@ -255,7 +255,7 @@ END%%
 
 %%ANKI
 Basic
-How many different values of flags can be passed to a call to `mtx_init()`?
+How many different values of flags can be passed to a call to `mtx_init`?
 Back: Three.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759163282080-->
@@ -263,7 +263,7 @@ END%%
 
 %%ANKI
 Basic
-What are the three flags available to `mtx_init()` calls?
+What are the three flags available to `mtx_init` calls?
 Back: `mtx_plain`, `mtx_timed`, and `mtx_recursive`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759163282083-->
@@ -293,7 +293,7 @@ END%%
 %%ANKI
 Basic
 Which C standard function must be called to initialize a mutex?
-Back: `mtx_init()`
+Back: `mtx_init`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759163282100-->
 END%%
@@ -301,7 +301,7 @@ END%%
 %%ANKI
 Basic
 Which C standard function must be called to uninitialize a mutex?
-Back: `mtx_destroy()`
+Back: `mtx_destroy`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759163282104-->
 END%%
@@ -309,7 +309,7 @@ END%%
 %%ANKI
 Basic
 Which C standard function is most commonly used to acquire a mutex?
-Back: `mtx_lock()`
+Back: `mtx_lock`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759163282108-->
 END%%
@@ -317,7 +317,7 @@ END%%
 %%ANKI
 Basic
 Which C standard function is most commonly used to release a mutex?
-Back: `mtx_unlock()`
+Back: `mtx_unlock`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759163282111-->
 END%%
@@ -332,7 +332,7 @@ END%%
 
 %%ANKI
 Cloze
-{1:`malloc()`} is to {2:`free()`} as {2:`mtx_lock()`} is to {1:`mtx_unlock()`}.
+{1:`malloc`} is to {2:`free`} as {2:`mtx_lock`} is to {1:`mtx_unlock`}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759163282118-->
 END%%
@@ -341,7 +341,7 @@ END%%
 
 A **condition variable** is a synchronization primitive used alongside a mutex to block one or more threads until another thread notifies the variable.
 
-A condition variable is represented with type `cnd_t`. `cnd_wait()` (and its variants) *must* be invoked while its corresponding mutex is locked.
+A condition variable is represented with type `cnd_t`. `cnd_wait` (and its variants) *must* be invoked while its corresponding mutex is locked.
 
 ```c
 int cnd_init(cnd_t *cond);
@@ -370,7 +370,7 @@ END%%
 %%ANKI
 Basic
 What two C standard functions are used to notify threads waiting on a condition variable?
-Back: `cnd_signal()` and `cnd_broadcast()`.
+Back: `cnd_signal` and `cnd_broadcast`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759170264231-->
 END%%
@@ -394,15 +394,15 @@ END%%
 %%ANKI
 Basic
 Which C standard function involving condition variables *must* be invoked within a critical section?
-Back: `cnd_wait()` (or its variants).
+Back: `cnd_wait` (or its variants).
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759170264235-->
 END%%
 
 %%ANKI
 Basic
-*Why* must `cnd_wait()` be called within a critical section?
-Back: The call to `cnd_wait()` will unlock (and subsequently re-lock) the associated mutex.
+*Why* must `cnd_wait` be called within a critical section?
+Back: The call to `cnd_wait` will unlock (and subsequently re-lock) the associated mutex.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759170264236-->
 END%%
@@ -417,7 +417,7 @@ END%%
 
 %%ANKI
 Basic
-What does the `cnd_signal()` function do?
+What does the `cnd_signal` function do?
 Back: Resumes a thread waiting on the associated condition variable.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759170264238-->
@@ -425,7 +425,7 @@ END%%
 
 %%ANKI
 Basic
-What does the `cnd_broadcast()` function do?
+What does the `cnd_broadcast` function do?
 Back: Resumes all threads waiting on the associated condition variable.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759170264239-->
@@ -433,14 +433,14 @@ END%%
 
 %%ANKI
 Cloze
-{1:`mtx_init()`} is to {2:`mtx_destroy()`} as {2:`cnd_init()`} is to {1:`cnd_destroy()`}.
+{1:`mtx_init`} is to {2:`mtx_destroy`} as {2:`cnd_init`} is to {1:`cnd_destroy`}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759170264240-->
 END%%
 
 %%ANKI
 Basic
-What C conditional is a call to `cnd_wait()` typically wrapped within?
+What C conditional is a call to `cnd_wait` typically wrapped within?
 Back: A `while` loop re-checking the condition expression.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759170264241-->
