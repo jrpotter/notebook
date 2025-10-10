@@ -271,7 +271,7 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1723859121972-->
 END%%
 
-## Types
+## Integer Types
 
 ### Characters
 
@@ -1051,6 +1051,441 @@ enum X { A = 0, B, C };
 Back: `signed int`.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759272953356-->
+END%%
+
+## Floating-Point Types
+
+### Binary
+
+The binary floating-point types are `float`, `double`, and `long double`. Prior to C23, the choice of floating-point representation was unspecified. Since C23, these types must obey the [[floating-point|IEEE-754 binary floating-point]] standard.
+
+%%ANKI
+Basic
+How many binary floating-point types does C support?
+Back: Three.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1760065696009-->
+END%%
+
+%%ANKI
+Basic
+What are the three binary floating-point types that C supports?
+Back: `float`, `double`, and `long double`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1760065696012-->
+END%%
+
+%%ANKI
+Cloze
+{1:`float`} is to {2:single}-precision whereas {2:`double`} is to {1:double}-precision.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1760065696014-->
+END%%
+
+%%ANKI
+Basic
+Which binary floating-point encoding is guaranteed by the C17 standard?
+Back: N/A.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710556914961-->
+END%%
+
+%%ANKI
+Basic
+Which floating-point encoding is guaranteed by the C23 standard?
+Back: IEE-754.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1760060430720-->
+END%%
+
+%%ANKI
+Basic
+How is precision affected when casting from `float` to `double`?
+Back: It isn't.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824841-->
+END%%
+
+%%ANKI
+Basic
+How is precision affected when casting from `double` to `float`?
+Back: Rounding may occur.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824844-->
+END%%
+
+%%ANKI
+Basic
+*Why* might rounding occur when casting from `double` to `float`?
+Back: `float`s have less precision.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824846-->
+END%%
+
+%%ANKI
+Basic
+What overflow values might result when casting from `float` to `double`?
+Back: N/A.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824848-->
+END%%
+
+%%ANKI
+Basic
+What overflow values might result when casting from `double` to `float`?
+Back: $\pm\infty$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824850-->
+END%%
+
+%%ANKI
+Basic
+*Why* might overflow occur when casting from `double` to `float`?
+Back: `float`s have smaller range.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824852-->
+END%%
+
+%%ANKI
+Basic
+Assuming no overflow, what is the result of casting a `double` to an `int`?
+Back: The `double`'s value rounded toward `0`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824856-->
+END%%
+
+%%ANKI
+Basic
+Assuming overflow, what is the result of casting a `double` to an `int`?
+Back: The result is implementation-specific.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824858-->
+END%%
+
+%%ANKI
+Basic
+Assuming no overflow, what is the result of casting a `float` to an `int`?
+Back: The `float`'s value rounded toward `0`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824861-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `(int) (double) 1.5`?
+Back: `1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824863-->
+END%%
+
+%%ANKI
+Basic
+What is the result of `(int) (double) -1.5`?
+Back: `-1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824865-->
+END%%
+
+%%ANKI
+Basic
+Assuming overflow, what is the result of casting a `float` to an `int`?
+Back: The result is implementation-specific.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710680824867-->
+END%%
+
+%%ANKI
+Basic
+How many bits make up the sign field of a `float`?
+Back: `1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710556915017-->
+END%%
+
+%%ANKI
+Basic
+How many bits make up the exponent field of a `float`?
+Back: `8`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710556915019-->
+END%%
+
+%%ANKI
+Basic
+How many bits make up the fraction field of a `float`?
+Back: `23`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710556915022-->
+END%%
+
+%%ANKI
+Basic
+How many bits make up the sign field of a `double`?
+Back: `1`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710556915024-->
+END%%
+
+%%ANKI
+Basic
+How many bits make up the exponent field of a `double`?
+Back: `11`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710556915026-->
+END%%
+
+%%ANKI
+Basic
+How many bits make up the fraction field of a `double`?
+Back: `52`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710556915028-->
+END%%
+
+%%ANKI
+Cloze
+The exponent field of a `float` has {`8`} bits whereas a `double` has {`11`} bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710556915030-->
+END%%
+
+%%ANKI
+Cloze
+The fraction field of a `float` has {`23`} bits and a `double` has {`52`} bits.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710556915032-->
+END%%
+
+%%ANKI
+Basic
+Which IEEE floating-point fields have the same width in `float`s and `double`s?
+Back: The sign bit field.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710556915034-->
+END%%
+
+%%ANKI
+Basic
+Which IEEE floating-point fields have different widths in `float`s and `double`s?
+Back: The exponent and fraction fields.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710556915036-->
+END%%
+
+%%ANKI
+Basic
+What is the binary representation of a `float`'s bias?
+Back: `01111111`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1712938082200-->
+END%%
+
+%%ANKI
+Basic
+What is the binary representation of a `double`'s bias?
+Back: `01111111111`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1712938082205-->
+END%%
+
+%%ANKI
+Basic
+What is the first integer value not exactly representable by a `float`?
+Back: $2^{24} + 1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1710605798317-->
+END%%
+
+%%ANKI
+Basic
+What is the first integer value not exactly representable by a `double`?
+Back: $2^{53} + 1$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1710605798319-->
+END%%
+
+%%ANKI
+Basic
+What is the bit representation of the largest normalized positive `float`?
+Back: Sign bit `0`, exponent field $11 \cdots 10_2$, fraction field all `1`s.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710605798325-->
+END%%
+
+%%ANKI
+Basic
+What is the bit representation of the smallest positive `float`?
+Back: Sign bit `0`, exponent field `0`s, fraction field $00 \cdots 01_2$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710607581719-->
+END%%
+
+%%ANKI
+Basic
+What is the bit representation of the smallest normalized positive `float`?
+Back: Sign bit `0`, exponent field $00 \cdots 01_2$, fraction field all `0`s.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710605798329-->
+END%%
+
+%%ANKI
+Basic
+Let `float x = 1.0`. What is the bit representation of `x`'s exponent *field*?
+Back: `01111111`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1710605798327-->
+END%%
+
+%%ANKI
+Basic
+Let `float x = 1.0`. What does `x`'s exponent *value* equal?
+Back: $0$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1735827481751-->
+END%%
+
+%%ANKI
+Basic
+Let `double x = 1.0`. What is the bit representation of `x`'s exponent *field*?
+Back: `01111111111`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1710605798331-->
+END%%
+
+%%ANKI
+Basic
+What is the bit representation of the largest normalized positive `double`?
+Back: Sign bit `0`, exponent field $11 \cdots 10_2$, fraction field all `1`s.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710605798333-->
+END%%
+
+%%ANKI
+Basic
+What is the bit representation of the smallest normalized positive `double`?
+Back: Sign bit `0`, exponent field $00 \cdots 01_2$, fraction field all `0`s.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710605798335-->
+END%%
+
+%%ANKI
+Basic
+What is the bit representation of the smallest positive `double`?
+Back: Sign bit `0`, exponent field all `0`s, fraction field $00 \cdots 01_2$.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1710607581722-->
+END%%
+
+%%ANKI
+Basic
+What is the largest unsigned decimal value a normalized `float`'s exponent field can be?
+Back: $2^8 - 2$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1710605798337-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest positive `float` that can be exactly represented?
+Back: $2^{-23}$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1710607581724-->
+END%%
+
+%%ANKI
+Basic
+What is the largest unsigned decimal value a normalized `double`'s exponent field can be?
+Back: $2^{11} - 2$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1710605798339-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest positive `double` that can be exactly represented?
+Back: $2^{-52}$
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+Tags: x86-64
+<!--ID: 1710607581726-->
+END%%
+
+### Decimal
+
+Included in C23 are the decimal floating-point types `_Decimal32`, `_Decimal64`, and `_Decimal128`. These types must obey the IEEE-754 decimal floating-point standard. Whether decimal floating-point types and operations are supported is implementation-specific.
+
+%%ANKI
+Basic
+How many decimal floating-point types does C support?
+Back: Three.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1760065696015-->
+END%%
+
+%%ANKI
+Basic
+What are the three decimal floating-point types that C supports?
+Back: `_Decimal32`, `_Decimal64`, and `_Decimal128`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1760065696016-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest decimal floating-point type C23 supports?
+Back: `_Decimal32`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1760065696017-->
+END%%
+
+%%ANKI
+Basic
+What is the largest decimal floating-point type C23 supports?
+Back: `_Decimal128`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1760065696018-->
+END%%
+
+### Complex
+
+The complex types are `float _Complex`, `double _Complex`, and `long double _Complex`. Whether complex types and operations are supported is implementation-specific.
+
+%%ANKI
+Basic
+How many complex types does C support?
+Back: Three.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1760065696019-->
+END%%
+
+%%ANKI
+Basic
+What are the three complex types that C supports?
+Back: `float _Complex`, `double _Complex`, and `long double _Complex`.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1760065696020-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest complex type C23 supports?
+Back: `float _Complex`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1760065696022-->
+END%%
+
+%%ANKI
+Basic
+What is the largest complex type C23 supports?
+Back: `long double _Complex`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1760065696023-->
 END%%
 
 ## Usual Arithmetic Conversions

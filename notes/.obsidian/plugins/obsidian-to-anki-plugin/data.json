@@ -1357,7 +1357,7 @@
     "logic/boolean_algebra.md": "e3e119a7e4ea663c5a832f98709b20d4",
     "_journal/2025-07-05.md": "ff1fba2e661f57f68cb8cd10c50ceb67",
     "_journal/2025-07/2025-07-04.md": "13487a42a2d971e073999906b2360637",
-    "arithmetic/radices.md": "abb61f522bc46756b7e0bbaf56d80dc3",
+    "arithmetic/radices.md": "b1a256fe71f421407237806b84883572",
     "arithmetic/logarithms.md": "0c563e9b8e2fde8bac8c825e8ae24f4d",
     "arithmetic/index.md": "83e9f72ab4a6fb2d7013e40598a2cd58",
     "networking/ip/subnet.md": "c9259f72b5e0f193156601130571932a",
@@ -1594,7 +1594,7 @@
     "_journal/2025-09/2025-09-29.md": "64b3b9aba0384529edb2665281fc0742",
     "c23/index.md": "22348c2eff59c0277720bdb10ad65365",
     "c23/declarations.md": "f5631d2e4065181a49aa25b958b9fb84",
-    "c23/types/simple.md": "08c41dda7b094afd19c1347c74cd0ac5",
+    "c23/types/simple.md": "dfe33c5913e5f80039c9abd4630a7cc8",
     "c23/types/index.md": "77e1596c70c793adb46e00f5b3ac6407",
     "c23/types/fixed-width.md": "d40a74b8312b254b955c6afb6fb4d1a7",
     "_journal/2025-10-01.md": "f183e176842bcfa7407ef4da10059ce5",
@@ -1629,14 +1629,15 @@
     "c23/generic.md": "692f59ada2e80ce6ed08450b574b73a5",
     "_journal/2025-10/2025-10-07.md": "4f0f90885d29198aacb0d9831abdaa8c",
     "_journal/2025-10-08.md": "5c1f70e4479eb13ad02551e6bafe80cf",
-    "_journal/2025-10-09.md": "c28065e22d04158a0b459c491c439b51",
+    "_journal/2025-10-09.md": "dbda6c13045aa80b4502a451064427be",
     "_journal/2025-10/2025-10-08.md": "5c1f70e4479eb13ad02551e6bafe80cf",
     "c23/signals.md": "bd560509af5dbe82a73288039650f8d6",
     "c23/jumps.md": "96625ffb9c140f4a5246402500fec104",
     "c23/io/sockets.md": "8d58612f0865357442a178efe3ed45a1",
     "c23/io/streams.md": "5f341b8bc376f7542b34ce21ccc2d5a5",
     "c23/threads.md": "abac235c16dcef858796281c62e75172",
-    "c23/types/atomics.md": "07f3071b574cea6fb75f77cb159957a2"
+    "c23/types/atomics.md": "07f3071b574cea6fb75f77cb159957a2",
+    "binary/floating-point.md": "000c95d35bd015d3bf5f562ddf3f426f"
   },
   "fields_dict": {
     "Basic": [
