@@ -243,6 +243,8 @@ END%%
 
 A **definition** is a declaration that causes storage to be reserved for the object (for object types) or includes the function body (for function types).
 
+Since C23, function definitions may omit parameter names. This mirrors how function declarations work.
+
 %%ANKI
 Basic
 A definition contains how many declarators?
@@ -273,6 +275,22 @@ What is the relationship between a declaration and a definition?
 Back: All definitions are also declarations, but not the other way around.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1733401142092-->
+END%%
+
+%%ANKI
+Basic
+Which C standard allowed eliding parameter names in function declarations?
+Back: C89.
+Reference: _Wikipedia_. “C23 (C standard revision).” September 7, 2025. [https://en.wikipedia.org/w/index.php?title=C23_(C_standard_revision)](https://en.wikipedia.org/w/index.php?title=C23_\(C_standard_revision\)&oldid=1310111059).
+<!--ID: 1760100927446-->
+END%%
+
+%%ANKI
+Basic
+Which C standard allowed eliding parameter names in function definitions?
+Back: C23.
+Reference: _Wikipedia_. “C23 (C standard revision).” September 7, 2025. [https://en.wikipedia.org/w/index.php?title=C23_(C_standard_revision)](https://en.wikipedia.org/w/index.php?title=C23_\(C_standard_revision\)&oldid=1310111059).
+<!--ID: 1760100927451-->
 END%%
 
 ### Initializers

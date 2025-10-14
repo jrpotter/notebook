@@ -26,39 +26,6 @@ The bottom of the type hierarchy consists of **simple types**. This comprises th
 | -             | -                    | -             | `double complex`      | 8      | 8      |
 | -             | -                    | -             | `long double complex` | -      | -      |
 
-**Narrow types** cannot be used directly in arithmetic. Instead they are first promoted to a wider type. On almost every system, this promotion will be to a `signed int` of the same value, regardless of the signedness of the narrow type itself.
-
-%%ANKI
-Cloze
-The {`<stdint.h>`} header file contains {fixed width data integral types}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1707835869728-->
-END%%
-
-%%ANKI
-Basic
-The integer types are grouped into what two classes?
-Back: The signed and unsigned integer types.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724546870212-->
-END%%
-
-%%ANKI
-Basic
-The floating point types are grouped into what two classes?
-Back: The real and complex floating point types.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1724546870217-->
-END%%
-
-%%ANKI
-Basic
-Which header file contains `INT32_MAX`?
-Back: `<stdint.h>`
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1708615249870-->
-END%%
-
 %%ANKI
 Basic
 What two variants does a C integral type declaration have?
@@ -239,6 +206,18 @@ Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open
 <!--ID: 1724546734428-->
 END%%
 
+## Integer Types
+
+**Narrow types** cannot be used directly in arithmetic. Instead they are first promoted to a wider type. On almost every system, this promotion will be to a `signed int` of the same value, regardless of the signedness of the narrow type itself.
+
+%%ANKI
+Basic
+The integer types are grouped into what two classes?
+Back: The signed and unsigned integer types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546870212-->
+END%%
+
 %%ANKI
 Basic
 Why are narrow types named the way they are?
@@ -270,8 +249,6 @@ Back: A `signed int`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1723859121972-->
 END%%
-
-## Integer Types
 
 ### Characters
 
@@ -1055,6 +1032,32 @@ END%%
 
 ## Floating-Point Types
 
+The floating-point types are divided into the real and complex classes. The floating-point environment, consisting of status flags and control modes, is accessible via the `<fenv.h>` header.
+
+%%ANKI
+Basic
+The floating point types are grouped into what two classes?
+Back: The real and complex floating point types.
+Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
+<!--ID: 1724546870217-->
+END%%
+
+%%ANKI
+Basic
+Which C standard header provides functionality for changing the floating-point rounding mode?
+Back: `<fenv.h>`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760238475187-->
+END%%
+
+%%ANKI
+Basic
+Why is the `<fenv.h>` header named the way it is?
+Back: It's short for **f**loating-point **env**ironment.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760238475189-->
+END%%
+
 ### Binary
 
 The binary floating-point types are `float`, `double`, and `long double`. Prior to C23, the choice of floating-point representation was unspecified. Since C23, these types must obey the [[floating-point|IEEE-754 binary floating-point]] standard.
@@ -1785,7 +1788,7 @@ Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open
 <!--ID: 1724762203465-->
 END%%
 
-## Checked Arithmetic
+### Checked Arithmetic
 
 In C23, the `<stdckdint.h>` header was introduced. It defines several macros for performing checked integer arithmetic. Operations behave as if operands were signed integer types with infinite range. The result is then converted into the desired type.
 
@@ -1847,4 +1850,5 @@ END%%
 * Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 * _Wikipedia_. “C23 (C standard revision).” September 7, 2025. [https://en.wikipedia.org/w/index.php?title=C23_(C_standard_revision)](https://en.wikipedia.org/w/index.php?title=C23_\(C_standard_revision\)&oldid=1310111059).

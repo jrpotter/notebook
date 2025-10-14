@@ -53,7 +53,7 @@ END%%
 
 %%ANKI
 Basic
-What value is `errno` initialized to in the non-initial thread?
+What value is `errno` initialized to in a non-initial thread?
 Back: Indeterminate.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759852323204-->

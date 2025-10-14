@@ -248,8 +248,16 @@ END%%
 
 %%ANKI
 Basic
-Can type `int(*)[]` be used in a `_Generic` case? If not, why?
+Can type `int[]` be used in a `_Generic` case? If not, why?
 Back: No, it is not a complete type.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1760103198169-->
+END%%
+
+%%ANKI
+Basic
+Can type `int(*)[]` be used in a `_Generic` case? If not, why?
+Back: Yes.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1760016142631-->
 END%%
@@ -407,7 +415,7 @@ END%%
 %%ANKI
 Basic
 What are the possible operands of the typeof operators?
-Back: Either an expression or type name.
+Back: An expression or type name that does not designate a bit-member field.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1760041998812-->
 END%%
@@ -511,7 +519,7 @@ Given the following, what type does `typeof_unqual(a)` correspond to?
 ```c
 const int a[4] = {0};
 ```
-Back: `int[4]`
+Back: `const int[4]`
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1760041998823-->
 END%%

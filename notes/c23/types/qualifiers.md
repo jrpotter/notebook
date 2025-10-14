@@ -348,6 +348,14 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1753897177587-->
 END%%
 
+%%ANKI
+Basic
+The `restrict` qualifier is implied by what standard C attributes?
+Back: `[[reproducible]]` and `[[unsequenced]]`.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1760267997969-->
+END%%
+
 ## volatile
 
 The `volatile` type qualifier indicates that the corresponding object must be:
@@ -391,5 +399,6 @@ END%%
 
 ## Bibliography
 
+* Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 * Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).

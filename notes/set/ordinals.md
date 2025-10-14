@@ -729,6 +729,80 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1757849086357-->
 END%%
 
+### Hartog's Theorem
+
+For any set $A$, there is an ordinal not dominated by $A$. The **Hartogs number** of $A$ is the least ordinal $\alpha$ such that $\alpha \not\preceq A$.
+
+%%ANKI
+Basic
+What does Hartog's theorem state?
+Back: For any set $A$, there is an ordinal not dominated by $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760403065319-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following theorem?
+
+> For any set $A$, there is an ordinal not dominated by $A$.
+
+Back: Hartog's theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760403065328-->
+END%%
+
+%%ANKI
+Basic
+Which theorem "assures an adequate supply of ordinal numbers"?
+Back: Hartog's theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760403065332-->
+END%%
+
+%%ANKI
+Basic
+What is wrong with the following formulation of Hartog's theorem?
+
+> For any set $A$, there is an ordinal $\alpha$ such that $A \prec \alpha$.
+
+Back: Hartog's theorem states there exists an ordinal $\alpha$ such that $\alpha \not\preceq A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760403065335-->
+END%%
+
+%%ANKI
+Basic
+What is the Hartogs number of set $A$?
+Back: The least ordinal $\alpha$ such that $\alpha \not\preceq A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760403065338-->
+END%%
+
+%%ANKI
+Basic
+Given some arbitrary set $A$, *why* must there exist a Hartogs number of $A$?
+Back: The ordinals are well-ordered so Hartog's theorem asserts a least ordinal's existence.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760403065342-->
+END%%
+
+%%ANKI
+Basic
+What is the Hartogs number of $n \in \omega$?
+Back: $n^+$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760403065347-->
+END%%
+
+%%ANKI
+Basic
+What is the Hartogs number of $\{a, b, c\}$?
+Back: $4$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760403065352-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

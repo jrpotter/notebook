@@ -1054,14 +1054,87 @@ END%%
 
 ## Sequencing
 
-In the absence of threads, most of C's formalization on evaluation order is done with **sequence points**. These are points in the syntactical specification of the program that imposes a serialization of the execution.
+There exists four sequencing relationships in C:
 
-The existence of sequence points only impose that there is *some* order. It may be ambiguous still *which* possibly order is actually taken. When two evaluations are ambiguously ordered, we say they are **indeterminately sequenced**.
+1. **Sequenced before**: One evaluation happens completely before another.
+2. **Sequenced after**: One evaluation happens completely after another.
+3. **Indeterminately sequenced**: Evaluations are unordered relative to one another, but they may not interleave.
+4. **Unsequenced**: Evaluations can happen in any order and may interleave.
+
+These sequence relationships can be influenced syntactically via **sequence points** which impose some execution serialization. Note though that these impose *some* order. They may or may not allow disambiguating *which* order is actually taken.
+
+%%ANKI
+Basic
+What are the four sequencing relationships present in C?
+Back:
+1. Sequenced before
+2. Sequenced after
+3. Indeterminately sequenced
+4. Unsequenced
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760235964202-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for `A` to be sequenced before `B`?
+Back: Evaluation of `A` finishes completely before beginning `B`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760235964206-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for `A` to be sequenced after `B`?
+Back: Evaluation of `B` finishes completely before beginning `A`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760235964209-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for `A` to be indeterminately sequenced with `B`?
+Back: Either `A` finishes completely before `B` or vice versa.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760235964211-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for `A` and `B` to be unsequenced?
+Back: Evaluation of `A` and `B` can happen in any order, including interleaved.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760235964214-->
+END%%
+
+%%ANKI
+Basic
+How many indeterminately sequenced scenarios are described in the C standard?
+Back: Two.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760235964216-->
+END%%
+
+%%ANKI
+Basic
+What are the two types of evaluations that are indeterminately sequenced?
+Back: Function arguments and initializer list expressions.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760235964219-->
+END%%
+
+%%ANKI
+Basic
+What syntactic tool is used to control sequencing?
+Back: Sequence points.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760235964221-->
+END%%
 
 %%ANKI
 Basic
 What is a sequence point?
-Back: Some point in the syntax of the program that imposes a serialization of the execution.
+Back: Some point in the syntax of a program that imposes a serialization of the execution.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757732499313-->
 END%%
@@ -1074,25 +1147,37 @@ Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co
 <!--ID: 1757852965002-->
 END%%
 
-### Sequence Points
-
-The following constitute the sequence points found in C's grammar:
-
-* The end of a statement with either a semicolon (`;`) or closing brace (`}`).
-* The end of an expression before the comma operator (`,`).
-* The end of a declaration, with either a semicolon (`;`) or comma (`,`).
-* The end of the controlling expression of `if`, `switch`, `for`, and `while`.
-* The end of the controlling expression for conditional evaluation (`?:`).
-* The end of the controlling expression for short-circuit evaluation (`&&`) and (`||`).
-* After the evaluations of the function designator and function arguments, but before the actual call.
-* Updating an object with assignment, increment, or decrement operators is sequenced after evaluation of operands.
-* Initialization-list expressions for array or structure types are indeterminately sequenced.
-
-Additionally, the execution of a function call is sequenced with respect to all evaluations of the caller. That is, once a function call is invoked, it is completed before other evaluations are performed.
+%%ANKI
+Basic
+What does it mean for two initializer list expressions to be indeterminately sequenced?
+Back: The order in which they are evaluated is ambiguous but nonetheless sequenced.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760235964224-->
+END%%
 
 %%ANKI
 Basic
-Which four C operators evaluate their first operand first?
+What sequencing relationship allows interleaving evaluations?
+Back: Unsequenced.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760235964226-->
+END%%
+
+### Sequence Points
+
+The following constitute known sequence points:
+
+* Between evaluation of a function's designator/arguments and the actual function call.
+* Between evaluation of the first and second operands of the `&&`, `||`, and `,` operators.
+* Between evaluation of the first and chosen operand of the `?:` conditional.
+* Between the evaluation of a full expression and the next full expression.
+* Immediately before a library function returns.
+* After the actions associated with each formatted input/output function conversion specifier (e.g. `fprintf`).
+* Immediately before and after each call to a comparision function as well as between calls to said function and movement of data (e.g. `qsort`).
+
+%%ANKI
+Basic
+Which four C operators sequence their first operand before others?
 Back: `&&`, `||`, `?:`, and `,`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757732499322-->
@@ -1139,7 +1224,7 @@ What is the result of `x` in the following?
 ```c
 int x = (f(a), f(b));
 ```
-Back: `f(b)`
+Back: The return value of `f(b)`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757732499348-->
 END%%
@@ -1157,18 +1242,18 @@ END%%
 
 %%ANKI
 Basic
-What is the evaluation order of `f(a)` and `f(b)` in the following?
+What sequencing relationship exists between operands `f(a)` and `f(b)`?
 ```c
 int x = f(a) + f(b);
 ```
-Back: N/A. There is no pre-established order.
+Back: They are unsequenced.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757732499358-->
 END%%
 
 %%ANKI
 Basic
-What is the evaluation order of `f(a)` and `f(b)` in the following?
+What sequencing relationship exists between arguments `f(a)` and `f(b)`?
 ```c
 printf("%d and %d\n", f(a), f(b));
 ```
@@ -1179,7 +1264,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* does Gustedt say functions called inside expressions should not have side effects?
+*Why* does Gustedt say functions called inside expressions should avoid side effects?
 Back: Because function calls and most operators don't sequence their operands.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757732499366-->
@@ -1187,31 +1272,7 @@ END%%
 
 %%ANKI
 Basic
-In what order is the following sequenced?
-```c
-int a = 10;
-return a;
-```
-Back: The first statement, the second statement.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1757852965011-->
-END%%
-
-%%ANKI
-Basic
-What are the sequence points in the following?
-```c
-int a = 10;
-return a;
-```
-Back: The semicolons.
-Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1757852965014-->
-END%%
-
-%%ANKI
-Basic
-With respect to sequence points, what are the possible first evaluations?
+With respect to sequencing, what in the following is evaluated first?
 ```c
 foo(a, bar(b));
 ```
@@ -1222,7 +1283,7 @@ END%%
 
 %%ANKI
 Basic
-What sequence of function calls are performed in the following?
+What sequencing relationship exists between the function calls?
 ```c
 foo(a, bar(b));
 ```
@@ -1233,44 +1294,44 @@ END%%
 
 %%ANKI
 Basic
-With respect to sequence points, what are the possible first evaluations?
+With respect to sequencing, what in the following is evaluated first?
 ```c
 if (a || b) {
   return c;
 }
 ```
-Back: `a` is guaranteed to be evaluated first.
+Back: `a`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757852965026-->
 END%%
 
 %%ANKI
 Basic
-With respect to sequence points, what are the possible first evaluations?
+With respect to sequencing, what in the following is evaluated first?
 ```c
 if (a + b < 1) {
   return c;
 }
 ```
-Back: Either `a`, `b`, or `1` is evaluated first.
+Back: One of `a`, `b`, or `1`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757852965030-->
 END%%
 
 %%ANKI
 Basic
-With respect to sequence points, what are the possible first evaluations?
+With respect to sequencing, what in the following is evaluated first?
 ```c
 int a[3] = { [0] = b, [1] = c, [2] = d };
 ```
-Back: Any one of `b`, `c`, or `d`.
+Back: One of `b`, `c`, or `d`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757852965033-->
 END%%
 
 %%ANKI
 Basic
-With respect to sequence points, what are the possible first evaluations?
+With respect to sequencing, what in the following is evaluated first?
 ```c
 struct S example = { .field1 = b, .field2 = c };
 ```
@@ -1281,13 +1342,81 @@ END%%
 
 %%ANKI
 Basic
-What are the sequence points in the following?
-```c
-if (a) { }
-```
-Back: After the controlling expression and the `}`.
+Which four C operators introduce sequence points?
+Back: `&&`, `||`, `?:`, and `,`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
-<!--ID: 1757853214698-->
+<!--ID: 1760236971170-->
+END%%
+
+%%ANKI
+Basic
+What sequence points are present in expression `1 + 1`?
+Back: N/A. There are no sequence points.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760236971181-->
+END%%
+
+%%ANKI
+Basic
+What sequence points are present in expression `f() + g()`?
+Back: Evaluation of `f` and `g` before their respective function calls.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760236971183-->
+END%%
+
+%%ANKI
+Basic
+What sequencing relationship exists in an assignment expression (`=`)?
+Back: Evaluation of the left- and right-hand side occurs before updating the stored value.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760236971186-->
+END%%
+
+%%ANKI
+Basic
+Which of the left- or right-hand side is evaluated first in `a = b + c`?
+Back: N/A. Evaluations are unsequenced.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760236971188-->
+END%%
+
+%%ANKI
+Basic
+What sequencing relationship exists in a postfix increment expression (`++`)?
+Back: Value computation of the result occurs before updating the stored value.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760236971190-->
+END%%
+
+%%ANKI
+Basic
+What sequencing relationship exists in a postfix decrement expression (`--`)?
+Back: Value computation of the result occurs before updating the stored value.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760236971193-->
+END%%
+
+%%ANKI
+Cloze
+Expression {`++E`} can be rewritten equivalently as {`(E += 1)`}.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760236971195-->
+END%%
+
+%%ANKI
+Basic
+*Why* does expression `i = i++` result in undefined behavior?
+Back: Evaluations of the left- and right-hand sides are unsequenced.
+Reference: _Wikipedia_. “Sequence point.” September 23, 2025. [https://en.wikipedia.org/w/index.php?title=Sequence_point](https://en.wikipedia.org/w/index.php?title=Sequence_point&oldid=1313033472).
+<!--ID: 1760236971179-->
+END%%
+
+%%ANKI
+Basic
+*Why* does expression `A[i] = i++` result in undefined behavior?
+Back: Evaluation of `A[i]` and `i++` is unsequenced.
+Reference: _Wikipedia_. “Sequence point.” September 23, 2025. [https://en.wikipedia.org/w/index.php?title=Sequence_point](https://en.wikipedia.org/w/index.php?title=Sequence_point&oldid=1313033472).
+<!--ID: 1760236971197-->
 END%%
 
 ## Bibliography
@@ -1296,3 +1425,5 @@ END%%
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+* _Wikipedia_. “Sequence point.” September 23, 2025. [https://en.wikipedia.org/w/index.php?title=Sequence_point](https://en.wikipedia.org/w/index.php?title=Sequence_point&oldid=1313033472).

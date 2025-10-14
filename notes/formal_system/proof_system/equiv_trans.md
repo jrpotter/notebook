@@ -322,7 +322,8 @@ END%%
 %%ANKI
 Basic
 Suppose $P$ and $\neg P$. Show schematically how to use the principle of explosion to prove $Q$.
-Back: $$\begin{align*} P \\ \neg P \\ P \lor Q \\ \hline Q \end{align*}$$Reference: “Principle of Explosion,” in _Wikipedia_, July 3, 2024, [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1232334233).
+Back: $$\begin{align*} P \\ \neg P \\ P \lor Q \\ \hline Q \end{align*}$$
+Reference: “Principle of Explosion,” in _Wikipedia_, July 3, 2024, [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1232334233).
 <!--ID: 1721354092792-->
 END%%
 

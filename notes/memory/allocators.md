@@ -90,7 +90,7 @@ END%%
 
 %%ANKI
 Cloze
-A dynamic memory allocator maintains the {heap} as a collection of various-size {blocks}.
+A dynamic memory allocator maintains the {heap} as a collection of variously sized {blocks}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1756044642407-->
 END%%

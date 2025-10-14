@@ -1077,15 +1077,15 @@ END%%
 
 %%ANKI
 Basic
-What is the storage duration of compound literal `(const int){ 0 }` in block scope?
-Back: Either static or automatic.
+Assume block scope. What is the storage duration of `(const int){ 0 }`?
+Back: Automatic.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759790776095-->
 END%%
 
 %%ANKI
 Basic
-What is the storage duration of compound literal `(thread_local int){ 0 }` in block scope?
+Assume block scope. What is the storage duration of `(thread_local int){ 0 }`?
 Back: Thread.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759790776098-->
@@ -1093,7 +1093,7 @@ END%%
 
 %%ANKI
 Basic
-What is the storage duration of compound literal `(static int){ 0 }` in block scope?
+Assume block scope. What is the storage duration of `(static int){ 0 }`?
 Back: Static.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759790776102-->
@@ -1101,7 +1101,7 @@ END%%
 
 %%ANKI
 Basic
-What is the storage duration of compound literal `(constexpr int){ 0 }` in block scope?
+Assume block scope. What is the storage duration of `(constexpr int){ 0 }`?
 Back: Automatic.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759849585599-->
@@ -1608,6 +1608,7 @@ char pad[1]; // 1 byte
 short x;     // 2 bytes
 ```
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+Tags: x86-64
 <!--ID: 1730902219762-->
 END%%
 
@@ -1627,6 +1628,7 @@ char pad[2]; // 2 bytes
 float f;     // 4 bytes
 ```
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+Tags: x86-64
 <!--ID: 1730902219769-->
 END%%
 
@@ -1642,6 +1644,7 @@ int x;
 ```
 Back: $0$
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+Tags: x86-64
 <!--ID: 1730902219773-->
 END%%
 
@@ -1657,6 +1660,7 @@ int x;
 ```
 Back: Between $0$ and $7$ inclusive.
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
+Tags: x86-64
 <!--ID: 1730902219776-->
 END%%
 

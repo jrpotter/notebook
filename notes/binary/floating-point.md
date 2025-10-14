@@ -661,7 +661,7 @@ END%%
 
 Because floating-point arithmetic can't represent every real number, it must round results to the "nearest" representable number, however "nearest" is defined. The IEEE floating-point standard defines four **rounding modes** to influence this behavior:
 
-* **Round-to-even** rounds numbers to the closest representable value. In the case of values equally between two representations, it rounds to the number with an even least significant digit.
+* **Round-to-even** (also known as **round-to-nearest**) rounds numbers to the closest representable value. In the case of values equally between two representations, it rounds to the number with an even least significant digit.
 * **Round-toward-zero** rounds downward for positive values and upward for negative values.
 * **Round-down** always rounds downward.
 * **Round-up** always rounds upward.

@@ -22,6 +22,21 @@ The C standard says these `typedef`s *must* be defined if they can be satisfied.
 
 %%ANKI
 Cloze
+The {`<stdint.h>`} header file contains {fixed width data integral types}.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1707835869728-->
+END%%
+
+%%ANKI
+Basic
+Which header file contains `INT32_MAX`?
+Back: `<stdint.h>`
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1708615249870-->
+END%%
+
+%%ANKI
+Cloze
 The {`<stdint.h>`} library contains {exact-width integer types}.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1727551341572-->
@@ -275,6 +290,7 @@ END%%
 
 ## Bibliography
 
+* Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 * Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 * Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).

@@ -400,7 +400,485 @@ Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://i
 <!--ID: 1759891570252-->
 END%%
 
+## Purity
+
+### Stateless
+
+A function `f` is said to be **stateless** if every definition of an object of [[storage#Static|static]] or [[storage#Thread|thread]] storage duration in `f` (or in a function called by `f`) is `const` and not `volatile`.
+
+%%ANKI
+Basic
+What does it mean for function `f` to be stateless?
+Back: Every static/thread object defined by `f` (or a function called by `f`) is `const` and not `volatile`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760258420276-->
+END%%
+
+%%ANKI
+Basic
+What type qualifier(s) are of concern when determining a function's statelessness?
+Back: `const` and `volatile`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760258420285-->
+END%%
+
+%%ANKI
+Basic
+What storage duration(s) are of concern when determining a function's statelessness?
+Back: Static and thread.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760258420289-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` stateless? Why?
+```c
+void foo() {
+  int a = 2;
+}
+```
+Back: Yes. `a` has neither static nor thread storage duration.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760258420293-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` stateless? Why?
+```c
+void foo() {
+  static int a = 2;
+}
+```
+Back: No. `a` has static storage duration but is not `const`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760258420296-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` stateless? Why?
+```c
+void foo() {
+  static const int a = 2;
+}
+```
+Back: Yes. `a` has static storage duration and is declared `const`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760258420300-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` stateless? Why?
+```c
+void foo() {
+  static volatile int a = 2;
+}
+```
+Back: No. `a` has static storage duration and a `volatile` qualifier.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760258420303-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` stateless? Why?
+```c
+void bar() {
+  static int a = 2;
+}
+
+void foo() {
+  int a = 1;
+  bar();
+}
+```
+Back: No. `foo` calls `bar` which defines a non-`const` object with static storage duration.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760258420307-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` stateless? Why?
+```c
+static int a = 1;
+
+void foo() {
+  a += 1;
+}
+```
+Back: Yes. The definition of `a` is not found in `foo`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760258420310-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` stateless? Why?
+```c
+void foo() {
+  static thread_local int a = 2;
+}
+```
+Back: No. `a` has thread storage duration but is not `const`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760258420313-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` stateless? Why?
+```c
+thread_local int a = 1;
+
+void foo() {
+  a += 1;
+}
+```
+Back: Yes. The definition of `a` is not found in `foo`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760258420317-->
+END%%
+
+%%ANKI
+Basic
+Does reading from global state preclude a function from being stateless?
+Back: No.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760262581297-->
+END%%
+
+%%ANKI
+Basic
+Does writing to global state preclude a function from being stateless?
+Back: No.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760262581306-->
+END%%
+
+### Independent
+
+A function `f` is **independent** if every call to `f` during a program execution sees the same value for global objects. Additionally, access of an object through a pointer parameter is always done through the same parameter.
+
+%%ANKI
+Basic
+Function `f` has no parameters. What does it mean for `f` to be independent?
+Back: Every call to `f` would see the same values for any global objects.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760266045197-->
+END%%
+
+%%ANKI
+Basic
+Assume a program with no global state. What does it mean for function `f` to be independent?
+Back: Objects are accessed through a unique pointer parameter and always yields the same value.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760266045204-->
+END%%
+
+%%ANKI
+Basic
+What type of parameters are independent functions concerned with?
+Back: Pointer parameters.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760266045207-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` independent? Why?
+```c
+void foo(void) {}
+```
+Back: Yes. `foo` references no global objects and has no pointer parameters.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760266045213-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` independent? Why?
+```c
+int a = 1;
+
+int foo(void) {
+  return ++a;
+};
+```
+Back: No. Not every call to `foo` would observe the same value for `a`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760266045217-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` independent? Why?
+```c
+int a = 1;
+
+int foo(void) {
+  int b = a;
+  return b++;
+}
+```
+Back: Yes. Every call to `foo` would observe the same value for `a`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760266045221-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` independent? Why?
+```c
+int foo(int *x) {
+  return x + 1;
+}
+```
+Back: Yes since `foo` does not change the state of `*x`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760266045225-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` independent? Why?
+```c
+int foo(int *x, int *y) {
+  return x + y;
+}
+```
+Back: Indeterminate. The same object could be accessed through `x` or `y`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760266045229-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` independent? Why?
+```c
+int foo(int x[restrict], int y[restrict]) {
+  return x + y;
+}
+```
+Back: Indeterminate. The same object could be accessed through `x` or `y`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760266045233-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` independent? Why?
+```c
+int foo(int *x, double *y) {
+  return x + y;
+}
+```
+Back: Yes. Strict aliasing ensures the same object could not be accessed through `x` and `y`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760266045236-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` independent? Why?
+```c
+int foo(int *x) {
+  *x += 1;
+}
+```
+Back: No. `foo` changes the value of `*x`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760266045240-->
+END%%
+
+### Effectless
+
+A function `f` is **effectless** if a call to `f` only modifies non-local state through pointer parameters. Additionally, access of an object through a pointer parameter is always done through the same parameter.
+
+%%ANKI
+Basic
+Function `f` has no parameters. What does it mean for `f` to be effectless?
+Back: Calls to `f` cannot change any observable state.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760267276345-->
+END%%
+
+%%ANKI
+Basic
+Assume a program with no global state. What does it mean for function `f` to be effectless?
+Back: Any changes to an object in non-local state that `f` makes are done through a unique pointer parameter.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760267276354-->
+END%%
+
+%%ANKI
+Basic
+What type of parameters are effectless functions concerned with?
+Back: Pointer parameters.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760267276357-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` effectless? Why?
+```c
+int a = 1;
+
+int foo(void) {
+  return ++a;
+};
+```
+Back: No. Changes to `a` are not done through a pointer parameter.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760267276361-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` effectless? Why?
+```c
+int a = 1;
+
+int foo(void) {
+  int b = a;
+  return b++;
+}
+```
+Back: Yes. No observable changes to global state are performed.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760267276364-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` effectless? Why?
+```c
+int foo(int *x, int *y) {
+  return x + y;
+}
+```
+Back: Yes. No observable changes to global state are performed.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760267276368-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` effectless? Why?
+```c
+int foo(int x[restrict], int y[restrict]) {
+  *x = *y;
+}
+```
+Back: Indeterminate. The same object could be accessed through `x` or `y`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760267276372-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` effectless? Why?
+```c
+int foo(int *x) {
+  *x += 1;
+}
+```
+Back: Yes. The only observable change made is through a pointer parameter.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760267276375-->
+END%%
+
+### Idempotency
+
+A function `f` is **idempotent** if a call to `f` can be sequenced immediately one after another without changes in the resulting value or observable state of the execution.
+
+%%ANKI
+Basic
+What does it mean for function `f` to be idempotent?
+Back: Calls to `f` can be immediately sequenced without changes in the result or observable state of the execution.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760262581309-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` idempotent? Why?
+```c
+void foo() {
+  static int a = 0;
+  a += 2;
+  return 0;
+}
+```
+Back: Yes. There is no observable change in state.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760262581312-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` idempotent? Why?
+```c
+void foo(int a) {
+  return a + 2;
+}
+```
+Back: Yes. Immediately sequenced evaluations of `foo` give the same result.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760262581315-->
+END%%
+
+
+%%ANKI
+Basic
+Is `foo` idempotent? Why?
+```c
+void foo(int *a) {
+  *a = 2;
+}
+```
+Back: Yes. Immediately sequenced evaluations of `foo` give the same result.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760262581318-->
+END%%
+
+%%ANKI
+Basic
+Is `foo` idempotent? Why?
+```c
+int a = 2;
+
+void foo() {
+  a += 2;
+}
+```
+Back: No. Each call modifies globally visible object `a`.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760262581321-->
+END%%
+
+%%ANKI
+Basic
+Does reading from global state preclude a function from being idempotent?
+Back: No.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760262581324-->
+END%%
+
+%%ANKI
+Basic
+Does writing to global state preclude a function from being idempotent?
+Back: No.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1760262581327-->
+END%%
+
 ## Bibliography
 
 * Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
