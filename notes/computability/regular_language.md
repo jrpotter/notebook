@@ -148,7 +148,9 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1749922267156-->
 END%%
 
-## Determinism
+## Automaton
+
+### Deterministic
 
 A **deterministic finite automaton** (DFA) is a $5$-tuple $\langle Q, \Sigma, \delta, q_0, F \rangle$, where
 
@@ -558,7 +560,7 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1734999643459-->
 END%%
 
-## Nondeterminism
+### Nondeterministic
 
 A **nondeterministic finite automaton** (NFA) is a $5$-tuple $\langle Q, \Sigma, \delta, q_0, F \rangle$, where
 
@@ -933,7 +935,7 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1745374581465-->
 END%%
 
-## Equivalence
+### Equivalence
 
 Two finite automaton are **equivalent** if they recognize the same language. As it turns out, every NFA can be converted to an equivalent DFA.
 
@@ -953,7 +955,7 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1737552610492-->
 END%%
 
-### Epsilon-Closure
+#### Epsilon-Closure
 
 Let $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. Define the **$\epsilon$-closure** of a set of states $A \subseteq Q$ as all states reachable from any state in $A$ along zero or more $\epsilon$-transitions.
 
@@ -1020,7 +1022,7 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1737552610525-->
 END%%
 
-### Power Set Construction
+#### Power Set Construction
 
 The **power set construction** describes the process by which an NFA can be converted into an equivalent DFA:
 
@@ -2118,260 +2120,7 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1744414920397-->
 END%%
 
-## Pumping Lemma
-
-Let $L$ be a regular language. Then there exists a **pumping constant** $p$ where if $s$ is any string in $L$ of length at least $p$, then $s$ can be written as $s = xyz$ such that
-
-1. $xy^iz \in L$ for any integer $i \geq 0$,
-2. $\lvert y \rvert > 0$, and
-3. $\lvert x y \rvert \leq p$.
-
-%%ANKI
-Basic
-What is the pumping lemma for regular languages typically used to prove?
-Back: That a language is not regular.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937511-->
-END%%
-
-%%ANKI
-Basic
-What does the pumping lemma for regular languages presume existence of?
-Back: A regular language.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937518-->
-END%%
-
-%%ANKI
-Cloze
-Let $A$ be a {regular language}. Then there exists a {pumping constant} $p$ where if $s$ is {any string in $A$ of length at least $p$}, then $s$ may be written as {$s = xyz$}, satisfying the following conditions:
-1. {$xy^kz \in A$ for all integers $k \geq 0$},
-2. {$\lvert y \rvert > 0$}, and
-3. {$\lvert xy \rvert \leq p$}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937521-->
-END%%
-
-%%ANKI
-Basic
-Which theorem is typically used to prove a language is *not* regular?
-Back: The pumping lemma.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937524-->
-END%%
-
-%%ANKI
-Basic
-The pumping constant found in the pumping lemma corresponds to what aspect of DFAs?
-Back: The number of states in the DFA.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937527-->
-END%%
-
-%%ANKI
-Cloze
-With respect to the pumping lemma, a {regular language} is to its statement whereas a {DFA} is to its proof.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937530-->
-END%%
-
-%%ANKI
-Cloze
-With respect to the pumping lemma for regular languages, the {pumping constant} is to its statement whereas the {number of states in a DFA} is to its proof.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937533-->
-END%%
-
-%%ANKI
-Basic
-What combinatorial principle is used in the proof of the pumping lemma for regular languages?
-Back: The pigeonhole principle.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937536-->
-END%%
-
-%%ANKI
-Basic
-How is the pigeonhole principle employed in the proof of the pumping lemma?
-Back: If $s$ has length of at least the number of states in a DFA, then at least one state is repeated when processing $s$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937539-->
-END%%
-
-%%ANKI
-Basic
-Suppose string $s$ is accepted by a DFA. How many states are visited by the time $s$ is fully processed?
-Back: $\lvert s \rvert + 1$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937542-->
-END%%
-
-%%ANKI
-Basic
-Suppose string $s$ of length $n$ is accepted by a DFA. How many states are visited by the time $s$ is fully processed?
-Back: $n + 1$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937545-->
-END%%
-
-%%ANKI
-Basic
-Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What does the pumping constant of $L(M)$ correspond to?
-Back: $\lvert Q \rvert$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937548-->
-END%%
-
-%%ANKI
-Basic
-Let $M = \langle Q, \Sigma, \delta, q_1, F \rangle$ be a DFA. Suppose $s = s_1s_2 \cdots s_n \in L(M)$ s.t. $n \geq \lvert Q \rvert$ and $s$ is recognized by the following sequence of states of $M$: $$\langle q_1, q_3, q_{20}, q_9, q_{17}, q_9, q_6, \ldots, q_{35}, q_{13} \rangle.$$
-W.r.t the pumping lemma for regular languages, $s = xyz$. What substring of $s$ is $x$?
-Back: $s_1s_2s_3$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937550-->
-END%%
-
-%%ANKI
-Basic
-Let $M = \langle Q, \Sigma, \delta, q_1, F \rangle$ be a DFA. Suppose $s = s_1s_2 \cdots s_n \in L(M)$ s.t. $n \geq \lvert Q \rvert$ and $s$ is recognized by the following sequence of states of $M$: $$\langle q_1, q_3, q_{20}, q_9, q_{17}, q_9, q_6, \ldots, q_{35}, q_{13} \rangle.$$
-W.r.t the pumping lemma for regular languages, $s = xyz$. What substring of $s$ is $y$?
-Back: $s_4s_5$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937553-->
-END%%
-
-%%ANKI
-Basic
-Let $M = \langle Q, \Sigma, \delta, q_1, F \rangle$ be a DFA. Suppose $s = s_1s_2 \cdots s_n \in L(M)$ s.t. $n \geq \lvert Q \rvert$ and $s$ is recognized by the following sequence of states of $M$: $$\langle q_1, q_3, q_{20}, q_9, q_{17}, q_9, q_6, \ldots, q_{35}, q_{13} \rangle.$$
-W.r.t the pumping lemma for regular languages, $s = xyz$. What substring of $s$ is $z$?
-Back: $s_6s_7 \cdots s_n$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937555-->
-END%%
-
-%%ANKI
-Basic
-In the pumping lemma for regular languages, a string $s$ is decomposed such that $s = xyz$. Which of $x$, $y$, or $z$ can have $0$ length?
-Back: $x$ and $z$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937558-->
-END%%
-
-%%ANKI
-Basic
-In the pumping lemma for regular languages, a string $s$ is decomposed such that $s = xyz$. Which of $x$, $y$, or $z$ must have $> 0$ length?
-Back: Just $y$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937561-->
-END%%
-
-%%ANKI
-Basic
-How is the pumping lemma for regular languages typically visualized?
-Back:
-![[pumping-lemma.png]]
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937563-->
-END%%
-
-%%ANKI
-Basic
-What theorem is the following a visual depiction of?
-![[pumping-lemma.png]]
-Back: The pumping lemma for regular languages.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937566-->
-END%%
-
-%%ANKI
-Basic
-With respect to regular languages, what does it mean that a string can be "pumped"?
-Back: A string contains a substring that can be repeated any number of times with the resulting string remaining in the language.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1744945937569-->
-END%%
-
-%%ANKI
-Basic
-Is the language $\{0^n1^n \mid n \geq 0\}$ regular?
-Back: No.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745173738881-->
-END%%
-
-%%ANKI
-Basic
-When using the pumping lemma to prove $\{0^n1^n \mid n \geq 0\}$ isn't regular, what three cases are "pumped" to prove a contradiction?
-Back: A string of $0$s, a string of $1$s, and a string of both $0$s and $1$s.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745628822108-->
-END%%
-
-%%ANKI
-Basic
-What is the general strategy for proving e.g. $A = \{0^n1^n \mid n \geq 0\}$ is not a regular language?
-Back: Assume $A$ is regular. Use the pumping lemma to show a contradiction.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745173738890-->
-END%%
-
-%%ANKI
-Basic
-What property of DFAs does the pumping lemma exploit?
-Back: Its finiteness.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745625798172-->
-END%%
-
-%%ANKI
-Basic
-In the pumping lemma for regular languages, what constraints are set on the pumping constant?
-Back: It must be a positive integer.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745628822117-->
-END%%
-
-%%ANKI
-Basic
-Why must the pumping constant for regular languages be positive?
-Back: There is no valid DFA consisting of $0$ states.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745628822121-->
-END%%
-
-%%ANKI
-Basic
-Why must the pumping constant for regular languages be an integer?
-Back: There is no valid DFA consisting of a non-integral number of states.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745628822125-->
-END%%
-
-%%ANKI
-Basic
-The pumping lemma for regular languages allows writing strings $s$ of length at least the pumping constant $p$ as $s = xyz$. What integral range does $\lvert x \rvert$ fall in?
-Back: $0 \leq \lvert x \rvert < p$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745629741104-->
-END%%
-
-%%ANKI
-Basic
-The pumping lemma for regular languages allows writing strings $s$ of length at least the pumping constant $p$ as $s = xyz$. What integral range does $\lvert y \rvert$ fall in?
-Back: $0 < \lvert y \rvert \leq p$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745629741112-->
-END%%
-
-%%ANKI
-Basic
-The pumping lemma for regular languages allows writing strings $s$ of length at least the pumping constant $p$ as $s = xyz$. What integral range does $\lvert z \rvert$ fall in?
-Back: $0 \leq \lvert z \rvert < \lvert s \rvert$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1745629741115-->
-END%%
-
-## EREs
+### Extended
 
 The following ERE (**E**xtended **R**egular **E**xpression) operators were defined to achieve consistency between programs like `grep`, `sed`, and `awk`. In POSIX, regexps are greedy.
 
@@ -2646,7 +2395,7 @@ Tags: os::linux
 <!--ID: 1707050923713-->
 END%%
 
-### Character Classes
+#### Character Classes
 
 Notation for describing a class of characters specific to a given locale/character set.
 
@@ -2717,6 +2466,267 @@ Back: It is neither printable nor visible.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 Tags: os::linux
 <!--ID: 1707050923740-->
+END%%
+
+## Pumping Lemma
+
+Let $L$ be a regular language. Then there exists a **pumping constant** $p$ where, if $s$ is any string in $L$ of length at least $p$, then $s$ can be written as $s = xyz$ such that
+
+1. $xy^iz \in L$ for any integer $i \geq 0$,
+2. $\lvert y \rvert > 0$, and
+3. $\lvert x y \rvert \leq p$.
+
+%%ANKI
+Basic
+The pumping lemma for regular languages divides a string into how many parts?
+Back: Three.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1760644262599-->
+END%%
+
+%%ANKI
+Basic
+What is the pumping lemma for regular languages typically used to prove?
+Back: That a language is not regular.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937511-->
+END%%
+
+%%ANKI
+Basic
+What does the pumping lemma for regular languages presume existence of?
+Back: A regular language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937518-->
+END%%
+
+%%ANKI
+Cloze
+Let $A$ be a {regular language}. Then there exists a {pumping constant} $p$ where if $s$ is {any string in $A$ of length at least $p$}, then $s$ may be written as {$s = xyz$}, satisfying the following conditions:
+1. {$xy^kz \in A$ for all integers $k \geq 0$},
+2. {$\lvert y \rvert > 0$}, and
+3. {$\lvert xy \rvert \leq p$}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937521-->
+END%%
+
+%%ANKI
+Basic
+Which theorem is typically used to prove a language is *not* regular?
+Back: The pumping lemma.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937524-->
+END%%
+
+%%ANKI
+Basic
+The pumping constant found in the pumping lemma corresponds to what aspect of DFAs?
+Back: The number of states in the DFA.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937527-->
+END%%
+
+%%ANKI
+Cloze
+With respect to the pumping lemma, a {regular language} is to its statement whereas a {DFA} is to its proof.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937530-->
+END%%
+
+%%ANKI
+Cloze
+With respect to the pumping lemma for regular languages, the {pumping constant} is to its statement whereas the {number of states in a DFA} is to its proof.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937533-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial principle is used in the proof of the pumping lemma for regular languages?
+Back: The pigeonhole principle.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937536-->
+END%%
+
+%%ANKI
+Basic
+How is the pigeonhole principle employed in the proof of the pumping lemma?
+Back: If $s$ has length of at least the number of states in a DFA, then at least one state is repeated when processing $s$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937539-->
+END%%
+
+%%ANKI
+Basic
+Suppose string $s$ is accepted by a DFA. How many states are visited by the time $s$ is fully processed?
+Back: $\lvert s \rvert + 1$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937542-->
+END%%
+
+%%ANKI
+Basic
+Suppose string $s$ of length $n$ is accepted by a DFA. How many states are visited by the time $s$ is fully processed?
+Back: $n + 1$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937545-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be a DFA. What does the pumping constant of $L(M)$ correspond to?
+Back: $\lvert Q \rvert$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937548-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_1, F \rangle$ be a DFA. Suppose $s = s_1s_2 \cdots s_n \in L(M)$ s.t. $n \geq \lvert Q \rvert$ and $s$ is recognized by the following sequence of states of $M$: $$\langle q_1, q_3, q_{20}, q_9, q_{17}, q_9, q_6, \ldots, q_{35}, q_{13} \rangle.$$
+W.r.t the pumping lemma for regular languages, $s = xyz$. What substring of $s$ is $x$?
+Back: $s_1s_2s_3$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937550-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_1, F \rangle$ be a DFA. Suppose $s = s_1s_2 \cdots s_n \in L(M)$ s.t. $n \geq \lvert Q \rvert$ and $s$ is recognized by the following sequence of states of $M$: $$\langle q_1, q_3, q_{20}, q_9, q_{17}, q_9, q_6, \ldots, q_{35}, q_{13} \rangle.$$
+W.r.t the pumping lemma for regular languages, $s = xyz$. What substring of $s$ is $y$?
+Back: $s_4s_5$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937553-->
+END%%
+
+%%ANKI
+Basic
+Let $M = \langle Q, \Sigma, \delta, q_1, F \rangle$ be a DFA. Suppose $s = s_1s_2 \cdots s_n \in L(M)$ s.t. $n \geq \lvert Q \rvert$ and $s$ is recognized by the following sequence of states of $M$: $$\langle q_1, q_3, q_{20}, q_9, q_{17}, q_9, q_6, \ldots, q_{35}, q_{13} \rangle.$$
+W.r.t the pumping lemma for regular languages, $s = xyz$. What substring of $s$ is $z$?
+Back: $s_6s_7 \cdots s_n$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937555-->
+END%%
+
+%%ANKI
+Basic
+In the pumping lemma for regular languages, a string $s$ is decomposed such that $s = xyz$. Which of $x$, $y$, or $z$ can have $0$ length?
+Back: $x$ and $z$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937558-->
+END%%
+
+%%ANKI
+Basic
+In the pumping lemma for regular languages, a string $s$ is decomposed such that $s = xyz$. Which of $x$, $y$, or $z$ must have $> 0$ length?
+Back: Just $y$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937561-->
+END%%
+
+%%ANKI
+Basic
+How is the pumping lemma for regular languages typically visualized?
+Back:
+![[pumping-lemma-regular.png]]
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937563-->
+END%%
+
+%%ANKI
+Basic
+What theorem is the following a visual depiction of?
+![[pumping-lemma-regular.png]]
+Back: The pumping lemma for regular languages.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937566-->
+END%%
+
+%%ANKI
+Basic
+With respect to regular languages, what does it mean that a string can be "pumped"?
+Back: A string contains a substring that can be repeated any number of times with the resulting string remaining in the language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1744945937569-->
+END%%
+
+%%ANKI
+Basic
+Is the language $\{0^n1^n \mid n \geq 0\}$ regular?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745173738881-->
+END%%
+
+%%ANKI
+Basic
+What is the general strategy for proving e.g. $A = \{0^n1^n \mid n \geq 0\}$ is not a regular language?
+Back: Assume $A$ is regular. Use the pumping lemma to show a contradiction.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745173738890-->
+END%%
+
+%%ANKI
+Basic
+What property of DFAs does the pumping lemma exploit?
+Back: Its finite number of states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745625798172-->
+END%%
+
+%%ANKI
+Basic
+In the pumping lemma for regular languages, what constraints are set on the pumping constant?
+Back: It must be a positive integer.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745628822117-->
+END%%
+
+%%ANKI
+Basic
+Why must the pumping constant for regular languages be positive?
+Back: There is no valid DFA consisting of $0$ states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745628822121-->
+END%%
+
+%%ANKI
+Basic
+Why must the pumping constant for regular languages be an integer?
+Back: There is no valid DFA consisting of a non-integral number of states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745628822125-->
+END%%
+
+%%ANKI
+Basic
+How is the pumping constant for a regular language chosen?
+Back: It equals the number of states in the corresponding DFA.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1760644262606-->
+END%%
+
+%%ANKI
+Basic
+The pumping lemma for regular languages allows writing strings $s$ of length at least the pumping constant $p$ as $s = xyz$. What integral range does $\lvert x \rvert$ fall in?
+Back: $0 \leq \lvert x \rvert < p$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745629741104-->
+END%%
+
+%%ANKI
+Basic
+The pumping lemma for regular languages allows writing strings $s$ of length at least the pumping constant $p$ as $s = xyz$. What integral range does $\lvert y \rvert$ fall in?
+Back: $0 < \lvert y \rvert \leq p$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745629741112-->
+END%%
+
+%%ANKI
+Basic
+The pumping lemma for regular languages allows writing strings $s$ of length at least the pumping constant $p$ as $s = xyz$. What integral range does $\lvert z \rvert$ fall in?
+Back: $0 \leq \lvert z \rvert < \lvert s \rvert$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1745629741115-->
 END%%
 
 ## Bibliography

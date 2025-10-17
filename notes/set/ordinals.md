@@ -95,7 +95,7 @@ END%%
 
 %%ANKI
 Basic
-How was the "$\in$/epsilon" part of term "$\in$-image" derived?
+How was the "$\in$" part of term "$\in$-image" derived?
 Back: The membership relation ($\in$) is a well ordering of an $\in$-image.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1756129683952-->
@@ -644,34 +644,18 @@ END%%
 
 %%ANKI
 Basic
-What is the smallest ordinal number?
-Back: $0$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1759031903257-->
-END%%
-
-%%ANKI
-Basic
-What is the smallest ordinal number that is not the successor of another?
-Back: $0$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1759031903262-->
-END%%
-
-%%ANKI
-Basic
-What is the smallest nonzero ordinal number that is not the successor of another?
-Back: $\omega$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1759031903265-->
-END%%
-
-%%ANKI
-Basic
 Let $R$ be a well ordering on $A$. Why isn't the following considered proof that $A$ is countable? $$\begin{align*} f(\min A) & = 0 \\ f(\min (A - \min A)) & = 1 \\ & \ldots \end{align*}$$
 Back: The $\ldots$ might be abstracting over an uncountable number of steps.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1759158146894-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal number. What does $\mathop{\text{seg}}_\in\alpha$ evaluate to?
+Back: $\alpha$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760533025943-->
 END%%
 
 ### Burali-Forti Theorem
@@ -729,13 +713,13 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1757849086357-->
 END%%
 
-### Hartog's Theorem
+### Hartogs's Theorem
 
-For any set $A$, there is an ordinal not dominated by $A$. The **Hartogs number** of $A$ is the least ordinal $\alpha$ such that $\alpha \not\preceq A$.
+For any set $A$, there is an ordinal not dominated by $A$. The **Hartogs number** of $A$ is the least ordinal $\alpha$ such that $\alpha \not\preceq A$. This ordinal is always a [[cardinality|cardinal]].
 
 %%ANKI
 Basic
-What does Hartog's theorem state?
+What does Hartogs's theorem state?
 Back: For any set $A$, there is an ordinal not dominated by $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1760403065319-->
@@ -747,7 +731,7 @@ What name is given to the following theorem?
 
 > For any set $A$, there is an ordinal not dominated by $A$.
 
-Back: Hartog's theorem.
+Back: Hartogs's theorem.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1760403065328-->
 END%%
@@ -755,18 +739,18 @@ END%%
 %%ANKI
 Basic
 Which theorem "assures an adequate supply of ordinal numbers"?
-Back: Hartog's theorem.
+Back: Hartogs's theorem.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1760403065332-->
 END%%
 
 %%ANKI
 Basic
-What is wrong with the following formulation of Hartog's theorem?
+What is wrong with the following formulation of Hartogs's theorem?
 
 > For any set $A$, there is an ordinal $\alpha$ such that $A \prec \alpha$.
 
-Back: Hartog's theorem states there exists an ordinal $\alpha$ such that $\alpha \not\preceq A$.
+Back: Hartogs's theorem states there exists an ordinal $\alpha$ such that $\alpha \not\preceq A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1760403065335-->
 END%%
@@ -782,7 +766,7 @@ END%%
 %%ANKI
 Basic
 Given some arbitrary set $A$, *why* must there exist a Hartogs number of $A$?
-Back: The ordinals are well-ordered so Hartog's theorem asserts a least ordinal's existence.
+Back: The ordinals are well-ordered so Hartogs's theorem asserts a least ordinal's existence.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1760403065342-->
 END%%
@@ -803,6 +787,205 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1760403065352-->
 END%%
 
+%%ANKI
+Basic
+Let $A$ be a set. How is $A$'s Hartogs number $\alpha$ defined in set-builder notation?
+Back: $\alpha = \{ \beta \mid \beta \text{ is an ordinal} \land \beta \preceq A \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760479106195-->
+END%%
+
+%%ANKI
+Basic
+Does Hartogs's theorem depend on the axiom of choice?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760479106205-->
+END%%
+
+%%ANKI
+Cloze
+The Hartogs number of set $A$ is the set containing members $x$ satisfying:
+1. {$x$ is an ordinal number} and
+2. {$x$ is dominated by $A$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760479106209-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. In set-builder notation, what is the smallest *ordinal* greater than $\mathop{\text{card}}A$?
+Back: $\alpha = \{ \beta \mid \beta \text{ is an ordinal} \land \beta \preceq A \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760533025952-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. In set-builder notation, what is the smallest *cardinal* greater than $\mathop{\text{card}}A$?
+Back: $\alpha = \{ \beta \mid \beta \text{ is an ordinal} \land \beta \preceq A \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760533025955-->
+END%%
+
+%%ANKI
+Cloze
+Every Hartogs number is, most specifically, a {cardinal} number.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760533025958-->
+END%%
+
+### Initial Ordinals
+
+An **initial ordinal** is an ordinal number that is not equinumerous to any smaller ordinal number. The initial numbers and [[cardinality|cardinal numbers]] are therefore exactly the same thing.
+
+%%ANKI
+Basic
+What is an initial ordinal?
+Back: An ordinal that is not equinumerous to a smaller ordinal.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296055-->
+END%%
+
+%%ANKI
+Basic
+The cardinal numbers are equivalent to what class of ordinal numbers?
+Back: The initial ordinal numbers.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296064-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \omega$. Is $n$ an initial ordinal? If not, why?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296066-->
+END%%
+
+%%ANKI
+Basic
+Is $\omega$ an initial ordinal? If not, why?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296070-->
+END%%
+
+%%ANKI
+Basic
+Is $\omega + 1$ an initial ordinal? If not, why?
+Back: No. $\omega + 1$ is equinumerous to $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296073-->
+END%%
+
+%%ANKI
+Basic
+Is $\omega + \omega$ an initial ordinal? If not, why?
+Back: No. $\omega + \omega$ is equinumerous to $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296076-->
+END%%
+
+### Limit Ordinals
+
+A **limit ordinal** is an ordinal number that is neither zero nor a successor ordinal.
+
+%%ANKI
+Basic
+What is the smallest ordinal number?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759031903257-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest ordinal number that is not the successor of another?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759031903262-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest nonzero ordinal number that is not the successor of another?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1759031903265-->
+END%%
+
+%%ANKI
+Basic
+What is a limit ordinal?
+Back: A non-zero ordinal that is not the successor of another ordinal.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760486821352-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest limit ordinal?
+Back: $\omega$
+Reference: _Wikipedia_. “Limit ordinal.” February 5, 2025. [https://en.wikipedia.org/w/index.php?title=Limit_ordinal](https://en.wikipedia.org/w/index.php?title=Limit_ordinal&oldid=1274159075).
+<!--ID: 1760486821364-->
+END%%
+
+%%ANKI
+Basic
+What is the next limit ordinal greater than $\omega$?
+Back: $\omega + \omega$
+Reference: _Wikipedia_. “Limit ordinal.” February 5, 2025. [https://en.wikipedia.org/w/index.php?title=Limit_ordinal](https://en.wikipedia.org/w/index.php?title=Limit_ordinal&oldid=1274159075).
+<!--ID: 1760486821370-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \omega$. Is $n$ a limit ordinal? If not, why?
+Back: No. $n$ is either $0$ or the successor of some finite number.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296079-->
+END%%
+
+%%ANKI
+Basic
+Is $\omega$ a limit ordinal? If not, why?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296084-->
+END%%
+
+%%ANKI
+Basic
+Is $\omega + 1$ a limit ordinal? If not, why?
+Back: No. $\omega + 1$ is the successor to $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296089-->
+END%%
+
+%%ANKI
+Basic
+Is $\omega + \omega$ a limit ordinal? If not, why?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296093-->
+END%%
+
+%%ANKI
+Cloze
+Cardinal number {$\aleph_0$} is to ordinal number {$\omega$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498683996-->
+END%%
+
+%%ANKI
+Cloze
+Cardinal number {$\aleph_1$} is to ordinal number {$\omega_1$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498684006-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+* _Wikipedia_. “Limit ordinal.” February 5, 2025. [https://en.wikipedia.org/w/index.php?title=Limit_ordinal](https://en.wikipedia.org/w/index.php?title=Limit_ordinal&oldid=1274159075).

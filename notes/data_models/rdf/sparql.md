@@ -227,7 +227,7 @@ What is the following query expected to return?
 SELECT ?a
 WHERE { ?a :hasParent+ :Joe . }
 ```
-Back: Joe's descendants.
+Back: Joe's proper descendants.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1736348906662-->
 END%%

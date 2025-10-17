@@ -12,8 +12,8 @@ This axiom assumes the existence of some choice function capable of selecting so
 
 %%ANKI
 Basic
-What is AoC an acronym for?
-Back: The **A**xiom **o**f **C**hoice.
+What is AC an acronym for?
+Back: The **A**xiom of **C**hoice.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719681913526-->
 END%%
@@ -36,7 +36,7 @@ END%%
 
 %%ANKI
 Basic
-What is the fundamental reason AoC is considered controversial?
+What is the fundamental reason AC is considered controversial?
 Back: It is non-constructive: there is no procedure we can follow to decide which element to choose.
 Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
 <!--ID: 1742768674003-->
@@ -44,7 +44,7 @@ END%%
 
 %%ANKI
 Basic
-In Russell's analogy, why is AoC unnecessary to pick left shoes from an infinite set of shoe pairs?
+In Russell's analogy, why is AC unnecessary to pick left shoes from an infinite set of shoe pairs?
 Back: The choice function can be defined directly, i.e. as "pick left shoe".
 Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
 <!--ID: 1720964209620-->
@@ -52,7 +52,7 @@ END%%
 
 %%ANKI
 Basic
-In Russell's analogy, why is AoC necessary to pick socks from an infinite set of sock pairs?
+In Russell's analogy, why is AC necessary to pick socks from an infinite set of sock pairs?
 Back: There is no choice function to choose/prefer one sock from/over the other.
 Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
 <!--ID: 1720964209624-->
@@ -60,7 +60,7 @@ END%%
 
 %%ANKI
 Basic
-What objects does Russell's analogy use when explaining AoC?
+What objects does Russell's analogy use when explaining AC?
 Back: Pairs of shoes vs. pairs of (indistinguishable) socks.
 Reference: “Axiom of Choice,” in _Wikipedia_, July 8, 2024, [https://en.wikipedia.org/w/index.php?title=Axiom_of_choice](https://en.wikipedia.org/w/index.php?title=Axiom_of_choice&oldid=1233242262).
 <!--ID: 1720964209627-->
@@ -68,7 +68,7 @@ END%%
 
 %%ANKI
 Basic
-Does the following require AoC? Why or why not?
+Does the following require AC? Why or why not?
 
 > For any set $A \neq \varnothing$, there exists some $y \in A$.
 
@@ -79,7 +79,7 @@ END%%
 
 %%ANKI
 Basic
-Does the following require AoC? Why or why not?
+Does the following require AC? Why or why not?
 
 > For any set $A \neq \varnothing$, $\exists y \in A$. Then $\{y\} \subseteq A$.
 
@@ -90,7 +90,7 @@ END%%
 
 %%ANKI
 Basic
-Does the following require AoC? Why or why not?
+Does the following require AC? Why or why not?
 
 > Let $R$ be a relation. For any $x \in \mathop{\text{dom}}R$, $\exists y$ such that $xRy$. Then $\{y\} \subseteq [x]_R$.
 
@@ -101,7 +101,7 @@ END%%
 
 %%ANKI
 Basic
-Does the following require AoC? Why or why not?
+Does the following require AC? Why or why not?
 
 > Let $R$ be a relation. For any $x \in \mathop{\text{dom}}R$, $\exists y_x$ such that $xRy_x$. Define $S = \{y_x \mid x \in \mathop{\text{dom}} R \}$.
 
@@ -112,7 +112,7 @@ END%%
 
 %%ANKI
 Basic
-Does the following require AoC? Why or why not?
+Does the following require AC? Why or why not?
 
 > Any infinite subset of $\omega$ is equinumerous to $\omega$.
 
@@ -123,11 +123,11 @@ END%%
 
 %%ANKI
 Basic
-Does the following require AoC? Why or why not?
+Does the following require AC? Why or why not?
 
 > $\aleph_0$ is the smallest infinite cardinal.
 
-Back: Yes. A choice function provided by AoC is used to prove $\omega$ is dominated by any infinite set.
+Back: Yes. A choice function provided by AC is used to prove $\omega$ is dominated by any infinite set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1745076132163-->
 END%%
@@ -151,7 +151,7 @@ END%%
 %%ANKI
 Basic
 Do infinite sets have a choice function?
-Back: Without AoC, not necessarily.
+Back: Without AC, not necessarily.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744898357002-->
 END%%
@@ -188,7 +188,7 @@ For any relation $R$ there exists a function $F \subseteq R$ with $\mathop{\text
 
 %%ANKI
 Basic
-What does the relation form of AoC state?
+What does the relation form of AC state?
 Back: For any relation $R$ there exists a function $F \subseteq R$ with $\mathop{\text{dom}}F = \mathop{\text{dom}}R$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719681913527-->
@@ -196,7 +196,7 @@ END%%
 
 %%ANKI
 Basic
-The relation form of AoC asserts the existence of what mathematical object?
+The relation form of AC asserts the existence of what mathematical object?
 Back: A function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720964209631-->
@@ -204,7 +204,7 @@ END%%
 
 %%ANKI
 Basic
-Given relation $R$, the relation form of AoC asserts existence of function $F$. How does $F$ relate to $R$?
+Given relation $R$, the relation form of AC asserts existence of function $F$. How does $F$ relate to $R$?
 Back: $F \subseteq R$ and $\mathop{\text{dom}} F = \mathop{\text{dom}} R$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720964209636-->
@@ -212,7 +212,7 @@ END%%
 
 %%ANKI
 Basic
-Given relation $R$, the relation form of AoC asserts existence of function $F$. What does $\mathop{\text{dom}}F$ evaluate to?
+Given relation $R$, the relation form of AC asserts existence of function $F$. What does $\mathop{\text{dom}}F$ evaluate to?
 Back: $\mathop{\text{dom}} R$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1743376072883-->
@@ -220,7 +220,7 @@ END%%
 
 %%ANKI
 Cloze
-For any relation $R$, the relation form of AoC asserts existence of function $F$ satisfying:
+For any relation $R$, the relation form of AC asserts existence of function $F$ satisfying:
 1. {$F \subseteq R$}
 2. {$\mathop{\text{dom} }F = \mathop{\text{dom} }R$}
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -233,7 +233,7 @@ For any set $I$ and function $H$ with domain $I$, if $H(i) \neq \varnothing$ for
 
 %%ANKI
 Basic
-What does the multiplicative form of AoC state?
+What does the multiplicative form of AC state?
 Back: For any set $I$ and function $H$ with domain $I$, if $H(i) \neq \varnothing$ for all $i \in I$, then $\bigtimes_{i \in I} H(i) \neq \varnothing$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720964209640-->
@@ -241,7 +241,7 @@ END%%
 
 %%ANKI
 Basic
-What is the antecedent used in the multiplicative form of AoC?
+What is the antecedent used in the multiplicative form of AC?
 Back: $H(i) \neq \varnothing$ for all $i \in I$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720964209644-->
@@ -249,7 +249,7 @@ END%%
 
 %%ANKI
 Basic
-What is the consequent used in the multiplicative form of AoC?
+What is the consequent used in the multiplicative form of AC?
 Back: $\bigtimes_{i \in I} H(i) \neq \varnothing$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720964209648-->
@@ -265,7 +265,7 @@ END%%
 
 %%ANKI
 Basic
-The multiplicative form of AoC asserts the existence of what mathematical object?
+The multiplicative form of AC asserts the existence of what mathematical object?
 Back: A function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1743376072889-->
@@ -285,7 +285,7 @@ For any set $A$, there exists a function $F$ with $\mathop{\text{dom}}(F) = \mat
 
 %%ANKI
 Basic
-What does the covering form of AoC state?
+What does the covering form of AC state?
 Back: For any set $A$, there exists a function $F \colon \mathscr{P}(A) - \{\varnothing\}$ such that $F(B) \in B$ for every $B \in \mathop{\text{dom}} F$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1743376072892-->
@@ -293,7 +293,7 @@ END%%
 
 %%ANKI
 Basic
-The covering form of AoC asserts the existence of what mathematical object?
+The covering form of AC asserts the existence of what mathematical object?
 Back: A function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1743376072893-->
@@ -301,7 +301,7 @@ END%%
 
 %%ANKI
 Basic
-For any set $A$, the covering form of AoC asserts existence of function $F$. What does $\mathop{\text{dom}}F$ evaluate to?
+For any set $A$, the covering form of AC asserts existence of function $F$. What does $\mathop{\text{dom}}F$ evaluate to?
 Back: $\mathscr{P}(A) - \{\varnothing\}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1743376072894-->
@@ -309,7 +309,7 @@ END%%
 
 %%ANKI
 Basic
-For any set $A$, the covering form of AoC asserts existence of function $F$. What property does $F$ satisfy?
+For any set $A$, the covering form of AC asserts existence of function $F$. What property does $F$ satisfy?
 Back: $F(B) \in B$ for all $B \in \mathscr{P}(A) - \{\varnothing\}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1743376072895-->
@@ -317,7 +317,7 @@ END%%
 
 %%ANKI
 Cloze
-For any set $A$, the covering form of AoC asserts existence of function $F$ satisfying:
+For any set $A$, the covering form of AC asserts existence of function $F$ satisfying:
 1. {$\mathop{\text{dom} }F = \mathscr{P}(A) - \{\varnothing\}$}
 2. {$\forall B \in \mathop{\text{dom} } F, F(B) \in B$}
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
@@ -330,14 +330,15 @@ Let $P$ be a [[equiv-rel#Partitions|partition]] of set $A$. Then there exists a 
 
 %%ANKI
 Basic
-What does the covering form of AoC state?
+What does the partition form of AC state?
 Back: Let $P$ be a partition of set $A$. Then there exists a set $B$ containing exactly one element from each member of $P$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296100-->
 END%%
 
 %%ANKI
 Basic
-The partition form of AoC asserts the existence of what mathematical object?
+The partition form of AC asserts the existence of what mathematical object?
 Back: A set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1743376072897-->
@@ -345,7 +346,7 @@ END%%
 
 %%ANKI
 Basic
-Let $P$ be a partition of set $A$. What does the partition form of AoC assert existence of?
+Let $P$ be a partition of set $A$. What does the partition form of AC assert existence of?
 Back: A set $B$ containing exactly one member from each member of $P$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1743376072898-->
@@ -353,7 +354,7 @@ END%%
 
 %%ANKI
 Cloze
-Let $P$ be a partition of set $A$. The partition form of AoC asserts existence of set $C$ satisfying:
+Let $P$ be a partition of set $A$. The partition form of AC asserts existence of set $C$ satisfying:
 1. {$\forall B \in P, \exists!\, b \in B, b \in C$}
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1743376072899-->
@@ -381,7 +382,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to AoC, what does cardinal comparability state?
+With respect to AC, what does cardinal comparability state?
 Back: For any two cardinal numbers $\kappa$ and $\lambda$, either $\kappa \leq \lambda$ or $\lambda \leq \kappa$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744555922893-->
@@ -389,7 +390,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to AoC, how is cardinal comparability expressed in terms of sets?
+With respect to AC, how is cardinal comparability expressed in terms of sets?
 Back: For any sets $C$ and $D$, either $C \preceq D$ or $D \preceq C$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744555922896-->
@@ -405,7 +406,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$, $\lambda$ be cardinal numbers such that $\kappa \not\leq \lambda$. Given AoC, what does this imply?
+Let $\kappa$, $\lambda$ be cardinal numbers such that $\kappa \not\leq \lambda$. Given AC, what does this imply?
 Back: That $\lambda < \kappa$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749847121007-->
@@ -413,8 +414,8 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$, $\lambda$ be cardinal numbers. Given AoC, *why* can we assume $\lambda < \kappa$ if $\kappa \not\leq \lambda$?
-Back: AoC is equivalent to the proposition that either $\kappa \leq \lambda$ or $\lambda \leq \kappa$ holds true.
+Let $\kappa$, $\lambda$ be cardinal numbers. Given AC, *why* can we assume $\lambda < \kappa$ if $\kappa \not\leq \lambda$?
+Back: AC is equivalent to the proposition that either $\kappa \leq \lambda$ or $\lambda \leq \kappa$ holds true.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749847121012-->
 END%%
@@ -505,7 +506,7 @@ END%%
 
 %%ANKI
 Basic
-Which equivalence to AoC involves the concept of chains?
+Which equivalence to AC involves the concept of chains?
 Back: Zorn's lemma.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744126029194-->
@@ -537,7 +538,7 @@ END%%
 
 %%ANKI
 Basic
-When using Zorn's lemma to prove the relation form of AoC, what poset is formed?
+When using Zorn's lemma to prove the relation form of AC, what poset is formed?
 Back: For a relation $R$, $\{f \subseteq R \mid f \text{ is a function} \}$ with ordering relation $\subseteq$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744897010242-->
@@ -599,7 +600,7 @@ Assuming the axiom of choice, it follows that for any infinite cardinal $\kappa$
 
 %%ANKI
 Basic
-Let $\kappa$ be a cardinal number. Assuming AoC, what does $\kappa \cdot \kappa$ simplify to?
+Let $\kappa$ be a cardinal number. Assuming AC, what does $\kappa \cdot \kappa$ simplify to?
 Back: Indeterminate. Depends on whether $\kappa$ is finite or not.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749869956545-->
@@ -607,7 +608,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$ be a finite cardinal number. Assuming AoC, what does $\kappa \cdot \kappa$ simplify to?
+Let $\kappa$ be a finite cardinal number. Assuming AC, what does $\kappa \cdot \kappa$ simplify to?
 Back: N/A. This is the simplest value.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749869956548-->
@@ -615,7 +616,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa \cdot \kappa$ simplify to?
+Let $\kappa$ be an infinite cardinal number. Assuming AC, what does $\kappa \cdot \kappa$ simplify to?
 Back: $\kappa \cdot \kappa = \kappa$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1749869956551-->
@@ -623,7 +624,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$ be a cardinal number. Assuming AoC, what does $\kappa^\kappa$ simplify to?
+Let $\kappa$ be a cardinal number. Assuming AC, what does $\kappa^\kappa$ simplify to?
 Back: Indeterminate.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750170196911-->
@@ -631,7 +632,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa^\kappa$ simplify to?
+Let $\kappa$ be an infinite cardinal number. Assuming AC, what does $\kappa^\kappa$ simplify to?
 Back: $2^\kappa$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750170196923-->
@@ -639,7 +640,7 @@ END%%
 
 %%ANKI
 Cloze
-Let $\kappa$ be an infinite cardinal number. Assuming AoC, the following is used to prove $\kappa^\kappa = 2^\kappa$:
+Let $\kappa$ be an infinite cardinal number. Assuming AC, the following is used to prove $\kappa^\kappa = 2^\kappa$:
 * {$\kappa^\kappa$}
 * {$\leq (2^\kappa)^\kappa$}
 * {$= 2^{\kappa \cdot \kappa}$}
@@ -650,7 +651,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$ be a cardinal number. Assuming AoC, what does $\kappa!$ simplify to?
+Let $\kappa$ be a cardinal number. Assuming AC, what does $\kappa!$ simplify to?
 Back: Indeterminate. Depends if $\kappa$ is infinite or not.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750734043589-->
@@ -658,7 +659,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa!$ simplify to?
+Let $\kappa$ be an infinite cardinal number. Assuming AC, what does $\kappa!$ simplify to?
 Back: $2^\kappa$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750734043592-->
@@ -686,7 +687,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$, $\lambda$ be cardinal numbers. Assuming AoC, what does $\kappa + \lambda$ simplify to?
+Let $\kappa$, $\lambda$ be cardinal numbers. Assuming AC, what does $\kappa + \lambda$ simplify to?
 Back: Indeterminate.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750166835302-->
@@ -694,7 +695,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$, $\lambda$ be cardinal numbers. Assuming AoC, what does $\kappa \cdot \lambda$ simplify to?
+Let $\kappa$, $\lambda$ be cardinal numbers. Assuming AC, what does $\kappa \cdot \lambda$ simplify to?
 Back: Indeterminate.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750166835305-->
@@ -702,7 +703,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa \cdot 0$ simplify to?
+Let $\kappa$ be an infinite cardinal number. Assuming AC, what does $\kappa \cdot 0$ simplify to?
 Back: $0$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750166835308-->
@@ -710,7 +711,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is infinite and $\lambda \neq 0$. Assuming AoC, what does $\kappa \cdot \lambda$ simplify to?
+Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is infinite and $\lambda \neq 0$. Assuming AC, what does $\kappa \cdot \lambda$ simplify to?
 Back: $\mathop{\text{max}}(\kappa, \lambda)$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750166835311-->
@@ -718,7 +719,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is finite and $\lambda \neq 0$. Assuming AoC, what does $\kappa \cdot \lambda$ simplify to?
+Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is finite and $\lambda \neq 0$. Assuming AC, what does $\kappa \cdot \lambda$ simplify to?
 Back: Indeterminate.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750166835314-->
@@ -726,7 +727,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$ be an infinite cardinal number. Assuming AoC, what does $\kappa + 0$ simplify to?
+Let $\kappa$ be an infinite cardinal number. Assuming AC, what does $\kappa + 0$ simplify to?
 Back: $\kappa$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750166835317-->
@@ -734,7 +735,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is finite and $\lambda \neq 0$. Assuming AoC, what does $\kappa + \lambda$ simplify to?
+Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is finite and $\lambda \neq 0$. Assuming AC, what does $\kappa + \lambda$ simplify to?
 Back: Indeterminate.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750166835320-->
@@ -742,7 +743,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is infinite and $\lambda \neq 0$. Assuming AoC, what does $\kappa + \lambda$ simplify to?
+Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is infinite and $\lambda \neq 0$. Assuming AC, what does $\kappa + \lambda$ simplify to?
 Back: $\mathop{\text{max}}(\kappa, \lambda)$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750166835323-->
@@ -758,7 +759,7 @@ END%%
 
 %%ANKI
 Basic
-Which law states the following cardinal number identities under AoC? $$\kappa + \lambda = \kappa \cdot \lambda = \mathop{\text{max}}(\kappa, \lambda)$$
+Which law states the following cardinal number identities under AC? $$\kappa + \lambda = \kappa \cdot \lambda = \mathop{\text{max}}(\kappa, \lambda)$$
 Back: The absorption law of cardinal numbers.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750166835328-->
@@ -782,7 +783,7 @@ END%%
 
 %%ANKI
 Cloze
-Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is infinite and $0 < \lambda \leq \kappa$. Assuming AoC, the following is used to prove the absorption law of addition:
+Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is infinite and $0 < \lambda \leq \kappa$. Assuming AC, the following is used to prove the absorption law of addition:
 * $\kappa$
 * {$\leq \kappa + \lambda$}
 * {$\leq \kappa + \kappa$}
@@ -795,7 +796,7 @@ END%%
 
 %%ANKI
 Cloze
-Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is infinite and $0 < \lambda \leq \kappa$. Assuming AoC, the following is used to prove the absorption law of multiplication:
+Let $\kappa$, $\lambda$ be cardinal numbers s.t. $\kappa$ is infinite and $0 < \lambda \leq \kappa$. Assuming AC, the following is used to prove the absorption law of multiplication:
 * $\kappa$
 * {$\leq \kappa \cdot \lambda$}
 * {$\leq \kappa \cdot \kappa$}
@@ -806,7 +807,7 @@ END%%
 
 %%ANKI
 Basic
-Assuming AoC, what is the cardinality of the set of functions from $\mathbb{R}$ into $\mathbb{R}$?
+Assuming AC, what is the cardinality of the set of functions from $\mathbb{R}$ into $\mathbb{R}$?
 Back: $2^{2^{\aleph_0}}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750380584657-->
@@ -814,7 +815,7 @@ END%%
 
 %%ANKI
 Basic
-Assuming AoC, how is expression $(2^{\aleph_0})^{2^{\aleph_0}}$ simplified?
+Assuming AC, how is expression $(2^{\aleph_0})^{2^{\aleph_0}}$ simplified?
 Back: As $(2^{\aleph_0})^{2^{\aleph_0}} = 2^{\aleph_0 \cdot 2^{\aleph_0}} = 2^{2^{\aleph_0}}$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750380584666-->

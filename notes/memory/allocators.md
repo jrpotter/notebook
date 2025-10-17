@@ -573,7 +573,7 @@ END%%
 
 %%ANKI
 Basic
-Explicit allocators perform what operations on blocks of memory?
+Users of explicit allocators perform what operations on blocks of memory?
 Back: Allocating and freeing.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1757010811210-->
@@ -581,7 +581,7 @@ END%%
 
 %%ANKI
 Basic
-Implicit allocators perform what operations on blocks of memory?
+Users of implicit allocators perform what operations on blocks of memory?
 Back: Allocating.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1757010811212-->

@@ -6,9 +6,166 @@ tags:
   - set
 ---
 
+## Overview
+
+For any set , the **cardinal number** of $A$ (denoted $\mathop{\text{card}}A$), is the least [[ordinals|ordinal]] [[#Equinumerosity|equinumerous]] to $A$. Therefore:
+
+* For any sets $A$ and $B$, $\mathop{\text{card}}A = \mathop{\text{card}}B$ iff $A \approx B$.
+* For a finite set $A$, $\mathop{\text{card}}A$ is the natural number $n$ for which $A \approx n$.
+
+%%ANKI
+Basic
+How is the cardinal number of $A$ defined?
+Back: As the least ordinal that is equinumerous to $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760485279370-->
+END%%
+
+%%ANKI
+Cloze
+{Cardinal} numbers are defined in terms of {ordinal} numbers.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760485279377-->
+END%%
+
+%%ANKI
+Basic
+What conceptually distinguishes the cardinal numbers from the ordinal numbers?
+Back: The former is not concerned with any underlying order.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760485982218-->
+END%%
+
+%%ANKI
+Basic
+How is the cardinal number of set $A$ denoted?
+Back: As $\mathop{\text{card}} A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760088-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is finite. What does $\mathop{\text{card}} A$ evaluate to?
+Back: The unique $n \in \omega$ such that $A \approx n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760091-->
+END%%
+
+%%ANKI
+Basic
+Consider $n \in \omega$. What does $\mathop{\text{card}} n$ evaluate to?
+Back: $n$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760094-->
+END%%
+
+%%ANKI
+Basic
+Suppose $a$, $b$, and $c$ are distinct objects. What does $\mathop{\text{card}} \{a, b, c\}$ evaluate to?
+Back: $3$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760097-->
+END%%
+
+%%ANKI
+Basic
+What does Enderton refer to by the "process called 'counting'"?
+Back: Choosing a one-to-one correspondence between two sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760099-->
+END%%
+
+%%ANKI
+Cloze
+A {cardinal number} is denoted as {$\mathop{\text{card} } A$} for some set $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760102-->
+END%%
+
+%%ANKI
+Basic
+How do cardinal numbers relate to equinumerosity?
+Back: For any sets $A$ and $B$, $\mathop{\text{card}} A = \mathop{\text{card}} B$ iff $A \approx B$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760105-->
+END%%
+
+%%ANKI
+Basic
+How many sets $A$ exist such that $\mathop{\text{card}} A = 0$?
+Back: $1$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315442-->
+END%%
+
+%%ANKI
+Basic
+How many sets $A$ exist such that $\mathop{\text{card}} A = n^+$ for some $n \in \omega$?
+Back: An infinite many.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315447-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \omega$. When is $\{X \mid \mathop{\text{card}} X = n\}$ a set?
+Back: When $n = 0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315450-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \omega$. When is $\{X \mid \mathop{\text{card}} X = n\}$ a class?
+Back: Always.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315453-->
+END%%
+
+%%ANKI
+Basic
+What class can we construct to prove $\{X \mid \mathop{\text{card}} X = 1\}$ is not a set?
+Back: $\bigcup\, \{\{X\} \mid X \text{ is a set} \}$, i.e. the union of all singleton sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315456-->
+END%%
+
+%%ANKI
+Basic
+What is a finite cardinal?
+Back: A cardinal number equal to $\mathop{\text{card}} A$ for some finite set $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315459-->
+END%%
+
+%%ANKI
+Basic
+What is an infinite cardinal?
+Back: A cardinal number equal to $\mathop{\text{card}} A$ for some infinite set $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315461-->
+END%%
+
+%%ANKI
+Basic
+The finite cardinals are exactly what more basic set?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315464-->
+END%%
+
+%%ANKI
+Basic
+What is the "smallest" infinite set?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745076132169-->
+END%%
+
 ## Equinumerosity
 
-We say set $A$ is **equinumerous** to set $B$, written ($A \approx B$) if and only if there exists a [[set/functions#Injections|one-to-one]] function from $A$ [[set/functions#Surjections|onto]] $B$.
+We say set $A$ is **equinumerous** to set $B$, written $A \approx B$, if and only if there exists a [[set/functions#Injections|one-to-one]] function from $A$ [[set/functions#Surjections|onto]] $B$.
 
 %%ANKI
 Basic
@@ -58,11 +215,9 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1732295060366-->
 END%%
 
-### Power Sets
+### Power sets
 
-No set is equinumerous to its [[set/index#Power Set Axiom|power set]]. This is typically shown using a diagonalization argument.
-
-For any set $A$, $^A2 \approx \mathscr{P}(A)$.
+No set is equinumerous to its [[set/index#Power Set Axiom|power set]]. This is typically shown using a diagonalization argument. For any set $A$, $^A2 \approx \mathscr{P}(A)$.
 
 %%ANKI
 Basic
@@ -271,7 +426,127 @@ END%%
 
 ## Finiteness
 
-A set is **finite** if and only if it is equinumerous to a [[natural_numbers|natural number]]. Otherwise it is **infinite**.
+A set is **finite** if and only if it is equinumerous to a [[natural_numbers|natural number]]. The cardinal number of such a set is a **finite cardinal**. Otherwise we say the set is **infinite**. The cardinal number of such a set is an **infinite cardinal**.
+
+%%ANKI
+Basic
+Let $A \subseteq \omega$ be an infinite set. What can we say about $A$?
+Back: $A$ is equinumerous to $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745076132175-->
+END%%
+
+%%ANKI
+Basic
+Let $C \subseteq A$ where $A \approx n$ for some $n \in \omega$. What does $\mathop{\text{card}} C$ evaluate to?
+Back: A natural number $m$ such that $m \underline{\in} n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315471-->
+END%%
+
+%%ANKI
+Basic
+Let $C \subset A$ where $A \approx n$ for some $n \in \omega$. What does $\mathop{\text{card}} C$ evaluate to?
+Back: A natural number $m$ such that $m \in n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315474-->
+END%%
+
+%%ANKI
+Basic
+How is proposition "any subset of a finite set is finite" expressed in FOL?
+Back: $\forall n \in \omega, \forall A \approx n, \forall B \subseteq A, \exists m \in n, B \approx m$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315477-->
+END%%
+
+%%ANKI
+Basic
+How is the following more succinctly stated? $$\forall n \in \omega, \forall A \approx n, \forall B \subseteq A, \exists m \in n, B \approx m$$
+Back: Any subset of a finite set is finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315479-->
+END%%
+
+%%ANKI
+Basic
+Suppose sets $A$ and $B$ are finite. When is $A \cup B$ infinite?
+Back: N/A. The union of two finite sets is always finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675522739-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. What is the largest value $\mathop{\text{card}}(A \cup B)$ can evaluate to?
+Back: $m + n$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785274-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. What is the smallest value $\mathop{\text{card}}(A \cup B)$ can evaluate to?
+Back: $\mathop{\text{max}}(m, n)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785281-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. When does $\mathop{\text{card}}(A \cup B) = m + n$?
+Back: When $A$ and $B$ are disjoint.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785284-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. When does $\mathop{\text{card}}(A \cup B) = m$?
+Back: When $B \subseteq A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785287-->
+END%%
+
+%%ANKI
+Basic
+Suppose sets $A$ and $B$ are finite. When is $A \cap B$ infinite?
+Back: N/A. The intersection of two finite sets is always finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675522748-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. What is the largest value $\mathop{\text{card}}(A \cap B)$ can evaluate to?
+Back: $\mathop{\text{min}}(m, n)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785290-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. What is the smallest value $\mathop{\text{card}}(A \cap B)$ can evaluate to?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733693785292-->
+END%%
+
+%%ANKI
+Basic
+Suppose sets $A$ and $B$ are finite. When is $A \times B$ infinite?
+Back: N/A. The Cartesian product of two finite sets is always finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675522751-->
+END%%
+
+%%ANKI
+Basic
+Suppose sets $A$ and $B$ are finite. When is $^BA$ infinite?
+Back: N/A. The set of functions from one finite set to another is always finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1735074143693-->
+END%%
 
 %%ANKI
 Basic
@@ -491,301 +766,7 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1745098267330-->
 END%%
 
-## Cardinal Numbers
-
-A **cardinal number** is a set that is $\mathop{\text{card}} A$ for some set $A$. The set $\mathop{\text{card}} A$ is defined such that
-
-* For any sets $A$ and $B$, $\mathop{\text{card}}A = \mathop{\text{card}}B$ iff $A \approx B$.
-* For a finite set $A$, $\mathop{\text{card}}A$ is the natural number $n$ for which $A \approx n$.
-
-%%ANKI
-Basic
-How is the cardinal number of set $A$ denoted?
-Back: As $\mathop{\text{card}} A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733407760088-->
-END%%
-
-%%ANKI
-Basic
-Suppose $A$ is finite. What does $\mathop{\text{card}} A$ evaluate to?
-Back: The unique $n \in \omega$ such that $A \approx n$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733407760091-->
-END%%
-
-%%ANKI
-Basic
-Consider $n \in \omega$. What does $\mathop{\text{card}} n$ evaluate to?
-Back: $n$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733407760094-->
-END%%
-
-%%ANKI
-Basic
-Suppose $a$, $b$, and $c$ are distinct objects. What does $\mathop{\text{card}} \{a, b, c\}$ evaluate to?
-Back: $3$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733407760097-->
-END%%
-
-%%ANKI
-Basic
-What does Enderton refer to by the "process called 'counting'"?
-Back: Choosing a one-to-one correspondence between two sets.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733407760099-->
-END%%
-
-%%ANKI
-Cloze
-A {cardinal number} is denoted as {$\mathop{\text{card} } A$} for some set $A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733407760102-->
-END%%
-
-%%ANKI
-Basic
-How do cardinal numbers relate to equinumerosity?
-Back: For any sets $A$ and $B$, $\mathop{\text{card}} A = \mathop{\text{card}} B$ iff $A \approx B$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733407760105-->
-END%%
-
-%%ANKI
-Basic
-What name is given to $\mathop{\text{card}} \omega$?
-Back: $\aleph_0$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733407760110-->
-END%%
-
-%%ANKI
-Basic
-Who is attributed the assignment $\mathop{\text{card}} \omega = \aleph_0$?
-Back: Georg Cantor.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733407760113-->
-END%%
-
-If one set $A$ of cardinality $\kappa$ is finite, then all of them are. In this case $\kappa$ is a **finite cardinal**. Otherwise $\kappa$ is an **infinite cardinal**.
-
-%%ANKI
-Basic
-How many sets $A$ exist such that $\mathop{\text{card}} A = 0$?
-Back: $1$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315442-->
-END%%
-
-%%ANKI
-Basic
-How many sets $A$ exist such that $\mathop{\text{card}} A = n^+$ for some $n \in \omega$?
-Back: An infinite many.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315447-->
-END%%
-
-%%ANKI
-Basic
-Let $n \in \omega$. When is $\{X \mid \mathop{\text{card}} X = n\}$ a set?
-Back: When $n = 0$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315450-->
-END%%
-
-%%ANKI
-Basic
-Let $n \in \omega$. When is $\{X \mid \mathop{\text{card}} X = n\}$ a class?
-Back: Always.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315453-->
-END%%
-
-%%ANKI
-Basic
-What class can we construct to prove $\{X \mid \mathop{\text{card}} X = 1\}$ is not a set?
-Back: $\bigcup\, \{\{X\} \mid X \text{ is a set} \}$, i.e. the union of all singleton sets.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315456-->
-END%%
-
-%%ANKI
-Basic
-What is a finite cardinal?
-Back: A cardinal number equal to $\mathop{\text{card}} A$ for some finite set $A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315459-->
-END%%
-
-%%ANKI
-Basic
-What is an infinite cardinal?
-Back: A cardinal number equal to $\mathop{\text{card}} A$ for some infinite set $A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315461-->
-END%%
-
-%%ANKI
-Basic
-The finite cardinals are exactly what more basic set?
-Back: $\omega$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315464-->
-END%%
-
-%%ANKI
-Basic
-What set does $\aleph_0$ refer to?
-Back: $\mathop{\text{card}} \omega$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315466-->
-END%%
-
-%%ANKI
-Basic
-What is the "smallest" infinite set?
-Back: $\omega$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1745076132169-->
-END%%
-
-%%ANKI
-Basic
-What is the "smallest" infinite cardinal?
-Back: $\aleph_0$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315469-->
-END%%
-
-%%ANKI
-Basic
-What axiom is necessary to prove $\aleph_0$ is the smallest infinite cardinal?
-Back: The axiom of choice.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1745076132172-->
-END%%
-
-%%ANKI
-Basic
-Let $A \subseteq \omega$ be an infinite set. What can we say about $A$?
-Back: $A$ is equinumerous to $\omega$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1745076132175-->
-END%%
-
-%%ANKI
-Basic
-Let $C \subseteq A$ where $A \approx n$ for some $n \in \omega$. What does $\mathop{\text{card}} C$ evaluate to?
-Back: A natural number $m$ such that $m \underline{\in} n$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315471-->
-END%%
-
-%%ANKI
-Basic
-Let $C \subset A$ where $A \approx n$ for some $n \in \omega$. What does $\mathop{\text{card}} C$ evaluate to?
-Back: A natural number $m$ such that $m \in n$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315474-->
-END%%
-
-%%ANKI
-Basic
-How is proposition "any subset of a finite set is finite" expressed in FOL?
-Back: $\forall n \in \omega, \forall A \approx n, \forall B \subseteq A, \exists m \in n, B \approx m$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315477-->
-END%%
-
-%%ANKI
-Basic
-How is the following more succinctly stated? $$\forall n \in \omega, \forall A \approx n, \forall B \subseteq A, \exists m \in n, B \approx m$$
-Back: Any subset of a finite set is finite.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675315479-->
-END%%
-
-%%ANKI
-Basic
-Suppose sets $A$ and $B$ are finite. When is $A \cup B$ infinite?
-Back: N/A. The union of two finite sets is always finite.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675522739-->
-END%%
-
-%%ANKI
-Basic
-Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. What is the largest value $\mathop{\text{card}}(A \cup B)$ can evaluate to?
-Back: $m + n$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733693785274-->
-END%%
-
-%%ANKI
-Basic
-Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. What is the smallest value $\mathop{\text{card}}(A \cup B)$ can evaluate to?
-Back: $\mathop{\text{max}}(m, n)$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733693785281-->
-END%%
-
-%%ANKI
-Basic
-Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. When does $\mathop{\text{card}}(A \cup B) = m + n$?
-Back: When $A$ and $B$ are disjoint.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733693785284-->
-END%%
-
-%%ANKI
-Basic
-Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. When does $\mathop{\text{card}}(A \cup B) = m$?
-Back: When $B \subseteq A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733693785287-->
-END%%
-
-%%ANKI
-Basic
-Suppose sets $A$ and $B$ are finite. When is $A \cap B$ infinite?
-Back: N/A. The intersection of two finite sets is always finite.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675522748-->
-END%%
-
-%%ANKI
-Basic
-Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. What is the largest value $\mathop{\text{card}}(A \cap B)$ can evaluate to?
-Back: $\mathop{\text{min}}(m, n)$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733693785290-->
-END%%
-
-%%ANKI
-Basic
-Let $m, n \in \omega$ s.t. $A \approx m$ and $B \approx n$. What is the smallest value $\mathop{\text{card}}(A \cap B)$ can evaluate to?
-Back: $0$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733693785292-->
-END%%
-
-%%ANKI
-Basic
-Suppose sets $A$ and $B$ are finite. When is $A \times B$ infinite?
-Back: N/A. The Cartesian product of two finite sets is always finite.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1733675522751-->
-END%%
-
-%%ANKI
-Basic
-Suppose sets $A$ and $B$ are finite. When is $^BA$ infinite?
-Back: N/A. The set of functions from one finite set to another is always finite.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1735074143693-->
-END%%
+## Arithmetic
 
 ### Addition
 
@@ -2425,7 +2406,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be a finite set. Assuming AoC, which of $A$ or $\mathop{\text{Sq}}(A)$ dominates the other?
+Let $A$ be a finite set. Assuming AC, which of $A$ or $\mathop{\text{Sq}}(A)$ dominates the other?
 Back: $A \preceq \mathop{\text{Sq}}(A)$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750646455320-->
@@ -2433,7 +2414,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be an infinite set. Assuming AoC, which of $A$ or $\mathop{\text{Sq}}(A)$ dominates the other?
+Let $A$ be an infinite set. Assuming AC, which of $A$ or $\mathop{\text{Sq}}(A)$ dominates the other?
 Back: N/A. $A$ and $\mathop{\text{Sq}}(A)$ are equinumerous.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750646455330-->
@@ -2441,7 +2422,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be an infinite set and $k \in \omega$. Assuming AoC, which of $A$ or $^kA$ dominates the other?
+Let $A$ be an infinite set and $k \in \omega$. Assuming AC, which of $A$ or $^kA$ dominates the other?
 Back: Indeterminate. Depends if $k = 0$ or not.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750646455334-->
@@ -2525,7 +2506,67 @@ Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, Decembe
 <!--ID: 1736711693559-->
 END%%
 
-## Continuum Hypothesis
+## Alephs
+
+Infinite cardinals are described using alephs.
+
+%%ANKI
+Basic
+What aspect of set theory are alephs used for?
+Back: Describing cardinalities of infinite sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498684009-->
+END%%
+
+%%ANKI
+Basic
+What aleph is equal to $\mathop{\text{card}} \omega$?
+Back: $\aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760110-->
+END%%
+
+%%ANKI
+Basic
+Who is attributed the assignment $\mathop{\text{card}} \omega = \aleph_0$?
+Back: Georg Cantor.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733407760113-->
+END%%
+
+%%ANKI
+Basic
+What is the smallest infinite cardinal?
+Back: $\aleph_0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1733675315469-->
+END%%
+
+%%ANKI
+Basic
+What axiom is necessary to prove $\aleph_0$ is the smallest infinite cardinal?
+Back: The axiom of choice.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1745076132172-->
+END%%
+
+%%ANKI
+Basic
+How does $\aleph_1$ relate to $\aleph_0$?
+Back: $\aleph_1$ is the smallest cardinal larger than $\aleph_0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498684011-->
+END%%
+
+%%ANKI
+Basic
+What aleph corresponds to the least uncountable ordinal?
+Back: $\aleph_1$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760499329593-->
+END%%
+
+### Continuum Hypothesis
 
 The continuum hypothesis states that there are no sets with cardinality between $\aleph_0$ and $2^{\aleph_0}$. The generalized continuum hypothesis states that for any infinite cardinal $\kappa$, there is no cardinal number between $\kappa$ and $2^\kappa$.
 
@@ -2592,6 +2633,38 @@ Which two mathematicians showed the continuum hypothesis could not be proven nor
 Back: Cohen and Gödel.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1750820079192-->
+END%%
+
+%%ANKI
+Basic
+Under what assumption does $\aleph_1 = 2^{\aleph_0}$?
+Back: Under the assumption that the continuum hypothesis is true.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498684013-->
+END%%
+
+%%ANKI
+Basic
+What aleph number corresponds to the cardinality of $\mathbb{N}$?
+Back: $\aleph_0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498848678-->
+END%%
+
+%%ANKI
+Basic
+What aleph number corresponds to the cardinality of $\mathbb{R}$?
+Back: N/A. Depends if we assume the continuum hypothesis or not.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498848695-->
+END%%
+
+%%ANKI
+Basic
+Assume the continuum hypothesis. What aleph number corresponds to the cardinality of $\mathbb{R}$?
+Back: $\aleph_1$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498848706-->
 END%%
 
 ## Bibliography

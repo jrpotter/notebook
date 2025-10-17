@@ -15,6 +15,8 @@ A **strict well ordering on $A$** is a strict total order on $A$ with the additi
 
 In the context of well orderings, an **infinitely descending chain** on set $A$ is an infinitely descending [[cardinality#Sequences|sequence]] into $A$. That is, a function $f \colon \omega \rightarrow A$ such that for all $n \in \omega$, $f(n^+) < f(n)$. A [[total|strict total ordering]] is a well ordering if and only if there is no infinitely descending chain.
 
+We say a set $A$ is **well ordered by epsilon** if and only if the following relation is a well ordering on $A$: $$\in_A = \{ \langle x, y \rangle \in A \times A \mid x \in y \}$$
+
 %%ANKI
 Basic
 What is a non-strict well ordering on $A$?
@@ -123,6 +125,30 @@ Suppose $R$ and $R^{-1}$ are well orderings on set $S$. Why must $S$ be finite?
 Back: Otherwise we imply existence of an infinitely descending chain on $S$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1759174512950-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a set $A$ to be well ordered by epsilon?
+Back: Relation $\{ \langle x, y \rangle \in A \times A \mid x \in y \}$ is a well ordering on $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757608004872-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set well ordered by epsilon. How is the corresponding relation typically denoted?
+Back: As $\in_A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757608004881-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set well ordered by epsilon. How is the corresponding relation defined?
+Back: As $\{ \langle x, y \rangle \in A \times A \mid x \in y \}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1757608004884-->
 END%%
 
 ## Initial Segments
@@ -316,32 +342,82 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1758889573353-->
 END%%
 
-## By Epsilon
+## Well-Ordering Theorem
 
-We say a set $A$ is **well ordered by epsilon** if and only if the following relation is a well ordering on $A$: $$\in_A = \{ \langle x, y \rangle \in A \times A \mid x \in y \}$$
+For any set $A$, there is a well-ordering on $A$.
 
 %%ANKI
 Basic
-What does it mean for a set $A$ to be well ordered by epsilon?
-Back: Relation $\{ \langle x, y \rangle \in A \times A \mid x \in y \}$ is a well ordering on $A$.
+What does the well-ordering theorem state?
+Back: For any set $A$, there is a well-ordering on $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1757608004872-->
+<!--ID: 1760484120069-->
 END%%
 
 %%ANKI
 Basic
-Let $A$ be a set well ordered by epsilon. How is the corresponding relation typically denoted?
-Back: As $\in_A$.
+Does the well-ordering theorem depend on the axiom of choice?
+Back: Yes.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1757608004881-->
+<!--ID: 1760484120078-->
 END%%
 
 %%ANKI
 Basic
-Let $A$ be a set well ordered by epsilon. How is the corresponding relation defined?
-Back: As $\{ \langle x, y \rangle \in A \times A \mid x \in y \}$.
+What is the name of the following theorem?
+
+> Any set can be well-ordered.
+
+Back: The well-ordering theorem.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1757608004884-->
+<!--ID: 1760484120080-->
+END%%
+
+%%ANKI
+Basic
+In the well-ordering theorem proof, what theorem is used to construct a well-ordering of some set $A$?
+Back: The transfinite recursion theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760484120083-->
+END%%
+
+### Numeration Theorem
+
+Any set is equinumerous to some ordinal number.
+
+%%ANKI
+Basic
+What does the numeration theorem state?
+Back: Any set is equinumerous to some ordinal number.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760484399818-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following assertion?
+
+> Any set is equinumerous to some ordinal number.
+
+Back: The numeration theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760484399827-->
+END%%
+
+%%ANKI
+Basic
+The numeration theorem is an immediate consequence of what other theorem?
+Back: The well-ordering theorem.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760484399829-->
+END%%
+
+%%ANKI
+Basic
+Why is the numeration theorem named the way it is?
+Back: It hints at the ability of counting sets via ordinal numbers.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760484399832-->
 END%%
 
 ## Bibliography

@@ -1156,7 +1156,7 @@ END%%
 
 %%ANKI
 Basic
-Which C header contains the `mmap()` function?
+Which C header contains the `mmap` function?
 Back: `<sys/mman.h>`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23

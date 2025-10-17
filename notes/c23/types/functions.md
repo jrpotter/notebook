@@ -132,7 +132,7 @@ END%%
 
 %%ANKI
 Basic
-What is the primary purpose of the `inline` keyword?
+What was the original purpose of the `inline` keyword?
 Back: Hints to the compiler that a given function definition should be inlined at callsites.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757180490407-->
@@ -303,7 +303,7 @@ END%%
 
 %%ANKI
 Cloze
-{1`__VA_ARGS__`} is to {2:macros} whereas {2:`va_list`} is to {1:functions}.
+{1:`__VA_ARGS__`} is to {2:macros} whereas {2:`va_list`} is to {1:functions}.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759891570241-->
 END%%
@@ -602,7 +602,7 @@ END%%
 Basic
 Is `foo` independent? Why?
 ```c
-int a = 1;
+const int a = 1;
 
 int foo(void) {
   return ++a;
@@ -617,7 +617,7 @@ END%%
 Basic
 Is `foo` independent? Why?
 ```c
-int a = 1;
+const int a = 1;
 
 int foo(void) {
   int b = a;
@@ -758,7 +758,7 @@ Basic
 Is `foo` effectless? Why?
 ```c
 int foo(int *x, int *y) {
-  return x + y;
+  return *x + *y;
 }
 ```
 Back: Yes. No observable changes to global state are performed.

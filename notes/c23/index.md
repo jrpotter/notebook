@@ -1359,7 +1359,7 @@ END%%
 %%ANKI
 Basic
 What sequence points are present in expression `f() + g()`?
-Back: Evaluation of `f` and `g` before their respective function calls.
+Back: Evaluation of designators before the respective function calls.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1760236971183-->
 END%%

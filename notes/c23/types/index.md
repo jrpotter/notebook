@@ -1086,7 +1086,7 @@ END%%
 %%ANKI
 Basic
 Assume block scope. What is the storage duration of `(thread_local int){ 0 }`?
-Back: Thread.
+Back: N/A. Cannot declare a `thread_local` variable with automatic storage duration.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759790776098-->
 END%%

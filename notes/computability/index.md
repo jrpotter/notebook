@@ -263,7 +263,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for a language to be prefix-free?
-Back: No member is a *proper* prefix of another member.
+Back: No member is a proper prefix of another member.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1734903366717-->
 END%%
@@ -271,7 +271,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for a language to be suffix-free?
-Back: No member is a *proper* suffix of another member.
+Back: No member is a proper suffix of another member.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1734903366720-->
 END%%

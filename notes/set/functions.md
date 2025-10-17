@@ -698,7 +698,7 @@ END%%
 
 %%ANKI
 Basic
-Does proving "left inverses iff injective" rely on AoC?
+Does proving "left inverses iff injective" rely on AC?
 Back: No.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719681913542-->
@@ -714,7 +714,7 @@ END%%
 
 %%ANKI
 Basic
-Let $F \colon A \rightarrow B$ and $A \neq \varnothing$. *Why* does "left inverses iff injective" require AoC?
+Let $F \colon A \rightarrow B$ and $A \neq \varnothing$. *Why* does "left inverses iff injective" require AC?
 Back: It doesn't.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719683703730-->
@@ -906,7 +906,7 @@ END%%
 
 %%ANKI
 Basic
-Does proving "right inverses iff surjective" rely on AoC?
+Does proving "right inverses iff surjective" rely on AC?
 Back: Yes.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719681913543-->
@@ -922,7 +922,7 @@ END%%
 
 %%ANKI
 Basic
-Let $F \colon A \rightarrow B$ and $A \neq \varnothing$. *Why* does "right inverses iff surjective" require AoC?
+Let $F \colon A \rightarrow B$ and $A \neq \varnothing$. *Why* does "right inverses iff surjective" require AC?
 Back: There is no other mechanism for choosing an $x \in A$ for *each* $y \in B$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719683703736-->

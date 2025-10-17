@@ -177,14 +177,6 @@ END%%
 
 %%ANKI
 Basic
-What is the *usual* precision of the `time_t` type?
-Back: Seconds.
-Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
-<!--ID: 1760100927353-->
-END%%
-
-%%ANKI
-Basic
 What is the range of the `time_t` type?
 Back: N/A. This is implementation-defined.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).

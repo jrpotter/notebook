@@ -375,7 +375,7 @@ END%%
 
 %%ANKI
 Basic
-Given the following, what two properties can we infer `foo` satisfy?
+Given the following, what four properties can we infer `foo` satisfy?
 ```c
 void foo(void) [[unsequenced]];
 ```
