@@ -308,7 +308,7 @@ END%%
 
 %%ANKI
 Cloze
-The {`MB_MAX_LENGTH`} macro corresponds to the {maximum number of bytes a character can be encoded in}.
+The {`MB_MAX_LENGTH`} macro corresponds to the {maximum number of bytes a multibyte character can be encoded in}.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 <!--ID: 1753479843909-->
 END%%

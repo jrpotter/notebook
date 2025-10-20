@@ -547,7 +547,7 @@ END%%
 %%ANKI
 Basic
 When using Zorn's lemma to prove cardinal comparability, what poset is formed?
-Back: For sets $C$ and $D$, $\{f \colon C \rightarrow D \mid f \text{ is an injection} \land \mathop{\text{dom}}f \subseteq C \land \mathop{\text{ran}}f \subseteq D \}$ with ordering relation $\subseteq$.
+Back: For sets $C$ and $D$ and ordering relation $\subseteq$, $$\{f \colon C \rightarrow D \mid f \text{ is an injection} \land \mathop{\text{dom}}f \subseteq C \land \mathop{\text{ran}}f \subseteq D \}$$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1744897010246-->
 END%%
