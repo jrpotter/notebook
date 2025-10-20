@@ -1270,6 +1270,13 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 END%%
 
 %%ANKI
+Cloze
+Currying is well-defined because {$^M(^LK)$} is equinumerous to {$^{(M \times L)}K$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760979602863-->
+END%%
+
+%%ANKI
 Basic
 Let $\kappa$ and $\lambda$ be cardinal numbers. Rewrite $\kappa^{\lambda + 1}$ without using addition.
 Back: $\kappa^\lambda \cdot \kappa$

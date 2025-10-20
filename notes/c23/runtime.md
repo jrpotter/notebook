@@ -91,7 +91,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the C runtime, what function is usually invoked first?
+With respect to the C runtime, what *function* is usually invoked first (before `main`)?
 Back: `_start`
 Reference: Ethereal Wake. “C/C++ Runtime Startup.” September 22, 2021. [https://etherealwake.com/2021/09/crt-startup/](https://etherealwake.com/2021/09/crt-startup/).
 <!--ID: 1757425364837-->

@@ -453,7 +453,7 @@ is called the **region between the graphs of $f$ and $g$**.
 
 ![[regions-between-graphs.png]]
 
-If $f$ and $g$ are [[integrals|integrable]] functions on $[a, b]$, then the area of the region between the graphs of $f$ and $g$ satisfies $$a(S) = \int_a^b [g(x) - f(x)] \,dx$$
+If $f$ and $g$ are [[riemann|integrable]] functions on $[a, b]$, then the area of the region between the graphs of $f$ and $g$ satisfies $$a(S) = \int_a^b [g(x) - f(x)] \,dx$$
 
 %%ANKI
 Basic
@@ -528,7 +528,7 @@ END%%
 
 Let $S$ be a set of points on the plane. Let $kS$ denote the set obtained by multiplying the coordinates of each point of $S$ by $k > 0$. Then $kS$ is [[geometry/index#Similarity|similar]] to $S$ and the process by which we produced $kS$ is called a **similarity transformation**.
 
-Let $f$ be nonnegative and [[integrals|integrable]] on $[a, b]$. Let $S$ be its ordinate set. Then for $k > 0$, $$a(kS) = k^2a(S).$$
+Let $f$ be nonnegative and [[riemann|integrable]] on $[a, b]$. Let $S$ be its ordinate set. Then for $k > 0$, $$a(kS) = k^2a(S).$$
 
 %%ANKI
 Basic

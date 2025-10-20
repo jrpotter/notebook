@@ -5,15 +5,16 @@ FILE TAGS: computability::cfg
 tags:
   - cfg
   - computability
+  - grammar
 ---
 
 ## Overview
 
 A **context-free grammar** (CFG) is a $4$-tuple $\langle V, \Sigma, R, S \rangle$ where
 
-1. $V$ is a finite set called the **variables**,
-2. $\Sigma$ is a finite set, disjoint from $V$, called the **terminals**,
-3. $R$ is a finite set of **rules**, with each rule being a variable and a string of variables/terminals, and
+1. $V$ is a finite set called the **variables** (or **nonterminals**).
+2. $\Sigma$ is a finite set, disjoint from $V$, called the **terminals**.
+3. $R$ is a finite set of **rules**, with each rule being a variable to a string of variables/terminals.
 4. $S \in V$ is the **start variable**.
 
 If $u$, $v$, and $w$ are strings of variables and terminals, and $A \rightarrow w$, we say that $uAv$ **yields** $uwv$ (denoted $uAv \Rightarrow uwv$). We say $u$ **derives** $v$ (denoted $u \overset{*}{\Rightarrow} v$), if $u = v$ or if a sequence $u_1, u_2, \ldots, u_k$ exists for $k \geq 0$ and $$u \Rightarrow u_1 \Rightarrow u_2 \Rightarrow \cdots \Rightarrow u_k \Rightarrow v.$$
@@ -801,6 +802,14 @@ Back:
 2. Encountering an endless loop.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1760903887829-->
+END%%
+
+%%ANKI
+Basic
+What "preprocessing step" does Sipser employ when proving properties of DPDAs?
+Back: Converting the DPDA into one that reads in its entire input.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1760981600711-->
 END%%
 
 ### Nondeterministic
