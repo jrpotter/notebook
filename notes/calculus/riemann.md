@@ -1204,6 +1204,7 @@ Basic
 What does it mean for indefinite Riemann integrals to be continuous?
 Back: If $f$ is integrable on $[a, x]$ for every $x \in [a, b]$, then its indefinite integral is continuous on $[a, b]$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761051036434-->
 END%%
 
 ## Bibliography

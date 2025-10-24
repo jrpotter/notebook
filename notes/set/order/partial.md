@@ -278,7 +278,7 @@ END%%
 
 Let $\langle P, \leq \rangle$ be a poset. For distinct $a, b \in P$, we say $b$ **covers** $a$ if $a \leq b$ and there does not exist any distinct third element $x$ such that $a \leq x \leq b$.
 
-A **Hasse diagram** is a [[set/graphs|directed graph]] that encodes a finite poset $\langle P, \leq \rangle$. It consists of a vertex for each element of $P$, with a directed edge (usually oriented upwards) from $a \in P$ to $b \in P$ whenever $b$ covers $a$.
+A **Hasse diagram** is a [[graphs|directed graph]] that encodes a finite poset $\langle P, \leq \rangle$. It consists of a vertex for each element of $P$, with a directed edge (usually oriented upwards) from $a \in P$ to $b \in P$ whenever $b$ covers $a$.
 
 %%ANKI
 Basic

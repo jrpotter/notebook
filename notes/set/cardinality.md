@@ -165,7 +165,7 @@ END%%
 
 ## Equinumerosity
 
-We say set $A$ is **equinumerous** to set $B$, written $A \approx B$, if and only if there exists a [[set/functions#Injections|one-to-one]] function from $A$ [[set/functions#Surjections|onto]] $B$.
+We say set $A$ is **equinumerous** to set $B$, written $A \approx B$, if and only if there exists a [[functions#Injections|one-to-one]] function from $A$ [[functions#Surjections|onto]] $B$.
 
 %%ANKI
 Basic

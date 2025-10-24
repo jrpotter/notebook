@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-A **free tree** is a connected, acyclic, undirected [[set/graphs|graph]]. If an undirected graph is acyclic but possibly disconnected, it is a **forest**.
+A **free tree** is a connected, acyclic, undirected [[graphs|graph]]. If an undirected graph is acyclic but possibly disconnected, it is a **forest**.
 
 %%ANKI
 Basic
@@ -126,7 +126,7 @@ END%%
 
 A **rooted tree** is a free tree in which one vertex is distinguished/blessed as the **root**. We call vertices of rooted trees **nodes**.
 
-Let $T$ be a rooted tree with root $r$. Any node $y$ on the [[set/graphs#Paths|path]] from $r$ to node $x$ is an **ancestor** of $x$. Likewise, $x$ is a **descendant** of $y$. If the last edge on the path from $r$ to $x$ is $\{y, x\}$, $y$ is the **parent** of $x$ and $x$ is a **child** of $y$. Nodes with the same parent are called **siblings**.
+Let $T$ be a rooted tree with root $r$. Any node $y$ on the [[graphs#Paths|path]] from $r$ to node $x$ is an **ancestor** of $x$. Likewise, $x$ is a **descendant** of $y$. If the last edge on the path from $r$ to $x$ is $\{y, x\}$, $y$ is the **parent** of $x$ and $x$ is a **child** of $y$. Nodes with the same parent are called **siblings**.
 
 A node with no children is an **external node** or **leaf**. A node with at least one child is an **internal node** or **nonleaf**. The number of children of a node is the **degree** of said node. The length of the path from the root to a node $x$ is the **depth** of $x$ in $T$. A **level** of a tree consists of all nodes at the same depth. The **height** of a node in a tree is the length of the longest path from the node to a leaf.
 

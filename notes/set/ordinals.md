@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-Assume $<$ is a strict [[well|well ordering]] on $A$ and define $\gamma(x, y)$ as the formula "$y = \mathop{\text{ran}} x$". The [[recursion#Transfinite Recursion|transfinite recursion theorem]] then presents us with a unique [[set/functions|function]] with domain $A$ such that for any $t \in A$, $$E(t) = \mathop{\text{ran}}(E \restriction \mathop{\text{seg}_<}t) = E [\![\mathop{\text{seg}_<} t ]\!]$$
+Assume $<$ is a strict [[well|well ordering]] on $A$ and define $\gamma(x, y)$ as the formula "$y = \mathop{\text{ran}} x$". The [[recursion#Transfinite Recursion|transfinite recursion theorem]] then presents us with a unique [[functions|function]] with domain $A$ such that for any $t \in A$, $$E(t) = \mathop{\text{ran}}(E \restriction \mathop{\text{seg}_<}t) = E [\![\mathop{\text{seg}_<} t ]\!]$$
 
 Then $\alpha = \mathop{\text{ran}}(E)$ is called the **epsilon-image** (denoted $\in$-image) of the well-ordered [[structures|structure]] $\langle A, < \rangle$. The name "$\in$-image" derives from the fact that $\alpha$ is [[well#By Epsilon|well ordered by epsilon]].
 

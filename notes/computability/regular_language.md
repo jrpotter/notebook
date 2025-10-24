@@ -961,9 +961,9 @@ Let $N = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. Define the **$\ep
 
 More formally, define $f \colon \mathscr{P}(Q) \rightarrow \mathscr{P}(Q)$ to be given by $$f(R) = \bigcup\,\{ \delta(r, \epsilon) \mid r \in R \}.$$
 
-Then the $\epsilon$-closure of $A \subseteq Q$ using the [[set/functions#Top-down Approach|top-down approach]] is $$\epsilon^*(A) = \bigcap\,\{ X \mid A \subseteq X \subseteq \mathscr{P}(Q) \land f[\![X]\!] \subseteq X \}.$$
+Then the $\epsilon$-closure of $A \subseteq Q$ using the [[functions#Top-down Approach|top-down approach]] is $$\epsilon^*(A) = \bigcap\,\{ X \mid A \subseteq X \subseteq \mathscr{P}(Q) \land f[\![X]\!] \subseteq X \}.$$
 
-Using the [[set/functions#Bottom-Up Approach|bottom-up approach]], $$\epsilon_*(A) = \bigcup_{n \in \mathbb{N}} h(n)$$
+Using the [[functions#Bottom-Up Approach|bottom-up approach]], $$\epsilon_*(A) = \bigcup_{n \in \mathbb{N}} h(n)$$
 where $h \colon \mathbb{N} \rightarrow \mathscr{P}(Q)$ is defined in the usual way.
 
 %%ANKI
@@ -1295,9 +1295,9 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1745625798169-->
 END%%
 
-## Regular Operations
+## Closure Operations
 
-Let $A$ and $B$ be regular languages over alphabet $\Sigma$. Then the **regular operations** union, intersection, concatenation, and Kleene star are defined as:
+Let $A$ and $B$ be regular languages over alphabet $\Sigma$. Such languages are closed over the **regular operations** which include:
 
 * Union: $A \cup B = \{x \mid x \in A \lor x \in B \}$
 * Intersection: $A \cap B = \{x \mid x \in A \land x \in B\}$
@@ -2647,6 +2647,14 @@ With respect to regular languages, what does it mean that a string can be "pumpe
 Back: A string contains a substring that can be repeated any number of times with the resulting string remaining in the language.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1744945937569-->
+END%%
+
+%%ANKI
+Basic
+What is the canonical example of a non-regular language?
+Back: $\{a^nb^n \mid n \geq 0 \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036347-->
 END%%
 
 %%ANKI

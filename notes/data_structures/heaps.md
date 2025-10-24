@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-The **binary heap** data structure is an array object that can be viewed as a [[trees#Positional Trees|complete binary tree]].
+The **binary heap** data structure is an array object that can be viewed as a [[data_structures/trees/index#Positional Trees|complete binary tree]].
 
 The primary function used to maintain the max-heap property is `MAX_HEAPIFY_DOWN`. This function assumes the left and right- subtrees at a given node are max heaps but that the current node may be smaller than its children. An analagous function and assumptions exist for `MIN_HEAPIFY_DOWN`.
 

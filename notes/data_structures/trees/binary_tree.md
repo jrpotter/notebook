@@ -15,7 +15,7 @@ A **binary tree** $T$ is a structure defined on a finite set of nodes that eithe
 * contains no nodes, or
 * is composed of three disjoint sets of nodes: a **root** node, a **left subtree**, and a **right subtree**.
 
-The binary tree is a specialization of the [[trees#Positional Trees|k-ary tree]].
+The binary tree is a specialization of the [[data_structures/trees/index#Positional Trees|k-ary tree]].
 
 %%ANKI
 Basic

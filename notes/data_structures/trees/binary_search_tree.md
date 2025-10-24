@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-A binary search tree (BST) is a [[trees#Binary Trees|binary tree]] satisfying the **binary-search-tree property**:
+A binary search tree (BST) is a [[data_structures/trees/index#Binary Trees|binary tree]] satisfying the **binary-search-tree property**:
 
 > Let $x$ be a node in a binary search tree. If $y$ is a node in the left subtree of $x$, then $y.key \leq x.key$. If $y$ is a node in the right subtree of $x$, then $y.key \geq x.key$.
 

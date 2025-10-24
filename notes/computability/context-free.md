@@ -313,6 +313,20 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1746370634337-->
 END%%
 
+%%ANKI
+Cloze
+{1:Regular expressions} are to {2:regular languages} whereas {2:CFGs} are to {1:CFLs}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761093239283-->
+END%%
+
+%%ANKI
+Cloze
+{1:Finite automaton} are to {2:regular languages} whereas {2:PDAs} are to {1:CFLs}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761093239293-->
+END%%
+
 ## Ambiguity
 
 A derivation of a string $w$ in a grammar $G$ is a **leftmost derivation** if at every step the leftmost remaining variable is the one replaced.
@@ -806,10 +820,34 @@ END%%
 
 %%ANKI
 Basic
-What "preprocessing step" does Sipser employ when proving properties of DPDAs?
-Back: Converting the DPDA into one that reads in its entire input.
+With respect to DPDAs, what situation does Sipser describe as "hanging"?
+Back: An attempt by the DPDA to pop an empty stack.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1760981600711-->
+<!--ID: 1761051036357-->
+END%%
+
+%%ANKI
+Basic
+With respect to DPDAs, what situation does Sipser describe as "looping"?
+Back: A DPDA makeing an endless sequence of $\epsilon$-input moves.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036359-->
+END%%
+
+%%ANKI
+Basic
+How is the "hanging" problem resolved when converting a DPDA to one that reads in its entire input string?
+Back: First push a sentinel onto the stack. Then if popped, go to a state that reads in the entire input.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036361-->
+END%%
+
+%%ANKI
+Basic
+How is the "looping" problem resolved when converting a DPDA to one that reads in its entire input string?
+Back: Reprogram the DPDA so any looping situations instead go to a separate accept or reject state that reads in its entire input.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036364-->
 END%%
 
 ### Nondeterministic
@@ -822,6 +860,14 @@ A (nondeterministic) **pushdown automaton** (PDA) is a $6$-tuple $\langle Q, \Si
 4. $\delta \colon Q \times \Sigma_\epsilon \times \Gamma_\epsilon \rightarrow \mathscr{P}(Q \times \Gamma_\epsilon)$ is the transition function,
 5. $q_0 \in Q$ is the start state, and
 6. $F \subseteq Q$ is the set of accept states.
+
+%%ANKI
+Basic
+A CFG is equivalent to what kind of automaton?
+Back: A (nondeterministic) pushdown automaton.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761093239296-->
+END%%
 
 %%ANKI
 Basic
@@ -1284,6 +1330,360 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1754385910972-->
 END%%
 
+## Closure Operations
+
+### DCFL
+
+Let $A$ and $B$ be deterministic context free languages over alphabet $\Sigma$. Such languages are closed under the following:
+
+* Complement: $A^C = \{ x \mid x \in \Sigma^* - A \}$
+
+%%ANKI
+Basic
+Are DCFLs closed under union?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036367-->
+END%%
+
+%%ANKI
+Basic
+Suppose DCFLs were closed under union. What contradiction arises?
+Back: DeMorgan's laws would tell us DCFLs were then closed under intersection.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036369-->
+END%%
+
+%%ANKI
+Basic
+Are DCFLs closed under intersection?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036371-->
+END%%
+
+%%ANKI
+Basic
+Suppose DCFLs were closed under intersection. What contradiction arises?
+Back: DeMorgan's laws would tell us DCFLs were then closed under union.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036374-->
+END%%
+
+%%ANKI
+Basic
+Are DCFLs closed under complement?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036377-->
+END%%
+
+%%ANKI
+Basic
+Are DCFLs closed under reversal?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036379-->
+END%%
+
+%%ANKI
+Basic
+Are DCFLs closed under concatentation?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036382-->
+END%%
+
+%%ANKI
+Basic
+Are DCFLs closed under Kleene star?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036385-->
+END%%
+
+%%ANKI
+Basic
+Which of the standard operations are DCFLs closed under?
+Back: Just complement.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036388-->
+END%%
+
+%%ANKI
+Basic
+Consider DPDA $A = \langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$. What is a reading state of $A$?
+Back: A state $q$ such that there exists a transition $\delta(q, a, \epsilon) \neq \varnothing$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761082141822-->
+END%%
+
+%%ANKI
+Basic
+In the context of DPDAs, why are reading states named the way they are?
+Back: They only operate based on the state of the next read input.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761082141833-->
+END%%
+
+%%ANKI
+Basic
+The concept of reading states is especially important in proving what property of DCFLs?
+Back: DCFLs are closed under complement.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761082141838-->
+END%%
+
+%%ANKI
+Basic
+Why is the following not a valid DPDA?
+![[dpda-qr-xy-invalid1.png]]
+Back: States $q$ and $r$ do not define all necessary transactions.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761082141843-->
+END%%
+
+%%ANKI
+Basic
+What transition(s) are missing that prevent the following from being a DPDA?
+![[dpda-qr-xy-invalid2.png]]
+Back: $q$ is missing a transition for $\delta(q, \epsilon, y)$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761082141848-->
+END%%
+
+%%ANKI
+Basic
+What transition(s) are missing that prevent the following from being a DPDA?
+![[dpda-qr-xy-valid1.png]]
+Back: N/A. This is a valid DPDA.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761082141853-->
+END%%
+
+%%ANKI
+Basic
+What is the input alphabet $\Sigma$ of the following DPDA?
+![[dpda-qr-xy-valid1.png]]
+Back: $\Sigma = \varnothing$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761082141858-->
+END%%
+
+%%ANKI
+Basic
+What is the stack alphabet $\Gamma$ of the following DPDA?
+![[dpda-qr-xy-valid1.png]]
+Back: $\Gamma = \{x, y\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761082141862-->
+END%%
+
+%%ANKI
+Basic
+With respect to DPDAs, what is a reading state?
+Back: A state that reads an input symbol without popping the stack.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761092545309-->
+END%%
+
+%%ANKI
+Basic
+A reading state $q$ of DPDA $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ has what form with respect to $\delta$?
+Back: $\delta(q, a, \epsilon) = \langle r, y \rangle$ for any $a \in \Sigma$, $y \in \Gamma$, and $r \in Q$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761092545319-->
+END%%
+
+%%ANKI
+Basic
+Reading states are especially useful when proving what property of DCFLs?
+Back: Closure under complement.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761092545322-->
+END%%
+
+%%ANKI
+Basic
+How is the following DPDA fragment converted to one with reading state(s)?
+![[dpda-non-final-reading-state1-pre.png]]
+Back:
+![[dpda-non-final-reading-state1-post.png]]
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761092545326-->
+END%%
+
+%%ANKI
+Basic
+How is the following DPDA fragment converted to one with reading state(s)?
+![[dpda-non-final-reading-state2-pre.png]]
+Back:
+![[dpda-non-final-reading-state2-post.png]]
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761092545330-->
+END%%
+
+%%ANKI
+Basic
+How is the following DPDA fragment converted to one with reading state(s)?
+![[dpda-final-reading-state1-pre.png]]
+Back:
+![[dpda-final-reading-state1-post.png]]
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761092545334-->
+END%%
+
+%%ANKI
+Basic
+How is the following DPDA fragment converted to one with reading state(s)?
+![[dpda-final-reading-state2-pre.png]]
+Back:
+![[dpda-final-reading-state2-post.png]]
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761092545338-->
+END%%
+
+%%ANKI
+Basic
+How is the following DPDA fragment converted to one with reading state(s)?
+![[dpda-non-final-reading-state3-pre.png]]
+Back:
+![[dpda-non-final-reading-state3-post.png]]
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761092545342-->
+END%%
+
+%%ANKI
+Basic
+How is the following DPDA fragment converted to one with reading state(s)?
+![[dpda-final-reading-state3-pre.png]]
+Back:
+![[dpda-final-reading-state3-post.png]]
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761092545346-->
+END%%
+
+%%ANKI
+Basic
+What role do reading states take on when proving closure of DCFLs under complement?
+Back: Switching the accept status of reading states yields a DPDA that accepts the complementary language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761092705064-->
+END%%
+
+### CFL
+
+Let $A$ and $B$ be (nondeterministic) context free languages over alphabet $\Sigma$. Such languages are closed under the following:
+
+* Union: $A \cup B = \{x \mid x \in A \lor x \in B \}$
+* Reversal: $A^R = \{ x^R \mid x \in A \}$
+* Concatenation: $A \circ B = \{ xy \mid x \in A \land y \in B \}$
+* Kleene star: $A^* = \{ x_1x_2\cdots x_k \mid k \geq 0 \land x_i \in A \}$
+
+%%ANKI
+Basic
+Are CFLs closed under union?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036391-->
+END%%
+
+%%ANKI
+Basic
+How do we show CFLs are closed under union (using say CFGs $A$ and $B$)?
+Back: Let $S_A$ and $S_B$ be start symbols of $A$ and $B$. Then define CFG $S \rightarrow S_A \mathop{|} S_B$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036394-->
+END%%
+
+%%ANKI
+Basic
+Are CFLs closed under intersection?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036397-->
+END%%
+
+%%ANKI
+Basic
+The intersection of which two CFLs is most commonly used to prove non-closure under intersection?
+Back: $\{a^nb^nc^m \mid m, n \geq 0\}$ and $\{a^mb^mc^n \mid m, n \geq 0\}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036400-->
+END%%
+
+%%ANKI
+Basic
+Suppose CFLs were closed under intersection. What contradiction arises?
+Back: DeMorgan's laws would tell us CFLs were then closed under complement.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036402-->
+END%%
+
+%%ANKI
+Basic
+Are CFLs closed under reversal?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036405-->
+END%%
+
+%%ANKI
+Basic
+How do we show CFLs are closed under reversal (using say CFG $A$)?
+Back: Define a CFG in which every production rule of $A$ is written in reverse order.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036408-->
+END%%
+
+%%ANKI
+Basic
+Are CFLs closed under complement?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036411-->
+END%%
+
+%%ANKI
+Basic
+Suppose CFLs were closed under complement. What contradiction arises?
+Back: DeMorgan's laws would tell us CFLs were then closed under intersection.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036414-->
+END%%
+
+%%ANKI
+Basic
+Are CFLs closed under concatenation?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036417-->
+END%%
+
+%%ANKI
+Basic
+How do we show CFLs are closed under concatenation (using say CFGs $A$ and $B$)?
+Back: Let $S_A$ and $S_B$ be start symbols of $A$ and $B$. Then define CFG $S \rightarrow S_A S_B$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036420-->
+END%%
+
+%%ANKI
+Basic
+Are CFLs closed under Kleene star?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036423-->
+END%%
+
+%%ANKI
+Basic
+How do we show CFLs are closed under Kleene star (using say CFG $A$)?
+Back: Let $S_A$ be the start symbol of $A$. Then define CFG $S \rightarrow S_A S \mathop{|} \epsilon$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036426-->
+END%%
+
 ## Chomsky Normal Form
 
 A context-free grammar is in **Chomsky normal form** if every rule is of the form $$\begin{align*} S & \rightarrow \epsilon \\ A & \rightarrow BC \\ A & \rightarrow a \end{align*}$$
@@ -1688,6 +2088,14 @@ Why must the pumping constant for CFLs be an integer?
 Back: The pumping constant corresponds to the length of a string which is an integer.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1760644262673-->
+END%%
+
+%%ANKI
+Basic
+What is the canonical example of a non-CFL language?
+Back: $\{a^nb^nc^n \mid n \geq 0 \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036431-->
 END%%
 
 %%ANKI

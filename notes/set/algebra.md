@@ -967,7 +967,7 @@ END%%
 
 ## Index Sets
 
-Let $I$ be a set, called the **index set**. Let $F$ be a [[set/functions|function]] whose domain includes $I$. Then we define $$\bigcup_{i \in I} F(i) = \bigcup\,\{F(i) \mid i \in I\}$$
+Let $I$ be a set, called the **index set**. Let $F$ be a [[functions|function]] whose domain includes $I$. Then we define $$\bigcup_{i \in I} F(i) = \bigcup\,\{F(i) \mid i \in I\}$$
 and, if $I \neq \varnothing$, $$\bigcap_{i \in I} F(i) = \bigcap\, \{F(i) \mid i \in I\}$$
 
 %%ANKI

@@ -89,6 +89,12 @@ Let $a, b \in \mathbb{R}$ such that $a < b$. A **partition** $P$ of interval $[a
 
 We use the symbol $P = \{x_0, x_1, \ldots, x_n\}$ to designate this partition.
 
+A **refinement** $P'$ of some partition $P$ is created by adjoining more subdivision points to those of $P$. $P'$, also a partition, is said to be **finer** than $P$.
+
+Given two partitions $P_1$ and $P_2$, the **common refinement** of $P_1$ and $P_2$ is the partition formed by adjoining the subdivision points of $P_1$ and $P_2$ together.
+
+A function $f$ is said to be **piecewise monotonic** on an interval $[a, b]$ if there is a partition $P$ of $[a, b]$ such that $f$ is [[functions#Monotonicity|monotonic]] on each open subinterval of $P$.
+
 %%ANKI
 Basic
 Let $a, b \in \mathbb{R}$ s.t. $a < b$. What is a partition of interval $[a, b]$?
@@ -161,8 +167,6 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1732626063679-->
 END%%
 
-A **refinement** $P'$ of some partition $P$ is created by adjoining more subdivision points to those of $P$. $P'$, also a partition, is said to be **finer** than $P$.
-
 %%ANKI
 Basic
 Let $P$ be a partition of $[a, b]$. What is a refinement of $P$?
@@ -194,8 +198,6 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1732627945416-->
 END%%
 
-Given two partitions $P_1$ and $P_2$, the **common refinement** of $P_1$ and $P_2$ is the partition formed by adjoining the subdivision points of $P_1$ and $P_2$ together.
-
 %%ANKI
 Basic
 How is the common refinement of partitions $P_1$ and $P_2$ defined?
@@ -226,8 +228,6 @@ Partition $P' = \{0, 1, 2, 3, 4\}$ is a {refinement} of partition $P = \{0, 1, 4
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1733316862000-->
 END%%
-
-A function $f$ is said to be **piecewise monotonic** on an interval $[a, b]$ if there is a partition $P$ of $[a, b]$ such that $f$ is [[set/functions#Monotonicity|monotonic]] on each open subinterval of $P$.
 
 %%ANKI
 Basic

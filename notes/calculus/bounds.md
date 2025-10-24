@@ -474,7 +474,7 @@ END%%
 
 ## Completeness Axiom
 
-Every nonempty set $S$ of real numbers which is bounded above has a supremum; that is, there is a real number $B$ such that $B = \mathop{\text{sup}} S$.
+Every nonempty set $S$ of real numbers which is bounded above has a supremum.
 
 %%ANKI
 Basic
