@@ -243,7 +243,7 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1710793937921-->
 END%%
 
-A graph that allows multiple edges between vertices is called a **multigraph**. It is analagous to the concept of [[bags|multisets]] in set theory.
+A graph that allows multiple edges between vertices is called a **multigraph**. It is analogous to the concept of [[bags|multisets]] in set theory.
 
 %%ANKI
 Basic

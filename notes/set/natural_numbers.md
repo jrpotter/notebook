@@ -154,7 +154,7 @@ END%%
 
 %%ANKI
 Basic
-If $n \in \mathbb{N}$ then $n \in n + 1$. What analagous statement holds for arbitrary set $a$?
+If $n \in \mathbb{N}$ then $n \in n + 1$. What analogous statement holds for arbitrary set $a$?
 Back: $a \in a^+$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1724485233303-->
@@ -162,7 +162,7 @@ END%%
 
 %%ANKI
 Basic
-If $n \in \mathbb{N}$ then $n \subseteq n + 1$. What analagous statement holds for arbitrary set $a$?
+If $n \in \mathbb{N}$ then $n \subseteq n + 1$. What analogous statement holds for arbitrary set $a$?
 Back: $a \subseteq a^+$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1724485233283-->

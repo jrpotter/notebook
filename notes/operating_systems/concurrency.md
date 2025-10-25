@@ -336,7 +336,7 @@ END%%
 %%ANKI
 Cloze
 The compare-and-swap instruction can be broken down into the following logical steps:
-1. {Store the old value at $M$},
+1. {Store the old value of $M$},
 2. {Compare the value at $M$ with some number},
 3. {If equal, update the value at $M$ with a new number},
 4. {Return the old value}.

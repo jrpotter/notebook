@@ -234,7 +234,7 @@ END%%
 
 %%ANKI
 Basic
-The following is analagous to what logical expression of commuting quantifiers?$$\mathop{\text{dom}}\bigcup\mathscr{A} = \bigcup\, \{\mathop{\text{dom}} R \mid R \in \mathscr{A}\}$$
+The following is analogous to what logical expression of commuting quantifiers?$$\mathop{\text{dom}}\bigcup\mathscr{A} = \bigcup\, \{\mathop{\text{dom}} R \mid R \in \mathscr{A}\}$$
 Back: $\exists x, \exists y, P(x, y) \Leftrightarrow \exists y, \exists x, P(x, y)$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718327739907-->
@@ -249,7 +249,7 @@ END%%
 
 %%ANKI
 Basic
-The following is analagous to what logical expression of commuting quantifiers? $$\mathop{\text{dom}}\bigcap\mathscr{A} \subseteq \bigcap\, \{\mathop{\text{dom}} R \mid R \in \mathscr{A}\}$$
+The following is analogous to what logical expression of commuting quantifiers? $$\mathop{\text{dom}}\bigcap\mathscr{A} \subseteq \bigcap\, \{\mathop{\text{dom}} R \mid R \in \mathscr{A}\}$$
 Back: $\exists x, \forall y, P(x, y) \Rightarrow \forall y, \exists x, P(x, y)$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718327739914-->
@@ -264,7 +264,7 @@ END%%
 
 %%ANKI
 Basic
-The following is analagous to what predicate logical expression of commuting quantifiers? $$\mathop{\text{ran}}\bigcup\mathscr{A} = \bigcup\, \{\mathop{\text{ran}} R \mid R \in \mathscr{A}\}$$
+The following is analogous to what predicate logical expression of commuting quantifiers? $$\mathop{\text{ran}}\bigcup\mathscr{A} = \bigcup\, \{\mathop{\text{ran}} R \mid R \in \mathscr{A}\}$$
 Back: $\exists x, \exists y, P(x, y) \Leftrightarrow \exists y, \exists x, P(x, y)$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718327739922-->
@@ -279,7 +279,7 @@ END%%
 
 %%ANKI
 Basic
-The following is analagous to what logical expression of commuting quantifiers? $$\mathop{\text{ran}}\bigcap\mathscr{A} \subseteq \bigcap\, \{\mathop{\text{ran}} R \mid R \in \mathscr{A}\}$$
+The following is analogous to what logical expression of commuting quantifiers? $$\mathop{\text{ran}}\bigcap\mathscr{A} \subseteq \bigcap\, \{\mathop{\text{ran}} R \mid R \in \mathscr{A}\}$$
 Back: $\exists x, \forall y, P(x, y) \Rightarrow \forall y, \exists x, P(x, y)$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718327739931-->
@@ -1586,7 +1586,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $y = f(x)$. Then $f$ and $f^{-1}$ are symmetric about what line?
+Suppose $f$ is invertible. Then $f$ and $f^{-1}$ are symmetric about what line?
 Back: $y = x$
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1747792150817-->
@@ -2222,7 +2222,7 @@ END%%
 
 %%ANKI
 Basic
-The following is analagous to what logical expression of commuting quantifiers? $$F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$$
+The following is analogous to what logical expression of commuting quantifiers? $$F[\![A \cap B]\!] \subseteq F[\![A]\!] \cap F[\![B]\!]$$
 Back: $\exists x, \forall y, P(x, y) \Rightarrow \forall y, \exists x, P(x, y)$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720386023284-->
@@ -2230,7 +2230,7 @@ END%%
 
 %%ANKI
 Basic
-Given single-rooted $R$, the following is analagous to what logical expression of commuting quantifiers? $$R[\![A \cap B]\!] = R[\![A]\!] \cap R[\![B]\!]$$
+Given single-rooted $R$, the following is analogous to what logical expression of commuting quantifiers? $$R[\![A \cap B]\!] = R[\![A]\!] \cap R[\![B]\!]$$
 Back: $\exists x, \forall y, P(x, y) \Leftrightarrow \forall y, \exists x, P(x, y)$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720386023288-->

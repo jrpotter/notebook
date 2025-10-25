@@ -249,17 +249,71 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1761172862644-->
 END%%
 
+### Inversion
+
+Let $f$ be a continuous strictly increasing function on $[a, b]$. Let $c = f(a)$ and $d = f(b)$. Then $g = f^{-1}$ is continuous and strictly increasing on $[c, d]$.
+
+An analogous implication holds for continuous strictly decreasing functions.
+
 %%ANKI
 Basic
-What does the "sign-preserving property" of continuous functions likely refer to?
-Back: If $f$ is continuous at $c$ and $f(c) \neq 0$, then there exists a neighborhood $N(c)$ such that the sign of $f(x)$ is the same as that of $f(c)$ for all $x \in N(c)$.
+Apostol states the inverses of what class of functions is also continuous?
+Back: Real-valued functions continuous and strictly monotonic on a closed interval.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761172862653-->
+<!--ID: 1761332568927-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous and strictly increasing on $[a, b]$. Then $f^{-1}$ is continuous on what interval?
+Back: $[f(a), f(b)]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761332568935-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous and increasing on $[a, b]$. Then $f^{-1}$ is continuous on what interval?
+Back: N/A. $f^{-1}$ may not actually be defined.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761332568939-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous and strictly decreasing function on $[a, b]$. Then $f^{-1}$ is continuous on what interval?
+Back: $[f(a), f(b)]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761332568943-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous and decreasing on $[a, b]$. Then $f^{-1}$ is continuous on what interval?
+Back: N/A. $f^{-1}$ may not actually be defined.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761332568947-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be strictly increasing on $[a, b]$. Assume $f^{-1}$ is defined. What can be said about $f^{-1}$?
+Back: $f^{-1}$ is strictly increasing on $[f(a), f(b)]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761332568951-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be strictly decreasing on $[a, b]$. Assume $f^{-1}$ is defined. What can be said about $f^{-1}$?
+Back: $f^{-1}$ is strictly decreasing on $[f(a), f(b)]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761332568956-->
 END%%
 
 ## Intermediate Value Theorem
 
-Let $f$ be continuous over $[a, b]$. Let $x, y \in [a, b]$ such that $x < y$ and $f(x) \neq f(y)$. Then $f$ takes on every value between $f(x)$ and $f(y)$ in interval $(x, y)$.
+Let $f$ be continuous on $[a, b]$. Let $x, y \in [a, b]$ such that $x < y$ and $f(x) \neq f(y)$. Then $f$ takes on every value between $f(x)$ and $f(y)$ in interval $(x, y)$.
 
 %%ANKI
 Basic
@@ -280,7 +334,7 @@ END%%
 %%ANKI
 Basic
 What does the intermediate value theorem state?
-Back: Let $f$ be continuous over $[a, b]$. Let $x, y \in [a, b]$ be points such that $x < y$ and $f(x) \neq f(y)$. Then $f$ takes on all values between $f(x)$ and $f(y)$ somewhere in $(x, y)$.
+Back: Let $f$ be continuous on $[a, b]$. Let $x, y \in [a, b]$ be points such that $x < y$ and $f(x) \neq f(y)$. Then $f$ takes on all values between $f(x)$ and $f(y)$ somewhere in $(x, y)$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761172862725-->
 END%%
@@ -296,21 +350,29 @@ END%%
 Basic
 What name is given to the following theorem?
 
-> Let $f$ be continuous over $[a, b]$. Let $x, y \in [a, b]$ such that $x < y$ and $f(x) \neq f(y)$. Then $f$ takes on every value between $f(x)$ and $f(y)$ in interval $(x, y)$.
+> Let $f$ be continuous on $[a, b]$. Let $x, y \in [a, b]$ such that $x < y$ and $f(x) \neq f(y)$. Then $f$ takes on every value between $f(x)$ and $f(y)$ in interval $(x, y)$.
 
 Back: The intermediate value theorem.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761172862743-->
 END%%
 
+%%ANKI
+Basic
+The intermediate value theorem presumes existence of what kind of functions?
+Back: Continuous functions on closed intervals.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334642893-->
+END%%
+
 ### Bolzano's Theorem
 
-Let $f$ be continuous over $[a, b]$ and assume $f(a)$ and $f(b)$ have opposite signs. Then there exists a $c \in (a, b)$ such that $f(c) = 0$.
+Let $f$ be continuous on $[a, b]$ and assume $f(a)$ and $f(b)$ have opposite signs. Then there exists a $c \in (a, b)$ such that $f(c) = 0$.
 
 %%ANKI
 Basic
 What does Bolzano's theorem state?
-Back: If $f$ is continuous over $[a, b]$ and $f(a)$ and $f(b)$ have opposite signs, then there exists a $c \in (a, b)$ such that $f(c) = 0$.
+Back: If $f$ is continuous on $[a, b]$ and $f(a)$ and $f(b)$ have opposite signs, then there exists a $c \in (a, b)$ such that $f(c) = 0$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761172862661-->
 END%%
@@ -334,7 +396,7 @@ END%%
 Basic
 What name is given to the following theorem?
 
-> Let $f$ be continuous over $[a, b]$. Assume $f(a)$ and $f(b)$ have opposite signs. Then there exists a $c \in (a, b)$ such that $f(c) = 0$.
+> Let $f$ be continuous on $[a, b]$. Assume $f(a)$ and $f(b)$ have opposite signs. Then there exists a $c \in (a, b)$ such that $f(c) = 0$.
 
 Back: Bolzano's theorem.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
@@ -364,6 +426,247 @@ Bolzano's theorem is typically used to prove what more general theorem?
 Back: The IVT.
 Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761173036255-->
+END%%
+
+%%ANKI
+Basic
+What does the "sign-preserving property" of continuous functions likely refer to?
+Back: If $f$ is continuous at $c$ and $f(c) \neq 0$, then there exists a neighborhood $N(c)$ such that the sign of $f(x)$ is the same as that of $f(c)$ for all $x \in N(c)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761172862653-->
+END%%
+
+## Extreme Value Theorem
+
+Let $f$ be a continuous function on $[a, b]$. Then there exist points $c, d \in [a, b]$ such that $f(c) = \mathop{\text{sup}} f$ and $f(d) = \mathop{\text{inf}} d$.
+
+%%ANKI
+Basic
+Let $f$ be a real-valued function on $[a, b]$. How is $\mathop{\text{sup}}f$ defined?
+Back: As $\mathop{\text{sup}}f = \mathop{\text{sup}} \{ f(x) \mid x \in [a, b] \}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334642901-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a real-valued function on $[a, b]$. How is $\mathop{\text{inf}}f$ defined?
+Back: As $\mathop{\text{inf}}f = \mathop{\text{inf}} \{ f(x) \mid x \in [a, b] \}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334642905-->
+END%%
+
+%%ANKI
+Basic
+What is EVT an acronym for?
+Back: The **e**xtreme **v**alue **t**heorem.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334642909-->
+END%%
+
+%%ANKI
+Cloze
+IVT is to {intermediate} whereas EVT is to {extreme}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334642912-->
+END%%
+
+%%ANKI
+Basic
+What does the extreme value theorem state?
+Back: Let $f$ be continuous on $[a, b]$. Then there exists a $c, d \in [a, b]$ such that $f(c) = \mathop{\text{sup}} f$ and $f(d) = \mathop{\text{inf}} f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334642916-->
+END%%
+
+%%ANKI
+Cloze
+Let $f$ be {continuous} on $[a, b]$. Then there exists a {$c, d \in [a, b]$} such that {$f(c) = \mathop{\text{sup} } f$} and {$f(d) = \mathop{\text{inf} } f$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334642919-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following theorem?
+
+> Let $f$ be a continuous function on $[a, b]$. Then there exist points $c, d \in [a, b]$ such that $f(c) = \mathop{\text{sup}} f$ and $f(d) = \mathop{\text{inf}} f$.
+
+Back: The extreme value theorem.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334642923-->
+END%%
+
+%%ANKI
+Basic
+The extreme value theorem presumes existence of what kind of functions?
+Back: Continuous functions on closed intervals.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334642926-->
+END%%
+
+### Boundedness Theorem
+
+Let $f$ be continuous on $[a, b]$. Then $f$ is bounded on $[a, b]$.
+
+This is typically proven using the method of successive bisection. Recursively bisect the interval containing a discontinuity. The supremum of left endpoints (or infimum of right endpoints) is a discontinuous point.
+
+%%ANKI
+Basic
+What does the boundedness theorem for continuous functions state?
+Back: If $f$ is continuous on $[a, b]$, then $f$ is bounded on $[a, b]$.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334166072-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a real-valued function on $[a, b]$. What does it mean for $f$ to be bounded?
+Back: There exists some $M \geq 0$ such that $\lvert f(x) \rvert \leq M$ for all $x \in [a, b]$.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334166074-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a real-valued function on $[a, b]$. What does it mean for $f$ to be unbounded?
+Back: For all $M \geq 0$, there exists a $c \in [a, b]$ such that $\lvert f(c) \rvert > M$.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334166077-->
+END%%
+
+%%ANKI
+Basic
+What specific technique does Apostol use to prove boundedness of continuous functions on closed intervals?
+Back: Successive bisection.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334166080-->
+END%%
+
+%%ANKI
+Basic
+How does the method of successive bisection typically work?
+Back: Repeatedly bisect an interval, recursing on the half of interest.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334166082-->
+END%%
+
+%%ANKI
+Basic
+Apostol first introduces the method of successive bisection when proving what?
+Back: The boundedness of continuous functions on closed intervals.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761334166063-->
+END%%
+
+### Uniform Continuity
+
+Let $f$ be continuous on $[a, b]$. The **span** of $f$ in interval $[a, b]$ is the difference $\mathop{\text{sup}} f - \mathop{\text{inf}} f$. Then for all $\epsilon > 0$, there exists a finite [[intervals#Partitions|partition]] of $f$ such that the span of $f$ in every subinterval is less than $\epsilon$.
+
+%%ANKI
+Basic
+Let $f$ be continuous on $[a, b]$. What does the span of $f$ in $[a, b]$ refer to?
+Back: The difference between the maximum and minimum value of $f$ over this interval.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761350019676-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = x$. What is the span of $f$ in $[0, 2]$?
+Back: $2 - 0 = 2$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761350019679-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = x^2$. What is the span of $f$ in $[-1, 1]$?
+Back: $1^2 - 0^2 = 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761350019682-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $[a, b]$. Let $M$ denote the maximum value of $f$ on this interval. How do we know $M$ exists?
+Back: The extreme value theorem states it does.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761350019666-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $[a, b]$. Let $m$ denote the minimum value of $f$ on this interval. How do we know $m$ exists?
+Back: The extreme value theorem states it does.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761350019686-->
+END%%
+
+%%ANKI
+Basic
+What does the theorem of uniform continuity presume existence of?
+Back: A continuous function on a closed interval.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761350661512-->
+END%%
+
+%%ANKI
+Basic
+What does the theorem of uniform continuity state?
+Back: Let $f$ be continuous on $[a, b]$. For all $\epsilon > 0$, there exists a finite partition of $[a, b]$ such that the span of $f$ on each subinterval is less than $\epsilon$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761350661519-->
+END%%
+
+%%ANKI
+Cloze
+Let $f$ be {1:continuous} on {1:$[a, b]$}. For all {2:$\epsilon > 0$}, there exists a {3:finite partition of $[a, b]$} such that the {4:span of $f$} on each {4:subinterval} is {2:less than $\epsilon$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761350661522-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following theorem?
+
+> Let $f$ be continuous on closed interval $[a, b]$. Then, for every $\epsilon > 0$, there is a partition of $[a, b]$ into a finite number of subintervals such that the span of $f$ in every subinterval is less than $\epsilon$.
+
+Back: The theorem on uniform continuity.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761350661525-->
+END%%
+
+%%ANKI
+Basic
+The "small-span theorem for continuous functions" is usually known as what?
+Back: The theorem on uniform continuity.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761350661528-->
+END%%
+
+%%ANKI
+Basic
+Which theorem is used to prove "simultaneous continuity" of many points on an interval?
+Back: The theorem on uniform continuity.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761350661532-->
+END%%
+
+%%ANKI
+Basic
+What specific technique does Apostol use to prove the theorem on uniform continuity?
+Back: Successive bisection.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761350878162-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $[a, b]$. How does the span of $f$ in $[a, b]$ relate to a span of $f$ in a subinterval of $[a, b]$?
+Back: The span of the subinterval must be smaller.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761398087488-->
 END%%
 
 ## Bibliography

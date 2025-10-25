@@ -244,7 +244,7 @@ END%%
 
 ## Insertions
 
-A node of a B-tree of order $m$ is considered full when it has $m$ children (or equivalently $m - 1$ keys). Insertion operates analagously to a binary tree. If the node the key was inserted into then contains $m$ keys, split the node into two and place the median into the original parent node. This action may propagate upwards. If the root node becomes full, create a new root containing the median of the original root.
+A node of a B-tree of order $m$ is considered full when it has $m$ children (or equivalently $m - 1$ keys). Insertion operates analogously to a binary tree. If the node the key was inserted into then contains $m$ keys, split the node into two and place the median into the original parent node. This action may propagate upwards. If the root node becomes full, create a new root containing the median of the original root.
 
 %%ANKI
 Cloze

@@ -8,13 +8,15 @@ tags:
 
 ## Overview
 
+**Computability theory** focuses on the classification of problems as either solvable or not whereas **complexity theory** focuses on whether problems are easy or hard.
+
+## Alphabets
+
 An **alphabet** is any nonempty finite set. The members of an alphabet are called **symbols** of the alphabet. A **string over an alphabet** is a finite sequence of symbols from that alphabet, usually written next to one another without separation.
 
 Then **length** of a string $w$ over an alphabet, denoted $\lvert w \rvert$, is the number of symbols $w$ contains. The **empty string**, denoted $\epsilon$, is the string of length $0$. The **reverse** of $w$ is the string obtained by writing $w$ in the opposite order.
 
 String $z$ is a **substring** of $w$ if $z$ appears consecutively within $w$. The **concatenation** of strings $x$ and $y$, written $xy$, is the string obtained by appending $y$ to the end of $x$. We say string $x$ is a **prefix** of string $y$ if a string $z$ exists where $xz = y$. We say $x$ is a **proper prefix** of $y$ if $x \neq y$.
-
-A **language** is a set of strings. A language is **prefix-free** if no member is a proper prefix of another member.
 
 %%ANKI
 Basic
@@ -238,6 +240,14 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1734903366702-->
 END%%
 
+## Languages
+
+A **language** is a set of strings.
+
+A language is **prefix-free** if no member is a proper prefix of another member. Likewise it is **suffix-free** if no member is a proper suffix of another member.
+
+For any language $A$, the **endmarked language** $A{\dashv}$ is the collection of strings $w{\dashv}$ where $w \in A$.
+
 %%ANKI
 Basic
 What is a language?
@@ -274,6 +284,30 @@ What does it mean for a language to be suffix-free?
 Back: No member is a proper suffix of another member.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1734903366720-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is a language. How is the corresponding endmarked language denoted?
+Back: As $A{\dashv}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761272689476-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a language. How is $A{\dashv}$ defined?
+Back: As $\{ w{\dashv} \mid w \in A \}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761272689483-->
+END%%
+
+%%ANKI
+Basic
+What is an endmarked language?
+Back: A language augmented such that each member includes a trailing $\dashv$ symbol.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761272689485-->
 END%%
 
 ## Bibliography

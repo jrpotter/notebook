@@ -336,7 +336,7 @@ END%%
 
 %%ANKI
 Basic
-Which property of partitions is analagous to the law of contradiction on "logical space"?
+Which property of partitions is analogous to the law of contradiction on "logical space"?
 Back: Disjointedness.
 Reference: “Law of Noncontradiction,” in _Wikipedia_, June 14, 2024, [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1229006759).
 <!--ID: 1721354092798-->
@@ -344,7 +344,7 @@ END%%
 
 %%ANKI
 Basic
-Which property of partitions is analagous to the law of excluded middle on "logical space"?
+Which property of partitions is analogous to the law of excluded middle on "logical space"?
 Back: Exhaustiveness.
 Reference: “Law of Noncontradiction,” in _Wikipedia_, June 14, 2024, [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1229006759).
 <!--ID: 1721354092801-->
@@ -674,7 +674,7 @@ END%%
 
 %%ANKI
 Cloze
-For state $s$ and array $b$, {$(s; x{:}s(x))$} is analagous to {$(b; i{:}b[i])$}.
+For state $s$ and array $b$, {$(s; x{:}s(x))$} is analogous to {$(b; i{:}b[i])$}.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1713793130104-->
 END%%

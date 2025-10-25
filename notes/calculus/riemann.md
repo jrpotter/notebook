@@ -51,7 +51,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable over $[a, b]$. How is $\int_b^a f(x) \,dx$ defined?
+Let $f$ be Riemann integrable on $[a, b]$. How is $\int_b^a f(x) \,dx$ defined?
 Back: As $-\int_a^b f(x) \,dx$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734816555507-->
@@ -59,7 +59,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable over $[a, b]$. What does $\int_a^b f(x) \,dx$ evaluate to after swapping integration limits?
+Let $f$ be Riemann integrable on $[a, b]$. What does $\int_a^b f(x) \,dx$ evaluate to after swapping integration limits?
 Back: $-\int_b^a f(x) \,dx$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734816555515-->
@@ -67,7 +67,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable over $[a, b]$. What does $\int_a^a f(x) \,dx$ evaluate to?
+Let $f$ be Riemann integrable on $[a, b]$. What does $\int_a^a f(x) \,dx$ evaluate to?
 Back: $0$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734816555518-->
@@ -328,7 +328,7 @@ END%%
 
 %%ANKI
 Basic
-Let $s$ be a step function over $[a, b]$. How is Riemann integral $\int_a^b s(x) \,dx$ defined?
+Let $s$ be a step function on $[a, b]$. How is Riemann integral $\int_a^b s(x) \,dx$ defined?
 Back: Given partition $P = \{x_0 = a, x_1, \ldots, x_n = b\}$ with constant value $s_k$ on the $k$th open subinterval, $$\int_a^b s(x) \,dx = \sum_{k=1}^n s_k \cdot (x_k - x_{k - 1})$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734816555512-->
@@ -477,12 +477,12 @@ END%%
 
 ### Integrand Additivity
 
-Let $f$ and $g$ be Riemann integrable over $[a, b]$. Then $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$
+Let $f$ and $g$ be Riemann integrable on $[a, b]$. Then $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$
 
 %%ANKI
 Basic
 Assume Riemann integrals. What does the additivity property w.r.t. the integrand state?
-Back: Let $f$ and $g$ be integrable over $[a, b]$. Then $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx.$$
+Back: Let $f$ and $g$ be integrable on $[a, b]$. Then $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx.$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463659-->
 END%%
@@ -498,7 +498,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ and $g$ be Riemann integrable over $[a, b]$. How is the following more compactly written? $$\int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$
+Let $f$ and $g$ be Riemann integrable on $[a, b]$. How is the following more compactly written? $$\int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$
 Back: As $\int_a^b f(x) + g(x) \,dx$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463673-->
@@ -522,14 +522,14 @@ END%%
 
 ### Vertical Scaling
 
-Let $f$ be Riemann integrable over $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c\int_a^b f(x) \,dx.$$
+Let $f$ be Riemann integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c\int_a^b f(x) \,dx.$$
 
 This is also known as the **homogeneous property**.
 
 %%ANKI
 Basic
 What does the homogeneous property of Riemann integrals state?
-Back: Let $f$ be integrable over $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c \int_a^b f(x) \,dx.$$
+Back: Let $f$ be integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c \int_a^b f(x) \,dx.$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463679-->
 END%%
@@ -537,7 +537,7 @@ END%%
 %%ANKI
 Basic
 What does the vertical scaling property of Riemann integrals state?
-Back: Let $f$ be integrable over $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c \int_a^b f(x) \,dx.$$
+Back: Let $f$ be integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c \int_a^b f(x) \,dx.$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735744900572-->
 END%%
@@ -567,12 +567,12 @@ END%%
 
 ### Linearity
 
-Let $f$ and $g$ be Riemann integrable over $[a, b]$. Let $c_1, c_2 \in \mathbb{R}$. Then $$\int_a^b [c_1f(x) + c_2g(x)] \,dx = c_1 \int_a^b f(x) \,dx + c_2 \int_a^b g(x) \,dx$$
+Let $f$ and $g$ be Riemann integrable on $[a, b]$. Let $c_1, c_2 \in \mathbb{R}$. Then $$\int_a^b [c_1f(x) + c_2g(x)] \,dx = c_1 \int_a^b f(x) \,dx + c_2 \int_a^b g(x) \,dx$$
 
 %%ANKI
 Basic
 What does the linearity property of Riemann integrals state?
-Back: Let $f$ and $g$ be integrable over $[a, b]$ and $c_1, c_2 \in \mathbb{R}$. Then $$\int_a^b [c_1 f(x) + c_2 g(x)] \,dx = c_1 \int_a^b f(x) \,dx + c_2 \int_a^b g(x) \,dx$$
+Back: Let $f$ and $g$ be integrable on $[a, b]$ and $c_1, c_2 \in \mathbb{R}$. Then $$\int_a^b [c_1 f(x) + c_2 g(x)] \,dx = c_1 \int_a^b f(x) \,dx + c_2 \int_a^b g(x) \,dx$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734814463699-->
 END%%
@@ -602,19 +602,19 @@ END%%
 
 ### Comparison Theorem
 
-Let $f$ and $b$ be Riemann integrable over $[a, b]$. If $f(x) \leq g(x)$ for all $x \in [a, b]$, then $$\int_a^b f(x) \,dx \leq \int_a^b g(x) \,dx$$
+Let $f$ and $b$ be Riemann integrable on $[a, b]$. If $f(x) \leq g(x)$ for all $x \in [a, b]$, then $$\int_a^b f(x) \,dx \leq \int_a^b g(x) \,dx$$
 
 %%ANKI
 Basic
 What does the comparison theorem for Riemann integrals state?
-Back: Let $f$ and $g$ be integrable over $[a, b]$. If $f(x) \leq g(x)$ for all $x \in [a, b]$, then $$\int_a^b f(x) \,dx \leq \int_a^b g(x) \,dx.$$
+Back: Let $f$ and $g$ be integrable on $[a, b]$. If $f(x) \leq g(x)$ for all $x \in [a, b]$, then $$\int_a^b f(x) \,dx \leq \int_a^b g(x) \,dx.$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734815755275-->
 END%%
 
 %%ANKI
 Basic
-Let $f$ and $g$ be Riemann integrable over $[a, b]$ such that $f(x) \leq g(x)$ for all $x \in [a, b]$. What is the following called? $$\int_a^b f(x) \,dx \leq \int_a^b g(x) \,dx$$
+Let $f$ and $g$ be Riemann integrable on $[a, b]$ such that $f(x) \leq g(x)$ for all $x \in [a, b]$. What is the following called? $$\int_a^b f(x) \,dx \leq \int_a^b g(x) \,dx$$
 Back: The comparison theorem.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1734815755282-->
@@ -683,12 +683,12 @@ END%%
 
 ### Invariance Under Translation
 
-Let $f$ be Riemann integrable over $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b f(x) \,dx = \int_{a+c}^{b+c} f(x - c) \,dx$$
+Let $f$ be Riemann integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b f(x) \,dx = \int_{a+c}^{b+c} f(x - c) \,dx$$
 
 %%ANKI
 Basic
 What does the invariance under translation propery of Riemann integrals state?
-Back: Let $f$ be integrable over $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b f(x) \,dx = \int_{a+c}^{b+c} f(x - c) \,dx$$
+Back: Let $f$ be integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b f(x) \,dx = \int_{a+c}^{b+c} f(x - c) \,dx$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735616354212-->
 END%%
@@ -719,7 +719,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable over $[a, b]$ and $g(x) = f(x - c)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
+Let $f$ be Riemann integrable on $[a, b]$ and $g(x) = f(x - c)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
 Back: $\int_{a+c}^{b+c} g(x) \,dx$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735616354220-->
@@ -727,7 +727,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable over $[a, b]$ and $g(x) = f(x + c)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
+Let $f$ be Riemann integrable on $[a, b]$ and $g(x) = f(x + c)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
 Back: $\int_{a-c}^{b-c} g(x) \,dx$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735616354222-->
@@ -772,7 +772,7 @@ Let $f$ be Riemann integrable on $[a, b]$. Then for all $k \in \mathbb{R}$ such 
 %%ANKI
 Basic
 What does the horizontal scaling property of Riemann integrals state?
-Back: Let $f$ be integrable over $[a, b]$ and $k \in \mathbb{R}$ s.t. $k \neq 0$. Then $$\int_a^b f(x) \,dx = \frac{1}{k} \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx.$$
+Back: Let $f$ be integrable on $[a, b]$ and $k \in \mathbb{R}$ s.t. $k \neq 0$. Then $$\int_a^b f(x) \,dx = \frac{1}{k} \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx.$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735743913556-->
 END%%
@@ -787,7 +787,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable over $[a, b]$ and $g(x) = f(x / k)$. What integral of $g(x)$ equals $\int_a^b f(x) \,dx$?
+Let $f$ be Riemann integrable on $[a, b]$ and $g(x) = f(x / k)$. What integral of $g(x)$ equals $\int_a^b f(x) \,dx$?
 Back: $\frac{1}{k} \int_{ka}^{kb} g(x) \,dx$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735743913575-->
@@ -795,7 +795,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable over $[a, b]$ and $g(x) = f(kx)$. What integral of $g(x)$ equals $\int_a^b f(x) \,dx$?
+Let $f$ be Riemann integrable on $[a, b]$ and $g(x) = f(kx)$. What integral of $g(x)$ equals $\int_a^b f(x) \,dx$?
 Back: $k \int_{a/k}^{b/k} g(x) \,dx$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735743913580-->
@@ -850,12 +850,12 @@ END%%
 
 ### Reflection
 
-The reflection properties are special cases of the vertical and horizontal scaling properties. Let $f$ be Riemann integrable over $[a, b]$. Then $$\int_a^b f(x) \,dx = -\int_a^b -f(x) \,dx \quad\text{and}\quad \int_a^b f(x) \,dx = \int_{-b}^{-a} f(-x) \,dx.$$
+The reflection properties are special cases of the vertical and horizontal scaling properties. Let $f$ be Riemann integrable on $[a, b]$. Then $$\int_a^b f(x) \,dx = -\int_a^b -f(x) \,dx \quad\text{and}\quad \int_a^b f(x) \,dx = \int_{-b}^{-a} f(-x) \,dx.$$
 
 %%ANKI
 Basic
 What does the horizontal reflection property of Riemann integrals state?
-Back: Let $f$ be integrable over $[a, b]$. Then $$\int_a^b f(x) \,dx = \int_{-b}^{-a} f(-x) \,dx.$$
+Back: Let $f$ be integrable on $[a, b]$. Then $$\int_a^b f(x) \,dx = \int_{-b}^{-a} f(-x) \,dx.$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735744900576-->
 END%%
@@ -863,7 +863,7 @@ END%%
 %%ANKI
 Basic
 What does the vertical reflection property of Riemann integrals state?
-Back: Let $f$ be integrable over $[a, b]$. Then $$\int_a^b f(x) \,dx = -\int_{a}^{b} -f(x) \,dx.$$
+Back: Let $f$ be integrable on $[a, b]$. Then $$\int_a^b f(x) \,dx = -\int_{a}^{b} -f(x) \,dx.$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1735745285987-->
 END%%

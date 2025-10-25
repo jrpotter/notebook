@@ -622,7 +622,7 @@ END%%
 
 %%ANKI
 Basic
-The `owl:Restriction` resource is analagous to what set-theoretic operation?
+The `owl:Restriction` resource is analogous to what set-theoretic operation?
 Back: The restriction ($\restriction$).
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1751735628478-->
