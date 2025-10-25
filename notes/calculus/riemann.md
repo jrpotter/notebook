@@ -1073,6 +1073,22 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1751751704329-->
 END%%
 
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$. What is the dividend used when computing $f$'s average value?
+Back: $\int_a^b f(x) dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321479-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$. What is the divisor used when computing $f$'s average value?
+Back: $b - a$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321480-->
+END%%
+
 ## Indefinite Integrals
 
 Let $f$ be a function such that the integral $\int_a^x f(t) \,dt$ exists for each $x$ in an interval $[a, b]$. The function $F$, an **indefinite integral of $f$**, is given by $$F(x) = \int_a^x f(t) \,dt, \quad a \leq x \leq b.$$

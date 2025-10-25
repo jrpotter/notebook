@@ -669,6 +669,101 @@ Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, 
 <!--ID: 1761398087488-->
 END%%
 
+## Integrability
+
+Let $f$ be continuous on $[a, b]$. Then $f$ is [[riemann|Riemann integrable]] on $[a, b]$.
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$. Is $f$ continuous?
+Back: Not necessarily.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321488-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $[a, b]$. Is $f$ Riemann integrable?
+Back: Yes.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321489-->
+END%%
+
+%%ANKI
+Basic
+What is the simplest example of a function, Riemann integrable on a closed interval, that isn't continuous?
+Back: A step function.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321490-->
+END%%
+
+%%ANKI
+Basic
+What is the simplest example of a function, continuous on a closed interval, that isn't Riemann integrable?
+Back: N/A. All continuous functions are integrable on closed intervals.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321491-->
+END%%
+
+%%ANKI
+Basic
+Which theorem does Apostol lean on to prove Riemann integrability of continuous functions on closed intervals?
+Back: The theorem on uniform continuity.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321492-->
+END%%
+
+### Mean Value Theorem
+
+Let $f$ be continuous on $[a, b]$. Then there exists some $c \in [a, b]$ such that $$\int_a^b f(x) \,dx = f(c)(b - a).$$
+
+%%ANKI
+Basic
+What is MVT an acronym for?
+Back: The **m**ean **v**alue **t**heorem.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321493-->
+END%%
+
+%%ANKI
+Cloze
+MVT is to {mean} whereas IVT is to {intermediate}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321494-->
+END%%
+
+%%ANKI
+Basic
+What does the mean value theorem state?
+Back: Let $f$ be continuous on $[a, b]$. Then there exists a $c \in [a, b]$ such that $$\int_a^b f(x) \,dx = f(c)(b - a).$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321495-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $[a, b]$. What relationship exists between MVT and the average value of $f$?
+Back: MVT states there exists some $c \in [a, b]$ such that $f(c)$ equals the average value of $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321496-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$. What additional condition(s) must be satisfied before we can find its average value?
+Back: N/A. Integrability is sufficient.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321497-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$. What additional condition(s) must be satisfied before we can apply the mean value theorem?
+Back: $f$ must also be continuous on $[a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321498-->
+END%%
+
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

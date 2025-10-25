@@ -694,7 +694,7 @@
     "combinatorics/additive-principle.md": "d036ac511e382d5c1caca437341a5915",
     "calculus/intervals.md": "b378c89b541dd55e34c0cf78b1884fad",
     "calculus/integrals.md": "6f559f8fbe1ee1fa20bce5f19466a0cc",
-    "calculus/index.md": "5ee4d950533ae330ca5ef9e113fe87f3",
+    "calculus/index.md": "e550fee2c623e57c6cfcaf5375ebe716",
     "calculus/bounds.md": "bfd0e44ec6022b9b47d1ddc094810db6",
     "c17/types/index.md": "1585aff201777f358d46bb9f1b2972f6",
     "c17/types/conversions.md": "3409bda8d4ed4dd82bd43fb274677fb7",
@@ -1709,10 +1709,10 @@
     "_journal/2025-10/2025-10-19.md": "3b75e9ccd1a230b3dd7b3367d5520ce7",
     "formal_system/phrase-structure.md": "b89cd837b6cb4fcbb0d790dc5d7ebe38",
     "calculus/riemann_integrals.md": "ff39b163c6719ccb65b2aac54c583ad8",
-    "calculus/riemann.md": "6843acfb44d6ec3094c422996a057674",
+    "calculus/riemann.md": "e2d89917468c9f613aaa2c4b16150444",
     "_journal/2025-10-21.md": "afa7eaf4e85392cea5587f263a52e246",
     "_journal/2025-10/2025-10-20.md": "c9a30dfe5b534cc5ac34145dba765d28",
-    "calculus/continuity.md": "3072de4666102d9215e2b4d8ad132c76",
+    "calculus/continuity.md": "c6f2f9f10a9aaf7f3f05388cfee51d65",
     "_journal/2025-10-22.md": "c4fedcaf6d2622cc79eedc07b1ef851d",
     "_journal/2025-10/2025-10-21.md": "afa7eaf4e85392cea5587f263a52e246",
     "data_structures/trees/binary_search_tree.md": "7fac996d0b6d6b8d845c76aaad8a759f",
@@ -1726,8 +1726,9 @@
     "_journal/2025-10/2025-10-23.md": "5a8dbe6c60db5acfedda392a6ffcf123",
     "computability/context-free/deterministic.md": "43e929a866c082bea1dd8fbbdc1f3d59",
     "computability/context-free/index.md": "a061b58164cacb3b5a14871351579719",
-    "_journal/2025-10-25.md": "82fe5e724b3b227287fec0f7bd015ce8",
-    "_journal/2025-10/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532"
+    "_journal/2025-10-25.md": "4b2880bc26820f2503ece6a1c00a5820",
+    "_journal/2025-10/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
+    "calculus/derivatives.md": "7b5af18630f64ab43dfb96183ba77d59"
   },
   "fields_dict": {
     "Basic": [
