@@ -30,7 +30,7 @@ struct addrinfo {
 For Internet-facing code:
 
 * The `ai_family` field indicates which address family is being used.
-	* `AF_INET` or `AF_INET6` are used for [[ipv4|IPv4]] and [[ipv6|IPv6]] respectively.
+	* `AF_INET` or `AF_INET6` are used for [[ip#IPv45|IPv4]] and [[ip#IPv6|IPv6]] respectively.
 	* `AF_UNSPEC` can be provided instead if IPv4 or IPv6 can be used.
 * The `ai_socktype` field indicates which socket type is being used.
 	* `SOCK_STREAM` or `SOCK_DGRAM` are used for [[tcp|TCP]] and [[udp|UDP]] respectively.

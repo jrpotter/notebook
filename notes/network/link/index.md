@@ -1,30 +1,30 @@
 ---
-title: Transport Layer
+title: Link Layer
 TARGET DECK: Obsidian::STEM
-FILE TAGS: network::transport
+FILE TAGS: network::link
 tags:
+  - link
   - network
-  - transport
 ---
 
 ## Overview
 
-The L4 layer in the [[osi|OSI]] model refers to the transport layer.
+The L2 layer in the [[osi|OSI]] model refers to the link layer.
 
 %%ANKI
 Basic
-PDUs at the transport layer are typically called what?
-Back: Segments.
+PDUs at the link layer are typically called what?
+Back: Frames.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1761433076314-->
+<!--ID: 1761433076299-->
 END%%
 
 %%ANKI
 Basic
-Segments refer to PDUs at what OSI layer?
-Back: The transport layer (L4).
+Frames refer to PDUs at what OSI layer?
+Back: The link layer (L2).
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1761433076317-->
+<!--ID: 1761433076304-->
 END%%
 
 ## Bibliography

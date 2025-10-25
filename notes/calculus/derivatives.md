@@ -98,6 +98,75 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1761422321478-->
 END%%
 
+%%ANKI
+Cloze
+{Velocity} is the {first} derivative of {position}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761433076321-->
+END%%
+
+%%ANKI
+Cloze
+{Acceleration} is the {second} derivative of {position}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761433076324-->
+END%%
+
+%%ANKI
+Cloze
+{Acceleration} is the {first} derivative of {velocity}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761433076327-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = c$ for some $c \in \mathbb{R}$. What does $f'(x)$ evaluate to?
+Back: $f'(x) = 0$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761433076331-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = mx + b$ for some $m, b \in \mathbb{R}$. What does $f'(x)$ evaluate to?
+Back: $f'(x) = m$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761433076334-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = x^n$ for some $n \in \mathbb{N}$. What does $f'(x)$ evaluate to?
+Back: $f'(x) = nx^{n-1}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761433076337-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \sin{x}$. What does $f'(x)$ evaluate to?
+Back: $f'(x) = \cos{x}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761433076340-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \cos{x}$. What does $f'(x)$ evaluate to?
+Back: $f'(x) = -\sin{x}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761433076344-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = x^{1/n}$. What does $f'(x)$ evaluate to?
+Back: $f'(x) = \frac{1}{n}x^{1/n - 1}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761433076347-->
+END%%
+
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

@@ -1,30 +1,30 @@
 ---
-title: Transport Layer
+title: Internetwork Layer
 TARGET DECK: Obsidian::STEM
-FILE TAGS: network::transport
+FILE TAGS: network::ip
 tags:
+  - ip
   - network
-  - transport
 ---
 
 ## Overview
 
-The L4 layer in the [[osi|OSI]] model refers to the transport layer.
+The L3 layer in the [[osi|OSI]] model refers to the internetwork (or just network) layer.
 
 %%ANKI
 Basic
-PDUs at the transport layer are typically called what?
-Back: Segments.
+PDUs at the internetwork layer are typically called what?
+Back: Packets.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1761433076314-->
+<!--ID: 1761433076308-->
 END%%
 
 %%ANKI
 Basic
-Segments refer to PDUs at what OSI layer?
-Back: The transport layer (L4).
+Packets refer to PDUs at what OSI layer?
+Back: The internetwork layer (L3).
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1761433076317-->
+<!--ID: 1761433076311-->
 END%%
 
 ## Bibliography
