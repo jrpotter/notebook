@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-The L3 layer in the [[osi|OSI]] model refers to the internetwork (or just network) layer.
+The L3 layer in the [[osi|OSI]] model refers to the internetwork (or just network) layer. PDUs at this layer are typically called **packets**.
 
 %%ANKI
 Basic

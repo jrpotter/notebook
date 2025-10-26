@@ -466,14 +466,11 @@ END%%
 
 ## Arithmetic Properties
 
-Let $f$ and $g$ be functions such that $$\lim_{x \rightarrow p} f(x) = A \quad\text{and}\quad \lim_{x \rightarrow p} g(x) = B.$$
+The following identities assume $f$ and $g$ are functions such that $$\lim_{x \rightarrow p} f(x) = A \quad\text{and}\quad \lim_{x \rightarrow p} g(x) = B.$$
 
-Then
+### Addition
 
-* $\lim_{x \rightarrow p} \left[ f(x) + g(x) \right] = A + B$,
-* $\lim_{x \rightarrow p} \left[ f(x) - g(x) \right] = A - B$,
-* $\lim_{x \rightarrow p} \left[ f(x) \cdot g(x) \right] = A \cdot B$,
-* $\lim_{x \rightarrow p} \left[ f(x) \div g(x) \right] = A \div B$ if $B \neq 0$.
+$$\lim_{x \rightarrow p} \left[ f(x) + g(x) \right] = A + B$$
 
 %%ANKI
 Basic
@@ -483,6 +480,10 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1753386691578-->
 END%%
 
+### Subtraction
+
+$$\lim_{x \rightarrow p} \left[ f(x) - g(x) \right] = A - B$$
+
 %%ANKI
 Basic
 Suppose $f(x) \rightarrow A$ and $g(x) \rightarrow B$ as $x \rightarrow p$. What does the following equal? $$\lim_{x \rightarrow p} \left[ f(x) - g(x) \right]$$
@@ -491,6 +492,10 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1753386691582-->
 END%%
 
+### Multiplication
+
+$$\lim_{x \rightarrow p} \left[ f(x) \cdot g(x) \right] = A \cdot B$$
+
 %%ANKI
 Basic
 Suppose $f(x) \rightarrow A$ and $g(x) \rightarrow B$ as $x \rightarrow p$. What does the following equal? $$\lim_{x \rightarrow p} \left[ f(x) \cdot g(x) \right]$$
@@ -498,6 +503,10 @@ Back: $A \cdot B$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1753386691583-->
 END%%
+
+### Division
+
+If $B \neq 0$, $$\lim_{x \rightarrow p} \left[ f(x) \div g(x) \right] = A \div B$$
 
 %%ANKI
 Basic

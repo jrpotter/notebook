@@ -61,6 +61,14 @@ END%%
 
 %%ANKI
 Basic
+IEEE 754 refers to the set of standards related to what?
+Back: Floating-point.
+Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
+<!--ID: 1761495550087-->
+END%%
+
+%%ANKI
+Basic
 What alternative name does IEEE Standard 754 go by?
 Back: IEEE floating-point.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

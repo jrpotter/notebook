@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-The L4 layer in the [[osi|OSI]] model refers to the transport layer.
+The L4 layer in the [[osi|OSI]] model refers to the transport layer. PDUs at this layer are typically called **segments**.
 
 %%ANKI
 Basic

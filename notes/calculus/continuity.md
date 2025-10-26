@@ -675,7 +675,7 @@ Let $f$ be continuous on $[a, b]$. Then $f$ is [[riemann|Riemann integrable]] on
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable on $[a, b]$. Is $f$ continuous?
+Let $f$ be Riemann integrable on $[a, b]$. Is $f$ continuous on $[a, b]$?
 Back: Not necessarily.
 Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761422321488-->
@@ -683,7 +683,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be continuous on $[a, b]$. Is $f$ Riemann integrable?
+Let $f$ be continuous on $[a, b]$. Is $f$ Riemann integrable on $[a, b]$?
 Back: Yes.
 Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761422321489-->
@@ -762,6 +762,58 @@ Let $f$ be Riemann integrable on $[a, b]$. What additional condition(s) must be 
 Back: $f$ must also be continuous on $[a, b]$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761422321498-->
+END%%
+
+## Differentiability
+
+Let $f$ be a function differentiable at $x$. Then $f$ is continuous at $x$.
+
+%%ANKI
+Basic
+Let $f$ be differentiable on $(a, b)$. Is $f$ continuous on $(a, b)$?
+Back: Yes.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761499926047-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $(a, b)$. Is $f$ differentiable on $(a, b)$?
+Back: Not necessarily.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761499926050-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \lvert x \rvert$. Why isn't $f$ continuous at $0$?
+Back: N/A. It is.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761499926053-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \lvert x \rvert$. Why isn't $f$ differentiable at $0$?
+Back: The left- and right-hand limits of $f$ at $0$ disagree.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761499926056-->
+END%%
+
+%%ANKI
+Basic
+How does differentiability relate to continuity?
+Back: If $f$ is differentiable at a point, it is continuous at the point.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761499926059-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f$ is differentiable at $x$. *Why* does $f(x + h) \rightarrow f(x)$ as $h \rightarrow 0$?
+Back: Because differentiability implies continuity.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761500315897-->
 END%%
 
 ## Bibliography

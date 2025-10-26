@@ -517,6 +517,8 @@ A **context-free grammar** (CFG) is a $4$-tuple $\langle V, \Sigma, R, S \rangle
 
 If $u$, $v$, and $w$ are strings of variables and terminals, and $A \rightarrow w$, we say that $uAv$ **yields** $uwv$ (denoted $uAv \Rightarrow uwv$). We say $u$ **derives** $v$ (denoted $u \overset{*}{\Rightarrow} v$), if $u = v$ or if a sequence $u_1, u_2, \ldots, u_k$ exists for $k \geq 0$ and $$u \Rightarrow u_1 \Rightarrow u_2 \Rightarrow \cdots \Rightarrow u_k \Rightarrow v.$$
 
+A **derivation** of $w$ is a sequence of substitution steps, beginning with the start variable, that produces $w$.
+
 %%ANKI
 Basic
 What is CFG an acronym for?
@@ -820,6 +822,14 @@ Cloze
 A derivation replaces the {1:left}-hand side of a rule with the {1:right}-hand side.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761399879313-->
+END%%
+
+%%ANKI
+Basic
+With respect to CFGs, what is a derivation of string $w$?
+Back: A derivation from the start variable to $w$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761497557841-->
 END%%
 
 ### Ambiguity
