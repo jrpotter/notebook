@@ -1,5 +1,9 @@
 ---
 title: Calculus
+TARGET DECK: Obsidian::STEM
+FILE TAGS: calculus
+tags:
+  - calculus
 ---
 
 ## Overview
@@ -24,7 +28,7 @@ END%%
 
 %%ANKI
 Basic
-What is the central idea of integral calculus?
+What is the central concept of integral calculus?
 Back: The integral.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761422321483-->
@@ -32,7 +36,7 @@ END%%
 
 %%ANKI
 Basic
-What is the central idea of differential calculus?
+What is the central concept of differential calculus?
 Back: The derivative.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761422321484-->

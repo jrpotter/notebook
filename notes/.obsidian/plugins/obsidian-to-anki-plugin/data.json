@@ -694,7 +694,7 @@
     "combinatorics/additive-principle.md": "d036ac511e382d5c1caca437341a5915",
     "calculus/intervals.md": "b378c89b541dd55e34c0cf78b1884fad",
     "calculus/integrals.md": "6f559f8fbe1ee1fa20bce5f19466a0cc",
-    "calculus/index.md": "e550fee2c623e57c6cfcaf5375ebe716",
+    "calculus/index.md": "7ba7057aea65f16ffa019a7287ef006c",
     "calculus/bounds.md": "bfd0e44ec6022b9b47d1ddc094810db6",
     "c17/types/index.md": "1585aff201777f358d46bb9f1b2972f6",
     "c17/types/conversions.md": "3409bda8d4ed4dd82bd43fb274677fb7",
@@ -1732,7 +1732,9 @@
     "network/link/index.md": "fbb35fb2dd888fe184ec166c86697890",
     "network/internetwork/ip.md": "471dfbed7d5972a79f60bfa9ffdeb371",
     "network/internetwork/index.md": "7d877215f5c87b124c095a718b84c9f5",
-    "network/infrastructure.md": "d7bb99a45f2e852334d3ee59b2c2bd3d"
+    "network/infrastructure.md": "d7bb99a45f2e852334d3ee59b2c2bd3d",
+    "_journal/2025-10-26.md": "cdb15c6ab3cdfb9b4951304448d9dfa4",
+    "_journal/2025-10/2025-10-25.md": "1267c24ab6e563cc2331c8a2ae260460"
   },
   "fields_dict": {
     "Basic": [

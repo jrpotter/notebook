@@ -695,7 +695,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* should parameter references by surrounded with parentheses in a macro's replacement text?
+*Why* should parameter references be surrounded with parentheses in a macro's replacement text?
 Back: To avoid any ambiguity in the resulting expansion.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757512543819-->
