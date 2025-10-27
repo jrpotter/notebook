@@ -1321,7 +1321,7 @@ struct foo {
 ```
 Back: `16`
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1730902219825-->
 END%%
 
@@ -1336,7 +1336,7 @@ struct foo {
 ```
 Back: `4`
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1730902219830-->
 END%%
 
@@ -1367,7 +1367,7 @@ struct foo {
 ```
 Back: At least `2`.
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1759529892645-->
 END%%
 
@@ -1608,7 +1608,7 @@ char pad[1]; // 1 byte
 short x;     // 2 bytes
 ```
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1730902219762-->
 END%%
 
@@ -1628,7 +1628,7 @@ char pad[2]; // 2 bytes
 float f;     // 4 bytes
 ```
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1730902219769-->
 END%%
 
@@ -1644,7 +1644,7 @@ int x;
 ```
 Back: $0$
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1730902219773-->
 END%%
 
@@ -1660,7 +1660,7 @@ int x;
 ```
 Back: Between $0$ and $7$ inclusive.
 Reference: Raymond, Eric. “The Lost Art of Structure Packing.” Accessed November 4, 2024. [http://www.catb.org/esr/structure-packing/](http://www.catb.org/esr/structure-packing/).
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1730902219776-->
 END%%
 

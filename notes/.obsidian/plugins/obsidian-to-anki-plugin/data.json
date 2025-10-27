@@ -1642,8 +1642,8 @@
     "_journal/2025-09/2025-09-29.md": "64b3b9aba0384529edb2665281fc0742",
     "c23/index.md": "6deb7d55204ccb2dd954e5cb9306e061",
     "c23/declarations.md": "5baa7c9016166fdd4cf3af0b8bad588d",
-    "c23/types/simple.md": "cf3a1b49effd2e6dad78f0187c616691",
-    "c23/types/index.md": "d8ecf7263bb235320783cc63781d349d",
+    "c23/types/simple.md": "30bb67ff62b604ccfcfc5bc56d251df8",
+    "c23/types/index.md": "43ce4269ff382f88f766e46a586a9a9e",
     "c23/types/fixed-width.md": "b2eb9bd45ce2b0ade5b0a123c29395b2",
     "_journal/2025-10-01.md": "f183e176842bcfa7407ef4da10059ce5",
     "_journal/2025-09/2025-09-30.md": "ceeefe3e9cc5054513dfa0ca306a37d4",
@@ -1737,7 +1737,8 @@
     "_journal/2025-10/2025-10-25.md": "1267c24ab6e563cc2331c8a2ae260460",
     "network/link/mac.md": "eaea51dd30ac2c24a6d585a4b52032fd",
     "network/link/wifi.md": "381e1d73194d17421c863651c2b4ee2d",
-    "network/link/ethernet.md": "88e789f5c00b35bc4d15e9a78f841ff7"
+    "network/link/ethernet.md": "88e789f5c00b35bc4d15e9a78f841ff7",
+    "korean/hangul.md": "097d0b91908ea417aa4e8c91eb72081a"
   },
   "fields_dict": {
     "Basic": [

@@ -1296,7 +1296,7 @@ Basic
 What is the first integer value not exactly representable by a `float`?
 Back: $2^{24} + 1$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1710605798317-->
 END%%
 
@@ -1305,7 +1305,7 @@ Basic
 What is the first integer value not exactly representable by a `double`?
 Back: $2^{53} + 1$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1710605798319-->
 END%%
 
@@ -1338,7 +1338,7 @@ Basic
 Let `float x = 1.0`. What is the bit representation of `x`'s exponent *field*?
 Back: `01111111`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1710605798327-->
 END%%
 
@@ -1355,7 +1355,7 @@ Basic
 Let `double x = 1.0`. What is the bit representation of `x`'s exponent *field*?
 Back: `01111111111`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1710605798331-->
 END%%
 
@@ -1388,7 +1388,7 @@ Basic
 What is the largest unsigned decimal value a normalized `float`'s exponent field can be?
 Back: $2^8 - 2$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1710605798337-->
 END%%
 
@@ -1397,7 +1397,7 @@ Basic
 What is the smallest positive `float` that can be exactly represented?
 Back: $2^{-23}$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1710607581724-->
 END%%
 
@@ -1406,7 +1406,7 @@ Basic
 What is the largest unsigned decimal value a normalized `double`'s exponent field can be?
 Back: $2^{11} - 2$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1710605798339-->
 END%%
 
@@ -1415,7 +1415,7 @@ Basic
 What is the smallest positive `double` that can be exactly represented?
 Back: $2^{-52}$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-Tags: x86-64
+Tags: processor::x86-64
 <!--ID: 1710607581726-->
 END%%
 
