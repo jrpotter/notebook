@@ -29,16 +29,16 @@ END%%
 
 There are 10 basic vowels. In dictionary order, they are:
 
-* 아
-* 야
-* 어
-* 여
-* 오
-* 요
-* 우
-* 유
-* 으
-* 이
+* 아 : First-derived
+* 야 : Second-derived, 이+아
+* 어 : First-derived
+* 여 : Second-derived, 이+어
+* 오 : First-derived
+* 요 : Second-derived, 이+오
+* 우 : First-derived
+* 유 : Second-derived, 이+우
+* 으 : First-derived
+* 이 : First-derived
 
 %%ANKI
 Basic
@@ -150,6 +150,66 @@ What is the last basic vowel (in dictionary order)?
 Back: 이
 Reference: Coursera. “1.1 Lecture.” Accessed October 26, 2025. [https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture](https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture).
 <!--ID: 1761526765671-->
+END%%
+
+%%ANKI
+Basic
+How many of the basic vowels are first-derived?
+Back: Six.
+Reference: Coursera. “1.1 Lecture.” Accessed October 26, 2025. [https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture](https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture).
+<!--ID: 1761568499055-->
+END%%
+
+%%ANKI
+Basic
+How many of the basic vowels are second-derived?
+Back: Four.
+Reference: Coursera. “1.1 Lecture.” Accessed October 26, 2025. [https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture](https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture).
+<!--ID: 1761568499064-->
+END%%
+
+%%ANKI
+Basic
+Which of the ten basic vowels are first-derived?
+Back: 아, 어, 오, 우, 으, and 이.
+Reference: Coursera. “1.1 Lecture.” Accessed October 26, 2025. [https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture](https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture).
+<!--ID: 1761568499067-->
+END%%
+
+%%ANKI
+Basic
+Which of the ten basic vowels are second-derived?
+Back: 야, 여, 요, and 유.
+Reference: Coursera. “1.1 Lecture.” Accessed October 26, 2025. [https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture](https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture).
+<!--ID: 1761568499071-->
+END%%
+
+%%ANKI
+Cloze
+Second-derived vowel {1:야} is a combination of {2:이} + {2:아}.
+Reference: Coursera. “1.1 Lecture.” Accessed October 26, 2025. [https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture](https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture).
+<!--ID: 1761568499075-->
+END%%
+
+%%ANKI
+Cloze
+Second-derived vowel {1:여} is a combination of {2:이} + {2:어}.
+Reference: Coursera. “1.1 Lecture.” Accessed October 26, 2025. [https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture](https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture).
+<!--ID: 1761568499079-->
+END%%
+
+%%ANKI
+Cloze
+Second-derived vowel {1:요} is a combination of {2:이} + {2:오}.
+Reference: Coursera. “1.1 Lecture.” Accessed October 26, 2025. [https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture](https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture).
+<!--ID: 1761568499083-->
+END%%
+
+%%ANKI
+Cloze
+Second-derived vowel {1:유} is a combination of {2:이} + {2:우}.
+Reference: Coursera. “1.1 Lecture.” Accessed October 26, 2025. [https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture](https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture).
+<!--ID: 1761568499088-->
 END%%
 
 ## Bibliography

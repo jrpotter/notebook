@@ -9,14 +9,14 @@ tags:
 
 ## Overview
 
-Medium access control (MAC) refers to a link layer subprotocol.
+Media access control (MAC) refers to a link layer subprotocol.
 
 A MAC address is a unique identifier assigned to an [[infrastructure#NICs|NIC]] for use as a network address. Such addresses are typically assigned by the hardware manufacturer. They are represented as six groups of 2 [[radices|hexadecimal]] digits, possibly separated by some delimiter (e.g. colons, hyphens, etc.).
 
 %%ANKI
 Basic
 What is MAC an acronym for?
-Back: **M**edium **a**ccess **c**ontrol.
+Back: **M**edia **a**ccess **c**ontrol.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1761495550059-->
 END%%

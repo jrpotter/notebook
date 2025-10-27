@@ -177,7 +177,7 @@ END%%
 
 ## Arithmetic Properties
 
-The following identities assume $f$ and $g$ are functions defined on a common interval such that both have a derivative at point $x$.
+The following identities assume $f$ and $g$ are functions defined on a common interval. Assume their derivatives are defined at point $x$. Then:
 
 ### Addition
 
@@ -185,7 +185,7 @@ $$(f + g)'(x) = f'(x) + g'(x)$$
 
 %%ANKI
 Basic
-Let $f$ and $g$ be defined on common intervals so their derivatives are defined. What does the following equal? $$(f + g)'(x)$$
+Let $f$ and $g$ be defined on common intervals. Assume their derivatives are defined. What does the following equal? $$(f + g)'(x)$$
 Back: $f'(x) + g'(x)$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761499926023-->
@@ -197,7 +197,7 @@ $$(f - g)'(x) = f'(x) - g'(x)$$
 
 %%ANKI
 Basic
-Let $f$ and $g$ be defined on common intervals so their derivatives are defined. What does the following equal? $$(f - g)'(x)$$
+Let $f$ and $g$ be defined on common intervals. Assume their derivatives are defined. What does the following equal? $$(f - g)'(x)$$
 Back: $f'(x) - g'(x)$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761499926028-->
@@ -209,7 +209,7 @@ $$(f \cdot g)'(x) = f'(x)g(x) + f(x)g'(x)$$
 
 %%ANKI
 Basic
-Let $f$ and $g$ be defined on common intervals so their derivatives are defined. What does the following equal? $$(f \cdot g)'(x)$$
+Let $f$ and $g$ be defined on common intervals. Assume their derivatives are defined. What does the following equal? $$(f \cdot g)'(x)$$
 Back: $f'(x)g(x) + f(x)g'(x)$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761499926032-->
@@ -237,7 +237,7 @@ $$\left( \frac{f}{g} \right)'(x) = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}$$
 
 %%ANKI
 Basic
-Let $f$ and $g$ be defined on common intervals so their derivatives are defined. What does the following equal? $$\left( \frac{f}{g} \right)'(x)$$
+Let $f$ and $g$ be defined on common intervals. Assume their derivatives are defined. What does the following equal? $$\left( \frac{f}{g} \right)'(x)$$
 Back: Provided $g(x) \neq 0$, $$\frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761499926043-->

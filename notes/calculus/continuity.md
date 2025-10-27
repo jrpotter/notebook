@@ -795,7 +795,7 @@ END%%
 %%ANKI
 Basic
 Let $f(x) = \lvert x \rvert$. Why isn't $f$ differentiable at $0$?
-Back: The left- and right-hand limits of $f$ at $0$ disagree.
+Back: The left- and right-hand limits of $f'$ at $0$ disagree.
 Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761499926056-->
 END%%

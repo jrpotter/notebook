@@ -165,7 +165,7 @@ END%%
 
 A **(ten) thousand year ko** is a ko position where either side can initiate the fight but doing so lets the other side take the ko first.
 
-At least one side also has the option to make the position into [[seki]] instead.
+At least one side also has the option to make the position into [[baduk/index#Seki|seki]] instead.
 
 %%ANKI
 Cloze

@@ -64,13 +64,6 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 END%%
 
 %%ANKI
-Cloze
-Finite automaton $M$ {1:accepts} {2:strings} and {2:recognizes} {1:languages}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1734999643352-->
-END%%
-
-%%ANKI
 Basic
 How is the language of finite automaton $M$ denoted?
 Back: As $L(M)$.

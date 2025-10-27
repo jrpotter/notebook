@@ -957,7 +957,7 @@ END%%
 Basic
 Does the following raise a compilation error? If so, why?
 ```c
-#define string_literal(S) string_literal("" S "")
+#define string_literal(S) "" S ""
 
 int main(void) {
   char *s1 = string_literal("abc");
