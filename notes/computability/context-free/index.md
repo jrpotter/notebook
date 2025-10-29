@@ -517,7 +517,7 @@ A **context-free grammar** (CFG) is a $4$-tuple $\langle V, \Sigma, R, S \rangle
 
 If $u$, $v$, and $w$ are strings of variables and terminals, and $A \rightarrow w$, we say that $uAv$ **yields** $uwv$ (denoted $uAv \Rightarrow uwv$). We say $u$ **derives** $v$ (denoted $u \overset{*}{\Rightarrow} v$), if $u = v$ or if a sequence $u_1, u_2, \ldots, u_k$ exists for $k \geq 0$ and $$u \Rightarrow u_1 \Rightarrow u_2 \Rightarrow \cdots \Rightarrow u_k \Rightarrow v.$$
 
-A **derivation** of $w$ is a sequence of substitution steps, beginning with the start variable, that produces $w$.
+A **derivation** of $w$ is a sequence of substitution steps, beginning with the start variable, that produces $w$. A derivation of a string $w$ in a grammar $G$ is a **leftmost derivation** if at every step the leftmost remaining variable is the one replaced.
 
 %%ANKI
 Basic
@@ -832,12 +832,6 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1761497557841-->
 END%%
 
-### Ambiguity
-
-A derivation of a string $w$ in a grammar $G$ is a **leftmost derivation** if at every step the leftmost remaining variable is the one replaced.
-
-A string $w$ is derived **ambiguously** in context-free grammar $G$ if it has two or more different leftmost derivations. Grammar $G$ is **ambiguous** if it generates some string ambiguously. A context-free language that can be generated only from an ambiguous grammar is called **inherently ambiguous**.
-
 %%ANKI
 Basic
 What is a leftmost derivation of a string $w$ in grammar $G$?
@@ -853,6 +847,10 @@ Back: Just $A \Rightarrow BCD \Rightarrow bCD \Rightarrow bcD \Rightarrow bcd$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1747171295650-->
 END%%
+
+### Ambiguity
+
+A string $w$ is derived **ambiguously** in context-free grammar $G$ if it has two or more different leftmost derivations. Grammar $G$ is **ambiguous** if it generates some string ambiguously. A context-free language that can be generated only from an ambiguous grammar is called **inherently ambiguous**.
 
 %%ANKI
 Cloze
@@ -969,6 +967,236 @@ With respect to context-free grammars, the term "inherently ambiguous" is reserv
 Back: CFLs that can only be generated from ambiguous CFGs.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1747171295684-->
+END%%
+
+### Reductions
+
+A **reduce step** is a reversed substitution, whereby the string of terminals and variables on the RHS of a rule is replaced by the variable on the corresponding LHS. If $u$ and $v$ be strings of variables and terminals, write $u \rightarrowtail v$ to mean that $v$ can be obtained from $u$ by a reduce step. A **reduction from $u$ to $v$** is a sequence $$u = u_1 \rightarrowtail u_2 \rightarrowtail \cdots \rightarrowtail u_k = v$$
+
+We say that **$u$ is reducible to $v$**, written $u \overset{*}\rightarrowtail v$, whenever $v \overset{*}\Rightarrow u$. The string being replaced is called the **reducing string**.
+
+A **reduction from $w$** is a reduction from $w$ to the start variable. A **leftmost reduction** is a reduction in which each reducing string is reduced only after all other reducing strings to its left.
+
+Let $G$ be a CFG. A string that appears in a leftmost reduction of some string in $L(G)$ is called a **valid string**. Let $u_i$ be a valid string. In the reduce step $u_i \rightarrowtail u_{i+1}$, suppose rule $T \rightarrow h$ was applied in reverse. That is, $u_i = xhy$ and $u_{i+1} = xTy$ for some strings $x$ and $y$. Then $h$, along with reducing rule $T \rightarrow h$, is called a **handle** of $u_i$.
+
+%%ANKI
+Cloze
+A {derivation} is a reverse-ordered {reduction}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761399802952-->
+END%%
+
+%%ANKI
+Basic
+How do we denote that $u$ is reducible to $v$?
+Back: $u \overset{*}\rightarrowtail v$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761399802957-->
+END%%
+
+%%ANKI
+Basic
+Suppose $u \overset{*}\rightarrow v$. What derivation must exist?
+Back: $v \overset{*}\Rightarrow u$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761399802959-->
+END%%
+
+%%ANKI
+Cloze
+{1:Derivations} are to {2:$\Rightarrow$} whereas {2:reductions} are to {1:$\rightarrowtail$}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761399802961-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a reduction from $u$ to $v$ to exist?
+Back: There exists a sequence $u \rightarrowtail u_1 \rightarrowtail \cdots \rightarrowtail v$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761399802964-->
+END%%
+
+%%ANKI
+Basic
+With respect to DCFGs, what is a reducing string?
+Back: The string being replaced in a sequence of reduce steps.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761399802966-->
+END%%
+
+%%ANKI
+Basic
+Suppose a reduction from $u$ to $v$ exists. What is the reducing string?
+Back: $u$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761399802969-->
+END%%
+
+%%ANKI
+Cloze
+A reduction replaces the {1:right}-hand side of a rule with the {1:left}-hand side.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761399802954-->
+END%%
+
+%%ANKI
+Basic
+With respect to DCFGs, what is a reduction from string $w$?
+Back: A reduction from $w$ to the start variable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761497557848-->
+END%%
+
+%%ANKI
+Basic
+What is a leftmost reduction?
+Back: One in which each reducing string is only reduced after all other reducing strings to its left.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761497557850-->
+END%%
+
+%%ANKI
+Cloze
+A {1:leftmost} {2:reduction} is a {2:rightmost} {1:derivation} in reverse.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761497557851-->
+END%%
+
+%%ANKI
+Basic
+What is the leftmost derivation of $ab$ given the following CFG? $$\begin{align*} S & \rightarrow AB \\ A & \rightarrow a \\ B & \rightarrow b \end{align*}$$
+Back: $S \Rightarrow AB \Rightarrow aB \Rightarrow ab$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761497557853-->
+END%%
+
+%%ANKI
+Basic
+What is the leftmost reduction of $ab$ given the following DCFG? $$\begin{align*} S & \rightarrow AB \\ A & \rightarrow a \\ B & \rightarrow b \end{align*}$$
+Back: $ab \rightarrowtail Ab \rightarrowtail AB \rightarrowtail S$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761497557854-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be a CFG. What does a valid string refer to?
+Back: A string that appears in some leftmost reduction of a member of $L(G)$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705116335-->
+END%%
+
+%%ANKI
+Basic
+Handles are only defined with respect to what kind of strings?
+Back: Valid strings.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705116344-->
+END%%
+
+%%ANKI
+Basic
+Consider a reduction $xyz \rightarrowtail xYz$. What handle was used?
+Back: $y$ and $Y \rightarrow y$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705116348-->
+END%%
+
+%%ANKI
+Basic
+The handle of a valid string consists of what two things?
+Back: A substring of the valid string and a production rule.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705116351-->
+END%%
+
+%%ANKI
+Basic
+Consider the following CFG. What is the handle of "$aaabbb$"? $$\begin{align*} R & \rightarrow S \mid T \\ S & \rightarrow aSb \mid ab \\ T & \rightarrow aTbb \mid abb \end{align*}$$
+Back: $aa\underline{ab}bb$ and $S \rightarrow ab$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705116355-->
+END%%
+
+%%ANKI
+Basic
+Consider the following CFG. What is the handle of "$aaSbb$"? $$\begin{align*} R & \rightarrow S \mid T \\ S & \rightarrow aSb \mid ab \\ T & \rightarrow aTbb \mid abb \end{align*}$$
+Back: $a\underline{aSb}b$ and $S \rightarrow aSb$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705116358-->
+END%%
+
+%%ANKI
+Basic
+Consider the following CFG. What is the handle of "$aaabbbbbb$"? $$\begin{align*} R & \rightarrow S \mid T \\ S & \rightarrow aSb \mid ab \\ T & \rightarrow aTbb \mid abb \end{align*}$$
+Back: $aa\underline{abb}bbbb$ and $T \rightarrow aTbb$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705116361-->
+END%%
+
+%%ANKI
+Basic
+Consider the following CFG. What is the handle of "$T$"? $$\begin{align*} R & \rightarrow S \mid T \\ S & \rightarrow aSb \mid ab \\ T & \rightarrow aTbb \mid abb \end{align*}$$
+Back: $\underline{T}$ and $R \rightarrow T$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705116364-->
+END%%
+
+%%ANKI
+Basic
+How do handles relate to leftmost reductions?
+Back: They are only defined for valid strings, which are defined as strings appearing in a leftmost reduction.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705116367-->
+END%%
+
+%%ANKI
+Basic
+How do handles relate to leftmost derivations?
+Back: N/A. They relate to leftmost *reductions*.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705116370-->
+END%%
+
+%%ANKI
+Basic
+How many handles can a valid string have?
+Back: One or more.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705499676-->
+END%%
+
+%%ANKI
+Basic
+When might a valid string have more than one handle?
+Back: When the underlying grammar is ambiguous.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705499685-->
+END%%
+
+%%ANKI
+Basic
+When does a valid string have exactly one handle?
+Back: When the underlying grammar is unambiguous.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705499688-->
+END%%
+
+%%ANKI
+Basic
+Consider valid string $u = xyz$. If $y$ is a handle, what can be said about $z$?
+Back: It *must* be a string consisting of only terminals.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705499692-->
+END%%
+
+%%ANKI
+Basic
+Consider valid string $u = xhz$ with handle $h$. *Why* must $z$ consist of only terminals?
+Back: Because $u$ is a string found in a *leftmost* reduction.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761705499695-->
 END%%
 
 ## Closure Operations

@@ -212,6 +212,205 @@ Reference: Coursera. “1.1 Lecture.” Accessed October 26, 2025. [https://www.
 <!--ID: 1761568499088-->
 END%%
 
+## Consonants
+
+There are 14 basic consonants. In dictionary order, they are:
+
+* ㄱ (기역)
+* ㄴ (니은)
+* ㄷ (디귿)
+* ㄹ (리을)
+* ㅁ (미음)
+* ㅂ (비읍)
+* ㅅ (시옷)
+* ㅇ (이응)
+* ㅈ (지읒)
+* ㅊ (치읓)
+* ㅋ (키읔)
+* ㅌ (티읕)
+* ㅍ (피읖)
+* ㅎ (히읗)
+
+%%ANKI
+Basic
+Hangul consists of how many basic consonants?
+Back: 14.
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967719-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㄱ letter?
+Back: 기역
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967728-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㄴ letter?
+Back: 니은
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967732-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㄷ letter?
+Back: 디귿
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967737-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㄹ letter?
+Back: 리을
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967742-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㅁ letter?
+Back: 미음
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967747-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㅂ letter?
+Back: 비읍
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967751-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㅅ letter?
+Back: 시옷
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967756-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㅇ letter?
+Back: 이응
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967761-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㅈ letter?
+Back: 지읒
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967766-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㅊ letter?
+Back: 치읓
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967771-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㅋ letter?
+Back: 키읔
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967776-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㅌ letter?
+Back: 티읕
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967781-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㅍ letter?
+Back: 피읖
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967786-->
+END%%
+
+%%ANKI
+Basic
+What is the name of the ㅎ letter?
+Back: 히읗
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967791-->
+END%%
+
+%%ANKI
+Basic
+What is the first basic consonant in dictionary order?
+Back: ㄱ
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967796-->
+END%%
+
+%%ANKI
+Basic
+What is the last basic consonant in dictionary order?
+Back: ㅎ
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967802-->
+END%%
+
+%%ANKI
+Cloze
+In dictionary order, {ㄱ} precedes {ㄴ} which precedes {ㄷ}.
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967807-->
+END%%
+
+%%ANKI
+Cloze
+In dictionary order, {ㄹ} precedes {ㅁ} which precedes {ㅂ}.
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967813-->
+END%%
+
+%%ANKI
+Cloze
+In dictionary order, {ㅅ} precedes {ㅇ} which precedes {ㅈ}.
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967819-->
+END%%
+
+%%ANKI
+Cloze
+In dictionary order, {ㅊ} precedes {ㅋ} which precedes {ㅌ}.
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967825-->
+END%%
+
+%%ANKI
+Cloze
+In dictionary order, {ㅌ} precedes {ㅍ} which precedes {ㅎ}.
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967831-->
+END%%
+
+%%ANKI
+Basic
+Which pattern does the name of each basic consonant obey?
+Back: The first and last character is the consonant itself.
+Reference: Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).
+<!--ID: 1761613967837-->
+END%%
+
 ## Bibliography
 
 * Coursera. “1.1 Lecture.” Accessed October 26, 2025. [https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture](https://www.coursera.org/learn/learn-korean/lecture/mcj4k/1-1-lecture).
+* Coursera. “1.2 Lecture.” Accessed October 27, 2025. [https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture](https://www.coursera.org/learn/learn-korean/lecture/HJQX1/1-2-lecture).

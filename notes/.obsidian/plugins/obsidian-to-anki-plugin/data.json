@@ -578,7 +578,8 @@
     "max-heap-tree.png",
     "max-heap-array.png",
     "max-heapify-1.png",
-    "max-heapify-2.png"
+    "max-heapify-2.png",
+    "difference-quotient-tangent.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -1724,11 +1725,11 @@
     "_journal/2025-10/2025-10-22.md": "c4fedcaf6d2622cc79eedc07b1ef851d",
     "_journal/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
     "_journal/2025-10/2025-10-23.md": "5a8dbe6c60db5acfedda392a6ffcf123",
-    "computability/context-free/deterministic.md": "a1b55d55b94b07f1c76faf241592e667",
-    "computability/context-free/index.md": "c36fd3f866a6ca75b16b58324397960c",
+    "computability/context-free/deterministic.md": "63a54e3f3dd999d35c986c182b121132",
+    "computability/context-free/index.md": "3374bf2267f30d9c8cdc2938bc084827",
     "_journal/2025-10-25.md": "1267c24ab6e563cc2331c8a2ae260460",
     "_journal/2025-10/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
-    "calculus/derivatives.md": "9e7916b7010d6b52f71ae45b529a87d7",
+    "calculus/derivatives.md": "5f842c2a5998a69547e30f8c591a449b",
     "network/link/index.md": "816189d187db8eb4714474f2f3196727",
     "network/internetwork/ip.md": "471dfbed7d5972a79f60bfa9ffdeb371",
     "network/internetwork/index.md": "c10901fefc6faee944cc4ec08c67415c",
@@ -1738,9 +1739,11 @@
     "network/link/mac.md": "936f49a3f5ce3b9a33759c1be648e63b",
     "network/link/wifi.md": "381e1d73194d17421c863651c2b4ee2d",
     "network/link/ethernet.md": "88e789f5c00b35bc4d15e9a78f841ff7",
-    "korean/hangul.md": "dc69faf4bef278ec5f18f8e824df14a2",
+    "korean/hangul.md": "9767669e84b4e2ab833a6b02ac8d39b8",
     "_journal/2025-10-27.md": "3b98eadcfdb62a4df13fe0ef5617f77e",
-    "_journal/2025-10/2025-10-26.md": "d153fc37814aa3352bc987dd0fa8da41"
+    "_journal/2025-10/2025-10-26.md": "d153fc37814aa3352bc987dd0fa8da41",
+    "_journal/2025-10-28.md": "674468062f111c3b3b854344af8bceb9",
+    "_journal/2025-10/2025-10-27.md": "3b98eadcfdb62a4df13fe0ef5617f77e"
   },
   "fields_dict": {
     "Basic": [

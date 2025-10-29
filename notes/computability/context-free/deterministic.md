@@ -449,14 +449,6 @@ END%%
 
 TODO
 
-A **reduce step** is a reversed substitution, whereby the string of terminals and variables on the RHS of a rule is replaced by the variable on the corresponding LHS.
-
-If $u$ and $v$ be strings of variables and terminals, write $u \rightarrowtail v$ to mean that $v$ can be obtained from $u$ by a reduce step. That is, $u \rightarrowtail v$ means the same as $v \Rightarrow u$. A **reduction from $u$ to $v$** is a sequence $$u = u_1 \rightarrowtail u_2 \rightarrowtail \cdots \rightarrowtail u_k = v$$
-
-We say that **$u$ is reducible to $v$**, written $u \overset{*}\rightarrowtail v$, whenever $v \overset{*}\Rightarrow u$. The string being replaced is called the **reducing string**.
-
-A **reduction from $w$** is a reduction from $w$ to the start variable. A **leftmost reduction** is a reduction in which each reducing string is reduced only after all other reducing strings to its left.
-
 %%ANKI
 Basic
 What is DCFG an acronym for?
@@ -478,106 +470,6 @@ Cloze
 {1:CFGs} are {2:top-down} whereas {2:DCFGs} are {1:bottom-up}.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761399802949-->
-END%%
-
-%%ANKI
-Cloze
-A {derivation} is a reverse-ordered {reduction}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761399802952-->
-END%%
-
-%%ANKI
-Basic
-How do we denote that $u$ is reducible to $v$?
-Back: $u \overset{*}\rightarrowtail v$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761399802957-->
-END%%
-
-%%ANKI
-Basic
-Suppose $u \overset{*}\rightarrow v$. What derivation must exist?
-Back: $v \overset{*}\Rightarrow u$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761399802959-->
-END%%
-
-%%ANKI
-Cloze
-{1:Derivations} are to {2:$\Rightarrow$} whereas {2:reductions} are to {1:$\rightarrowtail$}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761399802961-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for a reduction from $u$ to $v$ to exist?
-Back: There exists a sequence $u \rightarrowtail u_1 \rightarrowtail \cdots \rightarrowtail v$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761399802964-->
-END%%
-
-%%ANKI
-Basic
-With respect to DCFGs, what is a reducing string?
-Back: The string being replaced in a sequence of reduce steps.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761399802966-->
-END%%
-
-%%ANKI
-Basic
-Suppose a reduction from $u$ to $v$ exists. What is the reducing string?
-Back: $u$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761399802969-->
-END%%
-
-%%ANKI
-Cloze
-A reduction replaces the {1:right}-hand side of a rule with the {1:left}-hand side.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761399802954-->
-END%%
-
-%%ANKI
-Basic
-With respect to DCFGs, what is a reduction from string $w$?
-Back: A reduction from $w$ to the start variable.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761497557848-->
-END%%
-
-%%ANKI
-Basic
-What is a leftmost reduction?
-Back: One in which each reducing string is only reduced after all other reducing strings to its left.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761497557850-->
-END%%
-
-%%ANKI
-Cloze
-A {1:leftmost} {2:reduction} is a {2:rightmost} {1:derivation} in reverse.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761497557851-->
-END%%
-
-%%ANKI
-Basic
-What is the leftmost derivation of $ab$ given the following CFG? $$\begin{align*} S & \rightarrow AB \\ A & \rightarrow a \\ B & \rightarrow b \end{align*}$$
-Back: $S \Rightarrow AB \Rightarrow aB \Rightarrow ab$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761497557853-->
-END%%
-
-%%ANKI
-Basic
-What is the leftmost reduction of $ab$ given the following DCFG? $$\begin{align*} S & \rightarrow AB \\ A & \rightarrow a \\ B & \rightarrow b \end{align*}$$
-Back: $ab \rightarrowtail Ab \rightarrowtail AB \rightarrowtail S$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761497557854-->
 END%%
 
 ## Closure Operations
