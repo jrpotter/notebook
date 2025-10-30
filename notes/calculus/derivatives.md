@@ -304,14 +304,14 @@ END%%
 %%ANKI
 Basic
 With respect to differentiation, how is quotient $dy / dx$ defined?
-Back: $$\frac{dy}{dx} = \lim_{h \rightarrow 0} \frac{\Delta y}{\Delta x}$$
+Back: $$\frac{dy}{dx} = \lim_{\Delta x \rightarrow 0} \frac{\Delta y}{\Delta x}$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761662237410-->
 END%%
 
 %%ANKI
 Basic
-In the following definition, what name is given to $\Delta$? $$\frac{dy}{dx} = \lim_{h \rightarrow 0} \frac{\Delta y}{\Delta x}$$
+In the following definition, what name is given to $\Delta$? $$\frac{dy}{dx} = \lim_{\Delta x \rightarrow 0} \frac{\Delta y}{\Delta x}$$
 Back: The difference operator.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761662237412-->
@@ -319,7 +319,7 @@ END%%
 
 %%ANKI
 Basic
-In the following definition, what name is given to $dy$? $$\frac{dy}{dx} = \lim_{h \rightarrow 0} \frac{\Delta y}{\Delta x}$$
+In the following definition, what name is given to $dy$? $$\frac{dy}{dx} = \lim_{\Delta x \rightarrow 0} \frac{\Delta y}{\Delta x}$$
 Back: A differential.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761662237415-->
@@ -327,7 +327,7 @@ END%%
 
 %%ANKI
 Basic
-In the following definition, what name is given to $dx$? $$\frac{dy}{dx} = \lim_{h \rightarrow 0} \frac{\Delta y}{\Delta x}$$
+In the following definition, what name is given to $dx$? $$\frac{dy}{dx} = \lim_{\Delta x \rightarrow 0} \frac{\Delta y}{\Delta x}$$
 Back: A differential.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761662237417-->
@@ -335,7 +335,7 @@ END%%
 
 %%ANKI
 Basic
-In the following definition, what name is given to $dy / dx$? $$\frac{dy}{dx} = \lim_{h \rightarrow 0} \frac{\Delta y}{\Delta x}$$
+In the following definition, what name is given to $dy / dx$? $$\frac{dy}{dx} = \lim_{\Delta x \rightarrow 0} \frac{\Delta y}{\Delta x}$$
 Back: A differential quotient.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761662237420-->

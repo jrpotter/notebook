@@ -848,6 +848,14 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1747171295650-->
 END%%
 
+%%ANKI
+Basic
+Consider CFG $G$. How do we modify $G$ to instead recognize an endmarked language?
+Back: Append a $\dashv$ to the end of the start variable's rules.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761745620086-->
+END%%
+
 ### Ambiguity
 
 A string $w$ is derived **ambiguously** in context-free grammar $G$ if it has two or more different leftmost derivations. Grammar $G$ is **ambiguous** if it generates some string ambiguously. A context-free language that can be generated only from an ambiguous grammar is called **inherently ambiguous**.
@@ -1146,7 +1154,7 @@ END%%
 %%ANKI
 Basic
 How do handles relate to leftmost reductions?
-Back: They are only defined for valid strings, which are defined as strings appearing in a leftmost reduction.
+Back: They are only defined for valid strings which are defined as strings appearing in a leftmost reduction.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761705116367-->
 END%%
@@ -1162,14 +1170,22 @@ END%%
 %%ANKI
 Basic
 How many handles can a valid string have?
-Back: One or more.
+Back: Zero or more.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761705499676-->
 END%%
 
 %%ANKI
 Basic
-When might a valid string have more than one handle?
+When might a valid string have no handle?
+Back: When the valid string is just the start variable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761741448081-->
+END%%
+
+%%ANKI
+Basic
+When might valid strings have more than one handle?
 Back: When the underlying grammar is ambiguous.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761705499685-->
@@ -1177,7 +1193,7 @@ END%%
 
 %%ANKI
 Basic
-When does a valid string have exactly one handle?
+When does every valid string have exactly one handle?
 Back: When the underlying grammar is unambiguous.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761705499688-->
@@ -1197,6 +1213,30 @@ Consider valid string $u = xhz$ with handle $h$. *Why* must $z$ consist of only 
 Back: Because $u$ is a string found in a *leftmost* reduction.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761705499695-->
+END%%
+
+%%ANKI
+Basic
+Consider the following CFG. What is the handle of "$()(){\dashv}$"? $$\begin{align*} S & \rightarrow T {\dashv} \\ T & \rightarrow T(T) \mid \epsilon \end{align*}$$
+Back: $\underline{\,}()(){\dashv}$ and $T \rightarrow \epsilon$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761745620098-->
+END%%
+
+%%ANKI
+Basic
+Consider the following CFG. What is the handle of "$T()(){\dashv}$"? $$\begin{align*} S & \rightarrow T {\dashv} \\ T & \rightarrow T(T) \mid \epsilon \end{align*}$$
+Back: $T(\underline{\,})(){\dashv}$ and $T \rightarrow \epsilon$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761745620104-->
+END%%
+
+%%ANKI
+Basic
+Consider the following CFG. What is the handle of "$T(T)(){\dashv}$"? $$\begin{align*} S & \rightarrow T {\dashv} \\ T & \rightarrow T(T) \mid \epsilon \end{align*}$$
+Back: $\underline{T(T)}(){\dashv}$ and $T \rightarrow T(T)$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761745620111-->
 END%%
 
 ## Closure Operations

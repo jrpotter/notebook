@@ -10,6 +10,8 @@ tags:
 
 A **direct proof** is a sequence of statements, either givens or deductions of previous statements, whose last statement is the conclusion to be proved.
 
+An **indirect proof** works by assuming the denial of the desired conclusion leads to a contradiction in some way.
+
 %%ANKI
 Basic
 What is a direct proof?
@@ -21,7 +23,7 @@ END%%
 %%ANKI
 Basic
 Generally speaking, what should the first statement of a direct proof be?
-Back: A hypothesis, if one exists.
+Back: Assumption of a hypothesis, if one exists.
 Reference: Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.
 <!--ID: 1721824073062-->
 END%%
@@ -33,8 +35,6 @@ Back: The conclusion to be proved.
 Reference: Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.
 <!--ID: 1721824073065-->
 END%%
-
-An **indirect proof** works by assuming the denial of the desired conclusion leads to a contradiction in some way.
 
 %%ANKI
 Basic
@@ -211,6 +211,8 @@ END%%
 
 An **existence proof** is a proof method used to prove an existential statement, i.e. statements of form: $$\exists x, P(x)$$
 
+An existence proof is said to be **constructive** if it demonstrates the existence of an object by creating (or providing a method for creating) the object. Otherwise it is said to be **non-constructive**.
+
 %%ANKI
 Basic
 What are existence proofs?
@@ -242,8 +244,6 @@ Back: $\exists x, P(x)$
 Reference: Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.
 <!--ID: 1721824073143-->
 END%%
-
-An existence proof is said to be **constructive** if it demonstrates the existence of an object by creating (or providing a method for creating) the object. Otherwise it is said to be **non-constructive**.
 
 %%ANKI
 Basic

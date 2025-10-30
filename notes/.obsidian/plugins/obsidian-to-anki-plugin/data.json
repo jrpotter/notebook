@@ -636,7 +636,7 @@
     "set/bags.md": "70320231f84a49e34a31130eb71e5086",
     "serialization/xml.md": "84b632282ebcc2b6216923a02abdd4c2",
     "serialization/index.md": "5ed7e99e4efc4844839ea357d351f5d8",
-    "proofs/index.md": "51818dc7bfb83fc62ac210ffa554cd0c",
+    "proofs/index.md": "6a542485132bb0d86f036170e9fbf915",
     "programming/short-circuit.md": "c256ced42dc3b493aff5a356e5383b6e",
     "programming/pred-trans.md": "3c93094889491b15934314612114c3f8",
     "programming/index.md": "bb082325e269a95236aa6aff9307fe59",
@@ -1725,11 +1725,11 @@
     "_journal/2025-10/2025-10-22.md": "c4fedcaf6d2622cc79eedc07b1ef851d",
     "_journal/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
     "_journal/2025-10/2025-10-23.md": "5a8dbe6c60db5acfedda392a6ffcf123",
-    "computability/context-free/deterministic.md": "63a54e3f3dd999d35c986c182b121132",
-    "computability/context-free/index.md": "3374bf2267f30d9c8cdc2938bc084827",
+    "computability/context-free/deterministic.md": "d72705083d72e7d77981b80ab9c93824",
+    "computability/context-free/index.md": "4fa03defafa4f1714765d6a3347896d8",
     "_journal/2025-10-25.md": "1267c24ab6e563cc2331c8a2ae260460",
     "_journal/2025-10/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
-    "calculus/derivatives.md": "5f842c2a5998a69547e30f8c591a449b",
+    "calculus/derivatives.md": "0177ac8101328326f97de2a715a1b0a9",
     "network/link/index.md": "816189d187db8eb4714474f2f3196727",
     "network/internetwork/ip.md": "471dfbed7d5972a79f60bfa9ffdeb371",
     "network/internetwork/index.md": "c10901fefc6faee944cc4ec08c67415c",
@@ -1743,7 +1743,9 @@
     "_journal/2025-10-27.md": "3b98eadcfdb62a4df13fe0ef5617f77e",
     "_journal/2025-10/2025-10-26.md": "d153fc37814aa3352bc987dd0fa8da41",
     "_journal/2025-10-28.md": "674468062f111c3b3b854344af8bceb9",
-    "_journal/2025-10/2025-10-27.md": "3b98eadcfdb62a4df13fe0ef5617f77e"
+    "_journal/2025-10/2025-10-27.md": "3b98eadcfdb62a4df13fe0ef5617f77e",
+    "_journal/2025-10-29.md": "1fe1eafac92e02619c65bf647c431b4e",
+    "_journal/2025-10/2025-10-28.md": "21a7657f46798a0c4990cbe6a1da1b54"
   },
   "fields_dict": {
     "Basic": [
