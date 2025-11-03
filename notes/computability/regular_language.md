@@ -648,7 +648,7 @@ END%%
 %%ANKI
 Basic
 Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What is $\delta$'s domain?
-Back: $Q \times (\Sigma \cup \{\epsilon\})$
+Back: $Q \times \Sigma_\epsilon$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1736781769471-->
 END%%

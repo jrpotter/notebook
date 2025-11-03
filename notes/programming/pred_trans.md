@@ -443,7 +443,7 @@ END%%
 
 %%ANKI
 Cloze
-Distributivity of Disjunction states {1:$wp(S, Q) \lor wp(S, r)$} $\Rightarrow$ {1:$wp(S, Q \lor R)$}.
+Distributivity of Disjunction states {1:$wp(S, Q) \lor wp(S, R)$} $\Rightarrow$ {1:$wp(S, Q \lor R)$}.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1716310927697-->
 END%%

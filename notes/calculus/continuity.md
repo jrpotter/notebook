@@ -237,7 +237,7 @@ END%%
 %%ANKI
 Basic
 How does function composition relate to continuity?
-Back: The composition of two functions continuous at a point is also continuous at the point.
+Back: If $v$ is continuous at $x$ and $u$ is continuous at $v(x)$, then $u \circ v$ is continuous at $x$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761172862635-->
 END%%
@@ -247,6 +247,38 @@ Cloze
 Assume {1:$v$} is continuous at {1:$p$} and {2:$u$} is continuous at {2:$v(p)$}. Then {3:$u \circ v$} is continuous at {3:$p$}.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761172862644-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be real-valued functions, everywhere defined. Does the following hold? $$\lim_{x \rightarrow p} f[g(x))] = f\left[ \lim_{x \rightarrow p} g(x) \right]$$
+Back: Not necessarily.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761953903808-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be real-valued functions, everywhere defined. *Why* doesn't the following hold? $$\lim_{x \rightarrow p} f[g(x))] = f\left[ \lim_{x \rightarrow p} g(x) \right]$$
+Back: Suppose $\lim_{x \rightarrow p} g(x) = A$. But $f(A)$ is not necessarily equal to $\lim_{x \rightarrow A} f(x)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761953903812-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be real-valued functions, everywhere continuous. Does the following hold? $$\lim_{x \rightarrow p} f[g(x))] = f\left[ \lim_{x \rightarrow p} g(x) \right]$$
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761953903816-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be real-valued functions, everywhere continuous. *Why* does the following hold? $$\lim_{x \rightarrow p} f[g(x))] = f\left[ \lim_{x \rightarrow p} g(x) \right]$$
+Back: Suppose $\lim_{x \rightarrow p} g(x) = A$. Then $\lim_{x \rightarrow A} f(x) = f(A)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761953903819-->
 END%%
 
 ### Inversion
@@ -762,58 +794,6 @@ Let $f$ be Riemann integrable on $[a, b]$. What additional condition(s) must be 
 Back: $f$ must also be continuous on $[a, b]$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761422321498-->
-END%%
-
-## Differentiability
-
-Let $f$ be a function differentiable at $x$. Then $f$ is continuous at $x$.
-
-%%ANKI
-Basic
-Let $f$ be differentiable on $(a, b)$. Is $f$ continuous on $(a, b)$?
-Back: Yes.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761499926047-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be continuous on $(a, b)$. Is $f$ differentiable on $(a, b)$?
-Back: Not necessarily.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761499926050-->
-END%%
-
-%%ANKI
-Basic
-Let $f(x) = \lvert x \rvert$. Why isn't $f$ continuous at $0$?
-Back: N/A. It is.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761499926053-->
-END%%
-
-%%ANKI
-Basic
-Let $f(x) = \lvert x \rvert$. Why isn't $f$ differentiable at $0$?
-Back: The left- and right-hand limits of $f'$ at $0$ disagree.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761499926056-->
-END%%
-
-%%ANKI
-Basic
-How does differentiability relate to continuity?
-Back: If $f$ is differentiable at a point, it is continuous at the point.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761499926059-->
-END%%
-
-%%ANKI
-Basic
-Suppose $f$ is differentiable at $x$. *Why* does $f(x + h) \rightarrow f(x)$ as $h \rightarrow 0$?
-Back: Because differentiability implies continuity.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761500315897-->
 END%%
 
 ## Bibliography

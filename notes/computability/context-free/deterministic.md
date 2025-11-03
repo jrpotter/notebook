@@ -42,7 +42,7 @@ END%%
 
 %%ANKI
 Basic
-From a generation perspective, what is an endmarked DCFL?
+From a recognition perspective, what is an endmarked DCFL?
 Back: A language recognized by some deterministic context-free grammar.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761399802944-->
@@ -517,7 +517,7 @@ END%%
 %%ANKI
 Basic
 With respect to reductions, what is a forced handle?
-Back: The unique handle of a valid string independent of all strings to its right.
+Back: A valid string's unique handle, independent of all substrings to its right.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761745620180-->
 END%%
@@ -525,7 +525,7 @@ END%%
 %%ANKI
 Basic
 Suppose $h$ is a forced handle of valid string $v = xhy$. Then it is also the forced handle of what other strings?
-Back: Any valid string $xh\hat{y}$ where $\hat{y} \in \Sigma^*$.
+Back: Assuming alphabet $\Sigma$, any valid string $xh\hat{y}$ where $\hat{y} \in \Sigma^*$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761745620191-->
 END%%
@@ -551,6 +551,247 @@ If a handle is forced then it's a handle for what other strings?
 Back: Those with the same prefix up to, and including, the handle itself.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761745714196-->
+END%%
+
+### DK-Test
+
+TODO
+
+%%ANKI
+Basic
+What does the $DK$-test actually check?
+Back: Whether a particular grammar is deterministic.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321401-->
+END%%
+
+%%ANKI
+Basic
+The name $DK$ in "$DK$-test" is a mnemonic for what??
+Back: **D**eterministic $K$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321405-->
+END%%
+
+%%ANKI
+Basic
+Who originally developed the $DK$-test?
+Back: Donald Knuth.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321409-->
+END%%
+
+%%ANKI
+Basic
+What is the standard procedure for determining whether a CFG is deterministic?
+Back: The $DK$-test.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321412-->
+END%%
+
+%%ANKI
+Basic
+Consider a CFG and apply the $DK$-test. What kind of mathematical entity is $DK$?
+Back: A deterministic finite automaton (DFA).
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321415-->
+END%%
+
+%%ANKI
+Basic
+Consider a CFG and apply the $DK$-test. What kind of mathematical entity is $K$?
+Back: A nondeterministic finite automaton (NFA).
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321418-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, how do we convert $K$ to $DK$?
+Back: By using the standard power set construction.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321421-->
+END%%
+
+%%ANKI
+Basic
+Consider a CFG and apply the $DK$-test. $DK$ accepts input $z$ if what two conditions hold?
+Back:
+1. $z$ is the prefix of some valid string $v = zy$, and
+2. $z$ ends with a handle of $v$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321424-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, how many dotted rules correspond to the following CFG? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back: $7$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321427-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, list the dotted rules of the following CFG. $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back: $$\begin{align*} S & \rightarrow \bullet A B \\ S & \rightarrow A {\bullet} B \\ S & \rightarrow A B \bullet \\ A & \rightarrow \bullet a \\ A & \rightarrow a \bullet \\ B & \rightarrow \bullet b \\ B & \rightarrow b \bullet \end{align*}$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321430-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, how many dotted rules does $S \rightarrow AB$ have?
+Back: Three.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321433-->
+END%%
+
+%%ANKI
+Basic
+Apply the $DK$-test to CFG $G$. What are the states of $K$?
+Back: The dotted rules of $G$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321436-->
+END%%
+
+%%ANKI
+Basic
+Apply the $DK$-test to the following CFG $G$. What are the states of NFA $K$? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back: The dotted rules of $G$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321439-->
+END%%
+
+%%ANKI
+Basic
+Apply the $DK$-test to the following CFG. How many start states does NFA $K$ have? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back: One.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321442-->
+END%%
+
+%%ANKI
+Basic
+Apply the $DK$-test to the following CFG. $K$'s start state transitions to how many other states? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back: Three (one for each rule).
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321445-->
+END%%
+
+%%ANKI
+Basic
+Apply the $DK$-test to the following CFG. List the states that $K$'s start state transitions to. $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back: $\boxed{S \rightarrow \bullet AB}$, $\boxed{A \rightarrow \bullet a}$, and $\boxed{B \rightarrow \bullet b}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321448-->
+END%%
+
+%%ANKI
+Basic
+Apply the $DK$-test to the following CFG. List $K$'s accept states. $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back: $\boxed{S \rightarrow AB\bullet}$, $\boxed{A \rightarrow a\bullet}$, and $\boxed{B \rightarrow b\bullet}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321451-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, $K$'s transitions come in how many varieties?
+Back: Two.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321454-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, what name is given to the two types of $K$'s transitions?
+Back: Shift moves and $\epsilon$-moves.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321457-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, what does a shift move of $K$ look like pictorially?
+Back: For any symbol $a$ and rule $B \rightarrow uav$, $$\large \boxed{B \rightarrow u{\bullet}av} \overset{a}\longrightarrow \boxed{B \rightarrow ua{\bullet}v}$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321460-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, what does an $\epsilon$-move of $K$ look like pictorially?
+Back: For any rules $A \rightarrow uBv$ and $B \rightarrow w$, $$\large \boxed{A \rightarrow u{\bullet}Bv} \overset{\epsilon}\longrightarrow \boxed{B \rightarrow {\bullet}w}$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321463-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, which of the two kinds of $K$'s transitions is the following depicting? $$\large \boxed{A \rightarrow u{\bullet}Bv} \overset{\epsilon}\longrightarrow \boxed{B \rightarrow {\bullet}w}$$
+Back: An $\epsilon$-move.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321466-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, which of the two kinds of $K$'s transitions is the following depicting? $$\large \boxed{B \rightarrow u{\bullet}av} \overset{a}\longrightarrow \boxed{B \rightarrow ua{\bullet}v}$$
+Back: A shift move.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321469-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, what language does $K$ recognize?
+Back: Prefixes of valid strings ending with a handle.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321472-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, what language does $DK$ recognize?
+Back: Prefixes of valid strings ending with a handle.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321475-->
+END%%
+
+%%ANKI
+Basic
+Apply the $DK$-test to the following CFG. What are the outbound transitions from state $\boxed{S \rightarrow \bullet AB}$ in $K$? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back:
+1. A shift move (by $A$) to $\boxed{S \rightarrow A{\bullet}B}$ and
+2. an $\epsilon$-move to $\boxed{A \rightarrow \bullet a}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321478-->
+END%%
+
+%%ANKI
+Basic
+Apply the $DK$-test to the following CFG. What are the outbound transitions from state $\boxed{A \rightarrow \bullet a}$ in $K$? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back: A shift move (by $a$) to $\boxed{A \rightarrow a\bullet}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321481-->
+END%%
+
+%%ANKI
+Basic
+Apply the $DK$-test to the following CFG. What are the outbound transitions from state $\boxed{S \rightarrow A{\bullet}B}$ in $K$? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back:
+1. A shift move (by $B$) to $\boxed{S \rightarrow AB\bullet}$ and
+2. an $\epsilon$-move to $\boxed{B \rightarrow \bullet b}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321484-->
+END%%
+
+%%ANKI
+Cloze
+With respect to the $DK$-test, {1:shift moves} are to the {2:same} rule as {2:$\epsilon$-moves} are to {1:different} rules.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761951183813-->
 END%%
 
 ## Closure Operations

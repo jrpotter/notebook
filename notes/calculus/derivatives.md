@@ -357,7 +357,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1761662237425-->
 END%%
 
-## Arithmetic Properties
+## Properties
 
 The following identities assume $f$ and $g$ are functions defined on a common interval. Assume their derivatives are defined at point $x$. Then:
 
@@ -389,6 +389,14 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1761661433514-->
 END%%
 
+%%ANKI
+Basic
+Let $f$ and $g$ be differentiable. Using Leibniz notation, what does the addition rule state?
+Back: $$\frac{d}{dx}(f + g) = \frac{df}{dx} + \frac{dg}{dx}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1762009928083-->
+END%%
+
 ### Subtraction
 
 $$(f - g)'(x) = f'(x) - g'(x)$$
@@ -415,6 +423,14 @@ Let $f$ and $g$ be differentiable. Using $D$-notation, what does the subtraction
 Back: $D(f - g) = Df - Dg$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761661433519-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be differentiable. Using Leibniz notation, what does the subtraction rule state?
+Back: $$\frac{d}{dx}(f - g) = \frac{df}{dx} - \frac{dg}{dx}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1762009928086-->
 END%%
 
 ### Multiplication
@@ -461,6 +477,14 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1761661433524-->
 END%%
 
+%%ANKI
+Basic
+Let $f$ and $g$ be differentiable. Using Leibniz notation, what does the multiplication rule state?
+Back: $$\frac{d}{dx}(f \cdot g) = \frac{df}{dx}g + f\frac{dg}{dx}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1762009928088-->
+END%%
+
 ### Division
 
 $$\left( \frac{f}{g} \right)'(x) = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}$$
@@ -487,6 +511,189 @@ Let $f$ and $g$ be differentiable. Using $D$-notation, what does the quotient ru
 Back: $$D\left( \frac{f}{g} \right) = \frac{(Df)g - f(Dg)}{g^2}$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761661433529-->
+END%%
+
+### Chain Rule
+
+Suppose $v$ is differentiable at $x$ and $u$ is differentiable at $v(x)$. Then $f = u \circ v$ is differentiable at $x$ and $$f'(x) = u'[v(x)] \cdot v'(x).$$
+
+%%ANKI
+Basic
+What does the chain rule state?
+Back: Suppose $v$ is differentiable at $x$ and $u$ is differentiable at $v(x)$. Then $f = u \circ v$ is differentiable at $x$ and $$f'(x) = u'[v(x)] \cdot v'(x).$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761951183817-->
+END%%
+
+%%ANKI
+Basic
+Let $f = u \circ v$. Assuming relevant derivatives exist, what does derivative $f'$ equal?
+Back: $f' = (u' \circ v) \cdot v'$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761951183818-->
+END%%
+
+%%ANKI
+Basic
+Which "differentiation rule" is most related to function composition?
+Back: The chain rule.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761951183819-->
+END%%
+
+%%ANKI
+Cloze
+The chain rule is used to find derivatives of what?
+Back: Composed functions.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761951183820-->
+END%%
+
+%%ANKI
+Cloze
+Suppose {1:$v$} is differentiable at {1:$x$} and {2:$u$} is differentiable at {2:$v(x)$}. Then $f = u \circ v$ is differentiable at {3:$x$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761951183821-->
+END%%
+
+%%ANKI
+Basic
+Suppose $v$ is differentiable at $x$ and $u$ is differentiable at $v(x)$. How do we know $f$ is differentiable at $x$?
+Back: The chain rule states it is.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761951183822-->
+END%%
+
+%%ANKI
+Basic
+Suppose $v$ is differentiable at $x$ and $u$ is differentiable at $v(x)$. What does $f'(x)$ equal?
+Back: $f'(x) = u'[v(x)] \cdot v'(x)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761951183823-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \cos{2x}$. What does $f'(x)$ equal?
+Back: $-2\sin{2x}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761951183824-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \sin^2{x}$. What does $f'(x)$ equal?
+Back: $2\sin{x}\cos{x}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1762013132782-->
+END%%
+
+%%ANKI
+Basic
+Let $g(x) = f(x^2)$. What is $g'(x)$ in terms of $f'(x)$?
+Back: $g'(x) = f'(x^2) \cdot 2x$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1762013132785-->
+END%%
+
+%%ANKI
+Basic
+Let $g(x) = f(f(x))$. What is $g'(x)$ in terms of $f'(x)$?
+Back: $g'(x) = f'(f(x)) \cdot f'(x)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1762013132787-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \sqrt{1 + x^2}$. What does $f'(x)$ equal?
+Back: $$\frac{x}{\sqrt{1 + x^2}}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761951183825-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be differentiable. Using Leibniz notation, what does the chain rule state?
+Back: $$\frac{d}{dx}(f \circ g) = \frac{df}{dg}\frac{dg}{dx}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1762009928090-->
+END%%
+
+## Continuity
+
+Let $f$ be a function differentiable at $x$. Then $f$ is continuous at $x$.
+
+%%ANKI
+Basic
+Let $f$ be differentiable on $(a, b)$. Is $f$ continuous on $(a, b)$?
+Back: Yes.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761499926047-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $(a, b)$. Is $f$ differentiable on $(a, b)$?
+Back: Not necessarily.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761499926050-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \lvert x \rvert$. Why isn't $f$ continuous at $0$?
+Back: N/A. It is.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761499926053-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \lvert x \rvert$. Why isn't $f$ differentiable at $0$?
+Back: The left- and right-hand limits of $f'$ at $0$ disagree.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761499926056-->
+END%%
+
+%%ANKI
+Basic
+How does differentiability relate to continuity?
+Back: If $f$ is differentiable at a point, it is continuous at the point.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761499926059-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f$ is differentiable at $x$. *Why* does $f(x + h) \rightarrow f(x)$ as $h \rightarrow 0$?
+Back: Because differentiability implies continuity.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761500315897-->
+END%%
+
+%%ANKI
+Basic
+What is the prototypical example of a continuous function that is not differentiable?
+Back: $\lvert x \rvert$ at $x = 0$ is continuous but not differentiable.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761953903794-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be real-valued functions, everywhere differentiable. Does the following hold? $$\lim_{x \rightarrow p} f[g(x))] = f\left[ \lim_{x \rightarrow p} g(x) \right]$$
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761953903800-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be real-valued functions, everywhere differentiable. *Why* does the following hold? $$\lim_{x \rightarrow p} f[g(x))] = f\left[ \lim_{x \rightarrow p} g(x) \right]$$
+Back: Because differentiability implies continuity.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761953903804-->
 END%%
 
 ## Signedness

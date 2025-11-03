@@ -535,7 +535,7 @@ END%%
 
 %%ANKI
 Basic
-Which registers are designated for argument passing?
+Which registers are designated for passing integral arguments?
 Back: `%rdi`, `%rsi`, `%rdx`, `%rcx`, and `%r8-%r9`.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1730120207052-->
