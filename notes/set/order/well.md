@@ -106,7 +106,7 @@ END%%
 
 %%ANKI
 Cloze
-A {strict total order} is a {strict well order} if and only if it has no {infinitely descending chains}.
+A {strict total order} is a {strict well order} if and only if it has no {infinitely descending} {chains}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1759173593573-->
 END%%

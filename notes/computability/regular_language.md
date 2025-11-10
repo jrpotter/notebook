@@ -2141,6 +2141,24 @@ END%%
 
 The following ERE (**E**xtended **R**egular **E**xpression) operators were defined to achieve consistency between programs like `grep`, `sed`, and `awk`. In POSIX, regexps are greedy.
 
+* `.` matches any single character.
+	* There exist application-specific exclusions. For instance, newlines and the `NUL` character are often ignored.
+* `[...]`, the **bracket expression**, matches any enclosed character.
+	* An optional `-` can be included to denote a range.
+	* `-` is treated literally if its the first or last specified character.
+	* `]` is treated literally if its the first specified character.
+	* `^` complements the set if its the first specified character.
+* `^` is the leading anchor. It matches the starting position of a string.
+* `$` is the trailing anchor. It matches the ending position of a string.
+* `*` matches the preceding element zero or more times.
+* `+` matches the preceding element one or more times.
+* `?` matches the preceding element zero or one times.
+* `{n}`, an **interval expression**, matches the preceding element `n` times.
+	* `{n,}` matches the preceding element at least `n` times.
+	* `{n,m}` matches the preceding element between `n` and `m` times.
+	* Interval expressions cannot contain repetition counts `> 255`. Results are otherwise undefined.
+* `|` is the **alternation operator**. It allows specifying match alternatives.
+
 %%ANKI
 Cloze
 Regular expressions are either {greedy} or {lazy}.
@@ -2185,9 +2203,6 @@ Tags: os::linux
 <!--ID: 1707050923589-->
 END%%
 
-* `.` matches any single character.
-	* There exist application-specific exclusions. For instance, newlines and the `NUL` character are often ignored.
-
 %%ANKI
 Cloze
 The {`.`} operator matches {any single character}.
@@ -2204,12 +2219,6 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 Tags: os::linux
 <!--ID: 1707050923596-->
 END%%
-
-* `[...]`, the **bracket expression**, matches any enclosed character.
-	* An optional `-` can be included to denote a range.
-	* `-` is treated literally if its the first or last specified character.
-	* `]` is treated literally if its the first specified character.
-	* `^` complements the set if its the first specified character.
 
 %%ANKI
 Basic
@@ -2256,9 +2265,6 @@ Tags: os::linux
 <!--ID: 1707050923621-->
 END%%
 
-* `^` is the leading anchor. It matches the starting position of a string.
-* `$` is the trailing anchor. It matches the ending position of a string.
-
 %%ANKI
 Cloze
 The {`^`} operator matches {the starting position of a string}.
@@ -2283,10 +2289,6 @@ Reference: “POSIX Basic Regular Expressions,” accessed February 4, 2024, [ht
 Tags: os::linux
 <!--ID: 1707050923643-->
 END%%
-
-* `*` matches the preceding element zero or more times.
-* `+` matches the preceding element one or more times.
-* `?` matches the preceding element zero or one times.
 
 %%ANKI
 Basic
@@ -2342,11 +2344,6 @@ Tags: os::linux
 <!--ID: 1707654685036-->
 END%%
 
-* `{n}`, an **interval expression**, matches the preceding element `n` times.
-	* `{n,}` matches the preceding element at least `n` times.
-	* `{n,m}` matches the preceding element between `n` and `m` times.
-	* Interval expressions cannot contain repetition counts `> 255`. Results are otherwise undefined.
-
 %%ANKI
 Basic
 What name is given to the e.g. `{n,m}` operator?
@@ -2383,8 +2380,6 @@ Tags: os::linux
 <!--ID: 1707050923689-->
 END%%
 
-* `|` is the **alternation operator**. It allows specifying match alternatives.
-
 %%ANKI
 Basic
 What name is given to the e.g. `|` operator?
@@ -2414,7 +2409,22 @@ END%%
 
 #### Character Classes
 
-Notation for describing a class of characters specific to a given locale/character set.
+ERE also introduced notation for describing a class of characters specific to a given locale/character set:
+
+| Class        | Similar To      | Meaning                                          |
+| ------------ | --------------- | ------------------------------------------------ |
+| `[:alnum:]`  | `[A-Za-z0-9]`   | Alphanumeric characters                          |
+| `[:alpha:]`  | `[A-Za-z]`      | Alphabetic characters                            |
+| `[:blank:]`  | `[ \t]`         | `' '` and `TAB` characters                       |
+| `[:cntrl:]`  |                 | Control characters                               |
+| `[:digit:]`  | `[0-9]`         | Numeric characters                               |
+| `[:graph:]`  | `[^ [:cntrl:]]` | Printable and visible characters                 |
+| `[:lower:]`  | `[a-z]`         | Lowercase alphabetic characters                  |
+| `[:print:]`  | `[ [:graph:]]`  | Printable characters                             |
+| `[:punct:]`  |                 | All graphic characters except letters and digits |
+| `[:space:]`  | `[ \t\n\r\f\v]` | Whitespace characters                            |
+| `[:upper:]`  | `[A-Z]`         | Uppercase alphabetic characters                  |
+| `[:xdigit:]` | `[0-9A-Fa-f]`   | [[radices#Hexadecimal\|Hexadecimal]] digits      |
 
 %%ANKI
 Basic
@@ -2433,21 +2443,6 @@ Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 202
 Tags: os::linux
 <!--ID: 1707050923724-->
 END%%
-
-| Class        | Similar To      | Meaning                                          |
-| ------------ | --------------- | ------------------------------------------------ |
-| `[:alnum:]`  | `[A-Za-z0-9]`   | Alphanumeric characters                          |
-| `[:alpha:]`  | `[A-Za-z]`      | Alphabetic characters                            |
-| `[:blank:]`  | `[ \t]`         | `' '` and `TAB` characters                       |
-| `[:cntrl:]`  |                 | Control characters                               |
-| `[:digit:]`  | `[0-9]`         | Numeric characters                               |
-| `[:graph:]`  | `[^ [:cntrl:]]` | Printable and visible characters                 |
-| `[:lower:]`  | `[a-z]`         | Lowercase alphabetic characters                  |
-| `[:print:]`  | `[ [:graph:]]`  | Printable characters                             |
-| `[:punct:]`  |                 | All graphic characters except letters and digits |
-| `[:space:]`  | `[ \t\n\r\f\v]` | Whitespace characters                            |
-| `[:upper:]`  | `[A-Z]`         | Uppercase alphabetic characters                  |
-| `[:xdigit:]` | `[0-9A-Fa-f]`   | [[radices#Hexadecimal\|Hexadecimal]] digits      |
 
 %%ANKI
 Basic
@@ -2483,6 +2478,159 @@ Back: It is neither printable nor visible.
 Reference: Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)
 Tags: os::linux
 <!--ID: 1707050923740-->
+END%%
+
+### Backtracking
+
+Many popular implementations of regular expression libraries use backtracking instead of finite automaton. This implementation strategy is notorious for being exponentially slow.
+
+The only situation in which backtracking is the best known option is in the case of **backreferences**, i.e. a substring that matches a previously matched portion of the "regular expression" (quoted since backreferences are not actual regular expressions in the theoretical sense).
+
+%%ANKI
+Basic
+Many regex libraries use what methodology over that of finite automata?
+Back: Backtracking.
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762663048446-->
+END%%
+
+%%ANKI
+Basic
+With respect to regex libraries, what is a backreference?
+Back: A substring that matches a previously matched portion of the expression.
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762663048454-->
+END%%
+
+%%ANKI
+Basic
+What misnomer exists when describing backreferences in regex libraries?
+Back: Expressions with backreferences are not regular expressions in the theoretical sense.
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762663048457-->
+END%%
+
+%%ANKI
+Basic
+Cox highlights what function as the reason why many regex libraries use backtracking?
+Back: Support for backreferences.
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762663048461-->
+END%%
+
+### Thompson's Algorithm
+
+**Thompson's algorithm** converts regular expressions into an NFA containing a number of states equal to at most the length of the expression. The total NFA is built up from partial NFAs for each subexpression, with a different construction for each operator. Each partial NFA has dangling arrows pointing to nothing. The result is concatenated together at the end.
+
+Once built, the NFA is simulated in a multiple-state fashion. Every possible branch of navigation is executed simultaneously.
+
+%%ANKI
+Basic
+What is Thompson's algorithm used for?
+Back: Building NFAs used to match regular expressions.
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762664096223-->
+END%%
+
+%%ANKI
+Basic
+What kind of finite automaton does Thompson's algorithm use for recognition?
+Back: An NFA.
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762664096230-->
+END%%
+
+%%ANKI
+Basic
+How does the number of NFA states produced by Thompson's algorithm compare to the length of the regular expression?
+Back: The number of states is at most the length of the regular expression.
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762664096232-->
+END%%
+
+%%ANKI
+Basic
+What does the NFA for matching string "$a$" look like in Thompson's algorithm?
+Back:
+![[nfa-thompson-symbol.png]]
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762663048464-->
+END%%
+
+%%ANKI
+Basic
+What does the NFA for matching string "$e_1e_2$" look like in Thompson's algorithm?
+Back:
+![[nfa-thompson-concat.png]]
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762664096235-->
+END%%
+
+%%ANKI
+Basic
+What does the NFA for matching string "$e_1 \mid e_2$" look like in Thompson's algorithm?
+Back:
+![[nfa-thompson-alternation.png]]
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762664096237-->
+END%%
+
+%%ANKI
+Basic
+What does the NFA for matching string "$e?$" look like in Thompson's algorithm?
+Back:
+![[nfa-thompson-optional.png]]
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762664096240-->
+END%%
+
+%%ANKI
+Basic
+What does the NFA for matching string "$e*$" look like in Thompson's algorithm?
+Back:
+![[nfa-thompson-kleene-star.png]]
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762664096244-->
+END%%
+
+%%ANKI
+Basic
+What does the NFA for matching string "$e+$" look like in Thompson's algorithm?
+Back:
+![[nfa-thompson-kleene-plus.png]]
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762664096248-->
+END%%
+
+%%ANKI
+Basic
+Assume Thompson's algorithm. What is the algorithmic complexity of matching against a regex?
+Back: $O(n)$ where $n$ is the length of the regular expression.
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762664096251-->
+END%%
+
+%%ANKI
+Basic
+Assume backtracking. What is the algorithmic complexity of matching against a regex?
+Back: $O(2^n)$ where $n$ is the length of the regular expression.
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762664096255-->
+END%%
+
+%%ANKI
+Cloze
+Thompson's algorithm is to {states} whereas backtracking is to {paths}.
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762664096258-->
+END%%
+
+%%ANKI
+Basic
+Who first employed multi-state simulations of NFAs in practice?
+Back: Ken Thompson.
+Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
+<!--ID: 1762664096262-->
 END%%
 
 ## Pumping Lemma
@@ -2756,6 +2904,7 @@ END%%
 
 ## Bibliography
 
+* Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 * “POSIX Basic Regular Expressions,” accessed February 4, 2024, [https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions).
 * Robbins, Arnold D. “GAWK: Effective AWK Programming,” October 2023. [https://www.gnu.org/software/gawk/manual/gawk.pdf](https://www.gnu.org/software/gawk/manual/gawk.pdf)

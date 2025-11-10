@@ -1496,7 +1496,7 @@ END%%
 Basic
 Consider factoring $F \colon A \rightarrow B$ by its kernel $\sim$. Is $\hat{F}$ bijective?
 ![[function-kernel.png]]
-Back: Not necessarily.
+Back: Not necessarily since it may not be surjective.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721223015650-->
 END%%

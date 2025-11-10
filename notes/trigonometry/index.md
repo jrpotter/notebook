@@ -442,7 +442,7 @@ END%%
 %%ANKI
 Basic
 Let $t$ be the length of an arc with initial point $\langle 1, 0 \rangle$. When is $\sin(t) > 0$?
-Back: When the terminal point of the arc is in quadrant I or II.
+Back: When $0 < t < \pi$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737416715588-->
 END%%
@@ -450,7 +450,7 @@ END%%
 %%ANKI
 Basic
 Let $t$ be the length of an arc with initial point $\langle 1, 0 \rangle$. When is $\sin(t) < 0$?
-Back: When the terminal point of the arc is in quadrant III or IV.
+Back: When $\pi < t < 2\pi$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737416715591-->
 END%%

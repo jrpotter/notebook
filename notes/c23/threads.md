@@ -176,8 +176,8 @@ END%%
 
 %%ANKI
 Basic
-In C, what is the most natural way of modifying TSD?
-Back: Using the `tss_` family of functions.
+In C, what standard interface is used to modify TSD?
+Back: The `tss_` family of functions.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1759062508175-->
 END%%

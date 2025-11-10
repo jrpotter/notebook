@@ -189,7 +189,7 @@ END%%
 
 %%ANKI
 Basic
-Which similarity transformation is ignored by congruence?
+Which similarity transformation cannot be applied while still maintaining congruence between two shapes?
 Back: Uniform scaling.
 Reference: “Similarity (Geometry).” In _Wikipedia_, May 16, 2025. [https://en.wikipedia.org/w/index.php?title=Similarity_(geometry)](https://en.wikipedia.org/w/index.php?title=Similarity_\(geometry\)&oldid=1290691543).
 <!--ID: 1749910471999-->

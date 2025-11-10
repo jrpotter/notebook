@@ -542,11 +542,11 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 END%%
 
 %%ANKI
-Cloze
+Basic
 The chain rule is used to find derivatives of what?
 Back: Composed functions.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761951183820-->
+<!--ID: 1762661143692-->
 END%%
 
 %%ANKI

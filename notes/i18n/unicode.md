@@ -185,14 +185,14 @@ END%%
 
 UTF-16 is a variable-width encoding that superseded UCS-2.
 
-Codes points "in the BMP" (i.e. less than $2^{16}$) are encoded using a single 16-bit code unit. Code points "above the BMP" (i.e. greater than or equal to $2^{16}$) are encoded using two 16-bit code units. These two code units are chosen from the **surrogate range** `0xD800-0xDFFF`. Values in this range are not used as characters, and UTF-16 provides no legal way to code them as individual code points.
+Codes points "in the BMP" (i.e. less than $2^{16}$) are encoded using a single 16-bit code unit. Code points "above the BMP" (i.e. greater than or equal to $2^{16}$) are encoded using two 16-bit code units. These two code units are chosen from the **surrogate range** `U+D800-U+DFFF`. Values in this range are not used as characters, and UTF-16 provides no legal way to code them as individual code points.
 
-| Binary                                   | Code Point                           | Range              |
-| ---------------------------------------- | ------------------------------------ | ------------------ |
-| `xxxxxxxxxxxxxxxx`                       | `xxxxxxxxxxxxxxxx`                   | `0x0000-0xFFFF`    |
-| `110110xxxxxxxxxx`<br>`110111yyyyyyyyyy` | `xxxxxxxxxxyyyyyyyyyy +`<br>`0x1000` | `0x10000-0x10FFFF` |
+| Binary                                   | Code Point                               | Range              |
+| ---------------------------------------- | ---------------------------------------- | ------------------ |
+| `xxxxxxxxxxxxxxxx`                       | `xxxx xxxx xxxx xxxx`                    | `0x0000-0xFFFF`    |
+| `110110xxxxxxxxxx`<br>`110111yyyyyyyyyy` | `xxxx xxxx xxyy yyyy yyyy +`<br>`0x1000` | `0x10000-0x10FFFF` |
 
-If the encoding type is UTF-16BE, we assume a big-endian order. If UTF-16LE, we assume a little-endian order. If UTF-16, we rely on the **byte order mark** (BOM). This is a 16-bit code unit with value `U+FEFF` that precedes the first actual coded value. If an opposite-endian decoder reads value `U+FFFE`, it knows the endianness must be opposite.
+If the encoding type is UTF-16BE, we assume a big-endian order. If UTF-16LE, we assume a little-endian order. If UTF-16, we rely on the **byte order mark** (BOM). This is a 16-bit code point with value `U+FEFF` that precedes the first actual coded value. If an opposite-endian decoder reads value `U+FFFE`, it knows the endianness must be opposite.
 
 %%ANKI
 Cloze
@@ -234,7 +234,7 @@ END%%
 
 %%ANKI
 Basic
-What is the first hexadecimal value defined in the UTF-16 surrogate range?
+What is the first code unit defined in the UTF-16 surrogate range?
 Back: `0xD800`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743891757962-->
@@ -242,7 +242,7 @@ END%%
 
 %%ANKI
 Basic
-What is the last hexadecimal value defined in the UTF-16 surrogate range?
+What is the last code unit defined in the UTF-16 surrogate range?
 Back: `0xDFFF`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743891757972-->
@@ -250,7 +250,7 @@ END%%
 
 %%ANKI
 Basic
-What hexadecimal range comprise UTF-16 surrogates?
+What range of code units comprise the UTF-16 surrogates?
 Back: `0xD800-0xDFFF`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743891757986-->
@@ -258,7 +258,7 @@ END%%
 
 %%ANKI
 Basic
-In hexadecimal, how many code points are in range `0xD800-0xDFFF`?
+In hexadecimal, how many distinct values are in range `0xD800-0xDFFF`?
 Back: `0x800`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743891757990-->
@@ -297,7 +297,7 @@ END%%
 
 %%ANKI
 Basic
-What hexadecimal range(s) comprise code points representable with a single UTF-16 code unit?
+What range of UTF-16 code units comprise code points representable with a single UTF-16 code unit?
 Back: `0x0000-0xD7FF` and `0xE000-0xFFFF`.
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743898501971-->
@@ -335,7 +335,7 @@ END%%
 
 %%ANKI
 Basic
-The high surrogate is found in what hexadecimal range of UTF-16 code units?
+The high surrogate is found in what range of UTF-16 code units?
 Back: `0xD800-0xDBFF`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743899036711-->
@@ -343,7 +343,7 @@ END%%
 
 %%ANKI
 Basic
-The low surrogate is found in what hexadecimal range of UTF-16 code units?
+The low surrogate is found in what range of UTF-16 code units?
 Back: `0xDC00-0xDFFF`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743899036720-->
@@ -351,7 +351,7 @@ END%%
 
 %%ANKI
 Basic
-The trailing surrogate is found in what hexadecimal range of UTF-16 code units?
+The trailing surrogate is found in what range of UTF-16 code units?
 Back: `0xDC00-0xDFFF`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743899036722-->
@@ -359,7 +359,7 @@ END%%
 
 %%ANKI
 Basic
-The leading surrogate is found in what hexadecimal range of UTF-16 code units?
+The leading surrogate is found in what range of UTF-16 code units?
 Back: `0xD800-0xDBFF`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 <!--ID: 1743899036724-->
@@ -382,9 +382,11 @@ Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.or
 END%%
 
 %%ANKI
+Basic
 What binary prefix do values in `0xDC00-0xDFFF` have?
 Back: `110111`
 Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+<!--ID: 1762178644821-->
 END%%
 
 %%ANKI
@@ -595,12 +597,20 @@ END%%
 
 UTF-8 is a variable-width encoding. Code points are stored using 1 to 4 bytes each. It uses a system of binary prefixes:
 
-| Binary                               | Code Point              | Range              |
-| ------------------------------------ | ----------------------- | ------------------ |
-| `0xxxxxxx`                           | `xxxxxxx`               | `0x0000-0x007F`    |
-| `110xxxxx 10yyyyyy`                  | `xxxxxyyyyyy`           | `0x0080-0x07FF`    |
-| `1110xxxx 10yyyyyy 10zzzzzz`         | `xxxxyyyyyyzzzzzz`      | `0x0800-0xFFFF`    |
-| `1110xxx 10yyyyyy 10zzzzzz 10wwwwww` | `xxxyyyyyyzzzzzzwwwwww` | `0x10000-0x10FFFF` |
+| Binary                                | Code Point                      | Range              |
+| ------------------------------------- | ------------------------------- | ------------------ |
+| `0xxxxxxx`                            | `0xxx xxxx`                     | `0x0000-0x007F`    |
+| `110xxxxx 10yyyyyy`                   | `0xxx xxyy yyyy`                | `0x0080-0x07FF`    |
+| `1110xxxx 10yyyyyy 10zzzzzz`          | `xxxx yyyy yyzz zzzz`           | `0x0800-0xFFFF`    |
+| `11110xxx 10yyyyyy 10zzzzzz 10wwwwww` | `000x xxyy yyyy zzzz zzww wwww` | `0x10000-0x10FFFF` |
+
+Without taking appropriate precautions, a particular code point may be encoded in multiple ways via **overlong encodings**. The following byte sequences are prohibited for this reason:
+
+* 2-byte sequences: `0xC0` and `0xC1`
+* 3-byte sequences: `0xE0` followed by less than `0xA0`
+* 4-byte sequences: `0xF0` followed by less than `0x90`
+
+For compatibility reasons, UTF-8 prohibits 3-byte sequences corresponding to part of a [[#UTF-16|UTF-16]] surrogate pair (i.e. code points between `U+D800` and `U+DFFF`). Lastly, no 4-byte sequence should decode to a value greater than `U+10FFFF`.
 
 %%ANKI
 Basic
@@ -744,6 +754,30 @@ Beej believes UTF-8 has become the dominant multibyte encoding for what reason?
 Back: Because it is backwards compatible with ASCII.
 Reference: Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 <!--ID: 1753399800348-->
+END%%
+
+%%ANKI
+Basic
+Overlong encodings are usually discussed with respect to which Unicode standard?
+Back: UTF-8.
+Reference: _Wikipedia_. “UTF-8.” November 3, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-8](https://en.wikipedia.org/w/index.php?title=UTF-8&oldid=1320220542).
+<!--ID: 1762178644826-->
+END%%
+
+%%ANKI
+Basic
+With respect to UTF-8, what is an overlong encoding?
+Back: An encoding of a code point using more bytes than necessary.
+Reference: _Wikipedia_. “UTF-8.” November 3, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-8](https://en.wikipedia.org/w/index.php?title=UTF-8&oldid=1320220542).
+<!--ID: 1762178644829-->
+END%%
+
+%%ANKI
+Basic
+Why are overlong encodings considered a security risk?
+Back: Interpretation of characters may happen inconsistently.
+Reference: _Wikipedia_. “UTF-8.” November 3, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-8](https://en.wikipedia.org/w/index.php?title=UTF-8&oldid=1320220542).
+<!--ID: 1762178644832-->
 END%%
 
 ## Normalization
@@ -973,5 +1007,6 @@ END%%
 * Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
 * “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
 * Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+* _Wikipedia_. “UTF-8.” November 3, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-8](https://en.wikipedia.org/w/index.php?title=UTF-8&oldid=1320220542).
 * “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
 * “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).

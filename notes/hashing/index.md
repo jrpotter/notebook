@@ -493,7 +493,7 @@ END%%
 
 ### Universal Hashing
 
-Let $\mathscr{H}$ be a finite family of hash functions that map a given universe $U$ of keys into range $\{0, 1, \ldots, m - 1\}$. Such a family is said to be **universal** if $$\forall x, y \in U, x \neq y \Rightarrow |\{h \in \mathscr{H} \mid h(x) = h(y)\}| \leq \frac{|\mathscr{H}|}{m}.$$
+Let $\mathscr{H}$ be a finite family of hash functions that map a given universe $U$ of keys into range $\{0, 1, \ldots, m - 1\}$. Such a family is said to be **universal** if for all distinct $x, y \in U$, $$\frac{\lvert \{h \in \mathscr{H} \mid h(x) = h(y)\} \rvert}{\lvert \mathscr{H} \rvert} \leq \frac{1}{m}.$$
 
 %%ANKI
 Basic
@@ -560,7 +560,7 @@ END%%
 
 %%ANKI
 Basic
-Consider universal family $\mathscr{H}$ and universe $U$. What range of numbers does the following evaluate to? $$|\{h \in \mathscr{H} \mid h(x) = h(y)\}| \text{ for distinct } x, y \in U$$
+Consider universal family $\mathscr{H}$ and universe $U$. What range of numbers does the following evaluate to? $$\lvert \{h \in \mathscr{H} \mid h(x) = h(y)\} \rvert \text{ for distinct } x, y \in U$$
 Back: A value between $0$ and $|\mathscr{H}|$ inclusive.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: hashing::random hashing::universal
@@ -570,7 +570,7 @@ END%%
 %%ANKI
 Basic
 Let $\mathscr{H} = \{h \mid U \rightarrow \{0, 1, \ldots, m - 1\}\}$ be universal. What first-order logic statement holds?
-Back: $$\forall x, y \in U, x \neq y \Rightarrow |\{h \in \mathscr{H} \mid h(x) = h(y)\}| \leq \frac{|\mathscr{H}|}{m}$$
+Back: $$\forall x, y \in U, x \neq y \Rightarrow \lvert \{h \in \mathscr{H} \mid h(x) = h(y)\} \rvert \leq \frac{\lvert \mathscr{H} \rvert}{m}$$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: hashing::random hashing::universal
 <!--ID: 1721482558988-->
@@ -578,7 +578,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\mathscr{H} = \{h \mid U \rightarrow \{0, 1, \ldots, m - 1\}\}$ be universal. What does $m > |\mathscr{H}|$ imply?
+Let $\mathscr{H} = \{h \mid U \rightarrow \{0, 1, \ldots, m - 1\}\}$ be universal. What does $m > \lvert \mathscr{H} \rvert$ imply?
 Back: For any distinct $x, y \in U$, $h(x) \neq h(y)$ for all $h \in \mathscr{H}$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: hashing::random hashing::universal
@@ -669,7 +669,7 @@ END%%
 %%ANKI
 Basic
 How might we redefine "universal" to prevent $\varnothing$ being considered universal w.r.t. an $m$-slot hash table?
-Back: $$\forall x, y \in U, x \neq y \Rightarrow \frac{|\varnothing|}{|\varnothing|} \leq \frac{1}{m}$$
+Back: $$\forall x, y \in U, x \neq y \Rightarrow \frac{\lvert \varnothing \rvert}{\lvert \varnothing \rvert} \leq \frac{1}{m}$$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 Tags: hashing::random hashing::universal
 <!--ID: 1721482559069-->
@@ -681,6 +681,14 @@ What is it that universal hashing makes impossible?
 Back: Forcing the worst-case running time of hash table operations.
 Tags: hashing::random hashing::universal
 <!--ID: 1722080163399-->
+END%%
+
+%%ANKI
+Basic
+Assume $x, y \in U$ are distinct. With respect to universal hashing, what is the *meaning* of the RHS? $$\frac{\lvert \{h \in \mathscr{H} \mid h(x) = h(y)\} \rvert}{\lvert \mathscr{H} \rvert} \leq \frac{1}{m}$$
+Back: It indicates the odds of a collision is no worse than that of uniform hashing.
+Tags: hashing::random hashing::universal
+<!--ID: 1762643737845-->
 END%%
 
 ## Bibliography
