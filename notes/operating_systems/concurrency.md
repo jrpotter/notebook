@@ -432,15 +432,15 @@ END%%
 
 A **semaphore** is a locking mechanism typically interacted with using the following two functions:
 
-* `wait()`: Decrements the semaphore. Otherwise blocks until it can do so.
-* `signal()`: Increments the semaphore. Notifies blocked tasks.
+* `wait`: Decrements the semaphore. Otherwise blocks until it can do so.
+* `signal`: Increments the semaphore. Notifies blocked tasks.
 
 A **binary semaphore** restricts its possible values to `0` or `1`. A **counting semaphore** allows an arbitrary nonnegative counter value.
 
 %%ANKI
 Basic
 What function name is typically associated with semaphore decrement?
-Back: `wait()`
+Back: `wait`
 Reference: _Wikipedia_. “Semaphore (programming).” September 23, 2025. [https://en.wikipedia.org/w/index.php?title=Semaphore_(programming)](https://en.wikipedia.org/w/index.php?title=Semaphore_\(programming\)&oldid=1312892366).
 <!--ID: 1759065410700-->
 END%%
@@ -448,7 +448,7 @@ END%%
 %%ANKI
 Basic
 What function name is typically associated with semaphore increment?
-Back: `signal()`
+Back: `signal`
 Reference: _Wikipedia_. “Semaphore (programming).” September 23, 2025. [https://en.wikipedia.org/w/index.php?title=Semaphore_(programming)](https://en.wikipedia.org/w/index.php?title=Semaphore_\(programming\)&oldid=1312892366).
 <!--ID: 1759065410703-->
 END%%
@@ -472,14 +472,14 @@ END%%
 %%ANKI
 Basic
 What functions are typically used to modify a semaphore?
-Back: `wait()` and `signal()`.
+Back: `wait` and `signal`.
 Reference: _Wikipedia_. “Semaphore (programming).” September 23, 2025. [https://en.wikipedia.org/w/index.php?title=Semaphore_(programming)](https://en.wikipedia.org/w/index.php?title=Semaphore_\(programming\)&oldid=1312892366).
 <!--ID: 1759065410712-->
 END%%
 
 %%ANKI
 Basic
-With respect to semaphores, what does `wait()` do?
+With respect to semaphores, what does `wait` do?
 Back: Decrements the semaphore, blocking if necessary.
 Reference: _Wikipedia_. “Semaphore (programming).” September 23, 2025. [https://en.wikipedia.org/w/index.php?title=Semaphore_(programming)](https://en.wikipedia.org/w/index.php?title=Semaphore_\(programming\)&oldid=1312892366).
 <!--ID: 1759065410715-->
@@ -487,7 +487,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to semaphores, what does `signal()` do?
+With respect to semaphores, what does `signal` do?
 Back: Increments the semaphore.
 Reference: _Wikipedia_. “Semaphore (programming).” September 23, 2025. [https://en.wikipedia.org/w/index.php?title=Semaphore_(programming)](https://en.wikipedia.org/w/index.php?title=Semaphore_\(programming\)&oldid=1312892366).
 <!--ID: 1759065410718-->
@@ -495,7 +495,7 @@ END%%
 
 %%ANKI
 Cloze
-With respect to semaphores, {1:`wait()`} is to {1:decrementing} whereas {2:`signal()`} is to {2:incrementing}.
+With respect to semaphores, {1:`wait`} is to {1:decrementing} whereas {2:`signal`} is to {2:incrementing}.
 Reference: _Wikipedia_. “Semaphore (programming).” September 23, 2025. [https://en.wikipedia.org/w/index.php?title=Semaphore_(programming)](https://en.wikipedia.org/w/index.php?title=Semaphore_\(programming\)&oldid=1312892366).
 <!--ID: 1759065410721-->
 END%%
@@ -503,7 +503,7 @@ END%%
 %%ANKI
 Basic
 What function is called on a binary semaphore when entering a critical section?
-Back: `wait()`
+Back: `wait`
 Reference: _Wikipedia_. “Lock (computer science).” August 16, 2025. [https://en.wikipedia.org/w/index.php?title=Lock_(computer_science)](https://en.wikipedia.org/w/index.php?title=Lock_\(computer_science\)&oldid=1306274754).
 <!--ID: 1759066376067-->
 END%%
@@ -511,7 +511,7 @@ END%%
 %%ANKI
 Basic
 What function is called on a binary semaphore when leaving a critical section?
-Back: `signal()`
+Back: `signal`
 Reference: _Wikipedia_. “Lock (computer science).” August 16, 2025. [https://en.wikipedia.org/w/index.php?title=Lock_(computer_science)](https://en.wikipedia.org/w/index.php?title=Lock_\(computer_science\)&oldid=1306274754).
 <!--ID: 1759066376075-->
 END%%
@@ -544,7 +544,7 @@ END%%
 %%ANKI
 Basic
 What function name is typically associated with mutex acquisition?
-Back: `lock()`
+Back: `lock`
 Reference: _Wikipedia_. “Lock (computer science).” August 16, 2025. [https://en.wikipedia.org/w/index.php?title=Lock_(computer_science)](https://en.wikipedia.org/w/index.php?title=Lock_\(computer_science\)&oldid=1306274754).
 <!--ID: 1759065410727-->
 END%%
@@ -552,14 +552,14 @@ END%%
 %%ANKI
 Basic
 What function name is typically associated with mutex release?
-Back: `unlock()`
+Back: `unlock`
 Reference: _Wikipedia_. “Lock (computer science).” August 16, 2025. [https://en.wikipedia.org/w/index.php?title=Lock_(computer_science)](https://en.wikipedia.org/w/index.php?title=Lock_\(computer_science\)&oldid=1306274754).
 <!--ID: 1759065410731-->
 END%%
 
 %%ANKI
 Basic
-What kind of semaphore does a mutex must closely relate to?
+What kind of semaphore does a mutex most closely relate to?
 Back: A binary semaphore.
 Reference: _Wikipedia_. “Lock (computer science).” August 16, 2025. [https://en.wikipedia.org/w/index.php?title=Lock_(computer_science)](https://en.wikipedia.org/w/index.php?title=Lock_\(computer_science\)&oldid=1306274754).
 <!--ID: 1759065410734-->
@@ -584,7 +584,7 @@ END%%
 %%ANKI
 Basic
 What function is called on a mutex when entering a critical section?
-Back: `lock()`
+Back: `lock`
 Reference: _Wikipedia_. “Lock (computer science).” August 16, 2025. [https://en.wikipedia.org/w/index.php?title=Lock_(computer_science)](https://en.wikipedia.org/w/index.php?title=Lock_\(computer_science\)&oldid=1306274754).
 <!--ID: 1759066376080-->
 END%%
@@ -592,7 +592,7 @@ END%%
 %%ANKI
 Basic
 What function is called on a mutex when leaving a critical section?
-Back: `unlock()`
+Back: `unlock`
 Reference: _Wikipedia_. “Lock (computer science).” August 16, 2025. [https://en.wikipedia.org/w/index.php?title=Lock_(computer_science)](https://en.wikipedia.org/w/index.php?title=Lock_\(computer_science\)&oldid=1306274754).
 <!--ID: 1759066376083-->
 END%%

@@ -248,7 +248,7 @@ END%%
 %%ANKI
 Basic
 What does the following evaluate to? $$wp(''\text{if } x \geq y \text{ then } z := x \text{ else } z := y'', z = y)$$
-Back: $y \geq x$
+Back: $y > x$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715631869174-->
 END%%

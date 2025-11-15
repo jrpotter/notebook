@@ -2504,7 +2504,7 @@ END%%
 
 %%ANKI
 Basic
-What misnomer exists when describing backreferences in regex libraries?
+Why is it a misnomer to describe backreferences with respect to regexes?
 Back: Expressions with backreferences are not regular expressions in the theoretical sense.
 Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
 <!--ID: 1762663048457-->
@@ -2512,7 +2512,7 @@ END%%
 
 %%ANKI
 Basic
-Cox highlights what function as the reason why many regex libraries use backtracking?
+Cox attributes what functionality to why many regex libraries employ backtracking?
 Back: Support for backreferences.
 Reference: Cox, Russ. “Regular Expression Matching Can Be Simple And Fast.” Accessed November 8, 2025. [https://swtch.com/~rsc/regexp/regexp1.html](https://swtch.com/~rsc/regexp/regexp1.html).
 <!--ID: 1762663048461-->

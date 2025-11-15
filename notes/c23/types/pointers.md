@@ -584,6 +584,8 @@ END%%
 
 The `nullptr` keyword is introduced in C23. Its type, `nullptr_t`, is provided in `<stddef.h>`. Objects of this type have the same size and alignment as a pointer to a character type. The corresponding object representation is the same as that of a null pointer value of type `void*`.
 
+A value of `nullptr` always compares equal to any null pointer constant.
+
 %%ANKI
 Basic
 Which alternative to `NULL` did C23 introduce?
@@ -630,6 +632,30 @@ What is the object representation of a `nullptr_t` object?
 Back: The same as that of null pointer of type `void*`.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759325776951-->
+END%%
+
+%%ANKI
+Basic
+How does `nullptr` uniquely interact with `==`?
+Back: A value of `nullptr` always compares equal to any null pointer constant.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1762958437718-->
+END%%
+
+%%ANKI
+Basic
+What is outputted in the following snippet?
+```c
+int *a = nullptr;
+if (a == 0) {
+  printf("equal");
+} else {
+  printf("unequal");
+}
+```
+Back: `equal`
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1762958437725-->
 END%%
 
 ## NULL
