@@ -274,7 +274,60 @@ Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savan
 <!--ID: 1762568789160-->
 END%%
 
-### Goals
+### Targets
+
+When an explicit rule has multiple targets, they can be treated in one of two possible ways: as **independent targets** or as **grouped targets**.
+
+If the standard target separator `:` is used, each target is independent. This is equivalent to writing the same rule once for each target, with duplicated prerequisites and recipes. If the grouped target separator `&:` is used, its understood the recipe generates all the target files with a single invocation.
+
+%%ANKI
+Cloze
+{1:Independent} targets are to {2:`:`} whereas {2:grouped} targets are to {1:`&:`}.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763421147168-->
+END%%
+
+%%ANKI
+Basic
+Independent targets use what separator?
+Back: `:`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763421147177-->
+END%%
+
+%%ANKI
+Basic
+Grouped targets use what separator?
+Back: `&:`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763421147180-->
+END%%
+
+%%ANKI
+Basic
+If `N` targets are considered independent, how many times is their recipe invoked?
+Back: `N` times.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763421147182-->
+END%%
+
+%%ANKI
+Basic
+If `N` targets are considered grouped, how many times is their recipe invoked?
+Back: One time.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763421147185-->
+END%%
+
+%%ANKI
+Basic
+What mnemonic is suggested to remember the  purpose of the grouped separator `&:`?
+Back: `&` is used to imply "and"/"all".
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763421147188-->
+END%%
+
+#### Goals
 
 A **goal** is a target that `make` strives to update. The **default goal** is the first target of the first rule in the first makefile, with two exceptions:
 
@@ -371,6 +424,204 @@ Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savan
 <!--ID: 1762568789164-->
 END%%
 
+#### Phony Targets
+
+A **phony target** is a target that does not refer to a file. That is, it only specifies an action of some sort.
+
+To ensure that such a target runs its recipe unconditionally, regardless of whether a file with the target name exists, it can be specified as the prerequisite of special target `.PHONY`.
+
+```make
+.PHONY: clean
+
+clean:
+	rm -r *.o
+```
+
+%%ANKI
+Basic
+Which special built-in target allows ensuring a recipe is always run?
+Back: `.PHONY`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763321160550-->
+END%%
+
+%%ANKI
+Basic
+What is a phony target?
+Back: A target that does not refer to a file.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1762439973379-->
+END%%
+
+%%ANKI
+Basic
+What is the behavior of special target `.PHONY`?
+Back: Its prerequisites run their recipes unconditionally.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763261110446-->
+END%%
+
+%%ANKI
+Basic
+Consider the following rule. When might `make clean` not work as expected?
+```make
+clean:
+	rm -r *.o
+```
+Back: When a file named `clean` exists in the directory.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763261110456-->
+END%%
+
+%%ANKI
+Basic
+Consider the following rule. How do we ensure `make clean` always executes its recipe?
+```make
+clean:
+	rm -r *.o
+```
+Back: Add `.PHONY: clean`.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763261110461-->
+END%%
+
+%%ANKI
+Basic
+Rewrite the following using phony targets instead of force targets.
+```make
+clean: FORCE
+	rm -r *.o
+
+FORCE:
+```
+Back:
+```make
+.PHONY: clean
+
+clean:
+	rm -r *.o
+```
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763261110465-->
+END%%
+
+#### Force Targets
+
+If a rule has no prerequisites or recipe, and the target of the rule is a nonexistent file, then `make` treats this **force target** as updated whenever its rule is run. This mean rules that depend on a force target will always have their recipe run:
+
+```make
+clean: FORCE
+	rm -r *.o
+
+FORCE:
+```
+
+Generally speaking, `.PHONY` has superseded the use of force targets. Force targets remain useful though when wanting to rebuild a pattern rule.
+
+%%ANKI
+Basic
+What name is typically given to a force target?
+Back: `FORCE`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763261110469-->
+END%%
+
+%%ANKI
+Cloze
+{Force} targets are mostly superseded by {phony} targets.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763261110473-->
+END%%
+
+%%ANKI
+Basic
+Rewrite the following using force targets instead of phony targets.
+```make
+.PHONY: clean
+
+clean:
+	rm -r *.o
+```
+Back:
+```make
+clean: FORCE
+	rm -r *.o
+
+FORCE:
+```
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763261110477-->
+END%%
+
+#### Silent
+
+Rules corresponding to prerequisites for the `.SILENT` target will not be printed on execution. If `.SILENT` has no prerequisites, `make` does not print any recipes before executing them.
+
+To suppress **echoing** of specific lines in a recipe, prefix the line with the `@` symbol. The `@` is discarded before the line is passed to the shell.
+
+%%ANKI
+Basic
+Which special built-in rule allows suppressing the printing of recipes?
+Back: `.SILENT`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763321160556-->
+END%%
+
+%%ANKI
+Basic
+How is `.SILENT` interpreted if it has no prerequisites?
+Back: `make` does not print any recipes before executing them.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763321160558-->
+END%%
+
+%%ANKI
+Basic
+How is a prerequisite of `.SILENT` interpreted?
+Back: `make` does not print the recipe corresponding to the prerequisite.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763321160561-->
+END%%
+
+%%ANKI
+Basic
+How is a recipe of `.SILENT` interpreted?
+Back: `make` ignores this recipe.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763321160563-->
+END%%
+
+%%ANKI
+Cloze
+{Echoing} describes the {printing of each line of the recipe before its executed}.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763321160567-->
+END%%
+
+%%ANKI
+Basic
+Why is recipe echoing named the way it is?
+Back: Because it gives the appearance that you are typing the lines yourself.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763321160570-->
+END%%
+
+%%ANKI
+Basic
+How do you prevent echoing of a specific line in a recipe?
+Back: Prefix the line with the `@` character.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763321160573-->
+END%%
+
+%%ANKI
+Basic
+Suppose a line in a recipe begins with a `@` character. What does this mean?
+Back: Echoing is suppressed for that line.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763321160575-->
+END%%
+
 ### Prerequisites
 
 There are two types of prerequisites: **normal** prerequisites and **order-only** prerequisites. An order-only prerequisite is built before a target, but a newer order-only prerequisite does not force the target to be updated. Normal and order-only prerequisites are separated via a pipe symbol (`|`) in the prerequisites list:
@@ -450,17 +701,13 @@ Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savan
 <!--ID: 1762568789190-->
 END%%
 
-### Phony Targets
+### Static Pattern Rules
 
-A **phony target** is a target that does not refer to a file. That is, it only specifies an action of some sort.
+TODO
 
-%%ANKI
-Basic
-What is a phony target?
-Back: A target that does not refer to a file.
-Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
-<!--ID: 1762439973379-->
-END%%
+### Double-Colon Rules
+
+TODO
 
 ### Implicit Rules
 
@@ -468,8 +715,8 @@ TODO
 
 %%ANKI
 Basic
-`Makefile` rules come in what two categories?
-Back: Explicit and implicit.
+`Makefile` rules are broadly categorized in what two ways?
+Back: As explicit and implicit.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1762562126746-->
 END%%

@@ -1731,7 +1731,7 @@
     "_journal/2025-10/2025-10-22.md": "c4fedcaf6d2622cc79eedc07b1ef851d",
     "_journal/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
     "_journal/2025-10/2025-10-23.md": "5a8dbe6c60db5acfedda392a6ffcf123",
-    "computability/context-free/deterministic.md": "be8c772efc9d672e14edeffe81e6d191",
+    "computability/context-free/deterministic.md": "b422f02ea21f1f432df25e1ab2d2806c",
     "computability/context-free/index.md": "4fa03defafa4f1714765d6a3347896d8",
     "_journal/2025-10-25.md": "1267c24ab6e563cc2331c8a2ae260460",
     "_journal/2025-10/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
@@ -1762,7 +1762,7 @@
     "_journal/2025-10/2025-10-31.md": "43fa7578a1152a2fbb2306ff9921c85d",
     "_journal/2025-11-04.md": "69e5f367e8d11ca0211ad28d399476ac",
     "_journal/2025-11/2025-11-03.md": "7bb7e0fb70f2b65a30744cd18373fa89",
-    "c23/make.md": "48909780f34c536c67243f52be0ed852",
+    "c23/make.md": "6444df30ae25ee3e38daf9ea749616c9",
     "_journal/2025-11-06.md": "28f31737eb341a16c482b18ad05e4ba0",
     "_journal/2025-11/2025-11-05.md": "2102b04c8cb4ae48a6170655fef85759",
     "_journal/2025-11/2025-11-04.md": "69e5f367e8d11ca0211ad28d399476ac",
@@ -1774,7 +1774,18 @@
     "_journal/2025-11/2025-11-11.md": "facd9cd011afbab9da7aacce3804f9a2",
     "_journal/2025-11/2025-11-10.md": "67a0586a40e7aa5bb30a3ee439e68874",
     "_journal/2025-11/2025-11-09.md": "163e035785ead8b92c3d9cf4e5b56ad3",
-    "_journal/2025-11/2025-11-08.md": "c310dba2bb6bed0201723507abe0c415"
+    "_journal/2025-11/2025-11-08.md": "c310dba2bb6bed0201723507abe0c415",
+    "_journal/2025-11-15.md": "f6bff9e37877826369905dd0ac53d02c",
+    "_journal/2025-11/2025-11-14.md": "8961d219f30e5c4a9e6c1254319c08c7",
+    "_journal/2025-11/2025-11-13.md": "249a6bed6986fabe98b6009be841bb4d",
+    "_journal/2025-11/2025-11-12.md": "c4695af2b6d9fc8012edf0b77b98d9ea",
+    "_journal/2025-11-16.md": "c15ef24989f444107b21e4080d541e99",
+    "_journal/2025-11/2025-11-15.md": "b074c644846aa682b7e07715afef9340",
+    "c23/sanitizers.md": "9999c3eb26f11128ef35595f6814c4bf",
+    "_journal/2025-11-17.md": "ddcfe3b82ebf12046d934ada51b9ab07",
+    "_journal/2025-11/2025-11-16.md": "c15ef24989f444107b21e4080d541e99",
+    "_journal/2025-11-18.md": "1d2f891b41003f9f802e0e04e532fb95",
+    "_journal/2025-11/2025-11-17.md": "ddcfe3b82ebf12046d934ada51b9ab07"
   },
   "fields_dict": {
     "Basic": [

@@ -558,6 +558,13 @@ END%%
 TODO
 
 %%ANKI
+Cloze
+The $DK$-test relies on the following fact: for any {CFG} $G$ we can construct an associted {DFA} $DK$ that can identify {handles}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763438439218-->
+END%%
+
+%%ANKI
 Basic
 What does the $DK$-test actually check?
 Back: Whether a particular grammar is deterministic.
