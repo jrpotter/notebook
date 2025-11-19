@@ -1408,7 +1408,7 @@ END%%
 %%ANKI
 Basic
 Let $F \colon A \rightarrow B$. The fibers of $F$ make up what set?
-Back: $\mathop{\text{coim}}F$
+Back: $\mathop{\text{coim}}F$ (i.e. $A / (\mathop{\text{ker}} F)$).
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721223015609-->
 END%%
@@ -1416,7 +1416,7 @@ END%%
 %%ANKI
 Basic
 Let $F \colon A \rightarrow B$. How is $\mathop{\text{coim}}F$ denoted as a quotient set?
-Back: As $A / \mathop{\text{ker}}(F)$
+Back: As $A / (\mathop{\text{ker}} F)$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1721223015613-->
 END%%

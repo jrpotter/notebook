@@ -163,7 +163,7 @@ END%%
 
 %%ANKI
 Basic
-Consider a `_Generic` expression with types `T1` and `T2`. What must these types satisfy?
+Consider a `_Generic` expression with types `T1` and `T2`. What must these types satisfy with respect to one another?
 Back: They must be mutually incompatible.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759951461175-->

@@ -832,8 +832,11 @@ A member of a structure or union may be declared to consist of a specified numbe
 
 ```c
 struct Example {
-  unsigned a : 4;
-  unsigned b : 4;
+  bool         a       : 1;
+  signed   int b       : 4;
+  unsigned int c       : 4;
+  signed   _BitInt(N)  : N;
+  unsigned _BitInt)(N) : N;
 }
 ```
 
@@ -869,7 +872,7 @@ END%%
 
 %%ANKI
 Basic
-What types does the standard require bit-fields to be possibly declared with?
+What type specifiers does the standard require bit-fields to be possibly declared with?
 Back: `bool`, `signed int`, `unsigned int`, or bit-precise integer type.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1734662614063-->
@@ -890,7 +893,7 @@ END%%
 Basic
 What is the signedness of the following bit-field?
 ```c
-struct foo { signed bar : 1; };
+struct foo { signed int bar : 1; };
 ```
 Back: Signed.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -901,7 +904,7 @@ END%%
 Basic
 What is the signedness of the following bit-field?
 ```c
-struct foo { unsigned bar : 1; };
+struct foo { unsigned int bar : 1; };
 ```
 Back: Unsigned.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -922,7 +925,10 @@ What compilation error exists in the following translation unit?
 ```c
 #include <stdio.h>
 
-struct foo { int a; int b : 4; };
+struct foo {
+  signed int a;
+  signed int b : 4;
+};
 
 int main(void) {
 	struct foo bar = { .a = 1, .b = 1 };
@@ -940,7 +946,10 @@ What compilation error exists in the following translation unit?
 ```c
 #include <stdio.h>
 
-struct foo { int a; int b : 4; };
+struct foo {
+  signed int a;
+  signed int b : 4;
+};
 
 int main(void) {
 	struct foo bar = { .a = 1, .b = 1 };
@@ -998,7 +1007,7 @@ END%%
 Basic
 What is wrong with the following `struct` definition?
 ```c
-struct foo { unsigned bar : 0; };
+struct foo { unsigned int bar : 0; };
 ```
 Back: A bit-field of width `0` cannot have a declarator.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -1009,11 +1018,11 @@ END%%
 Basic
 How is the following `struct` correctly written?
 ```c
-struct foo { unsigned bar : 0; };
+struct foo { unsigned int bar : 0; };
 ```
 Back:
 ```c
-struct foo { unsigned : 0; };
+struct foo { unsigned int : 0; };
 ```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1734662614138-->
@@ -1023,7 +1032,7 @@ END%%
 Basic
 Assume a `4`-byte `unsigned int`. What is wrong with the following `struct` definition?
 ```c
-struct foo { unsigned bar : 31; };
+struct foo { unsigned int bar : 31; };
 ```
 Back: N/A. This is correct.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -1034,7 +1043,7 @@ END%%
 Basic
 Assume a `4`-byte `unsigned int`. What is wrong with the following `struct` definition?
 ```c
-struct foo { unsigned bar : 32; };
+struct foo { unsigned int bar : 32; };
 ```
 Back: N/A. This is correct.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -1045,7 +1054,7 @@ END%%
 Basic
 Assume a `4`-byte `unsigned int`. What is wrong with the following `struct` definition?
 ```c
-struct foo { unsigned bar : 33; };
+struct foo { unsigned int bar : 33; };
 ```
 Back: The width of a bit-field cannot exceed its types (in this case `unsigned int`).
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -1057,19 +1066,19 @@ Basic
 Assume a byte-sized storage unit, no overlapping units, and low-to-high order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
-  signed a : 4;
-  signed b : 2;
-  signed c : 4;
+  signed int a : 4;
+  signed int b : 2;
+  signed int c : 4;
 };
 ```
 Back:
 ```c
 struct foo {
-  _padding : 4;  // 4 bits
-  signed c : 4;  // 4 bits
-  _padding : 2;  // 2 bits
-  signed b : 2;  // 2 bits
-  signed a : 4;  // 4 bits
+  _padding     : 4;  // 4 bits
+  signed int   : 4;  // 4 bits
+  _padding     : 2;  // 2 bits
+  signed int b : 2;  // 2 bits
+  signed int a : 4;  // 4 bits
 };
 ```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -1081,18 +1090,18 @@ Basic
 Assume a byte-sized storage unit, overlapping units, and low-to-high order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
-  signed a : 4;
-  signed   : 0;
-  signed c : 4;
+  signed int a : 4;
+  signed int   : 0;
+  signed int c : 4;
 };
 ```
 Back:
 ```c
 struct foo {
-  _padding : 4;  // 4 bits
-  signed c : 4;  // 4 bits
-  _padding : 4;  // 4 bits
-  signed a : 4;  // 4 bits
+  _padding     : 4;  // 4 bits
+  signed int c : 4;  // 4 bits
+  _padding     : 4;  // 4 bits
+  signed int a : 4;  // 4 bits
 };
 ```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -1104,18 +1113,18 @@ Basic
 Assume a byte-sized storage unit, overlapping units, and high-to-low order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
-  signed a : 4;
-  signed   : 0;
-  signed c : 4;
+  signed int a : 4;
+  signed int   : 0;
+  signed int c : 4;
 };
 ```
 Back:
 ```c
 struct foo {
-  signed a : 4;  // 4 bits
-  _padding : 4;  // 4 bits
-  signed c : 4;  // 4 bits
-  _padding : 4;  // 4 bits
+  signed int a : 4;  // 4 bits
+  _padding     : 4;  // 4 bits
+  signed int c : 4;  // 4 bits
+  _padding     : 4;  // 4 bits
 };
 ```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -1127,18 +1136,18 @@ Basic
 Assume a `32`-bit storage unit, no overlapping units, and low-to-high order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
-  signed a : 4;
-  signed b : 2;
-  signed c : 4;
+  signed int a : 4;
+  signed int b : 2;
+  signed int c : 4;
 };
 ```
 Back:
 ```c
 struct foo {
-  _padding : 22; // 22 bits
-  signed c : 4;  // 4 bits
-  signed b : 2;  // 2 bits
-  signed a : 4;  // 4 bits
+  _padding     : 22; // 22 bits
+  signed int c : 4;  // 4 bits
+  signed int b : 2;  // 2 bits
+  signed int a : 4;  // 4 bits
 };
 ```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -1150,18 +1159,18 @@ Basic
 Assume a byte-sized storage unit, overlapping units, and low-to-high order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
-  signed a : 4;
-  signed b : 2;
-  signed c : 4;
+  signed int a : 4;
+  signed int b : 2;
+  signed int c : 4;
 };
 ```
 Back:
 ```c
 struct foo {
   _padding : 6;  // 6 bits
-  signed c : 4;  // 4 bits
-  signed b : 2;  // 2 bits
-  signed a : 4;  // 4 bits
+  signed int c : 4;  // 4 bits
+  signed int b : 2;  // 2 bits
+  signed int a : 4;  // 4 bits
 };
 ```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -1173,18 +1182,18 @@ Basic
 Assume a `32`-bit storage unit, no overlapping units, and low-to-high order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
-  signed a : 4;
-  signed   : 0;
-  signed c : 4;
+  signed int a : 4;
+  signed int   : 0;
+  signed int c : 4;
 };
 ```
 Back:
 ```c
 struct foo {
-  _padding : 28; // 28 bits
-  signed c : 4;  // 4 bits
-  _padding : 28; // 28 bits
-  signed a : 4;  // 4 bits
+  _padding     : 28; // 28 bits
+  signed int c : 4;  // 4 bits
+  _padding     : 28; // 28 bits
+  signed int a : 4;  // 4 bits
 };
 ```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -1196,18 +1205,18 @@ Basic
 Assume a byte-sized storage unit, overlapping units, and high-to-low order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
-  signed a : 4;
-  signed b : 2;
-  signed c : 4;
+  signed int a : 4;
+  signed int b : 2;
+  signed int c : 4;
 };
 ```
 Back:
 ```c
 struct foo {
-  signed a : 4;  // 4 bits
-  signed b : 2;  // 2 bits
-  signed c : 4;  // 4 bits
-  _padding : 6;  // 6 bits
+  signed int a : 4;  // 4 bits
+  signed int b : 2;  // 2 bits
+  signed int c : 4;  // 4 bits
+  _padding     : 6;  // 6 bits
 };
 ```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -1219,19 +1228,19 @@ Basic
 Assume a byte-sized storage unit, no overlapping units, and high-to-low order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
-  signed a : 4;
-  signed b : 2;
-  signed c : 4;
+  signed int a : 4;
+  signed int b : 2;
+  signed int c : 4;
 };
 ```
 Back:
 ```c
 struct foo {
-  signed a : 4;  // 4 bits
-  signed b : 2;  // 2 bits
-  _padding : 2;  // 2 bits
-  signed c : 4;  // 4 bits
-  _padding : 4;  // 4 bits
+  signed int a : 4;  // 4 bits
+  signed int b : 2;  // 2 bits
+  _padding     : 2;  // 2 bits
+  signed int c : 4;  // 4 bits
+  _padding     : 4;  // 4 bits
 };
 ```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -1243,18 +1252,18 @@ Basic
 Assume a `32`-bit storage unit, overlapping units, and high-to-low order on a big-endian machine. How is the following packed in memory?
 ```c
 struct foo {
-  signed a : 4;
-  signed b : 2;
-  signed c : 4;
+  signed int a : 4;
+  signed int b : 2;
+  signed int c : 4;
 };
 ```
 Back:
 ```c
 struct foo {
-  signed a : 4;  // 4 bits
-  signed b : 2;  // 2 bits
-  signed c : 4;  // 4 bits
-  _padding : 22; // 22 bits
+  signed int a : 4;  // 4 bits
+  signed int b : 2;  // 2 bits
+  signed int c : 4;  // 4 bits
+  _padding     : 22; // 22 bits
 };
 ```
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
@@ -1295,29 +1304,40 @@ END%%
 %%ANKI
 Basic
 With respect to bit-fields, *why* is `int` interpreted as signed or unsigned?
-Back: Types besides `bool`, `signed`, `unsigned`, or a bit-precise integer is handled in an implementation-specific way.
+Back: Type names besides `bool`, `signed int`, `unsigned int`, or a bit-precise integer is handled in an implementation-specific way.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759498725528-->
 END%%
 
 %%ANKI
 Basic
-Consider the following `struct`. What type does the `x.field` integer promote to?
+Consider the following `struct`. What type does `x.field` resolve to in an expression?
 ```c
-struct { unsigned field : 4 } x;
+struct { signed int field : 4 } x;
 ```
-Back: Either a `signed int` or `unsigned int`.
+Back: This is compiler-specific.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763516089291-->
+END%%
+
+%%ANKI
+Basic
+Consider the following `struct`. What type does `x.field` resolve to in an expression?
+```c
+struct { unsigned int field : 4 } x;
+```
+Back: This is compiler-specific.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759498725531-->
 END%%
 
 %%ANKI
 Basic
-Consider the following `struct`. What type does the `x.field` integer promote to?
+Consider the following `struct`. What type does `x.field` resolve to in an expression?
 ```c
 struct { unsigned _BitInt(4) field : 4 } x;
 ```
-Back: N/A. It remains an `unsigned _BitInt(4)`.
+Back: `unsigned _BitInt(4)`
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759498725533-->
 END%%
@@ -1325,7 +1345,7 @@ END%%
 %%ANKI
 Basic
 Why should you prefer declaring bit-fields with bit-precise integer types?
-Back: They are exempt from integer promotion rules.
+Back: They resolve to their expected type in expressions.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759498725536-->
 END%%

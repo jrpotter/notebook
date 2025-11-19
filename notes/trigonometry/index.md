@@ -649,7 +649,7 @@ END%%
 %%ANKI
 Basic
 Let $t$ be the length of an arc with initial point $\langle 1, 0 \rangle$. When is $\cos(t) > 0$?
-Back: When the terminal point of the arc is in quadrant I or IV.
+Back: When $0 \leq t < \pi / 2$ or $3\pi / 2 < t \leq 2\pi$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737416715582-->
 END%%
@@ -657,7 +657,7 @@ END%%
 %%ANKI
 Basic
 Let $t$ be the length of an arc with initial point $\langle 1, 0 \rangle$. When is $\cos(t) < 0$?
-Back: When the terminal point of the arc is in quadrant II or III.
+Back: When $\pi / 2 < t < 3\pi / 2$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1737416715585-->
 END%%

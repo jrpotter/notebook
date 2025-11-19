@@ -555,11 +555,18 @@ END%%
 
 ### DK-Test
 
-TODO
+Define a **dotted-rule** of $G$ as a rule with a "$\bullet$" symbol included in its RHS. For example, rule $B \rightarrow b_1 b_2 \ldots b_n$ has $n + 1$ dotted rules: $$\begin{align*} B & \rightarrow \mathop{\bullet} b_1 b_2 \ldots b_n \\ B & \rightarrow b_1 \mathop{\bullet} b_2 \ldots b_n \\ B & \rightarrow b_1 b_2 \mathop{\bullet} \ldots b_n \\ & \vdots \\ B & \rightarrow b_1 b_2 \ldots \mathop{\bullet} b_n \\ B & \rightarrow b_1 b_2 \ldots b_n \mathop{\bullet} \end{align*}$$
+
+For any CFG $G$ with start variable $S$, we can construct an NFA $K$ such that $K$ accepts prefixes of [[computability/context-free/index#Reductions|valid strings]] ending in a [[computability/context-free/index#Reductions|handle]].  $K$ is constructed in the following way:
+
+1. Introduce a start state with an $\epsilon$-move for every rule with LHS $S$: $$\rightarrow \boxed{S \rightarrow \mathop{\bullet} u}$$
+2. For every symbol $a$ and rule $A \rightarrow uav$, define **shift-move**s: $$\boxed{A \rightarrow u \mathop{\bullet} av} \overset{a}\longrightarrow \boxed{A \rightarrow ua \mathop{\bullet} v}$$
+3. For every pair of rules $A \rightarrow uBv$ and $B \rightarrow w$, define **$\epsilon$-moves**: $$\boxed{A \rightarrow u \mathop{\bullet} Bv} \overset{\epsilon}\longrightarrow \boxed{B \rightarrow \mathop{\bullet} w}$$
+4. Define the accept states of $K$ as each state corresponding to a completed rule: $$\boxed{\boxed{A \rightarrow u \mathop{\bullet}}}$$
 
 %%ANKI
 Cloze
-The $DK$-test relies on the following fact: for any {CFG} $G$ we can construct an associted {DFA} $DK$ that can identify {handles}.
+The $DK$-test relies on the following fact: for any {CFG} $G$ we can construct an associated {DFA} $DK$ that can identify {handles}.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1763438439218-->
 END%%
@@ -567,7 +574,7 @@ END%%
 %%ANKI
 Basic
 What does the $DK$-test actually check?
-Back: Whether a particular grammar is deterministic.
+Back: Whether a particular CFG is deterministic.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321401-->
 END%%
@@ -598,7 +605,7 @@ END%%
 
 %%ANKI
 Basic
-Consider a CFG and apply the $DK$-test. What kind of mathematical entity is $DK$?
+With respect to the $DK$-test, what kind of mathematical entity is $DK$?
 Back: A deterministic finite automaton (DFA).
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321415-->
@@ -606,7 +613,7 @@ END%%
 
 %%ANKI
 Basic
-Consider a CFG and apply the $DK$-test. What kind of mathematical entity is $K$?
+With respect to the $DK$-test, what kind of mathematical entity is $K$?
 Back: A nondeterministic finite automaton (NFA).
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321418-->
@@ -641,7 +648,7 @@ END%%
 %%ANKI
 Basic
 With respect to the $DK$-test, list the dotted rules of the following CFG. $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
-Back: $$\begin{align*} S & \rightarrow \bullet A B \\ S & \rightarrow A {\bullet} B \\ S & \rightarrow A B \bullet \\ A & \rightarrow \bullet a \\ A & \rightarrow a \bullet \\ B & \rightarrow \bullet b \\ B & \rightarrow b \bullet \end{align*}$$
+Back: $$\begin{align*} S & \rightarrow \mathop\bullet A B \\ S & \rightarrow A \mathop\bullet B \\ S & \rightarrow A B \mathop\bullet \\ A & \rightarrow \mathop\bullet a \\ A & \rightarrow a \mathop\bullet \\ B & \rightarrow \mathop\bullet b \\ B & \rightarrow b \mathop\bullet \end{align*}$$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321430-->
 END%%
@@ -664,14 +671,6 @@ END%%
 
 %%ANKI
 Basic
-Apply the $DK$-test to the following CFG $G$. What are the states of NFA $K$? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
-Back: The dotted rules of $G$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761866321439-->
-END%%
-
-%%ANKI
-Basic
 Apply the $DK$-test to the following CFG. How many start states does NFA $K$ have? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
 Back: One.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
@@ -681,15 +680,15 @@ END%%
 %%ANKI
 Basic
 Apply the $DK$-test to the following CFG. $K$'s start state transitions to how many other states? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
-Back: Three (one for each rule).
+Back: One (for each involving $S$).
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321445-->
 END%%
 
 %%ANKI
 Basic
-Apply the $DK$-test to the following CFG. List the states that $K$'s start state transitions to. $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
-Back: $\boxed{S \rightarrow \bullet AB}$, $\boxed{A \rightarrow \bullet a}$, and $\boxed{B \rightarrow \bullet b}$.
+Apply the $DK$-test to the following CFG. What state does $K$'s start state transition to? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back: $\boxed{S \rightarrow \bullet AB}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321448-->
 END%%
@@ -697,7 +696,7 @@ END%%
 %%ANKI
 Basic
 Apply the $DK$-test to the following CFG. List $K$'s accept states. $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
-Back: $\boxed{S \rightarrow AB\bullet}$, $\boxed{A \rightarrow a\bullet}$, and $\boxed{B \rightarrow b\bullet}$.
+Back: $\boxed{\boxed{S \rightarrow AB \mathop\bullet}}$, $\boxed{\boxed{A \rightarrow a \mathop\bullet}}$, and $\boxed{\boxed{B \rightarrow b \mathop\bullet}}$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321451-->
 END%%
@@ -721,7 +720,7 @@ END%%
 %%ANKI
 Basic
 With respect to the $DK$-test, what does a shift move of $K$ look like pictorially?
-Back: For any symbol $a$ and rule $B \rightarrow uav$, $$\large \boxed{B \rightarrow u{\bullet}av} \overset{a}\longrightarrow \boxed{B \rightarrow ua{\bullet}v}$$
+Back: For any symbol $a$ and rule $B \rightarrow uav$, $$\large \boxed{B \rightarrow u \mathop\bullet av} \overset{a}\longrightarrow \boxed{B \rightarrow ua \mathop\bullet v}$$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321460-->
 END%%
@@ -729,14 +728,14 @@ END%%
 %%ANKI
 Basic
 With respect to the $DK$-test, what does an $\epsilon$-move of $K$ look like pictorially?
-Back: For any rules $A \rightarrow uBv$ and $B \rightarrow w$, $$\large \boxed{A \rightarrow u{\bullet}Bv} \overset{\epsilon}\longrightarrow \boxed{B \rightarrow {\bullet}w}$$
+Back: For any rules $A \rightarrow uBv$ and $B \rightarrow w$, $$\large \boxed{A \rightarrow u \mathop\bullet Bv} \overset{\epsilon}\longrightarrow \boxed{B \rightarrow \mathop\bullet w}$$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321463-->
 END%%
 
 %%ANKI
 Basic
-With respect to the $DK$-test, which of the two kinds of $K$'s transitions is the following depicting? $$\large \boxed{A \rightarrow u{\bullet}Bv} \overset{\epsilon}\longrightarrow \boxed{B \rightarrow {\bullet}w}$$
+With respect to the $DK$-test, which of the two kinds of $K$'s transitions is the following depicting? $$\large \boxed{A \rightarrow u \mathop\bullet Bv} \overset{\epsilon}\longrightarrow \boxed{B \rightarrow \mathop\bullet w}$$
 Back: An $\epsilon$-move.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321466-->
@@ -744,7 +743,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the $DK$-test, which of the two kinds of $K$'s transitions is the following depicting? $$\large \boxed{B \rightarrow u{\bullet}av} \overset{a}\longrightarrow \boxed{B \rightarrow ua{\bullet}v}$$
+With respect to the $DK$-test, which of the two kinds of $K$'s transitions is the following depicting? $$\large \boxed{B \rightarrow u \mathop\bullet av} \overset{a}\longrightarrow \boxed{B \rightarrow ua \mathop\bullet v}$$
 Back: A shift move.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321469-->
@@ -770,26 +769,26 @@ END%%
 Basic
 Apply the $DK$-test to the following CFG. What are the outbound transitions from state $\boxed{S \rightarrow \bullet AB}$ in $K$? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
 Back:
-1. A shift move (by $A$) to $\boxed{S \rightarrow A{\bullet}B}$ and
-2. an $\epsilon$-move to $\boxed{A \rightarrow \bullet a}$.
+1. A shift move (by $A$) to $\boxed{S \rightarrow A \mathop\bullet B}$ and
+2. an $\epsilon$-move to $\boxed{A \rightarrow \mathop\bullet a}$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321478-->
 END%%
 
 %%ANKI
 Basic
-Apply the $DK$-test to the following CFG. What are the outbound transitions from state $\boxed{A \rightarrow \bullet a}$ in $K$? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
-Back: A shift move (by $a$) to $\boxed{A \rightarrow a\bullet}$.
+Apply the $DK$-test to the following CFG. What are the outbound transitions from state $\boxed{A \rightarrow \mathop\bullet a}$ in $K$? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back: A shift move (by $a$) to $\boxed{\boxed{A \rightarrow a \mathop\bullet}}$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321481-->
 END%%
 
 %%ANKI
 Basic
-Apply the $DK$-test to the following CFG. What are the outbound transitions from state $\boxed{S \rightarrow A{\bullet}B}$ in $K$? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Apply the $DK$-test to the following CFG. What are the outbound transitions from state $\boxed{S \rightarrow A \mathop\bullet B}$ in $K$? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
 Back:
-1. A shift move (by $B$) to $\boxed{S \rightarrow AB\bullet}$ and
-2. an $\epsilon$-move to $\boxed{B \rightarrow \bullet b}$.
+1. A shift move (by $B$) to $\boxed{S \rightarrow AB \mathop\bullet}$ and
+2. an $\epsilon$-move to $\boxed{B \rightarrow \mathop\bullet b}$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321484-->
 END%%

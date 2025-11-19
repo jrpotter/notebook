@@ -1245,6 +1245,14 @@ END%%
 
 %%ANKI
 Basic
+*Why* can't `constexpr` objects be declared with `extern`?
+Back: `constexpr` requires resolution at compilation. `extern` would circumvent this.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763516297074-->
+END%%
+
+%%ANKI
+Basic
 Consider a `constexpr` object in block-scope. What is this object's storage duration?
 Back: Static or automatic.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).

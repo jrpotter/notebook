@@ -305,16 +305,16 @@ END%%
 
 %%ANKI
 Basic
-If `N` targets are considered independent, how many times is their recipe invoked?
-Back: `N` times.
+If `N` targets are considered independent, how many times is their recipe invoked on an old prerequisite?
+Back: Once for each `N` targets.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1763421147182-->
 END%%
 
 %%ANKI
 Basic
-If `N` targets are considered grouped, how many times is their recipe invoked?
-Back: One time.
+If `N` targets are considered grouped, how many times is their recipe invoked on an old prerequisite?
+Back: Once.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1763421147185-->
 END%%

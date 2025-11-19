@@ -136,6 +136,23 @@ Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https:
 <!--ID: 1759679099752-->
 END%%
 
+%%ANKI
+Basic
+What change, introduced in C23, makes the following work?
+```c
+void matrix_func(int N, const float x[N][N]);
+
+int main(void) {
+  int N = 100;
+  float x[N][N];
+  matrix_func(N, x);
+}
+```
+Back: An array and its element type is considered identically qualified.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763516569572-->
+END%%
+
 ## const
 
 The `const` type qualifier indicates that an object is read-only. This may be used by the compiler for optimizations.

@@ -133,7 +133,7 @@ The `ThreadSanitizer` (i.e. TSan) modifies a program to detect data races.
 Basic
 What is the purpose of TSan?
 Back: To detect data races.
-“ThreadSanitizer — Clang 22.0.0git Documentation.” Accessed November 17, 2025. [https://clang.llvm.org/docs/ThreadSanitizer.html](https://clang.llvm.org/docs/ThreadSanitizer.html).
+Reference: “ThreadSanitizer — Clang 22.0.0git Documentation.” Accessed November 17, 2025. [https://clang.llvm.org/docs/ThreadSanitizer.html](https://clang.llvm.org/docs/ThreadSanitizer.html).
 <!--ID: 1763417579086-->
 END%%
 
@@ -141,14 +141,14 @@ END%%
 Basic
 What is TSan an acronym for?
 Back: **T**hread **san**itizer.
-“ThreadSanitizer — Clang 22.0.0git Documentation.” Accessed November 17, 2025. [https://clang.llvm.org/docs/ThreadSanitizer.html](https://clang.llvm.org/docs/ThreadSanitizer.html).
+Reference: “ThreadSanitizer — Clang 22.0.0git Documentation.” Accessed November 17, 2025. [https://clang.llvm.org/docs/ThreadSanitizer.html](https://clang.llvm.org/docs/ThreadSanitizer.html).
 <!--ID: 1763417579089-->
 END%%
 
 %%ANKI
 Cloze
 The {thread} sanitizer detects {data races}.
-“ThreadSanitizer — Clang 22.0.0git Documentation.” Accessed November 17, 2025. [https://clang.llvm.org/docs/ThreadSanitizer.html](https://clang.llvm.org/docs/ThreadSanitizer.html).
+Reference: “ThreadSanitizer — Clang 22.0.0git Documentation.” Accessed November 17, 2025. [https://clang.llvm.org/docs/ThreadSanitizer.html](https://clang.llvm.org/docs/ThreadSanitizer.html).
 <!--ID: 1763417579092-->
 END%%
 
@@ -156,7 +156,7 @@ END%%
 Basic
 What flag is passed to e.g. `clang` to turn on TSan?
 Back: `-fsanitize=thread`
-“ThreadSanitizer — Clang 22.0.0git Documentation.” Accessed November 17, 2025. [https://clang.llvm.org/docs/ThreadSanitizer.html](https://clang.llvm.org/docs/ThreadSanitizer.html).
+Reference: “ThreadSanitizer — Clang 22.0.0git Documentation.” Accessed November 17, 2025. [https://clang.llvm.org/docs/ThreadSanitizer.html](https://clang.llvm.org/docs/ThreadSanitizer.html).
 <!--ID: 1763417579095-->
 END%%
 
@@ -164,7 +164,7 @@ END%%
 Basic
 Which sanitizer is enabled with the `-fsanitize=thread` flag?
 Back: TSan.
-“ThreadSanitizer — Clang 22.0.0git Documentation.” Accessed November 17, 2025. [https://clang.llvm.org/docs/ThreadSanitizer.html](https://clang.llvm.org/docs/ThreadSanitizer.html).
+Reference: “ThreadSanitizer — Clang 22.0.0git Documentation.” Accessed November 17, 2025. [https://clang.llvm.org/docs/ThreadSanitizer.html](https://clang.llvm.org/docs/ThreadSanitizer.html).
 <!--ID: 1763417579098-->
 END%%
 

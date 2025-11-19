@@ -45,7 +45,7 @@ END%%
 %%ANKI
 Basic
 Which C function can be used to convert an FD from blocking to nonblocking?
-Back: `fcntl()`
+Back: `fcntl`
 Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
 <!--ID: 1755442726698-->
 END%%
@@ -80,7 +80,7 @@ END%%
 
 ### Select
 
-The `select()` function allows a program to monitor multiple file descriptors, waiting until one or more of the file descriptors become ready for some class of I/O operation.
+The `select` function allows a program to monitor multiple file descriptors, waiting until one or more of the file descriptors become ready for some class of I/O operation.
 
 ```c
 int select(int numfds, fd_set *readfds, fd_set *writefds,
@@ -91,7 +91,7 @@ In general, this function should not be used. It can only monitor file descripto
 
 %%ANKI
 Basic
-Which C header contains the `select()` function?
+Which C header contains the `select` function?
 Back: `<sys/select.h>`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726701-->
@@ -99,15 +99,15 @@ END%%
 
 %%ANKI
 Basic
-Which portable C function should be used in favor of `select()`?
-Back: `poll()`
+Which portable C function should be used in favor of `select`?
+Back: `poll`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726702-->
 END%%
 
 %%ANKI
 Basic
-What FD-related limitation does `select()` have?
+What FD-related limitation does `select` have?
 Back: It can only be used for FDs less than `1024`.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726703-->
@@ -115,7 +115,7 @@ END%%
 
 %%ANKI
 Basic
-What is the most notable bug that occurs when using `select()`?
+What is the most notable bug that occurs when using `select`?
 Back: False notifications that an FD descriptor is ready to perform I/O.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726704-->
@@ -123,7 +123,7 @@ END%%
 
 %%ANKI
 Basic
-What does the `select()` function do?
+What does the `select` function do?
 Back: Monitors multiple file descriptors, waiting until one or more is ready to perform I/O.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726705-->
@@ -131,7 +131,7 @@ END%%
 
 %%ANKI
 Basic
-What is the recommended workaround for `select()`'s spurious read notifications?
+What is the recommended workaround for `select`'s spurious read notifications?
 Back: Set FDs to nonblocking mode.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726706-->
@@ -139,17 +139,17 @@ END%%
 
 ### Poll
 
-The `poll()` function is the preferred alternative to `select()`. It waits for one of a set of file descriptors to become ready to perform I/O.
+The `poll` function is the preferred alternative to `select`. It waits for one of a set of file descriptors to become ready to perform I/O.
 
 ```c
 int poll(struct pollfd *fds, nfds_t nfds, int timeout);
 ```
 
-Like `select()`, it may falsely claim a file descriptor as ready when it isn't.
+Like `select`, it may falsely claim a file descriptor as ready when it isn't.
 
 %%ANKI
 Basic
-Which C header contains the `poll()` function?
+Which C header contains the `poll` function?
 Back: `<poll.h>`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726707-->
@@ -158,14 +158,14 @@ END%%
 %%ANKI
 Basic
 What two functions are most commonly referenced w.r.t. synchronous I/O multiplexing?
-Back: `select()` and `poll()`.
+Back: `select` and `poll`.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726708-->
 END%%
 
 %%ANKI
 Basic
-When is `select()` and `poll()` considered too slow of an option?
+When is `select` and `poll` considered too slow of an option?
 Back: When managing *many* file descriptors.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726709-->
@@ -173,23 +173,23 @@ END%%
 
 %%ANKI
 Basic
-Which of `select()` or `poll()` should generally be preferred?
-Back: `poll()`
+Which of `select` or `poll` should generally be preferred?
+Back: `poll`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726710-->
 END%%
 
 %%ANKI
 Basic
-What FD-related limitation does `poll()` fix over `select()`?
-Back: `poll()` allows specifying FDs greater than or equal to `1024`.
+What FD-related limitation does `poll` fix over `select`?
+Back: `poll` allows specifying FDs greater than or equal to `1024`.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726711-->
 END%%
 
 %%ANKI
 Basic
-What is the most notable bug that occurs when using `poll()`?
+What is the most notable bug that occurs when using `poll`?
 Back: False notifications that an FD descriptor is ready to perform I/O.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726712-->
@@ -197,7 +197,7 @@ END%%
 
 %%ANKI
 Basic
-What does the `poll()` function do?
+What does the `poll` function do?
 Back: Monitors multiple file descriptors, waiting until one or more is ready to perform I/O.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726713-->
@@ -205,7 +205,7 @@ END%%
 
 %%ANKI
 Basic
-What is the recommended workaround for `poll()`'s spurious read notifications?
+What is the recommended workaround for `poll`'s spurious read notifications?
 Back: Set FDs to nonblocking mode.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1755442726714-->
@@ -213,7 +213,7 @@ END%%
 
 ### Event Poll
 
-The `epoll` family of functions is the preferred alternative to `poll()` on Linux systems. It operates in one of two modes:
+The `epoll` family of functions is the preferred alternative to `poll` on Linux systems. It operates in one of two modes:
 
 * **Level-Triggered** (LT). In this case, calls to `epoll_wait` first check if any descriptor in the interest list already matches the interest condition.
 * **Edge-Triggered** (ET). In this case, calls to `epoll_wait` immediately put the process to sleep.
@@ -230,7 +230,7 @@ int epoll_wait(int epfd, struct epoll_event events[.maxevents],
 
 %%ANKI
 Basic
-On Linux machines, what superseded the `poll()` function?
+On Linux machines, what superseded the `poll` function?
 Back: The `epoll` family of functions.
 Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
 Tags: os::linux
@@ -284,7 +284,7 @@ END%%
 
 %%ANKI
 Basic
-Which mode should `epoll` be in to match the semantics of `poll()`?
+Which mode should `epoll` be in to match the semantics of `poll`?
 Back: Level-triggered mode.
 Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
 Tags: os::linux
@@ -294,7 +294,7 @@ END%%
 %%ANKI
 Basic
 The `epoll` mode determines which function's behavior?
-Back: `epoll_wait()`
+Back: `epoll_wait`
 Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
 Tags: os::linux
 <!--ID: 1755447619143-->
@@ -302,7 +302,7 @@ END%%
 
 %%ANKI
 Basic
-In LT mode, how does `epoll_wait()` behave?
+In LT mode, how does `epoll_wait` behave?
 Back: It checks if any FD satisfies its interest condition already.
 Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
 Tags: os::linux
@@ -311,7 +311,7 @@ END%%
 
 %%ANKI
 Basic
-In ET mode, how does `epoll_wait()` behave?
+In ET mode, how does `epoll_wait` behave?
 Back: It immediately puts the calling process to sleep.
 Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
 Tags: os::linux
@@ -339,7 +339,7 @@ END%%
 %%ANKI
 Basic
 *Why* is the `epoll` level-triggered mode named the way it is?
-Back: `epoll_wait()` returns so long as an event is available.
+Back: `epoll_wait` returns so long as an event is available.
 Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
 Tags: os::linux
 <!--ID: 1755447619148-->
@@ -348,7 +348,7 @@ END%%
 %%ANKI
 Basic
 *Why* is the `epoll` edge-triggered mode named the way it is?
-Back: `epoll_wait()` returns only during a transition (i.e. no event to an event).
+Back: `epoll_wait` returns only during a transition (i.e. no event to an event).
 Reference: Klitzke, Evan. “Blocking I/O, Nonblocking I/O, And Epoll.” Accessed August 17, 2025. [https://eklitzke.org/blocking-io-nonblocking-io-and-epoll](https://eklitzke.org/blocking-io-nonblocking-io-and-epoll).
 Tags: os::linux
 <!--ID: 1755447619149-->
