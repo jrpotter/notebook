@@ -141,14 +141,6 @@ Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savan
 <!--ID: 1762562126722-->
 END%%
 
-%%ANKI
-Basic
-Within a `Makefile`, the `\` character is intepreted differently in what two contexts?
-Back: Inside and outside of recipe lines.
-Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
-<!--ID: 1762562126724-->
-END%%
-
 ## Rules
 
 A makefile consists of a number of **rules** with the following basic structure:
@@ -227,23 +219,6 @@ A : B C D
 Back: `echo "hello"`
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1762439973341-->
-END%%
-
-
-%%ANKI
-Basic
-Outside of a recipe line, the `\` character is converted into what other character?
-Back: A single space (with surrounding whitespace then condensed into a single space).
-Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
-<!--ID: 1762562126727-->
-END%%
-
-%%ANKI
-Basic
-Unless configured otherwise, lines in a recipe *must* begin with what character?
-Back: `\t`
-Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
-<!--ID: 1762439973353-->
 END%%
 
 %%ANKI
@@ -703,22 +678,147 @@ END%%
 
 ### Static Pattern Rules
 
-TODO
+**Static pattern rules** are rules which specify multiple targets and construct the prerequisite names for each target based on the target name.
 
-### Double-Colon Rules
+```make
+targets ... : target-pattern : prereq-patterns ...
+	recipe
+```
 
-TODO
+%%ANKI
+Basic
+What kind of rule is the following an example of?
+```make
+$(objects): %.o: %.c
+	...
+```
+Back: A static pattern rule.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763562884143-->
+END%%
+
+%%ANKI
+Cloze
+The {stem} of a static pattern rule is denoted with a {`%`} character.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763562884153-->
+END%%
+
+%%ANKI
+Basic
+What is a static pattern rule?
+Back: A rule which specifies multiple target names and constructs prerequisite names for each target based on the target name.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763562884158-->
+END%%
+
+%%ANKI
+Basic
+In what way is a static pattern rule more general than a rule with multiple independent targets?
+Back: Static pattern rules allow constructing targets with different prerequisites.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763562884163-->
+END%%
+
+%%ANKI
+Basic
+With respect to static pattern rules, how many times can a stem be specified in the target pattern?
+Back: Just one.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763562884168-->
+END%%
+
+%%ANKI
+Basic
+With respect to static pattern rules, how many times can a stem be specified in the prerequisite patterns?
+Back: Zero or more times.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763562884173-->
+END%%
+
+%%ANKI
+Basic
+Which automatic variable is especially relevant in static pattern rules?
+Back: `$*`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763563266751-->
+END%%
 
 ### Implicit Rules
 
 TODO
 
+### Recipes
+
+By default, the `/bin/sh` [[shells|shell]] is used to execute each line of a recipe. To run multiple lines within a single shell, one can connect the lines using a `\` and newline. Unlike elsewhere in a `Makefile`, the `\` is *not* replaced. Recipe prefix characters (by default, the `\t` character) are removed though.
+
 %%ANKI
 Basic
-`Makefile` rules are broadly categorized in what two ways?
-Back: As explicit and implicit.
+What is the default recipe prefix character?
+Back: `\t`
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
-<!--ID: 1762562126746-->
+<!--ID: 1763774669842-->
+END%%
+
+%%ANKI
+Basic
+Outside of a recipe line, the `\` character is converted into what other character?
+Back: A single space (with surrounding whitespace then condensed into a single space).
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1762562126727-->
+END%%
+
+%%ANKI
+Basic
+Within a `Makefile`, the `\` character is intepreted differently in what two contexts?
+Back: Inside and outside of recipe lines.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1762562126724-->
+END%%
+
+%%ANKI
+Basic
+Within a recipe line, the `\` character is converted into what other character?
+Back: N/A. A backslash character is not converted within a recipe.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763774669846-->
+END%%
+
+%%ANKI
+Basic
+Unless configured otherwise, lines in a recipe *must* begin with what character?
+Back: `\t`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1762439973353-->
+END%%
+
+%%ANKI
+Basic
+How many times is a new shell invoked when running a recipe?
+Back: Once for each logical line in the recipe.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763774669850-->
+END%%
+
+%%ANKI
+Basic
+What is likely wrong in the following rule's recipe?
+```make
+foo: bar
+	cd ./dir
+	ls
+```
+Back: The `cd` on the first line does not have any effect on `ls` in the second.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763774669855-->
+END%%
+
+%%ANKI
+Basic
+What is the default shell used by GNU make?
+Back: `/bin/sh`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763774669861-->
 END%%
 
 ## Variables
@@ -739,6 +839,166 @@ How would variable `OBJS` be referenced in a rule?
 Back: As `$(OBJS)`.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1762562126716-->
+END%%
+
+%%ANKI
+Basic
+How is a literal `$ ` character specified within a recipe?
+Back: Escaping with a second `$ ` character.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763774669867-->
+END%%
+
+### Automatic Variables
+
+There exists a number of **automatic variables** computed afresh for each rule executed, based on the target and prerequisites of the rule. Some commonly used ones are:
+
+* `$@`
+	* The filename of a rule's target.
+	* In a pattern rule with multiple targets, it expands to the target that caused the rule's recipe to be run.
+* `$<`
+	* The name of the first prerequisite.
+* `$^`
+	* The names of all normal prerequisites, without duplication and with spaces between them.
+* `$+`
+	* The names of all normal prerequisites, with duplication and with spaces between them.
+* `$|`
+	* The names of all order-only prerequisites, with spaces between them.
+* `$*`
+	* The stem used in implicit or static pattern rules.
+
+%%ANKI
+Basic
+What kind of variable is e.g. `$@`?
+Back: An automatic variable.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763562884177-->
+END%%
+
+%%ANKI
+Cloze
+The {`$@`} automatic variable expands to {the filename of a rule's target}.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763562884181-->
+END%%
+
+%%ANKI
+Basic
+What does `$@` expand to in the following rule?
+```make
+A : B C | D E
+	...
+```
+Back: `A`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763563075702-->
+END%%
+
+%%ANKI
+Cloze
+The {`$<`} automatic variable expands to {the first prerequisite}.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763562884185-->
+END%%
+
+%%ANKI
+Basic
+What does `$<` expand to in the following rule?
+```make
+A : B C | D E
+	...
+```
+Back: `B`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763563075709-->
+END%%
+
+%%ANKI
+Cloze
+The {`$^`} automatic variable expands to {the normal prerequisites, without duplication}.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763562884189-->
+END%%
+
+%%ANKI
+Basic
+What does `$^` expand to in the following rule?
+```make
+A : B C | D E
+	...
+```
+Back: `B C`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763563075712-->
+END%%
+
+%%ANKI
+Cloze
+The {`$+`} automatic variable expands to {the normal prerequisites, with duplication}.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763562884192-->
+END%%
+
+%%ANKI
+Basic
+What does `$+` expand to in the following rule?
+```make
+A : B C | D E
+	...
+```
+Back: `B C`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763563075715-->
+END%%
+
+%%ANKI
+Cloze
+The {`$|`} automatic variable expands to {the order-only prerequisites}.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763562884196-->
+END%%
+
+%%ANKI
+Basic
+What does `$|` expand to in the following rule?
+```make
+A : B C | D E
+	...
+```
+Back: `D E`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763563075717-->
+END%%
+
+%%ANKI
+Cloze
+The {`$*`} automatic variable expands to {a stem}.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763562884199-->
+END%%
+
+%%ANKI
+Basic
+What does `$*` expand to in the following rule?
+```make
+A : B C | D E
+	...
+```
+Back: The empty string.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763563075720-->
+END%%
+
+%%ANKI
+Basic
+What does `$*` expand to in the following rule?
+```make
+foo.o: %.o: %.c
+	...
+```
+Back: `foo`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763563266761-->
 END%%
 
 ## Directives

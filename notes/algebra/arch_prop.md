@@ -8,7 +8,7 @@ tags:
 
 ## Overview
 
-If $x, y \in \mathbb{R}^+$, then there exists a positive integer $n$ such that $nx > y$. This fundamental property usually follows from the [[bounds#Completeness Axiom|completeness axiom]].
+If $x, y \in \mathbb{R}^+$, then there exists a positive integer $n$ such that $nx > y$. This fundamental property usually follows from the [[calculus/index#Completeness Axiom|completeness axiom]].
 
 %%ANKI
 Basic

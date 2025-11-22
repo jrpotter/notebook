@@ -357,7 +357,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1761662237425-->
 END%%
 
-## Properties
+## Identities
 
 The following identities assume $f$ and $g$ are functions defined on a common interval. Assume their derivatives are defined at point $x$. Then:
 

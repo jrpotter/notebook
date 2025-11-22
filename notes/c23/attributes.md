@@ -305,6 +305,14 @@ END%%
 
 %%ANKI
 Basic
+What two properties imply a function is reproducible?
+Back: Idempotence and effectlessness.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763643677322-->
+END%%
+
+%%ANKI
+Basic
 Given the following, what two properties can we infer `foo` satisfy?
 ```c
 void foo(void) [[reproducible]];
@@ -371,6 +379,22 @@ Cloze
 A function is {unsequenced} if it is {effectless}, {idempotent}, {stateless}, and {independent}.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1760267276385-->
+END%%
+
+%%ANKI
+Basic
+What four properties imply a function is unsequenced?
+Back: Statelessness, independence, idempotence, and effectlessness.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763643677325-->
+END%%
+
+%%ANKI
+Basic
+What additional properties does an unsequenced function satisfy over a reproducible one?
+Back: It is also independent and stateless.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763643677329-->
 END%%
 
 %%ANKI

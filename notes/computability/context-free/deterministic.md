@@ -553,9 +553,35 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1761745714196-->
 END%%
 
-### DK-Test
+### Dotted-Rules
 
 Define a **dotted-rule** of $G$ as a rule with a "$\bullet$" symbol included in its RHS. For example, rule $B \rightarrow b_1 b_2 \ldots b_n$ has $n + 1$ dotted rules: $$\begin{align*} B & \rightarrow \mathop{\bullet} b_1 b_2 \ldots b_n \\ B & \rightarrow b_1 \mathop{\bullet} b_2 \ldots b_n \\ B & \rightarrow b_1 b_2 \mathop{\bullet} \ldots b_n \\ & \vdots \\ B & \rightarrow b_1 b_2 \ldots \mathop{\bullet} b_n \\ B & \rightarrow b_1 b_2 \ldots b_n \mathop{\bullet} \end{align*}$$
+
+%%ANKI
+Basic
+With respect to the $DK$-test, how many dotted rules correspond to the following CFG? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back: $7$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321427-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, list the dotted rules of the following CFG. $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
+Back: $$\begin{align*} S & \rightarrow \mathop\bullet A B \\ S & \rightarrow A \mathop\bullet B \\ S & \rightarrow A B \mathop\bullet \\ A & \rightarrow \mathop\bullet a \\ A & \rightarrow a \mathop\bullet \\ B & \rightarrow \mathop\bullet b \\ B & \rightarrow b \mathop\bullet \end{align*}$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321430-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, how many dotted rules does $S \rightarrow AB$ have?
+Back: Three.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761866321433-->
+END%%
+
+### DK-Test
 
 For any CFG $G$ with start variable $S$, we can construct an NFA $K$ such that $K$ accepts prefixes of [[computability/context-free/index#Reductions|valid strings]] ending in a [[computability/context-free/index#Reductions|handle]].  $K$ is constructed in the following way:
 
@@ -563,6 +589,11 @@ For any CFG $G$ with start variable $S$, we can construct an NFA $K$ such that $
 2. For every symbol $a$ and rule $A \rightarrow uav$, define **shift-move**s: $$\boxed{A \rightarrow u \mathop{\bullet} av} \overset{a}\longrightarrow \boxed{A \rightarrow ua \mathop{\bullet} v}$$
 3. For every pair of rules $A \rightarrow uBv$ and $B \rightarrow w$, define **$\epsilon$-moves**: $$\boxed{A \rightarrow u \mathop{\bullet} Bv} \overset{\epsilon}\longrightarrow \boxed{B \rightarrow \mathop{\bullet} w}$$
 4. Define the accept states of $K$ as each state corresponding to a completed rule: $$\boxed{\boxed{A \rightarrow u \mathop{\bullet}}}$$
+
+The DFA $DK$ is constructed using the usual [[regular_language#Power Set Construction|power set construction]] on $K$. The **$DK$-test** states that $G$ is deterministic if every accept state of $DK$ contains:
+
+* Exactly one completed rule, and
+* no dotted rule in which a terminal symbol immediately follows the dot.
 
 %%ANKI
 Cloze
@@ -635,30 +666,6 @@ Back:
 2. $z$ ends with a handle of $v$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761866321424-->
-END%%
-
-%%ANKI
-Basic
-With respect to the $DK$-test, how many dotted rules correspond to the following CFG? $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
-Back: $7$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761866321427-->
-END%%
-
-%%ANKI
-Basic
-With respect to the $DK$-test, list the dotted rules of the following CFG. $$\begin{align*} S &\rightarrow AB \\ A &\rightarrow a \\ B &\rightarrow b \end{align*}$$
-Back: $$\begin{align*} S & \rightarrow \mathop\bullet A B \\ S & \rightarrow A \mathop\bullet B \\ S & \rightarrow A B \mathop\bullet \\ A & \rightarrow \mathop\bullet a \\ A & \rightarrow a \mathop\bullet \\ B & \rightarrow \mathop\bullet b \\ B & \rightarrow b \mathop\bullet \end{align*}$$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761866321430-->
-END%%
-
-%%ANKI
-Basic
-With respect to the $DK$-test, how many dotted rules does $S \rightarrow AB$ have?
-Back: Three.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761866321433-->
 END%%
 
 %%ANKI

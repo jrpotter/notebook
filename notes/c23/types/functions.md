@@ -416,6 +416,17 @@ END%%
 
 %%ANKI
 Basic
+Which of the four "purity properties" is described by the following?
+
+> A function that does not define mutable static or thread-local objects (nor do functions called by it).
+
+Back: Stateless.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763643677308-->
+END%%
+
+%%ANKI
+Basic
 What type qualifier(s) are of concern when determining a function's statelessness?
 Back: `const` and `volatile`.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
@@ -573,6 +584,17 @@ END%%
 
 %%ANKI
 Basic
+Which of the four "purity properties" is described by the following?
+
+> A function that does not depend on other state besides the arguments or constants.
+
+Back: Independence.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763643677313-->
+END%%
+
+%%ANKI
+Basic
 Assume a program with no global state. What does it mean for function `f` to be independent?
 Back: Objects are accessed through a unique pointer parameter and always yields the same value.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
@@ -708,6 +730,17 @@ END%%
 
 %%ANKI
 Basic
+Which of the four "purity properties" is described by the following?
+
+> A function that does not have any observable side effects.
+
+Back: Effectless.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763643677315-->
+END%%
+
+%%ANKI
+Basic
 Assume a program with no global state. What does it mean for function `f` to be effectless?
 Back: Any changes to an object in non-local state that `f` makes are done through a unique pointer parameter.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
@@ -802,6 +835,17 @@ What does it mean for function `f` to be idempotent?
 Back: Calls to `f` can be immediately sequenced without changes in the result or observable state of the execution.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1760262581309-->
+END%%
+
+%%ANKI
+Basic
+Which of the four "purity properties" is described by the following?
+
+> A function that gives the same result for each repeated evaluation.
+
+Back: Idempotence.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763643677318-->
 END%%
 
 %%ANKI
