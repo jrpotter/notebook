@@ -442,7 +442,7 @@ END%%
 
 %%ANKI
 Basic
-Can calls to an `[[unsequenced]]` function be interleaved?
+Can calls to a correctly annotated `[[unsequenced]]` function be interleaved?
 Back: Yes.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1760267997991-->
@@ -459,7 +459,7 @@ END%%
 %%ANKI
 Basic
 Is `memcpy` unsequenced? If not, why?
-Back: No. It changes the value referred to by a pointer parameter.
+Back: No. It is not necessarily independent.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1760268446200-->
 END%%

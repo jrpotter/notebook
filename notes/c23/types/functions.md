@@ -408,6 +408,22 @@ A function `f` is said to be **stateless** if every definition of an object of [
 
 %%ANKI
 Basic
+With respect to C functions, why was the term "stateless" chosen to describe its corresponding property?
+Back: The invoked function has no persistent state that can change between function invocations.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763838624109-->
+END%%
+
+%%ANKI
+Basic
+Is statelessness considered a property of read operations or write operations?
+Back: Read operations.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763838624111-->
+END%%
+
+%%ANKI
+Basic
 What does it mean for function `f` to be stateless?
 Back: Every static/thread object defined by `f` (or a function called by `f`) is `const` and not `volatile`.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
@@ -576,6 +592,22 @@ A function `f` is **independent** if every call to `f` during a program executio
 
 %%ANKI
 Basic
+With respect to C functions, why was the term "independent" chosen to describe its corresponding property?
+Back: The invoked function's behavior is not modified by (i.e. is independent of) external state (except via explicitly passed pointers).
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763838624113-->
+END%%
+
+%%ANKI
+Basic
+Is independence considered a property of read operations or write operations?
+Back: Read operations.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763838624115-->
+END%%
+
+%%ANKI
+Basic
 Function `f` has no parameters. What does it mean for `f` to be independent?
 Back: Every call to `f` would see the same values for any global objects.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
@@ -656,10 +688,10 @@ Basic
 Is `foo` independent? Why?
 ```c
 int foo(int *x) {
-  return x + 1;
+  return *x + 1;
 }
 ```
-Back: Yes since `foo` does not change the state of `*x`.
+Back: Yes. Access to an object is always done through the same pointer parameter.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1760266045225-->
 END%%
@@ -695,7 +727,7 @@ Basic
 Is `foo` independent? Why?
 ```c
 int foo(int *x, double *y) {
-  return x + y;
+  return *x + *y;
 }
 ```
 Back: Yes. Strict aliasing ensures the same object could not be accessed through `x` and `y`.
@@ -711,14 +743,30 @@ int foo(int *x) {
   *x += 1;
 }
 ```
-Back: No. `foo` changes the value of `*x`.
+Back: Yes. Access to an object is always done through the same pointer parameter.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
-<!--ID: 1760266045240-->
+<!--ID: 1763837965356-->
 END%%
 
 ### Effectless
 
 A function `f` is **effectless** if a call to `f` only modifies non-local state through pointer parameters. Additionally, access of an object through a pointer parameter is always done through the same parameter.
+
+%%ANKI
+Basic
+With respect to C functions, why was the term "effectless" chosen to describe its corresponding property?
+Back: The invoked function cannot modify any external state (except through explicitly passed pointers).
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763838624117-->
+END%%
+
+%%ANKI
+Basic
+Is effectlessness considered a property of read operations or write operations?
+Back: Write operations.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763838624118-->
+END%%
 
 %%ANKI
 Basic
@@ -828,6 +876,22 @@ END%%
 ### Idempotency
 
 A function `f` is **idempotent** if a call to `f` can be sequenced immediately one after another without changes in the resulting value or observable state of the execution.
+
+%%ANKI
+Basic
+With respect to C functions, why was the term "idempotent" chosen to describe its corresponding property?
+Back: Repeated invocation of an idempotent function has no additional effect outside of the first invocation.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763838624119-->
+END%%
+
+%%ANKI
+Basic
+Is idempotence considered a property of read operations or write operations?
+Back: Write operations.
+Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
+<!--ID: 1763838624120-->
+END%%
 
 %%ANKI
 Basic

@@ -445,11 +445,17 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1761338522972-->
 END%%
 
+%%ANKI
+Basic
+What biconditional holds between DCFLs and their endmarked counterparts?
+Back: A language $A$ is a DCFL iff $A{\dashv}$ is a DCFL.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763836301122-->
+END%%
+
 ## Context-Free Grammar
 
-A [[computability/context-free/index#Reductions|handle]] $h$ of a valid string $v = xhy$ is a **forced handle** if $h$ is the unique handle in every valid string $xh\hat{y}$ where $\hat{y} \in \Sigma^*$. That is, $h$ is independent of the values to its right.
-
-A **deterministic context free grammar** (DCFG) is a [[computability/context-free/index|CFG]] such that every valid string has a forced handle.
+A [[computability/context-free/index#Reductions|handle]] $h$ of a valid string $v = xhy$ is a **forced handle** if $h$ is the unique handle in every valid string $xh\hat{y}$ where $\hat{y} \in \Sigma^*$. That is, $h$ is independent of the values to its right. A **deterministic context free grammar** (DCFG) is a [[computability/context-free/index|CFG]] such that every valid string has a forced handle.
 
 %%ANKI
 Basic
@@ -590,10 +596,12 @@ For any CFG $G$ with start variable $S$, we can construct an NFA $K$ such that $
 3. For every pair of rules $A \rightarrow uBv$ and $B \rightarrow w$, define **$\epsilon$-moves**: $$\boxed{A \rightarrow u \mathop{\bullet} Bv} \overset{\epsilon}\longrightarrow \boxed{B \rightarrow \mathop{\bullet} w}$$
 4. Define the accept states of $K$ as each state corresponding to a completed rule: $$\boxed{\boxed{A \rightarrow u \mathop{\bullet}}}$$
 
-The DFA $DK$ is constructed using the usual [[regular_language#Power Set Construction|power set construction]] on $K$. The **$DK$-test** states that $G$ is deterministic if every accept state of $DK$ contains:
+The DFA $DK$ is constructed using the usual [[regular_language#Power Set Construction|power set construction]] on $K$. The **$DK$-test** states that $G$ is deterministic if $DK$ satisfies the following two conditions:
 
-* Exactly one completed rule, and
-* no dotted rule in which a terminal symbol immediately follows the dot.
+* **Single Reduce Condition**: Each accept state contains exactly one completed rule.
+	* That is, a DCFG should not have to decide between two reduce steps.
+* **No Shift-Reduce Condition**: No accept state should also have a dotted rule in which a terminal symbol immediately follows the dot.
+	* That is, a DCFG should not have to decide between a shift or reduce step.
 
 %%ANKI
 Cloze
@@ -805,6 +813,131 @@ Cloze
 With respect to the $DK$-test, {1:shift moves} are to the {2:same} rule as {2:$\epsilon$-moves} are to {1:different} rules.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761951183813-->
+END%%
+
+%%ANKI
+Basic
+The $DK$-test states a CFG is deterministic if it satisfies what two conditions?
+Back: The "Single Reduce Condition" and the "No Shift-Reduce Condition".
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763836301126-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, what does the "Single Reduce Condition" state?
+Back: No accept state in $DK$ contains more than one completed rule.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763836301130-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, what does the "No Shift-Reduce Condition" state?
+Back: No accept state contains a rule with a terminal immediately following a dot.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763836301134-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, what conflict is avoided by the "Single Reduce Condition"?
+Back: Conflict around which of two or more reductions to perform.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763836301137-->
+END%%
+
+%%ANKI
+Basic
+With respect to the $DK$-test, what conflict is avoided by the "No Shift-Reduce Condition"?
+Back: Conflict around which of a shift or reduce should be performed.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763836301141-->
+END%%
+
+%%ANKI
+Basic
+Which states of DFA $DK$ are examined in a $DK$-test?
+Back: The accept states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763851317109-->
+END%%
+
+%%ANKI
+Basic
+Which states of the following fail the $DK$-test?
+![[dk-test-failure.png]]
+Back: The bottom left and second from the top-right.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763851317112-->
+END%%
+
+%%ANKI
+Basic
+Which states of the following fail the $DK$-test?
+![[dk-test-success.png]]
+Back: N/A.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763851317114-->
+END%%
+
+%%ANKI
+Basic
+Which $DK$-test condition is violated by the state in the bottom-left position?
+![[dk-test-failure.png]]
+Back: The shift-reduce condition.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763851317115-->
+END%%
+
+%%ANKI
+Basic
+Which $DK$-test condition is violated by the state in the second from the top-right position?
+![[dk-test-failure.png]]
+Back: The shift-reduce condition.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763851317116-->
+END%%
+
+%%ANKI
+Basic
+*Why* doesn't the bottom-left state violate the $DK$-test?
+![[dk-test-success.png]]
+Back: It has only one completed rule and no rule with a terminal immediately following a $\mathop{\bullet}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763851317117-->
+END%%
+
+%%ANKI
+Basic
+Suppose the handles of all valid strings are unambiguous. Is the corresponding CFG deterministic?
+Back: Not necessarily.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763852746676-->
+END%%
+
+%%ANKI
+Basic
+Suppose the handles of all valid strings are forced. Is the corresponding CFG deterministic?
+Back: Yes, by definition.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763852746691-->
+END%%
+
+%%ANKI
+Basic
+Which of unambiguous handles and forced handles are more general?
+Back: Every forced handle is an unambiguous handle.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763852746704-->
+END%%
+
+%%ANKI
+Basic
+*Why* aren't unambiguous handles a sufficient condition for CFG determinism?
+Back: Because even unambiguous handles may require reading the entire input to determine.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1763852746716-->
 END%%
 
 ## Closure Operations

@@ -587,7 +587,9 @@
     "nfa-thompson-kleene-star.png",
     "nfa-thompson-kleene-plus.png",
     "archimedean-property.png",
-    "sin-extreme-values.png"
+    "sin-extreme-values.png",
+    "dk-test-failure.png",
+    "dk-test-success.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -1661,7 +1663,7 @@
     "c23/types/pointers.md": "21c974362289c2892c0115d28e453f30",
     "c23/runtime.md": "97d72891e680091c8378e246b33aa414",
     "c23/preprocessor.md": "45e3b6723033f30c3ea856eb1649a8ea",
-    "c23/attributes.md": "bd4986ea4e9a1370b039681aaa7ab5d6",
+    "c23/attributes.md": "b8746f758817376a958a07fee22ab0f4",
     "_journal/2025-10-02.md": "00b7c606528ce16dfa5036f4be2ff9e8",
     "_journal/2025-10/2025-10-01.md": "0a3bc06585101d98269340b8f3fc5299",
     "c23/assertions.md": "a221633c57b09cef8515050939ef0b3d",
@@ -1672,7 +1674,7 @@
     "_journal/2025-10/2025-10-03.md": "289995d0e3b877840b9502f0a70d326e",
     "c23/types/compatible.md": "510cdf1f730bad2f0b18099b0be192db",
     "c23/types/effective.md": "36ec84644a5b922ce62abfc1fa180bcd",
-    "c23/types/functions.md": "3e6edd3ca460a582f4b647580a3d9577",
+    "c23/types/functions.md": "7dc3bbe4e8b7ddf5c7c5884fc4bfd4d2",
     "_journal/2025-10-05.md": "44c27185f38a138cccaca7e58b4bfd25",
     "_journal/2025-10/2025-10-04.md": "566c26badc5111fe60f5cd2148a3401a",
     "_journal/2025-10-06.md": "df88ee9566e78a9780594a3110c69afa",
@@ -1733,7 +1735,7 @@
     "_journal/2025-10/2025-10-22.md": "c4fedcaf6d2622cc79eedc07b1ef851d",
     "_journal/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
     "_journal/2025-10/2025-10-23.md": "5a8dbe6c60db5acfedda392a6ffcf123",
-    "computability/context-free/deterministic.md": "9adccf1dec54bb157d51e7830cb6623c",
+    "computability/context-free/deterministic.md": "6f32f287814c4f7b09243380d696e105",
     "computability/context-free/index.md": "4fa03defafa4f1714765d6a3347896d8",
     "_journal/2025-10-25.md": "1267c24ab6e563cc2331c8a2ae260460",
     "_journal/2025-10/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
@@ -1794,7 +1796,9 @@
     "_journal/2025-11/2025-11-19.md": "de54383cefdaf9c0672716c08c8adf09",
     "operating_systems/shells.md": "5ad726eda7569ad3f1adb7e1c2d6bf10",
     "_journal/2025-11-21.md": "1e49d1b899bc56a8baa19e83390bede5",
-    "_journal/2025-11/2025-11-20.md": "cc63058890966f22aeded4ac6f5d71a5"
+    "_journal/2025-11/2025-11-20.md": "cc63058890966f22aeded4ac6f5d71a5",
+    "_journal/2025-11-22.md": "442cc9368c6694f108e1d63c14b71fdb",
+    "_journal/2025-11/2025-11-21.md": "d8bcd0057e13f612a66a5ed9b69a328a"
   },
   "fields_dict": {
     "Basic": [
