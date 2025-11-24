@@ -440,7 +440,7 @@ END%%
 Basic
 How is the following equivalently rewritten using the `typeof` operator?
 ```c
-auto x = 5
+auto x = 5;
 ```
 Back:
 ```c

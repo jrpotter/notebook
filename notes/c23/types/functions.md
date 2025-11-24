@@ -647,7 +647,7 @@ Is `foo` independent? Why?
 ```c
 void foo(void) {}
 ```
-Back: Yes. `foo` references no global objects and has no pointer parameters.
+Back: Yes. `foo` references no global state.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1760266045213-->
 END%%
@@ -842,7 +842,7 @@ int foo(int *x, int *y) {
   return *x + *y;
 }
 ```
-Back: Yes. No observable changes to global state are performed.
+Back: Indeterminate. The same object could be accessed through `x` or `y`.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1760267276368-->
 END%%

@@ -661,7 +661,7 @@
     "ontology/philosophy/index.md": "2d6114b251a40d92378cf8672096c0a5",
     "ontology/philosophy/dialetheism.md": "192d2d359f752d0a2a0da67e7f12cf7a",
     "ontology/index.md": "2d6114b251a40d92378cf8672096c0a5",
-    "network/uri.md": "7ed78c2836d5206cb2f902404ecc91b1",
+    "network/uri.md": "2d18e2683e29e56cfe7d1a5ad5e5c141",
     "network/index.md": "dd81eb04ff16b9acd396a4ed5d223d86",
     "memory/index.md": "4a36dbec400aad58860dfa51f4edfdfd",
     "logic/index.md": "717099c8fefb416eed7dcf83a2284297",
@@ -1798,7 +1798,13 @@
     "_journal/2025-11-21.md": "1e49d1b899bc56a8baa19e83390bede5",
     "_journal/2025-11/2025-11-20.md": "cc63058890966f22aeded4ac6f5d71a5",
     "_journal/2025-11-22.md": "442cc9368c6694f108e1d63c14b71fdb",
-    "_journal/2025-11/2025-11-21.md": "d8bcd0057e13f612a66a5ed9b69a328a"
+    "_journal/2025-11/2025-11-21.md": "d8bcd0057e13f612a66a5ed9b69a328a",
+    "security/web/cors.md": "0c24de2b1b356a357cf0b1f440710570",
+    "security/web/sop.md": "e14c9a69fa9c1bfed532274d3a9c1b31",
+    "security/web/xss.md": "b24181c8c4bb9478cb36426db33e53e6",
+    "security/web/csrf.md": "d00060fbc22c387a5656979117a2051c",
+    "network/session/cookies.md": "27bd9e4abbd4d58a2c65327eecae2c49",
+    "network/session/index.md": "da3b0284fc640e641349ca57f9a9ac83"
   },
   "fields_dict": {
     "Basic": [

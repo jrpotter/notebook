@@ -11,6 +11,18 @@ tags:
 
 A **uniform resource identifier** (URI) is a unique sequence of characters for identifying some physical or abstract resource. URIs are further generalized to **internationalized resource identifier**s (IRIs) which allow using characters from any language, provided there exists a standard web encoding of the characters.
 
+The URI generic syntax consists of five components organized hierarchically in order of decreasing significance from left to right:
+
+```
+<scheme>:[//<authority>]<path>[?<query>][#<fragment>]
+```
+
+where the `<authority>` is further composed as
+
+```
+[<userinfo>@]<host>[:<port>]
+```
+
 %%ANKI
 Basic
 What is URI an acronym for?
@@ -50,18 +62,6 @@ Back: IRIs.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1722191359873-->
 END%%
-
-The URI generic syntax consists of five components organized hierarchically in order of decreasing significance from left to right:
-
-```
-<scheme>:[//<authority>]<path>[?<query>][#<fragment>]
-```
-
-where the `<authority>` is further composed as
-
-```
-[<userinfo>@]<host>[:<port>]
-```
 
 %%ANKI
 Cloze
