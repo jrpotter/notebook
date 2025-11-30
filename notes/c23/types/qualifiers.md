@@ -373,6 +373,22 @@ Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://i
 <!--ID: 1760267997969-->
 END%%
 
+%%ANKI
+Basic
+Why isn't `restrict` on a singular pointer parameter considered redundant?
+Back: The function body may access data in other ways besides the pointer parameters.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1764433964959-->
+END%%
+
+%%ANKI
+Basic
+Is the `restrict` keyword useful for single function parameters?
+Back: Yes, since a function can access objects through e.g. external references.
+Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
+<!--ID: 1764433964964-->
+END%%
+
 ## volatile
 
 The `volatile` type qualifier indicates that the corresponding object must be:

@@ -696,7 +696,81 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1761953903804-->
 END%%
 
-## Signedness
+## Extremums
+
+Let $f$ be defined on an open interval $I$ and assume $f$ has a [[calculus/index#Extremum|relative minimum]] or relative maximum at $c \in I$. If the derivative $f'(c)$ exists, then $f'(c) = 0$.
+
+%%ANKI
+Basic
+Let $f$ be differentiable. Does $f'(x) = 0$ imply a minimum or maximum?
+Back: No.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761617981281-->
+END%%
+
+%%ANKI
+Basic
+What does the vanishing of a derivative at an interior extremum refer to?
+Back: At an interior extremum, if a derivative of a function exists then it's equal to $0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764184962506-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be defined on open interval $I$ and let $c \in I$. What prototypical counterexample shows $f'(c) = 0$ but $f(c)$ is not an extremum?
+Back: $f(x) = x^3$ at $x = 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764184980675-->
+END%%
+
+%%ANKI
+Basic
+Why is it important to emphasize *interior* when discussing the vanishing of a derivative at an interior extremum?
+Back: The endpoints of a closed interval may correspond to an extremum, but the derivative is not necessarily $0$ at these points.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764184962509-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f$ has a zero derivative at $c$. Is $f(c)$ an extremum?
+Back: Not necessarily.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764184962510-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be defined on interval $I$ and let $c \in I$. Must $f'(c) = 0$ given the following?
+1. $f(c)$ is an extremum.
+2. $f'(c)$ exists.
+Back: Not necessarily, e.g. $c$ may be an endpoint of *closed* interval $I$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764184962511-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be defined on closed interval $I$ and let $c \in I$. Must $f'(c) = 0$ given the following?
+1. $f(c)$ is an extremum.
+2. $f'(c)$ exists.
+Back: Not necessarily, $c$ may be an endpoint of $I$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764184962512-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be defined on open interval $I$ and let $c \in I$. Must $f'(c) = 0$ given the following?
+1. $f(c)$ is an extremum.
+2. $f'(c)$ exists.
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764184962513-->
+END%%
+
+### Signedness
 
 Let $f$ be differentiable. If $f'(x) > 0$, then $f(x)$ is increasing at $x$. If $f'(x) < 0$, then $f(x)$ is decreasing at $x$.
 
@@ -756,12 +830,43 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1761617981278-->
 END%%
 
+### Rolle's Theorem
+
+Let $f$ be a function continuous everywhere on closed interval $[a, b]$ and differentiable on open interval $(a, b)$. If $f(a) = f(b)$, then there exists a $c \in (a, b)$ such that $f'(c) = 0$.
+
 %%ANKI
 Basic
-Let $f$ be differentiable. Does $f'(x) = 0$ imply a minimum or maximum?
-Back: No.
+What does Rolle's theorem state?
+Back: Let $f$ be continuous on $[a, b]$ and differentiable on $(a, b)$. If $f(a) = f(b)$, then there exists a $c \in (a, b)$ such that $f'(c) = 0$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761617981281-->
+<!--ID: 1764186203753-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following theorem?
+
+> Let $f$ be continuous on $[a, b]$ and differentiable on $(a, b)$. If $f(a) = f(b)$, then there exists a $c \in (a, b)$ such that $f'(c) = 0$.
+
+Back: Rolle's theorem.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764186203758-->
+END%%
+
+%%ANKI
+Basic
+Which theorem is the following a visual demonstration of?
+![[rolles-theorem.png]]
+Back: Rolle's theorem.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764186203762-->
+END%%
+
+%%ANKI
+Cloze
+With respect to Rolle's theorem, $f$ is assumed {1:continuous} on {2:$[a, b]$} and {2:differentiable} on {1:$(a, b)$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764186203766-->
 END%%
 
 ## Bibliography

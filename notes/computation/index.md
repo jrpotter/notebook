@@ -8,7 +8,21 @@ tags:
 
 ## Overview
 
-**Computability theory** focuses on the classification of problems as either solvable or not whereas **complexity theory** focuses on whether problems are easy or hard.
+**Computability theory** focuses on the classification of problems as either solvable or not. **Complexity theory** focuses on whether problems are easy or hard.
+
+%%ANKI
+Cloze
+{1:Computability} focuses on the classification of problems as {2:solvable} or {2:not}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764466135262-->
+END%%
+
+%%ANKI
+Cloze
+{1:Complexity} focuses on the classification of problems as {2:easy} or {2:hard}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764466135264-->
+END%%
 
 ## Alphabets
 
@@ -308,6 +322,22 @@ What is an endmarked language?
 Back: A language augmented such that each member includes a trailing $\dashv$ symbol.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761272689485-->
+END%%
+
+%%ANKI
+Basic
+*Why* is an endmarked language necessarily prefix-free?
+Back: The presence of an endmark ensures no member of the language is a proper prefix of another.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764461326660-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a language. How can $A$ be augmented into a prefix-free language?
+Back: Make it endmarked, i.e. $A{\dashv}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764461326661-->
 END%%
 
 ## Bibliography

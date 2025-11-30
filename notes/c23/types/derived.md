@@ -1075,7 +1075,7 @@ Back:
 ```c
 struct foo {
   _padding     : 4;  // 4 bits
-  signed int   : 4;  // 4 bits
+  signed int c : 4;  // 4 bits
   _padding     : 2;  // 2 bits
   signed int b : 2;  // 2 bits
   signed int a : 4;  // 4 bits

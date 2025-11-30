@@ -728,7 +728,7 @@ A few macros are defined by the implementation to indicate some subset of the la
 
 %%ANKI
 Basic
-Which header indicates a C implementation does not support atomics?
+Which macro indicates a C implementation does not support atomics?
 Back: `__STDC_NO_ATOMICS__`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1758024835612-->
@@ -752,7 +752,7 @@ END%%
 
 %%ANKI
 Basic
-Which header indicates a C implementation does not support complex numbers?
+Which macro indicates a C implementation does not support complex numbers?
 Back: `__STDC_NO_COMPLEX__`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1758024835621-->
@@ -768,7 +768,7 @@ END%%
 
 %%ANKI
 Basic
-Which header indicates a C implementation does not support threads?
+Which macro indicates a C implementation does not support threads?
 Back: `__STDC_NO_THREADS__`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1758024835627-->
@@ -776,7 +776,7 @@ END%%
 
 %%ANKI
 Basic
-Which header indicates a C implementation does not provide a mutex type?
+Which macro indicates a C implementation does not provide a mutex type?
 Back: `__STDC_NO_THREADS__`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1759163282122-->
@@ -792,7 +792,7 @@ END%%
 
 %%ANKI
 Basic
-Which header indicates a C implementation does not support VLAs?
+Which macro indicates a C implementation does not support VLAs?
 Back: `__STDC_NO_VLA__`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1758024835632-->
@@ -800,7 +800,7 @@ END%%
 
 %%ANKI
 Basic
-Which header indicates a C implementation does not support VMTs?
+Which macro indicates a C implementation does not support VMTs?
 Back: `__STDC_NO_VLA__`
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1758024835635-->

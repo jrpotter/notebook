@@ -19,7 +19,7 @@ A (nondeterministic) **pushdown automaton** (PDA) is a $6$-tuple $\langle Q, \Si
 5. $q_0 \in Q$ is the start state, and
 6. $F \subseteq Q$ is the set of accept states.
 
-A [[computability/index|language]] is called **context-free** if a pushdown automaton recognizes it.
+A [[computation/index|language]] is called **context-free** if a pushdown automaton recognizes it.
 
 %%ANKI
 Basic
@@ -91,30 +91,6 @@ Does term "pushdown automaton" typically refer to the deterministic or nondeterm
 Back: The nondeterministic variant.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1749922267165-->
-END%%
-
-%%ANKI
-Basic
-Why are nondeterminstic PDAs typically highlighted over deterministic ones?
-Back: Nondeterministic PDAs are equivalent to CFGs.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1749922267167-->
-END%%
-
-%%ANKI
-Basic
-Which of deterministic or nondeterministic finite automaton recognize more languages?
-Back: N/A. They are equivalent in power.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1749922267168-->
-END%%
-
-%%ANKI
-Basic
-Which of deterministic or nondeterministic pushdown automaton recognize more languages?
-Back: Nondeterministic PDAs.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1749922267169-->
 END%%
 
 %%ANKI
@@ -515,6 +491,8 @@ A **context-free grammar** (CFG) is a $4$-tuple $\langle V, \Sigma, R, S \rangle
 3. $R$ is a finite set of **rules**, with each rule being a variable to a string of variables/terminals.
 4. $S \in V$ is the **start variable**.
 
+They are equivalent to PDAs in their descriptive power. 
+
 If $u$, $v$, and $w$ are strings of variables and terminals, and $A \rightarrow w$, we say that $uAv$ **yields** $uwv$ (denoted $uAv \Rightarrow uwv$). We say $u$ **derives** $v$ (denoted $u \overset{*}{\Rightarrow} v$), if $u = v$ or if a sequence $u_1, u_2, \ldots, u_k$ exists for $k \geq 0$ and $$u \Rightarrow u_1 \Rightarrow u_2 \Rightarrow \cdots \Rightarrow u_k \Rightarrow v.$$
 
 A **derivation** of $w$ is a sequence of substitution steps, beginning with the start variable, that produces $w$. A derivation of a string $w$ in a grammar $G$ is a **leftmost derivation** if at every step the leftmost remaining variable is the one replaced.
@@ -525,14 +503,6 @@ What is CFG an acronym for?
 Back: **C**ontext-**F**ree **G**rammar.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1746370634189-->
-END%%
-
-%%ANKI
-Basic
-A CFG is equivalent to what kind of automaton?
-Back: A (nondeterministic) pushdown automaton.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761093239296-->
 END%%
 
 %%ANKI
@@ -856,9 +826,43 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1761745620086-->
 END%%
 
+%%ANKI
+Basic
+Why are nondeterminstic PDAs typically highlighted over deterministic ones?
+Back: Nondeterministic PDAs are equivalent to CFGs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267167-->
+END%%
+
+%%ANKI
+Basic
+Which of deterministic or nondeterministic finite automaton recognize more languages?
+Back: N/A. They are equivalent in power.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267168-->
+END%%
+
+%%ANKI
+Basic
+Which of deterministic or nondeterministic pushdown automaton recognize more languages?
+Back: Nondeterministic PDAs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1749922267169-->
+END%%
+
+%%ANKI
+Basic
+A CFG is equivalent to what kind of automaton?
+Back: A (nondeterministic) pushdown automaton.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761093239296-->
+END%%
+
 ### Ambiguity
 
-A string $w$ is derived **ambiguously** in context-free grammar $G$ if it has two or more different leftmost derivations. Grammar $G$ is **ambiguous** if it generates some string ambiguously. A context-free language that can be generated only from an ambiguous grammar is called **inherently ambiguous**.
+A string $w$ is derived **ambiguously** in context-free grammar $G$ if it has two or more different leftmost derivations. Grammar $G$ is **ambiguous** if it generates some string ambiguously.
+
+A context-free language that can be generated only from an ambiguous grammar is called **inherently ambiguous**.
 
 %%ANKI
 Cloze
@@ -985,8 +989,6 @@ We say that **$u$ is reducible to $v$**, written $u \overset{*}\rightarrowtail v
 
 A **reduction from $w$** is a reduction from $w$ to the start variable. A **leftmost reduction** is a reduction in which each reducing string is reduced only after all other reducing strings to its left.
 
-Let $G$ be a CFG. A string that appears in a leftmost reduction of some string in $L(G)$ is called a **valid string**. Let $u_i$ be a valid string. In the reduce step $u_i \rightarrowtail u_{i+1}$, suppose rule $T \rightarrow h$ was applied in reverse. That is, $u_i = xhy$ and $u_{i+1} = xTy$ for some strings $x$ and $y$. Then $h$, along with reducing rule $T \rightarrow h$, is called a **handle** of $u_i$.
-
 %%ANKI
 Cloze
 A {derivation} is a reverse-ordered {reduction}.
@@ -1086,6 +1088,12 @@ Back: $ab \rightarrowtail Ab \rightarrowtail AB \rightarrowtail S$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761497557854-->
 END%%
+
+#### Valid Strings
+
+Let $G$ be a CFG. A string that appears in a leftmost reduction of some string in $L(G)$ is called a **valid string**.
+
+Let $u_i$ be a valid string. In the reduce step $u_i \rightarrowtail u_{i+1}$, suppose rule $T \rightarrow h$ was applied in reverse. That is, $u_i = xhy$ and $u_{i+1} = xTy$ for some strings $x$ and $y$. Then $h$, along with reducing rule $T \rightarrow h$, is called a **handle** of $u_i$.
 
 %%ANKI
 Basic

@@ -830,7 +830,7 @@ END%%
 
 %%ANKI
 Cloze
-Every Hartogs number is, most specifically, a {cardinal} number.
+A Hartogs number is a {cardinal} number.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1760533025958-->
 END%%

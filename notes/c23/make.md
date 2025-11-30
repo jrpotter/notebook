@@ -401,9 +401,7 @@ END%%
 
 #### Phony Targets
 
-A **phony target** is a target that does not refer to a file. That is, it only specifies an action of some sort.
-
-To ensure that such a target runs its recipe unconditionally, regardless of whether a file with the target name exists, it can be specified as the prerequisite of special target `.PHONY`.
+A **phony target** is a target that does not refer to a file. That is, it only specifies an action of some sort. To ensure that such a target runs its recipe unconditionally, regardless of whether a file with the target name exists, it can be specified as the prerequisite of special target `.PHONY`.
 
 ```make
 .PHONY: clean
@@ -528,11 +526,9 @@ Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savan
 <!--ID: 1763261110477-->
 END%%
 
-#### Silent
+#### .SILENT
 
-Rules corresponding to prerequisites for the `.SILENT` target will not be printed on execution. If `.SILENT` has no prerequisites, `make` does not print any recipes before executing them.
-
-To suppress **echoing** of specific lines in a recipe, prefix the line with the `@` symbol. The `@` is discarded before the line is passed to the shell.
+Recipes corresponding to prerequisites for the `.SILENT` target will not be printed on execution. If `.SILENT` has no prerequisites, `make` does not print any recipes before executing them.
 
 %%ANKI
 Basic
@@ -553,7 +549,7 @@ END%%
 %%ANKI
 Basic
 How is a prerequisite of `.SILENT` interpreted?
-Back: `make` does not print the recipe corresponding to the prerequisite.
+Back: `make` does not print the prerequisite's recipe.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1763321160561-->
 END%%
@@ -568,33 +564,52 @@ END%%
 
 %%ANKI
 Cloze
-{Echoing} describes the {printing of each line of the recipe before its executed}.
+The {`.SILENT`} special target corresponds to the {`@`} prefix.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
-<!--ID: 1763321160567-->
+<!--ID: 1763949419652-->
+END%%
+
+#### .IGNORE
+
+Recipes corresponding to prerequisites for the `.IGNORE` target will not abort `make` on errors (i.e. nonzero status codes). If `.IGNORE` has no prerequisites, `make` ignores errors in execution of recipes for all files.
+
+%%ANKI
+Basic
+Which special built-in rule allows ignoring nonzero status codes in recipe commands?
+Back: `.IGNORE`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763949419660-->
 END%%
 
 %%ANKI
 Basic
-Why is recipe echoing named the way it is?
-Back: Because it gives the appearance that you are typing the lines yourself.
+How is `.IGNORE` interpreted if it has no prerequisites?
+Back: `make` ignores all nonzero status codes encountered in all recipes.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
-<!--ID: 1763321160570-->
+<!--ID: 1763949419665-->
 END%%
 
 %%ANKI
 Basic
-How do you prevent echoing of a specific line in a recipe?
-Back: Prefix the line with the `@` character.
+How is a prerequisite of `.IGNORE` interpreted?
+Back: `make` ignores nonzero status codes corresponding to the prerequisite's recipe.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
-<!--ID: 1763321160573-->
+<!--ID: 1763949419669-->
 END%%
 
 %%ANKI
 Basic
-Suppose a line in a recipe begins with a `@` character. What does this mean?
-Back: Echoing is suppressed for that line.
+How is a recipe of `.IGNORE` interpreted?
+Back: `make` ignores this recipe.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
-<!--ID: 1763321160575-->
+<!--ID: 1763949419673-->
+END%%
+
+%%ANKI
+Cloze
+The {`.IGNORE`} special target corresponds to the {`-`} prefix.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763949419677-->
 END%%
 
 ### Prerequisites
@@ -752,6 +767,10 @@ TODO
 
 By default, the `/bin/sh` [[shells|shell]] is used to execute each line of a recipe. To run multiple lines within a single shell, one can connect the lines using a `\` and newline. Unlike elsewhere in a `Makefile`, the `\` is *not* replaced. Recipe prefix characters (by default, the `\t` character) are removed though.
 
+To suppress **echoing** of specific lines in a recipe, prefix the line with the `@` symbol. The `@` is discarded before the line is passed to the shell.
+
+To ignore errors in a recipe line (e.g. a command that returns a nonzero status), prefix the line with the `-` symbol. The `-` is discarded before the line is passed to the shell.
+
 %%ANKI
 Basic
 What is the default recipe prefix character?
@@ -821,22 +840,69 @@ Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savan
 <!--ID: 1763774669861-->
 END%%
 
-## Variables
-
-TODO
+%%ANKI
+Cloze
+{Echoing} describes the {printing of each line of the recipe before its executed}.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763321160567-->
+END%%
 
 %%ANKI
 Basic
-How are variables referenced within a rule?
-Back: Using `$()` syntax.
+Why is recipe echoing named the way it is?
+Back: Because it gives the appearance that you are typing the lines yourself.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763321160570-->
+END%%
+
+%%ANKI
+Basic
+How do you prevent echoing of a specific line in a recipe?
+Back: Prefix the line with the `@` character.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763321160573-->
+END%%
+
+%%ANKI
+Basic
+Suppose a line in a recipe begins with a `@` character. What does this mean?
+Back: Echoing is suppressed for that line.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763321160575-->
+END%%
+
+%%ANKI
+Basic
+How do you prevent `make` from aborting on a line that returns a nonzero status?
+Back: Prefix the line with the `-` character.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763949419680-->
+END%%
+
+%%ANKI
+Basic
+Suppose a line in a recipe begins with a `-` character. What does this mean?
+Back: `make` will not abort if this line returns a nonzero status.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1763949419685-->
+END%%
+
+## Variables
+
+A **variable** is a name used to represent a string of text, called the variable's **value**. A variable `foo` is substituted  within a rule by specifying either `$(foo)` or `${foo}`. A single letter variable name may omit the parenthesis or curly braces.
+
+%%ANKI
+Basic
+How are variables substituted within a rule?
+Back: Using `$()` or `${}` syntax.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1762562126714-->
 END%%
 
 %%ANKI
 Basic
-How would variable `OBJS` be referenced in a rule?
-Back: As `$(OBJS)`.
+How would variable `objects` be substituted from within a rule?
+Back: By specifying `$(objects)` or `${objects}.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1762562126716-->
 END%%
@@ -847,6 +913,303 @@ How is a literal `$ ` character specified within a recipe?
 Back: Escaping with a second `$ ` character.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1763774669867-->
+END%%
+
+%%ANKI
+Basic
+How is `$(foo)` interpreted in a recipe?
+Back: As the value of variable `foo`.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764128887696-->
+END%%
+
+%%ANKI
+Basic
+How is `${foo}` interpreted in a recipe?
+Back: As the value of variable `foo`.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764128887700-->
+END%%
+
+%%ANKI
+Basic
+How is `$foo` interpreted in a recipe?
+Back: As the value of variable `f` followed by string `oo`.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764128887704-->
+END%%
+
+### Recursively Expanded
+
+A variable defined with a `=` operator is **recursively expanded**. On substitution, the variable's value is replaced verbatim and then further expanded if the value also contains other variable references.
+
+```make
+immediate = deferred
+```
+
+%%ANKI
+Cloze
+In makefiles, the {`=`} operator defines a {recursively expanded} variable.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764172031594-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a variable to be recursively expanded?
+Back: The variable's value is substituted directly. If it contains other variable references, those are then expanded.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764172031597-->
+END%%
+
+%%ANKI
+Basic
+Consider the following makefile. How is the rule expanded?
+```make
+foo = $(bar)
+bar = $(baz)
+baz = baz
+
+all:
+	echo $(foo)
+```
+Back:
+```make
+all:
+	echo baz
+```
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764172031598-->
+END%%
+
+%%ANKI
+Basic
+What is the specific name given to the following *kind* of variable?
+```make
+foo = bar
+```
+Back: A recursively expanded variable.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764172031599-->
+END%%
+
+%%ANKI
+Basic
+What is the most commonly supported kind of variable across different `make` variants?
+Back: Recursively expanded variables.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764172031600-->
+END%%
+
+%%ANKI
+Basic
+When is a recursively expanded variable actually expanded?
+Back: At time of substitution.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764172031601-->
+END%%
+
+%%ANKI
+Basic
+Consider the following variable definition. Is the LHS parsed in immediate mode or deferred mode?
+```make
+foo = bar
+```
+Back: Immediate mode.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764178015713-->
+END%%
+
+%%ANKI
+Basic
+Consider the following variable definition. Is the RHS parsed in immediate mode or deferred mode?
+```make
+foo = bar
+```
+Back: Deferred mode.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764178015715-->
+END%%
+
+%%ANKI
+Basic
+How is `+=` interpreted for a variable that is not yet defined?
+Back: As equivalent to `=`.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764188758112-->
+END%%
+
+%%ANKI
+Basic
+How does `+=` behave with respect to recursively expanded variables?
+Back: By appending the text, unexpanded, to the existing value.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764188758114-->
+END%%
+
+### Simply Expanded
+
+A variable defined with a `:=` operator is **simply expanded**. The value of a simply expanded variable is scanned once, with references to variables and functions expanded at time of definition. Once the expansion is complete, the value of the variable is never expanded again.
+
+```make
+immediate := immediate
+```
+
+%%ANKI
+Cloze
+In makefiles, the {`:=`} operator defines a {simply expanded} variable.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764178015716-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a variable to be simply expanded?
+Back: The variable's value is recursively expanded at definition and never expanded again.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764178015717-->
+END%%
+
+%%ANKI
+Basic
+Consider the following makefile. How is the rule expanded?
+```make
+foo := $(bar)
+bar := $(baz)
+baz := baz
+
+all:
+	echo $(foo)
+```
+Back:
+```make
+all:
+	echo 
+```
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764178015718-->
+END%%
+
+%%ANKI
+Basic
+Consider the following makefile. How is the rule expanded?
+```make
+x ::= foo
+y ::= $(x) bar
+x ::= baz
+
+all:
+	echo $(y)
+```
+Back:
+```make
+all:
+	echo foo bar
+```
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764178015719-->
+END%%
+
+%%ANKI
+Basic
+What is the specific name given to the following *kind* of variable?
+```make
+foo := bar
+```
+Back: A simply expanded variable.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764178015720-->
+END%%
+
+%%ANKI
+Basic
+When is a simply expanded variable actually expanded?
+Back: At time of definition.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764178015721-->
+END%%
+
+%%ANKI
+Basic
+Consider the following variable definition. Is the LHS parsed in immediate mode or deferred mode?
+```make
+foo := bar
+```
+Back: Immediate mode.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764178015722-->
+END%%
+
+%%ANKI
+Basic
+Consider the following variable definition. Is the RHS parsed in immediate mode or deferred mode?
+```make
+foo := bar
+```
+Back: Immediate mode.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764178015723-->
+END%%
+
+%%ANKI
+Basic
+How does `+=` behave with respect to simply expanded variables?
+Back: By appending the text, expanded, to the existing value.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764188758115-->
+END%%
+
+### Conditionally Assigned
+
+A variable defined with a `?=` operator is **conditionally assigned**. The assignment only has an effect if the variable in question is not yet defined.
+
+```make
+immediate ?= deferred
+```
+
+%%ANKI
+Cloze
+In makefiles, the {`?=`} operator defines a {conditionally assigned} variable.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764187515344-->
+END%%
+
+%%ANKI
+Basic
+When is a conditionally assigned variable actually expanded?
+Back: If undefined at time of substitution.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764187515348-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a variable to be conditionally assigned?
+Back: The variable's value is expanded on substitution if it was not already defined.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764187515350-->
+END%%
+
+%%ANKI
+Basic
+Consider the following variable definition. Is the LHS parsed in immediate mode or deferred mode?
+```make
+foo ?= bar
+```
+Back: Immediate mode.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764187515353-->
+END%%
+
+%%ANKI
+Basic
+Consider the following variable definition. Is the RHS parsed in immediate mode or deferred mode?
+```make
+foo ?= bar
+```
+Back: Deferred mode.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764187515355-->
 END%%
 
 ### Automatic Variables
@@ -1001,6 +1364,241 @@ Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savan
 <!--ID: 1763563266761-->
 END%%
 
+### Target-Specific
+
+Using **target-specific variable values**, `make` can define different values for a variable based on the target it is currently building. This follows the pattern:
+
+```make
+target ... : variable-assignment
+```
+
+Target-specific variable values are also in effect recursively for all prerequisites of the target.
+
+%%ANKI
+Basic
+What is recursive about target-specific variable values?
+Back: The assignment is in effect for all the target's prerequisites, all their prerequisites, etc.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764218853111-->
+END%%
+
+%%ANKI
+Basic
+Consider the following rule. What *kind* of variable is `CFLAGS`?
+```make
+debug: CFLAGS += -g
+debug:
+	...
+```
+Back: A target-specific variable.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764218853115-->
+END%%
+
+%%ANKI
+Basic
+What is the priority of a target-specific variable value?
+Back: The same as that of an ordinary assignment (or `override` if declared as such).
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764218853118-->
+END%%
+
+%%ANKI
+Basic
+Run `make CFLAGS=-Wall`. What is the value of `CFLAGS` in the following rule?
+```make
+debug: CFLAGS += -g
+debug:
+	...
+```
+Back: `-Wall`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764219299020-->
+END%%
+
+%%ANKI
+Basic
+Run `make CFLAGS=-Wall`. What is the value of `CFLAGS` in the following rule?
+```make
+debug: override CFLAGS += -g
+debug:
+	...
+```
+Back: `-Wall -g`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764219299023-->
+END%%
+
+%%ANKI
+Basic
+What is the syntax of a target-specific variable?
+Back:
+```make
+targets ... : variable-assignment
+```
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764219765564-->
+END%%
+
+%%ANKI
+Basic
+With respect to target-specific variables, what does inheritance refer to?
+Back: The target-specific variable values are inherited recursively by the target's prerequisites.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764219982009-->
+END%%
+
+%%ANKI
+Basic
+Which keyword is used to suppress inheritance in target-specific variables?
+Back: `private`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764219854986-->
+END%%
+
+### Pattern-Specific
+
+Using **pattern-specific variable values**, `make` can define different values for a variable based on the target it is currently building. This follows the pattern:
+
+```make
+pattern ... : variable-assignment
+```
+
+where `pattern` refers to a `%`-pattern. If a target matches more than one pattern, the matching pattern-specific variables with longer stems are interpreted first.
+
+%%ANKI
+Basic
+What is recursive about pattern-specific variable values?
+Back: The assignment is in effect for all the target's prerequisites, all their prerequisites, etc.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764219765569-->
+END%%
+
+%%ANKI
+Basic
+Consider the following rule. What *kind* of variable is `CFLAGS`?
+```make
+%.o: CFLAGS += -g
+%.o:
+	...
+```
+Back: A pattern-specific variable.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764219765573-->
+END%%
+
+%%ANKI
+Basic
+What is the priority of a pattern-specific variable value?
+Back: The same as that of an ordinary assignment (or `override` if declared as such).
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764219765576-->
+END%%
+
+%%ANKI
+Basic
+Suppose a target matches two pattern-specific variables. Which is chosen?
+Back: The one with a longer stem (or listed first in case of ties).
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764219765579-->
+END%%
+
+%%ANKI
+Basic
+What is the syntax of a pattern-specific variable?
+Back:
+```make
+patterns ... : variable-assignment
+```
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764219765583-->
+END%%
+
+%%ANKI
+Basic
+With respect to pattern-specific variables, what does inheritance refer to?
+Back: The pattern-specific variable values are inherited recursively by the target's prerequisites.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764219982012-->
+END%%
+
+%%ANKI
+Basic
+Which keyword is used to suppress inheritance in pattern-specific variables?
+Back: `private`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764219982013-->
+END%%
+
+### Priority
+
+Environment variables that `make` sees when it starts up are transformed into a `make` variable with the same name and value. Such variables have the lowest priority.
+
+Ordinary assignment of variables found in a makefile have higher priority than environment variables.
+
+Command arguments, i.e. assignments supplied as an argument to the `make` command, have higher priority than ordinary assignments. They allow the user to update the makefile without having to edit it.
+
+Variables marked [[#override]] have the highest priority.
+
+%%ANKI
+Basic
+Which variable assignments have the lowest priority?
+Back: Environment variables.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764217803751-->
+END%%
+
+%%ANKI
+Basic
+Run `foo=bar make` with the following makefile. What is the value of `foo`?
+```make
+foo := baz
+```
+Back: `baz`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764217803755-->
+END%%
+
+%%ANKI
+Basic
+Which variable assignments have the lowest priority?
+Back: Those automatically formed from environment variables.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+END%%
+
+%%ANKI
+Cloze
+The following `make` variables are ordered from lowest to highest priority:
+1. {Environment variables}
+2. {Ordinary assignments}
+3. {Command arguments}
+4. {`override` assignments}
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764217803762-->
+END%%
+
+%%ANKI
+Basic
+What distinguishes the two assignments to `foo` in the following?
+```sh
+$ foo=bar make foo=baz
+```
+Back: The former sets an environment variable. The latter supplies a command argument.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764217803765-->
+END%%
+
+%%ANKI
+Basic
+What is the resulting value of `foo` after the following command?
+```sh
+$ foo=bar make foo=baz
+```
+Back: `baz`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764217803769-->
+END%%
+
 ## Directives
 
 A **directive** is an instruction for `make` to do something special.
@@ -1011,6 +1609,129 @@ With respect to `make`, what is a directive?
 Back: An instruction for `make` to do something special.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1762562126749-->
+END%%
+
+### define
+
+The `define` directive is used to define multi-line [[#Variables|variables]]. If an operator is not included after the variable name, the `=` operator is assumed.
+
+```make
+define <variable-name> [=|:=|?=|+=]
+  ...
+endef
+```
+
+%%ANKI
+Cloze
+The {`define`} directive is used to define {multi-line variables}.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764188758116-->
+END%%
+
+%%ANKI
+Basic
+How is a `define` directive interpreted with no operator specified?
+Back: As equivalent to the directive with `=` specified.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764188758117-->
+END%%
+
+%%ANKI
+Basic
+How is a multi-line variable `var` defined recursively expanded?
+Back:
+```make
+define var =
+  ...
+endef
+```
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764188758118-->
+END%%
+
+%%ANKI
+Basic
+How is a multi-line variable `var` defined simply expanded?
+Back:
+```make
+define var :=
+  ...
+endef
+```
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764188758119-->
+END%%
+
+%%ANKI
+Basic
+How is a multi-line variable `var` defined conditionally?
+Back:
+```make
+define var ?=
+  ...
+endef
+```
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764188758120-->
+END%%
+
+%%ANKI
+Basic
+Which keyword is used to close a `define` directive?
+Back: `endef`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764188758121-->
+END%%
+
+### override
+
+Variable assignments marked with the `override` directive have a higher priority than all other assignments (except another `override`). Subsequent assignments or appends to a variable marked with `override` are ignored.
+
+%%ANKI
+Basic
+Which variable assignments have the highest priority?
+Back: Those marked with an `override` directive.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764217803773-->
+END%%
+
+%%ANKI
+Basic
+What does the `override` directive do?
+Back: Allows performing assignments that apply to or take precedence over command arguments.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764217803776-->
+END%%
+
+%%ANKI
+Basic
+What is the value of `foo` following the below assignments?
+```make
+override foo := bar
+foo := baz
+```
+Back: `bar`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764217803779-->
+END%%
+
+%%ANKI
+Basic
+Run `make foo=bar` with the following makefile. What is the value of `foo`?
+```make
+override foo := baz
+```
+Back: `baz`
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764217803783-->
+END%%
+
+%%ANKI
+Basic
+What is the primary purpose for the `override` directive?
+Back: Appending to command arguments.
+Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
+<!--ID: 1764217803786-->
 END%%
 
 ## Bibliography

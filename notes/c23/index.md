@@ -1351,7 +1351,7 @@ END%%
 %%ANKI
 Basic
 What sequence points are present in expression `1 + 1`?
-Back: N/A. There are no sequence points.
+Back: Evaulation of both `1`s before addition.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1760236971181-->
 END%%

@@ -13,7 +13,7 @@ tags:
 
 If $s$ is processed by finite automaton $M$ such that $M$ finishes in an accept state, we say $M$ **accepts** $s$. Otherwise $M$ **rejects** $s$. If $A$ is the set of all strings that $M$ accepts, we say that $A$ is the **language of machine $M$**, denoted $L(M) = A$. We say that $M$ **recognizes** $A$.
 
-A [[computability/index|language]] is called a **regular language** if a finite automaton recognizes it.
+A [[computation/index|language]] is called a **regular language** if a finite automaton recognizes it.
 
 %%ANKI
 Basic
@@ -1950,7 +1950,7 @@ END%%
 
 ## Regular Expressions
 
-A **regular expression** is a textual representation of some language. They are equivalent to [[regular_language|finite automaton]] in their descriptive power. More formally, we say $R$ is a regular expression if $R$ is
+A **regular expression** is a textual representation of some language. They are equivalent to [[regular|finite automaton]] in their descriptive power. More formally, we say $R$ is a regular expression if $R$ is
 
 1. $a$ for some $a$ in the alphabet $\Sigma$,
 2. $\epsilon$,
@@ -2135,6 +2135,91 @@ Let $R$ be a regular expression. $R \circ \varnothing$ simplifies to what expres
 Back: $\varnothing$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1744414920397-->
+END%%
+
+### GNFA
+
+A **generalized nondeterministic finite automaton** (GNFA) is an NFA in which the transition arrows may have any regular expressions as labels, instead of only members of an alphabet (or $\epsilon$).
+
+These are useful for constructing a regular expression from a DFA. In particular, every DFA can be converted into a GNFA and every GNFA can be converted into a 2-state GNFA whose sole transition is labeled with the desired regular expression.
+
+%%ANKI
+Basic
+What is GNFA an acronym for?
+Back: **G**eneralized **n**ondeterministic **f**inite **a**utomaton.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764474685680-->
+END%%
+
+%%ANKI
+Basic
+In what way is a GNFA more general than an NFA?
+Back: The transitions of a GNFA are labeled with regular expressions.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764474685685-->
+END%%
+
+%%ANKI
+Basic
+What general strategy is used to prove the following implication?
+
+> If a language is described by a regular expression, then it is regular.
+
+Back: Construct an NFA that recognizes the language described by the regular expression.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764474685688-->
+END%%
+
+%%ANKI
+Basic
+What general strategy is used to prove the following implication?
+
+> If a language is regular, then it is described by a regular expression.
+
+Back: Convert the corresponding DFA into a GNFA and reduce to a single transition with the desired regular expression.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764474685692-->
+END%%
+
+%%ANKI
+Cloze
+{1:Regular expressions} are to {2:GNFAs} whereas {2:symbols} are to {1:NFAs}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764474685695-->
+END%%
+
+%%ANKI
+Basic
+GNFAs are typically introduced for what purpose?
+Back: As intermediaries when converting DFAs to equivalent regular expressions.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764474685699-->
+END%%
+
+%%ANKI
+Basic
+What does the following GNFA look like after removing $q_{\text{rip}}$?
+![[gnfa-before.png]]
+Back:
+![[gnfa-after.png]]
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764474685702-->
+END%%
+
+%%ANKI
+Basic
+What must be done to convert a DFA converted into a GNFA?
+Back: N/A. Every DFA is a GNFA.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764474685705-->
+END%%
+
+%%ANKI
+Basic
+How is a GNFA $G$ converted into an equivalent regular expression?
+Back: Repeatedly convert $G$ into equivalent GNFAs with fewer states. When two states remain, return the label of the sole transition.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764474685709-->
 END%%
 
 ### Extended

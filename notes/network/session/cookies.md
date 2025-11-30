@@ -163,7 +163,7 @@ The `SameSite` attribute dictates when cookies should be sent to the target site
 %%ANKI
 Basic
 With respect to the `SameSite` attribute, what is a site?
-Back: A TLD plus one additional level of the domain name.
+Back: A scheme and TLD plus one additional level of the domain name.
 Reference: _Wikipedia_. “HTTP cookie.” November 3, 2025. [https://en.wikipedia.org/w/index.php?title=HTTP_cookie](https://en.wikipedia.org/w/index.php?title=HTTP_cookie&oldid=1320180107).
 <!--ID: 1763879731000-->
 END%%
@@ -179,7 +179,7 @@ END%%
 %%ANKI
 Basic
 What does the "site" of URL `http://www.example.com:80/dir/page.html` refer to?
-Back: `https://example.com`
+Back: `http://example.com`
 Reference: _Wikipedia_. “HTTP cookie.” November 3, 2025. [https://en.wikipedia.org/w/index.php?title=HTTP_cookie](https://en.wikipedia.org/w/index.php?title=HTTP_cookie&oldid=1320180107).
 <!--ID: 1763879731014-->
 END%%
