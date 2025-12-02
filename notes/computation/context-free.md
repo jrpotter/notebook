@@ -1,10 +1,10 @@
 ---
 title: Context-Free Language
 TARGET DECK: Obsidian::STEM
-FILE TAGS: computability::cfl
+FILE TAGS: computation::cfl
 tags:
   - cfl
-  - computability
+  - computation
   - grammar
 ---
 

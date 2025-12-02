@@ -390,7 +390,7 @@ END%%
 Basic
 Is `foo` considered strong or weak in the following translation unit?
 ```c
-int foo();
+int foo(void);
 ```
 Back: Strong.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

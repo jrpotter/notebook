@@ -766,7 +766,7 @@ END%%
 
 %%ANKI
 Basic
-What does the mean value theorem state?
+What does the mean value theorem for integrals state?
 Back: Let $f$ be continuous on $[a, b]$. Then there exists a $c \in [a, b]$ such that $$\int_a^b f(x) \,dx = f(c)(b - a).$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761422321495-->
@@ -790,10 +790,30 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable on $[a, b]$. What additional condition(s) must be satisfied before we can apply the mean value theorem?
+Let $f$ be Riemann integrable on $[a, b]$. What additional condition(s) must be satisfied before we can apply the mean value theorem for integrals?
 Back: $f$ must also be continuous on $[a, b]$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761422321498-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following theorem?
+
+> Let $f$ be continuous on $[a, b]$. Then there exists some $c \in [a, b]$ such that $\int_a^b f(x) \,dx = f(c)(b - a)$.
+
+Back: The mean value theorem for integrals.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764561949359-->
+END%%
+
+%%ANKI
+Basic
+What theorem is the following a visualization of?
+![[mvt-integrals.png]]
+Back: The mean value theorem for integrals.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764562755859-->
 END%%
 
 ## Bibliography

@@ -1,10 +1,10 @@
 ---
 title: Regular Language
 TARGET DECK: Obsidian::STEM
-FILE TAGS: computability::regular
+FILE TAGS: computation::regular
 tags:
   - automaton
-  - computability
+  - computation
 ---
 
 ## Overview

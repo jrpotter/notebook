@@ -869,6 +869,52 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1764186203766-->
 END%%
 
+### Mean Value Theorem
+
+Let $f$ be a function continuous everywhere on closed interval $[a, b]$ and differentiable on open interval $(a, b)$. Then there exists a $c \in (a, b)$ such that $$f(b) - f(a) = f'(c)(b - a).$$
+
+%%ANKI
+Basic
+The Rolle's theorem is typically used to prove what other theorem?
+Back: The mean value theorem for derivatives.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764561949356-->
+END%%
+
+%%ANKI
+Basic
+What does the mean value theorem for derivatives state?
+Back: Let $f$ be continuous on $[a, b]$ and differentiable on $(a, b)$. Then there exists some $c \in (a, b)$ such that $f(b) - f(a) = f'(c)(b - a)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764562755844-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following theorem?
+
+> Let $f$ be continuous on $[a, b]$ and differentiable on $(a, b)$. Then there exists a $c \in (a, b)$ such that $f(b) - f(a) = f'(c)(b - a)$.
+
+Back: The mean value theorem for derivatives.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+END%%
+
+%%ANKI
+Basic
+Which theorem is the following a visual demonstration of?
+![[mvt-derivatives.png]]
+Back: The mean value theorem for derivatives.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764562755852-->
+END%%
+
+%%ANKI
+Cloze
+With respect to the mean value theorem for derivatives, $f$ is assumed {1:continuous} on {2:$[a, b]$} and {2:differentiable} on {1:$(a, b)$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764562755855-->
+END%%
+
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
