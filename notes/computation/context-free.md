@@ -482,6 +482,70 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1754385910972-->
 END%%
 
+%%ANKI
+Basic
+Consider a $k$-PDA. What does $k$ refer to?
+Back: The number of stacks available to the PDA.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334335-->
+END%%
+
+%%ANKI
+Basic
+What kind of automaton is a $0$-PDA equivalent to?
+Back: An NFA.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334338-->
+END%%
+
+%%ANKI
+Basic
+What kind of automaton is a $1$-PDA equivalent to?
+Back: N/A. This is a standard PDA.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334341-->
+END%%
+
+%%ANKI
+Basic
+What kind of automaton is a $2$-PDA equivalent to?
+Back: A Turing machine.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334344-->
+END%%
+
+%%ANKI
+Basic
+Is a $1$-PDA more powerful than a $0$-PDA?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334347-->
+END%%
+
+%%ANKI
+Basic
+Is a $2$-PDA more powerful than a $1$-PDA?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334350-->
+END%%
+
+%%ANKI
+Basic
+Is a $3$-PDA more powerful than a $2$-PDA?
+Back: No. Both are equivalent to TMs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334354-->
+END%%
+
+%%ANKI
+Basic
+How do we demonstrate equivalence between a $2$-PDA and a TM?
+Back: The two stacks correspond to the two sides of a TM's head.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334357-->
+END%%
+
 ## Context-Free Grammar
 
 A **context-free grammar** (CFG) is a $4$-tuple $\langle V, \Sigma, R, S \rangle$ where
@@ -1029,14 +1093,6 @@ END%%
 
 %%ANKI
 Basic
-With respect to DCFGs, what is a reducing string?
-Back: The string being replaced in a sequence of reduce steps.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761399802966-->
-END%%
-
-%%ANKI
-Basic
 Suppose a reduction from $u$ to $v$ exists. What is the reducing string?
 Back: $u$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
@@ -1048,14 +1104,6 @@ Cloze
 A reduction replaces the {1:right}-hand side of a rule with the {1:left}-hand side.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761399802954-->
-END%%
-
-%%ANKI
-Basic
-With respect to DCFGs, what is a reduction from string $w$?
-Back: A reduction from $w$ to the start variable.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761497557848-->
 END%%
 
 %%ANKI
@@ -1079,14 +1127,6 @@ What is the leftmost derivation of $ab$ given the following CFG? $$\begin{align*
 Back: $S \Rightarrow AB \Rightarrow aB \Rightarrow ab$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761497557853-->
-END%%
-
-%%ANKI
-Basic
-What is the leftmost reduction of $ab$ given the following DCFG? $$\begin{align*} S & \rightarrow AB \\ A & \rightarrow a \\ B & \rightarrow b \end{align*}$$
-Back: $ab \rightarrowtail Ab \rightarrowtail AB \rightarrowtail S$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761497557854-->
 END%%
 
 #### Valid Strings

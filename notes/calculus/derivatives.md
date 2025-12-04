@@ -770,66 +770,6 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1764184962513-->
 END%%
 
-### Signedness
-
-Let $f$ be differentiable. If $f'(x) > 0$, then $f(x)$ is increasing at $x$. If $f'(x) < 0$, then $f(x)$ is decreasing at $x$.
-
-%%ANKI
-Basic
-Let $f$ be differentiable. If $f'(x) > 0$, what can be said about $f(x)$?
-Back: $f$ is increasing at $x$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761617981249-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be differentiable. If $f'(x) < 0$, what can be said about $f(x)$?
-Back: $f$ is decreasing at $x$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761617981258-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be differentiable. What does $f'(x)$ evaluate to if $f$ is increasing at $x$?
-Back: A positive value.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761617981263-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be differentiable. What does $f'(x)$ evaluate to if $f$ is decreasing at $x$?
-Back: A negative value.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761617981267-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be differentiable. What does $f'(x)$ evaluate to if $f$ has a maximum at $x$?
-Back: $0$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761617981271-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be differentiable. What does $f'(x)$ evaluate to if $f$ has a minimum at $x$?
-Back: $0$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761617981274-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be differentiable. If $f'(x) = 0$, what can be said about $f(x)$?
-Back: It is neither increasing nor decreasing at $x$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761617981278-->
-END%%
-
 ### Rolle's Theorem
 
 Let $f$ be a function continuous everywhere on closed interval $[a, b]$ and differentiable on open interval $(a, b)$. If $f(a) = f(b)$, then there exists a $c \in (a, b)$ such that $f'(c) = 0$.
@@ -897,6 +837,7 @@ What name is given to the following theorem?
 
 Back: The mean value theorem for derivatives.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764818186650-->
 END%%
 
 %%ANKI
@@ -914,6 +855,83 @@ With respect to the mean value theorem for derivatives, $f$ is assumed {1:contin
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1764562755855-->
 END%%
+
+### Signedness Properties
+
+Let $f$ be a function continuous on closed interval $[a, b]$ and differentiable on $(a, b)$. Then:
+
+* If $f'(x) > 0$ for all $x \in (a, b)$, $f$ is strictly increasing on $[a, b]$.
+* If $f'(x) < 0$ for all $x \in (a, b)$, $f$ is strictly decreasing on $[a, b]$.
+* If $f'(x) = 0$ for all $x$ in $(a, b)$, $f$ is constant throughout $[a, b]$.
+
+%%ANKI
+Cloze
+Let $f$ be {1:continuous} on {1:$[a, b]$} and {2:differentiable} on {2:$(a, b)$}. If {3:$f'(x) > 0$} for all {3:$x \in (a, b)$}, then $f$ is {4:strictly increasing} on {4:$[a, b]$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764819776154-->
+END%%
+
+%%ANKI
+Cloze
+Let $f$ be {1:continuous} on {1:$[a, b]$} and {2:differentiable} on {2:$(a, b)$}. If {3:$f'(x) < 0$} for all {3:$x \in (a, b)$}, then $f$ is {4:strictly decreasing} on {4:$[a, b]$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764819776161-->
+END%%
+
+%%ANKI
+Cloze
+Let $f$ be {1:continuous} on {1:$[a, b]$} and {2:differentiable} on {2:$(a, b)$}. If {3:$f'(x) = 0$} for all {3:$x \in (a, b)$}, then $f$ is {4:strictly decreasing} on {4:$[a, b]$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764819776164-->
+END%%
+
+%%ANKI
+Basic
+What signedness does $f'$ have when $f$ is strictly increasing?
+Back: Positive.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764819236266-->
+END%%
+
+%%ANKI
+Basic
+What signedness does $f'$ have when $f$ is strictly decreasing?
+Back: Negative.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764819236268-->
+END%%
+
+%%ANKI
+Basic
+What signedness does $f'$ have when $f$ is constant?
+Back: N/A. The derivative is zero.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764819236271-->
+END%%
+
+%%ANKI
+Basic
+What signedness does $f'$ have when $f$ is increasing?
+Back: Nonnegative.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764819236273-->
+END%%
+
+%%ANKI
+Basic
+What signedness does $f'$ have when $f$ is decreasing?
+Back: Nonpositive.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764819236276-->
+END%%
+
+### First-Derivative Test
+
+TODO
+
+### Second-Derivative Test
+
+TODO
 
 ## Bibliography
 

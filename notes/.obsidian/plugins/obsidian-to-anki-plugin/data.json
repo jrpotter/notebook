@@ -1746,7 +1746,7 @@
     "computability/context-free/index.md": "3d0a3e564242ffa8cdf2eca213f70103",
     "_journal/2025-10-25.md": "1267c24ab6e563cc2331c8a2ae260460",
     "_journal/2025-10/2025-10-24.md": "acef3969a2b64a6ce42c1602238f922d",
-    "calculus/derivatives.md": "66c3cae9ebdcc9839f17a3c0c2fc8b2a",
+    "calculus/derivatives.md": "b15e958a8dcce7efaf599cc076244b8a",
     "network/link/index.md": "816189d187db8eb4714474f2f3196727",
     "network/internetwork/ip.md": "471dfbed7d5972a79f60bfa9ffdeb371",
     "network/internetwork/index.md": "c10901fefc6faee944cc4ec08c67415c",
@@ -1824,12 +1824,12 @@
     "_journal/2025-11/2025-11-26.md": "a29a6df1efa9638854555ea7e6333553",
     "_journal/2025-11/2025-11-28.md": "5b75c0d23169e9efcea7b857956c707e",
     "computation/regular.md": "57d0f75321c77761b1c0aab44dd4e17e",
-    "computation/context-free.md": "58c042a9aa2a6275618282e2eaea8e10",
+    "computation/context-free.md": "4eecfe5bdaeba7648f4a498aa9d58c29",
     "computation/index.md": "885bebb2c720b2bb09753280dacf7a0a",
     "computation/turing_machine.md": "12f6b2047825c284015d473a4f75e2f7",
     "_journal/2025-11-30.md": "ba538b01077b75d4b218b31d708f3256",
     "_journal/2025-11/2025-11-29.md": "4c9c6c3fd0245c9a1a6279481f8d5e8e",
-    "computation/turing.md": "0de9cbe09fc13e5b7099980fdf2f71f7",
+    "computation/turing.md": "c325f4cd67416d2f5ba21d26d4da04e4",
     "_journal/2025-12-01.md": "01610d8f577bfe2e30d3078d8400f908",
     "_journal/2025/2025-11/2025-11-30.md": "1e9a05782aff5d0836b04a431d739a5d",
     "_journal/2025/2025-11/2025-11-29.md": "4c9c6c3fd0245c9a1a6279481f8d5e8e",
@@ -2163,7 +2163,12 @@
     "_journal/2025/2025-01/2025-01-05.md": "0217401ed8718d4354d856a92a19a345",
     "_journal/2025/2025-01/2025-01-04.md": "d4c8194e96800e3dae22408617971ec8",
     "_journal/2025/2025-01/2025-01-03.md": "1d2e54d8981ba15c58d28d370f1133b7",
-    "_journal/2025/2025-01/2025-01-02.md": "89501003d97f35969dabd2d6e2ecc140"
+    "_journal/2025/2025-01/2025-01-02.md": "89501003d97f35969dabd2d6e2ecc140",
+    "_journal/2025-12-02.md": "f79af68dbd166fbb332966ea56bec1ec",
+    "_journal/2025-12/2025-12-01.md": "01610d8f577bfe2e30d3078d8400f908",
+    "_journal/2025-12-03.md": "0421673749255424d92e8c698af57347",
+    "_journal/2025-12/2025-12-02.md": "875febe9f0476d9f8f1412ec29c91ea0",
+    "computation/decidability.md": "21fda225c342c8ca0ff477ecbf1cac55"
   },
   "fields_dict": {
     "Basic": [

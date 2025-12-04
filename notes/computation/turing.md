@@ -507,11 +507,213 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1764637016537-->
 END%%
 
-## Enumerators
+%%ANKI
+Basic
+The input to a Turing machine is always what "type"?
+Back: A string.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764719683086-->
+END%%
+
+%%ANKI
+Basic
+How do we provide an object (other than a string) as input to a Turing machine?
+Back: We must represent the object as a string.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764719683098-->
+END%%
+
+%%ANKI
+Basic
+Consider a state diagram of a TM. How is transition label $0 \rightarrow x, R$ interpreted?
+Back: If the head reads a $0$, write an $x$ and move to the right.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547782-->
+END%%
+
+%%ANKI
+Basic
+Consider a state diagram of a TM. How is transition label $x \rightarrow L$ interpreted?
+Back: If the head reads an $x$, write an $x$ and move to the left.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547791-->
+END%%
+
+%%ANKI
+Basic
+Consider a state diagram of a TM. How is transition label $0,1,x \rightarrow L$ interpreted?
+Back: If the head reads any of $0$, $1$, or $x$, write the same symbol and move to the left.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547795-->
+END%%
+
+%%ANKI
+Basic
+Consider a state diagram of a TM. How is transition label $\textvisiblespace \rightarrow 1, R$ interpreted?
+Back: If the head reads a $\textvisiblespace$, write a $1$ and move to the right.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547799-->
+END%%
+
+%%ANKI
+Basic
+How is the start state of a TM state diagram denoted?
+Back: As having an arrow pointing to it from nowhere.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547802-->
+END%%
+
+## Variants
+
+There exist many different variants of Turing machines, all of which are equivalent in power. The **robustness** of a computing model is a measure of the models invariance to certain changes. Turing machines are especially robust.
+
+%%ANKI
+Basic
+What does the robustness of a computing model refer to?
+Back: The models power irrespective of certain kinds of changes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547806-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for Turing machines to be robust?
+Back: Variants of the Turing machine are all equivalent in power.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547809-->
+END%%
+
+%%ANKI
+Basic
+A standard Turing machine begins with what tape contents?
+Back: That corresponding to the input being recognized.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764620689048-->
+END%%
+
+### Multitaped
+
+A **multitape Turing machine** is a Turing machine with several tapes. Each tape has its own head for reading and writing, with the initial input set on the first tape and other tapes starting blank. A multitape Turing machine with $k$ tapes has transition function: $$\delta \colon Q \times \Gamma^k \rightarrow Q \times \Gamma^k \times \{L, R\}^k.$$
+
+%%ANKI
+Basic
+What is a multitape Turing machine?
+Back: A Turing machine with one or more tapes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547813-->
+END%%
+
+%%ANKI
+Basic
+How do standard Turing machines and multitape Turing machines relate to one another?
+Back: They are equivalent in power.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547816-->
+END%%
+
+%%ANKI
+Basic
+How does a multitape TM simulate a standard TM?
+Back: Directly. A standard TM is a specialization of a multitape TM.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547819-->
+END%%
+
+%%ANKI
+Basic
+How does a standard TM simulate a multitape TM?
+Back: As writing each input on the single tape, separated with a special symbol.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547823-->
+END%%
+
+%%ANKI
+Basic
+A multitape Turing machine begins with what tape contents?
+Back: With the corresponding input on the first tape and blanks on the other tapes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547826-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a multitape TM with $k$ tapes. What is the domain of its transition function?
+Back: $Q \times \Gamma^k$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547830-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a multitape TM with $k$ tapes. What is the codomain of its transition function?
+Back: $Q \times \Gamma^k \times \{L, R\}^k$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547834-->
+END%%
+
+### Nondeterministic
+
+A **nondeterminstic Turing machine** (NTM) is a Turing machine that allows ambiguous transitions from a given state. At any point in computation, the machine may proceed according to several possibilities. An NTM has transition function: $$\delta \colon Q \times \Gamma \rightarrow \mathscr{P}(Q \times \Gamma \times \{L, R\}).$$
+
+%%ANKI
+Basic
+What is NTM an acronym for?
+Back: **N**ondeterministic **T**uring **m**achine.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547837-->
+END%%
+
+%%ANKI
+Basic
+What aspect of an NTM is nondeterministic?
+Back: The possible transitions from a given state.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547841-->
+END%%
+
+%%ANKI
+Basic
+How do standard Turing machines and nondeterministic Turing machines relate to one another?
+Back: They are equivalent in power.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547845-->
+END%%
+
+%%ANKI
+Basic
+How does a nondeterministic TM simulate a standard TM?
+Back: Directly. A standard TM is a specialization of a nondeterministic TM.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547848-->
+END%%
+
+%%ANKI
+Basic
+How does a standard TM simulate a nondeterministic TM?
+Back: By simulating BFS across the NTM's computation tree.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547851-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be an NTM. What is the domain of its transition function?
+Back: $Q \times \Gamma$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547855-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be an NTM. What is the codomain of its transition function?
+Back: $\mathscr{P}(Q \times \Gamma \times \{L, R\})$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764735547858-->
+END%%
+
+### Enumerators
 
 An **enumerator** is a variant of a Turing machine. Like a Turing machine, it has an infinite tape and a finite state control. Unlike a Turing machine, it also has a printer as an output device for printing strings. It begins with a blank input tape and prints the strings, one at a time, in its corresponding language.
-
-Turing machines are equivalent in power to enumerators.
 
 %%ANKI
 Cloze
@@ -538,7 +740,7 @@ END%%
 
 %%ANKI
 Basic
-How do Turing machines and enumerators relate to one another?
+How do standard Turing machines and enumerators relate to one another?
 Back: They are equivalent to one another in power.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764620689034-->
@@ -570,92 +772,135 @@ END%%
 
 %%ANKI
 Basic
-A Turing machine begins with what tape contents?
-Back: That corresponding to the input being recognized.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764620689048-->
-END%%
-
-%%ANKI
-Basic
 An enumerator begins with what tape contents?
 Back: A blank tape.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764620689051-->
 END%%
 
-## Decidability
+## Closure Operations
 
-A Turing machine that halts on all inputs is called a **decider**. A decider that recognizes some language is said to **decide** that language. We call a language **Turing-decidable** (or **decidable** or **recursive**) if some Turing machine decides it.
+Let $A$ and $B$ be Turing-recognizable languages. Such languages are closed under the following:
+
+* Union: $A \cup B$
+* Intersection: $A \cap B$
+* Concatenation: $A \circ B$
+* Kleene Star: $A^*$
 
 %%ANKI
-Cloze
-A Turing machine that {halts on all inputs} is called a {decider}.
+Basic
+Suppose $A$ and $B$ are Turing-recognizable languages. Is $A \cup B$ recognizable?
+Back: Yes.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764556414662-->
+<!--ID: 1764804334285-->
 END%%
 
 %%ANKI
 Basic
-What does it mean for a language to be Turing-decidable?
-Back: It means a Turing machine decides it.
+Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cup B$ has TM $M$, when does $M$ accept?
+Back: When either $M_A$ or $M_B$ accept.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764618786119-->
+<!--ID: 1764804334289-->
 END%%
 
 %%ANKI
 Basic
-What does it mean for a language to be decidable?
-Back: It means a Turing machine decides it.
+Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cup B$ has TM $M$, when does $M$ reject?
+Back: When both $M_A$ and $M_B$ reject.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764556414663-->
-END%%
-
-%%ANKI
-Cloze
-A {Turing-decidable} language is also known as a {decidable} or {recursive} language.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764618786123-->
+<!--ID: 1764804334293-->
 END%%
 
 %%ANKI
 Basic
-What does it mean for a Turing machine to decide a language?
-Back: The Turing machine both recognizes the language and halts on all inputs.
+Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cup B$ has TM $M$, when does $M$ loop?
+Back: When neither $M_A$ nor $M_B$ accept and either one loops.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764556414664-->
+<!--ID: 1764804334296-->
 END%%
 
 %%ANKI
 Basic
-Suppose a language is decidable. What must exist?
-Back: A Turing machine that decides the language.
+Suppose $A$ and $B$ are Turing-recognizable languages. Is $A \cap B$ recognizable?
+Back: Yes.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764556414665-->
+<!--ID: 1764804334300-->
 END%%
 
 %%ANKI
 Basic
-Suppose a language is recursive. What must exist?
-Back: A Turing machine that decides the language.
+Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cap B$ has TM $M$, when does $M$ accept?
+Back: When both $M_A$ and $M_B$ accept.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764620689055-->
+<!--ID: 1764804334303-->
 END%%
 
 %%ANKI
 Basic
-Which of decidable or Turing-recognizable languages are a subset of the other?
-Back: Every decidable language is a recursively enumerable language.
+Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cap B$ has TM $M$, when does $M$ reject?
+Back: When both $M_A$ and $M_B$ reject.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764556414666-->
+<!--ID: 1764804334307-->
 END%%
 
 %%ANKI
 Basic
-Consider Turing machine $M$ that decides language $L$. What are the possible outcomes of an input?
-Back: Accept or reject.
+Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cap B$ has TM $M$, when does $M$ loop?
+Back: When neither $M_A$ nor $M_B$ reject and either one loops.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016539-->
+<!--ID: 1764804334310-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is a Turing-recognizable language. Is $A^C$ recognizable?
+Back: Not necessarily.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334314-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is a Turing-recognizable language. How do we show $A^C$ is recognizable?
+Back: N/A. This is not generally true.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334317-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ and $B$ are Turing-recognizable languages. Is $A \circ B$ recognizable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334320-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ and $B$ are Turing-recognizable languages. How do we construct the TM that recognizes $A \circ B$?
+Back:
+1. Nondeterministically split the input into two.
+2. Run $A$ and $B$'s TMs on the respective halves.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334323-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is a Turing-recognizable language. Is $A^*$ recognizable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334327-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is a Turing-recognizable language. How do we construct the TM that recognizes $A^*$?
+Back:
+1. Nondeterministically partition the input into zero or more strings.
+2. Run $A$'s TM on each substring.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334330-->
 END%%
 
 ## Bibliography
