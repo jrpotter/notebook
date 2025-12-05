@@ -596,7 +596,8 @@
     "turing-machine-example-configuration.png",
     "mvt-derivatives.png",
     "mvt-integrals.png",
-    "church-turing-thesis.png"
+    "church-turing-thesis.png",
+    "first-derivative-test.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -1746,7 +1747,7 @@
     "computability/context-free/index.md": "3d0a3e564242ffa8cdf2eca213f70103",
     "_journal/2025-10-25.md": "1267c24ab6e563cc2331c8a2ae260460",
     "_journal/2025-10/2025-10-24.md": "acef3969a2b64a6ce42c1602238f922d",
-    "calculus/derivatives.md": "b15e958a8dcce7efaf599cc076244b8a",
+    "calculus/derivatives.md": "279c4428991775e400b691729fe8569e",
     "network/link/index.md": "816189d187db8eb4714474f2f3196727",
     "network/internetwork/ip.md": "471dfbed7d5972a79f60bfa9ffdeb371",
     "network/internetwork/index.md": "c10901fefc6faee944cc4ec08c67415c",
@@ -1829,7 +1830,7 @@
     "computation/turing_machine.md": "12f6b2047825c284015d473a4f75e2f7",
     "_journal/2025-11-30.md": "ba538b01077b75d4b218b31d708f3256",
     "_journal/2025-11/2025-11-29.md": "4c9c6c3fd0245c9a1a6279481f8d5e8e",
-    "computation/turing.md": "c325f4cd67416d2f5ba21d26d4da04e4",
+    "computation/turing.md": "3193db37a15968277ff2f08425435cf6",
     "_journal/2025-12-01.md": "01610d8f577bfe2e30d3078d8400f908",
     "_journal/2025/2025-11/2025-11-30.md": "1e9a05782aff5d0836b04a431d739a5d",
     "_journal/2025/2025-11/2025-11-29.md": "4c9c6c3fd0245c9a1a6279481f8d5e8e",
@@ -2168,7 +2169,9 @@
     "_journal/2025-12/2025-12-01.md": "01610d8f577bfe2e30d3078d8400f908",
     "_journal/2025-12-03.md": "0421673749255424d92e8c698af57347",
     "_journal/2025-12/2025-12-02.md": "875febe9f0476d9f8f1412ec29c91ea0",
-    "computation/decidability.md": "21fda225c342c8ca0ff477ecbf1cac55"
+    "computation/decidability.md": "21fda225c342c8ca0ff477ecbf1cac55",
+    "_journal/2025-12-04.md": "06d4db338fcf268ca5db39f6d2c185d3",
+    "_journal/2025-12/2025-12-03.md": "0421673749255424d92e8c698af57347"
   },
   "fields_dict": {
     "Basic": [

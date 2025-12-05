@@ -698,7 +698,12 @@ END%%
 
 ## Extremums
 
-Let $f$ be defined on an open interval $I$ and assume $f$ has a [[calculus/index#Extremum|relative minimum]] or relative maximum at $c \in I$. If the derivative $f'(c)$ exists, then $f'(c) = 0$.
+Let $f$ be continuous on $[a, b]$ and differentiable on $(a, b)$. A **critical point** $c$ of $f$ is a point $c \in (a, b)$ where $f'(c) = 0$. Then the only places where extrema *can* occur are:
+
+1. At the endpoints;
+2. At the **critical points** of $f$.
+
+Conversely, if $f$ has a [[calculus/index#Extremum|relative minimum]] or relative maximum at $c \in (a, b)$, then $f'(c) = 0$.
 
 %%ANKI
 Basic
@@ -768,6 +773,80 @@ Let $f$ be defined on open interval $I$ and let $c \in I$. Must $f'(c) = 0$ give
 Back: Yes.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1764184962513-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $[a, b]$ and differentiable on $(a, b)$. Where can extrema occur?
+Back: At the endpoints $a$ and $b$ or the critical points of $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764883651506-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $[a, b]$ and differentiable on $(a, b)$. What are the critical points of $f$?
+Back: The points $x \in (a, b)$ where $f'(x) = 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764883651517-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $[a, b]$ and differentiable on $(a, b)$. Do the critical points of $f$ correspond to the extrema of $f$?
+Back: Not necessarily.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764883651521-->
+END%%
+
+%%ANKI
+Basic
+What are the critical points of $f(x) = x^3$ in $[-1, 1]$?
+Back: $x = 0$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764883651525-->
+END%%
+
+%%ANKI
+Basic
+What points correspond to the extrema of $f(x) = x^3$ in $[-1, 1]$?
+Back: $x = -1$ and $x = 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764883651528-->
+END%%
+
+%%ANKI
+Basic
+What are the extrema of $f(x) = x^3$ in $[-1, 1]$?
+Back: $-1$ and $1$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764883651532-->
+END%%
+
+%%ANKI
+Basic
+What points correspond to extrema in the following graph?
+![[first-derivative-test.png]]
+Back: $x = a$, $x = b$, and $x = c$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764883651536-->
+END%%
+
+%%ANKI
+Basic
+What are the critical points in the following graph?
+![[first-derivative-test.png]]
+Back: $x = c$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764883651540-->
+END%%
+
+%%ANKI
+Basic
+Let $c$ be a critical point of $f$ in $(a, b)$. What does this mean?
+Back: $a < c < b$ and $f'(c) = 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764884285352-->
 END%%
 
 ### Rolle's Theorem
@@ -880,7 +959,7 @@ END%%
 
 %%ANKI
 Cloze
-Let $f$ be {1:continuous} on {1:$[a, b]$} and {2:differentiable} on {2:$(a, b)$}. If {3:$f'(x) = 0$} for all {3:$x \in (a, b)$}, then $f$ is {4:strictly decreasing} on {4:$[a, b]$}.
+Let $f$ be {1:continuous} on {1:$[a, b]$} and {2:differentiable} on {2:$(a, b)$}. If {3:$f'(x) = 0$} for all {3:$x \in (a, b)$}, then $f$ is {4:constant} on {4:$[a, b]$}.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1764819776164-->
 END%%
@@ -927,11 +1006,114 @@ END%%
 
 ### First-Derivative Test
 
-TODO
+Let $f$ be continuous on $[a, b]$. Assume $f$ is differentiable on $(a, b)$ except possibly at $c \in (a, b)$. Then:
+
+* If $f'(x) > 0$ for all $x < c$ and $f'(x) < 0$ for all $x > c$, then $f$ has a relative maximum at $c$.
+* If $f'(x) < 0$ for all $x < c$ and $f'(x) > 0$ for all $x > c$, then $f$ has a relative minimum at $c$.
+
+![[first-derivative-test.png]]
+
+%%ANKI
+Basic
+What is the first-derivative test used to find?
+Back: Relative minimums and relative maximums.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764883651546-->
+END%%
+
+%%ANKI
+Basic
+What assumptions on $f$ does the first-derivative test make?
+Back: $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$ (except possibly at the point in question).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764883651555-->
+END%%
+
+%%ANKI
+Basic
+The following is a depiction of what test?
+![[first-derivative-test.png]]
+Back: The first-derivative test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764883651560-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $[a, b]$ and differentiable on $(a, b)$ (except possibly at $c$). How is the first-derivative test used to find a relative maximum at $c$?
+Back: Check if $f'(x) > 0$ for $x < c$ and $f'(x) < 0$ for $x > c$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764883651551-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $[a, b]$ and differentiable on $(a, b)$ (except possibly at $c$). How is the first-derivative test used to find a relative minimum at $c$?
+Back: Check if $f'(x) < 0$ for $x < c$ and $f'(x) > 0$ for $x > c$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764884285362-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following theorem?
+
+> If $f'(x) > 0$ for all $x < c$ and $f'(x) < 0$ for all $x > c$, then $f$ has a relative maximum at $c$.
+
+Back: The first-derivative test (for relative maximum).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764884285364-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following theorem?
+
+> If $f'(x) < 0$ for all $x < c$ and $f'(x) > 0$ for all $x > c$, then $f$ has a relative minimum at $c$.
+
+Back: The first-derivative test (for relative minimum).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764884285376-->
+END%%
 
 ### Second-Derivative Test
 
-TODO
+Let $c$ be a critical point of $f$ in $(a, b)$. Also assume $f$ is twice differentiable on $(a, b)$. Then:
+
+* If $f''(x) < 0$ for $x \in (a, b)$, $f$ has a relative maximum at $c$.
+* If $f''(x) > 0$ for $x \in (a, b)$, $f$ has a relative minimum at $c$.
+
+%%ANKI
+Basic
+What is the second-derivative test used to find?
+Back: Relative minimums and relative maximums.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764884285367-->
+END%%
+
+%%ANKI
+Basic
+What assumptions on $f$ does the second-derivative test at point $c$ make?
+Back: $f$ is twice differentiable and $c$ is a critical point of $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764884285370-->
+END%%
+
+%%ANKI
+Basic
+Let $c$ be a critical point of $f$ in $(a, b)$. Assume $f$ is twice differentiable on $(a, b)$. How is the second-derivative test used to find a relative maximum at $c$?
+Back: If $f''(c) < 0$, then $f$ has a relative maximum at $c$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764884285373-->
+END%%
+
+%%ANKI
+Basic
+Let $c$ be a critical point of $f$ in $(a, b)$. Assume $f$ is twice differentiable on $(a, b)$. How is the second-derivative test used to find a relative minimum at $c$?
+Back: If $f''(c) > 0$, then $f$ has a relative minimum at $c$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764884285379-->
+END%%
 
 ## Bibliography
 
