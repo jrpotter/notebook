@@ -563,6 +563,38 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1764735547802-->
 END%%
 
+%%ANKI
+Basic
+How many possible TMs exist?
+Back: A countably many of them.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068670-->
+END%%
+
+%%ANKI
+Basic
+Do there exist languages that are not Turing-recognizable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068677-->
+END%%
+
+%%ANKI
+Basic
+How do we argue the existence of languages that are *not* Turing-recognizable?
+Back: By showing there are countably many TMs and uncountably many languages.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068680-->
+END%%
+
+%%ANKI
+Basic
+Which of DFAs, PDAs, and TMs potentially run indefinitely?
+Back: PDAs and TMs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765074288349-->
+END%%
+
 ## Variants
 
 There exist many different variants of Turing machines, all of which are equivalent in power. The **robustness** of a computing model is a measure of the models invariance to certain changes. Turing machines are especially robust.
@@ -655,6 +687,8 @@ END%%
 
 A **nondeterminstic Turing machine** (NTM) is a Turing machine that allows ambiguous transitions from a given state. At any point in computation, the machine may proceed according to several possibilities. An NTM has transition function: $$\delta \colon Q \times \Gamma \rightarrow \mathscr{P}(Q \times \Gamma \times \{L, R\}).$$
 
+A nondeterminisitic Turing machine is a [[decidability|decider]] if every branch of computation halts.
+
 %%ANKI
 Basic
 What is NTM an acronym for?
@@ -709,6 +743,14 @@ Let $M$ be an NTM. What is the codomain of its transition function?
 Back: $\mathscr{P}(Q \times \Gamma \times \{L, R\})$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764735547858-->
+END%%
+
+%%ANKI
+Basic
+When is a NTM considered a decider of some language?
+Back: When every branch of computation halts.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765074288351-->
 END%%
 
 ### Enumerators
@@ -776,6 +818,53 @@ An enumerator begins with what tape contents?
 Back: A blank tape.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764620689051-->
+END%%
+
+## Parallelism
+
+**Dovetailing** refers to the simulation of two or more Turing machines in parallel on a single Turing machine. Typically it is implemented by simulating one step of each machine at a time.
+
+In the case of infinitely many TMs, dovetailing is typically accomplished by running the first machine for one step, the first two machines for two steps, the first three machines for three steps, and so on and so forth.
+
+%%ANKI
+Basic
+What term is used to describe the interleaving of multiple TM executions?
+Back: Dovetailing.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724245-->
+END%%
+
+%%ANKI
+Basic
+With respect to TMs, what is dovetailing?
+Back: The simulation of two or more TMs in parallel on a single TM.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724254-->
+END%%
+
+%%ANKI
+Basic
+How is dovetailing typically implemented for a finite number of TMs?
+Back: Simulating one step of each machine at a time.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724258-->
+END%%
+
+%%ANKI
+Basic
+How is dovetailing typically implemented for an infinite number of TMs?
+Back: For increasing integers $k$, simulate $k$ steps of the first $k$ machines.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724260-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following joint?
+![[dovetailing.png]]
+Back: A dovetail.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724264-->
 END%%
 
 ## Closure Operations
@@ -901,6 +990,89 @@ Back:
 2. Run $A$'s TM on each substring.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764804334330-->
+END%%
+
+## Church-Turing Thesis
+
+The **Church-Turing thesis** states that a problem has an [[algorithms/index|effective method]] if and only if it is computable by a Turing machine. The thesis aims to formalize what an effective method (i.e. an algorithm) is.
+
+%%ANKI
+Basic
+Why is the "Church-Turing thesis" called a thesis?
+Back: It is a claim that is being argued. It is not a statement to be proven.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016544-->
+END%%
+
+%%ANKI
+Basic
+*Why* can't the Church-Turing thesis be proven?
+Back: Because no formal definition of an "effective method" exists.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016545-->
+END%%
+
+%%ANKI
+Basic
+What does the Church-Turing thesis state?
+Back: A function on $\mathbb{N}$ can be computed by an effective method iff it is computable by a TM.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016546-->
+END%%
+
+%%ANKI
+Cloze
+The {Church-Turing thesis} states that a {function} on the {natural numbers} can be calculated by an {effective method} iff it is computable by a {Turing machine}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016547-->
+END%%
+
+%%ANKI
+Basic
+The Church-Turing thesis provides a formal definition for what term of art?
+Back: An effective method.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016548-->
+END%%
+
+%%ANKI
+Basic
+The notion of an "effective method" is formalized by what statement?
+Back: The Church-Turing thesis.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764644946788-->
+END%%
+
+%%ANKI
+Basic
+The notion of an "algorithm" is formalized by what statement?
+Back: The Church-Turing thesis.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764644963668-->
+END%%
+
+%%ANKI
+Basic
+What is the following a figure of?
+![[church-turing-thesis.png]]
+Back: The Church-Turing thesis.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016549-->
+END%%
+
+%%ANKI
+Cloze
+{1:Church} devised {2:$\lambda$-calculus} which is equivalent to {2:Turing machines} devised by {1:Turing}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016550-->
+END%%
+
+%%ANKI
+Basic
+Why is the Church-Turing thesis believed true?
+Back: Many alternative models of computation all prove equivalent (e.g. to TMs).
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068683-->
 END%%
 
 ## Bibliography

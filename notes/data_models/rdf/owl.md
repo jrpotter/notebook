@@ -1239,7 +1239,7 @@ END%%
 
 ## Description Logic
 
-OWL 2 introduces a subset of OWL called **OWL DL** (OWL Description Logic). It is the largest subset of OWL that retains decidability. Additional constructs are present with respect to the DL subset:
+OWL 2 introduces a subset of OWL called **OWL DL** (OWL Description Logic). It is the largest subset of OWL that retains [[decidability]]. Additional constructs are present with respect to the DL subset:
 
 * `owl:Nothing`
 	* Is the class corresponding to the empty set. An empty class is said to be **unsatisfiable**.
@@ -1264,10 +1264,18 @@ END%%
 
 %%ANKI
 Basic
-What is OWL DL?
+How is OWL DL defined as a subset of OWL Full?
 Back: The largest subset of OWL that retains decidability.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1753621522067-->
+END%%
+
+%%ANKI
+Basic
+What special property distinguishes OWL DL from a larger subset of FOL?
+Back: It is decidable.
+Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
+<!--ID: 1765074288341-->
 END%%
 
 %%ANKI

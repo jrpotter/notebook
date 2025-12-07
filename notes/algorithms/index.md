@@ -8,7 +8,43 @@ tags:
 
 ## Overview
 
-An **incremental** approach to algorithm design involves acting on a single element at a time. In contrast, the **divide-and-conquer** approach breaks problems into subproblems that are easier to solve.
+An **effective method** (or **algorithm**) is a finite-time, deterministic procedure for solving a problem of a specific class. This is a term of art; it has no agreed upon definition.
+
+%%ANKI
+Basic
+What is an effective method?
+Back: A finite-time, deterministic procedure for solving a problem from a specific class.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016540-->
+END%%
+
+%%ANKI
+Basic
+Why is the term "effective method" considered a term of art?
+Back: There is no agreed upon formal definition.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016541-->
+END%%
+
+%%ANKI
+Basic
+What about an effective method should be finite?
+Back: How long it takes to compute the correct answer.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016542-->
+END%%
+
+%%ANKI
+Basic
+An effective method shouldn't require any of what?
+Back: Ingenuity, i.e. steps that cannot be described in simple terms.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016543-->
+END%%
+
+## Incremental
+
+An **incremental** approach to algorithm design involves acting on a single element at a time.
 
 %%ANKI
 Basic
@@ -17,6 +53,10 @@ Back: An algorithm that acts on a single element at a time.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742467144-->
 END%%
+
+## Divide-and-Conquer
+
+The **divide-and-conquer** approach breaks problems into subproblems that are easier to solve.
 
 %%ANKI
 Basic

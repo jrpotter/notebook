@@ -1070,7 +1070,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $u \overset{*}\rightarrow v$. What derivation must exist?
+Suppose $u \overset{*}\rightarrowtail v$. What derivation must exist?
 Back: $v \overset{*}\Rightarrow u$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761399802959-->
@@ -1101,7 +1101,7 @@ END%%
 
 %%ANKI
 Cloze
-A reduction replaces the {1:right}-hand side of a rule with the {1:left}-hand side.
+A reduction replaces the {right}-hand side of a rule with the {left}-hand side.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761399802954-->
 END%%
@@ -1285,119 +1285,6 @@ Consider the following CFG. What is the handle of "$T(T)(){\dashv}$"? $$\begin{a
 Back: $\underline{T(T)}(){\dashv}$ and $T \rightarrow T(T)$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761745620111-->
-END%%
-
-## Closure Operations
-
-Let $A$ and $B$ be context free languages over alphabet $\Sigma$. Such languages are closed under the following:
-
-* Union: $A \cup B = \{x \mid x \in A \lor x \in B \}$
-* Reversal: $A^R = \{ x^R \mid x \in A \}$
-* Concatenation: $A \circ B = \{ xy \mid x \in A \land y \in B \}$
-* Kleene star: $A^* = \{ x_1x_2\cdots x_k \mid k \geq 0 \land x_i \in A \}$
-
-%%ANKI
-Basic
-Are CFLs closed under union?
-Back: Yes.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761051036391-->
-END%%
-
-%%ANKI
-Basic
-How do we show CFLs are closed under union (using say CFGs $A$ and $B$)?
-Back: Let $S_A$ and $S_B$ be start symbols of $A$ and $B$. Then define CFG $S \rightarrow S_A \mathop{|} S_B$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761051036394-->
-END%%
-
-%%ANKI
-Basic
-Are CFLs closed under intersection?
-Back: No.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761051036397-->
-END%%
-
-%%ANKI
-Basic
-The intersection of which two CFLs is most commonly used to prove non-closure under intersection?
-Back: $\{a^nb^nc^m \mid m, n \geq 0\}$ and $\{a^mb^mc^n \mid m, n \geq 0\}$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761051036400-->
-END%%
-
-%%ANKI
-Basic
-Suppose CFLs were closed under intersection. What contradiction arises?
-Back: DeMorgan's laws would tell us CFLs were then closed under complement.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761051036402-->
-END%%
-
-%%ANKI
-Basic
-Are CFLs closed under reversal?
-Back: Yes.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761051036405-->
-END%%
-
-%%ANKI
-Basic
-How do we show CFLs are closed under reversal (using say CFG $A$)?
-Back: Define a CFG in which every production rule of $A$ is written in reverse order.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761051036408-->
-END%%
-
-%%ANKI
-Basic
-Are CFLs closed under complement?
-Back: No.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761051036411-->
-END%%
-
-%%ANKI
-Basic
-Suppose CFLs were closed under complement. What contradiction arises?
-Back: DeMorgan's laws would tell us CFLs were then closed under intersection.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761051036414-->
-END%%
-
-%%ANKI
-Basic
-Are CFLs closed under concatenation?
-Back: Yes.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761051036417-->
-END%%
-
-%%ANKI
-Basic
-How do we show CFLs are closed under concatenation (using say CFGs $A$ and $B$)?
-Back: Let $S_A$ and $S_B$ be start symbols of $A$ and $B$. Then define CFG $S \rightarrow S_A S_B$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761051036420-->
-END%%
-
-%%ANKI
-Basic
-Are CFLs closed under Kleene star?
-Back: Yes.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761051036423-->
-END%%
-
-%%ANKI
-Basic
-How do we show CFLs are closed under Kleene star (using say CFG $A$)?
-Back: Let $S_A$ be the start symbol of $A$. Then define CFG $S \rightarrow S_A S \mathop{|} \epsilon$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1761051036426-->
 END%%
 
 ## Chomsky Normal Form
@@ -1667,6 +1554,119 @@ What CFG is produced after eliminating $\epsilon$-rule $A \rightarrow \epsilon$ 
 Back: $$\begin{align*} R & \rightarrow uAvAw \mid uvAw \mid uAvw \mid uvw \end{align*}$$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1748052528180-->
+END%%
+
+## Closure Operations
+
+Let $A$ and $B$ be context free languages over alphabet $\Sigma$. Such languages are closed under the following:
+
+* Union: $A \cup B = \{x \mid x \in A \lor x \in B \}$
+* Reversal: $A^R = \{ x^R \mid x \in A \}$
+* Concatenation: $A \circ B = \{ xy \mid x \in A \land y \in B \}$
+* Kleene star: $A^* = \{ x_1x_2\cdots x_k \mid k \geq 0 \land x_i \in A \}$
+
+%%ANKI
+Basic
+Are CFLs closed under union?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036391-->
+END%%
+
+%%ANKI
+Basic
+How do we show CFLs are closed under union (using say CFGs $A$ and $B$)?
+Back: Let $S_A$ and $S_B$ be start symbols of $A$ and $B$. Then define CFG $S \rightarrow S_A \mathop{|} S_B$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036394-->
+END%%
+
+%%ANKI
+Basic
+Are CFLs closed under intersection?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036397-->
+END%%
+
+%%ANKI
+Basic
+The intersection of which two CFLs is most commonly used to prove non-closure under intersection?
+Back: $\{a^nb^nc^m \mid m, n \geq 0\}$ and $\{a^mb^mc^n \mid m, n \geq 0\}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036400-->
+END%%
+
+%%ANKI
+Basic
+Suppose CFLs were closed under intersection. What contradiction arises?
+Back: DeMorgan's laws would tell us CFLs were then closed under complement.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036402-->
+END%%
+
+%%ANKI
+Basic
+Are CFLs closed under reversal?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036405-->
+END%%
+
+%%ANKI
+Basic
+How do we show CFLs are closed under reversal (using say CFG $A$)?
+Back: Define a CFG in which every production rule of $A$ is written in reverse order.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036408-->
+END%%
+
+%%ANKI
+Basic
+Are CFLs closed under complement?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036411-->
+END%%
+
+%%ANKI
+Basic
+Suppose CFLs were closed under complement. What contradiction arises?
+Back: DeMorgan's laws would tell us CFLs were then closed under intersection.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036414-->
+END%%
+
+%%ANKI
+Basic
+Are CFLs closed under concatenation?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036417-->
+END%%
+
+%%ANKI
+Basic
+How do we show CFLs are closed under concatenation (using say CFGs $A$ and $B$)?
+Back: Let $S_A$ and $S_B$ be start symbols of $A$ and $B$. Then define CFG $S \rightarrow S_A S_B$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036420-->
+END%%
+
+%%ANKI
+Basic
+Are CFLs closed under Kleene star?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036423-->
+END%%
+
+%%ANKI
+Basic
+How do we show CFLs are closed under Kleene star (using say CFG $A$)?
+Back: Let $S_A$ be the start symbol of $A$. Then define CFG $S \rightarrow S_A S \mathop{|} \epsilon$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1761051036426-->
 END%%
 
 ## Pumping Lemma

@@ -484,7 +484,7 @@ END%%
 
 %%ANKI
 Basic
-Which IPv4 broadcast address is *never* forwarded by routers?
+Assume no subsets. Which IPv4 broadcast address is *never* forwarded by routers?
 Back: The local net broadcast, i.e. `255.255.255.255`.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1752191422496-->

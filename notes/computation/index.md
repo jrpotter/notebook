@@ -256,9 +256,7 @@ END%%
 
 ## Languages
 
-A **language** is a set of strings.
-
-A language is **prefix-free** if no member is a proper prefix of another member. Likewise it is **suffix-free** if no member is a proper suffix of another member.
+A **language** is a set of strings. The **complement** of a language $A$ is the language consisting of all strings not in $A$. A language is **prefix-free** if no member is a proper prefix of another member. Likewise it is **suffix-free** if no member is a proper suffix of another member.
 
 For any language $A$, the **endmarked language** $A{\dashv}$ is the collection of strings $w{\dashv}$ where $w \in A$.
 
@@ -268,6 +266,14 @@ What is a language?
 Back: A set of strings.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1734903366705-->
+END%%
+
+%%ANKI
+Basic
+What is the complement of a language?
+Back: The set of strings not in the given language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068686-->
 END%%
 
 %%ANKI
@@ -338,115 +344,6 @@ Let $A$ be a language. How can $A$ be augmented into a prefix-free language?
 Back: Make it endmarked, i.e. $A{\dashv}$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764461326661-->
-END%%
-
-## Church-Turing Thesis
-
-An **effective method** is a finite-time, deterministic procedure for solving a problem of a specific class. This is a term of art; it has no agreed upon definition.
-
-The **Church-Turing thesis** states that a function on the natural numbers can be calculated by an effective method if and only if it is computable by a Turing machine. The thesis aims to formalize what an effective method (i.e. an algorithm) is.
-
-%%ANKI
-Basic
-What is an effective method?
-Back: A finite-time, deterministic procedure for solving a problem from a specific class.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016540-->
-END%%
-
-%%ANKI
-Basic
-Why is the term "effective method" considered a term of art?
-Back: There is no agreed upon formal definition.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016541-->
-END%%
-
-%%ANKI
-Basic
-What about an effective method should be finite?
-Back: How long it takes to compute the correct answer.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016542-->
-END%%
-
-%%ANKI
-Basic
-An effective method shouldn't require any of what?
-Back: Ingenuity, i.e. steps that cannot be described in simple terms.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016543-->
-END%%
-
-%%ANKI
-Basic
-Why is the "Church-Turing thesis" called a thesis?
-Back: It is a claim that is being argued. It is not a statement to be proven.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016544-->
-END%%
-
-%%ANKI
-Basic
-*Why* can't the Church-Turing thesis be proven?
-Back: Because no formal definition of an "effective method" exists.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016545-->
-END%%
-
-%%ANKI
-Basic
-What does the Church-Turing thesis state?
-Back: A function on $\mathbb{N}$ can be computed by an effective method iff it is computable by a TM.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016546-->
-END%%
-
-%%ANKI
-Cloze
-The {Church-Turing thesis} states that a {function} on the {natural numbers} can be calculated by an {effective method} iff it is computable by a {Turing machine}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016547-->
-END%%
-
-%%ANKI
-Basic
-The Church-Turing thesis provides a formal definition for what term of art?
-Back: An effective method.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016548-->
-END%%
-
-%%ANKI
-Basic
-The notion of an "effective method" is formalized by what statement?
-Back: The Church-Turing thesis.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764644946788-->
-END%%
-
-%%ANKI
-Basic
-The notion of an "algorithm" is formalized by what statement?
-Back: The Church-Turing thesis.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764644963668-->
-END%%
-
-%%ANKI
-Basic
-What is the following a figure of?
-![[church-turing-thesis.png]]
-Back: The Church-Turing thesis.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016549-->
-END%%
-
-%%ANKI
-Cloze
-{1:Church} devised {2:$\lambda$-calculus} which is equivalent to {2:Turing machines} devised by {1:Turing}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016550-->
 END%%
 
 ## Bibliography
