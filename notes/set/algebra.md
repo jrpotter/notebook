@@ -29,7 +29,7 @@ END%%
 
 ## Symmetric Difference
 
-Define the **symmetric difference** of sets $A$ and $B$ as $$A \mathop{\triangle} B = (A - B)  \cup (B - A)$$
+Define the **symmetric difference** of sets $A$ and $B$ as $$A \vartriangle B = (A - B)  \cup (B - A)$$
 
 %%ANKI
 Basic
@@ -42,14 +42,14 @@ END%%
 %%ANKI
 Basic
 How is the symmetric difference of sets $A$ and $B$ denoted?
-Back: $A \mathop{\triangle} B$
+Back: $A \vartriangle B$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1717554445665-->
 END%%
 
 %%ANKI
 Basic
-How is $A \mathop{\triangle} B$ defined?
+How is $A \vartriangle B$ defined?
 Back: As $(A - B)  \cup (B - A)$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1717554445670-->

@@ -595,6 +595,14 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1765074288349-->
 END%%
 
+%%ANKI
+Basic
+Consider Turing-recognizable language $L$. Is a subset of $L$ Turing-recognizable?
+Back: Not necessarily.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765128774919-->
+END%%
+
 ## Variants
 
 There exist many different variants of Turing machines, all of which are equivalent in power. The **robustness** of a computing model is a measure of the models invariance to certain changes. Turing machines are especially robust.
@@ -942,7 +950,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ is a Turing-recognizable language. Is $A^C$ recognizable?
+Suppose $A$ is a Turing-recognizable language. Is $\overline{A}$ recognizable?
 Back: Not necessarily.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764804334314-->
@@ -950,7 +958,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ is a Turing-recognizable language. How do we show $A^C$ is recognizable?
+Suppose $A$ is a Turing-recognizable language. How do we show $\overline{A}$ is recognizable?
 Back: N/A. This is not generally true.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764804334317-->

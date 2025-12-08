@@ -1028,7 +1028,7 @@ END%%
 Basic
 What set operation is shaded green in the following venn diagram?
 ![[venn-diagram-symm-diff.png]]
-Back: $A \mathop{\triangle} B$
+Back: $A \vartriangle B$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1717554445655-->
 END%%

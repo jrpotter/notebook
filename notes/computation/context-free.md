@@ -546,6 +546,14 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1764804334357-->
 END%%
 
+%%ANKI
+Basic
+Consider context-free language $L$. Is a subset of $L$ context-free?
+Back: Not necessarily.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765128774925-->
+END%%
+
 ## Context-Free Grammar
 
 A **context-free grammar** (CFG) is a $4$-tuple $\langle V, \Sigma, R, S \rangle$ where
@@ -1565,6 +1573,8 @@ Let $A$ and $B$ be context free languages over alphabet $\Sigma$. Such languages
 * Concatenation: $A \circ B = \{ xy \mid x \in A \land y \in B \}$
 * Kleene star: $A^* = \{ x_1x_2\cdots x_k \mid k \geq 0 \land x_i \in A \}$
 
+Furthermore, the intersection of a CFL with a [[regular|regular language]] is context-free.
+
 %%ANKI
 Basic
 Are CFLs closed under union?
@@ -1667,6 +1677,46 @@ How do we show CFLs are closed under Kleene star (using say CFG $A$)?
 Back: Let $S_A$ be the start symbol of $A$. Then define CFG $S \rightarrow S_A S \mathop{|} \epsilon$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761051036426-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be a CFL and $R$ be a regular language. What can be said about $C \cap R$?
+Back: It must be context-free.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765128774929-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be a CFL and $R$ be a regular language. What strategy is used to show $C \cap R$ is a CFL?
+Back: Construct a PDA that recognizes $C \cap R$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765128774933-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be a CFL, $R$ be a regular language, and $P$ be the PDA recognizing $C \cap R$. What are $P$'s states?
+Back: $Q \times Q'$, where $Q$ is the states of $C$'s PDA and $Q'$ is the states of $R$'s DFA.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765128774936-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be a CFL and $R$ be a regular language. What construction is used to show $C \cap R$ is context-free?
+Back: The product construction.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765136594507-->
+END%%
+
+%%ANKI
+Basic
+Are CFLs closed under symmetric differences?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765135310534-->
 END%%
 
 ## Pumping Lemma

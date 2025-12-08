@@ -132,6 +132,14 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1764817652023-->
 END%%
 
+%%ANKI
+Basic
+Consider decidable language $L$. Is a subset of $L$ decidable?
+Back: Not necessarily.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765128774946-->
+END%%
+
 ## Examples
 
 ### Decidable
@@ -479,7 +487,7 @@ Let $A$ and $B$ be decidable languages. Such languages are closed under the foll
 
 * Union: $A \cup B$
 * Intersection: $A \cap B$
-* Complement: $A^C$
+* Complement: $\overline{A}$
 * Concatenation: $A \circ B$
 * Kleene Star: $A^*$
 
@@ -535,7 +543,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ is a decidable language. Is $A^C$ decidable?
+Suppose $A$ is a decidable language. Is $\overline{A}$ decidable?
 Back: Yes.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764804334260-->
@@ -543,7 +551,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ is a decidable language. How do we show $A^C$ is decidable?
+Suppose $A$ is a decidable language. How do we show $\overline{A}$ is decidable?
 Back: By swapping the accept and reject states of $A$'s TM.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764804334263-->
@@ -619,14 +627,14 @@ END%%
 %%ANKI
 Basic
 Suppose a language $L$ and its complement is Turing-recognizable. How do we construct a TM that decides $L$?
-Back: Simulate $L$'s and $L^C$'s TMs, running them in parallel. Accept if the former accepts and reject if the latter accepts.
+Back: Simulate $L$'s and $\overline{L}$'s TMs, running them in parallel. Accept if the former accepts and reject if the latter accepts.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764938068732-->
 END%%
 
 %%ANKI
 Basic
-Define $A$ as follows. How do we show $A^C$ is not Turing-recognizable? $$A = \{\langle M, w \rangle \mid M \text{ is a Turing machine and } M \text{ accepts } w\}.$$
+Define $A$ as follows. How do we show $\overline{A}$ is not Turing-recognizable? $$A = \{\langle M, w \rangle \mid M \text{ is a Turing machine and } M \text{ accepts } w\}.$$
 Back: $A$ is undecidable and is Turing-recognizable, but a language is decidable iff it and its complement are Turing-recognizable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764938068737-->

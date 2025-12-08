@@ -165,6 +165,14 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1761338259719-->
 END%%
 
+%%ANKI
+Basic
+Consider regular language $L$. Is a subset of $L$ regular?
+Back: Not necessarily.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765128774915-->
+END%%
+
 ## Automaton
 
 ### Deterministic
@@ -2088,7 +2096,7 @@ Let $A$ and $B$ be regular languages over alphabet $\Sigma$. Such languages are 
 
 * Union: $A \cup B = \{x \mid x \in A \lor x \in B \}$
 * Intersection: $A \cap B = \{x \mid x \in A \land x \in B\}$
-* Complement: $A^C = \{ x \mid x \in \Sigma^* - A \}$
+* Complement: $\overline{A} = \{ x \mid x \in \Sigma^* - A \}$
 * Reversal: $A^R = \{ x^R \mid x \in A \}$
 * Concatenation: $A \circ B = \{ xy \mid x \in A \land y \in B \}$
 * Kleene star: $A^* = \{ x_1x_2\cdots x_k \mid k \geq 0 \land x_i \in A \}$
@@ -2152,7 +2160,7 @@ END%%
 %%ANKI
 Basic
 Let $A$ be a regular language. How is its complement denoted?
-Back: $A^C$
+Back: $\overline{A}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745371322656-->
 END%%
@@ -2255,7 +2263,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be a language. What regular operation is denoted as $A^C$?
+Let $A$ be a language. What regular operation is denoted as $\overline{A}$?
 Back: The complement.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745638450119-->
@@ -2361,7 +2369,7 @@ END%%
 Basic
 How is $Q'$ likely defined given the following?
 * $M_1 = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
-* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $A^C$.
+* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $\overline{A}$.
 Back: $Q' = Q$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745371322665-->
@@ -2371,7 +2379,7 @@ END%%
 Basic
 How is $\Sigma'$ likely defined given the following?
 * $M_1 = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
-* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $A^C$.
+* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $\overline{A}$.
 Back: $\Sigma' = \Sigma$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745371322668-->
@@ -2381,7 +2389,7 @@ END%%
 Basic
 How is $\delta'$ likely defined given the following?
 * $M_1 = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
-* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $A^C$.
+* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $\overline{A}$.
 Back: $\delta' = \delta$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745371322670-->
@@ -2391,7 +2399,7 @@ END%%
 Basic
 How is $q_0'$ likely defined given the following?
 * $M_1 = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
-* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $A^C$.
+* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $\overline{A}$.
 Back: $q_0' = q_0$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745371322673-->
@@ -2401,7 +2409,7 @@ END%%
 Basic
 How is $F'$ likely defined given the following?
 * $M_1 = \langle Q, \Sigma, \delta, q_0, F \rangle$ is a DFA recognizing $A$.
-* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $A^C$.
+* $M = \langle Q', \Sigma', \delta', q_0', F' \rangle$ is a DFA recognizing $\overline{A}$.
 Back: $F' = Q - F$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745371322675-->
@@ -2409,7 +2417,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be a regular language over alphabet $\Sigma$. What strings are members of $A^C$?
+Let $A$ be a regular language over alphabet $\Sigma$. What strings are members of $\overline{A}$?
 Back: $\Sigma^* - A$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1745371322678-->
@@ -2716,6 +2724,138 @@ Let $N_1$ and $N$ be NFAs. What regular operation is depicted below?
 Back: Kleene star.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1743461820221-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be regular languages. What does $A \vartriangle B$ denote?
+Back: Their symmetric difference.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765135310530-->
+END%%
+
+%%ANKI
+Basic
+Are regular languages closed under symmetric differences?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765135310531-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be regular languages. How is their symmetric difference denoted?
+Back: $A \vartriangle B$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765135310532-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be regular languages. How is $A \vartriangle B$ defined w.r.t. standard closure operations?
+Back: $A \vartriangle B = (A \cap \overline{B}) \cup (B \cap \overline{A})$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765135310533-->
+END%%
+
+### Product Construction
+
+Let $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ and $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ be DFAs. Then the **product construction** of $D_1$ and $D_2$ is DFA $D = D_1 \times D_2 = \langle Q, \Sigma, \delta, q_0, F \rangle$ where
+
+* $Q = Q_1 \times Q_2$,
+* $\delta(\langle r_1, r_2 \rangle, a) = \langle \delta_1(r_1, a), \delta_2(r_2, a) \rangle$
+* $q_0 = \langle q_1, q_2 \rangle$
+
+The definition of $F$ depends on the semantics desired.
+
+%%ANKI
+Basic
+Given two finite automata, what construction can be used to simulate both simultaneously?
+Back: The product construction.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765136594474-->
+END%%
+
+%%ANKI
+Basic
+What purpose does the product construction of two finite automata serve?
+Back: Simulating two finite automata simultaneously.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765136904541-->
+END%%
+
+%%ANKI
+Basic
+How is $Q$ typically defined given the following?
+* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$
+* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$
+* $D = \langle Q, \Sigma, \delta, q_0, F \rangle$ is the product construction of $D_1$ and $D_2$.
+Back: As $Q = Q_1 \times Q_2$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765136594480-->
+END%%
+
+%%ANKI
+Basic
+How is the domain of $\delta$ typically defined given the following?
+* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$
+* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$
+* $D = \langle Q, \Sigma, \delta, q_0, F \rangle$ is the product construction of $D_1$ and $D_2$.
+Back: As $Q \times \Sigma$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765136594483-->
+END%%
+
+%%ANKI
+Basic
+How is the codomain of $\delta$ typically defined given the following?
+* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$
+* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$
+* $D = \langle Q, \Sigma, \delta, q_0, F \rangle$ is the product construction of $D_1$ and $D_2$.
+Back: As $Q$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765136594487-->
+END%%
+
+%%ANKI
+Basic
+How is $\delta \colon Q \times \Sigma \rightarrow Q$ typically defined given the following?
+* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$
+* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$
+* $D = \langle Q, \Sigma, \delta, q_0, F \rangle$ is the product construction of $D_1$ and $D_2$.
+Back: As $\delta(\langle r_1, r_2 \rangle, a) = \langle \delta_1(r_1, a), \delta_2(r_2, a) \rangle$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765136594490-->
+END%%
+
+%%ANKI
+Basic
+How is $q_0$ typically defined given the following?
+* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$
+* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$
+* $D = \langle Q, \Sigma, \delta, q_0, F \rangle$ is the product construction of $D_1$ and $D_2$.
+Back: As $q_0 = \langle q_1, q_2 \rangle$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765136594494-->
+END%%
+
+%%ANKI
+Basic
+How is $F$ typically defined given the following?
+* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$
+* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$
+* $D = \langle Q, \Sigma, \delta, q_0, F \rangle$ is the product construction of $D_1$ and $D_2$.
+Back: The definition of $F$ depends on the desired semantics.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765136594497-->
+END%%
+
+%%ANKI
+Basic
+Why is the product construction of finite automa named the way it is?
+Back: The constructed states are the Cartesian product of the factors.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765136594500-->
 END%%
 
 ## Pumping Lemma
