@@ -231,7 +231,7 @@ The **address space** of a machine with $n$-bit addresses is the possible addres
 
 %%ANKI
 Basic
-How large is the address space of a machine with $n$-bit addresses?
+How large is the virtual address space of a machine with $n$-bit addresses?
 Back: $2^n$ addresses.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752201359210-->
@@ -239,7 +239,7 @@ END%%
 
 %%ANKI
 Basic
-What are the available addresses of a machine with $n$-bit addresses?
+What are the available virtual addresses of a machine with $n$-bit addresses?
 Back: $0, 1, \ldots, 2^n - 1$.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752201359213-->

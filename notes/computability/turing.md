@@ -1,9 +1,9 @@
 ---
 title: Turing Machines
 TARGET DECK: Obsidian::STEM
-FILE TAGS: computation::turing
+FILE TAGS: computability::turing
 tags:
-  - computation
+  - computability
   - turing
 ---
 
@@ -30,7 +30,7 @@ We say configuration $C_1$ **yields** configuration $C_2$ if the Turing machine 
 
 A Turing machine $M$ **accepts** input $w$ if a sequence of configurations, beginning with the starting configuration and ending in an accepting configuration, exists. The collection of strings that $M$ accepts is the **language of $M$**, denoted $L(M)$.
 
-A language is **Turing-recognizable** (also known as **recursively enumerable**) if a Turing machine recognizes it.
+A language is **Turing-recognizable** (also known as **recursively enumerable**) if a Turing machine recognizes it. A language is **co-Turing-recognizable** if it is the complement of a Turing-recognizable language.
 
 %%ANKI
 Basic
@@ -581,7 +581,15 @@ END%%
 
 %%ANKI
 Basic
-How do we argue the existence of languages that are *not* Turing-recognizable?
+How do we more compactly say term "not Turing-recognizable"?
+Back: Turing-unrecognizable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765290725858-->
+END%%
+
+%%ANKI
+Basic
+How do we argue the existence of languages that are Turing-unrecognizable?
 Back: By showing there are countably many TMs and uncountably many languages.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764938068680-->
@@ -601,6 +609,30 @@ Consider Turing-recognizable language $L$. Is a subset of $L$ Turing-recognizabl
 Back: Not necessarily.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765128774919-->
+END%%
+
+%%ANKI
+Basic
+What is a co-Turing-recognizable language?
+Back: A language that is the complement of a Turing-recognizable language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765251175091-->
+END%%
+
+%%ANKI
+Basic
+Let $L$ be a Turing-recognizable language. What TM is guaranteed to exist?
+Back: One that accepts members of language $L$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765251175096-->
+END%%
+
+%%ANKI
+Basic
+Let $L$ be a co-Turing-recognizable language. What TM is guaranteed to exist?
+Back: One that accepts members of language $\overline{L}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765251175099-->
 END%%
 
 ## Variants
@@ -828,51 +860,87 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1764620689051-->
 END%%
 
-## Parallelism
+## Church-Turing Thesis
 
-**Dovetailing** refers to the simulation of two or more Turing machines in parallel on a single Turing machine. Typically it is implemented by simulating one step of each machine at a time.
-
-In the case of infinitely many TMs, dovetailing is typically accomplished by running the first machine for one step, the first two machines for two steps, the first three machines for three steps, and so on and so forth.
+The **Church-Turing thesis** states that a problem has an [[algorithms/index|effective method]] if and only if it is computable by a Turing machine. The thesis aims to formalize what an effective method (i.e. an algorithm) is.
 
 %%ANKI
 Basic
-What term is used to describe the interleaving of multiple TM executions?
-Back: Dovetailing.
-Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
-<!--ID: 1764989724245-->
+Why is the "Church-Turing thesis" called a thesis?
+Back: It is a claim that is being argued. It is not a statement to be proven.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016544-->
 END%%
 
 %%ANKI
 Basic
-With respect to TMs, what is dovetailing?
-Back: The simulation of two or more TMs in parallel on a single TM.
-Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
-<!--ID: 1764989724254-->
+*Why* can't the Church-Turing thesis be proven?
+Back: Because no formal definition of an "effective method" exists.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016545-->
 END%%
 
 %%ANKI
 Basic
-How is dovetailing typically implemented for a finite number of TMs?
-Back: Simulating one step of each machine at a time.
-Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
-<!--ID: 1764989724258-->
+What does the Church-Turing thesis state?
+Back: A function on $\mathbb{N}$ can be computed by an effective method iff it is computable by a TM.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016546-->
+END%%
+
+%%ANKI
+Cloze
+The {Church-Turing thesis} states that a {function} on the {natural numbers} can be calculated by an {effective method} iff it is computable by a {Turing machine}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016547-->
 END%%
 
 %%ANKI
 Basic
-How is dovetailing typically implemented for an infinite number of TMs?
-Back: For increasing integers $k$, simulate $k$ steps of the first $k$ machines.
-Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
-<!--ID: 1764989724260-->
+The Church-Turing thesis provides a formal definition for what term of art?
+Back: An effective method.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016548-->
 END%%
 
 %%ANKI
 Basic
-What name is given to the following joint?
-![[dovetailing.png]]
-Back: A dovetail.
-Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
-<!--ID: 1764989724264-->
+The notion of an "effective method" is formalized by what statement?
+Back: The Church-Turing thesis.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764644946788-->
+END%%
+
+%%ANKI
+Basic
+The notion of an "algorithm" is formalized by what statement?
+Back: The Church-Turing thesis.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764644963668-->
+END%%
+
+%%ANKI
+Basic
+What is the following a figure of?
+![[church-turing-thesis.png]]
+Back: The Church-Turing thesis.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016549-->
+END%%
+
+%%ANKI
+Cloze
+{1:Church} devised {2:$\lambda$-calculus} which is equivalent to {2:Turing machines} devised by {1:Turing}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764637016550-->
+END%%
+
+%%ANKI
+Basic
+Why is the Church-Turing thesis believed true?
+Back: Many alternative models of computation all prove equivalent (e.g. to TMs).
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068683-->
 END%%
 
 ## Closure Operations
@@ -1000,87 +1068,140 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1764804334330-->
 END%%
 
-## Church-Turing Thesis
+## Computation Histories
 
-The **Church-Turing thesis** states that a problem has an [[algorithms/index|effective method]] if and only if it is computable by a Turing machine. The thesis aims to formalize what an effective method (i.e. an algorithm) is.
+Let $M$ be a Turing machine and $w$ an input string. An **accepting computation history** for $M$ on $w$ is a sequence of configurations, $C_1, C_2, \ldots, C_n$, where:
+
+* $C_1$ is the start configuration of $M$ on $w$,
+* $C_n$ is an accepting configuration of $M$, and
+* each $C_i$ legally follows from $C_{i-1}$ according to the rules of $M$.
+
+A **rejecting computation history** is defined analogously.
 
 %%ANKI
 Basic
-Why is the "Church-Turing thesis" called a thesis?
-Back: It is a claim that is being argued. It is not a statement to be proven.
+How many kinds of computation histories are there?
+Back: Two.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016544-->
+<!--ID: 1765422103156-->
 END%%
 
 %%ANKI
 Basic
-*Why* can't the Church-Turing thesis be proven?
-Back: Because no formal definition of an "effective method" exists.
+What two kinds of computation histories are there?
+Back: Accepting and rejecting.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016545-->
+<!--ID: 1765422103164-->
 END%%
 
 %%ANKI
 Basic
-What does the Church-Turing thesis state?
-Back: A function on $\mathbb{N}$ can be computed by an effective method iff it is computable by a TM.
+What is an accepting computation history of TM $M$ on input $w$?
+Back: A finite sequence of configurations from the start configuration to an accepting configuration.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016546-->
+<!--ID: 1765422103168-->
+END%%
+
+%%ANKI
+Basic
+What is a rejecting computation history of TM $M$ on input $w$?
+Back: A finite sequence of configurations from the start configuration to a rejecting configuration.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103171-->
+END%%
+
+%%ANKI
+Basic
+When is a computation history finite?
+Back: Always.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103175-->
+END%%
+
+%%ANKI
+Basic
+When is a computation history infinite?
+Back: Never. All computation histories are finite.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103179-->
+END%%
+
+%%ANKI
+Basic
+Suppose TM $M$ does not halt on input $w$. What is the computation history of $M$ on $w$?
+Back: N/A. There is no computation history of $M$ on $w$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103184-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a TM. How many computation histories does $M$ have for any one input?
+Back: At most one.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103189-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be an NTM. How many computation histories does $M$ have for any one input?
+Back: Zero or more.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103193-->
 END%%
 
 %%ANKI
 Cloze
-The {Church-Turing thesis} states that a {function} on the {natural numbers} can be calculated by an {effective method} iff it is computable by a {Turing machine}.
+{1:Derivations} are to {2:CFGs} whereas {2:computation histories} are to {1:TMs}.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016547-->
+<!--ID: 1765422103198-->
+END%%
+
+## Parallelism
+
+**Dovetailing** refers to the simulation of two or more Turing machines in parallel on a single Turing machine. Typically it is implemented by simulating one step of each machine at a time.
+
+In the case of infinitely many TMs, dovetailing is typically accomplished by running the first machine for one step, the first two machines for two steps, the first three machines for three steps, and so on and so forth.
+
+%%ANKI
+Basic
+What term is used to describe the interleaving of multiple TM executions?
+Back: Dovetailing.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724245-->
 END%%
 
 %%ANKI
 Basic
-The Church-Turing thesis provides a formal definition for what term of art?
-Back: An effective method.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016548-->
+With respect to TMs, what is dovetailing?
+Back: The simulation of two or more TMs in parallel on a single TM.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724254-->
 END%%
 
 %%ANKI
 Basic
-The notion of an "effective method" is formalized by what statement?
-Back: The Church-Turing thesis.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764644946788-->
+How is dovetailing typically implemented for a finite number of TMs?
+Back: Simulating one step of each machine at a time.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724258-->
 END%%
 
 %%ANKI
 Basic
-The notion of an "algorithm" is formalized by what statement?
-Back: The Church-Turing thesis.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764644963668-->
+How is dovetailing typically implemented for an infinite number of TMs?
+Back: For increasing integers $k$, simulate $k$ steps of the first $k$ machines.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724260-->
 END%%
 
 %%ANKI
 Basic
-What is the following a figure of?
-![[church-turing-thesis.png]]
-Back: The Church-Turing thesis.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016549-->
-END%%
-
-%%ANKI
-Cloze
-{1:Church} devised {2:$\lambda$-calculus} which is equivalent to {2:Turing machines} devised by {1:Turing}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764637016550-->
-END%%
-
-%%ANKI
-Basic
-Why is the Church-Turing thesis believed true?
-Back: Many alternative models of computation all prove equivalent (e.g. to TMs).
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764938068683-->
+What name is given to the following joint?
+![[dovetailing.png]]
+Back: A dovetail.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724264-->
 END%%
 
 ## Bibliography

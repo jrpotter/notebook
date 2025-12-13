@@ -1,9 +1,9 @@
 ---
 title: Decidability
 TARGET DECK: Obsidian::STEM
-FILE TAGS: computation
+FILE TAGS: computability
 tags:
-  - computation
+  - computability
 ---
 
 ## Overview
@@ -357,6 +357,22 @@ END%%
 
 %%ANKI
 Basic
+In proving the undecidability of $A_{\text{TM}}$, what contradiction is formed?
+Back: Constructing a TM that accepts its own description iff it rejects its own description.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068707-->
+END%%
+
+%%ANKI
+Basic
+What proof strategy is used to show undecidability of $A_{\mathop{TM}}$?
+Back: Diagonalization.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068711-->
+END%%
+
+%%ANKI
+Basic
 Is the following language decidable? $$\{M \mid M \text{ is a TM and } L(M) = \varnothing \}$$
 Back: No.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
@@ -429,7 +445,7 @@ END%%
 
 ## Halting Problem
 
-The **halting problem** refers to the problem of determining, from a description of an arbitrary computer program and an input, whether the program will eventually halt. In particular, it refers to the decidability of language $$A = \{\langle M, w \rangle \mid M \text{ is a Turing machine and } M \text{ accepts } w\}.$$
+The **halting problem** refers to the problem of determining, from a description of an arbitrary computer program and an input, whether the program will eventually halt. In particular, it refers to the decidability of language $$A = \{\langle M, w \rangle \mid M \text{ is a Turing machine and } M \text{ halts on } w\}.$$
 
 It is the classic example of an undecidable problem.
 
@@ -452,7 +468,7 @@ END%%
 %%ANKI
 Basic
 In set-theoretic notation, what language is the halting problem concerned with?
-Back: $\{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ accepts } w \}$
+Back: $\{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ halts on } w \}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764938068701-->
 END%%
@@ -463,22 +479,6 @@ The halting problem is usually used as an example of what?
 Back: An undecidable language.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764938068704-->
-END%%
-
-%%ANKI
-Basic
-In the classic proof of the undecidability of the halting problem, what contradiction is formed?
-Back: Constructing a TM that accepts its own description iff it rejects its own description.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764938068707-->
-END%%
-
-%%ANKI
-Basic
-What proof strategy is used to show the halting problem's undecidability?
-Back: Diagonalization.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764938068711-->
 END%%
 
 ## Closure Operations
@@ -638,6 +638,17 @@ Define $A$ as follows. How do we show $\overline{A}$ is not Turing-recognizable?
 Back: $A$ is undecidable and is Turing-recognizable, but a language is decidable iff it and its complement are Turing-recognizable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764938068737-->
+END%%
+
+%%ANKI
+Basic
+Restate the following theorem in terms of "co-Turing-recognizable".
+
+> A language is decidable iff both it and its complement are Turing-recognizable.
+
+Back: A language is decidable iff it is Turing-recognizable and co-Turing-recognizable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765251175102-->
 END%%
 
 ## Bibliography

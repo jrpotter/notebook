@@ -1,7 +1,7 @@
 ---
 title: Order of Growth
 TARGET DECK: Obsidian::STEM
-FILE TAGS: algorithm::complexity
+FILE TAGS: complexity
 tags:
   - algorithm
   - complexity

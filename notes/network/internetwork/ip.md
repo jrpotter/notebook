@@ -1621,7 +1621,7 @@ END%%
 %%ANKI
 Basic
 The fields in an IPv6 address are separated by what character?
-Back: `:`
+Back: The colon (`:`).
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1750858889279-->
 END%%

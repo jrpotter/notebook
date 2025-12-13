@@ -1089,6 +1089,113 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1761422321480-->
 END%%
 
+## Continuity
+
+Let $f$ be [[continuity|continuous]] on $[a, b]$. Then $f$ is Riemann integrable on $[a, b]$.
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$. Is $f$ continuous on $[a, b]$?
+Back: Not necessarily.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321488-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $[a, b]$. Is $f$ Riemann integrable on $[a, b]$?
+Back: Yes.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321489-->
+END%%
+
+%%ANKI
+Basic
+What is the simplest example of a function, Riemann integrable on a closed interval, that isn't continuous?
+Back: A step function.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321490-->
+END%%
+
+%%ANKI
+Basic
+What is the simplest example of a function, continuous on a closed interval, that isn't Riemann integrable?
+Back: N/A. All continuous functions are integrable on closed intervals.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321491-->
+END%%
+
+### Mean Value Theorem
+
+Let $f$ be [[continuity|continuous]] on $[a, b]$. Then there exists some $c \in [a, b]$ such that $$\int_a^b f(x) \,dx = f(c)(b - a).$$
+
+%%ANKI
+Basic
+What is MVT an acronym for?
+Back: The **m**ean **v**alue **t**heorem.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321493-->
+END%%
+
+%%ANKI
+Cloze
+MVT is to {mean} whereas IVT is to {intermediate}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321494-->
+END%%
+
+%%ANKI
+Basic
+What does the mean value theorem for integrals state?
+Back: Let $f$ be continuous on $[a, b]$. Then there exists a $c \in [a, b]$ such that $$\int_a^b f(x) \,dx = f(c)(b - a).$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321495-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous on $[a, b]$. What relationship exists between MVT and the average value of $f$?
+Back: MVT states there exists some $c \in [a, b]$ such that $f(c)$ equals the average value of $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321496-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$. What additional condition(s) must be satisfied before we can find its average value?
+Back: N/A. Integrability is sufficient.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321497-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$. What additional condition(s) must be satisfied before we can apply the mean value theorem for integrals?
+Back: $f$ must also be continuous on $[a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321498-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following theorem?
+
+> Let $f$ be continuous on $[a, b]$. Then there exists some $c \in [a, b]$ such that $\int_a^b f(x) \,dx = f(c)(b - a)$.
+
+Back: The mean value theorem for integrals.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764561949359-->
+END%%
+
+%%ANKI
+Basic
+What theorem is the following a visualization of?
+![[mvt-integrals.png]]
+Back: The mean value theorem for integrals.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1764562755859-->
+END%%
+
 ## Indefinite Integrals
 
 Let $f$ be a function such that the integral $\int_a^x f(t) \,dt$ exists for each $x$ in an interval $[a, b]$. The function $F$, an **indefinite integral of $f$**, is given by $$F(x) = \int_a^x f(t) \,dt, \quad a \leq x \leq b.$$
@@ -1221,6 +1328,22 @@ What does it mean for indefinite Riemann integrals to be continuous?
 Back: If $f$ is integrable on $[a, x]$ for every $x \in [a, b]$, then its indefinite integral is continuous on $[a, b]$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761051036434-->
+END%%
+
+%%ANKI
+Basic
+How might an indefinite integral $A$ of $f(x)$ be defined?
+Back: For some lower limit of integration $c$, $$A(x) = \int_c^x f(t) \,dt.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1765424504629-->
+END%%
+
+%%ANKI
+Basic
+How is an indefinite integral (with lower limit of integration say $c$) defined for $f(x) = x^2$?
+Back: As $$\int_c^x f(t) \,dt = \frac{x^3 - c^3}{3}.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1765424504638-->
 END%%
 
 ## Bibliography

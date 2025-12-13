@@ -1167,7 +1167,7 @@ struct foo {
 Back:
 ```c
 struct foo {
-  _padding : 6;  // 6 bits
+  _padding     : 6;  // 6 bits
   signed int c : 4;  // 4 bits
   signed int b : 2;  // 2 bits
   signed int a : 4;  // 4 bits

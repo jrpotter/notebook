@@ -1,10 +1,10 @@
 ---
 title: Regular Language
 TARGET DECK: Obsidian::STEM
-FILE TAGS: computation::regular
+FILE TAGS: computability::regular
 tags:
   - automaton
-  - computation
+  - computability
 ---
 
 ## Overview
@@ -13,7 +13,7 @@ tags:
 
 If $s$ is processed by finite automaton $M$ such that $M$ finishes in an accept state, we say $M$ **accepts** $s$. Otherwise $M$ **rejects** $s$. If $A$ is the set of all strings that $M$ accepts, we say that $A$ is the **language of machine $M$**, denoted $L(M) = A$. We say that $M$ **recognizes** $A$.
 
-A [[computation/index|language]] is called a **regular language** if a finite automaton recognizes it.
+A [[computability/index|language]] is called a **regular language** if a finite automaton recognizes it.
 
 %%ANKI
 Basic

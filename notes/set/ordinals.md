@@ -882,7 +882,7 @@ END%%
 %%ANKI
 Basic
 Is $\omega + \omega$ an initial ordinal? If not, why?
-Back: No. $\omega + \omega$ is equinumerous to $\omega$.
+Back: No. It is equinumerous to smaller ordinals, e.g. $\omega$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1760498296076-->
 END%%

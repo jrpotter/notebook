@@ -1,27 +1,20 @@
 ---
-title: Computability
+title: Computability Theory
 TARGET DECK: Obsidian::STEM
-FILE TAGS: computation
+FILE TAGS: computability
 tags:
-  - computation
+  - computability
 ---
 
 ## Overview
 
-**Computability theory** focuses on the classification of problems as either solvable or not. **Complexity theory** focuses on whether problems are easy or hard.
+**Computability theory** focuses on the classification of problems as either solvable or not.
 
 %%ANKI
 Cloze
-{1:Computability} focuses on the classification of problems as {2:solvable} or {2:not}.
+{1:Computability} theory focuses on the classification of problems as {2:solvable} or {2:not}.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764466135262-->
-END%%
-
-%%ANKI
-Cloze
-{1:Complexity} focuses on the classification of problems as {2:easy} or {2:hard}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764466135264-->
 END%%
 
 ## Alphabets

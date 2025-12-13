@@ -1,10 +1,10 @@
 ---
 title: Context-Free Language
 TARGET DECK: Obsidian::STEM
-FILE TAGS: computation::cfl
+FILE TAGS: computability::cfl
 tags:
   - cfl
-  - computation
+  - computability
   - grammar
 ---
 
@@ -19,7 +19,7 @@ A (nondeterministic) **pushdown automaton** (PDA) is a $6$-tuple $\langle Q, \Si
 5. $q_0 \in Q$ is the start state, and
 6. $F \subseteq Q$ is the set of accept states.
 
-A [[computation/index|language]] is called **context-free** if a pushdown automaton recognizes it.
+A [[computability/index|language]] is called **context-free** if a pushdown automaton recognizes it.
 
 %%ANKI
 Basic
@@ -1109,7 +1109,7 @@ END%%
 
 %%ANKI
 Cloze
-A reduction replaces the {right}-hand side of a rule with the {left}-hand side.
+A reduction replaces the {1:right}-hand side of a rule with the {1:left}-hand side.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761399802954-->
 END%%
@@ -1690,7 +1690,7 @@ END%%
 %%ANKI
 Basic
 Let $C$ be a CFL and $R$ be a regular language. What strategy is used to show $C \cap R$ is a CFL?
-Back: Construct a PDA that recognizes $C \cap R$.
+Back: Use the product construction to form a PDA that recognizes $C \cap R$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765128774933-->
 END%%

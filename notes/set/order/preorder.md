@@ -651,6 +651,119 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1724115335390-->
 END%%
 
+### Extremums
+
+A real-valued function $f$ is said to have an **absolute maximum** on a set $S$ if there is at least one point $c \in S$ such that $f(x) \leq f(x)$ for all $x \in S$. $f$ is said to have an **absolute minimum** on $S$ if there is at least one point $d \in S$ such that $f(d) \leq f(x)$ for all $x \in S$.
+
+$f$ is said to have a **relative maximum** at a point $c \in S$ if there is an open interval $I$ containing $c$ such that $f(x) \leq f(c)$ for all $x \in I \cap S$. Likewise, $f$ is said to have a **relative minimum** at a point $d \in S$ if there is an open interval $I$ containing $c$ such that $f(d) \leq f(x)$ for all $x \in I \cap S$.
+
+An **extremum** (or **extreme value**) of $f$ is either a relative maximum or a relative minimum of $f$.
+
+%%ANKI
+Basic
+The word "maximum" in calculus is associated with what two prefixes?
+Back: "Absolute" and "relative".
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1763783457114-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a real-valued function defined on set $S$. What does it mean for $f$ to have an absolute maximum?
+Back: There exists a $c \in S$ such that $f(x) \leq f(c)$ for all $x \in S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1763783457125-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a real-valued function defined on set $S$. What does it mean for $f$ to have an relative maximum at $c \in S$?
+Back: There exists an open interval $I$ such that $f(x) \leq f(c)$ for all $x \in I \cap S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1763783457128-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a real-valued function defined on set $S$. What does it mean for $f$ to have an absolute minimum?
+Back: There exists a $c \in S$ such that $f(x) \geq f(c)$ for all $x \in S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1763783457132-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a real-valued function defined on set $S$. What does it mean for $f$ to have an relative minimum at $c \in S$?
+Back: There exists an open interval $I$ such that $f(x) \geq f(c)$ for all $x \in I \cap S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1763783457135-->
+END%%
+
+%%ANKI
+Cloze
+A {relative} maximum at $c$ is an {absolute} maximum in some {neighborhood} of $c$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1763783457139-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a real-valued function with a relative minimum at $c$. Is $f(c)$ an absolute minimum?
+Back: Not necessarily.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1763783457142-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a real-valued function with an absolute minimum at $c$. Is $f(c)$ a relative minimum?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1763783457146-->
+END%%
+
+%%ANKI
+Basic
+What is an extremum of real-valued function $f$?
+Back: A relative maximum or minimum of $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1763783457150-->
+END%%
+
+%%ANKI
+Cloze
+Let $f$ be a real-valued function. An {extremum} of $f$ is also known as an {extreme value} of $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1763783457155-->
+END%%
+
+%%ANKI
+Basic
+What are the extrema of the following function?
+![[sin-extreme-values.png]]
+Back: The points at $x = 0$, $x = \pi / 2$, and $x = \pi$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1763783457161-->
+END%%
+
+%%ANKI
+Basic
+What are the relative minimums of the following function?
+![[sin-extreme-values.png]]
+Back: The points at $x = 0$ and $x = \pi$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1763783457167-->
+END%%
+
+%%ANKI
+Basic
+What are the relative maximums of the following function?
+![[sin-extreme-values.png]]
+Back: The point at $x = \pi / 2$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1763783457173-->
+END%%
+
 ### Supremums and Infimums
 
 Let $P$ be a preordered set with order relation $\leq$.

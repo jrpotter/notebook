@@ -1625,7 +1625,7 @@ END%%
 %%ANKI
 Basic
 $\mathbb{R}$ is equinumerous to the power set of what?
-Back: $\omega$
+Back: $\mathbb{N}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1737422908963-->
 END%%

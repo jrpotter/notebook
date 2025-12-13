@@ -147,117 +147,172 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1746315403967-->
 END%%
 
-## Extremum
+## Fundamental Theorem of Calculus
 
-A real-valued function $f$ is said to have an **absolute maximum** on a set $S$ if there is at least one point $c \in S$ such that $f(x) \leq f(x)$ for all $x \in S$. $f$ is said to have an **absolute minimum** on $S$ if there is at least one point $d \in S$ such that $f(d) \leq f(x)$ for all $x \in S$.
-
-$f$ is said to have a **relative maximum** at a point $c \in S$ if there is an open interval $I$ containing $c$ such that $f(x) \leq f(c)$ for all $x \in I \cap S$. Likewise, $f$ is said to have a **relative minimum** at a point $d \in S$ if there is an open interval $I$ containing $c$ such that $f(d) \leq f(x)$ for all $x \in I \cap S$.
-
-An **extremum** (or **extreme value**) of $f$ is either a relative maximum or a relative minimum of $f$.
+The fundamental theorem of calculus is used to connect the concepts of [[derivatives|differentiation]] and [[riemann|integration]] together, showing they are effectively inverse operations of one another. It also provides a much simpler method of computing Riemann integrals.
 
 %%ANKI
 Basic
-The word "maximum" in calculus is associated with what two prefixes?
-Back: "Absolute" and "relative".
+Which theorem is used to relate primitives to indefinite integrals?
+Back: The fundamental theorem of calculus.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1763783457114-->
+<!--ID: 1765583068963-->
 END%%
 
 %%ANKI
 Basic
-Let $f$ be a real-valued function defined on set $S$. What does it mean for $f$ to have an absolute maximum?
-Back: There exists a $c \in S$ such that $f(x) \leq f(c)$ for all $x \in S$.
+Assume $g$ is continuous everywhere. Given the following, what does $f'(x)$ evaluate to? $$f(x) = \int_0^x g(t) \,dt$$
+Back: $f'(x) = g(x)$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1763783457125-->
+<!--ID: 1765583068972-->
 END%%
 
 %%ANKI
 Basic
-Let $f$ be a real-valued function defined on set $S$. What does it mean for $f$ to have an relative maximum at $c \in S$?
-Back: There exists an open interval $I$ such that $f(x) \leq f(c)$ for all $x \in I \cap S$.
+Assume $g$ is continuous everywhere. Given the following, what does $f'(x)$ evaluate to? $$f(x) = \int_0^x xg(t) \,dt$$
+Back: $f'(x) = \int_0^x g(t) \,dt + xg(x)$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1763783457128-->
+<!--ID: 1765583068977-->
 END%%
+
+### Part One
+
+Let $f$ be integrable on $[a, x]$ for all $x \in [a, b]$. Let $c$ be such that $a \leq c \leq b$ and define [[riemann#Indefinite Integrals|indefinite integral]] $F$ as follows: $$F(x) = \int_c^x f(t) \,dt \quad \text{if} \quad a \leq x \leq b.$$
+
+Then for all $x \in (a, b)$ where $f$ is continuous, derivative $F'(x)$ exists and $F'(x) = f(x)$.
+
+![[fundamental-theorem-calculus-I.png]]
 
 %%ANKI
 Basic
-Let $f$ be a real-valued function defined on set $S$. What does it mean for $f$ to have an absolute minimum?
-Back: There exists a $c \in S$ such that $f(x) \geq f(c)$ for all $x \in S$.
+Roughly speaking, and in plain English, what does the first fundamental theorem of calculus state?
+Back: Integration and differentiation are inverse operations of one another.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1763783457132-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be a real-valued function defined on set $S$. What does it mean for $f$ to have an relative minimum at $c \in S$?
-Back: There exists an open interval $I$ such that $f(x) \geq f(c)$ for all $x \in I \cap S$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1763783457135-->
+<!--ID: 1765424504641-->
 END%%
 
 %%ANKI
 Cloze
-A {relative} maximum at $c$ is an {absolute} maximum in some {neighborhood} of $c$.
+Let $f$ be {1:integrable} on {1:$[a, x]$} for all $x$ in {1:$[a, b]$}. Let $c$ be such that $a \leq c \leq b$ and define {2:indefinite integral} $F$ as follows: {2:$$F(x) = \int_c^x f(t) \,dt \quad \text{if} \quad a \leq x \leq b.$$} Then for all $x$ in {3:$(a, b)$} where {3:$f$ is continuous}, the derivative {4:$F'(x)$} exists and equals {4:$f(x)$}.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1763783457139-->
+<!--ID: 1765424504643-->
 END%%
 
 %%ANKI
 Basic
-Let $f$ be a real-valued function with a relative minimum at $c$. Is $f(c)$ an absolute minimum?
-Back: Not necessarily.
+Which theorem is the following a rough paraphrasing of?
+
+> Integration and differentation are inverse operations of one another.
+
+Back: The fundamental theorem of calculus, part one.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1763783457142-->
+<!--ID: 1765424784776-->
 END%%
 
 %%ANKI
 Basic
-Let $f$ be a real-valued function with an absolute minimum at $c$. Is $f(c)$ a relative minimum?
-Back: Yes.
+The fundamental theorem of calculus guarantees an integrable function has a primitive at what points?
+Back: Points of continuity.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1763783457146-->
+<!--ID: 1765455794477-->
 END%%
 
 %%ANKI
 Basic
-What is an extremum of real-valued function $f$?
-Back: A relative maximum or minimum of $f$.
+In the following visualization of the first fundamental theorem of calculus, what *difference* does the shaded portion correspond to?
+![[fundamental-theorem-calculus-I.png]]
+Back: $F(x + h) - F(x)$ where $F$ is an indefinite integral of $f$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1763783457150-->
+<!--ID: 1765455794486-->
+END%%
+
+%%ANKI
+Basic
+In the following visualization of the first fundamental theorem of calculus, what definite integral does the shaded portion correspond to?
+![[fundamental-theorem-calculus-I.png]]
+Back: $\int_x^{x+h} f(t) \,dt$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1765455794489-->
+END%%
+
+%%ANKI
+Basic
+In the following visualization of the first fundamental theorem of calculus, what is the area of the bordered rectangle?
+![[fundamental-theorem-calculus-I.png]]
+Back: $hf(z)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1765455794492-->
+END%%
+
+%%ANKI
+Basic
+In the following visualization of the first fundamental theorem of calculus, what does $hf(z)$ equal?
+![[fundamental-theorem-calculus-I.png]]
+Back: $\int_x^{x+h} f(t) \,dt$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1765455794495-->
+END%%
+
+%%ANKI
+Basic
+In the following visualization of the first fundamental theorem of calculus, what theorem proves existence of $z$?
+![[fundamental-theorem-calculus-I.png]]
+Back: The MVT for integrals.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1765455794499-->
+END%%
+
+%%ANKI
+Basic
+Using Leibniz's notation for primitives, how do we symbolically denote the first fundamental theorem of calculus?
+Back: $$\int f(x) \,dx = \int_c^x f(t) \,dt + C$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1765587837837-->
+END%%
+
+### Part Two
+
+Assume $f$ is continuous on $(a, b)$ and $F$ is a [[derivatives#Primitives|primitive]] of $f$ on $(a, b)$. Then $$\int_a^b f(x) \,dx = F(b) - F(a).$$
+
+%%ANKI
+Basic
+Roughly speaking, and in plain English, what does the second fundamental theorem of calculus state?
+Back: A definite integral of $f$ equals the difference of $f$'s primitive at the endpoints.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1765452309780-->
 END%%
 
 %%ANKI
 Cloze
-Let $f$ be a real-valued function. An {extremum} of $f$ is also known as an {extreme value} of $f$.
+Assume $f$ is {1:continuous} on {1:$(a, b)$} and $F$ is a {2:primitive} of $f$ on $(a, b)$. Then the second fundamental theorem of calculus states that {3:$$\int_a^b f(x) \,dx = F(b) - F(a).$$}
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1763783457155-->
+<!--ID: 1765452309787-->
 END%%
 
 %%ANKI
 Basic
-What are the extrema of the following function?
-![[sin-extreme-values.png]]
-Back: The points at $x = 0$, $x = \pi / 2$, and $x = \pi$.
+Which theorem is the following a rough paraphrasing of?
+
+> Computing the value of an integral can be done by simple subtraction.
+
+Back: The fundamental theorem of calculus, part two.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1763783457161-->
+<!--ID: 1765455042107-->
 END%%
 
 %%ANKI
 Basic
-What are the relative minimums of the following function?
-![[sin-extreme-values.png]]
-Back: The points at $x = 0$ and $x = \pi$.
+The fundamental theorems of calculus reduce the problem of evaluating an integral to what simpler problem?
+Back: Finding a primitive.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1763783457167-->
+<!--ID: 1765455042117-->
 END%%
 
 %%ANKI
 Basic
-What are the relative maximums of the following function?
-![[sin-extreme-values.png]]
-Back: The point at $x = \pi / 2$.
+Using Leibniz's notation for primitives, how do we symbolically denote the first fundamental theorem of calculus?
+Back: $$\int_a^b f(x) \,dx = \int f(x) \,dx \,\bigg\rvert_a^b$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1763783457173-->
 END%%
 
 ## Bibliography

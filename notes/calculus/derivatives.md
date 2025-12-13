@@ -285,6 +285,14 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1761662237399-->
 END%%
 
+%%ANKI
+Basic
+*Why* is differentiation defined with respect to open intervals?
+Back: Because limits are defined with respect to neighborhoods around a point.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1765455042122-->
+END%%
+
 ## Differentials
 
 Leibniz preferred the following notation for defining a derivative: $$\frac{dy}{dx} = \lim_{\Delta x \rightarrow 0} \frac{\Delta y}{\Delta x}$$
