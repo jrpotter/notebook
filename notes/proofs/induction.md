@@ -307,7 +307,7 @@ Let $<$ be a strict [[well|well ordering]] on set $A$. We say that $B \subseteq 
 
 The **transfinite induction principle** states that if $<$ is a strict well ordering on set $A$, any $<$-inductive subset of $A$ must coincide with $A$.
 
-The "converse" also holds true. Assume $<$ is a strict total ordering on $A$. Furthermore, assume the only $<$-inductive subset of $A$ is $A$ itself. Then $<$ is a well ordering on $A$.
+The "converse" also holds true. Assume $<$ is a strict [[total|total ordering]] on $A$. Furthermore, assume the only $<$-inductive subset of $A$ is $A$ itself. Then $<$ is a well ordering on $A$.
 
 %%ANKI
 Basic

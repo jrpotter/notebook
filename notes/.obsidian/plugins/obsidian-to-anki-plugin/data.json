@@ -2183,9 +2183,9 @@
     "_journal/2025-12-08.md": "ae4f547520d4f25953dfb8176e65915c",
     "_journal/2025-12/2025-12-07.md": "136491ac13ee0ca2b5382fe84059ef5d",
     "_journal/2025-12/2025-12-07 1.md": "136491ac13ee0ca2b5382fe84059ef5d",
-    "computability/turing.md": "1b80628883446ee89e9d031153af9836",
+    "computability/turing.md": "a022ceb8869ba9602a2c51866a59a855",
     "computability/regular.md": "2e1b4ef62687e3a1fbc9d6438448bed7",
-    "computability/decidability.md": "dd2fcd62279fe99fe67c8ca49f87fb30",
+    "computability/decidability.md": "883896b69401f0dfdd851c80ef3d410b",
     "_journal/2025-12-09.md": "5f73a6a4874acec65ea3b40a4aefddae",
     "_journal/2025-12/2025-12-08.md": "762822f1cab34e5596b486eb586df9dd",
     "complexity/order_growth.md": "60352c0fa0906112b7b98142786538d1",
@@ -2195,9 +2195,10 @@
     "_journal/2025-12/2025-12-09.md": "5f73a6a4874acec65ea3b40a4aefddae",
     "_journal/2025-12-11.md": "cdc7a5d98476e1f5dc06959b8d5089ca",
     "_journal/2025-12/2025-12-10.md": "d3993036e96e6e903cabed5315711d31",
-    "_journal/2025-12-12.md": "ce406e58132ce90fadf64f8826a795f6",
+    "_journal/2025-12-12.md": "2cf8f221aaf678f1856e83e3dcd102eb",
     "_journal/2025-12/2025-12-11.md": "87d7c6fbcc3b15ed3da89428a0e76ab1",
-    "calculus/primitives.md": "d84376dab6c96a03905a8297af06577d"
+    "calculus/primitives.md": "d84376dab6c96a03905a8297af06577d",
+    "computability/context-sensitive.md": "cd37487cb130e0da6bcc066a2e4387a9"
   },
   "fields_dict": {
     "Basic": [

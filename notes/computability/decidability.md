@@ -150,6 +150,7 @@ The following languages are decidable:
 * $A_{\text{NFA}} = \{\langle N, w \rangle \mid N \text{ is an NFA and } N \text{ accepts } w\}$
 * $A_{\text{REX}} = \{\langle R, w \rangle \mid R \text{ is a regular expression and } R \text{ generates } w\}$
 * $A_\text{CFG} = \{ \langle G, w \rangle \mid G \text{ is a CFG and } G \text{ generates } w \}$
+* $A_{\text{LBA}} = \{\langle M, w \rangle \mid M \text{ is an LBA and } M \text{ accepts } w \}$
 * $E_{\text{DFA}} = \{ D \mid D \text{ is a DFA and } L(D) = \varnothing \}$
 * $E_{\text{CFG}} = \{G \mid G \text{ is a CFG and } L(G) = \varnothing \}$
 * $EQ_{\text{DFA}} = \{\langle D_1, D_2 \rangle \mid D_1 \text{ and } D_2 \text{ are DFAs and } L(D_1) = L(D_2) \}$
@@ -248,6 +249,30 @@ How does Sipser define language $A_{\text{CFG}}$?
 Back: $A_{\text{CFG}} = \{\langle G, w \rangle \mid G \text{ is a CFG and } G \text{ generates } w\}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764991214022-->
+END%%
+
+%%ANKI
+Basic
+Is the following language decidable? $$A_{\text{LBA}} = \{\langle M, w \rangle \mid M \text{ is an LBA and } M \text{ accepts } w \}$$
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765592499854-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{\langle M, w \rangle \mid M \text{ is an LBA and } M \text{ accepts } w \}$$
+Back: $A_{\text{LBA}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765592499863-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $A_{\text{LBA}}$?
+Back: $A_{\text{LBA}} = \{\langle M, w \rangle \mid M \text{ is an LBA and } M \text{ accepts } w\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765592499866-->
 END%%
 
 %%ANKI

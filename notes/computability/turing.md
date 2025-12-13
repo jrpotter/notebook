@@ -19,17 +19,6 @@ A **Turing machine** is a $7$-tuple $\langle Q, \Sigma, \Gamma, \delta, q_0, q_a
 6. $q_a$ is the accept state, and
 7. $q_r$ is the reject state, where $q_r \neq q_a$.
 
-A **configuration** of a Turing machine $M$ refers to $M$'s current state, current tape contents, and current head location. For a state $q$ and strings $u$ and $v$ over tape alphabet $\Gamma$, we write $u\,q\,v$ for the configuration where the current state is $q$, the current tape contents is $uv$, and the current head location is the first symbol of $v$. A few configurations are notable:
-
-* The **starting configuration on input $w$** is $q_0\,w$.
-* An **accepting configuration** is a configuration with the accept state.
-* A **rejecting configuration** is a configuration with the reject state.
-* A **halting configuration** is either an accepting configuration or rejecting configuration.
-
-We say configuration $C_1$ **yields** configuration $C_2$ if the Turing machine in question can reach $C_2$ from $C_1$ in a single step.
-
-A Turing machine $M$ **accepts** input $w$ if a sequence of configurations, beginning with the starting configuration and ending in an accepting configuration, exists. The collection of strings that $M$ accepts is the **language of $M$**, denoted $L(M)$.
-
 A language is **Turing-recognizable** (also known as **recursively enumerable**) if a Turing machine recognizes it. A language is **co-Turing-recognizable** if it is the complement of a Turing-recognizable language.
 
 %%ANKI
@@ -291,177 +280,6 @@ END%%
 
 %%ANKI
 Basic
-A Turing machine configuration is a tuple of how many elements?
-Back: Three.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764520525137-->
-END%%
-
-%%ANKI
-Basic
-A configuration of a Turing machine comprises what three components?
-Back:
-1. The current state.
-2. The current tape contents.
-3. The current head position.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764520525140-->
-END%%
-
-%%ANKI
-Basic
-How is the following schematic rewritten using Turing machine configuration notation?
-![[turing-machine-example-configuration.png]]
-Back: $1011q_701111$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764520525143-->
-END%%
-
-%%ANKI
-Basic
-Let $M$ be a Turing machine with configuration $u\,q\,v$. What state is $M$ in?
-Back: $q$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764520525146-->
-END%%
-
-%%ANKI
-Basic
-Let $M$ be a Turing machine with configuration $u\,q\,v$. What are the current contents of $M$'s tape?
-Back: $uv$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764520525150-->
-END%%
-
-%%ANKI
-Basic
-Let $M$ be a Turing machine with configuration $u\,q\,v$. What is $M$'s current head position?
-Back: Over the first symbol of $v$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764520525153-->
-END%%
-
-%%ANKI
-Cloze
-Let $C$ be the current configuration of Turing machine $M$. We say $C$ {yields} configuration $D$ if {$M$ can reach $D$ from $C$ in a single step}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764520525156-->
-END%%
-
-%%ANKI
-Basic
-Let a Turing machine be in configuration $ua\,q_i\,bv$. What configuration does $\delta(q_i, b) = (q_j, c, L)$ yield?
-Back: $u\,q_j\,acv$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764554902765-->
-END%%
-
-%%ANKI
-Basic
-Let a Turing machine be in configuration $ua\,q_i\,bv$. What configuration does $\delta(q_i, b) = (q_j, c, R)$ yield?
-Back: $uac\,q_j\,v$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764554902770-->
-END%%
-
-%%ANKI
-Basic
-Let a Turing machine be in configuration $q_i\,bv$. What configuration does $\delta(q_i, b) = (q_j, c, L)$ yield?
-Back: $q_j\,cv$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764554902774-->
-END%%
-
-%%ANKI
-Basic
-Consider Turing machine $\langle Q, \Sigma, \Gamma, \delta, q_0, q_a, q_r \rangle$. How is its start configuration on input $w$ denoted?
-Back: $q_0\,w$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764554902778-->
-END%%
-
-%%ANKI
-Basic
-Consider Turing machine $\langle Q, \Sigma, \Gamma, \delta, q_0, q_a, q_r \rangle$. How is an accepting configuration denoted?
-Back: As any configuration with current state $q_a$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764554902782-->
-END%%
-
-%%ANKI
-Basic
-Consider Turing machine $\langle Q, \Sigma, \Gamma, \delta, q_0, q_a, q_r \rangle$. How is a rejecting configuration denoted?
-Back: As any configuration with current state $q_r$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764554902786-->
-END%%
-
-%%ANKI
-Basic
-What is a halting configuration?
-Back: Either an accepting configuration or rejecting configuration.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764554902789-->
-END%%
-
-%%ANKI
-Basic
-Which Turing machine configurations cannot yield other configurations?
-Back: Halting configurations.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764554902793-->
-END%%
-
-%%ANKI
-Basic
-How many starting configurations does a Turing machine have on input $w$?
-Back: Exactly one.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764554902796-->
-END%%
-
-%%ANKI
-Basic
-How many accepting configurations does a Turing machine have on input $w$?
-Back: At least one.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764554902800-->
-END%%
-
-%%ANKI
-Basic
-How many rejecting configurations does a Turing machine have on input $w$?
-Back: At least one.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764554902803-->
-END%%
-
-%%ANKI
-Basic
-When processing a Turing machine on some input, how many outcomes are possible?
-Back: Three.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764556414656-->
-END%%
-
-%%ANKI
-Basic
-When processing a Turing machine on some input, what three outcomes are possible?
-Back: Accepting, rejecting, or looping (i.e. not halting).
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764556414658-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for a Turing maching to fail to accept an input?
-Back: Either it enters a rejecting configuration or it fails to halt.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764556414659-->
-END%%
-
-%%ANKI
-Basic
 What is a Turing-recognizable language?
 Back: A language recognized by some Turing machine.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
@@ -635,9 +453,193 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1765251175099-->
 END%%
 
+## Configurations
+
+A **configuration** of a Turing machine $M$ refers to $M$'s current state, current tape contents, and current head location. For a state $q$ and strings $u$ and $v$ over tape alphabet $\Gamma$, we write $u\,q\,v$ for the configuration where the current state is $q$, the current tape contents is $uv$, and the current head location is the first symbol of $v$. A few configurations are notable:
+
+* The **starting configuration on input $w$** is $q_0\,w$.
+* An **accepting configuration** is a configuration with the accept state.
+* A **rejecting configuration** is a configuration with the reject state.
+* A **halting configuration** is either an accepting configuration or rejecting configuration.
+
+We say configuration $C_1$ **yields** configuration $C_2$ if the Turing machine in question can reach $C_2$ from $C_1$ in a single step.
+
+A Turing machine $M$ **accepts** input $w$ if a sequence of configurations, beginning with the starting configuration and ending in an accepting configuration, exists.
+
+%%ANKI
+Basic
+A Turing machine configuration is a tuple of how many elements?
+Back: Three.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764520525137-->
+END%%
+
+%%ANKI
+Basic
+A configuration of a Turing machine comprises what three components?
+Back:
+1. The current state.
+2. The current tape contents.
+3. The current head position.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764520525140-->
+END%%
+
+%%ANKI
+Basic
+How is the following schematic rewritten using Turing machine configuration notation?
+![[turing-machine-example-configuration.png]]
+Back: $1011q_701111$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764520525143-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a Turing machine with configuration $u\,q\,v$. What state is $M$ in?
+Back: $q$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764520525146-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a Turing machine with configuration $u\,q\,v$. What are the current contents of $M$'s tape?
+Back: $uv$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764520525150-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a Turing machine with configuration $u\,q\,v$. What is $M$'s current head position?
+Back: Over the first symbol of $v$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764520525153-->
+END%%
+
+%%ANKI
+Cloze
+Let $C$ be the current configuration of Turing machine $M$. We say $C$ {yields} configuration $D$ if {$M$ can reach $D$ from $C$ in a single step}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764520525156-->
+END%%
+
+%%ANKI
+Basic
+Let a Turing machine be in configuration $ua\,q_i\,bv$. What configuration does $\delta(q_i, b) = (q_j, c, L)$ yield?
+Back: $u\,q_j\,acv$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764554902765-->
+END%%
+
+%%ANKI
+Basic
+Let a Turing machine be in configuration $ua\,q_i\,bv$. What configuration does $\delta(q_i, b) = (q_j, c, R)$ yield?
+Back: $uac\,q_j\,v$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764554902770-->
+END%%
+
+%%ANKI
+Basic
+Let a Turing machine be in configuration $q_i\,bv$. What configuration does $\delta(q_i, b) = (q_j, c, L)$ yield?
+Back: $q_j\,cv$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764554902774-->
+END%%
+
+%%ANKI
+Basic
+Consider Turing machine $\langle Q, \Sigma, \Gamma, \delta, q_0, q_a, q_r \rangle$. How is its start configuration on input $w$ denoted?
+Back: $q_0\,w$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764554902778-->
+END%%
+
+%%ANKI
+Basic
+Consider Turing machine $\langle Q, \Sigma, \Gamma, \delta, q_0, q_a, q_r \rangle$. How is an accepting configuration denoted?
+Back: As any configuration with current state $q_a$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764554902782-->
+END%%
+
+%%ANKI
+Basic
+Consider Turing machine $\langle Q, \Sigma, \Gamma, \delta, q_0, q_a, q_r \rangle$. How is a rejecting configuration denoted?
+Back: As any configuration with current state $q_r$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764554902786-->
+END%%
+
+%%ANKI
+Basic
+What is a halting configuration?
+Back: Either an accepting configuration or rejecting configuration.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764554902789-->
+END%%
+
+%%ANKI
+Basic
+Which Turing machine configurations cannot yield other configurations?
+Back: Halting configurations.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764554902793-->
+END%%
+
+%%ANKI
+Basic
+How many starting configurations does a Turing machine have on input $w$?
+Back: Exactly one.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764554902796-->
+END%%
+
+%%ANKI
+Basic
+How many accepting configurations does a Turing machine have on input $w$?
+Back: At least one.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764554902800-->
+END%%
+
+%%ANKI
+Basic
+How many rejecting configurations does a Turing machine have on input $w$?
+Back: At least one.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764554902803-->
+END%%
+
+%%ANKI
+Basic
+When processing a Turing machine on some input, how many outcomes are possible?
+Back: Three.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764556414656-->
+END%%
+
+%%ANKI
+Basic
+When processing a Turing machine on some input, what three outcomes are possible?
+Back: Accepting, rejecting, or looping (i.e. not halting).
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764556414658-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a Turing maching to fail to accept an input?
+Back: Either it enters a rejecting configuration or it fails to halt.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764556414659-->
+END%%
+
 ## Variants
 
-There exist many different variants of Turing machines, all of which are equivalent in power. The **robustness** of a computing model is a measure of the models invariance to certain changes. Turing machines are especially robust.
+There exist many different variants of Turing machines, most of which are equivalent in power. The **robustness** of a computing model is a measure of the models invariance to certain changes. Turing machines are especially robust.
 
 %%ANKI
 Basic
@@ -650,7 +652,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for Turing machines to be robust?
-Back: Variants of the Turing machine are all equivalent in power.
+Back: Variants of the Turing machine tend to be equivalent in power.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764735547809-->
 END%%
@@ -666,6 +668,8 @@ END%%
 ### Multitaped
 
 A **multitape Turing machine** is a Turing machine with several tapes. Each tape has its own head for reading and writing, with the initial input set on the first tape and other tapes starting blank. A multitape Turing machine with $k$ tapes has transition function: $$\delta \colon Q \times \Gamma^k \rightarrow Q \times \Gamma^k \times \{L, R\}^k.$$
+
+Multitape Turing machines are equivalent in power to a ordinary Turing machines.
 
 %%ANKI
 Basic
@@ -727,7 +731,7 @@ END%%
 
 A **nondeterminstic Turing machine** (NTM) is a Turing machine that allows ambiguous transitions from a given state. At any point in computation, the machine may proceed according to several possibilities. An NTM has transition function: $$\delta \colon Q \times \Gamma \rightarrow \mathscr{P}(Q \times \Gamma \times \{L, R\}).$$
 
-A nondeterminisitic Turing machine is a [[decidability|decider]] if every branch of computation halts.
+Nondeterministic Turing machines are equivalent in power to ordinary Turing machines. They are [[decidability|deciders]] if every branch of computation halts.
 
 %%ANKI
 Basic
@@ -796,6 +800,8 @@ END%%
 ### Enumerators
 
 An **enumerator** is a variant of a Turing machine. Like a Turing machine, it has an infinite tape and a finite state control. Unlike a Turing machine, it also has a printer as an output device for printing strings. It begins with a blank input tape and prints the strings, one at a time, in its corresponding language.
+
+Enumerators are equivalent in power to Turing machines.
 
 %%ANKI
 Cloze
