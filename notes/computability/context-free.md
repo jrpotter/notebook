@@ -1249,7 +1249,7 @@ END%%
 
 %%ANKI
 Basic
-When does every valid string have exactly one handle?
+When does every valid string have at most one handle?
 Back: When the underlying grammar is unambiguous.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761705499688-->

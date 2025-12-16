@@ -1931,7 +1931,7 @@ END%%
 %%ANKI
 Basic
 Let $G = \langle V, E \rangle$ be a graph. What is the sum of its adjacency-list representation's list lengths?
-Back: N/A. This depends on whether $G$ is a directed or undirected graph.
+Back: Indeterminate. This depends on whether $G$ is a directed or undirected graph.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1724614579429-->
 END%%

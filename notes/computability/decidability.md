@@ -10,9 +10,18 @@ tags:
 
 A Turing machine that halts on all inputs is called a **decider**. A decider that recognizes some language is said to **decide** that language. A language is **Turing-decidable** (or **decidable** or **recursive**) if a Turing machine decides it.
 
-A language is **undecidable** if no Turing machine can decide it.
-
 ![[regular-cfl-decidable-recognizable.png]]
+
+Languages known to be decidable include:
+
+* $A_{\text{DFA}} = \{\langle D, w \rangle \mid D \text{ is a DFA and } D \text{ accepts } w\}$
+* $A_{\text{NFA}} = \{\langle N, w \rangle \mid N \text{ is an NFA and } N \text{ accepts } w\}$
+* $A_{\text{REX}} = \{\langle R, w \rangle \mid R \text{ is a regular expression and } R \text{ generates } w\}$
+* $A_\text{CFG} = \{ \langle G, w \rangle \mid G \text{ is a CFG and } G \text{ generates } w \}$
+* $A_{\text{LBA}} = \{\langle M, w \rangle \mid M \text{ is an LBA and } M \text{ accepts } w \}$
+* $E_{\text{DFA}} = \{ D \mid D \text{ is a DFA and } L(D) = \varnothing \}$
+* $E_{\text{CFG}} = \{G \mid G \text{ is a CFG and } L(G) = \varnothing \}$
+* $EQ_{\text{DFA}} = \{\langle D_1, D_2 \rangle \mid D_1 \text{ and } D_2 \text{ are DFAs and } L(D_1) = L(D_2) \}$
 
 %%ANKI
 Cloze
@@ -139,21 +148,6 @@ Back: Not necessarily.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765128774946-->
 END%%
-
-## Examples
-
-### Decidable
-
-The following languages are decidable:
-
-* $A_{\text{DFA}} = \{\langle D, w \rangle \mid D \text{ is a DFA and } D \text{ accepts } w\}$
-* $A_{\text{NFA}} = \{\langle N, w \rangle \mid N \text{ is an NFA and } N \text{ accepts } w\}$
-* $A_{\text{REX}} = \{\langle R, w \rangle \mid R \text{ is a regular expression and } R \text{ generates } w\}$
-* $A_\text{CFG} = \{ \langle G, w \rangle \mid G \text{ is a CFG and } G \text{ generates } w \}$
-* $A_{\text{LBA}} = \{\langle M, w \rangle \mid M \text{ is an LBA and } M \text{ accepts } w \}$
-* $E_{\text{DFA}} = \{ D \mid D \text{ is a DFA and } L(D) = \varnothing \}$
-* $E_{\text{CFG}} = \{G \mid G \text{ is a CFG and } L(G) = \varnothing \}$
-* $EQ_{\text{DFA}} = \{\langle D_1, D_2 \rangle \mid D_1 \text{ and } D_2 \text{ are DFAs and } L(D_1) = L(D_2) \}$
 
 %%ANKI
 Basic
@@ -347,165 +341,6 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1764991470779-->
 END%%
 
-### Undecidable
-
-The following languages are undecidable:
-
-* $A_{\text{TM}} = \{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ accepts } w \}$
-* $E_{\text{TM}} = \{M \mid M \text{ is a TM and } L(M) = \varnothing \}$
-* $EQ_{\text{CFG}} = \{ \langle G_1, G_2 \rangle \mid G_1 \text{ and } G_2 \text{ are CFGs and } L(G_1) = L(G_2) \}$
-* $EQ_{\text{TM}} = \{ \langle M_1, M_2 \rangle \mid M_1 \text{ and } M_2 \text{ are TMs and } L(M_1) = L(M_2) \}$
-
-%%ANKI
-Basic
-Is the following language decidable? $$\{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ accepts } w \}$$
-Back: No.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764938068692-->
-END%%
-
-%%ANKI
-Basic
-What name does Sipser give the following language? $$\{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ accepts } w \}$$
-Back: $A_{\text{TM}}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764989724279-->
-END%%
-
-%%ANKI
-Basic
-How does Sipser define language $A_{\text{TM}}$?
-Back: $A_{\text{TM}} = \{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ accepts } w \}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764991214024-->
-END%%
-
-%%ANKI
-Basic
-In proving the undecidability of $A_{\text{TM}}$, what contradiction is formed?
-Back: Constructing a TM that accepts its own description iff it rejects its own description.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764938068707-->
-END%%
-
-%%ANKI
-Basic
-What proof strategy is used to show undecidability of $A_{\mathop{TM}}$?
-Back: Diagonalization.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764938068711-->
-END%%
-
-%%ANKI
-Basic
-Is the following language decidable? $$\{M \mid M \text{ is a TM and } L(M) = \varnothing \}$$
-Back: No.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764991214039-->
-END%%
-
-%%ANKI
-Basic
-What name does Sipser give the following language? $$\{M \mid M \text{ is a TM and } L(M) = \varnothing \}$$
-Back: $E_{\text{TM}}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764991214042-->
-END%%
-
-%%ANKI
-Basic
-How does Sipser define language $E_{\text{TM}}$?
-Back: $E_{\text{TM}} = \{M \mid M \text{ is a TM and } L(M) = \varnothing \}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764991402516-->
-END%%
-
-%%ANKI
-Basic
-Is the following language decidable? $$\{ \langle G_1, G_2 \rangle \mid G_1 \text{ and } G_2 \text{ are CFGs and } L(G_1) = L(G_2) \}$$
-Back: No.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764991402525-->
-END%%
-
-%%ANKI
-Basic
-What name does Sipser give the following language? $$\{ \langle G_1, G_2 \rangle \mid G_1 \text{ and } G_2 \text{ are CFGs and } L(G_1) = L(G_2) \}$$
-Back: $EQ_{\text{CFG}}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764991402528-->
-END%%
-
-%%ANKI
-Basic
-How does Sipser define language $EQ_{\text{CFG}}$?
-Back: $EQ_{\text{CFG}} = \{ \langle G_1, G_2 \rangle \mid G_1 \text{ and } G_2 \text{ are CFGs and } L(G_1) = L(G_2) \}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764991470786-->
-END%%
-
-%%ANKI
-Basic
-Is the following language decidable? $$\{ \langle M_1, M_2 \rangle \mid M_1 \text{ and } M_2 \text{ are TMs and } L(M_1) = L(M_2) \}$$
-Back: No.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764991402531-->
-END%%
-
-%%ANKI
-Basic
-What name does Sipser give the following language? $$\{ \langle M_1, M_2 \rangle \mid M_1 \text{ and } M_2 \text{ are TMs and } L(M_1) = L(M_2) \}$$
-Back: $EQ_{\text{TM}}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764991402533-->
-END%%
-
-%%ANKI
-Basic
-How does Sipser define language $EQ_{\text{TM}}$?
-Back: $EQ_{\text{TM}} = \{ \langle M_1, M_2 \rangle \mid M_1 \text{ and } M_2 \text{ are TMs and } L(M_1) = L(M_2) \}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764991470791-->
-END%%
-
-## Halting Problem
-
-The **halting problem** refers to the problem of determining, from a description of an arbitrary computer program and an input, whether the program will eventually halt. In particular, it refers to the decidability of language $$A = \{\langle M, w \rangle \mid M \text{ is a Turing machine and } M \text{ halts on } w\}.$$
-
-It is the classic example of an undecidable problem.
-
-%%ANKI
-Basic
-What is the quintessential example of an undecidable problem?
-Back: The halting problem.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764938068695-->
-END%%
-
-%%ANKI
-Basic
-*What* is the halting problem?
-Back: Given a description of an arbitrary program and input, deciding whether the program will halt on said input.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764938068698-->
-END%%
-
-%%ANKI
-Basic
-In set-theoretic notation, what language is the halting problem concerned with?
-Back: $\{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ halts on } w \}$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764938068701-->
-END%%
-
-%%ANKI
-Basic
-The halting problem is usually used as an example of what?
-Back: An undecidable language.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764938068704-->
-END%%
-
 ## Closure Operations
 
 Let $A$ and $B$ be decidable languages. Such languages are closed under the following:
@@ -619,14 +454,6 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 END%%
 
 %%ANKI
-Basic
-What does it mean for a language to be undecidable?
-Back: No TM exists that decides the language.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764938068689-->
-END%%
-
-%%ANKI
 Cloze
 A language is {decidable} if and only if it and its {complement} are {Turing-recognizable}.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
@@ -674,6 +501,325 @@ Restate the following theorem in terms of "co-Turing-recognizable".
 Back: A language is decidable iff it is Turing-recognizable and co-Turing-recognizable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765251175102-->
+END%%
+
+## Undecidability
+
+A language is **undecidable** if no Turing machine can decide it. Proving undecidability is usually done by performing a [[reducibility|reduction]] on an undecidable language. These include:
+
+* $A_{\text{TM}} = \{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ accepts } w \}$
+* $E_{\text{LBA}} = \{M \mid M \text{ is an LBA and } L(M) = \varnothing \}$
+* $E_{\text{TM}} = \{M \mid M \text{ is a TM and } L(M) = \varnothing \}$
+* $EQ_{\text{CFG}} = \{ \langle G_1, G_2 \rangle \mid G_1 \text{ and } G_2 \text{ are CFGs and } L(G_1) = L(G_2) \}$
+* $EQ_{\text{TM}} = \{ \langle M_1, M_2 \rangle \mid M_1 \text{ and } M_2 \text{ are TMs and } L(M_1) = L(M_2) \}$
+
+%%ANKI
+Basic
+What does it mean for a language to be undecidable?
+Back: No TM exists that decides the language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068689-->
+END%%
+
+%%ANKI
+Basic
+Is the following language decidable? $$\{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ accepts } w \}$$
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068692-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ accepts } w \}$$
+Back: $A_{\text{TM}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764989724279-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $A_{\text{TM}}$?
+Back: $A_{\text{TM}} = \{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ accepts } w \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214024-->
+END%%
+
+%%ANKI
+Basic
+In proving the undecidability of $A_{\text{TM}}$, what contradiction is formed?
+Back: Constructing a TM that accepts its own description iff it rejects its own description.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068707-->
+END%%
+
+%%ANKI
+Basic
+What proof strategy is used to show undecidability of $A_{\mathop{TM}}$?
+Back: Diagonalization.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068711-->
+END%%
+
+%%ANKI
+Basic
+Is the following language decidable? $$\{M \mid M \text{ is an LBA and } L(M) = \varnothing \}$$
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765717723653-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{M \mid M \text{ is an LBA and } L(M) = \varnothing \}$$
+Back: $E_{\text{LBA}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765717723664-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $E_{\text{LBA}}$?
+Back: $E_{\text{LBA}} = \{M \mid M \text{ is an LBA and } L(M) = \varnothing \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765717723668-->
+END%%
+
+%%ANKI
+Basic
+Is the following language decidable? $$\{M \mid M \text{ is a TM and } L(M) = \varnothing \}$$
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214039-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{M \mid M \text{ is a TM and } L(M) = \varnothing \}$$
+Back: $E_{\text{TM}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214042-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $E_{\text{TM}}$?
+Back: $E_{\text{TM}} = \{M \mid M \text{ is a TM and } L(M) = \varnothing \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402516-->
+END%%
+
+%%ANKI
+Basic
+Is the following language decidable? $$\{ \langle G_1, G_2 \rangle \mid G_1 \text{ and } G_2 \text{ are CFGs and } L(G_1) = L(G_2) \}$$
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402525-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{ \langle G_1, G_2 \rangle \mid G_1 \text{ and } G_2 \text{ are CFGs and } L(G_1) = L(G_2) \}$$
+Back: $EQ_{\text{CFG}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402528-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $EQ_{\text{CFG}}$?
+Back: $EQ_{\text{CFG}} = \{ \langle G_1, G_2 \rangle \mid G_1 \text{ and } G_2 \text{ are CFGs and } L(G_1) = L(G_2) \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991470786-->
+END%%
+
+%%ANKI
+Basic
+Is the following language decidable? $$\{ \langle M_1, M_2 \rangle \mid M_1 \text{ and } M_2 \text{ are TMs and } L(M_1) = L(M_2) \}$$
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402531-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{ \langle M_1, M_2 \rangle \mid M_1 \text{ and } M_2 \text{ are TMs and } L(M_1) = L(M_2) \}$$
+Back: $EQ_{\text{TM}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402533-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $EQ_{\text{TM}}$?
+Back: $EQ_{\text{TM}} = \{ \langle M_1, M_2 \rangle \mid M_1 \text{ and } M_2 \text{ are TMs and } L(M_1) = L(M_2) \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991470791-->
+END%%
+
+### Halting Problem
+
+The **halting problem** refers to the problem of determining, from a description of an arbitrary computer program and an input, whether the program will eventually halt. In particular, it refers to the decidability of language $$A = \{\langle M, w \rangle \mid M \text{ is a Turing machine and } M \text{ halts on } w\}.$$
+
+It is the classic example of an undecidable problem.
+
+%%ANKI
+Basic
+What is the quintessential example of an undecidable problem?
+Back: The halting problem.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068695-->
+END%%
+
+%%ANKI
+Basic
+*What* is the halting problem?
+Back: Given a description of an arbitrary program and input, deciding whether the program will halt on said input.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068698-->
+END%%
+
+%%ANKI
+Basic
+In set-theoretic notation, what language is the halting problem concerned with?
+Back: $\{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ halts on } w \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068701-->
+END%%
+
+%%ANKI
+Basic
+The halting problem is usually used as an example of what?
+Back: An undecidable language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068704-->
+END%%
+
+### Post Correspondence Problem
+
+Define a finite collection of dominos $P$ as: $$P = \left\{ \left[ \frac{t_1}{b_1} \right], \left[ \frac{t_2}{b_2} \right], \ldots, \left[ \frac{t_n}{b_n} \right] \right\}$$
+
+A **match** is a sequence of dominos $i_1, i_2, i_k$ such that the strings generated by concatenating all the top symbols and all the bottom symbols are equal: $$t_{i_1} t_{i_2} \ldots t_{i_k} = b_{i_1} b_{i_2} \ldots b_{i_k}$$
+
+The **post correspondence problem** is the problem of determining whether such a set of dominos has a match.
+
+%%ANKI
+Basic
+What is PCP an acronym for?
+Back: **P**ost **C**orrespondence **P**roblem.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765857751886-->
+END%%
+
+%%ANKI
+Basic
+What does the post correspondence problem state?
+Back: Find a sequence of dominos (with repetition) such that the top sides form the same string as the bottom sides.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765857751894-->
+END%%
+
+%%ANKI
+Basic
+PCP is often phrased in terms of what physical objects?
+Back: Dominos.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765857751897-->
+END%%
+
+%%ANKI
+Basic
+Is PCP decidable?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765857751900-->
+END%%
+
+%%ANKI
+Basic
+What language is usually reduced to PCP to prove undecidability?
+Back: $A_{\text{TM}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765857751903-->
+END%%
+
+%%ANKI
+Basic
+At a high-level, how do we show decidability of PCP implies decidability of $A_{\text{TM}}$?
+Back: Convert a TM into dominos so that a solution to PCP exists iff an accepting computation history exists.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765857751907-->
+END%%
+
+%%ANKI
+Basic
+With respect to PCP, what does a match refer to?
+Back: A sequence of dominos such that the top sides form the same string as the bottom sides.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765857751910-->
+END%%
+
+%%ANKI
+Basic
+With respect to PCP, what simplest reason explains why a match isn't possible with the following dominos? $$\left\{ \left[ \frac{abc}{ab} \right], \left[ \frac{ca}{a} \right], \left[ \frac{acc}{ba} \right] \right\}$$
+Back: The top words are each longer than their corresponding bottom.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765857751913-->
+END%%
+
+%%ANKI
+Basic
+With respect to PCP, what simplest reason explains why a match isn't possible with the following dominos? $$\left\{ \left[ \frac{bc}{ab} \right], \left[ \frac{ca}{a} \right], \left[ \frac{acc}{babc} \right] \right\}$$
+Back: No top/bottom pair starts with the same letter.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765857751916-->
+END%%
+
+%%ANKI
+Basic
+What is the significance of term "Post" in "Post Correspondence Problem"?
+Back: The problem was first introduced by a mathematician named Emil Post.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765857751920-->
+END%%
+
+%%ANKI
+Basic
+What is the significance of term "Correspondence" in "Post Correspondence Problem"?
+Back: The problem refers to a correspondence between two halves of dominos.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765857751923-->
+END%%
+
+%%ANKI
+Basic
+When proving PCP is undecidable, PCP itself is typically reduced to what simpler problem?
+Back: MPCP.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765858968718-->
+END%%
+
+%%ANKI
+Basic
+What is MPCP an acronym for?
+Back: **M**odified **P**ost **C**orrespondence **P**roblem.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765858968723-->
+END%%
+
+%%ANKI
+Basic
+What simplification does MPCP introduce over PCP?
+Back: A designated starting domino.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765858968728-->
+END%%
+
+%%ANKI
+Cloze
+{MPCP} is PCP but with {a fixed starting domino}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765858968706-->
 END%%
 
 ## Bibliography
