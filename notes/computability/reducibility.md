@@ -90,6 +90,118 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1765290725851-->
 END%%
 
+## Many-One
+
+Let $A$ be a language over $\Sigma$ and $B$ be a language over $\Gamma$. A **many-one reduction** (or **mapping reduction**) from $A$ to $B$ is a [[algorithms/index#Computable Functions|computable function]] $f \colon \Sigma^* \rightarrow \Gamma^*$ such that, for all inputs $w$, $$w \in A \Leftrightarrow f(w) \in B.$$
+
+If such a function exists, we write $A \leq_m B$.
+
+%%ANKI
+Cloze
+A {many-one} reduction is also known as a {mapping} reduction.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765924040060-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be languages over alphabets $\Sigma$ and $\Gamma$ respectively. What is a many-one reduction from $A$ to $B$?
+Back: A computable function $f \colon \Sigma^* \rightarrow \Gamma^*$ such that, for all inputs $w$, $$w \in A \Leftrightarrow f(w) \in B.$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765924040066-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be languages over alphabets $\Sigma$ and $\Gamma$ respectively. What is a mapping reduction from $B$ to $A$?
+Back: A computable function $f \colon \Sigma^* \rightarrow \Gamma^*$ such that, for all inputs $w$, $$w \in B \Leftrightarrow f(w) \in A.$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765924040070-->
+END%%
+
+%%ANKI
+Cloze
+A {many-one} reduction from $A$ to $B$ is a {computable} function $f \colon \Sigma^* \rightarrow \Gamma^*$ such that, for all inputs $w$, {$$w \in A \Leftrightarrow f(w) \in B.$$}
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765924040073-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is mapping reducible to $B$. What kind of mathematical entity is $A$?
+Back: A language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765924819983-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is mapping reducible to $B$. What kind of mathematical entity is $B$?
+Back: A language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765924819988-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is mapping reducible to $B$. How is this denoted?
+Back: As $A \leq_m B$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765924819990-->
+END%%
+
+%%ANKI
+Basic
+With respect to reducibility, what does $A \leq_m B$ denote?
+Back: Language $A$ is many-one reducible to language $B$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765924819996-->
+END%%
+
+%%ANKI
+Basic
+Why are mapping reductions named the way they are?
+Back: They are defined as functions (i.e. mappings) between two languages.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765924819992-->
+END%%
+
+%%ANKI
+Basic
+Why are many-one reductions named the way they are?
+Back: Many members of a language may map to the same member of another language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765924819993-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $A \leq_m B$. If {1:$A$} is undecidable, then {1:$B$} is undecidable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765925102570-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $B \leq_m A$. If {1:$A$} is decidable, then {1:$B$} is decidable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765925102573-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $B \leq_m A$. If {1:$B$} is undecidable, then {1:$A$} is undecidable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765925102575-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $A \leq_m B$. If {1:$B$} is decidable, then {1:$A$} is decidable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765925102576-->
+END%%
+
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).

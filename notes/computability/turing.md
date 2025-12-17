@@ -637,6 +637,267 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1764556414659-->
 END%%
 
+## Computation Histories
+
+Let $M$ be a Turing machine and $w$ an input string. An **accepting computation history** for $M$ on $w$ is a sequence of configurations, $C_1, C_2, \ldots, C_n$, where:
+
+* $C_1$ is the start configuration of $M$ on $w$,
+* $C_n$ is an accepting configuration of $M$, and
+* each $C_i$ legally follows from $C_{i-1}$ according to the rules of $M$.
+
+A **rejecting computation history** is defined analogously.
+
+%%ANKI
+Basic
+How many kinds of computation histories are there?
+Back: Two.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103156-->
+END%%
+
+%%ANKI
+Basic
+What two kinds of computation histories are there?
+Back: Accepting and rejecting.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103164-->
+END%%
+
+%%ANKI
+Basic
+What is an accepting computation history of TM $M$ on input $w$?
+Back: A finite sequence of configurations from the start configuration to an accepting configuration.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103168-->
+END%%
+
+%%ANKI
+Basic
+What is a rejecting computation history of TM $M$ on input $w$?
+Back: A finite sequence of configurations from the start configuration to a rejecting configuration.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103171-->
+END%%
+
+%%ANKI
+Basic
+When is a computation history finite?
+Back: Always.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103175-->
+END%%
+
+%%ANKI
+Basic
+When is a computation history infinite?
+Back: Never. All computation histories are finite.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103179-->
+END%%
+
+%%ANKI
+Basic
+Suppose TM $M$ does not halt on input $w$. What is the computation history of $M$ on $w$?
+Back: N/A. There is no computation history of $M$ on $w$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103184-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be a TM. How many computation histories does $M$ have for any one input?
+Back: At most one.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103189-->
+END%%
+
+%%ANKI
+Basic
+Let $M$ be an NTM. How many computation histories does $M$ have for any one input?
+Back: Zero or more.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103193-->
+END%%
+
+%%ANKI
+Cloze
+{1:Derivations} are to {2:CFGs} whereas {2:computation histories} are to {1:TMs}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765422103198-->
+END%%
+
+## Dovetailing
+
+**Dovetailing** refers to the simulation of two or more Turing machines in parallel on a single Turing machine. Typically it is implemented by simulating one step of each machine at a time.
+
+In the case of infinitely many TMs, dovetailing is typically accomplished by running the first machine for one step, the first two machines for two steps, the first three machines for three steps, and so on and so forth.
+
+%%ANKI
+Basic
+What term is used to describe the interleaving of multiple TM executions?
+Back: Dovetailing.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724245-->
+END%%
+
+%%ANKI
+Basic
+With respect to TMs, what is dovetailing?
+Back: The simulation of two or more TMs in parallel on a single TM.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724254-->
+END%%
+
+%%ANKI
+Basic
+How is dovetailing typically implemented for a finite number of TMs?
+Back: Simulating one step of each machine at a time.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724258-->
+END%%
+
+%%ANKI
+Basic
+How is dovetailing typically implemented for an infinite number of TMs?
+Back: For increasing integers $k$, simulate $k$ steps of the first $k$ machines.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724260-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following joint?
+![[dovetailing.png]]
+Back: A dovetail.
+Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
+<!--ID: 1764989724264-->
+END%%
+
+## Closure Operations
+
+Let $A$ and $B$ be Turing-recognizable languages. Such languages are closed under the following:
+
+* Union: $A \cup B$
+* Intersection: $A \cap B$
+* Concatenation: $A \circ B$
+* Kleene Star: $A^*$
+
+%%ANKI
+Basic
+Suppose $A$ and $B$ are Turing-recognizable languages. Is $A \cup B$ recognizable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334285-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cup B$ has TM $M$, when does $M$ accept?
+Back: When either $M_A$ or $M_B$ accept.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334289-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cup B$ has TM $M$, when does $M$ reject?
+Back: When both $M_A$ and $M_B$ reject.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334293-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cup B$ has TM $M$, when does $M$ loop?
+Back: When neither $M_A$ nor $M_B$ accept and either one loops.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334296-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ and $B$ are Turing-recognizable languages. Is $A \cap B$ recognizable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334300-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cap B$ has TM $M$, when does $M$ accept?
+Back: When both $M_A$ and $M_B$ accept.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334303-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cap B$ has TM $M$, when does $M$ reject?
+Back: When either $M_A$ or $M_B$ reject.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334307-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cap B$ has TM $M$, when does $M$ loop?
+Back: When neither $M_A$ nor $M_B$ reject and either one loops.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334310-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is a Turing-recognizable language. Is $\overline{A}$ recognizable?
+Back: Not necessarily.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334314-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is a Turing-recognizable language. How do we show $\overline{A}$ is recognizable?
+Back: N/A. This is not generally true.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334317-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ and $B$ are Turing-recognizable languages. Is $A \circ B$ recognizable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334320-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ and $B$ are Turing-recognizable languages. How do we construct the TM that recognizes $A \circ B$?
+Back:
+1. Nondeterministically split the input into two.
+2. Run $A$ and $B$'s TMs on the respective halves.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334323-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is a Turing-recognizable language. Is $A^*$ recognizable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334327-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is a Turing-recognizable language. How do we construct the TM that recognizes $A^*$?
+Back:
+1. Nondeterministically partition the input into zero or more strings.
+2. Run $A$'s TM on each substring.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764804334330-->
+END%%
+
 ## Variants
 
 There exist many different variants of Turing machines, most of which are equivalent in power. The **robustness** of a computing model is a measure of the models invariance to certain changes. Turing machines are especially robust.
@@ -947,267 +1208,6 @@ Why is the Church-Turing thesis believed true?
 Back: Many alternative models of computation all prove equivalent (e.g. to TMs).
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764938068683-->
-END%%
-
-## Closure Operations
-
-Let $A$ and $B$ be Turing-recognizable languages. Such languages are closed under the following:
-
-* Union: $A \cup B$
-* Intersection: $A \cap B$
-* Concatenation: $A \circ B$
-* Kleene Star: $A^*$
-
-%%ANKI
-Basic
-Suppose $A$ and $B$ are Turing-recognizable languages. Is $A \cup B$ recognizable?
-Back: Yes.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334285-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cup B$ has TM $M$, when does $M$ accept?
-Back: When either $M_A$ or $M_B$ accept.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334289-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cup B$ has TM $M$, when does $M$ reject?
-Back: When both $M_A$ and $M_B$ reject.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334293-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cup B$ has TM $M$, when does $M$ loop?
-Back: When neither $M_A$ nor $M_B$ accept and either one loops.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334296-->
-END%%
-
-%%ANKI
-Basic
-Suppose $A$ and $B$ are Turing-recognizable languages. Is $A \cap B$ recognizable?
-Back: Yes.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334300-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cap B$ has TM $M$, when does $M$ accept?
-Back: When both $M_A$ and $M_B$ accept.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334303-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cap B$ has TM $M$, when does $M$ reject?
-Back: When either $M_A$ or $M_B$ reject.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334307-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ and $B$ be Turing-recognizable languages with TMs $M_A$ and $M_B$ respectively. If $A \cap B$ has TM $M$, when does $M$ loop?
-Back: When neither $M_A$ nor $M_B$ reject and either one loops.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334310-->
-END%%
-
-%%ANKI
-Basic
-Suppose $A$ is a Turing-recognizable language. Is $\overline{A}$ recognizable?
-Back: Not necessarily.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334314-->
-END%%
-
-%%ANKI
-Basic
-Suppose $A$ is a Turing-recognizable language. How do we show $\overline{A}$ is recognizable?
-Back: N/A. This is not generally true.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334317-->
-END%%
-
-%%ANKI
-Basic
-Suppose $A$ and $B$ are Turing-recognizable languages. Is $A \circ B$ recognizable?
-Back: Yes.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334320-->
-END%%
-
-%%ANKI
-Basic
-Suppose $A$ and $B$ are Turing-recognizable languages. How do we construct the TM that recognizes $A \circ B$?
-Back:
-1. Nondeterministically split the input into two.
-2. Run $A$ and $B$'s TMs on the respective halves.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334323-->
-END%%
-
-%%ANKI
-Basic
-Suppose $A$ is a Turing-recognizable language. Is $A^*$ recognizable?
-Back: Yes.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334327-->
-END%%
-
-%%ANKI
-Basic
-Suppose $A$ is a Turing-recognizable language. How do we construct the TM that recognizes $A^*$?
-Back:
-1. Nondeterministically partition the input into zero or more strings.
-2. Run $A$'s TM on each substring.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1764804334330-->
-END%%
-
-## Computation Histories
-
-Let $M$ be a Turing machine and $w$ an input string. An **accepting computation history** for $M$ on $w$ is a sequence of configurations, $C_1, C_2, \ldots, C_n$, where:
-
-* $C_1$ is the start configuration of $M$ on $w$,
-* $C_n$ is an accepting configuration of $M$, and
-* each $C_i$ legally follows from $C_{i-1}$ according to the rules of $M$.
-
-A **rejecting computation history** is defined analogously.
-
-%%ANKI
-Basic
-How many kinds of computation histories are there?
-Back: Two.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1765422103156-->
-END%%
-
-%%ANKI
-Basic
-What two kinds of computation histories are there?
-Back: Accepting and rejecting.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1765422103164-->
-END%%
-
-%%ANKI
-Basic
-What is an accepting computation history of TM $M$ on input $w$?
-Back: A finite sequence of configurations from the start configuration to an accepting configuration.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1765422103168-->
-END%%
-
-%%ANKI
-Basic
-What is a rejecting computation history of TM $M$ on input $w$?
-Back: A finite sequence of configurations from the start configuration to a rejecting configuration.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1765422103171-->
-END%%
-
-%%ANKI
-Basic
-When is a computation history finite?
-Back: Always.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1765422103175-->
-END%%
-
-%%ANKI
-Basic
-When is a computation history infinite?
-Back: Never. All computation histories are finite.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1765422103179-->
-END%%
-
-%%ANKI
-Basic
-Suppose TM $M$ does not halt on input $w$. What is the computation history of $M$ on $w$?
-Back: N/A. There is no computation history of $M$ on $w$.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1765422103184-->
-END%%
-
-%%ANKI
-Basic
-Let $M$ be a TM. How many computation histories does $M$ have for any one input?
-Back: At most one.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1765422103189-->
-END%%
-
-%%ANKI
-Basic
-Let $M$ be an NTM. How many computation histories does $M$ have for any one input?
-Back: Zero or more.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1765422103193-->
-END%%
-
-%%ANKI
-Cloze
-{1:Derivations} are to {2:CFGs} whereas {2:computation histories} are to {1:TMs}.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1765422103198-->
-END%%
-
-## Parallelism
-
-**Dovetailing** refers to the simulation of two or more Turing machines in parallel on a single Turing machine. Typically it is implemented by simulating one step of each machine at a time.
-
-In the case of infinitely many TMs, dovetailing is typically accomplished by running the first machine for one step, the first two machines for two steps, the first three machines for three steps, and so on and so forth.
-
-%%ANKI
-Basic
-What term is used to describe the interleaving of multiple TM executions?
-Back: Dovetailing.
-Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
-<!--ID: 1764989724245-->
-END%%
-
-%%ANKI
-Basic
-With respect to TMs, what is dovetailing?
-Back: The simulation of two or more TMs in parallel on a single TM.
-Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
-<!--ID: 1764989724254-->
-END%%
-
-%%ANKI
-Basic
-How is dovetailing typically implemented for a finite number of TMs?
-Back: Simulating one step of each machine at a time.
-Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
-<!--ID: 1764989724258-->
-END%%
-
-%%ANKI
-Basic
-How is dovetailing typically implemented for an infinite number of TMs?
-Back: For increasing integers $k$, simulate $k$ steps of the first $k$ machines.
-Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
-<!--ID: 1764989724260-->
-END%%
-
-%%ANKI
-Basic
-What name is given to the following joint?
-![[dovetailing.png]]
-Back: A dovetail.
-Reference: Filmus, Yuval. “Answer to ‘Dovetailing in Turing Machines?’” Computer Science Stack Exchange, October 6, 2016. [https://cs.stackexchange.com/a/64283](https://cs.stackexchange.com/a/64283).
-<!--ID: 1764989724264-->
 END%%
 
 ## Bibliography

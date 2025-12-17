@@ -42,7 +42,60 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1764637016543-->
 END%%
 
-## Incremental
+## Computable Functions
+
+A function $f \colon \Sigma^* \rightarrow \Gamma^*$ is **computable** if some [[turing|Turing machine]] $M$, on every input $w$, halts with just $f(w)$ on its tape.
+
+%%ANKI
+Basic
+What does it mean for a function $f$ to be computable?
+Back: Some TM $M$ exists such that on every input $w$, it halts with just $f(w)$ on its tape.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765921218485-->
+END%%
+
+%%ANKI
+Basic
+Is addition on the natural numbers a computable function?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765921218487-->
+END%%
+
+%%ANKI
+Basic
+Why is addition $+ \colon \mathbb{N}^2 \rightarrow \mathbb{N}$ considered a computable function?
+Back: A TM exists such that on any input $\langle m, n \rangle$, just $m + n$ is on its tape.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765921218488-->
+END%%
+
+%%ANKI
+Basic
+Why are "computable functions" named the way they are?
+Back: By definition a TM exists that can simulate the execution of said functions.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765924040077-->
+END%%
+
+%%ANKI
+Cloze
+A {computable} function formalizes the notion of an {effective} method.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765924148294-->
+END%%
+
+%%ANKI
+Basic
+In what way does a computable function formalize the notion of an effective method?
+Back: Computable functions are defined with respect to a model of computation.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765924148299-->
+END%%
+
+## Design Strategies
+
+### Incremental
 
 An **incremental** approach to algorithm design involves acting on a single element at a time.
 
@@ -54,7 +107,7 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1708742467144-->
 END%%
 
-## Divide-and-Conquer
+### Divide-and-Conquer
 
 The **divide-and-conquer** approach breaks problems into subproblems that are easier to solve.
 
