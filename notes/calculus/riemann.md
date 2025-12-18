@@ -334,7 +334,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1734816555512-->
 END%%
 
-## Properties
+## Integrability
 
 The **lower Riemann integral** of $f$, denoted by $\underline{I}(f)$, is defined as $$\underline{I}(f) = \mathop{\text{sup}} \left\{ \int_a^b s(x) \,dx \mid s \leq f \right\}.$$
 Likewise, the **upper Riemann integral** of $f$, denoted by $\bar{I}(f)$, is defined as $$\bar{I}(f) = \mathop{\text{inf}} \left\{ \int_a^b t(x) \,dx \mid f \leq t \right\}.$$
@@ -475,440 +475,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1746108789210-->
 END%%
 
-### Integrand Additivity
-
-Let $f$ and $g$ be Riemann integrable on $[a, b]$. Then $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$
-
-%%ANKI
-Basic
-Assume Riemann integrals. What does the additivity property w.r.t. the integrand state?
-Back: Let $f$ and $g$ be integrable on $[a, b]$. Then $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx.$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1734814463659-->
-END%%
-
-%%ANKI
-Basic
-Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$
-
-Back: The additive property w.r.t. the integrand.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1734814463668-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ and $g$ be Riemann integrable on $[a, b]$. How is the following more compactly written? $$\int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$
-Back: As $\int_a^b f(x) + g(x) \,dx$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1734814463673-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be even and Riemann integrable on $[0, b]$. What does the following integral evaluate to? $$\int_{-b}^b f(x) \,dx$$
-Back: $2 \int_0^b f(x) \,dx$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1748462635288-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be odd and Riemann integrable on $[0, b]$. What does the following integral evaluate to? $$\int_{-b}^b f(x) \,dx$$
-Back: $0$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1748462635294-->
-END%%
-
-### Vertical Scaling
-
-Let $f$ be Riemann integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c\int_a^b f(x) \,dx.$$
-
-This is also known as the **homogeneous property**.
-
-%%ANKI
-Basic
-What does the homogeneous property of Riemann integrals state?
-Back: Let $f$ be integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c \int_a^b f(x) \,dx.$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1734814463679-->
-END%%
-
-%%ANKI
-Basic
-What does the vertical scaling property of Riemann integrals state?
-Back: Let $f$ be integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c \int_a^b f(x) \,dx.$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735744900572-->
-END%%
-
-%%ANKI
-Basic
-Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b c \cdot f(x) \,dx = c\int_a^b f(x) \,dx$$
-
-Back: The vertical scaling (or homogeneous) property.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1734814463685-->
-END%%
-
-%%ANKI
-Cloze
-The {vertical scaling} property of Riemann integrals is also known as the {homogeneous} property.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735745285982-->
-END%%
-
-%%ANKI
-Cloze
-The {vertical scaling} property of Riemann integrals corresponds to a change of scale on the {$y$}-axis.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735743913546-->
-END%%
-
-### Linearity
-
-Let $f$ and $g$ be Riemann integrable on $[a, b]$. Let $c_1, c_2 \in \mathbb{R}$. Then $$\int_a^b [c_1f(x) + c_2g(x)] \,dx = c_1 \int_a^b f(x) \,dx + c_2 \int_a^b g(x) \,dx$$
-
-%%ANKI
-Basic
-What does the linearity property of Riemann integrals state?
-Back: Let $f$ and $g$ be integrable on $[a, b]$ and $c_1, c_2 \in \mathbb{R}$. Then $$\int_a^b [c_1 f(x) + c_2 g(x)] \,dx = c_1 \int_a^b f(x) \,dx + c_2 \int_a^b g(x) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1734814463699-->
-END%%
-
-%%ANKI
-Basic
-Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b [c_1f(x) + c_2g(x)] \,dx = c_1 \int_a^b f(x) \,dx + c_2 \int_a^b g(x) \,dx$$
-Back: The linearity property.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1734814463704-->
-END%%
-
-%%ANKI
-Basic
-Assume Riemann integrals. The linearity property is immediately derived from what other two properties?
-Back: The additive property w.r.t. the integrand and vertical scaling.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1734814463710-->
-END%%
-
-%%ANKI
-Cloze
-The {linearity} property of Riemann integrals follows from the {additivity w.r.t the integrand} property and the {homogenous} property.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1734814463693-->
-END%%
-
-### Comparison Theorem
-
-Let $f$ and $b$ be Riemann integrable on $[a, b]$. If $f(x) \leq g(x)$ for all $x \in [a, b]$, then $$\int_a^b f(x) \,dx \leq \int_a^b g(x) \,dx$$
-
-%%ANKI
-Basic
-What does the comparison theorem for Riemann integrals state?
-Back: Let $f$ and $g$ be integrable on $[a, b]$. If $f(x) \leq g(x)$ for all $x \in [a, b]$, then $$\int_a^b f(x) \,dx \leq \int_a^b g(x) \,dx.$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1734815755275-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ and $g$ be Riemann integrable on $[a, b]$ such that $f(x) \leq g(x)$ for all $x \in [a, b]$. What is the following called? $$\int_a^b f(x) \,dx \leq \int_a^b g(x) \,dx$$
-Back: The comparison theorem.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1734815755282-->
-END%%
-
-%%ANKI
-Basic
-The comparison theorem of Riemann integrals corresponds to what property of area?
-Back: The monotone property.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1734815755285-->
-END%%
-
-%%ANKI
-Basic
-The monotone property of area corresponds to what basic property of Riemann integrals?
-Back: The comparison theorem.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1734815755288-->
-END%%
-
-### Interval of Integration Additivity
-
-Let $f$ be Riemann integrable over an interval containing $a$, $b$, and $c$. Then $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx = \int_a^c f(x) \,dx$$
-
-%%ANKI
-Basic
-Assume Riemann integrals. What does the additivity property w.r.t. the interval of integration state?
-Back: Let $f$ be integrable over an interval containing $a$, $b$, and $c$. Then $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx = \int_a^c f(x) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735613867221-->
-END%%
-
-%%ANKI
-Basic
-Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx = \int_a^c f(x) \,dx$$
-
-Back: The additive property w.r.t. the interval of integration.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735613867222-->
-END%%
-
-%%ANKI
-Basic
-Assume the following Riemann integrals exist. How is the following written more compactly? $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx$$
-Back: $\int_a^c f(x) \,dx$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735613867223-->
-END%%
-
-%%ANKI
-Basic
-Assume Riemann integrals. The additivity theorem w.r.t. intervals of integration corresponds to what property of area?
-Back: The additive property of area.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735613867224-->
-END%%
-
-%%ANKI
-Basic
-The additive property of area corresponds to what basic property of Riemann integrals?
-Back: The additive property w.r.t. the interval of integration.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735613867225-->
-END%%
-
-### Invariance Under Translation
-
-Let $f$ be Riemann integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b f(x) \,dx = \int_{a+c}^{b+c} f(x - c) \,dx$$
-
-%%ANKI
-Basic
-What does the invariance under translation propery of Riemann integrals state?
-Back: Let $f$ be integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b f(x) \,dx = \int_{a+c}^{b+c} f(x - c) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735616354212-->
-END%%
-
-%%ANKI
-Basic
-Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx = \int_{a+c}^{b+c} f(x - c) \,dx$$
-Back: Invariance under translation.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735616354216-->
-END%%
-
-%%ANKI
-Basic
-Invariance of Riemann integrals under translation corresponds to what property of area?
-Back: Invariance under congruence.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735616354218-->
-END%%
-
-%%ANKI
-Basic
-Invariance of area under congruence corresponds to what basic property of Riemann integrals?
-Back: Invariance under translation.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735616354219-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $g(x) = f(x - c)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
-Back: $\int_{a+c}^{b+c} g(x) \,dx$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735616354220-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $g(x) = f(x + c)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
-Back: $\int_{a-c}^{b-c} g(x) \,dx$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735616354222-->
-END%%
-
-%%ANKI
-Basic
-Assume Riemann integrals. How is the following rewritten so that the integrand is just $f(x)$? $$\int_a^b f(x + c) \,dx$$
-Back: $$\int_{a+c}^{b+c} f(x) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735750191049-->
-END%%
-
-%%ANKI
-Basic
-Assume Riemann integrals. How is the following rewritten so that the integrand is just $f(x)$? $$\int_a^b f(x - c) \,dx$$
-Back: $$\int_{a-c}^{b-c} f(x) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735750317904-->
-END%%
-
-%%ANKI
-Basic
-Assume Riemann integrals. How is the following rewritten so that the integration limits are just $a$ and $b$? $$\int_{a+c}^{b+c} f(x) \,dx$$
-Back: $$\int_{a}^{b} f(x + c) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735750317913-->
-END%%
-
-%%ANKI
-Basic
-Assume Riemann integrals. How is the following rewritten so that the integration limits are just $a$ and $b$? $$\int_{a-c}^{b-c} f(x) \,dx$$
-Back: $$\int_{a}^{b} f(x - c) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735751159481-->
-END%%
-
-### Horizontal Scaling
-
-Let $f$ be Riemann integrable on $[a, b]$. Then for all $k \in \mathbb{R}$ such that $k \neq 0$, $$\int_a^b f(x) \,dx = \frac{1}{k} \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx.$$
-
-%%ANKI
-Basic
-What does the horizontal scaling property of Riemann integrals state?
-Back: Let $f$ be integrable on $[a, b]$ and $k \in \mathbb{R}$ s.t. $k \neq 0$. Then $$\int_a^b f(x) \,dx = \frac{1}{k} \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx.$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735743913556-->
-END%%
-
-%%ANKI
-Basic
-Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx = \frac{1}{k} \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx$$
-Back: The horizontal scaling property.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735743913568-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $g(x) = f(x / k)$. What integral of $g(x)$ equals $\int_a^b f(x) \,dx$?
-Back: $\frac{1}{k} \int_{ka}^{kb} g(x) \,dx$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735743913575-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $g(x) = f(kx)$. What integral of $g(x)$ equals $\int_a^b f(x) \,dx$?
-Back: $k \int_{a/k}^{b/k} g(x) \,dx$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735743913580-->
-END%%
-
-%%ANKI
-Cloze
-The {horizontal scaling} property of Riemann integrals corresponds to a change of scale on the {$x$}-axis.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735743913591-->
-END%%
-
-%%ANKI
-Basic
-What identity relates horizontal and vertical scaling of Riemann integrals?
-Back: $$\int_a^b kf(x) \,dx = \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735749673647-->
-END%%
-
-%%ANKI
-Basic
-Assume Riemann integrals. How is the following rewritten so that the integrand is just $f(x)$? $$\int_a^b f(kx) \,dx$$
-Back: $$\frac{1}{k} \int_{ka}^{kb} f(x) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735750191055-->
-END%%
-
-%%ANKI
-Basic
-Assume Riemann integrals. How is the following rewritten so that the integrand is just $f(x)$? $$\int_a^b f\left(\frac{x}{k}\right) \,dx$$
-Back: $$k \int_{a / k}^{b / k} f(x) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735751159485-->
-END%%
-
-%%ANKI
-Basic
-Assume Riemann integrals. How is the following rewritten so that the integration limits are just $a$ and $b$? $$\int_{ka}^{kb} f(x) \,dx$$
-Back: $$k \int_{a}^{b} f(kx) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735751159489-->
-END%%
-
-%%ANKI
-Basic
-Assume Riemann integrals. How is the following rewritten so that the integration limits are just $a$ and $b$? $$\int_{a/k}^{b/k} f(x) \,dx$$
-Back: $$\frac{1}{k} \int_{a}^{b} f\left(\frac{x}{k}\right) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735751159493-->
-END%%
-
-### Reflection
-
-The reflection properties are special cases of the vertical and horizontal scaling properties. Let $f$ be Riemann integrable on $[a, b]$. Then $$\int_a^b f(x) \,dx = -\int_a^b -f(x) \,dx \quad\text{and}\quad \int_a^b f(x) \,dx = \int_{-b}^{-a} f(-x) \,dx.$$
-
-%%ANKI
-Basic
-What does the horizontal reflection property of Riemann integrals state?
-Back: Let $f$ be integrable on $[a, b]$. Then $$\int_a^b f(x) \,dx = \int_{-b}^{-a} f(-x) \,dx.$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735744900576-->
-END%%
-
-%%ANKI
-Basic
-What does the vertical reflection property of Riemann integrals state?
-Back: Let $f$ be integrable on $[a, b]$. Then $$\int_a^b f(x) \,dx = -\int_{a}^{b} -f(x) \,dx.$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735745285987-->
-END%%
-
-%%ANKI
-Basic
-Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx = \int_{-b}^{-a} f(-x) \,dx.$$
-Back: The horizontal reflection property.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735744900581-->
-END%%
-
-%%ANKI
-Basic
-Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx = -\int_{a}^{b} -f(x) \,dx.$$
-Back: The vertical reflection property.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735745285989-->
-END%%
-
-%%ANKI
-Basic
-The horizontal reflection property of Riemann integrals is a special case of what other basic property?
-Back: Horizontal scaling.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735744900585-->
-END%%
-
-%%ANKI
-Basic
-The vertical reflection property of Riemann integrals is a special case of what other basic property?
-Back: Vertical scaling.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735745285992-->
-END%%
-
-%%ANKI
-Basic
-The reflection property of Riemann integrals is a scaling by what value?
-Back: $-1$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1735744900590-->
-END%%
-
-## Bounded Monotonic Functions
+### Bounded Monotonic Functions
 
 If $f$ is monotonic on a closed interval $[a, b]$, then $f$ is Riemann integrable on $[a, b]$.
 
@@ -1000,96 +567,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1743283589762-->
 END%%
 
-## Average Value
-
-Let $f$ be Riemann integrable on an interval $[a, b]$. We define the **average value of $f$ on $[a, b]$**, denoted $A(f)$, by the formula $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx.$$
-
-Let $w$ be a nonnegative function such that $\int_a^b w(x) \,dx \neq 0$. Then the **weighted average value of $f$ on $[a, b]$**, denoted $A(f)$, is given by formula $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}.$$
-
-In this context, $w$ is called a **weight function**.
-
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on an interval $[a, b]$. How is $A(f)$, the average value of $f$ on $[a, b]$, defined?
-Back: $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704321-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on an interval $[a, b]$. What name is given to $A(f)$ in the following? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
-Back: The average value of $f$ on $[a, b]$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704322-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be a nonnegative, Riemann integrable function on $[a, b]$. How do we geometrically interpret the following? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
-Back: As the rectangle with base $[a, b]$ and altitude $A(f)$ having area equal to $\int_a^b f(x) \,dx$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704324-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on an interval $[a, b]$. How is the average value of $f$ on $[a, b]$ reimagined as a weighted average value? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
-Back: With weight function $w(x) = 1$ for all $x \in [a, b]$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704325-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $w$ be its weight function. How is $A(f)$, the weighted average value of $f$ on $[a, b]$, defined?
-Back: $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x)}$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704326-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$ and nonnegative $w$ satisfy $\int_a^b w(x) \,dx \neq 0$. What name is given to $A(f)$ in the following? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x)}$$
-Back: The weighted average value of $f$ on $[a, b]$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704327-->
-END%%
-
-%%ANKI
-Basic
-Assume Riemann integrals. What name is used to describe $w$ in the following equation? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x)}$$
-Back: $w$ is called a weight function.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704328-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be a Riemann integrable function on $[a, b]$ and $w$ be its weight function. What two conditions must $w$ satisfy?
-Back: It must be nonnegative and $\int_a^b w(x) \,dx \neq 0$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704329-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$. What is the dividend used when computing $f$'s average value?
-Back: $\int_a^b f(x) dx$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761422321479-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$. What is the divisor used when computing $f$'s average value?
-Back: $b - a$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761422321480-->
-END%%
-
-## Continuity
+### Continuity
 
 Let $f$ be [[continuity|continuous]] on $[a, b]$. Then $f$ is Riemann integrable on $[a, b]$.
 
@@ -1125,7 +603,7 @@ Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, 
 <!--ID: 1761422321491-->
 END%%
 
-### Mean Value Theorem
+#### Mean Value Theorem
 
 Let $f$ be [[continuity|continuous]] on $[a, b]$. Then there exists some $c \in [a, b]$ such that $$\int_a^b f(x) \,dx = f(c)(b - a).$$
 
@@ -1344,6 +822,564 @@ How is an indefinite integral (with lower limit of integration say $c$) defined 
 Back: As $$\int_c^x f(t) \,dt = \frac{x^3 - c^3}{3}.$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1765424504638-->
+END%%
+
+## Integrand Additivity
+
+Let $f$ and $g$ be Riemann integrable on $[a, b]$. Then $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$
+
+%%ANKI
+Basic
+Assume Riemann integrals. What does the additivity property w.r.t. the integrand state?
+Back: Let $f$ and $g$ be integrable on $[a, b]$. Then $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734814463659-->
+END%%
+
+%%ANKI
+Basic
+Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b f(x) + g(x) \,dx = \int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$
+
+Back: The additive property w.r.t. the integrand.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734814463668-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be Riemann integrable on $[a, b]$. How is the following more compactly written? $$\int_a^b f(x) \,dx + \int_a^b g(x) \,dx$$
+Back: As $\int_a^b f(x) + g(x) \,dx$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734814463673-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be even and Riemann integrable on $[0, b]$. What does the following integral evaluate to? $$\int_{-b}^b f(x) \,dx$$
+Back: $2 \int_0^b f(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1748462635288-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be odd and Riemann integrable on $[0, b]$. What does the following integral evaluate to? $$\int_{-b}^b f(x) \,dx$$
+Back: $0$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1748462635294-->
+END%%
+
+## Vertical Scaling
+
+Let $f$ be Riemann integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c\int_a^b f(x) \,dx.$$
+
+This is also known as the **homogeneous property**.
+
+%%ANKI
+Basic
+What does the homogeneous property of Riemann integrals state?
+Back: Let $f$ be integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c \int_a^b f(x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734814463679-->
+END%%
+
+%%ANKI
+Basic
+What does the vertical scaling property of Riemann integrals state?
+Back: Let $f$ be integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b c \cdot f(x) \,dx = c \int_a^b f(x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735744900572-->
+END%%
+
+%%ANKI
+Basic
+Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b c \cdot f(x) \,dx = c\int_a^b f(x) \,dx$$
+
+Back: The vertical scaling (or homogeneous) property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734814463685-->
+END%%
+
+%%ANKI
+Cloze
+The {vertical scaling} property of Riemann integrals is also known as the {homogeneous} property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735745285982-->
+END%%
+
+%%ANKI
+Cloze
+The {vertical scaling} property of Riemann integrals corresponds to a change of scale on the {$y$}-axis.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735743913546-->
+END%%
+
+## Linearity
+
+Let $f$ and $g$ be Riemann integrable on $[a, b]$. Let $c_1, c_2 \in \mathbb{R}$. Then $$\int_a^b [c_1f(x) + c_2g(x)] \,dx = c_1 \int_a^b f(x) \,dx + c_2 \int_a^b g(x) \,dx$$
+
+%%ANKI
+Basic
+What does the linearity property of Riemann integrals state?
+Back: Let $f$ and $g$ be integrable on $[a, b]$ and $c_1, c_2 \in \mathbb{R}$. Then $$\int_a^b [c_1 f(x) + c_2 g(x)] \,dx = c_1 \int_a^b f(x) \,dx + c_2 \int_a^b g(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734814463699-->
+END%%
+
+%%ANKI
+Basic
+Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b [c_1f(x) + c_2g(x)] \,dx = c_1 \int_a^b f(x) \,dx + c_2 \int_a^b g(x) \,dx$$
+Back: The linearity property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734814463704-->
+END%%
+
+%%ANKI
+Basic
+Assume Riemann integrals. The linearity property is immediately derived from what other two properties?
+Back: The additive property w.r.t. the integrand and vertical scaling.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734814463710-->
+END%%
+
+%%ANKI
+Cloze
+The {linearity} property of Riemann integrals follows from the {additivity w.r.t the integrand} property and the {homogenous} property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734814463693-->
+END%%
+
+## Comparison Theorem
+
+Let $f$ and $b$ be Riemann integrable on $[a, b]$. If $f(x) \leq g(x)$ for all $x \in [a, b]$, then $$\int_a^b f(x) \,dx \leq \int_a^b g(x) \,dx$$
+
+%%ANKI
+Basic
+What does the comparison theorem for Riemann integrals state?
+Back: Let $f$ and $g$ be integrable on $[a, b]$. If $f(x) \leq g(x)$ for all $x \in [a, b]$, then $$\int_a^b f(x) \,dx \leq \int_a^b g(x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734815755275-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be Riemann integrable on $[a, b]$ such that $f(x) \leq g(x)$ for all $x \in [a, b]$. What is the following called? $$\int_a^b f(x) \,dx \leq \int_a^b g(x) \,dx$$
+Back: The comparison theorem.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734815755282-->
+END%%
+
+%%ANKI
+Basic
+The comparison theorem of Riemann integrals corresponds to what property of area?
+Back: The monotone property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734815755285-->
+END%%
+
+%%ANKI
+Basic
+The monotone property of area corresponds to what basic property of Riemann integrals?
+Back: The comparison theorem.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1734815755288-->
+END%%
+
+## Interval of Integration Additivity
+
+Let $f$ be Riemann integrable over an interval containing $a$, $b$, and $c$. Then $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx = \int_a^c f(x) \,dx$$
+
+%%ANKI
+Basic
+Assume Riemann integrals. What does the additivity property w.r.t. the interval of integration state?
+Back: Let $f$ be integrable over an interval containing $a$, $b$, and $c$. Then $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx = \int_a^c f(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735613867221-->
+END%%
+
+%%ANKI
+Basic
+Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx = \int_a^c f(x) \,dx$$
+
+Back: The additive property w.r.t. the interval of integration.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735613867222-->
+END%%
+
+%%ANKI
+Basic
+Assume the following Riemann integrals exist. How is the following written more compactly? $$\int_a^b f(x) \,dx + \int_b^c f(x) \,dx$$
+Back: $\int_a^c f(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735613867223-->
+END%%
+
+%%ANKI
+Basic
+Assume Riemann integrals. The additivity theorem w.r.t. intervals of integration corresponds to what property of area?
+Back: The additive property of area.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735613867224-->
+END%%
+
+%%ANKI
+Basic
+The additive property of area corresponds to what basic property of Riemann integrals?
+Back: The additive property w.r.t. the interval of integration.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735613867225-->
+END%%
+
+## Invariance Under Translation
+
+Let $f$ be Riemann integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b f(x) \,dx = \int_{a+c}^{b+c} f(x - c) \,dx$$
+
+%%ANKI
+Basic
+What does the invariance under translation propery of Riemann integrals state?
+Back: Let $f$ be integrable on $[a, b]$ and $c \in \mathbb{R}$. Then $$\int_a^b f(x) \,dx = \int_{a+c}^{b+c} f(x - c) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735616354212-->
+END%%
+
+%%ANKI
+Basic
+Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx = \int_{a+c}^{b+c} f(x - c) \,dx$$
+Back: Invariance under translation.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735616354216-->
+END%%
+
+%%ANKI
+Basic
+Invariance of Riemann integrals under translation corresponds to what property of area?
+Back: Invariance under congruence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735616354218-->
+END%%
+
+%%ANKI
+Basic
+Invariance of area under congruence corresponds to what basic property of Riemann integrals?
+Back: Invariance under translation.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735616354219-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and $g(x) = f(x - c)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
+Back: $\int_{a+c}^{b+c} g(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735616354220-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and $g(x) = f(x + c)$. What integral of $g$ equals $\int_a^b f(x) \,dx$?
+Back: $\int_{a-c}^{b-c} g(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735616354222-->
+END%%
+
+%%ANKI
+Basic
+Assume Riemann integrals. How is the following rewritten so that the integrand is just $f(x)$? $$\int_a^b f(x + c) \,dx$$
+Back: $$\int_{a+c}^{b+c} f(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735750191049-->
+END%%
+
+%%ANKI
+Basic
+Assume Riemann integrals. How is the following rewritten so that the integrand is just $f(x)$? $$\int_a^b f(x - c) \,dx$$
+Back: $$\int_{a-c}^{b-c} f(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735750317904-->
+END%%
+
+%%ANKI
+Basic
+Assume Riemann integrals. How is the following rewritten so that the integration limits are just $a$ and $b$? $$\int_{a+c}^{b+c} f(x) \,dx$$
+Back: $$\int_{a}^{b} f(x + c) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735750317913-->
+END%%
+
+%%ANKI
+Basic
+Assume Riemann integrals. How is the following rewritten so that the integration limits are just $a$ and $b$? $$\int_{a-c}^{b-c} f(x) \,dx$$
+Back: $$\int_{a}^{b} f(x - c) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735751159481-->
+END%%
+
+## Horizontal Scaling
+
+Let $f$ be Riemann integrable on $[a, b]$. Then for all $k \in \mathbb{R}$ such that $k \neq 0$, $$\int_a^b f(x) \,dx = \frac{1}{k} \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx.$$
+
+%%ANKI
+Basic
+What does the horizontal scaling property of Riemann integrals state?
+Back: Let $f$ be integrable on $[a, b]$ and $k \in \mathbb{R}$ s.t. $k \neq 0$. Then $$\int_a^b f(x) \,dx = \frac{1}{k} \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735743913556-->
+END%%
+
+%%ANKI
+Basic
+Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx = \frac{1}{k} \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx$$
+Back: The horizontal scaling property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735743913568-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and $g(x) = f(x / k)$. What integral of $g(x)$ equals $\int_a^b f(x) \,dx$?
+Back: $\frac{1}{k} \int_{ka}^{kb} g(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735743913575-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and $g(x) = f(kx)$. What integral of $g(x)$ equals $\int_a^b f(x) \,dx$?
+Back: $k \int_{a/k}^{b/k} g(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735743913580-->
+END%%
+
+%%ANKI
+Cloze
+The {horizontal scaling} property of Riemann integrals corresponds to a change of scale on the {$x$}-axis.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735743913591-->
+END%%
+
+%%ANKI
+Basic
+What identity relates horizontal and vertical scaling of Riemann integrals?
+Back: $$\int_a^b kf(x) \,dx = \int_{ka}^{kb} f\left(\frac{x}{k}\right) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735749673647-->
+END%%
+
+%%ANKI
+Basic
+Assume Riemann integrals. How is the following rewritten so that the integrand is just $f(x)$? $$\int_a^b f(kx) \,dx$$
+Back: $$\frac{1}{k} \int_{ka}^{kb} f(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735750191055-->
+END%%
+
+%%ANKI
+Basic
+Assume Riemann integrals. How is the following rewritten so that the integrand is just $f(x)$? $$\int_a^b f\left(\frac{x}{k}\right) \,dx$$
+Back: $$k \int_{a / k}^{b / k} f(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735751159485-->
+END%%
+
+%%ANKI
+Basic
+Assume Riemann integrals. How is the following rewritten so that the integration limits are just $a$ and $b$? $$\int_{ka}^{kb} f(x) \,dx$$
+Back: $$k \int_{a}^{b} f(kx) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735751159489-->
+END%%
+
+%%ANKI
+Basic
+Assume Riemann integrals. How is the following rewritten so that the integration limits are just $a$ and $b$? $$\int_{a/k}^{b/k} f(x) \,dx$$
+Back: $$\frac{1}{k} \int_{a}^{b} f\left(\frac{x}{k}\right) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735751159493-->
+END%%
+
+## Reflection
+
+The reflection properties are special cases of the vertical and horizontal scaling properties. Let $f$ be Riemann integrable on $[a, b]$. Then $$\int_a^b f(x) \,dx = -\int_a^b -f(x) \,dx \quad\text{and}\quad \int_a^b f(x) \,dx = \int_{-b}^{-a} f(-x) \,dx.$$
+
+%%ANKI
+Basic
+What does the horizontal reflection property of Riemann integrals state?
+Back: Let $f$ be integrable on $[a, b]$. Then $$\int_a^b f(x) \,dx = \int_{-b}^{-a} f(-x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735744900576-->
+END%%
+
+%%ANKI
+Basic
+What does the vertical reflection property of Riemann integrals state?
+Back: Let $f$ be integrable on $[a, b]$. Then $$\int_a^b f(x) \,dx = -\int_{a}^{b} -f(x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735745285987-->
+END%%
+
+%%ANKI
+Basic
+Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx = \int_{-b}^{-a} f(-x) \,dx.$$
+Back: The horizontal reflection property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735744900581-->
+END%%
+
+%%ANKI
+Basic
+Assume the following Riemann integrals are defined. What is the following identity called? $$\int_a^b f(x) \,dx = -\int_{a}^{b} -f(x) \,dx.$$
+Back: The vertical reflection property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735745285989-->
+END%%
+
+%%ANKI
+Basic
+The horizontal reflection property of Riemann integrals is a special case of what other basic property?
+Back: Horizontal scaling.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735744900585-->
+END%%
+
+%%ANKI
+Basic
+The vertical reflection property of Riemann integrals is a special case of what other basic property?
+Back: Vertical scaling.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735745285992-->
+END%%
+
+%%ANKI
+Basic
+The reflection property of Riemann integrals is a scaling by what value?
+Back: $-1$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1735744900590-->
+END%%
+
+## Average Value
+
+Let $f$ be Riemann integrable on an interval $[a, b]$. We define the **average value of $f$ on $[a, b]$**, denoted $A(f)$, by the formula $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx.$$
+
+Let $w$ be a nonnegative function such that $\int_a^b w(x) \,dx \neq 0$. Then the **weighted average value of $f$ on $[a, b]$**, denoted $A(f)$, is given by formula $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}.$$
+
+In this context, $w$ is called a **weight function**.
+
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on an interval $[a, b]$. How is $A(f)$, the average value of $f$ on $[a, b]$, defined?
+Back: $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704321-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on an interval $[a, b]$. What name is given to $A(f)$ in the following? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
+Back: The average value of $f$ on $[a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704322-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a nonnegative, Riemann integrable function on $[a, b]$. How do we geometrically interpret the following? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
+Back: As the rectangle with base $[a, b]$ and altitude $A(f)$ having area equal to $\int_a^b f(x) \,dx$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704324-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on an interval $[a, b]$. How is the average value of $f$ on $[a, b]$ reimagined as a weighted average value? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
+Back: With weight function $w(x) = 1$ for all $x \in [a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704325-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and $w$ be its weight function. How is $A(f)$, the weighted average value of $f$ on $[a, b]$, defined?
+Back: $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x)}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704326-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and nonnegative $w$ satisfy $\int_a^b w(x) \,dx \neq 0$. What name is given to $A(f)$ in the following? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x)}$$
+Back: The weighted average value of $f$ on $[a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704327-->
+END%%
+
+%%ANKI
+Basic
+Assume Riemann integrals. What name is used to describe $w$ in the following equation? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x)}$$
+Back: $w$ is called a weight function.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704328-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a Riemann integrable function on $[a, b]$ and $w$ be its weight function. What two conditions must $w$ satisfy?
+Back: It must be nonnegative and $\int_a^b w(x) \,dx \neq 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751751704329-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$. What is the dividend used when computing $f$'s average value?
+Back: $\int_a^b f(x) dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321479-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$. What is the divisor used when computing $f$'s average value?
+Back: $b - a$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761422321480-->
+END%%
+
+## Substitution Theorem
+
+Let $g \colon [a, b] \rightarrow I$ be [[derivatives|differentiable]] with a [[continuity|continuous]] derivative. Suppose $f \colon I \rightarrow \mathbb{R}$ be continuous. Then $$\int_a^b f[g(x)]g'(x) \,dx = \int_{g(a)}^{g(b)} f(u) \,du.$$
+
+%%ANKI
+Basic
+What name is given to the following relationship? $$\int_a^b f[g(x)]g'(x) \,dx = \int_{g(a)}^{g(b)} f(u) \,du.$$
+Back: The substitution theorem for integrals.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766080413573-->
+END%%
+
+%%ANKI
+Basic
+The substitution theorem for integrals is most closely tied to what technique of integration?
+Back: Integration by substitution.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766080413575-->
+END%%
+
+%%ANKI
+Basic
+What conditions are $g$ presumed to satisfy in the following equality? $$\int_a^b f[g(x)]g'(x) \,dx = \int_{g(a)}^{g(b)} f(u) \,du$$
+Back: $g \colon [a, b] \rightarrow I$ is differentiable with a continuous derivative.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766080413576-->
+END%%
+
+%%ANKI
+Basic
+What conditions are $f$ presumed to satisfy in the following equality? $$\int_a^b f[g(x)]g'(x) \,dx = \int_{g(a)}^{g(b)} f(u) \,du$$
+Back: Assuming $g \colon [a, b] \rightarrow I$, $f$ is continuous on $I$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766080413577-->
 END%%
 
 ## Bibliography

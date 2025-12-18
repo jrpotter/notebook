@@ -223,7 +223,7 @@ END%%
 
 %%ANKI
 Basic
-What integration technique is the following a demonstration of? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du.$$
+What integration technique is the following a demonstration of? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du$$
 Back: Integration by substitution.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766016756686-->
@@ -231,7 +231,7 @@ END%%
 
 %%ANKI
 Basic
-How is Leibniz notation used to better suggest the relationship in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du.$$
+How is Leibniz notation used to better suggest the relationship in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du$$
 Back: $$\int f(u) \cdot \frac{du}{dx} \,dx = \int f(u) \,du$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766016756688-->
@@ -239,7 +239,7 @@ END%%
 
 %%ANKI
 Basic
-What three conditions are $f$ and $g$ presumed to satisfy in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du.$$
+What three conditions are $f$ and $g$ presumed to satisfy in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du$$
 Back: $f$ is continuous, $g$ is differentiable, and $g'$ is continuous.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766016756691-->
@@ -255,7 +255,7 @@ END%%
 
 %%ANKI
 Basic
-What conditions are $f$ presumed to satisfy in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du.$$
+What conditions are $f$ presumed to satisfy in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du$$
 Back: $f$ is continuous.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766016756696-->
@@ -263,7 +263,7 @@ END%%
 
 %%ANKI
 Basic
-What conditions are $g$ presumed to satisfy in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du.$$
+What conditions are $g$ presumed to satisfy in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du$$
 Back: $g$ is differentiable and $g'$ is continuous.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766016756698-->
@@ -271,7 +271,7 @@ END%%
 
 %%ANKI
 Basic
-Why isn't integration by substitution typically expressed in the following way? $$\int f'(g(x)) \cdot g'(x) \,dx = \int f'(u) \,du.$$
+Why isn't integration by substitution typically expressed in the following way? $$\int f'(g(x)) \cdot g'(x) \,dx = \int f'(u) \,du$$
 Back: This unnecessarily requires $f$ be differentiable with a continuous derivative.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766016756700-->
@@ -331,6 +331,14 @@ Why is term "integration by substitution" a bit of a misnomer?
 Back: The technique isn't used to find integrals; it is used to find primitives.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766016756716-->
+END%%
+
+%%ANKI
+Basic
+How is the following expressed with definite integrals on say $(a, b)$? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du$$
+Back: $$\int_a^b f(g(x)) \cdot g'(x) \,dx = \int_{g(a)}^{g(b)} f(u) \,du$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766080413578-->
 END%%
 
 ## Bibliography

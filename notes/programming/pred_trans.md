@@ -1541,7 +1541,21 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1737991560411-->
 END%%
 
-#### Understanding a Loop
+%%ANKI
+Cloze
+With respect to $\text{DO}$, a {strictly} decreasing bounds function is to Turing-{decidable}.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1766077334164-->
+END%%
+
+%%ANKI
+Cloze
+With respect to $\text{DO}$, a {non-strictly} decreasing bounds function is to Turing-{recognizable}.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1766077334166-->
+END%%
+
+#### Understanding Loops
 
 Consider loop $\text{DO}$. Suppose a predicate $P$ satisfies
 

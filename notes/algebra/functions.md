@@ -262,6 +262,89 @@ Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [htt
 <!--ID: 1729804914213-->
 END%%
 
+## Totality
+
+A function $F \colon A \rightarrow B$ is said to be **total** if every element of $A$ maps to an element of $B$. If $F$ is only defined on a subset $S \subseteq A$, then $F$ is said to be **partial** with **domain of definition** $S$, denoted $F \colon A \rightharpoonup B$.
+
+%%ANKI
+Cloze
+A function is either {partial} or {total}.
+Reference: _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
+<!--ID: 1766077334167-->
+END%%
+
+%%ANKI
+Basic
+What does notation $F \colon A \rightharpoonup B$ typically denote?
+Back: That $F$ is a partial function from $A$ to $B$.
+Reference: _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
+<!--ID: 1766077334168-->
+END%%
+
+%%ANKI
+Basic
+How is a total function $F$ from $A$ to $B$ typically denoted?
+Back: As $F \colon A \rightarrow B$.
+Reference: _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
+<!--ID: 1766077334169-->
+END%%
+
+%%ANKI
+Basic
+How is a partial function $F$ from $A$ to $B$ typically denoted?
+Back: As $F \colon A \rightharpoonup B$.
+Reference: _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
+<!--ID: 1766077334170-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for $F$ to be a partial function?
+Back: $F$ is only defined over a subset of its domain.
+Reference: _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
+<!--ID: 1766080413579-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \sqrt{x}$. Why is $f \colon \mathbb{R} \rightharpoonup \mathbb{R}$ considered partial?
+Back: $f$ is not defined for negative inputs.
+Reference: _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
+<!--ID: 1766080413580-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x, y) = x \div y$. Why is $f \colon \mathbb{R}^2 \rightharpoonup \mathbb{R}$ considered partial?
+Back: $f$ is not defined for values $\langle x, 0 \rangle \in \mathbb{R}^2$.
+Reference: _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
+<!--ID: 1766080413581-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the subset of a partial function's domain that actually maps to values?
+Back: The domain of definition.
+Reference: _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
+<!--ID: 1766080413582-->
+END%%
+
+%%ANKI
+Basic
+Let $f \colon \mathbb{R} \rightharpoonup \mathbb{R}$ given by $f(x) = \sqrt{x}$. What is $f$'s domain of definition?
+Back: $x \geq 0$
+Reference: _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
+<!--ID: 1766080413583-->
+END%%
+
+%%ANKI
+Basic
+Let $f \colon \mathbb{R}^2 \rightharpoonup \mathbb{R}$ given by $f(x, y) = x \div y$. What is $f$'s domain of definition?
+Back: $\{ \langle x, y \rangle \in \mathbb{R}^2 \mid y \neq 0 \}$
+Reference: _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
+<!--ID: 1766080413584-->
+END%%
+
 ## Symmetries
 
 A function $f$ is said to be **odd** if $-f(x) = f(-x)$ for all $x$ in $f$'s domain. Likewise, $f$ is said to be **even** if $f(x) = f(-x)$ for all $x$ in $f$'s domain.
@@ -1508,3 +1591,4 @@ END%%
 * “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+* _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
