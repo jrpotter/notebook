@@ -8,9 +8,11 @@ tags:
 
 ## Overview
 
-A function $P$ is called a **primitive** (or **antiderivative**) of a function $f$ on an open interval $I$ if the derivative of $P$ is $f$. That is, if $P'(x) = f(x)$ for all $x \in I$. Leibniz preferred symbol $\int f(x) \,dx$ to denote a general primitive of $f$.
+A function $P$ is called a **primitive** (or **antiderivative**) of a function $f$ on an open interval $I$ if the derivative of $P$ is $f$. That is, if $P'(x) = f(x)$ for all $x \in I$.
 
-Any systematic method for finding a primitive is called a **technique of integration**. This term is somewhat justified by the fact that the [[calculus/index#Fundamental Theorem of Calculus|fundamental theorem of calculus]] reduces the problem of integrating to that of finding primitives.
+Leibniz preferred denoting a general primitive of $f$ as follows: $$\int f(x) \,dx.$$
+
+Note the above is conceptually distinct from an [[riemann#Indefinite Integrals|indefinite integral]], though the term is also often used to refer to a primitive.
 
 %%ANKI
 Cloze
@@ -170,6 +172,10 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1765587837816-->
 END%%
 
+## Integration Techniques
+
+Any systematic method for finding a primitive is called a **technique of integration**. This term is somewhat justified by the fact that the [[calculus/index#Fundamental Theorem of Calculus|fundamental theorem of calculus]] reduces the problem of integrating to that of finding primitives.
+
 %%ANKI
 Basic
 What does the term "technique of integration" refer to?
@@ -192,6 +198,139 @@ What does it mean to "integrate" $\int f(x) \,dx$?
 Back: We should find the most general primitive of $f$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1765587837831-->
+END%%
+
+### By Substitution
+
+The method of **integration by substitution** works by "reversing" the operations of the [[derivatives#Chain Rule|chain rule]]. Let $f$ be continuous and $g$ be differentiable with a continuous derivative. Then, by the [[calculus/index#Fundamental Theorem of Calculus|fundamental theorem of calculus]], $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du.$$
+
+The substitutions $u = g(x)$ and $du = g'(x) \,dx$ are typically performed.
+
+%%ANKI
+Cloze
+Integration by {substitution} is often touted as the reverse {chain rule}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756675-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be continuous and $g$ be differentiable with a continuous derivative. How is integration by substitution usually expressed?
+Back: $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756683-->
+END%%
+
+%%ANKI
+Basic
+What integration technique is the following a demonstration of? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du.$$
+Back: Integration by substitution.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756686-->
+END%%
+
+%%ANKI
+Basic
+How is Leibniz notation used to better suggest the relationship in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du.$$
+Back: $$\int f(u) \cdot \frac{du}{dx} \,dx = \int f(u) \,du$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756688-->
+END%%
+
+%%ANKI
+Basic
+What three conditions are $f$ and $g$ presumed to satisfy in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du.$$
+Back: $f$ is continuous, $g$ is differentiable, and $g'$ is continuous.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756691-->
+END%%
+
+%%ANKI
+Basic
+When integrating by substitution, what two substitutions are typically performed in the following? $$\int f(g(x)) \cdot g'(x) \,dx$$
+Back: $u = g(x)$ and $du = g'(x) \,dx$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756693-->
+END%%
+
+%%ANKI
+Basic
+What conditions are $f$ presumed to satisfy in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du.$$
+Back: $f$ is continuous.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756696-->
+END%%
+
+%%ANKI
+Basic
+What conditions are $g$ presumed to satisfy in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du.$$
+Back: $g$ is differentiable and $g'$ is continuous.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756698-->
+END%%
+
+%%ANKI
+Basic
+Why isn't integration by substitution typically expressed in the following way? $$\int f'(g(x)) \cdot g'(x) \,dx = \int f'(u) \,du.$$
+Back: This unnecessarily requires $f$ be differentiable with a continuous derivative.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756700-->
+END%%
+
+%%ANKI
+Basic
+Consider $du = g'(x) \,dx$ used in integration by substitution. What do the differentials actually mean?
+Back: N/A. They are mnemonics used to help perform integration by substitution correctly.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756702-->
+END%%
+
+%%ANKI
+Basic
+When applying integration by substitution, what expression should $u$ substitute? $$\int x^3 \cos{x^4} \,dx$$
+Back: $u = x^4$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756705-->
+END%%
+
+%%ANKI
+Basic
+Given $u = x^4$, how is the following primitive expressed in terms of $du$? $$\int x^3 \cos{x^4} \,dx$$
+Back: $$\frac{1}{4} \int \cos{u} \,du$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756707-->
+END%%
+
+%%ANKI
+Basic
+When applying integration by substitution, what expression should $u$ substitute? $$\int \cos^2{x} \sin{x} \,dx$$
+Back: $u = \cos{x}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756709-->
+END%%
+
+%%ANKI
+Basic
+Given $u = \cos{x}$, How is the following primitive expressed in terms of $du$? $$\int \cos^2{x} \sin{x} \,dx$$
+Back: $$-\int u^2 \,du$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756712-->
+END%%
+
+%%ANKI
+Basic
+What technique of integration is most associated with the chain rule?
+Back: Integration by substitution.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756714-->
+END%%
+
+%%ANKI
+Basic
+Why is term "integration by substitution" a bit of a misnomer?
+Back: The technique isn't used to find integrals; it is used to find primitives.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766016756716-->
 END%%
 
 ## Bibliography

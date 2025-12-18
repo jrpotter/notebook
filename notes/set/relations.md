@@ -9,109 +9,13 @@ tags:
 
 ## Overview
 
-An ordered pair of $x$ and $y$, denoted $\langle x, y \rangle$, is defined as: $\langle x, y \rangle = \{\{x\}, \{x, y\}\}$. We define the **first coordinate** of $\langle x, y \rangle$ to be $x$ and the **second coordinate** to be $y$.
-
-We define ordered triples as $\langle x, y, z \rangle = \langle \langle x, y \rangle, z \rangle$. We define ordered quadruples as $\langle x_1, x_2, x_3, x_4 \rangle = \langle \langle \langle x_1, x_2 \rangle, x_3 \rangle, x_4 \rangle$. This idea generalizes to $n$-tuples. As a special case, we define the $1$-tuple $\langle x \rangle = x$.
-
-An **$n$-ary relation on $A$** is a set of ordered $n$-tuples with all **components** in $A$. Keep in mind though, a unary ($1$-ary) relation on $A$ is just a subset of $A$ and may not be a relation at all.
-
-%%ANKI
-Basic
-How is an ordered pair of $x$ and $y$ denoted?
-Back: $\langle x, y \rangle$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717678753102-->
-END%%
-
-%%ANKI
-Basic
-What property must any satisfactory definition of $\langle x, y \rangle$ satisfy?
-Back: $x$ and $y$, along with their order, are uniquely determined.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717679524930-->
-END%%
-
-%%ANKI
-Basic
-Which of ordered pairs or sets is more general?
-Back: Sets.
-<!--ID: 1717678753108-->
-END%%
-
-%%ANKI
-Basic
-What biconditional is used to prove the well-definedness of $\langle x, y \rangle$?
-Back: $(\langle x, y \rangle = \langle u, v \rangle) \Leftrightarrow (x = u \land y = v)$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717678753111-->
-END%%
-
-%%ANKI
-Cloze
-{$\{1, 2\}$} is a set whereas {$\langle 1, 2 \rangle$} is an ordered pair.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717678753116-->
-END%%
-
-%%ANKI
-Basic
-How is $\langle x, y \rangle$ most commonly defined?
-Back: As $\{\{x\}, \{x, y\}\}$.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
-<!--ID: 1717678753120-->
-END%%
-
-%%ANKI
-Basic
-Who is usually attributed the most commonly used definition of an ordered pair?
-Back: Kazimierz Kuratowski.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717678753124-->
-END%%
-
-%%ANKI
-Basic
-How is $\{\{x\}, \{x, y\}\}$ alternatively denoted?
-Back: $\langle x, y \rangle$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717678753129-->
-END%%
-
-%%ANKI
-Cloze
-Well-definedness of ordered pairs: {$\langle u, v \rangle = \langle x, y \rangle$} if and only if {$u = x \land v = y$}.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717678753134-->
-END%%
-
-%%ANKI
-Basic
-What term is used to refer to $x$ in $\langle x, y \rangle$?
-Back: The first coordinate.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717678753139-->
-END%%
-
-%%ANKI
-Cloze
-$y$ is the {second} coordinate of $\langle x, y \rangle$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717678753145-->
-END%%
-
-%%ANKI
-Basic
-Is $\varnothing$ a relation?
-Back: Yes.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1719681913524-->
-END%%
-
-A **relation** $R$ is a set of ordered pairs. The **domain** of $R$ ($\mathop{\text{dom}}{R}$), the **range** of $R$ ($\mathop{\text{ran}}{R}$), and the **field** of $R$ ($\mathop{\text{fld}}{R}$) is defined as:
+A **relation** $R$ is a set of [[#Ordered Pairs|ordered pairs]]. The **domain** of $R$ ($\mathop{\text{dom}}{R}$), the **range** of $R$ ($\mathop{\text{ran}}{R}$), and the **field** of $R$ ($\mathop{\text{fld}}{R}$) are defined as:
 
 * $x \in \mathop{\text{dom}}{R} \Leftrightarrow \exists y, \langle x, y \rangle \in R$
 * $x \in \mathop{\text{ran}}{R} \Leftrightarrow \exists t, \langle t, x \rangle \in R$
 * $\mathop{\text{fld}}{R} = \mathop{\text{dom}}{R} \cup \mathop{\text{ran}}{R}$
+
+An **$n$-ary relation on $A$** is a set of ordered $n$-tuples with all **components** in $A$. Keep in mind though, a unary ($1$-ary) relation on $A$ is just a subset of $A$ and may not be a relation at all.
 
 %%ANKI
 Basic
@@ -604,6 +508,165 @@ Let $x, y, z \in A$. *Why* isn't $\{\langle x, y \rangle, \langle x, y, z \rangl
 Back: Because $\langle x, y \rangle \not\in (A \times A) \times A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1718329620208-->
+END%%
+
+## Ordered Pairs
+
+An ordered pair of $x$ and $y$, denoted $\langle x, y \rangle$, is defined as: $\langle x, y \rangle = \{\{x\}, \{x, y\}\}$. We define the **first coordinate** of $\langle x, y \rangle$ to be $x$ and the **second coordinate** to be $y$.
+
+We define ordered triples as $\langle x, y, z \rangle = \langle \langle x, y \rangle, z \rangle$. We define ordered quadruples as $\langle x_1, x_2, x_3, x_4 \rangle = \langle \langle \langle x_1, x_2 \rangle, x_3 \rangle, x_4 \rangle$. This idea generalizes to $n$-tuples. As a special case, we define the $1$-tuple $\langle x \rangle = x$.
+
+%%ANKI
+Basic
+How is an ordered pair of $x$ and $y$ denoted?
+Back: $\langle x, y \rangle$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717678753102-->
+END%%
+
+%%ANKI
+Basic
+What property must any satisfactory definition of $\langle x, y \rangle$ satisfy?
+Back: $x$ and $y$, along with their order, are uniquely determined.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717679524930-->
+END%%
+
+%%ANKI
+Basic
+Which of ordered pairs or sets is more general?
+Back: Sets.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717678753108-->
+END%%
+
+%%ANKI
+Basic
+What biconditional is used to prove the well-definedness of $\langle x, y \rangle$?
+Back: $(\langle x, y \rangle = \langle u, v \rangle) \Leftrightarrow (x = u \land y = v)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717678753111-->
+END%%
+
+%%ANKI
+Cloze
+{$\{1, 2\}$} is a set whereas {$\langle 1, 2 \rangle$} is an ordered pair.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717678753116-->
+END%%
+
+%%ANKI
+Basic
+How is $\langle x, y \rangle$ most commonly defined?
+Back: As $\{\{x\}, \{x, y\}\}$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1717678753120-->
+END%%
+
+%%ANKI
+Basic
+Who is usually attributed the most commonly used definition of an ordered pair?
+Back: Kazimierz Kuratowski.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717678753124-->
+END%%
+
+%%ANKI
+Basic
+How is $\{\{x\}, \{x, y\}\}$ alternatively denoted?
+Back: $\langle x, y \rangle$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717678753129-->
+END%%
+
+%%ANKI
+Cloze
+Well-definedness of ordered pairs: {$\langle u, v \rangle = \langle x, y \rangle$} if and only if {$u = x \land v = y$}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717678753134-->
+END%%
+
+%%ANKI
+Basic
+What term is used to refer to $x$ in $\langle x, y \rangle$?
+Back: The first coordinate.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717678753139-->
+END%%
+
+%%ANKI
+Cloze
+$y$ is the {second} coordinate of $\langle x, y \rangle$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717678753145-->
+END%%
+
+%%ANKI
+Basic
+Is $\varnothing$ a relation?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1719681913524-->
+END%%
+
+### Projections
+
+Let $a_1, \ldots, a_n \in A$. The $i$th-**projection** $\pi_i^n \colon A^n \rightarrow A$ of an $n$-tuple $t = \langle a_1, \ldots, a_n \rangle$ is given by $$\pi_i^n(t) \colon \langle a_1, \ldots, a_n \rangle \mapsto a_i.$$
+
+Notation $\pi_i$ is typically preferred to $\pi_i^n$ when $n$ is known.
+
+%%ANKI
+Basic
+With respect to ordered pairs, what does $\pi_1$ likely refer to?
+Back: The $1$st-projection function
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1766065859418-->
+END%%
+
+%%ANKI
+Cloze
+The $i$th-{projection} of an $n$-ary tuple returns the $i$th {component}.
+Reference: _Wikipedia_. “Ordered pair.” November 9, 2025. [https://en.wikipedia.org/w/index.php?title=Ordered_pair](https://en.wikipedia.org/w/index.php?title=Ordered_pair&oldid=1321321346).
+<!--ID: 1766065859432-->
+END%%
+
+%%ANKI
+Basic
+The $i$th-projection of an $n$-ary tuple refers to what kind of mathematical entity?
+Back: A function.
+Reference: _Wikipedia_. “Ordered pair.” November 9, 2025. [https://en.wikipedia.org/w/index.php?title=Ordered_pair](https://en.wikipedia.org/w/index.php?title=Ordered_pair&oldid=1321321346).
+<!--ID: 1766065859437-->
+END%%
+
+%%ANKI
+Basic
+Assume components in set $A$. The $i$th-projection of an $n$-ary tuple has what domain?
+Back: $A^n$.
+Reference: _Wikipedia_. “Ordered pair.” November 9, 2025. [https://en.wikipedia.org/w/index.php?title=Ordered_pair](https://en.wikipedia.org/w/index.php?title=Ordered_pair&oldid=1321321346).
+<!--ID: 1766065859442-->
+END%%
+
+%%ANKI
+Basic
+Assume components in set $A$. The $i$th-projection of an $n$-ary tuple has what codomain?
+Back: $A$.
+Reference: _Wikipedia_. “Ordered pair.” November 9, 2025. [https://en.wikipedia.org/w/index.php?title=Ordered_pair](https://en.wikipedia.org/w/index.php?title=Ordered_pair&oldid=1321321346).
+<!--ID: 1766065859447-->
+END%%
+
+%%ANKI
+Basic
+How is the $i$th-projection of an $n$-ary tuple typically denoted?
+Back: As $\pi_i^n$.
+Reference: _Wikipedia_. “Ordered pair.” November 9, 2025. [https://en.wikipedia.org/w/index.php?title=Ordered_pair](https://en.wikipedia.org/w/index.php?title=Ordered_pair&oldid=1321321346).
+<!--ID: 1766065859452-->
+END%%
+
+%%ANKI
+Cloze
+{Indices} are to programming whereas {projections} are to set theory.
+Reference: _Wikipedia_. “Ordered pair.” November 9, 2025. [https://en.wikipedia.org/w/index.php?title=Ordered_pair](https://en.wikipedia.org/w/index.php?title=Ordered_pair&oldid=1321321346).
+<!--ID: 1766065859457-->
 END%%
 
 ## Reflexivity
@@ -2299,3 +2362,4 @@ END%%
 * “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 * “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+* _Wikipedia_. “Ordered pair.” November 9, 2025. [https://en.wikipedia.org/w/index.php?title=Ordered_pair](https://en.wikipedia.org/w/index.php?title=Ordered_pair&oldid=1321321346).

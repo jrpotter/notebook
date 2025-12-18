@@ -793,7 +793,7 @@ END%%
 
 %%ANKI
 Basic
-When proving PCP is undecidable, PCP itself is typically reduced to what simpler problem?
+When proving PCP is undecidable, PCP itself is typically reduced from what simpler problem?
 Back: MPCP.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765858968718-->
@@ -817,9 +817,17 @@ END%%
 
 %%ANKI
 Cloze
-{MPCP} is PCP but with {a fixed starting domino}.
+{MPCP} is the same as PCP but with {a designated starting domino}.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765858968706-->
+END%%
+
+%%ANKI
+Basic
+What transitive mapping reducibility does Sipser use to prove PCP is undecidable?
+Back: $A_{\text{TM}} \leq_m MPCP \leq_m PCP$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765982531219-->
 END%%
 
 ## Bibliography

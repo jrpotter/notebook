@@ -599,7 +599,9 @@
     "church-turing-thesis.png",
     "first-derivative-test.png",
     "dovetailing.png",
-    "fundamental-theorem-calculus-I.png"
+    "fundamental-theorem-calculus-I.png",
+    "mapping-reducibility.png",
+    "general-reducibility.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -644,7 +646,7 @@
     "startups/index.md": "00fd32876fc7a190dfecb2c37c15aadc",
     "startups/financing-rounds.md": "7afdaa5fca76552ec46ed6392bbd372a",
     "set/trees.md": "f6b0f0fa0323104d23a1c910a7637d16",
-    "set/relations.md": "d14f0c2b13859163606a9c88d20cfa59",
+    "set/relations.md": "ad9b0c365f58219e97a75676cbed9948",
     "set/order.md": "ad1fe4501b5ffebf6dd6244db86505f8",
     "set/natural-numbers.md": "cafd241537eef6a6438c5470a16f5d5e",
     "set/index.md": "23699512a9719af8d35e4b37ac16444b",
@@ -2183,21 +2185,21 @@
     "_journal/2025-12-08.md": "ae4f547520d4f25953dfb8176e65915c",
     "_journal/2025-12/2025-12-07.md": "136491ac13ee0ca2b5382fe84059ef5d",
     "_journal/2025-12/2025-12-07 1.md": "136491ac13ee0ca2b5382fe84059ef5d",
-    "computability/turing.md": "184680f78ecf24bbfce70044b69ad0af",
+    "computability/turing.md": "768a105b3fffd3884408a839250b2296",
     "computability/regular.md": "2e1b4ef62687e3a1fbc9d6438448bed7",
-    "computability/decidability.md": "c67d35a8f8eaee8c96cd9c6c02ecfa31",
+    "computability/decidability.md": "ef97e0d6cc0a114c9e537adc335aa18e",
     "_journal/2025-12-09.md": "5f73a6a4874acec65ea3b40a4aefddae",
     "_journal/2025-12/2025-12-08.md": "762822f1cab34e5596b486eb586df9dd",
     "complexity/order_growth.md": "60352c0fa0906112b7b98142786538d1",
     "complexity/index.md": "4362258945e93f8f090f2d453a7bee2b",
-    "computability/reducibility.md": "c589cb1b1fe08eff9c63249c36293245",
+    "computability/reducibility.md": "da53d1be2e2207c6f51aea0d34b24836",
     "_journal/2025-12-10.md": "d3993036e96e6e903cabed5315711d31",
     "_journal/2025-12/2025-12-09.md": "5f73a6a4874acec65ea3b40a4aefddae",
     "_journal/2025-12-11.md": "cdc7a5d98476e1f5dc06959b8d5089ca",
     "_journal/2025-12/2025-12-10.md": "d3993036e96e6e903cabed5315711d31",
     "_journal/2025-12-12.md": "2cf8f221aaf678f1856e83e3dcd102eb",
     "_journal/2025-12/2025-12-11.md": "87d7c6fbcc3b15ed3da89428a0e76ab1",
-    "calculus/primitives.md": "d84376dab6c96a03905a8297af06577d",
+    "calculus/primitives.md": "479be298e9ad4d1418f1f21fe05f2234",
     "computability/context-sensitive.md": "076caea3c75c63ae85f7de797b66e2a0",
     "_journal/2025-12-13.md": "60bd23a69efcb84d4efec3e6ec65ced7",
     "_journal/2025-12/2025-12-12.md": "2cf8f221aaf678f1856e83e3dcd102eb",
@@ -2206,7 +2208,11 @@
     "_journal/2025-12-15.md": "6e76cb5c27c2039fbc0140411f8f86fd",
     "_journal/2025-12/2025-12-14.md": "dbd5d1925657e6c913bd15366c11c58e",
     "_journal/2025-12-16.md": "470a52a588ce1b64d378453b4c806176",
-    "_journal/2025-12/2025-12-15.md": "6e76cb5c27c2039fbc0140411f8f86fd"
+    "_journal/2025-12/2025-12-15.md": "6e76cb5c27c2039fbc0140411f8f86fd",
+    "_journal/2025-12-17.md": "ad30b9d88c3ece648b4673b37cbf7150",
+    "_journal/2025-12/2025-12-16.md": "470a52a588ce1b64d378453b4c806176",
+    "_journal/2025-12-18.md": "2d4cbf89d188eba6f1d27993c9a1a289",
+    "_journal/2025-12/2025-12-17.md": "440440eb31d9993ba8462a674fc81da8"
   },
   "fields_dict": {
     "Basic": [

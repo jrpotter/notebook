@@ -19,7 +19,9 @@ A **Turing machine** is a $7$-tuple $\langle Q, \Sigma, \Gamma, \delta, q_0, q_a
 6. $q_a$ is the accept state, and
 7. $q_r$ is the reject state, where $q_r \neq q_a$.
 
-A language is **Turing-recognizable** (also known as **recursively enumerable**) if a Turing machine recognizes it. A language is **co-Turing-recognizable** if it is the complement of a Turing-recognizable language.
+A language is **Turing-recognizable** (also known as **recursively enumerable**) if a Turing machine recognizes it. Otherwise it is **Turing-unrecognizable**.
+
+A language is **co-Turing-recognizable** if it is the complement of a Turing-recognizable language. An analogous definition holds for **co-Turing-unrecognizable**.
 
 %%ANKI
 Basic
@@ -439,6 +441,14 @@ END%%
 
 %%ANKI
 Basic
+What is a co-Turing-unrecognizable language?
+Back: A language that is the complement of a Turing-unrecognizable language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765982531183-->
+END%%
+
+%%ANKI
+Basic
 Let $L$ be a Turing-recognizable language. What TM is guaranteed to exist?
 Back: One that accepts members of language $L$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
@@ -451,6 +461,14 @@ Let $L$ be a co-Turing-recognizable language. What TM is guaranteed to exist?
 Back: One that accepts members of language $\overline{L}$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765251175099-->
+END%%
+
+%%ANKI
+Basic
+What technical advantage is there with using TMs with tapes that only extend infinitely to the right?
+Back: It guarantees moving to the tape's first square completes in a finite amount of time.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766057861070-->
 END%%
 
 ## Configurations
