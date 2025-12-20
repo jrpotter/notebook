@@ -916,7 +916,7 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1764804334330-->
 END%%
 
-## Variants
+## Robustness
 
 There exist many different variants of Turing machines, most of which are equivalent in power. The **robustness** of a computing model is a measure of the models invariance to certain changes. Turing machines are especially robust.
 

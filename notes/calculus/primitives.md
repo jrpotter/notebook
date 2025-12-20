@@ -202,20 +202,20 @@ END%%
 
 ### By Substitution
 
-The method of **integration by substitution** works by "reversing" the operations of the [[derivatives#Chain Rule|chain rule]]. Let $f$ be continuous and $g$ be differentiable with a continuous derivative. Then, by the [[calculus/index#Fundamental Theorem of Calculus|fundamental theorem of calculus]], $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du.$$
+The method of **integration by substitution** works by "reversing" the operations of the [[derivatives#Chain Rule|chain rule]]. Let $g \colon [a, b] \rightarrow I$ be [[derivatives#Continuity|continuously differentiable]] and $f \colon I \rightarrow \mathbb{R}$ be continuous. Then: $$\begin{align*} \int f(g(x)) \cdot g'(x) \,dx & = \int f(u) \,du \\ \int_a^b f[g(x)]g'(x) \,dx & = \int_{g(a)}^{g(b)} f(u) \,du \end{align*}$$
 
 The substitutions $u = g(x)$ and $du = g'(x) \,dx$ are typically performed.
 
 %%ANKI
 Cloze
-Integration by {substitution} is often touted as the reverse {chain rule}.
+Integration by {substitution} is often touted as the reverse {chain} rule.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766016756675-->
 END%%
 
 %%ANKI
 Basic
-Let $f$ be continuous and $g$ be differentiable with a continuous derivative. How is integration by substitution usually expressed?
+Let $f$ be continuous and $g$ be continuously differentiable. How is integration by substitution usually expressed?
 Back: $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766016756683-->
@@ -239,8 +239,8 @@ END%%
 
 %%ANKI
 Basic
-What three conditions are $f$ and $g$ presumed to satisfy in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du$$
-Back: $f$ is continuous, $g$ is differentiable, and $g'$ is continuous.
+What conditions are $f$ and $g$ presumed to satisfy in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du$$
+Back: $f$ is continuous and $g$ is continuously differentiable.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766016756691-->
 END%%
@@ -264,7 +264,7 @@ END%%
 %%ANKI
 Basic
 What conditions are $g$ presumed to satisfy in the following equality? $$\int f(g(x)) \cdot g'(x) \,dx = \int f(u) \,du$$
-Back: $g$ is differentiable and $g'$ is continuous.
+Back: $g$ is continuously differentiable.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766016756698-->
 END%%
@@ -295,7 +295,7 @@ END%%
 
 %%ANKI
 Basic
-Given $u = x^4$, how is the following primitive expressed in terms of $du$? $$\int x^3 \cos{x^4} \,dx$$
+Given $u = x^4$, how is the following integrated by substitution? $$\int x^3 \cos{x^4} \,dx$$
 Back: $$\frac{1}{4} \int \cos{u} \,du$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766016756707-->
@@ -311,7 +311,7 @@ END%%
 
 %%ANKI
 Basic
-Given $u = \cos{x}$, How is the following primitive expressed in terms of $du$? $$\int \cos^2{x} \sin{x} \,dx$$
+Given $u = \cos{x}$, How is the following integrated by substitution? $$\int \cos^2{x} \sin{x} \,dx$$
 Back: $$-\int u^2 \,du$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766016756712-->
@@ -339,6 +339,155 @@ How is the following expressed with definite integrals on say $(a, b)$? $$\int f
 Back: $$\int_a^b f(g(x)) \cdot g'(x) \,dx = \int_{g(a)}^{g(b)} f(u) \,du$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766080413578-->
+END%%
+
+%%ANKI
+Basic
+When integrating the following by substitution, what value does $u$ usually take on? $$\int f(g(x)) \cdot g'(x) \,dx$$
+Back: $u = g(x)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766254952290-->
+END%%
+
+%%ANKI
+Basic
+When integrating the following by substitution, what value does $du$ usually take on? $$\int f(g(x)) \cdot g'(x) \,dx$$
+Back: $du = g'(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766254952293-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following relationship? $$\int_a^b f[g(x)]g'(x) \,dx = \int_{g(a)}^{g(b)} f(u) \,du.$$
+Back: Integration by substitution.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766080413573-->
+END%%
+
+%%ANKI
+Basic
+What conditions are $g$ presumed to satisfy in the following equality? $$\int_a^b f[g(x)]g'(x) \,dx = \int_{g(a)}^{g(b)} f(u) \,du$$
+Back: $g \colon [a, b] \rightarrow I$ is differentiable with a continuous derivative.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766080413576-->
+END%%
+
+%%ANKI
+Basic
+What conditions are $f$ presumed to satisfy in the following equality? $$\int_a^b f[g(x)]g'(x) \,dx = \int_{g(a)}^{g(b)} f(u) \,du$$
+Back: Assuming $g \colon [a, b] \rightarrow I$, $f$ is continuous on $I$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766080413577-->
+END%%
+
+### By Parts
+
+The method of **integration by parts** works by "reversing" the operations of the [[derivatives#Multiplication|product rule]]. Let $f$ and $g$ be both [[derivatives#Continuity|continuously differentiable]]. Then: $$\begin{align*} \int f(x)g'(x) \,dx & = f(x)g(x) - \int f'(x)g(x) \,dx \\ \int_a^b f(x)g'(x) \,dx & = f(x)g(x) \bigg\rvert_a^b - \int_a^b f'(x)g(x) \,dx \end{align*}$$
+
+The substitutions $u = f(x)$, $du = f'(x) \,dx$, $v = g(x)$, and $dv = g'(x) \,dx$ are typically performed.
+
+%%ANKI
+Cloze
+Integration by {parts} is often touted as the reverse {product} rule.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766254952294-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ and $g$ be continuously differentiable. How is integration by parts usually expressed?
+Back: $$\int f(x) g'(x) \,dx = f(x)g(x) - \int f'(x) g(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766254952295-->
+END%%
+
+%%ANKI
+Basic
+How is the following typically rewritten using substitutions $u$ and $v$? $$\int f(x) g'(x) \,dx = f(x)g(x) - \int f'(x) g(x) \,dx$$
+Back: $$\int u \,dv = uv - \int v \,du$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766254952296-->
+END%%
+
+%%ANKI
+Basic
+What conditions are $f$ and $g$ presumed to satisfy in the following equality? $$\int f(x) g'(x) \,dx = f(x)g(x) - \int f'(x) g(x) \,dx$$
+Back: $f$ and $g$ are both continuously differentiable.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766254952297-->
+END%%
+
+%%ANKI
+Basic
+What conditions are $f$ presumed to satisfy in the following equality? $$\int f(x) g'(x) \,dx = f(x)g(x) - \int f'(x) g(x) \,dx$$
+Back: $f$ is continuously differentiable.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766255868562-->
+END%%
+
+%%ANKI
+Basic
+What conditions are $g$ presumed to satisfy in the following equality? $$\int f(x) g'(x) \,dx = f(x)g(x) - \int f'(x) g(x) \,dx$$
+Back: $g$ is continuously differentiable.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766255868565-->
+END%%
+
+%%ANKI
+Basic
+When integrating the following by parts, what value does $u$ usually take on? $$\int f(x)g'(x) \,dx$$
+Back: $u = g(x)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766254952298-->
+END%%
+
+%%ANKI
+Basic
+When integrating the following by parts, what value does $du$ usually take on? $$\int f(x)g'(x) \,dx$$
+Back: $du = f'(x) \,dx$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766254952299-->
+END%%
+
+%%ANKI
+Basic
+When integrating the following by parts, what value does $v$ usually take on? $$\int f(x)g'(x) \,dx$$
+Back: $v = g(x)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766254952300-->
+END%%
+
+%%ANKI
+Basic
+When integrating the following by parts, what value does $dv$ usually take on? $$\int f(x)g'(x) \,dx$$
+Back: $dv = g'(x) dv$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766254952301-->
+END%%
+
+%%ANKI
+Basic
+Given $u = x$ and $v = \cos{x}$, How is the following integrated by parts? $$\int x \cos{x} \,dx$$
+Back: $$x\sin{x} - \int \sin{x} \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766256025550-->
+END%%
+
+%%ANKI
+Basic
+How is the following expressed with definite integrals on say $(a, b)$? $$\int f(x)g'(x) \,dx = f(x)g(x) - \int f'(x)g(x) \,dx$$
+Back: $$\int_a^b f(x)g'(x) \,dx = f(x)g(x) \bigg\rvert_b^a - \int_a^b f'(x)g(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766255868566-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following relationship? $$\int_a^b f(x)g'(x) \,dx = f(x)g(x) \bigg\rvert_b^a - \int_a^b f'(x)g(x) \,dx$$
+Back: Integration by parts.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766255868568-->
 END%%
 
 ## Bibliography

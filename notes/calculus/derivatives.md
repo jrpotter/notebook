@@ -443,7 +443,7 @@ END%%
 
 ### Multiplication
 
-$$(f \cdot g)'(x) = f'(x)g(x) + f(x)g'(x)$$
+Also known as the product rule. $$(f \cdot g)'(x) = f'(x)g(x) + f(x)g'(x)$$
 
 %%ANKI
 Basic
@@ -632,6 +632,8 @@ END%%
 
 Let $f$ be a function differentiable at $x$. Then $f$ is continuous at $x$.
 
+We say a function $f$ is **continuously differentiable** if $f$ is differentiable and its derivative is continuous.
+
 %%ANKI
 Basic
 Let $f$ be differentiable on $(a, b)$. Is $f$ continuous on $(a, b)$?
@@ -702,6 +704,38 @@ Let $f$ and $g$ be real-valued functions, everywhere differentiable. *Why* does 
 Back: Because differentiability implies continuity.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761953903804-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a function $f$ to be continuously differentiable?
+Back: $f$ is differentiable and its derivative is continuous.
+Reference: _Wikipedia_. “Smoothness.” December 1, 2025. [https://en.wikipedia.org/w/index.php?title=Smoothness](https://en.wikipedia.org/w/index.php?title=Smoothness&oldid=1325182258).
+<!--ID: 1766254952302-->
+END%%
+
+%%ANKI
+Basic
+Suppose a function $f$ is differentiable. Is it continuously differentiable?
+Back: Not necessarily.
+Reference: _Wikipedia_. “Smoothness.” December 1, 2025. [https://en.wikipedia.org/w/index.php?title=Smoothness](https://en.wikipedia.org/w/index.php?title=Smoothness&oldid=1325182258).
+<!--ID: 1766254952303-->
+END%%
+
+%%ANKI
+Basic
+Suppose a function $f$ is continuously differentiable. Is it differentiable?
+Back: Yes.
+Reference: _Wikipedia_. “Smoothness.” December 1, 2025. [https://en.wikipedia.org/w/index.php?title=Smoothness](https://en.wikipedia.org/w/index.php?title=Smoothness&oldid=1325182258).
+<!--ID: 1766254952304-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \sin{x}$. Is $f$ continuously differentiable?
+Back: Yes. $f$ is differentiable and $f'(x) = \cos{x}$ is continuous.
+Reference: _Wikipedia_. “Smoothness.” December 1, 2025. [https://en.wikipedia.org/w/index.php?title=Smoothness](https://en.wikipedia.org/w/index.php?title=Smoothness&oldid=1325182258).
+<!--ID: 1766254952305-->
 END%%
 
 ## Extremums
@@ -1126,3 +1160,4 @@ END%%
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+* _Wikipedia_. “Smoothness.” December 1, 2025. [https://en.wikipedia.org/w/index.php?title=Smoothness](https://en.wikipedia.org/w/index.php?title=Smoothness&oldid=1325182258).

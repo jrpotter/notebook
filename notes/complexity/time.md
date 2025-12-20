@@ -97,7 +97,74 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1766239757922-->
 END%%
 
-## Variants
+## Computation Models
+
+Unlike the [[turing#Robustness|robustness]] concept in computability theory, the model of computation used *does* have an affect on time complexity.
+
+That said, all "reasonable" deterministic computational models are **polynomially equivalent**. This means a deterministic model can simulate another with only a polynomial change in running time.
+
+%%ANKI
+Basic
+Can upgrading from a deterministic TM to a nondeterministic TM improve robustness?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766239056287-->
+END%%
+
+%%ANKI
+Basic
+Can upgrading from a deterministic TM to a nondeterministic TM improve time complexity?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766239056289-->
+END%%
+
+%%ANKI
+Basic
+Can upgrading from a single-taped TM to a multitaped TM improve robustness?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766239056277-->
+END%%
+
+%%ANKI
+Basic
+Can upgrading from a single-taped TM to a multitaped TM improve time complexity?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766239056279-->
+END%%
+
+%%ANKI
+Basic
+Time complexity is typically divided between what two class of functions?
+Back: Polynomials and exponentials.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252096627-->
+END%%
+
+%%ANKI
+Cloze
+With respect to standard TMs, multitaped TMs have a(n) {polynomial} difference and NTMs have a(n) {exponential} difference.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252096628-->
+END%%
+
+%%ANKI
+Basic
+Polynomial equivalence is a relation between what two things?
+Back: Two different (reasonable) computation models.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252096629-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a computation model to be polynomially equivalent to another?
+Back: The former can simulate the latter with only a polynomial different in running time.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252096630-->
+END%%
 
 ### Multitaped Turing Machine
 
@@ -124,18 +191,10 @@ END%%
 
 %%ANKI
 Basic
-With respect to computability, can upgrading from a single-taped TM to a multitaped TM improve power?
-Back: No.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1766239056277-->
-END%%
-
-%%ANKI
-Basic
-With respect to complexity, can upgrading from a single-taped TM to a multitaped TM improve power?
+Are standard TMs and multitaped TMs polynomially equivalent?
 Back: Yes.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1766239056279-->
+<!--ID: 1766252096631-->
 END%%
 
 ### Nondeterministic
@@ -171,26 +230,93 @@ END%%
 
 %%ANKI
 Basic
-With respect to computability, can upgrading from a deterministic TM to a nondeterministic TM improve power?
-Back: No.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1766239056287-->
-END%%
-
-%%ANKI
-Basic
-With respect to complexity, can upgrading from a deterministic TM to a nondeterministic TM improve power?
-Back: Yes.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1766239056289-->
-END%%
-
-%%ANKI
-Basic
 Suppose $t(n) \geq n$ and $b \geq 1$ is an integer. What identity is used to show $t(n)b^{t(n)} = 2^{O(t(n))}$?
 Back: $x = 2^{\lg{x}}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766239056292-->
+END%%
+
+%%ANKI
+Basic
+Are standard TMs and NTMs polynomially equivalent?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252096632-->
+END%%
+
+## Class P
+
+$\text{P}$ is the class of languages that are decidable in polynomial time on a deterministic single-tape Turing machine. In other words, $$\text{P} = \bigcup_k \text{TIME}(n^k).$$
+
+%%ANKI
+Basic
+In plain English, how is class $\text{P}$ defined?
+Back: Languages decidable in polynomial time on a deterministic single-tape TM.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252096633-->
+END%%
+
+%%ANKI
+Basic
+How is class $\text{P}$ defined in terms of class $\text{TIME}$?
+Back: $$\text{P} = \bigcup_k \text{TIME}(n^k)$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252096634-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following class? $$\bigcup_k \text{TIME}(n^k)$$
+Back: $\text{P}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252947409-->
+END%%
+
+%%ANKI
+Basic
+Suppose a language $A$ can be solved in $O(n^{1.7})$ time using a standard TM. Is $A \in \text{P}$?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252096635-->
+END%%
+
+%%ANKI
+Basic
+Suppose a language $A$ can be solved in $O(2^{1.7})$ time using a standard TM. Is $A \in \text{P}$?
+Back: Yes, since $O(2^{1.7}) = O(1)$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252096636-->
+END%%
+
+%%ANKI
+Basic
+Suppose a language $A$ can be solved in $O(2^{n})$ time using a standard TM. Is $A \in \text{P}$?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252096637-->
+END%%
+
+%%ANKI
+Basic
+Suppose a language $A$ can be solved in $O(\log{n})$ time using a standard TM. Is $A \in \text{P}$?
+Back: Yes, since $\log{n} < n$ for all $n > 0$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252096638-->
+END%%
+
+%%ANKI
+Cloze
+In complexity theory, {1:polynomial} differences are considered {2:small} whereas {2:exponential} differences are considered {1:large}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252096639-->
+END%%
+
+%%ANKI
+Basic
+Class $\text{P}$ is considered invariant with respect to what models of computation?
+Back: Those polynomially equivalent to deterministic single-taped TMs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766252096640-->
 END%%
 
 ## Bibliography
