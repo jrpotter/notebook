@@ -618,9 +618,17 @@ Notation $\pi_i$ is typically preferred to $\pi_i^n$ when $n$ is known.
 %%ANKI
 Basic
 With respect to ordered pairs, what does $\pi_1$ likely refer to?
-Back: The $1$st-projection function
+Back: The $1$st-projection function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1766065859418-->
+END%%
+
+%%ANKI
+Basic
+With respect to ordered pairs, what does $\pi_2$ likely refer to?
+Back: The $2$nd-projection function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1766155326026-->
 END%%
 
 %%ANKI

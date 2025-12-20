@@ -1235,7 +1235,7 @@ What is the result of `x` in the following?
 ```c
 int x = f(a), f(b);
 ```
-Back: N/A. This is invalid syntax.
+Back: The result of `f(b)`.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757732499353-->
 END%%

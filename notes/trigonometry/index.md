@@ -791,7 +791,7 @@ END%%
 %%ANKI
 Basic
 For what values $t$ does $\tan{t} = 0$?
-Back: $k\pi$ for all integers $k$.
+Back: $t = k\pi$ for all integers $k$.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1744900283758-->
 END%%
@@ -1565,7 +1565,7 @@ END%%
 %%ANKI
 Basic
 For what values of $t$ does the following hold true? $$\tan^{-1}{(\tan t)} = t$$
-Back: $(-\pi / 2, \pi / 2)$
+Back: $t \in (-\pi / 2, \pi / 2)$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1750992757056-->
 END%%
@@ -1573,7 +1573,7 @@ END%%
 %%ANKI
 Basic
 For what values of $y$ does the following hold true? $$\tan{(\tan^{-1} y)} = y$$
-Back: $\mathbb{R}$
+Back: $y \in \mathbb{R}$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1750992757060-->
 END%%

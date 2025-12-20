@@ -1,5 +1,5 @@
 ---
-title: Order of Growth
+title: Asymptotic Analysis
 TARGET DECK: Obsidian::STEM
 FILE TAGS: complexity
 tags:
@@ -9,67 +9,19 @@ tags:
 
 ## Overview
 
-The **running time** of an algorithm is usually considered as a function of its **input size**. How input size is measured depends on the problem at hand. For instance, [[algorithms/sorting/index|sorting]] algorithms have an input size corresponding to the number of elements to sort.
+The most commonly used method for analyzing [[complexity/index#Order of Growth|order of growth]] is **asymptotic analysis**. Here resources of an algorithm are measured by some function whose leading coefficients and lower-ordered terms are ignored.
 
 %%ANKI
 Basic
-What is the input of a function used to measure a program's running time?
-Back: The size of the program's input.
+What is the most commonly used method for analyzing order of growth?
+Back: Asymptotic analysis.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1707334419352-->
+<!--ID: 1766197920897-->
 END%%
 
 %%ANKI
 Basic
-How do you determine the input size used to measure an algorithm's running time?
-Back: This depends entirely on the specific problem/algorithm.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1707334419356-->
-END%%
-
-%%ANKI
-Basic
-What *concrete* measure is typically used to measure running time?
-Back: The number of primitive operations executed.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1707334419359-->
-END%%
-
-%%ANKI
-Basic
-What *abstract* measure is typically used to measure running time?
-Back: It's order of growth.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1707344177499-->
-END%%
-
-%%ANKI
-Basic
-Why does Cormen et al. state the scope of average-case analysis is limited?
-Back: What constitutes an "average" input isn't always clear.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1707334419363-->
-END%%
-
-%%ANKI
-Basic
-What about running time are algorithm designers mostly interested in?
-Back: It's order of growth.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1707344177503-->
-END%%
-
-%%ANKI
-Basic
-How does order of growth relate to running time?
-Back: Order of growth measures how quickly running time grows with respect to input size.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1707344177506-->
-END%%
-
-%%ANKI
-Basic
-Why are lower-ordered terms ignored when determining order of growth?
+With respect to polynomials, why does asymptotic analysis ignore lower-ordered terms?
 Back: They become less significant as input size grows.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707344177510-->
@@ -77,7 +29,7 @@ END%%
 
 %%ANKI
 Basic
-Why are leading coefficients ignored when determining order of growth?
+With respect to polynomials, why does asymptotic analysis ignore leading coefficients?
 Back: They become less significant as input size grows.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707344177513-->
@@ -85,34 +37,10 @@ END%%
 
 %%ANKI
 Basic
-Polynomials describing order of growth usually have what two parts ignored?
+Polynomials used in asymptotic analysis usually have what two parts ignored?
 Back: Coefficients and lower-ordered terms.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1707344177515-->
-END%%
-
-%%ANKI
-Basic
-How do we simplify $\Theta(an^2 + bn + c)$?
-Back: As $\Theta(n^2)$.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1708974221765-->
-END%%
-
-%%ANKI
-Basic
-Explain why asymptotic notation is useful for *both* running times and space usage.
-Back: Asymptotic notation represents functions in a general sense.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1708974221769-->
-END%%
-
-%%ANKI
-Basic
-*Which* running time are algorithm designers typically concerned with?
-Back: Worst-case running time.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1708974221774-->
 END%%
 
 %%ANKI
@@ -121,22 +49,6 @@ In asymptotic notation, how is constant space usage denoted?
 Back: Space usage is $O(1)$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708974221778-->
-END%%
-
-%%ANKI
-Basic
-How could we replace equality $f(n) = \Theta(g(n))$ to be less "abusive"?
-Back: Replace $=$ with $\in$.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1708974221783-->
-END%%
-
-%%ANKI
-Basic
-How is equality abused in $f(n) = \Theta(g(n))$?
-Back: Here $=$ actually refers to set membership.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1708974221788-->
 END%%
 
 %%ANKI
@@ -169,56 +81,43 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1708974221871-->
 END%%
 
-When encountering equations with asymptotic notation on both sides of the equality, we interpret the equation using the following rule:
-
-> No matter how the anonymous functions are chosen on the left of the equal sign, there is a way to choose the anonymous functions on the right of the equal sign to make the equation valid.
-
-For example, $2n^2 + \Theta(n) = \Theta(n^2)$ states that for all $f(n) \in \Theta(n)$, there exists some $g(n) \in \Theta(n^2)$ such that $2n^2 + f(n) = g(n)$.
-
 %%ANKI
 Basic
-Asymptotic notation on the RHS of an equation is a stand in for what?
-Back: *Some* function in the set that satisfies the equation.
+Explain why asymptotic notation is useful for *both* running times and space usage.
+Back: Asymptotic notation represents order of growth in a general sense.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002305-->
+<!--ID: 1708974221769-->
 END%%
 
 %%ANKI
 Basic
-Asymptotic notation on the LHS of an equation is a stand in for what?
-Back: *Any* function in the set.
+What kind of running time are algorithm designers typically concerned with?
+Back: Worst-case running time.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002309-->
-END%%
-
-%%ANKI
-Cloze
-In equations containing asymptotic notation, {1:LHS} is to {1:$\forall$} whereas {2:RHS} is to {2:$\exists$}.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002313-->
+<!--ID: 1708974221774-->
 END%%
 
 %%ANKI
 Basic
-How is $2n^2 + \Theta(n) = \Theta(n^2)$ written in propositional logic?
-Back: $\forall f(n) \in \Theta(n), \exists g(n) \in \Theta(n^2), 2n^2 + f(n) = g(n)$
+*Why* is it unnecessary to specify the logarithmic base in e.g. $f(n) = O(\log{n})$?
+Back: Because logarithms with different bases differ only by a constant factor.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002316-->
+<!--ID: 1766198680258-->
 END%%
 
 %%ANKI
 Basic
-*Why* is $\sum_{i=1}^n O(i) \neq O(1) + O(2) + \cdots + O(n)$?
-Back: The number of anonymous functions is equal to the number of times the asymptotic notation appears.
+What logarithmic property justifies disregarding the base in e.g. $f(n) = O(\log{n})$?
+Back: The change of base rule.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002319-->
+<!--ID: 1766198680261-->
 END%%
 
 ## Θ-notation
 
-![[theta-notation.png]]
+$\Theta$-notation refers to a strict lower- and upper-bound. It is defined as set $$\Theta(g(n)) = \{ f(n) \mid \exists c_1, c_2, n_0 > 0, \forall n \geq n_0, 0 \leq c_1g(x) \leq f(n) \leq c_2g(n) \}.$$
 
-$\Theta$-notation refers to a strict lower- and upper-bound. It is defined as set $$\Theta(g(n)) = \{ f(n) \mid \exists c_1, c_2, n_0 > 0, \forall n \geq n_0, 0 \leq c_1g(x) \leq f(n) \leq c_2g(n) \}$$
+![[theta-notation.png]]
 
 %%ANKI
 Basic
@@ -455,9 +354,9 @@ END%%
 
 ## $O$-notation
 
-![[big-o-notation.png]]
+$O$-notation refers to a strict upper-bound. It is defined as set $$O(g(n)) = \{ f(n) \mid \exists c, n_0 > 0, \forall n \geq n_0, 0 \leq f(n) \leq cg(n) \}.$$
 
-$O$-notation refers to a strict upper-bound. It is defined as set $$O(g(n)) = \{ f(n) \mid \exists c, n_0 > 0, \forall n \geq n_0, 0 \leq f(n) \leq cg(n) \}$$
+![[big-o-notation.png]]
 
 %%ANKI
 Basic
@@ -669,7 +568,7 @@ END%%
 
 ## $o$-notation
 
-$o$-notation refers to an upper bound that is not asymptotically tight. It is defined as set $$o(g(n)) = \{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq f(n) < cg(n) \}$$
+$o$-notation refers to an upper bound that is not asymptotically tight. It is defined as set $$o(g(n)) = \{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq f(n) < cg(n) \}.$$
 
 %%ANKI
 Basic
@@ -846,9 +745,9 @@ END%%
 
 ## Ω-notation
 
-![[big-omega-notation.png]]
+$\Omega$-notation refers to a strict lower-bound. It is defined as set $$\Omega(g(n)) = \{ f(n) \mid \exists c, n_0 > 0, \forall n \geq n_0, 0 \leq cg(n) \leq f(n) \}.$$
 
-$\Omega$-notation refers to a strict lower-bound. It is defined as set $$\Omega(g(n)) = \{ f(n) \mid \exists c, n_0 > 0, \forall n \geq n_0, 0 \leq cg(n) \leq f(n) \}$$
+![[big-omega-notation.png]]
 
 %%ANKI
 Basic
@@ -1072,7 +971,7 @@ END%%
 
 ## ω-notation
 
-$\omega$-notation refers to a lower bound that is not asymptotically tight. It is defined as set $$\omega(g(n)) = \{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq cg(n) < f(n) \}$$
+$\omega$-notation refers to a lower bound that is not asymptotically tight. It is defined as set $$\omega(g(n)) = \{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq cg(n) < f(n) \}.$$
 
 %%ANKI
 Basic
@@ -1247,6 +1146,126 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1709752223586-->
 END%%
 
+## Arithmetic
+
+When encountering equations with asymptotic notation on both sides of the equality, we interpret the equation using the following rule:
+
+> No matter how the anonymous functions are chosen on the left of the equal sign, there is a way to choose the anonymous functions on the right of the equal sign to make the equation valid.
+
+For example, $2n^2 + \Theta(n) = \Theta(n^2)$ states that for all $f(n) \in \Theta(n)$, there exists some $g(n) \in \Theta(n^2)$ such that $2n^2 + f(n) = g(n)$.
+
+%%ANKI
+Basic
+How could we replace equality $f(n) = \Theta(g(n))$ to be less "abusive"?
+Back: Replace $=$ with $\in$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1708974221783-->
+END%%
+
+%%ANKI
+Basic
+How is equality abused in $f(n) = \Theta(g(n))$?
+Back: Here $=$ actually refers to set membership.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1708974221788-->
+END%%
+
+%%ANKI
+Basic
+Asymptotic notation on the RHS of an equation is a stand in for what?
+Back: *Some* function in the set that satisfies the equation.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002305-->
+END%%
+
+%%ANKI
+Basic
+Asymptotic notation on the LHS of an equation is a stand in for what?
+Back: *Any* function in the set.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002309-->
+END%%
+
+%%ANKI
+Cloze
+In equations containing asymptotic notation, {1:LHS} is to {1:$\forall$} whereas {2:RHS} is to {2:$\exists$}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002313-->
+END%%
+
+%%ANKI
+Basic
+How is $2n^2 + \Theta(n) = \Theta(n^2)$ written in propositional logic?
+Back: $\forall f(n) \in \Theta(n), \exists g(n) \in \Theta(n^2), 2n^2 + f(n) = g(n)$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002316-->
+END%%
+
+%%ANKI
+Basic
+*Why* is $\sum_{i=1}^n O(i) \neq O(1) + O(2) + \cdots + O(n)$?
+Back: The number of anonymous functions is equal to the number of times the asymptotic notation appears.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002319-->
+END%%
+
+%%ANKI
+Basic
+How do we simplify $f(n) = \Theta(an^2 + bn + c)$?
+Back: As $f(n) = \Theta(n^2)$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1708974221765-->
+END%%
+
+%%ANKI
+Basic
+How do we simplify $f(n) = \Theta(3n\log{n} + 5n\log\log{n})$?
+Back: As $f(n) = \Theta(n\log{n})$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1766198680247-->
+END%%
+
+%%ANKI
+Basic
+How do we simplify $f(n) = O(n^2) + O(n)$?
+Back: As $f(n) = O(n^2)$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766199769872-->
+END%%
+
+%%ANKI
+Basic
+Replace asymptotic notation with constants. Expression $f(n) = O(n^2)$ represents what upper bound?
+Back: $cn^2$ for some constant $c$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766199769877-->
+END%%
+
+%%ANKI
+Basic
+Replace asymptotic notation with constants. Expression $f(n) = 2^{O(n)}$ represents what upper bound?
+Back: $2^{cn}$ for some constant $c$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766199769880-->
+END%%
+
+%%ANKI
+Basic
+Replace asymptotic notation with constants. Expression $f(n) = 2^{O(\log{n})}$ represents what upper bound?
+Back: $n^c$ for some constant $c$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766199769882-->
+END%%
+
+%%ANKI
+Basic
+Replace asymptotic notation with constants. Expression $f(n) = n^{O(1)}$ represents what upper bound?
+Back: $n^c$ for some constant $c$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766199769885-->
+END%%
+
 ## Bibliography
 
+* Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
