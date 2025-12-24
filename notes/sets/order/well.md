@@ -295,7 +295,7 @@ For any two well-ordered structures, either they are [[structures#Isomorphisms|i
 2. $\langle A, <_A \rangle \cong \langle \mathop{\text{seg}}b, <_B^\circ \rangle$ for some $b \in B$,
 3. $\langle \mathop{\text{seg}}a, <_A^\circ \rangle \cong \langle B, <_B \rangle$ for some $a \in A$.
 
-Note the $\degree$ symbol is used to denote an [[set/order/index#Induced Orderings|induced ordering]].
+Note the $\degree$ symbol is used to denote an [[sets/order/index#Induced Orderings|induced ordering]].
 
 %%ANKI
 Basic

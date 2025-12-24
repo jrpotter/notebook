@@ -437,7 +437,7 @@ END%%
 %%ANKI
 Basic
 When integrating the following by parts, what value does $u$ usually take on? $$\int f(x)g'(x) \,dx$$
-Back: $u = g(x)$
+Back: $u = f(x)$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766254952298-->
 END%%
@@ -461,14 +461,14 @@ END%%
 %%ANKI
 Basic
 When integrating the following by parts, what value does $dv$ usually take on? $$\int f(x)g'(x) \,dx$$
-Back: $dv = g'(x) dv$
+Back: $dv = g'(x) \,dx$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766254952301-->
 END%%
 
 %%ANKI
 Basic
-Given $u = x$ and $v = \cos{x}$, How is the following integrated by parts? $$\int x \cos{x} \,dx$$
+Given $u = x$ and $dv = \cos{x} \,dx$, How is the following integrated by parts? $$\int x \cos{x} \,dx$$
 Back: $$x\sin{x} - \int \sin{x} \,dx$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766256025550-->

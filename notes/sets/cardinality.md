@@ -217,7 +217,7 @@ END%%
 
 ### Power sets
 
-No set is equinumerous to its [[set/index#Power Set Axiom|power set]]. This is typically shown using a diagonalization argument. For any set $A$, $^A2 \approx \mathscr{P}(A)$.
+No set is equinumerous to its [[sets/index#Power Set Axiom|power set]]. This is typically shown using a diagonalization argument. For any set $A$, $^A2 \approx \mathscr{P}(A)$.
 
 %%ANKI
 Basic

@@ -1,7 +1,7 @@
 ---
 title: Logarithms
 TARGET DECK: Obsidian::STEM
-FILE TAGS: arithmetic::logarithm
+FILE TAGS: arithmetic
 tags:
   - arithmetic
   - logarithm
@@ -11,13 +11,7 @@ tags:
 
 In the equation $b^y = x$, the exponent $y$ is known as the **logarithm** of the number $x$ using a **base** $b$, denoted $y = \log_b{x}$. The **characteristic** refers to the integer part of the logarithm whereas the **mantissa** refers to the fractional part. The mantissa is always a positive number between $0$ and $1$.
 
-In real analysis, the base $b$ is restricted to a positive value $\neq 1$. That is, $0 < b < 1$ or $b > 1$.
-
-A few notational conveniences are introduced for common bases:
-
-* $\log{x}$, the **common logarithm**, assumes a base $10$.
-* $\ln{x}$, the **natural logarithm**, assumes a base $e$.
-* $\lg{x}$, the **binary logarithm**, assumes a base $2$.
+In real analysis, base $b$ is restricted to a positive value $\neq 1$. That is, $0 < b < 1$ or $b > 1$.
 
 %%ANKI
 Basic
@@ -62,7 +56,7 @@ END%%
 Basic
 Consider equation $b^y = x$. What term is used to refer to $x$?
 Back: The antilogarithm.
-Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+Reference: _Wikipedia_. “Logarithm.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1297157143).
 <!--ID: 1746064353211-->
 END%%
 
@@ -70,14 +64,14 @@ END%%
 Basic
 The antilogarithm is an antiquated term replaced by what?
 Back: An "exponential function".
-Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+Reference: _Wikipedia_. “Logarithm.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1297157143).
 <!--ID: 1746064353212-->
 END%%
 
 %%ANKI
 Cloze
 A(n) {exponential} function might also be called an {antilogarithm}.
-Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+Reference: _Wikipedia_. “Logarithm.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1297157143).
 <!--ID: 1746064935051-->
 END%%
 
@@ -125,7 +119,7 @@ END%%
 Basic
 Given the following, what does the characteristic evaluate to?  $$\log_{10}(120) = 2.07918$$
 Back: $2$
-Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+Reference: _Wikipedia_. “Logarithm.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1297157143).
 <!--ID: 1746064353215-->
 END%%
 
@@ -133,21 +127,21 @@ END%%
 Basic
 Given the following, what does the mantissa evaluate to? $$\log_{10}(120) = 2.07918$$
 Back: $0.07918$
-Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+Reference: _Wikipedia_. “Logarithm.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1297157143).
 <!--ID: 1746064353216-->
 END%%
 
 %%ANKI
 Cloze
 The {characteristic} refers to the {integer} part of a logarithm.
-Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+Reference: _Wikipedia_. “Logarithm.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1297157143).
 <!--ID: 1746064353217-->
 END%%
 
 %%ANKI
 Cloze
 The {mantissa} refers to the {fractional} part of a logarithm.
-Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+Reference: _Wikipedia_. “Logarithm.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1297157143).
 <!--ID: 1746064353218-->
 END%%
 
@@ -155,7 +149,7 @@ END%%
 Basic
 The mantissa of a logarithm is restricted to what range of values?
 Back: A number in range $[0, 1)$.
-Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+Reference: _Wikipedia_. “Logarithm.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1297157143).
 <!--ID: 1746064353219-->
 END%%
 
@@ -163,7 +157,7 @@ END%%
 Basic
 Let the base-$10$ characteristic of $x$ be $c$. What is the characteristic of $x \cdot 10$?
 Back: $c + 1$
-Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+Reference: _Wikipedia_. “Logarithm.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1297157143).
 <!--ID: 1746064353220-->
 END%%
 
@@ -171,7 +165,7 @@ END%%
 Basic
 Let the base-$10$ characteristic of $x$ be $c$. What is the characteristic of $x \div 10$?
 Back: $c - 1$
-Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+Reference: _Wikipedia_. “Logarithm.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1297157143).
 <!--ID: 1749393067542-->
 END%%
 
@@ -179,7 +173,7 @@ END%%
 Basic
 Let the base-$10$ mantissa of $x$ be $m$. What is the mantissa of $x \cdot 10$?
 Back: $m$
-Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+Reference: _Wikipedia_. “Logarithm.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1297157143).
 <!--ID: 1746064353221-->
 END%%
 
@@ -187,7 +181,7 @@ END%%
 Basic
 Let the base-$10$ mantissa of $x$ be $m$. What is the mantissa of $x \div 10$?
 Back: $m$
-Reference: “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
+Reference: _Wikipedia_. “Logarithm.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1297157143).
 <!--ID: 1749393067549-->
 END%%
 
@@ -457,102 +451,6 @@ END%%
 
 %%ANKI
 Basic
-What base is assumed in notation $\log{x}$?
-Back: $10$
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750269797640-->
-END%%
-
-%%ANKI
-Basic
-What name is given to notation $\log$ (with no explicit base)?
-Back: The common logarithm.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750270145256-->
-END%%
-
-%%ANKI
-Basic
-The common logarithm assumes what base?
-Back: $10$
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750270145264-->
-END%%
-
-%%ANKI
-Basic
-What base is assumed in notation $\ln{x}$?
-Back: $e$
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750269797645-->
-END%%
-
-%%ANKI
-Basic
-The natural logarithm assumes what base?
-Back: $e$
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750270145266-->
-END%%
-
-%%ANKI
-Basic
-What name is given to notation $\ln$?
-Back: The natural logarithm.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750269797650-->
-END%%
-
-%%ANKI
-Basic
-What base is assumed in notation $\lg{x}$?
-Back: $2$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1750269797654-->
-END%%
-
-%%ANKI
-Basic
-The binary logarithm assumes what base?
-Back: $2$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1750270145269-->
-END%%
-
-%%ANKI
-Basic
-What name is given to notation $\lg$?
-Back: The binary logarithm.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750269797659-->
-END%%
-
-%%ANKI
-Basic
-How can we write $\log{x}$ with an explicit base?
-Back: As $\log_{10}{x}$.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750269797664-->
-END%%
-
-%%ANKI
-Basic
-How can we write $\ln{x}$ with an explicit base?
-Back: As $\log_e{x}$.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750269797668-->
-END%%
-
-%%ANKI
-Basic
-How can we write $\lg{x}$ with an explicit base?
-Back: As $\log_2{x}$.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750269797672-->
-END%%
-
-%%ANKI
-Basic
 Which arithmetic operation converts multiplication problems into addition problems?
 Back: Logarithms.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
@@ -583,7 +481,210 @@ Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1753386691595-->
 END%%
 
-## Inverses
+## Common Bases
+
+A few notational conveniences are introduced for common bases.
+
+### Common
+
+The **common logarithm**, denoted $\log{x}$, assumes a base $10$.
+
+%%ANKI
+Basic
+What base is assumed in notation $\log{x}$?
+Back: $10$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797640-->
+END%%
+
+%%ANKI
+Basic
+What name is given to notation $\log$ (with no explicit base)?
+Back: The common logarithm.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750270145256-->
+END%%
+
+%%ANKI
+Basic
+The common logarithm assumes what base?
+Back: $10$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750270145264-->
+END%%
+
+%%ANKI
+Basic
+How can we equivalently rewrite $\log{x}$ with an explicit base?
+Back: As $\log_{10}{x}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797664-->
+END%%
+
+### Natural
+
+The **natural logarithm**, denoted $\ln{x}$, assumes a base $e$.
+
+Oftentimes the logarithm is defined before [[exponentials]]. If $x$ is a positive real number, the natural logarithm is defined as the [[riemann|Riemann integral]] $$\ln{x} = \int_1^x \frac{1}{t} \,dt.$$ 
+
+%%ANKI
+Basic
+What base is assumed in notation $\ln{x}$?
+Back: $e$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797645-->
+END%%
+
+%%ANKI
+Basic
+The natural logarithm assumes what base?
+Back: $e$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750270145266-->
+END%%
+
+%%ANKI
+Basic
+What name is given to notation $\ln$?
+Back: The natural logarithm.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797650-->
+END%%
+
+%%ANKI
+Basic
+How can we equivalently rewrite $\ln{x}$ with an explicit base?
+Back: As $\log_e{x}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797668-->
+END%%
+
+%%ANKI
+Basic
+How does Apostol define the natural logarithm?
+Back: For positive real $x$, $$\ln{x} = \int_1^x \frac{1}{t} \,dt.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506287-->
+END%%
+
+%%ANKI
+Basic
+What is the indefinite integral of $\int x^{-1} \,dx$?
+Back: $\ln{x}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506302-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of the $\ln$ function?
+Back: Positive real $x$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506311-->
+END%%
+
+%%ANKI
+Basic
+What does $\ln{0}$ evaluate to?
+Back: Undefined.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506323-->
+END%%
+
+%%ANKI
+Basic
+What does $\ln{1}$ evaluate to?
+Back: $0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506332-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \ln{x}$. What does $f'(x)$ evaluate to?
+Back: $x^{-1}$ for all $x > 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506341-->
+END%%
+
+%%ANKI
+Basic
+Let $x, y > 0$. How is the following simplified? $$\int_1^x \frac{1}{t} \,dt + \int_1^y \frac{1}{t} \,dt$$
+Back: As $$\int_1^{xy} \frac{1}{t} \,dt.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506349-->
+END%%
+
+%%ANKI
+Basic
+What points of the graph of $f(x) = \ln{x}$ lies below the horizontal axis?
+Back: All $0 < x < 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766533071927-->
+END%%
+
+%%ANKI
+Basic
+What points of the graph of $f(x) = \ln{x}$ lies above the horizontal axis?
+Back: All $x > 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766533071935-->
+END%%
+
+%%ANKI
+Basic
+What points of the graph of $f(x) = \ln{x}$ coincides with the horizontal axis?
+Back: Just $x = 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766533071938-->
+END%%
+
+%%ANKI
+Cloze
+The slope of $f(x) = \ln{x}$ is {$1$} at {$x = 1$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766533071941-->
+END%%
+
+### Binary
+
+The **binary logarithm**, denoted $\lg{x}$, assumes a base $2$.
+
+%%ANKI
+Basic
+What base is assumed in notation $\lg{x}$?
+Back: $2$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1750269797654-->
+END%%
+
+%%ANKI
+Basic
+The binary logarithm assumes what base?
+Back: $2$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1750270145269-->
+END%%
+
+%%ANKI
+Basic
+What name is given to notation $\lg$?
+Back: The binary logarithm.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797659-->
+END%%
+
+%%ANKI
+Basic
+How can we equivalently rewrite $\lg{x}$ with an explicit base?
+Back: As $\log_2{x}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797672-->
+END%%
+
+## Properties
+
+### Inverse Rule
 
 Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\begin{align*} \log_b{b^x} & = x \\ b^{\log_b{x}} & = x \end{align*}$$
 
@@ -779,9 +880,9 @@ Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1747792150904-->
 END%%
 
-## Product Rule
+### Product Rule
 
-Given $b > 0$, $b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x \cdot y)} = \log_b{x} + \log_b{y}$$
+Given $b > 0$, $b \neq 1$ and $x, y \in \mathbb{R}$, $\log_b{(x \cdot y)} = \log_b{x} + \log_b{y}$.
 
 %%ANKI
 Basic
@@ -847,7 +948,23 @@ Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1747141197047-->
 END%%
 
-## Quotient Rule
+%%ANKI
+Basic
+What functional equation does Apostol present to motivate the logarithm?
+Back: $f(xy) = f(x) + f(y)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506356-->
+END%%
+
+%%ANKI
+Basic
+Which logarithmic property does functional equation $f(xy) = f(x) + f(y)$ relate to?
+Back: The product rule.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506363-->
+END%%
+
+### Quotient Rule
 
 Given $b > 0$, $b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x \div y)} = \log_b{x} - \log_b{y}$$
 
@@ -915,7 +1032,7 @@ Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1749393067589-->
 END%%
 
-## Power Rule
+### Power Rule
 
 Given $b > 0$, $b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x^y)} = y\log_b{x}$$
 
@@ -967,7 +1084,7 @@ Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1749996371385-->
 END%%
 
-## Change of Base Rule
+### Change of Base Rule
 
 Given $p, q > 0$ such that $p \neq 1$ and $q \neq 1$, and $x, y \in \mathbb{R}$, $$\log_p{x} = \frac{\log_q{x}}{\log_q{p}}$$
 
@@ -1013,6 +1130,7 @@ END%%
 
 ## Bibliography
 
-* “Logarithm.” In _Wikipedia_, April 23, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1287087953).
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+* Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 * Umbarger, Dan. _Explaining Logarithms_, n.d.
+* _Wikipedia_. “Logarithm.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Logarithm](https://en.wikipedia.org/w/index.php?title=Logarithm&oldid=1297157143).

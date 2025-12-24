@@ -38,6 +38,8 @@ END%%
 
 An **equation** is a relation between two expressions that may be true for some values of the variables. To **solve** an equation means to find all of the values for the variables that make the two expressions on either side of the equation equal to one another.
 
+A **functional equation** is an equation that expresses a relationship between the values of a function at two or more points.
+
 An **identity** is an equation that is true for all allowable values of the variables.
 
 %%ANKI
@@ -87,7 +89,24 @@ Reference: “Algebra.” In _Wikipedia_, July 1, 2025. [https://en.wikipedia.or
 <!--ID: 1755181906108-->
 END%%
 
+%%ANKI
+Basic
+What is a functional equation?
+Back: An equation that relates the value of a function at two or more points.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506370-->
+END%%
+
+%%ANKI
+Basic
+What does the solution to a functional equation refer to?
+Back: Any function that satisfies the expressed relationship.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506375-->
+END%%
+
 ## Bibliography
 
 * “Algebra.” In _Wikipedia_, July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+* Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

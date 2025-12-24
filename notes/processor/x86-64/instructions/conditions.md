@@ -187,13 +187,6 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 END%%
 
 %%ANKI
-Cloze
-{1:`CMP`} is to {2:`SUB`} as {2:`TEST`} is to {1:`AND`}.
-Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1717941416508-->
-END%%
-
-%%ANKI
 Basic
 What registers does `TEST` affect?
 Back: The condition code registers.

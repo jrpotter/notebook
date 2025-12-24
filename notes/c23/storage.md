@@ -1286,7 +1286,7 @@ END%%
 %%ANKI
 Basic
 Consider a `constexpr` object in block-scope without the `static` specifier. What is this object's storage duration?
-Back: Automatic.
+Back: Static or automatic.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759792056002-->
 END%%

@@ -121,7 +121,7 @@ END%%
 
 %%ANKI
 Basic
-Assume C23 Why is the following considered valid?
+Assume C23. Why is the following considered valid?
 ```c
 void matrix_func(int N, const float x[N][N]);
 

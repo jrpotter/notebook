@@ -916,9 +916,9 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1764804334330-->
 END%%
 
-## Robustness
+## Model Independence
 
-There exist many different variants of Turing machines, most of which are equivalent in power. The **robustness** of a computing model is a measure of the models invariance to certain changes. Turing machines are especially robust.
+A computation model's invariance to certain changes is known as its **robustness**. The Turing machine is an especially robust computing model - no variation of the model is known to increase the recognizing power of the Turing machine. In addition, seemingly distinct computation models (e.g. [[lambda_calculus/index|lambda calculus]]) were proven to be equivalent in power.
 
 %%ANKI
 Basic
@@ -944,15 +944,31 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1764620689048-->
 END%%
 
-### Multitaped
-
-A **multitape Turing machine** is a Turing machine with several tapes. Each tape has its own head for reading and writing, with the initial input set on the first tape and other tapes starting blank. A multitape Turing machine with $k$ tapes has transition function: $$\delta \colon Q \times \Gamma^k \rightarrow Q \times \Gamma^k \times \{L, R\}^k.$$
-
-Multitape Turing machines are equivalent in power to a ordinary Turing machines.
+%%ANKI
+Basic
+With respect to computability theory, what does "model independence" refer to?
+Back: The underlying computation model, if sufficiently powerful, is not important.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766283008708-->
+END%%
 
 %%ANKI
 Basic
-What is a multitape Turing machine?
+Model independence of computability theory is related to what belief?
+Back: The Church-Turing thesis.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766336110020-->
+END%%
+
+### Multi-tape
+
+A **multi-tape Turing machine** is a Turing machine with several tapes. Each tape has its own head for reading and writing, with the initial input set on the first tape and other tapes starting blank. A multi-tape Turing machine with $k$ tapes has transition function: $$\delta \colon Q \times \Gamma^k \rightarrow Q \times \Gamma^k \times \{L, R\}^k.$$
+
+Multi-tape Turing machines are equivalent in power to a ordinary Turing machines.
+
+%%ANKI
+Basic
+What is a multi-tape Turing machine?
 Back: A Turing machine with one or more tapes.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764735547813-->
@@ -960,7 +976,7 @@ END%%
 
 %%ANKI
 Basic
-How do standard Turing machines and multitape Turing machines relate to one another?
+How do standard Turing machines and multi-tape Turing machines relate to one another?
 Back: They are equivalent in power.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764735547816-->
@@ -968,15 +984,15 @@ END%%
 
 %%ANKI
 Basic
-How does a multitape TM simulate a standard TM?
-Back: Directly. A standard TM is a specialization of a multitape TM.
+How does a multi-tape TM simulate a standard TM?
+Back: Directly. A standard TM is a specialization of a multi-tape TM.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764735547819-->
 END%%
 
 %%ANKI
 Basic
-How does a standard TM simulate a multitape TM?
+How does a standard TM simulate a multi-tape TM?
 Back: As writing each input on the single tape, separated with a special symbol.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764735547823-->
@@ -984,7 +1000,7 @@ END%%
 
 %%ANKI
 Basic
-A multitape Turing machine begins with what tape contents?
+A multi-tape Turing machine begins with what tape contents?
 Back: With the corresponding input on the first tape and blanks on the other tapes.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764735547826-->
@@ -992,7 +1008,7 @@ END%%
 
 %%ANKI
 Basic
-Let $M$ be a multitape TM with $k$ tapes. What is the domain of its transition function?
+Let $M$ be a multi-tape TM with $k$ tapes. What is the domain of its transition function?
 Back: $Q \times \Gamma^k$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764735547830-->
@@ -1000,7 +1016,7 @@ END%%
 
 %%ANKI
 Basic
-Let $M$ be a multitape TM with $k$ tapes. What is the codomain of its transition function?
+Let $M$ be a multi-tape TM with $k$ tapes. What is the codomain of its transition function?
 Back: $Q \times \Gamma^k \times \{L, R\}^k$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764735547834-->
@@ -1147,7 +1163,7 @@ END%%
 
 ## Church-Turing Thesis
 
-The **Church-Turing thesis** states that a problem has an [[algorithms/index|effective method]] if and only if it is computable by a Turing machine. The thesis aims to formalize what an effective method (i.e. an algorithm) is.
+By virtue of [[#Model Independence|model independence]], the **Church-Turing thesis** states that a problem has an [[algorithms/index|effective method]] if and only if it is computable by a Turing machine. The thesis aims to formalize what an effective method (i.e. an algorithm) is.
 
 %%ANKI
 Basic

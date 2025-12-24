@@ -268,7 +268,7 @@ END%%
 
 %%ANKI
 Basic
-Are hardware interrupts sychronous or asynchronous?
+Are hardware interrupts synchronous or asynchronous?
 Back: Asynchronous.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752093058208-->

@@ -893,8 +893,8 @@ A **variable** is a name used to represent a string of text, called the variable
 
 %%ANKI
 Basic
-How are variables substituted within a rule?
-Back: Using `$()` or `${}` syntax.
+What syntax is used to substitute variables within a rule?
+Back: Using `\$()` or `\${}` syntax.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1762562126714-->
 END%%

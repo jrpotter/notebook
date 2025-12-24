@@ -1,7 +1,7 @@
 ---
 title: Radices
 TARGET DECK: Obsidian::STEM
-FILE TAGS: arithmetic::radix
+FILE TAGS: arithmetic
 tags:
   - arithmetic
   - radix
