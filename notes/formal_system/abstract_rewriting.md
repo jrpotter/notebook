@@ -13,8 +13,8 @@ In an **abstract rewriting system** (ARS), an object is said to be in **normal f
 
 Examples of normal form include:
 
-* [[truth-tables|Conjunctive Normal Form]]
-* [[truth-tables|Disjunctive Normal Form]]
+* [[classical#Normal Forms|Conjunctive Normal Form]]
+* [[classical#Normal Forms|Disjunctive Normal Form]]
 * [[pred_logic#Identifiers|Prenex Normal Form]]
 * [[beta_reduction#Normal Form|β-normal forms]]
 

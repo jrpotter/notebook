@@ -44,12 +44,12 @@ END%%
 
 ## Computable Functions
 
-A function $f \colon \Sigma^* \rightarrow \Gamma^*$ is **computable** if some [[turing|Turing machine]] $M$, on every input $w$, halts with just $f(w)$ on its tape.
+A function $f \colon \Sigma^* \rightarrow \Gamma^*$ is **computable** if some [[turing|Turing machine]] $M$, on every input $w$, halts with just $f(w)$ on its tape. Such a function is **polynomial time computable** if the given Turing machine runs in polynomial time.
 
 %%ANKI
 Basic
 What does it mean for a function $f$ to be computable?
-Back: Some TM $M$ exists such that on every input $w$, it halts with just $f(w)$ on its tape.
+Back: A TM $M$ exists such that on every input $w$, $M$ halts with just $f(w)$ on its tape.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765921218485-->
 END%%
@@ -91,6 +91,30 @@ In what way does a computable function formalize the notion of an effective meth
 Back: Computable functions are defined with respect to a model of computation.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765924148299-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a function $f$ to be polynomial time computable?
+Back: A polynomial time TM $M$ exists such that on every input $w$, $M$ halts with just $f(w)$ on its tape.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766604611794-->
+END%%
+
+%%ANKI
+Basic
+Is addition on the natural numbers a polynomial time computable function?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766604611798-->
+END%%
+
+%%ANKI
+Basic
+Why is addition $+ \colon \mathbb{N}^2 \rightarrow \mathbb{N}$ considered a polynomial computable function?
+Back: A polynomial time TM exists such that on any input $\langle m, n \rangle$, just $m + n$ is on its tape.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766604611801-->
 END%%
 
 ## Design Strategies

@@ -1,13 +1,40 @@
 ---
-title: Dialetheism
-TARGET DECK: Obsidian::H&SS
-FILE TAGS: ontology::dialetheism
+title: Paraconsistent Logic
+TARGET DECK: Obsidian::STEM
+FILE TAGS: logic::paraconsistent
 tags:
-  - dialetheism
-  - ontology
+  - logic
+  - paraconsistent
 ---
 
 ## Overview
+
+A **paraconsistent logic** refers to any logic that is not explosive, i.e. it does not follow the principle of explosion.
+
+%%ANKI
+Basic
+What is a paraconsistent logic?
+Back: Any logic that is not explosive.
+Reference: Graham Priest, Koji Tanaka, and Zach Weber, “Paraconsistent Logic,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/](https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/).
+<!--ID: 1766600205412-->
+END%%
+
+%%ANKI
+Cloze
+The principle of {explosion} is excluded in {paraconsistent} logics.
+Reference: Graham Priest, Koji Tanaka, and Zach Weber, “Paraconsistent Logic,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/](https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/).
+<!--ID: 1753361473356-->
+END%%
+
+%%ANKI
+Basic
+What classical priniciples does paraconsistent logic ignore?
+Back: The principle of explosion.
+Reference: _Wikipedia_. “Intuitionistic logic.” December 7, 2025. [https://en.wikipedia.org/w/index.php?title=Intuitionistic_logic](https://en.wikipedia.org/w/index.php?title=Intuitionistic_logic&oldid=1326155435).
+<!--ID: 1766603007576-->
+END%%
+
+## Dialetheism
 
 A **dialetheia** is a proposition $A$ such that both it and its negation ($\neg A$) are true. **Dialetheism** is the view that there are dialetheias. In other words, dialetheism admits the existence of true contradictions.
 
@@ -31,13 +58,6 @@ What name is given to the so-called "standard logic" of mathematics?
 Back: Classical logic.
 Reference: Graham Priest, Koji Tanaka, and Zach Weber, “Paraconsistent Logic,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/](https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/).
 <!--ID: 1721380604985-->
-END%%
-
-%%ANKI
-Cloze
-The principle of {explosion} is excluded in paraconsistent logics.
-Reference: Graham Priest, Koji Tanaka, and Zach Weber, “Paraconsistent Logic,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/](https://plato.stanford.edu/archives/spr2022/entries/logic-paraconsistent/).
-<!--ID: 1753361473356-->
 END%%
 
 %%ANKI

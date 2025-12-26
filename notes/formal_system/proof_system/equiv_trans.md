@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-**Equivalence-transformation** is a proof system used alongside classical truth-functional [[pred_logic|predicate logic]]. It is the foundation upon which [[pred_trans|predicate transformers]] are based.
+**Equivalence-transformation** is a proof system used alongside [[classical|classical]] truth-functional [[pred_logic|predicate logic]]. It is the foundation upon which [[pred_trans|predicate transformers]] are based.
 
 %%ANKI
 Basic
@@ -220,7 +220,7 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707251673364-->
 END%%
 
-### Law of Negation
+### Law of Double Negation
 
 For any proposition $E1$, it follows that $\neg (\neg E1) = E1$.
 

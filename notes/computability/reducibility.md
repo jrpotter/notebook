@@ -428,6 +428,226 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1766000984065-->
 END%%
 
+### Polynomial Time
+
+Language $A$ is **polynomial time (mapping) reducible** to language $B$ if a polynomial time computable function $f \colon \Sigma^* \rightarrow \Gamma^*$ exists, where for every $w$, $$w \in A \Leftrightarrow f(w) \in B.$$
+
+If such a function exists, we write $A \leq_P B$.
+
+%%ANKI
+Basic
+What more general kind of reduction is a polynomial time reduction?
+Back: A mapping reduction.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081083-->
+END%%
+
+%%ANKI
+Cloze
+A polynomial time {mapping} reduction is also known as a polynomial time {many-one} reduction.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081094-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be languages over alphabets $\Sigma$ and $\Gamma$ respectively. What is a polynomial time many-one reduction from $A$ to $B$?
+Back: A polynomial time computable function $f \colon \Sigma^* \rightarrow \Gamma^*$ such that, for all inputs $w$, $$w \in A \Leftrightarrow f(w) \in B.$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081096-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ and $B$ be languages over alphabets $\Sigma$ and $\Gamma$ respectively. What is a polynomial time mapping reduction from $B$ to $A$?
+Back: A computable function $f \colon \Gamma^* \rightarrow \Sigma^*$ such that, for all inputs $w$, $$w \in B \Leftrightarrow f(w) \in A.$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081099-->
+END%%
+
+%%ANKI
+Cloze
+A polynomial time {many-one} reduction from $A$ to $B$ is a {polynomial time computable} function $f \colon \Sigma^* \rightarrow \Gamma^*$ such that, for all inputs $w$, {$$w \in A \Leftrightarrow f(w) \in B.$$}
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081101-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is polynomial time reducible to $B$. What kind of mathematical entity is $A$?
+Back: A language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081104-->
+END%%
+
+%%ANKI
+Basic
+A polynomial time reduction is the efficient analog of what more general concept?
+Back: Mapping reductions.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081107-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is polynomial time reducible to $B$. What kind of mathematical entity is $B$?
+Back: A language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081109-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is polynomial time reducible to $B$. How is this denoted?
+Back: As $A \leq_P B$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081112-->
+END%%
+
+%%ANKI
+Basic
+With respect to reducibility, what does $A \leq_P B$ denote?
+Back: Language $A$ is polynomial time many-one reducible to language $B$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081115-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $A \leq_P B$. If {1:$A$} is undecidable, then {1:$B$} is undecidable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081118-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $B \leq_P A$. If {1:$A$} is decidable, then {1:$B$} is decidable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081121-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $B \leq_P A$. If {1:$B$} is undecidable, then {1:$A$} is undecidable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081123-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $A \leq_P B$. If {1:$B$} is decidable, then {1:$A$} is decidable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081126-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $A \leq_P B$. If {1:$A$} is Turing-unrecognizable, then {1:$B$} is Turing-unrecognizable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081129-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $B \leq_P A$. If {1:$A$} is Turing-recognizable, then {1:$B$} is Turing-recognizable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081132-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $B \leq_P A$. If {1:$B$} is Turing-unrecognizable, then {1:$A$} is Turing-unrecognizable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081135-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $A \leq_P B$. If {1:$B$} is Turing-recognizable, then {1:$A$} is Turing-recognizable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081138-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \leq_P B$. How do $\overline{A}$ and $\overline{B}$ relate?
+Back: $\overline{A} \leq_P \overline{B}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081142-->
+END%%
+
+%%ANKI
+Basic
+*Why* is it that $A \leq_P B$ if and only if $\overline{A} \leq_P \overline{B}$?
+Back: The definition of polynomial time mapping reductions uses a biconditional.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081145-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \leq_P B$. If $A$ is co-Turing-recognizable, what can be said about $B$?
+Back: N/A.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081149-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \leq_P B$. If $A$ is co-Turing-unrecognizable, what can be said about $B$?
+Back: $B$ is co-Turing-unrecognizable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081153-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \leq_P B$. If $B$ is co-Turing-recognizable, what can be said about $A$?
+Back: $A$ is co-Turing-recognizable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081157-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \leq_P B$. If $B$ is co-Turing-unrecognizable, what can be said about $A$?
+Back: N/A.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081161-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f$ is a polynomial time reduction from $A$ to $B$. Then $w \in A$ if and only if what?
+Back: $f(w) \in B$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081165-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f$ is a polynomial time reduction from $A$ to $B$. Then $w \not\in A$ if and only if what?
+Back: $f(w) \not\in B$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081168-->
+END%%
+
+%%ANKI
+Basic
+How is $A \leq_P B$ pronounced?
+Back: As "$A$ is polynomial time (mapping/many-one) reducible to $B$".
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081171-->
+END%%
+
+%%ANKI
+Basic
+What does notation $\leq$ suggest in "$A \leq_P B$"?
+Back: Mapping reducibility defines an ordering.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766634081173-->
+END%%
+
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).

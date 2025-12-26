@@ -272,6 +272,22 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1766460849424-->
 END%%
 
+%%ANKI
+Basic
+Suppose $A \leq_P B$. If $B \in \text{P}$, what can be said about $A$?
+Back: $A \in \text{P}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766635617476-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \leq_P B$. If $A \in \text{P}$, what can be said about $B$?
+Back: N/A.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766635617483-->
+END%%
+
 ### NTIME
 
 Let $t$ be an asymptotically nonnegative function. The **nondeterministic time complexity class** $\text{NTIME}(t(n))$ is the collection of all languages [[decidability|decidable]] by an $O(t(n))$-time nondeterministic Turing machine.
@@ -516,6 +532,249 @@ What about complexity class $\text{NP}$ can be done in polynomial time?
 Back: Verifying membership of a language in $\text{NP}$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766460849431-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \leq_P B$. If $B \in \text{NP}$, what can be said about $A$?
+Back: $A \in \text{NP}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766719820326-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \leq_P B$. If $A \in \text{NP}$, what can be said about $B$?
+Back: N/A.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766719820336-->
+END%%
+
+## NP-Completeness
+
+A language $B$ is **$\text{NP}$-complete** if it is in $\text{NP}$ and every $A \in \text{NP}$ is [[reducibility#Polynomial Time|polynomial time reducible]] to $B$.
+
+%%ANKI
+Basic
+What does it mean for a language $A$ to be $\text{NP}$-complete?
+Back: $A \in \text{NP}$ and every member of $\text{NP}$ is polynomial time reducible to $A$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766719820340-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is $\text{NP}$-complete and $A \leq_P B$. When would $B$ also be $\text{NP}$-complete?
+Back: When $B \in \text{NP}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766719983674-->
+END%%
+
+%%ANKI
+Basic
+Suppose $B$ is $\text{NP}$-complete and $B \in \text{P}$. What fundamental result would this imply?
+Back: $\text{P} = \text{NP}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766719983681-->
+END%%
+
+%%ANKI
+Basic
+Suppose language $B$ is $\text{NP}$-complete. In FOL, what two conditions must $B$ satisfy?
+Back:
+1. $B \in \text{NP}$ and
+2. $\forall A \in \text{NP}, A \leq_P B$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766719983684-->
+END%%
+
+### Satisfiability Problem
+
+The **satisfiability problem** is the problem of determining whether or not a Boolean formula is [[classical#Satisfiability|satisfiable]]. That is, it is the problem of determining membership in the following language: $$\text{SAT} = \{ \phi \mid \phi \text{ is a satisfiable Boolean formula} \}.$$
+
+Restricting the Boolean formulas we consider to those in CNF yield language: $$\text{CNF-SAT} = \{ \phi \mid \phi \text{ is a satisfiable cnf-formula} \}.$$
+
+Restricting the number of literals found in each clause of a cnf-formula yields the $k\text{-CNF-SAT}$ problem, otherwise known as the $k\text{-SAT}$ problem: $$k\text{-SAT} = \{ \phi \mid \phi \text{ is a satisfiable } k\text{cnf-formula} \}.$$
+
+%%ANKI
+Basic
+What question does the satisfiability problem pose?
+Back: Does a given Boolean formula have a satisfying assignment?
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766706549950-->
+END%%
+
+%%ANKI
+Basic
+How is the $\text{SAT}$ language defined?
+Back: As $\text{SAT} = \{ \phi \mid \phi \text{ is a satisfiable Boolean formula} \}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766706549954-->
+END%%
+
+%%ANKI
+Basic
+How is the following language typically denoted? $$\{ \phi \mid \phi \text{ is a satisfiable Boolean formula} \}$$
+Back: $\text{SAT}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766706549957-->
+END%%
+
+%%ANKI
+Basic
+What question does the $\text{CNF-SAT}$ problem pose?
+Back: Does a given cnf-formula have a satisfying assignment?
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766713762300-->
+END%%
+
+%%ANKI
+Basic
+How is the $\text{CNF-SAT}$ language defined?
+Back: As $\text{CNF-SAT} = \{ \phi \mid \phi \text{ is a satisfiable cnf-formula} \}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766713762305-->
+END%%
+
+%%ANKI
+Basic
+How is the following language typically denoted? $$\{ \phi \mid \phi \text{ is a satisfiable cnf-formula} \}$$
+Back: $\text{CNF-SAT}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766713762309-->
+END%%
+
+%%ANKI
+Basic
+What question does the $3\text{-SAT}$ problem pose?
+Back: Does a given $3$cnf-formula have a satisfying assignment?
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766713762313-->
+END%%
+
+%%ANKI
+Basic
+How is the $3\text{-SAT}$ language defined?
+Back: As $3\text{-SAT} = \{ \phi \mid \phi \text{ is a satisfiable 3cnf-formula} \}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766713762317-->
+END%%
+
+%%ANKI
+Basic
+How is the following language typically denoted? $$\{ \phi \mid \phi \text{ is a satisfiable 3cnf-formula} \}$$
+Back: $3\text{-SAT}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766713762321-->
+END%%
+
+%%ANKI
+Cloze
+The {$k\text{-CNF-SAT}$} language is also known as the {$k-\text{SAT}$} language.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766713762324-->
+END%%
+
+%%ANKI
+Basic
+Consider expression $\text{CNF-SAT} \leq_P \text{CLIQUE}$. How is $\text{CNF-SAT}$ defined?
+Back: As $\text{CNF-SAT} = \{ \phi \mid \phi \text{ is a satisfiable cnf-formula} \}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766713762328-->
+END%%
+
+%%ANKI
+Basic
+Consider expression $\text{CNF-SAT} \leq_P \text{CLIQUE}$. How is $\text{CLIQUE}$ defined?
+Back: As $\text{CLIQUE} = \{ \langle G, k \rangle \mid G \text{ is an undirected graph with a } k\text{-clique} \}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766713762331-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be the standard reduction of $\text{CNF-SAT} \leq_P \text{CLIQUE}$. How many vertices are in the following graph? $$f((x \lor y \lor z) \land (\neg x \lor x \lor z))$$
+Back: Six.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766713762335-->
+END%%
+
+%%ANKI
+Basic
+Let $\phi$ be a cnf-formula and $f$ be the standard reduction of $\text{CNF-SAT} \leq_P \text{CLIQUE}$. How many vertices are in $f(\phi)$?
+Back: One for each literal in $\phi$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766713762338-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be the standard reduction of $\text{CNF-SAT} \leq_P \text{CLIQUE}$. What sized clique are we trying to find in the following? $$f((x \lor y \lor z) \land (\neg x \lor x \lor z))$$
+Back: A $2$-clique.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766714292433-->
+END%%
+
+%%ANKI
+Basic
+Let $\phi$ be a cnf-formula and $f$ be the standard reduction of $\text{CNF-SAT} \leq_P \text{CLIQUE}$. What sized clique are we trying to find in $f(\phi)$?
+Back: A $k$-clique where $k$ is the number of clauses in $\phi$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766714292436-->
+END%%
+
+%%ANKI
+Cloze
+The following is a demonstration of a reduction friom {$3\text{-SAT}$} to {$\text{CLIQUE}$}.
+![[sat-clique.png]]
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766714643010-->
+END%%
+
+### Cook-Levin Theorem
+
+$\text{SAT}$ is $\text{NP}$-complete.
+
+%%ANKI
+Cloze
+The {Cook-Levin} theorem states that {$\text{SAT}$ is $\text{NP}$-complete}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766719820343-->
+END%%
+
+%%ANKI
+Basic
+Which $\text{NP}$-complete language is widely considered the most fundamental?
+Back: $\text{SAT} = \{ \phi \mid \phi \text{ is a satisfiable Boolean formula} \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766719983686-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following theorem?
+
+> $\text{SAT}$ is $\text{NP}$-complete.
+
+Back: The Cook-Levin theorem.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766719983689-->
+END%%
+
+%%ANKI
+Basic
+How is the Cook-Levin theorem used to show $3\text{-SAT}$ is $\text{NP}$-complete?
+Back: The theorem states $\text{SAT}$ is $\text{NP}$-complete and it is known that $$\text{SAT} \leq_P 3\text{-SAT}.$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766720125101-->
+END%%
+
+%%ANKI
+Basic
+How is the Cook-Levin theorem used to show $\text{CLIQUE}$ is $\text{NP}$-complete?
+Back: The theorem states $\text{SAT}$ is $\text{NP}$-complete and it is known that $$\text{SAT} \leq_P 3\text{-SAT} \leq_P \text{CLIQUE}.$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766720125113-->
 END%%
 
 ## Model Dependence

@@ -1,15 +1,15 @@
 ---
 title: Boolean Algebra
 TARGET DECK: Obsidian::STEM
-FILE TAGS: logic::boolean
+FILE TAGS: algebra::boolean
 tags:
-  - logic
+  - algebra
   - boolean
 ---
 
 ## Overview
 
-**Boolean algebra** refers to an [[algebra/index|algebraic]] system characterised by a set of axioms. This is something I'll explore further, probably after reading more on abstract algebra. The basic operations of Boolean algebra are negation ($\neg$), conjunction ($\land$), and disjunction ($\lor$). 
+**Boolean algebra** refers to an [[algebra/index|algebraic]] system characterised by a set of axioms.
 
 %%ANKI
 Basic

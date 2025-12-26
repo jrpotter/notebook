@@ -9,7 +9,9 @@ tags:
 
 ## Overview
 
-**Predicate logic** is a logical system that uses quantified variables over non-logical objects. A **predicate** is a sentence with some number of free variables. A predicate with free variables "plugged in" is a [[prop_logic|proposition]].
+**Predicate logic** is a logical system that uses quantified variables over non-logical objects. A **predicate** is a sentence with some number of free variables.
+
+A predicate with free variables "plugged in" is a [[prop_logic|proposition]].
 
 %%ANKI
 Cloze
