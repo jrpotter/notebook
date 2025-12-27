@@ -363,7 +363,7 @@ END%%
 %%ANKI
 Basic
 With respect to DPDAs, what is an accepting looping situation?
-Back: A looping situation in which at least one final state is in the loop.
+Back: A looping situation in which at least one final state is in the corresponding loop.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766807222541-->
 END%%
@@ -371,7 +371,7 @@ END%%
 %%ANKI
 Basic
 With respect to DPDAs, what is a rejecting looping situation?
-Back: A looping situation in which no final state is in the loop.
+Back: A looping situation in which no final state is in the corresponding loop.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766807222542-->
 END%%
@@ -429,6 +429,27 @@ Suppose $\langle q, x \rangle$ is a looping situation of a DPDA. What does this 
 Back: A cycle starting at $q$ exists in which no input is read and the stack from $x$ down remains the same.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766808746317-->
+END%%
+
+%%ANKI
+Basic
+How does adding endmarkers (i.e. $\dashv$) change the power of DPDAs?
+Back: N/A. It doesn't.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+END%%
+
+%%ANKI
+Basic
+How does adding endmarkers (i.e. $\dashv$) make designing DPDAs simpler?
+Back: They allow us to know when the input string ends.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a DCFL. What can be said about $A{\dashv}$?
+Back: $A{\dashv}$ is also a DCFL.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 END%%
 
 ## Closure Operations
