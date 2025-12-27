@@ -10,6 +10,8 @@ tags:
 
 **Complexity theory** focuses on whether problems are easy or hard. Where [[computability/index|computability theory]] asks if a language is decidable, complexity theory asks whether a language is decidable given some restriction on the resources.
 
+A problem is **intractable** if such a problem is solvable in principle but with solutions requiring so much time or space that they can't be used in practice.
+
 %%ANKI
 Cloze
 {1:Complexity} theory focuses on the classification of problems as {2:easy} or {2:hard}.
@@ -46,6 +48,22 @@ Which of computability theory or complexity theory focuses on undecidable langua
 Back: Just computability theory.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766239757938-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a computational problem to be intractable?
+Back: Known solutions are too expensive and cannot be used in practice.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766796661249-->
+END%%
+
+%%ANKI
+Basic
+Intractability is typically concerned with what two resources?
+Back: Time and space.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766796661258-->
 END%%
 
 ## Order of Growth

@@ -64,6 +64,8 @@ Classical logic [[prop_logic|propositions]] are usually expressed with [[algebra
 
 A Boolean formula is **satisfiable** if some assignment of $T$s and $F$s make the formula evaluate to $T$. For example, assignment $x = F$, $y = T$, and $z = F$ **satisfies** Boolean formula $\phi = (\neg x \lor y) \lor (x \land \neg z)$.
 
+We say two formulas are **equisatisfiable** if the first is satisfiable if and only if the second is satisfiable. Note that two equisatisfiable formulas are not necessarily logically equivalent - they may disagree for a particular assignment of variables.
+
 %%ANKI
 Basic
 Boolean algebra is most closely tied to what propositional logic?
@@ -86,6 +88,38 @@ What does it mean for a boolean formula to be satisfiable?
 Back: There exists some assignment of Boolean values such that the formula evaluates $T$.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1766604611789-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for two Boolean formulas to be equisatisfiable?
+Back: The first is satisfiable if and only if the second is.
+Reference: _Wikipedia_. “Equisatisfiability.” October 12, 2025. [https://en.wikipedia.org/w/index.php?title=Equisatisfiability](https://en.wikipedia.org/w/index.php?title=Equisatisfiability&oldid=1316467796).
+<!--ID: 1766795537355-->
+END%%
+
+%%ANKI
+Basic
+If two Boolean formulas are logically equivalent, are they necessarily equisatisfiable?
+Back: Yes.
+Reference: _Wikipedia_. “Equisatisfiability.” October 12, 2025. [https://en.wikipedia.org/w/index.php?title=Equisatisfiability](https://en.wikipedia.org/w/index.php?title=Equisatisfiability&oldid=1316467796).
+<!--ID: 1766795537363-->
+END%%
+
+%%ANKI
+Basic
+If two Boolean formulas are equisatisfiable, are they necessarily logically equivalent?
+Back: No.
+Reference: _Wikipedia_. “Equisatisfiability.” October 12, 2025. [https://en.wikipedia.org/w/index.php?title=Equisatisfiability](https://en.wikipedia.org/w/index.php?title=Equisatisfiability&oldid=1316467796).
+<!--ID: 1766795537366-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\phi$ and $\psi$ are equisatisfiable. Why might they still disagree on a particular assignment?
+Back: $\phi$ and $\psi$ are not necessarily logically equivalent.
+Reference: _Wikipedia_. “Equisatisfiability.” October 12, 2025. [https://en.wikipedia.org/w/index.php?title=Equisatisfiability](https://en.wikipedia.org/w/index.php?title=Equisatisfiability&oldid=1316467796).
+<!--ID: 1766795537369-->
 END%%
 
 ## Truth Tables
@@ -183,7 +217,7 @@ END%%
 %%ANKI
 Basic
 What is a 2dnf-formula?
-Back: A dnf-formula in which each disjunct has 2 conjuncts.
+Back: A dnf-formula in which each clause has 2 conjuncts.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766706549934-->
 END%%
@@ -292,7 +326,7 @@ END%%
 %%ANKI
 Basic
 What is a 3cnf-formula?
-Back: A cnf-formula in which each conjunct has 3 disjuncts.
+Back: A cnf-formula in which each clause has 3 disjuncts.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766706549940-->
 END%%
@@ -391,3 +425,4 @@ END%%
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 * _Wikipedia_. “Classical logic.” September 8, 2025. [https://en.wikipedia.org/w/index.php?title=Classical_logic](https://en.wikipedia.org/w/index.php?title=Classical_logic&oldid=1310196240).
+* _Wikipedia_. “Equisatisfiability.” October 12, 2025. [https://en.wikipedia.org/w/index.php?title=Equisatisfiability](https://en.wikipedia.org/w/index.php?title=Equisatisfiability&oldid=1316467796).

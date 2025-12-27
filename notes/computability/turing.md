@@ -744,6 +744,84 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1765422103198-->
 END%%
 
+### Tableaus
+
+Let computation history $H$ be a sequence of configurations $C_1, C_2, \ldots, C_n$. A **tableau** of $H$ is a visualization of $H$ arranged in a table. Configuration $C_i$ is listed in the tableau's $i^{\text{th}}$ row. The $j^{\text{th}}$ column of the $i^{\text{th}}$ row corresponds to the $j^{\text{th}}$ symbol in $C_i$.
+
+An **accepting tableau** is a tableau corresponding to an accepting computation history. A **rejecting tableau** is a tableau corresponding to a rejecting configuration history.
+
+%%ANKI
+Basic
+What is a tableau?
+Back: A table-oriented visualization of a computation history.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766792955152-->
+END%%
+
+%%ANKI
+Basic
+A tableau's first row must always correspond to what?
+Back: A starting configuration.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766792955159-->
+END%%
+
+%%ANKI
+Basic
+A tableau's last row must always correspond to what?
+Back: An accepting or rejecting configuration.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766792955161-->
+END%%
+
+%%ANKI
+Basic
+What does the $i$th row of a tableau correspond to?
+Back: The $i$th configuration of the computation history.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766792955164-->
+END%%
+
+%%ANKI
+Basic
+What does the $j$th column of a tableau correspond to?
+Back: The $j$th symbols found in each configuration of the computation history.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766792955166-->
+END%%
+
+%%ANKI
+Basic
+Tableaus are used to visualize what computability concept?
+Back: Computation histories.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766792955169-->
+END%%
+
+%%ANKI
+Basic
+What is an accepting tableau?
+Back: A tableau corresponding to an accepting computation history.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766795537373-->
+END%%
+
+%%ANKI
+Basic
+What is a rejecting tableau?
+Back: A tableau corresponding to a rejecting computation history.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766795537376-->
+END%%
+
+%%ANKI
+Basic
+How many unique tableaus could an NTM on input $w$ have?
+Back: Zero or more.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766795537380-->
+END%%
+
 ## Dovetailing
 
 **Dovetailing** refers to the simulation of two or more Turing machines in parallel on a single Turing machine. Typically it is implemented by simulating one step of each machine at a time.

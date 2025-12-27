@@ -73,7 +73,7 @@ END%%
 %%ANKI
 Basic
 On Linux systems, what C function can be used to spawn a child process?
-Back: `fork()`
+Back: `fork`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23 os::linux
 <!--ID: 1752497519540-->
@@ -81,7 +81,7 @@ END%%
 
 %%ANK
 Basic
-Which header contains the `fork()` function?
+Which header contains the `fork` function?
 Back: `<unistd.h>`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23
@@ -89,7 +89,7 @@ END%%
 
 %%ANKI
 Basic
-If successful, how many times does the `fork()` function return?
+If successful, how many times does the `fork` function return?
 Back: Two times.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23 os::linux
@@ -98,7 +98,7 @@ END%%
 
 %%ANKI
 Basic
-If successful, when does `fork()` return value `0`?
+If successful, when does `fork` return value `0`?
 Back: When running as the child process.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23 os::linux
@@ -107,7 +107,7 @@ END%%
 
 %%ANKI
 Basic
-If successful, when does `fork()` return a value greater than `0`?
+If successful, when does `fork` return a value greater than `0`?
 Back: When running as the parent process.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23 os::linux
@@ -116,7 +116,7 @@ END%%
 
 %%ANKI
 Basic
-Assume `fork()` returns a positive integer. What does this integer correspond to?
+Assume `fork` returns a positive integer. What does this integer correspond to?
 Back: The child process's PID.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23 os::linux
@@ -125,7 +125,7 @@ END%%
 
 %%ANKI
 Basic
-If successful, how many times does the `execve()` function return?
+If successful, how many times does the `execve` function return?
 Back: Zero times.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23 os::linux

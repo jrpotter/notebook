@@ -588,6 +588,46 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1766719983684-->
 END%%
 
+%%ANKI
+Basic
+Which languages in $\text{P}$ *cannot* be $\text{NP}$-complete?
+Back: $\varnothing$ and $\Sigma^*$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766760449210-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\text{P} = \text{NP}$. Why wouldn't $\varnothing$ be $\text{NP}$-complete?
+Back: Because no nontrivial language is polynomial time reducible to $\varnothing$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766760449215-->
+END%%
+
+%%ANKI
+Basic
+Why is there no mapping reduction from some nontrivial language $A$ to $\varnothing$?
+Back: For any computable function $f$ and input $w \in A$, $f(w)$ cannot be in $\varnothing$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766760449218-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\text{P} = \text{NP}$. Why wouldn't $\Sigma^*$ be $\text{NP}$-complete?
+Back: Because no nontrivial language is polynomial time reducible to $\Sigma^*$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766760449220-->
+END%%
+
+%%ANKI
+Basic
+Why is there no mapping reduction from some nontrivial language $A$ to $\Sigma^*$?
+Back: For any computable function $f$ and input $w \not\in A$, $f(w)$ must be in $\Sigma^*$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766760449223-->
+END%%
+
 ### Satisfiability Problem
 
 The **satisfiability problem** is the problem of determining whether or not a Boolean formula is [[classical#Satisfiability|satisfiable]]. That is, it is the problem of determining membership in the following language: $$\text{SAT} = \{ \phi \mid \phi \text{ is a satisfiable Boolean formula} \}.$$
@@ -663,14 +703,14 @@ END%%
 %%ANKI
 Basic
 How is the following language typically denoted? $$\{ \phi \mid \phi \text{ is a satisfiable 3cnf-formula} \}$$
-Back: $3\text{-SAT}$
+Back: $3\text{-CNF-SAT}$ or $3\text{-SAT}$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766713762321-->
 END%%
 
 %%ANKI
 Cloze
-The {$k\text{-CNF-SAT}$} language is also known as the {$k-\text{SAT}$} language.
+The {$k\text{-CNF-SAT}$} language is also known as the {$k\text{-SAT}$} language.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766713762324-->
 END%%
@@ -775,6 +815,38 @@ How is the Cook-Levin theorem used to show $\text{CLIQUE}$ is $\text{NP}$-comple
 Back: The theorem states $\text{SAT}$ is $\text{NP}$-complete and it is known that $$\text{SAT} \leq_P 3\text{-SAT} \leq_P \text{CLIQUE}.$$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766720125113-->
+END%%
+
+%%ANKI
+Basic
+What language is often considered most fundamentally $\text{NP}$-complete?
+Back: $\text{SAT}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766795537384-->
+END%%
+
+%%ANKI
+Basic
+Let $A \in \text{NP}$. What feature of $A$ is used to show reducibility to $\text{SAT}$?
+Back: The corresponding NTM's computation histories.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766795537388-->
+END%%
+
+%%ANKI
+Basic
+What is the first theorem Sipser introduces that uses tableaus in its proof?
+Back: The Cook-Levin theorem.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766795537391-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be the polynomial time reduction from $A \in \text{NP}$ to $\text{SAT}$. For input $w$, what is $f(w)$?
+Back: A Boolean formula that is satisfiable if and only if $w \in A$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766795537394-->
 END%%
 
 ## Model Dependence

@@ -444,7 +444,7 @@ END%%
 
 %%ANKI
 Cloze
-An {1:angle} (in standard position) of $t$ {2:radians} will correspond to an {2:arc} of length $t$ on the {1:unit circle}.
+An {1:angle} in standard position of $t$ {2:radians} will correspond to an {2:arc} of length $t$ on the {1:unit circle}.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1740671218383-->
 END%%
