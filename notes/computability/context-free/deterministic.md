@@ -1,0 +1,564 @@
+---
+title: Deterministic Context-Free Language
+TARGET DECK: Obsidian::STEM
+FILE TAGS: computability::cfl
+tags:
+  - cfl
+  - computability
+  - grammar
+---
+
+## Overview
+
+A **deterministic pushdown automaton** (DPDA) is a $6$-tuple $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$, where $Q$, $\Sigma$, $\Gamma$, and $F$ are all finite sets, and
+
+1. $Q$ is the set of states,
+2. $\Sigma$ is the input alphabet,
+3. $\Gamma$ is the stack alphabet,
+4. $\delta \colon Q \times \Sigma_\epsilon \times \Gamma_\epsilon \rightarrow (Q \times \Gamma_\epsilon) \cup \{ \varnothing \}$ is the transition function,
+5. $q_0 \in Q$ is the start state, and
+6. $F \subseteq Q$ is the set of accept states.
+
+For every $q \in Q$, $a \in \Sigma$, and $x \in \Gamma$, exactly one of the values is not $\varnothing$:
+
+* $\delta(q, a, x)$;
+* $\delta(q, a, \epsilon)$, an **$\epsilon$-stack move**;
+* $\delta(q, \epsilon, x)$, an **$\epsilon$-input move**;
+* $\delta(q, \epsilon, \epsilon)$, an $\epsilon$-stack and $\epsilon$-input move.
+
+A [[computability/index|language]] is called **deterministic context-free** if a DPDA recognizes it.
+
+%%ANKI
+Basic
+From a recognition perspective, what is a deterministic context-free language?
+Back: A language recognized by a deterministic pushdown automaton.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622395-->
+END%%
+
+%%ANKI
+Basic
+What is DCFL an acronym for?
+Back: **D**eterministic **C**ontext-**F**ree **L**anguage.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622396-->
+END%%
+
+%%ANKI
+Basic
+What is DPDA an acronym for?
+Back: **D**eterministic **P**ush**d**own **a**utomaton.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622398-->
+END%%
+
+%%ANKI
+Basic
+A DPDA introduces what additional data structure to a finite automaton?
+Back: A stack.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622399-->
+END%%
+
+%%ANKI
+Basic
+How are deterministic pushdown automatons typically abbreviated?
+Back: As DPDAs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622400-->
+END%%
+
+%%ANKI
+Basic
+The formal definition of a DPDA is a tuple of what length?
+Back: Six.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622401-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. What is $Q$?
+Back: A finite set of states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622402-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. What is $\Sigma$?
+Back: A finite set corresponding to the input alphabet.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622403-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. What is $\Gamma$?
+Back: A finite set corresponding to the stack alphabet.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622404-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. What is $\delta$?
+Back: The transition function.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622405-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. What is $q_0$?
+Back: The start state.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622406-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. How does $q_0$ relate to other members of the tuple?
+Back: $q_0 \in Q$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622407-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. What is $F$?
+Back: The set of final states.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622408-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. How does $F$ relate to other members of the tuple?
+Back: $F \subseteq Q$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622409-->
+END%%
+
+%%ANKI
+Basic
+What two alphabets are associated with a DPDA?
+Back: The input alphabet and the stack alphabet.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622410-->
+END%%
+
+%%ANKI
+Basic
+Writing a symbol to a DPDA's stack corresponds to what ADT operation?
+Back: Pushing.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622411-->
+END%%
+
+%%ANKI
+Basic
+Removing a symbol from a DPDA's stack corresponds to what ADT operation?
+Back: Popping.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622412-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. What is the domain of $\delta$?
+Back: $Q \times \Sigma_\epsilon \times \Gamma_\epsilon$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622413-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. What is the codomain of $\delta$?
+Back: $(Q \times \Gamma_\epsilon) \cup \{\varnothing\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622414-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. What is an $\epsilon$-input move?
+Back: A move of form $\delta(q, \epsilon, x)$ for some $x \in \Gamma$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622415-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. What is an $\epsilon$-stack move?
+Back: A move of form $\delta(q, a, \epsilon)$ for some $a \in \Sigma$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622416-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA, $q \in Q$, $\gamma \in \Gamma$. How is $\epsilon$ in $\delta(q, \epsilon, \gamma)$ interpreted?
+Back: As not advancing the input tape.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622417-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA, $q \in Q$, $\sigma \in \Sigma$. How is $\epsilon$ in $\delta(q, \sigma, \epsilon)$ interpreted?
+Back: As not popping the stack.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622418-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. For every $q \in Q$, $a \in \Sigma$, and $x \in \Gamma$, exactly one of what four values must not be $\varnothing$?
+Back:
+1. $\delta(q, a, x)$
+2. $\delta(q, a, \epsilon)$
+3. $\delta(q, \epsilon, x)$
+4. $\delta(q, \epsilon, \epsilon)$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622419-->
+END%%
+
+%%ANKI
+Basic
+Suppose $R$ is a regular language. Is $R$ a DCFL?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622420-->
+END%%
+
+%%ANKI
+Basic
+Ignore missing edges. What is wrong with the following DPDA state?
+![[dpda-invalid-state1.png]]
+Back: If $a$ is the next input symbol and $x$ is top stack symbol, the next transition is ambiguous.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622421-->
+END%%
+
+%%ANKI
+Basic
+Ignore missing edges. What is wrong with the following DPDA state?
+![[dpda-invalid-state2.png]]
+Back: If $a$ is the next input symbol and $x$ is top stack symbol, the next transition is ambiguous.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622422-->
+END%%
+
+%%ANKI
+Basic
+Ignore missing edges. What is wrong with the following DPDA state?
+![[dpda-valid-state1.png]]
+Back: N/A. This is valid.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622423-->
+END%%
+
+%%ANKI
+Basic
+Consider the following DPDA snippet. What name is given to the kind of transition?
+![[dpda-epsilon-input.png]]
+Back: An $\epsilon$-input move.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622424-->
+END%%
+
+%%ANKI
+Basic
+Consider the following DPDA snippet. What name is given to the kind of transition?
+![[dpda-epsilon-stack.png]]
+Back: An $\epsilon$-stack move.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622425-->
+END%%
+
+%%ANKI
+Basic
+Suppose a DPDA can make an $\epsilon$-move in a certain situation. What other moves are prohibited?
+Back: Those in the same situation that involve processing a symbol instead of $\epsilon$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622426-->
+END%%
+
+%%ANKI
+Basic
+How does the transition function of a DPDA indicate no action?
+Back: By outputting $\varnothing$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622427-->
+END%%
+
+%%ANKI
+Cloze
+Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a DPDA. For every $q \in Q$, $a \in \Sigma$, and $x \in \Gamma$, one of {$\delta(q, a, x)$}, {$\delta(q, \epsilon, x)$}, {$\delta(q, a, \epsilon)$}, or {$\delta(q, \epsilon, \epsilon)$} must be nonempty.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622428-->
+END%%
+
+%%ANKI
+Basic
+For a given input, what happens if a DPDA has no legal move?
+Back: It rejects the input.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622429-->
+END%%
+
+%%ANKI
+Basic
+What two conditions make a DPDA reject a given input?
+Back:
+1. It doesn't enter an accept state at the end of the input.
+2. It fails to read the entire input.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622430-->
+END%%
+
+%%ANKI
+Basic
+Suppose a DPDA reads the entirety of its input. Why might it still fail?
+Back: It doesn't enter an accept state.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766801622397-->
+END%%
+
+%%ANKI
+Basic
+What two conditions make a DPDA fail to read in its input?
+Back:
+1. It attempts to pop an empty stack.
+2. It makes an endless sequence of $\epsilon$-input moves.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766802922431-->
+END%%
+
+%%ANKI
+Basic
+With respect to DPDAs, what is a hanging situation?
+Back: One in which the DPDA attempts to pop an empty stack.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766802922434-->
+END%%
+
+%%ANKI
+Basic
+With respect to DPDAs, what is a looping situation?
+Back: One in which the DPDA makes an endless sequence of $\epsilon$-input moves.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766802922436-->
+END%%
+
+%%ANKI
+Basic
+With respect to DPDAs, a looping situation expects what kind of moves?
+Back: Only $\epsilon$-input moves.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222537-->
+END%%
+
+%%ANKI
+Basic
+With respect to DPDAs, what is an accepting looping situation?
+Back: A looping situation in which at least one final state is in the loop.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222541-->
+END%%
+
+%%ANKI
+Basic
+With respect to DPDAs, what is a rejecting looping situation?
+Back: A looping situation in which no final state is in the loop.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222542-->
+END%%
+
+%%ANKI
+Cloze
+With respect to DPDAs, {1:halting} is to {2:deadlock} whereas {2:looping} is to {1:livelock}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807344593-->
+END%%
+
+%%ANKI
+Basic
+We want a DPDA that reads in its entire input. How do we fix halting?
+Back: By pushing a special symbol onto the stack at the start.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807829721-->
+END%%
+
+%%ANKI
+Basic
+We want a DPDA that reads in its entire input. How do we fix looping?
+Back: Redirect accepting looping situations to an accept state and rejecting looping situations to a reject state.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807829725-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical entity is a looping situation of a DPDA?
+Back: An ordered pair.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766808746307-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\langle q, x \rangle$ is a looping situation of a DPDA. What is $q$?
+Back: A state.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766808746312-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\langle q, x \rangle$ is a looping situation of a DPDA. What is $x$?
+Back: The top stack symbol.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766808746315-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\langle q, x \rangle$ is a looping situation of a DPDA. What does this mean?
+Back: A cycle starting at $q$ exists in which no input is read and the stack from $x$ down remains the same.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766808746317-->
+END%%
+
+## Closure Operations
+
+Let $A$ and $B$ be deterministic context free languages over alphabet $\Sigma$. Such languages are closed under the following:
+
+* Complementation: $\overline{A} = \{ w \in \Sigma^* \mid w \not\in A \}$
+
+Furthermore, the intersection of a DCFL with a [[regular|regular language]] is deterministic context-free.
+
+%%ANKI
+Basic
+Are DCFLs closed under union?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222543-->
+END%%
+
+%%ANKI
+Basic
+How do we show DCFLs are closed under union (using say DCFGs $A$ and $B$)?
+Back: N/A. DCFLs are not generally closed under union.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222544-->
+END%%
+
+%%ANKI
+Basic
+Are DCFLs closed under intersection?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222546-->
+END%%
+
+%%ANKI
+Basic
+How do we show DCFLs are closed under intersection (using say DCFGs $A$ and $B$)?
+Back: N/A. DCFLs are not generally closed under intersection.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222547-->
+END%%
+
+%%ANKI
+Basic
+Are DCFLs closed under reversal?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222548-->
+END%%
+
+%%ANKI
+Basic
+How do we show DCFLs are closed under reversal (using say DCFG $A$)?
+Back: N/A. DCFLs are not generally closed under reversal.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222549-->
+END%%
+
+%%ANKI
+Basic
+Are DCFLs closed under complement?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222550-->
+END%%
+
+%%ANKI
+Basic
+Are DCFLs closed under concatenation?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222551-->
+END%%
+
+%%ANKI
+Basic
+How do we show DCFLs are closed under concatenation (using say DCFGs $A$ and $B$)?
+Back: N/A. DCFLs are not generally closed under concatenation.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222552-->
+END%%
+
+%%ANKI
+Basic
+Are DCFLs closed under Kleene star?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222553-->
+END%%
+
+%%ANKI
+Basic
+How do we show DCFLs are closed under Kleene star (using say DCFG $A$)?
+Back: N/A. DCFLs are not generally closed under Kleene star.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222554-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be a DCFL and $R$ be a regular language. What can be said about $C \cap R$?
+Back: It must be deterministic context-free.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222555-->
+END%%
+
+%%ANKI
+Basic
+Let $D$ be a DCFL and $R$ be a regular language. What strategy is used to show $D \cap R$ is a DCFL?
+Back: Use the product construction to form a DPDA that recognizes $D \cap R$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222556-->
+END%%
+
+%%ANKI
+Basic
+Let $D$ be a DCFL, $R$ be a regular language, and $P$ be the DPDA recognizing $D \cap R$. What are $P$'s states?
+Back: $Q \times Q'$, where $Q$ is the states of $D$'s DPDA and $Q'$ is the states of $R$'s DFA.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222557-->
+END%%
+
+%%ANKI
+Basic
+Let $D$ be a DCFL and $R$ be a regular language. What construction is used to show $D \cap R$ is deterministic context-free?
+Back: The product construction.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766807222558-->
+END%%
+
+## Bibliography
+
+* Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).

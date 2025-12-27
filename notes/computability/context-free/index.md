@@ -19,7 +19,7 @@ A (nondeterministic) **pushdown automaton** (PDA) is a $6$-tuple $\langle Q, \Si
 5. $q_0 \in Q$ is the start state, and
 6. $F \subseteq Q$ is the set of accept states.
 
-A [[computability/index|language]] is called **context-free** if a pushdown automaton recognizes it.
+A [[computability/index|language]] is called **context-free** if a PDA recognizes it.
 
 %%ANKI
 Basic
@@ -244,13 +244,6 @@ Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA, $q \in Q$, $\s
 Back: As not popping the stack.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1749922915380-->
-END%%
-
-%%ANKI
-Basic
-Let $\langle Q, \Sigma, \Gamma, \delta, q_0, F \rangle$ be a PDA. What is the codomain of $\delta$?
-Back: $\mathscr{P}(Q \times \Gamma_\epsilon)$
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 END%%
 
 %%ANKI
