@@ -436,6 +436,7 @@ Basic
 How does adding endmarkers (i.e. $\dashv$) change the power of DPDAs?
 Back: N/A. It doesn't.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766857888300-->
 END%%
 
 %%ANKI
@@ -443,6 +444,7 @@ Basic
 How does adding endmarkers (i.e. $\dashv$) make designing DPDAs simpler?
 Back: They allow us to know when the input string ends.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766857888301-->
 END%%
 
 %%ANKI
@@ -450,6 +452,7 @@ Basic
 Let $A$ be a DCFL. What can be said about $A{\dashv}$?
 Back: $A{\dashv}$ is also a DCFL.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1766857888302-->
 END%%
 
 ## Closure Operations

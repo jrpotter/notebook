@@ -1,10 +1,10 @@
 ---
 title: Same-Origin Policy
 TARGET DECK: Obsidian::STEM
-FILE TAGS: security::web
+FILE TAGS: network::http
 tags:
-  - security
-  - web
+  - http
+  - network
 ---
 
 ## Overview

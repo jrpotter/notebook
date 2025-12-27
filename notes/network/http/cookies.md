@@ -1,10 +1,10 @@
 ---
 title: Cookies
 TARGET DECK: Obsidian::STEM
-FILE TAGS: network::session
+FILE TAGS: network::http
 tags:
+  - http
   - network
-  - session
 ---
 
 ## Overview

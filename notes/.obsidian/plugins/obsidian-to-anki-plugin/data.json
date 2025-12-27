@@ -1759,7 +1759,7 @@
     "_journal/2025-10/2025-10-22.md": "c4fedcaf6d2622cc79eedc07b1ef851d",
     "_journal/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
     "_journal/2025-10/2025-10-23.md": "5a8dbe6c60db5acfedda392a6ffcf123",
-    "computability/context-free/deterministic.md": "5007281b22f18cde515f2eebdde1fa1b",
+    "computability/context-free/deterministic.md": "325a9bbaa8ca2195db0eff3e4731528d",
     "computability/context-free/index.md": "6a101fd4c0ed5e80112caf9690d24f75",
     "_journal/2025-10-25.md": "1267c24ab6e563cc2331c8a2ae260460",
     "_journal/2025-10/2025-10-24.md": "acef3969a2b64a6ce42c1602238f922d",
@@ -2263,7 +2263,15 @@
     "_journal/2025-12-25.md": "9e88caba96f30eb4bb2671a92ce070fd",
     "_journal/2025-12/2025-12-24.md": "a8c71c94c28ec053fbfe25851f2805c0",
     "_journal/2025-12-26.md": "3ca9c7d403f3f0edb46e5ca33745daa9",
-    "_journal/2025-12/2025-12-25.md": "9e88caba96f30eb4bb2671a92ce070fd"
+    "_journal/2025-12/2025-12-25.md": "9e88caba96f30eb4bb2671a92ce070fd",
+    "network/http/cookies.md": "a2f827f25bdb174612b6cd0a74346d46",
+    "network/http/caching.md": "5eef317277618ba239a931e09027092b",
+    "network/http/sop.md": "8eb916bb3eb7004a44e72ff1bdddca30",
+    "network/http/csrf.md": "cc95c0cbb2a9975b8996dd068dc721bc",
+    "network/http/xss.md": "d42ac730f1622cfe6e93f97b61860d1b",
+    "network/http/index.md": "46385ae1b70632a9b6e49668840c1291",
+    "_journal/2025-12-27.md": "997de8f1e14cb0b7bc0f6181927284a3",
+    "_journal/2025-12/2025-12-26.md": "3ca9c7d403f3f0edb46e5ca33745daa9"
   },
   "fields_dict": {
     "Basic": [
