@@ -893,14 +893,6 @@ END%%
 
 %%ANKI
 Basic
-Why are nondeterminstic PDAs typically highlighted over deterministic ones?
-Back: Nondeterministic PDAs are equivalent to CFGs.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1749922267167-->
-END%%
-
-%%ANKI
-Basic
 Which of deterministic or nondeterministic finite automaton recognize more languages?
 Back: N/A. They are equivalent in power.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
@@ -921,6 +913,14 @@ A CFG is equivalent to what kind of automaton?
 Back: A (nondeterministic) pushdown automaton.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761093239296-->
+END%%
+
+%%ANKI
+Basic
+Which of CFGs or PDAs are more powerful?
+Back: N/A. They are equivalent in power.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1767234842457-->
 END%%
 
 ### Ambiguity

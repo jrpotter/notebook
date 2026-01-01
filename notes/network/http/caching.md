@@ -9,11 +9,9 @@ tags:
 
 ## Overview
 
-In the HTTP standard, like elsewhere, caching refers to the process by which responses are saved and returned on subsequent requests. There are two main types of caches: private caches and shared caches.
+In the HTTP standard, like elsewhere, caching refers to the process by which responses are saved and returned on subsequent requests. There are two main types of caches: [[#Private Caches|private caches]] and [[#Shared Caches|shared caches]].
 
-A **fresh** HTTP response usually indicates that the response is valid and can be reused. A **stale** HTTP response usually indicates the cached response has already expired.
-
-**Validation** refers to the act of checking whether or not a stale HTTP response can still be used. That is, it asks the server if the same response can be marked fresh again.
+A **fresh** HTTP response usually indicates that the response is valid and can be reused. A **stale** HTTP response usually indicates the cached response has already expired. **Validation** refers to the act of checking whether or not a stale HTTP response can still be used. That is, it asks the server if the same response can be marked fresh again.
 
 %%ANKI
 Basic
@@ -64,7 +62,7 @@ END%%
 
 %%ANKI
 Cloze
-{Validation} is the process by which a {stale} response can be made {fresh}.
+{(Re)validation} is the process by which a {stale} response can be made {fresh}.
 Reference: MDN Web Docs. “HTTP Caching - HTTP | MDN.” November 30, 2025. [https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching).
 <!--ID: 1766858936891-->
 END%%
@@ -204,6 +202,8 @@ The `Cache-Control` header holds directives in both requests and responses that 
 
 Multiple directives can be specified with a comma (`,`).
 
+Note that even without a `Cache-Control` header set in the response, a browser may still cache results when certain conditions are met. This is called **heuristic caching**. To avoid this, a `Cache-Control` header should generally always be set.
+
 %%ANKI
 Basic
 What is the purpose of the `Cache-Control` header?
@@ -231,7 +231,7 @@ END%%
 %%ANKI
 Basic
 How is the `Cache-Control` header's `max-age` directive interpreted?
-Back: As the time a given response is considered fresh.
+Back: As the number of seconds a given response is considered fresh.
 Reference: MDN Web Docs. “HTTP Caching - HTTP | MDN.” November 30, 2025. [https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching).
 <!--ID: 1766857888295-->
 END%%
@@ -286,7 +286,7 @@ END%%
 
 %%ANKI
 Basic
-Which `Cache-Control` directive is used to require revaliation?
+Which `Cache-Control` directive is used to require revalidation?
 Back: `no-cache`
 Reference: MDN Web Docs. “HTTP Caching - HTTP | MDN.” November 30, 2025. [https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching).
 <!--ID: 1766858936895-->
@@ -298,6 +298,30 @@ Is `Cache-Control` a request header or response header?
 Back: Both.
 Reference: MDN Web Docs. “HTTP Caching - HTTP | MDN.” November 30, 2025. [https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching).
 <!--ID: 1766859062254-->
+END%%
+
+%%ANKI
+Basic
+Heuristic caching may occur when what response header is omitted?
+Back: `Cache-Control`
+Reference: MDN Web Docs. “HTTP Caching - HTTP | MDN.” November 30, 2025. [https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching).
+<!--ID: 1767233100908-->
+END%%
+
+%%ANKI
+Basic
+What does heuristic caching refer to?
+Back: Caching that occurs when certain conditions are met by the HTTP response.
+Reference: MDN Web Docs. “HTTP Caching - HTTP | MDN.” November 30, 2025. [https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching).
+<!--ID: 1767233100916-->
+END%%
+
+%%ANKI
+Basic
+How is heuristic caching avoided?
+Back: By explicitly setting a `Cache-Control` header.
+Reference: MDN Web Docs. “HTTP Caching - HTTP | MDN.” November 30, 2025. [https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching).
+<!--ID: 1767233100920-->
 END%%
 
 ### Expires
@@ -397,7 +421,7 @@ END%%
 
 %%ANKI
 Cloze
-In general, the {`If-Modified-Since`} header was superseded by the {`ETag`} header.
+In general, the {`If-Modified-Since`} header was superseded by the {`If-None-Match`} header.
 Reference: MDN Web Docs. “HTTP Caching - HTTP | MDN.” November 30, 2025. [https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching).
 <!--ID: 1766858936903-->
 END%%
@@ -418,7 +442,7 @@ Reference: MDN Web Docs. “HTTP Caching - HTTP | MDN.” November 30, 2025. [ht
 <!--ID: 1766859062262-->
 END%%
 
-### ETag
+### If-None-Match
 
 The value of the `ETag` response header is an arbitrary value generated by the server. If the response is stale, the client can send the same value to the server with the `If-None-Match` header.
 

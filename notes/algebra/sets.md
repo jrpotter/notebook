@@ -1,7 +1,7 @@
 ---
-title: Algebra of Sets
+title: Set Algebra
 TARGET DECK: Obsidian::STEM
-FILE TAGS: algebra::set set
+FILE TAGS: algebra::set
 tags:
   - algebra
   - set

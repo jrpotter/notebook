@@ -351,7 +351,7 @@ END%%
 
 %%ANKI
 Basic
-Let $<$ be a well ordering on $A$. What does the transfinite induction principle state?
+Let $<$ be a strict well ordering on $A$. What does the transfinite induction principle state?
 Back: Any $<$-inductive subset of $A$ coincides with $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1752812278057-->

@@ -686,7 +686,7 @@ END%%
 
 ### Inverse Rule
 
-Given $b > 0, b \neq 1$ and $x, y \in \mathbb{R}$, $$\begin{align*} \log_b{b^x} & = x \\ b^{\log_b{x}} & = x \end{align*}$$
+Given $b > 0, b \neq 1$ and $x \in \mathbb{R}$, $$\large \log_b{b^x} = x \quad\text{and}\quad b^{\log_b{x}} = x$$
 
 %%ANKI
 Basic
@@ -882,7 +882,7 @@ END%%
 
 ### Product Rule
 
-Given $b > 0$, $b \neq 1$ and $x, y \in \mathbb{R}$, $\log_b{(x \cdot y)} = \log_b{x} + \log_b{y}$.
+Given $b > 0$, $b \neq 1$ and $x, y > 0$, $$\large \log_b{(x \cdot y)} = \log_b{x} + \log_b{y}.$$
 
 %%ANKI
 Basic
@@ -966,7 +966,7 @@ END%%
 
 ### Quotient Rule
 
-Given $b > 0$, $b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x \div y)} = \log_b{x} - \log_b{y}$$
+Given $b > 0$, $b \neq 1$ and $x, y > 0$, $$\large \log_b{(x \div y)} = \log_b{x} - \log_b{y}.$$
 
 %%ANKI
 Basic
@@ -1034,7 +1034,7 @@ END%%
 
 ### Power Rule
 
-Given $b > 0$, $b \neq 1$ and $x, y \in \mathbb{R}$, $$\log_b{(x^y)} = y\log_b{x}$$
+Given $b > 0$, $b \neq 1$ and $x, y > 0$, $$\large \log_b{(x^y)} = y\log_b{x}.$$
 
 %%ANKI
 Basic
@@ -1050,6 +1050,13 @@ The power rule of logarithms generalizes what other rule of logarithms?
 Back: The product rule.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1749996371371-->
+END%%
+
+%%ANKI
+Cloze
+The power rule of logarithms can be seen as repeated applications of the {product} rule of logarithms.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1767066639869-->
 END%%
 
 %%ANKI
@@ -1086,7 +1093,7 @@ END%%
 
 ### Change of Base Rule
 
-Given $p, q > 0$ such that $p \neq 1$ and $q \neq 1$, and $x, y \in \mathbb{R}$, $$\log_p{x} = \frac{\log_q{x}}{\log_q{p}}$$
+Given $p, q > 0$ such that $p \neq 1$ and $q \neq 1$, and $x > 0$, $$\large \log_p{x} = \frac{\log_q{x}}{\log_q{p}}.$$
 
 %%ANKI
 Basic
@@ -1126,6 +1133,58 @@ Which rule allows converting logs from one base to another?
 Back: The change of base rule.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1750269797694-->
+END%%
+
+## Euler's Number
+
+**Euler's number**, denoted by symbol $e$, is defined as the value such that $\ln{e} = 1$. In other words, $$\large \int_1^e \frac{1}{t} \,dt = 1.$$
+
+%%ANKI
+Basic
+How is Euler's number typically denoted?
+Back: As $e$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767066639874-->
+END%%
+
+%%ANKI
+Basic
+How does Apostol define Euler's number?
+Back: As the number $e$ satisfying $\ln{e} = 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767066639878-->
+END%%
+
+%%ANKI
+Basic
+What is the value of $e$ up to three decimal places?
+Back: $2.718\ldots$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767066639881-->
+END%%
+
+%%ANKI
+Basic
+How is $2.7182818285\ldots$ usually denoted?
+Back: As $e$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767066639883-->
+END%%
+
+%%ANKI
+Basic
+The natural logarithm of what value equals $1$?
+Back: $e$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767066639886-->
+END%%
+
+%%ANKI
+Basic
+For what value of $x$ does the following integral hold true? $$\int_1^x \frac{1}{t} \,dt = 1$$
+Back: $x = e$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767066639888-->
 END%%
 
 ## Bibliography

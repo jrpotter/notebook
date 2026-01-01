@@ -229,7 +229,7 @@ END%%
 
 ### Multiplicative Form
 
-For any set $I$ and function $H$ with domain $I$, if $H(i) \neq \varnothing$ for all $i \in I$, then $\bigtimes_{i \in I} H(i) \neq \varnothing$. Note this statement relies on the [[algebra#Cartesian Product|Cartesian product]] of infinite sets. 
+For any set $I$ and function $H$ with domain $I$, if $H(i) \neq \varnothing$ for all $i \in I$, then $\bigtimes_{i \in I} H(i) \neq \varnothing$. Note this statement relies on the [[sets#Cartesian Product|Cartesian product]] of infinite sets. 
 
 %%ANKI
 Basic

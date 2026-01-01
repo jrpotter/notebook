@@ -8,9 +8,9 @@ tags:
 
 ## Overview
 
-Set theory begins with two primitive notions of sets and membership. Other axioms are defined relative to these concepts.
+Set theory begins with two primitive notions of sets and membership. Other axioms are defined relative to these concepts. The [[choice|Axiom of Choice]] is elaborated on separately.
 
-The [[choice|Axiom of Choice]] is elaborated on separately.
+In general, set theory prefers working with **hereditary sets**, also known as **pure sets**. These are sets whose elements are all hereditary sets; that is, all elements of the sets are themselves sets, as are all elements of the elements, and so on.
 
 %%ANKI
 Basic
@@ -353,6 +353,28 @@ How is $\{A \mid A \in B\}$ rewritten with an existential in the entrance requir
 Back: $\{v \mid \exists A \in B \land v = A\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720381621849-->
+END%%
+
+%%ANKI
+Basic
+What is a hereditary set?
+Back: A set whose elements are all hereditary sets.
+Reference: _Wikipedia_. “Hereditary set.” September 8, 2025. [https://en.wikipedia.org/w/index.php?title=Hereditary_set](https://en.wikipedia.org/w/index.php?title=Hereditary_set&oldid=1310325296).
+<!--ID: 1767142999391-->
+END%%
+
+%%ANKI
+Cloze
+{Hereditary} sets are typically used in theories that preclude the existence of {urelements}.
+Reference: _Wikipedia_. “Hereditary set.” September 8, 2025. [https://en.wikipedia.org/w/index.php?title=Hereditary_set](https://en.wikipedia.org/w/index.php?title=Hereditary_set&oldid=1310325296).
+<!--ID: 1767142999395-->
+END%%
+
+%%ANKI
+Cloze
+{Hereditary} sets are also known as {pure} sets.
+Reference: _Wikipedia_. “Hereditary set.” September 8, 2025. [https://en.wikipedia.org/w/index.php?title=Hereditary_set](https://en.wikipedia.org/w/index.php?title=Hereditary_set&oldid=1310325296).
+<!--ID: 1767142999398-->
 END%%
 
 ## Extensionality
@@ -1188,7 +1210,16 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1755047501306-->
 END%%
 
+%%ANKI
+Basic
+Given ordinal $\alpha$, how can we use a replacement axiom to show the following is a set? $$\{ \mathscr{P}(\beta) \mid \beta \in \alpha \}$$
+Back: By noting $\alpha$ is a set and applying replacement with formula $\gamma(x, y)$ given by $y = \mathscr{P}(x)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767105200279-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+* _Wikipedia_. “Hereditary set.” September 8, 2025. [https://en.wikipedia.org/w/index.php?title=Hereditary_set](https://en.wikipedia.org/w/index.php?title=Hereditary_set&oldid=1310325296).

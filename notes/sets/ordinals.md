@@ -409,6 +409,22 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1757849086328-->
 END%%
 
+%%ANKI
+Basic
+Let $a$ be a transitive set. What can be said about $\mathscr{P}(a)$?
+Back: $\mathscr{P}(a)$ is also a transitive set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767107477061-->
+END%%
+
+%%ANKI
+Basic
+Let $\mathscr{P}(a)$ be a transitive set. What can be said about $a$?
+Back: $a$ is also a transitive set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767107477071-->
+END%%
+
 ## Ordinal Numbers
 
 Let $<$ be a strict well ordering on a set $A$. The **ordinal number of $\langle A, < \rangle$** is its $\in$-image. An **ordinal number** is a set that is the ordinal number of some well-ordered structure.
@@ -835,61 +851,13 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1760533025958-->
 END%%
 
-### Initial Ordinals
-
-An **initial ordinal** is an ordinal number that is not equinumerous to any smaller ordinal number. The initial numbers and [[cardinality|cardinal numbers]] are therefore exactly the same thing.
-
-%%ANKI
-Basic
-What is an initial ordinal?
-Back: An ordinal that is not equinumerous to a smaller ordinal.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1760498296055-->
-END%%
-
-%%ANKI
-Basic
-The cardinal numbers are equivalent to what class of ordinal numbers?
-Back: The initial ordinal numbers.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1760498296064-->
-END%%
-
-%%ANKI
-Basic
-Let $n \in \omega$. Is $n$ an initial ordinal? If not, why?
-Back: Yes.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1760498296066-->
-END%%
-
-%%ANKI
-Basic
-Is $\omega$ an initial ordinal? If not, why?
-Back: Yes.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1760498296070-->
-END%%
-
-%%ANKI
-Basic
-Is $\omega + 1$ an initial ordinal? If not, why?
-Back: No. $\omega + 1$ is equinumerous to $\omega$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1760498296073-->
-END%%
-
-%%ANKI
-Basic
-Is $\omega + \omega$ an initial ordinal? If not, why?
-Back: No. It is equinumerous to smaller ordinals, e.g. $\omega$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1760498296076-->
-END%%
-
 ### Limit Ordinals
 
-A **limit ordinal** is an ordinal number that is neither zero nor a successor ordinal.
+Ordinals are categorized in one of three ways:
+
+1. **Zero**, the ordinal $0$.
+2. The **successor ordinals** which are those of form $\alpha^+$ for some ordinal $\alpha$.
+3. The **limit ordinals** which constitute all remaining ordinals.
 
 %%ANKI
 Basic
@@ -925,7 +893,7 @@ END%%
 
 %%ANKI
 Basic
-What is the smallest limit ordinal?
+What is the least limit ordinal?
 Back: $\omega$
 Reference: _Wikipedia_. “Limit ordinal.” February 5, 2025. [https://en.wikipedia.org/w/index.php?title=Limit_ordinal](https://en.wikipedia.org/w/index.php?title=Limit_ordinal&oldid=1274159075).
 <!--ID: 1760486821364-->
@@ -985,7 +953,326 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1760498684006-->
 END%%
 
+%%ANKI
+Basic
+How many different kinds of ordinals are there?
+Back: Three.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002286-->
+END%%
+
+%%ANKI
+Cloze
+The three kinds of ordinals are:
+1. {zero},
+2. {the successor ordinals}, and
+3. {the limit ordinals}.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002294-->
+END%%
+
+%%ANKI
+Basic
+What are the successor ordinals?
+Back: Ordinals of form $\alpha^+$ for some ordinal $\alpha$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002297-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\lambda$ is a limit ordinal and $\beta \in \lambda$. *Why* is $\beta^+ \in \lambda$?
+Back: Because $\beta^+ \underline{\in} \lambda$, but $\lambda$ isn't the successor of any ordinal.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002300-->
+END%%
+
+### Initial Ordinals
+
+An **initial ordinal** is an ordinal number that is not equinumerous to any smaller ordinal number. The initial numbers and [[cardinality|cardinal numbers]] are therefore exactly the same thing.
+
+%%ANKI
+Basic
+What is an initial ordinal?
+Back: An ordinal that is not equinumerous to a smaller ordinal.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296055-->
+END%%
+
+%%ANKI
+Basic
+The cardinal numbers are equivalent to what class of ordinal numbers?
+Back: The initial ordinal numbers.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296064-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \omega$. Is $n$ an initial ordinal? If not, why?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296066-->
+END%%
+
+%%ANKI
+Basic
+Is $\omega$ an initial ordinal? If not, why?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296070-->
+END%%
+
+%%ANKI
+Basic
+Is $\omega + 1$ an initial ordinal? If not, why?
+Back: No. $\omega + 1$ is equinumerous to $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296073-->
+END%%
+
+%%ANKI
+Basic
+Is $\omega + \omega$ an initial ordinal? If not, why?
+Back: No. It is equinumerous to smaller ordinals, e.g. $\omega$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1760498296076-->
+END%%
+
+## Rank
+
+For any ordinal number $\delta$, use [[recursion#Transfinite Recursion|transfinite recursion]] to define function $F_\delta$ with domain $\delta$ such that, for all $\alpha \in \delta$, $$F_\delta(\alpha) = \bigcup\, \{ \mathscr{P} F_\delta(\beta) \mid \beta \in \alpha \}.$$
+
+For ordinal number $\alpha$, define $V_\alpha$ as the set $F_{\delta}(\alpha)$ for some $\delta$ greater than $\alpha$. Therefore, $$V_\alpha = \bigcup\, \{ \mathscr{P} (V_\beta) \mid \beta \in \alpha \}.$$
+
+This can be written more compactly as:
+
+1. $V_0 = \varnothing$.
+2. $V_{\alpha^+} = \mathscr{P}V_\alpha$ for any ordinal number $\alpha$.
+3. $V_\lambda = \bigcup_{\beta \in \lambda} V_\beta$ for any limit ordinal $\lambda$.
+
+![[von-neumann-universe-hereditary.png]]
+
+This cumulative hierarchy of stes $V_\alpha$ indexed by the class of ordinal numbers is known as the **von Neumann universe**. A set $A$ is **grounded** if $A \subseteq V_\alpha$ for some ordinal number $\alpha$. The **rank** of a grounded set, denoted $\mathop{\text{rank}} A$, is the least such ordinal $\alpha$.
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal. Then $V_\alpha = F_{\delta}(\alpha)$. What condition does $\delta$ satisfy?
+Back: $\alpha \in \delta$, i.e. $\delta$ is greater than $\alpha$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767105200256-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal. Then $V_\alpha = F_{\delta}(\alpha)$ for some $\delta > \alpha$. How is $F_\delta$ defined?
+Back: As $F_\delta(x) = \bigcup \, \{ \mathscr{P} (F(\beta)) \mid \beta \in x \}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767105200263-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal. Then $V_\alpha = F_{\delta}(\alpha)$ for some $\alpha \in \delta$. What method is used to prove existence of $F_\delta$?
+Back: Transfinite recursion.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767105200266-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal. Then $V_\alpha = F_{\delta}(\alpha)$ for some $\delta > \alpha$. What method is used to prove well-definedness of $V_\alpha$?
+Back: Transfinite induction.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767105200272-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal. Then $V_\alpha = F_{\delta}(\alpha)$ for some $\alpha \in \delta$. What do we mean by the well-definedness of $V_\alpha$?
+Back: For any ordinals $\gamma$ and $\epsilon$, $F_\gamma$ and $F_\epsilon$ agree on all $\alpha \in \gamma \cap \epsilon$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767105200275-->
+END%%
+
+%%ANKI
+Basic
+How is $V_\alpha$ defined in terms of $V_\beta$ for all $\beta \in \alpha$?
+Back: $V_\alpha = \bigcup\, \{ \mathscr{P} (V_\beta) \mid \beta \in \alpha \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767106041858-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal number. How is the following set more compactly denoted? $$\bigcup\, \{ \mathscr{P} (V_\beta) \mid \beta \in \alpha \}$$
+Back: As $V_\alpha$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767106041867-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal number. $V_\alpha$ is defined in terms of what transfinite recursive function?
+Back: For some $\delta > \alpha$, $F_\delta(\alpha) = \bigcup\, \{ \mathscr{P} F_\delta(\beta) \mid \beta \in \alpha \}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767106041870-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal. Is it necessarily the case that $V_\alpha$ is a transitive set?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767108341531-->
+END%%
+
+%%ANKI
+Basic
+Assume hereditary set theory. What does $V_0$ evaluate to?
+Back: $V_0 = \varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002303-->
+END%%
+
+%%ANKI
+Basic
+Assume non-hereditary set theory. What does $V_0$ evaluate to?
+Back: The set of all urelements.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767143359188-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal. How is the following equality more compactly expressed? $$V_{\alpha^+} = \bigcup\, \{ \mathscr{P} (V_\beta) \mid \beta \in \alpha^+ \}$$
+Back: As $V_{\alpha^+} = \mathscr{P}(V_\alpha)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002306-->
+END%%
+
+%%ANKI
+Basic
+Let $\lambda$ be a limit ordinal. How is the following equality more compactly expressed? $$V_{\lambda} = \bigcup\, \{ \mathscr{P} (V_\beta) \mid \beta \in \lambda \}$$
+Back: As $V_{\lambda} = \bigcup_{\beta \in \lambda} V_\beta$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002308-->
+END%%
+
+%%ANKI
+Basic
+Let $\sigma$ be a successor ordinal. How is the following equality more compactly expressed? $$V_{\sigma} = \bigcup\, \{ \mathscr{P} (V_\beta) \mid \beta \in \sigma \}$$
+Back: Suppose $\alpha^+ = \sigma$. Then as $V_{\sigma} = \mathscr{P}(V_\alpha)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002311-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. What does it mean for $A$ to be grounded?
+Back: There exists an ordinal $\alpha$ such that $A \subseteq V_\alpha$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002314-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. What property must $A$ satisfy before we can determine its rank?
+Back: It must be grounded.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002317-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a grounded set. What is the rank of $A$?
+Back: The least ordinal $\alpha$ such that $A \subseteq V_\alpha$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002320-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a grounded set. How is the rank of $A$ denoted?
+Back: As $\mathop{\text{rank}} A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002323-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\alpha$ and $\beta$ are ordinals such that $\beta \in \alpha$. What can be said about $V_\alpha$ and $V_\beta$?
+Back: Both $V_\beta \in V_\alpha$ and $V_\beta \subseteq V_\alpha$ hold.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002326-->
+END%%
+
+%%ANKI
+Cloze
+Let $A$ be a grounded set. {$\mathop{\text{rank} } A$} corresponds to how many times the {power set} operation was used to obtain {all the members} of $A$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002329-->
+END%%
+
+%%ANKI
+Cloze
+For a grounded set $A$, $A$ {$\subseteq$} $V_{\mathop{\text{rank}} A}$ {$\in$} $V_{(\mathop{\text{rank}} A)^+}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002332-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal. Is $\alpha$ a grounded set?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002335-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal. *Why* is $\alpha$ a grounded set?
+Back: Because $\alpha \subseteq V_\alpha$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002339-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal. What does $\mathop{\text{rank}} \alpha$ evaluate to?
+Back: $\alpha$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767142002342-->
+END%%
+
+%%ANKI
+Basic
+What is the von Neumann universe a reference to?
+Back: The cumulative hierarchy of sets $V_\alpha$ indexed by the class of ordinal numbers.
+Reference: _Wikipedia_. “Von Neumann universe.” October 16, 2025. [https://en.wikipedia.org/w/index.php?title=Von_Neumann_universe](https://en.wikipedia.org/w/index.php?title=Von_Neumann_universe&oldid=1317119353).
+<!--ID: 1767142999381-->
+END%%
+
+%%ANKI
+Basic
+Assume hereditary sets. What does the von Neumann universe look like?
+Back:
+![[von-neumann-universe-hereditary.png]]
+Reference: _Wikipedia_. “Von Neumann universe.” October 16, 2025. [https://en.wikipedia.org/w/index.php?title=Von_Neumann_universe](https://en.wikipedia.org/w/index.php?title=Von_Neumann_universe&oldid=1317119353).
+<!--ID: 1767143359203-->
+END%%
+
+%%ANKI
+Basic
+Assume non-hereditary sets. What does the von Neumann universe look like?
+Back:
+![[von-neumann-universe-nonhereditary.png]]
+Reference: _Wikipedia_. “Von Neumann universe.” October 16, 2025. [https://en.wikipedia.org/w/index.php?title=Von_Neumann_universe](https://en.wikipedia.org/w/index.php?title=Von_Neumann_universe&oldid=1317119353).
+<!--ID: 1767143359211-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 * _Wikipedia_. “Limit ordinal.” February 5, 2025. [https://en.wikipedia.org/w/index.php?title=Limit_ordinal](https://en.wikipedia.org/w/index.php?title=Limit_ordinal&oldid=1274159075).
+* _Wikipedia_. “Von Neumann universe.” October 16, 2025. [https://en.wikipedia.org/w/index.php?title=Von_Neumann_universe](https://en.wikipedia.org/w/index.php?title=Von_Neumann_universe&oldid=1317119353).
