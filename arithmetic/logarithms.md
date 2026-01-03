@@ -485,47 +485,11 @@ END%%
 
 A few notational conveniences are introduced for common bases.
 
-### Common
-
-The **common logarithm**, denoted $\log{x}$, assumes a base $10$.
-
-%%ANKI
-Basic
-What base is assumed in notation $\log{x}$?
-Back: $10$
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750269797640-->
-END%%
-
-%%ANKI
-Basic
-What name is given to notation $\log$ (with no explicit base)?
-Back: The common logarithm.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750270145256-->
-END%%
-
-%%ANKI
-Basic
-The common logarithm assumes what base?
-Back: $10$
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750270145264-->
-END%%
-
-%%ANKI
-Basic
-How can we equivalently rewrite $\log{x}$ with an explicit base?
-Back: As $\log_{10}{x}$.
-Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
-<!--ID: 1750269797664-->
-END%%
-
 ### Natural
 
 The **natural logarithm**, denoted $\ln{x}$, assumes a base $e$.
 
-Oftentimes the logarithm is defined before [[exponentials]]. If $x$ is a positive real number, the natural logarithm is defined as the [[riemann|Riemann integral]] $$\ln{x} = \int_1^x \frac{1}{t} \,dt.$$ 
+Oftentimes the logarithm is defined before [[exponentials]]. If $x$ is a positive real number, the natural logarithm is defined as the following [[riemann|Riemann integral]]: $$\ln{x} = \int_1^x \frac{1}{t} \,dt.$$
 
 %%ANKI
 Basic
@@ -644,6 +608,88 @@ Cloze
 The slope of $f(x) = \ln{x}$ is {$1$} at {$x = 1$}.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766533071941-->
+END%%
+
+%%ANKI
+Cloze
+The slope of $f(x) = \ln{\lvert x \rvert}$ is {$1$} at {$x = 1$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842693-->
+END%%
+
+%%ANKI
+Cloze
+The slope of $f(x) = \ln{\lvert x \rvert}$ is {$-1$} at {$x = -1$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842694-->
+END%%
+
+%%ANKI
+Basic
+What is the derivative of $f(x) = \ln{x}$ for $x > 0$?
+Back: $f'(x) = x^{-1}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842695-->
+END%%
+
+%%ANKI
+Basic
+What is the derivative of $f(x) = \ln{\lvert x \rvert}$ for $x \neq 0$?
+Back: $f'(x) = x^{-1}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842696-->
+END%%
+
+%%ANKI
+Basic
+What is the derivative of $f(x) = \log{x}$ for $x > 0$?
+Back: $f'(x) = (\ln{10} \cdot x)^{-1}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842697-->
+END%%
+
+%%ANKI
+Basic
+Suppose $b > 0$ and $b \neq 1$. What is the derivative of $f(x) = \log_b{x}$ for $x > 0$?
+Back: $f'(x) = (\ln{b} \cdot x)^{-1}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842698-->
+END%%
+
+### Common
+
+The **common logarithm**, denoted $\log{x}$, assumes a base $10$.
+
+%%ANKI
+Basic
+What base is assumed in notation $\log{x}$?
+Back: $10$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797640-->
+END%%
+
+%%ANKI
+Basic
+What name is given to notation $\log$ (with no explicit base)?
+Back: The common logarithm.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750270145256-->
+END%%
+
+%%ANKI
+Basic
+The common logarithm assumes what base?
+Back: $10$
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750270145264-->
+END%%
+
+%%ANKI
+Basic
+How can we equivalently rewrite $\log{x}$ with an explicit base?
+Back: As $\log_{10}{x}$.
+Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
+<!--ID: 1750269797664-->
 END%%
 
 ### Binary
@@ -962,6 +1008,14 @@ Which logarithmic property does functional equation $f(xy) = f(x) + f(y)$ relate
 Back: The product rule.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766500506363-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{\lvert xy \rvert}$ written using $+$?
+Back: $\log_b{\lvert x \rvert} + \log_b{\lvert y \rvert}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462975549-->
 END%%
 
 ### Quotient Rule

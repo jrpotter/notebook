@@ -1157,6 +1157,74 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1764884285379-->
 END%%
 
+## Logarithmic Differentiation
+
+Let $f(x)$ be a differentiable function and define $g(x) = \ln{\lvert f(x) \rvert}$. Then, by virtue of the [[#Chain Rule|chain rule]], $$g'(x) = \frac{f'(x)}{f(x)} \implies f'(x) = g'(x) \cdot f(x).$$
+
+%%ANKI
+Basic
+Who originally developed the logarithmic differentiation technique?
+Back: Bernoulli.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842683-->
+END%%
+
+%%ANKI
+Basic
+Logarithmic differentiation is a technique built off what other rule?
+Back: The chain rule.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842686-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x)$ be a differentiable function. What function is composed in logarithmic differentiation?
+Back: $g(x) = \ln{\lvert f(x) \rvert}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842687-->
+END%%
+
+%%ANKI
+Basic
+Under what conditions is $g(x) = \ln{\lvert f(x) \rvert}$ differentiable?
+Back: When $f(x) \neq 0$ is differentiable.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842688-->
+END%%
+
+%%ANKI
+Basic
+What does the following indefinite integral evaluate to? $$\int_1^{\lvert x \rvert} \frac{du}{u}$$
+Back: $\ln{\lvert x \rvert} + C$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842689-->
+END%%
+
+%%ANKI
+Basic
+What does the following indefinite integral evaluate to? $$\int_1^{\lvert x \rvert} \frac{f'(t) \,dt}{f(t)}$$
+Back: $\ln{\lvert f(x) \rvert}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842691-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x)$ be a differentiable function. How is $f'(x)$ defined in terms of logarithmic differentiation?
+Back: $f'(x) = g'(x) \cdot f(x)$ where $g(x) = \ln{\lvert f(x) \rvert}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842692-->
+END%%
+
+%%ANKI
+Basic
+*When* is logarithmic differentiation the preferred way to compute $f'(x)$?
+Back: When the derivative of $\ln{\lvert f(x) \rvert}$ is easier to compute than $f'(x)$ directly.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462975545-->
+END%%
+
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

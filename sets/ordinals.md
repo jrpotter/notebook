@@ -1382,6 +1382,16 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1767407159803-->
 END%%
 
+%%ANKI
+Basic
+*Why* does Enderton prefer the second formulation of the regularity axiom?
+1. Every set is grounded.
+2. Every nonempty set $A$ has a member $m$ such that $m \cap A = \varnothing$.
+Back: It has a more elementary formulation.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767460777024-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).

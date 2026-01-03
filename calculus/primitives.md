@@ -12,7 +12,7 @@ A function $P$ is called a **primitive** (or **antiderivative**) of a function $
 
 Leibniz preferred denoting a general primitive of $f$ as follows: $$\int f(x) \,dx.$$
 
-Note the above is conceptually distinct from an [[riemann#Indefinite Integrals|indefinite integral]], though the term is also often used to refer to a primitive.
+Note the above is conceptually distinct from an [[riemann#Indefinite Integrals|indefinite integral]] though the term is also often used to refer to a primitive.
 
 %%ANKI
 Cloze
