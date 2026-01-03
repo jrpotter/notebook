@@ -547,7 +547,7 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1765128774925-->
 END%%
 
-## Context-Free Grammar
+## Grammar
 
 A **context-free grammar** (CFG) is a $4$-tuple $\langle V, \Sigma, R, S \rangle$ where
 
@@ -1132,9 +1132,11 @@ END%%
 
 #### Valid Strings
 
-Let $G$ be a CFG. A string that appears in a leftmost reduction of some string in $L(G)$ is called a **valid string**.
+Let $G$ be a CFG with terminals $\Sigma$. A string that appears in a leftmost reduction of some string in $L(G)$ is called a **valid string**.
 
 Let $u_i$ be a valid string. In the reduce step $u_i \rightarrowtail u_{i+1}$, suppose rule $T \rightarrow h$ was applied in reverse. That is, $u_i = xhy$ and $u_{i+1} = xTy$ for some strings $x$ and $y$. Then $h$, along with reducing rule $T \rightarrow h$, is called a **handle** of $u_i$.
+
+We say that a handle $h$ of a valid string $v = xhy$ is a **forced handle** if $h$ is the unique handle in *every* valid string $xh\hat{y}$ where $\hat{y} \in \Sigma^*$.
 
 %%ANKI
 Basic
@@ -1187,7 +1189,7 @@ END%%
 %%ANKI
 Basic
 Consider the following CFG. What is the handle of "$aaabbbbbb$"? $$\begin{align*} R & \rightarrow S \mid T \\ S & \rightarrow aSb \mid ab \\ T & \rightarrow aTbb \mid abb \end{align*}$$
-Back: $aa\underline{abb}bbbb$ and $T \rightarrow aTbb$.
+Back: $aa\underline{abb}bbbb$ and $T \rightarrow abb$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761705116361-->
 END%%
@@ -1286,6 +1288,54 @@ Consider the following CFG. What is the handle of "$T(T)(){\dashv}$"? $$\begin{a
 Back: $\underline{T(T)}(){\dashv}$ and $T \rightarrow T(T)$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1761745620111-->
+END%%
+
+%%ANKI
+Basic
+Suppose $h$ is a handle of $v = xhy$. What does it mean for $h$ to be forced?
+Back: $h$ is the unique handle in every valid string $xh\hat{y}$ where $\hat{y} \in \Sigma^*$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1767399166418-->
+END%%
+
+%%ANKI
+Basic
+Suppose handles of a CFG are unique. Are they forced?
+Back: Not necessarily.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1767399166421-->
+END%%
+
+%%ANKI
+Basic
+Suppose handles of a CFG are forced. Are they unique?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1767399166424-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be a CFG. What does it mean for $G$ to be ambiguous?
+Back: The same string may have multiple different derivations.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1767399166427-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be an ambiguous CFG. How many handles may a valid string have?
+Back: Zero or more.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1767399166430-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be an unambiguous CFG. How many handles may a valid string have?
+Back: At most one.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1767399166432-->
 END%%
 
 ## Chomsky Normal Form

@@ -878,12 +878,11 @@ END%%
 
 ### Truncation
 
-Let $$\begin{align*}
-x & = \langle x_{w-1}, \ldots, x_1, x_0 \rangle \\
-x' & = \langle x_{k-1}, \ldots, x_1, x_0 \rangle
-\end{align*}$$
+Let $x = \langle x_{w-1}, \ldots, x_1, x_0 \rangle$ and $x' = \langle x_{k-1}, \ldots, x_1, x_0 \rangle$.
 
-Then in unsigned encoding, truncating $x$ to $k$ bits is equal to $x \bmod 2^k$. This is because $x_i \bmod 2^k = 0$ for all $i \geq k$ meaning $$B2U_k(x') = B2U_w(x) \bmod 2^k$$
+In unsigned encoding, truncating $x$ to $k$ bits is equal to $x \bmod 2^k$. This is because $x_i \bmod 2^k = 0$ for all $i \geq k$ meaning $$B2U_k(x') = B2U_w(x) \bmod 2^k.$$
+
+In two's-complement encoding, truncating $x$ to $k$ bits is equal to $U2T_k(T2U_w(x) \bmod 2^k)$. Like with unsigned truncation, $B2U_k(x') = B2U_w(x) \bmod 2^k$. Therefore $$U2T_k(B2U_k(x')) = U2T_k(B2U_w(x) \bmod 2^k).$$
 
 %%ANKI
 Basic
@@ -917,12 +916,10 @@ Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Program
 <!--ID: 1708700225123-->
 END%%
 
-In two's-complement encoding, truncating $x$ to $k$ bits is equal to $U2T_k(T2U_w(x) \bmod 2^k)$. Like with unsigned truncation, $B2U_k(x') = B2U_w(x) \bmod 2^k$. Therefore $$U2T_k(B2U_k(x')) = U2T_k(B2U_w(x) \bmod 2^k)$$
-
 %%ANKI
 Basic
 What is the $k$-truncation of $w$-bit two's-complement $x$?
-Back: $U2T_k(x \bmod 2^k)$
+Back: $U2T_k(T2U_w(x) \bmod 2^k)$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708701087974-->
 END%%

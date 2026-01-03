@@ -555,14 +555,14 @@ END%%
 %%ANKI
 Basic
 In what way does the transfinite recursion theorem generalize the recursion theorem?
-Back: It applies to any well ordering, not just $\in$ on the natural numbers.
+Back: It applies to any strict well ordering, not just $\in$ on the natural numbers.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1754246610274-->
 END%%
 
 %%ANKI
 Basic
-Let $<$ be a well ordering on $A$. Suppose $F$ is $\gamma$-constructed. What kind of mathematical entity is $F$?
+Let $<$ be a strict well ordering on $A$. Suppose $F$ is $\gamma$-constructed. What kind of mathematical entity is $F$?
 Back: A function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1754246929394-->
@@ -570,7 +570,7 @@ END%%
 
 %%ANKI
 Basic
-Let $<$ be a well ordering on $A$. Suppose $F$ is $\gamma$-constructed. What kind of mathematical entity is $\gamma$?
+Let $<$ be a strict well ordering on $A$. Suppose $F$ is $\gamma$-constructed. What kind of mathematical entity is $\gamma$?
 Back: N/A. It's a general formula.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1754246929400-->
@@ -578,7 +578,7 @@ END%%
 
 %%ANKI
 Basic
-Let $<$ be a well ordering on $A$. What does it mean for $F$ to be $\gamma$-constructed?
+Let $<$ be a strict well ordering on $A$. What does it mean for $F$ to be $\gamma$-constructed?
 Back: $\gamma(F \restriction \mathop{\text{seg}_<}t, F(t))$ is true for all $t \in A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1754246929403-->

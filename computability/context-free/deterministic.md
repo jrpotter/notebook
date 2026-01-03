@@ -447,9 +447,9 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1766808746317-->
 END%%
 
-## Deterministic Context-Free Grammars
+## Grammar
 
-TODO
+A **deterministic context-free grammar** (DCFG) is a [[computability/context-free/index#Grammar|CFG]] such that every [[computability/context-free/index#Valid Strings|valid string]] has a [[computability/context-free/index#Valid Strings|forced handle]].
 
 If we restrict our attention to [[computability/index#Languages|prefix-free]] languages, they are equivalent to DPDAs in their descriptive power. By adding an endmarker to a language, we ensure the resulting language is prefix-free.
 
@@ -459,6 +459,22 @@ What is DCFG an acronym for?
 Back: **D**eterministic **C**ontext-**F**ree **G**rammar.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1767233100935-->
+END%%
+
+%%ANKI
+Basic
+What is a deterministic context-free grammar?
+Back: A CFG such that every valid string has a forced handle.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1767399166437-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't it possible for a DCFG to be ambiguous?
+Back: By definition every valid string in a DCFG has a forced handle.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1767399166439-->
 END%%
 
 %%ANKI

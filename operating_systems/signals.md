@@ -362,7 +362,7 @@ What are the five default actions a process can perform when receiving a signal?
 Back:
 1. Ignore
 2. Terminate
-3. Core
+3. Core dump
 4. Stop
 5. Continue
 Reference: `man 7 signal`

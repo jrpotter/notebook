@@ -850,6 +850,17 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1726976526824-->
 END%%
 
+%%ANKI
+Basic
+Which axiom is encoded in the following?
+
+> $\forall a, \exists B, \forall x, (x \in B \Leftrightarrow x \subseteq a)$
+
+Back: The power set axiom.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767406285479-->
+END%%
+
 ## Subset Axioms
 
 The "subset axioms" refer to an axiom schema stating:
@@ -1138,6 +1149,17 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1724486269585-->
 END%%
 
+%%ANKI
+Basic
+Which axiom is encoded in the following?
+
+> $\exists A, [\varnothing \in A \land (\forall a \in A, a^+ \in A)]$
+
+Back: The infinity axiom.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767406285488-->
+END%%
+
 ## Replacement Axioms
 
 The "replacement axioms" refer to an axiom schema stating:
@@ -1216,6 +1238,70 @@ Given ordinal $\alpha$, how can we use a replacement axiom to show the following
 Back: By noting $\alpha$ is a set and applying replacement with formula $\gamma(x, y)$ given by $y = \mathscr{P}(x)$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1767105200279-->
+END%%
+
+## Regularity Axiom
+
+The regularity axiom states that [[ordinals#Regularity|regularity]] holds. That is, every nonempty set $A$ has a member $m$ such that $m \cap A = \varnothing$.
+
+This axiom is also known as the **foundation axiom**.
+
+%%ANKI
+Cloze
+The {regularity} axiom is also known as the {foundation} axiom.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767406285493-->
+END%%
+
+%%ANKI
+Basic
+What does the regularity axiom state?
+Back: Every nonempty set $A$ has a member $m$ such that $m \cap A = \varnothing$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767406285496-->
+END%%
+
+%%ANKI
+Basic
+Which axiom is encoded in the following?
+
+> $\forall A, A \neq \varnothing \Rightarrow (\exists m \in A, m \cap A = \varnothing)$
+
+Back: The regularity axiom.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767406285491-->
+END%%
+
+%%ANKI
+Basic
+State the regularity axiom in FOL.
+Back: $\forall A, A \neq \varnothing \Rightarrow (\exists m \in A, m \cap A = \varnothing)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767406285499-->
+END%%
+
+%%ANKI
+Basic
+Which set theory axiom is most closely tied to discussions of the von Neumann universe?
+Back: The regularity axiom.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767406837156-->
+END%%
+
+%%ANKI
+Basic
+How does the regularity axiom show that $x \not\in x$ for some set $x$?
+Back: Because it ensures that $\{x\} \cap x = \varnothing$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767407050639-->
+END%%
+
+%%ANKI
+Basic
+Why is the regularity axiom named the way it is?
+Back: Its name implies every set is "well-behaved".
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767407050650-->
 END%%
 
 ## Bibliography

@@ -1460,15 +1460,7 @@ END%%
 
 #### Bound Functions
 
-A **bound function** $t \colon \mathbb{N} \rightarrow \mathbb{N}$ returns an upper bound on the number of iterations an iterative command may perform. On every iteration, it must evaluate to a smaller number than in the previous iteration. That is, $t(k^+) < t(k)$ for all $k \in \mathbb{N}$. In this way, we guarantee the iterative command eventually terminates.
-
-%%ANKI
-Basic
-Let $t$ be a bound function of some iterative command. What is its "signature"?
-Back: $t \colon \mathbb{N} \rightarrow \mathbb{N}$
-Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1737923385422-->
-END%%
+A **bound function** $t$ returns an upper bound on the number of iterations an iterative command may perform. On every iteration, it must evaluate to a smaller number than in the previous iteration. That is, $t(k^+) < t(k)$ for all $k \in \mathbb{N}$. In this way, we guarantee the iterative command eventually terminates.
 
 %%ANKI
 Basic

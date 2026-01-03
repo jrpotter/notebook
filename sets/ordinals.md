@@ -425,6 +425,52 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1767107477071-->
 END%%
 
+### Transitive Closures
+
+Let $C$ be a fixed set. Apply [[recursion#Transfinite Recursion|transfinite recursion]] to $\omega$ using for $\gamma(x, y)$ the formula $$y = C \,\cup\, \bigcup \bigcup \mathop{\text{ran}} x.$$
+
+Let $F$ be the $\gamma$-constructed function on $\omega$. Then $\overline{C} = \bigcup \mathop{\text{ran}} F$ is the **transitive closure** of $C$. $\overline{C}$ is a transitive set and $C \subseteq \overline{C}$.
+
+%%ANKI
+Basic
+Let $C$ be a set and $\overline{C} = \bigcup \,\mathop{\text{ran}} F$ be its transitive closure. How is $F$ defined?
+Back: As $\gamma$-constructed function where $\gamma(x, y)$ is given by formula $$y = C \,\cup\, \bigcup\bigcup\mathop{\text{ran}} x.$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767405753705-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be a set. How is its transitive closure $\overline{C}$ defined using ellipsis (long-form notation)?
+Back: $$\overline{C} = C \,\cup\, \bigcup C \,\cup\, \bigcup\bigcup C \,\cup\, \ldots$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767405753714-->
+END%%
+
+%%ANKI
+Basic
+Let $C$ be a set. How is its transitive closure $\overline{C}$ defined using transfinite recursion?
+Back: As $\overline{C} = \mathop{\text{ran}} F$ where $F$ is the $\gamma$-constructed function $\gamma(x, y)$ given by formula $$y = C \,\cup\, \bigcup\bigcup \mathop{\text{ran}} x.$$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767405753720-->
+END%%
+
+%%ANKI
+Basic
+How do we most simply derive a transitive set from some fixed set $A$?
+Back: By deriving its transitive closure.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767405753728-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set. Why is its transitive closure $\overline{A}$ named the way it is?
+Back: $\overline{A}$ is a transitive set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767405753737-->
+END%%
+
 ## Ordinal Numbers
 
 Let $<$ be a strict well ordering on a set $A$. The **ordinal number of $\langle A, < \rangle$** is its $\in$-image. An **ordinal number** is a set that is the ordinal number of some well-ordered structure.
@@ -1269,6 +1315,71 @@ Back:
 ![[von-neumann-universe-nonhereditary.png]]
 Reference: _Wikipedia_. “Von Neumann universe.” October 16, 2025. [https://en.wikipedia.org/w/index.php?title=Von_Neumann_universe](https://en.wikipedia.org/w/index.php?title=Von_Neumann_universe&oldid=1317119353).
 <!--ID: 1767143359211-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is grounded and $a \in A$. How does $\mathop{\text{rank}} A$ relate to $\mathop{\text{rank}} a$?
+Back: $\mathop{\text{rank}} a \in \mathop{\text{rank}} A$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767405753751-->
+END%%
+
+%%ANKI
+Basic
+Suppose every member of $A$ is grounded. Must $A$ be grounded?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767405753766-->
+END%%
+
+%%ANKI
+Basic
+Suppose every member of $A$ is grounded. What is $\mathop{\text{rank}} A$?
+Back: $\mathop{\text{rank}} A = \bigcup\, \{ \,(\mathop{\text{rank}} a)^+ \mid a \in A \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767405753776-->
+END%%
+
+### Regularity
+
+Let $A$ be a set. We say $A$ is **regular** if $A$ is empty or $A$ has a member $m \in A$ such that $m \cap A = \varnothing$. 
+
+A set is grounded if and only if it is regular. This latter assertion, applied to the universe of all sets, is known as the [[sets/index#Regularity Axiom|regularity axiom]].
+
+%%ANKI
+Basic
+What does it mean for a set $A$ to be regular?
+Back: $A = \varnothing$ or it has a member $m \in A$ such that $m \cap A = \varnothing$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767406837138-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is an empty set. Is it considered regular?
+Back: Yes.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767406837146-->
+END%%
+
+%%ANKI
+Basic
+The following assertion is equivalent to what, more ubiquitous, assertion?
+
+> Every set is grounded.
+
+Back: The regularity axiom.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767406837151-->
+END%%
+
+%%ANKI
+Basic
+Regularity implies sets are well-founded with respect to what?
+Back: Membership.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1767407159803-->
 END%%
 
 ## Bibliography

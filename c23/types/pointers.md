@@ -919,14 +919,6 @@ END%%
 
 %%ANKI
 Basic
-When can an object with simple type be accessed using an lvalue with non-compatible type?
-Back: Integer types can be accessed by an lvalue with different signedness.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1740106368898-->
-END%%
-
-%%ANKI
-Basic
 What non-simple types allow access to objects using lvalues with non-compatible types?
 Back: Aggregate types and unions.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
