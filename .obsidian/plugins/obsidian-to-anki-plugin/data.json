@@ -1745,7 +1745,7 @@
     "_journal/2025-10-19.md": "3b75e9ccd1a230b3dd7b3367d5520ce7",
     "_journal/2025-10-20.md": "db01e2469c29e525372be8bcf10b1bbe",
     "_journal/2025-10/2025-10-19.md": "3b75e9ccd1a230b3dd7b3367d5520ce7",
-    "formal_system/phrase-structure.md": "b89cd837b6cb4fcbb0d790dc5d7ebe38",
+    "formal_system/phrase-structure.md": "4460658c46968ed3a079f24a61854646",
     "calculus/riemann_integrals.md": "ff39b163c6719ccb65b2aac54c583ad8",
     "calculus/riemann.md": "669e417d3a1fd0a5ba2893fc47e24e49",
     "_journal/2025-10-21.md": "afa7eaf4e85392cea5587f263a52e246",
@@ -1762,8 +1762,8 @@
     "_journal/2025-10/2025-10-22.md": "c4fedcaf6d2622cc79eedc07b1ef851d",
     "_journal/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
     "_journal/2025-10/2025-10-23.md": "5a8dbe6c60db5acfedda392a6ffcf123",
-    "computability/context-free/deterministic.md": "8cef13f019b806ec1a076def9e28eed5",
-    "computability/context-free/index.md": "8c26add35be32748ad40a0c009b4518b",
+    "computability/context-free/deterministic.md": "d7ce76f73be09ccace3cb0c273d2eb35",
+    "computability/context-free/index.md": "2bc0e0816781933e979db0e6ee44bab5",
     "_journal/2025-10-25.md": "1267c24ab6e563cc2331c8a2ae260460",
     "_journal/2025-10/2025-10-24.md": "acef3969a2b64a6ce42c1602238f922d",
     "calculus/derivatives.md": "d680882bd3b7ff8b9a97e44b3725762f",
@@ -2318,7 +2318,10 @@
     "_journal/2025/2025-12/2025-12-02.md": "875febe9f0476d9f8f1412ec29c91ea0",
     "README.md": "7ca8c500a486c87cfb9e3fd033dfcffe",
     "_journal/2026-01-03.md": "3a908c68e8fee2290fb425082aa576ef",
-    "_journal/2026-01/2026-01-02.md": "29e0a4f9c2d6a83dccf7c78e6849afbb"
+    "_journal/2026-01/2026-01-02.md": "29e0a4f9c2d6a83dccf7c78e6849afbb",
+    "_journal/2026-01-05.md": "d0e23e9541ea681cb47260e0ebfa1b44",
+    "_journal/2026-01/2026-01-04.md": "07ec69764b3b1eeadc75d19685cd7243",
+    "_journal/2026-01/2026-01-03.md": "d5a94bdec7a14ddb09372c9040bd3804"
   },
   "fields_dict": {
     "Basic": [

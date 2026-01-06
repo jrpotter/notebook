@@ -547,7 +547,7 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1765128774925-->
 END%%
 
-## Grammar
+## Context-Free Grammar
 
 A **context-free grammar** (CFG) is a $4$-tuple $\langle V, \Sigma, R, S \rangle$ where
 
@@ -1136,7 +1136,7 @@ Let $G$ be a CFG with terminals $\Sigma$. A string that appears in a leftmost re
 
 Let $u_i$ be a valid string. In the reduce step $u_i \rightarrowtail u_{i+1}$, suppose rule $T \rightarrow h$ was applied in reverse. That is, $u_i = xhy$ and $u_{i+1} = xTy$ for some strings $x$ and $y$. Then $h$, along with reducing rule $T \rightarrow h$, is called a **handle** of $u_i$.
 
-We say that a handle $h$ of a valid string $v = xhy$ is a **forced handle** if $h$ is the unique handle in *every* valid string $xh\hat{y}$ where $\hat{y} \in \Sigma^*$.
+We say that a handle $h$ of a valid string $v = xhy$ is a **forced handle** if $h$ is the unique handle in *every* valid string $xh\hat{y}$ where $\hat{y} \in \Sigma^*$. We say $h$ is **forced by lookahead $k$** if $h$ is the unique handle of every valid string $xh\hat{y}$ where $\hat{y} \in \Sigma^*$ agrees with $y$ on their first $k$ symbols. (If either $y$ or $\hat{y}$ is shorter than $k$, the strings must agree up to the length of the shorter one).
 
 %%ANKI
 Basic
@@ -1338,6 +1338,21 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1767399166432-->
 END%%
 
+%%ANKI
+Basic
+Suppose $h$ is a handle of $v = xhy$. What does it mean for $h$ to be forced by lookahead $k$?
+Back: $h$ is the unique handle in every valid string $xh\hat{y}$ where $\hat{y} \in \Sigma^*$ agrees with $y$ on their first $k$ symbols.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1767656014932-->
+END%%
+
+%%ANKI
+Cloze
+A handle that is {forced} is also considered forced by {lookahead $0$}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1767656014940-->
+END%%
+
 ## Chomsky Normal Form
 
 A context-free grammar is in **Chomsky normal form** if every rule is of the form $$\begin{align*} S & \rightarrow \epsilon \\ A & \rightarrow BC \\ A & \rightarrow a \end{align*}$$
@@ -1345,7 +1360,8 @@ A context-free grammar is in **Chomsky normal form** if every rule is of the for
 where $a$ is any terminal, and $A$, $B$, and $C$ are variables distinct from start variable $S$. This is typically done in stages:
 
 1. Introduce a new start variable $S_0$ with rule $S_0 \rightarrow S$.
-2. Eliminate all $\epsilon$-rules (except for the start variable).
+	1. This ensures the start state is never on the RHS.
+2. Eliminate all $\epsilon$-rules (except for that of the start variable).
 	1. These are the rules that map a variable to $\epsilon$.
 3. Eliminate all unit rules.
 	1. These are the rules that map a variable to another variable.

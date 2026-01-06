@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "28563c8f5e5edefe",
+            "id": "0732af2a990f3fdc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_journal/2026-01-03.md",
+                "file": "_journal/2026-01-06.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-01-03"
+              "title": "2026-01-06"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "1767407050639",
+                "query": "phrase-structure",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "computability/reducibility.md",
+                "file": "_journal/2026-01-06.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for reducibility"
+              "title": "Backlinks for 2026-01-06"
             }
           },
           {
@@ -142,17 +142,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_journal/2026-01-03.md",
+                "file": "_journal/2026-01-06.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-01-03"
+              "title": "Outline of 2026-01-06"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -170,41 +169,42 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "28563c8f5e5edefe",
+  "active": "0732af2a990f3fdc",
   "lastOpenFiles": [
+    "_journal/2025/2025-10/2025-10-20.md",
+    "_journal/2026-01-06.md",
+    "formal_system/phrase-structure.md",
+    "_journal/2026-01/2026-01-05.md",
+    "formal_system/abstract_rewriting.md",
+    "computability/context-free/deterministic.md",
+    "computability/context-free/index.md",
+    "computability/regular.md",
+    "computability/context-free/lr-k.md",
+    "parsing/lr-grammar.md",
+    "parsing/index.md",
+    "parsing",
+    "_journal/2026-01/2026-01-04.md",
+    "_journal/2026-01/2026-01-03.md",
     "calculus/derivatives.md",
     "arithmetic/logarithms.md",
     "calculus/primitives.md",
     "sets/ordinals.md",
     "sets/recursion.md",
-    "_journal/2026-01-03.md",
     "sets/index.md",
     "operating_systems/signals.md",
-    "computability/context-free/deterministic.md",
     "_journal/2026-01/2026-01-02.md",
     "proofs/induction.md",
     "programming/pred_trans.md",
     "binary/integer.md",
     "algebra/functions.md",
     "c23/types/pointers.md",
-    "processor/exceptions.md",
-    "computability/context-free/index.md",
-    "_journal/2026-01/2026-01-01.md",
     "_journal/2026-01",
-    "_journal/2025/2025-12/2025-12-31.md",
-    "computability/index.md",
-    "network/http/caching.md",
-    "_journal/2025/2025-12/2025-12-30.md",
-    "graphs/index.md",
     "sets/images/von-neumann-universe-nonhereditary.png",
     "sets/images/von-neumann-universe-hereditary.png",
     "sets/images/von-neumann-universe.png",
     "graphs/images/von-neumann-universe-nonhereditary.png",
     "graphs/images/von-neumann-universe-hereditary.png",
     "sets/images/venn-diagram-union.png",
-    "sets/order/well.md",
-    "sets/classes.md",
-    "c23/make.md",
     "network/http",
     "complexity/images/sat-clique.png",
     "complexity/images",
@@ -216,7 +216,6 @@
     "computability/decidability",
     "complexity",
     "network/session",
-    "security/web",
-    "security"
+    "security/web"
   ]
 }
