@@ -82,6 +82,30 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1724485233279-->
 END%%
 
+%%ANKI
+Basic
+What does $\bigcup 3$ evaluate to?
+Back: $2$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1768019074261-->
+END%%
+
+%%ANKI
+Basic
+What does $\bigcup 0$ evaluate to?
+Back: $0$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1768019074264-->
+END%%
+
+%%ANKI
+Basic
+What does $\bigcup \omega$ evaluate to?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1768019074267-->
+END%%
+
 ## Inductive Sets
 
 For any set $a$, its **successor** $a^+$ is defined as $a^+ = a \cup \{a\}$. A set $A$ is **inductive** if and only if $\varnothing \in A$ and $\forall a \in A, a^+ \in A$.

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_journal/2026-01-06.md",
+                "file": "_journal/2026-01-10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-01-06"
+              "title": "2026-01-10"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_journal/2026-01-06.md",
+                "file": "_journal/2026-01-09.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-01-06"
+              "title": "Backlinks for 2026-01-09"
             }
           },
           {
@@ -142,16 +142,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_journal/2026-01-06.md",
+                "file": "_journal/2026-01-10.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-01-06"
+              "title": "Outline of 2026-01-10"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -171,8 +172,14 @@
   },
   "active": "0732af2a990f3fdc",
   "lastOpenFiles": [
+    "_journal/2026-01/2026-01-09.md",
+    "_journal/2026-01-10.md",
+    "sets/natural_numbers.md",
+    "sets/ordinals.md",
+    "_journal/2026-01/2026-01-08.md",
+    "_journal/2026-01/2026-01-07.md",
+    "_journal/2026-01/2026-01-06.md",
     "_journal/2025/2025-10/2025-10-20.md",
-    "_journal/2026-01-06.md",
     "formal_system/phrase-structure.md",
     "_journal/2026-01/2026-01-05.md",
     "formal_system/abstract_rewriting.md",
@@ -188,16 +195,10 @@
     "calculus/derivatives.md",
     "arithmetic/logarithms.md",
     "calculus/primitives.md",
-    "sets/ordinals.md",
     "sets/recursion.md",
     "sets/index.md",
     "operating_systems/signals.md",
     "_journal/2026-01/2026-01-02.md",
-    "proofs/induction.md",
-    "programming/pred_trans.md",
-    "binary/integer.md",
-    "algebra/functions.md",
-    "c23/types/pointers.md",
     "_journal/2026-01",
     "sets/images/von-neumann-universe-nonhereditary.png",
     "sets/images/von-neumann-universe-hereditary.png",

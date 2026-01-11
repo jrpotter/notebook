@@ -1341,6 +1341,38 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1767405753776-->
 END%%
 
+%%ANKI
+Basic
+Let $a$ be a grounded set. What does $\mathop{\text{rank}} \,\{a\}$ evaluate to?
+Back: $(\mathop{\text{rank}} a)^+$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1768019074247-->
+END%%
+
+%%ANKI
+Basic
+Let $a$ and $b$ be grounded sets. What does $\mathop{\text{rank}} \,\{a, b\}$ evaluate to?
+Back: $\mathop{\text{max}}(\mathop{\text{rank}} a, \mathop{\text{rank}} b)^+$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1768019074252-->
+END%%
+
+%%ANKI
+Basic
+Let $a$ be a grounded set. What does $\mathop{\text{rank}} \mathscr{P}(a)$ evaluate to?
+Back: $(\mathop{\text{rank}} a)^+$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1768019074255-->
+END%%
+
+%%ANKI
+Basic
+Let $a$ be a grounded set. What does $\mathop{\text{rank}} \,\bigcup a$ evaluate to?
+Back: An ordinal less than or equal to $\mathop{\text{rank}} a$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1768019074258-->
+END%%
+
 ### Regularity
 
 Let $A$ be a set. We say $A$ is **regular** if $A$ is empty or $A$ has a member $m \in A$ such that $m \cap A = \varnothing$. 
