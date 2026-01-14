@@ -522,6 +522,14 @@ Reference: _Wikipedia_. “Router (computing).” June 19, 2025. [https://en.wik
 <!--ID: 1754830088540-->
 END%%
 
+%%ANKI
+Basic
+Roughly speaking, the introduction of what network device transitions us from L2 to L3?
+Back: Routers.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1768402692047-->
+END%%
+
 ## Switches
 
 A **switch** is a networking device that connects multiple devices together. Multiple data cables are plugged into a switch to enable communication between different networked devices.

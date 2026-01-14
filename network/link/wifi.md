@@ -29,7 +29,7 @@ END%%
 
 %%ANKI
 Basic
-What IEEE set of standards corresponds to Wi-Fi?
+What IEEE standard defines the Wi-Fi protocol?
 Back: IEEE 802.11.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1761495550071-->
@@ -37,7 +37,7 @@ END%%
 
 %%ANKI
 Basic
-The IEEE 802.11 set of standards refers to what protocol?
+The IEEE 802.11 standard refers to what protocol?
 Back: WLAN/Wi-Fi.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1761495550072-->

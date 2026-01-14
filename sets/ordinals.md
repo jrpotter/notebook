@@ -1373,6 +1373,46 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1768019074258-->
 END%%
 
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal. How do we know $V_\alpha$ is a set?
+Back: It's defined as the range of a function (produced via transfinite recursion).
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1768140210572-->
+END%%
+
+%%ANKI
+Basic
+Let $\alpha$ be an ordinal. What is the value of $\_\_\_$ in the following equality? $$V_\alpha = \{ X \mid \_\_\_ \}$$
+Back: $\mathop{\text{rank}} X \in \alpha$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1768140210581-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \approx B$. Must $\mathop{\text{rank}} A = \mathop{\text{rank}} B$?
+Back: No, e.g. consider sets $\{ 0 \}$ and $\{ 1 \}$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1768140905284-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\mathop{\text{rank}} A = \mathop{\text{rank}} B$. Must $A \approx B$?
+Back: No, e.g. for any set $a$ consider $\{a\}$ and $\mathscr{P}(a)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1768140905297-->
+END%%
+
+%%ANKI
+Basic
+Does the rank of a set always correspond to a cardinal number?
+Back: No.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1768144203229-->
+END%%
+
 ### Regularity
 
 Let $A$ be a set. We say $A$ is **regular** if $A$ is empty or $A$ has a member $m \in A$ such that $m \cap A = \varnothing$. 

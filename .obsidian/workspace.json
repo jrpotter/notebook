@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_journal/2026-01-10.md",
+                "file": "network/infrastructure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-01-10"
+              "title": "infrastructure"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "phrase-structure",
+                "query": "equinum",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_journal/2026-01-10.md",
+                "file": "network/infrastructure.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-01-10"
+              "title": "Outline of infrastructure"
             }
           }
         ],
@@ -172,33 +172,33 @@
   },
   "active": "0732af2a990f3fdc",
   "lastOpenFiles": [
-    "_journal/2026-01/2026-01-09.md",
-    "_journal/2026-01-10.md",
-    "sets/natural_numbers.md",
+    "network/link/ethernet.md",
+    "_journal/2026-01-14.md",
+    "network/link/index.md",
+    "network/link/mac.md",
+    "network/link/wifi.md",
+    "network/internetwork/ip.md",
+    "network/internetwork/index.md",
+    "_journal/2026-01/2026-01-13.md",
+    "arithmetic/logarithms.md",
     "sets/ordinals.md",
+    "sets/relations.md",
+    "sets/recursion.md",
+    "sets/order/well.md",
+    "sets/order/index.md",
+    "sets/index.md",
+    "sets/order/total.md",
+    "_journal/2026-01/2026-01-12.md",
+    "_journal/2026-01/2026-01-11.md",
+    "proofs/induction.md",
+    "_journal/2024/2024-11/2024-11-22.md",
+    "sets/cardinality.md",
+    "_journal/2026-01/2026-01-10.md",
+    "_journal/2026-01/2026-01-09.md",
+    "sets/natural_numbers.md",
     "_journal/2026-01/2026-01-08.md",
     "_journal/2026-01/2026-01-07.md",
-    "_journal/2026-01/2026-01-06.md",
-    "_journal/2025/2025-10/2025-10-20.md",
-    "formal_system/phrase-structure.md",
-    "_journal/2026-01/2026-01-05.md",
-    "formal_system/abstract_rewriting.md",
-    "computability/context-free/deterministic.md",
-    "computability/context-free/index.md",
-    "computability/regular.md",
-    "computability/context-free/lr-k.md",
-    "parsing/lr-grammar.md",
-    "parsing/index.md",
     "parsing",
-    "_journal/2026-01/2026-01-04.md",
-    "_journal/2026-01/2026-01-03.md",
-    "calculus/derivatives.md",
-    "arithmetic/logarithms.md",
-    "calculus/primitives.md",
-    "sets/recursion.md",
-    "sets/index.md",
-    "operating_systems/signals.md",
-    "_journal/2026-01/2026-01-02.md",
     "_journal/2026-01",
     "sets/images/von-neumann-universe-nonhereditary.png",
     "sets/images/von-neumann-universe-hereditary.png",
