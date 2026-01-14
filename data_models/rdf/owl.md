@@ -414,7 +414,7 @@ END%%
 
 %%ANKI
 Cloze
-{`owl:sameAs`} is in constrast to {`owl:differentFrom`}.
+{`owl:sameAs`} is in contrast to {`owl:differentFrom`}.
 Reference: Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
 <!--ID: 1752244430341-->
 END%%

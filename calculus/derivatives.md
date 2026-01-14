@@ -1204,7 +1204,7 @@ END%%
 %%ANKI
 Basic
 What does the following indefinite integral evaluate to? $$\int_1^{\lvert x \rvert} \frac{f'(t) \,dt}{f(t)}$$
-Back: $\ln{\lvert f(x) \rvert}$
+Back: $\ln{\lvert f(x) \rvert} + C$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1767462842691-->
 END%%

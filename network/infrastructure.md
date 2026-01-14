@@ -7,85 +7,6 @@ tags:
   - network
 ---
 
-## Overview
-
-A **network interface** is the point of interconnection between a computer and a network. It can be physical or virtual. A device with multiple network interfaces is said to be **multihomed**.
-
-%%ANKI
-Basic
-What does it mean for a device to be multihomed?
-Back: It has multiple network interfaces.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1750171974186-->
-END%%
-
-%%ANKI
-Basic
-What term is used to describe a device with multiple network interfaces?
-Back: Multihomed.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1750171974195-->
-END%%
-
-%%ANKI
-Basic
-When is a host considered multihomed?
-Back: When it has multiple network interfaces.
-Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-<!--ID: 1750171974198-->
-END%%
-
-%%ANKI
-Basic
-What is a network interface?
-Back: The point of interconnection between a computer and a network.
-Reference: “Network Interface Controller.” In _Wikipedia_, July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
-<!--ID: 1752196389610-->
-END%%
-
-%%ANKI
-Cloze
-A network interface is either {physical} or {virtual}.
-Reference: “Network Interface Controller.” In _Wikipedia_, July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
-<!--ID: 1752196389619-->
-END%%
-
-## Bridges
-
-A **bridge** is a networking device that creates a single, aggregate network from multiple different networks or network segments.
-
-%%ANKI
-Basic
-What is a network bridge?
-Back: A device that joints multiple different networks into a single one.
-Reference: _Wikipedia_. “Network bridge.” August 1, 2025. [https://en.wikipedia.org/w/index.php?title=Network_bridge](https://en.wikipedia.org/w/index.php?title=Network_bridge&oldid=1303702264).
-<!--ID: 1754830088517-->
-END%%
-
-%%ANKI
-Basic
-What OSI layer(s) is a network bridge typically associated with?
-Back: The L2 (link) layer.
-Reference: _Wikipedia_. “Network bridge.” August 1, 2025. [https://en.wikipedia.org/w/index.php?title=Network_bridge](https://en.wikipedia.org/w/index.php?title=Network_bridge&oldid=1303702264).
-Tags: network::osi
-<!--ID: 1754830088526-->
-END%%
-
-%%ANKI
-Basic
-What distinguishes a router from a network bridge?
-Back: The former maintains logical separation between two networks.
-Reference: _Wikipedia_. “Network bridge.” August 1, 2025. [https://en.wikipedia.org/w/index.php?title=Network_bridge](https://en.wikipedia.org/w/index.php?title=Network_bridge&oldid=1303702264).
-<!--ID: 1754830088529-->
-END%%
-
-%%ANKI
-Basic
-What network device is used to combine two networks into a single network?
-Back: A (network) bridge.
-Reference: _Wikipedia_. “Network bridge.” August 1, 2025. [https://en.wikipedia.org/w/index.php?title=Network_bridge](https://en.wikipedia.org/w/index.php?title=Network_bridge&oldid=1303702264).
-<!--ID: 1754830146417-->
-END%%
 
 ## Firewalls
 
@@ -278,51 +199,6 @@ What network device is used to convert analog signals to digital signals?
 Back: A modem.
 Reference: _Wikipedia_. “Modem.” May 28, 2025. [https://en.wikipedia.org/w/index.php?title=Modem](https://en.wikipedia.org/w/index.php?title=Modem&oldid=1292730745).
 <!--ID: 1754830088535-->
-END%%
-
-## NICs
-
-A **network interface controller**, or **NIC**, is a computer hardware component that connects a computer to a computer network. An NIC is considered a [[osi#Physical|physical layer]] device as well as a [[osi#link|link layer]] device.
-
-%%ANKI
-Basic
-What is the purpose of an NIC?
-Back: To connect a computer to a computer network.
-Reference: _Wikipedia_. “Network interface controller.” July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
-<!--ID: 1754828653043-->
-END%%
-
-%%ANKI
-Basic
-What is NIC an acronym for?
-Back: **N**etwork **i**nterface **c**ontroller.
-Reference: _Wikipedia_. “Network interface controller.” July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
-<!--ID: 1752196389626-->
-END%%
-
-%%ANKI
-Basic
-What term is typically used to describe physical network interfaces?
-Back: Network interface controllers.
-Reference: _Wikipedia_. “Network interface controller.” July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
-<!--ID: 1752196389628-->
-END%%
-
-%%ANKI
-Basic
-What OSI layer(s) is an NIC typically associated with?
-Back: The L1 (physical) and L2 (link) layers.
-Reference: _Wikipedia_. “Network interface controller.” July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
-Tags: network::osi
-<!--ID: 1752196389631-->
-END%%
-
-%%ANKI
-Basic
-What network device, integrated into a host, enables connecting to a network?
-Back: An NIC.
-Reference: _Wikipedia_. “Network interface controller.” July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
-<!--ID: 1754830146423-->
 END%%
 
 ## Proxies
@@ -530,83 +406,11 @@ Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1
 <!--ID: 1768402692047-->
 END%%
 
-## Switches
-
-A **switch** is a networking device that connects multiple devices together. Multiple data cables are plugged into a switch to enable communication between different networked devices.
-
-A switch is more intelligent than an Ethernet **hub**, which retransmits packets out of every hub except the port on which the packet was received.
-
-%%ANKI
-Basic
-What is the purpose of a switch?
-Back: To enable communication between multiple connected devices.
-Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
-<!--ID: 1754828653055-->
-END%%
-
-%%ANKI
-Basic
-What is the purpose of an Ethernet hub?
-Back: To enable communication between multiple connected devices.
-Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
-<!--ID: 1754828653057-->
-END%%
-
-%%ANKI
-Basic
-What networking device(s) are used to communicate between two devices connected to it with Ethernet cables?
-Back: A switch or hub.
-Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
-<!--ID: 1754830088543-->
-END%%
-
-%%ANKI
-Basic
-What distinguishes a switch from an Ethernet hub?
-Back: The former can relay packets to a specific device. The latter retransmits to all connected devices.
-Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
-<!--ID: 1754828653062-->
-END%%
-
-%%ANKI
-Basic
-What distinguishes a switch from a router?
-Back: The former relays packets between connected devices. The latter forwards packets between different networks.
-Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
-<!--ID: 1754828653064-->
-END%%
-
-%%ANKI
-Cloze
-{1:Switches} are to {2:unicast} whereas {2:Ethernet hubs} are to {1:broadcast}.
-Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
-<!--ID: 1754828653066-->
-END%%
-
-%%ANKI
-Basic
-What OSI layer(s) is a switch typically associated with?
-Back: The L2 (link) layer.
-Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
-<!--ID: 1754828653071-->
-END%%
-
-%%ANKI
-Basic
-What OSI layer(s) is an Ethernet hub typically associated with?
-Back: The L2 (link) layer.
-Reference: _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
-<!--ID: 1754828653059-->
-END%%
-
 ## Bibliography
 
 * Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-* _Wikipedia_. “Network bridge.” August 1, 2025. [https://en.wikipedia.org/w/index.php?title=Network_bridge](https://en.wikipedia.org/w/index.php?title=Network_bridge&oldid=1303702264).
 * _Wikipedia_. “Firewall (computing).” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Firewall_(computing)](https://en.wikipedia.org/w/index.php?title=Firewall_\(computing\)&oldid=1295521940).
 * _Wikipedia_. “Gateway (telecommunications).” September 23, 2024. [https://en.wikipedia.org/w/index.php?title=Gateway_(telecommunications)](https://en.wikipedia.org/w/index.php?title=Gateway_\(telecommunications\)&oldid=1247236525).
 * _Wikipedia_. “Modem.” May 28, 2025. [https://en.wikipedia.org/w/index.php?title=Modem](https://en.wikipedia.org/w/index.php?title=Modem&oldid=1292730745).
-* _Wikipedia_. “Network interface controller.” July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
-* _Wikipedia_. “Network switch.” August 6, 2025. [https://en.wikipedia.org/w/index.php?title=Network_switch](https://en.wikipedia.org/w/index.php?title=Network_switch&oldid=1304573746).
 * _Wikipedia_. “Proxy server.” August 4, 2025. [https://en.wikipedia.org/w/index.php?title=Proxy_server](https://en.wikipedia.org/w/index.php?title=Proxy_server&oldid=1304241784).
 * _Wikipedia_. “Router (computing).” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Router_(computing)](https://en.wikipedia.org/w/index.php?title=Router_\(computing\)&oldid=1296380353).

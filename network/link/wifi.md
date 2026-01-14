@@ -1,8 +1,9 @@
 ---
 title: Wi-Fi
 TARGET DECK: Obsidian::STEM
-FILE TAGS: network::wifi
+FILE TAGS: network::link
 tags:
+  - link
   - network
   - wifi
 ---

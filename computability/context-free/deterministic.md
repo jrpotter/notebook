@@ -588,7 +588,7 @@ A **dotted rule** is a rule in a CFG augmented with a dot ($\bullet$) between tw
 %%ANKI
 Basic
 What is a dotted rule of a CFG?
-Back: A rule in the CFG with an additional dot ($\bullet$) included between two symbols of its RHS.
+Back: A rule in $G$ with an additional dot ($\bullet$) placed before or after a symbol in its RHS.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1767622644370-->
 END%%
@@ -781,7 +781,7 @@ END%%
 
 %%ANKI
 Basic
-Given the following context, how many completed rules are in $DK$'s accept states?
+Given the following context, how many completed rules are in each of $DK$'s accept states?
 1. $G$ is a CFG.
 2. $DK$ is $G$'s associated DFA with respect to the $DK$-test.
 Back: At least one.
@@ -791,7 +791,7 @@ END%%
 
 %%ANKI
 Basic
-Given the following context, how many completed rules are in $DK$'s accept states?
+Given the following context, how many completed rules are in each of $DK$'s accept states?
 1. $G$ is a DCFG.
 2. $DK$ is $G$'s associated DFA with respect to the $DK$-test.
 Back: Exactly one.
@@ -801,7 +801,7 @@ END%%
 
 %%ANKI
 Basic
-Given the following context, how many dotted rules are in $DK$'s states?
+Given the following context, how many dotted rules are in each of $DK$'s states?
 1. $G$ is a DCFG.
 2. $DK$ is $G$'s associated DFA with respect to the $DK$-test.
 Back: At least one.
@@ -811,7 +811,7 @@ END%%
 
 %%ANKI
 Cloze
-With respect to the $DK$-test, every accept state of $DK$ contains:
+With respect to the $DK$-test, each accept state of $DK$ contains:
 1. {exactly one completed rule}, and
 2. {no dotted rule in which a terminal symbol immediately follows the dot}.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
@@ -820,7 +820,7 @@ END%%
 
 %%ANKI
 Basic
-What does it mean for a CFG $G$ to pass the $DK$-test?
+What can we conclude about CFG $G$ if $G$ passes the $DK$-test?
 Back: $G$ is a DCFG.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1767650547114-->
@@ -922,6 +922,7 @@ END%%
 %%ANKI
 Basic
 Let $G$ be an LR($k$) grammar. What value of $k$ implies $G$ is a DCFG?
+Back: $k = 0$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1767656014960-->
 END%%

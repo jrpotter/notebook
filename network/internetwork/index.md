@@ -1,7 +1,7 @@
 ---
 title: Internetwork Layer
 TARGET DECK: Obsidian::STEM
-FILE TAGS: network::ip
+FILE TAGS: network::inter
 tags:
   - ip
   - network
