@@ -1,6 +1,6 @@
 ---
 title: Life and Death
-TARGET DECK: Obsidian::Baduk
+TARGET DECK: Obsidian::Game
 FILE TAGS: baduk::life_death
 tags:
   - baduk

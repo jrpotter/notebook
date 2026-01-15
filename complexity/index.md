@@ -126,6 +126,15 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1707344177506-->
 END%%
 
+%%ANKI
+Basic
+From a complexity perspective, why does Sipser argue dynamic programming is so fundamental?
+Back: It can be used to convert procedures from exponential to polynomial time.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1768430771190-->
+END%%
+
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+* Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

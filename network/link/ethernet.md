@@ -68,6 +68,14 @@ END%%
 
 %%ANKI
 Basic
+What does the IEEE 802.1q standard describe?
+Back: VLAN.
+Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+<!--ID: 1768424140264-->
+END%%
+
+%%ANKI
+Basic
 What is VLAN an acronym for?
 Back: **V**irtual **L**ocal **A**rea **N**etwork.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.

@@ -1,6 +1,6 @@
 ---
 title: Ko
-TARGET DECK: Obsidian::Baduk
+TARGET DECK: Obsidian::Game
 FILE TAGS: baduk::ko
 tags:
   - baduk

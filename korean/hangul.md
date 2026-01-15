@@ -1,6 +1,6 @@
 ---
 title: Hangul
-TARGET DECK: Obsidian::Korean
+TARGET DECK: Obsidian::H&SS
 FILE TAGS: korean::hangul
 tags:
   - korean

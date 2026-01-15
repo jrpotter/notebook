@@ -117,9 +117,7 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1766604611801-->
 END%%
 
-## Design Strategies
-
-### Incremental
+## Incremental
 
 An **incremental** approach to algorithm design involves acting on a single element at a time.
 
@@ -131,7 +129,7 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1708742467144-->
 END%%
 
-### Divide-and-Conquer
+## Divide-and-Conquer
 
 The **divide-and-conquer** approach breaks problems into subproblems that are easier to solve.
 
@@ -212,6 +210,223 @@ What is a running time recurrence?
 Back: A formula that describes overall running time in terms of running time on smaller inputs.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1708742467187-->
+END%%
+
+## Dynamic Programming
+
+**Dynamic programming** refers to the general technique of simplifying a problem by breaking it down into simpler subproblems in a recursive manner. Unlike in [[#Divide-and-Conquer|divide-and-conquer]], its expected subproblems overlap. That is, subproblems have shared subsubproblems.
+
+Dynamic programming is typically applied to optimization problems, hence its name. We say a problem exhibits **optimal subtructure** if optional solutions to the problem incorporate optimal solutions to related subproblems, solved independently.
+
+%%ANKI
+Basic
+What is dynamic programming?
+Back: The general technique of simplifying problems by breaking into simpler subproblems in a recursive manner.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676493-->
+END%%
+
+%%ANKI
+Basic
+Dynamic programming is typically applied to what kind of problems?
+Back: Optimization problems.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676502-->
+END%%
+
+%%ANKI
+Basic
+Why is term "programming" used in "dynamic programming"?
+Back: It is a reference to the notion of optimization.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676504-->
+END%%
+
+%%ANKI
+Basic
+In what way is divide-and-conquer and dynamic programming similar?
+Back: They both recursively break problems into smaller subproblems.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676507-->
+END%%
+
+%%ANKI
+Basic
+In what way is divide-and-conquer and dynamic programming different?
+Back: The former is expected to not have any overlap with its subproblems.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676510-->
+END%%
+
+%%ANKI
+Basic
+With respect to dynamic programming, what does it mean for a problem to have optimal substructure?
+Back: An optimal solution incorporates optimal solutions to its subproblems.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676513-->
+END%%
+
+%%ANKI
+Basic
+What two "flavors" of dynamic programming are there?
+Back: Top-down and bottom-up.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676515-->
+END%%
+
+%%ANKI
+Basic
+When does a dynamic programming approach run in polynomial time?
+Back: When the number of *distinct* subproblems is polynomial and can be solved in polynomial time.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676518-->
+END%%
+
+%%ANKI
+Basic
+According to Cormen et al., what are the two "hallmarks" of dynamic programming?
+Back: Optimal substructure and overlapping subproblems.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768485571901-->
+END%%
+
+### Top-Down
+
+In top-down dynamic programming, a procedure is written recursively in a natural manner, but modified so the result of each subproblem is **memoized**.
+
+%%ANKI
+Basic
+How is a procedure written in top-down dynamic programming?
+Back: Recursively in the natural manner but with the result of each subproblem memoized.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676520-->
+END%%
+
+%%ANKI
+Basic
+Which "flavor" of dynamic programming is typically associated with memoization?
+Back: Top-down.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676523-->
+END%%
+
+%%ANKI
+Basic
+Why might top-down dynamic programming be faster than bottom-up?
+Back: It may not have to recurse over every possible subproblem.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676525-->
+END%%
+
+### Bottom-Up
+
+In bottom-up dynamic programming, a procedure is written by first solving subproblems of smaller "size" first and then solving slightly larger problems using the saved results of the smaller subproblems.
+
+%%ANKI
+Basic
+How is a procedure written in bottom-up dynamic programming?
+Back: By saving the results of smaller sized problems and using them to solve problems of larger size.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676528-->
+END%%
+
+%%ANKI
+Basic
+Which "flavor" of dynamic programming is typically associated with a table?
+Back: Bottom-up.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676531-->
+END%%
+
+%%ANKI
+Basic
+Why might bottom-up dynamic programming be faster than top-down?
+Back: It often avoids the overhead of many procedure calls.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768430676534-->
+END%%
+
+## Greedy Algorithm
+
+A **greedy algorithm** is an algorithm that makes locally optimal choices in a given moment. This may or may not end up with a globally optimal solution, unlike in the case of [[#Dynamic Programming|dynamic programming]].
+
+The **greedy-choice property** refers to the ability to assemble a globally optimal solution by making locally optimal choices.
+
+%%ANKI
+Basic
+What is a greedy algorithm?
+Back: An algorithm that makes locally optimal choices in a given moment.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768485571914-->
+END%%
+
+%%ANKI
+Basic
+Does a greedy algorithm result in an optimal solution?
+Back: Not necessarily.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768485571921-->
+END%%
+
+%%ANKI
+Cloze
+{1:Dynamic programming} is to {2:globally} optimal whereas {2:greedy algorithms} are to {1:locally} optimal.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768485571926-->
+END%%
+
+%%ANKI
+Basic
+According to Cormen et al., what are the two "hallmarks" of greedy algorithms?
+Back: Optimal substructure and the greedy-choice property.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768488236370-->
+END%%
+
+%%ANKI
+Basic
+According to Cormen et al., what "hallmark" is shared by dynamic programming and greedy algorithms?
+Back: Optimal substructure.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768488236382-->
+END%%
+
+%%ANKI
+Basic
+Which of dynamic programming or greedy algorithms is more general?
+Back: Every greedy algorithm can be converted to a dynamic programming problem but not vice versa.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768488236388-->
+END%%
+
+%%ANKI
+Basic
+What is the greedy-choice property?
+Back: The ability to create a globally optimal solution by making locally optimal choices.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768488236392-->
+END%%
+
+%%ANKI
+Basic
+Which of greedy algorithms or dynamic programming is described in the following?
+
+> Solve subproblems before making the first choice.
+
+Back: Dynamic programming.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768488236398-->
+END%%
+
+%%ANKI
+Basic
+Which of greedy algorithms or dynamic programming is described in the following?
+
+> Make the first choice before solving subproblems.
+
+Back: Greedy algorithms.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768488236404-->
 END%%
 
 ## Bibliography

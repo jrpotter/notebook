@@ -1,9 +1,9 @@
 ---
 title: Loop Invariant
 TARGET DECK: Obsidian::STEM
-FILE TAGS: algorithm
+FILE TAGS: programming
 tags:
-  - algorithm
+  - programming
 ---
 
 ## Overview

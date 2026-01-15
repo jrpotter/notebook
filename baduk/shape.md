@@ -1,6 +1,6 @@
 ---
 title: Shape
-TARGET DECK: Obsidian::Baduk
+TARGET DECK: Obsidian::Game
 FILE TAGS: baduk::shape
 tags:
   - baduk

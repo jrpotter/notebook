@@ -1,6 +1,6 @@
 ---
 title: Connection
-TARGET DECK: Obsidian::Baduk
+TARGET DECK: Obsidian::Game
 FILE TAGS: baduk::connection
 tags:
   - baduk
