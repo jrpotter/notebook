@@ -396,7 +396,7 @@ END%%
 %%ANKI
 Basic
 Let $A$ and $B$ be decidable languages with TMs $M_A$ and $M_B$ respectively. If $A \cap B$ has TM $M$, when does $M$ reject?
-Back: When either $M_A$ or $M_B$ accept.
+Back: When either $M_A$ or $M_B$ reject.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764804334257-->
 END%%

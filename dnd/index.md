@@ -55,7 +55,7 @@ END%%
 %%ANKI
 Basic
 What modifiers are usually included in an ability check?
-Back: The relevant ability modifier and proficiency bonus (if applicable).
+Back: The relevant ability modifier and Proficiency Bonus (if applicable).
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1768510238181-->
 END%%
@@ -63,7 +63,7 @@ END%%
 %%ANKI
 Basic
 What modifiers are usually included in an attack roll?
-Back: The relevant ability modifier and proficiency bonus (if applicable).
+Back: The relevant ability modifier and Proficiency Bonus (if applicable).
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1768510238184-->
 END%%
@@ -71,7 +71,7 @@ END%%
 %%ANKI
 Basic
 What modifiers are usually included in a saving throw?
-Back: The relevant ability modifier and proficiency bonus (if applicable).
+Back: The relevant ability modifier and Proficiency Bonus (if applicable).
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1768510257638-->
 END%%

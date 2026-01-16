@@ -8,26 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9bee929401038271",
+            "id": "b2003d63e5adb3cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_journal/2026-01-15.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-01-15"
-            }
-          },
-          {
-            "id": "3cadda51926483c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dnd/index.md",
+                "file": "computability/context-free/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -67,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "1768430676507",
+                "query": "1768510238181",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -156,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_journal/2026-01-15.md",
+                "file": "computability/context-free/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-01-15"
+              "title": "Outline of index"
             }
           }
         ],
@@ -184,12 +170,19 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "9bee929401038271",
+  "active": "b2003d63e5adb3cf",
   "lastOpenFiles": [
-    "_journal/2026-01/2026-01-14.md",
-    "_journal/2026-01-15.md",
-    "algorithms/index.md",
+    "_journal/2026-01-16.md",
+    "calculus/index.md",
+    "calculus/riemann.md",
+    "_journal/2026-01/2026-01-15.md",
     "dnd/index.md",
+    "computability/decidability.md",
+    "calculus/derivatives.md",
+    "calculus/primitives.md",
+    "arithmetic/logarithms.md",
+    "_journal/2026-01/2026-01-14.md",
+    "algorithms/index.md",
     "dnd/combat.md",
     "dnd/abilities.md",
     "complexity/index.md",
@@ -205,14 +198,7 @@
     "baduk/shape.md",
     "baduk/life_death.md",
     "baduk/ko.md",
-    "baduk/index.md",
-    "baduk/connection.md",
-    "network/infrastructure.md",
     "dnd",
-    "network/link/node.md",
-    "network/index.md",
-    "network/osi.md",
-    "network/link/bridge.md",
     "parsing",
     "_journal/2026-01",
     "sets/images/von-neumann-universe-nonhereditary.png",
