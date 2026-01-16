@@ -14,7 +14,7 @@ tags:
 Basic
 What is algebra?
 Back: A branch of mathematics that deals with abstract systems and the manipulation of expressions within those systems.
-Reference: “Algebra.” In _Wikipedia_, July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
+Reference: _Wikipedia_. “Algebra.” July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
 <!--ID: 1751748536956-->
 END%%
 
@@ -22,7 +22,7 @@ END%%
 Basic
 Which of algebra or arithmetic is considered a generalization of the other?
 Back: Algebra is a generalization of arithmetic.
-Reference: “Algebra.” In _Wikipedia_, July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
+Reference: _Wikipedia_. “Algebra.” July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
 <!--ID: 1751748536957-->
 END%%
 
@@ -30,15 +30,17 @@ END%%
 Basic
 Which of calculus or algebra is considered a generalization of the other?
 Back: N/A. These are distinct, fundamental concepts in mathematics.
-Reference: “Algebra.” In _Wikipedia_, July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
+Reference: _Wikipedia_. “Algebra.” July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
 <!--ID: 1751752967231-->
 END%%
 
 ## Equations
 
-An **equation** is a relation between two expressions that may be true for some values of the variables. To **solve** an equation means to find all of the values for the variables that make the two expressions on either side of the equation equal to one another.
+An **equation** is a [[relations|relation]] between two expressions that may be true for some values of the variables. To **solve** an equation means to find all of the values for the variables that make the two expressions on either side of the equation equal to one another.
 
 A **functional equation** is an equation that expresses a relationship between the values of a function at two or more points.
+
+An **implicit equation** is a relation of the form $F(x_1, \ldots, x_n) = 0$, where $F$ is a [[algebra/functions|function]] of several variables. For example, the implicit equation of the unit circle is $x^2 + y^2 - 1 = 0$.
 
 An **identity** is an equation that is true for all allowable values of the variables.
 
@@ -85,7 +87,7 @@ END%%
 %%ANKI
 Cloze
 A(n) {1:equation} is to a(n) {2:proposition} as a(n) {2:identity} is to a(n) {1:tautology}.
-Reference: “Algebra.” In _Wikipedia_, July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
+Reference: _Wikipedia_. “Algebra.” July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
 <!--ID: 1755181906108-->
 END%%
 
@@ -105,8 +107,33 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1766500506375-->
 END%%
 
+%%ANKI
+Basic
+What is an implicit equation?
+Back: A relation of form $F(x_1, \ldots, x_n) = 0$ where $F$ is a function of multiple variables.
+Reference: _Wikipedia_. “Implicit function.” November 30, 2025. [https://en.wikipedia.org/w/index.php?title=Implicit_function](https://en.wikipedia.org/w/index.php?title=Implicit_function&oldid=1325039857).
+<!--ID: 1768594332799-->
+END%%
+
+%%ANKI
+Basic
+What is the implicit equation of the unit circle?
+Back: $x^2 + y^2 - 1 = 0$
+Reference: _Wikipedia_. “Implicit function.” November 30, 2025. [https://en.wikipedia.org/w/index.php?title=Implicit_function](https://en.wikipedia.org/w/index.php?title=Implicit_function&oldid=1325039857).
+<!--ID: 1768594332802-->
+END%%
+
+%%ANKI
+Basic
+Why isn't the following considered an implicit equation? $$x^2 + y^2 = 1$$
+Back: An implicit equation identifies a function with $0$.
+Reference: _Wikipedia_. “Implicit function.” November 30, 2025. [https://en.wikipedia.org/w/index.php?title=Implicit_function](https://en.wikipedia.org/w/index.php?title=Implicit_function&oldid=1325039857).
+<!--ID: 1768594332806-->
+END%%
+
 ## Bibliography
 
-* “Algebra.” In _Wikipedia_, July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+* _Wikipedia_. “Algebra.” July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
+* _Wikipedia_. “Implicit function.” November 30, 2025. [https://en.wikipedia.org/w/index.php?title=Implicit_function](https://en.wikipedia.org/w/index.php?title=Implicit_function&oldid=1325039857).

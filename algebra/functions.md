@@ -345,6 +345,26 @@ Reference: _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wik
 <!--ID: 1766080413584-->
 END%%
 
+## Implicitness
+
+An **implicit function** is a function defined by an [[algebra/index|implicit equation]] that relates one of the variables (considered the value of the function) with the others (considered as the arguments).
+
+%%ANKI
+Basic
+What is an implicit function?
+Back: An implicit equation that relates one of the variables with the others.
+Reference: _Wikipedia_. “Implicit function.” November 30, 2025. [https://en.wikipedia.org/w/index.php?title=Implicit_function](https://en.wikipedia.org/w/index.php?title=Implicit_function&oldid=1325039857).
+<!--ID: 1768594332809-->
+END%%
+
+%%ANKI
+Basic
+Why are "implicit functions" named the way they are?
+Back: They are not written in a way that isolates the value of the function, e.g. $y = f(x)$.
+Reference: _Wikipedia_. “Implicit function.” November 30, 2025. [https://en.wikipedia.org/w/index.php?title=Implicit_function](https://en.wikipedia.org/w/index.php?title=Implicit_function&oldid=1325039857).
+<!--ID: 1768594332813-->
+END%%
+
 ## Symmetries
 
 A function $f$ is said to be **odd** if $-f(x) = f(-x)$ for all $x$ in $f$'s domain. Likewise, $f$ is said to be **even** if $f(x) = f(-x)$ for all $x$ in $f$'s domain.
@@ -431,7 +451,7 @@ A function $f$ is **invertible** if and only if it is bijective. Such a function
 Basic
 What does it mean for a function to be bijective?
 Back: It is both injective and surjective.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718464728903-->
 END%%
 
@@ -439,21 +459,21 @@ END%%
 Basic
 Each element of a bijection's codomain is mapped to by how many elements of the domain?
 Back: Exactly one.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718464728907-->
 END%%
 
 %%ANKI
 Cloze
 {1:Injective} is to {2:one-to-one} as {2:bijective} is to {1:one-to-one correspondence}.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718464728899-->
 END%%
 
 %%ANKI
 Cloze
 {1:Surjective} is to {2:onto} as {2:bijective} is to {1:one-to-one correspondence}.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718465870579-->
 END%%
 
@@ -462,7 +482,7 @@ Basic
 Does the following depict a bijection?
 ![[function-bijective.png]]
 Back: Yes.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718465870585-->
 END%%
 
@@ -471,7 +491,7 @@ Basic
 *Why* isn't the following a one-to-one correspondence?
 ![[function-injective.png]]
 Back: The function does not map onto $Y$.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718465870592-->
 END%%
 
@@ -480,7 +500,7 @@ Basic
 *Why* isn't the following a one-to-one correspondence?
 ![[function-surjective.png]]
 Back: The function is not one-to-one.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718465870599-->
 END%%
 
@@ -488,7 +508,7 @@ END%%
 Basic
 What distinguishes a one-to-one function from a one-to-one correspondence?
 Back: The former is not necessarily surjective.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718465870605-->
 END%%
 
@@ -532,7 +552,7 @@ Assume that $F \colon A \rightarrow B$ is a function and $A \neq \varnothing$. T
 Basic
 What does it mean for a function to be injective?
 Back: Each element of the codomain is mapped to by at most one element of the domain.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718464126887-->
 END%%
 
@@ -548,7 +568,7 @@ END%%
 Basic
 Each element of an injection's codomain is mapped to by how many elements of the domain?
 Back: At most one.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718464498595-->
 END%%
 
@@ -557,7 +577,7 @@ Basic
 Does the following depict an injection?
 ![[function-bijective.png]]
 Back: Yes.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718465870490-->
 END%%
 
@@ -566,7 +586,7 @@ Basic
 Does the following depict a one-to-one function?
 ![[function-injective.png]]
 Back: Yes.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718465870493-->
 END%%
 
@@ -575,7 +595,7 @@ Basic
 Does the following depict a one-to-one function?
 ![[function-surjective.png]]
 Back: No.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718465870497-->
 END%%
 
@@ -584,7 +604,7 @@ Basic
 *Why* isn't the following an injection?
 ![[function-general.png]]
 Back: Both $1 \mapsto d$ and $2 \mapsto d$.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718465870505-->
 END%%
 
@@ -772,7 +792,7 @@ Assume that $F \colon A \rightarrow B$ is a function and $A \neq \varnothing$. T
 Basic
 What does it mean for function to be surjective?
 Back: Each element of the codomain is mapped to by at least one element of the domain.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718464126891-->
 END%%
 
@@ -788,14 +808,14 @@ END%%
 Basic
 Each element of a surjection's codomain is mapped to by how many elements of the domain?
 Back: At least one.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718464498606-->
 END%%
 
 %%ANKI
 Cloze
 {1:Injective} is to {2:one-to-one} as {2:surjective} is to {1:onto}.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718464126897-->
 END%%
 
@@ -835,7 +855,7 @@ Basic
 Does the following depict a surjection?
 ![[function-bijective.png]]
 Back: Yes.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718465870552-->
 END%%
 
@@ -844,7 +864,7 @@ Basic
 Does the following depict an onto function?
 ![[function-injective.png]]
 Back: No.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718465870558-->
 END%%
 
@@ -853,7 +873,7 @@ Basic
 Does the following depict an onto function?
 ![[function-surjective.png]]
 Back: Yes.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718465870565-->
 END%%
 
@@ -862,7 +882,7 @@ Basic
 *Why* isn't the following a surjection?
 ![[function-general.png]]
 Back: No element of $X$ maps to $a$ or $b$.
-Reference: “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
+Reference: _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 <!--ID: 1718465870573-->
 END%%
 
@@ -1586,9 +1606,10 @@ END%%
 
 ## Bibliography
 
-* “Bijection, Injection and Surjection,” in _Wikipedia_, May 2, 2024, [https://en.wikipedia.org/w/index.php?title=Bijection_injection_and_surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1221800163).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 * “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+* _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 * _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
+* _Wikipedia_. “Implicit function.” November 30, 2025. [https://en.wikipedia.org/w/index.php?title=Implicit_function](https://en.wikipedia.org/w/index.php?title=Implicit_function&oldid=1325039857).

@@ -495,6 +495,7 @@ Basic
 Which integration technique is typically used to find the following primitive? $$\int \ln{x} \,dx$$
 Back: Integration by parts.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1768594332777-->
 END%%
 
 %%ANKI
@@ -502,6 +503,7 @@ Basic
 What values of $u$ and $dv$ are used when applying integration by parts to the following? $$\int \ln{x} \,dx$$
 Back: $u = \ln{x}$ and $dv = dx$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1768594332783-->
 END%%
 
 ## Bibliography

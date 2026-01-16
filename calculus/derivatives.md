@@ -521,7 +521,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1761661433529-->
 END%%
 
-### Chain Rule
+## Chain Rule
 
 Suppose $v$ is differentiable at $x$ and $u$ is differentiable at $v(x)$. Then $f = u \circ v$ is differentiable at $x$ and $$f'(x) = u'[v(x)] \cdot v'(x).$$
 
@@ -626,6 +626,108 @@ Let $f$ and $g$ be differentiable. Using Leibniz notation, what does the chain r
 Back: $$\frac{d}{dx}(f \circ g) = \frac{df}{dg}\frac{dg}{dx}$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1762009928090-->
+END%%
+
+### Implicit Differentiation
+
+Implicit differentiation refers to the differentiation of an [[algebra/functions#Implicitness|implicit function]]. They leverage the [[#Chain Rule|chain rule]] by maintaining that the value of the function is defined in terms of the others as arguments.
+
+%%ANKI
+Basic
+What is implicit differentiation?
+Back: Differentiation of an implicit function.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1768594332787-->
+END%%
+
+%%ANKI
+Basic
+Implicit differentiation is a technique built off what other rule?
+Back: The chain rule.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1768594332791-->
+END%%
+
+%%ANKI
+Basic
+How is the following implicitly differentiated with respect to $x$? $$x^2 + y^2 = 1$$
+Back: As $2x + 2yy' = 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1768594332795-->
+END%%
+
+%%ANKI
+How is the following implicitly differentiated with respect to $t$? $$x^2 + y^2 = 1$$
+Back: As $2xx' + 2yy' = 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+END%%
+
+### Logarithmic Differentiation
+
+Let $f(x)$ be a differentiable function and define $g(x) = \ln{\lvert f(x) \rvert}$. Then, by virtue of the [[#Chain Rule|chain rule]], $$g'(x) = \frac{f'(x)}{f(x)} \implies f'(x) = g'(x) \cdot f(x).$$
+
+%%ANKI
+Basic
+Who originally developed the logarithmic differentiation technique?
+Back: Bernoulli.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842683-->
+END%%
+
+%%ANKI
+Basic
+Logarithmic differentiation is a technique built off what other rule?
+Back: The chain rule.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842686-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x)$ be a differentiable function. What function is composed in logarithmic differentiation?
+Back: $g(x) = \ln{\lvert f(x) \rvert}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842687-->
+END%%
+
+%%ANKI
+Basic
+Under what conditions is $g(x) = \ln{\lvert f(x) \rvert}$ differentiable?
+Back: When $f(x) \neq 0$ is differentiable.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842688-->
+END%%
+
+%%ANKI
+Basic
+What does the following indefinite integral evaluate to? $$\int_1^{\lvert x \rvert} \frac{du}{u}$$
+Back: $\ln{\lvert x \rvert} + C$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842689-->
+END%%
+
+%%ANKI
+Basic
+What does the following indefinite integral evaluate to? $$\int_1^{\lvert x \rvert} \frac{f'(t) \,dt}{f(t)}$$
+Back: $\ln{\lvert f(x) \rvert} + C$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842691-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x)$ be a differentiable function. How is $f'(x)$ defined in terms of logarithmic differentiation?
+Back: $f'(x) = g'(x) \cdot f(x)$ where $g(x) = \ln{\lvert f(x) \rvert}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462842692-->
+END%%
+
+%%ANKI
+Basic
+*When* is logarithmic differentiation the preferred way to compute $f'(x)$?
+Back: When the derivative of $\ln{\lvert f(x) \rvert}$ is easier to compute than $f'(x)$ directly.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1767462975545-->
 END%%
 
 ## Continuity
@@ -1155,74 +1257,6 @@ Let $c$ be a critical point of $f$ in $(a, b)$. Assume $f$ is twice differentiab
 Back: If $f''(c) > 0$, then $f$ has a relative minimum at $c$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1764884285379-->
-END%%
-
-## Logarithmic Differentiation
-
-Let $f(x)$ be a differentiable function and define $g(x) = \ln{\lvert f(x) \rvert}$. Then, by virtue of the [[#Chain Rule|chain rule]], $$g'(x) = \frac{f'(x)}{f(x)} \implies f'(x) = g'(x) \cdot f(x).$$
-
-%%ANKI
-Basic
-Who originally developed the logarithmic differentiation technique?
-Back: Bernoulli.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1767462842683-->
-END%%
-
-%%ANKI
-Basic
-Logarithmic differentiation is a technique built off what other rule?
-Back: The chain rule.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1767462842686-->
-END%%
-
-%%ANKI
-Basic
-Let $f(x)$ be a differentiable function. What function is composed in logarithmic differentiation?
-Back: $g(x) = \ln{\lvert f(x) \rvert}$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1767462842687-->
-END%%
-
-%%ANKI
-Basic
-Under what conditions is $g(x) = \ln{\lvert f(x) \rvert}$ differentiable?
-Back: When $f(x) \neq 0$ is differentiable.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1767462842688-->
-END%%
-
-%%ANKI
-Basic
-What does the following indefinite integral evaluate to? $$\int_1^{\lvert x \rvert} \frac{du}{u}$$
-Back: $\ln{\lvert x \rvert} + C$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1767462842689-->
-END%%
-
-%%ANKI
-Basic
-What does the following indefinite integral evaluate to? $$\int_1^{\lvert x \rvert} \frac{f'(t) \,dt}{f(t)}$$
-Back: $\ln{\lvert f(x) \rvert} + C$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1767462842691-->
-END%%
-
-%%ANKI
-Basic
-Let $f(x)$ be a differentiable function. How is $f'(x)$ defined in terms of logarithmic differentiation?
-Back: $f'(x) = g'(x) \cdot f(x)$ where $g(x) = \ln{\lvert f(x) \rvert}$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1767462842692-->
-END%%
-
-%%ANKI
-Basic
-*When* is logarithmic differentiation the preferred way to compute $f'(x)$?
-Back: When the derivative of $\ln{\lvert f(x) \rvert}$ is easier to compute than $f'(x)$ directly.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1767462975545-->
 END%%
 
 ## Bibliography
