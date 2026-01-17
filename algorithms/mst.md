@@ -69,6 +69,12 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1768665874989-->
 END%%
 
+%%ANKI
+Basic
+With respect to the minimum-spanning-tree problem, what is assumed about edge weights?
+<!--ID: 1768671231596-->
+END%%
+
 ## Bibliography
 
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

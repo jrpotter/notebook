@@ -759,10 +759,6 @@ Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savan
 <!--ID: 1763563266751-->
 END%%
 
-### Implicit Rules
-
-TODO
-
 ### Recipes
 
 By default, the `/bin/sh` [[shells|shell]] is used to execute each line of a recipe. To run multiple lines within a single shell, one can connect the lines using a `\` and newline. Unlike elsewhere in a `Makefile`, the `\` is *not* replaced. Recipe prefix characters (by default, the `\t` character) are removed though.

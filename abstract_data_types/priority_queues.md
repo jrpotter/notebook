@@ -112,11 +112,11 @@ END%%
 Basic
 What distinguishes priority queues from heaps?
 Back: A priority queue is an ADT. A heap is a data structure.
-Reference: “Abstract Data Type.” In _Wikipedia_, March 18, 2024. [https://en.wikipedia.org/w/index.php?title=Abstract_data_type&oldid=1214359576](https://en.wikipedia.org/w/index.php?title=Abstract_data_type&oldid=1214359576).
+Reference: “Abstract Data Type.” In _Wikipedia_, March 18, 2024. [https://en.wikipedia.org/w/index.php?title=Abstract_data_type](https://en.wikipedia.org/w/index.php?title=Abstract_data_type&oldid=1214359576).
 <!--ID: 1714669011566-->
 END%%
 
 ## Bibliography
 
-* “Abstract Data Type.” In _Wikipedia_, March 18, 2024. [https://en.wikipedia.org/w/index.php?title=Abstract_data_type&oldid=1214359576](https://en.wikipedia.org/w/index.php?title=Abstract_data_type&oldid=1214359576).
+* “Abstract Data Type.” In _Wikipedia_, March 18, 2024. [https://en.wikipedia.org/w/index.php?title=Abstract_data_type](https://en.wikipedia.org/w/index.php?title=Abstract_data_type&oldid=1214359576).
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).

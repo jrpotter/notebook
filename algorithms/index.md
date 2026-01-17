@@ -131,7 +131,11 @@ END%%
 
 ## Divide-and-Conquer
 
-The **divide-and-conquer** approach breaks problems into subproblems that are easier to solve.
+The **divide-and-conquer** approach breaks problems into subproblems that are easier to solve. They generally involve three distinct steps:
+
+1. **Divide** the problem into one or more subproblems that are smaller instances of the same problem.
+2. **Conquer** the subproblems by solving them recursively.
+3. **Combine** the subproblem solutions to form a solution to the original problem.
 
 %%ANKI
 Basic

@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0e7ecd295a4f7e57",
+            "id": "1d6824b5dc77bff3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "computability/decidability.md",
+                "file": "_journal/2026-01-17.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "decidability"
-            }
-          },
-          {
-            "id": "cd24ec5432351878",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "algorithms/mst.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "mst"
+              "title": "2026-01-17"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "1764938068737",
+                "query": "TODO",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -157,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/mst.md",
+                "file": "_journal/2026-01-17.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of mst"
+              "title": "Outline of 2026-01-17"
             }
           }
         ],
@@ -171,7 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 367.5
+    "width": 219.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,34 +170,34 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "cd24ec5432351878",
+  "active": "1d6824b5dc77bff3",
   "lastOpenFiles": [
-    "computability/decidability.md",
+    "complexity/recurrences.md",
+    "algebra/index.md",
+    "algorithms/index.md",
+    "_journal/2026-01-17.md",
+    "_journal/2024/2024-05/2024-05-09.md",
     "c23/make.md",
+    "data_structures/disjoint-set.md",
+    "data_structures/graphs.md",
+    "complexity/asymptotic.md",
+    "data_structures/arrays.md",
+    "abstract_data_types/priority_queues.md",
+    "computability/decidability.md",
+    "algorithms/dfs/kosaraju.md",
+    "data_structures/heaps.md",
+    "algorithms/mst.md",
     "operating_systems/signals.md",
     "computability/turing.md",
     "computability/regular.md",
     "graphs/index.md",
-    "algorithms/mst.md",
     "sets/order/equiv-rel.md",
     "_journal/2024/2024-07/2024-07-15.md",
     "sets/index.md",
-    "algorithms/index.md",
     "algorithms/binary_search.md",
-    "algorithms/dfs/kosaraju.md",
-    "_journal/2026-01-17.md",
     "dnd/abilities.md",
     "_journal/2026-01/2026-01-16.md",
     "dnd/combat.md",
-    "arithmetic/logarithms.md",
-    "arithmetic/exponentials.md",
-    "algebra/functions.md",
-    "calculus/derivatives.md",
-    "algebra/index.md",
-    "computability/context-free/index.md",
-    "calculus/index.md",
-    "calculus/riemann.md",
-    "_journal/2026-01/2026-01-15.md",
     "dnd",
     "parsing",
     "_journal/2026-01",
