@@ -487,7 +487,7 @@ END%%
 %%ANKI
 Basic
 Define $A$ as follows. How do we show $\overline{A}$ is not Turing-recognizable? $$A = \{\langle M, w \rangle \mid M \text{ is a Turing machine and } M \text{ accepts } w\}.$$
-Back: $A$ is undecidable and is Turing-recognizable, but a language is decidable iff it and its complement are Turing-recognizable.
+Back: A language is decidable iff it and its complement are Turing-recognizable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764938068737-->
 END%%

@@ -386,7 +386,7 @@ END%%
 %%ANKI
 Basic
 How many possible TMs exist?
-Back: A countably many of them.
+Back: A countably infinite many of them.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764938068670-->
 END%%
@@ -1001,7 +1001,7 @@ A computation model's invariance to certain changes is known as its **robustness
 %%ANKI
 Basic
 What does the robustness of a computing model refer to?
-Back: The models power irrespective of certain kinds of changes.
+Back: The model's power is irrespective of certain kinds of changes.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764735547806-->
 END%%

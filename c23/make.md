@@ -1094,9 +1094,9 @@ END%%
 Basic
 Consider the following makefile. How is the rule expanded?
 ```make
-x ::= foo
-y ::= $(x) bar
-x ::= baz
+x := foo
+y := $(x) bar
+x := baz
 
 all:
 	echo $(y)

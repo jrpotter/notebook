@@ -199,7 +199,7 @@ END%%
 %%ANKI
 Basic
 What distinguishes a process blocking a signal vs. ignoring a signal?
-Back: The latter can be eventually received if the process unblocks the signal.
+Back: The former can eventually be received if the process unblocks the signal.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1752895140072-->
 END%%

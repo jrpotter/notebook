@@ -265,7 +265,7 @@ END%%
 
 %%ANKI
 Basic
-Which skill is most associated with remembing information about different nations?
+Which skill is most associated with remembering information about different nations?
 Back: History.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1768613659081-->
@@ -297,7 +297,7 @@ END%%
 
 %%ANKI
 Basic
-Which skill is most associated with scaring somebody?
+Which skill is most associated with threatening somebody?
 Back: Intimidation.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1768613754798-->
@@ -402,7 +402,7 @@ END%%
 %%ANKI
 Basic
 Which skill is most associated with recalling information about ancient rituals?
-Back: Acrobatics.
+Back: Religion.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1768613539147-->
 END%%
@@ -418,7 +418,7 @@ END%%
 %%ANKI
 Basic
 Which skill is most associated with picking a pocket?
-Back: Sleight of Han.
+Back: Sleight of Hand.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1768613489556-->
 END%%

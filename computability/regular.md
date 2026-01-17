@@ -1580,7 +1580,7 @@ END%%
 
 %%ANKI
 Basic
-What must be done to convert a DFA converted into a GNFA?
+What must be done to convert a DFA into a GNFA?
 Back: N/A. Every DFA is a GNFA.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764474685705-->
@@ -2787,8 +2787,8 @@ END%%
 %%ANKI
 Basic
 How is $Q$ typically defined given the following?
-* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$
-* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$
+* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA.
+* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA.
 * $D = \langle Q, \Sigma, \delta, q_0, F \rangle$ is the product construction of $D_1$ and $D_2$.
 Back: As $Q = Q_1 \times Q_2$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
@@ -2798,8 +2798,8 @@ END%%
 %%ANKI
 Basic
 How is the domain of $\delta$ typically defined given the following?
-* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$
-* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$
+* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA.
+* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA.
 * $D = \langle Q, \Sigma, \delta, q_0, F \rangle$ is the product construction of $D_1$ and $D_2$.
 Back: As $Q \times \Sigma$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
@@ -2809,8 +2809,8 @@ END%%
 %%ANKI
 Basic
 How is the codomain of $\delta$ typically defined given the following?
-* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$
-* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$
+* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA.
+* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA.
 * $D = \langle Q, \Sigma, \delta, q_0, F \rangle$ is the product construction of $D_1$ and $D_2$.
 Back: As $Q$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
@@ -2820,8 +2820,8 @@ END%%
 %%ANKI
 Basic
 How is $\delta \colon Q \times \Sigma \rightarrow Q$ typically defined given the following?
-* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$
-* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$
+* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA.
+* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA.
 * $D = \langle Q, \Sigma, \delta, q_0, F \rangle$ is the product construction of $D_1$ and $D_2$.
 Back: As $\delta(\langle r_1, r_2 \rangle, a) = \langle \delta_1(r_1, a), \delta_2(r_2, a) \rangle$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
@@ -2831,8 +2831,8 @@ END%%
 %%ANKI
 Basic
 How is $q_0$ typically defined given the following?
-* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$
-* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$
+* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA.
+* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA.
 * $D = \langle Q, \Sigma, \delta, q_0, F \rangle$ is the product construction of $D_1$ and $D_2$.
 Back: As $q_0 = \langle q_1, q_2 \rangle$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
@@ -2842,8 +2842,8 @@ END%%
 %%ANKI
 Basic
 How is $F$ typically defined given the following?
-* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$
-* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$
+* $D_1 = \langle Q_1, \Sigma, \delta_1, q_1, F_1 \rangle$ is a DFA.
+* $D_2 = \langle Q_2, \Sigma, \delta_2, q_2, F_2 \rangle$ is a DFA.
 * $D = \langle Q, \Sigma, \delta, q_0, F \rangle$ is the product construction of $D_1$ and $D_2$.
 Back: The definition of $F$ depends on the desired semantics.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).

@@ -1970,6 +1970,58 @@ Reference: _Kosaraju’s Algorithm for Strongly Connected Components_, 2020, [ht
 <!--ID: 1741270294212-->
 END%%
 
+## Cuts
+
+Let $G = \langle V, E \rangle$ be an undirected graph. A **cut** $\{ S, V - S \}$ of $G$ is a [[equiv-rel#Partitions|partition]] of $V$. We say an edge $\{u, v\}$ **crosses** the cut $\{ S, V - S \}$ if one of its endpoints belongs to $S$ and the other belongs to $V - S$. A cut **respects** a set $A$ of edges if no edge in $A$ crosses the cut. An edge is a **light edge** crossing a cut if its weight is the minimum of any edge crossing the cut.
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be an undirected graph. What is a cut of $G$?
+Back: A partition $\{ S, V - S \}$ where $S \subseteq V$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768657603376-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be an undirected graph. Which of cuts or partitions of $G$ is the more general concept?
+Back: Cuts are examples of partitions.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768657603385-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be an undirected graph. What does it mean for $\{ u, v \} \in E$ to cross the cut $\{ S, V - S \}$?
+Back: One endpoint of $\{u, v\}$ is in $S$ while the other is in $V - S$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768657603389-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be an undirected graph and $C = \{S, V - S\}$ be a cut. What does it mean for $C$ to respect $A \subseteq E$?
+Back: No edge in $A$ crosses $C$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768657603393-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be an undirected graph and $C = \{S, V - S\}$ be a cut. What is a light edge?
+Back: An edge crossing cut $C$ with minimum weight.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768657603400-->
+END%%
+
+%%ANKI
+Basic
+Let $G = \langle V, E \rangle$ be an undirected graph and $C = \{S, V - S\}$ be a cut. How many light edges are there?
+Back: At least one.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768657603407-->
+END%%
+
 ## Isomorphisms
 
 An **isomorphism** between two graphs $G_1$ and $G_2$ is a bijection $f \colon V_1 \rightarrow V_2$ between the vertices of the graphs such that $(a, b)$ is an edge in $G_1$ if and only if $(f(a), f(b))$ is an edge in $G_2$. Here parenthesis are used to denote either ordered pairs (for directed graphs) or unordered pairs (for undirected graphs).
