@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "946d4d7ff6aca5d6",
+        "id": "bf687bd1d9e5a119",
         "type": "tabs",
         "children": [
           {
-            "id": "9f9baaa7b121a07b",
+            "id": "0e7ecd295a4f7e57",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_journal/2026-01-16.md",
+                "file": "dnd/abilities.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-01-16"
-            }
-          },
-          {
-            "id": "60bcd967729b5f5d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "calculus/derivatives.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "derivatives"
+              "title": "abilities"
             }
           }
         ]
@@ -108,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_journal/2026-01-09.md",
+                "file": "arithmetic/logarithms.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-01-09"
+              "title": "Backlinks for logarithms"
             }
           },
           {
@@ -156,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_journal/2026-01-16.md",
+                "file": "dnd/abilities.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-01-16"
+              "title": "Outline of abilities"
             }
           }
         ],
@@ -184,12 +170,15 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "9f9baaa7b121a07b",
+  "active": "0e7ecd295a4f7e57",
   "lastOpenFiles": [
+    "dnd/combat.md",
+    "_journal/2026-01-16.md",
+    "arithmetic/logarithms.md",
+    "arithmetic/exponentials.md",
     "algebra/functions.md",
     "calculus/derivatives.md",
     "algebra/index.md",
-    "_journal/2026-01-16.md",
     "computability/context-free/index.md",
     "computability/regular.md",
     "calculus/index.md",
@@ -198,10 +187,8 @@
     "dnd/index.md",
     "computability/decidability.md",
     "calculus/primitives.md",
-    "arithmetic/logarithms.md",
     "_journal/2026-01/2026-01-14.md",
     "algorithms/index.md",
-    "dnd/combat.md",
     "dnd/abilities.md",
     "complexity/index.md",
     "computability/context-sensitive.md",
@@ -210,8 +197,6 @@
     "programming/loop_invariant.md",
     "programming/pred_trans.md",
     "formal_system/proof_system/equiv_trans.md",
-    "dnd/d20_test.md",
-    "network/link/ethernet.md",
     "dnd",
     "parsing",
     "_journal/2026-01",

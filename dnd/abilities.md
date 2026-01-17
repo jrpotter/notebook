@@ -126,6 +126,335 @@ Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards
 <!--ID: 1768424140260-->
 END%%
 
+## Skills
+
+There exist 18 different skills, each associated with one of the 6 ability scores. These include:
+
+* **Acrobatics** (Dexterity)
+	* Staying on your feet in a tricky situation, or performing an acrobatic stunt.
+* **Animal Handling** (Wisdom)
+	* Calm or train an animal, or get an animal to behave in a certain way.
+* **Arcana** (Intelligence)
+	* Recall lore about spells, magic items, and the planes of existence.
+* **Athletics** (Strength)
+	* Jump farther than normal, stay afloat in rough water, or break something.
+* **Deception** (Charisma)
+	* Tell a convincing lie, or wear a disguise convincingly.
+* **History** (Intelligence)
+	* Recall lore about historical events, people, nations, and cultures.
+* **Insight** (Wisdom)
+	* Discern a person's mood and intentions.
+* **Intimidation** (Charisma)
+	* Awe or threaten someone into doing what you want.
+* **Investigation** (Intelligence)
+	* Find obscure information in books, or deduce how something works.
+* **Medicine** (Wisdom)
+	* Diagnose an illness, or determine what killed the recently slain.
+* **Nature** (Intelligence)
+	* Recall lore about terrain, plants, animals, and weather.
+* **Perception** (Wisdom)
+	* Using a combination of senses to notice something that's easy to miss.
+* **Performance** (Charisma)
+	* Act, tell a story, perform music, or dance.
+* **Persuasion** (Charisma)
+	* Honestly and graciously convince someone of something.
+* **Religion** (Intelligence)
+	* Recall lore about gods, religiuos rituals, and holy symbols.
+* **Sleight of Hand** (Dexterity)
+	* Pick a pocket, conceal a handheld object, or perform legerdemain.
+* **Stealth** (Dexterity)
+	* Escape notice by moving quietly and hiding behind things.
+* **Survival** (Wisdom)
+	* Follow tracks, forage, find a trail, or avoid natural hazards.
+
+%%ANKI
+Basic
+How many different skills are there?
+Back: $18$.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344374-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Acrobatics skill associated with?
+Back: Dexterity.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344377-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with staying on your feet in a tricky situation?
+Back: Acrobatics.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613400523-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Animal Handling skill associated with?
+Back: Wisdom.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344378-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with getting an animal to behave in a certain way?
+Back: Animal Handling.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613445608-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Arcana skill associated with?
+Back: Intelligence.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344380-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with recalling information about the planes of existence?
+Back: Arcana.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613489554-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Athletics skill associated with?
+Back: Strength.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344381-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with staying afloat in rough water?
+Back: Athletics.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613539145-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Deception skill associated with?
+Back: Charisma.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344382-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with wearing a disguise convincingly?
+Back: Deception.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613593504-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the History skill associated with?
+Back: Intelligence.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344383-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with remembing information about different nations?
+Back: History.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613659081-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Insight skill associated with?
+Back: Wisdom.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344384-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with discerning a person's mood?
+Back: Insight.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613659084-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Intimidation skill associated with?
+Back: Charisma.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344385-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with scaring somebody?
+Back: Intimidation.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613754798-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Investigation skill associated with?
+Back: Intelligence.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344386-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Medicine skill associated with?
+Back: Wisdom.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344387-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with determining how somebody recently died?
+Back: Medicine.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613792978-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Nature skill associated with?
+Back: Intelligence.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344388-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with recalling information about weather?
+Back: Nature.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613754800-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Perception skill associated with?
+Back: Wisdom.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344389-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with noticing something subtle?
+Back: Perception.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613693627-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Performance skill associated with?
+Back: Charisma.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344390-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with playing music well?
+Back: Performance.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613659086-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Persuasion skill associated with?
+Back: Charisma.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344391-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with graciously convincing someone to do something?
+Back: Persuasion.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613593507-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Religion skill associated with?
+Back: Intelligence.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344392-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with recalling information about ancient rituals?
+Back: Acrobatics.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613539147-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Sleight of Hand skill associated with?
+Back: Dexterity.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344393-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with picking a pocket?
+Back: Sleight of Han.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613489556-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Stealth skill associated with?
+Back: Dexterity.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344394-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with hiding behind things?
+Back: Stealth.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613445612-->
+END%%
+
+%%ANKI
+Basic
+Which ability is the Survival skill associated with?
+Back: Wisdom.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613344395-->
+END%%
+
+%%ANKI
+Basic
+Which skill is most associated with foraging?
+Back: Survival.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1768613400526-->
+END%%
+
 ## Difficulty Class
 
 The **Difficulty Class** (DC) of an ability check or saving throw represents the tasks' difficulty. The more difficult the task, the higher its DC.

@@ -996,7 +996,7 @@ END%%
 
 %%ANKI
 Basic
-What functional equation does Apostol present to motivate the logarithm?
+What functional equation does Apostol use to describe the logarithm?
 Back: $f(xy) = f(x) + f(y)$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1766500506356-->
