@@ -424,7 +424,7 @@ END%%
 %%ANKI
 Basic
 What is the weight of the sign bit in $w$-bit two's-complement?
-Back: $-2^{w-1}$
+Back: $2^{w-1}$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1708179649887-->
 END%%

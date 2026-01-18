@@ -746,7 +746,7 @@
     "c17/index.md": "1b8b6e74f61d56db635715c7f2f2f6f9",
     "c17/declarations.md": "bfa48f66625ef7cebf4cba49bf046438",
     "c17/alignment.md": "b46288927801d9961617a38a1a3ea8ee",
-    "binary/integer.md": "838a2d88ccaa84bdc69b1224ab923351",
+    "binary/integer.md": "e4b887e3e8dc7e190b70bf66d22d1b78",
     "binary/index.md": "509773b79fd72e18effa506460917b5b",
     "binary/float.md": "f51e600ed1a57c77af63b90256d3786b",
     "baduk/nakade.md": "6b6e3884a667f7165e463ec687a59705",
@@ -2240,7 +2240,7 @@
     "_journal/2025-12/2025-12-21.md": "21c022a5eca77b4150bc5e4d5a75a320",
     "sets/relations.md": "c5d40324cf8dddff8ffe6a8008c21f2a",
     "sets/recursion.md": "8605eaec65f21b5bf8388cf277ac0d93",
-    "sets/ordinals.md": "898f57808dd9057bb44685b963363a17",
+    "sets/ordinals.md": "0611b46c3e1293de157d387e45823b22",
     "sets/order/well.md": "a430655806a6a6a2c79abfe9c7d45393",
     "sets/order/total.md": "85e101403ded9fcbc539a953d9082c79",
     "sets/order/preorder.md": "cee290ebb92522793468be0681b0df31",
@@ -2344,11 +2344,14 @@
     "dnd/combat.md": "cc5d1112f95be5fbf3fffa6cedbf8bae",
     "_journal/2026-01-16.md": "dccc785e46af0478c2ff70304dca6bd7",
     "_journal/2026-01/2026-01-15.md": "96c41e52132499c5e9b93d04f73bf3a7",
-    "algorithms/mst.md": "7f8a308a55a4051fc4ba5b49cff06b89",
-    "_journal/2026-01-17.md": "90fa9bfa67bc7d9442a44560c21d76ba",
+    "algorithms/mst.md": "de6c422b28c9af4df11b3898775ffc64",
+    "_journal/2026-01-17.md": "033d8b866c2bd1c15d913163044a61d9",
     "_journal/2026-01/2026-01-16.md": "dccc785e46af0478c2ff70304dca6bd7",
     "data_structures/disjoint-set.md": "7af8c8706b71e96c8c14cb2d5b1c9385",
-    "complexity/recurrences.md": "839281973f6782b041032f0b047e3b7f"
+    "complexity/recurrences.md": "839281973f6782b041032f0b047e3b7f",
+    "dnd/actions.md": "06a92186144cfc8bd7d2606f3dadcdc3",
+    "_journal/2026-01-18.md": "7f75b8515e4eb533634dfbd0a5bd56c2",
+    "_journal/2026-01/2026-01-17.md": "033d8b866c2bd1c15d913163044a61d9"
   },
   "fields_dict": {
     "Basic": [
