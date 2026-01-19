@@ -1145,6 +1145,22 @@ Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1749996371385-->
 END%%
 
+%%ANKI
+Basic
+How is $3^{\log_4{n}}$ equivalently expressed as an exponential of $n$?
+Back: As $n^{\log_4{3}}$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768831726480-->
+END%%
+
+%%ANKI
+Basic
+How is $n^{\log_b{x}}$ equivalently expressed as an exponential of $x$?
+Back: As $x^{\log_b{n}}$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768832389483-->
+END%%
+
 ### Change of Base Rule
 
 Given $p, q > 0$ such that $p \neq 1$ and $q \neq 1$, and $x > 0$, $$\large \log_p{x} = \frac{\log_q{x}}{\log_q{p}}.$$

@@ -616,7 +616,10 @@
     "dpda-epsilon-stack.png",
     "von-neumann-universe.png",
     "von-neumann-universe-hereditary.png",
-    "von-neumann-universe-nonhereditary.png"
+    "von-neumann-universe-nonhereditary.png",
+    "recursion-tree-zero.png",
+    "recursion-tree-one.png",
+    "recursion-tree-two.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -1444,7 +1447,7 @@
     "_journal/2025-07-05.md": "ff1fba2e661f57f68cb8cd10c50ceb67",
     "_journal/2025-07/2025-07-04.md": "13487a42a2d971e073999906b2360637",
     "arithmetic/radices.md": "2c9b56821d0f173b64dc068859b39bdc",
-    "arithmetic/logarithms.md": "bb9109eaeddfa982d26184b2edb6e118",
+    "arithmetic/logarithms.md": "9e88dd954fd72d087c8c666046d94241",
     "arithmetic/index.md": "83e9f72ab4a6fb2d7013e40598a2cd58",
     "networking/ip/subnet.md": "c9259f72b5e0f193156601130571932a",
     "networking/ip/index.md": "7481786bb2291b2e1341328661be4775",
@@ -2344,14 +2347,16 @@
     "dnd/combat.md": "cc5d1112f95be5fbf3fffa6cedbf8bae",
     "_journal/2026-01-16.md": "dccc785e46af0478c2ff70304dca6bd7",
     "_journal/2026-01/2026-01-15.md": "96c41e52132499c5e9b93d04f73bf3a7",
-    "algorithms/mst.md": "de6c422b28c9af4df11b3898775ffc64",
+    "algorithms/mst.md": "f8a3eb97e57ebb57d6ef142681595967",
     "_journal/2026-01-17.md": "033d8b866c2bd1c15d913163044a61d9",
     "_journal/2026-01/2026-01-16.md": "dccc785e46af0478c2ff70304dca6bd7",
     "data_structures/disjoint-set.md": "7af8c8706b71e96c8c14cb2d5b1c9385",
-    "complexity/recurrences.md": "839281973f6782b041032f0b047e3b7f",
+    "complexity/recurrences.md": "dfa0f065bc8ab5570367639bbe69f19a",
     "dnd/actions.md": "06a92186144cfc8bd7d2606f3dadcdc3",
-    "_journal/2026-01-18.md": "7f75b8515e4eb533634dfbd0a5bd56c2",
-    "_journal/2026-01/2026-01-17.md": "033d8b866c2bd1c15d913163044a61d9"
+    "_journal/2026-01-18.md": "891355dccd8a49206d71120d1fc4bfe3",
+    "_journal/2026-01/2026-01-17.md": "033d8b866c2bd1c15d913163044a61d9",
+    "_journal/2026-01-19.md": "4444d60f3cf5a59121a498e828097910",
+    "_journal/2026-01/2026-01-18.md": "891355dccd8a49206d71120d1fc4bfe3"
   },
   "fields_dict": {
     "Basic": [

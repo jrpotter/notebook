@@ -106,11 +106,211 @@ END%%
 
 ### Substitution
 
-TODO
+In the **substitution method**, one guesses the form of a bound and then uses [[proofs/induction|mathematical induction]] to prove the guess correct and solve for constants. In general, there are two steps:
+
+1. Guess the form of the solution using symbolic constants.
+2. Use mathematical induction to show the solution works and find the constants.
+
+%%ANKI
+Basic
+What kind of equations is the substitution method used to solve?
+Back: Recurrences.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768753773510-->
+END%%
+
+%%ANKI
+Basic
+How is the substitution method used?
+Back: Guess a solution and use induction to prove the guess correct (solving for constants).
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768753773513-->
+END%%
+
+%%ANKI
+Basic
+Why is the substitution method named the way it is?
+Back: You *substitute* the guessed solution for the function on smaller values.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768753773515-->
+END%%
+
+%%ANKI
+Basic
+With respect to the substitution method, what upper bound should you guess for the following recurrence? $$T(n) = 2T(\lfloor n / 2 \rfloor) + \Theta(n)$$
+Back: $T(n) \leq cn\lg{n}$ for some constants $c, n_0 > 0$ and $n \geq n_0$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768753773516-->
+END%%
+
+%%ANKI
+Basic
+With respect to the substitution method, what upper bound should you guess for the following recurrence? $$T(n) = T(n / 2) + \Theta(1)$$
+Back: $T(n) \leq c\lg{n}$ for some constants $c, n_0 > 0$ and $n \geq n_0$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768756454468-->
+END%%
+
+%%ANKI
+Basic
+With respect to the substitution method, what upper bound should you guess for the following recurrence? $$T(n) = T(n - 1) + n$$
+Back: $T(n) \leq c n^2$ for some constants $c, n_0 > 0$ and $n \geq n_0$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768756454473-->
+END%%
+
+%%ANKI
+Basic
+Assume upper bound $cn\lg{n}$. What inequality are we trying to *simplify* in the inductive case of the substitution method? $$T(n) = 2T(\lfloor n / 2 \rfloor) + \Theta(n)$$
+Back: $$T(n) \leq 2 \left( c \lfloor n / 2 \rfloor \lg{\lfloor n / 2 \rfloor} \right) + \Theta(n)$$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768753773518-->
+END%%
+
+%%ANKI
+Basic
+Assume upper bound $cn\lg{n}$. What inequality are we trying to *prove* in the inductive case of the substitution method? $$T(n) = 2T(\lfloor n / 2 \rfloor) + \Theta(n)$$
+Back: $$T(n) \leq cn\lg{n}$$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768753773519-->
+END%%
+
+%%ANKI
+Cloze
+With respect to the substitution method, we try to prove the {inductive hypothesis} for both the {base cases} and {recursive case}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768753773520-->
+END%%
+
+%%ANKI
+Basic
+What mathematical proof strategy is most related to the substitution method?
+Back: Mathematical induction.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768753773522-->
+END%%
 
 ### Recursion-Tree
 
-TODO
+In the **recursion-tree method**, one models the recurrence as a tree whose nodes represent the costs incurred at various levels of the recursion. To then solve the recurrence, one determines the costs at each level and adds them up.
+
+Generally speaking, once a reasonable guess has been derived, the [[#Substitution|substitution method]] is then used to formally prove the result.
+
+%%ANKI
+Basic
+What kind of equations is the recursion-tree method used to solve?
+Back: Recurrences.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768831726470-->
+END%%
+
+%%ANKI
+Basic
+How does the recursion-tree method work?
+Back: By modeling the recurrence as a tree and summing up the costs of each node.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768831726472-->
+END%%
+
+%%ANKI
+Basic
+In a recursion tree, what does each node represent?
+Back: The cost of a single subproblem in the set of recursive function invocations.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768831726473-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, the recursion-tree method is used to generate a guess then verified by what method?
+Back: The substitution method.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768831726475-->
+END%%
+
+%%ANKI
+Basic
+Apply the recursion-tree method to the following. What is the cost of the root? $$T(n) = 3T(n / 4) + \Theta(n^2)$$
+Back: $cn^2$ for some constant $c > 0$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768831726476-->
+END%%
+
+%%ANKI
+Basic
+Apply the recursion-tree method to the following. How many nodes are on level $1$? $$T(n) = 3T(n / 4) + \Theta(n^2)$$
+Back: $3$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768831726477-->
+END%%
+
+%%ANKI
+Basic
+Apply the recursion-tree method to the following. How many nodes are on level $k \geq 0$? $$T(n) = 3T(n / 4) + \Theta(n^2)$$
+Back: $3^k$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768831726478-->
+END%%
+
+%%ANKI
+Basic
+Apply the recursion-tree method to the following. What is the cost of a leaf? $$T(n) = 3T(n / 4) + \Theta(n^2)$$
+Back: $\Theta(1)$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768831726479-->
+END%%
+
+%%ANKI
+Basic
+Apply the recursion-tree method to the following. Why must the recursion eventually bottom out? $$T(n) = 3T(n / 4) + \Theta(n^2)$$
+Back: The subproblem size decreases by a factor of four each level.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768832389472-->
+END%%
+
+%%ANKI
+Basic
+Apply the recursion-tree method to the following. What is the subproblem size at level $k \geq 0$? $$T(n) = 3T(n / 4) + \Theta(n^2)$$
+Back: $n / 4^k$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768832389475-->
+END%%
+
+%%ANKI
+Basic
+Apply the recursion-tree method to the following. What is the height of the tree? $$T(n) = 3T(n / 4) + \Theta(n^2)$$
+Back: $\log_4{n}$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768832389476-->
+END%%
+
+%%ANKI
+Basic
+Apply the recursion-tree method to the following. *Why* is the height of the tree $\log_4{n}$? $$T(n) = 3T(n / 4) + \Theta(n^2)$$
+Back: Because the subproblem size has size $1$ when $n / 4^k = 1$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768832389478-->
+END%%
+
+%%ANKI
+Basic
+Consider recurrence $T(n) = 3T(n / 4) + \Theta(n^2)$. Expand the following recursion tree by a level.
+![[recursion-tree-zero.png]]
+Back:
+![[recursion-tree-one.png]]
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768832389481-->
+END%%
+
+%%ANKI
+Basic
+Consider recurrence $T(n) = 3T(n / 4) + \Theta(n^2)$. Expand the following recursion tree by a level.
+![[recursion-tree-one.png]]
+Back:
+![[recursion-tree-two.png]]
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1768832389482-->
+END%%
 
 ### Master
 
