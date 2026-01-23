@@ -9,22 +9,107 @@ tags:
 
 ## Overview
 
-We define the **exponential** $f(x) = b^x$ as the inverse of the [[logarithms|logarithm]] $g(x) = \log_b(x)$. That is, $b^x = y$ if and only if $y = \log_b{x}$.
+The **natural exponential function** refers to a function that applies exponentiation with [[logarithms#Euler's Number|Euler's number]] $e$ as the **base**. That is, a function $f(x)$ of form $f(x) = e^x$ for some $x \in \mathbb{R}$. This is alternatively denoted as $f(x) = \exp{x}$.
+
+More generally, an **exponential function** refers to any function of form $f(x) = b^x$ where $b, x \in \mathbb{R}$. and $b > 0$. General exponential functions are defined in terms of natural exponential functions via the following identity: $$b^x = e^x\ln{b}$$
 
 %%ANKI
 Basic
-Apostol defines the exponential function as what?
-Back: The inverse of the logarithmic function.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1768595658688-->
+In what way is the term "exponential function" ambiguous?
+Back: It may refer to the natural exponential function or any function of form $f(x) = b^x$.
+Reference: _Wikipedia_. “Exponential function.” January 3, 2026. [https://en.wikipedia.org/w/index.php?title=Exponential_function](https://en.wikipedia.org/w/index.php?title=Exponential_function&oldid=1330993772).
+<!--ID: 1769122368038-->
 END%%
 
 %%ANKI
 Basic
-Which functions are their own derivative?
+How is natural exponential function $f(x) = e^x$ alternatively denoted?
+Back: As $f(x) = \exp{x}$.
+Reference: _Wikipedia_. “Exponential function.” January 3, 2026. [https://en.wikipedia.org/w/index.php?title=Exponential_function](https://en.wikipedia.org/w/index.php?title=Exponential_function&oldid=1330993772).
+<!--ID: 1769122368047-->
+END%%
+
+%%ANKI
+Basic
+How is natural exponential function $f(x) = \exp{x}$ alternatively denoted?
+Back: As $f(x) = e^x$.
+Reference: _Wikipedia_. “Exponential function.” January 3, 2026. [https://en.wikipedia.org/w/index.php?title=Exponential_function](https://en.wikipedia.org/w/index.php?title=Exponential_function&oldid=1330993772).
+<!--ID: 1769122368051-->
+END%%
+
+%%ANKI
+Basic
+Generally speaking, when is notation $\exp{x}$ preferred over $e^x$?
+Back: When $x$ is an especially complicated expression.
+Reference: _Wikipedia_. “Exponential function.” January 3, 2026. [https://en.wikipedia.org/w/index.php?title=Exponential_function](https://en.wikipedia.org/w/index.php?title=Exponential_function&oldid=1330993772).
+<!--ID: 1769122368055-->
+END%%
+
+%%ANKI
+Basic
+How is the natural exponential function $f(x)$ defined?
+Back: As $f(x) = e^x$.
+Reference: _Wikipedia_. “Exponential function.” January 3, 2026. [https://en.wikipedia.org/w/index.php?title=Exponential_function](https://en.wikipedia.org/w/index.php?title=Exponential_function&oldid=1330993772).
+<!--ID: 1769122368058-->
+END%%
+
+%%ANKI
+Basic
+Which two functions are their own derivative?
 Back: $f(x) = 0$ and $f(x) = e^x$ where $e$ is Euler's number.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1768595658693-->
+END%%
+
+%%ANKI
+Basic
+Consider exponential function $f(x) = b^x$. What is assumed about $b$?
+Back: $b \in \mathbb{R}$ and $b > 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769122926601-->
+END%%
+
+%%ANKI
+Basic
+Consider exponential function $f(x) = b^x$. *Why* is $b$ assumed to not equal $0$?
+Back: Because $\ln{0}$ is undefined.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769122926607-->
+END%%
+
+%%ANKI
+Basic
+Consider exponential function $f(x) = b^x$. What is assumed about $x$?
+Back: $x \in \mathbb{R}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769122926610-->
+END%%
+
+%%ANKI
+Basic
+Let $b, x \in \mathbb{R}$ such that $b > 0$. How is $b^x$ defined?
+Back: As $b^x = \exp{(x \ln{b})}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769122926614-->
+END%%
+
+%%ANKI
+Basic
+Why doesn't Apostol define $a^x$ as follows?
+
+> Let $a^x$ denote the number $y$ such that $\log_a{y} = x$.
+
+Back: Because then $a^x$ is not defined for $a = 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769122926617-->
+END%%
+
+%%ANKI
+Basic
+How is $e^{x\ln{a}}$ more compactly written?
+Back: As $a^x$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769122926621-->
 END%%
 
 %%ANKI
@@ -77,3 +162,4 @@ END%%
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+* _Wikipedia_. “Exponential function.” January 3, 2026. [https://en.wikipedia.org/w/index.php?title=Exponential_function](https://en.wikipedia.org/w/index.php?title=Exponential_function&oldid=1330993772).

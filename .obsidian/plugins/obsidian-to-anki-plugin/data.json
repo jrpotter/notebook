@@ -1264,7 +1264,7 @@
     "algorithms/binary_search.md": "8533a05ea372e007ab4e8a36fd2772a9",
     "algebra/floor_ceiling.md": "78496445da3054dd720f00a485fc433a",
     "algebra/arch_prop.md": "8230cdab8073f6b07df0d5b6a0bd1fbd",
-    "algebra/abs_val.md": "67f756ef3c0520fe584ab6250ffb96e2",
+    "algebra/abs_val.md": "b8a28fcec1f0295abba4ade5bdf4e4a7",
     "_journal/2025-04-26.md": "353df72892d0f83fa6f2cb4cd0f35d45",
     "_journal/2025-04/2025-04-25.md": "1aadbb96e98bd728d84502df25cb5e1b",
     "_journal/2025-04-27.md": "6ac7c6213c60654abef500153f7c04bf",
@@ -1760,7 +1760,7 @@
     "data_structures/trees/b-tree.md": "c574531808080903624bdb56b7af1d0d",
     "data_structures/trees/binary_tree.md": "5989f21941cba289bc0ad918fa317f8f",
     "data_structures/trees/index.md": "d856fa16f0e4c4bcedb1080058280c5f",
-    "algebra/functions.md": "23b7480df3bfb5d435bbfd95b6341d87",
+    "algebra/functions.md": "1bc03bd385c90c4de72ce612e0faec57",
     "_journal/2025-10-23.md": "39f4ad1da40f17280f0df02342cd43e9",
     "_journal/2025-10/2025-10-22.md": "c4fedcaf6d2622cc79eedc07b1ef851d",
     "_journal/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
@@ -2258,7 +2258,7 @@
     "sets/bags.md": "70320231f84a49e34a31130eb71e5086",
     "sets/algebra.md": "5e9f560154fe2c7288a85eefcf7b1512",
     "graphs/index.md": "181dbbff51d5d75c85a5034589040079",
-    "arithmetic/exponentials.md": "d057f7fab96bdbbc31fff7d73eca5a3b",
+    "arithmetic/exponentials.md": "331fb8a87a1b1b7b911d40549e112f34",
     "_journal/2025-12-23.md": "ae1de01afe89617e17f67ce5e9a31461",
     "_journal/2025-12/2025-12-22.md": "87101574b054e1a065ed8461808329ef",
     "_journal/2025-12-24.md": "a8c71c94c28ec053fbfe25851f2805c0",
@@ -2356,7 +2356,11 @@
     "_journal/2026-01-18.md": "891355dccd8a49206d71120d1fc4bfe3",
     "_journal/2026-01/2026-01-17.md": "033d8b866c2bd1c15d913163044a61d9",
     "_journal/2026-01-19.md": "4444d60f3cf5a59121a498e828097910",
-    "_journal/2026-01/2026-01-18.md": "891355dccd8a49206d71120d1fc4bfe3"
+    "_journal/2026-01/2026-01-18.md": "891355dccd8a49206d71120d1fc4bfe3",
+    "_journal/2026-01-22.md": "22e0618e3c7548b932049d238d494f89",
+    "_journal/2026-01/2026-01-21.md": "6f30664ddfb6985c151bbd165b7884f7",
+    "_journal/2026-01/2026-01-19.md": "14a241339c75e8aec6a152ca52c6142e",
+    "_journal/2026-01/2026-01-20.md": "bcac78ef131c5859752f4993a212223a"
   },
   "fields_dict": {
     "Basic": [

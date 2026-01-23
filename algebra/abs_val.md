@@ -102,7 +102,7 @@ END%%
 
 %%ANKI
 Basic
-What does it mean for the absolute value on $\mathbb{R}$ a multiplicative operation?
+What does it mean for the absolute value on $\mathbb{R}$ to be a multiplicative operation?
 Back: For any $x, y \in \mathbb{R}$, $\lvert x \rvert \lvert y \rvert = \lvert x y \rvert$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1753369239568-->

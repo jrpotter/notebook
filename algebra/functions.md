@@ -777,7 +777,7 @@ END%%
 %%ANKI
 Basic
 Let $F \colon A \rightarrow B$ and $A \neq \varnothing$. *Why* does "left inverses iff injective" require AC?
-Back: It doesn't.
+Back: N/A. It doesn't.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1719683703730-->
 END%%
