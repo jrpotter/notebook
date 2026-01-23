@@ -732,7 +732,7 @@ END%%
 
 ## Continuity
 
-Let $f$ be a function differentiable at $x$. Then $f$ is continuous at $x$.
+Let $f$ be a function differentiable at $x$. Then $f$ is [[continuity|continuous]] at $x$.
 
 We say a function $f$ is **continuously differentiable** if $f$ is differentiable and its derivative is continuous.
 
@@ -838,6 +838,62 @@ Let $f(x) = \sin{x}$. Is $f$ continuously differentiable?
 Back: Yes. $f$ is differentiable and $f'(x) = \cos{x}$ is continuous.
 Reference: _Wikipedia_. “Smoothness.” December 1, 2025. [https://en.wikipedia.org/w/index.php?title=Smoothness](https://en.wikipedia.org/w/index.php?title=Smoothness&oldid=1325182258).
 <!--ID: 1766254952305-->
+END%%
+
+### Inverse Function Rule
+
+Let $f$ be a differentiable function on $[a, b]$ with [[algebra/functions#Bijectivity|inverse]] $g$. If $f'(x) \neq 0$ exists for some $x \in (a, b)$, then $g'(y) \neq 0$ also exists at corresponding point $y = f(x)$. Moreover, $$g'(y) = \frac{1}{f'(x)}.$$
+
+%%ANKI
+Cloze
+Let $f$ be a {differentiable} function on {$[a, b]$} with inverse $g$. If {$f'(x) \neq 0$} exists for some $x \in (a, b)$, then {$g'(y) \neq 0$} also exists at corresponding point {$y = f(x)$}. Moreover, {$$g'(y) = \frac{1}{f'(x)}.$$}
+Reference: _Wikipedia_. “Inverse function rule.” December 29, 2025. [https://en.wikipedia.org/w/index.php?title=Inverse_function_rule](https://en.wikipedia.org/w/index.php?title=Inverse_function_rule&oldid=1330048395).
+<!--ID: 1769195357427-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following theorem?
+
+> Let $f$ be a differentiable function on $[a, b]$ with inverse $g$. If $f'(x) \neq 0$ exists for some $x \in (a, b)$, then $g'(y) \neq 0$ also exists at corresponding point $y = f(x)$. Moreover, $$g'(y) = \frac{1}{f'(x)}.$$
+
+Back: The inverse function rule.
+Reference: _Wikipedia_. “Inverse function rule.” December 29, 2025. [https://en.wikipedia.org/w/index.php?title=Inverse_function_rule](https://en.wikipedia.org/w/index.php?title=Inverse_function_rule&oldid=1330048395).
+<!--ID: 1769195357432-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a differentiable function on $[a, b]$ with inverse $g$. Rewrite the following relation using Leibniz notation. $$g'(y) = \frac{1}{f'(x)}$$
+Back: $$\large \frac{dx}{dy} = \frac{1}{\left( \frac{dy}{dx} \right)}$$
+Reference: _Wikipedia_. “Inverse function rule.” December 29, 2025. [https://en.wikipedia.org/w/index.php?title=Inverse_function_rule](https://en.wikipedia.org/w/index.php?title=Inverse_function_rule&oldid=1330048395).
+<!--ID: 1769195357434-->
+END%%
+
+%%ANKI
+Basic
+What does the Inverse Function Rule presume existence of?
+Back: A differentiable, invertible function $f$ on some $[a, b]$.
+Reference: _Wikipedia_. “Inverse function rule.” December 29, 2025. [https://en.wikipedia.org/w/index.php?title=Inverse_function_rule](https://en.wikipedia.org/w/index.php?title=Inverse_function_rule&oldid=1330048395).
+<!--ID: 1769195357437-->
+END%%
+
+%%ANKI
+Basic
+How is the Inverse Function Rule visualized?
+Back:
+![[inverse-function-rule.png]]
+Reference: _Wikipedia_. “Inverse function rule.” December 29, 2025. [https://en.wikipedia.org/w/index.php?title=Inverse_function_rule](https://en.wikipedia.org/w/index.php?title=Inverse_function_rule&oldid=1330048395).
+<!--ID: 1769195357440-->
+END%%
+
+%%ANKI
+Basic
+What differentiation property is the following a visualization of?
+![[inverse-function-rule.png]]
+Back: The Inverse Function Rule.
+Reference: _Wikipedia_. “Inverse function rule.” December 29, 2025. [https://en.wikipedia.org/w/index.php?title=Inverse_function_rule](https://en.wikipedia.org/w/index.php?title=Inverse_function_rule&oldid=1330048395).
+<!--ID: 1769195387090-->
 END%%
 
 ## Extremums
@@ -1262,4 +1318,5 @@ END%%
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+* _Wikipedia_. “Inverse function rule.” December 29, 2025. [https://en.wikipedia.org/w/index.php?title=Inverse_function_rule](https://en.wikipedia.org/w/index.php?title=Inverse_function_rule&oldid=1330048395).
 * _Wikipedia_. “Smoothness.” December 1, 2025. [https://en.wikipedia.org/w/index.php?title=Smoothness](https://en.wikipedia.org/w/index.php?title=Smoothness&oldid=1325182258).

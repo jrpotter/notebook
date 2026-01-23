@@ -619,7 +619,8 @@
     "von-neumann-universe-nonhereditary.png",
     "recursion-tree-zero.png",
     "recursion-tree-one.png",
-    "recursion-tree-two.png"
+    "recursion-tree-two.png",
+    "inverse-function-rule.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -1447,7 +1448,7 @@
     "_journal/2025-07-05.md": "ff1fba2e661f57f68cb8cd10c50ceb67",
     "_journal/2025-07/2025-07-04.md": "13487a42a2d971e073999906b2360637",
     "arithmetic/radices.md": "2c9b56821d0f173b64dc068859b39bdc",
-    "arithmetic/logarithms.md": "9e88dd954fd72d087c8c666046d94241",
+    "arithmetic/logarithms.md": "bff323592d5ac3f7892d7f79ed4ad775",
     "arithmetic/index.md": "83e9f72ab4a6fb2d7013e40598a2cd58",
     "networking/ip/subnet.md": "c9259f72b5e0f193156601130571932a",
     "networking/ip/index.md": "7481786bb2291b2e1341328661be4775",
@@ -1769,7 +1770,7 @@
     "computability/context-free/index.md": "2bc0e0816781933e979db0e6ee44bab5",
     "_journal/2025-10-25.md": "1267c24ab6e563cc2331c8a2ae260460",
     "_journal/2025-10/2025-10-24.md": "acef3969a2b64a6ce42c1602238f922d",
-    "calculus/derivatives.md": "6a4f8fb04fae772b03828e17ddb3b5e8",
+    "calculus/derivatives.md": "85594158bccf0cde8a42891bc656fcbf",
     "network/link/index.md": "816189d187db8eb4714474f2f3196727",
     "network/internetwork/ip.md": "a0974aeb82b2c1a8afee9bd59b3397c0",
     "network/internetwork/index.md": "c422e91d082c75961de8601897066350",
@@ -2258,7 +2259,7 @@
     "sets/bags.md": "70320231f84a49e34a31130eb71e5086",
     "sets/algebra.md": "5e9f560154fe2c7288a85eefcf7b1512",
     "graphs/index.md": "181dbbff51d5d75c85a5034589040079",
-    "arithmetic/exponentials.md": "331fb8a87a1b1b7b911d40549e112f34",
+    "arithmetic/exponentials.md": "0ec41c98b78a69db1b74192d9ade846b",
     "_journal/2025-12-23.md": "ae1de01afe89617e17f67ce5e9a31461",
     "_journal/2025-12/2025-12-22.md": "87101574b054e1a065ed8461808329ef",
     "_journal/2025-12-24.md": "a8c71c94c28ec053fbfe25851f2805c0",
@@ -2360,7 +2361,9 @@
     "_journal/2026-01-22.md": "22e0618e3c7548b932049d238d494f89",
     "_journal/2026-01/2026-01-21.md": "6f30664ddfb6985c151bbd165b7884f7",
     "_journal/2026-01/2026-01-19.md": "14a241339c75e8aec6a152ca52c6142e",
-    "_journal/2026-01/2026-01-20.md": "bcac78ef131c5859752f4993a212223a"
+    "_journal/2026-01/2026-01-20.md": "bcac78ef131c5859752f4993a212223a",
+    "_journal/2026-01-23.md": "cc0c14d6a3e5f1214c375809bb5f4979",
+    "_journal/2026-01/2026-01-22.md": "22e0618e3c7548b932049d238d494f89"
   },
   "fields_dict": {
     "Basic": [

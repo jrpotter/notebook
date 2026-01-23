@@ -11,7 +11,7 @@ tags:
 
 The **natural exponential function** refers to a function that applies exponentiation with [[logarithms#Euler's Number|Euler's number]] $e$ as the **base**. That is, a function $f(x)$ of form $f(x) = e^x$ for some $x \in \mathbb{R}$. This is alternatively denoted as $f(x) = \exp{x}$.
 
-More generally, an **exponential function** refers to any function of form $f(x) = b^x$ where $b, x \in \mathbb{R}$. and $b > 0$. General exponential functions are defined in terms of natural exponential functions via the following identity: $$b^x = e^x\ln{b}$$
+More generally, an **exponential function** refers to any function of form $f(x) = b^x$ where $b, x \in \mathbb{R}$. and $b > 0$. General exponential functions are defined in terms of natural exponential functions via the following identity: $$b^x = e^{x\ln{b}}$$
 
 %%ANKI
 Basic
@@ -157,6 +157,46 @@ What functional equation does Apostol use to describe the exponential?
 Back: $f(x + y) = f(x) \cdot f(y)$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1768598764504-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = e^x$. What does $f'(x)$ evaluate to?
+Back: $f'(x) = e^x$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769195357466-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = a^x$ for some $a > 0$. What does $f'(x)$ evaluate to?
+Back: $f'(x) = \ln{a} \cdot a^x$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769195357472-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = a^x$ for some $a > 0$. What does $f''(x)$ evaluate to?
+Back: $f'(x) = \ln^2{a} \cdot a^x$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769195357476-->
+END%%
+
+%%ANKI
+Basic
+What is the most general primitive of the following? $$\int e^x \,dx$$
+Back: $e^x + C$ for some constant $C$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769195357480-->
+END%%
+
+%%ANKI
+Basic
+Assume $a > 0, a \neq 1$. What is the most general primitive of the following? $$\int a^x \,dx$$
+Back: $a^x / \ln{a} + C$ for some constant $C$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769195357484-->
 END%%
 
 ## Bibliography

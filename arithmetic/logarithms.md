@@ -1012,10 +1012,18 @@ END%%
 
 %%ANKI
 Basic
-How is $\log_b{\lvert xy \rvert}$ written using $+$?
+How is $\log_b{\lvert xy \rvert}$ equivalently written using $+$?
 Back: $\log_b{\lvert x \rvert} + \log_b{\lvert y \rvert}$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1767462975549-->
+END%%
+
+%%ANKI
+Basic
+How do we prove the following identity? $$\log_b{\lvert xy \rvert} = \log_b{\lvert x \rvert} + \log_b{\lvert y \rvert}$$
+Back: By noting that $\log_b{\lvert xy \rvert} = \log_b{(\lvert x \rvert \cdot \lvert y \rvert)}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769195357443-->
 END%%
 
 ### Quotient Rule
@@ -1084,6 +1092,22 @@ Rewrite the following expression using $\log$ and $\mathop{\text{antilog}}$. $$x
 Back: $\mathop{\text{antilog}}(\log{x} - \log{y})$
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1749393067589-->
+END%%
+
+%%ANKI
+Basic
+How is $\log_b{\lvert x \div y \rvert}$ equivalently written using $-$?
+Back: $\log_b{\lvert x \rvert} - \log_b{\lvert y \rvert}$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769195357447-->
+END%%
+
+%%ANKI
+Basic
+How do we prove the following identity? $$\log_b{\left\lvert \frac{x}{y} \right\rvert} = \log_b{\lvert x \rvert} - \log_b{\lvert y \rvert}$$
+Back: By noting that $\log_b{\lvert x \div y \rvert} = \log_b{(\lvert x \rvert \cdot \lvert 1 / y \rvert)} = \log_b{(\lvert x \rvert \div \lvert y \rvert)}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769195357455-->
 END%%
 
 ### Power Rule
@@ -1159,6 +1183,14 @@ How is $n^{\log_b{x}}$ equivalently expressed as an exponential of $x$?
 Back: As $x^{\log_b{n}}$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1768832389483-->
+END%%
+
+%%ANKI
+Basic
+How do we prove the following identity? $$\log_b{\lvert x^n \rvert} = n\log_b{\lvert x \rvert}$$
+Back: N/A. This only holds for values $n > 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769195357460-->
 END%%
 
 ### Change of Base Rule
