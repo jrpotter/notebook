@@ -167,7 +167,7 @@ END%%
 
 ### .rodata
 
-Read-only data such as the format strings in [[streams#Printing|printf]] statements and [[conditions#JMP|jump tables]] for switch statements.
+Read-only data such as the format strings in [[streams#Printing|printf]] statements and [[processor/x86-64/instructions/conditions#JMP|jump tables]] for switch statements.
 
 %%ANKI
 Basic

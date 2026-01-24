@@ -847,7 +847,7 @@ Let $f$ be a differentiable function on $[a, b]$ with [[algebra/functions#Biject
 %%ANKI
 Cloze
 Let $f$ be a {differentiable} function on {$[a, b]$} with inverse $g$. If {$f'(x) \neq 0$} exists for some $x \in (a, b)$, then {$g'(y) \neq 0$} also exists at corresponding point {$y = f(x)$}. Moreover, {$$g'(y) = \frac{1}{f'(x)}.$$}
-Reference: _Wikipedia_. “Inverse function rule.” December 29, 2025. [https://en.wikipedia.org/w/index.php?title=Inverse_function_rule](https://en.wikipedia.org/w/index.php?title=Inverse_function_rule&oldid=1330048395).
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1769195357427-->
 END%%
 
@@ -858,7 +858,7 @@ What name is given to the following theorem?
 > Let $f$ be a differentiable function on $[a, b]$ with inverse $g$. If $f'(x) \neq 0$ exists for some $x \in (a, b)$, then $g'(y) \neq 0$ also exists at corresponding point $y = f(x)$. Moreover, $$g'(y) = \frac{1}{f'(x)}.$$
 
 Back: The inverse function rule.
-Reference: _Wikipedia_. “Inverse function rule.” December 29, 2025. [https://en.wikipedia.org/w/index.php?title=Inverse_function_rule](https://en.wikipedia.org/w/index.php?title=Inverse_function_rule&oldid=1330048395).
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1769195357432-->
 END%%
 
@@ -866,7 +866,7 @@ END%%
 Basic
 Let $f$ be a differentiable function on $[a, b]$ with inverse $g$. Rewrite the following relation using Leibniz notation. $$g'(y) = \frac{1}{f'(x)}$$
 Back: $$\large \frac{dx}{dy} = \frac{1}{\left( \frac{dy}{dx} \right)}$$
-Reference: _Wikipedia_. “Inverse function rule.” December 29, 2025. [https://en.wikipedia.org/w/index.php?title=Inverse_function_rule](https://en.wikipedia.org/w/index.php?title=Inverse_function_rule&oldid=1330048395).
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1769195357434-->
 END%%
 
@@ -894,6 +894,14 @@ What differentiation property is the following a visualization of?
 Back: The Inverse Function Rule.
 Reference: _Wikipedia_. “Inverse function rule.” December 29, 2025. [https://en.wikipedia.org/w/index.php?title=Inverse_function_rule](https://en.wikipedia.org/w/index.php?title=Inverse_function_rule&oldid=1330048395).
 <!--ID: 1769195387090-->
+END%%
+
+%%ANKI
+Basic
+Which differentiation "rule" can be used to differentiate trigonometric function inverses?
+Back: The Inverse Function Rule.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1769204378993-->
 END%%
 
 ## Extremums

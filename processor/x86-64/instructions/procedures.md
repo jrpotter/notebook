@@ -13,7 +13,7 @@ The details of procedures are detailed in [[processor/x86-64/procedures|procedur
 
 ## CALL and RET
 
-Like [[conditions#JMP|JMP]] instructions, `call` allows specifying a direct or indirect operand. `call` pushes the address of the instruction following it onto the stack and updates the PC to the operand. `ret` reverts these steps.
+Like [[processor/x86-64/instructions/conditions#JMP|JMP]] instructions, `call` allows specifying a direct or indirect operand. `call` pushes the address of the instruction following it onto the stack and updates the PC to the operand. `ret` reverts these steps.
 
 | Instruction | Operands    | Description      |
 | ----------- | ----------- | ---------------- |

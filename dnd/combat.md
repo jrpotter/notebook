@@ -1,7 +1,7 @@
 ---
 title: Combat
 TARGET DECK: Obsidian::Game
-FILE TAGS: dnd
+FILE TAGS: dnd::combat
 tags:
   - dnd
 ---

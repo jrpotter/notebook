@@ -1,7 +1,7 @@
 ---
 title: Actions
 TARGET DECK: Obsidian::Game
-FILE TAGS: dnd
+FILE TAGS: dnd::actions
 tags:
   - dnd
 ---

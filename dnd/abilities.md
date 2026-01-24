@@ -1,7 +1,7 @@
 ---
 title: Abilities
 TARGET DECK: Obsidian::Game
-FILE TAGS: dnd
+FILE TAGS: dnd::abilities
 tags:
   - dnd
 ---
