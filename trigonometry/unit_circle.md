@@ -677,7 +677,7 @@ END%%
 
 ## Tangent
 
-The tangent function can also be found on the unit circle. Using the below diagram as a reference, $$\tan{t} = \frac{\sin{t}}{\cos{t}} = \frac{y}{x},$$
+The [[circular#Tangent|tangent]] function can also be found on the unit circle. Using the below diagram as a reference, $$\tan{t} = \frac{\sin{t}}{\cos{t}} = \frac{y}{x},$$
 the slope of the line through points $\langle 0, 0 \rangle$ and $\langle \cos{t}, \sin{t} \rangle$. This line intersects the vertical line through $\langle 1, 0 \rangle$ at point $\langle 1, m \rangle$. Thus the line also has slope $m / 1 = m$. Hence $\tan{t} = m$.
 
 ![[tangent-unit-circle.png]]

@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a114df703993fda1",
+            "id": "cc894f0b772a0385",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dnd/exploration.md",
+                "file": "_journal/2026-01-25.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "exploration"
-            }
-          },
-          {
-            "id": "8346d09b8f7449cc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "calculus/derivatives.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "derivatives"
+              "title": "2026-01-25"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "adventurer",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "arithmetic/logarithms.md",
+                "file": "_journal/2026-01-25.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for logarithms"
+              "title": "Backlinks for 2026-01-25"
             }
           },
           {
@@ -157,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "calculus/derivatives.md",
+                "file": "_journal/2026-01-25.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of derivatives"
+              "title": "Outline of 2026-01-25"
             }
           }
         ],
@@ -171,7 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 219.5
+    "width": 478.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,8 +170,29 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "8346d09b8f7449cc",
+  "active": "cc894f0b772a0385",
   "lastOpenFiles": [
+    "geometry/hyperbolic.md",
+    "calculus/primitives.md",
+    "trigonometry/circular.md",
+    "calculus/derivatives.md",
+    "algebra/functions.md",
+    "trigonometry/index.md",
+    "geometry/conics/index.md",
+    "trigonometry/images/tangent-unit-circle.png",
+    "trigonometry/images/unit-circle-0-1.png",
+    "trigonometry/images/unit-circle-n1-0.png",
+    "trigonometry/unit_circle.md",
+    "trigonometry/atan2.md",
+    "_journal/2025/2025-08/2025-08-13.md",
+    "trigonometry/periodicity.md",
+    "trigonometry/angles.md",
+    "_journal/2025/2025-02/2025-02-27.md",
+    "_journal/2025/2025-01/2025-01-26.md",
+    "_journal/2026-01-25.md",
+    "_journal/2026-01/2026-01-24.md",
+    "dnd/abilities.md",
+    "_journal/2026-01/2026-01-23.md",
     "calculus/continuity.md",
     "dnd/creatures.md",
     "dnd/exploration.md",
@@ -194,38 +200,17 @@
     "dnd/actions.md",
     "dnd/combat.md",
     "dnd/index.md",
-    "dnd/abilities.md",
-    "_journal/2026-01-23.md",
     "complexity/images/recursion-tree-one.png",
     "complexity/images/recursion-tree-two.png",
     "complexity/images/recursion-tree-zero.png",
     "complexity/images/big-omega-notation.png",
     "complexity/images/big-o-notation.png",
     "complexity/images/theta-notation.png",
-    "calculus/derivatives.md",
     "calculus/images/inverse-function-rule.png",
-    "algebra/functions.md",
     "sets/relations.md",
-    "arithmetic/logarithms.md",
-    "arithmetic/exponentials.md",
-    "c23/types/simple.md",
-    "_journal/2026-01/2026-01-22.md",
-    "_journal/2026-01/2026-01-21.md",
-    "_journal/2026-01/2026-01-20.md",
-    "algebra/abs_val.md",
-    "_journal/2026-01/2026-01-19.md",
-    "_journal/2026-01-18.md",
-    "_journal/2026-01/2026-01-18.md",
-    "algorithms/mst.md",
-    "sets/ordinals.md",
-    "binary/integer.md",
-    "_journal/2026-01/2026-01-17.md",
     "dnd",
     "parsing",
     "_journal/2026-01",
-    "sets/images/von-neumann-universe-nonhereditary.png",
-    "sets/images/von-neumann-universe-hereditary.png",
-    "sets/images/von-neumann-universe.png",
     "network/http",
     "complexity/images",
     "graphs/images",

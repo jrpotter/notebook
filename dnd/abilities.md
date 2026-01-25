@@ -25,7 +25,7 @@ Each ability has a score from 1 to 20, although some monsters have a score as hi
 | 2-9   | This represents a weak capability.                                                                                |
 | 10-11 | This represents the human average.                                                                                |
 | 12-19 | This represents a strong capability.                                                                              |
-| 20    | This is the highest an adventurer's score can go unless a feature says otherwise.                                 |
+| 20    | This is the highest a player character's score can go unless a feature says otherwise.                            |
 | 21-29 | This represents an extraordinary capability.                                                                      |
 | 30    | This is the highest a score can go.                                                                               |
 
@@ -72,7 +72,7 @@ END%%
 
 %%ANKI
 Basic
-Generally speaking, what range can an adventurer's ability score take on?
+Generally speaking, what range can an player character's ability score take on?
 Back: $1$ to $20$.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1768424140238-->

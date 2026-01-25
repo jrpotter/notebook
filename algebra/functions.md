@@ -365,6 +365,42 @@ Reference: _Wikipedia_. “Implicit function.” November 30, 2025. [https://en.
 <!--ID: 1768594332813-->
 END%%
 
+## Periodicity
+
+A function $f$ is **periodic** with **period** $p$ if $f(t + p) = f(t)$ for all $t$ in the domain of $f$ and $p$ is the smallest positive number that has this property.
+
+%%ANKI
+Basic
+What does it mean for a function to be periodic?
+Back: There exists a number $p$ such that $f(t + p) = f(t)$ for all $t$ in $f$'s domain.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745979190588-->
+END%%
+
+%%ANKI
+Basic
+What is the period of a periodic function $f$?
+Back: The *smallest* positive number $p$ such that $f(t + p) = f(t)$ for all $t \in \mathop{\text{dom}} f$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745979190595-->
+END%%
+
+%%ANKI
+Basic
+What are the two most commonly referenced periodic functions?
+Back: $\sin$ and $\cos$.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1745979190598-->
+END%%
+
+%%ANKI
+Basic
+Let $y = f(x)$ have period $p$. What is the period of $y = f(Bx)$?
+Back: $p / B$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1749994457987-->
+END%%
+
 ## Symmetries
 
 A function $f$ is said to be **odd** if $-f(x) = f(-x)$ for all $x$ in $f$'s domain. Likewise, $f$ is said to be **even** if $f(x) = f(-x)$ for all $x$ in $f$'s domain.
