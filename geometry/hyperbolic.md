@@ -122,7 +122,7 @@ The **hyperbolic secant** function, denoted $\mathop{\text{sech}}$, is defined a
 
 %%ANKI
 Cloze
-The {hyperbolic secant} function is denoted as {$\mathop{\text{sech}}$}.
+The {hyperbolic secant} function is denoted as {$\mathop{\text{sech} }$}.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1769376091643-->
 END%%
@@ -141,7 +141,7 @@ The **hyperbolic cosecant** function, denoted $\mathop{\text{csch}}$, is defined
 
 %%ANKI
 Cloze
-The {hyperbolic cosecant} function is denoted as {$\mathop{\text{csch}}$}.
+The {hyperbolic cosecant} function is denoted as {$\mathop{\text{csch} }$}.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1769376091649-->
 END%%
@@ -160,7 +160,7 @@ The **hyperbolic cotangent** function, denoted $\mathop{\text{coth}}$, is define
 
 %%ANKI
 Cloze
-The {hyperbolic cotangent} function is denoted as {$\mathop{\text{coth}}$}.
+The {hyperbolic cotangent} function is denoted as {$\mathop{\text{coth} }$}.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1769376091655-->
 END%%

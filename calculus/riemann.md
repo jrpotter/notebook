@@ -1253,7 +1253,7 @@ END%%
 
 %%ANKI
 Basic
-How is an indefinite integral (with lower limit of integration say $c$) defined for $f(x) = x^2$?
+How is an indefinite integral (with lower limit of integration $c$) defined for $f(x) = x^2$?
 Back: As $$\int_c^x f(t) \,dt = \frac{x^3 - c^3}{3}.$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1765424504638-->

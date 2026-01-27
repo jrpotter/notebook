@@ -118,7 +118,7 @@ END%%
 %%ANKI
 Basic
 Suppose a C function takes in a pointer. Can it still be reentrant?
-Back: Yes, if callers ensure the pointers refer to nonshared data.
+Back: Yes, if callers ensure the pointers refer to nonshared data (or is unused).
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23
 <!--ID: 1753825531620-->

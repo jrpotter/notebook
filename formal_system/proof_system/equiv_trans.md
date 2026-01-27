@@ -1181,10 +1181,16 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1721495879861-->
 END%%
 
-### Theorems
+### Identities
 
 * $(E_u^x)_v^x = E_{u_v^x}^x$
 	* The only possible free occurrences of $x$ that may appear after the first of the substitutions occur in $u$.
+* If $y \not\in FV(E)$, then $(E_u^x)_v^y = E_{u_v^y}^x$.
+	* $y$ may not be free in $E$ but substituting $x$ with $u$ can introduce a free occurrence. It doesn't matter if we perform the substitution first or second though.
+* $s(E_e^x) = s(E_{s(e)}^x)$
+	* Substituting $x$ with $e$ and then evaluating is the same as substituting $x$ with the evaluation of $e$.
+* Let $s$ be a state and $s' = (s; x{:}s(e))$. Then $s'(E) = s(E_e^x)$.
+* Given identifiers $\bar{x}$ and fresh identifiers $\bar{u}$, $(E_{\bar{u}}^{\bar{x}})_{\bar{x}}^{\bar{u}} = E$.
 
 %%ANKI
 Basic
@@ -1209,9 +1215,6 @@ Back: After the first substitution, the only possible free occurrences of $x$ ar
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707762304146-->
 END%%
-
-* If $y \not\in FV(E)$, then $(E_u^x)_v^y = E_{u_v^y}^x$.
-	* $y$ may not be free in $E$ but substituting $x$ with $u$ can introduce a free occurrence. It doesn't matter if we perform the substitution first or second though.
 
 %%ANKI
 Basic
@@ -1285,9 +1288,6 @@ Reference: Gries, David. *The Science of Programming*. Texts and Monographs in 
 <!--ID: 1707937867072-->
 END%%
 
-* $s(E_e^x) = s(E_{s(e)}^x)$
-	* Substituting $x$ with $e$ and then evaluating is the same as substituting $x$ with the evaluation of $e$.
-
 %%ANKI
 Basic
 How can we simplify $s(E_{s(e)}^x)$?
@@ -1303,8 +1303,6 @@ Back: $s(E_e^x) = s(E_{s(e)}^x)$
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707937867080-->
 END%%
-
-* Let $s$ be a state and $s' = (s; x{:}s(e))$. Then $s'(E) = s(E_e^x)$.
 
 %%ANKI
 Cloze
@@ -1336,8 +1334,6 @@ Back: When $x$ is not free in $E$.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1707939315519-->
 END%%
-
-* Given identifiers $\bar{x}$ and fresh identifiers $\bar{u}$, $(E_{\bar{u}}^{\bar{x}})_{\bar{x}}^{\bar{u}} = E$.
 
 %%ANKI
 Basic

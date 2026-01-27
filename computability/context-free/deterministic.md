@@ -394,7 +394,7 @@ END%%
 
 %%ANKI
 Cloze
-With respect to DPDAs, {1:halting} is to {2:deadlock} whereas {2:looping} is to {1:livelock}.
+With respect to DPDAs, {1:hanging} is to {2:deadlock} whereas {2:looping} is to {1:livelock}.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766807344593-->
 END%%
