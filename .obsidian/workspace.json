@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2f0adc2a67f6ac21",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "network/session/oauth.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "oauth"
-            }
-          },
-          {
             "id": "bae64af80c1df90c",
             "type": "leaf",
             "state": {
@@ -35,8 +21,7 @@
               "title": "sso"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "epoch",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -187,9 +172,11 @@
   },
   "active": "bae64af80c1df90c",
   "lastOpenFiles": [
-    "network/session/oauth.md",
-    "network/session/sso.md",
     "_journal/2026-01-30.md",
+    "c23/time.md",
+    "network/session/sso.md",
+    "network/session/jwt.md",
+    "network/session/oauth.md",
     "_journal/2026-01/2026-01-29.md",
     "complexity/time.md",
     "c23/types/index.md",
@@ -211,8 +198,6 @@
     "network/transport/index.md",
     "network/session/index.md",
     "network/physical/index.md",
-    "network/firewalls.md",
-    "network/physical/modems.md",
     "network/physical",
     "network/application",
     "network/session",

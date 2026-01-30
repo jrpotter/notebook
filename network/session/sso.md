@@ -218,10 +218,81 @@ END%%
 
 TODO
 
+%%ANKI
+Basic
+Which SSO protocol employs XML?
+Back: SAML.
+Reference: Moore, Dan. “What Is OpenID Connect (OIDC) and How It Works.” FusionAuth. Accessed January 30, 2026. [https://fusionauth.io/articles/identity-basics/what-is-oidc](https://fusionauth.io/articles/identity-basics/what-is-oidc).
+<!--ID: 1769794344886-->
+END%%
+
 ## OIDC
 
-TODO
+**OpenId Connect** (OIDC) is a protocol built on top of [[oauth|OAuth]] to provide authentication-related functionality. The OAuth flows are largely the same. When the authorization server issues an access token, it also issues an ID token (a [[jwt|JWT]]) and an optional refresh token.
+
+%%ANKI
+Cloze
+{1:OIDC} is to {2:authentication} whereas {2:OAuth} is to {1:authorization}.
+Reference: Moore, Dan. “What Is OpenID Connect (OIDC) and How It Works.” FusionAuth. Accessed January 30, 2026. [https://fusionauth.io/articles/identity-basics/what-is-oidc](https://fusionauth.io/articles/identity-basics/what-is-oidc).
+<!--ID: 1769794344889-->
+END%%
+
+%%ANKI
+Basic
+What is OIDC an acronym for?
+Back: **O**pen**ID** **C**onnect.
+Reference: Moore, Dan. “What Is OpenID Connect (OIDC) and How It Works.” FusionAuth. Accessed January 30, 2026. [https://fusionauth.io/articles/identity-basics/what-is-oidc](https://fusionauth.io/articles/identity-basics/what-is-oidc).
+<!--ID: 1769794344893-->
+END%%
+
+%%ANKI
+Cloze
+OIDC combines {1:OpenID} for authentication and {1:OAuth} for authorization.
+Reference: Moore, Dan. “What Is OpenID Connect (OIDC) and How It Works.” FusionAuth. Accessed January 30, 2026. [https://fusionauth.io/articles/identity-basics/what-is-oidc](https://fusionauth.io/articles/identity-basics/what-is-oidc).
+<!--ID: 1769794344897-->
+END%%
+
+%%ANKI
+Basic
+Which commonly used SSO protocol is based off of OAuth?
+Back: OIDC.
+Reference: Moore, Dan. “What Is OpenID Connect (OIDC) and How It Works.” FusionAuth. Accessed January 30, 2026. [https://fusionauth.io/articles/identity-basics/what-is-oidc](https://fusionauth.io/articles/identity-basics/what-is-oidc).
+<!--ID: 1769794344900-->
+END%%
+
+%%ANKI
+Basic
+With respect to OIDC, an authorization server issues what two tokens?
+Back: An access token and an ID token.
+Reference: Moore, Dan. “What Is OpenID Connect (OIDC) and How It Works.” FusionAuth. Accessed January 30, 2026. [https://fusionauth.io/articles/identity-basics/what-is-oidc](https://fusionauth.io/articles/identity-basics/what-is-oidc).
+<!--ID: 1769794344903-->
+END%%
+
+%%ANKI
+Basic
+With respect to OIDC, what kind of token is the issued ID token?
+Back: A JWT.
+Reference: Moore, Dan. “What Is OpenID Connect (OIDC) and How It Works.” FusionAuth. Accessed January 30, 2026. [https://fusionauth.io/articles/identity-basics/what-is-oidc](https://fusionauth.io/articles/identity-basics/what-is-oidc).
+<!--ID: 1769794344906-->
+END%%
+
+%%ANKI
+Basic
+With respect to OIDC, an authorization server issues what optional token?
+Back: A refresh token.
+Reference: Moore, Dan. “What Is OpenID Connect (OIDC) and How It Works.” FusionAuth. Accessed January 30, 2026. [https://fusionauth.io/articles/identity-basics/what-is-oidc](https://fusionauth.io/articles/identity-basics/what-is-oidc).
+<!--ID: 1769794344909-->
+END%%
+
+%%ANKI
+Basic
+Which SSO protocol employs JWTs?
+Back: OIDC.
+Reference: Moore, Dan. “What Is OpenID Connect (OIDC) and How It Works.” FusionAuth. Accessed January 30, 2026. [https://fusionauth.io/articles/identity-basics/what-is-oidc](https://fusionauth.io/articles/identity-basics/what-is-oidc).
+<!--ID: 1769794344913-->
+END%%
 
 ## Bibliography
 
+* Moore, Dan. “What Is OpenID Connect (OIDC) and How It Works.” FusionAuth. Accessed January 30, 2026. [https://fusionauth.io/articles/identity-basics/what-is-oidc](https://fusionauth.io/articles/identity-basics/what-is-oidc).
 * “What SSO Means in 2025: A Modern Guide to Single Sign-On.” _Frontegg_, n.d. Accessed January 29, 2026. [https://frontegg.com/guides/single-sign-on-sso](https://frontegg.com/guides/single-sign-on-sso).

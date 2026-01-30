@@ -2393,10 +2393,11 @@
     "network/application/index.md": "11cffeaf0aa8b7732d81e7decf0d467f",
     "network/internetwork/proxies.md": "d3d0fd41a7fb6687a5d096f5146ccc01",
     "network/internetwork/routers.md": "659f5ef15522c12948f1bd0309e8b7f8",
-    "network/session/sso.md": "9d7865f9bbd2b7392a4c6d0d286f59d1",
+    "network/session/sso.md": "baa3a2de8f922b5650e38d9a64a36bdd",
     "network/session/oauth.md": "9e90f42e20c9a41960085b4a68929e59",
     "_journal/2026-01-30.md": "e77ff545ec4f9c6edea884573492db10",
-    "_journal/2026-01/2026-01-29.md": "c5bf9c4201f7c6d2cc98726a196ece6b"
+    "_journal/2026-01/2026-01-29.md": "c5bf9c4201f7c6d2cc98726a196ece6b",
+    "network/session/jwt.md": "04c1d8fac2a45c8e4a950588d31fab6a"
   },
   "fields_dict": {
     "Basic": [
