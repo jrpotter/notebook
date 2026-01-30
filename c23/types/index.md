@@ -1078,7 +1078,7 @@ END%%
 %%ANKI
 Basic
 Assume block scope. What is the storage duration of `(const int){ 0 }`?
-Back: Automatic.
+Back: Static or automatic.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759790776095-->
 END%%
@@ -1102,7 +1102,7 @@ END%%
 %%ANKI
 Basic
 Assume block scope. What is the storage duration of `(constexpr int){ 0 }`?
-Back: Automatic.
+Back: Static or automatic.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759849585599-->
 END%%

@@ -49,7 +49,7 @@ END%%
 %%ANKI
 Basic
 What are the six abilities?
-Back: Strength, dexterity, constitution, intelligence, wisdom, and charisma.
+Back: Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1768424140226-->
 END%%

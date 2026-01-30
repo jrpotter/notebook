@@ -134,22 +134,6 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 END%%
 
 %%ANKI
-Basic
-Which of the following two symbols correspond most closely to differentiation? $$\int f(x) \,dx \quad \text{or} \quad \int_a^b f(x) \,dx$$
-Back: $\int f(x) \,dx$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1765587023206-->
-END%%
-
-%%ANKI
-Basic
-Which of the following two symbols correspond most closely to integration? $$\int f(x) \,dx \quad \text{or} \quad \int_a^b f(x) \,dx$$
-Back: $\int_a^b f(x) \,dx$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1765587023209-->
-END%%
-
-%%ANKI
 Cloze
 {Leibniz} introduced notation {$\int f(x) \,dx$} to denote a {primitive} of $f$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

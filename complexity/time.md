@@ -134,10 +134,27 @@ END%%
 Let $t$ be an asymptotically nonnegative function. The **time complexity class** $\text{TIME}(t(n))$ is the collection of all languages [[decidability|decidable]] by an $O(t(n))$-time deterministic single-tape Turing machine.
 
 %%ANKI
-Cloze
-The {time complexity} class is denoted as {$\text{TIME}$}.
+Basic
+How is time complexity class $\text{TIME}(t(n))$ defined?
+Back: As the collection of all language decidable by an $O(t(n))$-time deterministic single-tape TM.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1766236674415-->
+<!--ID: 1769779896887-->
+END%%
+
+%%ANKI
+Basic
+How is the time complexity class denoted?
+Back: As $\text{TIME}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1769779274766-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the $\text{TIME}$ class?
+Back: The time complexity class.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1769779274769-->
 END%%
 
 %%ANKI
@@ -293,10 +310,26 @@ END%%
 Let $t$ be an asymptotically nonnegative function. The **nondeterministic time complexity class** $\text{NTIME}(t(n))$ is the collection of all languages [[decidability|decidable]] by an $O(t(n))$-time nondeterministic Turing machine.
 
 %%ANKI
-Cloze
-The {nondeterministic time complexity} class is denoted as {$\text{NTIME}$}.
+Basic
+How is time complexity class $\text{NTIME}(t(n))$ defined?
+Back: As the collection of all language decidable by an $O(t(n))$-time NTM.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1766378083767-->
+<!--ID: 1769779896890-->
+END%%
+
+%%ANKI
+Basic
+How is the nondeterministic time complexity class denoted?
+Back: As $\text{NTIME}$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+END%%
+
+%%ANKI
+Basic
+What name is given to the $\text{NTIME}$ class?
+Back: The nondeterministic time complexity class.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1769779327607-->
 END%%
 
 %%ANKI

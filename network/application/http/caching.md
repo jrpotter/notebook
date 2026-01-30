@@ -160,7 +160,7 @@ END%%
 
 ### Managed
 
-A **managed cache** is a shared cache explicitly deployed to offload the origin server and deliver content efficiently. Examples include [[infrastructure#Proxies|reverse proxies]], CDNs, etc.
+A **managed cache** is a shared cache explicitly deployed to offload the origin server and deliver content efficiently. Examples include [[proxies|reverse proxies]], CDNs, etc.
 
 %%ANKI
 Basic

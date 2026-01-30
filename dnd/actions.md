@@ -130,6 +130,14 @@ END%%
 
 %%ANKI
 Basic
+Which abilities are associated with the Influence action?
+Back: Charisma and Wisdom.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1769603610996-->
+END%%
+
+%%ANKI
+Basic
 What does it mean for you to perform a Magic action?
 Back: You cast a spell, use a magic item, or use a magical feature.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.

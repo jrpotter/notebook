@@ -1175,7 +1175,7 @@ END%%
 %%ANKI
 Basic
 Which system call is used for memory mapping?
-Back: `mmap()`
+Back: `mmap`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23 os::linux
 <!--ID: 1754429038194-->
@@ -1184,7 +1184,7 @@ END%%
 %%ANKI
 Basic
 Which system call is used to delete a memory mapped region?
-Back: `munmap()`
+Back: `munmap`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23 os::linux
 <!--ID: 1755920563832-->
@@ -1192,7 +1192,7 @@ END%%
 
 %%ANKI
 Cloze
-{1:`mmap()`} is to {2:`malloc()`} as {2:`munmap()`} is to {1:`free()`}.
+{1:`mmap`} is to {2:`malloc`} as {2:`munmap`} is to {1:`free`}.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23 os::linux
 <!--ID: 1755920563834-->
@@ -1200,7 +1200,7 @@ END%%
 
 %%ANKI
 Basic
-Why is the `mmap()` system call named the way it is?
+Why is the `mmap` system call named the way it is?
 Back: It's short for **m**emory **map**ping.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23 os::linux
@@ -1209,7 +1209,7 @@ END%%
 
 %%ANKI
 Basic
-Why is the `munmap()` system call named the way it is?
+Why is the `munmap` system call named the way it is?
 Back: It's short for **m**emory **unmap**ping.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23 os::linux
@@ -1469,8 +1469,8 @@ END%%
 
 %%ANKI
 Basic
-How many copies of a shared object are stored in physical memory?
-Back: N/A. There are no copies of a shared object.
+How many instances of a shared object are stored in physical memory?
+Back: Just the one.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: os::linux
 <!--ID: 1755918866295-->
@@ -1478,8 +1478,8 @@ END%%
 
 %%ANKI
 Basic
-How many copies of a private object are stored in physical memory?
-Back: Zero or more.
+How many instances of a private object are stored in physical memory?
+Back: One or more.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: os::linux
 <!--ID: 1755918866299-->

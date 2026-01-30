@@ -30,3 +30,4 @@ END%%
 ## Bibliography
 
 * Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
+* _Wikipedia_. “Router (computing).” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Router_(computing)](https://en.wikipedia.org/w/index.php?title=Router_\(computing\)&oldid=1296380353).

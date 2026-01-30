@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-**Ethernet** refers to (essentially) the IEEE 802.3 set of standards. Network topologies using Ethernet are typically arranged as a star, with an ethernet [[infrastructure#Switches|switch]] at the center.
+**Ethernet** refers to (essentially) the IEEE 802.3 set of standards. Network topologies using Ethernet are typically arranged as a star, with an ethernet [[bridge#Switches|switch]] at the center.
 
 %%ANKI
 Basic

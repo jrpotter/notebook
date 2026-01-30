@@ -97,7 +97,7 @@ END%%
 
 Media access control (MAC) refers to a link layer subprotocol.
 
-A MAC address is a unique identifier assigned to an [[infrastructure#NICs|NIC]] for use as a network address. Such addresses are typically assigned by the hardware manufacturer. They are represented as six groups of 2 [[radices|hexadecimal]] digits, possibly separated by some delimiter (e.g. colons, hyphens, etc.).
+A MAC address is a unique identifier assigned to an NIC for use as a network address. Such addresses are typically assigned by the hardware manufacturer. They are represented as six groups of 2 [[radices|hexadecimal]] digits, possibly separated by some delimiter (e.g. colons, hyphens, etc.).
 
 A **station** or **node** refers to a network interface within a network. Every station has its own unique MAC address.
 
