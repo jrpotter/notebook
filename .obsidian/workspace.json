@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "network/session/sso.md",
+                "file": "_journal/2026-02-02.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sso"
+              "title": "2026-02-02"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "network/session/sso.md",
+                "file": "_journal/2026-02-02.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of sso"
+              "title": "Outline of 2026-02-02"
             }
           }
         ],
@@ -172,12 +172,17 @@
   },
   "active": "bae64af80c1df90c",
   "lastOpenFiles": [
-    "_journal/2026-01-30.md",
-    "c23/time.md",
+    "_journal/2026-02/2026-02-01.md",
+    "_journal/2026-02-02.md",
+    "_journal/2026/2026-01/2026-01-31.md",
+    "_journal/2026-02",
+    "_journal/2026",
+    "_journal/2026/2026-01/2026-01-30.md",
     "network/session/sso.md",
+    "c23/time.md",
     "network/session/jwt.md",
     "network/session/oauth.md",
-    "_journal/2026-01/2026-01-29.md",
+    "_journal/2026/2026-01/2026-01-29.md",
     "complexity/time.md",
     "c23/types/index.md",
     "computability/reducibility.md",
@@ -195,9 +200,6 @@
     "network/application/index.md",
     "network/internetwork/routers.md",
     "network/link/index.md",
-    "network/transport/index.md",
-    "network/session/index.md",
-    "network/physical/index.md",
     "network/physical",
     "network/application",
     "network/session",
@@ -213,10 +215,8 @@
     "calculus/images/inverse-function-rule.png",
     "dnd",
     "parsing",
-    "_journal/2026-01",
+    "_journal/2026/2026-01",
     "network/application/http",
-    "complexity/images",
-    "graphs/images",
-    "graphs"
+    "complexity/images"
   ]
 }
