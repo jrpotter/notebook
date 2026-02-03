@@ -183,8 +183,16 @@ A **condition** is an alteration of a creature's capabilities as a result of a s
 	* *No Concentration*. You Concentration is broken.
 	* *Speechless*. You can't speak.
 	* *Surprised*. If you're Incapacitated when you roll Initiative, you have Disadvantage on the roll.
-* **Invisible**.
-* **Paralyzed**.
+* **Invisible**. You experience the following effects:
+	* *Surprise*. If you're Invisible when you roll Initiative, you have Advantage on the roll.
+	* *Concealed*. You aren't affected by any effect that requires its target to be seen unless the effect's creator can somehow see you. Any equipment you are wearing or carrying is also concealed.
+	* *Attacks Affected*. Attack rolls against you have Disadvantage, and your attack rolls have Advantage. If a creature can somehow see you, you don't gain this benefit against that creature.
+* **Paralyzed**. You experience the following effects:
+	* *Incapacitated*. You have the Incapacitated condition.
+	* *Speed 0*. Your Speed is 0 and can't increase.
+	* *Saving Throws Affected*. You automatically fail Strength and Dexterity saving throws.
+	* *Attacks Affected*. Attack rolls against you have Advantage.
+	* *Automatic Critical Hits*. Any attack roll that hits you is a Critical Hit if the attacker is within 5 feet of you.
 * **Petrified**.
 * **Poisoned**.
 * **Prone**.
@@ -348,7 +356,7 @@ END%%
 %%ANKI
 Basic
 With respect to the Grappled condition, what is the "Speed $0$" effect?
-Back: Your Speed is 0 and can't increase.
+Back: The creature's Speed is 0 and can't increase.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769475960893-->
 END%%
@@ -422,6 +430,84 @@ With respect to the Incapacitated condition, what is the "Surprised" effect?
 Back: The creature rolls Initiative with Disadvantage.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769477131339-->
+END%%
+
+%%ANKI
+Cloze
+A creature with the {Invisible} condition experience the "{Surprise}", "{Concealed}", and "{Attacks Affected}" effects.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1770081819958-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Invisible condition, what is the "Surprise" effect?
+Back: The creature rolls Initiative with advantage.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1770081819968-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Invisible condition, what is the "Concealed" effect?
+Back: The creature is unaffected by an effect that requires its target to be seen unless the effect's creatore can see you.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1770081819973-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Invisible condition, what is the "Attacks Affected" effect?
+Back: Attack rolls against the creature have Disadvantage and its attack rolls have Advantage unless it can somehow be seen.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1770081819978-->
+END%%
+
+%%ANKI
+Cloze
+A creature with the {Paralyzed} condition experience the "{Incapacitated}", "{Speed 0}", "{Saving Throws Affected}", "{Attacks Affected}", and "{Automatic Critical Hits}" effects.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1770081819983-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Paralyzed condition, what is the "Incapacitated" effect?
+Back: The Paralyzed creature has the Incapacitated condition.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1770081819988-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Paralyzed condition, what is the "Speed 0" effect?
+Back: The creature's Speed is 0 and can't increase.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1770081819993-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Paralyzed condition, what is the "Saving Throws Affected" effect?
+Back: The creature automatically fail Strength and Dexterity saving throws.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1770081819998-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Paralyzed condition, what is the "Attacks Affected" effect?
+Back: Attack rolls against the creature have Advantage.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1770081820003-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Paralyzed condition, what is the "Automatic Critical Hits" effect?
+Back: Any attack roll that hits you is a Critical Hit if the attacker is within 5 feet of you.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1770081820008-->
 END%%
 
 ### Exhaustion
