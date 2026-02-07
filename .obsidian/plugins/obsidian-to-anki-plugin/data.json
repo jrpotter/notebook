@@ -2385,7 +2385,7 @@
     "network/physical/modems.md": "49d412dd353b9136b9c29d8104588097",
     "network/physical/index.md": "49881d6fcb5debac9a6f26daa188f6a5",
     "network/application/http/xss.md": "d42ac730f1622cfe6e93f97b61860d1b",
-    "network/application/http/sop.md": "8eb916bb3eb7004a44e72ff1bdddca30",
+    "network/application/http/sop.md": "140686f6300af35796c725a192f839ee",
     "network/application/http/index.md": "46385ae1b70632a9b6e49668840c1291",
     "network/application/http/csrf.md": "cc95c0cbb2a9975b8996dd068dc721bc",
     "network/application/http/cookies.md": "a2f827f25bdb174612b6cd0a74346d46",
@@ -2430,7 +2430,11 @@
     "_journal/2026/2026-01/2026-01-04.md": "07ec69764b3b1eeadc75d19685cd7243",
     "_journal/2026/2026-01/2026-01-03.md": "d5a94bdec7a14ddb09372c9040bd3804",
     "_journal/2026/2026-01/2026-01-02.md": "29e0a4f9c2d6a83dccf7c78e6849afbb",
-    "_journal/2026/2026-01/2026-01-01.md": "01a71c46ada26f41b6469db0a740ab49"
+    "_journal/2026/2026-01/2026-01-01.md": "01a71c46ada26f41b6469db0a740ab49",
+    "_journal/2026-02-05.md": "3b3c1bc5de6215227a7e8220e493c41a",
+    "_journal/2026-02/2026-02-04.md": "6fce6d8f756a6e80fd1b1738fb5aedf7",
+    "_journal/2026-02/2026-02-03.md": "d6e73fadb7bd83baf28f820953b7ad2d",
+    "_journal/2026-02/2026-02-02.md": "3a10d7dbb439c49c799340e1eaec9ce2"
   },
   "fields_dict": {
     "Basic": [

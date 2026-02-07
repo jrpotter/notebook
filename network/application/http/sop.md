@@ -178,6 +178,14 @@ Reference: _Wikipedia_. “Cross-origin resource sharing.” August 28, 2025. [h
 <!--ID: 1763878662907-->
 END%%
 
+%%ANKI
+Basic
+*Why* shouldn't CORS be used for security purposes?
+Back: Anyone can spoof the `Origin` header.
+Reference: Nocturno. “Answer to ‘What’s to stop malicious code from spoofing the “Origin” header to exploit CORS?’” Stack Overflow, September 24, 2015. [https://stackoverflow.com/a/32767920](https://stackoverflow.com/a/32767920).
+<!--ID: 1770310372086-->
+END%%
+
 ### Preflight Requests
 
 For non-"simple" requests, the CORS standard mandates the sending of a **preflight request**. This is an HTTP `OPTIONS` request with headers detailing the type of request to be made (e.g. `Access-Control-Request-Method`). Depending on the headers found in the server's response (e.g. `Access-Control-Allow-Methods`), the browser can then intiate the actual request.
