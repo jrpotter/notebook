@@ -688,8 +688,8 @@ Likewise, a **complete digraph** is a digraph in which every distinct ordered pa
 
 %%ANKI
 Basic
-Does a "complete graph" refer to a directed or undirected graph?
-Back: An undirected graph.
+A "complete graph" more commonly refers to which of directed or undirected graphs?
+Back: Undirected graphs.
 Reference: _Wikipedia_. “Complete graph.” July 30, 2025. [https://en.wikipedia.org/w/index.php?title=Complete_graph](https://en.wikipedia.org/w/index.php?title=Complete_graph&oldid=1303377516).
 <!--ID: 1766458847441-->
 END%%

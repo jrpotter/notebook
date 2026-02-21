@@ -271,7 +271,7 @@ END%%
 
 %%ANKI
 Basic
-Which of network or host byte order should be used when sending data?
+Data should be converted to which of network or host byte order on send?
 Back: Network.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754343624468-->
@@ -279,7 +279,7 @@ END%%
 
 %%ANKI
 Basic
-Which of network or host byte order should be used when receiving data?
+Data should be converted to which of network or host byte order on receipt?
 Back: Host.
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
 <!--ID: 1754343624473-->

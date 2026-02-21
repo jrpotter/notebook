@@ -1033,7 +1033,7 @@ END%%
 
 %%ANKI
 Basic
-Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What is $f$'s "signature" in the following? $$\epsilon(A) = \bigcap\, \{X \mid A \subseteq X \subseteq \mathscr{P}(Q) \land f[\![X]\!] \subseteq X\}$$
+Let $M = \langle Q, \Sigma, \delta, q_0, F \rangle$ be an NFA. What is $f$'s "type signature" in the following? $$\epsilon(A) = \bigcap\, \{X \mid A \subseteq X \subseteq \mathscr{P}(Q) \land f[\![X]\!] \subseteq X\}$$
 Back: $f \colon \mathscr{P}(Q) \rightarrow \mathscr{P}(Q)$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1737552610519-->

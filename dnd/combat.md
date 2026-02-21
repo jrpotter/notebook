@@ -475,6 +475,82 @@ Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards
 <!--ID: 1770081820199-->
 END%%
 
+## Movement
+
+A creature can move up to a distance equal to their **Speed** on their turn. If moving on **Difficult Terrain**, every foot of movement costs 1 extra foot.
+
+A creature may have special speeds such as Climb Speed, Fly Speed, or Swim Speed. If a creature has more than one speed, they can choose which one to use during their movement. They can switch between the speeds during their turn. Common types of movement include:
+
+* **Climbing**.
+	* Every foot of movement costs 1 extra foot (2 extra feet in Difficult Terrain). This extra cost is ignored if the creature has a Climb Speed and uses it to climb.
+* **Flying**.
+	* While flying, you fall if you have the [[creatures#Conditions|Incapacitated]] condition, [[creatures#Conditions|Prone]] condition, or your Fly Speed is reduced to 0. You stay aloft in these conditions if you have the ability to hover.
+* **Swimming**.
+* **Jumping**.
+
+%%ANKI
+Basic
+What does a creature's Speed stat dictate?
+Back: The amount of feet they can travel in a turn.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157965-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a creature to have 30 Speed?
+Back: The creature can move 30 feet with normal movement.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157968-->
+END%%
+
+%%ANKI
+Basic
+What is Difficult Terrain?
+Back: Terrain that is difficult to traverse.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157971-->
+END%%
+
+%%ANKI
+Basic
+What penalty is associated with Difficult Terrain?
+Back: Every foot of movement costs an additional foot.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157974-->
+END%%
+
+%%ANKI
+Basic
+What is the movement penalty of climbing on normal terrain?
+Back: Every foot of movement costs an additional foot.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157977-->
+END%%
+
+%%ANKI
+Basic
+What is the movement penalty of climbing on Difficult Terrain?
+Back: Every foot of movement costs two additional feet.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157981-->
+END%%
+
+%%ANKI
+Basic
+When can the movement penalty for climbing be ignored?
+Back: When the creature has a Climb Speed (and uses it).
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157984-->
+END%%
+
+%%ANKI
+Cloze
+While flying, you fall if you have the {Incapacitated condition}, you have the {Prone condition}, or your {Fly Speed is reduced to $0$}.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157988-->
+END%%
+
 ## Bibliography
 
 * Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.

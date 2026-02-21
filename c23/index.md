@@ -321,14 +321,6 @@ END%%
 
 %%ANKI
 Basic
-Are array accesses typically lvalues or rvalues?
-Back: lvalues.
-Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
-<!--ID: 1723510994997-->
-END%%
-
-%%ANKI
-Basic
 Are dereferenced pointers typically lvalues or rvalues?
 Back: lvalues.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).

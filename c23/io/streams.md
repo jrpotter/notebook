@@ -751,7 +751,7 @@ END%%
 
 %%ANKI
 Basic
-Which C header includes the`fprintf` function?
+Which C header includes the `fprintf` function?
 Back: `<stdio.h>`
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1708384441467-->

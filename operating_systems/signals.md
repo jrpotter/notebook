@@ -573,7 +573,7 @@ Basic
 Which of the five default actions is `SIGILL` associated with?
 Back: Termination.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1752949037118-->
+<!--ID: 1771031827838-->
 END%%
 
 ### SIGABRT

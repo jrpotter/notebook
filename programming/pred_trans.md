@@ -1606,7 +1606,7 @@ Suppose further that a {bounds function} $t$ satisfies the following, where $t1$
 
 Then {$P \Rightarrow wp(\text{DO}, P \land \neg\text{BB})$}.
 Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
-<!--ID: 1745271259999-->
+<!--ID: 1771031808314-->
 END%%
 
 %%ANKI

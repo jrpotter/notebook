@@ -401,7 +401,7 @@ END%%
 
 %%ANKI
 Basic
-We want a DPDA that reads in its entire input. How do we fix halting?
+We want a DPDA that reads in its entire input. How do we fix hanging?
 Back: By pushing a special symbol onto the stack at the start.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766807829721-->

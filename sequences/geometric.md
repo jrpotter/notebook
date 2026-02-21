@@ -8,7 +8,9 @@ tags:
 
 ## Overview
 
-A **geometric sequence** $(a_n)_{n \geq 0}^r$ is a sequence in which each term differs by a constant multiple of $r$. Given initial term $a$, it has recursive definition $$a_n = ra_{n-1} \text{ with } a_0 = a$$ and closed formula $$a_n = ar^n.$$
+A **geometric sequence** $(a_n)_{n \geq 0}^r$ is a sequence in which each term differs by a constant multiple of $r$. Given initial term $a$, it has recursive definition $$a_n = ra_{n-1} \text{ with } a_0 = a$$
+
+and closed formula $a_n = ar^n$.
 
 %%ANKI
 Basic
@@ -80,6 +82,10 @@ Cloze
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709664600158-->
 END%%
+
+## Partial Sums
+
+Let $(a_n)_{n \geq 0}^r$ be a geometric sequence. Then $$\large \sum_{k=0}^n a_k = \frac{a_0(1 - r^{n+1})}{1 - r}$$
 
 %%ANKI
 Basic

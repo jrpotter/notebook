@@ -34,6 +34,38 @@ Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia
 <!--ID: 1751748536950-->
 END%%
 
+%%ANKI
+Basic
+Consider expression $x - y$. What subtraction-related name is given to $x$?
+Back: The minuend.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1771448730348-->
+END%%
+
+%%ANKI
+Basic
+Consider expression $x - y$. What subtraction-related name is given to $y$?
+Back: The subtrahend.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1771448730352-->
+END%%
+
+%%ANKI
+Basic
+Let $x = 3 - 1$. Which number is the minuend?
+Back: $3$
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1771448775302-->
+END%%
+
+%%ANKI
+Basic
+Let $x = 3 - 1$. Which number is the subtrahend?
+Back: $1$
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1771448775310-->
+END%%
+
 ## Average Value
 
 If $a_1, a_2, \ldots, a_n$ are $n$ real numbers, their **arithmetic mean** $\bar{a}$ is defined by the equation $$\bar{a} = \frac{1}{n} \sum_{k=1}^n a_k.$$

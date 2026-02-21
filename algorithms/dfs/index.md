@@ -529,7 +529,7 @@ Basic
 Let $v$ be black when $\langle u, v \rangle$ is explored. If $v{.}d < u{.}d$, what kind of edge is $\langle u, v \rangle$ classified as?
 Back: A cross edge.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1735785232480-->
+<!--ID: 1771031863444-->
 END%%
 
 %%ANKI

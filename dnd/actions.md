@@ -163,7 +163,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for you to perform a Study action?
-Back: You make an Intelligence (Arcana, History, Investigation, Nature, or Religion) check,
+Back: You make an Intelligence (Arcana, History, Investigation, Nature, or Religion) check.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1768688977734-->
 END%%

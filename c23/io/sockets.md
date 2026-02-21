@@ -486,14 +486,6 @@ END%%
 
 %%ANKI
 Basic
-Which C function is usually invoked before `socket`?
-Back: `getaddrinfo`
-Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
-<!--ID: 1754489695721-->
-END%%
-
-%%ANKI
-Basic
 Which C function is usually invoked after `socket`?
 Back: `bind`
 Reference: Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.

@@ -8,7 +8,9 @@ tags:
 
 ## Overview
 
-An **arithmetic sequence** $(a_n)_{n \geq 0}^d$ is a sequence in which each term differs by a constant $d$. Given initial term $a$, it has recursive definition $$a_n = a_{n-1} + d \text{ with } a_0 = a$$ and closed formula $$a_n = a + nd.$$
+An **arithmetic sequence** $(a_n)_{n \geq 0}^d$ is a sequence in which each term differs by a constant $d$. Given initial term $a$, it has recursive definition $$a_n = a_{n-1} + d \text{ with } a_0 = a$$
+
+and closed formula $a_n = a + nd$.
 
 %%ANKI
 Basic
@@ -73,6 +75,10 @@ Back: $a_n = a_0 + nd$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709664600170-->
 END%%
+
+## Partial Sums
+
+Let $(a_n)_{n \geq 0}$ be an arithmetic sequence. Then $$\large \sum_{k=0}^n a_k = \frac{(a_0 + a_n)(n + 1)}{2}$$
 
 %%ANKI
 Basic

@@ -924,7 +924,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for a computation model to be polynomially equivalent to another?
-Back: The former can simulate the latter with only a polynomial different in running time.
+Back: They can simulate one another with only a polynomial difference in running time.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766252096630-->
 END%%
@@ -1008,7 +1008,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $t(n) \geq n$ and $b \geq 1$ is an integer. What identity is used to show $t(n)b^{t(n)} = 2^{O(t(n))}$?
+Suppose $t(n) \geq n$ and $b \geq 1$ is an integer. What identity is used to show the following? $$t(n)b^{t(n)} = 2^{O(t(n))}$$
 Back: $x = 2^{\lg{x}}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766239056292-->
