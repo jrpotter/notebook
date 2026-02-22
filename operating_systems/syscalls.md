@@ -38,7 +38,7 @@ END%%
 %%ANKI
 Basic
 On Linux systems, what C function can be used to invoke the loader?
-Back: `execve()`
+Back: `execve`
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: c23 linker::loader os::linux
 <!--ID: 1741298168029-->

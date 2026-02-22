@@ -186,7 +186,71 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1735074143690-->
 END%%
 
-## Operations
+## Classifications
+
+There are a number of different names given to functions exhibiting certain properties.
+
+### Elementary
+
+A function is said to be **elementary** if it cannot be obtained from polynomials, exponentials, logarithms, or (inverse) trigonometric functions in a finite number of steps using addition, subtraction, multiplication, division, or composition.
+
+%%ANKI
+Basic
+A function composed of what four other kind of functions is still considered elementary?
+Back: Polynomials, exponentials, logarithms, or (inverse) trigonometric functions.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+END%%
+
+%%ANKI
+Basic
+What algebraic operations can be used to create elementary functions from other elementary functions?
+Back: Addition, subtraction, multiplication, and division.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+END%%
+
+%%ANKI
+Basic
+What non-algebraic operation can be used to create elementary functions from other elementary functions?
+Back: Composition.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+END%%
+
+%%ANKI
+Basic
+Is $f(x) = \sin(x^2) + \log{x}$ considered an elementary function? If not, why?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+END%%
+
+%%ANKI
+Basic
+Is $f(x) = \arctan{x^{-1}}$ considered an elementary function? If not, why?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+END%%
+
+%%ANKI
+Basic
+Is $f(x) = \int_0^x t^{-1} \,dt$ considered an elementary function? If not, why?
+Back: Yes. In this case, $f(x) = \ln{x} + C$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+END%%
+
+%%ANKI
+Basic
+Is $f(x) = \int_0^x e^{-t^2} \,dt$ considered an elementary function? If not, why?
+Back: No. It cannot be evaluated directly in terms of other elementary functions.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+END%%
+
+%%ANKI
+Basic
+Is $f(x) = \int_0^x \sin{t} \,dt$ considered an elementary function? If not, why?
+Back: Yes. In this case, $f(x) = -\cos{x} + C$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+END%%
+
+### Operation
 
 An **operation** on some set (say) $S$ is a function with "signature" $S \times \cdots \times S \rightarrow S$. More precisely, an $n$-ary operation on $S$ is a function $S^n \rightarrow S$ where $n \geq 0$.
 
@@ -262,7 +326,7 @@ Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [htt
 <!--ID: 1729804914213-->
 END%%
 
-## Totality
+### Total
 
 A function $F \colon A \rightarrow B$ is said to be **total** if every element of $A$ maps to an element of $B$. If $F$ is only defined on a subset $S \subseteq A$, then $F$ is said to be **partial** with **domain of definition** $S$, denoted $F \colon A \rightharpoonup B$.
 
@@ -345,7 +409,7 @@ Reference: _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wik
 <!--ID: 1766080413584-->
 END%%
 
-## Implicitness
+### Implicit
 
 An **implicit function** is a function defined by an [[algebra/index|implicit equation]] that relates one of the variables (considered the value of the function) with the others (considered as the arguments).
 
@@ -365,7 +429,7 @@ Reference: _Wikipedia_. “Implicit function.” November 30, 2025. [https://en.
 <!--ID: 1768594332813-->
 END%%
 
-## Periodicity
+### Periodic
 
 A function $f$ is **periodic** with **period** $p$ if $f(t + p) = f(t)$ for all $t$ in the domain of $f$ and $p$ is the smallest positive number that has this property.
 
@@ -401,9 +465,9 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1749994457987-->
 END%%
 
-## Symmetries
+### Odd
 
-A function $f$ is said to be **odd** if $-f(x) = f(-x)$ for all $x$ in $f$'s domain. Likewise, $f$ is said to be **even** if $f(x) = f(-x)$ for all $x$ in $f$'s domain.
+A function $f$ is said to be **odd** if $-f(x) = f(-x)$ for all $x$ in $f$'s domain.
 
 %%ANKI
 Basic
@@ -420,6 +484,35 @@ Back: Symmetry about the origin.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1746023817967-->
 END%%
+
+%%ANKI
+Basic
+If $f$ is odd, $f(-x)$ equals what?
+Back: $-f(x)$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746023817976-->
+END%%
+
+%%ANKI
+Basic
+With respect to functions, how were the terms "even" and "odd" likely derived?
+Back: $f(x) = x^n$ exhibits even or odd properties when $n$ is even or odd respectively.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746024124733-->
+END%%
+
+
+%%ANKI
+Basic
+When is $f(x) = x^n$ an odd function?
+Back: When $n$ is an odd integer.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1746024124742-->
+END%%
+
+### Even
+
+A function $f$ is said to be **even** if $f(x) = f(-x)$ for all $x$ in $f$'s domain.
 
 %%ANKI
 Basic
@@ -447,34 +540,10 @@ END%%
 
 %%ANKI
 Basic
-If $f$ is odd, $f(-x)$ equals what?
-Back: $-f(x)$
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1746023817976-->
-END%%
-
-%%ANKI
-Basic
-With respect to functions, how were the terms "even" and "odd" likely derived?
-Back: $f(x) = x^n$ exhibits even or odd properties when $n$ is even or odd respectively.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1746024124733-->
-END%%
-
-%%ANKI
-Basic
 When is $f(x) = x^n$ an even function?
 Back: When $n$ is an even integer.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1746024124740-->
-END%%
-
-%%ANKI
-Basic
-When is $f(x) = x^n$ an odd function?
-Back: When $n$ is an odd integer.
-Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
-<!--ID: 1746024124742-->
 END%%
 
 ## Bijectivity

@@ -630,7 +630,7 @@ END%%
 
 ### Implicit Differentiation
 
-Implicit differentiation refers to the differentiation of an [[algebra/functions#Implicitness|implicit function]]. They leverage the [[#Chain Rule|chain rule]] by maintaining that the value of the function is defined in terms of the others as arguments.
+Implicit differentiation refers to the differentiation of an [[algebra/functions#Implicit|implicit function]]. They leverage the [[#Chain Rule|chain rule]] by maintaining that the value of the function is defined in terms of the others as arguments.
 
 %%ANKI
 Basic
