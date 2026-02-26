@@ -811,6 +811,7 @@ Let $A$, $B$, and $C$ be arbitrary sets. Then
 * $A \subseteq B \Rightarrow A \cup C \subseteq B \cup C$,
 * $A \subseteq B \Rightarrow A \cap C \subseteq B \cap C$,
 * $A \subseteq B \Rightarrow \bigcup A \subseteq \bigcup B$
+* $A \subseteq B \Rightarrow A \times C \subseteq B \times C$
 
 %%ANKI
 Basic
@@ -860,13 +861,9 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1717073536985-->
 END%%
 
-In addition,
-
-* $A \subseteq B \Rightarrow A \times C \subseteq B \times C$
-
 %%ANKI
 Basic
-What monotonicity property does the Cartesian product satisfy?
+What monotonicity property of $\subseteq$ does the Cartesian product satisfy?
 Back: $A \subseteq B \Rightarrow A \times C \subseteq B \times C$
 Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 <!--ID: 1718069881786-->

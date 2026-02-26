@@ -199,6 +199,7 @@ Basic
 A function composed of what four other kind of functions is still considered elementary?
 Back: Polynomials, exponentials, logarithms, or (inverse) trigonometric functions.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1771856805804-->
 END%%
 
 %%ANKI
@@ -206,6 +207,7 @@ Basic
 What algebraic operations can be used to create elementary functions from other elementary functions?
 Back: Addition, subtraction, multiplication, and division.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1771856805809-->
 END%%
 
 %%ANKI
@@ -213,6 +215,7 @@ Basic
 What non-algebraic operation can be used to create elementary functions from other elementary functions?
 Back: Composition.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1771856805815-->
 END%%
 
 %%ANKI
@@ -220,6 +223,7 @@ Basic
 Is $f(x) = \sin(x^2) + \log{x}$ considered an elementary function? If not, why?
 Back: Yes.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1771856805820-->
 END%%
 
 %%ANKI
@@ -227,6 +231,7 @@ Basic
 Is $f(x) = \arctan{x^{-1}}$ considered an elementary function? If not, why?
 Back: Yes.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1771856805825-->
 END%%
 
 %%ANKI
@@ -234,6 +239,7 @@ Basic
 Is $f(x) = \int_0^x t^{-1} \,dt$ considered an elementary function? If not, why?
 Back: Yes. In this case, $f(x) = \ln{x} + C$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1771856805832-->
 END%%
 
 %%ANKI
@@ -241,6 +247,7 @@ Basic
 Is $f(x) = \int_0^x e^{-t^2} \,dt$ considered an elementary function? If not, why?
 Back: No. It cannot be evaluated directly in terms of other elementary functions.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1771856805838-->
 END%%
 
 %%ANKI
@@ -248,6 +255,7 @@ Basic
 Is $f(x) = \int_0^x \sin{t} \,dt$ considered an elementary function? If not, why?
 Back: Yes. In this case, $f(x) = -\cos{x} + C$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1771856805844-->
 END%%
 
 ### Operation

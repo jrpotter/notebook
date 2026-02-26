@@ -8,11 +8,7 @@ tags:
 
 ## Overview
 
-Let $A$ and $B$ be languages. We say $A$ is **(generally) reducible** to $B$ if a decider for $B$ can be used to construct a decider for $A$. This is denoted as $A \leq B$.
-
-![[general-reducibility.png]]
-
-Suppose $A \leq B$. If $B$ is decidable, then $A$ is decidable. If $A$ is undecidable, then $B$ is undecidable.
+A **reduction** is a way of converting one problem into another in such a way that a solution to the second problem can be used to solve the first problem.
 
 %%ANKI
 Cloze
@@ -37,17 +33,17 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1765290725806-->
 END%%
 
-%%ANKI
-Basic
-Suppose $A$ is reducible to $B$. What kind of reducibility is assumed?
-Back: General reducibility.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1766000984045-->
-END%%
+## Turing Reductions
+
+Let $A$ and $B$ be languages. We say $A$ is **Turing reducible** to $B$ if a decider for $B$ can be used to construct a decider for $A$. This is denoted as $A \leq_T B$.
+
+![[general-reducibility.png]]
+
+Suppose $A \leq_T B$. If $B$ is decidable, then $A$ is decidable. If $A$ is undecidable, then $B$ is undecidable.
 
 %%ANKI
 Basic
-What does it mean for $A$ to be (generally) reducible to $B$?
+What does it mean for $A$ to be Turing reducible to $B$?
 Back: A decider of $B$ can be used to construct a decider of $A$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766000984054-->
@@ -55,22 +51,22 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ is reducible to $B$. How is this denoted?
-Back: As $A \leq B$.
+Suppose $A$ is Turing reducible to $B$. How is this denoted?
+Back: As $A \leq_T B$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766000984057-->
 END%%
 
 %%ANKI
 Cloze
-If {1:$A$} reduces to {1:$B$}, we can use a decider for {2:$B$} to decide {2:$A$}.
+If {1:$A$} is Turing reducible to {1:$B$}, we can use a decider for {2:$B$} to decide {2:$A$}.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765290725797-->
 END%%
 
 %%ANKI
 Basic
-Suppose $A$ reduces to $B$. Then decidability of which implies decidability of the other?
+Suppose $A$ is Turing reducible to $B$. Then decidability of which implies decidability of the other?
 Back: If $B$ is decidable, then so is $A$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765290725814-->
@@ -78,7 +74,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ reduces to $B$. If $A$ is decidable, why is $B$ decidable?
+Suppose $A$ is Turing reducible to $B$. If $A$ is decidable, why is $B$ decidable?
 Back: N/A. This is not necessarily the case.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765290725822-->
@@ -86,7 +82,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ reduces to $B$. If $B$ is decidable, why is $A$ decidable?
+Suppose $A$ is Turing reducible to $B$. If $B$ is decidable, why is $A$ decidable?
 Back: Because the method for deciding $B$ can be used to decide $A$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765290725829-->
@@ -94,7 +90,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ reduces to $B$. Then undecidability of which implies undecidability of the other?
+Suppose $A$ is Turing reducible to $B$. Then undecidability of which implies undecidability of the other?
 Back: If $A$ is undecidable, then so is $B$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765290725837-->
@@ -102,7 +98,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ reduces to $B$. If $A$ is undecidable, why is $B$ undecidable?
+Suppose $A$ is Turing reducible to $B$. If $A$ is undecidable, why is $B$ undecidable?
 Back: Because otherwise the method for deciding $B$ could be used to decide $A$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765290725844-->
@@ -110,7 +106,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ reduces to $B$. If $B$ is undecidable, why is $A$ undecidable?
+Suppose $A$ is Turing reducible to $B$. If $B$ is undecidable, why is $A$ undecidable?
 Back: N/A. This is not necessarily the case.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765290725851-->
@@ -118,7 +114,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be a language. Is $A$ reducible to $\overline{A}$?
+Let $A$ be a language. Is $A$ Turing reducible to $\overline{A}$?
 Back: Yes.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765997128770-->
@@ -126,7 +122,7 @@ END%%
 
 %%ANKI
 Basic
-Let $A$ be a language. *Why* is $A$ reducible to $\overline{A}$?
+Let $A$ be a language. *Why* is $A$ Turing reducible to $\overline{A}$?
 Back: If I have a decider for $\overline{A}$, then I can construct a decider for $A$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765997128780-->
@@ -136,14 +132,14 @@ END%%
 Basic
 What kind of reduction is the following a depiction of?
 ![[general-reducibility.png]]
-Back: General reductions.
+Back: Turing reductions.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1765997128783-->
 END%%
 
 %%ANKI
 Basic
-Suppose $A \leq B$. If $B$ is Turing-recognizable, why is $A$ Turing-recognizable?
+Suppose $A \leq_T B$. If $B$ is Turing-recognizable, why is $A$ Turing-recognizable?
 Back: N/A. This is not necessarily the case.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766000984059-->
@@ -151,15 +147,23 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A \leq B$. If $A$ is Turing-unrecognizable, why is $B$ Turing-unrecognizable?
+Suppose $A \leq_T B$. If $A$ is Turing-unrecognizable, why is $B$ Turing-unrecognizable?
 Back: N/A. This is not necessarily the case.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766000984062-->
 END%%
 
-## Many-One
+%%ANKI
+Basic
+Which of recognizability or decidability are Turing reductions used to determine?
+Back: Decidability.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1772027304005-->
+END%%
 
-Let $A$ be a language over $\Sigma$ and $B$ be a language over $\Gamma$. A **many-one reduction** (or **mapping reduction**) from $A$ to $B$ is a [[algorithms/index#Computable Functions|computable function]] $f \colon \Sigma^* \rightarrow \Gamma^*$ such that, for all inputs $w$, $$w \in A \Leftrightarrow f(w) \in B.$$
+## Mapping Reductions
+
+Let $A$ be a language over $\Sigma$ and $B$ be a language over $\Gamma$. A **mapping reduction** (or **many-one reduction**) from $A$ to $B$ is a [[algorithms/index#Computable Functions|computable function]] $f \colon \Sigma^* \rightarrow \Gamma^*$ such that, for all inputs $w$, $$w \in A \Leftrightarrow f(w) \in B.$$
 
 If such a function exists, we write $A \leq_m B$.
 
@@ -422,25 +426,25 @@ END%%
 
 %%ANKI
 Basic
-What kind of reducibility does Sipser highlight is useful for proving Turing-unrecognizability?
+What kind of reduction does Sipser emphasize is useful for proving Turing-unrecognizability?
 Back: Mapping/many-one reductions.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766000984065-->
 END%%
 
-### Polynomial Time
-
-Language $A$ is **polynomial time (mapping) reducible** to language $B$ if a polynomial time computable function $f \colon \Sigma^* \rightarrow \Gamma^*$ exists, where for every $w$, $$w \in A \Leftrightarrow f(w) \in B.$$
-
-If such a function exists, we write $A \leq_P B$.
-
 %%ANKI
 Basic
-What more general kind of reduction is a polynomial time reduction?
-Back: A mapping reduction.
+Which of recognizability or decidability are mapping reductions used to determine?
+Back: Both.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1766634081083-->
+<!--ID: 1772027304017-->
 END%%
+
+### Polynomial Time
+
+Language $A$ is **polynomial time mapping reducible** to language $B$ if a polynomial time computable function $f \colon \Sigma^* \rightarrow \Gamma^*$ exists, where for every $w$, $$w \in A \Leftrightarrow f(w) \in B.$$
+
+If such a function exists, we write $A \leq_m^P B$.
 
 %%ANKI
 Cloze
@@ -474,7 +478,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ is polynomial time reducible to $B$. What kind of mathematical entity is $A$?
+Suppose $A$ is polynomial time mapping reducible to $B$. What kind of mathematical entity is $A$?
 Back: A language.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081104-->
@@ -482,15 +486,7 @@ END%%
 
 %%ANKI
 Basic
-A polynomial time reduction is the efficient analog of what more general concept?
-Back: Mapping reductions.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1766634081107-->
-END%%
-
-%%ANKI
-Basic
-Suppose $A$ is polynomial time reducible to $B$. What kind of mathematical entity is $B$?
+Suppose $A$ is polynomial time mapping reducible to $B$. What kind of mathematical entity is $B$?
 Back: A language.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081109-->
@@ -498,15 +494,15 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ is polynomial time reducible to $B$. How is this denoted?
-Back: As $A \leq_P B$.
+Suppose $A$ is polynomial time mapping reducible to $B$. How is this denoted?
+Back: As $A \leq_m^P B$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081112-->
 END%%
 
 %%ANKI
 Basic
-With respect to reducibility, what does $A \leq_P B$ denote?
+With respect to reducibility, what does $A \leq_m^P B$ denote?
 Back: Language $A$ is polynomial time many-one reducible to language $B$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081115-->
@@ -514,71 +510,71 @@ END%%
 
 %%ANKI
 Cloze
-Suppose $A \leq_P B$. If {1:$A$} is undecidable, then {1:$B$} is undecidable.
+Suppose $A \leq_m^P B$. If {1:$A$} is undecidable, then {1:$B$} is undecidable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081118-->
 END%%
 
 %%ANKI
 Cloze
-Suppose $B \leq_P A$. If {1:$A$} is decidable, then {1:$B$} is decidable.
+Suppose $B \leq_m^P A$. If {1:$A$} is decidable, then {1:$B$} is decidable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081121-->
 END%%
 
 %%ANKI
 Cloze
-Suppose $B \leq_P A$. If {1:$B$} is undecidable, then {1:$A$} is undecidable.
+Suppose $B \leq_m^P A$. If {1:$B$} is undecidable, then {1:$A$} is undecidable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081123-->
 END%%
 
 %%ANKI
 Cloze
-Suppose $A \leq_P B$. If {1:$B$} is decidable, then {1:$A$} is decidable.
+Suppose $A \leq_m^P B$. If {1:$B$} is decidable, then {1:$A$} is decidable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081126-->
 END%%
 
 %%ANKI
 Cloze
-Suppose $A \leq_P B$. If {1:$A$} is Turing-unrecognizable, then {1:$B$} is Turing-unrecognizable.
+Suppose $A \leq_m^P B$. If {1:$A$} is Turing-unrecognizable, then {1:$B$} is Turing-unrecognizable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081129-->
 END%%
 
 %%ANKI
 Cloze
-Suppose $B \leq_P A$. If {1:$A$} is Turing-recognizable, then {1:$B$} is Turing-recognizable.
+Suppose $B \leq_m^P A$. If {1:$A$} is Turing-recognizable, then {1:$B$} is Turing-recognizable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081132-->
 END%%
 
 %%ANKI
 Cloze
-Suppose $B \leq_P A$. If {1:$B$} is Turing-unrecognizable, then {1:$A$} is Turing-unrecognizable.
+Suppose $B \leq_m^P A$. If {1:$B$} is Turing-unrecognizable, then {1:$A$} is Turing-unrecognizable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081135-->
 END%%
 
 %%ANKI
 Cloze
-Suppose $A \leq_P B$. If {1:$B$} is Turing-recognizable, then {1:$A$} is Turing-recognizable.
+Suppose $A \leq_m^P B$. If {1:$B$} is Turing-recognizable, then {1:$A$} is Turing-recognizable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081138-->
 END%%
 
 %%ANKI
 Basic
-Suppose $A \leq_P B$. How do $\overline{A}$ and $\overline{B}$ relate?
-Back: $\overline{A} \leq_P \overline{B}$
+Suppose $A \leq_m^P B$. How do $\overline{A}$ and $\overline{B}$ relate?
+Back: $\overline{A} \leq_m^P \overline{B}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081142-->
 END%%
 
 %%ANKI
 Basic
-*Why* is it that $A \leq_P B$ if and only if $\overline{A} \leq_P \overline{B}$?
+*Why* is it that $A \leq_m^P B$ if and only if $\overline{A} \leq_m^P \overline{B}$?
 Back: The definition of polynomial time mapping reductions uses a biconditional.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081145-->
@@ -586,7 +582,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A \leq_P B$. If $A$ is co-Turing-recognizable, what can be said about $B$?
+Suppose $A \leq_m^P B$. If $A$ is co-Turing-recognizable, what can be said about $B$?
 Back: N/A.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081149-->
@@ -594,7 +590,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A \leq_P B$. If $A$ is co-Turing-unrecognizable, what can be said about $B$?
+Suppose $A \leq_m^P B$. If $A$ is co-Turing-unrecognizable, what can be said about $B$?
 Back: $B$ is co-Turing-unrecognizable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081153-->
@@ -602,7 +598,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A \leq_P B$. If $B$ is co-Turing-recognizable, what can be said about $A$?
+Suppose $A \leq_m^P B$. If $B$ is co-Turing-recognizable, what can be said about $A$?
 Back: $A$ is co-Turing-recognizable.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081157-->
@@ -610,7 +606,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A \leq_P B$. If $B$ is co-Turing-unrecognizable, what can be said about $A$?
+Suppose $A \leq_m^P B$. If $B$ is co-Turing-unrecognizable, what can be said about $A$?
 Back: N/A.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081161-->
@@ -618,7 +614,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $f$ is a polynomial time reduction from $A$ to $B$. Then $w \in A$ if and only if what?
+Suppose $f$ is a polynomial time mapping reduction from $A$ to $B$. Then $w \in A$ if and only if what?
 Back: $f(w) \in B$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081165-->
@@ -626,7 +622,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $f$ is a polynomial time reduction from $A$ to $B$. Then $w \not\in A$ if and only if what?
+Suppose $f$ is a polynomial time mapping reduction from $A$ to $B$. Then $w \not\in A$ if and only if what?
 Back: $f(w) \not\in B$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081168-->
@@ -634,16 +630,16 @@ END%%
 
 %%ANKI
 Basic
-How is $A \leq_P B$ pronounced?
-Back: As "$A$ is polynomial time (mapping/many-one) reducible to $B$".
+How is $A \leq_m^P B$ pronounced?
+Back: As "$A$ is polynomial time mapping reducible to $B$".
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081171-->
 END%%
 
 %%ANKI
 Basic
-What does notation $\leq$ suggest in "$A \leq_P B$"?
-Back: Mapping reducibility defines an ordering.
+What does notation $\leq$ suggest in "$A \leq_m^P B$"?
+Back: Polynomial time mapping reducibility defines an ordering.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081173-->
 END%%

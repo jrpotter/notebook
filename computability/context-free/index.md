@@ -21,6 +21,8 @@ A (nondeterministic) **pushdown automaton** (PDA) is a $6$-tuple $\langle Q, \Si
 
 A [[computability/index|language]] is called **context-free** if a PDA recognizes it.
 
+PDAs are often described with two different **acceptance modes**: by final state and by empty stack. We assume acceptance by final state. The two are shown to be equivalent.
+
 %%ANKI
 Basic
 From a recognition perspective, what is a context-free language?
@@ -547,6 +549,62 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1765128774925-->
 END%%
 
+%%ANKI
+Basic
+What are the two acceptance modes often attributed to PDAs?
+Back: Acceptance by final state or empty stack.
+Reference: _Wikipedia_. “Pushdown automaton.” December 19, 2025. [https://en.wikipedia.org/w/index.php?title=Pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Pushdown_automaton&oldid=1328364944).
+<!--ID: 1771940702661-->
+END%%
+
+%%ANKI
+Basic
+If unspecified, what acceptance mode is a PDA assumed to have?
+Back: Acceptance by final state.
+Reference: _Wikipedia_. “Pushdown automaton.” December 19, 2025. [https://en.wikipedia.org/w/index.php?title=Pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Pushdown_automaton&oldid=1328364944).
+<!--ID: 1771940702671-->
+END%%
+
+%%ANKI
+Basic
+With respect to PDAs, which of acceptance by final state or empty stack is more powerful?
+Back: N/A. They are equivalent in power.
+Reference: _Wikipedia_. “Pushdown automaton.” December 19, 2025. [https://en.wikipedia.org/w/index.php?title=Pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Pushdown_automaton&oldid=1328364944).
+<!--ID: 1771940702674-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a PDA to accept by final state?
+Back: It accepts if its input is empty and it is in a designated final state.
+Reference: _Wikipedia_. “Pushdown automaton.” December 19, 2025. [https://en.wikipedia.org/w/index.php?title=Pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Pushdown_automaton&oldid=1328364944).
+<!--ID: 1771940702677-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a PDA to accept by empty stack?
+Back: It accepts if its input is empty and its stack is empty.
+Reference: _Wikipedia_. “Pushdown automaton.” December 19, 2025. [https://en.wikipedia.org/w/index.php?title=Pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Pushdown_automaton&oldid=1328364944).
+<!--ID: 1771940702681-->
+END%%
+
+%%ANKI
+Basic
+Which PDA acceptance mode is considered "internal memory"?
+Back: Acceptance by final state.
+Reference: _Wikipedia_. “Pushdown automaton.” December 19, 2025. [https://en.wikipedia.org/w/index.php?title=Pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Pushdown_automaton&oldid=1328364944).
+<!--ID: 1771940702685-->
+END%%
+
+%%ANKI
+Basic
+Which PDA acceptance mode is considered "external memory"?
+Back: Acceptance by empty stack.
+Reference: _Wikipedia_. “Pushdown automaton.” December 19, 2025. [https://en.wikipedia.org/w/index.php?title=Pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Pushdown_automaton&oldid=1328364944).
+<!--ID: 1771940702690-->
+END%%
+
 ## Context-Free Grammar
 
 A **context-free grammar** (CFG) is a $4$-tuple $\langle V, \Sigma, R, S \rangle$ where
@@ -923,6 +981,22 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1767234842457-->
 END%%
 
+%%ANKI
+Basic
+How is regular expression $(a \mid b)^*$ expressed as a CFG?
+Back: $$S \rightarrow aS \mid bS \mid \epsilon$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771856805744-->
+END%%
+
+%%ANKI
+Basic
+How is regular expression $a^+$ expressed as a CFG?
+Back: $$\begin{align*} S & \rightarrow aA \\ A & \rightarrow aA \mid \epsilon \end{align*}$$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771856805752-->
+END%%
+
 ### Ambiguity
 
 A string $w$ is derived **ambiguously** in context-free grammar $G$ if it has two or more different leftmost derivations. Grammar $G$ is **ambiguous** if it generates some string ambiguously.
@@ -1044,6 +1118,58 @@ With respect to context-free grammars, the term "inherently ambiguous" is reserv
 Back: CFLs that can only be generated from ambiguous CFGs.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1747171295684-->
+END%%
+
+%%ANKI
+Basic
+Suppose string $w$ is derived ambiguously from CFG $G$. What kind of derivation are we concerned with?
+Back: Leftmost derivations.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771856805758-->
+END%%
+
+%%ANKI
+Basic
+What about the definition of a "string derived ambiguously" was arbitrarily chosen?
+Back: The decision to define ambiguity in terms of leftmost derivations.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771892665280-->
+END%%
+
+%%ANKI
+Basic
+If a string $w$ generated by CFG $G$ has more than one leftmost derivations, how many rightmost derivations must it have?
+Back: Also more than one.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771892665285-->
+END%%
+
+%%ANKI
+Basic
+Consider the following grammar. What are the two leftmost derivations of $x + x \times x$? $$S \rightarrow S + S \mid S \times S \mid x$$
+Back:
+1. $S \implies S + S \implies x + S \implies x + S \times S \implies x + x \times S \implies x + x \times x$
+2. $S \implies S \times S \implies S + S \times S \implies x + S \times S \implies x + x \times S \implies x + x \times x$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771892665287-->
+END%%
+
+%%ANKI
+Basic
+Consider the following grammar. What are the two rightmost derivations of $x + x \times x$? $$S \rightarrow S + S \mid S \times S \mid x$$
+Back:
+1. $S \implies S + S \implies S + S \times S \implies S + S \times x \implies S + x \times x \implies x + x \times x$
+2. $S \implies S \times S \implies S \times x \implies S + S \times x \implies S + x \times x \implies x + x \times x$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771892665290-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the choice of leftmost or rightmost derivations considered arbitary in the definition of CFG ambiguity?
+Back: The order in which variables are substituted does not matter.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771892665292-->
 END%%
 
 ### Reductions
@@ -1623,6 +1749,14 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1748052528180-->
 END%%
 
+%%ANKI
+Basic
+A CFG in CNF ensures what kind of parse tree?
+Back: A binary parse tree.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771856805764-->
+END%%
+
 ## Closure Operations
 
 Let $A$ and $B$ be context free languages over alphabet $\Sigma$. Such languages are closed under the following:
@@ -1778,6 +1912,14 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1765135310534-->
 END%%
 
+%%ANKI
+Basic
+Suppose $C$ is a context-free language. Is $CC$ context-free?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771856805770-->
+END%%
+
 ## Pumping Lemma
 
 Let $L$ be a context-free language. Then there exists a **pumping constant** $p$ where, if $s$ is any string in $L$ of at least length $p$, then $s$ can be written as $s = uvxyz$ such that
@@ -1785,6 +1927,10 @@ Let $L$ be a context-free language. Then there exists a **pumping constant** $p$
 1. $uv^ixy^iz \in L$ for any integer $i \geq 0$,
 2. $\lvert vy \rvert > 0$, and
 3. $\lvert vxy \rvert \leq p$.
+
+The stronger variant of this lemma allows one to strengthen condition 2 as follows:
+
+2. $v \neq \epsilon$ and $y \neq \epsilon$.
 
 %%ANKI
 Basic
@@ -1963,6 +2109,62 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1760644262684-->
 END%%
 
+%%ANKI
+Basic
+Define $C = \{ ww \mid w \in \{0, 1\}^* \}$. Is $C$ context-free?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771856805783-->
+END%%
+
+%%ANKI
+Basic
+How do we show $C = \{ ww \mid w \in \{0, 1\}^* \}$ is not context-free?
+Back: By using the pumping lemma.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771856805788-->
+END%%
+
+%%ANKI
+Basic
+Which pumping lemma has a stronger variant?
+Back: That of CFLs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1772025074892-->
+END%%
+
+%%ANKI
+Basic
+In what way can the following theorem be made stronger?
+
+> Let $L$ be a context-free language. Then there exists a **pumping constant** $p$ where, if $s$ is any string in $L$ of at least length $p$, then $s$ can be written as $s = uvxyz$ such that
+> 
+> 1. $uv^ixy^iz \in L$ for any integer $i \geq 0$,
+> 2. $\lvert vy \rvert > 0$, and
+> 3. $\lvert vxy \rvert \leq p$.
+
+Back: Condition 2 can be strengthened to say $\lvert v \rvert > 0$ and $\lvert y \rvert > 0$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1772025074898-->
+END%%
+
+%%ANKI
+Basic
+In the typical proof of the pumping lemma for CFLs, the pigeonhole principle is exploited to do what?
+Back: Repeat a variable in a derivation at least twice.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1772025074901-->
+END%%
+
+%%ANKI
+Basic
+In the typical proof of the strong variant of the pumping lemma for CFLs, the pigeonhole principle is exploited to do what?
+Back: Repeat a variable in a derivation at least three times.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1772025074904-->
+END%%
+
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+* _Wikipedia_. “Pushdown automaton.” December 19, 2025. [https://en.wikipedia.org/w/index.php?title=Pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Pushdown_automaton&oldid=1328364944).

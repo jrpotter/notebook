@@ -475,6 +475,128 @@ Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards
 <!--ID: 1770081820199-->
 END%%
 
+## Damage
+
+Each weapon, spell, and damaging monster ability specifies the damage it deals. When attacking with a weapon, one adds the same ability modifier used for the attack roll to the total damage. When attacking with a spell, the spell indicates which dice to roll and whether to add any modifiers.
+
+If there's a penalty to the damage, it's possible to deal 0 damage but not negative damage. 
+
+If the attack roll is a natural 20, the attack is considered a **Critical Hit**. The attack's damage dice is rolled twice. Relevant modifiers are added once as normal.
+
+%%ANKI
+Cloze
+An {attack} roll is followed by a {damage} roll.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069736238-->
+END%%
+
+%%ANKI
+Basic
+When attacking with a weapon, what bonuses are added to the damage roll?
+Back: The same ability modifier used for the attack roll.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069736241-->
+END%%
+
+%%ANKI
+Basic
+Typically speaking, what bonus is included with attack rolls but not damage rolls?
+Back: The creature's proficiency bonus.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069736244-->
+END%%
+
+%%ANKI
+Basic
+When attacking with a spell, what bonuses are added to the damage roll?
+Back: Those specified by the spell.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069736247-->
+END%%
+
+%%ANKI
+Basic
+How does a player character land a Critical Hit?
+Back: Roll a natural 20 on the attack roll.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069736251-->
+END%%
+
+%%ANKI
+Basic
+What is the minimum amount of damage that can be inflicted?
+Back: 0 damage.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069736254-->
+END%%
+
+%%ANKI
+Basic
+How is damage calculated on a Critical Hit?
+Back: By rolling damage dice and adding relevant modifiers once like normal.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772070251803-->
+END%%
+
+### Resistance
+
+If a creature has **resistance** to a certain damage type, damage of that type is halved against them (round down). If a creature has **vulnerability** to a certain damage type, damage of that type is doubled against them.
+
+Modifiers to damage are applied in the following order:
+
+1. Adjustments such as bonuses, penalites, or multipliers.
+2. Resistance.
+3. Vulnerability.
+
+%%ANKI
+Basic
+Suppose a creature has Resistance to Fire damage. What does this mean?
+Back: Fire damage made against the creature is halved (round down).
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772070879253-->
+END%%
+
+%%ANKI
+Basic
+Suppose a creature has Vulnerability to Fire damage. What does this mean?
+Back: Fire damage made against the creature is doubled.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772070879261-->
+END%%
+
+%%ANKI
+Cloze
+{Resistance} to a damage type is the opposite of {Vulnerability} to a damage type.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772070879265-->
+END%%
+
+%%ANKI
+Basic
+Which of Resistance or Vulnerability is applied first?
+Back: Resistance.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772070879268-->
+END%%
+
+%%ANKI
+Basic
+Suppose a creature has Resistance to all damage and Vulnerability to Fire damage. If it takes 28 Cold damage, how is the actual damage calculated?
+Back: As 28 Cold damage divided by 2 (round down) for 14 Cold damage.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772070879272-->
+END%%
+
+%%ANKI
+Basic
+Suppose a creature has Resistance to all damage and Vulnerability to Fire damage. If it takes 28 Fire damage, how is the actual damage calculated?
+Back:
+1. Resistance: The 28 Fire damage is divided by 2 (round down).
+2. Vulnerability: The 14 Fire damage is doubled by 2 back to 28.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772070879275-->
+END%%
+
 ## Movement
 
 A creature can move up to a distance equal to their **Speed** on their turn. If moving on **Difficult Terrain**, every foot of movement costs 1 extra foot.

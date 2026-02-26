@@ -159,6 +159,34 @@ Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards
 <!--ID: 1769477131323-->
 END%%
 
+## Hit Points
+
+**Hit Points** represent durability and the will to live. The Hit Point maximum is the number of Hit Points one has when uninjured. If a creature has half their Hit Points or fewer, they are **Bloodied**.
+
+%%ANKI
+Basic
+What do Hit Points represent?
+Back: One's durability and will to live.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069306200-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a creature to be Bloodied?
+Back: They have half their hit points or fewer.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069306207-->
+END%%
+
+%%ANKI
+Basic
+What term describes a creature with half their Hit Points or fewer?
+Back: Bloodied.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069736228-->
+END%%
+
 ## Conditions
 
 A **condition** is an alteration of a creature's capabilities as a result of a spell, a class feature, a monster's attack, or some other effect. Most conditions are impairments but some are advantageous.
@@ -206,9 +234,21 @@ A **condition** is an alteration of a creature's capabilities as a result of a s
 * **Prone**. You experience the following effects:
 	* *Restricted Movement*. Your only movement options are to crawl or to spend an amount of movement equal to half your Speed (round down). If your Speed is 0, you cannot right yourself.
 	* *Attacks Affected*. You have Disadvantage on attack rolls. An attack roll against you has Advantage if the attacker is within 5 feet of you. Otherwise, that attack roll has Disadvantage.
-* **Restrained**.
-* **Stunned**.
-* **Unconscious**.
+* **Restrained**. You experience the following effects:
+	* *Speed 0*. Your Speed is 0 and can't increase.
+	* *Attacks Affected*. Attack rolls against you have Advantage, and your attack rolls have Disadvantage.
+	* *Saving Throws Affected*. You have Disadvantage on Dexterity saving throws.
+* **Stunned**. You experience the following effects:
+	* *Incapacitated*. You have the Incapacitated condition.
+	* *Saving Throws Affected*. You automatically fail Strength and Dexterity saving throws.
+	* *Attacks Affected*. Attack rolls against you have Advantage.
+* **Unconscious**. You experience the following effects:
+	* *Inert*. You have the Incapacitated and Prone conditions, and you drop whatever you're holding. When this condition ends, you remain Prone.
+	* *Speed 0*. Your Speed is 0 and can't increase.
+	* *Attacks Affected*. Attack rolls against you have Advantage.
+	* *Saving Throws Affected*. You automatically fail Strength and Dexterity saving throws.
+	* *Automatic Critical Hits*. Any attack roll that hits you is a Critical Hit if the attacker is within 5 feet of you.
+	* *Unaware*. You're unaware of your surroundings.
 
 %%ANKI
 Basic
@@ -704,7 +744,7 @@ END%%
 %%ANKI
 Basic
 With respect to the Prone condition, what is the *Attacks Affected* effect?
-Back: The creature has Disadvantage on attack rolls. Creatures attack it have Advantage if within 5 feet and otherwise have Disadvantage.
+Back: The creature has Disadvantage on attack rolls. Creatures attack it with Advantage if within 5 feet and otherwise have Disadvantage.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771426430516-->
 END%%
@@ -723,6 +763,143 @@ Suppose you attack a creature with the Prone condition. When do you roll with Di
 Back: When you are more than 5 feet away from it.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771426430529-->
+END%%
+
+%%ANKI
+Cloze
+A creature with the {Restrained} condition experiences the following:
+1. {*Speed 0*}
+2. {*Saving Throws Affected*}
+3. {*Attacks Affected*}
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117856-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Restrained condition, what is the *Attacks Affected* effect?
+Back: Attack rolls made by the creature are with Disadvantage. Attacks made against the creature have Advantage.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117864-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Restrained condition, what is the *Saving Throws Affected* effect?
+Back: The creature has Disadvantage on Dexterity saving throws.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117871-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Restrained condition, what is the *Speed 0* effect?
+Back: The creature Speed 0 and it can't be increased.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117879-->
+END%%
+
+%%ANKI
+Cloze
+A creature with the {Stunned} condition experiences the following:
+1. {*Incapacitated*}
+2. {*Saving Throws Affected*}
+3. {*Attacks Affected*}
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117885-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Stunned condition, what is the *Attacks Affected* effect?
+Back: Attack rolls against the creature have Advantage.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117891-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Stunned condition, what is the *Saving Throws Affected* effect?
+Back: The creature automatically fails Strength and Dexterity saving throws.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117896-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Stunned condition, what is the *Incapacitated* effect?
+Back: The creature has the Incapacitated condition.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117900-->
+END%%
+
+%%ANKI
+Cloze
+A creature with the {Unconscious} condition experiences the following:
+1. {*Inert*}
+2. {*Speed 0*}
+3. {*Saving Throws Affected*}
+4. {*Attacks Affected*}
+5. {*Automatic Critical Hits*}
+6. {*Unaware*}
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117905-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Unconscious condition, what other conditions does the *Inert* effect encompass?
+Back: Incapacitated and Prone.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117909-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Unconscious condition, what is the *Inert* effect?
+Back: The creature is Incapacitated and Prone. They drop anything they were holding.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117913-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Unconscious condition, what is the *Speed 0* effect?
+Back: The creature has Speed 0 and it can't be increased.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117917-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Unconscious condition, what is the *Attacks Affected* effect?
+Back: Attack rolls against the creature have Advantage.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117921-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Unconscious condition, what is the *Saving Throws Affected* effect?
+Back: The creature automatically fails Strength and Dexterity saving throws.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117924-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Unconscious condition, what is the *Automatic Critical Hits* effect?
+Back: Attack rolls that hit the creature are Critical Hits if the attacker is within 5 feet.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117928-->
+END%%
+
+%%ANKI
+Basic
+With respect to the Unconscious condition, what is the *Unaware* effect?
+Back: The creature is unaware of their surroundings.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772069117931-->
 END%%
 
 ### Exhaustion

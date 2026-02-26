@@ -124,6 +124,121 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1713580109089-->
 END%%
 
+## Completing the Square
+
+**Completing the square** is a technique for converting a quadratic polynomial of the form $ax^2 + bx + c$ to the form $a(x - h)^2 + k$ for some values of $h$ and $k$.
+
+![[completing-square.png]]
+
+%%ANKI
+Basic
+What is the known oldest method for computing quadratic polynomials?
+Back: Completing the square.
+Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
+<!--ID: 1772042516787-->
+END%%
+
+%%ANKI
+Basic
+What technique did the Babylonians use to solve general quadratic equations?
+Back: Completing the square.
+Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
+<!--ID: 1772042516794-->
+END%%
+
+%%ANKI
+Basic
+Completing the square is a technique used to solve polynomials of what general form?
+Back: $ax^2 + bx + c$
+Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
+<!--ID: 1772042516798-->
+END%%
+
+%%ANKI
+Cloze
+Completing the square converts quadratics of form {$ax^2 + bx + c$} into form {$a(x - h)^2 + k$}.
+Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
+<!--ID: 1772042516802-->
+END%%
+
+%%ANKI
+Basic
+How is quadratic $ax^2 + bx + c$ first modified to prepare to complete the square?
+Back: By rewriting it as $x^2 + \frac{b}{a}x + \frac{c}{a}$.
+Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
+<!--ID: 1772042516807-->
+END%%
+
+%%ANKI
+Basic
+How is the technique of completing the square visualized?
+Back:
+![[completing-square.png]]
+Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
+<!--ID: 1772042516811-->
+END%%
+
+%%ANKI
+Basic
+Complete the square on $ax^2 + bx + c$. What are the dimensions of the orange rectangle on the LHS?
+![[completing-square-unlabeled.png]]
+Back: $$x \times x$$
+Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
+<!--ID: 1772042516815-->
+END%%
+
+%%ANKI
+Basic
+Complete the square on $ax^2 + bx + c$. What are the dimensions of the green rectangle on the LHS?
+![[completing-square-unlabeled.png]]
+Back: $$x \times \frac{b}{a}$$
+Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
+<!--ID: 1772042516820-->
+END%%
+
+%%ANKI
+Basic
+Complete the square on $ax^2 + bx + c$. What are the dimensions of the orange rectangle on the RHS?
+![[completing-square-unlabeled.png]]
+Back: $$x \times x$$
+Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
+<!--ID: 1772042516823-->
+END%%
+
+%%ANKI
+Basic
+Complete the square on $ax^2 + bx + c$. What are the dimensions of the green rectangles on the RHS?
+![[completing-square-unlabeled.png]]
+Back: $$x \times \frac{b}{2a}$$
+Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
+<!--ID: 1772042516827-->
+END%%
+
+%%ANKI
+Basic
+Complete the square on $ax^2 + bx + c$. What are the dimensions of the blue rectangle on the RHS?
+![[completing-square-unlabeled.png]]
+Back: $$\frac{b}{a} \times \frac{b}{a}$$
+Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
+<!--ID: 1772042516831-->
+END%%
+
+%%ANKI
+Basic
+After simplifying, which terms do we "complete the square of" in quadratic $x^2 + 6x - 6$?
+Back: $x^2 + 6x$
+Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
+<!--ID: 1772042516835-->
+END%%
+
+%%ANKI
+Basic
+After simplifying, which terms do we "complete the square of" in quadratic $3x^2 + 2x - 1$?
+Back: $x^2 + \frac{2}{3}x$
+Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
+<!--ID: 1772042516839-->
+END%%
+
 ## Algebraic Numbers
 
 The set of polynomials with coefficients in $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, and $\mathbb{C}$ are denoted by $\mathbb{Z}[x]$, $\mathbb{Q}[x]$, $\mathbb{R}[x]$, and $\mathbb{C}[x]$ respectively.
@@ -342,3 +457,4 @@ END%%
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+* _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).

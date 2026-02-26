@@ -226,7 +226,7 @@ An angle **subtended by a line segment** at an arbitrary vertex is formed by the
 
 %%ANKI
 Cloze
-A {1:line segment} is to a {2:line} whereas an {2:arc} is to a {1:curve}.
+A {line segment} is to a {line} whereas an {arc} is to a {curve}.
 Reference: “Subtended Angle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Subtended_angle](https://en.wikipedia.org/w/index.php?title=Subtended_angle&oldid=1268107647).
 <!--ID: 1740669677984-->
 END%%

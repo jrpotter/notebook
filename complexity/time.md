@@ -291,7 +291,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A \leq_P B$. If $B \in \text{P}$, what can be said about $A$?
+Suppose $A \leq_m^P B$. If $B \in \text{P}$, what can be said about $A$?
 Back: $A \in \text{P}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766635617476-->
@@ -299,7 +299,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A \leq_P B$. If $A \in \text{P}$, what can be said about $B$?
+Suppose $A \leq_m^P B$. If $A \in \text{P}$, what can be said about $B$?
 Back: N/A.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766635617483-->
@@ -569,7 +569,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A \leq_P B$. If $B \in \text{NP}$, what can be said about $A$?
+Suppose $A \leq_m^P B$. If $B \in \text{NP}$, what can be said about $A$?
 Back: $A \in \text{NP}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766719820326-->
@@ -577,7 +577,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A \leq_P B$. If $A \in \text{NP}$, what can be said about $B$?
+Suppose $A \leq_m^P B$. If $A \in \text{NP}$, what can be said about $B$?
 Back: N/A.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766719820336-->
@@ -597,7 +597,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $A$ is $\text{NP}$-complete and $A \leq_P B$. When would $B$ also be $\text{NP}$-complete?
+Suppose $A$ is $\text{NP}$-complete and $A \leq_m^P B$. When would $B$ also be $\text{NP}$-complete?
 Back: When $B \in \text{NP}$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766719983674-->
@@ -616,7 +616,7 @@ Basic
 Suppose language $B$ is $\text{NP}$-complete. In FOL, what two conditions must $B$ satisfy?
 Back:
 1. $B \in \text{NP}$ and
-2. $\forall A \in \text{NP}, A \leq_P B$
+2. $\forall A \in \text{NP}, A \leq_m^P B$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766719983684-->
 END%%
@@ -750,7 +750,7 @@ END%%
 
 %%ANKI
 Basic
-Consider expression $\text{CNF-SAT} \leq_P \text{CLIQUE}$. How is $\text{CNF-SAT}$ defined?
+Consider expression $\text{CNF-SAT} \leq_m^P \text{CLIQUE}$. How is $\text{CNF-SAT}$ defined?
 Back: As $\text{CNF-SAT} = \{ \phi \mid \phi \text{ is a satisfiable cnf-formula} \}$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766713762328-->
@@ -758,7 +758,7 @@ END%%
 
 %%ANKI
 Basic
-Consider expression $\text{CNF-SAT} \leq_P \text{CLIQUE}$. How is $\text{CLIQUE}$ defined?
+Consider expression $\text{CNF-SAT} \leq_m^P \text{CLIQUE}$. How is $\text{CLIQUE}$ defined?
 Back: As $\text{CLIQUE} = \{ \langle G, k \rangle \mid G \text{ is an undirected graph with a } k\text{-clique} \}$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766713762331-->
@@ -766,7 +766,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be the standard reduction of $\text{CNF-SAT} \leq_P \text{CLIQUE}$. How many vertices are in the following graph? $$f((x \lor y \lor z) \land (\neg x \lor x \lor z))$$
+Let $f$ be the standard reduction of $\text{CNF-SAT} \leq_m^P \text{CLIQUE}$. How many vertices are in the following graph? $$f((x \lor y \lor z) \land (\neg x \lor x \lor z))$$
 Back: Six.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766713762335-->
@@ -774,7 +774,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\phi$ be a cnf-formula and $f$ be the standard reduction of $\text{CNF-SAT} \leq_P \text{CLIQUE}$. How many vertices are in $f(\phi)$?
+Let $\phi$ be a cnf-formula and $f$ be the standard reduction of $\text{CNF-SAT} \leq_m^P \text{CLIQUE}$. How many vertices are in $f(\phi)$?
 Back: One for each literal in $\phi$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766713762338-->
@@ -782,7 +782,7 @@ END%%
 
 %%ANKI
 Basic
-Let $f$ be the standard reduction of $\text{CNF-SAT} \leq_P \text{CLIQUE}$. What sized clique are we trying to find in the following? $$f((x \lor y \lor z) \land (\neg x \lor x \lor z))$$
+Let $f$ be the standard reduction of $\text{CNF-SAT} \leq_m^P \text{CLIQUE}$. What sized clique are we trying to find in the following? $$f((x \lor y \lor z) \land (\neg x \lor x \lor z))$$
 Back: A $2$-clique.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766714292433-->
@@ -790,7 +790,7 @@ END%%
 
 %%ANKI
 Basic
-Let $\phi$ be a cnf-formula and $f$ be the standard reduction of $\text{CNF-SAT} \leq_P \text{CLIQUE}$. What sized clique are we trying to find in $f(\phi)$?
+Let $\phi$ be a cnf-formula and $f$ be the standard reduction of $\text{CNF-SAT} \leq_m^P \text{CLIQUE}$. What sized clique are we trying to find in $f(\phi)$?
 Back: A $k$-clique where $k$ is the number of clauses in $\phi$.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766714292436-->
@@ -837,7 +837,7 @@ END%%
 %%ANKI
 Basic
 How is the Cook-Levin theorem used to show $3\text{-SAT}$ is $\text{NP}$-complete?
-Back: The theorem states $\text{SAT}$ is $\text{NP}$-complete and it is known that $$\text{SAT} \leq_P 3\text{-SAT}.$$
+Back: The theorem states $\text{SAT}$ is $\text{NP}$-complete and it is known that $$\text{SAT} \leq_m^P 3\text{-SAT}.$$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766720125101-->
 END%%
@@ -845,7 +845,7 @@ END%%
 %%ANKI
 Basic
 How is the Cook-Levin theorem used to show $\text{CLIQUE}$ is $\text{NP}$-complete?
-Back: The theorem states $\text{SAT}$ is $\text{NP}$-complete and it is known that $$\text{SAT} \leq_P 3\text{-SAT} \leq_P \text{CLIQUE}.$$
+Back: The theorem states $\text{SAT}$ is $\text{NP}$-complete and it is known that $$\text{SAT} \leq_m^P 3\text{-SAT} \leq_m^P \text{CLIQUE}.$$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766720125113-->
 END%%

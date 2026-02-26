@@ -126,7 +126,7 @@ END%%
 
 ## Pseudosections
 
-There are three special pseudosections specified in the section header table that do not have entries in the section header table. Note pseudosections only exist in relocatable object files.
+There are three special pseudosections specified in the symbol table that do not have entries in the section header table. Pseudosections only exist in relocatable object files.
 
 %%ANKI
 Basic
@@ -155,9 +155,9 @@ END%%
 %%ANKI
 Basic
 In what region of a relocatable ELF file can references to pseudosections be found?
-Back: The section header table.
+Back: The symbol table.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-<!--ID: 1735343812821-->
+<!--ID: 1772027667052-->
 END%%
 
 %%ANKI

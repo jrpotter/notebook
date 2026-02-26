@@ -28,6 +28,8 @@ For every $q \in Q$, $a \in \Sigma$, and $x \in \Gamma$, exactly one of the valu
 
 A [[computability/index|language]] is called **deterministic context-free** if a DPDA recognizes it.
 
+DPDAs are often described with two different **acceptance modes**: by final state and by empty stack. We assume acceptance by final state. Acceptance by empty stack is strictly less powerful, only recognizing prefix-free DCFLs.
+
 %%ANKI
 Basic
 From a recognition perspective, what is a deterministic context-free language?
@@ -447,6 +449,62 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1766808746317-->
 END%%
 
+%%ANKI
+Basic
+What are the two acceptance modes often attributed to DPDAs?
+Back: Acceptance by final state or empty stack.
+Reference: _Wikipedia_. “Deterministic pushdown automaton.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton&oldid=1293906725).
+<!--ID: 1771940702701-->
+END%%
+
+%%ANKI
+Basic
+If unspecified, what acceptance mode is a DPDA assumed to have?
+Back: Acceptance by final state.
+Reference: _Wikipedia_. “Deterministic pushdown automaton.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton&oldid=1293906725).
+<!--ID: 1771940702705-->
+END%%
+
+%%ANKI
+Basic
+With respect to DPDAs, which of acceptance by final state or empty stack is more powerful?
+Back: Acceptance by final state.
+Reference: _Wikipedia_. “Deterministic pushdown automaton.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton&oldid=1293906725).
+<!--ID: 1771940702709-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a DPDA to accept by final state?
+Back: It accepts if its input is empty and it is in a designated final state.
+Reference: _Wikipedia_. “Deterministic pushdown automaton.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton&oldid=1293906725).
+<!--ID: 1771940702713-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a DPDA to accept by empty stack?
+Back: It accepts if its input is empty and its stack is empty.
+Reference: _Wikipedia_. “Deterministic pushdown automaton.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton&oldid=1293906725).
+<!--ID: 1771940702718-->
+END%%
+
+%%ANKI
+Basic
+Which DPDA acceptance mode is considered "internal memory"?
+Back: Acceptance by final state.
+Reference: _Wikipedia_. “Deterministic pushdown automaton.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton&oldid=1293906725).
+<!--ID: 1771940702724-->
+END%%
+
+%%ANKI
+Basic
+Which DPDA acceptance mode is considered "external memory"?
+Back: Acceptance by empty stack.
+Reference: _Wikipedia_. “Deterministic pushdown automaton.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton&oldid=1293906725).
+<!--ID: 1771940702729-->
+END%%
+
 ## Deterministic CFG
 
 A **deterministic context-free grammar** (DCFG) is a [[computability/context-free/index#Grammar|CFG]] such that every [[computability/context-free/index#Valid Strings|valid string]] has a forced handle.
@@ -504,7 +562,7 @@ END%%
 %%ANKI
 Basic
 With respect to prefix-free DCFLs, what is the generating model?
-Back: DCFGs.
+Back: LR($0$) grammars, i.e. DCFGs.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1767233100952-->
 END%%
@@ -512,9 +570,17 @@ END%%
 %%ANKI
 Basic
 With respect to DCFLs, what is the recognizing model?
-Back: Deterministic pushdown automata.
+Back: DPDAs with acceptance by final state.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1767233100955-->
+END%%
+
+%%ANKI
+Basic
+With respect to prefix-free DCFLs, what is the recognizing model?
+Back: DPDAs with acceptance by empty stack.
+Reference: _Wikipedia_. “Deterministic pushdown automaton.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton&oldid=1293906725).
+<!--ID: 1771940702735-->
 END%%
 
 %%ANKI
@@ -523,6 +589,38 @@ Which of DPDAs or DCFGs are more powerful?
 Back: DPDAs.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1767234842472-->
+END%%
+
+%%ANKI
+Basic
+Which of DPDAs or LR($0$) grammars are more powerful?
+Back: DPDAs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771940702741-->
+END%%
+
+%%ANKI
+Basic
+Which of DPDAs or LR($1$) grammars are more powerful?
+Back: N/A. They are equivalent in power.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1771940702747-->
+END%%
+
+%%ANKI
+Basic
+Which of DPDAs (by empty stack) or LR($0$) grammars are more powerful?
+Back: N/A. They are equivalent in power.
+Reference: _Wikipedia_. “Deterministic pushdown automaton.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton&oldid=1293906725).
+<!--ID: 1771940702753-->
+END%%
+
+%%ANKI
+Basic
+Which of DPDAs (by empty stack) or LR($1$) grammars are more powerful?
+Back: LR($1$) grammars.
+Reference: _Wikipedia_. “Deterministic pushdown automaton.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton&oldid=1293906725).
+<!--ID: 1771940702759-->
 END%%
 
 %%ANKI
@@ -627,6 +725,8 @@ $K$'s states correspond to the dotted rules of $G$. It has a special start state
 * An **$\epsilon$-move** appears for all rules $B \rightarrow uCv$ and $C \rightarrow r$: $$\large \boxed{B \rightarrow u \mathop\bullet C v} \;\overset{\epsilon}{\longrightarrow}\; \boxed{C \rightarrow \mathop\bullet r}$$
 
 The accept states are all $\boxed{\boxed{B \rightarrow u \mathop\bullet}}$ corresponding to a completed rule. They have no outgoing transitions.
+
+Generalizations of the $DK$-test can be used to determine if a grammar is an $LR(k)$ grammar or not. This is known as a **$DK$-test with lookahead $k$** or just $DK_k$-test.
 
 %%ANKI
 Basic
@@ -860,10 +960,34 @@ END%%
 
 %%ANKI
 Basic
-Let $G$ be a CFG. What test is used to determine if $G$ is deterministic?
+Let $G$ be a CFG. What test is used to determine if $G$ is an LR(0) grammar?
 Back: The $DK$-test.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1767650547140-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be a CFG. What test is used to determine if $G$ is an LR(1) grammar?
+Back: The $DK_1$-test.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1772025074907-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be a CFG. What test is used to determine if $G$ is an LR($k$) grammar?
+Back: The $DK_k$-test.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1772025074910-->
+END%%
+
+%%ANKI
+Basic
+Let $k \geq 0$ be an integer. What name is given to "$DK_k$-test"?
+Back: The $DK$-test with lookahead $k$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1772025074913-->
 END%%
 
 ## LR Grammar
@@ -1124,3 +1248,4 @@ END%%
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+* _Wikipedia_. “Deterministic pushdown automaton.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton](https://en.wikipedia.org/w/index.php?title=Deterministic_pushdown_automaton&oldid=1293906725).

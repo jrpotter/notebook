@@ -330,7 +330,7 @@ END%%
 
 %%ANKI
 Basic
-Which type punning strategy typically can't be used with allocated objects?
+Which type punning strategy typically shouldn't be used with allocated objects?
 Back: `memcpy`/`memmove`
 Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
 <!--ID: 1740189444691-->
@@ -338,10 +338,50 @@ END%%
 
 %%ANKI
 Basic
-*Why* is it not necessarily safe to use `memcpy` when type punning allocated objects?
-Back: `memcpy` changes the object's effective type.
+*Why* is it unwise to use `memcpy` with allocated objects?
+Back: `memcpy` changes the allocated object's effective type.
 Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
 <!--ID: 1740189444696-->
+END%%
+
+%%ANKI
+Basic
+*Why* does `memcpy` change the effective type of an allocated object?
+Back: Because allocated objects do not have a declared type.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1772028261756-->
+END%%
+
+%%ANKI
+Basic
+When does `memcpy`/`memmove` change the effective type of an object?
+Back: When copying into an object having no declared type.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1772028261764-->
+END%%
+
+%%ANKI
+Basic
+Which C objects have no declared type?
+Back: Allocated objects.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1772028261767-->
+END%%
+
+%%ANKI
+Basic
+Can an object's effective type change over time?
+Back: Yes.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1772028261771-->
+END%%
+
+%%ANKI
+Basic
+Can an object's declared type change over time?
+Back: No.
+Reference: Stefan, “Type-Based Alias Analysis in C,” accessed February 21, 2025, [https://stefansf.de/post/type-based-alias-analysis/](https://stefansf.de/post/type-based-alias-analysis/).
+<!--ID: 1772028261775-->
 END%%
 
 ## Bibliography

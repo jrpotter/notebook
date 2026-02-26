@@ -122,8 +122,8 @@ END%%
 
 %%ANKI
 Basic
-Let $E(x) = e^x$. What strategy is used to show $E'(x) = E(x)$?
-Back: Implicitly differentiate $y = \ln{x}$ to get $dy / dx$.
+Let $E(x) = e^x$. How do you prove $E'(x) = E(x)$ using natural logarithms?
+Back: Implicitly differentiate $\ln{y} = x$ to get $dy / dx$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1768595658696-->
 END%%

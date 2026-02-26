@@ -165,7 +165,7 @@ Why is the following header file unsafe to include in multiple different TUs?
 // add.h
 void add(int a, int b) { return a + b; }
 ```
-Back: Because then we'd have multiple definitions of the `add()` function.
+Back: Because then we'd have multiple definitions of the `add` function.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1757180490416-->
 END%%
