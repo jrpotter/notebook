@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_journal/2026-02-25.md",
+                "file": "_journal/2026-02-26.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-25"
+              "title": "2026-02-26"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "square",
+                "query": "1755918866368",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_journal/2026-02-25.md",
+                "file": "_journal/2026-02-26.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-02-25"
+              "title": "Outline of 2026-02-26"
             }
           }
         ],
@@ -172,13 +172,27 @@
   },
   "active": "9e4abb69cbefb007",
   "lastOpenFiles": [
+    "calculus/limits.md",
+    "calculus/taylor.md",
+    "calculus/indeterminate_forms.md",
+    "complexity/asymptotic.md",
+    "calculus/primitives.md",
+    "_journal/2026-02-26.md",
+    "complexity/recurrences.md",
+    "algorithms/index.md",
+    "memory/virtual.md",
+    "linkers/elf.md",
     "dnd/combat.md",
-    "_journal/2026-02-25.md",
+    "dnd/conditions.md",
     "dnd/creatures.md",
+    "dnd/abilities.md",
+    "dnd/exploration.md",
+    "_journal/2026-02/2026-02-02.md",
+    "_journal/2026/2026-01/2026-01-26.md",
+    "_journal/2026-02/2026-02-25.md",
     "algebra/polynomials.md",
     "algebra/images/completing-square-unlabeled.png",
     "algebra/images/completing-square.png",
-    "calculus/taylor.md",
     "arithmetic/exponentials.md",
     "c23/types/effective.md",
     "linkers/relocatable.md",
@@ -186,20 +200,6 @@
     "computability/reducibility.md",
     "algebra/sets.md",
     "trigonometry/index.md",
-    "computability/context-free/index.md",
-    "computability/context-free/deterministic.md",
-    "_journal/2026-02/2026-02-24.md",
-    "algorithms/index.md",
-    "programming/index.md",
-    "c23/types/functions.md",
-    "c23/io/streams.md",
-    "_journal/2026-02/2026-02-23.md",
-    "computability/index.md",
-    "data_structures/trees/index.md",
-    "data_structures/trees/binary_tree.md",
-    "_journal/2026-02/2026-02-22.md",
-    "_journal/2026-02/2026-02-21.md",
-    "_journal/2026-02/2026-02-20.md",
     "_journal/2026-02",
     "_journal/2026",
     "network/physical",

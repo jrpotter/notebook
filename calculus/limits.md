@@ -566,6 +566,195 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1753807878274-->
 END%%
 
+## o-notation
+
+Assume $g(x) \neq 0$ for all $x \neq a$ in some interval containing $a$. The notation $$f(x) = o(g(x)) \quad\text{as}\quad x \rightarrow a$$
+
+means that $$\lim_{x \rightarrow a} \frac{f(x)}{g(x)} = 0.$$
+
+It follows that:
+
+* $o(g(x)) \pm o(g(x)) = o(g(x))$ as $x \rightarrow a$.
+* $o(cg(x)) = o(g(x))$ as $x \rightarrow a$.
+* $f(x) \cdot o(g(x)) = o(f(x)g(x))$ as $x \rightarrow a$.
+* $o(o(g(x))) = o(g(x))$ as $x \rightarrow a$.
+
+%%ANKI
+Basic
+Suppose $f(x) = o(g(x))$ as $x \rightarrow a$. What conditions is $g(x)$ presumed to satisfy?
+Back: $g(x) \neq 0$ for all $x \neq a$ in some interval containing $a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772138028929-->
+END%%
+
+%%ANKI
+Basic
+Suppose $g(x) \neq 0$ for all $x \neq a$ in an interval containing $a$. What does the following mean? $$f(x) = o(g(x)) \quad\text{as}\quad x \rightarrow a$$
+Back: That $$\lim_{x \rightarrow a} \frac{f(x)}{g(x)} = 0.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772138028932-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = o(g(x))$ as $x \rightarrow a$. Which function is of smaller order than the other as $x \rightarrow a$?
+Back: $f(x)$ is of smaller order than $g(x)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772138028935-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten using $o$-notation? $$\lim_{x \rightarrow a} \frac{g(x)}{f(x)} = 0$$
+Back: $g(x) = o(f(x))$ as $x \rightarrow a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772138028937-->
+END%%
+
+%%ANKI
+Basic
+How is the following rewritten using $o$-notation? $$\lim_{h \rightarrow 0} \frac{f(h)}{g(h)} = 0$$
+Back: $f(h) = o(g(h))$ as $h \rightarrow 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772138028940-->
+END%%
+
+%%ANKI
+Basic
+How is "$f(x) = o(g(x))$ as $x \rightarrow a$" pronounced?
+Back: As $f(x)$ is little-oh of $g(x)$ as $x$ approaches $a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772138028943-->
+END%%
+
+%%ANKI
+Cloze
+$f(x) = o(1)$ as $x \rightarrow a$ means {1:$f(x)$} $\rightarrow$ {1:$0$} as $x \rightarrow a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772138028946-->
+END%%
+
+%%ANKI
+Cloze
+$f(x) = o(x)$ as $x \rightarrow 0$ means {1:$f(x) / x$} $\rightarrow$ {1:$0$} as $x \rightarrow 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772138028949-->
+END%%
+
+%%ANKI
+Basic
+Suppose both $f_1(x) = o(g(x))$ and $f_2(x) = o(g(x))$ as $x \rightarrow a$. What can be said about $f_1(x) + f_2(x)$?
+Back: $(f_1 + f_2)(x) = o(g(x))$ as $x \rightarrow a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772139673103-->
+END%%
+
+%%ANKI
+Basic
+Suppose both $f_1(x) = o(g(x))$ and $f_2(x) = o(g(x))$ as $x \rightarrow a$. What can be said about $f_1(x) - f_2(x)$?
+Back: $(f_1 - f_2)(x) = o(g(x))$ as $x \rightarrow a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772139673113-->
+END%%
+
+%%ANKI
+Basic
+Which property of limits is used to show $o(g(x)) + o(g(x)) = o(g(x))$?
+Back: The addition property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772139673117-->
+END%%
+
+%%ANKI
+Basic
+Which property of limits is used to show $o(g(x)) - o(g(x)) = o(g(x))$?
+Back: The subtraction property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772139673121-->
+END%%
+
+%%ANKI
+Basic
+How is the following interpreted in plain English? $$o(g(x)) + o(g(x)) = o(g(x)) \quad\text{as}\quad x \rightarrow a$$
+Back: Adding two functions of order smaller than $g(x)$ results in a function of order smaller than $g(x)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772139673125-->
+END%%
+
+%%ANKI
+Basic
+How is the following interpreted in plain English? $$o(g(x)) - o(g(x)) = o(g(x)) \quad\text{as}\quad x \rightarrow a$$
+Back: Subtracting two functions of order smaller than $g(x)$ results in a function of order smaller than $g(x)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772140663075-->
+END%%
+
+%%ANKI
+Basic
+Under what condition(s) does $o(cg(x)) = o(g(x))$ as $x \rightarrow a$?
+Back:
+1. $c \neq 0$
+2. $g(x) \neq 0$ for all $x \neq a$ in an interval containing $a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772139673128-->
+END%%
+
+%%ANKI
+Basic
+Let $c \neq 0$. Which property of limits is used to show $o(cg(x)) = o(g(x))$?
+Back: The scalar multiplication property.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772139673132-->
+END%%
+
+%%ANKI
+Basic
+Suppose $c \neq 0$ and $f(x) = o(cg(x))$ as $x \rightarrow a$. How is this simplified?
+Back: $f(x) = o(g(x))$ as $x \rightarrow a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772139673136-->
+END%%
+
+%%ANKI
+Basic
+Let $c \neq 0$. How is the following interpreted in plain English? $$o(cg(x)) = o(g(x)) \quad\text{as}\quad x \rightarrow a$$
+Back: A function of order smaller than $cg(x)$ is of order smaller than $g(x)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772139673141-->
+END%%
+
+%%ANKI
+Basic
+Suppose $h(x) = f(x) \cdot o(g(x))$. How is this simplified?
+Back: As $h(x) = o(f(x)g(x))$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772140663084-->
+END%%
+
+%%ANKI
+Basic
+How is the following interpreted in plain English? $$f(x) \cdot o(g(x)) = o(f(x)g(x)) \quad\text{as}\quad x \rightarrow a$$
+Back: Multiplying $f(x)$ by a function of smaller order than $g(x)$ results in a function of order smaller than $f(x)g(x)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772140663087-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(x) = o(o(g(x)))$. How is this simplified?
+Back: As $f(x) = o(g(x))$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772140663090-->
+END%%
+
+%%ANKI
+Basic
+How is the following interpreted in plain English? $$o(o(g(x))) = o(g(x)) \quad\text{as}\quad x \rightarrow a$$
+Back: A function of smaller order than another of smaller order than $g(x)$ is of smaller order than $g(x)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772140663092-->
+END%%
+
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

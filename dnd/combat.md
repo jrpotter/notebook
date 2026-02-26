@@ -243,10 +243,10 @@ The latter refers to a melee attack using one's body to damage, grapple, or shov
 
 * **Damage**. An attack roll is made against the target. The bonus equals the Strength modifier plus the [[dnd/index#Proficiency|Proficiency Bonus]].
 	* On a hit, the target takes Bludgeoning damage equal to 1 plus the Strength modifier.
-* **Grapple**. The target must succeed on a Strength or Dexterity saving throw (it chooses which). Otherwise it is [[creatures#Conditions|Grappled]].
+* **Grapple**. The target must succeed on a Strength or Dexterity saving throw (it chooses which). Otherwise it is [[dnd/conditions#Grappled|Grappled]].
 	* The DC for the saving throw and any escape attempts equals 8 plus the Strength modifier and Proficiency Bonus.
 	* This option is available only if the target is no more than one size larger than the attacker and the attack has a hand free.
-* **Shove**. The target must succeed on a Strength or Dexterity saving throw (it chooses which). Otherwise it is pushed 5 feet away or has the [[creatures#Conditions|Prone]] condition.
+* **Shove**. The target must succeed on a Strength or Dexterity saving throw (it chooses which). Otherwise it is pushed 5 feet away or has the [[dnd/conditions#Prone|Prone]] condition.
 	1. The DC for the saving throw equals 8 plus the Strength modifier and Proficiency Bonus.
 	2. This option is available only if the target is no more than one size larger than the attacker.
 
@@ -408,7 +408,7 @@ A **ranged attack** refers to an attack that happens over a distance. A ranged w
 * Normal Range. If a single range is specified, the attacker cannot target something beyond this range.
 * Long range. If two ranges are specified, attacks against targets further than the smaller range is made with Disadvantage. The attack cannot target something beyond the larger range.
 
-A ranged attack is rolled with Disadvantage if made against a creature that can see the attacker, is within 5 feet of the attacker, and is not [[creatures#Conditions|Incapacitated]].
+A ranged attack is rolled with Disadvantage if made against a creature that can see the attacker, is within 5 feet of the attacker, and is not [[dnd/conditions#Incapacitated|Incapacitated]].
 
 %%ANKI
 Basic
@@ -516,7 +516,7 @@ END%%
 
 %%ANKI
 Basic
-How does a player character land a Critical Hit?
+Under normal conditions, how does a player character land a Critical Hit?
 Back: Roll a natural 20 on the attack roll.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069736251-->
@@ -606,7 +606,7 @@ A creature may have special speeds such as Climb Speed, Fly Speed, or Swim Speed
 * **Climbing**.
 	* Every foot of movement costs 1 extra foot (2 extra feet in Difficult Terrain). This extra cost is ignored if the creature has a Climb Speed and uses it to climb.
 * **Flying**.
-	* While flying, you fall if you have the [[creatures#Conditions|Incapacitated]] condition, [[creatures#Conditions|Prone]] condition, or your Fly Speed is reduced to 0. You stay aloft in these conditions if you have the ability to hover.
+	* While flying, you fall if you have the [[dnd/conditions#Incapacitated|Incapacitated]] condition, [[dnd/conditions#Prone|Prone]] condition, or your Fly Speed is reduced to 0. You stay aloft in these conditions if you have the ability to hover.
 * **Swimming**.
 * **Jumping**.
 

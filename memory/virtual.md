@@ -1595,7 +1595,7 @@ END%%
 
 %%ANKI
 Basic
-Is a process's `.code` section shared or private?
+Is a process's `.text` section shared or private?
 Back: Private.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: os::linux
@@ -1604,7 +1604,7 @@ END%%
 
 %%ANKI
 Basic
-Is a process's `.code` section file-backed or demand-zero?
+Is a process's `.text` section file-backed or demand-zero?
 Back: File-backed.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: os::linux

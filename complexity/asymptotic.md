@@ -570,6 +570,8 @@ END%%
 
 $o$-notation refers to an upper bound that is not asymptotically tight. It is defined as set $$o(g(n)) = \{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq f(n) < cg(n) \}.$$
 
+Alternatively, we can express $o$-notation using limits. If $f(n) = o(g(n))$, then $$\lim_{n \rightarrow \infty} \frac{f(n)}{g(n)} = 0.$$
+
 %%ANKI
 Basic
 What kind of mathematical object is $o(g(n))$?
@@ -972,6 +974,8 @@ END%%
 ## ω-notation
 
 $\omega$-notation refers to a lower bound that is not asymptotically tight. It is defined as set $$\omega(g(n)) = \{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq cg(n) < f(n) \}.$$
+
+Alternatively, we can express $\omega$-notation using limits. If $f(n) = \omega(g(n))$, then $$\lim_{n \rightarrow \infty} \frac{f(n)}{g(n)} = \infty.$$
 
 %%ANKI
 Basic
