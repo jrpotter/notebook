@@ -269,6 +269,8 @@ If $f$ has a [[continuity|continuous]] [[derivatives|derivative]] of order $n + 
 
 where $$E_n(x; a) = \frac{1}{n!}\int_a^x (x - t)^n f^{(n + 1)}(t) \,dt.$$
 
+Using [[limits#o-notation|o-notation]], we can say that $$f(x) = T_nf(x; a) + o((x - a)^n).$$
+
 
 %%ANKI
 Basic
@@ -341,6 +343,38 @@ Back: $$e^x = T_3(e^x) + E_3(x)$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1771856805798-->
 END%%
+
+%%ANKI
+Basic
+How is Taylor's formula of $f(x)$ defined with a remainder using o-notation?
+Back: $$f(x) = T_nf(x; a) + o((x - a)^n)$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772294761159-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = T_nf(x; a) + E_n(x; a)$. How do we know $E_n(x; a) = o((x - a)^n)$?
+Back: We can define a closed interval around $a$ and know $E_n(x; a)$ is bound.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772294761168-->
+END%%
+
+### Common Examples
+
+In each of the following examples, we assume $x \rightarrow 0$. Notice the use of [[limits#o-notation|o-notation]]. $$\begin{align*}
+\frac{1}{1 - x} & = 1 + x + x^2 + \cdots + x^n + o(x^n) \\
+
+\ln{(1 + x)} & = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots + (-1)^{n - 1}\frac{x^n}{n} + o(x^n) \\
+
+e^x & = 1 + x + \frac{x^2}{2!} + \cdots + \frac{x^2}{n!} + o(x^n) \\
+
+\sin{x} & = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots + (-1)^{n-1} \frac{x^{2n - 1}}{(2n - 1)!} + o(x^{2n}) \\
+
+\cos{x} & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots + (-1)^n \frac{x^{2n}}{(2n)!} + o(x^{2n + 1}) \\
+
+\arctan{x} & = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots + (-1)^{n-1}\frac{x^{2n - 1}}{2n - 1} + o(x^{2n})
+\end{align*}$$
 
 ## Bibliography
 

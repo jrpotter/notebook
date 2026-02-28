@@ -1472,7 +1472,7 @@
     "_journal/2025-07-11.md": "828e1a48ca2cc873b7b02de215e29068",
     "_journal/2025-07/2025-07-10.md": "2a842977bb13a634ce4c64feb8fd410d",
     "geometry/curvature.md": "9f80263cdd29886e7d0b6aafd97bcf2d",
-    "calculus/limits.md": "435f40ce7c3e89b55df55aa02b9311bb",
+    "calculus/limits.md": "38880e8ba0bb87e0c76b4e0e21af8e9b",
     "_journal/2025-07-12.md": "55ae40960fc3bb841284e40a4c66d833",
     "_journal/2025-07/2025-07-11.md": "cd8e5414705e77e8fa0cefbe03098202",
     "networking/ip/class.md": "94b2c1dfcf8710d947768ba91f8849ac",
@@ -1528,7 +1528,7 @@
     "_journal/2025-08-02.md": "c237a676f64a904803c1fb58cecad9d3",
     "set/recursion.md": "92f9a38fe4c1bc0e7fbff250a96627e8",
     "_journal/2025-08/2025-08-01.md": "f8b49984d092121918bee1a9a2a71965",
-    "memory/virtual.md": "98f46b48e6003718617dc22616e763af",
+    "memory/virtual.md": "9e3b0e7652cda80a1460cd88cd004999",
     "_journal/2025-08-03.md": "29738bd25bb4dfa7fc0a231a96ec8966",
     "_journal/2025-08/2025-08-02.md": "c237a676f64a904803c1fb58cecad9d3",
     "_journal/2025-08-04.md": "01b1a6aa5e0c0205364f82e07521dbd8",
@@ -2236,7 +2236,7 @@
     "_journal/2025-12/2025-12-17.md": "440440eb31d9993ba8462a674fc81da8",
     "_journal/2025-12-19.md": "8431f95bdcd772d2b24eda7d43615135",
     "_journal/2025-12/2025-12-18.md": "750c84fbc3986212310c437e120d6a65",
-    "complexity/asymptotic.md": "33b6ee8ccb6825a4d54a8b519235dda2",
+    "complexity/asymptotic.md": "626af69d9a2058c2f270c5f81f111f16",
     "complexity/time.md": "5067d44622cac651fc7d2951d2833501",
     "_journal/2025-12-20.md": "db8e1342187ab59c4fe057c6039ec34b",
     "_journal/2025-12/2025-12-19.md": "8431f95bdcd772d2b24eda7d43615135",
@@ -2375,7 +2375,7 @@
     "geometry/hyperbolic.md": "6c195f8446597e533a988735605728fe",
     "_journal/2026-01-26.md": "69649d068c4f18573809cfac071def93",
     "_journal/2026-01/2026-01-25.md": "848164f3adc7f946d2416802fef0c3db",
-    "calculus/taylor.md": "0431bed56d0357a10bc797253aa063b3",
+    "calculus/taylor.md": "4704a41c2d2ae798ebf2abd8a10edf4f",
     "_journal/2026-01-27.md": "7c515c8198dc19c8cd2a3dc2c260acfb",
     "_journal/2026-01/2026-01-26.md": "181eed399bb58d2da20dfc938ecc26b0",
     "_journal/2026-01-28.md": "aa776c9773ffdbe3b8ebd3d329de330a",
@@ -2464,7 +2464,11 @@
     "_journal/2026-02/2026-02-24.md": "e4db03d8021e9efbda4037949f45314f",
     "dnd/conditions.md": "1b124b0e44321bc2f56f1f284ef88f60",
     "_journal/2026-02-26.md": "f2657898d4d46cdaaf92359f29354500",
-    "_journal/2026-02/2026-02-25.md": "44e008d6c2d24d3826b0ec8233c590f7"
+    "_journal/2026-02/2026-02-25.md": "44e008d6c2d24d3826b0ec8233c590f7",
+    "_journal/2026-02/2026-02-26.md": "f2657898d4d46cdaaf92359f29354500",
+    "_journal/2026-02-27.md": "f631046abb0913b99a0fecac52d29af2",
+    "_journal/2026-02-28.md": "6efb9b9c977cecf4b023ca4649abffdd",
+    "_journal/2026-02/2026-02-27.md": "792eb5140be36d25c53a8c81ed147942"
   },
   "fields_dict": {
     "Basic": [

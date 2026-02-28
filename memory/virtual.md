@@ -1361,7 +1361,7 @@ END%%
 %%ANKI
 Basic
 *Why* is it recommended the swap file is at least as large as physical memory?
-Back: Since otherwise the OS can allocate fewer virtual pages than physical pages.
+Back: Since otherwise the OS is unable to allocate more virtual pages than physical pages.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 Tags: os::linux
 <!--ID: 1755913121305-->

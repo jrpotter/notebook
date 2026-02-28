@@ -566,11 +566,11 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1753807878274-->
 END%%
 
-## o-notation
+## Asymptotics
 
-Assume $g(x) \neq 0$ for all $x \neq a$ in some interval containing $a$. The notation $$f(x) = o(g(x)) \quad\text{as}\quad x \rightarrow a$$
+### o-notation
 
-means that $$\lim_{x \rightarrow a} \frac{f(x)}{g(x)} = 0.$$
+Assume $g(x) \neq 0$ for all $x \neq a$ in some interval containing $a$. Notation $f(x) = o(g(x))$ as $x \rightarrow a$ means that $$\lim_{x \rightarrow a} \frac{f(x)}{g(x)} = 0.$$
 
 It follows that:
 
@@ -643,7 +643,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose both $f_1(x) = o(g(x))$ and $f_2(x) = o(g(x))$ as $x \rightarrow a$. What can be said about $f_1(x) + f_2(x)$?
+Let $f_1(x) = o(g(x))$ and $f_2(x) = o(g(x))$ as $x \rightarrow a$. What does $f_1(x) + f_2(x)$ equal?
 Back: $(f_1 + f_2)(x) = o(g(x))$ as $x \rightarrow a$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772139673103-->
@@ -651,7 +651,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose both $f_1(x) = o(g(x))$ and $f_2(x) = o(g(x))$ as $x \rightarrow a$. What can be said about $f_1(x) - f_2(x)$?
+Let $f_1(x) = o(g(x))$ and $f_2(x) = o(g(x))$ as $x \rightarrow a$. What does $f_1(x) - f_2(x)$ equal?
 Back: $(f_1 - f_2)(x) = o(g(x))$ as $x \rightarrow a$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772139673113-->
@@ -659,7 +659,7 @@ END%%
 
 %%ANKI
 Basic
-Which property of limits is used to show $o(g(x)) + o(g(x)) = o(g(x))$?
+Which property of limits is used to show $o(g(x)) + o(g(x)) = o(g(x))$ as $x \rightarrow a$?
 Back: The addition property.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772139673117-->
@@ -667,7 +667,7 @@ END%%
 
 %%ANKI
 Basic
-Which property of limits is used to show $o(g(x)) - o(g(x)) = o(g(x))$?
+Which property of limits is used to show $o(g(x)) - o(g(x)) = o(g(x))$ as $x \rightarrow a$?
 Back: The subtraction property.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772139673121-->
@@ -701,7 +701,7 @@ END%%
 
 %%ANKI
 Basic
-Let $c \neq 0$. Which property of limits is used to show $o(cg(x)) = o(g(x))$?
+Let $c \neq 0$. Which property of limits is used to show $o(cg(x)) = o(g(x))$ as $x \rightarrow a$?
 Back: The scalar multiplication property.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772139673132-->
@@ -709,7 +709,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $c \neq 0$ and $f(x) = o(cg(x))$ as $x \rightarrow a$. How is this simplified?
+Let $c \neq 0$ and $f(x) = o(cg(x))$ as $x \rightarrow a$. How is this simplified?
 Back: $f(x) = o(g(x))$ as $x \rightarrow a$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772139673136-->
@@ -725,7 +725,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $h(x) = f(x) \cdot o(g(x))$. How is this simplified?
+Let $h(x) = f(x) \cdot o(g(x))$ as $x \rightarrow a$. How is this simplified?
 Back: As $h(x) = o(f(x)g(x))$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772140663084-->
@@ -741,7 +741,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $f(x) = o(o(g(x)))$. How is this simplified?
+Let $f(x) = o(o(g(x)))$ as $x \rightarrow a$. How is this simplified?
 Back: As $f(x) = o(g(x))$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772140663090-->
@@ -750,11 +750,168 @@ END%%
 %%ANKI
 Basic
 How is the following interpreted in plain English? $$o(o(g(x))) = o(g(x)) \quad\text{as}\quad x \rightarrow a$$
-Back: A function of smaller order than another of smaller order than $g(x)$ is of smaller order than $g(x)$.
+Back: A function of smaller order than another function of smaller order than $g(x)$ is of smaller order than $g(x)$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772140663092-->
+END%%
+
+%%ANKI
+Basic
+Is it the case that $x^2 = o(x^3)$ as $x \rightarrow 0$? Why or why not?
+Back: No. $$\lim_{x \rightarrow 0} \frac{x^2}{x^3} = \lim_{x \rightarrow 0} \frac{1}{x} \neq 0.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772250878799-->
+END%%
+
+%%ANKI
+Basic
+Is it the case that $x^3 = o(x^2)$ as $x \rightarrow 0$? Why or why not?
+Back: Yes. $$\lim_{x \rightarrow 0} \frac{x^3}{x^2} = \lim_{x \rightarrow 0} x = 0.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772250878810-->
+END%%
+
+%%ANKI
+Basic
+Is it the case that $x^2 = o(x^3)$ as $x \rightarrow 1$? Why or why not?
+Back: No. $$\lim_{x \rightarrow 1} \frac{x^2}{x^3} = \lim_{x \rightarrow 1} \frac{1}{x} \neq 0.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772250878815-->
+END%%
+
+%%ANKI
+Basic
+Is it the case that $x^3 = o(x^2)$ as $x \rightarrow 1$? Why or why not?
+Back: No. $$\lim_{x \rightarrow 1} \frac{x^3}{x^2} = \lim_{x \rightarrow 1} x \neq 0.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772250878821-->
+END%%
+
+%%ANKI
+Basic
+Is it the case that $x^2 = o(x^3)$ as $x \rightarrow \infty$? Why or why not?
+Back: Yes. $$\lim_{x \rightarrow \infty} \frac{x^2}{x^3} = \lim_{x \rightarrow \infty} \frac{1}{x} = 0.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772250878826-->
+END%%
+
+%%ANKI
+Basic
+Is it the case that $x^3 = o(x^2)$ as $x \rightarrow \infty$? Why or why not?
+Back: No. $$\lim_{x \rightarrow \infty} \frac{x^3}{x^2} = \lim_{x \rightarrow \infty} x \neq 0.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772250878831-->
+END%%
+
+%%ANKI
+Basic
+Is it the case that $x^3 = o(x^3)$ as $x \rightarrow 0$? Why or why not?
+Back: No. $$\lim_{x \rightarrow \infty} \frac{x^3}{x^3} = \lim_{x \rightarrow \infty} 1 \neq 0.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772294761171-->
+END%%
+
+## Indeterminate Forms
+
+A limit of a composed function is said to take on an **indeterminate form** if the limit cannot be computed using the [[#Arithmetic Properties|arithmetic properties]] of limits. There are seven different forms:
+
+1. $0 / 0$
+2. $\infty / \infty$
+3. $0 \times \infty$
+4. $\infty - \infty$
+5. $0^0$
+6. $1^\infty$
+7. $\infty^0$
+
+%%ANKI
+Basic
+How many different indeterminate forms are categorized?
+Back: Seven.
+Reference: _Wikipedia_. “Indeterminate form.” December 30, 2025. [https://en.wikipedia.org/w/index.php?title=Indeterminate_form](https://en.wikipedia.org/w/index.php?title=Indeterminate_form&oldid=1330271191).
+<!--ID: 1772297386157-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for the limit of a composed function to take on an indeterminate form?
+Back: Its limit cannot be computed via the normal limit arithmetic properties.
+Reference: _Wikipedia_. “Indeterminate form.” December 30, 2025. [https://en.wikipedia.org/w/index.php?title=Indeterminate_form](https://en.wikipedia.org/w/index.php?title=Indeterminate_form&oldid=1330271191).
+<!--ID: 1772290190184-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for the following limit to take on an indeterminate form? $$\lim_{x \rightarrow a} \frac{f(x)}{g(x)}$$
+Back: We cannot solve this limit by computing $$\lim_{x \rightarrow a} f(x) \div \lim_{x \rightarrow a} g(x).$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772290190195-->
+END%%
+
+%%ANKI
+Basic
+Which indeterminate form is most commonly cited?
+Back: $0 / 0$
+Reference: _Wikipedia_. “Indeterminate form.” December 30, 2025. [https://en.wikipedia.org/w/index.php?title=Indeterminate_form](https://en.wikipedia.org/w/index.php?title=Indeterminate_form&oldid=1330271191).
+<!--ID: 1772290190198-->
+END%%
+
+%%ANKI
+Basic
+Which does indeterminate form $0 / 0$ denote?
+Back: A limit of a quotient of functions whose limits at the limit point both equal $0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772290190201-->
+END%%
+
+%%ANKI
+Basic
+Which does indeterminate form $\infty / \infty$ denote?
+Back: A limit of a quotient of functions whose limits at the limit point both diverge.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772290190205-->
+END%%
+
+%%ANKI
+Basic
+Let $a, b > 0$. What indeterminate form does the following limit take on? $$\lim_{x \rightarrow 0} \frac{a^x - b^x}{x}$$
+Back: $0 / 0$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772290190208-->
+END%%
+
+%%ANKI
+Basic
+What indeterminate form does the following limit take on? $$\lim_{x \rightarrow 0} \frac{\ln{(1 + x)}}{x}$$
+Back: $0 / 0$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772290190212-->
+END%%
+
+%%ANKI
+Basic
+Why are indeterminate forms named the way they are?
+Back: Their values cannot be determined by the limit arithmetic properties alone.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772297386166-->
+END%%
+
+%%ANKI
+Basic
+How is indeterminate form $\infty - \infty$ interpreted?
+Back: If $f(x) \rightarrow \infty$ and $g(x) \rightarrow \infty$, the arithmetic properties of limits cannot be used to determine what $f(x) - g(x)$ approaches.
+Reference: _Wikipedia_. “Indeterminate form.” December 30, 2025. [https://en.wikipedia.org/w/index.php?title=Indeterminate_form](https://en.wikipedia.org/w/index.php?title=Indeterminate_form&oldid=1330271191).
+<!--ID: 1772297386169-->
+END%%
+
+%%ANKI
+Basic
+How is indeterminate form $1^\infty$ interpreted?
+Back: If $f(x) \rightarrow 1$ and $g(x) \rightarrow \infty$, the arithmetic properties of limits cannot be used to determine what $f(x)^{g(x)}$ approaches.
+Reference: _Wikipedia_. “Indeterminate form.” December 30, 2025. [https://en.wikipedia.org/w/index.php?title=Indeterminate_form](https://en.wikipedia.org/w/index.php?title=Indeterminate_form&oldid=1330271191).
+<!--ID: 1772297386171-->
 END%%
 
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+* _Wikipedia_. “Indeterminate form.” December 30, 2025. [https://en.wikipedia.org/w/index.php?title=Indeterminate_form](https://en.wikipedia.org/w/index.php?title=Indeterminate_form&oldid=1330271191).

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "10f6beb419c19d73",
+        "id": "af0562a2b0652c02",
         "type": "tabs",
         "children": [
           {
-            "id": "9e4abb69cbefb007",
+            "id": "2ed30082ff439373",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_journal/2026-02-26.md",
+                "file": "calculus/limits.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-26"
+              "title": "limits"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "1755918866368",
+                "query": "triangle",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_journal/2026-02-26.md",
+                "file": "calculus/limits.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-02-26"
+              "title": "Outline of limits"
             }
           }
         ],
@@ -170,17 +170,23 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "9e4abb69cbefb007",
+  "active": "2ed30082ff439373",
   "lastOpenFiles": [
-    "calculus/limits.md",
     "calculus/taylor.md",
-    "calculus/indeterminate_forms.md",
+    "_journal/2026-02-28.md",
+    "calculus/limits.md",
     "complexity/asymptotic.md",
+    "algebra/abs_val.md",
+    "_journal/2024/2024-08/2024-08-25.md",
+    "sets/index.md",
+    "_journal/2026-02/2026-02-27.md",
+    "memory/virtual.md",
+    "data_structures/disjoint-set.md",
+    "_journal/2026-02/2026-02-26.md",
+    "calculus/indeterminate_forms.md",
     "calculus/primitives.md",
-    "_journal/2026-02-26.md",
     "complexity/recurrences.md",
     "algorithms/index.md",
-    "memory/virtual.md",
     "linkers/elf.md",
     "dnd/combat.md",
     "dnd/conditions.md",
@@ -194,12 +200,6 @@
     "algebra/images/completing-square-unlabeled.png",
     "algebra/images/completing-square.png",
     "arithmetic/exponentials.md",
-    "c23/types/effective.md",
-    "linkers/relocatable.md",
-    "complexity/time.md",
-    "computability/reducibility.md",
-    "algebra/sets.md",
-    "trigonometry/index.md",
     "_journal/2026-02",
     "_journal/2026",
     "network/physical",

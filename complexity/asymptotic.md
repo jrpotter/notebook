@@ -113,7 +113,9 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1766198680261-->
 END%%
 
-## Θ-notation
+## Asymptotically Tight
+
+### Θ-notation
 
 $\Theta$-notation refers to a strict lower- and upper-bound. It is defined as set $$\Theta(g(n)) = \{ f(n) \mid \exists c_1, c_2, n_0 > 0, \forall n \geq n_0, 0 \leq c_1g(x) \leq f(n) \leq c_2g(n) \}.$$
 
@@ -352,7 +354,7 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1709752223329-->
 END%%
 
-## $O$-notation
+### $O$-notation
 
 $O$-notation refers to a strict upper-bound. It is defined as set $$O(g(n)) = \{ f(n) \mid \exists c, n_0 > 0, \forall n \geq n_0, 0 \leq f(n) \leq cg(n) \}.$$
 
@@ -566,186 +568,7 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1709752223381-->
 END%%
 
-## $o$-notation
-
-$o$-notation refers to an upper bound that is not asymptotically tight. It is defined as set $$o(g(n)) = \{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq f(n) < cg(n) \}.$$
-
-Alternatively, we can express $o$-notation using limits. If $f(n) = o(g(n))$, then $$\lim_{n \rightarrow \infty} \frac{f(n)}{g(n)} = 0.$$
-
-%%ANKI
-Basic
-What kind of mathematical object is $o(g(n))$?
-Back: A set.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002323-->
-END%%
-
-%%ANKI
-Basic
-Using typical identifiers found in $o(g(n))$, what values do $c$ and $n_0$ take on?
-Back: Positive constants.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002325-->
-END%%
-
-%%ANKI
-Basic
-What names are usually given to the existentially quantified identifers in $o(g(n))$'s definition?
-Back: $n_0$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002328-->
-END%%
-
-%%ANKI
-Basic
-What names are usually given to the universally quantified identifers in $o(g(n))$'s definition?
-Back: $c$ and $n$.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002331-->
-END%%
-
-%%ANKI
-Cloze
-Using typical identifiers, $f(n) = o(g(n))$ satisfies {$0$} $\leq$ {$f(n)$} $<$ {$cg(n)$}.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002334-->
-END%%
-
-%%ANKI
-Basic
-How does $o$-notation compare to $O$-notation?
-Back: The former denotes an upper bound that is not asymptotically tight.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002337-->
-END%%
-
-%%ANKI
-Basic
-How is $o(g(n))$ pronounced?
-Back: As "little-oh of $g$ of $n$".
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002340-->
-END%%
-
-%%ANKI
-Basic
-How can $f(n) = o(g(n))$ be expressed as a limit?
-Back: $$\lim_{n \to \infty} \frac{f(n)}{g(n)} = 0$$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002344-->
-END%%
-
-%%ANKI
-Basic
-Which notation corresponds to asymptotic upper bounds that are not tight?
-Back: $o$-notation.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002347-->
-END%%
-
-%%ANKI
-Basic
-Every member of $o(g(n))$ is expected to be asymptotically what?
-Back: Nonnegative.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002350-->
-END%%
-
-%%ANKI
-Basic
-How is $o(g(n))$ defined?
-Back: $\{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq f(n) < cg(n) \}$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002353-->
-END%%
-
-%%ANKI
-Cloze
-In $O(g(n))$, bound {1:$0 \leq f(n) \leq cg(n)$} holds for {1:some $c > 0$}. In $o(g(n))$, bound {2:$0 \leq f(n) < cg(n)$} holds for {2:all $c > 0$}.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002359-->
-END%%
-
-%%ANKI
-Basic
-Is $O$-notation considered stronger or weaker than $o$-notation?
-Back: Weaker.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709519002364-->
-END%%
-
-%%ANKI
-Basic
-What condition must $g(n)$ satisfy such that $o(g(n))$ is nonempty?
-Back: $g(n)$ must be asymptotically positive.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709750359822-->
-END%%
-
-%%ANKI
-Basic
-What is the transitive property of $o$-notation?
-Back: $f(n) = o(g(n))$ and $g(n) = o(h(n))$ implies $f(n) = o(h(n))$.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709752223391-->
-END%%
-
-%%ANKI
-Basic
-What is the reflexive property of $o$-notation?
-Back: N/A.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709752223399-->
-END%%
-
-%%ANKI
-Basic
-*Why* is there no reflexive property of $o$-notation?
-Back: A function cannot be asymptotically smaller than itself.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709752223407-->
-END%%
-
-%%ANKI
-Basic
-What is the symmetric property of $o$-notation?
-Back: N/A.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709752223417-->
-END%%
-
-%%ANKI
-Basic
-What is the transpose symmetric property of $o$-notation?
-Back: $f(n) = o(g(n))$ iff $g(n) = \omega(f(n))$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709752223426-->
-END%%
-
-%%ANKI
-Basic
-$o$-notation is likened to what comparison operator of real numbers?
-Back: $<$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709752223435-->
-END%%
-
-%%ANKI
-Cloze
-{1:$\Omega$}-notation is to {2:$\geq$} whereas {2:$o$}-notation is to {1:$<$}.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709752223442-->
-END%%
-
-%%ANKI
-Basic
-How do we set theoretically say $f(n)$ is asymptotically smaller than $g(n)$?
-Back: $f(n) = o(g(n))$
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-<!--ID: 1709752223449-->
-END%%
-
-## Ω-notation
+### Ω-notation
 
 $\Omega$-notation refers to a strict lower-bound. It is defined as set $$\Omega(g(n)) = \{ f(n) \mid \exists c, n_0 > 0, \forall n \geq n_0, 0 \leq cg(n) \leq f(n) \}.$$
 
@@ -971,7 +794,188 @@ Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (
 <!--ID: 1709752223522-->
 END%%
 
-## ω-notation
+## Asymptotically Loose
+
+### $o$-notation
+
+$o$-notation refers to an upper bound that is not asymptotically tight. It is defined as set $$o(g(n)) = \{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq f(n) < cg(n) \}.$$
+
+Alternatively, we can express $o$-notation using limits. If $f(n) = o(g(n))$, then $$\lim_{n \rightarrow \infty} \frac{f(n)}{g(n)} = 0.$$
+
+%%ANKI
+Basic
+What kind of mathematical object is $o(g(n))$?
+Back: A set.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002323-->
+END%%
+
+%%ANKI
+Basic
+Using typical identifiers found in $o(g(n))$, what values do $c$ and $n_0$ take on?
+Back: Positive constants.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002325-->
+END%%
+
+%%ANKI
+Basic
+What names are usually given to the existentially quantified identifers in $o(g(n))$'s definition?
+Back: $n_0$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002328-->
+END%%
+
+%%ANKI
+Basic
+What names are usually given to the universally quantified identifers in $o(g(n))$'s definition?
+Back: $c$ and $n$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002331-->
+END%%
+
+%%ANKI
+Cloze
+Using typical identifiers, $f(n) = o(g(n))$ satisfies {$0$} $\leq$ {$f(n)$} $<$ {$cg(n)$}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002334-->
+END%%
+
+%%ANKI
+Basic
+How does $o$-notation compare to $O$-notation?
+Back: The former denotes an upper bound that is not asymptotically tight.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002337-->
+END%%
+
+%%ANKI
+Basic
+How is $o(g(n))$ pronounced?
+Back: As "little-oh of $g$ of $n$".
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002340-->
+END%%
+
+%%ANKI
+Basic
+How can $f(n) = o(g(n))$ be expressed as a limit?
+Back: $$\lim_{n \to \infty} \frac{f(n)}{g(n)} = 0$$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002344-->
+END%%
+
+%%ANKI
+Basic
+Which notation corresponds to asymptotic upper bounds that are not tight?
+Back: $o$-notation.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002347-->
+END%%
+
+%%ANKI
+Basic
+Every member of $o(g(n))$ is expected to be asymptotically what?
+Back: Nonnegative.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002350-->
+END%%
+
+%%ANKI
+Basic
+How is $o(g(n))$ defined?
+Back: $\{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq f(n) < cg(n) \}$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002353-->
+END%%
+
+%%ANKI
+Cloze
+In $O(g(n))$, bound {1:$0 \leq f(n) \leq cg(n)$} holds for {1:some $c > 0$}. In $o(g(n))$, bound {2:$0 \leq f(n) < cg(n)$} holds for {2:all $c > 0$}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002359-->
+END%%
+
+%%ANKI
+Basic
+Is $O$-notation considered stronger or weaker than $o$-notation?
+Back: Weaker.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709519002364-->
+END%%
+
+%%ANKI
+Basic
+What condition must $g(n)$ satisfy such that $o(g(n))$ is nonempty?
+Back: $g(n)$ must be asymptotically positive.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709750359822-->
+END%%
+
+%%ANKI
+Basic
+What is the transitive property of $o$-notation?
+Back: $f(n) = o(g(n))$ and $g(n) = o(h(n))$ implies $f(n) = o(h(n))$.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709752223391-->
+END%%
+
+%%ANKI
+Basic
+What is the reflexive property of $o$-notation?
+Back: N/A.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709752223399-->
+END%%
+
+%%ANKI
+Basic
+*Why* is there no reflexive property of $o$-notation?
+Back: A function cannot be asymptotically smaller than itself.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709752223407-->
+END%%
+
+%%ANKI
+Basic
+What is the symmetric property of $o$-notation?
+Back: N/A.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709752223417-->
+END%%
+
+%%ANKI
+Basic
+What is the transpose symmetric property of $o$-notation?
+Back: $f(n) = o(g(n))$ iff $g(n) = \omega(f(n))$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709752223426-->
+END%%
+
+%%ANKI
+Basic
+$o$-notation is likened to what comparison operator of real numbers?
+Back: $<$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709752223435-->
+END%%
+
+%%ANKI
+Cloze
+{1:$\Omega$}-notation is to {2:$\geq$} whereas {2:$o$}-notation is to {1:$<$}.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709752223442-->
+END%%
+
+%%ANKI
+Basic
+How do we set theoretically say $f(n)$ is asymptotically smaller than $g(n)$?
+Back: $f(n) = o(g(n))$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1709752223449-->
+END%%
+
+### ω-notation
 
 $\omega$-notation refers to a lower bound that is not asymptotically tight. It is defined as set $$\omega(g(n)) = \{ f(n) \mid \forall c > 0, \exists n_0 > 0, \forall n \geq n_0, 0 \leq cg(n) < f(n) \}.$$
 
