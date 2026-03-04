@@ -152,9 +152,9 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1753086694881-->
 END%%
 
-## Arithmetic Properties
+## Algebraic Limit Theorem
 
-Since continuity is defined in terms of limits, it shares the same [[limits#Arithmetic Properties|arithmetic properties]] of limits.
+Since continuity is defined in terms of limits, it shares the same [[limits#Algebraic Limit Theorem|algebraic properties]] of limits.
 
 %%ANKI
 Basic
@@ -212,9 +212,42 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1753386691591-->
 END%%
 
-## Functional Properties
+## Commutative Limits
 
-### Composition
+If $L = \lim_{x \rightarrow a} g(x)$ exists and is in the domain of a function $f$ continuous at $L$, then $$f(\lim_{x \rightarrow a} g(x)) = \lim_{x \rightarrow a} f(g(x))$$
+
+%%ANKI
+Basic
+Under what conditions does the following identity always hold? $$f(\lim_{x \rightarrow a} g(x)) = \lim_{x \rightarrow a} f(g(x))$$
+Back: $L = \lim_{x \rightarrow a} g(x)$ exists and $f$ is continuous at $L$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772376952530-->
+END%%
+
+%%ANKI
+Basic
+Suppose $L = \lim_{x \rightarrow a} g(x)$ exists and $f$ is continuous at $L$. Does the following hold? $$f(\lim_{x \rightarrow a} g(x)) = \lim_{x \rightarrow a} f(g(x))$$
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772376952537-->
+END%%
+
+%%ANKI
+Basic
+Suppose $L = \lim_{x \rightarrow a} f(g(x))$ exists and $f$ is continuous at $L$. Does the following hold? $$f(\lim_{x \rightarrow a} g(x)) = \lim_{x \rightarrow a} f(g(x))$$
+Back: Not necessarily. The limit at $g(x)$ as $x \rightarrow a$ may not even exist.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772376952540-->
+END%%
+
+%%ANKI
+Cloze
+If {$L = \lim_{x \rightarrow a} g(x)$} exists and is in the domain of function $f$ {continous at $L$}, then {$f(\lim_{x \rightarrow a} g(x))$} $=$ {$\lim_{x \rightarrow a} f(g(x))$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772376952542-->
+END%%
+
+## Composition
 
 Assume $v$ is continuous at $p$ and that $u$ is continuous at $v(p)$. Then the composition function $f = u \circ v$ is continuous at $p$.
 
@@ -281,7 +314,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1761953903819-->
 END%%
 
-### Inversion
+## Inversion
 
 Let $f$ be a continuous strictly increasing function on $[a, b]$. Let $c = f(a)$ and $d = f(b)$. Then $g = f^{-1}$ is continuous and strictly increasing on $[c, d]$.
 

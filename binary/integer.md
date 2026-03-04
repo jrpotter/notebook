@@ -1394,7 +1394,7 @@ END%%
 %%ANKI
 Basic
 Ignoring overflow, what is the width of the smallest possible value of $x +_w^t y$?
-Back: $w + 1$
+Back: $w$
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
 <!--ID: 1709492205974-->
 END%%

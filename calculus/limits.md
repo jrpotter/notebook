@@ -464,7 +464,157 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1752790522865-->
 END%%
 
-## Arithmetic Properties
+## Infinity
+
+### By Domain
+
+The symbolism $$\lim_{x \rightarrow +\infty} f(x) = A$$
+
+means that for every number $\epsilon > 0$, there exists another number $M > 0$ such that $$\lvert f(x) - A \rvert < \epsilon \quad\text{whenever}\quad x > M.$$
+
+An analagous definition exists as $x \rightarrow -\infty$.
+
+%%ANKI
+Basic
+How is the following symbolism formally defined? $$\lim_{x \rightarrow +\infty} f(x) = A$$
+Back: For all $\epsilon > 0$, there exists an $M > 0$ such that if $x > M$ then $\lvert f(x) - A \rvert < \epsilon$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772492476483-->
+END%%
+
+%%ANKI
+Basic
+How is the following symbolism pronounced? $$\lim_{x \rightarrow +\infty} f(x) = A$$
+Back: "The limit of $f(x)$, as $x$ tends to plus infinity, is $A$."
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772492476492-->
+END%%
+
+%%ANKI
+Basic
+How is the following symbolism formally defined? $$\lim_{x \rightarrow -\infty} f(x) = A$$
+Back: For all $\epsilon > 0$, there exists an $M > 0$ such that if $x < -M$ then $\lvert f(x) - A \rvert < \epsilon$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772492476496-->
+END%%
+
+%%ANKI
+Basic
+How is the following symbolism pronounced? $$\lim_{x \rightarrow -\infty} f(x) = A$$
+Back: "The limit of $f(x)$, as $x$ tends to minus infinity, is $A$."
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772492476500-->
+END%%
+
+%%ANKI
+Basic
+How is the following symbolism formally defined? $$\lim_{x \rightarrow \infty} f(x) = A$$
+Back: N/A. We need to know if we're working with $+\infty$ or $-\infty$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772492476504-->
+END%%
+
+%%ANKI
+Basic
+How is the following limit equivalently written as a limit tending to $0$? $$\lim_{x \rightarrow +\infty} f(x) = A$$
+Back: $$\lim_{x \rightarrow 0^+} f(1 / x) = A.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772492476509-->
+END%%
+
+%%ANKI
+Basic
+How is the following limit equivalently written as a limit tending to $\infty$? $$\lim_{x \rightarrow 0^+} f(x) = A$$
+Back: $$\lim_{x \rightarrow +\infty} f(1 / x) = A.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772492476514-->
+END%%
+
+%%ANKI
+Basic
+How is the following limit equivalently written as a limit tending to $0$? $$\lim_{x \rightarrow -\infty} f(x) = A$$
+Back: $$\lim_{x \rightarrow 0^-} f(1 / x) = A.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772492476519-->
+END%%
+
+%%ANKI
+Basic
+How is the following limit equivalently written as a limit tending to $\infty$? $$\lim_{x \rightarrow 0^-} f(x) = A$$
+Back: $$\lim_{x \rightarrow -\infty} f(1 / x) = A.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772492476523-->
+END%%
+
+### By Range
+
+The symbolism $$\lim_{x \rightarrow a} f(x) = +\infty$$
+
+means that for every number $M > 0$, there exists a number $\delta > 0$ such that if $0 < \lvert x - a \rvert < \delta$ then $f(x) > M$. The left- and right-handed limits are defined similarly.
+
+Analagous definitions exist for $f(x) \rightarrow -\infty$ as $x \rightarrow a$.
+
+%%ANKI
+Basic
+How is the following symbolism formally defined? $$\lim_{x \rightarrow a} f(x) = +\infty$$
+Back: For all $M > 0$, there exists a $\delta > 0$ such that if $0 < \lvert x - a \rvert < \delta$ then $f(x) > M$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772499631155-->
+END%%
+
+%%ANKI
+Basic
+How is the following symbolism pronounced? $$\lim_{x \rightarrow a} f(x) = + \infty$$
+Back: "The limit of $f(x)$, as $x$ tends to $a$, is plus infinity."
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772499631164-->
+END%%
+
+%%ANKI
+Basic
+How is the following symbolism formally defined? $$\lim_{x \rightarrow a} f(x) = -\infty$$
+Back: For all $M > 0$, there exists a $\delta > 0$ such that if $0 < \lvert x - a \rvert < \delta$ then $f(x) < -M$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772499631167-->
+END%%
+
+%%ANKI
+Basic
+How is the following symbolism pronounced? $$\lim_{x \rightarrow a} f(x) = -\infty$$
+Back: "The limit of $f(x)$, as $x$ tends to $a$, is minus infinity."
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772499631170-->
+END%%
+
+%%ANKI
+Cloze
+The limit of $\ln{x}$ as $x$ tends to {$0^+$} is {$-\infty$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772499631173-->
+END%%
+
+%%ANKI
+Cloze
+The limit of $\ln{x}$ as $x$ tends to {$+\infty$} is {$+\infty$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772499631176-->
+END%%
+
+%%ANKI
+Cloze
+The limit of $e^x$ as $x$ tends to {$-\infty$} is {$0$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772499631180-->
+END%%
+
+%%ANKI
+Cloze
+The limit of $e^x$ as $x$ tends to {$+\infty$} is {$+\infty$}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772499631184-->
+END%%
+
+## Algebraic Limit Theorem
 
 The following identities assume $f$ and $g$ are functions such that $$\lim_{x \rightarrow p} f(x) = A \quad\text{and}\quad \lim_{x \rightarrow p} g(x) = B.$$
 
@@ -811,9 +961,17 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1772294761171-->
 END%%
 
+%%ANKI
+Basic
+Suppose $\lim_{x \rightarrow 0} g(x) = A$. How is this equivalently stated using o-notation?
+Back: $g(x) = A + o(1)$ as $x \rightarrow 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772372460482-->
+END%%
+
 ## Indeterminate Forms
 
-A limit of a composed function is said to take on an **indeterminate form** if the limit cannot be computed using the [[#Arithmetic Properties|arithmetic properties]] of limits. There are seven different forms:
+A limit of a composed function is said to take on an **indeterminate form** if the limit cannot be computed using the [[#Algebraic Limit Theorem|algebraic limit theorem]]. There are seven different forms:
 
 1. $0 / 0$
 2. $\infty / \infty$
@@ -834,7 +992,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for the limit of a composed function to take on an indeterminate form?
-Back: Its limit cannot be computed via the normal limit arithmetic properties.
+Back: Its limit cannot be computed via the algebraic limit theorem.
 Reference: _Wikipedia_. “Indeterminate form.” December 30, 2025. [https://en.wikipedia.org/w/index.php?title=Indeterminate_form](https://en.wikipedia.org/w/index.php?title=Indeterminate_form&oldid=1330271191).
 <!--ID: 1772290190184-->
 END%%
@@ -857,16 +1015,16 @@ END%%
 
 %%ANKI
 Basic
-Which does indeterminate form $0 / 0$ denote?
-Back: A limit of a quotient of functions whose limits at the limit point both equal $0$.
+How is indeterminate form $0/0$ interpreted?
+Back: If $f(x) \rightarrow 0$ and $g(x) \rightarrow 0$, the algebraic limit theorem cannot be used to determine what $f(x) \div g(x)$ approaches.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772290190201-->
 END%%
 
 %%ANKI
 Basic
-Which does indeterminate form $\infty / \infty$ denote?
-Back: A limit of a quotient of functions whose limits at the limit point both diverge.
+How is indeterminate form $\infty / \infty$ interpreted?
+Back: If $f(x) \rightarrow \infty$ and $g(x) \rightarrow \infty$, the algebraic limit theorem cannot be used to determine what $f(x) \div g(x)$ approaches.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772290190205-->
 END%%
@@ -890,7 +1048,7 @@ END%%
 %%ANKI
 Basic
 Why are indeterminate forms named the way they are?
-Back: Their values cannot be determined by the limit arithmetic properties alone.
+Back: Their values cannot be determined by the algebraic limit theorem.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772297386166-->
 END%%
@@ -898,7 +1056,7 @@ END%%
 %%ANKI
 Basic
 How is indeterminate form $\infty - \infty$ interpreted?
-Back: If $f(x) \rightarrow \infty$ and $g(x) \rightarrow \infty$, the arithmetic properties of limits cannot be used to determine what $f(x) - g(x)$ approaches.
+Back: If $f(x) \rightarrow \infty$ and $g(x) \rightarrow \infty$, the algebraic limit theorem cannot be used to determine what $f(x) - g(x)$ approaches.
 Reference: _Wikipedia_. “Indeterminate form.” December 30, 2025. [https://en.wikipedia.org/w/index.php?title=Indeterminate_form](https://en.wikipedia.org/w/index.php?title=Indeterminate_form&oldid=1330271191).
 <!--ID: 1772297386169-->
 END%%
@@ -906,12 +1064,239 @@ END%%
 %%ANKI
 Basic
 How is indeterminate form $1^\infty$ interpreted?
-Back: If $f(x) \rightarrow 1$ and $g(x) \rightarrow \infty$, the arithmetic properties of limits cannot be used to determine what $f(x)^{g(x)}$ approaches.
+Back: If $f(x) \rightarrow 1$ and $g(x) \rightarrow \infty$, the algebraic limit theorem cannot be used to determine what $f(x)^{g(x)}$ approaches.
 Reference: _Wikipedia_. “Indeterminate form.” December 30, 2025. [https://en.wikipedia.org/w/index.php?title=Indeterminate_form](https://en.wikipedia.org/w/index.php?title=Indeterminate_form&oldid=1330271191).
 <!--ID: 1772297386171-->
+END%%
+
+### L'Hôpital's Rule
+
+Assume $f$ and $g$ have derivatives $f'(x)$ and $g'(x)$ at each point $x$ of an open interval $(a, b)$ and suppose that $$\lim_{x \rightarrow a^+} f(x) = 0 \quad\text{and}\quad \lim_{x \rightarrow a^+} g(x) = 0$$
+
+or
+
+$$\lim_{x \rightarrow a^+} \lvert f(x) \rvert = + \infty \quad\text{and}\quad \lim_{x \rightarrow a^+} \lvert g(x) \rvert = +\infty.$$
+
+Assume also that $g'(x) \neq 0$ for each $x \in (a, b)$. If the limit of $f'(x) / g'(x)$ as $x \rightarrow a^+$ exists, then the limit of $f(x) / g(x)$ as $x \rightarrow a^+$ also exists and $$\lim_{x \rightarrow a^+} \frac{f(x)}{g(x)} = \lim_{x \rightarrow a^+} \frac{f'(x)}{g'(x)}.$$
+
+An analagous theorem also holds for left-handed limits. Combining the left- and right-handed variants yields the two-sided result of the same kind in which $x \rightarrow a$ in an unrestricted fashion.
+
+%%ANKI
+Basic
+L'Hôpital's rule offers a shortcut to what other approach for solving indeterminate forms?
+Back: Using polynomial approximations.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772489541507-->
+END%%
+
+%%ANKI
+Basic
+Why can't we use L'Hôpital's rule on the following limit? $$\lim_{x \rightarrow 1} \frac{6x - 2}{2x - 1}$$
+Back: It is not of indeterminate form $0 / 0$ or $\infty / \infty$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772489541512-->
+END%%
+
+%%ANKI
+Basic
+Which indeterminate forms is L'Hôpital's rule able to simplify?
+Back: $0 / 0$ and $\infty / \infty$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772489541515-->
+END%%
+
+%%ANKI
+Basic
+What theorem is typically used to prove L'Hôpital's rule?
+Back: Cauchy's MVT.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772489541518-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following limits hold. What other hypotheses must be satisfied before we can apply L'Hôpital's rule? $$\lim_{x \rightarrow a^+} f(x) = 0 \quad\text{and}\quad \lim_{x \rightarrow a^+} g(x) = 0$$
+Back: For all $x$ in some interval $(a, b)$, $f'(x)$ exists and (assumed quotient) $g'(x) \neq 0$ exists.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772489541521-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following limits hold. What other hypotheses must be satisfied before we can apply L'Hôpital's rule? $$\lim_{x \rightarrow +\infty} f(x) = 0 \quad\text{and}\quad \lim_{x \rightarrow +\infty} g(x) = 0$$
+Back: For all $x$ greater than some $M > 0$, $f'(x)$ exists and (assumed quotient) $g'(x) \neq 0$ exists.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772492476535-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following limits hold. What other hypotheses must be satisfied before we can apply L'Hôpital's rule? $$\lim_{x \rightarrow -\infty} f(x) = 0 \quad\text{and}\quad \lim_{x \rightarrow -\infty} g(x) = 0$$
+Back: For all $x$ less than some $M < 0$, $f'(x)$ exists and (assumed quotient) $g'(x) \neq 0$ exists.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772552258679-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following limits hold. What other hypotheses must be satisfied before we can apply L'Hôpital's rule? $$\lim_{x \rightarrow a^+} f(x) = +\infty \quad\text{and}\quad \lim_{x \rightarrow a^+} g(x) = +\infty$$
+Back: For all $x$ in some interval $(a, b)$, $f'(x)$ exists and (assumed quotient) $g'(x) \neq 0$ exists.
+Reference: _Wikipedia_. “L’Hôpital’s rule.” February 4, 2026. [https://en.wikipedia.org/w/index.php?title=L'Hôpital's_rule](https://en.wikipedia.org/w/index.php?title=L%27H%C3%B4pital%27s_rule&oldid=1336547175).
+<!--ID: 1772492476531-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following limits hold. What other hypotheses must be satisfied before we can apply L'Hôpital's rule? $$\lim_{x \rightarrow a^+} f(x) = -\infty \quad\text{and}\quad \lim_{x \rightarrow a^+} g(x) = -\infty$$
+Back: For all $x$ in some interval $(a, b)$, $f'(x)$ exists and (assumed quotient) $g'(x) \neq 0$ exists.
+Reference: _Wikipedia_. “L’Hôpital’s rule.” February 4, 2026. [https://en.wikipedia.org/w/index.php?title=L'Hôpital's_rule](https://en.wikipedia.org/w/index.php?title=L%27H%C3%B4pital%27s_rule&oldid=1336547175).
+<!--ID: 1772492476546-->
+END%%
+
+%%ANKI
+Basic
+What is the simplest strategy used to solve the following limit? $$\lim_{x \rightarrow 0} \frac{\sin{x}}{x}$$
+Back: Apply L'Hôpital's rule.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772489541524-->
+END%%
+
+%%ANKI
+Basic
+What is the simplest strategy used to solve the following limit? $$\lim_{x \rightarrow 0} \frac{1 - \cos{x}}{x^2}$$
+Back: Apply a Taylor expansion to the $\cos{x}$ term.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772489541527-->
+END%%
+
+%%ANKI
+Basic
+Why is it we can apply L'Hôpital's rule to limits tending towards $- \infty$?
+Back: A limit tending towards $+ \infty$ can be equivalently written as a limit tending towards $0^-$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772492476527-->
+END%%
+
+%%ANKI
+Basic
+Why is it we can apply L'Hôpital's rule to limits tending towards $+ \infty$?
+Back: A limit tending towards $+ \infty$ can be equivalently written as a limit tending towards $0^+$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772492476538-->
+END%%
+
+%%ANKI
+Basic
+Why can't we use L'Hôpital's rule on the following limit? $$\lim_{x \rightarrow +\infty} \frac{6x - 2}{2x - 1}$$
+Back: N/A. We can.
+Reference: _Wikipedia_. “L’Hôpital’s rule.” February 4, 2026. [https://en.wikipedia.org/w/index.php?title=L'Hôpital's_rule](https://en.wikipedia.org/w/index.php?title=L%27H%C3%B4pital%27s_rule&oldid=1336547175).
+<!--ID: 1772492476542-->
+END%%
+
+%%ANKI
+Basic
+Suppose we can apply L'Hôpital's rule to the following limit. What values can $a$ take on? $$\lim_{x \rightarrow a} \frac{f(x)}{g(x)}$$
+Back: A real number, $+ \infty$, or $-\infty$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772499069332-->
+END%%
+
+%%ANKI
+Basic
+Suppose we can apply L'Hôpital's rule to the following limit. What values can $f(x)$ approach as $x \rightarrow a$? $$\lim_{x \rightarrow a} \frac{f(x)}{g(x)}$$
+Back: $0$, $+ \infty$, or $-\infty$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772499069347-->
+END%%
+
+%%ANKI
+Basic
+Suppose we can apply L'Hôpital's rule to the following limit. What values can $g(x)$ approach as $x \rightarrow a$? $$\lim_{x \rightarrow a} \frac{f(x)}{g(x)}$$
+Back: $0$, $+ \infty$, or $-\infty$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772499069352-->
+END%%
+
+%%ANKI
+Basic
+How is L'Hôpital's rule symbolically denoted?
+Back: Using $\overset{\lower1em H}{=}$.
+Reference: _Wikipedia_. “L’Hôpital’s rule.” February 4, 2026. [https://en.wikipedia.org/w/index.php?title=L'Hôpital's_rule](https://en.wikipedia.org/w/index.php?title=L%27H%C3%B4pital%27s_rule&oldid=1336547175).
+<!--ID: 1772568593882-->
+END%%
+
+### Exponential Bounds
+
+If $a > 0$ and $b > 0$, then $$\lim_{x \rightarrow +\infty} \frac{(\ln{x})^a}{x^b} = 0 \quad\text{and}\quad \lim_{x \rightarrow +\infty} \frac{x^a}{e^{bx}} = 0.$$
+
+In other words, $(\ln{x})^a = o(x^b)$ and $x^a = o(e^{bx})$.
+
+%%ANKI
+Basic
+Under what condition does the following limit hold? $$\lim_{x \rightarrow +\infty} \frac{(\ln{x})^a}{x^b} = 0$$
+Back: $a, b > 0$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772568593894-->
+END%%
+
+%%ANKI
+Basic
+What does the following limit evaluate to? $$\lim_{x \rightarrow +\infty} \frac{\ln{x}}{x}$$
+Back: $0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772568593898-->
+END%%
+
+%%ANKI
+Basic
+What does the following limit evaluate to? $$\lim_{x \rightarrow +\infty} \frac{(\ln{x})^{100000}}{x^{0.000001}}$$
+Back: $0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772568593901-->
+END%%
+
+%%ANKI
+Basic
+Under what condition does the following limit hold? $$\lim_{x \rightarrow +\infty} \frac{x^a}{e^{xb}} = 0$$
+Back: $a, b > 0$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772568593906-->
+END%%
+
+%%ANKI
+Basic
+What does the following limit evaluate to? $$\lim_{x \rightarrow +\infty} \frac{x}{e^x}$$
+Back: $0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772568593910-->
+END%%
+
+%%ANKI
+Basic
+What does the following limit evaluate to? $$\lim_{x \rightarrow +\infty} \frac{x^{100000}}{e^{0.000001x}}$$
+Back: $0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772568593915-->
+END%%
+
+%%ANKI
+Basic
+Let $a, b > 0$. How does $(\ln{x})^b$ and $x^a$ relate using o-notation?
+Back: $(\ln{x})^b = o(x^a)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772568593919-->
+END%%
+
+%%ANKI
+Basic
+Let $a, b > 0$. How does $e^{bx}$ and $x^a$ relate using o-notation?
+Back: $x^a = o(e^{bx})$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772568593923-->
 END%%
 
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 * _Wikipedia_. “Indeterminate form.” December 30, 2025. [https://en.wikipedia.org/w/index.php?title=Indeterminate_form](https://en.wikipedia.org/w/index.php?title=Indeterminate_form&oldid=1330271191).
+* _Wikipedia_. “L’Hôpital’s rule.” February 4, 2026. [https://en.wikipedia.org/w/index.php?title=L'Hôpital's_rule](https://en.wikipedia.org/w/index.php?title=L%27H%C3%B4pital%27s_rule&oldid=1336547175).

@@ -1143,6 +1143,70 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1764562755855-->
 END%%
 
+%%ANKI
+Basic
+MVT for derivatives is a generalization of what other theorem?
+Back: Rolle's theorem.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772381414598-->
+END%%
+
+%%ANKI
+Basic
+In what way does MVT for derivatives generalize Rolle's theorem?
+Back: For function $f$ on interval $[a, b]$, the former does not require $f(a) = f(b)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772381414614-->
+END%%
+
+### Cauchy's Mean Value Theorem
+
+Let $f$ and $g$ be two functions continuous on a closed interval $[a, b]$ and having derivatives in the open interval $(a, b)$. Then, for some $c \in (a, b)$, we have $$f'(c)[g(b) - g(a)] = g'(c)[f(b) - f(a)].$$
+
+%%ANKI
+Basic
+Cauchy's MVT is a generalization of what other theorem?
+Back: The MVT for derivatives.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772381414624-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following theorem?
+
+> Let $f$ and $g$ be two functions continuous on a closed interval $[a, b]$ and having derivatives in the open interval $(a, b)$. Then, for some $c \in (a, b)$, we have $$f'(c)[g(b) - g(a)] = g'(c)[f(b) - f(a)].$$
+
+Back: Cauchy's mean value theorem.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772381414638-->
+END%%
+
+%%ANKI
+Basic
+What theorem is the following a visualization of?
+![[cauchy-mvt.png]]
+Back: Cauchy's MVT.
+Reference: _Wikipedia_. “Mean value theorem.” February 21, 2026. [https://en.wikipedia.org/w/index.php?title=Mean_value_theorem](https://en.wikipedia.org/w/index.php?title=Mean_value_theorem&oldid=1339523303).
+<!--ID: 1772381414650-->
+END%%
+
+%%ANKI
+Basic
+What does Cauchy's MVT presume about functions $f$ and $g$?
+Back: They are continuous on $[a, b]$ and differentiable on $(a, b)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772381725180-->
+END%%
+
+%%ANKI
+Basic
+How is the MVT for derivatives proven using Cauchy's MVT?
+Back: Set one of the functions to identity, e.g. $g(x) = x$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772381725193-->
+END%%
+
 ### Signedness Properties
 
 Let $f$ be a function continuous on closed interval $[a, b]$ and differentiable on $(a, b)$. Then:
@@ -1327,4 +1391,5 @@ END%%
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 * _Wikipedia_. “Inverse function rule.” December 29, 2025. [https://en.wikipedia.org/w/index.php?title=Inverse_function_rule](https://en.wikipedia.org/w/index.php?title=Inverse_function_rule&oldid=1330048395).
+* _Wikipedia_. “Mean value theorem.” February 21, 2026. [https://en.wikipedia.org/w/index.php?title=Mean_value_theorem](https://en.wikipedia.org/w/index.php?title=Mean_value_theorem&oldid=1339523303).
 * _Wikipedia_. “Smoothness.” December 1, 2025. [https://en.wikipedia.org/w/index.php?title=Smoothness](https://en.wikipedia.org/w/index.php?title=Smoothness&oldid=1325182258).

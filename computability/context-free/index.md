@@ -2137,7 +2137,7 @@ END%%
 Basic
 In what way can the following theorem be made stronger?
 
-> Let $L$ be a context-free language. Then there exists a **pumping constant** $p$ where, if $s$ is any string in $L$ of at least length $p$, then $s$ can be written as $s = uvxyz$ such that
+> Let $L$ be a context-free language. Then there exists a pumping constant $p$ where, if $s$ is any string in $L$ of at least length $p$, then $s$ can be written as $s = uvxyz$ such that
 > 
 > 1. $uv^ixy^iz \in L$ for any integer $i \geq 0$,
 > 2. $\lvert vy \rvert > 0$, and

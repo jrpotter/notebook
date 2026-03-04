@@ -383,7 +383,7 @@ END%%
 
 %%ANKI
 Cloze
-A {binary} representation is abstract whereas an {object} representation is concrete.
+A(n) {binary} representation is abstract whereas a(n) {object} representation is concrete.
 Reference: Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 <!--ID: 1723856661405-->
 END%%

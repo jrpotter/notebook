@@ -355,7 +355,7 @@ END%%
 %%ANKI
 Basic
 Let $f(x) = T_nf(x; a) + E_n(x; a)$. How do we know $E_n(x; a) = o((x - a)^n)$?
-Back: We can define a closed interval around $a$ and know $E_n(x; a)$ is bound.
+Back: We can define a closed interval around $a$ that $E_n(x; a)$ is bounded within.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772294761168-->
 END%%

@@ -84,6 +84,82 @@ Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards
 <!--ID: 1768510238147-->
 END%%
 
+## Movement
+
+A creature can move up to a distance equal to their **Speed** on their turn. If moving on **Difficult Terrain**, every foot of movement costs 1 extra foot.
+
+A creature may have special speeds such as Climb Speed, Fly Speed, or Swim Speed. If a creature has more than one speed, they can choose which one to use during their movement. They can switch between the speeds during their turn. Common types of movement include:
+
+* **Climbing**.
+	* Every foot of movement costs 1 extra foot (2 extra feet in Difficult Terrain). This extra cost is ignored if the creature has a Climb Speed and uses it to climb.
+* **Flying**.
+	* While flying, you fall if you have the [[dnd/conditions#Incapacitated|Incapacitated]] condition, [[dnd/conditions#Prone|Prone]] condition, or your Fly Speed is reduced to 0. You stay aloft in these conditions if you have the ability to hover.
+* **Swimming**.
+* **Jumping**.
+
+%%ANKI
+Basic
+What does a creature's Speed stat dictate?
+Back: The amount of feet they can travel in a turn.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157965-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a creature to have 30 Speed?
+Back: The creature can move 30 feet with normal movement.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157968-->
+END%%
+
+%%ANKI
+Basic
+What is Difficult Terrain?
+Back: Terrain that is difficult to traverse.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157971-->
+END%%
+
+%%ANKI
+Basic
+What penalty is associated with Difficult Terrain?
+Back: Every foot of movement costs an additional foot.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157974-->
+END%%
+
+%%ANKI
+Basic
+What is the movement penalty of climbing on normal terrain?
+Back: Every foot of movement costs an additional foot.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157977-->
+END%%
+
+%%ANKI
+Basic
+What is the movement penalty of climbing on Difficult Terrain?
+Back: Every foot of movement costs two additional feet.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157981-->
+END%%
+
+%%ANKI
+Basic
+When can the movement penalty for climbing be ignored?
+Back: When the creature has a Climb Speed (and uses it).
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157984-->
+END%%
+
+%%ANKI
+Cloze
+While flying, you fall if you have the {Incapacitated condition}, you have the {Prone condition}, or your {Fly Speed is reduced to $0$}.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1771425157988-->
+END%%
+
 ## Armor Class
 
 A creature's **Armor Class** (AC) represents how well the creature avoids being wounded in combat. All creatures start with the same **base AC** calculation of 10 plus the creature's Dexterity modifier. The creature's AC can be further modified by armor, magic items, spells, etc.
@@ -597,80 +673,202 @@ Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards
 <!--ID: 1772070879275-->
 END%%
 
-## Movement
+### Immunity
 
-A creature can move up to a distance equal to their **Speed** on their turn. If moving on **Difficult Terrain**, every foot of movement costs 1 extra foot.
-
-A creature may have special speeds such as Climb Speed, Fly Speed, or Swim Speed. If a creature has more than one speed, they can choose which one to use during their movement. They can switch between the speeds during their turn. Common types of movement include:
-
-* **Climbing**.
-	* Every foot of movement costs 1 extra foot (2 extra feet in Difficult Terrain). This extra cost is ignored if the creature has a Climb Speed and uses it to climb.
-* **Flying**.
-	* While flying, you fall if you have the [[dnd/conditions#Incapacitated|Incapacitated]] condition, [[dnd/conditions#Prone|Prone]] condition, or your Fly Speed is reduced to 0. You stay aloft in these conditions if you have the ability to hover.
-* **Swimming**.
-* **Jumping**.
+A creature with **Immunity** to a damage type does not take damage of that type. A creature with Immunity to a [[dnd/conditions|condition]] means they aren't affected by it.
 
 %%ANKI
 Basic
-What does a creature's Speed stat dictate?
-Back: The amount of feet they can travel in a turn.
+What does it mean for a creature to have Immunity to Fire damage?
+Back: They do not take any damage of Fire type.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
-<!--ID: 1771425157965-->
+<!--ID: 1772383397563-->
 END%%
 
 %%ANKI
 Basic
-What does it mean for a creature to have 30 Speed?
-Back: The creature can move 30 feet with normal movement.
+What does it mean for a creature to have Immunity to the Paralyzed condition?
+Back: They are not affected by the Paralyzed condition.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
-<!--ID: 1771425157968-->
+<!--ID: 1772383397571-->
 END%%
 
 %%ANKI
 Basic
-What is Difficult Terrain?
-Back: Terrain that is difficult to traverse.
+What does it mean for a creature to have Resistance to the Paralyzed condition?
+Back: N/A. Resistance only applies to damage types.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
-<!--ID: 1771425157971-->
+<!--ID: 1772383397574-->
+END%%
+
+## 0 Hit Points
+
+When a creature drops to 0 hit points, it either dies outright or falls [[dnd/conditions#Unconscious|unconscious]].
+
+%%ANKI
+Basic
+A creature drops to 0 hit points. What are the two possibilities?
+Back: Either it dies outright or it falls unconscious.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772383397577-->
+END%%
+
+### Instant Death
+
+Here are the main ways a creature can die instantly:
+
+* Typically speaking, [[creatures|monsters]] die as soon as they drop to 0 hit points.
+* Any creature dies if its Hit Point maximum reaches 0.
+* A player character instantly dies if the remainder of any damage used to reduce their Hit Points to 0 equals or exceed their Hit Point maximum.
+
+%%ANKI
+Basic
+Typically speaking, in what two ways do monsters instantly die?
+Back: Either their Hit Points reach 0 or their Hit Points maximum reaches 0.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772383397581-->
 END%%
 
 %%ANKI
 Basic
-What penalty is associated with Difficult Terrain?
-Back: Every foot of movement costs an additional foot.
+Typically speaking, in what two ways do player characters instantly die?
+Back: Either their Hit Points maximum reaches 0 or excess damage from a single hit meets or exceeds their Hit Point maximum.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
-<!--ID: 1771425157974-->
+<!--ID: 1772383397585-->
+END%%
+
+### Death Saving Throws
+
+Whenever a creature starts their turn with 0 Hit Points, they must make a **Death Saving Throw**. The creature must make a 1d20 roll. If the roll is 10 or higher, they succeed. Otherwise, they fail. If a 1 is rolled, the creature suffers two failures. If a 20 is rolled, the creature instead regains 1 Hit Point.
+
+The number of successes and failures reset to zero if the creature regains any Hit Points or becomes Stable. On the third success, a creature becomes Stable. On the third failure, the creature dies.
+
+If any damage is received while at 0 Hit Points, the creature suffers a Death Saving Throw failure. If the damage is from a Critical Hit, the creature suffers two failures instead. If the damage meets or exceeds the creature's Hit Point maximum, they die.
+
+%%ANKI
+Basic
+What kind of D20 Test is rolled when a creature is at 0 Hit Points?
+Back: A Death Saving Throw.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772383397589-->
 END%%
 
 %%ANKI
 Basic
-What is the movement penalty of climbing on normal terrain?
-Back: Every foot of movement costs an additional foot.
+What Death Saving Throw values equate to a success?
+Back: Ten or more.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
-<!--ID: 1771425157977-->
+<!--ID: 1772383397593-->
 END%%
 
 %%ANKI
 Basic
-What is the movement penalty of climbing on Difficult Terrain?
-Back: Every foot of movement costs two additional feet.
+What Death Saving Throw values equate to a failure?
+Back: Nine or less.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
-<!--ID: 1771425157981-->
+<!--ID: 1772383397597-->
 END%%
 
 %%ANKI
 Basic
-When can the movement penalty for climbing be ignored?
-Back: When the creature has a Climb Speed (and uses it).
+What happens when rolling a natural 20 on a Death Saving Throw?
+Back: The creature regains 1 Hit Point.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
-<!--ID: 1771425157984-->
+<!--ID: 1772383397600-->
 END%%
 
 %%ANKI
-Cloze
-While flying, you fall if you have the {Incapacitated condition}, you have the {Prone condition}, or your {Fly Speed is reduced to $0$}.
+Basic
+What happens when rolling a natural 1 on a Death Saving Throw?
+Back: The creature suffers two failures.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
-<!--ID: 1771425157988-->
+<!--ID: 1772383397604-->
+END%%
+
+%%ANKI
+Basic
+What happens on three successful Death Saving Throws?
+Back: The creature becomes Stable.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772383397607-->
+END%%
+
+%%ANKI
+Basic
+What happens on three failed Death Saving Throws?
+Back: The creature dies.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772383397611-->
+END%%
+
+%%ANKI
+Basic
+When do Death Saving Throw results reset?
+Back: When the creature becomes Stable or regains Hit Points.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772383397614-->
+END%%
+
+%%ANKI
+Basic
+A creature takes damage at 0 Hit Points. What happens?
+Back: They suffer at least one Death Saving Throw failure.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772383397617-->
+END%%
+
+%%ANKI
+Basic
+A creature takes damage from a Critical Hit at 0 Hit Points. What happens?
+Back: They suffer two Death Saving Throw failures.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772383397621-->
+END%%
+
+### Stability
+
+A creature is **Stable** if it has 0 Hit Points but isn't required to make Death Saving Throws. The Help action can be used to try to stabilize a creature with 0 Hit Points. This requries a successful DC 10 Wisdom (Medicine) check.
+
+A Stable creature that isn't healed regains 1 Hit Point after 1d4 hours.
+
+%%ANKI
+Basic
+What does it mean for a creature to be Stable?
+Back: It has 0 Hit Points but isn't required to make Death Saving Throws.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772383397624-->
+END%%
+
+%%ANKI
+Basic
+What kind of action is used to stabilize a creature?
+Back: The Help action.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772383397632-->
+END%%
+
+%%ANKI
+Basic
+What skill-related D20 Test is used to stabilize a creature?
+Back: A Wisdom (Medicine) check.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772383397636-->
+END%%
+
+%%ANKI
+Basic
+What is the DC for stabilizing another creature?
+Back: DC 10.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772383397640-->
+END%%
+
+%%ANKI
+Basic
+What happens to a Stable creature who is never healed?
+Back: They regain 1 Hit Point after 1d4 hours.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1772383397643-->
 END%%
 
 ## Bibliography
