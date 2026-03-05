@@ -1452,7 +1452,7 @@
     "_journal/2025-07/2025-07-04.md": "13487a42a2d971e073999906b2360637",
     "arithmetic/radices.md": "2c9b56821d0f173b64dc068859b39bdc",
     "arithmetic/logarithms.md": "bff323592d5ac3f7892d7f79ed4ad775",
-    "arithmetic/index.md": "e1cc5f71912625c4cc4991664a04bb9e",
+    "arithmetic/index.md": "4fc2a278948ba666a630f891580fe776",
     "networking/ip/subnet.md": "c9259f72b5e0f193156601130571932a",
     "networking/ip/index.md": "7481786bb2291b2e1341328661be4775",
     "networking/ip/classful.md": "f18de002a7c9f27b179ba6494b8d5f36",
@@ -1473,7 +1473,7 @@
     "_journal/2025-07-11.md": "828e1a48ca2cc873b7b02de215e29068",
     "_journal/2025-07/2025-07-10.md": "2a842977bb13a634ce4c64feb8fd410d",
     "geometry/curvature.md": "9f80263cdd29886e7d0b6aafd97bcf2d",
-    "calculus/limits.md": "979acbef37206f2bc8dc61268396ced3",
+    "calculus/limits.md": "9461c9f16064be5a52b15099b34b86ef",
     "_journal/2025-07-12.md": "55ae40960fc3bb841284e40a4c66d833",
     "_journal/2025-07/2025-07-11.md": "cd8e5414705e77e8fa0cefbe03098202",
     "networking/ip/class.md": "94b2c1dfcf8710d947768ba91f8849ac",
@@ -2502,7 +2502,9 @@
     "_journal/2026-03-02.md": "b678d9fa7b47cd48d3af095877e3955f",
     "_journal/2026-03/2026-03-01.md": "9bcfe2938d1ec1c893e046d05f1dda04",
     "_journal/2026-03-03.md": "fff7e478cc55b1ecd63db81dfbbf00d4",
-    "_journal/2026-03/2026-03-02.md": "b678d9fa7b47cd48d3af095877e3955f"
+    "_journal/2026-03/2026-03-02.md": "b678d9fa7b47cd48d3af095877e3955f",
+    "_journal/2026-03-04.md": "ab1be3e1aa2977a084a26a424a9f8740",
+    "_journal/2026-03/2026-03-03.md": "f1373fec65d4a8fb01a49e7c8df312eb"
   },
   "fields_dict": {
     "Basic": [

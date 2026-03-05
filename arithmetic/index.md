@@ -66,6 +66,14 @@ Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia
 <!--ID: 1771448775310-->
 END%%
 
+%%ANKI
+Basic
+Let $a, b \in \mathbb{R}$. How do we write product $a \cdot b$ as a fraction?
+Back: Assuming $b \neq 0$, as $a / (1 / b)$.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1772631794969-->
+END%%
+
 ## Average Value
 
 If $a_1, a_2, \ldots, a_n$ are $n$ real numbers, their **arithmetic mean** $\bar{a}$ is defined by the equation $$\bar{a} = \frac{1}{n} \sum_{k=1}^n a_k.$$

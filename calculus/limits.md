@@ -1295,6 +1295,38 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1772568593923-->
 END%%
 
+%%ANKI
+Basic
+What does the following limit evaluate to? $$\lim_{x \rightarrow 1^-} (1 - x)(\ln{(1 - x)})^2$$
+Back: $0$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772632910173-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following limit evaluate to $0$? $$\lim_{x \rightarrow 1^-} (1 - x)(\ln{(1 - x)})^2$$
+Back: Because $[\ln{(1 - x)}]^2 = o(1 - x)$ as $x \rightarrow 1^-$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772632910195-->
+END%%
+
+%%ANKI
+Basic
+What "preprocessing step" is used to evaluate the following limit? $$\lim_{x \rightarrow 0^+} x^x$$
+Back: Rewrite instead as $$\lim_{x \rightarrow 0^+} e^{x\ln{x}}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772682080791-->
+END%%
+
+%%ANKI
+Basic
+*Why* does the following identity hold? $$\lim_{x \rightarrow 0^+} e^{x\ln{x}} = 1$$
+Back: $\ln{x} = o(x)$ as $x \rightarrow 0^+$ meaning this limit evaluates to $e^0 = 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1772682080804-->
+END%%
+
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
