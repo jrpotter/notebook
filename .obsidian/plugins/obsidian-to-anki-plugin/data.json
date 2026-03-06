@@ -1761,7 +1761,7 @@
     "_journal/2025-10-22.md": "c4fedcaf6d2622cc79eedc07b1ef851d",
     "_journal/2025-10/2025-10-21.md": "afa7eaf4e85392cea5587f263a52e246",
     "data_structures/trees/binary_search_tree.md": "7fac996d0b6d6b8d845c76aaad8a759f",
-    "data_structures/trees/b-tree.md": "c574531808080903624bdb56b7af1d0d",
+    "data_structures/trees/b-tree.md": "f427df6f03db501393e29f78cc168b06",
     "data_structures/trees/binary_tree.md": "5989f21941cba289bc0ad918fa317f8f",
     "data_structures/trees/index.md": "d856fa16f0e4c4bcedb1080058280c5f",
     "algebra/functions.md": "adf20a5e8beb03961de1d1baff7c8596",
@@ -2247,7 +2247,7 @@
     "_journal/2025-12/2025-12-21.md": "21c022a5eca77b4150bc5e4d5a75a320",
     "sets/relations.md": "c5d40324cf8dddff8ffe6a8008c21f2a",
     "sets/recursion.md": "92470a0d6220ecf60362abce009cb763",
-    "sets/ordinals.md": "0611b46c3e1293de157d387e45823b22",
+    "sets/ordinals.md": "62b75468f9c576f40ade317179bd1c5b",
     "sets/order/well.md": "a430655806a6a6a2c79abfe9c7d45393",
     "sets/order/total.md": "85e101403ded9fcbc539a953d9082c79",
     "sets/order/preorder.md": "cee290ebb92522793468be0681b0df31",
@@ -2355,7 +2355,7 @@
     "_journal/2026-01-17.md": "033d8b866c2bd1c15d913163044a61d9",
     "_journal/2026-01/2026-01-16.md": "dccc785e46af0478c2ff70304dca6bd7",
     "data_structures/disjoint-set.md": "7af8c8706b71e96c8c14cb2d5b1c9385",
-    "complexity/recurrences.md": "dfa0f065bc8ab5570367639bbe69f19a",
+    "complexity/recurrences.md": "79722cc8abceffe9a3887d0a1a019aaf",
     "dnd/actions.md": "93833f2fae8411c798118e5918011068",
     "_journal/2026-01-18.md": "891355dccd8a49206d71120d1fc4bfe3",
     "_journal/2026-01/2026-01-17.md": "033d8b866c2bd1c15d913163044a61d9",
@@ -2504,7 +2504,11 @@
     "_journal/2026-03-03.md": "fff7e478cc55b1ecd63db81dfbbf00d4",
     "_journal/2026-03/2026-03-02.md": "b678d9fa7b47cd48d3af095877e3955f",
     "_journal/2026-03-04.md": "ab1be3e1aa2977a084a26a424a9f8740",
-    "_journal/2026-03/2026-03-03.md": "f1373fec65d4a8fb01a49e7c8df312eb"
+    "_journal/2026-03/2026-03-03.md": "f1373fec65d4a8fb01a49e7c8df312eb",
+    "_journal/2026-03-05.md": "60fc8f1a49923b88c43e3ebe29f0c559",
+    "_journal/2026-03/2026-03-04.md": "2826bd01291bb482f23ce1fd35f0e54c",
+    "_journal/2026-03-06.md": "384a43516a78647cae0b734d339a5983",
+    "_journal/2026-03/2026-03-05.md": "60fc8f1a49923b88c43e3ebe29f0c559"
   },
   "fields_dict": {
     "Basic": [

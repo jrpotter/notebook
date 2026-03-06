@@ -236,7 +236,7 @@ END%%
 
 %%ANKI
 Basic
-*Why* does the number of disk accesses when searching a B-tree of order $m$ containing $n$ keys equal $O(\log_m{n})$?
+Search a B-tree of order $m$ containing $n$ keys. *Why* is the number of disk accesses equal to $O(\log_m{n})$?
 Back: The size of each node presumably corresponds to a block of memory.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1723321489732-->
