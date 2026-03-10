@@ -1303,14 +1303,14 @@ END%%
 %%ANKI
 Basic
 Let $f$ be Riemann integrable on $[a, b]$ and $w$ be its weight function. How is $A(f)$, the weighted average value of $f$ on $[a, b]$, defined?
-Back: $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x)}$$
+Back: $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1751751704326-->
 END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable on $[a, b]$ and nonnegative $w$ satisfy $\int_a^b w(x) \,dx \neq 0$. What name is given to $A(f)$ in the following? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x)}$$
+Let $f$ be Riemann integrable on $[a, b]$ and nonnegative $w$ satisfy $\int_a^b w(x) \,dx \neq 0$. What name is given to $A(f)$ in the following? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}$$
 Back: The weighted average value of $f$ on $[a, b]$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1751751704327-->
@@ -1318,7 +1318,7 @@ END%%
 
 %%ANKI
 Basic
-Assume Riemann integrals. What name is used to describe $w$ in the following equation? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x)}$$
+Assume Riemann integrals. What name is used to describe $w$ in the following equation? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}$$
 Back: $w$ is called a weight function.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1751751704328-->

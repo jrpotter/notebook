@@ -393,7 +393,7 @@ END%%
 %%ANKI
 Basic
 What form do master recurrences have?
-Back: $T(n) = aT(n / b) + f(n)$ for some $a > 0$ and $b > 1$.
+Back: $T(n) = aT(n / b) + f(n)$ for some $a > 0$, $b > 1$, and asymptotically nonnegative $f(n)$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1772795851530-->
 END%%
@@ -401,7 +401,7 @@ END%%
 %%ANKI
 Basic
 Let $a > 0$ and $b > 1$. What does $a$ represent in the following master recurrence? $$T(n) = aT(n / b) + f(n)$$
-Back: The number of subproblems at each level of recursion.
+Back: The fanout factor of subproblems at each level of recursion.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1772795851532-->
 END%%
@@ -536,7 +536,7 @@ END%%
 
 %%ANKI
 Basic
-Consider the following recurrence. In the Master theorem, what does term $aT(n / b)$ *actually* mean? $$T(n) = aT(n / b) + f(n)$$
+Consider the following recurrence. In the Master theorem, what does term $aT(n / b)$ "expand" out to? $$T(n) = aT(n / b) + f(n)$$
 Back: $a_1T(\lfloor n / b \rfloor) + a_2T(\lceil n / b \rceil)$ for some $a = a_1 + a_2$.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1772795851575-->
@@ -767,6 +767,78 @@ Assume regularity if relevant. Using the master theorem, what is the solution to
 Back: $\Theta(n^{\lg{7}})$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1772795851649-->
+END%%
+
+%%ANKI
+Basic
+Assume regularity if relevant. Using the master theorem, what is the solution to the following recurrence? $$T(n) = 2T(n / 4) + 1$$
+Back: $\Theta(n^{1/2})$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1772941391638-->
+END%%
+
+%%ANKI
+Basic
+Assume regularity if relevant. Using the master theorem, what is the solution to the following recurrence? $$T(n) = 2T(n / 4) + \sqrt{n}$$
+Back: $\Theta(n^{1/2}\lg{n})$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1772941391645-->
+END%%
+
+%%ANKI
+Basic
+Assume regularity if relevant. Using the master theorem, what is the solution to the following recurrence? $$T(n) = 2T(n / 4) + \sqrt{n}\lg^2{n}$$
+Back: $\Theta(n^{1/2}\lg^3{n})$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1772941391648-->
+END%%
+
+%%ANKI
+Basic
+Assume regularity if relevant. Using the master theorem, what is the solution to the following recurrence? $$T(n) = 2T(n / 4) + n$$
+Back: $\Theta(n)$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1772941391652-->
+END%%
+
+%%ANKI
+Basic
+Assume regularity if relevant. Using the master theorem, what is the solution to the following recurrence? $$T(n) = 2T(n / 4) + n^2$$
+Back: $\Theta(n^2)$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1772941391655-->
+END%%
+
+%%ANKI
+Basic
+What condition(s) must $a$ satisfy in regularity condition $af(n / b) < cf(n)$?
+Back: $a > 0$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1772941391658-->
+END%%
+
+%%ANKI
+Basic
+What condition(s) must $b$ satisfy in regularity condition $af(n / b) < cf(n)$?
+Back: $b > 1$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1772941391662-->
+END%%
+
+%%ANKI
+Basic
+What condition(s) must $c$ satisfy in regularity condition $af(n / b) < cf(n)$?
+Back: $0 < c < 1$
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1772941391665-->
+END%%
+
+%%ANKI
+Basic
+In terms of recursion trees, what is the meaning of the regularity condition outlined in the master theorem?
+Back: A node's driving function cost is greater than the sum of its children's driving function costs.
+Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+<!--ID: 1772941391669-->
 END%%
 
 ## Bibliography

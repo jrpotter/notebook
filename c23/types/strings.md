@@ -625,7 +625,7 @@ END%%
 
 %%ANKI
 Basic
-What does the `__STDC_UTF_16__` macro indicate when defined?
+What does the `__STDC_UTF_16__` macro indicate when set to `1`?
 Back: The `char16_t` type corresponds to a UTF-16 encoding.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1757693034839-->
@@ -726,7 +726,7 @@ END%%
 
 %%ANKI
 Basic
-What does the `__STDC_UTF_32__` macro indicate when defined?
+What does the `__STDC_UTF_32__` macro indicate when set to `1`?
 Back: The `char32_t` type corresponds to a UTF-32 encoding.
 Reference: “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 <!--ID: 1757693034841-->

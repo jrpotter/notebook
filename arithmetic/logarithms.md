@@ -1187,7 +1187,7 @@ END%%
 
 %%ANKI
 Basic
-How do we prove the following identity? $$\log_b{\lvert x^n \rvert} = n\log_b{\lvert x \rvert}$$
+Let $b > 0, b \neq 1$ and $n \in \mathbb{R}$. How do we prove the following identity? $$\log_b{\lvert x^n \rvert} = n\log_b{\lvert x \rvert}$$
 Back: N/A. This only holds for values $n > 0$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1769195357460-->

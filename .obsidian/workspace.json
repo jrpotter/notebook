@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "af0562a2b0652c02",
+        "id": "8dff4c1b252b9c26",
         "type": "tabs",
         "children": [
           {
-            "id": "2ed30082ff439373",
+            "id": "2e89a08b56b2082a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_journal/2026-03-06.md",
+                "file": "_journal/2026-03-10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-06"
+              "title": "2026-03-10"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "binomial",
+                "query": "1768424140238",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 242.5
+    "width": 251.5
   },
   "right": {
     "id": "ab7dbb159738d8bd",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "network/session/sso.md",
+                "file": "_journal/2026-03-06.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for sso"
+              "title": "Backlinks for 2026-03-06"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "complexity/asymptotic.md",
+                "file": "_journal/2026-03-06.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from asymptotic"
+              "title": "Outgoing links from 2026-03-06"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_journal/2026-03-06.md",
+                "file": "_journal/2026-03-10.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-03-06"
+              "title": "Outline of 2026-03-10"
             }
           }
         ],
@@ -170,35 +170,37 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "2ed30082ff439373",
+  "active": "2e89a08b56b2082a",
   "lastOpenFiles": [
-    "complexity/recurrences.md",
-    "sets/ordinals.md",
+    "data_structures/disjoint-set.md",
+    "data_structures/images/disjoint-set-linked-list.png",
+    "data_structures/images/disjoint-set-forest.png",
+    "complexity/asymptotic.md",
+    "dnd/creatures.md",
+    "c23/types/strings.md",
+    "calculus/riemann.md",
     "arithmetic/logarithms.md",
-    "_journal/2026-03-06.md",
+    "c23/types/derived.md",
+    "_journal/2026-03-10.md",
+    "_journal/2026-03/2026-03-09.md",
+    "_journal/2026-03/2026-03-08.md",
+    "_journal/2026-03/2026-03-07.md",
+    "complexity/recurrences.md",
+    "dnd/combat.md",
+    "linkers/elf.md",
+    "c23/types/compatible.md",
+    "_journal/2026-03/2026-03-06.md",
+    "dnd/conditions.md",
+    "dnd/index.md",
+    "dnd/exploration.md",
+    "dnd/abilities.md",
+    "dnd/actions.md",
+    "sets/ordinals.md",
     "_journal/2026-03/2026-03-05.md",
     "combinatorics/combinations.md",
-    "complexity/asymptotic.md",
     "sequences/geometric.md",
     "data_structures/trees/b-tree.md",
-    "_journal/2026-03/2026-03-04.md",
-    "calculus/limits.md",
-    "calculus/derivatives.md",
-    "calculus/taylor.md",
-    "arithmetic/index.md",
-    "_journal/2026-03/2026-03-03.md",
-    "algebra/polynomials.md",
-    "calculus/continuity.md",
-    "_journal/2026-03/2026-03-02.md",
-    "calculus/index.md",
-    "dnd/index.md",
-    "calculus/riemann.md",
-    "geometry/hyperbolic.md",
-    "_journal/2026-03/2026-03-01.md",
-    "dnd/combat.md",
-    "dnd/creatures.md",
     "calculus/images/cauchy-mvt.png",
-    "binary/integer.md",
     "_journal/2026-03",
     "algebra/images/completing-square-unlabeled.png",
     "algebra/images/completing-square.png",
@@ -212,8 +214,6 @@
     "trigonometry/images/unit-circle-n1-0.png",
     "complexity/images/recursion-tree-one.png",
     "complexity/images/recursion-tree-two.png",
-    "complexity/images/recursion-tree-zero.png",
-    "complexity/images/big-omega-notation.png",
     "dnd",
     "parsing",
     "_journal/2026/2026-01",

@@ -1315,7 +1315,7 @@ Consider the following `struct`. What type does `x.field` resolve to in an expre
 ```c
 struct { signed int field : 4 } x;
 ```
-Back: This is compiler-specific.
+Back: This is implementation specific.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1763516089291-->
 END%%
@@ -1326,7 +1326,7 @@ Consider the following `struct`. What type does `x.field` resolve to in an expre
 ```c
 struct { unsigned int field : 4 } x;
 ```
-Back: This is compiler-specific.
+Back: This is implementation specific.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
 <!--ID: 1759498725531-->
 END%%
