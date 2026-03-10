@@ -1179,7 +1179,7 @@ END%%
 The general form of the **iterative command** is: $$\begin{align*} \textbf{do } & B_1 \rightarrow S_1 \\ \textbf{ | } & B_2 \rightarrow S_2 \\ & \quad\cdots \\ \textbf{ | } & B_n \rightarrow S_n \\ \textbf{od } & \end{align*}$$
 
 We denote the iterative command as $\text{DO}$ and define $\text{DO}$ in terms of $wp$ as: $$wp(\text{DO}, R) = \exists k \geq 0, H_k(R)$$
-where $H_k$ is given [[sequences/index|recursive definition]]: $$\begin{align*} H_0(R) & = \neg (B_1 \lor \cdots \lor B_n) \land R \\ H_{k+1}(R) & = H_0(R) \lor wp(\text{IF}, H_k(R)) \end{align*}$$
+where $H_k$ is given [[sequences|recursive definition]]: $$\begin{align*} H_0(R) & = \neg (B_1 \lor \cdots \lor B_n) \land R \\ H_{k+1}(R) & = H_0(R) \lor wp(\text{IF}, H_k(R)) \end{align*}$$
 
 %%ANKI
 Basic

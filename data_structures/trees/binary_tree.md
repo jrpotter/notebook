@@ -140,7 +140,7 @@ Basic
 How many nodes are in a perfect binary tree of height $h$?
 Back: $2^{h+1} - 1$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: sequence
+Tags: calculus::sequence
 <!--ID: 1713118128255-->
 END%%
 
@@ -149,7 +149,7 @@ Basic
 How many internal nodes are in a perfect binary tree of height $h$?
 Back: $2^h - 1$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: sequence
+Tags: calculus::sequence
 <!--ID: 1714080353472-->
 END%%
 
@@ -158,7 +158,7 @@ Basic
 How many external nodes are in a perfect binary tree of height $h$?
 Back: $2^h$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: sequence
+Tags: calculus::sequence
 <!--ID: 1714080353469-->
 END%%
 
@@ -167,7 +167,7 @@ Basic
 How many nodes are on level $d$ of a perfect binary tree?
 Back: $2^d$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: sequence
+Tags: calculus::sequence
 <!--ID: 1714080353465-->
 END%%
 
@@ -176,7 +176,7 @@ Basic
 How does the number of internal nodes compare to the number of external nodes in a perfect binary tree?
 Back: There is one more external node than internal node.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: sequence
+Tags: calculus::sequence
 <!--ID: 1714080353476-->
 END%%
 
