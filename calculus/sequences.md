@@ -255,7 +255,120 @@ END%%
 
 ### Algebraic Limit Theorem
 
-TODO
+The following identities assume $(a_n)$ and $(b_n)$ are convergent sequences such that $$\lim_{n \rightarrow +\infty} a_n = A \quad\text{and}\quad \lim_{n \rightarrow +\infty} b_n = B.$$
+
+* $\lim_{n \rightarrow +\infty} \left[ (a_n) + (b_n) \right] = A + B$
+* $\lim_{n \rightarrow +\infty} \left[ (a_n) - (b_n) \right] = A - B$
+* $\lim_{n \rightarrow +\infty} \left[ (a_n) \cdot (b_n) \right] = A \cdot B$
+* If $B \neq 0$, $\lim_{n \rightarrow +\infty} \left[ (a_n) \div (b_n) \right] = A \div B$
+
+%%ANKI
+Basic
+Let $(a_n)$ and $(b_n)$ be sequences such that $(a_n) \rightarrow A$ and $(b_n) \rightarrow B$ as $n \rightarrow +\infty$. What does the following equal? $$\lim_{n \rightarrow +\infty} \left[ (a_n) + (b_n) \right]$$
+Back: $A + B$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773245780764-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ and $(b_n)$ be sequences such that $(a_n) \rightarrow A$ and $(b_n) \rightarrow B$ as $n \rightarrow +\infty$. What does the following equal? $$\lim_{n \rightarrow +\infty} \left[ (a_n) - (b_n) \right]$$
+Back: $A - B$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773245780765-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ and $(b_n)$ be sequences such that $(a_n) \rightarrow A$ and $(b_n) \rightarrow B$ as $n \rightarrow +\infty$. What does the following equal? $$\lim_{n \rightarrow +\infty} \left[ (a_n) \cdot (b_n) \right]$$
+Back: $A \cdot B$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773245780766-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ and $(b_n)$ be sequences such that $(a_n) \rightarrow A$ and $(b_n) \rightarrow B$ as $n \rightarrow +\infty$. What does the following equal? $$\lim_{n \rightarrow +\infty} \left[ (a_n) \div (b_n) \right]$$
+Back: $A \div B$ provided $B \neq 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773245780767-->
+END%%
+
+### Monotonicity
+
+A monotonic sequence is convergent if and only if it is bounded.
+
+%%ANKI
+Basic
+What does it mean for a sequence $(a_n)$ to be bounded?
+Back: There exists some $M > 0$ such that $|a_n| < M$ for all $n \geq n_0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773245780768-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a sequence $(a_n)$ to be unbounded?
+Back: $(a_n)$ is not bounded.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773245780769-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a sequence $(a_n)$ to be monotonic?
+Back: $(a_n)$ is either increasing or decreasing.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773245780770-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a sequence $(a_n)$ to be strictly monotonic?
+Back: $(a_n)$ is either strictly increasing or strictly decreasing.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773245780771-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a sequence $(a_n)_{n \geq 0}$ to be increasing?
+Back: For all $n \geq 0$, $a_n \leq a_{n+1}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773245780772-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a sequence $(a_n)_{n \geq 0}$ to be strictly increasing?
+Back: For all $n \geq 0$, $a_n < a_{n+1}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773245780773-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a sequence $(a_n)_{n \geq 0}$ to be decreasing?
+Back: For all $n \geq 0$, $a_n \geq a_{n+1}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773245780774-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a sequence $(a_n)_{n \geq 0}$ to be strictly decreasing?
+Back: For all $n \geq 0$, $a_n > a_{n+1}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773245780775-->
+END%%
+
+%%ANKI
+Basic
+A monotonic sequence is convergent if and only if what condition holds?
+Back: The sequence is bounded.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773245780776-->
+END%%
 
 ## Common Examples
 

@@ -1475,7 +1475,7 @@
     "_journal/2025-07-11.md": "828e1a48ca2cc873b7b02de215e29068",
     "_journal/2025-07/2025-07-10.md": "2a842977bb13a634ce4c64feb8fd410d",
     "geometry/curvature.md": "9f80263cdd29886e7d0b6aafd97bcf2d",
-    "calculus/limits.md": "9461c9f16064be5a52b15099b34b86ef",
+    "calculus/limits.md": "b491cfcc95662a3a1b1f6c0b7b4cbec1",
     "_journal/2025-07-12.md": "55ae40960fc3bb841284e40a4c66d833",
     "_journal/2025-07/2025-07-11.md": "cd8e5414705e77e8fa0cefbe03098202",
     "networking/ip/class.md": "94b2c1dfcf8710d947768ba91f8849ac",
@@ -2399,7 +2399,7 @@
     "network/internetwork/proxies.md": "d3d0fd41a7fb6687a5d096f5146ccc01",
     "network/internetwork/routers.md": "659f5ef15522c12948f1bd0309e8b7f8",
     "network/session/sso.md": "baa3a2de8f922b5650e38d9a64a36bdd",
-    "network/session/oauth.md": "94df27728ce0e5707d6727991855b283",
+    "network/session/oauth.md": "80daef9e988b6f793778f68674baa88e",
     "_journal/2026-01-30.md": "e77ff545ec4f9c6edea884573492db10",
     "_journal/2026-01/2026-01-29.md": "c5bf9c4201f7c6d2cc98726a196ece6b",
     "network/session/jwt.md": "04c1d8fac2a45c8e4a950588d31fab6a",
@@ -2517,8 +2517,8 @@
     "_journal/2026-03/2026-03-09.md": "7f2dccf71176ffdeee38d97fca45f4a7",
     "_journal/2026-03/2026-03-08.md": "679d7f12743c9f591e820caf087a65b1",
     "_journal/2026-03/2026-03-07.md": "b6e9978758063cca09e641920050bd0a",
-    "calculus/sequences.md": "fc91f9c26230b5429094625d275b56fd",
-    "_journal/2026-03-11.md": "cfbb07f15f906d31be0dfe4f71132602",
+    "calculus/sequences.md": "483aa0f7a15eb14326fb8e4e79d11208",
+    "_journal/2026-03-11.md": "3baf69f4c419df94fde0e84b1f4526cb",
     "_journal/2026-03/2026-03-10.md": "8d9741a5fb912ce70e45a44fc7fd8436"
   },
   "fields_dict": {

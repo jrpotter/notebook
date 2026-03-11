@@ -204,7 +204,7 @@ END%%
 
 %%ANKI
 Basic
-with respect to the authorization code grant, what does "consent" refer to?
+With respect to the authorization code grant, what does "consent" refer to?
 Back: The resource owner verifying whether they want to give the client access to some resources.
 Reference: OktaDev. _An Illustrated Guide to OAuth and OpenID Connect_. 2019. 16:35. [https://www.youtube.com/watch?v=t18YB3xDfXI](https://www.youtube.com/watch?v=t18YB3xDfXI).
 <!--ID: 1769786032287-->
