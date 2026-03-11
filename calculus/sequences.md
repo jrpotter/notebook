@@ -9,10 +9,12 @@ tags:
 
 ## Overview
 
-A function $f$ whose domain is the set of all positive integers $1, 2, 3, \ldots$ is called an **infinite sequence**. The function value $f(n)$ is called the $n$th term of the sequence. Typically sequences are described using one of:
+A function $f$ whose domain is the set of [[natural_numbers|natural numbers]] is called an **infinite sequence**. The function value $f(n)$ is called the $n$th term of the sequence. Sequences are described using one of:
 
 * **Closed Formulas**. A formula that can be computed using a fixed number of "well-known" standard operations.
 * **Recursive Definitions**. Consists of **initial conditions** and a [[recurrences|recurrence relation]].
+
+We often denote a sequence as $(a_n)_{n \geq 0}$ where $a_i = f(i)$ for all $i \in \mathbb{N}$. Other index patterns are denoted in the natural way.
 
 %%ANKI
 Basic
@@ -171,6 +173,89 @@ Back: First find a recursive definition.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709302343255-->
 END%%
+
+## Convergence
+
+A sequence $(a_n)_{n \geq 0}$ is said to have a **limit** $L$ if, for every $\epsilon > 0$, there exists an $N > 0$ such that $$\lvert a_n - L \rvert < \epsilon \quad\text{for all}\quad n \geq N.$$
+
+In this case, we say the sequence $(a_n)$ **converges** to $L$ and we write $$\lim_{n \rightarrow \infty} a_n = L, \quad\text{or}\quad (a_n) \rightarrow L \text{ as } n \rightarrow \infty.$$
+
+A sequence which does not converge is called **divergent**.
+
+%%ANKI
+Basic
+Suppose sequence $(a_n)$ has a limit $L$. How is this formally defined?
+Back: For every $\epsilon > 0$, there exists an $N > 0$ such that if $n \geq N$ then $\lvert a_n - L \rvert < \epsilon$.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773195941727-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a sequence $(a_n)$ to be convergent?
+Back: $(a_n)$ has a limit.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773195941732-->
+END%%
+
+%%ANKI
+Cloze
+A sequence is either {convergent} or {divergent}.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773195941734-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ be a sequence. What does the following denote? $$\lim_{n \rightarrow \infty} a_n = L$$
+Back: The sequence $(a_n)$ has a limit $L$.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773195941737-->
+END%%
+
+%%ANKI
+Basic
+Suppose sequence $(a_n)$ coverges to $x$. How is this formally defined?
+Back: For every $\epsilon > 0$, there exists an $N > 0$ such that if $n \geq N$ then $\lvert a_n - x \rvert < \epsilon$.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773195941741-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a sequence to be divergent?
+Back: It does not converge to a value.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773195941744-->
+END%%
+
+%%ANKI
+Basic
+Suppose the limit of a sequence is finite. Is it convergent or divergent?
+Back: Convergent since the limit exists.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773235930949-->
+END%%
+
+%%ANKI
+Basic
+Suppose the limit of a sequence is infinite. Is it convergent or divergent?
+Back: Divergent.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773235930960-->
+END%%
+
+%%ANKI
+Basic
+Consider the following sequence $f(n) = (-1)^n$. Is this convergent or divergent and why?
+Back: Divergent. It oscilates between $1$ and $-1$ indefinitely.
+Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773235930963-->
+END%%
+
+### Algebraic Limit Theorem
+
+TODO
 
 ## Common Examples
 
