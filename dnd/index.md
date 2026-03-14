@@ -192,7 +192,7 @@ END%%
 %%ANKI
 Basic
 How is the Proficiency Bonus of a monster calculated?
-Back: As $1 + \lceil \text{CR} \div 4 \rceil$.
+Back: As $\lceil \text{CR} \div 4 \rceil + 1$.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1768510925311-->
 END%%

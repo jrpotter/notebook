@@ -1,7 +1,7 @@
 ---
 title: Sequences
 TARGET DECK: Obsidian::STEM
-FILE TAGS: calculus::sequence
+FILE TAGS: calculus::sequences
 tags:
   - calculus
   - sequence
@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-A function $f$ whose domain is the set of [[natural_numbers|natural numbers]] is called an **infinite sequence**. The function value $f(n)$ is called the $n$th term of the sequence. Sequences are described using one of:
+A function $f$ whose domain is the set of [[natural_numbers|natural numbers]] is called an **(infinite) sequence**. The function value $f(n)$ is called the $n$th term of the sequence. Sequences are described using one of:
 
 * **Closed Formulas**. A formula that can be computed using a fixed number of "well-known" standard operations.
 * **Recursive Definitions**. Consists of **initial conditions** and a [[recurrences|recurrence relation]].
@@ -186,7 +186,7 @@ A sequence which does not converge is called **divergent**.
 Basic
 Suppose sequence $(a_n)$ has a limit $L$. How is this formally defined?
 Back: For every $\epsilon > 0$, there exists an $N > 0$ such that if $n \geq N$ then $\lvert a_n - L \rvert < \epsilon$.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773195941727-->
 END%%
 
@@ -194,14 +194,14 @@ END%%
 Basic
 What does it mean for a sequence $(a_n)$ to be convergent?
 Back: $(a_n)$ has a limit.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773195941732-->
 END%%
 
 %%ANKI
 Cloze
 A sequence is either {convergent} or {divergent}.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773195941734-->
 END%%
 
@@ -209,7 +209,7 @@ END%%
 Basic
 Let $(a_n)$ be a sequence. What does the following denote? $$\lim_{n \rightarrow \infty} a_n = L$$
 Back: The sequence $(a_n)$ has a limit $L$.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773195941737-->
 END%%
 
@@ -217,7 +217,7 @@ END%%
 Basic
 Suppose sequence $(a_n)$ coverges to $x$. How is this formally defined?
 Back: For every $\epsilon > 0$, there exists an $N > 0$ such that if $n \geq N$ then $\lvert a_n - x \rvert < \epsilon$.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773195941741-->
 END%%
 
@@ -225,7 +225,7 @@ END%%
 Basic
 What does it mean for a sequence to be divergent?
 Back: It does not converge to a value.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773195941744-->
 END%%
 
@@ -233,7 +233,7 @@ END%%
 Basic
 Suppose the limit of a sequence is finite. Is it convergent or divergent?
 Back: Convergent since the limit exists.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773235930949-->
 END%%
 
@@ -241,7 +241,7 @@ END%%
 Basic
 Suppose the limit of a sequence is infinite. Is it convergent or divergent?
 Back: Divergent.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773235930960-->
 END%%
 
@@ -249,8 +249,23 @@ END%%
 Basic
 Consider the following sequence $f(n) = (-1)^n$. Is this convergent or divergent and why?
 Back: Divergent. It oscilates between $1$ and $-1$ indefinitely.
-Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773235930963-->
+END%%
+
+%%ANKI
+Basic
+Consider sequence $(a_n)_{n \geq 1}$ given by $a_n = u_n + iv_n$. What does the following equal? $$\lim_{n \rightarrow +\infty} a_n$$
+Back: $$\lim_{n \rightarrow +\infty} u_n + i\lim_{n \rightarrow +\infty} v_n$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773388774074-->
+END%%
+
+%%ANKI
+Cloze
+A complex-valued sequence converges if and only if {the real part} and the {imaginary part} converge separately.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773388774077-->
 END%%
 
 ### Algebraic Limit Theorem
@@ -309,7 +324,7 @@ END%%
 %%ANKI
 Basic
 What does it mean for a sequence $(a_n)$ to be unbounded?
-Back: $(a_n)$ is not bounded.
+Back: For all $M > 0$, there exists an $\lvert a_n \rvert > M$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773245780769-->
 END%%
@@ -370,13 +385,52 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773245780776-->
 END%%
 
+### Asymptotic Equality
+
+Two sequences $(a_n)$ and $(b_n)$ of [[complex/index|complex]] numbers are said to be **asymptotically equal** if $$\lim_{n \rightarrow +\infty} \frac{a_n}{b_n} = 1.$$
+
+This relation is denoted as $a_n \sim b_n$ as $n \rightarrow +\infty$.
+
+%%ANKI
+Basic
+Let $(a_n)$ and $(b_n)$ be sequences of complex numbers. What does it mean for them to be asymptotically equal?
+Back: $$\lim_{n \rightarrow +\infty} \frac{a_n}{b_n} = 1$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773523825813-->
+END%%
+
+%%ANKI
+Basic
+How do we denote asymptotic equality of sequences $(a_n)$ and $(b_n)$?
+Back: As "$a_n \sim b_n$ as $n \rightarrow +\infty$".
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773523825822-->
+END%%
+
+%%ANKI
+Basic
+How is the following pronounced? $$a_n \sim b_n \quad\text{as}\quad n \rightarrow +\infty$$
+Back: "$a_n$ is asymptotically equal to $b_n$."
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773523825825-->
+END%%
+
+%%ANKI
+Basic
+How do we denote that sequences $(a_n)$ and $(b_n)$ behave in essentially the same way for sufficiently large $n$?
+Back: $a_n \sim b_n$ as $n \rightarrow +\infty$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773523825828-->
+END%%
+
 ## Common Examples
 
 ### Arithmetic
 
-An **arithmetic sequence** $(a_n)_{n \geq 0}^d$ is a sequence in which each term differs by a constant $d$. It has closed formula $a_n = a + nd$. Given initial term $a_0$, it has recursive definition $a_n = a_{n-1} + d$.
+An **arithmetic sequence** $(a_n)_{n \geq 0}^d$ is a sequence in which each term differs by the **common difference** constant $d$.
 
-Let $(a_n)_{n \geq 0}$ be an arithmetic sequence. Then $$\large \sum_{k=0}^n a_k = \frac{(a_0 + a_n)(n + 1)}{2}.$$
+* *Closed Formula*. $a_n = a + nd$.
+* *Recursive Definition*. $a_n = a_{n-1} + d$ given initial term $a_0$.
 
 %%ANKI
 Basic
@@ -442,94 +496,12 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1709664600170-->
 END%%
 
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 0}$ be an arithmetic sequence. What is the closed formula of $\sum_{k=0}^n a_k$?
-Back: $$\frac{(a_0 + a_n)(n + 1)}{2}$$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600172-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 1}$ be an arithmetic sequence. What is the closed formula of $\sum_{k=1}^n a_k$?
-Back: $$\frac{(a_1 + a_n)(n)}{2}$$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600173-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 1}$ be an arithmetic sequence. What does term $n$ correspond to in the following? $$\sum a_k = \frac{(a_1 + a_n)(n)}{2}$$
-Back: The number of terms in the summation.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600175-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 1}$ be an arithmetic sequence. How do you expand $\sum_{k=1}^n a_k$ to derive its closed formula?
-Back:
-$$\begin{matrix}
-S & = & a_1 & + & a_2 & + & \cdots & + & a_n \\
-S & = & a_n & + & a_{n-1} & + & \cdots & + & a_1 \\
-\hline
-2S & = &(a_1 + a_n) & + & (a_1 + a_n) & + & \cdots & + & (a_1 + a_n) 
-\end{matrix}$$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600176-->
-END%%
-
-%%ANKI
-Basic
-Interpreted as an arithmetic sequence, what is the common difference of the triangular numbers?
-Back: $1$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600178-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 1}$ be an arithmetic sequence. What does term $2$ correspond to in the following? $$\sum a_k = \frac{(a_1 + a_n)(n)}{2}$$
-Back: The double-counting that occurs when adding the summation to itself.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600179-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 1}$ be an arithmetic sequence. How do we visualize the role of term $2$ in the following? $$\sum a_k = \frac{(a_1 + a_n)(n)}{2}$$
-Back:
-```
-* * * * -
-* * * - -
-* * - - -
-* - - - -
-```
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600181-->
-END%%
-
-%%ANKI
-Cloze
-You can find the partial sums of {arithmetic} sequences using the "reverse and add" strategy.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709666305449-->
-END%%
-
-%%ANKI
-Basic
-Why is a sequence of partial sums named the way it is?
-Back: Each term is found by adding a finite number of terms in an infinite sequence. 
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1713580109297-->
-END%%
-
 ### Geometric
 
-A **geometric sequence** $(a_n)_{n \geq 0}^r$ is a sequence in which each term differs by a constant multiple of $r$. It has closed formula $a_n = ar^n$. Given initial term $a_0$, it has recursive definition $a_n = ra_{n-1}$.
+A **geometric sequence** $(a_n)_{n \geq 0}^r$ is a sequence in which each term differs by a **common ratio** $r$.
 
-Let $(a_n)_{n \geq 0}^r$ be a geometric sequence. Then $$\large \sum_{k=0}^n a_k = \frac{a_0(1 - r^{n+1})}{1 - r}.$$
+* *Closed Formula*. $a_n = ar^n$.
+* *Recursive Definition*. $a_n = ra_{n-1}$ given initial term $a_0$.
 
 %%ANKI
 Basic
@@ -600,66 +572,6 @@ Cloze
 {1:Arithmetic} sequences are characterized by the common {2:difference}. {2:Geometric} sequences are characterized by the common {1:ratio}.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709664600158-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 0}^r$ be a geometric sequence. What is the closed formula of $\sum_{k=0}^n a_k$?
-Back: $$\frac{a_0(1 - r^{n+1})}{1 - r}$$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709666305433-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 1}^r$ be a geometric sequence. What is the closed formula of $\sum_{k=1}^n a_k$?
-Back: $$\frac{a_1(1 - r^n)}{1 - r}$$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709666305436-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 1}^r$ be a geometric sequence. What does term $n$ correspond to in the following? $$\sum a_k = \frac{a_1(1 - r^n)}{1 - r}$$
-Back: The number of terms in the summation.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709666305438-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 1}^r$ be a geometric sequence. How do you expand $\sum_{k=1}^n a_k$ to derive its closed formula?
-Back:
-$$\begin{matrix}
-S & = & a_1r^0 & + & a_1r^1 & + & \cdots & + & a_1r^{n-1} & + & 0 \\
-rS & = & 0 & + & a_1r^1 & + & \cdots & + & a_1r^{n-1} & + & a_1r^n \\
-\hline
-S - rS & = & a_1r^0 & & & & & & & - & a_1r^n 
-\end{matrix}$$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709666305441-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 1}^r$ be a geometric sequence. How is term $1 - r$ derived in the following? $$\sum a_k = \frac{a_1(1 - r^n)}{1 - r}$$
-Back: Given $S = \sum a_k$, by factoring out $S$ from $S - rS$.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709666356524-->
-END%%
-
-%%ANKI
-Cloze
-You can find the partial sums of {geometric} sequences using the "multiply and subtract" strategy.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709666305444-->
-END%%
-
-%%ANKI
-Cloze
-{1:Reverse} and {1:add} arithmetic sequences. {2:Multiply} and {2:subtract} geometric sequences.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709666305447-->
 END%%
 
 ### ∆ᵏ-constant Sequence

@@ -655,6 +655,22 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1753386691584-->
 END%%
 
+%%ANKI
+Basic
+Suppose $f(n) / g(n) \rightarrow 1$ as $n \rightarrow +\infty$. What limit does $g(n) / f(n)$ tend to as $n \rightarrow +\infty$?
+Back: $$\lim_{n \rightarrow +\infty} \frac{g(n)}{f(n)} = 1$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773521667551-->
+END%%
+
+%%ANKI
+Basic
+Suppose $f(n) / g(n) \rightarrow 1$ as $n \rightarrow +\infty$. How do we prove $g(n) / f(n) \rightarrow 1$ as $n \rightarrow +\infty$?
+Back: By applying the algebraic limit theorem.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773521667555-->
+END%%
+
 ## Squeeze Theorem
 
 Suppose that $f(x) \leq g(x) \leq h(x)$ for all $x \neq p$ in some neighborhood $N(p)$. Suppose also that $$\lim_{x \rightarrow p} f(x) = \lim_{x \rightarrow p} h(x) = A.$$

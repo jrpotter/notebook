@@ -863,63 +863,7 @@ END%%
 
 ### Telescoping
 
-**Telescoping** refers to the property of summations in which consecutive terms cancel out. We can use telescoping to solve recurrences of form $a_n = a_{n-1} + f(n)$ by noticing that: $$\begin{align*} a_1 - a_0 & = f(1) \\ a_2 - a_1 & = f(2) \\ \vdots \\ a_n - a_{n-1} & = f(n) \\ \hline a_n - a_0 & = \sum_{k=1}^n f(n) \end{align*}$$
-
-%%ANKI
-Basic
-What does it mean for a sum to be telescoping?
-Back: Pairs of consecutive terms in the summation cancel each other out.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1713810280068-->
-END%%
-
-%%ANKI
-Basic
-What imagery is invoked by the term "telescoping" with respect to a sum?
-Back: A collapsing telescope.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1713810280071-->
-END%%
-
-%%ANKI
-Basic
-What summands typically remain after evaluating a telescoping sum?
-Back: The first and the last.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1713810280074-->
-END%%
-
-%%ANKI
-Basic
-What is the result of the following after observing telescoping? $$(2 - 1) + (3 - 2) + \cdots + (100 - 99) + (101 - 100)$$
-Back: $-1 + 101$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1713810280076-->
-END%%
-
-%%ANKI
-Basic
-How is the following rewritten to highlight telescoping? $$(2 - 1) + (3 - 2) + \cdots + (100 - 99) + (101 - 100)$$
-Back: $$(-1 + 2) + (-2 + 3) + \cdots + (-99 + 100) + (-100 + 101)$$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1713810280079-->
-END%%
-
-%%ANKI
-Basic
-What is the result of the following? $\sum_{n=1}^N (a_n - a_{n-1})$
-Back: $a_N - a_0$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1713810280082-->
-END%%
-
-%%ANKI
-Basic
-What property is used to quickly verify the following identity? $$\sum_{n=1}^N (a_n - a_{n-1}) = a_N - a_0$$
-Back: This is a telescoping sum.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1713810280085-->
-END%%
+We can use [[series#Telescoping|telescoping]] to solve recurrences of form $a_n = a_{n-1} + f(n)$ by noticing that: $$\begin{align*} a_1 - a_0 & = f(1) \\ a_2 - a_1 & = f(2) \\ \vdots \\ a_n - a_{n-1} & = f(n) \\ \hline a_n - a_0 & = \sum_{k=1}^n f(n) \end{align*}$$
 
 %%ANKI
 Basic
@@ -952,7 +896,9 @@ END%%
 
 ### Iteration
 
-Iteration refers to the expansion of terms, starting at the initial conditions, in the hope of discovering a pattern. It is more general than [[#Telescoping|telescoping]] is. Consider $a_n = a_{n-1} + f(n)$ again. We solve with iteration like so: $$\begin{align*} a_1 & = a_0 + f(1) \\ a_2 & = (a_0 + f(1)) + f(2) \\ \vdots \\ a_n & = (\cdots(a_0 + f(1)) + f(2)) + \cdots) + f(n) \\ \hline a_n & = a_0 + \sum_{k=1}^n f(n) \end{align*}$$
+Iteration refers to the expansion of terms, starting at the initial conditions, in the hope of discovering a pattern. It is more general than [[#Telescoping|telescoping]] is.
+
+A recurrence of form $a_n = a_{n-1} + f(n)$ can be solved with iteration like so: $$\begin{align*} a_1 & = a_0 + f(1) \\ a_2 & = (a_0 + f(1)) + f(2) \\ \vdots \\ a_n & = (\cdots(a_0 + f(1)) + f(2)) + \cdots) + f(n) \\ \hline a_n & = a_0 + \sum_{k=1}^n f(n) \end{align*}$$
 
 %%ANKI
 Basic
@@ -1013,7 +959,7 @@ END%%
 
 %%ANKI
 Basic
-When solving recurrences, is telescoping or iteration a more general technique?
+When solving recurrences, which of telescoping or iteration is the more general technique?
 Back: Iteration.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1713998536738-->

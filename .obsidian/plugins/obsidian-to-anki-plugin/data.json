@@ -625,7 +625,8 @@
     "completing-square-unlabeled.png",
     "cauchy-mvt.png",
     "disjoint-set-linked-list.png",
-    "disjoint-set-forest.png"
+    "disjoint-set-forest.png",
+    "integral-test.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -1475,7 +1476,7 @@
     "_journal/2025-07-11.md": "828e1a48ca2cc873b7b02de215e29068",
     "_journal/2025-07/2025-07-10.md": "2a842977bb13a634ce4c64feb8fd410d",
     "geometry/curvature.md": "9f80263cdd29886e7d0b6aafd97bcf2d",
-    "calculus/limits.md": "b491cfcc95662a3a1b1f6c0b7b4cbec1",
+    "calculus/limits.md": "1bfb9775d9764e7ba406da44a1a62884",
     "_journal/2025-07-12.md": "55ae40960fc3bb841284e40a4c66d833",
     "_journal/2025-07/2025-07-11.md": "cd8e5414705e77e8fa0cefbe03098202",
     "networking/ip/class.md": "94b2c1dfcf8710d947768ba91f8849ac",
@@ -1764,8 +1765,8 @@
     "_journal/2025-10/2025-10-21.md": "afa7eaf4e85392cea5587f263a52e246",
     "data_structures/trees/binary_search_tree.md": "7fac996d0b6d6b8d845c76aaad8a759f",
     "data_structures/trees/b-tree.md": "f427df6f03db501393e29f78cc168b06",
-    "data_structures/trees/binary_tree.md": "c7550a0138b893d9dfa73110ebf2611e",
-    "data_structures/trees/index.md": "0ec91059a8577bfee0c7a9d8250349a1",
+    "data_structures/trees/binary_tree.md": "a909dd1a4e6e7965ddfdb9dedac13bb2",
+    "data_structures/trees/index.md": "6ae0a690da634111eff60e30986c8c9f",
     "algebra/functions.md": "adf20a5e8beb03961de1d1baff7c8596",
     "_journal/2025-10-23.md": "39f4ad1da40f17280f0df02342cd43e9",
     "_journal/2025-10/2025-10-22.md": "c4fedcaf6d2622cc79eedc07b1ef851d",
@@ -2345,7 +2346,7 @@
     "_journal/2026-01/2026-01-11.md": "3568613e7a26563df0f29be584ef73bd",
     "network/link/bridge.md": "aa75359929364e6a1cadb01ad24684d4",
     "network/link/node.md": "2e6e047d4231dcbefd682fc41f2caca3",
-    "dnd/index.md": "7885a881d84a35fef0c1af50fc7a1baf",
+    "dnd/index.md": "01e67b43c7e7948401dc77f9ea55bed8",
     "dnd/abilities.md": "df7454b8a9f1f995f4c4ba881b9969fd",
     "programming/loop_invariant.md": "d3a437634c124203b12a638a6db1ad8f",
     "_journal/2026-01-15.md": "57ed53452af481664535827ce6c69ad1",
@@ -2357,7 +2358,7 @@
     "_journal/2026-01-17.md": "033d8b866c2bd1c15d913163044a61d9",
     "_journal/2026-01/2026-01-16.md": "dccc785e46af0478c2ff70304dca6bd7",
     "data_structures/disjoint-set.md": "ff892839385bd6e1079a0fb53d2c46bb",
-    "complexity/recurrences.md": "3a7f98cbecd694d6e98a9f014e602c99",
+    "complexity/recurrences.md": "b1d670360f7bf74ff40efb93a5c82940",
     "dnd/actions.md": "93833f2fae8411c798118e5918011068",
     "_journal/2026-01-18.md": "891355dccd8a49206d71120d1fc4bfe3",
     "_journal/2026-01/2026-01-17.md": "033d8b866c2bd1c15d913163044a61d9",
@@ -2517,9 +2518,16 @@
     "_journal/2026-03/2026-03-09.md": "7f2dccf71176ffdeee38d97fca45f4a7",
     "_journal/2026-03/2026-03-08.md": "679d7f12743c9f591e820caf087a65b1",
     "_journal/2026-03/2026-03-07.md": "b6e9978758063cca09e641920050bd0a",
-    "calculus/sequences.md": "483aa0f7a15eb14326fb8e4e79d11208",
-    "_journal/2026-03-11.md": "3baf69f4c419df94fde0e84b1f4526cb",
-    "_journal/2026-03/2026-03-10.md": "8d9741a5fb912ce70e45a44fc7fd8436"
+    "calculus/sequences.md": "c54c862c8b549caebaf275d62a63096e",
+    "_journal/2026-03-11.md": "689d2bd9cd0ea3893d0baed4789a45c6",
+    "_journal/2026-03/2026-03-10.md": "1f2179b9469c6f446ca8b60285cf27d1",
+    "calculus/series.md": "87c487c4adc0715dce603b321bbbc5e4",
+    "_journal/2026-03-12.md": "a7005f82c8e53f36b36705d1671df7dd",
+    "_journal/2026-03/2026-03-11.md": "689d2bd9cd0ea3893d0baed4789a45c6",
+    "_journal/2026-03-13.md": "f5a13a4a86d04d145f66aabb0d020b52",
+    "_journal/2026-03/2026-03-12.md": "a7005f82c8e53f36b36705d1671df7dd",
+    "_journal/2026-03-14.md": "0e4f995d63feb31f98f00b0b80535928",
+    "_journal/2026-03/2026-03-13.md": "f5a13a4a86d04d145f66aabb0d020b52"
   },
   "fields_dict": {
     "Basic": [
