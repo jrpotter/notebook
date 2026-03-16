@@ -596,6 +596,240 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773624530711-->
 END%%
 
+### Root Test
+
+Let $\sum a_n$ be a series of nonnegative terms such that $$a_n^{1/n} \rightarrow R \quad\text{as}\quad n \rightarrow +\infty.$$
+
+* If $R < 1$, the series converges.
+* If $R > 1$, the series diverges.
+* If $R = 1$, the test is inconclusive.
+
+%%ANKI
+Cloze
+Suppose $a_n \geq 0$ and $a_n^{1/n} \rightarrow R$ as $n \rightarrow +\infty$. If {$R < 1$} then $\sum a_n$ {converges}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110265-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $a_n \geq 0$ and $a_n^{1/n} \rightarrow R$ as $n \rightarrow +\infty$. If {$R > 1$} then $\sum a_n$ {diverges}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110266-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $a_n \geq 0$ and $a_n^{1/n} \rightarrow R$ as $n \rightarrow +\infty$. If {$R = 1$} then $\sum a_n$ {either converges or diverges}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110267-->
+END%%
+
+%%ANKI
+Basic
+What conditions must $\sum a_n$ satisfy before we can attempt to apply the root test?
+Back: $a_n \geq 0$ for sufficiently large $n$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110268-->
+END%%
+
+%%ANKI
+Basic
+The root test is a specialization of what other convergence test?
+Back: The direct comparison test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110269-->
+END%%
+
+%%ANKI
+Basic
+The root test is a direct comparison test comparing a series against what other kind of series?
+Back: A geometric series.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110270-->
+END%%
+
+%%ANKI
+Basic
+Let $\sum a_n$ be a series of nonnegative terms. What inequality involving term $a_n$ is used to derive the root test?
+Back: $0 \leq a_n \leq x^n$ where $0 < x < 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110271-->
+END%%
+
+%%ANKI
+Basic
+With regards to the root test, *why* do we require $0 < x < 1$ when considering the following inequality? $$0 \leq a_n \leq x^n$$
+Back: Because only then does the geometric series $\sum x^n$ converge.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110272-->
+END%%
+
+%%ANKI
+Basic
+Apply the root test to $\sum a_n$. What sequence do we find the limit of?
+Back: $a_n^{1/n}$ for sufficiently large $n$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110273-->
+END%%
+
+%%ANKI
+Basic
+Apply the root test to $\sum a_n$. How many different limit value cases are considered?
+Back: Three.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110274-->
+END%%
+
+%%ANKI
+Basic
+Apply the root test to $\sum a_n$. What limit values $R$ are of importance?
+Back: $R < 1$, $R > 1$, and $R = 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110275-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the root test named the way it is?
+Back: Because it involves finding limits of sequence with terms of form $a_n^{1 / n}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110276-->
+END%%
+
+%%ANKI
+Basic
+Which convergence test is most applicable for determining convergence of the following? $$\sum_{n=3}^\infty \frac{1}{(\log{n})^n}$$
+Back: The root test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110277-->
+END%%
+
+%%ANKI
+Basic
+Apply the root test. Does the following converge or diverge? $$\sum_{n=3}^\infty \frac{1}{(\log{n})^n}$$
+Back: Converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110278-->
+END%%
+
+%%ANKI
+Basic
+Which two series does Apostol use to show the root test's inconclusive case?
+Back: $\sum 1 / n$ and $\sum 1 / n^2$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110279-->
+END%%
+
+%%ANKI
+Cloze
+The root test considers series with what kind of terms?
+Back: Nonnegative.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110280-->
+END%%
+
+### Ratio Test
+
+Let $\sum a_n$ be a series of positive terms such that $$\frac{a_{n+1}}{a_n} \rightarrow L \quad\text{as}\quad n \rightarrow +\infty.$$
+
+* If $L < 1$, the series converges.
+* If $L > 1$, the series diverges.
+* If $L = 1$, the test is inconclusive.
+
+%%ANKI
+Cloze
+Suppose $a_n > 0$ and $a_{n+1} / a_n \rightarrow L$ as $n \rightarrow +\infty$. If {$L < 1$} then $\sum a_n$ {converges}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110281-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $a_n > 0$ and $a_{n+1} / a_n \rightarrow L$ as $n \rightarrow +\infty$. If {$L > 1$} then $\sum a_n$ {diverges}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110282-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $a_n > 0$ and $a_{n+1} / a_n \rightarrow L$ as $n \rightarrow +\infty$. If {$L = 1$} then $\sum a_n$ {either converges or diverges}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110283-->
+END%%
+
+%%ANKI
+Basic
+What conditions must $\sum a_n$ satisfy before we can attempt to apply the ratio test?
+Back: $a_n > 0$ for sufficiently large $n$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110284-->
+END%%
+
+%%ANKI
+Basic
+The ratio test is a specialization of what other convergence test?
+Back: The direct comparison test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110285-->
+END%%
+
+%%ANKI
+Basic
+The ratio test is a direct comparison test comparing a series against what other kind of series?
+Back: A geometric series.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110286-->
+END%%
+
+%%ANKI
+Basic
+Apply the ratio test to $\sum a_n$. What sequence do we find the limit of?
+Back: $a_{n + 1} / a_n$ for sufficiently large $n$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110287-->
+END%%
+
+%%ANKI
+Basic
+Apply the ratio test to $\sum a_n$. How many different limit value cases are considered?
+Back: Three.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110288-->
+END%%
+
+%%ANKI
+Basic
+Apply the ratio test to $\sum a_n$. What limit values $L$ are of importance?
+Back: $L < 1$, $L > 1$, and $L = 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110289-->
+END%%
+
+%%ANKI
+Basic
+*Why* is the ratio test named the way it is?
+Back: Because it involves finding limits of the ratio of successive terms.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110290-->
+END%%
+
+%%ANKI
+Basic
+Which two series does Apostol use to show the ratio test's inconclusive case?
+Back: $\sum 1 / n$ and $\sum 1 / n^2$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110291-->
+END%%
+
+%%ANKI
+Cloze
+The ratio test considers series with what kind of terms?
+Back: Positive.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773693110292-->
+END%%
+
 ## Examples
 
 ### Arithmetic
