@@ -360,7 +360,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1772294761168-->
 END%%
 
-### Common Examples
+## Examples
 
 In each of the following examples, we assume $x \rightarrow 0$. Notice the use of [[limits#o-notation|o-notation]]. $$\begin{align*}
 \frac{1}{1 - x} & = 1 + x + x^2 + \cdots + x^n + o(x^n) \\

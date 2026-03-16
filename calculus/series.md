@@ -494,16 +494,26 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773525811514-->
 END%%
 
-#### p-series Test
+#### P-Test
 
-A $p$-series is an infinite series of the following form. Let $a \in \mathbb{N}$. Such a series converges if and only if $p > 1$. $$\sum_{n=a}^\infty \frac{1}{n^p}.$$
+Let $a \in \mathbb{Z}^+$ and $b \in \mathbb{R}^+$. A $p$-series and $p$-integral are those series and integrals of the following respective forms: $$\sum_{n=a}^\infty \frac{1}{n^p} \quad\text{and}\quad \int_b^\infty \frac{1}{x^p} \,dx.$$
+
+The **$p$-test for series** (or **$p$-series test**) states that such a series converges if and only if $p > 1$. Likewise, the **$p$-test for integrals** (or **$p$-integral test**) states that such an integral converges if and only if $p > 1$.
 
 %%ANKI
 Basic
 What is a $p$-series?
-Back: Given an $a \in \mathbb{N}$, a series of the form $$\sum_{n=a}^\infty \frac{1}{n^p}.$$
+Back: Given an $a \in \mathbb{Z}^+$ and some constant $p$, a series of the form $$\sum_{n=a}^\infty \frac{1}{n^p}.$$
 Reference: _Wikipedia_. “Convergence tests.” December 24, 2025. [https://en.wikipedia.org/w/index.php?title=Convergence_tests](https://en.wikipedia.org/w/index.php?title=Convergence_tests&oldid=1329192858).
 <!--ID: 1773531877551-->
+END%%
+
+%%ANKI
+Basic
+What is a $p$-integral?
+Back: Given a $b \in \mathbb{R}^+$ and some constant $p$, an integral of the form $$\sum_{n=b}^\infty \frac{1}{x^p} \,dx.$$
+Reference: _Wikipedia_. “Convergence tests.” December 24, 2025. [https://en.wikipedia.org/w/index.php?title=Convergence_tests](https://en.wikipedia.org/w/index.php?title=Convergence_tests&oldid=1329192858).
+<!--ID: 1773624530686-->
 END%%
 
 %%ANKI
@@ -516,10 +526,26 @@ END%%
 
 %%ANKI
 Basic
+The $p$-integral test is a corollary of what other convergence test?
+Back: The integral test.
+Reference: _Wikipedia_. “Convergence tests.” December 24, 2025. [https://en.wikipedia.org/w/index.php?title=Convergence_tests](https://en.wikipedia.org/w/index.php?title=Convergence_tests&oldid=1329192858).
+<!--ID: 1773624530697-->
+END%%
+
+%%ANKI
+Basic
 When does the following series converge? $$\sum_{n=1}^\infty \frac{1}{n^p}$$
 Back: If and only if $p > 1$.
 Reference: _Wikipedia_. “Convergence tests.” December 24, 2025. [https://en.wikipedia.org/w/index.php?title=Convergence_tests](https://en.wikipedia.org/w/index.php?title=Convergence_tests&oldid=1329192858).
 <!--ID: 1773531877565-->
+END%%
+
+%%ANKI
+Basic
+When does the following integral converge? $$\int_1^\infty \frac{1}{x^p} \,dx$$
+Back: If and only if $p > 1$.
+Reference: _Wikipedia_. “Convergence tests.” December 24, 2025. [https://en.wikipedia.org/w/index.php?title=Convergence_tests](https://en.wikipedia.org/w/index.php?title=Convergence_tests&oldid=1329192858).
+<!--ID: 1773624530700-->
 END%%
 
 %%ANKI
@@ -532,6 +558,14 @@ END%%
 
 %%ANKI
 Basic
+Does the following converge or diverge? Why? $$\int_{1}^\infty \frac{1}{x^2} \,dx$$
+Back: Converges. This follows directly from the $p$-integral test.
+Reference: _Wikipedia_. “Convergence tests.” December 24, 2025. [https://en.wikipedia.org/w/index.php?title=Convergence_tests](https://en.wikipedia.org/w/index.php?title=Convergence_tests&oldid=1329192858).
+<!--ID: 1773624530704-->
+END%%
+
+%%ANKI
+Basic
 Does the following converge or diverge? Why? $$\sum_{n=1}^\infty \frac{1}{\sqrt{n}}$$
 Back: Diverges. This follows directly from the $p$-series test.
 Reference: _Wikipedia_. “Convergence tests.” December 24, 2025. [https://en.wikipedia.org/w/index.php?title=Convergence_tests](https://en.wikipedia.org/w/index.php?title=Convergence_tests&oldid=1329192858).
@@ -540,13 +574,29 @@ END%%
 
 %%ANKI
 Basic
-Does the following series converge or diverge. Why? $$\sum_{n=1}^\infty \frac{\lvert \sin{nx} \rvert}{n^2}$$
-Back: Converges. This follow from direct comparison with $$\sum_{n=1}^\infty \frac{1}{n^2}.$$
+Does the following converge or diverge? Why? $$\int_{1}^\infty \frac{1}{\sqrt{x}} \,dx$$
+Back: Diverges. This follows directly from the $p$-integral test.
+Reference: _Wikipedia_. “Convergence tests.” December 24, 2025. [https://en.wikipedia.org/w/index.php?title=Convergence_tests](https://en.wikipedia.org/w/index.php?title=Convergence_tests&oldid=1329192858).
+<!--ID: 1773624530708-->
+END%%
+
+%%ANKI
+Basic
+Does the following converge or diverge. Why? $$\sum_{n=1}^\infty \frac{\lvert \sin{nx} \rvert}{n^2}$$
+Back: Converges. This follows by direct comparison with $$\sum_{n=1}^\infty \frac{1}{n^2}.$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773531877582-->
 END%%
 
-## Common Examples
+%%ANKI
+Basic
+Does the following converge or diverge. Why? $$\int_{1}^\infty \frac{\lvert \sin{cx} \rvert}{x^2} \,dx$$
+Back: Converges. This follows by direct comparison with $$\int_{1}^\infty \frac{1}{x^2} \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773624530711-->
+END%%
+
+## Examples
 
 ### Arithmetic
 

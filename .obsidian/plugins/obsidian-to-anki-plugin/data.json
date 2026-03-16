@@ -2379,7 +2379,7 @@
     "geometry/hyperbolic.md": "6c195f8446597e533a988735605728fe",
     "_journal/2026-01-26.md": "69649d068c4f18573809cfac071def93",
     "_journal/2026-01/2026-01-25.md": "848164f3adc7f946d2416802fef0c3db",
-    "calculus/taylor.md": "e89967f6da83694364ea3483b8ed9363",
+    "calculus/taylor.md": "1e622d099a1557bb9cfcf2b91dbdda90",
     "_journal/2026-01-27.md": "7c515c8198dc19c8cd2a3dc2c260acfb",
     "_journal/2026-01/2026-01-26.md": "181eed399bb58d2da20dfc938ecc26b0",
     "_journal/2026-01-28.md": "aa776c9773ffdbe3b8ebd3d329de330a",
@@ -2518,16 +2518,18 @@
     "_journal/2026-03/2026-03-09.md": "7f2dccf71176ffdeee38d97fca45f4a7",
     "_journal/2026-03/2026-03-08.md": "679d7f12743c9f591e820caf087a65b1",
     "_journal/2026-03/2026-03-07.md": "b6e9978758063cca09e641920050bd0a",
-    "calculus/sequences.md": "c54c862c8b549caebaf275d62a63096e",
+    "calculus/sequences.md": "e714e068e91432ac15ad2a05a5fca350",
     "_journal/2026-03-11.md": "689d2bd9cd0ea3893d0baed4789a45c6",
     "_journal/2026-03/2026-03-10.md": "1f2179b9469c6f446ca8b60285cf27d1",
-    "calculus/series.md": "87c487c4adc0715dce603b321bbbc5e4",
+    "calculus/series.md": "657eff225a91445caae58736deb994ac",
     "_journal/2026-03-12.md": "a7005f82c8e53f36b36705d1671df7dd",
     "_journal/2026-03/2026-03-11.md": "689d2bd9cd0ea3893d0baed4789a45c6",
     "_journal/2026-03-13.md": "f5a13a4a86d04d145f66aabb0d020b52",
     "_journal/2026-03/2026-03-12.md": "a7005f82c8e53f36b36705d1671df7dd",
     "_journal/2026-03-14.md": "0e4f995d63feb31f98f00b0b80535928",
-    "_journal/2026-03/2026-03-13.md": "f5a13a4a86d04d145f66aabb0d020b52"
+    "_journal/2026-03/2026-03-13.md": "f5a13a4a86d04d145f66aabb0d020b52",
+    "_journal/2026-03-15.md": "f6db6a95405e7378ee8be0ba88ef446d",
+    "_journal/2026-03/2026-03-14.md": "0e4f995d63feb31f98f00b0b80535928"
   },
   "fields_dict": {
     "Basic": [

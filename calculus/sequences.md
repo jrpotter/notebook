@@ -423,7 +423,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773523825828-->
 END%%
 
-## Common Examples
+## Examples
 
 ### Arithmetic
 
