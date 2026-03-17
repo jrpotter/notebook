@@ -309,9 +309,11 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773245780767-->
 END%%
 
-### Monotonicity
+### Monotone Convergence
 
 A monotonic sequence is convergent if and only if it is bounded.
+
+An increasing sequence $(a_n)$ is sometimes denoted as $(a_n){\nearrow}$. A decreasing sequence $(b_n)$ is sometimes denoted as $(b_n){\searrow}$.
 
 %%ANKI
 Basic
@@ -383,6 +385,38 @@ A monotonic sequence is convergent if and only if what condition holds?
 Back: The sequence is bounded.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773245780776-->
+END%%
+
+%%ANKI
+Basic
+How does Apostol denote an increasing sequence $(a_n)$?
+Back: As $(a_n){\nearrow}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773782272283-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ be a sequence. What does Apostol mean by notation $(a_n){\nearrow}$?
+Back: $(a_n)$ is an increasing sequence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634350-->
+END%%
+
+%%ANKI
+Basic
+How does Apostol denote a decreasing sequence $(a_n)$?
+Back: As $(a_n){\searrow}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773782272292-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ be a sequence. What does Apostol mean by notation $(a_n){\searrow}$?
+Back: $(a_n)$ is a decreasing sequence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634354-->
 END%%
 
 ### Asymptotic Equality

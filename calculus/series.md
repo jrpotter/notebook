@@ -283,7 +283,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773495009200-->
 END%%
 
-### Monotonicity
+### Monotone Convergence
 
 Let $n_0 \in \mathbb{N}$ and assume that $a_n \geq 0$ for each $n \geq n_0$. Then the series $\sum a_n$ converges if and only if the sequence of its partial sums is bounded above.
 
@@ -310,6 +310,110 @@ Back: When $a_n \leq 0$ for all $n \in \mathbb{N}$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773519359663-->
 END%%
+
+### Absolute Convergence
+
+A series $\sum a_n$ is called **absolutely convergent** if $\sum\, \lvert a_n \rvert$ converges. The series is **conditionally convergent** if $\sum a_n$ converges but $\sum \, \lvert a_n \rvert$ diverges.
+
+Assume $\sum \, \lvert a_n \rvert$ converges. Then $\sum a_n$ also converges, and we have $$\left\lvert \sum_{n=1}^\infty a_n \right\rvert \leq \sum_{n=1}^\infty \, \lvert a_n \rvert.$$
+
+%%ANKI
+Basic
+What does it mean for $\sum a_n$ to be absolutely convergent?
+Back: $\sum \, \lvert a_n \rvert$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634295-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for $\sum a_n$ to be conditionally convergent?
+Back: $\sum a_n$ converges but $\sum \, \lvert a_n \rvert$ diverges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634305-->
+END%%
+
+%%ANKI
+Basic
+Assume $\sum a_n$ is absolutely convergent. Is it conditionally convergent?
+Back: No.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634309-->
+END%%
+
+%%ANKI
+Basic
+Assume $\sum a_n$ is conditionally convergent. Is it absolutely convergent?
+Back: No.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634313-->
+END%%
+
+%%ANKI
+Basic
+Assume $\sum a_n$ converges. Does $\sum \, \lvert a_n \rvert$ converge or diverge?
+Back: Indeterminate.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634317-->
+END%%
+
+%%ANKI
+Basic
+Assume $\sum a_n$ diverges. Does $\sum \, \lvert a_n \rvert$ converge or diverge?
+Back: Diverges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634320-->
+END%%
+
+%%ANKI
+Basic
+Assume $\sum \, \lvert a_n \rvert$ diverges. Does $\sum \, a_n$ converge or diverge?
+Back: Indeterminate.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634324-->
+END%%
+
+%%ANKI
+Basic
+Assume $\sum \, \lvert a_n \rvert$ converges. Does $\sum \, a_n$ converge or diverge?
+Back: Converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634328-->
+END%%
+
+%%ANKI
+Basic
+Let $\sum \, \lvert a_n \rvert$ converge. How do the following two series relate to one another? $$\left \lvert \sum_{n=1}^\infty a_n \right \rvert \quad\text{and}\quad \sum_{n=1}^\infty \, \lvert a_n \rvert$$
+Back: $$\left\lvert \sum_{n=1}^\infty a_n \right\rvert \leq \sum_{n=1}^\infty \, \lvert a_n \rvert$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634331-->
+END%%
+
+%%ANKI
+Basic
+How is the following expression interpreted? $$\left \lvert \sum_{n=1}^\infty a_n \right \rvert$$
+Back: As the limit of $\left \lvert \sum_{k=1}^n a_k \right \rvert$ as $n \rightarrow +\infty$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634337-->
+END%%
+
+%%ANKI
+Basic
+What other sequence $(b_n)$ does Apostol generate to prove the following? $$\sum \, \lvert a_n \rvert \text{ converges} \implies \sum a_n \text{ converges}$$
+Back: $(b_n)$ given by $b_n = a_n + \lvert a_n \rvert$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634341-->
+END%%
+
+%%ANKI
+Basic
+What convergence test does Apostol use to prove the following? $$\sum \, \lvert a_n \rvert \text{ converges} \implies \sum a_n \text{ converges}$$
+Back: The direct comparison test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634346-->
+END%%
+
+## Convergence Tests
 
 ### Direct Comparison Test
 
@@ -846,6 +950,99 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773733148096-->
 END%%
 
+### Alternating Series Test
+
+Let $\sum_{n=1}^\infty (-1)^{n-1} a_n$ be an alternating series. The **alternating series test** states that such a series converges if
+
+1. $\lvert a_n \rvert$ decreases monotonically, and
+2. $a_n \rightarrow 0$ as $n \rightarrow +\infty$.
+
+Let $S$ denote the sum of such a series and $s_n$ denote the $n$th partial sum. Then $$0 \leq \lvert s_n - S \rvert \leq \lvert a_{n+1} \rvert.$$
+
+%%ANKI
+Basic
+Who originally discovered the alternating series test?
+Back: Gottfied Leibniz.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770186-->
+END%%
+
+%%ANKI
+Basic
+Let $\sum_{n=1}^\infty (-1)^{n-1} a_n$ be an alternating series. Leibniz's rule states such a series converge if what two conditions hold?
+Back:
+1. $\lvert a_n \rvert$ decreases monotonically, and
+2. $a_n \rightarrow 0$ as $n \rightarrow +\infty$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770193-->
+END%%
+
+%%ANKI
+Basic
+Using summation notation, the alternating series test applies to series of what form?
+Back: $\sum_{n=1}^\infty (-1)^{n-1} a_n$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770197-->
+END%%
+
+%%ANKI
+Basic
+Apply the alternating series test. Does the following converge or diverge? $$\sum_{n=1}^\infty (-1)^{n - 1} \frac{1}{n}$$
+Back: It converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770200-->
+END%%
+
+%%ANKI
+Basic
+Assume we can apply the alternating series test. In plain English, what is the upper bound of $\lvert L - s_n \rvert$? $$\sum_{n=1}^\infty (-1)^{n-1} a_n = L$$
+Back: The next omitted term, i.e. $\lvert a_{n+1} \rvert$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770203-->
+END%%
+
+%%ANKI
+Basic
+Assume we can apply the alternating series test. What is the error introduced by $s_n$? $$\sum_{n=1}^\infty (-1)^{n-1} a_n = L$$
+Back: $\lvert L - s_n \rvert$
+Reference: _Wikipedia_. “Alternating series test.” October 27, 2025. [https://en.wikipedia.org/w/index.php?title=Alternating_series_test](https://en.wikipedia.org/w/index.php?title=Alternating_series_test&oldid=1318987768).
+<!--ID: 1773781770206-->
+END%%
+
+%%ANKI
+Basic
+Assume we can apply the alternating series test. What are the lower and upper bounds of $\lvert s_n - L \rvert$? $$\sum_{n=1}^\infty (-1)^{n-1} a_n = L$$
+Back: $0 \leq \lvert s_n - L \rvert \leq \lvert a_{n+1} \rvert$
+Reference: _Wikipedia_. “Alternating series test.” October 27, 2025. [https://en.wikipedia.org/w/index.php?title=Alternating_series_test](https://en.wikipedia.org/w/index.php?title=Alternating_series_test&oldid=1318987768).
+<!--ID: 1773781770209-->
+END%%
+
+%%ANKI
+Basic
+Assume we can apply the alternating series test. We prove this series converges by showing which other two limits are equal? $$\sum_{n=1}^\infty (-1)^{n-1} a_n$$
+Back: That of:
+1. The partial sums consisting of an even number of terms.
+2. The partial sums consisting of an odd number of terms.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770212-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)_{n \geq 1}$ be monotonically decreasing with limit $0$. What is the upper bound of the following? $$\sum_{n=1}^{\infty} (-1)^{n-1} a_n$$
+Back: $a_1$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770216-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)_{n \geq 1}$ be monotonically decreasing with limit $0$. What is the lower bound of the following? $$\sum_{n=1}^{\infty} (-1)^{n-1} a_n$$
+Back: $a_1 + a_2$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770219-->
+END%%
+
 ## Examples
 
 ### Arithmetic
@@ -1280,5 +1477,6 @@ END%%
 
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+* _Wikipedia_. “Alternating series test.” October 27, 2025. [https://en.wikipedia.org/w/index.php?title=Alternating_series_test](https://en.wikipedia.org/w/index.php?title=Alternating_series_test&oldid=1318987768).
 * _Wikipedia_. “Convergence tests.” December 24, 2025. [https://en.wikipedia.org/w/index.php?title=Convergence_tests](https://en.wikipedia.org/w/index.php?title=Convergence_tests&oldid=1329192858).
 * _Wikipedia_. “Power series.” November 22, 2025. [https://en.wikipedia.org/w/index.php?title=Power_series](https://en.wikipedia.org/w/index.php?title=Power_series&oldid=1323477072).

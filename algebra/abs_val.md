@@ -108,6 +108,14 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1753369239568-->
 END%%
 
+%%ANKI
+Basic
+Let $y = x + \lvert x \rvert$. What are the possible values of $y$?
+Back: $y = 0$ or $y = 2 \lvert x \rvert$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634360-->
+END%%
+
 ## Triangle Inequality
 
 Let $x, y \in \mathbb{R}$. Then the **triangle inequality** of $\mathbb{R}$ states $$\lvert x + y \rvert \leq \lvert x \rvert + \lvert y \rvert.$$

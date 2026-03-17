@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "calculus/series.md",
+                "file": "_journal/2026-03-17.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "series"
+              "title": "2026-03-17"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "1773693110280",
+                "query": "monotonic",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -143,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "calculus/series.md",
+                "file": "_journal/2026-03-17.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of series"
+              "title": "Outline of 2026-03-17"
             }
           }
         ],
@@ -173,15 +172,18 @@
   },
   "active": "c8b888570ec1670d",
   "lastOpenFiles": [
-    "operating_systems/signals.md",
-    "_journal/2026-03-17.md",
-    "_journal/2026-03/2026-03-16.md",
     "calculus/series.md",
+    "algebra/abs_val.md",
+    "calculus/sequences.md",
+    "calculus/limits.md",
+    "algebra/functions.md",
+    "_journal/2025/2025-02/2025-02-26.md",
+    "_journal/2026-03-17.md",
+    "operating_systems/signals.md",
+    "_journal/2026-03/2026-03-16.md",
     "network/session/jwt.md",
     "_journal/2026-03/2026-03-15.md",
-    "calculus/limits.md",
     "calculus/taylor.md",
-    "calculus/sequences.md",
     "_journal/2026-03/2026-03-14.md",
     "calculus/derivatives.md",
     "calculus/images/integral-test.png",
@@ -194,12 +196,9 @@
     "data_structures/trees/binary_tree.md",
     "data_structures/trees/index.md",
     "_journal/2026-03/2026-03-10.md",
-    "algebra/abs_val.md",
     "_journal/2024/2024-08/2024-08-25.md",
     "network/internetwork/ip.md",
     "network/session/oauth.md",
-    "sequences/triangular_numbers.md",
-    "sequences/square_numbers.md",
     "calculus/images/square-gnomon.png",
     "data_structures/images/disjoint-set-linked-list.png",
     "data_structures/images/disjoint-set-forest.png",
