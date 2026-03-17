@@ -503,7 +503,7 @@ The **$p$-test for series** (or **$p$-series test**) states that such a series c
 %%ANKI
 Basic
 What is a $p$-series?
-Back: Given an $a \in \mathbb{Z}^+$ and some constant $p$, a series of the form $$\sum_{n=a}^\infty \frac{1}{n^p}.$$
+Back: Given $a \in \mathbb{Z}^+$ and some constant $p$, a series of the form $$\sum_{n=a}^\infty \frac{1}{n^p}.$$
 Reference: _Wikipedia_. “Convergence tests.” December 24, 2025. [https://en.wikipedia.org/w/index.php?title=Convergence_tests](https://en.wikipedia.org/w/index.php?title=Convergence_tests&oldid=1329192858).
 <!--ID: 1773531877551-->
 END%%
@@ -511,7 +511,7 @@ END%%
 %%ANKI
 Basic
 What is a $p$-integral?
-Back: Given a $b \in \mathbb{R}^+$ and some constant $p$, an integral of the form $$\sum_{n=b}^\infty \frac{1}{x^p} \,dx.$$
+Back: Given $b \in \mathbb{R}^+$ and some constant $p$, an integral of the form $$\sum_{n=b}^\infty \frac{1}{x^p} \,dx.$$
 Reference: _Wikipedia_. “Convergence tests.” December 24, 2025. [https://en.wikipedia.org/w/index.php?title=Convergence_tests](https://en.wikipedia.org/w/index.php?title=Convergence_tests&oldid=1329192858).
 <!--ID: 1773624530686-->
 END%%
@@ -722,11 +722,19 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 END%%
 
 %%ANKI
-Cloze
+Basic
 The root test considers series with what kind of terms?
 Back: Nonnegative.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773693110280-->
+<!--ID: 1773756415934-->
+END%%
+
+%%ANKI
+Basic
+Who originally developed the root test?
+Back: Cauchy.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773733148087-->
 END%%
 
 ### Ratio Test
@@ -823,11 +831,19 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 END%%
 
 %%ANKI
-Cloze
+Basic
 The ratio test considers series with what kind of terms?
 Back: Positive.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773693110292-->
+<!--ID: 1773756415943-->
+END%%
+
+%%ANKI
+Basic
+Who originally developed the ratio test?
+Back: Cauchy.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773733148096-->
 END%%
 
 ## Examples
@@ -1230,6 +1246,34 @@ Cloze
 Let $(a_n)$ and $(b_n)$ be two sequences such that $a_n = b_n - b_{n + 1}$. Then the series {1:$\sum a_n$} converges if and only if the sequence {1:$(b_n)$} converges, in which case we have $\sum_{n=1}^\infty a_n =$ {2:$b_1 - L$} where $L =$ {3:$\lim_{n \rightarrow +\infty} b_n$}.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773438164090-->
+END%%
+
+### Alternating
+
+An **alternating series** is one in which each consecutive term alternates in sign. That is, given $a_n > 0$ for all $n \geq 1$, series of form $$\sum_{n=1}^\infty (-1)^{n-1} a_n = a_1 - a_2 + a_3 - a_4 + \cdots + (-1)^{n-1} a_n + \cdots$$
+
+%%ANKI
+Basic
+In plain English, what is an alternating series?
+Back: A series in which each consecutive term alternates in sign.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773733571110-->
+END%%
+
+%%ANKI
+Basic
+Using summation notation, what is an alternating series?
+Back: Given $a_n > 0$ for all $n \geq 1$, a series of form $$\sum_{n=1}^\infty (-1)^{n-1} a_n.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773733571121-->
+END%%
+
+%%ANKI
+Basic
+In alternating series $\sum\, (-1)^{n-1} a_n$, what conditions are the terms $a_n$ expected to satisfy?
+Back: $a_n > 0$ for each $n$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773733571125-->
 END%%
 
 ## Bibliography

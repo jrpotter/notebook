@@ -438,45 +438,6 @@ END%%
 
 %%ANKI
 Basic
-If a `nohup` program's `stdin` is a terminal, where is its input redirected from?
-Back: An unreadable file.
-Reference: `man 1 nohup`
-<!--ID: 1706670390904-->
-END%%
-
-%%ANKI
-Basic
-If a `nohup` program's `stdout` is a terminal, where is its output redirected to?
-Back: `nohup.out` if possible, `$HOME/nohup.out` otherwise.
-Reference: `man 1 nohup`
-<!--ID: 1706670390909-->
-END%%
-
-%%ANKI
-Basic
-If a `nohup` program's `stderr` is a terminal, where is its errors redirected to?
-Back: `stdout`
-Reference: `man 1 nohup`
-<!--ID: 1706670390913-->
-END%%
-
-%%ANKI
-Basic
-What command can be run to view all processes that would receive a `SIGHUP` when the current terminal exits?
-Back: `ps T`
-Reference: `man 1 ps`
-<!--ID: 1706670390919-->
-END%%
-
-%%ANKI
-Cloze
-Command `ps T` lets us view all processes that would receive a {1:`SIGHUP`} signal when {1:the current terminal exits}.
-Reference: `man 1 ps`
-<!--ID: 1744332718204-->
-END%%
-
-%%ANKI
-Basic
 Which of the five default actions is `SIGHUP` associated with?
 Back: Termination.
 Reference: Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.

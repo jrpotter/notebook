@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "1773624530686",
+                "query": "1773693110280",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -172,8 +173,11 @@
   },
   "active": "c8b888570ec1670d",
   "lastOpenFiles": [
-    "_journal/2026-03-16.md",
+    "operating_systems/signals.md",
+    "_journal/2026-03-17.md",
+    "_journal/2026-03/2026-03-16.md",
     "calculus/series.md",
+    "network/session/jwt.md",
     "_journal/2026-03/2026-03-15.md",
     "calculus/limits.md",
     "calculus/taylor.md",
@@ -197,9 +201,6 @@
     "sequences/triangular_numbers.md",
     "sequences/square_numbers.md",
     "calculus/images/square-gnomon.png",
-    "sequences/delta-constant.md",
-    "sequences/geometric.md",
-    "sequences/arithmetic.md",
     "data_structures/images/disjoint-set-linked-list.png",
     "data_structures/images/disjoint-set-forest.png",
     "calculus/images/cauchy-mvt.png",

@@ -116,7 +116,7 @@ END%%
 
 %%ANKI
 Basic
-Which standard JWT claim is used to identity the service provider?
+Which standard JWT claim is used to identify the service provider?
 Back: `aud`
 Reference: Moore, Dan. “What Is OpenID Connect (OIDC) and How It Works.” FusionAuth. Accessed January 30, 2026. [https://fusionauth.io/articles/identity-basics/what-is-oidc](https://fusionauth.io/articles/identity-basics/what-is-oidc).
 <!--ID: 1769794344847-->
