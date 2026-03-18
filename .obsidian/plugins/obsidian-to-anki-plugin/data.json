@@ -626,7 +626,9 @@
     "cauchy-mvt.png",
     "disjoint-set-linked-list.png",
     "disjoint-set-forest.png",
-    "integral-test.png"
+    "integral-test.png",
+    "improper-first.png",
+    "improper-second.png"
   ],
   "File Hashes": {
     "x86-64/registers.md": "5fc70aaebf9dc7d4b04c72650bedacfe",
@@ -1476,7 +1478,7 @@
     "_journal/2025-07-11.md": "828e1a48ca2cc873b7b02de215e29068",
     "_journal/2025-07/2025-07-10.md": "2a842977bb13a634ce4c64feb8fd410d",
     "geometry/curvature.md": "9f80263cdd29886e7d0b6aafd97bcf2d",
-    "calculus/limits.md": "1bfb9775d9764e7ba406da44a1a62884",
+    "calculus/limits.md": "ac24b034a7fd6b4b00cc751f8b091630",
     "_journal/2025-07-12.md": "55ae40960fc3bb841284e40a4c66d833",
     "_journal/2025-07/2025-07-11.md": "cd8e5414705e77e8fa0cefbe03098202",
     "networking/ip/class.md": "94b2c1dfcf8710d947768ba91f8849ac",
@@ -1757,7 +1759,7 @@
     "_journal/2025-10/2025-10-19.md": "3b75e9ccd1a230b3dd7b3367d5520ce7",
     "formal_system/phrase-structure.md": "4460658c46968ed3a079f24a61854646",
     "calculus/riemann_integrals.md": "ff39b163c6719ccb65b2aac54c583ad8",
-    "calculus/riemann.md": "e640bbca9aea9d7c3e1217c4cc779ffc",
+    "calculus/riemann.md": "86a336c4667662664985a1eee1cc53ee",
     "_journal/2025-10-21.md": "afa7eaf4e85392cea5587f263a52e246",
     "_journal/2025-10/2025-10-20.md": "c9a30dfe5b534cc5ac34145dba765d28",
     "calculus/continuity.md": "b853316d3d1530fc53aed63979f1a61d",
@@ -2518,10 +2520,10 @@
     "_journal/2026-03/2026-03-09.md": "7f2dccf71176ffdeee38d97fca45f4a7",
     "_journal/2026-03/2026-03-08.md": "679d7f12743c9f591e820caf087a65b1",
     "_journal/2026-03/2026-03-07.md": "b6e9978758063cca09e641920050bd0a",
-    "calculus/sequences.md": "8ab92b3a31e04c895a589cfe3f03f46c",
+    "calculus/sequences.md": "ce3563d1e253f63b884a8a4368e42c60",
     "_journal/2026-03-11.md": "689d2bd9cd0ea3893d0baed4789a45c6",
     "_journal/2026-03/2026-03-10.md": "1f2179b9469c6f446ca8b60285cf27d1",
-    "calculus/series.md": "bde587c4dd891905cabcfdfd24178b43",
+    "calculus/series.md": "5e074935b39b51e7067f4f633f2eb3b2",
     "_journal/2026-03-12.md": "a7005f82c8e53f36b36705d1671df7dd",
     "_journal/2026-03/2026-03-11.md": "689d2bd9cd0ea3893d0baed4789a45c6",
     "_journal/2026-03-13.md": "f5a13a4a86d04d145f66aabb0d020b52",
@@ -2533,7 +2535,9 @@
     "_journal/2026-03-16.md": "1d4dfc3e390c5c1aba36fbdc4ffab310",
     "_journal/2026-03/2026-03-15.md": "7f152931048789aee6ebcae959c30e6e",
     "_journal/2026-03-17.md": "c0d76a482e92475c986b77f51f197623",
-    "_journal/2026-03/2026-03-16.md": "1d4dfc3e390c5c1aba36fbdc4ffab310"
+    "_journal/2026-03/2026-03-16.md": "1d4dfc3e390c5c1aba36fbdc4ffab310",
+    "_journal/2026-03-18.md": "46714209556b73e8b30e493e3a0bd4f9",
+    "_journal/2026-03/2026-03-17.md": "70d8492efdd41ad0878ed2634b9669d8"
   },
   "fields_dict": {
     "Basic": [

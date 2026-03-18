@@ -1259,6 +1259,236 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1765424504638-->
 END%%
 
+## Improper Integrals
+
+%%ANKI
+Cloze
+An integral is considered either {proper} or {improper}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773827521221-->
+END%%
+
+%%ANKI
+Basic
+What is the discrete analogue to an improper integral?
+Back: An infinite series.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773827521260-->
+END%%
+
+%%ANKI
+Basic
+What is the continuous analogue to an infinite series?
+Back: An improper integral.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773827521231-->
+END%%
+
+%%ANKI
+Basic
+How many "kinds" of improper integrals are there?
+Back: Two.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773828796916-->
+END%%
+
+### First Kind
+
+Let $\int_a^b f(x) \,dx$ exist for all $b \geq a$. An **improper integral of the first kind** (or **infinite integral**) is the function $I$ where $$I(b) = \int_a^b f(x) \,dx \quad\text{for each } b \geq a.$$
+
+The function $I$ is denoted as $\int_a^\infty f(x) \,dx$. It is said to **converge** if the limit of $I(b)$ as $b \rightarrow +\infty$ exists and is finite. Otherwise it is said to **diverge**. Integrals of the following form are similarly defined: $$\int_{-\infty}^a f(x) \,dx$$
+
+If for some $c$ both $\int_{-\infty}^c f(x) \,dx$ and $\int_c^{\infty} f(x) \,dx$ converge, then we say $\int_{-\infty}^\infty f(x) \,dx$ converges and its value is defined as $$\int_{-\infty}^\infty f(x) \,dx = \int_{-\infty}^c f(x) \,dx + \int_c^{\infty} f(x) \,dx.$$
+
+%%ANKI
+Basic
+How is an improper integral of the first kind denoted?
+Back: Given some constant $c$, as $\int_c^\infty f(x) \,dx$ or $\int_{-\infty}^c f(x) \,dx$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773827521238-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for the following improper integral to converge? $$\int_a^\infty f(x) \,dx$$
+Back: That the limit of $\int_a^b f(x) \,dx$ as $b \rightarrow +\infty$ exists and is finite.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773827521249-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for the following improper integral to converge? $$\int_{-\infty}^b f(x) \,dx$$
+Back: That the limit of $\int_a^b f(x) \,dx$ as $a \rightarrow -\infty$ exists and is finite.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773827521253-->
+END%%
+
+%%ANKI
+Basic
+How is the following improper integral intepreted? $$\int_{-\infty}^\infty f(x) \,dx$$
+Back: Given some $c$ in which both RHS integrals converge, as $$\int_{-\infty}^\infty f(x) \,dx = \int_{-\infty}^c f(x) \,dx + \int_c^{\infty} f(x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773827521256-->
+END%%
+
+%%ANKI
+Basic
+Which kind of improper integral is the following? $$\int_a^\infty f(x) \,dx$$
+Back: The first kind.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773828796925-->
+END%%
+
+%%ANKI
+Basic
+Which kind of improper integral is the following? $$\int_{-\infty}^\infty f(x) \,dx$$
+Back: The first kind.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773828818507-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for the following improper integral to diverge? $$\int_{-\infty}^\infty f(x) \,dx$$
+Back: For some $c$, at least one of the following integrals diverge: $$\int_{-\infty}^c f(x) \,dx \quad\text{or}\quad \int_c^\infty f(x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773835040074-->
+END%%
+
+%%ANKI
+Basic
+Improper integrals of the first kind are concerned with what kind of intervals?
+Back: An interval extending to $+\infty$ or $-\infty$ (or both).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773830082911-->
+END%%
+
+%%ANKI
+Basic
+The following example is an improper integral of which kind?
+![[improper-first.png]]
+Back: The first kind.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773830082922-->
+END%%
+
+%%ANKI
+Cloze
+An infinite {1:series} is to {2:sum} whereas an infinite {2:integral} is to {1:value}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773827521246-->
+END%%
+
+%%ANKI
+Basic
+An infinite integral is also known as what?
+Back: An improper integral of the first kind.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773835040078-->
+END%%
+
+%%ANKI
+Basic
+The term "infinite integral" usually refers to improper integrals of which kind?
+Back: The first kind.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773835040082-->
+END%%
+
+%%ANKI
+Basic
+Does the following improper integral converge or diverge? $$\int_1^\infty \frac{1}{x^2} \,dx$$
+Back: It converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773835040085-->
+END%%
+
+%%ANKI
+Basic
+Does the following improper integral converge or diverge? $$\int_0^\infty \sin{x} \,dx$$
+Back: It diverges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773835040088-->
+END%%
+
+### Second Kind
+
+Let $\int_x^b f(t) \,dt$ exists for all $x \in (a, b]$. An **improper integral of the second kind** is the function $I$ where $$I(x) = \int_x^b f(t) \,dt \quad\text{if } a < x \leq b.$$
+
+The function $I$ is denoted as $\int_{a+}^b f(t) \,dt$. It is said to **converge** if the limit of $I(x)$ as $x \rightarrow a+$ exists. Otherwise it is said to **diverge**. Integrals of the following form are similarly defined: $$\int_a^{b-} f(x) \,dx$$
+
+If for some $c$ both $\int_{a+}^c f(t) \,dt$ and $\int_c^{b-} f(t) \,dt$ converge, then we say $\int_{a+}^{b-} f(t) \,dt$ converges and its value is defined as $$\int_{a+}^{b-} f(t) \,dt = \int_{a+}^c f(t) \,dt + \int_c^{b-} f(t) \,dt.$$
+
+%%ANKI
+Basic
+How is an improper integral of the second kind denoted?
+Back: Given some $c \in [a, b]$, as $\int_{c+}^b f(x) \,dx$ or $\int_a^{c-} f(x) \,dx$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773828796929-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for the following improper integral to converge? $$\int_{a+}^b f(x) \,dx$$
+Back: That the limit of $\int_x^b f(t) \,dt$ as $x \rightarrow a+$ exists.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773828796933-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for the following improper integral to converge? $$\int_a^{b-} f(x) \,dx$$
+Back: That the limit of $\int_a^x f(t) \,dt$ as $x \rightarrow b-$ exists.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773828796937-->
+END%%
+
+%%ANKI
+Basic
+How is the following improper integral intepreted? $$\int_{a+}^{b-} f(x) \,dx$$
+Back: Given some $c \in (a, b)$ in which both RHS integrals converge, as $$\int_{a+}^{b-} f(x) \,dx = \int_{a+}^c f(x) \,dx + \int_c^{b-} f(x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773828796940-->
+END%%
+
+%%ANKI
+Basic
+Which kind of improper integral is the following? $$\int_{a+}^b f(x) \,dx$$
+Back: The second kind.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773828796944-->
+END%%
+
+%%ANKI
+Basic
+Which kind of improper integral is the following? $$\int_{a+}^{b-} f(x) \,dx$$
+Back: The second kind.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773828796948-->
+END%%
+
+%%ANKI
+Basic
+Improper integrals of the second kind are concerned with what kind of intervals?
+Back: Finite intervals over unbounded points.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773830082926-->
+END%%
+
+%%ANKI
+Basic
+The following example is an improper integral of which kind?
+![[improper-second.png]]
+Back: The second kind.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773830082931-->
+END%%
+
+### Convergence
+
+TODO
+
 ## Average Value
 
 Let $f$ be Riemann integrable on an interval $[a, b]$. We define the **average value of $f$ on $[a, b]$**, denoted $A(f)$, by the formula $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx.$$

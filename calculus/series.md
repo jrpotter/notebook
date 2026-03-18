@@ -283,7 +283,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773495009200-->
 END%%
 
-### Monotone Convergence
+### Monotonicity
 
 Let $n_0 \in \mathbb{N}$ and assume that $a_n \geq 0$ for each $n \geq n_0$. Then the series $\sum a_n$ converges if and only if the sequence of its partial sums is bounded above.
 
@@ -311,7 +311,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773519359663-->
 END%%
 
-### Absolute Convergence
+### Absolute
 
 A series $\sum a_n$ is called **absolutely convergent** if $\sum\, \lvert a_n \rvert$ converges. The series is **conditionally convergent** if $\sum a_n$ converges but $\sum \, \lvert a_n \rvert$ diverges.
 
@@ -413,8 +413,6 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773786634346-->
 END%%
 
-## Convergence Tests
-
 ### Direct Comparison Test
 
 Let $n_0 \in \mathbb{N}$ and $(a_n)$ and $(b_n)$ be sequences such that $a_n, b_n \geq 0$ for all $n \geq n_0$. If there exists a positive constant $c$ such that $a_n \leq c b_n$ for all $n \geq n_0$, then convergence of $\sum b_n$ implies convergence of $\sum a_n$.
@@ -490,7 +488,7 @@ END%%
 
 ### Limit Comparison Test
 
-Let $n_0 \in \mathbb{N}$ and assume $a_n, b_n > 0$ for all $n \geq n_0$. Also suppose that $$\lim_{n \rightarrow +\infty} \frac{a_n}{b_n} = c, \quad c > 0.$$
+Let $n_0 \in \mathbb{N}$ and assume $a_n \geq 0$, $b_n > 0$ for all $n \geq n_0$. Also suppose that $$\lim_{n \rightarrow +\infty} \frac{a_n}{b_n} = c, \quad c > 0.$$
 
 Then $\sum a_n$ converges if and only if $\sum b_n$ converges.
 
@@ -498,7 +496,7 @@ Then $\sum a_n$ converges if and only if $\sum b_n$ converges.
 Basic
 What name is given to the following convergence test?
 
-> Let $n_0 \in \mathbb{N}$ and assume $a_n, b_n > 0$ for all $n \geq n_0$. Also suppose that $$\lim_{n \rightarrow +\infty} \frac{a_n}{b_n} = c, \quad c > 0.$$
+> Let $n_0 \in \mathbb{N}$ and assume $a_n \geq 0$, $b_n > 0$ for all $n \geq n_0$. Also suppose that $$\lim_{n \rightarrow +\infty} \frac{a_n}{b_n} = c, \quad c > 0.$$
 > Then $\sum a_n$ converges if and only if $\sum b_n$ converges.
 
 Back: The limit comparison test.
@@ -508,7 +506,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $a_n, b_n > 0$ for all sufficiently large $n$. If the following holds, what conditions are $c$ presumed to satisfy? $$\lim_{n \rightarrow +\infty} \frac{a_n}{b_n} = c$$
+Suppose $a_n \geq 0$, $b_n > 0$ for all sufficiently large $n$. If the following holds, what conditions are $c$ presumed to satisfy? $$\lim_{n \rightarrow +\infty} \frac{a_n}{b_n} = c$$
 Back: $c > 0$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773521667536-->
@@ -536,6 +534,14 @@ Suppose the following limit holds. Convergence of which series implies convergen
 Back: If $\sum a_n$ converges then $\sum b_n$ converges.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773521667546-->
+END%%
+
+%%ANKI
+Basic
+The limit comparison test compares series $\sum a_n$ with $\sum b_n$. What conditions are $(a_n)$ and $(b_n)$ assumed to satisfy?
+Back: $a_n \geq 0$ and $b_n > 0$ for each $n$ (assuming $b_n$ is the denominator in the tested limit).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773835040062-->
 END%%
 
 ### Integral Test
