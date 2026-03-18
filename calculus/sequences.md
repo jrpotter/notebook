@@ -309,7 +309,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773245780767-->
 END%%
 
-### Monotonicity
+### Monotone Convergence
 
 A monotonic sequence is convergent if and only if it is bounded.
 

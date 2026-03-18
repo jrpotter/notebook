@@ -283,7 +283,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773495009200-->
 END%%
 
-### Monotonicity
+### Monotone Convergence
 
 Let $n_0 \in \mathbb{N}$ and assume that $a_n \geq 0$ for each $n \geq n_0$. Then the series $\sum a_n$ converges if and only if the sequence of its partial sums is bounded above.
 
@@ -311,7 +311,15 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773519359663-->
 END%%
 
-### Absolute
+%%ANKI
+Basic
+Let $\sum_{n=1}^\infty a_n$ be a series such that $a_n \geq 0$ for all $n \in \mathbb{N}$. What does the monotone convergence theorem state?
+Back: $\sum a_n$ converges iff there is a constant $M > 0$ such that $$\sum_{k=1}^n a_k \leq M \quad\text{for every } n \geq 1.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341884-->
+END%%
+
+### Absolute Convergence
 
 A series $\sum a_n$ is called **absolutely convergent** if $\sum\, \lvert a_n \rvert$ converges. The series is **conditionally convergent** if $\sum a_n$ converges but $\sum \, \lvert a_n \rvert$ diverges.
 
@@ -502,14 +510,6 @@ What name is given to the following convergence test?
 Back: The limit comparison test.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773521667533-->
-END%%
-
-%%ANKI
-Basic
-Suppose $a_n \geq 0$, $b_n > 0$ for all sufficiently large $n$. If the following holds, what conditions are $c$ presumed to satisfy? $$\lim_{n \rightarrow +\infty} \frac{a_n}{b_n} = c$$
-Back: $c > 0$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773521667536-->
 END%%
 
 %%ANKI
@@ -968,7 +968,7 @@ Let $S$ denote the sum of such a series and $s_n$ denote the $n$th partial sum. 
 %%ANKI
 Basic
 Who originally discovered the alternating series test?
-Back: Gottfied Leibniz.
+Back: Gottfried Leibniz.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773781770186-->
 END%%

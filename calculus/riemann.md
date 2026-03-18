@@ -1270,22 +1270,6 @@ END%%
 
 %%ANKI
 Basic
-What is the discrete analogue to an improper integral?
-Back: An infinite series.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773827521260-->
-END%%
-
-%%ANKI
-Basic
-What is the continuous analogue to an infinite series?
-Back: An improper integral.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773827521231-->
-END%%
-
-%%ANKI
-Basic
 How many "kinds" of improper integrals are there?
 Back: Two.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
@@ -1327,7 +1311,7 @@ END%%
 %%ANKI
 Basic
 How is the following improper integral intepreted? $$\int_{-\infty}^\infty f(x) \,dx$$
-Back: Given some $c$ in which both RHS integrals converge, as $$\int_{-\infty}^\infty f(x) \,dx = \int_{-\infty}^c f(x) \,dx + \int_c^{\infty} f(x) \,dx.$$
+Back: Given some $c \in \mathbb{R}$, as $$\int_{-\infty}^\infty f(x) \,dx = \int_{-\infty}^c f(x) \,dx + \int_c^{\infty} f(x) \,dx.$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773827521256-->
 END%%
@@ -1412,6 +1396,149 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773835040088-->
 END%%
 
+%%ANKI
+Basic
+What is the discrete analogue to an infinite integral?
+Back: An infinite series.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773827521260-->
+END%%
+
+%%ANKI
+Basic
+What is the continuous analogue to an infinite series?
+Back: An infinite integral.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773827521231-->
+END%%
+
+#### Monotonicity
+
+Assume the proper integral $\int_a^b f(x) \,dx$ exists for each $b \geq a$ and suppose that $f(x) \geq 0$ for all $x \geq a$. Then $\int_a^\infty f(x) \,dx$ converges if and only if there is a constant $M > 0$ such that $$\int_a^b f(x) \,dx \leq M \quad\text{for every } b \geq a.$$
+
+%%ANKI
+Basic
+Let $\int_a^\infty f(x) \,dx$ be an integral. When is its sequence of partial integrals monotonic?
+Back: When $f(x) \geq 0$ for all $x \geq a$ or $f(x) \leq 0$ for all $x \leq a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341886-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_a^b f(x) \,dx$ exists for each $b \geq a$ and that $f(x) \geq 0$ for all $x \geq a$. What does the montone convergence theorem state?
+Back: $\int_a^\infty f(x) \,dx$ converges iff there is a constant $M > 0$ such that $$\int_a^b f(x) \,dx \leq M \quad\text{for every } b \geq a.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341887-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_a^b f(x) \,dx$ exists for each $a \leq b$ and that $f(x) \geq 0$ for all $x \leq b$. What does the montone convergence theorem state?
+Back: $\int_{-\infty}^b f(x) \,dx$ converges iff there is a constant $M > 0$ such that $$\int_a^b f(x) \,dx \leq M \quad\text{for every } a \leq b.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341888-->
+END%%
+
+#### Direct Comparison Test
+
+Assume proper integral $\int_a^x f(t) \,dt$ exists and that $0 \leq f(x) \leq g(x)$ for all $x \geq a$. If $\int_a^\infty g(t) \,dt$ converges, then $\int_a^\infty f(x) \,dx$ converges and $$\int_a^\infty f(t) \,dt \leq \int_a^\infty g(t) \,dt.$$
+
+The integral $\int_a^\infty g(t) \,dt$ is said to **dominate** the integral $\int_a^\infty f(t) \,dt$.
+
+%%ANKI
+Basic
+What does it mean for $\int_a^\infty f(t) \,dt$ to dominate $\int_a^\infty g(t) \,dt$?
+Back: $$\int_a^\infty g(t) \,dt \leq \int_a^\infty f(t) \,dt$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341889-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following convergence test?
+
+> Assume the proper integral $\int_a^x f(t) \,dt$ exists and that $0 \leq f(x) \leq g(x)$ for all $x \geq a$. If $\int_a^\infty g(t) \,dt$ converges, then $\int_a^\infty f(t) \,dt$ converges.
+
+Back: The direct comparison test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341890-->
+END%%
+
+%%ANKI
+Basic
+What conditions must $\int_a^\infty f(t) \,dt$ and $\int_a^\infty g(t) \,dt$ satisfy before applying the direct comparison test?
+Back: Both $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist and $0 \leq f(x) \leq g(x)$ for all $x \geq a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341891-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist and that $0 \leq f(x) \leq g(x)$ for all $x \geq a$. What does the direct comparison test state?
+Back: If $\int_a^\infty g(x) \,dx$ converges, then $\int_a^\infty f(x) \,dx$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341892-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_x^b f(t) \,dt$ and $\int_x^b g(t) \,dt$ exist and that $0 \leq f(x) \leq g(x)$ for all $x \leq b$. What does the direct comparison test state?
+Back: If $\int_{-\infty}^b g(t) \,dt$ converges, then $\int_{-\infty}^b f(t) \,dt$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852437184-->
+END%%
+
+#### Limit Comparison Test
+
+Assume both $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist, $f(x) \geq 0$, and $g(x) > 0$ for all $x \geq a$. If $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = c \quad\text{where } c > 0,$$
+
+then $\int_a^\infty f(t) \,dt$ converges if and only if $\int_a^\infty g(t) \,dt$ converges.
+
+%%ANKI
+Basic
+What name is given to the following convergence test?
+
+> Assume both $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist, $f(x) \geq 0$, and $g(x) > 0$ for all $x \geq a$. If $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = c \quad\text{where } c > 0,$$
+> then $\int_a^\infty f(t) \,dt$ converges if and only if $\int_a^\infty g(t) \,dt$ converges.
+
+Back: The limit comparison test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852867231-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following limit holds. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = 1$$
+Back: Given some $a \in \mathbb{R}$, $\int_a^\infty f(x) \,dx$ converges if and only if $\int_a^\infty g(x) \,dx$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773853197102-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following limit holds. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{g(x)}{f(x)} = \frac{1}{2}$$
+Back: Given some $a \in \mathbb{R}$, $\int_a^\infty f(x) \,dx$ converges if and only if $\int_a^\infty g(x) \,dx$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773853197107-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following limit holds. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{g(x)}{f(x)} = 0$$
+Back: Given some $a \in \mathbb{R}$, if $\int_a^\infty f(x) \,dx$ converges then $\int_a^\infty g(x) \,dx$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773853197111-->
+END%%
+
+%%ANKI
+Basic
+The limit comparison test compares integrals $\int_a^\infty f(x) \,dx$ with $\int_a^\infty g(x) \,dx$. What conditions are $f(x)$ and $g(x)$ assumed to satisfy?
+Back: $f(x) \geq 0$ and $g(x) > 0$ for each $x$ (assuming $g(x)$ is the denominator in the tested limit).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773853197114-->
+END%%
+
 ### Second Kind
 
 Let $\int_x^b f(t) \,dt$ exists for all $x \in (a, b]$. An **improper integral of the second kind** is the function $I$ where $$I(x) = \int_x^b f(t) \,dt \quad\text{if } a < x \leq b.$$
@@ -1485,9 +1612,132 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773830082931-->
 END%%
 
-### Convergence
+#### Monotonicity
 
-TODO
+Assume the proper integral $\int_x^b f(t) \,dt$ exists and $f(x) \geq 0$ for each $a < x \leq b$. Then $\int_{a+}^b f(t) \,dt$ converges if and only if there is a constant $M > 0$ such that $$\int_x^b f(t) \,dt \leq M \quad\text{for every } a < x \leq b.$$
+
+%%ANKI
+Basic
+Let $\int_{a+}^b f(x) \,dx$ be an integral. When is its sequence of partial integrals monotonic?
+Back: When $f(x) \geq 0$ for all $x \in (a, b]$ or $f(x) \leq 0$ for all $x \in (a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341893-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_x^b f(t) \,dt$ exists and $f(x) \geq 0$ for all $a < x \leq b$. What does the montone convergence theorem state?
+Back: $\int_{a+}^b f(t) \,dt$ converges iff there is a constant $M > 0$ such that $$\int_x^b f(t) \,dt \leq M \quad\text{for every } a < x \leq b.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341894-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_a^x f(t) \,dt$ exists and $f(x) \geq 0$ for all $a \leq x < b$. What does the montone convergence theorem state?
+Back: $\int_a^{b-} f(t) \,dt$ converges iff there is a constant $M > 0$ such that $$\int_a^x f(t) \,dt \leq M \quad\text{for every } a \leq x < b.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341895-->
+END%%
+
+#### Direct Comparison Test
+
+Assume the proper integral $\int_x^b f(t) \,dt$ exists and that $0 \leq f(x) \leq g(x)$ for all $a < x \leq b$. If $\int_{a+}^b g(t) \,dt$ converges, then $\int_{a+}^b f(t) \,dt$ converges and $$\int_{a+}^b f(t) \,dt \leq \int_{a+}^b g(t) \,dt.$$
+
+The integral $\int_{a+}^b g(t) \,dt$ is said to **dominate** the integral $\int_{a+}^b f(t) \,dt$.
+
+%%ANKI
+Basic
+What does it mean for $\int_{a+}^b f(t) \,dt$ to dominate $\int_{a+}^b g(t) \,dt$?
+Back: $$\int_{a+}^b g(t) \,dt \leq \int_{a+}^b f(t) \,dt$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341896-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following convergence test?
+
+> Assume the proper integral $\int_x^b f(t) \,dt$ exists and that $0 \leq f(x) \leq g(x)$ for all $a < x \leq b$. If $\int_{a+}^b g(t) \,dt$ converges, then $\int_{a+}^b f(t) \,dt$ converges.
+
+Back: The direct comparison test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341897-->
+END%%
+
+%%ANKI
+Basic
+What conditions must $\int_{a+}^b f(t) \,dt$ and $\int_{a+}^b g(t) \,dt$ satisfy before applying the direct comparison test?
+Back: Both $\int_x^b f(t) \,dt$ and $\int_x^b g(t) \,dt$ exist and $0 \leq f(x) \leq g(x)$ for all $a < x \leq b$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341898-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_x^b f(t) \,dt$ and $\int_x^b g(t) \,dt$ exist and that $0 \leq f(x) \leq g(x)$ for all $a < x \leq b$. What does the direct comparison test state?
+Back: If $\int_{a+}^b g(t) \,dt$ converges, then $\int_{a+}^b f(t) \,dt$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341899-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist and that $0 \leq f(x) \leq g(x)$ for all $a < x \leq b$. What does the direct comparison test state?
+Back: If $\int_a^{b-} g(t) \,dt$ converges, then $\int_a^{b-} f(t) \,dt$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852437188-->
+END%%
+
+#### Limit Comparison Test
+
+Assume both $\int_x^b f(t) \,dt$ and $\int_x^b g(t) \,dt$ exist, $f(x) \geq 0$, and $g(x) > 0$ for all $a < x \leq b$. If $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = c \quad\text{where } c > 0,$$
+
+then $\int_{a+}^b f(t) \,dt$ converges if and only if $\int_{a+}^b g(t) \,dt$ converges.
+
+%%ANKI
+Basic
+What name is given to the following convergence test?
+
+> Assume both $\int_x^b f(t) \,dt$ and $\int_x^b g(t) \,dt$ exist, $f(x) \geq 0$, and $g(x) > 0$ for all $a < x \leq b$. If $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = c \quad\text{where } c > 0,$$
+> then $\int_{a+}^b f(t) \,dt$ converges if and only if $\int_{a+}^b g(t) \,dt$ converges.
+
+Back: The limit comparison test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852867235-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following limit holds. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow a+} \frac{f(x)}{g(x)} = 1$$
+Back: Given some $b \geq a$, $\int_{a+}^b f(x) \,dx$ converges if and only if $\int_{a+}^b g(x) \,dx$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773853197118-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following limit holds. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow a+} \frac{g(x)}{f(x)} = \frac{1}{2}$$
+Back: Given some $b \geq a$, $\int_{a+}^b f(x) \,dx$ converges if and only if $\int_{a+}^b g(x) \,dx$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773853197122-->
+END%%
+
+%%ANKI
+Basic
+Suppose the following limit holds. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow a+} \frac{g(x)}{f(x)} = 0$$
+Back: Given some $b \geq a$, if $\int_{a+}^b f(x) \,dx$ converges then $\int_{a+}^b g(x) \,dx$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773853197126-->
+END%%
+
+%%ANKI
+Basic
+The limit comparison test compares integrals $\int_{a+}^b f(x) \,dx$ with $\int_{a+}^b g(x) \,dx$. What conditions are $f(x)$ and $g(x)$ assumed to satisfy?
+Back: $f(x) \geq 0$ and $g(x) > 0$ for each $x$ (assuming $g(x)$ is the denominator in the tested limit).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773853197130-->
+END%%
 
 ## Average Value
 
