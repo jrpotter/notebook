@@ -1419,7 +1419,7 @@ Assume the proper integral $\int_a^b f(x) \,dx$ exists for each $b \geq a$ and s
 %%ANKI
 Basic
 Let $\int_a^\infty f(x) \,dx$ be an integral. When is its sequence of partial integrals monotonic?
-Back: When $f(x) \geq 0$ for all $x \geq a$ or $f(x) \leq 0$ for all $x \leq a$.
+Back: When $f(x) \geq 0$ for all $x \geq a$ or $f(x) \leq 0$ for all $x \geq a$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773852341886-->
 END%%
@@ -1509,7 +1509,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose the following limit holds. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = 1$$
+Let $f(x) \geq 0$, $g(x) > 0$, and the following limit hold. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = 1$$
 Back: Given some $a \in \mathbb{R}$, $\int_a^\infty f(x) \,dx$ converges if and only if $\int_a^\infty g(x) \,dx$ converges.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773853197102-->
@@ -1517,7 +1517,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose the following limit holds. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{g(x)}{f(x)} = \frac{1}{2}$$
+Let $g(x) \geq 0$, $f(x) > 0$, and the following limit hold. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{g(x)}{f(x)} = \frac{1}{2}$$
 Back: Given some $a \in \mathbb{R}$, $\int_a^\infty f(x) \,dx$ converges if and only if $\int_a^\infty g(x) \,dx$ converges.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773853197107-->
@@ -1525,7 +1525,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose the following limit holds. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{g(x)}{f(x)} = 0$$
+Let $g(x) \geq 0$, $f(x) > 0$, and the following limit hold. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{g(x)}{f(x)} = 0$$
 Back: Given some $a \in \mathbb{R}$, if $\int_a^\infty f(x) \,dx$ converges then $\int_a^\infty g(x) \,dx$ converges.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773853197111-->
@@ -1683,7 +1683,7 @@ END%%
 
 %%ANKI
 Basic
-Assume $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist and that $0 \leq f(x) \leq g(x)$ for all $a < x \leq b$. What does the direct comparison test state?
+Assume $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist and that $0 \leq f(x) \leq g(x)$ for all $a \leq x < b$. What does the direct comparison test state?
 Back: If $\int_a^{b-} g(t) \,dt$ converges, then $\int_a^{b-} f(t) \,dt$ converges.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773852437188-->
@@ -1709,7 +1709,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose the following limit holds. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow a+} \frac{f(x)}{g(x)} = 1$$
+Let $f(x) \geq 0$, $g(x) > 0$, and the following limit hold. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow a+} \frac{f(x)}{g(x)} = 1$$
 Back: Given some $b \geq a$, $\int_{a+}^b f(x) \,dx$ converges if and only if $\int_{a+}^b g(x) \,dx$ converges.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773853197118-->
@@ -1717,7 +1717,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose the following limit holds. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow a+} \frac{g(x)}{f(x)} = \frac{1}{2}$$
+Let $f(x) > 0$, $g(x) \geq 0$, and the following limit hold. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow a+} \frac{g(x)}{f(x)} = \frac{1}{2}$$
 Back: Given some $b \geq a$, $\int_{a+}^b f(x) \,dx$ converges if and only if $\int_{a+}^b g(x) \,dx$ converges.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773853197122-->
@@ -1725,7 +1725,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose the following limit holds. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow a+} \frac{g(x)}{f(x)} = 0$$
+Let $f(x) > 0$, $g(x) \geq 0$, and the following limit hold. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow a+} \frac{g(x)}{f(x)} = 0$$
 Back: Given some $b \geq a$, if $\int_{a+}^b f(x) \,dx$ converges then $\int_{a+}^b g(x) \,dx$ converges.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773853197126-->

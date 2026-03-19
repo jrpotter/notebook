@@ -1456,7 +1456,7 @@
     "_journal/2025-07-05.md": "ff1fba2e661f57f68cb8cd10c50ceb67",
     "_journal/2025-07/2025-07-04.md": "13487a42a2d971e073999906b2360637",
     "arithmetic/radices.md": "2c9b56821d0f173b64dc068859b39bdc",
-    "arithmetic/logarithms.md": "2458bdbb9da412fa605a2d61f35343b3",
+    "arithmetic/logarithms.md": "bb08d3c1887c6b55b32dba44588bb6ef",
     "arithmetic/index.md": "4fc2a278948ba666a630f891580fe776",
     "networking/ip/subnet.md": "c9259f72b5e0f193156601130571932a",
     "networking/ip/index.md": "7481786bb2291b2e1341328661be4775",
@@ -1759,7 +1759,7 @@
     "_journal/2025-10/2025-10-19.md": "3b75e9ccd1a230b3dd7b3367d5520ce7",
     "formal_system/phrase-structure.md": "4460658c46968ed3a079f24a61854646",
     "calculus/riemann_integrals.md": "ff39b163c6719ccb65b2aac54c583ad8",
-    "calculus/riemann.md": "2e6e3607aebcdcea0e09d6df1bb6ef61",
+    "calculus/riemann.md": "8f9e9ed151a22e488b1d64f98a9b6675",
     "_journal/2025-10-21.md": "afa7eaf4e85392cea5587f263a52e246",
     "_journal/2025-10/2025-10-20.md": "c9a30dfe5b534cc5ac34145dba765d28",
     "calculus/continuity.md": "b853316d3d1530fc53aed63979f1a61d",
@@ -2537,7 +2537,9 @@
     "_journal/2026-03-17.md": "c0d76a482e92475c986b77f51f197623",
     "_journal/2026-03/2026-03-16.md": "1d4dfc3e390c5c1aba36fbdc4ffab310",
     "_journal/2026-03-18.md": "04398695b1dc222cd1fabc6ee4a2f9b2",
-    "_journal/2026-03/2026-03-17.md": "70d8492efdd41ad0878ed2634b9669d8"
+    "_journal/2026-03/2026-03-17.md": "70d8492efdd41ad0878ed2634b9669d8",
+    "_journal/2026-03-19.md": "7de20e1a1dd59ce273bef181d53f5aa4",
+    "_journal/2026-03/2026-03-18.md": "f6557dc3885aeb031015b0768f6462d3"
   },
   "fields_dict": {
     "Basic": [
