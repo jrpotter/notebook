@@ -8,7 +8,9 @@ tags:
 
 ## Overview
 
-**Arithmetic** refers to the branch of mathematics dealing with the following mathematical operations: addition, subtraction, multiplication, division, exponentiation, and logarithms.
+**Arithmetic** refers to the branch of mathematics dealing with, at its most basic level, addition, subtraction, multiplication, and division.
+
+In a wider sense, it may also include [[exponentials|exponentiation]] and [[logarithms]].
 
 %%ANKI
 Basic

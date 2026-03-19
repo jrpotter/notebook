@@ -8,13 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "52286d2b38aef103",
+            "id": "d006e2ed906b9145",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "trigonometry/circular.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "circular"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "1773853197114",
+                "query": "1755143382356",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "data_structures/trees/binary_tree.md",
+                "file": "trigonometry/circular.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for binary_tree"
+              "title": "Backlinks for circular"
             }
           },
           {
@@ -139,12 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "trigonometry/circular.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of circular"
             }
           }
         ],
@@ -166,37 +171,39 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "52286d2b38aef103",
+  "active": "d006e2ed906b9145",
   "lastOpenFiles": [
+    "algebra/logarithms.md",
+    "algebra/exponentials.md",
+    "algebra/complex.md",
+    "arithmetic/gcd.md",
+    "arithmetic/index.md",
+    "arithmetic/radices.md",
+    "algebra/polynomials.md",
+    "algebra/functions.md",
+    "algebra/boolean.md",
+    "algebra/images/complex-number.png",
+    "complex/exponentials.md",
+    "real",
+    "complex/polar_form.md",
+    "_journal/2025/2025-08/2025-08-24.md",
+    "calculus/series.md",
+    "_journal/2026-03-19.md",
     "calculus/riemann.md",
     "dnd/index.md",
-    "_journal/2026-03-19.md",
     "_journal/2026-03/2026-03-18.md",
     "calculus/primitives.md",
-    "arithmetic/logarithms.md",
-    "calculus/series.md",
     "calculus/sequences.md",
     "calculus/limits.md",
     "calculus/images/improper-second.png",
     "calculus/images/improper-first.png",
     "_journal/2026-03/2026-03-17.md",
     "algebra/abs_val.md",
-    "algebra/functions.md",
     "_journal/2025/2025-02/2025-02-26.md",
     "operating_systems/signals.md",
     "_journal/2026-03/2026-03-16.md",
     "network/session/jwt.md",
-    "_journal/2026-03/2026-03-15.md",
-    "calculus/taylor.md",
-    "_journal/2026-03/2026-03-14.md",
-    "calculus/derivatives.md",
     "calculus/images/integral-test.png",
-    "_journal/2026-03/2026-03-13.md",
-    "complexity/recurrences.md",
-    "complex/index.md",
-    "_journal/2026-03/2026-03-12.md",
-    "sets/order/partial.md",
-    "_journal/2026-03/2026-03-11.md",
     "calculus/images/square-gnomon.png",
     "data_structures/images/disjoint-set-linked-list.png",
     "data_structures/images/disjoint-set-forest.png",
@@ -209,10 +216,8 @@
     "network/physical",
     "network/application",
     "network/session",
-    "trigonometry/images/tangent-unit-circle.png",
     "dnd",
     "parsing",
-    "_journal/2026/2026-01",
-    "network/application/http"
+    "_journal/2026/2026-01"
   ]
 }

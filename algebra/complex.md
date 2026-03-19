@@ -1,8 +1,9 @@
 ---
 title: Complex Numbers
 TARGET DECK: Obsidian::STEM
-FILE TAGS: complex
+FILE TAGS: algebra::complex
 tags:
+  - algebra
   - complex
 ---
 
@@ -617,4 +618,5 @@ END%%
 * “Complex Plane,” in _Wikipedia_, December 14, 2024, [https://en.wikipedia.org/w/index.php?title=Complex_plane](https://en.wikipedia.org/w/index.php?title=Complex_plane&oldid=1263031649).
 * John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+* Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 * _Wikipedia_. “Argument (complex analysis).” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Argument_(complex_analysis)](https://en.wikipedia.org/w/index.php?title=Argument_\(complex_analysis\)&oldid=1304064700).

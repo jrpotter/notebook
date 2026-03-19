@@ -181,7 +181,7 @@ END%%
 
 ### Linearity
 
-Let $\sum a_n$ and $\sum b_n$ be convergent infinite series of [[complex/index|complex]] terms and let $\alpha$ and $\beta$ be complex constants. Then the series $\sum\, (\alpha a_n + \beta b_n)$ also converges and its sum is given by equation $$\sum_{k=1}^{\infty}\, (\alpha a_n + \beta b_n) = \alpha \sum_{k=1}^{\infty} a_n + \beta \sum_{k=1}^{\infty} b_n.$$
+Let $\sum a_n$ and $\sum b_n$ be convergent infinite series of [[complex|complex]] terms and let $\alpha$ and $\beta$ be complex constants. Then the series $\sum\, (\alpha a_n + \beta b_n)$ also converges and its sum is given by equation $$\sum_{k=1}^{\infty}\, (\alpha a_n + \beta b_n) = \alpha \sum_{k=1}^{\infty} a_n + \beta \sum_{k=1}^{\infty} b_n.$$
 
 %%ANKI
 Basic
@@ -1368,7 +1368,7 @@ END%%
 
 **Telescoping** refers to the property of summations in which consecutive terms cancel out. The telescoping property states that $$\sum_{k=1}^n (a_k - a_{k+1}) = a_1 - a_{n + 1}.$$
 
-Let $(a_n)_{n \geq 0}$ and $(b_n)_{n \geq 0}$ be two sequences of [[complex/index|complex]] numbers such that $$a_n = b_n - b_{n + 1} \quad\text{for}\quad n = 1, 2, 3, \ldots$$
+Let $(a_n)_{n \geq 0}$ and $(b_n)_{n \geq 0}$ be two sequences of [[complex|complex]] numbers such that $$a_n = b_n - b_{n + 1} \quad\text{for}\quad n = 1, 2, 3, \ldots$$
 
 Then the series $\sum a_n$ converges if and only if the sequence $(b_n)$ converges, in which case we have $$\sum_{n=1}^\infty a_n = b_1 - L, \quad\text{where}\quad L = \lim_{n \rightarrow +\infty} b_n.$$
 

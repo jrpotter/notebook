@@ -1673,7 +1673,7 @@ $$\large \mathop{\text{atan2}}(y, x) = \begin{cases}
 \text{undefined} & \text{if } x = 0 \text{ and } y = 0
 \end{cases}$$
 
-Let $z = x + yi$ be a [[complex/index|complex]] number. Then $\mathop{\text{atan2}}(y, x) = \mathop{\text{Arg}}(x + yi)$.
+Let $z = x + yi$ be a [[complex|complex]] number. Then $\mathop{\text{atan2}}(y, x) = \mathop{\text{Arg}}(x + yi)$.
 
 %%ANKI
 Basic
@@ -1807,7 +1807,7 @@ Basic
 Let $z \in \mathbb{C}$. What is the $\mathop{\text{atan2}}$ function often used to compute?
 Back: $\mathop{\text{Arg}}(z)$
 Reference: _Wikipedia_. “atan2.” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Atan2](https://en.wikipedia.org/w/index.php?title=Atan2&oldid=1304064532).
-Tags: complex
+Tags: algebra::complex
 <!--ID: 1755142984763-->
 END%%
 
@@ -1816,7 +1816,7 @@ Basic
 Let $z \in \mathbb{C}$. What trigonometric function is used to compute $\mathop{\text{Arg}}(z)$?
 Back: $\mathop{\text{atan2}}$
 Reference: _Wikipedia_. “atan2.” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Atan2](https://en.wikipedia.org/w/index.php?title=Atan2&oldid=1304064532).
-Tags: complex
+Tags: algebra::complex
 <!--ID: 1755142984764-->
 END%%
 
@@ -1825,7 +1825,7 @@ Basic
 Let $z \in \mathbb{C}$. What does $\mathop{\text{Arg}}(z)$ equal in terms of $\mathop{\text{atan2}}$?
 Back: $\mathop{\text{atan2}}(\mathop{\text{Im}}(z), \mathop{\text{Re}}(z))$
 Reference: _Wikipedia_. “atan2.” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Atan2](https://en.wikipedia.org/w/index.php?title=Atan2&oldid=1304064532).
-Tags: complex
+Tags: algebra::complex
 <!--ID: 1755142984765-->
 END%%
 
@@ -1834,7 +1834,7 @@ Basic
 Let $z = a + bi$. What does $\mathop{\text{Arg}}(z)$ equal in terms of $\mathop{\text{atan2}}$?
 Back: $\mathop{\text{atan2}}(b, a)$
 Reference: _Wikipedia_. “atan2.” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Atan2](https://en.wikipedia.org/w/index.php?title=Atan2&oldid=1304064532).
-Tags: complex
+Tags: algebra::complex
 <!--ID: 1755142984766-->
 END%%
 
@@ -1843,7 +1843,7 @@ Basic
 Which C function is used to find the argument of a complex number?
 Back: `atan2`
 Reference: _Wikipedia_. “atan2.” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Atan2](https://en.wikipedia.org/w/index.php?title=Atan2&oldid=1304064532).
-Tags: c23 complex
+Tags: algebra::complex c23
 <!--ID: 1755142984767-->
 END%%
 
@@ -1852,7 +1852,7 @@ Basic
 How is `atan2(0, 0)` usually defined in C?
 Back: As `0`.
 Reference: _Wikipedia_. “atan2.” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Atan2](https://en.wikipedia.org/w/index.php?title=Atan2&oldid=1304064532).
-Tags: c23 complex
+Tags: algebra::complex c23
 <!--ID: 1755143382356-->
 END%%
 
@@ -1860,7 +1860,7 @@ END%%
 Cloze
 The C function `atan2` helps convert {1:cartesian} coordinates to {1:polar} coordinates.
 Reference: _Wikipedia_. “atan2.” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Atan2](https://en.wikipedia.org/w/index.php?title=Atan2&oldid=1304064532).
-Tags: c23 complex
+Tags: algebra::complex c23
 <!--ID: 1755143505511-->
 END%%
 
@@ -1869,7 +1869,7 @@ Basic
 How does C function `atan2` help convert cartesian coordinates to polar coordinates?
 Back: It returns the angle between the positive real axis and the ray from origin to the point in question.
 Reference: _Wikipedia_. “atan2.” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Atan2](https://en.wikipedia.org/w/index.php?title=Atan2&oldid=1304064532).
-Tags: c23 complex
+Tags: algebra::complex c23
 <!--ID: 1755143505514-->
 END%%
 
