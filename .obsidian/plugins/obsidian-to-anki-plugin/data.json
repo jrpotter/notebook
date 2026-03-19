@@ -1759,7 +1759,7 @@
     "_journal/2025-10/2025-10-19.md": "3b75e9ccd1a230b3dd7b3367d5520ce7",
     "formal_system/phrase-structure.md": "4460658c46968ed3a079f24a61854646",
     "calculus/riemann_integrals.md": "ff39b163c6719ccb65b2aac54c583ad8",
-    "calculus/riemann.md": "8f9e9ed151a22e488b1d64f98a9b6675",
+    "calculus/riemann.md": "8ec8df87464350791725c6098bcf7674",
     "_journal/2025-10-21.md": "afa7eaf4e85392cea5587f263a52e246",
     "_journal/2025-10/2025-10-20.md": "c9a30dfe5b534cc5ac34145dba765d28",
     "calculus/continuity.md": "b853316d3d1530fc53aed63979f1a61d",
@@ -1769,7 +1769,7 @@
     "data_structures/trees/b-tree.md": "f427df6f03db501393e29f78cc168b06",
     "data_structures/trees/binary_tree.md": "a909dd1a4e6e7965ddfdb9dedac13bb2",
     "data_structures/trees/index.md": "6ae0a690da634111eff60e30986c8c9f",
-    "algebra/functions.md": "adf20a5e8beb03961de1d1baff7c8596",
+    "algebra/functions.md": "08e9de17eb285f79510aa20eed07c28f",
     "_journal/2025-10-23.md": "39f4ad1da40f17280f0df02342cd43e9",
     "_journal/2025-10/2025-10-22.md": "c4fedcaf6d2622cc79eedc07b1ef851d",
     "_journal/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
@@ -2374,7 +2374,7 @@
     "_journal/2026-01/2026-01-22.md": "22e0618e3c7548b932049d238d494f89",
     "dnd/creatures.md": "8848eaeceadde3367f1ad5f2cd74efdb",
     "dnd/exploration.md": "f0adc8ec5670a2c2e37e71daa32b24e3",
-    "trigonometry/circular.md": "50e2c7c87ab84e73c43eef2cbeb07fc7",
+    "trigonometry/circular.md": "2381f7df1dec601ca1c8cf1c9098442d",
     "_journal/2026-01-25.md": "848164f3adc7f946d2416802fef0c3db",
     "_journal/2026-01/2026-01-24.md": "646160c6d1bc14832aae354e558b6365",
     "_journal/2026-01/2026-01-23.md": "58545920c5ffaf78913ed827518f3c3d",
@@ -2538,9 +2538,10 @@
     "_journal/2026-03/2026-03-16.md": "1d4dfc3e390c5c1aba36fbdc4ffab310",
     "_journal/2026-03-18.md": "04398695b1dc222cd1fabc6ee4a2f9b2",
     "_journal/2026-03/2026-03-17.md": "70d8492efdd41ad0878ed2634b9669d8",
-    "_journal/2026-03-19.md": "143aa72b3f0b8975748c0e70398dae23",
+    "_journal/2026-03-19.md": "cdc2d1605ade3f7ca43e62dee20264e3",
     "_journal/2026-03/2026-03-18.md": "f6557dc3885aeb031015b0768f6462d3",
-    "algebra/exponentials.md": "0d7a1a70ebd436d312f074334def8605"
+    "algebra/exponentials.md": "0d7a1a70ebd436d312f074334def8605",
+    "trigonometry/inverses.md": "4296c732fd038d02711788008f2dca59"
   },
   "fields_dict": {
     "Basic": [

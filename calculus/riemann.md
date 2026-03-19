@@ -1261,6 +1261,8 @@ END%%
 
 ## Improper Integrals
 
+An **improper integral** is an integral that tends to infinity in either dimension. Those of the first kind extends to $\pm \infty$ over the interval of integration whereas those of second kind extend over unbounded singularities.
+
 %%ANKI
 Cloze
 An integral is considered either {proper} or {improper}.
@@ -1274,6 +1276,30 @@ How many "kinds" of improper integrals are there?
 Back: Two.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773828796916-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_a^\infty f(x) \,dx$ converges. *Why* is it not necessary that $f(x) \rightarrow 0$ as $x \rightarrow +\infty$?
+Back: $f(x)$ can equal anything at any singularity and not contribute to the overall integral.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773946847704-->
+END%%
+
+%%ANKI
+Basic
+Improper integrals of which kind are an extension of the $x$-axis?
+Back: The first kind.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773946847709-->
+END%%
+
+%%ANKI
+Basic
+Improper integrals of which kind are an extension of the $y$-axis?
+Back: The second kind.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773946847713-->
 END%%
 
 ### First Kind

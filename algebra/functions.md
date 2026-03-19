@@ -473,6 +473,87 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1749994457987-->
 END%%
 
+## Cofunction
+
+A function $f$ is **cofunction** of function $g$ if $f(A) = g(B)$ whenever $A$ and $B$ are complementary angles. For example, [[circular#Sine|sine]] and [[circular#Cosine|cosine]] are cofunctions.
+
+%%ANKI
+Basic
+Suppose $f$ and $g$ are cofunctions. What does this mean?
+Back: $f(A) = g(B)$ for all complementary angles $A$ and $B$.
+Reference: _Wikipedia_. “Cofunction.” September 12, 2023. [https://en.wikipedia.org/w/index.php?title=Cofunction](https://en.wikipedia.org/w/index.php?title=Cofunction&oldid=1175007162).
+<!--ID: 1753797639486-->
+END%%
+
+%%ANKI
+Cloze
+{Sine} is the cofunction of {cosine}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639489-->
+END%%
+
+%%ANKI
+Cloze
+{Tangent} is the cofunction of {cotangent}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639492-->
+END%%
+
+%%ANKI
+Cloze
+{Secant} is the cofunction of {cosecant}.
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639495-->
+END%%
+
+%%ANKI
+Basic
+The cofunction identity states $\sin{x}$ equals what?
+Back: $\cos{\left( \frac{\pi}{2} - x \right)}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639498-->
+END%%
+
+%%ANKI
+Basic
+The cofunction identity states $\cot{x}$ equals what?
+Back: $\tan{\left( \frac{\pi}{2} - x \right)}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639500-->
+END%%
+
+%%ANKI
+Basic
+The cofunction identity states $\tan{x}$ equals what?
+Back: $\cot{\left( \frac{\pi}{2} - x \right)}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639503-->
+END%%
+
+%%ANKI
+Basic
+The cofunction identity states $\cos{x}$ equals what?
+Back: $\sin{\left( \frac{\pi}{2} - x \right)}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639507-->
+END%%
+
+%%ANKI
+Basic
+The cofunction identity states $\sec{x}$ equals what?
+Back: $\csc{\left( \frac{\pi}{2} - x \right)}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639510-->
+END%%
+
+%%ANKI
+Basic
+The cofunction identity states $\csc{x}$ equals what?
+Back: $\sec{\left( \frac{\pi}{2} - x \right)}$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1753797639513-->
+END%%
+
 ### Odd
 
 A function $f$ is said to be **odd** if $-f(x) = f(-x)$ for all $x$ in $f$'s domain.
@@ -1724,5 +1805,6 @@ END%%
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 * _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
+* _Wikipedia_. “Cofunction.” September 12, 2023. [https://en.wikipedia.org/w/index.php?title=Cofunction](https://en.wikipedia.org/w/index.php?title=Cofunction&oldid=1175007162).
 * _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
 * _Wikipedia_. “Implicit function.” November 30, 2025. [https://en.wikipedia.org/w/index.php?title=Implicit_function](https://en.wikipedia.org/w/index.php?title=Implicit_function&oldid=1325039857).
