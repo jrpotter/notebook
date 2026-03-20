@@ -8,7 +8,12 @@ tags:
 
 ## Overview
 
-**Arithmetic** refers to the branch of mathematics dealing with, at its most basic level, addition, subtraction, multiplication, and division.
+**Arithmetic** refers to the branch of mathematics dealing with, at its most basic level, addition, subtraction, multiplication, and division. There exist names for each term in these basic expressions:
+
+* In $a + b$, $a$ is the **augend** and $b$ is the **addend**.
+* In $a - b$, $a$ is the **minuend** and $b$ is the **subtrahend**.
+* In $a \times b$, $a$ is the **multiplicand** and $b$ is the **multiplier**.
+* In $a \div b$, $a$ is the **dividend** and $b$ is the **divisor**.
 
 In a wider sense, it may also include [[exponentials|exponentiation]] and [[logarithms]].
 
@@ -38,42 +43,126 @@ END%%
 
 %%ANKI
 Basic
-Consider expression $x - y$. What subtraction-related name is given to $x$?
-Back: The minuend.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
-<!--ID: 1771448730348-->
-END%%
-
-%%ANKI
-Basic
-Consider expression $x - y$. What subtraction-related name is given to $y$?
-Back: The subtrahend.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
-<!--ID: 1771448730352-->
-END%%
-
-%%ANKI
-Basic
-Let $x = 3 - 1$. Which number is the minuend?
-Back: $3$
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
-<!--ID: 1771448775302-->
-END%%
-
-%%ANKI
-Basic
-Let $x = 3 - 1$. Which number is the subtrahend?
-Back: $1$
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
-<!--ID: 1771448775310-->
-END%%
-
-%%ANKI
-Basic
 Let $a, b \in \mathbb{R}$. How do we write product $a \cdot b$ as a fraction?
 Back: Assuming $b \neq 0$, as $a / (1 / b)$.
 Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
 <!--ID: 1772631794969-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x + y$, {$x$} is referred to as the {augend}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400987-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x + y$, {$y$} is referred to as the {addend}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400990-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x - y$, {$x$} is referred to as the {minuend}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400991-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x + y$, {$y$} is referred to as the {subtrahend}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400992-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x \times y$, {$x$} is referred to as the {multiplicand}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400993-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x \times y$, {$y$} is referred to as the {multiplier}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400994-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x \div y$, {$x$} is referred to as the {dividend}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400995-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x \div y$, {$y$} is referred to as the {divisor}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400996-->
+END%%
+
+%%ANKI
+Basic
+Which of the addend or augend is listed first, left-to-right?
+Back: The augend.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400997-->
+END%%
+
+%%ANKI
+Basic
+Which of the minuend or subtrahend is listed first, left-to-right?
+Back: The minuend.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400998-->
+END%%
+
+%%ANKI
+Basic
+Which of the multiplicand or multiplier is listed first, left-to-right?
+Back: The multiplicand.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400999-->
+END%%
+
+%%ANKI
+Basic
+Which of the divisor or dividend is listed first, left-to-right?
+Back: The dividend.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953401000-->
+END%%
+
+%%ANKI
+Cloze
+The {minuend} is to subtraction as the {multiplicand} is to multiplication.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953401001-->
+END%%
+
+%%ANKI
+Cloze
+The {subtrahend} is to subtraction as the {multiplier} is to multiplication.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953401002-->
+END%%
+
+%%ANKI
+Cloze
+The {addend} is to addition as the {divisor} is to division.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953401003-->
+END%%
+
+%%ANKI
+Cloze
+The {augend} is to addition as the {dividend} is to division.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953401004-->
 END%%
 
 ## Average Value

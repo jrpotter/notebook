@@ -451,96 +451,40 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1748393420208-->
 END%%
 
-## Radicals
+## Long Division
 
-A **radical** refers to an $n$th root of $x$ denoted as $\sqrt[n]{x}$. The positive integer $n$ is called the **index** or **degree**. The number $x$ of which the root is taken is the **radicand**.
-
-**Rationalization** is a process by which radicals are eliminated from an expression. An expression of form $\sqrt{a} \pm \sqrt{b}$ is rationalized by multiplying by its conjugate $\sqrt{a} \mp \sqrt{b}$.
+**Polynomial long division** is an algorithm for dividing a polynomial by another with equal or lower degree.
 
 %%ANKI
 Basic
-What is the radical symbol?
-Back: $\sqrt{\quad}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1772585919000-->
+Long division can be used for dividing what kind of polynomial by another?
+Back: A polynomial of degree $n$ is divided by one of degree $\leq n$.
+Reference: _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
+<!--ID: 1774036988059-->
 END%%
 
 %%ANKI
 Basic
-How is radical $(\sqrt[3]{a})^2$ instead written as a fractional exponent?
-Back: As $a^{2 / 3}$.
-Reference: _Wikipedia_. “nth root.” February 19, 2026. [https://en.wikipedia.org/w/index.php?title=Nth_root](https://en.wikipedia.org/w/index.php?title=Nth_root&oldid=1339314862).
-<!--ID: 1772585919010-->
+What "preprocessing step" must be performed before applying long division to $x^3 + x + 1$?
+Back: Adding term $0x^2$, i.e. $x^3 + 0x^2 + x + 1$.
+Reference: _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
+<!--ID: 1774036988062-->
 END%%
 
 %%ANKI
 Basic
-How is fractional exponent $x^{2/3}$ written using a radical?
-Back: As $(\sqrt[3]{x})^2$.
-Reference: _Wikipedia_. “nth root.” February 19, 2026. [https://en.wikipedia.org/w/index.php?title=Nth_root](https://en.wikipedia.org/w/index.php?title=Nth_root&oldid=1339314862).
-<!--ID: 1772586319963-->
+Polynomial long division produces a $0$ remainder if and only if what?
+Back: The divisor is a factor of the dividend.
+Reference: _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
+<!--ID: 1774036988063-->
 END%%
 
 %%ANKI
 Basic
-How is radical $(\sqrt{a})^3$ instead written as a fractional exponent?
-Back: As $a^{3 / 2}$.
-Reference: _Wikipedia_. “nth root.” February 19, 2026. [https://en.wikipedia.org/w/index.php?title=Nth_root](https://en.wikipedia.org/w/index.php?title=Nth_root&oldid=1339314862).
-<!--ID: 1772585919013-->
-END%%
-
-%%ANKI
-Basic
-How is fractional exponent $x^{3/2}$ written using a radical?
-Back: As $(\sqrt{x})^3$.
-Reference: _Wikipedia_. “nth root.” February 19, 2026. [https://en.wikipedia.org/w/index.php?title=Nth_root](https://en.wikipedia.org/w/index.php?title=Nth_root&oldid=1339314862).
-<!--ID: 1772586319972-->
-END%%
-
-%%ANKI
-Cloze
-In the following expression, term {$n$} is called the {degree} or {index}. $$\large \sqrt[n]{x}$$
-Reference: _Wikipedia_. “nth root.” February 19, 2026. [https://en.wikipedia.org/w/index.php?title=Nth_root](https://en.wikipedia.org/w/index.php?title=Nth_root&oldid=1339314862).
-<!--ID: 1772585919016-->
-END%%
-
-%%ANKI
-Cloze
-In the following expression, term {$x$} is called the {radicand}. $$\large \sqrt[n]{x}$$
-Reference: _Wikipedia_. “nth root.” February 19, 2026. [https://en.wikipedia.org/w/index.php?title=Nth_root](https://en.wikipedia.org/w/index.php?title=Nth_root&oldid=1339314862).
-<!--ID: 1772585919020-->
-END%%
-
-%%ANKI
-Basic
-How is the following expression rationalized? $$\frac{10}{\sqrt{5}}$$
-Back: $$\frac{10}{\sqrt{5}} \cdot \frac{\sqrt{5}}{\sqrt{5}} = \frac{10\sqrt{5}}{5} = 2 \sqrt{5}$$
-Reference: _Wikipedia_. “Rationalisation (mathematics).” September 13, 2025. [https://en.wikipedia.org/w/index.php?title=Rationalisation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Rationalisation_\(mathematics\)&oldid=1311056995).
-<!--ID: 1772585919023-->
-END%%
-
-%%ANKI
-Basic
-Let $a$ be some real. How is the following expression rationalized? $$\frac{10}{\sqrt[3]{a}}$$
-Back: $$\frac{10}{\sqrt[3]{a}} \cdot \frac{(\sqrt[3]{a})^2}{(\sqrt[3]{a})^2} = \frac{10(\sqrt[3]{a})^2}{a}$$
-Reference: _Wikipedia_. “Rationalisation (mathematics).” September 13, 2025. [https://en.wikipedia.org/w/index.php?title=Rationalisation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Rationalisation_\(mathematics\)&oldid=1311056995).
-<!--ID: 1772585919026-->
-END%%
-
-%%ANKI
-Basic
-What is rationalization?
-Back: A technique used to rid an expression of radicals.
-Reference: _Wikipedia_. “Rationalisation (mathematics).” September 13, 2025. [https://en.wikipedia.org/w/index.php?title=Rationalisation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Rationalisation_\(mathematics\)&oldid=1311056995).
-<!--ID: 1772586319975-->
-END%%
-
-%%ANKI
-Basic
-How is the following expression rationalized? $$x^2 - \sqrt{x^4 - x^2 + 1}$$
-Back: Multiplying by the conjugate over itself, i.e. $$x^2 - \sqrt{x^4 - x^2 + 1} \cdot \frac{x^2 + \sqrt{x^4 - x^2 + 1}}{x^2 + \sqrt{x^4 - x^2 + 1}}$$
-Reference: _Wikipedia_. “Rationalisation (mathematics).” September 13, 2025. [https://en.wikipedia.org/w/index.php?title=Rationalisation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Rationalisation_\(mathematics\)&oldid=1311056995).
-<!--ID: 1772586319978-->
+Let $P(x)$ be a polynomial with zero $a \in \mathbb{R}$. Long division of $P(x)$ by what polynomial yields a zero remainder?
+Back: $x - a$
+Reference: _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
+<!--ID: 1774036988065-->
 END%%
 
 ## Bibliography
@@ -550,5 +494,4 @@ END%%
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 * _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
-* _Wikipedia_. “nth root.” February 19, 2026. [https://en.wikipedia.org/w/index.php?title=Nth_root](https://en.wikipedia.org/w/index.php?title=Nth_root&oldid=1339314862).
-* _Wikipedia_. “Rationalisation (mathematics).” September 13, 2025. [https://en.wikipedia.org/w/index.php?title=Rationalisation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Rationalisation_\(mathematics\)&oldid=1311056995).
+* _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).

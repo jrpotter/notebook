@@ -716,7 +716,7 @@
     "lambda-calculus/index.md": "1213a7158f694ad0fcab756f36ee97b8",
     "lambda-calculus/beta-reduction.md": "0935987f2bac0e6298735f2b26fd5885",
     "lambda-calculus/alpha-conversion.md": "9ed70bcab72534c2b2ac3402f55696a9",
-    "index.md": "e48e895feeed7046425bb2ee15419770",
+    "index.md": "8e21ed395ea1bb25f61332b8edc8a7cb",
     "i18n/unicode.md": "3e6d354fa309f7fe1e8624eb96e077da",
     "i18n/index.md": "cf6d44896e65e169e427af9665ef89e1",
     "i18n/ascii.md": "4c910bc1b5d3169b3c6c6447d745325a",
@@ -786,7 +786,7 @@
     "algebra/sequences/delta-constant.md": "b744b0d8decdfff4ad40b07af848bf74",
     "algebra/sequences/arithmetic.md": "63cb1bd3a0d01942f4f7a4212c742cfd",
     "algebra/radices.md": "01fbaba8f81929581707d8df5ad0d912",
-    "algebra/polynomials.md": "3e6794a7183e249ce8ecfe7978d98442",
+    "algebra/polynomials.md": "6a8e641e797c3c05b8da4810e78934f1",
     "algebra/index.md": "dc8fa24fd31a24e9b4fa5adb6ec1576a",
     "algebra/floor-ceiling.md": "78496445da3054dd720f00a485fc433a",
     "algebra/complex.md": "31e15a0c60db4af3dae9f9255e84a5c6",
@@ -1457,7 +1457,7 @@
     "_journal/2025-07/2025-07-04.md": "13487a42a2d971e073999906b2360637",
     "arithmetic/radices.md": "2c9b56821d0f173b64dc068859b39bdc",
     "arithmetic/logarithms.md": "bb08d3c1887c6b55b32dba44588bb6ef",
-    "arithmetic/index.md": "ab55496329b0bb1eb43511cce52183b9",
+    "arithmetic/index.md": "ff9919a7218e8284248f772b6bfa2333",
     "networking/ip/subnet.md": "c9259f72b5e0f193156601130571932a",
     "networking/ip/index.md": "7481786bb2291b2e1341328661be4775",
     "networking/ip/classful.md": "f18de002a7c9f27b179ba6494b8d5f36",
@@ -2538,10 +2538,12 @@
     "_journal/2026-03/2026-03-16.md": "1d4dfc3e390c5c1aba36fbdc4ffab310",
     "_journal/2026-03-18.md": "04398695b1dc222cd1fabc6ee4a2f9b2",
     "_journal/2026-03/2026-03-17.md": "70d8492efdd41ad0878ed2634b9669d8",
-    "_journal/2026-03-19.md": "cdc2d1605ade3f7ca43e62dee20264e3",
+    "_journal/2026-03-19.md": "9d167b419bf191152b452383e7391de0",
     "_journal/2026-03/2026-03-18.md": "f6557dc3885aeb031015b0768f6462d3",
-    "algebra/exponentials.md": "0d7a1a70ebd436d312f074334def8605",
-    "trigonometry/inverses.md": "4296c732fd038d02711788008f2dca59"
+    "algebra/exponentials.md": "f4a83aaea9396b7141e19a0861e2abd0",
+    "trigonometry/inverses.md": "5c68f5cc19c157f4c8e6dbd169efd05b",
+    "_journal/2026-03-20.md": "379b0ca55d4f33ac3198e796fa573956",
+    "_journal/2026-03/2026-03-19.md": "9d167b419bf191152b452383e7391de0"
   },
   "fields_dict": {
     "Basic": [

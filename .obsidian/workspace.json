@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "00f19b06dda3dc73",
+            "id": "d44ca104083c57d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algebra/sets.md",
+                "file": "algebra/polynomials.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "sets"
+              "title": "polynomials"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dg-pub",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algebra/sets.md",
+                "file": "algebra/polynomials.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of sets"
+              "title": "Outline of polynomials"
             }
           }
         ],
@@ -167,14 +167,17 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "digitalgarden:Digital Garden Publication Center": false
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "56d1b5e9dc07213f",
+  "active": "d44ca104083c57d4",
   "lastOpenFiles": [
-    "algebra/structures.md",
+    "_journal/2026-03-20.md",
     "algebra/polynomials.md",
+    "algebra/exponentials.md",
+    "_journal/2026-03/2026-03-19.md",
+    "trigonometry/inverses.md",
+    "algebra/structures.md",
     "abstract_data_types/stacks.md",
     "abstract_data_types/queues.md",
     "algebra/logarithms.md",
@@ -186,19 +189,15 @@
     "algebra/arch_prop.md",
     "algebra/boolean.md",
     "algebra/complex.md",
-    "algebra/exponentials.md",
     "algebra/functions.md",
     "algebra/sets.md",
-    "_journal/2026-03-19.md",
     "trigonometry/circular.md",
     "trigonometry/index.md",
-    "trigonometry/inverses.md",
     "calculus/derivatives.md",
     "calculus/riemann.md",
     "calculus/intervals.md",
     "calculus/sequences.md",
     "arithmetic/gcd.md",
-    "arithmetic/index.md",
     "algebra/images/complex-number.png",
     "real",
     "calculus/images/improper-second.png",
