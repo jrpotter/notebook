@@ -72,7 +72,7 @@ END%%
 
 %%ANKI
 Cloze
-In expression $x + y$, {$y$} is referred to as the {subtrahend}.
+In expression $x - y$, {$y$} is referred to as the {subtrahend}.
 Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
 <!--ID: 1773953400992-->
 END%%

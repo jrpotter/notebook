@@ -1280,7 +1280,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $\int_a^\infty f(x) \,dx$ converges. *Why* is it not necessary that $f(x) \rightarrow 0$ as $x \rightarrow +\infty$?
+Suppose $\int_a^\infty f(x) \,dx$ converges. *Why* is isn't it necessary that $f(x) \rightarrow 0$ as $x \rightarrow +\infty$?
 Back: $f(x)$ can equal anything at any singularity and not contribute to the overall integral.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773946847704-->

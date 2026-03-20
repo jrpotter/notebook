@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-On the [[cartesian|Cartesian coordinate system]], the **unit circle** is the [[circle]] with center at the origin and radius $1$.
+On the [[cartesian|Cartesian coordinate system]], the **unit circle** is the [[ellipse]] with center at the origin and radius $1$.
 
 Suppose [[intervals|closed interval]] $[a, b]$ is mapped to an arc on the unit circle. Then the point on the unit circle corresponding to $a$ is called the **initial point** of the arc. The point corresponding to $b$ is called the **terminal point** of the arc.
 

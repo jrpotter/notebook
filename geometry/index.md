@@ -16,7 +16,7 @@ tags:
 Basic
 What is geometry?
 Back: The branch of mathematics that studies the shapes, sizes, positions, and properties of figures in space.
-Reference: “Geometry.” In _Wikipedia_, June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Geometry](https://en.wikipedia.org/w/index.php?title=Geometry&oldid=1296413546).
+Reference: _Wikipedia_. “Geometry.” June 26, 2025. [https://en.wikipedia.org/w/index.php?title=Geometry](https://en.wikipedia.org/w/index.php?title=Geometry&oldid=1297505214).
 <!--ID: 1750378957662-->
 END%%
 
@@ -24,7 +24,7 @@ END%%
 Basic
 What does plane geometry refer to?
 Back: The study of flat, two-dimensional shapes and figures.
-Reference: “Geometry.” In _Wikipedia_, June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Geometry](https://en.wikipedia.org/w/index.php?title=Geometry&oldid=1296413546).
+Reference: _Wikipedia_. “Geometry.” June 26, 2025. [https://en.wikipedia.org/w/index.php?title=Geometry](https://en.wikipedia.org/w/index.php?title=Geometry&oldid=1297505214).
 <!--ID: 1750378957670-->
 END%%
 
@@ -32,7 +32,7 @@ END%%
 Basic
 How does plane geometry relate to geometry?
 Back: It is the study of geometry but limited to flat, two-dimensional shapes.
-Reference: “Geometry.” In _Wikipedia_, June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Geometry](https://en.wikipedia.org/w/index.php?title=Geometry&oldid=1296413546).
+Reference: _Wikipedia_. “Geometry.” June 26, 2025. [https://en.wikipedia.org/w/index.php?title=Geometry](https://en.wikipedia.org/w/index.php?title=Geometry&oldid=1297505214).
 <!--ID: 1750378968656-->
 END%%
 
@@ -40,7 +40,7 @@ END%%
 Basic
 What is plane analytic geometry?
 Back: The study of plane geometry using algebraic methods.
-Reference: “Geometry.” In _Wikipedia_, June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Geometry](https://en.wikipedia.org/w/index.php?title=Geometry&oldid=1296413546).
+Reference: _Wikipedia_. “Geometry.” June 26, 2025. [https://en.wikipedia.org/w/index.php?title=Geometry](https://en.wikipedia.org/w/index.php?title=Geometry&oldid=1297505214).
 <!--ID: 1750378957674-->
 END%%
 
@@ -48,10 +48,19 @@ END%%
 Basic
 How does plane analytic geometry relate to plane geometry?
 Back: It is the study of plane geometry using algebraic methods.
-Reference: “Geometry.” In _Wikipedia_, June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Geometry](https://en.wikipedia.org/w/index.php?title=Geometry&oldid=1296413546).
+Reference: _Wikipedia_. “Geometry.” June 26, 2025. [https://en.wikipedia.org/w/index.php?title=Geometry](https://en.wikipedia.org/w/index.php?title=Geometry&oldid=1297505214).
 <!--ID: 1750378968662-->
+END%%
+
+%%ANKI
+Basic
+With respect to geometry, what is a locus?
+Back: A set of points satisfying one or more conditions.
+Reference: _Wikipedia_. “Locus (mathematics).” March 11, 2026. [https://en.wikipedia.org/w/index.php?title=Locus_(mathematics)](https://en.wikipedia.org/w/index.php?title=Locus_\(mathematics\)&oldid=1342967975).
+<!--ID: 1774049639088-->
 END%%
 
 ## Bibliography
 
-* “Geometry.” In _Wikipedia_, June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Geometry](https://en.wikipedia.org/w/index.php?title=Geometry&oldid=1296413546).
+* _Wikipedia_. “Geometry.” June 26, 2025. [https://en.wikipedia.org/w/index.php?title=Geometry](https://en.wikipedia.org/w/index.php?title=Geometry&oldid=1297505214).
+* _Wikipedia_. “Locus (mathematics).” March 11, 2026. [https://en.wikipedia.org/w/index.php?title=Locus_(mathematics)](https://en.wikipedia.org/w/index.php?title=Locus_\(mathematics\)&oldid=1342967975).

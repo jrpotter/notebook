@@ -124,9 +124,156 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1713580109089-->
 END%%
 
-## Completing the Square
+## Quadratics
 
-**Completing the square** is a technique for converting a quadratic polynomial of the form $ax^2 + bx + c$ to the form $a(x - h)^2 + k$ for some values of $h$ and $k$.
+A **quadratic function** (of a single variable) is a function of the form $$f(x) = ax^2 + bx + c, \quad a \neq 0,$$
+
+where $a$, $b$, and $c$ are coefficients. The above form is called the **standard form**.
+
+* If $a > 0$, $f(x)$ is [[curvature|concave upward]].
+* If $a < 0$, $f(x)$ is concave downward.
+* The axis of symmetry is $x = -b / 2a$.
+
+A quadratic may have zero, one, or two real **roots**. It will always have exactly two [[complex|complex]] roots. In both cases, these refer to the points $x$ where $f(x) = 0$.
+
+%%ANKI
+Basic
+What is the standard form of a quadratic function (of a single variable)?
+Back: A function of form $f(x) = ax^2 + bx + c$ where $a \neq 0$, $b$, and $c$ are coefficients.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774041902765-->
+END%%
+
+%%ANKI
+Cloze
+A polynomial of degree {$2$} is called a {quadratic}.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774041902776-->
+END%%
+
+%%ANKI
+Basic
+The graph of a quadratic forms which conic section?
+Back: A parabola.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774041902780-->
+END%%
+
+%%ANKI
+Basic
+What name does the following quadratic form go by? $$ax^2 + bx + c$$
+Back: Standard form.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774041902784-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x)$ be a quadratic. What is a root $r$ of $f$?
+Back: A value $r$ such that $f(r) = 0$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774044314889-->
+END%%
+
+%%ANKI
+Basic
+How many real roots does a quadratic have?
+Back: Zero, one, or two.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774044314898-->
+END%%
+
+%%ANKI
+Basic
+How many complex roots does a quadratic have?
+Back: Two.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774044314901-->
+END%%
+
+%%ANKI
+Basic
+When is quadratic $ax^2 + bx + c$, $a \neq 0$, concave upward?
+Back: When $a > 0$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774044314904-->
+END%%
+
+%%ANKI
+Basic
+When is quadratic $ax^2 + bx + c$, $a \neq 0$, concave downward?
+Back: When $a < 0$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774044314907-->
+END%%
+
+%%ANKI
+Basic
+When is quadratic $ax^2 + bx + c$, $a \neq 0$, convex upward?
+Back: When $a < 0$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774044314910-->
+END%%
+
+%%ANKI
+Basic
+When is quadratic $ax^2 + bx + c$, $a \neq 0$, convex downward?
+Back: When $a > 0$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774044314913-->
+END%%
+
+%%ANKI
+Basic
+How do we prove the sign of $a$ in the following quadratic determines its curvature? $$ax^2 + bx + c, \quad a \neq 0$$
+Back: By applying the first derivative test.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774044314916-->
+END%%
+
+%%ANKI
+Basic
+Where is the axis of symmetry of the following quadratic? $$ax^2 + bx + c$$
+Back: At $x = -b / 2a$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774044314919-->
+END%%
+
+%%ANKI
+Basic
+Where is the axis of symmetry of the following quadratic? $$2x^2 + 3x + 4$$
+Back: At $x = -3 / 4$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774047382711-->
+END%%
+
+%%ANKI
+Basic
+Which coefficient(s) in $ax^2 + bx + c$ determines the parabola's inflection?
+Back: Just $a$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774044314922-->
+END%%
+
+%%ANKI
+Basic
+Which coefficient(s) in $ax^2 + bx + c$ determines the parabola's axis of symmetry?
+Back: $a$ and $b$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774044314925-->
+END%%
+
+%%ANKI
+Basic
+Which calculus-based approach can be used to find a quadratic's axis of symmetry?
+Back: Given parabola $f(x)$, finding where $f'(x) = 0$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774044314928-->
+END%%
+
+### Completing the Square
+
+**Completing the square** is a technique for converting a quadratic polynomial in standard form to that of **vertex form** $a(x - h)^2 + k$, where $h$ and $k$ are the $x$ and $y$ coordinates of the vertex respectively.
 
 ![[completing-square.png]]
 
@@ -237,6 +384,199 @@ After simplifying, which terms do we "complete the square of" in quadratic $3x^2
 Back: $x^2 + \frac{2}{3}x$
 Reference: _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
 <!--ID: 1772042516839-->
+END%%
+
+%%ANKI
+Basic
+What name does the following quadratic form go by? $$a(x - h)^2 + k$$
+Back: Vertex form.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774041902787-->
+END%%
+
+%%ANKI
+Basic
+Which method is used to convert a quadratic from standard form to vertex form?
+Back: Completing the square.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774041902791-->
+END%%
+
+%%ANKI
+Basic
+With respect to quadratics, why is vertex form named the way it is?
+Back: The point $(h, k)$ specified in the form is the coordinate of the vertex.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774041902794-->
+END%%
+
+%%ANKI
+Basic
+Which purely algebraic approach can be used to find a quadratic's axis of symmetry?
+Back: Completing the square.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774044314931-->
+END%%
+
+### Quadratic Formula
+
+Let $f(x) = ax^2 + bx + c$. The **quadratic formula** is used to find the roots of $f$. It is given by $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.$$
+
+The portion under the [[exponentials#Radicals|radical]] is called the **discriminant**. If
+
+* the discriminant is positive, $f$ has two real roots;
+* the discriminant is negative, $f$ has two complex roots;
+* the discriminant is zero, $f$ has one real repeated root.
+
+%%ANKI
+Basic
+How is the quadratic formula typically derived?
+Back: By completing the square on $ax^2 + bx + c$, where $a \neq 0$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247389-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = ax^2 + bx + c$. What is the quadratic formula?
+Back: $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247398-->
+END%%
+
+%%ANKI
+Basic
+Which part of the quadratic formula does the discriminant refer to?
+Back: The portion under the radical.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247402-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = ax^2 + bx + c$. How is its discriminant defined?
+Back: As $b^2 - 4ac$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247406-->
+END%%
+
+%%ANKI
+Basic
+Why is the discriminant named the way it is?
+Back: It is used to determine the type of roots of a quadratic.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247410-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for the discriminant of a quadratic to be $> 0$?
+Back: The quadratic has two real roots.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247414-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for the discriminant of a quadratic to be $< 0$?
+Back: The quadratic has two complex roots.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247418-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for the discriminant of a quadratic to be $0$?
+Back: The quadratic has one repeated real root.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247422-->
+END%%
+
+%%ANKI
+Basic
+Consider a quadratic with one real root. What can be said about its discriminant?
+Back: It equals $0$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247427-->
+END%%
+
+%%ANKI
+Basic
+Consider a quadratic with two real roots. What can be said about its discriminant?
+Back: It is positive.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247432-->
+END%%
+
+%%ANKI
+Basic
+Consider a quadratic with two imaginary roots. What can be said about its discriminant?
+Back: It is negative.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247436-->
+END%%
+
+%%ANKI
+Basic
+What can be said about the discriminant of the following?
+![[discriminant-negative.png]]
+Back: It is negative.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247440-->
+END%%
+
+%%ANKI
+Basic
+What can be said about the discriminant of the following?
+![[discriminant-positive.png]]
+Back: It is positive.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247444-->
+END%%
+
+%%ANKI
+Basic
+What can be said about the discriminant of the following?
+![[discriminant-zero.png]]
+Back: It equals zero.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774045247448-->
+END%%
+
+## Long Division
+
+**Polynomial long division** is an algorithm for dividing a polynomial by another with equal or lower degree.
+
+%%ANKI
+Basic
+Long division can be used for dividing what kind of polynomial by another?
+Back: A polynomial of degree $n$ is divided by one of degree $\leq n$.
+Reference: _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
+<!--ID: 1774036988059-->
+END%%
+
+%%ANKI
+Basic
+What "preprocessing step" must be performed before applying long division to $x^3 + x + 1$?
+Back: Adding term $0x^2$, i.e. $x^3 + 0x^2 + x + 1$.
+Reference: _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
+<!--ID: 1774036988062-->
+END%%
+
+%%ANKI
+Basic
+Polynomial long division produces a $0$ remainder if and only if what?
+Back: The divisor is a factor of the dividend.
+Reference: _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
+<!--ID: 1774036988063-->
+END%%
+
+%%ANKI
+Basic
+Let $P(x)$ be a polynomial with zero $a \in \mathbb{R}$. Long division of $P(x)$ by what polynomial yields a zero remainder?
+Back: $x - a$
+Reference: _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
+<!--ID: 1774036988065-->
 END%%
 
 ## Algebraic Numbers
@@ -451,42 +791,6 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1748393420208-->
 END%%
 
-## Long Division
-
-**Polynomial long division** is an algorithm for dividing a polynomial by another with equal or lower degree.
-
-%%ANKI
-Basic
-Long division can be used for dividing what kind of polynomial by another?
-Back: A polynomial of degree $n$ is divided by one of degree $\leq n$.
-Reference: _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
-<!--ID: 1774036988059-->
-END%%
-
-%%ANKI
-Basic
-What "preprocessing step" must be performed before applying long division to $x^3 + x + 1$?
-Back: Adding term $0x^2$, i.e. $x^3 + 0x^2 + x + 1$.
-Reference: _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
-<!--ID: 1774036988062-->
-END%%
-
-%%ANKI
-Basic
-Polynomial long division produces a $0$ remainder if and only if what?
-Back: The divisor is a factor of the dividend.
-Reference: _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
-<!--ID: 1774036988063-->
-END%%
-
-%%ANKI
-Basic
-Let $P(x)$ be a polynomial with zero $a \in \mathbb{R}$. Long division of $P(x)$ by what polynomial yields a zero remainder?
-Back: $x - a$
-Reference: _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
-<!--ID: 1774036988065-->
-END%%
-
 ## Bibliography
 
 * Fraleigh, John B. _A First Course in Abstract Algebra_. Seventh edition, Pearson new international edition. Harlow: Pearson, 2014.
@@ -495,3 +799,4 @@ END%%
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 * _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
 * _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
+* _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).

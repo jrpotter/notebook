@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "26134af5c89fa421",
+        "id": "1acce4669f8c4a55",
         "type": "tabs",
         "children": [
           {
-            "id": "d44ca104083c57d4",
+            "id": "d62c44ff339c49f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algebra/polynomials.md",
+                "file": "_journal/2026-03-20.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "polynomials"
+              "title": "2026-03-20"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "1773954494231",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_journal/2026-03-19.md",
+                "file": "data_structures/trees/binary_tree.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-03-19"
+              "title": "Backlinks for binary_tree"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algebra/polynomials.md",
+                "file": "_journal/2026-03-20.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of polynomials"
+              "title": "Outline of 2026-03-20"
             }
           }
         ],
@@ -170,46 +170,44 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "d44ca104083c57d4",
+  "active": "d62c44ff339c49f4",
   "lastOpenFiles": [
-    "_journal/2026-03-20.md",
+    "geometry/conics/parabola.md",
+    "geometry/conics/images/conic-parabola.png",
+    "geometry/conics/images/locus-parabola.png",
+    "geometry/conics/index.md",
+    "geometry/conics/hyperbola.md",
+    "geometry/conics/ellipse.md",
+    "geometry/index.md",
     "algebra/polynomials.md",
-    "algebra/exponentials.md",
-    "_journal/2026-03/2026-03-19.md",
+    "geometry/conics/images/discriminant-positive.png",
+    "geometry/conics/images/discriminant-zero.png",
+    "geometry/conics/images/discriminant-negative.png",
+    "geometry/curvature.md",
     "trigonometry/inverses.md",
-    "algebra/structures.md",
-    "abstract_data_types/stacks.md",
-    "abstract_data_types/queues.md",
-    "algebra/logarithms.md",
-    "abstract_data_types/priority_queues.md",
-    "algebra/index.md",
-    "abstract_data_types/index.md",
-    "index.md",
-    "algebra/abs_val.md",
-    "algebra/arch_prop.md",
-    "algebra/boolean.md",
-    "algebra/complex.md",
-    "algebra/functions.md",
-    "algebra/sets.md",
-    "trigonometry/circular.md",
+    "geometry/area.md",
+    "geometry/similarity.md",
+    "trigonometry/hyperbolic.md",
     "trigonometry/index.md",
-    "calculus/derivatives.md",
+    "_journal/2026-03-20.md",
+    "arithmetic/index.md",
     "calculus/riemann.md",
-    "calculus/intervals.md",
-    "calculus/sequences.md",
-    "arithmetic/gcd.md",
+    "_journal/2026-03/2026-03-19.md",
+    "algebra/logarithms.md",
+    "algebra/images/fifth-roots-unity.png",
     "algebra/images/complex-number.png",
-    "real",
+    "algebra/exponentials.md",
+    "algebra/complex.md",
+    "_journal/2026-03-19.md",
+    "dnd/index.md",
+    "_journal/2026-03/2026-03-18.md",
+    "calculus/primitives.md",
+    "arithmetic/logarithms.md",
+    "calculus/series.md",
     "calculus/images/improper-second.png",
     "calculus/images/improper-first.png",
     "calculus/images/integral-test.png",
-    "calculus/images/square-gnomon.png",
-    "data_structures/images/disjoint-set-linked-list.png",
-    "data_structures/images/disjoint-set-forest.png",
-    "calculus/images/cauchy-mvt.png",
     "_journal/2026-03",
-    "algebra/images/completing-square-unlabeled.png",
-    "algebra/images/completing-square.png",
     "_journal/2026/2026-02",
     "_journal/2026",
     "network/physical",
@@ -217,6 +215,7 @@
     "network/session",
     "dnd",
     "parsing",
-    "_journal/2026/2026-01"
+    "_journal/2026/2026-01",
+    "network/application/http"
   ]
 }

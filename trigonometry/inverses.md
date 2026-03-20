@@ -703,7 +703,7 @@ END%%
 
 %%ANKI
 Basic
-What does the following evaluate to? $$\frac{d}{dx} \tan{x}$$
+What does the following evaluate to? $$\frac{d}{dx} \arctan{x}$$
 Back: $$\frac{1}{1 + x^2}$$
 Reference: _Wikipedia_. “Differentiation of trigonometric functions.” March 12, 2026. [https://en.wikipedia.org/w/index.php?title=Differentiation_of_trigonometric_functions](https://en.wikipedia.org/w/index.php?title=Differentiation_of_trigonometric_functions&oldid=1343083483).
 <!--ID: 1773950779396-->
@@ -715,14 +715,6 @@ What does the following evaluate to? $$\int \frac{1}{1 + x^2} \,dx$$
 Back: $\arctan{x} + C$
 Reference: _Wikipedia_. “Differentiation of trigonometric functions.” March 12, 2026. [https://en.wikipedia.org/w/index.php?title=Differentiation_of_trigonometric_functions](https://en.wikipedia.org/w/index.php?title=Differentiation_of_trigonometric_functions&oldid=1343083483).
 <!--ID: 1773950942141-->
-END%%
-
-%%ANKI
-Basic
-What "preprocessing" step is performed to find the following primitive? $$\int \frac{1}{x^2 + x + 1} \,dx$$
-Back: Rewrite the denominator as: $$\left( x + \frac{1}{2} \right)^2 + \frac{3}{4}.$$
-Reference: _Wikipedia_. “Differentiation of trigonometric functions.” March 12, 2026. [https://en.wikipedia.org/w/index.php?title=Differentiation_of_trigonometric_functions](https://en.wikipedia.org/w/index.php?title=Differentiation_of_trigonometric_functions&oldid=1343083483).
-<!--ID: 1773954494231-->
 END%%
 
 ## Bibliography

@@ -1,10 +1,10 @@
 ---
 title: Hyperbolic Geometry
 TARGET DECK: Obsidian::STEM
-FILE TAGS: geometry::hyperbolic
+FILE TAGS: trigonometry::hyperbolic
 tags:
-  - geometry
   - hyperbolic
+  - trigonometry
 ---
 
 ## Overview
