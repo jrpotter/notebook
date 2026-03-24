@@ -485,11 +485,9 @@ END%%
 
 A few notational conveniences are introduced for common bases.
 
-### Natural
-
-The **natural logarithm**, denoted $\ln{x}$, assumes a base $e$.
-
-Oftentimes the logarithm is defined before [[exponentials]]. If $x$ is a positive real number, the natural logarithm is defined as the following [[riemann|Riemann integral]]: $$\ln{x} = \int_1^x \frac{1}{t} \,dt.$$
+* The **natural logarithm**, denoted $\ln{x}$, assumes a base $e$.
+* The **common logarithm**, denoted $\log{x}$, assumes a base $10$.
+* The **binary logarithm**, denoted $\lg{x}$, assumes a base $2$.
 
 %%ANKI
 Basic
@@ -521,62 +519,6 @@ How can we equivalently rewrite $\ln{x}$ with an explicit base?
 Back: As $\log_e{x}$.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1750269797668-->
-END%%
-
-%%ANKI
-Basic
-How does Apostol define the natural logarithm?
-Back: For positive real $x$, $$\ln{x} = \int_1^x \frac{1}{t} \,dt.$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1766500506287-->
-END%%
-
-%%ANKI
-Basic
-What is the indefinite integral of $\int x^{-1} \,dx$?
-Back: $\ln{x}$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1766500506302-->
-END%%
-
-%%ANKI
-Basic
-What is the domain of the $\ln$ function?
-Back: Positive real $x$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1766500506311-->
-END%%
-
-%%ANKI
-Basic
-What does $\ln{0}$ evaluate to?
-Back: Undefined.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1766500506323-->
-END%%
-
-%%ANKI
-Basic
-What does $\ln{1}$ evaluate to?
-Back: $0$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1766500506332-->
-END%%
-
-%%ANKI
-Basic
-Let $f(x) = \ln{x}$. What does $f'(x)$ evaluate to?
-Back: $x^{-1}$ for all $x > 0$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1766500506341-->
-END%%
-
-%%ANKI
-Basic
-Let $x, y > 0$. How is the following simplified? $$\int_1^x \frac{1}{t} \,dt + \int_1^y \frac{1}{t} \,dt$$
-Back: As $$\int_1^{xy} \frac{1}{t} \,dt.$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1766500506349-->
 END%%
 
 %%ANKI
@@ -664,10 +606,6 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773930590077-->
 END%%
 
-### Common
-
-The **common logarithm**, denoted $\log{x}$, assumes a base $10$.
-
 %%ANKI
 Basic
 What base is assumed in notation $\log{x}$?
@@ -700,10 +638,6 @@ Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1750269797664-->
 END%%
 
-### Binary
-
-The **binary logarithm**, denoted $\lg{x}$, assumes a base $2$.
-
 %%ANKI
 Basic
 What base is assumed in notation $\lg{x}$?
@@ -734,6 +668,84 @@ How can we equivalently rewrite $\lg{x}$ with an explicit base?
 Back: As $\log_2{x}$.
 Reference: Umbarger, Dan. _Explaining Logarithms_, n.d.
 <!--ID: 1750269797672-->
+END%%
+
+## Definition
+
+If $x$ is a positive real number, the natural logarithm is defined as the following [[riemann|Riemann integral]]: $$\ln{x} = \int_1^x \frac{1}{t} \,dt.$$
+
+This is often generalized to accommodate any nonzero $x \in \mathbb{R}$ as: $$\ln{\lvert x \rvert} = \int_1^{\lvert x \rvert} \frac{1}{t} \,dt.$$
+
+%%ANKI
+Basic
+How does Apostol define the natural logarithm?
+Back: For positive $x \in \mathbb{R}$, $$\ln{x} = \int_1^{x} \frac{1}{t} \,dt.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506287-->
+END%%
+
+%%ANKI
+Basic
+What does primitive $\int x^{-1} \,dx$ over $x > 0$ evaluate to?
+Back: $\ln{x} + C$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506302-->
+END%%
+
+%%ANKI
+Basic
+What does primitive $\int x^{-1} \,dx$ over $x < 0$ evaluate to?
+Back: $\ln{(-x)} + C$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774140880238-->
+END%%
+
+%%ANKI
+Basic
+What is the antiderivative of $x^{-1}$ where $x \neq 0$?
+Back: $\ln{\lvert x \rvert} + C$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774140880241-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of the $\ln$ function?
+Back: Positive real $x$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506311-->
+END%%
+
+%%ANKI
+Basic
+What does $\ln{0}$ evaluate to?
+Back: Undefined.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506323-->
+END%%
+
+%%ANKI
+Basic
+What does $\ln{1}$ evaluate to?
+Back: $0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506332-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) = \ln{x}$. What does $f'(x)$ evaluate to?
+Back: $x^{-1}$ for all $x > 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506341-->
+END%%
+
+%%ANKI
+Basic
+Let $x, y > 0$. How is the following simplified? $$\int_1^x \frac{1}{t} \,dt + \int_1^y \frac{1}{t} \,dt$$
+Back: As $$\int_1^{xy} \frac{1}{t} \,dt.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1766500506349-->
 END%%
 
 ## Properties

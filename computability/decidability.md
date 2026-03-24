@@ -830,6 +830,79 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1765982531219-->
 END%%
 
+### Rice's Theorem
+
+Let $P$ be a [[computability/index#Languages|language]] consisting of [[turing|Turing machine]] descriptions. Suppose that $P$ is:
+
+1. **Nontrivial**. It is neither empty nor the set of all TM descriptions.
+2. **Extensional**. If $L(M_1) = L(M_2)$, then $M_1 \in P \iff M_2 \in P$.
+
+Then $P$ is undecidable.
+
+%%ANKI
+Basic
+With respect to Rice's theorem, what is a property?
+Back: A language consisting of TM descriptions.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774288488168-->
+END%%
+
+%%ANKI
+Basic
+With respect to Rice's theorem, what is the name given to the two conditions a property must hold?
+Back: Nontriviality and extensionality.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774288488171-->
+END%%
+
+%%ANKI
+Basic
+With respect to Rice's theorem, what does it mean for property $P$ to be nontrivial?
+Back: $P$ is neither empty nor contains all TM descriptions.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774288488174-->
+END%%
+
+%%ANKI
+Basic
+With respect to Rice's theorem, what does it mean for property $P$ to be extensional?
+Back: If $L(M_1) = L(M_2)$, then $M_1 \in P \iff M_2 \in P$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774288488177-->
+END%%
+
+%%ANKI
+Basic
+With respect to Rice's theorem, a property $P$ contains what as members?
+Back: Turing machine descriptions.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774288488180-->
+END%%
+
+%%ANKI
+Basic
+Rice's theorem is used to show what about a property $P$?
+Back: $P$ is undecidable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774288488183-->
+END%%
+
+%%ANKI
+Basic
+What does Rice's theorem state?
+Back: Any nontrivial, extensional property $P$ is undecidable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774288488186-->
+END%%
+
+%%ANKI
+Basic
+With respect to Rice's theorem, *what* is the purpose of the extensional condition?
+Back: To ensure the property refers to an aspect of a language recognized by a TM, not the TM itself.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774288488189-->
+END%%
+
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).

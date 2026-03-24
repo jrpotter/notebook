@@ -61,7 +61,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Blinded condition, what is the *Can't See* effect?
+What is the Blinded *Can't See* effect?
 Back: Failure of any ability check requiring sight.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769202902552-->
@@ -69,7 +69,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Blinded condition, what is the *Attacks Affected* effect?
+What is the Blinded *Attacks Affected* effect?
 Back: Advantage on Attack Rolls against Blinded creatures. Disadvantage on Attack Rolls from Blinded creatures.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769202902557-->
@@ -101,7 +101,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Charmed condition, what is the *Can't Harm the Charmer* effect?
+What is the Charmed *Can't Harm the Charmer* effect?
 Back: The Charmed creature cannot attack the charmer or target the charmer with damaging abilities or magical effects.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769202902567-->
@@ -109,7 +109,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Charmed condition, what is the *Social Advantage* effect?
+What is the Charmed *Social Advantage* effect?
 Back: The charmer has Advantage on any ability check to interact with the Charmed creature socially.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769202902572-->
@@ -137,7 +137,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Deafened condition, what is the *Can't Hear* effect?
+What is the Deafened *Can't Hear* effect?
 Back: Failure of any ability check requiring hearing.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769203224948-->
@@ -169,7 +169,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Frightened condition, what is the *Ability Checks Affected* effect?
+What is the Frightened *Ability Checks Affected* effect?
 Back: A creature has Disadvantage on ability checks while the source of fear is in line of sight.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769475960880-->
@@ -177,7 +177,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Frightened condition, what is the *Attack Rolls Affected* effect?
+What is the Frightened *Attack Rolls Affected* effect?
 Back: A creature has Disadvantage on attack rolls while the source of fear is in line of sight.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771426012366-->
@@ -185,7 +185,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Frightened condition, what is the *Can't Approach* effect?
+What is the Frightened *Can't Approach* effect?
 Back: A creature cannot willingly move closer to the source of fear.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769475960883-->
@@ -219,7 +219,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Grappled condition, what is the *Speed 0* effect?
+What is the Grappled *Speed 0* effect?
 Back: The creature's Speed is 0 and can't increase.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769475960893-->
@@ -227,7 +227,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Grappled condition, what is the *Attacks Affected* effect?
+What is the Grappled *Attacks Affected* effect?
 Back: Attack Rolls made against any creature other than the grappler are rolled with Disadvantage.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769475960897-->
@@ -235,7 +235,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Grappled condition, what is the *Movable* effect?
+What is the Grappled *Movable* effect?
 Back: The grappler can move the grappled creature while it moves.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769475960900-->
@@ -279,7 +279,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Incapacitated condition, what is the *Inactive* effect?
+What is the Incapacitated *Inactive* effect?
 Back: A creature cannot take any action, Bonus Action, or Reaction.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769477131331-->
@@ -287,7 +287,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Incapacitated condition, what is the *No Concentration* effect?
+What is the Incapacitated *No Concentration* effect?
 Back: The creature's Concentration is broken.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769477131333-->
@@ -295,7 +295,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Incapacitated condition, what is the *Speechless* effect?
+What is the Incapacitated *Speechless* effect?
 Back: The creature cannot speak.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769477131336-->
@@ -303,7 +303,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Incapacitated condition, what is the *Surprised* effect?
+What is the Incapacitated *Surprised* effect?
 Back: The creature rolls Initiative with Disadvantage.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769477131339-->
@@ -329,7 +329,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Invisible condition, what is the *Surprise* effect?
+What is the Invisible *Surprise* effect?
 Back: The creature rolls Initiative with advantage.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1770081819968-->
@@ -337,7 +337,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Invisible condition, what is the *Concealed* effect?
+What is the Invisible *Concealed* effect?
 Back: The creature is unaffected by an effect that requires its target to be seen unless the effect's creature can see you.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1770081819973-->
@@ -345,7 +345,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Invisible condition, what is the *Attacks Affected* effect?
+What is the Invisible *Attacks Affected* effect?
 Back: Attack rolls against the creature have Disadvantage and its attack rolls have Advantage unless it can somehow be seen.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1770081819978-->
@@ -375,7 +375,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Paralyzed condition, what is the *Incapacitated* effect?
+What is the Paralyzed *Incapacitated* effect?
 Back: The Paralyzed creature has the Incapacitated condition.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1770081819988-->
@@ -383,7 +383,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Paralyzed condition, what is the *Speed 0* effect?
+What is the Paralyzed *Speed 0* effect?
 Back: The creature's Speed is 0 and can't increase.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1770081819993-->
@@ -391,7 +391,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Paralyzed condition, what is the *Saving Throws Affected* effect?
+What is the Paralyzed *Saving Throws Affected* effect?
 Back: The creature automatically fail Strength and Dexterity saving throws.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1770081819998-->
@@ -399,7 +399,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Paralyzed condition, what is the *Attacks Affected* effect?
+What is the Paralyzed *Attacks Affected* effect?
 Back: Attack rolls against the creature have Advantage.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1770081820003-->
@@ -407,7 +407,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Paralyzed condition, what is the *Automatic Critical Hits* effect?
+What is the Paralyzed *Automatic Critical Hits* effect?
 Back: Any attack roll that hits you is a Critical Hit if the attacker is within 5 feet of you.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1770081820008-->
@@ -464,7 +464,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Petrified condition, what is the *Incapacitated* effect?
+What is the Petrified *Incapacitated* effect?
 Back: The creature has the Incapacitated condition.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771426012401-->
@@ -472,7 +472,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Petrified condition, what is the *Speed 0* effect?
+What is the Petrified *Speed 0* effect?
 Back: The creature has a Speed of 0 and can't increase it.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771426012407-->
@@ -480,7 +480,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Petrified condition, what is the *Attacks Affected* effect?
+What is the Petrified *Attacks Affected* effect?
 Back: Attacks made against the creature are rolled with Advantage.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771426012412-->
@@ -488,7 +488,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Petrified condition, what is the *Saving Throws Affected* effect?
+What is the Petrified *Saving Throws Affected* effect?
 Back: The creature automatically fails Strength and Dexterity saving throws.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771426012418-->
@@ -496,7 +496,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Petrified condition, what is the *Resist Damage* effect?
+What is the Petrified *Resist Damage* effect?
 Back: The creature has Resistance to all damage.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771426012424-->
@@ -504,7 +504,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Petrified condition, what is the *Poison Immunity* effect?
+What is the Petrified *Poison Immunity* effect?
 Back: The creature has Immunity to the Poisoned condition.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771426012429-->
@@ -527,7 +527,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Poisoned condition, what is the *Ability Checks Affected* effect?
+What is the Poisoned *Ability Checks Affected* effect?
 Back: The creature has Disadvantage on any ability checks.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771426156585-->
@@ -535,7 +535,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Poisoned condition, what is the *Attacks Affected* effect?
+What is the Poisoned *Attacks Affected* effect?
 Back: The creature has Disadvantage on any attacks.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771426156588-->
@@ -559,7 +559,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Prone condition, what is the *Restricted Movement* effect?
+What is the Prone *Restricted Movement* effect?
 Back: The creature's only movement options are to crawl or to spend half its Speed to right itself.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771426430482-->
@@ -591,10 +591,26 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Prone condition, what is the *Attacks Affected* effect?
-Back: The creature has Disadvantage on attack rolls. Creatures attack it with Advantage if within 5 feet and otherwise have Disadvantage.
+Which creatures are covered by the Prone *Attacks Affected* effect?
+Back: Both the Prone creature and any attackers.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
-<!--ID: 1771426430516-->
+<!--ID: 1774379791659-->
+END%%
+
+%%ANKI
+Basic
+How does the Prone *Attacks Affected* effect change the Prone creature?
+Back: The Prone creature has Disadvantage on attack rolls.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1774379791668-->
+END%%
+
+%%ANKI
+Basic
+How does the Prone *Attacks Affected* effect change the attackers of a Prone creature?
+Back: Creatures attack it with Advantage if within 5 feet and otherwise have Disadvantage.
+Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
+<!--ID: 1774379791671-->
 END%%
 
 %%ANKI
@@ -633,7 +649,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Restrained condition, what is the *Attacks Affected* effect?
+What is the Restrained *Attacks Affected* effect?
 Back: Attack rolls made by the creature are with Disadvantage. Attacks made against the creature have Advantage.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069117864-->
@@ -641,7 +657,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Restrained condition, what is the *Saving Throws Affected* effect?
+What is the Restrained *Saving Throws Affected* effect?
 Back: The creature has Disadvantage on Dexterity saving throws.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069117871-->
@@ -649,7 +665,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Restrained condition, what is the *Speed 0* effect?
+What is the Restrained *Speed 0* effect?
 Back: The creature Speed 0 and it can't be increased.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069117879-->
@@ -675,7 +691,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Stunned condition, what is the *Attacks Affected* effect?
+What is the Stunned *Attacks Affected* effect?
 Back: Attack rolls against the creature have Advantage.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069117891-->
@@ -683,7 +699,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Stunned condition, what is the *Saving Throws Affected* effect?
+What is the Stunned *Saving Throws Affected* effect?
 Back: The creature automatically fails Strength and Dexterity saving throws.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069117896-->
@@ -691,7 +707,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Stunned condition, what is the *Incapacitated* effect?
+What is the Stunned *Incapacitated* effect?
 Back: The creature has the Incapacitated condition.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069117900-->
@@ -723,7 +739,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Unconscious condition, what other conditions does the *Inert* effect encompass?
+What other conditions does the Unconscious *Inert* effect encompass?
 Back: Incapacitated and Prone.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069117909-->
@@ -731,7 +747,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Unconscious condition, what is the *Inert* effect?
+What is the Unconscious *Inert* effect?
 Back: The creature is Incapacitated and Prone. They drop anything they were holding.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069117913-->
@@ -739,7 +755,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Unconscious condition, what is the *Speed 0* effect?
+What is the Unconscious *Speed 0* effect?
 Back: The creature has Speed 0 and it can't be increased.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069117917-->
@@ -747,7 +763,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Unconscious condition, what is the *Attacks Affected* effect?
+What is the Unconscious *Attacks Affected* effect?
 Back: Attack rolls against the creature have Advantage.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069117921-->
@@ -755,7 +771,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Unconscious condition, what is the *Saving Throws Affected* effect?
+What is the Unconscious *Saving Throws Affected* effect?
 Back: The creature automatically fails Strength and Dexterity saving throws.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069117924-->
@@ -763,7 +779,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Unconscious condition, what is the *Automatic Critical Hits* effect?
+What is the Unconscious *Automatic Critical Hits* effect?
 Back: Attack rolls that hit the creature are Critical Hits if the attacker is within 5 feet.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069117928-->
@@ -771,7 +787,7 @@ END%%
 
 %%ANKI
 Basic
-With respect to the Unconscious condition, what is the *Unaware* effect?
+What is the Unconscious *Unaware* effect?
 Back: The creature is unaware of their surroundings.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1772069117931-->

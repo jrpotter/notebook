@@ -134,7 +134,7 @@ where $a$, $b$, and $c$ are coefficients. The above form is called the **standar
 * If $a < 0$, $f(x)$ is concave downward.
 * The axis of symmetry is $x = -b / 2a$.
 
-A quadratic may have zero, one, or two real **roots**. It will always have exactly two [[complex|complex]] roots. In both cases, these refer to the points $x$ where $f(x) = 0$.
+A quadratic may have zero, one, or two real **roots**. It will always have exactly two [[complex|complex]] roots. In both cases, these refer to the points $x$ where $f(x) = 0$. If a quadratic has no real roots, we say it is **irreducible**.
 
 %%ANKI
 Basic
@@ -266,9 +266,17 @@ END%%
 %%ANKI
 Basic
 Which calculus-based approach can be used to find a quadratic's axis of symmetry?
-Back: Given parabola $f(x)$, finding where $f'(x) = 0$.
+Back: Given quadratic $f(x)$, finding where $f'(x) = 0$.
 Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
 <!--ID: 1774044314928-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a quadratic to be irreducible?
+Back: It has no real roots.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060132-->
 END%%
 
 ### Completing the Square
@@ -543,9 +551,19 @@ Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.
 <!--ID: 1774045247448-->
 END%%
 
+%%ANKI
+Basic
+Let $f(x) = x^2 + bx + c$. How is the discriminant used to show irreducibility?
+Back: $f$ is irreducible iff $b^2 - 4d < 0$.
+Reference: _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).
+<!--ID: 1774108060136-->
+END%%
+
 ## Long Division
 
 **Polynomial long division** is an algorithm for dividing a polynomial by another with equal or lower degree.
+
+We say a rational function is **proper** if the degree of the numberator is less than that of the denominator. Otherwise we say it is **improper**. An improper rational function can be expressed as the sum of a polynomial and a proper rational function using long division.
 
 %%ANKI
 Basic
@@ -577,6 +595,36 @@ Let $P(x)$ be a polynomial with zero $a \in \mathbb{R}$. Long division of $P(x)$
 Back: $x - a$
 Reference: _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
 <!--ID: 1774036988065-->
+END%%
+
+%%ANKI
+Basic
+What is a proper rational function?
+Back: One in which the degree of the numerator is less than that of the denominator.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060139-->
+END%%
+
+%%ANKI
+Basic
+What is an improper rational function?
+Back: One in which the degree of the numerator is greater than or equal to that of the denominator.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060143-->
+END%%
+
+%%ANKI
+Cloze
+A rational function is either {proper} or {improper}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060146-->
+END%%
+
+%%ANKI
+Cloze
+Polynomial long division converts {1:improper} rationals into the sum of a {2:polynomial} and {2:proper rational}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060150-->
 END%%
 
 ## Algebraic Numbers
@@ -797,6 +845,7 @@ END%%
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+* Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 * _Wikipedia_. “Completing the square.” December 21, 2025. [https://en.wikipedia.org/w/index.php?title=Completing_the_square](https://en.wikipedia.org/w/index.php?title=Completing_the_square&oldid=1328739658).
 * _Wikipedia_. “Polynomial long division.” February 22, 2026. [https://en.wikipedia.org/w/index.php?title=Polynomial_long_division](https://en.wikipedia.org/w/index.php?title=Polynomial_long_division&oldid=1339717457).
 * _Wikipedia_. “Quadratic function.” January 19, 2026. [https://en.wikipedia.org/w/index.php?title=Quadratic_function](https://en.wikipedia.org/w/index.php?title=Quadratic_function&oldid=1333759630).

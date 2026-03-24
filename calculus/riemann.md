@@ -1,7 +1,7 @@
 ---
 title: Riemann Integrals
 TARGET DECK: Obsidian::STEM
-FILE TAGS: calculus::riemann
+FILE TAGS: calculus::integral
 tags:
   - calculus
   - integral
@@ -674,6 +674,156 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1764562755859-->
 END%%
 
+## Indefinite Integrals
+
+Let $f$ be a function such that the integral $\int_a^x f(t) \,dt$ exists for each $x$ in an interval $[a, b]$. The function $F$, an **indefinite integral of $f$**, is given by $$F(x) = \int_a^x f(t) \,dt, \quad a \leq x \leq b.$$
+
+If $f$ is integrable on $[a, x]$ for every $x \in [a, b]$, then the indefinite integral $F$ is [[limits#Continuity|continuous]] at each point of $[a, b]$.
+
+%%ANKI
+Basic
+Why is an indefinite Riemann integral named the way it is?
+Back: Because the right and left bounds of integration are not decided.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080000-->
+END%%
+
+%%ANKI
+Basic
+Why is a definite Riemann integral named the way it is?
+Back: Because there is a specific numerical value that can be calculated.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080007-->
+END%%
+
+%%ANKI
+Basic
+What is an indefinite Riemann integral of some function $f$?
+Back: Assuming well-definedness, a function $F(x) = \int_a^x f(t) \,dt$ for some lower limit $a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080010-->
+END%%
+
+%%ANKI
+Basic
+An indefinite Riemann integral $F$ of some function $f$ keeps what parts of its definition fixed?
+Back: The lower limit of integration and $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080012-->
+END%%
+
+%%ANKI
+Basic
+Assume Riemann integrals. Why do we say *an* indefinite integral of a function vs. *the* indefinite integral of a function?
+Back: An indefinite integral depends on the lower limit of integration.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080015-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$. What is the following function called? $$F(x) = \int_a^x f(t) \,dt$$
+Back: An indefinite integral of $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080018-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and $F_1, F_2$ be indefinite integrals of $f$. How do $F_1$ and $F_2$ relate to one another?
+Back: They differ by a constant.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080020-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and $F$ be an indefinite integral of $f$. What does $\int_a^b f(t) \,dt$ evaluate to?
+Back: $F(b) - F(a)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080023-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and $F$ be an indefinite integral of $f$. Prove the following holds. $$\int_a^b f(t) \,dt = F(b) - F(a)$$
+Back: Assuming $F$ is defined with lower limit $c \in [a, b]$, $$\int_a^b f(t) \,dt = \int_c^b f(t) \,dt - \int_c^a f(t) \,dt = F(b) - F(a).$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080025-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and $F_1, F_2$ be indefinite integrals of $f$. Why does the following hold? $$F_1(b) - F_1(a) = F_2(b) - F_2(a)$$
+Back: On both sides of the equation, the constant terms cancel out.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080028-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and $F_1, F_2$ be indefinite integrals of $f$. The value of $F_2(x) - F_1(x)$ depends on the choice of what?
+Back: Lower limits used in the definitions of $F_1$ and $F_2$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080031-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and $F$ be an indefinite integral of $f$. What does $F(x) \big|_a^b$ denote?
+Back: $F(x) \big|_a^b = F(b) - F(a)$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080033-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and $F$ be an indefinite integral of $f$. How is $F(b) - F(a)$ more compactly denoted?
+Back: As $F(x) \big|_a^b$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080036-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$ and $F_1, F_2$ be indefinite integrals of $f$. The value $F_2(x) - F_1(x)$ is independent of what?
+Back: $x$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080039-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be Riemann integrable on $[a, b]$. What is the geometric interpretation of $F(x) = \int_a^x f(t) \,dt$?
+Back: The area of the region above the $x$-axis minus that of the region below on $[a, x]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1751812080042-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for indefinite Riemann integrals to be continuous?
+Back: If $f$ is integrable on $[a, x]$ for every $x \in [a, b]$, then its indefinite integral is continuous on $[a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1761051036434-->
+END%%
+
+%%ANKI
+Basic
+How might an indefinite integral $A$ of $f(x)$ be defined?
+Back: For some lower limit of integration $c$, $$A(x) = \int_c^x f(t) \,dt.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1765424504629-->
+END%%
+
+%%ANKI
+Basic
+How is an indefinite integral (with lower limit of integration $c$) defined for $f(x) = x^2$?
+Back: As $$\int_c^x f(t) \,dt = \frac{x^3 - c^3}{3}.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1765424504638-->
+END%%
+
 ## Properties
 
 ### Integrand Additivity
@@ -1109,159 +1259,98 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1735744900590-->
 END%%
 
-## Indefinite Integrals
+## Average Value
 
-Let $f$ be a function such that the integral $\int_a^x f(t) \,dt$ exists for each $x$ in an interval $[a, b]$. The function $F$, an **indefinite integral of $f$**, is given by $$F(x) = \int_a^x f(t) \,dt, \quad a \leq x \leq b.$$
+Let $f$ be Riemann integrable on an interval $[a, b]$. We define the **average value of $f$ on $[a, b]$**, denoted $A(f)$, by the formula $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx.$$
 
-If $f$ is integrable on $[a, x]$ for every $x \in [a, b]$, then the indefinite integral $F$ is [[limits#Continuity|continuous]] at each point of $[a, b]$.
+Let $w$ be a nonnegative function such that $\int_a^b w(x) \,dx \neq 0$. Then the **weighted average value of $f$ on $[a, b]$**, denoted $A(f)$, is given by formula $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}.$$
+
+In this context, $w$ is called a **weight function**.
+
 
 %%ANKI
 Basic
-Why is an indefinite Riemann integral named the way it is?
-Back: Because the right and left bounds of integration are not decided.
+Let $f$ be Riemann integrable on an interval $[a, b]$. How is $A(f)$, the average value of $f$ on $[a, b]$, defined?
+Back: $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080000-->
+<!--ID: 1751751704321-->
 END%%
 
 %%ANKI
 Basic
-Why is a definite Riemann integral named the way it is?
-Back: Because there is a specific numerical value that can be calculated.
+Let $f$ be Riemann integrable on an interval $[a, b]$. What name is given to $A(f)$ in the following? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
+Back: The average value of $f$ on $[a, b]$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080007-->
+<!--ID: 1751751704322-->
 END%%
 
 %%ANKI
 Basic
-What is an indefinite Riemann integral of some function $f$?
-Back: Assuming well-definedness, a function $F(x) = \int_a^x f(t) \,dt$ for some lower limit $a$.
+Let $f$ be a nonnegative, Riemann integrable function on $[a, b]$. How do we geometrically interpret the following? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
+Back: As the rectangle with base $[a, b]$ and altitude $A(f)$ having area equal to $\int_a^b f(x) \,dx$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080010-->
+<!--ID: 1751751704324-->
 END%%
 
 %%ANKI
 Basic
-An indefinite Riemann integral $F$ of some function $f$ keeps what parts of its definition fixed?
-Back: The lower limit of integration and $f$.
+Let $f$ be Riemann integrable on an interval $[a, b]$. How is the average value of $f$ on $[a, b]$ reimagined as a weighted average value? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
+Back: With weight function $w(x) = 1$ for all $x \in [a, b]$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080012-->
+<!--ID: 1751751704325-->
 END%%
 
 %%ANKI
 Basic
-Assume Riemann integrals. Why do we say *an* indefinite integral of a function vs. *the* indefinite integral of a function?
-Back: An indefinite integral depends on the lower limit of integration.
+Let $f$ be Riemann integrable on $[a, b]$ and $w$ be its weight function. How is $A(f)$, the weighted average value of $f$ on $[a, b]$, defined?
+Back: $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080015-->
+<!--ID: 1751751704326-->
 END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable on $[a, b]$. What is the following function called? $$F(x) = \int_a^x f(t) \,dt$$
-Back: An indefinite integral of $f$.
+Let $f$ be Riemann integrable on $[a, b]$ and nonnegative $w$ satisfy $\int_a^b w(x) \,dx \neq 0$. What name is given to $A(f)$ in the following? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}$$
+Back: The weighted average value of $f$ on $[a, b]$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080018-->
+<!--ID: 1751751704327-->
 END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $F_1, F_2$ be indefinite integrals of $f$. How do $F_1$ and $F_2$ relate to one another?
-Back: They differ by a constant.
+Assume Riemann integrals. What name is used to describe $w$ in the following equation? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}$$
+Back: $w$ is called a weight function.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080020-->
+<!--ID: 1751751704328-->
 END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $F$ be an indefinite integral of $f$. What does $\int_a^b f(t) \,dt$ evaluate to?
-Back: $F(b) - F(a)$
+Let $f$ be a Riemann integrable function on $[a, b]$ and $w$ be its weight function. What two conditions must $w$ satisfy?
+Back: It must be nonnegative and $\int_a^b w(x) \,dx \neq 0$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080023-->
+<!--ID: 1751751704329-->
 END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $F$ be an indefinite integral of $f$. Prove the following holds. $$\int_a^b f(t) \,dt = F(b) - F(a)$$
-Back: Assuming $F$ is defined with lower limit $c \in [a, b]$, $$\int_a^b f(t) \,dt = \int_c^b f(t) \,dt - \int_c^a f(t) \,dt = F(b) - F(a).$$
+Let $f$ be Riemann integrable on $[a, b]$. What is the dividend used when computing $f$'s average value?
+Back: $\int_a^b f(x) dx$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080025-->
+<!--ID: 1761422321479-->
 END%%
 
 %%ANKI
 Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $F_1, F_2$ be indefinite integrals of $f$. Why does the following hold? $$F_1(b) - F_1(a) = F_2(b) - F_2(a)$$
-Back: On both sides of the equation, the constant terms cancel out.
+Let $f$ be Riemann integrable on $[a, b]$. What is the divisor used when computing $f$'s average value?
+Back: $b - a$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080028-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $F_1, F_2$ be indefinite integrals of $f$. The value of $F_2(x) - F_1(x)$ depends on the choice of what?
-Back: Lower limits used in the definitions of $F_1$ and $F_2$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080031-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $F$ be an indefinite integral of $f$. What does $F(x) \big|_a^b$ denote?
-Back: $F(x) \big|_a^b = F(b) - F(a)$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080033-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $F$ be an indefinite integral of $f$. How is $F(b) - F(a)$ more compactly denoted?
-Back: As $F(x) \big|_a^b$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080036-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $F_1, F_2$ be indefinite integrals of $f$. The value $F_2(x) - F_1(x)$ is independent of what?
-Back: $x$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080039-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$. What is the geometric interpretation of $F(x) = \int_a^x f(t) \,dt$?
-Back: The area of the region above the $x$-axis minus that of the region below on $[a, x]$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751812080042-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for indefinite Riemann integrals to be continuous?
-Back: If $f$ is integrable on $[a, x]$ for every $x \in [a, b]$, then its indefinite integral is continuous on $[a, b]$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761051036434-->
-END%%
-
-%%ANKI
-Basic
-How might an indefinite integral $A$ of $f(x)$ be defined?
-Back: For some lower limit of integration $c$, $$A(x) = \int_c^x f(t) \,dt.$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1765424504629-->
-END%%
-
-%%ANKI
-Basic
-How is an indefinite integral (with lower limit of integration $c$) defined for $f(x) = x^2$?
-Back: As $$\int_c^x f(t) \,dt = \frac{x^3 - c^3}{3}.$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1765424504638-->
+<!--ID: 1761422321480-->
 END%%
 
 ## Improper Integrals
 
-An **improper integral** is an integral that tends to infinity in either dimension. Those of the first kind extends to $\pm \infty$ over the interval of integration whereas those of second kind extend over unbounded singularities.
+An **improper integral** is an integral that tends to infinity in either dimension. Those of the first kind extends to $\pm \infty$ over the interval of integration whereas those of the second kind extend over unbounded singularities.
 
 %%ANKI
 Cloze
@@ -1438,131 +1527,45 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773827521231-->
 END%%
 
-#### Monotonicity
-
-Assume the proper integral $\int_a^b f(x) \,dx$ exists for each $b \geq a$ and suppose that $f(x) \geq 0$ for all $x \geq a$. Then $\int_a^\infty f(x) \,dx$ converges if and only if there is a constant $M > 0$ such that $$\int_a^b f(x) \,dx \leq M \quad\text{for every } b \geq a.$$
-
 %%ANKI
 Basic
-Let $\int_a^\infty f(x) \,dx$ be an integral. When is its sequence of partial integrals monotonic?
-Back: When $f(x) \geq 0$ for all $x \geq a$ or $f(x) \leq 0$ for all $x \geq a$.
+Suppose $\int_1^\infty f(x) \,dx$ converges. Does $\lim_{x \rightarrow \infty} f(x) = 0$?
+Back: Not necessarily.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773852341886-->
+<!--ID: 1774300927817-->
 END%%
 
 %%ANKI
 Basic
-Assume $\int_a^b f(x) \,dx$ exists for each $b \geq a$ and that $f(x) \geq 0$ for all $x \geq a$. What does the montone convergence theorem state?
-Back: $\int_a^\infty f(x) \,dx$ converges iff there is a constant $M > 0$ such that $$\int_a^b f(x) \,dx \leq M \quad\text{for every } b \geq a.$$
+What quintessential counterexample is used to show the following statement is false?
+
+> If $\int_1^\infty f(x) \,dx$ converges, then $\lim_{x \rightarrow \infty} f(x) = 0$.
+
+Back: Function $f$ given by triangles of height $1$ and width $2 / n^2$, centered at each $n \in \mathbb{N}$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773852341887-->
+<!--ID: 1774300927831-->
 END%%
 
 %%ANKI
 Basic
-Assume $\int_a^b f(x) \,dx$ exists for each $a \leq b$ and that $f(x) \geq 0$ for all $x \leq b$. What does the montone convergence theorem state?
-Back: $\int_{-\infty}^b f(x) \,dx$ converges iff there is a constant $M > 0$ such that $$\int_a^b f(x) \,dx \leq M \quad\text{for every } a \leq b.$$
+What geometric reasoning explains why the following is false?
+
+> If $\int_1^\infty f(x) \,dx$ converges, then $\lim_{x \rightarrow \infty} f(x) = 0$.
+
+Back: Convergence of area does not imply convergence at points.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773852341888-->
-END%%
-
-#### Direct Comparison Test
-
-Assume proper integral $\int_a^x f(t) \,dt$ exists and that $0 \leq f(x) \leq g(x)$ for all $x \geq a$. If $\int_a^\infty g(t) \,dt$ converges, then $\int_a^\infty f(x) \,dx$ converges and $$\int_a^\infty f(t) \,dt \leq \int_a^\infty g(t) \,dt.$$
-
-The integral $\int_a^\infty g(t) \,dt$ is said to **dominate** the integral $\int_a^\infty f(t) \,dt$.
-
-%%ANKI
-Basic
-What does it mean for $\int_a^\infty f(t) \,dt$ to dominate $\int_a^\infty g(t) \,dt$?
-Back: $$\int_a^\infty g(t) \,dt \leq \int_a^\infty f(t) \,dt$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773852341889-->
+<!--ID: 1774303372283-->
 END%%
 
 %%ANKI
 Basic
-What name is given to the following convergence test?
+What discrete analogue exists of the following implication?
 
-> Assume the proper integral $\int_a^x f(t) \,dt$ exists and that $0 \leq f(x) \leq g(x)$ for all $x \geq a$. If $\int_a^\infty g(t) \,dt$ converges, then $\int_a^\infty f(t) \,dt$ converges.
+> If $\int_1^\infty f(x) \,dx$ converges, then $\lim_{x \rightarrow \infty} \int_x^{x + 1} f(x) \,dx = 0$.
 
-Back: The direct comparison test.
+Back: If $\sum a_n$ converges, then $\lim_{n \rightarrow \infty} a_n = 0$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773852341890-->
-END%%
-
-%%ANKI
-Basic
-What conditions must $\int_a^\infty f(t) \,dt$ and $\int_a^\infty g(t) \,dt$ satisfy before applying the direct comparison test?
-Back: Both $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist and $0 \leq f(x) \leq g(x)$ for all $x \geq a$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773852341891-->
-END%%
-
-%%ANKI
-Basic
-Assume $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist and that $0 \leq f(x) \leq g(x)$ for all $x \geq a$. What does the direct comparison test state?
-Back: If $\int_a^\infty g(x) \,dx$ converges, then $\int_a^\infty f(x) \,dx$ converges.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773852341892-->
-END%%
-
-%%ANKI
-Basic
-Assume $\int_x^b f(t) \,dt$ and $\int_x^b g(t) \,dt$ exist and that $0 \leq f(x) \leq g(x)$ for all $x \leq b$. What does the direct comparison test state?
-Back: If $\int_{-\infty}^b g(t) \,dt$ converges, then $\int_{-\infty}^b f(t) \,dt$ converges.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773852437184-->
-END%%
-
-#### Limit Comparison Test
-
-Assume both $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist, $f(x) \geq 0$, and $g(x) > 0$ for all $x \geq a$. If $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = c \quad\text{where } c > 0,$$
-
-then $\int_a^\infty f(t) \,dt$ converges if and only if $\int_a^\infty g(t) \,dt$ converges.
-
-%%ANKI
-Basic
-What name is given to the following convergence test?
-
-> Assume both $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist, $f(x) \geq 0$, and $g(x) > 0$ for all $x \geq a$. If $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = c \quad\text{where } c > 0,$$
-> then $\int_a^\infty f(t) \,dt$ converges if and only if $\int_a^\infty g(t) \,dt$ converges.
-
-Back: The limit comparison test.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773852867231-->
-END%%
-
-%%ANKI
-Basic
-Let $f(x) \geq 0$, $g(x) > 0$, and the following limit hold. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = 1$$
-Back: Given some $a \in \mathbb{R}$, $\int_a^\infty f(x) \,dx$ converges if and only if $\int_a^\infty g(x) \,dx$ converges.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773853197102-->
-END%%
-
-%%ANKI
-Basic
-Let $g(x) \geq 0$, $f(x) > 0$, and the following limit hold. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{g(x)}{f(x)} = \frac{1}{2}$$
-Back: Given some $a \in \mathbb{R}$, $\int_a^\infty f(x) \,dx$ converges if and only if $\int_a^\infty g(x) \,dx$ converges.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773853197107-->
-END%%
-
-%%ANKI
-Basic
-Let $g(x) \geq 0$, $f(x) > 0$, and the following limit hold. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{g(x)}{f(x)} = 0$$
-Back: Given some $a \in \mathbb{R}$, if $\int_a^\infty f(x) \,dx$ converges then $\int_a^\infty g(x) \,dx$ converges.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773853197111-->
-END%%
-
-%%ANKI
-Basic
-The limit comparison test compares integrals $\int_a^\infty f(x) \,dx$ with $\int_a^\infty g(x) \,dx$. What conditions are $f(x)$ and $g(x)$ assumed to satisfy?
-Back: $f(x) \geq 0$ and $g(x) > 0$ for each $x$ (assuming $g(x)$ is the denominator in the tested limit).
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773853197114-->
+<!--ID: 1774303372293-->
 END%%
 
 ### Second Kind
@@ -1638,9 +1641,157 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773830082931-->
 END%%
 
-#### Monotonicity
+### Linearity
+
+Let $c, \alpha, \beta \in \mathbb{R}$ and both $\int_c^\infty f(x) \,dx$ and $\int_c^\infty g(x) \,dx$ converge. Then the integral $\int_c^\infty (\alpha f(x) + \beta g(x)) \,dx$ converges and its sum is given by equation $$\int_c^\infty (\alpha f(x) + \beta g(x)) \,dx = \alpha \int_c^\infty f(x) \,dx + \beta \int_c^\infty g(x) \,dx.$$
+
+---
+
+Let $c, d, \alpha, \beta \in \mathbb{R}$ and both $\int_{c+}^d f(x) \,dx$ and $\int_{c+}^d g(x) \,dx$ converge. Then the integral $\int_{c+}^d (\alpha f(x) + \beta g(x)) \,dx$ converges and its sum is given by equation $$\int_{c+}^d (\alpha f(x) + \beta g(x)) \,dx = \alpha \int_{c+}^d f(x) \,dx + \beta \int_{c+}^d g(x) \,dx.$$
+
+%%ANKI
+Basic
+What does the linearity property of improper integrals of the first kind state?
+Back: Let $c, \alpha, \beta \in \mathbb{R}$ and both $\int_c^\infty f(x) \,dx$ and $\int_c^\infty g(x) \,dx$ converge. Then $$\int_c^\infty (\alpha f(x) + \beta g(x)) \,dx = \alpha \int_c^\infty f(x) \,dx + \beta \int_c^\infty g(x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371886-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_c^\infty f(x) \,dx$ and $\int_c^\infty g(x) \,dx$ converge. Is $\int_c^\infty f(x) + g(x) \,dx$ convergent or divergent?
+Back: Convergent.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371895-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_c^\infty f(x) \,dx$ converges and $\int_c^\infty g(x) \,dx$ diverges. Is $\int_c^\infty f(x) + g(x) \,dx$ convergent or divergent?
+Back: Divergent.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371899-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_c^\infty f(x) \,dx$ and $\int_c^\infty g(x) \,dx$ diverge. Is $\int_c^\infty f(x) + g(x) \,dx$ convergent or divergent?
+Back: Indeterminate.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371902-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_c^\infty f(x) \,dx$ diverges and $\int_c^\infty g(x) \,dx$ converges. Is $\int_c^\infty f(x) + g(x) \,dx$ convergent or divergent?
+Back: Divergent.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371905-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_c^\infty f(x) \,dx$ diverges and $\int_c^\infty g(x) \,dx$ converges. How do we prove the following diverges? $$\int_c^\infty f(x) + g(x) \,dx$$
+Back: If $\int_c^\infty f(x) + g(x) \,dx$ converges, linearity implies the following converges: $$\int_c^\infty \left[ (f(x) + g(x)) - g(x) \right] \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371908-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_c^\infty f(x) \,dx$ converges and $\int_c^\infty g(x) \,dx$ diverges. How do we prove the following diverges? $$\int_c^\infty f(x) + g(x) \,dx$$
+Back: If $\int_c^\infty f(x) + g(x) \,dx$ converges, linearity implies the following converges: $$\int_c^\infty \left[ (f(x) + g(x)) - f(x) \right] \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371911-->
+END%%
+
+%%ANKI
+Basic
+What does the linearity property of improper integrals of the second kind state?
+Back: Let $c, d, \alpha, \beta \in \mathbb{R}$ and both $\int_{c+}^d f(x) \,dx$ and $\int_{c+}^d g(x) \,dx$ converge. Then $$\int_{c+}^d (\alpha f(x) + \beta g(x)) \,dx = \alpha \int_{c+}^d f(x) \,dx + \beta \int_{c+}^d g(x) \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951334-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_{c+}^d f(x) \,dx$ and $\int_{c+}^d g(x) \,dx$ converge. Is $\int_{c+}^d f(x) + g(x) \,dx$ convergent or divergent?
+Back: Convergent.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951345-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_{c+}^d f(x) \,dx$ converges and $\int_{c+}^d g(x) \,dx$ diverges. Is $\int_{c+}^d f(x) + g(x) \,dx$ convergent or divergent?
+Back: Divergent.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951351-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_{c+}^d f(x) \,dx$ and $\int_{c+}^d g(x) \,dx$ diverge. Is $\int_{c+}^d f(x) + g(x) \,dx$ convergent or divergent?
+Back: Indeterminate.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951357-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_{c+}^d f(x) \,dx$ diverges and $\int_{c+}^d g(x) \,dx$ converges. Is $\int_{c+}^d f(x) + g(x) \,dx$ convergent or divergent?
+Back: Divergent.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951364-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_{c+}^d f(x) \,dx$ diverges and $\int_{c+}^d g(x) \,dx$ converges. How do we prove the following diverges? $$\int_{c+}^d f(x) + g(x) \,dx$$
+Back: If $\int_{c+}^d f(x) + g(x) \,dx$ converges, linearity implies the following converges: $$\int_{c+}^d \left[ (f(x) + g(x)) - g(x) \right] \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951372-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_{c+}^d f(x) \,dx$ converges and $\int_{c+}^d g(x) \,dx$ diverges. How do we prove the following diverges? $$\int_{c+}^d f(x) + g(x) \,dx$$
+Back: If $\int_{c+}^d f(x) + g(x) \,dx$ converges, linearity implies the following converges: $$\int_{c+}^d \left[ (f(x) + g(x)) - f(x) \right] \,dx.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951379-->
+END%%
+
+### Monotonicity
+
+Assume the proper integral $\int_a^b f(x) \,dx$ exists for each $b \geq a$ and suppose that $f(x) \geq 0$ for all $x \geq a$. Then $\int_a^\infty f(x) \,dx$ converges if and only if there is a constant $M > 0$ such that $$\int_a^b f(x) \,dx \leq M \quad\text{for every } b \geq a.$$
+
+---
 
 Assume the proper integral $\int_x^b f(t) \,dt$ exists and $f(x) \geq 0$ for each $a < x \leq b$. Then $\int_{a+}^b f(t) \,dt$ converges if and only if there is a constant $M > 0$ such that $$\int_x^b f(t) \,dt \leq M \quad\text{for every } a < x \leq b.$$
+
+%%ANKI
+Basic
+Let $\int_a^\infty f(x) \,dx$ be an integral. When is its sequence of partial integrals monotonic?
+Back: When $f(x) \geq 0$ for all $x \geq a$ or $f(x) \leq 0$ for all $x \geq a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341886-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_a^b f(x) \,dx$ exists for each $b \geq a$ and that $f(x) \geq 0$ for all $x \geq a$. What does the montone convergence theorem state?
+Back: $\int_a^\infty f(x) \,dx$ converges iff there is a constant $M > 0$ such that $$\int_a^b f(x) \,dx \leq M \quad\text{for every } b \geq a.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341887-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_a^b f(x) \,dx$ exists for each $a \leq b$ and that $f(x) \geq 0$ for all $x \leq b$. What does the montone convergence theorem state?
+Back: $\int_{-\infty}^b f(x) \,dx$ converges iff there is a constant $M > 0$ such that $$\int_a^b f(x) \,dx \leq M \quad\text{for every } a \leq b.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341888-->
+END%%
 
 %%ANKI
 Basic
@@ -1666,11 +1817,264 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773852341895-->
 END%%
 
-#### Direct Comparison Test
+### Absolute Convergence
+
+Let $c \in \mathbb{R}$. An improper integral $\int_c^\infty f(x) \,dx$ is called **absolutely convergent** if $\int_c^\infty \lvert f(x) \rvert \,dx$ converges. The series is **conditionally convergent** if $\int_c^\infty f(x) \,dx$ converges but $\int_c^\infty \lvert f(x) \rvert \,dx$ diverges.
+
+Assume $\int_c^\infty \lvert f(x) \rvert \,dx$ converges. Then $\int_c^\infty f(x) \,dx$ converges, and we have $$\left\lvert \int_c^\infty f(x) \,dx \right\rvert \leq \int_c^\infty \lvert f(x) \rvert \,dx.$$
+
+---
+
+Let $c, d \in \mathbb{R}$. An improper integral $\int_{c+}^d f(x) \,dx$ is called **absolutely convergent** if $\int_{c+}^d \lvert f(x) \rvert \,dx$ converges. The series is **conditionally convergent** if $\int_{c+}^d f(x) \,dx$ converges but $\int_{c+}^d \lvert f(x) \rvert \,dx$ diverges.
+
+Assume $\int_{c+}^d \lvert f(x) \rvert \,dx$ converges. Then $\int_{c+}^d f(x) \,dx$ converges, and we have $$\left\lvert \int_{c+}^d f(x) \,dx \right\rvert \leq \int_{c+}^d \lvert f(x) \rvert \,dx.$$
+
+%%ANKI
+Basic
+What does it mean for $\int_1^\infty f(x) \,dx$ to be absolutely convergent?
+Back: $\int_1^\infty \lvert f(x) \rvert \,dx$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371915-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for $\int_1^\infty f(x) \,dx$ to be conditionally convergent?
+Back: $\int_1^\infty f(x) \,dx$ converges but $\int_1^\infty \lvert f(x) \rvert \,dx$ diverges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371918-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_1^\infty f(x) \,dx$ is absolutely convergent. Is it conditionally convergent?
+Back: No.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371922-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_1^\infty f(x) \,dx$ is conditionally convergent. Is it absolutely convergent?
+Back: No.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371926-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_1^\infty f(x) \,dx$ converges. Does $\int_1^\infty \lvert f(x) \rvert \,dx$ converge or diverge?
+Back: Indeterminate.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371931-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_1^\infty f(x) \,dx$ diverges. Does $\int_1^\infty \lvert f(x) \rvert \,dx$ converge or diverge?
+Back: Diverges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371936-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_1^\infty \lvert f(x) \rvert \,dx$ diverges. Does $\int_1^\infty f(x) \,dx$ converge or diverge?
+Back: Indeterminate.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773786634324-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_1^\infty \lvert f(x) \rvert \,dx$ converges. Does $\int_1^\infty f(x) \,dx$ converge or diverge?
+Back: Converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371940-->
+END%%
+
+%%ANKI
+Basic
+Let $\int_1^\infty \lvert f(x) \rvert \,dx$ converge. How do the following two series relate to one another? $$\left \lvert \int_1^\infty f(x) \,dx \right \rvert \quad\text{and}\quad \int_1^\infty \lvert f(x) \rvert \,dx$$
+Back: $$\left\lvert \int_1^\infty f(x) \,dx \right\rvert \leq \int_1^\infty \lvert f(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371944-->
+END%%
+
+%%ANKI
+Basic
+How is the following expression interpreted? $$\left \lvert \int_1^\infty f(x) \,dx \right \rvert$$
+Back: As the limit of $\left \lvert \int_1^x f(x) \,dx \right \rvert$ as $x \rightarrow +\infty$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371948-->
+END%%
+
+%%ANKI
+Basic
+What other function $g(x)$ does Apostol generate to prove the following? $$\int_1^\infty \lvert f(x) \rvert \,dx \text{ converges} \implies \int_1^\infty f(x) \,dx \text{ converges}$$
+Back: $g(x) = f(x) + \lvert f(x) \rvert$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371953-->
+END%%
+
+%%ANKI
+Basic
+What convergence test does Apostol use to prove the following? $$\int_1^\infty \lvert f(x) \rvert \,dx \text{ converges} \implies \int_1^\infty f(x) \,dx \text{ converges}$$
+Back: The direct comparison test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774296371956-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for $\int_{a+}^b f(x) \,dx$ to be absolutely convergent?
+Back: $\int_{a+}^b \lvert f(x) \rvert \,dx$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951386-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for $\int_{a+}^b f(x) \,dx$ to be conditionally convergent?
+Back: $\int_{a+}^b f(x) \,dx$ converges but $\int_{a+}^b \lvert f(x) \rvert \,dx$ diverges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951393-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_{a+}^b f(x) \,dx$ is absolutely convergent. Is it conditionally convergent?
+Back: No.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951399-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_{a+}^b f(x) \,dx$ is conditionally convergent. Is it absolutely convergent?
+Back: No.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951406-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_{a+}^b f(x) \,dx$ converges. Does $\int_{a+}^b \lvert f(x) \rvert \,dx$ converge or diverge?
+Back: Indeterminate.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951412-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_{a+}^b f(x) \,dx$ diverges. Does $\int_{a+}^b \lvert f(x) \rvert \,dx$ converge or diverge?
+Back: Diverges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951419-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_{a+}^b \lvert f(x) \rvert \,dx$ diverges. Does $\int_{a+}^b f(x) \,dx$ converge or diverge?
+Back: Indeterminate.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951425-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_{a+}^b \lvert f(x) \rvert \,dx$ converges. Does $\int_{a+}^b f(x) \,dx$ converge or diverge?
+Back: Converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951431-->
+END%%
+
+%%ANKI
+Basic
+Let $\int_{a+}^b \lvert f(x) \rvert \,dx$ converge. How do the following two series relate to one another? $$\left \lvert \int_{a+}^b f(x) \,dx \right \rvert \quad\text{and}\quad \int_{a+}^b \lvert f(x) \rvert \,dx$$
+Back: $$\left\lvert \int_{a+}^b f(x) \,dx \right\rvert \leq \int_{a+}^b \lvert f(x) \,dx$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951437-->
+END%%
+
+%%ANKI
+Basic
+How is the following expression interpreted? $$\left \lvert \int_{a+}^b f(x) \,dx \right \rvert$$
+Back: As the limit of $\left \lvert \int_x^b f(x) \,dx \right \rvert$ as $x \rightarrow a+$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951443-->
+END%%
+
+%%ANKI
+Basic
+What other function $g(x)$ does Apostol generate to prove the following? $$\int_{a+}^b \lvert f(x) \rvert \,dx \text{ converges} \implies \int_{a+}^b f(x) \,dx \text{ converges}$$
+Back: $g(x) = f(x) + \lvert f(x) \rvert$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951449-->
+END%%
+
+%%ANKI
+Basic
+What convergence test does Apostol use to prove the following? $$\int_{a+}^b \lvert f(x) \rvert \,dx \text{ converges} \implies \int_{a+}^b f(x) \,dx \text{ converges}$$
+Back: The direct comparison test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774297951455-->
+END%%
+
+### Direct Comparison Test
+
+Assume proper integral $\int_a^x f(t) \,dt$ exists and that $0 \leq f(x) \leq g(x)$ for all $x \geq a$. If $\int_a^\infty g(t) \,dt$ converges, then $\int_a^\infty f(x) \,dx$ converges and $$\int_a^\infty f(t) \,dt \leq \int_a^\infty g(t) \,dt.$$
+
+The integral $\int_a^\infty g(t) \,dt$ is said to **dominate** the integral $\int_a^\infty f(t) \,dt$.
+
+---
 
 Assume the proper integral $\int_x^b f(t) \,dt$ exists and that $0 \leq f(x) \leq g(x)$ for all $a < x \leq b$. If $\int_{a+}^b g(t) \,dt$ converges, then $\int_{a+}^b f(t) \,dt$ converges and $$\int_{a+}^b f(t) \,dt \leq \int_{a+}^b g(t) \,dt.$$
 
 The integral $\int_{a+}^b g(t) \,dt$ is said to **dominate** the integral $\int_{a+}^b f(t) \,dt$.
+
+%%ANKI
+Basic
+What does it mean for $\int_a^\infty f(t) \,dt$ to dominate $\int_a^\infty g(t) \,dt$?
+Back: $$\int_a^\infty g(t) \,dt \leq \int_a^\infty f(t) \,dt$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341889-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following convergence test?
+
+> Assume the proper integral $\int_a^x f(t) \,dt$ exists and that $0 \leq f(x) \leq g(x)$ for all $x \geq a$. If $\int_a^\infty g(t) \,dt$ converges, then $\int_a^\infty f(t) \,dt$ converges.
+
+Back: The direct comparison test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341890-->
+END%%
+
+%%ANKI
+Basic
+What conditions must $\int_a^\infty f(t) \,dt$ and $\int_a^\infty g(t) \,dt$ satisfy before applying the direct comparison test?
+Back: Both $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist and $0 \leq f(x) \leq g(x)$ for all $x \geq a$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341891-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist and that $0 \leq f(x) \leq g(x)$ for all $x \geq a$. What does the direct comparison test state?
+Back: If $\int_a^\infty g(x) \,dx$ converges, then $\int_a^\infty f(x) \,dx$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852341892-->
+END%%
+
+%%ANKI
+Basic
+Assume $\int_x^b f(t) \,dt$ and $\int_x^b g(t) \,dt$ exist and that $0 \leq f(x) \leq g(x)$ for all $x \leq b$. What does the direct comparison test state?
+Back: If $\int_{-\infty}^b g(t) \,dt$ converges, then $\int_{-\infty}^b f(t) \,dt$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852437184-->
+END%%
 
 %%ANKI
 Basic
@@ -1715,11 +2119,61 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773852437188-->
 END%%
 
-#### Limit Comparison Test
+### Limit Comparison Test
+
+Assume both $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist, $f(x) \geq 0$, and $g(x) > 0$ for all $x \geq a$. If $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = c \quad\text{where } c > 0,$$
+
+then $\int_a^\infty f(t) \,dt$ converges if and only if $\int_a^\infty g(t) \,dt$ converges.
+
+---
 
 Assume both $\int_x^b f(t) \,dt$ and $\int_x^b g(t) \,dt$ exist, $f(x) \geq 0$, and $g(x) > 0$ for all $a < x \leq b$. If $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = c \quad\text{where } c > 0,$$
 
 then $\int_{a+}^b f(t) \,dt$ converges if and only if $\int_{a+}^b g(t) \,dt$ converges.
+
+%%ANKI
+Basic
+What name is given to the following convergence test?
+
+> Assume both $\int_a^x f(t) \,dt$ and $\int_a^x g(t) \,dt$ exist, $f(x) \geq 0$, and $g(x) > 0$ for all $x \geq a$. If $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = c \quad\text{where } c > 0,$$
+> then $\int_a^\infty f(t) \,dt$ converges if and only if $\int_a^\infty g(t) \,dt$ converges.
+
+Back: The limit comparison test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773852867231-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x) \geq 0$, $g(x) > 0$, and the following limit hold. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{f(x)}{g(x)} = 1$$
+Back: Given some $a \in \mathbb{R}$, $\int_a^\infty f(x) \,dx$ converges if and only if $\int_a^\infty g(x) \,dx$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773853197102-->
+END%%
+
+%%ANKI
+Basic
+Let $g(x) \geq 0$, $f(x) > 0$, and the following limit hold. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{g(x)}{f(x)} = \frac{1}{2}$$
+Back: Given some $a \in \mathbb{R}$, $\int_a^\infty f(x) \,dx$ converges if and only if $\int_a^\infty g(x) \,dx$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773853197107-->
+END%%
+
+%%ANKI
+Basic
+Let $g(x) \geq 0$, $f(x) > 0$, and the following limit hold. Convergence of which integral implies convergence of the other? $$\lim_{x \rightarrow +\infty} \frac{g(x)}{f(x)} = 0$$
+Back: Given some $a \in \mathbb{R}$, if $\int_a^\infty f(x) \,dx$ converges then $\int_a^\infty g(x) \,dx$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773853197111-->
+END%%
+
+%%ANKI
+Basic
+The limit comparison test compares integrals $\int_a^\infty f(x) \,dx$ with $\int_a^\infty g(x) \,dx$. What conditions are $f(x)$ and $g(x)$ assumed to satisfy?
+Back: $f(x) \geq 0$ and $g(x) > 0$ for each $x$ (assuming $g(x)$ is the denominator in the tested limit).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773853197114-->
+END%%
 
 %%ANKI
 Basic
@@ -1763,95 +2217,6 @@ The limit comparison test compares integrals $\int_{a+}^b f(x) \,dx$ with $\int_
 Back: $f(x) \geq 0$ and $g(x) > 0$ for each $x$ (assuming $g(x)$ is the denominator in the tested limit).
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773853197130-->
-END%%
-
-## Average Value
-
-Let $f$ be Riemann integrable on an interval $[a, b]$. We define the **average value of $f$ on $[a, b]$**, denoted $A(f)$, by the formula $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx.$$
-
-Let $w$ be a nonnegative function such that $\int_a^b w(x) \,dx \neq 0$. Then the **weighted average value of $f$ on $[a, b]$**, denoted $A(f)$, is given by formula $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}.$$
-
-In this context, $w$ is called a **weight function**.
-
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on an interval $[a, b]$. How is $A(f)$, the average value of $f$ on $[a, b]$, defined?
-Back: $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704321-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on an interval $[a, b]$. What name is given to $A(f)$ in the following? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
-Back: The average value of $f$ on $[a, b]$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704322-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be a nonnegative, Riemann integrable function on $[a, b]$. How do we geometrically interpret the following? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
-Back: As the rectangle with base $[a, b]$ and altitude $A(f)$ having area equal to $\int_a^b f(x) \,dx$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704324-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on an interval $[a, b]$. How is the average value of $f$ on $[a, b]$ reimagined as a weighted average value? $$A(f) = \frac{1}{b - a} \int_a^b f(x) \,dx$$
-Back: With weight function $w(x) = 1$ for all $x \in [a, b]$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704325-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$ and $w$ be its weight function. How is $A(f)$, the weighted average value of $f$ on $[a, b]$, defined?
-Back: $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704326-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$ and nonnegative $w$ satisfy $\int_a^b w(x) \,dx \neq 0$. What name is given to $A(f)$ in the following? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}$$
-Back: The weighted average value of $f$ on $[a, b]$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704327-->
-END%%
-
-%%ANKI
-Basic
-Assume Riemann integrals. What name is used to describe $w$ in the following equation? $$A(f) = \frac{\int_a^b w(x)f(x) \,dx}{\int_a^b w(x) \,dx}$$
-Back: $w$ is called a weight function.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704328-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be a Riemann integrable function on $[a, b]$ and $w$ be its weight function. What two conditions must $w$ satisfy?
-Back: It must be nonnegative and $\int_a^b w(x) \,dx \neq 0$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1751751704329-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$. What is the dividend used when computing $f$'s average value?
-Back: $\int_a^b f(x) dx$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761422321479-->
-END%%
-
-%%ANKI
-Basic
-Let $f$ be Riemann integrable on $[a, b]$. What is the divisor used when computing $f$'s average value?
-Back: $b - a$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1761422321480-->
 END%%
 
 ## Bibliography

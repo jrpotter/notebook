@@ -490,6 +490,180 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1768594332783-->
 END%%
 
+### By Partial Fractions
+
+Every proper rational function can be expressed as a finite sum of fractions of the forms $$\frac{A}{(x + a)^m} \quad\text{and}\quad \frac{Bx + C}{(x^2 + bx + c)^n}$$
+where $m$ and $n$ are positive integers and $A, B, C, a, b, c$ are constants with [[polynomials#Quadratic Formula|discriminant]] $b^2 - 4c < 0$. When a rational function has been so expressed, we say it has been decomposed into **partial fractions**.
+
+%%ANKI
+Basic
+Integration by partial fractions yield results consisting of what four kinds of expressions?
+Back: Polynomials, rationals, inverse tangents, and logarithms.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774216179429-->
+END%%
+
+%%ANKI
+Basic
+Which integration technique is used specifically for integrating rational functions?
+Back: Integration by partial fractions.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060092-->
+END%%
+
+%%ANKI
+Basic
+With respect to integration by partial fractions, what form are linear summands in?
+Back: For constants $A$ and $a$, and positive integer $n$, $$\frac{A}{(x + a)^n}.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060100-->
+END%%
+
+%%ANKI
+Basic
+With respect to integration by partial fractions, what form are quadratic summands in?
+Back: For constants $B$, $C$, $b$, and $c$, and positive integer $n$, $$\frac{Bx + C}{(x^2 + bx + c)^n}.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060103-->
+END%%
+
+%%ANKI
+Basic
+With respect to integration by partial fractions, what conditions does the following satisfy? $$\frac{A}{(x + a)^n}$$
+Back:
+1. $A$ and $a$ are constants.
+2. $n$ is a positive integer.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060106-->
+END%%
+
+%%ANKI
+Basic
+With respect to integration by partial fractions, what conditions does the following satisfy? $$\frac{Bx + C}{(x^2 + bx + c)^n}$$
+Back:
+1. $B$, $C$, $b$, and $c$ are constants.
+2. $n$ is a positive integer.
+3. The quadratic is irreducible.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060109-->
+END%%
+
+%%ANKI
+Basic
+Consider the following partial fraction. How do we show the quadratic is irreducible? $$\frac{Bx + C}{(x^2 + bx + c)^n}$$
+Back: Show $b^2 - 4c < 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060113-->
+END%%
+
+%%ANKI
+Basic
+Partial-fraction decomposition of rational functions yields summands of what two forms?
+Back: $$\frac{A}{(x + a)^m} \quad\text{and}\quad \frac{Bx + C}{(x^2 + bx + c)^n}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060118-->
+END%%
+
+%%ANKI
+Basic
+Apostol considers integration by partial fractions in what number of distinct cases?
+Back: Four.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060122-->
+END%%
+
+%%ANKI
+Basic
+Apostol considers integration by partial fractions in what number of distinct cases?
+Back: Four.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+END%%
+
+%%ANKI
+Basic
+What four cases does Apostol consider when explaining integration by partial fractions?
+Back:
+1. Distinct linear factors.
+2. Repeated linear factors.
+3. Distinct (irreducible) quadratic factors.
+4. Repeated (irreducible) quadratic factors.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774108060128-->
+END%%
+
+%%ANKI
+Basic
+Integration by partial fractions assumes what about the rational being decomposed?
+Back: It is a proper rational.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774140880217-->
+END%%
+
+%%ANKI
+Basic
+What partial-fraction decomposition involving constants $A, B, \ldots$ is used to integrate the following? $$\int \frac{2x^2 + 5x - 1}{x(x - 1)(x + 2)} \,dx$$
+Back: $$\frac{2x^2 + 5x - 1}{x(x - 1)(x + 2)} = \frac{A}{x} + \frac{B}{x - 1} + \frac{C}{x + 2}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774140880226-->
+END%%
+
+%%ANKI
+Basic
+What partial-fraction decomposition involving constants $A, B, \ldots$ is used to integrate the following? $$\int \frac{x^2 + 2x + 3}{(x - 1)(x + 1)^2} \,dx$$
+Back: $$\frac{x^2 + 2x + 3}{(x - 1)(x + 1)^2} = \frac{A}{x - 1} + \frac{B}{x + 1} + \frac{C}{(x + 1)^2}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774140880228-->
+END%%
+
+%%ANKI
+Basic
+What partial-fraction decomposition involving constants $A, B, \ldots$ is used to integrate the following? $$\int \frac{x^2 + 2x + 3}{(x - 1)(x + 1)^3} \,dx$$
+Back: $$\frac{x^2 + 2x + 3}{(x - 1)(x + 1)^3} = \frac{A}{x - 1} + \frac{B}{x + 1} + \frac{C}{(x + 1)^2} + \frac{D}{(x + 1)^3}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774140880231-->
+END%%
+
+%%ANKI
+Basic
+What partial-fraction decomposition involving constants $A, B, \ldots$ is used to integrate the following? $$\int \frac{3x^2 + 2x - 2}{(x - 1)(x^2 + x + 1)} \,dx$$
+Back: $$\frac{3x^2 + 2x - 2}{(x - 1)(x^2 + x + 1)} = \frac{A}{x - 1} + \frac{Bx + C}{x^2 + x + 1}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774140880233-->
+END%%
+
+%%ANKI
+Basic
+What partial-fraction decomposition involving constants $A, B, \ldots$ is used to integrate the following? $$\int \frac{x^4 + 2x^2 - x}{(x - 1)(x^2 + 1)^2} \,dx$$
+Back: $$\frac{x^4 + 2x^2 - x}{(x - 1)(x^2 + 1)^2} = \frac{A}{x - 1} + \frac{Bx + C}{x^2 + 1} + \frac{Dx + E}{(x^2 + 1)^2}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774140880236-->
+END%%
+
+%%ANKI
+Basic
+Determine the following integral. What "preprocessing step" is applied first? $$\int \frac{dx}{x^2 + x + 1} $$
+Back: Rewrite the denominator as $$\left( x + \frac{1}{2} \right)^2 + \frac{3}{4}.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774142000510-->
+END%%
+
+%%ANKI
+Basic
+What partial-fraction decomposition involving constants $A, B, \ldots$ is used to integrate the following? $$\int \frac{x^2 + x}{(x - 1)(2x + 1)^2} \,dx$$
+Back: $$\frac{(x^2+x)/4}{(x - 1)(x + 1/2)^2} = \frac{A}{x - 1} + \frac{B}{x + 1/2} + \frac{C}{(x + 1/2)^2}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774148541838-->
+END%%
+
+%%ANKI
+Basic
+What partial-fraction decomposition involving constants $A, B, \ldots$ is used to integrate the following? $$\int \frac{dx}{x(x^2 + 1)^2}$$
+Back: $$\frac{1}{x(x^2 + 1)^2} = \frac{A}{x} + \frac{Bx + 
+C}{x^2 + 1} + \frac{Dx + E}{(x^2 + 1)^2}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774148541843-->
+END%%
+
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

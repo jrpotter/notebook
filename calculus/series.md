@@ -181,7 +181,7 @@ END%%
 
 ### Linearity
 
-Let $\sum a_n$ and $\sum b_n$ be convergent infinite series of [[complex|complex]] terms and let $\alpha$ and $\beta$ be complex constants. Then the series $\sum\, (\alpha a_n + \beta b_n)$ also converges and its sum is given by equation $$\sum_{k=1}^{\infty}\, (\alpha a_n + \beta b_n) = \alpha \sum_{k=1}^{\infty} a_n + \beta \sum_{k=1}^{\infty} b_n.$$
+Let $\alpha, \beta \in \mathbb{C}$ and both $\sum a_n$ and $\sum b_n$ be convergent infinite series of [[complex|complex]] terms. Then the series $\sum\, (\alpha a_n + \beta b_n)$ also converges and its sum is given by equation $$\sum_{k=1}^{\infty}\, (\alpha a_n + \beta b_n) = \alpha \sum_{k=1}^{\infty} a_n + \beta \sum_{k=1}^{\infty} b_n.$$
 
 %%ANKI
 Basic
@@ -193,7 +193,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $\sum a_n$ and $\sum b_n$ are convergent. Is $\sum\, (a_n + b_n)$ convergent or divergent?
+Suppose $\sum a_n$ and $\sum b_n$ converge. Is $\sum\, (a_n + b_n)$ convergent or divergent?
 Back: Convergent.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773388774052-->
@@ -201,7 +201,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $\sum a_n$ is convergent and $\sum b_n$ is divergent. Is $\sum\, (a_n + b_n)$ convergent or divergent?
+Suppose $\sum a_n$ converges and $\sum b_n$ diverges. Is $\sum\, (a_n + b_n)$ convergent or divergent?
 Back: Divergent.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773388774059-->
@@ -209,7 +209,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $\sum a_n$ and $\sum b_n$ are divergent. Is $\sum\, (a_n + b_n)$ convergent or divergent?
+Suppose $\sum a_n$ and $\sum b_n$ diverge. Is $\sum\, (a_n + b_n)$ convergent or divergent?
 Back: Indeterminate.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773388774062-->
@@ -217,7 +217,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose $\sum a_n$ is divergent and $\sum b_n$ is convergent. Is $\sum\, (a_n + b_n)$ convergent or divergent?
+Suppose $\sum a_n$ diverges and $\sum b_n$ converges. Is $\sum\, (a_n + b_n)$ convergent or divergent?
 Back: Divergent.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773388774065-->
@@ -225,16 +225,16 @@ END%%
 
 %%ANKI
 Basic
-Suppose $\sum a_n$ is divergent and $\sum b_n$ is convergent. How do we prove $\sum \, (a_n + b_n)$ is divergent?
-Back: If $\sum \, (a_n + b_n)$ were convergent, linearity would imply $\sum a_n = \sum \left[ (a_n + b_n) - b_n \right]$ is convergent.
+Suppose $\sum a_n$ diverges and $\sum b_n$ converges. How do we prove $\sum \, (a_n + b_n)$ is divergent?
+Back: If $\sum \, (a_n + b_n)$ converges, linearity would imply $\sum a_n = \sum \left[ (a_n + b_n) - b_n \right]$ converges.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773388774055-->
 END%%
 
 %%ANKI
 Basic
-Suppose $\sum a_n$ is convergent and $\sum b_n$ is divergent. How do we prove $\sum \, (a_n + b_n)$ is divergent?
-Back: If $\sum \, (a_n + b_n)$ were convergent, linearity would imply $\sum b_n = \sum \left[ (a_n + b_n) - a_n \right]$ is convergent.
+Suppose $\sum a_n$ converges and $\sum b_n$ diverges. How do we prove $\sum \, (a_n + b_n)$ is divergent?
+Back: If $\sum \, (a_n + b_n)$ converges, linearity implies $\sum b_n = \sum \left[ (a_n + b_n) - a_n \right]$ converges.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773388774068-->
 END%%
@@ -281,6 +281,36 @@ Suppose $\sum a_n$ converges. *Why* must $a_n \rightarrow 0$ as $n \rightarrow +
 Back: Because the partial sums $(s_n)$ tend toward a limit, i.e. $a_n = s_n - s_{n - 1}$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773495009200-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\sum a_n$ converges. Does $\lim_{n \rightarrow \infty} a_n = 0$?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774300927840-->
+END%%
+
+%%ANKI
+Basic
+What quintessential counterexample is used to show the following statement is false?
+
+> If $\sum a_n$ converges, then $\lim_{n \rightarrow \infty} a_n = 0$.
+
+Back: N/A. This statement is true.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774300927849-->
+END%%
+
+%%ANKI
+Basic
+What continuous analogue exists of the following implication?
+
+> If $\sum a_n$ converges, then $\lim_{n \rightarrow \infty} a_n = 0$.
+
+Back: If $\int_1^\infty f(x) \,dx$ converges, then $\lim_{x \rightarrow \infty} \int_x^{x + 1} f(x) \,dx = 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774303372298-->
 END%%
 
 ### Monotone Convergence
@@ -375,7 +405,7 @@ END%%
 
 %%ANKI
 Basic
-Assume $\sum \, \lvert a_n \rvert$ diverges. Does $\sum \, a_n$ converge or diverge?
+Assume $\sum \, \lvert a_n \rvert$ diverges. Does $\sum a_n$ converge or diverge?
 Back: Indeterminate.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773786634324-->
@@ -383,7 +413,7 @@ END%%
 
 %%ANKI
 Basic
-Assume $\sum \, \lvert a_n \rvert$ converges. Does $\sum \, a_n$ converge or diverge?
+Assume $\sum \, \lvert a_n \rvert$ converges. Does $\sum a_n$ converge or diverge?
 Back: Converges.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773786634328-->

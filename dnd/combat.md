@@ -345,7 +345,7 @@ While flying, you fall if you have the [[dnd/conditions#Incapacitated|Incapacita
 
 %%ANKI
 Cloze
-While flying, you fall if you have the {Incapacitated condition}, you have the {Prone condition}, or your {Fly Speed is reduced to $0$}.
+While flying, you fall if you have the {Incapacitated} condition, you have the {Prone} condition, or your {Fly Speed is reduced to $0$}.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771425157988-->
 END%%
