@@ -959,6 +959,46 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1774445898061-->
 END%%
 
+%%ANKI
+Basic
+Suppose TM $M$ fails to halt on any input. What does $L(M)$ evaluate to?
+Back: $L(M) = \varnothing$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774452657583-->
+END%%
+
+%%ANKI
+Basic
+Suppose TM $M$ rejects on every input. What does $L(M)$ evaluate to?
+Back: $L(M) = \varnothing$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774452657585-->
+END%%
+
+%%ANKI
+Basic
+Suppose TM $M$ accepts on every input. What does $L(M)$ evaluate to?
+Back: The set of all strings over its alphabet, i.e. $\Sigma^*$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774452657586-->
+END%%
+
+%%ANKI
+Basic
+Is the following language decidable? $$\{ M \mid M \text{ is a TM and } L(M) \text{ is an infinite language} \}$$
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774455555676-->
+END%%
+
+%%ANKI
+Basic
+Is the following language decidable? $$\{ M \mid M \text{ is a TM and 1011} \in L(M)\}$$
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774455555680-->
+END%%
+
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).

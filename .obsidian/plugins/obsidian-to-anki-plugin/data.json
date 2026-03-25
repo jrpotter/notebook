@@ -747,7 +747,7 @@
     "combinatorics/inclusion-exclusion.md": "c27b49ee03cc5ee854d0e8bd12a1d505",
     "combinatorics/combinations.md": "2703170947e25c48f8ca61f15e4dd4f3",
     "combinatorics/additive-principle.md": "d036ac511e382d5c1caca437341a5915",
-    "calculus/intervals.md": "5d1b3a614161f8a73978d580762cd2a5",
+    "calculus/intervals.md": "a8b08816dd3ccf0e9b697aad101b85a9",
     "calculus/integrals.md": "6f559f8fbe1ee1fa20bce5f19466a0cc",
     "calculus/index.md": "0ba595bebbc363e109421252741a4a3c",
     "calculus/bounds.md": "bfd0e44ec6022b9b47d1ddc094810db6",
@@ -2219,7 +2219,7 @@
     "_journal/2025-12/2025-12-07 1.md": "136491ac13ee0ca2b5382fe84059ef5d",
     "computability/turing.md": "90c62c21b91594870ced9fbc9e029f3f",
     "computability/regular.md": "4515f1dd5d7f36e09614fd2a0590ea3e",
-    "computability/decidability.md": "1149af9ce49b30307ca13d5c106e074f",
+    "computability/decidability.md": "07cd15b8dfbfd1ee78d9660764d4a78c",
     "_journal/2025-12-09.md": "5f73a6a4874acec65ea3b40a4aefddae",
     "_journal/2025-12/2025-12-08.md": "762822f1cab34e5596b486eb586df9dd",
     "complexity/order_growth.md": "ac2f15556996a2d7829852ebb410a606",
@@ -2525,7 +2525,7 @@
     "_journal/2026-03/2026-03-09.md": "7f2dccf71176ffdeee38d97fca45f4a7",
     "_journal/2026-03/2026-03-08.md": "679d7f12743c9f591e820caf087a65b1",
     "_journal/2026-03/2026-03-07.md": "b6e9978758063cca09e641920050bd0a",
-    "calculus/sequences.md": "c81f9acf999bd6a5fae4ba7cde648a9d",
+    "calculus/sequences.md": "63f0c738410c899cb26a339058d214c3",
     "_journal/2026-03-11.md": "689d2bd9cd0ea3893d0baed4789a45c6",
     "_journal/2026-03/2026-03-10.md": "1f2179b9469c6f446ca8b60285cf27d1",
     "calculus/series.md": "f89d715d1b8ed02244fe3bf821e4c461",
@@ -2564,7 +2564,9 @@
     "_journal/2026-03-23.md": "994d415d82da76ec88d07914b66579c9",
     "_journal/2026-03/2026-03-22.md": "590d61a46cd393b4e2a5aa9fa6a86f62",
     "_journal/2026-03-24.md": "d046254acf1164ea4d74ff7e90fa5bb4",
-    "_journal/2026-03/2026-03-23.md": "994d415d82da76ec88d07914b66579c9"
+    "_journal/2026-03/2026-03-23.md": "994d415d82da76ec88d07914b66579c9",
+    "_journal/2026-03-25.md": "57bfa3d81b7a7234d760b770d38e7217",
+    "_journal/2026-03/2026-03-24.md": "d046254acf1164ea4d74ff7e90fa5bb4"
   },
   "fields_dict": {
     "Basic": [

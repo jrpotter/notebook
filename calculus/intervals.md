@@ -285,14 +285,6 @@ END%%
 
 %%ANKI
 Basic
-Let $f(x) = \sqrt{x}$. *Why* is $f$ piecewise monotonic on some interval $[a, b] \subseteq \mathbb{R}$?
-Back: N/A. $f$ isn't defined for negative values.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1743260676480-->
-END%%
-
-%%ANKI
-Basic
 Let $f \colon \mathbb{R} \rightarrow \mathbb{R}$ given by $f(x) = \sqrt{x}$. What largest interval is $f$ piecewise monotonic over?
 Back: $[0, \infty)$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
