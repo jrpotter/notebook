@@ -19,7 +19,7 @@ A **Turing machine** is a $7$-tuple $\langle Q, \Sigma, \Gamma, \delta, q_0, q_a
 6. $q_a$ is the accept state, and
 7. $q_r$ is the reject state, where $q_r \neq q_a$.
 
-A language is **Turing-recognizable** (also known as **recursively enumerable**) if a Turing machine recognizes it. Otherwise it is **Turing-unrecognizable**.
+A language is **Turing-recognizable** (also known as **recursively enumerable** or **semidecidability**) if a Turing machine recognizes it. Otherwise it is **Turing-unrecognizable**.
 
 A language is **co-Turing-recognizable** if it is the complement of a Turing-recognizable language. An analogous definition holds for **co-Turing-unrecognizable**.
 
@@ -29,6 +29,38 @@ What is TM an acronym for?
 Back: **T**uring **m**achine.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1764556414654-->
+END%%
+
+%%ANKI
+Basic
+What term does Sipser prefer to "semidecidable"?
+Back: Recognizable.
+Reference: _Wikipedia_. “Decidability (logic).” December 3, 2025. [https://en.wikipedia.org/w/index.php?title=Decidability_(logic)](https://en.wikipedia.org/w/index.php?title=Decidability_\(logic\)&oldid=1325540591).
+<!--ID: 1774445784955-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a language to be semidecidable?
+Back: It is recognizable but not decidable.
+Reference: _Wikipedia_. “Decidability (logic).” December 3, 2025. [https://en.wikipedia.org/w/index.php?title=Decidability_(logic)](https://en.wikipedia.org/w/index.php?title=Decidability_\(logic\)&oldid=1325540591).
+<!--ID: 1774445784960-->
+END%%
+
+%%ANKI
+Basic
+Which of recognizable or decidable languages is a subclass of the other?
+Back: Every decidable language is a recognizable language.
+Reference: _Wikipedia_. “Decidability (logic).” December 3, 2025. [https://en.wikipedia.org/w/index.php?title=Decidability_(logic)](https://en.wikipedia.org/w/index.php?title=Decidability_\(logic\)&oldid=1325540591).
+<!--ID: 1774445784963-->
+END%%
+
+%%ANKI
+Basic
+Which of recognizable or semidecidable languages is a subclass of the other?
+Back: These refer to the same class of languages.
+Reference: _Wikipedia_. “Decidability (logic).” December 3, 2025. [https://en.wikipedia.org/w/index.php?title=Decidability_(logic)](https://en.wikipedia.org/w/index.php?title=Decidability_\(logic\)&oldid=1325540591).
+<!--ID: 1774445784965-->
 END%%
 
 %%ANKI

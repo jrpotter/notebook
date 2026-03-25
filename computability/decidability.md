@@ -903,6 +903,62 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1774288488189-->
 END%%
 
+%%ANKI
+Basic
+Is the act of finding a TM with a given property decidable?
+Back: Not necessarily.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774445784968-->
+END%%
+
+%%ANKI
+Basic
+Suppose we know a TM with a decidable property exists. Is *finding* such a TM possible in a finite amount of time?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774445784970-->
+END%%
+
+%%ANKI
+Basic
+Suppose we know a TM with a decidable property exists. How do you find such a TM in a finite amount of time?
+Back: Enumerate through each TM description one at a time, running the decider on each.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774445784973-->
+END%%
+
+%%ANKI
+Basic
+With respect to Rice's theorem, Is the following a valid property? If not, why? $$\{ M \mid L(M) \text{ is infinite} \}$$
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774445784976-->
+END%%
+
+%%ANKI
+Basic
+With respect to Rice's theorem, Is the following a valid property? If not, why? $$\{ M \mid M \text{ has an odd number of states} \}$$
+Back: No. The entrance requirement describes the TM, not the language recognized by the TM.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774445784979-->
+END%%
+
+%%ANKI
+Basic
+With respect to Rice's theorem, Is the following a valid property? If not, why? $$\{ M \mid M \text{ halts on blank input} \}$$
+Back: No. The entrance requirement describes the TM, not the language recognized by the TM.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774445898052-->
+END%%
+
+%%ANKI
+Basic
+With respect to Rice's theorem, Is the following a valid property? If not, why? $$\{ M \mid L(M) = \varnothing \}$$
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774445898061-->
+END%%
+
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).

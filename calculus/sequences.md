@@ -457,6 +457,251 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773523825828-->
 END%%
 
+## Limit Functions
+
+Let $(f_n)$ denote a sequence of real- or complex-valued functions having a common domain on the real line or in the complex plane. Let $S$ denote the set of points $x$ for which sequence $(f_n(x))$ converges. The function $f$ defined on $S$ by the equation $$f(x) = \lim_{n \rightarrow \infty} f_n(x) \quad\text{if}\quad x \in S,$$
+
+is called the **limit function** of the sequence $(f_n)$. We say the sequence $(f_n)$ **converges pointwise** to $f$ on the set $S$.
+
+%%ANKI
+Basic
+Let $(f_n)$ denote a sequence of real valued functions. How is the limit function $f$ defined?
+Back: As $f(x) = \lim_{n \rightarrow \infty} f_n(x)$ for $x \in S$ where $S$ is the set of points $(f_n(x))$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385405734-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x)$ be the limit function of $(f_n)$. What do each $f_n$ element have in common?
+Back: Their domain.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385405742-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x)$ be the limit function of $(f_n)$. What is the domain of $f$?
+Back: The set of points $x$ where $(f_n(x))$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385405745-->
+END%%
+
+%%ANKI
+Basic
+Suppose $(f_n)$ converges pointwise to $f$ on $S$. What is the domain of $f$?
+Back: $S$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385405748-->
+END%%
+
+%%ANKI
+Basic
+Suppose $(f_n)$ converges pointwise to $f$ on $S$. What term describes $f$?
+Back: A limit function.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385405752-->
+END%%
+
+%%ANKI
+Basic
+Suppose $(f_n)$ converges pointwise to $f$ on $S$. How is $f$ defined?
+Back: As $f(x) = \lim_{n \rightarrow \infty} f_n(x)$ for $x \in S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385405757-->
+END%%
+
+%%ANKI
+Basic
+Suppose $(f_n)$ converges pointwise to $f$ on $S$. What is $(f_n)$?
+Back: A sequence of real- or complex-valued functions with a common domain.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385405769-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical entity converges pointwise to a function?
+Back: A sequence of functions.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385405775-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical entity does a sequence of functions pointwise converge to?
+Back: A function.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385405781-->
+END%%
+
+%%ANKI
+Basic
+Suppose $(f_n)$ converges pointwise to $f$ on $S$. How is this expressed notationally?
+Back: As $f(x) = \lim_{n \rightarrow \infty} f_n(x)$ for $x \in S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385405786-->
+END%%
+
+%%ANKI
+Basic
+The concept "pointwise convergence" is usually mutually defined with what other concept?
+Back: Limit functions.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385405791-->
+END%%
+
+%%ANKI
+Basic
+The concept "limit functions" is usually mutually defined with what other concept?
+Back: Pointwise convergence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385405763-->
+END%%
+
+%%ANKI
+Basic
+Suppose $(f_n)$ is a sequence of functions continuous at $p$. Is its limit function continuous at $p$?
+Back: Not necessarily.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385996629-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\lim_{n \rightarrow \infty} \int_a^b f_n(x) \,dx = L$ for some sequence $(f_n)$. Is the following true? $$\int_a^b \lim_{n \rightarrow \infty} f_n(x) \,dx = L$$
+Back: Not necessarily.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385996640-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\int_a^b \lim_{n \rightarrow \infty} f_n(x) \,dx = L$ for some sequence $(f_n)$. Is the following true? $$\lim_{n \rightarrow \infty} \int_a^b f_n(x) \,dx = L$$
+Back: Not necessarily.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385996645-->
+END%%
+
+%%ANKI
+Basic
+Suppose $(f_n)$ pointwise converges to $f$. If $f_n$ is continuous at $p$ for all $n$, is $f$ continuous at $p$?
+Back: Not necessarily.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385996649-->
+END%%
+
+%%ANKI
+Cloze
+In {pointwise} convergence, the "speed" at which $f_n \rightarrow f$ is allowed to vary from point to point.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627937-->
+END%%
+
+### Uniform Convergence
+
+A sequence of functions $(f_n)$ **converges uniformly** to $f$ on a set $S$ if for every $\epsilon > 0$ there is an $n_0 \in \mathbb{N}$ such that $n \geq n_0$ implies $$\lvert f_n(x) - f(x) \rvert < \epsilon \quad \text{for all } x \text{ in } S.$$
+
+We denote this symbolically by writing "$f_n \rightarrow f$ uniformly on $S$."
+
+![[uniform-convergence.png]]
+
+%%ANKI
+Basic
+What does it mean for $(f_n)$ to converge uniformly to $f$ on $S$?
+Back: For all $\epsilon > 0$, there exists an $n_0 \in \mathbb{N}$ such that if $n \geq n_0$, then $\lvert f_n(x) - f(x) \rvert < \epsilon$ for all $x \in S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627945-->
+END%%
+
+%%ANKI
+Basic
+How is the following symbolism interpreted? $$f_n \rightarrow f \text{ uniformly on } S$$
+Back: The sequence $(f_n)$ converges uniformly to $f$ on set $S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627949-->
+END%%
+
+%%ANKI
+Basic
+Why is "uniform convergence" named the way it is?
+Back: It implies convergence happens at the same rate for each point in the domain.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627952-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical entity can converge uniformly?
+Back: A sequence of functions.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627955-->
+END%%
+
+%%ANKI
+Basic
+What distinguished pointwise convergence from uniform convergence?
+Back: Uniform convergence requires pointwise convergence but at the same rate of approximation everywhere.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627958-->
+END%%
+
+%%ANKI
+Basic
+Suppose each element of $(f_n)$ is continuous at $p$. Assuming $f$ is well-defined, what condition ensures $f$ is continuous at $p$? $$f(x) = \lim_{n \rightarrow \infty} f_n(x)$$
+Back: When $(f_n)$ converges uniformly to $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627961-->
+END%%
+
+%%ANKI
+Basic
+Assuming limits exist, when does the following equality universally hold? $$\lim_{n \rightarrow \infty} \int_a^b f_n(x) \,dx = \int_a^b \lim_{n \rightarrow \infty} f_n(x) \,dx$$
+Back: When $(f_n)$ uniformly converges to $f(x) = \lim_{n \rightarrow \infty} f_n(x)$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627964-->
+END%%
+
+%%ANKI
+Cloze
+In {uniform} convergence, the "speed" at which $f_n \rightarrow f$ happens at the same rate point to point.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627968-->
+END%%
+
+%%ANKI
+Basic
+Which of pointwise or uniform convergence is best described by the following? $$N \text{ depends on } x$$
+Back: Pointwise convergence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627971-->
+END%%
+
+%%ANKI
+Basic
+Which of pointwise or uniform convergence is best described by the following? $$\text{one } N \text{ works everywhere}$$
+Back: Uniform convergence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627975-->
+END%%
+
+%%ANKI
+Basic
+What concept does Apostol intend to convey with the term "uniform"?
+Back: Existence of a single witness that works across the entire domain at once.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627978-->
+END%%
+
+%%ANKI
+Basic
+What is the following a visualization of?
+![[uniform-convergence.png]]
+Back: Uniform convergence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774388171952-->
+END%%
+
 ## Examples
 
 ### Arithmetic

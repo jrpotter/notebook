@@ -734,6 +734,30 @@ Reference: Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, 
 <!--ID: 1761398087488-->
 END%%
 
+%%ANKI
+Basic
+Why is "uniform continuity" named the way it is?
+Back: It implies continuity happens with the same-sized neighborhoods for each point in the domain.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627982-->
+END%%
+
+%%ANKI
+Basic
+Which of continuity or uniform continuity is best described by the following? $$\delta \text{ depends on } x$$
+Back: Continuity.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627985-->
+END%%
+
+%%ANKI
+Basic
+Which of continuity or uniform continuity is best described by the following? $$\text{one } \delta \text{ works everywhere}$$
+Back: Uniform continuity.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627988-->
+END%%
+
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
