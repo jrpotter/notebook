@@ -758,6 +758,46 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1774387627988-->
 END%%
 
+%%ANKI
+Basic
+Which of continuity or uniform continuity is the stronger concept?
+Back: Uniform continuity implies continuity but not the other way around.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774476445693-->
+END%%
+
+%%ANKI
+Basic
+Is $f(x) = x^2$ continuous and/or uniformly continuous on $\mathbb{R}$?
+Back: Just continuous.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774476445700-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't $f(x) = x^2$ uniformly continuous on $\mathbb{R}$?
+Back: $x^2$ gets increasingly steeper the further towards $\pm \infty$ one goes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774477096352-->
+END%%
+
+%%ANKI
+Basic
+Is $f(x) = x^2$ continuous and/or uniformly continuous on $[0, 1]$?
+Back: Both continuous and uniformly continuous.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774476445702-->
+END%%
+
+%%ANKI
+Basic
+*Why* is $f(x) = x^2$ uniformly continuous on $[0, 1]$?
+Back: The maximum span is limited by virtue of a bounded interval.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774477096365-->
+END%%
+
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

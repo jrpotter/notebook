@@ -537,14 +537,6 @@ END%%
 
 %%ANKI
 Basic
-Suppose $(f_n)$ converges pointwise to $f$ on $S$. How is $f$ defined?
-Back: As $f(x) = \lim_{n \rightarrow \infty} f_n(x)$ for $x \in S$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774385405786-->
-END%%
-
-%%ANKI
-Basic
 The concept "pointwise convergence" is usually mutually defined with what other concept?
 Back: Limit functions.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
@@ -584,18 +576,18 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 END%%
 
 %%ANKI
-Basic
-Suppose $(f_n)$ pointwise converges to $f$. If $f_n$ is continuous at $p$ for all $n$, is $f$ continuous at $p$?
-Back: Not necessarily.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774385996649-->
-END%%
-
-%%ANKI
 Cloze
 In {pointwise} convergence, the "speed" at which $f_n \rightarrow f$ is allowed to vary from point to point.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774387627937-->
+END%%
+
+%%ANKI
+Basic
+Given sequence $(f_n)$ and limit function $f$, what kind of convergence is captured by the following? $$\forall x \in S, \forall \epsilon > 0, \exists N \in \mathbb{N}, \forall n \geq N, \lvert f_n(x) - f(x) \rvert < \epsilon$$
+Back: Pointwise convergence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774476058855-->
 END%%
 
 ### Uniform Convergence
@@ -648,14 +640,6 @@ END%%
 
 %%ANKI
 Basic
-Suppose each element of $(f_n)$ is continuous at $p$. Assuming $f$ is well-defined, what condition ensures $f$ is continuous at $p$? $$f(x) = \lim_{n \rightarrow \infty} f_n(x)$$
-Back: When $(f_n)$ converges uniformly to $f$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774387627961-->
-END%%
-
-%%ANKI
-Basic
 Assuming limits exist, when does the following equality universally hold? $$\lim_{n \rightarrow \infty} \int_a^b f_n(x) \,dx = \int_a^b \lim_{n \rightarrow \infty} f_n(x) \,dx$$
 Back: When $(f_n)$ uniformly converges to $f(x) = \lim_{n \rightarrow \infty} f_n(x)$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
@@ -700,6 +684,128 @@ What is the following a visualization of?
 Back: Uniform convergence.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774388171952-->
+END%%
+
+%%ANKI
+Basic
+Given sequence $(f_n)$ and limit function $f$, what kind of convergence is captured by the following? $$\forall \epsilon > 0, \exists N \in \mathbb{N}, \forall n \geq N, \forall x \in S, \lvert f_n(x) - f(x) \rvert < \epsilon$$
+Back: Uniform convergence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774476058863-->
+END%%
+
+#### Continuity
+
+Assume $f_n \rightarrow f$ uniformly on an interval $S$. If each function $f_n$ is [[continuity|continuous]] at a point $p$ in $S$, then the limit function $f$ is also continuous at $p$.
+
+%%ANKI
+Basic
+Suppose $(f_n)$ pointwise converges to $f$. If $f_n$ is continuous at $p$ for all $n$, is $f$ continuous at $p$?
+Back: Not necessarily.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774385996649-->
+END%%
+
+%%ANKI
+Basic
+Suppose $(f_n)$ uniformly converges to $f$. If $f_n$ is continuous at $p$ for all $n$, is $f$ continuous at $p$?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774465980698-->
+END%%
+
+%%ANKI
+Basic
+Suppose each element of $(f_n)$ is continuous at $p$. Assuming $f$ is well-defined, what condition(s) ensure $f$ is continuous at $p$? $$f(x) = \lim_{n \rightarrow \infty} f_n(x)$$
+Back: $(f_n)$ converges uniformly to $f$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774387627961-->
+END%%
+
+#### Integration
+
+Assume $f_n \rightarrow f$ uniformly on an interval $[a, b]$, and assume each $f_n$ is [[riemann|Riemann]] integrable on $[a, b]$. Define a new sequence $(g_n)$ by the equation $$g_n(x) = \int_a^x f_n(t) \,dt \quad\text{if } x \in [a, b]$$
+
+Then $f$ is Riemann integrable and $g_n \rightarrow \int_a^x f(t) \,dt$ uniformly on $[a, b]$. That is, $$\lim_{n \rightarrow \infty} \int_a^x f_n(t) \,dt = \int_a^x \lim_{n \rightarrow \infty} f_n(t) \,dt.$$
+
+%%ANKI
+Basic
+Suppose $(f_n)$ pointwise converges on $[a, b]$. If $f_n$ is Riemann integrable on $[a, b]$ for all $n$, does the following hold? $$\lim_{n \rightarrow \infty} \int_a^x f_n(t) \,dt = \int_a^x \lim_{n \rightarrow \infty} f_n(t) \,dt$$
+Back: Not necessarily.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774469180800-->
+END%%
+
+%%ANKI
+Basic
+Suppose $(f_n)$ uniformly converges on $[a, b]$. If $f_n$ is Riemann integrable on $[a, b]$ for all $n$, does the following hold? $$\lim_{n \rightarrow \infty} \int_a^x f_n(t) \,dt = \int_a^x \lim_{n \rightarrow \infty} f_n(t) \,dt$$
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774469180806-->
+END%%
+
+%%ANKI
+Basic
+Assume Riemann integrals. Under what condition(s) is the following identity true? $$\lim_{n \rightarrow \infty} \int_a^x f_n(t) \,dt = \int_{a}^x \lim_{n \rightarrow \infty} f_n(t) \,dt, \quad\text{for } x \in [a, b]$$
+Back: $(f_n)$ uniformly converges on $[a, b]$ and each $f_n$ is Riemann integrable on $[a, b]$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774469180810-->
+END%%
+
+%%ANKI
+Basic
+Assume appropriate conditions. What theorem is the following a symbolic representation of? $$\lim_{n \rightarrow \infty} \int_a^x f_n(t) \,dt = \int_{a}^x \lim_{n \rightarrow \infty} f_n(t) \,dt, \quad\text{for } x \in [a, b]$$
+Back: Uniform convergence of a sequence of functions transmits Riemann integrability.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774469180814-->
+END%%
+
+%%ANKI
+Basic
+Using $(f_n)$, how do we symbolically denote that uniform convergence transmits Riemann integrability?
+Back: $$\lim_{n \rightarrow \infty} \int_a^x f_n(t) \,dt = \int_{a}^x \lim_{n \rightarrow \infty} f_n(t) \,dt$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774469180818-->
+END%%
+
+%%ANKI
+Basic
+Under what condition(s) is the following identity true? $$\lim_{n \rightarrow \infty} \frac{d}{dx} f_n(x) = \frac{d}{dx} \lim_{n \rightarrow \infty} f_n(x)$$
+Back: N/A. This is not necessarily true.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774471165582-->
+END%%
+
+%%ANKI
+Basic
+Suppose $(f_n)$ pointwise converges on $S$. If $f_n$ is differentiable on $S$ for all $n$, does the following hold? $$\lim_{n \rightarrow \infty} \frac{d}{dx} f_n(x) = \frac{d}{dx} \lim_{n \rightarrow \infty} f_n(x), \quad\text{for } x \in S$$
+Back: Not necessarily.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774471165593-->
+END%%
+
+%%ANKI
+Basic
+Suppose $(f_n)$ uniformly converges on $S$. If $f_n$ is differentiable on $S$ for all $n$, does the following hold? $$\lim_{n \rightarrow \infty} \frac{d}{dx} f_n(x) = \frac{d}{dx} \lim_{n \rightarrow \infty} f_n(x), \quad\text{for } x \in S$$
+Back: Not necessarily.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774471165597-->
+END%%
+
+%%ANKI
+Basic
+Which of differentiability and/or integrability is transmitted under uniform convergence?
+Back: Just integrability.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774471165602-->
+END%%
+
+%%ANKI
+Basic
+Which of continuity and/or integrability is transmitted under uniform convergence?
+Back: Both continuity and integrability.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774471165607-->
 END%%
 
 ## Examples

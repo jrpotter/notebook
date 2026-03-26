@@ -70,7 +70,7 @@ END%%
 %%ANKI
 Basic
 What is the Blinded *Attacks Affected* effect?
-Back: Advantage on Attack Rolls against Blinded creatures. Disadvantage on Attack Rolls from Blinded creatures.
+Back: Blinded creatures attack with Disadvantage and are attacked with Advantage.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1769202902557-->
 END%%
@@ -346,7 +346,7 @@ END%%
 %%ANKI
 Basic
 What is the Invisible *Attacks Affected* effect?
-Back: Attack rolls against the creature have Disadvantage and its attack rolls have Advantage unless it can somehow be seen.
+Back: Invisible creatures attack with Advantage and are attacked with Disadvantage (unless they can somehow be seen).
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1770081819978-->
 END%%

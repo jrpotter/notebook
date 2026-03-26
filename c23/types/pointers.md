@@ -615,7 +615,7 @@ Basic
 What is the size of a `nullptr_t` object?
 Back: The same as that of a pointer to a character type.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
-<!--ID: 1759325776940-->
+<!--ID: 1774529837170-->
 END%%
 
 %%ANKI
@@ -623,7 +623,7 @@ Basic
 What is the alignment of a `nullptr_t` object?
 Back: The same as that of a pointer to a character type.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
-<!--ID: 1759325776946-->
+<!--ID: 1774529837177-->
 END%%
 
 %%ANKI
@@ -631,7 +631,7 @@ Basic
 What is the object representation of a `nullptr_t` object?
 Back: The same as that of null pointer of type `void*`.
 Reference: Wiedijk, Freek. “ISO: Programming Languages - C23.” 2024. [https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3220.pdf).
-<!--ID: 1759325776951-->
+<!--ID: 1774529837180-->
 END%%
 
 %%ANKI

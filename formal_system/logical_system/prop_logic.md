@@ -281,8 +281,16 @@ END%%
 Basic
 Given propositions $p$ and $q$, $p \Leftrightarrow q$ is equivalent to the conjunction of what two expressions?
 Back: $p \Rightarrow q$ and $q \Rightarrow p$.
-Reference: Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 <!--ID: 1715969047070-->
+END%%
+
+%%ANKI
+Basic
+How can I prove $p \Leftrightarrow q$ without directly proving $q \Rightarrow p$?
+Back: By proving $p \Rightarrow q$ and $\neg p \Rightarrow \neg q$.
+Reference: Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+<!--ID: 1774529801529-->
 END%%
 
 ## Bibliography

@@ -1079,6 +1079,184 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773781770219-->
 END%%
 
+## Sum Functions
+
+Let $(f_n)$ be a sequence of functions for which each $f_n(x)$ is a partial sum of another function, say $$f_n(x) = \sum_{k=1}^n u_k(x).$$
+
+Let $S$ denote the set of points $x$ for which sequence $(f_n(x))$ converges. The function $$f(x) = \lim_{n \rightarrow \infty} f_n(x) = \sum_{k=1}^\infty u_k(x) \quad\text{if}\quad x \in S,$$
+
+is called the **sum function** of the sequence $(f_n)$. We say the series $\sum u_k$ **converges pointwise** to $f$ on $S$.
+
+%%ANKI
+Basic
+Which of limit functions or sum functions is more general?
+Back: Every sum function is an example of a limit function.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774465014454-->
+END%%
+
+%%ANKI
+Cloze
+{1:Limit} functions are to {2:sequences} whereas {2:sum} functions are to {1:series}.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774465014461-->
+END%%
+
+%%ANKI
+Basic
+Let $f(x)$ be the sum function of $(f_n)$. What is the domain of $f$?
+Back: The set of points $x$ where $(f_n(x))$ converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774465014464-->
+END%%
+
+%%ANKI
+Basic
+The concept "sum functions" is usually mutually defined with what other concept?
+Back: Pointwise convergence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774465980659-->
+END%%
+
+%%ANKI
+Cloze
+We can pass the limit term by term of a {uniformly convergent} infinite series.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774469180780-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\sum u_k$ pointwise converges to $f$. If $\sum_{k=1}^n u_k$ is continuous at $p$ for all $n$, is $f$ continuous at $p$?
+Back: Not necessarily.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774465980671-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\sum u_k$ uniformly converges to $f$. If $\sum_{k=1}^n u_k$ is continuous at $p$ for all $n$, is $f$ continuous at $p$?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774465980676-->
+END%%
+
+%%ANKI
+Basic
+Suppose series $\sum u_k$ converges pointwise to $f$ on $S$. How is $f$ defined?
+Back: As $f(x) = \sum_{k=1}^\infty u_k(x)$ for $x \in S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774465980686-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\sum u_k$ converges pointwise to $f$ on $S$. What is $\sum u_k$?
+Back: A series of real- or complex-valued functions with a common domain.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774465980692-->
+END%%
+
+%%ANKI
+Basic
+Under what condition(s) is the following identity true? $$\lim_{x \rightarrow p} \sum_{k=1}^\infty u_k(x) = \sum_{k=1}^\infty \lim_{x \rightarrow p} u_k(x), \quad\text{for } x \in S$$
+Back: $\sum u_k$ uniformly converges on $S$ and each $u_k$ is continuous at $p \in S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774465980681-->
+END%%
+
+%%ANKI
+Basic
+Assume appropriate conditions. What theorem is the following a symbolic representation of? $$\lim_{x \rightarrow p} \sum_{k=1}^\infty u_k(x) = \sum_{k=1}^\infty \lim_{x \rightarrow p} u_k(x)$$
+Back: Uniform convergence of a series of functions transmits continuity.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774469180790-->
+END%%
+
+%%ANKI
+Basic
+Using $\sum u_k$, how do we symbolically denote that uniform convergence transmits continuity?
+Back: $$\lim_{x \rightarrow p} \sum_{k=1}^\infty u_k(x) = \sum_{k=1}^\infty \lim_{x \rightarrow p} u_k(x)$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774469180793-->
+END%%
+
+%%ANKI
+Cloze
+A {uniformly convergent} infinite series may be integrated term by term.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774469180796-->
+END%%
+
+### Weierstrass M-Test
+
+Let $\sum u_n$ be a series of functions which converges pointwise to a function $f$ on a set $S$. If there is a convergent series of positive constants $\sum M_n$ such that $$0 \leq \lvert u_n(x) \rvert \leq M_n \quad\text{for every } n \geq 1 \text{ and every } x \in S,$$
+
+then the series $\sum u_n$ [[sequences#Uniform Convergence|converges uniformly]] on $S$.
+
+%%ANKI
+Basic
+What kind of series is the Weierstrass M-test applicable to?
+Back: A series of functions that converge pointwise on some set.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774471874416-->
+END%%
+
+%%ANKI
+Basic
+Let $\sum u_n$ be a series of functions that converge pointwise to a function $f$ on a set $S$. The Weierstrass M-test compares $\sum u_n$ to what other series?
+Back: A convergent series $\sum M_n$ consisting of positive constants.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774471874430-->
+END%%
+
+%%ANKI
+Basic
+Use the Weierstrass M-test to compare $\sum u_n$ against $\sum M_n$ on set $S$. What is $\sum u_n$?
+Back: $\sum u_n$ is a series of functions that pointwise converge on $S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774471874439-->
+END%%
+
+%%ANKI
+Basic
+Use the Weierstrass M-test to compare $\sum u_n$ against $\sum M_n$ on set $S$. What is $\sum M_n$?
+Back: $\sum M_n$ is a convergent series of positive constants.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774471874448-->
+END%%
+
+%%ANKI
+Basic
+Use the Weierstrass M-test to compare $\sum u_n$ against $\sum M_n$ on set $S$. What inequality does the test assume?
+Back: $0 \leq \lvert u_n(x) \rvert \leq M_n$ for every $n \geq 1$ and every $x \in S$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774471874455-->
+END%%
+
+%%ANKI
+Basic
+What is the purpose of the Weierstrass M-test?
+Back: To prove a pointwise convergent series is also uniformly convergent.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774471874462-->
+END%%
+
+%%ANKI
+Cloze
+The {Weierstrass} {M-test} is used to prove a {pointwise} convergent series is {uniformly} convergent.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774471874471-->
+END%%
+
+%%ANKI
+Basic
+What convergence test is used in the proof of the Weierstrass M-test?
+Back: The direct comparison test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774471874482-->
+END%%
+
 ## Examples
 
 ### Arithmetic
