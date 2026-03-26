@@ -440,6 +440,58 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1772027304017-->
 END%%
 
+%%ANKI
+Basic
+Suppose $A \leq_m B$. Prove decidability of $B$ implies decidability of $A$.
+Back: Construct a decider on input $w$ as:
+1. Run the decider of $B$ on $f(w)$, where $f$ is our mapping reduction.
+2. Return "accept" if $B$ accepts and "reject" if $B$ rejects.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774544028221-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A \leq_m B$. Prove recognizability of $B$ implies recognizability of $A$.
+Back: Construct a recognizer on input $w$ as:
+1. Run the recognizer of $B$ on $f(w)$, where $f$ is our mapping reduction.
+2. Return "accept" if $B$ accepts and "reject" if $B$ rejects.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774544028223-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is recognizable and $A \leq_m \overline{A}$. What else can be said about $A$?
+Back: $A$ is decidable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774544990447-->
+END%%
+
+%%ANKI
+Basic
+If $A$ is recognizable and $A \leq_m \overline{A}$, *why* must $A$ be decidable?
+Back: Because $\overline{A} \leq_m A$ and thus $\overline{A}$ is also recognizable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774544990452-->
+END%%
+
+%%ANKI
+Basic
+Suppose $A$ is undecidable and $A \leq_m \overline{A}$. What else can be said about $A$?
+Back: $A$ is neither recognizable nor co-recognizable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774544990456-->
+END%%
+
+%%ANKI
+Basic
+If $A$ is undecidable and $A \leq_m \overline{A}$, *why* must $A$ be unrecognizable?
+Back: Because otherwise $A$ and $\overline{A}$ is recognizable, implying decidability.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774544990460-->
+END%%
+
 ### Polynomial Time
 
 Language $A$ is **polynomial time mapping reducible** to language $B$ if a polynomial time computable function $f \colon \Sigma^* \rightarrow \Gamma^*$ exists, where for every $w$, $$w \in A \Leftrightarrow f(w) \in B.$$
@@ -642,6 +694,492 @@ What does notation $\leq$ suggest in "$A \leq_m^P B$"?
 Back: Polynomial time mapping reducibility defines an ordering.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1766634081173-->
+END%%
+
+## Reference Table
+
+The following is a list of languages that are useful for constructing [[reducibility|reductions]] to and from.
+
+| Language          | Decidable | Recognizable | Co-Recognizable |
+| ----------------- | --------- | ------------ | --------------- |
+| $A_{\text{DFA}}$  | Yes       | Yes          | Yes             |
+| $A_{\text{NFA}}$  | Yes       | Yes          | Yes             |
+| $A_{\text{REX}}$  | Yes       | Yes          | Yes             |
+| $E_{\text{DFA}}$  | Yes       | Yes          | Yes             |
+| $EQ_{\text{DFA}}$ | Yes       | Yes          | Yes             |
+| $A_{\text{CFG}}$  | Yes       | Yes          | Yes             |
+| $E_{\text{CFG}}$  | Yes       | Yes          | Yes             |
+| $EQ_{\text{CFG}}$ | No        | No           | Yes             |
+| $A_{\text{LBA}}$  | Yes       | Yes          | Yes             |
+| $E_{\text{LBA}}$  | No        | ?            | ?               |
+| $A_{\text{TM}}$   | No        | Yes          | No              |
+| $E_{\text{TM}}$   | No        | ?            | ?               |
+| $EQ_{\text{TM}}$  | No        | No           | No              |
+
+Additionally, any [[regular]] and [[computability/context-free/index|context-free]] language is decidable.
+
+%%ANKI
+Basic
+Is every regular language decidable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764817652020-->
+END%%
+
+%%ANKI
+Basic
+Is every context-free language decidable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764817652028-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a context-free language $L$ to be decidable?
+Back: There exists a TM that halts when testing input strings are a member of $L$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764817652031-->
+END%%
+
+%%ANKI
+Basic
+Which of CFLs or decidable languages are more general?
+Back: CFLs are a subset of decidable languages.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764817652034-->
+END%%
+
+%%ANKI
+Basic
+Which of regular languages or CFLs are more general?
+Back: Regular languages are a subset of CFLs.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764817652038-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for a regular language $L$ to be decidable?
+Back: There exists a TM that halts when testing input strings are a member of $L$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764817652023-->
+END%%
+
+%%ANKI
+Basic
+Is language $A_{\text{DFA}}$ decidable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764817652003-->
+END%%
+
+%%ANKI
+Basic
+How do you prove $A_{\text{DFA}}$ is recognizable?
+Back: Construct a TM that simulates $A_{\text{DFA}}$ directly.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774554357443-->
+END%%
+
+%%ANKI
+Basic
+Is language $A_{\text{DFA}}$ recognizable?
+Back: Yes (since it is decidable).
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774541732922-->
+END%%
+
+%%ANKI
+Basic
+Is language $\overline{A_{\text{DFA}}}$ recognizable?
+Back: Yes (since it is decidable).
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774541732924-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{\langle D, w \rangle \mid D \text{ is a DFA and } D \text{ accepts } w\}$$
+Back: $A_{\text{DFA}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764989724267-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $A_{\text{DFA}}$?
+Back: $A_{\text{DFA}} = \{\langle D, w \rangle \mid D \text{ is a DFA and } D \text{ accepts } w\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214006-->
+END%%
+
+%%ANKI
+Basic
+Is language $A_{\text{NFA}}$ decidable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764817652013-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{\langle N, w \rangle \mid N \text{ is an NFA and } N \text{ accepts } w\}$$
+Back: $A_{\text{NFA}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764989724270-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $A_{\text{NFA}}$?
+Back: $A_{\text{NFA}} = \{\langle N, w \rangle \mid N \text{ is an NFA and } N \text{ accepts } w\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214016-->
+END%%
+
+%%ANKI
+Basic
+Is language $A_{\text{REX}}$ decidable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764817652017-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{\langle R, w \rangle \mid R \text{ is a regular expression and } R \text{ generates } w\}$$
+Back: $A_{\text{REX}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764989724273-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $A_{\text{REX}}$?
+Back: $A_{\text{REX}} = \{\langle R, w \rangle \mid R \text{ is a regular expression and } R \text{ generates } w\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214019-->
+END%%
+
+%%ANKI
+Basic
+Is language $E_{\text{DFA}}$ decidable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214027-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{ D \mid D \text{ is a DFA and } L(D) = \varnothing \}$$
+Back: $E_{\text{DFA}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214030-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $E_{\text{DFA}}$?
+Back: $E_{\text{DFA}} = \{ D \mid D \text{ is a DFA and } L(D) = \varnothing \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402505-->
+END%%
+
+%%ANKI
+Basic
+Is language $EQ_{\text{DFA}}$ decidable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402519-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{\langle D_1, D_2 \rangle \mid D_1 \text{ and } D_2 \text{ are DFAs and } L(D_1) = L(D_2) \}$$
+Back: $EQ_{\text{DFA}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402522-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $EQ_{\text{DFA}}$?
+Back: $EQ_{\text{DFA}} = \{\langle D_1, D_2 \rangle \mid D_1 \text{ and } D_2 \text{ are DFAs and } L(D_1) = L(D_2) \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991470779-->
+END%%
+
+%%ANKI
+Basic
+Is language $A_{\text{CFG}}$ decidable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764817652025-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{\langle G, w \rangle \mid G \text{ is a CFG and } G \text{ generates } w\}$$
+Back: $A_{\text{CFG}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764989724276-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $A_{\text{CFG}}$?
+Back: $A_{\text{CFG}} = \{\langle G, w \rangle \mid G \text{ is a CFG and } G \text{ generates } w\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214022-->
+END%%
+
+%%ANKI
+Basic
+Is language $E_{\text{CFG}}$ decidable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214033-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{G \mid G \text{ is a CFG and } L(G) = \varnothing \}$$
+Back: $E_{\text{CFG}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214036-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $E_{\text{CFG}}$?
+Back: $E_{\text{CFG}} = \{G \mid G \text{ is a CFG and } L(G) = \varnothing \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402513-->
+END%%
+
+%%ANKI
+Basic
+Is language $EQ_{\text{CFG}}$ decidable?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402525-->
+END%%
+
+%%ANKI
+Basic
+Is language $EQ_{\text{CFG}}$ recognizable?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774554357445-->
+END%%
+
+%%ANKI
+Basic
+Is language $EQ_{\text{CFG}}$ co-recognizable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774554357446-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{ \langle G_1, G_2 \rangle \mid G_1 \text{ and } G_2 \text{ are CFGs and } L(G_1) = L(G_2) \}$$
+Back: $EQ_{\text{CFG}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402528-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $EQ_{\text{CFG}}$?
+Back: $EQ_{\text{CFG}} = \{ \langle G_1, G_2 \rangle \mid G_1 \text{ and } G_2 \text{ are CFGs and } L(G_1) = L(G_2) \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991470786-->
+END%%
+
+%%ANKI
+Basic
+Is language $A_{\text{LBA}}$ decidable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765592499854-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{\langle M, w \rangle \mid M \text{ is an LBA and } M \text{ accepts } w \}$$
+Back: $A_{\text{LBA}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765592499863-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $A_{\text{LBA}}$?
+Back: $A_{\text{LBA}} = \{\langle M, w \rangle \mid M \text{ is an LBA and } M \text{ accepts } w\}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765592499866-->
+END%%
+
+%%ANKI
+Basic
+Is language $E_{\text{LBA}}$ decidable?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765717723653-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{M \mid M \text{ is an LBA and } L(M) = \varnothing \}$$
+Back: $E_{\text{LBA}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765717723664-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $E_{\text{LBA}}$?
+Back: $E_{\text{LBA}} = \{M \mid M \text{ is an LBA and } L(M) = \varnothing \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1765717723668-->
+END%%
+
+%%ANKI
+Basic
+Is language $A_{\text{TM}}$ decidable?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068692-->
+END%%
+
+%%ANKI
+Basic
+Is language $A_{\text{TM}}$ recognizable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774544028226-->
+END%%
+
+%%ANKI
+Basic
+Is language $\overline{A_{\text{TM}}}$ recognizable?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774544028228-->
+END%%
+
+%%ANKI
+Basic
+How do we show $A_{\text{TM}}$ is not co-recognizable?
+Back: By noting it is not decidable but is recognizable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774544028229-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ accepts } w \}$$
+Back: $A_{\text{TM}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764989724279-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $A_{\text{TM}}$?
+Back: $A_{\text{TM}} = \{\langle M, w \rangle \mid M \text{ is a TM and } M \text{ accepts } w \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214024-->
+END%%
+
+%%ANKI
+Basic
+In proving the undecidability of $A_{\text{TM}}$, what contradiction is formed?
+Back: Constructing a TM that accepts its own description iff it rejects its own description.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068707-->
+END%%
+
+%%ANKI
+Basic
+What proof strategy is used to show undecidability of $A_{\mathop{TM}}$?
+Back: Diagonalization.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764938068711-->
+END%%
+
+%%ANKI
+Basic
+Is language $E_{\text{TM}}$ decidable?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214039-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{M \mid M \text{ is a TM and } L(M) = \varnothing \}$$
+Back: $E_{\text{TM}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991214042-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $E_{\text{TM}}$?
+Back: $E_{\text{TM}} = \{M \mid M \text{ is a TM and } L(M) = \varnothing \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402516-->
+END%%
+
+%%ANKI
+Basic
+Is language $EQ_{\text{TM}}$ decidable?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402531-->
+END%%
+
+%%ANKI
+Basic
+Is $EQ_{\text{TM}}$ recognizable?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774544098504-->
+END%%
+
+%%ANKI
+Basic
+Is $\overline{EQ_{\text{TM}}}$ recognizable?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774544098509-->
+END%%
+
+%%ANKI
+Basic
+What name does Sipser give the following language? $$\{ \langle M_1, M_2 \rangle \mid M_1 \text{ and } M_2 \text{ are TMs and } L(M_1) = L(M_2) \}$$
+Back: $EQ_{\text{TM}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991402533-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $EQ_{\text{TM}}$?
+Back: $EQ_{\text{TM}} = \{ \langle M_1, M_2 \rangle \mid M_1 \text{ and } M_2 \text{ are TMs and } L(M_1) = L(M_2) \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1764991470791-->
+END%%
+
+%%ANKI
+Basic
+Which language does Sipser first introduce as neither recognizable nor co-recognizable?
+Back: $EQ_{\text{TM}}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1774544028230-->
 END%%
 
 ## Bibliography

@@ -1261,7 +1261,7 @@ END%%
 
 ### Arithmetic
 
-Let $(a_n)_{n \geq 0}$ be an [[sequences#Arithmetic|arithmetic sequence]]. Then the partial sums are given by $$\large \sum_{k=0}^n a_k = \frac{(a_0 + a_n)(n + 1)}{2}.$$
+Let $(a_n)_{n \geq 0}$ be an [[sequences#Arithmetic|arithmetic sequence]]. Then the partial sums are given by $$\sum_{k=0}^n a_k = \frac{(a_0 + a_n)(n + 1)}{2}.$$
 
 Unless the common difference is $0$, such a series always diverges.
 
@@ -1357,9 +1357,9 @@ END%%
 
 ### Geometric
 
-Let $(a_n)_{n \geq 0}^r$ be a [[sequences#Geometric|geometric sequence]]. Then the partial sums are given by $$\large \sum_{k=0}^n a_k = \frac{a_0(1 - r^{n+1})}{1 - r}.$$
+Let $(a_n)_{n \geq 0}^r$ be a [[sequences#Geometric|geometric sequence]]. Then the partial sums are given by $$\sum_{k=0}^n a_k = \frac{a_0(1 - r^{n+1})}{1 - r}.$$
 
-A geometric series converges if and only if its common ratio $r$ satisfies $\lvert r \rvert < 1$. If $\lvert r \rvert < 1$, then $$\large \sum_{k=0}^\infty a_k = \frac{a_0}{1 - r}.$$
+A geometric series converges if and only if its common ratio $r$ satisfies $\lvert r \rvert < 1$. If $\lvert r \rvert < 1$, then $$\sum_{k=0}^\infty a_k = \frac{a_0}{1 - r}.$$
 
 %%ANKI
 Basic
@@ -1478,8 +1478,10 @@ END%%
 
 ### Power
 
-A **power series** is a series of form $$\sum_{n=0}^\infty a_n(x - c)^n.$$
-The numbers $a_0, a_1, a_2, \ldots$, which may be real or complex, are called **coefficients** of the power series. The number $c$ is called the **center** of the power series.
+A **power series** in $z - a$ is a complex-valued series of form $$\sum_{n=0}^\infty a_n(z - a)^n.$$
+The numbers $a_0, a_1, a_2, \ldots \in \mathbb{C}$ are called **coefficients** of the power series. The number $a \in \mathbb{C}$ is called the **center** of the power series.
+
+Every power series is associated with a **circle of convergence**. The series [[#Absolute Convergence|absolutely converges]] for every $z$ interior to this circle and diverges for every $z$ outside of it. Points on the boundary are indeterminate. The center of the circle is that of the power series. It's radius is called the **radius of convergence**.
 
 %%ANKI
 Basic
@@ -1519,6 +1521,70 @@ Consider the following power series. What name is given to $c$? $$\sum_{n=0}^\in
 Back: The center.
 Reference: _Wikipedia_. “Power series.” November 22, 2025. [https://en.wikipedia.org/w/index.php?title=Power_series](https://en.wikipedia.org/w/index.php?title=Power_series&oldid=1323477072).
 <!--ID: 1773439827624-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the circle associated with a power series?
+Back: The circle of convergence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774559672519-->
+END%%
+
+%%ANKI
+Basic
+What can be said about an interior point of a power series's circle of convergence?
+Back: The series absolutely converges for the given point.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774559672521-->
+END%%
+
+%%ANKI
+Basic
+What can be said about a point outside of a power series's circle of convergence?
+Back: The series diverges for the given point.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774559672522-->
+END%%
+
+%%ANKI
+Basic
+What can be said about a point on the boundary of a power series's circle of convergence?
+Back: N/A. The series may (absolutely) converge or diverge.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774559672523-->
+END%%
+
+%%ANKI
+Basic
+What does a power series's radius of convergence refer to?
+Back: The radius of the circle of convergence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774559672524-->
+END%%
+
+%%ANKI
+Basic
+Let $r$ be a power series's radius of convergence. What does it mean for $r = 0$?
+Back: The only point for which the power series converges is at the center.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774559672525-->
+END%%
+
+%%ANKI
+Basic
+Let $r$ be a power series's radius of convergence. What does it mean for $r = +\infty$?
+Back: The power series converges for every point in $\mathbb{C}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774559672526-->
+END%%
+
+%%ANKI
+Basic
+What values can a power series's radius of convergence take on?
+Back: Any $z \in \mathbb{C}$ or $+\infty$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774559672527-->
 END%%
 
 ### Harmonic

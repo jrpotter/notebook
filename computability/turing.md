@@ -19,9 +19,7 @@ A **Turing machine** is a $7$-tuple $\langle Q, \Sigma, \Gamma, \delta, q_0, q_a
 6. $q_a$ is the accept state, and
 7. $q_r$ is the reject state, where $q_r \neq q_a$.
 
-A language is **Turing-recognizable** (also known as **recursively enumerable** or **semidecidability**) if a Turing machine recognizes it. Otherwise it is **Turing-unrecognizable**.
-
-A language is **co-Turing-recognizable** if it is the complement of a Turing-recognizable language. An analogous definition holds for **co-Turing-unrecognizable**.
+A language is **Turing-recognizable** (also known as **recursively enumerable** or **semidecidability**) if a Turing machine recognizes it. Otherwise it is **Turing-unrecognizable**. A language is **co-Turing-recognizable** if it is the complement of a Turing-recognizable language. An analogous definition holds for **co-Turing-unrecognizable**.
 
 %%ANKI
 Basic
