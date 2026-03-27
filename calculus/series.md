@@ -13,6 +13,8 @@ Let $(a_n)_{n \geq 0}$ be a sequence. Then the sequence of **partial sums** of $
 
 A sequence of partial sums is called an **(infinite) series**. Such a series is often represented as $\sum_{k=0}^\infty a_k.$
 
+A **tail** of $\sum a_k$ refers to the same sum with a finite number of initial terms omitted.
+
 %%ANKI
 Basic
 Which of sequences or series is the more general concept?
@@ -68,6 +70,14 @@ Cloze
 {Limits} are to sequences as {sums} are to series.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773266490900-->
+END%%
+
+%%ANKI
+Basic
+What is a tail of a series?
+Back: The same summation with a finite number of initial terms omitted.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774569587757-->
 END%%
 
 ## Convergence
@@ -177,6 +187,22 @@ Basic
 Back: Doing so may change the partial sums the underlying limit is taken over.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773456779990-->
+END%%
+
+%%ANKI
+Basic
+Suppose series $\sum a_n$ converges to $L$. What can be said about a tail of $(a_n)$?
+Back: It also converges (though not necessarily to $L$).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774569587762-->
+END%%
+
+%%ANKI
+Basic
+Suppose series $\sum a_n$ has a tail that converges to $L$. What can be said about $sum a_n$?
+Back: It also converges (though not necessarily to $L$).
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774569587764-->
 END%%
 
 ### Linearity
@@ -311,6 +337,14 @@ What continuous analogue exists of the following implication?
 Back: If $\int_1^\infty f(x) \,dx$ converges, then $\lim_{x \rightarrow \infty} \int_x^{x + 1} f(x) \,dx = 0$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774303372298-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\sum a_k$ converges. What does the following evaluate to? $$\lim_{n \rightarrow \infty} \sum_{k=n}^\infty a_k$$
+Back: $0$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774569718673-->
 END%%
 
 ### Monotone Convergence
@@ -449,6 +483,14 @@ What convergence test does Apostol use to prove the following? $$\sum \, \lvert 
 Back: The direct comparison test.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773786634346-->
+END%%
+
+%%ANKI
+Basic
+Suppose $z_n \in \mathbb{C}$ for $n \geq 1$. Why does convergence of $\sum \, \lvert z_n \rvert$ imply convergence of $\sum z_n$?
+Back: Suppose $z_n = a_n + ib_n$ for $n \geq 1$. Then $$\sum a_n \leq \sum \, \lvert a_n \rvert \leq \sum \, \lvert z_n \rvert \quad\text{and}\quad \sum b_n \leq \sum \, \lvert b_n \rvert \leq \sum \, \lvert b_n \rvert.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774569587767-->
 END%%
 
 ### Direct Comparison Test
@@ -1257,6 +1299,22 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1774471874482-->
 END%%
 
+%%ANKI
+Basic
+What single "witness" is used by Weierstrass' M-test to ensure uniform convergence?
+Back: A convergent series of positive constants.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774569587770-->
+END%%
+
+%%ANKI
+Basic
+What part of a series does Weierstrass' M-test ensures get uniformly small?
+Back: The tail of the series.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774569587772-->
+END%%
+
 ## Examples
 
 ### Arithmetic
@@ -1585,6 +1643,22 @@ What values can a power series's radius of convergence take on?
 Back: Any $z \in \mathbb{C}$ or $+\infty$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774559672527-->
+END%%
+
+%%ANKI
+Basic
+Consider $\sum a_nz^n$. If the series converges for $z_1$ and diverges for $z_2$, what is the radius of convergence?
+Back: $$\sup \{ \lvert z \rvert \mid \sum a_nz^n \text{ converges} \}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774571057325-->
+END%%
+
+%%ANKI
+Basic
+How many points on the boundary of a power series's circle of convergence also converge?
+Back: Indeterminate. It could be none, some, or all of them.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774573411897-->
 END%%
 
 ### Harmonic

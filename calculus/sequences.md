@@ -16,6 +16,8 @@ A function $f$ whose domain is the set of [[natural_numbers|natural numbers]] is
 
 We often denote a sequence as $(a_n)_{n \geq 0}$ where $a_i = f(i)$ for all $i \in \mathbb{N}$. Other index patterns are denoted in the natural way.
 
+A **tail** of $(a_n)$ refers to the sequence with a finite number of initial terms omitted.
+
 %%ANKI
 Basic
 What is an infinite sequence?
@@ -174,6 +176,14 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1709302343255-->
 END%%
 
+%%ANKI
+Basic
+What is a tail of a sequence?
+Back: The same sequence with a finite number of initial terms omitted.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774569587775-->
+END%%
+
 ## Convergence
 
 A sequence $(a_n)_{n \geq 0}$ is said to have a **limit** $L$ if, for every $\epsilon > 0$, there exists an $N > 0$ such that $$\lvert a_n - L \rvert < \epsilon \quad\text{for all}\quad n \geq N.$$
@@ -266,6 +276,38 @@ Cloze
 A complex-valued sequence converges if and only if {the real part} and the {imaginary part} converge separately.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773388774077-->
+END%%
+
+%%ANKI
+Basic
+Suppose a complex-valued sequence converges. What other sequences must converge?
+Back: The sequence of real parts and the sequence of imaginary parts.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774619310853-->
+END%%
+
+%%ANKI
+Basic
+Suppose a complex-valued sequence diverges. What other sequences must diverge?
+Back: At least one of the sequence of real parts and the sequence of imaginary parts.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774619310867-->
+END%%
+
+%%ANKI
+Basic
+Suppose sequence $(a_n)$ converges to $L$. What can be said about a tail of $(a_n)$?
+Back: It also converges to $L$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774569587778-->
+END%%
+
+%%ANKI
+Basic
+Suppose sequence $(a_n)$ has a tail that converges to $L$. What can be said about $(a_n)$?
+Back: It also converges to $L$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774569587781-->
 END%%
 
 ### Algebraic Limit Theorem
