@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "abc0ff3b5ceaa1c6",
+        "id": "b12064889009fd4b",
         "type": "tabs",
         "children": [
           {
-            "id": "c7b52255133fa2b2",
+            "id": "14a7b90de63c8199",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "calculus/continuity.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "continuity"
+              "title": "New tab"
             }
           }
         ]
@@ -94,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "calculus/continuity.md",
+                "file": "_journal/2026-03-27.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for continuity"
+              "title": "Backlinks for 2026-03-27"
             }
           },
           {
@@ -142,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "calculus/continuity.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of continuity"
+              "title": "Outline"
             }
           }
         ],
@@ -170,12 +165,16 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "c7b52255133fa2b2",
+  "active": "14a7b90de63c8199",
   "lastOpenFiles": [
+    "calculus/derivatives.md",
     "calculus/limits.md",
+    "algebra/functions.md",
+    "calculus/sequences.md",
+    "_journal/2026-03-27.md",
+    "calculus/continuity.md",
     "data_structures/trees/binary_tree.md",
     "data_structures/trees/index.md",
-    "calculus/sequences.md",
     "algebra/absolute.md",
     "calculus/primitives.md",
     "algebra/arch_prop.md",
@@ -193,7 +192,6 @@
     "algebra/boolean.md",
     "algebra/complex.md",
     "algebra/exponentials.md",
-    "algebra/functions.md",
     "algebra/logarithms.md",
     "algebra/polynomials.md",
     "algebra/radices.md",
@@ -203,9 +201,6 @@
     "algebra/sums.md",
     "calculus/series.md",
     "_journal/2025/2025-07/2025-07-05.md",
-    "arithmetic/index.md",
-    "algebra/index.md",
-    "binary/floating-point.md",
     "calculus/images/uniform-convergence.png",
     "calculus/integrals",
     "geometry/conics/images/conic-parabola.png",

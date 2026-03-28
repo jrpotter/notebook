@@ -473,7 +473,7 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1749994457987-->
 END%%
 
-## Cofunction
+### Cofunction
 
 A function $f$ is **cofunction** of function $g$ if $f(A) = g(B)$ whenever $A$ and $B$ are complementary angles. For example, [[circular#Sine|sine]] and [[circular#Cosine|cosine]] are cofunctions.
 
@@ -1379,6 +1379,99 @@ When might strictly decreasing function $f \colon A \rightarrow B$ not be invert
 Back: When $f$ is not surjective.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1761270122037-->
+END%%
+
+## Finite Differences
+
+Let $f$ be a function. The **forward difference** and **backward difference** of $f$, denoted as $\Delta_h[f](x)$ and $\nabla_h[f](x)$ respectively, are defined as $$\begin{align*} \Delta_h[f](x) & = f(x + h) - f(x) \\[1ex] \nabla_h[f](x) & = f(x) - f(x- h) \end{align*}$$
+
+If $h$ is unspecified, it is usually assumed to take on value $1$.
+
+%%ANKI
+Basic
+Let $f$ be a function. How is $\Delta_h[f](x)$ defined?
+Back: As $\Delta_h[f](x) = f(x + h) - f(x)$.
+Reference: _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
+<!--ID: 1774666062739-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function. How is $\nabla_h[f](x)$ defined?
+Back: As $\nabla_h[f](x) = f(x) - f(x - h)$.
+Reference: _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
+<!--ID: 1774666062740-->
+END%%
+
+%%ANKI
+Cloze
+The {1:forward difference} is to {2:$\Delta$} whereas the {2:backward difference} is to {1:$\nabla$}.
+Reference: _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
+<!--ID: 1774666062741-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function. How is the forward difference operator on $f$ denoted?
+Back: As $\Delta_h[f]$.
+Reference: _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
+<!--ID: 1774666062742-->
+END%%
+
+%%ANKI
+Basic
+Let $f$ be a function. How is the backward difference operator on $f$ denoted?
+Back: As $\nabla_h[f]$.
+Reference: _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
+<!--ID: 1774666062743-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ be a sequence. How is $\Delta a_n$ interpreted?
+Back: As $a_{n + 1} - a_n$.
+Reference: _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
+<!--ID: 1774666062745-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ be a sequence. How is $\nabla a_n$ interpreted?
+Back: As $a_n - a_{n - 1}$.
+Reference: _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
+<!--ID: 1774666062747-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ be a sequence and $A_n = \sum_{k=1}^n a_n$. How is $\Delta A_n$ simplified?
+Back: $\Delta A_n = A_{n+1} - A_n = a_{n+1}$
+Reference: _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
+<!--ID: 1774666062748-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ be a sequence and $A_n = \sum_{k=1}^n a_n$. How is $\nabla A_n$ simplified?
+Back: $\Delta A_n = A_n - A_{n-1} = a_n$
+Reference: _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
+<!--ID: 1774666062749-->
+END%%
+
+%%ANKI
+Basic
+How is forward difference operator $\Delta[f]$ interpreted? 
+Back: As $\Delta_h[f]$ with $h = 1$.
+Reference: _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
+<!--ID: 1774666062746-->
+END%%
+
+%%ANKI
+Basic
+How is backward difference operator $\nabla[f]$ interpreted? 
+Back: As $\nabla_h[f]$ with $h = 1$.
+Reference: _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
+<!--ID: 1774666062750-->
 END%%
 
 ## Closures

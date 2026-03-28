@@ -23,6 +23,14 @@ END%%
 
 %%ANKI
 Basic
+Let real-valued $f$ be defined on $(a, b)$. How is its first derivative defined using the forward difference operator?
+Back: Provided the limit exists, as $$\lim_{h \rightarrow 0} \frac{\Delta_h[f](x)}{h}.$$
+Reference: _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
+<!--ID: 1774666062744-->
+END%%
+
+%%ANKI
+Basic
 Let real-valued $f$ be defined on $(a, b)$. How is the first derivative of $f$ at $x$ denoted?
 Back: As $f'(x)$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
@@ -1390,6 +1398,7 @@ END%%
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+* _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
 * _Wikipedia_. “Inverse function rule.” December 29, 2025. [https://en.wikipedia.org/w/index.php?title=Inverse_function_rule](https://en.wikipedia.org/w/index.php?title=Inverse_function_rule&oldid=1330048395).
 * _Wikipedia_. “Mean value theorem.” February 21, 2026. [https://en.wikipedia.org/w/index.php?title=Mean_value_theorem](https://en.wikipedia.org/w/index.php?title=Mean_value_theorem&oldid=1339523303).
 * _Wikipedia_. “Smoothness.” December 1, 2025. [https://en.wikipedia.org/w/index.php?title=Smoothness](https://en.wikipedia.org/w/index.php?title=Smoothness&oldid=1325182258).

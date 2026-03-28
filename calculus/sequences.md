@@ -184,6 +184,14 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1774569587775-->
 END%%
 
+%%ANKI
+Basic
+Which of sequences or functions are the more general concept?
+Back: Functions.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774666062736-->
+END%%
+
 ## Convergence
 
 A sequence $(a_n)_{n \geq 0}$ is said to have a **limit** $L$ if, for every $\epsilon > 0$, there exists an $N > 0$ such that $$\lvert a_n - L \rvert < \epsilon \quad\text{for all}\quad n \geq N.$$
@@ -1196,7 +1204,7 @@ The $n$th term of the **triangular numbers** $(T_n)_{n \geq 0}$ is the sum of wh
 Basic
 What is a polygonal number?
 Back: A number of pebbles that can be arranged into the shape of a regular filled polygon.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325851-->
 END%%
 
@@ -1204,7 +1212,7 @@ END%%
 Basic
 What is a figurate number?
 Back: Polygonal numbers and their generalizations to other dimensions.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325856-->
 END%%
 
@@ -1212,7 +1220,7 @@ END%%
 Basic
 What are considered the simplest polygonal numbers?
 Back: The triangular numbers.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325859-->
 END%%
 
@@ -1220,7 +1228,7 @@ END%%
 Basic
 How do polygonal numbers relate to figurate numbers?
 Back: Polygonal numbers are a subset of the figurate numbers.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325862-->
 END%%
 
@@ -1228,7 +1236,7 @@ END%%
 Basic
 What is a gnomon?
 Back: The "piece" added to a figurate number to transform it to the next larger one.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325865-->
 END%%
 
@@ -1236,7 +1244,7 @@ END%%
 Basic
 What shape do gnomons associated with triangular numbers take on?
 Back: Lines.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325874-->
 END%%
 
@@ -1245,7 +1253,7 @@ Basic
 How are gnomons of the triangular numbers visualized?
 Back:
 ![[triangular-gnomon.png]]
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325878-->
 END%%
 
@@ -1254,7 +1262,7 @@ Basic
 What general term refers to the highlighted portion of pebbles in the following?
 ![[triangular-gnomon.png]]
 Back: Gnomons.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325883-->
 END%%
 
@@ -1262,7 +1270,7 @@ END%%
 Basic
 The triangular numbers correspond to what kind of triangles?
 Back: Equilateral triangles.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325887-->
 END%%
 
@@ -1271,7 +1279,7 @@ Basic
 How do the triangular numbers correspond to *equilateral* triangles?
 Back:
 ![[triangular-gnomon.png]]
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1737233067030-->
 END%%
 
@@ -1279,7 +1287,7 @@ END%%
 Basic
 What is the first triangular *and* square number?
 Back: $36$
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325891-->
 END%%
 
@@ -1287,7 +1295,7 @@ END%%
 Basic
 What are the first five triangular numbers $(T_n)_{n \geq 0}$?
 Back: $0, 1, 3, 6, 10$
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325904-->
 END%%
 
@@ -1301,7 +1309,7 @@ Back:
  * * *
 * * * *
 ```
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325909-->
 END%%
 
@@ -1309,7 +1317,7 @@ END%%
 Basic
 How is the $n$th triangular number written as a summation?
 Back: $\sum_{k=1}^n k$
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325914-->
 END%%
 
@@ -1317,7 +1325,7 @@ END%%
 Basic
 What polygonal sequence is the summation analog of factorial?
 Back: The triangular numbers.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325918-->
 END%%
 
@@ -1325,7 +1333,7 @@ END%%
 Basic
 What notation does Knuth introduce to denote the $n$th triangular number?
 Back: $n?$
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325922-->
 END%%
 
@@ -1333,14 +1341,14 @@ END%%
 Basic
 What name does Knuth give the LHS of th3e following? $$n? = \sum_{k=1}^n k$$
 Back: The termial.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325927-->
 END%%
 
 %%ANKI
 Cloze
 The {1:term}ial is to {2:$n?$} as the {2:factor}ial is to {1:$n!$}.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325931-->
 END%%
 
@@ -1348,7 +1356,7 @@ END%%
 Basic
 What closed formula is traditionally used to compute the $n$th triangular number?
 Back: $\large{\frac{n(n + 1)}{2}}$
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325936-->
 END%%
 
@@ -1356,7 +1364,7 @@ END%%
 Basic
 What is the recurrence relation in the recursive definition of triangular numbers $(T_n)_{n \geq 0}$?
 Back: $T_n = T_{n-1} + n$
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709422558652-->
 END%%
 
@@ -1364,7 +1372,7 @@ END%%
 Basic
 What is the initial condition(s) in the recursive definition of triangular numbers $(T_n)_{n \geq 0}$?
 Back: $T_0 = 0$
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709422558656-->
 END%%
 
@@ -1386,7 +1394,7 @@ END%%
 Basic
 What combinatorial closed formula is used to compute the $n$th triangular number?
 Back: $\binom{n + 1}{2}$
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325949-->
 END%%
 
@@ -1394,7 +1402,7 @@ END%%
 Basic
 What is the combinatorial explanation as to why the $n$th triangular number is $\binom{n + 1}{2}$?
 Back: $\sum_{k=1}^n k$ is the number of ways distinct pairs can be made from $n + 1$ objects.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325956-->
 END%%
 
@@ -1403,7 +1411,7 @@ Basic
 Where in Pascal's triangle are the natural numbers embedded?
 Back: Along the second leftward diagonal:
 ![[pascals-triangle.png]]
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325963-->
 END%%
 
@@ -1412,7 +1420,7 @@ Basic
 Where in Pascal's triangle are the triangular numbers embedded?
 Back: Along the third leftward diagonal:
 ![[pascals-triangle.png]]
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325970-->
 END%%
 
@@ -1426,7 +1434,7 @@ for (int i = 1; i <= n; ++i) {
 }
 ```
 Back: The $n$th triangular number.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325976-->
 END%%
 
@@ -1440,7 +1448,7 @@ Back: $2 \cdot T_n$ is the number of units in an $n \times (n + 1)$ rectangle, e
 * * - - -
 * - - - -
 ```
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325981-->
 END%%
 
@@ -1460,7 +1468,7 @@ The $n$th term of the **square numbers** $(s_n)_{n \geq 0}$ is $n^2$. The first 
 Basic
 What shape do gnomons associated with square numbers take on?
 Back: L-shapes.
-Reference: “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
 <!--ID: 1709422558613-->
 END%%
 
@@ -1469,7 +1477,7 @@ Basic
 How are gnomons of the square numbers visualized?
 Back:
 ![[square-gnomon.png]]
-Reference: “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
 <!--ID: 1709422558619-->
 END%%
 
@@ -1478,7 +1486,7 @@ Basic
 What general term refers to the different colored segments in the following?
 ![[square-gnomon.png]]
 Back: Gnomons.
-Reference: “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
 <!--ID: 1709422558622-->
 END%%
 
@@ -1486,7 +1494,7 @@ END%%
 Basic
 What are the first five square numbers $(s_n)_{n \geq 0}$?
 Back: $0, 1, 4, 9, 16$
-Reference: “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
 <!--ID: 1709422558625-->
 END%%
 
@@ -1500,7 +1508,7 @@ Back:
 * * * *
 * * * *
 ```
-Reference: “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
 <!--ID: 1709422558628-->
 END%%
 
@@ -1508,7 +1516,7 @@ END%%
 Basic
 What closed formula is used to find the $n$th square number?
 Back: $n^2$
-Reference: “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
 <!--ID: 1709422558631-->
 END%%
 
@@ -1516,7 +1524,7 @@ END%%
 Basic
 What is the recurrence relation in the recursive definition of square numbers $(s_n)_{n \geq 0}$?
 Back: $s_n = s_{n-1} + (2n - 1)$
-Reference: “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
 <!--ID: 1709422558634-->
 END%%
 
@@ -1524,7 +1532,7 @@ END%%
 Basic
 What is the initial condition(s) in the recursive definition of square numbers $(s_n)_{n \geq 0}$?
 Back: $s_0 = 0$
-Reference: “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
 <!--ID: 1773176808845-->
 END%%
 
@@ -1532,7 +1540,7 @@ END%%
 Basic
 How is the $n$th square number $s_n$ represented with sigma notation?
 Back: $s_n = \sum_{k=1}^n (2k - 1)$
-Reference: “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
 <!--ID: 1709422558638-->
 END%%
 
@@ -1547,7 +1555,7 @@ END%%
 %%ANKI
 Cloze
 The sum of {1:natural numbers} is to {2:triangular numbers} whereas the sum of {2:odd natural numbers} is to {1:square numbers}.
-Reference: “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
 <!--ID: 1709422558641-->
 END%%
 
@@ -1561,7 +1569,7 @@ for (int i = 1; i <= n; ++i) {
 }
 ```
 Back: The $n$th square number.
-Reference: “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
 <!--ID: 1709422558645-->
 END%%
 
@@ -1569,7 +1577,7 @@ END%%
 Basic
 *Why* are square numbers a sum of odd numbers?
 Back: The gnomon of a square number is twice the width of the previous square, plus the corner.
-Reference: “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
 <!--ID: 1709422558648-->
 END%%
 
@@ -1577,6 +1585,7 @@ END%%
 
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 * Ronald L. Graham, Donald Ervin Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed (Reading, Mass: Addison-Wesley, 1994).
-* “Square Number,” in _Wikipedia_, May 10, 2023, [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1154182731).
-* “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+* _Wikipedia_. “Finite difference.” March 2, 2026. [https://en.wikipedia.org/w/index.php?title=Finite_difference](https://en.wikipedia.org/w/index.php?title=Finite_difference&oldid=1341286632).
+* _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
+* _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
