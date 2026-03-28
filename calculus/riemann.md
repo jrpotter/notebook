@@ -1652,7 +1652,7 @@ Let $c, d, \alpha, \beta \in \mathbb{R}$ and both $\int_{c+}^d f(x) \,dx$ and $\
 %%ANKI
 Basic
 What does the linearity property of improper integrals of the first kind state?
-Back: Let $c, \alpha, \beta \in \mathbb{R}$ and both $\int_c^\infty f(x) \,dx$ and $\int_c^\infty g(x) \,dx$ converge. Then $$\int_c^\infty (\alpha f(x) + \beta g(x)) \,dx = \alpha \int_c^\infty f(x) \,dx + \beta \int_c^\infty g(x) \,dx.$$
+Back: If both $\int_c^\infty f(x) \,dx$ and $\int_c^\infty g(x) \,dx$ converge, then normal linearity applies.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774296371886-->
 END%%
@@ -1708,7 +1708,7 @@ END%%
 %%ANKI
 Basic
 What does the linearity property of improper integrals of the second kind state?
-Back: Let $c, d, \alpha, \beta \in \mathbb{R}$ and both $\int_{c+}^d f(x) \,dx$ and $\int_{c+}^d g(x) \,dx$ converge. Then $$\int_{c+}^d (\alpha f(x) + \beta g(x)) \,dx = \alpha \int_{c+}^d f(x) \,dx + \beta \int_{c+}^d g(x) \,dx.$$
+Back: If both $\int_{c+}^d f(x) \,dx$ and $\int_{c+}^d g(x) \,dx$ converge, then normal linearity applies.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774297951334-->
 END%%

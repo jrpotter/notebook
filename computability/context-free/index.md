@@ -1941,14 +1941,6 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 END%%
 
 %%ANKI
-Basic
-What does the pumping lemma for CFLs presume existence of?
-Back: A context-free language.
-Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
-<!--ID: 1760644262615-->
-END%%
-
-%%ANKI
 Cloze
 Let $A$ be a {CFL}. Then there exists a {pumping constant} $p$ where if $s$ is {any string in $A$ of length at least $p$}, then $s$ may be written as {$s = uvxyz$}, satisfying the following conditions:
 1. {$uv^kxy^kz \in A$ for all integers $k \geq 0$},

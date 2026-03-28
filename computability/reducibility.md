@@ -487,7 +487,7 @@ END%%
 %%ANKI
 Basic
 If $A$ is undecidable and $A \leq_m \overline{A}$, *why* must $A$ be unrecognizable?
-Back: Because otherwise $A$ and $\overline{A}$ is recognizable, implying decidability.
+Back: Because otherwise $A$ and $\overline{A}$ are recognizable, implying decidability.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1774544990460-->
 END%%

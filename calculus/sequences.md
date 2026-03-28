@@ -1,7 +1,7 @@
 ---
 title: Sequences
 TARGET DECK: Obsidian::STEM
-FILE TAGS: calculus::sequences
+FILE TAGS: calculus::sequence
 tags:
   - calculus
   - sequence

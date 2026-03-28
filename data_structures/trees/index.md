@@ -1042,7 +1042,7 @@ Basic
 What recursive definition describes the number of nodes in each level of a perfect $k$-ary tree?
 Back: $a_n = k \cdot a_{n-1}$ with $a_0 = 1$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: calculus::sequences
+Tags: calculus::sequence
 <!--ID: 1713118128248-->
 END%%
 
@@ -1051,7 +1051,7 @@ Basic
 How many nodes are in a perfect $k$-ary tree of height $h$?
 Back: $$\frac{1 - k^{h+1}}{1 - k}$$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: calculus::sequences
+Tags: calculus::sequence
 <!--ID: 1713118128249-->
 END%%
 
@@ -1060,7 +1060,7 @@ Basic
 How many internal nodes are in a perfect $k$-ary tree of height $h$?
 Back: $$\frac{1 - k^h}{1 - k}$$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: calculus::sequences
+Tags: calculus::sequence
 <!--ID: 1714080353459-->
 END%%
 
@@ -1069,7 +1069,7 @@ Basic
 How many external nodes are in a perfect $k$-ary tree of height $h$?
 Back: $k^h$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: calculus::sequences
+Tags: calculus::sequence
 <!--ID: 1714080353455-->
 END%%
 
@@ -1078,7 +1078,7 @@ Basic
 How many nodes are on level $d$ of a perfect $k$-ary tree?
 Back: $k^d$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: calculus::sequences
+Tags: calculus::sequence
 <!--ID: 1714080353462-->
 END%%
 
@@ -1087,7 +1087,7 @@ Basic
 What kind of sequence describes the number of nodes in a perfect $k$-ary tree?
 Back: A geometric sequence.
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: calculus::sequences
+Tags: calculus::sequence
 <!--ID: 1713118128251-->
 END%%
 
@@ -1096,7 +1096,7 @@ Basic
 What is the common ratio of the geometric sequence used to count nodes of a perfect $k$-ary tree?
 Back: $k$
 Reference: Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: calculus::sequences
+Tags: calculus::sequence
 <!--ID: 1713118128253-->
 END%%
 

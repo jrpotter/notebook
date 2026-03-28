@@ -191,7 +191,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose series $\sum a_n$ converges to $L$. What can be said about a tail of $(a_n)$?
+Suppose series $\sum a_n$ converges to $L$. What can be said about a tail of $\sum a_n$?
 Back: It also converges (though not necessarily to $L$).
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774569587762-->
@@ -199,7 +199,7 @@ END%%
 
 %%ANKI
 Basic
-Suppose series $\sum a_n$ has a tail that converges to $L$. What can be said about $sum a_n$?
+Suppose series $\sum a_n$ has a tail that converges to $L$. What can be said about $\sum a_n$?
 Back: It also converges (though not necessarily to $L$).
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774569587764-->
@@ -488,7 +488,9 @@ END%%
 %%ANKI
 Basic
 Suppose $z_n \in \mathbb{C}$ for $n \geq 1$. Why does convergence of $\sum \, \lvert z_n \rvert$ imply convergence of $\sum z_n$?
-Back: Suppose $z_n = a_n + ib_n$ for $n \geq 1$. Then $$\sum a_n \leq \sum \, \lvert a_n \rvert \leq \sum \, \lvert z_n \rvert \quad\text{and}\quad \sum b_n \leq \sum \, \lvert b_n \rvert \leq \sum \, \lvert b_n \rvert.$$
+Back: Suppose $z_n = a_n + ib_n$ for $n \geq 1$. Then:
+1. $\sum a_n \leq \sum \, \lvert a_n \rvert \leq \sum \, \lvert z_n \rvert$
+2. $\sum b_n \leq \sum \, \lvert b_n \rvert \leq \sum \, \lvert b_n \rvert$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774569587767-->
 END%%
@@ -1592,7 +1594,7 @@ END%%
 %%ANKI
 Basic
 What can be said about an interior point of a power series's circle of convergence?
-Back: The series absolutely converges for the given point.
+Back: The series absolutely converges at the given point.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774559672521-->
 END%%
@@ -1600,7 +1602,7 @@ END%%
 %%ANKI
 Basic
 What can be said about a point outside of a power series's circle of convergence?
-Back: The series diverges for the given point.
+Back: The series diverges at the given point.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774559672522-->
 END%%

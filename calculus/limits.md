@@ -1,7 +1,7 @@
 ---
 title: Limits
 TARGET DECK: Obsidian::STEM
-FILE TAGS: calculus::limits
+FILE TAGS: calculus::limit
 tags:
   - calculus
   - limits

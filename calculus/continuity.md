@@ -1,7 +1,7 @@
 ---
 title: Continuity
 TARGET DECK: Obsidian::STEM
-FILE TAGS: calculus::continuous
+FILE TAGS: calculus::continuity
 tags:
   - calculus
   - continuity

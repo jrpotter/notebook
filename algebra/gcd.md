@@ -1,9 +1,9 @@
 ---
 title: Greatest Common Divisor
 TARGET DECK: Obsidian::STEM
-FILE TAGS: arithmetic
+FILE TAGS: algebra
 tags:
-  - arithmetic
+  - algebra
   - gcd
   - lcm
 ---

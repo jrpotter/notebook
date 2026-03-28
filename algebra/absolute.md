@@ -1,7 +1,7 @@
 ---
 title: Absolute Value
 TARGET DECK: Obsidian::STEM
-FILE TAGS: algebra::abs_val
+FILE TAGS: algebra::absolute
 tags:
   - algebra
 ---
