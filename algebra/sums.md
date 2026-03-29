@@ -123,6 +123,54 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1751751704320-->
 END%%
 
+## By Parts
+
+Let $(a_n)$ and $(b_n)$ be [[sequences]]. Then $$\begin{align*}
+\sum_{k=m}^n a_k \Delta b_k & = (a_{n+1}b_{n+1} - a_mb_m) - \sum_{k=m}^n b_{k+1} \Delta a_k \\
+\sum_{k=m}^n a_k \nabla b_k & = (a_n b_n - a_{m-1}b_{m-1}) - \sum_{k=m}^n b_{k-1} \nabla a_k,
+\end{align*}$$
+
+where $\Delta$ and $\nabla$ refer to [[algebra/functions#Finite Differences|difference operators]]. These formulas are the discrete analogue to [[primitives#By Parts|integration by parts]].
+
+%%ANKI
+Basic
+What is the continuous analogue to summation by parts?
+Back: Integration by parts.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774754013523-->
+END%%
+
+%%ANKI
+Cloze
+Summation by parts transfers the {difference} operator inside the {sum} from one {sequence} to the other.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774754013528-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ and $(b_n)$ be sequences. What does summation by parts (using the forward difference) usually expressed?
+Back: $$\sum_{k=m}^n a_k \Delta b_k = (a_{n+1}b_{n+1} - a_mb_m) - \sum_{k=m}^n b_{k+1} \Delta a_k$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774754013534-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ and $(b_n)$ be sequences. What does summation by parts (using the backward difference) usually expressed?
+Back: $$\sum_{k=m}^n a_k \nabla b_k = (a_nb_n - a_{m-1}b_{m-1}) - \sum_{k=m}^n b_{k-1} \nabla a_k$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774754013539-->
+END%%
+
+%%ANKI
+Basic
+Who is credited with the summation by parts formula?
+Back: Abel.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774754013543-->
+END%%
+
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).

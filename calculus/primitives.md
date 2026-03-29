@@ -490,6 +490,21 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1768594332783-->
 END%%
 
+%%ANKI
+Basic
+What is the discrete analogue to integration by parts?
+Back: Summation by parts.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774754013509-->
+END%%
+
+%%ANKI
+Cloze
+Integration by parts transfers the {differential} operator inside the {integral} from one {function} to the other.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774754013515-->
+END%%
+
 ### By Partial Fractions
 
 Every proper rational function can be expressed as a finite sum of fractions of the forms $$\frac{A}{(x + a)^m} \quad\text{and}\quad \frac{Bx + C}{(x^2 + bx + c)^n}$$

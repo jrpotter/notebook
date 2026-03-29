@@ -613,6 +613,13 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1754141872885-->
 END%%
 
+%%ANKI
+Basic
+Let $z \in \mathbb{C}$. How is the following rewritten to minimize the number of terms in the modulus? $$\left \lvert \frac{z + 3}{2} \right \rvert$$
+Back: $$\frac{\lvert z + 3 \rvert}{2}$$
+Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+END%%
+
 ## Bibliography
 
 * “Complex Plane,” in _Wikipedia_, December 14, 2024, [https://en.wikipedia.org/w/index.php?title=Complex_plane](https://en.wikipedia.org/w/index.php?title=Complex_plane&oldid=1263031649).

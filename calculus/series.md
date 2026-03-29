@@ -1123,6 +1123,140 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773781770219-->
 END%%
 
+### Dirichlet's Test
+
+Let $\sum a_n$ be a series of complex terms whose partial sums form a bounded sequence. Let $(b_n)$ be a decreasing sequence which converges to $0$. Then the series $\sum a_nb_n$ converges.
+
+%%ANKI
+Basic
+Dirichlet's test is used to test convergence of series with what form?
+Back: $\sum a_n b_n$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774792602144-->
+END%%
+
+%%ANKI
+Basic
+Apply Dirichlet's test to $\sum a_n$ and $(b_n)$. What is $\sum a_n$ presumed to satisfy?
+Back: It is a series of complex terms whose partial sums form a bounded sequence.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774792602153-->
+END%%
+
+%%ANKI
+Basic
+Apply Dirichlet's test to $\sum a_n$ and $(b_n)$. What is $(b_n)$ presumed to satisfy?
+Back: It is a decreasing sequence which converges to $0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774792602155-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following convergence test?
+
+> Let $\sum a_n$ be a series of complex terms whose partial sums form a bounded sequence. Let $(b_n)$ be a decreasing sequence which converges to $0$. Then the series $\sum a_nb_n$ converges.
+
+Back: Dirichlet's test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774792602158-->
+END%%
+
+%%ANKI
+Basic
+Can a series diverge but have bounded partial sums?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774792602160-->
+END%%
+
+%%ANKI
+Basic
+What is the quintessential example of a real series that diverges but has bounded partial sums?
+Back: $\sum (-1)^n$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774792602164-->
+END%%
+
+%%ANKI
+Basic
+What is the quintessential example of a complex series that diverges but has bounded partial sums?
+Back: $\sum z^n$ where $\lvert z \rvert = 1$ but $z \neq 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774792602166-->
+END%%
+
+%%ANKI
+Basic
+Consider $\sum z^n$ where $z \in \mathbb{C}$ satisfies $\lvert z \rvert = 1$ and $z \neq 1$. How do we know the series diverges?
+Back: $z^n \not\rightarrow 0$ as $n \rightarrow \infty$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774792602169-->
+END%%
+
+%%ANKI
+Basic
+What summation identity is used to prove Dirichlet's test?
+Back: Summation by parts.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774794245316-->
+END%%
+
+### Abel's Test
+
+Let $\sum a_n$ be a convergent series of complex terms and let $(b_n)$ be a monotonic convergent sequence of terms. Then the series $\sum a_n b_n$ converges.
+
+%%ANKI
+Basic
+Abel's test is used to test convergence of series with what form?
+Back: $\sum a_n b_n$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774792602171-->
+END%%
+
+%%ANKI
+Basic
+Apply Abel's test to $\sum a_n$ and $(b_n)$. What is $\sum a_n$ presumed to satisfy?
+Back: It is a convergent series of complex terms.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774792602174-->
+END%%
+
+%%ANKI
+Basic
+Apply Abel's test to $\sum a_n$ and $(b_n)$. What is $(b_n)$ presumed to satisfy?
+Back: It is a monotonic convergent sequence of terms.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774792602176-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following convergence test?
+
+> Let $\sum a_n$ be a convergent series of complex terms and let $(b_n)$ be a monotonic convergent sequence of terms. Then the series $\sum a_n b_n$ converges.
+
+Back: Abel's test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774792602179-->
+END%%
+
+%%ANKI
+Basic
+What two tests does Apostol introduce to determine convergence of complex series?
+Back: Dirichlet's test and Abel's test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774794245326-->
+END%%
+
+%%ANKI
+Basic
+What summation identity is used to prove Abel's test?
+Back: Summation by parts.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774794245330-->
+END%%
+
 ## Sum Functions
 
 Let $(f_n)$ be a sequence of functions for which each $f_n(x)$ is a partial sum of another function, say $$f_n(x) = \sum_{k=1}^n u_k(x).$$
