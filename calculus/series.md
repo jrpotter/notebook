@@ -1202,6 +1202,53 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1774794245316-->
 END%%
 
+%%ANKI
+Basic
+Let $z \in \mathbb{C}$ such that $\lvert z \rvert = 1$. For what values of $z$ are the partial sums of the following bounded? $$\sum_{n=1}^\infty z^n$$
+Back: Just $z = 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774807009004-->
+END%%
+
+%%ANKI
+Basic
+Let $z \in \mathbb{C}$ such that $\lvert z \rvert = 1$. For what values $z$ does the following converge? $$\sum_{n=1}^\infty z^n$$
+Back: N/A. This series does not converge if $\lvert z \rvert = 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774807009006-->
+END%%
+
+%%ANKI
+Basic
+Let $z \in \mathbb{C}$ such that $\lvert z \rvert = 1$. For what values of $z$ are the partial sums of the following bounded? $$\sum_{n=1}^\infty z^n$$
+Back: All $z \neq 1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+END%%
+
+%%ANKI
+Basic
+Let $z \in \mathbb{C}$ such that $\lvert z \rvert = 1$. How is the following series rewritten as a series of exponentials? $$\sum_{n=0}^\infty z^n$$
+Back: Given $\theta = \text{Arg}(z)$, as $$\sum_{n=0}^\infty e^{in\theta}.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774807752963-->
+END%%
+
+%%ANKI
+Basic
+The alternating series test is a specialization of what other convergence test?
+Back: Dirichlet's test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774820896835-->
+END%%
+
+%%ANKI
+Basic
+How is the following more obviously rewritten as a geometric series? $$\sum_{n=0}^\infty (-1)^n$$
+Back: $$\sum_{n=0}^\infty e^{i\pi n}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774820896837-->
+END%%
+
 ### Abel's Test
 
 Let $\sum a_n$ be a convergent series of complex terms and let $(b_n)$ be a monotonic convergent sequence of terms. Then the series $\sum a_n b_n$ converges.

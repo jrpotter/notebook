@@ -618,6 +618,7 @@ Basic
 Let $z \in \mathbb{C}$. How is the following rewritten to minimize the number of terms in the modulus? $$\left \lvert \frac{z + 3}{2} \right \rvert$$
 Back: $$\frac{\lvert z + 3 \rvert}{2}$$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
+<!--ID: 1774807009011-->
 END%%
 
 ## Bibliography

@@ -409,6 +409,22 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1755126865886-->
 END%%
 
+%%ANKI
+Basic
+What does the following expression evaluate to? $$\lvert e^{i\theta} \rvert$$
+Back: $1$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774807009008-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \mathbb{N}$. What does the following expression evaluate to? $$\lvert e^{i(n + 1)\theta} \rvert$$
+Back: $1$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774807009009-->
+END%%
+
 ### Multiplication
 
 Let $w = r(\cos{\alpha} + i\sin{\alpha})$ and $z = s(\cos{\beta + i\sin{\beta}})$. Then $$wz = rs[\cos{(\alpha + \beta)} + i\sin{(\alpha + \beta)}].$$
