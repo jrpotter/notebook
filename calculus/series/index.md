@@ -273,80 +273,6 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773390190085-->
 END%%
 
-### Limit To Zero
-
-If the series $\sum a_n$ converges, then its $n$th term tends to $0$. That is, $$\lim_{n \rightarrow +\infty} a_n = 0.$$
-
-%%ANKI
-Basic
-Is the following a necessary and/or sufficient condition for series $\sum a_n$ convergence? $$\lim_{n \rightarrow +\infty} a_n = 0$$
-Back: A necessary condition.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773495009185-->
-END%%
-
-%%ANKI
-Basic
-Suppose $\sum a_n$ converges. Must $a_n \rightarrow 0$ as $n \rightarrow +\infty$?
-Back: Yes.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773495009194-->
-END%%
-
-%%ANKI
-Basic
-Suppose $a_n \rightarrow 0$ as $n \rightarrow +\infty$. Must $\sum a_n$ converge?
-Back: No.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773495009197-->
-END%%
-
-%%ANKI
-Basic
-Suppose $\sum a_n$ converges. *Why* must $a_n \rightarrow 0$ as $n \rightarrow +\infty$?
-Back: Because the partial sums $(s_n)$ tend toward a limit, i.e. $a_n = s_n - s_{n - 1}$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773495009200-->
-END%%
-
-%%ANKI
-Basic
-Suppose $\sum a_n$ converges. Does $\lim_{n \rightarrow \infty} a_n = 0$?
-Back: Yes.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774300927840-->
-END%%
-
-%%ANKI
-Basic
-What quintessential counterexample is used to show the following statement is false?
-
-> If $\sum a_n$ converges, then $\lim_{n \rightarrow \infty} a_n = 0$.
-
-Back: N/A. This statement is true.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774300927849-->
-END%%
-
-%%ANKI
-Basic
-What continuous analogue exists of the following implication?
-
-> If $\sum a_n$ converges, then $\lim_{n \rightarrow \infty} a_n = 0$.
-
-Back: If $\int_1^\infty f(x) \,dx$ converges, then $\lim_{x \rightarrow \infty} \int_x^{x + 1} f(x) \,dx = 0$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774303372298-->
-END%%
-
-%%ANKI
-Basic
-Suppose $\sum a_k$ converges. What does the following evaluate to? $$\lim_{n \rightarrow \infty} \sum_{k=n}^\infty a_k$$
-Back: $0$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774569718673-->
-END%%
-
 ### Monotone Convergence
 
 Let $n_0 \in \mathbb{N}$ and assume that $a_n \geq 0$ for each $n \geq n_0$. Then the series $\sum a_n$ converges if and only if the sequence of its partial sums is bounded above.
@@ -493,6 +419,80 @@ Back: Suppose $z_n = a_n + ib_n$ for $n \geq 1$. Then:
 2. $\sum b_n \leq \sum \, \lvert b_n \rvert \leq \sum \, \lvert b_n \rvert$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774569587767-->
+END%%
+
+### Term Test
+
+If the series $\sum a_n$ converges, then its $n$th term tends to $0$. That is, $$\lim_{n \rightarrow +\infty} a_n = 0.$$
+
+%%ANKI
+Basic
+Is the following a necessary and/or sufficient condition for series $\sum a_n$ convergence? $$\lim_{n \rightarrow +\infty} a_n = 0$$
+Back: A necessary condition.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773495009185-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\sum a_n$ converges. Must $a_n \rightarrow 0$ as $n \rightarrow +\infty$?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773495009194-->
+END%%
+
+%%ANKI
+Basic
+Suppose $a_n \rightarrow 0$ as $n \rightarrow +\infty$. Must $\sum a_n$ converge?
+Back: No.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773495009197-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\sum a_n$ converges. *Why* must $a_n \rightarrow 0$ as $n \rightarrow +\infty$?
+Back: Because the partial sums $(s_n)$ tend toward a limit, i.e. $a_n = s_n - s_{n - 1}$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773495009200-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\sum a_n$ converges. Does $\lim_{n \rightarrow \infty} a_n = 0$?
+Back: Yes.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774300927840-->
+END%%
+
+%%ANKI
+Basic
+What quintessential counterexample is used to show the following statement is false?
+
+> If $\sum a_n$ converges, then $\lim_{n \rightarrow \infty} a_n = 0$.
+
+Back: N/A. This statement is true.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774300927849-->
+END%%
+
+%%ANKI
+Basic
+What continuous analogue exists of the following implication?
+
+> If $\sum a_n$ converges, then $\lim_{n \rightarrow \infty} a_n = 0$.
+
+Back: If $\int_1^\infty f(x) \,dx$ converges, then $\lim_{x \rightarrow \infty} \int_x^{x + 1} f(x) \,dx = 0$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774303372298-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\sum a_k$ converges. What does the following evaluate to? $$\lim_{n \rightarrow \infty} \sum_{k=n}^\infty a_k$$
+Back: $0$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774569718673-->
 END%%
 
 ### Direct Comparison Test
@@ -1030,99 +1030,6 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773733148096-->
 END%%
 
-### Alternating Series Test
-
-Let $\sum_{n=1}^\infty (-1)^{n-1} a_n$ be an alternating series. The **alternating series test** states that such a series converges if
-
-1. $\lvert a_n \rvert$ decreases monotonically, and
-2. $a_n \rightarrow 0$ as $n \rightarrow +\infty$.
-
-Let $S$ denote the sum of such a series and $s_n$ denote the $n$th partial sum. Then $$0 \leq \lvert s_n - S \rvert \leq \lvert a_{n+1} \rvert.$$
-
-%%ANKI
-Basic
-Who originally discovered the alternating series test?
-Back: Gottfried Leibniz.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773781770186-->
-END%%
-
-%%ANKI
-Basic
-Let $\sum_{n=1}^\infty (-1)^{n-1} a_n$ be an alternating series. Leibniz's rule states such a series converge if what two conditions hold?
-Back:
-1. $\lvert a_n \rvert$ decreases monotonically, and
-2. $a_n \rightarrow 0$ as $n \rightarrow +\infty$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773781770193-->
-END%%
-
-%%ANKI
-Basic
-Using summation notation, the alternating series test applies to series of what form?
-Back: $\sum_{n=1}^\infty (-1)^{n-1} a_n$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773781770197-->
-END%%
-
-%%ANKI
-Basic
-Apply the alternating series test. Does the following converge or diverge? $$\sum_{n=1}^\infty (-1)^{n - 1} \frac{1}{n}$$
-Back: It converges.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773781770200-->
-END%%
-
-%%ANKI
-Basic
-Assume we can apply the alternating series test. In plain English, what is the upper bound of $\lvert L - s_n \rvert$? $$\sum_{n=1}^\infty (-1)^{n-1} a_n = L$$
-Back: The next omitted term, i.e. $\lvert a_{n+1} \rvert$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773781770203-->
-END%%
-
-%%ANKI
-Basic
-Assume we can apply the alternating series test. What is the error introduced by $s_n$? $$\sum_{n=1}^\infty (-1)^{n-1} a_n = L$$
-Back: $\lvert L - s_n \rvert$
-Reference: _Wikipedia_. “Alternating series test.” October 27, 2025. [https://en.wikipedia.org/w/index.php?title=Alternating_series_test](https://en.wikipedia.org/w/index.php?title=Alternating_series_test&oldid=1318987768).
-<!--ID: 1773781770206-->
-END%%
-
-%%ANKI
-Basic
-Assume we can apply the alternating series test. What are the lower and upper bounds of $\lvert s_n - L \rvert$? $$\sum_{n=1}^\infty (-1)^{n-1} a_n = L$$
-Back: $0 \leq \lvert s_n - L \rvert \leq \lvert a_{n+1} \rvert$
-Reference: _Wikipedia_. “Alternating series test.” October 27, 2025. [https://en.wikipedia.org/w/index.php?title=Alternating_series_test](https://en.wikipedia.org/w/index.php?title=Alternating_series_test&oldid=1318987768).
-<!--ID: 1773781770209-->
-END%%
-
-%%ANKI
-Basic
-Assume we can apply the alternating series test. We prove this series converges by showing which other two limits are equal? $$\sum_{n=1}^\infty (-1)^{n-1} a_n$$
-Back: That of:
-1. The partial sums consisting of an even number of terms.
-2. The partial sums consisting of an odd number of terms.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773781770212-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 1}$ be monotonically decreasing with limit $0$. What is the upper bound of the following? $$\sum_{n=1}^{\infty} (-1)^{n-1} a_n$$
-Back: $a_1$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773781770216-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 1}$ be monotonically decreasing with limit $0$. What is the lower bound of the following? $$\sum_{n=1}^{\infty} (-1)^{n-1} a_n$$
-Back: $a_1 + a_2$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773781770219-->
-END%%
-
 ### Dirichlet's Test
 
 Let $\sum a_n$ be a series of complex terms whose partial sums form a bounded sequence. Let $(b_n)$ be a decreasing sequence which converges to $0$. Then the series $\sum a_nb_n$ converges.
@@ -1233,20 +1140,107 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1774807752963-->
 END%%
 
+#### Alternating Series Test
+
+Let $\sum_{n=1}^\infty (-1)^{n-1} a_n$ be an alternating series. The **alternating series test** states that such a series converges if
+
+1. $\lvert a_n \rvert$ decreases monotonically, and
+2. $a_n \rightarrow 0$ as $n \rightarrow +\infty$.
+
+Let $S$ denote the sum of such a series and $s_n$ denote the $n$th partial sum. Then $$0 \leq \lvert s_n - S \rvert \leq \lvert a_{n+1} \rvert.$$
+
+%%ANKI
+Basic
+Who originally discovered the alternating series test?
+Back: Gottfried Leibniz.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770186-->
+END%%
+
+%%ANKI
+Basic
+Let $\sum_{n=1}^\infty (-1)^{n-1} a_n$ be an alternating series. Leibniz's rule states such a series converge if what two conditions hold?
+Back:
+1. $\lvert a_n \rvert$ decreases monotonically, and
+2. $a_n \rightarrow 0$ as $n \rightarrow +\infty$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770193-->
+END%%
+
+%%ANKI
+Basic
+Using summation notation, the alternating series test applies to series of what form?
+Back: $\sum_{n=1}^\infty (-1)^{n-1} a_n$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770197-->
+END%%
+
+%%ANKI
+Basic
+Apply the alternating series test. Does the following converge or diverge? $$\sum_{n=1}^\infty (-1)^{n - 1} \frac{1}{n}$$
+Back: It converges.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770200-->
+END%%
+
+%%ANKI
+Basic
+Assume we can apply the alternating series test. In plain English, what is the upper bound of $\lvert L - s_n \rvert$? $$\sum_{n=1}^\infty (-1)^{n-1} a_n = L$$
+Back: The next omitted term, i.e. $\lvert a_{n+1} \rvert$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770203-->
+END%%
+
+%%ANKI
+Basic
+Assume we can apply the alternating series test. What is the error introduced by $s_n$? $$\sum_{n=1}^\infty (-1)^{n-1} a_n = L$$
+Back: $\lvert L - s_n \rvert$
+Reference: _Wikipedia_. “Alternating series test.” October 27, 2025. [https://en.wikipedia.org/w/index.php?title=Alternating_series_test](https://en.wikipedia.org/w/index.php?title=Alternating_series_test&oldid=1318987768).
+<!--ID: 1773781770206-->
+END%%
+
+%%ANKI
+Basic
+Assume we can apply the alternating series test. What are the lower and upper bounds of $\lvert s_n - L \rvert$? $$\sum_{n=1}^\infty (-1)^{n-1} a_n = L$$
+Back: $0 \leq \lvert s_n - L \rvert \leq \lvert a_{n+1} \rvert$
+Reference: _Wikipedia_. “Alternating series test.” October 27, 2025. [https://en.wikipedia.org/w/index.php?title=Alternating_series_test](https://en.wikipedia.org/w/index.php?title=Alternating_series_test&oldid=1318987768).
+<!--ID: 1773781770209-->
+END%%
+
+%%ANKI
+Basic
+Assume we can apply the alternating series test. We prove this series converges by showing which other two limits are equal? $$\sum_{n=1}^\infty (-1)^{n-1} a_n$$
+Back: That of:
+1. The partial sums consisting of an even number of terms.
+2. The partial sums consisting of an odd number of terms.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770212-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)_{n \geq 1}$ be monotonically decreasing with limit $0$. What is the upper bound of the following? $$\sum_{n=1}^{\infty} (-1)^{n-1} a_n$$
+Back: $a_1$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770216-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)_{n \geq 1}$ be monotonically decreasing with limit $0$. What is the lower bound of the following? $$\sum_{n=1}^{\infty} (-1)^{n-1} a_n$$
+Back: $a_1 + a_2$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773781770219-->
+END%%
+
+
+
 %%ANKI
 Basic
 The alternating series test is a specialization of what other convergence test?
 Back: Dirichlet's test.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774820896835-->
-END%%
-
-%%ANKI
-Basic
-How is the following more obviously rewritten as a geometric series? $$\sum_{n=0}^\infty (-1)^n$$
-Back: $$\sum_{n=0}^\infty e^{i\pi n}$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774820896837-->
 END%%
 
 ### Abel's Test
@@ -1498,7 +1492,51 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1774569587772-->
 END%%
 
-## Examples
+## Special
+
+### Alternating
+
+An **alternating series** is one in which each consecutive term alternates in sign. That is, given $a_n > 0$ for all $n \geq 1$, series of form $$\sum_{n=1}^\infty (-1)^{n-1} a_n = a_1 - a_2 + a_3 - a_4 + \cdots + (-1)^{n-1} a_n + \cdots$$
+
+%%ANKI
+Basic
+In plain English, what is an alternating series?
+Back: A series in which each consecutive term alternates in sign.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773733571110-->
+END%%
+
+%%ANKI
+Basic
+Using summation notation, what is an alternating series?
+Back: Given $a_n > 0$ for all $n \geq 1$, a series of form $$\sum_{n=1}^\infty (-1)^{n-1} a_n.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773733571121-->
+END%%
+
+%%ANKI
+Basic
+In alternating series $\sum\, (-1)^{n-1} a_n$, what conditions are the terms $a_n$ expected to satisfy?
+Back: $a_n > 0$ for each $n$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1773733571125-->
+END%%
+
+%%ANKI
+Basic
+How is the following more obviously rewritten as a geometric series? $$\sum_{n=0}^\infty (-1)^n$$
+Back: $$\sum_{n=0}^\infty e^{i\pi n}$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774820896837-->
+END%%
+
+%%ANKI
+Basic
+Viewed from a complex angle, an alternating series is a specialization of what kind of series?
+Back: A geometric series.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774886498581-->
+END%%
 
 ### Arithmetic
 
@@ -1717,199 +1755,6 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1773390190118-->
 END%%
 
-### Power
-
-A **power series** in $z - a$ is a complex-valued series of form $$\sum_{n=0}^\infty a_n(z - a)^n.$$
-The numbers $a_0, a_1, a_2, \ldots \in \mathbb{C}$ are called **coefficients** of the power series. The number $a \in \mathbb{C}$ is called the **center** of the power series.
-
-Every power series is associated with a **circle of convergence** centered at $a$. The radius of this circle is called the **radius of convergence** $R$.
-
-The series [[#Absolute Convergence|absolutely converges]] for every $z$ with $\lvert z \rvert < R$. It also [[sequences#Uniform Convergence|uniformly converges]] on every [[ellipse#Disks|disk]] with center at $a$ and radius less than $R$. The series diverges for every $z$ with $\lvert z \rvert > R$. Points on the boundary are indeterminate.
-
-%%ANKI
-Basic
-What is a power series?
-Back: A series of the form $\sum_{n=0}^\infty a_n (x - c)^n$ where $c, a_0, a_1, a_2, \ldots$ are real or complex.
-Reference: _Wikipedia_. “Power series.” November 22, 2025. [https://en.wikipedia.org/w/index.php?title=Power_series](https://en.wikipedia.org/w/index.php?title=Power_series&oldid=1323477072).
-<!--ID: 1773439827610-->
-END%%
-
-%%ANKI
-Basic
-Which of power series or geometric series is more general?
-Back: A geometric series is an example of a power series.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773439827615-->
-END%%
-
-%%ANKI
-Basic
-In what way is a geometric series a specialization of a power series?
-Back: The coefficients of a geometric series is the same for every term.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773439827618-->
-END%%
-
-%%ANKI
-Basic
-Consider the following power series. What name is given to $(a_n)$? $$\sum_{n=0}^\infty a_n(x - c)^n$$
-Back: The coefficients.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773439827621-->
-END%%
-
-%%ANKI
-Basic
-Consider the following power series. What name is given to $c$? $$\sum_{n=0}^\infty a_n(x - c)^n$$
-Back: The center.
-Reference: _Wikipedia_. “Power series.” November 22, 2025. [https://en.wikipedia.org/w/index.php?title=Power_series](https://en.wikipedia.org/w/index.php?title=Power_series&oldid=1323477072).
-<!--ID: 1773439827624-->
-END%%
-
-%%ANKI
-Basic
-What name is given to the circle associated with a power series?
-Back: The circle of convergence.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774559672519-->
-END%%
-
-%%ANKI
-Basic
-What can be said about an interior point of a power series's circle of convergence?
-Back: The series absolutely converges at the given point.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774559672521-->
-END%%
-
-%%ANKI
-Basic
-What can be said about a point outside of a power series's circle of convergence?
-Back: The series diverges at the given point.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774559672522-->
-END%%
-
-%%ANKI
-Basic
-What can be said about a point on the boundary of a power series's circle of convergence?
-Back: N/A. The series may (absolutely) converge or diverge.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774559672523-->
-END%%
-
-%%ANKI
-Basic
-What does a power series's radius of convergence refer to?
-Back: The radius of the circle of convergence.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774559672524-->
-END%%
-
-%%ANKI
-Basic
-Let $r$ be a power series's radius of convergence. What does it mean for $r = 0$?
-Back: The only point for which the power series converges is at the center.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774559672525-->
-END%%
-
-%%ANKI
-Basic
-Let $r$ be a power series's radius of convergence. What does it mean for $r = +\infty$?
-Back: The power series converges for every point in $\mathbb{C}$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774559672526-->
-END%%
-
-%%ANKI
-Basic
-What values can a power series's radius of convergence take on?
-Back: Any $z \in \mathbb{C}$ or $+\infty$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774559672527-->
-END%%
-
-%%ANKI
-Basic
-Consider $\sum a_nz^n$. If the series converges for $z_1$ and diverges for $z_2$, what is the radius of convergence?
-Back: $$\sup \{ \lvert z \rvert \mid \sum a_nz^n \text{ converges} \}$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774571057325-->
-END%%
-
-%%ANKI
-Basic
-How many points on the boundary of a power series's circle of convergence also converge?
-Back: Indeterminate. It could be none, some, or all of them.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774573411897-->
-END%%
-
-%%ANKI
-Basic
-What is the radius of convergence of the following power series? $$\sum_{n=0}^\infty 0$$
-Back: $+\infty$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774874778853-->
-END%%
-
-%%ANKI
-Basic
-Consider the following power series with radius of convergence $R$. For what points does the series converge? $$\sum_{n=1}^\infty a_n(z - a)$$
-Back: All $z$ such that $\lvert z - a \rvert < R$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774877926878-->
-END%%
-
-%%ANKI
-Basic
-Consider the following power series with radius of convergence $R$. For what points does the series absolutely converge? $$\sum_{n=1}^\infty a_n(z - a)$$
-Back: All $z$ such that $\lvert z - a \rvert < R$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774877926889-->
-END%%
-
-%%ANKI
-Basic
-Consider the following power series with radius of convergence $R$. For what points does the series diverge? $$\sum_{n=1}^\infty a_n(z - a)$$
-Back: All $z$ such that $\lvert z - a \rvert > R$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774877926893-->
-END%%
-
-%%ANKI
-Basic
-Consider the following power series with radius of convergence $R$. Over what regions does the series uniformly converge? $$\sum_{n=1}^\infty a_n(z - a)$$
-Back: All disks centered at $a$ with radius less than $R$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774877926897-->
-END%%
-
-%%ANKI
-Basic
-Which test does Apostol use to prove uniform convergence of an appropriately sized disk centered at a power series's center?
-Back: The Weierstrass M-test.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774878546773-->
-END%%
-
-%%ANKI
-Basic
-What geometric series is an upper bound over disk with radius $r < R$ centered at $a$? $$\sum a_n(z - a)^n, \quad\text{with radius of convergence } R$$
-Back: $$\sum \left\lvert \frac{r}{R} \right\rvert^n$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774878546784-->
-END%%
-
-%%ANKI
-Basic
-What series is the Weierstrass M-test applied on to prove uniform convergence on disk with radius $r < R$ centered at $a$? $$\sum a_n(z - a)^n, \quad\text{with radius of convergence } R$$
-Back: $$\sum \left\lvert \frac{r}{R} \right\rvert^n$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1774878718903-->
-END%%
-
 ### Harmonic
 
 The **harmonic series** refers to the divergent series $$\sum_{k=1}^{\infty} \frac{1}{k}.$$
@@ -2046,34 +1891,6 @@ Cloze
 Let $(a_n)$ and $(b_n)$ be two sequences such that $a_n = b_n - b_{n + 1}$. Then the series {1:$\sum a_n$} converges if and only if the sequence {1:$(b_n)$} converges, in which case we have $\sum_{n=1}^\infty a_n =$ {2:$b_1 - L$} where $L =$ {3:$\lim_{n \rightarrow +\infty} b_n$}.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773438164090-->
-END%%
-
-### Alternating
-
-An **alternating series** is one in which each consecutive term alternates in sign. That is, given $a_n > 0$ for all $n \geq 1$, series of form $$\sum_{n=1}^\infty (-1)^{n-1} a_n = a_1 - a_2 + a_3 - a_4 + \cdots + (-1)^{n-1} a_n + \cdots$$
-
-%%ANKI
-Basic
-In plain English, what is an alternating series?
-Back: A series in which each consecutive term alternates in sign.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773733571110-->
-END%%
-
-%%ANKI
-Basic
-Using summation notation, what is an alternating series?
-Back: Given $a_n > 0$ for all $n \geq 1$, a series of form $$\sum_{n=1}^\infty (-1)^{n-1} a_n.$$
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773733571121-->
-END%%
-
-%%ANKI
-Basic
-In alternating series $\sum\, (-1)^{n-1} a_n$, what conditions are the terms $a_n$ expected to satisfy?
-Back: $a_n > 0$ for each $n$.
-Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-<!--ID: 1773733571125-->
 END%%
 
 ## Bibliography

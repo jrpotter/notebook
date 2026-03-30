@@ -858,156 +858,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1774471165607-->
 END%%
 
-## Examples
-
-### Arithmetic
-
-An **arithmetic sequence** $(a_n)_{n \geq 0}^d$ is a sequence in which each term differs by the **common difference** constant $d$.
-
-* *Closed Formula*. $a_n = a + nd$.
-* *Recursive Definition*. $a_n = a_{n-1} + d$ given initial term $a_0$.
-
-%%ANKI
-Basic
-What makes a sequence an *arithmetic* sequence?
-Back: Each term has the same constant difference from the previous.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600159-->
-END%%
-
-%%ANKI
-Basic
-What two properties are necessary to characterize an arithmetic sequence?
-Back: The initial term and the common difference.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600161-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for the common difference of an arithmetic sequence $(a_n)$ to be $d$?
-Back: $a_n - a_{n-1} = d$ for all valid values of $n$.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600162-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)$ be an arithmetic sequence. What term refers to the difference between terms?
-Back: The common difference.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600164-->
-END%%
-
-%%ANKI
-Basic
-Why is the "common difference" of an arithmetic sequence named the way it is?
-Back: It is shared between all successive terms.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600166-->
-END%%
-
-%%ANKI
-Basic
-The term "common difference" is related to what kind of sequence?
-Back: An arithmetic sequence.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600167-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 0}^d$ be an arithmetic sequence. What is its recursive definition's recurrence relation?
-Back: $a_n = a_{n-1} + d$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600169-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 0}^d$ be an arithmetic sequence. What is the $n$th term's closed formula?
-Back: $a_n = a_0 + nd$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600170-->
-END%%
-
-### Geometric
-
-A **geometric sequence** $(a_n)_{n \geq 0}^r$ is a sequence in which each term differs by a **common ratio** $r$.
-
-* *Closed Formula*. $a_n = ar^n$.
-* *Recursive Definition*. $a_n = ra_{n-1}$ given initial term $a_0$.
-
-%%ANKI
-Basic
-What makes a sequence a *geometric* sequence?
-Back: Each term is the same constant multiple from the previous.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600144-->
-END%%
-
-%%ANKI
-Basic
-What two properties are necessary to characterize a geometric sequence?
-Back: The initial term and the common ratio.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600147-->
-END%%
-
-%%ANKI
-Basic
-What does it mean for the common ratio of a geometric sequence $(a_n)$ to be $r$?
-Back: $a_n = a_{n-1} \cdot r$ for all valid values of $n$.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600149-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)$ be a geometric sequence. What term refers to the ratio between terms?
-Back: The common ratio.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600151-->
-END%%
-
-%%ANKI
-Basic
-Why is the "common ratio" of a geometric sequence named the way it is?
-Back: It is shared between all successive terms.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600152-->
-END%%
-
-%%ANKI
-Basic
-The term "common ratio" is related to what kind of sequence?
-Back: A geometric sequence.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600153-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 0}^r$ be a geometric sequence. What is its recursive definition's recurrence relation?
-Back: $a_n = a_{n-1} \cdot r$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600155-->
-END%%
-
-%%ANKI
-Basic
-Let $(a_n)_{n \geq 0}^r$ be a geometric sequence. What is the $n$th term's closed formula?
-Back: $a_n = a_0 \cdot r^n$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600156-->
-END%%
-
-%%ANKI
-Cloze
-{1:Arithmetic} sequences are characterized by the common {2:difference}. {2:Geometric} sequences are characterized by the common {1:ratio}.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1709664600158-->
-END%%
+## Special
 
 ### ∆ᵏ-constant Sequence
 
@@ -1194,6 +1045,276 @@ How many data points of a $\Delta^k$-constant sequence are needed to polynomial 
 Back: $k + 1$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1713580109285-->
+END%%
+
+### Arithmetic
+
+An **arithmetic sequence** $(a_n)_{n \geq 0}^d$ is a sequence in which each term differs by the **common difference** constant $d$.
+
+* *Closed Formula*. $a_n = a + nd$.
+* *Recursive Definition*. $a_n = a_{n-1} + d$ given initial term $a_0$.
+
+%%ANKI
+Basic
+What makes a sequence an *arithmetic* sequence?
+Back: Each term has the same constant difference from the previous.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600159-->
+END%%
+
+%%ANKI
+Basic
+What two properties are necessary to characterize an arithmetic sequence?
+Back: The initial term and the common difference.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600161-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for the common difference of an arithmetic sequence $(a_n)$ to be $d$?
+Back: $a_n - a_{n-1} = d$ for all valid values of $n$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600162-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ be an arithmetic sequence. What term refers to the difference between terms?
+Back: The common difference.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600164-->
+END%%
+
+%%ANKI
+Basic
+Why is the "common difference" of an arithmetic sequence named the way it is?
+Back: It is shared between all successive terms.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600166-->
+END%%
+
+%%ANKI
+Basic
+The term "common difference" is related to what kind of sequence?
+Back: An arithmetic sequence.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600167-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)_{n \geq 0}^d$ be an arithmetic sequence. What is its recursive definition's recurrence relation?
+Back: $a_n = a_{n-1} + d$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600169-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)_{n \geq 0}^d$ be an arithmetic sequence. What is the $n$th term's closed formula?
+Back: $a_n = a_0 + nd$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600170-->
+END%%
+
+### Geometric
+
+A **geometric sequence** $(a_n)_{n \geq 0}^r$ is a sequence in which each term differs by a **common ratio** $r$.
+
+* *Closed Formula*. $a_n = ar^n$.
+* *Recursive Definition*. $a_n = ra_{n-1}$ given initial term $a_0$.
+
+%%ANKI
+Basic
+What makes a sequence a *geometric* sequence?
+Back: Each term is the same constant multiple from the previous.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600144-->
+END%%
+
+%%ANKI
+Basic
+What two properties are necessary to characterize a geometric sequence?
+Back: The initial term and the common ratio.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600147-->
+END%%
+
+%%ANKI
+Basic
+What does it mean for the common ratio of a geometric sequence $(a_n)$ to be $r$?
+Back: $a_n = a_{n-1} \cdot r$ for all valid values of $n$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600149-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)$ be a geometric sequence. What term refers to the ratio between terms?
+Back: The common ratio.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600151-->
+END%%
+
+%%ANKI
+Basic
+Why is the "common ratio" of a geometric sequence named the way it is?
+Back: It is shared between all successive terms.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600152-->
+END%%
+
+%%ANKI
+Basic
+The term "common ratio" is related to what kind of sequence?
+Back: A geometric sequence.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600153-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)_{n \geq 0}^r$ be a geometric sequence. What is its recursive definition's recurrence relation?
+Back: $a_n = a_{n-1} \cdot r$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600155-->
+END%%
+
+%%ANKI
+Basic
+Let $(a_n)_{n \geq 0}^r$ be a geometric sequence. What is the $n$th term's closed formula?
+Back: $a_n = a_0 \cdot r^n$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600156-->
+END%%
+
+%%ANKI
+Cloze
+{1:Arithmetic} sequences are characterized by the common {2:difference}. {2:Geometric} sequences are characterized by the common {1:ratio}.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709664600158-->
+END%%
+
+### Square Numbers
+
+The $n$th term of the **square numbers** $(s_n)_{n \geq 0}$ is $n^2$. The first few terms are $$0, 1, 4, 9, 16, 25, 36, 49, 64, \ldots$$
+
+%%ANKI
+Basic
+What shape do gnomons associated with square numbers take on?
+Back: L-shapes.
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
+<!--ID: 1709422558613-->
+END%%
+
+%%ANKI
+Basic
+How are gnomons of the square numbers visualized?
+Back:
+![[square-gnomon.png]]
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
+<!--ID: 1709422558619-->
+END%%
+
+%%ANKI
+Basic
+What general term refers to the different colored segments in the following?
+![[square-gnomon.png]]
+Back: Gnomons.
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
+<!--ID: 1709422558622-->
+END%%
+
+%%ANKI
+Basic
+What are the first five square numbers $(s_n)_{n \geq 0}$?
+Back: $0, 1, 4, 9, 16$
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
+<!--ID: 1709422558625-->
+END%%
+
+%%ANKI
+Basic
+How is square number $16$ graphically depicted?
+Back:
+```
+* * * *
+* * * *
+* * * *
+* * * *
+```
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
+<!--ID: 1709422558628-->
+END%%
+
+%%ANKI
+Basic
+What closed formula is used to find the $n$th square number?
+Back: $n^2$
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
+<!--ID: 1709422558631-->
+END%%
+
+%%ANKI
+Basic
+What is the recurrence relation in the recursive definition of square numbers $(s_n)_{n \geq 0}$?
+Back: $s_n = s_{n-1} + (2n - 1)$
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
+<!--ID: 1709422558634-->
+END%%
+
+%%ANKI
+Basic
+What is the initial condition(s) in the recursive definition of square numbers $(s_n)_{n \geq 0}$?
+Back: $s_0 = 0$
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
+<!--ID: 1773176808845-->
+END%%
+
+%%ANKI
+Basic
+How is the $n$th square number $s_n$ represented with sigma notation?
+Back: $s_n = \sum_{k=1}^n (2k - 1)$
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
+<!--ID: 1709422558638-->
+END%%
+
+%%ANKI
+Basic
+Which polygonal numbers are the "next" generalization of triangular numbers?
+Back: The square numbers.
+Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+<!--ID: 1709419325898-->
+END%%
+
+%%ANKI
+Cloze
+The sum of {1:natural numbers} is to {2:triangular numbers} whereas the sum of {2:odd natural numbers} is to {1:square numbers}.
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
+<!--ID: 1709422558641-->
+END%%
+
+%%ANKI
+Basic
+What polygonal number is $k$ equal to after the following `for` loops?
+```c
+int k = 0;
+for (int i = 1; i <= n; ++i) {
+  k += 2 * i - 1;
+}
+```
+Back: The $n$th square number.
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
+<!--ID: 1709422558645-->
+END%%
+
+%%ANKI
+Basic
+*Why* are square numbers a sum of odd numbers?
+Back: The gnomon of a square number is twice the width of the previous square, plus the corner.
+Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
+<!--ID: 1709422558648-->
 END%%
 
 ### Triangular Numbers
@@ -1458,127 +1579,6 @@ The triangular numbers is the sequence of partial sums of what sequence?
 Back: $a_n = n$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1713580109292-->
-END%%
-
-### Square Numbers
-
-The $n$th term of the **square numbers** $(s_n)_{n \geq 0}$ is $n^2$. The first few terms are $$0, 1, 4, 9, 16, 25, 36, 49, 64, \ldots$$
-
-%%ANKI
-Basic
-What shape do gnomons associated with square numbers take on?
-Back: L-shapes.
-Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
-<!--ID: 1709422558613-->
-END%%
-
-%%ANKI
-Basic
-How are gnomons of the square numbers visualized?
-Back:
-![[square-gnomon.png]]
-Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
-<!--ID: 1709422558619-->
-END%%
-
-%%ANKI
-Basic
-What general term refers to the different colored segments in the following?
-![[square-gnomon.png]]
-Back: Gnomons.
-Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
-<!--ID: 1709422558622-->
-END%%
-
-%%ANKI
-Basic
-What are the first five square numbers $(s_n)_{n \geq 0}$?
-Back: $0, 1, 4, 9, 16$
-Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
-<!--ID: 1709422558625-->
-END%%
-
-%%ANKI
-Basic
-How is square number $16$ graphically depicted?
-Back:
-```
-* * * *
-* * * *
-* * * *
-* * * *
-```
-Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
-<!--ID: 1709422558628-->
-END%%
-
-%%ANKI
-Basic
-What closed formula is used to find the $n$th square number?
-Back: $n^2$
-Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
-<!--ID: 1709422558631-->
-END%%
-
-%%ANKI
-Basic
-What is the recurrence relation in the recursive definition of square numbers $(s_n)_{n \geq 0}$?
-Back: $s_n = s_{n-1} + (2n - 1)$
-Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
-<!--ID: 1709422558634-->
-END%%
-
-%%ANKI
-Basic
-What is the initial condition(s) in the recursive definition of square numbers $(s_n)_{n \geq 0}$?
-Back: $s_0 = 0$
-Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
-<!--ID: 1773176808845-->
-END%%
-
-%%ANKI
-Basic
-How is the $n$th square number $s_n$ represented with sigma notation?
-Back: $s_n = \sum_{k=1}^n (2k - 1)$
-Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
-<!--ID: 1709422558638-->
-END%%
-
-%%ANKI
-Basic
-Which polygonal numbers are the "next" generalization of triangular numbers?
-Back: The square numbers.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
-<!--ID: 1709419325898-->
-END%%
-
-%%ANKI
-Cloze
-The sum of {1:natural numbers} is to {2:triangular numbers} whereas the sum of {2:odd natural numbers} is to {1:square numbers}.
-Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
-<!--ID: 1709422558641-->
-END%%
-
-%%ANKI
-Basic
-What polygonal number is $k$ equal to after the following `for` loops?
-```c
-int k = 0;
-for (int i = 1; i <= n; ++i) {
-  k += 2 * i - 1;
-}
-```
-Back: The $n$th square number.
-Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
-<!--ID: 1709422558645-->
-END%%
-
-%%ANKI
-Basic
-*Why* are square numbers a sum of odd numbers?
-Back: The gnomon of a square number is twice the width of the previous square, plus the corner.
-Reference: _Wikipedia_. “Square number.” June 22, 2025. [https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504](https://en.wikipedia.org/w/index.php?title=Square_number&oldid=1296877504).
-<!--ID: 1709422558648-->
 END%%
 
 ## Bibliography

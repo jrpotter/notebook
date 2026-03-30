@@ -863,7 +863,7 @@ END%%
 
 ### Telescoping
 
-We can use [[series#Telescoping|telescoping]] to solve recurrences of form $a_n = a_{n-1} + f(n)$ by noticing that: $$\begin{align*} a_1 - a_0 & = f(1) \\ a_2 - a_1 & = f(2) \\ \vdots \\ a_n - a_{n-1} & = f(n) \\ \hline a_n - a_0 & = \sum_{k=1}^n f(n) \end{align*}$$
+We can use [[calculus/series/index#Telescoping|telescoping]] to solve recurrences of form $a_n = a_{n-1} + f(n)$ by noticing that: $$\begin{align*} a_1 - a_0 & = f(1) \\ a_2 - a_1 & = f(2) \\ \vdots \\ a_n - a_{n-1} & = f(n) \\ \hline a_n - a_0 & = \sum_{k=1}^n f(n) \end{align*}$$
 
 %%ANKI
 Basic
