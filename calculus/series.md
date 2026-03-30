@@ -1722,7 +1722,9 @@ END%%
 A **power series** in $z - a$ is a complex-valued series of form $$\sum_{n=0}^\infty a_n(z - a)^n.$$
 The numbers $a_0, a_1, a_2, \ldots \in \mathbb{C}$ are called **coefficients** of the power series. The number $a \in \mathbb{C}$ is called the **center** of the power series.
 
-Every power series is associated with a **circle of convergence**. The series [[#Absolute Convergence|absolutely converges]] for every $z$ interior to this circle and diverges for every $z$ outside of it. Points on the boundary are indeterminate. The center of the circle is that of the power series. It's radius is called the **radius of convergence**.
+Every power series is associated with a **circle of convergence** centered at $a$. The radius of this circle is called the **radius of convergence** $R$.
+
+The series [[#Absolute Convergence|absolutely converges]] for every $z$ with $\lvert z \rvert < R$. It also [[sequences#Uniform Convergence|uniformly converges]] on every [[ellipse#Disks|disk]] with center at $a$ and radius less than $R$. The series diverges for every $z$ with $\lvert z \rvert > R$. Points on the boundary are indeterminate.
 
 %%ANKI
 Basic
@@ -1842,6 +1844,70 @@ How many points on the boundary of a power series's circle of convergence also c
 Back: Indeterminate. It could be none, some, or all of them.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774573411897-->
+END%%
+
+%%ANKI
+Basic
+What is the radius of convergence of the following power series? $$\sum_{n=0}^\infty 0$$
+Back: $+\infty$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774874778853-->
+END%%
+
+%%ANKI
+Basic
+Consider the following power series with radius of convergence $R$. For what points does the series converge? $$\sum_{n=1}^\infty a_n(z - a)$$
+Back: All $z$ such that $\lvert z - a \rvert < R$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774877926878-->
+END%%
+
+%%ANKI
+Basic
+Consider the following power series with radius of convergence $R$. For what points does the series absolutely converge? $$\sum_{n=1}^\infty a_n(z - a)$$
+Back: All $z$ such that $\lvert z - a \rvert < R$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774877926889-->
+END%%
+
+%%ANKI
+Basic
+Consider the following power series with radius of convergence $R$. For what points does the series diverge? $$\sum_{n=1}^\infty a_n(z - a)$$
+Back: All $z$ such that $\lvert z - a \rvert > R$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774877926893-->
+END%%
+
+%%ANKI
+Basic
+Consider the following power series with radius of convergence $R$. Over what regions does the series uniformly converge? $$\sum_{n=1}^\infty a_n(z - a)$$
+Back: All disks centered at $a$ with radius less than $R$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774877926897-->
+END%%
+
+%%ANKI
+Basic
+Which test does Apostol use to prove uniform convergence of an appropriately sized disk centered at a power series's center?
+Back: The Weierstrass M-test.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774878546773-->
+END%%
+
+%%ANKI
+Basic
+What geometric series is an upper bound over disk with radius $r < R$ centered at $a$? $$\sum a_n(z - a)^n, \quad\text{with radius of convergence } R$$
+Back: $$\sum \left\lvert \frac{r}{R} \right\rvert^n$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774878546784-->
+END%%
+
+%%ANKI
+Basic
+What series is the Weierstrass M-test applied on to prove uniform convergence on disk with radius $r < R$ centered at $a$? $$\sum a_n(z - a)^n, \quad\text{with radius of convergence } R$$
+Back: $$\sum \left\lvert \frac{r}{R} \right\rvert^n$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774878718903-->
 END%%
 
 ### Harmonic

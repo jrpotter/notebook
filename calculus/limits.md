@@ -1334,7 +1334,7 @@ END%%
 
 %%ANKI
 Basic
-Which of $e^n$ or $n!$ grows faster as $n \rightarrow \infty$?
+Which of $e^n$ or $n!$ grows faster as $n \rightarrow +\infty$?
 Back: $n!$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773826173559-->
@@ -1342,10 +1342,26 @@ END%%
 
 %%ANKI
 Basic
-Which of $n^n$ or $n!$ grows faster as $n \rightarrow \infty$?
+Which of $n^n$ or $n!$ grows faster as $n \rightarrow +\infty$?
 Back: $n^n$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1773826173572-->
+END%%
+
+%%ANKI
+Basic
+What value does $2^{1/n}$ approach as $n \rightarrow +\infty$?
+Back: $1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774874778866-->
+END%%
+
+%%ANKI
+Basic
+What value does $n^{1/n}$ approach as $n \rightarrow +\infty$?
+Back: $1$.
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774874778876-->
 END%%
 
 ## Bibliography
