@@ -1,15 +1,202 @@
 ---
-title: Complex Numbers
+title: Fields
 TARGET DECK: Obsidian::STEM
-FILE TAGS: algebra::complex
+FILE TAGS: algebra::field
 tags:
   - algebra
-  - complex
+  - field
 ---
 
 ## Overview
 
-The set $\mathbb{C}$ of **complex numbers** is defined by $\mathbb{C} = \{a + bi \mid a, b \in \mathbb{R}\}$, where $i$ is the **imaginary number** defined as $i^2 = -1$.
+**Arithmetic** refers to the branch of mathematics dealing with, at its most basic level, addition, subtraction, multiplication, and division. There exist names for each term in these basic expressions:
+
+* In $a + b$, $a$ is the **augend** and $b$ is the **addend**.
+* In $a - b$, $a$ is the **minuend** and $b$ is the **subtrahend**.
+* In $a \times b$, $a$ is the **multiplicand** and $b$ is the **multiplier**.
+* In $a \div b$, $a$ is the **dividend** and $b$ is the **divisor**.
+
+In a wider sense, arithmetic may also include [[exponentials|exponentiation]] and [[logarithms]].
+
+TODO - expand on fields and relation with arithmetic
+
+%%ANKI
+Basic
+What is arithmetic?
+Back: A branch of mathematics dealing with, at its most basic level, addition, subtraction, multiplication, and division.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1751748536945-->
+END%%
+
+%%ANKI
+Basic
+What are the four most basic operations employed in arithmetic?
+Back: Addition, subtraction, multiplication, and division.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1751748536949-->
+END%%
+
+%%ANKI
+Basic
+In a wider sense, arithmetic includes what other two operations beyond the basic four?
+Back: Exponentiation and logarithms.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1751748536950-->
+END%%
+
+%%ANKI
+Basic
+Let $a, b \in \mathbb{R}$. How do we write product $a \cdot b$ as a fraction?
+Back: Assuming $b \neq 0$, as $a / (1 / b)$.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1772631794969-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x + y$, {$x$} is referred to as the {augend}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400987-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x + y$, {$y$} is referred to as the {addend}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400990-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x - y$, {$x$} is referred to as the {minuend}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400991-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x - y$, {$y$} is referred to as the {subtrahend}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400992-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x \times y$, {$x$} is referred to as the {multiplicand}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400993-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x \times y$, {$y$} is referred to as the {multiplier}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400994-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x \div y$, {$x$} is referred to as the {dividend}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400995-->
+END%%
+
+%%ANKI
+Cloze
+In expression $x \div y$, {$y$} is referred to as the {divisor}.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400996-->
+END%%
+
+%%ANKI
+Basic
+Which of the addend or augend is listed first, left-to-right?
+Back: The augend.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400997-->
+END%%
+
+%%ANKI
+Basic
+Which of the minuend or subtrahend is listed first, left-to-right?
+Back: The minuend.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400998-->
+END%%
+
+%%ANKI
+Basic
+Which of the multiplicand or multiplier is listed first, left-to-right?
+Back: The multiplicand.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953400999-->
+END%%
+
+%%ANKI
+Basic
+Which of the divisor or dividend is listed first, left-to-right?
+Back: The dividend.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953401000-->
+END%%
+
+%%ANKI
+Cloze
+The {minuend} is to subtraction as the {multiplicand} is to multiplication.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953401001-->
+END%%
+
+%%ANKI
+Cloze
+The {subtrahend} is to subtraction as the {multiplier} is to multiplication.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953401002-->
+END%%
+
+%%ANKI
+Cloze
+The {addend} is to addition as the {divisor} is to division.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953401003-->
+END%%
+
+%%ANKI
+Cloze
+The {augend} is to addition as the {dividend} is to division.
+Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+<!--ID: 1773953401004-->
+END%%
+
+## Rationals
+
+The set of all rationals is a field, denoted $\mathbb{Q}$.
+
+%%ANKI
+Basic
+How is the set of rational numbers usually denoted?
+Back: As $\mathbb{Q}$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775062060386-->
+END%%
+
+## Reals
+
+The set of all real numbers is a field, denoted $\mathbb{R}$.
+
+%%ANKI
+Basic
+How is the set of real numbers usually denoted?
+Back: As $\mathbb{R}$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775062060390-->
+END%%
+
+## Complex
+
+The set of all complex numbers is a field, denoted $\mathbb{C}$. It is defined as $$\mathbb{C} = \{a + bi \mid a, b \in \mathbb{R}\},$$
+
+where $i$ is the **imaginary number** given by $i^2 = -1$. Addition, subtraction, and multiplication are performed in the normal way. Division works with the aid of conjugates.
 
 For any complex number of the form $z = a + bi$, $a, b \in \mathbb{R}$, the number $a$ is called the **real part** of $z$ and the number $b$ is called the **imaginary part** of $z$. This is denoted as $\mathop{\text{Re}}(z) = a$ and $\mathop{\text{Im}}(z) = b$ respectively.
 
@@ -19,7 +206,7 @@ The **modulus** of $z$, denoted $\lvert z \rvert$, is defined as $\lvert z \rver
 
 %%ANKI
 Basic
-How is the set of complex numbers denoted?
+How is the set of complex numbers usually denoted?
 Back: As $\mathbb{C}$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1735870487309-->
@@ -100,7 +287,7 @@ END%%
 Basic
 What is the horizontal axis of the complex plane typically called?
 Back: The real axis.
-Reference: “Complex Plane,” in _Wikipedia_, December 14, 2024, [https://en.wikipedia.org/w/index.php?title=Complex_plane](https://en.wikipedia.org/w/index.php?title=Complex_plane&oldid=1263031649).
+Reference: _Wikipedia_. “Complex plane.” May 6, 2025. [https://en.wikipedia.org/w/index.php?title=Complex_plane](https://en.wikipedia.org/w/index.php?title=Complex_plane&oldid=1289176675).
 <!--ID: 1735870487466-->
 END%%
 
@@ -108,7 +295,7 @@ END%%
 Basic
 What is the vertical axis of the complex plane typically called?
 Back: The imaginary axis.
-Reference: “Complex Plane,” in _Wikipedia_, December 14, 2024, [https://en.wikipedia.org/w/index.php?title=Complex_plane](https://en.wikipedia.org/w/index.php?title=Complex_plane&oldid=1263031649).
+Reference: _Wikipedia_. “Complex plane.” May 6, 2025. [https://en.wikipedia.org/w/index.php?title=Complex_plane](https://en.wikipedia.org/w/index.php?title=Complex_plane&oldid=1289176675).
 <!--ID: 1735870487469-->
 END%%
 
@@ -278,7 +465,7 @@ Reference: _Wikipedia_. “Argument (complex analysis).” August 3, 2025. [http
 <!--ID: 1755142984769-->
 END%%
 
-## Conjugates
+### Conjugates
 
 Let $z = a + bi$ be a complex number. Then its **complex conjugate**, denoted as $\bar{z}$, is defined as $$\bar{z} = \overline{a + bi} = a - bi.$$
 
@@ -376,10 +563,6 @@ Back: Yes.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1754141872838-->
 END%%
-
-## Arithmetic
-
-Addition, subtraction, and multiplication of complex numbers are done in the normal way. Division works with the aid of conjugates.
 
 %%ANKI
 Basic
@@ -623,8 +806,8 @@ END%%
 
 ## Bibliography
 
-* “Complex Plane,” in _Wikipedia_, December 14, 2024, [https://en.wikipedia.org/w/index.php?title=Complex_plane](https://en.wikipedia.org/w/index.php?title=Complex_plane&oldid=1263031649).
 * John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 * _Wikipedia_. “Argument (complex analysis).” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Argument_(complex_analysis)](https://en.wikipedia.org/w/index.php?title=Argument_\(complex_analysis\)&oldid=1304064700).
+* _Wikipedia_. “Complex plane.” May 6, 2025. [https://en.wikipedia.org/w/index.php?title=Complex_plane](https://en.wikipedia.org/w/index.php?title=Complex_plane&oldid=1289176675).

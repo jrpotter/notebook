@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-A **power series** in $z - a$ is a [[complex]]-valued series of form $$\sum_{n=0}^\infty a_n(z - a)^n.$$
+A **power series** in $z - a$ is a [[fields#Complex|complex]]-valued series of form $$\sum_{n=0}^\infty a_n(z - a)^n.$$
 The numbers $a_0, a_1, a_2, \ldots \in \mathbb{C}$ are called **coefficients** of the power series. The number $a \in \mathbb{C}$ is called the **center** of the power series. Every power series is associated with a **circle of convergence** centered at $a$. The radius of this circle is called the **radius of convergence** $R$.
 
 The series [[#Absolute Convergence|absolutely converges]] for every $z$ with $\lvert z \rvert < R$. It also [[sequences#Uniform Convergence|uniformly converges]] on every closed [[ellipse#Disks|disk]] with center at $a$ and radius less than $R$. The series diverges for every $z$ with $\lvert z \rvert > R$. Points on the boundary are indeterminate.

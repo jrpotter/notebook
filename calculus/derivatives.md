@@ -638,7 +638,7 @@ END%%
 
 ### Implicit Differentiation
 
-Implicit differentiation refers to the differentiation of an [[algebra/functions#Implicit|implicit function]]. They leverage the [[#Chain Rule|chain rule]] by maintaining that the value of the function is defined in terms of the others as arguments.
+Implicit differentiation refers to the differentiation of an [[sets/functions#Implicit|implicit function]]. They leverage the [[#Chain Rule|chain rule]] by maintaining that the value of the function is defined in terms of the others as arguments.
 
 %%ANKI
 Basic
@@ -850,7 +850,7 @@ END%%
 
 ### Inverse Function Rule
 
-Let $f$ be a differentiable function on $[a, b]$ with [[algebra/functions#Bijectivity|inverse]] $g$. If $f'(x) \neq 0$ exists for some $x \in (a, b)$, then $g'(y) \neq 0$ also exists at corresponding point $y = f(x)$. Moreover, $$g'(y) = \frac{1}{f'(x)}.$$
+Let $f$ be a differentiable function on $[a, b]$ with [[sets/functions#Bijectivity|inverse]] $g$. If $f'(x) \neq 0$ exists for some $x \in (a, b)$, then $g'(y) \neq 0$ also exists at corresponding point $y = f(x)$. Moreover, $$g'(y) = \frac{1}{f'(x)}.$$
 
 %%ANKI
 Cloze

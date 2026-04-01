@@ -130,7 +130,7 @@ Let $(a_n)$ and $(b_n)$ be [[sequences]]. Then $$\begin{align*}
 \sum_{k=m}^n a_k \nabla b_k & = (a_n b_n - a_{m-1}b_{m-1}) - \sum_{k=m}^n b_{k-1} \nabla a_k,
 \end{align*}$$
 
-where $\Delta$ and $\nabla$ refer to [[algebra/functions#Finite Differences|difference operators]]. These formulas are the discrete analogue to [[primitives#By Parts|integration by parts]].
+where $\Delta$ and $\nabla$ refer to [[sets/functions#Finite Differences|difference operators]]. These formulas are the discrete analogue to [[primitives#By Parts|integration by parts]].
 
 %%ANKI
 Basic

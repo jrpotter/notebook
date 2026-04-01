@@ -179,7 +179,7 @@ There exist a number of identities analogous to those of the trigonemetric funct
 
 ### Symmetries
 
-The hyperbolic sine and hyperbolic tangent functions are [[algebra/functions#Symmetries|odd]] whereas the hyperbolic cosine function is [[algebra/functions#Symmetries|even]].
+The hyperbolic sine and hyperbolic tangent functions are [[sets/functions#Symmetries|odd]] whereas the hyperbolic cosine function is [[sets/functions#Symmetries|even]].
 
 %%ANKI
 Basic

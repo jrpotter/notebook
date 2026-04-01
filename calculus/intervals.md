@@ -91,7 +91,7 @@ We use the symbol $P = \{x_0, x_1, \ldots, x_n\}$ to designate this partition.
 
 A **refinement** $P'$ of some partition $P$ is created by adjoining more subdivision points to those of $P$. $P'$, also a partition, is said to be **finer** than $P$. Given two partitions $P_1$ and $P_2$, the **common refinement** of $P_1$ and $P_2$ is the partition formed by adjoining the subdivision points of $P_1$ and $P_2$ together.
 
-A function $f$ is said to be **piecewise monotonic** on an interval $[a, b]$ if there is a partition $P$ of $[a, b]$ such that $f$ is [[functions#Monotonicity|monotonic]] on each open subinterval of $P$.
+A function $f$ is said to be **piecewise monotonic** on an interval $[a, b]$ if there is a partition $P$ of $[a, b]$ such that $f$ is [[sets/functions#Monotonicity|monotonic]] on each open subinterval of $P$.
 
 %%ANKI
 Basic

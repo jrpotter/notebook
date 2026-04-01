@@ -471,7 +471,7 @@ END%%
 
 ### Asymptotic Equality
 
-Two sequences $(a_n)$ and $(b_n)$ of [[complex|complex]] numbers are said to be **asymptotically equal** if $$\lim_{n \rightarrow +\infty} \frac{a_n}{b_n} = 1.$$
+Two sequences $(a_n)$ and $(b_n)$ of [[fields#Complex|complex]] numbers are said to be **asymptotically equal** if $$\lim_{n \rightarrow +\infty} \frac{a_n}{b_n} = 1.$$
 
 This relation is denoted as $a_n \sim b_n$ as $n \rightarrow +\infty$.
 

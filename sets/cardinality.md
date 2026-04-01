@@ -165,7 +165,7 @@ END%%
 
 ## Equinumerosity
 
-We say set $A$ is **equinumerous** to set $B$, written $A \approx B$, if and only if there exists a [[functions#Injections|one-to-one]] function from $A$ [[functions#Surjections|onto]] $B$.
+We say set $A$ is **equinumerous** to set $B$, written $A \approx B$, if and only if there exists a [[sets/functions#Injections|one-to-one]] function from $A$ [[sets/functions#Surjections|onto]] $B$.
 
 %%ANKI
 Basic
@@ -217,7 +217,7 @@ END%%
 
 ### Power sets
 
-No set is equinumerous to its [[sets/index#Power Set Axiom|power set]]. This is typically shown using a diagonalization argument. For any set $A$, $^A2 \approx \mathscr{P}(A)$.
+No set is equinumerous to its [[zfc#Power Set Axiom|power set]]. This is typically shown using a diagonalization argument. For any set $A$, $^A2 \approx \mathscr{P}(A)$.
 
 %%ANKI
 Basic

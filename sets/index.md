@@ -8,1304 +8,649 @@ tags:
 
 ## Overview
 
-Set theory begins with two primitive notions of sets and membership. Other axioms are defined relative to these concepts. The [[choice|Axiom of Choice]] is elaborated on separately.
+The [[rings#Sets|algebra of sets]] concerns itself with the operations of union ($\cup$), intersection ($\cap$), and set difference ($-$), together with the inclusion relation ($\subseteq$).
 
-In general, set theory prefers working with **hereditary sets**, also known as **pure sets**. These are sets whose elements are all hereditary sets; that is, all elements of the sets are themselves sets, as are all elements of the elements, and so on.
+Set theory is usually described with the axioms outlined in [[zfc|ZFC]].
 
-%%ANKI
-Basic
-What are the two primitive notions of set theory?
-Back: Sets and membership.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717417781230-->
-END%%
-
-%%ANKI
-Basic
-How does Enderton describe a primitive notion?
-Back: An undefined concept other concepts are defined with.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717417781236-->
-END%%
-
-%%ANKI
-Basic
-Axioms can be thought of as doing what to primitive notions?
-Back: Divulging partial information about their meaning.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717417781239-->
-END%%
-
-%%ANKI
-Basic
-How does Cormen et al. define a *dynamic* set?
-Back: As a set that can change over time.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: adt::dynamic_set
-<!--ID: 1715432070055-->
-END%%
-
-%%ANKI
-Basic
-How does Cormen et al. distinguish mathematical sets from dynamic sets?
-Back: The former is assumed to be unchanging.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: adt::dynamic_set
-<!--ID: 1715432070059-->
-END%%
-
-%%ANKI
-Basic
-How does Cormen et al. define a dictionary?
-Back: As a dynamic set that allows insertions, deletions, and membership tests.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: adt::dynamic_set
-<!--ID: 1715432070063-->
-END%%
-
-%%ANKI
-Basic
-Which of dynamic sets and dictionaries are more general?
-Back: The dynamic set.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: adt::dynamic_set
-<!--ID: 1715432070067-->
-END%%
-
-%%ANKI
-Basic
-Is a dynamic set a dictionary?
-Back: Not necessarily.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: adt::dynamic_set
-<!--ID: 1715432070071-->
-END%%
-
-%%ANKI
-Basic
-Is a dictionary a dynamic set?
-Back: Yes.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: adt::dynamic_set
-<!--ID: 1715432070077-->
-END%%
-
-%%ANKI
-Cloze
-A dictionary supports {insertions}, {deletions}, and {membership testing}.
-Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-Tags: adt::dynamic_set
-<!--ID: 1715432070083-->
-END%%
-
-Sets are often denoted using **roster notation** in which members are specified explicitly in a comma-delimited list surrounded by curly braces. Alternatively, **abstraction** (or **set-builder notation**) defines sets using an **entrance requirement**. Examples of the set of prime numbers less than $10$:
-
-* Roster notation: $\{2, 3, 5, 7\}$
-* Set-builder notation: $\{x \mid x < 10 \land x \text{ is prime}\}$
-
-%%ANKI
-Basic
-Define the set of prime numbers less than $10$ using abstraction.
-Back: $\{x \mid x < 10 \land x \text{ is prime}\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715786028616-->
-END%%
-
-%%ANKI
-Basic
-Define the set of prime numbers less than $5$ using set-builder notation.
-Back: $\{x \mid x < 5 \land x \text{ is prime}\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715786028645-->
-END%%
-
-%%ANKI
-Basic
-Define the set of prime numbers less than $5$ using roster notation.
-Back: $\{2, 3\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715786028649-->
-END%%
-
-%%ANKI
-Basic
-Define the set of prime numbers less than $5$ using abstraction.
-Back: $\{x \mid x < 5 \land x \text{ is prime}\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715786028652-->
-END%%
-
-%%ANKI
-Basic
-What term describes the expression to the right of $\mid$ in set-builder notation?
-Back: The entrance requirement.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715786028656-->
-END%%
-
-%%ANKI
-Basic
-What term refers to $\_\_\; x\; \_\_$ in $\{x \mid \_\_\; x\; \_\_\}$?
-Back: The entrance requirement.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715786028659-->
-END%%
-
-%%ANKI
-Basic
-The term "entrance requirement" refers to what kind of set notation?
-Back: Set-builder/abstraction.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715786028663-->
-END%%
-
-%%ANKI
-Basic
-What name is given to set notation in which members are explicitly listed?
-Back: Roster notation.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715786028667-->
-END%%
-
-%%ANKI
-Basic
-What does an atom refer to in set theory?
-Back: Any entity that is not a set but can exist in one.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716494526269-->
-END%%
-
-%%ANKI
-Basic
-What German term is used alternatively for "atoms"?
-Back: Urelements.
-Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
-<!--ID: 1720998380904-->
-END%%
-
-%%ANKI
-Basic
-Can sets be members of urelements?
-Back: No.
-Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
-<!--ID: 1720998380907-->
-END%%
-
-%%ANKI
-Basic
-Can urelements be members of sets?
-Back: Yes.
-Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
-<!--ID: 1720998380909-->
-END%%
-
-%%ANKI
-Basic
-Can urelements be members of urelements?
-Back: No.
-Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
-<!--ID: 1720998380910-->
-END%%
-
-%%ANKI
-Basic
-Can sets be members of sets?
-Back: Yes.
-Reference: Simon Hewitt, “A Cardinal Worry for Permissive Metaontology,” _Metaphysica_ 16, no. 2 (September 18, 2015): 159–65, [https://doi.org/10.1515/mp-2015-0009](https://doi.org/10.1515/mp-2015-0009).
-<!--ID: 1720998380911-->
-END%%
-
-%%ANKI
-Cloze
-An {atom} is to set theory as an {atomic} logical statement is to propositional logic. 
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716807316136-->
-END%%
-
-%%ANKI
-Cloze
-A {set} is to set theory as a {2:molecular} logical statement is to propositional logic. 
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716807316144-->
-END%%
-
-%%ANKI
-Basic
-What distinguishes a set from an atom?
-Back: An atom cannot contain other entitites.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716494526277-->
-END%%
-
-%%ANKI
-Basic
-What intuition is broken when a box is viewed as an atom?
-Back: When viewed as an atom, the box is no longer a container.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716494526280-->
-END%%
-
-%%ANKI
-Basic
-Enderton's exposition makes what assumption about the set of all atoms?
-Back: It is the empty set.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716494526284-->
-END%%
-
-%%ANKI
-Basic
-How are members of the following set defined using extensionality and first-order logic? $$B = \{P(x) \mid \phi(x)\}$$
-Back: $\forall x, P(x) \in B \Leftrightarrow \phi(x)$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720369624727-->
-END%%
-
-%%ANKI
-Basic
-How are members of the following set defined using extensionality and first-order logic? $$B = \{x \mid x < 5 \land x \text{ is prime}\}$$
-Back: $\forall x, x \in B \Leftrightarrow (x < 5 \land x \text{ is prime})$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720369624730-->
-END%%
-
-%%ANKI
-Cloze
-$P(x) = T$ is equivalently written as $x \in$ {$\{v \mid P(v)\}$}.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720369624733-->
-END%%
-
-%%ANKI
-Cloze
-$\exists u \in A, uFx$ is equivalently written as $x \in$ {$F[\![A]\!]$}.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720369624735-->
-END%%
-
-%%ANKI
-Basic
-How is set $\{P(y) \mid y \in B\}$ interpreted?
-Back: As the set of $P(y)$ for all $y \in B$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720369624736-->
-END%%
-
-%%ANKI
-Basic
-Given function $P$, how is set $\{P(y) \mid y \in B\}$ more compactly denoted?
-Back: $P[\![B]\!]$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720369624737-->
-END%%
-
-%%ANKI
-Basic
-How is set $\{P(y) \mid \exists y \in B\}$ interpreted?
-Back: If $B$ is empty, the empty set. Otherwise as singleton $\{P(y)\}$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720369624738-->
-END%%
-
-%%ANKI
-Basic
-How many members are in set $\{P(y) \mid \exists y \in B\}$?
-Back: At most $1$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720369624739-->
-END%%
-
-%%ANKI
-Basic
-In set-builder notation, the left side of $\{\ldots \mid \ldots\}$ denotes what?
-Back: The members of the set.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720370610010-->
-END%%
-
-%%ANKI
-Basic
-In set-builder notation, the right side of $\{\ldots \mid \ldots\}$ denotes what?
-Back: The entrance requirement.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720370610016-->
-END%%
-
-%%ANKI
-Basic
-How is set $\{v \mid \exists A \in B, v = A\}$ written more compactly?
-Back: $B$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720370610022-->
-END%%
-
-%%ANKI
-Basic
-How is set $\{v \mid \exists A \in B, v \in A\}$ written more compactly?
-Back: $\bigcup B$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720370610028-->
-END%%
-
-%%ANKI
-Basic
-How is $\{A \mid A \in B\}$ rewritten with an existential in the entrance requirement?
-Back: $\{v \mid \exists A \in B \land v = A\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1720381621849-->
-END%%
-
-%%ANKI
-Basic
-What is a hereditary set?
-Back: A set whose elements are all hereditary sets.
-Reference: _Wikipedia_. “Hereditary set.” September 8, 2025. [https://en.wikipedia.org/w/index.php?title=Hereditary_set](https://en.wikipedia.org/w/index.php?title=Hereditary_set&oldid=1310325296).
-<!--ID: 1767142999391-->
-END%%
-
-%%ANKI
-Cloze
-{Hereditary} sets are typically used in theories that preclude the existence of {urelements}.
-Reference: _Wikipedia_. “Hereditary set.” September 8, 2025. [https://en.wikipedia.org/w/index.php?title=Hereditary_set](https://en.wikipedia.org/w/index.php?title=Hereditary_set&oldid=1310325296).
-<!--ID: 1767142999395-->
-END%%
-
-%%ANKI
-Cloze
-{Hereditary} sets are also known as {pure} sets.
-Reference: _Wikipedia_. “Hereditary set.” September 8, 2025. [https://en.wikipedia.org/w/index.php?title=Hereditary_set](https://en.wikipedia.org/w/index.php?title=Hereditary_set&oldid=1310325296).
-<!--ID: 1767142999398-->
-END%%
-
-## Extensionality
-
-If two sets have exactly the same members, then they are equal: $$\forall A, \forall B, (\forall x, x \in A \Leftrightarrow x \in B) \Rightarrow A = B$$
-%%ANKI
-Basic
-What does the extensionality axiom state?
-Back: If two sets have exactly the same members, then they are equal.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649069247-->
-END%%
-
-%%ANKI
-Basic
-How is the extensionality axiom expressed using first-order logic?
-Back: $$\forall A, \forall B, (\forall x, x \in A \Leftrightarrow x \in B) \Rightarrow A = B$$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649734312-->
-END%%
-
-%%ANKI
-Basic
-The following encodes which set theory axiom? $$\forall A, \forall B, (\forall x, x \in A \Leftrightarrow x \in B) \Rightarrow A = B$$
-Back: The extensionality axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649069254-->
-END%%
-
-%%ANKI
-Basic
-How many sets exist with no members?
-Back: Exactly one.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649069256-->
-END%%
-
-%%ANKI
-Basic
-Which set theory axiom proves uniqueness of $\varnothing$?
-Back: The extensionality axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649069259-->
-END%%
-
-%%ANKI
-Basic
-What axiom is used to prove two sets are equal to one another?
-Back: Extensionality.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717372494462-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ and $B$ be sets. Proving the following is equivalent to showing what class is a set? $$\exists C, \forall y, (y \in C \Leftrightarrow y = \{x\} \times B \text{ for some } x \in A)$$
-Back: $\{\{x\} \times B \mid x \in A\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1718105051820-->
-END%%
-
-## Empty Set Axiom
-
-There exists a set having no members: $$\exists B, \forall x, x \not\in B$$
-
-%%ANKI
-Basic
-What does the empty set axiom state?
-Back: There exists a set having no members.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649734322-->
-END%%
-
-%%ANKI
-Basic
-How is the empty set axiom expressed using first-order logic?
-Back: $$\exists B, \forall x, x \not\in B$$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649734327-->
-END%%
-
-%%ANKI
-Basic
-The following encodes which set theory axiom? $$\exists B, \forall x, x \not\in B$$
-Back: The empty set axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649734332-->
-END%%
-
-%%ANKI
-Basic
-Which set theory axiom proves existence of $\varnothing$?
-Back: The empty set axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649069259-->
-END%%
-
-%%ANKI
-Basic
-What two properties ensures definition $\varnothing$ is well-defined?
-Back: Existence and uniqueness.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034312-->
-END%%
-
-%%ANKI
-Basic
-How is the empty set defined using set-builder notation?
-Back: $\{x \mid x \neq x\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715900348141-->
-END%%
-
-## Pairing Axiom
-
-For any sets $u$ and $v$, there exists a set having as members just $u$ and $v$: $$\forall u, \forall v, \exists B, \forall x, (x \in B \Leftrightarrow x = u \lor x = v)$$
-
-%%ANKI
-Basic
-What does the pairing axiom state?
-Back: For any sets $u$ and $v$, there exists a set having as members just $u$ and $v$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649734337-->
-END%%
-
-%%ANKI
-Basic
-How is the pairing axiom expressed using first-order logic?
-Back: $$\forall u, \forall v, \exists B, \forall x, (x \in B \Leftrightarrow x = u \lor x = v)$$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649734341-->
-END%%
-
-%%ANKI
-Basic
-The following encodes which set theory axiom? $$\forall u, \forall v, \exists B, \forall x, (x \in B \Leftrightarrow x = u \lor x = v)$$
-Back: The pairing axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649734346-->
-END%%
-
-%%ANKI
-Basic
-Which set theory axiom proves existence of set $\{x, y\}$ where $x \neq y$?
-Back: The pairing axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649734351-->
-END%%
-
-%%ANKI
-Basic
-Which set theory axiom proves existence of set $\{x\}$?
-Back: The pairing axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715649734357-->
-END%%
-
-%%ANKI
-Basic
-For sets $u$ and $v$, what name is given to set $\{u, v\}$?
-Back: The pair set of $u$ and $v$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034322-->
-END%%
-
-%%ANKI
-Basic
-In set theory, what does a singleton refer to?
-Back: A set with exactly one member.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034325-->
-END%%
-
-%%ANKI
-Basic
-What set theory axiom is used to prove existence of singletons?
-Back: The pairing axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034329-->
-END%%
-
-%%ANKI
-Basic
-How is the pair set $\{u, v\}$ defined using set-builder notation?
-Back: $\{x \mid x = u \lor x = v\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715900348148-->
-END%%
-
-## Union Axiom
-
-### Preliminary Form
-
-For any sets $a$ and $b$, there exists a set whose members are those sets belonging either to $a$ or to $b$ (or both): $$\forall a, \forall b, \exists B, \forall x, (x \in B \Leftrightarrow x \in a \lor x \in b)$$
-
-%%ANKI
-Basic
-What does the union axiom (preliminary form) state?
-Back: For any sets $a$ and $b$, there exists a set whose members are all in either $a$ or $b$ (or both).
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034333-->
-END%%
-
-%%ANKI
-Basic
-How is the union axiom (preliminary form) expressed using first-order logic?
-Back: $$\forall a, \forall b, \exists B, \forall x, (x \in B \Leftrightarrow x \in a \lor x \in b)$$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034337-->
-END%%
-
-%%ANKI
-Basic
-The following encodes which set theory axiom? $$\forall a, \forall b, \exists B, \forall x, (x \in B \Leftrightarrow x \in a \lor x \in b)$$
-Back: The union axiom (preliminary form).
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034341-->
-END%%
-
-%%ANKI
-Basic
-How is the union of sets $a$ and $b$ denoted?
-Back: $a \cup b$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034346-->
-END%%
-
-%%ANKI
-Basic
-What two set theory axioms prove existence of e.g. $\{x_1, x_2, x_3\}$?
-Back: The pairing axiom and union axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034351-->
-END%%
-
-%%ANKI
-Basic
-How is the union of set $a$ and $b$ defined using set-builder notation?
-Back: $\{x \mid x \in a \lor x \in b\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715900348153-->
-END%%
-
-%%ANKI
-Basic
-What set operation is shaded green in the following venn diagram?
-![[venn-diagram-union.png]]
-Back: $A \cup B$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716395245855-->
-END%%
+## Symmetric Difference
 
-%%ANKI
-Basic
-What does $\bigcup\,\{x\}$ evaluate to?
-Back: $x$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1723933434782-->
-END%%
-
-### General Form
-
-For any set $A$, there exists a set $B$ whose elements are exactly the members of the members of $A$: $$\forall A, \exists B, \forall x, x \in B \Leftrightarrow (\exists b \in B, x \in b)$$
-
-%%ANKI
-Basic
-What does the union axiom (general form) state?
-Back: For any set $A$, there exists a set $B$ whose elements are exactly the members of the members of $A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007845-->
-END%%
-
-%%ANKI
-Basic
-How is the union axiom (general form) expressed using first-order logic?
-Back: $$\forall A, \exists B, \forall x, x \in B \Leftrightarrow (\exists a \in A, x \in a)$$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007849-->
-END%%
-
-%%ANKI
-Basic
-What advantage does the general form of the union axiom have over its preliminary form?
-Back: The general form can handle infinite sets.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007851-->
-END%%
-
-%%ANKI
-Basic
-How is the preliminary form of the union axiom proven using the general form?
-Back: For any sets $a$ and $b$, $\bigcup \{a, b\} = a \cup b$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007853-->
-END%%
-
-%%ANKI
-Basic
-What is the result of $\bigcup \{\{2, 4, 6\}, \{6, 16, 26\}, \{0\}\}$?
-Back: $\{2, 4, 6, 16, 26, 0\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007855-->
-END%%
-
-%%ANKI
-Basic
-What is the result of $\bigcup \varnothing$?
-Back: $\varnothing$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007857-->
-END%%
-
-%%ANKI
-Basic
-How is $\bigcup A$ represented in first-order logic?
-Back: $\{x \mid \exists a \in A, x \in a\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007859-->
-END%%
-
-%%ANKI
-Basic
-Roughly speaking, how does $\bigcup A$ adjust as $A$ gets larger?
-Back: $\bigcup A$ gets larger.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007861-->
-END%%
-
-%%ANKI
-Basic
-If $A \subseteq B$, how do $\bigcup A$ and $\bigcup B$ relate?
-Back: $\bigcup A \subseteq \bigcup B$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007864-->
-END%%
-
-%%ANKI
-Basic
-What kind of mathematical object is the absolute complement of set $A$?
-Back: A class.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716395245860-->
-END%%
-
-%%ANKI
-Basic
-What kind of mathematical object is the relative complement of set $B$ in $A$?
-Back: A set.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716395245862-->
-END%%
-
-%%ANKI
-Cloze
-{1:Classes} are to {2:absolute} complements whereas {2:sets} are to {1:relative} complements.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716395245866-->
-END%%
-
-%%ANKI
-Basic
-What contradiction arises when arguing the absolute complement of set $A$ is a set? 
-Back: The union of the complement with $A$ is the *class* of all sets.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716395245868-->
-END%%
-
-%%ANKI
-Basic
-Why is the absolute complement of sets rarely useful in set theory?
-Back: The absolute complement of a set isn't a set.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716395245870-->
-END%%
-
-%%ANKI
-Basic
-What set operation is shaded green in the following venn diagram?
-![[venn-diagram-abs-comp.png]]
-Back: The absolute complement of $A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716397645564-->
-END%%
-
-%%ANKI
-Cloze
-Let $A$ be a set and $C = \bigcup\, \{ x \mid \_\_\_ \}$. Then $C$ {$\supseteq$} $A$ if $A$ satisfies the {entrance requirement}.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1729684927439-->
-END%%
-
-## Power Set Axiom
-
-For any set $a$, there is a set whose members are exactly the subsets of $a$: $$\forall a, \exists B, \forall x, (x \in B \Leftrightarrow x \subseteq a)$$
-
-%%ANKI
-Basic
-What does the power set axiom state?
-Back: For any set $a$, there exists a set whose members are exactly the subsets of $a$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034356-->
-END%%
-
-%%ANKI
-Basic
-How is the power set axiom expressed using first-order logic?
-Back: $$\forall a, \exists B, \forall x, (x \in B \Leftrightarrow x \subseteq a)$$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034361-->
-END%%
-
-%%ANKI
-Basic
-The following encodes which set theory axiom? $$\forall a, \exists B, \forall x, (x \in B \Leftrightarrow x \subseteq a)$$
-Back: The power set axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034368-->
-END%%
-
-%%ANKI
-Basic
-How is $x \subseteq a$ rewritten using first-order logic and $\in$?
-Back: $\forall t, t \in x \Rightarrow t \in a$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034375-->
-END%%
-
-%%ANKI
-Basic
-How is the power set of set $a$ denoted?
-Back: $\mathscr{P}{a}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715688034381-->
-END%%
-
-%%ANKI
-Basic
-How is the power set of set $a$ defined using set-builder notation?
-Back: $\{x \mid x \subseteq a\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1715900348160-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ be a set. What does $\bigcup \mathscr{P} A$ evaluate to?
-Back: $A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1726976526809-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ be a set. *Why* does $\bigcup \mathscr{P} A = A$?
-Back: Because $\mathscr{P} A$ evaluates to the subsets of $A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1726976526815-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ be a set. What does $\bigcap \mathscr{P} A$ evaluate to?
-Back: $\varnothing$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1726976526819-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ be a set. *Why* does $\bigcap \mathscr{P} A = \varnothing$?
-Back: Because $\varnothing \in \mathscr{P} A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1726976526824-->
-END%%
-
-%%ANKI
-Basic
-Which axiom is encoded in the following?
-
-> $\forall a, \exists B, \forall x, (x \in B \Leftrightarrow x \subseteq a)$
-
-Back: The power set axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1767406285479-->
-END%%
-
-## Subset Axioms
-
-The "subset axioms" refer to an axiom schema stating:
-
-> For any formula $\phi(x)$ not containing the letter $B$, $$\forall A, \exists B, \forall x, (x \in B \Leftrightarrow x \in A \land \phi(x)).$$
-
-%%ANKI
-Basic
-What do the subset axioms state?
-Back: For each formula $\phi(x)$ not containing the letter $B$, $$\forall A, \exists B, \forall x, (x \in B \Leftrightarrow x \in A \land \phi(x))$$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716074312858-->
-END%%
-
-%%ANKI
-Basic
-Let $\phi(x)$ be a wff excluding letter $B$. How is its subset axiom stated in FOL?
-Back: $$\forall A, \exists B, \forall x, (x \in B \Leftrightarrow x \in A \land \phi(x))$$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716074312864-->
-END%%
-
-%%ANKI
-Basic
-The following encodes which set theory axiom(s)? $$\forall A, \exists B, \forall x, (x \in B \Leftrightarrow x \in A \land \phi(x))$$
-Back: The subset axioms.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716074312869-->
-END%%
-
-%%ANKI
-Basic
-Which axioms prove the existence of the union of two sets?
-Back: The union axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716074312873-->
-END%%
-
-%%ANKI
-Basic
-Which axioms prove the existence of the intersection of two sets?
-Back: The subset axioms.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716074312876-->
-END%%
-
-%%ANKI
-Basic
-How is the intersection of sets $A$ and $B$ denoted?
-Back: $A \cap B$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716074312880-->
-END%%
-
-%%ANKI
-Basic
-How is the intersection of sets $a$ and $b$ defined using set-builder notation?
-Back: $\{x \mid x \in a \land x \in b\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716074312884-->
-END%%
-
-%%ANKI
-Basic
-Which axioms prove the existence of the relative complement of two sets?
-Back: The subset axioms.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716074312888-->
-END%%
-
-%%ANKI
-Basic
-Given sets $A$ and $B$, what does $A - B$ denote?
-Back: The relative complement of $B$ in $A$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716074312893-->
-END%%
-
-%%ANKI
-Basic
-How is the relative complement of set $B$ in $A$ denoted?
-Back: $A - B$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716074312897-->
-END%%
-
-%%ANKI
-Basic
-How is the relative complement of set $b$ in $a$ defined using set-builder notation?
-Back: $\{x \mid x \in a \land x \not\in b\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716074312901-->
-END%%
-
-%%ANKI
-Cloze
-Union is to the {union axiom} whereas intersection is to the {subset axioms}.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716074312905-->
-END%%
-
-%%ANKI
-Basic
-The subset axioms ensure we do not construct what kind of mathematical object?
-Back: Classes.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716074312909-->
-END%%
-
-%%ANKI
-Basic
-How is $\bigcap A$ represented in first-order logic?
-Back: $\{x \mid \forall b \in A, x \in b\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007866-->
-END%%
-
-%%ANKI
-Cloze
-{1:$\forall$} is to {2:$\bigcap$} whereas {2:$\exists$} is to {1:$\bigcup$}.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007868-->
-END%%
-
-%%ANKI
-Basic
-What is the result of $\bigcap \{\{2, 4, 6\}, \{6, 16, 26\}, \{6\}\}$?
-Back: $\{6\}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007870-->
-END%%
-
-%%ANKI
-Basic
-How does $\bigcap A$ adjust as $A$ gets larger?
-Back: $\bigcap A$ gets smaller.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007872-->
-END%%
-
-%%ANKI
-Basic
-If $A \subseteq B$, how do $\bigcap A$ and $\bigcap B$ relate?
-Back: $\bigcap B \subseteq \bigcap A$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007874-->
-END%%
-
-%%ANKI
-Basic
-What class does $\bigcap \varnothing$ correspond to?
-Back: The class of all sets.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007876-->
-END%%
-
-%%ANKI
-Basic
-*Why* does $\bigcap \varnothing$ present a problem?
-Back: Every set is a member of every member of $\varnothing$ (vacuously).
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007878-->
-END%%
-
-%%ANKI
-Cloze
-{$\bigcap \varnothing$} is to set theory as {division by zero} is to arithmetic.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716309007881-->
-END%%
-
-%%ANKI
-Cloze
-Let $A$ be a set and $C = \bigcap\, \{ x \mid \_\_\_ \}$. Then $C$ {$\subseteq$} $A$ if $A$ satisfies the {entrance requirement}.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1729684927446-->
-END%%
-
-%%ANKI
-Basic
-What set operation is shaded green in the following venn diagram?
-![[venn-diagram-intersection.png]]
-Back: $A \cap B$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716395245873-->
-END%%
+Define the **symmetric difference** of sets $A$ and $B$ as $$A \vartriangle B = (A - B)  \cup (B - A)$$
 
 %%ANKI
 Basic
-What set operation is shaded green in the following venn diagram?
-![[venn-diagram-rel-comp.png]]
-Back: $A - B$
+What two operators are used in the definition of the symmetric difference?
+Back: $\cup$ and $-$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1716395245875-->
+<!--ID: 1717554445662-->
 END%%
 
 %%ANKI
 Basic
-What set operation is shaded green in the following venn diagram?
-![[venn-diagram-symm-diff.png]]
+How is the symmetric difference of sets $A$ and $B$ denoted?
 Back: $A \vartriangle B$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717554445655-->
+<!--ID: 1717554445665-->
 END%%
 
 %%ANKI
 Basic
-The "subset axioms" are more accurately classified as what?
-Back: An axiom schema.
+How is $A \vartriangle B$ defined?
+Back: As $(A - B)  \cup (B - A)$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717368558153-->
+<!--ID: 1717554445670-->
 END%%
 
 %%ANKI
 Basic
-What is an axiom schema?
-Back: An infinite bundle of axioms.
+Is the symmetric difference commutative?
+Back: Yes.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717368558159-->
+<!--ID: 1723245187675-->
 END%%
 
 %%ANKI
 Basic
-Which of the set theory axiom(s) are more accurately described as an axiom schema?
-Back: The subset and replacement axioms.
+Is the symmetric difference associative?
+Back: Yes.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1717368558164-->
+<!--ID: 1723245187680-->
+END%%
+
+## Cartesian Product
+
+Given two sets $A$ and $B$, the **Cartesian product** $A \times B$ is defined as: $$A \times B = \{\langle x, y \rangle \mid x \in A \land y \in B\}.$$
+
+The **Cartesian square** of a set $A$ is the Cartesian product $$A^2 = A \times A.$$
+
+The **$n$-ary Cartesian power** of a set $A$, denoted $A^n$, is defined as $$\begin{align*} A^n & = A \times A \times \cdots \times A \\ & = \{ \langle a_1, \ldots, a_n \rangle \mid a_i \in A \text{ for every } i \in \{1, \ldots, n \}\}. \end{align*}$$
+
+As a special case, the $0$-ary Cartesian power, denoted $A^0$, is defined as the singleton set containing the empty function (with codomain $A$).
+
+%%ANKI
+Basic
+How is the Cartesian product of $A$ and $B$ denoted?
+Back: $A \times B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1717679397781-->
 END%%
 
 %%ANKI
 Basic
-What does $\bigcap\,\{x\}$ evaluate to?
-Back: $x$
+Using ordered pairs, how is $A \times B$ defined?
+Back: $\{\langle x, y \rangle \mid x \in A \land y \in B\}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1723925562044-->
+<!--ID: 1717679397797-->
 END%%
 
 %%ANKI
 Basic
-Let $A, B$ be sets. How is $A \subset B$ defined in FOL?
-Back: $A \subset B \Leftrightarrow A \subseteq B \land A \neq B$.
+Who is attributed the representation of points in a plane?
+Back: René Descartes.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1730118488855-->
+<!--ID: 1717679397825-->
 END%%
 
 %%ANKI
 Basic
-Why are we careful to use term "formula" vs. "relation"/"function" when stating the subset axioms?
-Back: Because the formulas used are not restricted to sets.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1753740228022-->
+Why is the Cartesian product named the way it is?
+Back: It is named after René Descartes.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1717679397836-->
 END%%
 
 %%ANKI
 Basic
-*Why* does the Zermelo-Fraenkel alternative employ axiom schemas?
-Back: Because classes have no ontological status, i.e. they can't be used.
+Suppose $x, y \in A$. What set, derived from $A$, is $\langle x, y \rangle$ a member of?
+Back: $\mathscr{P}\mathscr{P}A$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1754145622895-->
-END%%
-
-## Infinity Axiom
-
-There exists an [[natural_numbers#Inductive Sets|inductive]] set: $$\exists A, [\varnothing \in A \land (\forall a \in A, a^+ \in A)]$$
-
-%%ANKI
-Basic
-What does the infinity axiom state?
-Back: There exists an inductive set.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1724486269578-->
+<!--ID: 1717679397848-->
 END%%
 
 %%ANKI
 Cloze
-The {infinity} axiom asserts the existence of an {inductive set}.
+{$x \in A$} iff {$\{x\} \subseteq A$} iff {$\{x\} \in \mathscr{P}A$}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1724486269581-->
+<!--ID: 1717679397860-->
 END%%
 
 %%ANKI
 Basic
-State the infinity axiom in FOL.
-Back: $\exists A, [\varnothing \in A \land (\forall a \in A, a^+ \in A)]$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1724486269585-->
+How is the Cartesian square of a set $A$ denoted?
+Back: As $A^2$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455339-->
 END%%
 
 %%ANKI
 Basic
-Which axiom is encoded in the following?
-
-> $\exists A, [\varnothing \in A \land (\forall a \in A, a^+ \in A)]$
-
-Back: The infinity axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1767406285488-->
-END%%
-
-## Replacement Axioms
-
-The "replacement axioms" refer to an axiom schema stating:
-
-> For any formula $\phi(x, y)$ not containing the letter $B$, $$\begin{align*} \forall A, & \big[ \forall x \in A, \forall y_1, y_2, (\phi(x, y_1) \land \phi(x, y_2) \Rightarrow y_1 = y_2) \big] \Rightarrow \\ & \big[ \exists B, \forall y, (y \in B \Leftrightarrow \exists x \in A, \phi(x, y) \big] \end{align*}$$
-
-Notice the top-level antecedent states that formula $\phi(x, y)$ is a [[classes#Function-Class|function-class]].
-
-%%ANKI
-Basic
-What do the replacement axioms state?
-Back: For each formula $\phi(x, y)$ not containing the letter $B$, $$\begin{align*} \forall A, & \big[ \forall x \in A, \forall y_1, y_2, (\phi(x, y_1) \land \phi(x, y_2) \Rightarrow y_1 = y_2) \big] \Rightarrow \\ & \big[ \exists B, \forall y, (y \in B \Leftrightarrow \exists x \in A, \phi(x, y) \big] \end{align*}$$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1753740228031-->
+Let $A$ be a set. How is $A^2$ defined?
+Back: As $A \times A$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455343-->
 END%%
 
 %%ANKI
 Basic
-Let $\phi(x, y)$ be a wff excluding letter $B$. How is its replacement axiom stated in FOL?
-Back: $$\begin{align*} \forall A, & \big[ \forall x \in A, \forall y_1, y_2, (\phi(x, y_1) \land \phi(x, y_2) \Rightarrow y_1 = y_2) \big] \Rightarrow \\ & \big[ \exists B, \forall y, (y \in B \Leftrightarrow \exists x \in A, \phi(x, y) \big] \end{align*}$$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1753740228034-->
+Let $A$ be a set and $n \in \omega$. What name is given to $A^n$?
+Back: The $n$-ary Cartesian power of $A$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455348-->
 END%%
 
 %%ANKI
 Basic
-The following encodes which set theory axiom(s)? $$\begin{align*} \forall A, & \big[ \forall x \in A, \forall y_1, y_2, (\phi(x, y_1) \land \phi(x, y_2) \Rightarrow y_1 = y_2) \big] \Rightarrow \\ & \big[ \exists B, \forall y, (y \in B \Leftrightarrow \exists x \in A, \phi(x, y) \big] \end{align*}$$
-Back: The replacement axioms.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1753740228037-->
+Let $A$ be a set and $n \in \omega$. How is $A^n$ defined?
+Back: As $A \times A \times \cdots \times A$ (where $A$ is repeated $n$ times).
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455352-->
 END%%
 
 %%ANKI
 Basic
-The concept of function-classes is most relevant for what set theoretic axiom(s)?
-Back: The replacement axioms.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1753740228040-->
+How is the $n$-ary Cartesian power of a set $A$ denoted?
+Back: As $A^n$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455357-->
 END%%
 
 %%ANKI
 Basic
-Let $H$ be a function-class and $A$ a set. What intuition yielded the replacement axioms, i.e. that $H[\![A]\!]$ is a set?
-Back: Since $A$ is a set and $H[\![A]\!]$ can't be larger than $A$, $H[\![A]\!]$ should also be a set.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1753740228043-->
+Let $A$ be a set. What name is given to $A^2$?
+Back: The Cartesian square of $A$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455363-->
 END%%
 
 %%ANKI
 Basic
-Why are we careful to use term "formula" vs. "relation"/"function" when stating the replacement axioms?
-Back: Because the formulas used are not restricted to sets.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1753740228046-->
+Let $A$ be a set. How is $A^0$ defined?
+Back: As the singleton set $\{\varnothing\}$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455368-->
 END%%
 
 %%ANKI
 Basic
-The antececent of a replacement axiom instantiation corresponds to what class concept?
-Back: Function-classes.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1753740228049-->
+Let $A$ be a set. *Why* does $A^0 = \{\varnothing\}$, i.e. what does $\varnothing$ correspond to?
+Back: $\varnothing$ corresponds to the empty function with codomain $A$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1750646455372-->
 END%%
 
 %%ANKI
 Basic
-Why are the replacement axioms named the way they are?
-Back: The axioms state that "replacing" each element of a set produces another set.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1755047501306-->
+Let $A$ be a set and $n \in \omega$. Is $n$-ary Cartesian power $A^n$ countable?
+Back: Iff $A$ is countable.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342041-->
 END%%
 
 %%ANKI
 Basic
-Given ordinal $\alpha$, how can we use a replacement axiom to show the following is a set? $$\{ \mathscr{P}(\beta) \mid \beta \in \alpha \}$$
-Back: By noting $\alpha$ is a set and applying replacement with formula $\gamma(x, y)$ given by $y = \mathscr{P}(x)$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1767105200279-->
-END%%
-
-## Regularity Axiom
-
-The regularity axiom states that [[ordinals#Regularity|regularity]] holds. That is, every nonempty set $A$ has a member $m$ such that $m \cap A = \varnothing$.
-
-This axiom is also known as the **foundation axiom**.
-
-%%ANKI
-Cloze
-The {regularity} axiom is also known as the {foundation} axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1767406285493-->
+Let $A$ be a countable set and $n \in \omega$. Is $n$-ary Cartesian power $A^n$ countable?
+Back: Yes.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342045-->
 END%%
 
 %%ANKI
 Basic
-What does the regularity axiom state?
-Back: Every nonempty set $A$ has a member $m$ such that $m \cap A = \varnothing$.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1767406285496-->
+Let $A$ be a set and $n \in \omega$. What Cartesian product is ${^n}A$ equinumerous to?
+Back: $A^n = A \times A \times \cdots \times A$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342049-->
 END%%
 
 %%ANKI
 Basic
-Which axiom is encoded in the following?
-
-> $\forall A, A \neq \varnothing \Rightarrow (\exists m \in A, m \cap A = \varnothing)$
-
-Back: The regularity axiom.
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1767406285491-->
+Let $A$ be a set. How is $0$-ary Cartesian power $A^0$ usually defined?
+Back: As $\{\varnothing\}$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342064-->
 END%%
 
 %%ANKI
 Basic
-State the regularity axiom in FOL.
-Back: $\forall A, A \neq \varnothing \Rightarrow (\exists m \in A, m \cap A = \varnothing)$
+What motivation leads to defining $0$-ary Cartesian power $A^0 = \{ \varnothing \}$?
+Back: To ensure $A^0$ is isomorphic to ${^0}A = \{\varnothing\}$.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342068-->
+END%%
+
+We can also form (something like) the Cartesian product of infinitely many sets, provided that the sets are suitably indexed. Let $I$ be an index set and $H$ a function whose domain includes $I$. Define $$\bigtimes_{i \in I} H(i) = \{f \mid f \text{ is a function with domain } I \text{ and } \forall i \in I, f(i) \in H(i)\}$$
+
+%%ANKI
+Basic
+What kind of mathematical object is $I$ in $\bigtimes_{i \in I} H(i)$?
+Back: A set.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1767406285499-->
+<!--ID: 1720964209655-->
 END%%
 
 %%ANKI
 Basic
-Which set theory axiom is most closely tied to discussions of the von Neumann universe?
-Back: The regularity axiom.
+What kind of mathematical object is $H$ in $\bigtimes_{i \in I} H(i)$?
+Back: A function.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1767406837156-->
+<!--ID: 1720964209661-->
 END%%
 
 %%ANKI
 Basic
-How does the regularity axiom show that $x \not\in x$ for some set $x$?
-Back: Because it ensures that $\{x\} \cap x = \varnothing$.
+What is the domain of $H$ in $\bigtimes_{i \in I} H(i)$?
+Back: Some superset of $I$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1767407050639-->
+<!--ID: 1720964209666-->
 END%%
 
 %%ANKI
 Basic
-Why is the regularity axiom named the way it is?
-Back: Its name implies every set is "well-behaved".
+Let $I$ be an index set and $H$ a function such that $I \subseteq \mathop{\text{dom}}H$. How is $\bigtimes_{i \in I} H(i)$ defined?
+Back: $\bigtimes_{i \in I} H(i) = \{ f \mid f \text{ is a function with domain } I \text { and } \forall i \in I, f(i) \in H(i) \}$
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1767407050650-->
+<!--ID: 1720964209677-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical object is $h \in \bigtimes_{i \in I} H(i)$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720964209682-->
+END%%
+
+%%ANKI
+Basic
+Let $f \in \bigtimes_{i \in I} H(i)$. What is the domain of $f$?
+Back: $I$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720964209686-->
+END%%
+
+%%ANKI
+Basic
+Let $f \in \bigtimes_{i \in I} H(i)$. What is the codomain of $f$?
+Back: $\bigcup_{i \in I} H(i)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720964209690-->
+END%%
+
+%%ANKI
+Basic
+Given arbitrary sets $A$ and $B$, what index set $I$ and function $H$ satisfies $A \times B = \bigtimes_{i \in I} H(i)$?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720964209694-->
+END%%
+
+%%ANKI
+Basic
+*Why* can't $A \times B$ be rewritten with $\bigtimes_{i \in I} H(i)$ assuming suitable $I$ and $H$?
+Back: The former is a set of ordered pairs. The latter is a set of functions.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720964209698-->
+END%%
+
+%%ANKI
+Basic
+Assume AC and $H(j) = \varnothing$ for some $j \in I$. What does $\bigtimes_{i \in I} H(i)$ evaluate to?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720964209702-->
+END%%
+
+%%ANKI
+Basic
+When does $\bigtimes_{i \in I} H(i) = \varnothing$?
+Back: When there exists some $i \in I$ such that $H(i) = \varnothing$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720964209705-->
+END%%
+
+%%ANKI
+Basic
+Assume AC and $H(j) \neq \varnothing$ for all $j \in I$. What set does $\bigtimes_{i \in I} H(i)$ evaluate to?
+Back: $\{f \mid f \text{ is a function with domain } I \text{ and } \forall i \in I, f(i) \in H(i)\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720964209709-->
+END%%
+
+%%ANKI
+Basic
+The following is likely a diagram of what?
+![[infinite-cartesian-product.png]]
+Back: A member of $\bigtimes_{i \in \omega} H(i)$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720964209713-->
+END%%
+
+%%ANKI
+Basic
+Suppose $H(i) \neq \varnothing$ for all $i \in I$. When is $\bigtimes_{i \in I} H(i) \neq \varnothing$?
+Back: When AC is included in our formal system.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720964209716-->
+END%%
+
+## Index Sets
+
+Let $I$ be a set, called the **index set**. Let $F$ be a [[sets/functions|function]] whose domain includes $I$. Then we define $$\bigcup_{i \in I} F(i) = \bigcup\,\{F(i) \mid i \in I\}$$
+and, if $I \neq \varnothing$, $$\bigcap_{i \in I} F(i) = \bigcap\, \{F(i) \mid i \in I\}$$
+
+%%ANKI
+Basic
+What name does $I$ go by in expression $\bigcup_{i \in I} F(i)$?
+Back: The "index set".
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492681-->
+END%%
+
+%%ANKI
+Basic
+How is $\bigcup_{i \in I} F(i)$ alternatively denoted?
+Back: $\bigcup_{i \in I} F_i$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492687-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical object is $I$ in expression $\bigcup_{i \in I} F(i)$?
+Back: A set.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492690-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical object is $F$ in expression $\bigcup_{i \in I} F(i)$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492693-->
+END%%
+
+%%ANKI
+Basic
+How is $\bigcup_{i \in I} F_i$ alternatively denoted?
+Back: $\bigcup_{i \in I} F(i)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782592276-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical object is $F$ in expression $\bigcup_{i \in I} F_i$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782592281-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of $F$ assumed to be in expression $\bigcup_{i \in I} F(i)$?
+Back: Some superset of $I$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492696-->
+END%%
+
+%%ANKI
+Basic
+What condition must $I$ satisfy in expression $\bigcup_{i \in I} F(i)$?
+Back: N/A.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492699-->
+END%%
+
+%%ANKI
+Basic
+Suppose $I = \{0, 1, 2\}$. What does $\bigcup_{i \in I} F(i)$ evaluate to?
+Back: $F(0) \cup F(1) \cup F(2)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492702-->
+END%%
+
+%%ANKI
+Basic
+Suppose $I = \varnothing$. What does $\bigcup_{i \in I} F(i)$ evaluate to?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492705-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical object is $F$ in expression $\bigcap_{i \in I} F(i)$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492709-->
+END%%
+
+%%ANKI
+Basic
+How is $\bigcap_{i \in I} F(i)$ often alternatively denoted?
+Back: $\bigcap_{i \in I} F_i$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492712-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of $F$ assumed to be in expression $\bigcap_{i \in I} F(i)$?
+Back: Some superset of $I$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492716-->
+END%%
+
+%%ANKI
+Basic
+What condition must $I$ satisfy in expression $\bigcap_{i \in I} F(i)$?
+Back: $I \neq \varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492720-->
+END%%
+
+%%ANKI
+Basic
+Suppose $I = \{0, 1, 2\}$. What does $\bigcap_{i \in I} F(i)$ evaluate to?
+Back: $F(0) \cap F(1) \cap F(2)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492724-->
+END%%
+
+%%ANKI
+Basic
+Suppose $I = \varnothing$. What does $\bigcap_{i \in I} F(i)$ evaluate to?
+Back: N/A. This is undefined.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782492727-->
+END%%
+
+%%ANKI
+Basic
+How is $\bigcap_{i \in I} F_i$ alternatively denoted?
+Back: $\bigcap_{i \in I} F(i)$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782592285-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical object is $F$ in expression $\bigcap_{i \in I} F_i$?
+Back: A function.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782592288-->
+END%%
+
+## Function Sets
+
+For sets $A$ and $B$, the collection of functions $F$ from $A$ into $B$ is: $$^AB = \{F \mid F \colon A \rightarrow B\}$$
+$^AB$ is read as "$B$-pre-$A$". It is often written as $B^A$ instead.
+
+%%ANKI
+Basic
+For sets $A$ and $B$, how is set $B^A$ defined?
+Back: $\{F \mid F \colon A \rightarrow B\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782833225-->
+END%%
+
+%%ANKI
+Basic
+For sets $A$ and $B$, how is set $^AB$ defined?
+Back: $\{F \mid F \colon A \rightarrow B\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782923177-->
+END%%
+
+%%ANKI
+Basic
+For any function $F \colon A \rightarrow B$, $F$ is a subset of what Cartesian product?
+Back: $A \times B$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782833233-->
+END%%
+
+%%ANKI
+Basic
+For sets $A$ and $B$, how is set $B^A$ pronounced?
+Back: As "$B$-pre-$A$".
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782923183-->
+END%%
+
+%%ANKI
+Basic
+Why prefer notation $B^A$ over $^AB$?
+Back: The notation mirrors $|B|^{|A|}$, the number of elements in $B^A$ given both sets are finite.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607431-->
+END%%
+
+%%ANKI
+Basic
+For sets $A$ and $B$, how is set $^AB$ pronounced?
+Back: As "$B$-pre-$A$".
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782923193-->
+END%%
+
+%%ANKI
+Basic
+Why prefer notation $^AB$ over $B^A$?
+Back: Because the sets are written left-to-right, from domain to codomain.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607434-->
+END%%
+
+%%ANKI
+Basic
+*Why* is set $B^A$ denoted the way it is?
+Back: If $A$ and $B$ are finite, then $B^A$ has $|B|^{|A|}$ members.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720782923188-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of $^\omega\{0, 1\}$?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607437-->
+END%%
+
+%%ANKI
+Basic
+What is the domain of a member of $^\omega\{0, 1\}$?
+Back: $\omega$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607440-->
+END%%
+
+%%ANKI
+Basic
+What is the codomain of $\{0, 1\}^\omega$?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607444-->
+END%%
+
+%%ANKI
+Basic
+What is the codomain of a member of $\{0, 1\}^\omega$?
+Back: $\{0, 1\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607448-->
+END%%
+
+%%ANKI
+Basic
+What does $\varnothing^\varnothing$ evaluate to?
+Back: $\{\varnothing\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607451-->
+END%%
+
+%%ANKI
+Basic
+For $A \neq \varnothing$, what does $\varnothing^A$ evaluate to?
+Back: $\varnothing$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607455-->
+END%%
+
+%%ANKI
+Basic
+For $A \neq \varnothing$, *why* does $\varnothing^A = \varnothing$?
+Back: No function can map a nonempty domain to an empty range.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607459-->
+END%%
+
+%%ANKI
+Basic
+For $A \neq \varnothing$, what does $^\varnothing A$ evaluate to?
+Back: $\{\varnothing\}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607463-->
+END%%
+
+%%ANKI
+Basic
+For $A \neq \varnothing$, *why* does $^\varnothing A = \{\varnothing\}$?
+Back: $\varnothing$ is the only function with empty domain.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1720783607468-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. How do we show ${^n}A \preceq A^n$ (the $n$-ary Cartesian power)?
+Back: Define injection $f \colon {^n}A \rightarrow A^n$ as $$f(g) = \langle g(0), g(1), \ldots, g(n - 1) \rangle.$$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342053-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. How do we show the $n$-ary Cartesian power $A^n \preceq {^n}A$?
+Back: Define injection $f \colon A^n \rightarrow {^n}A$ as $$f(\langle a_1, \ldots, a_n \rangle) = \{ \langle 0, a_1 \rangle, \langle 1, a_2 \rangle, \ldots, \langle n - 1, a_n \rangle \}.$$
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342057-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be a set and $n \in \omega$. Is ${^n}A$ countable?
+Back: Iff $A$ is countable.
+Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+<!--ID: 1748146342061-->
 END%%
 
 ## Bibliography
 
+* “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-* Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-* _Wikipedia_. “Hereditary set.” September 8, 2025. [https://en.wikipedia.org/w/index.php?title=Hereditary_set](https://en.wikipedia.org/w/index.php?title=Hereditary_set&oldid=1310325296).
+
+
+
+

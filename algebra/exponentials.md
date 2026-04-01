@@ -297,6 +297,8 @@ If $z = x + iy$, we define $e^z$ to be the complex number given by $$e^z = e^x(\
 
 Every complex number $z \neq 0$ can be expressed in the form $z = re^{i\theta}$ where $r = \lvert z \rvert$ and $\theta = \text{Arg}(z) + 2\pi n$ for any $n \in \mathbb{Z}$. This representation is called the **polar form** of $z$.
 
+**Euler's formula** is a specialization of the above definition where the real portion of the complex number is $0$: $$e^{i\theta} = \cos{\theta} + i \sin{\theta}.$$
+
 %%ANKI
 Basic
 Let $z = x + iy$ for some $x, y \in \mathbb{R}$. How is $e^z$ defined?
@@ -423,6 +425,22 @@ Let $n \in \mathbb{N}$. What does the following expression evaluate to? $$\lvert
 Back: $1$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774807009009-->
+END%%
+
+%%ANKI
+Basic
+What is Euler's formula?
+Back: For any real $\theta$, $e^{i\theta} = \cos{\theta} + i\sin{\theta}$.
+Reference: Fraleigh, John B. _A First Course in Abstract Algebra_. Seventh edition, Pearson new international edition. Pearson, 2014.
+<!--ID: 1775062060394-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following identity? $$e^{i\theta} = \cos{\theta} + i\sin{\theta}$$
+Back: Euler's formula.
+Reference: Fraleigh, John B. _A First Course in Abstract Algebra_. Seventh edition, Pearson new international edition. Pearson, 2014.
+<!--ID: 1775062060397-->
 END%%
 
 ### Multiplication
@@ -707,6 +725,7 @@ END%%
 
 ## Bibliography
 
+* Fraleigh, John B. _A First Course in Abstract Algebra_. Seventh edition, Pearson new international edition. Pearson, 2014.
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 * _Wikipedia_. “Exponential function.” January 3, 2026. [https://en.wikipedia.org/w/index.php?title=Exponential_function](https://en.wikipedia.org/w/index.php?title=Exponential_function&oldid=1330993772).

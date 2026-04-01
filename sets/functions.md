@@ -1,10 +1,10 @@
 ---
 title: Functions
 TARGET DECK: Obsidian::STEM
-FILE TAGS: algebra::function
+FILE TAGS: set::function
 tags:
-  - algebra
   - function
+  - set
 ---
 
 ## Overview

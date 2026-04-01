@@ -459,7 +459,7 @@ $$\large \mathop{\text{atan2}}(y, x) = \begin{cases}
 \text{undefined} & \text{if } x = 0 \text{ and } y = 0
 \end{cases}$$
 
-Let $z = x + yi$ be a [[complex|complex]] number. Then $\mathop{\text{atan2}}(y, x) = \mathop{\text{Arg}}(x + yi)$.
+Let $z = x + yi$ be a [[fields#Complex|complex]] number. Then $\mathop{\text{atan2}}(y, x) = \mathop{\text{Arg}}(x + yi)$.
 
 %%ANKI
 Basic

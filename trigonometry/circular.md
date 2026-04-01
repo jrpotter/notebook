@@ -236,7 +236,7 @@ If the real number $t$ is the directed length of an arc (either positive or nega
 
 For any point $\langle x, y \rangle$ other than the origin on the terminal side of an angle $\theta$ in standard position, $$\sin{\theta} = \frac{y}{r}, \quad r = \sqrt{x^2 + y^2}.$$
 
-The sine function is [[algebra/functions#Periodic|periodic]] with period $2\pi$.
+The sine function is [[sets/functions#Periodic|periodic]] with period $2\pi$.
 
 %%ANKI
 Cloze
@@ -445,7 +445,7 @@ If the real number $t$ is the directed length of an arc (either positive or nega
 
 For any point $\langle x, y \rangle$ other than the origin on the terminal side of an angle $\theta$ in standard position, $$\cos{\theta} = \frac{x}{r}, \quad r = \sqrt{x^2 + y^2}.$$
 
-The cosine function is [[algebra/functions#Periodic|periodic]] with period $2\pi$.
+The cosine function is [[sets/functions#Periodic|periodic]] with period $2\pi$.
 
 %%ANKI
 Cloze
@@ -646,7 +646,7 @@ The **tangent function** is the quotient of the sine function by the cosine func
 
 For any point $\langle x, y \rangle$ other than the origin on the terminal side of an angle $\theta$ in standard position, $$\tan{\theta} = \frac{y}{x}.$$
 
-The tangent function is [[algebra/functions#Periodic|periodic]] with period $\pi$.
+The tangent function is [[sets/functions#Periodic|periodic]] with period $\pi$.
 
 %%ANKI
 Basic
@@ -855,7 +855,7 @@ The **secant function** is the reciprocal of the cosine function. That is, for a
 
 For any point $\langle x, y \rangle$ other than the origin on the terminal side of an angle $\theta$ in standard position, $$\sec{\theta} = \frac{r}{x}, \quad r = \sqrt{x^2 + y^2}.$$
 
-The secant function is [[algebra/functions#Periodic|periodic]] with period $2\pi$.
+The secant function is [[sets/functions#Periodic|periodic]] with period $2\pi$.
 
 %%ANKI
 Basic
@@ -960,7 +960,7 @@ The **cosecant function** is the reciprocal of the sine function. That is, for a
 
 For any point $\langle x, y \rangle$ other than the origin on the terminal side of an angle $\theta$ in standard position, $$\sec{\theta} = \frac{r}{y}, \quad r = \sqrt{x^2 + y^2}.$$
 
-The cosecant function is [[algebra/functions#Periodic|periodic]] with period $2\pi$.
+The cosecant function is [[sets/functions#Periodic|periodic]] with period $2\pi$.
 
 %%ANKI
 Basic
@@ -1065,7 +1065,7 @@ The **cotangent function** is the reciprocal of the tangent function. That is, f
 
 For any point $\langle x, y \rangle$ other than the origin on the terminal side of an angle $\theta$ in standard position, $$\cot{\theta} = \frac{x}{y}.$$
 
-The cotangent function is [[algebra/functions#Periodic|periodic]] with period $\pi$.
+The cotangent function is [[sets/functions#Periodic|periodic]] with period $\pi$.
 
 %%ANKI
 Basic
@@ -1151,7 +1151,7 @@ END%%
 
 ### Symmetries
 
-The sine and tangent functions are [[algebra/functions#Symmetries|odd]] whereas the cosine function is [[algebra/functions#Symmetries|even]].
+The sine and tangent functions are [[sets/functions#Symmetries|odd]] whereas the cosine function is [[sets/functions#Symmetries|even]].
 
 %%ANKI
 Basic
@@ -1565,6 +1565,7 @@ Basic
 What does the following evaluate to? $$\frac{d}{dx} \tan{x}$$
 Back: $\sec^2{x}$
 Reference: _Wikipedia_. “Differentiation of trigonometric functions.” March 12, 2026. [https://en.wikipedia.org/w/index.php?title=Differentiation_of_trigonometric_functions](https://en.wikipedia.org/w/index.php?title=Differentiation_of_trigonometric_functions&oldid=1343083483).
+<!--ID: 1775062060370-->
 END%%
 
 %%ANKI

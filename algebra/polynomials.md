@@ -134,7 +134,7 @@ where $a$, $b$, and $c$ are coefficients. The above form is called the **standar
 * If $a < 0$, $f(x)$ is concave downward.
 * The axis of symmetry is $x = -b / 2a$.
 
-A quadratic may have zero, one, or two real **roots**. It will always have exactly two [[complex|complex]] roots. In both cases, these refer to the points $x$ where $f(x) = 0$. If a quadratic has no real roots, we say it is **irreducible**.
+A quadratic may have zero, one, or two real **roots**. It will always have exactly two [[fields#Complex|complex]] roots. In both cases, these refer to the points $x$ where $f(x) = 0$. If a quadratic has no real roots, we say it is **irreducible**.
 
 %%ANKI
 Basic

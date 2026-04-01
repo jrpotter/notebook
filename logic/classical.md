@@ -60,7 +60,7 @@ END%%
 
 ## Satisfiability
 
-Classical logic [[prop_logic|propositions]] are usually expressed with [[algebra/boolean|Boolean algebra]].
+Classical logic [[prop_logic|propositions]] are usually expressed with [[rings#Boolean|Boolean algebra]].
 
 A Boolean formula is **satisfiable** if some assignment of $T$s and $F$s make the formula evaluate to $T$. For example, assignment $x = F$, $y = T$, and $z = F$ **satisfies** Boolean formula $\phi = (\neg x \lor y) \lor (x \land \neg z)$.
 
