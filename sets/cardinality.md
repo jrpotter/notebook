@@ -1711,7 +1711,7 @@ END%%
 Basic
 The proof of the Schröder-Bernstein theorem uses concepts from what "paradox"?
 Back: Hilbert's paradox of the Grand Hotel.
-Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+Reference: _Wikipedia_. “Hilbert’s paradox of the Grand Hotel.” March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1282619893).
 <!--ID: 1736711693547-->
 END%%
 
@@ -2445,7 +2445,7 @@ Hilbert's hotel shows that any finite or countably infinite number of additional
 Basic
 How many rooms exist in Hilbert's Hotel?
 Back: A countably infinite number.
-Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+Reference: _Wikipedia_. “Hilbert’s paradox of the Grand Hotel.” March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1282619893).
 <!--ID: 1736711693551-->
 END%%
 
@@ -2453,7 +2453,7 @@ END%%
 Basic
 What does Hilbert's Hotel assume about every one of its rooms?
 Back: That they are occupied.
-Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+Reference: _Wikipedia_. “Hilbert’s paradox of the Grand Hotel.” March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1282619893).
 <!--ID: 1736711693552-->
 END%%
 
@@ -2461,7 +2461,7 @@ END%%
 Basic
 How many rooms are there assumed to be in Hilbert's Hotel?
 Back: A countably infinite number of them, i.e. $\omega$.
-Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+Reference: _Wikipedia_. “Hilbert’s paradox of the Grand Hotel.” March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1282619893).
 <!--ID: 1736711693553-->
 END%%
 
@@ -2469,7 +2469,7 @@ END%%
 Basic
 Add one guest to Hilbert's Hotel. Typically, the occupant of room $n$ moves to what room?
 Back: $n + 1$
-Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+Reference: _Wikipedia_. “Hilbert’s paradox of the Grand Hotel.” March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1282619893).
 <!--ID: 1736711693554-->
 END%%
 
@@ -2477,7 +2477,7 @@ END%%
 Basic
 Add $k \in \mathbb{N}$ guests to Hilbert's Hotel. Typically, the occupant of room $n$ moves to what room?
 Back: $n + k$
-Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+Reference: _Wikipedia_. “Hilbert’s paradox of the Grand Hotel.” March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1282619893).
 <!--ID: 1736711693555-->
 END%%
 
@@ -2485,7 +2485,7 @@ END%%
 Basic
 Add a countably infinite number of guests to Hilbert's Hotel. Typically, the occupant of room $n$ moves to what room?
 Back: $2n$
-Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+Reference: _Wikipedia_. “Hilbert’s paradox of the Grand Hotel.” March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1282619893).
 <!--ID: 1736711693556-->
 END%%
 
@@ -2493,7 +2493,7 @@ END%%
 Basic
 Add a countably infinite number of guests to Hilbert's Hotel. Moving occupant of room $n$ to room $2n$ makes which rooms available?
 Back: All odd-numbered rooms.
-Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+Reference: _Wikipedia_. “Hilbert’s paradox of the Grand Hotel.” March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1282619893).
 <!--ID: 1736711693557-->
 END%%
 
@@ -2501,7 +2501,7 @@ END%%
 Basic
 What "paradox" does Hilbert's Hotel raise?
 Back: A fully occupied hotel can still make room for more guests.
-Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+Reference: _Wikipedia_. “Hilbert’s paradox of the Grand Hotel.” March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1282619893).
 <!--ID: 1736711693558-->
 END%%
 
@@ -2509,7 +2509,7 @@ END%%
 Basic
 Hilbert's paradox of the Grand Hotel illustates the existence of what mathematical entity?
 Back: A bijection between any countably infinite set and $\mathbb{N}$.
-Reference: “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+Reference: _Wikipedia_. “Hilbert’s paradox of the Grand Hotel.” March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1282619893).
 <!--ID: 1736711693559-->
 END%%
 
@@ -2677,4 +2677,4 @@ END%%
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-* “Hilbert’s Paradox of the Grand Hotel.” In _Wikipedia_, December 23, 2024. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1264833516).
+* _Wikipedia_. “Hilbert’s paradox of the Grand Hotel.” March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel](https://en.wikipedia.org/w/index.php?title=Hilbert%27s_paradox_of_the_Grand_Hotel&oldid=1282619893).

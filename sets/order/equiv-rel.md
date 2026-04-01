@@ -30,7 +30,7 @@ END%%
 %%ANKI
 Cloze
 A preorder satisfying {symmetry} is an {equivalence relation}.
-Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+Reference: _Wikipedia_. “Preorder.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1297574464).
 <!--ID: 1723814834787-->
 END%%
 
@@ -483,3 +483,4 @@ END%%
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+* _Wikipedia_. “Preorder.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1297574464).

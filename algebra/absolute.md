@@ -143,7 +143,7 @@ Basic
 What algebraic inequality is demonstrated in the following?
 ![[triangle-inequality.png]]
 Back: The (reverse) triangle inequality of $\mathbb{R}$.
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1724609565724-->
 END%%
 
@@ -152,7 +152,7 @@ Basic
 What degenerate triangle justifies use of $\leq$ over $<$ in the triangle inequality of $\mathbb{R}$?
 Back:
 ![[triangle-inequality-degenerate.png]]
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1724609565725-->
 END%%
 
@@ -160,7 +160,7 @@ END%%
 Basic
 What two chains of inequalities can be added together to prove the triangle inequality of $\mathbb{R}$?
 Back: $-\lvert x \rvert \leq x \leq \lvert x \rvert$ and $-\lvert y \rvert \leq y \leq \lvert y \rvert$.
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1724609565726-->
 END%%
 
@@ -168,7 +168,7 @@ END%%
 Basic
 Analytically speaking, what does the general triangle inequality of $\mathbb{R}$ state?
 Back: For real numbers $a_1, \ldots, a_n$, $$\left\lvert \sum_{k=1}^n a_k \right\rvert \leq \sum_{k=1}^n \lvert a_k \rvert$$
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1724611618744-->
 END%%
 
@@ -176,7 +176,7 @@ END%%
 Basic
 Let $a_1\, \ldots, a_n \in \mathbb{R}$. What is the following a generalization of? $$\left\lvert \sum_{k=1}^n a_k \right\rvert \leq \sum_{k=1}^n \lvert a_k \rvert$$
 Back: The triangle inequality of $\mathbb{R}$.
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1724611618749-->
 END%%
 
@@ -184,21 +184,21 @@ END%%
 Basic
 How does vector addition demonstrate the triangle inequality?
 Back: The resultant vector is maximized when two vectors share the same orientation.
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1753095231985-->
 END%%
 
 %%ANKI
 Cloze
 Let $x, y \in \mathbb{R}$. The triangle inequality states that {$\lvert x + y \rvert$} $\leq$ {$\lvert x \rvert + \lvert y \rvert$}.
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1753095231993-->
 END%%
 
 %%ANKI
 Cloze
 The length of any side of a triangle is {less than} or equal to the {sum} of the other two side lengths.
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1753095321560-->
 END%%
 
@@ -227,35 +227,35 @@ END%%
 Basic
 How does vector subtraction demonstrate the reverse triangle inequality?
 Back: The resultant vector is minimized when two vectors share the same orientation.
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1753095231999-->
 END%%
 
 %%ANKI
 Cloze
 The {1:triangle inequality} is to {2:vector addition} whereas the {2:reverse triangle inequality} is to {1:vector subtraction}.
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1753095232002-->
 END%%
 
 %%ANKI
 Cloze
 Let $x, y \in \mathbb{R}$. The reverse triangle inequality states that {$\lvert \lvert x \rvert - \lvert y \rvert \rvert$} $\leq$ {$\lvert x - y \rvert$}.
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1753095232005-->
 END%%
 
 %%ANKI
 Cloze
 The {1:triangle inequality} is to {2:upper bounds} whereas the {2:reverse triangle inequality} is to {1:lower bounds}.
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1753095232007-->
 END%%
 
 %%ANKI
 Cloze
 The length of any side of a triangle is {greater than} or equal to the {difference} of the other two side lengths.
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1753095321572-->
 END%%
 
@@ -263,7 +263,7 @@ END%%
 Basic
 Let $x, y \in \mathbb{R}$. How do we show $\lvert x \rvert - \lvert y \rvert \leq \lvert x - y \rvert$?
 Back: By applying the triangle inequality to $\lvert (x - y) + y \rvert$.
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1753364926458-->
 END%%
 
@@ -271,11 +271,11 @@ END%%
 Basic
 Let $x, y \in \mathbb{R}$. How do we show $\lvert x \rvert - \lvert y \rvert \geq -\lvert x - y \rvert$?
 Back: By applying the triangle inequality to $\lvert (y - x) + x \rvert$.
-Reference: “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+Reference: _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).
 <!--ID: 1753364926466-->
 END%%
 
 ## Bibliography
 
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
-* “Triangle Inequality.” In _Wikipedia_, July 1, 2024. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1232015318).
+* _Wikipedia_. “Triangle inequality.” June 18, 2025. [https://en.wikipedia.org/w/index.php?title=Triangle_inequality](https://en.wikipedia.org/w/index.php?title=Triangle_inequality&oldid=1296181041).

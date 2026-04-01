@@ -24,7 +24,7 @@ In most fields, a canoncial form specifies a *unique* representation.
 Basic
 What is ARS an acronym for?
 Back: **A**bstract **R**ewriting **S**ystem.
-Reference: “Normal Form,” in _Wikipedia_, April 27, 2024, [https://en.wikipedia.org/w/index.php?title=Normal_form](https://en.wikipedia.org/w/index.php?title=Normal_form_(abstract_rewriting)&oldid=1221094193).
+Reference: _Wikipedia_. “Normal form (abstract rewriting).” February 18, 2025. [https://en.wikipedia.org/w/index.php?title=Normal_form_(abstract_rewriting)](https://en.wikipedia.org/w/index.php?title=Normal_form_\(abstract_rewriting\)&oldid=1276404053).
 <!--ID: 1719067812812-->
 END%%
 
@@ -32,7 +32,7 @@ END%%
 Basic
 Canonical/normal forms are associated with what general class of abstract systems?
 Back: Abstract rewriting systems.
-Reference: “Canonical Form,” in _Wikipedia_, January 7, 2024, [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1194093963).
+Reference: _Wikipedia_. “Canonical form.” January 30, 2025. [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1272922386).
 <!--ID: 1719067812820-->
 END%%
 
@@ -40,14 +40,14 @@ END%%
 Basic
 What does it mean for an object to be in normal form?
 Back: It cannot be rewritten any further, i.e. it is irreducible.
-Reference: Normal Form,” in _Wikipedia_, April 27, 2024, [https://en.wikipedia.org/w/index.php?title=Normal_form](https://en.wikipedia.org/w/index.php?title=Normal_form_(abstract_rewriting)&oldid=1221094193).
+Reference: _Wikipedia_. “Normal form (abstract rewriting).” February 18, 2025. [https://en.wikipedia.org/w/index.php?title=Normal_form_(abstract_rewriting)](https://en.wikipedia.org/w/index.php?title=Normal_form_\(abstract_rewriting\)&oldid=1276404053).
 END%%
 
 %%ANKI
 Basic
 What does it mean for an object to be in canonical form?
 Back: It is presented in the "standard" way with respect to the field its presented in.
-Reference: “Canonical Form,” in _Wikipedia_, January 7, 2024, [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1194093963).
+Reference: _Wikipedia_. “Canonical form.” January 30, 2025. [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1272922386).
 <!--ID: 1719067812824-->
 END%%
 
@@ -55,7 +55,7 @@ END%%
 Basic
 What two assumptions are usually associated with an object in canonical form?
 Back: It is as simply represented as possible and it is uniquely identifying.
-Reference: “Canonical Form,” in _Wikipedia_, January 7, 2024, [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1194093963).
+Reference: _Wikipedia_. “Canonical form.” January 30, 2025. [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1272922386).
 <!--ID: 1719067812829-->
 END%%
 
@@ -63,7 +63,7 @@ END%%
 Basic
 How do "canonical" and "normal" forms differ in most fields?
 Back: The former usually specifies a unique representation for the object.
-Reference: “Canonical Form,” in _Wikipedia_, January 7, 2024, [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1194093963).
+Reference: _Wikipedia_. “Canonical form.” January 30, 2025. [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1272922386).
 <!--ID: 1719067812833-->
 END%%
 
@@ -99,7 +99,7 @@ END%%
 Basic
 What is confluence?
 Back: A property by which two different terms can be further reduced to one common term.
-Reference: “Confluence (Abstract Rewriting),” in _Wikipedia_, May 22, 2024, [https://en.wikipedia.org/w/index.php?title=Confluence](https://en.wikipedia.org/w/index.php?title=Confluence_(abstract_rewriting)&oldid=1225041322).
+Reference: _Wikipedia_. “Confluence (abstract rewriting).” June 26, 2025. [https://en.wikipedia.org/w/index.php?title=Confluence_(abstract_rewriting)](https://en.wikipedia.org/w/index.php?title=Confluence_\(abstract_rewriting\)&oldid=1297553970).
 <!--ID: 1719578045810-->
 END%%
 
@@ -107,7 +107,7 @@ END%%
 Basic
 How might $(11 + 9) \times (2 + 4)$ be reduced to demonstrate confluence?
 Back: As $20 \times (2 + 4)$ and as $(11 + 9) \times 6$.
-Reference: “Confluence (Abstract Rewriting),” in _Wikipedia_, May 22, 2024, [https://en.wikipedia.org/w/index.php?title=Confluence](https://en.wikipedia.org/w/index.php?title=Confluence_(abstract_rewriting)&oldid=1225041322).
+Reference: _Wikipedia_. “Confluence (abstract rewriting).” June 26, 2025. [https://en.wikipedia.org/w/index.php?title=Confluence_(abstract_rewriting)](https://en.wikipedia.org/w/index.php?title=Confluence_\(abstract_rewriting\)&oldid=1297553970).
 <!--ID: 1719578045839-->
 END%%
 
@@ -115,12 +115,12 @@ END%%
 Basic
 How might $(\lambda x. (\lambda y. yx)z)v$ be reduced to demonstrate confluence?
 Back: As $(\lambda y.yv)z$ and as $(\lambda x. zx)v$.
-Reference: “Confluence (Abstract Rewriting),” in _Wikipedia_, May 22, 2024, [https://en.wikipedia.org/w/index.php?title=Confluence](https://en.wikipedia.org/w/index.php?title=Confluence_(abstract_rewriting)&oldid=1225041322).
+Reference: _Wikipedia_. “Confluence (abstract rewriting).” June 26, 2025. [https://en.wikipedia.org/w/index.php?title=Confluence_(abstract_rewriting)](https://en.wikipedia.org/w/index.php?title=Confluence_\(abstract_rewriting\)&oldid=1297553970).
 <!--ID: 1719578045843-->
 END%%
 
 ## Bibliography
 
-* “Canonical Form,” in _Wikipedia_, January 7, 2024, [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1194093963).
-* “Confluence (Abstract Rewriting),” in _Wikipedia_, May 22, 2024, [https://en.wikipedia.org/w/index.php?title=Confluence](https://en.wikipedia.org/w/index.php?title=Confluence_(abstract_rewriting)&oldid=1225041322).
-* Normal Form,” in _Wikipedia_, April 27, 2024, [https://en.wikipedia.org/w/index.php?title=Normal_form](https://en.wikipedia.org/w/index.php?title=Normal_form_(abstract_rewriting)&oldid=1221094193).
+* _Wikipedia_. “Canonical form.” January 30, 2025. [https://en.wikipedia.org/w/index.php?title=Canonical_form](https://en.wikipedia.org/w/index.php?title=Canonical_form&oldid=1272922386).
+* _Wikipedia_. “Confluence (abstract rewriting).” June 26, 2025. [https://en.wikipedia.org/w/index.php?title=Confluence_(abstract_rewriting)](https://en.wikipedia.org/w/index.php?title=Confluence_\(abstract_rewriting\)&oldid=1297553970).
+* _Wikipedia_. “Normal form (abstract rewriting).” February 18, 2025. [https://en.wikipedia.org/w/index.php?title=Normal_form_(abstract_rewriting)](https://en.wikipedia.org/w/index.php?title=Normal_form_\(abstract_rewriting\)&oldid=1276404053).

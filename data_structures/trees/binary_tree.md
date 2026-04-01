@@ -60,7 +60,7 @@ END%%
 Basic
 Is a perfect binary tree considered full?
 Back: Yes.
-Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+Reference: _Wikipedia_. “Binary tree.” May 28, 2025. [https://en.wikipedia.org/w/index.php?title=Binary_tree](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1292801415).
 <!--ID: 1714088438720-->
 END%%
 
@@ -68,7 +68,7 @@ END%%
 Basic
 Is a full binary tree considered perfect?
 Back: Not necessarily.
-Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+Reference: _Wikipedia_. “Binary tree.” May 28, 2025. [https://en.wikipedia.org/w/index.php?title=Binary_tree](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1292801415).
 <!--ID: 1714088438726-->
 END%%
 
@@ -76,7 +76,7 @@ END%%
 Basic
 Is a full binary tree considered complete?
 Back: Not necessarily.
-Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+Reference: _Wikipedia_. “Binary tree.” May 28, 2025. [https://en.wikipedia.org/w/index.php?title=Binary_tree](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1292801415).
 <!--ID: 1714088438729-->
 END%%
 
@@ -84,7 +84,7 @@ END%%
 Basic
 Is a complete binary tree considered full?
 Back: Not necessarily.
-Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+Reference: _Wikipedia_. “Binary tree.” May 28, 2025. [https://en.wikipedia.org/w/index.php?title=Binary_tree](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1292801415).
 <!--ID: 1714088438733-->
 END%%
 
@@ -92,14 +92,15 @@ END%%
 Basic
 What alternative term is sometimes used in favor of a "perfect binary tree"?
 Back: A "complete binary tree".
-Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+Reference: _Wikipedia_. “Binary tree.” May 28, 2025. [https://en.wikipedia.org/w/index.php?title=Binary_tree](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1292801415).
 <!--ID: 1714088438737-->
 END%%
+
 %%ANKI
 Basic
 What alternative term is sometimes used in favor over a "complete binary tree"?
 Back: Some authors may say "nearly complete" if the last level isn't completely filled.
-Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+Reference: _Wikipedia_. “Binary tree.” May 28, 2025. [https://en.wikipedia.org/w/index.php?title=Binary_tree](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1292801415).
 <!--ID: 1714088438744-->
 END%%
 
@@ -319,5 +320,5 @@ END%%
 
 ## Bibliography
 
-* “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
 * Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+* _Wikipedia_. “Binary tree.” May 28, 2025. [https://en.wikipedia.org/w/index.php?title=Binary_tree](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1292801415).

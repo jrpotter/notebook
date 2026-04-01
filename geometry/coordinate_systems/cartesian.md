@@ -70,7 +70,7 @@ END%%
 %%ANKI
 Cloze
 The {origin} of a Cartesian coordinate system has coordinates $\langle 0, 0 \rangle$.
-Reference: “Cartesian Coordinate System,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system](https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system&oldid=1252434514).
+Reference: _Wikipedia_. “Cartesian coordinate system.” June 1, 2025. [https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system](https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system&oldid=1293307614).
 <!--ID: 1731184876657-->
 END%%
 
@@ -802,7 +802,7 @@ END%%
 
 ## Bibliography
 
-* “Cartesian Coordinate System,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system](https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system&oldid=1252434514).
 * “James Jones, “Shifting, Reflecting, and Stretching Graphs,” accessed December 6, 2024, [https://people.richland.edu/james/lecture/m116/functions/translations.html](https://people.richland.edu/james/lecture/m116/functions/translations.html).
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+* _Wikipedia_. “Cartesian coordinate system.” June 1, 2025. [https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system](https://en.wikipedia.org/w/index.php?title=Cartesian_coordinate_system&oldid=1293307614).

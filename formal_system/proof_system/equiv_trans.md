@@ -291,7 +291,7 @@ END%%
 Basic
 What does the principle of explosion state?
 Back: That any statement can be proven from a contradiction.
-Reference: “Principle of Explosion,” in _Wikipedia_, July 3, 2024, [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1232334233).
+Reference: _Wikipedia_. “Principle of explosion.” May 15, 2025. [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1290580995).
 <!--ID: 1721354092779-->
 END%%
 
@@ -299,7 +299,7 @@ END%%
 Basic
 How is the principle of explosion stated in first-order logic?
 Back: $\forall P, F \Rightarrow P$
-Reference: “Principle of Explosion,” in _Wikipedia_, July 3, 2024, [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1232334233).
+Reference: _Wikipedia_. “Principle of explosion.” May 15, 2025. [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1290580995).
 <!--ID: 1721354092783-->
 END%%
 
@@ -315,7 +315,7 @@ END%%
 Basic
 How does the principle of explosion relate to the law of contradiction?
 Back: If a contradiction could be proven, then anything can be proven (using the principle of explosion).
-Reference: “Principle of Explosion,” in _Wikipedia_, July 3, 2024, [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1232334233).
+Reference: _Wikipedia_. “Principle of explosion.” May 15, 2025. [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1290580995).
 <!--ID: 1721354092789-->
 END%%
 
@@ -323,14 +323,14 @@ END%%
 Basic
 Suppose $P$ and $\neg P$. Show schematically how to use the principle of explosion to prove $Q$.
 Back: $$\begin{align*} P \\ \neg P \\ P \lor Q \\ \hline Q \end{align*}$$
-Reference: “Principle of Explosion,” in _Wikipedia_, July 3, 2024, [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1232334233).
+Reference: _Wikipedia_. “Principle of explosion.” May 15, 2025. [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1290580995).
 <!--ID: 1721354092792-->
 END%%
 
 %%ANKI
 Cloze
 The law of {contradiction} and law of {excluded middle} create a dichotomy in "logical space".
-Reference: “Law of Noncontradiction,” in _Wikipedia_, June 14, 2024, [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1229006759).
+Reference: _Wikipedia_. “Law of noncontradiction.” June 13, 2025. [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1295459298).
 <!--ID: 1721354092795-->
 END%%
 
@@ -338,7 +338,7 @@ END%%
 Basic
 Which property of partitions is analogous to the law of contradiction on "logical space"?
 Back: Disjointedness.
-Reference: “Law of Noncontradiction,” in _Wikipedia_, June 14, 2024, [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1229006759).
+Reference: _Wikipedia_. “Law of noncontradiction.” June 13, 2025. [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1295459298).
 <!--ID: 1721354092798-->
 END%%
 
@@ -346,14 +346,14 @@ END%%
 Basic
 Which property of partitions is analogous to the law of excluded middle on "logical space"?
 Back: Exhaustiveness.
-Reference: “Law of Noncontradiction,” in _Wikipedia_, June 14, 2024, [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1229006759).
+Reference: _Wikipedia_. “Law of noncontradiction.” June 13, 2025. [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1295459298).
 <!--ID: 1721354092801-->
 END%%
 
 %%ANKI
 Cloze
 The law of {1:contradiction} is to "{2:mutually exclusive}" whereas the law of {2:excluded middle} is "{1:jointly exhaustive}".
-Reference: “Law of Noncontradiction,” in _Wikipedia_, June 14, 2024, [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1229006759).
+Reference: _Wikipedia_. “Law of noncontradiction.” June 13, 2025. [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1295459298).
 <!--ID: 1721354092805-->
 END%%
 
@@ -361,7 +361,7 @@ END%%
 Basic
 Which logical law proves equivalence of the law of contradiction and excluded middle?
 Back: De Morgan's law.
-Reference: “Law of Noncontradiction,” in _Wikipedia_, June 14, 2024, [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1229006759).
+Reference: _Wikipedia_. “Law of noncontradiction.” June 13, 2025. [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1295459298).
 <!--ID: 1721355020261-->
 END%%
 
@@ -1548,3 +1548,5 @@ END%%
 ## Bibliography
 
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
+* _Wikipedia_. “Law of noncontradiction.” June 13, 2025. [https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction](https://en.wikipedia.org/w/index.php?title=Law_of_noncontradiction&oldid=1295459298).
+* _Wikipedia_. “Principle of explosion.” May 15, 2025. [https://en.wikipedia.org/w/index.php?title=Principle_of_explosion](https://en.wikipedia.org/w/index.php?title=Principle_of_explosion&oldid=1290580995).

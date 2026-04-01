@@ -260,13 +260,15 @@ END%%
 
 ### Operation
 
-An **operation** on some set (say) $S$ is a function with "signature" $S \times \cdots \times S \rightarrow S$. More precisely, an $n$-ary operation on $S$ is a function $S^n \rightarrow S$ where $n \geq 0$.
+An **operation** $*$ on set $S$ is a function mapping elements of $S \times \cdots \times S$ into $S$. That is, an $n$-ary operation $*$ on $S$ is a function $S^n \rightarrow S$ where $n \geq 0$.
+
+An **induced operation** of $*$ on $H \subseteq S$ is the operation formed by [[relations#Restrictions|restricting]] $*$ to $H$.
 
 %%ANKI
 Basic
 Let $A$ and $B$ be disjoint sets. Is $f \colon A \rightarrow B$ a function, operation, both, or neither?
 Back: Function.
-Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
 <!--ID: 1729804914205-->
 END%%
 
@@ -274,7 +276,7 @@ END%%
 Basic
 Let $A \subseteq B$. Is $f \colon A \rightarrow B$ a function, operation, or both?
 Back: Both.
-Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
 <!--ID: 1729804914206-->
 END%%
 
@@ -282,7 +284,7 @@ END%%
 Basic
 Let $A$ and $B$ be disjoint sets. $f \colon A \rightarrow B$ is an operation on what set?
 Back: N/A. $f$ is not an operation.
-Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
 <!--ID: 1729804914207-->
 END%%
 
@@ -290,7 +292,7 @@ END%%
 Basic
 Let $A \subseteq B$. $f \colon A \rightarrow B$ is an operation on what set?
 Back: $B$.
-Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
 <!--ID: 1729804914208-->
 END%%
 
@@ -298,7 +300,7 @@ END%%
 Basic
 What is the arity of operation $f \colon A \rightarrow A$?
 Back: $1$
-Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
 <!--ID: 1729804914209-->
 END%%
 
@@ -306,7 +308,7 @@ END%%
 Basic
 What is the arity of operation $f \colon A \times A \rightarrow A$?
 Back: $2$
-Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
 <!--ID: 1729804914210-->
 END%%
 
@@ -314,7 +316,7 @@ END%%
 Basic
 What is the arity of operation $f \colon A \times \cdots \times A \rightarrow A$?
 Back: The number of terms in $A \times \cdots \times A$.
-Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
 <!--ID: 1729804914211-->
 END%%
 
@@ -322,7 +324,7 @@ END%%
 Basic
 Why is it incomplete to state function $f$ is an operation?
 Back: We have to ask what set $f$ is an operation on.
-Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
 <!--ID: 1729804914212-->
 END%%
 
@@ -330,8 +332,56 @@ END%%
 Basic
 Which of operations or functions is the more general concept?
 Back: Functions.
-Reference: “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
 <!--ID: 1729804914213-->
+END%%
+
+%%ANKI
+Basic
+What is a binary operation $*$ on a set $S$?
+Back: A function mapping $S \times S$ into $S$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775064846975-->
+END%%
+
+%%ANKI
+Basic
+Let $M(\mathbb{R})$ denote all matrices with real entries. Is addition a binary operation on $M(\mathbb{R})$?
+Back: No.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775064846977-->
+END%%
+
+%%ANKI
+Basic
+*Why* isn't addition considered a binary operation on all matrices with real entries?
+Back: Addition is not well-defined for two matrices with different dimensions.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775064846978-->
+END%%
+
+%%ANKI
+Basic
+Let $*$ be a binary operation on $S$. What is an induced operation $*$ on $H \subseteq S$?
+Back: The binary operation formed by restricting $*$ to $H$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775064846979-->
+END%%
+
+%%ANKI
+Basic
+Let $*$ be a binary operation on $S$. Is $S$ closed under $*$?
+Back: Yes (by definition of a binary operation).
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775064846980-->
+END%%
+
+%%ANKI
+Basic
+Let $*$ be a binary operation on $S$. What does it mean for $H \subseteq S$ to be closed under $*$?
+Back: For all $x, y \in H$, $x * y \in H$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775064846981-->
 END%%
 
 ### Total
@@ -1894,10 +1944,11 @@ END%%
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-* “Operation (Mathematics).” In _Wikipedia_, October 10, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)&oldid=1250395938).
+* John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 * _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 * _Wikipedia_. “Cofunction.” September 12, 2023. [https://en.wikipedia.org/w/index.php?title=Cofunction](https://en.wikipedia.org/w/index.php?title=Cofunction&oldid=1175007162).
+* _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
 * _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
 * _Wikipedia_. “Implicit function.” November 30, 2025. [https://en.wikipedia.org/w/index.php?title=Implicit_function](https://en.wikipedia.org/w/index.php?title=Implicit_function&oldid=1325039857).

@@ -366,7 +366,7 @@ The **B+ tree** is a B-tree with the following differences:
 Basic
 What is the *required* distinction between B-trees and B+ trees?
 Back: Values in B+ trees are only stored in leaf nodes.
-Reference: “B-Tree,” in _Wikipedia_, August 7, 2024, [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1239132600).
+Reference: _Wikipedia_. “B-tree.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1296531780).
 <!--ID: 1723325926214-->
 END%%
 
@@ -374,7 +374,7 @@ END%%
 Basic
 In a B-tree, where can values be found?
 Back: In any node.
-Reference: “B-Tree,” in _Wikipedia_, August 7, 2024, [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1239132600).
+Reference: _Wikipedia_. “B-tree.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1296531780).
 <!--ID: 1723325926220-->
 END%%
 
@@ -382,7 +382,7 @@ END%%
 Basic
 In a B+ tree, where can values be found?
 Back: In the leaf nodes.
-Reference: “B-Tree,” in _Wikipedia_, August 7, 2024, [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1239132600).
+Reference: _Wikipedia_. “B-tree.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1296531780).
 <!--ID: 1723325926224-->
 END%%
 
@@ -390,7 +390,7 @@ END%%
 Basic
 What is the *optional* distinction between B-trees and B+ trees?
 Back: A B+ tree leaf node may include a pointer to the next leaf node.
-Reference: “B-Tree,” in _Wikipedia_, August 7, 2024, [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1239132600).
+Reference: _Wikipedia_. “B-tree.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1296531780).
 <!--ID: 1723325926227-->
 END%%
 
@@ -398,7 +398,7 @@ END%%
 Basic
 How is a B+ tree defined in terms of B-trees?
 Back: As a B-tree in which all values must reside in the leaf nodes.
-Reference: “B-Tree,” in _Wikipedia_, August 7, 2024, [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1239132600).
+Reference: _Wikipedia_. “B-tree.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1296531780).
 <!--ID: 1723325926231-->
 END%%
 
@@ -406,7 +406,7 @@ END%%
 Basic
 Why might a B+ tree implementation include pointers from leaf to leaf?
 Back: To speed up sequential access.
-Reference: “B-Tree,” in _Wikipedia_, August 7, 2024, [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1239132600).
+Reference: _Wikipedia_. “B-tree.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1296531780).
 <!--ID: 1723325926235-->
 END%%
 
@@ -414,7 +414,7 @@ END%%
 Basic
 Which of B-trees and B+ trees likely have a higher order?
 Back: B+ trees.
-Reference: “B-Tree,” in _Wikipedia_, August 7, 2024, [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1239132600).
+Reference: _Wikipedia_. “B-tree.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1296531780).
 <!--ID: 1723325926239-->
 END%%
 
@@ -422,7 +422,7 @@ END%%
 Basic
 Why do B+ trees typically have higher orders than B-trees?
 Back: Their internal nodes do not have values, leaving room for more keys.
-Reference: “B-Tree,” in _Wikipedia_, August 7, 2024, [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1239132600).
+Reference: _Wikipedia_. “B-tree.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1296531780).
 <!--ID: 1723325926244-->
 END%%
 
@@ -430,7 +430,7 @@ END%%
 Basic
 Which of B+ trees and B-trees are likely deeper?
 Back: B-trees.
-Reference: “B-Tree,” in _Wikipedia_, August 7, 2024, [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1239132600).
+Reference: _Wikipedia_. “B-tree.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1296531780).
 <!--ID: 1723325926249-->
 END%%
 
@@ -438,12 +438,12 @@ END%%
 Basic
 Why are B+ trees typically shallower than B-trees?
 Back: Their internal nodes do not have values, leaving room for more keys.
-Reference: “B-Tree,” in _Wikipedia_, August 7, 2024, [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1239132600).
+Reference: _Wikipedia_. “B-tree.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1296531780).
 <!--ID: 1723325926253-->
 END%%
 
 ## Bibliography
 
-* “B-Tree,” in _Wikipedia_, August 7, 2024, [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1239132600).
 * Donald Ervin Knuth, _Art of Computer Programming, 3: Sorting and Searching_, 2. ed., 34. (Reading, Mass: Addison-Wesley, 1995).
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+* _Wikipedia_. “B-tree.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=B-tree](https://en.wikipedia.org/w/index.php?title=B-tree&oldid=1296531780).

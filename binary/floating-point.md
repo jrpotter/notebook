@@ -1015,4 +1015,3 @@ END%%
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-* “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).

@@ -24,7 +24,7 @@ TODO - expand on fields and relation with arithmetic
 Basic
 What is arithmetic?
 Back: A branch of mathematics dealing with, at its most basic level, addition, subtraction, multiplication, and division.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1751748536945-->
 END%%
 
@@ -32,7 +32,7 @@ END%%
 Basic
 What are the four most basic operations employed in arithmetic?
 Back: Addition, subtraction, multiplication, and division.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1751748536949-->
 END%%
 
@@ -40,7 +40,7 @@ END%%
 Basic
 In a wider sense, arithmetic includes what other two operations beyond the basic four?
 Back: Exponentiation and logarithms.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1751748536950-->
 END%%
 
@@ -48,63 +48,63 @@ END%%
 Basic
 Let $a, b \in \mathbb{R}$. How do we write product $a \cdot b$ as a fraction?
 Back: Assuming $b \neq 0$, as $a / (1 / b)$.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1772631794969-->
 END%%
 
 %%ANKI
 Cloze
 In expression $x + y$, {$x$} is referred to as the {augend}.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953400987-->
 END%%
 
 %%ANKI
 Cloze
 In expression $x + y$, {$y$} is referred to as the {addend}.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953400990-->
 END%%
 
 %%ANKI
 Cloze
 In expression $x - y$, {$x$} is referred to as the {minuend}.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953400991-->
 END%%
 
 %%ANKI
 Cloze
 In expression $x - y$, {$y$} is referred to as the {subtrahend}.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953400992-->
 END%%
 
 %%ANKI
 Cloze
 In expression $x \times y$, {$x$} is referred to as the {multiplicand}.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953400993-->
 END%%
 
 %%ANKI
 Cloze
 In expression $x \times y$, {$y$} is referred to as the {multiplier}.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953400994-->
 END%%
 
 %%ANKI
 Cloze
 In expression $x \div y$, {$x$} is referred to as the {dividend}.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953400995-->
 END%%
 
 %%ANKI
 Cloze
 In expression $x \div y$, {$y$} is referred to as the {divisor}.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953400996-->
 END%%
 
@@ -112,7 +112,7 @@ END%%
 Basic
 Which of the addend or augend is listed first, left-to-right?
 Back: The augend.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953400997-->
 END%%
 
@@ -120,7 +120,7 @@ END%%
 Basic
 Which of the minuend or subtrahend is listed first, left-to-right?
 Back: The minuend.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953400998-->
 END%%
 
@@ -128,7 +128,7 @@ END%%
 Basic
 Which of the multiplicand or multiplier is listed first, left-to-right?
 Back: The multiplicand.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953400999-->
 END%%
 
@@ -136,35 +136,35 @@ END%%
 Basic
 Which of the divisor or dividend is listed first, left-to-right?
 Back: The dividend.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953401000-->
 END%%
 
 %%ANKI
 Cloze
 The {minuend} is to subtraction as the {multiplicand} is to multiplication.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953401001-->
 END%%
 
 %%ANKI
 Cloze
 The {subtrahend} is to subtraction as the {multiplier} is to multiplication.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953401002-->
 END%%
 
 %%ANKI
 Cloze
 The {addend} is to addition as the {divisor} is to division.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953401003-->
 END%%
 
 %%ANKI
 Cloze
 The {augend} is to addition as the {dividend} is to division.
-Reference: “Arithmetic.” In _Wikipedia_, June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549)
+Reference: _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 <!--ID: 1773953401004-->
 END%%
 
@@ -182,7 +182,11 @@ END%%
 
 ## Reals
 
-The set of all real numbers is a field, denoted $\mathbb{R}$.
+The set of all real numbers is a field, denoted $\mathbb{R}$. In addition, the following notation is often used to denote subsets of $\mathbb{R}$:
+
+* $\mathbb{R}_c = \{ x \in \mathbb{R} \mid 0 \leq x < c \}$ for $c \in \mathbb{R}$
+* $\mathbb{R}^+ = \{ x \in \mathbb{R} \mid x > 0 \}$
+* $\mathbb{R}^* = \{x \in \mathbb{R} \mid x \neq 0 \}$
 
 %%ANKI
 Basic
@@ -190,6 +194,54 @@ How is the set of real numbers usually denoted?
 Back: As $\mathbb{R}$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775062060390-->
+END%%
+
+%%ANKI
+Basic
+What set does Fraleigh refer to with notation $\mathbb{R}_c$ for some $c \in \mathbb{R}$?
+Back: $\{ x \in \mathbb{R} \mid 0 \leq x < c \}$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775064846983-->
+END%%
+
+%%ANKI
+Basic
+How is the following set usually denoted? $$\{ x \in \mathbb{R} \mid 0 \leq x < c \}, \quad c \in \mathbb{R}$$
+Back: As $\mathbb{R}_c$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775064905163-->
+END%%
+
+%%ANKI
+Basic
+What set does Fraleigh refer to with notation $\mathbb{R}^*$ for some $c \in \mathbb{R}$?
+Back: $\{ x \in \mathbb{R} \mid x \neq 0 \}$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775064846984-->
+END%%
+
+%%ANKI
+Basic
+How is the following set usually denoted? $$\{ x \in \mathbb{R} \mid x \neq 0 \}$$
+Back: As $\mathbb{R}^*$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775064905171-->
+END%%
+
+%%ANKI
+Basic
+What set does Fraleigh refer to with notation $\mathbb{R}^+$ for some $c \in \mathbb{R}$?
+Back: $\{ x \in \mathbb{R} \mid x > 0 \}$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775064846985-->
+END%%
+
+%%ANKI
+Basic
+How is the following set usually denoted? $$\{ x \in \mathbb{R} \mid x > 0 \}$$
+Back: As $\mathbb{R}^+$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775064905176-->
 END%%
 
 ## Complex
@@ -810,4 +862,5 @@ END%%
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 * _Wikipedia_. “Argument (complex analysis).” August 3, 2025. [https://en.wikipedia.org/w/index.php?title=Argument_(complex_analysis)](https://en.wikipedia.org/w/index.php?title=Argument_\(complex_analysis\)&oldid=1304064700).
+* _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
 * _Wikipedia_. “Complex plane.” May 6, 2025. [https://en.wikipedia.org/w/index.php?title=Complex_plane](https://en.wikipedia.org/w/index.php?title=Complex_plane&oldid=1289176675).

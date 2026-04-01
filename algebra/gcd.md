@@ -18,7 +18,7 @@ If exactly one of $a$ or $b$ is zero, the GCD is defined as the absolute value o
 Basic
 What is GCD an acronym for?
 Back: **G**reatest **c**ommon **d**ivisor.
-Reference: “Greatest Common Divisor.” In _Wikipedia_, July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
+Reference: _Wikipedia_. “Greatest common divisor.” July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
 <!--ID: 1751830087187-->
 END%%
 
@@ -26,7 +26,7 @@ END%%
 Basic
 What is the greatest common divisor of integers $a$ and $b$?
 Back: The greatest positive integer that divides both $a$ and $b$.
-Reference: “Greatest Common Divisor.” In _Wikipedia_, July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
+Reference: _Wikipedia_. “Greatest common divisor.” July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
 <!--ID: 1751830087188-->
 END%%
 
@@ -34,7 +34,7 @@ END%%
 Basic
 How is the greatest common divisor of integers $a$ and $b$ denoted?
 Back: $\gcd(a, b)$
-Reference: “Greatest Common Divisor.” In _Wikipedia_, July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
+Reference: _Wikipedia_. “Greatest common divisor.” July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
 <!--ID: 1751830087189-->
 END%%
 
@@ -42,7 +42,7 @@ END%%
 Basic
 Let $d = \gcd(a, b)$. What conditions must $d$ satisfy?
 Back: It is the greatest positive integer that divides both $a$ and $b$.
-Reference: “Greatest Common Divisor.” In _Wikipedia_, July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
+Reference: _Wikipedia_. “Greatest common divisor.” July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
 <!--ID: 1751830087190-->
 END%%
 
@@ -50,7 +50,7 @@ END%%
 Basic
 Let $a$ be a nonzero integer. What does $\gcd(a, 0)$ evaluate to?
 Back: $\lvert a \rvert$
-Reference: “Greatest Common Divisor.” In _Wikipedia_, July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
+Reference: _Wikipedia_. “Greatest common divisor.” July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
 <!--ID: 1751830087191-->
 END%%
 
@@ -58,7 +58,7 @@ END%%
 Basic
 Let $b$ be a nonzero integer. What does $\gcd(0, b)$ evaluate to?
 Back: $\lvert b \rvert$
-Reference: “Greatest Common Divisor.” In _Wikipedia_, July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
+Reference: _Wikipedia_. “Greatest common divisor.” July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
 <!--ID: 1751830087192-->
 END%%
 
@@ -66,7 +66,7 @@ END%%
 Basic
 What does $\gcd(0, 0)$ evaluate to?
 Back: Some regard it as undefined, others regard it as $0$.
-Reference: “Greatest Common Divisor.” In _Wikipedia_, July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
+Reference: _Wikipedia_. “Greatest common divisor.” July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
 <!--ID: 1751830087193-->
 END%%
 
@@ -74,7 +74,7 @@ END%%
 Basic
 What argument is made to justify $\gcd(0, 0)$ being undefined?
 Back: There is no greatest integer $d$ satisfying $d \cdot 0 = 0$.
-Reference: “Greatest Common Divisor.” In _Wikipedia_, July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
+Reference: _Wikipedia_. “Greatest common divisor.” July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
 <!--ID: 1751830087194-->
 END%%
 
@@ -82,7 +82,7 @@ END%%
 Basic
 What argument is made to justify $\gcd(0, 0)$ equaling $0$?
 Back: $0$ is the greatest divisor with respect to the divisibility relation.
-Reference: “Greatest Common Divisor.” In _Wikipedia_, July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
+Reference: _Wikipedia_. “Greatest common divisor.” July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
 <!--ID: 1751830087195-->
 END%%
 
@@ -134,7 +134,7 @@ If either $a$ or $b$ is zero, the LCM is sometimes considered undefined and some
 Basic
 What is LCM an acronym for?
 Back: **L**east **c**ommon **m**ultiple..
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751830087200-->
 END%%
 
@@ -142,7 +142,7 @@ END%%
 Basic
 What is the least common multiple of integers $a$ and $b$?
 Back: The smallest positive integer that can be divided by both $a$ and $b$.
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751830087201-->
 END%%
 
@@ -150,7 +150,7 @@ END%%
 Basic
 How is the least common multiple of integers $a$ and $b$ denoted?
 Back: $\mathop{\text{lcm}}(a, b)$
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751830087202-->
 END%%
 
@@ -158,7 +158,7 @@ END%%
 Basic
 Let $d = \mathop{\text{lcm}}(a, b)$. What conditions must $d$ satisfy?
 Back: It is the smallest positive integer that can be divided by both $a$ and $b$.
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751830087203-->
 END%%
 
@@ -166,7 +166,7 @@ END%%
 Basic
 Let $a$ be an integer. What does $\mathop{\text{lcm}}(a, 0)$ evaluate to?
 Back: Some regard it as undefined, others regard it as $0$.
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751830087204-->
 END%%
 
@@ -174,7 +174,7 @@ END%%
 Basic
 Let $b$ be an integer. What does $\mathop{\text{lcm}}(0, b)$ evaluate to?
 Back: Some regard it as undefined, others regard it as $0$.
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751830087205-->
 END%%
 
@@ -182,7 +182,7 @@ END%%
 Basic
 What does $\mathop{\text{lcm}}(0, 0)$ evaluate to?
 Back: Some regard it as undefined, others regard it as $0$.
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751830087206-->
 END%%
 
@@ -190,7 +190,7 @@ END%%
 Basic
 Let $a$ be an integer. What argument is made to justify $\mathop{\text{lcm}}(a, 0)$ being undefined?
 Back: Division of zero is undefined.
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751830087207-->
 END%%
 
@@ -198,7 +198,7 @@ END%%
 Basic
 Let $b$ be an integer. What argument is made to justify $\mathop{\text{lcm}}(0, b)$ being undefined?
 Back: Division of zero is undefined.
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751830087208-->
 END%%
 
@@ -206,7 +206,7 @@ END%%
 Basic
 What does $\mathop{\text{lcm}}(2, 3)$ evaluate to?
 Back: $6$.
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 END%%
 
 %%ANKI
@@ -228,7 +228,7 @@ END%%
 Basic
 What arithmetic setting is the LCM most commonly used in?
 Back: Finding the lowest common denominator of two fractions.
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751830087211-->
 END%%
 
@@ -243,7 +243,7 @@ Then $$\begin{align*} \mathop{\text{lcm}}(m, n) & = p_1^{\max(a_1, b_1)} \times 
 Basic
 Le $m, n \in \mathbb{Z}$. What does $\max(m, n) + \min(m, n)$ evaluate to?
 Back: $m + n$
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751831603345-->
 END%%
 
@@ -251,7 +251,7 @@ END%%
 Basic
 Le $m, n \in \mathbb{Z}$. What does $\max(m, n) \cdot \min(m, n)$ evaluate to?
 Back: $m \cdot n$
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751831603360-->
 END%%
 
@@ -260,7 +260,7 @@ Basic
 Let $m, n$ be positive integers with the following factorization. How is $\mathop{\text{lcm}}(m, n)$ defined similarly? $$\begin{align*} m & = p_1^{a_1} \times p_2^{a_2} \times \cdots \times p_k^{a_k} \\ n & = p_1^{b_1} \times p_2^{b_2} \times \cdots 
 \times p_k^{b_k} \end{align*}$$
 Back: $$\mathop{\text{lcm}}(m, n) = p_1^{\max(a_1, b_1)} \times p_2^{\max(a_2, b_2)} \times \cdots \times p_k^{\max(a_k, b_k)}$$
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751831603372-->
 END%%
 
@@ -269,7 +269,7 @@ Basic
 Let $m, n$ be positive integers with the following factorization. How is $\mathop{\text{gcd}}(m, n)$ defined similarly? $$\begin{align*} m & = p_1^{a_1} \times p_2^{a_2} \times \cdots \times p_k^{a_k} \\ n & = p_1^{b_1} \times p_2^{b_2} \times \cdots 
 \times p_k^{b_k} \end{align*}$$
 Back: $$\gcd(m, n) = p_1^{\min(a_1, b_1)} \times p_2^{\min(a_2, b_2)} \times \cdots \times p_k^{\min(a_k, b_k)}$$
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751831603378-->
 END%%
 
@@ -277,7 +277,7 @@ END%%
 Basic
 Let $m, n \in \mathbb{Z}$. How is $\mathop{\text{lcm}}(m, n)$ defined in terms of $\gcd(m, n)$?
 Back: $$\mathop{\text{lcm}}(m, n) = \frac{\lvert m n \rvert}{\gcd(m, n)}$$
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751831603394-->
 END%%
 
@@ -285,7 +285,7 @@ END%%
 Basic
 Let $m, n \in \mathbb{Z}$. How is $\gcd(m, n)$ defined in terms of $\mathop{\text{lcm}}(m, n)$?
 Back: $$\gcd(m, n) = \frac{\lvert m n \rvert}{\mathop{\text{lcm}}(m, n)}$$
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751831603405-->
 END%%
 
@@ -293,7 +293,7 @@ END%%
 Basic
 What does the following equal? $$\prod_{p \text{ is prime}} p^{\max(a_p, b_p)}$$
 Back: $\mathop{\text{lcm}}(a, b)$ where $a = \prod_{p \text{ is prime}} p^{a_p}$ and $b = \prod_{p \text{ is prime}} p^{b_p}$.
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751831603410-->
 END%%
 
@@ -301,12 +301,12 @@ END%%
 Basic
 What does the following equal? $$\prod_{p \text{ is prime}} p^{\min(a_p, b_p)}$$
 Back: $\gcd(a, b)$ where $a = \prod_{p \text{ is prime}} p^{a_p}$ and $b = \prod_{p \text{ is prime}} p^{b_p}$.
-Reference: “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751831603413-->
 END%%
 
 ## Bibliography
 
-* “Greatest Common Divisor.” In _Wikipedia_, July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-* “Least Common Multiple.” In _Wikipedia_, June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+* _Wikipedia_. “Greatest common divisor.” July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
+* _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
