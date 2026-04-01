@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sets/functions.md",
+                "file": "_journal/2026-04/2026-04-01.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "functions"
+              "title": "2026-04-01"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sets/functions.md",
+                "file": "_journal/2026-04/2026-04-01.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for functions"
+              "title": "Backlinks for 2026-04-01"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sets/functions.md",
+                "file": "_journal/2026-04/2026-04-01.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of functions"
+              "title": "Outline of 2026-04-01"
             }
           }
         ],
@@ -170,10 +170,11 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "85e01b72af01cb6f",
+  "active": "56d1b5e9dc07213f",
   "lastOpenFiles": [
-    "sets/relations.md",
     "sets/functions.md",
+    "_journal/2026-04",
+    "sets/relations.md",
     "algebra/gcd.md",
     "algebra/index.md",
     "sets/zfc.md",
@@ -197,7 +198,6 @@
     "algebra/boolean.md",
     "logic/classical.md",
     "algebra/fields.md",
-    "algebra/exponentials.md",
     "calculus/series",
     "calculus/images/interval-convergence.png",
     "calculus/images/circle-convergence.png",
@@ -210,13 +210,12 @@
     "algebra/images/complex-number.png",
     "algebra/images/complex-plane-point.png",
     "calculus/integrals",
-    "_journal/2026-03",
+    "_journal/2026/2026-03",
     "_journal/2026/2026-02",
     "_journal/2026",
     "network/physical",
     "network/application",
     "network/session",
-    "dnd",
-    "parsing"
+    "dnd"
   ]
 }
