@@ -135,7 +135,7 @@ END%%
 
 %%ANKI
 Basic
-IP addresses corresponding to which addressing methods is allocated in advance?
+IP addresses corresponding to which addressing methods are allocated in advance?
 Back: Unicast and multicast addresses.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1753369239517-->

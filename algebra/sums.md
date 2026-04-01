@@ -149,7 +149,7 @@ END%%
 
 %%ANKI
 Basic
-Let $(a_n)$ and $(b_n)$ be sequences. What does summation by parts (using the forward difference) usually expressed?
+Let $(a_n)$ and $(b_n)$ be sequences. How is summation by parts (using the forward difference) usually expressed?
 Back: $$\sum_{k=m}^n a_k \Delta b_k = (a_{n+1}b_{n+1} - a_mb_m) - \sum_{k=m}^n b_{k+1} \Delta a_k$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774754013534-->
@@ -157,7 +157,7 @@ END%%
 
 %%ANKI
 Basic
-Let $(a_n)$ and $(b_n)$ be sequences. What does summation by parts (using the backward difference) usually expressed?
+Let $(a_n)$ and $(b_n)$ be sequences. How is summation by parts (using the backward difference) usually expressed?
 Back: $$\sum_{k=m}^n a_k \nabla b_k = (a_nb_n - a_{m-1}b_{m-1}) - \sum_{k=m}^n b_{k-1} \nabla a_k$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774754013539-->

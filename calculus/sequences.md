@@ -826,6 +826,10 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1774471165582-->
 END%%
 
+#### Differentiation
+
+Unlike integration, [[derivatives|differentiability]] is *not* transmitted by uniform convergence. One notable exception to this rule is within a [[power|power series's]] circle of convergence.
+
 %%ANKI
 Basic
 Suppose $(f_n)$ pointwise converges on $S$. If $f_n$ is differentiable on $S$ for all $n$, does the following hold? $$\lim_{n \rightarrow \infty} \frac{d}{dx} f_n(x) = \frac{d}{dx} \lim_{n \rightarrow \infty} f_n(x), \quad\text{for } x \in S$$
@@ -858,7 +862,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1774471165607-->
 END%%
 
-## Special
+## Special Cases
 
 ### ∆ᵏ-constant Sequence
 

@@ -304,7 +304,7 @@ END%%
 
 %%ANKI
 Basic
-What is the DC for a Strength (Athletics) check when falling into water?
+What is the DC for a Strength (Athletics) check when moving through rough water?
 Back: DC 15.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1771425157949-->

@@ -421,6 +421,14 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1774569587767-->
 END%%
 
+%%ANKI
+Basic
+Suppose $\sum a_n$ and $\sum b_n$ are absolutely convergent. *Why* is $\sum (a_n + b_n)$ absolutely convergent?
+Back: By virtue of the triangle inequality, $$\sum \lvert a_n + b_n \vert \leq \sum \lvert a_n \rvert + \lvert b_n \rvert.$$
+Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+<!--ID: 1774896888243-->
+END%%
+
 ### Term Test
 
 If the series $\sum a_n$ converges, then its $n$th term tends to $0$. That is, $$\lim_{n \rightarrow +\infty} a_n = 0.$$
@@ -1112,7 +1120,7 @@ END%%
 %%ANKI
 Basic
 Let $z \in \mathbb{C}$ such that $\lvert z \rvert = 1$. For what values of $z$ are the partial sums of the following bounded? $$\sum_{n=1}^\infty z^n$$
-Back: Just $z = 1$.
+Back: $z \neq 1$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1774807009004-->
 END%%
@@ -1492,7 +1500,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1774569587772-->
 END%%
 
-## Special
+## Special Cases
 
 ### Alternating
 

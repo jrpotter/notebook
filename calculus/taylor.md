@@ -1,9 +1,10 @@
 ---
 title: Taylor Polynomials
 TARGET DECK: Obsidian::STEM
-FILE TAGS: calculus
+FILE TAGS: algebra::polynomial calculus
 tags:
   - calculus
+  - polynomial
 ---
 
 ## Overview
@@ -133,8 +134,6 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1771448730329-->
 END%%
 
-## Properties
-
 ### Linearity
 
 Let $f$ and $g$ be functions with derivatives of order $n$ at point $a$. Let $c_1$ and $c_2$ be constants. Then $$T_n(c_1f + c_2g; a) = c_1T_n(f; a) + c_2T_n(g; a).$$
@@ -261,7 +260,7 @@ Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Int
 <!--ID: 1769694861397-->
 END%%
 
-## Remainder
+### Remainder
 
 The **remainder** (or **error**) of a Taylor polynomial $T_nf$ is the difference $$E_n(x) = f(x) - T_nf(x).$$
 
@@ -359,22 +358,6 @@ Back: We can define a closed interval around $a$ that $E_n(x; a)$ is bounded wit
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772294761168-->
 END%%
-
-## Examples
-
-In each of the following examples, we assume $x \rightarrow 0$. Notice the use of [[limits#o-notation|o-notation]]. $$\begin{align*}
-\frac{1}{1 - x} & = 1 + x + x^2 + \cdots + x^n + o(x^n) \\
-
-\ln{(1 + x)} & = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots + (-1)^{n - 1}\frac{x^n}{n} + o(x^n) \\
-
-e^x & = 1 + x + \frac{x^2}{2!} + \cdots + \frac{x^2}{n!} + o(x^n) \\
-
-\sin{x} & = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots + (-1)^{n-1} \frac{x^{2n - 1}}{(2n - 1)!} + o(x^{2n}) \\
-
-\cos{x} & = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots + (-1)^n \frac{x^{2n}}{(2n)!} + o(x^{2n + 1}) \\
-
-\arctan{x} & = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots + (-1)^{n-1}\frac{x^{2n - 1}}{2n - 1} + o(x^{2n})
-\end{align*}$$
 
 ## Bibliography
 
