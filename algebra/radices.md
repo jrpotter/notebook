@@ -15,7 +15,7 @@ The **radix** is the number of unique digits used to represent numbers in a posi
 Basic
 What is the process of subtracting a larger digit from a smaller one in radix $r$?
 Back: Decrement the next nonzero and add $r$ to the smaller digit in question.
-Reference: “Radix,” in *Wikipedia*, August 6, 2023, [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173).
+Reference: _Wikipedia_. “Radix.” June 11, 2025. [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1295065985).
 <!--ID: 1708534662981-->
 END%%
 
@@ -30,7 +30,7 @@ Back:
 -----
   010
 ```
-Reference: “Radix,” in *Wikipedia*, August 6, 2023, [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173).
+Reference: _Wikipedia_. “Radix.” June 11, 2025. [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1295065985).
 <!--ID: 1708534662989-->
 END%%
 
@@ -38,7 +38,7 @@ END%%
 Basic
 In a positional numeral system, what does "radix" refer to?
 Back: The number of unique digits used to represent numbers.
-Reference: “Radix,” in *Wikipedia*, August 6, 2023, [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173).
+Reference: _Wikipedia_. “Radix.” June 11, 2025. [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1295065985).
 <!--ID: 1708534662993-->
 END%%
 
@@ -46,7 +46,7 @@ END%%
 Basic
 What is the radix of the decimal system?
 Back: $10$
-Reference: “Radix,” in *Wikipedia*, August 6, 2023, [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173).
+Reference: _Wikipedia_. “Radix.” June 11, 2025. [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1295065985).
 <!--ID: 1708534662997-->
 END%%
 
@@ -54,7 +54,7 @@ END%%
 Basic
 What is the radix of the octal system?
 Back: $8$
-Reference: “Radix,” in *Wikipedia*, August 6, 2023, [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173).
+Reference: _Wikipedia_. “Radix.” June 11, 2025. [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1295065985).
 Tags: binary
 <!--ID: 1708534663001-->
 END%%
@@ -63,7 +63,7 @@ END%%
 Basic
 What is the radix of the hexadecimal system?
 Back: $16$
-Reference: “Radix,” in *Wikipedia*, August 6, 2023, [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173).
+Reference: _Wikipedia_. “Radix.” June 11, 2025. [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1295065985).
 Tags: binary::hex
 <!--ID: 1708534663005-->
 END%%
@@ -72,7 +72,7 @@ END%%
 Basic
 What is the radix of the binary system?
 Back: $2$
-Reference: “Radix,” in *Wikipedia*, August 6, 2023, [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173).
+Reference: _Wikipedia_. “Radix.” June 11, 2025. [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1295065985).
 Tags: binary
 <!--ID: 1708534663009-->
 END%%
@@ -80,7 +80,7 @@ END%%
 %%ANKI
 Cloze
 A hexadecimal digit represents {4} bits.
-Reference: “Radix,” in *Wikipedia*, August 6, 2023, [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173).
+Reference: _Wikipedia_. “Radix.” June 11, 2025. [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1295065985).
 Tags: binary::hex
 <!--ID: 1708534663013-->
 END%%
@@ -88,7 +88,7 @@ END%%
 %%ANKI
 Cloze
 An octal digit represents {3} bits.
-Reference: “Radix,” in *Wikipedia*, August 6, 2023, [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173).
+Reference: _Wikipedia_. “Radix.” June 11, 2025. [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1295065985).
 Tags: binary
 <!--ID: 1708534663018-->
 END%%
@@ -419,7 +419,7 @@ END%%
 Basic
 What is the most common base used in scientific notation?
 Back: Base $10$.
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1760060430725-->
 END%%
 
@@ -427,7 +427,7 @@ END%%
 Basic
 In base-10 scientific notation, what form do non-zero numbers take on?
 Back: $m \times 10^n$
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914921-->
 END%%
 
@@ -435,7 +435,7 @@ END%%
 Basic
 What radix is implicitly specified in scientific notation form $m \times 10^n$?
 Back: $10$
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914924-->
 END%%
 
@@ -443,7 +443,7 @@ END%%
 Basic
 In base-10 scientific notation, what numbers does $m$ take on in form $m \times 10^n$?
 Back: A nonzero real number.
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914926-->
 END%%
 
@@ -451,7 +451,7 @@ END%%
 Basic
 In base-10 scientific notation, what numbers does $n$ take on in $m \times 10^n$?
 Back: An integer.
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914929-->
 END%%
 
@@ -459,7 +459,7 @@ END%%
 Basic
 What term refers to $m$ in scientific notation $m \times 10^n$?
 Back: The significand.
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914932-->
 END%%
 
@@ -474,7 +474,7 @@ END%%
 Basic
 What term refers to $n$ in scientific notation $m \times 10^n$?
 Back: The exponent.
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914935-->
 END%%
 
@@ -482,7 +482,7 @@ END%%
 Basic
 What does it mean for $m \times 10^n$ to be in normalized form?
 Back: That $1 \leq |m| < 10$.
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914937-->
 END%%
 
@@ -490,7 +490,7 @@ END%%
 Basic
 In base-2 scientific notation, what form do nonzero numbers take on?
 Back: $m \times 2^n$
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914939-->
 END%%
 
@@ -498,7 +498,7 @@ END%%
 Basic
 What radix is implicitly specified in scientific notation form $m \times 2^n$?
 Back: $2$
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914941-->
 END%%
 
@@ -506,7 +506,7 @@ END%%
 Basic
 In base-2 scientific notation, what numbers does $m$ take on in form $m \times 2^n$?
 Back: A nonzero real number.
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914943-->
 END%%
 
@@ -514,7 +514,7 @@ END%%
 Basic
 In base-2 scientific notation, what numbers does $n$ take on in $m \times 2^n$?
 Back: An integer.
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914945-->
 END%%
 
@@ -522,7 +522,7 @@ END%%
 Basic
 What term refers to $m$ in scientific notation $m \times 2^n$?
 Back: The significand.
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914947-->
 END%%
 
@@ -530,7 +530,7 @@ END%%
 Basic
 What term refers to $n$ in scientific notation $m \times 2^n$?
 Back: The exponent.
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914949-->
 END%%
 
@@ -538,7 +538,7 @@ END%%
 Basic
 What does it mean for scientific notation $m \times 2^n$ to be in normalized form?
 Back: That $1 \leq |m| < 2$.
-Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
+Reference: _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).
 <!--ID: 1710556914951-->
 END%%
 
@@ -659,7 +659,7 @@ END%%
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-* “Radix,” in *Wikipedia*, August 6, 2023, [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1169046173).
-* Reference: “Scientific Notation.” In _Wikipedia_, March 6, 2024. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1212169750).
 * _Wikipedia_. “Fixed-point arithmetic.” September 18, 2025. [https://en.wikipedia.org/w/index.php?title=Fixed-point_arithmetic](https://en.wikipedia.org/w/index.php?title=Fixed-point_arithmetic&oldid=1312116709).
 * _Wikipedia_. “Floating-point arithmetic.” October 1, 2025. [https://en.wikipedia.org/w/index.php?title=Floating-point_arithmetic](https://en.wikipedia.org/w/index.php?title=Floating-point_arithmetic&oldid=1314410756).
+* _Wikipedia_. “Radix.” June 11, 2025. [https://en.wikipedia.org/w/index.php?title=Radix](https://en.wikipedia.org/w/index.php?title=Radix&oldid=1295065985).
+* _Wikipedia_. “Scientific notation.” June 16, 2025. [https://en.wikipedia.org/w/index.php?title=Scientific_notation](https://en.wikipedia.org/w/index.php?title=Scientific_notation&oldid=1295949669).

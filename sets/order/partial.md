@@ -17,7 +17,7 @@ If $R$ is instead irreflexive on $A$, it is a **strict partial order**.
 Basic
 A binary relation on $A$ is a partial order on $A$ if it satisfies what three properties?
 Back: Reflexivity on $A$, antisymmetry, and transitivity.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723816108460-->
 END%%
 
@@ -25,7 +25,7 @@ END%%
 Basic
 Which of preorders and partial orders is the more general concept?
 Back: Preorders.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723816108468-->
 END%%
 
@@ -33,14 +33,14 @@ END%%
 Basic
 Which of partial orders and equivalence relations is the more general concept?
 Back: N/A.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723816108472-->
 END%%
 
 %%ANKI
 Cloze
 A preorder satisfying {antisymmetry} is a {partial order}.
-Reference: “Preorder,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1235839474).
+Reference: _Wikipedia_. “Preorder.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1297574464).
 <!--ID: 1723816108477-->
 END%%
 
@@ -48,7 +48,7 @@ END%%
 Basic
 What two properties do partial orders and equivalence relations have in common?
 Back: Reflexivity and transitivity.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723816108482-->
 END%%
 
@@ -56,7 +56,7 @@ END%%
 Basic
 What property distinguishes partial orders from equivalence relations?
 Back: The former is antisymmetric whereas the latter is symmetric.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723816108487-->
 END%%
 
@@ -64,7 +64,7 @@ END%%
 Basic
 *Why* is a partial order named the way it is?
 Back: Not every pair of elements needs to be comparable.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723816108494-->
 END%%
 
@@ -72,7 +72,7 @@ END%%
 Basic
 Can a relation be both an equivalence relation and a partial order?
 Back: Yes.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723816108501-->
 END%%
 
@@ -80,7 +80,7 @@ END%%
 Basic
 Can a nonempty relation be both an equivalence relation and a partial order?
 Back: Yes.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723816108508-->
 END%%
 
@@ -88,7 +88,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle b, b \rangle\}$ a partial order on $\{a, b\}$?
 Back: N/A. It is.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723816108519-->
 END%%
 
@@ -96,7 +96,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ a partial order on $\{a, b, c\}$?
 Back: It isn't reflexive on $\{b, c\}$.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723816108524-->
 END%%
 
@@ -104,7 +104,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle, \langle c, b \rangle\}$ a partial order on $\{a, b, c\}$?
 Back: It isn't reflexive on $\{b, c\}$, it isn't antisymmetric, and it isn't transitive.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723816108531-->
 END%%
 
@@ -168,7 +168,7 @@ END%%
 Basic
 What distinguishes a partial order from a strict partial order?
 Back: Strict partial orders are irreflexive.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723902024372-->
 END%%
 
@@ -176,7 +176,7 @@ END%%
 Basic
 A binary relation on $A$ is a strict partial order on $A$ if it satisfies what three properties?
 Back: Irreflexivity on $A$, antisymmetry, and transitivity.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723902024375-->
 END%%
 
@@ -184,21 +184,21 @@ END%%
 Basic
 What makes a strict partial order more strict than a non-strict partial order?
 Back: Strict partial orders do not allow relating members to themselves.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723902729147-->
 END%%
 
 %%ANKI
 Cloze
 Operator {$<$} typically denotes a {strict} partial order.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723902024378-->
 END%%
 
 %%ANKI
 Cloze
 Operator {$\leq$} typically denotes a {non-strict} partial order.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723902024382-->
 END%%
 
@@ -206,7 +206,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle b, c \rangle\}$ a strict partial order on $\{a, b, c\}$?
 Back: Because it isn't irreflexive.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723902024388-->
 END%%
 
@@ -214,7 +214,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, c \rangle, \langle b, c \rangle\}$ a strict partial order on $\{a, b, c\}$?
 Back: N/A. It is.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723902024391-->
 END%%
 
@@ -222,7 +222,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, b \rangle, \langle b, c \rangle, \langle c, b \rangle\}$ a strict partial order on $\{a, b\}$?
 Back: It is neither antisymmetric nor transitive.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
 <!--ID: 1723902024394-->
 END%%
 
@@ -284,7 +284,7 @@ A **Hasse diagram** is a [[graphs|directed graph]] that encodes a finite poset $
 Basic
 Let $\langle P, \leq \rangle$ be a poset. For distinct $a, b \in P$, what does it mean for $b$ to cover $a$?
 Back: $a \leq b$ and there is no distinct $x \in P$ such that $a \leq x \leq b$.
-Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+Reference: _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553289-->
 END%%
 
@@ -292,7 +292,7 @@ END%%
 Basic
 Let $\langle P, \leq \rangle$ be a poset. Let $a, b \in P$ such that $b$ covers $a$. What two inequalities are implied?
 Back: That $a \neq b$ and $a \leq b$.
-Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+Reference: _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553297-->
 END%%
 
@@ -300,7 +300,7 @@ END%%
 Basic
 Let $\langle P, \leq \rangle$ be a poset. Let $a, b \in P$ such that $a$ covers $b$. What two inequalities are implied?
 Back: That $a \neq b$ and $b \leq a$.
-Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+Reference: _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553300-->
 END%%
 
@@ -308,7 +308,7 @@ END%%
 Basic
 Consider set $P = \{\varnothing, \{1\}, \{2\}, \{1, 2\}\}$ with partial order $\subseteq$. Which element(s) cover $\{\varnothing\}$?
 Back: $\{1\}$ and $\{2\}$.
-Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+Reference: _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553303-->
 END%%
 
@@ -316,7 +316,7 @@ END%%
 Basic
 Consider set $P = \{\varnothing, \{1\}, \{2\}, \{1, 2\}\}$ with partial order $\subseteq$. Which element(s) cover $\{1\}$?
 Back: $\{1, 2\}$
-Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+Reference: _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553305-->
 END%%
 
@@ -324,7 +324,7 @@ END%%
 Basic
 Consider set $P = \{\varnothing, \{1\}, \{2\}, \{1, 2\}\}$ with partial order $\subseteq$. Which element(s) does $\{1, 2\}$ cover?
 Back: $\{1\}$ and $\{2\}$.
-Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+Reference: _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553308-->
 END%%
 
@@ -332,7 +332,7 @@ END%%
 Basic
 How are partial orders typically visualized?
 Back: As Hasse diagrams.
-Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+Reference: _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553311-->
 END%%
 
@@ -340,7 +340,7 @@ END%%
 Basic
 Let $\langle P, \leq \rangle$ be a finite partial order. How many vertices are in its Hasse diagram?
 Back: $\lvert P \rvert$
-Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+Reference: _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553314-->
 END%%
 
@@ -348,7 +348,7 @@ END%%
 Basic
 Let $\langle P, \leq \rangle$ be a finite partial order. What do the vertices in its Hasse diagram correspond to?
 Back: The elements of $P$.
-Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+Reference: _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553318-->
 END%%
 
@@ -356,7 +356,7 @@ END%%
 Basic
 Let $\langle P, \leq \rangle$ be a finite partial order. What do the edges in its Hasse diagram correspond to?
 Back: The coverings of members of $P$ by other members of $P$.
-Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+Reference: _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553322-->
 END%%
 
@@ -364,7 +364,7 @@ END%%
 Basic
 Let $\langle P, \leq \rangle$ be a finite partial order. How many edges are in its Hasse diagram?
 Back: $\lvert \{ \langle a, b \rangle \mid a, b \in P \land b \text{ covers } a \} \rvert$.
-Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+Reference: _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553325-->
 END%%
 
@@ -373,7 +373,7 @@ Basic
 What is the following likely an example of?
 ![[hasse-diagram.png]]
 Back: A Hasse diagram.
-Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+Reference: _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553330-->
 END%%
 
@@ -381,12 +381,13 @@ END%%
 Basic
 How are chains visualized in a Hasse diagram?
 Back: By following the directed edges from one vertex to another.
-Reference: “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+Reference: _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 <!--ID: 1744465553333-->
 END%%
 
 ## Bibliography
 
-* “Hasse Diagram.” In _Wikipedia_, December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-* “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+* _Wikipedia_. “Hasse diagram.” December 16, 2024. [https://en.wikipedia.org/w/index.php?title=Hasse_diagram](https://en.wikipedia.org/w/index.php?title=Hasse_diagram&oldid=1263385997).
+* _Wikipedia_. “Partially ordered set.” June 28, 2025. [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1297794450).
+* _Wikipedia_. “Preorder.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1297574464).

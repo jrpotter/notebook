@@ -234,15 +234,14 @@ END%%
 %%ANKI
 Cloze
 An {angle} can be {subtended} by a {line segment}.
-Reference: “Subtended Angle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Subtended_angle](https://en.wikipedia.org/w/index.php?title=Subtended_angle&oldid=1268107647).
-<!--ID: 1740669677989-->
+Reference: _Wikipedia_. “Subtended angle.” January 8, 2025. [https://en.wikipedia.org/w/index.php?title=Subtended_angle](https://en.wikipedia.org/w/index.php?title=Subtended_angle&oldid=1268107647).<!--ID: 1740669677989-->
 END%%
 
 %%ANKI
 Basic
 What geometric object is usually described as "subtended by a line segment"?
 Back: An angle.
-Reference: “Subtended Angle,” in _Wikipedia_, January 8, 2025, [https://en.wikipedia.org/w/index.php?title=Subtended_angle](https://en.wikipedia.org/w/index.php?title=Subtended_angle&oldid=1268107647).
+Reference: _Wikipedia_. “Subtended angle.” January 8, 2025. [https://en.wikipedia.org/w/index.php?title=Subtended_angle](https://en.wikipedia.org/w/index.php?title=Subtended_angle&oldid=1268107647).
 <!--ID: 1740669677992-->
 END%%
 
@@ -250,7 +249,7 @@ END%%
 Basic
 An angle is usually described as subtended by what kind of geometric object?
 Back: A line segment or arc.
-Reference: “Subtended Angle,” in Wikipedia, January 8, 2025, https://en.wikipedia.org/w/index.php?title=Subtended_angle.
+Reference: _Wikipedia_. “Subtended angle.” January 8, 2025. [https://en.wikipedia.org/w/index.php?title=Subtended_angle](https://en.wikipedia.org/w/index.php?title=Subtended_angle&oldid=1268107647).
 <!--ID: 1740669677994-->
 END%%
 
@@ -258,7 +257,7 @@ END%%
 Cloze
 In the following, angle {$\angle BAC$} is subtended by line segment {$\overline{BC}$}.
 ![[triangle-letters.png]]
-Reference: “Subtended Angle,” in Wikipedia, January 8, 2025, https://en.wikipedia.org/w/index.php?title=Subtended_angle.
+Reference: _Wikipedia_. “Subtended angle.” January 8, 2025. [https://en.wikipedia.org/w/index.php?title=Subtended_angle](https://en.wikipedia.org/w/index.php?title=Subtended_angle&oldid=1268107647).
 <!--ID: 1740669677997-->
 END%%
 
@@ -266,7 +265,7 @@ END%%
 Cloze
 In the following, angle {$\angle ACB$} is subtended by line segment {$\overline{AB}$}.
 ![[triangle-letters.png]]
-Reference: “Subtended Angle,” in Wikipedia, January 8, 2025, https://en.wikipedia.org/w/index.php?title=Subtended_angle.
+Reference: _Wikipedia_. “Subtended angle.” January 8, 2025. [https://en.wikipedia.org/w/index.php?title=Subtended_angle](https://en.wikipedia.org/w/index.php?title=Subtended_angle&oldid=1268107647).
 <!--ID: 1740669678000-->
 END%%
 
@@ -274,7 +273,7 @@ END%%
 Basic
 How is an angle subtended by an arc defined in terms of an angle subtended by a line segment?
 Back: An angle subtended by an arc is the angle subtended by the chord of the arc.
-Reference: “Subtended Angle,” in Wikipedia, January 8, 2025, https://en.wikipedia.org/w/index.php?title=Subtended_angle.
+Reference: _Wikipedia_. “Subtended angle.” January 8, 2025. [https://en.wikipedia.org/w/index.php?title=Subtended_angle](https://en.wikipedia.org/w/index.php?title=Subtended_angle&oldid=1268107647).
 <!--ID: 1740669678003-->
 END%%
 
@@ -282,7 +281,7 @@ END%%
 Basic
 "Subtended by" is a relation on what two kinds of geometric objects?
 Back: Angles and line segments/arcs.
-Reference: “Subtended Angle,” in Wikipedia, January 8, 2025, https://en.wikipedia.org/w/index.php?title=Subtended_angle.
+Reference: _Wikipedia_. “Subtended angle.” January 8, 2025. [https://en.wikipedia.org/w/index.php?title=Subtended_angle](https://en.wikipedia.org/w/index.php?title=Subtended_angle&oldid=1268107647).
 <!--ID: 1740669678007-->
 END%%
 

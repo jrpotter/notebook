@@ -15,7 +15,7 @@ The recursion theorem guarantees recursively defined functions exist. More forma
 Basic
 *Why* is the recursion theorem important?
 Back: It guarantees recursively defined functions exist.
-Reference: “Recursion,” in _Wikipedia_, September 23, 2024, [https://en.wikipedia.org/w/index.php?title=Recursion#The_recursion_theorem](https://en.wikipedia.org/w/index.php?title=Recursion&oldid=1247328220#The_recursion_theorem).
+Reference: _Wikipedia_. “Recursion.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Recursion](https://en.wikipedia.org/w/index.php?title=Recursion&oldid=1297075398).
 <!--ID: 1727492422625-->
 END%%
 
@@ -79,7 +79,7 @@ END%%
 Basic
 *Why* is the recursion theorem named the way it is?
 Back: It guarantees recursively defined functions exist.
-Reference: “Recursion,” in _Wikipedia_, September 23, 2024, [https://en.wikipedia.org/w/index.php?title=Recursion#The_recursion_theorem](https://en.wikipedia.org/w/index.php?title=Recursion&oldid=1247328220#The_recursion_theorem).
+Reference: _Wikipedia_. “Recursion.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Recursion](https://en.wikipedia.org/w/index.php?title=Recursion&oldid=1297075398).
 <!--ID: 1727492422693-->
 END%%
 
@@ -595,4 +595,4 @@ END%%
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-* “Recursion,” in _Wikipedia_, September 23, 2024, [https://en.wikipedia.org/w/index.php?title=Recursion#The_recursion_theorem](https://en.wikipedia.org/w/index.php?title=Recursion&oldid=1247328220#The_recursion_theorem).
+* _Wikipedia_. “Recursion.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Recursion](https://en.wikipedia.org/w/index.php?title=Recursion&oldid=1297075398).

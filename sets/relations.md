@@ -559,7 +559,7 @@ END%%
 Basic
 How is $\langle x, y \rangle$ most commonly defined?
 Back: As $\{\{x\}, \{x, y\}\}$.
-Reference: “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
+Reference: _Wikipedia_. “Cartesian product.” April 22, 2025. [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1286895522).
 <!--ID: 1717678753120-->
 END%%
 
@@ -693,7 +693,7 @@ END%%
 Basic
 How is reflexivity of relation $R$ on set $A$ defined in relational algebra?
 Back: $I_A \subseteq R$
-Reference: “Equivalence Relation,” in _Wikipedia_, July 21, 2024, [https://en.wikipedia.org/w/index.php?title=Equivalence_relation](https://en.wikipedia.org/w/index.php?title=Equivalence_relation&oldid=1235801091).
+Reference: _Wikipedia_. “Equivalence relation.” May 23, 2025. [https://en.wikipedia.org/w/index.php?title=Equivalence_relation](https://en.wikipedia.org/w/index.php?title=Equivalence_relation&oldid=1291778103).
 <!--ID: 1721869969498-->
 END%%
 
@@ -903,7 +903,7 @@ A relation $R$ is **antisymmetric** iff whenever $x \neq y$ and $xRy$, then $\ne
 Basic
 How is antisymmetry of relation $R$ defined in FOL?
 Back: $\forall x, \forall y, x \neq y \land xRy \Rightarrow \neg yRx$
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
 <!--ID: 1721909725683-->
 END%%
 
@@ -911,7 +911,7 @@ END%%
 Basic
 A relation $R$ on set $A$ that satisfies the following exhibits what property? $$\forall x, y \in A, xRy \land yRx \Rightarrow x = y$$
 Back: Antisymmetry.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
 <!--ID: 1721909971801-->
 END%%
 
@@ -919,7 +919,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle a, b \rangle, \langle b, a \rangle, \langle b, c \rangle\}$ antisymmetric?
 Back: Because $aRb$ and $bRa$.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
 <!--ID: 1721909725690-->
 END%%
 
@@ -927,7 +927,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle b, b \rangle, \langle b, c \rangle\}$ antisymmetric?
 Back: N/A. It is.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
 <!--ID: 1721909725693-->
 END%%
 
@@ -935,7 +935,7 @@ END%%
 Basic
 Can a nonempty relation be both reflexive and antisymmetric on the same set?
 Back: Yes.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
 <!--ID: 1721909725700-->
 END%%
 
@@ -943,7 +943,7 @@ END%%
 Basic
 Can a nonempty relation be both symmetric and antisymmetric on the same set?
 Back: Yes.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
 <!--ID: 1721909725703-->
 END%%
 
@@ -951,7 +951,7 @@ END%%
 Basic
 Can a nonempty relation be neither symmetric nor antisymmetric on the same set?
 Back: Yes.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
 <!--ID: 1721909971804-->
 END%%
 
@@ -959,7 +959,7 @@ END%%
 Basic
 Which of reflexivity, symmetry, and/or antisymmetry does $\{\langle a, a \rangle, \langle b, b \rangle\}$ exhibit?
 Back: All three.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
 <!--ID: 1721909725707-->
 END%%
 
@@ -967,7 +967,7 @@ END%%
 Basic
 Which of reflexivity, symmetry, and/or antisymmetry does $\{\langle a, a \rangle, \langle b, c \rangle\}$ exhibit?
 Back: Antisymmetry.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
 <!--ID: 1721909725711-->
 END%%
 
@@ -975,7 +975,7 @@ END%%
 Basic
 Which of reflexivity, symmetry, and/or antisymmetry does $\{\langle a, a \rangle, \langle b, c \rangle, \langle c, b \rangle\}$ exhibit?
 Back: Symmetry.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
 <!--ID: 1721909725715-->
 END%%
 
@@ -983,7 +983,7 @@ END%%
 Basic
 Which of reflexivity, symmetry, and/or antisymmetry does $\{\langle a, b \rangle, \langle b, c \rangle, \langle c, b \rangle\}$ exhibit?
 Back: None of them.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
 <!--ID: 1721909971807-->
 END%%
 
@@ -991,7 +991,7 @@ END%%
 Basic
 If a nonempty relation isn't symmetric, is it antisymmetric?
 Back: Not necessarily.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
 <!--ID: 1721911804446-->
 END%%
 
@@ -999,7 +999,7 @@ END%%
 Basic
 The term "antisymmetric" is used to describe what kind of mathematical object?
 Back: Relations.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
 <!--ID: 1721912048138-->
 END%%
 
@@ -1011,14 +1011,14 @@ A relation $R$ is **asymmetric** iff whenever $xRy$, then $\neg yRx$.
 Basic
 How is antisymmetry of relation $R$ defined in FOL?
 Back: $\forall x, \forall y, xRy \Rightarrow \neg yRx$
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 END%%
 
 %%ANKI
 Basic
 What distinguishes the antecedent of antisymmetry's and asymmetry's FOL definition?
 Back: The former only considers *distinct* pairs of elements.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721910949017-->
 END%%
 
@@ -1026,7 +1026,7 @@ END%%
 Basic
 Are antisymmetric relations necessarily asymmetric?
 Back: No.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721910949023-->
 END%%
 
@@ -1034,14 +1034,14 @@ END%%
 Basic
 Are asymmetric relations necessarily antisymmetric?
 Back: Yes.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721910949029-->
 END%%
 
 %%ANKI
 Cloze
 A relation is {asymmetric} if and only if it is both {irreflexive} and {antisymmetric}.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721910949033-->
 END%%
 
@@ -1049,21 +1049,21 @@ END%%
 Basic
 Can a relation be both symmetric and asymmetric?
 Back: Yes, the empty set.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721910949037-->
 END%%
 
 %%ANKI
 Give an example of a relation that is both symmetric and asymmetric.
 Back: $\varnothing$
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 END%%
 
 %%ANKI
 Basic
 Can a nonempty relation be both symmetric and asymmetric?
 Back: No.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721910949042-->
 END%%
 
@@ -1071,7 +1071,7 @@ END%%
 Basic
 Can a nonempty relation be neither symmetric nor asymmetric?
 Back: Yes.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721911667937-->
 END%%
 
@@ -1079,7 +1079,7 @@ END%%
 Basic
 Give an example of a nonempty relation that is both symmetric and asymmetric.
 Back: N/A.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1723245187584-->
 END%%
 
@@ -1087,7 +1087,7 @@ END%%
 Basic
 Can a nonempty relation be both reflexive and asymmetric on the same set?
 Back: No.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721910949047-->
 END%%
 
@@ -1095,7 +1095,7 @@ END%%
 Basic
 Which of reflexivity, symmetry, and/or asymmetry does $\{\langle a, a \rangle, \langle b, b \rangle\}$ exhibit?
 Back: Reflexivity and symmetry.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721910949051-->
 END%%
 
@@ -1103,7 +1103,7 @@ END%%
 Basic
 Which of reflexivity, symmetry, and/or asymmetry does $\{\langle a, a \rangle, \langle b, c \rangle\}$ exhibit?
 Back: None of them.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721910949055-->
 END%%
 
@@ -1111,7 +1111,7 @@ END%%
 Basic
 Which of reflexivity, symmetry, and/or asymmetry does $\{\langle a, b \rangle, \langle b, c \rangle\}$ exhibit?
 Back: Asymmetry.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721910949059-->
 END%%
 
@@ -1119,7 +1119,7 @@ END%%
 Basic
 A relation $R$ is asymmetric if and only if what other two properties of $R$ hold?
 Back: $R$ is both irreflexive and antisymmetric.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721911011861-->
 END%%
 
@@ -1127,7 +1127,7 @@ END%%
 Basic
 If a nonempty relation isn't symmetric, is it asymmetric?
 Back: Not necessarily.
-Reference: “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721911804453-->
 END%%
 
@@ -1135,7 +1135,7 @@ END%%
 Basic
 The term "asymmetric" is used to describe what kind of mathematical object?
 Back: Relations.
-Reference: “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
+Reference: _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
 <!--ID: 1721912048142-->
 END%%
 
@@ -1238,7 +1238,7 @@ END%%
 Basic
 How is strong connectivity of relation $R$ on set $A$ defined in FOL?
 Back: $\forall x, y \in A, xRy \lor yRx$
-Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+Reference: _Wikipedia_. “Connected relation.” March 24, 2025. [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1282051354).
 <!--ID: 1722735199672-->
 END%%
 
@@ -1246,7 +1246,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, b \rangle\}$ strongly connected on set $\{a, b\}$?
 Back: Because $\neg aRa$ and $\neg bRb$.
-Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+Reference: _Wikipedia_. “Connected relation.” March 24, 2025. [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1282051354).
 <!--ID: 1722735199683-->
 END%%
 
@@ -1254,7 +1254,7 @@ END%%
 Basic
 What members must be added to make $R = \{\langle a, b \rangle, \langle b, c \rangle, \langle c, a \rangle\}$ strongly connected on $\{a, b, c\}$?
 Back: $\langle a, a \rangle$, $\langle b, b \rangle$, and $\langle c, c \rangle$.
-Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+Reference: _Wikipedia_. “Connected relation.” March 24, 2025. [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1282051354).
 <!--ID: 1722735199688-->
 END%%
 
@@ -1262,14 +1262,14 @@ END%%
 Basic
 Which of strong connectivity or reflexivity is the more general concept?
 Back: Reflexivity.
-Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+Reference: _Wikipedia_. “Connected relation.” March 24, 2025. [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1282051354).
 <!--ID: 1722735199695-->
 END%%
 
 %%ANKI
 Cloze
 {1:Antisymmetry} is to {2:asymmetry} as {2:connectivity} is to {1:strong connectivity}.
-Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+Reference: _Wikipedia_. “Connected relation.” March 24, 2025. [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1282051354).
 <!--ID: 1722735199702-->
 END%%
 
@@ -1277,7 +1277,7 @@ END%%
 Basic
 Why might we say asymmetry is "strong antisymmetry"?
 Back: Asymmetry implies antisymmetry.
-Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+Reference: _Wikipedia_. “Connected relation.” March 24, 2025. [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1282051354).
 <!--ID: 1722735199707-->
 END%%
 
@@ -1285,7 +1285,7 @@ END%%
 Basic
 What makes "strong connectivity" stronger than "connectivity"?
 Back: The former implies the latter.
-Reference: “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
+Reference: _Wikipedia_. “Connected relation.” March 24, 2025. [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1282051354).
 <!--ID: 1722735199715-->
 END%%
 
@@ -2367,9 +2367,9 @@ END%%
 
 ## Bibliography
 
-* “Antisymmetric Relation,” in _Wikipedia_, January 24, 2024, [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1198625107).
-* “Asymmetric Relation,” in _Wikipedia_, February 21, 2024, [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1209290822).
-* “Cartesian Product,” in _Wikipedia_, April 17, 2024, [https://en.wikipedia.org/w/index.php?title=Cartesian_product](https://en.wikipedia.org/w/index.php?title=Cartesian_product&oldid=1219343305).
-* “Connected Relation,” in _Wikipedia_, July 14, 2024, [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1234415201).
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+* _Wikipedia_. “Antisymmetric relation.” April 2, 2025. [https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation](https://en.wikipedia.org/w/index.php?title=Antisymmetric_relation&oldid=1283669090).
+* _Wikipedia_. “Asymmetric relation.” October 17, 2024. [https://en.wikipedia.org/w/index.php?title=Asymmetric_relation](https://en.wikipedia.org/w/index.php?title=Asymmetric_relation&oldid=1251667758).
+* _Wikipedia_. “Connected relation.” March 24, 2025. [https://en.wikipedia.org/w/index.php?title=Connected_relation](https://en.wikipedia.org/w/index.php?title=Connected_relation&oldid=1282051354).
+* _Wikipedia_. “Equivalence relation.” May 23, 2025. [https://en.wikipedia.org/w/index.php?title=Equivalence_relation](https://en.wikipedia.org/w/index.php?title=Equivalence_relation&oldid=1291778103).
 * _Wikipedia_. “Ordered pair.” November 9, 2025. [https://en.wikipedia.org/w/index.php?title=Ordered_pair](https://en.wikipedia.org/w/index.php?title=Ordered_pair&oldid=1321321346).

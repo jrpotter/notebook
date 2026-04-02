@@ -87,6 +87,20 @@ END%%
 
 Platforms with multi-byte objects must establish the object's address and byte ordering. Objects are typically addressed by the smallest address of the bytes used. Bytes are ordered either in **big-endian** or **little-endian**. In big-endian, the most significant byte is listed first. In little-endian, the least significant byte is ordered first.
 
+```c
+#include <stdint.h>
+#include <stdio.h>
+
+int main() {
+  int32_t x = 0x01234567;
+  for (int i = 0; i < 4; ++i) {
+    printf("%.2x ", ((unsigned char *)(&x))[i]);
+  }
+}
+```
+
+The above snippet can be used to check endianness on the current machine. If big-endian, the output should be `01 23 45 67`. If little-endian, `67 45 23 01`.
+
 %%ANKI
 Basic
 Platforms with multi-byte objects must establish what two conventions?
@@ -179,28 +193,28 @@ END%%
 %%ANKI
 Cloze
 A big-endian system stores the {most} significant byte at the {smallest} memory address.
-Reference: “Endianness,” in _Wikipedia_, December 19, 2024, [https://en.wikipedia.org/w/index.php?title=Endianness](https://en.wikipedia.org/w/index.php?title=Endianness&oldid=1264018894).
+Reference: _Wikipedia_. “Endianness.” June 10, 2025. [https://en.wikipedia.org/w/index.php?title=Endianness](https://en.wikipedia.org/w/index.php?title=Endianness&oldid=1294852961).
 <!--ID: 1734664080894-->
 END%%
 
 %%ANKI
 Cloze
 A big-endian system stores the {least} significant byte at the {largest} memory address.
-Reference: “Endianness,” in _Wikipedia_, December 19, 2024, [https://en.wikipedia.org/w/index.php?title=Endianness](https://en.wikipedia.org/w/index.php?title=Endianness&oldid=1264018894).
+Reference: _Wikipedia_. “Endianness.” June 10, 2025. [https://en.wikipedia.org/w/index.php?title=Endianness](https://en.wikipedia.org/w/index.php?title=Endianness&oldid=1294852961).
 <!--ID: 1734664080900-->
 END%%
 
 %%ANKI
 Cloze
 A little-endian system stores the {least} significant byte at the {smallest} memory address.
-Reference: “Endianness,” in _Wikipedia_, December 19, 2024, [https://en.wikipedia.org/w/index.php?title=Endianness](https://en.wikipedia.org/w/index.php?title=Endianness&oldid=1264018894).
+Reference: _Wikipedia_. “Endianness.” June 10, 2025. [https://en.wikipedia.org/w/index.php?title=Endianness](https://en.wikipedia.org/w/index.php?title=Endianness&oldid=1294852961).
 <!--ID: 1734664080903-->
 END%%
 
 %%ANKI
 Cloze
 A little-endian system stores the {most} significant byte at the {largest} memory address.
-Reference: “Endianness,” in _Wikipedia_, December 19, 2024, [https://en.wikipedia.org/w/index.php?title=Endianness](https://en.wikipedia.org/w/index.php?title=Endianness&oldid=1264018894).
+Reference: _Wikipedia_. “Endianness.” June 10, 2025. [https://en.wikipedia.org/w/index.php?title=Endianness](https://en.wikipedia.org/w/index.php?title=Endianness&oldid=1294852961).
 <!--ID: 1734664080907-->
 END%%
 
@@ -208,23 +222,9 @@ END%%
 Basic
 Which of little- or big-endian more closely mirrors the way numbers are written in English?
 Back: Big-endian.
-Reference: “Endianness,” in _Wikipedia_, December 19, 2024, [https://en.wikipedia.org/w/index.php?title=Endianness](https://en.wikipedia.org/w/index.php?title=Endianness&oldid=1264018894).
+Reference: _Wikipedia_. “Endianness.” June 10, 2025. [https://en.wikipedia.org/w/index.php?title=Endianness](https://en.wikipedia.org/w/index.php?title=Endianness&oldid=1294852961).
 <!--ID: 1734664080911-->
 END%%
-
-```c
-#include <stdint.h>
-#include <stdio.h>
-
-int main() {
-  int32_t x = 0x01234567;
-  for (int i = 0; i < 4; ++i) {
-    printf("%.2x ", ((unsigned char *)(&x))[i]);
-  }
-}
-```
-
-The above snippet can be used to check endianness on the current machine. If big-endian, the output should be `01 23 45 67`. If little-endian, `67 45 23 01`.
 
 ### Network Order
 
@@ -288,5 +288,5 @@ END%%
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-* “Endianness,” in _Wikipedia_, December 19, 2024, [https://en.wikipedia.org/w/index.php?title=Endianness](https://en.wikipedia.org/w/index.php?title=Endianness&oldid=1264018894).
 * Jorgensen, Beej. _Beej’s Guide to Network Programming_. n.d.
+* _Wikipedia_. “Endianness.” June 10, 2025. [https://en.wikipedia.org/w/index.php?title=Endianness](https://en.wikipedia.org/w/index.php?title=Endianness&oldid=1294852961).

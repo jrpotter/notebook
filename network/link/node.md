@@ -41,14 +41,14 @@ END%%
 Basic
 What is a network interface?
 Back: The point of interconnection between a computer and a network.
-Reference: “Network Interface Controller.” In _Wikipedia_, July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
+Reference: _Wikipedia_. “Network interface controller.” July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
 <!--ID: 1752196389610-->
 END%%
 
 %%ANKI
 Cloze
 A network interface is either {physical} or {virtual}.
-Reference: “Network Interface Controller.” In _Wikipedia_, July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
+Reference: _Wikipedia_. “Network interface controller.” July 10, 2025. [https://en.wikipedia.org/w/index.php?title=Network_interface_controller](https://en.wikipedia.org/w/index.php?title=Network_interface_controller&oldid=1299832084).
 <!--ID: 1752196389619-->
 END%%
 

@@ -429,7 +429,7 @@ The original syntax and standard for writing RDF was RDF/XML. Turtle is an alter
 Basic
 Which RDF serialization is most widely used?
 Back: Turtle.
-Reference: “Resource Description Framework,” in _Wikipedia_, November 25, 2024, [https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework](https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework&oldid=1259544587).
+Reference: _Wikipedia_. “Resource Description Framework.” May 13, 2025. [https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework](https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework&oldid=1290236032).
 <!--ID: 1735507470222-->
 END%%
 
@@ -437,7 +437,7 @@ END%%
 Basic
 Why is Turtle named the way it is?
 Back: It is an "acronym" for **Te**rse **R**DF **T**riple **L**anguag**e**.
-Reference: “Resource Description Framework,” in _Wikipedia_, November 25, 2024, [https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework](https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework&oldid=1259544587).
+Reference: _Wikipedia_. “Resource Description Framework.” May 13, 2025. [https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework](https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework&oldid=1290236032).
 <!--ID: 1735507470227-->
 END%%
 
@@ -588,4 +588,4 @@ END%%
 ## Bibliography
 
 * Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-* “Resource Description Framework,” in _Wikipedia_, November 25, 2024, [https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework](https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework&oldid=1259544587).
+* _Wikipedia_. “Resource Description Framework.” May 13, 2025. [https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework](https://en.wikipedia.org/w/index.php?title=Resource_Description_Framework&oldid=1290236032).

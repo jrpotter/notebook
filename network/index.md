@@ -122,11 +122,17 @@ END%%
 
 A **telecommunications network** is a group of nodes interconnected by **telecommunications links** used to exchange messages between the nodes. A telecommunication link is any communication channel that connects two or more devices for the purpose of data transmission.
 
+A **connection-oriented** network is one in which "per-flow" **state** is established prior to the exchange of data. This is done using a signaling protocol that supports connection establishment, clearing, and status information.
+
+In a connection-oriented packet network, each packet would contain an index into a state table held on each switch. Such a table would contain information on the next switch along the path for the packet.
+
+In constrast, a **connectionless** network uses **datagrams**, a special type of packet in which all the identifying information for the source and final destination resides inside the packet itself.
+
 %%ANKI
 Basic
 What is telecommunications?
 Back: Data transmission over a distance using electronic means.
-Reference: “Telecommunications Network.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
+Reference: _Wikipedia_. “Telecommunications network.” May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
 <!--ID: 1748375536550-->
 END%%
 
@@ -134,7 +140,7 @@ END%%
 Basic
 Why is the term "telecommunications" a possible misnomer?
 Back: The term is *not* limited to just telephone networks.
-Reference: “Telecommunications Network.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
+Reference: _Wikipedia_. “Telecommunications network.” May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
 <!--ID: 1748375536559-->
 END%%
 
@@ -142,7 +148,7 @@ END%%
 Basic
 How is the term "telecommunications" often abbreviated?
 Back: As "telecom".
-Reference: “Telecommunications Network.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
+Reference: _Wikipedia_. “Telecommunications network.” May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
 <!--ID: 1748375536562-->
 END%%
 
@@ -150,7 +156,7 @@ END%%
 Basic
 What word is "telecom" an abbreviation of?
 Back: Telecommunications.
-Reference: “Telecommunications Network.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
+Reference: _Wikipedia_. “Telecommunications network.” May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
 <!--ID: 1748375612424-->
 END%%
 
@@ -158,7 +164,7 @@ END%%
 Basic
 What is a telecommunications network?
 Back: A group of nodes interconnected by telecommunications links.
-Reference: “Telecommunications Network.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
+Reference: _Wikipedia_. “Telecommunications network.” May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
 <!--ID: 1748375536568-->
 END%%
 
@@ -166,14 +172,14 @@ END%%
 Basic
 What is a telecommunications link?
 Back: A communication channel connecting two or more devices for the purpose of data transmission.
-Reference: “Telecommunications Network.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
+Reference: _Wikipedia_. “Telecommunications network.” May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
 <!--ID: 1748375536571-->
 END%%
 
 %%ANKI
 Cloze
 A telecommunications {network} is a group of nodes interconnected by telecommunications {links}.
-Reference: “Telecommunications Network.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
+Reference: _Wikipedia_. “Telecommunications network.” May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
 <!--ID: 1748375536574-->
 END%%
 
@@ -181,13 +187,9 @@ END%%
 Basic
 What three types of "switching" are used to implement telecommunications networks?
 Back: Circuit, message, and packet.
-Reference: “Telecommunications Network.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
+Reference: _Wikipedia_. “Telecommunications network.” May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
 <!--ID: 1748376567828-->
 END%%
-
-A **connection-oriented** network is one in which "per-flow" **state** is established prior to the exchange of data. This is done using a signaling protocol that supports connection establishment, clearing, and status information.
-
-In a connection-oriented packet network, each packet would contain an index into a state table held on each switch. Such a table would contain information on the next switch along the path for the packet.
 
 %%ANKI
 Basic
@@ -220,8 +222,6 @@ Back: A state table describing which switch a packet should be routed to.
 Reference: Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
 <!--ID: 1748487037251-->
 END%%
-
-In constrast, a **connectionless** network uses **datagrams**, a special type of packet in which all the identifying information for the source and final destination resides inside the packet itself.
 
 %%ANKI
 Cloze
@@ -302,7 +302,7 @@ END%%
 Basic
 What is circuit switching?
 Back: A telecom network implementation that creates a circuit through the network between two nodes before they transmit data.
-Reference: “Circuit Switching.” In _Wikipedia_, May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).
+Reference: _Wikipedia_. “Circuit switching.” May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).
 <!--ID: 1748376567832-->
 END%%
 
@@ -310,7 +310,7 @@ END%%
 Basic
 In what way does circuit switching encourage underutilization of a network?
 Back: Bandwidth is guaranteed to a circuit, even if unused.
-Reference: “Circuit Switching.” In _Wikipedia_, May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).
+Reference: _Wikipedia_. “Circuit switching.” May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).
 <!--ID: 1748376567834-->
 END%%
 
@@ -318,7 +318,7 @@ END%%
 Basic
 Which type of "switching" was first used to implement telecommunications networks?
 Back: Circuit switching.
-Reference: “Circuit Switching.” In _Wikipedia_, May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).
+Reference: _Wikipedia_. “Circuit switching.” May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).
 <!--ID: 1748376567836-->
 END%%
 
@@ -326,7 +326,7 @@ END%%
 Basic
 Which of circuit or packet switching enables better protection from other network users?
 Back: Circuit switching.
-Reference: “Circuit Switching.” In _Wikipedia_, May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).
+Reference: _Wikipedia_. “Circuit switching.” May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).
 <!--ID: 1748376567846-->
 END%%
 
@@ -334,7 +334,7 @@ END%%
 Basic
 Which of circuit or packet switching has more predictable latency?
 Back: Circuit switching.
-Reference: “Circuit Switching.” In _Wikipedia_, May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).
+Reference: _Wikipedia_. “Circuit switching.” May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).
 <!--ID: 1748376567853-->
 END%%
 
@@ -342,7 +342,7 @@ END%%
 Basic
 Which of message, circuit, or packet switching is the oldest?
 Back: Circuit switching.
-Reference: “Message Switching.” In _Wikipedia_, January 17, 2025. [https://en.wikipedia.org/w/index.php?title=Message_switching](https://en.wikipedia.org/w/index.php?title=Message_switching&oldid=1270078238).
+Reference: _Wikipedia_. “Message switching.” January 17, 2025. [https://en.wikipedia.org/w/index.php?title=Message_switching](https://en.wikipedia.org/w/index.php?title=Message_switching&oldid=1270078238).
 <!--ID: 1748376567857-->
 END%%
 
@@ -350,7 +350,7 @@ END%%
 Basic
 Is circuit switching considered connection-oriented or connectionless?
 Back: Connection-oriented.
-Reference: “Virtual Circuit.” In _Wikipedia_, September 16, 2024. [https://en.wikipedia.org/w/index.php?title=Virtual_circuit](https://en.wikipedia.org/w/index.php?title=Virtual_circuit&oldid=1245939640).
+Reference: _Wikipedia_. “Virtual circuit.” September 16, 2024. [https://en.wikipedia.org/w/index.php?title=Virtual_circuit&oldid=1245939640](https://en.wikipedia.org/w/index.php?title=Virtual_circuit&oldid=1245939640).
 <!--ID: 1748487037274-->
 END%%
 
@@ -362,7 +362,7 @@ END%%
 Basic
 What is message switching?
 Back: A telecom network implementation that routes messages to a destination, in their entirety, one hop at a time.
-Reference: “Message Switching.” In _Wikipedia_, January 17, 2025. [https://en.wikipedia.org/w/index.php?title=Message_switching](https://en.wikipedia.org/w/index.php?title=Message_switching&oldid=1270078238).
+Reference: _Wikipedia_. “Message switching.” January 17, 2025. [https://en.wikipedia.org/w/index.php?title=Message_switching](https://en.wikipedia.org/w/index.php?title=Message_switching&oldid=1270078238).
 <!--ID: 1748376567862-->
 END%%
 
@@ -370,14 +370,14 @@ END%%
 Basic
 What is the most ubiquitous example of message switching?
 Back: Email.
-Reference: “Message Switching.” In _Wikipedia_, January 17, 2025. [https://en.wikipedia.org/w/index.php?title=Message_switching](https://en.wikipedia.org/w/index.php?title=Message_switching&oldid=1270078238).
+Reference: _Wikipedia_. “Message switching.” January 17, 2025. [https://en.wikipedia.org/w/index.php?title=Message_switching](https://en.wikipedia.org/w/index.php?title=Message_switching&oldid=1270078238).
 <!--ID: 1748376567866-->
 END%%
 
 %%ANKI
 Cloze
 {1:Message} switching is considered the successor to {2:circuit} switching and the predecessor to {2:packet} switching.
-Reference: “Message Switching.” In _Wikipedia_, January 17, 2025. [https://en.wikipedia.org/w/index.php?title=Message_switching](https://en.wikipedia.org/w/index.php?title=Message_switching&oldid=1270078238).
+Reference: _Wikipedia_. “Message switching.” January 17, 2025. [https://en.wikipedia.org/w/index.php?title=Message_switching](https://en.wikipedia.org/w/index.php?title=Message_switching&oldid=1270078238).
 <!--ID: 1748376567870-->
 END%%
 
@@ -391,7 +391,7 @@ END%%
 Basic
 What is packet switching?
 Back: A telecom network implementation that sends data, broken into small chunks, over a network.
-Reference: “Packet Switching.” In _Wikipedia_, May 22, 2025. [https://en.wikipedia.org/w/index.php?title=Packet_switching](https://en.wikipedia.org/w/index.php?title=Packet_switching&oldid=1291717331).
+Reference: _Wikipedia_. “Packet switching.” May 22, 2025. [https://en.wikipedia.org/w/index.php?title=Packet_switching](https://en.wikipedia.org/w/index.php?title=Packet_switching&oldid=1291717331).
 <!--ID: 1748376567875-->
 END%%
 
@@ -399,7 +399,7 @@ END%%
 Basic
 Which of message, circuit, or packet switching is the newest?
 Back: Packet switching.
-Reference: “Message Switching.” In _Wikipedia_, January 17, 2025. [https://en.wikipedia.org/w/index.php?title=Message_switching](https://en.wikipedia.org/w/index.php?title=Message_switching&oldid=1270078238).
+Reference: _Wikipedia_. “Message switching.” January 17, 2025. [https://en.wikipedia.org/w/index.php?title=Message_switching](https://en.wikipedia.org/w/index.php?title=Message_switching&oldid=1270078238).
 <!--ID: 1748376567879-->
 END%%
 
@@ -407,7 +407,7 @@ END%%
 Basic
 Which of circuit, message, or packet switching is most commonly used?
 Back: Packet switching.
-Reference: “Packet Switching.” In _Wikipedia_, May 22, 2025. [https://en.wikipedia.org/w/index.php?title=Packet_switching](https://en.wikipedia.org/w/index.php?title=Packet_switching&oldid=1291717331).
+Reference: _Wikipedia_. “Packet switching.” May 22, 2025. [https://en.wikipedia.org/w/index.php?title=Packet_switching](https://en.wikipedia.org/w/index.php?title=Packet_switching&oldid=1291717331).
 <!--ID: 1748376567883-->
 END%%
 
@@ -415,7 +415,7 @@ END%%
 Basic
 Which of circuit or packet switching most efficiently saturates the network?
 Back: Packet switching.
-Reference: “Packet Switching.” In _Wikipedia_, May 22, 2025. [https://en.wikipedia.org/w/index.php?title=Packet_switching](https://en.wikipedia.org/w/index.php?title=Packet_switching&oldid=1291717331).
+Reference: _Wikipedia_. “Packet switching.” May 22, 2025. [https://en.wikipedia.org/w/index.php?title=Packet_switching](https://en.wikipedia.org/w/index.php?title=Packet_switching&oldid=1291717331).
 <!--ID: 1748376567888-->
 END%%
 
@@ -546,10 +546,10 @@ END%%
 
 ## Bibliography
 
-* “Circuit Switching.” In _Wikipedia_, May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).
 * Fall, Kevin R, and W Richard Stevens. “TCP/IP Illustrated, Volume 1: The Protocols,” n.d.
-* “Message Switching.” In _Wikipedia_, January 17, 2025. [https://en.wikipedia.org/w/index.php?title=Message_switching](https://en.wikipedia.org/w/index.php?title=Message_switching&oldid=1270078238).
-* “Multiplexing.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1292011292).
-* “Packet Switching.” In _Wikipedia_, May 22, 2025. [https://en.wikipedia.org/w/index.php?title=Packet_switching](https://en.wikipedia.org/w/index.php?title=Packet_switching&oldid=1291717331).
-* “Telecommunications Network.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
-* “Virtual Circuit.” In _Wikipedia_, September 16, 2024. [https://en.wikipedia.org/w/index.php?title=Virtual_circuit](https://en.wikipedia.org/w/index.php?title=Virtual_circuit&oldid=1245939640).
+* _Wikipedia_. “Circuit switching.” May 25, 2025. [https://en.wikipedia.org/w/index.php?title=Circuit_switching](https://en.wikipedia.org/w/index.php?title=Circuit_switching&oldid=1292109312).
+* _Wikipedia_. “Message switching.” January 17, 2025. [https://en.wikipedia.org/w/index.php?title=Message_switching](https://en.wikipedia.org/w/index.php?title=Message_switching&oldid=1270078238).
+* _Wikipedia_. “Multiplexing.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1297199271).
+* _Wikipedia_. “Packet switching.” May 22, 2025. [https://en.wikipedia.org/w/index.php?title=Packet_switching](https://en.wikipedia.org/w/index.php?title=Packet_switching&oldid=1291717331).
+* _Wikipedia_. “Telecommunications network.” May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Telecommunications_network](https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1292045092).
+* _Wikipedia_. “Virtual circuit.” September 16, 2024. [https://en.wikipedia.org/w/index.php?title=Virtual_circuit&oldid=1245939640](https://en.wikipedia.org/w/index.php?title=Virtual_circuit&oldid=1245939640).

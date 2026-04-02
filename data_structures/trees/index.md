@@ -860,7 +860,7 @@ A $k$-ary tree is **full** if every node has degree $0$ or $k$. A $k$-ary tree i
 Basic
 Why aren't terms "complete/perfect" and "nearly complete/complete" quite synonymous?
 Back: In the former, "perfect" trees are a subset of "complete" trees.
-Reference: “Binary Tree,” in _Wikipedia_, March 13, 2024, [https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1213529508#Types_of_binary_trees).
+Reference: _Wikipedia_. “Binary tree.” May 28, 2025. [https://en.wikipedia.org/w/index.php?title=Binary_tree](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1292801415).
 <!--ID: 1714088438740-->
 END%%
 
@@ -1215,3 +1215,4 @@ END%%
 ## Bibliography
 
 * Thomas H. Cormen et al., _Introduction to Algorithms_, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+* Reference: _Wikipedia_. “Binary tree.” May 28, 2025. [https://en.wikipedia.org/w/index.php?title=Binary_tree](https://en.wikipedia.org/w/index.php?title=Binary_tree&oldid=1292801415).

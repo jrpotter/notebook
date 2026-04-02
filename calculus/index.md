@@ -155,7 +155,7 @@ If $x, y \in \mathbb{R}^+$, then there exists a positive integer $n$ such that $
 Basic
 What does the Archimedean property of the reals state?
 Back: If $x, y \in \mathbb{R}^+$, then there exists a positive integer $n$ such that $nx > y$.
-Reference: “Archimedean Property,” in _Wikipedia_, June 23, 2024, [https://en.wikipedia.org/w/index.php?title=Archimedean_property](https://en.wikipedia.org/w/index.php?title=Archimedean_property&oldid=1230567137).
+Reference: _Wikipedia_. “Archimedean property.” December 14, 2024. [https://en.wikipedia.org/w/index.php?title=Archimedean_property](https://en.wikipedia.org/w/index.php?title=Archimedean_property&oldid=1263038749).
 <!--ID: 1724155425457-->
 END%%
 
@@ -195,7 +195,7 @@ END%%
 Basic
 Which property is roughly described as "the reals have no infinitely large element?"
 Back: The Archimedean property of the reals.
-Reference: “Archimedean Property,” in _Wikipedia_, June 23, 2024, [https://en.wikipedia.org/w/index.php?title=Archimedean_property](https://en.wikipedia.org/w/index.php?title=Archimedean_property&oldid=1230567137).
+Reference: _Wikipedia_. “Archimedean property.” December 14, 2024. [https://en.wikipedia.org/w/index.php?title=Archimedean_property](https://en.wikipedia.org/w/index.php?title=Archimedean_property&oldid=1263038749).
 <!--ID: 1724155425492-->
 END%%
 
@@ -204,7 +204,7 @@ Basic
 Which property of the reals is depicted in the following?
 ![[archimedean-property.png]]
 Back: The Archimedean property.
-Reference: “Archimedean Property,” in _Wikipedia_, June 23, 2024, [https://en.wikipedia.org/w/index.php?title=Archimedean_property](https://en.wikipedia.org/w/index.php?title=Archimedean_property&oldid=1230567137).
+Reference: _Wikipedia_. “Archimedean property.” December 14, 2024. [https://en.wikipedia.org/w/index.php?title=Archimedean_property](https://en.wikipedia.org/w/index.php?title=Archimedean_property&oldid=1263038749).
 <!--ID: 1724155425498-->
 END%%
 
@@ -213,7 +213,7 @@ Basic
 How is the following diagram stated analytically?
 ![[archimedean-property.png]]
 Back: For any $A, B \in \mathbb{R}^+$, there exists a positive integer $n$ such that $nA > B$.
-Reference: “Archimedean Property,” in _Wikipedia_, June 23, 2024, [https://en.wikipedia.org/w/index.php?title=Archimedean_property](https://en.wikipedia.org/w/index.php?title=Archimedean_property&oldid=1230567137).
+Reference: _Wikipedia_. “Archimedean property.” December 14, 2024. [https://en.wikipedia.org/w/index.php?title=Archimedean_property](https://en.wikipedia.org/w/index.php?title=Archimedean_property&oldid=1263038749).
 <!--ID: 1724155425503-->
 END%%
 
@@ -221,7 +221,7 @@ END%%
 Basic
 What mathematical entities are presumed in the Archimedean property of the reals?
 Back: Two positive real numbers.
-Reference: “Archimedean Property,” in _Wikipedia_, June 23, 2024, [https://en.wikipedia.org/w/index.php?title=Archimedean_property](https://en.wikipedia.org/w/index.php?title=Archimedean_property&oldid=1230567137).
+Reference: _Wikipedia_. “Archimedean property.” December 14, 2024. [https://en.wikipedia.org/w/index.php?title=Archimedean_property](https://en.wikipedia.org/w/index.php?title=Archimedean_property&oldid=1263038749).
 <!--ID: 1724155425509-->
 END%%
 
@@ -403,5 +403,5 @@ END%%
 
 ## Bibliography
 
-* “Archimedean Property,” in _Wikipedia_, June 23, 2024, [https://en.wikipedia.org/w/index.php?title=Archimedean_property](https://en.wikipedia.org/w/index.php?title=Archimedean_property&oldid=1230567137).
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+* _Wikipedia_. “Archimedean property.” December 14, 2024. [https://en.wikipedia.org/w/index.php?title=Archimedean_property](https://en.wikipedia.org/w/index.php?title=Archimedean_property&oldid=1263038749).

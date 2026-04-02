@@ -14,7 +14,7 @@ tags:
 Basic
 What is reification?
 Back: The process by which an abstract idea is made concrete.
-Reference: “Reification (Knowledge Representation),” in _Wikipedia_, October 3, 2023, [https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)](https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)&oldid=1178437461).
+Reference: _Wikipedia_. “Reification (knowledge representation).” March 13, 2025. [https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)](https://en.wikipedia.org/w/index.php?title=Reification_\(knowledge_representation\)&oldid=1280274485).
 <!--ID: 1734385502410-->
 END%%
 
@@ -22,7 +22,7 @@ END%%
 Basic
 In the context of RDF, what does reification typically refer to?
 Back: Creating RDF statements about RDF statements.
-Reference: “Reification (Knowledge Representation),” in _Wikipedia_, October 3, 2023, [https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)](https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)&oldid=1178437461).
+Reference: _Wikipedia_. “Reification (knowledge representation).” March 13, 2025. [https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)](https://en.wikipedia.org/w/index.php?title=Reification_\(knowledge_representation\)&oldid=1280274485).
 <!--ID: 1734385502419-->
 END%%
 
@@ -128,4 +128,4 @@ END%%
 ## Bibliography
 
 * Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-* “Reification (Knowledge Representation),” in _Wikipedia_, October 3, 2023, [https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)](https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)&oldid=1178437461).
+* _Wikipedia_. “Reification (knowledge representation).” March 13, 2025. [https://en.wikipedia.org/w/index.php?title=Reification_(knowledge_representation)](https://en.wikipedia.org/w/index.php?title=Reification_\(knowledge_representation\)&oldid=1280274485).

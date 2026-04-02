@@ -511,7 +511,7 @@ A **derangement** is a permutation of the elements of a set in which no element 
 Basic
 What is a derangement?
 Back: A permutation in which no element maps to itself.
-Reference: “Derangement.” In _Wikipedia_, June 23, 2025. [https://en.wikipedia.org/w/index.php?title=Derangement](https://en.wikipedia.org/w/index.php?title=Derangement&oldid=1297049355).
+Reference: _Wikipedia_. “Derangement.” June 23, 2025. [https://en.wikipedia.org/w/index.php?title=Derangement](https://en.wikipedia.org/w/index.php?title=Derangement&oldid=1297049355).
 <!--ID: 1750773335188-->
 END%%
 
@@ -519,7 +519,7 @@ END%%
 Basic
 With respect to functions, what is a fixed point?
 Back: An element that is mapped to itself by the function.
-Reference: “Derangement.” In _Wikipedia_, June 23, 2025. [https://en.wikipedia.org/w/index.php?title=Derangement](https://en.wikipedia.org/w/index.php?title=Derangement&oldid=1297049355).
+Reference: _Wikipedia_. “Derangement.” June 23, 2025. [https://en.wikipedia.org/w/index.php?title=Derangement](https://en.wikipedia.org/w/index.php?title=Derangement&oldid=1297049355).
 <!--ID: 1750773335201-->
 END%%
 
@@ -527,7 +527,7 @@ END%%
 Basic
 A permutation with no fixed points is referred to as what?
 Back: A derangement.
-Reference: “Derangement.” In _Wikipedia_, June 23, 2025. [https://en.wikipedia.org/w/index.php?title=Derangement](https://en.wikipedia.org/w/index.php?title=Derangement&oldid=1297049355).
+Reference: _Wikipedia_. “Derangement.” June 23, 2025. [https://en.wikipedia.org/w/index.php?title=Derangement](https://en.wikipedia.org/w/index.php?title=Derangement&oldid=1297049355).
 <!--ID: 1750773335206-->
 END%%
 
@@ -561,6 +561,6 @@ END%%
 
 ## Bibliography
 
-* “Derangement.” In _Wikipedia_, June 23, 2025. [https://en.wikipedia.org/w/index.php?title=Derangement](https://en.wikipedia.org/w/index.php?title=Derangement&oldid=1297049355).
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+* _Wikipedia_. “Derangement.” June 23, 2025. [https://en.wikipedia.org/w/index.php?title=Derangement](https://en.wikipedia.org/w/index.php?title=Derangement&oldid=1297049355).
