@@ -17,7 +17,7 @@ If instead $R$ is irreflexive on $A$ and connected, then $R$ is a **strict total
 Basic
 A binary relation on $A$ is a total order on $A$ if it satisfies what four properties?
 Back: Reflexivity on $A$, antisymmetry, transitivity, and strong connectivity.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665320-->
 END%%
 
@@ -25,7 +25,7 @@ END%%
 Basic
 *Why* is a total order named the way it is?
 Back: Every pair of elements needs to be comparable.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665321-->
 END%%
 
@@ -33,7 +33,7 @@ END%%
 Basic
 Which of partial orders and total orders is the more general concept?
 Back: Partial orders.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665322-->
 END%%
 
@@ -41,21 +41,21 @@ END%%
 Basic
 Which property of total orders is its name attributed to?
 Back: Strong connectivity.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665323-->
 END%%
 
 %%ANKI
 Cloze
 A {total} order is a {partial} order satisfying {strong connectivity}.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665324-->
 END%%
 
 %%ANKI
 Cloze
 Operator {$\leq$} typically denotes a {non-strict} total order.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665325-->
 END%%
 
@@ -63,7 +63,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle b, b \rangle\}$ a total order on $\{a, b\}$?
 Back: It isn't strongly connected.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665326-->
 END%%
 
@@ -71,7 +71,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle b, a \rangle\}$ a total order on $\{a, b\}$?
 Back: It is neither reflexive nor strongly connected.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665327-->
 END%%
 
@@ -79,7 +79,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle a, b \rangle, \langle b, b \rangle\}$ a total order on $\{a, b\}$?
 Back: N/A. It is.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665328-->
 END%%
 
@@ -129,14 +129,14 @@ END%%
 Basic
 A binary relation on $A$ is a strict total order on $A$ if it satisfies what four properties?
 Back: Irreflexivity on $A$, antisymmetry, transitivity, and connectivity.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665329-->
 END%%
 
 %%ANKI
 Cloze
 Operator {$<$} typically denotes a {strict} total order.
-Reference: “Partially Ordered Set,” in _Wikipedia_, June 22, 2024, [https://en.wikipedia.org/w/index.php?title=Partially_ordered_set](https://en.wikipedia.org/w/index.php?title=Partially_ordered_set&oldid=1230452839).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665330-->
 END%%
 
@@ -144,21 +144,21 @@ END%%
 Basic
 Which of strict total orders and strict partial orders is the more general concept?
 Back: Strict partial orders.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665331-->
 END%%
 
 %%ANKI
 Cloze
 A {strict total} order is a {strict partial} order satisfying {connectivity}.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665332-->
 END%%
 
 %%ANKI
 Cloze
 A {1:non-strict} total order satisfies {2:strong connectivity} whereas a {2:strict} total order satisfies {1:connectivity}.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665333-->
 END%%
 
@@ -166,7 +166,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle b, b \rangle\}$ a strict total order on $\{a, b\}$?
 Back: It is neither irreflexive nor connected.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665334-->
 END%%
 
@@ -174,7 +174,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, a \rangle, \langle b, a \rangle\}$ a strict total order on $\{a, b\}$?
 Back: It isn't irreflexive.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665335-->
 END%%
 
@@ -182,7 +182,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, b \rangle\}$ a strict total order on $\{a, b\}$?
 Back: N/A. It is.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665336-->
 END%%
 
@@ -190,7 +190,7 @@ END%%
 Basic
 *Why* isn't $R = \{\langle a, b \rangle, \langle b, a \rangle\}$ a strict total order on $\{a, b\}$?
 Back: It is neither antisymmetric nor transitive.
-Reference: “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+Reference: _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).
 <!--ID: 1723923665337-->
 END%%
 
@@ -231,4 +231,4 @@ END%%
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-* “Total Order.” In _Wikipedia_, April 9, 2024. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1218090468).
+* _Wikipedia_. “Total order.” June 4, 2025. [https://en.wikipedia.org/w/index.php?title=Total_order](https://en.wikipedia.org/w/index.php?title=Total_order&oldid=1293907635).

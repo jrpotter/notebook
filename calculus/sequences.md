@@ -1288,7 +1288,7 @@ END%%
 Basic
 Which polygonal numbers are the "next" generalization of triangular numbers?
 Back: The square numbers.
-Reference: “Triangular Number,” in _Wikipedia_, January 13, 2024, [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1195279122).
+Reference: _Wikipedia_. “Triangular number.” June 19, 2025. [https://en.wikipedia.org/w/index.php?title=Triangular_number](https://en.wikipedia.org/w/index.php?title=Triangular_number&oldid=1296418181).
 <!--ID: 1709419325898-->
 END%%
 

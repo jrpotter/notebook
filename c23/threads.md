@@ -139,7 +139,7 @@ int tss_set(tss_t key, void *val);
 Basic
 What storage class specifier is used to modify TLS?
 Back: `thread_local`
-Reference: “Thread-Local Storage,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1252543227).
+Reference: _Wikipedia_. “Thread-local storage.” February 5, 2025. [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1274076230).
 <!--ID: 1734745402931-->
 END%%
 
@@ -466,3 +466,4 @@ END%%
 
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
+* _Wikipedia_. “Thread-local storage.” February 5, 2025. [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1274076230).

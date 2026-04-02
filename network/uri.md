@@ -68,7 +68,7 @@ Cloze
 A URI has the following generic syntax:
 
 {`<scheme>`}`:`{`[//<authority>]`}{`<path>`}{`[?<query>]`}{`[#<fragment>]`}.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722211276499-->
 END%%
 
@@ -76,7 +76,7 @@ END%%
 Basic
 Which two components of a URI are required?
 Back: The scheme and the path.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722211744659-->
 END%%
 
@@ -84,7 +84,7 @@ END%%
 Basic
 Which three components of a URI are optional?
 Back: The authority, query, and fragment.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722211744664-->
 END%%
 
@@ -92,7 +92,7 @@ END%%
 Basic
 How many top-level components make up a URI's generic syntax?
 Back: Five.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201375-->
 END%%
 
@@ -100,7 +100,7 @@ END%%
 Basic
 What is the associated delimiter of a URI's authority?
 Back: `//`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201382-->
 END%%
 
@@ -108,7 +108,7 @@ END%%
 Basic
 What is the associated delimiter of a URI's query?
 Back: `?`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201386-->
 END%%
 
@@ -116,7 +116,7 @@ END%%
 Basic
 What is the associated delimiter of a URI's scheme?
 Back: N/A.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201389-->
 END%%
 
@@ -124,7 +124,7 @@ END%%
 Basic
 What is the associated delimiter of a URI's fragment?
 Back: `#`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201393-->
 END%%
 
@@ -132,7 +132,7 @@ END%%
 Basic
 What is the associated delimiter of a URI's path?
 Back: N/A.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201397-->
 END%%
 
@@ -140,7 +140,7 @@ END%%
 Basic
 When is a URI's component considered "undefined"?
 Back: When its associated delimiter is not present in the URI.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201402-->
 END%%
 
@@ -148,7 +148,7 @@ END%%
 Basic
 Which URI components are always defined?
 Back: The scheme and the path.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201407-->
 END%%
 
@@ -156,7 +156,7 @@ END%%
 Basic
 What delimiter separates the segments of a path?
 Back: `/`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201412-->
 END%%
 
@@ -167,7 +167,7 @@ The following URI specifies what scheme?
 > http://www.example.com/questions/3456/my-document
 
 Back: `http`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201466-->
 END%%
 
@@ -178,7 +178,7 @@ The following URI specifies what authority?
 > http://www.example.com/questions/3456/my-document
 
 Back: `//www.example.com`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201450-->
 END%%
 
@@ -189,7 +189,7 @@ The following URI specifies what userinfo?
 > http://www.example.com/questions/3456/my-document
 
 Back: N/A. It is undefined.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212472982-->
 END%%
 
@@ -200,7 +200,7 @@ The following URI specifies what port?
 > http://www.example.com/questions/3456/my-document
 
 Back: N/A. It is undefined.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212472988-->
 END%%
 
@@ -211,7 +211,7 @@ The following URI specifies what host?
 > http://www.example.com/questions/3456/my-document
 
 Back: `www.example.com`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212472995-->
 END%%
 
@@ -222,7 +222,7 @@ The following URI specifies what path?
 > http://www.example.com/questions/3456/my-document
 
 Back: `/questions/3456/my-document`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201416-->
 END%%
 
@@ -233,7 +233,7 @@ The following URI specifies what query?
 > http://www.example.com/questions/3456/my-document
 
 Back: N/A. It is undefined.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201460-->
 END%%
 
@@ -244,7 +244,7 @@ The following URI specifies what fragment?
 > http://www.example.com/questions/3456/my-document
 
 Back: N/A. It is undefined.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212201472-->
 END%%
 
@@ -254,7 +254,7 @@ The authority of a URI has the following generic syntax:
 
 > `//`{`[<userinfo>@]`}{`<host>`}{`[:<port>]`}
 
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722211744669-->
 END%%
 
@@ -262,7 +262,7 @@ END%%
 Basic
 Which two components of a URI's authority is optional?
 Back: The user info and port.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722211744675-->
 END%%
 
@@ -270,7 +270,7 @@ END%%
 Basic
 Which component of a URI's authority is required?
 Back: The host.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722211744680-->
 END%%
 
@@ -281,7 +281,7 @@ The following URI specifies what scheme?
 > ldap://[2001:db8::7]/c=GB?objectClass?one
 
 Back: `ldap`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212473001-->
 END%%
 
@@ -292,7 +292,7 @@ The following URI specifies what fragment?
 > ldap://[2001:db8::7]/c=GB?objectClass?one
 
 Back: N/A. It is undefined.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212790216-->
 END%%
 
@@ -303,7 +303,7 @@ The following URI specifies what authority?
 > ldap://[2001:db8::7]/c=GB?objectClass?one
 
 Back: `//[2001:db8::7]`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212790223-->
 END%%
 
@@ -314,7 +314,7 @@ The following URI specifies what query?
 > ldap://[2001:db8::7]/c=GB?objectClass?one
 
 Back: `objectClass?one`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212790228-->
 END%%
 
@@ -325,7 +325,7 @@ The following URI specifies what path?
 > ldap://[2001:db8::7]/c=GB?objectClass?one
 
 Back: `/c=GB`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212790232-->
 END%%
 
@@ -336,7 +336,7 @@ The following URI specifies what scheme?
 > tel:+1-816-555-1212
 
 Back: `tel`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212790236-->
 END%%
 
@@ -347,7 +347,7 @@ The following URI specifies what authority?
 > tel:+1-816-555-1212
 
 Back: N/A. It is undefined.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212790241-->
 END%%
 
@@ -358,7 +358,7 @@ The following URI specifies what path?
 > tel:+1-816-555-1212
 
 Back: `+1-816-555-1212`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212790247-->
 END%%
 
@@ -369,7 +369,7 @@ The following URI specifies what query?
 > tel:+1-816-555-1212
 
 Back: N/A. It is undefined.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212790252-->
 END%%
 
@@ -380,7 +380,7 @@ The following URI specifies what fragment?
 > tel:+1-816-555-1212
 
 Back: N/A. It is undefined.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212790258-->
 END%%
 
@@ -391,7 +391,7 @@ The following URI specifies what scheme?
 > telnet://192.0.2.16:80/
 
 Back: `telnet`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212790265-->
 END%%
 
@@ -402,7 +402,7 @@ The following URI specifies what authority?
 > telnet://192.0.2.16:80/
 
 Back: `//192.0.2.16:80`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212790272-->
 END%%
 
@@ -413,7 +413,7 @@ The following URI specifies what path?
 > telnet://192.0.2.16:80/
 
 Back: `/`
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722212790279-->
 END%%
 
@@ -473,7 +473,7 @@ END%%
 Basic
 What scheme are URLs required to use?
 Back: N/A. There exist many possible schemes.
-Reference: “Uniform Resource Locator.” In _Wikipedia_, June 20, 2024. [https://en.wikipedia.org/w/index.php?title=URL](https://en.wikipedia.org/w/index.php?title=URL&oldid=1230124093).
+Reference: _Wikipedia_. “URL.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=URL](https://en.wikipedia.org/w/index.php?title=URL&oldid=1296530613).
 <!--ID: 1722193197739-->
 END%%
 
@@ -481,7 +481,7 @@ END%%
 Basic
 What are the two most commonly used URL schemes?
 Back: `http` and `https`.
-Reference: “Uniform Resource Locator.” In _Wikipedia_, June 20, 2024. [https://en.wikipedia.org/w/index.php?title=URL](https://en.wikipedia.org/w/index.php?title=URL&oldid=1230124093).
+Reference: _Wikipedia_. “URL.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=URL](https://en.wikipedia.org/w/index.php?title=URL&oldid=1296530613).
 <!--ID: 1722193197746-->
 END%%
 
@@ -493,7 +493,7 @@ A **uniform resource name** (URN) is a URI that uses the `urn` scheme. It is int
 Basic
 What is URN an acronym for?
 Back: **U**niform **r**esource **n**ame.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722192211078-->
 END%%
 
@@ -501,7 +501,7 @@ END%%
 Basic
 *Why* is a URN named the way it is?
 Back: It is used to uniquely identify some resource.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722192211083-->
 END%%
 
@@ -509,7 +509,7 @@ END%%
 Basic
 Which of URLs or URNs are more general?
 Back: N/A.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722192211087-->
 END%%
 
@@ -517,7 +517,7 @@ END%%
 Basic
 Which of URNs or URIs are more general?
 Back: URIs.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722192211089-->
 END%%
 
@@ -525,7 +525,7 @@ END%%
 Basic
 *Why* aren't URLs a subset of URNs?
 Back: What a URL represents may change over time.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722192211091-->
 END%%
 
@@ -533,7 +533,7 @@ END%%
 Basic
 *Why* aren't URNs a subset of URLs?
 Back: Their structure may not necessarily indicate how to find the resource.
-Reference: “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
+Reference: _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
 <!--ID: 1722192211093-->
 END%%
 
@@ -541,7 +541,7 @@ END%%
 Basic
 What scheme are URNs required to use?
 Back: `urn`
-Reference: “Uniform Resource Name.” In _Wikipedia_, April 26, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Name](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Name&oldid=1220954593).
+Reference: _Wikipedia_. “Uniform Resource Name.” January 25, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Name](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Name&oldid=1271797746).
 <!--ID: 1722193197751-->
 END%%
 
@@ -633,6 +633,6 @@ END%%
 ## Bibliography
 
 * Allemang, Dean, James A. Hendler, and Fabien L. Gandon. _Semantic Web for the Working Ontologist_. 3e ed. ACM Books 33. New York: Association for computing machinery, 2020.
-* “Uniform Resource Identifier.” In _Wikipedia_, July 22, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1235957234).
-* “Uniform Resource Locator.” In _Wikipedia_, June 20, 2024. [https://en.wikipedia.org/w/index.php?title=URL](https://en.wikipedia.org/w/index.php?title=URL&oldid=1230124093).
-* “Uniform Resource Name.” In _Wikipedia_, April 26, 2024. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Name](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Name&oldid=1220954593).
+* _Wikipedia_. “Uniform Resource Identifier.” June 14, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Identifier&oldid=1295584863).
+* _Wikipedia_. “Uniform Resource Name.” January 25, 2025. [https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Name](https://en.wikipedia.org/w/index.php?title=Uniform_Resource_Name&oldid=1271797746).
+* _Wikipedia_. “URL.” June 20, 2025. [https://en.wikipedia.org/w/index.php?title=URL](https://en.wikipedia.org/w/index.php?title=URL&oldid=1296530613).

@@ -299,7 +299,7 @@ END%%
 Basic
 In the context of threads, what is TLS an acronym for?
 Back: **T**hread-**L**ocal **S**torage.
-Reference: “Thread-Local Storage,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1252543227).
+Reference: _Wikipedia_. “Thread-local storage.” February 5, 2025. [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1274076230).
 <!--ID: 1734745402895-->
 END%%
 
@@ -307,7 +307,7 @@ END%%
 Basic
 What is thread-local storage?
 Back: A storage method that uses static or global memory local to a thread.
-Reference: “Thread-Local Storage,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1252543227).
+Reference: _Wikipedia_. “Thread-local storage.” February 5, 2025. [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1274076230).
 <!--ID: 1734745402937-->
 END%%
 
@@ -351,6 +351,6 @@ END%%
 * “ISO: Programming Languages - C17,” April 2017, [https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](https://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf).
 * Jens Gustedt, _Modern C_ (Shelter Island, NY: Manning Publications Co, 2020).
 * “Starvation and Livelock.” Accessed September 17, 2025. [https://docs.oracle.com/javase/tutorial/essential/concurrency/starvelive.html](https://docs.oracle.com/javase/tutorial/essential/concurrency/starvelive.html).
-* “Thread-Local Storage,” in _Wikipedia_, October 21, 2024, [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1252543227).
 * _Wikipedia_. “Deadlock (computer science).” August 4, 2025. [https://en.wikipedia.org/w/index.php?title=Deadlock_(computer_science)](https://en.wikipedia.org/w/index.php?title=Deadlock_\(computer_science\)&oldid=1304234437).
 * _Wikipedia_. “Non-blocking algorithm.” September 5, 2025. [https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm](https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&oldid=1309704887).
+* _Wikipedia_. “Thread-local storage.” February 5, 2025. [https://en.wikipedia.org/w/index.php?title=Thread-local_storage](https://en.wikipedia.org/w/index.php?title=Thread-local_storage&oldid=1274076230).

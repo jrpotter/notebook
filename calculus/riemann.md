@@ -77,7 +77,7 @@ END%%
 Basic
 What name is given to $a$ in $\int_a^b f(x) \,dx$?
 Back: The lower limit of integration.
-Reference: “Integral.” In _Wikipedia_, December 31, 2024. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1266307875).
+Reference: _Wikipedia_. “Integral.” May 23, 2025. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1291840339).
 <!--ID: 1734816555521-->
 END%%
 
@@ -85,7 +85,7 @@ END%%
 Basic
 What does the lower limit of integration refer to in $\int_a^b f(x) \,dx$?
 Back: $a$
-Reference: “Integral.” In _Wikipedia_, December 31, 2024. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1266307875).
+Reference: _Wikipedia_. “Integral.” May 23, 2025. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1291840339).
 <!--ID: 1735613867214-->
 END%%
 
@@ -93,7 +93,7 @@ END%%
 Basic
 What name is given to $b$ in $\int_a^b f(x) \,dx$?
 Back: The upper limit of integration.
-Reference: “Integral.” In _Wikipedia_, December 31, 2024. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1266307875).
+Reference: _Wikipedia_. “Integral.” May 23, 2025. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1291840339).
 <!--ID: 1734816555523-->
 END%%
 
@@ -101,7 +101,7 @@ END%%
 Basic
 What name is given collectively to $a$ and $b$ in $\int_a^b f(x) \,dx$?
 Back: The integration limits.
-Reference: “Integral.” In _Wikipedia_, December 31, 2024. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1266307875).
+Reference: _Wikipedia_. “Integral.” May 23, 2025. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1291840339).
 <!--ID: 1734816555526-->
 END%%
 
@@ -109,7 +109,7 @@ END%%
 Basic
 What name is given to $f(x)$ in $\int_a^b f(x) \,dx$?
 Back: The integrand.
-Reference: “Integral.” In _Wikipedia_, December 31, 2024. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1266307875).
+Reference: _Wikipedia_. “Integral.” May 23, 2025. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1291840339).
 <!--ID: 1735613867216-->
 END%%
 
@@ -117,7 +117,7 @@ END%%
 Basic
 What does the integrand refer to in $\int_a^b f(x) \,dx$?
 Back: $f(x)$
-Reference: “Integral.” In _Wikipedia_, December 31, 2024. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1266307875).
+Reference: _Wikipedia_. “Integral.” May 23, 2025. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1291840339).
 <!--ID: 1735613867218-->
 END%%
 
@@ -125,7 +125,7 @@ END%%
 Basic
 What name is given to $dx$ in $\int_a^b f(x) \,dx$?
 Back: The differential.
-Reference: “Integral.” In _Wikipedia_, December 31, 2024. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1266307875).
+Reference: _Wikipedia_. “Integral.” May 23, 2025. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1291840339).
 <!--ID: 1735613867219-->
 END%%
 
@@ -133,7 +133,7 @@ END%%
 Basic
 What does the differential refer to in $\int_a^b f(x) \,dx$?
 Back: $dx$
-Reference: “Integral.” In _Wikipedia_, December 31, 2024. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1266307875).
+Reference: _Wikipedia_. “Integral.” May 23, 2025. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1291840339).
 <!--ID: 1735613867220-->
 END%%
 
@@ -2221,5 +2221,5 @@ END%%
 
 ## Bibliography
 
-* “Integral.” In _Wikipedia_, December 31, 2024. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1266307875).
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
+* _Wikipedia_. “Integral.” May 23, 2025. [https://en.wikipedia.org/w/index.php?title=Integral](https://en.wikipedia.org/w/index.php?title=Integral&oldid=1291840339).

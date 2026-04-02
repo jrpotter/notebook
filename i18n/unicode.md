@@ -14,7 +14,7 @@ The **Universal Character Set** (UCS) is the [[i18n/index#Terminology|coded char
 %%ANKI
 Cloze
 The {UCS} is the {coded character set} used by {Unicode}.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743888408942-->
 END%%
 
@@ -22,7 +22,7 @@ END%%
 Basic
 What is UCS an acronym for?
 Back: The **U**niversal **C**haracter **S**et.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743888408950-->
 END%%
 
@@ -30,7 +30,7 @@ END%%
 Basic
 Which of Unicode or UCS extends the other?
 Back: Unicode is an extension of UCS.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743888408954-->
 END%%
 
@@ -45,7 +45,7 @@ END%%
 Basic
 How many code points exist in a Unicode/UCS plane?
 Back: $2^{16}$.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743888408959-->
 END%%
 
@@ -117,7 +117,7 @@ END%%
 Basic
 What range of codes points exist in the BMP?
 Back: `U+0000` to `U+FFFF`.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743890674362-->
 END%%
 
@@ -137,7 +137,7 @@ UCS-2 is an obsolete fixed-width encoding that assumed all representable charact
 Basic
 Why is UCS-2 named the way it is?
 Back: It stands for **2**-byte **U**niversal **C**haracter **S**et.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743890674369-->
 END%%
 
@@ -145,7 +145,7 @@ END%%
 Basic
 Is UCS-2 a fixed-width encoding or a variable-width encoding?
 Back: Fixed-width.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743890674372-->
 END%%
 
@@ -153,7 +153,7 @@ END%%
 Basic
 How large is UCS-2's code space?
 Back: $2^{16}$.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743890674377-->
 END%%
 
@@ -161,7 +161,7 @@ END%%
 Basic
 What range of codes points are defined in UCS-2?
 Back: `U+0000` to `U+FFFF`.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743890674380-->
 END%%
 
@@ -169,7 +169,7 @@ END%%
 Basic
 Which Unicode/UCS planes can UCS-2 represent?
 Back: Just the BMP.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743890674382-->
 END%%
 
@@ -177,7 +177,7 @@ END%%
 Basic
 What was the first major encoding introduced by Unicode/UCS?
 Back: UCS-2.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743890674385-->
 END%%
 
@@ -197,14 +197,14 @@ If the encoding type is UTF-16BE, we assume a big-endian order. If UTF-16LE, we 
 %%ANKI
 Cloze
 {UCS-2} was superseded by {UTF-16}.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743890674375-->
 END%%
 
 %%ANKI
 Cloze
 UCS-2 is {fixed}-width whereas UTF-16 is {variable}-width.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743891757976-->
 END%%
 
@@ -212,7 +212,7 @@ END%%
 Basic
 Which code points are encoded in UTF-16 with a single code unit?
 Back: Those "in the BMP".
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743891757980-->
 END%%
 
@@ -220,7 +220,7 @@ END%%
 Basic
 Which code points are encoded in UTF-16 with two code units?
 Back: Those "above the BMP".
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743891757983-->
 END%%
 
@@ -236,7 +236,7 @@ END%%
 Basic
 What is the first code unit defined in the UTF-16 surrogate range?
 Back: `0xD800`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743891757962-->
 END%%
 
@@ -244,7 +244,7 @@ END%%
 Basic
 What is the last code unit defined in the UTF-16 surrogate range?
 Back: `0xDFFF`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743891757972-->
 END%%
 
@@ -252,7 +252,7 @@ END%%
 Basic
 What range of code units comprise the UTF-16 surrogates?
 Back: `0xD800-0xDFFF`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743891757986-->
 END%%
 
@@ -260,7 +260,7 @@ END%%
 Basic
 In hexadecimal, how many distinct values are in range `0xD800-0xDFFF`?
 Back: `0x800`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743891757990-->
 END%%
 
@@ -268,7 +268,7 @@ END%%
 Basic
 How many code units make up a UTF-16 code point?
 Back: One or two.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743892236786-->
 END%%
 
@@ -276,7 +276,7 @@ END%%
 Basic
 If a code point is encoded with one UTF-16 code unit, what do we know about the value?
 Back: It cannot be a surrogate.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743892236793-->
 END%%
 
@@ -284,14 +284,14 @@ END%%
 Basic
 If a code point is encoded with two UTF-16 code units, what do we know about the values?
 Back: They must both be surrogates.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743892236795-->
 END%%
 
 %%ANKI
 Cloze
 A UTF-16 stream consists of {1:single} 16-bit code units {1:outside} the surrogate range and {2:pairs} of 16-bit code units {2:inside} the surrogate range.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743892236797-->
 END%%
 
@@ -299,14 +299,14 @@ END%%
 Basic
 What range of UTF-16 code units comprise code points representable with a single UTF-16 code unit?
 Back: `0x0000-0xD7FF` and `0xE000-0xFFFF`.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743898501971-->
 END%%
 
 %%ANKI
 Cloze
 With respect to UTF-16, a surrogate {1:pair} consists of a {2:high} surrogate and a {2:low} surrogate.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743898501973-->
 END%%
 
@@ -314,7 +314,7 @@ END%%
 Basic
 With respect to UTF-16, what alternative name is given to a high surrogate?
 Back: A leading surrogate.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743898501977-->
 END%%
 
@@ -322,14 +322,14 @@ END%%
 Basic
 With respect to UTF-16, what alternative name is given to a low surrogate?
 Back: A trailing surrogate.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743898501980-->
 END%%
 
 %%ANKI
 Cloze
 A {1:high} surrogate is to a {2:leading} surrogate whereas a {2:low} surrogate is to a {1:trailing} surrogate.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743898501961-->
 END%%
 
@@ -337,7 +337,7 @@ END%%
 Basic
 The high surrogate is found in what range of UTF-16 code units?
 Back: `0xD800-0xDBFF`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743899036711-->
 END%%
 
@@ -345,7 +345,7 @@ END%%
 Basic
 The low surrogate is found in what range of UTF-16 code units?
 Back: `0xDC00-0xDFFF`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743899036720-->
 END%%
 
@@ -353,7 +353,7 @@ END%%
 Basic
 The trailing surrogate is found in what range of UTF-16 code units?
 Back: `0xDC00-0xDFFF`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743899036722-->
 END%%
 
@@ -361,7 +361,7 @@ END%%
 Basic
 The leading surrogate is found in what range of UTF-16 code units?
 Back: `0xD800-0xDBFF`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743899036724-->
 END%%
 
@@ -369,7 +369,7 @@ END%%
 Basic
 In UTF-16, the surrogate range contains values with what binary prefix(es)?
 Back: `110110` and `110111`.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743899036727-->
 END%%
 
@@ -377,7 +377,7 @@ END%%
 Basic
 What binary prefix do values in `0xD800-0xDBFF` have?
 Back: `110110`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743899036729-->
 END%%
 
@@ -385,7 +385,7 @@ END%%
 Basic
 What binary prefix do values in `0xDC00-0xDFFF` have?
 Back: `110111`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1762178644821-->
 END%%
 
@@ -393,7 +393,7 @@ END%%
 Basic
 In UTF-16, what binary prefix does the leading surrogate have?
 Back: `110110`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743899036731-->
 END%%
 
@@ -401,7 +401,7 @@ END%%
 Basic
 In UTF-16, what binary prefix does the trailing surrogate have?
 Back: `110111`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743899036734-->
 END%%
 
@@ -425,7 +425,7 @@ END%%
 Basic
 What is UTF-16BE an acronym for?
 Back: **U**niform **T**ransformation **F**ormat (16-bit **B**ig **E**ndian).
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743944550723-->
 END%%
 
@@ -433,7 +433,7 @@ END%%
 Basic
 What is UTF-16LE an acronym for?
 Back: **U**niform **T**ransformation **F**ormat (16-bit **L**ittle **E**ndian).
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743944550726-->
 END%%
 
@@ -441,7 +441,7 @@ END%%
 Basic
 With respect to UTF-16, what is BOM an acronym for?
 Back: **B**yte **O**rder **M**ark.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743944550729-->
 END%%
 
@@ -449,7 +449,7 @@ END%%
 Basic
 What value BOM does UTF-16 use?
 Back: `U+FEFF`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743944550732-->
 END%%
 
@@ -457,7 +457,7 @@ END%%
 Basic
 A same-endian decoder encounters what BOM on a UTF-16 stream?
 Back: `U+FEFF`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743944550736-->
 END%%
 
@@ -465,7 +465,7 @@ END%%
 Basic
 An opposite-endian decoder encounters what BOM on a UTF-16 stream?
 Back: `U+FFFE`
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743944550741-->
 END%%
 
@@ -473,7 +473,7 @@ END%%
 Basic
 What does it mean for the first code point read from a UTF-16 stream to be `U+FFFE`?
 Back: We are using an opposite-endian decoder.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743944550745-->
 END%%
 
@@ -481,7 +481,7 @@ END%%
 Basic
 What does it mean for the first code point read from a UTF-16 stream to be `U+FEFF`?
 Back: We are using a same-endian decoder.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743944550749-->
 END%%
 
@@ -489,7 +489,7 @@ END%%
 Basic
 With respect to UTF-16, when is a BOM strictly unnecessary?
 Back: When decoding explicitly UTF-16BE or UTF-16LE.
-Reference: “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
+Reference: _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
 <!--ID: 1743944550754-->
 END%%
 
@@ -502,7 +502,7 @@ Like UTF-16, UTF-32 also has big- and little-endian variants.
 %%ANKI
 Cloze
 {UTF-32} is synonymous with {UCS-4}.
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+Reference: _Wikipedia_. “UTF-32.” May 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1288869839).
 <!--ID: 1744333817131-->
 END%%
 
@@ -510,7 +510,7 @@ END%%
 Basic
 What is UTF-32 an acronym for?
 Back: **U**niform **T**ransformation **F**ormat (**32**-bit).
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+Reference: _Wikipedia_. “UTF-32.” May 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1288869839).
 <!--ID: 1744333817141-->
 END%%
 
@@ -526,14 +526,14 @@ END%%
 Basic
 What is UCS-4 an acronym for?
 Back: **U**niversal **C**haracter **S**et (**4**-byte).
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+Reference: _Wikipedia_. “UTF-32.” May 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1288869839).
 <!--ID: 1744333817144-->
 END%%
 
 %%ANKI
 Cloze
 UCS-4 is {fixed}-width whereas UTF-32 is {fixed}-width.
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+Reference: _Wikipedia_. “UTF-32.” May 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1288869839).
 <!--ID: 1744333817148-->
 END%%
 
@@ -541,7 +541,7 @@ END%%
 Basic
 Which Unicode transformation formats are fixed-length encodings?
 Back: Just UTF-32.
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+Reference: _Wikipedia_. “UTF-32.” May 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1288869839).
 <!--ID: 1744333817151-->
 END%%
 
@@ -549,7 +549,7 @@ END%%
 Basic
 Which Unicode transformation formats are variable-length encodings?
 Back: UTF-8 and UTF-16.
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+Reference: _Wikipedia_. “UTF-32.” May 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1288869839).
 <!--ID: 1744333817155-->
 END%%
 
@@ -557,7 +557,7 @@ END%%
 Basic
 Generally speaking, what is the main advantage of UTF-32?
 Back: Every code point can be directly indexed.
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+Reference: _Wikipedia_. “UTF-32.” May 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1288869839).
 <!--ID: 1744333817159-->
 END%%
 
@@ -565,7 +565,7 @@ END%%
 Basic
 Generally speaking, what is the main disadvantage of UTF-32?
 Back: It is space inefficient.
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+Reference: _Wikipedia_. “UTF-32.” May 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1288869839).
 <!--ID: 1744333817163-->
 END%%
 
@@ -573,7 +573,7 @@ END%%
 Basic
 In what way might someone argue UTF-32 is still variable-width?
 Back: Code points still can't be processed in isolation (e.g. combining characters sequences or emojis).
-Reference: “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+Reference: _Wikipedia_. “UTF-32.” May 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1288869839).
 <!--ID: 1744333817167-->
 END%%
 
@@ -1005,8 +1005,8 @@ END%%
 ## Bibliography
 
 * Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
-* “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
 * Reed, Nathan. “A Programmer’s Introduction to Unicode.” Accessed April 4, 2025. [https://www.reedbeta.com/blog/programmers-intro-to-unicode/](https://www.reedbeta.com/blog/programmers-intro-to-unicode/).
+* _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 * _Wikipedia_. “UTF-8.” November 3, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-8](https://en.wikipedia.org/w/index.php?title=UTF-8&oldid=1320220542).
-* “UTF-16.” In _Wikipedia_, April 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1284130940).
-* “UTF-32.” In _Wikipedia_, January 24, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1271513878).
+* _Wikipedia_. “UTF-16.” June 25, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-16](https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=1297388531).
+* _Wikipedia_. “UTF-32.” May 5, 2025. [https://en.wikipedia.org/w/index.php?title=UTF-32](https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=1288869839).
