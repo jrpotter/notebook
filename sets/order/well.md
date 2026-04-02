@@ -289,7 +289,7 @@ END%%
 
 ## Trichotomy
 
-For any two well-ordered structures, either they are [[structures#Isomorphisms|isomorphic]] or one is isomorphic to an initial segment of the other. More precisely, let $<_A$ and $<_B$ be well orderings on $A$ and $B$ respectively. Then exactly one of the following holds:
+For any two well-ordered structures, either they are [[relations#Isomorphisms|isomorphic]] or one is isomorphic to an initial segment of the other. More precisely, let $<_A$ and $<_B$ be well orderings on $A$ and $B$ respectively. Then exactly one of the following holds:
 
 1. $\langle A, <_A \rangle \cong \langle B, <_B \rangle$,
 2. $\langle A, <_A \rangle \cong \langle \mathop{\text{seg}}b, <_B^\circ \rangle$ for some $b \in B$,

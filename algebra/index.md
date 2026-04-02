@@ -8,7 +8,9 @@ tags:
 
 ## Overview
 
-**Algebra** is the branch of mathematics that deals with abstract systems, i.e. algebraic structures, and the manipulation of expressions within those systems. It is a generalization of [[#Arithmetic|arithmetic]] that introduces variables and other algebraic operations.
+An **algebraic structure** is a nonempty set $A$, a collection of [[operations]] on $A$, and a finite number of axioms these operations must satisfy.
+
+**Algebra** is the branch of mathematics that deals with abstract systems, i.e. these algebraic structures, and the manipulation of expressions within those systems. It is a generalization of [[#Arithmetic|arithmetic]] that introduces variables and other algebraic operations.
 
 %%ANKI
 Basic
@@ -32,6 +34,31 @@ Which of calculus or algebra is considered a generalization of the other?
 Back: N/A. These are distinct, fundamental concepts in mathematics.
 Reference: _Wikipedia_. “Algebra.” July 1, 2025. [https://en.wikipedia.org/w/index.php?title=Algebra](https://en.wikipedia.org/w/index.php?title=Algebra&oldid=1298208855).
 <!--ID: 1751752967231-->
+END%%
+
+%%ANKI
+Basic
+What is an algebraic structure?
+Back: A nonempty set $A$, a collection of operations acting on $A$, and a finite number of axioms these operations must satisfy.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775160703276-->
+END%%
+
+%%ANKI
+Cloze
+An {algebraic} structure contains the following parts:
+1. {A nonempty set};
+2. {A collection of operations on the set};
+3. {A finite number of axioms the operations must satisfy}.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775160703279-->
+END%%
+
+%%ANKI
+Cloze
+A {1:relational} structure has {2:relations} whereas an {2:algebraic} structure has {1:operations}.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775160703333-->
 END%%
 
 ## Equations
