@@ -1432,7 +1432,7 @@
     "_journal/2025-07-01.md": "4ed6c1c9f4da2a9317b6fdaae28e0ec6",
     "_journal/2025-06/2025-06-30.md": "edaae3ac0f2acad7b8e47d530ffffc81",
     "_journal/2025-06/2025-06-29.md": "9434e9a737e1796cc790d96b51a3a03f",
-    "algebra/structures.md": "a262cb928af8596a50183437b796c40d",
+    "algebra/structures.md": "a5755a2e8c134f388abbc12c3600e089",
     "_journal/2025-07-02.md": "4f15feca4bb966e8a6bdbc0283885d6f",
     "_journal/2025-07/2025-07-01.md": "4ed6c1c9f4da2a9317b6fdaae28e0ec6",
     "processor/exceptions.md": "e26547615f6108b330e17485a944cc01",
@@ -2362,7 +2362,7 @@
     "programming/loop_invariant.md": "d3a437634c124203b12a638a6db1ad8f",
     "_journal/2026-01-15.md": "57ed53452af481664535827ce6c69ad1",
     "_journal/2026-01/2026-01-14.md": "79060ae7230eb20fd15564b1adebf997",
-    "dnd/combat.md": "678d641607b50b13ec7cd70b022eb61c",
+    "dnd/combat.md": "249ad4e36b45ff3c1b0b83ba625178ac",
     "_journal/2026-01-16.md": "dccc785e46af0478c2ff70304dca6bd7",
     "_journal/2026-01/2026-01-15.md": "96c41e52132499c5e9b93d04f73bf3a7",
     "algorithms/mst.md": "f8a3eb97e57ebb57d6ef142681595967",
@@ -2592,8 +2592,8 @@
     "_journal/2026-03/2026-03-30.md": "8c351f808b70cc08c0b390453e303607",
     "sets/functions.md": "df3ea8c6671ef935709427c6098bb0e3",
     "sets/zfc.md": "582d4b622c16a1728f13c08dd8f65f2a",
-    "algebra/rings.md": "c70039419e53f71695ae650a10833493",
-    "algebra/fields.md": "c179369a6f71d3ce92c4392b34141bbd",
+    "algebra/rings.md": "ddb9dc5366267ab63484bb4729b6c49d",
+    "algebra/fields.md": "f7fc0dfbc38945dc28c1cadcfeef8e86",
     "_journal/2026-04/2026-04-01.md": "89856c25de00e8addd7f22962df6700b",
     "_journal/2026/2026-03/2026-03-31.md": "1d46516052c7cf20ee30c4f3a2a062a4",
     "_journal/2026/2026-03/2026-03-30.md": "8c351f808b70cc08c0b390453e303607",
@@ -2626,7 +2626,8 @@
     "_journal/2026/2026-03/2026-03-03.md": "f1373fec65d4a8fb01a49e7c8df312eb",
     "_journal/2026/2026-03/2026-03-02.md": "b678d9fa7b47cd48d3af095877e3955f",
     "_journal/2026/2026-03/2026-03-01.md": "9bcfe2938d1ec1c893e046d05f1dda04",
-    "algebra/operations.md": "fabbcd2fdb9959ec8c4e74cb7207ebfa"
+    "algebra/operations.md": "07f3655450f92f5e8c40a149e54d1247",
+    "_journal/2026-04-02.md": "927f9975c53f5e209b3a5403d85d5c80"
   },
   "fields_dict": {
     "Basic": [

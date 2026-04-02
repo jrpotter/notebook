@@ -948,16 +948,6 @@ Back: N/A. They cannot target something that far away.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 END%%
 
-%%ANKI
-Cloze
-A ranged attack is made with Disadvantage if targeting a creature satisfying the following:
-1. {Is within 5 feet}.
-2. {Can see the attacker}.
-3. {Is not Incapacitated}.
-Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
-<!--ID: 1770081820199-->
-END%%
-
 ### Opportunity Attacks
 
 An attacking creature can make an **Opportunity Attack** against a target creature when the target leaves the attacker's reach. In such a situation, the attacker can make a melee attack by spending a Reaction. The attack is considered to have occurred right before it leaves reach.

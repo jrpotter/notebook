@@ -15,8 +15,9 @@ TODO
 
 The set of all integers is a ring, denoted $\mathbb{Z}$. In addition, the following notation is often used to denote subsets of $\mathbb{Z}$:
 
-* $\mathbb{Z}_n = \{ 0, 1, \ldots, n - 1 \}$ where $n \in \mathbb{N}$
-* $\mathbb{Z}^+ = \{ z \in \mathbb{Z} \mid z > 0 \}$
+* $\mathbb{Z}_n = \{ 0, 1, \ldots, n - 1 \}$ where $n \in \mathbb{N}$.
+* $\mathbb{Z}^+ = \{ x \in \mathbb{Z} \mid x > 0 \}$.
+* $n\mathbb{Z} = \{ nx \mid x \in \mathbb{Z} \}$ where $n \in \mathbb{N}$.
 
 %%ANKI
 Basic
@@ -45,17 +46,33 @@ END%%
 %%ANKI
 Basic
 What set does Fraleigh refer to with notation $\mathbb{Z}^+$ for some $n \in \mathbb{N}$?
-Back: $\{ z \in \mathbb{Z} \mid z > 0 \}$
+Back: $\{ x \in \mathbb{Z} \mid x > 0 \}$
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775075056275-->
 END%%
 
 %%ANKI
 Basic
-How does Fraleigh usually denote the following set? $$\{ z \in \mathbb{Z} \mid z > 0 \}$$
+How does Fraleigh usually denote the following set? $$\{ x \in \mathbb{Z} \mid x > 0 \}$$
 Back: As $\mathbb{Z}^+$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775075056279-->
+END%%
+
+%%ANKI
+Basic
+What set does Fraleigh refer to with notation $n\mathbb{Z}$ for some $n \in \mathbb{Z}$?
+Back: $\{ nx \mid x \in \mathbb{Z} \}$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775142370081-->
+END%%
+
+%%ANKI
+Basic
+How does Fraleigh usually denote the following set? $$\{ 2x \mid x \in \mathbb{Z} \}$$
+Back: As $2\mathbb{Z}$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775142370082-->
 END%%
 
 ## Boolean

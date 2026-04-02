@@ -136,7 +136,7 @@ END%%
 %%ANKI
 Basic
 On $\mathbb{Q}$, define $aRb = a / b$. Is $R$ a binary operation? If not, why?
-Back: No. It is not well-defined for any $\langle x, 0 \rangle \in R$.
+Back: No. For any $x \in \mathbb{Q}$, $xR0$ is not well defined.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775075056232-->
 END%%
@@ -159,7 +159,7 @@ END%%
 
 %%ANKI
 Basic
-What does it mean for a binary operation $*$ on set $S$ to be not everywhere defined?
+What does it mean for a binary operation $*$ on set $S$ to not be everywhere defined?
 Back: There exist elements in $S \times S$ not in the domain of $*$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775075056243-->
@@ -167,7 +167,7 @@ END%%
 
 %%ANKI
 Basic
-What does it mean for a binary operation $*$ on set $S$ to be not be well defined?
+What does it mean for a binary operation $*$ on set $S$ to not be well defined?
 Back: There exist elements in $S \times S$ that map to more than one element of $S$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775075056245-->
@@ -175,7 +175,7 @@ END%%
 
 %%ANKI
 Basic
-What does it mean for a binary operation $*$ on set $S$ to be not be closed under $*$?
+What does it mean for a binary operation $*$ on set $S$ to not be closed under $*$?
 Back: There exist elements in $S \times S$ that map to values not in $S$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775075056248-->

@@ -172,7 +172,7 @@ END%%
 
 The set of all rationals is a field, denoted $\mathbb{Q}$. In addition, the following notation is often used to denote subsets of $\mathbb{Q}$:
 
-* $\mathbb{Q}^+ = \{ q \in \mathbb{Q} \mid q > 0 \}$
+* $\mathbb{Q}^+ = \{ q \in \mathbb{Q} \mid q > 0 \}$.
 
 %%ANKI
 Basic
@@ -202,9 +202,9 @@ END%%
 
 The set of all real numbers is a field, denoted $\mathbb{R}$. In addition, the following notation is often used to denote subsets of $\mathbb{R}$:
 
-* $\mathbb{R}_c = \{ x \in \mathbb{R} \mid 0 \leq x < c \}$ for $c \in \mathbb{R}$
-* $\mathbb{R}^+ = \{ x \in \mathbb{R} \mid x > 0 \}$
-* $\mathbb{R}^* = \{x \in \mathbb{R} \mid x \neq 0 \}$
+* $\mathbb{R}_c = \{ x \in \mathbb{R} \mid 0 \leq x < c \}$ for $c \in \mathbb{R}$.
+* $\mathbb{R}^+ = \{ x \in \mathbb{R} \mid x > 0 \}$.
+* $\mathbb{R}^* = \{x \in \mathbb{R} \mid x \neq 0 \}$.
 
 %%ANKI
 Basic
