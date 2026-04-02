@@ -11,6 +11,18 @@ tags:
 
 A **function** $F$ is a single-valued [[relations|relation]]. We say $F$ **maps $A$ into $B$**, denoted $F \colon A \rightarrow B$, if and only if $F$ is a function, $\mathop{\text{dom}}F = A$, and $\mathop{\text{ran}}F \subseteq B$.
 
+A function is said to be **elementary** if it cannot be obtained from [[polynomials]], [[exponentials]], [[logarithms]], or ([[inverses|inverse]]) [[circular|trigonometric]] functions in a finite number of steps using addition, subtraction, multiplication, division, or composition.
+
+A function $F \colon A \rightarrow B$ is said to be **total** if every element of $A$ maps to an element of $B$. If $F$ is only defined on a subset $S \subseteq A$, then $F$ is said to be **partial** with **domain of definition** $S$, denoted $F \colon A \rightharpoonup B$.
+
+An **implicit function** is a function defined by an [[algebra/index|implicit equation]] that relates one of the variables (considered the value of the function) with the others (considered as the arguments).
+
+A function $f$ is **periodic** with **period** $p$ if $f(t + p) = f(t)$ for all $t$ in the domain of $f$ and $p$ is the smallest positive number that has this property.
+
+A function $f$ is **cofunction** of function $g$ if $f(A) = g(B)$ whenever $A$ and $B$ are complementary angles. For example, [[circular#Sine|sine]] and [[circular#Cosine|cosine]] are cofunctions.
+
+A function $f$ is said to be **odd** if $-f(x) = f(-x)$ for all $x$ in $f$'s domain. A function $f$ is said to be **even** if $f(x) = f(-x)$ for all $x$ in $f$'s domain.
+
 %%ANKI
 Basic
 Which of relations or functions is the more general concept?
@@ -186,14 +198,6 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1735074143690-->
 END%%
 
-## Classifications
-
-There are a number of different names given to functions exhibiting certain properties.
-
-### Elementary
-
-A function is said to be **elementary** if it cannot be obtained from polynomials, exponentials, logarithms, or (inverse) trigonometric functions in a finite number of steps using addition, subtraction, multiplication, division, or composition.
-
 %%ANKI
 Basic
 A function composed of what four other kind of functions is still considered elementary?
@@ -257,136 +261,6 @@ Back: Yes. In this case, $f(x) = -\cos{x} + C$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1771856805844-->
 END%%
-
-### Operation
-
-An **operation** $*$ on set $S$ is a function mapping elements of $S \times \cdots \times S$ into $S$. That is, an $n$-ary operation $*$ on $S$ is a function $S^n \rightarrow S$ where $n \geq 0$.
-
-An **induced operation** of $*$ on $H \subseteq S$ is the operation formed by [[relations#Restrictions|restricting]] $*$ to $H$.
-
-%%ANKI
-Basic
-Let $A$ and $B$ be disjoint sets. Is $f \colon A \rightarrow B$ a function, operation, both, or neither?
-Back: Function.
-Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
-<!--ID: 1729804914205-->
-END%%
-
-%%ANKI
-Basic
-Let $A \subseteq B$. Is $f \colon A \rightarrow B$ a function, operation, or both?
-Back: Both.
-Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
-<!--ID: 1729804914206-->
-END%%
-
-%%ANKI
-Basic
-Let $A$ and $B$ be disjoint sets. $f \colon A \rightarrow B$ is an operation on what set?
-Back: N/A. $f$ is not an operation.
-Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
-<!--ID: 1729804914207-->
-END%%
-
-%%ANKI
-Basic
-Let $A \subseteq B$. $f \colon A \rightarrow B$ is an operation on what set?
-Back: $B$.
-Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
-<!--ID: 1729804914208-->
-END%%
-
-%%ANKI
-Basic
-What is the arity of operation $f \colon A \rightarrow A$?
-Back: $1$
-Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
-<!--ID: 1729804914209-->
-END%%
-
-%%ANKI
-Basic
-What is the arity of operation $f \colon A \times A \rightarrow A$?
-Back: $2$
-Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
-<!--ID: 1729804914210-->
-END%%
-
-%%ANKI
-Basic
-What is the arity of operation $f \colon A \times \cdots \times A \rightarrow A$?
-Back: The number of terms in $A \times \cdots \times A$.
-Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
-<!--ID: 1729804914211-->
-END%%
-
-%%ANKI
-Basic
-Why is it incomplete to state function $f$ is an operation?
-Back: We have to ask what set $f$ is an operation on.
-Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
-<!--ID: 1729804914212-->
-END%%
-
-%%ANKI
-Basic
-Which of operations or functions is the more general concept?
-Back: Functions.
-Reference: _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
-<!--ID: 1729804914213-->
-END%%
-
-%%ANKI
-Basic
-What is a binary operation $*$ on a set $S$?
-Back: A function mapping $S \times S$ into $S$.
-Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
-<!--ID: 1775064846975-->
-END%%
-
-%%ANKI
-Basic
-Let $M(\mathbb{R})$ denote all matrices with real entries. Is addition a binary operation on $M(\mathbb{R})$?
-Back: No.
-Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
-<!--ID: 1775064846977-->
-END%%
-
-%%ANKI
-Basic
-*Why* isn't addition considered a binary operation on all matrices with real entries?
-Back: Addition is not well-defined for two matrices with different dimensions.
-Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
-<!--ID: 1775064846978-->
-END%%
-
-%%ANKI
-Basic
-Let $*$ be a binary operation on $S$. What is an induced operation $*$ on $H \subseteq S$?
-Back: The binary operation formed by restricting $*$ to $H$.
-Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
-<!--ID: 1775064846979-->
-END%%
-
-%%ANKI
-Basic
-Let $*$ be a binary operation on $S$. Is $S$ closed under $*$?
-Back: Yes (by definition of a binary operation).
-Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
-<!--ID: 1775064846980-->
-END%%
-
-%%ANKI
-Basic
-Let $*$ be a binary operation on $S$. What does it mean for $H \subseteq S$ to be closed under $*$?
-Back: For all $x, y \in H$, $x * y \in H$.
-Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
-<!--ID: 1775064846981-->
-END%%
-
-### Total
-
-A function $F \colon A \rightarrow B$ is said to be **total** if every element of $A$ maps to an element of $B$. If $F$ is only defined on a subset $S \subseteq A$, then $F$ is said to be **partial** with **domain of definition** $S$, denoted $F \colon A \rightharpoonup B$.
 
 %%ANKI
 Cloze
@@ -467,10 +341,6 @@ Reference: _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wik
 <!--ID: 1766080413584-->
 END%%
 
-### Implicit
-
-An **implicit function** is a function defined by an [[algebra/index|implicit equation]] that relates one of the variables (considered the value of the function) with the others (considered as the arguments).
-
 %%ANKI
 Basic
 What is an implicit function?
@@ -486,10 +356,6 @@ Back: They are not written in a way that isolates the value of the function, e.g
 Reference: _Wikipedia_. “Implicit function.” November 30, 2025. [https://en.wikipedia.org/w/index.php?title=Implicit_function](https://en.wikipedia.org/w/index.php?title=Implicit_function&oldid=1325039857).
 <!--ID: 1768594332813-->
 END%%
-
-### Periodic
-
-A function $f$ is **periodic** with **period** $p$ if $f(t + p) = f(t)$ for all $t$ in the domain of $f$ and $p$ is the smallest positive number that has this property.
 
 %%ANKI
 Basic
@@ -522,10 +388,6 @@ Back: $p / B$
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1749994457987-->
 END%%
-
-### Cofunction
-
-A function $f$ is **cofunction** of function $g$ if $f(A) = g(B)$ whenever $A$ and $B$ are complementary angles. For example, [[circular#Sine|sine]] and [[circular#Cosine|cosine]] are cofunctions.
 
 %%ANKI
 Basic
@@ -604,10 +466,6 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1753797639513-->
 END%%
 
-### Odd
-
-A function $f$ is said to be **odd** if $-f(x) = f(-x)$ for all $x$ in $f$'s domain.
-
 %%ANKI
 Basic
 What does it mean for a function $f$ to be odd?
@@ -640,7 +498,6 @@ Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1746024124733-->
 END%%
 
-
 %%ANKI
 Basic
 When is $f(x) = x^n$ an odd function?
@@ -648,10 +505,6 @@ Back: When $n$ is an odd integer.
 Reference: Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 <!--ID: 1746024124742-->
 END%%
-
-### Even
-
-A function $f$ is said to be **even** if $f(x) = f(-x)$ for all $x$ in $f$'s domain.
 
 %%ANKI
 Basic
@@ -1944,11 +1797,9 @@ END%%
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-* John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 * Ted Sundstrom and Steven Schlicker, _Trigonometry_, 2024.
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 * _Wikipedia_. “Bijection, injection and surjection.” October 23, 2024. [https://en.wikipedia.org/w/index.php?title=Bijection/injection/surjection](https://en.wikipedia.org/w/index.php?title=Bijection,_injection_and_surjection&oldid=1252930909).
 * _Wikipedia_. “Cofunction.” September 12, 2023. [https://en.wikipedia.org/w/index.php?title=Cofunction](https://en.wikipedia.org/w/index.php?title=Cofunction&oldid=1175007162).
-* _Wikipedia_. “Operation (mathematics).” December 17, 2024. [https://en.wikipedia.org/w/index.php?title=Operation_(mathematics)](https://en.wikipedia.org/w/index.php?title=Operation_\(mathematics\)&oldid=1263614262).
 * _Wikipedia_. “Partial function.” October 8, 2025. [https://en.wikipedia.org/w/index.php?title=Partial_function](https://en.wikipedia.org/w/index.php?title=Partial_function&oldid=1315749253).
 * _Wikipedia_. “Implicit function.” November 30, 2025. [https://en.wikipedia.org/w/index.php?title=Implicit_function](https://en.wikipedia.org/w/index.php?title=Implicit_function&oldid=1325039857).

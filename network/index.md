@@ -58,7 +58,7 @@ END%%
 Basic
 What is multiplexing?
 Back: Combining multiple data signals into one signal over a shared medium.
-Reference: “Multiplexing.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1292011292).
+Reference: _Wikipedia_. “Multiplexing.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1297199271).
 <!--ID: 1748377124454-->
 END%%
 
@@ -66,7 +66,7 @@ END%%
 Basic
 What is demultiplexing?
 Back: Extracting multiple data signals from one signal from a shared medium.
-Reference: “Multiplexing.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1292011292).
+Reference: _Wikipedia_. “Multiplexing.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1297199271).
 <!--ID: 1748377124462-->
 END%%
 
@@ -74,7 +74,7 @@ END%%
 Basic
 How is the term "multiplexing" often contracted?
 Back: As "muxing".
-Reference: “Multiplexing.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1292011292).
+Reference: _Wikipedia_. “Multiplexing.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1297199271).
 <!--ID: 1748377124466-->
 END%%
 
@@ -82,7 +82,7 @@ END%%
 Basic
 Suppose a device is labeled MUX. What is it probably?
 Back: A multiplexer.
-Reference: “Multiplexing.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1292011292).
+Reference: _Wikipedia_. “Multiplexing.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1297199271).
 <!--ID: 1748377124470-->
 END%%
 
@@ -90,7 +90,7 @@ END%%
 Basic
 Suppose a device is labeled DEMUX. What is it probably?
 Back: A demultiplexer.
-Reference: “Multiplexing.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1292011292).
+Reference: _Wikipedia_. “Multiplexing.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1297199271).
 <!--ID: 1748377124475-->
 END%%
 
@@ -98,7 +98,7 @@ END%%
 Basic
 Suppose a device is labeled DMX. What is it probably?
 Back: A demultiplexer.
-Reference: “Multiplexing.” In _Wikipedia_, May 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1292011292).
+Reference: _Wikipedia_. “Multiplexing.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Multiplexing](https://en.wikipedia.org/w/index.php?title=Multiplexing&oldid=1297199271).
 <!--ID: 1748377124479-->
 END%%
 

@@ -249,7 +249,7 @@ END%%
 Basic
 Is a constructive proof usually direct or indirect?
 Back: Usually direct.
-Reference: “Constructive Proof,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1217198357).
+Reference: _Wikipedia_. “Constructive proof.” March 5, 2025. [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1278939607).
 <!--ID: 1721824073149-->
 END%%
 
@@ -257,13 +257,13 @@ END%%
 Basic
 Is a non-constructive proof usually direct or indirect?
 Back: Usually indirect.
-Reference: “Constructive Proof,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1217198357).
+Reference: _Wikipedia_. “Constructive proof.” March 5, 2025. [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1278939607).
 <!--ID: 1721824073155-->
 END%%
 
 ## Bibliography
 
-* “Constructive Proof,” in _Wikipedia_, April 4, 2024, [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1217198357).
 * Gries, David. *The Science of Programming*. Texts and Monographs in Computer Science. New York: Springer-Verlag, 1981.
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 * Patrick Keef and David Guichard, “An Introduction to Higher Mathematics,” n.d.
+* _Wikipedia_. “Constructive proof.” March 5, 2025. [https://en.wikipedia.org/w/index.php?title=Constructive_proof](https://en.wikipedia.org/w/index.php?title=Constructive_proof&oldid=1278939607).

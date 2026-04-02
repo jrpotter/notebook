@@ -13,7 +13,7 @@ tags:
 %%ANKI
 Cloze
 {Internationalization} is abbreviated as {i18n}.
-Reference: “Internationalization and Localization.” In _Wikipedia_, March 29, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1282974704).
+Reference: _Wikipedia_. “Internationalization and localization.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1297233904).
 <!--ID: 1743737725477-->
 END%%
 
@@ -21,14 +21,14 @@ END%%
 Basic
 What is internationalization?
 Back: The process of designing software to be adapted to languages/regions without engineering changes.
-Reference: “Internationalization and Localization.” In _Wikipedia_, March 29, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1282974704).
+Reference: _Wikipedia_. “Internationalization and localization.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1297233904).
 <!--ID: 1743737725480-->
 END%%
 
 %%ANKI
 Cloze
 {Localization} is abbreviated as {l10n}.
-Reference: “Internationalization and Localization.” In _Wikipedia_, March 29, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1282974704).
+Reference: _Wikipedia_. “Internationalization and localization.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1297233904).
 <!--ID: 1743737725484-->
 END%%
 
@@ -36,7 +36,7 @@ END%%
 Basic
 What is localization?
 Back: The process of adapting internationalized software for a specific language/region.
-Reference: “Internationalization and Localization.” In _Wikipedia_, March 29, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1282974704).
+Reference: _Wikipedia_. “Internationalization and localization.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1297233904).
 <!--ID: 1743737725487-->
 END%%
 
@@ -44,7 +44,7 @@ END%%
 Basic
 How many times is software expected to be internationalized?
 Back: At most once.
-Reference: “Internationalization and Localization.” In _Wikipedia_, March 29, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1282974704).
+Reference: _Wikipedia_. “Internationalization and localization.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1297233904).
 <!--ID: 1743737725490-->
 END%%
 
@@ -52,7 +52,7 @@ END%%
 Basic
 How many times is software expected to be localized?
 Back: Zero or more times.
-Reference: “Internationalization and Localization.” In _Wikipedia_, March 29, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1282974704).
+Reference: _Wikipedia_. “Internationalization and localization.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1297233904).
 <!--ID: 1743737725495-->
 END%%
 
@@ -60,14 +60,14 @@ END%%
 Basic
 Which of internationalization or localization is a prerequisite of the other?
 Back: Localization is conducted on internationalized software.
-Reference: “Internationalization and Localization.” In _Wikipedia_, March 29, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1282974704).
+Reference: _Wikipedia_. “Internationalization and localization.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1297233904).
 <!--ID: 1743737725499-->
 END%%
 
 %%ANKI
 Cloze
 {1:i18n} is to {2:at most once} whereas {2:l10n} is to {1:zero or more}.
-Reference: “Internationalization and Localization.” In _Wikipedia_, March 29, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1282974704).
+Reference: _Wikipedia_. “Internationalization and localization.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1297233904).
 <!--ID: 1743737725504-->
 END%%
 
@@ -88,7 +88,7 @@ With respect to character encodings:
 Basic
 With respect to character encoding, what is a character?
 Back: A minimal unit of text with semantic value.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743775742111-->
 END%%
 
@@ -96,7 +96,7 @@ END%%
 Basic
 A "code page" probably refers to what concept?
 Back: A coded character set.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743775742120-->
 END%%
 
@@ -104,7 +104,7 @@ END%%
 Basic
 A "character map" probably refers to what concept?
 Back: A coded character set.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743819899161-->
 END%%
 
@@ -112,7 +112,7 @@ END%%
 Basic
 How is the term "character set" typically abbreviated?
 Back: As "charset".
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743819899169-->
 END%%
 
@@ -120,7 +120,7 @@ END%%
 Basic
 What is a coded character set?
 Back: A function mapping characters to code points.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743775742124-->
 END%%
 
@@ -128,7 +128,7 @@ END%%
 Basic
 What is a character repertoire?
 Back: The set of characters that can be represented by a particular coded character set.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743818321544-->
 END%%
 
@@ -136,7 +136,7 @@ END%%
 Basic
 A character repertoire is defined with respect to what?
 Back: A coded character set.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743818321547-->
 END%%
 
@@ -144,7 +144,7 @@ END%%
 Basic
 What does it mean for a character repertoire to be closed?
 Back: No additions are allowed to the repertoire.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743818321549-->
 END%%
 
@@ -152,7 +152,7 @@ END%%
 Basic
 What does it mean for a character repertoire to be open?
 Back: New additions are allowed to the repertoire.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743818321552-->
 END%%
 
@@ -160,7 +160,7 @@ END%%
 Basic
 Let $f$ be the mapping of a coded character set. What does $\mathop{\text{dom}} f$ evaluate to?
 Back: A character repertoire (or subset of).
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743818321554-->
 END%%
 
@@ -168,7 +168,7 @@ END%%
 Basic
 Let $f$ be the mapping of a coded character set. What does $\mathop{\text{ran}} f$ evaluate to?
 Back: A set of code points.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743818321557-->
 END%%
 
@@ -176,7 +176,7 @@ END%%
 Basic
 What is a code point?
 Back: A value or position of a character in a coded character set.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743775742127-->
 END%%
 
@@ -184,7 +184,7 @@ END%%
 Basic
 How many code points might a character correspond to?
 Back: One.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743775891917-->
 END%%
 
@@ -192,7 +192,7 @@ END%%
 Basic
 What is a code space?
 Back: The range of numberical values spanned by a coded character set.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743775742129-->
 END%%
 
@@ -200,7 +200,7 @@ END%%
 Basic
 What is a code unit?
 Back: The minimum bit combination used to represent a character in a coded character set.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743775742132-->
 END%%
 
@@ -208,7 +208,7 @@ END%%
 Basic
 How many code units might a character correspond to?
 Back: One or more.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743775891920-->
 END%%
 
@@ -216,7 +216,7 @@ END%%
 Basic
 What determines the number of code units used to encode a code point?
 Back: The actual character encoding used.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743776457823-->
 END%%
 
@@ -224,7 +224,7 @@ END%%
 Basic
 How do code units and code points relate to one another?
 Back: Code points are encoded as a sequence of code units.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743776457831-->
 END%%
 
@@ -232,7 +232,7 @@ END%%
 Basic
 Which term describes the "word size" of a coded character set?
 Back: The "code unit".
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743776457835-->
 END%%
 
@@ -240,7 +240,7 @@ END%%
 Basic
 What is the code unit in ASCII?
 Back: $7$ bits.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 Tags: i18n::ascii
 <!--ID: 1743776457838-->
 END%%
@@ -249,7 +249,7 @@ END%%
 Basic
 What is the code unit in UTF-8?
 Back: $8$ bits.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 Tags: i18n::unicode
 <!--ID: 1743776457841-->
 END%%
@@ -258,7 +258,7 @@ END%%
 Basic
 What is the code unit in UTF-16?
 Back: $16$ bits.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 Tags: i18n::unicode
 <!--ID: 1743776457845-->
 END%%
@@ -267,7 +267,7 @@ END%%
 Basic
 What is the code unit in UTF-32?
 Back: $32$ bits.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 Tags: i18n::unicode
 <!--ID: 1743776457848-->
 END%%
@@ -275,7 +275,7 @@ END%%
 %%ANKI
 Cloze
 A {code point} is represented by a sequence of {code units}.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743776457851-->
 END%%
 
@@ -283,7 +283,7 @@ END%%
 Basic
 Why are code units named the way they are?
 Back: They are the smallest possible encoding of a code point.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743776457855-->
 END%%
 
@@ -291,7 +291,7 @@ END%%
 Basic
 What distinguishes a character from a code point?
 Back: The code point is a numerical identifier for the character.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743776457858-->
 END%%
 
@@ -299,7 +299,7 @@ END%%
 Basic
 What is used to map characters to code points?
 Back: Coded character sets.
-Reference: “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
+Reference: _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
 <!--ID: 1743776457861-->
 END%%
 
@@ -324,7 +324,7 @@ A **locale** is a set of language and cultural rules. Locale information is brok
 Basic
 What is a locale?
 Back: A collection of settings that encompass language and cultural rules.
-Reference: “Internationalization and Localization.” In _Wikipedia_, March 29, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1282974704).
+Reference: _Wikipedia_. “Internationalization and localization.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1297233904).
 <!--ID: 1743737725471-->
 END%%
 
@@ -597,5 +597,5 @@ END%%
 ## Bibliography
 
 * Beej. “Unicode, Wide Characters, and All That.” Accessed April 5, 2025. [https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html](https://beej.us/guide/bgc/html/split/unicode-wide-characters-and-all-that.html).
-* “Character Encoding.” In _Wikipedia_, March 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1282665314).
-* “Internationalization and Localization.” In _Wikipedia_, March 29, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1282974704).
+* _Wikipedia_. “Character encoding.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Character_encoding](https://en.wikipedia.org/w/index.php?title=Character_encoding&oldid=1297664783).
+* _Wikipedia_. “Internationalization and localization.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization](https://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&oldid=1297233904).

@@ -694,4 +694,3 @@ END%%
 ## Bibliography
 
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
-* “Universal Hashing,” in _Wikipedia_, April 18, 2024, [https://en.wikipedia.org/w/index.php?title=Universal_hashing](https://en.wikipedia.org/w/index.php?title=Universal_hashing&oldid=1219538176).

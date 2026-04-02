@@ -24,7 +24,7 @@ END%%
 Basic
 What is a register file?
 Back: An array of registers on a CPU.
-Reference: “Register File.” In _Wikipedia_, March 2, 2025. [https://en.wikipedia.org/w/index.php?title=Register_file](https://en.wikipedia.org/w/index.php?title=Register_file&oldid=1278398836).
+Reference: _Wikipedia_. “Register file.” March 2, 2025. [https://en.wikipedia.org/w/index.php?title=Register_file](https://en.wikipedia.org/w/index.php?title=Register_file&oldid=1278398836).
 <!--ID: 1749027142096-->
 END%%
 
@@ -1182,4 +1182,4 @@ END%%
 ## Bibliography
 
 * Bryant, Randal E., and David O'Hallaron. *Computer Systems: A Programmer's Perspective*. Third edition, Global edition. Always Learning. Pearson, 2016.
-* “Register File.” In _Wikipedia_, March 2, 2025. [https://en.wikipedia.org/w/index.php?title=Register_file](https://en.wikipedia.org/w/index.php?title=Register_file&oldid=1278398836).
+* _Wikipedia_. “Register file.” March 2, 2025. [https://en.wikipedia.org/w/index.php?title=Register_file](https://en.wikipedia.org/w/index.php?title=Register_file&oldid=1278398836).

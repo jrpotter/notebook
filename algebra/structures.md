@@ -9,12 +9,12 @@ tags:
 
 ## Overview
 
-A **binary structure** is a pair $\langle A, R \rangle$ consisting of a set $A$ and a binary relation $R$ on $A$, i.e. $R \subseteq A \times A$.
+A **binary structure** is a pair $\langle A, R \rangle$ consisting of a set $A$ and a binary [[relations|relation]] or [[operations|operation]] $R$ on $A$.
 
 %%ANKI
 Basic
 What is a binary structure?
-Back: A pair $\langle A, R \rangle$ consisting of a set $A$ and a binary relation $R$ on $A$.
+Back: A pair $\langle A, R \rangle$ consisting of a set $A$ and a binary relation or operation $R$ on $S$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751416133860-->
 END%%
@@ -30,7 +30,7 @@ END%%
 %%ANKI
 Basic
 Let $\langle A, R \rangle$ be a binary structure. What kind of mathematical entity is $R$?
-Back: A binary relation on $A$.
+Back: A binary relation or operation on $S$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751416133878-->
 END%%
@@ -54,7 +54,7 @@ END%%
 %%ANKI
 Basic
 What is a poset?
-Back: A binary structure $\langle P, \leq \rangle$ such that $\leq$ is a partial order on set $P$.
+Back: A binary structure $\langle P, \leq \rangle$ such that $\leq$ is a partial order on set $P$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751416427787-->
 END%%
@@ -69,7 +69,7 @@ END%%
 
 ## Isomorphisms
 
-Let $\langle A, R \rangle$ and $\langle B, S \rangle$ be binary structures. An **isomorphism** from $\langle A, R \rangle$ onto $\langle B, S \rangle$ is a one-to-one function $f$ from $A$ onto $B$ such that, for all $x, y \in A$, $$xRy \Leftrightarrow f(x) S f(y).$$
+Let $\langle A, R \rangle$ and $\langle B, S \rangle$ be binary structures. An **isomorphism** from $\langle A, R \rangle$ onto $\langle B, S \rangle$ is a [[sets/functions#Injectivity|one-to-one]] [[functions|function]] $f$ from $A$ [[sets/functions#Surjectivity|onto]] $B$ satisfying the **homomorphism property**: $$xRy \Leftrightarrow f(x) S f(y), \quad \text{for all } x, y \in A.$$
 
 If such an isomorphism exists, then we say that $\langle A, R \rangle$ is **isomorphic** to $\langle B, S \rangle$, denoted $\langle A, R \rangle \cong \langle B, S \rangle$.
 
@@ -147,6 +147,22 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1756388532830-->
 END%%
 
+%%ANKI
+Basic
+Let $\langle S, * \rangle$ and $\langle S', *' \rangle$ be binary structures. What does it mean for $\phi \colon S \rightarrow S'$ to satisfy the homomorphism property?
+Back: $\phi(x * y) = \phi(x) *' \phi(y)$ for all $x, y \in S$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775076146998-->
+END%%
+
+%%ANKI
+Cloze
+An {isomorphism} is a {bijective} function satisfying the {homomorphism} property.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775076147007-->
+END%%
+
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+* John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).

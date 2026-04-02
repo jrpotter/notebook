@@ -170,7 +170,9 @@ END%%
 
 ## Rationals
 
-The set of all rationals is a field, denoted $\mathbb{Q}$.
+The set of all rationals is a field, denoted $\mathbb{Q}$. In addition, the following notation is often used to denote subsets of $\mathbb{Q}$:
+
+* $\mathbb{Q}^+ = \{ q \in \mathbb{Q} \mid q > 0 \}$
 
 %%ANKI
 Basic
@@ -178,6 +180,22 @@ How is the set of rational numbers usually denoted?
 Back: As $\mathbb{Q}$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775062060386-->
+END%%
+
+%%ANKI
+Basic
+What set does Fraleigh refer to with notation $\mathbb{Q}^+$?
+Back: $\{ x \in \mathbb{Q} \mid x > 0 \}$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775075056282-->
+END%%
+
+%%ANKI
+Basic
+How does Fraleigh usually denote the following set? $$\{ x \in \mathbb{Q} \mid x > 0 \}$$
+Back: As $\mathbb{Q}^+$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775075056285-->
 END%%
 
 ## Reals
@@ -206,7 +224,7 @@ END%%
 
 %%ANKI
 Basic
-How is the following set usually denoted? $$\{ x \in \mathbb{R} \mid 0 \leq x < c \}, \quad c \in \mathbb{R}$$
+How does Fraleigh usually denote the following set? $$\{ x \in \mathbb{R} \mid 0 \leq x < c \}, \quad c \in \mathbb{R}$$
 Back: As $\mathbb{R}_c$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775064905163-->
@@ -214,7 +232,7 @@ END%%
 
 %%ANKI
 Basic
-What set does Fraleigh refer to with notation $\mathbb{R}^*$ for some $c \in \mathbb{R}$?
+What set does Fraleigh refer to with notation $\mathbb{R}^*$?
 Back: $\{ x \in \mathbb{R} \mid x \neq 0 \}$
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775064846984-->
@@ -222,7 +240,7 @@ END%%
 
 %%ANKI
 Basic
-How is the following set usually denoted? $$\{ x \in \mathbb{R} \mid x \neq 0 \}$$
+How does Fraleigh usually denote the following set? $$\{ x \in \mathbb{R} \mid x \neq 0 \}$$
 Back: As $\mathbb{R}^*$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775064905171-->
@@ -230,7 +248,7 @@ END%%
 
 %%ANKI
 Basic
-What set does Fraleigh refer to with notation $\mathbb{R}^+$ for some $c \in \mathbb{R}$?
+What set does Fraleigh refer to with notation $\mathbb{R}^+$?
 Back: $\{ x \in \mathbb{R} \mid x > 0 \}$
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775064846985-->
@@ -238,7 +256,7 @@ END%%
 
 %%ANKI
 Basic
-How is the following set usually denoted? $$\{ x \in \mathbb{R} \mid x > 0 \}$$
+How does Fraleigh usually denote the following set? $$\{ x \in \mathbb{R} \mid x > 0 \}$$
 Back: As $\mathbb{R}^+$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775064905176-->

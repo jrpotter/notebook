@@ -11,6 +11,53 @@ tags:
 
 TODO
 
+## Integers
+
+The set of all integers is a ring, denoted $\mathbb{Z}$. In addition, the following notation is often used to denote subsets of $\mathbb{Z}$:
+
+* $\mathbb{Z}_n = \{ 0, 1, \ldots, n - 1 \}$ where $n \in \mathbb{N}$
+* $\mathbb{Z}^+ = \{ z \in \mathbb{Z} \mid z > 0 \}$
+
+%%ANKI
+Basic
+How is the set of integers usually denoted?
+Back: As $\mathbb{Z}$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775075056265-->
+END%%
+
+%%ANKI
+Basic
+What set does Fraleigh refer to with notation $\mathbb{Z}_n$ for some $n \in \mathbb{N}$?
+Back: $\{ 0, 1, \ldots, n - 1 \}$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775075056268-->
+END%%
+
+%%ANKI
+Basic
+How does Fraleigh usually denote the following set? $$\{ 0, 1, \ldots, n - 1 \}$$
+Back: As $\mathbb{Z}_n$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775075056272-->
+END%%
+
+%%ANKI
+Basic
+What set does Fraleigh refer to with notation $\mathbb{Z}^+$ for some $n \in \mathbb{N}$?
+Back: $\{ z \in \mathbb{Z} \mid z > 0 \}$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775075056275-->
+END%%
+
+%%ANKI
+Basic
+How does Fraleigh usually denote the following set? $$\{ z \in \mathbb{Z} \mid z > 0 \}$$
+Back: As $\mathbb{Z}^+$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775075056279-->
+END%%
+
 ## Boolean
 
 TODO

@@ -1675,6 +1675,8 @@ END%%
 
 Let $F$ and $G$ be arbitrary sets. The **composition** of $F$ and $G$ is the set $$F \circ G = \{\langle u, v \rangle \mid \exists t, uGt \land tFv \}$$
 
+Composition of relations is associative.
+
 %%ANKI
 Basic
 What kind of mathematical object does the composition operation apply to?
@@ -1873,7 +1875,7 @@ END%%
 
 %%ANKI
 Basic
-Is composition commutative?
+Is composition of relations commutative?
 Back: No.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720789624275-->
@@ -1881,7 +1883,7 @@ END%%
 
 %%ANKI
 Basic
-Is composition associative?
+Is composition of relations associative?
 Back: Yes.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1720789624288-->

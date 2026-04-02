@@ -33,7 +33,7 @@ END%%
 Basic
 What is `HEAPSORT`'s best case runtime?
 Back: $\Omega(n)$
-Reference: “Heapsort.” In _Wikipedia_, April 27, 2024. [https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1220986714](https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1220986714).
+Reference: _Wikipedia_. “Heapsort.” May 21, 2025. [https://en.wikipedia.org/w/index.php?title=Heapsort](https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1291446907).
 <!--ID: 1714410566821-->
 END%%
 
@@ -131,7 +131,7 @@ END%%
 %%ANKI
 Cloze
 {`HEAPSORT`} is {`SELECTION_SORT`} using the right data structure.
-Reference: “Heapsort.” In _Wikipedia_, April 27, 2024. [https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1220986714](https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1220986714).
+Reference: _Wikipedia_. “Heapsort.” May 21, 2025. [https://en.wikipedia.org/w/index.php?title=Heapsort](https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1291446907).
 <!--ID: 1714410566838-->
 END%%
 
@@ -139,7 +139,7 @@ END%%
 Basic
 What improvement does `HEAPSORT` introduce to `SELECTION_SORT`?
 Back: `HEAPSORT` avoids linear scanning by keeping unsorted elements in a heap.
-Reference: “Heapsort.” In _Wikipedia_, April 27, 2024. [https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1220986714](https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1220986714).
+Reference: _Wikipedia_. “Heapsort.” May 21, 2025. [https://en.wikipedia.org/w/index.php?title=Heapsort](https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1291446907).
 <!--ID: 1714410566840-->
 END%%
 
@@ -147,7 +147,7 @@ END%%
 Basic
 What are the two high-level steps taken in `HEAPSORT`?
 Back: Heap construction and heap extraction.
-Reference: “Heapsort.” In _Wikipedia_, April 27, 2024. [https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1220986714](https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1220986714).
+Reference: _Wikipedia_. “Heapsort.” May 21, 2025. [https://en.wikipedia.org/w/index.php?title=Heapsort](https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1291446907).
 <!--ID: 1714410566841-->
 END%%
 
@@ -200,5 +200,5 @@ END%%
 
 ## Bibliography
 
-* “Heapsort.” In _Wikipedia_, April 27, 2024. [https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1220986714](https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1220986714).
 * Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
+* _Wikipedia_. “Heapsort.” May 21, 2025. [https://en.wikipedia.org/w/index.php?title=Heapsort](https://en.wikipedia.org/w/index.php?title=Heapsort&oldid=1291446907).

@@ -8,31 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "85e01b72af01cb6f",
+            "id": "821168364ae66e66",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algebra/gcd.md",
+                "file": "_journal/2026-04/2026-04-01.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "gcd"
-            }
-          },
-          {
-            "id": "60c6a17b5f46fddd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "algebra/fields.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "fields"
+              "title": "2026-04-01"
             }
           }
         ]
@@ -67,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"In _Wikipedia\"",
+                "query": "\"binary structure\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -157,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algebra/gcd.md",
+                "file": "_journal/2026-04/2026-04-01.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of gcd"
+              "title": "Outline of 2026-04-01"
             }
           }
         ],
@@ -185,35 +170,35 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "85e01b72af01cb6f",
+  "active": "821168364ae66e66",
   "lastOpenFiles": [
-    "binary/floating-point.md",
+    "algebra/structures.md",
+    "algebra/operations.md",
     "algebra/fields.md",
-    "sets/order/equiv-rel.md",
+    "sets/functions.md",
+    "_journal/2026-04/2026-04-01.md",
+    "_journal/2026-04-01.md",
+    "sets/relations.md",
     "formal_system/proof_system/equiv_trans.md",
+    "sets/index.md",
+    "algebra/rings.md",
+    "formal_system/index.md",
+    "formal_system/logical_system/index.md",
+    "formal_system/proof_system/index.md",
+    "hashing/index.md",
+    "i18n/index.md",
+    "memory/index.md",
+    "network/index.md",
+    "proofs/index.md",
+    "trigonometry/index.md",
+    "algorithms/sorting/heapsort.md",
+    "algebra/gcd.md",
+    "binary/floating-point.md",
+    "sets/order/equiv-rel.md",
     "sets/choice.md",
     "filesystems/cas.md",
     "geometry/coordinate_systems/cartesian.md",
-    "sets/cardinality.md",
-    "data_structures/trees/binary_tree.md",
-    "sets/bags.md",
-    "data_structures/trees/b-tree.md",
-    "sets/functions.md",
-    "formal_system/abstract_rewriting.md",
-    "algebra/absolute.md",
-    "algebra/structures.md",
-    "_journal/2026-04/2026-04-01.md",
     "_journal/2026-04",
-    "sets/relations.md",
-    "algebra/gcd.md",
-    "algebra/index.md",
-    "sets/zfc.md",
-    "algebra/radices.md",
-    "algebra/rings.md",
-    "sets/index.md",
-    "algebra/sets.md",
-    "_journal/2025/2025-05/2025-05-24.md",
-    "_journal/2024/2024-07/2024-07-14.md",
     "calculus/series",
     "calculus/images/interval-convergence.png",
     "calculus/images/circle-convergence.png",
