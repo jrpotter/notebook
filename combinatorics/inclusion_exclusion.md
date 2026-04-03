@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-The **principle of inclusion/exclusion** refers to the oscillating adding and subtracting used to find the cardinality of potentially overlapping sets. Consider sets $A$, $B$, and $C$. Then
+The **principle of inclusion/exclusion** (PIE) refers to the oscillating adding and subtracting used to find the cardinality of potentially overlapping sets. Consider sets $A$, $B$, and $C$. Then
 
 $$|A \cup B| = |A| + |B| - |AB|$$
 

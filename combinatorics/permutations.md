@@ -503,6 +503,33 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1708366788641-->
 END%%
 
+%%ANKI
+Basic
+What combinatorial *notation* corresponds to the highlighted square?
+![[ordering-y-repetition-n.jpg]]
+Back: $(n)_k$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709305912355-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial *concept* corresponds to the highlighted square?
+![[ordering-y-repetition-n.jpg]]
+Back: $k$-permutations (falling factorials).
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709306052449-->
+END%%
+
+%%ANKI
+Basic
+Which square corresponds to notation $(n)_k$?
+![[ordering-repetition.jpg]]
+Back:
+![[ordering-y-repetition-n.jpg]]
+<!--ID: 1709305912359-->
+END%%
+
 ## Derangements
 
 A **derangement** is a permutation of the elements of a set in which no element appears in its original position. That is, it is a permutation with no fixed points.

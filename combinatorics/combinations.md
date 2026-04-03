@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-A $k$-**combination** of $n$ objects is an unordered "choice" of $k$ objects from the collection of $n$ objects. Alternatively viewed, it is a set of $k$ objects - ordering within a set does not matter. Combinations are derived by considering the number of $k$-[[permutations]] of $n$ objects and discarding order, i.e. dividing by $k!$. $$\binom{n}{k} = \frac{(n)_k}{k!} = \frac{n!}{k!(n - k)!}$$
+A $k$-**combination** of $n$ objects is an unordered "choice" of $k$ objects from the collection of $n$ objects. Alternatively viewed, it is a set of $k$ objects - ordering within a set does not matter. Combinations are derived by considering the number of $k$-[[permutations]] of $n$ objects and discarding order, i.e. dividing by $k!$. $$\binom{n}{k} = \frac{(n)_k}{k!} = \frac{n!}{k!(n - k)!}, \quad\text{where } k < n$$
 
 ```c
 void combinations_aux(
@@ -59,6 +59,22 @@ How is a $k$-combination of $n$ objects denoted?
 Back: $\binom{n}{k}$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708368078685-->
+END%%
+
+%%ANKI
+Basic
+What does $\binom{n}{k}$ evaluate to when $k > n$?
+Back: $0$
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1775211504385-->
+END%%
+
+%%ANKI
+Basic
+Under what situations does the factorial-based definition of $\binom{n}{k}$ not make sense?
+Back: When $k > n$ (factorials of negative numbers are undefined).
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1775211504389-->
 END%%
 
 %%ANKI
@@ -197,6 +213,33 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1708446818791-->
 END%%
 
+%%ANKI
+Basic
+What combinatorial *notation* corresponds to the highlighted square?
+![[ordering-n-repetition-n.jpg]]
+Back: $\binom{n}{k}$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709306140856-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial *concept* corresponds to the highlighted square?
+![[ordering-n-repetition-n.jpg]]
+Back: Combinations.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709306140887-->
+END%%
+
+%%ANKI
+Basic
+Which square corresponds to notation $\binom{n}{k}$?
+![[ordering-repetition.jpg]]
+Back:
+![[ordering-n-repetition-n.jpg]]
+<!--ID: 1709306140891-->
+END%%
+
 ## Pascal's Triangle
 
 A visual representation of the binomial coefficient's is in the form of Pascal's Triangle:
@@ -283,71 +326,11 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1708384441423-->
 END%%
 
-## Bit Strings
+## Stars and Bars
 
-A [[binary/index|bit string]] can be used to represent subsets of some finite set. A `1` value usually corresponds to inclusion in a subset, whereas a `0` value corresponds to exclusion. Thus, given set e.g. $A = \{1, 2, 3, 4\}$, $0110_2$ would correspond to subset $\{2, 3\}$.
+The **stars and bars** chart refers to a graphical depiction of distributing $n$ objects (represented as $*$) into $m$ different buckets (delineated via $|$). An example chart looks like so: $$**|***|*||*$$
 
-%%ANKI
-Basic
-Given $A = \{1, 2, 3, 4\}$, what subset does $1010_2$ correspond to?
-Back: $\{1, 3\}$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708434662140-->
-END%%
-
-%%ANKI
-Cloze
-Representing subsets with bit strings, {$0000_2$} maps to {$\varnothing$} $\subseteq \{1, 2, 3, 4\}$.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708434662148-->
-END%%
-
-%%ANKI
-Cloze
-Representing subsets with bit strings, {$1111_2$} maps to {$\{1, 2, 3, 4\}$} $\subseteq \{1, 2, 3, 4\}$.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708434662151-->
-END%%
-
-Bit strings also make it clear that the number of subsets with even cardinality must be equal to the number of subsets with odd cardinality. Hence, $$\binom{n}{0} - \binom{n}{1} + \cdots + (-1)^n \binom{n}{n} = 0$$
-
-%%ANKI
-Basic
-What does $\sum_{k=0}^n (-1)^k \binom{n}{k}$ evaluate to?
-Back: $0$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708434662154-->
-END%%
-
-%%ANKI
-Basic
-What does expression $\sum_{k=0}^n (-1)^k \binom{n}{k} = 0$ indicate about sets?
-Back: There is an equal number of even-sized subsets as odd-sized subsets.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708434662157-->
-END%%
-
-%%ANKI
-Basic
-Given finite set $A$, how many subsets of even cardinality does $A$ have?
-Back: Let $n = |A|$. Then $2^{n-1}$.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708434662163-->
-END%%
-
-%%ANKI
-Basic
-Given finite set $A$, how many subsets of odd cardinality does $A$ have?
-Back: Let $n = |A|$. Then $2^{n-1}$.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708434662166-->
-END%%
-
-### Stars and Bars
-
-The **stars and bars** chart refers to a graphical depiction of distributing $n$ objects (represented as $*$) into $m$ different buckets (delineated via $|$. An example chart looks like so: $$**|***|*||*$$
-
-Notice there are $m - 1$ bars and interspersed amongst the $n$ stars. In the above example, there are $11$ total symbols, $4$ of which are bars, meaning there are $\binom{11}{4}$ ways to distribute the objects amongst the $5$ buckets. We can represent this using bit strings instead, with `0`s as stars and `1`s as bars. The above example is equivalently written as: $$00100010110$$
+Notice there are $m - 1$ bars interspersed amongst the $n$ stars. In the above example, there are $11$ total symbols, $4$ of which are bars, meaning there are $\binom{11}{4}$ ways to distribute the objects amongst the $5$ buckets. We can represent this using bit strings instead, with `0`s as stars and `1`s as bars. The above example is equivalently written as: $$00100010110$$
 
 %%ANKI
 Basic
@@ -405,13 +388,206 @@ Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n
 <!--ID: 1708532069719-->
 END%%
 
-## Lattice Paths
+%%ANKI
+Basic
+What combinatorial *notation* corresponds to the highlighted square?
+![[ordering-n-repetition-y.jpg]]
+Back: $\binom{n + k}{k}$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709306052455-->
+END%%
+
+%%ANKI
+Basic
+What combinatorial *concept* corresponds to the highlighted square?
+![[ordering-n-repetition-y.jpg]]
+Back: Stars and bars.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1709306052461-->
+END%%
+
+%%ANKI
+Basic
+Which square corresponds to notation $\binom{n + k}{k}$?
+![[ordering-repetition.jpg]]
+Back:
+![[ordering-n-repetition-y.jpg]]
+<!--ID: 1709306052468-->
+END%%
+
+## Binomial Theorem
+
+Let $n$ be a nonnegative integer. Then $$(x + y)^n = \sum_{k=0}^n \binom{n}{k} x^k y^{n-k}.$$
+
+%%ANKI
+Basic
+What term is used to describe e.g. $\binom{n}{1}$, $\binom{n}{2}$, etc.?
+Back: The binomial coefficients.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708368078753-->
+END%%
+
+%%ANKI
+Basic
+Why are binomial coefficients named the way they are?
+Back: They are the coefficients of terms in the expansion of a binomial, e.g. $(x + y)^n$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708368078764-->
+END%%
+
+%%ANKI
+Basic
+How does $(x + y)^n$ relate to bit strings?
+Back: Each term $x^ky^{n-k}$ corresponds to a bit string with $k$ `1`s and $n - k$ `0`s.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708384441451-->
+END%%
+
+%%ANKI
+Basic
+What is the coefficient of $x^3y^{12}$ in $(x + y)^{15}$?
+Back: $\binom{15}{3} = \binom{15}{12}$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708384441456-->
+END%%
+
+%%ANKI
+Basic
+How is $(x + y)^n$ written to mirror the binomial recurrence?
+Back: $(x + y)^n = x \cdot (x + y)^{n-1} + y \cdot (x + y)^{n - 1}$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708384441462-->
+END%%
+
+%%ANKI
+Basic
+How is $7^n$ written as a sum of powers of $6$?
+Back: $7^n = (1 + 6)^n$. Apply binomial expansion on the RHS.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708451749791-->
+END%%
+
+%%ANKI
+Basic
+What does the binomial theorem state?
+Back: For $n \in \mathbb{N}$, $$(x + y)^n = \sum_{k=0}^n \binom{n}{k} x^k y^{n-k}.$$
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1775211504392-->
+END%%
+
+%%ANKI
+Basic
+Using explicit binomial coefficients, what does $(x + y)^2$ expand to?
+Back: $$(x + y)^2 = \binom{2}{0}x^2y^0 + \binom{2}{1}x^1y^1 + \binom{2}{2} x^0y^2$$
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1775211504396-->
+END%%
+
+%%ANKI
+Basic
+Using explicit binomial coefficients, what does $(x + y)^3$ expand to?
+Back: $$(x + y)^3 = \binom{3}{0}x^3y^0 + \binom{3}{1}x^2y^1 + \binom{3}{2}x^1y^2 + \binom{3}{3} x^0y^3$$
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1775211504400-->
+END%%
+
+## Vandermonde's Identity
+
+Let $m, n, k \in \mathbb{N}$. Then **Vandermonde's identity** states that $$\binom{m + n}{k} = \sum_{j=0}^k \binom{m}{j} \binom{n}{k - j}$$
+
+%%ANKI
+Basic
+What does Vandermonde's identity state?
+Back: For $m, n, k \in \mathbb{N}$, $$\binom{m + n}{k} = \sum_{j=0}^k \binom{m}{j}\binom{n}{k - j}.$$
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1775211504406-->
+END%%
+
+%%ANKI
+Basic
+What name is given to the following identity? $$\binom{m + n}{k} = \sum_{j=0}^k \binom{m}{j}\binom{n}{k - j}.$$
+Back: Vandermonde's identity.
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1775211504411-->
+END%%
+
+%%ANKI
+Basic
+What does Vandermonde's identity say the following decomposition equals? $$\binom{6}{k} = \binom{3 + 3}{k}$$
+Back: $$\sum_{j=0}^k \binom{3}{k}\binom{3}{k - j}$$
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1775211504416-->
+END%%
+
+## Common Examples
+
+### Bit Strings
+
+A [[binary/index|bit string]] can be used to represent subsets of some finite set. A `1` value usually corresponds to inclusion in a subset, whereas a `0` value corresponds to exclusion. Thus, given set e.g. $A = \{1, 2, 3, 4\}$, $0110_2$ would correspond to subset $\{2, 3\}$.
+
+Bit strings also make it clear that the number of subsets with even cardinality must be equal to the number of subsets with odd cardinality. Hence, $$\binom{n}{0} - \binom{n}{1} + \cdots + (-1)^n \binom{n}{n} = 0$$
+
+%%ANKI
+Basic
+Given $A = \{1, 2, 3, 4\}$, what subset does $1010_2$ correspond to?
+Back: $\{1, 3\}$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662140-->
+END%%
+
+%%ANKI
+Cloze
+Representing subsets with bit strings, {$0000_2$} maps to {$\varnothing$} $\subseteq \{1, 2, 3, 4\}$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662148-->
+END%%
+
+%%ANKI
+Cloze
+Representing subsets with bit strings, {$1111_2$} maps to {$\{1, 2, 3, 4\}$} $\subseteq \{1, 2, 3, 4\}$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662151-->
+END%%
+
+%%ANKI
+Basic
+What does $\sum_{k=0}^n (-1)^k \binom{n}{k}$ evaluate to?
+Back: $0$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662154-->
+END%%
+
+%%ANKI
+Basic
+What does expression $\sum_{k=0}^n (-1)^k \binom{n}{k} = 0$ indicate about sets?
+Back: There is an equal number of even-sized subsets as odd-sized subsets.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662157-->
+END%%
+
+%%ANKI
+Basic
+Given finite set $A$, how many subsets of even cardinality does $A$ have?
+Back: Let $n = |A|$. Then $2^{n-1}$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662163-->
+END%%
+
+%%ANKI
+Basic
+Given finite set $A$, how many subsets of odd cardinality does $A$ have?
+Back: Let $n = |A|$. Then $2^{n-1}$.
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1708434662166-->
+END%%
+
+### Lattice Paths
 
 A **lattice path** is one of the shorted possible paths connecting two points on a lattice, moving only horizontally and vertically. By representing each horizontal move by `1` and each vertical move by `1`, we see every lattice path has a corresponding [[#Bit Strings|bit string]].
 
 ![[lattice-path-example.png]]
 
-In this example, the total number of lattice paths from point $(0, 0)$ to $(3, 2)$ is therefore $\binom{5}{2} = \binom{5}{3}$.
+In this example, the total number of lattice paths from point $(0, 0)$ to $(3, 2)$ is therefore $$\binom{5}{2} = \binom{5}{3}.$$
 
 %%ANKI
 Basic
@@ -505,58 +681,7 @@ Back:
 <!--ID: 1708384441446-->
 END%%
 
-## Binomial Coefficients
-
-A **binomial** is a polynomial containing two terms. Consider $(x + y)^n$. We see that term $x^ky^{n-k}$ maps to *some* bit string containing $k$ `1`s and $n - k$ `0`s. This might feel more obvious when expanding to $x \cdot x \cdots x \cdot y \cdots y$. Since multiplication is commutative, the number of matching "bit strings" is the same as $\binom{n}{k}$.
-
-%%ANKI
-Basic
-What term describes e.g. $\binom{n}{1}$, $\binom{n}{2}$, etc.?
-Back: The binomial coefficients.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708368078753-->
-END%%
-
-%%ANKI
-Basic
-Why are binomial coefficients named the way they are?
-Back: They are the coefficients of terms in the expansion of a binomial, e.g. $(x + y)^n$.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708368078764-->
-END%%
-
-%%ANKI
-Basic
-How does $(x + y)^n$ relate to bit strings?
-Back: Each term $x^ky^{n-k}$ corresponds to a bit string with $k$ `1`s and $n - k$ `0`s.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708384441451-->
-END%%
-
-%%ANKI
-Basic
-What is the coefficient of $x^3y^{12}$ in $(x + y)^{15}$?
-Back: $\binom{15}{3} = \binom{15}{12}$.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708384441456-->
-END%%
-
-%%ANKI
-Basic
-How is $(x + y)^n$ written to mirror the binomial recurrence?
-Back: $(x + y)^n = x \cdot (x + y)^{n-1} + y \cdot (x + y)^{n - 1}$
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708384441462-->
-END%%
-
-%%ANKI
-Basic
-How is $7^n$ written as a sum of powers of $6$?
-Back: $7^n = (1 + 6)^n$. Apply binomial expansion on the RHS.
-Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
-<!--ID: 1708451749791-->
-END%%
-
 ## Bibliography
 
+* Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
 * Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_journal/2026-04-02.md",
+                "file": "probability/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-02"
+              "title": "index"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"In _Wikipedia_\"",
+                "query": "binomial theorem",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_journal/2026-04-02.md",
+                "file": "probability/index.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-04-02"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_journal/2026-04-02.md",
+                "file": "probability/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-04-02"
+              "title": "Outline of index"
             }
           }
         ],
@@ -172,6 +172,17 @@
   },
   "active": "cc3b8f9365097186",
   "lastOpenFiles": [
+    "combinatorics/combinations.md",
+    "binary/index.md",
+    "combinatorics/permutations.md",
+    "combinatorics/index.md",
+    "combinatorics/inclusion_exclusion.md",
+    "_journal/2026-04-03.md",
+    "combinatorics/additive_principle.md",
+    "combinatorics/multiplicative_principle.md",
+    "_journal/2026-04/2026-04-02.md",
+    "probability/index.md",
+    "probability",
     "algebra/groups.md",
     "algebra/semigroups.md",
     "algebra/rings.md",
@@ -188,16 +199,6 @@
     "network/uri.md",
     "i18n/unicode.md",
     "sets/order/total.md",
-    "operating_systems/threads.md",
-    "c23/threads.md",
-    "geometry/similarity.md",
-    "calculus/sequences.md",
-    "calculus/riemann.md",
-    "_journal/2026-04/2026-04-01.md",
-    "_journal/2026-04-02.md",
-    "algebra/fields.md",
-    "_journal/2026-04-01.md",
-    "formal_system/proof_system/equiv_trans.md",
     "_journal/2026-04",
     "calculus/series",
     "calculus/images/interval-convergence.png",
@@ -216,7 +217,6 @@
     "_journal/2026",
     "network/physical",
     "network/application",
-    "network/session",
-    "dnd"
+    "network/session"
   ]
 }
