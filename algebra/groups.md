@@ -16,7 +16,7 @@ A **group** $\langle G, * \rangle$ is a [[semigroups|semigroup]] satisfying the 
 
 %%ANKI
 Basic
-A group immediately builds on top of what other algebraic structure?
+What other algebraic structure, in the hierarchy of structures, does a group succeed?
 Back: A semigroup.
 Reference: _Wikipedia_. “Semigroup.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Semigroup](https://en.wikipedia.org/w/index.php?title=Semigroup&oldid=1345103570).
 <!--ID: 1775161887623-->

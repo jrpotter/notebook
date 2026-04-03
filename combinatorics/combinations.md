@@ -505,7 +505,7 @@ END%%
 
 %%ANKI
 Basic
-What name is given to the following identity? $$\binom{m + n}{k} = \sum_{j=0}^k \binom{m}{j}\binom{n}{k - j}.$$
+What name is given to the following identity? $$\binom{m + n}{k} = \sum_{j=0}^k \binom{m}{j}\binom{n}{k - j}$$
 Back: Vandermonde's identity.
 Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
 <!--ID: 1775211504411-->

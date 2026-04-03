@@ -2381,7 +2381,7 @@ END%%
 Cloze
 A {relational} structure contains the following parts:
 1. {A nonempty set};
-2. {A collection of relations on the set};
+2. {A collection of relations on the set}.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1775160703271-->
 END%%

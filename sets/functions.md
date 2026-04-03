@@ -241,7 +241,7 @@ END%%
 %%ANKI
 Basic
 Is $f(x) = \int_0^x t^{-1} \,dt$ considered an elementary function? If not, why?
-Back: Yes. In this case, $f(x) = \ln{x} + C$.
+Back: Yes. In this case, $f(x) = \ln{x}$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1771856805832-->
 END%%
