@@ -492,6 +492,38 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1774544990460-->
 END%%
 
+%%ANKI
+Basic
+How is undecidable language $A$ typically defined to show $A \leq_m \overline{A}$?
+Back: $(A \times \{0\}) \cup (\overline{A} \times \{1\})$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775327536587-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be an undecidable language. *Why* isn't the following language decidable? $$(A \times \{0\}) \cup (\overline{A} \times \{1\})$$
+Back: We still have to decide if $w$ in $\langle w, r \rangle$ is a member of $A$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775327536590-->
+END%%
+
+%%ANKI
+Basic
+Let $A$ be an undecidable language. *Why* isn't the following language recognizable? $$(A \times \{0\}) \cup (\overline{A} \times \{1\})$$
+Back: Since $A$ is undecidable, either $A$ or $\overline{A}$ (or both) is unrecognizable.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775327536592-->
+END%%
+
+%%ANKI
+Basic
+Given $L$ below, what natural mapping reduction exists between $L$ and $\overline{L}$? $$L = (A \times \{0\}) \cup (\overline{A} \times \{1\})$$
+Back: Computable function $f \colon L \rightarrow \overline{L}$ defined as $f(w, r) = \langle w, 1 - r \rangle$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775327536593-->
+END%%
+
 ### Polynomial Time
 
 Language $A$ is **polynomial time mapping reducible** to language $B$ if a polynomial time computable function $f \colon \Sigma^* \rightarrow \Gamma^*$ exists, where for every $w$, $$w \in A \Leftrightarrow f(w) \in B.$$

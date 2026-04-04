@@ -103,7 +103,7 @@ END%%
 
 If $S, T \in \mathscr{M}$, then $S \cup T$ and $S \cap T$ are in $\mathscr{M}$. Also $$a(S \cup T) = a(S) + a(T) - a(S \cap T).$$
 
-Notice this last formulation is a special case of [[inclusion_exclusion|PIE]].
+Notice this last formulation is a special case of [[pie|PIE]].
 
 %%ANKI
 Basic
@@ -417,7 +417,8 @@ Let $Q$ be a set. If there exists exactly one $c$ such that $a(S) \leq c \leq a(
 Cloze
 Let $Q$ be a set. The {exhaustion} property of area states:
 
-If there exists {exactly one} $c \in \mathbb{R}$ such that {$a(S) \leq c \leq a(T)$} for all {step regions} $S$ and $T$ satisfying {$S \subseteq Q \subseteq T$}, then {$Q \in \mathscr{M}$} and {$a(Q) = c$}.
+> If there exists {exactly one} $c \in \mathbb{R}$ such that {$a(S) \leq c \leq a(T)$} for all {step regions} $S$ and $T$ satisfying {$S \subseteq Q \subseteq T$}, then {$Q \in \mathscr{M}$} and {$a(Q) = c$}.
+
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1732381333427-->
 END%%

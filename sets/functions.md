@@ -257,7 +257,7 @@ END%%
 %%ANKI
 Basic
 Is $f(x) = \int_0^x \sin{t} \,dt$ considered an elementary function? If not, why?
-Back: Yes. In this case, $f(x) = -\cos{x} + C$.
+Back: Yes. In this case, $f(x) = 1 - \cos{x}$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1771856805844-->
 END%%

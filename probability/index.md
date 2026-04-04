@@ -195,6 +195,30 @@ Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probabilit
 <!--ID: 1775241323893-->
 END%%
 
+%%ANKI
+Basic
+Let $\langle S, P \rangle$ be a probability space and $A \subseteq S$ be an event. What does $P(A^C)$ equal?
+Back: $P(A^C) = 1 - P(A)$
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1775326091987-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle S, P \rangle$ be a probability space and $A, B \subseteq S$ be events. If $A \subseteq B$, what can be said about $P(A)$ and $P(B)$?
+Back: $P(A) \leq P(B)$
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1775326091990-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle S, P \rangle$ be a probability space and $A, B \subseteq S$ be events. If $P(A) \leq P(B)$, what can be said about $A$ and $B$?
+Back: N/A.
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1775326091991-->
+END%%
+
 ## Philosophy
 
 There are generally two schools of thought on how to go about interpreting a probability space.

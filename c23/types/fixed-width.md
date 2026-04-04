@@ -235,7 +235,7 @@ END%%
 %%ANKI
 Basic
 What value of `N` is permitted in place of `signed _BitInt(N)`?
-Back: A value greater than `1`.
+Back: An integer greater than `1`.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759499034043-->
 END%%
@@ -243,7 +243,7 @@ END%%
 %%ANKI
 Basic
 What value of `N` is permitted in place of `unsigned _BitInt(N)`?
-Back: A value greater than `0`.
+Back: A positive integer.
 Reference: Gustedt, Jens. _Modern C23_. Manning Publications Co, n.d. [https://inria.hal.science/hal-02383654v2/document](https://inria.hal.science/hal-02383654v2/document).
 <!--ID: 1759499034055-->
 END%%

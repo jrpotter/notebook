@@ -9,27 +9,26 @@ tags:
 
 ## Overview
 
-The **principle of inclusion/exclusion** (PIE) refers to the oscillating adding and subtracting used to find the cardinality of potentially overlapping sets. Consider sets $A$, $B$, and $C$. Then
+The **principle of inclusion/exclusion** (PIE) refers to the process of adding and subtracting, used to find the cardinality of potentially overlapping sets. Given finite sets $A_1, A_2, \ldots, A_n$ the following identity captures the concept: $$\left\lvert \bigcup_{k=1}^n A_k \right\rvert = \sum_{k=1}^n (-1)^{k+1} \left( \sum_{1 \leq i_1 < \cdots < i_k \leq n} \lvert A_{i_1} \cap \cdots \cap A_{i_k} \rvert \right)$$
 
-$$|A \cup B| = |A| + |B| - |AB|$$
+For example, given finites sets $A$, $B$, and $C$, $$\begin{align*}
+\lvert A \cup B \rvert & = \lvert A \rvert + \lvert B \rvert - \lvert AB \rvert \\[1em]
+\lvert A \cup B \cup C \rvert & = \lvert A \rvert + \lvert B \rvert + \lvert C \rvert - \lvert AB \rvert - \lvert AC \rvert - \lvert BC \rvert + \lvert ABC \rvert
+\end{align*}$$
 
-and
-
-$$|A \cup B \cup C| = |A| + |B| + |C| - |AB| - |AC| - |BC| + |ABC|$$
-
-Notice the number of terms containing one set, two sets, three sets, etc. match the [[combinations#Binomial Coefficients|binomial coefficients]].
+The number of terms containing one set, two sets, three sets, etc. match the [[combinations#Binomial Coefficients|binomial coefficients]].
 
 %%ANKI
 Basic
-Given finite sets $A$ and $B$ and using PIE, what is $|A \cup B|$?
-Back: $|AB| = |A| + |B| - |AB|$
+Let $A$ and $B$ be finite sets. Using PIE, what is $\lvert A \cup B \rvert$?
+Back: $\lvert AB \rvert = \lvert A \rvert + \lvert B \rvert - \lvert AB \rvert$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708438356466-->
 END%%
 
 %%ANKI
 Basic
-Given finite sets $A$ and $B$, what combinatorial concept is used to find $|A \cup B|$?
+Let $A$ and $B$ be finite sets. What combinatorial concept is used to find $\lvert A \cup B \rvert$?
 Back: The principle of inclusion/exclusion.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708438356471-->
@@ -53,8 +52,8 @@ END%%
 
 %%ANKI
 Basic
-Given finite sets $A$, $B$, and $C$, what is $|A \cup B \cup C|$?
-Back: $|A| + |B| + |C| - |AB| - |AC| - |BC| + |ABC|$
+Let $A$, $B$, and $C$ be finite sets. Using PIE, what is $\lvert A \cup B \cup C \rvert$?
+Back: $\lvert A \rvert + \lvert B \rvert + \vert C \rvert - \lvert AB \rvert - \lvert AC \rvert - \lvert BC \rvert + \lvert ABC \rvert$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708438356480-->
 END%%
@@ -85,8 +84,8 @@ END%%
 
 %%ANKI
 Basic
-Given finite sets $A$ and $B$ and using a bottom-up approach (i.e. *not* PIE), what is $|A \cup B|$?
-Back: $|A \cup B| = |AB| + |A - AB| + |B - AB|$
+Let $A$ and $B$ be finite sets. Using a bottom-up approach (i.e. *not* PIE), what is $\lvert A \cup B \rvert$?
+Back: $\lvert A \cup B \rvert = \lvert AB \rvert + \lvert A - AB \rvert + \lvert B - AB \rvert$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1708438356493-->
 END%%
