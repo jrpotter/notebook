@@ -605,6 +605,46 @@ Reference: _Wikipedia_. “Pushdown automaton.” December 19, 2025. [https://en
 <!--ID: 1771940702690-->
 END%%
 
+%%ANKI
+Basic
+Given a TM $M$, what language regarding $M$'s computation histories can a PDA recognize?
+Back: Invalid computation histories.
+Reference: Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775337613473-->
+END%%
+
+%%ANKI
+Basic
+How is it that a PDA can recognize a TM's valid computation histories?
+Back: N/A. Generally speaking, this isn't possible.
+Reference: Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775337613476-->
+END%%
+
+%%ANKI
+Basic
+How is it that a PDA can recognize a TM's invalid computation histories?
+Back: It can nondeterministically guess which consecutive pair of configurations is invalid.
+Reference: Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775337613478-->
+END%%
+
+%%ANKI
+Basic
+Why can't a PDA recognize a TM's valid computation histories?
+Back: To do so would require checking every consecutive pair of configurations with a single stack.
+Reference: Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775337613481-->
+END%%
+
+%%ANKI
+Basic
+How is a TM's computation history typically manipulated before processing by a PDA?
+Back: By writing every other configuration in reverse order.
+Reference: Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775337816497-->
+END%%
+
 ## Context-Free Grammar
 
 A **context-free grammar** (CFG) is a $4$-tuple $\langle V, \Sigma, R, S \rangle$ where

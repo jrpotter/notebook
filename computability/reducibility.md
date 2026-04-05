@@ -494,8 +494,8 @@ END%%
 
 %%ANKI
 Basic
-How is undecidable language $A$ typically defined to show $A \leq_m \overline{A}$?
-Back: $(A \times \{0\}) \cup (\overline{A} \times \{1\})$
+How is undecidable language $L$ typically defined to show $L \leq_m \overline{L}$?
+Back: $L = (A \times \{0\}) \cup (\overline{A} \times \{1\})$ where $A$ is an undecidable language.
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1775327536587-->
 END%%
@@ -732,21 +732,22 @@ END%%
 
 The following is a list of languages that are useful for constructing [[reducibility|reductions]] to and from.
 
-| Language          | Decidable | Recognizable | Co-Recognizable |
-| ----------------- | --------- | ------------ | --------------- |
-| $A_{\text{DFA}}$  | Yes       | Yes          | Yes             |
-| $A_{\text{NFA}}$  | Yes       | Yes          | Yes             |
-| $A_{\text{REX}}$  | Yes       | Yes          | Yes             |
-| $E_{\text{DFA}}$  | Yes       | Yes          | Yes             |
-| $EQ_{\text{DFA}}$ | Yes       | Yes          | Yes             |
-| $A_{\text{CFG}}$  | Yes       | Yes          | Yes             |
-| $E_{\text{CFG}}$  | Yes       | Yes          | Yes             |
-| $EQ_{\text{CFG}}$ | No        | No           | Yes             |
-| $A_{\text{LBA}}$  | Yes       | Yes          | Yes             |
-| $E_{\text{LBA}}$  | No        | ?            | ?               |
-| $A_{\text{TM}}$   | No        | Yes          | No              |
-| $E_{\text{TM}}$   | No        | ?            | ?               |
-| $EQ_{\text{TM}}$  | No        | No           | No              |
+| Language           | Decidable | Recognizable | Co-Recognizable |
+| ------------------ | --------- | ------------ | --------------- |
+| $A_{\text{DFA}}$   | Yes       | Yes          | Yes             |
+| $A_{\text{NFA}}$   | Yes       | Yes          | Yes             |
+| $A_{\text{REX}}$   | Yes       | Yes          | Yes             |
+| $E_{\text{DFA}}$   | Yes       | Yes          | Yes             |
+| $EQ_{\text{DFA}}$  | Yes       | Yes          | Yes             |
+| $A_{\text{CFG}}$   | Yes       | Yes          | Yes             |
+| $E_{\text{CFG}}$   | Yes       | Yes          | Yes             |
+| $EQ_{\text{CFG}}$  | No        | No           | Yes             |
+| $A_{\text{LBA}}$   | Yes       | Yes          | Yes             |
+| $E_{\text{LBA}}$   | No        | ?            | ?               |
+| $A_{\text{TM}}$    | No        | Yes          | No              |
+| $E_{\text{TM}}$    | No        | ?            | ?               |
+| $EQ_{\text{TM}}$   | No        | No           | No              |
+| $HALT_{\text{TM}}$ | No        | Yes          | No              |
 
 Additionally, any [[regular]] and [[computability/context-free/index|context-free]] language is decidable.
 
@@ -1212,6 +1213,38 @@ Which language does Sipser first introduce as neither recognizable nor co-recogn
 Back: $EQ_{\text{TM}}$
 Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
 <!--ID: 1774544028230-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser define language $HALT_{\text{TM}}$?
+Back: $HALT_{\text{TM}} = \{ \langle M, w \rangle \mid M \text{ is a TM and } M \text{ halts on } w \}$
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775337613463-->
+END%%
+
+%%ANKI
+Basic
+Is $HALT_{\text{TM}}$ decidable?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775337613466-->
+END%%
+
+%%ANKI
+Basic
+Is $HALT_{\text{TM}}$ recognizable?
+Back: Yes.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775337613468-->
+END%%
+
+%%ANKI
+Basic
+Is $HALT_{\text{TM}}$ co-recognizable?
+Back: No.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775337613471-->
 END%%
 
 ## Bibliography

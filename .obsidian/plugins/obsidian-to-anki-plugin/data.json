@@ -1784,7 +1784,7 @@
     "_journal/2025-10-24.md": "4b80fa4370bcbf4b8122faae323e2532",
     "_journal/2025-10/2025-10-23.md": "5a8dbe6c60db5acfedda392a6ffcf123",
     "computability/context-free/deterministic.md": "83afa4c30a9843ac554b87f23df0dc3d",
-    "computability/context-free/index.md": "4fc807ad76c8dcdd221f89e756df74cb",
+    "computability/context-free/index.md": "ac47abd16bf08fed44ee26f255f1e376",
     "_journal/2025-10-25.md": "1267c24ab6e563cc2331c8a2ae260460",
     "_journal/2025-10/2025-10-24.md": "acef3969a2b64a6ce42c1602238f922d",
     "calculus/derivatives.md": "e750a487aa983f7ffe6a5a6aef8aacbf",
@@ -2228,7 +2228,7 @@
     "_journal/2025-12/2025-12-08.md": "762822f1cab34e5596b486eb586df9dd",
     "complexity/order_growth.md": "ac2f15556996a2d7829852ebb410a606",
     "complexity/index.md": "40a6eeb9d69c5d5d83b0c43da009c9ce",
-    "computability/reducibility.md": "9cf250af6990d49f57b1aee3a8bf1496",
+    "computability/reducibility.md": "49ffcde46b5d5fc6ac14b79bdbfe1056",
     "_journal/2025-12-10.md": "d3993036e96e6e903cabed5315711d31",
     "_journal/2025-12/2025-12-09.md": "5f73a6a4874acec65ea3b40a4aefddae",
     "_journal/2025-12-11.md": "cdc7a5d98476e1f5dc06959b8d5089ca",
@@ -2628,7 +2628,7 @@
     "_journal/2026/2026-03/2026-03-01.md": "9bcfe2938d1ec1c893e046d05f1dda04",
     "algebra/operations.md": "07f3655450f92f5e8c40a149e54d1247",
     "_journal/2026-04-02.md": "c75c5d7483fc36c667846dd211685bce",
-    "algebra/groups.md": "8d2c950a2e96ef79bab34c697809d9cd",
+    "algebra/groups.md": "56db40292f6f0b5054c60859bfc02544",
     "algebra/magmas.md": "42a49918193aaf30af79e1ccdcdfd6c1",
     "algebra/semigroups.md": "1ff305eb23e9322bf511d55ad54c151f",
     "probability/index.md": "ceda865ba3fd94962b791e9966f97afd",
@@ -2636,7 +2636,9 @@
     "_journal/2026-04/2026-04-02.md": "c75c5d7483fc36c667846dd211685bce",
     "combinatorics/pie.md": "2b20deeb6a45d2af23d8f2b9be030fd3",
     "_journal/2026-04-04.md": "91550f30873d02594c46982c7a097901",
-    "_journal/2026-04/2026-04-03.md": "38f7b2d0044610fab4bf852d09dc1136"
+    "_journal/2026-04/2026-04-03.md": "38f7b2d0044610fab4bf852d09dc1136",
+    "_journal/2026-04-05.md": "0855694ac337dadde059f896312bf4ab",
+    "_journal/2026-04/2026-04-04.md": "91550f30873d02594c46982c7a097901"
   },
   "fields_dict": {
     "Basic": [
