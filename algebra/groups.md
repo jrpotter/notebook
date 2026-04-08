@@ -9,10 +9,7 @@ tags:
 
 ## Overview
 
-A **group** $\langle G, * \rangle$ is a [[semigroups|semigroup]] satisfying the following additional axioms:
-
-1. *Identity*. There is an element $e \in G$ such that for all $x \in G$, $$e * x = x * e = x.$$
-2. *Inverses*. For each $a \in G$, there is an element $a' \in G$ such that $$a * a' = a' * a = e.$$
+A **group** $\langle G, * \rangle$ is a [[monoids|monoid]] with inverse elements. That is, for each $a \in G$, there is an element $a' \in G$ such that $a * a' = a' * a = e$. Oftentimes we simply write "a group $G$" with the understanding there is some relevant binary operation on set $G$.
 
 The group is **abelian** if its binary operation is [[operations#Commutativity|commutative]].
 
@@ -71,7 +68,320 @@ Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh editi
 <!--ID: 1775348904585-->
 END%%
 
-## Cancellation Laws
+%%ANKI
+Cloze
+A {group} is a {monoid} endowed with {inverse elements}.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775410876186-->
+END%%
+
+%%ANKI
+Basic
+Consider finite group $\langle G, * \rangle$. What is the smallest valid cardinality $G$ can have?
+Back: $\lvert G \rvert = 1$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775505845590-->
+END%%
+
+%%ANKI
+Basic
+What does a group's order refer to?
+Back: The cardinality of the underlying set.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296882-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle G, \cdot \rangle$ be a group. What name is given to value $\lvert G \rvert = \mathop{\text{card}} G$?
+Back: The group's order.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296898-->
+END%%
+
+%%ANKI
+Basic
+What is sloppy about the notation "the group $G$"?
+Back: We are not explicitly stating the associated binary operation on set $G$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775577078464-->
+END%%
+
+%%ANKI
+Basic
+In phrasing "a group $G$", what is assumed to exist?
+Back: A relevant binary operation on set $G$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775577078467-->
+END%%
+
+## Addition
+
+**Addition** is usually denoted using the $+$ symbol. This does not necessarily correspond to the standard arithmetic operation. It is generally reserved for commutative operations. An inverse of $a$ in additive notation is typically denoted as $-a$. The identity element is typically denoted as $0$. For some $n \in \mathbb{Z}$,
+
+* $0a$ is interpreted as the identity element
+* $na$ is interpreted as $a + a + \cdots + a$, where $a$ is repeated $n$ times.
+* $-na$ is interpreted as $(-a) + (-a) + \cdots + (-a)$, where $(-a)$ is repeated $n$ times.
+
+%%ANKI
+Basic
+Consider a group $\langle G, + \rangle$. What name is given to its binary operation?
+Back: Addition.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296883-->
+END%%
+
+%%ANKI
+Basic
+Consider a group $\langle G, + \rangle$ and $a \in G$. How is $a$'s inverse typically denoted?
+Back: As $-a$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296886-->
+END%%
+
+%%ANKI
+Basic
+What assumption do algebraists tend to make regarding $+$ that they do not make with $\cdot$?
+Back: That the $+$ operation is commutative.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296888-->
+END%%
+
+%%ANKI
+Basic
+How do algebraists typically denote an additive identity element?
+Back: As $0$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296890-->
+END%%
+
+%%ANKI
+Basic
+Consider a group $\langle G, + \rangle$ and $a \in G$. How is $0a$ interpreted?
+Back: As the identity element.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296892-->
+END%%
+
+%%ANKI
+Basic
+Consider a group $\langle G, + \rangle$ and $a \in G$. How is $5a$ interpreted?
+Back: As $a + a + a + a + a$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296894-->
+END%%
+
+%%ANKI
+Basic
+Consider a group $\langle G, + \rangle$ and $a \in G$. How is $-3a$ interpreted?
+Back: As $(-a) + (-a) + (-a)$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296896-->
+END%%
+
+## Multiplication
+
+**Multiplication** is usually denoted using the $\cdot$ symbol or the immediate juxtaposition of two elements. This does not necessarily correspond to the standard multiplication operation. An inverse of $a$ in multiplicative notation is typically denoted as $a^{-1}$. An identity element is typically denoted as $1$. For some $n \in \mathbb{Z}$:
+
+* $a^0$ is interpreted as the identity element.
+* $a^n$ is interpreted as $(a)(a)\cdots(a)$, where $a$ is repeated $n$ times.
+* $a^{-n}$ is interpreted as $(a^{-1})(a^{-1}) \cdots (a^{-1})$, where $a^{-1}$ is repeated $n$ times.
+
+%%ANKI
+Basic
+Consider a group $\langle G, \cdot \rangle$. What name is given to its binary operation?
+Back: Multiplication.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296884-->
+END%%
+
+%%ANKI
+Basic
+Consider a group $\langle G, \cdot \rangle$ and $a \in G$. How is $a$'s inverse typically denoted?
+Back: As $a^{-1}$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296887-->
+END%%
+
+%%ANKI
+Cloze
+Algebraists use symbols {1:$0$} for {2:addition} and {2:$1$} for {1:multiplication}.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296889-->
+END%%
+
+%%ANKI
+Basic
+How do algebraists typically denote a multiplicative identity element?
+Back: As $1$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296891-->
+END%%
+
+%%ANKI
+Basic
+Consider a group $\langle G, \cdot \rangle$ and $a \in G$. How is $a^0$ interpreted?
+Back: As the identity element.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296893-->
+END%%
+
+%%ANKI
+Basic
+Consider a group $\langle G, \cdot \rangle$ and $a \in G$. How is $a^3$ interpreted?
+Back: As $a \cdot a \cdot a$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296895-->
+END%%
+
+%%ANKI
+Basic
+Consider a group $\langle G, \cdot \rangle$ and $a \in G$. How is $a^{-4}$ interpreted?
+Back: As $a^{-1} \cdot a^{-1} \cdot a^{-1} \cdot a^{-1}$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775576296897-->
+END%%
+
+## Order
+
+A group's **order** refers to the cardinality of its associated set. Up to isomorphism:
+
+* There are no groups of order $0$.
+* There is only one group, the **trivial group**, of order $1$.
+* There is only one group, $\mathbb{Z}_2$, of order $2$.
+* There is only one group, $\mathbb{Z}_3$, of order $3$.
+* There are two groups of order $4$:
+	* $\mathbb{Z}_4$ defined in the normal way.
+	* $K_4$, the **Klein group**, also denoted as $V$. Each element is its own inverse.
+
+%%ANKI
+Basic
+Up to isomorphism, how many groups are there of order $0$?
+Back: None.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775505845592-->
+END%%
+
+%%ANKI
+Basic
+Up to isomorphism, how many groups are there of order $1$?
+Back: Just one.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775505845594-->
+END%%
+
+%%ANKI
+Basic
+Up to isomorphism, what are the groups of order $1$?
+Back: Just $\{e\}$, where $e$ denotes an identity element.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775592290069-->
+END%%
+
+%%ANKI
+Basic
+Up to isomorphism, how many groups are there of order $2$?
+Back: Just one.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775505845595-->
+END%%
+
+%%ANKI
+Basic
+Up to isomorphism, what are the groups of order $2$?
+Back: $\mathbb{Z}_2$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775592290073-->
+END%%
+
+%%ANKI
+Basic
+Up to isomorphism, how many groups are there of order $3$?
+Back: Just one.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775505845596-->
+END%%
+
+%%ANKI
+Basic
+Up to isomorphism, what are the groups of order $3$?
+Back: $\mathbb{Z}_3$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775592290077-->
+END%%
+
+%%ANKI
+Basic
+How must a group of one element be defined?
+Back: As containing just the identity element.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775505845597-->
+END%%
+
+%%ANKI
+Basic
+Up to isomorphism, how many groups are there of order $4$?
+Back: Two.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775592290081-->
+END%%
+
+%%ANKI
+Basic
+What name is given to group $K_4$?
+Back: The Klein group.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775592290084-->
+END%%
+
+%%ANKI
+Basic
+What name is given to group $V$?
+Back: The Klein group.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775592290088-->
+END%%
+
+%%ANKI
+Basic
+Why is group $V$ named the way it is?
+Back: It comes from German word *Vier* meaning "four".
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775592290092-->
+END%%
+
+%%ANKI
+Basic
+How is group $K_4$ alternatively denoted?
+Back: As $V$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775592290095-->
+END%%
+
+%%ANKI
+Basic
+Up to isomorphism, what are the groups of order $4$?
+Back: $\mathbb{Z}_4$ and $K_4$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775592290099-->
+END%%
+
+%%ANKI
+Basic
+What particular characteristic distinguishes $K_4$ from $\mathbb{Z}_4$?
+Back: In $K_4$, every element is its own inverse.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775592290102-->
+END%%
+
+%%ANKI
+Cloze
+The {Klein} group is denoted as {$K_4$} or {$V$}.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775592290106-->
+END%%
+
+## Cancellation
 
 Let $\langle G, * \rangle$ be a group and $a, b, c \in G$. The **left** and **right cancellation laws** respectively state that $$\begin{align*} a * b = a * c \implies b = c \\ b * a = c * a \implies b = c\end{align*}$$
 
@@ -146,6 +456,242 @@ Let $\langle G, *\rangle$ be a group and $a, b \in G$. What is the solution to $
 Back: $x = b * a^{-1}$
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775348904614-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle G, * \rangle$ be a group and $a \in G$. How many inverses does $a$ have?
+Back: Exactly one.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775410876188-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle G, * \rangle$ be a group and $a \in G$. How do we prove uniqueness of $a$'s inverse?
+Back: If $a', a''$ are inverses, then $a * a' = a * a''$. The left cancellation law shows $a' = a''$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775410876189-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle G, * \rangle$ be a group and $a, b \in G$. What is the inverse of $(a * b)$?
+Back: $b^{-1} * a^{-1}$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775410876190-->
+END%%
+
+## Cayley Tables
+
+A **Cayley table** describes the structure of a finite group by arranging all possible products of all the group's elements in a square table.
+
+A group is abelian if and only if its Cayley table's values are symmetric along its diagonal axis. No row nor column can contain the same element twice.
+
+%%ANKI
+Basic
+Consider the following Cayley table. Assuming $e$ is the identity element, how must $\circ$ be defined, and why? $$\begin{array}{c|c|c|c} 
+* & e & a & b \\ \hline
+e & e & a & b \\ \hline
+a & a & ._1 & \circ  \\ \hline
+b & b & ._2  & ._3  \\
+\end{array}$$
+Back: $e$. Columns and rows cannot contain duplicate elements.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775505845598-->
+END%%
+
+%%ANKI
+Basic
+Consider the following Cayley table. Assuming $e$ is the identity element, how must $\circ$ be defined, and why? $$\begin{array}{c|c|c|c} 
+* & e & a & b \\ \hline
+e & e & a & b \\ \hline
+a & a & \circ & ._1  \\ \hline
+b & b & ._2  & ._3  \\
+\end{array}$$
+Back: $b$. The cell labeled $1$ must be $e$ which leaves only $b$ in the row.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775505845599-->
+END%%
+
+%%ANKI
+Basic
+Consider the following Cayley table. Assuming $e$ is the identity element, how must $\circ$ be defined, and why? $$\begin{array}{c|c|c|c} 
+* & e & a & b \\ \hline
+e & e & a & b \\ \hline
+a & a & ._1 & ._2  \\ \hline
+b & b & \circ  & ._3  \\
+\end{array}$$
+Back: $e$. Columns and rows cannot contain duplicate elements.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775505845600-->
+END%%
+
+%%ANKI
+Basic
+Consider the following Cayley table. Assuming $e$ is the identity element, how must $\circ$ be defined, and why? $$\begin{array}{c|c|c|c} 
+* & e & a & b \\ \hline
+e & e & a & b \\ \hline
+a & a & ._1 & ._2  \\ \hline
+b & b & ._3  & \circ  \\
+\end{array}$$
+Back: $a$. The cell labeled $3$ must be $e$ which leaves only $a$ in the row.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775505845601-->
+END%%
+
+%%ANKI
+Basic
+What can be said about every row of a Cayley table?
+Back: It must contain some permutation of the group elements.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775505845602-->
+END%%
+
+%%ANKI
+Basic
+What can be said about every column of a Cayley table?
+Back: It must contain some permutation of the group elements.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775505845603-->
+END%%
+
+%%ANKI
+Basic
+What group propery ensures no duplicate entries in each row/column of a group's Cayley table?
+Back: The cancellation properties.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775591362510-->
+END%%
+
+%%ANKI
+Basic
+Which group is depicted in the following Cayley table? $$\begin{array}{c|c|c|c} 
+* & e & a & b & c \\ \hline
+e & e & a & b & c \\ \hline
+a & a & e & c & b \\ \hline
+b & b & c & e & a \\ \hline
+c & c & b & a & e
+\end{array}$$
+Back: $K_4$, the Klein group.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775592290109-->
+END%%
+
+%%ANKI
+Basic
+Which group is depicted in the following Cayley table? $$\begin{array}{c|c|c|c} 
+* & e & a & b & c \\ \hline
+e & e & a & b & c \\ \hline
+a & a & b & c & e \\ \hline
+b & b & c & e & a \\ \hline
+c & c & e & a & b
+\end{array}$$
+Back: $\mathbb{Z}_4$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775592290113-->
+END%%
+
+## Subgroups
+
+Let $\langle G, * \rangle$ be a group. If $H \subseteq G$ forms a group under the induced operation $*$, then $\langle H, * \rangle$ is a **subgroup** of $\langle G, * \rangle$. This is denoted as $H \leq G$. If $H \leq G$ but $H \neq G$, we instead write $H < G$.
+
+An **improper subgroup** of $G$ is $G$ itself. Every other subgroup is a **proper subgroup**. The subgroup $\{e\}$, where $e$ denotes the identity element, is the **trivial subgroup**. Every other subgroup is **nontrivial**.
+
+%%ANKI
+Basic
+Let $\langle G, * \rangle$ be a group. What is a subgroup $H$ of $G$?
+Back: A set $H \subseteq G$ that forms a group under the induced operation $*$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775577078469-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be a group and $H$ be a subgroup of $G$. How is this denoted?
+Back: As $H \leq G$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775577078470-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be a group and $H$ be a strict subgroup of $G$. How is this denoted?
+Back: As $H < G$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775577078471-->
+END%%
+
+%%ANKI
+Basic
+Let $G$ be a group. What does notation $H \leq G$ indicate?
+Back: That $H$ is a subgroup of $G$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775577078472-->
+END%%
+
+%%ANKI
+Basic
+Is $\langle \mathbb{Z}, + \rangle$ a subgroup of $\langle \mathbb{R}, + \rangle$? If not, why?
+Back: Yes.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775577078473-->
+END%%
+
+%%ANKI
+Basic
+Is $\langle \mathbb{Q}^+, \cdot \rangle$ a subgroup of $\langle \mathbb{R}, + \rangle$? If not, why?
+Back: No. The group's binary operation is not shared by the subgroup.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775577078474-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle G, * \rangle$ be a group. What is a proper subgroup of $G$?
+Back: A subgroup of $G$ that is not $G$ itself.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775588755177-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle G, * \rangle$ be a group. What is an improper subgroup of $G$?
+Back: The group $\langle G, * \rangle$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775588755183-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle G, * \rangle$ be a group. What is a trivial subgroup of $G$?
+Back: The group $\langle \{e\}, * \rangle$ where $e$ denotes the identity element of $G$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775588755188-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle G, * \rangle$ be a group. What is a nontrivial subgroup of $G$?
+Back: Any subgroup other than $\{e\}$, where $e$ denotes the identity element of $G$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775588755193-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle G, * \rangle$ be a group. When is a subgroup improper and nontrivial?
+Back: Subgroup $\langle G, * \rangle$ is improper and nontrivial if $G$ has order $> 1$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775588755197-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle G, * \rangle$ be a group. When is a subgroup trivial and proper?
+Back: Subgroup $\langle \{e\}, * \rangle$ is trivial and proper if $G$ has order $> 1$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1775588755202-->
 END%%
 
 ## Bibliography

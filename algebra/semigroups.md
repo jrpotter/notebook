@@ -30,7 +30,7 @@ END%%
 %%ANKI
 Basic
 What other algebraic structure, in the hierarchy of structures, does a semigroup precede?
-Back: A group.
+Back: A monoid.
 Reference: _Wikipedia_. “Semigroup.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Semigroup](https://en.wikipedia.org/w/index.php?title=Semigroup&oldid=1345103570).
 <!--ID: 1775160703314-->
 END%%
@@ -49,6 +49,13 @@ What axiom is endowed on a magma to become a semigroup?
 Back: Associativity.
 Reference: _Wikipedia_. “Semigroup.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Semigroup](https://en.wikipedia.org/w/index.php?title=Semigroup&oldid=1345103570).
 <!--ID: 1775160703322-->
+END%%
+
+%%ANKI
+Cloze
+A {semigroup} is a {magma} endowed with {associativity}.
+Reference: _Wikipedia_. “Semigroup.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Semigroup](https://en.wikipedia.org/w/index.php?title=Semigroup&oldid=1345103570).
+<!--ID: 1775410876185-->
 END%%
 
 ## Bibliography

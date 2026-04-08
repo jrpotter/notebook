@@ -338,7 +338,7 @@ END%%
 %%ANKI
 Basic
 What is the Taylor's formula for $e^x$ with $n = 3$?
-Back: $$e^x = T_3(e^x) + E_3(x)$$
+Back: $$e^x = 1 + x + \frac{x^2}{2} + E_3(x)$$
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1771856805798-->
 END%%
