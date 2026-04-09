@@ -219,6 +219,13 @@ Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probabilit
 <!--ID: 1775326091991-->
 END%%
 
+%%ANKI
+Cloze
+Events are {sets} whereas probabilities are {numbers}.
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1775751539958-->
+END%%
+
 ## Philosophy
 
 There are generally two schools of thought on how to go about interpreting a probability space.

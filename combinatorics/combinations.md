@@ -328,9 +328,9 @@ END%%
 
 ## Stars and Bars
 
-The **stars and bars** chart refers to a graphical depiction of distributing $n$ objects (represented as $*$) into $m$ different buckets (delineated via $|$). An example chart looks like so: $$**|***|*||*$$
+The **stars and bars** chart refers to a graphical depiction of distributing $n$ objects (represented as $*$) into $k$ different buckets (delineated via $|$). An example chart looks like so: $$**|***|*||*$$
 
-Notice there are $m - 1$ bars interspersed amongst the $n$ stars. In the above example, there are $11$ total symbols, $4$ of which are bars, meaning there are $\binom{11}{4}$ ways to distribute the objects amongst the $5$ buckets. We can represent this using bit strings instead, with `0`s as stars and `1`s as bars. The above example is equivalently written as: $$00100010110$$
+Notice there are $k - 1$ bars interspersed amongst the $n$ stars. Thus there exist $$\binom{n + k - 1}{k} \text{ possibilities}.$$
 
 %%ANKI
 Basic
@@ -374,6 +374,14 @@ END%%
 
 %%ANKI
 Basic
+How many ways are there to put $n$ indistinguishable balls into $k$ distinguishable bins?
+Back: $$\binom{n + k - 1}{k}$$
+Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
+<!--ID: 1775770868097-->
+END%%
+
+%%ANKI
+Basic
 What graphical depiction is used to find the number of integer solutions to the following equation? $$x_1 + x_2 + \cdots + x_k = n$$
 Back: Stars and bars
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
@@ -392,7 +400,7 @@ END%%
 Basic
 What combinatorial *notation* corresponds to the highlighted square?
 ![[ordering-n-repetition-y.jpg]]
-Back: $\binom{n + k}{k}$
+Back: $\binom{n + k - 1}{k}$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709306052455-->
 END%%
@@ -408,7 +416,7 @@ END%%
 
 %%ANKI
 Basic
-Which square corresponds to notation $\binom{n + k}{k}$?
+Which square corresponds to notation $\binom{n + k - 1}{k}$?
 ![[ordering-repetition.jpg]]
 Back:
 ![[ordering-n-repetition-y.jpg]]
