@@ -881,7 +881,7 @@ END%%
 %%ANKI
 Basic
 Let $h(x) = f(x) \cdot o(g(x))$ as $x \rightarrow a$. How is this simplified?
-Back: As $h(x) = o(f(x)g(x))$.
+Back: As $h(x) = o(f(x)g(x))$ as $x \rightarrow a$.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772140663084-->
 END%%

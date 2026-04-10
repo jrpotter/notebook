@@ -1489,7 +1489,7 @@
     "_journal/2025-07-11.md": "828e1a48ca2cc873b7b02de215e29068",
     "_journal/2025-07/2025-07-10.md": "2a842977bb13a634ce4c64feb8fd410d",
     "geometry/curvature.md": "9f80263cdd29886e7d0b6aafd97bcf2d",
-    "calculus/limits.md": "6ea6f7b86c6107ccb3c92bad3e13b287",
+    "calculus/limits.md": "dab03ac83a4f958323a230766e2c9df5",
     "_journal/2025-07-12.md": "55ae40960fc3bb841284e40a4c66d833",
     "_journal/2025-07/2025-07-11.md": "cd8e5414705e77e8fa0cefbe03098202",
     "networking/ip/class.md": "94b2c1dfcf8710d947768ba91f8849ac",
@@ -2630,7 +2630,7 @@
     "_journal/2026/2026-03/2026-03-01.md": "9bcfe2938d1ec1c893e046d05f1dda04",
     "algebra/operations.md": "07f3655450f92f5e8c40a149e54d1247",
     "_journal/2026-04-02.md": "c75c5d7483fc36c667846dd211685bce",
-    "algebra/groups.md": "89d10512808ff7118e8784411b351099",
+    "algebra/groups.md": "de5b4aa0b141f1c9646fa0368413dcb8",
     "algebra/magmas.md": "42a49918193aaf30af79e1ccdcdfd6c1",
     "algebra/semigroups.md": "5cd085f6c3bc0de8216ce942325e875a",
     "probability/index.md": "78704bdfda375b2acd33e4978e6a3ad7",
@@ -2648,7 +2648,9 @@
     "_journal/2026-04/2026-04-06.md": "bd018342c4d78db716ecb4efe2be074c",
     "_journal/2026-04-09.md": "e14ea81f75388c9f8e9a99b341ca4aa2",
     "_journal/2026-04/2026-04-08.md": "13aae987438cb35a8f747a3724c6027d",
-    "_journal/2026-04/2026-04-07.md": "cd5d86e4fba8bd269088472810ac8a22"
+    "_journal/2026-04/2026-04-07.md": "cd5d86e4fba8bd269088472810ac8a22",
+    "_journal/2026-04-10.md": "6533bc48ed949f320b1da205b880ab28",
+    "_journal/2026-04/2026-04-09.md": "bb6b756b1c7718d9db9d21c93fd1171e"
   },
   "fields_dict": {
     "Basic": [

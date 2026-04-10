@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_journal/2026-04-09.md",
+                "file": "_journal/2026-04-10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-09"
+              "title": "2026-04-10"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "array}",
+                "query": "1775755475858",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_journal/2026-04-09.md",
+                "file": "_journal/2026-04-10.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-04-09"
+              "title": "Outline of 2026-04-10"
             }
           }
         ],
@@ -172,9 +172,11 @@
   },
   "active": "36d6625f052fa130",
   "lastOpenFiles": [
-    "combinatorics/combinations.md",
+    "_journal/2026-04/2026-04-09.md",
+    "_journal/2026-04-10.md",
     "algebra/groups.md",
-    "_journal/2026-04-09.md",
+    "calculus/limits.md",
+    "combinatorics/combinations.md",
     "algebra/images/subgroup-k4.png",
     "algebra/images/subgroup-z4.png",
     "_journal/2026-04/2026-04-08.md",
@@ -198,8 +200,6 @@
     "computability/decidability.md",
     "_journal/2026-04/2026-04-03.md",
     "_journal/2026-04-03.md",
-    "dnd/conditions.md",
-    "sets/functions.md",
     "probability",
     "_journal/2026-04",
     "calculus/series",

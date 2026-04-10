@@ -703,7 +703,7 @@ END%%
 %%ANKI
 Basic
 What are the proper subgroups of $\mathbb{Z}_4$?
-Back: $\{e\}$ and $\{0, 2\}$.
+Back: $\{0\}$ and $\{0, 2\}$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775751539967-->
 END%%
@@ -718,7 +718,7 @@ END%%
 
 %%ANKI
 Basic
-What are the proper subgroups of $V = \{e, a, b, c\}$, where $e$ denotes identity?
+What are the proper subgroups of $K_4 = \{e, a, b, c\}$, where $e$ denotes identity?
 Back: $\{e\}$, $\{e, a\}$, $\{e, b\}$, and $\{e, c\}$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775751539975-->
@@ -858,7 +858,7 @@ END%%
 %%ANKI
 Basic
 Suppose $a$ is a generator of $G$. Can another distinct element of $G$ generate $G$?
-Back: Yes.
+Back: Possibly.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775755475840-->
 END%%
@@ -882,7 +882,7 @@ END%%
 %%ANKI
 Basic
 What are the generator(s) of group $\mathbb{Z}_3$ under addition?
-Back: Just $1$.
+Back: $1$ and $2$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775755475858-->
 END%%
