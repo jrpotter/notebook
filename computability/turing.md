@@ -1352,6 +1352,92 @@ Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third ed
 <!--ID: 1764938068683-->
 END%%
 
+## Self-Reproduction
+
+In the context of Turing machines, we can build a [[quine]] with the aid of a [[metaprogramming#Quotation|quotation]] function. This is a [[algorithms/index#Computable Functions|computable function]] $q \colon \Sigma^* \rightarrow \Sigma^*$, where if $w$ is any string, $q(w)$ is the description of a TM $P_w$ that prints out $w$ and then halts.
+
+The quine is denoted $SELF$ and consists of template $A$ and action $B$ given as:
+
+* $A$ = $P_{\langle B \rangle}$, i.e. the TM that prints out $B$.
+* $B$ = "On input $\langle M \rangle$, where $M$ is a portion of a TM:
+	* Compute $q(\langle M \rangle)$ (which is $A$ when $\langle M \rangle = \langle B \rangle$).
+	* Combine the result with $\langle M \rangle$ to make a complete TM.
+	* Print the description of this TM and halt."
+
+%%ANKI
+Basic
+With respect to Turing machines, what does the quote function do?
+Back: Takes in a string $w$ and returns a description of a machine that prints $w$ and halts.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775921149754-->
+END%%
+
+%%ANKI
+Basic
+What does Sipser's $SELF$ Turing machine do?
+Back: Ignores its input and prints out its own machine description.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775921149758-->
+END%%
+
+%%ANKI
+Basic
+How does Sipser denote the quine Turing machine?
+Back: As $SELF$.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775921149761-->
+END%%
+
+%%ANKI
+Basic
+What does the "template" portion of Sipser's $SELF$ TM do?
+Back: Prints the "action" portion directly to the tape.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775921149763-->
+END%%
+
+%%ANKI
+Basic
+What does the "data" portion of Sipser's $SELF$ TM do?
+Back: Prints the "code" portion directly to the tape.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775921775970-->
+END%%
+
+%%ANKI
+Basic
+What does the "action" portion of Sipser's $SELF$ TM do?
+Back: Reconstructs the TM that can produce the contents of the tape.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775921149766-->
+END%%
+
+%%ANKI
+Basic
+What does the "code" portion of Sipser's $SELF$ TM do?
+Back: Reconstructs the TM that can produce the contents of the tape.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775921775979-->
+END%%
+
+%%ANKI
+Cloze
+The "{action}" portion of $SELF$ applies the {quotation} function to the {contents of the tape}.
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775921149768-->
+END%%
+
+%%ANKI
+Basic
+What non-self-referencing English quine does Sipser share as an example?
+Back:
+* Print out two copies of the following, the second one in quotes:
+* "Print out two copies of the following, the second one in quotes:"
+Reference: Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+<!--ID: 1775921306603-->
+END%%
+
 ## Bibliography
 
 * Michael Sipser, _Introduction to the Theory of Computation_, Third edition, international edition (Cengage Learning, 2013).
+* _Wikipedia_. “Quine (computing).” April 8, 2026. [https://en.wikipedia.org/w/index.php?title=Quine_(computing)](https://en.wikipedia.org/w/index.php?title=Quine_\(computing\)&oldid=1347765896).

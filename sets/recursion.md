@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-The recursion theorem guarantees recursively defined functions exist. More formally, let $A$ be a set, $a \in A$, and $F \colon A \rightarrow A$. Then there exists a unique function $h \colon \omega \rightarrow A$ such that, for every $n \in \omega$, $$\begin{align*} h(0) & = a \\ h(n^+) & = F(h(n)) \end{align*}$$
+The **recursion theorem** guarantees recursively defined functions exist. More formally, let $A$ be a set, $a \in A$, and $F \colon A \rightarrow A$. Then there exists a unique function $h \colon \omega \rightarrow A$ such that, for every $n \in \omega$, $$\begin{align*} h(0) & = a \\ h(n^+) & = F(h(n)) \end{align*}$$
 
 %%ANKI
 Basic

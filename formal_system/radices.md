@@ -1,9 +1,9 @@
 ---
 title: Radices
 TARGET DECK: Obsidian::STEM
-FILE TAGS: algebra
+FILE TAGS: formal_system::radix
 tags:
-  - algebra
+  - formal_system
   - radix
 ---
 

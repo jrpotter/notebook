@@ -191,7 +191,7 @@ END%%
 %%ANKI
 Basic
 What combinatorial *notation* corresponds to the highlighted square?
-![[ordering-y-repetition-y.jpg]]
+![[ordering-y-repetition-y.png]]
 Back: $n^k$
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709305803508-->
@@ -200,7 +200,7 @@ END%%
 %%ANKI
 Basic
 What combinatorial *concept* corresponds to the highlighted square?
-![[ordering-y-repetition-y.jpg]]
+![[ordering-y-repetition-y.png]]
 Back: The multiplicative principle.
 Reference: Oscar Levin, *Discrete Mathematics: An Open Introduction*, 3rd ed., n.d., [https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf](https://discrete.openmathbooks.org/pdfs/dmoi3-tablet.pdf).
 <!--ID: 1709305803515-->
@@ -209,9 +209,9 @@ END%%
 %%ANKI
 Basic
 Which square corresponds to notation $n^k$?
-![[ordering-repetition.jpg]]
+![[ordering-repetition.png]]
 Back:
-![[ordering-y-repetition-y.jpg]]
+![[ordering-y-repetition-y.png]]
 <!--ID: 1709305803518-->
 END%%
 

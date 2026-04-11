@@ -591,7 +591,7 @@ END%%
 
 %%ANKI
 Basic
-Which creatures are covered by the Prone *Attacks Affected* effect?
+Which creatures are affected by the Prone *Attacks Affected* effect?
 Back: Both the Prone creature and any attackers.
 Reference: Crawford, Jeremy. _Dungeons & Dragons - Player’s Handbook_. Wizards of the Coast LLC, 2024.
 <!--ID: 1774379791659-->
