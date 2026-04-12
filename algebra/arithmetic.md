@@ -439,7 +439,7 @@ END%%
 
 If $m$ is a positive integer and $n$ is any integer, then there exist unique integers $q$ and $r$ such that $$n = mq + r \quad\text{and}\quad 0 \leq r < m.$$
 
-Value $q$ is called the **quotient** whereas value $r$ is called the **remainder** when $n$ is divided by $m$.
+Value $q$ is called the **quotient** whereas value $r$ is called the **remainder** when $n$ is divided by $m$. We say $m$ **divides** $n$ if the remainder when $n$ is divided by $m$ is $0$. This is denoted as $m \mid n$.
 
 %%ANKI
 Basic
@@ -489,11 +489,67 @@ Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh editi
 <!--ID: 1775924265123-->
 END%%
 
+%%ANKI
+Basic
+How is the divisibility relation on the positive integers $P$ defined?
+Back: $\{ \langle a, b \rangle \in P \times P \mid \exists q \in P, aq = b \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1751830087196-->
+END%%
+
+%%ANKI
+Basic
+How is the strict divisibility relation on the positive integers $P$ defined?
+Back: $\{ \langle a, b \rangle \in P \times P \mid \exists q \in P, aq = b \land q \neq 1 \}$
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1751830087197-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \mathbb{Z}^+$. How do we denote that $m$ divides $n$?
+Back: As $m \mid n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1775940887385-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \mathbb{Z}^+$. What does it mean for $m$ to divide $n$?
+Back: The remainder when $n$ is divided by $m$ is $0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1775940887388-->
+END%%
+
+%%ANKI
+Basic
+Let $m, n \in \mathbb{Z}^+$. What does "$m \mid n$" denote?
+Back: That $m$ divides $n$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1775940887391-->
+END%%
+
+%%ANKI
+Basic
+What is the top element of the divisibility order and why?
+Back: $0$, since every number divides $0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1775940887393-->
+END%%
+
+%%ANKI
+Basic
+What is the bottom element of the divisibility order and why?
+Back: $1$, since every number is divisible by $1$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1775940887396-->
+END%%
+
 ## Greatest Common Divisor
 
-Let $a$ and $b$ be two nonzero integers. Then the **greatest common divisor** (GCD) of $a$ and $b$, denoted $\gcd(a, b)$, is the greatest positive integer $d$ such that $d$ is a divisor of both $a$ and $b$.
+Let $a$ and $b$ be two nonzero integers. Then the **greatest common divisor** (GCD) of $a$ and $b$, denoted $\gcd(a, b)$, is the greatest positive integer $d$ such that $d$ is a divisor of both $a$ and $b$. If both $a$ and $b$ are zero, the GCD is considered either undefined or $0$.
 
-If exactly one of $a$ or $b$ is zero, the GCD is defined as the absolute value of the nonzero integer. If both $a$ and $b$ are zero, the GCD is sometimes considered undefined and sometimes considered $0$.
+In [[order/index|order theory]], the GCD is the [[preorder#Supremums and Infimums|greatest lower bound]] of the set of positive integers ordered by divisibility. That is, $\gcd(a, b) = \inf\{a, b\}$ with respect to divisibility.
 
 %%ANKI
 Basic
@@ -567,22 +623,6 @@ Reference: _Wikipedia_. “Greatest common divisor.” July 4, 2025. [https://en
 <!--ID: 1751830087195-->
 END%%
 
-%%ANKI
-Basic
-How is the divisibility relation on the positive integers $P$ defined?
-Back: $\{ \langle a, b \rangle \in P \times P \mid \exists q \in P, aq = b \}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1751830087196-->
-END%%
-
-%%ANKI
-Basic
-How is the strict divisibility relation on the positive integers $P$ defined?
-Back: $\{ \langle a, b \rangle \in P \times P \mid \exists q \in P, aq = b \land q \neq 1 \}$
-Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
-<!--ID: 1751830087197-->
-END%%
-
 %%Basic
 Basic
 What does $\gcd(8, 12)$ evaluate to?
@@ -599,17 +639,57 @@ END%%
 
 %%ANKI
 Basic
-Let $P$ be a set of positive integers ordered by the divisibility relation. What specific name does the infimum of $A \subseteq P$ go by?
+Let $P$ be a set of positive integers ordered by divisibility. What name does the infimum of $A \subseteq P$ go by?
 Back: The GCD of $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751830087199-->
 END%%
 
+%%ANKI
+Basic
+*Why* is $\gcd(0, b)$, where $b \neq 0$, considered equal to $\lvert b \rvert$?
+Back: Because $\lvert b \rvert$ is the largest integer that divides both $0$ and $b$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1775940887399-->
+END%%
+
+%%ANKI
+Basic
+*Why* is $\gcd(a, 0)$, where $a \neq 0$, considered equal to $\lvert a \rvert$?
+Back: Because $\lvert a \rvert$ is the largest integer that divides both $0$ and $a$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1775940887402-->
+END%%
+
+%%ANKI
+Basic
+What motivation justifies that $\gcd(0, 0)$ should be undefined?
+Back: *Every* integer divides $0$ so there is no greatest choice.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1775940887404-->
+END%%
+
+%%ANKI
+Basic
+What motivation justifies that $\gcd(0, 0)$ should equal $0$?
+Back: The poset $\{0\}$, ordered by divisibility, has infimum $0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1775940887407-->
+END%%
+
+%%ANKI
+Basic
+Consider $\gcd(a, b)$. When is the result considered either undefined or $0$?
+Back: When $a = b = 0$.
+Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+<!--ID: 1775940887410-->
+END%%
+
 ## Least Common Multiple
 
-Let $a$ and $b$ be two integers. Then the **least common multiple** (LCM) of $a$ and $b$, denoted $\mathop{\text{lcm}}(a, b)$, is the smallest positive integer $d$ such that $a$ and $b$ are both divisors of $d$.
+Let $a$ and $b$ be two integers. Then the **least common multiple** (LCM) of $a$ and $b$, denoted $\mathop{\text{lcm}}(a, b)$, is the smallest positive integer $d$ such that $a$ and $b$ are both divisors of $d$. If either $a$ or $b$ is zero, the LCM is sometimes considered either undefined or $0$.
 
-If either $a$ or $b$ is zero, the LCM is sometimes considered undefined and sometimes considered equal to $0$.
+In [[order/index|order theory]], the LCM is the [[preorder#Supremums and Infimums|least upper bound]] of the set of positive integers ordered by divisibility. That is, $\mathop{\text{lcm}}(a, b) = \sup\{a, b\}$ with respect to divisibility.
 
 %%ANKI
 Basic
@@ -669,16 +749,24 @@ END%%
 
 %%ANKI
 Basic
-Let $a$ be an integer. What argument is made to justify $\mathop{\text{lcm}}(a, 0)$ being undefined?
-Back: Division of zero is undefined.
+What motivation justifies that $\mathop{\text{lcm}}(a, 0)$ should be $0$?
+Back: The poset $\{a, 0\}$, ordered by divisibility, has supremum $0$.
+Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
+<!--ID: 1775940887412-->
+END%%
+
+%%ANKI
+Basic
+What motivation justifies that $\mathop{\text{lcm}}(a, 0)$ should be undefined?
+Back: No integer divides $0$.
 Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751830087207-->
 END%%
 
 %%ANKI
 Basic
-Let $b$ be an integer. What argument is made to justify $\mathop{\text{lcm}}(0, b)$ being undefined?
-Back: Division of zero is undefined.
+What motivation justifies that $\mathop{\text{lcm}}(0, b)$ should be undefined?
+Back: No integer divides $0$.
 Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751830087208-->
 END%%
@@ -699,7 +787,7 @@ END%%
 
 %%ANKI
 Basic
-Let $P$ be a set of positive integers ordered by the divisibility relation. What specific name does the supremum of $A \subseteq P$ go by?
+Let $P$ be a set of positive integers ordered by divisibility. What name does the supremum of $A \subseteq P$ go by?
 Back: The LCM of $A$.
 Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
 <!--ID: 1751830087210-->

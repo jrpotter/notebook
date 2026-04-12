@@ -94,7 +94,7 @@ END%%
 %%ANKI
 Basic
 What Russell-like paradox is typically used to argue against permissivism?
-Back: The paradox of non-self-instantiation.
+Back: The paradox of non-self-instantiation, i.e. the Grelling-Nelson paradox.
 Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
 <!--ID: 1720912238049-->
 END%%

@@ -18,7 +18,7 @@ Reference: Francesco Orilia and Michele Paolini Paoletti, “Properties,” in _
 <!--ID: 1720912237900-->
 END%%
 
-### Instantiation
+## Instantiation
 
 An entity is said to **instantiate** a property if said entity bears a connection to the property. For example, a human instantiates the property of *being human* and a man instantiates the properties of *being human* and *being a man*.
 
@@ -36,6 +36,12 @@ A man is said to {instantiate} the property of *being a man*.
 Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
 <!--ID: 1720912237960-->
 END%%
+
+### Grelling-Nelson Paradox
+
+An **autological** adjective is one that describes themselves, e.g. *short* and *multisyllabic*. A **heterological** adjective is one that does not describe itself, e.g. *hyphenated*.
+
+The **Grelling-Nelson paradox**, also known as the paradox of non-self-instantiation, is the contradiction that forms when considering whether the word "heterological" is either heterological or autological.
 
 %%ANKI
 Basic
@@ -93,7 +99,63 @@ Reference: Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Pres
 <!--ID: 1720912238004-->
 END%%
 
+%%ANKI
+Basic
+What is an autological adjective?
+Back: An adjective that describes itself.
+Reference: _Simple English Wikipedia, the Free Encyclopedia_. “Grelling–Nelson paradox.” April 29, 2025. [https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox](https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox&oldid=10224906).
+<!--ID: 1776006573041-->
+END%%
+
+%%ANKI
+Basic
+What is a heterological adjective?
+Back: An adjective that describes the opposite of itself.
+Reference: _Simple English Wikipedia, the Free Encyclopedia_. “Grelling–Nelson paradox.” April 29, 2025. [https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox](https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox&oldid=10224906).
+<!--ID: 1776006573046-->
+END%%
+
+%%ANKI
+Cloze
+An adjective is either {autological} or {heterological}.
+Reference: _Simple English Wikipedia, the Free Encyclopedia_. “Grelling–Nelson paradox.” April 29, 2025. [https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox](https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox&oldid=10224906).
+<!--ID: 1776006573050-->
+END%%
+
+%%ANKI
+Basic
+Is "multisyllabic" considered autological or heterological?
+Back: Autological.
+Reference: _Simple English Wikipedia, the Free Encyclopedia_. “Grelling–Nelson paradox.” April 29, 2025. [https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox](https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox&oldid=10224906).
+<!--ID: 1776006573053-->
+END%%
+
+%%ANKI
+Basic
+Is "hyphenated" considered autological or heterological?
+Back: Heterological.
+Reference: _Simple English Wikipedia, the Free Encyclopedia_. “Grelling–Nelson paradox.” April 29, 2025. [https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox](https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox&oldid=10224906).
+<!--ID: 1776006573057-->
+END%%
+
+%%ANKI
+Basic
+What does Grelling-Nelson's paradox state?
+Back: The sentence "The word *heterological* is autological" is neither true nor false.
+Reference: _Simple English Wikipedia, the Free Encyclopedia_. “Grelling–Nelson paradox.” April 29, 2025. [https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox](https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox&oldid=10224906).
+<!--ID: 1776006573061-->
+END%%
+
+%%ANKI
+Basic
+The paradox of non-self-instantiation is also known as what?
+Back: The Grelling-Nelson paradox.
+Reference: _Simple English Wikipedia, the Free Encyclopedia_. “Grelling–Nelson paradox.” April 29, 2025. [https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox](https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox&oldid=10224906).
+<!--ID: 1776006573066-->
+END%%
+
 ## Bibliography
 
 * Francesco Orilia and Michele Paolini Paoletti, “Properties,” in _The Stanford Encyclopedia of Philosophy_, ed. Edward N. Zalta, Spring 2022 (Metaphysics Research Lab, Stanford University, 2022), [https://plato.stanford.edu/archives/spr2022/entries/properties/](https://plato.stanford.edu/archives/spr2022/entries/properties/).
 * Nikk Effingham, _An Introduction to Ontology_ (Cambridge: Polity Press, 2013).
+* _Simple English Wikipedia, the Free Encyclopedia_. “Grelling–Nelson paradox.” April 29, 2025. [https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox](https://simple.wikipedia.org/w/index.php?title=Grelling%E2%80%93Nelson_paradox&oldid=10224906).

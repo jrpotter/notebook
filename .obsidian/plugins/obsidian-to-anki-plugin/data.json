@@ -1607,10 +1607,10 @@
     "_journal/2025-08-15.md": "d410b4c59c0b4ac029eab3a6758f8990",
     "_journal/2025-08/2025-08-14.md": "5f52b326a5c0d7685f66516c15938b2a",
     "ontology/frames.md": "c2bcdc62634c201cf9664c507095b270",
-    "ontology/permissivism.md": "3b95826732f38ca21b9f65505d4f0c8f",
+    "ontology/permissivism.md": "73fc149752a58d7adff1250672e7c06a",
     "ontology/nominalism.md": "83acf6fc9762b4e1663079f2a27ef5f5",
     "ontology/dialetheism.md": "192d2d359f752d0a2a0da67e7f12cf7a",
-    "ontology/properties.md": "52b2a8d1f0ac90aa771f7f154e1094a4",
+    "ontology/properties.md": "c300722ea75294dc8057fd8f4bda0dc5",
     "_journal/2025-08-16.md": "145258836326e9e46353682e75ce9b3a",
     "_journal/2025-08/2025-08-15.md": "00ce7e0eed902fce2b2842b7a2b9fc0b",
     "_journal/2025-08-17.md": "44d5f71cdecdd9701acf47ecab051749",
@@ -2639,7 +2639,7 @@
     "_journal/2026/2026-03/2026-03-01.md": "9bcfe2938d1ec1c893e046d05f1dda04",
     "algebra/operations.md": "07f3655450f92f5e8c40a149e54d1247",
     "_journal/2026-04-02.md": "c75c5d7483fc36c667846dd211685bce",
-    "algebra/groups.md": "22c25721658fedccaa9821e17e26f4a8",
+    "algebra/groups.md": "ff6bf6953cc75d92b2e225537b1d5c64",
     "algebra/magmas.md": "42a49918193aaf30af79e1ccdcdfd6c1",
     "algebra/semigroups.md": "5cd085f6c3bc0de8216ce942325e875a",
     "probability/index.md": "78704bdfda375b2acd33e4978e6a3ad7",
@@ -2662,10 +2662,12 @@
     "_journal/2026-04/2026-04-09.md": "bb6b756b1c7718d9db9d21c93fd1171e",
     "programming/quine.md": "9bc70fd8fb9fbb3c54e49fc9520a12b6",
     "programming/metaprogramming.md": "563bdc7b71ca0ef9ece2eab4925ac2e3",
-    "_journal/2026-04-11.md": "3dbdc2a6538fc3f6e7a639f19597922d",
+    "_journal/2026-04-11.md": "dca69c338ccde7ef0cec378664b2f329",
     "_journal/2026-04/2026-04-10.md": "fe6bf703ea79fca64286321a0fe0376f",
     "formal_system/radices.md": "f21f7f7398d82c64a703fa6697e73592",
-    "algebra/arithmetic.md": "7f50e25b5aff0fd3585a34445143502d"
+    "algebra/arithmetic.md": "764af9f49db12e4c11bb9b12f9eef672",
+    "_journal/2026-04-12.md": "1105b65e7e5d5e6695b16773851afa60",
+    "_journal/2026-04/2026-04-11.md": "dca69c338ccde7ef0cec378664b2f329"
   },
   "fields_dict": {
     "Basic": [
