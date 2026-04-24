@@ -890,7 +890,7 @@ A **variable** is a name used to represent a string of text, called the variable
 %%ANKI
 Basic
 What syntax is used to substitute variables within a rule?
-Back: Using `\$()` or `\${}` syntax.
+Back: Using `＄()` or `＄{}` syntax.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1762562126714-->
 END%%
@@ -898,15 +898,15 @@ END%%
 %%ANKI
 Basic
 How would variable `objects` be substituted from within a rule?
-Back: By specifying `$(objects)` or `${objects}.
+Back: By specifying `＄(objects)` or `＄{objects}`.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1762562126716-->
 END%%
 
 %%ANKI
 Basic
-How is a literal `$ ` character specified within a recipe?
-Back: Escaping with a second `$ ` character.
+How is a literal `＄` character specified within a recipe?
+Back: Escaping with a second `＄` character.
 Reference: “GNU Make.” Accessed November 6, 2025. [https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html](https://www.gnu.org/savannah-checkouts/gnu/make/manual/make.html).
 <!--ID: 1763774669867-->
 END%%

@@ -124,6 +124,8 @@ Let $\langle S, * \rangle$ and $\langle S', *' \rangle$ be magmas. An **isomorph
 
 If such an isomorphism exists, then we say that $\langle S, * \rangle$ is **isomorphic** to $\langle S', *' \rangle$, denoted $\langle S, * \rangle \cong \langle S', *' \rangle$.
 
+An **automorphism** is an isomorphism from a structure to itself. The trivial automorphism is simply the identity function.
+
 %%ANKI
 Basic
 Let $\langle S, * \rangle$ and $\langle S', *' \rangle$ be magmas. What does it mean for $\phi \colon S \rightarrow S'$ to satisfy the homomorphism property?
@@ -156,6 +158,30 @@ Back:
 3. Satisfies the homomorphism property.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1775147410624-->
+END%%
+
+%%ANKI
+Basic
+What is an automorphism?
+Back: An isomorphism from a mathematical object to itself.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776486812514-->
+END%%
+
+%%ANKI
+Basic
+Let $\phi$ be an automorphism between magmas $\langle S, * \rangle$ and $\langle S', *' \rangle$. What identity holds?
+Back: $\langle S, * \rangle = \langle S', *' \rangle$ (since an automorphism maps an object to itself).
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776486812521-->
+END%%
+
+%%ANKI
+Basic
+How is the trivial automorphism $\phi$ of a magma, say $\langle S, * \rangle$, defined?
+Back: As $\phi(x) = x$ for all $x \in S$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776486812526-->
 END%%
 
 ### Structural Properties

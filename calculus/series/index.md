@@ -1217,7 +1217,7 @@ END%%
 
 %%ANKI
 Basic
-Assume we can apply the alternating series test. We prove this series converges by showing which other two limits are equal? $$\sum_{n=1}^\infty (-1)^{n-1} a_n$$
+Assume we can apply the alternating series test. We prove this series converges by showing which two limits are equal? $$\sum_{n=1}^\infty (-1)^{n-1} a_n$$
 Back: That of:
 1. The partial sums consisting of an even number of terms.
 2. The partial sums consisting of an odd number of terms.

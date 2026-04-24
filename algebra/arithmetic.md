@@ -299,6 +299,22 @@ Reference: _Wikipedia_. “Coprime integers.” January 4, 2026. [https://en.wik
 <!--ID: 1776020056231-->
 END%%
 
+%%ANKI
+Basic
+Suppose $\gcd(r, s) = 1$. If $r$ divides $sm$, what must $r$ also divide?
+Back: $m$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776444992638-->
+END%%
+
+%%ANKI
+Basic
+Suppose $\gcd(r, s) = 1$. If $r$ divides $sm$, *why* must $r$ divide $m$?
+Back: Because $m = arm + bsm$ for some $a, b \in \mathbb{Z}$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776444992639-->
+END%%
+
 ### Fundamental Theorem of Arithmetic
 
 The **fundamental theorem of arithmetic**, also known as the **unique factorization theorem**, states that every integer greater than $1$ is either prime or can be represented uniquely as a product of prime numbers.
@@ -445,13 +461,29 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1775940887396-->
 END%%
 
+%%ANKI
+Basic
+Suppose $x \mid y$ and $y \mid x$. What identity must follow?
+Back: $x = y$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776732985150-->
+END%%
+
+%%ANKI
+Basic
+Suppose $x \mid y$ and $y \mid x$. *Why* must $x = y$?
+Back: Because divisibility is antisymmetric.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776732985155-->
+END%%
+
 ## Greatest Common Divisor
 
 Let $a$ and $b$ be two nonzero integers. Then the **greatest common divisor** (GCD) of $a$ and $b$, denoted $\gcd(a, b)$, is the greatest positive integer $d$ such that $d$ is a divisor of both $a$ and $b$. If both $a$ and $b$ are zero, the GCD is considered either undefined or $0$.
 
-In [[order/index|order theory]], the GCD is the [[preorder#Supremums and Infimums|greatest lower bound]] of the set of positive integers ordered by divisibility. That is, $\gcd(a, b) = \inf\{a, b\}$ with respect to divisibility.
+In [[order/index|order theory]], the GCD is defined to be the [[preorder#Supremums and Infimums|greatest lower bound]] of the set of positive integers ordered by divisibility. That is, $\gcd(a, b) = \inf\{a, b\}$ with respect to divisibility.
 
-In [[groups|group theory]], the GCD of positive integers $a$ and $b$ is the positive [[groups#Cyclic|generator]] of the following group: $$\{ma + nb \mid m, n \in \mathbb{Z}\}$$
+In [[groups|group theory]], the GCD of $a, b \in \mathbb{Z}^+$ is defined to be the positive [[groups#Cyclic|generator]] of the following group: $$\{ma + nb \mid m, n \in \mathbb{Z}\} \quad\text{under addition}$$
 
 %%ANKI
 Basic
@@ -597,6 +629,22 @@ END%%
 
 %%ANKI
 Basic
+*Why* is the following sufficient in showing $a$ and $b$ are relatively prime? $$\exists u, v \in \mathbb{Z}, \quad1 = ua + vb$$
+Back: Any integer that divides both $a$ and $b$ must divide $1$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776444992642-->
+END%%
+
+%%ANKI
+Basic
+Let $p, q \in \mathbb{Z}^+$ and $p$ be prime. *Why* must $p$ and $q$ be relatively prime?
+Back: Otherwise there exists a divisor of $p$ greater than $1$, i.e. $p$ is composite.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776459508510-->
+END%%
+
+%%ANKI
+Basic
 How is the GCD of positive integers $a$ and $b$ defined in group theory?
 Back: As the positive generator of group $\{ ma + nb \mid m, n \in \mathbb{Z} \}$ under addition.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
@@ -622,7 +670,7 @@ END%%
 %%ANKI
 Basic
 Let $a, b \in \mathbb{Z}^+$ and $d = \gcd(a, b)$. What group theory argument shows $d \mid a$?
-Back: $d$ generates $H = \{ma + nb \mid m, n \in \mathbb{Z}\}$ and $1a + 0b = a \in H$.
+Back: $d$ generates $1a + 0b \in \{ma + nb \mid m, n \in \mathbb{Z}\}$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1776018638579-->
 END%%
@@ -630,7 +678,7 @@ END%%
 %%ANKI
 Basic
 Let $a, b \in \mathbb{Z}^+$ and $d = \gcd(a, b)$. What group theory argument shows $d \mid b$?
-Back: $d$ generates $H = \{ma + nb \mid m, n \in \mathbb{Z}\}$ and $0a + 1b = b \in H$.
+Back: $d$ generates $0a + 1b \in \{ma + nb \mid m, n \in \mathbb{Z}\}$.
 Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 <!--ID: 1776018638580-->
 END%%
@@ -643,11 +691,80 @@ Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh editi
 <!--ID: 1776018638581-->
 END%%
 
+%%ANKI
+Basic
+Given $a, b \in \mathbb{Z}^+$, what pair of integers are relatively prime?
+Back: Given $d = \gcd(a, b)$, $a / d$ and $b / d$ are coprime.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776444992640-->
+END%%
+
+%%ANKI
+Basic
+Let $a, b \in \mathbb{Z}^+$ and $d = \gcd(a, b)$. How do we show $a / d$ and $b / d$ are coprime?
+Back: Since there exist integers $m, n \in \mathbb{Z}$ such that $d = ma + nb$, it follows that $$1 = m\frac{a}{d} + n\frac{b}{d}.$$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776444992641-->
+END%%
+
+%%ANKI
+Basic
+Suppose $m$ divides $n$. What does $\gcd(m, n)$ equal?
+Back: $m$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776914254224-->
+END%%
+
+%%ANKI
+Basic
+Suppose $m$ does not divide $n$. What does $\gcd(m, n)$ equal?
+Back: Indeterminate.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776914254228-->
+END%%
+
+### Bézout's Lemma
+
+For any pair of positive integers $a$ and $b$, there exist integers $m$ and $n$ such that $$\gcd(a, b) = ma + nb.$$
+
+%%ANKI
+Basic
+What does Bézout's lemma state?
+Back: For $a, b \in \mathbb{Z}^+$, there exist integers $m$ and $n$ such that $\gcd(a, b) = ma + nb$.
+Reference: _Wikipedia_. “Bézout’s identity.” March 10, 2026. [https://en.wikipedia.org/w/index.php?title=B%C3%A9zout%27s_identity](https://en.wikipedia.org/w/index.php?title=B%C3%A9zout%27s_identity&oldid=1342632424).
+<!--ID: 1776484754874-->
+END%%
+
+%%ANKI
+Cloze
+{Bézout's} lemma states {$\gcd(a, b)$} is a member of the following group under addition: $$\{ ma + nb \mid m, n \in \mathbb{Z} \}$$
+Reference: _Wikipedia_. “Bézout’s identity.” March 10, 2026. [https://en.wikipedia.org/w/index.php?title=B%C3%A9zout%27s_identity](https://en.wikipedia.org/w/index.php?title=B%C3%A9zout%27s_identity&oldid=1342632424).
+<!--ID: 1776484754878-->
+END%%
+
+%%ANKI
+Basic
+What group is Bézout's lemma most closely associated with?
+Back: For integers $a$ and $b$, $\{ ma + nb \mid m, n \in \mathbb{Z} \}$ under addition.
+Reference: _Wikipedia_. “Bézout’s identity.” March 10, 2026. [https://en.wikipedia.org/w/index.php?title=B%C3%A9zout%27s_identity](https://en.wikipedia.org/w/index.php?title=B%C3%A9zout%27s_identity&oldid=1342632424).
+<!--ID: 1776484754880-->
+END%%
+
+%%ANKI
+Basic
+The GCD of positive integers $r$ and $s$ is defined as the generator of what group?
+Back: $\{ ar + bs \mid a, b \in \mathbb{Z} \}$ under addition.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776708653896-->
+END%%
+
 ### Least Common Multiple
 
 Let $a$ and $b$ be two integers. Then the **least common multiple** (LCM) of $a$ and $b$, denoted $\mathop{\text{lcm}}(a, b)$, is the smallest positive integer $d$ such that $a$ and $b$ are both divisors of $d$. If either $a$ or $b$ is zero, the LCM is sometimes considered either undefined or $0$.
 
-In [[order/index|order theory]], the LCM is the [[preorder#Supremums and Infimums|least upper bound]] of the set of positive integers ordered by divisibility. That is, $\mathop{\text{lcm}}(a, b) = \sup\{a, b\}$ with respect to divisibility.
+In [[order/index|order theory]], the LCM is defined to be the [[preorder#Supremums and Infimums|least upper bound]] of the set of positive integers ordered by divisibility. That is, $\mathop{\text{lcm}}(a, b) = \sup\{a, b\}$ with respect to divisibility.
+
+In [[groups|group theory]], the LCM of $a, b \in \mathbb{Z}^+$ is defined to be the positive [[groups#Cyclic|generator]] of the following group: $$a\mathbb{Z} + b\mathbb{Z} \quad \text{under addition}$$
 
 %%ANKI
 Basic
@@ -759,7 +876,39 @@ Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.
 <!--ID: 1751830087211-->
 END%%
 
-### Factorization
+%%ANKI
+Basic
+How is the LCM of positive integers $a$ and $b$ defined in group theory?
+Back: As the positive generator of group $a\mathbb{Z} \cap b\mathbb{Z}$ under addition.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776708653898-->
+END%%
+
+%%ANKI
+Basic
+The LCM of positive integers $r$ and $s$ is defined as the generator of what group?
+Back: $r\mathbb{Z} \cap s\mathbb{Z}$ under addition.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776708653899-->
+END%%
+
+%%ANKI
+Basic
+Let $r$ and $s$ be positive integers. How do we know group $r\mathbb{Z} \cap s\mathbb{Z}$ under addition has a generator?
+Back: It is a subgroup of cyclic group $\langle \mathbb{Z}, + \rangle$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776708653900-->
+END%%
+
+%%ANKI
+Basic
+Under what condition is the LCM of integers $r$ and $s$ equal to $rs$?
+Back: This holds if and only if $r$ and $s$ are relatively prime.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776708653902-->
+END%%
+
+### Min/Max Factorization
 
 Let $m$ and $n$ be two positive integers greater than $1$. By the [[#Fundamental Theorem of Arithmetic|fundamental theorem of arithmetic]], $m$ and $n$ have unique prime factorizations: $$\begin{align*} m & = p_1^{a_1} \times p_2^{a_2} \times \cdots \times p_k^{a_k} \\[0.5em] n & = p_1^{b_1} \times p_2^{b_2} \times \cdots 
 \times p_k^{b_k} \end{align*}$$
@@ -830,6 +979,157 @@ What does the following equal? $$\prod_{p \text{ is prime}} p^{\min(a_p, b_p)}$$
 Back: $\gcd(a, b)$ where $a = \prod_{p \text{ is prime}} p^{a_p}$ and $b = \prod_{p \text{ is prime}} p^{b_p}$.
 Reference: _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).
 <!--ID: 1751831603413-->
+END%%
+
+### Euclidean Algorithm
+
+Let $a, b \in \mathbb{Z}^+$. By the [[#Division Algorithm|division algorithm]], there exist integers $q$ and $r$ such that $a = bq + r$ where $0 \leq r < b$. Then $\gcd(a, b) = \gcd(b, r)$.
+
+The **Euclidean algorithm** (also known as **Euclid's algorithm**) is a method for computing the GCD of two positive integers using the above identity. It works by repeatedly applying the division algorithm, stopping once the remainder is $0$. For integers $a, r_0 \in \mathbb{Z}^+$, the process looks as follows: $$\begin{align*} a & = r_0q_0 + r_1 \\ r_0 & = r_1q_1 + r_2 \\ r_1 & = r_2q_2 + r_3 \\ & \quad\quad\vdots\\ r_{n-1} & = r_nq_n + 0 \end{align*}$$
+
+This shows that $\gcd(a, r_0) = \cdots = \gcd(r_{n-1}, r_n) = \gcd(r_n, 0) = r_n$.
+
+%%ANKI
+Basic
+Let $a, b \in \mathbb{Z}^+$ and $a = bq + r$, $0 \leq r < b$. Then $\gcd(a, b)$ equals the GCD of what other pair of presented integers?
+Back: $\gcd(a, b) = \gcd(b, r)$
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649782030-->
+END%%
+
+%%ANKI
+Basic
+Assume integers and $a = bq + r$, $0 \leq r < b$. If $d \mid a$ and $d \mid b$, *why* does $d \mid r$?
+Back: $r = a - bq$, a linear combination of $a$ and $b$.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649782034-->
+END%%
+
+%%ANKI
+Basic
+Assume integers and $a = bq + r$, $0 \leq r < b$. If $d \mid b$ and $d \mid r$, *why* does $d \mid a$?
+Back: $a = bq + r$ is a linear combination of $b$ and $r$.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649782038-->
+END%%
+
+%%ANKI
+Basic
+The Euclidean algorithm is used to find what?
+Back: The GCD of two integers.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649782042-->
+END%%
+
+%%ANKI
+Basic
+The Euclidean algorithm is a repeated application of what other algorithm?
+Back: The division algorithm.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649782045-->
+END%%
+
+%%ANKI
+Basic
+Let $a = r_0q_1 + r_1$. Assuming we are finding $\gcd(a, r_0)$, what is the next step in Euclid's algorithm?
+Back: Finding $q_2, r_2$ such that $r_0 = r_1q_2 + r_2$.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649782049-->
+END%%
+
+%%ANKI
+Cloze
+The {Euclidean} algorithm is also known as {Euclid's} algorithm.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649782053-->
+END%%
+
+%%ANKI
+Basic
+When does the Euclidean algorithm terminate?
+Back: When the successively found remainders reach $0$.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649782056-->
+END%%
+
+%%ANKI
+Basic
+How do we know Euclid's algorithm eventually terminates?
+Back: The successively found remainders always decrease.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649782060-->
+END%%
+
+%%ANKI
+Basic
+Which algorithm is most commonly used to find the GCD of two integers?
+Back: The Euclidean algorithm.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649782063-->
+END%%
+
+%%ANKI
+Basic
+Let $a \equiv b \pmod{n}$. Then $\gcd(a, n)$ equals the GCD of what two other presented integers?
+Back: $\gcd(a, n) = \gcd(b, n)$
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649782067-->
+END%%
+
+%%ANKI
+Basic
+Let $a \equiv b \pmod{n}$. Then $\gcd(b, n)$ equals the GCD of what two other presented integers?
+Back: $\gcd(a, n) = \gcd(b, n)$
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649782025-->
+END%%
+
+%%ANKI
+Basic
+Let $a \equiv b \pmod{n}$. How do we prove $\gcd(a, n) = \gcd(b, n)$?
+Back: There exist $q_1, q_2 \in \mathbb{Z}$ such that $a = q_1n + r$ and $b = q_2n + r$. Thus $$\gcd(a, n) = \gcd(n, r) = \gcd(b, n).$$
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649782070-->
+END%%
+
+%%ANKI
+Basic
+Assume integers and let $d \mid a$ and $d \mid b$. *Why* does $d \mid ax + by$?
+Back: Because $d$ can be factored out of $ax$ and $by$.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776649925049-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \mathbb{Z}^+$ such that $n > 1$. What does $\gcd(n, n - 1)$ evaluate to?
+Back: $1$, i.e. $n$ and $n - 1$ are coprime.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776704601751-->
+END%%
+
+%%ANKI
+Basic
+How can we use Euclid's algorithm to show $\gcd(n, n - 1) = 1$?
+Back: $n = (n - 1)(1) + 1$ so $\gcd(n, n - 1) = \gcd(n - 1, 1) = 1$.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776704601755-->
+END%%
+
+%%ANKI
+Basic
+Let $n \in \mathbb{Z}^+$ such that $n > 1$. What does $\gcd(n, n + 1)$ evaluate to?
+Back: $1$, i.e. $n$ and $n + 1$ are coprime.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776704601759-->
+END%%
+
+%%ANKI
+Basic
+How can we use Euclid's algorithm to show $\gcd(n, n + 1) = 1$?
+Back: $n + 1 = (n)(1) + 1$ so $\gcd(n, n + 1) = \gcd(n, 1) = 1$.
+Reference: _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
+<!--ID: 1776704601762-->
 END%%
 
 ## Absolute Value
@@ -1107,7 +1407,9 @@ END%%
 * John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 * Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 * _Wikipedia_. “Arithmetic.” June 2, 2025. [https://en.wikipedia.org/w/index.php?title=Arithmetic](https://en.wikipedia.org/w/index.php?title=Arithmetic&oldid=1293513549).
+* _Wikipedia_. “Bézout’s identity.” March 10, 2026. [https://en.wikipedia.org/w/index.php?title=B%C3%A9zout%27s_identity](https://en.wikipedia.org/w/index.php?title=B%C3%A9zout%27s_identity&oldid=1342632424).
 * _Wikipedia_. “Coprime integers.” January 4, 2026. [https://en.wikipedia.org/w/index.php?title=Coprime_integers](https://en.wikipedia.org/w/index.php?title=Coprime_integers&oldid=1331118261).
+* _Wikipedia_. “Euclidean algorithm.” March 24, 2026. [https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm](https://en.wikipedia.org/w/index.php?title=Euclidean_algorithm&oldid=1345144586).
 * _Wikipedia_. “Fundamental theorem of arithmetic.” March 26, 2026. [https://en.wikipedia.org/w/index.php?title=Fundamental_theorem_of_arithmetic](https://en.wikipedia.org/w/index.php?title=Fundamental_theorem_of_arithmetic&oldid=1345576903).
 * _Wikipedia_. “Greatest common divisor.” July 4, 2025. [https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor](https://en.wikipedia.org/w/index.php?title=Greatest_common_divisor&oldid=1298703913).
 * _Wikipedia_. “Least common multiple.” June 24, 2025. [https://en.wikipedia.org/w/index.php?title=Least_common_multiple](https://en.wikipedia.org/w/index.php?title=Least_common_multiple&oldid=1297193293).

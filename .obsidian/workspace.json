@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_journal/2026-04-14.md",
+                "file": "_journal/2026-04-23.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-14"
+              "title": "2026-04-23"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "self-insta",
+                "query": "1776708653900",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5
+    "width": 265.5
   },
   "right": {
     "id": "ab7dbb159738d8bd",
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_journal/2026-04-14.md",
+                "file": "_journal/2026-04-23.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-04-14"
+              "title": "Outline of 2026-04-23"
             }
           }
         ],
@@ -172,32 +172,33 @@
   },
   "active": "b7b3418992ddb9e8",
   "lastOpenFiles": [
-    "_journal/2026-04/2026-04-13.md",
-    "combinatorics/images/people-in-ai-sam-altman.jpg",
-    "_journal/2026-04-14.md",
-    "_journal/2026-04/2026-04-12.md",
-    "ontology/permissivism.md",
-    "algebra/arithmetic.md",
+    "_journal/2026-04-23.md",
+    "sets/order/equiv-rel.md",
     "algebra/groups.md",
-    "_journal/2026-04/2026-04-11.md",
-    "sets/order/preorder.md",
+    "algebra/arithmetic.md",
+    "probability/conditional.md",
+    "probability/index.md",
+    "calculus/series/index.md",
+    "c23/make.md",
+    "_journal/2026-04/2026-04-22.md",
+    "_journal/2026-04/2026-04-21.md",
+    "_journal/2026-04/2026-04-20.md",
+    "sets/relations.md",
     "sets/order/index.md",
-    "programming/metaprogramming.md",
-    "trigonometry/inverses.md",
-    "algebra/fields.md",
-    "algebra/absolute.md",
-    "_journal/2025/2025-07/2025-07-21.md",
-    "_journal/2024/2024-08/2024-08-25.md",
-    "_journal/2025/2025-07/2025-07-06.md",
-    "algebra/gcd.md",
-    "formal_system/radices.md",
-    "formal_system/index.md",
-    "formal_system/abstract_rewriting.md",
+    "sets/order/partial.md",
+    "_journal/2026-04/2026-04-19.md",
+    "_journal/2026-04/2026-04-18.md",
     "algebra/exponentials.md",
-    "algorithms/index.md",
-    "algebra/index.md",
-    "computability/turing.md",
-    "sets/recursion.md",
+    "calculus/taylor.md",
+    "calculus/limits.md",
+    "complexity/recurrences.md",
+    "_journal/2026-04/2026-04-17.md",
+    "algebra/magmas.md",
+    "calculus/primitives.md",
+    "calculus/series/power.md",
+    "calculus/sequences.md",
+    "algebra/polynomials.md",
+    "combinatorics/images/people-in-ai-sam-altman.jpg",
     "combinatorics/images/hockey-stick-identity.png",
     "combinatorics/images/pascals-binom-5-3.png",
     "combinatorics/images/pascals-binom-4-1.png",

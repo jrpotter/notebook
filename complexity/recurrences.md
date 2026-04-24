@@ -520,7 +520,7 @@ END%%
 
 %%ANKI
 Basic
-Let $a > 0$ and $b > 1$ in the following recurrence. How many leaves are in its recursion tree? $$T(n) = aT(n / b) + f(n)$$
+Let $a > 0$ and $b > 1$. How many leaves are in the following's corresponding recursion tree? $$T(n) = aT(n / b) + f(n)$$
 Back: $n^{\log_b{a}}$
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1772795851570-->
@@ -528,8 +528,8 @@ END%%
 
 %%ANKI
 Basic
-Let $a > 0$ and $b > 1$ in the following recurrence. What does $n^{\log_b{a}}$ correspond to? $$T(n) = aT(n / b) + f(n)$$
-Back: The number of leaves in the corresponding recursion tree.
+Let $a > 0$ and $b > 1$. $n^{\log_b{a}}$ refers to what in the corresponding recursion tree? $$T(n) = aT(n / b) + f(n)$$
+Back: The number of leaves.
 Reference: Thomas H. Cormen et al., Introduction to Algorithms, Fourth edition (Cambridge, Massachusett: The MIT Press, 2022).
 <!--ID: 1772795851572-->
 END%%

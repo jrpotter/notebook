@@ -1168,7 +1168,7 @@ END%%
 
 %%ANKI
 Basic
-What is the simplest strategy used to solve the following limit? $$\lim_{x \rightarrow 0} \frac{1 - \cos{x}}{x^2}$$
+What strategy, besides L'Hôpital's rule, can be used to solve the following limit? $$\lim_{x \rightarrow 0} \frac{1 - \cos{x}}{x^2}$$
 Back: Apply a Taylor expansion to the $\cos{x}$ term.
 Reference: Tom M. Apostol, _Calculus, Vol. 1: One-Variable Calculus, with an Introduction to Linear Algebra_, 2nd ed. (New York: Wiley, 1980).
 <!--ID: 1772489541527-->

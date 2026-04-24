@@ -337,6 +337,217 @@ Reference: Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Pre
 <!--ID: 1721728868210-->
 END%%
 
+### Residue Classes
+
+For each positive integer $n$, the set $\mathbb{Z}^+$ can be partitioned into $n$ cells according to whether the remainder is $0, 1, 2, \ldots, n - 1$. These cells are called the **residue classes modulo** $n$ in $\mathbb{Z}^+$. $n$ is called the **modulus**.
+
+The equivalence relation on $\mathbb{Z}^+$ corresponding to the residue classes modulo $n$ in $\mathbb{Z}^+$ is called **congruence modulo $n$**. We usually write $a \equiv b \pmod{n}$ to state $a$ is congruent to $b$ modulo $n$.
+
+Note $a \equiv b \pmod{n}$ if and only if $n \mid (a - b)$.
+
+%%ANKI
+Basic
+What are the residue classes modulo $n$ in $\mathbb{Z}^+$?
+Back: The cells of the partition formed according to the remainder after dividing by $n$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776489046920-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical entity are the residue classes modulo $n$ in $\mathbb{Z}^+$?
+Back: Sets. More specifically, cells of a partition.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776489046923-->
+END%%
+
+%%ANKI
+Basic
+What are the residue classes modulo $2$ in $\mathbb{Z}^+$?
+Back:
+1. $\{2n + 0 \mid n \in \mathbb{Z}\}$
+2. $\{2n + 1 \mid n \in \mathbb{Z}\}$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776489046925-->
+END%%
+
+%%ANKI
+Basic
+What are the residue classes modulo $3$ in $\mathbb{Z}^+$?
+Back:
+1. $\{3n + 0 \mid n \in \mathbb{Z}\}$
+2. $\{3n + 1 \mid n \in \mathbb{Z}\}$
+3. $\{3n + 2 \mid n \in \mathbb{Z}\}$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776489046927-->
+END%%
+
+%%ANKI
+Basic
+How many residue classes modulo $n$ in $\mathbb{Z}^+$ are there?
+Back: $n$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776489046929-->
+END%%
+
+%%ANKI
+Basic
+What kind of mathematical entity is congruence modulo $n$?
+Back: An equivalence relation.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776489046930-->
+END%%
+
+%%ANKI
+Basic
+How is $a \equiv b \pmod{n}$ pronounced?
+Back: As "$a$ is congruent to $b$ modulo $n$".
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776489046932-->
+END%%
+
+%%ANKI
+Basic
+How do we denote that $x$ is congruent to $y$ modulo $z$?
+Back: $x \equiv y \pmod{z}$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776489046933-->
+END%%
+
+%%ANKI
+Cloze
+Suppose $x \equiv y \pmod{z}$. Then {$z$} divides {$x - y$}.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776966126106-->
+END%%
+
+%%ANKI
+Basic
+Suppose $x \equiv y \pmod{z}$. *Why* is it that $z$ divides $x - y$?
+Back: Because the congruence is equivalent to $x = qz + y$ for some integer $q$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776966126109-->
+END%%
+
+%%ANKI
+Basic
+$x \equiv y \pmod{z}$ if and only if what *one* division algorithm relation holds?
+Back: $x = qz + y$ for some $q \in \mathbb{Z}$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776966126112-->
+END%%
+
+%%ANKI
+Basic
+$x \equiv y \pmod{z}$ if and only if what *two* division algorithm relations hold?
+Back: $x = q_1z + r$ and $y = q_2z + r$ for some $q_1, q_2 \in \mathbb{Z}$ and common remainder $r$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776966126113-->
+END%%
+
+%%ANKI
+Basic
+In what two ways could you rewrite $a = mb + r$ using $\mathop{\text{mod}}$?
+Back: Either $a \equiv r \pmod{b}$ or $a \equiv r \pmod{m}$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776966126115-->
+END%%
+
+%%ANKI
+Basic
+Let $r$ be the remainder when dividing $m$ by $n$. How is this expressed using $\mathop{\text{mod}}$?
+Back: $m \equiv r \pmod{n}$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776976330319-->
+END%%
+
+%%ANKI
+Basic
+Consider relation $17 \equiv r \pmod{5}$. What value of $r$ yields the canonical form?
+Back: $r = 2$
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776977663419-->
+END%%
+
+%%ANKI
+Basic
+Consider relation $17 \equiv r \pmod{5}$. For what values of $r$ does this relation hold?
+Back: $r = 5q + 2$ for all $q \in \mathbb{Z}$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776977663423-->
+END%%
+
+%%ANKI
+Basic
+Consider relation $x \equiv 3 \pmod{5}$. For what values of $x$ does this relation hold?
+Back: $x = 5q + 3$ for all $q \in \mathbb{Z}$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776977663425-->
+END%%
+
+%%ANKI
+Basic
+If $a \equiv b \pmod{n}$, *why* does it follow that $b \equiv a \pmod{n}$?
+Back: If $n \mid (a - b)$ then $n \mid (b - a)$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776977663427-->
+END%%
+
+%%ANKI
+Basic
+Is congruence modulo $n$ a reflective relation?
+Back: Yes, it is an equivalence relation.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776977663428-->
+END%%
+
+%%ANKI
+Basic
+Is congruence modulo $n$ a symmetric relation?
+Back: Yes, it is an equivalence relation.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776977663430-->
+END%%
+
+%%ANKI
+Basic
+Is congruence modulo $n$ an antisymmetric relation?
+Back: No, it is an equivalence relation.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776977663431-->
+END%%
+
+%%ANKI
+Basic
+Consider congruence $a \equiv b \pmod{n}$. What is $\mathop{\text{mod}}$ shorthand for?
+Back: The term "modulus".
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776980291769-->
+END%%
+
+%%ANKI
+Basic
+Consider congruence $a \equiv b \pmod{n}$. What name is given to $n$?
+Back: The modulus.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776980291774-->
+END%%
+
+%%ANKI
+Basic
+Suppose $a \equiv b \pmod{n}$. *Why* is it that $n$ divides $a - b$?
+Back: The common remainder cancels, i.e. $a = nq_1 + r$ and $b = nq_2 + r$ so $a - b = n(q_1 - q_2)$.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776980596471-->
+END%%
+
+%%ANKI
+Cloze
+$a \equiv b \pmod{n}$ if and only if {1:$n$} divides {1:$a - b$}.
+Reference: John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
+<!--ID: 1776980777353-->
+END%%
+
 ## Quotient Sets
 
 If $R$ is an equivalence relation on $A$, then the **quotient set** "$A$ modulo $R$" is defined as $$A / R = \{[x]_R \mid x \in A\}.$$
@@ -483,4 +694,5 @@ END%%
 ## Bibliography
 
 * Herbert B. Enderton, *Elements of Set Theory* (New York: Academic Press, 1977).
+* John B. Fraleigh, _A First Course in Abstract Algebra_, Seventh edition, Pearson new international edition (Harlow: Pearson, 2014).
 * _Wikipedia_. “Preorder.” June 27, 2025. [https://en.wikipedia.org/w/index.php?title=Preorder](https://en.wikipedia.org/w/index.php?title=Preorder&oldid=1297574464).

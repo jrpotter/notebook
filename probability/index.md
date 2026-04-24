@@ -196,6 +196,22 @@ Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probabilit
 END%%
 
 %%ANKI
+Cloze
+Events are {sets} whereas probabilities are {numbers}.
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1775751539958-->
+END%%
+
+## Properties
+
+Let $\langle S, P \rangle$ be a probability space. If $A, B \subseteq S$ are events, the following properties hold:
+
+* $P(A^C) = 1 - P(A)$
+* $P(A \mathop{\triangle} B) = P(A) + P(B) - 2P(A \cap B)$
+* $P(B - A) = P(B) - P(B \cap A)$
+* $A \subseteq B \implies P(A) \leq P(B)$
+
+%%ANKI
 Basic
 Let $\langle S, P \rangle$ be a probability space and $A \subseteq S$ be an event. What does $P(A^C)$ equal?
 Back: $P(A^C) = 1 - P(A)$
@@ -220,10 +236,27 @@ Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probabilit
 END%%
 
 %%ANKI
-Cloze
-Events are {sets} whereas probabilities are {numbers}.
+Basic
+Let $\langle S, P \rangle$ be a probability space and $A, B \subseteq S$ be events. If $A \subseteq B$, what does $P(B - A)$ evaluate to?
+Back: $P(B - A) = P(B) - P(A)$
 Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
-<!--ID: 1775751539958-->
+<!--ID: 1776478839404-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle S, P \rangle$ be a probability space and $A, B \subseteq S$ be events. What does $P(B - A)$ evaluate to?
+Back: $P(B - A) = P(B) - P(A \cap B)$
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1776478839407-->
+END%%
+
+%%ANKI
+Basic
+Let $\langle S, P \rangle$ be a probability space and $A, B \subseteq S$ be events. What does $P(A \mathop{\triangle} B)$ evaluate to?
+Back: $P(A \mathop{\triangle} B) = P(A) + P(B) - 2P(A \cap B)$
+Reference: Blitzstein, Joseph K., and Jessica Hwang. _Introduction to Probability_. 2nd ed. Texts in Statistical Science. CRC press Taylor & Francis group, 2019.
+<!--ID: 1776478839409-->
 END%%
 
 ## Philosophy
